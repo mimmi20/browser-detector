@@ -107,7 +107,7 @@ class TeslaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Tablet L7 3G',
                 'Tesla',
                 'Tesla',
-                'Tablet',
+                'FonePad',
                 true,
                 'touchscreen',
             ],

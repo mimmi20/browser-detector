@@ -66,7 +66,7 @@ class CondorCtab785r163g extends Device implements DeviceHasSpecificPlatformInte
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

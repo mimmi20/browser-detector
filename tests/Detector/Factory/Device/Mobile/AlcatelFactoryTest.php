@@ -121,6 +121,16 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ALCATEL ONE TOUCH 6040D Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30 ACHEETAHI/2100501074',
+                'OT-6040D',
+                'One Touch Idol X',
+                'Alcatel',
+                'Alcatel',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

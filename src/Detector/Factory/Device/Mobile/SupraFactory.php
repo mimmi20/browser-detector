@@ -55,6 +55,10 @@ class SupraFactory implements FactoryInterface
             return new Supra\SupraM723g($useragent);
         }
 
+        if (preg_match('/m121g/i', $useragent)) {
+            return new Supra\SupraM121g($useragent);
+        }
+
         return new Supra\Supra($useragent);
     }
 }

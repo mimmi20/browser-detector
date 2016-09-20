@@ -79,6 +79,10 @@ class ZteFactory implements FactoryInterface
             return new Zte\ZteZ221($useragent);
         }
 
+        if (preg_match('/(v975|geek)/i', $useragent)) {
+            return new Zte\ZteV975($useragent);
+        }
+
         if (preg_match('/v970/i', $useragent)) {
             return new Zte\ZteV970($useragent);
         }
@@ -89,6 +93,10 @@ class ZteFactory implements FactoryInterface
 
         if (preg_match('/v880/i', $useragent)) {
             return new Zte\ZteV880($useragent);
+        }
+
+        if (preg_match('/v829/i', $useragent)) {
+            return new Zte\ZteV829($useragent);
         }
 
         if (preg_match('/v808/i', $useragent)) {

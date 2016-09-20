@@ -211,6 +211,16 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.1; en-gb; Lenovo A766 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Mobile UCBrowser/3.4.2.525',
+                'A766',
+                'A766',
+                'Lenovo',
+                'Lenovo',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

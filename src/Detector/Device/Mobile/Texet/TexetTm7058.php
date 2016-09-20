@@ -66,7 +66,7 @@ class TexetTm7058 extends Device implements DeviceHasSpecificPlatformInterface
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = false;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

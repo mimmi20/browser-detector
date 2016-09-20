@@ -141,6 +141,26 @@ class ZteFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; es-LA; ZTE_V829) U2/1.0.0 UCBrowser/9.0.2.389 U2/1.0.0 Mobile',
+                'V829',
+                'Blade G Pro',
+                'ZTE',
+                'ZTE',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; ZTE Geek Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.0.2.523 U3/0.8.0 Mobile Safari/534.30',
+                'V975',
+                'Geek',
+                'ZTE',
+                'ZTE',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

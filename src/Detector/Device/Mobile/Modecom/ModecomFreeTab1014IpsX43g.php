@@ -66,7 +66,7 @@ class ModecomFreeTab1014IpsX43g extends Device implements DeviceHasSpecificPlatf
         $this->smsSupport        = false;
         $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

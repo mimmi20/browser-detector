@@ -66,7 +66,7 @@ class SamsungGtp5210 extends Device implements DeviceHasSpecificPlatformInterfac
         $this->smsSupport        = true;
         $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

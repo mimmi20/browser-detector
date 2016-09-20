@@ -91,6 +91,16 @@ class GoCleverFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; QUANTUM 4 Build/GOCLEVER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.94 Mobile Safari/537.36',
+                'Quantum 4',
+                'Quantum 4',
+                'GOCLEVER',
+                'GOCLEVER',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

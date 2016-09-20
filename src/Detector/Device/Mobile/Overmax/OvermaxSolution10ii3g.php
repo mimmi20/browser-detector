@@ -66,7 +66,7 @@ class OvermaxSolution10ii3g extends Device implements DeviceHasSpecificPlatformI
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

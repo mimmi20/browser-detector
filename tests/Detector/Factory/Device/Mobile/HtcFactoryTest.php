@@ -411,6 +411,36 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.2; ru-ru; HTC_Amaze Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'Amaze 4G',
+                'Amaze 4G',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.2; HTC_Butterfly_s_901s Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
+                'S901s',
+                'Butterfly',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; HTC_0P4E2 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/32.0.0.23.15;]',
+                '0P4E2',
+                'Desire 601',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

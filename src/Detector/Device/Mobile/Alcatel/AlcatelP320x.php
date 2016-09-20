@@ -66,7 +66,7 @@ class AlcatelP320x extends Device implements DeviceHasSpecificPlatformInterface
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

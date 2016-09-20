@@ -247,7 +247,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedDeviceOrientation,
             $foundDeviceOrientation,
-            'Expected actual "Device_Code_Name" to be "' . $expectedDeviceOrientation . '" (was "' . $foundDeviceOrientation . '" [class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Device_Dual_Orientation" to be "' . $expectedDeviceOrientation . '" (was "' . $foundDeviceOrientation . '" [class: ' . get_class($foundDevice) . '])'
         );
 
         static::assertArrayHasKey(

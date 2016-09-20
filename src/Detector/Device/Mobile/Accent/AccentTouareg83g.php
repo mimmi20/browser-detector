@@ -66,7 +66,7 @@ class AccentTouareg83g extends Device implements DeviceHasSpecificPlatformInterf
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

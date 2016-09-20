@@ -235,6 +235,10 @@ class LenovoFactory implements FactoryInterface
             return new Lenovo\LenovoA789($useragent);
         }
 
+        if (preg_match('/a766/i', $useragent)) {
+            return new Lenovo\LenovoA766($useragent);
+        }
+
         if (preg_match('/a660/i', $useragent)) {
             return new Lenovo\LenovoA660($useragent);
         }

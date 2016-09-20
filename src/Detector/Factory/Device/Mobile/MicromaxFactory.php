@@ -79,6 +79,10 @@ class MicromaxFactory implements FactoryInterface
             return new Micromax\MicromaxA065($useragent);
         }
 
+        if (preg_match('/A59/i', $useragent)) {
+            return new Micromax\MicromaxA59($useragent);
+        }
+
         if (preg_match('/A40/i', $useragent)) {
             return new Micromax\MicromaxA40($useragent);
         }

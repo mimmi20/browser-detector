@@ -66,7 +66,7 @@ class LenovoA5500hIdeaTab extends Device implements DeviceHasSpecificPlatformInt
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

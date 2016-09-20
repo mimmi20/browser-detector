@@ -91,6 +91,16 @@ class FlyFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; IQ436i Build/KOT49H) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 YaBrowser/1.1.1364.172 Mobile Safari/537.22',
+                'IQ436i',
+                'Era Nano 9',
+                'Fly',
+                'Fly',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

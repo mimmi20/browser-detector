@@ -77,7 +77,7 @@ class PipoFactoryTest extends \PHPUnit_Framework_TestCase
                 'M7T 3G',
                 'PiPO Technology',
                 'PiPO',
-                'Tablet',
+                'FonePad',
                 true,
                 'touchscreen',
             ],

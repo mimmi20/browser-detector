@@ -51,7 +51,7 @@ class HaierFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/hq\-w718/i', $useragent)) {
+        if (preg_match('/w718/i', $useragent)) {
             return new Haier\HaierW718($useragent);
         }
 

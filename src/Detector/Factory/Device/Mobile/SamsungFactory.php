@@ -115,6 +115,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmA500f($useragent);
         }
 
+        if (preg_match('/sm\-a500h/i', $useragent)) {
+            return new Samsung\SamsungSmA500h($useragent);
+        }
+
         if (preg_match('/sm\-a310f/i', $useragent)) {
             return new Samsung\SamsungSmA310f($useragent);
         }
@@ -539,6 +543,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmG310hn($useragent);
         }
 
+        if (preg_match('/sm\-g130h/i', $useragent)) {
+            return new Samsung\SamsungSmG130H($useragent);
+        }
+
         if (preg_match('/SM\-E500H/i', $useragent)) {
             return new Samsung\SamsungSmE500H($useragent);
         }
@@ -551,11 +559,15 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmC101($useragent);
         }
 
-        if (preg_match('/SGH\-T989D/i', $useragent)) {
+        if (preg_match('/sgh\-t999/i', $useragent)) {
+            return new Samsung\SamsungSghT999($useragent);
+        }
+
+        if (preg_match('/sgh\-t989d/i', $useragent)) {
             return new Samsung\SamsungSghT989d($useragent);
         }
 
-        if (preg_match('/SGH\-T989/i', $useragent)) {
+        if (preg_match('/sgh\-t989/i', $useragent)) {
             return new Samsung\SamsungSghT989($useragent);
         }
 
@@ -1643,20 +1655,24 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGtb7350($useragent);
         }
 
-        if (preg_match('/GT\-B5510/i', $useragent)) {
+        if (preg_match('/gt\-b5510/i', $useragent)) {
             return new Samsung\SamsungGtb5510($useragent);
         }
 
-        if (preg_match('/GT\-B3410/i', $useragent)) {
+        if (preg_match('/gt\-b3410/i', $useragent)) {
             return new Samsung\SamsungGtb3410($useragent);
         }
 
-        if (preg_match('/GT\-B2710/i', $useragent)) {
+        if (preg_match('/gt\-b2710/i', $useragent)) {
             return new Samsung\SamsungGtb2710($useragent);
         }
 
-        if (preg_match('/(GT\-B2100|B2100)/i', $useragent)) {
+        if (preg_match('/(gt\-b2100|b2100)/i', $useragent)) {
             return new Samsung\SamsungGtb2100($useragent);
+        }
+
+        if (preg_match('/gt\-9000/i', $useragent)) {
+            return new Samsung\SamsungGt9000($useragent);
         }
 
         if (preg_match('/F031/i', $useragent)) {

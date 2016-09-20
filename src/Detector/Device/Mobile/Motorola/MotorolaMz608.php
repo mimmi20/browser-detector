@@ -66,7 +66,7 @@ class MotorolaMz608 extends Device implements DeviceHasSpecificPlatformInterface
         $this->smsSupport        = false;
         $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

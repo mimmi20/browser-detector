@@ -283,6 +283,10 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcDesire816($useragent);
         }
 
+        if (preg_match('/(0p4e2|desire[ _]601)/i', $useragent)) {
+            return new Htc\Htc0p4e2($useragent);
+        }
+
         if (preg_match('/desire[ _]516/i', $useragent)) {
             return new Htc\HtcDesire516($useragent);
         }
@@ -385,6 +389,10 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/Salsa/i', $useragent)) {
             return new Htc\HtcSalsa($useragent);
+        }
+
+        if (preg_match('/butterfly_s_901s/i', $useragent)) {
+            return new Htc\HtcS901s($useragent);
         }
 
         if (preg_match('/(Incredible S|IncredibleS|S710e)/i', $useragent)) {
@@ -507,19 +515,23 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcA3335($useragent);
         }
 
-        if (preg_match('/ChaCha/i', $useragent)) {
+        if (preg_match('/chacha/i', $useragent)) {
             return new Htc\HtcA810eChaCha($useragent);
         }
 
-        if (preg_match('/A510a/i', $useragent)) {
+        if (preg_match('/a510a/i', $useragent)) {
             return new Htc\HtcA510a($useragent);
         }
 
-        if (preg_match('/(Explorer|A310e)/i', $useragent)) {
+        if (preg_match('/(explorer|a310e)/i', $useragent)) {
             return new Htc\HtcA310e($useragent);
         }
 
-        if (preg_match('/HTC7088/i', $useragent)) {
+        if (preg_match('/amaze/i', $useragent)) {
+            return new Htc\HtcAmaze($useragent);
+        }
+
+        if (preg_match('/htc7088/i', $useragent)) {
             return new Htc\Htc7088($useragent);
         }
 
