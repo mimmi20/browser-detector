@@ -55,6 +55,10 @@ class BmobileFactory implements FactoryInterface
             return new Bmobile\BmobileAx540($useragent);
         }
 
+        if (preg_match('/AX512/', $useragent)) {
+            return new Bmobile\BmobileAx512($useragent);
+        }
+
         return new Bmobile\Bmobile($useragent);
     }
 }

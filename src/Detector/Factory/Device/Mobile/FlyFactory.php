@@ -67,6 +67,10 @@ class FlyFactory implements FactoryInterface
             return new Fly\FlyIq4410i($useragent);
         }
 
+        if (preg_match('/IQ4490/', $useragent)) {
+            return new Fly\FlyIq4490($useragent);
+        }
+
         if (preg_match('/IQ4410/', $useragent)) {
             return new Fly\FlyIq4410($useragent);
         }
@@ -95,12 +99,20 @@ class FlyFactory implements FactoryInterface
             return new Fly\FlyIq449($useragent);
         }
 
+        if (preg_match('/IQ448/', $useragent)) {
+            return new Fly\FlyIq448($useragent);
+        }
+
         if (preg_match('/IQ442/', $useragent)) {
             return new Fly\FlyIq442($useragent);
         }
 
         if (preg_match('/IQ436i/', $useragent)) {
             return new Fly\FlyIq436i($useragent);
+        }
+
+        if (preg_match('/IQ434/', $useragent)) {
+            return new Fly\FlyIq434($useragent);
         }
 
         return new Fly\Fly($useragent);

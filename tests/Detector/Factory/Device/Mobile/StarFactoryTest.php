@@ -81,6 +81,16 @@ class StarFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.3.3; ru; GT-9000) U2/1.0.0 UCBrowser/9.9.0.543 U2/1.0.0 Mobile',
+                'GT-9000',
+                'H5W',
+                'Star',
+                'Star',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -79,6 +79,10 @@ class GoCleverFactory implements FactoryInterface
             return new GoClever\GoCleverQuantum4($useragent);
         }
 
+        if (preg_match('/QUANTUM_700m/', $useragent)) {
+            return new GoClever\GoCleverQuantum700m($useragent);
+        }
+
         if (preg_match('/TAB A93\.2/', $useragent)) {
             return new GoClever\GoCleverTabA932($useragent);
         }

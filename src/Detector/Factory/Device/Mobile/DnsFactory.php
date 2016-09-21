@@ -67,6 +67,14 @@ class DnsFactory implements FactoryInterface
             return new Dns\DnsS4502m($useragent);
         }
 
+        if (preg_match('/s4502/i', $useragent)) {
+            return new Dns\DnsS4502($useragent);
+        }
+
+        if (preg_match('/s4501m/i', $useragent)) {
+            return new Dns\DnsS4501m($useragent);
+        }
+
         if (preg_match('/S4008/', $useragent)) {
             return new Dns\DnsS4008($useragent);
         }

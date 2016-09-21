@@ -51,12 +51,16 @@ class StarFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/N9500/i', $useragent)) {
+        if (preg_match('/n9500/i', $useragent)) {
             return new Star\StarN9500($useragent);
         }
 
-        if (preg_match('/N8000/i', $useragent)) {
+        if (preg_match('/n8000/i', $useragent)) {
             return new Star\StarN8000($useragent);
+        }
+
+        if (preg_match('/gt\-9000/i', $useragent)) {
+            return new Star\StarGt9000($useragent);
         }
 
         return new Star\Star($useragent);

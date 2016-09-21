@@ -59,6 +59,10 @@ class DigmaFactory implements FactoryInterface
             return new Digma\DigmaIdxd7($useragent);
         }
 
+        if (preg_match('/iDxD4/', $useragent)) {
+            return new Digma\DigmaIdxd4($useragent);
+        }
+
         if (preg_match('/iDsD7/', $useragent)) {
             return new Digma\DigmaIdsd7($useragent);
         }

@@ -55,6 +55,10 @@ class PulidFactory implements FactoryInterface
             return new Pulid\PulidF15($useragent);
         }
 
+        if (preg_match('/F11/', $useragent)) {
+            return new Pulid\PulidF11($useragent);
+        }
+
         return new Pulid\Pulid($useragent);
     }
 }

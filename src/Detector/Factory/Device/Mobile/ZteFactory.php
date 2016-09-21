@@ -159,6 +159,10 @@ class ZteFactory implements FactoryInterface
             return new Zte\ZteN600($useragent);
         }
 
+        if (preg_match('/leo q2/i', $useragent)) {
+            return new Zte\ZteLeoQ2($useragent);
+        }
+
         if (preg_match('/kis plus/i', $useragent)) {
             return new Zte\ZteKisPlus($useragent);
         }

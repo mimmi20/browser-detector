@@ -171,6 +171,16 @@ class MotorolaFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2.2; ru-ru; MB612 Build/KRNS-X4-1.1.10) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'MB612',
+                'XPRT (CDMA)',
+                'Motorola',
+                'Motorola',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

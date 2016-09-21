@@ -71,6 +71,10 @@ class ThlFactory implements FactoryInterface
             return new Thl\ThlT6s($useragent);
         }
 
+        if (preg_match('/4400/', $useragent)) {
+            return new Thl\Thl4400($useragent);
+        }
+
         return new Thl\Thl($useragent);
     }
 }

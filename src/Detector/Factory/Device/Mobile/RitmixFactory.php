@@ -59,6 +59,10 @@ class RitmixFactory implements FactoryInterface
             return new Ritmix\RitmixRmd1025($useragent);
         }
 
+        if (preg_match('/RMD\-757/', $useragent)) {
+            return new Ritmix\RitmixRmd757($useragent);
+        }
+
         if (preg_match('/RMD\-753/', $useragent)) {
             return new Ritmix\RitmixRmd753($useragent);
         }

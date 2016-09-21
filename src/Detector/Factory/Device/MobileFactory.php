@@ -120,6 +120,14 @@ class MobileFactory implements FactoryInterface
             return Mobile\CubeFactory::detect($useragent);
         }
 
+        if (preg_match('/GTX75/', $useragent)) {
+            return Mobile\UtStarcomFactory::detect($useragent);
+        }
+
+        if (preg_match('/gt\-9000/i', $useragent)) {
+            return Mobile\StarFactory::detect($useragent);
+        }
+
         if (preg_match('/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum)\-/i', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
         }
@@ -988,10 +996,6 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/utstarcom/i', $useragent)) {
-            return Mobile\UtStarcomFactory::detect($useragent);
-        }
-
-        if (preg_match('/GTX75/', $useragent)) {
             return Mobile\UtStarcomFactory::detect($useragent);
         }
 

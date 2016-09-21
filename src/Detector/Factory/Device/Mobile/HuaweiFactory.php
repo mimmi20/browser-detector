@@ -147,6 +147,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiU8950d($useragent);
         }
 
+        if (preg_match('/u8950\-1/i', $useragent)) {
+            return new Huawei\HuaweiU89501($useragent);
+        }
+
         if (preg_match('/u8950/i', $useragent)) {
             return new Huawei\HuaweiU8950($useragent);
         }
@@ -273,6 +277,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/mediapad 10 link\+/i', $useragent)) {
             return new Huawei\HuaweiMediaPad10LinkPlus($useragent);
+        }
+
+        if (preg_match('/mediapad 10 fhd/i', $useragent)) {
+            return new Huawei\HuaweiMediaPad10fhd($useragent);
         }
 
         if (preg_match('/mediapad 10 link/i', $useragent)) {

@@ -539,23 +539,27 @@ class HtcFactory implements FactoryInterface
             return new Htc\Htc6990Lvw($useragent);
         }
 
-        if (preg_match('/HTC6500LVW/i', $useragent)) {
+        if (preg_match('/htc6500lvw/i', $useragent)) {
             return new Htc\Htc6500Lvw($useragent);
         }
 
-        if (preg_match('/HTC6435LVW/i', $useragent)) {
+        if (preg_match('/htc6435lvw/i', $useragent)) {
             return new Htc\HTC6435lvw($useragent);
         }
 
-        if (preg_match('/831C/i', $useragent)) {
+        if (preg_match('/htc 919d/i', $useragent)) {
+            return new Htc\Htc919d($useragent);
+        }
+
+        if (preg_match('/831c/i', $useragent)) {
             return new Htc\Htc831C($useragent);
         }
 
-        if (preg_match('/HTC802t/i', $useragent)) {
+        if (preg_match('/htc802t/i', $useragent)) {
             return new Htc\Htc802T($useragent);
         }
 
-        if (preg_match('/HTC 802d/i', $useragent)) {
+        if (preg_match('/htc 802d/i', $useragent)) {
             return new Htc\Htc802d($useragent);
         }
 

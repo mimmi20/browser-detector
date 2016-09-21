@@ -175,39 +175,39 @@ class MotorolaFactory implements FactoryInterface
             return new Motorola\MotorolaNexus6($useragent);
         }
 
-        if (preg_match('/MZ608/i', $useragent)) {
+        if (preg_match('/mz608/i', $useragent)) {
             return new Motorola\MotorolaMz608($useragent);
         }
 
-        if (preg_match('/(MZ607|XOOM 2 ME)/i', $useragent)) {
+        if (preg_match('/(mz607|xoom 2 me)/i', $useragent)) {
             return new Motorola\MotorolaMz607($useragent);
         }
 
-        if (preg_match('/(MZ616|XOOM 2)/i', $useragent)) {
+        if (preg_match('/(mz616|xoom 2)/i', $useragent)) {
             return new Motorola\MotorolaMz616($useragent);
         }
 
-        if (preg_match('/MZ615/i', $useragent)) {
+        if (preg_match('/mz615/i', $useragent)) {
             return new Motorola\MotorolaMz615($useragent);
         }
 
-        if (preg_match('/MZ604/i', $useragent)) {
+        if (preg_match('/mz604/i', $useragent)) {
             return new Motorola\MotorolaMz604($useragent);
         }
 
-        if (preg_match('/MZ601/i', $useragent)) {
+        if (preg_match('/mz601/i', $useragent)) {
             return new Motorola\MotorolaMz601($useragent);
         }
 
-        if (preg_match('/Milestone X/i', $useragent)) {
+        if (preg_match('/milestone x/i', $useragent)) {
             return new Motorola\MotorolaMilestoneX($useragent);
         }
 
-        if (preg_match('/Milestone/i', $useragent)) {
+        if (preg_match('/milestone/i', $useragent)) {
             return new Motorola\MotorolaMilestone($useragent);
         }
 
-        if (preg_match('/ME860/i', $useragent)) {
+        if (preg_match('/me860/i', $useragent)) {
             return new Motorola\MotorolaMe860($useragent);
         }
 
@@ -223,23 +223,27 @@ class MotorolaFactory implements FactoryInterface
             return new Motorola\MotorolaMe511($useragent);
         }
 
-        if (preg_match('/MB860/i', $useragent)) {
+        if (preg_match('/mb860/i', $useragent)) {
             return new Motorola\MotorolaMb860($useragent);
         }
 
-        if (preg_match('/MB632/i', $useragent)) {
+        if (preg_match('/mb632/i', $useragent)) {
             return new Motorola\MotorolaMb632($useragent);
         }
 
-        if (preg_match('/MB526/i', $useragent)) {
+        if (preg_match('/mb612/i', $useragent)) {
+            return new Motorola\MotorolaMb612($useragent);
+        }
+
+        if (preg_match('/mb526/i', $useragent)) {
             return new Motorola\MotorolaMb526($useragent);
         }
 
-        if (preg_match('/MB525/i', $useragent)) {
+        if (preg_match('/mb525/i', $useragent)) {
             return new Motorola\MotorolaMb525($useragent);
         }
 
-        if (preg_match('/MB511/i', $useragent)) {
+        if (preg_match('/mb511/i', $useragent)) {
             return new Motorola\MotorolaMb511($useragent);
         }
 
@@ -251,11 +255,11 @@ class MotorolaFactory implements FactoryInterface
             return new Motorola\MotorolaMb200($useragent);
         }
 
-        if (preg_match('/ES405B/i', $useragent)) {
+        if (preg_match('/es405b/i', $useragent)) {
             return new Motorola\MotorolaES405b($useragent);
         }
 
-        if (preg_match('/E1000/i', $useragent)) {
+        if (preg_match('/e1000/i', $useragent)) {
             return new Motorola\MotorolaE1000($useragent);
         }
 

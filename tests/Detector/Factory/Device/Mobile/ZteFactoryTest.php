@@ -161,6 +161,16 @@ class ZteFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru; ZTE LEO Q2 Build/JDQ39) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.8.0.435 U3/0.8.0 Mobile Safari/533.1',
+                'V769M',
+                'Leo Q2',
+                'ZTE',
+                'ZTE',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
