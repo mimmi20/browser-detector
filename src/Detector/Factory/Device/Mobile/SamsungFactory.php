@@ -311,35 +311,39 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmP905($useragent);
         }
 
-        if (preg_match('/SM\-P900/i', $useragent)) {
+        if (preg_match('/sm\-p901/i', $useragent)) {
+            return new Samsung\SamsungSmP901($useragent);
+        }
+
+        if (preg_match('/sm\-p900/i', $useragent)) {
             return new Samsung\SamsungSmP900($useragent);
         }
 
-        if (preg_match('/SM\-P605/i', $useragent)) {
+        if (preg_match('/sm\-p605/i', $useragent)) {
             return new Samsung\SamsungSmP605($useragent);
         }
 
-        if (preg_match('/SM\-P601/i', $useragent)) {
+        if (preg_match('/sm\-p601/i', $useragent)) {
             return new Samsung\SamsungSmP601($useragent);
         }
 
-        if (preg_match('/SM\-P600/i', $useragent)) {
+        if (preg_match('/sm\-p600/i', $useragent)) {
             return new Samsung\SamsungSmP600($useragent);
         }
 
-        if (preg_match('/(SM\-N9009|N9009)/i', $useragent)) {
+        if (preg_match('/(sm\-n9009|n9009)/i', $useragent)) {
             return new Samsung\SamsungSmN9009($useragent);
         }
 
-        if (preg_match('/SM\-N9008V/i', $useragent)) {
+        if (preg_match('/sm\-n9008v/i', $useragent)) {
             return new Samsung\SamsungSmN9008V($useragent);
         }
 
-        if (preg_match('/(SM\-N9007|N9007)/i', $useragent)) {
+        if (preg_match('/(sm\-n9007|N9007)/i', $useragent)) {
             return new Samsung\SamsungSmN9007($useragent);
         }
 
-        if (preg_match('/(SM\-N9006|N9006)/i', $useragent)) {
+        if (preg_match('/(sm\-n9006|n9006)/i', $useragent)) {
             return new Samsung\SamsungSmN9006($useragent);
         }
 
@@ -1231,35 +1235,39 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGtp1000($useragent);
         }
 
-        if (preg_match('/GT\-N9000/i', $useragent)) {
+        if (preg_match('/gt\-n9000/i', $useragent)) {
             return new Samsung\SamsungGtn9000($useragent);
         }
 
-        if (preg_match('/GT\-N8020/i', $useragent)) {
+        if (preg_match('/gt\-n8020/i', $useragent)) {
             return new Samsung\SamsungGtn8020($useragent);
         }
 
-        if (preg_match('/GT\-N8013/i', $useragent)) {
+        if (preg_match('/gt\-n8013/i', $useragent)) {
             return new Samsung\SamsungGtn8013($useragent);
         }
 
-        if (preg_match('/GT\-N8010/i', $useragent)) {
+        if (preg_match('/gt\-n8010/i', $useragent)) {
             return new Samsung\SamsungGtn8010($useragent);
         }
 
-        if (preg_match('/GT\-N8000/i', $useragent)) {
+        if (preg_match('/gt\-n8005/i', $useragent)) {
+            return new Samsung\SamsungGtn8005($useragent);
+        }
+
+        if (preg_match('/gt\-n8000/i', $useragent)) {
             return new Samsung\SamsungGtn8000($useragent);
         }
 
-        if (preg_match('/GT\-N7108/i', $useragent)) {
+        if (preg_match('/gt\-n7108/i', $useragent)) {
             return new Samsung\SamsungGtn7108($useragent);
         }
 
-        if (preg_match('/GT\-N7105/i', $useragent)) {
+        if (preg_match('/gt\-n7105/i', $useragent)) {
             return new Samsung\SamsungGtn7105($useragent);
         }
 
-        if (preg_match('/GT\-N7100/i', $useragent)) {
+        if (preg_match('/gt\-n7100/i', $useragent)) {
             return new Samsung\SamsungGtn7100($useragent);
         }
 
@@ -1451,55 +1459,59 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGti9008($useragent);
         }
 
-        if (preg_match('/GT\-I9003L/i', $useragent)) {
+        if (preg_match('/gt\-i9003l/i', $useragent)) {
             return new Samsung\SamsungGti9003l($useragent);
         }
 
-        if (preg_match('/GT\-I9003/i', $useragent)) {
+        if (preg_match('/gt\-i9003/i', $useragent)) {
             return new Samsung\SamsungGti9003($useragent);
         }
 
-        if (preg_match('/GT\-I9001/i', $useragent)) {
+        if (preg_match('/gt\-i9001/i', $useragent)) {
             return new Samsung\SamsungGti9001($useragent);
         }
 
-        if (preg_match('/(GT\-I9000|SGH\-T959V)/i', $useragent)) {
+        if (preg_match('/(gt\-i9000|sgh\-t959v)/i', $useragent)) {
             return new Samsung\SamsungGti9000($useragent);
         }
 
-        if (preg_match('/(GT\-I8910|I8910)/i', $useragent)) {
+        if (preg_match('/(gt\-i8910|i8910)/i', $useragent)) {
             return new Samsung\SamsungGti8910($useragent);
         }
 
-        if (preg_match('/GT\-I8750/i', $useragent)) {
+        if (preg_match('/gt\-i8750/i', $useragent)) {
             return new Samsung\SamsungGti8750($useragent);
         }
 
-        if (preg_match('/GT\-I8730/i', $useragent)) {
+        if (preg_match('/gt\-i8730/i', $useragent)) {
             return new Samsung\SamsungGti8730($useragent);
         }
 
-        if (preg_match('/OMNIA7/i', $useragent)) {
+        if (preg_match('/omnia7/i', $useragent)) {
             return new Samsung\SamsungGti8700Omnia7($useragent);
         }
 
-        if (preg_match('/GT\-I8530/i', $useragent)) {
+        if (preg_match('/gt\-i8552/i', $useragent)) {
+            return new Samsung\SamsungGti8552($useragent);
+        }
+
+        if (preg_match('/gt\-i8530/i', $useragent)) {
             return new Samsung\SamsungGti8530($useragent);
         }
 
-        if (preg_match('/GT\-I8350/i', $useragent)) {
+        if (preg_match('/gt\-i8350/i', $useragent)) {
             return new Samsung\SamsungGti8350OmniaW($useragent);
         }
 
-        if (preg_match('/GT\-I8320/i', $useragent)) {
+        if (preg_match('/gt\-i8320/i', $useragent)) {
             return new Samsung\SamsungGti8320($useragent);
         }
 
-        if (preg_match('/GT\-I8262/i', $useragent)) {
+        if (preg_match('/gt\-i8262/i', $useragent)) {
             return new Samsung\SamsungGti8262($useragent);
         }
 
-        if (preg_match('/GT\-I8200N/i', $useragent)) {
+        if (preg_match('/gt\-i8200n/i', $useragent)) {
             return new Samsung\SamsungGti8200n($useragent);
         }
 

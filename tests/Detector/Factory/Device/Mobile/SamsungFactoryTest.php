@@ -1411,6 +1411,36 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.2; tr-tr; GT-N8005 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 [FB_IAB/FB4A;FBAV/31.0.0.20.13;]',
+                'GT-N8005',
+                'Galaxy Note 10.1 LTE',
+                'Samsung',
+                'Samsung',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.2; en-US; GT-I8552 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.0.2.523 U3/0.8.0 Mobile Safari/534.30',
+                'GT-I8552',
+                'Galaxy Win',
+                'Samsung',
+                'Samsung',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; SM-P901 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 Flipboard/3.1.6/2583,3.1.6.2583,2015-02-27 18:45, +0400, az',
+                'SM-P901',
+                'Galaxy Note Pro 12.2 Wi-Fi + 3G',
+                'Samsung',
+                'Samsung',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

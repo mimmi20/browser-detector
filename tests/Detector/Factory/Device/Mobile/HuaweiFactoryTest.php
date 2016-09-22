@@ -311,6 +311,16 @@ class HuaweiFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.2; Huawei Y511 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36',
+                'Y511',
+                'Ascend Y511',
+                'Huawei',
+                'Huawei',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

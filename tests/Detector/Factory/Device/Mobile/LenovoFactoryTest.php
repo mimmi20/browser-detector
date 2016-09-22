@@ -231,6 +231,16 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; ru; Lenovo S720 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/9.8.9.457 U3/0.8.0 Mobile Safari/534.30',
+                'S720',
+                'S720',
+                'Lenovo',
+                'Lenovo',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

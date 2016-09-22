@@ -939,6 +939,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\XiangheFactory::detect($useragent);
         }
 
+        if (preg_match('/celkon/i', $useragent)) {
+            return Mobile\CelkonFactory::detect($useragent);
+        }
+
         if (preg_match('/ MT791 /i', $useragent)) {
             return Mobile\KeenHighFactory::detect($useragent);
         }
@@ -973,6 +977,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/S208/', $useragent)) {
             return Mobile\CubotFactory::detect($useragent);
+        }
+
+        if (preg_match('/A400/', $useragent)) {
+            return Mobile\CelkonFactory::detect($useragent);
         }
 
         if (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
@@ -1253,6 +1261,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/CAL21/', $useragent)) {
             return Mobile\GzoneFactory::detect($useragent);
+        }
+
+        if (preg_match('/N\-06E/', $useragent)) {
+            return Mobile\NecFactory::detect($useragent);
         }
 
         if (preg_match('/(A|C)\d{5}/', $useragent)) {
@@ -1719,7 +1731,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\AxgioFactory::detect($useragent);
         }
 
-        if (preg_match('/T118/', $useragent)) {
+        if (preg_match('/T1(0|1)8/', $useragent)) {
             return Mobile\TwinovoFactory::detect($useragent);
         }
 

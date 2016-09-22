@@ -51,6 +51,10 @@ class RitmixFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/RMD\-1040/', $useragent)) {
+            return new Ritmix\RitmixRmd1040($useragent);
+        }
+
         if (preg_match('/RMD\-1028/', $useragent)) {
             return new Ritmix\RitmixRmd1028($useragent);
         }

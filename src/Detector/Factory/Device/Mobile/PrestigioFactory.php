@@ -171,6 +171,10 @@ class PrestigioFactory implements FactoryInterface
             return new Prestigio\PrestigioPmp3074bru($useragent);
         }
 
+        if (preg_match('/PMP3007C/', $useragent)) {
+            return new Prestigio\PrestigioPmp3007c($useragent);
+        }
+
         if (preg_match('/PAP7600DUO/', $useragent)) {
             return new Prestigio\PrestigioPap7600Duo($useragent);
         }

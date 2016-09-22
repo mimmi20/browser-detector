@@ -63,6 +63,10 @@ class NecFactory implements FactoryInterface
             return new Nec\Nec0912($useragent);
         }
 
+        if (preg_match('/N\-06E/', $useragent)) {
+            return new Nec\NecN06e($useragent);
+        }
+
         return new Nec\Nec($useragent);
     }
 }

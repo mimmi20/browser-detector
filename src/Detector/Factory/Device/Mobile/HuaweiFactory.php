@@ -99,6 +99,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiY530u00($useragent);
         }
 
+        if (preg_match('/y511/i', $useragent)) {
+            return new Huawei\HuaweiY511($useragent);
+        }
+
         if (preg_match('/y330\-u05/i', $useragent)) {
             return new Huawei\HuaweiY330u05($useragent);
         }

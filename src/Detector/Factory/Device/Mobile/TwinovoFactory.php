@@ -51,8 +51,12 @@ class TwinovoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/T118/i', $useragent)) {
+        if (preg_match('/t118/i', $useragent)) {
             return new Twinovo\TwinovoT118($useragent);
+        }
+
+        if (preg_match('/t108/i', $useragent)) {
+            return new Twinovo\TwinovoT108($useragent);
         }
 
         return new Twinovo\Twinovo($useragent);

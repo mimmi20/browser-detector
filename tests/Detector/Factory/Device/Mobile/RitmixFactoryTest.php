@@ -81,6 +81,16 @@ class RitmixFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.1; RMD-1040 Build/JRO03H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.94 Safari/537.36',
+                'RMD-1040',
+                'RMD-1040',
+                'Ritmix',
+                'Ritmix',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
