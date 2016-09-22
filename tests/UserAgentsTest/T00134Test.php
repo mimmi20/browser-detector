@@ -27,12 +27,12 @@ use BrowserDetectorTest\UserAgentsTest;
  * @author     Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @group      useragenttest
  */
-class T00131Test extends UserAgentsTest
+class T00134Test extends UserAgentsTest
 {
     /**
      * @var string
      */
-    protected $sourceDirectory = 'tests/issues/00131/';
+    protected $sourceDirectory = 'tests/issues/00134/';
 
     /**
      * @dataProvider userAgentDataProvider
@@ -43,7 +43,7 @@ class T00131Test extends UserAgentsTest
      * @throws \Exception
      * @group  integration
      * @group  useragenttest
-     * @group  00131
+     * @group  00134
      */
     public function testUserAgents($userAgent, $expectedProperties)
     {
