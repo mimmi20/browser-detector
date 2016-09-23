@@ -811,6 +811,18 @@ class MobileFactory implements FactoryInterface
             return Mobile\ImobileFactory::detect($useragent);
         }
 
+        if (preg_match('/axioo/i', $useragent)) {
+            return Mobile\AxiooFactory::detect($useragent);
+        }
+
+        if (preg_match('/artel/i', $useragent)) {
+            return Mobile\ArtelFactory::detect($useragent);
+        }
+
+        if (preg_match('/sunup/i', $useragent)) {
+            return Mobile\SunupFactory::detect($useragent);
+        }
+
         if (preg_match('/NGM/', $useragent)) {
             return Mobile\NgmFactory::detect($useragent);
         }
@@ -993,6 +1005,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/AT\-AS40SE/', $useragent)) {
             return Mobile\WolgangFactory::detect($useragent);
+        }
+
+        if (preg_match('/AT1010\-T/', $useragent)) {
+            return Mobile\LenovoFactory::detect($useragent);
         }
 
         if (preg_match('/united/i', $useragent)) {
@@ -1523,6 +1539,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\TexetFactory::detect($useragent);
         }
 
+        if (preg_match('/OK\d{3}/', $useragent)) {
+            return Mobile\SunupFactory::detect($useragent);
+        }
+
         if (preg_match('/ G3 /', $useragent)) {
             return Mobile\LgFactory::detect($useragent);
         }
@@ -1572,6 +1592,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/TAB917QC\-8GB/', $useragent)) {
+            return Mobile\SunstechFactory::detect($useragent);
+        }
+
+        if (preg_match('/TAB785DUAL/', $useragent)) {
             return Mobile\SunstechFactory::detect($useragent);
         }
 
@@ -1835,8 +1859,24 @@ class MobileFactory implements FactoryInterface
             return Mobile\YxtelFactory::detect($useragent);
         }
 
-        if (preg_match('/DG330/', $useragent)) {
+        if (preg_match('/DG\d{3}/', $useragent)) {
             return Mobile\DoogeeFactory::detect($useragent);
+        }
+
+        if (preg_match('/H30\-U10/', $useragent)) {
+            return Mobile\HuaweiFactory::detect($useragent);
+        }
+
+        if (preg_match('/PICOpad_S1/', $useragent)) {
+            return Mobile\AxiooFactory::detect($useragent);
+        }
+
+        if (preg_match('/Adi_5S/', $useragent)) {
+            return Mobile\ArtelFactory::detect($useragent);
+        }
+
+        if (preg_match('/Norma 2/', $useragent)) {
+            return Mobile\KeneksiFactory::detect($useragent);
         }
 
         if (preg_match('/One/', $useragent)) {

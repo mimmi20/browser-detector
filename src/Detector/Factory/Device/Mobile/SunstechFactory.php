@@ -55,6 +55,10 @@ class SunstechFactory implements FactoryInterface
             return new Sunstech\SunstechTab917qc8gb($useragent);
         }
 
+        if (preg_match('/TAB785DUAL/', $useragent)) {
+            return new Sunstech\SunstechTab785dual($useragent);
+        }
+
         return new Sunstech\Sunstech($useragent);
     }
 }

@@ -741,6 +741,16 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (Symbian; U; S60 V3; ru; NOKIA6700s) U2/1.0.0 UCBrowser/9.0.1.317 U2/1.0.0 Mobile',
+                '6700s',
+                '6700 slide',
+                'Nokia',
+                'Nokia',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

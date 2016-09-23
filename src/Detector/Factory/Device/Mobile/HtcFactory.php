@@ -183,19 +183,19 @@ class HtcFactory implements FactoryInterface
             return new Htc\VodafoneSmartTabIii7($useragent);
         }
 
-        if (preg_match('/(X315e|Runnymede)/i', $useragent)) {
+        if (preg_match('/(x315e|runnymede)/i', $useragent)) {
             return new Htc\HtcX315eSensationXlBeats($useragent);
         }
 
-        if (preg_match('/Sensation\_4G/i', $useragent)) {
+        if (preg_match('/sensation[ _]4g/i', $useragent)) {
             return new Htc\HtcSensation4g($useragent);
         }
 
-        if (preg_match('/(SensationXL|Sensation XL)/i', $useragent)) {
+        if (preg_match('/(sensationxl|sensation xl)/i', $useragent)) {
             return new Htc\HtcSensationXlBeats($useragent);
         }
 
-        if (preg_match('/(Sensation XE|SensationXE)/i', $useragent)) {
+        if (preg_match('/(sensation xe|sensationxe)/i', $useragent)) {
             return new Htc\HtcZ715eSensationXeBeats($useragent);
         }
 
@@ -203,7 +203,7 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcZ710SensationLs($useragent);
         }
 
-        if (preg_match('/Sensation[ _]Z710e/i', $useragent)) {
+        if (preg_match('/sensation[ _]z710e/i', $useragent)) {
             return new Htc\HtcZ710e($useragent);
         }
 
@@ -297,6 +297,10 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/desire[ _]310/i', $useragent)) {
             return new Htc\HtcDesire310($useragent);
+        }
+
+        if (preg_match('/desire[ _]300/i', $useragent)) {
+            return new Htc\HtcDesire300($useragent);
         }
 
         if (preg_match('/desire[_ ]eye/i', $useragent)) {

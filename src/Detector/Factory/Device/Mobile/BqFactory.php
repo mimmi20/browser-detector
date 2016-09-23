@@ -71,6 +71,10 @@ class BqFactory implements FactoryInterface
             return new Bq\Bq4007($useragent);
         }
 
+        if (preg_match('/BQS\-4005/', $useragent)) {
+            return new Bq\Bq4005($useragent);
+        }
+
         return new Bq\Bq($useragent);
     }
 }

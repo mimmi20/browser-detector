@@ -111,6 +111,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiY330u01($useragent);
         }
 
+        if (preg_match('/y320\-u30/i', $useragent)) {
+            return new Huawei\HuaweiY320u30($useragent);
+        }
+
         if (preg_match('/y300/i', $useragent)) {
             return new Huawei\HuaweiY300($useragent);
         }
@@ -121,6 +125,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/w1\-u00/i', $useragent)) {
             return new Huawei\HuaweiW1u00($useragent);
+        }
+
+        if (preg_match('/h30\-u10/i', $useragent)) {
+            return new Huawei\HuaweiH30u10($useragent);
         }
 
         if (preg_match('/vodafone 858/i', $useragent)) {

@@ -81,6 +81,16 @@ class DoogeeFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.2; ru; DG800 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/9.9.3.478 U3/0.8.0 Mobile Safari/534.30',
+                'DG800',
+                'Valencia',
+                'Doogee',
+                'Doogee',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

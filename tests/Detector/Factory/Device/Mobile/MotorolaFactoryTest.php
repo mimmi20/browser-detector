@@ -181,6 +181,16 @@ class MotorolaFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; XT1080 Build/SU5-24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Mobile Safari/537.36',
+                'XT1080',
+                'Droid Ultra',
+                'Motorola',
+                'Motorola',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

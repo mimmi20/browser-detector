@@ -91,6 +91,26 @@ class BqFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; BQS-4005 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Mobile Safari/537.36',
+                'BQS-4005',
+                'Seoul',
+                'BQ',
+                'BQ',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; BQS-4007 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Mobile Safari/537.36',
+                'BQS-4007',
+                'Valencia',
+                'BQ',
+                'BQ',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

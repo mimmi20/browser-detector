@@ -81,6 +81,16 @@ class ImobileFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; i-mobile IQ 6A Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'IQ 6A',
+                'IQ 6A',
+                'i-mobile',
+                'i-mobile',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

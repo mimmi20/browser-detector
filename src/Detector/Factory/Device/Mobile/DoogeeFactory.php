@@ -51,6 +51,10 @@ class DoogeeFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/DG800/', $useragent)) {
+            return new Doogee\DoogeeDg800($useragent);
+        }
+
         if (preg_match('/DG330/', $useragent)) {
             return new Doogee\DoogeeDg330($useragent);
         }

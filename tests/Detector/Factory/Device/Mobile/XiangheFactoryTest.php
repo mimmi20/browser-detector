@@ -81,6 +81,26 @@ class XiangheFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; iPhone 5C Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.00 Mobile Safari/537.36',
+                'iphone 5c',
+                'iphone 5c',
+                'Xianghe Technology Co., Ltd.',
+                'Xianghe',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; iPhone 6C Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.00 Mobile Safari/537.36',
+                'iphone 6c',
+                'iphone 6c',
+                'Xianghe Technology Co., Ltd.',
+                'Xianghe',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

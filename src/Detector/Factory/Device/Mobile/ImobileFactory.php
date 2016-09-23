@@ -59,6 +59,10 @@ class ImobileFactory implements FactoryInterface
             return new Imobile\ImobileIqxoku($useragent);
         }
 
+        if (preg_match('/IQ 6A/', $useragent)) {
+            return new Imobile\ImobileIq6a($useragent);
+        }
+
         return new Imobile\Imobile($useragent);
     }
 }

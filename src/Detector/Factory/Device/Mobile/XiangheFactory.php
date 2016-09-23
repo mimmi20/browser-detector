@@ -51,6 +51,14 @@ class XiangheFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/iphone 5c/i', $useragent)) {
+            return new Xianghe\XiangheIphone5c($useragent);
+        }
+
+        if (preg_match('/iphone 6c/i', $useragent)) {
+            return new Xianghe\XiangheIphone6c($useragent);
+        }
+
         if (preg_match('/iphone/i', $useragent)) {
             return new Xianghe\XiangheIphone($useragent);
         }

@@ -55,6 +55,10 @@ class KeneksiFactory implements FactoryInterface
             return new Keneksi\KeneksiCrystal($useragent);
         }
 
+        if (preg_match('/norma 2/i', $useragent)) {
+            return new Keneksi\KeneksiNorma2($useragent);
+        }
+
         return new Keneksi\Keneksi($useragent);
     }
 }

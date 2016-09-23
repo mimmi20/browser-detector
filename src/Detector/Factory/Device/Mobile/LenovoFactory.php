@@ -319,6 +319,10 @@ class LenovoFactory implements FactoryInterface
             return new Lenovo\ThinkPadTablet($useragent);
         }
 
+        if (preg_match('/AT1010\-T/', $useragent)) {
+            return new Lenovo\LenovoAt1010t($useragent);
+        }
+
         return new Lenovo\Lenovo($useragent);
     }
 }

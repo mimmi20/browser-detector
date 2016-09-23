@@ -171,6 +171,16 @@ class ZteFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; ZTE Blade L2 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.0.2.523 U3/0.8.0 Mobile Safari/534.30',
+                'Blade L2',
+                'Blade L2',
+                'ZTE',
+                'ZTE',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

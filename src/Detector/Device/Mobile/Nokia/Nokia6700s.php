@@ -53,7 +53,7 @@ class Nokia6700s extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = '6700 slide';
+        $this->deviceName        = '6700s';
         $this->marketingName     = '6700 slide';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Nokia')->getName();
@@ -61,7 +61,7 @@ class Nokia6700s extends Device implements DeviceHasSpecificPlatformInterface
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 240;
         $this->resolutionHeight  = 320;
-        $this->dualOrientation   = false;
+        $this->dualOrientation   = true;
         $this->colors            = 16777216;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
