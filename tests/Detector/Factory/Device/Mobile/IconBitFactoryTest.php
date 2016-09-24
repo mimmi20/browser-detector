@@ -81,6 +81,16 @@ class IconBitFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.1; NT-3702M Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36',
+                'NT-3702M',
+                'NetTAB Matrix 3G Duo',
+                'iconBIT',
+                'iconBIT',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

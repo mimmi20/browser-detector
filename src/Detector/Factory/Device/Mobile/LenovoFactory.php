@@ -51,6 +51,30 @@ class LenovoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/YOGA Tablet 2 Pro\-1380L/i', $useragent)) {
+            return new Lenovo\Lenovo1380L($useragent);
+        }
+
+        if (preg_match('/YOGA Tablet 2 Pro\-1380F/i', $useragent)) {
+            return new Lenovo\Lenovo1380F($useragent);
+        }
+
+        if (preg_match('/YOGA Tablet 2\-1050L/i', $useragent)) {
+            return new Lenovo\Lenovo1050L($useragent);
+        }
+
+        if (preg_match('/YOGA Tablet 2\-1050F/i', $useragent)) {
+            return new Lenovo\Lenovo1050F($useragent);
+        }
+
+        if (preg_match('/YOGA Tablet 2\-830L/i', $useragent)) {
+            return new Lenovo\Lenovo830L($useragent);
+        }
+
+        if (preg_match('/YOGA Tablet 2\-830F/i', $useragent)) {
+            return new Lenovo\Lenovo830F($useragent);
+        }
+
         if (preg_match('/s6000l\-f/i', $useragent)) {
             return new Lenovo\LenovoS6000lfIdeaTab($useragent);
         }
@@ -71,8 +95,16 @@ class LenovoFactory implements FactoryInterface
             return new Lenovo\LenovoS5000f($useragent);
         }
 
-        if (preg_match('/(ideatabs2110af|ideatabs2110ah)/i', $useragent)) {
+        if (preg_match('/ideatabs2110ah/i', $useragent)) {
+            return new Lenovo\LenovoS2110ahIdeaTab($useragent);
+        }
+
+        if (preg_match('/ideatabs2110af/i', $useragent)) {
             return new Lenovo\LenovoS2110afIdeaTab($useragent);
+        }
+
+        if (preg_match('/IdeaTabS2109A\-F/', $useragent)) {
+            return new Lenovo\LenovoS2109afIdeaTab($useragent);
         }
 
         if (preg_match('/s920/i', $useragent)) {

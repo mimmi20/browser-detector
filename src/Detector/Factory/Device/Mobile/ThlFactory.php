@@ -67,6 +67,10 @@ class ThlFactory implements FactoryInterface
             return new Thl\ThlW8($useragent);
         }
 
+        if (preg_match('/ThL W7/', $useragent)) {
+            return new Thl\ThlW7($useragent);
+        }
+
         if (preg_match('/T6S/', $useragent)) {
             return new Thl\ThlT6s($useragent);
         }

@@ -59,6 +59,10 @@ class ImpressionFactory implements FactoryInterface
             return new Impression\ImpressionImpad6213Mv2($useragent);
         }
 
+        if (preg_match('/impad 0413/i', $useragent)) {
+            return new Impression\ImpressionImpad0413($useragent);
+        }
+
         return new Impression\Impression($useragent);
     }
 }

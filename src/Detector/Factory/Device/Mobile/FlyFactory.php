@@ -103,6 +103,10 @@ class FlyFactory implements FactoryInterface
             return new Fly\FlyIq448($useragent);
         }
 
+        if (preg_match('/IQ444/', $useragent)) {
+            return new Fly\FlyIq444($useragent);
+        }
+
         if (preg_match('/IQ442/', $useragent)) {
             return new Fly\FlyIq442($useragent);
         }

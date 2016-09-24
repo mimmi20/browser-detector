@@ -91,6 +91,26 @@ class DoogeeFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; TURBO DG2014 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36 OPR/27.0.1698.89115',
+                'DG2014',
+                'Turbo',
+                'Doogee',
+                'Doogee',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1; F3_Pro Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'F3 Pro',
+                'F3 Pro',
+                'Doogee',
+                'Doogee',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

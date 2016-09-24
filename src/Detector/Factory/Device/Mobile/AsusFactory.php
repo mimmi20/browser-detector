@@ -119,8 +119,16 @@ class AsusFactory implements FactoryInterface
             return new Asus\AsusP1801t($useragent);
         }
 
-        if (preg_match('/T00N/i', $useragent)) {
+        if (preg_match('/T00J/', $useragent)) {
+            return new Asus\AsusT00j($useragent);
+        }
+
+        if (preg_match('/T00N/', $useragent)) {
             return new Asus\AsusT00n($useragent);
+        }
+
+        if (preg_match('/P01Y/', $useragent)) {
+            return new Asus\AsusP01y($useragent);
         }
 
         if (preg_match('/TF101/i', $useragent)) {

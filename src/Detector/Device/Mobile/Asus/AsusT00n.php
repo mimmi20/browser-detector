@@ -54,7 +54,7 @@ class AsusT00n extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'T00N';
-        $this->marketingName     = 'T00N';
+        $this->marketingName     = 'PadFone S';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Asus')->getName();
         $this->brand             = CompanyFactory::get('Asus')->getBrandName();

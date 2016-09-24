@@ -54,7 +54,7 @@ class SamsungSmG800F extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-G800F';
-        $this->marketingName     = 'Galaxy S5 Mini';
+        $this->marketingName     = 'Galaxy S5 Mini (Europe)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

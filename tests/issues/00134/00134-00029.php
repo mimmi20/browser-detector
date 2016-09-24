@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'browscap-issue-00134-02998' => [
+    'test-00134-02998' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:48.0) Gecko/20100101 Firefox/48.0.2 Waterfox/48.0.2',
         'properties' => [
             'Browser_Name'            => 'Waterfox',

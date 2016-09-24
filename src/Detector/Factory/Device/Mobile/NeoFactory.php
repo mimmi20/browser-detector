@@ -51,7 +51,7 @@ class NeoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/1080P\-N003/', $useragent)) {
+        if (preg_match('/N003/', $useragent)) {
             return new Neo\NeoN003($useragent);
         }
 

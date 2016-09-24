@@ -55,6 +55,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiNexus6p($useragent);
         }
 
+        if (preg_match('/ale\-21/i', $useragent)) {
+            return new Huawei\HuaweiAle21($useragent);
+        }
+
         if (preg_match('/p7\-l10/i', $useragent)) {
             return new Huawei\HuaweiP7L10($useragent);
         }
@@ -103,6 +107,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiY511($useragent);
         }
 
+        if (preg_match('/y330\-u11/i', $useragent)) {
+            return new Huawei\HuaweiY330u11($useragent);
+        }
+
         if (preg_match('/y330\-u05/i', $useragent)) {
             return new Huawei\HuaweiY330u05($useragent);
         }
@@ -129,6 +137,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/h30\-u10/i', $useragent)) {
             return new Huawei\HuaweiH30u10($useragent);
+        }
+
+        if (preg_match('/kiw-l21/i', $useragent)) {
+            return new Huawei\HuaweiKiwl21($useragent);
         }
 
         if (preg_match('/vodafone 858/i', $useragent)) {

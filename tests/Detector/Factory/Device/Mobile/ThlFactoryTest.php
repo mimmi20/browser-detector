@@ -81,6 +81,16 @@ class ThlFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; ru-ru; ThL W7 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 MYI/1.10',
+                'W7',
+                'W7',
+                'ThL',
+                'ThL',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

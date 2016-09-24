@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'browscap-issue-00134-02064' => [
+    'test-00134-02064' => [
         'ua'         => 'Opera/9.80 (Android; Opera Mini/19.0.2254/37.8841; U; de) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -28,7 +28,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-00134-02078' => [
+    'test-00134-02078' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONETOUCH P310A Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -55,7 +55,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-00134-02080' => [
+    'test-00134-02080' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T550 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Safari/537.36 evaliant',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',

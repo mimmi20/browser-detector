@@ -101,6 +101,16 @@ class OdysFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; CONNECT7PRO Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
+                'Connect 7 Pro',
+                'Connect 7 Pro',
+                'Odys',
+                'Odys',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -81,6 +81,16 @@ class AmazonFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.3; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/50.2.1 like Chrome/50.0.2661.89 Safari/537.36',
+                'KFASWI',
+                'Kindle Fire HD 7',
+                'Amazon.com, Inc.',
+                'Amazon',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

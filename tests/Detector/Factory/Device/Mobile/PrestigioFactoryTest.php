@@ -161,6 +161,16 @@ class PrestigioFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.1; PAP4044DUO Build/PrestigioPAP4044DUO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 YaBrowser/14.7.1916.15743.00 Mobile Safari/537.36',
+                'PAP4044DUO',
+                'MultiPhone 4044 Duo',
+                'Prestigio',
+                'Prestigio',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

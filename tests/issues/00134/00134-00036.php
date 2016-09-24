@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'browscap-issue-00134-03600' => [
+    'test-00134-03600' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; C6903 Build/14.6.A.1.236) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',

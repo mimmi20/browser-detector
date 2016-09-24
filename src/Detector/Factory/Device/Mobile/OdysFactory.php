@@ -143,6 +143,10 @@ class OdysFactory implements FactoryInterface
             return new Odys\OdysIeosQuad($useragent);
         }
 
+        if (preg_match('/CONNECT7PRO/', $useragent)) {
+            return new Odys\OdysConnect7pro($useragent);
+        }
+
         if (preg_match('/genesis/i', $useragent)) {
             return new Odys\OdysGenesis($useragent);
         }

@@ -131,6 +131,16 @@ class FlyFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.2; IQ444 Quattro Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.117 Mobile Safari/537.36 OPR/24.0.1565.82529',
+                'IQ444',
+                'Diamond 2 Quattro',
+                'Fly',
+                'Fly',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

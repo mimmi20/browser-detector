@@ -53,8 +53,8 @@ class LenovoS2110afIdeaTab extends Device implements DeviceHasSpecificPlatformIn
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'S2110AF';
-        $this->marketingName     = 'IdeaTab S2110AF';
+        $this->deviceName        = 'S2110A-F';
+        $this->marketingName     = 'IdeaTab S2110A';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Lenovo')->getName();
         $this->brand             = CompanyFactory::get('Lenovo')->getBrandName();

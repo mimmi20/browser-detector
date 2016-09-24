@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'browscap-issue-00134-10096' => [
+    'test-00134-10096' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:48.0) Gecko/20100101 Firefox/48.0 anonymized by Abelssoft 933626226',
         'properties' => [
             'Browser_Name'            => 'Firefox',

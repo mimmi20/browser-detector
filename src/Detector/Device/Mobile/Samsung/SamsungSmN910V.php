@@ -54,7 +54,7 @@ class SamsungSmN910V extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-N910V';
-        $this->marketingName     = 'Galaxy Note 4 CDMA (Verizon)';
+        $this->marketingName     = 'Galaxy Note 4 (Verizon, CDMA + LTE)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

@@ -111,6 +111,16 @@ class BqFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 6.0; Aquaris_M4.5 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'Aquaris M4.5',
+                'Aquaris M4.5',
+                'BQ',
+                'BQ',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

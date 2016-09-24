@@ -91,6 +91,10 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyC6833ExperiaZultra($useragent);
         }
 
+        if (preg_match('/c6606/i', $useragent)) {
+            return new SonyEricsson\SonyC6606ExperiaZ($useragent);
+        }
+
         if (preg_match('/c6602/i', $useragent)) {
             return new SonyEricsson\SonyC6602ExperiaZ($useragent);
         }
@@ -557,6 +561,10 @@ class SonyFactory implements FactoryInterface
 
         if (preg_match('/U1/i', $useragent)) {
             return new SonyEricsson\SonyEricssonU1($useragent);
+        }
+
+        if (preg_match('/SO\-01E/i', $useragent)) {
+            return new SonyEricsson\SonyEricssonSo01e($useragent);
         }
 
         if (preg_match('/SO\-01D/i', $useragent)) {

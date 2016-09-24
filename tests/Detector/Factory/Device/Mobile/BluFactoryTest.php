@@ -121,6 +121,16 @@ class BluFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; STUDIO 5.5 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/30.0.0.19.17;]',
+                'Studio 5.5',
+                'Studio 5.5',
+                'BLU',
+                'BLU',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

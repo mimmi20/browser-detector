@@ -55,6 +55,10 @@ class BluFactory implements FactoryInterface
             return new Blu\BluVivoIv($useragent);
         }
 
+        if (preg_match('/studio 5\.5/i', $useragent)) {
+            return new Blu\BluStudio55($useragent);
+        }
+
         if (preg_match('/Studio 5\.0 S II/', $useragent)) {
             return new Blu\BluStudio50Sii($useragent);
         }

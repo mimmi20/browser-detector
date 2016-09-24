@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'browscap-issue-00134-10401' => [
+    'test-00134-10401' => [
         'ua'         => 'Mozilla/5.0 CommonCrawler Node GVHEZCCCUKZBNNP2RD5QXETARPYZIAJTKSESGE5VK6C2D6MALQC3QFCINUSR6WK.R.Z2RAFY2ED4CIZANMTGJH2KXX76XEP2TMO4IZY3ZVCERF5TW5.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -28,7 +28,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-00134-10405' => [
+    'test-00134-10405' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; CMDTDFJS; F9J; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:MANAGED; GWX:DOWNLOADED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -55,7 +55,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-00134-10406' => [
+    'test-00134-10406' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:48.0 () Gecko/20100101 Firefox/48.0 ( anonymized by Abelssoft 1869984560',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -82,7 +82,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-00134-10408' => [
+    'test-00134-10408' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:48.0 () Gecko/20100101 Firefox/48.0 ( anonymized by Abelssoft 2021633465',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -109,7 +109,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-00134-10409' => [
+    'test-00134-10409' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:48.0 () Gecko/20100101 Firefox/48.0 ( anonymized by Abelssoft 680301149',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -136,7 +136,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-00134-10410' => [
+    'test-00134-10410' => [
         'ua'         => 'Mozilla/3.0 (compatible; MSIE6.00; Windows 2007)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',

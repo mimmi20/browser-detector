@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'browscap-issue-00134-12043' => [
+    'test-00134-12043' => [
         'ua'         => 'Dalvik/2.1.0 (Linux; U; Android 6.0; HTC One M9_Prime Camera Edition Build/MRA58K)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -28,7 +28,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-00134-12045' => [
+    'test-00134-12045' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 ACHEETAHI/2100502061',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -55,7 +55,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-00134-12046' => [
+    'test-00134-12046' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1858.24 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -82,7 +82,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-00134-12051' => [
+    'test-00134-12051' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.3 Safari/601.7.8',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -109,7 +109,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-00134-12099' => [
+    'test-00134-12099' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.3; C5303 Build/12.1.A.1.207) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',

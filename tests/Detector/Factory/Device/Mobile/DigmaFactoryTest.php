@@ -81,6 +81,16 @@ class DigmaFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; iDrQ10_3G Build/KK.DIGMA.20141003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 YaBrowser/15.2.2214.3581.01 Safari/537.36',
+                'iDrQ10 3G',
+                'iDrQ10 3G',
+                'Digma',
+                'Digma',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -51,6 +51,10 @@ class HtcFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/ X9 /', $useragent)) {
+            return new Htc\HtcX9($useragent);
+        }
+
         if (preg_match('/(Nexus[ \-]One|NexusOne)/i', $useragent)) {
             return new Htc\GalaxyNexusOne($useragent);
         }

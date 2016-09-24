@@ -54,7 +54,7 @@ class SamsungSmN910C extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-N910C';
-        $this->marketingName     = 'Galaxy Note 4 LTE';
+        $this->marketingName     = 'Galaxy Note 4 (Asia, Europe, South America, LTE)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
