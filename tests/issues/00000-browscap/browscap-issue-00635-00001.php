@@ -2500,7 +2500,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Galaxy Note 4 LTE',
+            'Device_Name'             => 'Galaxy Note 4 (Asia, Europe, South America, LTE)',
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
