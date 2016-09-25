@@ -91,6 +91,16 @@ class AmazonFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.4; it-it; SD4930UR Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.63 like Chrome/37.0.2026.117 Mobile Safari/537.36',
+                'SD4930UR',
+                'Fire Phone',
+                'Amazon.com, Inc.',
+                'Amazon',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

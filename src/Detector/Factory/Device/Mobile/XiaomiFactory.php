@@ -87,6 +87,10 @@ class XiaomiFactory implements FactoryInterface
             return new Xiaomi\XiaomiRedmiNote3($useragent);
         }
 
+        if (preg_match('/Redmi Note 2/', $useragent)) {
+            return new Xiaomi\XiaomiRedmiNote2($useragent);
+        }
+
         if (preg_match('/HM NOTE 1W/', $useragent)) {
             return new Xiaomi\XiaomiHmnote1w($useragent);
         }

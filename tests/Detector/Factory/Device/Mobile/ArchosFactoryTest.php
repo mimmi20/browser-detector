@@ -151,6 +151,36 @@ class ArchosFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.2; Archos 50 Platinum Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                '50 Platinum',
+                '50 Platinum',
+                'Archos',
+                'Archos',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1.1; Archos 121 Neon Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
+                '121 Neon',
+                '121 Neon',
+                'Archos',
+                'Archos',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1.1; Archos 101 Neon Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
+                '101 Neon',
+                '101 Neon',
+                'Archos',
+                'Archos',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

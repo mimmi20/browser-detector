@@ -55,6 +55,10 @@ class OppoFactory implements FactoryInterface
             return new Oppo\OppoX909($useragent);
         }
 
+        if (preg_match('/r815/i', $useragent)) {
+            return new Oppo\OppoR815($useragent);
+        }
+
         if (preg_match('/r813t/i', $useragent)) {
             return new Oppo\OppoR813T($useragent);
         }

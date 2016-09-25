@@ -67,6 +67,10 @@ class LgFactory implements FactoryInterface
             return new Lg\LgH345($useragent);
         }
 
+        if (preg_match('/h340n/i', $useragent)) {
+            return new Lg\LgH340n($useragent);
+        }
+
         if (preg_match('/h320/i', $useragent)) {
             return new Lg\LgH320($useragent);
         }
@@ -465,6 +469,10 @@ class LgFactory implements FactoryInterface
 
         if (preg_match('/d722/i', $useragent)) {
             return new Lg\Lgd722($useragent);
+        }
+
+        if (preg_match('/d690/i', $useragent)) {
+            return new Lg\LgD690($useragent);
         }
 
         if (preg_match('/d686/i', $useragent)) {

@@ -171,6 +171,16 @@ class AsusFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 5.0.2; PadFone T004 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 OPR/18.0.2254.106542',
+                'PadFone T004',
+                'PadFone T004',
+                'Asus',
+                'Asus',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

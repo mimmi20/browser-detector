@@ -55,8 +55,16 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiNexus6p($useragent);
         }
 
+        if (preg_match('/tag\-al00/i', $useragent)) {
+            return new Huawei\HuaweiTagal00($useragent);
+        }
+
         if (preg_match('/ale\-21/i', $useragent)) {
             return new Huawei\HuaweiAle21($useragent);
+        }
+
+        if (preg_match('/gra\-l09/i', $useragent)) {
+            return new Huawei\HuaweiGraL09($useragent);
         }
 
         if (preg_match('/p7\-l10/i', $useragent)) {
@@ -279,6 +287,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiP6SU06($useragent);
         }
 
+        if (preg_match('/mt7\-tl10/i', $useragent)) {
+            return new Huawei\HuaweiMt7Tl10($useragent);
+        }
+
         if (preg_match('/mt7\-l09/i', $useragent)) {
             return new Huawei\HuaweiMt7L09($useragent);
         }
@@ -289,6 +301,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/mt1\-u06/i', $useragent)) {
             return new Huawei\HuaweiMt1U06($useragent);
+        }
+
+        if (preg_match('/s8\-701w/i', $useragent)) {
+            return new Huawei\HuaweiS8701w($useragent);
         }
 
         if (preg_match('/mediapad t1 8\.0/i', $useragent)) {

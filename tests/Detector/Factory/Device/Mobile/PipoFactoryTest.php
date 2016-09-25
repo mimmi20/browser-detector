@@ -81,6 +81,26 @@ class PipoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; ru-ru; M83g Build/M83g-eng 4.0.4 IMM76D test-keys_OTA:MID_2.1.1.1_20130207.131452) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16',
+                'M8 3G',
+                'Max M8 3G',
+                'PiPO Technology',
+                'PiPO',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; uk-ua; M6 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 [FB_IAB/FB4A;FBAV/31.0.0.20.13;]',
+                'M6',
+                'M6',
+                'PiPO Technology',
+                'PiPO',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

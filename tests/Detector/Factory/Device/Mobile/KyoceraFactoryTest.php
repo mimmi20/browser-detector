@@ -81,6 +81,16 @@ class KyoceraFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; KC-S701 Build/100.0.1600) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'KC-S701',
+                'Torque',
+                'Kyocera',
+                'Kyocera',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -63,6 +63,10 @@ class ExplayFactory implements FactoryInterface
             return new Explay\ExplayD723g($useragent);
         }
 
+        if (preg_match('/art 3g/i', $useragent)) {
+            return new Explay\ExplayArt3g($useragent);
+        }
+
         return new Explay\Explay($useragent);
     }
 }

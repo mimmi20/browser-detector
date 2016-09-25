@@ -55,6 +55,18 @@ class OneplusFactory implements FactoryInterface
             return new Oneplus\OneplusA3000($useragent);
         }
 
+        if (preg_match('/A2001/', $useragent)) {
+            return new Oneplus\OneplusA2001($useragent);
+        }
+
+        if (preg_match('/A2003/', $useragent)) {
+            return new Oneplus\OneplusA2003($useragent);
+        }
+
+        if (preg_match('/A2005/', $useragent)) {
+            return new Oneplus\OneplusA2005($useragent);
+        }
+
         if (preg_match('/E1003/', $useragent)) {
             return new Oneplus\OneplusE1003($useragent);
         }

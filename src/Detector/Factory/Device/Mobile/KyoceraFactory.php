@@ -51,6 +51,10 @@ class KyoceraFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/KC\-S701/', $useragent)) {
+            return new Kyocera\KyoceraKcs701($useragent);
+        }
+
         if (preg_match('/DM015K/', $useragent)) {
             return new Kyocera\KyoceraDm015k($useragent);
         }

@@ -51,6 +51,10 @@ class BqFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/Aquaris E5 HD/', $useragent)) {
+            return new Bq\BqAquarisE5hd($useragent);
+        }
+
         if (preg_match('/Aquaris M10/', $useragent)) {
             return new Bq\BqAquarisM10($useragent);
         }

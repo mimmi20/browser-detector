@@ -51,16 +51,20 @@ class DnsFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/S5701/', $useragent)) {
+        if (preg_match('/s5701/i', $useragent)) {
             return new Dns\DnsS5701($useragent);
         }
 
-        if (preg_match('/S4505M/', $useragent)) {
+        if (preg_match('/s4505m/i', $useragent)) {
             return new Dns\DnsS4505m($useragent);
         }
 
-        if (preg_match('/S4505/', $useragent)) {
+        if (preg_match('/s4505/i', $useragent)) {
             return new Dns\DnsS4505($useragent);
+        }
+
+        if (preg_match('/s4503q/i', $useragent)) {
+            return new Dns\DnsS4503q($useragent);
         }
 
         if (preg_match('/s4502m/i', $useragent)) {

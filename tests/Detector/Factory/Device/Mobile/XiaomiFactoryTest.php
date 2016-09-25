@@ -161,6 +161,16 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.2; Redmi Note 2 Build/LRX22B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 ACHEETAHI/2100502063',
+                'Redmi Note 2',
+                'Redmi Note 2',
+                'Xiaomi Tech',
+                'Xiaomi',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

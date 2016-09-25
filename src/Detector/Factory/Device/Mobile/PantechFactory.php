@@ -59,6 +59,10 @@ class PantechFactory implements FactoryInterface
             return new Pantech\PantechP2020($useragent);
         }
 
+        if (preg_match('/im\-a900k/i', $useragent)) {
+            return new Pantech\PantechIma900k($useragent);
+        }
+
         if (preg_match('/im\-a830l/i', $useragent)) {
             return new Pantech\PantechIma830l($useragent);
         }

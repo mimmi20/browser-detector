@@ -91,6 +91,10 @@ class ArchosFactory implements FactoryInterface
             return new Archos\Archos101xs2($useragent);
         }
 
+        if (preg_match('/121 neon/i', $useragent)) {
+            return new Archos\Archos121Neon($useragent);
+        }
+
         if (preg_match('/101d neon/i', $useragent)) {
             return new Archos\Archos101dNeon($useragent);
         }

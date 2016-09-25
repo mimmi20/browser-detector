@@ -75,6 +75,14 @@ class PipoFactory implements FactoryInterface
             return new Pipo\PipoI75($useragent);
         }
 
+        if (preg_match('/m83g/i', $useragent)) {
+            return new Pipo\PipoM83g($useragent);
+        }
+
+        if (preg_match('/ M6 /', $useragent)) {
+            return new Pipo\PipoM6($useragent);
+        }
+
         return new Pipo\Pipo($useragent);
     }
 }

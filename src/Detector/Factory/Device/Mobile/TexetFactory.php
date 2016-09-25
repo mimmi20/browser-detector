@@ -71,8 +71,20 @@ class TexetFactory implements FactoryInterface
             return new Texet\TexetTm3204r($useragent);
         }
 
-        if (preg_match('/navipad tm\-7055hd 3g/i', $useragent)) {
-            return new Texet\TexetNaviPad($useragent);
+        if (preg_match('/tm\-7055hd/i', $useragent)) {
+            return new Texet\TexetTm7055hd($useragent);
+        }
+
+        if (preg_match('/tm\-7058hd/i', $useragent)) {
+            return new Texet\TexetTm7058hd($useragent);
+        }
+
+        if (preg_match('/tm\-7058/i', $useragent)) {
+            return new Texet\TexetTm7058($useragent);
+        }
+
+        if (preg_match('/tm\-5204/i', $useragent)) {
+            return new Texet\TexetTm5204($useragent);
         }
 
         return new Texet\Texet($useragent);

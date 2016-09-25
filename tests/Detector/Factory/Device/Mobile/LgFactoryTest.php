@@ -371,6 +371,36 @@ class LgFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.2; ru; LG-D690 Build/KOT49I.A1413286746) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/9.9.2.467 U3/0.8.0 Mobile Safari/534.30',
+                'D690',
+                'G3 Stylus',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.1; LG-H340n Build/LRX21Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'H340N',
+                'Leon 4G LTE',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.0.4; LG-P970 Build/IMM76L) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19',
+                'P970',
+                'Optimus Black',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

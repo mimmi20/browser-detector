@@ -51,6 +51,10 @@ class MedionFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/medion e5001/i', $useragent)) {
+            return new Medion\MdLifeE5001($useragent);
+        }
+
         if (preg_match('/x4701/i', $useragent)) {
             return new Medion\MdX4701($useragent);
         }

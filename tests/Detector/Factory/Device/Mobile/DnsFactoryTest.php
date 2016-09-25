@@ -101,6 +101,16 @@ class DnsFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.2; S4503Q Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36 OPR/16.0.1212.63780',
+                'S4503Q',
+                'S4503Q',
+                'DNS',
+                'DNS',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

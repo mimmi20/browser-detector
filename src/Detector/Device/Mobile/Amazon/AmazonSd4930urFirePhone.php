@@ -61,7 +61,7 @@ class AmazonSd4930urFirePhone extends Device implements DeviceHasSpecificPlatfor
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = true;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

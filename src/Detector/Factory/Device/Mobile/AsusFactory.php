@@ -167,19 +167,23 @@ class AsusFactory implements FactoryInterface
             return new Asus\AsusTransformerPrime($useragent);
         }
 
-        if (preg_match('/PadFone 2/i', $useragent)) {
+        if (preg_match('/padfone t004/i', $useragent)) {
+            return new Asus\AsusPadFoneT004($useragent);
+        }
+
+        if (preg_match('/padfone 2/i', $useragent)) {
             return new Asus\AsusPadFone2($useragent);
         }
 
-        if (preg_match('/PadFone/i', $useragent)) {
+        if (preg_match('/padfone/i', $useragent)) {
             return new Asus\AsusPadFone($useragent);
         }
 
-        if (preg_match('/Nexus 7/i', $useragent)) {
+        if (preg_match('/nexus 7/i', $useragent)) {
             return new Asus\AsusGalaxyNexus7($useragent);
         }
 
-        if (preg_match('/Asus;Galaxy6/i', $useragent)) {
+        if (preg_match('/asus;galaxy6/i', $useragent)) {
             return new Asus\AsusGalaxy6($useragent);
         }
 

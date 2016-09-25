@@ -51,6 +51,10 @@ class BlaupunktFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/Atlantis 1010A/', $useragent)) {
+            return new Blaupunkt\BlaupunktAtlantis1010a($useragent);
+        }
+
         if (preg_match('/Endeavour 101L/i', $useragent)) {
             return new Blaupunkt\BlaupunktEndeavour101l($useragent);
         }
