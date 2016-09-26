@@ -71,6 +71,10 @@ class AsusFactory implements FactoryInterface
             return new Asus\AsusFoneK00z($useragent);
         }
 
+        if (preg_match('/k01e/i', $useragent)) {
+            return new Asus\AsusFoneK01E($useragent);
+        }
+
         if (preg_match('/K01A/i', $useragent)) {
             return new Asus\AsusFoneK01A($useragent);
         }

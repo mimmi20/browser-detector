@@ -615,6 +615,38 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmG3502l($useragent);
         }
 
+        if (preg_match('/sm\-g928f/i', $useragent)) {
+            return new Samsung\SamsungSmG928F($useragent);
+        }
+
+        if (preg_match('/sm\-g928v/i', $useragent)) {
+            return new Samsung\SamsungSmG928V($useragent);
+        }
+
+        if (preg_match('/sm\-g928w8/i', $useragent)) {
+            return new Samsung\SamsungSmG928W8($useragent);
+        }
+
+        if (preg_match('/sm\-g928c/i', $useragent)) {
+            return new Samsung\SamsungSmG928C($useragent);
+        }
+
+        if (preg_match('/sm\-g928g/i', $useragent)) {
+            return new Samsung\SamsungSmG928G($useragent);
+        }
+
+        if (preg_match('/sm\-g928p/i', $useragent)) {
+            return new Samsung\SamsungSmG928P($useragent);
+        }
+
+        if (preg_match('/sm\-g928i/i', $useragent)) {
+            return new Samsung\SamsungSmG928I($useragent);
+        }
+
+        if (preg_match('/sm\-g9287/i', $useragent)) {
+            return new Samsung\SamsungSmG9287($useragent);
+        }
+
         if (preg_match('/sm\-g925f/i', $useragent)) {
             return new Samsung\SamsungSmG925F($useragent);
         }

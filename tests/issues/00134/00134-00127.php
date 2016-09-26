@@ -442,7 +442,7 @@ return [
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '47.0',
-            'Platform_Codename'       => 'unknown',
+            'Platform_Codename'       => 'Windows',
             'Platform_Marketingname'  => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,

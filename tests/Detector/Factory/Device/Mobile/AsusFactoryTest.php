@@ -181,6 +181,16 @@ class AsusFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; K01E Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
+                'K01E',
+                'K01E',
+                'Asus',
+                'Asus',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

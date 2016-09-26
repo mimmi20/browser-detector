@@ -361,6 +361,16 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; Lenovo TAB 2 A10-70F Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2192.105088',
+                'A10-70F',
+                'Tab 2',
+                'Lenovo',
+                'Lenovo',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
