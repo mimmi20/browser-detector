@@ -583,7 +583,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Mate 7',
+            'Device_Name'             => 'Ascend Mate 7',
             'Device_Maker'            => 'Huawei',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',

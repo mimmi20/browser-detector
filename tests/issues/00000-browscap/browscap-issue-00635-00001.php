@@ -803,7 +803,7 @@ return [
             'Device_Maker'            => 'HTC',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => null,
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'T328w',
             'Device_Brand_Name'       => 'HTC',
             'RenderingEngine_Name'    => 'Blink',
