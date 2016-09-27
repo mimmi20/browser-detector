@@ -59,15 +59,19 @@ class AsusFactory implements FactoryInterface
             return new Asus\AsusEepPadTransformerTf201($useragent);
         }
 
-        if (preg_match('/K00C/i', $useragent)) {
+        if (preg_match('/z00ad/i', $useragent)) {
+            return new Asus\AsusZ00ad($useragent);
+        }
+
+        if (preg_match('/k00c/i', $useragent)) {
             return new Asus\AsusFoneK00c($useragent);
         }
 
-        if (preg_match('/K00F/i', $useragent)) {
+        if (preg_match('/k00f/i', $useragent)) {
             return new Asus\AsusFoneK00f($useragent);
         }
 
-        if (preg_match('/K00Z/i', $useragent)) {
+        if (preg_match('/k00z/i', $useragent)) {
             return new Asus\AsusFoneK00z($useragent);
         }
 
@@ -75,11 +79,11 @@ class AsusFactory implements FactoryInterface
             return new Asus\AsusFoneK01E($useragent);
         }
 
-        if (preg_match('/K01A/i', $useragent)) {
+        if (preg_match('/k01a/i', $useragent)) {
             return new Asus\AsusFoneK01A($useragent);
         }
 
-        if (preg_match('/K017/i', $useragent)) {
+        if (preg_match('/k017/i', $useragent)) {
             return new Asus\AsusMemoPadK017($useragent);
         }
 

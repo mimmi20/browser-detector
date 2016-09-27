@@ -441,6 +441,26 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; SGP511 Build/17.1.1.A.0.402) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.121 Safari/537.36',
+                'SGP511',
+                'Xperia Tablet Z2 WiFi',
+                'Sony',
+                'Sony',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1.1; D2403 Build/18.6.A.0.182; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'D2403',
+                'D2403',
+                'Sony',
+                'Sony',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

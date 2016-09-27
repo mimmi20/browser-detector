@@ -191,6 +191,26 @@ class AsusFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'Z00AD',
+                'Zenfone 2',
+                'Asus',
+                'Asus',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.1; ASUS Tablet P1801-T Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
+                'P1801-T',
+                'Tablet AiO',
+                'Asus',
+                'Asus',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

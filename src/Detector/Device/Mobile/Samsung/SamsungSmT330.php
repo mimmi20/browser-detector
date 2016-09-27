@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmT530nu extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungSmT330 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,8 +53,8 @@ class SamsungSmT530nu extends Device implements DeviceHasSpecificPlatformInterfa
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SM-T530NU';
-        $this->marketingName     = 'Galaxy Tab 4 10.1';
+        $this->deviceName        = 'SM-T330';
+        $this->marketingName     = 'SM-T330';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

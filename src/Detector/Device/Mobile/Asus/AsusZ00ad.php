@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmT530nu extends Device implements DeviceHasSpecificPlatformInterface
+class AsusZ00ad extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,11 +53,11 @@ class SamsungSmT530nu extends Device implements DeviceHasSpecificPlatformInterfa
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SM-T530NU';
-        $this->marketingName     = 'Galaxy Tab 4 10.1';
+        $this->deviceName        = 'Z00AD';
+        $this->marketingName     = 'Zenfone 2';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
-        $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Asus')->getName();
+        $this->brand             = CompanyFactory::get('Asus')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 1280;
         $this->resolutionHeight  = 800;
@@ -66,7 +66,7 @@ class SamsungSmT530nu extends Device implements DeviceHasSpecificPlatformInterfa
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\FonePad();
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**

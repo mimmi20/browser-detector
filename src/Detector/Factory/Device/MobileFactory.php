@@ -663,6 +663,38 @@ class MobileFactory implements FactoryInterface
             return Mobile\IntexFactory::detect($useragent);
         }
 
+        if (preg_match('/CAL21/', $useragent)) {
+            return Mobile\GzoneFactory::detect($useragent);
+        }
+
+        if (preg_match('/N\-06E/', $useragent)) {
+            return Mobile\NecFactory::detect($useragent);
+        }
+
+        if (preg_match('/(A|C)\d{5}/', $useragent)) {
+            return Mobile\NomiFactory::detect($useragent);
+        }
+
+        if (preg_match('/one e1003/i', $useragent)) {
+            return Mobile\OneplusFactory::detect($useragent);
+        }
+
+        if (preg_match('/one a200(1|3|5)/i', $useragent)) {
+            return Mobile\OneplusFactory::detect($useragent);
+        }
+
+        if (preg_match('/F5281/', $useragent)) {
+            return Mobile\HisenseFactory::detect($useragent);
+        }
+
+        if (preg_match('/MOT/', $useragent)) {
+            return Mobile\MotorolaFactory::detect($useragent);
+        }
+
+        if (preg_match('/(C|D|E|F)\d{4}/', $useragent)) {
+            return Mobile\SonyFactory::detect($useragent);
+        }
+
         if (preg_match('/Aqua\_Star/', $useragent)) {
             return Mobile\IntexFactory::detect($useragent);
         }
@@ -1271,10 +1303,6 @@ class MobileFactory implements FactoryInterface
             return Mobile\TeslaMotorsFactory::detect($useragent);
         }
 
-        if (preg_match('/MOT/', $useragent)) {
-            return Mobile\MotorolaFactory::detect($useragent);
-        }
-
         if (preg_match('/MB\d{3}/', $useragent)) {
             return Mobile\MotorolaFactory::detect($useragent);
         }
@@ -1313,34 +1341,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/ImPAD6213M\_v2/', $useragent)) {
             return Mobile\ImpressionFactory::detect($useragent);
-        }
-
-        if (preg_match('/CAL21/', $useragent)) {
-            return Mobile\GzoneFactory::detect($useragent);
-        }
-
-        if (preg_match('/N\-06E/', $useragent)) {
-            return Mobile\NecFactory::detect($useragent);
-        }
-
-        if (preg_match('/(A|C)\d{5}/', $useragent)) {
-            return Mobile\NomiFactory::detect($useragent);
-        }
-
-        if (preg_match('/one e1003/i', $useragent)) {
-            return Mobile\OneplusFactory::detect($useragent);
-        }
-
-        if (preg_match('/one a200(1|3|5)/i', $useragent)) {
-            return Mobile\OneplusFactory::detect($useragent);
-        }
-
-        if (preg_match('/F5281/', $useragent)) {
-            return Mobile\HisenseFactory::detect($useragent);
-        }
-
-        if (preg_match('/(C|D|E|F)\d{4}/', $useragent)) {
-            return Mobile\SonyFactory::detect($useragent);
         }
 
         if (preg_match('/OP\d{3}/', $useragent)) {

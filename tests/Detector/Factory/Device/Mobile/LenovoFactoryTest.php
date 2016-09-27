@@ -371,6 +371,26 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A536 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'A536',
+                'A536',
+                'Lenovo',
+                'Lenovo',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; Vodafone Smart Tab III 10 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
+                'Smart Tab III 10',
+                'Smart Tab III 10',
+                'Lenovo',
+                'Vodafone',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

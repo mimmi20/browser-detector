@@ -163,6 +163,14 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmJ320g($useragent);
         }
 
+        if (preg_match('/sm\-j320fn/i', $useragent)) {
+            return new Samsung\SamsungSmJ320fn($useragent);
+        }
+
+        if (preg_match('/sm\-j320f/i', $useragent)) {
+            return new Samsung\SamsungSmJ320f($useragent);
+        }
+
         if (preg_match('/sm\-j100h/i', $useragent)) {
             return new Samsung\SamsungSmJ100h($useragent);
         }
@@ -227,6 +235,18 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmT580($useragent);
         }
 
+        if (preg_match('/sm\-t550x/i', $useragent)) {
+            return new Samsung\SamsungSmT550x($useragent);
+        }
+
+        if (preg_match('/sm\-t560/i', $useragent)) {
+            return new Samsung\SamsungSmT560($useragent);
+        }
+
+        if (preg_match('/sm\-t550/i', $useragent)) {
+            return new Samsung\SamsungSmT550($useragent);
+        }
+
         if (preg_match('/sm\-t535/i', $useragent)) {
             return new Samsung\SamsungSmT535($useragent);
         }
@@ -261,6 +281,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sm\-t331/i', $useragent)) {
             return new Samsung\SamsungSmT331($useragent);
+        }
+
+        if (preg_match('/sm\-t330/i', $useragent)) {
+            return new Samsung\SamsungSmT330($useragent);
         }
 
         if (preg_match('/sm\-t325/i', $useragent)) {
