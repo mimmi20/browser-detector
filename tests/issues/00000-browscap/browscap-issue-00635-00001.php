@@ -1451,7 +1451,7 @@ return [
             'Device_Maker'            => 'Ainol',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => false,
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'Numy Note 9',
             'Device_Brand_Name'       => 'Ainol',
             'RenderingEngine_Name'    => 'Blink',

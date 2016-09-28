@@ -879,8 +879,8 @@ class MobileFactory implements FactoryInterface
             return Mobile\SunupFactory::detect($useragent);
         }
 
-        if (preg_match('/evercross/i', $useragent)) {
-            return Mobile\EvercrossFactory::detect($useragent);
+        if (preg_match('/evercoss/i', $useragent)) {
+            return Mobile\EvercossFactory::detect($useragent);
         }
 
         if (preg_match('/NGM/', $useragent)) {
@@ -2008,7 +2008,7 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/A66A/', $useragent)) {
-            return Mobile\EvercrossFactory::detect($useragent);
+            return Mobile\EvercossFactory::detect($useragent);
         }
 
         if (preg_match('/One/', $useragent)) {

@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Evercross;
+namespace BrowserDetector\Detector\Device\Mobile\Evercoss;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class EvercrossA66a extends Device implements DeviceHasSpecificPlatformInterface
+class Evercoss extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,16 +53,16 @@ class EvercrossA66a extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'A66A';
-        $this->marketingName     = 'Elevate Y';
+        $this->deviceName        = 'general Evercoss Device';
+        $this->marketingName     = 'general Evercoss Device';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Evercross')->getName();
-        $this->brand             = CompanyFactory::get('Evercross')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Evercoss')->getName();
+        $this->brand             = CompanyFactory::get('Evercoss')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 800;
-        $this->resolutionHeight  = 480;
+        $this->resolutionWidth   = null;
+        $this->resolutionHeight  = null;
         $this->dualOrientation   = true;
-        $this->colors            = 65536;
+        $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;

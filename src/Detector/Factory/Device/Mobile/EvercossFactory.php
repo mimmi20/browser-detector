@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Evercross;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\CompanyFactory;
-use UaResult\Device\Device;
-use BrowserDetector\Detector\Os;
-use UaDeviceType;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Detector\Device\Mobile\Evercoss;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,39 +40,21 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Evercross extends Device implements DeviceHasSpecificPlatformInterface
+class EvercossFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     */
-    public function __construct($useragent)
-    {
-        $this->useragent         = $useragent;
-        $this->deviceName        = 'general Evercross Device';
-        $this->marketingName     = 'general Evercross Device';
-        $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Evercross')->getName();
-        $this->brand             = CompanyFactory::get('Evercross')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
-        $this->dualOrientation   = true;
-        $this->colors            = null;
-        $this->smsSupport        = true;
-        $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \UaResult\Os\OsInterface|null
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent);
+        if (preg_match('/A66A/', $useragent)) {
+            return new Evercoss\EvercossA66a($useragent);
+        }
+
+        return new Evercoss\Evercoss($useragent);
     }
 }

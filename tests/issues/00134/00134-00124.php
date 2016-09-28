@@ -226,7 +226,7 @@ return [
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '41',
-            'Platform_Codename'       => 'Linux',
+            'Platform_Codename'       => 'Windows NT 6.1',
             'Platform_Marketingname'  => 'Windows 7',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,

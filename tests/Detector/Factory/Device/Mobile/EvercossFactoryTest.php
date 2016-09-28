@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\EvercrossFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\EvercossFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class EvercrossFactoryTest extends \PHPUnit_Framework_TestCase
+class EvercossFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -24,7 +24,7 @@ class EvercrossFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = EvercrossFactory::detect($agent);
+        $result = EvercossFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -75,8 +75,8 @@ class EvercrossFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mozilla/5.0 (Linux; U; Android 4.2.2; en-gb; A66A Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
                 'A66A',
                 'Elevate Y',
-                'Evercross',
-                'Evercross',
+                'Evercoss',
+                'Evercoss',
                 'Mobile Phone',
                 true,
                 'touchscreen',
