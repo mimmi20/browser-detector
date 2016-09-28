@@ -159,6 +159,10 @@ class PrestigioFactory implements FactoryInterface
             return new Prestigio\MultipadPmp5080b($useragent);
         }
 
+        if (preg_match('/PMP3970B/', $useragent)) {
+            return new Prestigio\PrestigioPmp3970b($useragent);
+        }
+
         if (preg_match('/PMP3870C/', $useragent)) {
             return new Prestigio\PrestigioPmp3870c($useragent);
         }
@@ -183,6 +187,10 @@ class PrestigioFactory implements FactoryInterface
             return new Prestigio\PrestigioPap5503($useragent);
         }
 
+        if (preg_match('/PAP5044DUO/', $useragent)) {
+            return new Prestigio\PrestigioPap5044Duo($useragent);
+        }
+
         if (preg_match('/PAP5000TDUO/', $useragent)) {
             return new Prestigio\PrestigioPap5000tDuo($useragent);
         }
@@ -197,6 +205,10 @@ class PrestigioFactory implements FactoryInterface
 
         if (preg_match('/PAP4044DUO/', $useragent)) {
             return new Prestigio\PrestigioPap4044Duo($useragent);
+        }
+
+        if (preg_match('/PAP3350DUO/', $useragent)) {
+            return new Prestigio\PrestigioPap3350Duo($useragent);
         }
 
         if (preg_match('/PSP8500/', $useragent)) {

@@ -179,6 +179,18 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmT2105($useragent);
         }
 
+        if (preg_match('/sm\-t210r/i', $useragent)) {
+            return new Samsung\SamsungSmT210r($useragent);
+        }
+
+        if (preg_match('/sm\-t210l/i', $useragent)) {
+            return new Samsung\SamsungSmT210l($useragent);
+        }
+
+        if (preg_match('/sm\-t210/i', $useragent)) {
+            return new Samsung\SamsungSmT210($useragent);
+        }
+
         if (preg_match('/sm\-t900/i', $useragent)) {
             return new Samsung\SamsungSmT900($useragent);
         }
@@ -323,10 +335,6 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmT211($useragent);
         }
 
-        if (preg_match('/sm\-t210/i', $useragent)) {
-            return new Samsung\SamsungSmT210($useragent);
-        }
-
         if (preg_match('/sm\-t111/i', $useragent)) {
             return new Samsung\SamsungSmT111($useragent);
         }
@@ -447,19 +455,19 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmN9006($useragent);
         }
 
-        if (preg_match('/(SM\-N9005|N9005)/i', $useragent)) {
+        if (preg_match('/(sm\-n9005|n9005)/i', $useragent)) {
             return new Samsung\SamsungSmN9005($useragent);
         }
 
-        if (preg_match('/(SM\-N9002|N9002)/i', $useragent)) {
+        if (preg_match('/(sm\-n9002|n9002)/i', $useragent)) {
             return new Samsung\SamsungSmN9002($useragent);
         }
 
-        if (preg_match('/SM\-N8000/i', $useragent)) {
+        if (preg_match('/sm\-n8000/i', $useragent)) {
             return new Samsung\SamsungSmN8000($useragent);
         }
 
-        if (preg_match('/SM\-N7505/i', $useragent)) {
+        if (preg_match('/sm\-n7505/i', $useragent)) {
             return new Samsung\SamsungSmN7505($useragent);
         }
 
@@ -1595,6 +1603,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGtn8005($useragent);
         }
 
+        if (preg_match('/(gt\-n8000d|n8000d)/i', $useragent)) {
+            return new Samsung\SamsungGtn8000d($useragent);
+        }
+
         if (preg_match('/gt\-n8000/i', $useragent)) {
             return new Samsung\SamsungGtn8000($useragent);
         }
@@ -2043,11 +2055,15 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\Cetus($useragent);
         }
 
-        if (preg_match('/SC\-02C/i', $useragent)) {
+        if (preg_match('/sc\-02f/i', $useragent)) {
+            return new Samsung\SamsungSc02f($useragent);
+        }
+
+        if (preg_match('/sc\-02c/i', $useragent)) {
             return new Samsung\SamsungSc02c($useragent);
         }
 
-        if (preg_match('/SC\-02B/i', $useragent)) {
+        if (preg_match('/sc\-02b/i', $useragent)) {
             return new Samsung\SamsungSc02b($useragent);
         }
 

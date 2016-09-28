@@ -428,7 +428,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\ReellexFactory::detect($useragent);
         }
 
-        if (preg_match('/turbopad/i', $useragent)) {
+        if (preg_match('/(turbopad|turbo pad)/i', $useragent)) {
             return Mobile\TurboPadFactory::detect($useragent);
         }
 
@@ -691,6 +691,22 @@ class MobileFactory implements FactoryInterface
             return Mobile\MotorolaFactory::detect($useragent);
         }
 
+        if (preg_match('/TBD\d{4}/', $useragent)) {
+            return Mobile\ZekiFactory::detect($useragent);
+        }
+
+        if (preg_match('/TBD(B|C|G)\d{3,4}/', $useragent)) {
+            return Mobile\ZekiFactory::detect($useragent);
+        }
+
+        if (preg_match('/AC0732C/', $useragent)) {
+            return Mobile\TriQFactory::detect($useragent);
+        }
+
+        if (preg_match('/ImPAD6213M\_v2/', $useragent)) {
+            return Mobile\ImpressionFactory::detect($useragent);
+        }
+
         if (preg_match('/(C|D|E|F)\d{4}/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         }
@@ -861,6 +877,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/sunup/i', $useragent)) {
             return Mobile\SunupFactory::detect($useragent);
+        }
+
+        if (preg_match('/evercross/i', $useragent)) {
+            return Mobile\EvercrossFactory::detect($useragent);
         }
 
         if (preg_match('/NGM/', $useragent)) {
@@ -1151,6 +1171,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\DexpFactory::detect($useragent);
         }
 
+        if (preg_match('/dex/i', $useragent)) {
+            return Mobile\DexFactory::detect($useragent);
+        }
+
         if (preg_match('/keneksi/i', $useragent)) {
             return Mobile\KeneksiFactory::detect($useragent);
         }
@@ -1325,22 +1349,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/(Tablet\-PC\-4|Kinder\-Tablet)/', $useragent)) {
             return Mobile\CatSoundFactory::detect($useragent);
-        }
-
-        if (preg_match('/TBD\d{4}/', $useragent)) {
-            return Mobile\ZekiFactory::detect($useragent);
-        }
-
-        if (preg_match('/TBD(B|C|G)\d{3,4}/', $useragent)) {
-            return Mobile\ZekiFactory::detect($useragent);
-        }
-
-        if (preg_match('/AC0732C/', $useragent)) {
-            return Mobile\TriQFactory::detect($useragent);
-        }
-
-        if (preg_match('/ImPAD6213M\_v2/', $useragent)) {
-            return Mobile\ImpressionFactory::detect($useragent);
         }
 
         if (preg_match('/OP\d{3}/', $useragent)) {
@@ -1723,6 +1731,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\NokiaFactory::detect($useragent);
         }
 
+        if (preg_match('/N8000D/', $useragent)) {
+            return Mobile\SamsungFactory::detect($useragent);
+        }
+
         if (preg_match('/N\d{4}/', $useragent)) {
             return Mobile\StarFactory::detect($useragent);
         }
@@ -1775,6 +1787,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\AinolFactory::detect($useragent);
         }
 
+        if (preg_match('/Novo7Fire/', $useragent)) {
+            return Mobile\AinolFactory::detect($useragent);
+        }
+
         if (preg_match('/TAB\-97E\-01/', $useragent)) {
             return Mobile\ReellexFactory::detect($useragent);
         }
@@ -1803,7 +1819,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\AdspecFactory::detect($useragent);
         }
 
-        if (preg_match('/Plane 10\.3 3G PS1043MG/', $useragent)) {
+        if (preg_match('/PS1043MG/', $useragent)) {
+            return Mobile\DigmaFactory::detect($useragent);
+        }
+
+        if (preg_match('/TT7026MW/', $useragent)) {
             return Mobile\DigmaFactory::detect($useragent);
         }
 
@@ -1981,6 +2001,14 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/Atlantis 1010A/', $useragent)) {
             return Mobile\BlaupunktFactory::detect($useragent);
+        }
+
+        if (preg_match('/IP1020/', $useragent)) {
+            return Mobile\DexFactory::detect($useragent);
+        }
+
+        if (preg_match('/A66A/', $useragent)) {
+            return Mobile\EvercrossFactory::detect($useragent);
         }
 
         if (preg_match('/One/', $useragent)) {

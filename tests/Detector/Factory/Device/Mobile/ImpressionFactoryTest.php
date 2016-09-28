@@ -81,6 +81,16 @@ class ImpressionFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.2; ImPAD6213M_v2 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.72 Safari/537.36 OPR/19.0.1340.69721',
+                'ImPAD 6213M V2',
+                'ImPAD 6213M V2',
+                'Impression',
+                'Impression',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

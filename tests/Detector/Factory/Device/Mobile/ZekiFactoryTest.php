@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\IrbisFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\ZekiFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class IrbisFactoryTest extends \PHPUnit_Framework_TestCase
+class ZekiFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -24,7 +24,7 @@ class IrbisFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = IrbisFactory::detect($agent);
+        $result = ZekiFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -72,21 +72,21 @@ class IrbisFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-; TX18 Build/JDQ39) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.5.0.4',
-                'TX18',
-                'TX18',
-                'Irbis',
-                'Irbis',
+                'TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24',
+                'TBD1083',
+                'TBD1083',
+                'Zeki',
+                'Zeki',
                 'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.4.2; TX08 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 YaBrowser/15.2.2214.3725.01 Safari/537.36',
-                'TX08',
-                'TX08',
-                'Irbis',
-                'Irbis',
+                'TBDC1093 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24',
+                'TBDC1093',
+                'TBDC1093',
+                'Zeki',
+                'Zeki',
                 'Tablet',
                 true,
                 'touchscreen',

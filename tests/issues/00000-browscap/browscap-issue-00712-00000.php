@@ -1312,7 +1312,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Galaxy Tab 4 10.1 16GB',
+            'Device_Name'             => 'Galaxy Tab 4 10.1',
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'FonePad',
             'Device_Pointing_Method'  => 'touchscreen',

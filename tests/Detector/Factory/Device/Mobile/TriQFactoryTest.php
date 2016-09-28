@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\IrbisFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\TriQFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class IrbisFactoryTest extends \PHPUnit_Framework_TestCase
+class TriQFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -24,7 +24,7 @@ class IrbisFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = IrbisFactory::detect($agent);
+        $result = TriQFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -72,21 +72,11 @@ class IrbisFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-; TX18 Build/JDQ39) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.5.0.4',
-                'TX18',
-                'TX18',
-                'Irbis',
-                'Irbis',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; TX08 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 YaBrowser/15.2.2214.3725.01 Safari/537.36',
-                'TX08',
-                'TX08',
-                'Irbis',
-                'Irbis',
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; AC0732C Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'AC0732C',
+                'Q-lite',
+                '3Q',
+                '3Q',
                 'Tablet',
                 true,
                 'touchscreen',

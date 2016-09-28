@@ -55,6 +55,10 @@ class TurboPadFactory implements FactoryInterface
             return new TurboPad\TurboPadTurboX6($useragent);
         }
 
+        if (preg_match('/turbo pad 500/i', $useragent)) {
+            return new TurboPad\TurboPadPad500($useragent);
+        }
+
         return new TurboPad\TurboPad($useragent);
     }
 }

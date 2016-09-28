@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Device\Mobile\Irbis;
+use BrowserDetector\Detector\Device\Mobile\Evercross;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -40,7 +40,7 @@ use BrowserDetector\Detector\Factory\FactoryInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IrbisFactory implements FactoryInterface
+class EvercrossFactory implements FactoryInterface
 {
     /**
      * detects the device name from the given user agent
@@ -51,26 +51,10 @@ class IrbisFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/TX68/', $useragent)) {
-            return new Irbis\IrbisTx68($useragent);
+        if (preg_match('/A66A/', $useragent)) {
+            return new Evercross\EvercrossA66a($useragent);
         }
 
-        if (preg_match('/TX18/', $useragent)) {
-            return new Irbis\IrbisTx18($useragent);
-        }
-
-        if (preg_match('/TX17/', $useragent)) {
-            return new Irbis\IrbisTx17($useragent);
-        }
-
-        if (preg_match('/TX08/', $useragent)) {
-            return new Irbis\IrbisTx08($useragent);
-        }
-
-        if (preg_match('/TG97/', $useragent)) {
-            return new Irbis\IrbisTg97($useragent);
-        }
-
-        return new Irbis\Irbis($useragent);
+        return new Evercross\Evercross($useragent);
     }
 }

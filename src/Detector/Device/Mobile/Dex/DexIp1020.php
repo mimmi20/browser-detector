@@ -29,10 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Factory\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Dex;
 
-use BrowserDetector\Detector\Device\Mobile\Irbis;
-use BrowserDetector\Detector\Factory\FactoryInterface;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,37 +43,39 @@ use BrowserDetector\Detector\Factory\FactoryInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IrbisFactory implements FactoryInterface
+class DexIp1020 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
-     * detects the device name from the given user agent
+     * the class constructor
      *
      * @param string $useragent
-     *
-     * @return \UaResult\Device\DeviceInterface
      */
-    public static function detect($useragent)
+    public function __construct($useragent)
     {
-        if (preg_match('/TX68/', $useragent)) {
-            return new Irbis\IrbisTx68($useragent);
-        }
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'iP1020';
+        $this->marketingName     = 'iP1020';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Dex')->getName();
+        $this->brand             = CompanyFactory::get('Dex')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 1024;
+        $this->resolutionHeight  = 600;
+        $this->dualOrientation   = true;
+        $this->colors            = 65536;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\Tablet();
+    }
 
-        if (preg_match('/TX18/', $useragent)) {
-            return new Irbis\IrbisTx18($useragent);
-        }
-
-        if (preg_match('/TX17/', $useragent)) {
-            return new Irbis\IrbisTx17($useragent);
-        }
-
-        if (preg_match('/TX08/', $useragent)) {
-            return new Irbis\IrbisTx08($useragent);
-        }
-
-        if (preg_match('/TG97/', $useragent)) {
-            return new Irbis\IrbisTg97($useragent);
-        }
-
-        return new Irbis\Irbis($useragent);
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
+    {
+        return new Os\AndroidOs($this->useragent);
     }
 }

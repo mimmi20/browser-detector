@@ -81,6 +81,16 @@ class TclFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; TCL S720T Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36',
+                'S720T',
+                'S720T',
+                'TCL',
+                'TCL',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

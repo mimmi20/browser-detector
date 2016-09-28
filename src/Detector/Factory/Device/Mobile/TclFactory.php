@@ -55,6 +55,10 @@ class TclFactory implements FactoryInterface
             return new Tcl\TclM2u($useragent);
         }
 
+        if (preg_match('/S720T/', $useragent)) {
+            return new Tcl\TclS720t($useragent);
+        }
+
         return new Tcl\Tcl($useragent);
     }
 }

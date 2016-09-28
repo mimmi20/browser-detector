@@ -61,7 +61,7 @@ class AinolNumyNote9 extends Device implements DeviceHasSpecificPlatformInterfac
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 128;
         $this->resolutionHeight  = 128;
-        $this->dualOrientation   = false;
+        $this->dualOrientation   = true;
         $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

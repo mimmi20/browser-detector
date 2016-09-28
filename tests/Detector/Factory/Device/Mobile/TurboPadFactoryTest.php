@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\IrbisFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\TurboPadFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class IrbisFactoryTest extends \PHPUnit_Framework_TestCase
+class TurboPadFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -24,7 +24,7 @@ class IrbisFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = IrbisFactory::detect($agent);
+        $result = TurboPadFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -72,22 +72,22 @@ class IrbisFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-; TX18 Build/JDQ39) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.5.0.4',
-                'TX18',
-                'TX18',
-                'Irbis',
-                'Irbis',
-                'Tablet',
+                'Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; Turbo Pad 500 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501028',
+                'Pad 500',
+                'Pad 500',
+                'TurboPad',
+                'TurboPad',
+                'Mobile Phone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.4.2; TX08 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 YaBrowser/15.2.2214.3725.01 Safari/537.36',
-                'TX08',
-                'TX08',
-                'Irbis',
-                'Irbis',
-                'Tablet',
+                'Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; Turbo X6 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501028',
+                'Turbo X6',
+                'Turbo X6',
+                'TurboPad',
+                'TurboPad',
+                'Mobile Phone',
                 true,
                 'touchscreen',
             ],

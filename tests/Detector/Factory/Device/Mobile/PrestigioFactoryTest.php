@@ -171,6 +171,36 @@ class PrestigioFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; PAP5044DUO Build/16.0.B.2.13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.68 Mobile Safari/537.36',
+                'PAP5044DUO',
+                'MultiPhone 5044 Duo',
+                'Prestigio',
+                'Prestigio',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; lv-lv; PAP3350DUO Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'PAP3350DUO',
+                'MultiPhone 3350 Duo',
+                'Prestigio',
+                'Prestigio',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.1; en-US; PMP3970B Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.3.0.552 U3/0.8.0 Mobile Safari/534.30',
+                'PMP3970B',
+                'MultiPad 7.0 HD',
+                'Prestigio',
+                'Prestigio',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

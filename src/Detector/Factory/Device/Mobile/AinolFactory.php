@@ -55,6 +55,10 @@ class AinolFactory implements FactoryInterface
             return new Ainol\AinolNumyNote9($useragent);
         }
 
+        if (preg_match('/novo7fire/i', $useragent)) {
+            return new Ainol\AinolNovo7Fire($useragent);
+        }
+
         return new Ainol\Ainol($useragent);
     }
 }
