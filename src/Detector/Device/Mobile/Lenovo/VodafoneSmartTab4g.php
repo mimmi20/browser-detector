@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSchR530u extends Device implements DeviceHasSpecificPlatformInterface
+class VodafoneSmartTab4g extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class SamsungSchR530u extends Device implements DeviceHasSpecificPlatformInterfa
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SCH-R530U';
-        $this->marketingName     = 'Galaxy S3 (US Cellular)';
+        $this->deviceName        = 'Smart Tab 4G';
+        $this->marketingName     = 'Smart Tab 4G';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
-        $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Lenovo')->getName();
+        $this->brand             = CompanyFactory::get('Vodafone')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
+        $this->resolutionWidth   = 1200;
+        $this->resolutionHeight  = 800;
         $this->dualOrientation   = true;
-        $this->colors            = null;
+        $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

@@ -51,6 +51,14 @@ class LenovoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/YT3\-X50L/i', $useragent)) {
+            return new Lenovo\LenovoYt3x50l($useragent);
+        }
+
+        if (preg_match('/TB2\-X30F/i', $useragent)) {
+            return new Lenovo\LenovoTb2x30f($useragent);
+        }
+
         if (preg_match('/YOGA Tablet 2 Pro\-1380L/i', $useragent)) {
             return new Lenovo\Lenovo1380L($useragent);
         }
@@ -255,6 +263,10 @@ class LenovoFactory implements FactoryInterface
             return new Lenovo\LenovoA1000lf($useragent);
         }
 
+        if (preg_match('/A1000/i', $useragent)) {
+            return new Lenovo\LenovoA1000($useragent);
+        }
+
         if (preg_match('/(a2109a|ideatab)/i', $useragent)) {
             return new Lenovo\LenovoA2109aIdeaTab($useragent);
         }
@@ -351,11 +363,15 @@ class LenovoFactory implements FactoryInterface
             return new Lenovo\VodafoneSmartTabIi7($useragent);
         }
 
-        if (preg_match('/Smart Tab 4/i', $useragent)) {
+        if (preg_match('/smart tab 4g/i', $useragent)) {
+            return new Lenovo\VodafoneSmartTab4g($useragent);
+        }
+
+        if (preg_match('/smart tab 4/i', $useragent)) {
             return new Lenovo\VodafoneSmartTab4($useragent);
         }
 
-        if (preg_match('/Smart Tab 3G/i', $useragent)) {
+        if (preg_match('/smart tab 3g/i', $useragent)) {
             return new Lenovo\VodafoneSmartTab3g($useragent);
         }
 

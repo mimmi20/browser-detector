@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSchR530u extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungGts5310m extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,16 +53,16 @@ class SamsungSchR530u extends Device implements DeviceHasSpecificPlatformInterfa
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SCH-R530U';
-        $this->marketingName     = 'Galaxy S3 (US Cellular)';
+        $this->deviceName        = 'GT-S5310M';
+        $this->marketingName     = 'Galaxy Pocket Neo';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
+        $this->resolutionWidth   = 240;
+        $this->resolutionHeight  = 320;
         $this->dualOrientation   = true;
-        $this->colors            = null;
+        $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
