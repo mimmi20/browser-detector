@@ -239,15 +239,15 @@ class LgFactory implements FactoryInterface
             return new Lg\Lgp350($useragent);
         }
 
-        if (preg_match('/nexus 5x/i', $useragent)) {
+        if (preg_match('/nexus ?5x/i', $useragent)) {
             return new Lg\LgNexus5x($useragent);
         }
 
-        if (preg_match('/nexus 5/i', $useragent)) {
+        if (preg_match('/nexus ?5/i', $useragent)) {
             return new Lg\LgNexus5($useragent);
         }
 
-        if (preg_match('/nexus 4/i', $useragent)) {
+        if (preg_match('/nexus ?4/i', $useragent)) {
             return new Lg\LgNexus4($useragent);
         }
 

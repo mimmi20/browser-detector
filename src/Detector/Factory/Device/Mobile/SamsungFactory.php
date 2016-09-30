@@ -175,6 +175,26 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmJ100h($useragent);
         }
 
+        if (preg_match('/sm\-j100y/i', $useragent)) {
+            return new Samsung\SamsungSmJ100y($useragent);
+        }
+
+        if (preg_match('/sm\-j100f/i', $useragent)) {
+            return new Samsung\SamsungSmJ100f($useragent);
+        }
+
+        if (preg_match('/sm\-j100ml/i', $useragent)) {
+            return new Samsung\SamsungSmJ100ml($useragent);
+        }
+
+        if (preg_match('/sm\-j200gu/i', $useragent)) {
+            return new Samsung\SamsungSmJ200gu($useragent);
+        }
+
+        if (preg_match('/sm\-j200g/i', $useragent)) {
+            return new Samsung\SamsungSmJ200g($useragent);
+        }
+
         if (preg_match('/sm\-t2105/i', $useragent)) {
             return new Samsung\SamsungSmT2105($useragent);
         }
@@ -227,6 +247,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmT800($useragent);
         }
 
+        if (preg_match('/sm\-t710/i', $useragent)) {
+            return new Samsung\SamsungSmT710($useragent);
+        }
+
         if (preg_match('/sm\-t705m/i', $useragent)) {
             return new Samsung\SamsungSmT705m($useragent);
         }
@@ -251,12 +275,16 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmT550x($useragent);
         }
 
-        if (preg_match('/sm\-t560/i', $useragent)) {
-            return new Samsung\SamsungSmT560($useragent);
-        }
-
         if (preg_match('/sm\-t550/i', $useragent)) {
             return new Samsung\SamsungSmT550($useragent);
+        }
+
+        if (preg_match('/sm\-t555/i', $useragent)) {
+            return new Samsung\SamsungSmT555($useragent);
+        }
+
+        if (preg_match('/sm\-t560/i', $useragent)) {
+            return new Samsung\SamsungSmT560($useragent);
         }
 
         if (preg_match('/sm\-t535/i', $useragent)) {
@@ -285,6 +313,14 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sm\-t365/i', $useragent)) {
             return new Samsung\SamsungSmT365($useragent);
+        }
+
+        if (preg_match('/sm\-t355y/i', $useragent)) {
+            return new Samsung\SamsungSmT355y($useragent);
+        }
+
+        if (preg_match('/sm\-t350/i', $useragent)) {
+            return new Samsung\SamsungSmT350($useragent);
         }
 
         if (preg_match('/sm\-t335/i', $useragent)) {
@@ -367,6 +403,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmP600($useragent);
         }
 
+        if (preg_match('/sm\-p550/i', $useragent)) {
+            return new Samsung\SamsungSmP550($useragent);
+        }
+
         if (preg_match('/sm\-n930fd/i', $useragent)) {
             return new Samsung\SamsungSmN930FD($useragent);
         }
@@ -439,6 +479,34 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmN930U($useragent);
         }
 
+        if (preg_match('/sm\-n920v/i', $useragent)) {
+            return new Samsung\SamsungSmN920V($useragent);
+        }
+
+        if (preg_match('/sm\-n920t/i', $useragent)) {
+            return new Samsung\SamsungSmN920T($useragent);
+        }
+
+        if (preg_match('/sm\-n920p/i', $useragent)) {
+            return new Samsung\SamsungSmN920P($useragent);
+        }
+
+        if (preg_match('/sm\-n920a/i', $useragent)) {
+            return new Samsung\SamsungSmN920A($useragent);
+        }
+
+        if (preg_match('/sm\-n920i/i', $useragent)) {
+            return new Samsung\SamsungSmN920I($useragent);
+        }
+
+        if (preg_match('/sm\-n920w8/i', $useragent)) {
+            return new Samsung\SamsungSmN920W8($useragent);
+        }
+
+        if (preg_match('/sm\-n9208/i', $useragent)) {
+            return new Samsung\SamsungSmN9208($useragent);
+        }
+
         if (preg_match('/(sm\-n9009|n9009)/i', $useragent)) {
             return new Samsung\SamsungSmN9009($useragent);
         }
@@ -489,6 +557,14 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sm\-n915fy/i', $useragent)) {
             return new Samsung\SamsungSmN915fy($useragent);
+        }
+
+        if (preg_match('/sm\-n915g/i', $useragent)) {
+            return new Samsung\SamsungSmN915g($useragent);
+        }
+
+        if (preg_match('/sm\-n915p/i', $useragent)) {
+            return new Samsung\SamsungSmN915p($useragent);
         }
 
         if (preg_match('/sm\-n910v/i', $useragent)) {
@@ -699,6 +775,30 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmG925F($useragent);
         }
 
+        if (preg_match('/sm\-g925t/i', $useragent)) {
+            return new Samsung\SamsungSmG925T($useragent);
+        }
+
+        if (preg_match('/sm\-g925r4/i', $useragent)) {
+            return new Samsung\SamsungSmG925R4($useragent);
+        }
+
+        if (preg_match('/sm\-g925i/i', $useragent)) {
+            return new Samsung\SamsungSmG925I($useragent);
+        }
+
+        if (preg_match('/sm\-g925p/i', $useragent)) {
+            return new Samsung\SamsungSmG925P($useragent);
+        }
+
+        if (preg_match('/sm\-g920k/i', $useragent)) {
+            return new Samsung\SamsungSmG920K($useragent);
+        }
+
+        if (preg_match('/sm\-g920p/i', $useragent)) {
+            return new Samsung\SamsungSmG920P($useragent);
+        }
+
         if (preg_match('/sm\-g920v/i', $useragent)) {
             return new Samsung\SamsungSmG920V($useragent);
         }
@@ -791,7 +891,7 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmG870a($useragent);
         }
 
-        if (preg_match('/sm\-g850f/i', $useragent)) {
+        if (preg_match('/(sm\-g850f|galaxy alpha)/i', $useragent)) {
             return new Samsung\SamsungSmG850F($useragent);
         }
 
@@ -875,6 +975,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmG360H($useragent);
         }
 
+        if (preg_match('/sm\-g360t1/i', $useragent)) {
+            return new Samsung\SamsungSmG360T1($useragent);
+        }
+
         if (preg_match('/sm\-g355hq/i', $useragent)) {
             return new Samsung\SamsungSmG355hq($useragent);
         }
@@ -921,6 +1025,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sm\-c101/i', $useragent)) {
             return new Samsung\SamsungSmC101($useragent);
+        }
+
+        if (preg_match('/sm\-z130h/i', $useragent)) {
+            return new Samsung\SamsungSmZ130H($useragent);
         }
 
         if (preg_match('/sgh\-t999/i', $useragent)) {
@@ -1103,12 +1211,20 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungShvE250l($useragent);
         }
 
+        if (preg_match('/shv\-e250s/i', $useragent)) {
+            return new Samsung\SamsungShvE250s($useragent);
+        }
+
         if (preg_match('/shv\-e210l/i', $useragent)) {
             return new Samsung\SamsungShvE210l($useragent);
         }
 
         if (preg_match('/shv\-e210k/i', $useragent)) {
             return new Samsung\SamsungShvE210k($useragent);
+        }
+
+        if (preg_match('/shv\-e210s/i', $useragent)) {
+            return new Samsung\SamsungShvE210s($useragent);
         }
 
         if (preg_match('/shv\-e160s/i', $useragent)) {
@@ -1133,6 +1249,14 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/shw\-m930bst/i', $useragent)) {
             return new Samsung\SamsungShwM930bst($useragent);
+        }
+
+        if (preg_match('/shw\-m480w/i', $useragent)) {
+            return new Samsung\SamsungShwM480W($useragent);
+        }
+
+        if (preg_match('/shw\-m380k/i', $useragent)) {
+            return new Samsung\ShwM380K($useragent);
         }
 
         if (preg_match('/scl24/i', $useragent)) {
@@ -1255,6 +1379,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGts7580($useragent);
         }
 
+        if (preg_match('/gt\-s7562l/i', $useragent)) {
+            return new Samsung\SamsungGts7562l($useragent);
+        }
+
         if (preg_match('/gt\-s7562/i', $useragent)) {
             return new Samsung\SamsungGts7562($useragent);
         }
@@ -1371,6 +1499,14 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGts5830c($useragent);
         }
 
+        if (preg_match('/gt\-s5570i/i', $useragent)) {
+            return new Samsung\SamsungGts5570i($useragent);
+        }
+
+        if (preg_match('/gt\-s5570/i', $useragent)) {
+            return new Samsung\SamsungGts5570($useragent);
+        }
+
         if (preg_match('/(gt\-s5830|ace)/i', $useragent)) {
             return new Samsung\SamsungGts5830($useragent);
         }
@@ -1397,14 +1533,6 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/gt\-s5620/i', $useragent)) {
             return new Samsung\SamsungGts5620($useragent);
-        }
-
-        if (preg_match('/gt\-s5570i/i', $useragent)) {
-            return new Samsung\SamsungGts5570i($useragent);
-        }
-
-        if (preg_match('/gt\-s5570/i', $useragent)) {
-            return new Samsung\SamsungGts5570($useragent);
         }
 
         if (preg_match('/gt\-s5560i/i', $useragent)) {
@@ -1763,55 +1891,59 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGti9195i($useragent);
         }
 
-        if (preg_match('/(GT\-I9195|I9195)/i', $useragent)) {
+        if (preg_match('/(gt\-i9195|i9195)/i', $useragent)) {
             return new Samsung\SamsungGti9195($useragent);
         }
 
-        if (preg_match('/(GT\-I9192|I9192)/i', $useragent)) {
+        if (preg_match('/(gt\-i9192|i9192)/i', $useragent)) {
             return new Samsung\SamsungGti9192($useragent);
         }
 
-        if (preg_match('/(GT\-I9190|I9190)/i', $useragent)) {
+        if (preg_match('/(gt\-i9190|i9190)/i', $useragent)) {
             return new Samsung\SamsungGti9190($useragent);
         }
 
-        if (preg_match('/GT\-I9128V/i', $useragent)) {
+        if (preg_match('/gt\-i9152/i', $useragent)) {
+            return new Samsung\SamsungGti9152($useragent);
+        }
+
+        if (preg_match('/gt\-i9128v/i', $useragent)) {
             return new Samsung\SamsungGti9128v($useragent);
         }
 
-        if (preg_match('/GT\-I9105P/i', $useragent)) {
+        if (preg_match('/gt\-i9105p/i', $useragent)) {
             return new Samsung\SamsungGti9105p($useragent);
         }
 
-        if (preg_match('/GT\-I9103/i', $useragent)) {
+        if (preg_match('/gt\-i9103/i', $useragent)) {
             return new Samsung\SamsungGti9103($useragent);
         }
 
-        if (preg_match('/GT\-I9100T/i', $useragent)) {
+        if (preg_match('/gt\-i9100t/i', $useragent)) {
             return new Samsung\SamsungGti9100t($useragent);
         }
 
-        if (preg_match('/GT\-I9100P/i', $useragent)) {
+        if (preg_match('/gt\-i9100p/i', $useragent)) {
             return new Samsung\SamsungGti9100p($useragent);
         }
 
-        if (preg_match('/GT\-I9100G/i', $useragent)) {
+        if (preg_match('/gt\-i9100g/i', $useragent)) {
             return new Samsung\SamsungGti9100g($useragent);
         }
 
-        if (preg_match('/(GT\-I9100|I9100)/i', $useragent)) {
+        if (preg_match('/(gt\-i9100|i9100)/i', $useragent)) {
             return new Samsung\SamsungGti9100($useragent);
         }
 
-        if (preg_match('/GT\-I9088/i', $useragent)) {
+        if (preg_match('/gt\-i9088/i', $useragent)) {
             return new Samsung\SamsungGti9088($useragent);
         }
 
-        if (preg_match('/GT\-I9082L/i', $useragent)) {
+        if (preg_match('/gt\-i9082l/i', $useragent)) {
             return new Samsung\SamsungGti9082L($useragent);
         }
 
-        if (preg_match('/GT\-I9082/i', $useragent)) {
+        if (preg_match('/gt\-i9082/i', $useragent)) {
             return new Samsung\SamsungGti9082($useragent);
         }
 
@@ -1841,6 +1973,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/gt\-i9010p/i', $useragent)) {
             return new Samsung\SamsungGti9010P($useragent);
+        }
+
+        if (preg_match('/galaxy( |\-)s4/i', $useragent)) {
+            return new Samsung\SamsungGti9500($useragent);
         }
 
         if (preg_match('/Galaxy( |\-)S/i', $useragent)) {
@@ -2127,67 +2263,71 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungR631($useragent);
         }
 
-        if (preg_match('/I7110/i', $useragent)) {
+        if (preg_match('/i7110/i', $useragent)) {
             return new Samsung\SamsungI7110($useragent);
         }
 
-        if (preg_match('/YP\-GS1/i', $useragent)) {
+        if (preg_match('/yp\-gs1/i', $useragent)) {
             return new Samsung\YPGs1($useragent);
         }
 
-        if (preg_match('/YP\-GI1/i', $useragent)) {
+        if (preg_match('/yp\-gi1/i', $useragent)) {
             return new Samsung\YPGi1($useragent);
         }
 
-        if (preg_match('/YP\-GB70/i', $useragent)) {
+        if (preg_match('/yp\-gb70/i', $useragent)) {
             return new Samsung\YPGB70($useragent);
         }
 
-        if (preg_match('/YP\-G70/i', $useragent)) {
+        if (preg_match('/yp\-g70/i', $useragent)) {
             return new Samsung\YPG70($useragent);
         }
 
-        if (preg_match('/YP\-G1/i', $useragent)) {
+        if (preg_match('/yp\-g1/i', $useragent)) {
             return new Samsung\YPG1($useragent);
         }
 
-        if (preg_match('/SPH\-M580/i', $useragent)) {
-            return new Samsung\SphM580($useragent);
-        }
-
-        if (preg_match('/SHW\-M380K/i', $useragent)) {
-            return new Samsung\ShwM380K($useragent);
-        }
-
-        if (preg_match('/SCH\-R730/i', $useragent)) {
+        if (preg_match('/sch\-r730/i', $useragent)) {
             return new Samsung\SamsungSshR730($useragent);
         }
 
-        if (preg_match('/SPH\-P100/i', $useragent)) {
+        if (preg_match('/sph\-p100/i', $useragent)) {
             return new Samsung\SamsungSphp100($useragent);
         }
 
-        if (preg_match('/SPH\-M930/i', $useragent)) {
+        if (preg_match('/sph\-m930/i', $useragent)) {
             return new Samsung\SamsungSphm930($useragent);
         }
 
-        if (preg_match('/SPH\-L720/i', $useragent)) {
+        if (preg_match('/sph\-m840/i', $useragent)) {
+            return new Samsung\SamsungSphm840($useragent);
+        }
+
+        if (preg_match('/sph\-m580/i', $useragent)) {
+            return new Samsung\SphM580($useragent);
+        }
+
+        if (preg_match('/sph\-l900/i', $useragent)) {
+            return new Samsung\SamsungSphl900($useragent);
+        }
+
+        if (preg_match('/sph\-l720/i', $useragent)) {
             return new Samsung\SamsungSphl720($useragent);
         }
 
-        if (preg_match('/SPH\-L710/i', $useragent)) {
+        if (preg_match('/sph\-l710/i', $useragent)) {
             return new Samsung\SamsungSphl710($useragent);
         }
 
-        if (preg_match('/SPH\-ip830w/i', $useragent)) {
+        if (preg_match('/sph\-ip830w/i', $useragent)) {
             return new Samsung\SamsungSphIp830w($useragent);
         }
 
-        if (preg_match('/SPH\-D710BST/i', $useragent)) {
+        if (preg_match('/sph\-d710bst/i', $useragent)) {
             return new Samsung\SamsungSphd710bst($useragent);
         }
 
-        if (preg_match('/SPH\-D710/i', $useragent)) {
+        if (preg_match('/sph\-d710/i', $useragent)) {
             return new Samsung\SamsungSphd710($useragent);
         }
 

@@ -29,10 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Factory\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\Device\Mobile\Cube;
-use BrowserDetector\Detector\Factory\FactoryInterface;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,37 +43,39 @@ use BrowserDetector\Detector\Factory\FactoryInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CubeFactory implements FactoryInterface
+class SamsungSmN920I extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
-     * detects the device name from the given user agent
+     * the class constructor
      *
      * @param string $useragent
-     *
-     * @return \UaResult\Device\DeviceInterface
      */
-    public static function detect($useragent)
+    public function __construct($useragent)
     {
-        if (preg_match('/u55gt/i', $useragent)) {
-            return new Cube\CubeU55gt($useragent);
-        }
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'SM-N920I';
+        $this->marketingName     = 'Galaxy Note 5 LTE (Australia, New Zealand, Singapore, Canada)';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
+        $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 1080;
+        $this->resolutionHeight  = 1920;
+        $this->dualOrientation   = true;
+        $this->colors            = 16777216;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\MobilePhone();
+    }
 
-        if (preg_match('/u51gt/i', $useragent)) {
-            return new Cube\CubeU51gt($useragent);
-        }
-
-        if (preg_match('/u30gt 2/i', $useragent)) {
-            return new Cube\CubeU30gt2($useragent);
-        }
-
-        if (preg_match('/u30gt/i', $useragent)) {
-            return new Cube\CubeU30gt($useragent);
-        }
-
-        if (preg_match('/u25gt\-c4w/i', $useragent)) {
-            return new Cube\CubeU25gtc4w($useragent);
-        }
-
-        return new Cube\Cube($useragent);
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
+    {
+        return new Os\AndroidOs($this->useragent);
     }
 }

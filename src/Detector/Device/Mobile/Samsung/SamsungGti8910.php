@@ -54,14 +54,14 @@ class SamsungGti8910 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-I8910';
-        $this->marketingName     = 'GT-I8910';
+        $this->marketingName     = 'Omnia HD';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = false;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
@@ -76,6 +76,6 @@ class SamsungGti8910 extends Device implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Symbianos($this->useragent);
     }
 }
