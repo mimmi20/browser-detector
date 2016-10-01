@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGts6312 extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungSmG361F extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,14 +53,14 @@ class SamsungGts6312 extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'GT-S6312';
-        $this->marketingName     = 'Galaxy Young Duos';
+        $this->deviceName        = 'SM-G361F';
+        $this->marketingName     = 'Galaxy Core Prime Value Edition LTE';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 320;
-        $this->resolutionHeight  = 480;
+        $this->resolutionWidth   = 480;
+        $this->resolutionHeight  = 800;
         $this->dualOrientation   = true;
         $this->colors            = 65536;
         $this->smsSupport        = true;

@@ -54,7 +54,7 @@ class SamsungSmC105 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-C105';
-        $this->marketingName     = 'Galaxy S4 Zoom C105';
+        $this->marketingName     = 'Galaxy S4 Zoom';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

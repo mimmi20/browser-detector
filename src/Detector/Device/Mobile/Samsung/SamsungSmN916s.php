@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGts6312 extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungSmN916s extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,16 +53,16 @@ class SamsungGts6312 extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'GT-S6312';
-        $this->marketingName     = 'Galaxy Young Duos';
+        $this->deviceName        = 'SM-N916S';
+        $this->marketingName     = 'Galaxy Note 4';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 320;
-        $this->resolutionHeight  = 480;
+        $this->resolutionWidth   = 1440;
+        $this->resolutionHeight  = 2560;
         $this->dualOrientation   = true;
-        $this->colors            = 65536;
+        $this->colors            = 16777216;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
@@ -76,6 +76,6 @@ class SamsungGts6312 extends Device implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return null;
     }
 }
