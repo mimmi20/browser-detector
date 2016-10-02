@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmT230nu extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungSmT533 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,8 +53,8 @@ class SamsungSmT230nu extends Device implements DeviceHasSpecificPlatformInterfa
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SM-T230NU';
-        $this->marketingName     = 'Galaxy Tab 4 7.0 (Wi-Fi)';
+        $this->deviceName        = 'SM-T533';
+        $this->marketingName     = 'Galaxy Tab 4 10.1 WiFi';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
@@ -62,11 +62,11 @@ class SamsungSmT230nu extends Device implements DeviceHasSpecificPlatformInterfa
         $this->resolutionWidth   = 1280;
         $this->resolutionHeight  = 800;
         $this->dualOrientation   = true;
-        $this->colors            = 65536;
+        $this->colors            = 16777216;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

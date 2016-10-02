@@ -54,7 +54,7 @@ class SamsungSmT560 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-T560';
-        $this->marketingName     = 'SM-T560';
+        $this->marketingName     = 'Galaxy Tab E 9.6';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

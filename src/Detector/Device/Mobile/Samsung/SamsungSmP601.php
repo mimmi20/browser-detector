@@ -54,7 +54,7 @@ class SamsungSmP601 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-P601';
-        $this->marketingName     = 'Galaxy Note 10.1 2014 Edition 3G & Wifi';
+        $this->marketingName     = 'Galaxy Note 10.1 2014 Edition 3G + Wifi';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
