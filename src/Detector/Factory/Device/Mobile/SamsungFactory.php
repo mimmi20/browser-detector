@@ -791,10 +791,6 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmG9006v($useragent);
         }
 
-        if (preg_match('/sm\-g3502l/i', $useragent)) {
-            return new Samsung\SamsungSmG3502l($useragent);
-        }
-
         if (preg_match('/sm\-g928f/i', $useragent)) {
             return new Samsung\SamsungSmG928F($useragent);
         }
@@ -1065,6 +1061,18 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sm\-g355m/i', $useragent)) {
             return new Samsung\SamsungSmG355m($useragent);
+        }
+
+        if (preg_match('/sm\-g3502l/i', $useragent)) {
+            return new Samsung\SamsungSmG3502l($useragent);
+        }
+
+        if (preg_match('/sm\-g3502t/i', $useragent)) {
+            return new Samsung\SamsungSmG3502t($useragent);
+        }
+
+        if (preg_match('/sm\-g3500/i', $useragent)) {
+            return new Samsung\SamsungSmG3500($useragent);
         }
 
         if (preg_match('/sm\-g350e/i', $useragent)) {

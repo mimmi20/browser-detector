@@ -1179,7 +1179,7 @@ return [
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'Galaxy Tab A 8.0 4G',
             'Device_Maker'            => 'Samsung',
-            'Device_Type'             => 'Tablet',
+            'Device_Type'             => 'FonePad',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'SM-T355Y',
