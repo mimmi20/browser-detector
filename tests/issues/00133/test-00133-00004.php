@@ -1150,7 +1150,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'SM-T560',
+            'Device_Name'             => 'Galaxy Tab E 9.6',
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',

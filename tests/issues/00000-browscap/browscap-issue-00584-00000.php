@@ -16,7 +16,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Galaxy Tab 4 7.0 (Wi-Fi) 8GB',
+            'Device_Name'             => 'Galaxy Tab 4 7.0 (Wi-Fi)',
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
