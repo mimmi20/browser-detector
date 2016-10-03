@@ -1291,7 +1291,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\MytabFactory::detect($useragent);
         }
 
-        if (preg_match('/(loox|uno\_x10|xelio|neo\_quad10|ieos\_quad|sky plus|maven\_10\_plus)/i', $useragent)) {
+        if (preg_match('/(loox|uno\_x10|xelio|neo\_quad10|ieos\_quad|sky plus|maven\_10\_plus|space10_plus_3g)/i', $useragent)) {
             return Mobile\OdysFactory::detect($useragent);
         }
 

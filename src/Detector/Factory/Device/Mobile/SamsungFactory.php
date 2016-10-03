@@ -1939,6 +1939,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGti9505($useragent);
         }
 
+        if (preg_match('/GT\-I9502/i', $useragent)) {
+            return new Samsung\SamsungGti9502($useragent);
+        }
+
         if (preg_match('/GT\-I9500/i', $useragent)) {
             return new Samsung\SamsungGti9500($useragent);
         }

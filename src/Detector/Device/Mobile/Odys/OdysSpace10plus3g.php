@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Odys;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGtp7500M extends Device implements DeviceHasSpecificPlatformInterface
+class OdysSpace10plus3g extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,19 +53,19 @@ class SamsungGtp7500M extends Device implements DeviceHasSpecificPlatformInterfa
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'GT-P7500M';
-        $this->marketingName     = 'Galaxy Tab 10.1 3G';
+        $this->deviceName        = 'Space 10 Plus 3G';
+        $this->marketingName     = 'Space 10 Plus 3G';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
-        $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Odys')->getName();
+        $this->brand             = CompanyFactory::get('Odys')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 800;
-        $this->resolutionHeight  = 1280;
+        $this->resolutionHeight  = 480;
         $this->dualOrientation   = true;
-        $this->colors            = null;
+        $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = false;
+        $this->hasQwertyKeyboard = true;
         $this->type              = new UaDeviceType\FonePad();
     }
 

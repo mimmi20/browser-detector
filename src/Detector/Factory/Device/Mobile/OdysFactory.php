@@ -95,6 +95,10 @@ class OdysFactory implements FactoryInterface
             return new Odys\OdysUnoX10($useragent);
         }
 
+        if (preg_match('/SPACE10_PLUS_3G/', $useragent)) {
+            return new Odys\OdysSpace10plus3g($useragent);
+        }
+
         if (preg_match('/Space/', $useragent)) {
             return new Odys\OdysSpace($useragent);
         }

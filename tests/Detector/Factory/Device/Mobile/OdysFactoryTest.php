@@ -111,6 +111,16 @@ class OdysFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1.1; SPACE10_PLUS_3G Build/LMY48G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36',
+                'Space 10 Plus 3G',
+                'Space 10 Plus 3G',
+                'Odys',
+                'Odys',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
