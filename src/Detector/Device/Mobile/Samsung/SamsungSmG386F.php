@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSchI605 extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungSmG386F extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,19 +53,19 @@ class SamsungSchI605 extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SCH-I605';
-        $this->marketingName     = 'Galaxy Note 2 (Verizon)';
+        $this->deviceName        = 'SM-G386F';
+        $this->marketingName     = 'Galaxy Core LTE';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 720;
-        $this->resolutionHeight  = 1280;
+        $this->resolutionWidth   = 480;
+        $this->resolutionHeight  = 800;
         $this->dualOrientation   = true;
         $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = false;
+        $this->hasQwertyKeyboard = true;
         $this->type              = new UaDeviceType\MobilePhone();
     }
 

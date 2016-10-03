@@ -191,6 +191,30 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmJ320f($useragent);
         }
 
+        if (preg_match('/sm\-j110f/i', $useragent)) {
+            return new Samsung\SamsungSmJ110f($useragent);
+        }
+
+        if (preg_match('/sm\-j110g/i', $useragent)) {
+            return new Samsung\SamsungSmJ110g($useragent);
+        }
+
+        if (preg_match('/sm\-j110h/i', $useragent)) {
+            return new Samsung\SamsungSmJ110h($useragent);
+        }
+
+        if (preg_match('/sm\-j110l/i', $useragent)) {
+            return new Samsung\SamsungSmJ110l($useragent);
+        }
+
+        if (preg_match('/sm\-j110m/i', $useragent)) {
+            return new Samsung\SamsungSmJ110m($useragent);
+        }
+
+        if (preg_match('/sm\-j111f/i', $useragent)) {
+            return new Samsung\SamsungSmJ111f($useragent);
+        }
+
         if (preg_match('/sm\-j100h/i', $useragent)) {
             return new Samsung\SamsungSmJ100h($useragent);
         }
@@ -213,6 +237,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sm\-j200g/i', $useragent)) {
             return new Samsung\SamsungSmJ200g($useragent);
+        }
+
+        if (preg_match('/sm\-t280/i', $useragent)) {
+            return new Samsung\SamsungSmT280($useragent);
         }
 
         if (preg_match('/sm\-t2105/i', $useragent)) {
@@ -265,6 +293,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sm\-t800/i', $useragent)) {
             return new Samsung\SamsungSmT800($useragent);
+        }
+
+        if (preg_match('/sm\-t715/i', $useragent)) {
+            return new Samsung\SamsungSmT715($useragent);
         }
 
         if (preg_match('/sm\-t710/i', $useragent)) {
@@ -1047,6 +1079,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmG388F($useragent);
         }
 
+        if (preg_match('/sm\-g386f/i', $useragent)) {
+            return new Samsung\SamsungSmG386F($useragent);
+        }
+
         if (preg_match('/sm\-g361f/i', $useragent)) {
             return new Samsung\SamsungSmG361F($useragent);
         }
@@ -1057,6 +1093,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sm\-g360t1/i', $useragent)) {
             return new Samsung\SamsungSmG360T1($useragent);
+        }
+
+        if (preg_match('/sm\-g357fz/i', $useragent)) {
+            return new Samsung\SamsungSmG357fz($useragent);
         }
 
         if (preg_match('/sm\-g355hq/i', $useragent)) {
@@ -1097,6 +1137,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sm\-g313hu/i', $useragent)) {
             return new Samsung\SamsungSmG313hu($useragent);
+        }
+
+        if (preg_match('/sm\-g313hn/i', $useragent)) {
+            return new Samsung\SamsungSmG313hn($useragent);
         }
 
         if (preg_match('/sm\-g310hn/i', $useragent)) {
@@ -1383,6 +1427,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSchr970($useragent);
         }
 
+        if (preg_match('/sch\-r950/i', $useragent)) {
+            return new Samsung\SamsungSchr950($useragent);
+        }
+
         if (preg_match('/sch\-r720/i', $useragent)) {
             return new Samsung\SamsungSchr720($useragent);
         }
@@ -1393,6 +1441,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sch\-r530c/i', $useragent)) {
             return new Samsung\SamsungSchR530c($useragent);
+        }
+
+        if (preg_match('/sch\-n719/i', $useragent)) {
+            return new Samsung\SamsungSchN719($useragent);
         }
 
         if (preg_match('/sch\-m828c/i', $useragent)) {
@@ -2017,6 +2069,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/gt\-i9105p/i', $useragent)) {
             return new Samsung\SamsungGti9105p($useragent);
+        }
+
+        if (preg_match('/gt\-i9105/i', $useragent)) {
+            return new Samsung\SamsungGti9105($useragent);
         }
 
         if (preg_match('/gt\-i9103/i', $useragent)) {

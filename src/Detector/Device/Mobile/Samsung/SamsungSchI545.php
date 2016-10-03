@@ -54,7 +54,7 @@ class SamsungSchI545 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SCH-I545';
-        $this->marketingName     = 'Galaxy S4 LTE (Verizon), White Frost 16GB';
+        $this->marketingName     = 'Galaxy S4 LTE (Verizon)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

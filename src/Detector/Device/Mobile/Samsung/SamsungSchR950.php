@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSchI605 extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungSchR950 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,8 +53,8 @@ class SamsungSchI605 extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SCH-I605';
-        $this->marketingName     = 'Galaxy Note 2 (Verizon)';
+        $this->deviceName        = 'SCH-R950';
+        $this->marketingName     = 'Galaxy Note 2 (US Cellular)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

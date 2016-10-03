@@ -54,14 +54,14 @@ class SamsungGti9003l extends Device implements DeviceHasSpecificPlatformInterfa
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-I9003L';
-        $this->marketingName     = 'GT-I9003L';
+        $this->marketingName     = 'Galaxy SL';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 480;
         $this->resolutionHeight  = 800;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = true;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
