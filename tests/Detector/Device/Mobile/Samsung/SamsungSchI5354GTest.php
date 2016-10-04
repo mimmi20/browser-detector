@@ -2,7 +2,7 @@
 
 namespace BrowserDetectorTest\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\Device\Mobile\Samsung\SamsungSchI5354G;
+use BrowserDetector\Detector\Device\Mobile\Samsung\SamsungSchI535;
 
 
 /**
@@ -11,7 +11,7 @@ use BrowserDetector\Detector\Device\Mobile\Samsung\SamsungSchI5354G;
 class SamsungSchI5354GTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var SamsungSchI5354G
+     * @var SamsungSchI535
      */
     private $object;
 
@@ -21,7 +21,7 @@ class SamsungSchI5354GTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        $this->object = new SamsungSchI5354G('Test-User-Agent');
+        $this->object = new SamsungSchI535('Test-User-Agent');
     }
 
     /**

@@ -54,7 +54,7 @@ class SamsungGtp6201 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-P6201';
-        $this->marketingName     = 'GALAXY Tab 7.0 Plus';
+        $this->marketingName     = 'Galaxy Tab 7.0 Plus';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

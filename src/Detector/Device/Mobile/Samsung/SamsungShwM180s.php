@@ -54,7 +54,7 @@ class SamsungShwM180s extends Device implements DeviceHasSpecificPlatformInterfa
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SHW-M180S';
-        $this->marketingName     = 'GALAXY Tab (SKT)';
+        $this->marketingName     = 'Galaxy Tab (SKT)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

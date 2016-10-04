@@ -54,7 +54,7 @@ class SamsungSmJ200gu extends Device implements DeviceHasSpecificPlatformInterfa
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-J200GU';
-        $this->marketingName     = 'Galaxy J2 4G Duos';
+        $this->marketingName     = 'Galaxy J2 4G (Philippines, Malaysia, Thailand)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

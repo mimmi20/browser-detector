@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGalaxyNexusS4G extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungSmG890a extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,19 +53,19 @@ class SamsungGalaxyNexusS4G extends Device implements DeviceHasSpecificPlatformI
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Nexus S 4G';
-        $this->marketingName     = 'Nexus S 4G';
+        $this->deviceName        = 'SM-G890A';
+        $this->marketingName     = 'Galaxy S6 Active (AT&T)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
-        $this->brand             = CompanyFactory::get('Google')->getBrandName();
+        $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
+        $this->resolutionWidth   = 720;
+        $this->resolutionHeight  = 1280;
         $this->dualOrientation   = true;
-        $this->colors            = null;
+        $this->colors            = 16777216;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = false;
+        $this->hasQwertyKeyboard = true;
         $this->type              = new UaDeviceType\MobilePhone();
     }
 
@@ -76,6 +76,6 @@ class SamsungGalaxyNexusS4G extends Device implements DeviceHasSpecificPlatformI
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return null;
     }
 }

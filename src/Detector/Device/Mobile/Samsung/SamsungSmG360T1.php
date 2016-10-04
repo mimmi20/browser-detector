@@ -54,7 +54,7 @@ class SamsungSmG360T1 extends Device implements DeviceHasSpecificPlatformInterfa
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-G360T1';
-        $this->marketingName     = 'Galaxy Core Prime (MetroPCS)';
+        $this->marketingName     = 'Galaxy Core Prime LTE (MetroPCS)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

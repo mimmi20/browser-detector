@@ -54,7 +54,7 @@ class SamsungGti9001 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-I9001';
-        $this->marketingName     = 'GT-I9001';
+        $this->marketingName     = 'Galaxy S Plus';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
