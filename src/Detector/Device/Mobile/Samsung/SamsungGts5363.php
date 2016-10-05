@@ -54,7 +54,7 @@ class SamsungGts5363 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-S5363';
-        $this->marketingName     = 'GT-S5363';
+        $this->marketingName     = 'Galaxy Y';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

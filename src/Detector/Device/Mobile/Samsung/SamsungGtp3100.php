@@ -54,7 +54,7 @@ class SamsungGtp3100 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-P3100';
-        $this->marketingName     = 'Galaxy Tab 2 7.0';
+        $this->marketingName     = 'Galaxy Tab 2 7.0 3G';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
@@ -66,7 +66,7 @@ class SamsungGtp3100 extends Device implements DeviceHasSpecificPlatformInterfac
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

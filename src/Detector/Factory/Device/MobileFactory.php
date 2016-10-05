@@ -92,6 +92,8 @@ class MobileFactory implements FactoryInterface
         if (preg_match('/(ipad|iphone|ipod|like mac os x)/i', $useragent)
             && !preg_match('/windows phone/i', $useragent)
             && !preg_match('/ adr /i', $useragent)
+            && !preg_match('/iPodder/', $useragent)
+            && !preg_match('/tripadvisor/i', $useragent)
         ) {
             return Mobile\AppleFactory::detect($useragent);
         }

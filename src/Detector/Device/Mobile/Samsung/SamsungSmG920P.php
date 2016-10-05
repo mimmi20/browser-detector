@@ -54,7 +54,7 @@ class SamsungSmG920P extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-G920P';
-        $this->marketingName     = 'Galaxy S6 CDMA (Sprint)';
+        $this->marketingName     = 'Galaxy S6 LTE + CDMA (Sprint)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

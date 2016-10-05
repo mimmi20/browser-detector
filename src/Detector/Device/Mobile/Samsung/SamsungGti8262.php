@@ -54,7 +54,7 @@ class SamsungGti8262 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-I8262';
-        $this->marketingName     = 'Galaxy Core';
+        $this->marketingName     = 'Galaxy Core Duos';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

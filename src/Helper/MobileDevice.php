@@ -85,6 +85,8 @@ class MobileDevice
             'commoncrawler',
             '<',
             '>',
+            'ipodder',
+            'tripadvisor',
         ];
 
         $utils = new Utils();

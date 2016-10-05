@@ -66,6 +66,8 @@ class TvTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/5.0 (X11; U; SunOS sun4u; pl-PL; rv:1.8.1.6) Gecko/20071217 Firefox/2.0.0.6'],
             ['Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) (Windows NT 6.1; WOW64) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12A405 MicroMessenger/5.4.2 NetType/WIFI'],
             ['>Forum.WindowsFAQ.ru</a>'],
+            ['iPodder/2.1 +http://ipodder.sf.net/'],
+            ['TA SEO Crawler v0.1 URLData.pm (smcquaker@tripadvisor.com)'],
         ];
     }
 }

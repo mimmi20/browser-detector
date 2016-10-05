@@ -54,7 +54,7 @@ class SamsungSmG530fz extends Device implements DeviceHasSpecificPlatformInterfa
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-G530FZ';
-        $this->marketingName     = 'Galaxy Grand Prime LTE';
+        $this->marketingName     = 'Galaxy Grand Prime 4G LTE';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

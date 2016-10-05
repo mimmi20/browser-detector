@@ -54,7 +54,7 @@ class SamsungSchI400 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SCH-I400';
-        $this->marketingName     = 'SCH-I400';
+        $this->marketingName     = 'Continuum I400 (Verizon)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

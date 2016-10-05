@@ -53,7 +53,7 @@ class SamsungGts5839i extends Device implements DeviceHasSpecificPlatformInterfa
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'GT-S5839i';
+        $this->deviceName        = 'GT-S5839I';
         $this->marketingName     = 'Galaxy Ace';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();

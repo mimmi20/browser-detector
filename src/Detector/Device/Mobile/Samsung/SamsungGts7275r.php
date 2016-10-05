@@ -54,7 +54,7 @@ class SamsungGts7275r extends Device implements DeviceHasSpecificPlatformInterfa
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-S7275R';
-        $this->marketingName     = 'Galaxy Ace 3';
+        $this->marketingName     = 'Galaxy Ace 3 LTE';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

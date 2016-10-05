@@ -1179,7 +1179,7 @@ return [
             'Platform_Brand_Name'     => 'Apple',
             'Device_Name'             => 'iPhone',
             'Device_Maker'            => 'Apple Inc',
-            'Device_Type'             => 'Mobile Device',
+            'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'iPhone',

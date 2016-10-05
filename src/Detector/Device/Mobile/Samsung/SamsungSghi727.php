@@ -54,7 +54,7 @@ class SamsungSghi727 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SGH-I727';
-        $this->marketingName     = 'Galaxy S II Skyrocket';
+        $this->marketingName     = 'Galaxy S II Skyrocket LTE (AT&T)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
