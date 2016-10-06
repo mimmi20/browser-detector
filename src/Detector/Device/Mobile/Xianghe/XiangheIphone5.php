@@ -29,10 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Factory\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Xianghe;
 
-use BrowserDetector\Detector\Device\Mobile\Xianghe;
-use BrowserDetector\Detector\Factory\FactoryInterface;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,33 +43,39 @@ use BrowserDetector\Detector\Factory\FactoryInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class XiangheFactory implements FactoryInterface
+class XiangheIphone5 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
-     * detects the device name from the given user agent
+     * the class constructor
      *
      * @param string $useragent
-     *
-     * @return \UaResult\Device\DeviceInterface
      */
-    public static function detect($useragent)
+    public function __construct($useragent)
     {
-        if (preg_match('/iphone[ ]?6c/i', $useragent)) {
-            return new Xianghe\XiangheIphone6c($useragent);
-        }
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'iphone 5';
+        $this->marketingName     = 'iphone 5';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Xianghe')->getName();
+        $this->brand             = CompanyFactory::get('Xianghe')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 720;
+        $this->resolutionHeight  = 1280;
+        $this->dualOrientation   = true;
+        $this->colors            = 65536;
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\MobilePhone();
+    }
 
-        if (preg_match('/iphone[ ]?5c/i', $useragent)) {
-            return new Xianghe\XiangheIphone5c($useragent);
-        }
-
-        if (preg_match('/iphone[ ]?5/i', $useragent)) {
-            return new Xianghe\XiangheIphone5($useragent);
-        }
-
-        if (preg_match('/iphone/i', $useragent)) {
-            return new Xianghe\XiangheIphone($useragent);
-        }
-
-        return new Xianghe\Xianghe($useragent);
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
+    {
+        return new Os\AndroidOs($this->useragent);
     }
 }

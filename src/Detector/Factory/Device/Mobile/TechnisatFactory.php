@@ -51,15 +51,19 @@ class TechnisatFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/TechniPad_10\-3G/', $useragent)) {
+        if (preg_match('/TechniPad[_ ]10\-3G/', $useragent)) {
             return new Technisat\TechnisatTechnipad103g($useragent);
         }
 
-        if (preg_match('/AQIPAD_7G/', $useragent)) {
+        if (preg_match('/TechniPad[_ ]10/', $useragent)) {
+            return new Technisat\TechnisatTechnipad10($useragent);
+        }
+
+        if (preg_match('/AQIPAD[_ ]7G/', $useragent)) {
             return new Technisat\TechnisatAqistonAqipad7g($useragent);
         }
 
-        if (preg_match('/TechniPhone 5/', $useragent)) {
+        if (preg_match('/TechniPhone[_ ]5/', $useragent)) {
             return new Technisat\TechnisatTechniphone5($useragent);
         }
 

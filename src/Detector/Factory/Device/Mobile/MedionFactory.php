@@ -55,6 +55,10 @@ class MedionFactory implements FactoryInterface
             return new Medion\MdLifeE5001($useragent);
         }
 
+        if (preg_match('/x5004/i', $useragent)) {
+            return new Medion\MdX5004($useragent);
+        }
+
         if (preg_match('/x4701/i', $useragent)) {
             return new Medion\MdX4701($useragent);
         }
@@ -73,6 +77,10 @@ class MedionFactory implements FactoryInterface
 
         if (preg_match('/LIFETAB_S9512/i', $useragent)) {
             return new Medion\MdLifetabS9512($useragent);
+        }
+
+        if (preg_match('/LIFETAB_S1036X/i', $useragent)) {
+            return new Medion\MdLifetabS1036x($useragent);
         }
 
         if (preg_match('/LIFETAB_S1034X/i', $useragent)) {
@@ -101,6 +109,10 @@ class MedionFactory implements FactoryInterface
 
         if (preg_match('/LIFETAB_P891X/i', $useragent)) {
             return new Medion\MdLifetabP891x($useragent);
+        }
+
+        if (preg_match('/LIFETAB_P831X\.2/i', $useragent)) {
+            return new Medion\MdLifetabP831x2($useragent);
         }
 
         if (preg_match('/LIFETAB_E10320/i', $useragent)) {

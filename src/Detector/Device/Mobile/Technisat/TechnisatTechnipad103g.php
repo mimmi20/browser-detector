@@ -61,7 +61,7 @@ class TechnisatTechnipad103g extends Device implements DeviceHasSpecificPlatform
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 1920;
         $this->resolutionHeight  = 1200;
-        $this->dualOrientation   = false;
+        $this->dualOrientation   = true;
         $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

@@ -64,6 +64,13 @@ class Ios
             return false;
         }
 
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['trident', 'windows phone', 'android'], true)) {
+            return false;
+        }
+
         if (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS|iOS;)/', $this->useragent)) {
             return true;
         }
@@ -71,9 +78,6 @@ class Ios
         if (preg_match('/Puffin\/[\d\.]+I(P|T)/', $this->useragent)) {
             return true;
         }
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
 
         if ($utils->checkIfContainsAll(['windows nt', 'iphone', 'micromessenger'], true)) {
             return true;

@@ -101,6 +101,16 @@ class XiangheFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.0; ru; iPhone5) U2/1.0.0 UCBrowser/10.1.2.571 U2/1.0.0 Mobile',
+                'iphone 5',
+                'iphone 5',
+                'Xianghe Technology Co., Ltd.',
+                'Xianghe',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
