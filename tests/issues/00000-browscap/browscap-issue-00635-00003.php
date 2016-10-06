@@ -1879,7 +1879,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Galaxy Core',
+            'Device_Name'             => 'Galaxy Core Duos',
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
