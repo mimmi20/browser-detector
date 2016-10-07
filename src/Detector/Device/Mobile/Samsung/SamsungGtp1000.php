@@ -54,7 +54,7 @@ class SamsungGtp1000 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-P1000';
-        $this->marketingName     = 'Galaxy Tab';
+        $this->marketingName     = 'Galaxy Tab 7.0';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
@@ -66,7 +66,7 @@ class SamsungGtp1000 extends Device implements DeviceHasSpecificPlatformInterfac
         $this->smsSupport        = true;
         $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\FonePad();
+        $this->type              = new UaDeviceType\Tablet();
     }
 
     /**

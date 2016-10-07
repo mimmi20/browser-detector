@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Medion;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmN915fy extends Device implements DeviceHasSpecificPlatformInterface
+class MdLifetabE733x extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class SamsungSmN915fy extends Device implements DeviceHasSpecificPlatformInterfa
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SM-N915FY';
-        $this->marketingName     = 'Galaxy Note Edge 4 LTE (Europe)';
+        $this->deviceName        = 'LifeTab E733X';
+        $this->marketingName     = 'LifeTab E733X';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
-        $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Medion')->getName();
+        $this->brand             = CompanyFactory::get('Medion')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 1440;
-        $this->resolutionHeight  = 2560;
+        $this->resolutionWidth   = 1024;
+        $this->resolutionHeight  = 600;
         $this->dualOrientation   = true;
-        $this->colors            = 16777216;
+        $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
+        $this->type              = new UaDeviceType\Tablet();
     }
 
     /**
@@ -76,6 +76,6 @@ class SamsungSmN915fy extends Device implements DeviceHasSpecificPlatformInterfa
      */
     public function detectOs()
     {
-        return null;
+        return new Os\AndroidOs($this->useragent);
     }
 }

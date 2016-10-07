@@ -54,7 +54,7 @@ class SamsungSmJ510fn extends Device implements DeviceHasSpecificPlatformInterfa
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-J510FN';
-        $this->marketingName     = 'Galaxy J5 (2016) Duos';
+        $this->marketingName     = 'Galaxy J5 Duos (2016)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

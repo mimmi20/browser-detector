@@ -55,12 +55,28 @@ class MedionFactory implements FactoryInterface
             return new Medion\MdLifeE5001($useragent);
         }
 
+        if (preg_match('/medion e4502/i', $useragent)) {
+            return new Medion\MdE4502($useragent);
+        }
+
+        if (preg_match('/medion e4506/i', $useragent)) {
+            return new Medion\MedionE4506($useragent);
+        }
+
+        if (preg_match('/x5020/i', $useragent)) {
+            return new Medion\MdX5020($useragent);
+        }
+
         if (preg_match('/x5004/i', $useragent)) {
             return new Medion\MdX5004($useragent);
         }
 
         if (preg_match('/x4701/i', $useragent)) {
             return new Medion\MdX4701($useragent);
+        }
+
+        if (preg_match('/p5001/i', $useragent)) {
+            return new Medion\MedionP5001($useragent);
         }
 
         if (preg_match('/LIFETAB_P1034X/i', $useragent)) {
@@ -99,6 +115,10 @@ class MedionFactory implements FactoryInterface
             return new Medion\MdLifetabS785x($useragent);
         }
 
+        if (preg_match('/LIFETAB_S732X/i', $useragent)) {
+            return new Medion\MdLifetabS732x($useragent);
+        }
+
         if (preg_match('/LIFETAB_P9516/i', $useragent)) {
             return new Medion\MdLifetabP9516($useragent);
         }
@@ -113,6 +133,10 @@ class MedionFactory implements FactoryInterface
 
         if (preg_match('/LIFETAB_P831X\.2/i', $useragent)) {
             return new Medion\MdLifetabP831x2($useragent);
+        }
+
+        if (preg_match('/LIFETAB_P831X/i', $useragent)) {
+            return new Medion\MdLifetabP831x($useragent);
         }
 
         if (preg_match('/LIFETAB_E10320/i', $useragent)) {
@@ -139,6 +163,10 @@ class MedionFactory implements FactoryInterface
             return new Medion\MdLifetabE7312($useragent);
         }
 
+        if (preg_match('/LIFETAB_E733X/i', $useragent)) {
+            return new Medion\MdLifetabE733x($useragent);
+        }
+
         if (preg_match('/p4501/i', $useragent)) {
             return new Medion\MdLifeP4501($useragent);
         }
@@ -147,7 +175,7 @@ class MedionFactory implements FactoryInterface
             return new Medion\MdLifeP4310($useragent);
         }
 
-        if (preg_match('/LIFE P4013/i', $useragent)) {
+        if (preg_match('/p4013/i', $useragent)) {
             return new Medion\MdLifeP4013($useragent);
         }
 

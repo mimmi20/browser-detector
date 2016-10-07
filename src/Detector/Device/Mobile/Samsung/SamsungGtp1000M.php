@@ -54,19 +54,19 @@ class SamsungGtp1000M extends Device implements DeviceHasSpecificPlatformInterfa
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-P1000M';
-        $this->marketingName     = 'GT-P1000M';
+        $this->marketingName     = 'Galaxy Tab 7.0 (Canada)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 600;
         $this->resolutionHeight  = 1024;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = true;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = false;
-        $this->type              = new UaDeviceType\MobilePhone();
+        $this->type              = new UaDeviceType\Tablet();
     }
 
     /**

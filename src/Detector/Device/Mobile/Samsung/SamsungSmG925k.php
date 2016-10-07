@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmN915fy extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungSmG925k extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,14 +53,14 @@ class SamsungSmN915fy extends Device implements DeviceHasSpecificPlatformInterfa
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SM-N915FY';
-        $this->marketingName     = 'Galaxy Note Edge 4 LTE (Europe)';
+        $this->deviceName        = 'SM-G925K';
+        $this->marketingName     = 'Galaxy S6 Edge (Korea)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 1440;
-        $this->resolutionHeight  = 2560;
+        $this->resolutionWidth   = 1080;
+        $this->resolutionHeight  = 1920;
         $this->dualOrientation   = true;
         $this->colors            = 16777216;
         $this->smsSupport        = true;
@@ -76,6 +76,6 @@ class SamsungSmN915fy extends Device implements DeviceHasSpecificPlatformInterfa
      */
     public function detectOs()
     {
-        return null;
+        return new Os\AndroidOs($this->useragent);
     }
 }

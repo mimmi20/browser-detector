@@ -54,7 +54,7 @@ class SamsungSmN915g extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-N915G';
-        $this->marketingName     = 'Galaxy Note 4 Edge (Singapore, Australia, Spain)';
+        $this->marketingName     = 'Galaxy Note Edge 4 LTE (Singapore, Australia, Spain)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

@@ -54,19 +54,19 @@ class SamsungGtp1000N extends Device implements DeviceHasSpecificPlatformInterfa
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-P1000N';
-        $this->marketingName     = 'GT-P1000N';
+        $this->marketingName     = 'Galaxy Tab 7.0 (3G, USA)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 1024;
         $this->resolutionHeight  = 600;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = true;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = false;
-        $this->type              = new UaDeviceType\MobilePhone();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**
