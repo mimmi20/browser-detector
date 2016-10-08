@@ -934,7 +934,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Galaxy J5 (2016) Duos',
+            'Device_Name'             => 'Galaxy J5 Duos (2016)',
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
