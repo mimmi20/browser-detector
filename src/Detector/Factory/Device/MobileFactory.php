@@ -197,7 +197,9 @@ class MobileFactory implements FactoryInterface
             return Mobile\LgFactory::detect($useragent);
         }
 
-        if (preg_match('/htc/i', $useragent) && !preg_match('/WOHTC/', $useragent)) {
+        if (preg_match('/htc/i', $useragent)
+            && !preg_match('/WOHTC/', $useragent)
+        ) {
             return Mobile\HtcFactory::detect($useragent);
         }
 
@@ -431,6 +433,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/gzone/i', $useragent)) {
             return Mobile\GzoneFactory::detect($useragent);
+        }
+
+        if (preg_match('/goophone/i', $useragent)) {
+            return Mobile\GooPhoneFactory::detect($useragent);
         }
 
         if (preg_match('/g\-tide/i', $useragent)) {

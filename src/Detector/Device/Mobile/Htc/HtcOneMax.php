@@ -43,7 +43,7 @@ use UaResult\Device\Device;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcRuby extends Device implements DeviceHasSpecificPlatformInterface
+class HtcOneMax extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,16 +53,16 @@ class HtcRuby extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Ruby';
-        $this->marketingName     = 'Ruby';
+        $this->deviceName        = 'One Max';
+        $this->marketingName     = 'One Max';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Htc')->getName();
         $this->brand             = CompanyFactory::get('Htc')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
+        $this->resolutionWidth   = 540;
+        $this->resolutionHeight  = 960;
         $this->dualOrientation   = true;
-        $this->colors            = null;
+        $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;

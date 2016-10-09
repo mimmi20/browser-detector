@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Htc;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
-use UaResult\Device\Device;
+use BrowserDetector\Detector\Device\Mobile\GooPhone;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,39 +40,21 @@ use UaResult\Device\Device;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcRuby extends Device implements DeviceHasSpecificPlatformInterface
+class GooPhoneFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     */
-    public function __construct($useragent)
-    {
-        $this->useragent         = $useragent;
-        $this->deviceName        = 'Ruby';
-        $this->marketingName     = 'Ruby';
-        $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Htc')->getName();
-        $this->brand             = CompanyFactory::get('Htc')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
-        $this->dualOrientation   = true;
-        $this->colors            = null;
-        $this->smsSupport        = true;
-        $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \UaResult\Os\OsInterface|null
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent);
+        if (preg_match('/S4 MEGA/', $useragent)) {
+            return new GooPhone\GooPhoneS4Mega($useragent);
+        }
+
+        return new GooPhone\GooPhone($useragent);
     }
 }

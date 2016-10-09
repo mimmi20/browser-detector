@@ -54,7 +54,7 @@ class HtcDesireZ extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'Desire Z';
-        $this->marketingName     = 'Desire';
+        $this->marketingName     = 'Desire Z';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Htc')->getName();
         $this->brand             = CompanyFactory::get('Htc')->getBrandName();

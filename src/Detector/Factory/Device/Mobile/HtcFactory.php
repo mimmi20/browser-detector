@@ -179,6 +179,10 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcOneMini($useragent);
         }
 
+        if (preg_match('/(one[ _]max|himauhl_htc_asia_tw)/i', $useragent)) {
+            return new Htc\HtcOneMax($useragent);
+        }
+
         if (preg_match('/one/i', $useragent)) {
             return new Htc\HtcOne($useragent);
         }
@@ -211,7 +215,7 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcZ710e($useragent);
         }
 
-        if (preg_match('/sensation/i', $useragent)) {
+        if (preg_match('/(sensation|pyramid)/i', $useragent)) {
             return new Htc\HtcZ710($useragent);
         }
 
@@ -279,6 +283,10 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcDesireC($useragent);
         }
 
+        if (preg_match('/desire[ _]820/i', $useragent)) {
+            return new Htc\HtcDesire820($useragent);
+        }
+
         if (preg_match('/desire[ _]816g/i', $useragent)) {
             return new Htc\HtcDesire816g($useragent);
         }
@@ -291,12 +299,32 @@ class HtcFactory implements FactoryInterface
             return new Htc\Htc0p4e2($useragent);
         }
 
+        if (preg_match('/desire[ _]700/i', $useragent)) {
+            return new Htc\HtcDesire700($useragent);
+        }
+
+        if (preg_match('/desire[ _]610/i', $useragent)) {
+            return new Htc\HtcDesire610($useragent);
+        }
+
+        if (preg_match('/desire[ _]600c/i', $useragent)) {
+            return new Htc\HtcDesire600c($useragent);
+        }
+
+        if (preg_match('/desire[ _]600/i', $useragent)) {
+            return new Htc\HtcDesire600($useragent);
+        }
+
         if (preg_match('/desire[ _]516/i', $useragent)) {
             return new Htc\HtcDesire516($useragent);
         }
 
         if (preg_match('/desire[ _]500/i', $useragent)) {
             return new Htc\HtcDesire500($useragent);
+        }
+
+        if (preg_match('/desire[ _]400/i', $useragent)) {
+            return new Htc\HtcDesire400($useragent);
         }
 
         if (preg_match('/desire[ _]310/i', $useragent)) {
@@ -415,7 +443,7 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcS510b($useragent);
         }
 
-        if (preg_match('/Ruby/i', $useragent)) {
+        if (preg_match('/ruby/i', $useragent)) {
             return new Htc\HtcRuby($useragent);
         }
 
@@ -471,7 +499,7 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcFlyer($useragent);
         }
 
-        if (preg_match('/(PC36100|EVO 4G)/', $useragent)) {
+        if (preg_match('/(pc36100|evo 4g|kingdom)/i', $useragent)) {
             return new Htc\HtcEvo4g($useragent);
         }
 
@@ -481,6 +509,10 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/D820mu/i', $useragent)) {
             return new Htc\HtcD820mu($useragent);
+        }
+
+        if (preg_match('/D820us/i', $useragent)) {
+            return new Htc\HtcD820us($useragent);
         }
 
         if (preg_match('/click/i', $useragent)) {
@@ -495,8 +527,12 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcC2($useragent);
         }
 
-        if (preg_match('/Bravo/i', $useragent)) {
+        if (preg_match('/bravo/i', $useragent)) {
             return new Htc\HtcBravo($useragent);
+        }
+
+        if (preg_match('/butterfly/i', $useragent)) {
+            return new Htc\HtcButterfly($useragent);
         }
 
         if (preg_match('/adr6350/i', $useragent)) {
@@ -567,12 +603,24 @@ class HtcFactory implements FactoryInterface
             return new Htc\Htc831C($useragent);
         }
 
-        if (preg_match('/htc802t/i', $useragent)) {
+        if (preg_match('/htc 809d/i', $useragent)) {
+            return new Htc\Htc809d($useragent);
+        }
+
+        if (preg_match('/htc[ ]?802t/i', $useragent)) {
             return new Htc\Htc802T($useragent);
         }
 
         if (preg_match('/htc 802d/i', $useragent)) {
             return new Htc\Htc802d($useragent);
+        }
+
+        if (preg_match('/htc 606w/i', $useragent)) {
+            return new Htc\Htc606w($useragent);
+        }
+
+        if (preg_match('/htc d516d/i', $useragent)) {
+            return new Htc\HtcDesire516($useragent);
         }
 
         if (preg_match('/VPA\_Touch/i', $useragent)) {

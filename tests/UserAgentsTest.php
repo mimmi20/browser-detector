@@ -80,9 +80,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
 
         echo 'starting provider ', static::class, ' ...';
 
-        $data            = [];
-        $checks          = [];
-
+        $data     = [];
         $iterator = new \DirectoryIterator($this->sourceDirectory);
 
         foreach ($iterator as $file) {
@@ -99,13 +97,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
                     continue;
                 }
 
-                if (isset($checks[$test['ua']])) {
-                    // UA was added more than once
-                    continue;
-                }
-
-                $data[$key]          = $test;
-                $checks[$test['ua']] = $key;
+                $data[$key] = $test;
             }
         }
 

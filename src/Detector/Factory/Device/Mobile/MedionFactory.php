@@ -59,8 +59,20 @@ class MedionFactory implements FactoryInterface
             return new Medion\MdE4502($useragent);
         }
 
+        if (preg_match('/medion e4504/i', $useragent)) {
+            return new Medion\MedionE4504($useragent);
+        }
+
+        if (preg_match('/medion e4503/i', $useragent)) {
+            return new Medion\MedionE4503($useragent);
+        }
+
         if (preg_match('/medion e4506/i', $useragent)) {
             return new Medion\MedionE4506($useragent);
+        }
+
+        if (preg_match('/medion e4005/i', $useragent)) {
+            return new Medion\MedionE4005($useragent);
         }
 
         if (preg_match('/x5020/i', $useragent)) {
@@ -77,6 +89,18 @@ class MedionFactory implements FactoryInterface
 
         if (preg_match('/p5001/i', $useragent)) {
             return new Medion\MedionP5001($useragent);
+        }
+
+        if (preg_match('/p5004/i', $useragent)) {
+            return new Medion\MedionP5004($useragent);
+        }
+
+        if (preg_match('/p5005/i', $useragent)) {
+            return new Medion\MedionP5005($useragent);
+        }
+
+        if (preg_match('/s5004/i', $useragent)) {
+            return new Medion\MedionS5004($useragent);
         }
 
         if (preg_match('/LIFETAB_P1034X/i', $useragent)) {
@@ -159,6 +183,10 @@ class MedionFactory implements FactoryInterface
             return new Medion\MdLifetabE7316($useragent);
         }
 
+        if (preg_match('/LIFETAB_E7313/i', $useragent)) {
+            return new Medion\MdLifetabE7313($useragent);
+        }
+
         if (preg_match('/LIFETAB_E7312/i', $useragent)) {
             return new Medion\MdLifetabE7312($useragent);
         }
@@ -169,6 +197,10 @@ class MedionFactory implements FactoryInterface
 
         if (preg_match('/p4501/i', $useragent)) {
             return new Medion\MdLifeP4501($useragent);
+        }
+
+        if (preg_match('/p4502/i', $useragent)) {
+            return new Medion\MedionP4502($useragent);
         }
 
         if (preg_match('/LIFE P4310/i', $useragent)) {

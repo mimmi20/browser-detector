@@ -53,7 +53,7 @@ class MdLifetabE7316 extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'MD 98282';
+        $this->deviceName        = 'LifeTab E7316';
         $this->marketingName     = 'LifeTab E7316';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Medion')->getName();

@@ -43,7 +43,7 @@ use UaResult\Device\Device;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcRuby extends Device implements DeviceHasSpecificPlatformInterface
+class Htc809d extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,8 +53,8 @@ class HtcRuby extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Ruby';
-        $this->marketingName     = 'Ruby';
+        $this->deviceName        = '809D';
+        $this->marketingName     = 'One Max CDMA+GSM';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Htc')->getName();
         $this->brand             = CompanyFactory::get('Htc')->getBrandName();
