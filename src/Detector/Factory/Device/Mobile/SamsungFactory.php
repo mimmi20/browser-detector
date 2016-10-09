@@ -1800,7 +1800,7 @@ class SamsungFactory implements FactoryInterface
         }
 
         if (preg_match('/sch\-r950/i', $useragent)) {
-            return new Samsung\SamsungSchr950($useragent);
+            return new Samsung\SamsungSchR950($useragent);
         }
 
         if (preg_match('/sch\-r720/i', $useragent)) {
