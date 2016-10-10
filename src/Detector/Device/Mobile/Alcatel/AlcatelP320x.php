@@ -53,7 +53,7 @@ class AlcatelP320x extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'P320X';
+        $this->deviceName        = 'OT-P320X';
         $this->marketingName     = 'One Touch POP 8 3G';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Alcatel')->getName();

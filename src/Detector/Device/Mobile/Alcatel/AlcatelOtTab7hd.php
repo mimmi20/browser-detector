@@ -54,14 +54,14 @@ class AlcatelOtTab7hd extends Device implements DeviceHasSpecificPlatformInterfa
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'OT-TAB7HD';
-        $this->marketingName     = 'One Touch Tab 7HD';
+        $this->marketingName     = 'One Touch Tab 7 HD';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Alcatel')->getName();
         $this->brand             = CompanyFactory::get('Alcatel')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 1280;
         $this->resolutionHeight  = 800;
-        $this->dualOrientation   = false;
+        $this->dualOrientation   = true;
         $this->colors            = 16777216;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

@@ -91,7 +91,7 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcRadar($useragent);
         }
 
-        if (preg_match('/(HD7|Mondrian)/i', $useragent)) {
+        if (preg_match('/(hd7|mondrian)/i', $useragent)) {
             return new Htc\HtcT9292($useragent);
         }
 
@@ -143,8 +143,16 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcOneM9($useragent);
         }
 
-        if (preg_match('/one\_m8/i', $useragent)) {
+        if (preg_match('/one[_ ]m8s/i', $useragent)) {
+            return new Htc\HtcOneM8s($useragent);
+        }
+
+        if (preg_match('/one[_ ]m8/i', $useragent)) {
             return new Htc\HtcOneM8($useragent);
+        }
+
+        if (preg_match('/pn07120/i', $useragent)) {
+            return new Htc\HtcOneM7GooglePlay($useragent);
         }
 
         if (preg_match('/(one[ _]x\+|onexplus)/i', $useragent)) {
@@ -283,6 +291,10 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcDesireC($useragent);
         }
 
+        if (preg_match('/desire[ _]820s/i', $useragent)) {
+            return new Htc\HtcDesire820s($useragent);
+        }
+
         if (preg_match('/desire[ _]820/i', $useragent)) {
             return new Htc\HtcDesire820($useragent);
         }
@@ -299,8 +311,24 @@ class HtcFactory implements FactoryInterface
             return new Htc\Htc0p4e2($useragent);
         }
 
+        if (preg_match('/desire[ _]728g/i', $useragent)) {
+            return new Htc\HtcDesire728g($useragent);
+        }
+
         if (preg_match('/desire[ _]700/i', $useragent)) {
             return new Htc\HtcDesire700($useragent);
+        }
+
+        if (preg_match('/desire[ _]626g/i', $useragent)) {
+            return new Htc\HtcDesire626g($useragent);
+        }
+
+        if (preg_match('/desire[ _]626/i', $useragent)) {
+            return new Htc\HtcDesire626($useragent);
+        }
+
+        if (preg_match('/desire[ _]620g/i', $useragent)) {
+            return new Htc\HtcDesire620g($useragent);
         }
 
         if (preg_match('/desire[ _]610/i', $useragent)) {
@@ -315,8 +343,20 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcDesire600($useragent);
         }
 
+        if (preg_match('/desire[ _]530/i', $useragent)) {
+            return new Htc\HtcDesire530($useragent);
+        }
+
+        if (preg_match('/desire[ _]526g/i', $useragent)) {
+            return new Htc\HtcDesire526g($useragent);
+        }
+
         if (preg_match('/desire[ _]516/i', $useragent)) {
             return new Htc\HtcDesire516($useragent);
+        }
+
+        if (preg_match('/desire[ _]510/i', $useragent)) {
+            return new Htc\HtcDesire510($useragent);
         }
 
         if (preg_match('/desire[ _]500/i', $useragent)) {
@@ -325,6 +365,10 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/desire[ _]400/i', $useragent)) {
             return new Htc\HtcDesire400($useragent);
+        }
+
+        if (preg_match('/desire[ _]320/i', $useragent)) {
+            return new Htc\HtcDesire320($useragent);
         }
 
         if (preg_match('/desire[ _]310/i', $useragent)) {
@@ -539,11 +583,11 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcAdr6350($useragent);
         }
 
-        if (preg_match('/APA9292KT/i', $useragent)) {
+        if (preg_match('/apa9292kt/i', $useragent)) {
             return new Htc\HtcA9292Apa9292kt($useragent);
         }
 
-        if (preg_match('/A9192/i', $useragent)) {
+        if (preg_match('/a9192/i', $useragent)) {
             return new Htc\HtcA9192Inspire4g($useragent);
         }
 

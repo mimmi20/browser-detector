@@ -54,7 +54,7 @@ class AlcatelOt7025d extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'OT-7025D';
-        $this->marketingName     = 'OT-7025D';
+        $this->marketingName     = 'One Touch 7025D';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Alcatel')->getName();
         $this->brand             = CompanyFactory::get('Alcatel')->getBrandName();

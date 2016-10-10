@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
+namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use UaDeviceType;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use UaDeviceType;
+use UaResult\Device\Device;
 
 /**
  * @category  BrowserDetector
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AlcatelP310x extends Device implements DeviceHasSpecificPlatformInterface
+class HtcOneM7GooglePlay extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class AlcatelP310x extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'OT-P310X';
-        $this->marketingName     = 'One Touch Pop7 WiFi 3G';
+        $this->deviceName        = 'PN07120';
+        $this->marketingName     = 'One M7 Google Play';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Alcatel')->getName();
-        $this->brand             = CompanyFactory::get('Alcatel')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Htc')->getName();
+        $this->brand             = CompanyFactory::get('Htc')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 540;
-        $this->resolutionHeight  = 960;
+        $this->resolutionWidth   = 1080;
+        $this->resolutionHeight  = 1920;
         $this->dualOrientation   = true;
-        $this->colors            = 16777216;
+        $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\FonePad();
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**

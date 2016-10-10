@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AlcatelP310x extends Device implements DeviceHasSpecificPlatformInterface
+class AlcatelP310a extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,7 +53,7 @@ class AlcatelP310x extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'OT-P310X';
+        $this->deviceName        = 'OT-P310A';
         $this->marketingName     = 'One Touch Pop7 WiFi 3G';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Alcatel')->getName();

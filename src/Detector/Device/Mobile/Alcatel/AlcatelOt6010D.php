@@ -54,7 +54,7 @@ class AlcatelOt6010D extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'OT-6010D';
-        $this->marketingName     = 'One Touch Star 6010D';
+        $this->marketingName     = 'One Touch Star';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Alcatel')->getName();
         $this->brand             = CompanyFactory::get('Alcatel')->getBrandName();

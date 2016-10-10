@@ -53,7 +53,7 @@ class AlcatelOt4037T extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = '4037T';
+        $this->deviceName        = 'OT-4037T';
         $this->marketingName     = 'One Touch Evolve II Black';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Alcatel')->getName();

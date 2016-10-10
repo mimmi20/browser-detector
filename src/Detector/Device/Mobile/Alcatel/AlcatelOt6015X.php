@@ -54,7 +54,7 @@ class AlcatelOt6015X extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'OT-6015X';
-        $this->marketingName     = 'OT-6015X';
+        $this->marketingName     = 'One Touch Fire E';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Alcatel')->getName();
         $this->brand             = CompanyFactory::get('Alcatel')->getBrandName();
