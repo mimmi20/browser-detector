@@ -210,7 +210,7 @@ return [
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
-            'Device_Code_Name'        => 'Z710e',
+            'Device_Code_Name'        => 'Z710',
             'Device_Brand_Name'       => 'HTC',
             'RenderingEngine_Name'    => 'WebKit',
             'RenderingEngine_Version' => 'unknown',

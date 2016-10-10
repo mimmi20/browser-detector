@@ -2613,7 +2613,7 @@ return [
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
-            'Device_Code_Name'        => 'MD 98282',
+            'Device_Code_Name'        => 'LifeTab E7316',
             'Device_Brand_Name'       => 'Medion',
             'RenderingEngine_Name'    => 'Blink',
             'RenderingEngine_Version' => 'unknown',

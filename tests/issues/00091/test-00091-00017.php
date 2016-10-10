@@ -1830,7 +1830,7 @@ return [
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
-            'Device_Code_Name'        => 'MD 98488',
+            'Device_Code_Name'        => 'LifeTab E7312',
             'Device_Brand_Name'       => 'Medion',
             'RenderingEngine_Name'    => 'Blink',
             'RenderingEngine_Version' => 'unknown',
