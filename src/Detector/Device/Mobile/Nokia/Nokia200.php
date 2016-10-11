@@ -53,7 +53,7 @@ class Nokia200 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Asha 200';
+        $this->deviceName        = '200';
         $this->marketingName     = 'Asha 200';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Nokia')->getName();

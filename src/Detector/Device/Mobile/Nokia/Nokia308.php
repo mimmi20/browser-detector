@@ -54,7 +54,7 @@ class Nokia308 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = '308';
-        $this->marketingName     = '308';
+        $this->marketingName     = 'Asha 308';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Nokia')->getName();
         $this->brand             = CompanyFactory::get('Nokia')->getBrandName();

@@ -55,6 +55,14 @@ class AlcatelFactory implements FactoryInterface
             return new Alcatel\AlcatelOt8008D($useragent);
         }
 
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)8000d/i', $useragent)) {
+            return new Alcatel\AlcatelOt8000D($useragent);
+        }
+
+        if (preg_match('/7049d/i', $useragent)) {
+            return new Alcatel\AlcatelOt7049d($useragent);
+        }
+
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7047d/i', $useragent)) {
             return new Alcatel\AlcatelOt7047d($useragent);
         }
@@ -75,6 +83,10 @@ class AlcatelFactory implements FactoryInterface
             return new Alcatel\AlcatelOt6050A($useragent);
         }
 
+        if (preg_match('/6043d/i', $useragent)) {
+            return new Alcatel\AlcatelOt6043D($useragent);
+        }
+
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6040d/i', $useragent)) {
             return new Alcatel\AlcatelOt6040D($useragent);
         }
@@ -87,12 +99,20 @@ class AlcatelFactory implements FactoryInterface
             return new Alcatel\AlcatelOt6035R($useragent);
         }
 
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6034r/i', $useragent)) {
+            return new Alcatel\AlcatelOt6034R($useragent);
+        }
+
         if (preg_match('/4034d/i', $useragent)) {
             return new Alcatel\AlcatelOt4034D($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6033x/i', $useragent)) {
             return new Alcatel\AlcatelOt6033X($useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6032/i', $useragent)) {
+            return new Alcatel\AlcatelOt6032($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6030x/i', $useragent)) {
@@ -261,6 +281,10 @@ class AlcatelFactory implements FactoryInterface
 
         if (preg_match('/P310A/', $useragent)) {
             return new Alcatel\AlcatelP310a($useragent);
+        }
+
+        if (preg_match('/ONE TOUCH TAB 8HD/', $useragent)) {
+            return new Alcatel\AlcatelOtTab8hd($useragent);
         }
 
         if (preg_match('/ONE TOUCH TAB 7HD/', $useragent)) {

@@ -54,14 +54,14 @@ class Nokia500 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = '500';
-        $this->marketingName     = '500';
+        $this->marketingName     = 'Asha 500';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Nokia')->getName();
         $this->brand             = CompanyFactory::get('Nokia')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 360;
         $this->resolutionHeight  = 640;
-        $this->dualOrientation   = false;
+        $this->dualOrientation   = true;
         $this->colors            = 16777216;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

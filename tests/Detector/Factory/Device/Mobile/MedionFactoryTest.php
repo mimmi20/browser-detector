@@ -401,6 +401,26 @@ class MedionFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.6; de-de; MEDION Smartphone LIFE E3501 Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'Life E3501',
+                'Life E3501',
+                'Medion',
+                'Medion',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; LIFETAB_E723X Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36',
+                'LifeTab E723X',
+                'LifeTab E723X',
+                'Medion',
+                'Medion',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

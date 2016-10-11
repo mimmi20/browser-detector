@@ -345,7 +345,7 @@ return [
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
-            'Device_Code_Name'        => 'Desire HD',
+            'Device_Code_Name'        => 'A9191',
             'Device_Brand_Name'       => 'HTC',
             'RenderingEngine_Name'    => 'U3',
             'RenderingEngine_Version' => 'unknown',

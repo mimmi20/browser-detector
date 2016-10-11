@@ -1742,6 +1742,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\NokiaFactory::detect($useragent);
         }
 
+        if (preg_match('/RM\-\d{3,4}/', $useragent) && !preg_match('/(nokia|microsoft)/i', $useragent)) {
+            return Mobile\RossMoorFactory::detect($useragent);
+        }
+
         if (preg_match('/RM\-\d{3,4}/', $useragent)) {
             return Mobile\NokiaFactory::detect($useragent);
         }

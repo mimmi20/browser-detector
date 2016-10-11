@@ -61,7 +61,7 @@ class SamsungGts5233S extends Device implements DeviceHasSpecificPlatformInterfa
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 240;
         $this->resolutionHeight  = 400;
-        $this->dualOrientation   = false;
+        $this->dualOrientation   = true;
         $this->colors            = 262144;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
