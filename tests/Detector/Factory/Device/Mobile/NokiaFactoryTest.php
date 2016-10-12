@@ -981,6 +981,36 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 640 Dual SIM) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
+                'RM-1075',
+                'Lumia 640 Dual SIM LTE',
+                'Microsoft Corporation',
+                'Microsoft',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 435) like Gecko',
+                'Lumia 435',
+                'Lumia 435',
+                'Microsoft Corporation',
+                'Microsoft',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800)',
+                'Lumia 800',
+                'Lumia 800',
+                'Nokia',
+                'Nokia',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
