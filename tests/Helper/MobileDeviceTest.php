@@ -106,6 +106,7 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; tb-webde/2.6.9; MASEJS; rv:11.0) like Gecko'],
             ['iPodder/2.1 +http://ipodder.sf.net/'],
             ['TA SEO Crawler v0.1 URLData.pm (smcquaker@tripadvisor.com)'],
+            ['Nokia WAP Gateway 4.1 CD1/ECD13_D/4.1.04)'],
         ];
     }
 }

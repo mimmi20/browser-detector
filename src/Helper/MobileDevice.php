@@ -87,6 +87,7 @@ class MobileDevice
             '>',
             'ipodder',
             'tripadvisor',
+            'nokia wap gateway',
         ];
 
         $utils = new Utils();

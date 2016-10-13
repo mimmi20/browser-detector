@@ -54,7 +54,7 @@ class HuaweiG525U00 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'G525-U00';
-        $this->marketingName     = 'Ascend G525-U00';
+        $this->marketingName     = 'Ascend G525';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Huawei')->getName();
         $this->brand             = CompanyFactory::get('Huawei')->getBrandName();

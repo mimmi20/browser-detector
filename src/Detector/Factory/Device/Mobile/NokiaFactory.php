@@ -55,6 +55,10 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\NokiaXl2($useragent);
         }
 
+        if (preg_match('/nokia_xl/i', $useragent)) {
+            return new Nokia\NokiaXl($useragent);
+        }
+
         if (preg_match('/(lumia 650|id336)/i', $useragent)) {
             return new Nokia\NokiaLumia650($useragent);
         }
@@ -101,6 +105,10 @@ class NokiaFactory implements FactoryInterface
 
         if (preg_match('/rm\-994/i', $useragent)) {
             return new Nokia\NokiaLumia1320Rm994($useragent);
+        }
+
+        if (preg_match('/rm\-978/i', $useragent)) {
+            return new Nokia\NokiaLumia630Rm978($useragent);
         }
 
         if (preg_match('/rm\-976/i', $useragent)) {
@@ -211,7 +219,7 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\NokiaLumia920($useragent);
         }
 
-        if (preg_match('/lumia 925/i', $useragent)) {
+        if (preg_match('/(lumia|nokia) 925/i', $useragent)) {
             return new Nokia\NokiaLumia925($useragent);
         }
 
@@ -259,63 +267,63 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\NokiaN81($useragent);
         }
 
-        if (preg_match('/NokiaN82/i', $useragent)) {
+        if (preg_match('/nokian82/i', $useragent)) {
             return new Nokia\NokiaN82($useragent);
         }
 
-        if (preg_match('/NokiaN85/i', $useragent)) {
+        if (preg_match('/nokian85/i', $useragent)) {
             return new Nokia\NokiaN85($useragent);
         }
 
-        if (preg_match('/NokiaN86/i', $useragent)) {
+        if (preg_match('/nokian86/i', $useragent)) {
             return new Nokia\NokiaN86($useragent);
         }
 
-        if (preg_match('/NokiaN8\-00/i', $useragent)) {
+        if (preg_match('/nokian8\-00/i', $useragent)) {
             return new Nokia\NokiaN800($useragent);
         }
 
-        if (preg_match('/NokiaN8/i', $useragent)) {
+        if (preg_match('/nokian8/i', $useragent)) {
             return new Nokia\NokiaN8($useragent);
         }
 
-        if (preg_match('/NokiaN90/i', $useragent)) {
+        if (preg_match('/nokian90/i', $useragent)) {
             return new Nokia\NokiaN90($useragent);
         }
 
-        if (preg_match('/NokiaN91/i', $useragent)) {
+        if (preg_match('/nokian91/i', $useragent)) {
             return new Nokia\NokiaN91($useragent);
         }
 
-        if (preg_match('/NokiaN95/i', $useragent)) {
+        if (preg_match('/nokian95/i', $useragent)) {
             return new Nokia\NokiaN95($useragent);
         }
 
-        if (preg_match('/NokiaN96/i', $useragent)) {
+        if (preg_match('/nokian96/i', $useragent)) {
             return new Nokia\NokiaN96($useragent);
         }
 
-        if (preg_match('/NokiaN97/i', $useragent)) {
+        if (preg_match('/nokian97/i', $useragent)) {
             return new Nokia\NokiaN97($useragent);
         }
 
-        if (preg_match('/NokiaN900/i', $useragent)) {
+        if (preg_match('/nokian900/i', $useragent)) {
             return new Nokia\NokiaN900($useragent);
         }
 
-        if (preg_match('/NokiaN9/i', $useragent)) {
+        if (preg_match('/nokian9/i', $useragent)) {
             return new Nokia\NokiaN9($useragent);
         }
 
-        if (preg_match('/Nokia N70/i', $useragent)) {
+        if (preg_match('/nokia ?n70/i', $useragent)) {
             return new Nokia\NokiaN70($useragent);
         }
 
-        if (preg_match('/Nokia N78/i', $useragent)) {
+        if (preg_match('/nokia n78/i', $useragent)) {
             return new Nokia\NokiaN78($useragent);
         }
 
-        if (preg_match('/(Nokia N79|NokiaN79)/i', $useragent)) {
+        if (preg_match('/nokia ?n79/i', $useragent)) {
             return new Nokia\NokiaN79($useragent);
         }
 
