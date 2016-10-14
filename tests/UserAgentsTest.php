@@ -101,7 +101,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
             }
         }
 
-        echo ' finished (', number_format(microtime(true) - $start, 4), ' sec., ', count($data), ' tests)', PHP_EOL;
+        echo ' finished (', number_format(microtime(true) - $start, 4), ' sec., ', str_pad(count($data), 6, ' ', STR_PAD_LEFT), ' tests)', PHP_EOL;
 
         return $data;
     }
