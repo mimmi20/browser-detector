@@ -67,6 +67,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiAlel21($useragent);
         }
 
+        if (preg_match('/ale\-l02/i', $useragent)) {
+            return new Huawei\HuaweiAlel02($useragent);
+        }
+
         if (preg_match('/gra\-l09/i', $useragent)) {
             return new Huawei\HuaweiGraL09($useragent);
         }
@@ -81,6 +85,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/(p7 mini|p7mini)/i', $useragent)) {
             return new Huawei\HuaweiP7mini($useragent);
+        }
+
+        if (preg_match('/p2\-6011/i', $useragent)) {
+            return new Huawei\HuaweiP26011($useragent);
         }
 
         if (preg_match('/eva\-l09/i', $useragent)) {
@@ -105,6 +113,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/gem\-701l/i', $useragent)) {
             return new Huawei\HuaweiGem701l($useragent);
+        }
+
+        if (preg_match('/g630\-u20/i', $useragent)) {
+            return new Huawei\HuaweiG630u20($useragent);
         }
 
         if (preg_match('/g620s\-l01/i', $useragent)) {
@@ -165,6 +177,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/y625\-u51/i', $useragent)) {
             return new Huawei\HuaweiY625u51($useragent);
+        }
+
+        if (preg_match('/y600\-u20/i', $useragent)) {
+            return new Huawei\HuaweiY600u20($useragent);
         }
 
         if (preg_match('/y600\-u00/i', $useragent)) {
@@ -419,6 +435,14 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiM2a01l($useragent);
         }
 
+        if (preg_match('/m2\-a01w/i', $useragent)) {
+            return new Huawei\HuaweiM2a01w($useragent);
+        }
+
+        if (preg_match('/m2\-801w/i', $useragent)) {
+            return new Huawei\HuaweiM2801w($useragent);
+        }
+
         if (preg_match('/ath\-ul01/i', $useragent)) {
             return new Huawei\HuaweiAthul01($useragent);
         }
@@ -513,6 +537,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/hn3\-u01/i', $useragent)) {
             return new Huawei\HuaweiHn3u01($useragent);
+        }
+
+        if (preg_match('/hol\-u19/i', $useragent)) {
+            return new Huawei\HuaweiHolu19($useragent);
         }
 
         if (preg_match('/d2\-0082/i', $useragent)) {
