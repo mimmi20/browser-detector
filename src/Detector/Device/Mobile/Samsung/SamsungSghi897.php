@@ -54,14 +54,14 @@ class SamsungSghi897 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SGH-I897';
-        $this->marketingName     = 'SGH-I897';
+        $this->marketingName     = 'Captivate';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = true;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

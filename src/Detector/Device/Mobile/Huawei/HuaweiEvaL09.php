@@ -54,7 +54,7 @@ class HuaweiEvaL09 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'EVA-L09';
-        $this->marketingName     = 'EVA-L09';
+        $this->marketingName     = 'P9';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Huawei')->getName();
         $this->brand             = CompanyFactory::get('Huawei')->getBrandName();

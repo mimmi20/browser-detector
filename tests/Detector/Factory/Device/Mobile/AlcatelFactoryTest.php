@@ -581,6 +581,16 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; ALCATEL ONE TOUCH P321 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30',
+                'OT-P321',
+                'One Touch POP 8',
+                'Alcatel',
+                'Alcatel',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

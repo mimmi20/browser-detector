@@ -271,6 +271,10 @@ class AlcatelFactory implements FactoryInterface
             return new Alcatel\V860($useragent);
         }
 
+        if (preg_match('/P321/', $useragent)) {
+            return new Alcatel\AlcatelP321($useragent);
+        }
+
         if (preg_match('/P320X/', $useragent)) {
             return new Alcatel\AlcatelP320x($useragent);
         }

@@ -54,7 +54,7 @@ class SamsungSmG850F extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-G850F';
-        $this->marketingName     = 'Galaxy Alpha';
+        $this->marketingName     = 'Galaxy Alpha (Europe)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

@@ -383,6 +383,10 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\NokiaE700($useragent);
         }
 
+        if (preg_match('/NokiaE71\-1/i', $useragent)) {
+            return new Nokia\NokiaE711($useragent);
+        }
+
         if (preg_match('/NokiaE71/i', $useragent)) {
             return new Nokia\NokiaE71($useragent);
         }

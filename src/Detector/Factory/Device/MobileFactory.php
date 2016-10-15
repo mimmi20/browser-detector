@@ -153,7 +153,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\LgFactory::detect($useragent);
         }
 
-        if (preg_match('/nexus 7/i', $useragent)) {
+        if (preg_match('/nexus[ _]?7/i', $useragent)) {
             return Mobile\AsusFactory::detect($useragent);
         }
 

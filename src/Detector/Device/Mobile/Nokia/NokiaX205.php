@@ -58,7 +58,7 @@ class NokiaX205 extends Device implements DeviceHasSpecificPlatformInterface
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Nokia')->getName();
         $this->brand             = CompanyFactory::get('Nokia')->getBrandName();
-        $this->pointingMethod    = null;
+        $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 240;
         $this->resolutionHeight  = 320;
         $this->dualOrientation   = false;

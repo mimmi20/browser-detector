@@ -54,14 +54,14 @@ class SamsungSghT959 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SGH-T959';
-        $this->marketingName     = 'Vibrant';
+        $this->marketingName     = 'Galaxy S 4G (T-Mobile)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = true;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

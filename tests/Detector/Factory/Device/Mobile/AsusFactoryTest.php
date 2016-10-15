@@ -211,6 +211,16 @@ class AsusFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (MIDP-2.0; U; Adr 6.0.1; en-US; Nexus_7) U2/1.0.0 UCBrowser/10.7.5.785 U2/1.0.0 Mobile',
+                'Nexus 7',
+                'Nexus 7',
+                'Asus',
+                'Google',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

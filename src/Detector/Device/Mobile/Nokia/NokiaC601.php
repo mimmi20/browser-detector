@@ -61,7 +61,7 @@ class NokiaC601 extends Device implements DeviceHasSpecificPlatformInterface
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 360;
         $this->resolutionHeight  = 640;
-        $this->dualOrientation   = false;
+        $this->dualOrientation   = true;
         $this->colors            = 16777216;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
