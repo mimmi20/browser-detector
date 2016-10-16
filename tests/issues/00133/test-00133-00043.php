@@ -156,7 +156,7 @@ return [
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
-            'Device_Code_Name'        => 'SM-G850F',
+            'Device_Code_Name'        => 'SM-G850FQ',
             'Device_Brand_Name'       => 'Samsung',
             'RenderingEngine_Name'    => 'Blink',
             'RenderingEngine_Version' => 'unknown',

@@ -12,7 +12,7 @@ test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
     - vendor/bin/phpunit -c phpunit.library.xml --exclude-group useragenttest --coverage-text --colors=auto --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml
-#    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group useragenttest --colors=auto
+    #- vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group useragenttest --colors=auto
     #     1 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00112 --colors=auto --test-suffix=00112Test.php
     #     1 tests
@@ -253,6 +253,8 @@ test:
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00093 --colors=auto --test-suffix=00093Test.php
     #  4762 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00060 --colors=auto --test-suffix=00060Test.php
+    #  4912 tests
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00137 --colors=auto --test-suffix=00137Test.php
     #  5244 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00064 --colors=auto --test-suffix=00064Test.php
     #  5439 tests
@@ -261,7 +263,7 @@ test:
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00059 --colors=auto --test-suffix=00059Test.php
     #  6453 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00001 --colors=auto --test-suffix=00001Test.php
-    #  6684 tests
+    #  6697 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00000 --colors=auto --test-suffix=00000Test.php
     #  6943 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00058 --colors=auto --test-suffix=00058Test.php
