@@ -91,6 +91,10 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyC6902($useragent);
         }
 
+        if (preg_match('/l36h/i', $useragent)) {
+            return new SonyEricsson\SonyL36h($useragent);
+        }
+
         if (preg_match('/(xperia z1|c6903)/i', $useragent)) {
             return new SonyEricsson\SonyC6903ExperiaZ1($useragent);
         }
@@ -123,6 +127,10 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyC2105XperiaL($useragent);
         }
 
+        if (preg_match('/c2005/i', $useragent)) {
+            return new SonyEricsson\SonyC2005($useragent);
+        }
+
         if (preg_match('/c1905/i', $useragent)) {
             return new SonyEricsson\SonyC1905($useragent);
         }
@@ -141,6 +149,10 @@ class SonyFactory implements FactoryInterface
 
         if (preg_match('/d5803/i', $useragent)) {
             return new SonyEricsson\SonyD5803XperiaZ3Compact($useragent);
+        }
+
+        if (preg_match('/d6633/i', $useragent)) {
+            return new SonyEricsson\SonyD6633($useragent);
         }
 
         if (preg_match('/d6603/i', $useragent)) {
@@ -319,6 +331,10 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyEricssonST25i($useragent);
         }
 
+        if (preg_match('/ST25a/i', $useragent)) {
+            return new SonyEricsson\SonyEricssonST25a($useragent);
+        }
+
         if (preg_match('/ST18iv/i', $useragent)) {
             return new SonyEricsson\SonyEricssonST18iv($useragent);
         }
@@ -343,11 +359,15 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyEricssonSo03c($useragent);
         }
 
-        if (preg_match('/SO\-02D/i', $useragent)) {
+        if (preg_match('/so\-02e/i', $useragent)) {
+            return new SonyEricsson\SonyEricssonSo02e($useragent);
+        }
+
+        if (preg_match('/so\-02d/i', $useragent)) {
             return new SonyEricsson\SonyEricssonSo02d($useragent);
         }
 
-        if (preg_match('/SO\-02C/i', $useragent)) {
+        if (preg_match('/so\-02c/i', $useragent)) {
             return new SonyEricsson\SonyEricssonSo02c($useragent);
         }
 

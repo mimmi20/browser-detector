@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Huawei;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonST25iv extends Device implements DeviceHasSpecificPlatformInterface
+class HuaweiFdra01w extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class SonyEricssonST25iv extends Device implements DeviceHasSpecificPlatformInte
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'ST25iv';
-        $this->marketingName     = 'Xperia U';
+        $this->deviceName        = 'FDR-A01W';
+        $this->marketingName     = 'MediaPad T2 10.0 Pro LTE';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('SonyEricsson')->getName();
-        $this->brand             = CompanyFactory::get('SonyEricsson')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Huawei')->getName();
+        $this->brand             = CompanyFactory::get('Huawei')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
+        $this->resolutionWidth   = 320;
+        $this->resolutionHeight  = 240;
         $this->dualOrientation   = true;
-        $this->colors            = null;
+        $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
+        $this->hasQwertyKeyboard = false;
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

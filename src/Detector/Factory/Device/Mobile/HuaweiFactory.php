@@ -63,6 +63,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiTagl21($useragent);
         }
 
+        if (preg_match('/tag\-l01/i', $useragent)) {
+            return new Huawei\HuaweiTagl01($useragent);
+        }
+
         if (preg_match('/ale\-21/i', $useragent)) {
             return new Huawei\HuaweiAle21($useragent);
         }
@@ -139,6 +143,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiGem701l($useragent);
         }
 
+        if (preg_match('/g630\-u251/i', $useragent)) {
+            return new Huawei\HuaweiG630u251($useragent);
+        }
+
         if (preg_match('/g630\-u20/i', $useragent)) {
             return new Huawei\HuaweiG630u20($useragent);
         }
@@ -175,6 +183,14 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiRiol01($useragent);
         }
 
+        if (preg_match('/cun\-l21/i', $useragent)) {
+            return new Huawei\HuaweiCunl21($useragent);
+        }
+
+        if (preg_match('/cun\-l03/i', $useragent)) {
+            return new Huawei\HuaweiCunl03($useragent);
+        }
+
         if (preg_match('/crr\-l09/i', $useragent)) {
             return new Huawei\HuaweiCrrl09($useragent);
         }
@@ -193,6 +209,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/g740\-l00/i', $useragent)) {
             return new Huawei\HuaweiG740l00($useragent);
+        }
+
+        if (preg_match('/g730\-u27/i', $useragent)) {
+            return new Huawei\HuaweiG730u27($useragent);
         }
 
         if (preg_match('/g730\-u10/i', $useragent)) {
@@ -217,6 +237,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/y625\-u51/i', $useragent)) {
             return new Huawei\HuaweiY625u51($useragent);
+        }
+
+        if (preg_match('/y625\-u21/i', $useragent)) {
+            return new Huawei\HuaweiY625u21($useragent);
         }
 
         if (preg_match('/y600\-u20/i', $useragent)) {
@@ -253,6 +277,14 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/y360\-u61/i', $useragent)) {
             return new Huawei\HuaweiY360u61($useragent);
+        }
+
+        if (preg_match('/y360\-u31/i', $useragent)) {
+            return new Huawei\HuaweiY360u31($useragent);
+        }
+
+        if (preg_match('/y340\-u081/i', $useragent)) {
+            return new Huawei\HuaweiY340u081($useragent);
         }
 
         if (preg_match('/y336\-u02/i', $useragent)) {
@@ -303,8 +335,12 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiH30u10($useragent);
         }
 
-        if (preg_match('/kiw-l21/i', $useragent)) {
+        if (preg_match('/kiw\-l21/i', $useragent)) {
             return new Huawei\HuaweiKiwl21($useragent);
+        }
+
+        if (preg_match('/lyo\-l21/i', $useragent)) {
+            return new Huawei\HuaweiLyol21($useragent);
         }
 
         if (preg_match('/vodafone 858/i', $useragent)) {
@@ -491,6 +527,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiFdra01l($useragent);
         }
 
+        if (preg_match('/fdr\-a01w/i', $useragent)) {
+            return new Huawei\HuaweiFdra01w($useragent);
+        }
+
         if (preg_match('/m2\-a01w/i', $useragent)) {
             return new Huawei\HuaweiM2a01w($useragent);
         }
@@ -601,6 +641,18 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/hol\-u19/i', $useragent)) {
             return new Huawei\HuaweiHolu19($useragent);
+        }
+
+        if (preg_match('/vie\-l09/i', $useragent)) {
+            return new Huawei\HuaweiVieL09($useragent);
+        }
+
+        if (preg_match('/vie\-al10/i', $useragent)) {
+            return new Huawei\HuaweiVieAl10($useragent);
+        }
+
+        if (preg_match('/frd\-l09/i', $useragent)) {
+            return new Huawei\HuaweiFrdL09($useragent);
         }
 
         if (preg_match('/d2\-0082/i', $useragent)) {

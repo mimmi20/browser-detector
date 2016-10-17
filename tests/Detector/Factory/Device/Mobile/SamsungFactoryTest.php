@@ -5591,6 +5591,16 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-A510S Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
+                'SM-A510S',
+                'Galaxy A5 LTE (2016, Korea)',
+                'Samsung',
+                'Samsung',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

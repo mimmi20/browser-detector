@@ -151,6 +151,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmA5100($useragent);
         }
 
+        if (preg_match('/sm\-a510s/i', $useragent)) {
+            return new Samsung\SamsungSmA510s($useragent);
+        }
+
         if (preg_match('/sm\-a500fu/i', $useragent)) {
             return new Samsung\SamsungSmA500fu($useragent);
         }

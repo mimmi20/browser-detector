@@ -84,6 +84,12 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/iphone/i', $useragent)
+            && preg_match('/linux/i', $useragent)
+        ) {
+            return Mobile\XiangheFactory::detect($useragent);
+        }
+
+        if (preg_match('/iphone/i', $useragent)
             && preg_match('/adr/i', $useragent)
             && preg_match('/ucweb/i', $useragent)
         ) {
@@ -726,6 +732,14 @@ class MobileFactory implements FactoryInterface
             return Mobile\ImpressionFactory::detect($useragent);
         }
 
+        if (preg_match('/S4503Q/', $useragent)) {
+            return Mobile\DnsFactory::detect($useragent);
+        }
+
+        if (preg_match('/dns/i', $useragent)) {
+            return Mobile\DnsFactory::detect($useragent);
+        }
+
         if (preg_match('/(C|D|E|F)\d{4}/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         }
@@ -796,10 +810,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/trekstor/i', $useragent)) {
             return Mobile\TrekStorFactory::detect($useragent);
-        }
-
-        if (preg_match('/S4503Q/', $useragent)) {
-            return Mobile\DnsFactory::detect($useragent);
         }
 
         if (preg_match('/3Q/', $useragent)) {
@@ -1180,10 +1190,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/pulid/i', $useragent)) {
             return Mobile\PulidFactory::detect($useragent);
-        }
-
-        if (preg_match('/dns/i', $useragent)) {
-            return Mobile\DnsFactory::detect($useragent);
         }
 
         if (preg_match('/dexp/i', $useragent)) {

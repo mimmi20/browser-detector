@@ -13,11 +13,11 @@ test:
     - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
     - vendor/bin/phpunit -c phpunit.library.xml --exclude-group useragenttest --coverage-text --colors=auto --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml
     #- vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group useragenttest --colors=auto
-    #     1 tests
+    #     1 test
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00112 --colors=auto --test-suffix=00112Test.php
-    #     1 tests
+    #     1 test
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00113 --colors=auto --test-suffix=00113Test.php
-    #     1 tests
+    #     1 test
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00114 --colors=auto --test-suffix=00114Test.php
     #     2 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00115 --colors=auto --test-suffix=00115Test.php
@@ -115,6 +115,8 @@ test:
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00006 --colors=auto --test-suffix=00006Test.php
     #   756 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00126 --colors=auto --test-suffix=00126Test.php
+    #   839 tests
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00137 --colors=auto --test-suffix=00137Test.php
     #   870 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00130 --colors=auto --test-suffix=00130Test.php
     #   892 tests
@@ -125,7 +127,7 @@ test:
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00007 --colors=auto --test-suffix=00007Test.php
     #   969 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00008 --colors=auto --test-suffix=00008Test.php
-    #  1004 tests
+    #  1003 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00134 --colors=auto --test-suffix=00134Test.php
     #  1027 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00118 --colors=auto --test-suffix=00118Test.php
@@ -253,21 +255,19 @@ test:
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00093 --colors=auto --test-suffix=00093Test.php
     #  4762 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00060 --colors=auto --test-suffix=00060Test.php
-    #  4912 tests
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00137 --colors=auto --test-suffix=00137Test.php
     #  5244 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00064 --colors=auto --test-suffix=00064Test.php
     #  5439 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00002 --colors=auto --test-suffix=00002Test.php
     #  5659 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00059 --colors=auto --test-suffix=00059Test.php
-    #  6453 tests
+    #  6451 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00001 --colors=auto --test-suffix=00001Test.php
     #  6697 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00000 --colors=auto --test-suffix=00000Test.php
     #  6943 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00058 --colors=auto --test-suffix=00058Test.php
-    # 10517 tests
+    # 10515 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00091 --colors=auto --test-suffix=00091Test.php
     # 11761 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00101 --colors=auto --test-suffix=00101Test.php

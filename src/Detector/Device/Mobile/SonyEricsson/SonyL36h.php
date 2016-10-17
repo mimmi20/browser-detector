@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonST25iv extends Device implements DeviceHasSpecificPlatformInterface
+class SonyL36h extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,16 +53,16 @@ class SonyEricssonST25iv extends Device implements DeviceHasSpecificPlatformInte
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'ST25iv';
-        $this->marketingName     = 'Xperia U';
+        $this->deviceName        = 'L36h';
+        $this->marketingName     = 'Xperia Z';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('SonyEricsson')->getName();
-        $this->brand             = CompanyFactory::get('SonyEricsson')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Sony')->getName();
+        $this->brand             = CompanyFactory::get('Sony')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
+        $this->resolutionWidth   = 720;
+        $this->resolutionHeight  = 1280;
         $this->dualOrientation   = true;
-        $this->colors            = null;
+        $this->colors            = 16777216;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
