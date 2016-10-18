@@ -54,7 +54,7 @@ class NokiaLumia640xlRm1067 extends Device implements DeviceHasSpecificPlatformI
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'RM-1067';
-        $this->marketingName     = 'Lumia 640 XL';
+        $this->marketingName     = 'Lumia 640 XL Dual SIM LTE';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Microsoft')->getName();
         $this->brand             = CompanyFactory::get('Microsoft')->getBrandName();

@@ -59,8 +59,20 @@ class TriQFactory implements FactoryInterface
             return new TriQ\TriQMt0812e($useragent);
         }
 
+        if (preg_match('/MT0739D/', $useragent)) {
+            return new TriQ\TriQMt0739d($useragent);
+        }
+
         if (preg_match('/AC0732C/', $useragent)) {
             return new TriQ\TriQAc0732c($useragent);
+        }
+
+        if (preg_match('/RC9724C/', $useragent)) {
+            return new TriQ\TriQRc9724c($useragent);
+        }
+
+        if (preg_match('/LC0720C/', $useragent)) {
+            return new TriQ\TriQLc0720c($useragent);
         }
 
         return new TriQ\TriQ($useragent);

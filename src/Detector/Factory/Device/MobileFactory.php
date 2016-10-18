@@ -724,7 +724,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\ZekiFactory::detect($useragent);
         }
 
-        if (preg_match('/AC0732C/', $useragent)) {
+        if (preg_match('/(AC0732C|RC9724C|MT0739D|QS0716D|LC0720C)/', $useragent)) {
             return Mobile\TriQFactory::detect($useragent);
         }
 
@@ -1650,10 +1650,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/X8\+/', $useragent)) {
             return Mobile\TrirayFactory::detect($useragent);
-        }
-
-        if (preg_match('/QS0716D/', $useragent)) {
-            return Mobile\TriQFactory::detect($useragent);
         }
 
         if (preg_match('/(Surfer 7\.34|M1_Plus|D7\.2 3G)/', $useragent)) {

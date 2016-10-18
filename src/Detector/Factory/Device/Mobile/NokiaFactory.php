@@ -79,8 +79,48 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\NokiaLumia535Rm1089($useragent);
         }
 
+        if (preg_match('/rm\-1072/i', $useragent)) {
+            return new Nokia\NokiaLumia640lteRm1072($useragent);
+        }
+
+        if (preg_match('/rm\-1073/i', $useragent)) {
+            return new Nokia\NokiaLumia640lteRm1073($useragent);
+        }
+
+        if (preg_match('/rm\-1074/i', $useragent)) {
+            return new Nokia\NokiaLumia640lteRm1074($useragent);
+        }
+
+        if (preg_match('/rm\-1076/i', $useragent)) {
+            return new Nokia\NokiaLumia640lteRm1076($useragent);
+        }
+
+        if (preg_match('/rm\-1077/i', $useragent)) {
+            return new Nokia\NokiaLumia640lteRm1077($useragent);
+        }
+
         if (preg_match('/(rm\-1075|lumia 640 dual sim)/i', $useragent)) {
             return new Nokia\NokiaLumia640lteRm1075($useragent);
+        }
+
+        if (preg_match('/rm\-1062/i', $useragent)) {
+            return new Nokia\NokiaLumia640xlRm1062($useragent);
+        }
+
+        if (preg_match('/rm\-1063/i', $useragent)) {
+            return new Nokia\NokiaLumia640xlRm1063($useragent);
+        }
+
+        if (preg_match('/rm\-1064/i', $useragent)) {
+            return new Nokia\NokiaLumia640xlRm1064($useragent);
+        }
+
+        if (preg_match('/rm\-1065/i', $useragent)) {
+            return new Nokia\NokiaLumia640xlRm1065($useragent);
+        }
+
+        if (preg_match('/rm\-1066/i', $useragent)) {
+            return new Nokia\NokiaLumia640xlRm1066($useragent);
         }
 
         if (preg_match('/rm\-1067/i', $useragent)) {
