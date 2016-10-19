@@ -175,10 +175,6 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyD6603ExperiaZ3($useragent);
         }
 
-        if (preg_match('/d6000/i', $useragent)) {
-            return new SonyEricsson\SonyD6000($useragent);
-        }
-
         if (preg_match('/l50u/i', $useragent)) {
             return new SonyEricsson\SonyL50uExperiaZ2lte($useragent);
         }

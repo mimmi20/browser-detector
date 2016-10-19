@@ -54,7 +54,7 @@ class SonyTabletSgp621 extends Device implements DeviceHasSpecificPlatformInterf
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SGP621';
-        $this->marketingName     = 'SGP621';
+        $this->marketingName     = 'Xperia Z3 Compact LTE';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Sony')->getName();
         $this->brand             = CompanyFactory::get('Sony')->getBrandName();
@@ -66,7 +66,7 @@ class SonyTabletSgp621 extends Device implements DeviceHasSpecificPlatformInterf
         $this->smsSupport        = false;
         $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

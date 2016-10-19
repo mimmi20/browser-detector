@@ -54,7 +54,7 @@ class SonyEricssonLT18 extends Device implements DeviceHasSpecificPlatformInterf
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'LT18';
-        $this->marketingName     = 'LT18';
+        $this->marketingName     = 'Xperia Arc S';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('SonyEricsson')->getName();
         $this->brand             = CompanyFactory::get('SonyEricsson')->getBrandName();

@@ -54,7 +54,7 @@ class SonyC5502 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'C5502';
-        $this->marketingName     = 'C5502';
+        $this->marketingName     = 'Xperia ZR';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Sony')->getName();
         $this->brand             = CompanyFactory::get('Sony')->getBrandName();

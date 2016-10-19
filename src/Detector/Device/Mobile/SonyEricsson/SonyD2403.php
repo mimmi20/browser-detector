@@ -54,7 +54,7 @@ class SonyD2403 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'D2403';
-        $this->marketingName     = 'D2403';
+        $this->marketingName     = 'Xperia M2 Aqua';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Sony')->getName();
         $this->brand             = CompanyFactory::get('Sony')->getBrandName();

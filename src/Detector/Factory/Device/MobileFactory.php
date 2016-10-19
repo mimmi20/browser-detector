@@ -744,6 +744,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\DnsFactory::detect($useragent);
         }
 
+        if (preg_match('/D6000/', $useragent)) {
+            return Mobile\InnosFactory::detect($useragent);
+        }
+
         if (preg_match('/(C|D|E|F)\d{4}/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         }

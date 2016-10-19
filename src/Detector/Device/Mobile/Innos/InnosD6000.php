@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Innos;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyD6000 extends Device implements DeviceHasSpecificPlatformInterface
+class InnosD6000 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -56,8 +56,8 @@ class SonyD6000 extends Device implements DeviceHasSpecificPlatformInterface
         $this->deviceName        = 'D6000';
         $this->marketingName     = 'D6000';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Sony')->getName();
-        $this->brand             = CompanyFactory::get('Sony')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Innos')->getName();
+        $this->brand             = CompanyFactory::get('Innos')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 1080;
         $this->resolutionHeight  = 1920;

@@ -54,7 +54,7 @@ class SonyEricssonCK15i extends Device implements DeviceHasSpecificPlatformInter
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'CK15i';
-        $this->marketingName     = 'CK15i';
+        $this->marketingName     = 'Txt Pro';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('SonyEricsson')->getName();
         $this->brand             = CompanyFactory::get('SonyEricsson')->getBrandName();

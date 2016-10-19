@@ -54,7 +54,7 @@ class SonyE2105 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'E2105';
-        $this->marketingName     = 'E2105';
+        $this->marketingName     = 'Xperia E4';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Sony')->getName();
         $this->brand             = CompanyFactory::get('Sony')->getBrandName();

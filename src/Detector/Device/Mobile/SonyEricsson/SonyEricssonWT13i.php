@@ -54,7 +54,7 @@ class SonyEricssonWT13i extends Device implements DeviceHasSpecificPlatformInter
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'WT13i';
-        $this->marketingName     = 'WT13i';
+        $this->marketingName     = 'Mix Walkman';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('SonyEricsson')->getName();
         $this->brand             = CompanyFactory::get('SonyEricsson')->getBrandName();

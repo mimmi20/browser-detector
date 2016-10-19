@@ -74,7 +74,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'SonyEricssonCK15i/R3AE017 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1',
                 'CK15i',
-                'CK15i',
+                'Txt Pro',
                 'SonyEricsson',
                 'SonyEricsson',
                 'Mobile Phone',
@@ -114,7 +114,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; LT18i) U2/1.0.0 UCBrowser/10.0.0.556 Mobile',
                 'LT18i',
-                'Xperia Arc',
+                'Xperia Arc S',
                 'SonyEricsson',
                 'SonyEricsson',
                 'Mobile Phone',
@@ -124,7 +124,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'SonyEricssonWT13i/R3AF010 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1',
                 'WT13i',
-                'WT13i',
+                'Mix Walkman',
                 'SonyEricsson',
                 'SonyEricsson',
                 'Mobile Phone',
@@ -454,7 +454,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Linux; Android 5.1.1; D2403 Build/18.6.A.0.182; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36',
                 'D2403',
-                'D2403',
+                'Xperia M2 Aqua',
                 'Sony',
                 'Sony',
                 'Mobile Phone',
@@ -574,7 +574,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Linux; Android 5.1.1; D2303 Build/18.6.A.0.175) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
                 'D2303',
-                'D2303',
+                'Xperia M2',
                 'Sony',
                 'Sony',
                 'Mobile Phone',
@@ -664,7 +664,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; SonyEricssonLT18i Build/4.1.B.0.587) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
                 'LT18i',
-                'Xperia Arc',
+                'Xperia Arc S',
                 'SonyEricsson',
                 'SonyEricsson',
                 'Mobile Phone',
@@ -674,7 +674,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; SonyEricssonLT18iv Build/4.1.B.0.587) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
                 'LT18iv',
-                'Xperia Arc',
+                'Xperia Arc S',
                 'SonyEricsson',
                 'SonyEricsson',
                 'Mobile Phone',
@@ -684,7 +684,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; SonyEricssonLT18a Build/4.1.B.0.587) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
                 'LT18a',
-                'LT18a',
+                'Xperia Arc S',
                 'SonyEricsson',
                 'SonyEricsson',
                 'Mobile Phone',
@@ -694,7 +694,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; SonyEricssonLT18 Build/4.1.B.0.587) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
                 'LT18',
-                'LT18',
+                'Xperia Arc S',
                 'SonyEricsson',
                 'SonyEricsson',
                 'Mobile Phone',
@@ -824,17 +824,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Linux; Android 4.4.4; E2105 Build/24.0.A.5.14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
                 'E2105',
-                'E2105',
-                'Sony',
-                'Sony',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 5.1.1; D6000 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
-                'D6000',
-                'D6000',
+                'Xperia E4',
                 'Sony',
                 'Sony',
                 'Mobile Phone',
@@ -844,10 +834,10 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Linux; Android 5.1.1; SGP621 Build/23.4.A.1.264) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
                 'SGP621',
-                'SGP621',
+                'Xperia Z3 Compact LTE',
                 'Sony',
                 'Sony',
-                'Tablet',
+                'FonePad',
                 true,
                 'touchscreen',
             ],
@@ -884,7 +874,7 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Linux; Android 4.2.2; C5502 Build/10.3.1.A.2.67) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36',
                 'C5502',
-                'C5502',
+                'Xperia ZR',
                 'Sony',
                 'Sony',
                 'Mobile Phone',
