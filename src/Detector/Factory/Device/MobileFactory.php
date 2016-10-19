@@ -748,6 +748,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\InnosFactory::detect($useragent);
         }
 
+        if (preg_match('/(S|V)T\d{5}/', $useragent)) {
+            return Mobile\TrekStorFactory::detect($useragent);
+        }
+
         if (preg_match('/(C|D|E|F)\d{4}/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         }
