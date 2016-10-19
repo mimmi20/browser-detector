@@ -79,8 +79,16 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyE2303($useragent);
         }
 
+        if (preg_match('/e2105/i', $useragent)) {
+            return new SonyEricsson\SonyE2105($useragent);
+        }
+
         if (preg_match('/e2003/i', $useragent)) {
             return new SonyEricsson\SonyE2003($useragent);
+        }
+
+        if (preg_match('/c5502/i', $useragent)) {
+            return new SonyEricsson\SonyC5502($useragent);
         }
 
         if (preg_match('/c5303/i', $useragent)) {
@@ -167,6 +175,10 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyD6603ExperiaZ3($useragent);
         }
 
+        if (preg_match('/d6000/i', $useragent)) {
+            return new SonyEricsson\SonyD6000($useragent);
+        }
+
         if (preg_match('/l50u/i', $useragent)) {
             return new SonyEricsson\SonyL50uExperiaZ2lte($useragent);
         }
@@ -229,6 +241,10 @@ class SonyFactory implements FactoryInterface
 
         if (preg_match('/SGP771/i', $useragent)) {
             return new SonyEricsson\SonyTabletSgp771($useragent);
+        }
+
+        if (preg_match('/SGP621/i', $useragent)) {
+            return new SonyEricsson\SonyTabletSgp621($useragent);
         }
 
         if (preg_match('/SGP611/i', $useragent)) {
@@ -653,6 +669,10 @@ class SonyFactory implements FactoryInterface
 
         if (preg_match('/k790i/i', $useragent)) {
             return new SonyEricsson\SonyEricssonK790i($useragent);
+        }
+
+        if (preg_match('/k770i/i', $useragent)) {
+            return new SonyEricsson\SonyEricssonK770i($useragent);
         }
 
         if (preg_match('/J300/i', $useragent)) {

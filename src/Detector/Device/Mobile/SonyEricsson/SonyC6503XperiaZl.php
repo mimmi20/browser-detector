@@ -56,8 +56,8 @@ class SonyC6503XperiaZl extends Device implements DeviceHasSpecificPlatformInter
         $this->deviceName        = 'C6503';
         $this->marketingName     = 'Xperia ZL LTE';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('SonyEricsson')->getName();
-        $this->brand             = CompanyFactory::get('SonyEricsson')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Sony')->getName();
+        $this->brand             = CompanyFactory::get('Sony')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 1080;
         $this->resolutionHeight  = 1920;

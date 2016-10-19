@@ -286,7 +286,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',
             'Platform_Brand_Name'     => 'Microsoft',
-            'Device_Name'             => 'Lumia 640 XL',
+            'Device_Name'             => 'Lumia 640 XL Dual SIM LTE',
             'Device_Maker'            => 'Microsoft Corporation',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',

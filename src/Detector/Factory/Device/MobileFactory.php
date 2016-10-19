@@ -203,6 +203,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\LgFactory::detect($useragent);
         }
 
+        if (preg_match('/CCE/', $useragent)) {
+            return Mobile\CceFactory::detect($useragent);
+        }
+
         if (preg_match('/htc/i', $useragent)
             && !preg_match('/WOHTC/', $useragent)
         ) {
@@ -1428,7 +1432,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\MotorolaFactory::detect($useragent);
         }
 
-        if (preg_match('/MT6572\_TD/', $useragent)) {
+        if (preg_match('/MT\d{4}\_TD/', $useragent)) {
             return Mobile\CubotFactory::detect($useragent);
         }
 
