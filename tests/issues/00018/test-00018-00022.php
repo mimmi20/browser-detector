@@ -1582,7 +1582,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'D2403',
+            'Device_Name'             => 'Xperia M2 Aqua',
             'Device_Maker'            => 'Sony',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',

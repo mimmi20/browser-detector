@@ -1291,6 +1291,36 @@ class HuaweiFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; MediaPad X1 7.0 Build/HuaweiMediaPad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36',
+                'MediaPad X1 7.0',
+                'MediaPad X1 7.0',
+                'Huawei',
+                'Huawei',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 6.0; HUAWEI NMO-L31 Build/HUAWEINMO-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36',
+                'NMO-L31',
+                'NMO-L31',
+                'Huawei',
+                'Huawei',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI P8max Build/HUAWEIDAV-701L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36',
+                'P8max',
+                'P8max',
+                'Huawei',
+                'Huawei',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

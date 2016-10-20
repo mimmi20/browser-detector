@@ -61,7 +61,7 @@ class SamsungGts5380 extends Device implements DeviceHasSpecificPlatformInterfac
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 320;
         $this->resolutionHeight  = 480;
-        $this->dualOrientation   = false;
+        $this->dualOrientation   = true;
         $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

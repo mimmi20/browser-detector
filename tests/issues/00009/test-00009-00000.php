@@ -2689,7 +2689,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'E2105',
+            'Device_Name'             => 'Xperia E4',
             'Device_Maker'            => 'Sony',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',

@@ -547,6 +547,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiAthul01($useragent);
         }
 
+        if (preg_match('/mediapad x1 7\.0/i', $useragent)) {
+            return new Huawei\HuaweiMediaPadX170($useragent);
+        }
+
         if (preg_match('/mediapad t1 8\.0/i', $useragent)) {
             return new Huawei\HuaweiMediaPadT180($useragent);
         }
@@ -655,8 +659,16 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiFrdL09($useragent);
         }
 
+        if (preg_match('/nmo\-l31/i', $useragent)) {
+            return new Huawei\HuaweiNmol31($useragent);
+        }
+
         if (preg_match('/d2\-0082/i', $useragent)) {
             return new Huawei\HuaweiD20082($useragent);
+        }
+
+        if (preg_match('/p8max/i', $useragent)) {
+            return new Huawei\HuaweiP8max($useragent);
         }
 
         if (preg_match('/4afrika/i', $useragent)) {

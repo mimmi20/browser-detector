@@ -664,7 +664,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Xperia Arc',
+            'Device_Name'             => 'Xperia Arc S',
             'Device_Maker'            => 'SonyEricsson',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',

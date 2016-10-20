@@ -239,6 +239,10 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyTabletSgp771($useragent);
         }
 
+        if (preg_match('/SGP712/i', $useragent)) {
+            return new SonyEricsson\SonyTabletSgp712($useragent);
+        }
+
         if (preg_match('/SGP621/i', $useragent)) {
             return new SonyEricsson\SonyTabletSgp621($useragent);
         }

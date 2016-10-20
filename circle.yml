@@ -111,6 +111,8 @@ test:
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00122 --colors=auto --test-suffix=00122Test.php
     #   605 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00121 --colors=auto --test-suffix=00121Test.php
+    #   635 tests
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00138 --colors=auto --test-suffix=00138Test.php
     #   694 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00006 --colors=auto --test-suffix=00006Test.php
     #   756 tests
@@ -253,8 +255,6 @@ test:
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00062 --colors=auto --test-suffix=00062Test.php
     #  4332 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00093 --colors=auto --test-suffix=00093Test.php
-    #  4576 tests
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00138 --colors=auto --test-suffix=00138Test.php
     #  4762 tests
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00060 --colors=auto --test-suffix=00060Test.php
     #  5244 tests

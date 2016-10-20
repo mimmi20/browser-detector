@@ -911,6 +911,26 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 6.0; SGP712 Build/32.1.A.1.163) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
+                'SGP712',
+                'SGP712',
+                'Sony',
+                'Sony',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (PlayStation Vita 3.60) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2',
+                'PlayStation Vita',
+                'PlayStation Vita',
+                'Sony',
+                'Sony',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

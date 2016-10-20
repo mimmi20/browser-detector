@@ -61,7 +61,7 @@ class SamsungSghF480 extends Device implements DeviceHasSpecificPlatformInterfac
         $this->pointingMethod    = null;
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = false;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
