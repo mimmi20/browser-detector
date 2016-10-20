@@ -39,6 +39,14 @@ use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
+use UaNormalizer\Generic\BabelFish;
+use UaNormalizer\Generic\IISLogging;
+use UaNormalizer\Generic\LocaleRemover;
+use UaNormalizer\Generic\NovarraGoogleTranslator;
+use UaNormalizer\Generic\SerialNumbers;
+use UaNormalizer\Generic\TransferEncoding;
+use UaNormalizer\Generic\YesWAP;
+use UaNormalizer\UserAgentNormalizer;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
@@ -139,7 +147,19 @@ class BrowserDetector
      */
     private function buildResult(GenericRequest $request)
     {
-        $deviceUa = $request->getDeviceUserAgent();
+        $normalizer = new UserAgentNormalizer(
+            [
+            new BabelFish(),
+                new IISLogging(),
+                new LocaleRemover(),
+                new NovarraGoogleTranslator(),
+                new SerialNumbers(),
+                new TransferEncoding(),
+                new YesWAP(),
+            ]
+        );
+
+        $deviceUa = $normalizer->normalize($request->getDeviceUserAgent());
         $device   = DeviceFactory::detect($deviceUa);
 
         if ($device instanceof DeviceHasSpecificPlatformInterface) {
@@ -148,7 +168,7 @@ class BrowserDetector
             $platform = null;
         }
 
-        $browserUa = $request->getBrowserUserAgent();
+        $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
 
         if (null === $platform) {
             // detect the os which runs on the device

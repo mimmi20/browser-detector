@@ -26,26 +26,23 @@
     "issues": "https://github.com/mimmi20/BrowserDetector/issues",
     "source": "https://github.com/mimmi20/BrowserDetector"
   },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/mimmi20/uasparser.git"
-    }
-  ],
   "require": {
     "php": ">=5.6.0",
-    "mimmi20/wurflcache": "^1.3",
-    "mimmi20/wurfl-generic-request": "^1.7",
+    "mimmi20/wurfl-generic-request": "dev-update-1.8",
+    "mimmi20/wurfl-constants": "dev-update-1.8",
     "psr/log": "^1.0",
+    "psr/cache": "^1.0",
     "mimmi20/ua-result": "^2.0@dev",
     "mimmi20/ua-helper-utils": "^1.0.4",
     "mimmi20/ua-browser-type": "^1.0.3",
     "mimmi20/ua-device-type": "^1.0.5",
-    "mimmi20/browser-detector-version": "^1.0"
+    "mimmi20/browser-detector-version": "^1.0",
+    "mimmi20/ua-normalizer": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.4",
     "monolog/monolog": "^1.20",
+    "cache/cache": "dev-master",
     "mikey179/vfsStream": "^1.6",
     "squizlabs/php_codesniffer": "^2.5",
     "friendsofphp/php-cs-fixer": "^1.11",
