@@ -43,7 +43,7 @@ use UaResult\Device\Device;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UnknownDevice extends Device implements DeviceHasSpecificPlatformInterface
+class UnknownDevice extends Device
 {
     /**
      * the class constructor
@@ -67,15 +67,5 @@ class UnknownDevice extends Device implements DeviceHasSpecificPlatformInterface
         $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = false;
         $this->type              = new UaDeviceType\Unknown();
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \UaResult\Os\OsInterface|null
-     */
-    public function detectOs()
-    {
-        return null;
     }
 }

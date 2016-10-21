@@ -18,10 +18,10 @@
 namespace BrowserDetectorTest;
 
 use BrowserDetector\BrowserDetector;
+use Cache\Adapter\Void\VoidCachePool;
 use Monolog\Handler\NullHandler;
 use Monolog\Logger;
 use UaDataMapper\InputMapper;
-use WurflCache\Adapter\NullStorage;
 
 /**
  * Class UserAgentsTest
@@ -67,7 +67,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $logger = new Logger('browser-detector-tests');
         $logger->pushHandler(new NullHandler());
 
-        $cache        = new NullStorage();
+        $cache        = new VoidCachePool();
         $this->object = new BrowserDetector($cache, $logger);
     }
 

@@ -33,8 +33,6 @@ namespace BrowserDetector\Detector\Factory\Platform;
 
 use BrowserDetector\Detector\Factory\FactoryInterface;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
 use UaHelper\Utils;
 
 /**

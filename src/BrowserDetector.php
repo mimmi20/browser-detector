@@ -31,10 +31,14 @@
 
 namespace BrowserDetector;
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Device\UnknownDevice;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Factory\BrowserFactory;
 use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use Psr\Log\LoggerInterface;
@@ -52,7 +56,7 @@ use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 use Wurfl\Request\GenericRequest;
 use Wurfl\Request\GenericRequestFactory;
-use WurflCache\Adapter\AdapterInterface;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * Browser Detection class
@@ -66,9 +70,9 @@ use WurflCache\Adapter\AdapterInterface;
 class BrowserDetector
 {
     /**
-     * a \WurflCache\Adapter\AdapterInterface object
+     * a cache object
      *
-     * @var \WurflCache\Adapter\AdapterInterface
+     * @var \Psr\Cache\CacheItemPoolInterface
      */
     private $cache = null;
 
@@ -82,10 +86,10 @@ class BrowserDetector
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \WurflCache\Adapter\AdapterInterface $cache
-     * @param \Psr\Log\LoggerInterface             $logger
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @param \Psr\Log\LoggerInterface          $logger (optional) Logger
      */
-    public function __construct(AdapterInterface $cache, LoggerInterface $logger = null)
+    public function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger = null)
     {
         $this->cache = $cache;
 
@@ -125,16 +129,19 @@ class BrowserDetector
             );
         }
 
-        $cacheId = hash('sha512', $request->getDeviceUserAgent() . '||||' . $request->getBrowserUserAgent());
-        $result  = null;
-        $success = false;
+        $cacheId   = hash('sha512', $request->getDeviceUserAgent() . '||||' . $request->getBrowserUserAgent());
+        $result    = null;
+        $cacheItem = $this->cache->getItem($cacheId);
 
-        $result = $this->cache->getItem($cacheId, $success);
+        if ($cacheItem->isHit()) {
+            $result = $cacheItem->get();
+        }
 
-        if (!$success || !($result instanceof ResultInterface)) {
+        if (!($result instanceof ResultInterface)) {
             $result = $this->buildResult($request);
 
-            $this->cache->setItem($cacheId, $result);
+            $cacheItem->set($result);
+            $this->cache->save($cacheItem);
         }
 
         return $result;
