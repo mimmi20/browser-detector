@@ -38,7 +38,8 @@
     "mimmi20/ua-device-type": "^1.0.5",
     "mimmi20/browser-detector-version": "^1.0",
     "mimmi20/ua-normalizer": "dev-master",
-    "danielstjules/stringy": "^2.3"
+    "danielstjules/stringy": "^2.3",
+    "symfony/yaml": "^2.0 || ^3.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.4",

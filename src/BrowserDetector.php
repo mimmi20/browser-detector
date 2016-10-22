@@ -38,6 +38,7 @@ use BrowserDetector\Detector\Factory\BrowserFactory;
 use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
+use BrowserDetector\Detector\Factory\RegexFactory;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
@@ -156,7 +157,7 @@ class BrowserDetector
     {
         $normalizer = new UserAgentNormalizer(
             [
-            new BabelFish(),
+                new BabelFish(),
                 new IISLogging(),
                 new LocaleRemover(),
                 new NovarraGoogleTranslator(),
@@ -167,33 +168,49 @@ class BrowserDetector
         );
 
         $deviceUa = $normalizer->normalize($request->getDeviceUserAgent());
-        $device   = DeviceFactory::detect($deviceUa);
 
-        if ($device instanceof DeviceHasSpecificPlatformInterface) {
-            $platform = $device->detectOs();
+        $rexgexFactory = new RegexFactory();
+        if (null !== $rexgexFactory->detect($deviceUa)) {
+            // @todo: extract device data
+
+            $device = new UnknownDevice($deviceUa);
         } else {
-            $platform = null;
+            $device = DeviceFactory::detect($deviceUa);
         }
 
         $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
 
-        if (null === $platform) {
-            // detect the os which runs on the device
-            $platform = PlatformFactory::detect($browserUa);
-        }
+        if (null !== $rexgexFactory->detect($browserUa)) {
+            // @todo: extract browser/engine/os data
 
-        // detect the browser which is used
-        $browser = BrowserFactory::detect($browserUa, $platform);
-
-        // detect the engine which is used in the browser
-        if ($browser instanceof BrowserHasSpecificEngineInterface) {
-            $engine = $browser->getEngine();
+            $platform = new UnknownOs($browserUa);
+            $browser  = new UnknownBrowser($browserUa);
+            $engine   = new UnknownEngine($browserUa);
         } else {
-            $engine = null;
-        }
+            if ($device instanceof DeviceHasSpecificPlatformInterface) {
+                $platform = $device->detectOs();
+            } else {
+                $platform = null;
+            }
 
-        if (null === $engine) {
-            $engine = EngineFactory::detect($browserUa, $platform);
+            if (null === $platform) {
+                // detect the os which runs on the device
+                $platform = PlatformFactory::detect($browserUa);
+            }
+
+            // detect the browser which is used
+            $browser = BrowserFactory::detect($browserUa, $platform);
+
+            // detect the engine which is used in the browser
+            if ($browser instanceof BrowserHasSpecificEngineInterface) {
+                $engine = $browser->getEngine();
+            } else {
+                $engine = null;
+            }
+
+            if (null === $engine) {
+                $engine = EngineFactory::detect($browserUa, $platform);
+            }
         }
 
         return new Result(
