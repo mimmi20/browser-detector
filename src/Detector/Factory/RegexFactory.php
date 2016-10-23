@@ -49,9 +49,31 @@ class RegexFactory implements FactoryInterface
      *
      * @param string $useragent
      *
-     * @return array|null
+     * @return array|null|false
      */
     public static function detect($useragent)
+    {
+        $regexes = self::getRegexes();
+
+        if (!is_array($regexes)) {
+            return null;
+        }
+
+        foreach ($regexes as $regex) {
+            $matches = [];
+
+            if (preg_match($regex, $useragent, $matches)) {
+                return $matches;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * @return array|null
+     */
+    public static function getRegexes()
     {
         static $regexes = null;
 
@@ -62,19 +84,9 @@ class RegexFactory implements FactoryInterface
         }
 
         if (!isset($regexes['regexes']) || !is_array($regexes['regexes'])) {
-            throw new \UnexpectedValueException('regexes is missing');
             return null;
         }
 
-        foreach ($regexes['regexes'] as $regex) {
-            $matches = [];
-//var_dump($regex);
-            if (preg_match($regex, $useragent, $matches)) {
-                return $matches;
-            }
-        }//exit;
-
-        throw new \UnexpectedValueException('no match');
-        return null;
+        return $regexes['regexes'];
     }
 }

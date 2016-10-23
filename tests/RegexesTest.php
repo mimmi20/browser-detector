@@ -18,10 +18,19 @@
 namespace BrowserDetectorTest;
 
 use BrowserDetector\BrowserDetector;
+use BrowserDetector\Detector\Factory\RegexFactory;
 use Cache\Adapter\Void\VoidCachePool;
 use Monolog\Handler\NullHandler;
 use Monolog\Logger;
 use UaDataMapper\InputMapper;
+use UaNormalizer\Generic\BabelFish;
+use UaNormalizer\Generic\IISLogging;
+use UaNormalizer\Generic\LocaleRemover;
+use UaNormalizer\Generic\NovarraGoogleTranslator;
+use UaNormalizer\Generic\SerialNumbers;
+use UaNormalizer\Generic\TransferEncoding;
+use UaNormalizer\Generic\YesWAP;
+use UaNormalizer\UserAgentNormalizer;
 
 /**
  * Class UserAgentsTest
@@ -31,48 +40,15 @@ use UaDataMapper\InputMapper;
  * @author     Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @group      useragenttest
  */
-class RegexesTest extends \PHPUnit_Framework_TestCase
+abstract class RegexesTest extends \PHPUnit_Framework_TestCase
 {
-    /**
-     * @var \BrowserDetector\BrowserDetector
-     */
-    private $object = null;
-
-    /**
-     * @var \UaDataMapper\InputMapper
-     */
-    private static $mapper = null;
-
     /**
      * @var string
      */
-    private $sourceDirectory = 'tests/issues/00000-browscap/';
+    protected $sourceDirectory = 'tests/issues/00000-browscap/';
 
-    private static $ok  = 0;
-    private static $nok = 0;
-
-    /**
-     * This method is called before the first test of this test class is run.
-     *
-     * @since Method available since Release 3.4.0
-     */
-    public static function setUpBeforeClass()
-    {
-        static::$mapper = new InputMapper();
-    }
-
-    /**
-     * Sets up the fixture, for example, opens a network connection.
-     * This method is called before a test is executed.
-     */
-    protected function setUp()
-    {
-        $logger = new Logger('browser-detector-regex-tests');
-        $logger->pushHandler(new NullHandler());
-
-        $cache        = new VoidCachePool();
-        $this->object = new BrowserDetector($cache, $logger);
-    }
+    protected static $ok  = 0;
+    protected static $nok = 0;
 
     /**
      * @return array[]
@@ -80,6 +56,8 @@ class RegexesTest extends \PHPUnit_Framework_TestCase
     public function userAgentDataProvider()
     {
         $start = microtime(true);
+
+        echo 'starting provider ', static::class, ' ...';
 
         $data                  = [];
         $browscapIssueIterator = new \RecursiveDirectoryIterator($this->sourceDirectory);
@@ -89,8 +67,6 @@ class RegexesTest extends \PHPUnit_Framework_TestCase
             if (!$file->isFile() || $file->getExtension() !== 'php') {
                 continue;
             }
-
-            echo 'reading file ', $file->getRealPath(), ' ...', PHP_EOL;
 
             $tests = require_once $file->getPathname();
 
@@ -104,32 +80,56 @@ class RegexesTest extends \PHPUnit_Framework_TestCase
             }
         }
 
-        echo 'finished (', number_format(microtime(true) - $start, 4), ' sec., ', str_pad(count($data), 6, ' ', STR_PAD_LEFT), ' test', (count($data) <> 1 ? 's' : ''), ')', PHP_EOL;
+        echo ' finished (', number_format(microtime(true) - $start, 4), ' sec., ', str_pad(count($data), 6, ' ', STR_PAD_LEFT), ' test', (count($data) <> 1 ? 's' : ''), ')', PHP_EOL;
 
         return $data;
+    }
+
+    /**
+     * @group  regex
+     */
+    public function testRegexes()
+    {
+        $regexes = RegexFactory::getRegexes();
+
+        self::assertInternalType('array', $regexes, 'no regexes available');
+
+        foreach ($regexes as $regex) {
+            self::assertInternalType('string', $regex);
+
+            echo 'testing regex "', $regex, '"', PHP_EOL;
+
+            self::assertInternalType('int', preg_match($regex, 'test-ua'));
+        }
     }
 
     /**
      * @dataProvider userAgentDataProvider
      *
      * @param string $userAgent
-     * @param array  $expectedProperties
-     *
-     * @throws \Exception
-     * @group  integration
-     * @group  useragenttest
-     * @group  00000
      */
     public function testUserAgents($userAgent)
     {
-        try {
-            $this->object->getBrowser($userAgent);
-            self::$ok++;
-        } catch (\UnexpectedValueException $e) {
-            self::$nok++;
+        $normalizer = new UserAgentNormalizer(
+            [
+                new BabelFish(),
+                new IISLogging(),
+                new LocaleRemover(),
+                new NovarraGoogleTranslator(),
+                new SerialNumbers(),
+                new TransferEncoding(),
+                new YesWAP(),
+            ]
+        );
 
-            $this->fail($e->getMessage());
-        }
+        $normalizedUa = $normalizer->normalize($userAgent);
+
+        $result = RegexFactory::detect($normalizedUa);
+
+        self::assertNotNull($result, 'regexes are missing');
+        self::assertNotFalse($result, 'no match for UA ' . $normalizedUa);
+        self::assertInternalType('array', $result, 'wrong result type for UA ' . $normalizedUa);
+        self::$ok++;
     }
 
     /**
@@ -139,6 +139,6 @@ class RegexesTest extends \PHPUnit_Framework_TestCase
      */
     public static function tearDownAfterClass()
     {
-        echo PHP_EOL, 'Result: ', self::$ok, ' detected, ', self::$nok, ' not detected', PHP_EOL;
+        echo PHP_EOL, 'Result: ', self::$ok, ' detected', PHP_EOL;
     }
 }

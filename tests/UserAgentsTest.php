@@ -113,9 +113,6 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
      * @param array  $expectedProperties
      *
      * @throws \Exception
-     * @group  integration
-     * @group  useragenttest
-     * @group  00000
      */
     public function testUserAgents($userAgent, $expectedProperties)
     {
