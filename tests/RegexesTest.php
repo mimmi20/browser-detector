@@ -24,8 +24,11 @@ use Monolog\Handler\NullHandler;
 use Monolog\Logger;
 use UaDataMapper\InputMapper;
 use UaNormalizer\Generic\BabelFish;
+use UaNormalizer\Generic\EncryptionRemover;
 use UaNormalizer\Generic\IISLogging;
+use UaNormalizer\Generic\KhtmlGecko;
 use UaNormalizer\Generic\LocaleRemover;
+use UaNormalizer\Generic\Mozilla;
 use UaNormalizer\Generic\NovarraGoogleTranslator;
 use UaNormalizer\Generic\SerialNumbers;
 use UaNormalizer\Generic\TransferEncoding;
@@ -115,6 +118,9 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
                 new BabelFish(),
                 new IISLogging(),
                 new LocaleRemover(),
+                new EncryptionRemover(),
+                new Mozilla(),
+                new KhtmlGecko(),
                 new NovarraGoogleTranslator(),
                 new SerialNumbers(),
                 new TransferEncoding(),

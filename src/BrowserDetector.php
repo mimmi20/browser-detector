@@ -45,8 +45,11 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use UaNormalizer\Generic\BabelFish;
+use UaNormalizer\Generic\EncryptionRemover;
 use UaNormalizer\Generic\IISLogging;
+use UaNormalizer\Generic\KhtmlGecko;
 use UaNormalizer\Generic\LocaleRemover;
+use UaNormalizer\Generic\Mozilla;
 use UaNormalizer\Generic\NovarraGoogleTranslator;
 use UaNormalizer\Generic\SerialNumbers;
 use UaNormalizer\Generic\TransferEncoding;
@@ -160,6 +163,9 @@ class BrowserDetector
                 new BabelFish(),
                 new IISLogging(),
                 new LocaleRemover(),
+                new EncryptionRemover(),
+                new Mozilla(),
+                new KhtmlGecko(),
                 new NovarraGoogleTranslator(),
                 new SerialNumbers(),
                 new TransferEncoding(),

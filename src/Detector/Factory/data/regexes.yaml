@@ -45,7 +45,7 @@ regexes:
     - '/^Moz(il|zi)la\/[\d.]+ ?\(((?P<osname>Android) ?(?P<osversion>[\d.]+)?; )?(Tablet|Mobile); rv:([\d.]+)\) ?(?P<enginename>Gecko)\/(?P<engineversion>[\d.]+) (?P<browsername>Firefox|GranParadiso)\/(?P<browserversion>[\d.]+)(?P<unknown>.*)?$/i'
     # Dalvik
     - '/^(?P<browsername>Dalvik)\/(?P<browserversion>[\d.]+) ?\(Linux;( ?(I|U);)? ?(?P<osname>Android) ?(?P<osversion>[\d.]+);?( ?xx\-xx;?)? ?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)\)(?P<unknown>.*)?$/i'
-    # Opera (old)
+    # Opera Mini (old)
     - '/^Opera\/[\d.]+ ?\(((?P<osname>Android) ?(?P<osversion>[\d.]+)?; )? ?(?P<browsername>Opera Mini)\/(?P<browserversion>[\d.]+)([^;]+)?;?( ?(I|U);)?( ?xx\-xx;?)?\) (?P<enginename>Presto)\/(?P<engineversion>[\d.]+) Version\/([\d.]+)(?P<unknown>.*)?$/i'
     # UCBrowser
     - '/^UCWEB\/[\d.]+ ?\(Linux; U; Opera Mini\/([^;]+);?( ?xx\-xx;?)? ?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)\) (?P<enginename>U2)\/(?P<engineversion>[\d.]+) (?P<browsername>UCBrowser)\/(?P<browserversion>[\d.]+) Mobile(?P<unknown>.*)?$/i'
@@ -293,14 +293,16 @@ regexes:
     # Vivaldi
     - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?)\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+]+) ?\(K?HTML, ?like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) (Mobile|TV)? ?(Safari)\/([\d.]+) (?P<browsername>Vivaldi)\/(?P<browserversion>[\d.]+)(.*)/'
     # Chrome
-    - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?)\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+]+) ?\(K?HTML, ?like Gecko\) *(?P<browsername>Chrome)\/(?P<browserversion>[\d.]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?)\)( ?(I|U);)? ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+]+) ?\(K?HTML, ?like Gecko\) *(?P<browsername>Chrome)\/(?P<browserversion>[\d.]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Arora (Safari based)
+    - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?)\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+]+) ?\(K?HTML, ?like Gecko\) *(?P<browsername>Arora)\/(?P<browserversion>[\d.]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
     # Iceweasel
     - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?);?( ?xx\-xx;?)? rv:(?P<engineversion>[\d.]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (Firefox)\/([\d.]+) (?P<browsername>Iceweasel)\/(?P<browserversion>[\d.]+)(?P<unknown>.*)?$/i'
     # PaleMoon
     - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?);?( ?xx\-xx;?)? rv:([\d.]+)\) ?(Gecko)(\/[\d.]+)? (?P<enginename>Goanna)\/(?P<engineversion>[\d.]+) (Firefox)\/([\d.]+) (?P<browsername>PaleMoon)\/(?P<browserversion>[\d.]+)(?P<unknown>.*)?$/i'
     - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?);?( ?xx\-xx;?)? rv:(?P<engineversion>[\d.]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>PaleMoon)\/(?P<browserversion>[\d.]+)(?P<unknown>.*)?$/i'
     # Kazehakase
-    - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?);?( ?xx\-xx;?)? rv:(?P<engineversion>[\d.]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Kazehakase)\/(?P<browserversion>[\d.]+)(?P<unknown>.*)?$/i'
+    - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?);?( ?(I|U);)?( ?xx\-xx;?)? ?rv:(?P<engineversion>[\d.]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Kazehakase)\/(?P<browserversion>[\d.]+)(?P<unknown>.*)?$/i'
     # IceCat
     - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?);?( ?xx\-xx;?)? rv:(?P<engineversion>[\d.]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>IceCat)\/(?P<browserversion>[\d.]+)(?P<unknown>.*)?$/i'
     # Iceape
@@ -309,6 +311,14 @@ regexes:
     - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?);?( ?xx\-xx;?)? rv:(?P<engineversion>[\d.]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Firefox|GranParadiso)\/(?P<browserversion>[\d.]+)(?P<unknown>.*)?$/i'
     # Thunderbird
     - '/^Moz(il|zi)la\/[\d.]+ ?\(X11;?( ?(I|U);)? (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?);?( ?xx\-xx;?)? rv:(?P<engineversion>[\d.]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Thunderbird)\/(?P<browserversion>[\d.]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Tizen
+    # Samsung Browser (Safari based)
+    - '/^Moz(il|zi)la\/[\d.]+ ?\(Linux; (?P<osname>Tizen) (?P<osversion>[\d._]+)(;(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+))?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+]+) ?\(K?HTML, ?like Gecko\) *(?P<browsername>SamsungBrowser)\/(?P<browserversion>[\d.]+) (Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    - '/^Moz(il|zi)la\/[\d.]+ ?\(SMART\-TV; Linux; (?P<osname>Tizen) (?P<osversion>[\d._]+)(;(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+))?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+]+) ?\(K?HTML, ?like Gecko\) *(?P<browsername>SamsungBrowser)\/(?P<browserversion>[\d.]+) (Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    - '/^Moz(il|zi)la\/[\d.]+ ?\((SMART\-TV; )?Linux; (?P<osname>Tizen) (?P<osversion>[\d._]+)(;(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+))?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+]+) ?\(K?HTML, ?like Gecko\) *(?P<version>Version)\/(?P<browserversion>[\d.]+) (Mobile|TV)? ?(?P<browsername>Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Opera Mini (old)
+    - '/^Opera\/[\d.]+ ?\(((?P<osname>Tizen) ?(?P<osversion>[\d.]+)?; )? ?(?P<browsername>Opera Mini)\/(?P<browserversion>[\d.]+)([^;]+)?;?( ?(I|U);)?( ?xx\-xx;?)?\) (?P<enginename>Presto)\/(?P<engineversion>[\d.]+) Version\/([\d.]+)(?P<unknown>.*)?$/i'
     ####################################################################################################################
     # FreeBSD
     # Kazehakase
@@ -321,7 +331,15 @@ regexes:
     # Playstation
     - '/^Moz(il|zi)la\/[\d.]+ ?\((?P<devicecode>PLAYSTATION (3|4)); [\d.]+\)(?P<unknown>.*)?$/i'
     ####################################################################################################################
-    # Crawlers
+    # Google Bot
+    - '/^Moz(il|zi)la\/[\d.]+ ?\(compatible; (?P<browsername>Googlebot(\-Mobile)?)\/(?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    - '/^DoCoMo\/[\d.]+ (?P<devicecode>([^\(]+))\(([^\)]+)\) ?\(compatible; (?P<browsername>Googlebot(\-Mobile)?)\/(?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    - '/^(?P<devicecode>([^\/]+))\/[\d.]+ Profile\/MIDP\-[\d.]+ Configuration\/CLDC\-[\d.]+ UP\.Browser\/[\d.]+ \(GUI\) MMP\/[\d.]+ ?\(compatible; (?P<browsername>Googlebot(\-Mobile)?)\/(?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Mail.ru Bot
+    - '/^Moz(il|zi)la\/[\d.]+ ?\(compatible; (?P<osname>Linux ?(i686|i686 on x86_64|x86_64|sparc64)?)?;?(?P<browsername>Mail\.RU_Bot)(\/Fast)?\/(?P<browserversion>[\d.+]+)?(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # general Crawlers
     # Sistrix
     - '/^Moz(il|zi)la\/[\d.]+ ?\(compatible; (?P<browsername>SISTRIX Crawler)([^\)]+)\)(?P<unknown>.*)?$/i'
     # Ezooms
@@ -341,4 +359,28 @@ regexes:
     - '/^(?P<browsername>ContextAd Bot) (?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
     # WordPress
     - '/^(?P<browsername>WordPress)\/(?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    # integrity
+    - '/^(?P<browsername>integrity)\/(?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    # SecurityResearch.bot
+    - '/^Moz(il|zi)la\/[\d.]+ ?\(compatible; (?P<browsername>SecurityResearch\.bot)(?P<unknown>.*)?$/i'
+    # contactbigdatafr
+    - '/^(.*)(?P<browsername>contactbigdatafr)(?P<unknown>.*)?$/i'
+    # yacybot
+    - '/^(?P<browsername>yacybot)(?P<unknown>.*)?$/i'
+    # Online Virus Scanner
+    - '/^(?P<browsername>Online Virus Scanner)(?P<unknown>.*)?$/i'
+    # UniversalFeedParser
+    - '/^(?P<browsername>UniversalFeedParser)\/(?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    # Java
+    - '/^(?P<browsername>Java)\/(?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    # masscan
+    - '/^(?P<browsername>masscan)\/(?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    # ZmEu
+    - '/^(?P<browsername>ZmEu)(?P<unknown>.*)?$/i'
+    # woobot
+    - '/^(?P<browsername>woobot)\/(?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    # Sogou web spider
+    - '/^(?P<browsername>Sogou web spider)\/(?P<browserversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    # proximic
+    - '/^Moz(il|zi)la\/[\d.]+ ?\(compatible; (?P<browsername>proximic)(?P<unknown>.*)?$/i'
 
