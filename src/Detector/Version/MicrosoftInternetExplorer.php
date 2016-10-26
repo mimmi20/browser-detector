@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Version;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,7 +42,7 @@ use BrowserDetector\Version\VersionFactory;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftInternetExplorer
+class MicrosoftInternetExplorer implements VersionFactoryInterface
 {
     private static $patterns = [
         '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',

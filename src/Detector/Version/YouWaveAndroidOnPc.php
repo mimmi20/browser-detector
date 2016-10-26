@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Version;
 
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use UaHelper\Utils;
 
 /**
@@ -41,7 +42,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class YouWaveAndroidOnPc
+class YouWaveAndroidOnPc implements VersionFactoryInterface
 {
     /**
      * returns the version of the operating system/platform

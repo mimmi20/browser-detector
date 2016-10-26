@@ -17,7 +17,7 @@ $factoryContent = file_get_contents($factoryFile);
 
 $classMatches = [];
 
-preg_match_all('/return new Browser\\\\([^\(]+)\(\$useragent, \[\]\)\;/', $factoryContent, $classMatches);
+preg_match_all('/return new Browser\\\\([^\(]+)\(\$useragent\)\;/', $factoryContent, $classMatches);
 $sourceDirectory = 'src\\Detector\\Browser\\';
 
 $processedClases = [];
@@ -36,8 +36,13 @@ foreach ($classMatches[1] as $index => $classBasename) {
     }
 
     $processedClases[] = $classBasename;
-}
 
+    $className = '\\BrowserDetector\\Detector\\Browser\\' . $classBasename;
+    $class = new $className('');
+    $factoryContent = str_replace($classMatches[0][$index], '$browserCode = \'' . strtolower($class->getName()) . '\';', $factoryContent);
+}
+file_put_contents($factoryFile, $factoryContent);
+exit;
 $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
 
 foreach (new \RecursiveIteratorIterator($iterator) as $file) {

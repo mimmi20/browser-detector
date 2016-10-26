@@ -23,16 +23,7 @@ use Cache\Adapter\Void\VoidCachePool;
 use Monolog\Handler\NullHandler;
 use Monolog\Logger;
 use UaDataMapper\InputMapper;
-use UaNormalizer\Generic\BabelFish;
-use UaNormalizer\Generic\EncryptionRemover;
-use UaNormalizer\Generic\IISLogging;
-use UaNormalizer\Generic\KhtmlGecko;
-use UaNormalizer\Generic\LocaleRemover;
-use UaNormalizer\Generic\Mozilla;
-use UaNormalizer\Generic\NovarraGoogleTranslator;
-use UaNormalizer\Generic\SerialNumbers;
-use UaNormalizer\Generic\TransferEncoding;
-use UaNormalizer\Generic\YesWAP;
+use UaNormalizer\Generic;
 use UaNormalizer\UserAgentNormalizer;
 
 /**
@@ -115,16 +106,16 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
     {
         $normalizer = new UserAgentNormalizer(
             [
-                new BabelFish(),
-                new IISLogging(),
-                new LocaleRemover(),
-                new EncryptionRemover(),
-                new Mozilla(),
-                new KhtmlGecko(),
-                new NovarraGoogleTranslator(),
-                new SerialNumbers(),
-                new TransferEncoding(),
-                new YesWAP(),
+                new Generic\BabelFish(),
+                new Generic\IISLogging(),
+                new Generic\LocaleRemover(),
+                new Generic\EncryptionRemover(),
+                new Generic\Mozilla(),
+                new Generic\KhtmlGecko(),
+                new Generic\NovarraGoogleTranslator(),
+                new Generic\SerialNumbers(),
+                new Generic\TransferEncoding(),
+                new Generic\YesWAP(),
             ]
         );
 

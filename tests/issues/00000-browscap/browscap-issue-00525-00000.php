@@ -2153,7 +2153,7 @@ return [
             'Device_Maker'            => 'Dell',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => null,
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'Venue 7 HSPA+',
             'Device_Brand_Name'       => 'Dell',
             'RenderingEngine_Name'    => 'Blink',

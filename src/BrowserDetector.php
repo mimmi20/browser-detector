@@ -34,26 +34,14 @@ namespace BrowserDetector;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\Factory\BrowserFactory;
-use BrowserDetector\Detector\Factory\DeviceFactory;
-use BrowserDetector\Detector\Factory\EngineFactory;
-use BrowserDetector\Detector\Factory\PlatformFactory;
-use BrowserDetector\Detector\Factory\RegexFactory;
+use BrowserDetector\Detector\Factory;
+use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
-use UaNormalizer\Generic\BabelFish;
-use UaNormalizer\Generic\EncryptionRemover;
-use UaNormalizer\Generic\IISLogging;
-use UaNormalizer\Generic\KhtmlGecko;
-use UaNormalizer\Generic\LocaleRemover;
-use UaNormalizer\Generic\Mozilla;
-use UaNormalizer\Generic\NovarraGoogleTranslator;
-use UaNormalizer\Generic\SerialNumbers;
-use UaNormalizer\Generic\TransferEncoding;
-use UaNormalizer\Generic\YesWAP;
+use UaNormalizer\Generic;
 use UaNormalizer\UserAgentNormalizer;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
@@ -160,32 +148,35 @@ class BrowserDetector
     {
         $normalizer = new UserAgentNormalizer(
             [
-                new BabelFish(),
-                new IISLogging(),
-                new LocaleRemover(),
-                new EncryptionRemover(),
-                new Mozilla(),
-                new KhtmlGecko(),
-                new NovarraGoogleTranslator(),
-                new SerialNumbers(),
-                new TransferEncoding(),
-                new YesWAP(),
+                new Generic\BabelFish(),
+                new Generic\IISLogging(),
+                new Generic\LocaleRemover(),
+                new Generic\EncryptionRemover(),
+                new Generic\Mozilla(),
+                new Generic\KhtmlGecko(),
+                new Generic\NovarraGoogleTranslator(),
+                new Generic\SerialNumbers(),
+                new Generic\TransferEncoding(),
+                new Generic\YesWAP(),
             ]
         );
 
         $deviceUa = $normalizer->normalize($request->getDeviceUserAgent());
 
-        $rexgexFactory = new RegexFactory();
-        if (null !== $rexgexFactory->detect($deviceUa)) {
+        /*
+        if (null !== Factory\RegexFactory::detect($deviceUa)) {
             // @todo: extract device data
 
             $device = new UnknownDevice($deviceUa);
         } else {
-            $device = DeviceFactory::detect($deviceUa);
+            $device = Factory\DeviceFactory::detect($deviceUa);
         }
+        /**/
+        $device = Factory\DeviceFactory::detect($deviceUa);
 
         $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
 
+        /*
         if (null !== $rexgexFactory->detect($browserUa)) {
             // @todo: extract browser/engine/os data
 
@@ -201,11 +192,11 @@ class BrowserDetector
 
             if (null === $platform) {
                 // detect the os which runs on the device
-                $platform = PlatformFactory::detect($browserUa);
+                $platform = Factory\PlatformFactory::detect($browserUa);
             }
 
             // detect the browser which is used
-            $browser = BrowserFactory::detect($browserUa, $platform);
+            $browser = Factory\BrowserFactory::detect($browserUa, $platform);
 
             // detect the engine which is used in the browser
             if ($browser instanceof BrowserHasSpecificEngineInterface) {
@@ -215,8 +206,35 @@ class BrowserDetector
             }
 
             if (null === $engine) {
-                $engine = EngineFactory::detect($browserUa, $platform);
+                $engine = Factory\EngineFactory::detect($browserUa, $platform);
             }
+        }
+        /**/
+        if ($device instanceof DeviceHasSpecificPlatformInterface) {
+            $platform = $device->detectOs();
+        } else {
+            $platform = null;
+        }
+
+        if (null === $platform) {
+            // detect the os which runs on the device
+            $platform = Factory\PlatformFactory::detect($browserUa);
+        }
+
+        // detect the browser which is used
+        $browser = Factory\BrowserFactory::detect($browserUa, $platform);
+
+        // detect the engine which is used in the browser
+        if ($browser instanceof BrowserHasSpecificEngineInterface) {
+            $engine = $browser->getEngine();
+        } else {
+            $engine = null;
+        }
+
+        if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
+            $engine = new Engine\Webkit($browserUa);
+        } elseif (null === $engine) {
+            $engine = Factory\EngineFactory::detect($browserUa, $platform);
         }
 
         return new Result(

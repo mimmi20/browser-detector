@@ -34,7 +34,8 @@ namespace BrowserDetector\Detector\Factory;
 use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Version\Version;
-use UaHelper\Utils;
+use BrowserDetector\Version\VersionFactory;
+use Stringy\Stringy;
 use UaResult\Os\OsInterface;
 
 /**
@@ -58,41 +59,25 @@ class EngineFactory implements FactoryInterface
      */
     public static function detect($useragent, OsInterface $os = null)
     {
-        $utils = new Utils();
-        $utils->setUserAgent($useragent);
+        $s = new Stringy($useragent);
+        $engineKey = 'unknown';
 
-        if (null !== $os && in_array($os->getName(), ['iOS'])) {
-            return new Engine\Webkit($useragent);
-        }
-
-        if ($utils->checkIfContains('Edge')) {
-            return new Engine\Edge($useragent);
-        }
-
-        if ($utils->checkIfContains(' U2/')) {
-            return new Engine\U2($useragent);
-        }
-
-        if ($utils->checkIfContains(' U3/')) {
-            return new Engine\U3($useragent);
-        }
-
-        if ($utils->checkIfContains(' T5/')) {
-            return new Engine\T5($useragent);
-        }
-
-        if (preg_match('/(msie|trident|outlook|kkman)/i', $useragent)
+        if ($s->contains('Edge')) {
+            $engineKey = 'edge';
+        } elseif ($s->contains(' U2/')) {
+            $engineKey = 'u2';
+        } elseif ($s->contains(' U3/')) {
+            $engineKey = 'u3';
+        } elseif ($s->contains(' T5/')) {
+            $engineKey = 't5';
+        } elseif (preg_match('/(msie|trident|outlook|kkman)/i', $useragent)
             && false === stripos($useragent, 'opera')
             && false === stripos($useragent, 'tasman')
         ) {
-            return new Engine\Trident($useragent);
-        }
-
-        if (preg_match('/(goanna)/i', $useragent)) {
-            return new Engine\Goanna($useragent);
-        }
-
-        if (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
+            $engineKey = 'trident';
+        } elseif (preg_match('/(goanna)/i', $useragent)) {
+            $engineKey = 'goanna';
+        } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
             $chrome  = new Chrome($useragent);
             $version = $chrome->getVersion();
 
@@ -103,44 +88,66 @@ class EngineFactory implements FactoryInterface
             }
 
             if ($chromeVersion >= 28) {
-                return new Engine\Blink($useragent);
+                $engineKey = 'blink';
+            } else {
+                $engineKey = 'webkit';
             }
-
-            return new Engine\Webkit($useragent);
-        }
-
-        if (preg_match('/(KHTML|Konqueror)/', $useragent)) {
-            return new Engine\Khtml($useragent);
-        }
-
-        if (preg_match('/(tasman)/i', $useragent)
-            || $utils->checkIfContainsAll(['MSIE', 'Mac_PowerPC'])
+        } elseif (preg_match('/(KHTML|Konqueror)/', $useragent)) {
+            $engineKey = 'khtml';
+        } elseif (preg_match('/(tasman)/i', $useragent)
+            || $s->containsAll(['MSIE', 'Mac_PowerPC'])
         ) {
-            return new Engine\Tasman($useragent);
-        }
-
-        if (preg_match('/(Presto|Opera)/', $useragent)) {
-            return new Engine\Presto($useragent);
-        }
-
-        if (preg_match('/(Gecko|Firefox)/', $useragent)) {
-            return new Engine\Gecko($useragent);
-        }
-
-        if (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $useragent)
-            && !$utils->checkIfContains(['Kindle'])
+            $engineKey = 'tasman';
+        } elseif (preg_match('/(Presto|Opera)/', $useragent)) {
+            $engineKey = 'presto';
+        } elseif (preg_match('/(Gecko|Firefox)/', $useragent)) {
+            $engineKey = 'gecko';
+        } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $useragent)
+            && !$s->containsAny(['Kindle'])
         ) {
-            return new Engine\NetFront($useragent);
+            $engineKey = 'netfront';
+        } elseif ($s->contains('BlackBerry')) {
+            $engineKey = 'blackberry';
+        } elseif (preg_match('/(Teleca|Obigo)/', $useragent)) {
+            $engineKey = 'teleca';
         }
 
-        if ($utils->checkIfContains('BlackBerry')) {
-            return new Engine\BlackBerry($useragent);
+        return self::get($engineKey, $useragent);
+    }
+
+    /**
+     * @param string $engineKey
+     * @param string $useragent
+     *
+     * @return \UaResult\Engine\Engine
+     */
+    public static function get($engineKey, $useragent)
+    {
+        static $engines = null;
+
+        if (null === $engines) {
+            $engines = json_decode(file_get_contents(__DIR__ . '/data/engines.json'));
         }
 
-        if (preg_match('/(Teleca|Obigo)/', $useragent)) {
-            return new Engine\Teleca($useragent);
+        if (!isset($engines->$engineKey)) {
+            return new \UaResult\Engine\Engine('unknown', 'unknown', 'unknown', new Version(0));
         }
 
-        return new Engine\UnknownEngine($useragent);
+        $engineVersionClass = $engines->$engineKey->version->class;
+
+        if (!is_string($engineVersionClass)) {
+            $version = new Version(0);
+        } elseif ('VersionFactory' === $engineVersionClass) {
+            $version = VersionFactory::detectVersion($useragent, $engines->$engineKey->version->search);
+        } else {
+            $version = $engineVersionClass::detectVersion($useragent);
+        }
+
+        return new \UaResult\Engine\Engine(
+            $engines->$engineKey->name,
+            $engines->$engineKey->manufacturer,
+            $engines->$engineKey->brand,
+            $version
+        );
     }
 }

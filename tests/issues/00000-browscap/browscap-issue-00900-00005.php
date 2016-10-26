@@ -2259,7 +2259,7 @@ return [
             'Platform_Brand_Name'     => 'Microsoft',
             'Device_Name'             => 'general Mobile Device',
             'Device_Maker'            => 'unknown',
-            'Device_Type'             => null,
+            'Device_Type'             => 'unknown',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'general Mobile Device',
