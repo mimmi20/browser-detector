@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Fairphone;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class FairphoneFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general fairphone device';
+
         if (preg_match('/FP1U/', $useragent)) {
-            return new Fairphone\FairphoneFp1u($useragent);
+            $deviceCode = 'fp1u';
         }
 
         if (preg_match('/FP1/', $useragent)) {
-            return new Fairphone\FairphoneFp1($useragent);
+            $deviceCode = 'fp1';
         }
 
-        return new Fairphone\Fairphone($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

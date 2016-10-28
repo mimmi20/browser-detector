@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Yxtel;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class YxtelFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/G009/', $useragent)) {
-            return new Yxtel\YxtelG009($useragent);
+            $deviceCode = 'g009';
         }
 
-        return new Yxtel\Yxtel($useragent);
+        $deviceCode = 'general yxtel device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Comag;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class ComagFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general comag device';
+
         if (preg_match('/WTDR1018/i', $useragent)) {
-            return new Comag\ComagWtdr1018($useragent);
+            $deviceCode = 'wtdr1018';
         }
 
-        return new Comag\Comag($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Anka;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class AnkaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general anka device';
+
         if (preg_match('/SX5/', $useragent)) {
-            return new Anka\AnkaSx5($useragent);
+            $deviceCode = 'sx5';
         }
 
-        return new Anka\Anka($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

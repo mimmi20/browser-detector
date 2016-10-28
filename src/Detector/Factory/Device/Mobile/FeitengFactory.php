@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Feiteng;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class FeitengFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general feiteng device';
+
         if (preg_match('/GT\-H9500/i', $useragent)) {
-            return new Feiteng\FeitengGth9500($useragent);
+            $deviceCode = 'gt-h9500';
         }
 
         if (preg_match('/H7100/i', $useragent)) {
-            return new Feiteng\FeitengH7100($useragent);
+            $deviceCode = 'h7100';
         }
 
-        return new Feiteng\Feiteng($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

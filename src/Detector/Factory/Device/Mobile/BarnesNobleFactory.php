@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\BarnesNoble;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class BarnesNobleFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general barnes & noble device';
+
         if (preg_match('/BN NookHD\+/i', $useragent)) {
-            return new BarnesNoble\BnNookhd($useragent);
+            $deviceCode = 'nook hd+';
         }
 
         if (preg_match('/BNRV200/i', $useragent)) {
-            return new BarnesNoble\BnRv200($useragent);
+            $deviceCode = 'bnrv200';
         }
 
-        return new BarnesNoble\BarnesNoble($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

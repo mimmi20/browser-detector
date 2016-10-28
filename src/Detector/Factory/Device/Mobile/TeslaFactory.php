@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Tesla;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,21 +53,23 @@ class TeslaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TTL7/', $useragent)) {
-            return new Tesla\TeslaTtl7($useragent);
+            $deviceCode = 'ttl7';
         }
 
         if (preg_match('/TTH7/', $useragent)) {
-            return new Tesla\TeslaTth7($useragent);
+            $deviceCode = 'tth7';
         }
 
         if (preg_match('/Tablet_785/', $useragent)) {
-            return new Tesla\TeslaTablet785($useragent);
+            $deviceCode = 'tablet 785';
         }
 
         if (preg_match('/Tablet_L7_3G/', $useragent)) {
-            return new Tesla\TeslaTabletL73g($useragent);
+            $deviceCode = 'tablet l7 3g';
         }
 
-        return new Tesla\Tesla($useragent);
+        $deviceCode = 'general tesla device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

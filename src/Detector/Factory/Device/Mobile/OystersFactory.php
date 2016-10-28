@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Oysters;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class OystersFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/pacific800i/i', $useragent)) {
-            return new Oysters\OystersPacific800i($useragent);
+            $deviceCode = 'pacific 800i';
         }
 
         if (preg_match('/pacific 800/i', $useragent)) {
-            return new Oysters\OystersPacific800($useragent);
+            $deviceCode = 'pacific 800';
         }
 
-        return new Oysters\Oysters($useragent);
+        $deviceCode = 'general oysters device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Nomi;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class NomiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/C07000/', $useragent)) {
-            return new Nomi\NomiC07000($useragent);
+            $deviceCode = 'c07000';
         }
 
         if (preg_match('/A10100/', $useragent)) {
-            return new Nomi\NomiA10100($useragent);
+            $deviceCode = 'a10100';
         }
 
-        return new Nomi\Nomi($useragent);
+        $deviceCode = 'general nomi device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Coby;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,42 +52,44 @@ class CobyFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general coby device';
+
         if (preg_match('/MID9742/i', $useragent)) {
-            return new Coby\MID9742($useragent);
+            $deviceCode = 'mid9742';
         }
 
         if (preg_match('/MID8128/i', $useragent)) {
-            return new Coby\MID8128($useragent);
+            $deviceCode = 'mid8128';
         }
 
         if (preg_match('/MID8127/i', $useragent)) {
-            return new Coby\MID8127($useragent);
+            $deviceCode = 'mid8127';
         }
 
         if (preg_match('/MID8024/i', $useragent)) {
-            return new Coby\MID8024($useragent);
+            $deviceCode = 'mid8024';
         }
 
         if (preg_match('/MID7022/i', $useragent)) {
-            return new Coby\MID7022($useragent);
+            $deviceCode = 'mid7022';
         }
 
         if (preg_match('/MID7015/i', $useragent)) {
-            return new Coby\MID7015($useragent);
+            $deviceCode = 'mid7015';
         }
 
         if (preg_match('/MID1126/i', $useragent)) {
-            return new Coby\MID1126($useragent);
+            $deviceCode = 'mid1126';
         }
 
         if (preg_match('/MID1125/i', $useragent)) {
-            return new Coby\MID1125($useragent);
+            $deviceCode = 'mid1125';
         }
 
         if (preg_match('/NBPC724/i', $useragent)) {
-            return new Coby\NBPC724($useragent);
+            $deviceCode = 'nbpc724';
         }
 
-        return new Coby\Coby($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

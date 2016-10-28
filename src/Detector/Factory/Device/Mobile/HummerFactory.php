@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Hummer;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class HummerFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general hummer device';
+
         if (preg_match('/h1\+/i', $useragent)) {
-            return new Hummer\HummerH1plus($useragent);
+            $deviceCode = 'h1+';
         }
 
-        return new Hummer\Hummer($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

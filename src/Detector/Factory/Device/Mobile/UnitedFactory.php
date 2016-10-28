@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\United;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class UnitedFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MT6515M/', $useragent)) {
-            return new United\UnitedMt6515m($useragent);
+            $deviceCode = 'mt6515m';
         }
 
-        return new United\United($useragent);
+        $deviceCode = 'general united device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

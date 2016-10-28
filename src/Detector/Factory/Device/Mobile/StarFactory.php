@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Star;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,17 +53,19 @@ class StarFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/n9500/i', $useragent)) {
-            return new Star\StarN9500($useragent);
+            $deviceCode = 'n9500';
         }
 
         if (preg_match('/n8000/i', $useragent)) {
-            return new Star\StarN8000($useragent);
+            $deviceCode = 'n8000';
         }
 
         if (preg_match('/gt\-9000/i', $useragent)) {
-            return new Star\StarGt9000($useragent);
+            $deviceCode = 'gt-9000';
         }
 
-        return new Star\Star($useragent);
+        $deviceCode = 'general star device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

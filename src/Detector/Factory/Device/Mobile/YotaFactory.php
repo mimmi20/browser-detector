@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Yota;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class YotaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/yd201/i', $useragent)) {
-            return new Yota\YotaYd201($useragent);
+            $deviceCode = 'yd201';
         }
 
-        return new Yota\Yota($useragent);
+        $deviceCode = 'general yota device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

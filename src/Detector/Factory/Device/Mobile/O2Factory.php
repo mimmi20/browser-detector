@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\O2;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class O2Factory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/xda\_orbit\_2/i', $useragent)) {
-            return new O2\O2XdaOrbitIi($useragent);
+            $deviceCode = 'xda orbit ii';
         }
 
-        return new O2\O2($useragent);
+        $deviceCode = 'general o2 device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

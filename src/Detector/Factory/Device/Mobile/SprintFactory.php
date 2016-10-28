@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Sprint;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class SprintFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/PPC\-6700/', $useragent)) {
-            return new Sprint\SprintPpc6700($useragent);
+            $deviceCode = '6700';
         }
 
         if (preg_match('/APA9292KT/', $useragent)) {
-            return new Sprint\SprintApa9292kt($useragent);
+            $deviceCode = 'sprint 9292';
         }
 
-        return new Sprint\Sprint($useragent);
+        $deviceCode = 'general sprint device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

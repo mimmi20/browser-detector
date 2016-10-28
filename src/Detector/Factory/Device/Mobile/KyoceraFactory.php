@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Kyocera;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class KyoceraFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general kyocera device';
+
         if (preg_match('/KC\-S701/', $useragent)) {
-            return new Kyocera\KyoceraKcs701($useragent);
+            $deviceCode = 'kc-s701';
         }
 
         if (preg_match('/DM015K/', $useragent)) {
-            return new Kyocera\KyoceraDm015k($useragent);
+            $deviceCode = 'dm015k';
         }
 
-        return new Kyocera\Kyocera($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

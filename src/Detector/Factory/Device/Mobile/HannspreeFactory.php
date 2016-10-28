@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Hannspree;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class HannspreeFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general hannspree device';
+
         if (preg_match('/sn10t1/i', $useragent)) {
-            return new Hannspree\HannspreeHannspad($useragent);
+            $deviceCode = 'hannspad sn10t1';
         }
 
-        return new Hannspree\Hannspree($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

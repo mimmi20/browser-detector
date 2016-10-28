@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Innos;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class InnosFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general innos device';
+
         if (preg_match('/d6000/i', $useragent)) {
-            return new Innos\InnosD6000($useragent);
+            $deviceCode = 'd6000';
         }
 
-        return new Innos\Innos($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

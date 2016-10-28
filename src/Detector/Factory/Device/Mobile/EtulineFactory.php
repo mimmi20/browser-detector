@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Etuline;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class EtulineFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general etuline device';
+
         if (preg_match('/T880G/', $useragent)) {
-            return new Etuline\EtulineT880g($useragent);
+            $deviceCode = 't880g';
         }
 
-        return new Etuline\Etuline($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

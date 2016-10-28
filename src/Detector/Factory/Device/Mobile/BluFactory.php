@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Blu;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,34 +52,36 @@ class BluFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general blu device';
+
         if (preg_match('/VIVO IV/', $useragent)) {
-            return new Blu\BluVivoIv($useragent);
+            $deviceCode = 'vivo iv';
         }
 
         if (preg_match('/studio 5\.5/i', $useragent)) {
-            return new Blu\BluStudio55($useragent);
+            $deviceCode = 'studio 5.5';
         }
 
         if (preg_match('/Studio 5\.0 S II/', $useragent)) {
-            return new Blu\BluStudio50Sii($useragent);
+            $deviceCode = 'studio 5.0 s ii';
         }
 
         if (preg_match('/WIN HD W510u/', $useragent)) {
-            return new Blu\BluWinHdW510u($useragent);
+            $deviceCode = 'win hd w510u';
         }
 
         if (preg_match('/WIN HD LTE/', $useragent)) {
-            return new Blu\BluWinHdlte($useragent);
+            $deviceCode = 'win hd lte';
         }
 
         if (preg_match('/WIN JR W410a/', $useragent)) {
-            return new Blu\BluWinJrW410a($useragent);
+            $deviceCode = 'win jr w410a';
         }
 
         if (preg_match('/WIN JR LTE/', $useragent)) {
-            return new Blu\BluWinJrlte($useragent);
+            $deviceCode = 'win jr lte';
         }
 
-        return new Blu\Blu($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Platform;
 
 use BrowserDetector\Detector\Factory\FactoryInterface;
+use BrowserDetector\Detector\Factory\PlatformFactory;
 use BrowserDetector\Detector\Os;
 use UaHelper\Utils;
 
@@ -56,15 +57,15 @@ class WindowsFactory implements FactoryInterface
         $utils->setUserAgent($useragent);
 
         if ($utils->checkIfContains(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'])) {
-            return new Os\WindowsMe($useragent);
+            return PlatformFactory::get('windows me', $useragent);
         }
 
         if ($utils->checkIfContains(['Win98'])) {
-            return new Os\Windows98($useragent);
+            return PlatformFactory::get('windows 98', $useragent);
         }
 
         if ($utils->checkIfContains(['Win95'])) {
-            return new Os\Windows95($useragent);
+            return PlatformFactory::get('windows 95', $useragent);
         }
 
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $useragent, $matches);
@@ -72,44 +73,60 @@ class WindowsFactory implements FactoryInterface
         if ($doMatch) {
             switch ($matches[1]) {
                 case '10.0':
+                    return PlatformFactory::get('windows nt 10', $useragent);
+                    break;
                 case '6.4':
-                    return new Os\Windows10($useragent, $matches[1]);
+                    return PlatformFactory::get('windows nt 6.4', $useragent);
                     break;
                 case '6.3':
-                    return new Os\Windows81($useragent);
+                    return PlatformFactory::get('windows nt 6.3', $useragent);
                     break;
                 case '6.2':
-                    return new Os\Windows8($useragent);
+                    return PlatformFactory::get('windows nt 6.2', $useragent);
                     break;
                 case '6.1':
-                    return new Os\Windows7($useragent);
+                    return PlatformFactory::get('windows nt 6.1', $useragent);
                     break;
                 case '6':
                 case '6.0':
-                    return new Os\WindowsVista($useragent);
+                    return PlatformFactory::get('windows nt 6.0', $useragent);
                     break;
                 case '5.3':
+                    return PlatformFactory::get('windows nt 5.3', $useragent);
+                    break;
                 case '5.2':
+                    return PlatformFactory::get('windows nt 5.2', $useragent);
+                    break;
                 case '5.1':
-                    return new Os\WindowsXp($useragent, $matches[1]);
+                    return PlatformFactory::get('windows nt 5.1', $useragent);
                     break;
                 case '5.01':
+                    return PlatformFactory::get('windows nt 5.01', $useragent);
+                    break;
                 case '5.0':
-                    return new Os\Windows2000($useragent, $matches[1]);
+                    return PlatformFactory::get('windows nt 5.0', $useragent);
                     break;
                 case '4.10':
+                    return PlatformFactory::get('windows nt 4.10', $useragent);
+                    break;
                 case '4.1':
+                    return PlatformFactory::get('windows nt 4.1', $useragent);
+                    break;
                 case '4.0':
+                    return PlatformFactory::get('windows nt 4.0', $useragent);
+                    break;
                 case '3.5':
+                    return PlatformFactory::get('windows nt 3.5', $useragent);
+                    break;
                 case '3.1':
-                    return new Os\WindowsNt($useragent, $matches[1]);
+                    return PlatformFactory::get('windows nt 3.1', $useragent);
                     break;
                 default:
                     // nothing to do here
                     break;
             }
 
-            return new Os\WindowsNt($useragent, '0.0');
+            return PlatformFactory::get('windows nt', $useragent, '0.0');
         }
 
         $doMatch = preg_match('/Windows[ \-]([\d\.a-zA-Z]+)/', $useragent, $matches);
@@ -118,69 +135,77 @@ class WindowsFactory implements FactoryInterface
             switch ($matches[1]) {
                 case '10.0':
                 case '10':
+                    return PlatformFactory::get('windows nt 10', $useragent);
+                    break;
                 case '6.4':
-                    return new Os\Windows10($useragent, $matches[1]);
+                    return PlatformFactory::get('windows nt 6.4', $useragent);
                     break;
                 case '6.3':
-                    return new Os\Windows81($useragent);
+                    return PlatformFactory::get('windows nt 6.3', $useragent);
                     break;
                 case '6.2':
-                    return new Os\Windows8($useragent);
+                    return PlatformFactory::get('windows nt 6.2', $useragent);
                     break;
                 case '6.1':
                 case '7':
-                    return new Os\Windows7($useragent);
+                    return PlatformFactory::get('windows nt 6.1', $useragent);
                     break;
                 case '6.0':
                 case 'Vista':
-                    return new Os\WindowsVista($useragent);
+                    return PlatformFactory::get('windows nt 6.0', $useragent);
                     break;
                 case '2003':
-                    return new Os\Windows2003($useragent);
+                    return PlatformFactory::get('windows 2003', $useragent);
                     break;
                 case '5.3':
-                case '5.2':
-                case '5.1':
-                    return new Os\WindowsXp($useragent, $matches[1]);
+                    return PlatformFactory::get('windows nt 5.3', $useragent);
                     break;
+                case '5.2':
+                    return PlatformFactory::get('windows nt 5.2', $useragent);
+                    break;
+                case '5.1':
                 case 'XP':
-                    return new Os\WindowsXp($useragent);
+                    return PlatformFactory::get('windows nt 5.1', $useragent);
                     break;
                 case 'ME':
-                    return new Os\WindowsMe($useragent);
+                    return PlatformFactory::get('windows me', $useragent);
                     break;
                 case '2000':
-                    return new Os\Windows2000($useragent);
+                    return PlatformFactory::get('windows nt 5.0', $useragent);
                     break;
                 case '5.01':
+                    return PlatformFactory::get('windows nt 5.01', $useragent);
+                    break;
                 case '5.0':
-                    return new Os\Windows2000($useragent, $matches[1]);
+                    return PlatformFactory::get('windows nt 5.0', $useragent);
                     break;
                 case '4.1':
+                    return PlatformFactory::get('windows nt 4.1', $useragent);
+                    break;
                 case '4.0':
+                    return PlatformFactory::get('windows nt 4.0', $useragent);
+                    break;
                 case '3.5':
-                    return new Os\WindowsNt($useragent, $matches[1]);
+                    return PlatformFactory::get('windows nt 3.5', $useragent);
                     break;
                 case 'NT':
-                    return new Os\WindowsNt($useragent);
+                    return PlatformFactory::get('windows nt', $useragent);
                     break;
                 case '3.1':
-                    return new Os\Windows31($useragent);
+                    return PlatformFactory::get('windows 3.1',$useragent);
                     break;
                 case '95':
-                    return new Os\Windows95($useragent);
+                    return PlatformFactory::get('windows 95', $useragent);
                     break;
                 case '98':
-                    return new Os\Windows98($useragent);
+                    return PlatformFactory::get('windows 98', $useragent);
                     break;
                 default:
                     // nothing to do here
                     break;
             }
-
-            return new Os\Windows($useragent);
         }
 
-        return new Os\Windows($useragent);
+        return PlatformFactory::get('windows',$useragent);
     }
 }

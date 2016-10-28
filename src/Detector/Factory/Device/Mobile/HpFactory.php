@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Hp;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,42 +52,44 @@ class HpFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general hp device';
+
         if (preg_match('/ipaqhw6900/i', $useragent)) {
-            return new Hp\HpIpaq6900($useragent);
+            $deviceCode = 'ipaq 6900';
         }
 
         if (preg_match('/slate 17/i', $useragent)) {
-            return new Hp\HpSlate17($useragent);
+            $deviceCode = 'slate 17';
         }
 
         if (preg_match('/slate 10 hd/i', $useragent)) {
-            return new Hp\HpSlate10Hd($useragent);
+            $deviceCode = 'slate 10';
         }
 
         if (preg_match('/(touchpad|cm\_tenderloin)/i', $useragent)) {
-            return new Hp\HpTouchpad($useragent);
+            $deviceCode = 'touchpad';
         }
 
         if (preg_match('/palm\-d050/i', $useragent)) {
-            return new Hp\PalmTx($useragent);
+            $deviceCode = 'tx';
         }
 
         if (preg_match('/pre\//i', $useragent)) {
-            return new Hp\PalmPre($useragent);
+            $deviceCode = 'pre';
         }
 
         if (preg_match('/pixi\//i', $useragent)) {
-            return new Hp\PalmPixi($useragent);
+            $deviceCode = 'pixi';
         }
 
         if (preg_match('/blazer/i', $useragent)) {
-            return new Hp\PalmBlazer($useragent);
+            $deviceCode = 'blazer';
         }
 
         if (preg_match('/p160u/i', $useragent)) {
-            return new Hp\HpP160U($useragent);
+            $deviceCode = 'p160u';
         }
 
-        return new Hp\Hp($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

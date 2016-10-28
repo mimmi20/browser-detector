@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Wopad;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class WopadFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Q10S/', $useragent)) {
-            return new Wopad\WopadQ10s($useragent);
+            $deviceCode = 'q10s';
         }
 
-        return new Wopad\Wopad($useragent);
+        $deviceCode = 'general wopad device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

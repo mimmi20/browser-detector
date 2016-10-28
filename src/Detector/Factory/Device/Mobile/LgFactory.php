@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Lg;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,538 +52,540 @@ class LgFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general lg device';
+
         if (preg_match('/x150/i', $useragent)) {
-            return new Lg\Lgx150($useragent);
+            $deviceCode = 'x150';
         }
 
         if (preg_match('/h850/i', $useragent)) {
-            return new Lg\LgH850($useragent);
+            $deviceCode = 'h850';
         }
 
         if (preg_match('/h525n/i', $useragent)) {
-            return new Lg\LgH525n($useragent);
+            $deviceCode = 'h525n';
         }
 
         if (preg_match('/h345/i', $useragent)) {
-            return new Lg\LgH345($useragent);
+            $deviceCode = 'h345';
         }
 
         if (preg_match('/h340n/i', $useragent)) {
-            return new Lg\LgH340n($useragent);
+            $deviceCode = 'h340n';
         }
 
         if (preg_match('/h320/i', $useragent)) {
-            return new Lg\LgH320($useragent);
+            $deviceCode = 'h320';
         }
 
         if (preg_match('/vs980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
+            $deviceCode = 'vs980';
         }
 
         if (preg_match('/vs880/i', $useragent)) {
-            return new Lg\LgVs880($useragent);
+            $deviceCode = 'vs880';
         }
 
         if (preg_match('/vs840/i', $useragent)) {
-            return new Lg\LgVs840($useragent);
+            $deviceCode = 'vs840 4g';
         }
 
         if (preg_match('/vs700/i', $useragent)) {
-            return new Lg\LgVs700($useragent);
+            $deviceCode = 'vs700';
         }
 
         if (preg_match('/vm701/i', $useragent)) {
-            return new Lg\LgVm701($useragent);
+            $deviceCode = 'vm701';
         }
 
         if (preg_match('/vm670/i', $useragent)) {
-            return new Lg\LgVm670($useragent);
+            $deviceCode = 'vm670';
         }
 
         if (preg_match('/v935/i', $useragent)) {
-            return new Lg\Lgv935($useragent);
+            $deviceCode = 'v935';
         }
 
         if (preg_match('/v900/i', $useragent)) {
-            return new Lg\Lgv900($useragent);
+            $deviceCode = 'v900';
         }
 
         if (preg_match('/v700/i', $useragent)) {
-            return new Lg\Lgv700($useragent);
+            $deviceCode = 'v700';
         }
 
         if (preg_match('/v500/i', $useragent)) {
-            return new Lg\Lgv500($useragent);
+            $deviceCode = 'v500';
         }
 
         if (preg_match('/v490/i', $useragent)) {
-            return new Lg\Lgv490($useragent);
+            $deviceCode = 'v490';
         }
 
         if (preg_match('/t500/i', $useragent)) {
-            return new Lg\Lgt500($useragent);
+            $deviceCode = 't500';
         }
 
         if (preg_match('/t385/i', $useragent)) {
-            return new Lg\Lgt385($useragent);
+            $deviceCode = 't385';
         }
 
         if (preg_match('/t300/i', $useragent)) {
-            return new Lg\Lgt300($useragent);
+            $deviceCode = 't300';
         }
 
         if (preg_match('/su760/i', $useragent)) {
-            return new Lg\LgSu760($useragent);
+            $deviceCode = 'su760';
         }
 
         if (preg_match('/su660/i', $useragent)) {
-            return new Lg\LgSu660($useragent);
+            $deviceCode = 'su660';
         }
 
         if (preg_match('/p999/i', $useragent)) {
-            return new Lg\Lgp999($useragent);
+            $deviceCode = 'p999';
         }
 
         if (preg_match('/(p990|optimus 2x)/i', $useragent)) {
-            return new Lg\Lgp990($useragent);
+            $deviceCode = 'p990';
         }
 
         if (preg_match('/(p970|optimus\-black)/i', $useragent)) {
-            return new Lg\Lgp970($useragent);
+            $deviceCode = 'p970';
         }
 
         if (preg_match('/p940/i', $useragent)) {
-            return new Lg\Lgp940($useragent);
+            $deviceCode = 'p940';
         }
 
         if (preg_match('/p936/i', $useragent)) {
-            return new Lg\Lgp936($useragent);
+            $deviceCode = 'p936';
         }
 
         if (preg_match('/p925/i', $useragent)) {
-            return new Lg\Lgp925($useragent);
+            $deviceCode = 'p925';
         }
 
         if (preg_match('/p920/i', $useragent)) {
-            return new Lg\Lgp920($useragent);
+            $deviceCode = 'p920';
         }
 
         if (preg_match('/p895/i', $useragent)) {
-            return new Lg\LgP895($useragent);
+            $deviceCode = 'p895';
         }
 
         if (preg_match('/p880/i', $useragent)) {
-            return new Lg\LgP880($useragent);
+            $deviceCode = 'p880';
         }
 
         if (preg_match('/p875/i', $useragent)) {
-            return new Lg\Lgp875($useragent);
+            $deviceCode = 'p875';
         }
 
         if (preg_match('/p765/i', $useragent)) {
-            return new Lg\Lgp765($useragent);
+            $deviceCode = 'p765';
         }
 
         if (preg_match('/p760/i', $useragent)) {
-            return new Lg\Lgp760($useragent);
+            $deviceCode = 'p760';
         }
 
         if (preg_match('/p720/i', $useragent)) {
-            return new Lg\Lgp720($useragent);
+            $deviceCode = 'p720';
         }
 
         if (preg_match('/p713/i', $useragent)) {
-            return new Lg\Lgp713($useragent);
+            $deviceCode = 'p713';
         }
 
         if (preg_match('/p710/i', $useragent)) {
-            return new Lg\Lgp710($useragent);
+            $deviceCode = 'p710';
         }
 
         if (preg_match('/p705/i', $useragent)) {
-            return new Lg\Lgp705($useragent);
+            $deviceCode = 'p705';
         }
 
         if (preg_match('/p700/i', $useragent)) {
-            return new Lg\Lgp700($useragent);
+            $deviceCode = 'p700';
         }
 
         if (preg_match('/p698/i', $useragent)) {
-            return new Lg\Lgp698($useragent);
+            $deviceCode = 'p698';
         }
 
         if (preg_match('/p690/i', $useragent)) {
-            return new Lg\Lgp690($useragent);
+            $deviceCode = 'p690';
         }
 
         if (preg_match('/(p509|optimus\-t)/i', $useragent)) {
-            return new Lg\Lgp509($useragent);
+            $deviceCode = 'p509';
         }
 
         if (preg_match('/p505r/i', $useragent)) {
-            return new Lg\Lgp505r($useragent);
+            $deviceCode = 'p505r';
         }
 
         if (preg_match('/p505/i', $useragent)) {
-            return new Lg\Lgp505($useragent);
+            $deviceCode = 'p505';
         }
 
         if (preg_match('/p500h/i', $useragent)) {
-            return new Lg\Lgp500h($useragent);
+            $deviceCode = 'p500h';
         }
 
         if (preg_match('/p500/i', $useragent)) {
-            return new Lg\Lgp500($useragent);
+            $deviceCode = 'p500';
         }
 
         if (preg_match('/p350/i', $useragent)) {
-            return new Lg\Lgp350($useragent);
+            $deviceCode = 'p350';
         }
 
         if (preg_match('/nexus ?5x/i', $useragent)) {
-            return new Lg\LgNexus5x($useragent);
+            $deviceCode = 'nexus 5x';
         }
 
         if (preg_match('/nexus ?5/i', $useragent)) {
-            return new Lg\LgNexus5($useragent);
+            $deviceCode = 'nexus 5';
         }
 
         if (preg_match('/nexus ?4/i', $useragent)) {
-            return new Lg\LgNexus4($useragent);
+            $deviceCode = 'nexus 4';
         }
 
         if (preg_match('/ms690/i', $useragent)) {
-            return new Lg\Lgms690($useragent);
+            $deviceCode = 'ms690';
         }
 
         if (preg_match('/ls860/i', $useragent)) {
-            return new Lg\LgLs860($useragent);
+            $deviceCode = 'ls860';
         }
 
         if (preg_match('/ls740/i', $useragent)) {
-            return new Lg\LgLs740($useragent);
+            $deviceCode = 'ls740';
         }
 
         if (preg_match('/ls670/i', $useragent)) {
-            return new Lg\LgLs670($useragent);
+            $deviceCode = 'ls670';
         }
 
         if (preg_match('/ln510/i', $useragent)) {
-            return new Lg\LgLn510($useragent);
+            $deviceCode = 'ln510';
         }
 
         if (preg_match('/l160l/i', $useragent)) {
-            return new Lg\LgL160l($useragent);
+            $deviceCode = 'l160l';
         }
 
         if (preg_match('/ku800/i', $useragent)) {
-            return new Lg\LgKu800($useragent);
+            $deviceCode = 'ku800';
         }
 
         if (preg_match('/ks365/i', $useragent)) {
-            return new Lg\LgKs365($useragent);
+            $deviceCode = 'ks365';
         }
 
         if (preg_match('/ks20/i', $useragent)) {
-            return new Lg\LgKs20($useragent);
+            $deviceCode = 'ks20';
         }
 
         if (preg_match('/kp500/i', $useragent)) {
-            return new Lg\LgKp500($useragent);
+            $deviceCode = 'kp500';
         }
 
         if (preg_match('/km900/i', $useragent)) {
-            return new Lg\LgKm900($useragent);
+            $deviceCode = 'km900';
         }
 
         if (preg_match('/kc910/i', $useragent)) {
-            return new Lg\LgKc910($useragent);
+            $deviceCode = 'kc910';
         }
 
         if (preg_match('/hb620t/i', $useragent)) {
-            return new Lg\LgHb620t($useragent);
+            $deviceCode = 'hb620t';
         }
 
         if (preg_match('/gw300/i', $useragent)) {
-            return new Lg\LgGw300($useragent);
+            $deviceCode = 'gw300';
         }
 
         if (preg_match('/gt550/i', $useragent)) {
-            return new Lg\LgGt550($useragent);
+            $deviceCode = 'gt550';
         }
 
         if (preg_match('/gt540/i', $useragent)) {
-            return new Lg\LgGt540($useragent);
+            $deviceCode = 'gt540';
         }
 
         if (preg_match('/gs290/i', $useragent)) {
-            return new Lg\LgGs290($useragent);
+            $deviceCode = 'gs290';
         }
 
         if (preg_match('/gm360/i', $useragent)) {
-            return new Lg\LgGm360($useragent);
+            $deviceCode = 'gm360';
         }
 
         if (preg_match('/gd880/i', $useragent)) {
-            return new Lg\LgGd880($useragent);
+            $deviceCode = 'gd880';
         }
 
         if (preg_match('/gd350/i', $useragent)) {
-            return new Lg\LgGd350($useragent);
+            $deviceCode = 'gd350';
         }
 
         if (preg_match('/ g3 /i', $useragent)) {
-            return new Lg\LgG3($useragent);
+            $deviceCode = 'g3';
         }
 
         if (preg_match('/f240s/i', $useragent)) {
-            return new Lg\LgF240s($useragent);
+            $deviceCode = 'f240s';
         }
 
         if (preg_match('/f240k/i', $useragent)) {
-            return new Lg\LgF240k($useragent);
+            $deviceCode = 'f240k';
         }
 
         if (preg_match('/f220k/i', $useragent)) {
-            return new Lg\LgF220K($useragent);
+            $deviceCode = 'f220k';
         }
 
         if (preg_match('/f200k/i', $useragent)) {
-            return new Lg\LgF200K($useragent);
+            $deviceCode = 'f200k';
         }
 
         if (preg_match('/f160k/i', $useragent)) {
-            return new Lg\LgF160K($useragent);
+            $deviceCode = 'f160k';
         }
 
         if (preg_match('/f100s/i', $useragent)) {
-            return new Lg\Lgf100s($useragent);
+            $deviceCode = 'f100s';
         }
 
         if (preg_match('/f100l/i', $useragent)) {
-            return new Lg\LgF100L($useragent);
+            $deviceCode = 'f100l';
         }
 
         if (preg_match('/eve/i', $useragent)) {
-            return new Lg\LgEve($useragent);
+            $deviceCode = 'eve';
         }
 
         if (preg_match('/e989/i', $useragent)) {
-            return new Lg\Lge989($useragent);
+            $deviceCode = 'e989';
         }
 
         if (preg_match('/e988/i', $useragent)) {
-            return new Lg\Lge988($useragent);
+            $deviceCode = 'e988';
         }
 
         if (preg_match('/e980h/i', $useragent)) {
-            return new Lg\Lge980h($useragent);
+            $deviceCode = 'e980h';
         }
 
         if (preg_match('/e975/i', $useragent)) {
-            return new Lg\Lge975($useragent);
+            $deviceCode = 'e975';
         }
 
         if (preg_match('/e970/i', $useragent)) {
-            return new Lg\Lge970($useragent);
+            $deviceCode = 'e970';
         }
 
         if (preg_match('/e906/i', $useragent)) {
-            return new Lg\LgE906($useragent);
+            $deviceCode = 'e906';
         }
 
         if (preg_match('/e900/i', $useragent)) {
-            return new Lg\Lge900($useragent);
+            $deviceCode = 'e900';
         }
 
         if (preg_match('/e739/i', $useragent)) {
-            return new Lg\Lge739($useragent);
+            $deviceCode = 'e739';
         }
 
         if (preg_match('/e730/i', $useragent)) {
-            return new Lg\Lge730($useragent);
+            $deviceCode = 'e730';
         }
 
         if (preg_match('/e720/i', $useragent)) {
-            return new Lg\Lge720($useragent);
+            $deviceCode = 'e720';
         }
 
         if (preg_match('/e615/i', $useragent)) {
-            return new Lg\Lge615($useragent);
+            $deviceCode = 'e615';
         }
 
         if (preg_match('/e612/i', $useragent)) {
-            return new Lg\Lge612($useragent);
+            $deviceCode = 'e612';
         }
 
         if (preg_match('/e610/i', $useragent)) {
-            return new Lg\Lge610($useragent);
+            $deviceCode = 'e610';
         }
 
         if (preg_match('/e510/i', $useragent)) {
-            return new Lg\Lge510($useragent);
+            $deviceCode = 'e510';
         }
 
         if (preg_match('/e460/i', $useragent)) {
-            return new Lg\Lge460($useragent);
+            $deviceCode = 'e460';
         }
 
         if (preg_match('/e440/i', $useragent)) {
-            return new Lg\Lge440($useragent);
+            $deviceCode = 'e440';
         }
 
         if (preg_match('/e430/i', $useragent)) {
-            return new Lg\Lge430($useragent);
+            $deviceCode = 'e430';
         }
 
         if (preg_match('/e425/i', $useragent)) {
-            return new Lg\Lge425($useragent);
+            $deviceCode = 'e425';
         }
 
         if (preg_match('/e400/i', $useragent)) {
-            return new Lg\Lge400($useragent);
+            $deviceCode = 'e400';
         }
 
         if (preg_match('/d958/i', $useragent)) {
-            return new Lg\Lgd958($useragent);
+            $deviceCode = 'd958';
         }
 
         if (preg_match('/d955/i', $useragent)) {
-            return new Lg\Lgd955($useragent);
+            $deviceCode = 'd955';
         }
 
         if (preg_match('/d856/i', $useragent)) {
-            return new Lg\Lgd856($useragent);
+            $deviceCode = 'd856';
         }
 
         if (preg_match('/d855/i', $useragent)) {
-            return new Lg\Lgd855($useragent);
+            $deviceCode = 'd855';
         }
 
         if (preg_match('/d805/i', $useragent)) {
-            return new Lg\Lgd805($useragent);
+            $deviceCode = 'd805';
         }
 
         if (preg_match('/d802tr/i', $useragent)) {
-            return new Lg\Lgd802tr($useragent);
+            $deviceCode = 'd802tr';
         }
 
         if (preg_match('/d802/i', $useragent)) {
-            return new Lg\Lgd802($useragent);
+            $deviceCode = 'd802';
         }
 
         if (preg_match('/d724/i', $useragent)) {
-            return new Lg\Lgd724($useragent);
+            $deviceCode = 'd724';
         }
 
         if (preg_match('/d722/i', $useragent)) {
-            return new Lg\Lgd722($useragent);
+            $deviceCode = 'd722';
         }
 
         if (preg_match('/d690/i', $useragent)) {
-            return new Lg\LgD690($useragent);
+            $deviceCode = 'd690';
         }
 
         if (preg_match('/d686/i', $useragent)) {
-            return new Lg\LgD686($useragent);
+            $deviceCode = 'd686';
         }
 
         if (preg_match('/d682tr/i', $useragent)) {
-            return new Lg\LgD682tr($useragent);
+            $deviceCode = 'd682tr';
         }
 
         if (preg_match('/d682/i', $useragent)) {
-            return new Lg\LgD682($useragent);
+            $deviceCode = 'd682';
         }
 
         if (preg_match('/d620/i', $useragent)) {
-            return new Lg\LgD620($useragent);
+            $deviceCode = 'd620';
         }
 
         if (preg_match('/d618/i', $useragent)) {
-            return new Lg\LgD618($useragent);
+            $deviceCode = 'd618';
         }
 
         if (preg_match('/d605/i', $useragent)) {
-            return new Lg\Lgd605($useragent);
+            $deviceCode = 'd605';
         }
 
         if (preg_match('/d415/i', $useragent)) {
-            return new Lg\Lgd415($useragent);
+            $deviceCode = 'd415';
         }
 
         if (preg_match('/d410/i', $useragent)) {
-            return new Lg\Lgd410($useragent);
+            $deviceCode = 'd410';
         }
 
         if (preg_match('/d373/i', $useragent)) {
-            return new Lg\Lgd373($useragent);
+            $deviceCode = 'd373';
         }
 
         if (preg_match('/d325/i', $useragent)) {
-            return new Lg\Lgd325($useragent);
+            $deviceCode = 'd325';
         }
 
         if (preg_match('/d320/i', $useragent)) {
-            return new Lg\Lgd320($useragent);
+            $deviceCode = 'd320';
         }
 
         if (preg_match('/d300/i', $useragent)) {
-            return new Lg\Lgd300($useragent);
+            $deviceCode = 'd300';
         }
 
         if (preg_match('/d295/i', $useragent)) {
-            return new Lg\Lgd295($useragent);
+            $deviceCode = 'd295';
         }
 
         if (preg_match('/d290/i', $useragent)) {
-            return new Lg\Lgd290($useragent);
+            $deviceCode = 'd290';
         }
 
         if (preg_match('/d285/i', $useragent)) {
-            return new Lg\Lgd285($useragent);
+            $deviceCode = 'd285';
         }
 
         if (preg_match('/d280/i', $useragent)) {
-            return new Lg\Lgd280($useragent);
+            $deviceCode = 'd280';
         }
 
         if (preg_match('/d213/i', $useragent)) {
-            return new Lg\Lgd213($useragent);
+            $deviceCode = 'd213';
         }
 
         if (preg_match('/d160/i', $useragent)) {
-            return new Lg\Lgd160($useragent);
+            $deviceCode = 'd160';
         }
 
         if (preg_match('/c660/i', $useragent)) {
-            return new Lg\Lgc660($useragent);
+            $deviceCode = 'c660';
         }
 
         if (preg_match('/c550/i', $useragent)) {
-            return new Lg\Lgc550($useragent);
+            $deviceCode = 'c550';
         }
 
         if (preg_match('/c330/i', $useragent)) {
-            return new Lg\Lgc330($useragent);
+            $deviceCode = 'c330';
         }
 
         if (preg_match('/c199/i', $useragent)) {
-            return new Lg\Lgc199($useragent);
+            $deviceCode = 'c199';
         }
 
         if (preg_match('/bl40/i', $useragent)) {
-            return new Lg\LgBl40($useragent);
+            $deviceCode = 'bl40';
         }
 
         if (preg_match('/lg900g/i', $useragent)) {
-            return new Lg\Lg900g($useragent);
+            $deviceCode = '900g';
         }
 
         if (preg_match('/lg220c/i', $useragent)) {
-            return new Lg\Lg220c($useragent);
+            $deviceCode = '220c';
         }
 
-        return new Lg\Lg($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

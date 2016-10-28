@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Amazon;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,54 +52,56 @@ class AmazonFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general amazon device';
+
         if (preg_match('/kftt/i', $useragent)) {
-            return new Amazon\AmazonKftt($useragent);
+            $deviceCode = 'kftt';
         }
 
         if (preg_match('/kfthwi/i', $useragent)) {
-            return new Amazon\AmazonKfthwi($useragent);
+            $deviceCode = 'kfthwi';
         }
 
         if (preg_match('/kfsowi/i', $useragent)) {
-            return new Amazon\AmazonKfsowi($useragent);
+            $deviceCode = 'kfsowi';
         }
 
         if (preg_match('/kfot/i', $useragent)) {
-            return new Amazon\AmazonKfot($useragent);
+            $deviceCode = 'kfot';
         }
 
         if (preg_match('/kfjwi/i', $useragent)) {
-            return new Amazon\AmazonKfjwi($useragent);
+            $deviceCode = 'kfjwi';
         }
 
         if (preg_match('/kfjwa/i', $useragent)) {
-            return new Amazon\AmazonKfjwa($useragent);
+            $deviceCode = 'kfjwa';
         }
 
         if (preg_match('/kfaswi/i', $useragent)) {
-            return new Amazon\AmazonKfaswi($useragent);
+            $deviceCode = 'kfaswi';
         }
 
         if (preg_match('/kfapwi/i', $useragent)) {
-            return new Amazon\AmazonKfapwi($useragent);
+            $deviceCode = 'kfapwi';
         }
 
         if (preg_match('/kfapwa/i', $useragent)) {
-            return new Amazon\AmazonKfapwa($useragent);
+            $deviceCode = 'kfapwa';
         }
 
         if (preg_match('/sd4930ur/i', $useragent)) {
-            return new Amazon\AmazonSd4930urFirePhone($useragent);
+            $deviceCode = 'sd4930ur';
         }
 
         if (preg_match('/kindle fire/i', $useragent)) {
-            return new Amazon\AmazonKindleFire($useragent);
+            $deviceCode = 'd01400';
         }
 
         if (preg_match('/(kindle|silk)/i', $useragent)) {
-            return new Amazon\AmazonKindle($useragent);
+            $deviceCode = 'kindle';
         }
 
-        return new Amazon\Amazon($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

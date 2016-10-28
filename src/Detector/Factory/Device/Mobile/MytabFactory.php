@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Mytab;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MytabFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Mini 3G/', $useragent)) {
-            return new Mytab\MytabMini3g($useragent);
+            $deviceCode = 'mini 3g';
         }
 
-        return new Mytab\Mytab($useragent);
+        $deviceCode = 'general mytab device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

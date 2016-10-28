@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\KeenHigh;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class KeenHighFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general keen high device';
+
         if (preg_match('/MT791/', $useragent)) {
-            return new KeenHigh\KeenHighMT791($useragent);
+            $deviceCode = 'mt791';
         }
 
-        return new KeenHigh\KeenHigh($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

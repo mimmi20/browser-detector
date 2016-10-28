@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Haier;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class HaierFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general haier device';
+
         if (preg_match('/w718/i', $useragent)) {
-            return new Haier\HaierW718($useragent);
+            $deviceCode = 'w718';
         }
 
-        return new Haier\Haier($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

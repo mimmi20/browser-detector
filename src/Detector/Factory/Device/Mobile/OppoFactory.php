@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Oppo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,17 +53,19 @@ class OppoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/x909/i', $useragent)) {
-            return new Oppo\OppoX909($useragent);
+            $deviceCode = 'x909';
         }
 
         if (preg_match('/r815/i', $useragent)) {
-            return new Oppo\OppoR815($useragent);
+            $deviceCode = 'r815';
         }
 
         if (preg_match('/r813t/i', $useragent)) {
-            return new Oppo\OppoR813T($useragent);
+            $deviceCode = 'r813t';
         }
 
-        return new Oppo\Oppo($useragent);
+        $deviceCode = 'general oppo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Nintendo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,21 +53,23 @@ class NintendoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/WiiU/', $useragent)) {
-            return new Nintendo\NintendoWiiU($useragent);
+            $deviceCode = 'wiiu';
         }
 
         if (preg_match('/Wii/', $useragent)) {
-            return new Nintendo\NintendoWii($useragent);
+            $deviceCode = 'wii';
         }
 
         if (preg_match('/DSi/', $useragent)) {
-            return new Nintendo\NintendoDsi($useragent);
+            $deviceCode = 'dsi';
         }
 
         if (preg_match('/3DS/', $useragent)) {
-            return new Nintendo\Nintendo3ds($useragent);
+            $deviceCode = '3ds';
         }
 
-        return new Nintendo\Nintendo($useragent);
+        $deviceCode = 'general nintendo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

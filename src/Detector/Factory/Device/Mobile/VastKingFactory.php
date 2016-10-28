@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\VastKing;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class VastKingFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/M717R\-HD/', $useragent)) {
-            return new VastKing\VastKingM717rHd($useragent);
+            $deviceCode = 'm717r-hd';
         }
 
-        return new VastKing\VastKing($useragent);
+        $deviceCode = 'general vastking device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Technisat;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,21 +53,23 @@ class TechnisatFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TechniPad[_ ]10\-3G/', $useragent)) {
-            return new Technisat\TechnisatTechnipad103g($useragent);
+            $deviceCode = 'technipad 10 3g';
         }
 
         if (preg_match('/TechniPad[_ ]10/', $useragent)) {
-            return new Technisat\TechnisatTechnipad10($useragent);
+            $deviceCode = 'technipad 10';
         }
 
         if (preg_match('/AQIPAD[_ ]7G/', $useragent)) {
-            return new Technisat\TechnisatAqistonAqipad7g($useragent);
+            $deviceCode = 'aqiston aqipad 7g';
         }
 
         if (preg_match('/TechniPhone[_ ]5/', $useragent)) {
-            return new Technisat\TechnisatTechniphone5($useragent);
+            $deviceCode = 'techniphone 5';
         }
 
-        return new Technisat\Technisat($useragent);
+        $deviceCode = 'general technisat device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

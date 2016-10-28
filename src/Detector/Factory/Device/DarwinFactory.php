@@ -31,8 +31,9 @@
 
 namespace BrowserDetector\Detector\Factory\Device;
 
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
-use BrowserDetector\Detector\Device\Desktop;
+use BrowserDetector\Detector\Device;
 
 /**
  * Browser detection class
@@ -54,20 +55,22 @@ class DarwinFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'macintosh';
+
         if (false !== strpos($useragent, 'CFNetwork/807')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/802')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/798')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/796')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/790')) {
@@ -75,7 +78,7 @@ class DarwinFactory implements FactoryInterface
         }
 
         if (false !== strpos($useragent, 'CFNetwork/760')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/758')) {
@@ -87,15 +90,15 @@ class DarwinFactory implements FactoryInterface
         }
 
         if (false !== strpos($useragent, 'CFNetwork/720')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/718')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/714')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.5')) {
@@ -123,27 +126,27 @@ class DarwinFactory implements FactoryInterface
         }
 
         if (false !== strpos($useragent, 'CFNetwork/709')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/708')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/705')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/699')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/696')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/673')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/672.1')) {
@@ -155,7 +158,7 @@ class DarwinFactory implements FactoryInterface
         }
 
         if (false !== strpos($useragent, 'CFNetwork/647')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/609.1')) {
@@ -171,15 +174,15 @@ class DarwinFactory implements FactoryInterface
         }
 
         if (false !== strpos($useragent, 'CFNetwork/596')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/595')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/561')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/548.1')) {
@@ -191,11 +194,11 @@ class DarwinFactory implements FactoryInterface
         }
 
         if (false !== strpos($useragent, 'CFNetwork/520')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/515')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/485.13')) {
@@ -223,61 +226,61 @@ class DarwinFactory implements FactoryInterface
         }
 
         if (false !== strpos($useragent, 'CFNetwork/454')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/438')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/433')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/422')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/339')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/330')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/221')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/220')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/217')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/129')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/128')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/4.0')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/1.2')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
         if (false !== strpos($useragent, 'CFNetwork/1.1')) {
-            return new Desktop\Macintosh($useragent);
+            $deviceCode = 'macintosh';
         }
 
-        return new Desktop\Macintosh($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

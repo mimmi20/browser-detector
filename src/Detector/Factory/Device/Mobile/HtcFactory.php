@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Htc;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,630 +52,632 @@ class HtcFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general htc device';
+
         if (preg_match('/ X9 /', $useragent)) {
-            return new Htc\HtcX9($useragent);
+            $deviceCode = 'x9';
         }
 
         if (preg_match('/(Nexus[ \-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent);
+            $deviceCode = 'nexus one';
         }
 
         if (preg_match('/Nexus 9/i', $useragent)) {
-            return new Htc\HtcNexus9($useragent);
+            $deviceCode = 'nexus 9';
         }
 
         if (preg_match('/nexus(hd2| evohd2)/i', $useragent)) {
-            return new Htc\HtcNexusHd2($useragent);
+            $deviceCode = 'nexus hd2';
         }
 
         if (preg_match('/8X by HTC/i', $useragent)) {
-            return new Htc\Htc8x($useragent);
+            $deviceCode = 'windows phone 8x';
         }
 
         if (preg_match('/PM23300/', $useragent)) {
-            return new Htc\Htc8x($useragent);
+            $deviceCode = 'windows phone 8x';
         }
 
         if (preg_match('/8S by HTC/i', $useragent)) {
-            return new Htc\Htc8s($useragent);
+            $deviceCode = '8s';
         }
 
         if (preg_match('/radar( c110e|; orange)/i', $useragent)) {
-            return new Htc\HtcC110eRadar($useragent);
+            $deviceCode = 'radar c110e';
         }
 
         if (preg_match('/radar 4g/i', $useragent)) {
-            return new Htc\HtcRadar4G($useragent);
+            $deviceCode = 'radar 4g';
         }
 
         if (preg_match('/radar/i', $useragent)) {
-            return new Htc\HtcRadar($useragent);
+            $deviceCode = 'radar';
         }
 
         if (preg_match('/(hd7|mondrian)/i', $useragent)) {
-            return new Htc\HtcT9292($useragent);
+            $deviceCode = 't9292';
         }
 
         if (preg_match('/7 Mozart/i', $useragent)) {
-            return new Htc\HtcT8698($useragent);
+            $deviceCode = 't8698';
         }
 
         if (preg_match('/t8282/i', $useragent)) {
-            return new Htc\HtcTouchHdT8282($useragent);
+            $deviceCode = 'touch hd t8282';
         }
 
         if (preg_match('/7 Pro T7576/i', $useragent)) {
-            return new Htc\HtcT7576($useragent);
+            $deviceCode = 't7576';
         }
 
         if (preg_match('/HD2\_T8585/i', $useragent)) {
-            return new Htc\HtcHd2T8585($useragent);
+            $deviceCode = 't8585';
         }
 
         if (preg_match('/HD2/', $useragent) && preg_match('/android/i', $useragent)) {
-            return new Htc\HtcHd2Android($useragent);
+            $deviceCode = 'htc hd2';
         }
 
         if (preg_match('/HD2/', $useragent)) {
-            return new Htc\HtcHd2($useragent);
+            $deviceCode = 'htc hd2';
         }
 
         if (preg_match('/(HD[ |\_]mini)/i', $useragent)) {
-            return new Htc\HtcHdMini($useragent);
+            $deviceCode = 'mini t5555';
         }
 
         if (preg_match('/titan/i', $useragent)) {
-            return new Htc\HtcTitan($useragent);
+            $deviceCode = 'x310e';
         }
 
         if (preg_match('/(7 Trophy|mwp6985)/i', $useragent)) {
-            return new Htc\HtcSpark($useragent);
+            $deviceCode = 'spark';
         }
 
         if (preg_match('/0P6B180/i', $useragent)) {
-            return new Htc\HtcOneM8Windows($useragent);
+            $deviceCode = '0p6b180';
         }
 
         if (preg_match('/one[_ ]m9plus/i', $useragent)) {
-            return new Htc\HtcOneM9plus($useragent);
+            $deviceCode = 'm9 plus';
         }
 
         if (preg_match('/one[_ ]m9/i', $useragent)) {
-            return new Htc\HtcOneM9($useragent);
+            $deviceCode = 'm9';
         }
 
         if (preg_match('/one[_ ]m8s/i', $useragent)) {
-            return new Htc\HtcOneM8s($useragent);
+            $deviceCode = 'm8s';
         }
 
         if (preg_match('/one[_ ]m8/i', $useragent)) {
-            return new Htc\HtcOneM8($useragent);
+            $deviceCode = 'htc m8';
         }
 
         if (preg_match('/pn07120/i', $useragent)) {
-            return new Htc\HtcOneM7GooglePlay($useragent);
+            $deviceCode = 'pn07120';
         }
 
         if (preg_match('/(one[ _]x\+|onexplus)/i', $useragent)) {
-            return new Htc\HtcOneXplus($useragent);
+            $deviceCode = 'pm63100';
         }
 
         if (preg_match('/one[ _]xl/i', $useragent)) {
-            return new Htc\HtcOneXl($useragent);
+            $deviceCode = 'htc pj83100';
         }
 
         if (preg_match('/(one[ _]x|onex|PJ83100)/i', $useragent)) {
-            return new Htc\HtcOneX($useragent);
+            $deviceCode = 'htc pj83100';
         }
 
         if (preg_match('/one[ _]v/i', $useragent)) {
-            return new Htc\HtcOneV($useragent);
+            $deviceCode = 'one v';
         }
 
         if (preg_match('/(one[ _]sv|onesv)/i', $useragent)) {
-            return new Htc\HtcOneSv($useragent);
+            $deviceCode = 'one sv';
         }
 
         if (preg_match('/(one[ _]s|ones)/i', $useragent)) {
-            return new Htc\HtcOneS($useragent);
+            $deviceCode = 'pj401';
         }
 
         if (preg_match('/one[ _]mini[ _]2/i', $useragent)) {
-            return new Htc\HtcOneMini2($useragent);
+            $deviceCode = 'one mini 2';
         }
 
         if (preg_match('/one[ _]mini/i', $useragent)) {
-            return new Htc\HtcOneMini($useragent);
+            $deviceCode = 'one mini';
         }
 
         if (preg_match('/(one[ _]max|himauhl_htc_asia_tw)/i', $useragent)) {
-            return new Htc\HtcOneMax($useragent);
+            $deviceCode = 'one max';
         }
 
         if (preg_match('/one/i', $useragent)) {
-            return new Htc\HtcOne($useragent);
+            $deviceCode = 'm7';
         }
 
         if (preg_match('/(Smart Tab III 7|SmartTabIII7)/i', $useragent)) {
-            return new Htc\VodafoneSmartTabIii7($useragent);
+            $deviceCode = 'smart tab iii 7';
         }
 
         if (preg_match('/(x315e|runnymede)/i', $useragent)) {
-            return new Htc\HtcX315eSensationXlBeats($useragent);
+            $deviceCode = 'htc x315e';
         }
 
         if (preg_match('/sensation[ _]4g/i', $useragent)) {
-            return new Htc\HtcSensation4g($useragent);
+            $deviceCode = 'sensation 4g';
         }
 
         if (preg_match('/(sensationxl|sensation xl)/i', $useragent)) {
-            return new Htc\HtcSensationXlBeats($useragent);
+            $deviceCode = 'htc x315e';
         }
 
         if (preg_match('/(sensation xe|sensationxe)/i', $useragent)) {
-            return new Htc\HtcZ715eSensationXeBeats($useragent);
+            $deviceCode = 'sensation xe beats z715e';
         }
 
         if (preg_match('/(HTC\_Sensation\-orange\-LS|HTC\_Sensation\-LS)/i', $useragent)) {
-            return new Htc\HtcZ710SensationLs($useragent);
+            $deviceCode = 'htc z710';
         }
 
         if (preg_match('/sensation[ _]z710e/i', $useragent)) {
-            return new Htc\HtcZ710e($useragent);
+            $deviceCode = 'z710e';
         }
 
         if (preg_match('/(sensation|pyramid)/i', $useragent)) {
-            return new Htc\HtcZ710($useragent);
+            $deviceCode = 'htc z710';
         }
 
         if (preg_match('/Xda\_Diamond\_2/i', $useragent)) {
-            return new Htc\HtcXdaDiamond2($useragent);
+            $deviceCode = 'xda_diamond_2';
         }
 
         if (preg_match('/Evo 3D GSM/i', $useragent)) {
-            return new Htc\HtcEvo3dGsm($useragent);
+            $deviceCode = 'evo 3d gsm';
         }
 
         if (preg_match('/(EVO[ _]3D|EVO3D|x515m)/i', $useragent)) {
-            return new Htc\HtcX515m($useragent);
+            $deviceCode = 'x515m';
         }
 
         if (preg_match('/x515e/i', $useragent)) {
-            return new Htc\HtcX515e($useragent);
+            $deviceCode = 'x515e';
         }
 
         if (preg_match('/x515/i', $useragent)) {
-            return new Htc\HtcX515($useragent);
+            $deviceCode = 'x515';
         }
 
         if (preg_match('/desirez\_a7272/i', $useragent)) {
-            return new Htc\HtcDesireZA7272($useragent);
+            $deviceCode = 'a7272';
         }
 
         if (preg_match('/(desire[ _]z|desirez)/i', $useragent)) {
-            return new Htc\HtcDesireZ($useragent);
+            $deviceCode = 'desire z';
         }
 
         if (preg_match('/(desire[ _]x|desirex)/i', $useragent)) {
-            return new Htc\HtcDesireX($useragent);
+            $deviceCode = 't328e';
         }
 
         if (preg_match('/(desire[ _]v|desirev)/i', $useragent)) {
-            return new Htc\HtcDesireV($useragent);
+            $deviceCode = 'desire v';
         }
 
         if (preg_match('/s510e/i', $useragent)) {
-            return new Htc\HtcS510eDesireS($useragent);
+            $deviceCode = 's510e';
         }
 
         if (preg_match('/(desire[ _]sv|desiresv)/i', $useragent)) {
-            return new Htc\HtcDesireSv($useragent);
+            $deviceCode = 'desire sv';
         }
 
         if (preg_match('/(desire[ _]s|desires)/i', $useragent)) {
-            return new Htc\HtcDesireS($useragent);
+            $deviceCode = 'desire s';
         }
 
         if (preg_match('/desirehd\-orange\-ls/i', $useragent)) {
-            return new Htc\HtcDesireHhLs($useragent);
+            $deviceCode = 'desire hd ls';
         }
 
         if (preg_match('/a9191/i', $useragent)) {
-            return new Htc\HtcA9191DesireHd($useragent);
+            $deviceCode = 'a9191';
         }
 
         if (preg_match('/(desire hd|desirehd)/i', $useragent)) {
-            return new Htc\HtcDesireHd($useragent);
+            $deviceCode = 'desire hd';
         }
 
         if (preg_match('/(desire[ _]c|desirec)/i', $useragent)) {
-            return new Htc\HtcDesireC($useragent);
+            $deviceCode = '1000c';
         }
 
         if (preg_match('/desire[ _]820s/i', $useragent)) {
-            return new Htc\HtcDesire820s($useragent);
+            $deviceCode = 'desire 820s';
         }
 
         if (preg_match('/desire[ _]820/i', $useragent)) {
-            return new Htc\HtcDesire820($useragent);
+            $deviceCode = 'desire 820';
         }
 
         if (preg_match('/desire[ _]816g/i', $useragent)) {
-            return new Htc\HtcDesire816g($useragent);
+            $deviceCode = 'desire 816g';
         }
 
         if (preg_match('/desire[ _]816/i', $useragent)) {
-            return new Htc\HtcDesire816($useragent);
+            $deviceCode = 'desire 816';
         }
 
         if (preg_match('/(0p4e2|desire[ _]601)/i', $useragent)) {
-            return new Htc\Htc0p4e2($useragent);
+            $deviceCode = '0p4e2';
         }
 
         if (preg_match('/desire[ _]728g/i', $useragent)) {
-            return new Htc\HtcDesire728g($useragent);
+            $deviceCode = 'desire 728g';
         }
 
         if (preg_match('/desire[ _]700/i', $useragent)) {
-            return new Htc\HtcDesire700($useragent);
+            $deviceCode = 'desire 700';
         }
 
         if (preg_match('/desire[ _]626g/i', $useragent)) {
-            return new Htc\HtcDesire626g($useragent);
+            $deviceCode = 'desire 626g';
         }
 
         if (preg_match('/desire[ _]626/i', $useragent)) {
-            return new Htc\HtcDesire626($useragent);
+            $deviceCode = 'desire 626';
         }
 
         if (preg_match('/desire[ _]620g/i', $useragent)) {
-            return new Htc\HtcDesire620g($useragent);
+            $deviceCode = 'desire 620g';
         }
 
         if (preg_match('/desire[ _]610/i', $useragent)) {
-            return new Htc\HtcDesire610($useragent);
+            $deviceCode = 'desire 610';
         }
 
         if (preg_match('/desire[ _]600c/i', $useragent)) {
-            return new Htc\HtcDesire600c($useragent);
+            $deviceCode = 'desire 600c';
         }
 
         if (preg_match('/desire[ _]600/i', $useragent)) {
-            return new Htc\HtcDesire600($useragent);
+            $deviceCode = 'desire 600';
         }
 
         if (preg_match('/desire[ _]530/i', $useragent)) {
-            return new Htc\HtcDesire530($useragent);
+            $deviceCode = 'desire 530';
         }
 
         if (preg_match('/desire[ _]526g/i', $useragent)) {
-            return new Htc\HtcDesire526g($useragent);
+            $deviceCode = 'desire 526g';
         }
 
         if (preg_match('/desire[ _]516/i', $useragent)) {
-            return new Htc\HtcDesire516($useragent);
+            $deviceCode = 'desire 516';
         }
 
         if (preg_match('/desire[ _]510/i', $useragent)) {
-            return new Htc\HtcDesire510($useragent);
+            $deviceCode = 'desire 510';
         }
 
         if (preg_match('/desire[ _]500/i', $useragent)) {
-            return new Htc\HtcDesire500($useragent);
+            $deviceCode = 'desire 500';
         }
 
         if (preg_match('/desire[ _]400/i', $useragent)) {
-            return new Htc\HtcDesire400($useragent);
+            $deviceCode = 'desire 400';
         }
 
         if (preg_match('/desire[ _]320/i', $useragent)) {
-            return new Htc\HtcDesire320($useragent);
+            $deviceCode = 'desire 320';
         }
 
         if (preg_match('/desire[ _]310/i', $useragent)) {
-            return new Htc\HtcDesire310($useragent);
+            $deviceCode = 'desire 310';
         }
 
         if (preg_match('/desire[ _]300/i', $useragent)) {
-            return new Htc\HtcDesire300($useragent);
+            $deviceCode = 'desire 300';
         }
 
         if (preg_match('/desire[_ ]eye/i', $useragent)) {
-            return new Htc\HtcDesireEye($useragent);
+            $deviceCode = 'desire eye';
         }
 
         if (preg_match('/desire\_a8181/i', $useragent)) {
-            return new Htc\HtcA8181Desire($useragent);
+            $deviceCode = 'a8181';
         }
 
         if (preg_match('/desire/i', $useragent)) {
-            return new Htc\HtcDesire($useragent);
+            $deviceCode = 'desire';
         }
 
         if (preg_match('/WildfireS\-orange\-LS|WildfireS\-LS/i', $useragent)) {
-            return new Htc\HtcWildfireSLs($useragent);
+            $deviceCode = 'wildfire s ls';
         }
 
         if (preg_match('/ a315c /i', $useragent)) {
-            return new Htc\HtcA315c($useragent);
+            $deviceCode = 'a315c';
         }
 
         if (preg_match('/Wildfire\_A3333/i', $useragent)) {
-            return new Htc\HtcA3333($useragent);
+            $deviceCode = 'a3333';
         }
 
         if (preg_match('/(Wildfire S A510e|WildfireS_A510e)/i', $useragent)) {
-            return new Htc\HtcA510e($useragent);
+            $deviceCode = 'a510e';
         }
 
         if (preg_match('/ADR6230/i', $useragent)) {
-            return new Htc\HtcAdr6230($useragent);
+            $deviceCode = 'adr6230';
         }
 
         if (preg_match('/Wildfire[ |]S/i', $useragent)) {
-            return new Htc\HtcA510($useragent);
+            $deviceCode = 'htc a510';
         }
 
         if (preg_match('/Wildfire/i', $useragent)) {
-            return new Htc\HtcWildfire($useragent);
+            $deviceCode = 'wildfire';
         }
 
         if (preg_match('/Vision/i', $useragent)) {
-            return new Htc\HtcVision($useragent);
+            $deviceCode = 'vision';
         }
 
         if (preg_match('/velocity[ _]4g[ _]x710s/i', $useragent)) {
-            return new Htc\HtcVelocity4GX710s($useragent);
+            $deviceCode = 'x710s';
         }
 
         if (preg_match('/velocity[ _]4g/i', $useragent)) {
-            return new Htc\HtcVelocity4G($useragent);
+            $deviceCode = 'velocity 4g';
         }
 
         if (preg_match('/Velocity/i', $useragent)) {
-            return new Htc\HtcVelocity($useragent);
+            $deviceCode = 'velocity';
         }
 
         if (preg_match('/Touch\_Diamond2/i', $useragent)) {
-            return new Htc\HtcTouchDiamond2($useragent);
+            $deviceCode = 'touch diamond 2';
         }
 
         if (preg_match('/tattoo/i', $useragent)) {
-            return new Htc\HtcTattoo($useragent);
+            $deviceCode = 'tattoo';
         }
 
         if (preg_match('/Touch\_Pro2\_T7373/i', $useragent)) {
-            return new Htc\HtcT7373($useragent);
+            $deviceCode = 't7373';
         }
 
         if (preg_match('/Touch2/i', $useragent)) {
-            return new Htc\HtcT3335($useragent);
+            $deviceCode = 't3335';
         }
 
         if (preg_match('/t329d/i', $useragent)) {
-            return new Htc\HtcT329d($useragent);
+            $deviceCode = 't329d';
         }
 
         if (preg_match('/t328w/i', $useragent)) {
-            return new Htc\HtcT328w($useragent);
+            $deviceCode = 't328w';
         }
 
         if (preg_match('/t328d/i', $useragent)) {
-            return new Htc\HtcT328d($useragent);
+            $deviceCode = 't328d';
         }
 
         if (preg_match('/Smart\_F3188/i', $useragent)) {
-            return new Htc\HtcSmartF3188($useragent);
+            $deviceCode = 'smart f3188';
         }
 
         if (preg_match('/ShooterU/i', $useragent)) {
-            return new Htc\HtcShooterU($useragent);
+            $deviceCode = 'shooter u';
         }
 
         if (preg_match('/Salsa/i', $useragent)) {
-            return new Htc\HtcSalsa($useragent);
+            $deviceCode = 'salsa';
         }
 
         if (preg_match('/butterfly_s_901s/i', $useragent)) {
-            return new Htc\HtcS901s($useragent);
+            $deviceCode = 's901s';
         }
 
         if (preg_match('/(Incredible S|IncredibleS|S710e)/i', $useragent)) {
-            return new Htc\HtcS710e($useragent);
+            $deviceCode = 's710e';
         }
 
         if (preg_match('/(Rhyme|S510b)/i', $useragent)) {
-            return new Htc\HtcS510b($useragent);
+            $deviceCode = 's510b';
         }
 
         if (preg_match('/ruby/i', $useragent)) {
-            return new Htc\HtcRuby($useragent);
+            $deviceCode = 'ruby';
         }
 
         if (preg_match('/P3700/i', $useragent)) {
-            return new Htc\HtcP3700($useragent);
+            $deviceCode = 'p3700';
         }
 
         if (preg_match('/MDA\_Vario\_V/i', $useragent)) {
-            return new Htc\HtcMdaVarioV($useragent);
+            $deviceCode = 'mda vario v';
         }
 
         if (preg_match('/MDA Vario\/3/i', $useragent)) {
-            return new Htc\HtcMdaVarioIii($useragent);
+            $deviceCode = 'mda vario iii';
         }
 
         if (preg_match('/MDA Vario\/2/i', $useragent)) {
-            return new Htc\HtcMdaVarioIi($useragent);
+            $deviceCode = 'mda vario ii';
         }
 
         if (preg_match('/MDA\_Compact\_V/i', $useragent)) {
-            return new Htc\HtcMdaCompactV($useragent);
+            $deviceCode = 'mda compact v';
         }
 
         if (preg_match('/Magic/i', $useragent)) {
-            return new Htc\HtcMagic($useragent);
+            $deviceCode = 'magic';
         }
 
         if (preg_match('/Legend/i', $useragent)) {
-            return new Htc\HtcLegend($useragent);
+            $deviceCode = 'legend';
         }
 
         if (preg_match('/(Hero|a6288)/i', $useragent)) {
-            return new Htc\HtcHero($useragent);
+            $deviceCode = 'hero';
         }
 
         if (preg_match('/Glacier/i', $useragent)) {
-            return new Htc\HtcGlacier($useragent);
+            $deviceCode = 'glacier';
         }
 
         if (preg_match('/G21/i', $useragent)) {
-            return new Htc\HtcG21($useragent);
+            $deviceCode = 'g21';
         }
 
         if (preg_match('/(Flyer[ |\_]P512)/i', $useragent)) {
-            return new Htc\HtcFlyerP512($useragent);
+            $deviceCode = 'p512';
         }
 
         if (preg_match('/(Flyer[ |\_]P510e)/i', $useragent)) {
-            return new Htc\HtcFlyerP510e($useragent);
+            $deviceCode = 'p510e';
         }
 
         if (preg_match('/Flyer/i', $useragent)) {
-            return new Htc\HtcFlyer($useragent);
+            $deviceCode = 'flyer';
         }
 
         if (preg_match('/(pc36100|evo 4g|kingdom)/i', $useragent)) {
-            return new Htc\HtcEvo4g($useragent);
+            $deviceCode = 'pc36100';
         }
 
         if (preg_match('/Dream/i', $useragent)) {
-            return new Htc\HtcDream($useragent);
+            $deviceCode = 'dream';
         }
 
         if (preg_match('/D820mu/i', $useragent)) {
-            return new Htc\HtcD820mu($useragent);
+            $deviceCode = 'd820mu';
         }
 
         if (preg_match('/D820us/i', $useragent)) {
-            return new Htc\HtcD820us($useragent);
+            $deviceCode = 'd820us';
         }
 
         if (preg_match('/click/i', $useragent)) {
-            return new Htc\HtcClick($useragent);
+            $deviceCode = 'click';
         }
 
         if (preg_match('/eris/i', $useragent)) {
-            return new Htc\HtcEris($useragent);
+            $deviceCode = 'eris';
         }
 
         if (preg_match('/ C2/i', $useragent)) {
-            return new Htc\HtcC2($useragent);
+            $deviceCode = 'c2';
         }
 
         if (preg_match('/bravo/i', $useragent)) {
-            return new Htc\HtcBravo($useragent);
+            $deviceCode = 'bravo';
         }
 
         if (preg_match('/butterfly/i', $useragent)) {
-            return new Htc\HtcButterfly($useragent);
+            $deviceCode = 'butterfly';
         }
 
         if (preg_match('/adr6350/i', $useragent)) {
-            return new Htc\HtcAdr6350($useragent);
+            $deviceCode = 'adr6350';
         }
 
         if (preg_match('/apa9292kt/i', $useragent)) {
-            return new Htc\HtcA9292Apa9292kt($useragent);
+            $deviceCode = '9292';
         }
 
         if (preg_match('/a9192/i', $useragent)) {
-            return new Htc\HtcA9192Inspire4g($useragent);
+            $deviceCode = 'inspire 4g';
         }
 
         if (preg_match('/APA7373KT/i', $useragent)) {
-            return new Htc\HtcA7373Apa7373kt($useragent);
+            $deviceCode = 'a7373';
         }
 
         if (preg_match('/Gratia/i', $useragent)) {
-            return new Htc\HtcA6380Gratia($useragent);
+            $deviceCode = 'a6380';
         }
 
         if (preg_match('/A6366/i', $useragent)) {
-            return new Htc\HtcA6366($useragent);
+            $deviceCode = 'a6366';
         }
 
         if (preg_match('/A3335/i', $useragent)) {
-            return new Htc\HtcA3335($useragent);
+            $deviceCode = 'a3335';
         }
 
         if (preg_match('/chacha/i', $useragent)) {
-            return new Htc\HtcA810eChaCha($useragent);
+            $deviceCode = 'a810e';
         }
 
         if (preg_match('/a510a/i', $useragent)) {
-            return new Htc\HtcA510a($useragent);
+            $deviceCode = 'a510a';
         }
 
         if (preg_match('/(explorer|a310e)/i', $useragent)) {
-            return new Htc\HtcA310e($useragent);
+            $deviceCode = 'a310e';
         }
 
         if (preg_match('/amaze/i', $useragent)) {
-            return new Htc\HtcAmaze($useragent);
+            $deviceCode = 'amaze 4g';
         }
 
         if (preg_match('/htc7088/i', $useragent)) {
-            return new Htc\Htc7088($useragent);
+            $deviceCode = '7088';
         }
 
         if (preg_match('/HTC6990LVW/', $useragent)) {
-            return new Htc\Htc6990Lvw($useragent);
+            $deviceCode = 'htc6990lvw';
         }
 
         if (preg_match('/htc6500lvw/i', $useragent)) {
-            return new Htc\Htc6500Lvw($useragent);
+            $deviceCode = 'm7 (htc6500lvw)';
         }
 
         if (preg_match('/htc6435lvw/i', $useragent)) {
-            return new Htc\HTC6435lvw($useragent);
+            $deviceCode = 'htc6435lvw';
         }
 
         if (preg_match('/htc 919d/i', $useragent)) {
-            return new Htc\Htc919d($useragent);
+            $deviceCode = '919d';
         }
 
         if (preg_match('/831c/i', $useragent)) {
-            return new Htc\Htc831C($useragent);
+            $deviceCode = '831c';
         }
 
         if (preg_match('/htc 809d/i', $useragent)) {
-            return new Htc\Htc809d($useragent);
+            $deviceCode = '809d';
         }
 
         if (preg_match('/htc[ ]?802t/i', $useragent)) {
-            return new Htc\Htc802T($useragent);
+            $deviceCode = '802t';
         }
 
         if (preg_match('/htc 802d/i', $useragent)) {
-            return new Htc\Htc802d($useragent);
+            $deviceCode = '802d';
         }
 
         if (preg_match('/htc 606w/i', $useragent)) {
-            return new Htc\Htc606w($useragent);
+            $deviceCode = 'desire 606w';
         }
 
         if (preg_match('/htc d516d/i', $useragent)) {
-            return new Htc\HtcDesire516($useragent);
+            $deviceCode = 'desire 516';
         }
 
         if (preg_match('/VPA\_Touch/i', $useragent)) {
-            return new Htc\HtcVpaTouch($useragent);
+            $deviceCode = 'vpa touch';
         }
 
         if (preg_match('/HTC\_VPACompactIV/i', $useragent)) {
-            return new Htc\HtcVpaCompactIv($useragent);
+            $deviceCode = 'vpa compact iv';
         }
 
-        return new Htc\Htc($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

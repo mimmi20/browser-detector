@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Ais;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class AisFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general ais device';
+
         if (preg_match('/iris708/i', $useragent)) {
-            return new Ais\AisLavaPro45($useragent);
+            $deviceCode = 'iris 708';
         }
 
-        return new Ais\Ais($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

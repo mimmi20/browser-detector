@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\UtStarcom;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class UtStarcomFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/GTX75/', $useragent)) {
-            return new UtStarcom\UtStarcomGtx75($useragent);
+            $deviceCode = 'gtx75';
         }
 
-        return new UtStarcom\UtStarcom($useragent);
+        $deviceCode = 'general utstarcom device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Bravis;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class BravisFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general bravis device';
+
         if (preg_match('/NP 844/', $useragent)) {
-            return new Bravis\BravisNp844($useragent);
+            $deviceCode = 'np 844';
         }
 
-        return new Bravis\Bravis($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Twz;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class TwzFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/A49/', $useragent)) {
-            return new Twz\TwzA49($useragent);
+            $deviceCode = 'a49';
         }
 
-        return new Twz\Twz($useragent);
+        $deviceCode = 'general twz device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

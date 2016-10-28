@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Vizio;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class VizioFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/VTAB1008/', $useragent)) {
-            return new Vizio\VizioVtab1008($useragent);
+            $deviceCode = 'vtab1008';
         }
 
-        return new Vizio\Vizio($useragent);
+        $deviceCode = 'general vizio device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

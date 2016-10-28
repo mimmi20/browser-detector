@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\TurboPad;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class TurboPadFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/turbo x6/i', $useragent)) {
-            return new TurboPad\TurboPadTurboX6($useragent);
+            $deviceCode = 'turbo x6';
         }
 
         if (preg_match('/turbo pad 500/i', $useragent)) {
-            return new TurboPad\TurboPadPad500($useragent);
+            $deviceCode = 'pad 500';
         }
 
-        return new TurboPad\TurboPad($useragent);
+        $deviceCode = 'general turbopad device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

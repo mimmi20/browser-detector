@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Apple;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,26 +52,28 @@ class AppleFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general apple device';
+
         if (preg_match('/ipod/i', $useragent)) {
-            return new Apple\Ipod($useragent);
+            $deviceCode = 'ipod touch';
         }
 
         if (preg_match('/ipad/i', $useragent)) {
-            return new Apple\Ipad($useragent);
+            $deviceCode = 'ipad';
         }
 
         if (preg_match('/iph/i', $useragent)) {
-            return new Apple\Iphone($useragent);
+            $deviceCode = 'iphone';
         }
 
         if (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
-            return new Apple\Ipad($useragent);
+            $deviceCode = 'ipad';
         }
 
         if (preg_match('/Puffin\/[\d\.]+IP/', $useragent)) {
-            return new Apple\Iphone($useragent);
+            $deviceCode = 'iphone';
         }
 
-        return new Apple\Apple($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

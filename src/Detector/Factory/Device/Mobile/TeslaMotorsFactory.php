@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\TeslaMotors;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class TeslaMotorsFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/QtCarBrowser/', $useragent)) {
-            return new TeslaMotors\TeslaMotorsModelS($useragent);
+            $deviceCode = 'model s';
         }
 
-        return new TeslaMotors\TeslaMotors($useragent);
+        $deviceCode = 'general teslamotors device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

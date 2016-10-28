@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Pipo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,37 +53,39 @@ class PipoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TPC\-PA10\.1M/', $useragent)) {
-            return new Pipo\PipoPa101m($useragent);
+            $deviceCode = 'pipo pa10.1m';
         }
 
         if (preg_match('/p93g/i', $useragent)) {
-            return new Pipo\PipoP93g($useragent);
+            $deviceCode = 'p9 3g';
         }
 
         if (preg_match('/m9pro/i', $useragent)) {
-            return new Pipo\PipoM9pro($useragent);
+            $deviceCode = 'q107';
         }
 
         if (preg_match('/m7t/i', $useragent)) {
-            return new Pipo\PipoM7t3g($useragent);
+            $deviceCode = 'm7t';
         }
 
         if (preg_match('/m6pro/i', $useragent)) {
-            return new Pipo\PipoM6pro($useragent);
+            $deviceCode = 'q977';
         }
 
         if (preg_match('/i75/', $useragent)) {
-            return new Pipo\PipoI75($useragent);
+            $deviceCode = 'i75';
         }
 
         if (preg_match('/m83g/i', $useragent)) {
-            return new Pipo\PipoM83g($useragent);
+            $deviceCode = 'm8 3g';
         }
 
         if (preg_match('/ M6 /', $useragent)) {
-            return new Pipo\PipoM6($useragent);
+            $deviceCode = 'm6';
         }
 
-        return new Pipo\Pipo($useragent);
+        $deviceCode = 'general pipo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

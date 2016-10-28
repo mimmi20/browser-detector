@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Cce;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class CceFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general cce device';
+
         if (preg_match('/SK352/', $useragent)) {
-            return new Cce\CceSk352($useragent);
+            $deviceCode = 'sk352';
         }
 
-        return new Cce\Cce($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

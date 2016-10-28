@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Ergo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class ErgoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general ergo device';
+
         if (preg_match('/tab crystal lite/i', $useragent)) {
-            return new Ergo\ErgoTabCrystalLite($useragent);
+            $deviceCode = 'tab crystal lite';
         }
 
-        return new Ergo\Ergo($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

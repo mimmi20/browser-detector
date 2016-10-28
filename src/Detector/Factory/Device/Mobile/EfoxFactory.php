@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Efox;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class EfoxFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general efox device';
+
         if (preg_match('/smart\-e5/i', $useragent)) {
-            return new Efox\EfoxSmartE5($useragent);
+            $deviceCode = 'smart e5';
         }
 
-        return new Efox\Efox($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

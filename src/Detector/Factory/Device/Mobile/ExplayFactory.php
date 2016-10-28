@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Explay;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,22 +52,24 @@ class ExplayFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general explay device';
+
         if (preg_match('/surfer 7\.34/i', $useragent)) {
-            return new Explay\ExplaySurfer7343g($useragent);
+            $deviceCode = 'surfer 7.34 3g';
         }
 
         if (preg_match('/m1\_plus/i', $useragent)) {
-            return new Explay\ExplayM1Plus($useragent);
+            $deviceCode = 'm1 plus';
         }
 
         if (preg_match('/d7\.2 3g/i', $useragent)) {
-            return new Explay\ExplayD723g($useragent);
+            $deviceCode = 'd7.2 3g';
         }
 
         if (preg_match('/art 3g/i', $useragent)) {
-            return new Explay\ExplayArt3g($useragent);
+            $deviceCode = 'art 3g';
         }
 
-        return new Explay\Explay($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Mtech;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MtechFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ACE4/', $useragent)) {
-            return new Mtech\MtechAce4($useragent);
+            $deviceCode = 'ace 4';
         }
 
-        return new Mtech\Mtech($useragent);
+        $deviceCode = 'general m-way device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

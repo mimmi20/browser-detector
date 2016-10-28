@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Ionik;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class IonikFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general i-onik device';
+
         if (preg_match('/tp10\.1\-1500dc/i', $useragent)) {
-            return new Ionik\IonikTp10($useragent);
+            $deviceCode = 'tp10.1-1500dc';
         }
 
-        return new Ionik\Ionik($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

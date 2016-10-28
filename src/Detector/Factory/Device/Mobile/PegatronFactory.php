@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Pegatron;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class PegatronFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/chagall/i', $useragent)) {
-            return new Pegatron\PegatronChagall($useragent);
+            $deviceCode = 'chagall';
         }
 
-        return new Pegatron\Pegatron($useragent);
+        $deviceCode = 'general pegatron device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

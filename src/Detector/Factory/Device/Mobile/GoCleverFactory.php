@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\GoClever;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,42 +52,44 @@ class GoCleverFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general goclever device';
+
         if (preg_match('/TQ700/', $useragent)) {
-            return new GoClever\GoCleverTq700($useragent);
+            $deviceCode = 'tq700';
         }
 
         if (preg_match('/TERRA\_101/', $useragent)) {
-            return new GoClever\GoCleverTerra101($useragent);
+            $deviceCode = 'a1021';
         }
 
         if (preg_match('/INSIGNIA\_785\_PRO/', $useragent)) {
-            return new GoClever\GoCleverInsignia785Pro($useragent);
+            $deviceCode = 'insignia 785 pro';
         }
 
         if (preg_match('/ARIES\_785/', $useragent)) {
-            return new GoClever\GoCleverAries785($useragent);
+            $deviceCode = 'aries 785';
         }
 
         if (preg_match('/ARIES\_101/', $useragent)) {
-            return new GoClever\GoCleverAries101($useragent);
+            $deviceCode = 'aries 101';
         }
 
         if (preg_match('/ORION7o/', $useragent)) {
-            return new GoClever\GoCleverOrion7o($useragent);
+            $deviceCode = 'orion 7o';
         }
 
         if (preg_match('/QUANTUM 4/', $useragent)) {
-            return new GoClever\GoCleverQuantum4($useragent);
+            $deviceCode = 'quantum 4';
         }
 
         if (preg_match('/QUANTUM_700m/', $useragent)) {
-            return new GoClever\GoCleverQuantum700m($useragent);
+            $deviceCode = 'quantum 700m';
         }
 
         if (preg_match('/TAB A93\.2/', $useragent)) {
-            return new GoClever\GoCleverTabA932($useragent);
+            $deviceCode = 'a93.2';
         }
 
-        return new GoClever\GoClever($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

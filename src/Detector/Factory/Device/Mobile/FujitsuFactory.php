@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Fujitsu;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class FujitsuFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general fujitsu device';
+
         if (preg_match('/m532/i', $useragent)) {
-            return new Fujitsu\FujitsuM532($useragent);
+            $deviceCode = 'm532';
         }
 
-        return new Fujitsu\Fujitsu($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

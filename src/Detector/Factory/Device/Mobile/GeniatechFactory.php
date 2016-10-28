@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Geniatech;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class GeniatechFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general geniatech device';
+
         if (preg_match('/MX Enjoy TV BOX/', $useragent)) {
-            return new Geniatech\GeniatechMxEnjoyTvBox($useragent);
+            $deviceCode = 'mx enjoy tv box';
         }
 
-        return new Geniatech\Geniatech($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

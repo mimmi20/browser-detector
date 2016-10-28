@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Ritmix;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,25 +53,27 @@ class RitmixFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/RMD\-1040/', $useragent)) {
-            return new Ritmix\RitmixRmd1040($useragent);
+            $deviceCode = 'rmd-1040';
         }
 
         if (preg_match('/RMD\-1028/', $useragent)) {
-            return new Ritmix\RitmixRmd1028($useragent);
+            $deviceCode = 'rmd-1028';
         }
 
         if (preg_match('/RMD\-1025/', $useragent)) {
-            return new Ritmix\RitmixRmd1025($useragent);
+            $deviceCode = 'rmd-1025';
         }
 
         if (preg_match('/RMD\-757/', $useragent)) {
-            return new Ritmix\RitmixRmd757($useragent);
+            $deviceCode = 'rmd-757';
         }
 
         if (preg_match('/RMD\-753/', $useragent)) {
-            return new Ritmix\RitmixRmd753($useragent);
+            $deviceCode = 'rmd-753';
         }
 
-        return new Ritmix\Ritmix($useragent);
+        $deviceCode = 'general ritmix device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

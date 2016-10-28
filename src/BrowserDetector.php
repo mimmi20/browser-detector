@@ -31,12 +31,7 @@
 
 namespace BrowserDetector;
 
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Device\UnknownDevice;
-use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Factory;
-use BrowserDetector\Detector\Engine;
-use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use Psr\Log\LoggerInterface;
@@ -166,8 +161,6 @@ class BrowserDetector
         /*
         if (null !== Factory\RegexFactory::detect($deviceUa)) {
             // @todo: extract device data
-
-            $device = new UnknownDevice($deviceUa);
         } else {
             $device = Factory\DeviceFactory::detect($deviceUa);
         }
@@ -179,10 +172,6 @@ class BrowserDetector
         /*
         if (null !== $rexgexFactory->detect($browserUa)) {
             // @todo: extract browser/engine/os data
-
-            $platform = new UnknownOs($browserUa);
-            $browser  = new UnknownBrowser($browserUa);
-            $engine   = new UnknownEngine($browserUa);
         } else {
             if ($device instanceof DeviceHasSpecificPlatformInterface) {
                 $platform = $device->detectOs();
@@ -222,19 +211,17 @@ class BrowserDetector
         }
 
         // detect the browser which is used
+        /** @var \UaResult\Browser\Browser $browser */
         $browser = Factory\BrowserFactory::detect($browserUa, $platform);
 
-        // detect the engine which is used in the browser
-        if ($browser instanceof BrowserHasSpecificEngineInterface) {
-            $engine = $browser->getEngine();
-        } else {
-            $engine = null;
-        }
-
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
-            $engine = new Engine\Webkit($browserUa);
-        } elseif (null === $engine) {
-            $engine = Factory\EngineFactory::detect($browserUa, $platform);
+            $engine = Factory\EngineFactory::get('webkit', $browserUa);
+        } else {
+            $engine = $browser->getEngine();
+
+            if ('unknown' === $engine) {
+                $engine = Factory\EngineFactory::detect($browserUa);
+            }
         }
 
         return new Result(

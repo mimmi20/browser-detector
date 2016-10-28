@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Qumo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class QumoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/QUEST\_450/i', $useragent)) {
-            return new Qumo\QumoQuest450($useragent);
+            $deviceCode = 'quest 450';
         }
 
-        return new Qumo\Qumo($useragent);
+        $deviceCode = 'general qumo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

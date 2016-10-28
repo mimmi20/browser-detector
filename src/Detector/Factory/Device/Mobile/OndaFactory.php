@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Onda;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class OndaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/V989/i', $useragent)) {
-            return new Onda\OndaV989($useragent);
+            $deviceCode = 'onda v989';
         }
 
-        return new Onda\Onda($useragent);
+        $deviceCode = 'general onda device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

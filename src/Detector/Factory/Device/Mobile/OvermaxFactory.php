@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Overmax;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,21 +53,23 @@ class OvermaxFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SteelCore\-B/', $useragent)) {
-            return new Overmax\OvermaxSteelCore($useragent);
+            $deviceCode = 'steelcore';
         }
 
         if (preg_match('/Solution 10II/', $useragent)) {
-            return new Overmax\OvermaxSolution10ii3g($useragent);
+            $deviceCode = 'solution 10 ii 3g';
         }
 
         if (preg_match('/Solution 7III/', $useragent)) {
-            return new Overmax\OvermaxSolution7iii($useragent);
+            $deviceCode = 'solution 7 iii';
         }
 
         if (preg_match('/Quattor 10\+/', $useragent)) {
-            return new Overmax\OvermaxQuattor10($useragent);
+            $deviceCode = 'quattor 10+';
         }
 
-        return new Overmax\Overmax($useragent);
+        $deviceCode = 'general overmax device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

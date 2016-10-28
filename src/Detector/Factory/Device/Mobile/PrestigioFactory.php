@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Prestigio;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,177 +53,179 @@ class PrestigioFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/PMT7077_3G/', $useragent)) {
-            return new Prestigio\PrestigioPmt70773g($useragent);
+            $deviceCode = 'pmt7077_3g';
         }
 
         if (preg_match('/PMT3287_3G/', $useragent)) {
-            return new Prestigio\PrestigioPmt32873g($useragent);
+            $deviceCode = 'pmt3287_3g';
         }
 
         if (preg_match('/PMT3277_3G/', $useragent)) {
-            return new Prestigio\PrestigioPmt32773g($useragent);
+            $deviceCode = 'pmt3277_3g';
         }
 
         if (preg_match('/PMT3037_3G/', $useragent)) {
-            return new Prestigio\PrestigioPmt30373g($useragent);
+            $deviceCode = 'pmt3037_3g';
         }
 
         if (preg_match('/PMT5587_Wi/', $useragent)) {
-            return new Prestigio\PrestigioPmt5587wi($useragent);
+            $deviceCode = 'pmt5587_wi';
         }
 
         if (preg_match('/PMT3377_Wi/', $useragent)) {
-            return new Prestigio\PrestigioPmt3377wi($useragent);
+            $deviceCode = 'pmt3377_wi';
         }
 
         if (preg_match('/PMP7480D3G_QUAD/', $useragent)) {
-            return new Prestigio\PrestigioPmp7480D3gQuad($useragent);
+            $deviceCode = 'pmp7480d3g_quad';
         }
 
         if (preg_match('/PMP7380D3G/', $useragent)) {
-            return new Prestigio\PrestigioPmp7380d3g($useragent);
+            $deviceCode = 'pmp7380d3g';
         }
 
         if (preg_match('/PMP7280C3G_QUAD/', $useragent)) {
-            return new Prestigio\PrestigioPmp7280c3gQuad($useragent);
+            $deviceCode = 'pmp7280c3g_quad';
         }
 
         if (preg_match('/PMP7280C3G/', $useragent)) {
-            return new Prestigio\PrestigioPmp7280c3g($useragent);
+            $deviceCode = 'pmp7280c3g';
         }
 
         if (preg_match('/PMP7170B3G/', $useragent)) {
-            return new Prestigio\PrestigioPmp7170B3g($useragent);
+            $deviceCode = 'pmp7170b3g';
         }
 
         if (preg_match('/PMP7100D3G/', $useragent)) {
-            return new Prestigio\PrestigioPmp7100D3g($useragent);
+            $deviceCode = 'pmp7100d3g';
         }
 
         if (preg_match('/PMP7079D_QUAD/', $useragent)) {
-            return new Prestigio\PrestigioPmp7079dQuad($useragent);
+            $deviceCode = 'pmp7079d_quad';
         }
 
         if (preg_match('/PMP7079D3G_QUAD/', $useragent)) {
-            return new Prestigio\PrestigioPmp7079d3gQuad($useragent);
+            $deviceCode = 'pmp7079d3g_quad';
         }
 
         if (preg_match('/PMP7074B3GRU/', $useragent)) {
-            return new Prestigio\PrestigioPmp7074b3gru($useragent);
+            $deviceCode = 'pmp7074b3gru';
         }
 
         if (preg_match('/PMP7070C3G/', $useragent)) {
-            return new Prestigio\PrestigioPmp7070c3g($useragent);
+            $deviceCode = 'pmp7070c3g';
         }
 
         if (preg_match('/PMP5785C_QUAD/', $useragent)) {
-            return new Prestigio\PrestigioPmp5785cQuad($useragent);
+            $deviceCode = 'pmp5785c_quad';
         }
 
         if (preg_match('/PMP5785C3G_QUAD/', $useragent)) {
-            return new Prestigio\PrestigioPmp5785c3gQuad($useragent);
+            $deviceCode = 'pmp5785c3g_quad';
         }
 
         if (preg_match('/PMP5770D/', $useragent)) {
-            return new Prestigio\PrestigioPmp5770d($useragent);
+            $deviceCode = 'pmp5770d';
         }
 
         if (preg_match('/PMP5670C_DUO/', $useragent)) {
-            return new Prestigio\PrestigioPmp5670c($useragent);
+            $deviceCode = 'pmp5670c_duo';
         }
 
         if (preg_match('/PMP5580C/', $useragent)) {
-            return new Prestigio\PrestigioPmp5580c($useragent);
+            $deviceCode = 'pmp5580c';
         }
 
         if (preg_match('/PMP5570C/', $useragent)) {
-            return new Prestigio\PrestigioPmp5570c($useragent);
+            $deviceCode = 'pmp5570c';
         }
 
         if (preg_match('/PMP5297C_QUAD/', $useragent)) {
-            return new Prestigio\PrestigioPmp5297cQuad($useragent);
+            $deviceCode = 'pmp5297c_quad';
         }
 
         if (preg_match('/PMP5197DULTRA/', $useragent)) {
-            return new Prestigio\PrestigioPmp5197dUltra($useragent);
+            $deviceCode = 'pmp5197dultra';
         }
 
         if (preg_match('/PMP5101C_QUAD/', $useragent)) {
-            return new Prestigio\PrestigioPmp5101cQuad($useragent);
+            $deviceCode = 'pmp5101c_quad';
         }
 
         if (preg_match('/PMP5080CPRO/', $useragent)) {
-            return new Prestigio\PrestigioPmp5080cPro($useragent);
+            $deviceCode = 'pmp5080cpro';
         }
 
         if (preg_match('/PMP5080B/', $useragent)) {
-            return new Prestigio\MultipadPmp5080b($useragent);
+            $deviceCode = 'pmp5080b';
         }
 
         if (preg_match('/PMP3970B/', $useragent)) {
-            return new Prestigio\PrestigioPmp3970b($useragent);
+            $deviceCode = 'pmp3970b';
         }
 
         if (preg_match('/PMP3870C/', $useragent)) {
-            return new Prestigio\PrestigioPmp3870c($useragent);
+            $deviceCode = 'pmp3870c';
         }
 
         if (preg_match('/PMP3370B/', $useragent)) {
-            return new Prestigio\PrestigioPmp3370b($useragent);
+            $deviceCode = 'pmp3370b';
         }
 
         if (preg_match('/PMP3074BRU/', $useragent)) {
-            return new Prestigio\PrestigioPmp3074bru($useragent);
+            $deviceCode = 'pmp3074bru';
         }
 
         if (preg_match('/PMP3007C/', $useragent)) {
-            return new Prestigio\PrestigioPmp3007c($useragent);
+            $deviceCode = 'pmp3007c';
         }
 
         if (preg_match('/PAP7600DUO/', $useragent)) {
-            return new Prestigio\PrestigioPap7600Duo($useragent);
+            $deviceCode = 'pap7600duo';
         }
 
         if (preg_match('/PAP5503/', $useragent)) {
-            return new Prestigio\PrestigioPap5503($useragent);
+            $deviceCode = 'pap5503';
         }
 
         if (preg_match('/PAP5044DUO/', $useragent)) {
-            return new Prestigio\PrestigioPap5044Duo($useragent);
+            $deviceCode = 'pap5044duo';
         }
 
         if (preg_match('/PAP5000TDUO/', $useragent)) {
-            return new Prestigio\PrestigioPap5000tDuo($useragent);
+            $deviceCode = 'pap5000tduo';
         }
 
         if (preg_match('/PAP5000DUO/', $useragent)) {
-            return new Prestigio\PrestigioPap5000Duo($useragent);
+            $deviceCode = 'pap5000duo';
         }
 
         if (preg_match('/PAP4500DUO/', $useragent)) {
-            return new Prestigio\PrestigioPap4500Duo($useragent);
+            $deviceCode = 'pap4500duo';
         }
 
         if (preg_match('/PAP4044DUO/', $useragent)) {
-            return new Prestigio\PrestigioPap4044Duo($useragent);
+            $deviceCode = 'pap4044duo';
         }
 
         if (preg_match('/PAP3350DUO/', $useragent)) {
-            return new Prestigio\PrestigioPap3350Duo($useragent);
+            $deviceCode = 'pap3350duo';
         }
 
         if (preg_match('/PSP8500/', $useragent)) {
-            return new Prestigio\PrestigioPsp8500Duo($useragent);
+            $deviceCode = 'psp8500';
         }
 
         if (preg_match('/PSP8400/', $useragent)) {
-            return new Prestigio\PrestigioPsp8400Duo($useragent);
+            $deviceCode = 'psp8400';
         }
 
         if (preg_match('/GV7777/', $useragent)) {
-            return new Prestigio\PrestigioGv7777($useragent);
+            $deviceCode = 'gv7777';
         }
 
-        return new Prestigio\Prestigio($useragent);
+        $deviceCode = 'general prestigio device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

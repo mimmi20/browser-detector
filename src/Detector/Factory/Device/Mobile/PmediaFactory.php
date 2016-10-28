@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Pmedia;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class PmediaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/pmsmart450/i', $useragent)) {
-            return new Pmedia\PmediaPmSmart450($useragent);
+            $deviceCode = 'pmsmart450';
         }
 
-        return new Pmedia\Pmedia($useragent);
+        $deviceCode = 'general pmedia device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

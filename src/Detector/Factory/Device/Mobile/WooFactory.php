@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Woo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class WooFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SP\-6020 QUASAR/', $useragent)) {
-            return new Woo\WooSp6020($useragent);
+            $deviceCode = 'sp6020';
         }
 
-        return new Woo\Woo($useragent);
+        $deviceCode = 'general woo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Sprd;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,17 +53,19 @@ class SprdFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SPHS\_on\_Hsdroid/i', $useragent)) {
-            return new Sprd\SprdSphs($useragent);
+            $deviceCode = 'sphs on hsdroid';
         }
 
         if (preg_match('/GT\-A7100/i', $useragent)) {
-            return new Sprd\SprdGtA7100($useragent);
+            $deviceCode = 'gt-a7100';
         }
 
         if (preg_match('/B51\+/i', $useragent)) {
-            return new Sprd\SprdB51plus($useragent);
+            $deviceCode = 'b51+';
         }
 
-        return new Sprd\Sprd($useragent);
+        $deviceCode = 'general sprd device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

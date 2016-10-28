@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Irbis;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,26 +52,28 @@ class IrbisFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general irbis device';
+
         if (preg_match('/TX68/', $useragent)) {
-            return new Irbis\IrbisTx68($useragent);
+            $deviceCode = 'tx68';
         }
 
         if (preg_match('/TX18/', $useragent)) {
-            return new Irbis\IrbisTx18($useragent);
+            $deviceCode = 'tx18';
         }
 
         if (preg_match('/TX17/', $useragent)) {
-            return new Irbis\IrbisTx17($useragent);
+            $deviceCode = 'tx17';
         }
 
         if (preg_match('/TX08/', $useragent)) {
-            return new Irbis\IrbisTx08($useragent);
+            $deviceCode = 'tx08';
         }
 
         if (preg_match('/TG97/', $useragent)) {
-            return new Irbis\IrbisTg97($useragent);
+            $deviceCode = 'tg97';
         }
 
-        return new Irbis\Irbis($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

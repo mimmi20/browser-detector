@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Keener;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class KeenerFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general keener device';
+
         if (preg_match('/k\-8s/i', $useragent)) {
-            return new Keener\KeenerK8s($useragent);
+            $deviceCode = 'k-8s';
         }
 
-        return new Keener\Keener($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

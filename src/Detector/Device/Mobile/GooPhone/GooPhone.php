@@ -53,8 +53,8 @@ class GooPhone extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'general Gtide Device';
-        $this->marketingName     = 'general Gtide Device';
+        $this->deviceName        = 'general GooPhone Device';
+        $this->marketingName     = 'general GooPhone Device';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('GooPhone')->getName();
         $this->brand             = CompanyFactory::get('GooPhone')->getBrandName();

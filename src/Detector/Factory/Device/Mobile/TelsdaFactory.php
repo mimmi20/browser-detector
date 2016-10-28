@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Telsda;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class TelsdaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/T9666\-1/', $useragent)) {
-            return new Telsda\TelsdaT96661($useragent);
+            $deviceCode = 't9666-1';
         }
 
-        return new Telsda\Telsda($useragent);
+        $deviceCode = 'general telsda device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

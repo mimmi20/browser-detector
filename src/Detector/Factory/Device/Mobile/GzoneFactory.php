@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Gzone;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class GzoneFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general gzone device';
+
         if (preg_match('/cal21/i', $useragent)) {
-            return new Gzone\GzoneCal21($useragent);
+            $deviceCode = 'cal21';
         }
 
-        return new Gzone\Gzone($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

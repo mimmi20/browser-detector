@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Mobistel;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,37 +53,39 @@ class MobistelFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/cynus t6/i', $useragent)) {
-            return new Mobistel\MobistelCynusT6($useragent);
+            $deviceCode = 'cynus t6';
         }
 
         if (preg_match('/cynus t5/i', $useragent)) {
-            return new Mobistel\MobistelCynusT5($useragent);
+            $deviceCode = 'cynus t5';
         }
 
         if (preg_match('/cynus t2/i', $useragent)) {
-            return new Mobistel\MobistelCynusT2($useragent);
+            $deviceCode = 'cynus t2';
         }
 
         if (preg_match('/cynus t1/i', $useragent)) {
-            return new Mobistel\MobistelCynusT1($useragent);
+            $deviceCode = 'cynus t1';
         }
 
         if (preg_match('/cynus f5/i', $useragent)) {
-            return new Mobistel\MobistelCynusF5($useragent);
+            $deviceCode = 'cynus f5';
         }
 
         if (preg_match('/cynus f4/i', $useragent)) {
-            return new Mobistel\MobistelCynusF4($useragent);
+            $deviceCode = 'mt-7521s';
         }
 
         if (preg_match('/cynus f3/i', $useragent)) {
-            return new Mobistel\MobistelCynusF3($useragent);
+            $deviceCode = 'cynus f3';
         }
 
         if (preg_match('/cynus e1/i', $useragent)) {
-            return new Mobistel\MobistelCynusE1($useragent);
+            $deviceCode = 'cynus e1';
         }
 
-        return new Mobistel\Mobistel($useragent);
+        $deviceCode = 'general mobistel device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

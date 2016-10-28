@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Nec;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,21 +53,23 @@ class NecFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/N905i/i', $useragent)) {
-            return new Nec\NecN905i($useragent);
+            $deviceCode = 'n905i';
         }
 
         if (preg_match('/N705i/i', $useragent)) {
-            return new Nec\NecN705i($useragent);
+            $deviceCode = 'n705i';
         }
 
         if (preg_match('/0912/i', $useragent)) {
-            return new Nec\Nec0912($useragent);
+            $deviceCode = '0912';
         }
 
         if (preg_match('/N\-06E/', $useragent)) {
-            return new Nec\NecN06e($useragent);
+            $deviceCode = 'n-06e';
         }
 
-        return new Nec\Nec($useragent);
+        $deviceCode = 'general nec device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

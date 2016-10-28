@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Vivo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class VivoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Y22/', $useragent)) {
-            return new Vivo\VivoY22($useragent);
+            $deviceCode = 'y22';
         }
 
-        return new Vivo\Vivo($useragent);
+        $deviceCode = 'general vivo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

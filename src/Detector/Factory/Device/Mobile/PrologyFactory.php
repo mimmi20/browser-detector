@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Prology;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class PrologyFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TAB\-970/', $useragent)) {
-            return new Prology\PrologyTab970($useragent);
+            $deviceCode = 'tab-970';
         }
 
-        return new Prology\Prology($useragent);
+        $deviceCode = 'general prology device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

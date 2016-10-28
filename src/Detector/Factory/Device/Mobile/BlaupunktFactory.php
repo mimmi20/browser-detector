@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Blaupunkt;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,18 +52,20 @@ class BlaupunktFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general blaupunkt device';
+
         if (preg_match('/Atlantis 1010A/', $useragent)) {
-            return new Blaupunkt\BlaupunktAtlantis1010a($useragent);
+            $deviceCode = 'atlantis 1010a';
         }
 
         if (preg_match('/Endeavour 101L/i', $useragent)) {
-            return new Blaupunkt\BlaupunktEndeavour101l($useragent);
+            $deviceCode = 'endeavour 101l';
         }
 
         if (preg_match('/Endeavour 1010/i', $useragent)) {
-            return new Blaupunkt\BlaupunktEndeavour1010($useragent);
+            $deviceCode = 'endeavour 1010';
         }
 
-        return new Blaupunkt\Blaupunkt($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Spice;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,17 +53,19 @@ class SpiceFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/mi\-424/i', $useragent)) {
-            return new Spice\SpiceMi424($useragent);
+            $deviceCode = 'mi-424';
         }
 
         if (preg_match('/QT\-75/', $useragent)) {
-            return new Spice\SpiceQt75($useragent);
+            $deviceCode = 'qt-75';
         }
 
         if (preg_match('/I2I/', $useragent)) {
-            return new Spice\SpiceI2i($useragent);
+            $deviceCode = 'i2i';
         }
 
-        return new Spice\Spice($useragent);
+        $deviceCode = 'general spice device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Fly;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,82 +52,84 @@ class FlyFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general fly device';
+
         if (preg_match('/IQ4504/', $useragent)) {
-            return new Fly\FlyIq4504($useragent);
+            $deviceCode = 'iq4504';
         }
 
         if (preg_match('/IQ4502/', $useragent)) {
-            return new Fly\FlyIq4502($useragent);
+            $deviceCode = 'iq4502';
         }
 
         if (preg_match('/IQ4415/', $useragent)) {
-            return new Fly\FlyIq4415($useragent);
+            $deviceCode = 'iq4415';
         }
 
         if (preg_match('/IQ4411/', $useragent)) {
-            return new Fly\FlyIq4411($useragent);
+            $deviceCode = 'iq4411 quad energie2';
         }
 
         if (preg_match('/phoenix 2/i', $useragent)) {
-            return new Fly\FlyIq4410i($useragent);
+            $deviceCode = 'iq4410i';
         }
 
         if (preg_match('/IQ4490/', $useragent)) {
-            return new Fly\FlyIq4490($useragent);
+            $deviceCode = 'iq4490';
         }
 
         if (preg_match('/IQ4410/', $useragent)) {
-            return new Fly\FlyIq4410($useragent);
+            $deviceCode = 'iq4410 quad phoenix';
         }
 
         if (preg_match('/IQ4409/', $useragent)) {
-            return new Fly\FlyIq4409($useragent);
+            $deviceCode = 'iq4409 quad';
         }
 
         if (preg_match('/IQ4404/', $useragent)) {
-            return new Fly\FlyIq4404($useragent);
+            $deviceCode = 'iq4404';
         }
 
         if (preg_match('/IQ4403/', $useragent)) {
-            return new Fly\FlyIq4403($useragent);
+            $deviceCode = 'iq4403';
         }
 
         if (preg_match('/IQ456/', $useragent)) {
-            return new Fly\FlyIq456($useragent);
+            $deviceCode = 'iq456';
         }
 
         if (preg_match('/IQ452/', $useragent)) {
-            return new Fly\FlyIq452($useragent);
+            $deviceCode = 'iq452';
         }
 
         if (preg_match('/IQ450/', $useragent)) {
-            return new Fly\FlyIq450($useragent);
+            $deviceCode = 'iq450';
         }
 
         if (preg_match('/IQ449/', $useragent)) {
-            return new Fly\FlyIq449($useragent);
+            $deviceCode = 'iq449';
         }
 
         if (preg_match('/IQ448/', $useragent)) {
-            return new Fly\FlyIq448($useragent);
+            $deviceCode = 'iq448';
         }
 
         if (preg_match('/IQ444/', $useragent)) {
-            return new Fly\FlyIq444($useragent);
+            $deviceCode = 'iq444';
         }
 
         if (preg_match('/IQ442/', $useragent)) {
-            return new Fly\FlyIq442($useragent);
+            $deviceCode = 'iq442';
         }
 
         if (preg_match('/IQ436i/', $useragent)) {
-            return new Fly\FlyIq436i($useragent);
+            $deviceCode = 'iq436i';
         }
 
         if (preg_match('/IQ434/', $useragent)) {
-            return new Fly\FlyIq434($useragent);
+            $deviceCode = 'iq434';
         }
 
-        return new Fly\Fly($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Coolpad;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class CoolpadFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general coolpad device';
+
         if (preg_match('/N930/i', $useragent)) {
-            return new Coolpad\CoolpadN930($useragent);
+            $deviceCode = 'n930';
         }
 
-        return new Coolpad\Coolpad($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

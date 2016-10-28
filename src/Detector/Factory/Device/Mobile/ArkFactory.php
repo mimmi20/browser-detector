@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Ark;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class ArkFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general ark device';
+
         if (preg_match('/Benefit M3S/', $useragent)) {
-            return new Ark\ArkBenefitM3s($useragent);
+            $deviceCode = 'benefit m3s';
         }
 
-        return new Ark\Ark($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

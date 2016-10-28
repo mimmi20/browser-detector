@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\LePan;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class LePanFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general lepan device';
+
         if (preg_match('/LePanII/', $useragent)) {
-            return new LePan\LePanIi($useragent);
+            $deviceCode = 'lepan ii';
         }
 
         if (preg_match('/LePan/', $useragent)) {
-            return new LePan\LePan($useragent);
+            $deviceCode = 'lepan';
         }
 
-        return new LePan\GenericLePan($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

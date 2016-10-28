@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Nextbook;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class NextbookFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/NEXT/', $useragent)) {
-            return new Nextbook\NextbookNext($useragent);
+            $deviceCode = 'next';
         }
 
         if (preg_match('/DATAM803HC/', $useragent)) {
-            return new Nextbook\NextbookM803hc($useragent);
+            $deviceCode = 'm803hc';
         }
 
-        return new Nextbook\Nextbook($useragent);
+        $deviceCode = 'general nextbook device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

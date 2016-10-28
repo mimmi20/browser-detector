@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Neofonie;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class NeofonieFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/WeTab/', $useragent)) {
-            return new Neofonie\WeTab($useragent);
+            $deviceCode = 'wetab';
         }
 
-        return new Neofonie\Neofonie($useragent);
+        $deviceCode = 'general neofonie device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

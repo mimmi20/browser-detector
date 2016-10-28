@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Beeline;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class BeelineFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general beeline device';
+
         if (preg_match('/Beeline Tab/', $useragent)) {
-            return new Beeline\BeelineU2($useragent);
+            $deviceCode = 'tab';
         }
 
-        return new Beeline\Beeline($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

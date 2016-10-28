@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Logicom;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class LogicomFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general logicom device';
+
         if (preg_match('/S9782/', $useragent)) {
-            return new Logicom\LogicomS9782($useragent);
+            $deviceCode = 's9782';
         }
 
-        return new Logicom\Logicom($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

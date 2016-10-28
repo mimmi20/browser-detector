@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Caterpillar;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class CaterpillarFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general caterpillar device';
+
         if (preg_match('/B15Q/i', $useragent)) {
-            return new Caterpillar\CaterpillarB15q($useragent);
+            $deviceCode = 'b15q';
         }
 
         if (preg_match('/B15/i', $useragent)) {
-            return new Caterpillar\CaterpillarB15($useragent);
+            $deviceCode = 'b15';
         }
 
-        return new Caterpillar\Caterpillar($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

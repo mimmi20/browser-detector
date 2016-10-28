@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Arnova;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,46 +52,48 @@ class ArnovaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general arnova device';
+
         if (preg_match('/101 g4/i', $useragent)) {
-            return new Arnova\Arnova101G4($useragent);
+            $deviceCode = '101 g4';
         }
 
         if (preg_match('/AN10DG3/i', $useragent)) {
-            return new Arnova\Arnova10DG3($useragent);
+            $deviceCode = '10d g3';
         }
 
         if (preg_match('/AN10BG3/i', $useragent)) {
-            return new Arnova\Arnova10BG3($useragent);
+            $deviceCode = 'an10bg3';
         }
 
         if (preg_match('/AN9G2I/i', $useragent)) {
-            return new Arnova\Arnova9G2I($useragent);
+            $deviceCode = '9 g2';
         }
 
         if (preg_match('/AN7FG3/i', $useragent)) {
-            return new Arnova\Arnova7FG3($useragent);
+            $deviceCode = '7f g3';
         }
 
         if (preg_match('/AN7EG3/i', $useragent)) {
-            return new Arnova\Arnova7EG3($useragent);
+            $deviceCode = '7e g3';
         }
 
         if (preg_match('/AN7DG3/i', $useragent)) {
-            return new Arnova\Arnova7DG3($useragent);
+            $deviceCode = '7d g3';
         }
 
         if (preg_match('/AN7CG2/i', $useragent)) {
-            return new Arnova\Arnova7CG2($useragent);
+            $deviceCode = '7c g2';
         }
 
         if (preg_match('/AN7BG2DT/i', $useragent)) {
-            return new Arnova\Arnova7BG2DT($useragent);
+            $deviceCode = '7b g2 dt';
         }
 
         if (preg_match('/ARCHM901/i', $useragent)) {
-            return new Arnova\ArnovaArchm901($useragent);
+            $deviceCode = 'archm901';
         }
 
-        return new Arnova\Arnova($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

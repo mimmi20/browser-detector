@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Micromax;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,49 +53,51 @@ class MicromaxFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/X650/i', $useragent)) {
-            return new Micromax\MicromaxX650($useragent);
+            $deviceCode = 'x650';
         }
 
         if (preg_match('/A120/i', $useragent)) {
-            return new Micromax\MicromaxA120($useragent);
+            $deviceCode = 'a120';
         }
 
         if (preg_match('/A116/i', $useragent)) {
-            return new Micromax\MicromaxA116($useragent);
+            $deviceCode = 'a116';
         }
 
         if (preg_match('/A114/i', $useragent)) {
-            return new Micromax\MicromaxA114($useragent);
+            $deviceCode = 'a114';
         }
 
         if (preg_match('/A101/i', $useragent)) {
-            return new Micromax\MicromaxA101($useragent);
+            $deviceCode = 'micromax a101';
         }
 
         if (preg_match('/A093/i', $useragent)) {
-            return new Micromax\MicromaxA093($useragent);
+            $deviceCode = 'a093';
         }
 
         if (preg_match('/A065/i', $useragent)) {
-            return new Micromax\MicromaxA065($useragent);
+            $deviceCode = 'a065';
         }
 
         if (preg_match('/A59/i', $useragent)) {
-            return new Micromax\MicromaxA59($useragent);
+            $deviceCode = 'a59';
         }
 
         if (preg_match('/A40/i', $useragent)) {
-            return new Micromax\MicromaxA40($useragent);
+            $deviceCode = 'a40';
         }
 
         if (preg_match('/A35/i', $useragent)) {
-            return new Micromax\MicromaxA35($useragent);
+            $deviceCode = 'a35';
         }
 
         if (preg_match('/A27/i', $useragent)) {
-            return new Micromax\MicromaxA27($useragent);
+            $deviceCode = 'a27';
         }
 
-        return new Micromax\Micromax($useragent);
+        $deviceCode = 'general micromax device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

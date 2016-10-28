@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Sxz;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class SxzFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/PDX0\-01/i', $useragent)) {
-            return new Sxz\SxzPdx001($useragent);
+            $deviceCode = 'pdx0-01';
         }
 
-        return new Sxz\Sxz($useragent);
+        $deviceCode = 'general sxz device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

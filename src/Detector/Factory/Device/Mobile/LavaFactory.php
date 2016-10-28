@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Lava;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class LavaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general lava device';
+
         if (preg_match('/Spark284/', $useragent)) {
-            return new Lava\LavaSpark284($useragent);
+            $deviceCode = 'spark 284';
         }
 
         if (preg_match('/KKT20/', $useragent)) {
-            return new Lava\LavaKkt20($useragent);
+            $deviceCode = 'kkt20';
         }
 
-        return new Lava\Lava($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

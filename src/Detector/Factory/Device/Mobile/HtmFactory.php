@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Htm;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class HtmFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general htm device';
+
         if (preg_match('/MT\-GT\-A9500/i', $useragent)) {
-            return new Htm\HtmMtGtA9500($useragent);
+            $deviceCode = 'gt-a9500';
         }
 
-        return new Htm\Htm($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

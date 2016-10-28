@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Zopo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,45 +53,47 @@ class ZopoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ZP980/', $useragent)) {
-            return new Zopo\ZopoZp980($useragent);
+            $deviceCode = 'zp980';
         }
 
         if (preg_match('/ZP950\+/', $useragent)) {
-            return new Zopo\ZopoZp950Plus($useragent);
+            $deviceCode = 'zp950+';
         }
 
         if (preg_match('/ZP950/', $useragent)) {
-            return new Zopo\ZopoZp950($useragent);
+            $deviceCode = 'zp950';
         }
 
         if (preg_match('/ZP9(10|00H)/', $useragent)) {
-            return new Zopo\ZopoZp910($useragent);
+            $deviceCode = 'zp910';
         }
 
         if (preg_match('/ZP900/', $useragent)) {
-            return new Zopo\ZopoZp900($useragent);
+            $deviceCode = 'zp900';
         }
 
         if (preg_match('/ZP8(10|00H)/', $useragent)) {
-            return new Zopo\ZopoZp810($useragent);
+            $deviceCode = 'zp810';
         }
 
         if (preg_match('/ZP500/', $useragent)) {
-            return new Zopo\ZopoZp500($useragent);
+            $deviceCode = 'zp500';
         }
 
         if (preg_match('/ZP300/', $useragent)) {
-            return new Zopo\ZopoZp300($useragent);
+            $deviceCode = 'zp300';
         }
 
         if (preg_match('/ZP200/', $useragent)) {
-            return new Zopo\ZopoZp200($useragent);
+            $deviceCode = 'zp200';
         }
 
         if (preg_match('/ZP100/', $useragent)) {
-            return new Zopo\ZopoZp100($useragent);
+            $deviceCode = 'zp100';
         }
 
-        return new Zopo\Zopo($useragent);
+        $deviceCode = 'general zopo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

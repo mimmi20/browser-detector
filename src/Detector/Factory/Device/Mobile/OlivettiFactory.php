@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Olivetti;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,17 +53,19 @@ class OlivettiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/OP111/', $useragent)) {
-            return new Olivetti\OP111($useragent);
+            $deviceCode = 'op111';
         }
 
         if (preg_match('/OP110/', $useragent)) {
-            return new Olivetti\OP110($useragent);
+            $deviceCode = 'op110';
         }
 
         if (preg_match('/OP070/', $useragent)) {
-            return new Olivetti\OP070($useragent);
+            $deviceCode = 'olipad 70';
         }
 
-        return new Olivetti\Olivetti($useragent);
+        $deviceCode = 'general olivetti device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

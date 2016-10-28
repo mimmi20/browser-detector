@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Ciotcud;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class CiotcudFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general ciotcud device';
+
         if (preg_match('/l930/i', $useragent)) {
-            return new Ciotcud\CiotcudL930($useragent);
+            $deviceCode = 'l930';
         }
 
-        return new Ciotcud\Ciotcud($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

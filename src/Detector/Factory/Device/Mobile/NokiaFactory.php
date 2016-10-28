@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Nokia;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,809 +53,811 @@ class NokiaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/genm14/i', $useragent)) {
-            return new Nokia\NokiaXl2($useragent);
+            $deviceCode = 'xl2';
         }
 
         if (preg_match('/nokia_xl/i', $useragent)) {
-            return new Nokia\NokiaXl($useragent);
+            $deviceCode = 'xl';
         }
 
         if (preg_match('/(lumia 650|id336)/i', $useragent)) {
-            return new Nokia\NokiaLumia650($useragent);
+            $deviceCode = 'lumia 650';
         }
 
         if (preg_match('/lumia 510/i', $useragent)) {
-            return new Nokia\NokiaLumia510($useragent);
+            $deviceCode = 'lumia 510';
         }
 
         if (preg_match('/(rm\-1113|lumia 640 lte)/i', $useragent)) {
-            return new Nokia\NokiaLumia640lte($useragent);
+            $deviceCode = 'rm-1113';
         }
 
         if (preg_match('/rm\-1090/i', $useragent)) {
-            return new Nokia\NokiaLumia535Rm1090($useragent);
+            $deviceCode = 'rm-1090';
         }
 
         if (preg_match('/rm\-1089/i', $useragent)) {
-            return new Nokia\NokiaLumia535Rm1089($useragent);
+            $deviceCode = 'rm-1089';
         }
 
         if (preg_match('/rm\-1072/i', $useragent)) {
-            return new Nokia\NokiaLumia640lteRm1072($useragent);
+            $deviceCode = 'rm-1072';
         }
 
         if (preg_match('/rm\-1073/i', $useragent)) {
-            return new Nokia\NokiaLumia640lteRm1073($useragent);
+            $deviceCode = 'rm-1073';
         }
 
         if (preg_match('/rm\-1074/i', $useragent)) {
-            return new Nokia\NokiaLumia640lteRm1074($useragent);
+            $deviceCode = 'rm-1074';
         }
 
         if (preg_match('/rm\-1076/i', $useragent)) {
-            return new Nokia\NokiaLumia640lteRm1076($useragent);
+            $deviceCode = 'rm-1076';
         }
 
         if (preg_match('/rm\-1077/i', $useragent)) {
-            return new Nokia\NokiaLumia640lteRm1077($useragent);
+            $deviceCode = 'rm-1077';
         }
 
         if (preg_match('/(rm\-1075|lumia 640 dual sim)/i', $useragent)) {
-            return new Nokia\NokiaLumia640lteRm1075($useragent);
+            $deviceCode = 'rm-1075';
         }
 
         if (preg_match('/rm\-1062/i', $useragent)) {
-            return new Nokia\NokiaLumia640xlRm1062($useragent);
+            $deviceCode = 'rm-1062';
         }
 
         if (preg_match('/rm\-1063/i', $useragent)) {
-            return new Nokia\NokiaLumia640xlRm1063($useragent);
+            $deviceCode = 'rm-1063';
         }
 
         if (preg_match('/rm\-1064/i', $useragent)) {
-            return new Nokia\NokiaLumia640xlRm1064($useragent);
+            $deviceCode = 'rm-1064';
         }
 
         if (preg_match('/rm\-1065/i', $useragent)) {
-            return new Nokia\NokiaLumia640xlRm1065($useragent);
+            $deviceCode = 'rm-1065';
         }
 
         if (preg_match('/rm\-1066/i', $useragent)) {
-            return new Nokia\NokiaLumia640xlRm1066($useragent);
+            $deviceCode = 'rm-1066';
         }
 
         if (preg_match('/rm\-1067/i', $useragent)) {
-            return new Nokia\NokiaLumia640xlRm1067($useragent);
+            $deviceCode = 'rm-1067';
         }
 
         if (preg_match('/rm\-1045/i', $useragent)) {
-            return new Nokia\NokiaLumia930Rm1045($useragent);
+            $deviceCode = 'rm-1045';
         }
 
         if (preg_match('/rm\-1038/i', $useragent)) {
-            return new Nokia\NokiaLumia735Rm1038($useragent);
+            $deviceCode = 'rm-1038';
         }
 
         if (preg_match('/(rm\-1031|lumia 532)/i', $useragent)) {
-            return new Nokia\NokiaLumia532($useragent);
+            $deviceCode = 'rm-1031';
         }
 
         if (preg_match('/rm\-1010/i', $useragent)) {
-            return new Nokia\NokiaLumia638($useragent);
+            $deviceCode = 'rm-1010';
         }
 
         if (preg_match('/rm\-994/i', $useragent)) {
-            return new Nokia\NokiaLumia1320Rm994($useragent);
+            $deviceCode = 'rm-994';
         }
 
         if (preg_match('/rm\-978/i', $useragent)) {
-            return new Nokia\NokiaLumia630Rm978($useragent);
+            $deviceCode = 'rm-978';
         }
 
         if (preg_match('/rm\-976/i', $useragent)) {
-            return new Nokia\NokiaLumia630Rm976($useragent);
+            $deviceCode = 'rm-976';
         }
 
         if (preg_match('/rm\-974/i', $useragent)) {
-            return new Nokia\NokiaLumia635Rm974($useragent);
+            $deviceCode = 'rm-974';
         }
 
         if (preg_match('/rm\-914/i', $useragent)) {
-            return new Nokia\NokiaLumia520Rm914($useragent);
+            $deviceCode = 'lumia 520 rm-914';
         }
 
         if (preg_match('/rm\-846/i', $useragent)) {
-            return new Nokia\NokiaLumia620Rm846($useragent);
+            $deviceCode = 'rm-846';
         }
 
         if (preg_match('/rm\-997/i', $useragent)) {
-            return new Nokia\NokiaLumia526($useragent);
+            $deviceCode = 'rm-997';
         }
 
         if (preg_match('/lumia 521/i', $useragent)) {
-            return new Nokia\NokiaLumia521($useragent);
+            $deviceCode = 'lumia 521';
         }
 
         if (preg_match('/lumia 520/i', $useragent)) {
-            return new Nokia\NokiaLumia520($useragent);
+            $deviceCode = 'lumia 520';
         }
 
         if (preg_match('/lumia 530/i', $useragent)) {
-            return new Nokia\NokiaLumia530($useragent);
+            $deviceCode = 'lumia 530';
         }
 
         if (preg_match('/lumia 535/i', $useragent)) {
-            return new Nokia\NokiaLumia535($useragent);
+            $deviceCode = 'lumia 535';
         }
 
         if (preg_match('/lumia 540/i', $useragent)) {
-            return new Nokia\NokiaLumia540($useragent);
+            $deviceCode = 'lumia 540';
         }
 
         if (preg_match('/lumia 550/i', $useragent)) {
-            return new Nokia\NokiaLumia550($useragent);
+            $deviceCode = 'lumia 550';
         }
 
         if (preg_match('/lumia 610/i', $useragent)) {
-            return new Nokia\NokiaLumia610($useragent);
+            $deviceCode = 'lumia 610';
         }
 
         if (preg_match('/lumia 620/i', $useragent)) {
-            return new Nokia\NokiaLumia620($useragent);
+            $deviceCode = 'lumia 620';
         }
 
         if (preg_match('/lumia 625/i', $useragent)) {
-            return new Nokia\NokiaLumia625($useragent);
+            $deviceCode = 'lumia 625';
         }
 
         if (preg_match('/lumia 630/i', $useragent)) {
-            return new Nokia\NokiaLumia630($useragent);
+            $deviceCode = 'lumia 630';
         }
 
         if (preg_match('/lumia 635/i', $useragent)) {
-            return new Nokia\NokiaLumia635($useragent);
+            $deviceCode = 'lumia 635';
         }
 
         if (preg_match('/lumia 640 xl/i', $useragent)) {
-            return new Nokia\NokiaLumia640xl($useragent);
+            $deviceCode = 'lumia 640 xl';
         }
 
         if (preg_match('/lumia 640/i', $useragent)) {
-            return new Nokia\NokiaLumia640($useragent);
+            $deviceCode = 'lumia 640';
         }
 
         if (preg_match('/lumia 710/i', $useragent)) {
-            return new Nokia\NokiaLumia710($useragent);
+            $deviceCode = 'lumia 710';
         }
 
         if (preg_match('/lumia 720/i', $useragent)) {
-            return new Nokia\NokiaLumia720($useragent);
+            $deviceCode = 'lumia 720';
         }
 
         if (preg_match('/lumia 730/i', $useragent)) {
-            return new Nokia\NokiaLumia730($useragent);
+            $deviceCode = 'lumia 730';
         }
 
         if (preg_match('/lumia 735/i', $useragent)) {
-            return new Nokia\NokiaLumia735($useragent);
+            $deviceCode = 'lumia 735';
         }
 
         if (preg_match('/lumia 800/i', $useragent)) {
-            return new Nokia\NokiaLumia800($useragent);
+            $deviceCode = 'lumia 800';
         }
 
         if (preg_match('/lumia 820/i', $useragent)) {
-            return new Nokia\NokiaLumia820($useragent);
+            $deviceCode = 'lumia 820';
         }
 
         if (preg_match('/lumia 830/i', $useragent)) {
-            return new Nokia\NokiaLumia830($useragent);
+            $deviceCode = 'lumia 830';
         }
 
         if (preg_match('/lumia 900/i', $useragent)) {
-            return new Nokia\NokiaLumia900($useragent);
+            $deviceCode = 'lumia 900';
         }
 
         if (preg_match('/lumia 920/i', $useragent)) {
-            return new Nokia\NokiaLumia920($useragent);
+            $deviceCode = 'lumia 920';
         }
 
         if (preg_match('/(lumia|nokia) 925/i', $useragent)) {
-            return new Nokia\NokiaLumia925($useragent);
+            $deviceCode = 'lumia 925';
         }
 
         if (preg_match('/lumia 928/i', $useragent)) {
-            return new Nokia\NokiaLumia928($useragent);
+            $deviceCode = 'lumia 928';
         }
 
         if (preg_match('/lumia 930/i', $useragent)) {
-            return new Nokia\NokiaLumia930($useragent);
+            $deviceCode = 'lumia 930';
         }
 
         if (preg_match('/lumia 950 xl/i', $useragent)) {
-            return new Nokia\NokiaLumia950xl($useragent);
+            $deviceCode = 'lumia 950 xl';
         }
 
         if (preg_match('/lumia 950/i', $useragent)) {
-            return new Nokia\NokiaLumia950($useragent);
+            $deviceCode = 'lumia 950';
         }
 
         if (preg_match('/(lumia 1020|nokia; 909|arm; 909)/i', $useragent)) {
-            return new Nokia\NokiaLumia1020($useragent);
+            $deviceCode = 'lumia 1020';
         }
 
         if (preg_match('/lumia 1320/i', $useragent)) {
-            return new Nokia\NokiaLumia1320($useragent);
+            $deviceCode = 'lumia 1320';
         }
 
         if (preg_match('/lumia 1520/i', $useragent)) {
-            return new Nokia\NokiaLumia1520($useragent);
+            $deviceCode = 'lumia 1520';
         }
 
         if (preg_match('/lumia 435/i', $useragent)) {
-            return new Nokia\NokiaLumia435($useragent);
+            $deviceCode = 'lumia 435';
         }
 
         if (preg_match('/lumia/i', $useragent)) {
-            return new Nokia\NokiaLumia($useragent);
+            $deviceCode = 'lumia';
         }
 
         if (preg_match('/ N1 /', $useragent)) {
-            return new Nokia\NokiaN1($useragent);
+            $deviceCode = 'n1';
         }
 
         if (preg_match('/nokian81/i', $useragent)) {
-            return new Nokia\NokiaN81($useragent);
+            $deviceCode = 'n81';
         }
 
         if (preg_match('/nokian82/i', $useragent)) {
-            return new Nokia\NokiaN82($useragent);
+            $deviceCode = 'n82';
         }
 
         if (preg_match('/nokian85/i', $useragent)) {
-            return new Nokia\NokiaN85($useragent);
+            $deviceCode = 'n85';
         }
 
         if (preg_match('/nokian86/i', $useragent)) {
-            return new Nokia\NokiaN86($useragent);
+            $deviceCode = 'n86';
         }
 
         if (preg_match('/nokian8\-00/i', $useragent)) {
-            return new Nokia\NokiaN800($useragent);
+            $deviceCode = 'n8-00';
         }
 
         if (preg_match('/nokian8/i', $useragent)) {
-            return new Nokia\NokiaN8($useragent);
+            $deviceCode = 'n8';
         }
 
         if (preg_match('/nokian90/i', $useragent)) {
-            return new Nokia\NokiaN90($useragent);
+            $deviceCode = 'n90';
         }
 
         if (preg_match('/nokian91/i', $useragent)) {
-            return new Nokia\NokiaN91($useragent);
+            $deviceCode = 'n91';
         }
 
         if (preg_match('/nokian95/i', $useragent)) {
-            return new Nokia\NokiaN95($useragent);
+            $deviceCode = 'n95';
         }
 
         if (preg_match('/nokian96/i', $useragent)) {
-            return new Nokia\NokiaN96($useragent);
+            $deviceCode = 'n96';
         }
 
         if (preg_match('/nokian97/i', $useragent)) {
-            return new Nokia\NokiaN97($useragent);
+            $deviceCode = 'n97';
         }
 
         if (preg_match('/nokian900/i', $useragent)) {
-            return new Nokia\NokiaN900($useragent);
+            $deviceCode = 'n900';
         }
 
         if (preg_match('/nokian9/i', $useragent)) {
-            return new Nokia\NokiaN9($useragent);
+            $deviceCode = 'n9';
         }
 
         if (preg_match('/nokia ?n70/i', $useragent)) {
-            return new Nokia\NokiaN70($useragent);
+            $deviceCode = 'n70';
         }
 
         if (preg_match('/nokia n78/i', $useragent)) {
-            return new Nokia\NokiaN78($useragent);
+            $deviceCode = 'n78';
         }
 
         if (preg_match('/nokia ?n79/i', $useragent)) {
-            return new Nokia\NokiaN79($useragent);
+            $deviceCode = 'n79';
         }
 
         if (preg_match('/NokiaX2DS/i', $useragent)) {
-            return new Nokia\NokiaX2ds($useragent);
+            $deviceCode = 'x2ds';
         }
 
         if (preg_match('/NokiaX2\-00/i', $useragent)) {
-            return new Nokia\NokiaX200($useragent);
+            $deviceCode = 'x2-00';
         }
 
         if (preg_match('/NokiaX2\-01/i', $useragent)) {
-            return new Nokia\NokiaX201($useragent);
+            $deviceCode = 'x2-01';
         }
 
         if (preg_match('/NokiaX2\-02/i', $useragent)) {
-            return new Nokia\NokiaX202($useragent);
+            $deviceCode = 'x2-02';
         }
 
         if (preg_match('/NokiaX2\-05/i', $useragent)) {
-            return new Nokia\NokiaX205($useragent);
+            $deviceCode = 'x2-05';
         }
 
         if (preg_match('/NokiaX2/i', $useragent)) {
-            return new Nokia\NokiaX2($useragent);
+            $deviceCode = 'x2';
         }
 
         if (preg_match('/NokiaX3\-02/i', $useragent)) {
-            return new Nokia\NokiaX302($useragent);
+            $deviceCode = 'x3-02';
         }
 
         if (preg_match('/NokiaX3\-00/i', $useragent)) {
-            return new Nokia\NokiaX300($useragent);
+            $deviceCode = 'x3-00';
         }
 
         if (preg_match('/NokiaX3/i', $useragent)) {
-            return new Nokia\NokiaX3($useragent);
+            $deviceCode = 'x3';
         }
 
         if (preg_match('/NokiaX6\-00/i', $useragent)) {
-            return new Nokia\NokiaX600($useragent);
+            $deviceCode = 'x6-00';
         }
 
         if (preg_match('/NokiaX6/i', $useragent)) {
-            return new Nokia\NokiaX6($useragent);
+            $deviceCode = 'x6';
         }
 
         if (preg_match('/NokiaX7\-00/i', $useragent)) {
-            return new Nokia\NokiaX700($useragent);
+            $deviceCode = 'x7-00';
         }
 
         if (preg_match('/NokiaX7/i', $useragent)) {
-            return new Nokia\NokiaX7($useragent);
+            $deviceCode = 'x7';
         }
 
         if (preg_match('/NokiaE7\-00/i', $useragent)) {
-            return new Nokia\NokiaE700($useragent);
+            $deviceCode = 'e7-00';
         }
 
         if (preg_match('/NokiaE71\-1/i', $useragent)) {
-            return new Nokia\NokiaE711($useragent);
+            $deviceCode = 'e71-1';
         }
 
         if (preg_match('/NokiaE71/i', $useragent)) {
-            return new Nokia\NokiaE71($useragent);
+            $deviceCode = 'e71';
         }
 
         if (preg_match('/NokiaE72/i', $useragent)) {
-            return new Nokia\NokiaE72($useragent);
+            $deviceCode = 'e72';
         }
 
         if (preg_match('/NokiaE75/i', $useragent)) {
-            return new Nokia\NokiaE75($useragent);
+            $deviceCode = 'e75';
         }
 
         if (preg_match('/NokiaE7/i', $useragent)) {
-            return new Nokia\NokiaE7($useragent);
+            $deviceCode = 'e7';
         }
 
         if (preg_match('/NokiaE6\-00/i', $useragent)) {
-            return new Nokia\NokiaE600($useragent);
+            $deviceCode = 'e6-00';
         }
 
         if (preg_match('/NokiaE62/i', $useragent)) {
-            return new Nokia\NokiaE62($useragent);
+            $deviceCode = 'e62';
         }
 
         if (preg_match('/NokiaE63/i', $useragent)) {
-            return new Nokia\NokiaE63($useragent);
+            $deviceCode = 'e63';
         }
 
         if (preg_match('/NokiaE66/i', $useragent)) {
-            return new Nokia\NokiaE66($useragent);
+            $deviceCode = 'e66';
         }
 
         if (preg_match('/NokiaE6/i', $useragent)) {
-            return new Nokia\NokiaE6($useragent);
+            $deviceCode = 'e6';
         }
 
         if (preg_match('/NokiaE5\-00/i', $useragent)) {
-            return new Nokia\NokiaE500($useragent);
+            $deviceCode = 'e5-00';
         }
 
         if (preg_match('/NokiaE50/i', $useragent)) {
-            return new Nokia\NokiaE50($useragent);
+            $deviceCode = 'e50';
         }
 
         if (preg_match('/NokiaE51/i', $useragent)) {
-            return new Nokia\NokiaE51($useragent);
+            $deviceCode = 'e51';
         }
 
         if (preg_match('/NokiaE52/i', $useragent)) {
-            return new Nokia\NokiaE52($useragent);
+            $deviceCode = 'e52';
         }
 
         if (preg_match('/NokiaE55/i', $useragent)) {
-            return new Nokia\NokiaE55($useragent);
+            $deviceCode = 'e55';
         }
 
         if (preg_match('/NokiaE56/i', $useragent)) {
-            return new Nokia\NokiaE56($useragent);
+            $deviceCode = 'e56';
         }
 
         if (preg_match('/NokiaE5/i', $useragent)) {
-            return new Nokia\NokiaE5($useragent);
+            $deviceCode = 'e5';
         }
 
         if (preg_match('/NokiaE90/i', $useragent)) {
-            return new Nokia\NokiaE90($useragent);
+            $deviceCode = 'e90';
         }
 
         if (preg_match('/NokiaC7\-00/i', $useragent)) {
-            return new Nokia\NokiaC700($useragent);
+            $deviceCode = 'c7-00';
         }
 
         if (preg_match('/NokiaC7/i', $useragent)) {
-            return new Nokia\NokiaC7($useragent);
+            $deviceCode = 'nokia c7';
         }
 
         if (preg_match('/NokiaC6\-00/i', $useragent)) {
-            return new Nokia\NokiaC600($useragent);
+            $deviceCode = 'c6-00';
         }
 
         if (preg_match('/NokiaC6\-01/i', $useragent)) {
-            return new Nokia\NokiaC601($useragent);
+            $deviceCode = 'c6-01';
         }
 
         if (preg_match('/NokiaC6/i', $useragent)) {
-            return new Nokia\NokiaC6($useragent);
+            $deviceCode = 'c6';
         }
 
         if (preg_match('/NokiaC5\-00/i', $useragent)) {
-            return new Nokia\NokiaC500($useragent);
+            $deviceCode = 'c5-00';
         }
 
         if (preg_match('/NokiaC5\-03/i', $useragent)) {
-            return new Nokia\NokiaC503($useragent);
+            $deviceCode = 'c5-03';
         }
 
         if (preg_match('/NokiaC5\-05/i', $useragent)) {
-            return new Nokia\NokiaC505($useragent);
+            $deviceCode = 'c5-05';
         }
 
         if (preg_match('/NokiaC5/i', $useragent)) {
-            return new Nokia\NokiaC5($useragent);
+            $deviceCode = 'c5';
         }
 
         if (preg_match('/NokiaC3\-00/i', $useragent)) {
-            return new Nokia\NokiaC300($useragent);
+            $deviceCode = 'c3-00';
         }
 
         if (preg_match('/NokiaC3\-01/i', $useragent)) {
-            return new Nokia\NokiaC301($useragent);
+            $deviceCode = 'c3-01';
         }
 
         if (preg_match('/NokiaC3/i', $useragent)) {
-            return new Nokia\NokiaC3($useragent);
+            $deviceCode = 'c3';
         }
 
         if (preg_match('/NokiaC2\-01/i', $useragent)) {
-            return new Nokia\NokiaC201($useragent);
+            $deviceCode = 'c2-01';
         }
 
         if (preg_match('/NokiaC2\-02/i', $useragent)) {
-            return new Nokia\NokiaC202($useragent);
+            $deviceCode = 'c2-02';
         }
 
         if (preg_match('/NokiaC2\-03/i', $useragent)) {
-            return new Nokia\NokiaC203($useragent);
+            $deviceCode = 'c2-03';
         }
 
         if (preg_match('/NokiaC2\-05/i', $useragent)) {
-            return new Nokia\NokiaC205($useragent);
+            $deviceCode = 'c2-05';
         }
 
         if (preg_match('/NokiaC2\-06/i', $useragent)) {
-            return new Nokia\NokiaC206($useragent);
+            $deviceCode = 'c2-06';
         }
 
         if (preg_match('/NokiaC2/i', $useragent)) {
-            return new Nokia\NokiaC2($useragent);
+            $deviceCode = 'nokia c2';
         }
 
         if (preg_match('/NokiaC1\-01/i', $useragent)) {
-            return new Nokia\NokiaC101($useragent);
+            $deviceCode = 'c1-01';
         }
 
         if (preg_match('/NokiaC1/i', $useragent)) {
-            return new Nokia\NokiaC1($useragent);
+            $deviceCode = 'c1';
         }
 
         if (preg_match('/Nokia9500/i', $useragent)) {
-            return new Nokia\Nokia9500($useragent);
+            $deviceCode = '9500';
         }
 
         if (preg_match('/Nokia7510/i', $useragent)) {
-            return new Nokia\Nokia7510($useragent);
+            $deviceCode = '7510';
         }
 
         if (preg_match('/Nokia7230/i', $useragent)) {
-            return new Nokia\Nokia7230($useragent);
+            $deviceCode = '7230';
         }
 
         if (preg_match('/Nokia6730c/i', $useragent)) {
-            return new Nokia\Nokia6730c($useragent);
+            $deviceCode = '6730 classic';
         }
 
         if (preg_match('/Nokia6720c/i', $useragent)) {
-            return new Nokia\Nokia6720c($useragent);
+            $deviceCode = '6720 classic';
         }
 
         if (preg_match('/Nokia6710s/i', $useragent)) {
-            return new Nokia\Nokia6710s($useragent);
+            $deviceCode = '6710 slide';
         }
 
         if (preg_match('/Nokia6700s/i', $useragent)) {
-            return new Nokia\Nokia6700s($useragent);
+            $deviceCode = '6700s';
         }
 
         if (preg_match('/Nokia6700c/i', $useragent)) {
-            return new Nokia\Nokia6700c($useragent);
+            $deviceCode = '6700 classic';
         }
 
         if (preg_match('/Nokia6630/i', $useragent)) {
-            return new Nokia\Nokia6630($useragent);
+            $deviceCode = '6630';
         }
 
         if (preg_match('/Nokia6610I/i', $useragent)) {
-            return new Nokia\Nokia6610i($useragent);
+            $deviceCode = '6610i';
         }
 
         if (preg_match('/Nokia6555/i', $useragent)) {
-            return new Nokia\Nokia6555($useragent);
+            $deviceCode = '6555';
         }
 
         if (preg_match('/Nokia6500s/i', $useragent)) {
-            return new Nokia\Nokia6500s($useragent);
+            $deviceCode = '6500 slide';
         }
 
         if (preg_match('/Nokia6500c/i', $useragent)) {
-            return new Nokia\Nokia6500c($useragent);
+            $deviceCode = '6500 classic';
         }
 
         if (preg_match('/Nokia6303iclassic/i', $useragent)) {
-            return new Nokia\Nokia6303iClassic($useragent);
+            $deviceCode = '6303i classic';
         }
 
         if (preg_match('/Nokia6303classic/i', $useragent)) {
-            return new Nokia\Nokia6303Classic($useragent);
+            $deviceCode = '6303 classic';
         }
 
         if (preg_match('/Nokia6300/i', $useragent)) {
-            return new Nokia\Nokia6300($useragent);
+            $deviceCode = '6300';
         }
 
         if (preg_match('/Nokia6220c/i', $useragent)) {
-            return new Nokia\Nokia6220c($useragent);
+            $deviceCode = '6220 classic';
         }
 
         if (preg_match('/Nokia6210/i', $useragent)) {
-            return new Nokia\Nokia6210($useragent);
+            $deviceCode = '6210';
         }
 
         if (preg_match('/Nokia6131/i', $useragent)) {
-            return new Nokia\Nokia6131($useragent);
+            $deviceCode = '6131';
         }
 
         if (preg_match('/Nokia6120c/i', $useragent)) {
-            return new Nokia\Nokia6120c($useragent);
+            $deviceCode = '6120c';
         }
 
         if (preg_match('/Nokia5800d/i', $useragent)) {
-            return new Nokia\Nokia5800XpressMusic($useragent);
+            $deviceCode = '5800 xpressmusic';
         }
 
         if (preg_match('/Nokia5800/i', $useragent)) {
-            return new Nokia\Nokia5800($useragent);
+            $deviceCode = '5800';
         }
 
         if (preg_match('/Nokia5530c/i', $useragent)) {
-            return new Nokia\Nokia5530c($useragent);
+            $deviceCode = 'nokia 5530 classic';
         }
 
         if (preg_match('/Nokia5530/i', $useragent)) {
-            return new Nokia\Nokia5530($useragent);
+            $deviceCode = 'nokia 5530 classic';
         }
 
         if (preg_match('/Nokia5330c/i', $useragent)) {
-            return new Nokia\Nokia5330c($useragent);
+            $deviceCode = '5330 classic';
         }
 
         if (preg_match('/Nokia5310/i', $useragent)) {
-            return new Nokia\Nokia5310($useragent);
+            $deviceCode = '5310 xpressmusic';
         }
 
         if (preg_match('/Nokia5250/i', $useragent)) {
-            return new Nokia\Nokia5250($useragent);
+            $deviceCode = '5250';
         }
 
         if (preg_match('/Nokia5233/i', $useragent)) {
-            return new Nokia\Nokia5233($useragent);
+            $deviceCode = '5233';
         }
 
         if (preg_match('/Nokia5230/i', $useragent)) {
-            return new Nokia\Nokia5230($useragent);
+            $deviceCode = '5230';
         }
 
         if (preg_match('/Nokia5228/i', $useragent)) {
-            return new Nokia\Nokia5228($useragent);
+            $deviceCode = '5228';
         }
 
         if (preg_match('/Nokia5220XpressMusic/i', $useragent)) {
-            return new Nokia\Nokia5220XpressMusic($useragent);
+            $deviceCode = '5220 xpressmusic';
         }
 
         if (preg_match('/5130c\-2/i', $useragent)) {
-            return new Nokia\Nokia5130c2($useragent);
+            $deviceCode = '5130c-2';
         }
 
         if (preg_match('/Nokia5130c/i', $useragent)) {
-            return new Nokia\Nokia5130c($useragent);
+            $deviceCode = '5130 classic';
         }
 
         if (preg_match('/Nokia3710/i', $useragent)) {
-            return new Nokia\Nokia3710($useragent);
+            $deviceCode = '3710';
         }
 
         if (preg_match('/Nokia301\.1/i', $useragent)) {
-            return new Nokia\Nokia3011($useragent);
+            $deviceCode = '301.1';
         }
 
         if (preg_match('/Nokia301/i', $useragent)) {
-            return new Nokia\Nokia301($useragent);
+            $deviceCode = '301';
         }
 
         if (preg_match('/Nokia2760/i', $useragent)) {
-            return new Nokia\Nokia2760($useragent);
+            $deviceCode = '2760';
         }
 
         if (preg_match('/Nokia2730c/i', $useragent)) {
-            return new Nokia\Nokia2730c($useragent);
+            $deviceCode = '2730 classic';
         }
 
         if (preg_match('/Nokia2720a/i', $useragent)) {
-            return new Nokia\Nokia2720a($useragent);
+            $deviceCode = '2720a';
         }
 
         if (preg_match('/Nokia2700c/i', $useragent)) {
-            return new Nokia\Nokia2700c($useragent);
+            $deviceCode = '2700 classic';
         }
 
         if (preg_match('/nokia2630/i', $useragent)) {
-            return new Nokia\Nokia2630($useragent);
+            $deviceCode = '2630';
         }
 
         if (preg_match('/nokia2330c/i', $useragent)) {
-            return new Nokia\Nokia2330c($useragent);
+            $deviceCode = '2330 classic';
         }
 
         if (preg_match('/nokia2323c/i', $useragent)) {
-            return new Nokia\Nokia2323c($useragent);
+            $deviceCode = '2323c';
         }
 
         if (preg_match('/nokia2320c/i', $useragent)) {
-            return new Nokia\Nokia2320c($useragent);
+            $deviceCode = '2320c';
         }
 
         if (preg_match('/nokia808pureview/i', $useragent)) {
-            return new Nokia\Nokia808PureView($useragent);
+            $deviceCode = '808 pureview';
         }
 
         if (preg_match('/nokia701/i', $useragent)) {
-            return new Nokia\Nokia701($useragent);
+            $deviceCode = '701';
         }
 
         if (preg_match('/nokia700/i', $useragent)) {
-            return new Nokia\Nokia700($useragent);
+            $deviceCode = '700';
         }
 
         if (preg_match('/nokia603/i', $useragent)) {
-            return new Nokia\Nokia603($useragent);
+            $deviceCode = '603';
         }
 
         if (preg_match('/nokia515/i', $useragent)) {
-            return new Nokia\Nokia515($useragent);
+            $deviceCode = '515';
         }
 
         if (preg_match('/nokia501/i', $useragent)) {
-            return new Nokia\Nokia501($useragent);
+            $deviceCode = '501';
         }
 
         if (preg_match('/(nokia500|nokiaasha500)/i', $useragent)) {
-            return new Nokia\Nokia500($useragent);
+            $deviceCode = '500';
         }
 
         if (preg_match('/nokia311/i', $useragent)) {
-            return new Nokia\Nokia311($useragent);
+            $deviceCode = '311';
         }
 
         if (preg_match('/nokia309/i', $useragent)) {
-            return new Nokia\Nokia309($useragent);
+            $deviceCode = '309';
         }
 
         if (preg_match('/nokia308/i', $useragent)) {
-            return new Nokia\Nokia308($useragent);
+            $deviceCode = '308';
         }
 
         if (preg_match('/nokia306/i', $useragent)) {
-            return new Nokia\Nokia306($useragent);
+            $deviceCode = '306';
         }
 
         if (preg_match('/nokia305/i', $useragent)) {
-            return new Nokia\Nokia305($useragent);
+            $deviceCode = '305';
         }
 
         if (preg_match('/nokia303/i', $useragent)) {
-            return new Nokia\Nokia303($useragent);
+            $deviceCode = '303';
         }
 
         if (preg_match('/nokia302/i', $useragent)) {
-            return new Nokia\Nokia302($useragent);
+            $deviceCode = '302';
         }
 
         if (preg_match('/nokia300/i', $useragent)) {
-            return new Nokia\Nokia300($useragent);
+            $deviceCode = '300';
         }
 
         if (preg_match('/nokia220/i', $useragent)) {
-            return new Nokia\Nokia220($useragent);
+            $deviceCode = '220';
         }
 
         if (preg_match('/nokia210/i', $useragent)) {
-            return new Nokia\Nokia210($useragent);
+            $deviceCode = '210';
         }
 
         if (preg_match('/nokia206/i', $useragent)) {
-            return new Nokia\Nokia206($useragent);
+            $deviceCode = '206';
         }
 
         if (preg_match('/nokia205/i', $useragent)) {
-            return new Nokia\Nokia205($useragent);
+            $deviceCode = '205';
         }
 
         if (preg_match('/nokia203/i', $useragent)) {
-            return new Nokia\Nokia203($useragent);
+            $deviceCode = '203';
         }
 
         if (preg_match('/nokia201/i', $useragent)) {
-            return new Nokia\Nokia201($useragent);
+            $deviceCode = '201';
         }
 
         if (preg_match('/nokia200/i', $useragent)) {
-            return new Nokia\Nokia200($useragent);
+            $deviceCode = '200';
         }
 
         if (preg_match('/nokia113/i', $useragent)) {
-            return new Nokia\Nokia113($useragent);
+            $deviceCode = '113';
         }
 
         if (preg_match('/nokia112/i', $useragent)) {
-            return new Nokia\Nokia112($useragent);
+            $deviceCode = '112';
         }
 
         if (preg_match('/nokia110/i', $useragent)) {
-            return new Nokia\Nokia110($useragent);
+            $deviceCode = '110';
         }
 
         if (preg_match('/nokia109/i', $useragent)) {
-            return new Nokia\Nokia109($useragent);
+            $deviceCode = '109';
         }
 
-        return new Nokia\Nokia($useragent);
+        $deviceCode = 'general nokia device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Version;
 
 use BrowserDetector\Version\Version;
+use BrowserDetector\Version\VersionFactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -39,7 +40,7 @@ use BrowserDetector\Version\Version;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class FirefoxOs
+class FirefoxOs implements VersionFactoryInterface
 {
     /**
      * returns the version of the operating system/platform

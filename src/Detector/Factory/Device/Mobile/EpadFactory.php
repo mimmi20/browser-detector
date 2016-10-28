@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Epad;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class EpadFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general epad device';
+
         if (preg_match('/p7901a/i', $useragent)) {
-            return new Epad\EpadP7901a($useragent);
+            $deviceCode = 'p7901a';
         }
 
-        return new Epad\Epad($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

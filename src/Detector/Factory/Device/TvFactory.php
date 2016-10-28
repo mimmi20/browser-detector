@@ -31,7 +31,8 @@
 
 namespace BrowserDetector\Detector\Factory\Device;
 
-use BrowserDetector\Detector\Device\Tv;
+use BrowserDetector\Detector\Device;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,142 +52,144 @@ class TvFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general tv device';
+
         if (preg_match('/xbox one/i', $useragent)) {
-            return new Tv\MicrosoftXboxOne($useragent);
+            $deviceCode = 'xbox one';
         }
 
         if (preg_match('/xbox/i', $useragent)) {
-            return new Tv\MicrosoftXbox($useragent);
+            $deviceCode = 'xbox 360';
         }
 
         if (preg_match('/dlink\.dsm380/i', $useragent)) {
-            return new Tv\DlinkDsm380($useragent);
+            $deviceCode = 'dsm 380';
         }
 
         if (preg_match('/NSZ\-GS7\/GX70/', $useragent)) {
-            return new Tv\SonyNszGs7Gx70($useragent);
+            $deviceCode = 'nsz-gs7/gx70';
         }
 
         if (preg_match('/googletv/i', $useragent)) {
-            return new Tv\GoogleTv($useragent);
+            $deviceCode = 'google tv';
         }
 
         if (preg_match('/idl\-6651n/i', $useragent)) {
-            return new Tv\Idl6651n($useragent);
+            $deviceCode = 'idl-6651n';
         }
 
         if (preg_match('/loewe; sl32x/i', $useragent)) {
-            return new Tv\LoeweSl32x($useragent);
+            $deviceCode = 'sl32x';
         }
 
         if (preg_match('/loewe; sl121/i', $useragent)) {
-            return new Tv\LoeweSl121($useragent);
+            $deviceCode = 'sl121';
         }
 
         if (preg_match('/loewe; sl150/i', $useragent)) {
-            return new Tv\LoeweSl150($useragent);
+            $deviceCode = 'sl150';
         }
 
         if (preg_match('/lf1v464/i', $useragent)) {
-            return new Tv\ThomsonLf1v464($useragent);
+            $deviceCode = 'lf1v464';
         }
 
         if (preg_match('/lf1v401/i', $useragent)) {
-            return new Tv\ThomsonLf1v401($useragent);
+            $deviceCode = 'lf1v401';
         }
 
         if (preg_match('/lf1v394/i', $useragent)) {
-            return new Tv\ThomsonLf1v394($useragent);
+            $deviceCode = 'lf1v394';
         }
 
         if (preg_match('/lf1v373/i', $useragent)) {
-            return new Tv\ThomsonLf1v373($useragent);
+            $deviceCode = 'lf1v373';
         }
 
         if (preg_match('/lf1v325/i', $useragent)) {
-            return new Tv\ThomsonLf1v325($useragent);
+            $deviceCode = 'lf1v325';
         }
 
         if (preg_match('/lf1v307/i', $useragent)) {
-            return new Tv\ThomsonLf1v307($useragent);
+            $deviceCode = 'lf1v307';
         }
 
         if (preg_match('/NETRANGEMMH/', $useragent)) {
-            return new Tv\NetrangeMmh($useragent);
+            $deviceCode = 'netrangemmh';
         }
 
         if (preg_match('/viera/i', $useragent)) {
-            return new Tv\PanasonicViera($useragent);
+            $deviceCode = 'viera tv';
         }
 
         if (preg_match('/AVM\-2012/', $useragent)) {
-            return new Tv\PhilipsAvm2012($useragent);
+            $deviceCode = 'blueray player';
         }
 
         if (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
-            return new Tv\PhilipsTv($useragent);
+            $deviceCode = 'general philips tv';
         }
 
         if (preg_match('/Mxl661L32/', $useragent)) {
-            return new Tv\SamsungSmartTv($useragent);
+            $deviceCode = 'samsung smart tv';
         }
 
         if (preg_match('/SMART\-TV/', $useragent)) {
-            return new Tv\SamsungSmartTv($useragent);
+            $deviceCode = 'samsung smart tv';
         }
 
         if (preg_match('/KDL32HX755/', $useragent)) {
-            return new Tv\SonyKdl32hx755($useragent);
+            $deviceCode = 'kdl32hx755';
         }
 
         if (preg_match('/KDL32W655A/', $useragent)) {
-            return new Tv\SonyKdl32w655a($useragent);
+            $deviceCode = 'kdl32w655a';
         }
 
         if (preg_match('/KDL37EX720/', $useragent)) {
-            return new Tv\SonyKdl37ex720($useragent);
+            $deviceCode = 'kdl37ex720';
         }
 
         if (preg_match('/KDL42W655A/', $useragent)) {
-            return new Tv\SonyKdl42w655a($useragent);
+            $deviceCode = 'kdl42w655a';
         }
 
         if (preg_match('/KDL40EX720/', $useragent)) {
-            return new Tv\SonyKdl40ex720($useragent);
+            $deviceCode = 'kdl40ex720';
         }
 
         if (preg_match('/KDL50W815B/', $useragent)) {
-            return new Tv\SonyKdl50w815b($useragent);
+            $deviceCode = 'kdl50w815b';
         }
 
         if (preg_match('/SonyDTV115/', $useragent)) {
-            return new Tv\SonyDtv115($useragent);
+            $deviceCode = 'dtv115';
         }
 
         if (preg_match('/technisat digicorder isio s/i', $useragent)) {
-            return new Tv\TechniSatDigiCorderIsioS($useragent);
+            $deviceCode = 'digicorder isio s';
         }
 
         if (preg_match('/technisat digit isio s/i', $useragent)) {
-            return new Tv\TechniSatDigitIsioS($useragent);
+            $deviceCode = 'digit isio s';
         }
 
         if (preg_match('/TechniSat MultyVision ISIO/', $useragent)) {
-            return new Tv\TechniSatMultyVisionIsio($useragent);
+            $deviceCode = 'multyvision isio';
         }
 
         if (preg_match('/AQUOSBrowser/', $useragent)) {
-            return new Tv\SharpAquosTv($useragent);
+            $deviceCode = 'aquos tv';
         }
 
         if (preg_match('/(CX919|gxt_dongle_3188)/', $useragent)) {
-            return new Tv\AndoerCx919($useragent);
+            $deviceCode = 'cx919';
         }
 
         if (preg_match('/Apple TV/', $useragent)) {
-            return new Tv\AppleTv($useragent);
+            $deviceCode = 'appletv';
         }
 
-        return new Tv\GeneralTv($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

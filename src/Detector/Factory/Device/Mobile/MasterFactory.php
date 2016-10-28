@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Master;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MasterFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Smartphone650/', $useragent)) {
-            return new Master\MasterSmartphone650($useragent);
+            $deviceCode = 'smartphone 650';
         }
 
-        return new Master\Master($useragent);
+        $deviceCode = 'general master device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

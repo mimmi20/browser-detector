@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Jaytech;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class JaytechFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general jaytech device';
+
         if (preg_match('/tpc\-pa10\.1m/i', $useragent)) {
-            return new Jaytech\JaytechTpcPa10($useragent);
+            $deviceCode = 'pa10.1m';
         }
 
-        return new Jaytech\Jaytech($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

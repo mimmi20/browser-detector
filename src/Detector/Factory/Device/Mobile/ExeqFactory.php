@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Exeq;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class ExeqFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general exeq device';
+
         if (preg_match('/p\-720/i', $useragent)) {
-            return new Exeq\ExeqP720($useragent);
+            $deviceCode = 'p-720';
         }
 
-        return new Exeq\Exeq($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

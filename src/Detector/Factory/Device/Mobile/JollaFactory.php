@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Jolla;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class JollaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general jolla device';
+
         if (preg_match('/sailfish/i', $useragent)) {
-            return new Jolla\JollaSailfish($useragent);
+            $deviceCode = 'sailfish';
         }
 
-        return new Jolla\Jolla($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

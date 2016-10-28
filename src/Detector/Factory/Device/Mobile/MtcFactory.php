@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Mtc;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class MtcFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SMART Run/', $useragent)) {
-            return new Mtc\MtcSmartRun($useragent);
+            $deviceCode = 'smart run';
         }
 
         if (preg_match('/982/', $useragent)) {
-            return new Mtc\Mtc982($useragent);
+            $deviceCode = '982';
         }
 
-        return new Mtc\Mtc($useragent);
+        $deviceCode = 'general mtc device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

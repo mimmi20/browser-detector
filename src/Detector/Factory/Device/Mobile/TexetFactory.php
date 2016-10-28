@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Texet;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,41 +53,43 @@ class TexetFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/x\-pad ix 7 3g/i', $useragent)) {
-            return new Texet\TexetTm7068($useragent);
+            $deviceCode = 'tm-7068';
         }
 
         if (preg_match('/x\-pad lite 7\.1/i', $useragent)) {
-            return new Texet\TexetTm7066($useragent);
+            $deviceCode = 'tm-7066';
         }
 
         if (preg_match('/x\-pad style 7\.1 3g/i', $useragent)) {
-            return new Texet\TexetTm7058($useragent);
+            $deviceCode = 'tm-7058';
         }
 
         if (preg_match('/x\-navi/i', $useragent)) {
-            return new Texet\TexetTm4672($useragent);
+            $deviceCode = 'tm-4672';
         }
 
         if (preg_match('/tm\-3204r/i', $useragent)) {
-            return new Texet\TexetTm3204r($useragent);
+            $deviceCode = 'tm-3204r';
         }
 
         if (preg_match('/tm\-7055hd/i', $useragent)) {
-            return new Texet\TexetTm7055hd($useragent);
+            $deviceCode = 'tm-7055hd';
         }
 
         if (preg_match('/tm\-7058hd/i', $useragent)) {
-            return new Texet\TexetTm7058hd($useragent);
+            $deviceCode = 'tm-7058hd';
         }
 
         if (preg_match('/tm\-7058/i', $useragent)) {
-            return new Texet\TexetTm7058($useragent);
+            $deviceCode = 'tm-7058';
         }
 
         if (preg_match('/tm\-5204/i', $useragent)) {
-            return new Texet\TexetTm5204($useragent);
+            $deviceCode = 'tm-5204';
         }
 
-        return new Texet\Texet($useragent);
+        $deviceCode = 'general texet device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

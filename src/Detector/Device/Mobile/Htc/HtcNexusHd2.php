@@ -53,8 +53,8 @@ class HtcNexusHd2 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'HD2';
-        $this->marketingName     = 'HD2';
+        $this->deviceName        = 'Nexus HD2';
+        $this->marketingName     = 'Nexus HD2';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Htc')->getName();
         $this->brand             = CompanyFactory::get('Htc')->getBrandName();

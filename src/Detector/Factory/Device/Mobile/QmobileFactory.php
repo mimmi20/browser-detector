@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Qmobile;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class QmobileFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ A10 /', $useragent)) {
-            return new Qmobile\QmobileA10($useragent);
+            $deviceCode = 'qmobile a10';
         }
 
-        return new Qmobile\Qmobile($useragent);
+        $deviceCode = 'general qmobile device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

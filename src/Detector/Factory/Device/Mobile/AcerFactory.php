@@ -31,7 +31,8 @@
 
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Device\Mobile\Acer;
+use BrowserDetector\Detector\Device;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,170 +52,172 @@ class AcerFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general acer device';
+
         if (preg_match('/V989/i', $useragent)) {
-            return new Acer\AcerV989($useragent);
+            $deviceCode = 'v989';
         }
 
         if (preg_match('/V370/i', $useragent)) {
-            return new Acer\AcerV370($useragent);
+            $deviceCode = 'v370';
         }
 
         if (preg_match('/Stream\-S110/i', $useragent)) {
-            return new Acer\AcerStreamS110($useragent);
+            $deviceCode = 'stream s110';
         }
 
         if (preg_match('/S500/i', $useragent)) {
-            return new Acer\AcerS500($useragent);
+            $deviceCode = 's500';
         }
 
         if (preg_match('/Liquid (MT|Metal)/i', $useragent)) {
-            return new Acer\AcerS120LiquidMetal($useragent);
+            $deviceCode = 's120';
         }
 
         if (preg_match('/Z150/i', $useragent)) {
-            return new Acer\AcerLiquidZ150($useragent);
+            $deviceCode = 'z150';
         }
 
         if (preg_match('/Liquid/i', $useragent)) {
-            return new Acer\AcerLiquidS100($useragent);
+            $deviceCode = 's100';
         }
 
         if (preg_match('/b1\-770/i', $useragent)) {
-            return new Acer\AcerIconiaB1770($useragent);
+            $deviceCode = 'b1-770';
         }
 
         if (preg_match('/b1\-730hd/i', $useragent)) {
-            return new Acer\AcerIconiaB1730hd($useragent);
+            $deviceCode = 'b1-730hd';
         }
 
         if (preg_match('/b1\-721/i', $useragent)) {
-            return new Acer\AcerIconiaB1721($useragent);
+            $deviceCode = 'b1-721';
         }
 
         if (preg_match('/b1\-711/i', $useragent)) {
-            return new Acer\AcerIconiaB1711($useragent);
+            $deviceCode = 'b1-711';
         }
 
         if (preg_match('/b1\-710/i', $useragent)) {
-            return new Acer\AcerIconiaB1710($useragent);
+            $deviceCode = 'b1-710';
         }
 
         if (preg_match('/b1\-a71/i', $useragent)) {
-            return new Acer\AcerIconiaB1a71($useragent);
+            $deviceCode = 'b1-a71';
         }
 
         if (preg_match('/a1\-830/i', $useragent)) {
-            return new Acer\AcerIconiaA1830($useragent);
+            $deviceCode = 'a1-830';
         }
 
         if (preg_match('/a1\-811/i', $useragent)) {
-            return new Acer\AcerIconiaA1811($useragent);
+            $deviceCode = 'a1-811';
         }
 
         if (preg_match('/a1\-810/i', $useragent)) {
-            return new Acer\AcerIconiaA1810($useragent);
+            $deviceCode = 'a1-810';
         }
 
         if (preg_match('/A742/i', $useragent)) {
-            return new Acer\AcerIconiaA742($useragent);
+            $deviceCode = 'tab a742';
         }
 
         if (preg_match('/A701/i', $useragent)) {
-            return new Acer\AcerIconiaA701($useragent);
+            $deviceCode = 'a701';
         }
 
         if (preg_match('/A700/i', $useragent)) {
-            return new Acer\AcerIconiaA700($useragent);
+            $deviceCode = 'a700';
         }
 
         if (preg_match('/A511/i', $useragent)) {
-            return new Acer\AcerIconiaA511($useragent);
+            $deviceCode = 'a511';
         }
 
         if (preg_match('/A510/i', $useragent)) {
-            return new Acer\AcerIconiaA510($useragent);
+            $deviceCode = 'a510';
         }
 
         if (preg_match('/A501/i', $useragent)) {
-            return new Acer\AcerIconiaA501($useragent);
+            $deviceCode = 'a501';
         }
 
         if (preg_match('/A500/i', $useragent)) {
-            return new Acer\AcerIconiaA500($useragent);
+            $deviceCode = 'a500';
         }
 
         if (preg_match('/A211/i', $useragent)) {
-            return new Acer\AcerIconiaA211($useragent);
+            $deviceCode = 'a211';
         }
 
         if (preg_match('/A210/i', $useragent)) {
-            return new Acer\AcerIconiaA210($useragent);
+            $deviceCode = 'a210';
         }
 
         if (preg_match('/A200/i', $useragent)) {
-            return new Acer\AcerIconiaA200($useragent);
+            $deviceCode = 'a200';
         }
 
         if (preg_match('/A101C/i', $useragent)) {
-            return new Acer\AcerIconiaA101c($useragent);
+            $deviceCode = 'a101c';
         }
 
         if (preg_match('/A101/i', $useragent)) {
-            return new Acer\AcerIconiaA101($useragent);
+            $deviceCode = 'a101';
         }
 
         if (preg_match('/A100/i', $useragent)) {
-            return new Acer\AcerIconiaA100($useragent);
+            $deviceCode = 'a100';
         }
 
         if (preg_match('/a3\-a20/i', $useragent)) {
-            return new Acer\AcerIconiaA3A20($useragent);
+            $deviceCode = 'a3-a20';
         }
 
         if (preg_match('/a3\-a11/i', $useragent)) {
-            return new Acer\AcerIconiaA3A11($useragent);
+            $deviceCode = 'a3-a11';
         }
 
         if (preg_match('/a3\-a10/i', $useragent)) {
-            return new Acer\AcerIconiaA3A10($useragent);
+            $deviceCode = 'a3-a10';
         }
 
         if (preg_match('/Iconia/i', $useragent)) {
-            return new Acer\AcerIconia($useragent);
+            $deviceCode = 'iconia';
         }
 
         if (preg_match('/G100W/i', $useragent)) {
-            return new Acer\AcerG100W($useragent);
+            $deviceCode = 'g100w';
         }
 
         if (preg_match('/E320/i', $useragent)) {
-            return new Acer\AcerE320($useragent);
+            $deviceCode = 'e320';
         }
 
         if (preg_match('/E310/i', $useragent)) {
-            return new Acer\AcerE310($useragent);
+            $deviceCode = 'e310';
         }
 
         if (preg_match('/E140/i', $useragent)) {
-            return new Acer\AcerE140($useragent);
+            $deviceCode = 'e140';
         }
 
         if (preg_match('/DA241HL/i', $useragent)) {
-            return new Acer\AcerDa241hl($useragent);
+            $deviceCode = 'da241hl';
         }
 
         if (preg_match('/allegro/i', $useragent)) {
-            return new Acer\AcerAllegro($useragent);
+            $deviceCode = 'allegro';
         }
 
         if (preg_match('/TM01/', $useragent)) {
-            return new Acer\AcerTm01($useragent);
+            $deviceCode = 'tm01';
         }
 
         if (preg_match('/M220/', $useragent)) {
-            return new Acer\AcerLiquidM220($useragent);
+            $deviceCode = 'm220';
         }
 
-        return new Acer\Acer($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

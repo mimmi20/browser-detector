@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Dell;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,42 +52,44 @@ class DellFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general dell device';
+
         if (preg_match('/venue pro/i', $useragent)) {
-            return new Dell\DellVenuePro($useragent);
+            $deviceCode = 'venue pro';
         }
 
         if (preg_match('/venue 8 hspa\+/i', $useragent)) {
-            return new Dell\DellVenue8Hspa($useragent);
+            $deviceCode = 'venue 8 hspa+';
         }
 
         if (preg_match('/venue 8 3830/i', $useragent)) {
-            return new Dell\DellVenue83830($useragent);
+            $deviceCode = 'venue 8 3830';
         }
 
         if (preg_match('/venue 7 hspa\+/i', $useragent)) {
-            return new Dell\DellVenue7Hspa($useragent);
+            $deviceCode = 'venue 7 hspa+';
         }
 
         if (preg_match('/venue 7 3730/i', $useragent)) {
-            return new Dell\DellVenue73730($useragent);
+            $deviceCode = 'venue 7 3730';
         }
 
         if (preg_match('/venue/i', $useragent)) {
-            return new Dell\DellVenue($useragent);
+            $deviceCode = 'venue';
         }
 
         if (preg_match('/streak 10 pro/i', $useragent)) {
-            return new Dell\DellStreak10Pro($useragent);
+            $deviceCode = 'streak 10 pro';
         }
 
         if (preg_match('/streak 7/i', $useragent)) {
-            return new Dell\DellStreak7($useragent);
+            $deviceCode = 'streak 7';
         }
 
         if (preg_match('/streak/i', $useragent)) {
-            return new Dell\DellStreak($useragent);
+            $deviceCode = 'streak';
         }
 
-        return new Dell\Dell($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

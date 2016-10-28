@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Dex;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class DexFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general dex device';
+
         if (preg_match('/ip1020/i', $useragent)) {
-            return new Dex\DexIp1020($useragent);
+            $deviceCode = 'ip1020';
         }
 
-        return new Dex\Dex($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

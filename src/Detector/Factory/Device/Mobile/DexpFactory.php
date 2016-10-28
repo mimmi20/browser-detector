@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Dexp;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class DexpFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general dexp device';
+
         if (preg_match('/Ursus 9EV 3G/', $useragent)) {
-            return new Dexp\DexpUrsus9ev3g($useragent);
+            $deviceCode = 'ursus 9ev 3g';
         }
 
-        return new Dexp\Dexp($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Beidou;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class BeidouFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general beidou device';
+
         if (preg_match('/LA\-M1/i', $useragent)) {
-            return new Beidou\BeidouLam1($useragent);
+            $deviceCode = 'la-m1';
         }
 
-        return new Beidou\Beidou($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

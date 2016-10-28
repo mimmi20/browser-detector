@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\TriQ;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,29 +53,31 @@ class TriQFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/QS0716D/', $useragent)) {
-            return new TriQ\TriQqpad($useragent);
+            $deviceCode = 'qs0716d';
         }
 
         if (preg_match('/MT0812E/', $useragent)) {
-            return new TriQ\TriQMt0812e($useragent);
+            $deviceCode = 'mt0812e';
         }
 
         if (preg_match('/MT0739D/', $useragent)) {
-            return new TriQ\TriQMt0739d($useragent);
+            $deviceCode = 'mt0739d';
         }
 
         if (preg_match('/AC0732C/', $useragent)) {
-            return new TriQ\TriQAc0732c($useragent);
+            $deviceCode = 'ac0732c';
         }
 
         if (preg_match('/RC9724C/', $useragent)) {
-            return new TriQ\TriQRc9724c($useragent);
+            $deviceCode = 'rc9724c';
         }
 
         if (preg_match('/LC0720C/', $useragent)) {
-            return new TriQ\TriQLc0720c($useragent);
+            $deviceCode = 'lc0720c';
         }
 
-        return new TriQ\TriQ($useragent);
+        $deviceCode = 'general 3q device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

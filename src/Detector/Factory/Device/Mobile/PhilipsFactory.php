@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Philips;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,25 +53,27 @@ class PhilipsFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/W8510/', $useragent)) {
-            return new Philips\PhilipsW8510($useragent);
+            $deviceCode = 'w8510';
         }
 
         if (preg_match('/W8500/', $useragent)) {
-            return new Philips\PhilipsW8500($useragent);
+            $deviceCode = 'w8500';
         }
 
         if (preg_match('/W3509/', $useragent)) {
-            return new Philips\PhilipsW3509($useragent);
+            $deviceCode = 'w3509';
         }
 
         if (preg_match('/W336/', $useragent)) {
-            return new Philips\PhilipsW336($useragent);
+            $deviceCode = 'w336';
         }
 
         if (preg_match('/PI3210G/', $useragent)) {
-            return new Philips\PhilipsPi3210g($useragent);
+            $deviceCode = 'pi3210g';
         }
 
-        return new Philips\Philips($useragent);
+        $deviceCode = 'general philips device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Memup;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MemupFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/slidepad/i', $useragent)) {
-            return new Memup\Slidepad($useragent);
+            $deviceCode = 'slidepad';
         }
 
-        return new Memup\Memup($useragent);
+        $deviceCode = 'general memup device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

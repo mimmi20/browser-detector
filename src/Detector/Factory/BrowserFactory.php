@@ -31,7 +31,6 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Browser;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use UaResult\Os\OsInterface;
@@ -55,7 +54,7 @@ class BrowserFactory implements FactoryInterface
      * @param string                   $useragent
      * @param \UaResult\Os\OsInterface $platform
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaResult\Browser\Browser
      */
     public static function detect(
         $useragent,

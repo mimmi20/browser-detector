@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Imobile;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,18 +52,20 @@ class ImobileFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general i-mobile device';
+
         if (preg_match('/i\-STYLE 7\.7 DTV/', $useragent)) {
-            return new Imobile\ImobileIstyle77Dtv($useragent);
+            $deviceCode = 'i-style 7.7 dtv';
         }
 
         if (preg_match('/IQX OKU/', $useragent)) {
-            return new Imobile\ImobileIqxoku($useragent);
+            $deviceCode = 'iq x oku';
         }
 
         if (preg_match('/IQ 6A/', $useragent)) {
-            return new Imobile\ImobileIq6a($useragent);
+            $deviceCode = 'iq 6a';
         }
 
-        return new Imobile\Imobile($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Miui;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MiuiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MIUI\.us Sensation 4G/', $useragent)) {
-            return new Miui\MiuiUsSensation4G($useragent);
+            $deviceCode = 'miui.us sensation 4g';
         }
 
-        return new Miui\Miui($useragent);
+        $deviceCode = 'general miui device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

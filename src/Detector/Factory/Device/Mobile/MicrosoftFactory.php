@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Microsoft;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MicrosoftFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Windows NT 6\.(2|3)/', $useragent)) {
-            return new Microsoft\WindowsRt8Tablet($useragent);
+            $deviceCode = 'windows rt tablet';
         }
 
-        return new Microsoft\Microsoft($useragent);
+        $deviceCode = 'general microsoft device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

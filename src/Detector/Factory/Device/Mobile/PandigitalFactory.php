@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Pandigital;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,17 +53,19 @@ class PandigitalFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/sprnova1/i', $useragent)) {
-            return new Pandigital\PandigitalSupernova($useragent);
+            $deviceCode = 'supernova';
         }
 
         if (preg_match('/(opc1|SL20_20101210_B_PD_INX7E_ENG_6410POP)/', $useragent)) {
-            return new Pandigital\PandigitalNovel($useragent);
+            $deviceCode = 'novel';
         }
 
         if (preg_match('/pandigital9hr/i', $useragent)) {
-            return new Pandigital\Pandigital9hr($useragent);
+            $deviceCode = '9hr';
         }
 
-        return new Pandigital\Pandigital($useragent);
+        $deviceCode = 'general pandigital device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

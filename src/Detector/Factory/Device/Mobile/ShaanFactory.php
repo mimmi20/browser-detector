@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Shaan;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class ShaanFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/iball majestic 2\.4d/i', $useragent)) {
-            return new Shaan\ShaanMajestic24d($useragent);
+            $deviceCode = 'majestic 2.4d';
         }
 
-        return new Shaan\Shaan($useragent);
+        $deviceCode = 'general shaan device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

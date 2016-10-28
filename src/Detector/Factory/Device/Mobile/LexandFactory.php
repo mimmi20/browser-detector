@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Lexand;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class LexandFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general lexand device';
+
         if (preg_match('/A1002/', $useragent)) {
-            return new Lexand\LexandA1002($useragent);
+            $deviceCode = 'a1002';
         }
 
         if (preg_match('/A811/', $useragent)) {
-            return new Lexand\LexandA811($useragent);
+            $deviceCode = 'a811';
         }
 
-        return new Lexand\Lexand($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

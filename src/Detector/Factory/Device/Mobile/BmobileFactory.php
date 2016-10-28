@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Bmobile;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class BmobileFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general bmobile device';
+
         if (preg_match('/AX540/', $useragent)) {
-            return new Bmobile\BmobileAx540($useragent);
+            $deviceCode = 'ax540';
         }
 
         if (preg_match('/AX512/', $useragent)) {
-            return new Bmobile\BmobileAx512($useragent);
+            $deviceCode = 'ax512';
         }
 
-        return new Bmobile\Bmobile($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

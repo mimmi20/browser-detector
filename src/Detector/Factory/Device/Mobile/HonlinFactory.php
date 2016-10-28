@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Honlin;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class HonlinFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general honlin device';
+
         if (preg_match('/PC1088/i', $useragent)) {
-            return new Honlin\HonlinPc1088($useragent);
+            $deviceCode = 'pc1088';
         }
 
-        return new Honlin\Honlin($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

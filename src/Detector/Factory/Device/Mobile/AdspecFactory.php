@@ -31,7 +31,8 @@
 
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Device\Mobile\Adspec;
+use BrowserDetector\Detector\Device;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class AdspecFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general adspec device';
+
         if (preg_match('/adtab 7 lite/i', $useragent)) {
-            return new Adspec\AdspecAdTab7Lite($useragent);
+            $deviceCode = 'adtab 7 lite';
         }
 
-        return new Adspec\Adspec($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Iru;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class IruFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general iru device';
+
         if (preg_match('/M5301/', $useragent)) {
-            return new Iru\IruM5301($useragent);
+            $deviceCode = 'm5301';
         }
 
-        return new Iru\Iru($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

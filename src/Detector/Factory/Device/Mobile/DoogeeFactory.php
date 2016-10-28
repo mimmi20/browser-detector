@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Doogee;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,22 +52,24 @@ class DoogeeFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general doogee device';
+
         if (preg_match('/DG2014/', $useragent)) {
-            return new Doogee\DoogeeDg2014($useragent);
+            $deviceCode = 'dg2014';
         }
 
         if (preg_match('/DG800/', $useragent)) {
-            return new Doogee\DoogeeDg800($useragent);
+            $deviceCode = 'dg800';
         }
 
         if (preg_match('/DG330/', $useragent)) {
-            return new Doogee\DoogeeDg330($useragent);
+            $deviceCode = 'dg330';
         }
 
         if (preg_match('/F3_Pro/', $useragent)) {
-            return new Doogee\DoogeeF3pro($useragent);
+            $deviceCode = 'f3 pro';
         }
 
-        return new Doogee\Doogee($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

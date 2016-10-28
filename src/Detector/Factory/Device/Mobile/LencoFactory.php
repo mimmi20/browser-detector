@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Lenco;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class LencoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general lenco device';
+
         if (preg_match('/cooltab\-70/i', $useragent)) {
-            return new Lenco\LencoCoolTab70($useragent);
+            $deviceCode = 'cooltab-70';
         }
 
         if (preg_match('/lencm900hz/i', $useragent)) {
-            return new Lenco\LencoCm900Hz($useragent);
+            $deviceCode = 'cm900hz';
         }
 
-        return new Lenco\Lenco($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

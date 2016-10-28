@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Malata;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MalataFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/I50/', $useragent)) {
-            return new Malata\MalataI50($useragent);
+            $deviceCode = 'i50';
         }
 
-        return new Malata\Malata($useragent);
+        $deviceCode = 'general malata device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

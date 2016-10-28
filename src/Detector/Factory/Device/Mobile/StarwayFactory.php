@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Starway;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class StarwayFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/andromeda s925 3g/i', $useragent)) {
-            return new Starway\StarwayAndromedas9253g($useragent);
+            $deviceCode = 'andromeda s925 3g';
         }
 
-        return new Starway\Starway($useragent);
+        $deviceCode = 'general starway device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

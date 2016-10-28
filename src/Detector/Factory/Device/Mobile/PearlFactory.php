@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Pearl;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,17 +53,19 @@ class PearlFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/X10\.Dual\+/', $useragent)) {
-            return new Pearl\PearlX10Plus($useragent);
+            $deviceCode = 'x10+';
         }
 
         if (preg_match('/X10\.Dual/', $useragent)) {
-            return new Pearl\PearlX10($useragent);
+            $deviceCode = 'x10';
         }
 
         if (preg_match('/X7G/', $useragent)) {
-            return new Pearl\PearlTouchletX7g($useragent);
+            $deviceCode = 'touchlet x7g';
         }
 
-        return new Pearl\Pearl($useragent);
+        $deviceCode = 'general pearl device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

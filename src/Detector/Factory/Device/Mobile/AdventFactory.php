@@ -31,7 +31,8 @@
 
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Device\Mobile\Advent;
+use BrowserDetector\Detector\Device;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class AdventFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general advent device';
+
         if (preg_match('/Vega/', $useragent)) {
-            return new Advent\AdventP10an01($useragent);
+            $deviceCode = 'p10an01';
         }
 
-        return new Advent\Advent($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Medion;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,177 +53,179 @@ class MedionFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/medion e5001/i', $useragent)) {
-            return new Medion\MdLifeE5001($useragent);
+            $deviceCode = 'life e5001';
         }
 
         if (preg_match('/medion e4502/i', $useragent)) {
-            return new Medion\MdE4502($useragent);
+            $deviceCode = 'life e4502';
         }
 
         if (preg_match('/medion e4504/i', $useragent)) {
-            return new Medion\MedionE4504($useragent);
+            $deviceCode = 'life e4504';
         }
 
         if (preg_match('/medion e4503/i', $useragent)) {
-            return new Medion\MedionE4503($useragent);
+            $deviceCode = 'life e4503';
         }
 
         if (preg_match('/medion e4506/i', $useragent)) {
-            return new Medion\MedionE4506($useragent);
+            $deviceCode = 'life e4506';
         }
 
         if (preg_match('/medion e4005/i', $useragent)) {
-            return new Medion\MedionE4005($useragent);
+            $deviceCode = 'life e4005';
         }
 
         if (preg_match('/x5020/i', $useragent)) {
-            return new Medion\MdX5020($useragent);
+            $deviceCode = 'life x5020';
         }
 
         if (preg_match('/x5004/i', $useragent)) {
-            return new Medion\MdX5004($useragent);
+            $deviceCode = 'x5004';
         }
 
         if (preg_match('/x4701/i', $useragent)) {
-            return new Medion\MdX4701($useragent);
+            $deviceCode = 'x4701';
         }
 
         if (preg_match('/p5001/i', $useragent)) {
-            return new Medion\MedionP5001($useragent);
+            $deviceCode = 'life p5001';
         }
 
         if (preg_match('/p5004/i', $useragent)) {
-            return new Medion\MedionP5004($useragent);
+            $deviceCode = 'life p5004';
         }
 
         if (preg_match('/p5005/i', $useragent)) {
-            return new Medion\MedionP5005($useragent);
+            $deviceCode = 'life p5005';
         }
 
         if (preg_match('/s5004/i', $useragent)) {
-            return new Medion\MedionS5004($useragent);
+            $deviceCode = 'life s5004';
         }
 
         if (preg_match('/LIFETAB_P1034X/i', $useragent)) {
-            return new Medion\MdLifetabP1034x($useragent);
+            $deviceCode = 'lifetab p1034x';
         }
 
         if (preg_match('/LIFETAB_P733X/i', $useragent)) {
-            return new Medion\MdLifetabP733x($useragent);
+            $deviceCode = 'lifetab p733x';
         }
 
         if (preg_match('/LIFETAB_S9714/i', $useragent)) {
-            return new Medion\MdLifetabS9714($useragent);
+            $deviceCode = 'lifetab s9714';
         }
 
         if (preg_match('/LIFETAB_S9512/i', $useragent)) {
-            return new Medion\MdLifetabS9512($useragent);
+            $deviceCode = 'lifetab s9512';
         }
 
         if (preg_match('/LIFETAB_S1036X/i', $useragent)) {
-            return new Medion\MdLifetabS1036x($useragent);
+            $deviceCode = 'lifetab s1036x';
         }
 
         if (preg_match('/LIFETAB_S1034X/i', $useragent)) {
-            return new Medion\MdLifetabS1034x($useragent);
+            $deviceCode = 'lifetab s1034x';
         }
 
         if (preg_match('/LIFETAB_S1033X/i', $useragent)) {
-            return new Medion\MdLifetabS1033x($useragent);
+            $deviceCode = 'lifetab s1033x';
         }
 
         if (preg_match('/LIFETAB_S831X/i', $useragent)) {
-            return new Medion\MdLifetabS831x($useragent);
+            $deviceCode = 'lifetab s831x';
         }
 
         if (preg_match('/LIFETAB_S785X/i', $useragent)) {
-            return new Medion\MdLifetabS785x($useragent);
+            $deviceCode = 'lifetab s785x';
         }
 
         if (preg_match('/LIFETAB_S732X/i', $useragent)) {
-            return new Medion\MdLifetabS732x($useragent);
+            $deviceCode = 'lifetab s732x';
         }
 
         if (preg_match('/LIFETAB_P9516/i', $useragent)) {
-            return new Medion\MdLifetabP9516($useragent);
+            $deviceCode = 'lifetab p9516';
         }
 
         if (preg_match('/LIFETAB_P9514/i', $useragent)) {
-            return new Medion\MdLifetabP9514($useragent);
+            $deviceCode = 'lifetab p9514';
         }
 
         if (preg_match('/LIFETAB_P891X/i', $useragent)) {
-            return new Medion\MdLifetabP891x($useragent);
+            $deviceCode = 'lifetab p891x';
         }
 
         if (preg_match('/LIFETAB_P831X\.2/i', $useragent)) {
-            return new Medion\MdLifetabP831x2($useragent);
+            $deviceCode = 'lifetab p831x.2';
         }
 
         if (preg_match('/LIFETAB_P831X/i', $useragent)) {
-            return new Medion\MdLifetabP831x($useragent);
+            $deviceCode = 'lifetab p831x';
         }
 
         if (preg_match('/LIFETAB_E10320/i', $useragent)) {
-            return new Medion\MdLifetabE10320($useragent);
+            $deviceCode = 'lifetab e10320';
         }
 
         if (preg_match('/LIFETAB_E10316/i', $useragent)) {
-            return new Medion\MdLifetabE10316($useragent);
+            $deviceCode = 'lifetab e10316';
         }
 
         if (preg_match('/LIFETAB_E10312/i', $useragent)) {
-            return new Medion\MdLifetabE10312($useragent);
+            $deviceCode = 'lifetab e10312';
         }
 
         if (preg_match('/LIFETAB_E10310/i', $useragent)) {
-            return new Medion\MdLifetabE10310($useragent);
+            $deviceCode = 'lifetab e10310';
         }
 
         if (preg_match('/LIFETAB_E7316/i', $useragent)) {
-            return new Medion\MdLifetabE7316($useragent);
+            $deviceCode = 'lifetab e7316';
         }
 
         if (preg_match('/LIFETAB_E7313/i', $useragent)) {
-            return new Medion\MdLifetabE7313($useragent);
+            $deviceCode = 'lifetab e7313';
         }
 
         if (preg_match('/LIFETAB_E7312/i', $useragent)) {
-            return new Medion\MdLifetabE7312($useragent);
+            $deviceCode = 'lifetab e7312';
         }
 
         if (preg_match('/LIFETAB_E733X/i', $useragent)) {
-            return new Medion\MdLifetabE733x($useragent);
+            $deviceCode = 'lifetab e733x';
         }
 
         if (preg_match('/LIFETAB_E723X/i', $useragent)) {
-            return new Medion\MdLifetabE723x($useragent);
+            $deviceCode = 'lifetab e723x';
         }
 
         if (preg_match('/p4501/i', $useragent)) {
-            return new Medion\MdLifeP4501($useragent);
+            $deviceCode = 'md 98428';
         }
 
         if (preg_match('/p4502/i', $useragent)) {
-            return new Medion\MedionP4502($useragent);
+            $deviceCode = 'life p4502';
         }
 
         if (preg_match('/LIFE P4310/i', $useragent)) {
-            return new Medion\MdLifeP4310($useragent);
+            $deviceCode = 'life p4310';
         }
 
         if (preg_match('/p4013/i', $useragent)) {
-            return new Medion\MdLifeP4013($useragent);
+            $deviceCode = 'life p4013';
         }
 
         if (preg_match('/LIFE P4012/i', $useragent)) {
-            return new Medion\MdLifeP4012($useragent);
+            $deviceCode = 'lifetab p4012';
         }
 
         if (preg_match('/LIFE E3501/i', $useragent)) {
-            return new Medion\MdLifeE3501($useragent);
+            $deviceCode = 'life e3501';
         }
 
-        return new Medion\Medion($useragent);
+        $deviceCode = 'general medion device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

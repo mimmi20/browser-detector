@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\FaktorZwei;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class FaktorZweiFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general faktorzwei device';
+
         if (preg_match('/FX2\-PAD10/i', $useragent)) {
-            return new FaktorZwei\Fx2Pad10($useragent);
+            $deviceCode = '812223';
         }
 
-        return new FaktorZwei\FaktorZwei($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

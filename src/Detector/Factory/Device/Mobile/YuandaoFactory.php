@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Yuandao;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class YuandaoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/N90FHDRK/', $useragent)) {
-            return new Yuandao\YuandaoN90fhdrk($useragent);
+            $deviceCode = 'yuandao n90fhdrk';
         }
 
         if (preg_match('/n90 dual core2/i', $useragent)) {
-            return new Yuandao\YuandaoN90DualCore2($useragent);
+            $deviceCode = 'n90 dual core2';
         }
 
-        return new Yuandao\Yuandao($useragent);
+        $deviceCode = 'general yuandao device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

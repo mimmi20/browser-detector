@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Mway;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MwayFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MD948G/', $useragent)) {
-            return new Mway\MwayMd948g($useragent);
+            $deviceCode = 'md-948g';
         }
 
-        return new Mway\Mway($useragent);
+        $deviceCode = 'm-way general m-way device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

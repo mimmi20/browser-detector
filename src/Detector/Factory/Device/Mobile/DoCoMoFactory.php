@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\DoCoMo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class DoCoMoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general docomo device';
+
         if (preg_match('/P905i/i', $useragent)) {
-            return new DoCoMo\DoCoMoP905i($useragent);
+            $deviceCode = 'p905i';
         }
 
         if (preg_match('/P900i/i', $useragent)) {
-            return new DoCoMo\DoCoMoP900i($useragent);
+            $deviceCode = 'p900i';
         }
 
-        return new DoCoMo\DoCoMo($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

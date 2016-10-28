@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Cubot;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,30 +52,32 @@ class CubotFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general cubot device';
+
         if (preg_match('/S208/', $useragent)) {
-            return new Cubot\CubotS208($useragent);
+            $deviceCode = 's208';
         }
 
         if (preg_match('/P9/i', $useragent)) {
-            return new Cubot\CubotP9($useragent);
+            $deviceCode = 'cubot u30gt';
         }
 
         if (preg_match('/MT6572\_TD/i', $useragent)) {
-            return new Cubot\CubotGt953g($useragent);
+            $deviceCode = 'gt 95 3g';
         }
 
         if (preg_match('/GT99/i', $useragent)) {
-            return new Cubot\CubotGt99($useragent);
+            $deviceCode = 'gt99';
         }
 
         if (preg_match('/C11/i', $useragent)) {
-            return new Cubot\CubotC11($useragent);
+            $deviceCode = 'c11';
         }
 
         if (preg_match('/C7/i', $useragent)) {
-            return new Cubot\CubotC7($useragent);
+            $deviceCode = 'c7';
         }
 
-        return new Cubot\Cubot($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

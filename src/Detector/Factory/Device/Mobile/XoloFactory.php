@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Xolo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class XoloFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/a1000s/i', $useragent)) {
-            return new Xolo\XoloA1000s($useragent);
+            $deviceCode = 'a1000s';
         }
 
-        return new Xolo\Xolo($useragent);
+        $deviceCode = 'general xolo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

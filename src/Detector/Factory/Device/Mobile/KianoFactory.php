@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Kiano;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,18 +52,20 @@ class KianoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general kiano device';
+
         if (preg_match('/intelect7/i', $useragent)) {
-            return new Kiano\KianoIntelect7($useragent);
+            $deviceCode = 'intelect 7 3g';
         }
 
         if (preg_match('/elegance 8 3g/i', $useragent)) {
-            return new Kiano\KianoElegance83g($useragent);
+            $deviceCode = 'elegance 8 3g';
         }
 
         if (preg_match('/elegance/i', $useragent)) {
-            return new Kiano\KianoElegance($useragent);
+            $deviceCode = 'elegance';
         }
 
-        return new Kiano\Kiano($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

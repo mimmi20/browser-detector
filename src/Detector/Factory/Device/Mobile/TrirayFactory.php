@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Triray;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class TrirayFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/X8\+/i', $useragent)) {
-            return new Triray\TrirayX8plus($useragent);
+            $deviceCode = 'x8+';
         }
 
-        return new Triray\Triray($useragent);
+        $deviceCode = 'general tri-ray device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

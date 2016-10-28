@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Condor;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class CondorFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general condor device';
+
         if (preg_match('/CTAB785R16\-3G/', $useragent)) {
-            return new Condor\CondorCtab785r163g($useragent);
+            $deviceCode = 'ctab785r16-3g';
         }
 
-        return new Condor\Condor($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

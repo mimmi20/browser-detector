@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Supra;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class SupraFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/m723g/i', $useragent)) {
-            return new Supra\SupraM723g($useragent);
+            $deviceCode = 'm723g';
         }
 
         if (preg_match('/m121g/i', $useragent)) {
-            return new Supra\SupraM121g($useragent);
+            $deviceCode = 'm121g';
         }
 
-        return new Supra\Supra($useragent);
+        $deviceCode = 'general supra device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

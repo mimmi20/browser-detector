@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Pantech;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,25 +53,27 @@ class PantechFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/p9020/i', $useragent)) {
-            return new Pantech\PantechP9020($useragent);
+            $deviceCode = 'p9020';
         }
 
         if (preg_match('/p2020/i', $useragent)) {
-            return new Pantech\PantechP2020($useragent);
+            $deviceCode = 'p2020';
         }
 
         if (preg_match('/im\-a900k/i', $useragent)) {
-            return new Pantech\PantechIma900k($useragent);
+            $deviceCode = 'im-a900k';
         }
 
         if (preg_match('/im\-a830l/i', $useragent)) {
-            return new Pantech\PantechIma830l($useragent);
+            $deviceCode = 'im-a830l';
         }
 
         if (preg_match('/pt\-gf200/i', $useragent)) {
-            return new Pantech\PantechPtgf200($useragent);
+            $deviceCode = 'pt-gf200';
         }
 
-        return new Pantech\Pantech($useragent);
+        $deviceCode = 'general pantech device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

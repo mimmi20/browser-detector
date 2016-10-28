@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Kddi;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class KddiFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general kddi device';
+
         if (preg_match('/sn3f/i', $useragent)) {
-            return new Kddi\KddiSn3f($useragent);
+            $deviceCode = 'sn3f';
         }
 
         if (preg_match('/kc31/i', $useragent)) {
-            return new Kddi\KddiKc31($useragent);
+            $deviceCode = 'kc31';
         }
 
-        return new Kddi\Kddi($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

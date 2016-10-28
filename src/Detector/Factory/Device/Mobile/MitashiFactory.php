@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Mitashi;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MitashiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/AP\-105/', $useragent)) {
-            return new Mitashi\MitashiAp105($useragent);
+            $deviceCode = 'ap-105';
         }
 
-        return new Mitashi\Mitashi($useragent);
+        $deviceCode = 'general mitashi device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

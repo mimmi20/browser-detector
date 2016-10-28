@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Ktouch;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class KtouchFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general ktouch device';
+
         if (preg_match('/A930/', $useragent)) {
-            return new Ktouch\KtouchA930($useragent);
+            $deviceCode = 'tianyu a930';
         }
 
-        return new Ktouch\Ktouch($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

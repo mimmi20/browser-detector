@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Kazam;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class KazamFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general kazam device';
+
         if (preg_match('/trooper2 50/i', $useragent)) {
-            return new Kazam\KazamTrooper250($useragent);
+            $deviceCode = 'trooper 2 5.0';
         }
 
-        return new Kazam\Kazam($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

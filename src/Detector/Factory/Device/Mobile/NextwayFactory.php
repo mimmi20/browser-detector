@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Nextway;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class NextwayFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/F10X/', $useragent)) {
-            return new Nextway\NextwayF10x($useragent);
+            $deviceCode = 'f10x';
         }
 
-        return new Nextway\Nextway($useragent);
+        $deviceCode = 'general nextway device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

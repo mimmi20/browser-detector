@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Siemens;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class SiemensFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SL45i/', $useragent)) {
-            return new Siemens\Sl45i($useragent);
+            $deviceCode = 'sl45i';
         }
 
         if (preg_match('/SIE\-S65/', $useragent)) {
-            return new Siemens\SiemensS65($useragent);
+            $deviceCode = 's65';
         }
 
-        return new Siemens\Siemens($useragent);
+        $deviceCode = 'general siemens device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

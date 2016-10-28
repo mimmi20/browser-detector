@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\PointOfView;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,29 +53,31 @@ class PointOfViewFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TAB\-PROTAB25/', $useragent)) {
-            return new PointOfView\PointOfViewProtab25($useragent);
+            $deviceCode = 'protab 25';
         }
 
         if (preg_match('/TAB\-PROTAB30/', $useragent)) {
-            return new PointOfView\PointOfViewProtab3xxl($useragent);
+            $deviceCode = 'protab 3 xxl';
         }
 
         if (preg_match('/tab\-protab2xxl/i', $useragent)) {
-            return new PointOfView\PointOfViewProtab2xxl($useragent);
+            $deviceCode = 'protab 2 xxl';
         }
 
         if (preg_match('/TAB\-PROTAB2XL/', $useragent)) {
-            return new PointOfView\PointOfViewProtab2xl($useragent);
+            $deviceCode = 'protab 2 xl';
         }
 
         if (preg_match('/TAB\-PROTAB2\-IPS/', $useragent)) {
-            return new PointOfView\PointOfViewProtab2ips($useragent);
+            $deviceCode = 'protab 2 ips';
         }
 
         if (preg_match('/PI1045/', $useragent)) {
-            return new PointOfView\PointOfViewPi1045($useragent);
+            $deviceCode = 'pi1045';
         }
 
-        return new PointOfView\PointOfView($useragent);
+        $deviceCode = 'general point of view device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

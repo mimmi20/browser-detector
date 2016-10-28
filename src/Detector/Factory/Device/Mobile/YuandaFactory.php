@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Yuanda;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,12 @@ class YuandaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/N90FHDRK/', $useragent)) {
-            return new Yuanda\YuandaN90fhdrk($useragent);
-        }
-
         if (preg_match('/yuanda50/i', $useragent)) {
-            return new Yuanda\Yuanda50($useragent);
+            $deviceCode = '50';
         }
 
-        return new Yuanda\Yuanda($useragent);
+        $deviceCode = 'general yuanda device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Keneksi;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class KeneksiFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general keneksi device';
+
         if (preg_match('/crystal/i', $useragent)) {
-            return new Keneksi\KeneksiCrystal($useragent);
+            $deviceCode = 'crystal';
         }
 
         if (preg_match('/norma 2/i', $useragent)) {
-            return new Keneksi\KeneksiNorma2($useragent);
+            $deviceCode = 'norma 2';
         }
 
-        return new Keneksi\Keneksi($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

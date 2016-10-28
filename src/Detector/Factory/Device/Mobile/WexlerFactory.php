@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Wexler;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,17 +53,19 @@ class WexlerFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TAB A742/', $useragent)) {
-            return new Wexler\WexlerTabA742($useragent);
+            $deviceCode = 'wexler tab a742';
         }
 
         if (preg_match('/TAB\-7T/', $useragent)) {
-            return new Wexler\WexlerTab7t($useragent);
+            $deviceCode = 'tab 7t';
         }
 
         if (preg_match('/TAB7iD/', $useragent)) {
-            return new Wexler\WexlerTab7id($useragent);
+            $deviceCode = 'tab7id';
         }
 
-        return new Wexler\Wexler($useragent);
+        $deviceCode = 'general wexler device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

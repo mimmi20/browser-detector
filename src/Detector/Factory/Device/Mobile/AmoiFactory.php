@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Amoi;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class AmoiFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general amoi device';
+
         if (preg_match('/n820/i', $useragent)) {
-            return new Amoi\AmoiN820($useragent);
+            $deviceCode = 'n820';
         }
 
-        return new Amoi\Amoi($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

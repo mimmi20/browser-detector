@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Zte;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,173 +53,175 @@ class ZteFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/blade v6/i', $useragent)) {
-            return new Zte\ZteBladev6($useragent);
+            $deviceCode = 'blade v6';
         }
 
         if (preg_match('/blade l6/i', $useragent)) {
-            return new Zte\ZteBladeL6($useragent);
+            $deviceCode = 'blade l6';
         }
 
         if (preg_match('/blade l5 plus/i', $useragent)) {
-            return new Zte\ZteBladeL5plus($useragent);
+            $deviceCode = 'blade l5 plus';
         }
 
         if (preg_match('/blade l3/i', $useragent)) {
-            return new Zte\ZteBladeL3($useragent);
+            $deviceCode = 'blade l3';
         }
 
         if (preg_match('/blade l2/i', $useragent)) {
-            return new Zte\ZteBladeL2($useragent);
+            $deviceCode = 'blade l2';
         }
 
         if (preg_match('/n919/i', $useragent)) {
-            return new Zte\ZteN919($useragent);
+            $deviceCode = 'n919';
         }
 
         if (preg_match('/x920/i', $useragent)) {
-            return new Zte\ZteX920($useragent);
+            $deviceCode = 'x920';
         }
 
         if (preg_match('/w713/i', $useragent)) {
-            return new Zte\ZteW713($useragent);
+            $deviceCode = 'w713';
         }
 
         if (preg_match('/z221/i', $useragent)) {
-            return new Zte\ZteZ221($useragent);
+            $deviceCode = 'z221';
         }
 
         if (preg_match('/(v975|geek)/i', $useragent)) {
-            return new Zte\ZteV975($useragent);
+            $deviceCode = 'v975';
         }
 
         if (preg_match('/v970/i', $useragent)) {
-            return new Zte\ZteV970($useragent);
+            $deviceCode = 'v970';
         }
 
         if (preg_match('/v967s/i', $useragent)) {
-            return new Zte\ZteV967s($useragent);
+            $deviceCode = 'v967s';
         }
 
         if (preg_match('/v880/i', $useragent)) {
-            return new Zte\ZteV880($useragent);
+            $deviceCode = 'v880';
         }
 
         if (preg_match('/v829/i', $useragent)) {
-            return new Zte\ZteV829($useragent);
+            $deviceCode = 'v829';
         }
 
         if (preg_match('/v808/i', $useragent)) {
-            return new Zte\ZteV808($useragent);
+            $deviceCode = 'v808';
         }
 
         if (preg_match('/v788d/i', $useragent)) {
-            return new Zte\ZteV788D($useragent);
+            $deviceCode = 'zte v788d';
         }
 
         if (preg_match('/v9/i', $useragent)) {
-            return new Zte\ZteV9($useragent);
+            $deviceCode = 'v9';
         }
 
         if (preg_match('/u930hd/i', $useragent)) {
-            return new Zte\ZteU930Hd($useragent);
+            $deviceCode = 'u930hd';
         }
 
         if (preg_match('/smarttab10/i', $useragent)) {
-            return new Zte\ZteSmartTab10($useragent);
+            $deviceCode = 'smart tab 10';
         }
 
         if (preg_match('/smarttab7/i', $useragent)) {
-            return new Zte\ZteSmartTab7($useragent);
+            $deviceCode = 'smarttab7';
         }
 
         if (preg_match('/vodafone smart 4g/i', $useragent)) {
-            return new Zte\ZteSmart4G($useragent);
+            $deviceCode = 'smart 4g';
         }
 
         if (preg_match('/zte[ \-]skate/i', $useragent)) {
-            return new Zte\ZteSkatE($useragent);
+            $deviceCode = 'skate';
         }
 
         if (preg_match('/racerii/i', $useragent)) {
-            return new Zte\ZteRacerIi($useragent);
+            $deviceCode = 'racer ii';
         }
 
         if (preg_match('/racer/i', $useragent)) {
-            return new Zte\ZteRacer($useragent);
+            $deviceCode = 'racer';
         }
 
         if (preg_match('/zteopen/i', $useragent)) {
-            return new Zte\ZteOpen($useragent);
+            $deviceCode = 'open';
         }
 
         if (preg_match('/nx501/i', $useragent)) {
-            return new Zte\ZteNx501($useragent);
+            $deviceCode = 'nx501';
         }
 
         if (preg_match('/nx402/i', $useragent)) {
-            return new Zte\ZteNx402($useragent);
+            $deviceCode = 'nx402';
         }
 
         if (preg_match('/n918st/i', $useragent)) {
-            return new Zte\ZteN918St($useragent);
+            $deviceCode = 'n918st';
         }
 
         if (preg_match('/ n600 /i', $useragent)) {
-            return new Zte\ZteN600($useragent);
+            $deviceCode = 'n600';
         }
 
         if (preg_match('/leo q2/i', $useragent)) {
-            return new Zte\ZteLeoQ2($useragent);
+            $deviceCode = 'v769m';
         }
 
         if (preg_match('/kis plus/i', $useragent)) {
-            return new Zte\ZteKisPlus($useragent);
+            $deviceCode = 'zte v788d';
         }
 
         if (preg_match('/blade q maxi/i', $useragent)) {
-            return new Zte\ZteBladeQMaxi($useragent);
+            $deviceCode = 'blade q maxi';
         }
 
         if (preg_match('/blade iii\_il/i', $useragent)) {
-            return new Zte\ZteBlade3($useragent);
+            $deviceCode = 'blade iii';
         }
 
         if (preg_match('/blade/i', $useragent)) {
-            return new Zte\ZteBlade($useragent);
+            $deviceCode = 'zte blade';
         }
 
         if (preg_match('/base tab/i', $useragent)) {
-            return new Zte\ZteBaseTab($useragent);
+            $deviceCode = 'base tab';
         }
 
         if (preg_match('/base_lutea_3/i', $useragent)) {
-            return new Zte\BaseLutea3($useragent);
+            $deviceCode = 'lutea 3';
         }
 
         if (preg_match('/base lutea 2/i', $useragent)) {
-            return new Zte\ZteBaseLutea2($useragent);
+            $deviceCode = 'lutea 2';
         }
 
         if (preg_match('/base lutea/i', $useragent)) {
-            return new Zte\ZteBaseLutea($useragent);
+            $deviceCode = 'zte blade';
         }
 
         if (preg_match('/atlas\_w/i', $useragent)) {
-            return new Zte\ZteAtlasW($useragent);
+            $deviceCode = 'atlas w';
         }
 
         if (preg_match('/tania/i', $useragent)) {
-            return new Zte\ZteTania($useragent);
+            $deviceCode = 'tania';
         }
 
         if (preg_match('/g\-x991\-rio\-orange/i', $useragent)) {
-            return new Zte\ZteGX991RioOrange($useragent);
+            $deviceCode = 'g-x991';
         }
 
         if (preg_match('/beeline pro/i', $useragent)) {
-            return new Zte\ZteBeelinePro($useragent);
+            $deviceCode = 'beeline pro';
         }
 
-        return new Zte\Zte($useragent);
+        $deviceCode = 'general zte device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

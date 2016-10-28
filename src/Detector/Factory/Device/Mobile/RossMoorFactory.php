@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\RossMoor;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class RossMoorFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/rm\-997/i', $useragent)) {
-            return new RossMoor\RossMoorRm997($useragent);
+            $deviceCode = 'ross&moor rm-997';
         }
 
         if (preg_match('/rm\-560/i', $useragent)) {
-            return new RossMoor\RossMoorRm560($useragent);
+            $deviceCode = 'rm-560';
         }
 
-        return new RossMoor\RossMoor($useragent);
+        $deviceCode = 'general ross&moor device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

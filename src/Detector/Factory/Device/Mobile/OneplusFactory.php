@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Oneplus;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,25 +53,27 @@ class OneplusFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/A3000/', $useragent)) {
-            return new Oneplus\OneplusA3000($useragent);
+            $deviceCode = 'a3000';
         }
 
         if (preg_match('/A2001/', $useragent)) {
-            return new Oneplus\OneplusA2001($useragent);
+            $deviceCode = 'a2001';
         }
 
         if (preg_match('/A2003/', $useragent)) {
-            return new Oneplus\OneplusA2003($useragent);
+            $deviceCode = 'a2003';
         }
 
         if (preg_match('/A2005/', $useragent)) {
-            return new Oneplus\OneplusA2005($useragent);
+            $deviceCode = 'a2005';
         }
 
         if (preg_match('/E1003/', $useragent)) {
-            return new Oneplus\OneplusE1003($useragent);
+            $deviceCode = 'e1003';
         }
 
-        return new Oneplus\Oneplus($useragent);
+        $deviceCode = 'general oneplus device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

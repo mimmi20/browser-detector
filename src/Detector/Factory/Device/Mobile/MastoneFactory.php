@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Mastone;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MastoneFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/G9/', $useragent)) {
-            return new Mastone\MastoneG9($useragent);
+            $deviceCode = 'g9';
         }
 
-        return new Mastone\Mastone($useragent);
+        $deviceCode = 'general mastone device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Huawei;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,630 +52,632 @@ class HuaweiFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general huawei device';
+
         if (preg_match('/nexus 6p/i', $useragent)) {
-            return new Huawei\HuaweiNexus6p($useragent);
+            $deviceCode = 'nexus 6p';
         }
 
         if (preg_match('/tag\-al00/i', $useragent)) {
-            return new Huawei\HuaweiTagal00($useragent);
+            $deviceCode = 'tag-al00';
         }
 
         if (preg_match('/tag\-l21/i', $useragent)) {
-            return new Huawei\HuaweiTagl21($useragent);
+            $deviceCode = 'tag-l21';
         }
 
         if (preg_match('/tag\-l01/i', $useragent)) {
-            return new Huawei\HuaweiTagl01($useragent);
+            $deviceCode = 'tag-l01';
         }
 
         if (preg_match('/ale\-21/i', $useragent)) {
-            return new Huawei\HuaweiAle21($useragent);
+            $deviceCode = 'ale 21';
         }
 
         if (preg_match('/ale\-l21/i', $useragent)) {
-            return new Huawei\HuaweiAlel21($useragent);
+            $deviceCode = 'ale-l21';
         }
 
         if (preg_match('/ale\-l02/i', $useragent)) {
-            return new Huawei\HuaweiAlel02($useragent);
+            $deviceCode = 'ale-l02';
         }
 
         if (preg_match('/gra\-l09/i', $useragent)) {
-            return new Huawei\HuaweiGraL09($useragent);
+            $deviceCode = 'gra-l09';
         }
 
         if (preg_match('/GRACE/', $useragent)) {
-            return new Huawei\HuaweiGrace($useragent);
+            $deviceCode = 'grace';
         }
 
         if (preg_match('/p7\-l10/i', $useragent)) {
-            return new Huawei\HuaweiP7L10($useragent);
+            $deviceCode = 'p7-l10';
         }
 
         if (preg_match('/p7\-l09/i', $useragent)) {
-            return new Huawei\HuaweiP7L09($useragent);
+            $deviceCode = 'p7-l09';
         }
 
         if (preg_match('/(p7 mini|p7mini)/i', $useragent)) {
-            return new Huawei\HuaweiP7mini($useragent);
+            $deviceCode = 'p7 mini';
         }
 
         if (preg_match('/p2\-6011/i', $useragent)) {
-            return new Huawei\HuaweiP26011($useragent);
+            $deviceCode = 'p2-6011';
         }
 
         if (preg_match('/eva\-l19/i', $useragent)) {
-            return new Huawei\HuaweiEvaL19($useragent);
+            $deviceCode = 'eva-l19';
         }
 
         if (preg_match('/eva\-l09/i', $useragent)) {
-            return new Huawei\HuaweiEvaL09($useragent);
+            $deviceCode = 'eva-l09';
         }
 
         if (preg_match('/scl\-l01/i', $useragent)) {
-            return new Huawei\HuaweiSclL01($useragent);
+            $deviceCode = 'scl-l01';
         }
 
         if (preg_match('/scl\-l21/i', $useragent)) {
-            return new Huawei\HuaweiSclL21($useragent);
+            $deviceCode = 'scl-l21';
         }
 
         if (preg_match('/scl\-u31/i', $useragent)) {
-            return new Huawei\HuaweiSclu31($useragent);
+            $deviceCode = 'scl-u31';
         }
 
         if (preg_match('/nxt\-l29/i', $useragent)) {
-            return new Huawei\HuaweiNxtL29($useragent);
+            $deviceCode = 'nxt-l29';
         }
 
         if (preg_match('/nxt\-al10/i', $useragent)) {
-            return new Huawei\HuaweiNxtAl10($useragent);
+            $deviceCode = 'nxt-al10';
         }
 
         if (preg_match('/gem\-703l/i', $useragent)) {
-            return new Huawei\HuaweiGem703l($useragent);
+            $deviceCode = 'gem-703l';
         }
 
         if (preg_match('/gem\-702l/i', $useragent)) {
-            return new Huawei\HuaweiGem702l($useragent);
+            $deviceCode = 'gem-702l';
         }
 
         if (preg_match('/gem\-701l/i', $useragent)) {
-            return new Huawei\HuaweiGem701l($useragent);
+            $deviceCode = 'gem-701l';
         }
 
         if (preg_match('/g630\-u251/i', $useragent)) {
-            return new Huawei\HuaweiG630u251($useragent);
+            $deviceCode = 'g630-u251';
         }
 
         if (preg_match('/g630\-u20/i', $useragent)) {
-            return new Huawei\HuaweiG630u20($useragent);
+            $deviceCode = 'g630-u20';
         }
 
         if (preg_match('/g620s\-l01/i', $useragent)) {
-            return new Huawei\HuaweiG620sL01($useragent);
+            $deviceCode = 'g620s-l01';
         }
 
         if (preg_match('/g610\-u20/i', $useragent)) {
-            return new Huawei\HuaweiG610u20($useragent);
+            $deviceCode = 'g610-u20';
         }
 
         if (preg_match('/g7\-l11/i', $useragent)) {
-            return new Huawei\HuaweiG7l11($useragent);
+            $deviceCode = 'g7-l11';
         }
 
         if (preg_match('/g7\-l01/i', $useragent)) {
-            return new Huawei\HuaweiG7l01($useragent);
+            $deviceCode = 'g7-l01';
         }
 
         if (preg_match('/g6\-l11/i', $useragent)) {
-            return new Huawei\HuaweiG6L11($useragent);
+            $deviceCode = 'g6-l11';
         }
 
         if (preg_match('/g6\-u10/i', $useragent)) {
-            return new Huawei\HuaweiG6u10($useragent);
+            $deviceCode = 'g6-u10';
         }
 
         if (preg_match('/pe\-tl10/i', $useragent)) {
-            return new Huawei\HuaweiPetl10($useragent);
+            $deviceCode = 'pe-tl10';
         }
 
         if (preg_match('/rio\-l01/i', $useragent)) {
-            return new Huawei\HuaweiRiol01($useragent);
+            $deviceCode = 'rio-l01';
         }
 
         if (preg_match('/cun\-l21/i', $useragent)) {
-            return new Huawei\HuaweiCunl21($useragent);
+            $deviceCode = 'cun-l21';
         }
 
         if (preg_match('/cun\-l03/i', $useragent)) {
-            return new Huawei\HuaweiCunl03($useragent);
+            $deviceCode = 'cun-l03';
         }
 
         if (preg_match('/crr\-l09/i', $useragent)) {
-            return new Huawei\HuaweiCrrl09($useragent);
+            $deviceCode = 'crr-l09';
         }
 
         if (preg_match('/chc\-u01/i', $useragent)) {
-            return new Huawei\HuaweiChcu01($useragent);
+            $deviceCode = 'chc-u01';
         }
 
         if (preg_match('/g750\-u10/i', $useragent)) {
-            return new Huawei\HuaweiG750u10($useragent);
+            $deviceCode = 'g750-u10';
         }
 
         if (preg_match('/g750\-t00/i', $useragent)) {
-            return new Huawei\HuaweiG750t00($useragent);
+            $deviceCode = 'g750-t00';
         }
 
         if (preg_match('/g740\-l00/i', $useragent)) {
-            return new Huawei\HuaweiG740l00($useragent);
+            $deviceCode = 'g740-l00';
         }
 
         if (preg_match('/g730\-u27/i', $useragent)) {
-            return new Huawei\HuaweiG730u27($useragent);
+            $deviceCode = 'g730-u27';
         }
 
         if (preg_match('/g730\-u10/i', $useragent)) {
-            return new Huawei\HuaweiG730u10($useragent);
+            $deviceCode = 'g730-u10';
         }
 
         if (preg_match('/vns\-l31/i', $useragent)) {
-            return new Huawei\HuaweiVnsL31($useragent);
+            $deviceCode = 'vns-l31';
         }
 
         if (preg_match('/vns\-l21/i', $useragent)) {
-            return new Huawei\HuaweiVnsL21($useragent);
+            $deviceCode = 'vns-l21';
         }
 
         if (preg_match('/tit\-u02/i', $useragent)) {
-            return new Huawei\HuaweiTitU02($useragent);
+            $deviceCode = 'tit-u02';
         }
 
         if (preg_match('/y635\-l21/i', $useragent)) {
-            return new Huawei\HuaweiY635l21($useragent);
+            $deviceCode = 'y635-l21';
         }
 
         if (preg_match('/y625\-u51/i', $useragent)) {
-            return new Huawei\HuaweiY625u51($useragent);
+            $deviceCode = 'y625-u51';
         }
 
         if (preg_match('/y625\-u21/i', $useragent)) {
-            return new Huawei\HuaweiY625u21($useragent);
+            $deviceCode = 'y625-u21';
         }
 
         if (preg_match('/y600\-u20/i', $useragent)) {
-            return new Huawei\HuaweiY600u20($useragent);
+            $deviceCode = 'y600-u20';
         }
 
         if (preg_match('/y600\-u00/i', $useragent)) {
-            return new Huawei\HuaweiY600u00($useragent);
+            $deviceCode = 'y600-u00';
         }
 
         if (preg_match('/y560\-l01/i', $useragent)) {
-            return new Huawei\HuaweiY560l01($useragent);
+            $deviceCode = 'y560-l01';
         }
 
         if (preg_match('/y550\-l01/i', $useragent)) {
-            return new Huawei\HuaweiY550l01($useragent);
+            $deviceCode = 'y550-l01';
         }
 
         if (preg_match('/y540\-u01/i', $useragent)) {
-            return new Huawei\HuaweiY540u01($useragent);
+            $deviceCode = 'y540-u01';
         }
 
         if (preg_match('/y530\-u00/i', $useragent)) {
-            return new Huawei\HuaweiY530u00($useragent);
+            $deviceCode = 'y530-u00';
         }
 
         if (preg_match('/y511/i', $useragent)) {
-            return new Huawei\HuaweiY511($useragent);
+            $deviceCode = 'y511';
         }
 
         if (preg_match('/y635\-l21/i', $useragent)) {
-            return new Huawei\HuaweiY635l21($useragent);
+            $deviceCode = 'y635-l21';
         }
 
         if (preg_match('/y360\-u61/i', $useragent)) {
-            return new Huawei\HuaweiY360u61($useragent);
+            $deviceCode = 'y360-u61';
         }
 
         if (preg_match('/y360\-u31/i', $useragent)) {
-            return new Huawei\HuaweiY360u31($useragent);
+            $deviceCode = 'y360-u31';
         }
 
         if (preg_match('/y340\-u081/i', $useragent)) {
-            return new Huawei\HuaweiY340u081($useragent);
+            $deviceCode = 'y340-u081';
         }
 
         if (preg_match('/y336\-u02/i', $useragent)) {
-            return new Huawei\HuaweiY336u02($useragent);
+            $deviceCode = 'y336-u02';
         }
 
         if (preg_match('/y330\-u11/i', $useragent)) {
-            return new Huawei\HuaweiY330u11($useragent);
+            $deviceCode = 'y330-u11';
         }
 
         if (preg_match('/y330\-u05/i', $useragent)) {
-            return new Huawei\HuaweiY330u05($useragent);
+            $deviceCode = 'y330-u05';
         }
 
         if (preg_match('/y330\-u01/i', $useragent)) {
-            return new Huawei\HuaweiY330u01($useragent);
+            $deviceCode = 'y330-u01';
         }
 
         if (preg_match('/y320\-u30/i', $useragent)) {
-            return new Huawei\HuaweiY320u30($useragent);
+            $deviceCode = 'y320-u30';
         }
 
         if (preg_match('/y320\-u10/i', $useragent)) {
-            return new Huawei\HuaweiY320u10($useragent);
+            $deviceCode = 'y320-u10';
         }
 
         if (preg_match('/y300/i', $useragent)) {
-            return new Huawei\HuaweiY300($useragent);
+            $deviceCode = 'y300';
         }
 
         if (preg_match('/y220\-u10/i', $useragent)) {
-            return new Huawei\HuaweiY220u10($useragent);
+            $deviceCode = 'y220-u10';
         }
 
         if (preg_match('/y210\-0100/i', $useragent)) {
-            return new Huawei\HuaweiY2100100($useragent);
+            $deviceCode = 'y210-0100';
         }
 
         if (preg_match('/w2\-u00/i', $useragent)) {
-            return new Huawei\HuaweiW2u00($useragent);
+            $deviceCode = 'w2-u00';
         }
 
         if (preg_match('/w1\-u00/i', $useragent)) {
-            return new Huawei\HuaweiW1u00($useragent);
+            $deviceCode = 'w1-u00';
         }
 
         if (preg_match('/h30\-u10/i', $useragent)) {
-            return new Huawei\HuaweiH30u10($useragent);
+            $deviceCode = 'h30-u10';
         }
 
         if (preg_match('/kiw\-l21/i', $useragent)) {
-            return new Huawei\HuaweiKiwl21($useragent);
+            $deviceCode = 'kiw-l21';
         }
 
         if (preg_match('/lyo\-l21/i', $useragent)) {
-            return new Huawei\HuaweiLyol21($useragent);
+            $deviceCode = 'lyo-l21';
         }
 
         if (preg_match('/vodafone 858/i', $useragent)) {
-            return new Huawei\HuaweiVodafone858($useragent);
+            $deviceCode = 'vodafone 858';
         }
 
         if (preg_match('/vodafone 845/i', $useragent)) {
-            return new Huawei\HuaweiVodafone845($useragent);
+            $deviceCode = 'vodafone 845';
         }
 
         if (preg_match('/u9510/i', $useragent)) {
-            return new Huawei\HuaweiU9510($useragent);
+            $deviceCode = 'u9510';
         }
 
         if (preg_match('/u9508/i', $useragent)) {
-            return new Huawei\HuaweiU9508($useragent);
+            $deviceCode = 'u9508';
         }
 
         if (preg_match('/u9200/i', $useragent)) {
-            return new Huawei\HuaweiU9200($useragent);
+            $deviceCode = 'u9200';
         }
 
         if (preg_match('/u8950n\-1/i', $useragent)) {
-            return new Huawei\HuaweiU8950n1($useragent);
+            $deviceCode = 'u8950n-1';
         }
 
         if (preg_match('/u8950n/i', $useragent)) {
-            return new Huawei\HuaweiU8950n($useragent);
+            $deviceCode = 'u8950n';
         }
 
         if (preg_match('/u8950d/i', $useragent)) {
-            return new Huawei\HuaweiU8950d($useragent);
+            $deviceCode = 'u8950d';
         }
 
         if (preg_match('/u8950\-1/i', $useragent)) {
-            return new Huawei\HuaweiU89501($useragent);
+            $deviceCode = 'u8950-1';
         }
 
         if (preg_match('/u8950/i', $useragent)) {
-            return new Huawei\HuaweiU8950($useragent);
+            $deviceCode = 'u8950';
         }
 
         if (preg_match('/u8860/i', $useragent)) {
-            return new Huawei\HuaweiU8860($useragent);
+            $deviceCode = 'u8860';
         }
 
         if (preg_match('/u8850/i', $useragent)) {
-            return new Huawei\HuaweiU8850($useragent);
+            $deviceCode = 'u8850';
         }
 
         if (preg_match('/u8825/i', $useragent)) {
-            return new Huawei\HuaweiU8825($useragent);
+            $deviceCode = 'u8825';
         }
 
         if (preg_match('/u8815/i', $useragent)) {
-            return new Huawei\HuaweiU8815($useragent);
+            $deviceCode = 'u8815';
         }
 
         if (preg_match('/u8800/i', $useragent)) {
-            return new Huawei\HuaweiU8800($useragent);
+            $deviceCode = 'u8800';
         }
 
         if (preg_match('/HUAWEI U8666 Build\/HuaweiU8666E/i', $useragent)) {
-            return new Huawei\HuaweiU8666($useragent);
+            $deviceCode = 'u8666';
         }
 
         if (preg_match('/u8666e/i', $useragent)) {
-            return new Huawei\HuaweiU8666e($useragent);
+            $deviceCode = 'u8666e';
         }
 
         if (preg_match('/u8666/i', $useragent)) {
-            return new Huawei\HuaweiU8666($useragent);
+            $deviceCode = 'u8666';
         }
 
         if (preg_match('/u8655/i', $useragent)) {
-            return new Huawei\HuaweiU8655($useragent);
+            $deviceCode = 'u8655';
         }
 
         if (preg_match('/huawei\-u8651t/i', $useragent)) {
-            return new Huawei\HuaweiU8651t($useragent);
+            $deviceCode = 'u8651t';
         }
 
         if (preg_match('/huawei\-u8651s/i', $useragent)) {
-            return new Huawei\HuaweiU8651s($useragent);
+            $deviceCode = 'u8651s';
         }
 
         if (preg_match('/huawei\-u8651/i', $useragent)) {
-            return new Huawei\HuaweiU8651($useragent);
+            $deviceCode = 'u8651';
         }
 
         if (preg_match('/u8650/i', $useragent)) {
-            return new Huawei\HuaweiU8650($useragent);
+            $deviceCode = 'u8650';
         }
 
         if (preg_match('/u8600/i', $useragent)) {
-            return new Huawei\HuaweiU8600($useragent);
+            $deviceCode = 'u8600';
         }
 
         if (preg_match('/u8520/i', $useragent)) {
-            return new Huawei\HuaweiU8520($useragent);
+            $deviceCode = 'u8520';
         }
 
         if (preg_match('/u8510/i', $useragent)) {
-            return new Huawei\HuaweiU8510($useragent);
+            $deviceCode = 's41hw';
         }
 
         if (preg_match('/u8500/i', $useragent)) {
-            return new Huawei\HuaweiU8500($useragent);
+            $deviceCode = 'u8500';
         }
 
         if (preg_match('/u8350/i', $useragent)) {
-            return new Huawei\HuaweiU8350($useragent);
+            $deviceCode = 'u8350';
         }
 
         if (preg_match('/u8185/i', $useragent)) {
-            return new Huawei\HuaweiU8185($useragent);
+            $deviceCode = 'u8185';
         }
 
         if (preg_match('/u8180/i', $useragent)) {
-            return new Huawei\HuaweiU8180($useragent);
+            $deviceCode = 'u8180';
         }
 
         if (preg_match('/(u8110|tsp21)/i', $useragent)) {
-            return new Huawei\HuaweiU8110($useragent);
+            $deviceCode = 'u8110';
         }
 
         if (preg_match('/u8100/i', $useragent)) {
-            return new Huawei\HuaweiU8100($useragent);
+            $deviceCode = 'u8100';
         }
 
         if (preg_match('/u7510/i', $useragent)) {
-            return new Huawei\HuaweiU7510($useragent);
+            $deviceCode = 'u7510';
         }
 
         if (preg_match('/s8600/i', $useragent)) {
-            return new Huawei\HuaweiS8600($useragent);
+            $deviceCode = 's8600';
         }
 
         if (preg_match('/p6\-u06/i', $useragent)) {
-            return new Huawei\HuaweiP6U06($useragent);
+            $deviceCode = 'p6-u06';
         }
 
         if (preg_match('/p6 s\-u06/i', $useragent)) {
-            return new Huawei\HuaweiP6SU06($useragent);
+            $deviceCode = 'p6 s-u06';
         }
 
         if (preg_match('/mt7\-tl10/i', $useragent)) {
-            return new Huawei\HuaweiMt7Tl10($useragent);
+            $deviceCode = 'mt7-tl10';
         }
 
         if (preg_match('/(mt7\-l09|jazz)/i', $useragent)) {
-            return new Huawei\HuaweiMt7L09($useragent);
+            $deviceCode = 'mt7-l09';
         }
 
         if (preg_match('/mt2\-l01/i', $useragent)) {
-            return new Huawei\HuaweiMt2L01($useragent);
+            $deviceCode = 'mt2-l01';
         }
 
         if (preg_match('/mt1\-u06/i', $useragent)) {
-            return new Huawei\HuaweiMt1U06($useragent);
+            $deviceCode = 'mt1-u06';
         }
 
         if (preg_match('/s8\-701w/i', $useragent)) {
-            return new Huawei\HuaweiS8701w($useragent);
+            $deviceCode = 's8-701w';
         }
 
         if (preg_match('/(t1\-701u|t1 7\.0)/i', $useragent)) {
-            return new Huawei\HuaweiT1701u($useragent);
+            $deviceCode = 't1-701u';
         }
 
         if (preg_match('/t1\-a21l/i', $useragent)) {
-            return new Huawei\HuaweiT1a21l($useragent);
+            $deviceCode = 't1-a21l';
         }
 
         if (preg_match('/t1\-a21w/i', $useragent)) {
-            return new Huawei\HuaweiT1a21w($useragent);
+            $deviceCode = 't1-a21w';
         }
 
         if (preg_match('/m2\-a01l/i', $useragent)) {
-            return new Huawei\HuaweiM2a01l($useragent);
+            $deviceCode = 'm2-a01l';
         }
 
         if (preg_match('/fdr\-a01l/i', $useragent)) {
-            return new Huawei\HuaweiFdra01l($useragent);
+            $deviceCode = 'fdr-a01l';
         }
 
         if (preg_match('/fdr\-a01w/i', $useragent)) {
-            return new Huawei\HuaweiFdra01w($useragent);
+            $deviceCode = 'fdr-a01w';
         }
 
         if (preg_match('/m2\-a01w/i', $useragent)) {
-            return new Huawei\HuaweiM2a01w($useragent);
+            $deviceCode = 'm2-a01w';
         }
 
         if (preg_match('/m2\-801w/i', $useragent)) {
-            return new Huawei\HuaweiM2801w($useragent);
+            $deviceCode = 'm2-801w';
         }
 
         if (preg_match('/m2\-801l/i', $useragent)) {
-            return new Huawei\HuaweiM2801l($useragent);
+            $deviceCode = 'm2-801l';
         }
 
         if (preg_match('/ath\-ul01/i', $useragent)) {
-            return new Huawei\HuaweiAthul01($useragent);
+            $deviceCode = 'ath-ul01';
         }
 
         if (preg_match('/mediapad x1 7\.0/i', $useragent)) {
-            return new Huawei\HuaweiMediaPadX170($useragent);
+            $deviceCode = 'mediapad x1 7.0';
         }
 
         if (preg_match('/mediapad t1 8\.0/i', $useragent)) {
-            return new Huawei\HuaweiMediaPadT180($useragent);
+            $deviceCode = 's8-701u';
         }
 
         if (preg_match('/mediapad m1 8\.0/i', $useragent)) {
-            return new Huawei\HuaweiMediaPadM18($useragent);
+            $deviceCode = 'mediapad m1 8.0';
         }
 
         if (preg_match('/mediapad 10 link\+/i', $useragent)) {
-            return new Huawei\HuaweiMediaPad10LinkPlus($useragent);
+            $deviceCode = 'mediapad 10+';
         }
 
         if (preg_match('/mediapad 10 fhd/i', $useragent)) {
-            return new Huawei\HuaweiMediaPad10fhd($useragent);
+            $deviceCode = 'mediapad 10 fhd';
         }
 
         if (preg_match('/mediapad 10 link/i', $useragent)) {
-            return new Huawei\HuaweiMediaPad10Link($useragent);
+            $deviceCode = 'huawei s7-301w';
         }
 
         if (preg_match('/mediapad 7 lite/i', $useragent)) {
-            return new Huawei\HuaweiMediaPad7Lite($useragent);
+            $deviceCode = 'mediapad 7 lite';
         }
 
         if (preg_match('/mediapad 7 classic/i', $useragent)) {
-            return new Huawei\HuaweiMediaPad7Classic($useragent);
+            $deviceCode = 'mediapad 7 classic';
         }
 
         if (preg_match('/mediapad 7 youth/i', $useragent)) {
-            return new Huawei\HuaweiMediaPad7Youth($useragent);
+            $deviceCode = 'mediapad 7 youth';
         }
 
         if (preg_match('/mediapad/i', $useragent)) {
-            return new Huawei\HuaweiMediaPad($useragent);
+            $deviceCode = 'huawei s7-301w';
         }
 
         if (preg_match('/m860/i', $useragent)) {
-            return new Huawei\HuaweiM860($useragent);
+            $deviceCode = 'm860';
         }
 
         if (preg_match('/m635/i', $useragent)) {
-            return new Huawei\HuaweiM635($useragent);
+            $deviceCode = 'm635';
         }
 
         if (preg_match('/ideos s7 slim/i', $useragent)) {
-            return new Huawei\HuaweiIdeosS7Slim($useragent);
+            $deviceCode = 's7_slim';
         }
 
         if (preg_match('/ideos s7/i', $useragent)) {
-            return new Huawei\HuaweiIdeosS7($useragent);
+            $deviceCode = 'ideos s7';
         }
 
         if (preg_match('/ideos /i', $useragent)) {
-            return new Huawei\HuaweiIdeos($useragent);
+            $deviceCode = 'bm-swu300';
         }
 
         if (preg_match('/g510\-0100/i', $useragent)) {
-            return new Huawei\HuaweiG5100100($useragent);
+            $deviceCode = 'g510-0100';
         }
 
         if (preg_match('/g7300/i', $useragent)) {
-            return new Huawei\HuaweiG7300($useragent);
+            $deviceCode = 'g7300';
         }
 
         if (preg_match('/g6609/i', $useragent)) {
-            return new Huawei\HuaweiG6609($useragent);
+            $deviceCode = 'g6609';
         }
 
         if (preg_match('/g6600/i', $useragent)) {
-            return new Huawei\HuaweiG6600($useragent);
+            $deviceCode = 'g6600';
         }
 
         if (preg_match('/g700\-u10/i', $useragent)) {
-            return new Huawei\HuaweiG700U10($useragent);
+            $deviceCode = 'g700-u10';
         }
 
         if (preg_match('/g527\-u081/i', $useragent)) {
-            return new Huawei\HuaweiG527u081($useragent);
+            $deviceCode = 'g527-u081';
         }
 
         if (preg_match('/g525\-u00/i', $useragent)) {
-            return new Huawei\HuaweiG525U00($useragent);
+            $deviceCode = 'g525-u00';
         }
 
         if (preg_match('/g510/i', $useragent)) {
-            return new Huawei\HuaweiG510($useragent);
+            $deviceCode = 'g510';
         }
 
         if (preg_match('/hn3\-u01/i', $useragent)) {
-            return new Huawei\HuaweiHn3u01($useragent);
+            $deviceCode = 'hn3-u01';
         }
 
         if (preg_match('/hol\-u19/i', $useragent)) {
-            return new Huawei\HuaweiHolu19($useragent);
+            $deviceCode = 'hol-u19';
         }
 
         if (preg_match('/vie\-l09/i', $useragent)) {
-            return new Huawei\HuaweiVieL09($useragent);
+            $deviceCode = 'vie-l09';
         }
 
         if (preg_match('/vie\-al10/i', $useragent)) {
-            return new Huawei\HuaweiVieAl10($useragent);
+            $deviceCode = 'vie-al10';
         }
 
         if (preg_match('/frd\-l09/i', $useragent)) {
-            return new Huawei\HuaweiFrdL09($useragent);
+            $deviceCode = 'frd-l09';
         }
 
         if (preg_match('/nmo\-l31/i', $useragent)) {
-            return new Huawei\HuaweiNmol31($useragent);
+            $deviceCode = 'nmo-l31';
         }
 
         if (preg_match('/d2\-0082/i', $useragent)) {
-            return new Huawei\HuaweiD20082($useragent);
+            $deviceCode = 'd2-0082';
         }
 
         if (preg_match('/p8max/i', $useragent)) {
-            return new Huawei\HuaweiP8max($useragent);
+            $deviceCode = 'p8max';
         }
 
         if (preg_match('/4afrika/i', $useragent)) {
-            return new Huawei\Huawei4Afrika($useragent);
+            $deviceCode = '4afrika';
         }
 
-        return new Huawei\Huawei($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

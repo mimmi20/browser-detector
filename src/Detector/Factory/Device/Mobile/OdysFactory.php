@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Odys;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,113 +53,115 @@ class OdysFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MAVEN_10_PLUS/', $useragent)) {
-            return new Odys\OdysMaven10plus($useragent);
+            $deviceCode = 'maven 10 plus';
         }
 
         if (preg_match('/xtreme/i', $useragent)) {
-            return new Odys\OdysXtreme($useragent);
+            $deviceCode = 'xtreme';
         }
 
         if (preg_match('/XPRESS PRO/', $useragent)) {
-            return new Odys\OdysXpressPro($useragent);
+            $deviceCode = 'xpress pro';
         }
 
         if (preg_match('/xpress/i', $useragent)) {
-            return new Odys\OdysXpress($useragent);
+            $deviceCode = 'xpress';
         }
 
         if (preg_match('/(XENO10|XENO 10)/', $useragent)) {
-            return new Odys\OdysXeno10($useragent);
+            $deviceCode = 'xeno 10';
         }
 
         if (preg_match('/XelioPT2Pro/', $useragent)) {
-            return new Odys\OdysXelioPT2Pro($useragent);
+            $deviceCode = 'xelio pt2 pro';
         }
 
         if (preg_match('/(Xelio10Pro|Xelio 10 Pro)/i', $useragent)) {
-            return new Odys\OdysXelio10Pro($useragent);
+            $deviceCode = 'xelio 10 pro';
         }
 
         if (preg_match('/(XELIO10EXTREME|Xelio 10 Extreme)/', $useragent)) {
-            return new Odys\OdysXelio10Extreme($useragent);
+            $deviceCode = 'xelio 10 extreme';
         }
 
         if (preg_match('/(XELIO7PRO|Xelio 7 pro)/', $useragent)) {
-            return new Odys\OdysXelio7Pro($useragent);
+            $deviceCode = 'xelio 7 pro';
         }
 
         if (preg_match('/xelio/i', $useragent)) {
-            return new Odys\OdysXelio($useragent);
+            $deviceCode = 'xelio';
         }
 
         if (preg_match('/UNO\_X10/', $useragent)) {
-            return new Odys\OdysUnoX10($useragent);
+            $deviceCode = 'uno x10';
         }
 
         if (preg_match('/SPACE10_PLUS_3G/', $useragent)) {
-            return new Odys\OdysSpace10plus3g($useragent);
+            $deviceCode = 'space 10 plus 3g';
         }
 
         if (preg_match('/Space/', $useragent)) {
-            return new Odys\OdysSpace($useragent);
+            $deviceCode = 'space';
         }
 
         if (preg_match('/sky plus/i', $useragent)) {
-            return new Odys\OdysSkyPlus3g($useragent);
+            $deviceCode = 'sky plus 3g';
         }
 
         if (preg_match('/ODYS\-Q/', $useragent)) {
-            return new Odys\OdysQ($useragent);
+            $deviceCode = 'q';
         }
 
         if (preg_match('/noon/i', $useragent)) {
-            return new Odys\OdysNoon($useragent);
+            $deviceCode = 'noon';
         }
 
         if (preg_match('/ADM816HC/', $useragent)) {
-            return new Odys\OdysNeoX($useragent);
+            $deviceCode = 'adm816hc';
         }
 
         if (preg_match('/ADM816KC/', $useragent)) {
-            return new Odys\OdysNeoS8Plus($useragent);
+            $deviceCode = 'adm816kc';
         }
 
         if (preg_match('/NEO\_QUAD10/', $useragent)) {
-            return new Odys\OdysNeoQuad10($useragent);
+            $deviceCode = 'neo quad 10';
         }
 
         if (preg_match('/loox plus/i', $useragent)) {
-            return new Odys\OdysLooxPlus($useragent);
+            $deviceCode = 'loox plus';
         }
 
         if (preg_match('/loox/i', $useragent)) {
-            return new Odys\OdysLoox($useragent);
+            $deviceCode = 'loox';
         }
 
         if (preg_match('/IEOS_QUAD_10_PRO/', $useragent)) {
-            return new Odys\OdysIeosQuad10pro($useragent);
+            $deviceCode = 'ieos quad 10 pro';
         }
 
         if (preg_match('/IEOS_QUAD_W/', $useragent)) {
-            return new Odys\OdysIeosQuadw($useragent);
+            $deviceCode = 'ieos quad w';
         }
 
         if (preg_match('/IEOS_QUAD/', $useragent)) {
-            return new Odys\OdysIeosQuad($useragent);
+            $deviceCode = 'ieos quad';
         }
 
         if (preg_match('/CONNECT7PRO/', $useragent)) {
-            return new Odys\OdysConnect7pro($useragent);
+            $deviceCode = 'connect 7 pro';
         }
 
         if (preg_match('/genesis/i', $useragent)) {
-            return new Odys\OdysGenesis($useragent);
+            $deviceCode = 'genesis';
         }
 
         if (preg_match('/evo/i', $useragent)) {
-            return new Odys\OdysEvo($useragent);
+            $deviceCode = 'evo';
         }
 
-        return new Odys\Odys($useragent);
+        $deviceCode = 'general odys device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

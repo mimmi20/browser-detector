@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Impression;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,18 +52,20 @@ class ImpressionFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general impression device';
+
         if (preg_match('/impad 9708/i', $useragent)) {
-            return new Impression\ImpressionImpad9708($useragent);
+            $deviceCode = 'impad 9708';
         }
 
         if (preg_match('/impad6213m\_v2/i', $useragent)) {
-            return new Impression\ImpressionImpad6213Mv2($useragent);
+            $deviceCode = 'impad 6213m v2';
         }
 
         if (preg_match('/impad 0413/i', $useragent)) {
-            return new Impression\ImpressionImpad0413($useragent);
+            $deviceCode = 'impad 0413';
         }
 
-        return new Impression\Impression($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

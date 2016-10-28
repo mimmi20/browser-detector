@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\VelocityMicro;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class VelocityMicroFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/T408/', $useragent)) {
-            return new VelocityMicro\VelocityMicroCruz($useragent);
+            $deviceCode = 'cruz';
         }
 
-        return new VelocityMicro\VelocityMicro($useragent);
+        $deviceCode = 'general velocity micro device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

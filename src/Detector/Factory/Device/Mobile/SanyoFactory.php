@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Sanyo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class SanyoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/PM\-8200/', $useragent)) {
-            return new Sanyo\SanyoPm8200($useragent);
+            $deviceCode = 'pm-8200';
         }
 
-        return new Sanyo\Sanyo($useragent);
+        $deviceCode = 'general sanyo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

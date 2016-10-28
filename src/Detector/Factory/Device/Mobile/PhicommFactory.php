@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Phicomm;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class PhicommFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/FWS610\_EU/', $useragent)) {
-            return new Phicomm\PhicommFws610($useragent);
+            $deviceCode = 'fws610';
         }
 
-        return new Phicomm\Phicomm($useragent);
+        $deviceCode = 'general phicomm device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

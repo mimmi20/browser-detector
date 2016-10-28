@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Pentagram;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class PentagramFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/PentagramTAB7\.6/', $useragent)) {
-            return new Pentagram\PentagramTab76($useragent);
+            $deviceCode = 'tab 7.6';
         }
 
-        return new Pentagram\Pentagram($useragent);
+        $deviceCode = 'general pentagram device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

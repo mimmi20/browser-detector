@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Intenso;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class IntensoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general intenso device';
+
         if (preg_match('/inm8002kp/i', $useragent)) {
-            return new Intenso\IntensoTab824($useragent);
+            $deviceCode = 'inm8002kp';
         }
 
         if (preg_match('/inm803hc/i', $useragent)) {
-            return new Intenso\IntensoTab803($useragent);
+            $deviceCode = 'tab 803';
         }
 
-        return new Intenso\Intenso($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

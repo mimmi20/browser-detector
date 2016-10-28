@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Evercoss;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class EvercossFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general evercoss device';
+
         if (preg_match('/A66A/', $useragent)) {
-            return new Evercoss\EvercossA66a($useragent);
+            $deviceCode = 'a66a';
         }
 
-        return new Evercoss\Evercoss($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

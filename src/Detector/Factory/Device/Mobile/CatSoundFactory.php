@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\CatSound;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,38 +52,40 @@ class CatSoundFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general catsound device';
+
         if (preg_match('/CatNova8/i', $useragent)) {
-            return new CatSound\CatNova8($useragent);
+            $deviceCode = 'cat nova 8';
         }
 
         if (preg_match('/nova/i', $useragent)) {
-            return new CatSound\CatNova($useragent);
+            $deviceCode = 'nova';
         }
 
         if (preg_match('/Cat Tablet Galactica X/i', $useragent)) {
-            return new CatSound\CatGalacticaX($useragent);
+            $deviceCode = 'galactica x';
         }
 
         if (preg_match('/StarGate/i', $useragent)) {
-            return new CatSound\CatStarGate($useragent);
+            $deviceCode = 'stargate';
         }
 
         if (preg_match('/Cat Tablet PHOENIX/i', $useragent)) {
-            return new CatSound\CatTabletPhoenix($useragent);
+            $deviceCode = 'phoenix';
         }
 
         if (preg_match('/Cat Tablet/i', $useragent)) {
-            return new CatSound\CatTablet($useragent);
+            $deviceCode = 'catsound tablet';
         }
 
         if (preg_match('/Tablet\-PC\-4/i', $useragent)) {
-            return new CatSound\TabletPc4($useragent);
+            $deviceCode = 'tablet pc 4';
         }
 
         if (preg_match('/Kinder\-Tablet/i', $useragent)) {
-            return new CatSound\KinderTablet($useragent);
+            $deviceCode = 'kinder-tablet';
         }
 
-        return new CatSound\CatSound($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

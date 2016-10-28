@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Bewatec;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class BewatecFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general bewatec device';
+
         if (preg_match('/MediPaD13/', $useragent)) {
-            return new Bewatec\BewatecMediPad13($useragent);
+            $deviceCode = 'medipad 13';
         }
 
         if (preg_match('/MediPaD/', $useragent)) {
-            return new Bewatec\BewatecMediPad($useragent);
+            $deviceCode = 'medipad';
         }
 
-        return new Bewatec\Bewatec($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

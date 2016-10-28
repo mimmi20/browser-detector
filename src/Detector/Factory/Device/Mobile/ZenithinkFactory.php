@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Zenithink;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class ZenithinkFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/zt180/i', $useragent)) {
-            return new Zenithink\ZenithinkZt180($useragent);
+            $deviceCode = 'zt180';
         }
 
-        return new Zenithink\Zenithink($useragent);
+        $deviceCode = 'general zenithink device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

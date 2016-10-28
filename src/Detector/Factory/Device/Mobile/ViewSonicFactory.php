@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\ViewSonic;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,25 +53,27 @@ class ViewSonicFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/viewpad 10s/i', $useragent)) {
-            return new ViewSonic\ViewSonicViewPad10s($useragent);
+            $deviceCode = 'viewpad 10s';
         }
 
         if (preg_match('/viewpad 10e/i', $useragent)) {
-            return new ViewSonic\ViewSonicViewPad10e($useragent);
+            $deviceCode = 'viewpad 10e';
         }
 
         if (preg_match('/viewpad7e/i', $useragent)) {
-            return new ViewSonic\ViewSonicViewPad7e($useragent);
+            $deviceCode = 'viewpad 7e';
         }
 
         if (preg_match('/(viewpad7|viewpad\-7)/i', $useragent)) {
-            return new ViewSonic\ViewSonicViewPad7($useragent);
+            $deviceCode = 'viewpad7';
         }
 
         if (preg_match('/viewsonic\-v350/i', $useragent)) {
-            return new ViewSonic\ViewSonicV350($useragent);
+            $deviceCode = 'v350';
         }
 
-        return new ViewSonic\ViewSonic($useragent);
+        $deviceCode = 'general viewsonic device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

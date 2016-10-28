@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Yusu;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class YusuFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/e1107/i', $useragent)) {
-            return new Yusu\E1107($useragent);
+            $deviceCode = 'e1107';
         }
 
-        return new Yusu\Yusu($useragent);
+        $deviceCode = 'general yusu device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

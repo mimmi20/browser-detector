@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Wiko;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,41 +53,43 @@ class WikoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SLIDE2/', $useragent)) {
-            return new Wiko\WikoSlide2($useragent);
+            $deviceCode = 'slide 2';
         }
 
         if (preg_match('/JERRY/', $useragent)) {
-            return new Wiko\WikoJerry($useragent);
+            $deviceCode = 'jerry';
         }
 
         if (preg_match('/BLOOM/', $useragent)) {
-            return new Wiko\WikoBloom($useragent);
+            $deviceCode = 'bloom';
         }
 
         if (preg_match('/RAINBOW/', $useragent)) {
-            return new Wiko\WikoRainbow($useragent);
+            $deviceCode = 'rainbow';
         }
 
         if (preg_match('/LENNY/', $useragent)) {
-            return new Wiko\WikoLenny($useragent);
+            $deviceCode = 'lenny';
         }
 
         if (preg_match('/GETAWAY/', $useragent)) {
-            return new Wiko\WikoGetaway($useragent);
+            $deviceCode = 'getaway';
         }
 
         if (preg_match('/DARKMOON/', $useragent)) {
-            return new Wiko\WikoDarkmoon($useragent);
+            $deviceCode = 'darkmoon';
         }
 
         if (preg_match('/DARKSIDE/', $useragent)) {
-            return new Wiko\WikoDarkside($useragent);
+            $deviceCode = 'darkside';
         }
 
         if (preg_match('/CINK PEAX 2/', $useragent)) {
-            return new Wiko\WikoCinkPeax2($useragent);
+            $deviceCode = 'cink peax 2';
         }
 
-        return new Wiko\Wiko($useragent);
+        $deviceCode = 'general wiko device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

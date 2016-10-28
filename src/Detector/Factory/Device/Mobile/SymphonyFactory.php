@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Symphony;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class SymphonyFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/W82/i', $useragent)) {
-            return new Symphony\SymphonyW82($useragent);
+            $deviceCode = 'w82';
         }
 
-        return new Symphony\Symphony($useragent);
+        $deviceCode = 'general symphony device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

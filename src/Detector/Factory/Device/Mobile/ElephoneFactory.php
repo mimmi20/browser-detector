@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Elephone;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class ElephoneFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general elephone device';
+
         if (preg_match('/P3000/', $useragent)) {
-            return new Elephone\ElephoneP3000($useragent);
+            $deviceCode = 'p3000';
         }
 
-        return new Elephone\Elephone($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

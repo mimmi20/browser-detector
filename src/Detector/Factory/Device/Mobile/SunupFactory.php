@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Sunup;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class SunupFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/OK999/', $useragent)) {
-            return new Sunup\SunupOk999($useragent);
+            $deviceCode = 'ok999';
         }
 
-        return new Sunup\Sunup($useragent);
+        $deviceCode = 'general sunup device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

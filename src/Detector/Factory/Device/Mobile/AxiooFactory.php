@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Axioo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class AxiooFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general axioo device';
+
         if (preg_match('/PICOpad_S1\(7_3G\)/', $useragent)) {
-            return new Axioo\AxiooPicopadS13g($useragent);
+            $deviceCode = 'picopad s1';
         }
 
-        return new Axioo\Axioo($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

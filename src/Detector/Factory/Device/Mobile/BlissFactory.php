@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Bliss;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class BlissFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general bliss device';
+
         if (preg_match('/Pad B9712KB/', $useragent)) {
-            return new Bliss\BlissPadB9712kb($useragent);
+            $deviceCode = 'pad b9712kb';
         }
 
-        return new Bliss\Bliss($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

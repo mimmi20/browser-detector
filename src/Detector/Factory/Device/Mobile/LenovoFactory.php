@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Lenovo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,338 +52,340 @@ class LenovoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general lenovo device';
+
         if (preg_match('/YT3\-X50L/i', $useragent)) {
-            return new Lenovo\LenovoYt3x50l($useragent);
+            $deviceCode = 'yt3-x50l';
         }
 
         if (preg_match('/TB2\-X30F/i', $useragent)) {
-            return new Lenovo\LenovoTb2x30f($useragent);
+            $deviceCode = 'tb2-x30f';
         }
 
         if (preg_match('/YOGA Tablet 2 Pro\-1380L/i', $useragent)) {
-            return new Lenovo\Lenovo1380L($useragent);
+            $deviceCode = '1380l';
         }
 
         if (preg_match('/YOGA Tablet 2 Pro\-1380F/i', $useragent)) {
-            return new Lenovo\Lenovo1380F($useragent);
+            $deviceCode = '1380f';
         }
 
         if (preg_match('/YOGA Tablet 2\-1050L/i', $useragent)) {
-            return new Lenovo\Lenovo1050L($useragent);
+            $deviceCode = '1050l';
         }
 
         if (preg_match('/YOGA Tablet 2\-1050F/i', $useragent)) {
-            return new Lenovo\Lenovo1050F($useragent);
+            $deviceCode = '1050f';
         }
 
         if (preg_match('/YOGA Tablet 2\-830L/i', $useragent)) {
-            return new Lenovo\Lenovo830L($useragent);
+            $deviceCode = '830l';
         }
 
         if (preg_match('/YOGA Tablet 2\-830F/i', $useragent)) {
-            return new Lenovo\Lenovo830F($useragent);
+            $deviceCode = '830f';
         }
 
         if (preg_match('/a10\-70f/i', $useragent)) {
-            return new Lenovo\LenovoA1070f($useragent);
+            $deviceCode = 'a10-70f';
         }
 
         if (preg_match('/s6000l\-f/i', $useragent)) {
-            return new Lenovo\LenovoS6000lfIdeaTab($useragent);
+            $deviceCode = 's6000l-f';
         }
 
         if (preg_match('/s6000\-h/i', $useragent)) {
-            return new Lenovo\LenovoS6000hIdeaTab($useragent);
+            $deviceCode = 's6000-h';
         }
 
         if (preg_match('/s6000\-f/i', $useragent)) {
-            return new Lenovo\LenovoS6000fIdeaTab($useragent);
+            $deviceCode = 'ideatab';
         }
 
         if (preg_match('/s5000\-h/i', $useragent)) {
-            return new Lenovo\LenovoS5000h($useragent);
+            $deviceCode = 's5000-h';
         }
 
         if (preg_match('/s5000\-f/i', $useragent)) {
-            return new Lenovo\LenovoS5000f($useragent);
+            $deviceCode = 's5000-f';
         }
 
         if (preg_match('/ideatabs2110ah/i', $useragent)) {
-            return new Lenovo\LenovoS2110ahIdeaTab($useragent);
+            $deviceCode = 's2110a-h';
         }
 
         if (preg_match('/ideatabs2110af/i', $useragent)) {
-            return new Lenovo\LenovoS2110afIdeaTab($useragent);
+            $deviceCode = 's2110a-f';
         }
 
         if (preg_match('/IdeaTabS2109A\-F/', $useragent)) {
-            return new Lenovo\LenovoS2109afIdeaTab($useragent);
+            $deviceCode = 's2109a-f';
         }
 
         if (preg_match('/s920/i', $useragent)) {
-            return new Lenovo\LenovoS920($useragent);
+            $deviceCode = 's920';
         }
 
         if (preg_match('/s880i/i', $useragent)) {
-            return new Lenovo\LenovoS880i($useragent);
+            $deviceCode = 's880i';
         }
 
         if (preg_match('/s856/i', $useragent)) {
-            return new Lenovo\LenovoS856($useragent);
+            $deviceCode = 's856';
         }
 
         if (preg_match('/s820\_row/i', $useragent)) {
-            return new Lenovo\LenovoS820row($useragent);
+            $deviceCode = 's820_row';
         }
 
         if (preg_match('/s720/i', $useragent)) {
-            return new Lenovo\LenovoS720($useragent);
+            $deviceCode = 's720';
         }
 
         if (preg_match('/s660/i', $useragent)) {
-            return new Lenovo\LenovoS660($useragent);
+            $deviceCode = 's660';
         }
 
         if (preg_match('/p1050x/i', $useragent)) {
-            return new Lenovo\LenovoP1050x($useragent);
+            $deviceCode = 'lifetab p1050x';
         }
 
         if (preg_match('/p1032x/i', $useragent)) {
-            return new Lenovo\LenovoP1032x($useragent);
+            $deviceCode = 'lifetab p1032x';
         }
 
         if (preg_match('/p780/i', $useragent)) {
-            return new Lenovo\LenovoP780($useragent);
+            $deviceCode = 'p780';
         }
 
         if (preg_match('/k910l/i', $useragent)) {
-            return new Lenovo\LenovoK910l($useragent);
+            $deviceCode = 'k910l';
         }
 
         if (preg_match('/k900/i', $useragent)) {
-            return new Lenovo\LenovoK900($useragent);
+            $deviceCode = 'k900';
         }
 
         if (preg_match('/ k1/i', $useragent)) {
-            return new Lenovo\LenovoIdeaPadK1($useragent);
+            $deviceCode = 'k1';
         }
 
         if (preg_match('/ideapada10/i', $useragent)) {
-            return new Lenovo\LenovoIdeaPadA10($useragent);
+            $deviceCode = 'ideapad a10';
         }
 
         if (preg_match('/a1\_07/i', $useragent)) {
-            return new Lenovo\LenovoIdeaPadA1($useragent);
+            $deviceCode = 'ideapad a1';
         }
 
         if (preg_match('/b8080\-h/i', $useragent)) {
-            return new Lenovo\LenovoB8080h($useragent);
+            $deviceCode = 'b8080-h';
         }
 
         if (preg_match('/b8080\-f/i', $useragent)) {
-            return new Lenovo\LenovoB8080f($useragent);
+            $deviceCode = 'b8080-f';
         }
 
         if (preg_match('/b8000\-h/i', $useragent)) {
-            return new Lenovo\LenovoB8000h($useragent);
+            $deviceCode = 'b8000-h';
         }
 
         if (preg_match('/b8000\-f/i', $useragent)) {
-            return new Lenovo\LenovoB8000f($useragent);
+            $deviceCode = 'b8000-f';
         }
 
         if (preg_match('/b6000\-hv/i', $useragent)) {
-            return new Lenovo\LenovoB6000hv($useragent);
+            $deviceCode = 'b6000-hv';
         }
 
         if (preg_match('/b6000\-h/i', $useragent)) {
-            return new Lenovo\LenovoB6000h($useragent);
+            $deviceCode = 'b6000-h';
         }
 
         if (preg_match('/b6000\-f/i', $useragent)) {
-            return new Lenovo\LenovoB6000f($useragent);
+            $deviceCode = 'b6000-f';
         }
 
         if (preg_match('/a7600\-h/i', $useragent)) {
-            return new Lenovo\LenovoA7600h($useragent);
+            $deviceCode = 'a7600-h';
         }
 
         if (preg_match('/a7600\-f/i', $useragent)) {
-            return new Lenovo\LenovoA7600f($useragent);
+            $deviceCode = 'a7600-f';
         }
 
         if (preg_match('/a7000\-a/i', $useragent)) {
-            return new Lenovo\LenovoA7000a($useragent);
+            $deviceCode = 'a7000-a';
         }
 
         if (preg_match('/A5500\-H/i', $useragent)) {
-            return new Lenovo\LenovoA5500hIdeaTab($useragent);
+            $deviceCode = 'a5500-h';
         }
 
         if (preg_match('/A5500\-F/i', $useragent)) {
-            return new Lenovo\LenovoA5500f($useragent);
+            $deviceCode = 'a5500-f';
         }
 
         if (preg_match('/A3500\-H/i', $useragent)) {
-            return new Lenovo\LenovoA3500h($useragent);
+            $deviceCode = 'a3500-h';
         }
 
         if (preg_match('/A3500\-FL/i', $useragent)) {
-            return new Lenovo\LenovoA3500flIdeaTab($useragent);
+            $deviceCode = 'a3500-fl';
         }
 
         if (preg_match('/a3300\-hv/i', $useragent)) {
-            return new Lenovo\LenovoA3300hv($useragent);
+            $deviceCode = 'a3300-hv';
         }
 
         if (preg_match('/a3300\-h/i', $useragent)) {
-            return new Lenovo\LenovoA3300h($useragent);
+            $deviceCode = 'a3300-h';
         }
 
         if (preg_match('/a3300\-gv/i', $useragent)) {
-            return new Lenovo\LenovoA3300gv($useragent);
+            $deviceCode = 'a3300-gv';
         }
 
         if (preg_match('/A3000\-H/i', $useragent)) {
-            return new Lenovo\LenovoA3000hIdeaTab($useragent);
+            $deviceCode = 'a3000-h';
         }
 
         if (preg_match('/A2107A\-H/i', $useragent)) {
-            return new Lenovo\LenovoA2107ahIdeaTab($useragent);
+            $deviceCode = 'a2107a-h';
         }
 
         if (preg_match('/A1107/i', $useragent)) {
-            return new Lenovo\LenovoA1107($useragent);
+            $deviceCode = 'a1107';
         }
 
         if (preg_match('/A1000\-F/i', $useragent)) {
-            return new Lenovo\LenovoA1000f($useragent);
+            $deviceCode = 'a1000-f';
         }
 
         if (preg_match('/A1000L\-F/i', $useragent)) {
-            return new Lenovo\LenovoA1000lf($useragent);
+            $deviceCode = 'a1000l-f';
         }
 
         if (preg_match('/A1000/i', $useragent)) {
-            return new Lenovo\LenovoA1000($useragent);
+            $deviceCode = 'a1000';
         }
 
         if (preg_match('/(a2109a|ideatab)/i', $useragent)) {
-            return new Lenovo\LenovoA2109aIdeaTab($useragent);
+            $deviceCode = 'a2109a';
         }
 
         if (preg_match('/a889/i', $useragent)) {
-            return new Lenovo\LenovoA889($useragent);
+            $deviceCode = 'a889';
         }
 
         if (preg_match('/a880/i', $useragent)) {
-            return new Lenovo\LenovoA880($useragent);
+            $deviceCode = 'a880';
         }
 
         if (preg_match('/a850\+/i', $useragent)) {
-            return new Lenovo\LenovoA850Plus($useragent);
+            $deviceCode = 'a850+';
         }
 
         if (preg_match('/a850/i', $useragent)) {
-            return new Lenovo\LenovoA850($useragent);
+            $deviceCode = 'a850';
         }
 
         if (preg_match('/a820/i', $useragent)) {
-            return new Lenovo\LenovoA820($useragent);
+            $deviceCode = 'a820';
         }
 
         if (preg_match('/a816/i', $useragent)) {
-            return new Lenovo\LenovoA816($useragent);
+            $deviceCode = 'a816';
         }
 
         if (preg_match('/a789/i', $useragent)) {
-            return new Lenovo\LenovoA789($useragent);
+            $deviceCode = 'a789';
         }
 
         if (preg_match('/a766/i', $useragent)) {
-            return new Lenovo\LenovoA766($useragent);
+            $deviceCode = 'a766';
         }
 
         if (preg_match('/a660/i', $useragent)) {
-            return new Lenovo\LenovoA660($useragent);
+            $deviceCode = 'a660';
         }
 
         if (preg_match('/a656/i', $useragent)) {
-            return new Lenovo\LenovoA656($useragent);
+            $deviceCode = 'a656';
         }
 
         if (preg_match('/a606/i', $useragent)) {
-            return new Lenovo\LenovoA606($useragent);
+            $deviceCode = 'a606';
         }
 
         if (preg_match('/a590/i', $useragent)) {
-            return new Lenovo\LenovoA590($useragent);
+            $deviceCode = 'a590';
         }
 
         if (preg_match('/a536/i', $useragent)) {
-            return new Lenovo\LenovoA536($useragent);
+            $deviceCode = 'a536';
         }
 
         if (preg_match('/a390/i', $useragent)) {
-            return new Lenovo\LenovoA390($useragent);
+            $deviceCode = 'a390';
         }
 
         if (preg_match('/a388t/i', $useragent)) {
-            return new Lenovo\LenovoA388T($useragent);
+            $deviceCode = 'a388t';
         }
 
         if (preg_match('/a328/i', $useragent)) {
-            return new Lenovo\LenovoA328($useragent);
+            $deviceCode = 'a328';
         }
 
         if (preg_match('/a319/i', $useragent)) {
-            return new Lenovo\LenovoA319($useragent);
+            $deviceCode = 'a319';
         }
 
         if (preg_match('/a288t/i', $useragent)) {
-            return new Lenovo\LenovoA288t($useragent);
+            $deviceCode = 'a288t';
         }
 
         if (preg_match('/a65/i', $useragent)) {
-            return new Lenovo\LenovoA65($useragent);
+            $deviceCode = 'a65';
         }
 
         if (preg_match('/a60/i', $useragent)) {
-            return new Lenovo\LenovoA60($useragent);
+            $deviceCode = 'a60';
         }
 
         if (preg_match('/(SmartTabIII10|Smart Tab III 10)/i', $useragent)) {
-            return new Lenovo\VodafoneSmartTabIii10($useragent);
+            $deviceCode = 'smart tab iii 10';
         }
 
         if (preg_match('/(SmartTabII10|SmartTab II 10)/i', $useragent)) {
-            return new Lenovo\VodafoneSmartTabIi10($useragent);
+            $deviceCode = 'smarttab ii 10';
         }
 
         if (preg_match('/SmartTabII7/i', $useragent)) {
-            return new Lenovo\VodafoneSmartTabIi7($useragent);
+            $deviceCode = 'smarttab ii 7';
         }
 
         if (preg_match('/smart tab 4g/i', $useragent)) {
-            return new Lenovo\VodafoneSmartTab4g($useragent);
+            $deviceCode = 'smart tab 4g';
         }
 
         if (preg_match('/smart tab 4/i', $useragent)) {
-            return new Lenovo\VodafoneSmartTab4($useragent);
+            $deviceCode = 'smart tab 4';
         }
 
         if (preg_match('/smart tab 3g/i', $useragent)) {
-            return new Lenovo\VodafoneSmartTab3g($useragent);
+            $deviceCode = 'smart tab 3g';
         }
 
         if (preg_match('/ThinkPad/i', $useragent)) {
-            return new Lenovo\ThinkPadTablet($useragent);
+            $deviceCode = '1838';
         }
 
         if (preg_match('/AT1010\-T/', $useragent)) {
-            return new Lenovo\LenovoAt1010t($useragent);
+            $deviceCode = 'at1010-t';
         }
 
-        return new Lenovo\Lenovo($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

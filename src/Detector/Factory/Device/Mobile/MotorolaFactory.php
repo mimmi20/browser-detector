@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Motorola;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,261 +53,263 @@ class MotorolaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MotoG3/i', $useragent)) {
-            return new Motorola\MotorolaMotoG3($useragent);
+            $deviceCode = 'motog3';
         }
 
         if (preg_match('/XT1080/i', $useragent)) {
-            return new Motorola\MotorolaXt1080($useragent);
+            $deviceCode = 'xt1080';
         }
 
         if (preg_match('/XT1068/i', $useragent)) {
-            return new Motorola\MotorolaXt1068($useragent);
+            $deviceCode = 'xt1068';
         }
 
         if (preg_match('/XT1058/i', $useragent)) {
-            return new Motorola\MotorolaXt1058($useragent);
+            $deviceCode = 'xt1058';
         }
 
         if (preg_match('/XT1052/i', $useragent)) {
-            return new Motorola\MotorolaXt1052($useragent);
+            $deviceCode = 'xt1052';
         }
 
         if (preg_match('/XT1039/i', $useragent)) {
-            return new Motorola\MotorolaXt1039($useragent);
+            $deviceCode = 'xt1039';
         }
 
         if (preg_match('/XT1033/i', $useragent)) {
-            return new Motorola\MotorolaXt1033($useragent);
+            $deviceCode = 'xt1033';
         }
 
         if (preg_match('/XT1032/i', $useragent)) {
-            return new Motorola\MotorolaXt1032($useragent);
+            $deviceCode = 'xt1032';
         }
 
         if (preg_match('/XT1021/i', $useragent)) {
-            return new Motorola\MotorolaXt1021($useragent);
+            $deviceCode = 'xt1021';
         }
 
         if (preg_match('/XT926/i', $useragent)) {
-            return new Motorola\MotorolaXt926($useragent);
+            $deviceCode = 'xt926';
         }
 
         if (preg_match('/XT925/i', $useragent)) {
-            return new Motorola\MotorolaXt925($useragent);
+            $deviceCode = 'xt925';
         }
 
         if (preg_match('/DROID RAZR HD/i', $useragent)) {
-            return new Motorola\MotorolaXt923DroidRazrHd($useragent);
+            $deviceCode = 'xt923';
         }
 
         if (preg_match('/XT910/i', $useragent)) {
-            return new Motorola\MotorolaXt910($useragent);
+            $deviceCode = 'xt910';
         }
 
         if (preg_match('/XT907/i', $useragent)) {
-            return new Motorola\MotorolaXt907($useragent);
+            $deviceCode = 'xt907';
         }
 
         if (preg_match('/XT890/i', $useragent)) {
-            return new Motorola\MotorolaXt890($useragent);
+            $deviceCode = 'xt890';
         }
 
         if (preg_match('/(XT875|DROID BIONIC 4G)/i', $useragent)) {
-            return new Motorola\MotorolaDroidBionic4G($useragent);
+            $deviceCode = 'xt875';
         }
 
         if (preg_match('/XT720/i', $useragent)) {
-            return new Motorola\MotorolaXt720($useragent);
+            $deviceCode = 'milestone xt720';
         }
 
         if (preg_match('/XT702/i', $useragent)) {
-            return new Motorola\MotorolaXt702($useragent);
+            $deviceCode = 'xt702';
         }
 
         if (preg_match('/XT615/i', $useragent)) {
-            return new Motorola\MotorolaXt615($useragent);
+            $deviceCode = 'xt615';
         }
 
         if (preg_match('/XT610/i', $useragent)) {
-            return new Motorola\MotorolaXt610($useragent);
+            $deviceCode = 'xt610';
         }
 
         if (preg_match('/XT530/i', $useragent)) {
-            return new Motorola\MotorolaXt530($useragent);
+            $deviceCode = 'xt530';
         }
 
         if (preg_match('/XT389/i', $useragent)) {
-            return new Motorola\MotorolaXt389($useragent);
+            $deviceCode = 'xt389';
         }
 
         if (preg_match('/XT320/i', $useragent)) {
-            return new Motorola\MotorolaXt320($useragent);
+            $deviceCode = 'xt320';
         }
 
         if (preg_match('/XT316/i', $useragent)) {
-            return new Motorola\MotorolaXt316($useragent);
+            $deviceCode = 'xt316';
         }
 
         if (preg_match('/XT311/i', $useragent)) {
-            return new Motorola\MotorolaXt311($useragent);
+            $deviceCode = 'xt311';
         }
 
         if (preg_match('/Xoom/i', $useragent)) {
-            return new Motorola\MotorolaXoom($useragent);
+            $deviceCode = 'xoom';
         }
 
         if (preg_match('/WX308/i', $useragent)) {
-            return new Motorola\MotorolaWx308($useragent);
+            $deviceCode = 'wx308';
         }
 
         if (preg_match('/T720/i', $useragent)) {
-            return new Motorola\MotorolaT720($useragent);
+            $deviceCode = 't720';
         }
 
         if (preg_match('/RAZRV3x/i', $useragent)) {
-            return new Motorola\MotorolaRazrV3x($useragent);
+            $deviceCode = 'razrv3x';
         }
 
         if (preg_match('/MOT\-V3i/', $useragent)) {
-            return new Motorola\MotorolaRazrV3i($useragent);
+            $deviceCode = 'razr v3i';
         }
 
         if (preg_match('/nexus 6/i', $useragent)) {
-            return new Motorola\MotorolaNexus6($useragent);
+            $deviceCode = 'nexus 6';
         }
 
         if (preg_match('/mz608/i', $useragent)) {
-            return new Motorola\MotorolaMz608($useragent);
+            $deviceCode = 'mz608';
         }
 
         if (preg_match('/(mz607|xoom 2 me)/i', $useragent)) {
-            return new Motorola\MotorolaMz607($useragent);
+            $deviceCode = 'mz607';
         }
 
         if (preg_match('/(mz616|xoom 2)/i', $useragent)) {
-            return new Motorola\MotorolaMz616($useragent);
+            $deviceCode = 'mz616';
         }
 
         if (preg_match('/mz615/i', $useragent)) {
-            return new Motorola\MotorolaMz615($useragent);
+            $deviceCode = 'mz615';
         }
 
         if (preg_match('/mz604/i', $useragent)) {
-            return new Motorola\MotorolaMz604($useragent);
+            $deviceCode = 'mz604';
         }
 
         if (preg_match('/mz601/i', $useragent)) {
-            return new Motorola\MotorolaMz601($useragent);
+            $deviceCode = 'mz601';
         }
 
         if (preg_match('/milestone x/i', $useragent)) {
-            return new Motorola\MotorolaMilestoneX($useragent);
+            $deviceCode = 'milestone x';
         }
 
         if (preg_match('/milestone/i', $useragent)) {
-            return new Motorola\MotorolaMilestone($useragent);
+            $deviceCode = 'milestone';
         }
 
         if (preg_match('/me860/i', $useragent)) {
-            return new Motorola\MotorolaMe860($useragent);
+            $deviceCode = 'me860';
         }
 
         if (preg_match('/me600/i', $useragent)) {
-            return new Motorola\MotorolaMe600($useragent);
+            $deviceCode = 'me600';
         }
 
         if (preg_match('/me525/i', $useragent)) {
-            return new Motorola\MotorolaMe525($useragent);
+            $deviceCode = 'me525';
         }
 
         if (preg_match('/me511/i', $useragent)) {
-            return new Motorola\MotorolaMe511($useragent);
+            $deviceCode = 'me511';
         }
 
         if (preg_match('/mb860/i', $useragent)) {
-            return new Motorola\MotorolaMb860($useragent);
+            $deviceCode = 'mb860';
         }
 
         if (preg_match('/mb632/i', $useragent)) {
-            return new Motorola\MotorolaMb632($useragent);
+            $deviceCode = 'mb632';
         }
 
         if (preg_match('/mb612/i', $useragent)) {
-            return new Motorola\MotorolaMb612($useragent);
+            $deviceCode = 'mb612';
         }
 
         if (preg_match('/mb526/i', $useragent)) {
-            return new Motorola\MotorolaMb526($useragent);
+            $deviceCode = 'mb526';
         }
 
         if (preg_match('/mb525/i', $useragent)) {
-            return new Motorola\MotorolaMb525($useragent);
+            $deviceCode = 'mb525';
         }
 
         if (preg_match('/mb511/i', $useragent)) {
-            return new Motorola\MotorolaMb511($useragent);
+            $deviceCode = 'mb511';
         }
 
         if (preg_match('/mb300/i', $useragent)) {
-            return new Motorola\MotorolaMb300($useragent);
+            $deviceCode = 'mb300';
         }
 
         if (preg_match('/mb200/i', $useragent)) {
-            return new Motorola\MotorolaMb200($useragent);
+            $deviceCode = 'mb200';
         }
 
         if (preg_match('/es405b/i', $useragent)) {
-            return new Motorola\MotorolaES405b($useragent);
+            $deviceCode = 'es405b';
         }
 
         if (preg_match('/e1000/i', $useragent)) {
-            return new Motorola\MotorolaE1000($useragent);
+            $deviceCode = 'e1000';
         }
 
         if (preg_match('/DROID X2/i', $useragent)) {
-            return new Motorola\MotorolaDroidX2($useragent);
+            $deviceCode = 'droid x2';
         }
 
         if (preg_match('/DROIDX/i', $useragent)) {
-            return new Motorola\MotorolaDroidX($useragent);
+            $deviceCode = 'droidx';
         }
 
         if (preg_match('/DROID RAZR 4G/i', $useragent)) {
-            return new Motorola\MotorolaDroidRazr4g($useragent);
+            $deviceCode = 'xt912b';
         }
 
         if (preg_match('/DROID RAZR/i', $useragent)) {
-            return new Motorola\MotorolaDroidRazr($useragent);
+            $deviceCode = 'razr';
         }
 
         if (preg_match('/DROID Pro/i', $useragent)) {
-            return new Motorola\MotorolaDroidPro($useragent);
+            $deviceCode = 'droid pro';
         }
 
         if (preg_match('/droid(\-| )bionic/i', $useragent)) {
-            return new Motorola\MotorolaDroidBionic($useragent);
+            $deviceCode = 'droid bionic';
         }
 
         if (preg_match('/DROID2/', $useragent)) {
-            return new Motorola\MotorolaDroid2($useragent);
+            $deviceCode = 'droid2';
         }
 
         if (preg_match('/Droid/', $useragent)) {
-            return new Motorola\MotorolaDroid($useragent);
+            $deviceCode = 'droid';
         }
 
         if (preg_match('/MotoA953/', $useragent)) {
-            return new Motorola\MotorolaA953($useragent);
+            $deviceCode = 'a953';
         }
 
         if (preg_match('/MotoQ9c/', $useragent)) {
-            return new Motorola\MotorolaQ9c($useragent);
+            $deviceCode = 'q9c';
         }
 
         if (preg_match('/L7/', $useragent)) {
-            return new Motorola\MotorolaL7($useragent);
+            $deviceCode = 'slvr l7';
         }
 
-        return new Motorola\Motorola($useragent);
+        $deviceCode = 'general motorola device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

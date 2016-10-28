@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Tmobile;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,37 +53,39 @@ class TmobileFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Pulse/', $useragent)) {
-            return new Tmobile\TmobilePulse($useragent);
+            $deviceCode = 'pulse';
         }
 
         if (preg_match('/myTouch4G/', $useragent)) {
-            return new Tmobile\TmobileMyTouch4G($useragent);
+            $deviceCode = 'mytouch4g';
         }
 
         if (preg_match('/myTouch 3G Slide/', $useragent)) {
-            return new Tmobile\TmobileMyTouch3G($useragent);
+            $deviceCode = 'mytouch3g';
         }
 
         if (preg_match('/T\-Mobile(\_G2\_Touch| G2)/', $useragent)) {
-            return new Tmobile\TmobileG2Touch($useragent);
+            $deviceCode = 'g2 touch';
         }
 
         if (preg_match('/T\-Mobile G1/', $useragent)) {
-            return new Tmobile\TmobileG1($useragent);
+            $deviceCode = 'g1';
         }
 
         if (preg_match('/mda compact\/3/i', $useragent)) {
-            return new Tmobile\TmobileMdaCompact3($useragent);
+            $deviceCode = 'mda compact iii';
         }
 
         if (preg_match('/mda compact/i', $useragent)) {
-            return new Tmobile\TmobileMdaCompact($useragent);
+            $deviceCode = 'mda compact';
         }
 
         if (preg_match('/Ameo/', $useragent)) {
-            return new Tmobile\TmobileAmeo($useragent);
+            $deviceCode = 'ameo';
         }
 
-        return new Tmobile\Tmobile($useragent);
+        $deviceCode = 'general t-mobile device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Inew;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class InewFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general inew device';
+
         if (preg_match('/ V3 /', $useragent)) {
-            return new Inew\InewV3($useragent);
+            $deviceCode = 'v3';
         }
 
-        return new Inew\Inew($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Meizu;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,17 +53,19 @@ class MeizuFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/mz\-mx5/i', $useragent)) {
-            return new Meizu\MeizuMx5($useragent);
+            $deviceCode = 'mx5';
         }
 
         if (preg_match('/m040/i', $useragent)) {
-            return new Meizu\MeizuM040($useragent);
+            $deviceCode = 'm040';
         }
 
         if (preg_match('/(meizu\_m9| m9 )/i', $useragent)) {
-            return new Meizu\MeizuM9($useragent);
+            $deviceCode = 'meizu m9';
         }
 
-        return new Meizu\Meizu($useragent);
+        $deviceCode = 'general meizu device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

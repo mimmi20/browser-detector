@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Intego;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class IntegoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general intego device';
+
         if (preg_match('/px\-0905/i', $useragent)) {
-            return new Intego\IntegoPx0905($useragent);
+            $deviceCode = 'px-0905';
         }
 
-        return new Intego\Intego($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

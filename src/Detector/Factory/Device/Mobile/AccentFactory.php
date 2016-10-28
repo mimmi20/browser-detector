@@ -31,7 +31,8 @@
 
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Device\Mobile\Accent;
+use BrowserDetector\Detector\Device;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class AccentFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general accent device';
+
         if (preg_match('/TOUAREG8\_3G/i', $useragent)) {
-            return new Accent\AccentTouareg83g($useragent);
+            $deviceCode = 'touareg8 3g';
         }
 
-        return new Accent\Accent($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

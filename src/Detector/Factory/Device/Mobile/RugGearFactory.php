@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\RugGear;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class RugGearFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/RG500/', $useragent)) {
-            return new RugGear\RugGearRg500($useragent);
+            $deviceCode = 'rg500';
         }
 
-        return new RugGear\RugGear($useragent);
+        $deviceCode = 'general ruggear device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

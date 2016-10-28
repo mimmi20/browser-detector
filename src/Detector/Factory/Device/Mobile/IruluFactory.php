@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Irulu;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class IruluFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general irulu device';
+
         if (preg_match('/U1/i', $useragent)) {
-            return new Irulu\IruluU1($useragent);
+            $deviceCode = 'u1';
         }
 
-        return new Irulu\Irulu($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

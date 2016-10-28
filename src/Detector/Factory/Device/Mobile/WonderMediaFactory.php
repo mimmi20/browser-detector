@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\WonderMedia;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class WonderMediaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/WM8850/', $useragent)) {
-            return new WonderMedia\WonderMediaWm8850($useragent);
+            $deviceCode = 'prizm wm8850';
         }
 
         if (preg_match('/WM8650/', $useragent)) {
-            return new WonderMedia\WonderMediaWm8650($useragent);
+            $deviceCode = 'prizm wm8650';
         }
 
-        return new WonderMedia\WonderMedia($useragent);
+        $deviceCode = 'general wondermedia device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Haipai;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class HaipaiFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general haipai device';
+
         if (preg_match('/Noble\_I9220/', $useragent)) {
-            return new Haipai\HaipaiI9220($useragent);
+            $deviceCode = 'i9220';
         }
 
-        return new Haipai\Haipai($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

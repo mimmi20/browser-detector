@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Senseit;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class SenseitFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/R390/', $useragent)) {
-            return new Senseit\SenseitR390($useragent);
+            $deviceCode = 'r390';
         }
 
-        return new Senseit\Senseit($useragent);
+        $deviceCode = 'general senseit device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

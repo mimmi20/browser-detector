@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\PocketBook;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class PocketBookFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SURFpad 4 L/', $useragent)) {
-            return new PocketBook\PocketBookSurfpad4l($useragent);
+            $deviceCode = 'surfpad 4 l';
         }
 
-        return new PocketBook\PocketBook($useragent);
+        $deviceCode = 'general pocketbook device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

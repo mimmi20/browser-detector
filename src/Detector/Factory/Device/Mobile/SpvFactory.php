@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Spv;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class SpvFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/M700/', $useragent)) {
-            return new Spv\SpvM700($useragent);
+            $deviceCode = 'm700';
         }
 
-        return new Spv\Spv($useragent);
+        $deviceCode = 'general spv device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

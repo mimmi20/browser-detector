@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\AllWinner;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class AllWinnerFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general allwinner device';
+
         if (preg_match('/A10/i', $useragent)) {
-            return new AllWinner\AllWinnerA10($useragent);
+            $deviceCode = 'a10';
         }
 
-        return new AllWinner\AllWinner($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

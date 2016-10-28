@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\NttSystem;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class NttSystemFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/NTT 611/', $useragent)) {
-            return new NttSystem\NttSystemNtt611101($useragent);
+            $deviceCode = 'ntt 611 10.1';
         }
 
-        return new NttSystem\NttSystem($useragent);
+        $deviceCode = 'general ntt system device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

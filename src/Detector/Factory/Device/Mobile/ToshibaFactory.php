@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Toshiba;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,37 +53,39 @@ class ToshibaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Toshiba\/TG01/', $useragent)) {
-            return new Toshiba\ToshibaTg01($useragent);
+            $deviceCode = 'tg01';
         }
 
         if (preg_match('/(FOLIO_AND_A|TOSHIBA_AC_AND_AZ)/', $useragent)) {
-            return new Toshiba\ToshibaFolio100($useragent);
+            $deviceCode = 'folio 100';
         }
 
         if (preg_match('/folio100/i', $useragent)) {
-            return new Toshiba\ToshibaFolio100($useragent);
+            $deviceCode = 'folio 100';
         }
 
         if (preg_match('/AT300SE/', $useragent)) {
-            return new Toshiba\ToshibaAt300SE($useragent);
+            $deviceCode = 'at300se';
         }
 
         if (preg_match('/AT300/', $useragent)) {
-            return new Toshiba\ToshibaAt300($useragent);
+            $deviceCode = 'at300';
         }
 
         if (preg_match('/AT200/', $useragent)) {
-            return new Toshiba\ToshibaAt200($useragent);
+            $deviceCode = 'at200';
         }
 
         if (preg_match('/AT100/', $useragent)) {
-            return new Toshiba\ToshibaAt100($useragent);
+            $deviceCode = 'at100';
         }
 
         if (preg_match('/AT10\-A/', $useragent)) {
-            return new Toshiba\ToshibaAt10a($useragent);
+            $deviceCode = 'at10-a';
         }
 
-        return new Toshiba\Toshiba($useragent);
+        $deviceCode = 'general toshiba device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

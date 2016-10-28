@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Ultrafone;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class UltrafoneFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/303/i', $useragent)) {
-            return new Ultrafone\Ultrafone303($useragent);
+            $deviceCode = 'ultrafone 303';
         }
 
-        return new Ultrafone\Ultrafone($useragent);
+        $deviceCode = 'general ultrafone device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

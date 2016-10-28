@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Magic;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MagicFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/W700/', $useragent)) {
-            return new Magic\MagicW700($useragent);
+            $deviceCode = 'w700';
         }
 
-        return new Magic\Magic($useragent);
+        $deviceCode = 'general magic device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Globex;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class GlobexFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general globex device';
+
         if (preg_match('/GU7814/', $useragent)) {
-            return new Globex\GlobexGu7814($useragent);
+            $deviceCode = 'gu7814';
         }
 
-        return new Globex\Globex($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

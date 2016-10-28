@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Gtide;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class GtideFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'g-tide general gtide device';
+
         if (preg_match('/E77/', $useragent)) {
-            return new Gtide\GtideE77($useragent);
+            $deviceCode = 'e77';
         }
 
-        return new Gtide\Gtide($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

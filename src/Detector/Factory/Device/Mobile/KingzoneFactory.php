@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Kingzone;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class KingzoneFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general kingzone device';
+
         if (preg_match('/k1 turbo/i', $useragent)) {
-            return new Kingzone\KingzoneKz168($useragent);
+            $deviceCode = 'kz-168';
         }
 
-        return new Kingzone\Kingzone($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

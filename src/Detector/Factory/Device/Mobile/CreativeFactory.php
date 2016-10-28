@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Creative;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class CreativeFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general creative device';
+
         if (preg_match('/ZiiO10/i', $useragent)) {
-            return new Creative\CreativeZiiLabsZiio10($useragent);
+            $deviceCode = 'ziio 10';
         }
 
         if (preg_match('/ZiiO7/i', $useragent)) {
-            return new Creative\CreativeZiiLabsZiio7($useragent);
+            $deviceCode = 'ziio7';
         }
 
-        return new Creative\Creative($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

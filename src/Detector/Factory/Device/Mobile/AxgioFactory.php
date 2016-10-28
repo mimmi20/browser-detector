@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Axgio;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class AxgioFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general axgio device';
+
         if (preg_match('/WING\-W2/', $useragent)) {
-            return new Axgio\AxgioWingW2($useragent);
+            $deviceCode = 'wing w2';
         }
 
         if (preg_match('/Neon\-N1/', $useragent)) {
-            return new Axgio\AxgioNeonN1($useragent);
+            $deviceCode = 'neon n1';
         }
 
-        return new Axgio\Axgio($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Kobo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class KoboFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general kobo device';
+
         if (preg_match('/kobo touch/i', $useragent)) {
-            return new Kobo\KoboTouch($useragent);
+            $deviceCode = 'touch';
         }
 
-        return new Kobo\Kobo($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

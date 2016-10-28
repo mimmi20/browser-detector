@@ -32,7 +32,6 @@
 namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Browser\Chrome;
-use BrowserDetector\Detector\Engine;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Stringy\Stringy;
@@ -53,11 +52,10 @@ class EngineFactory implements FactoryInterface
      * Gets the information about the rendering engine by User Agent
      *
      * @param string                   $useragent
-     * @param \UaResult\Os\OsInterface $os
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public static function detect($useragent, OsInterface $os = null)
+    public static function detect($useragent)
     {
         $s = new Stringy($useragent);
         $engineKey = 'unknown';
@@ -78,7 +76,7 @@ class EngineFactory implements FactoryInterface
         } elseif (preg_match('/(goanna)/i', $useragent)) {
             $engineKey = 'goanna';
         } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
-            $chrome  = new Chrome($useragent);
+            $chrome  = BrowserFactory::get('chrome', $useragent);
             $version = $chrome->getVersion();
 
             if (null !== $version) {

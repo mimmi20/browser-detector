@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Cosmote;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class CosmoteFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general cosmote device';
+
         if (preg_match('/xplore/i', $useragent)) {
-            return new Cosmote\CosmoteXplore($useragent);
+            $deviceCode = 'xplore';
         }
 
         if (preg_match('/my_mini_tablet/i', $useragent)) {
-            return new Cosmote\CosmoteMyMiniTablet($useragent);
+            $deviceCode = 'my mini tablet';
         }
 
-        return new Cosmote\Cosmote($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Verico;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,21 +53,23 @@ class VericoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/KM\-UQM11A/', $useragent)) {
-            return new Verico\VericoUqm11a($useragent);
+            $deviceCode = 'uqm11a';
         }
 
         if (preg_match('/RP\-UDM02A/', $useragent)) {
-            return new Verico\VericoRpUdm02a($useragent);
+            $deviceCode = 'rp-udm02a';
         }
 
         if (preg_match('/RP\-UDM01A/', $useragent)) {
-            return new Verico\VericoRpUdm01a($useragent);
+            $deviceCode = 'rp-udm01a';
         }
 
         if (preg_match('/UQ785\-M1BGV/', $useragent)) {
-            return new Verico\VericoM1bgv($useragent);
+            $deviceCode = 'm1bgv';
         }
 
-        return new Verico\Verico($useragent);
+        $deviceCode = 'general verico device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

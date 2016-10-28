@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Flytouch;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class FlytouchFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'flytouch';
+
         if (preg_match('/(Flytouch 9|Flytouch9)/i', $useragent)) {
-            return new Flytouch\Flytouch9($useragent);
+            $deviceCode = '9';
         }
 
-        return new Flytouch\Flytouch($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

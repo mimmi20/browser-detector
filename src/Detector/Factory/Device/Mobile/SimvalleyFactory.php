@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Simvalley;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class SimvalleyFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SPX\-5[ \_]3G/', $useragent)) {
-            return new Simvalley\SimvalleySpx53G($useragent);
+            $deviceCode = 'spx-5 3g';
         }
 
         if (preg_match('/SPX\-5/', $useragent)) {
-            return new Simvalley\SimvalleySpx5($useragent);
+            $deviceCode = 'spx-5';
         }
 
-        return new Simvalley\Simvalley($useragent);
+        $deviceCode = 'general simvalley device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

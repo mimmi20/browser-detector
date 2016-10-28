@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Intex;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class IntexFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general intex device';
+
         if (preg_match('/aqua\_star/i', $useragent)) {
-            return new Intex\IntexAquaStar($useragent);
+            $deviceCode = 'aqua star';
         }
 
-        return new Intex\Intex($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

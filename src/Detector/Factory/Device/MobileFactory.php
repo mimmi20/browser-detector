@@ -32,7 +32,8 @@
 namespace BrowserDetector\Detector\Factory\Device;
 
 
-use BrowserDetector\Detector\Device\Mobile\GeneralMobile;
+use BrowserDetector\Detector\Device;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,6 +53,8 @@ class MobileFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general mobile device';
+
         if (preg_match('/(hiphone|v919)/i', $useragent)) {
             return Mobile\HiPhoneFactory::detect($useragent);
         }
@@ -2071,6 +2074,6 @@ class MobileFactory implements FactoryInterface
             return Mobile\AppleFactory::detect($useragent);
         }
 
-        return new GeneralMobile($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

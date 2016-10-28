@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Sharp;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,45 +53,47 @@ class SharpFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SHARP\-TQ\-GX30i/', $useragent)) {
-            return new Sharp\SharpTqGx30i($useragent);
+            $deviceCode = 'tq-gx30i';
         }
 
         if (preg_match('/SH\-10D/', $useragent)) {
-            return new Sharp\SharpSh10d($useragent);
+            $deviceCode = 'sh-10d';
         }
 
         if (preg_match('/SH\-01F/', $useragent)) {
-            return new Sharp\SharpSH01F($useragent);
+            $deviceCode = 'sh-01f';
         }
 
         if (preg_match('/SH8128U/', $useragent)) {
-            return new Sharp\SH8128U($useragent);
+            $deviceCode = 'sh8128u';
         }
 
         if (preg_match('/SH7228U/', $useragent)) {
-            return new Sharp\SH7228U($useragent);
+            $deviceCode = 'sh7228u';
         }
 
         if (preg_match('/306SH/', $useragent)) {
-            return new Sharp\SH306($useragent);
+            $deviceCode = '306sh';
         }
 
         if (preg_match('/304SH/', $useragent)) {
-            return new Sharp\SH304($useragent);
+            $deviceCode = '304sh';
         }
 
         if (preg_match('/SH80F/', $useragent)) {
-            return new Sharp\SH80F($useragent);
+            $deviceCode = 'sh80f';
         }
 
         if (preg_match('/SH05C/', $useragent)) {
-            return new Sharp\SH05C($useragent);
+            $deviceCode = 'sh-05c';
         }
 
         if (preg_match('/IS05/', $useragent)) {
-            return new Sharp\IS05($useragent);
+            $deviceCode = 'is05';
         }
 
-        return new Sharp\Sharp($useragent);
+        $deviceCode = 'general sharp device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

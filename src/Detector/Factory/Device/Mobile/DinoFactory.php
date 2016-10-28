@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Dino;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class DinoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general dino device';
+
         if (preg_match('/DINO762/', $useragent)) {
-            return new Dino\Dino762A9($useragent);
+            $deviceCode = '762 a9';
         }
 
-        return new Dino\Dino($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

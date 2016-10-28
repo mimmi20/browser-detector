@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\TbTouch;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class TbTouchFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ignis 8/i', $useragent)) {
-            return new TbTouch\TbTouchIgnis8($useragent);
+            $deviceCode = 'ignis 8';
         }
 
-        return new TbTouch\TbTouch($useragent);
+        $deviceCode = 'general tb touch device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Minix;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MinixFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/NEO\-X5/', $useragent)) {
-            return new Minix\MinixNeoX5($useragent);
+            $deviceCode = 'neo x5';
         }
 
-        return new Minix\Minix($useragent);
+        $deviceCode = 'general minix device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

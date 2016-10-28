@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\TrekStor;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,57 +53,59 @@ class TrekStorFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SurfTab duo W1 10\.1/', $useragent)) {
-            return new TrekStor\TrekStorSurftabDuoW1101($useragent);
+            $deviceCode = 'surftab duo w1 10.1';
         }
 
         if (preg_match('/WP 4\.7/', $useragent)) {
-            return new TrekStor\TrekStorWp47($useragent);
+            $deviceCode = 'winphone 4.7 hd';
         }
 
         if (preg_match('/VT10416\-2/', $useragent)) {
-            return new TrekStor\TrekStorVt104162($useragent);
+            $deviceCode = 'vt10416-2';
         }
 
         if (preg_match('/VT10416\-1/', $useragent)) {
-            return new TrekStor\TrekStorVt10416($useragent);
+            $deviceCode = 'vt10416-1';
         }
 
         if (preg_match('/(ST701041|SurfTab\_7\.0)/', $useragent)) {
-            return new TrekStor\TrekStorSt701041($useragent);
+            $deviceCode = 'st701041';
         }
 
         if (preg_match('/ST10216\-2/', $useragent)) {
-            return new TrekStor\TrekStorSt102162($useragent);
+            $deviceCode = 'st10216-2';
         }
 
         if (preg_match('/ST80216/', $useragent)) {
-            return new TrekStor\TrekStorSt80216($useragent);
+            $deviceCode = 'st80216';
         }
 
         if (preg_match('/ST80208/', $useragent)) {
-            return new TrekStor\TrekStorSt80208($useragent);
+            $deviceCode = 'st80208';
         }
 
         if (preg_match('/ST70104/', $useragent)) {
-            return new TrekStor\TrekStorSt70104($useragent);
+            $deviceCode = 'st70104';
         }
 
         if (preg_match('/ST10416\-1/', $useragent)) {
-            return new TrekStor\TrekStorSt10416($useragent);
+            $deviceCode = 'st10416-1';
         }
 
         if (preg_match('/ST10216\-1/', $useragent)) {
-            return new TrekStor\TrekStorSt10216($useragent);
+            $deviceCode = 'st10216-1';
         }
 
         if (preg_match('/trekstor_liro_color/', $useragent)) {
-            return new TrekStor\TrekStorLiroColor($useragent);
+            $deviceCode = 'liro color';
         }
 
         if (preg_match('/breeze 10\.1 quad/', $useragent)) {
-            return new TrekStor\TrekStorBreeze10Quad($useragent);
+            $deviceCode = 'surftab breeze 10.1 quad';
         }
 
-        return new TrekStor\TrekStor($useragent);
+        $deviceCode = 'general trekstor device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Asus;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,154 +52,156 @@ class AsusFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general asus device';
+
         if (preg_match('/TF101G/i', $useragent)) {
-            return new Asus\AsusEepPadTransformerTf101g($useragent);
+            $deviceCode = 'eee pad transformer tf101g';
         }
 
         if (preg_match('/(Transformer TF201|Transformer Prime TF201)/i', $useragent)) {
-            return new Asus\AsusEepPadTransformerTf201($useragent);
+            $deviceCode = 'asus eee pad tf201';
         }
 
         if (preg_match('/z00ad/i', $useragent)) {
-            return new Asus\AsusZ00ad($useragent);
+            $deviceCode = 'z00ad';
         }
 
         if (preg_match('/k00c/i', $useragent)) {
-            return new Asus\AsusFoneK00c($useragent);
+            $deviceCode = 'k00c';
         }
 
         if (preg_match('/k00f/i', $useragent)) {
-            return new Asus\AsusFoneK00f($useragent);
+            $deviceCode = 'k00f';
         }
 
         if (preg_match('/k00z/i', $useragent)) {
-            return new Asus\AsusFoneK00z($useragent);
+            $deviceCode = 'k00z';
         }
 
         if (preg_match('/k01e/i', $useragent)) {
-            return new Asus\AsusFoneK01E($useragent);
+            $deviceCode = 'k01e';
         }
 
         if (preg_match('/k01a/i', $useragent)) {
-            return new Asus\AsusFoneK01A($useragent);
+            $deviceCode = 'k01a';
         }
 
         if (preg_match('/k017/i', $useragent)) {
-            return new Asus\AsusMemoPadK017($useragent);
+            $deviceCode = 'k017';
         }
 
         if (preg_match('/K013/i', $useragent)) {
-            return new Asus\AsusMemoPadK013($useragent);
+            $deviceCode = 'k013';
         }
 
         if (preg_match('/K012/i', $useragent)) {
-            return new Asus\AsusFoneK012($useragent);
+            $deviceCode = 'k012';
         }
 
         if (preg_match('/(K00E|ME372CG)/i', $useragent)) {
-            return new Asus\AsusFonePad7($useragent);
+            $deviceCode = 'k00e';
         }
 
         if (preg_match('/ME172V/i', $useragent)) {
-            return new Asus\AsusMe172v($useragent);
+            $deviceCode = 'me172v';
         }
 
         if (preg_match('/ME173X/i', $useragent)) {
-            return new Asus\AsusMe173x($useragent);
+            $deviceCode = 'me173x';
         }
 
         if (preg_match('/ME301T/i', $useragent)) {
-            return new Asus\AsusMe301t($useragent);
+            $deviceCode = 'me301t';
         }
 
         if (preg_match('/ME302C/i', $useragent)) {
-            return new Asus\AsusMe302c($useragent);
+            $deviceCode = 'me302c';
         }
 
         if (preg_match('/ME302KL/i', $useragent)) {
-            return new Asus\AsusMe302kl($useragent);
+            $deviceCode = 'me302kl';
         }
 
         if (preg_match('/ME371MG/i', $useragent)) {
-            return new Asus\AsusMe371mg($useragent);
+            $deviceCode = 'me371mg';
         }
 
         if (preg_match('/P1801\-T/i', $useragent)) {
-            return new Asus\AsusP1801t($useragent);
+            $deviceCode = 'p1801-t';
         }
 
         if (preg_match('/T00J/', $useragent)) {
-            return new Asus\AsusT00j($useragent);
+            $deviceCode = 't00j';
         }
 
         if (preg_match('/T00N/', $useragent)) {
-            return new Asus\AsusT00n($useragent);
+            $deviceCode = 't00n';
         }
 
         if (preg_match('/P01Y/', $useragent)) {
-            return new Asus\AsusP01y($useragent);
+            $deviceCode = 'p01y';
         }
 
         if (preg_match('/TF101/i', $useragent)) {
-            return new Asus\AsusTf101($useragent);
+            $deviceCode = 'tf101';
         }
 
         if (preg_match('/TF300TL/i', $useragent)) {
-            return new Asus\AsusTf300Tl($useragent);
+            $deviceCode = 'tf300tl';
         }
 
         if (preg_match('/TF300TG/i', $useragent)) {
-            return new Asus\AsusTf300Tg($useragent);
+            $deviceCode = 'tf300tg';
         }
 
         if (preg_match('/TF300T/i', $useragent)) {
-            return new Asus\AsusTf300T($useragent);
+            $deviceCode = 'tf300t';
         }
 
         if (preg_match('/TF700T/i', $useragent)) {
-            return new Asus\AsusTransformerPadTf700T($useragent);
+            $deviceCode = 'tf700t';
         }
 
         if (preg_match('/Slider SL101/i', $useragent)) {
-            return new Asus\Sl101($useragent);
+            $deviceCode = 'sl101';
         }
 
         if (preg_match('/Garmin\-Asus A50/i', $useragent)) {
-            return new Asus\GarminAsusA50($useragent);
+            $deviceCode = 'a50';
         }
 
         if (preg_match('/Garmin\-Asus A10/i', $useragent)) {
-            return new Asus\GarminAsusA10($useragent);
+            $deviceCode = 'asus a10';
         }
 
         if (preg_match('/Transformer Prime/i', $useragent)) {
-            return new Asus\AsusTransformerPrime($useragent);
+            $deviceCode = 'asus eee pad tf201';
         }
 
         if (preg_match('/padfone t004/i', $useragent)) {
-            return new Asus\AsusPadFoneT004($useragent);
+            $deviceCode = 'padfone t004';
         }
 
         if (preg_match('/padfone 2/i', $useragent)) {
-            return new Asus\AsusPadFone2($useragent);
+            $deviceCode = 'a68';
         }
 
         if (preg_match('/padfone/i', $useragent)) {
-            return new Asus\AsusPadFone($useragent);
+            $deviceCode = 'padfone';
         }
 
         if (preg_match('/nexus[ _]?7/i', $useragent)) {
-            return new Asus\AsusGalaxyNexus7($useragent);
+            $deviceCode = 'nexus 7';
         }
 
         if (preg_match('/asus;galaxy6/i', $useragent)) {
-            return new Asus\AsusGalaxy6($useragent);
+            $deviceCode = 'galaxy6';
         }
 
         if (preg_match('/eee_701/i', $useragent)) {
-            return new Asus\Eee701($useragent);
+            $deviceCode = 'eee 701';
         }
 
-        return new Asus\Asus($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

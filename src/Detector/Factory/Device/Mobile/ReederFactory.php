@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Reeder;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class ReederFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ReederA8R/', $useragent)) {
-            return new Reeder\ReederA8r($useragent);
+            $deviceCode = 'a8r';
         }
 
-        return new Reeder\Reeder($useragent);
+        $deviceCode = 'general reeder device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

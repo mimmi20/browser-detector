@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Digma;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,38 +52,40 @@ class DigmaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general digma device';
+
         if (preg_match('/PS1043MG/', $useragent)) {
-            return new Digma\DigmaPs1043mg($useragent);
+            $deviceCode = 'ps1043mg';
         }
 
         if (preg_match('/TT7026MW/', $useragent)) {
-            return new Digma\DigmaTt7026mw($useragent);
+            $deviceCode = 'tt7026mw';
         }
 
         if (preg_match('/iDxD7/', $useragent)) {
-            return new Digma\DigmaIdxd7($useragent);
+            $deviceCode = 'idxd7 3g';
         }
 
         if (preg_match('/iDxD4/', $useragent)) {
-            return new Digma\DigmaIdxd4($useragent);
+            $deviceCode = 'idxd4 3g';
         }
 
         if (preg_match('/iDsD7/', $useragent)) {
-            return new Digma\DigmaIdsd7($useragent);
+            $deviceCode = 'idsd7 3g';
         }
 
         if (preg_match('/iDnD7/', $useragent)) {
-            return new Digma\DigmaIdnd7($useragent);
+            $deviceCode = 'idnd7';
         }
 
         if (preg_match('/iDjD7/', $useragent)) {
-            return new Digma\DigmaIdjd7($useragent);
+            $deviceCode = 'idjd7';
         }
 
         if (preg_match('/iDrQ10/', $useragent)) {
-            return new Digma\DigmaIdrq10($useragent);
+            $deviceCode = 'idrq10 3g';
         }
 
-        return new Digma\Digma($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

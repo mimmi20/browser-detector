@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Yarvik;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class YarvikFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TAB10\-400/', $useragent)) {
-            return new Yarvik\YarvikTab10400($useragent);
+            $deviceCode = 'tab10-400';
         }
 
-        return new Yarvik\Yarvik($useragent);
+        $deviceCode = 'general yarvik device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

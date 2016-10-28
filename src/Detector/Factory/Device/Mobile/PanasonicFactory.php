@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Panasonic;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class PanasonicFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/dL1/', $useragent)) {
-            return new Panasonic\PanasonicDl1($useragent);
+            $deviceCode = 'dl1';
         }
 
-        return new Panasonic\Panasonic($useragent);
+        $deviceCode = 'general panasonic device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

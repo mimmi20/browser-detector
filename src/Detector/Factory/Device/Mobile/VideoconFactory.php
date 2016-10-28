@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Videocon;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class VideoconFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/A15/', $useragent)) {
-            return new Videocon\VideoconA15($useragent);
+            $deviceCode = 'a15';
         }
 
-        return new Videocon\Videocon($useragent);
+        $deviceCode = 'general videocon device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

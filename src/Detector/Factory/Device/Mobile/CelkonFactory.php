@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Celkon;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class CelkonFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general celkon device';
+
         if (preg_match('/A400/i', $useragent)) {
-            return new Celkon\CelkonA400($useragent);
+            $deviceCode = 'a400';
         }
 
-        return new Celkon\Celkon($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

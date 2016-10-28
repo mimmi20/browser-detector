@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Nvsbl;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class NvsblFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/P4D SIRIUS/', $useragent)) {
-            return new Nvsbl\P4dSirius($useragent);
+            $deviceCode = 'p4d sirius';
         }
 
-        return new Nvsbl\Nvsbl($useragent);
+        $deviceCode = 'general nvsbl device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

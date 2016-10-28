@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Cube;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,26 +52,28 @@ class CubeFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general cube device';
+
         if (preg_match('/u55gt/i', $useragent)) {
-            return new Cube\CubeU55gt($useragent);
+            $deviceCode = 'u55gt';
         }
 
         if (preg_match('/u51gt/i', $useragent)) {
-            return new Cube\CubeU51gt($useragent);
+            $deviceCode = 'u51gt';
         }
 
         if (preg_match('/u30gt 2/i', $useragent)) {
-            return new Cube\CubeU30gt2($useragent);
+            $deviceCode = 'u30gt2';
         }
 
         if (preg_match('/u30gt/i', $useragent)) {
-            return new Cube\CubeU30gt($useragent);
+            $deviceCode = 'u30gt';
         }
 
         if (preg_match('/u25gt\-c4w/i', $useragent)) {
-            return new Cube\CubeU25gtc4w($useragent);
+            $deviceCode = 'u25gt-c4w';
         }
 
-        return new Cube\Cube($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

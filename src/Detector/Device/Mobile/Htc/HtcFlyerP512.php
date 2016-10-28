@@ -53,7 +53,7 @@ class HtcFlyerP512 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Flyer';
+        $this->deviceName        = 'P512';
         $this->marketingName     = 'Flyer';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Htc')->getName();

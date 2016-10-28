@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Nuqleo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class NuqleoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/zaffire 1010/i', $useragent)) {
-            return new Nuqleo\NuqleoZaffire1010($useragent);
+            $deviceCode = 'zaffire 1010';
         }
 
         if (preg_match('/zaffire 785/i', $useragent)) {
-            return new Nuqleo\NuqleoZaffire785($useragent);
+            $deviceCode = 'zaffire 785';
         }
 
-        return new Nuqleo\Nuqleo($useragent);
+        $deviceCode = 'general nuqleo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

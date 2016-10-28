@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Modecom;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,33 +53,35 @@ class ModecomFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/FreeTAB 9702 HD X4/', $useragent)) {
-            return new Modecom\ModecomFreeTab9702Hdx4($useragent);
+            $deviceCode = 'freetab 9702 hd x4';
         }
 
         if (preg_match('/FreeTAB 9000 IPS IC/', $useragent)) {
-            return new Modecom\ModecomFreeTab9000IpsIc($useragent);
+            $deviceCode = 'freetab 9000 ips ic';
         }
 
         if (preg_match('/FreeTAB 8001 IPS X2 3G\+/', $useragent)) {
-            return new Modecom\ModecomFreeTab8001Ipsx23g($useragent);
+            $deviceCode = 'freetab 8001 ips x2 3g+';
         }
 
         if (preg_match('/FreeTAB 7800 IPS IC/', $useragent)) {
-            return new Modecom\ModecomFreeTab7800IpsIc($useragent);
+            $deviceCode = 'freetab 7800 ips ic';
         }
 
         if (preg_match('/FreeTAB 7001 HD IC/', $useragent)) {
-            return new Modecom\ModecomFreeTab7001HdIc($useragent);
+            $deviceCode = 'freetab 7001 hd ic';
         }
 
         if (preg_match('/FreeTAB 1014 IPS X4 3G\+/', $useragent)) {
-            return new Modecom\ModecomFreeTab1014IpsX43g($useragent);
+            $deviceCode = 'freetab 1014 ips x4 3g+';
         }
 
         if (preg_match('/FreeTAB 1001/', $useragent)) {
-            return new Modecom\ModecomFreeTab1001($useragent);
+            $deviceCode = 'freetab 1001';
         }
 
-        return new Modecom\Modecom($useragent);
+        $deviceCode = 'general modecom device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

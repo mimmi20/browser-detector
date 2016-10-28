@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Logicpd;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class LogicpdFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general logicpd device';
+
         if (preg_match('/(zoom2|nookcolor)/i', $useragent)) {
-            return new Logicpd\Zoom2($useragent);
+            $deviceCode = 'zoom2';
         }
 
-        return new Logicpd\Logicpd($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

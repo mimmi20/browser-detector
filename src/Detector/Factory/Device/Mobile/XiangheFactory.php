@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Xianghe;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,21 +53,23 @@ class XiangheFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/iphone[ ]?6c/i', $useragent)) {
-            return new Xianghe\XiangheIphone6c($useragent);
+            $deviceCode = 'iphone 6c';
         }
 
         if (preg_match('/iphone[ ]?5c/i', $useragent)) {
-            return new Xianghe\XiangheIphone5c($useragent);
+            $deviceCode = 'iphone 5c';
         }
 
         if (preg_match('/iphone[ ]?5/i', $useragent)) {
-            return new Xianghe\XiangheIphone5($useragent);
+            $deviceCode = 'iphone 5';
         }
 
         if (preg_match('/iphone/i', $useragent)) {
-            return new Xianghe\XiangheIphone($useragent);
+            $deviceCode = 'xianghe iphone';
         }
 
-        return new Xianghe\Xianghe($useragent);
+        $deviceCode = 'general xianghe device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

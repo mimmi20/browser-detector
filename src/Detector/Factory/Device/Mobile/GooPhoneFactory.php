@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\GooPhone;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class GooPhoneFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general goophone device';
+
         if (preg_match('/S4 MEGA/', $useragent)) {
-            return new GooPhone\GooPhoneS4Mega($useragent);
+            $deviceCode = 's4 mega';
         }
 
-        return new GooPhone\GooPhone($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

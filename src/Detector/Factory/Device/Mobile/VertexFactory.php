@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Vertex;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class VertexFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/impress\_l/i', $useragent)) {
-            return new Vertex\VertexImpressL($useragent);
+            $deviceCode = 'impress l';
         }
 
-        return new Vertex\Vertex($useragent);
+        $deviceCode = 'general vertex device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

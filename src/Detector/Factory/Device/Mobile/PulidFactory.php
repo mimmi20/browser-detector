@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Pulid;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class PulidFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/F15/', $useragent)) {
-            return new Pulid\PulidF15($useragent);
+            $deviceCode = 'f15';
         }
 
         if (preg_match('/F11/', $useragent)) {
-            return new Pulid\PulidF11($useragent);
+            $deviceCode = 'f11';
         }
 
-        return new Pulid\Pulid($useragent);
+        $deviceCode = 'general pulid device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

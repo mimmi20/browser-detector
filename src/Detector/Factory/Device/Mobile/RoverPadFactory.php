@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\RoverPad;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class RoverPadFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/air a70/i', $useragent)) {
-            return new RoverPad\RoverPadAirA70($useragent);
+            $deviceCode = 'air a70';
         }
 
-        return new RoverPad\RoverPad($useragent);
+        $deviceCode = 'general roverpad device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

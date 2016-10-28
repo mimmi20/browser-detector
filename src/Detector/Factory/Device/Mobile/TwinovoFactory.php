@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Twinovo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,13 +53,15 @@ class TwinovoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/t118/i', $useragent)) {
-            return new Twinovo\TwinovoT118($useragent);
+            $deviceCode = 't118';
         }
 
         if (preg_match('/t108/i', $useragent)) {
-            return new Twinovo\TwinovoT108($useragent);
+            $deviceCode = 't108';
         }
 
-        return new Twinovo\Twinovo($useragent);
+        $deviceCode = 'general twinovo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

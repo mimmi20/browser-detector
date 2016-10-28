@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Gigabyte;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class GigabyteFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general gigabyte device';
+
         if (preg_match('/Rio R1/', $useragent)) {
-            return new Gigabyte\GigabyteRioR1($useragent);
+            $deviceCode = 'rio r1';
         }
 
         if (preg_match('/GSmart\_T4/', $useragent)) {
-            return new Gigabyte\GigabyteGsmartt4($useragent);
+            $deviceCode = 'gsmart t4';
         }
 
-        return new Gigabyte\Gigabyte($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

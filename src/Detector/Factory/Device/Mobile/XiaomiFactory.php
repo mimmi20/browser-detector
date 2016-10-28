@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Xiaomi;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,69 +53,71 @@ class XiaomiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MI MAX/', $useragent)) {
-            return new Xiaomi\XiaomiMiMax($useragent);
+            $deviceCode = 'mi max';
         }
 
         if (preg_match('/MI 4LTE/', $useragent)) {
-            return new Xiaomi\XiaomiMi4lte($useragent);
+            $deviceCode = 'mi 4 lte';
         }
 
         if (preg_match('/MI 3W/', $useragent)) {
-            return new Xiaomi\XiaomiMi3w($useragent);
+            $deviceCode = 'mi 3w';
         }
 
         if (preg_match('/(MI PAD|MiPad)/', $useragent)) {
-            return new Xiaomi\XiaomiMiPad($useragent);
+            $deviceCode = 'mi pad';
         }
 
         if (preg_match('/MI 2A/', $useragent)) {
-            return new Xiaomi\XiaomiMi2a($useragent);
+            $deviceCode = 'mi 2a';
         }
 
         if (preg_match('/MI 2/', $useragent)) {
-            return new Xiaomi\XiaomiMi2($useragent);
+            $deviceCode = 'mi 2';
         }
 
         if (preg_match('/Redmi 3S/', $useragent)) {
-            return new Xiaomi\XiaomiRedmi3s($useragent);
+            $deviceCode = 'redmi 3s';
         }
 
         if (preg_match('/Redmi 3/', $useragent)) {
-            return new Xiaomi\XiaomiRedmi3($useragent);
+            $deviceCode = 'redmi 3';
         }
 
         if (preg_match('/Redmi_Note_3/', $useragent)) {
-            return new Xiaomi\XiaomiRedmiNote3($useragent);
+            $deviceCode = 'redmi note 3';
         }
 
         if (preg_match('/Redmi Note 2/', $useragent)) {
-            return new Xiaomi\XiaomiRedmiNote2($useragent);
+            $deviceCode = 'redmi note 2';
         }
 
         if (preg_match('/HM NOTE 1W/', $useragent)) {
-            return new Xiaomi\XiaomiHmnote1w($useragent);
+            $deviceCode = 'hm note 1w';
         }
 
         if (preg_match('/HM NOTE 1S/', $useragent)) {
-            return new Xiaomi\XiaomiHmnote1s($useragent);
+            $deviceCode = 'hm note 1s';
         }
 
         if (preg_match('/HM NOTE 1LTETD/', $useragent)) {
-            return new Xiaomi\XiaomiHmnote1ltetd($useragent);
+            $deviceCode = 'hm note 1lte td';
         }
 
         if (preg_match('/HM NOTE 1LTE/', $useragent)) {
-            return new Xiaomi\XiaomiHmnote1lte($useragent);
+            $deviceCode = 'hm note 1lte';
         }
 
         if (preg_match('/HM\_1SW/', $useragent)) {
-            return new Xiaomi\XiaomiHm1sw($useragent);
+            $deviceCode = 'hm 1sw';
         }
 
         if (preg_match('/HM 1SC/', $useragent)) {
-            return new Xiaomi\XiaomiHm1sc($useragent);
+            $deviceCode = 'hm 1sc';
         }
 
-        return new Xiaomi\Xiaomi($useragent);
+        $deviceCode = 'general xiaomi device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

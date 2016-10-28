@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Tolino;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,21 +53,23 @@ class TolinoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/tab 8\.9/i', $useragent)) {
-            return new Tolino\TolinoTab89($useragent);
+            $deviceCode = 'tab 8.9';
         }
 
         if (preg_match('/tab 8/i', $useragent)) {
-            return new Tolino\TolinoTab8($useragent);
+            $deviceCode = 'tab 8';
         }
 
         if (preg_match('/tab 7/i', $useragent)) {
-            return new Tolino\TolinoTab7($useragent);
+            $deviceCode = 'tab 7';
         }
 
         if (preg_match('/tolino/i', $useragent)) {
-            return new Tolino\TolinoShine($useragent);
+            $deviceCode = 'tolino shine';
         }
 
-        return new Tolino\Tolino($useragent);
+        $deviceCode = 'general tolino device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

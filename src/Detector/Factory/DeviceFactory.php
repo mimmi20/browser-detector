@@ -35,6 +35,8 @@ use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
+use BrowserDetector\Version\Version;
+use BrowserDetector\Version\VersionFactory;
 use UaHelper\Utils;
 
 /**
@@ -78,6 +80,43 @@ class DeviceFactory implements FactoryInterface
             return Device\DesktopFactory::detect($useragent);
         }
 
-        return new UnknownDevice($useragent);
+        return self::get('unknown', $useragent);
+    }
+
+    /**
+     * @param string $deviceKey
+     * @param string $useragent
+     *
+     * @return \UaResult\Device\DeviceInterface
+     */
+    public static function get($deviceKey, $useragent)
+    {
+        static $devices = null;
+
+        if (null === $devices) {
+            $devices = json_decode(file_get_contents(__DIR__ . '/data/devices.json'));
+        }
+
+        if (!isset($devices->$deviceKey)) {
+            return new \UaResult\Device\Device('unknown', 'unknown', 'unknown', 'unknown', new Version(0));
+        }
+
+        $engineVersionClass = $devices->$deviceKey->version->class;
+
+        if (!is_string($engineVersionClass)) {
+            $version = new Version(0);
+        } elseif ('VersionFactory' === $engineVersionClass) {
+            $version = VersionFactory::detectVersion($useragent, $devices->$deviceKey->version->search);
+        } else {
+            $version = $engineVersionClass::detectVersion($useragent);
+        }
+
+        return new \UaResult\Device\Device(
+            $devices->$deviceKey->codename,
+            $devices->$deviceKey->marketingName,
+            $devices->$deviceKey->manufacturer,
+            $devices->$deviceKey->brand,
+            $version
+        );
     }
 }

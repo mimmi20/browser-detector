@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Zeki;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,17 +53,19 @@ class ZekiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TBDC1093/', $useragent)) {
-            return new Zeki\ZekiTbdc1093($useragent);
+            $deviceCode = 'tbdc1093';
         }
 
         if (preg_match('/TBDB863/', $useragent)) {
-            return new Zeki\ZekiTbdb863($useragent);
+            $deviceCode = 'tbdb863';
         }
 
         if (preg_match('/TBD1083/', $useragent)) {
-            return new Zeki\ZekiTbd1083($useragent);
+            $deviceCode = 'tbd1083';
         }
 
-        return new Zeki\Zeki($useragent);
+        $deviceCode = 'general zeki device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

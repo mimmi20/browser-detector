@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Gfive;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class GfiveFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general gfive device';
+
         if (preg_match('/president g10 fashion/i', $useragent)) {
-            return new Gfive\GfivePresidentG10Fashion($useragent);
+            $deviceCode = 'president g10 fashion';
         }
 
-        return new Gfive\Gfive($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

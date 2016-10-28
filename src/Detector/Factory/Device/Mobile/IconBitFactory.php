@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\IconBit;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,30 +52,32 @@ class IconBitFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general iconbit device';
+
         if (preg_match('/nt\-3710s/i', $useragent)) {
-            return new IconBit\IconBitNt3710s($useragent);
+            $deviceCode = 'nt-3710s';
         }
 
         if (preg_match('/nt\-3702m/i', $useragent)) {
-            return new IconBit\IconBitNt3702m($useragent);
+            $deviceCode = 'nt-3702m';
         }
 
         if (preg_match('/nt\-3601p/i', $useragent)) {
-            return new IconBit\IconBitNt3601p($useragent);
+            $deviceCode = 'nettab pocket 3g';
         }
 
         if (preg_match('/nt\-1009t/i', $useragent)) {
-            return new IconBit\IconBitNt1009t($useragent);
+            $deviceCode = 'nt-1009t';
         }
 
         if (preg_match('/nt\-1002t/i', $useragent)) {
-            return new IconBit\IconBitNt1002t($useragent);
+            $deviceCode = 'nt-1002t';
         }
 
         if (preg_match('/nt\-1001t/i', $useragent)) {
-            return new IconBit\IconBitNt1001t($useragent);
+            $deviceCode = 'nt-1001t';
         }
 
-        return new IconBit\IconBit($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Thl;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,37 +53,39 @@ class ThlFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/W200/', $useragent)) {
-            return new Thl\ThlW200($useragent);
+            $deviceCode = 'w200';
         }
 
         if (preg_match('/W100/', $useragent)) {
-            return new Thl\ThlW100($useragent);
+            $deviceCode = 'w100';
         }
 
         if (preg_match('/W8\_beyond/', $useragent)) {
-            return new Thl\ThlW8Beyond($useragent);
+            $deviceCode = 'thl w8';
         }
 
         if (preg_match('/ThL W8/', $useragent)) {
-            return new Thl\ThlW8($useragent);
+            $deviceCode = 'thl w8';
         }
 
         if (preg_match('/ThL W7/', $useragent)) {
-            return new Thl\ThlW7($useragent);
+            $deviceCode = 'w7';
         }
 
         if (preg_match('/T6S/', $useragent)) {
-            return new Thl\ThlT6s($useragent);
+            $deviceCode = 't6s';
         }
 
         if (preg_match('/4400/', $useragent)) {
-            return new Thl\Thl4400($useragent);
+            $deviceCode = '4400';
         }
 
         if (preg_match('/thl 2015/i', $useragent)) {
-            return new Thl\Thl2015($useragent);
+            $deviceCode = '2015';
         }
 
-        return new Thl\Thl($useragent);
+        $deviceCode = 'general thl device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Highscreen;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,26 +52,28 @@ class HighscreenFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general highscreen device';
+
         if (preg_match('/Zera[ \_]F/', $useragent)) {
-            return new Highscreen\HighscreenZeraF($useragent);
+            $deviceCode = 'zera f';
         }
 
         if (preg_match('/prime s/i', $useragent)) {
-            return new Highscreen\HighscreenOmegaPrimeS($useragent);
+            $deviceCode = 'omega prime s';
         }
 
         if (preg_match('/ice2/i', $useragent)) {
-            return new Highscreen\HighscreenIce2($useragent);
+            $deviceCode = 'ice 2';
         }
 
         if (preg_match('/explosion/i', $useragent)) {
-            return new Highscreen\HighscreenExplosion($useragent);
+            $deviceCode = 'explosion';
         }
 
         if (preg_match('/boost iise/i', $useragent)) {
-            return new Highscreen\HighscreenBoostiiSe($useragent);
+            $deviceCode = 'boost ii se';
         }
 
-        return new Highscreen\Highscreen($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

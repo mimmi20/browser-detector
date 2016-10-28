@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Orange;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class OrangeFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/funtab 8/i', $useragent)) {
-            return new Orange\OrangeFunTab8($useragent);
+            $deviceCode = 'funtab 8';
         }
 
-        return new Orange\Orange($useragent);
+        $deviceCode = 'general orange device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

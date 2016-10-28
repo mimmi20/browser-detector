@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Wolgang;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class WolgangFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/AT\-AS40SE/', $useragent)) {
-            return new Wolgang\WolgangAtas40se($useragent);
+            $deviceCode = 'at-as40se';
         }
 
-        return new Wolgang\Wolgang($useragent);
+        $deviceCode = 'general wolgang device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

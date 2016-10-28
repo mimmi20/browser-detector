@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Easypix;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class EasypixFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general easypix device';
+
         if (preg_match('/junior 4\.0/i', $useragent)) {
-            return new Easypix\EasypixJunior($useragent);
+            $deviceCode = 'junior 4.0';
         }
 
         if (preg_match('/easypad 970/i', $useragent)) {
-            return new Easypix\EasypixEasyPad970($useragent);
+            $deviceCode = 'easypad 970';
         }
 
-        return new Easypix\Easypix($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

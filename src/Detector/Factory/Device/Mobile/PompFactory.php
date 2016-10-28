@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Pomp;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class PompFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/W88/', $useragent)) {
-            return new Pomp\PompW88($useragent);
+            $deviceCode = 'w88';
         }
 
-        return new Pomp\Pomp($useragent);
+        $deviceCode = 'general pomp device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

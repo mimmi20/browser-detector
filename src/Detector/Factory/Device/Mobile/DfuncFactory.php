@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Dfunc;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class DfuncFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general dfunc device';
+
         if (preg_match('/FUNC TITAN\-02/', $useragent)) {
-            return new Dfunc\DfuncTitan02($useragent);
+            $deviceCode = 'func titan-02';
         }
 
-        return new Dfunc\Dfunc($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

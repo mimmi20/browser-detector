@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Archos;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,166 +52,168 @@ class ArchosFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general archos device';
+
         if (preg_match('/A101IT/i', $useragent)) {
-            return new Archos\ArchosA101it($useragent);
+            $deviceCode = 'a101it';
         }
 
         if (preg_match('/A80KSC/i', $useragent)) {
-            return new Archos\ArchosA80KSC($useragent);
+            $deviceCode = 'a80ksc';
         }
 
         if (preg_match('/A70S/i', $useragent)) {
-            return new Archos\ArchosA70S($useragent);
+            $deviceCode = 'a70s';
         }
 
         if (preg_match('/A70HB/i', $useragent)) {
-            return new Archos\ArchosA70HB($useragent);
+            $deviceCode = 'a70hb';
         }
 
         if (preg_match('/A70H2/i', $useragent)) {
-            return new Archos\ArchosA70H2($useragent);
+            $deviceCode = 'a70 h2';
         }
 
         if (preg_match('/A70CHT/i', $useragent)) {
-            return new Archos\ArchosA70CHT($useragent);
+            $deviceCode = 'a70cht';
         }
 
         if (preg_match('/A70BHT/i', $useragent)) {
-            return new Archos\ArchosA70BHT($useragent);
+            $deviceCode = 'a70bht';
         }
 
         if (preg_match('/a35dm/i', $useragent)) {
-            return new Archos\ArchosA35DM($useragent);
+            $deviceCode = 'a35dm';
         }
 
         if (preg_match('/a7eb/i', $useragent)) {
-            return new Archos\ArchosA7eb($useragent);
+            $deviceCode = '70c';
         }
 
         if (preg_match('/101 xs 2/i', $useragent)) {
-            return new Archos\Archos101xs2($useragent);
+            $deviceCode = '101 xs 2';
         }
 
         if (preg_match('/121 neon/i', $useragent)) {
-            return new Archos\Archos121Neon($useragent);
+            $deviceCode = '121 neon';
         }
 
         if (preg_match('/101d neon/i', $useragent)) {
-            return new Archos\Archos101dNeon($useragent);
+            $deviceCode = '101d neon';
         }
 
         if (preg_match('/101 neon/i', $useragent)) {
-            return new Archos\Archos101Neon($useragent);
+            $deviceCode = '101 neon';
         }
 
         if (preg_match('/101 copper/i', $useragent)) {
-            return new Archos\Archos101Copper($useragent);
+            $deviceCode = '101 copper';
         }
 
         if (preg_match('/101g10/i', $useragent)) {
-            return new Archos\Archos101G10($useragent);
+            $deviceCode = '101g10';
         }
 
         if (preg_match('/101g9/i', $useragent)) {
-            return new Archos\Archos101G9($useragent);
+            $deviceCode = '101 g9';
         }
 
         if (preg_match('/101b/i', $useragent)) {
-            return new Archos\Archos101B($useragent);
+            $deviceCode = '101b';
         }
 
         if (preg_match('/97 xenon/i', $useragent)) {
-            return new Archos\Archos97Xenon($useragent);
+            $deviceCode = '97 xenon';
         }
 
         if (preg_match('/97 TITANIUMHD/i', $useragent)) {
-            return new Archos\Archos97TitaniumHd($useragent);
+            $deviceCode = '97 titanium hd';
         }
 
         if (preg_match('/97 neon/i', $useragent)) {
-            return new Archos\Archos97Neon($useragent);
+            $deviceCode = '97 neon';
         }
 
         if (preg_match('/97 carbon/i', $useragent)) {
-            return new Archos\Archos97Carbon($useragent);
+            $deviceCode = '97 carbon';
         }
 
         if (preg_match('/80xsk/i', $useragent)) {
-            return new Archos\Archos80XSK($useragent);
+            $deviceCode = '80xsk';
         }
 
         if (preg_match('/80 xenon/i', $useragent)) {
-            return new Archos\Archos80Xenon($useragent);
+            $deviceCode = '80 xenon';
         }
 
         if (preg_match('/80g9/i', $useragent)) {
-            return new Archos\Archos80G9($useragent);
+            $deviceCode = '80 g9';
         }
 
         if (preg_match('/80 cobalt/i', $useragent)) {
-            return new Archos\Archos80Cobalt($useragent);
+            $deviceCode = '80 cobalt';
         }
 
         if (preg_match('/79 xenon/i', $useragent)) {
-            return new Archos\Archos79Xenon($useragent);
+            $deviceCode = '79 xenon';
         }
 
         if (preg_match('/70 xenon/i', $useragent)) {
-            return new Archos\Archos70Xenon($useragent);
+            $deviceCode = '70 xenon';
         }
 
         if (preg_match('/70it2/i', $useragent)) {
-            return new Archos\Archos70it2($useragent);
+            $deviceCode = '70it2';
         }
 
         if (preg_match('/53 platinum/i', $useragent)) {
-            return new Archos\Archos53Platinum($useragent);
+            $deviceCode = '53 platinum';
         }
 
         if (preg_match('/50 titanium/i', $useragent)) {
-            return new Archos\Archos50Titanium($useragent);
+            $deviceCode = '50 titanium';
         }
 
         if (preg_match('/50b platinum/i', $useragent)) {
-            return new Archos\Archos50bPlatinum($useragent);
+            $deviceCode = '50b platinum';
         }
 
         if (preg_match('/50 platinum/i', $useragent)) {
-            return new Archos\Archos50Platinum($useragent);
+            $deviceCode = '50 platinum';
         }
 
         if (preg_match('/50 cesium/i', $useragent)) {
-            return new Archos\Archos50Cesium($useragent);
+            $deviceCode = '50 cesium';
         }
 
         if (preg_match('/50 oxygen plus/i', $useragent)) {
-            return new Archos\Archos50OxygenPlus($useragent);
+            $deviceCode = '50 oxygen plus';
         }
 
         if (preg_match('/50c oxygen/i', $useragent)) {
-            return new Archos\Archos50cOxygen($useragent);
+            $deviceCode = '50c oxygen';
         }
 
         if (preg_match('/40 cesium/i', $useragent)) {
-            return new Archos\Archos40Cesium($useragent);
+            $deviceCode = '40 cesium';
         }
 
         if (preg_match('/40b titanium surround/i', $useragent)) {
-            return new Archos\Archos40bTitaniumSurround($useragent);
+            $deviceCode = '40b titanium surround';
         }
 
         if (preg_match('/archos5/i', $useragent)) {
-            return new Archos\Archos5($useragent);
+            $deviceCode = '5';
         }
 
         if (preg_match('/FAMILYPAD 2/i', $useragent)) {
-            return new Archos\ArchosFamilyPad2($useragent);
+            $deviceCode = 'family pad 2';
         }
 
         if (preg_match('/bush windows phone/i', $useragent)) {
-            return new Archos\BushEluma($useragent);
+            $deviceCode = 'eluma';
         }
 
-        return new Archos\Archos($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

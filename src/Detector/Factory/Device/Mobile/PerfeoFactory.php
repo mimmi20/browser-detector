@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Perfeo;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class PerfeoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/7007HD/', $useragent)) {
-            return new Perfeo\Perfeo7007Hd($useragent);
+            $deviceCode = '7007-hd';
         }
 
-        return new Perfeo\Perfeo($useragent);
+        $deviceCode = 'general perfeo device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

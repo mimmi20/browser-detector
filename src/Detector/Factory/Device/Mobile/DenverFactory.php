@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Denver;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class DenverFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general denver device';
+
         if (preg_match('/TAD\-70112/i', $useragent)) {
-            return new Denver\DenverTad70112($useragent);
+            $deviceCode = 'tad-70112';
         }
 
         if (preg_match('/TAD\-10023/i', $useragent)) {
-            return new Denver\DenverTad10023($useragent);
+            $deviceCode = 'tad-10023';
         }
 
-        return new Denver\Denver($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

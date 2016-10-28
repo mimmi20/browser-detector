@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Manta;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -52,9 +53,11 @@ class MantaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MID802/', $useragent)) {
-            return new Manta\MantaMid802($useragent);
+            $deviceCode = 'mid802';
         }
 
-        return new Manta\Manta($useragent);
+        $deviceCode = 'general manta device';
+
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

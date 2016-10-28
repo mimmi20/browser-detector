@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Ainol;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,14 +52,16 @@ class AinolFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general ainol device';
+
         if (preg_match('/numy\_note\_9/i', $useragent)) {
-            return new Ainol\AinolNumyNote9($useragent);
+            $deviceCode = 'numy note 9';
         }
 
         if (preg_match('/novo7fire/i', $useragent)) {
-            return new Ainol\AinolNovo7Fire($useragent);
+            $deviceCode = 'novo 7 fire';
         }
 
-        return new Ainol\Ainol($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

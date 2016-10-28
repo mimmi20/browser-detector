@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Bq;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,38 +52,40 @@ class BqFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general bq device';
+
         if (preg_match('/Aquaris E5 HD/', $useragent)) {
-            return new Bq\BqAquarisE5hd($useragent);
+            $deviceCode = 'aquaris e5 hd';
         }
 
         if (preg_match('/Aquaris M10/', $useragent)) {
-            return new Bq\BqAquarisM10($useragent);
+            $deviceCode = 'aquaris m10';
         }
 
         if (preg_match('/Aquaris M5/', $useragent)) {
-            return new Bq\BqAquarisM5($useragent);
+            $deviceCode = 'aquaris m5';
         }
 
         if (preg_match('/Aquaris[ _]M4\.5/', $useragent)) {
-            return new Bq\BqAquarisM45($useragent);
+            $deviceCode = 'aquaris m4.5';
         }
 
         if (preg_match('/Aquaris 5 HD/', $useragent)) {
-            return new Bq\BqAquarisE5($useragent);
+            $deviceCode = 'aquaris e5';
         }
 
         if (preg_match('/7056G/', $useragent)) {
-            return new Bq\Bq7056g($useragent);
+            $deviceCode = '7056g';
         }
 
         if (preg_match('/BQS\-4007/', $useragent)) {
-            return new Bq\Bq4007($useragent);
+            $deviceCode = 'bqs-4007';
         }
 
         if (preg_match('/BQS\-4005/', $useragent)) {
-            return new Bq\Bq4005($useragent);
+            $deviceCode = 'bqs-4005';
         }
 
-        return new Bq\Bq($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

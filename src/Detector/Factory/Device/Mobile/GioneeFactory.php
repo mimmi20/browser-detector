@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Gionee;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class GioneeFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general gionee device';
+
         if (preg_match('/ M3 /', $useragent)) {
-            return new Gionee\GioneeMarathonM3($useragent);
+            $deviceCode = 'm3';
         }
 
-        return new Gionee\Gionee($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }

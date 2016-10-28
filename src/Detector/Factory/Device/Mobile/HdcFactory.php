@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
 use BrowserDetector\Detector\Device\Mobile\Hdc;
+use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -51,10 +52,12 @@ class HdcFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $deviceCode = 'general hdc device';
+
         if (preg_match('/Galaxy S3 EX/i', $useragent)) {
-            return new Hdc\HdcI9300GalaxyS3Ex($useragent);
+            $deviceCode = 'i9300';
         }
 
-        return new Hdc\Hdc($useragent);
+        return DeviceFactory::get($deviceCode, $useragent);
     }
 }
