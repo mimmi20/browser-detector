@@ -100,15 +100,19 @@ class DeviceFactory implements FactoryInterface
             return new \UaResult\Device\Device('unknown', 'unknown', 'unknown', 'unknown', new Version(0));
         }
 
-        $engineVersionClass = $devices->$deviceKey->version->class;
-
-        if (!is_string($engineVersionClass)) {
-            $version = new Version(0);
-        } elseif ('VersionFactory' === $engineVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $devices->$deviceKey->version->search);
+        if (!isset($devices->$deviceKey->version->class)) {
+            $version = null;
         } else {
-            /** @var \BrowserDetector\Version\VersionFactoryInterface $engineVersionClass */
-            $version = $engineVersionClass::detectVersion($useragent);
+            $engineVersionClass = $devices->$deviceKey->version->class;
+
+            if (!is_string($engineVersionClass)) {
+                $version = new Version(0);
+            } elseif ('VersionFactory' === $engineVersionClass) {
+                $version = VersionFactory::detectVersion($useragent, $devices->$deviceKey->version->search);
+            } else {
+                /** @var \BrowserDetector\Version\VersionFactoryInterface $engineVersionClass */
+                $version = $engineVersionClass::detectVersion($useragent);
+            }
         }
 
         $typeClass   = '\\UaDeviceType\\' . $devices->$deviceKey->type;
