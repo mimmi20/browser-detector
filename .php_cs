@@ -12,7 +12,7 @@ $finder = Symfony\CS\Finder\DefaultFinder::create()
     ->files()
     ->name('*.php')
     ->in(__DIR__ . '/src')
-    ->in(__DIR__ . '/tests')
+    //->in(__DIR__ . '/tests')
 ;
 
 ini_set('memory_limit', '-1');

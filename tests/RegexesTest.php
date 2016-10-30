@@ -18,7 +18,7 @@
 namespace BrowserDetectorTest;
 
 use BrowserDetector\BrowserDetector;
-use BrowserDetector\Detector\Factory\RegexFactory;
+use BrowserDetector\Factory\RegexFactory;
 use Cache\Adapter\Void\VoidCachePool;
 use Monolog\Handler\NullHandler;
 use Monolog\Logger;
@@ -121,7 +121,7 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
 
         $normalizedUa = $normalizer->normalize($userAgent);
 
-        $result = RegexFactory::detect($normalizedUa);
+        $result = (new RegexFactory())->detect($normalizedUa);
 
         self::assertNotNull($result, 'regexes are missing');
         self::assertNotFalse($result, 'no match for UA ' . $normalizedUa);
