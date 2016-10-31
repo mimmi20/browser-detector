@@ -35,6 +35,9 @@ use BrowserDetector\Bits\Os as OsBits;
 use BrowserDetector\Helper;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionInterface;
+use Psr\Cache\CacheItemInterface;
+use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
 use UaResult\Os\Os;
 
@@ -49,6 +52,19 @@ use UaResult\Os\Os;
  */
 class PlatformFactory implements FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * Gets the information about the platform by User Agent
      *
@@ -96,7 +112,7 @@ class PlatformFactory implements FactoryInterface
         } elseif ($isWindows && $s->contains('ARM;')) {
             $platformCode = 'windows rt';
         } elseif ($isWindows) {
-            return (new Platform\WindowsFactory())->detect($agent);
+            return (new Platform\WindowsFactory($this->cache))->detect($agent);
         } elseif (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|S60V3|S60V5)/', $agent)) {
             $platformCode = 'symbian os';
         } elseif (preg_match('/(Series40)/', $agent)) {
@@ -111,15 +127,15 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'android';
         } elseif ($s->contains('Debian APT-HTTP')) {
             $platformCode = 'debian';
-        } elseif ($s->contains('linux mint', true)) {
+        } elseif ($s->contains('linux mint', false)) {
             $platformCode = 'linux mint';
-        } elseif ($s->contains('kubuntu', true)) {
+        } elseif ($s->contains('kubuntu', false)) {
             $platformCode = 'kubuntu';
-        } elseif ($s->contains('ubuntu', true)) {
+        } elseif ($s->contains('ubuntu', false)) {
             $platformCode = 'ubuntu';
-        } elseif ($s->contains('fedora', true)) {
+        } elseif ($s->contains('fedora', false)) {
             $platformCode = 'fedora linux';
-        } elseif ($s->containsAny(['redhat', 'red hat'], true)) {
+        } elseif ($s->containsAny(['redhat', 'red hat'], false)) {
             $platformCode = 'redhat linux';
         } elseif (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $agent)) {
             $platformCode = 'linux smartphone os (maemo)';
@@ -131,13 +147,13 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'tizen';
         } elseif ((new Helper\FirefoxOs($agent))->isFirefoxOs()) {
             $platformCode = 'firefoxos';
-        } elseif ($s->containsAll(['freebsd', 'kfreebsd'], true)) {
+        } elseif ($s->containsAll(['freebsd', 'kfreebsd'], false)) {
             $platformCode = 'debian with freebsd kernel';
-        } elseif ($s->contains('freebsd', true)) {
+        } elseif ($s->contains('freebsd', false)) {
             $platformCode = 'freebsd';
-        } elseif ($s->containsAny(['darwin', 'cfnetwork'], true)) {
-            return (new Platform\DarwinFactory())->detect($agent);
-        } elseif ($s->contains('playstation', true)) {
+        } elseif ($s->containsAny(['darwin', 'cfnetwork'], false)) {
+            return (new Platform\DarwinFactory($this->cache))->detect($agent);
+        } elseif ($s->contains('playstation', false)) {
             $platformCode = 'cellos';
         } elseif (preg_match('/(micromaxx650|dolfin\/|yuanda50|wap[ \-]browser)/i', $agent)) {
             $platformCode = 'java';
@@ -163,23 +179,23 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'mac os x';
         } elseif ($s->containsAny(['RIM Tablet'])) {
             $platformCode = 'rim tablet os';
-        } elseif ($s->contains('centos', true)) {
+        } elseif ($s->contains('centos', false)) {
             $platformCode = 'cent os linux';
         } elseif ($s->contains('CrOS')) {
             $platformCode = 'chromeos';
         } elseif ($s->contains('Joli OS')) {
             $platformCode = 'joli os';
-        } elseif ($s->contains('mandriva', true)) {
+        } elseif ($s->contains('mandriva', false)) {
             $platformCode = 'mandriva linux';
-        } elseif ($s->contains('suse', true)) {
+        } elseif ($s->contains('suse', false)) {
             $platformCode = 'suse linux';
-        } elseif ($s->contains('gentoo', true)) {
+        } elseif ($s->contains('gentoo', false)) {
             $platformCode = 'gentoo linux';
-        } elseif ($s->contains('slackware', true)) {
+        } elseif ($s->contains('slackware', false)) {
             $platformCode = 'slackware linux';
-        } elseif ($s->contains('ventana', true)) {
+        } elseif ($s->contains('ventana', false)) {
             $platformCode = 'ventana linux';
-        } elseif ($s->contains('moblin', true)) {
+        } elseif ($s->contains('moblin', false)) {
             $platformCode = 'moblin';
         } elseif ($s->contains('Zenwalk GNU')) {
             $platformCode = 'zenwalk gnu linux';
@@ -189,7 +205,7 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'amiga os';
         } elseif ($s->contains('BREW')) {
             $platformCode = 'brew';
-        } elseif ($s->contains('cygwin', true)) {
+        } elseif ($s->contains('cygwin', false)) {
             $platformCode = 'cygwin';
         } elseif ($s->contains('NetBSD')) {
             $platformCode = 'netbsd';
@@ -201,13 +217,13 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'bsd';
         } elseif ($s->containsAny(['HP-UX', 'HPUX'])) {
             $platformCode = 'hp-ux';
-        } elseif ($s->containsAny(['beos'], true)) {
+        } elseif ($s->containsAny(['beos'], false)) {
             $platformCode = 'beos';
         } elseif ($s->containsAny(['IRIX64', 'IRIX'])) {
             $platformCode = 'irix';
-        } elseif ($s->contains('solaris', true)) {
+        } elseif ($s->contains('solaris', false)) {
             $platformCode = 'solaris';
-        } elseif ($s->contains('sunos', true)) {
+        } elseif ($s->contains('sunos', false)) {
             $platformCode = 'sunos';
         } elseif ($s->contains('RISC')) {
             $platformCode = 'risc os';
@@ -215,9 +231,9 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'openvms';
         } elseif ($s->containsAny(['Tru64 UNIX', 'Digital Unix', 'OSF1'])) {
             $platformCode = 'tru64 unix';
-        } elseif ($s->contains('unix', true)) {
+        } elseif ($s->contains('unix', false)) {
             $platformCode = 'unix';
-        } elseif ($s->containsAny(['os/2', 'warp'], true)) {
+        } elseif ($s->containsAny(['os/2', 'warp'], false)) {
             $platformCode = 'os/2';
         } elseif ((new Helper\Linux($agent))->isLinux()) {
             $platformCode = 'linux';
@@ -227,7 +243,7 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'nintendo os';
         } elseif ($s->containsAny(['Nokia'])) {
             $platformCode = 'nokia os';
-        } elseif ($s->contains('ruby', true)) {
+        } elseif ($s->contains('ruby', false)) {
             $platformCode = 'ruby';
         } elseif ($s->containsAny(['Palm OS', 'PalmSource'])) {
             $platformCode = 'palmos';
@@ -261,13 +277,16 @@ class PlatformFactory implements FactoryInterface
      */
     public function get($platformCode, $useragent, $inputVersion = null)
     {
-        static $platforms = null;
+        $cacheInitializedId = hash('sha512', 'platform-cache is initialized');
+        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
 
-        if (null === $platforms) {
-            $platforms = json_decode(file_get_contents(__DIR__ . '/../../data/platforms.json'));
+        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
+            $this->initCache($cacheInitialized);
         }
 
-        if (!isset($platforms->$platformCode)) {
+        $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
+
+        if (!$cacheItem->isHit()) {
             return new Os(
                 'unknown',
                 'unknown',
@@ -277,26 +296,61 @@ class PlatformFactory implements FactoryInterface
             );
         }
 
-        $platformVersionClass = $platforms->$platformCode->version->class;
+        $platform = $cacheItem->get();
+
+        $platformVersionClass = $platform->version->class;
 
         if (null !== $inputVersion && is_string($inputVersion)) {
             $version = VersionFactory::set($inputVersion);
         } elseif (!is_string($platformVersionClass)) {
             $version = new Version(0);
         } elseif ('VersionFactory' === $platformVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $platforms->$platformCode->version->search);
+            $version = VersionFactory::detectVersion($useragent, $platform->version->search);
         } else {
-            /** @var \BrowserDetector\Version\VersionFactoryInterface $platformVersionClass */
-            $version = $platformVersionClass::detectVersion($useragent);
+            /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
+            $versionClass = new $platformVersionClass($this->cache);
+            $version      = $versionClass->detectVersion($useragent);
+        }
+
+        $name          = $platform->name;
+        $marketingName = $platform->marketingName;
+
+        if ('Mac OS X' === $name
+            && version_compare((float) $version->getVersion(VersionInterface::MAJORMINOR), 10.12, '>=')
+        ) {
+            $name          = 'macOS';
+            $marketingName = 'macOS';
         }
 
         return new Os(
-            $platforms->$platformCode->name,
-            $platforms->$platformCode->marketingName,
-            $platforms->$platformCode->manufacturer,
-            $platforms->$platformCode->brand,
+            $name,
+            $marketingName,
+            $platform->manufacturer,
+            $platform->brand,
             $version,
             (new OsBits($useragent))->getBits()
         );
+    }
+
+    /**
+     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
+     */
+    private function initCache(CacheItemInterface $cacheInitialized)
+    {
+        static $platforms = null;
+
+        if (null === $platforms) {
+            $platforms = json_decode(file_get_contents(__DIR__ . '/../../data/platforms.json'));
+        }
+
+        foreach ($platforms as $platformCode => $platformData) {
+            $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
+            $cacheItem->set($platformData);
+
+            $this->cache->save($cacheItem);
+        }
+
+        $cacheInitialized->set(true);
+        $this->cache->save($cacheInitialized);
     }
 }

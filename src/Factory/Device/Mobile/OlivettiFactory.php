@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class OlivettiFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class OlivettiFactory implements Factory\FactoryInterface
 
         if (preg_match('/OP111/', $useragent)) {
             $deviceCode = 'op111';
-        }
-
-        if (preg_match('/OP110/', $useragent)) {
+        } elseif (preg_match('/OP110/', $useragent)) {
             $deviceCode = 'op110';
-        }
-
-        if (preg_match('/OP070/', $useragent)) {
+        } elseif (preg_match('/OP070/', $useragent)) {
             $deviceCode = 'olipad 70';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

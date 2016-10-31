@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class XiaomiFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,68 +68,38 @@ class XiaomiFactory implements Factory\FactoryInterface
 
         if (preg_match('/MI MAX/', $useragent)) {
             $deviceCode = 'mi max';
-        }
-
-        if (preg_match('/MI 4LTE/', $useragent)) {
+        } elseif (preg_match('/MI 4LTE/', $useragent)) {
             $deviceCode = 'mi 4 lte';
-        }
-
-        if (preg_match('/MI 3W/', $useragent)) {
+        } elseif (preg_match('/MI 3W/', $useragent)) {
             $deviceCode = 'mi 3w';
-        }
-
-        if (preg_match('/(MI PAD|MiPad)/', $useragent)) {
+        } elseif (preg_match('/(MI PAD|MiPad)/', $useragent)) {
             $deviceCode = 'mi pad';
-        }
-
-        if (preg_match('/MI 2A/', $useragent)) {
+        } elseif (preg_match('/MI 2A/', $useragent)) {
             $deviceCode = 'mi 2a';
-        }
-
-        if (preg_match('/MI 2/', $useragent)) {
+        } elseif (preg_match('/MI 2/', $useragent)) {
             $deviceCode = 'mi 2';
-        }
-
-        if (preg_match('/Redmi 3S/', $useragent)) {
+        } elseif (preg_match('/Redmi 3S/', $useragent)) {
             $deviceCode = 'redmi 3s';
-        }
-
-        if (preg_match('/Redmi 3/', $useragent)) {
+        } elseif (preg_match('/Redmi 3/', $useragent)) {
             $deviceCode = 'redmi 3';
-        }
-
-        if (preg_match('/Redmi_Note_3/', $useragent)) {
+        } elseif (preg_match('/Redmi_Note_3/', $useragent)) {
             $deviceCode = 'redmi note 3';
-        }
-
-        if (preg_match('/Redmi Note 2/', $useragent)) {
+        } elseif (preg_match('/Redmi Note 2/', $useragent)) {
             $deviceCode = 'redmi note 2';
-        }
-
-        if (preg_match('/HM NOTE 1W/', $useragent)) {
+        } elseif (preg_match('/HM NOTE 1W/', $useragent)) {
             $deviceCode = 'hm note 1w';
-        }
-
-        if (preg_match('/HM NOTE 1S/', $useragent)) {
+        } elseif (preg_match('/HM NOTE 1S/', $useragent)) {
             $deviceCode = 'hm note 1s';
-        }
-
-        if (preg_match('/HM NOTE 1LTETD/', $useragent)) {
+        } elseif (preg_match('/HM NOTE 1LTETD/', $useragent)) {
             $deviceCode = 'hm note 1lte td';
-        }
-
-        if (preg_match('/HM NOTE 1LTE/', $useragent)) {
+        } elseif (preg_match('/HM NOTE 1LTE/', $useragent)) {
             $deviceCode = 'hm note 1lte';
-        }
-
-        if (preg_match('/HM\_1SW/', $useragent)) {
+        } elseif (preg_match('/HM\_1SW/', $useragent)) {
             $deviceCode = 'hm 1sw';
-        }
-
-        if (preg_match('/HM 1SC/', $useragent)) {
+        } elseif (preg_match('/HM 1SC/', $useragent)) {
             $deviceCode = 'hm 1sc';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

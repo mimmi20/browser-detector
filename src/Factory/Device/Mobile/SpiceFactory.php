@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class SpiceFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class SpiceFactory implements Factory\FactoryInterface
 
         if (preg_match('/mi\-424/i', $useragent)) {
             $deviceCode = 'mi-424';
-        }
-
-        if (preg_match('/QT\-75/', $useragent)) {
+        } elseif (preg_match('/QT\-75/', $useragent)) {
             $deviceCode = 'qt-75';
-        }
-
-        if (preg_match('/I2I/', $useragent)) {
+        } elseif (preg_match('/I2I/', $useragent)) {
             $deviceCode = 'i2i';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

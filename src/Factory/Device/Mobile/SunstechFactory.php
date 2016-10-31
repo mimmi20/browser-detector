@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class SunstechFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,12 +68,10 @@ class SunstechFactory implements Factory\FactoryInterface
 
         if (preg_match('/tab917qc\-8gb/i', $useragent)) {
             $deviceCode = 'tab917qc 8gb';
-        }
-
-        if (preg_match('/TAB785DUAL/', $useragent)) {
+        } elseif (preg_match('/TAB785DUAL/', $useragent)) {
             $deviceCode = 'tab785 dual';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

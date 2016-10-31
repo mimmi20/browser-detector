@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class MicromaxFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,48 +68,28 @@ class MicromaxFactory implements Factory\FactoryInterface
 
         if (preg_match('/X650/i', $useragent)) {
             $deviceCode = 'x650';
-        }
-
-        if (preg_match('/A120/i', $useragent)) {
+        } elseif (preg_match('/A120/i', $useragent)) {
             $deviceCode = 'a120';
-        }
-
-        if (preg_match('/A116/i', $useragent)) {
+        } elseif (preg_match('/A116/i', $useragent)) {
             $deviceCode = 'a116';
-        }
-
-        if (preg_match('/A114/i', $useragent)) {
+        } elseif (preg_match('/A114/i', $useragent)) {
             $deviceCode = 'a114';
-        }
-
-        if (preg_match('/A101/i', $useragent)) {
+        } elseif (preg_match('/A101/i', $useragent)) {
             $deviceCode = 'micromax a101';
-        }
-
-        if (preg_match('/A093/i', $useragent)) {
+        } elseif (preg_match('/A093/i', $useragent)) {
             $deviceCode = 'a093';
-        }
-
-        if (preg_match('/A065/i', $useragent)) {
+        } elseif (preg_match('/A065/i', $useragent)) {
             $deviceCode = 'a065';
-        }
-
-        if (preg_match('/A59/i', $useragent)) {
+        } elseif (preg_match('/A59/i', $useragent)) {
             $deviceCode = 'a59';
-        }
-
-        if (preg_match('/A40/i', $useragent)) {
+        } elseif (preg_match('/A40/i', $useragent)) {
             $deviceCode = 'a40';
-        }
-
-        if (preg_match('/A35/i', $useragent)) {
+        } elseif (preg_match('/A35/i', $useragent)) {
             $deviceCode = 'a35';
-        }
-
-        if (preg_match('/A27/i', $useragent)) {
+        } elseif (preg_match('/A27/i', $useragent)) {
             $deviceCode = 'a27';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

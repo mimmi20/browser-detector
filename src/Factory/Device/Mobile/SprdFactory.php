@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class SprdFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class SprdFactory implements Factory\FactoryInterface
 
         if (preg_match('/SPHS\_on\_Hsdroid/i', $useragent)) {
             $deviceCode = 'sphs on hsdroid';
-        }
-
-        if (preg_match('/GT\-A7100/i', $useragent)) {
+        } elseif (preg_match('/GT\-A7100/i', $useragent)) {
             $deviceCode = 'gt-a7100';
-        }
-
-        if (preg_match('/B51\+/i', $useragent)) {
+        } elseif (preg_match('/B51\+/i', $useragent)) {
             $deviceCode = 'b51+';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

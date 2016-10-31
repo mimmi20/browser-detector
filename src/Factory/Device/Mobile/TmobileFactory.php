@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class TmobileFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,36 +68,22 @@ class TmobileFactory implements Factory\FactoryInterface
 
         if (preg_match('/Pulse/', $useragent)) {
             $deviceCode = 'pulse';
-        }
-
-        if (preg_match('/myTouch4G/', $useragent)) {
+        } elseif (preg_match('/myTouch4G/', $useragent)) {
             $deviceCode = 'mytouch4g';
-        }
-
-        if (preg_match('/myTouch 3G Slide/', $useragent)) {
+        } elseif (preg_match('/myTouch 3G Slide/', $useragent)) {
             $deviceCode = 'mytouch3g';
-        }
-
-        if (preg_match('/T\-Mobile(\_G2\_Touch| G2)/', $useragent)) {
+        } elseif (preg_match('/T\-Mobile(\_G2\_Touch| G2)/', $useragent)) {
             $deviceCode = 'g2 touch';
-        }
-
-        if (preg_match('/T\-Mobile G1/', $useragent)) {
+        } elseif (preg_match('/T\-Mobile G1/', $useragent)) {
             $deviceCode = 'g1';
-        }
-
-        if (preg_match('/mda compact\/3/i', $useragent)) {
+        } elseif (preg_match('/mda compact\/3/i', $useragent)) {
             $deviceCode = 'mda compact iii';
-        }
-
-        if (preg_match('/mda compact/i', $useragent)) {
+        } elseif (preg_match('/mda compact/i', $useragent)) {
             $deviceCode = 'mda compact';
-        }
-
-        if (preg_match('/Ameo/', $useragent)) {
+        } elseif (preg_match('/Ameo/', $useragent)) {
             $deviceCode = 'ameo';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

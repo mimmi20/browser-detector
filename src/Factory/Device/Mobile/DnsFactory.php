@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class DnsFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,40 +68,24 @@ class DnsFactory implements Factory\FactoryInterface
 
         if (preg_match('/s5701/i', $useragent)) {
             $deviceCode = 's5701';
-        }
-
-        if (preg_match('/s4505m/i', $useragent)) {
+        } elseif (preg_match('/s4505m/i', $useragent)) {
             $deviceCode = 's4505m';
-        }
-
-        if (preg_match('/s4505/i', $useragent)) {
+        } elseif (preg_match('/s4505/i', $useragent)) {
             $deviceCode = 's4505';
-        }
-
-        if (preg_match('/s4503q/i', $useragent)) {
+        } elseif (preg_match('/s4503q/i', $useragent)) {
             $deviceCode = 's4503q';
-        }
-
-        if (preg_match('/s4502m/i', $useragent)) {
+        } elseif (preg_match('/s4502m/i', $useragent)) {
             $deviceCode = 's4502m';
-        }
-
-        if (preg_match('/s4502/i', $useragent)) {
+        } elseif (preg_match('/s4502/i', $useragent)) {
             $deviceCode = 's4502';
-        }
-
-        if (preg_match('/s4501m/i', $useragent)) {
+        } elseif (preg_match('/s4501m/i', $useragent)) {
             $deviceCode = 's4501m';
-        }
-
-        if (preg_match('/S4008/', $useragent)) {
+        } elseif (preg_match('/S4008/', $useragent)) {
             $deviceCode = 's4008';
-        }
-
-        if (preg_match('/MB40II1/', $useragent)) {
+        } elseif (preg_match('/MB40II1/', $useragent)) {
             $deviceCode = 'mb40ii1';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

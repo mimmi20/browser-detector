@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class TechnisatFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,20 +68,14 @@ class TechnisatFactory implements Factory\FactoryInterface
 
         if (preg_match('/TechniPad[_ ]10\-3G/', $useragent)) {
             $deviceCode = 'technipad 10 3g';
-        }
-
-        if (preg_match('/TechniPad[_ ]10/', $useragent)) {
+        } elseif (preg_match('/TechniPad[_ ]10/', $useragent)) {
             $deviceCode = 'technipad 10';
-        }
-
-        if (preg_match('/AQIPAD[_ ]7G/', $useragent)) {
+        } elseif (preg_match('/AQIPAD[_ ]7G/', $useragent)) {
             $deviceCode = 'aqiston aqipad 7g';
-        }
-
-        if (preg_match('/TechniPhone[_ ]5/', $useragent)) {
+        } elseif (preg_match('/TechniPhone[_ ]5/', $useragent)) {
             $deviceCode = 'techniphone 5';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

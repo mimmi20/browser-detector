@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class ImobileFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class ImobileFactory implements Factory\FactoryInterface
 
         if (preg_match('/i\-STYLE 7\.7 DTV/', $useragent)) {
             $deviceCode = 'i-style 7.7 dtv';
-        }
-
-        if (preg_match('/IQX OKU/', $useragent)) {
+        } elseif (preg_match('/IQX OKU/', $useragent)) {
             $deviceCode = 'iq x oku';
-        }
-
-        if (preg_match('/IQ 6A/', $useragent)) {
+        } elseif (preg_match('/IQ 6A/', $useragent)) {
             $deviceCode = 'iq 6a';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

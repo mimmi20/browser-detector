@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class VericoFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,20 +68,14 @@ class VericoFactory implements Factory\FactoryInterface
 
         if (preg_match('/KM\-UQM11A/', $useragent)) {
             $deviceCode = 'uqm11a';
-        }
-
-        if (preg_match('/RP\-UDM02A/', $useragent)) {
+        } elseif (preg_match('/RP\-UDM02A/', $useragent)) {
             $deviceCode = 'rp-udm02a';
-        }
-
-        if (preg_match('/RP\-UDM01A/', $useragent)) {
+        } elseif (preg_match('/RP\-UDM01A/', $useragent)) {
             $deviceCode = 'rp-udm01a';
-        }
-
-        if (preg_match('/UQ785\-M1BGV/', $useragent)) {
+        } elseif (preg_match('/UQ785\-M1BGV/', $useragent)) {
             $deviceCode = 'm1bgv';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

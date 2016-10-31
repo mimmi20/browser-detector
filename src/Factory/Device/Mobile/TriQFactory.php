@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class TriQFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,28 +68,18 @@ class TriQFactory implements Factory\FactoryInterface
 
         if (preg_match('/QS0716D/', $useragent)) {
             $deviceCode = 'qs0716d';
-        }
-
-        if (preg_match('/MT0812E/', $useragent)) {
+        } elseif (preg_match('/MT0812E/', $useragent)) {
             $deviceCode = 'mt0812e';
-        }
-
-        if (preg_match('/MT0739D/', $useragent)) {
+        } elseif (preg_match('/MT0739D/', $useragent)) {
             $deviceCode = 'mt0739d';
-        }
-
-        if (preg_match('/AC0732C/', $useragent)) {
+        } elseif (preg_match('/AC0732C/', $useragent)) {
             $deviceCode = 'ac0732c';
-        }
-
-        if (preg_match('/RC9724C/', $useragent)) {
+        } elseif (preg_match('/RC9724C/', $useragent)) {
             $deviceCode = 'rc9724c';
-        }
-
-        if (preg_match('/LC0720C/', $useragent)) {
+        } elseif (preg_match('/LC0720C/', $useragent)) {
             $deviceCode = 'lc0720c';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

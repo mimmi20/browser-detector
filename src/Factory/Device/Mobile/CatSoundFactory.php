@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class CatSoundFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,36 +68,22 @@ class CatSoundFactory implements Factory\FactoryInterface
 
         if (preg_match('/CatNova8/i', $useragent)) {
             $deviceCode = 'cat nova 8';
-        }
-
-        if (preg_match('/nova/i', $useragent)) {
+        } elseif (preg_match('/nova/i', $useragent)) {
             $deviceCode = 'nova';
-        }
-
-        if (preg_match('/Cat Tablet Galactica X/i', $useragent)) {
+        } elseif (preg_match('/Cat Tablet Galactica X/i', $useragent)) {
             $deviceCode = 'galactica x';
-        }
-
-        if (preg_match('/StarGate/i', $useragent)) {
+        } elseif (preg_match('/StarGate/i', $useragent)) {
             $deviceCode = 'stargate';
-        }
-
-        if (preg_match('/Cat Tablet PHOENIX/i', $useragent)) {
+        } elseif (preg_match('/Cat Tablet PHOENIX/i', $useragent)) {
             $deviceCode = 'phoenix';
-        }
-
-        if (preg_match('/Cat Tablet/i', $useragent)) {
+        } elseif (preg_match('/Cat Tablet/i', $useragent)) {
             $deviceCode = 'catsound tablet';
-        }
-
-        if (preg_match('/Tablet\-PC\-4/i', $useragent)) {
+        } elseif (preg_match('/Tablet\-PC\-4/i', $useragent)) {
             $deviceCode = 'tablet pc 4';
-        }
-
-        if (preg_match('/Kinder\-Tablet/i', $useragent)) {
+        } elseif (preg_match('/Kinder\-Tablet/i', $useragent)) {
             $deviceCode = 'kinder-tablet';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

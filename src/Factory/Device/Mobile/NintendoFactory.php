@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class NintendoFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,20 +68,14 @@ class NintendoFactory implements Factory\FactoryInterface
 
         if (preg_match('/WiiU/', $useragent)) {
             $deviceCode = 'wiiu';
-        }
-
-        if (preg_match('/Wii/', $useragent)) {
+        } elseif (preg_match('/Wii/', $useragent)) {
             $deviceCode = 'wii';
-        }
-
-        if (preg_match('/DSi/', $useragent)) {
+        } elseif (preg_match('/DSi/', $useragent)) {
             $deviceCode = 'dsi';
-        }
-
-        if (preg_match('/3DS/', $useragent)) {
+        } elseif (preg_match('/3DS/', $useragent)) {
             $deviceCode = '3ds';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

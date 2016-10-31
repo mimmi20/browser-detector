@@ -32,6 +32,7 @@
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -39,8 +40,21 @@ use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftExcel implements VersionFactoryInterface
+class MicrosoftExcel implements VersionCacheFactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
@@ -48,7 +62,7 @@ class MicrosoftExcel implements VersionFactoryInterface
      *
      * @return \BrowserDetector\Version\Version
      */
-    public static function detectVersion($useragent)
+    public function detectVersion($useragent)
     {
         $doMatch = preg_match(
             '/Excel\/([\d\.]+)/',

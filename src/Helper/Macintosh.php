@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Helper;
 
-use UaHelper\Utils;
+use Stringy\Stringy;
 
 /**
  * a helper to detect windows
@@ -57,15 +57,14 @@ class Macintosh
 
     public function isMacintosh()
     {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
         $noMac = [
             'freebsd',
             'raspbian',
         ];
 
-        if ($utils->checkIfContains($noMac, true)) {
+        if ($s->containsAny($noMac, false)) {
             return false;
         }
 
@@ -83,7 +82,7 @@ class Macintosh
             'pubsub',
         ];
 
-        if (!$utils->checkIfContains($mac, true)) {
+        if (!$s->containsAny($mac, false)) {
             return false;
         }
 

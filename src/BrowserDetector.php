@@ -162,7 +162,7 @@ class BrowserDetector
             $device = Factory\DeviceFactory::detect($deviceUa);
         }
         /**/
-        $device = (new Factory\DeviceFactory())->detect($deviceUa);
+        $device = (new Factory\DeviceFactory($this->cache))->detect($deviceUa);
 
         $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
 
@@ -177,20 +177,20 @@ class BrowserDetector
 
         if (null === $platform) {
             // detect the os which runs on the device
-            $platform = (new Factory\PlatformFactory())->detect($browserUa);
+            $platform = (new Factory\PlatformFactory($this->cache))->detect($browserUa);
         }
 
         // detect the browser which is used
         /** @var \UaResult\Browser\Browser $browser */
-        $browser = (new Factory\BrowserFactory())->detect($browserUa, $platform);
+        $browser = (new Factory\BrowserFactory($this->cache))->detect($browserUa, $platform);
 
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
-            $engine = (new Factory\EngineFactory())->get('webkit', $browserUa);
+            $engine = (new Factory\EngineFactory($this->cache))->get('webkit', $browserUa);
         } else {
             $engine = $browser->getEngine();
 
             if ('unknown' === $engine) {
-                $engine = (new Factory\EngineFactory())->detect($browserUa);
+                $engine = (new Factory\EngineFactory($this->cache))->detect($browserUa);
             }
         }
 

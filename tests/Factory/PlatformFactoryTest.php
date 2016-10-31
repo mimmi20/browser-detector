@@ -3,12 +3,31 @@
 namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\PlatformFactory;
+use Cache\Adapter\Filesystem\FilesystemCachePool;
+use League\Flysystem\Filesystem;
+use League\Flysystem\Adapter\Local;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
 class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var \BrowserDetector\Factory\PlatformFactory
+     */
+    private $object = null;
+
+    /**
+     * Sets up the fixture, for example, open a network connection.
+     * This method is called before a test is executed.
+     */
+    protected function setUp()
+    {
+        $adapter      = new Local(__DIR__ . '/../../cache/');
+        $cache        = new FilesystemCachePool(new Filesystem($adapter));
+        $this->object = new PlatformFactory($cache);
+    }
+
     /**
      * @dataProvider providerDetect
      *
@@ -21,7 +40,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $platform, $version, $manufacturer, $bits)
     {
         /** @var \UaResult\Os\OsInterface $result */
-        $result = (new PlatformFactory())->detect($agent);
+        $result = $this->object->detect($agent);
 
         self::assertInstanceOf('\UaResult\Os\OsInterface', $result);
         self::assertSame(

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Helper;
 
-use UaHelper\Utils;
+use Stringy\Stringy;
 
 /**
  * helper to get information if the device is a mobile
@@ -90,24 +90,23 @@ class MobileDevice
             'nokia wap gateway',
         ];
 
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
-        if ($utils->checkIfContains($noMobiles, true)) {
+        if ($s->containsAny($noMobiles, false)) {
             return false;
         }
 
-        if ($utils->checkIfContainsAll(['windows nt', 'iphone', 'micromessenger'], true)) {
+        if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return true;
         }
 
-        if ($utils->checkIfContainsAll(['windows nt', 'arm;'], true)) {
+        if ($s->containsAll(['windows nt', 'arm;'], false)) {
             return true;
         }
 
         // ignore mobile safari token if windows nt token is available
-        if ($utils->checkIfContains('windows nt', true)
-            && $utils->checkIfContains(['mobile safari', 'opera mobi', 'iphone'], true)
+        if ($s->contains('windows nt', false)
+            && $s->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
         ) {
             return false;
         }
@@ -220,28 +219,28 @@ class MobileDevice
             'surftab',
         ];
 
-        if ($utils->checkIfContains($mobileBrowsers, true)) {
+        if ($s->containsAny($mobileBrowsers, false)) {
             return true;
         }
 
-        if ($utils->checkIfContains('tablet', true)
-            && !$utils->checkIfContains('tablet pc', true)
+        if ($s->contains('tablet', false)
+            && !$s->contains('tablet pc', false)
         ) {
             return true;
         }
 
-        if ($utils->checkIfContains('mobile', true)
-            && !$utils->checkIfContains('automobile', true)
+        if ($s->contains('mobile', false)
+            && !$s->contains('automobile', false)
         ) {
             return true;
         }
 
-        if ($utils->checkIfContains('sonydtv', true)) {
+        if ($s->contains('sonydtv', false)) {
             return false;
         }
 
-        if ($utils->checkIfContains(['ARM;'])
-            && $utils->checkIfContains(['Windows NT 6.2', 'Windows NT 6.3'])
+        if ($s->contains('ARM;')
+            && $s->containsAny(['Windows NT 6.2', 'Windows NT 6.3'])
         ) {
             return true;
         }

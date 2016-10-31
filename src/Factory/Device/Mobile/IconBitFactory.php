@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class IconBitFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,28 +68,18 @@ class IconBitFactory implements Factory\FactoryInterface
 
         if (preg_match('/nt\-3710s/i', $useragent)) {
             $deviceCode = 'nt-3710s';
-        }
-
-        if (preg_match('/nt\-3702m/i', $useragent)) {
+        } elseif (preg_match('/nt\-3702m/i', $useragent)) {
             $deviceCode = 'nt-3702m';
-        }
-
-        if (preg_match('/nt\-3601p/i', $useragent)) {
+        } elseif (preg_match('/nt\-3601p/i', $useragent)) {
             $deviceCode = 'nettab pocket 3g';
-        }
-
-        if (preg_match('/nt\-1009t/i', $useragent)) {
+        } elseif (preg_match('/nt\-1009t/i', $useragent)) {
             $deviceCode = 'nt-1009t';
-        }
-
-        if (preg_match('/nt\-1002t/i', $useragent)) {
+        } elseif (preg_match('/nt\-1002t/i', $useragent)) {
             $deviceCode = 'nt-1002t';
-        }
-
-        if (preg_match('/nt\-1001t/i', $useragent)) {
+        } elseif (preg_match('/nt\-1001t/i', $useragent)) {
             $deviceCode = 'nt-1001t';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

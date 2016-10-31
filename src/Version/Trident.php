@@ -31,14 +31,29 @@
 
 namespace BrowserDetector\Version;
 
+use Psr\Cache\CacheItemPoolInterface;
+
 /**
  * @category  BrowserDetector
  *
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Trident implements VersionFactoryInterface
+class Trident implements VersionCacheFactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
@@ -46,7 +61,7 @@ class Trident implements VersionFactoryInterface
      *
      * @return \BrowserDetector\Version\Version
      */
-    public static function detectVersion($useragent)
+    public function detectVersion($useragent)
     {
         $doMatch = preg_match('/Trident\/([\d\.]+)/', $useragent, $matches);
 

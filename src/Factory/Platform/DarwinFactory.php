@@ -33,6 +33,7 @@ namespace BrowserDetector\Factory\Platform;
 
 use BrowserDetector\Factory;
 use BrowserDetector\Factory\PlatformFactory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * Browser detection class
@@ -46,6 +47,19 @@ use BrowserDetector\Factory\PlatformFactory;
 class DarwinFactory implements Factory\FactoryInterface
 {
     /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
+    /**
      * Gets the information about the platform by User Agent
      *
      * @param string $useragent
@@ -54,7 +68,7 @@ class DarwinFactory implements Factory\FactoryInterface
      */
     public function detect($useragent)
     {
-        $platformFactory = new PlatformFactory();
+        $platformFactory = new PlatformFactory($this->cache);
 
         if (false !== strpos($useragent, 'CFNetwork/807')) {
             return $platformFactory->get('mac os x', $useragent, '10.12');

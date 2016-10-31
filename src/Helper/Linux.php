@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Helper;
 
-use UaHelper\Utils;
+use Stringy\Stringy;
 
 /**
  * a helper to detect windows
@@ -57,8 +57,7 @@ class Linux
 
     public function isLinux()
     {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
         $noLinux = [
             'loewe; sl121',
@@ -91,7 +90,7 @@ class Linux
             'jobboerse',
         ];
 
-        if ($utils->checkIfContains($noLinux, true)) {
+        if ($s->containsAny($noLinux, false)) {
             return false;
         }
 
@@ -128,7 +127,7 @@ class Linux
             'x11',
         ];
 
-        if (!$utils->checkIfContains($linux, true)) {
+        if (!$s->containsAny($linux, false)) {
             return false;
         }
 

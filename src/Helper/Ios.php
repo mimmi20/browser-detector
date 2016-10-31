@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Helper;
 
-use UaHelper\Utils;
+use Stringy\Stringy;
 
 /**
  * a helper to detect windows
@@ -64,10 +64,9 @@ class Ios
             return false;
         }
 
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
-        if ($utils->checkIfContains(['trident', 'windows phone', 'android'], true)) {
+        if ($s->containsAny(['trident', 'windows phone', 'android'], false)) {
             return false;
         }
 
@@ -79,7 +78,7 @@ class Ios
             return true;
         }
 
-        if ($utils->checkIfContainsAll(['windows nt', 'iphone', 'micromessenger'], true)) {
+        if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return true;
         }
 
@@ -95,7 +94,7 @@ class Ios
             'dataaccessd',
         ];
 
-        if (!$utils->checkIfContains($os, true)) {
+        if (!$s->containsAny($os, false)) {
             return false;
         }
 

@@ -33,7 +33,8 @@ namespace BrowserDetector\Factory\Platform;
 
 use BrowserDetector\Factory;
 use BrowserDetector\Factory\PlatformFactory;
-use UaHelper\Utils;
+use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -44,6 +45,19 @@ use UaHelper\Utils;
 class WindowsFactory implements Factory\FactoryInterface
 {
     /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
+    /**
      * Gets the information about the platform by User Agent
      *
      * @param string $useragent
@@ -52,158 +66,95 @@ class WindowsFactory implements Factory\FactoryInterface
      */
     public function detect($useragent)
     {
-        $utils = new Utils();
-        $utils->setUserAgent($useragent);
-        $platformFactory = new PlatformFactory();
+        $s               = new Stringy($useragent);
+        $platformFactory = new PlatformFactory($this->cache);
 
-        if ($utils->checkIfContains(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'])) {
+        if ($s->containsAny(['Windows NT 10', 'Windows 10'], false)) {
+            return $platformFactory->get('windows nt 10', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 6.4', 'Windows 6.4'], false)) {
+            return $platformFactory->get('windows nt 6.4', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 6.3', 'Windows 6.3', 'Windows 8.1'], false)) {
+            return $platformFactory->get('windows nt 6.3', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 6.2', 'Windows 6.2', 'Windows 8'], false)) {
+            return $platformFactory->get('windows nt 6.2', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 6.1', 'Windows 6.1', 'Windows 7'], false)) {
+            return $platformFactory->get('windows nt 6.1', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 6', 'Windows 6', 'Windows Vista'], false)) {
+            return $platformFactory->get('windows nt 6.0', $useragent);
+        }
+
+        if ($s->contains('Windows 2003', false)) {
+            return $platformFactory->get('windows 2003', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 5.3', 'Windows 5.3'], false)) {
+            return $platformFactory->get('windows nt 5.3', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 5.2', 'Windows 5.2'], false)) {
+            return $platformFactory->get('windows nt 5.2', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 5.1', 'Windows 5.1', 'Windows XP'], false)) {
+            return $platformFactory->get('windows nt 5.1', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 5.01', 'Windows 5.01'], false)) {
+            return $platformFactory->get('windows nt 5.01', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 5.0', 'Windows 5.0', 'Windows 2000'], false)) {
+            return $platformFactory->get('windows nt 5.0', $useragent);
+        }
+
+        if ($s->containsAny(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90', 'Windows ME'], false)) {
             return $platformFactory->get('windows me', $useragent);
         }
 
-        if ($utils->checkIfContains(['Win98'])) {
+        if ($s->containsAny(['Win98', 'Windows 98'], false)) {
             return $platformFactory->get('windows 98', $useragent);
         }
 
-        if ($utils->checkIfContains(['Win95'])) {
+        if ($s->containsAny(['Win95', 'Windows 95'], false)) {
             return $platformFactory->get('windows 95', $useragent);
         }
 
-        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $useragent, $matches);
-
-        if ($doMatch) {
-            switch ($matches[1]) {
-                case '10.0':
-                    return $platformFactory->get('windows nt 10', $useragent);
-                    break;
-                case '6.4':
-                    return $platformFactory->get('windows nt 6.4', $useragent);
-                    break;
-                case '6.3':
-                    return $platformFactory->get('windows nt 6.3', $useragent);
-                    break;
-                case '6.2':
-                    return $platformFactory->get('windows nt 6.2', $useragent);
-                    break;
-                case '6.1':
-                    return $platformFactory->get('windows nt 6.1', $useragent);
-                    break;
-                case '6':
-                case '6.0':
-                    return $platformFactory->get('windows nt 6.0', $useragent);
-                    break;
-                case '5.3':
-                    return $platformFactory->get('windows nt 5.3', $useragent);
-                    break;
-                case '5.2':
-                    return $platformFactory->get('windows nt 5.2', $useragent);
-                    break;
-                case '5.1':
-                    return $platformFactory->get('windows nt 5.1', $useragent);
-                    break;
-                case '5.01':
-                    return $platformFactory->get('windows nt 5.01', $useragent);
-                    break;
-                case '5.0':
-                    return $platformFactory->get('windows nt 5.0', $useragent);
-                    break;
-                case '4.10':
-                    return $platformFactory->get('windows nt 4.10', $useragent);
-                    break;
-                case '4.1':
-                    return $platformFactory->get('windows nt 4.1', $useragent);
-                    break;
-                case '4.0':
-                    return $platformFactory->get('windows nt 4.0', $useragent);
-                    break;
-                case '3.5':
-                    return $platformFactory->get('windows nt 3.5', $useragent);
-                    break;
-                case '3.1':
-                    return $platformFactory->get('windows nt 3.1', $useragent);
-                    break;
-                default:
-                    // nothing to do here
-                    break;
-            }
-
-            return $platformFactory->get('windows nt', $useragent, '0.0');
+        if ($s->containsAny(['Windows NT 4.10', 'Windows 4.10'], false)) {
+            return $platformFactory->get('windows nt 4.10', $useragent);
         }
 
-        $doMatch = preg_match('/Windows[ \-]([\d\.a-zA-Z]+)/', $useragent, $matches);
+        if ($s->containsAny(['Windows NT 4.1', 'Windows 4.1'], false)) {
+            return $platformFactory->get('windows nt 4.1', $useragent);
+        }
 
-        if ($doMatch) {
-            switch ($matches[1]) {
-                case '10.0':
-                case '10':
-                    return $platformFactory->get('windows nt 10', $useragent);
-                    break;
-                case '6.4':
-                    return $platformFactory->get('windows nt 6.4', $useragent);
-                    break;
-                case '6.3':
-                    return $platformFactory->get('windows nt 6.3', $useragent);
-                    break;
-                case '6.2':
-                    return $platformFactory->get('windows nt 6.2', $useragent);
-                    break;
-                case '6.1':
-                case '7':
-                    return $platformFactory->get('windows nt 6.1', $useragent);
-                    break;
-                case '6.0':
-                case 'Vista':
-                    return $platformFactory->get('windows nt 6.0', $useragent);
-                    break;
-                case '2003':
-                    return $platformFactory->get('windows 2003', $useragent);
-                    break;
-                case '5.3':
-                    return $platformFactory->get('windows nt 5.3', $useragent);
-                    break;
-                case '5.2':
-                    return $platformFactory->get('windows nt 5.2', $useragent);
-                    break;
-                case '5.1':
-                case 'XP':
-                    return $platformFactory->get('windows nt 5.1', $useragent);
-                    break;
-                case 'ME':
-                    return $platformFactory->get('windows me', $useragent);
-                    break;
-                case '2000':
-                    return $platformFactory->get('windows nt 5.0', $useragent);
-                    break;
-                case '5.01':
-                    return $platformFactory->get('windows nt 5.01', $useragent);
-                    break;
-                case '5.0':
-                    return $platformFactory->get('windows nt 5.0', $useragent);
-                    break;
-                case '4.1':
-                    return $platformFactory->get('windows nt 4.1', $useragent);
-                    break;
-                case '4.0':
-                    return $platformFactory->get('windows nt 4.0', $useragent);
-                    break;
-                case '3.5':
-                    return $platformFactory->get('windows nt 3.5', $useragent);
-                    break;
-                case 'NT':
-                    return $platformFactory->get('windows nt', $useragent);
-                    break;
-                case '3.1':
-                    return $platformFactory->get('windows 3.1', $useragent);
-                    break;
-                case '95':
-                    return $platformFactory->get('windows 95', $useragent);
-                    break;
-                case '98':
-                    return $platformFactory->get('windows 98', $useragent);
-                    break;
-                default:
-                    // nothing to do here
-                    break;
-            }
+        if ($s->containsAny(['Windows NT 4.0', 'Windows 4.0'], false)) {
+            return $platformFactory->get('windows nt 4.0', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 3.5', 'Windows 3.5'], false)) {
+            return $platformFactory->get('windows nt 3.5', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT 3.1'], false)) {
+            return $platformFactory->get('windows nt 3.1', $useragent);
+        }
+
+        if ($s->containsAny(['Windows NT'], false)) {
+            return $platformFactory->get('windows nt', $useragent);
+        }
+
+        if ($s->containsAny(['Windows 3.1'], false)) {
+            return $platformFactory->get('windows 3.1', $useragent);
         }
 
         return $platformFactory->get('windows', $useragent);

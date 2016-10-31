@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class HpFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,40 +68,24 @@ class HpFactory implements Factory\FactoryInterface
 
         if (preg_match('/ipaqhw6900/i', $useragent)) {
             $deviceCode = 'ipaq 6900';
-        }
-
-        if (preg_match('/slate 17/i', $useragent)) {
+        } elseif (preg_match('/slate 17/i', $useragent)) {
             $deviceCode = 'slate 17';
-        }
-
-        if (preg_match('/slate 10 hd/i', $useragent)) {
+        } elseif (preg_match('/slate 10 hd/i', $useragent)) {
             $deviceCode = 'slate 10';
-        }
-
-        if (preg_match('/(touchpad|cm\_tenderloin)/i', $useragent)) {
+        } elseif (preg_match('/(touchpad|cm\_tenderloin)/i', $useragent)) {
             $deviceCode = 'touchpad';
-        }
-
-        if (preg_match('/palm\-d050/i', $useragent)) {
+        } elseif (preg_match('/palm\-d050/i', $useragent)) {
             $deviceCode = 'tx';
-        }
-
-        if (preg_match('/pre\//i', $useragent)) {
+        } elseif (preg_match('/pre\//i', $useragent)) {
             $deviceCode = 'pre';
-        }
-
-        if (preg_match('/pixi\//i', $useragent)) {
+        } elseif (preg_match('/pixi\//i', $useragent)) {
             $deviceCode = 'pixi';
-        }
-
-        if (preg_match('/blazer/i', $useragent)) {
+        } elseif (preg_match('/blazer/i', $useragent)) {
             $deviceCode = 'blazer';
-        }
-
-        if (preg_match('/p160u/i', $useragent)) {
+        } elseif (preg_match('/p160u/i', $useragent)) {
             $deviceCode = 'p160u';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

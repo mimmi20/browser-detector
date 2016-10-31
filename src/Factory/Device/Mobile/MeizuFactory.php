@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class MeizuFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class MeizuFactory implements Factory\FactoryInterface
 
         if (preg_match('/mz\-mx5/i', $useragent)) {
             $deviceCode = 'mx5';
-        }
-
-        if (preg_match('/m040/i', $useragent)) {
+        } elseif (preg_match('/m040/i', $useragent)) {
             $deviceCode = 'm040';
-        }
-
-        if (preg_match('/(meizu\_m9| m9 )/i', $useragent)) {
+        } elseif (preg_match('/(meizu\_m9| m9 )/i', $useragent)) {
             $deviceCode = 'meizu m9';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

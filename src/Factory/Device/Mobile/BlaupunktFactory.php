@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class BlaupunktFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class BlaupunktFactory implements Factory\FactoryInterface
 
         if (preg_match('/Atlantis 1010A/', $useragent)) {
             $deviceCode = 'atlantis 1010a';
-        }
-
-        if (preg_match('/Endeavour 101L/i', $useragent)) {
+        } elseif (preg_match('/Endeavour 101L/i', $useragent)) {
             $deviceCode = 'endeavour 101l';
-        }
-
-        if (preg_match('/Endeavour 1010/i', $useragent)) {
+        } elseif (preg_match('/Endeavour 1010/i', $useragent)) {
             $deviceCode = 'endeavour 1010';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

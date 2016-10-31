@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class TrekStorFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,56 +68,32 @@ class TrekStorFactory implements Factory\FactoryInterface
 
         if (preg_match('/SurfTab duo W1 10\.1/', $useragent)) {
             $deviceCode = 'surftab duo w1 10.1';
-        }
-
-        if (preg_match('/WP 4\.7/', $useragent)) {
+        } elseif (preg_match('/WP 4\.7/', $useragent)) {
             $deviceCode = 'winphone 4.7 hd';
-        }
-
-        if (preg_match('/VT10416\-2/', $useragent)) {
+        } elseif (preg_match('/VT10416\-2/', $useragent)) {
             $deviceCode = 'vt10416-2';
-        }
-
-        if (preg_match('/VT10416\-1/', $useragent)) {
+        } elseif (preg_match('/VT10416\-1/', $useragent)) {
             $deviceCode = 'vt10416-1';
-        }
-
-        if (preg_match('/(ST701041|SurfTab\_7\.0)/', $useragent)) {
+        } elseif (preg_match('/(ST701041|SurfTab\_7\.0)/', $useragent)) {
             $deviceCode = 'st701041';
-        }
-
-        if (preg_match('/ST10216\-2/', $useragent)) {
+        } elseif (preg_match('/ST10216\-2/', $useragent)) {
             $deviceCode = 'st10216-2';
-        }
-
-        if (preg_match('/ST80216/', $useragent)) {
+        } elseif (preg_match('/ST80216/', $useragent)) {
             $deviceCode = 'st80216';
-        }
-
-        if (preg_match('/ST80208/', $useragent)) {
+        } elseif (preg_match('/ST80208/', $useragent)) {
             $deviceCode = 'st80208';
-        }
-
-        if (preg_match('/ST70104/', $useragent)) {
+        } elseif (preg_match('/ST70104/', $useragent)) {
             $deviceCode = 'st70104';
-        }
-
-        if (preg_match('/ST10416\-1/', $useragent)) {
+        } elseif (preg_match('/ST10416\-1/', $useragent)) {
             $deviceCode = 'st10416-1';
-        }
-
-        if (preg_match('/ST10216\-1/', $useragent)) {
+        } elseif (preg_match('/ST10216\-1/', $useragent)) {
             $deviceCode = 'st10216-1';
-        }
-
-        if (preg_match('/trekstor_liro_color/', $useragent)) {
+        } elseif (preg_match('/trekstor_liro_color/', $useragent)) {
             $deviceCode = 'liro color';
-        }
-
-        if (preg_match('/breeze 10\.1 quad/', $useragent)) {
+        } elseif (preg_match('/breeze 10\.1 quad/', $useragent)) {
             $deviceCode = 'surftab breeze 10.1 quad';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class OdysFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,112 +68,60 @@ class OdysFactory implements Factory\FactoryInterface
 
         if (preg_match('/MAVEN_10_PLUS/', $useragent)) {
             $deviceCode = 'maven 10 plus';
-        }
-
-        if (preg_match('/xtreme/i', $useragent)) {
+        } elseif (preg_match('/xtreme/i', $useragent)) {
             $deviceCode = 'xtreme';
-        }
-
-        if (preg_match('/XPRESS PRO/', $useragent)) {
+        } elseif (preg_match('/XPRESS PRO/', $useragent)) {
             $deviceCode = 'xpress pro';
-        }
-
-        if (preg_match('/xpress/i', $useragent)) {
+        } elseif (preg_match('/xpress/i', $useragent)) {
             $deviceCode = 'xpress';
-        }
-
-        if (preg_match('/(XENO10|XENO 10)/', $useragent)) {
+        } elseif (preg_match('/(XENO10|XENO 10)/', $useragent)) {
             $deviceCode = 'xeno 10';
-        }
-
-        if (preg_match('/XelioPT2Pro/', $useragent)) {
+        } elseif (preg_match('/XelioPT2Pro/', $useragent)) {
             $deviceCode = 'xelio pt2 pro';
-        }
-
-        if (preg_match('/(Xelio10Pro|Xelio 10 Pro)/i', $useragent)) {
+        } elseif (preg_match('/(Xelio10Pro|Xelio 10 Pro)/i', $useragent)) {
             $deviceCode = 'xelio 10 pro';
-        }
-
-        if (preg_match('/(XELIO10EXTREME|Xelio 10 Extreme)/', $useragent)) {
+        } elseif (preg_match('/(XELIO10EXTREME|Xelio 10 Extreme)/', $useragent)) {
             $deviceCode = 'xelio 10 extreme';
-        }
-
-        if (preg_match('/(XELIO7PRO|Xelio 7 pro)/', $useragent)) {
+        } elseif (preg_match('/(XELIO7PRO|Xelio 7 pro)/', $useragent)) {
             $deviceCode = 'xelio 7 pro';
-        }
-
-        if (preg_match('/xelio/i', $useragent)) {
+        } elseif (preg_match('/xelio/i', $useragent)) {
             $deviceCode = 'xelio';
-        }
-
-        if (preg_match('/UNO\_X10/', $useragent)) {
+        } elseif (preg_match('/UNO\_X10/', $useragent)) {
             $deviceCode = 'uno x10';
-        }
-
-        if (preg_match('/SPACE10_PLUS_3G/', $useragent)) {
+        } elseif (preg_match('/SPACE10_PLUS_3G/', $useragent)) {
             $deviceCode = 'space 10 plus 3g';
-        }
-
-        if (preg_match('/Space/', $useragent)) {
+        } elseif (preg_match('/Space/', $useragent)) {
             $deviceCode = 'space';
-        }
-
-        if (preg_match('/sky plus/i', $useragent)) {
+        } elseif (preg_match('/sky plus/i', $useragent)) {
             $deviceCode = 'sky plus 3g';
-        }
-
-        if (preg_match('/ODYS\-Q/', $useragent)) {
+        } elseif (preg_match('/ODYS\-Q/', $useragent)) {
             $deviceCode = 'q';
-        }
-
-        if (preg_match('/noon/i', $useragent)) {
+        } elseif (preg_match('/noon/i', $useragent)) {
             $deviceCode = 'noon';
-        }
-
-        if (preg_match('/ADM816HC/', $useragent)) {
+        } elseif (preg_match('/ADM816HC/', $useragent)) {
             $deviceCode = 'adm816hc';
-        }
-
-        if (preg_match('/ADM816KC/', $useragent)) {
+        } elseif (preg_match('/ADM816KC/', $useragent)) {
             $deviceCode = 'adm816kc';
-        }
-
-        if (preg_match('/NEO\_QUAD10/', $useragent)) {
+        } elseif (preg_match('/NEO\_QUAD10/', $useragent)) {
             $deviceCode = 'neo quad 10';
-        }
-
-        if (preg_match('/loox plus/i', $useragent)) {
+        } elseif (preg_match('/loox plus/i', $useragent)) {
             $deviceCode = 'loox plus';
-        }
-
-        if (preg_match('/loox/i', $useragent)) {
+        } elseif (preg_match('/loox/i', $useragent)) {
             $deviceCode = 'loox';
-        }
-
-        if (preg_match('/IEOS_QUAD_10_PRO/', $useragent)) {
+        } elseif (preg_match('/IEOS_QUAD_10_PRO/', $useragent)) {
             $deviceCode = 'ieos quad 10 pro';
-        }
-
-        if (preg_match('/IEOS_QUAD_W/', $useragent)) {
+        } elseif (preg_match('/IEOS_QUAD_W/', $useragent)) {
             $deviceCode = 'ieos quad w';
-        }
-
-        if (preg_match('/IEOS_QUAD/', $useragent)) {
+        } elseif (preg_match('/IEOS_QUAD/', $useragent)) {
             $deviceCode = 'ieos quad';
-        }
-
-        if (preg_match('/CONNECT7PRO/', $useragent)) {
+        } elseif (preg_match('/CONNECT7PRO/', $useragent)) {
             $deviceCode = 'connect 7 pro';
-        }
-
-        if (preg_match('/genesis/i', $useragent)) {
+        } elseif (preg_match('/genesis/i', $useragent)) {
             $deviceCode = 'genesis';
-        }
-
-        if (preg_match('/evo/i', $useragent)) {
+        } elseif (preg_match('/evo/i', $useragent)) {
             $deviceCode = 'evo';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

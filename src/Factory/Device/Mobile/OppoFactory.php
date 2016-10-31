@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class OppoFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class OppoFactory implements Factory\FactoryInterface
 
         if (preg_match('/x909/i', $useragent)) {
             $deviceCode = 'x909';
-        }
-
-        if (preg_match('/r815/i', $useragent)) {
+        } elseif (preg_match('/r815/i', $useragent)) {
             $deviceCode = 'r815';
-        }
-
-        if (preg_match('/r813t/i', $useragent)) {
+        } elseif (preg_match('/r813t/i', $useragent)) {
             $deviceCode = 'r813t';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class BluFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,32 +68,20 @@ class BluFactory implements Factory\FactoryInterface
 
         if (preg_match('/VIVO IV/', $useragent)) {
             $deviceCode = 'vivo iv';
-        }
-
-        if (preg_match('/studio 5\.5/i', $useragent)) {
+        } elseif (preg_match('/studio 5\.5/i', $useragent)) {
             $deviceCode = 'studio 5.5';
-        }
-
-        if (preg_match('/Studio 5\.0 S II/', $useragent)) {
+        } elseif (preg_match('/Studio 5\.0 S II/', $useragent)) {
             $deviceCode = 'studio 5.0 s ii';
-        }
-
-        if (preg_match('/WIN HD W510u/', $useragent)) {
+        } elseif (preg_match('/WIN HD W510u/', $useragent)) {
             $deviceCode = 'win hd w510u';
-        }
-
-        if (preg_match('/WIN HD LTE/', $useragent)) {
+        } elseif (preg_match('/WIN HD LTE/', $useragent)) {
             $deviceCode = 'win hd lte';
-        }
-
-        if (preg_match('/WIN JR W410a/', $useragent)) {
+        } elseif (preg_match('/WIN JR W410a/', $useragent)) {
             $deviceCode = 'win jr w410a';
-        }
-
-        if (preg_match('/WIN JR LTE/', $useragent)) {
+        } elseif (preg_match('/WIN JR LTE/', $useragent)) {
             $deviceCode = 'win jr lte';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

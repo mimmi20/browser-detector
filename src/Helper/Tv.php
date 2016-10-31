@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Helper;
 
-use UaHelper\Utils;
+use Stringy\Stringy;
 
 /**
  * a helper to detect TV devices
@@ -60,10 +60,9 @@ class Tv
      */
     public function isTvDevice()
     {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
-        if ($utils->checkIfContainsAll(['windows nt', 'iphone', 'micromessenger'], true)) {
+        if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return false;
         }
 
@@ -87,7 +86,7 @@ class Tv
             '>',
         ];
 
-        if ($utils->checkIfContains($noDesktops, true)) {
+        if ($s->containsAny($noDesktops, false)) {
             return false;
         }
 
@@ -119,7 +118,7 @@ class Tv
             'nettv',
         ];
 
-        if (!$utils->checkIfContains($tvDevices, true)) {
+        if (!$s->containsAny($tvDevices, false)) {
             return false;
         }
 

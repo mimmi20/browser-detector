@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class HighscreenFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,24 +68,16 @@ class HighscreenFactory implements Factory\FactoryInterface
 
         if (preg_match('/Zera[ \_]F/', $useragent)) {
             $deviceCode = 'zera f';
-        }
-
-        if (preg_match('/prime s/i', $useragent)) {
+        } elseif (preg_match('/prime s/i', $useragent)) {
             $deviceCode = 'omega prime s';
-        }
-
-        if (preg_match('/ice2/i', $useragent)) {
+        } elseif (preg_match('/ice2/i', $useragent)) {
             $deviceCode = 'ice 2';
-        }
-
-        if (preg_match('/explosion/i', $useragent)) {
+        } elseif (preg_match('/explosion/i', $useragent)) {
             $deviceCode = 'explosion';
-        }
-
-        if (preg_match('/boost iise/i', $useragent)) {
+        } elseif (preg_match('/boost iise/i', $useragent)) {
             $deviceCode = 'boost ii se';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

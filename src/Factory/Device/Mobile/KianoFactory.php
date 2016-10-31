@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class KianoFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class KianoFactory implements Factory\FactoryInterface
 
         if (preg_match('/intelect7/i', $useragent)) {
             $deviceCode = 'intelect 7 3g';
-        }
-
-        if (preg_match('/elegance 8 3g/i', $useragent)) {
+        } elseif (preg_match('/elegance 8 3g/i', $useragent)) {
             $deviceCode = 'elegance 8 3g';
-        }
-
-        if (preg_match('/elegance/i', $useragent)) {
+        } elseif (preg_match('/elegance/i', $useragent)) {
             $deviceCode = 'elegance';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

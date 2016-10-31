@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class CubotFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,28 +68,18 @@ class CubotFactory implements Factory\FactoryInterface
 
         if (preg_match('/S208/', $useragent)) {
             $deviceCode = 's208';
-        }
-
-        if (preg_match('/P9/i', $useragent)) {
+        } elseif (preg_match('/P9/i', $useragent)) {
             $deviceCode = 'cubot u30gt';
-        }
-
-        if (preg_match('/MT6572\_TD/i', $useragent)) {
+        } elseif (preg_match('/MT6572\_TD/i', $useragent)) {
             $deviceCode = 'gt 95 3g';
-        }
-
-        if (preg_match('/GT99/i', $useragent)) {
+        } elseif (preg_match('/GT99/i', $useragent)) {
             $deviceCode = 'gt99';
-        }
-
-        if (preg_match('/C11/i', $useragent)) {
+        } elseif (preg_match('/C11/i', $useragent)) {
             $deviceCode = 'c11';
-        }
-
-        if (preg_match('/C7/i', $useragent)) {
+        } elseif (preg_match('/C7/i', $useragent)) {
             $deviceCode = 'c7';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

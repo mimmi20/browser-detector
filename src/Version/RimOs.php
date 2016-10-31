@@ -31,14 +31,29 @@
 
 namespace BrowserDetector\Version;
 
+use Psr\Cache\CacheItemPoolInterface;
+
 /**
  * @category  BrowserDetector
  *
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class RimOs implements VersionFactoryInterface
+class RimOs implements VersionCacheFactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
@@ -46,7 +61,7 @@ class RimOs implements VersionFactoryInterface
      *
      * @return \BrowserDetector\Version\Version
      */
-    public static function detectVersion($useragent)
+    public function detectVersion($useragent)
     {
         if (false !== stripos($useragent, 'bb10') && false === stripos($useragent, 'version')) {
             return VersionFactory::set('10.0.0');

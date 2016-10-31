@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class PantechFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,24 +68,16 @@ class PantechFactory implements Factory\FactoryInterface
 
         if (preg_match('/p9020/i', $useragent)) {
             $deviceCode = 'p9020';
-        }
-
-        if (preg_match('/p2020/i', $useragent)) {
+        } elseif (preg_match('/p2020/i', $useragent)) {
             $deviceCode = 'p2020';
-        }
-
-        if (preg_match('/im\-a900k/i', $useragent)) {
+        } elseif (preg_match('/im\-a900k/i', $useragent)) {
             $deviceCode = 'im-a900k';
-        }
-
-        if (preg_match('/im\-a830l/i', $useragent)) {
+        } elseif (preg_match('/im\-a830l/i', $useragent)) {
             $deviceCode = 'im-a830l';
-        }
-
-        if (preg_match('/pt\-gf200/i', $useragent)) {
+        } elseif (preg_match('/pt\-gf200/i', $useragent)) {
             $deviceCode = 'pt-gf200';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

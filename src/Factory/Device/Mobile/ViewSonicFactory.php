@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class ViewSonicFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,24 +68,16 @@ class ViewSonicFactory implements Factory\FactoryInterface
 
         if (preg_match('/viewpad 10s/i', $useragent)) {
             $deviceCode = 'viewpad 10s';
-        }
-
-        if (preg_match('/viewpad 10e/i', $useragent)) {
+        } elseif (preg_match('/viewpad 10e/i', $useragent)) {
             $deviceCode = 'viewpad 10e';
-        }
-
-        if (preg_match('/viewpad7e/i', $useragent)) {
+        } elseif (preg_match('/viewpad7e/i', $useragent)) {
             $deviceCode = 'viewpad 7e';
-        }
-
-        if (preg_match('/(viewpad7|viewpad\-7)/i', $useragent)) {
+        } elseif (preg_match('/(viewpad7|viewpad\-7)/i', $useragent)) {
             $deviceCode = 'viewpad7';
-        }
-
-        if (preg_match('/viewsonic\-v350/i', $useragent)) {
+        } elseif (preg_match('/viewsonic\-v350/i', $useragent)) {
             $deviceCode = 'v350';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

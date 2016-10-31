@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class ExplayFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,20 +68,14 @@ class ExplayFactory implements Factory\FactoryInterface
 
         if (preg_match('/surfer 7\.34/i', $useragent)) {
             $deviceCode = 'surfer 7.34 3g';
-        }
-
-        if (preg_match('/m1\_plus/i', $useragent)) {
+        } elseif (preg_match('/m1\_plus/i', $useragent)) {
             $deviceCode = 'm1 plus';
-        }
-
-        if (preg_match('/d7\.2 3g/i', $useragent)) {
+        } elseif (preg_match('/d7\.2 3g/i', $useragent)) {
             $deviceCode = 'd7.2 3g';
-        }
-
-        if (preg_match('/art 3g/i', $useragent)) {
+        } elseif (preg_match('/art 3g/i', $useragent)) {
             $deviceCode = 'art 3g';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

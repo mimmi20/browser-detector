@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Helper;
 
-use UaHelper\Utils;
+use Stringy\Stringy;
 
 /**
  * a helper for detecting safari and some of his derefered browsers
@@ -60,12 +60,11 @@ class FirefoxOs
      */
     public function isFirefoxOs()
     {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
-        if (!$utils->checkIfStartsWith('Mozilla/')
-            || !$utils->checkIfContainsAll(['rv:', 'Gecko', 'Firefox'])
-            || $utils->checkIfContains('android', true)
+        if (!$s->startsWith('Mozilla/', false)
+            || !$s->containsAll(['rv:', 'Gecko', 'Firefox'], false)
+            || $s->contains('android', false)
         ) {
             return false;
         }

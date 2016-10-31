@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class AsusFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,152 +68,80 @@ class AsusFactory implements Factory\FactoryInterface
 
         if (preg_match('/TF101G/i', $useragent)) {
             $deviceCode = 'eee pad transformer tf101g';
-        }
-
-        if (preg_match('/(Transformer TF201|Transformer Prime TF201)/i', $useragent)) {
+        } elseif (preg_match('/(Transformer TF201|Transformer Prime TF201)/i', $useragent)) {
             $deviceCode = 'asus eee pad tf201';
-        }
-
-        if (preg_match('/z00ad/i', $useragent)) {
+        } elseif (preg_match('/z00ad/i', $useragent)) {
             $deviceCode = 'z00ad';
-        }
-
-        if (preg_match('/k00c/i', $useragent)) {
+        } elseif (preg_match('/k00c/i', $useragent)) {
             $deviceCode = 'k00c';
-        }
-
-        if (preg_match('/k00f/i', $useragent)) {
+        } elseif (preg_match('/k00f/i', $useragent)) {
             $deviceCode = 'k00f';
-        }
-
-        if (preg_match('/k00z/i', $useragent)) {
+        } elseif (preg_match('/k00z/i', $useragent)) {
             $deviceCode = 'k00z';
-        }
-
-        if (preg_match('/k01e/i', $useragent)) {
+        } elseif (preg_match('/k01e/i', $useragent)) {
             $deviceCode = 'k01e';
-        }
-
-        if (preg_match('/k01a/i', $useragent)) {
+        } elseif (preg_match('/k01a/i', $useragent)) {
             $deviceCode = 'k01a';
-        }
-
-        if (preg_match('/k017/i', $useragent)) {
+        } elseif (preg_match('/k017/i', $useragent)) {
             $deviceCode = 'k017';
-        }
-
-        if (preg_match('/K013/i', $useragent)) {
+        } elseif (preg_match('/K013/i', $useragent)) {
             $deviceCode = 'k013';
-        }
-
-        if (preg_match('/K012/i', $useragent)) {
+        } elseif (preg_match('/K012/i', $useragent)) {
             $deviceCode = 'k012';
-        }
-
-        if (preg_match('/(K00E|ME372CG)/i', $useragent)) {
+        } elseif (preg_match('/(K00E|ME372CG)/i', $useragent)) {
             $deviceCode = 'k00e';
-        }
-
-        if (preg_match('/ME172V/i', $useragent)) {
+        } elseif (preg_match('/ME172V/i', $useragent)) {
             $deviceCode = 'me172v';
-        }
-
-        if (preg_match('/ME173X/i', $useragent)) {
+        } elseif (preg_match('/ME173X/i', $useragent)) {
             $deviceCode = 'me173x';
-        }
-
-        if (preg_match('/ME301T/i', $useragent)) {
+        } elseif (preg_match('/ME301T/i', $useragent)) {
             $deviceCode = 'me301t';
-        }
-
-        if (preg_match('/ME302C/i', $useragent)) {
+        } elseif (preg_match('/ME302C/i', $useragent)) {
             $deviceCode = 'me302c';
-        }
-
-        if (preg_match('/ME302KL/i', $useragent)) {
+        } elseif (preg_match('/ME302KL/i', $useragent)) {
             $deviceCode = 'me302kl';
-        }
-
-        if (preg_match('/ME371MG/i', $useragent)) {
+        } elseif (preg_match('/ME371MG/i', $useragent)) {
             $deviceCode = 'me371mg';
-        }
-
-        if (preg_match('/P1801\-T/i', $useragent)) {
+        } elseif (preg_match('/P1801\-T/i', $useragent)) {
             $deviceCode = 'p1801-t';
-        }
-
-        if (preg_match('/T00J/', $useragent)) {
+        } elseif (preg_match('/T00J/', $useragent)) {
             $deviceCode = 't00j';
-        }
-
-        if (preg_match('/T00N/', $useragent)) {
+        } elseif (preg_match('/T00N/', $useragent)) {
             $deviceCode = 't00n';
-        }
-
-        if (preg_match('/P01Y/', $useragent)) {
+        } elseif (preg_match('/P01Y/', $useragent)) {
             $deviceCode = 'p01y';
-        }
-
-        if (preg_match('/TF101/i', $useragent)) {
+        } elseif (preg_match('/TF101/i', $useragent)) {
             $deviceCode = 'tf101';
-        }
-
-        if (preg_match('/TF300TL/i', $useragent)) {
+        } elseif (preg_match('/TF300TL/i', $useragent)) {
             $deviceCode = 'tf300tl';
-        }
-
-        if (preg_match('/TF300TG/i', $useragent)) {
+        } elseif (preg_match('/TF300TG/i', $useragent)) {
             $deviceCode = 'tf300tg';
-        }
-
-        if (preg_match('/TF300T/i', $useragent)) {
+        } elseif (preg_match('/TF300T/i', $useragent)) {
             $deviceCode = 'tf300t';
-        }
-
-        if (preg_match('/TF700T/i', $useragent)) {
+        } elseif (preg_match('/TF700T/i', $useragent)) {
             $deviceCode = 'tf700t';
-        }
-
-        if (preg_match('/Slider SL101/i', $useragent)) {
+        } elseif (preg_match('/Slider SL101/i', $useragent)) {
             $deviceCode = 'sl101';
-        }
-
-        if (preg_match('/Garmin\-Asus A50/i', $useragent)) {
+        } elseif (preg_match('/Garmin\-Asus A50/i', $useragent)) {
             $deviceCode = 'a50';
-        }
-
-        if (preg_match('/Garmin\-Asus A10/i', $useragent)) {
+        } elseif (preg_match('/Garmin\-Asus A10/i', $useragent)) {
             $deviceCode = 'asus a10';
-        }
-
-        if (preg_match('/Transformer Prime/i', $useragent)) {
+        } elseif (preg_match('/Transformer Prime/i', $useragent)) {
             $deviceCode = 'asus eee pad tf201';
-        }
-
-        if (preg_match('/padfone t004/i', $useragent)) {
+        } elseif (preg_match('/padfone t004/i', $useragent)) {
             $deviceCode = 'padfone t004';
-        }
-
-        if (preg_match('/padfone 2/i', $useragent)) {
+        } elseif (preg_match('/padfone 2/i', $useragent)) {
             $deviceCode = 'a68';
-        }
-
-        if (preg_match('/padfone/i', $useragent)) {
+        } elseif (preg_match('/padfone/i', $useragent)) {
             $deviceCode = 'padfone';
-        }
-
-        if (preg_match('/nexus[ _]?7/i', $useragent)) {
+        } elseif (preg_match('/nexus[ _]?7/i', $useragent)) {
             $deviceCode = 'nexus 7';
-        }
-
-        if (preg_match('/asus;galaxy6/i', $useragent)) {
+        } elseif (preg_match('/asus;galaxy6/i', $useragent)) {
             $deviceCode = 'galaxy6';
-        }
-
-        if (preg_match('/eee_701/i', $useragent)) {
+        } elseif (preg_match('/eee_701/i', $useragent)) {
             $deviceCode = 'eee 701';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

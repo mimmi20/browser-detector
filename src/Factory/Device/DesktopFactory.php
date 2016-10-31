@@ -33,6 +33,7 @@ namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Factory;
 use BrowserDetector\Helper;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,6 +43,19 @@ use BrowserDetector\Helper;
  */
 class DesktopFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -55,64 +69,36 @@ class DesktopFactory implements Factory\FactoryInterface
 
         if ((new Helper\Windows($useragent))->isWindows()) {
             $deviceCode = 'windows desktop';
-        }
-
-        if (preg_match('/Raspbian/', $useragent)) {
+        } elseif (preg_match('/Raspbian/', $useragent)) {
             $deviceCode = 'raspberry pi';
-        }
-
-        if (preg_match('/debian/i', $useragent) && preg_match('/rpi/', $useragent)) {
+        } elseif (preg_match('/debian/i', $useragent) && preg_match('/rpi/', $useragent)) {
             $deviceCode = 'raspberry pi';
-        }
-
-        if ((new Helper\Linux($useragent))->isLinux()) {
+        } elseif ((new Helper\Linux($useragent))->isLinux()) {
             $deviceCode = 'linux desktop';
-        }
-
-        if (preg_match('/iMac/', $useragent)) {
+        } elseif (preg_match('/iMac/', $useragent)) {
             $deviceCode = 'imac';
-        }
-
-        if (preg_match('/macbookpro/i', $useragent)) {
+        } elseif (preg_match('/macbookpro/i', $useragent)) {
             $deviceCode = 'macbook pro';
-        }
-
-        if (preg_match('/macbookair/i', $useragent)) {
+        } elseif (preg_match('/macbookair/i', $useragent)) {
             $deviceCode = 'macbook air';
-        }
-
-        if (preg_match('/macbook/i', $useragent)) {
+        } elseif (preg_match('/macbook/i', $useragent)) {
             $deviceCode = 'macbook';
-        }
-
-        if (preg_match('/macmini/i', $useragent)) {
+        } elseif (preg_match('/macmini/i', $useragent)) {
             $deviceCode = 'mac mini';
-        }
-
-        if (preg_match('/macpro/i', $useragent)) {
+        } elseif (preg_match('/macpro/i', $useragent)) {
             $deviceCode = 'macpro';
-        }
-
-        if (preg_match('/(powermac|power%20macintosh)/i', $useragent)) {
+        } elseif (preg_match('/(powermac|power%20macintosh)/i', $useragent)) {
             $deviceCode = 'powermac';
-        }
-
-        if ((new Helper\Macintosh($useragent))->isMacintosh()) {
+        } elseif ((new Helper\Macintosh($useragent))->isMacintosh()) {
             $deviceCode = 'macintosh';
-        }
-
-        if (preg_match('/eeepc/i', $useragent)) {
+        } elseif (preg_match('/eeepc/i', $useragent)) {
             $deviceCode = 'eee pc';
-        }
-
-        if (preg_match('/hp\-ux 9000/i', $useragent)) {
+        } elseif (preg_match('/hp\-ux 9000/i', $useragent)) {
             $deviceCode = '9000';
-        }
-
-        if (preg_match('/Dillo/', $useragent)) {
+        } elseif (preg_match('/Dillo/', $useragent)) {
             $deviceCode = 'linux desktop';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class PearlFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class PearlFactory implements Factory\FactoryInterface
 
         if (preg_match('/X10\.Dual\+/', $useragent)) {
             $deviceCode = 'x10+';
-        }
-
-        if (preg_match('/X10\.Dual/', $useragent)) {
+        } elseif (preg_match('/X10\.Dual/', $useragent)) {
             $deviceCode = 'x10';
-        }
-
-        if (preg_match('/X7G/', $useragent)) {
+        } elseif (preg_match('/X7G/', $useragent)) {
             $deviceCode = 'touchlet x7g';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

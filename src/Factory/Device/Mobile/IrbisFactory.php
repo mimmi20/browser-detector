@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class IrbisFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,24 +68,16 @@ class IrbisFactory implements Factory\FactoryInterface
 
         if (preg_match('/TX68/', $useragent)) {
             $deviceCode = 'tx68';
-        }
-
-        if (preg_match('/TX18/', $useragent)) {
+        } elseif (preg_match('/TX18/', $useragent)) {
             $deviceCode = 'tx18';
-        }
-
-        if (preg_match('/TX17/', $useragent)) {
+        } elseif (preg_match('/TX17/', $useragent)) {
             $deviceCode = 'tx17';
-        }
-
-        if (preg_match('/TX08/', $useragent)) {
+        } elseif (preg_match('/TX08/', $useragent)) {
             $deviceCode = 'tx08';
-        }
-
-        if (preg_match('/TG97/', $useragent)) {
+        } elseif (preg_match('/TG97/', $useragent)) {
             $deviceCode = 'tg97';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

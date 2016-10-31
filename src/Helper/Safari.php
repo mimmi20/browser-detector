@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Helper;
 
-use UaHelper\Utils;
+use Stringy\Stringy;
 
 /**
  * a helper for detecting safari and some of his derefered browsers
@@ -60,17 +60,16 @@ class Safari
      */
     public function isSafari()
     {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
-        if (!$utils->checkIfContains('Mozilla/')
-            && !$utils->checkIfContains('Safari')
-            && !$utils->checkIfContains('Mobile')
+        if (!$s->contains('Mozilla/')
+            && !$s->contains('Safari')
+            && !$s->contains('Mobile')
         ) {
             return false;
         }
 
-        if (!$utils->checkIfContains(['Safari', 'AppleWebKit', 'CFNetwork'])) {
+        if (!$s->containsAny(['Safari', 'AppleWebKit', 'CFNetwork'])) {
             return false;
         }
 
@@ -163,7 +162,7 @@ class Safari
             'Mac; Mac OS ',
         ];
 
-        if ($utils->checkIfContains($isNotReallyAnSafari, true)) {
+        if ($s->containsAny($isNotReallyAnSafari, false)) {
             return false;
         }
 

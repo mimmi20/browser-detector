@@ -25,6 +25,9 @@ use Monolog\Logger;
 use UaDataMapper\InputMapper;
 use UaNormalizer\Generic;
 use UaNormalizer\UserAgentNormalizer;
+use Cache\Adapter\Filesystem\FilesystemCachePool;
+use League\Flysystem\Filesystem;
+use League\Flysystem\Adapter\Local;
 
 /**
  * Class UserAgentsTest
@@ -37,12 +40,28 @@ use UaNormalizer\UserAgentNormalizer;
 abstract class RegexesTest extends \PHPUnit_Framework_TestCase
 {
     /**
+     * @var \BrowserDetector\Factory\RegexFactory
+     */
+    protected $object = null;
+
+    /**
      * @var string
      */
     protected $sourceDirectory = 'tests/issues/00000-browscap/';
 
     protected static $ok  = 0;
     protected static $nok = 0;
+
+    /**
+     * Sets up the fixture, for example, opens a network connection.
+     * This method is called before a test is executed.
+     */
+    protected function setUp()
+    {
+        $adapter      = new Local(__DIR__ . '/../cache/');
+        $cache        = new FilesystemCachePool(new Filesystem($adapter));
+        $this->object = new RegexFactory($cache);
+    }
 
     /**
      * @return array[]
@@ -84,7 +103,7 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
      */
     public function testRegexes()
     {
-        $regexes = RegexFactory::getRegexes();
+        $regexes = $this->object->getRegexes();
 
         self::assertInternalType('array', $regexes, 'no regexes available');
 
@@ -121,7 +140,7 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
 
         $normalizedUa = $normalizer->normalize($userAgent);
 
-        $result = (new RegexFactory())->detect($normalizedUa);
+        $result = $this->object->detect($normalizedUa);
 
         self::assertNotNull($result, 'regexes are missing');
         self::assertNotFalse($result, 'no match for UA ' . $normalizedUa);
@@ -131,8 +150,6 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
 
     /**
      * This method is called after the last test of this test class is run.
-     *
-     * @since Method available since Release 3.4.0
      */
     public static function tearDownAfterClass()
     {

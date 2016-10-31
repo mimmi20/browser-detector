@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class PhilipsFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,24 +68,16 @@ class PhilipsFactory implements Factory\FactoryInterface
 
         if (preg_match('/W8510/', $useragent)) {
             $deviceCode = 'w8510';
-        }
-
-        if (preg_match('/W8500/', $useragent)) {
+        } elseif (preg_match('/W8500/', $useragent)) {
             $deviceCode = 'w8500';
-        }
-
-        if (preg_match('/W3509/', $useragent)) {
+        } elseif (preg_match('/W3509/', $useragent)) {
             $deviceCode = 'w3509';
-        }
-
-        if (preg_match('/W336/', $useragent)) {
+        } elseif (preg_match('/W336/', $useragent)) {
             $deviceCode = 'w336';
-        }
-
-        if (preg_match('/PI3210G/', $useragent)) {
+        } elseif (preg_match('/PI3210G/', $useragent)) {
             $deviceCode = 'pi3210g';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

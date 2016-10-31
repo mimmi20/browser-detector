@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class TolinoFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,20 +68,14 @@ class TolinoFactory implements Factory\FactoryInterface
 
         if (preg_match('/tab 8\.9/i', $useragent)) {
             $deviceCode = 'tab 8.9';
-        }
-
-        if (preg_match('/tab 8/i', $useragent)) {
+        } elseif (preg_match('/tab 8/i', $useragent)) {
             $deviceCode = 'tab 8';
-        }
-
-        if (preg_match('/tab 7/i', $useragent)) {
+        } elseif (preg_match('/tab 7/i', $useragent)) {
             $deviceCode = 'tab 7';
-        }
-
-        if (preg_match('/tolino/i', $useragent)) {
+        } elseif (preg_match('/tolino/i', $useragent)) {
             $deviceCode = 'tolino shine';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

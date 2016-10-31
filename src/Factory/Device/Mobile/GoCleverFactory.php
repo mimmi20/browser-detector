@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class GoCleverFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,40 +68,24 @@ class GoCleverFactory implements Factory\FactoryInterface
 
         if (preg_match('/TQ700/', $useragent)) {
             $deviceCode = 'tq700';
-        }
-
-        if (preg_match('/TERRA\_101/', $useragent)) {
+        } elseif (preg_match('/TERRA\_101/', $useragent)) {
             $deviceCode = 'a1021';
-        }
-
-        if (preg_match('/INSIGNIA\_785\_PRO/', $useragent)) {
+        } elseif (preg_match('/INSIGNIA\_785\_PRO/', $useragent)) {
             $deviceCode = 'insignia 785 pro';
-        }
-
-        if (preg_match('/ARIES\_785/', $useragent)) {
+        } elseif (preg_match('/ARIES\_785/', $useragent)) {
             $deviceCode = 'aries 785';
-        }
-
-        if (preg_match('/ARIES\_101/', $useragent)) {
+        } elseif (preg_match('/ARIES\_101/', $useragent)) {
             $deviceCode = 'aries 101';
-        }
-
-        if (preg_match('/ORION7o/', $useragent)) {
+        } elseif (preg_match('/ORION7o/', $useragent)) {
             $deviceCode = 'orion 7o';
-        }
-
-        if (preg_match('/QUANTUM 4/', $useragent)) {
+        } elseif (preg_match('/QUANTUM 4/', $useragent)) {
             $deviceCode = 'quantum 4';
-        }
-
-        if (preg_match('/QUANTUM_700m/', $useragent)) {
+        } elseif (preg_match('/QUANTUM_700m/', $useragent)) {
             $deviceCode = 'quantum 700m';
-        }
-
-        if (preg_match('/TAB A93\.2/', $useragent)) {
+        } elseif (preg_match('/TAB A93\.2/', $useragent)) {
             $deviceCode = 'a93.2';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

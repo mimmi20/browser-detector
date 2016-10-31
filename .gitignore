@@ -7,14 +7,10 @@ vendor/
 composer.phar
 composer.lock
 build/build*/
-data/browscap-ua-test-*/
-data/browser/
-data/cache/
-!data/useragents/
 error.log
 ergebnis.txt
 result.txt
 phpunit.txt
 resources/browscap-*/
-tests/cache/
 tests/create-tests.php
+cache/cache/

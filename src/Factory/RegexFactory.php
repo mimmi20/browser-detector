@@ -31,6 +31,8 @@
 
 namespace BrowserDetector\Factory;
 
+use Psr\Cache\CacheItemInterface;
+use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Yaml\Yaml;
 
 /**
@@ -45,6 +47,19 @@ use Symfony\Component\Yaml\Yaml;
 class RegexFactory implements FactoryInterface
 {
     /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
+    /**
      * Gets the information about the rendering engine by User Agent
      *
      * @param string $useragent
@@ -53,7 +68,7 @@ class RegexFactory implements FactoryInterface
      */
     public function detect($useragent)
     {
-        $regexes = self::getRegexes();
+        $regexes = $this->getRegexes();
 
         if (!is_array($regexes)) {
             return null;
@@ -75,18 +90,43 @@ class RegexFactory implements FactoryInterface
      */
     public function getRegexes()
     {
+        $cacheInitializedId = hash('sha512', 'regex-cache is initialized');
+        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+
+        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
+            $this->initCache($cacheInitialized);
+        }
+
+        $cacheItem = $this->cache->getItem(hash('sha512', 'regex-cache'));
+
+        if (!$cacheItem->isHit()) {
+            return null;
+        }
+
+        return $cacheItem->get();
+    }
+
+    /**
+     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
+     */
+    private function initCache(CacheItemInterface $cacheInitialized)
+    {
         static $regexes = null;
 
         if (null === $regexes) {
-            if (file_exists(__DIR__ . '/data/regexes.yaml')) {
-                $regexes = Yaml::parse(file_get_contents(__DIR__ . '/../../data/regexes.yaml'));
-            }
+            $regexes = Yaml::parse(file_get_contents(__DIR__ . '/../../data/regexes.yaml'));
         }
 
         if (!isset($regexes['regexes']) || !is_array($regexes['regexes'])) {
             return null;
         }
 
-        return $regexes['regexes'];
+        $cacheItem = $this->cache->getItem(hash('sha512', 'regex-cache'));
+        $cacheItem->set($regexes['regexes']);
+
+        $this->cache->save($cacheItem);
+
+        $cacheInitialized->set(true);
+        $this->cache->save($cacheInitialized);
     }
 }

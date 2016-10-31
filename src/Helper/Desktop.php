@@ -32,7 +32,7 @@
 namespace BrowserDetector\Helper;
 
 use BrowserDetector\Helper;
-use UaHelper\Utils;
+use Stringy\Stringy;
 
 /**
  * a helper to detect Desktop devices
@@ -66,16 +66,15 @@ class Desktop
             return true;
         }
 
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
-        if ($utils->checkIfContainsAll(['windows nt', 'iphone', 'micromessenger'], true)) {
+        if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return false;
         }
 
         // ignore mobile safari token if windows nt token is available
-        if ($utils->checkIfContains('windows nt', true)
-            && $utils->checkIfContains(['mobile safari', 'opera mobi', 'iphone'], true)
+        if ($s->contains('windows nt', false)
+            && $s->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
         ) {
             return true;
         }
@@ -100,7 +99,7 @@ class Desktop
             '>',
         ];
 
-        if ($utils->checkIfContains($noDesktops, true)) {
+        if ($s->containsAny($noDesktops, false)) {
             return false;
         }
 
@@ -115,7 +114,7 @@ class Desktop
             'the bat!',
         ];
 
-        if ($utils->checkIfContains($othersDesktops, true)) {
+        if ($s->containsAny($othersDesktops, false)) {
             return true;
         }
 
@@ -172,7 +171,7 @@ class Desktop
             'ms frontpage',
         ];
 
-        if (!$utils->checkIfContains($desktopCodes, true)) {
+        if (!$s->containsAny($desktopCodes, false)) {
             return false;
         }
 

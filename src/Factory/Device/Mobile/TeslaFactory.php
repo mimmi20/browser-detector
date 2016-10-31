@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class TeslaFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,20 +68,14 @@ class TeslaFactory implements Factory\FactoryInterface
 
         if (preg_match('/TTL7/', $useragent)) {
             $deviceCode = 'ttl7';
-        }
-
-        if (preg_match('/TTH7/', $useragent)) {
+        } elseif (preg_match('/TTH7/', $useragent)) {
             $deviceCode = 'tth7';
-        }
-
-        if (preg_match('/Tablet_785/', $useragent)) {
+        } elseif (preg_match('/Tablet_785/', $useragent)) {
             $deviceCode = 'tablet 785';
-        }
-
-        if (preg_match('/Tablet_L7_3G/', $useragent)) {
+        } elseif (preg_match('/Tablet_L7_3G/', $useragent)) {
             $deviceCode = 'tablet l7 3g';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

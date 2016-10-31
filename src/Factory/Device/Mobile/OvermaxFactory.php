@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class OvermaxFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,20 +68,14 @@ class OvermaxFactory implements Factory\FactoryInterface
 
         if (preg_match('/SteelCore\-B/', $useragent)) {
             $deviceCode = 'steelcore';
-        }
-
-        if (preg_match('/Solution 10II/', $useragent)) {
+        } elseif (preg_match('/Solution 10II/', $useragent)) {
             $deviceCode = 'solution 10 ii 3g';
-        }
-
-        if (preg_match('/Solution 7III/', $useragent)) {
+        } elseif (preg_match('/Solution 7III/', $useragent)) {
             $deviceCode = 'solution 7 iii';
-        }
-
-        if (preg_match('/Quattor 10\+/', $useragent)) {
+        } elseif (preg_match('/Quattor 10\+/', $useragent)) {
             $deviceCode = 'quattor 10+';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

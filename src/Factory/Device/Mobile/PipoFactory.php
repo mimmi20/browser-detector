@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class PipoFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,36 +68,22 @@ class PipoFactory implements Factory\FactoryInterface
 
         if (preg_match('/TPC\-PA10\.1M/', $useragent)) {
             $deviceCode = 'pipo pa10.1m';
-        }
-
-        if (preg_match('/p93g/i', $useragent)) {
+        } elseif (preg_match('/p93g/i', $useragent)) {
             $deviceCode = 'p9 3g';
-        }
-
-        if (preg_match('/m9pro/i', $useragent)) {
+        } elseif (preg_match('/m9pro/i', $useragent)) {
             $deviceCode = 'q107';
-        }
-
-        if (preg_match('/m7t/i', $useragent)) {
+        } elseif (preg_match('/m7t/i', $useragent)) {
             $deviceCode = 'm7t';
-        }
-
-        if (preg_match('/m6pro/i', $useragent)) {
+        } elseif (preg_match('/m6pro/i', $useragent)) {
             $deviceCode = 'q977';
-        }
-
-        if (preg_match('/i75/', $useragent)) {
+        } elseif (preg_match('/i75/', $useragent)) {
             $deviceCode = 'i75';
-        }
-
-        if (preg_match('/m83g/i', $useragent)) {
+        } elseif (preg_match('/m83g/i', $useragent)) {
             $deviceCode = 'm8 3g';
-        }
-
-        if (preg_match('/ M6 /', $useragent)) {
+        } elseif (preg_match('/ M6 /', $useragent)) {
             $deviceCode = 'm6';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

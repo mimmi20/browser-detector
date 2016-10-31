@@ -3,12 +3,31 @@
 namespace BrowserDetectorTest\Factory\Device;
 
 use BrowserDetector\Factory\Device\MobileFactory;
+use Cache\Adapter\Filesystem\FilesystemCachePool;
+use League\Flysystem\Filesystem;
+use League\Flysystem\Adapter\Local;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
 class MobileFactoryTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var \BrowserDetector\Factory\Device\MobileFactory
+     */
+    private $object = null;
+
+    /**
+     * Sets up the fixture, for example, open a network connection.
+     * This method is called before a test is executed.
+     */
+    protected function setUp()
+    {
+        $adapter      = new Local(__DIR__ . '/../../../cache/');
+        $cache        = new FilesystemCachePool(new Filesystem($adapter));
+        $this->object = new MobileFactory($cache);
+    }
+
     /**
      * @dataProvider providerDetect
      *
@@ -24,7 +43,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = (new MobileFactory())->detect($agent);
+        $result = $this->object->detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -118,7 +137,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Sprint',
                 'Sprint',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -128,7 +147,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'K-Touch',
                 'K-Touch',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -138,7 +157,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lemon',
                 'Lemon',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -148,7 +167,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lava',
                 'Lava',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -158,7 +177,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Spice',
                 'Spice',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -168,7 +187,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lava',
                 'Lava',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -188,7 +207,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Velocity Micro',
                 'Velocity Micro',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -198,7 +217,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Samsung',
                 'Samsung',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -208,7 +227,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Spice',
                 'Spice',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -338,7 +357,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -418,7 +437,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -438,7 +457,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'BEWATEC Kommunikationstechnik GmbH',
                 'BEWATEC',
                 'Tablet',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -448,7 +467,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lenovo',
                 'Lenovo',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -488,7 +507,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'T-Mobile',
                 'T-Mobile',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -498,7 +517,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Motorola',
                 'Motorola',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -508,7 +527,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'SonyEricsson',
                 'SonyEricsson',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -558,7 +577,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Samsung',
                 'Samsung',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -838,7 +857,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Beeline',
                 'Beeline',
                 'Tablet',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -868,7 +887,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Research In Motion Limited',
                 'RIM',
                 'Mobile Phone',
-                null,
+                false,
                 'clickwheel',
             ],
             [
@@ -918,7 +937,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'HTC',
                 'HTC',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -928,7 +947,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Sharp Corporation',
                 'Sharp',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -1033,7 +1052,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; HTC_Flyer_P512; de-ch) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16',
-                'Flyer',
+                'P512',
                 'Flyer',
                 'HTC',
                 'HTC',
@@ -1048,7 +1067,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -1078,7 +1097,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Samsung',
                 'Samsung',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -1128,7 +1147,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Huawei',
                 'Huawei',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -1203,7 +1222,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; HTC_Flyer_P510e; de-de) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16',
-                'Flyer',
+                'P510e',
                 'Flyer',
                 'HTC',
                 'HTC',
@@ -1218,7 +1237,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -1378,7 +1397,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'LG',
                 'LG',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -1418,7 +1437,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Samsung',
                 'Samsung',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -1428,7 +1447,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'ZTE',
                 'Orange',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -1458,7 +1477,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lenovo',
                 'Lenovo',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -1608,7 +1627,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'SonyEricsson',
                 'SonyEricsson',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -1658,7 +1677,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'SonyEricsson',
                 'SonyEricsson',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -1788,7 +1807,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Pantech',
                 'Pantech',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -1808,7 +1827,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'LG',
                 'LG',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -2248,7 +2267,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Pantech',
                 'Pantech',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -2338,7 +2357,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'HTC',
                 'HTC',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -3778,7 +3797,7 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'BEWATEC Kommunikationstechnik GmbH',
                 'BEWATEC',
                 'Tablet',
-                null,
+                false,
                 'touchscreen',
             ],
             [

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class ModecomFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,32 +68,20 @@ class ModecomFactory implements Factory\FactoryInterface
 
         if (preg_match('/FreeTAB 9702 HD X4/', $useragent)) {
             $deviceCode = 'freetab 9702 hd x4';
-        }
-
-        if (preg_match('/FreeTAB 9000 IPS IC/', $useragent)) {
+        } elseif (preg_match('/FreeTAB 9000 IPS IC/', $useragent)) {
             $deviceCode = 'freetab 9000 ips ic';
-        }
-
-        if (preg_match('/FreeTAB 8001 IPS X2 3G\+/', $useragent)) {
+        } elseif (preg_match('/FreeTAB 8001 IPS X2 3G\+/', $useragent)) {
             $deviceCode = 'freetab 8001 ips x2 3g+';
-        }
-
-        if (preg_match('/FreeTAB 7800 IPS IC/', $useragent)) {
+        } elseif (preg_match('/FreeTAB 7800 IPS IC/', $useragent)) {
             $deviceCode = 'freetab 7800 ips ic';
-        }
-
-        if (preg_match('/FreeTAB 7001 HD IC/', $useragent)) {
+        } elseif (preg_match('/FreeTAB 7001 HD IC/', $useragent)) {
             $deviceCode = 'freetab 7001 hd ic';
-        }
-
-        if (preg_match('/FreeTAB 1014 IPS X4 3G\+/', $useragent)) {
+        } elseif (preg_match('/FreeTAB 1014 IPS X4 3G\+/', $useragent)) {
             $deviceCode = 'freetab 1014 ips x4 3g+';
-        }
-
-        if (preg_match('/FreeTAB 1001/', $useragent)) {
+        } elseif (preg_match('/FreeTAB 1001/', $useragent)) {
             $deviceCode = 'freetab 1001';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

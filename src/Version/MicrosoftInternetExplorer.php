@@ -32,6 +32,7 @@
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Factory\EngineFactory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -39,7 +40,7 @@ use BrowserDetector\Factory\EngineFactory;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftInternetExplorer implements VersionFactoryInterface
+class MicrosoftInternetExplorer implements VersionCacheFactoryInterface
 {
     private static $patterns = [
         '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',
@@ -64,15 +65,28 @@ class MicrosoftInternetExplorer implements VersionFactoryInterface
     ];
 
     /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
+    /**
      * returns the version of the operating system/platform
      *
      * @param string $useragent
      *
      * @return \BrowserDetector\Version\Version
      */
-    public static function detectVersion($useragent)
+    public function detectVersion($useragent)
     {
-        $engine  = (new EngineFactory())->get('trident', $useragent);
+        $engine  = (new EngineFactory($this->cache))->get('trident', $useragent);
         $version = $engine->getVersion();
 
         if (null !== $version) {

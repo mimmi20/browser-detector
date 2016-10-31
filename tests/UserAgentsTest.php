@@ -18,7 +18,9 @@
 namespace BrowserDetectorTest;
 
 use BrowserDetector\BrowserDetector;
-use Cache\Adapter\Void\VoidCachePool;
+use Cache\Adapter\Filesystem\FilesystemCachePool;
+use League\Flysystem\Filesystem;
+use League\Flysystem\Adapter\Local;
 use Monolog\Handler\NullHandler;
 use Monolog\Logger;
 use UaDataMapper\InputMapper;
@@ -67,7 +69,8 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $logger = new Logger('browser-detector-tests');
         $logger->pushHandler(new NullHandler());
 
-        $cache        = new VoidCachePool();
+        $adapter      = new Local(__DIR__ . '/../cache/');
+        $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $this->object = new BrowserDetector($cache, $logger);
     }
 

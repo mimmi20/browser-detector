@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class OneplusFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,24 +68,16 @@ class OneplusFactory implements Factory\FactoryInterface
 
         if (preg_match('/A3000/', $useragent)) {
             $deviceCode = 'a3000';
-        }
-
-        if (preg_match('/A2001/', $useragent)) {
+        } elseif (preg_match('/A2001/', $useragent)) {
             $deviceCode = 'a2001';
-        }
-
-        if (preg_match('/A2003/', $useragent)) {
+        } elseif (preg_match('/A2003/', $useragent)) {
             $deviceCode = 'a2003';
-        }
-
-        if (preg_match('/A2005/', $useragent)) {
+        } elseif (preg_match('/A2005/', $useragent)) {
             $deviceCode = 'a2005';
-        }
-
-        if (preg_match('/E1003/', $useragent)) {
+        } elseif (preg_match('/E1003/', $useragent)) {
             $deviceCode = 'e1003';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

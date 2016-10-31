@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class PointOfViewFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,28 +68,18 @@ class PointOfViewFactory implements Factory\FactoryInterface
 
         if (preg_match('/TAB\-PROTAB25/', $useragent)) {
             $deviceCode = 'protab 25';
-        }
-
-        if (preg_match('/TAB\-PROTAB30/', $useragent)) {
+        } elseif (preg_match('/TAB\-PROTAB30/', $useragent)) {
             $deviceCode = 'protab 3 xxl';
-        }
-
-        if (preg_match('/tab\-protab2xxl/i', $useragent)) {
+        } elseif (preg_match('/tab\-protab2xxl/i', $useragent)) {
             $deviceCode = 'protab 2 xxl';
-        }
-
-        if (preg_match('/TAB\-PROTAB2XL/', $useragent)) {
+        } elseif (preg_match('/TAB\-PROTAB2XL/', $useragent)) {
             $deviceCode = 'protab 2 xl';
-        }
-
-        if (preg_match('/TAB\-PROTAB2\-IPS/', $useragent)) {
+        } elseif (preg_match('/TAB\-PROTAB2\-IPS/', $useragent)) {
             $deviceCode = 'protab 2 ips';
-        }
-
-        if (preg_match('/PI1045/', $useragent)) {
+        } elseif (preg_match('/PI1045/', $useragent)) {
             $deviceCode = 'pi1045';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

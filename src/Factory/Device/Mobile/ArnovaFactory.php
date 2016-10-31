@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class ArnovaFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,44 +68,26 @@ class ArnovaFactory implements Factory\FactoryInterface
 
         if (preg_match('/101 g4/i', $useragent)) {
             $deviceCode = '101 g4';
-        }
-
-        if (preg_match('/AN10DG3/i', $useragent)) {
+        } elseif (preg_match('/AN10DG3/i', $useragent)) {
             $deviceCode = '10d g3';
-        }
-
-        if (preg_match('/AN10BG3/i', $useragent)) {
+        } elseif (preg_match('/AN10BG3/i', $useragent)) {
             $deviceCode = 'an10bg3';
-        }
-
-        if (preg_match('/AN9G2I/i', $useragent)) {
+        } elseif (preg_match('/AN9G2I/i', $useragent)) {
             $deviceCode = '9 g2';
-        }
-
-        if (preg_match('/AN7FG3/i', $useragent)) {
+        } elseif (preg_match('/AN7FG3/i', $useragent)) {
             $deviceCode = '7f g3';
-        }
-
-        if (preg_match('/AN7EG3/i', $useragent)) {
+        } elseif (preg_match('/AN7EG3/i', $useragent)) {
             $deviceCode = '7e g3';
-        }
-
-        if (preg_match('/AN7DG3/i', $useragent)) {
+        } elseif (preg_match('/AN7DG3/i', $useragent)) {
             $deviceCode = '7d g3';
-        }
-
-        if (preg_match('/AN7CG2/i', $useragent)) {
+        } elseif (preg_match('/AN7CG2/i', $useragent)) {
             $deviceCode = '7c g2';
-        }
-
-        if (preg_match('/AN7BG2DT/i', $useragent)) {
+        } elseif (preg_match('/AN7BG2DT/i', $useragent)) {
             $deviceCode = '7b g2 dt';
-        }
-
-        if (preg_match('/ARCHM901/i', $useragent)) {
+        } elseif (preg_match('/ARCHM901/i', $useragent)) {
             $deviceCode = 'archm901';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

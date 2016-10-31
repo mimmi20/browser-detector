@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class ImpressionFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class ImpressionFactory implements Factory\FactoryInterface
 
         if (preg_match('/impad 9708/i', $useragent)) {
             $deviceCode = 'impad 9708';
-        }
-
-        if (preg_match('/impad6213m\_v2/i', $useragent)) {
+        } elseif (preg_match('/impad6213m\_v2/i', $useragent)) {
             $deviceCode = 'impad 6213m v2';
-        }
-
-        if (preg_match('/impad 0413/i', $useragent)) {
+        } elseif (preg_match('/impad 0413/i', $useragent)) {
             $deviceCode = 'impad 0413';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

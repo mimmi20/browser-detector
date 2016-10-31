@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class AppleFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,24 +68,16 @@ class AppleFactory implements Factory\FactoryInterface
 
         if (preg_match('/ipod/i', $useragent)) {
             $deviceCode = 'ipod touch';
-        }
-
-        if (preg_match('/ipad/i', $useragent)) {
+        } elseif (preg_match('/ipad/i', $useragent)) {
             $deviceCode = 'ipad';
-        }
-
-        if (preg_match('/iph/i', $useragent)) {
+        } elseif (preg_match('/iph/i', $useragent)) {
+            $deviceCode = 'iphone';
+        } elseif (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
+            $deviceCode = 'ipad';
+        } elseif (preg_match('/Puffin\/[\d\.]+IP/', $useragent)) {
             $deviceCode = 'iphone';
         }
 
-        if (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
-            $deviceCode = 'ipad';
-        }
-
-        if (preg_match('/Puffin\/[\d\.]+IP/', $useragent)) {
-            $deviceCode = 'iphone';
-        }
-
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

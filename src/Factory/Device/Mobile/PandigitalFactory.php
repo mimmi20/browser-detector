@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class PandigitalFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class PandigitalFactory implements Factory\FactoryInterface
 
         if (preg_match('/sprnova1/i', $useragent)) {
             $deviceCode = 'supernova';
-        }
-
-        if (preg_match('/(opc1|SL20_20101210_B_PD_INX7E_ENG_6410POP)/', $useragent)) {
+        } elseif (preg_match('/(opc1|SL20_20101210_B_PD_INX7E_ENG_6410POP)/', $useragent)) {
             $deviceCode = 'novel';
-        }
-
-        if (preg_match('/pandigital9hr/i', $useragent)) {
+        } elseif (preg_match('/pandigital9hr/i', $useragent)) {
             $deviceCode = '9hr';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

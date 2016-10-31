@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class AmazonFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,52 +68,30 @@ class AmazonFactory implements Factory\FactoryInterface
 
         if (preg_match('/kftt/i', $useragent)) {
             $deviceCode = 'kftt';
-        }
-
-        if (preg_match('/kfthwi/i', $useragent)) {
+        } elseif (preg_match('/kfthwi/i', $useragent)) {
             $deviceCode = 'kfthwi';
-        }
-
-        if (preg_match('/kfsowi/i', $useragent)) {
+        } elseif (preg_match('/kfsowi/i', $useragent)) {
             $deviceCode = 'kfsowi';
-        }
-
-        if (preg_match('/kfot/i', $useragent)) {
+        } elseif (preg_match('/kfot/i', $useragent)) {
             $deviceCode = 'kfot';
-        }
-
-        if (preg_match('/kfjwi/i', $useragent)) {
+        } elseif (preg_match('/kfjwi/i', $useragent)) {
             $deviceCode = 'kfjwi';
-        }
-
-        if (preg_match('/kfjwa/i', $useragent)) {
+        } elseif (preg_match('/kfjwa/i', $useragent)) {
             $deviceCode = 'kfjwa';
-        }
-
-        if (preg_match('/kfaswi/i', $useragent)) {
+        } elseif (preg_match('/kfaswi/i', $useragent)) {
             $deviceCode = 'kfaswi';
-        }
-
-        if (preg_match('/kfapwi/i', $useragent)) {
+        } elseif (preg_match('/kfapwi/i', $useragent)) {
             $deviceCode = 'kfapwi';
-        }
-
-        if (preg_match('/kfapwa/i', $useragent)) {
+        } elseif (preg_match('/kfapwa/i', $useragent)) {
             $deviceCode = 'kfapwa';
-        }
-
-        if (preg_match('/sd4930ur/i', $useragent)) {
+        } elseif (preg_match('/sd4930ur/i', $useragent)) {
             $deviceCode = 'sd4930ur';
-        }
-
-        if (preg_match('/kindle fire/i', $useragent)) {
+        } elseif (preg_match('/kindle fire/i', $useragent)) {
             $deviceCode = 'd01400';
-        }
-
-        if (preg_match('/(kindle|silk)/i', $useragent)) {
+        } elseif (preg_match('/(kindle|silk)/i', $useragent)) {
             $deviceCode = 'kindle';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class CobyFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,40 +68,24 @@ class CobyFactory implements Factory\FactoryInterface
 
         if (preg_match('/MID9742/i', $useragent)) {
             $deviceCode = 'mid9742';
-        }
-
-        if (preg_match('/MID8128/i', $useragent)) {
+        } elseif (preg_match('/MID8128/i', $useragent)) {
             $deviceCode = 'mid8128';
-        }
-
-        if (preg_match('/MID8127/i', $useragent)) {
+        } elseif (preg_match('/MID8127/i', $useragent)) {
             $deviceCode = 'mid8127';
-        }
-
-        if (preg_match('/MID8024/i', $useragent)) {
+        } elseif (preg_match('/MID8024/i', $useragent)) {
             $deviceCode = 'mid8024';
-        }
-
-        if (preg_match('/MID7022/i', $useragent)) {
+        } elseif (preg_match('/MID7022/i', $useragent)) {
             $deviceCode = 'mid7022';
-        }
-
-        if (preg_match('/MID7015/i', $useragent)) {
+        } elseif (preg_match('/MID7015/i', $useragent)) {
             $deviceCode = 'mid7015';
-        }
-
-        if (preg_match('/MID1126/i', $useragent)) {
+        } elseif (preg_match('/MID1126/i', $useragent)) {
             $deviceCode = 'mid1126';
-        }
-
-        if (preg_match('/MID1125/i', $useragent)) {
+        } elseif (preg_match('/MID1125/i', $useragent)) {
             $deviceCode = 'mid1125';
-        }
-
-        if (preg_match('/NBPC724/i', $useragent)) {
+        } elseif (preg_match('/NBPC724/i', $useragent)) {
             $deviceCode = 'nbpc724';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

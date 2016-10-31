@@ -34,6 +34,8 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Bits\Browser as BrowserBits;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
+use Psr\Cache\CacheItemInterface;
+use Psr\Cache\CacheItemPoolInterface;
 use UaBrowserType;
 use UaResult\Browser\Browser;
 use UaResult\Os\OsInterface;
@@ -49,6 +51,19 @@ use UaResult\Os\OsInterface;
  */
 class BrowserFactory implements FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * Gets the information about the rendering engine by User Agent
      *
@@ -2289,15 +2304,17 @@ class BrowserFactory implements FactoryInterface
      */
     public function get($browserKey, $useragent)
     {
-        static $browsers = null;
+        $cacheInitializedId = hash('sha512', 'browser-cache is initialized');
+        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
 
-        if (null === $browsers) {
-            $browsers = json_decode(file_get_contents(__DIR__ . '/../../data/browsers.json'));
+        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
+            $this->initCache($cacheInitialized);
         }
 
-        $engineFactory = new EngineFactory();
+        $engineFactory = new EngineFactory($this->cache);
+        $cacheItem     = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
 
-        if (!isset($browsers->$browserKey)) {
+        if (!$cacheItem->isHit()) {
             return new Browser(
                 'unknown',
                 'unknown',
@@ -2308,34 +2325,59 @@ class BrowserFactory implements FactoryInterface
             );
         }
 
-        $browserVersionClass = $browsers->$browserKey->version->class;
+        $browser = $cacheItem->get();
+
+        $browserVersionClass = $browser->version->class;
 
         if (!is_string($browserVersionClass)) {
             $version = new Version(0);
         } elseif ('VersionFactory' === $browserVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $browsers->$browserKey->version->search);
+            $version = VersionFactory::detectVersion($useragent, $browser->version->search);
         } else {
-            /** @var \BrowserDetector\Version\VersionFactoryInterface $browserVersionClass */
-            $version = $browserVersionClass::detectVersion($useragent);
+            /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
+            $versionClass = new $browserVersionClass($this->cache);
+            $version      = $versionClass->detectVersion($useragent);
         }
 
-        $typeClass = '\\UaBrowserType\\' . $browsers->$browserKey->type;
+        $typeClass = '\\UaBrowserType\\' . $browser->type;
 
         return new Browser(
-            $browsers->$browserKey->name,
-            $browsers->$browserKey->manufacturer,
-            $browsers->$browserKey->brand,
+            $browser->name,
+            $browser->manufacturer,
+            $browser->brand,
             $version,
-            $engineFactory->get($browsers->$browserKey->engine, $useragent),
+            $engineFactory->get($browser->engine, $useragent),
             new $typeClass(),
             (new BrowserBits($useragent))->getBits(),
-            $browsers->$browserKey->pdfSupport,
-            $browsers->$browserKey->rssSupport,
-            $browsers->$browserKey->canSkipAlignedLinkRow,
-            $browsers->$browserKey->claimsWebSupport,
-            $browsers->$browserKey->supportsEmptyOptionValues,
-            $browsers->$browserKey->supportsBasicAuthentication,
-            $browsers->$browserKey->supportsPostMethod
+            $browser->pdfSupport,
+            $browser->rssSupport,
+            $browser->canSkipAlignedLinkRow,
+            $browser->claimsWebSupport,
+            $browser->supportsEmptyOptionValues,
+            $browser->supportsBasicAuthentication,
+            $browser->supportsPostMethod
         );
+    }
+
+    /**
+     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
+     */
+    private function initCache(CacheItemInterface $cacheInitialized)
+    {
+        static $browsers = null;
+
+        if (null === $browsers) {
+            $browsers = json_decode(file_get_contents(__DIR__ . '/../../data/browsers.json'));
+        }
+
+        foreach ($browsers as $browserKey => $browserData) {
+            $cacheItem = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
+            $cacheItem->set($browserData);
+
+            $this->cache->save($cacheItem);
+        }
+
+        $cacheInitialized->set(true);
+        $this->cache->save($cacheInitialized);
     }
 }

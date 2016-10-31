@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Helper;
 
-use UaHelper\Utils;
+use Stringy\Stringy;
 
 /**
  * a helper to detect windows
@@ -60,20 +60,19 @@ class Windows
      */
     public function isWindows()
     {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
-        if ($utils->checkIfContainsAll(['windows nt', 'iphone', 'micromessenger'], true)) {
+        if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return false;
         }
 
-        if ($utils->checkIfContainsAll(['windows nt', 'arm;'], true)) {
+        if ($s->containsAll(['windows nt', 'arm;'], false)) {
             return false;
         }
 
         // ignore mobile safari token if windows nt token is available
-        if ($utils->checkIfContains('windows nt', true)
-            && $utils->checkIfContains(['mobile safari', 'opera mobi', 'iphone'], true)
+        if ($s->contains('windows nt', false)
+            && $s->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
         ) {
             return true;
         }
@@ -91,7 +90,7 @@ class Windows
             '>',
         ];
 
-        if ($utils->checkIfContains($isNotReallyAWindows)) {
+        if ($s->containsAny($isNotReallyAWindows, false)) {
             return false;
         }
 
@@ -137,7 +136,7 @@ class Windows
             'the bat!',
         ];
 
-        if (!$utils->checkIfContains($windows, true)) {
+        if (!$s->containsAny($windows, false)) {
             return false;
         }
 
@@ -153,10 +152,9 @@ class Windows
             return true;
         }
 
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
-        if ($utils->checkIfContainsAll(['windows nt', 'arm;'], true)) {
+        if ($s->containsAll(['windows nt', 'arm;'], false)) {
             return true;
         }
 
@@ -174,7 +172,7 @@ class Windows
             'lumia',
         ];
 
-        if (!$utils->checkIfContains($mobileWindows, true)) {
+        if (!$s->containsAny($mobileWindows, false)) {
             return false;
         }
 
@@ -185,7 +183,7 @@ class Windows
             'J2ME/MIDP',
         ];
 
-        if ($utils->checkIfContains($isNotReallyAWindows)) {
+        if ($s->containsAny($isNotReallyAWindows, false)) {
             return false;
         }
 

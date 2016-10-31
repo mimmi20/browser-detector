@@ -11967,7 +11967,7 @@
         "nfcSupport": true,
         "hasQwertyKeyboard": true
     },
-    "htc z710": {
+    "htc z710 ls": {
         "codename": "Z710",
         "marketingName": "Sensation LS",
         "manufacturer": "HTC",
@@ -11978,12 +11978,29 @@
         "pointingMethod": "touchscreen",
         "resolutionWidth": 0,
         "resolutionHeight": 0,
-        "dualOrientation": false,
+        "dualOrientation": true,
         "colors": 0,
         "smsSupport": true,
         "nfcSupport": true,
         "hasQwertyKeyboard": true
     },
+  "htc z710": {
+    "codename": "Z710",
+    "marketingName": "Sensation",
+    "manufacturer": "HTC",
+    "brand": "HTC",
+    "version": null,
+    "platform": "android",
+    "type": "MobilePhone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 0,
+    "resolutionHeight": 0,
+    "dualOrientation": true,
+    "colors": 0,
+    "smsSupport": true,
+    "nfcSupport": true,
+    "hasQwertyKeyboard": true
+  },
     "sensation xe beats z715e": {
         "codename": "Sensation XE Beats Z715e",
         "marketingName": "Sensation",
@@ -42621,23 +42638,6 @@
     "prst1": {
         "codename": "PRST1",
         "marketingName": "Reader Wi-Fi",
-        "manufacturer": "Sony",
-        "brand": "Sony",
-        "version": null,
-        "platform": "android",
-        "type": "MobilePhone",
-        "pointingMethod": "touchscreen",
-        "resolutionWidth": 600,
-        "resolutionHeight": 800,
-        "dualOrientation": true,
-        "colors": 65536,
-        "smsSupport": true,
-        "nfcSupport": true,
-        "hasQwertyKeyboard": true
-    },
-    "sony prst1": {
-        "codename": "PRST1",
-        "marketingName": "Sony Reader Wi-Fi",
         "manufacturer": "Sony",
         "brand": "Sony",
         "version": null,

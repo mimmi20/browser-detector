@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class BqFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,36 +68,22 @@ class BqFactory implements Factory\FactoryInterface
 
         if (preg_match('/Aquaris E5 HD/', $useragent)) {
             $deviceCode = 'aquaris e5 hd';
-        }
-
-        if (preg_match('/Aquaris M10/', $useragent)) {
+        } elseif (preg_match('/Aquaris M10/', $useragent)) {
             $deviceCode = 'aquaris m10';
-        }
-
-        if (preg_match('/Aquaris M5/', $useragent)) {
+        } elseif (preg_match('/Aquaris M5/', $useragent)) {
             $deviceCode = 'aquaris m5';
-        }
-
-        if (preg_match('/Aquaris[ _]M4\.5/', $useragent)) {
+        } elseif (preg_match('/Aquaris[ _]M4\.5/', $useragent)) {
             $deviceCode = 'aquaris m4.5';
-        }
-
-        if (preg_match('/Aquaris 5 HD/', $useragent)) {
+        } elseif (preg_match('/Aquaris 5 HD/', $useragent)) {
             $deviceCode = 'aquaris e5';
-        }
-
-        if (preg_match('/7056G/', $useragent)) {
+        } elseif (preg_match('/7056G/', $useragent)) {
             $deviceCode = '7056g';
-        }
-
-        if (preg_match('/BQS\-4007/', $useragent)) {
+        } elseif (preg_match('/BQS\-4007/', $useragent)) {
             $deviceCode = 'bqs-4007';
-        }
-
-        if (preg_match('/BQS\-4005/', $useragent)) {
+        } elseif (preg_match('/BQS\-4005/', $useragent)) {
             $deviceCode = 'bqs-4005';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

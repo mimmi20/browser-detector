@@ -31,6 +31,7 @@
 
 namespace BrowserDetector\Version;
 
+use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
 
 /**
@@ -39,8 +40,21 @@ use Stringy\Stringy;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class YouWaveAndroidOnPc implements VersionFactoryInterface
+class YouWaveAndroidOnPc implements VersionCacheFactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
@@ -48,7 +62,7 @@ class YouWaveAndroidOnPc implements VersionFactoryInterface
      *
      * @return \BrowserDetector\Version\Version
      */
-    public static function detectVersion($useragent)
+    public function detectVersion($useragent)
     {
         $s = new Stringy($useragent);
 

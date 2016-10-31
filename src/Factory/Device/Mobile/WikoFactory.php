@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class WikoFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,40 +68,24 @@ class WikoFactory implements Factory\FactoryInterface
 
         if (preg_match('/SLIDE2/', $useragent)) {
             $deviceCode = 'slide 2';
-        }
-
-        if (preg_match('/JERRY/', $useragent)) {
+        } elseif (preg_match('/JERRY/', $useragent)) {
             $deviceCode = 'jerry';
-        }
-
-        if (preg_match('/BLOOM/', $useragent)) {
+        } elseif (preg_match('/BLOOM/', $useragent)) {
             $deviceCode = 'bloom';
-        }
-
-        if (preg_match('/RAINBOW/', $useragent)) {
+        } elseif (preg_match('/RAINBOW/', $useragent)) {
             $deviceCode = 'rainbow';
-        }
-
-        if (preg_match('/LENNY/', $useragent)) {
+        } elseif (preg_match('/LENNY/', $useragent)) {
             $deviceCode = 'lenny';
-        }
-
-        if (preg_match('/GETAWAY/', $useragent)) {
+        } elseif (preg_match('/GETAWAY/', $useragent)) {
             $deviceCode = 'getaway';
-        }
-
-        if (preg_match('/DARKMOON/', $useragent)) {
+        } elseif (preg_match('/DARKMOON/', $useragent)) {
             $deviceCode = 'darkmoon';
-        }
-
-        if (preg_match('/DARKSIDE/', $useragent)) {
+        } elseif (preg_match('/DARKSIDE/', $useragent)) {
             $deviceCode = 'darkside';
-        }
-
-        if (preg_match('/CINK PEAX 2/', $useragent)) {
+        } elseif (preg_match('/CINK PEAX 2/', $useragent)) {
             $deviceCode = 'cink peax 2';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

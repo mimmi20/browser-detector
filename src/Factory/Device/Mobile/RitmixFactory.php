@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class RitmixFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,24 +68,16 @@ class RitmixFactory implements Factory\FactoryInterface
 
         if (preg_match('/RMD\-1040/', $useragent)) {
             $deviceCode = 'rmd-1040';
-        }
-
-        if (preg_match('/RMD\-1028/', $useragent)) {
+        } elseif (preg_match('/RMD\-1028/', $useragent)) {
             $deviceCode = 'rmd-1028';
-        }
-
-        if (preg_match('/RMD\-1025/', $useragent)) {
+        } elseif (preg_match('/RMD\-1025/', $useragent)) {
             $deviceCode = 'rmd-1025';
-        }
-
-        if (preg_match('/RMD\-757/', $useragent)) {
+        } elseif (preg_match('/RMD\-757/', $useragent)) {
             $deviceCode = 'rmd-757';
-        }
-
-        if (preg_match('/RMD\-753/', $useragent)) {
+        } elseif (preg_match('/RMD\-753/', $useragent)) {
             $deviceCode = 'rmd-753';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

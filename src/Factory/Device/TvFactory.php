@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class TvFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,140 +68,74 @@ class TvFactory implements Factory\FactoryInterface
 
         if (preg_match('/xbox one/i', $useragent)) {
             $deviceCode = 'xbox one';
-        }
-
-        if (preg_match('/xbox/i', $useragent)) {
+        } elseif (preg_match('/xbox/i', $useragent)) {
             $deviceCode = 'xbox 360';
-        }
-
-        if (preg_match('/dlink\.dsm380/i', $useragent)) {
+        } elseif (preg_match('/dlink\.dsm380/i', $useragent)) {
             $deviceCode = 'dsm 380';
-        }
-
-        if (preg_match('/NSZ\-GS7\/GX70/', $useragent)) {
+        } elseif (preg_match('/NSZ\-GS7\/GX70/', $useragent)) {
             $deviceCode = 'nsz-gs7/gx70';
-        }
-
-        if (preg_match('/googletv/i', $useragent)) {
+        } elseif (preg_match('/googletv/i', $useragent)) {
             $deviceCode = 'google tv';
-        }
-
-        if (preg_match('/idl\-6651n/i', $useragent)) {
+        } elseif (preg_match('/idl\-6651n/i', $useragent)) {
             $deviceCode = 'idl-6651n';
-        }
-
-        if (preg_match('/loewe; sl32x/i', $useragent)) {
+        } elseif (preg_match('/loewe; sl32x/i', $useragent)) {
             $deviceCode = 'sl32x';
-        }
-
-        if (preg_match('/loewe; sl121/i', $useragent)) {
+        } elseif (preg_match('/loewe; sl121/i', $useragent)) {
             $deviceCode = 'sl121';
-        }
-
-        if (preg_match('/loewe; sl150/i', $useragent)) {
+        } elseif (preg_match('/loewe; sl150/i', $useragent)) {
             $deviceCode = 'sl150';
-        }
-
-        if (preg_match('/lf1v464/i', $useragent)) {
+        } elseif (preg_match('/lf1v464/i', $useragent)) {
             $deviceCode = 'lf1v464';
-        }
-
-        if (preg_match('/lf1v401/i', $useragent)) {
+        } elseif (preg_match('/lf1v401/i', $useragent)) {
             $deviceCode = 'lf1v401';
-        }
-
-        if (preg_match('/lf1v394/i', $useragent)) {
+        } elseif (preg_match('/lf1v394/i', $useragent)) {
             $deviceCode = 'lf1v394';
-        }
-
-        if (preg_match('/lf1v373/i', $useragent)) {
+        } elseif (preg_match('/lf1v373/i', $useragent)) {
             $deviceCode = 'lf1v373';
-        }
-
-        if (preg_match('/lf1v325/i', $useragent)) {
+        } elseif (preg_match('/lf1v325/i', $useragent)) {
             $deviceCode = 'lf1v325';
-        }
-
-        if (preg_match('/lf1v307/i', $useragent)) {
+        } elseif (preg_match('/lf1v307/i', $useragent)) {
             $deviceCode = 'lf1v307';
-        }
-
-        if (preg_match('/NETRANGEMMH/', $useragent)) {
+        } elseif (preg_match('/NETRANGEMMH/', $useragent)) {
             $deviceCode = 'netrangemmh';
-        }
-
-        if (preg_match('/viera/i', $useragent)) {
+        } elseif (preg_match('/viera/i', $useragent)) {
             $deviceCode = 'viera tv';
-        }
-
-        if (preg_match('/AVM\-2012/', $useragent)) {
+        } elseif (preg_match('/AVM\-2012/', $useragent)) {
             $deviceCode = 'blueray player';
-        }
-
-        if (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
+        } elseif (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
             $deviceCode = 'general philips tv';
-        }
-
-        if (preg_match('/Mxl661L32/', $useragent)) {
+        } elseif (preg_match('/Mxl661L32/', $useragent)) {
             $deviceCode = 'samsung smart tv';
-        }
-
-        if (preg_match('/SMART\-TV/', $useragent)) {
+        } elseif (preg_match('/SMART\-TV/', $useragent)) {
             $deviceCode = 'samsung smart tv';
-        }
-
-        if (preg_match('/KDL32HX755/', $useragent)) {
+        } elseif (preg_match('/KDL32HX755/', $useragent)) {
             $deviceCode = 'kdl32hx755';
-        }
-
-        if (preg_match('/KDL32W655A/', $useragent)) {
+        } elseif (preg_match('/KDL32W655A/', $useragent)) {
             $deviceCode = 'kdl32w655a';
-        }
-
-        if (preg_match('/KDL37EX720/', $useragent)) {
+        } elseif (preg_match('/KDL37EX720/', $useragent)) {
             $deviceCode = 'kdl37ex720';
-        }
-
-        if (preg_match('/KDL42W655A/', $useragent)) {
+        } elseif (preg_match('/KDL42W655A/', $useragent)) {
             $deviceCode = 'kdl42w655a';
-        }
-
-        if (preg_match('/KDL40EX720/', $useragent)) {
+        } elseif (preg_match('/KDL40EX720/', $useragent)) {
             $deviceCode = 'kdl40ex720';
-        }
-
-        if (preg_match('/KDL50W815B/', $useragent)) {
+        } elseif (preg_match('/KDL50W815B/', $useragent)) {
             $deviceCode = 'kdl50w815b';
-        }
-
-        if (preg_match('/SonyDTV115/', $useragent)) {
+        } elseif (preg_match('/SonyDTV115/', $useragent)) {
             $deviceCode = 'dtv115';
-        }
-
-        if (preg_match('/technisat digicorder isio s/i', $useragent)) {
+        } elseif (preg_match('/technisat digicorder isio s/i', $useragent)) {
             $deviceCode = 'digicorder isio s';
-        }
-
-        if (preg_match('/technisat digit isio s/i', $useragent)) {
+        } elseif (preg_match('/technisat digit isio s/i', $useragent)) {
             $deviceCode = 'digit isio s';
-        }
-
-        if (preg_match('/TechniSat MultyVision ISIO/', $useragent)) {
+        } elseif (preg_match('/TechniSat MultyVision ISIO/', $useragent)) {
             $deviceCode = 'multyvision isio';
-        }
-
-        if (preg_match('/AQUOSBrowser/', $useragent)) {
+        } elseif (preg_match('/AQUOSBrowser/', $useragent)) {
             $deviceCode = 'aquos tv';
-        }
-
-        if (preg_match('/(CX919|gxt_dongle_3188)/', $useragent)) {
+        } elseif (preg_match('/(CX919|gxt_dongle_3188)/', $useragent)) {
             $deviceCode = 'cx919';
-        }
-
-        if (preg_match('/Apple TV/', $useragent)) {
+        } elseif (preg_match('/Apple TV/', $useragent)) {
             $deviceCode = 'appletv';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

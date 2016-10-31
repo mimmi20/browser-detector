@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class WexlerFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,16 +68,12 @@ class WexlerFactory implements Factory\FactoryInterface
 
         if (preg_match('/TAB A742/', $useragent)) {
             $deviceCode = 'wexler tab a742';
-        }
-
-        if (preg_match('/TAB\-7T/', $useragent)) {
+        } elseif (preg_match('/TAB\-7T/', $useragent)) {
             $deviceCode = 'tab 7t';
-        }
-
-        if (preg_match('/TAB7iD/', $useragent)) {
+        } elseif (preg_match('/TAB7iD/', $useragent)) {
             $deviceCode = 'tab7id';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

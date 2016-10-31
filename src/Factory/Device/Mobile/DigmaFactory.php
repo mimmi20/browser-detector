@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class DigmaFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,36 +68,22 @@ class DigmaFactory implements Factory\FactoryInterface
 
         if (preg_match('/PS1043MG/', $useragent)) {
             $deviceCode = 'ps1043mg';
-        }
-
-        if (preg_match('/TT7026MW/', $useragent)) {
+        } elseif (preg_match('/TT7026MW/', $useragent)) {
             $deviceCode = 'tt7026mw';
-        }
-
-        if (preg_match('/iDxD7/', $useragent)) {
+        } elseif (preg_match('/iDxD7/', $useragent)) {
             $deviceCode = 'idxd7 3g';
-        }
-
-        if (preg_match('/iDxD4/', $useragent)) {
+        } elseif (preg_match('/iDxD4/', $useragent)) {
             $deviceCode = 'idxd4 3g';
-        }
-
-        if (preg_match('/iDsD7/', $useragent)) {
+        } elseif (preg_match('/iDsD7/', $useragent)) {
             $deviceCode = 'idsd7 3g';
-        }
-
-        if (preg_match('/iDnD7/', $useragent)) {
+        } elseif (preg_match('/iDnD7/', $useragent)) {
             $deviceCode = 'idnd7';
-        }
-
-        if (preg_match('/iDjD7/', $useragent)) {
+        } elseif (preg_match('/iDjD7/', $useragent)) {
             $deviceCode = 'idjd7';
-        }
-
-        if (preg_match('/iDrQ10/', $useragent)) {
+        } elseif (preg_match('/iDrQ10/', $useragent)) {
             $deviceCode = 'idrq10 3g';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

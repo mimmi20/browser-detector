@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class DoogeeFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,20 +68,14 @@ class DoogeeFactory implements Factory\FactoryInterface
 
         if (preg_match('/DG2014/', $useragent)) {
             $deviceCode = 'dg2014';
-        }
-
-        if (preg_match('/DG800/', $useragent)) {
+        } elseif (preg_match('/DG800/', $useragent)) {
             $deviceCode = 'dg800';
-        }
-
-        if (preg_match('/DG330/', $useragent)) {
+        } elseif (preg_match('/DG330/', $useragent)) {
             $deviceCode = 'dg330';
-        }
-
-        if (preg_match('/F3_Pro/', $useragent)) {
+        } elseif (preg_match('/F3_Pro/', $useragent)) {
             $deviceCode = 'f3 pro';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

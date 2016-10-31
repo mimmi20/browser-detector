@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class ZopoFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,44 +68,26 @@ class ZopoFactory implements Factory\FactoryInterface
 
         if (preg_match('/ZP980/', $useragent)) {
             $deviceCode = 'zp980';
-        }
-
-        if (preg_match('/ZP950\+/', $useragent)) {
+        } elseif (preg_match('/ZP950\+/', $useragent)) {
             $deviceCode = 'zp950+';
-        }
-
-        if (preg_match('/ZP950/', $useragent)) {
+        } elseif (preg_match('/ZP950/', $useragent)) {
             $deviceCode = 'zp950';
-        }
-
-        if (preg_match('/ZP9(10|00H)/', $useragent)) {
+        } elseif (preg_match('/ZP9(10|00H)/', $useragent)) {
             $deviceCode = 'zp910';
-        }
-
-        if (preg_match('/ZP900/', $useragent)) {
+        } elseif (preg_match('/ZP900/', $useragent)) {
             $deviceCode = 'zp900';
-        }
-
-        if (preg_match('/ZP8(10|00H)/', $useragent)) {
+        } elseif (preg_match('/ZP8(10|00H)/', $useragent)) {
             $deviceCode = 'zp810';
-        }
-
-        if (preg_match('/ZP500/', $useragent)) {
+        } elseif (preg_match('/ZP500/', $useragent)) {
             $deviceCode = 'zp500';
-        }
-
-        if (preg_match('/ZP300/', $useragent)) {
+        } elseif (preg_match('/ZP300/', $useragent)) {
             $deviceCode = 'zp300';
-        }
-
-        if (preg_match('/ZP200/', $useragent)) {
+        } elseif (preg_match('/ZP200/', $useragent)) {
             $deviceCode = 'zp200';
-        }
-
-        if (preg_match('/ZP100/', $useragent)) {
+        } elseif (preg_match('/ZP100/', $useragent)) {
             $deviceCode = 'zp100';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }

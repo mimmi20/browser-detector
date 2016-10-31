@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Bits;
 
-use UaHelper\Utils;
+use Stringy\Stringy;
 
 /**
  * Class to detect the Bit count for an Platform/Operating System
@@ -92,23 +92,22 @@ class Os
      */
     private function detectBits()
     {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
+        $s = new Stringy($this->useragent);
 
-        if ($utils->checkIfContains(
+        if ($s->containsAny(
             ['x64', 'win64', 'wow64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64', 'osf1'],
-            true
+            false
         )
         ) {
             return 64;
         }
 
-        if ($utils->checkIfContains(['win3.1', 'windows 3.1'], true)) {
+        if ($s->containsAny(['win3.1', 'windows 3.1'], false)) {
             return 16;
         }
 
         // old deprecated 8 bit systems
-        if ($utils->checkIfContains(['cp/m', '8-bit'], true)) {
+        if ($s->containsAny(['cp/m', '8-bit'], false)) {
             return 8;
         }
 

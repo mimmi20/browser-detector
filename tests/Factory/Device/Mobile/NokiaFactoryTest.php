@@ -3,12 +3,31 @@
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
 use BrowserDetector\Factory\Device\Mobile\NokiaFactory;
+use Cache\Adapter\Filesystem\FilesystemCachePool;
+use League\Flysystem\Filesystem;
+use League\Flysystem\Adapter\Local;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
 class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var \BrowserDetector\Factory\Device\Mobile\NokiaFactory
+     */
+    private $object = null;
+
+    /**
+     * Sets up the fixture, for example, open a network connection.
+     * This method is called before a test is executed.
+     */
+    protected function setUp()
+    {
+        $adapter      = new Local(__DIR__ . '/../../../../cache/');
+        $cache        = new FilesystemCachePool(new Filesystem($adapter));
+        $this->object = new NokiaFactory($cache);
+    }
+
     /**
      * @dataProvider providerDetect
      *
@@ -24,7 +43,7 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = (new NokiaFactory())->detect($agent);
+        $result = $this->object->detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -188,7 +207,7 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -268,7 +287,7 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
                 'Mobile Phone',
-                null,
+                false,
                 'touchscreen',
             ],
             [
@@ -298,7 +317,7 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [
@@ -308,7 +327,7 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
                 'Mobile Phone',
-                null,
+                false,
                 null,
             ],
             [

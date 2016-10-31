@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,6 +42,19 @@ use BrowserDetector\Factory;
  */
 class NecFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     */
+    public function __construct(CacheItemPoolInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
     /**
      * detects the device name from the given user agent
      *
@@ -54,20 +68,14 @@ class NecFactory implements Factory\FactoryInterface
 
         if (preg_match('/N905i/i', $useragent)) {
             $deviceCode = 'n905i';
-        }
-
-        if (preg_match('/N705i/i', $useragent)) {
+        } elseif (preg_match('/N705i/i', $useragent)) {
             $deviceCode = 'n705i';
-        }
-
-        if (preg_match('/0912/i', $useragent)) {
+        } elseif (preg_match('/0912/i', $useragent)) {
             $deviceCode = '0912';
-        }
-
-        if (preg_match('/N\-06E/', $useragent)) {
+        } elseif (preg_match('/N\-06E/', $useragent)) {
             $deviceCode = 'n-06e';
         }
 
-        return (new Factory\DeviceFactory())->get($deviceCode, $useragent);
+        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
     }
 }
