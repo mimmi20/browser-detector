@@ -2293,7 +2293,7 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'youwave android on pc';
         }
 
-        return self::get($browserKey, $useragent);
+        return $this->get($browserKey, $useragent);
     }
 
     /**

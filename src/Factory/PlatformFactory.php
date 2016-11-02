@@ -265,7 +265,7 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'android';
         }
 
-        return self::get($platformCode, $agent);
+        return $this->get($platformCode, $agent);
     }
 
     /**

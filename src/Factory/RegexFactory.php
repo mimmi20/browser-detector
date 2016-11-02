@@ -34,6 +34,7 @@ namespace BrowserDetector\Factory;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Yaml\Yaml;
+use Psr\Log\LoggerInterface;
 
 /**
  * detection class using regexes
@@ -52,11 +53,30 @@ class RegexFactory implements FactoryInterface
     private $cache = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @var array|null
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private $match = null;
+
+    /**
+     * @var string|null
+     */
+    private $useragent = null;
+
+    /**
+     * an logger instance
+     *
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @param \Psr\Log\LoggerInterface          $logger
+     */
+    public function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->logger = $logger;
     }
 
     /**
@@ -70,7 +90,11 @@ class RegexFactory implements FactoryInterface
     {
         $regexes = $this->getRegexes();
 
+        $this->match = null;
+        $this->useragent = $useragent;
+
         if (!is_array($regexes)) {
+            $this->logger->debug('no regexes are defined');
             return null;
         }
 
@@ -78,11 +102,173 @@ class RegexFactory implements FactoryInterface
             $matches = [];
 
             if (preg_match($regex, $useragent, $matches)) {
-                return $matches;
+                $this->logger->debug('a regex matched');
+                $this->match = $matches;
+                return true;
             }
         }
 
+        $this->logger->debug('no regex did match');
         return false;
+    }
+
+    /**
+     * @return \UaResult\Device\DeviceInterface|null
+     */
+    public function getDevice()
+    {
+        if (null === $this->useragent) {
+            $this->logger->debug('no useragent was set');
+            return null;
+        }
+
+        if (!array_key_exists('devicecode', $this->match)) {
+            $this->logger->debug('device not detected via regexes');
+            return null;
+        }
+
+        $deviceCode    = strtolower($this->match['devicecode']);
+        $deviceFactory = new DeviceFactory($this->cache);
+
+        if ('windows' === $deviceCode) {
+            return $deviceFactory->get('windows desktop', $this->useragent);
+        } elseif ('macintosh' === $deviceCode) {
+            return $deviceFactory->get('macintosh', $this->useragent);
+        }
+
+        $device = $deviceFactory->get($deviceCode, $this->useragent);
+
+        if (!in_array($device->getDeviceName(), ['unknown', null])) {
+            $this->logger->debug('device detected via devicecode');
+            return $device;
+        }
+
+        if (array_key_exists('manufacturercode', $this->match)) {
+            $className = '\\BrowserDetector\\Factory\\Mobile\\' . ucfirst(strtolower($this->match['manufacturercode']));
+
+            if (class_exists($className)) {
+                $this->logger->debug('device detected via manufacturer');
+                /** @var \BrowserDetector\Factory\FactoryInterface $factory */
+                $factory = new $className($this->cache);
+                return $factory->detect($this->useragent);
+            }
+        }
+
+        if (array_key_exists('devicetype', $this->match)) {
+            $className = '\\BrowserDetector\\Factory\\' . ucfirst(strtolower($this->match['devicetype']));
+
+            if (class_exists($className)) {
+                $this->logger->debug('device detected via device type (mobile or tv)');
+                /** @var \BrowserDetector\Factory\FactoryInterface $factory */
+                $factory = new $className($this->cache);
+                return $factory->detect($this->useragent);
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * @return null
+     */
+    public function getPlatform()
+    {
+        if (null === $this->useragent) {
+            $this->logger->debug('no useragent was set');
+            return null;
+        }
+
+        if (!array_key_exists('osname', $this->match)) {
+            $this->logger->debug('platform not detected via regexes');
+            return null;
+        }
+
+        $platformCode = strtolower($this->match['osname']);
+
+        if ('darwin' === $platformCode) {
+            $darwinFactory = new Platform\DarwinFactory($this->cache);
+            return $darwinFactory->detect($this->useragent);
+        }
+
+        $platformFactory = new DeviceFactory($this->cache);
+        $platform = $platformFactory->get($platformCode, $this->useragent);
+
+        if (!in_array($platform->getDeviceName(), ['unknown', null])) {
+            return $platform;
+        }
+
+        return null;
+    }
+
+    /**
+     * @return null
+     */
+    public function getBrowser()
+    {
+        if (null === $this->useragent) {
+            $this->logger->debug('no useragent was set');
+            return null;
+        }
+
+        if (!array_key_exists('browsername', $this->match)) {
+            $this->logger->debug('browser not detected via regexes');
+            return null;
+        }
+
+        $browserCode    = strtolower($this->match['browsername']);
+        $browserFactory = new BrowserFactory($this->cache);
+        $browser        = $browserFactory->get($browserCode, $this->useragent);
+
+        if (!in_array($browser->getName(), ['unknown', null])) {
+            return $browser;
+        }
+
+        return null;
+    }
+
+    /**
+     * @return null
+     */
+    public function getEngine()
+    {
+        if (null === $this->useragent) {
+            $this->logger->debug('no useragent was set');
+            return null;
+        }
+
+        if (!array_key_exists('enginename', $this->match)) {
+            $this->logger->debug('engine not detected via regexes');
+            return null;
+        }
+
+        $engineCode    = strtolower($this->match['enginename']);
+        $engineFactory = new EngineFactory($this->cache);
+
+        if ('cfnetwork' === $engineCode) {
+            return $engineFactory->get('webkit', $this->useragent);
+        }
+
+        if (in_array($engineCode, ['applewebkit', 'webkit'])) {
+            if (array_key_exists('chromeversion', $this->match)) {
+                $chromeversion = (int) $this->match['chromeversion'];
+            } else {
+                $chromeversion = 0;
+            }
+
+            if ($chromeversion >= 28) {
+                $engineCode = 'blink';
+            } else {
+                $engineCode = 'webkit';
+            }
+        }
+
+        $engine = $engineFactory->get($engineCode, $this->useragent);
+
+        if (!in_array($engine->getName(), ['unknown', null])) {
+            return $engine;
+        }
+
+        return null;
     }
 
     /**

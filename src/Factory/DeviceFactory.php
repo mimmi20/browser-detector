@@ -93,7 +93,7 @@ class DeviceFactory implements FactoryInterface
             return (new Device\DesktopFactory($this->cache))->detect($useragent);
         }
 
-        return self::get('unknown', $useragent);
+        return $this->get('unknown', $useragent);
     }
 
     /**

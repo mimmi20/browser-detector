@@ -94,7 +94,7 @@ class EngineFactory implements FactoryInterface
             $version = $chrome->getVersion();
 
             if (null !== $version) {
-                $chromeVersion = $version->getVersion(Version::MAJORONLY);
+                $chromeVersion = (int) $version->getVersion(Version::MAJORONLY);
             } else {
                 $chromeVersion = 0;
             }
@@ -124,7 +124,7 @@ class EngineFactory implements FactoryInterface
             $engineKey = 'teleca';
         }
 
-        return self::get($engineKey, $useragent);
+        return $this->get($engineKey, $useragent);
     }
 
     /**

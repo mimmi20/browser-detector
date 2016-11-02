@@ -102,8 +102,10 @@ class BrowserDetector
         $requestFactory = new GenericRequestFactory();
 
         if (is_string($request)) {
+            $this->logger->debug('request object created from string');
             $request = $requestFactory->createRequestForUserAgent($request);
         } elseif (is_array($request)) {
+            $this->logger->debug('request object created from array');
             $request = $requestFactory->createRequest($request);
         }
 
@@ -118,10 +120,12 @@ class BrowserDetector
         $cacheItem = $this->cache->getItem($cacheId);
 
         if ($cacheItem->isHit()) {
+            $this->logger->debug('result found in cache');
             $result = $cacheItem->get();
         }
 
         if (!($result instanceof ResultInterface)) {
+            $this->logger->debug('need to rebuid result');
             $result = $this->buildResult($request);
 
             $cacheItem->set($result);
@@ -145,6 +149,7 @@ class BrowserDetector
                 new Generic\LocaleRemover(),
                 new Generic\EncryptionRemover(),
                 new Generic\Mozilla(),
+                new Generic\Linux(),
                 new Generic\KhtmlGecko(),
                 new Generic\NovarraGoogleTranslator(),
                 new Generic\SerialNumbers(),
@@ -155,41 +160,52 @@ class BrowserDetector
 
         $deviceUa = $normalizer->normalize($request->getDeviceUserAgent());
 
-        /*
-        if (null !== Factory\RegexFactory::detect($deviceUa)) {
-            // @todo: extract device data
-        } else {
-            $device = Factory\DeviceFactory::detect($deviceUa);
+        $regexFactory = new Factory\RegexFactory($this->cache, $this->logger);
+        $regexFactory->detect($deviceUa);
+        $device = $regexFactory->getDevice();
+
+        if (null === $device) {
+            $this->logger->debug('device not detected via regexes');
+            $device = (new Factory\DeviceFactory($this->cache))->detect($deviceUa);
         }
-        /**/
-        $device = (new Factory\DeviceFactory($this->cache))->detect($deviceUa);
 
         $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
 
-        /*
-        if (null !== $rexgexFactory->detect($browserUa)) {
-            // @todo: extract browser/engine/os data
-        } else {
-            //
-        }
-        /**/
-        $platform = $device->getPlatform();
+        $regexFactory->detect($browserUa);
+        $platform = $regexFactory->getPlatform();
 
         if (null === $platform) {
-            // detect the os which runs on the device
+            $this->logger->debug('platform not detected via regexes, try to get from device');
+            $platform = $device->getPlatform();
+        }
+
+        if (null === $platform) {
+            $this->logger->debug('device not detected via regexes nor from the device');
             $platform = (new Factory\PlatformFactory($this->cache))->detect($browserUa);
         }
 
         // detect the browser which is used
         /** @var \UaResult\Browser\Browser $browser */
-        $browser = (new Factory\BrowserFactory($this->cache))->detect($browserUa, $platform);
+        $browser = $regexFactory->getBrowser();
+
+        if (null === $browser) {
+            $this->logger->debug('browser not detected via regexes');
+            $browser = (new Factory\BrowserFactory($this->cache))->detect($browserUa, $platform);
+        }
 
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
+            $this->logger->debug('engine forced to "webkit" on iOS');
             $engine = (new Factory\EngineFactory($this->cache))->get('webkit', $browserUa);
         } else {
-            $engine = $browser->getEngine();
+            $engine = $regexFactory->getEngine();
+
+            if (null === $engine) {
+                $this->logger->debug('engine not detected via regexes, try to get from browser');
+                $engine = $browser->getEngine();
+            }
 
             if ('unknown' === $engine) {
+                $this->logger->debug('engine not detected via regexes nor from browser');
                 $engine = (new Factory\EngineFactory($this->cache))->detect($browserUa);
             }
         }
