@@ -151,6 +151,7 @@ class BrowserDetector
                 new Generic\Mozilla(),
                 new Generic\Linux(),
                 new Generic\KhtmlGecko(),
+                new Generic\Tokens(),
                 new Generic\NovarraGoogleTranslator(),
                 new Generic\SerialNumbers(),
                 new Generic\TransferEncoding(),

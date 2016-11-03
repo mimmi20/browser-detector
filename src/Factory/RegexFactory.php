@@ -178,6 +178,16 @@ class RegexFactory implements FactoryInterface
             return null;
         }
 
+        $platformFactory = new DeviceFactory($this->cache);
+
+        if (!array_key_exists('osname', $this->match)
+            && array_key_exists('manufacturercode', $this->match)
+            && 'blackberry' === strtolower($this->match['manufacturercode'])
+        ) {
+            $this->logger->debug('platform forced to rim os');
+            return $platformFactory->get('rim os', $this->useragent);
+        }
+
         if (!array_key_exists('osname', $this->match)) {
             $this->logger->debug('platform not detected via regexes');
             return null;
@@ -190,7 +200,6 @@ class RegexFactory implements FactoryInterface
             return $darwinFactory->detect($this->useragent);
         }
 
-        $platformFactory = new DeviceFactory($this->cache);
         $platform = $platformFactory->get($platformCode, $this->useragent);
 
         if (!in_array($platform->getDeviceName(), ['unknown', null])) {
@@ -217,7 +226,34 @@ class RegexFactory implements FactoryInterface
 
         $browserCode    = strtolower($this->match['browsername']);
         $browserFactory = new BrowserFactory($this->cache);
-        $browser        = $browserFactory->get($browserCode, $this->useragent);
+
+        if ('safari' === $browserCode) {
+            if (array_key_exists('osname', $this->match)) {
+                $osname = strtolower($this->match['osname']);
+
+                if ('blackberry' === $osname) {
+                    return $browserFactory->get('blackberry', $this->useragent);
+                }
+
+                if ('android' === $osname || 'linux' === $osname) {
+                    return $browserFactory->get('android webkit', $this->useragent);
+                }
+
+                if ('tizen' === $osname) {
+                    return $browserFactory->get('samsung browser', $this->useragent);
+                }
+            }
+
+            if (array_key_exists('manufacturercode', $this->match)) {
+                $devicemaker = strtolower($this->match['manufacturercode']);
+
+                if ('nokia' === $devicemaker) {
+                    return $browserFactory->get('nokia browser', $this->useragent);
+                }
+            }
+        }
+
+        $browser = $browserFactory->get($browserCode, $this->useragent);
 
         if (!in_array($browser->getName(), ['unknown', null])) {
             return $browser;

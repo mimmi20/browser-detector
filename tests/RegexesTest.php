@@ -58,9 +58,12 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
+        $logger = new Logger('browser-detector-tests');
+        $logger->pushHandler(new NullHandler());
+
         $adapter      = new Local(__DIR__ . '/../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
-        $this->object = new RegexFactory($cache);
+        $this->object = new RegexFactory($cache, $logger);
     }
 
     /**
@@ -132,6 +135,7 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
                 new Generic\Mozilla(),
                 new Generic\Linux(),
                 new Generic\KhtmlGecko(),
+                new Generic\Tokens(),
                 new Generic\NovarraGoogleTranslator(),
                 new Generic\SerialNumbers(),
                 new Generic\TransferEncoding(),
@@ -144,8 +148,7 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
         $result = $this->object->detect($normalizedUa);
 
         self::assertNotNull($result, 'regexes are missing');
-        self::assertNotFalse($result, 'no match for UA ' . $normalizedUa);
-        self::assertInternalType('array', $result, 'wrong result type for UA ' . $normalizedUa);
+        self::assertNotFalse($result, "no match for UA \n    input     : $userAgent\n    normalized: $normalizedUa");
         self::$ok++;
     }
 
