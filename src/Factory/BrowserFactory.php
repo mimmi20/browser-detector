@@ -143,7 +143,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (false !== strpos($useragent, 'Silk')) {
             $browserKey = 'silk';
         } elseif (false !== strpos($useragent, 'coc_coc_browser')) {
-            $browserKey = 'coc coc browser';
+            $browserKey = 'coc_coc_browser';
         } elseif (false !== strpos($useragent, 'NaverMatome')) {
             $browserKey = 'matome';
         } elseif (preg_match('/FlipboardProxy/', $useragent)) {
@@ -241,7 +241,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/360Spider/', $useragent)) {
             $browserKey = '360spider';
         } elseif (preg_match('/Outlook\-Express/', $useragent)) {
-            $browserKey = 'windows live mail';
+            $browserKey = 'outlook-express';
         } elseif (preg_match('/Outlook/', $useragent)) {
             $browserKey = 'outlook';
         } elseif (preg_match('/microsoft office mobile/i', $useragent)) {
@@ -382,6 +382,8 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'dragon';
         } elseif (preg_match('/Flock/', $useragent)) {
             $browserKey = 'flock';
+        } elseif (preg_match('/Crosswalk/', $useragent)) {
+            $browserKey = 'crosswalk';
         } elseif (preg_match('/Bromium Safari/', $useragent)) {
             $browserKey = 'vsentry';
         } elseif (preg_match('/(chrome|crmo|crios)/i', $useragent)) {

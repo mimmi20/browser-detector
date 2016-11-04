@@ -2767,7 +2767,7 @@
     },
     "engine": "unknown"
   },
-  "coc coc browser": {
+  "coc_coc_browser": {
     "name": "Coc Coc Browser",
     "manufacturer": "Coc Coc Company Limited",
     "brand": "Coc Coc",
@@ -19620,7 +19620,7 @@
     },
     "engine": "unknown"
   },
-  "windows live mail": {
+  "outlook-express": {
     "name": "Windows Live Mail",
     "manufacturer": "Microsoft Corporation",
     "brand": "Microsoft",
@@ -21047,5 +21047,25 @@
       ]
     },
     "engine": "unknown"
+  },
+  "crosswalk": {
+    "name": "Crosswalk App",
+    "manufacturer": "Intel Corporation",
+    "brand": "Intel",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "canSkipAlignedLinkRow": false,
+    "claimsWebSupport": false,
+    "supportsEmptyOptionValues": true,
+    "supportsBasicAuthentication": true,
+    "supportsPostMethod": true,
+    "type": "Application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Crosswalk"
+      ]
+    },
+    "engine": "Blink"
   }
 }

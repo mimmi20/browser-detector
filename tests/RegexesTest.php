@@ -135,6 +135,7 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
                 new Generic\Mozilla(),
                 new Generic\Linux(),
                 new Generic\KhtmlGecko(),
+                new Generic\HexCode(),
                 new Generic\Tokens(),
                 new Generic\NovarraGoogleTranslator(),
                 new Generic\SerialNumbers(),
