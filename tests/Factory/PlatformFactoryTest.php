@@ -3,6 +3,7 @@
 namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\PlatformFactory;
+use BrowserDetector\Loader\PlatformLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
@@ -25,7 +26,8 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
     {
         $adapter      = new Local(__DIR__ . '/../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
-        $this->object = new PlatformFactory($cache);
+        $loader       = new PlatformLoader($cache);
+        $this->object = new PlatformFactory($cache, $loader);
     }
 
     /**

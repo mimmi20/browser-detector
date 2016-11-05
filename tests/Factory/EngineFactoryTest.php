@@ -3,6 +3,7 @@
 namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\EngineFactory;
+use BrowserDetector\Loader\EngineLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
@@ -25,7 +26,8 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
     {
         $adapter      = new Local(__DIR__ . '/../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
-        $this->object = new EngineFactory($cache);
+        $loader       = new EngineLoader($cache);
+        $this->object = new EngineFactory($cache, $loader);
     }
 
     /**

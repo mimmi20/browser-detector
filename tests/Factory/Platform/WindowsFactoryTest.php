@@ -3,6 +3,7 @@
 namespace BrowserDetectorTest\Factory\Platform;
 
 use BrowserDetector\Factory\Platform\WindowsFactory;
+use BrowserDetector\Loader\PlatformLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
@@ -25,7 +26,8 @@ class WindowsFactoryTest extends \PHPUnit_Framework_TestCase
     {
         $adapter      = new Local(__DIR__ . '/../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
-        $this->object = new WindowsFactory($cache);
+        $loader       = new PlatformLoader($cache);
+        $this->object = new WindowsFactory($cache, $loader);
     }
 
     /**
