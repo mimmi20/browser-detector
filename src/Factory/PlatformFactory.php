@@ -31,15 +31,10 @@
 
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Bits\Os as OsBits;
 use BrowserDetector\Helper;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
-use BrowserDetector\Version\VersionInterface;
-use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
-use UaResult\Os\Os;
+use BrowserDetector\Loader\LoaderInterface;
 
 /**
  * Browser detection class
@@ -58,11 +53,18 @@ class PlatformFactory implements FactoryInterface
     private $cache = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @var \BrowserDetector\Loader\LoaderInterface|null
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private $loader = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface       $cache
+     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     */
+    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->loader = $loader;
     }
 
     /**
@@ -112,7 +114,7 @@ class PlatformFactory implements FactoryInterface
         } elseif ($isWindows && $s->contains('ARM;')) {
             $platformCode = 'windows rt';
         } elseif ($isWindows) {
-            return (new Platform\WindowsFactory($this->cache))->detect($agent);
+            return (new Platform\WindowsFactory($this->cache, $this->loader))->detect($agent);
         } elseif (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|S60V3|S60V5)/', $agent)) {
             $platformCode = 'symbian os';
         } elseif (preg_match('/(Series40)/', $agent)) {
@@ -152,7 +154,7 @@ class PlatformFactory implements FactoryInterface
         } elseif ($s->contains('freebsd', false)) {
             $platformCode = 'freebsd';
         } elseif ($s->containsAny(['darwin', 'cfnetwork'], false)) {
-            return (new Platform\DarwinFactory($this->cache))->detect($agent);
+            return (new Platform\DarwinFactory($this->cache, $this->loader))->detect($agent);
         } elseif ($s->contains('playstation', false)) {
             $platformCode = 'cellos';
         } elseif (preg_match('/(micromaxx650|dolfin\/|yuanda50|wap[ \-]browser)/i', $agent)) {
@@ -265,92 +267,6 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'android';
         }
 
-        return $this->get($platformCode, $agent);
-    }
-
-    /**
-     * @param string      $platformCode
-     * @param string      $useragent
-     * @param string|null $inputVersion
-     *
-     * @return \UaResult\Os\OsInterface
-     */
-    public function get($platformCode, $useragent, $inputVersion = null)
-    {
-        $cacheInitializedId = hash('sha512', 'platform-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
-
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
-        }
-
-        $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
-
-        if (!$cacheItem->isHit()) {
-            return new Os(
-                'unknown',
-                'unknown',
-                'unknown',
-                'unknown',
-                new Version(0)
-            );
-        }
-
-        $platform = $cacheItem->get();
-
-        $platformVersionClass = $platform->version->class;
-
-        if (null !== $inputVersion && is_string($inputVersion)) {
-            $version = VersionFactory::set($inputVersion);
-        } elseif (!is_string($platformVersionClass)) {
-            $version = new Version(0);
-        } elseif ('VersionFactory' === $platformVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $platform->version->search);
-        } else {
-            /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $platformVersionClass($this->cache);
-            $version      = $versionClass->detectVersion($useragent);
-        }
-
-        $name          = $platform->name;
-        $marketingName = $platform->marketingName;
-
-        if ('Mac OS X' === $name
-            && version_compare((float) $version->getVersion(VersionInterface::MAJORMINOR), 10.12, '>=')
-        ) {
-            $name          = 'macOS';
-            $marketingName = 'macOS';
-        }
-
-        return new Os(
-            $name,
-            $marketingName,
-            $platform->manufacturer,
-            $platform->brand,
-            $version,
-            (new OsBits($useragent))->getBits()
-        );
-    }
-
-    /**
-     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
-     */
-    private function initCache(CacheItemInterface $cacheInitialized)
-    {
-        static $platforms = null;
-
-        if (null === $platforms) {
-            $platforms = json_decode(file_get_contents(__DIR__ . '/../../data/platforms.json'));
-        }
-
-        foreach ($platforms as $platformCode => $platformData) {
-            $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
-            $cacheItem->set($platformData);
-
-            $this->cache->save($cacheItem);
-        }
-
-        $cacheInitialized->set(true);
-        $this->cache->save($cacheInitialized);
+        return $this->loader->load($platformCode, $agent);
     }
 }

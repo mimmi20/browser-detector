@@ -95,7 +95,7 @@ class BrowserDetector
     {
         if (null === $request) {
             throw new UnexpectedValueException(
-                'You have to call this function with the useragent parameter'
+                'You have to call this function with the request parameter'
             );
         }
 
@@ -168,7 +168,7 @@ class BrowserDetector
 
         if (null === $device) {
             $this->logger->debug('device not detected via regexes');
-            $device = (new Factory\DeviceFactory($this->cache))->detect($deviceUa);
+            $device = (new Factory\DeviceFactory($this->cache, new Loader\DeviceLoader($this->cache)))->detect($deviceUa);
         }
 
         $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
@@ -183,7 +183,7 @@ class BrowserDetector
 
         if (null === $platform) {
             $this->logger->debug('device not detected via regexes nor from the device');
-            $platform = (new Factory\PlatformFactory($this->cache))->detect($browserUa);
+            $platform = (new Factory\PlatformFactory($this->cache, new Loader\PlatformLoader($this->cache)))->detect($browserUa);
         }
 
         // detect the browser which is used
@@ -192,12 +192,14 @@ class BrowserDetector
 
         if (null === $browser) {
             $this->logger->debug('browser not detected via regexes');
-            $browser = (new Factory\BrowserFactory($this->cache))->detect($browserUa, $platform);
+            $browser = (new Factory\BrowserFactory($this->cache, new Loader\BrowserLoader($this->cache)))->detect($browserUa, $platform);
         }
+
+        $engineLoader = new  Loader\EngineLoader($this->cache);
 
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
             $this->logger->debug('engine forced to "webkit" on iOS');
-            $engine = (new Factory\EngineFactory($this->cache))->get('webkit', $browserUa);
+            $engine = $engineLoader->load('webkit', $browserUa);
         } else {
             $engine = $regexFactory->getEngine();
 
@@ -208,7 +210,7 @@ class BrowserDetector
 
             if ('unknown' === $engine) {
                 $this->logger->debug('engine not detected via regexes nor from browser');
-                $engine = (new Factory\EngineFactory($this->cache))->detect($browserUa);
+                $engine = (new Factory\EngineFactory($this->cache, $engineLoader))->detect($browserUa);
             }
         }
 

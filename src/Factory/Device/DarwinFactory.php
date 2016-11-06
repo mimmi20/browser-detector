@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Factory;
+use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
 
 /**
@@ -51,11 +52,18 @@ class DarwinFactory implements Factory\FactoryInterface
     private $cache = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @var \BrowserDetector\Loader\LoaderInterface|null
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private $loader = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface       $cache
+     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     */
+    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->loader = $loader;
     }
 
     /**
@@ -68,7 +76,7 @@ class DarwinFactory implements Factory\FactoryInterface
     public function detect($useragent)
     {
         $deviceCode   = 'macintosh';
-        $appleFactory = new Mobile\AppleFactory($this->cache);
+        $appleFactory = new Mobile\AppleFactory($this->cache, $this->loader);
 
         if (false !== strpos($useragent, 'CFNetwork/807')) {
             $deviceCode = 'macintosh';
@@ -294,6 +302,6 @@ class DarwinFactory implements Factory\FactoryInterface
             $deviceCode = 'macintosh';
         }
 
-        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
+        return $this->loader->load($deviceCode, $useragent);
     }
 }

@@ -31,12 +31,11 @@
 
 namespace BrowserDetector\Factory;
 
+use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
-use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
-use UaResult\Engine\Engine;
+use BrowserDetector\Loader\LoaderInterface;
 
 /**
  * Browser detection class
@@ -55,11 +54,18 @@ class EngineFactory implements FactoryInterface
     private $cache = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @var \BrowserDetector\Loader\LoaderInterface|null
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private $loader = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface       $cache
+     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     */
+    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->loader = $loader;
     }
 
     /**
@@ -90,7 +96,7 @@ class EngineFactory implements FactoryInterface
         } elseif (preg_match('/(goanna)/i', $useragent)) {
             $engineKey = 'goanna';
         } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
-            $chrome  = (new BrowserFactory($this->cache))->get('chrome', $useragent);
+            $chrome  = (new BrowserLoader($this->cache))->load('chrome', $useragent);
             $version = $chrome->getVersion();
 
             if (null !== $version) {
@@ -124,71 +130,6 @@ class EngineFactory implements FactoryInterface
             $engineKey = 'teleca';
         }
 
-        return $this->get($engineKey, $useragent);
-    }
-
-    /**
-     * @param string $engineKey
-     * @param string $useragent
-     *
-     * @return \UaResult\Engine\EngineInterface
-     */
-    public function get($engineKey, $useragent)
-    {
-        $cacheInitializedId = hash('sha512', 'engine-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
-
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
-        }
-
-        $cacheItem = $this->cache->getItem(hash('sha512', 'engine-cache-' . $engineKey));
-
-        if (!$cacheItem->isHit()) {
-            return new Engine('unknown', 'unknown', 'unknown', new Version(0));
-        }
-
-        $engine = $cacheItem->get();
-
-        $engineVersionClass = $engine->version->class;
-
-        if (!is_string($engineVersionClass)) {
-            $version = new Version(0);
-        } elseif ('VersionFactory' === $engineVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $engine->version->search);
-        } else {
-            /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $engineVersionClass($this->cache);
-            $version      = $versionClass->detectVersion($useragent);
-        }
-
-        return new Engine(
-            $engine->name,
-            $engine->manufacturer,
-            $engine->brand,
-            $version
-        );
-    }
-
-    /**
-     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
-     */
-    private function initCache(CacheItemInterface $cacheInitialized)
-    {
-        static $engines = null;
-
-        if (null === $engines) {
-            $engines = json_decode(file_get_contents(__DIR__ . '/../../data/engines.json'));
-        }
-
-        foreach ($engines as $engineKey => $engineData) {
-            $cacheItem = $this->cache->getItem(hash('sha512', 'engine-cache-' . $engineKey));
-            $cacheItem->set($engineData);
-
-            $this->cache->save($cacheItem);
-        }
-
-        $cacheInitialized->set(true);
-        $this->cache->save($cacheInitialized);
+        return $this->loader->load($engineKey, $useragent);
     }
 }

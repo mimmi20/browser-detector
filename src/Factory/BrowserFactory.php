@@ -31,14 +31,10 @@
 
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Bits\Browser as BrowserBits;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
-use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use UaBrowserType;
-use UaResult\Browser\Browser;
 use UaResult\Os\OsInterface;
+use BrowserDetector\Loader\LoaderInterface;
 
 /**
  * Browser detection class
@@ -57,11 +53,18 @@ class BrowserFactory implements FactoryInterface
     private $cache = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @var \BrowserDetector\Loader\LoaderInterface|null
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private $loader = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface       $cache
+     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     */
+    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->loader = $loader;
     }
 
     /**
@@ -1233,7 +1236,7 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'viralvideochart bot';
         } elseif (preg_match('/MetaHeadersBot/', $useragent)) {
             $browserKey = 'metaheadersbot';
-        } elseif (preg_match('/Zend\_Http\_Client/', $useragent)) {
+        } elseif (preg_match('/Zend_?Http_?Client/', $useragent)) {
             $browserKey = 'zend_http_client';
         } elseif (preg_match('/wget/i', $useragent)) {
             $browserKey = 'wget';
@@ -2295,91 +2298,6 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'youwave android on pc';
         }
 
-        return $this->get($browserKey, $useragent);
-    }
-
-    /**
-     * @param string $browserKey
-     * @param string $useragent
-     *
-     * @return \UaResult\Browser\Browser
-     */
-    public function get($browserKey, $useragent)
-    {
-        $cacheInitializedId = hash('sha512', 'browser-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
-
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
-        }
-
-        $engineFactory = new EngineFactory($this->cache);
-        $cacheItem     = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
-
-        if (!$cacheItem->isHit()) {
-            return new Browser(
-                'unknown',
-                'unknown',
-                'unknown',
-                new Version(0),
-                $engineFactory->get('unknown', $useragent),
-                new UaBrowserType\Unknown()
-            );
-        }
-
-        $browser = $cacheItem->get();
-
-        $browserVersionClass = $browser->version->class;
-
-        if (!is_string($browserVersionClass)) {
-            $version = new Version(0);
-        } elseif ('VersionFactory' === $browserVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $browser->version->search);
-        } else {
-            /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $browserVersionClass($this->cache);
-            $version      = $versionClass->detectVersion($useragent);
-        }
-
-        $typeClass = '\\UaBrowserType\\' . $browser->type;
-
-        return new Browser(
-            $browser->name,
-            $browser->manufacturer,
-            $browser->brand,
-            $version,
-            $engineFactory->get($browser->engine, $useragent),
-            new $typeClass(),
-            (new BrowserBits($useragent))->getBits(),
-            $browser->pdfSupport,
-            $browser->rssSupport,
-            $browser->canSkipAlignedLinkRow,
-            $browser->claimsWebSupport,
-            $browser->supportsEmptyOptionValues,
-            $browser->supportsBasicAuthentication,
-            $browser->supportsPostMethod
-        );
-    }
-
-    /**
-     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
-     */
-    private function initCache(CacheItemInterface $cacheInitialized)
-    {
-        static $browsers = null;
-
-        if (null === $browsers) {
-            $browsers = json_decode(file_get_contents(__DIR__ . '/../../data/browsers.json'));
-        }
-
-        foreach ($browsers as $browserKey => $browserData) {
-            $cacheItem = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
-            $cacheItem->set($browserData);
-
-            $this->cache->save($cacheItem);
-        }
-
-        $cacheInitialized->set(true);
-        $this->cache->save($cacheInitialized);
+        return $this->loader->load($browserKey, $useragent);
     }
 }

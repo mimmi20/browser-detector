@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Factory;
+use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Helper;
 use Psr\Cache\CacheItemPoolInterface;
 
@@ -49,11 +50,18 @@ class DesktopFactory implements Factory\FactoryInterface
     private $cache = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @var \BrowserDetector\Loader\LoaderInterface|null
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private $loader = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface       $cache
+     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     */
+    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->loader = $loader;
     }
 
     /**
@@ -99,6 +107,6 @@ class DesktopFactory implements Factory\FactoryInterface
             $deviceCode = 'linux desktop';
         }
 
-        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
+        return $this->loader->load($deviceCode, $useragent);
     }
 }

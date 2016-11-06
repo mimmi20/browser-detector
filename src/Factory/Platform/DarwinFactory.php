@@ -32,8 +32,8 @@
 namespace BrowserDetector\Factory\Platform;
 
 use BrowserDetector\Factory;
-use BrowserDetector\Factory\PlatformFactory;
 use Psr\Cache\CacheItemPoolInterface;
+use BrowserDetector\Loader\LoaderInterface;
 
 /**
  * Browser detection class
@@ -52,11 +52,18 @@ class DarwinFactory implements Factory\FactoryInterface
     private $cache = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @var \BrowserDetector\Loader\LoaderInterface|null
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private $loader = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface       $cache
+     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     */
+    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->loader = $loader;
     }
 
     /**
@@ -68,232 +75,230 @@ class DarwinFactory implements Factory\FactoryInterface
      */
     public function detect($useragent)
     {
-        $platformFactory = new PlatformFactory($this->cache);
-
         if (false !== strpos($useragent, 'CFNetwork/807')) {
-            return $platformFactory->get('mac os x', $useragent, '10.12');
+            return $this->loader->load('mac os x', $useragent, '10.12');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/802')) {
-            return $platformFactory->get('mac os x', $useragent, '10.12');
+            return $this->loader->load('mac os x', $useragent, '10.12');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/798')) {
-            return $platformFactory->get('mac os x', $useragent, '10.12');
+            return $this->loader->load('mac os x', $useragent, '10.12');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/796')) {
-            return $platformFactory->get('mac os x', $useragent, '10.12');
+            return $this->loader->load('mac os x', $useragent, '10.12');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/790')) {
-            return $platformFactory->get('ios', $useragent, '10.0');
+            return $this->loader->load('ios', $useragent, '10.0');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/760')) {
-            return $platformFactory->get('mac os x', $useragent, '10.11');
+            return $this->loader->load('mac os x', $useragent, '10.11');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/758')) {
-            return $platformFactory->get('ios', $useragent, '9.0');
+            return $this->loader->load('ios', $useragent, '9.0');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/757')) {
-            return $platformFactory->get('ios', $useragent, '9.0');
+            return $this->loader->load('ios', $useragent, '9.0');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/720')) {
-            return $platformFactory->get('mac os x', $useragent, '10.10');
+            return $this->loader->load('mac os x', $useragent, '10.10');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/718')) {
-            return $platformFactory->get('mac os x', $useragent, '10.10');
+            return $this->loader->load('mac os x', $useragent, '10.10');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/714')) {
-            return $platformFactory->get('mac os x', $useragent, '10.10');
+            return $this->loader->load('mac os x', $useragent, '10.10');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.5')) {
-            return $platformFactory->get('ios', $useragent, '8.4');
+            return $this->loader->load('ios', $useragent, '8.4');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.4')) {
-            return $platformFactory->get('ios', $useragent, '8.4');
+            return $this->loader->load('ios', $useragent, '8.4');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.3')) {
-            return $platformFactory->get('ios', $useragent, '8.3');
+            return $this->loader->load('ios', $useragent, '8.3');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.2')) {
-            return $platformFactory->get('ios', $useragent, '8.2');
+            return $this->loader->load('ios', $useragent, '8.2');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.1')) {
-            return $platformFactory->get('ios', $useragent, '8.1');
+            return $this->loader->load('ios', $useragent, '8.1');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.0')) {
-            return $platformFactory->get('ios', $useragent, '8.0');
+            return $this->loader->load('ios', $useragent, '8.0');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/709')) {
-            return $platformFactory->get('mac os x', $useragent, '10.10');
+            return $this->loader->load('mac os x', $useragent, '10.10');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/708')) {
-            return $platformFactory->get('mac os x', $useragent, '10.10');
+            return $this->loader->load('mac os x', $useragent, '10.10');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/705')) {
-            return $platformFactory->get('mac os x', $useragent, '10.10');
+            return $this->loader->load('mac os x', $useragent, '10.10');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/699')) {
-            return $platformFactory->get('mac os x', $useragent, '10.10');
+            return $this->loader->load('mac os x', $useragent, '10.10');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/696')) {
-            return $platformFactory->get('mac os x', $useragent, '10.10');
+            return $this->loader->load('mac os x', $useragent, '10.10');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/673')) {
-            return $platformFactory->get('mac os x', $useragent, '10.9');
+            return $this->loader->load('mac os x', $useragent, '10.9');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/672.1')) {
-            return $platformFactory->get('ios', $useragent, '7.1');
+            return $this->loader->load('ios', $useragent, '7.1');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/672.0')) {
-            return $platformFactory->get('ios', $useragent, '7.0');
+            return $this->loader->load('ios', $useragent, '7.0');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/647')) {
-            return $platformFactory->get('mac os x', $useragent, '10.9');
+            return $this->loader->load('mac os x', $useragent, '10.9');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/609.1')) {
-            return $platformFactory->get('ios', $useragent, '6.1');
+            return $this->loader->load('ios', $useragent, '6.1');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/609')) {
-            return $platformFactory->get('ios', $useragent, '6.0');
+            return $this->loader->load('ios', $useragent, '6.0');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/602')) {
-            return $platformFactory->get('ios', $useragent, '6.0');
+            return $this->loader->load('ios', $useragent, '6.0');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/596')) {
-            return $platformFactory->get('mac os x', $useragent, '10.8');
+            return $this->loader->load('mac os x', $useragent, '10.8');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/595')) {
-            return $platformFactory->get('mac os x', $useragent, '10.8');
+            return $this->loader->load('mac os x', $useragent, '10.8');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/561')) {
-            return $platformFactory->get('mac os x', $useragent, '10.8');
+            return $this->loader->load('mac os x', $useragent, '10.8');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/548.1')) {
-            return $platformFactory->get('ios', $useragent, '5.1');
+            return $this->loader->load('ios', $useragent, '5.1');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/548.0')) {
-            return $platformFactory->get('ios', $useragent, '5.0');
+            return $this->loader->load('ios', $useragent, '5.0');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/520')) {
-            return $platformFactory->get('mac os x', $useragent, '10.7');
+            return $this->loader->load('mac os x', $useragent, '10.7');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/515')) {
-            return $platformFactory->get('mac os x', $useragent, '10.7');
+            return $this->loader->load('mac os x', $useragent, '10.7');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/485.13')) {
-            return $platformFactory->get('ios', $useragent, '4.3');
+            return $this->loader->load('ios', $useragent, '4.3');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/485.12')) {
-            return $platformFactory->get('ios', $useragent, '4.2');
+            return $this->loader->load('ios', $useragent, '4.2');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/485.10')) {
-            return $platformFactory->get('ios', $useragent, '4.1');
+            return $this->loader->load('ios', $useragent, '4.1');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/485.2')) {
-            return $platformFactory->get('ios', $useragent, '4.0');
+            return $this->loader->load('ios', $useragent, '4.0');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/467.12')) {
-            return $platformFactory->get('ios', $useragent, '3.2');
+            return $this->loader->load('ios', $useragent, '3.2');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/459')) {
-            return $platformFactory->get('ios', $useragent, '3.1');
+            return $this->loader->load('ios', $useragent, '3.1');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/454')) {
-            return $platformFactory->get('mac os x', $useragent, '10.6');
+            return $this->loader->load('mac os x', $useragent, '10.6');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/438')) {
-            return $platformFactory->get('mac os x', $useragent, '10.5');
+            return $this->loader->load('mac os x', $useragent, '10.5');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/433')) {
-            return $platformFactory->get('mac os x', $useragent, '10.5');
+            return $this->loader->load('mac os x', $useragent, '10.5');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/422')) {
-            return $platformFactory->get('mac os x', $useragent, '10.5');
+            return $this->loader->load('mac os x', $useragent, '10.5');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/339')) {
-            return $platformFactory->get('mac os x', $useragent, '10.5');
+            return $this->loader->load('mac os x', $useragent, '10.5');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/330')) {
-            return $platformFactory->get('mac os x', $useragent, '10.5');
+            return $this->loader->load('mac os x', $useragent, '10.5');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/221')) {
-            return $platformFactory->get('mac os x', $useragent, '10.5');
+            return $this->loader->load('mac os x', $useragent, '10.5');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/220')) {
-            return $platformFactory->get('mac os x', $useragent, '10.5');
+            return $this->loader->load('mac os x', $useragent, '10.5');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/217')) {
-            return $platformFactory->get('mac os x', $useragent, '10.5');
+            return $this->loader->load('mac os x', $useragent, '10.5');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/129')) {
-            return $platformFactory->get('mac os x', $useragent, '10.4');
+            return $this->loader->load('mac os x', $useragent, '10.4');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/128')) {
-            return $platformFactory->get('mac os x', $useragent, '10.4');
+            return $this->loader->load('mac os x', $useragent, '10.4');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/4.0')) {
-            return $platformFactory->get('mac os x', $useragent, '10.3');
+            return $this->loader->load('mac os x', $useragent, '10.3');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/1.2')) {
-            return $platformFactory->get('mac os x', $useragent, '10.3');
+            return $this->loader->load('mac os x', $useragent, '10.3');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/1.1')) {
-            return $platformFactory->get('mac os x', $useragent, '10.3');
+            return $this->loader->load('mac os x', $useragent, '10.3');
         }
 
-        return $platformFactory->get('darwin', $useragent);
+        return $this->loader->load('darwin', $useragent);
     }
 }

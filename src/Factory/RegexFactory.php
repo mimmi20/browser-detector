@@ -31,6 +31,11 @@
 
 namespace BrowserDetector\Factory;
 
+use BrowserDetector\Loader\BrowserLoader;
+use BrowserDetector\Loader\DeviceLoader;
+use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Loader\PlatformLoader;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Yaml\Yaml;
@@ -127,20 +132,24 @@ class RegexFactory implements FactoryInterface
             return null;
         }
 
-        $deviceCode    = strtolower($this->match['devicecode']);
-        $deviceFactory = new DeviceFactory($this->cache);
+        $deviceCode   = strtolower($this->match['devicecode']);
+        $deviceLoader = new DeviceLoader($this->cache);
 
         if ('windows' === $deviceCode) {
-            return $deviceFactory->get('windows desktop', $this->useragent);
+            return $deviceLoader->load('windows desktop', $this->useragent);
         } elseif ('macintosh' === $deviceCode) {
-            return $deviceFactory->get('macintosh', $this->useragent);
+            return $deviceLoader->load('macintosh', $this->useragent);
         }
 
-        $device = $deviceFactory->get($deviceCode, $this->useragent);
+        try {
+            $device = $deviceLoader->load($deviceCode, $this->useragent);
 
-        if (!in_array($device->getDeviceName(), ['unknown', null])) {
-            $this->logger->debug('device detected via devicecode');
-            return $device;
+            if (!in_array($device->getDeviceName(), ['unknown', null])) {
+                $this->logger->debug('device detected via devicecode');
+                return $device;
+            }
+        } catch (NotFoundException $e) {
+            $this->logger->debug($e);
         }
 
         if (array_key_exists('manufacturercode', $this->match)) {
@@ -178,14 +187,14 @@ class RegexFactory implements FactoryInterface
             return null;
         }
 
-        $platformFactory = new DeviceFactory($this->cache);
+        $platformLoader = new PlatformLoader($this->cache);
 
         if (!array_key_exists('osname', $this->match)
             && array_key_exists('manufacturercode', $this->match)
             && 'blackberry' === strtolower($this->match['manufacturercode'])
         ) {
             $this->logger->debug('platform forced to rim os');
-            return $platformFactory->get('rim os', $this->useragent);
+            return $platformLoader->load('rim os', $this->useragent);
         }
 
         if (!array_key_exists('osname', $this->match)) {
@@ -196,14 +205,18 @@ class RegexFactory implements FactoryInterface
         $platformCode = strtolower($this->match['osname']);
 
         if ('darwin' === $platformCode) {
-            $darwinFactory = new Platform\DarwinFactory($this->cache);
+            $darwinFactory = new Platform\DarwinFactory($this->cache, $platformLoader);
             return $darwinFactory->detect($this->useragent);
         }
 
-        $platform = $platformFactory->get($platformCode, $this->useragent);
+        try {
+            $platform = $platformLoader->load($platformCode, $this->useragent);
 
-        if (!in_array($platform->getDeviceName(), ['unknown', null])) {
-            return $platform;
+            if (!in_array($platform->getName(), ['unknown', null])) {
+                return $platform;
+            }
+        } catch (NotFoundException $e) {
+            $this->logger->debug($e);
         }
 
         return null;
@@ -225,22 +238,26 @@ class RegexFactory implements FactoryInterface
         }
 
         $browserCode    = strtolower($this->match['browsername']);
-        $browserFactory = new BrowserFactory($this->cache);
+        $browserLoader = new BrowserLoader($this->cache);
 
         if ('safari' === $browserCode) {
             if (array_key_exists('osname', $this->match)) {
                 $osname = strtolower($this->match['osname']);
 
-                if ('blackberry' === $osname) {
-                    return $browserFactory->get('blackberry', $this->useragent);
-                }
-
                 if ('android' === $osname || 'linux' === $osname) {
-                    return $browserFactory->get('android webkit', $this->useragent);
+                    return $browserLoader->load('android webkit', $this->useragent);
                 }
 
                 if ('tizen' === $osname) {
-                    return $browserFactory->get('samsung browser', $this->useragent);
+                    return $browserLoader->load('samsung browser', $this->useragent);
+                }
+
+                if ('blackberry' === $osname) {
+                    return $browserLoader->load('blackberry', $this->useragent);
+                }
+
+                if ('symbian' === $osname || 'symbianos' === $osname) {
+                    return $browserLoader->load('android webkit', $this->useragent);
                 }
             }
 
@@ -248,15 +265,19 @@ class RegexFactory implements FactoryInterface
                 $devicemaker = strtolower($this->match['manufacturercode']);
 
                 if ('nokia' === $devicemaker) {
-                    return $browserFactory->get('nokia browser', $this->useragent);
+                    return $browserLoader->load('nokia browser', $this->useragent);
                 }
             }
         }
 
-        $browser = $browserFactory->get($browserCode, $this->useragent);
+        try {
+            $browser = $browserLoader->load($browserCode, $this->useragent);
 
-        if (!in_array($browser->getName(), ['unknown', null])) {
-            return $browser;
+            if (!in_array($browser->getName(), ['unknown', null])) {
+                return $browser;
+            }
+        } catch (NotFoundException $e) {
+            $this->logger->debug($e);
         }
 
         return null;
@@ -277,11 +298,11 @@ class RegexFactory implements FactoryInterface
             return null;
         }
 
-        $engineCode    = strtolower($this->match['enginename']);
-        $engineFactory = new EngineFactory($this->cache);
+        $engineCode   = strtolower($this->match['enginename']);
+        $engineLoader = new EngineLoader($this->cache);
 
         if ('cfnetwork' === $engineCode) {
-            return $engineFactory->get('webkit', $this->useragent);
+            return $engineLoader->load('webkit', $this->useragent);
         }
 
         if (in_array($engineCode, ['applewebkit', 'webkit'])) {
@@ -298,10 +319,14 @@ class RegexFactory implements FactoryInterface
             }
         }
 
-        $engine = $engineFactory->get($engineCode, $this->useragent);
+        try {
+            $engine = $engineLoader->load($engineCode, $this->useragent);
 
-        if (!in_array($engine->getName(), ['unknown', null])) {
-            return $engine;
+            if (!in_array($engine->getName(), ['unknown', null])) {
+                return $engine;
+            }
+        } catch (NotFoundException $e) {
+            $this->logger->debug($e);
         }
 
         return null;

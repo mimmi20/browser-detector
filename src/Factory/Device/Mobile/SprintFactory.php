@@ -32,6 +32,7 @@
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
+use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
 
 /**
@@ -48,11 +49,18 @@ class SprintFactory implements Factory\FactoryInterface
     private $cache = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @var \BrowserDetector\Loader\LoaderInterface|null
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private $loader = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface       $cache
+     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     */
+    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->loader = $loader;
     }
 
     /**
@@ -72,6 +80,6 @@ class SprintFactory implements Factory\FactoryInterface
             $deviceCode = 'sprint 9292';
         }
 
-        return (new Factory\DeviceFactory($this->cache))->get($deviceCode, $useragent);
+        return $this->loader->load($deviceCode, $useragent);
     }
 }

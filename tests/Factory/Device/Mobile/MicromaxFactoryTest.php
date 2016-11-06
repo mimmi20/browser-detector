@@ -3,6 +3,7 @@
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
 use BrowserDetector\Factory\Device\Mobile\MicromaxFactory;
+use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
@@ -25,7 +26,8 @@ class MicromaxFactoryTest extends \PHPUnit_Framework_TestCase
     {
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
-        $this->object = new MicromaxFactory($cache);
+        $loader       = new DeviceLoader($cache);
+        $this->object = new MicromaxFactory($cache, $loader);
     }
 
     /**

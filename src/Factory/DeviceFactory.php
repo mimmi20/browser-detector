@@ -34,11 +34,9 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
-use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
+use BrowserDetector\Loader\LoaderInterface;
 
 /**
  * Device detection class
@@ -57,11 +55,18 @@ class DeviceFactory implements FactoryInterface
     private $cache = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @var \BrowserDetector\Loader\LoaderInterface|null
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private $loader = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface       $cache
+     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     */
+    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->loader = $loader;
     }
 
     /**
@@ -78,110 +83,21 @@ class DeviceFactory implements FactoryInterface
         if (!$s->containsAny(['freebsd', 'raspbian'], false)
             && $s->containsAny(['darwin', 'cfnetwork'], false)
         ) {
-            return (new Device\DarwinFactory($this->cache))->detect($useragent);
+            return (new Device\DarwinFactory($this->cache, $this->loader))->detect($useragent);
         }
 
         if ((new MobileDevice($useragent))->isMobile()) {
-            return (new Device\MobileFactory($this->cache))->detect($useragent);
+            return (new Device\MobileFactory($this->cache, $this->loader))->detect($useragent);
         }
 
         if ((new TvHelper($useragent))->isTvDevice()) {
-            return (new Device\TvFactory($this->cache))->detect($useragent);
+            return (new Device\TvFactory($this->cache, $this->loader))->detect($useragent);
         }
 
         if ((new Desktop($useragent))->isDesktopDevice()) {
-            return (new Device\DesktopFactory($this->cache))->detect($useragent);
+            return (new Device\DesktopFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        return $this->get('unknown', $useragent);
-    }
-
-    /**
-     * @param string $deviceKey
-     * @param string $useragent
-     *
-     * @return \UaResult\Device\DeviceInterface
-     */
-    public function get($deviceKey, $useragent)
-    {
-        $cacheInitializedId = hash('sha512', 'device-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
-
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
-        }
-
-        $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
-
-        if (!$cacheItem->isHit()) {
-            return new \UaResult\Device\Device('unknown', 'unknown', 'unknown', 'unknown', new Version(0));
-        }
-
-        $device = $cacheItem->get();
-
-        if (!isset($device->version->class)) {
-            $version = null;
-        } else {
-            $deviceVersionClass = $device->version->class;
-
-            if (!is_string($deviceVersionClass)) {
-                $version = new Version(0);
-            } elseif ('VersionFactory' === $deviceVersionClass) {
-                $version = VersionFactory::detectVersion($useragent, $device->version->search);
-            } else {
-                /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-                $versionClass = new $deviceVersionClass($this->cache);
-                $version      = $versionClass->detectVersion($useragent);
-            }
-        }
-
-        $typeClass   = '\\UaDeviceType\\' . $device->type;
-        $platformKey = $device->platform;
-
-        if (null === $platformKey) {
-            $platform = null;
-        } else {
-            $platform = (new PlatformFactory($this->cache))->get($platformKey, $useragent);
-        }
-
-        return new \UaResult\Device\Device(
-            $device->codename,
-            $device->marketingName,
-            $device->manufacturer,
-            $device->brand,
-            $version,
-            $platform,
-            new $typeClass(),
-            $device->pointingMethod,
-            (int) $device->resolutionWidth,
-            (int) $device->resolutionHeight,
-            (bool) $device->dualOrientation,
-            (int) $device->colors,
-            (bool) $device->smsSupport,
-            (bool) $device->nfcSupport,
-            (bool) $device->hasQwertyKeyboard
-        );
-    }
-
-    /**
-     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
-     */
-    private function initCache(CacheItemInterface $cacheInitialized)
-    {
-        static $devices = null;
-
-        if (null === $devices) {
-            $devices = json_decode(file_get_contents(__DIR__ . '/../../data/devices.json'));
-        }
-
-        foreach ($devices as $deviceKey => $deviceData) {
-            $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
-            $cacheItem->set($deviceData);
-
-            $this->cache->save($cacheItem);
-        }
-
-        $cacheInitialized->set(true);
-        $this->cache->save($cacheInitialized);
+        return $this->loader->load('unknown', $useragent);
     }
 }
