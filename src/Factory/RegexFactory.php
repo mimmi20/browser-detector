@@ -36,7 +36,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
-use Psr\Cache\CacheItemInterface;
+use BrowserDetector\Loader\RegexLoader;
 use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Yaml\Yaml;
 use Psr\Log\LoggerInterface;
@@ -75,6 +75,11 @@ class RegexFactory implements FactoryInterface
     private $logger = null;
 
     /**
+     * @var \BrowserDetector\Loader\RegexLoader
+     */
+    private $loader = null;
+
+    /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
      * @param \Psr\Log\LoggerInterface          $logger
      */
@@ -82,6 +87,7 @@ class RegexFactory implements FactoryInterface
     {
         $this->cache  = $cache;
         $this->logger = $logger;
+        $this->loader = new RegexLoader($cache, $logger);
     }
 
     /**
@@ -90,17 +96,19 @@ class RegexFactory implements FactoryInterface
      * @param string $useragent
      *
      * @return array|null|false
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \BrowserDetector\Factory\Regex\NoMatchException
      */
     public function detect($useragent)
     {
-        $regexes = $this->getRegexes();
+        $regexes = $this->loader->getRegexes();
 
         $this->match = null;
         $this->useragent = $useragent;
 
         if (!is_array($regexes)) {
-            $this->logger->debug('no regexes are defined');
-            return null;
+            throw new \InvalidArgumentException('no regexes are defined');
         }
 
         foreach ($regexes as $regex) {
@@ -113,8 +121,7 @@ class RegexFactory implements FactoryInterface
             }
         }
 
-        $this->logger->debug('no regex did match');
-        return false;
+        throw new Regex\NoMatchException('no regex did match');
     }
 
     /**
@@ -178,7 +185,7 @@ class RegexFactory implements FactoryInterface
     }
 
     /**
-     * @return null
+     * @return \UaResult\Os\OsInterface|null
      */
     public function getPlatform()
     {
@@ -223,7 +230,7 @@ class RegexFactory implements FactoryInterface
     }
 
     /**
-     * @return null
+     * @return \UaResult\Browser\BrowserInterface|null
      */
     public function getBrowser()
     {
@@ -284,7 +291,7 @@ class RegexFactory implements FactoryInterface
     }
 
     /**
-     * @return null
+     * @return \UaResult\Engine\EngineInterface|null
      */
     public function getEngine()
     {
@@ -330,50 +337,5 @@ class RegexFactory implements FactoryInterface
         }
 
         return null;
-    }
-
-    /**
-     * @return array|null
-     */
-    public function getRegexes()
-    {
-        $cacheInitializedId = hash('sha512', 'regex-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
-
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
-        }
-
-        $cacheItem = $this->cache->getItem(hash('sha512', 'regex-cache'));
-
-        if (!$cacheItem->isHit()) {
-            return null;
-        }
-
-        return $cacheItem->get();
-    }
-
-    /**
-     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
-     */
-    private function initCache(CacheItemInterface $cacheInitialized)
-    {
-        static $regexes = null;
-
-        if (null === $regexes) {
-            $regexes = Yaml::parse(file_get_contents(__DIR__ . '/../../data/regexes.yaml'));
-        }
-
-        if (!isset($regexes['regexes']) || !is_array($regexes['regexes'])) {
-            return null;
-        }
-
-        $cacheItem = $this->cache->getItem(hash('sha512', 'regex-cache'));
-        $cacheItem->set($regexes['regexes']);
-
-        $this->cache->save($cacheItem);
-
-        $cacheInitialized->set(true);
-        $this->cache->save($cacheInitialized);
     }
 }

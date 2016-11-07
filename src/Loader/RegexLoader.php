@@ -31,16 +31,18 @@
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Bits\Browser as BrowserBits;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Loader\BrowserLoader;
+use BrowserDetector\Loader\DeviceLoader;
+use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Loader\PlatformLoader;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
-use UaBrowserType;
-use UaResult\Browser\Browser;
+use Symfony\Component\Yaml\Yaml;
+use Psr\Log\LoggerInterface;
 
 /**
- * Browser detection class
+ * detection class using regexes
  *
  * @category  BrowserDetector
  *
@@ -48,7 +50,7 @@ use UaResult\Browser\Browser;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BrowserLoader implements LoaderInterface
+class RegexLoader
 {
     /**
      * @var \Psr\Cache\CacheItemPoolInterface|null
@@ -56,87 +58,74 @@ class BrowserLoader implements LoaderInterface
     private $cache = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @var array|null
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private $match = null;
+
+    /**
+     * @var string|null
+     */
+    private $useragent = null;
+
+    /**
+     * an logger instance
+     *
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger = null;
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @param \Psr\Log\LoggerInterface          $logger
+     */
+    public function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->logger = $logger;
     }
 
     /**
-     * @param string $browserKey
-     * @param string $useragent
-     *
-     * @return \UaResult\Browser\BrowserInterface
+     * @return array|null
      * @throws \BrowserDetector\Loader\NotFoundException
      */
-    public function load($browserKey, $useragent)
+    public function getRegexes()
     {
-        $cacheInitializedId = hash('sha512', 'browser-cache is initialized');
+        $cacheInitializedId = hash('sha512', 'regex-cache is initialized');
         $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
 
         if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
             $this->initCache($cacheInitialized);
         }
 
-        $engineLoader = new EngineLoader($this->cache);
-        $cacheItem    = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
+        $cacheItem = $this->cache->getItem(hash('sha512', 'regex-cache'));
 
         if (!$cacheItem->isHit()) {
-            throw new NotFoundException('the browser with key "' . $browserKey . '" was not found');
+            throw new NotFoundException('no regexes are found');
         }
 
-        $browser = $cacheItem->get();
-
-        $browserVersionClass = $browser->version->class;
-
-        if (!is_string($browserVersionClass)) {
-            $version = new Version(0);
-        } elseif ('VersionFactory' === $browserVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $browser->version->search);
-        } else {
-            /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $browserVersionClass($this->cache);
-            $version      = $versionClass->detectVersion($useragent);
-        }
-
-        $typeClass = '\\UaBrowserType\\' . $browser->type;
-
-        return new Browser(
-            $browser->name,
-            $browser->manufacturer,
-            $browser->brand,
-            $version,
-            $engineLoader->load($browser->engine, $useragent),
-            new $typeClass(),
-            (new BrowserBits($useragent))->getBits(),
-            $browser->pdfSupport,
-            $browser->rssSupport,
-            $browser->canSkipAlignedLinkRow,
-            $browser->claimsWebSupport,
-            $browser->supportsEmptyOptionValues,
-            $browser->supportsBasicAuthentication,
-            $browser->supportsPostMethod
-        );
+        return $cacheItem->get();
     }
 
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
+     * @throws \BrowserDetector\Loader\NotFoundException
      */
     private function initCache(CacheItemInterface $cacheInitialized)
     {
-        static $browsers = null;
+        static $regexes = null;
 
-        if (null === $browsers) {
-            $browsers = json_decode(file_get_contents(__DIR__ . '/../../data/browsers.json'));
+        if (null === $regexes) {
+            $regexes = Yaml::parse(file_get_contents(__DIR__ . '/../../data/regexes.yaml'));
         }
 
-        foreach ($browsers as $browserKey => $browserData) {
-            $cacheItem = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
-            $cacheItem->set($browserData);
-
-            $this->cache->save($cacheItem);
+        if (!isset($regexes['regexes']) || !is_array($regexes['regexes'])) {
+            throw new NotFoundException('no regexes are defined in the regexes.yaml file');
         }
+
+        $cacheItem = $this->cache->getItem(hash('sha512', 'regex-cache'));
+        $cacheItem->set($regexes['regexes']);
+
+        $this->cache->save($cacheItem);
 
         $cacheInitialized->set(true);
         $this->cache->save($cacheInitialized);

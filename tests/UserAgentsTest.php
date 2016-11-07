@@ -157,7 +157,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedDeviceName,
             $foundDeviceName,
-            'Expected actual "Device_Name" to be "' . $expectedDeviceName . '" (was "' . $foundDeviceName . '" [class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Device_Name" to be "' . $expectedDeviceName . '" (was "' . $foundDeviceName . '")'
         );
 
         static::assertArrayHasKey(
@@ -175,7 +175,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedDeviceMaker,
             $foundDeviceMaker,
-            'Expected actual "Device_Maker" to be "' . $expectedDeviceMaker . '" (was "' . $foundDeviceMaker . '" [class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Device_Maker" to be "' . $expectedDeviceMaker . '" (was "' . $foundDeviceMaker . '")'
         );
         /**/
 
@@ -205,7 +205,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedDeviceCodeName,
             $foundDeviceCodeName,
-            'Expected actual "Device_Code_Name" to be "' . $expectedDeviceCodeName . '" (was "' . $foundDeviceCodeName . '" [class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Device_Code_Name" to be "' . $expectedDeviceCodeName . '" (was "' . $foundDeviceCodeName . '")'
         );
 
         static::assertArrayHasKey(
@@ -223,7 +223,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedDeviceBrand,
             $foundDeviceBrand,
-            'Expected actual "Device_Brand_Name" to be "' . $expectedDeviceBrand . '" (was "' . $foundDeviceBrand . '" [class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Device_Brand_Name" to be "' . $expectedDeviceBrand . '" (was "' . $foundDeviceBrand . '")'
         );
         /**/
 
@@ -239,7 +239,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedDeviceOrientation,
             $foundDeviceOrientation,
-            'Expected actual "Device_Dual_Orientation" to be "' . $expectedDeviceOrientation . '" (was "' . $foundDeviceOrientation . '" [class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Device_Dual_Orientation" to be "' . $expectedDeviceOrientation . '" (was "' . $foundDeviceOrientation . '")'
         );
 
         static::assertArrayHasKey(
@@ -256,7 +256,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedPlatformCodename,
             $foundPlatformCodename,
-            'Expected actual "Platform_Codename" to be "' . $expectedPlatformCodename . '" (was "' . $foundPlatformCodename . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Platform_Codename" to be "' . $expectedPlatformCodename . '" (was "' . $foundPlatformCodename . '")'
         );
 
         static::assertArrayHasKey(
@@ -273,7 +273,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedPlatformMarketingname,
             $foundPlatformMarketingname,
-            'Expected actual "Platform_Marketingname" to be "' . $expectedPlatformMarketingname . '" (was "' . $foundPlatformMarketingname . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Platform_Marketingname" to be "' . $expectedPlatformMarketingname . '" (was "' . $foundPlatformMarketingname . '")'
         );
 
         static::assertArrayHasKey(
@@ -290,7 +290,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedPlatformMaker,
             $foundPlatformMaker,
-            'Expected actual "Platform_Codename" to be "' . $expectedPlatformMaker . '" (was "' . $foundPlatformMaker . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Platform_Codename" to be "' . $expectedPlatformMaker . '" (was "' . $foundPlatformMaker . '")'
         );
 
         static::assertArrayHasKey(
@@ -307,7 +307,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedPlatformBits,
             $foundPlatformBits,
-            'Expected actual "Platform_Bits" to be "' . $expectedPlatformBits . '" (was "' . $foundPlatformBits . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Platform_Bits" to be "' . $expectedPlatformBits . '" (was "' . $foundPlatformBits . '")'
         );
 
         static::assertArrayHasKey(
@@ -324,7 +324,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedPlatformVersion,
             $foundPlatformVersion->getVersion(),
-            'Expected actual "Platform_Version" to be "' . $expectedPlatformVersion . '" (was "' . $foundPlatformVersion->getVersion() . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Platform_Version" to be "' . $expectedPlatformVersion . '" (was "' . $foundPlatformVersion->getVersion() . '")'
         );
 
         static::assertArrayHasKey(
