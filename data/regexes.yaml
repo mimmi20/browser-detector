@@ -6,11 +6,9 @@ regexes:
     # IE Mobile 11
     - '/^Mozilla\/[\d.]+ ?\((?P<devicetype>Mobile)?;? ?(?P<osname>Windows Phone( OS)?) ?(?P<osversion>[\d.]+); .*(?P<enginename>Trident)\/(?P<engineversion>[\d.+ab]+); Touch; rv:([\d.]+); (.*)?(?P<browsername>IEMobile)\/(?P<browserversion>[\d.+ab]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox)?;? ?(?P<devicecode>[^;\)]+)?([^\)]+)?\)(?P<unknown>.*)?$/i'
     # IE Mobile 11 (Desktop Mode)
-    - '/^Mozilla\/[\d.]+ ?\((?P<osname>Windows NT) ?(?P<osversion>[\d.]+); .*(?P<enginename>Trident)\/(?P<engineversion>[\d.+ab]+); Touch; rv:([\d.]+)(; ARM)?(; Touch)?;? ?(?P<devicetype>WPDesktop)?;? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox)?;? ?(?P<devicecode>[^;\)]+)?([^\)]+)?\)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\((?P<osname>Windows NT( ?[\d.]+)?); .*(?P<enginename>Trident)\/(?P<engineversion>[\d.+ab]+); Touch; rv:([\d.]+)(; ARM)?(; Touch)?;? ?(?P<devicetype>WPDesktop)?;? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox)?;? ?(?P<devicecode>[^;\)]+)?([^\)]+)?\)(?P<unknown>.*)?$/i'
     # IE Mobile 6-10
     - '/^Mozilla\/[\d.]+ ?\(compatible; MSIE ?[\d.+b]+; ?(.*)? ?(?P<osname>Windows Phone( OS)?) ?(?P<osversion>[\d.]+); (?P<enginename>Trident)?\/?(?P<engineversion>[\d.+ab]+)?; (?P<browsername>IEMobile)\/(?P<browserversion>[\d.+ab]+)(; ARM)?(; Touch)?;? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox)?;? ?(?P<devicecode>[^;\)]+)?([^\)]+)?\)(?P<unknown>.*)?$/i'
-    # IE Mobile 6-10 (Desktop Mode)
-    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>MSIE) ?(?P<browserversion>[\d.+b]+); ?(.*)? ?(?P<osname>Windows NT) ?(?P<osversion>[\d.]+); (?P<enginename>Trident)?\/?(?P<engineversion>[\d.+ab]+)?(; ARM)?(; Touch)?;? ?(?P<devicetype>WPDesktop)?;? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox)?;? ?(?P<devicecode>[^;\)]+)?([^\)]+)?\)(?P<unknown>.*)?$/i'
     ####################################################################################################################
     # Android OS
     # Opera Mobile (Chrome based)
