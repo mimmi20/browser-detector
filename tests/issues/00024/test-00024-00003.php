@@ -1586,7 +1586,7 @@ return [
             'Device_Maker'            => 'SonyEricsson',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => null,
+            'Device_Dual_Orientation' => false,
             'Device_Code_Name'        => 'SO-01C',
             'Device_Brand_Name'       => 'SonyEricsson',
             'RenderingEngine_Name'    => 'WebKit',

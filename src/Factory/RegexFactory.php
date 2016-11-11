@@ -216,6 +216,11 @@ class RegexFactory implements FactoryInterface
             return $darwinFactory->detect($this->useragent);
         }
 
+        if ('linux' === $platformCode && array_key_exists('devicecode', $this->match)) {
+            // Android Desktop Mode
+            $platformCode = 'android';
+        }
+
         try {
             $platform = $platformLoader->load($platformCode, $this->useragent);
 

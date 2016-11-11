@@ -1856,7 +1856,7 @@ return [
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => null,
+            'Device_Dual_Orientation' => false,
             'Device_Code_Name'        => 'SGH-T839',
             'Device_Brand_Name'       => 'Samsung',
             'RenderingEngine_Name'    => 'WebKit',

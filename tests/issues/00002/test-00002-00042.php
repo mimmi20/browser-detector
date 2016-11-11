@@ -1883,7 +1883,7 @@ return [
             'Device_Maker'            => 'BEWATEC Kommunikationstechnik GmbH',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => null,
+            'Device_Dual_Orientation' => false,
             'Device_Code_Name'        => 'MediPaD',
             'Device_Brand_Name'       => 'BEWATEC',
             'RenderingEngine_Name'    => 'Blink',

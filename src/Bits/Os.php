@@ -60,7 +60,7 @@ class Os
      */
     public function __construct($useragent)
     {
-        if (!is_string($useragent) || null === $useragent || '' === $useragent) {
+        if (!is_string($useragent) || null === $useragent) {
             throw new \UnexpectedValueException(
                 'The useragent parameter is required in this function'
             );
