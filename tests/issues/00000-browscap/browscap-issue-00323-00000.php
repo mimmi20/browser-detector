@@ -226,7 +226,7 @@ return [
             'Browser_Maker'           => 'Amazon.com, Inc.',
             'Browser_Modus'           => 'Desktop Mode',
             'Browser_Version'         => '1.0',
-            'Platform_Codename'       => 'Mac OS X',
+            'Platform_Codename'       => 'Android',
             'Platform_Marketingname'  => 'Mac OS X',
             'Platform_Version'        => '10.6.3',
             'Platform_Bits'           => 32,

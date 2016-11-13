@@ -145,7 +145,7 @@ return [
             'Browser_Maker'           => 'Nokia',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '5.0',
-            'Platform_Codename'       => 'Java',
+            'Platform_Codename'       => 'Nokia OS',
             'Platform_Marketingname'  => 'Java',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,

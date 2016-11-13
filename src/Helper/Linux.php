@@ -103,6 +103,7 @@ class Linux
             'fedora',
             'mint',
             'redhat',
+            'red hat',
             'slackware',
             'zenwalk gnu',
             'xentos',

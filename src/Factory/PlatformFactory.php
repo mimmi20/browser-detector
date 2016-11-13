@@ -127,18 +127,8 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'sailfishos';
         } elseif (preg_match('/(android; linux arm)/i', $agent)) {
             $platformCode = 'android';
-        } elseif ($s->contains('Debian APT-HTTP')) {
-            $platformCode = 'debian';
-        } elseif ($s->contains('linux mint', false)) {
-            $platformCode = 'linux mint';
-        } elseif ($s->contains('kubuntu', false)) {
-            $platformCode = 'kubuntu';
-        } elseif ($s->contains('ubuntu', false)) {
-            $platformCode = 'ubuntu';
-        } elseif ($s->contains('fedora', false)) {
-            $platformCode = 'fedora linux';
-        } elseif ($s->containsAny(['redhat', 'red hat'], false)) {
-            $platformCode = 'redhat linux';
+        } elseif ($s->containsAny(['debian apt-http', 'linux mint', 'ubuntu', 'fedora', 'redhat', 'red hat', 'kfreebsd', 'centos', 'mandriva', 'suse', 'gentoo', 'slackware', 'ventana', 'moblin'], false)) {
+            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($agent);
         } elseif (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $agent)) {
             $platformCode = 'linux smartphone os (maemo)';
         } elseif (preg_match('/(BlackBerry|BB10)/', $agent)) {
@@ -149,8 +139,6 @@ class PlatformFactory implements FactoryInterface
             $platformCode = 'tizen';
         } elseif ((new Helper\FirefoxOs($agent))->isFirefoxOs()) {
             $platformCode = 'firefoxos';
-        } elseif ($s->containsAll(['freebsd', 'kfreebsd'], false)) {
-            $platformCode = 'debian with freebsd kernel';
         } elseif ($s->contains('freebsd', false)) {
             $platformCode = 'freebsd';
         } elseif ($s->containsAny(['darwin', 'cfnetwork'], false)) {
@@ -176,31 +164,13 @@ class PlatformFactory implements FactoryInterface
         ) {
             $platformCode = 'macintosh';
         } elseif (preg_match('/(de|rasp)bian/i', $agent)) {
-            $platformCode = 'debian';
+            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($agent);
         } elseif (preg_match('/(Macintosh|Mac OS X)/', $agent)) {
             $platformCode = 'mac os x';
         } elseif ($s->containsAny(['RIM Tablet'])) {
             $platformCode = 'rim tablet os';
-        } elseif ($s->contains('centos', false)) {
-            $platformCode = 'cent os linux';
-        } elseif ($s->contains('CrOS')) {
-            $platformCode = 'chromeos';
-        } elseif ($s->contains('Joli OS')) {
-            $platformCode = 'joli os';
-        } elseif ($s->contains('mandriva', false)) {
-            $platformCode = 'mandriva linux';
-        } elseif ($s->contains('suse', false)) {
-            $platformCode = 'suse linux';
-        } elseif ($s->contains('gentoo', false)) {
-            $platformCode = 'gentoo linux';
-        } elseif ($s->contains('slackware', false)) {
-            $platformCode = 'slackware linux';
-        } elseif ($s->contains('ventana', false)) {
-            $platformCode = 'ventana linux';
-        } elseif ($s->contains('moblin', false)) {
-            $platformCode = 'moblin';
-        } elseif ($s->contains('Zenwalk GNU')) {
-            $platformCode = 'zenwalk gnu linux';
+        } elseif ($s->containsAny(['CrOS', 'Joli OS', 'Zenwalk GNU'])) {
+            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($agent);
         } elseif ($s->contains('AIX')) {
             $platformCode = 'aix';
         } elseif ($s->contains('AmigaOS')) {
@@ -238,7 +208,7 @@ class PlatformFactory implements FactoryInterface
         } elseif ($s->containsAny(['os/2', 'warp'], false)) {
             $platformCode = 'os/2';
         } elseif ((new Helper\Linux($agent))->isLinux()) {
-            $platformCode = 'linux';
+            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($agent);
         } elseif ($s->contains('CP/M')) {
             $platformCode = 'cp/m';
         } elseif ($s->containsAny(['Nintendo Wii', 'Nintendo 3DS'])) {

@@ -38,6 +38,7 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Loader\RegexLoader;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 use Symfony\Component\Yaml\Yaml;
 use Psr\Log\LoggerInterface;
 
@@ -146,6 +147,11 @@ class RegexFactory implements FactoryInterface
             return $deviceLoader->load('windows desktop', $this->useragent);
         } elseif ('macintosh' === $deviceCode) {
             return $deviceLoader->load('macintosh', $this->useragent);
+        } elseif ('touch' === $deviceCode
+            && array_key_exists('osname', $this->match)
+            && 'bb10' === strtolower($this->match['osname'])
+        ) {
+            return $deviceLoader->load('z10', $this->useragent);
         }
 
         try {
@@ -216,9 +222,25 @@ class RegexFactory implements FactoryInterface
             return $darwinFactory->detect($this->useragent);
         }
 
+        $s = new Stringy($this->useragent);
+
         if ('linux' === $platformCode && array_key_exists('devicecode', $this->match)) {
             // Android Desktop Mode
             $platformCode = 'android';
+        } elseif ('adr' === $platformCode) {
+            // Android Desktop Mode with UCBrowser
+            $platformCode = 'android';
+        } elseif ('linux' === $platformCode && $s->containsAll(['opera mini', 'ucbrowser'], false)) {
+            // Android Desktop Mode with UCBrowser
+            $platformCode = 'android';
+        } elseif ('linux' === $platformCode) {
+            $linuxFactory = new Platform\LinuxFactory($this->cache, $platformLoader);
+            return $linuxFactory->detect($this->useragent);
+        }
+
+        if (false !== strpos($platformCode, 'windows nt') && array_key_exists('devicetype', $this->match)) {
+            // Windows Phone Desktop Mode
+            $platformCode = 'windows phone os';
         }
 
         try {
