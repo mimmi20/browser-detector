@@ -135,7 +135,7 @@ class RegexFactory implements FactoryInterface
             return null;
         }
 
-        if (!array_key_exists('devicecode', $this->match)) {
+        if (!array_key_exists('devicecode', $this->match) || '' === $this->match['devicecode']) {
             $this->logger->debug('device not detected via regexes');
             return null;
         }
@@ -162,7 +162,7 @@ class RegexFactory implements FactoryInterface
                 return $device;
             }
         } catch (NotFoundException $e) {
-            $this->logger->debug($e);
+            $this->logger->error($e);
         }
 
         if (array_key_exists('manufacturercode', $this->match)) {
@@ -210,7 +210,7 @@ class RegexFactory implements FactoryInterface
             return $platformLoader->load('rim os', $this->useragent);
         }
 
-        if (!array_key_exists('osname', $this->match)) {
+        if (!array_key_exists('osname', $this->match) || '' === $this->match['osname']) {
             $this->logger->debug('platform not detected via regexes');
             return null;
         }
@@ -250,7 +250,7 @@ class RegexFactory implements FactoryInterface
                 return $platform;
             }
         } catch (NotFoundException $e) {
-            $this->logger->debug($e);
+            $this->logger->error($e);
         }
 
         return null;
@@ -266,13 +266,17 @@ class RegexFactory implements FactoryInterface
             return null;
         }
 
-        if (!array_key_exists('browsername', $this->match)) {
+        if (!array_key_exists('browsername', $this->match) || '' === $this->match['browsername']) {
             $this->logger->debug('browser not detected via regexes');
             return null;
         }
 
         $browserCode    = strtolower($this->match['browsername']);
         $browserLoader = new BrowserLoader($this->cache);
+
+        if ('opr' === $browserCode) {
+            $browserCode = 'opera';
+        }
 
         if ('safari' === $browserCode) {
             if (array_key_exists('osname', $this->match)) {
@@ -311,7 +315,7 @@ class RegexFactory implements FactoryInterface
                 return $browser;
             }
         } catch (NotFoundException $e) {
-            $this->logger->debug($e);
+            $this->logger->error($e);
         }
 
         return null;
@@ -327,7 +331,7 @@ class RegexFactory implements FactoryInterface
             return null;
         }
 
-        if (!array_key_exists('enginename', $this->match)) {
+        if (!array_key_exists('enginename', $this->match) || '' === $this->match['enginename']) {
             $this->logger->debug('engine not detected via regexes');
             return null;
         }
@@ -360,7 +364,7 @@ class RegexFactory implements FactoryInterface
                 return $engine;
             }
         } catch (NotFoundException $e) {
-            $this->logger->debug($e);
+            $this->logger->error($e);
         }
 
         return null;
