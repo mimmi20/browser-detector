@@ -34,7 +34,6 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\EngineLoader;
-use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Loader\RegexLoader;
 use Psr\Cache\CacheItemPoolInterface;
@@ -154,15 +153,25 @@ class RegexFactory implements FactoryInterface
             return $deviceLoader->load('z10', $this->useragent);
         }
 
-        try {
+        if (array_key_exists('manufacturercode', $this->match)) {
+            $manufacturercode = strtolower($this->match['manufacturercode']);
+        } else {
+            $manufacturercode = '';
+        }
+
+        if ($deviceLoader->has($manufacturercode . ' ' . $deviceCode)) {
+            return $deviceLoader->load($manufacturercode . ' ' . $deviceCode, $this->useragent);
+        }
+
+        if ($deviceLoader->has($deviceCode)) {
             $device = $deviceLoader->load($deviceCode, $this->useragent);
 
             if (!in_array($device->getDeviceName(), ['unknown', null])) {
                 $this->logger->debug('device detected via devicecode');
                 return $device;
             }
-        } catch (NotFoundException $e) {
-            $this->logger->error($e);
+
+            $this->logger->info('device with code "' . $deviceCode . '" not found via regexes');
         }
 
         if (array_key_exists('manufacturercode', $this->match)) {
@@ -236,21 +245,26 @@ class RegexFactory implements FactoryInterface
         } elseif ('linux' === $platformCode) {
             $linuxFactory = new Platform\LinuxFactory($this->cache, $platformLoader);
             return $linuxFactory->detect($this->useragent);
+        } elseif ('bb10' === $platformCode || 'blackberry' === $platformCode) {
+            // Rim OS
+            $platformCode = 'rim os';
+        } elseif ('cros' === $platformCode) {
+            $platformCode = 'chromeos';
         }
 
         if (false !== strpos($platformCode, 'windows nt') && array_key_exists('devicetype', $this->match)) {
             // Windows Phone Desktop Mode
-            $platformCode = 'windows phone os';
+            $platformCode = 'windows phone';
         }
 
-        try {
+        if ($platformLoader->has($platformCode)) {
             $platform = $platformLoader->load($platformCode, $this->useragent);
 
             if (!in_array($platform->getName(), ['unknown', null])) {
                 return $platform;
             }
-        } catch (NotFoundException $e) {
-            $this->logger->error($e);
+
+            $this->logger->info('platform with code "' . $platformCode . '" not found via regexes');
         }
 
         return null;
@@ -271,11 +285,28 @@ class RegexFactory implements FactoryInterface
             return null;
         }
 
-        $browserCode    = strtolower($this->match['browsername']);
+        $browserCode   = strtolower($this->match['browsername']);
         $browserLoader = new BrowserLoader($this->cache);
 
-        if ('opr' === $browserCode) {
-            $browserCode = 'opera';
+        switch ($browserCode) {
+            case 'opr':
+                $browserCode = 'opera';
+                break;
+            case 'msie':
+                $browserCode = 'internet explorer';
+                break;
+            case 'ucweb':
+            case 'ubrowser':
+                $browserCode = 'ucbrowser';
+                break;
+            case 'crmo':
+                $browserCode = 'chrome';
+                break;
+            case 'granparadiso':
+                $browserCode = 'firefox';
+                break;
+            default:
+                // do nothing here
         }
 
         if ('safari' === $browserCode) {
@@ -287,7 +318,7 @@ class RegexFactory implements FactoryInterface
                 }
 
                 if ('tizen' === $osname) {
-                    return $browserLoader->load('samsung browser', $this->useragent);
+                    return $browserLoader->load('samsungbrowser', $this->useragent);
                 }
 
                 if ('blackberry' === $osname) {
@@ -303,19 +334,19 @@ class RegexFactory implements FactoryInterface
                 $devicemaker = strtolower($this->match['manufacturercode']);
 
                 if ('nokia' === $devicemaker) {
-                    return $browserLoader->load('nokia browser', $this->useragent);
+                    return $browserLoader->load('nokiabrowser', $this->useragent);
                 }
             }
         }
 
-        try {
+        if ($browserLoader->has($browserCode)) {
             $browser = $browserLoader->load($browserCode, $this->useragent);
 
             if (!in_array($browser->getName(), ['unknown', null])) {
                 return $browser;
             }
-        } catch (NotFoundException $e) {
-            $this->logger->error($e);
+
+            $this->logger->info('browser with code "' . $browserCode . '" not found via regexes');
         }
 
         return null;
@@ -357,14 +388,14 @@ class RegexFactory implements FactoryInterface
             }
         }
 
-        try {
+        if ($engineLoader->has($engineCode)) {
             $engine = $engineLoader->load($engineCode, $this->useragent);
 
             if (!in_array($engine->getName(), ['unknown', null])) {
                 return $engine;
             }
-        } catch (NotFoundException $e) {
-            $this->logger->error($e);
+
+            $this->logger->info('engine with code "' . $engineCode . '" not found via regexes');
         }
 
         return null;

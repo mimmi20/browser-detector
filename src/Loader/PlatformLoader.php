@@ -65,6 +65,33 @@ class PlatformLoader implements LoaderInterface
     }
 
     /**
+     * initializes cache
+     */
+    private function init()
+    {
+        $cacheInitializedId = hash('sha512', 'platform-cache is initialized');
+        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+
+        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
+            $this->initCache($cacheInitialized);
+        }
+    }
+
+    /**
+     * @param string $platformCode
+     *
+     * @return bool
+     */
+    public function has($platformCode)
+    {
+        $this->init();
+
+        $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
+
+        return $cacheItem->isHit();
+    }
+
+    /**
      * @param string      $platformCode
      * @param string      $useragent
      * @param string|null $inputVersion
@@ -74,18 +101,13 @@ class PlatformLoader implements LoaderInterface
      */
     public function load($platformCode, $useragent, $inputVersion = null)
     {
-        $cacheInitializedId = hash('sha512', 'platform-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+        $this->init();
 
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
+        if (!$this->has($platformCode)) {
+            throw new NotFoundException('the platform with key "' . $platformCode . '" was not found');
         }
 
         $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
-
-        if (!$cacheItem->isHit()) {
-            throw new NotFoundException('the platform with key "' . $platformCode . '" was not found');
-        }
 
         $platform = $cacheItem->get();
 

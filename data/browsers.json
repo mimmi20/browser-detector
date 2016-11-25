@@ -2411,6 +2411,42 @@
     },
     "engine": "unknown"
   },
+  "commoncrawler node": {
+    "name": "CommonCrawler Node",
+    "manufacturer": "unknown",
+    "brand": "unknown",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "canSkipAlignedLinkRow": false,
+    "claimsWebSupport": false,
+    "supportsEmptyOptionValues": true,
+    "supportsBasicAuthentication": true,
+    "supportsPostMethod": true,
+    "type": "Bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "yacybot": {
+    "name": "YaCy Bot",
+    "manufacturer": "unknown",
+    "brand": "unknown",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "canSkipAlignedLinkRow": false,
+    "claimsWebSupport": false,
+    "supportsEmptyOptionValues": true,
+    "supportsBasicAuthentication": true,
+    "supportsPostMethod": true,
+    "type": "Bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "cfnetwork": {
     "name": "CFNetwork",
     "manufacturer": "Apple Inc",
@@ -3967,7 +4003,7 @@
     },
     "engine": "webkit"
   },
-  "download accelerator": {
+  "masscan": {
     "name": "Download Accelerator",
     "manufacturer": "unknown",
     "brand": "unknown",
@@ -5888,7 +5924,7 @@
     },
     "engine": "unknown"
   },
-  "google bot": {
+  "googlebot": {
     "name": "Google Bot",
     "manufacturer": "Google Inc",
     "brand": "Google",
@@ -5911,7 +5947,7 @@
     },
     "engine": "unknown"
   },
-  "google bot mobile": {
+  "googlebot-mobile": {
     "name": "Google Bot Mobile",
     "manufacturer": "Google Inc",
     "brand": "Google",
@@ -7980,7 +8016,7 @@
     },
     "engine": "webkit"
   },
-  "java standard library": {
+  "java": {
     "name": "Java Standard Library",
     "manufacturer": "Oracle",
     "brand": "Oracle",
@@ -11431,7 +11467,7 @@
     },
     "engine": "unknown"
   },
-  "nikibot": {
+  "niki-bot": {
     "name": "NikiBot",
     "manufacturer": "unknown",
     "brand": "unknown",
@@ -11549,7 +11585,7 @@
     },
     "engine": "unknown"
   },
-  "nokia browser": {
+  "nokiabrowser": {
     "name": "Nokia Browser",
     "manufacturer": "Nokia",
     "brand": "Nokia",
@@ -14430,7 +14466,7 @@
     },
     "engine": "unknown"
   },
-  "samsung browser": {
+  "samsungbrowser": {
     "name": "Samsung Browser",
     "manufacturer": "Samsung",
     "brand": "Samsung",
@@ -17863,7 +17899,7 @@
     },
     "engine": "unknown"
   },
-  "uc browser": {
+  "ucbrowser": {
     "name": "UC Browser",
     "manufacturer": "UCWeb Inc.",
     "brand": "UCWeb",
@@ -19961,7 +19997,7 @@
     },
     "engine": "unknown"
   },
-  "woorank": {
+  "woobot": {
     "name": "WooRank",
     "manufacturer": "woorank.com",
     "brand": "WooRank",
@@ -20470,7 +20506,7 @@
     },
     "engine": "unknown"
   },
-  "yandex browser": {
+  "yabrowser": {
     "name": "Yandex Browser",
     "manufacturer": "Yandex LLC",
     "brand": "Yandex",
@@ -20490,21 +20526,23 @@
     },
     "engine": "unknown"
   },
-  "yacy bot": {
-    "name": "YaCy Bot",
+  "yowser": {
+    "name": "Yowser",
     "manufacturer": "unknown",
     "brand": "unknown",
     "pdfSupport": true,
     "rssSupport": false,
-    "canSkipAlignedLinkRow": false,
+    "canSkipAlignedLinkRow": true,
     "claimsWebSupport": false,
     "supportsEmptyOptionValues": true,
     "supportsBasicAuthentication": true,
     "supportsPostMethod": true,
-    "type": "Bot",
+    "type": "Browser",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Yowser"
+      ]
     },
     "engine": "unknown"
   },

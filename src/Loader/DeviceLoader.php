@@ -61,6 +61,33 @@ class DeviceLoader implements LoaderInterface
     }
 
     /**
+     * initializes cache
+     */
+    private function init()
+    {
+        $cacheInitializedId = hash('sha512', 'device-cache is initialized');
+        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+
+        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
+            $this->initCache($cacheInitialized);
+        }
+    }
+
+    /**
+     * @param string $deviceKey
+     *
+     * @return bool
+     */
+    public function has($deviceKey)
+    {
+        $this->init();
+
+        $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
+
+        return $cacheItem->isHit();
+    }
+
+    /**
      * @param string $deviceKey
      * @param string $useragent
      *
@@ -69,18 +96,13 @@ class DeviceLoader implements LoaderInterface
      */
     public function load($deviceKey, $useragent)
     {
-        $cacheInitializedId = hash('sha512', 'device-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+        $this->init();
 
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
+        if (!$this->has($deviceKey)) {
+            throw new NotFoundException('the device with key "' . $deviceKey . '" was not found');
         }
 
         $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
-
-        if (!$cacheItem->isHit()) {
-            throw new NotFoundException('the device with key "' . $deviceKey . '" was not found');
-        }
 
         $device = $cacheItem->get();
 

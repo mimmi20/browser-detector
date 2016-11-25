@@ -97,17 +97,17 @@ class PlatformFactory implements FactoryInterface
             $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $agent, $matchesPhone);
 
             if (!$doMatchPhone || $matchesPhone[1] >= 7) {
-                $platformCode = 'windows phone os';
+                $platformCode = 'windows phone';
             } else {
                 $platformCode = 'windows mobile os';
             }
         } elseif ($windowsHelper->isMobileWindows()) {
             if (preg_match('/mobile version([\d]+)/', $agent, $matchesMobile) && $matchesMobile[1] >= 70) {
-                $platformCode = 'windows phone os';
+                $platformCode = 'windows phone';
             } elseif (preg_match('/Windows Mobile ([\d]+)/', $agent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
-                $platformCode = 'windows phone os';
+                $platformCode = 'windows phone';
             } elseif (preg_match('/Windows NT ([\d\.]+); ARM; Lumia/', $agent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
-                $platformCode = 'windows phone os';
+                $platformCode = 'windows phone';
             } else {
                 $platformCode = 'windows mobile os';
             }
@@ -116,7 +116,7 @@ class PlatformFactory implements FactoryInterface
         } elseif ($isWindows) {
             return (new Platform\WindowsFactory($this->cache, $this->loader))->detect($agent);
         } elseif (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|S60V3|S60V5)/', $agent)) {
-            $platformCode = 'symbian os';
+            $platformCode = 'symbian';
         } elseif (preg_match('/(Series40)/', $agent)) {
             $platformCode = 'nokia os';
         } elseif ($s->contains('Bada')) {

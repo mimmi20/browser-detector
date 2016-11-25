@@ -31,11 +31,6 @@
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\BrowserLoader;
-use BrowserDetector\Loader\DeviceLoader;
-use BrowserDetector\Loader\EngineLoader;
-use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Loader\PlatformLoader;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Yaml\Yaml;
@@ -56,16 +51,6 @@ class RegexLoader
      * @var \Psr\Cache\CacheItemPoolInterface|null
      */
     private $cache = null;
-
-    /**
-     * @var array|null
-     */
-    private $match = null;
-
-    /**
-     * @var string|null
-     */
-    private $useragent = null;
 
     /**
      * an logger instance

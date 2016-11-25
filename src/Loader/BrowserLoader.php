@@ -64,6 +64,33 @@ class BrowserLoader implements LoaderInterface
     }
 
     /**
+     * initializes cache
+     */
+    private function init()
+    {
+        $cacheInitializedId = hash('sha512', 'browser-cache is initialized');
+        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+
+        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
+            $this->initCache($cacheInitialized);
+        }
+    }
+
+    /**
+     * @param string $browserKey
+     *
+     * @return bool
+     */
+    public function has($browserKey)
+    {
+        $this->init();
+
+        $cacheItem = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
+
+        return $cacheItem->isHit();
+    }
+
+    /**
      * @param string $browserKey
      * @param string $useragent
      *
@@ -72,19 +99,14 @@ class BrowserLoader implements LoaderInterface
      */
     public function load($browserKey, $useragent)
     {
-        $cacheInitializedId = hash('sha512', 'browser-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+        $this->init();
 
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
+        if (!$this->has($browserKey)) {
+            throw new NotFoundException('the browser with key "' . $browserKey . '" was not found');
         }
 
         $engineLoader = new EngineLoader($this->cache);
         $cacheItem    = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
-
-        if (!$cacheItem->isHit()) {
-            throw new NotFoundException('the browser with key "' . $browserKey . '" was not found');
-        }
 
         $browser = $cacheItem->get();
 

@@ -50,4 +50,11 @@ interface LoaderInterface
      * @throws \BrowserDetector\Loader\NotFoundException
      */
     public function load($key, $useragent);
+
+    /**
+     * @param string $key
+     *
+     * @return bool
+     */
+    public function has($key);
 }

@@ -60,7 +60,36 @@ class CompanyLoader implements LoaderInterface
     }
 
     /**
-     * Gets the information about the platform by User Agent
+     * initializes cache
+     */
+    private function init()
+    {
+        $cacheInitializedId = hash('sha512', 'company-cache is initialized');
+        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+
+        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
+            $this->initCache($cacheInitialized);
+        }
+    }
+
+    /**
+     * detects if the company is available
+     *
+     * @param string $companyKey
+     *
+     * @return bool
+     */
+    public function has($companyKey)
+    {
+        $this->init();
+
+        $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $companyKey));
+
+        return $cacheItem->isHit();
+    }
+
+    /**
+     * Gets the information about the company
      *
      * @param string $companyKey
      * @param string $useragent
@@ -70,18 +99,13 @@ class CompanyLoader implements LoaderInterface
      */
     public function load($companyKey, $useragent)
     {
-        $cacheInitializedId = hash('sha512', 'company-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+        $this->init();
 
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
+        if (!$this->has($companyKey)) {
+            throw new NotFoundException('the company with key "' . $companyKey . '" was not found');
         }
 
         $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $companyKey));
-
-        if (!$cacheItem->isHit()) {
-            throw new NotFoundException('the company with key "' . $companyKey . '" was not found');
-        }
 
         $company = $cacheItem->get();
 

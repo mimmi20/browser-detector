@@ -117,19 +117,19 @@ class BrowserDetector
 
         $cacheId   = hash('sha512', $request->getDeviceUserAgent() . '||||' . $request->getBrowserUserAgent());
         $result    = null;
-        $cacheItem = $this->cache->getItem($cacheId);
+        //$cacheItem = $this->cache->getItem($cacheId);
 
-        if ($cacheItem->isHit()) {
-            $this->logger->debug('result found in cache');
-            $result = $cacheItem->get();
-        }
+        //if ($cacheItem->isHit()) {
+        //    $this->logger->debug('result found in cache');
+        //    $result = $cacheItem->get();
+        //}
 
         if (!($result instanceof ResultInterface)) {
             $this->logger->debug('need to rebuid result');
             $result = $this->buildResult($request);
 
-            $cacheItem->set($result);
-            $this->cache->save($cacheItem);
+            //$cacheItem->set($result);
+            //$this->cache->save($cacheItem);
         }
 
         return $result;

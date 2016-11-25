@@ -92,7 +92,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/UCBrowserHD/', $useragent)) {
             $browserKey = 'uc browser hd';
         } elseif (preg_match('/(ucbrowser|uc browser|ucweb)/i', $useragent) && preg_match('/opera mini/i', $useragent)) {
-            $browserKey = 'uc browser';
+            $browserKey = 'ucbrowser';
         } elseif (preg_match('/(opera mini|opios)/i', $useragent)) {
             $browserKey = 'opera mini';
         } elseif (preg_match('/opera mobi/i', $useragent)
@@ -100,7 +100,7 @@ class BrowserFactory implements FactoryInterface
         ) {
             $browserKey = 'opera mobile';
         } elseif (preg_match('/(ucbrowser|uc browser|ucweb)/i', $useragent)) {
-            $browserKey = 'uc browser';
+            $browserKey = 'ucbrowser';
         } elseif (preg_match('/IC OpenGraph Crawler/', $useragent)) {
             $browserKey = 'ibm connections';
         } elseif (preg_match('/coast/i', $useragent)) {
@@ -122,7 +122,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (false !== strpos($useragent, 'PhantomJS')) {
             $browserKey = 'phantomjs';
         } elseif (false !== strpos($useragent, 'YaBrowser')) {
-            $browserKey = 'yandex browser';
+            $browserKey = 'yabrowser';
         } elseif (false !== strpos($useragent, 'Kamelio')) {
             $browserKey = 'kamelio app';
         } elseif (false !== strpos($useragent, 'FBAV')) {
@@ -142,7 +142,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/stagefright/', $useragent)) {
             $browserKey = 'stagefright';
         } elseif (false !== strpos($useragent, 'SamsungBrowser')) {
-            $browserKey = 'samsung browser';
+            $browserKey = 'samsungbrowser';
         } elseif (false !== strpos($useragent, 'Silk')) {
             $browserKey = 'silk';
         } elseif (false !== strpos($useragent, 'coc_coc_browser')) {
@@ -310,7 +310,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/(web\/snippet)/', $useragent)) {
             $browserKey = 'google web snippet';
         } elseif (preg_match('/(googlebot\-mobile)/i', $useragent)) {
-            $browserKey = 'google bot mobile';
+            $browserKey = 'googlebot-mobile';
         } elseif (preg_match('/Google Wireless Transcoder/', $useragent)) {
             $browserKey = 'google wireless transcoder';
         } elseif (preg_match('/Locubot/', $useragent)) {
@@ -324,9 +324,9 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/googlebot\-image/i', $useragent)) {
             $browserKey = 'google image search';
         } elseif (preg_match('/googlebot/i', $useragent)) {
-            $browserKey = 'google bot';
+            $browserKey = 'googlebot';
         } elseif (preg_match('/^GOOG$/', $useragent)) {
-            $browserKey = 'google bot';
+            $browserKey = 'googlebot';
         } elseif (preg_match('/viera/i', $useragent)) {
             $browserKey = 'smartviera';
         } elseif (preg_match('/Nichrome/', $useragent)) {
@@ -432,7 +432,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/Windows\-Update\-Agent/', $useragent)) {
             $browserKey = 'windows-update-agent';
         } elseif (preg_match('/nokia/i', $useragent)) {
-            $browserKey = 'nokia browser';
+            $browserKey = 'nokiabrowser';
         } elseif (preg_match('/twitter for i/i', $useragent)) {
             $browserKey = 'twitter app';
         } elseif (preg_match('/twitterbot/i', $useragent)) {
@@ -689,7 +689,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/apercite/i', $useragent)) {
             $browserKey = 'apercite';
         } elseif (preg_match('/woobot/', $useragent)) {
-            $browserKey = 'woorank';
+            $browserKey = 'woobot';
         } elseif (preg_match('/Blekkobot/', $useragent)) {
             $browserKey = 'blekkobot';
         } elseif (preg_match('/PagesInventory/', $useragent)) {
@@ -1115,13 +1115,13 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/^Dalvik\/\d/', $useragent)) {
             $browserKey = 'dalvik';
         } elseif (preg_match('/niki\-bot/', $useragent)) {
-            $browserKey = 'nikibot';
+            $browserKey = 'niki-bot';
         } elseif (preg_match('/ContextAd Bot/', $useragent)) {
             $browserKey = 'contextad bot';
         } elseif (preg_match('/integrity/', $useragent)) {
             $browserKey = 'integrity';
         } elseif (preg_match('/masscan/', $useragent)) {
-            $browserKey = 'download accelerator';
+            $browserKey = 'masscan';
         } elseif (preg_match('/ZmEu/', $useragent)) {
             $browserKey = 'zmeu';
         } elseif (preg_match('/sogou web spider/i', $useragent)) {
@@ -1699,7 +1699,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/(WAP Browser|Spice QT\-75|KKT20\/MIDP)/', $useragent)) {
             $browserKey = 'wap browser';
         } elseif (preg_match('/java/i', $useragent)) {
-            $browserKey = 'java standard library';
+            $browserKey = 'java';
         } elseif (preg_match('/(unister\-test|unistertesting|unister\-https\-test)/i', $useragent)) {
             $browserKey = 'unistertesting';
         } elseif (preg_match('/AdMuncher/', $useragent)) {

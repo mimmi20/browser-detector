@@ -76,7 +76,7 @@ class WindowsFactory implements Factory\FactoryInterface
         $s = new Stringy($useragent);
 
         if ($s->containsAny(['Windows NT 10', 'Windows 10'], false)) {
-            return $this->loader->load('windows nt 10', $useragent);
+            return $this->loader->load('windows nt 10.0', $useragent);
         }
 
         if ($s->containsAny(['Windows NT 6.4', 'Windows 6.4'], false)) {

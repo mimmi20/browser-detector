@@ -62,6 +62,33 @@ class EngineLoader implements LoaderInterface
     }
 
     /**
+     * initializes cache
+     */
+    private function init()
+    {
+        $cacheInitializedId = hash('sha512', 'engine-cache is initialized');
+        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+
+        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
+            $this->initCache($cacheInitialized);
+        }
+    }
+
+    /**
+     * @param string $engineKey
+     *
+     * @return bool
+     */
+    public function has($engineKey)
+    {
+        $this->init();
+
+        $cacheItem = $this->cache->getItem(hash('sha512', 'engine-cache-' . $engineKey));
+
+        return $cacheItem->isHit();
+    }
+
+    /**
      * @param string $engineKey
      * @param string $useragent
      *
@@ -70,18 +97,13 @@ class EngineLoader implements LoaderInterface
      */
     public function load($engineKey, $useragent)
     {
-        $cacheInitializedId = hash('sha512', 'engine-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+        $this->init();
 
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
+        if (!$this->has($engineKey)) {
+            throw new NotFoundException('the engine with key "' . $engineKey . '" was not found');
         }
 
         $cacheItem = $this->cache->getItem(hash('sha512', 'engine-cache-' . $engineKey));
-
-        if (!$cacheItem->isHit()) {
-            throw new NotFoundException('the engine with key "' . $engineKey . '" was not found');
-        }
 
         $engine = $cacheItem->get();
 
