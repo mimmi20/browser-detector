@@ -155,7 +155,7 @@ return [
             'Device_Maker'            => 'ZTE',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => true,
+            'Device_Dual_Orientation' => false,
             'Device_Code_Name'        => 'N918St',
             'Device_Brand_Name'       => 'ZTE',
             'RenderingEngine_Name'    => 'WebKit',

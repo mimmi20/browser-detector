@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'browscap-issue-1117' => [
+        'ua'         => 'MacOutlook/15.27.0.161010 (Intelx64 Mac OS X Version 10.11.6 (Build 15G1108))',
+        'properties' => [
+            'Browser_Name'            => 'Outlook',
+            'Browser_Type'            => 'Email Client',
+            'Browser_Bits'            => 32,
+            'Browser_Maker'           => 'Microsoft Corporation',
+            'Browser_Modus'           => 'unknown',
+            'Browser_Version'         => '2013',
+            'Platform_Codename'       => 'Mac OS X',
+            'Platform_Marketingname'  => 'Mac OS X',
+            'Platform_Version'        => '10.11.6',
+            'Platform_Bits'           => 64,
+            'Platform_Maker'          => 'Apple Inc',
+            'Platform_Brand_Name'     => 'Apple',
+            'Device_Name'             => 'Macintosh',
+            'Device_Maker'            => 'Apple Inc',
+            'Device_Type'             => 'Desktop',
+            'Device_Pointing_Method'  => 'mouse',
+            'Device_Dual_Orientation' => false,
+            'Device_Code_Name'        => 'Macintosh',
+            'Device_Brand_Name'       => 'Apple',
+            'RenderingEngine_Name'    => 'Trident',
+            'RenderingEngine_Version' => 'unknown',
+            'RenderingEngine_Maker'   => 'Microsoft Corporation',
+        ],
+    ],
+];
