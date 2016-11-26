@@ -34,6 +34,7 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Loader\RegexLoader;
 use Psr\Cache\CacheItemPoolInterface;
@@ -95,7 +96,7 @@ class RegexFactory implements FactoryInterface
      *
      * @param string $useragent
      *
-     * @return array|null|false
+     * @return bool
      * @throws \BrowserDetector\Loader\NotFoundException
      * @throws \InvalidArgumentException
      * @throws \BrowserDetector\Factory\Regex\NoMatchException
@@ -104,7 +105,7 @@ class RegexFactory implements FactoryInterface
     {
         $regexes = $this->loader->getRegexes();
 
-        $this->match = null;
+        $this->match     = null;
         $this->useragent = $useragent;
 
         if (!is_array($regexes)) {
@@ -125,18 +126,16 @@ class RegexFactory implements FactoryInterface
     }
 
     /**
-     * @return \UaResult\Device\DeviceInterface|null
+     * @return \UaResult\Device\DeviceInterface
      */
     public function getDevice()
     {
         if (null === $this->useragent) {
-            $this->logger->debug('no useragent was set');
-            return null;
+            throw new \InvalidArgumentException('no useragent was set');
         }
 
         if (!array_key_exists('devicecode', $this->match) || '' === $this->match['devicecode']) {
-            $this->logger->debug('device not detected via regexes');
-            return null;
+            throw new \InvalidArgumentException('device not detected via regexes');
         }
 
         $deviceCode   = strtolower($this->match['devicecode']);
@@ -160,6 +159,7 @@ class RegexFactory implements FactoryInterface
         }
 
         if ($deviceLoader->has($manufacturercode . ' ' . $deviceCode)) {
+            $this->logger->debug('device detected via manufacturercode and devicecode');
             return $deviceLoader->load($manufacturercode . ' ' . $deviceCode, $this->useragent);
         }
 
@@ -170,12 +170,10 @@ class RegexFactory implements FactoryInterface
                 $this->logger->debug('device detected via devicecode');
                 return $device;
             }
-
-            $this->logger->info('device with code "' . $deviceCode . '" not found via regexes');
         }
 
-        if (array_key_exists('manufacturercode', $this->match)) {
-            $className = '\\BrowserDetector\\Factory\\Mobile\\' . ucfirst(strtolower($this->match['manufacturercode']));
+        if ('' !== $manufacturercode) {
+            $className = '\\BrowserDetector\\Factory\\Mobile\\' . ucfirst($manufacturercode);
 
             if (class_exists($className)) {
                 $this->logger->debug('device detected via manufacturer');
@@ -183,6 +181,8 @@ class RegexFactory implements FactoryInterface
                 $factory = new $className($this->cache);
                 return $factory->detect($this->useragent);
             }
+
+            $this->logger->info('device manufacturer class was not found');
         }
 
         if (array_key_exists('devicetype', $this->match)) {
@@ -194,19 +194,20 @@ class RegexFactory implements FactoryInterface
                 $factory = new $className($this->cache);
                 return $factory->detect($this->useragent);
             }
+
+            $this->logger->info('device type class was not found');
         }
 
-        return null;
+        throw new NotFoundException('device not found via regexes');
     }
 
     /**
-     * @return \UaResult\Os\OsInterface|null
+     * @return \UaResult\Os\OsInterface
      */
     public function getPlatform()
     {
         if (null === $this->useragent) {
-            $this->logger->debug('no useragent was set');
-            return null;
+            throw new \InvalidArgumentException('no useragent was set');
         }
 
         $platformLoader = new PlatformLoader($this->cache);
@@ -220,8 +221,7 @@ class RegexFactory implements FactoryInterface
         }
 
         if (!array_key_exists('osname', $this->match) || '' === $this->match['osname']) {
-            $this->logger->debug('platform not detected via regexes');
-            return null;
+            throw new \InvalidArgumentException('platform not detected via regexes');
         }
 
         $platformCode = strtolower($this->match['osname']);
@@ -267,22 +267,20 @@ class RegexFactory implements FactoryInterface
             $this->logger->info('platform with code "' . $platformCode . '" not found via regexes');
         }
 
-        return null;
+        throw new NotFoundException('platform not found via regexes');
     }
 
     /**
-     * @return \UaResult\Browser\BrowserInterface|null
+     * @return \UaResult\Browser\BrowserInterface
      */
     public function getBrowser()
     {
         if (null === $this->useragent) {
-            $this->logger->debug('no useragent was set');
-            return null;
+            throw new \InvalidArgumentException('no useragent was set');
         }
 
         if (!array_key_exists('browsername', $this->match) || '' === $this->match['browsername']) {
-            $this->logger->debug('browser not detected via regexes');
-            return null;
+            throw new \InvalidArgumentException('browser not detected via regexes');
         }
 
         $browserCode   = strtolower($this->match['browsername']);
@@ -349,22 +347,20 @@ class RegexFactory implements FactoryInterface
             $this->logger->info('browser with code "' . $browserCode . '" not found via regexes');
         }
 
-        return null;
+        throw new NotFoundException('browser not found via regexes');
     }
 
     /**
-     * @return \UaResult\Engine\EngineInterface|null
+     * @return \UaResult\Engine\EngineInterface
      */
     public function getEngine()
     {
         if (null === $this->useragent) {
-            $this->logger->debug('no useragent was set');
-            return null;
+            throw new \InvalidArgumentException('no useragent was set');
         }
 
         if (!array_key_exists('enginename', $this->match) || '' === $this->match['enginename']) {
-            $this->logger->debug('engine not detected via regexes');
-            return null;
+            throw new \InvalidArgumentException('engine not detected via regexes');
         }
 
         $engineCode   = strtolower($this->match['enginename']);
@@ -398,6 +394,6 @@ class RegexFactory implements FactoryInterface
             $this->logger->info('engine with code "' . $engineCode . '" not found via regexes');
         }
 
-        return null;
+        throw new NotFoundException('engine not found via regexes');
     }
 }

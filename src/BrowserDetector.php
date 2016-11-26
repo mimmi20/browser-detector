@@ -231,7 +231,20 @@ class BrowserDetector
             $engine = $engineLoader->load('webkit', $browserUa);
         } else {
             if ($e === null) {
-                $engine = $regexFactory->getEngine();
+                try {
+                    $engine = $regexFactory->getEngine();
+                } catch (Loader\NotFoundException $e) {
+                    $this->logger->critical($e);
+                    $engine = null;
+                } catch (Factory\Regex\NoMatchException $e) {
+                    $engine = null;
+                } catch (\InvalidArgumentException $e) {
+                    $this->logger->error($e);
+                    $engine = null;
+                } catch (\Exception $e) {
+                    $this->logger->critical($e);
+                    $engine = null;
+                }
             } else {
                 $engine = null;
             }
