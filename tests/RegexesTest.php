@@ -17,14 +17,10 @@
 
 namespace BrowserDetectorTest;
 
-use BrowserDetector\BrowserDetector;
+use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\RegexFactory;
-use Cache\Adapter\Void\VoidCachePool;
 use Monolog\Handler\NullHandler;
 use Monolog\Logger;
-use UaDataMapper\InputMapper;
-use UaNormalizer\Generic;
-use UaNormalizer\UserAgentNormalizer;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
@@ -80,11 +76,11 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
 
         foreach (new \RecursiveIteratorIterator($browscapIssueIterator) as $file) {
             /** @var $file \SplFileInfo */
-            if (!$file->isFile() || $file->getExtension() !== 'php') {
+            if (!$file->isFile() || $file->getExtension() !== 'json') {
                 continue;
             }
 
-            $tests = require_once $file->getPathname();
+            $tests = json_decode(file_get_contents($file->getPathname()));
 
             foreach ($tests as $key => $test) {
                 if (isset($data[$key])) {
@@ -102,48 +98,13 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @group  regex
-     */
-    public function testRegexes()
-    {
-        $regexes = $this->object->getRegexes();
-
-        self::assertInternalType('array', $regexes, 'no regexes available');
-
-        foreach ($regexes as $regex) {
-            self::assertInternalType('string', $regex);
-
-            echo 'testing regex "', $regex, '"', PHP_EOL;
-
-            self::assertInternalType('int', preg_match($regex, 'test-ua'));
-        }
-    }
-
-    /**
      * @dataProvider userAgentDataProvider
      *
      * @param string $userAgent
      */
     public function testUserAgents($userAgent)
     {
-        $normalizer = new UserAgentNormalizer(
-            [
-                new Generic\BabelFish(),
-                new Generic\IISLogging(),
-                new Generic\LocaleRemover(),
-                new Generic\EncryptionRemover(),
-                new Generic\Mozilla(),
-                new Generic\Linux(),
-                new Generic\KhtmlGecko(),
-                new Generic\HexCode(),
-                new Generic\WindowsNt(),
-                new Generic\Tokens(),
-                new Generic\NovarraGoogleTranslator(),
-                new Generic\SerialNumbers(),
-                new Generic\TransferEncoding(),
-                new Generic\YesWAP(),
-            ]
-        );
+        $normalizer = (new NormalizerFactory())->build();
 
         $normalizedUa = $normalizer->normalize($userAgent);
 

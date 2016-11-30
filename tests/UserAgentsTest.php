@@ -88,11 +88,11 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
 
         foreach ($iterator as $file) {
             /** @var $file \SplFileInfo */
-            if (!$file->isFile() || $file->getExtension() !== 'php') {
+            if (!$file->isFile() || $file->getExtension() !== 'json') {
                 continue;
             }
 
-            $tests = require_once $file->getPathname();
+            $tests = json_decode(file_get_contents($file->getPathname()));
 
             foreach ($tests as $key => $test) {
                 if (isset($data[$key])) {

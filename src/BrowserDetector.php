@@ -31,11 +31,10 @@
 
 namespace BrowserDetector;
 
+use BrowserDetector\Factory\NormalizerFactory;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
-use UaNormalizer\Generic;
-use UaNormalizer\UserAgentNormalizer;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
@@ -142,25 +141,7 @@ class BrowserDetector
      */
     private function buildResult(GenericRequest $request)
     {
-        $normalizer = new UserAgentNormalizer(
-            [
-                new Generic\BabelFish(),
-                new Generic\IISLogging(),
-                new Generic\LocaleRemover(),
-                new Generic\EncryptionRemover(),
-                new Generic\Mozilla(),
-                new Generic\Linux(),
-                new Generic\KhtmlGecko(),
-                new Generic\HexCode(),
-                new Generic\WindowsNt(),
-                new Generic\Tokens(),
-                new Generic\NovarraGoogleTranslator(),
-                new Generic\SerialNumbers(),
-                new Generic\TransferEncoding(),
-                new Generic\YesWAP(),
-            ]
-        );
-
+        $normalizer   = (new NormalizerFactory())->build();
         $deviceUa     = $normalizer->normalize($request->getDeviceUserAgent());
         $regexFactory = new Factory\RegexFactory($this->cache, $this->logger);
 
@@ -168,7 +149,7 @@ class BrowserDetector
             $regexFactory->detect($deviceUa);
             $device = $regexFactory->getDevice();
         } catch (Loader\NotFoundException $e) {
-            $this->logger->critical($e);
+            $this->logger->info($e);
             $device = null;
         } catch (Factory\Regex\NoMatchException $e) {
             $device = null;
@@ -193,7 +174,7 @@ class BrowserDetector
             $platform = $regexFactory->getPlatform();
             $browser  = $regexFactory->getBrowser();
         } catch (Loader\NotFoundException $e) {
-            $this->logger->critical($e);
+            $this->logger->info($e);
             $platform = null;
             $browser  = null;
         } catch (Factory\Regex\NoMatchException $e) {
@@ -234,7 +215,7 @@ class BrowserDetector
                 try {
                     $engine = $regexFactory->getEngine();
                 } catch (Loader\NotFoundException $e) {
-                    $this->logger->critical($e);
+                    $this->logger->info($e);
                     $engine = null;
                 } catch (Factory\Regex\NoMatchException $e) {
                     $engine = null;

@@ -1,21 +1,38 @@
-#Ensure every text file uses lf
-*.markdown text eol=lf diff
-*.md text eol=lf diff
-*.js text eol=lf diff
-*.css text eol=lf diff
-*.json text eol=lf diff
-*.lock text eol=lf diff
-*.html text eol=lf diff
-*.php text eol=lf diff
-*.yml text eol=lf diff
-*.xml text eol=lf diff
-*.dist text eol=lf diff
-*.txt text eol=lf diff
-*.ini text eol=lf diff
-*.sh text eol=lf diff
-*.tmp text eol=lf diff
-.gitattributes text eol=lf diff
-.gitignore text eol=lf diff
-.php_cs text eol=lf diff
+# text files
+*                text=auto
+*.markdown       text eol=lf diff whitespace=blank-at-eol,blank-at-eof
+*.md             text eol=lf diff whitespace=blank-at-eol,blank-at-eof
+*.js             text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+*.css            text eol=lf diff=css whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=4
+*.json           text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+*.lock           text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+*.html           text eol=lf diff=html
+*.php            text eol=lf diff=php whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=4
+*.yml            text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+*.yaml           text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+*.xml            text eol=lf diff
+*.dist           text eol=lf diff
+*.txt            text eol=lf diff
+*.ini            text eol=lf diff
+*.sh             text eol=lf diff
+*.tmp            text eol=lf diff
+LICENSE          text eol=lf diff
 
-*.zip binary
+# binary files
+*.zip            -text binary
+
+# files/folders to ignore
+/.*              export-ignore
+.coveralls.yml   export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+.editorconfig    export-ignore text eol=lf diff
+.gitattributes   export-ignore text eol=lf diff
+.gitignore       export-ignore text eol=lf diff
+.php_cs          export-ignore text eol=lf diff=php whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=4
+circle.yml       export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+.scrutinizer.yml export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+.travis.yml      export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+appveyor.yml     export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+circle.yml       export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+phpunit.xml      export-ignore text eol=lf diff
+/tests           export-ignore
+/cache           export-ignore

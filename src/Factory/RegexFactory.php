@@ -135,7 +135,7 @@ class RegexFactory implements FactoryInterface
         }
 
         if (!array_key_exists('devicecode', $this->match) || '' === $this->match['devicecode']) {
-            throw new \InvalidArgumentException('device not detected via regexes');
+            throw new Regex\NoMatchException('device not detected via regexes');
         }
 
         $deviceCode   = strtolower($this->match['devicecode']);
@@ -221,7 +221,7 @@ class RegexFactory implements FactoryInterface
         }
 
         if (!array_key_exists('osname', $this->match) || '' === $this->match['osname']) {
-            throw new \InvalidArgumentException('platform not detected via regexes');
+            throw new Regex\NoMatchException('platform not detected via regexes');
         }
 
         $platformCode = strtolower($this->match['osname']);
@@ -280,7 +280,7 @@ class RegexFactory implements FactoryInterface
         }
 
         if (!array_key_exists('browsername', $this->match) || '' === $this->match['browsername']) {
-            throw new \InvalidArgumentException('browser not detected via regexes');
+            throw new Regex\NoMatchException('browser not detected via regexes');
         }
 
         $browserCode   = strtolower($this->match['browsername']);
@@ -360,7 +360,7 @@ class RegexFactory implements FactoryInterface
         }
 
         if (!array_key_exists('enginename', $this->match) || '' === $this->match['enginename']) {
-            throw new \InvalidArgumentException('engine not detected via regexes');
+            throw new Regex\NoMatchException('engine not detected via regexes');
         }
 
         $engineCode   = strtolower($this->match['enginename']);

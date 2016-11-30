@@ -1,0 +1,83 @@
+{
+    "test-00124-00252": {
+        "ua": "Mozilla/5.0 (Linux; Android 5.0.1; GT-I9506 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "properties": {
+            "Browser_Name": "Android WebView",
+            "Browser_Type": "Browser",
+            "Browser_Bits": 64,
+            "Browser_Maker": "Google Inc",
+            "Browser_Modus": "unknown",
+            "Browser_Version": "4.0",
+            "Platform_Codename": "Android",
+            "Platform_Marketingname": "Android",
+            "Platform_Version": "5.0.1",
+            "Platform_Bits": 64,
+            "Platform_Maker": "Google Inc",
+            "Platform_Brand_Name": "Google",
+            "Device_Name": "Galaxy S4 LTE+",
+            "Device_Maker": "Samsung",
+            "Device_Type": "Mobile Phone",
+            "Device_Pointing_Method": "touchscreen",
+            "Device_Dual_Orientation": true,
+            "Device_Code_Name": "GT-I9506",
+            "Device_Brand_Name": "Samsung",
+            "RenderingEngine_Name": "Blink",
+            "RenderingEngine_Version": "unknown",
+            "RenderingEngine_Maker": "Google Inc"
+        }
+    },
+    "test-00124-00271": {
+        "ua": "BB_Work_Connect/1.0.23217.42 CFNetwork/711.3.18 Darwin/14.0.0Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "properties": {
+            "Browser_Name": "Firefox",
+            "Browser_Type": "Browser",
+            "Browser_Bits": 64,
+            "Browser_Maker": "Mozilla Foundation",
+            "Browser_Modus": "unknown",
+            "Browser_Version": "41.0",
+            "Platform_Codename": "Linux",
+            "Platform_Marketingname": "Linux",
+            "Platform_Version": "0.0.0",
+            "Platform_Bits": 64,
+            "Platform_Maker": "Linux Foundation",
+            "Platform_Brand_Name": "Linux Foundation",
+            "Device_Name": "general Apple Device",
+            "Device_Maker": "Apple Inc",
+            "Device_Type": "Mobile Device",
+            "Device_Pointing_Method": "touchscreen",
+            "Device_Dual_Orientation": true,
+            "Device_Code_Name": "general Apple Device",
+            "Device_Brand_Name": "Apple",
+            "RenderingEngine_Name": "Gecko",
+            "RenderingEngine_Version": "unknown",
+            "RenderingEngine_Maker": "Mozilla Foundation"
+        }
+    },
+    "test-00124-00275": {
+        "ua": "Mozilla/5.0 (compatible; MixrankBot; crawler@mixrank.com)Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0",
+        "properties": {
+            "Browser_Name": "Firefox",
+            "Browser_Type": "Browser",
+            "Browser_Bits": 64,
+            "Browser_Maker": "Mozilla Foundation",
+            "Browser_Modus": "unknown",
+            "Browser_Version": "41.0",
+            "Platform_Codename": "Linux",
+            "Platform_Marketingname": "Linux",
+            "Platform_Version": "0.0.0",
+            "Platform_Bits": 64,
+            "Platform_Maker": "Linux Foundation",
+            "Platform_Brand_Name": "Linux Foundation",
+            "Device_Name": "Linux Desktop",
+            "Device_Maker": "unknown",
+            "Device_Type": "Desktop",
+            "Device_Pointing_Method": "mouse",
+            "Device_Dual_Orientation": false,
+            "Device_Code_Name": "Linux Desktop",
+            "Device_Brand_Name": "unknown",
+            "RenderingEngine_Name": "Gecko",
+            "RenderingEngine_Version": "unknown",
+            "RenderingEngine_Maker": "Mozilla Foundation"
+        }
+    }
+}
