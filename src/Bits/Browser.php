@@ -70,8 +70,6 @@ class Browser
     }
 
     /**
-     * @throws \UnexpectedValueException
-     *
      * @return int
      */
     public function getBits()
