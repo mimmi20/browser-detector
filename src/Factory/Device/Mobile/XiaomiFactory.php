@@ -76,6 +76,8 @@ class XiaomiFactory implements Factory\FactoryInterface
 
         if (preg_match('/MI MAX/', $useragent)) {
             $deviceCode = 'mi max';
+        } elseif (preg_match('/MI 4W/', $useragent)) {
+            $deviceCode = 'mi 4w';
         } elseif (preg_match('/MI 4LTE/', $useragent)) {
             $deviceCode = 'mi 4 lte';
         } elseif (preg_match('/MI 3W/', $useragent)) {
