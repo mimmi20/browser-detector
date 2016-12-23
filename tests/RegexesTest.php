@@ -43,7 +43,7 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
     /**
      * @var string
      */
-    protected $sourceDirectory = 'tests/issues/00000-browscap/';
+    protected $sourceDirectory = 'tests/issues/00000/';
 
     protected static $ok  = 0;
     protected static $nok = 0;

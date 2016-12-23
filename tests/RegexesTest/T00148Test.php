@@ -27,12 +27,12 @@ use BrowserDetectorTest\RegexesTest;
  * @author     Thomas Mueller <mimmi20@live.de>
  * @group      useragenttest
  */
-class T00000Test extends RegexesTest
+class T00148Test extends RegexesTest
 {
     /**
      * @var string
      */
-    protected $sourceDirectory = 'tests/issues/00000/';
+    protected $sourceDirectory = 'tests/issues/00148/';
 
     /**
      * @dataProvider userAgentDataProvider
@@ -43,7 +43,7 @@ class T00000Test extends RegexesTest
      * @throws \Exception
      * @group  integration
      * @group  useragenttest
-     * @group  00000
+     * @group  00148
      */
     public function testUserAgents($userAgent)
     {
