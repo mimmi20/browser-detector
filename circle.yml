@@ -14,416 +14,416 @@ test:
     - vendor/bin/phpunit -c phpunit.library.xml --exclude-group useragenttest --coverage-text --colors=auto --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml
     #- vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group useragenttest --colors=auto
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00068 --colors=auto --columns 117 --test-suffix=00068Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00068 --colors=auto --columns 117 --test-suffix=00068Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00068 --colors=auto --columns 117 tests/UserAgentsTest/00068Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00068 --colors=auto --columns 117 tests/UserAgentsTest/00068Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00069 --colors=auto --columns 117 --test-suffix=00069Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00069 --colors=auto --columns 117 --test-suffix=00069Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00069 --colors=auto --columns 117 tests/UserAgentsTest/00069Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00069 --colors=auto --columns 117 tests/UserAgentsTest/00069Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00070 --colors=auto --columns 117 --test-suffix=00070Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00070 --colors=auto --columns 117 --test-suffix=00070Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00070 --colors=auto --columns 117 tests/UserAgentsTest/00070Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00070 --colors=auto --columns 117 tests/UserAgentsTest/00070Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00071 --colors=auto --columns 117 --test-suffix=00071Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00071 --colors=auto --columns 117 --test-suffix=00071Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00071 --colors=auto --columns 117 tests/UserAgentsTest/00071Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00071 --colors=auto --columns 117 tests/UserAgentsTest/00071Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00072 --colors=auto --columns 117 --test-suffix=00072Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00072 --colors=auto --columns 117 --test-suffix=00072Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00072 --colors=auto --columns 117 tests/UserAgentsTest/00072Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00072 --colors=auto --columns 117 tests/UserAgentsTest/00072Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00073 --colors=auto --columns 117 --test-suffix=00073Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00073 --colors=auto --columns 117 --test-suffix=00073Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00073 --colors=auto --columns 117 tests/UserAgentsTest/00073Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00073 --colors=auto --columns 117 tests/UserAgentsTest/00073Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00074 --colors=auto --columns 117 --test-suffix=00074Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00074 --colors=auto --columns 117 --test-suffix=00074Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00074 --colors=auto --columns 117 tests/UserAgentsTest/00074Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00074 --colors=auto --columns 117 tests/UserAgentsTest/00074Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00075 --colors=auto --columns 117 --test-suffix=00075Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00075 --colors=auto --columns 117 --test-suffix=00075Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00075 --colors=auto --columns 117 tests/UserAgentsTest/00075Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00075 --colors=auto --columns 117 tests/UserAgentsTest/00075Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00076 --colors=auto --columns 117 --test-suffix=00076Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00076 --colors=auto --columns 117 --test-suffix=00076Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00076 --colors=auto --columns 117 tests/UserAgentsTest/00076Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00076 --colors=auto --columns 117 tests/UserAgentsTest/00076Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00077 --colors=auto --columns 117 --test-suffix=00077Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00077 --colors=auto --columns 117 --test-suffix=00077Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00077 --colors=auto --columns 117 tests/UserAgentsTest/00077Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00077 --colors=auto --columns 117 tests/UserAgentsTest/00077Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00078 --colors=auto --columns 117 --test-suffix=00078Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00078 --colors=auto --columns 117 --test-suffix=00078Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00078 --colors=auto --columns 117 tests/UserAgentsTest/00078Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00078 --colors=auto --columns 117 tests/UserAgentsTest/00078Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00079 --colors=auto --columns 117 --test-suffix=00079Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00079 --colors=auto --columns 117 --test-suffix=00079Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00079 --colors=auto --columns 117 tests/UserAgentsTest/00079Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00079 --colors=auto --columns 117 tests/UserAgentsTest/00079Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00080 --colors=auto --columns 117 --test-suffix=00080Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00080 --colors=auto --columns 117 --test-suffix=00080Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00080 --colors=auto --columns 117 tests/UserAgentsTest/00080Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00080 --colors=auto --columns 117 tests/UserAgentsTest/00080Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00081 --colors=auto --columns 117 --test-suffix=00081Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00081 --colors=auto --columns 117 --test-suffix=00081Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00081 --colors=auto --columns 117 tests/UserAgentsTest/00081Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00081 --colors=auto --columns 117 tests/UserAgentsTest/00081Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00083 --colors=auto --columns 117 --test-suffix=00083Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00083 --colors=auto --columns 117 --test-suffix=00083Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00083 --colors=auto --columns 117 tests/UserAgentsTest/00083Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00083 --colors=auto --columns 117 tests/UserAgentsTest/00083Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00084 --colors=auto --columns 117 --test-suffix=00084Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00084 --colors=auto --columns 117 --test-suffix=00084Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00084 --colors=auto --columns 117 tests/UserAgentsTest/00084Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00084 --colors=auto --columns 117 tests/UserAgentsTest/00084Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00085 --colors=auto --columns 117 --test-suffix=00085Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00085 --colors=auto --columns 117 --test-suffix=00085Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00085 --colors=auto --columns 117 tests/UserAgentsTest/00085Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00085 --colors=auto --columns 117 tests/UserAgentsTest/00085Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00086 --colors=auto --columns 117 --test-suffix=00086Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00086 --colors=auto --columns 117 --test-suffix=00086Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00086 --colors=auto --columns 117 tests/UserAgentsTest/00086Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00086 --colors=auto --columns 117 tests/UserAgentsTest/00086Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00087 --colors=auto --columns 117 --test-suffix=00087Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00087 --colors=auto --columns 117 --test-suffix=00087Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00087 --colors=auto --columns 117 tests/UserAgentsTest/00087Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00087 --colors=auto --columns 117 tests/UserAgentsTest/00087Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00088 --colors=auto --columns 117 --test-suffix=00088Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00088 --colors=auto --columns 117 --test-suffix=00088Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00088 --colors=auto --columns 117 tests/UserAgentsTest/00088Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00088 --colors=auto --columns 117 tests/UserAgentsTest/00088Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00090 --colors=auto --columns 117 --test-suffix=00090Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00090 --colors=auto --columns 117 --test-suffix=00090Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00090 --colors=auto --columns 117 tests/UserAgentsTest/00090Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00090 --colors=auto --columns 117 tests/UserAgentsTest/00090Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00092 --colors=auto --columns 117 --test-suffix=00092Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00092 --colors=auto --columns 117 --test-suffix=00092Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00092 --colors=auto --columns 117 tests/UserAgentsTest/00092Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00092 --colors=auto --columns 117 tests/UserAgentsTest/00092Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00094 --colors=auto --columns 117 --test-suffix=00094Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00094 --colors=auto --columns 117 --test-suffix=00094Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00094 --colors=auto --columns 117 tests/UserAgentsTest/00094Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00094 --colors=auto --columns 117 tests/UserAgentsTest/00094Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00095 --colors=auto --columns 117 --test-suffix=00095Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00095 --colors=auto --columns 117 --test-suffix=00095Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00095 --colors=auto --columns 117 tests/UserAgentsTest/00095Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00095 --colors=auto --columns 117 tests/UserAgentsTest/00095Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00096 --colors=auto --columns 117 --test-suffix=00096Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00096 --colors=auto --columns 117 --test-suffix=00096Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00096 --colors=auto --columns 117 tests/UserAgentsTest/00096Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00096 --colors=auto --columns 117 tests/UserAgentsTest/00096Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00097 --colors=auto --columns 117 --test-suffix=00097Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00097 --colors=auto --columns 117 --test-suffix=00097Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00097 --colors=auto --columns 117 tests/UserAgentsTest/00097Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00097 --colors=auto --columns 117 tests/UserAgentsTest/00097Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00098 --colors=auto --columns 117 --test-suffix=00098Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00098 --colors=auto --columns 117 --test-suffix=00098Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00098 --colors=auto --columns 117 tests/UserAgentsTest/00098Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00098 --colors=auto --columns 117 tests/UserAgentsTest/00098Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00099 --colors=auto --columns 117 --test-suffix=00099Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00099 --colors=auto --columns 117 --test-suffix=00099Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00099 --colors=auto --columns 117 tests/UserAgentsTest/00099Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00099 --colors=auto --columns 117 tests/UserAgentsTest/00099Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00100 --colors=auto --columns 117 --test-suffix=00100Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00100 --colors=auto --columns 117 --test-suffix=00100Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00100 --colors=auto --columns 117 tests/UserAgentsTest/00100Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00100 --colors=auto --columns 117 tests/UserAgentsTest/00100Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00102 --colors=auto --columns 117 --test-suffix=00102Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00102 --colors=auto --columns 117 --test-suffix=00102Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00102 --colors=auto --columns 117 tests/UserAgentsTest/00102Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00102 --colors=auto --columns 117 tests/UserAgentsTest/00102Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00103 --colors=auto --columns 117 --test-suffix=00103Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00103 --colors=auto --columns 117 --test-suffix=00103Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00103 --colors=auto --columns 117 tests/UserAgentsTest/00103Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00103 --colors=auto --columns 117 tests/UserAgentsTest/00103Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00104 --colors=auto --columns 117 --test-suffix=00104Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00104 --colors=auto --columns 117 --test-suffix=00104Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00104 --colors=auto --columns 117 tests/UserAgentsTest/00104Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00104 --colors=auto --columns 117 tests/UserAgentsTest/00104Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00105 --colors=auto --columns 117 --test-suffix=00105Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00105 --colors=auto --columns 117 --test-suffix=00105Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00105 --colors=auto --columns 117 tests/UserAgentsTest/00105Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00105 --colors=auto --columns 117 tests/UserAgentsTest/00105Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00106 --colors=auto --columns 117 --test-suffix=00106Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00106 --colors=auto --columns 117 --test-suffix=00106Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00106 --colors=auto --columns 117 tests/UserAgentsTest/00106Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00106 --colors=auto --columns 117 tests/UserAgentsTest/00106Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00107 --colors=auto --columns 117 --test-suffix=00107Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00107 --colors=auto --columns 117 --test-suffix=00107Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00107 --colors=auto --columns 117 tests/UserAgentsTest/00107Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00107 --colors=auto --columns 117 tests/UserAgentsTest/00107Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00108 --colors=auto --columns 117 --test-suffix=00108Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00108 --colors=auto --columns 117 --test-suffix=00108Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00108 --colors=auto --columns 117 tests/UserAgentsTest/00108Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00108 --colors=auto --columns 117 tests/UserAgentsTest/00108Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00109 --colors=auto --columns 117 --test-suffix=00109Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00109 --colors=auto --columns 117 --test-suffix=00109Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00109 --colors=auto --columns 117 tests/UserAgentsTest/00109Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00109 --colors=auto --columns 117 tests/UserAgentsTest/00109Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00110 --colors=auto --columns 117 --test-suffix=00110Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00110 --colors=auto --columns 117 --test-suffix=00110Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00110 --colors=auto --columns 117 tests/UserAgentsTest/00110Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00110 --colors=auto --columns 117 tests/UserAgentsTest/00110Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00111 --colors=auto --columns 117 --test-suffix=00111Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00111 --colors=auto --columns 117 --test-suffix=00111Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00111 --colors=auto --columns 117 tests/UserAgentsTest/00111Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00111 --colors=auto --columns 117 tests/UserAgentsTest/00111Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00112 --colors=auto --columns 117 --test-suffix=00112Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00112 --colors=auto --columns 117 --test-suffix=00112Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00112 --colors=auto --columns 117 tests/UserAgentsTest/00112Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00112 --colors=auto --columns 117 tests/UserAgentsTest/00112Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00113 --colors=auto --columns 117 --test-suffix=00113Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00113 --colors=auto --columns 117 --test-suffix=00113Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00113 --colors=auto --columns 117 tests/UserAgentsTest/00113Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00113 --colors=auto --columns 117 tests/UserAgentsTest/00113Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00114 --colors=auto --columns 117 --test-suffix=00114Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00114 --colors=auto --columns 117 --test-suffix=00114Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00114 --colors=auto --columns 117 tests/UserAgentsTest/00114Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00114 --colors=auto --columns 117 tests/UserAgentsTest/00114Test.php
     #     1 test
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00123 --colors=auto --columns 117 --test-suffix=00123Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00123 --colors=auto --columns 117 --test-suffix=00123Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00123 --colors=auto --columns 117 tests/UserAgentsTest/00123Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00123 --colors=auto --columns 117 tests/UserAgentsTest/00123Test.php
     #     2 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00067 --colors=auto --columns 117 --test-suffix=00067Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00067 --colors=auto --columns 117 --test-suffix=00067Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00067 --colors=auto --columns 117 tests/UserAgentsTest/00067Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00067 --colors=auto --columns 117 tests/UserAgentsTest/00067Test.php
     #     2 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00115 --colors=auto --columns 117 --test-suffix=00115Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00115 --colors=auto --columns 117 --test-suffix=00115Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00115 --colors=auto --columns 117 tests/UserAgentsTest/00115Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00115 --colors=auto --columns 117 tests/UserAgentsTest/00115Test.php
     #     2 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00127 --colors=auto --columns 117 --test-suffix=00127Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00127 --colors=auto --columns 117 --test-suffix=00127Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00127 --colors=auto --columns 117 tests/UserAgentsTest/00127Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00127 --colors=auto --columns 117 tests/UserAgentsTest/00127Test.php
     #     3 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00124 --colors=auto --columns 117 --test-suffix=00124Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00124 --colors=auto --columns 117 --test-suffix=00124Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00124 --colors=auto --columns 117 tests/UserAgentsTest/00124Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00124 --colors=auto --columns 117 tests/UserAgentsTest/00124Test.php
     #     4 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00144 --colors=auto --columns 117 --test-suffix=00144Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00144 --colors=auto --columns 117 --test-suffix=00144Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00144 --colors=auto --columns 117 tests/UserAgentsTest/00144Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00144 --colors=auto --columns 117 tests/UserAgentsTest/00144Test.php
     #     7 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00006 --colors=auto --columns 117 --test-suffix=00006Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00006 --colors=auto --columns 117 --test-suffix=00006Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00006 --colors=auto --columns 117 tests/UserAgentsTest/00006Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00006 --colors=auto --columns 117 tests/UserAgentsTest/00006Test.php
     #     7 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00145 --colors=auto --columns 117 --test-suffix=00145Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00145 --colors=auto --columns 117 --test-suffix=00145Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00145 --colors=auto --columns 117 tests/UserAgentsTest/00145Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00145 --colors=auto --columns 117 tests/UserAgentsTest/00145Test.php
     #    10 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00007 --colors=auto --columns 117 --test-suffix=00007Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00007 --colors=auto --columns 117 --test-suffix=00007Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00007 --colors=auto --columns 117 tests/UserAgentsTest/00007Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00007 --colors=auto --columns 117 tests/UserAgentsTest/00007Test.php
     #    10 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00008 --colors=auto --columns 117 --test-suffix=00008Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00008 --colors=auto --columns 117 --test-suffix=00008Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00008 --colors=auto --columns 117 tests/UserAgentsTest/00008Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00008 --colors=auto --columns 117 tests/UserAgentsTest/00008Test.php
     #    11 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00027 --colors=auto --columns 117 --test-suffix=00027Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00027 --colors=auto --columns 117 --test-suffix=00027Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00027 --colors=auto --columns 117 tests/UserAgentsTest/00027Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00027 --colors=auto --columns 117 tests/UserAgentsTest/00027Test.php
     #    11 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00028 --colors=auto --columns 117 --test-suffix=00028Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00028 --colors=auto --columns 117 --test-suffix=00028Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00028 --colors=auto --columns 117 tests/UserAgentsTest/00028Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00028 --colors=auto --columns 117 tests/UserAgentsTest/00028Test.php
     #    11 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00126 --colors=auto --columns 117 --test-suffix=00126Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00126 --colors=auto --columns 117 --test-suffix=00126Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00126 --colors=auto --columns 117 tests/UserAgentsTest/00126Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00126 --colors=auto --columns 117 tests/UserAgentsTest/00126Test.php
     #    12 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00010 --colors=auto --columns 117 --test-suffix=00010Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00010 --colors=auto --columns 117 --test-suffix=00010Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00010 --colors=auto --columns 117 tests/UserAgentsTest/00010Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00010 --colors=auto --columns 117 tests/UserAgentsTest/00010Test.php
     #    12 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00011 --colors=auto --columns 117 --test-suffix=00011Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00011 --colors=auto --columns 117 --test-suffix=00011Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00011 --colors=auto --columns 117 tests/UserAgentsTest/00011Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00011 --colors=auto --columns 117 tests/UserAgentsTest/00011Test.php
     #    12 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00026 --colors=auto --columns 117 --test-suffix=00026Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00026 --colors=auto --columns 117 --test-suffix=00026Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00026 --colors=auto --columns 117 tests/UserAgentsTest/00026Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00026 --colors=auto --columns 117 tests/UserAgentsTest/00026Test.php
     #    13 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00009 --colors=auto --columns 117 --test-suffix=00009Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00009 --colors=auto --columns 117 --test-suffix=00009Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00009 --colors=auto --columns 117 tests/UserAgentsTest/00009Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00009 --colors=auto --columns 117 tests/UserAgentsTest/00009Test.php
     #    13 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00015 --colors=auto --columns 117 --test-suffix=00015Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00015 --colors=auto --columns 117 --test-suffix=00015Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00015 --colors=auto --columns 117 tests/UserAgentsTest/00015Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00015 --colors=auto --columns 117 tests/UserAgentsTest/00015Test.php
     #    14 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00055 --colors=auto --columns 117 --test-suffix=00055Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00055 --colors=auto --columns 117 --test-suffix=00055Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00055 --colors=auto --columns 117 tests/UserAgentsTest/00055Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00055 --colors=auto --columns 117 tests/UserAgentsTest/00055Test.php
     #    15 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00025 --colors=auto --columns 117 --test-suffix=00025Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00025 --colors=auto --columns 117 --test-suffix=00025Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00025 --colors=auto --columns 117 tests/UserAgentsTest/00025Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00025 --colors=auto --columns 117 tests/UserAgentsTest/00025Test.php
     #    16 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00014 --colors=auto --columns 117 --test-suffix=00014Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00014 --colors=auto --columns 117 --test-suffix=00014Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00014 --colors=auto --columns 117 tests/UserAgentsTest/00014Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00014 --colors=auto --columns 117 tests/UserAgentsTest/00014Test.php
     #    16 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00023 --colors=auto --columns 117 --test-suffix=00023Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00023 --colors=auto --columns 117 --test-suffix=00023Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00023 --colors=auto --columns 117 tests/UserAgentsTest/00023Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00023 --colors=auto --columns 117 tests/UserAgentsTest/00023Test.php
     #    16 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00024 --colors=auto --columns 117 --test-suffix=00024Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00024 --colors=auto --columns 117 --test-suffix=00024Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00024 --colors=auto --columns 117 tests/UserAgentsTest/00024Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00024 --colors=auto --columns 117 tests/UserAgentsTest/00024Test.php
     #    16 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00056 --colors=auto --columns 117 --test-suffix=00056Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00056 --colors=auto --columns 117 --test-suffix=00056Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00056 --colors=auto --columns 117 tests/UserAgentsTest/00056Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00056 --colors=auto --columns 117 tests/UserAgentsTest/00056Test.php
     #    16 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00128 --colors=auto --columns 117 --test-suffix=00128Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00128 --colors=auto --columns 117 --test-suffix=00128Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00128 --colors=auto --columns 117 tests/UserAgentsTest/00128Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00128 --colors=auto --columns 117 tests/UserAgentsTest/00128Test.php
     #    17 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00029 --colors=auto --columns 117 --test-suffix=00029Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00029 --colors=auto --columns 117 --test-suffix=00029Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00029 --colors=auto --columns 117 tests/UserAgentsTest/00029Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00029 --colors=auto --columns 117 tests/UserAgentsTest/00029Test.php
     #    17 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00054 --colors=auto --columns 117 --test-suffix=00054Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00054 --colors=auto --columns 117 --test-suffix=00054Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00054 --colors=auto --columns 117 tests/UserAgentsTest/00054Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00054 --colors=auto --columns 117 tests/UserAgentsTest/00054Test.php
     #    18 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00003 --colors=auto --columns 117 --test-suffix=00003Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00003 --colors=auto --columns 117 --test-suffix=00003Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00003 --colors=auto --columns 117 tests/UserAgentsTest/00003Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00003 --colors=auto --columns 117 tests/UserAgentsTest/00003Test.php
     #    18 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00030 --colors=auto --columns 117 --test-suffix=00030Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00030 --colors=auto --columns 117 --test-suffix=00030Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00030 --colors=auto --columns 117 tests/UserAgentsTest/00030Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00030 --colors=auto --columns 117 tests/UserAgentsTest/00030Test.php
     #    18 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00031 --colors=auto --columns 117 --test-suffix=00031Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00031 --colors=auto --columns 117 --test-suffix=00031Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00031 --colors=auto --columns 117 tests/UserAgentsTest/00031Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00031 --colors=auto --columns 117 tests/UserAgentsTest/00031Test.php
     #    18 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00118 --colors=auto --columns 117 --test-suffix=00118Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00118 --colors=auto --columns 117 --test-suffix=00118Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00118 --colors=auto --columns 117 tests/UserAgentsTest/00118Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00118 --colors=auto --columns 117 tests/UserAgentsTest/00118Test.php
     #    18 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00125 --colors=auto --columns 117 --test-suffix=00125Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00125 --colors=auto --columns 117 --test-suffix=00125Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00125 --colors=auto --columns 117 tests/UserAgentsTest/00125Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00125 --colors=auto --columns 117 tests/UserAgentsTest/00125Test.php
     #    19 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00012 --colors=auto --columns 117 --test-suffix=00012Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00012 --colors=auto --columns 117 --test-suffix=00012Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00012 --colors=auto --columns 117 tests/UserAgentsTest/00012Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00012 --colors=auto --columns 117 tests/UserAgentsTest/00012Test.php
     #    19 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00019 --colors=auto --columns 117 --test-suffix=00019Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00019 --colors=auto --columns 117 --test-suffix=00019Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00019 --colors=auto --columns 117 tests/UserAgentsTest/00019Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00019 --colors=auto --columns 117 tests/UserAgentsTest/00019Test.php
     #    19 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00021 --colors=auto --columns 117 --test-suffix=00021Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00021 --colors=auto --columns 117 --test-suffix=00021Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00021 --colors=auto --columns 117 tests/UserAgentsTest/00021Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00021 --colors=auto --columns 117 tests/UserAgentsTest/00021Test.php
     #    19 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00032 --colors=auto --columns 117 --test-suffix=00032Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00032 --colors=auto --columns 117 --test-suffix=00032Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00032 --colors=auto --columns 117 tests/UserAgentsTest/00032Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00032 --colors=auto --columns 117 tests/UserAgentsTest/00032Test.php
     #    20 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00016 --colors=auto --columns 117 --test-suffix=00016Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00016 --colors=auto --columns 117 --test-suffix=00016Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00016 --colors=auto --columns 117 tests/UserAgentsTest/00016Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00016 --colors=auto --columns 117 tests/UserAgentsTest/00016Test.php
     #    20 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00117 --colors=auto --columns 117 --test-suffix=00117Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00117 --colors=auto --columns 117 --test-suffix=00117Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00117 --colors=auto --columns 117 tests/UserAgentsTest/00117Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00117 --colors=auto --columns 117 tests/UserAgentsTest/00117Test.php
     #    21 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00022 --colors=auto --columns 117 --test-suffix=00022Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00022 --colors=auto --columns 117 --test-suffix=00022Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00022 --colors=auto --columns 117 tests/UserAgentsTest/00022Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00022 --colors=auto --columns 117 tests/UserAgentsTest/00022Test.php
     #    21 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00033 --colors=auto --columns 117 --test-suffix=00033Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00033 --colors=auto --columns 117 --test-suffix=00033Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00033 --colors=auto --columns 117 tests/UserAgentsTest/00033Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00033 --colors=auto --columns 117 tests/UserAgentsTest/00033Test.php
     #    21 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00034 --colors=auto --columns 117 --test-suffix=00034Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00034 --colors=auto --columns 117 --test-suffix=00034Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00034 --colors=auto --columns 117 tests/UserAgentsTest/00034Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00034 --colors=auto --columns 117 tests/UserAgentsTest/00034Test.php
     #    21 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00035 --colors=auto --columns 117 --test-suffix=00035Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00035 --colors=auto --columns 117 --test-suffix=00035Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00035 --colors=auto --columns 117 tests/UserAgentsTest/00035Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00035 --colors=auto --columns 117 tests/UserAgentsTest/00035Test.php
     #    22 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00036 --colors=auto --columns 117 --test-suffix=00036Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00036 --colors=auto --columns 117 --test-suffix=00036Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00036 --colors=auto --columns 117 tests/UserAgentsTest/00036Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00036 --colors=auto --columns 117 tests/UserAgentsTest/00036Test.php
     #    22 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00037 --colors=auto --columns 117 --test-suffix=00037Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00037 --colors=auto --columns 117 --test-suffix=00037Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00037 --colors=auto --columns 117 tests/UserAgentsTest/00037Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00037 --colors=auto --columns 117 tests/UserAgentsTest/00037Test.php
     #    22 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00038 --colors=auto --columns 117 --test-suffix=00038Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00038 --colors=auto --columns 117 --test-suffix=00038Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00038 --colors=auto --columns 117 tests/UserAgentsTest/00038Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00038 --colors=auto --columns 117 tests/UserAgentsTest/00038Test.php
     #    23 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00039 --colors=auto --columns 117 --test-suffix=00039Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00039 --colors=auto --columns 117 --test-suffix=00039Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00039 --colors=auto --columns 117 tests/UserAgentsTest/00039Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00039 --colors=auto --columns 117 tests/UserAgentsTest/00039Test.php
     #    23 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00130 --colors=auto --columns 117 --test-suffix=00130Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00130 --colors=auto --columns 117 --test-suffix=00130Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00130 --colors=auto --columns 117 tests/UserAgentsTest/00130Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00130 --colors=auto --columns 117 tests/UserAgentsTest/00130Test.php
     #    23 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00142 --colors=auto --columns 117 --test-suffix=00142Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00142 --colors=auto --columns 117 --test-suffix=00142Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00142 --colors=auto --columns 117 tests/UserAgentsTest/00142Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00142 --colors=auto --columns 117 tests/UserAgentsTest/00142Test.php
     #    24 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00013 --colors=auto --columns 117 --test-suffix=00013Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00013 --colors=auto --columns 117 --test-suffix=00013Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00013 --colors=auto --columns 117 tests/UserAgentsTest/00013Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00013 --colors=auto --columns 117 tests/UserAgentsTest/00013Test.php
     #    24 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00040 --colors=auto --columns 117 --test-suffix=00040Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00040 --colors=auto --columns 117 --test-suffix=00040Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00040 --colors=auto --columns 117 tests/UserAgentsTest/00040Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00040 --colors=auto --columns 117 tests/UserAgentsTest/00040Test.php
     #    24 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00041 --colors=auto --columns 117 --test-suffix=00041Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00041 --colors=auto --columns 117 --test-suffix=00041Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00041 --colors=auto --columns 117 tests/UserAgentsTest/00041Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00041 --colors=auto --columns 117 tests/UserAgentsTest/00041Test.php
     #    25 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00017 --colors=auto --columns 117 --test-suffix=00017Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00017 --colors=auto --columns 117 --test-suffix=00017Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00017 --colors=auto --columns 117 tests/UserAgentsTest/00017Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00017 --colors=auto --columns 117 tests/UserAgentsTest/00017Test.php
     #    26 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00042 --colors=auto --columns 117 --test-suffix=00042Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00042 --colors=auto --columns 117 --test-suffix=00042Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00042 --colors=auto --columns 117 tests/UserAgentsTest/00042Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00042 --colors=auto --columns 117 tests/UserAgentsTest/00042Test.php
     #    27 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00043 --colors=auto --columns 117 --test-suffix=00043Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00043 --colors=auto --columns 117 --test-suffix=00043Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00043 --colors=auto --columns 117 tests/UserAgentsTest/00043Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00043 --colors=auto --columns 117 tests/UserAgentsTest/00043Test.php
     #    27 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00044 --colors=auto --columns 117 --test-suffix=00044Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00044 --colors=auto --columns 117 --test-suffix=00044Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00044 --colors=auto --columns 117 tests/UserAgentsTest/00044Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00044 --colors=auto --columns 117 tests/UserAgentsTest/00044Test.php
     #    28 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00020 --colors=auto --columns 117 --test-suffix=00020Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00020 --colors=auto --columns 117 --test-suffix=00020Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00020 --colors=auto --columns 117 tests/UserAgentsTest/00020Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00020 --colors=auto --columns 117 tests/UserAgentsTest/00020Test.php
     #    28 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00045 --colors=auto --columns 117 --test-suffix=00045Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00045 --colors=auto --columns 117 --test-suffix=00045Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00045 --colors=auto --columns 117 tests/UserAgentsTest/00045Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00045 --colors=auto --columns 117 tests/UserAgentsTest/00045Test.php
     #    28 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00046 --colors=auto --columns 117 --test-suffix=00046Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00046 --colors=auto --columns 117 --test-suffix=00046Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00046 --colors=auto --columns 117 tests/UserAgentsTest/00046Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00046 --colors=auto --columns 117 tests/UserAgentsTest/00046Test.php
     #    28 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00047 --colors=auto --columns 117 --test-suffix=00047Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00047 --colors=auto --columns 117 --test-suffix=00047Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00047 --colors=auto --columns 117 tests/UserAgentsTest/00047Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00047 --colors=auto --columns 117 tests/UserAgentsTest/00047Test.php
     #    28 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00120 --colors=auto --columns 117 --test-suffix=00120Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00120 --colors=auto --columns 117 --test-suffix=00120Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00120 --colors=auto --columns 117 tests/UserAgentsTest/00120Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00120 --colors=auto --columns 117 tests/UserAgentsTest/00120Test.php
     #    30 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00018 --colors=auto --columns 117 --test-suffix=00018Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00018 --colors=auto --columns 117 --test-suffix=00018Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00018 --colors=auto --columns 117 tests/UserAgentsTest/00018Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00018 --colors=auto --columns 117 tests/UserAgentsTest/00018Test.php
     #    31 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00048 --colors=auto --columns 117 --test-suffix=00048Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00048 --colors=auto --columns 117 --test-suffix=00048Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00048 --colors=auto --columns 117 tests/UserAgentsTest/00048Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00048 --colors=auto --columns 117 tests/UserAgentsTest/00048Test.php
     #    31 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00050 --colors=auto --columns 117 --test-suffix=00050Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00050 --colors=auto --columns 117 --test-suffix=00050Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00050 --colors=auto --columns 117 tests/UserAgentsTest/00050Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00050 --colors=auto --columns 117 tests/UserAgentsTest/00050Test.php
     #    31 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00121 --colors=auto --columns 117 --test-suffix=00121Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00121 --colors=auto --columns 117 --test-suffix=00121Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00121 --colors=auto --columns 117 tests/UserAgentsTest/00121Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00121 --colors=auto --columns 117 tests/UserAgentsTest/00121Test.php
     #    32 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00049 --colors=auto --columns 117 --test-suffix=00049Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00049 --colors=auto --columns 117 --test-suffix=00049Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00049 --colors=auto --columns 117 tests/UserAgentsTest/00049Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00049 --colors=auto --columns 117 tests/UserAgentsTest/00049Test.php
     #    34 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00051 --colors=auto --columns 117 --test-suffix=00051Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00051 --colors=auto --columns 117 --test-suffix=00051Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00051 --colors=auto --columns 117 tests/UserAgentsTest/00051Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00051 --colors=auto --columns 117 tests/UserAgentsTest/00051Test.php
     #    34 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00053 --colors=auto --columns 117 --test-suffix=00053Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00053 --colors=auto --columns 117 --test-suffix=00053Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00053 --colors=auto --columns 117 tests/UserAgentsTest/00053Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00053 --colors=auto --columns 117 tests/UserAgentsTest/00053Test.php
     #    35 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00052 --colors=auto --columns 117 --test-suffix=00052Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00052 --colors=auto --columns 117 --test-suffix=00052Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00052 --colors=auto --columns 117 tests/UserAgentsTest/00052Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00052 --colors=auto --columns 117 tests/UserAgentsTest/00052Test.php
     #    35 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00122 --colors=auto --columns 117 --test-suffix=00122Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00122 --colors=auto --columns 117 --test-suffix=00122Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00122 --colors=auto --columns 117 tests/UserAgentsTest/00122Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00122 --colors=auto --columns 117 tests/UserAgentsTest/00122Test.php
     #    35 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00141 --colors=auto --columns 117 --test-suffix=00141Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00141 --colors=auto --columns 117 --test-suffix=00141Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00141 --colors=auto --columns 117 tests/UserAgentsTest/00141Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00141 --colors=auto --columns 117 tests/UserAgentsTest/00141Test.php
     #    38 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00089 --colors=auto --columns 117 --test-suffix=00089Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00089 --colors=auto --columns 117 --test-suffix=00089Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00089 --colors=auto --columns 117 tests/UserAgentsTest/00089Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00089 --colors=auto --columns 117 tests/UserAgentsTest/00089Test.php
     #    39 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00082 --colors=auto --columns 117 --test-suffix=00082Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00082 --colors=auto --columns 117 --test-suffix=00082Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00082 --colors=auto --columns 117 tests/UserAgentsTest/00082Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00082 --colors=auto --columns 117 tests/UserAgentsTest/00082Test.php
     #    40 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00066 --colors=auto --columns 117 --test-suffix=00066Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00066 --colors=auto --columns 117 --test-suffix=00066Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00066 --colors=auto --columns 117 tests/UserAgentsTest/00066Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00066 --colors=auto --columns 117 tests/UserAgentsTest/00066Test.php
     #    43 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00061 --colors=auto --columns 117 --test-suffix=00061Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00061 --colors=auto --columns 117 --test-suffix=00061Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00061 --colors=auto --columns 117 tests/UserAgentsTest/00061Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00061 --colors=auto --columns 117 tests/UserAgentsTest/00061Test.php
     #    43 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00062 --colors=auto --columns 117 --test-suffix=00062Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00062 --colors=auto --columns 117 --test-suffix=00062Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00062 --colors=auto --columns 117 tests/UserAgentsTest/00062Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00062 --colors=auto --columns 117 tests/UserAgentsTest/00062Test.php
     #    44 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00093 --colors=auto --columns 117 --test-suffix=00093Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00093 --colors=auto --columns 117 --test-suffix=00093Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00093 --colors=auto --columns 117 tests/UserAgentsTest/00093Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00093 --colors=auto --columns 117 tests/UserAgentsTest/00093Test.php
     #    44 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00138 --colors=auto --columns 117 --test-suffix=00138Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00138 --colors=auto --columns 117 --test-suffix=00138Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00138 --colors=auto --columns 117 tests/UserAgentsTest/00138Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00138 --colors=auto --columns 117 tests/UserAgentsTest/00138Test.php
     #    46 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00139 --colors=auto --columns 117 --test-suffix=00139Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00139 --colors=auto --columns 117 --test-suffix=00139Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00139 --colors=auto --columns 117 tests/UserAgentsTest/00139Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00139 --colors=auto --columns 117 tests/UserAgentsTest/00139Test.php
     #    47 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00133 --colors=auto --columns 117 --test-suffix=00133Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00133 --colors=auto --columns 117 --test-suffix=00133Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00133 --colors=auto --columns 117 tests/UserAgentsTest/00133Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00133 --colors=auto --columns 117 tests/UserAgentsTest/00133Test.php
     #    48 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00060 --colors=auto --columns 117 --test-suffix=00060Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00060 --colors=auto --columns 117 --test-suffix=00060Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00060 --colors=auto --columns 117 tests/UserAgentsTest/00060Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00060 --colors=auto --columns 117 tests/UserAgentsTest/00060Test.php
     #    48 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00137 --colors=auto --columns 117 --test-suffix=00137Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00137 --colors=auto --columns 117 --test-suffix=00137Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00137 --colors=auto --columns 117 tests/UserAgentsTest/00137Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00137 --colors=auto --columns 117 tests/UserAgentsTest/00137Test.php
     #    52 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00129 --colors=auto --columns 117 --test-suffix=00129Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00129 --colors=auto --columns 117 --test-suffix=00129Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00129 --colors=auto --columns 117 tests/UserAgentsTest/00129Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00129 --colors=auto --columns 117 tests/UserAgentsTest/00129Test.php
     #    53 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00064 --colors=auto --columns 117 --test-suffix=00064Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00064 --colors=auto --columns 117 --test-suffix=00064Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00064 --colors=auto --columns 117 tests/UserAgentsTest/00064Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00064 --colors=auto --columns 117 tests/UserAgentsTest/00064Test.php
     #    54 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00134 --colors=auto --columns 117 --test-suffix=00134Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00134 --colors=auto --columns 117 --test-suffix=00134Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00134 --colors=auto --columns 117 tests/UserAgentsTest/00134Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00134 --colors=auto --columns 117 tests/UserAgentsTest/00134Test.php
     #    54 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00143 --colors=auto --columns 117 --test-suffix=00143Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00143 --colors=auto --columns 117 --test-suffix=00143Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00143 --colors=auto --columns 117 tests/UserAgentsTest/00143Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00143 --colors=auto --columns 117 tests/UserAgentsTest/00143Test.php
     #    55 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00002 --colors=auto --columns 117 --test-suffix=00002Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00002 --colors=auto --columns 117 --test-suffix=00002Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00002 --colors=auto --columns 117 tests/UserAgentsTest/00002Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00002 --colors=auto --columns 117 tests/UserAgentsTest/00002Test.php
     #    57 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00059 --colors=auto --columns 117 --test-suffix=00059Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00059 --colors=auto --columns 117 --test-suffix=00059Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00059 --colors=auto --columns 117 tests/UserAgentsTest/00059Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00059 --colors=auto --columns 117 tests/UserAgentsTest/00059Test.php
     #    60 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00135 --colors=auto --columns 117 --test-suffix=00135Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00135 --colors=auto --columns 117 --test-suffix=00135Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00135 --colors=auto --columns 117 tests/UserAgentsTest/00135Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00135 --colors=auto --columns 117 tests/UserAgentsTest/00135Test.php
     #    62 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00136 --colors=auto --columns 117 --test-suffix=00136Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00136 --colors=auto --columns 117 --test-suffix=00136Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00136 --colors=auto --columns 117 tests/UserAgentsTest/00136Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00136 --colors=auto --columns 117 tests/UserAgentsTest/00136Test.php
     #    63 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00140 --colors=auto --columns 117 --test-suffix=00140Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00140 --colors=auto --columns 117 --test-suffix=00140Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00140 --colors=auto --columns 117 tests/UserAgentsTest/00140Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00140 --colors=auto --columns 117 tests/UserAgentsTest/00140Test.php
     #    65 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00001 --colors=auto --columns 117 --test-suffix=00001Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00001 --colors=auto --columns 117 --test-suffix=00001Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00001 --colors=auto --columns 117 tests/UserAgentsTest/00001Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00001 --colors=auto --columns 117 tests/UserAgentsTest/00001Test.php
     #    70 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00058 --colors=auto --columns 117 --test-suffix=00058Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00058 --colors=auto --columns 117 --test-suffix=00058Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00058 --colors=auto --columns 117 tests/UserAgentsTest/00058Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00058 --colors=auto --columns 117 tests/UserAgentsTest/00058Test.php
     #   106 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00091 --colors=auto --columns 117 --test-suffix=00091Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00091 --colors=auto --columns 117 --test-suffix=00091Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00091 --colors=auto --columns 117 tests/UserAgentsTest/00091Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00091 --colors=auto --columns 117 tests/UserAgentsTest/00091Test.php
     #   118 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00101 --colors=auto --columns 117 --test-suffix=00101Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00101 --colors=auto --columns 117 --test-suffix=00101Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00101 --colors=auto --columns 117 tests/UserAgentsTest/00101Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00101 --colors=auto --columns 117 tests/UserAgentsTest/00101Test.php
     #   160 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00057 --colors=auto --columns 117 --test-suffix=00057Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00057 --colors=auto --columns 117 --test-suffix=00057Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00057 --colors=auto --columns 117 tests/UserAgentsTest/00057Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00057 --colors=auto --columns 117 tests/UserAgentsTest/00057Test.php
     #   478 tests
-    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00000 --colors=auto --columns 117 --test-suffix=00000Test.php
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00000 --colors=auto --columns 117 --test-suffix=00000Test.php
+    #- vendor/bin/phpunit -c phpunit.regex.xml --no-coverage --group 00000 --colors=auto --columns 117 tests/UserAgentsTest/00000Test.php
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00000 --colors=auto --columns 117 tests/UserAgentsTest/00000Test.php

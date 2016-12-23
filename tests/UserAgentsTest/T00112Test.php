@@ -11,8 +11,8 @@
  *
  * @category   CompareTest
  *
- * @copyright  1998-2014 Browser Capabilities Project
- * @license    MIT
+ * @copyright 2012-2016 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 
 namespace BrowserDetectorTest\UserAgentsTest;
@@ -24,7 +24,7 @@ use BrowserDetectorTest\UserAgentsTest;
  *
  * @category   CompareTest
  *
- * @author     Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @author     Thomas Mueller <mimmi20@live.de>
  * @group      useragenttest
  */
 class T00112Test extends UserAgentsTest
