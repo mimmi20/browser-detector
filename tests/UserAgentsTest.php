@@ -11,8 +11,8 @@
  *
  * @category   CompareTest
  *
- * @copyright  1998-2014 Browser Capabilities Project
- * @license    MIT
+ * @copyright 2012-2016 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 
 namespace BrowserDetectorTest;
@@ -30,7 +30,7 @@ use UaDataMapper\InputMapper;
  *
  * @category   CompareTest
  *
- * @author     Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @author     Thomas Mueller <mimmi20@live.de>
  * @group      useragenttest
  */
 abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
@@ -48,7 +48,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
     /**
      * @var string
      */
-    protected $sourceDirectory = 'tests/issues/00000-browscap/';
+    protected $sourceDirectory = 'tests/issues/00000/';
 
     /**
      * This method is called before the first test of this test class is run.
@@ -100,7 +100,10 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
                     continue;
                 }
 
-                $data[$key] = $test;
+                $data[$key] = [
+                    'ua'         => $test->ua,
+                    'properties' => (array) $test->properties,
+                ];
             }
         }
 
@@ -166,7 +169,6 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
             'Expected key "Device_Maker" is missing for useragent "' . $userAgent . '"'
         );
 
-        /*
         $expectedDeviceMaker = $expectedProperties['Device_Maker'];
         $foundDeviceMaker    = $foundDevice->getManufacturer();
 
@@ -177,12 +179,25 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
             $foundDeviceMaker,
             'Expected actual "Device_Maker" to be "' . $expectedDeviceMaker . '" (was "' . $foundDeviceMaker . '")'
         );
-        /**/
 
         static::assertArrayHasKey(
             'Device_Type',
             $expectedProperties,
             'Expected key "Device_Type" is missing for useragent "' . $userAgent . '"'
+        );
+
+        $expectedDeviceType = $expectedProperties['Device_Type'];
+        $foundDeviceType    = $foundDevice->getType();
+
+        static::assertInstanceOf(
+            \UaDeviceType\TypeInterface::class,
+            $foundDeviceType,
+            'Expected result is not an instance of "\UaDeviceType\TypeInterface" for useragent "' . $userAgent . '"'
+        );
+        static::assertInstanceOf(
+            $expectedDeviceType,
+            $foundDeviceType,
+            'Expected result is not an instance of "' . $expectedDeviceType . '" for useragent "' . $userAgent . '"'
         );
 
         static::assertArrayHasKey(

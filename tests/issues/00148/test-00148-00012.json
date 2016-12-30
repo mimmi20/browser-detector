@@ -1,32 +1,5 @@
 {
-    "browscap-issue-00000-01200": {
-        "ua": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; EVO3D_X515m Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
-        "properties": {
-            "Browser_Name": "Android",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "4.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01201": {
+    "test-00148-01201": {
         "ua": "Mozilla/5.0 (Windows NT 6.1; rv:49.0.2) Gecko/20100101 Firefox/49.0.2 anonymized by Abelssoft 1927048223",
         "properties": {
             "Browser_Name": "Firefox",
@@ -46,14 +19,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000-01202": {
+    "test-00148-01202": {
         "ua": "Mozilla/5.0 (Linux; Android 6.0.1; F8331 Build/39.0.A.1.260) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -68,46 +41,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "general SonyEricsson Device",
-            "Device_Maker": "SonyEricsson",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "SonyEricsson",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01203": {
-        "ua": "Mozilla/5.0 (Linux; U; Android 4.4.4; en-us; SM-G360H Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
-        "properties": {
-            "Browser_Name": "Android",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "4.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Galaxy Core Prime Duos",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "SM-G360H",
-            "Device_Brand_Name": "Samsung",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01204": {
+    "test-00148-01204": {
         "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36 Vivaldi/1.5.658.44",
         "properties": {
             "Browser_Name": "Chrome",
@@ -127,41 +73,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01205": {
-        "ua": "Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T555 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.2 Chrome/38.0.2125.102 Safari/537.36",
-        "properties": {
-            "Browser_Name": "Samsung Browser",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Samsung",
-            "Browser_Modus": null,
-            "Browser_Version": "3.2",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "5.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Galaxy Tab A 9.7 LTE",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\FonePad",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "SM-T555",
-            "Device_Brand_Name": "Samsung",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01206": {
+    "test-00148-01206": {
         "ua": "Mozilla/5.0 (iPad; CPU OS 10_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/19.0.133715217 Mobile/14B100 Safari/600.1.4",
         "properties": {
             "Browser_Name": "Google App",
@@ -172,7 +91,7 @@
             "Browser_Version": "19.0",
             "Platform_Codename": "iOS",
             "Platform_Marketingname": "iOS",
-            "Platform_Version": "10.1",
+            "Platform_Version": "10.1.1",
             "Platform_Bits": 32,
             "Platform_Maker": "Apple Inc",
             "Platform_Brand_Name": "Apple",
@@ -188,61 +107,7 @@
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000-01207": {
-        "ua": "Mozilla/5.0 (Linux; Android 6.0; F3111 Build/33.2.A.2.35) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "50",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "6.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Xperia XA",
-            "Device_Maker": "Sony",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "F3111",
-            "Device_Brand_Name": "Sony",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01208": {
-        "ua": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13G36 Safari/600.1.4",
-        "properties": {
-            "Browser_Name": "Google App",
-            "Browser_Type": "Application",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "15.1",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "9.3",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "iPad",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Tablet",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "iPad",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01209": {
+    "test-00148-01209": {
         "ua": "Mozilla/5.0 (Linux; Android 6.0.1; F5121 Build/34.0.A.2.292) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -257,46 +122,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "general SonyEricsson Device",
-            "Device_Maker": "SonyEricsson",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "SonyEricsson",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01210": {
-        "ua": "Mozilla/5.0 (Linux; Android 6.0.1; LG-K100 Build/MXB48T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "54",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "6.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "general LG Device",
-            "Device_Maker": "LG",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "LG",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01211": {
+    "test-00148-01211": {
         "ua": "Mozilla/5.0 (Android 5.0.2; Mobile; rv:50.0) Gecko/50.0 Firefox/50.0",
         "properties": {
             "Browser_Name": "Firefox",
@@ -311,11 +149,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
@@ -323,34 +161,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000-01212": {
-        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safari/8536.25",
-        "properties": {
-            "Browser_Name": "Safari",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Apple Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "6.0",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "7.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "iPhone",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "iPhone",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01213": {
+    "test-00148-01213": {
         "ua": "Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI MT7-L09 Build/HuaweiMT7-L09) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 ACHEETAHI/1",
         "properties": {
             "Browser_Name": "CM Browser",
@@ -361,7 +172,7 @@
             "Browser_Version": "0.0",
             "Platform_Codename": "Android",
             "Platform_Marketingname": "Android",
-            "Platform_Version": "5.1",
+            "Platform_Version": "5.1.1",
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
@@ -377,115 +188,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01214": {
-        "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; tb-webde/1.7.0; rv:11.0) like Gecko",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "11.0",
-            "Platform_Codename": "Windows NT 6.1",
-            "Platform_Marketingname": "Windows 7",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01215": {
-        "ua": "Mozilla/5.0 (Mobile; ALCATELOneTouch6015X SVN:01004B MMS:1.1; rv:28.0) Gecko/28.0 Firefox/28.0",
-        "properties": {
-            "Browser_Name": "Firefox",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Mozilla Foundation",
-            "Browser_Modus": null,
-            "Browser_Version": "28.0",
-            "Platform_Codename": "unknown",
-            "Platform_Marketingname": "unknown",
-            "Platform_Version": "unknown",
-            "Platform_Bits": 32,
-            "Platform_Maker": "unknown",
-            "Platform_Brand_Name": "unknown",
-            "Device_Name": "One Touch Fire E",
-            "Device_Maker": "Alcatel",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "OT-6015X",
-            "Device_Brand_Name": "Alcatel",
-            "RenderingEngine_Name": "Gecko",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Mozilla Foundation"
-        }
-    },
-    "browscap-issue-00000-01216": {
-        "ua": "Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 820; Vodafone) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "11.0",
-            "Platform_Codename": "Windows Phone OS",
-            "Platform_Marketingname": "Windows Phone OS",
-            "Platform_Version": "8.1.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "unknown",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": null,
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01217": {
-        "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; tb-webde/2.6.9; ASU2JS; rv:11.0) like Gecko",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "11.0",
-            "Platform_Codename": "Windows NT 6.3",
-            "Platform_Marketingname": "Windows 8.1",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01218": {
+    "test-00148-01218": {
         "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/54.0.2840.91 Mobile/13G34 Safari/601.1.46",
         "properties": {
             "Browser_Name": "Chrome",
@@ -496,7 +199,7 @@
             "Browser_Version": "54.0",
             "Platform_Codename": "iOS",
             "Platform_Marketingname": "iOS",
-            "Platform_Version": "9.3",
+            "Platform_Version": "9.3.3",
             "Platform_Bits": 32,
             "Platform_Maker": "Apple Inc",
             "Platform_Brand_Name": "Apple",
@@ -512,7 +215,7 @@
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000-01219": {
+    "test-00148-01219": {
         "ua": "Mozilla/5.0 (Linux; Android 4.4.2; A1-841 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -527,19 +230,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "general Acer Device",
-            "Device_Maker": "Acer",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Acer",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01220": {
+    "test-00148-01220": {
         "ua": "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36 OPR/41.0.2353.69",
         "properties": {
             "Browser_Name": "Opera",
@@ -559,14 +262,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01221": {
+    "test-00148-01221": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; anonymized by Abelssoft 1504430973)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -586,14 +289,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000-01222": {
+    "test-00148-01222": {
         "ua": "Mozilla/5.0 (Linux; Android 4.4.2; ZP1000S Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -608,73 +311,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "ZP100 PILOT",
-            "Device_Maker": "ZOPO",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "ZOPO",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01223": {
-        "ua": "Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; LG-D605 Build/KOT49I.D60520h) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.1599.103 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Android WebView",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "4.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Optimus L9 II",
-            "Device_Maker": "LG",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "LG",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01224": {
-        "ua": "Mozilla/5.0 (Linux; Android 4.4.2; Lenovo S856 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "51",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "S856",
-            "Device_Maker": "Lenovo",
-            "Device_Type": "UaDeviceType\\MobilePhone",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
             "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Lenovo",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01225": {
+    "test-00148-01225": {
         "ua": "Mozilla/5.0 (Linux; Android 6.0.1; SM-T805 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2192.105088",
         "properties": {
             "Browser_Name": "Opera Mobile",
@@ -685,7 +334,7 @@
             "Browser_Version": "37.0",
             "Platform_Codename": "Android",
             "Platform_Marketingname": "Android",
-            "Platform_Version": "6.0",
+            "Platform_Version": "6.0.1",
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
@@ -701,88 +350,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01226": {
-        "ua": "Mozilla/5.0 (Linux; U; Android 4.2.1; de-de; AVUS A-24 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
-        "properties": {
-            "Browser_Name": "Android",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "4.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.2",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01227": {
-        "ua": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "37",
-            "Platform_Codename": "Windows NT 6.2",
-            "Platform_Marketingname": "Windows 8",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01228": {
-        "ua": "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "51",
-            "Platform_Codename": "Windows NT 6.3",
-            "Platform_Marketingname": "Windows 8.1",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01229": {
+    "test-00148-01229": {
         "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; tb-1und1/2.6.9; MALNJS; rv:11.0) like Gecko",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -802,41 +370,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000-01230": {
-        "ua": "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MSNIE9A; rv:11.0) like Gecko",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "11.0",
-            "Platform_Codename": "Windows NT 6.1",
-            "Platform_Marketingname": "Windows 7",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01231": {
+    "test-00148-01231": {
         "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2935.0 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -856,41 +397,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01232": {
-        "ua": "Mozilla/5.0 (Linux; Android 4.2.2; HUAWEI Y330-U01 Build/HuaweiY330-U01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "53",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.2",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Ascend Y330",
-            "Device_Maker": "Huawei",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "Y330-U01",
-            "Device_Brand_Name": "Huawei",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01233": {
+    "test-00148-01233": {
         "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36 Vivaldi/1.5.658.44",
         "properties": {
             "Browser_Name": "Chrome",
@@ -910,41 +424,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01234": {
-        "ua": "Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G901F/XXU1CPG3 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Samsung Browser",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Samsung",
-            "Browser_Modus": null,
-            "Browser_Version": "4.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "6.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Galaxy S5 Plus",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "SM-G901F",
-            "Device_Brand_Name": "Samsung",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01235": {
+    "test-00148-01235": {
         "ua": "Mozilla/5.0 (Linux; Android 5.1; TPC-XTE10D Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.85 Safari/537.36",
         "properties": {
             "Browser_Name": "Android WebView",
@@ -959,11 +446,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
@@ -971,34 +458,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01236": {
-        "ua": "Mozilla/5.0 (iPad; CPU OS 9_3_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/18.1.132077863 Mobile/13G34 Safari/600.1.4",
-        "properties": {
-            "Browser_Name": "Google App",
-            "Browser_Type": "Application",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "18.1",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "9.3",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "iPad",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Tablet",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "iPad",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01237": {
+    "test-00148-01237": {
         "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2933.0 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1018,95 +478,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01238": {
-        "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; MASEJS)",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "7.0",
-            "Platform_Codename": "Windows NT 6.2",
-            "Platform_Marketingname": "Windows 8",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01239": {
-        "ua": "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; TOnlineIE10B; rv:11.0) like Gecko",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "11.0",
-            "Platform_Codename": "Windows NT 6.1",
-            "Platform_Marketingname": "Windows 7",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01240": {
-        "ua": "Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/5.5.50480 Mobile/12B440 Safari/600.1.4",
-        "properties": {
-            "Browser_Name": "Google App",
-            "Browser_Type": "Application",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "5.5",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "8.1",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "iPad",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Tablet",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "iPad",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01241": {
+    "test-00148-01241": {
         "ua": "Mozilla/5.0 (Linux; Android 6.0.1; GCE x86 phone Build/MOB31I.MZE89) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2935.0 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1121,11 +500,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
@@ -1133,7 +512,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01242": {
+    "test-00148-01242": {
         "ua": "Mozilla/5.0 (Linux; Android 5.0.2; SM-T815 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.68 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1144,7 +523,7 @@
             "Browser_Version": "54",
             "Platform_Codename": "Android",
             "Platform_Marketingname": "Android",
-            "Platform_Version": "5.0",
+            "Platform_Version": "5.0.2",
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
@@ -1160,61 +539,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01243": {
-        "ua": "Mozilla/5.0 (Android 4.4.4;) AppleWebKit/1.1 Version/4.0 Mobile Safari/1.1",
-        "properties": {
-            "Browser_Name": "Android",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "4.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4.4",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01244": {
-        "ua": "Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900F/G900FXXU1POCF Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Samsung Browser",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Samsung",
-            "Browser_Modus": null,
-            "Browser_Version": "4.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "5.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Galaxy S5 LTE",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "SM-G900F",
-            "Device_Brand_Name": "Samsung",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01245": {
+    "test-00148-01245": {
         "ua": "Mozilla/5.0 (Linux; Android 5.1.1; LG-K130 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1229,19 +554,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "general LG Device",
-            "Device_Maker": "LG",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "LG",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01246": {
+    "test-00148-01246": {
         "ua": "Mozilla/5.0 (Linux; Android 4.4.2; LG-F240K Build/KOT49I.F240K20i) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1252,7 +577,7 @@
             "Browser_Version": "54",
             "Platform_Codename": "Android",
             "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
+            "Platform_Version": "4.4.2",
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
@@ -1268,34 +593,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01247": {
-        "ua": "Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; A510 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
-        "properties": {
-            "Browser_Name": "Android",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "4.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.1",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "A510",
-            "Device_Maker": "Acer",
-            "Device_Type": "UaDeviceType\\FonePad",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Acer",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01248": {
+    "test-00148-01248": {
         "ua": "Mozilla/5.0 (Linux; Android 4.4.2; LG-D280 Build/KOT49I.A1452667877) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1310,46 +608,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "D280",
-            "Device_Maker": "LG",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "LG",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01249": {
-        "ua": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/MOB30Z) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.154 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "42",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "6.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Nexus 5",
-            "Device_Maker": "LG",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "Nexus 5",
-            "Device_Brand_Name": "Google",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01250": {
+    "test-00148-01250": {
         "ua": "Mozilla/5.0 (Linux; Android 4.3; GT-I9505 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1360,7 +631,7 @@
             "Browser_Version": "54",
             "Platform_Codename": "Android",
             "Platform_Marketingname": "Android",
-            "Platform_Version": "4.3",
+            "Platform_Version": "4.3.0",
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
@@ -1376,34 +647,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01251": {
-        "ua": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4) Build/MPJ24.139-63) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "53",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "6.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "general Motorola Device",
-            "Device_Maker": "Motorola",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Motorola",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01252": {
+    "test-00148-01252": {
         "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.59 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1423,41 +667,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01253": {
-        "ua": "Mozilla/5.0 (Android 6.0; Mobile; rv:45.0) Gecko/45.0 Firefox/45.0",
-        "properties": {
-            "Browser_Name": "Firefox",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Mozilla Foundation",
-            "Browser_Modus": null,
-            "Browser_Version": "45.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "6.0.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Gecko",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Mozilla Foundation"
-        }
-    },
-    "browscap-issue-00000-01254": {
+    "test-00148-01254": {
         "ua": "Mozilla/5.0 (X11; Linux x86_64) Cobalt/6.15003-debug (unlike Gecko) Starboard/2",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1477,14 +694,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000-01255": {
+    "test-00148-01255": {
         "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2933.0 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1504,14 +721,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01256": {
+    "test-00148-01256": {
         "ua": "Mozilla/5.0 (Linux; Android 4.4.2; YOGA Tablet 2-1050F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1522,7 +739,7 @@
             "Browser_Version": "54",
             "Platform_Codename": "Android",
             "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
+            "Platform_Version": "4.4.2",
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
@@ -1538,7 +755,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01257": {
+    "test-00148-01257": {
         "ua": "BUbiNG - Research at Brno University of Technology - KNOT group - http://knot.fit.vutbr.cz/crawling/ - Stop? http://law.di.unimi.it/BUbiNG.html",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1565,34 +782,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000-01258": {
-        "ua": "Mozilla/5.0 (Linux; Android 5.1.1; PHICOMM C630 (CLUE L) Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "52",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "5.1",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "general Phicomm Device",
-            "Device_Maker": "Phicomm",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Phicomm",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01259": {
+    "test-00148-01259": {
         "ua": "Mozilla/5.0 CommonCrawler Node P6RZZM6NTA7G7XOYPTPXUFV473ZIQNYON2UOMZ3QPJ4CFNADCQHBQQJPVZ32HVL.4.LUL3AF6PT7PRLDEHC4P76MOHB65FXHFXYQLJMGFUM4YJQBKF.cdn0.common.crawl.zone",
         "properties": {
             "Browser_Name": "CommonCrawler Node",
@@ -1619,61 +809,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000-01260": {
-        "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "7.0",
-            "Platform_Codename": "Windows NT 10.0",
-            "Platform_Marketingname": "Windows 10",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01261": {
-        "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; AskTbAVR-4/5.15.31.57710; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; tb-webde/2.6.0)",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "8.0",
-            "Platform_Codename": "Windows NT 5.1",
-            "Platform_Marketingname": "Windows XP",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01262": {
+    "test-00148-01262": {
         "ua": "Mozilla/5.0 CommonCrawler Node 7U56CL3SZ2BTNR5QEMMF6LBXNEJRPJXZYLAPOQ4M6QECD2JSYACQ4K3JPGX6N4P.B.G3DNBXA3G57IY2TLGXMA6J3VJ57FUNVRJSR23YFAISXONVCA.cdn0.common.crawl.zone",
         "properties": {
             "Browser_Name": "CommonCrawler Node",
@@ -1700,61 +836,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000-01263": {
-        "ua": "Mozilla/5.0 (Linux; Android 4.4.2; B15Q Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "40",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Cat B15Q",
-            "Device_Maker": "Caterpillar",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Caterpillar",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01264": {
-        "ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; Trident/5.0)",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "9.0",
-            "Platform_Codename": "Windows NT 6.2",
-            "Platform_Marketingname": "Windows 8",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01265": {
+    "test-00148-01265": {
         "ua": "Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2933.0 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1769,10 +851,10 @@
             "Platform_Bits": 64,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "Linux Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1781,7 +863,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01266": {
+    "test-00148-01266": {
         "ua": "Mozilla/5.0 CommonCrawler Node UJH4WQ6MLIAUNMZAPSJAKPKLXBB6PJM3OTSZOXEW4ZQHQCIRCBYAXARIZN4PCHL.U.6RBVUIF4HXBOMENIM2AAXWGFCUWXHWPVMPEGR62ENO5TGXFD.cdn0.common.crawl.zone",
         "properties": {
             "Browser_Name": "CommonCrawler Node",
@@ -1808,88 +890,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000-01267": {
-        "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.21 Safari/532.0",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "3",
-            "Platform_Codename": "Windows NT 5.1",
-            "Platform_Marketingname": "Windows XP",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01268": {
-        "ua": "Mozilla/5.0 (Linux; Android 4.4.4; 2014813 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Android WebView",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "4.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01269": {
-        "ua": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; MSNIE9A; rv:11.0) like Gecko",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 64,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "11.0",
-            "Platform_Codename": "Windows NT 6.1",
-            "Platform_Marketingname": "Windows 7",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01270": {
+    "test-00148-01270": {
         "ua": "Mozilla/5.0 (Linux; Android 4.4.2; GT-N8000 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1900,7 +901,7 @@
             "Browser_Version": "54",
             "Platform_Codename": "Android",
             "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
+            "Platform_Version": "4.4.2",
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
@@ -1916,61 +917,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01271": {
-        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9",
-        "properties": {
-            "Browser_Name": "Safari",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Apple Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "9.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.10.5",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "WebKit",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Apple Inc"
-        }
-    },
-    "browscap-issue-00000-01272": {
-        "ua": "Mozilla/5.0 (Linux; Android 4.4.2; LG-D605 Build/KOT49I.D60520h) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.103 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "30",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Optimus L9 II",
-            "Device_Maker": "LG",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "LG",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01273": {
+    "test-00148-01273": {
         "ua": "Mozilla/5.0 CommonCrawler Node TA74UAU3JVPJSMVFIKDWTCFK7ATS6BNHAFBC5YWLFWTOW7TISJW2RX4AOLCAUD7.R.K7CNRTK3OSN76DSD3RLJCG3YUEQ4W633ASM2MLF52Z3E4DYU.cdn0.common.crawl.zone",
         "properties": {
             "Browser_Name": "CommonCrawler Node",
@@ -1997,61 +944,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000-01274": {
-        "ua": "Dalvik/2.1.0 (Linux; U; Android 5.1.1; HUAWEI MT7-L09 Build/HuaweiMT7-L09)",
-        "properties": {
-            "Browser_Name": "Dalvik",
-            "Browser_Type": "Application",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "2.1",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "5.1",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "MT7-L09",
-            "Device_Maker": "Huawei",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "MT7-L09",
-            "Device_Brand_Name": "Huawei",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "browscap-issue-00000-01275": {
-        "ua": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; tb-webde/2.6.9; ASU2JS; rv:11.0) like Gecko",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 64,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "11.0",
-            "Platform_Codename": "Windows NT 6.3",
-            "Platform_Marketingname": "Windows 8.1",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01276": {
+    "test-00148-01276": {
         "ua": "Unibox/405 CFNetwork/807.1.3 Darwin/16.1.0 (x86_64)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2078,115 +971,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000-01277": {
-        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:39.0) Gecko/20100101 Firefox/39.0",
-        "properties": {
-            "Browser_Name": "Firefox",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Mozilla Foundation",
-            "Browser_Modus": null,
-            "Browser_Version": "39.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.10.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "Gecko",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Mozilla Foundation"
-        }
-    },
-    "browscap-issue-00000-01278": {
-        "ua": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; tb-webde/1.7.0; rv:11.0) like Gecko",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 64,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "11.0",
-            "Platform_Codename": "Windows NT 6.1",
-            "Platform_Marketingname": "Windows 7",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01279": {
-        "ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; WOW64; Trident/5.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; MS-RTC LM 8; InfoPath.3)",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "9.0",
-            "Platform_Codename": "Windows NT 6.0",
-            "Platform_Marketingname": "Windows Vista",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01280": {
-        "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbORJ/5.15.15.36191)",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "10.0",
-            "Platform_Codename": "Windows NT 6.1",
-            "Platform_Marketingname": "Windows 7",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01281": {
+    "test-00148-01281": {
         "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.149 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2206,95 +991,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01282": {
-        "ua": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; tb-webde/2.6.9; MAARJS; rv:11.0) like Gecko",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 64,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "11.0",
-            "Platform_Codename": "Windows NT 6.3",
-            "Platform_Marketingname": "Windows 8.1",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01283": {
-        "ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 64,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "9.0",
-            "Platform_Codename": "Windows NT 6.1",
-            "Platform_Marketingname": "Windows 7",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01284": {
-        "ua": "Mozilla/5.0 (Linux; Android 4.4.2; CHC-U01 Build/HuaweiCHC-U01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "40",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "G Play Mini",
-            "Device_Maker": "Huawei",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "CHC-U01",
-            "Device_Brand_Name": "Huawei",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01285": {
+    "test-00148-01285": {
         "ua": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2933.0 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2314,14 +1018,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01286": {
+    "test-00148-01286": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2341,14 +1045,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000-01287": {
+    "test-00148-01287": {
         "ua": "Mozilla/5.0 (Linux; Android 5.0.1; Archos 101c Platinum Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2363,127 +1067,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "general Archos Device",
-            "Device_Maker": "Archos",
-            "Device_Type": "UaDeviceType\\Tablet",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Archos",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01288": {
-        "ua": "Mozilla/5.0 (Android 4.2.2; Tablet; rv:50.0) Gecko/50.0 Firefox/50.0",
-        "properties": {
-            "Browser_Name": "Firefox",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Mozilla Foundation",
-            "Browser_Modus": null,
-            "Browser_Version": "50.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.2.2",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Gecko",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Mozilla Foundation"
-        }
-    },
-    "browscap-issue-00000-01289": {
-        "ua": "Mozilla/5.0 (Linux; Android 5.1.1; LIFETAB_S1036X Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "49",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "5.1",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "LifeTab S1036X",
-            "Device_Maker": "Lenovo",
-            "Device_Type": "UaDeviceType\\Tablet",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "LifeTab S1036X",
-            "Device_Brand_Name": "Lenovo",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01290": {
-        "ua": "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; (webde/1.0.0.8); rv:11.0) like Gecko",
-        "properties": {
-            "Browser_Name": "Internet Explorer",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Microsoft Corporation",
-            "Browser_Modus": null,
-            "Browser_Version": "11.0",
-            "Platform_Codename": "Windows NT 6.1",
-            "Platform_Marketingname": "Windows 7",
-            "Platform_Version": "0.0.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
-            "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Trident",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Microsoft Corporation"
-        }
-    },
-    "browscap-issue-00000-01291": {
-        "ua": "Mozilla/5.0 (Linux; Android 4.4.4; SM-A300FU Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "47",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Galaxy A3 LTE (Europe)",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "SM-A300FU",
-            "Device_Brand_Name": "Samsung",
             "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01292": {
+    "test-00148-01292": {
         "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/18.0.130791545 Mobile/14B100 Safari/600.1.4",
         "properties": {
             "Browser_Name": "Google App",
@@ -2494,7 +1090,7 @@
             "Browser_Version": "18.0",
             "Platform_Codename": "iOS",
             "Platform_Marketingname": "iOS",
-            "Platform_Version": "10.1",
+            "Platform_Version": "10.1.1",
             "Platform_Bits": 32,
             "Platform_Maker": "Apple Inc",
             "Platform_Brand_Name": "Apple",
@@ -2510,7 +1106,7 @@
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000-01293": {
+    "test-00148-01293": {
         "ua": "Mozilla/5.0 (Linux; Android 5.1.1; Moto G Build/LMY48Y) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
         "properties": {
             "Browser_Name": "Android WebView",
@@ -2525,73 +1121,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "general Motorola Device",
-            "Device_Maker": "Motorola",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Motorola",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01294": {
-        "ua": "Mozilla/5.0 (Linux; Android 5.0.2; LG-H525n Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36",
-        "properties": {
-            "Browser_Name": "Chrome",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Google Inc",
-            "Browser_Modus": null,
-            "Browser_Version": "49",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "5.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "G4c",
-            "Device_Maker": "LG",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "H525N",
-            "Device_Brand_Name": "LG",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01295": {
-        "ua": "Mozilla/5.0 (Android 4.4.2; Tablet; rv:46.0) Gecko/46.0 Firefox/46.0",
-        "properties": {
-            "Browser_Name": "Firefox",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Mozilla Foundation",
-            "Browser_Modus": null,
-            "Browser_Version": "46.0",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "4.4.2",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
-            "RenderingEngine_Name": "Gecko",
+            "RenderingEngine_Name": "Blink",
             "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Mozilla Foundation"
+            "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01296": {
+    "test-00148-01296": {
         "ua": "Mozilla/5.0 (Linux; Android 7.0; Nexus 6 Build/NBD91P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2602,7 +1144,7 @@
             "Browser_Version": "54",
             "Platform_Codename": "Android",
             "Platform_Marketingname": "Android",
-            "Platform_Version": "7.0",
+            "Platform_Version": "7.0.0",
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
@@ -2618,34 +1160,7 @@
             "RenderingEngine_Maker": "Google Inc"
         }
     },
-    "browscap-issue-00000-01297": {
-        "ua": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Silk/46.1.66 like Chrome/46.0.2490.80 Safari/537.36",
-        "properties": {
-            "Browser_Name": "Silk",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Amazon.com, Inc.",
-            "Browser_Modus": null,
-            "Browser_Version": "46.1",
-            "Platform_Codename": "Android",
-            "Platform_Marketingname": "Android",
-            "Platform_Version": "5.1",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Google Inc",
-            "Platform_Brand_Name": "Google",
-            "Device_Name": "Kindle",
-            "Device_Maker": "Amazon.com, Inc.",
-            "Device_Type": "UaDeviceType\\Tablet",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Amazon",
-            "RenderingEngine_Name": "Blink",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "Google Inc"
-        }
-    },
-    "browscap-issue-00000-01298": {
+    "test-00148-01298": {
         "ua": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.40380/37.9093; U; de) Presto/2.12.423 Version/12.16",
         "properties": {
             "Browser_Name": "Opera",
@@ -2660,11 +1175,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Oracle",
             "Platform_Brand_Name": "Oracle",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
@@ -2672,7 +1187,7 @@
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000-01299": {
+    "test-00148-01299": {
         "ua": "Mozilla/5.0 (Linux; Android 4.4.2; Doro Liberto 820 Mini Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.91 Mobile Safari/537.36",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2687,11 +1202,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Blink",

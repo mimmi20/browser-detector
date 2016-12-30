@@ -11,8 +11,8 @@
  *
  * @category   CompareTest
  *
- * @copyright  1998-2014 Browser Capabilities Project
- * @license    MIT
+ * @copyright 2012-2016 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 
 namespace BrowserDetectorTest;
@@ -30,7 +30,7 @@ use League\Flysystem\Adapter\Local;
  *
  * @category   CompareTest
  *
- * @author     Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * @author     Thomas Mueller <mimmi20@live.de>
  * @group      useragenttest
  */
 abstract class RegexesTest extends \PHPUnit_Framework_TestCase
@@ -43,7 +43,7 @@ abstract class RegexesTest extends \PHPUnit_Framework_TestCase
     /**
      * @var string
      */
-    protected $sourceDirectory = 'tests/issues/00000-browscap/';
+    protected $sourceDirectory = 'tests/issues/00000/';
 
     protected static $ok  = 0;
     protected static $nok = 0;
