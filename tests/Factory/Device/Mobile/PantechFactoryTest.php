@@ -109,7 +109,7 @@ class PantechFactoryTest extends \PHPUnit_Framework_TestCase
                 'Pantech',
                 'Pantech',
                 'Mobile Phone',
-                false,
+                true,
                 null,
             ],
             [

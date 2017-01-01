@@ -7,6 +7,7 @@ use BrowserDetector\Loader\PlatformLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
+use BrowserDetector\Factory\NormalizerFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -33,16 +34,20 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
     /**
      * @dataProvider providerDetect
      *
-     * @param string $agent
+     * @param string $userAgent
      * @param string $platform
      * @param string $version
      * @param string $manufacturer
      * @param int    $bits
      */
-    public function testDetect($agent, $platform, $version, $manufacturer, $bits)
+    public function testDetect($userAgent, $platform, $version, $manufacturer, $bits)
     {
+        $normalizer = (new NormalizerFactory())->build();
+
+        $normalizedUa = $normalizer->normalize($userAgent);
+
         /** @var \UaResult\Os\OsInterface $result */
-        $result = $this->object->detect($agent);
+        $result = $this->object->detect($normalizedUa);
 
         self::assertInstanceOf('\UaResult\Os\OsInterface', $result);
         self::assertSame(

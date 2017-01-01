@@ -7,6 +7,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
+use BrowserDetector\Factory\NormalizerFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -33,7 +34,7 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
     /**
      * @dataProvider providerDetect
      *
-     * @param string $agent
+     * @param string $userAgent
      * @param string $deviceName
      * @param string $marketingName
      * @param string $manufacturer
@@ -42,10 +43,14 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
      * @param bool   $dualOrientation
      * @param string $pointingMethod
      */
-    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
+    public function testDetect($userAgent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $normalizer = (new NormalizerFactory())->build();
+
+        $normalizedUa = $normalizer->normalize($userAgent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = $this->object->detect($agent);
+        $result = $this->object->detect($normalizedUa);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -2479,7 +2484,7 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
                 'Pantech',
                 'Pantech',
                 'Mobile Phone',
-                false,
+                true,
                 null,
             ],
             [
