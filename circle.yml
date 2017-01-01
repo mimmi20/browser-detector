@@ -119,6 +119,9 @@ test:
     #    40 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00085 --colors=auto --columns 117 tests/UserAgentsTest/T00085Test.php
 
+    #    47 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00154 --colors=auto --columns 117 tests/UserAgentsTest/T00154Test.php
+
     #    48 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00083 --colors=auto --columns 117 tests/UserAgentsTest/T00083Test.php
 
@@ -155,11 +158,38 @@ test:
     #    72 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00068 --colors=auto --columns 117 tests/UserAgentsTest/T00068Test.php
 
+    #    74 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00152 --colors=auto --columns 117 tests/UserAgentsTest/T00152Test.php
+
+    #    89 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00155 --colors=auto --columns 117 tests/UserAgentsTest/T00155Test.php
+
     #   103 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00067 --colors=auto --columns 117 tests/UserAgentsTest/T00067Test.php
 
+    #   116 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00156 --colors=auto --columns 117 tests/UserAgentsTest/T00156Test.php
+
+    #   125 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00158 --colors=auto --columns 117 tests/UserAgentsTest/T00158Test.php
+
+    #   179 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00160 --colors=auto --columns 117 tests/UserAgentsTest/T00160Test.php
+
+    #   189 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00159 --colors=auto --columns 117 tests/UserAgentsTest/T00159Test.php
+
+    #   194 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00161 --colors=auto --columns 117 tests/UserAgentsTest/T00161Test.php
+
+    #   199 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00157 --colors=auto --columns 117 tests/UserAgentsTest/T00157Test.php
+
     #   204 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00147 --colors=auto --columns 117 tests/UserAgentsTest/T00147Test.php
+
+    #   227 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00162 --colors=auto --columns 117 tests/UserAgentsTest/T00162Test.php
 
     #   264 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00122 --colors=auto --columns 117 tests/UserAgentsTest/T00122Test.php
@@ -181,6 +211,9 @@ test:
 
     #   725 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00139 --colors=auto --columns 117 tests/UserAgentsTest/T00139Test.php
+
+    #   744 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00153 --colors=auto --columns 117 tests/UserAgentsTest/T00153Test.php
 
     #   756 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00126 --colors=auto --columns 117 tests/UserAgentsTest/T00126Test.php
@@ -377,6 +410,9 @@ test:
     #  3027 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00048 --colors=auto --columns 117 tests/UserAgentsTest/T00048Test.php
 
+    #  3027 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00151 --colors=auto --columns 117 tests/UserAgentsTest/T00151Test.php
+
     #  3063 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00050 --colors=auto --columns 117 tests/UserAgentsTest/T00050Test.php
 
@@ -440,5 +476,317 @@ test:
     # 11761 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00101 --colors=auto --columns 117 tests/UserAgentsTest/T00101Test.php
 
+    # 13409 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00266 --colors=auto --columns 117 tests/UserAgentsTest/T00266Test.php
+
     # 15946 tests
     - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00057 --colors=auto --columns 117 tests/UserAgentsTest/T00057Test.php
+
+    # 17810 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00163 --colors=auto --columns 117 tests/UserAgentsTest/T00163Test.php
+
+    # 19695 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00240 --colors=auto --columns 117 tests/UserAgentsTest/T00240Test.php
+
+    # 19739 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00167 --colors=auto --columns 117 tests/UserAgentsTest/T00167Test.php
+
+    # 19770 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00168 --colors=auto --columns 117 tests/UserAgentsTest/T00168Test.php
+
+    # 19812 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00249 --colors=auto --columns 117 tests/UserAgentsTest/T00249Test.php
+
+    # 19821 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00166 --colors=auto --columns 117 tests/UserAgentsTest/T00166Test.php
+
+    # 19844 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00169 --colors=auto --columns 117 tests/UserAgentsTest/T00169Test.php
+
+    # 19869 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00216 --colors=auto --columns 117 tests/UserAgentsTest/T00216Test.php
+
+    # 19882 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00165 --colors=auto --columns 117 tests/UserAgentsTest/T00165Test.php
+
+    # 19892 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00170 --colors=auto --columns 117 tests/UserAgentsTest/T00170Test.php
+
+    # 19906 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00213 --colors=auto --columns 117 tests/UserAgentsTest/T00213Test.php
+
+    # 19909 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00164 --colors=auto --columns 117 tests/UserAgentsTest/T00164Test.php
+
+    # 19915 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00215 --colors=auto --columns 117 tests/UserAgentsTest/T00215Test.php
+
+    # 19917 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00172 --colors=auto --columns 117 tests/UserAgentsTest/T00172Test.php
+
+    # 19917 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00211 --colors=auto --columns 117 tests/UserAgentsTest/T00211Test.php
+
+    # 19918 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00173 --colors=auto --columns 117 tests/UserAgentsTest/T00173Test.php
+
+    # 19932 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00218 --colors=auto --columns 117 tests/UserAgentsTest/T00218Test.php
+
+    # 19934 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00212 --colors=auto --columns 117 tests/UserAgentsTest/T00212Test.php
+
+    # 19936 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00229 --colors=auto --columns 117 tests/UserAgentsTest/T00229Test.php
+
+    # 19940 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00239 --colors=auto --columns 117 tests/UserAgentsTest/T00239Test.php
+
+    # 19942 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00174 --colors=auto --columns 117 tests/UserAgentsTest/T00174Test.php
+
+    # 19942 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00234 --colors=auto --columns 117 tests/UserAgentsTest/T00234Test.php
+
+    # 19942 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00243 --colors=auto --columns 117 tests/UserAgentsTest/T00243Test.php
+
+    # 19945 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00235 --colors=auto --columns 117 tests/UserAgentsTest/T00235Test.php
+
+    # 19946 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00220 --colors=auto --columns 117 tests/UserAgentsTest/T00220Test.php
+
+    # 19948 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00227 --colors=auto --columns 117 tests/UserAgentsTest/T00227Test.php
+
+    # 19949 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00206 --colors=auto --columns 117 tests/UserAgentsTest/T00206Test.php
+
+    # 19949 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00222 --colors=auto --columns 117 tests/UserAgentsTest/T00222Test.php
+
+    # 19951 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00178 --colors=auto --columns 117 tests/UserAgentsTest/T00178Test.php
+
+    # 19953 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00207 --colors=auto --columns 117 tests/UserAgentsTest/T00207Test.php
+
+    # 19953 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00237 --colors=auto --columns 117 tests/UserAgentsTest/T00237Test.php
+
+    # 19956 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00175 --colors=auto --columns 117 tests/UserAgentsTest/T00175Test.php
+
+    # 19958 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00180 --colors=auto --columns 117 tests/UserAgentsTest/T00180Test.php
+
+    # 19959 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00179 --colors=auto --columns 117 tests/UserAgentsTest/T00179Test.php
+
+    # 19959 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00224 --colors=auto --columns 117 tests/UserAgentsTest/T00224Test.php
+
+    # 19959 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00241 --colors=auto --columns 117 tests/UserAgentsTest/T00241Test.php
+
+    # 19960 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00232 --colors=auto --columns 117 tests/UserAgentsTest/T00232Test.php
+
+    # 19961 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00236 --colors=auto --columns 117 tests/UserAgentsTest/T00236Test.php
+
+    # 19962 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00225 --colors=auto --columns 117 tests/UserAgentsTest/T00225Test.php
+
+    # 19962 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00254 --colors=auto --columns 117 tests/UserAgentsTest/T00254Test.php
+
+    # 19966 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00221 --colors=auto --columns 117 tests/UserAgentsTest/T00221Test.php
+
+    # 19967 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00203 --colors=auto --columns 117 tests/UserAgentsTest/T00203Test.php
+
+    # 19968 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00181 --colors=auto --columns 117 tests/UserAgentsTest/T00181Test.php
+
+    # 19968 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00219 --colors=auto --columns 117 tests/UserAgentsTest/T00219Test.php
+
+    # 19970 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00228 --colors=auto --columns 117 tests/UserAgentsTest/T00228Test.php
+
+    # 19971 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00223 --colors=auto --columns 117 tests/UserAgentsTest/T00223Test.php
+
+    # 19972 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00233 --colors=auto --columns 117 tests/UserAgentsTest/T00233Test.php
+
+    # 19973 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00226 --colors=auto --columns 117 tests/UserAgentsTest/T00226Test.php
+
+    # 19973 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00230 --colors=auto --columns 117 tests/UserAgentsTest/T00230Test.php
+
+    # 19974 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00253 --colors=auto --columns 117 tests/UserAgentsTest/T00253Test.php
+
+    # 19977 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00176 --colors=auto --columns 117 tests/UserAgentsTest/T00176Test.php
+
+    # 19977 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00242 --colors=auto --columns 117 tests/UserAgentsTest/T00242Test.php
+
+    # 19978 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00171 --colors=auto --columns 117 tests/UserAgentsTest/T00171Test.php
+
+    # 19979 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00200 --colors=auto --columns 117 tests/UserAgentsTest/T00200Test.php
+
+    # 19979 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00231 --colors=auto --columns 117 tests/UserAgentsTest/T00231Test.php
+
+    # 19979 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00251 --colors=auto --columns 117 tests/UserAgentsTest/T00251Test.php
+
+    # 19980 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00248 --colors=auto --columns 117 tests/UserAgentsTest/T00248Test.php
+
+    # 19982 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00217 --colors=auto --columns 117 tests/UserAgentsTest/T00217Test.php
+
+    # 19982 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00252 --colors=auto --columns 117 tests/UserAgentsTest/T00252Test.php
+
+    # 19983 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00205 --colors=auto --columns 117 tests/UserAgentsTest/T00205Test.php
+
+    # 19983 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00250 --colors=auto --columns 117 tests/UserAgentsTest/T00250Test.php
+
+    # 19984 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00204 --colors=auto --columns 117 tests/UserAgentsTest/T00204Test.php
+
+    # 19984 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00238 --colors=auto --columns 117 tests/UserAgentsTest/T00238Test.php
+
+    # 19985 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00209 --colors=auto --columns 117 tests/UserAgentsTest/T00209Test.php
+
+    # 19985 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00210 --colors=auto --columns 117 tests/UserAgentsTest/T00210Test.php
+
+    # 19985 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00255 --colors=auto --columns 117 tests/UserAgentsTest/T00255Test.php
+
+    # 19985 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00261 --colors=auto --columns 117 tests/UserAgentsTest/T00261Test.php
+
+    # 19985 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00264 --colors=auto --columns 117 tests/UserAgentsTest/T00264Test.php
+
+    # 19986 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00177 --colors=auto --columns 117 tests/UserAgentsTest/T00177Test.php
+
+    # 19986 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00198 --colors=auto --columns 117 tests/UserAgentsTest/T00198Test.php
+
+    # 19986 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00202 --colors=auto --columns 117 tests/UserAgentsTest/T00202Test.php
+
+    # 19987 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00208 --colors=auto --columns 117 tests/UserAgentsTest/T00208Test.php
+
+    # 19988 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00199 --colors=auto --columns 117 tests/UserAgentsTest/T00199Test.php
+
+    # 19989 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00193 --colors=auto --columns 117 tests/UserAgentsTest/T00193Test.php
+
+    # 19990 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00195 --colors=auto --columns 117 tests/UserAgentsTest/T00195Test.php
+
+    # 19990 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00257 --colors=auto --columns 117 tests/UserAgentsTest/T00257Test.php
+
+    # 19991 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00189 --colors=auto --columns 117 tests/UserAgentsTest/T00189Test.php
+
+    # 19991 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00258 --colors=auto --columns 117 tests/UserAgentsTest/T00258Test.php
+
+    # 19991 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00259 --colors=auto --columns 117 tests/UserAgentsTest/T00259Test.php
+
+    # 19991 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00260 --colors=auto --columns 117 tests/UserAgentsTest/T00260Test.php
+
+    # 19992 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00190 --colors=auto --columns 117 tests/UserAgentsTest/T00190Test.php
+
+    # 19992 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00192 --colors=auto --columns 117 tests/UserAgentsTest/T00192Test.php
+
+    # 19992 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00196 --colors=auto --columns 117 tests/UserAgentsTest/T00196Test.php
+
+    # 19992 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00197 --colors=auto --columns 117 tests/UserAgentsTest/T00197Test.php
+
+    # 19992 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00201 --colors=auto --columns 117 tests/UserAgentsTest/T00201Test.php
+
+    # 19992 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00247 --colors=auto --columns 117 tests/UserAgentsTest/T00247Test.php
+
+    # 19992 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00256 --colors=auto --columns 117 tests/UserAgentsTest/T00256Test.php
+
+    # 19993 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00186 --colors=auto --columns 117 tests/UserAgentsTest/T00186Test.php
+
+    # 19993 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00246 --colors=auto --columns 117 tests/UserAgentsTest/T00246Test.php
+
+    # 19994 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00184 --colors=auto --columns 117 tests/UserAgentsTest/T00184Test.php
+
+    # 19994 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00187 --colors=auto --columns 117 tests/UserAgentsTest/T00187Test.php
+
+    # 19994 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00188 --colors=auto --columns 117 tests/UserAgentsTest/T00188Test.php
+
+    # 19994 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00263 --colors=auto --columns 117 tests/UserAgentsTest/T00263Test.php
+
+    # 19994 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00265 --colors=auto --columns 117 tests/UserAgentsTest/T00265Test.php
+
+    # 19995 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00182 --colors=auto --columns 117 tests/UserAgentsTest/T00182Test.php
+
+    # 19995 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00183 --colors=auto --columns 117 tests/UserAgentsTest/T00183Test.php
+
+    # 19995 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00191 --colors=auto --columns 117 tests/UserAgentsTest/T00191Test.php
+
+    # 19995 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00194 --colors=auto --columns 117 tests/UserAgentsTest/T00194Test.php
+
+    # 19995 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00214 --colors=auto --columns 117 tests/UserAgentsTest/T00214Test.php
+
+    # 19997 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00185 --colors=auto --columns 117 tests/UserAgentsTest/T00185Test.php
+
+    # 19997 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00244 --colors=auto --columns 117 tests/UserAgentsTest/T00244Test.php
+
+    # 19997 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00245 --colors=auto --columns 117 tests/UserAgentsTest/T00245Test.php
+
+    # 19998 tests
+    - php -n vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00262 --colors=auto --columns 117 tests/UserAgentsTest/T00262Test.php
