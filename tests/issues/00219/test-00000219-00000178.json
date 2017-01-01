@@ -1,5 +1,5 @@
 {
-    "browscap-issue-00000219-00017800": {
+    "test-00000219-00017800": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; BTRS31753; SIMBAR={9EEF26CA-000C-11E1-96AE-C916947AB76F}; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; FDM; SlimBrowser)",
         "properties": {
             "Browser_Name": "SlimBrowser",
@@ -19,14 +19,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017801": {
+    "test-00000219-00017801": {
         "ua": "Mozilla/5.0 (compatible; MSIE 9.0; X11; Linux i686; en) Opera 11.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -46,14 +46,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017802": {
+    "test-00000219-00017802": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; GTB7.2; BTRS31753; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -73,14 +73,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017803": {
+    "test-00000219-00017803": {
         "ua": "MQQBrowser/2.8/Mozilla/5.0 (Linux; U; Android 2.2; de-de; GT-I9000 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
         "properties": {
             "Browser_Name": "Android",
@@ -91,7 +91,7 @@
             "Browser_Version": "4.0",
             "Platform_Codename": "Android",
             "Platform_Marketingname": "Android",
-            "Platform_Version": "2.2",
+            "Platform_Version": "2.2.0",
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
@@ -107,7 +107,7 @@
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000219-00017804": {
+    "test-00000219-00017804": {
         "ua": "MQQBrowser/2.8/Adr (Linux; U; 2.2; zh-cn; GT-I9000 Build/FROYO.XXJPO;480*800)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -116,12 +116,12 @@
             "Browser_Maker": "unknown",
             "Browser_Modus": null,
             "Browser_Version": "0.0",
-            "Platform_Codename": "Linux",
-            "Platform_Marketingname": "Linux",
+            "Platform_Codename": "Android",
+            "Platform_Marketingname": "Android",
             "Platform_Version": "0.0.0",
             "Platform_Bits": 32,
-            "Platform_Maker": "Linux Foundation",
-            "Platform_Brand_Name": "Linux Foundation",
+            "Platform_Maker": "Google Inc",
+            "Platform_Brand_Name": "Google",
             "Device_Name": "Galaxy S",
             "Device_Maker": "Samsung",
             "Device_Type": "UaDeviceType\\MobilePhone",
@@ -134,7 +134,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017805": {
+    "test-00000219-00017805": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SIMBAR={805BA98E-079B-41AD-A88A-3D10C2BFDFA0}; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbAVR-W1/5.14.1.20064)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -154,14 +154,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017806": {
+    "test-00000219-00017806": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS26718; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -181,14 +181,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017807": {
+    "test-00000219-00017807": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MS-RTC LM 8; OfficeLiveConnector.1.4; OfficeLivePatch.1.3; InfoPath.3; .NET4.0C)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -208,14 +208,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017808": {
+    "test-00000219-00017808": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; FBSMTWB; MRSPUTNIK 2, 3, 0, 250; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; AskTbORJ/5.14.1.20007)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -235,14 +235,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017809": {
+    "test-00000219-00017809": {
         "ua": "Mozilla/5.0 (Linux; U; Android 3.2; ru-ru; A501 Build/HTJ85B) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 GoogleGoggles-Android/1.7.1; gzip",
         "properties": {
             "Browser_Name": "Android",
@@ -257,19 +257,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Google Inc",
             "Platform_Brand_Name": "Google",
-            "Device_Name": "Picasso",
-            "Device_Maker": "Acer",
-            "Device_Type": "UaDeviceType\\Tablet",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Acer",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "WebKit",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000219-00017810": {
+    "test-00000219-00017810": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.0; AOLBuild 4327.5201; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; .NET4.0C; AskTbORJ/5.14.1.20007)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -289,14 +289,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017811": {
+    "test-00000219-00017811": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; BTRS122159; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; MSOffice 12)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -316,14 +316,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017812": {
+    "test-00000219-00017812": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS122159; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.3; OfficeLivePatch.0.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -343,14 +343,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017813": {
+    "test-00000219-00017813": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SIMBAR={A2E3B57E-39B4-44e2-A17E-F35E2C4001F4}; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; InfoPath.1; .NET CLR 2.0.50727; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -370,14 +370,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017814": {
+    "test-00000219-00017814": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; PwCIE; GTB6.5; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; Avant Browser; .NET CLR 1.1.4322; .NET CLR 1.0.3705; MS-RTC LM 8; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; PwCIE; PwCIE)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -397,14 +397,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017815": {
+    "test-00000219-00017815": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; TOB 6.13; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; tb-webde/1.7.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -424,14 +424,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017816": {
+    "test-00000219-00017816": {
         "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.53.11 (KHTML, like Gecko) Version/5.1 Safari/7534.51.22 Sleipnir/3.1.1.1",
         "properties": {
             "Browser_Name": "Safari",
@@ -451,14 +451,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "WebKit",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000219-00017817": {
+    "test-00000219-00017817": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; GTB7.2; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; InfoPath.1; AskTbAVR-W1/5.13.2.19401; BRI/2)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -478,14 +478,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017818": {
+    "test-00000219-00017818": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; bg; rv:1.9.2.26) Gecko/20120128 Firefox/3.6.26",
         "properties": {
             "Browser_Name": "Firefox",
@@ -505,14 +505,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017819": {
+    "test-00000219-00017819": {
         "ua": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.1.15082/27.1176; U; sk) Presto/2.8.119 Version/11.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -527,11 +527,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Oracle",
             "Platform_Brand_Name": "Oracle",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
@@ -539,7 +539,7 @@
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000219-00017820": {
+    "test-00000219-00017820": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; InfoPath.3; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; AskTbHIP/5.11.3.15590)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -559,14 +559,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017821": {
+    "test-00000219-00017821": {
         "ua": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.20457/27.1176; U; cs) Presto/2.8.119 Version/11.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -581,11 +581,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Oracle",
             "Platform_Brand_Name": "Oracle",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
@@ -593,7 +593,7 @@
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000219-00017822": {
+    "test-00000219-00017822": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.2; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; BRI/2; tb-webde/1.7.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -613,14 +613,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017823": {
+    "test-00000219-00017823": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.2; AskTbALSV5/5.9.1.14019)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -640,14 +640,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017824": {
+    "test-00000219-00017824": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3; AskTB5.6)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -667,14 +667,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017825": {
+    "test-00000219-00017825": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.2; BTRS86335; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; (webde/1.0.0.8))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -694,14 +694,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017826": {
+    "test-00000219-00017826": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS26718; SIMBAR={9700F231-1304-11E0-95B7-0010DCEF1AB4}; FunWebProducts; GTB7.2; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; FunWebProducts; AskTbORJ/5.14.1.20007; Versatel.de ISDN 0404)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -721,14 +721,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017827": {
+    "test-00000219-00017827": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.2.22) Gecko/20110902 (gmx/2.0) Firefox/3.6.22 ( .NET CLR 3.5.30729; .NET4.0E)",
         "properties": {
             "Browser_Name": "Firefox",
@@ -748,14 +748,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017828": {
+    "test-00000219-00017828": {
         "ua": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1.5) Gecko/20091204 Thunderbird/3.0",
         "properties": {
             "Browser_Name": "Thunderbird",
@@ -775,14 +775,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017829": {
+    "test-00000219-00017829": {
         "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1035.0 Safari/535.20",
         "properties": {
             "Browser_Name": "Chrome",
@@ -802,14 +802,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "WebKit",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000219-00017830": {
+    "test-00000219-00017830": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET CLR 1.1.4322; .NET4.0C; MALC; AskTbTKR/5.8.0.12304)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -829,14 +829,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017831": {
+    "test-00000219-00017831": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Win64; x64; Trident/4.0; .NET CLR 2.0.50727; SLCC1; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; .NET4.0C; .NET4.0E; Alexa Toolbar)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -856,14 +856,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017832": {
+    "test-00000219-00017832": {
         "ua": "Opera/9.80 (Windows NT 6.0; U; MRA 5.9 (build 4953); ru) Presto/2.10.229 Version/11.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -883,14 +883,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000219-00017833": {
+    "test-00000219-00017833": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS7646; GTB7.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; Zune 4.7)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -910,14 +910,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017834": {
+    "test-00000219-00017834": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/4.0; GTB7.2; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.0.04506)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -937,14 +937,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017835": {
+    "test-00000219-00017835": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.2; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; AskTbMPC2/5.12.2.16749),gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -964,14 +964,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017836": {
+    "test-00000219-00017836": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.2; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; AskTbMPC2/5.12.2.16749)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -991,14 +991,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017837": {
+    "test-00000219-00017837": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; AskTbFXTV5/5.9.1.14019)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1018,14 +1018,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017838": {
+    "test-00000219-00017838": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 1.1.4322; .NET CLR 3.5.21022; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Tablet PC 2.0; .NET4.0C)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1045,14 +1045,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017839": {
+    "test-00000219-00017839": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; GTB7.2; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; .NET CLR 3.5.30729; .NET4.0C; .NET CLR 3.0.30729; BRI/2)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1072,14 +1072,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017840": {
+    "test-00000219-00017840": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS122333; GTB7.2)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1099,14 +1099,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017841": {
+    "test-00000219-00017841": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; GTB7.2; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; InfoPath.2; .NET CLR 3.0.30729; .NET4.0C; AskTbORJ/5.14.1.20007)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1126,14 +1126,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017842": {
+    "test-00000219-00017842": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; GTB7.2; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; InfoPath.1; .NET CLR 3.5.30729; .NET CLR 3.0.30618; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; BRI/2; msn OptimizedIE8;DEDE)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1153,14 +1153,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017843": {
+    "test-00000219-00017843": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.26) Gecko/20120128 (WEB.DE/1.6.2) Firefox/3.6.26 97680703 control/7.02135",
         "properties": {
             "Browser_Name": "Firefox",
@@ -1180,14 +1180,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017844": {
+    "test-00000219-00017844": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB6; (R1 1.5); .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1207,14 +1207,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017845": {
+    "test-00000219-00017845": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; BRI/2; Zune 4.7)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1234,14 +1234,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017846": {
+    "test-00000219-00017846": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS127583; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; FDM)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1261,14 +1261,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017847": {
+    "test-00000219-00017847": {
         "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_4) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.46 Safari/535.11",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1288,14 +1288,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "WebKit",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000219-00017848": {
+    "test-00000219-00017848": {
         "ua": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.13247/27.1176; U; de) Presto/2.8.119 Version/11.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -1310,11 +1310,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Oracle",
             "Platform_Brand_Name": "Oracle",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
@@ -1322,7 +1322,7 @@
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000219-00017849": {
+    "test-00000219-00017849": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SIMBAR={071C65C7-BC4F-4F5C-B6E0-C619038B0039}; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1342,14 +1342,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017850": {
+    "test-00000219-00017850": {
         "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0a1) Gecko/20120107 Firefox/12.0a1",
         "properties": {
             "Browser_Name": "Firefox",
@@ -1369,14 +1369,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017851": {
+    "test-00000219-00017851": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; FunWebProducts; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET4.0C; FunWebProducts)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1396,14 +1396,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017852": {
+    "test-00000219-00017852": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; BTRS86417; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAMD; .NET CLR 1.1.4322; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; BRI/2)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1423,14 +1423,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017853": {
+    "test-00000219-00017853": {
         "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_5) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.46 Safari/535.11",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1450,14 +1450,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "WebKit",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000219-00017854": {
+    "test-00000219-00017854": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; HPDTDF; BRI/1; .NET4.0C; InfoPath.3; tb-webde/1.7.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1477,14 +1477,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017855": {
+    "test-00000219-00017855": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; TOB 6.07; Windows NT 6.0; GTB7.2; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.0.04506; eSobiSubscriber 2.0.4.16)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1504,14 +1504,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017856": {
+    "test-00000219-00017856": {
         "ua": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.2.3) Gecko/20100507 Pardus/2009 Firefox/3.6.3",
         "properties": {
             "Browser_Name": "Firefox",
@@ -1531,14 +1531,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017857": {
+    "test-00000219-00017857": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; eSobiSubscriber 2.0.4.16; .NET CLR 3.0.30729; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; AskTbORJ/5.13.1.18107)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1558,14 +1558,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017858": {
+    "test-00000219-00017858": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAAU; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; BRI/2)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1585,14 +1585,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017859": {
+    "test-00000219-00017859": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.2; AskTbORJ/5.13.1.18107; .NET CLR 2.0.50727; Zune 4.7; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1612,14 +1612,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017860": {
+    "test-00000219-00017860": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET4.0C; AskTbORJ/5.13.1.18107; tb-webde/1.7.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1639,14 +1639,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017861": {
+    "test-00000219-00017861": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; el; rv:1.9.2.26) Gecko/20120128 Firefox/3.6.26 ( .NET CLR 3.5.30729)",
         "properties": {
             "Browser_Name": "Firefox",
@@ -1666,14 +1666,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017862": {
+    "test-00000219-00017862": {
         "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.0 Safari/535.20",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1693,14 +1693,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "WebKit",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000219-00017863": {
+    "test-00000219-00017863": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; BTRS129271; .NET CLR 2.0.50727; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1720,14 +1720,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017864": {
+    "test-00000219-00017864": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; eu; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10 (.NET CLR 3.5.30729)",
         "properties": {
             "Browser_Name": "Firefox",
@@ -1747,14 +1747,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017865": {
+    "test-00000219-00017865": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS122617; SIMBAR={6735FEB3-1280-11E1-9654-001BFC2FD832}; GTB7.2; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; AskTbSTC-US/5.12.2.16749)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1774,14 +1774,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017866": {
+    "test-00000219-00017866": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; GTB7.1; BTRS122063; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1801,14 +1801,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017867": {
+    "test-00000219-00017867": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; sk; rv:1.9.2.23) Gecko/20110920 AskTbNRO2/3.13.2.19379 Firefox/3.6.23",
         "properties": {
             "Browser_Name": "Firefox",
@@ -1828,14 +1828,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017868": {
+    "test-00000219-00017868": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS122262; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1855,14 +1855,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017869": {
+    "test-00000219-00017869": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; BTRS5779; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; eSobiSubscriber 2.0.4.16; .NET4.0C; .NET4.0E; AskTbNRO/5.12.2.16749)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1882,14 +1882,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017870": {
+    "test-00000219-00017870": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; MAMD; .NET4.0C; AskTbMYC/5.12.2.16749; BRI/2; InfoPath.2)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1909,14 +1909,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017871": {
+    "test-00000219-00017871": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; GTB7.2; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 1.1.4322; InfoPath.2; .NET CLR 3.5.30729; .NET CLR 3.0.30618; Hotbar 11.0.120.0; .NET4.0C)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1936,14 +1936,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017872": {
+    "test-00000219-00017872": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MDDC; .NET4.0C; AskTbORJ/5.14.1.20007; BRI/2; ms-office; MSOffice 14)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1963,14 +1963,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017873": {
+    "test-00000219-00017873": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.1.7) Gecko/20091221 AskTbSTC-SRS/3.13.1.18132 Firefox/3.5.7",
         "properties": {
             "Browser_Name": "Firefox",
@@ -1990,14 +1990,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017874": {
+    "test-00000219-00017874": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; GTB7.2; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTbORJ/5.14.1.20007; Internet Explorer anonymized by Abelssoft 1104817216)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2017,14 +2017,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017875": {
+    "test-00000219-00017875": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.2; BTRS31753; .NET CLR 2.0.50727; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; BRI/2)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2044,14 +2044,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017876": {
+    "test-00000219-00017876": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; GTB7.2; .NET CLR 1.1.4322; T-Online IE7; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; tb-webde/1.6.2)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2071,14 +2071,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017877": {
+    "test-00000219-00017877": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; AskTbVSAT/5.12.2.16749)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2098,14 +2098,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017878": {
+    "test-00000219-00017878": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/2; MASM; .NET4.0C; SlimBrowser)",
         "properties": {
             "Browser_Name": "SlimBrowser",
@@ -2125,14 +2125,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017879": {
+    "test-00000219-00017879": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.2; .NET CLR 1.0.3705; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; AskTbAVR-W1/5.14.1.20064)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2152,14 +2152,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017880": {
+    "test-00000219-00017880": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2.26) Gecko/20120128 Firefox/3.6.26 ( .NET CLR 3.5.30729) 6969048903 feed/7.2.00231",
         "properties": {
             "Browser_Name": "Firefox",
@@ -2179,14 +2179,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017881": {
+    "test-00000219-00017881": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbATU2/5.12.5.17640)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2206,14 +2206,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017882": {
+    "test-00000219-00017882": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbSTC-SRS/5.13.1.18132; MAMI)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2233,14 +2233,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017883": {
+    "test-00000219-00017883": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbSTC-SRS/5.13.1.18132; MAMI)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2260,14 +2260,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017884": {
+    "test-00000219-00017884": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; InfoPath.2; FDM; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; tb-webde/1.7.0; Creative ZENcast v2.00.13; (webde/1.0.0.8))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2287,14 +2287,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017885": {
+    "test-00000219-00017885": {
         "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20120208 Firefox/10.0.1 SeaMonkey/2.7.1 Lightning/1.2.1",
         "properties": {
             "Browser_Name": "SeaMonkey",
@@ -2314,14 +2314,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017886": {
+    "test-00000219-00017886": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; de) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/NA Chrome anonymized by Abelssoft 1716604950",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2341,14 +2341,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "WebKit",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000219-00017887": {
+    "test-00000219-00017887": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.10) Gecko/20100914 AskTbAVR-IDW/3.14.1.20064 YFF35 Firefox/3.6.10",
         "properties": {
             "Browser_Name": "Firefox",
@@ -2368,14 +2368,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017888": {
+    "test-00000219-00017888": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; GTB7.2; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; InfoPath.2; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; .NET4.0C; BRI/2; yie8)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2395,14 +2395,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017889": {
+    "test-00000219-00017889": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.2; SIMBAR={C5C2634C-2163-4181-953D-497108186D7F}; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2422,14 +2422,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017890": {
+    "test-00000219-00017890": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS31753; .NET CLR 1.1.4322; tb-webde/1.6.0; (webde/1.0.0.8))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2449,14 +2449,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017891": {
+    "test-00000219-00017891": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Arcor 5.006; GTB7.2; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.5.21022; .NET CLR 3.5.30729; .NET CLR 3.0.30618)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2476,14 +2476,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017892": {
+    "test-00000219-00017892": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Anonymisiert durch AlMiSoft Browser-Maulkorb 45237912; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2503,14 +2503,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017893": {
+    "test-00000219-00017893": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; GTB7.2; .NET CLR 1.1.4322; Alexa Toolbar; AskTbSB/5.14.1.20007)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2530,14 +2530,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000219-00017894": {
+    "test-00000219-00017894": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13",
         "properties": {
             "Browser_Name": "Safari",
@@ -2557,14 +2557,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "WebKit",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000219-00017895": {
+    "test-00000219-00017895": {
         "ua": "Mozilla/5.0 (Windows NT 5.2) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.46 Safari/535.11",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2584,14 +2584,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "WebKit",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Apple Inc"
         }
     },
-    "browscap-issue-00000219-00017896": {
+    "test-00000219-00017896": {
         "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; CIBA; Tablet PC 2.0; 360SE)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2611,14 +2611,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017897": {
+    "test-00000219-00017897": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.2.6) Gecko/20100625 Firefox/8.0.1 (de) Anonymisiert durch AlMiSoft Browser-Maulkorb 50928225",
         "properties": {
             "Browser_Name": "Firefox",
@@ -2638,14 +2638,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000219-00017898": {
+    "test-00000219-00017898": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; .NET4.0C; InfoPath.2; AskTbORJ/5.13.1.18107)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2665,14 +2665,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Microsoft Corporation"
         }
     },
-    "browscap-issue-00000219-00017899": {
+    "test-00000219-00017899": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; tb-webde/1.7.0; AskTbPTV5/5.14.1.20007)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2692,7 +2692,7 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Trident",
             "RenderingEngine_Version": "unknown",

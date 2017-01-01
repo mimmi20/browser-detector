@@ -1,5 +1,5 @@
 {
-    "browscap-issue-00000241-00009900": {
+    "test-00000241-00009900": {
         "ua": "Opera/9.51 (X11; Linux x86_64; U; en)",
         "properties": {
             "Browser_Name": "Opera",
@@ -19,14 +19,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009901": {
+    "test-00000241-00009901": {
         "ua": "Opera/9.51 (X11; Linux i686; U; pl)",
         "properties": {
             "Browser_Name": "Opera",
@@ -46,14 +46,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009902": {
+    "test-00000241-00009902": {
         "ua": "Opera/9.51 (X11; Linux i686; U; nl)",
         "properties": {
             "Browser_Name": "Opera",
@@ -73,14 +73,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009903": {
+    "test-00000241-00009903": {
         "ua": "Opera/9.51 (X11; Linux i686; U; en-GB)",
         "properties": {
             "Browser_Name": "Opera",
@@ -100,14 +100,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009904": {
+    "test-00000241-00009904": {
         "ua": "Opera/9.51 (X11; Linux i686; U; en)",
         "properties": {
             "Browser_Name": "Opera",
@@ -127,14 +127,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009905": {
+    "test-00000241-00009905": {
         "ua": "Opera/9.51 (X11; FreeBSD 7.0-STABLE i386; U; en)",
         "properties": {
             "Browser_Name": "Opera",
@@ -149,10 +149,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -161,7 +161,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009906": {
+    "test-00000241-00009906": {
         "ua": "Opera/9.51 (X11; FreeBSD 6.3-RELEASE i386; U; en)",
         "properties": {
             "Browser_Name": "Opera",
@@ -176,10 +176,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -188,7 +188,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009907": {
+    "test-00000241-00009907": {
         "ua": "Opera/9.51 (X11; FreeBSD 6.1-RELEASE i386; U; en)",
         "properties": {
             "Browser_Name": "Opera",
@@ -203,10 +203,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -215,7 +215,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009908": {
+    "test-00000241-00009908": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; zh-cn)",
         "properties": {
             "Browser_Name": "Opera",
@@ -235,14 +235,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009909": {
+    "test-00000241-00009909": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; pt)",
         "properties": {
             "Browser_Name": "Opera",
@@ -262,14 +262,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009910": {
+    "test-00000241-00009910": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; nl)",
         "properties": {
             "Browser_Name": "Opera",
@@ -289,14 +289,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009911": {
+    "test-00000241-00009911": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; nb)",
         "properties": {
             "Browser_Name": "Opera",
@@ -316,14 +316,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009912": {
+    "test-00000241-00009912": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; MRA 5.4 (build 02647); ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -343,14 +343,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009913": {
+    "test-00000241-00009913": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; MRA 5.3 (build 02564); en)",
         "properties": {
             "Browser_Name": "Opera",
@@ -370,14 +370,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009914": {
+    "test-00000241-00009914": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; it)",
         "properties": {
             "Browser_Name": "Opera",
@@ -397,14 +397,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009915": {
+    "test-00000241-00009915": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; hu)",
         "properties": {
             "Browser_Name": "Opera",
@@ -424,14 +424,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009916": {
+    "test-00000241-00009916": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; fi)",
         "properties": {
             "Browser_Name": "Opera",
@@ -451,14 +451,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009917": {
+    "test-00000241-00009917": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; es-LA)",
         "properties": {
             "Browser_Name": "Opera",
@@ -478,14 +478,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009918": {
+    "test-00000241-00009918": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; en-GB)",
         "properties": {
             "Browser_Name": "Opera",
@@ -505,14 +505,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009919": {
+    "test-00000241-00009919": {
         "ua": "Opera/9.51 (Windows NT 6.0; U; cs)",
         "properties": {
             "Browser_Name": "Opera",
@@ -532,14 +532,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009920": {
+    "test-00000241-00009920": {
         "ua": "Opera/9.51 (Windows NT 5.2; U; ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -559,14 +559,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009921": {
+    "test-00000241-00009921": {
         "ua": "Opera/9.51 (Windows NT 5.2; U; pl)",
         "properties": {
             "Browser_Name": "Opera",
@@ -586,14 +586,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009922": {
+    "test-00000241-00009922": {
         "ua": "Opera/9.51 (Windows NT 5.2; U; fr)",
         "properties": {
             "Browser_Name": "Opera",
@@ -613,14 +613,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009923": {
+    "test-00000241-00009923": {
         "ua": "Opera/9.51 (Windows NT 5.2; U; en)",
         "properties": {
             "Browser_Name": "Opera",
@@ -640,14 +640,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009924": {
+    "test-00000241-00009924": {
         "ua": "Opera/9.51 (Windows NT 5.2; U; cs)",
         "properties": {
             "Browser_Name": "Opera",
@@ -667,14 +667,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009925": {
+    "test-00000241-00009925": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; zh-cn)",
         "properties": {
             "Browser_Name": "Opera",
@@ -694,14 +694,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009926": {
+    "test-00000241-00009926": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; YB/3.5.1; ├É┬í├É┬░├É┬╝├æÔÇ╣├É┬╣ ├É┬┐├É┬Á├É┬À├É┬┤├É┬░├æÔÇÜ├æÔÇ╣├É┬╣ ├É┬▒├æÔé¼├É┬░├æãÆ├É┬À├É┬Á├æÔé¼; ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -721,14 +721,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009927": {
+    "test-00000241-00009927": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; YB/3.5.1; ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -748,14 +748,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009928": {
+    "test-00000241-00009928": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; us)",
         "properties": {
             "Browser_Name": "Opera",
@@ -775,14 +775,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009929": {
+    "test-00000241-00009929": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; tr)",
         "properties": {
             "Browser_Name": "Opera",
@@ -802,14 +802,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009930": {
+    "test-00000241-00009930": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; sr)",
         "properties": {
             "Browser_Name": "Opera",
@@ -829,14 +829,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009931": {
+    "test-00000241-00009931": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; ru),gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -856,14 +856,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009932": {
+    "test-00000241-00009932": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; pt-BR)",
         "properties": {
             "Browser_Name": "Opera",
@@ -883,14 +883,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009933": {
+    "test-00000241-00009933": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; pt)",
         "properties": {
             "Browser_Name": "Opera",
@@ -910,14 +910,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009934": {
+    "test-00000241-00009934": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; pl),gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -937,14 +937,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009935": {
+    "test-00000241-00009935": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; nn)",
         "properties": {
             "Browser_Name": "Opera",
@@ -964,14 +964,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009936": {
+    "test-00000241-00009936": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; nl)",
         "properties": {
             "Browser_Name": "Opera",
@@ -991,14 +991,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009937": {
+    "test-00000241-00009937": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; nb)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1018,14 +1018,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009938": {
+    "test-00000241-00009938": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; MRA 5.6 (build 03399); ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1045,14 +1045,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009939": {
+    "test-00000241-00009939": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; MRA 5.5 (build 02842); ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1072,14 +1072,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009940": {
+    "test-00000241-00009940": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; MRA 5.5 (build 02746); ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1099,14 +1099,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009941": {
+    "test-00000241-00009941": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; MRA 5.4 (build 02606); ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1126,14 +1126,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009942": {
+    "test-00000241-00009942": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; MRA 5.3 (build 02552); ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1153,14 +1153,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009943": {
+    "test-00000241-00009943": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; ja)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1180,14 +1180,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009944": {
+    "test-00000241-00009944": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; fr-CA)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1207,14 +1207,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009945": {
+    "test-00000241-00009945": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; fr)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1234,14 +1234,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009946": {
+    "test-00000241-00009946": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; fi)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1261,14 +1261,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009947": {
+    "test-00000241-00009947": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; es-LA)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1288,14 +1288,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009948": {
+    "test-00000241-00009948": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; es-ES)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1315,14 +1315,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009949": {
+    "test-00000241-00009949": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; el)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1342,14 +1342,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009950": {
+    "test-00000241-00009950": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; da)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1369,14 +1369,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009951": {
+    "test-00000241-00009951": {
         "ua": "Opera/9.51 (Windows NT 5.1; U; cs),gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1396,14 +1396,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009952": {
+    "test-00000241-00009952": {
         "ua": "Opera/9.51 (Windows NT 5.0; U; pt-BR)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1418,10 +1418,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1430,7 +1430,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009953": {
+    "test-00000241-00009953": {
         "ua": "Opera/9.51 (Windows NT 5.0; U; en)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1445,10 +1445,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1457,7 +1457,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009954": {
+    "test-00000241-00009954": {
         "ua": "Opera/9.51 (Windows NT 5.0; U; cs)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1472,10 +1472,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1484,7 +1484,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009955": {
+    "test-00000241-00009955": {
         "ua": "Opera/9.51 (Macintosh; PPC Mac OS X; U; it) (via babelfish.yahoo.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1504,14 +1504,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009956": {
+    "test-00000241-00009956": {
         "ua": "Opera/9.51 (Macintosh; PPC Mac OS X; U; it)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1531,14 +1531,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009957": {
+    "test-00000241-00009957": {
         "ua": "Opera/9.51 (Macintosh; PPC Mac OS X; U; en)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1558,14 +1558,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009958": {
+    "test-00000241-00009958": {
         "ua": "Opera/9.51 (Macintosh; Intel Mac OS X; U; nb)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1585,14 +1585,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009959": {
+    "test-00000241-00009959": {
         "ua": "Opera/9.51 (; U; ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1619,7 +1619,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009960": {
+    "test-00000241-00009960": {
         "ua": "Opera/9.50 Beta (Symbian OS; Opera Mobi/117; U; hu)",
         "properties": {
             "Browser_Name": "Opera Mobile",
@@ -1634,11 +1634,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Symbian Foundation",
             "Platform_Brand_Name": "Symbian Foundation",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
@@ -1646,7 +1646,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009961": {
+    "test-00000241-00009961": {
         "ua": "Opera/9.50 (X11; Linux i686; U; ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1666,14 +1666,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009962": {
+    "test-00000241-00009962": {
         "ua": "Opera/9.50 (Windows; U)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1688,10 +1688,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1700,7 +1700,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009963": {
+    "test-00000241-00009963": {
         "ua": "Opera/9.50 (Windows NT 6.1; U; ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1720,14 +1720,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009964": {
+    "test-00000241-00009964": {
         "ua": "Opera/9.50 (Windows NT 6.1; U)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1747,14 +1747,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009965": {
+    "test-00000241-00009965": {
         "ua": "Opera/9.50 (Windows NT 6.0; U; tr)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1774,14 +1774,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009966": {
+    "test-00000241-00009966": {
         "ua": "Opera/9.50 (Windows NT 6.0; U; ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1801,14 +1801,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009967": {
+    "test-00000241-00009967": {
         "ua": "Opera/9.50 (Windows NT 6.0; U; pl)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1828,14 +1828,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009968": {
+    "test-00000241-00009968": {
         "ua": "Opera/9.50 (Windows NT 6.0; U; nl)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1855,14 +1855,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009969": {
+    "test-00000241-00009969": {
         "ua": "Opera/9.50 (Windows NT 6.0; U; nb)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1882,14 +1882,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009970": {
+    "test-00000241-00009970": {
         "ua": "Opera/9.50 (Windows NT 6.0; U; hu)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1909,14 +1909,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009971": {
+    "test-00000241-00009971": {
         "ua": "Opera/9.50 (Windows NT 6.0; U; es-LA)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1936,14 +1936,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009972": {
+    "test-00000241-00009972": {
         "ua": "Opera/9.50 (Windows NT 6.0; U; en-GB)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1963,14 +1963,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009973": {
+    "test-00000241-00009973": {
         "ua": "Opera/9.50 (Windows NT 6.0; U; cs)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1990,14 +1990,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009974": {
+    "test-00000241-00009974": {
         "ua": "Opera/9.50 (Windows NT 5.2; U; ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2017,14 +2017,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009975": {
+    "test-00000241-00009975": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; tr)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2044,14 +2044,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009976": {
+    "test-00000241-00009976": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; ru);A491357429751",
         "properties": {
             "Browser_Name": "Opera",
@@ -2071,14 +2071,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009977": {
+    "test-00000241-00009977": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; pt-BR)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2098,14 +2098,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009978": {
+    "test-00000241-00009978": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; pl)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2125,14 +2125,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009979": {
+    "test-00000241-00009979": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; nl)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2152,14 +2152,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009980": {
+    "test-00000241-00009980": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; MRA 5.5 (build 02842); ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2179,14 +2179,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009981": {
+    "test-00000241-00009981": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; MRA 5.4 (build 02647); ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2206,14 +2206,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009982": {
+    "test-00000241-00009982": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; MRA 5.3 (build 02542); ru)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2233,14 +2233,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009983": {
+    "test-00000241-00009983": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; lt)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2260,14 +2260,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009984": {
+    "test-00000241-00009984": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; ja)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2287,14 +2287,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009985": {
+    "test-00000241-00009985": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; hr)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2314,14 +2314,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009986": {
+    "test-00000241-00009986": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; fr)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2341,14 +2341,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009987": {
+    "test-00000241-00009987": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; fi)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2368,14 +2368,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009988": {
+    "test-00000241-00009988": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; es-LA)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2395,14 +2395,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009989": {
+    "test-00000241-00009989": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; es-ES)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2422,14 +2422,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009990": {
+    "test-00000241-00009990": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; en);afcid=Wdd55eab04b03fc3c322eac93297f0a6e",
         "properties": {
             "Browser_Name": "Opera",
@@ -2449,14 +2449,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009991": {
+    "test-00000241-00009991": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; cs),gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2476,14 +2476,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009992": {
+    "test-00000241-00009992": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; cs)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2503,14 +2503,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009993": {
+    "test-00000241-00009993": {
         "ua": "Opera/9.50 (Windows NT 5.1; U; bg)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2530,14 +2530,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009994": {
+    "test-00000241-00009994": {
         "ua": "Opera/9.50 (Windows NT 5.0; U; en)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2552,10 +2552,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2564,7 +2564,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009995": {
+    "test-00000241-00009995": {
         "ua": "Opera/9.50 (Windows NT 5.0; U; cs)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2579,10 +2579,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2591,7 +2591,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009996": {
+    "test-00000241-00009996": {
         "ua": "Opera/9.50 (Nintendo DSi; Opera/507; U; en-US)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2606,19 +2606,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "DSi",
-            "Device_Maker": "Nintendo",
-            "Device_Type": "UaDeviceType\\MobilePhone",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
             "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Nintendo",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009997": {
+    "test-00000241-00009997": {
         "ua": "Opera/9.50 (Nintendo DSi; Opera/483; U; fr)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2633,19 +2633,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "DSi",
-            "Device_Maker": "Nintendo",
-            "Device_Type": "UaDeviceType\\MobilePhone",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
             "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Nintendo",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009998": {
+    "test-00000241-00009998": {
         "ua": "Opera/9.50 (Nintendo DSi; Opera/483; U; en-US)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2660,19 +2660,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "DSi",
-            "Device_Maker": "Nintendo",
-            "Device_Type": "UaDeviceType\\MobilePhone",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
             "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Nintendo",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00009999": {
+    "test-00000241-00009999": {
         "ua": "Opera/9.50 (Nintendo DSi; Opera/483; U; en-GB)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2687,13 +2687,13 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "DSi",
-            "Device_Maker": "Nintendo",
-            "Device_Type": "UaDeviceType\\MobilePhone",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
             "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Nintendo",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"

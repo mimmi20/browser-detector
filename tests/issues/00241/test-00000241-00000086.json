@@ -1,5 +1,5 @@
 {
-    "browscap-issue-00000241-00008600": {
+    "test-00000241-00008600": {
         "ua": "Opera/9.80 (X11; Linux i686; U; cs) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -19,14 +19,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008601": {
+    "test-00000241-00008601": {
         "ua": "Opera/9.80 (X11; Linux i686; U; cs) Presto/2.2.15 Version/10.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -46,14 +46,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008602": {
+    "test-00000241-00008602": {
         "ua": "Opera/9.80 (X11; Linux i686; ADR-1011151731; U; nl)",
         "properties": {
             "Browser_Name": "Opera",
@@ -73,14 +73,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000241-00008603": {
+    "test-00000241-00008603": {
         "ua": "Opera/9.80 (X11; Linux i686; ADR-1009091650; U; TSB_CLOUD_COMPANION;FOLIO_AND_A; nl) Presto/2.5.28 Version/10.1",
         "properties": {
             "Browser_Name": "Opera",
@@ -100,14 +100,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008604": {
+    "test-00000241-00008604": {
         "ua": "Opera/9.80 (X11; Linux i686; ADR-1007151058; U; TOSHIBA_AC_AND_AZ; nl) Presto/2.4.18 Version/10.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -122,19 +122,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Linux Foundation",
             "Platform_Brand_Name": "Linux Foundation",
-            "Device_Name": "Folio 100",
-            "Device_Maker": "Toshiba",
-            "Device_Type": "UaDeviceType\\Tablet",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Toshiba",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008605": {
+    "test-00000241-00008605": {
         "ua": "Opera/9.80 (X11; FreeBSD 8.1-RELEASE i386; U; en) Presto/2.6.30 Version/10.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -149,10 +149,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -161,7 +161,7 @@
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008606": {
+    "test-00000241-00008606": {
         "ua": "Opera/9.80 (X11; FreeBSD 7.2-STABLE i386; U; en) Presto/2.2.15 Version/10.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -176,10 +176,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -188,7 +188,7 @@
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008607": {
+    "test-00000241-00008607": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; zh-tw) Presto/2.6.30 Version/10.63",
         "properties": {
             "Browser_Name": "Opera",
@@ -208,14 +208,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008608": {
+    "test-00000241-00008608": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; zh-cn) Presto/2.6.35 Version/10.70",
         "properties": {
             "Browser_Name": "Opera",
@@ -235,14 +235,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008609": {
+    "test-00000241-00008609": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; YB/4.0.0; ru) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -262,14 +262,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008610": {
+    "test-00000241-00008610": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; YB/3.5.1; ru) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -289,14 +289,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008611": {
+    "test-00000241-00008611": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; uk) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -316,14 +316,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008612": {
+    "test-00000241-00008612": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; uk) Presto/2.6.30 Version/10.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -343,14 +343,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008613": {
+    "test-00000241-00008613": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; uk) Presto/2.5.24 Version/10.53",
         "properties": {
             "Browser_Name": "Opera",
@@ -370,14 +370,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008614": {
+    "test-00000241-00008614": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; uk) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -397,14 +397,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008615": {
+    "test-00000241-00008615": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; tr) Presto/2.5.22 Version/10.51,gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -424,14 +424,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008616": {
+    "test-00000241-00008616": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; tr) Presto/2.5.22 Version/10.51",
         "properties": {
             "Browser_Name": "Opera",
@@ -451,14 +451,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008617": {
+    "test-00000241-00008617": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; sv) Presto/2.2.15 Version/10.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -478,14 +478,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008618": {
+    "test-00000241-00008618": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; sr) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -505,14 +505,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008619": {
+    "test-00000241-00008619": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; sk) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -532,14 +532,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008620": {
+    "test-00000241-00008620": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; sk) Presto/2.2.15 Version/10.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -559,14 +559,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008621": {
+    "test-00000241-00008621": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; ru) Presto/2.6.35 Version/10.70",
         "properties": {
             "Browser_Name": "Opera",
@@ -586,14 +586,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008622": {
+    "test-00000241-00008622": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; ru) Presto/2.6.34 Version/10.70",
         "properties": {
             "Browser_Name": "Opera",
@@ -613,14 +613,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008623": {
+    "test-00000241-00008623": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; ru) Presto/2.6.30 Version/10.63,gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -640,14 +640,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008624": {
+    "test-00000241-00008624": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; ru) Presto/2.6.30 Version/10.62,gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -667,14 +667,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008625": {
+    "test-00000241-00008625": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; ru) Presto/2.5.22 Version/10.51; SurfCop 1.4",
         "properties": {
             "Browser_Name": "Opera",
@@ -694,14 +694,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008626": {
+    "test-00000241-00008626": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; ru) Presto/2.2.15 Version/10.10,gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -721,14 +721,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008627": {
+    "test-00000241-00008627": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; ru) Presto/2.2.15 Version/10.00,gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -748,14 +748,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008628": {
+    "test-00000241-00008628": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pt-BR) Presto/2.7.62 Version/11.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -775,14 +775,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008629": {
+    "test-00000241-00008629": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pt-BR) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -802,14 +802,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008630": {
+    "test-00000241-00008630": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pt-BR) Presto/2.6.30 Version/10.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -829,14 +829,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008631": {
+    "test-00000241-00008631": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pt-BR) Presto/2.6.30 Version/10.60",
         "properties": {
             "Browser_Name": "Opera",
@@ -856,14 +856,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008632": {
+    "test-00000241-00008632": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pt-BR) Presto/2.5.22 Version/10.51",
         "properties": {
             "Browser_Name": "Opera",
@@ -883,14 +883,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008633": {
+    "test-00000241-00008633": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pt-BR) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -910,14 +910,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008634": {
+    "test-00000241-00008634": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pt-BR) Presto/2.2.15 Version/10.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -937,14 +937,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008635": {
+    "test-00000241-00008635": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pt) Presto/2.6.30 Version/10.63",
         "properties": {
             "Browser_Name": "Opera",
@@ -964,14 +964,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008636": {
+    "test-00000241-00008636": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pt) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -991,14 +991,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008637": {
+    "test-00000241-00008637": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pt) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -1018,14 +1018,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008638": {
+    "test-00000241-00008638": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pl) Presto/2.6.30 Version/10.63,gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -1045,14 +1045,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008639": {
+    "test-00000241-00008639": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pl) Presto/2.5.22 Version/10.50",
         "properties": {
             "Browser_Name": "Opera",
@@ -1072,14 +1072,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008640": {
+    "test-00000241-00008640": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; pl) Presto/2.2.15 Version/10.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -1099,14 +1099,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008641": {
+    "test-00000241-00008641": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; nl) Presto/2.6.37 Version/11.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -1126,14 +1126,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008642": {
+    "test-00000241-00008642": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; nl) Presto/2.6.30 Version/10.63",
         "properties": {
             "Browser_Name": "Opera",
@@ -1153,14 +1153,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008643": {
+    "test-00000241-00008643": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; nl) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -1180,14 +1180,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008644": {
+    "test-00000241-00008644": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; nl) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -1207,14 +1207,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008645": {
+    "test-00000241-00008645": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; nb) Presto/2.6.30 Version/10.63",
         "properties": {
             "Browser_Name": "Opera",
@@ -1234,14 +1234,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008646": {
+    "test-00000241-00008646": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; nb) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -1261,14 +1261,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008647": {
+    "test-00000241-00008647": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; nb) Presto/2.6.30 Version/10.60",
         "properties": {
             "Browser_Name": "Opera",
@@ -1288,14 +1288,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008648": {
+    "test-00000241-00008648": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; nb) Presto/2.5.24 Version/10.53",
         "properties": {
             "Browser_Name": "Opera",
@@ -1315,14 +1315,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008649": {
+    "test-00000241-00008649": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; nb) Presto/2.5.22 Version/10.51",
         "properties": {
             "Browser_Name": "Opera",
@@ -1342,14 +1342,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008650": {
+    "test-00000241-00008650": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; nb) Presto/2.2.15 Version/10.01",
         "properties": {
             "Browser_Name": "Opera",
@@ -1369,14 +1369,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008651": {
+    "test-00000241-00008651": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; MRA 5.7 (build 03686); ru) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -1396,14 +1396,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008652": {
+    "test-00000241-00008652": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; MRA 5.5 (build 02842); ru) Presto/2.6.30 Version/10.63",
         "properties": {
             "Browser_Name": "Opera",
@@ -1423,14 +1423,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008653": {
+    "test-00000241-00008653": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; MRA 5.5 (build 02842); ru) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -1450,14 +1450,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008654": {
+    "test-00000241-00008654": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; MRA 5.4 (build 02647); ru) Presto/2.2.15 Version/10.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -1477,14 +1477,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008655": {
+    "test-00000241-00008655": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; ko) Presto/2.2.15 Version/10.01",
         "properties": {
             "Browser_Name": "Opera",
@@ -1504,14 +1504,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008656": {
+    "test-00000241-00008656": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; ja) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -1531,14 +1531,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008657": {
+    "test-00000241-00008657": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; it) Presto/2.6.30 Version/10.63",
         "properties": {
             "Browser_Name": "Opera",
@@ -1558,14 +1558,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008658": {
+    "test-00000241-00008658": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; it) Presto/2.5.22 Version/10.51",
         "properties": {
             "Browser_Name": "Opera",
@@ -1585,14 +1585,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008659": {
+    "test-00000241-00008659": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; it) Presto/2.5.22 Version/10.50",
         "properties": {
             "Browser_Name": "Opera",
@@ -1612,14 +1612,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008660": {
+    "test-00000241-00008660": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; it) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -1639,14 +1639,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008661": {
+    "test-00000241-00008661": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; ID=YB/3.5.1; ru) Presto/2.2.15 Version/10.01",
         "properties": {
             "Browser_Name": "Opera",
@@ -1666,14 +1666,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008662": {
+    "test-00000241-00008662": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; id) Presto/2.7.62 Version/11.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -1693,14 +1693,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008663": {
+    "test-00000241-00008663": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; id) Presto/2.6.30 Version/10.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -1720,14 +1720,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008664": {
+    "test-00000241-00008664": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; hu) Presto/2.6.30 Version/10.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -1747,14 +1747,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008665": {
+    "test-00000241-00008665": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; hu) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -1774,14 +1774,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008666": {
+    "test-00000241-00008666": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; fr) Presto/2.6.30 Version/10.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -1801,14 +1801,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008667": {
+    "test-00000241-00008667": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; fr) Presto/2.5.22 Version/10.50",
         "properties": {
             "Browser_Name": "Opera",
@@ -1828,14 +1828,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008668": {
+    "test-00000241-00008668": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; fr) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -1855,14 +1855,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008669": {
+    "test-00000241-00008669": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; fr) Presto/2.2.15 Version/10.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -1882,14 +1882,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008670": {
+    "test-00000241-00008670": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; fi) Presto/2.6.30 Version/10.63",
         "properties": {
             "Browser_Name": "Opera",
@@ -1909,14 +1909,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008671": {
+    "test-00000241-00008671": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; fi) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -1936,14 +1936,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008672": {
+    "test-00000241-00008672": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; fi) Presto/2.2.15 Version/10.01",
         "properties": {
             "Browser_Name": "Opera",
@@ -1963,14 +1963,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008673": {
+    "test-00000241-00008673": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; et) Presto/2.6.30 Version/10.63",
         "properties": {
             "Browser_Name": "Opera",
@@ -1990,14 +1990,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008674": {
+    "test-00000241-00008674": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; et) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -2017,14 +2017,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008675": {
+    "test-00000241-00008675": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; et) Presto/2.6.30 Version/10.60",
         "properties": {
             "Browser_Name": "Opera",
@@ -2044,14 +2044,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008676": {
+    "test-00000241-00008676": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-LA) Presto/2.6.30 Version/10.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -2071,14 +2071,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008677": {
+    "test-00000241-00008677": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-LA) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -2098,14 +2098,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008678": {
+    "test-00000241-00008678": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-LA) Presto/2.2.15 Version/10.01",
         "properties": {
             "Browser_Name": "Opera",
@@ -2125,14 +2125,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008679": {
+    "test-00000241-00008679": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-LA) Presto/2.2.15 Version/10.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -2152,14 +2152,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008680": {
+    "test-00000241-00008680": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-ES) Presto/2.6.30 Version/10.63",
         "properties": {
             "Browser_Name": "Opera",
@@ -2179,14 +2179,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008681": {
+    "test-00000241-00008681": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-ES) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -2206,14 +2206,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008682": {
+    "test-00000241-00008682": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-ES) Presto/2.6.30 Version/10.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -2233,14 +2233,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008683": {
+    "test-00000241-00008683": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-ES) Presto/2.6.30 Version/10.60",
         "properties": {
             "Browser_Name": "Opera",
@@ -2260,14 +2260,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008684": {
+    "test-00000241-00008684": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-ES) Presto/2.5.24 Version/10.53",
         "properties": {
             "Browser_Name": "Opera",
@@ -2287,14 +2287,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008685": {
+    "test-00000241-00008685": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-ES) Presto/2.5.22 Version/10.50",
         "properties": {
             "Browser_Name": "Opera",
@@ -2314,14 +2314,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008686": {
+    "test-00000241-00008686": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; es-ES) Presto/2.2.15 Version/10.01",
         "properties": {
             "Browser_Name": "Opera",
@@ -2341,14 +2341,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008687": {
+    "test-00000241-00008687": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; en-GB) Presto/2.6.34 Version/10.70",
         "properties": {
             "Browser_Name": "Opera",
@@ -2368,14 +2368,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008688": {
+    "test-00000241-00008688": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; en-GB) Presto/2.6.30 Version/10.61",
         "properties": {
             "Browser_Name": "Opera",
@@ -2395,14 +2395,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008689": {
+    "test-00000241-00008689": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; en-GB) Presto/2.6.30 Version/10.60",
         "properties": {
             "Browser_Name": "Opera",
@@ -2422,14 +2422,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008690": {
+    "test-00000241-00008690": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; en-GB) Presto/2.5.24 Version/10.53",
         "properties": {
             "Browser_Name": "Opera",
@@ -2449,14 +2449,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008691": {
+    "test-00000241-00008691": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; en-GB) Presto/2.2.15 Version/10.10",
         "properties": {
             "Browser_Name": "Opera",
@@ -2476,14 +2476,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008692": {
+    "test-00000241-00008692": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; en-GB) Presto/2.2.15 Version/10.01",
         "properties": {
             "Browser_Name": "Opera",
@@ -2503,14 +2503,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008693": {
+    "test-00000241-00008693": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; en) Presto/2.6.22 Version/10.50",
         "properties": {
             "Browser_Name": "Opera",
@@ -2530,14 +2530,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008694": {
+    "test-00000241-00008694": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; en) Presto/2.2.15 Version/10.10,gzip(gfe) (via translate.google.com)",
         "properties": {
             "Browser_Name": "Opera",
@@ -2557,14 +2557,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008695": {
+    "test-00000241-00008695": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; el) Presto/2.7.62 Version/11.00",
         "properties": {
             "Browser_Name": "Opera",
@@ -2584,14 +2584,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008696": {
+    "test-00000241-00008696": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; el) Presto/2.6.30 Version/10.62",
         "properties": {
             "Browser_Name": "Opera",
@@ -2611,14 +2611,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008697": {
+    "test-00000241-00008697": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; el) Presto/2.6.30 Version/10.60",
         "properties": {
             "Browser_Name": "Opera",
@@ -2638,14 +2638,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008698": {
+    "test-00000241-00008698": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; Edition Campaign 21; sk) Presto/2.5.22 Version/10.50",
         "properties": {
             "Browser_Name": "Opera",
@@ -2665,14 +2665,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Opera Software ASA"
         }
     },
-    "browscap-issue-00000241-00008699": {
+    "test-00000241-00008699": {
         "ua": "Opera/9.80 (Windows NT 6.1; U; Edition Campaign 21; pt) Presto/2.6.30 Version/10.63",
         "properties": {
             "Browser_Name": "Opera",
@@ -2692,7 +2692,7 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Presto",
             "RenderingEngine_Version": "unknown",

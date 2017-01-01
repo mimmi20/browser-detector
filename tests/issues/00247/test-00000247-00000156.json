@@ -1,5 +1,5 @@
 {
-    "browscap-issue-00000247-00015600": {
+    "test-00000247-00015600": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; F-5.5SP2-20011022; F-5.0.1-20000221; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -14,10 +14,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -26,7 +26,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015601": {
+    "test-00000247-00015601": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; ESB{5D895299-AA95-487F-98C6-7F1B2BE1A29D}; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -41,10 +41,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -53,7 +53,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015602": {
+    "test-00000247-00015602": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; ESB{31B43B69-FBF5-4CE1-8BB5-9085CBA66AAE})",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -62,12 +62,12 @@
             "Browser_Maker": "Microsoft Corporation",
             "Browser_Modus": null,
             "Browser_Version": "6.0",
-            "Platform_Codename": "Windows NT 5.0",
-            "Platform_Marketingname": "Windows 2000",
+            "Platform_Codename": "Android",
+            "Platform_Marketingname": "Android",
             "Platform_Version": "0.0.0",
             "Platform_Bits": 32,
-            "Platform_Maker": "Microsoft Corporation",
-            "Platform_Brand_Name": "Microsoft",
+            "Platform_Maker": "Google Inc",
+            "Platform_Brand_Name": "Google",
             "Device_Name": "Elevate Y",
             "Device_Maker": "Evercoss",
             "Device_Type": "UaDeviceType\\MobilePhone",
@@ -80,7 +80,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015603": {
+    "test-00000247-00015603": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Emf!sysUS)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -95,10 +95,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -107,7 +107,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015604": {
+    "test-00000247-00015604": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; EK60SP1; EKINS)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -122,10 +122,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -134,7 +134,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015605": {
+    "test-00000247-00015605": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; EK60SP1; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -149,10 +149,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -161,7 +161,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015606": {
+    "test-00000247-00015606": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; EK60SP1)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -176,10 +176,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -188,7 +188,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015607": {
+    "test-00000247-00015607": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; EDS; Hotbar 4.1.2.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -203,10 +203,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -215,7 +215,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015608": {
+    "test-00000247-00015608": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; E6; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -230,10 +230,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -242,7 +242,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015609": {
+    "test-00000247-00015609": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; DVD Owner)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -257,10 +257,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -269,7 +269,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015610": {
+    "test-00000247-00015610": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; DTCuser; .NET CLR 2.0.50727)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -284,10 +284,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -296,7 +296,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015611": {
+    "test-00000247-00015611": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; DSCC/DLA)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -311,10 +311,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -323,7 +323,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015612": {
+    "test-00000247-00015612": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Desktop Services Group, I. T. Division; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -338,10 +338,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -350,7 +350,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015613": {
+    "test-00000247-00015613": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Demon v6.032002NL)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -365,10 +365,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -377,7 +377,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015614": {
+    "test-00000247-00015614": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; dcadev01)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -392,10 +392,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -404,7 +404,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015615": {
+    "test-00000247-00015615": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Crazy Browser 1.0.5; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Crazy Browser",
@@ -419,10 +419,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -431,7 +431,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015616": {
+    "test-00000247-00015616": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Crazy Browser 1.0.5)",
         "properties": {
             "Browser_Name": "Crazy Browser",
@@ -446,10 +446,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -458,7 +458,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015617": {
+    "test-00000247-00015617": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; CoxIE6; CoxIE55)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -473,10 +473,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -485,7 +485,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015618": {
+    "test-00000247-00015618": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; CoxIE55)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -500,10 +500,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -512,7 +512,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015619": {
+    "test-00000247-00015619": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Cox High Speed Internet Customer; www.k2pdf.com; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -527,10 +527,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -539,7 +539,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015620": {
+    "test-00000247-00015620": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Cox High Speed Internet Customer; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -554,10 +554,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -566,7 +566,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015621": {
+    "test-00000247-00015621": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Cox High Speed Internet Customer; (R1 1.1))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -581,10 +581,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -593,7 +593,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015622": {
+    "test-00000247-00015622": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Cox High Speed Internet Customer)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -608,10 +608,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -620,7 +620,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015623": {
+    "test-00000247-00015623": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Built 2/21/03 for FTCH)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -635,10 +635,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -647,7 +647,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015624": {
+    "test-00000247-00015624": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; BCIE6SP1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -662,10 +662,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -674,7 +674,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015625": {
+    "test-00000247-00015625": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; AT&T CSM6.0; AT&T CSM 6; .NET CLR 1.0.3705; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -689,10 +689,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -701,7 +701,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015626": {
+    "test-00000247-00015626": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; AT&T CSM6.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -716,10 +716,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -728,7 +728,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015627": {
+    "test-00000247-00015627": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; AT&T CSM 6)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -743,10 +743,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -755,7 +755,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015628": {
+    "test-00000247-00015628": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; AlloCine; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -770,10 +770,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -782,7 +782,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015629": {
+    "test-00000247-00015629": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; Alexa Toolbar)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -797,10 +797,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -809,7 +809,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015630": {
+    "test-00000247-00015630": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; AIRF; iOpus-I-M)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -824,10 +824,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -836,7 +836,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015631": {
+    "test-00000247-00015631": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; AHSIE)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -851,10 +851,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -863,7 +863,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015632": {
+    "test-00000247-00015632": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; ADR)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -878,10 +878,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -890,7 +890,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015633": {
+    "test-00000247-00015633": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; 728 ACS)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -905,10 +905,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -917,7 +917,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015634": {
+    "test-00000247-00015634": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; 1.21.2 ; .NET CLR 1.0.3705; Alexa Toolbar)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -932,10 +932,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -944,7 +944,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015635": {
+    "test-00000247-00015635": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; ~!@#$%^&*()_ )",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -959,10 +959,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -971,7 +971,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015636": {
+    "test-00000247-00015636": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 2.0.50727; MSN 9.0;MSN 9.1; MSNbVZ02; MSNmen-us; MSNcOTH; MPLUS)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -986,10 +986,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -998,7 +998,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015637": {
+    "test-00000247-00015637": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 2.0.50727; InfoPath.1; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1013,10 +1013,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1025,7 +1025,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015638": {
+    "test-00000247-00015638": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.1.4322; InfoPath.1; MS-RTC LM 8; .NET CLR 2.0.50727)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1040,10 +1040,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1052,7 +1052,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015639": {
+    "test-00000247-00015639": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1067,10 +1067,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1079,7 +1079,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015640": {
+    "test-00000247-00015640": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.1.4322; InfoPath.1)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1094,10 +1094,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1106,7 +1106,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015641": {
+    "test-00000247-00015641": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.1.4322; FDM)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1121,10 +1121,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1133,7 +1133,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015642": {
+    "test-00000247-00015642": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.1.4322; .NET CLR 2.0.50727; SpamBlockerUtility 4.8.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1148,10 +1148,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1160,7 +1160,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015643": {
+    "test-00000247-00015643": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.1)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1175,10 +1175,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1187,7 +1187,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015644": {
+    "test-00000247-00015644": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.1.4322; .NET CLR 1.0.3705; .NET CLR 2.0.50727; InfoPath.1)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1202,10 +1202,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1214,7 +1214,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015645": {
+    "test-00000247-00015645": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.1.4322; .NET CLR 1.0.3705; .NET CLR 2.0.50727)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1229,10 +1229,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1241,7 +1241,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015646": {
+    "test-00000247-00015646": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.1.4322; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1256,10 +1256,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1268,7 +1268,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015647": {
+    "test-00000247-00015647": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.0.3705; MSN 6.1; MSNbMSFT; MSNmen-us; MSNc0z; MSNc00)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1283,10 +1283,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1295,7 +1295,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015648": {
+    "test-00000247-00015648": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.0.3705; MSIECrawler)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1310,10 +1310,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1322,7 +1322,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015649": {
+    "test-00000247-00015649": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.0.3705; Alexa Toolbar)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1337,10 +1337,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1349,7 +1349,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015650": {
+    "test-00000247-00015650": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.0.3705; .NET CLR 1.1.4322; SpamBlockerUtility 4.7.1)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1364,10 +1364,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1376,7 +1376,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015651": {
+    "test-00000247-00015651": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.0.3705; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1391,10 +1391,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1403,7 +1403,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015652": {
+    "test-00000247-00015652": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.0.3705; .NET CLR 1.1.4322; InfoPath.1)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1418,10 +1418,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1430,7 +1430,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015653": {
+    "test-00000247-00015653": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.40607)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1445,10 +1445,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1457,7 +1457,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015654": {
+    "test-00000247-00015654": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1472,10 +1472,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1484,7 +1484,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015655": {
+    "test-00000247-00015655": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; .NET CLR 1.0.2914; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1499,10 +1499,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1511,7 +1511,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015656": {
+    "test-00000247-00015656": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; (R1 1.5))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1526,10 +1526,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1538,7 +1538,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015657": {
+    "test-00000247-00015657": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; (R1 1.3); .NET CLR 2.0.40607; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1553,10 +1553,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1565,7 +1565,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015658": {
+    "test-00000247-00015658": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; (R1 1.3); .NET CLR 1.0.3705; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1580,10 +1580,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1592,7 +1592,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015659": {
+    "test-00000247-00015659": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; (R1 1.3); .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1607,10 +1607,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1619,7 +1619,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015660": {
+    "test-00000247-00015660": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; (R1 1.1); .NET CLR 1.1.4322; InfoPath.1)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1634,10 +1634,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1646,7 +1646,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015661": {
+    "test-00000247-00015661": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; (R1 1.1); .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1661,10 +1661,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1673,7 +1673,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015662": {
+    "test-00000247-00015662": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; (R1 1.1); .NET CLR 1.0.3705; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1688,10 +1688,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1700,7 +1700,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015663": {
+    "test-00000247-00015663": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; (R1 1.1); .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1715,10 +1715,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1727,7 +1727,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015664": {
+    "test-00000247-00015664": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461; (R1 1.1))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1742,10 +1742,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1754,7 +1754,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015665": {
+    "test-00000247-00015665": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461) via NetCache version 3.1.2c-Windows NT",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1769,10 +1769,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1781,7 +1781,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015666": {
+    "test-00000247-00015666": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461) Java/1.5.0_06",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1796,10 +1796,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1808,7 +1808,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015667": {
+    "test-00000247-00015667": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T312461) Java/1.4.2_08",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1823,10 +1823,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1835,7 +1835,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015668": {
+    "test-00000247-00015668": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; t20011122h; InfoPath.1; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1850,10 +1850,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1862,7 +1862,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015669": {
+    "test-00000247-00015669": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; t20010828; NetCaptor 6.5.0PB8)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1877,10 +1877,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1889,7 +1889,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015670": {
+    "test-00000247-00015670": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; t20010828; iOpus-I-M; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1904,10 +1904,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1916,7 +1916,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015671": {
+    "test-00000247-00015671": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; t20010828; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1931,10 +1931,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1943,7 +1943,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015672": {
+    "test-00000247-00015672": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; t20010828)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1958,10 +1958,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1970,7 +1970,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015673": {
+    "test-00000247-00015673": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T-Online Internatinal AG; YComp 5.0.2.5)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1985,10 +1985,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1997,7 +1997,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015674": {
+    "test-00000247-00015674": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T-Online Internatinal AG; T312461)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2012,10 +2012,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2024,7 +2024,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015675": {
+    "test-00000247-00015675": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T-Online Internatinal AG; Q312461; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2039,10 +2039,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2051,7 +2051,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015676": {
+    "test-00000247-00015676": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; T-Online Internatinal AG; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2066,10 +2066,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2078,7 +2078,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015677": {
+    "test-00000247-00015677": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; t-jx03)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2093,10 +2093,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2105,7 +2105,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015678": {
+    "test-00000247-00015678": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYSTEMSOFT-DEVELOPER)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2120,10 +2120,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2132,7 +2132,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015679": {
+    "test-00000247-00015679": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; Syosset High School)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2147,10 +2147,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2159,7 +2159,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015680": {
+    "test-00000247-00015680": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; YComp 5.0.0.0; MSN 6.1; MSNbMSFT; MSNmen-us; MSNc00)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2174,10 +2174,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2186,7 +2186,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015681": {
+    "test-00000247-00015681": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; YComp 5.0.0.0; Hotbar 4.2.8.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2201,10 +2201,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2213,7 +2213,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015682": {
+    "test-00000247-00015682": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; Q312461)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2228,10 +2228,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2240,7 +2240,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015683": {
+    "test-00000247-00015683": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; PrimusPCEN; .NET CLR 1.0.3705; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2255,10 +2255,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2267,7 +2267,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015684": {
+    "test-00000247-00015684": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; MSN 6.1; MSNbMSFT; MSNmen-ca; MSNc00; v5m)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2282,10 +2282,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2294,7 +2294,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015685": {
+    "test-00000247-00015685": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; iebar; .NET CLR 1.0.3705; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2309,10 +2309,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2321,7 +2321,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015686": {
+    "test-00000247-00015686": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; H010818; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2336,10 +2336,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2348,7 +2348,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015687": {
+    "test-00000247-00015687": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; .NET CLR 1.1.4322; MSIECrawler)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2363,10 +2363,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2375,7 +2375,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015688": {
+    "test-00000247-00015688": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2390,10 +2390,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2402,7 +2402,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015689": {
+    "test-00000247-00015689": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; .NET CLR 1.0.3705; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2417,10 +2417,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2429,7 +2429,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015690": {
+    "test-00000247-00015690": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA; .NET CLR 1.0.3705)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2444,10 +2444,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2456,7 +2456,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015691": {
+    "test-00000247-00015691": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SYMPA)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2471,10 +2471,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2483,7 +2483,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015692": {
+    "test-00000247-00015692": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SWSIT)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2498,10 +2498,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2510,7 +2510,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015693": {
+    "test-00000247-00015693": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SV1; Alexa Toolbar)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2525,10 +2525,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2537,7 +2537,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015694": {
+    "test-00000247-00015694": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; sv) Opera 8.50",
         "properties": {
             "Browser_Name": "Opera",
@@ -2552,10 +2552,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2564,7 +2564,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015695": {
+    "test-00000247-00015695": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; SurfGem; .NET CLR 1.1.4322)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2579,10 +2579,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2591,7 +2591,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015696": {
+    "test-00000247-00015696": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; supplied by tiscali; .NET CLR 2.0.50727)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2606,10 +2606,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2618,7 +2618,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015697": {
+    "test-00000247-00015697": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; supplied by tiscali)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2633,10 +2633,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2645,7 +2645,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015698": {
+    "test-00000247-00015698": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; Supplied by Tesco.net)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2660,10 +2660,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2672,7 +2672,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000247-00015699": {
+    "test-00000247-00015699": {
         "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; Supplied by blueyonder; Hotbar 4.4.2.0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2687,10 +2687,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",

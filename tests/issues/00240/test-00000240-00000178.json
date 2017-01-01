@@ -1,5 +1,5 @@
 {
-    "browscap-issue-00000240-00017800": {
+    "test-00000240-00017800": {
         "ua": "Seekbot/1.0 (http://www.seekbot.net/bot.html) RobotsTxtFetcher/1.2",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -26,7 +26,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017801": {
+    "test-00000240-00017801": {
         "ua": "Seekbot/1.0 (http://www.seekbot.net/bot.html) RobotsTxtFetcher/1.0 (XDF)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -53,7 +53,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017802": {
+    "test-00000240-00017802": {
         "ua": "Seekbot/1.0 (http://www.seekbot.net/bot.html) HTTPFetcher/2.2",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -80,7 +80,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017803": {
+    "test-00000240-00017803": {
         "ua": "Seekbot/1.0 (http://www.seekbot.net/bot.html) HTTPFetcher/0.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -107,7 +107,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017804": {
+    "test-00000240-00017804": {
         "ua": "SecretBrowser/5.0 (iPhone; U; Commodore64; en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -116,12 +116,12 @@
             "Browser_Maker": "unknown",
             "Browser_Modus": null,
             "Browser_Version": "0.0",
-            "Platform_Codename": "unknown",
-            "Platform_Marketingname": "unknown",
-            "Platform_Version": "unknown",
+            "Platform_Codename": "iOS",
+            "Platform_Marketingname": "iOS",
+            "Platform_Version": "0.0.0",
             "Platform_Bits": 32,
-            "Platform_Maker": "unknown",
-            "Platform_Brand_Name": "unknown",
+            "Platform_Maker": "Apple Inc",
+            "Platform_Brand_Name": "Apple",
             "Device_Name": "iPhone",
             "Device_Maker": "Apple Inc",
             "Device_Type": "UaDeviceType\\MobilePhone",
@@ -134,7 +134,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017805": {
+    "test-00000240-00017805": {
         "ua": "secondwave_aa larbin2.6.3@unspecified.mail",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -161,7 +161,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017806": {
+    "test-00000240-00017806": {
         "ua": "secondwave_aa (larbin2.6.3@unspecified.mail)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -188,7 +188,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017807": {
+    "test-00000240-00017807": {
         "ua": "seca UP.Browser/5.0.3.3 (GUI)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -203,11 +203,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
@@ -215,7 +215,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017808": {
+    "test-00000240-00017808": {
         "ua": "SEC-spha500 UP.Browser/4.1.26l UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -230,19 +230,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017809": {
+    "test-00000240-00017809": {
         "ua": "SEC-SGHXE770/1.0 NetFront/3.2",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -257,19 +257,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017810": {
+    "test-00000240-00017810": {
         "ua": "SEC-SGHX830/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -284,19 +284,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Oracle",
             "Platform_Brand_Name": "Oracle",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017811": {
+    "test-00000240-00017811": {
         "ua": "SEC-SGHX820/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -311,19 +311,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Oracle",
             "Platform_Brand_Name": "Oracle",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017812": {
+    "test-00000240-00017812": {
         "ua": "SEC-SGHX820/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -338,19 +338,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Oracle",
             "Platform_Brand_Name": "Oracle",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017813": {
+    "test-00000240-00017813": {
         "ua": "SEC-SGHX810/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -365,19 +365,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Oracle",
             "Platform_Brand_Name": "Oracle",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017814": {
+    "test-00000240-00017814": {
         "ua": "SEC-SGHX800/1.0 NetFront/3.2",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -392,19 +392,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017815": {
+    "test-00000240-00017815": {
         "ua": "SEC-SGHX680/1.0 TSS/2.5",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -431,7 +431,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017816": {
+    "test-00000240-00017816": {
         "ua": "SEC-SGHX660/EJ3 TSS/2.5 UP.Link/6.3.1.11.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -446,19 +446,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017817": {
+    "test-00000240-00017817": {
         "ua": "SEC-SGHX660/EJ3 TSS/2.5 UP.Link/6.3.0.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -473,19 +473,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017818": {
+    "test-00000240-00017818": {
         "ua": "SEC-SGHX660/1.0 TSS/2.5 UP.Link/6.3.1.12.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -500,19 +500,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017819": {
+    "test-00000240-00017819": {
         "ua": "SEC-SGHX660/1.0 TSS/2.5",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -539,7 +539,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017820": {
+    "test-00000240-00017820": {
         "ua": "SEC-SGHX630/1.0 TSS/2.5",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -566,7 +566,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017821": {
+    "test-00000240-00017821": {
         "ua": "SEC-SGHX610/1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -593,7 +593,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017822": {
+    "test-00000240-00017822": {
         "ua": "SEC-SGHX530/1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -620,7 +620,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017823": {
+    "test-00000240-00017823": {
         "ua": "SEC-SGHX510/1.0 UP.Link/6.3.1.12.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -635,19 +635,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017824": {
+    "test-00000240-00017824": {
         "ua": "SEC-SGHX500/1.0 TSS/2.5",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -674,7 +674,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017825": {
+    "test-00000240-00017825": {
         "ua": "SEC-SGHX475-X475UVEB2-NW.Browser3.01",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -701,7 +701,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017826": {
+    "test-00000240-00017826": {
         "ua": "SEC-SGHX458*MzUzMDcxMDAzOTkzMzc5 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -716,19 +716,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017827": {
+    "test-00000240-00017827": {
         "ua": "SEC-SGHX458*MzU0NTMyMDA4NDM5ODgx UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -743,19 +743,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017828": {
+    "test-00000240-00017828": {
         "ua": "SEC-SGHX458*MzU0NTMyMDA1NjYyNzMz UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -770,19 +770,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017829": {
+    "test-00000240-00017829": {
         "ua": "SEC-SGHX458*MzU0MDIzMDAzMjk3Mjky",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -809,7 +809,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017830": {
+    "test-00000240-00017830": {
         "ua": "SEC-SGHX458*MzU0MDIzMDAxNTYyOTYw",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -836,7 +836,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017831": {
+    "test-00000240-00017831": {
         "ua": "SEC-SGHX458*MzU0MDIzMDAxMzk3NDA5",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -863,7 +863,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017832": {
+    "test-00000240-00017832": {
         "ua": "SEC-SGHX458*MzU0MDIzMDA1Mjg3ODc5",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -890,7 +890,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017833": {
+    "test-00000240-00017833": {
         "ua": "SEC-SGHX450 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -905,19 +905,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017834": {
+    "test-00000240-00017834": {
         "ua": "SEC-SGHX450",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -944,7 +944,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017835": {
+    "test-00000240-00017835": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDAzNTkwMDEy UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -959,19 +959,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017836": {
+    "test-00000240-00017836": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDAzNjAxMDMz UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -986,19 +986,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017837": {
+    "test-00000240-00017837": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDAzMjMwMzUz UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1013,19 +1013,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017838": {
+    "test-00000240-00017838": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDAxMzk2ODAw UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1040,19 +1040,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017839": {
+    "test-00000240-00017839": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDAxMzg2ODQz UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1067,19 +1067,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017840": {
+    "test-00000240-00017840": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDAxMzg2ODQz",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1106,7 +1106,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017841": {
+    "test-00000240-00017841": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDAwMDIyMDY4 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1121,19 +1121,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017842": {
+    "test-00000240-00017842": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDAwMDIyMDY4",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1160,7 +1160,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017843": {
+    "test-00000240-00017843": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDAwMDIxMTUx UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1175,19 +1175,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017844": {
+    "test-00000240-00017844": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDAwMDIxMDg2 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1202,19 +1202,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017845": {
+    "test-00000240-00017845": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA4ODYxNTc0 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1229,19 +1229,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017846": {
+    "test-00000240-00017846": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA4NTUwNDgy UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1256,19 +1256,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017847": {
+    "test-00000240-00017847": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA3NzY0ODI5 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1283,19 +1283,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017848": {
+    "test-00000240-00017848": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA3Mzc3ODUz UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1310,19 +1310,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017849": {
+    "test-00000240-00017849": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA2NjQwODIy UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1337,19 +1337,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017850": {
+    "test-00000240-00017850": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA2Mzc4NTMw UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1364,19 +1364,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017851": {
+    "test-00000240-00017851": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA2MjYxMzQ4 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1391,19 +1391,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017852": {
+    "test-00000240-00017852": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA2MjYxMzQ4",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1430,7 +1430,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017853": {
+    "test-00000240-00017853": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA2MjYwNzM4 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1445,19 +1445,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017854": {
+    "test-00000240-00017854": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA2MjY4NzY0 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1472,19 +1472,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017855": {
+    "test-00000240-00017855": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA0OTgzMTc0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1511,7 +1511,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017856": {
+    "test-00000240-00017856": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA0OTc5NTQ1 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1526,19 +1526,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017857": {
+    "test-00000240-00017857": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA0OTc5NTQ1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1565,7 +1565,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017858": {
+    "test-00000240-00017858": {
         "ua": "SEC-SGHX438*MzUyMzQ4MDA0OTc5NTk0 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1580,19 +1580,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017859": {
+    "test-00000240-00017859": {
         "ua": "SEC-SGHX438*MzU1NTA3MDAyNzgzMDA0 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1607,19 +1607,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017860": {
+    "test-00000240-00017860": {
         "ua": "SEC-SGHX438*MzU1NTA3MDAyNjk1MzY0 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1634,19 +1634,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017861": {
+    "test-00000240-00017861": {
         "ua": "SEC-SGHX430/1.0 UP.Browser/5.0.5.1 (GUI) MMP/1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1661,19 +1661,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017862": {
+    "test-00000240-00017862": {
         "ua": "SEC-SGHX430 UP.Link/6.3.0.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1688,19 +1688,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017863": {
+    "test-00000240-00017863": {
         "ua": "SEC-SGHX430 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1715,19 +1715,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017864": {
+    "test-00000240-00017864": {
         "ua": "SEC-SGHX430",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1754,7 +1754,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017865": {
+    "test-00000240-00017865": {
         "ua": "SEC-SGHX427M UP.Link/6.3.0.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1769,19 +1769,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017866": {
+    "test-00000240-00017866": {
         "ua": "SEC-SGHX427M UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1796,19 +1796,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017867": {
+    "test-00000240-00017867": {
         "ua": "SEC-SGHX427M",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1835,7 +1835,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017868": {
+    "test-00000240-00017868": {
         "ua": "SEC-SGHX427 UP.Link/1.1 (Google WAP Proxy/1.0)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1850,19 +1850,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017869": {
+    "test-00000240-00017869": {
         "ua": "SEC-SGHX427 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1877,19 +1877,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017870": {
+    "test-00000240-00017870": {
         "ua": "SEC-SGHX427",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1916,7 +1916,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017871": {
+    "test-00000240-00017871": {
         "ua": "SEC-SGHX426M",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1943,7 +1943,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017872": {
+    "test-00000240-00017872": {
         "ua": "SEC-SGHX426 UP.Link/5.1.2.9",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1958,19 +1958,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017873": {
+    "test-00000240-00017873": {
         "ua": "SEC-SGHX426 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1985,19 +1985,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017874": {
+    "test-00000240-00017874": {
         "ua": "SEC-SGHX426",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2024,7 +2024,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017875": {
+    "test-00000240-00017875": {
         "ua": "SEC-SGHX400 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2039,19 +2039,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017876": {
+    "test-00000240-00017876": {
         "ua": "SEC-SGHX210/1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2078,7 +2078,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017877": {
+    "test-00000240-00017877": {
         "ua": "SEC-SGHX200/1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2105,7 +2105,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017878": {
+    "test-00000240-00017878": {
         "ua": "SEC-SGHX160/1.0 UP.Link/6.3.1.12.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2120,19 +2120,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017879": {
+    "test-00000240-00017879": {
         "ua": "SEC-SGHX160/1.0 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2147,19 +2147,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017880": {
+    "test-00000240-00017880": {
         "ua": "SEC-SGHX160/1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2186,7 +2186,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017881": {
+    "test-00000240-00017881": {
         "ua": "SEC-SGHX140",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2213,7 +2213,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017882": {
+    "test-00000240-00017882": {
         "ua": "SEC-SGHX120/1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2240,7 +2240,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017883": {
+    "test-00000240-00017883": {
         "ua": "SEC-SGHX120",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2267,7 +2267,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017884": {
+    "test-00000240-00017884": {
         "ua": "SEC-SGHX105-X105UVDB1-NW.Browser3.01",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2294,7 +2294,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017885": {
+    "test-00000240-00017885": {
         "ua": "SEC-SGHX105 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2309,19 +2309,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017886": {
+    "test-00000240-00017886": {
         "ua": "SEC-SGHX105 NW.Browser3.01",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2348,7 +2348,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017887": {
+    "test-00000240-00017887": {
         "ua": "SEC-SGHX105",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2375,7 +2375,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017888": {
+    "test-00000240-00017888": {
         "ua": "SEC-SGHV208*NDQ2OTE5NTExMzI0MDMz UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2390,19 +2390,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017889": {
+    "test-00000240-00017889": {
         "ua": "SEC-SGHV208*NDQ2OTE5NTExMzI0MDMz",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2429,7 +2429,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017890": {
+    "test-00000240-00017890": {
         "ua": "SEC-SGHV208*MzUyNDgwMDAzNzAwMzMx",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2456,7 +2456,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017891": {
+    "test-00000240-00017891": {
         "ua": "SEC-SGHV208*MzUyNDgwMDAyMjM5NDIy UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2471,19 +2471,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017892": {
+    "test-00000240-00017892": {
         "ua": "SEC-SGHV208*MzUyNDgwMDAwNzA0NzU3 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2498,19 +2498,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017893": {
+    "test-00000240-00017893": {
         "ua": "SEC-SGHV208*MzUyNDgwMDAwNjE4NTg1 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2525,19 +2525,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017894": {
+    "test-00000240-00017894": {
         "ua": "SEC-SGHV208*MzUyMjg4MDAzOTA1MTY4 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2552,19 +2552,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017895": {
+    "test-00000240-00017895": {
         "ua": "SEC-SGHV208*MzUyMjg4MDAyNDYxMjk2 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2579,19 +2579,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017896": {
+    "test-00000240-00017896": {
         "ua": "SEC-SGHV208*MzUyMjg4MDAyNDU2NzI2",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2618,7 +2618,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017897": {
+    "test-00000240-00017897": {
         "ua": "SEC-SGHV208*MzUyMjg4MDAxOTczODk1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2645,7 +2645,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017898": {
+    "test-00000240-00017898": {
         "ua": "SEC-SGHV208*MzUyMjg4MDAxNzk2MzIw UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2660,19 +2660,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00017899": {
+    "test-00000240-00017899": {
         "ua": "SEC-SGHV208*MzUyMjg4MDAwMDI5MDYx",
         "properties": {
             "Browser_Name": "Default Browser",

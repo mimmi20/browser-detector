@@ -1,5 +1,5 @@
 {
-    "browscap-issue-00000216-00006600": {
+    "test-00000216-00006600": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x70705254656c5955546a,0x3a786b673a),75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -19,14 +19,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006601": {
+    "test-00000216-00006601": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4d564165675277586c6b,0x3a786b673a),75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -46,14 +46,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006602": {
+    "test-00000216-00006602": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x62416272486a747a737a,0x3a786b673a),75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -73,14 +73,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006603": {
+    "test-00000216-00006603": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' UNION ALL SELECT 75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x70634b73767849646e45,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -100,14 +100,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006604": {
+    "test-00000216-00006604": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x67716e546f6f61586f51,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -127,14 +127,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006605": {
+    "test-00000216-00006605": {
         "ua": "-8907' UNION ALL SELECT 75,CONCAT(0x3a7774733a,0x4b537667514158745769,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -161,7 +161,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006606": {
+    "test-00000216-00006606": {
         "ua": "-3551' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x5a70436e4868556d6b5a,0x3a786b673a),75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -188,7 +188,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006607": {
+    "test-00000216-00006607": {
         "ua": "-2577' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x7a455768556d4b554456,0x3a786b673a),75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -215,7 +215,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006608": {
+    "test-00000216-00006608": {
         "ua": "-7168')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -242,7 +242,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006609": {
+    "test-00000216-00006609": {
         "ua": "-6067')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -269,7 +269,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006610": {
+    "test-00000216-00006610": {
         "ua": "-1372')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -296,7 +296,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006611": {
+    "test-00000216-00006611": {
         "ua": "-8364')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -323,7 +323,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006612": {
+    "test-00000216-00006612": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4d596a744b78785a5a51,0x3a786b673a),75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -343,14 +343,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006613": {
+    "test-00000216-00006613": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x667655466c79616d7961,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -370,14 +370,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006614": {
+    "test-00000216-00006614": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x45524a4850626c416456,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -397,14 +397,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006615": {
+    "test-00000216-00006615": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' UNION ALL SELECT 75,75,75,CONCAT(0x3a7774733a,0x4c71566d455951725662,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -424,14 +424,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006616": {
+    "test-00000216-00006616": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' UNION ALL SELECT 75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x5148596d675447495951,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -451,14 +451,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006617": {
+    "test-00000216-00006617": {
         "ua": "-7375' UNION ALL SELECT 75,75,75,75,75,75,CONCAT(0x3a7774733a,0x745147425a49536a516f,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -485,7 +485,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006618": {
+    "test-00000216-00006618": {
         "ua": "-9289' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x544b6368484b566b414f,0x3a786b673a),75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -512,7 +512,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006619": {
+    "test-00000216-00006619": {
         "ua": "-3951' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x556a51526f7843724b55,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -539,7 +539,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006620": {
+    "test-00000216-00006620": {
         "ua": "-3188' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4d4e424d6c4d6376656e,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -566,7 +566,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006621": {
+    "test-00000216-00006621": {
         "ua": "-1470' UNION ALL SELECT 75,75,CONCAT(0x3a7774733a,0x6a6368717970684a4951,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -593,7 +593,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006622": {
+    "test-00000216-00006622": {
         "ua": "-4362' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x5a5a7950414f66485175,0x3a786b673a),75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -620,7 +620,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006623": {
+    "test-00000216-00006623": {
         "ua": "-8030' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x7372534e555642594574,0x3a786b673a),75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -647,7 +647,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006624": {
+    "test-00000216-00006624": {
         "ua": "-7487' UNION ALL SELECT 75,75,75,75,75,CONCAT(0x3a7774733a,0x6b6e745757465472704f,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -674,7 +674,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006625": {
+    "test-00000216-00006625": {
         "ua": "-4946' UNION ALL SELECT 75,75,75,CONCAT(0x3a7774733a,0x6a456c43507674774763,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -701,7 +701,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006626": {
+    "test-00000216-00006626": {
         "ua": "-4770' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4c794d495a576c537255,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -728,7 +728,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006627": {
+    "test-00000216-00006627": {
         "ua": "-6711' UNION ALL SELECT CONCAT(0x3a7774733a,0x70417561475277505075,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -755,7 +755,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006628": {
+    "test-00000216-00006628": {
         "ua": "-3614' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x47775a4e6d4979456f4e,0x3a786b673a),75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -782,7 +782,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006629": {
+    "test-00000216-00006629": {
         "ua": "-4594' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x715149514f4f41504953,0x3a786b673a),75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -809,7 +809,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006630": {
+    "test-00000216-00006630": {
         "ua": "-7686' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4b51464f797a774c6b64,0x3a786b673a)#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -836,7 +836,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006631": {
+    "test-00000216-00006631": {
         "ua": "-2986' UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x45596c4b547958576248,0x3a786b673a),75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -863,7 +863,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006632": {
+    "test-00000216-00006632": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -890,7 +890,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006633": {
+    "test-00000216-00006633": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -917,7 +917,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006634": {
+    "test-00000216-00006634": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -944,7 +944,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006635": {
+    "test-00000216-00006635": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -971,7 +971,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006636": {
+    "test-00000216-00006636": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -998,7 +998,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006637": {
+    "test-00000216-00006637": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1025,7 +1025,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006638": {
+    "test-00000216-00006638": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1052,7 +1052,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006639": {
+    "test-00000216-00006639": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x737a68534e736f4b7758,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1079,7 +1079,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006640": {
+    "test-00000216-00006640": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x496664556a44726f7847,0x3a786b673a),75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1106,7 +1106,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006641": {
+    "test-00000216-00006641": {
         "ua": ")) UNION ALL SELECT 75,CONCAT(0x3a7774733a,0x746c554345594577734c,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1133,7 +1133,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006642": {
+    "test-00000216-00006642": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,CONCAT(0x3a7774733a,0x67644f77594d48574b6c,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1160,7 +1160,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006643": {
+    "test-00000216-00006643": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x79694341566d62726d4e,0x3a786b673a),75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1187,7 +1187,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006644": {
+    "test-00000216-00006644": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x69614f4e704d4d456f44,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1214,7 +1214,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006645": {
+    "test-00000216-00006645": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x6e574a79556561654758,0x3a786b673a),75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1241,7 +1241,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006646": {
+    "test-00000216-00006646": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x636769516c4971737044,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1268,7 +1268,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006647": {
+    "test-00000216-00006647": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4757435952747a464245,0x3a786b673a),75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1295,7 +1295,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006648": {
+    "test-00000216-00006648": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x596152634d7364495557,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1322,7 +1322,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006649": {
+    "test-00000216-00006649": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,CONCAT(0x3a7774733a,0x4b677762646f77596274,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1349,7 +1349,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006650": {
+    "test-00000216-00006650": {
         "ua": ")) UNION ALL SELECT 75,75,CONCAT(0x3a7774733a,0x67507751547148574a6c,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1376,7 +1376,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006651": {
+    "test-00000216-00006651": {
         "ua": ")) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x587a7757616c6c687a48,0x3a786b673a),75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1403,7 +1403,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006652": {
+    "test-00000216-00006652": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,CONCAT(0x3a7774733a,0x4c706c61634377656f41,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1430,7 +1430,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006653": {
+    "test-00000216-00006653": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4248796c52656f6a7271,0x3a786b673a),75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1457,7 +1457,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006654": {
+    "test-00000216-00006654": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x42667042664e67465975,0x3a786b673a),75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1484,7 +1484,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006655": {
+    "test-00000216-00006655": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x424363657a575161414e,0x3a786b673a),75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1511,7 +1511,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006656": {
+    "test-00000216-00006656": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x54766549654168627568,0x3a786b673a),75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1538,7 +1538,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006657": {
+    "test-00000216-00006657": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x554352476b6b6b76714d,0x3a786b673a),75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1565,7 +1565,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006658": {
+    "test-00000216-00006658": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x655348717a584775486e,0x3a786b673a),75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1592,7 +1592,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006659": {
+    "test-00000216-00006659": {
         "ua": "UNION ALL SELECT 75,CONCAT(0x3a7774733a,0x64614575515076736a64,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1619,7 +1619,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006660": {
+    "test-00000216-00006660": {
         "ua": "UNION ALL SELECT 75,75,CONCAT(0x3a7774733a,0x736c645a4a6b4d42464e,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1646,7 +1646,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006661": {
+    "test-00000216-00006661": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4a755744596141656b6b,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1673,7 +1673,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006662": {
+    "test-00000216-00006662": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x6c4669574c6775435351,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1700,7 +1700,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006663": {
+    "test-00000216-00006663": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x465a454c5a74776c5747,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1727,7 +1727,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006664": {
+    "test-00000216-00006664": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,CONCAT(0x3a7774733a,0x6a4c55454a6d4b4e7353,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1754,7 +1754,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006665": {
+    "test-00000216-00006665": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x497745697157416e5958,0x3a786b673a)#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1781,7 +1781,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006666": {
+    "test-00000216-00006666": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x43485269694f58624145,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1808,7 +1808,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006667": {
+    "test-00000216-00006667": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x6e6c7476794672774868,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1835,7 +1835,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006668": {
+    "test-00000216-00006668": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4673554f56625a686e6a,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1862,7 +1862,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006669": {
+    "test-00000216-00006669": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x777367474e51424f6455,0x3a786b673a),75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1889,7 +1889,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006670": {
+    "test-00000216-00006670": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x75556b624671546b704d,0x3a786b673a),75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1916,7 +1916,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006671": {
+    "test-00000216-00006671": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x6b686a676d5273437972,0x3a786b673a),75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1943,7 +1943,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006672": {
+    "test-00000216-00006672": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x474b5566426c6a45635a,0x3a786b673a)#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1970,7 +1970,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006673": {
+    "test-00000216-00006673": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4f49524d4d785a4c6a72,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1997,7 +1997,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006674": {
+    "test-00000216-00006674": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x574a52535051415a7653,0x3a786b673a),75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2024,7 +2024,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006675": {
+    "test-00000216-00006675": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x726b61456f4c78554c79,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2051,7 +2051,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006676": {
+    "test-00000216-00006676": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x784b6c51556766555a45,0x3a786b673a),75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2078,7 +2078,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006677": {
+    "test-00000216-00006677": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4b57686f4b794559484e,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2105,7 +2105,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006678": {
+    "test-00000216-00006678": {
         "ua": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x55547356414d64477746,0x3a786b673a),75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2132,7 +2132,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006679": {
+    "test-00000216-00006679": {
         "ua": "UNION ALL SELECT 75,75,CONCAT(0x3a7774733a,0x4c4c6f78795975636553,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2159,7 +2159,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006680": {
+    "test-00000216-00006680": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%') UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x485745736e686d6d4676,0x3a786b673a),75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2179,14 +2179,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006681": {
+    "test-00000216-00006681": {
         "ua": "-2226%') UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x59724c484b5164564952,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2213,7 +2213,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006682": {
+    "test-00000216-00006682": {
         "ua": "-7932%') UNION ALL SELECT 75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x6f5941527541454b7642,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2240,7 +2240,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006683": {
+    "test-00000216-00006683": {
         "ua": "-5218%') UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x784b634c6b4a4c70486c,0x3a786b673a),75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2267,7 +2267,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006684": {
+    "test-00000216-00006684": {
         "ua": "-6303%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2294,7 +2294,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006685": {
+    "test-00000216-00006685": {
         "ua": "-4591%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2321,7 +2321,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006686": {
+    "test-00000216-00006686": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x436d464c6c4458687553,0x3a786b673a),75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2341,14 +2341,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006687": {
+    "test-00000216-00006687": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x794973517376706b4d68,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2368,14 +2368,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006688": {
+    "test-00000216-00006688": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x7441794b684b5844467a,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2395,14 +2395,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006689": {
+    "test-00000216-00006689": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4a424465715742686d67,0x3a786b673a),75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2422,14 +2422,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006690": {
+    "test-00000216-00006690": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x6d774556574841754279,0x3a786b673a),75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2449,14 +2449,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006691": {
+    "test-00000216-00006691": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x43495257685278564173,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2476,14 +2476,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006692": {
+    "test-00000216-00006692": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x484655537278664a764f,0x3a786b673a),75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2503,14 +2503,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006693": {
+    "test-00000216-00006693": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) UNION ALL SELECT 75,CONCAT(0x3a7774733a,0x56657947646a55436e77,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2530,14 +2530,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006694": {
+    "test-00000216-00006694": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) UNION ALL SELECT 75,75,CONCAT(0x3a7774733a,0x6249647a774356744478,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2557,14 +2557,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006695": {
+    "test-00000216-00006695": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x4353616a5a6f4b624e56,0x3a786b673a),75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2584,14 +2584,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006696": {
+    "test-00000216-00006696": {
         "ua": "-2894%')) UNION ALL SELECT 75,75,75,CONCAT(0x3a7774733a,0x47687047776e76476365,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2618,7 +2618,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006697": {
+    "test-00000216-00006697": {
         "ua": "-1529%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x444151684e7871725948,0x3a786b673a),75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2645,7 +2645,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006698": {
+    "test-00000216-00006698": {
         "ua": "-8557%')) UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,CONCAT(0x3a7774733a,0x6a546e455861526f4a77,0x3a786b673a),75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2672,7 +2672,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00006699": {
+    "test-00000216-00006699": {
         "ua": "-2124%')) UNION ALL SELECT 75,75,CONCAT(0x3a7774733a,0x56586a6e6f4e52706b4e,0x3a786b673a),75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#",
         "properties": {
             "Browser_Name": "Default Browser",

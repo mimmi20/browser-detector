@@ -1,5 +1,5 @@
 {
-    "browscap-issue-00000232-00009300": {
+    "test-00000232-00009300": {
         "ua": "Mozilla/2.0 (Linux; Unix OS 2; en-Us; rv:2.5.3) Gecko/35306383 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -19,14 +19,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009301": {
+    "test-00000232-00009301": {
         "ua": "Mozilla/1.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/42394891",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -41,10 +41,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -53,7 +53,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009302": {
+    "test-00000232-00009302": {
         "ua": "Mozilla/1.0 (Windows; U; Windows NT; en-Us; rv:2.5.3) Gecko/69892142 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -68,10 +68,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -80,7 +80,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009303": {
+    "test-00000232-00009303": {
         "ua": "Mozilla/5.0 (Linux; Unix OS 2; en-Us; rv:1.5.3) Gecko/17026936 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -100,14 +100,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009304": {
+    "test-00000232-00009304": {
         "ua": "Mozilla/5.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/16009770 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -134,7 +134,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009305": {
+    "test-00000232-00009305": {
         "ua": "Mozilla/3.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/49692320 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -149,10 +149,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -161,7 +161,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009306": {
+    "test-00000232-00009306": {
         "ua": "Mozilla/3.0 (Windows; U; Windows NT; en-Us; rv:2.5.3) Gecko/2330785 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -176,10 +176,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -188,7 +188,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009307": {
+    "test-00000232-00009307": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT; en-Us; rv:1.5.3) Gecko/31714647",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -203,10 +203,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -215,7 +215,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009308": {
+    "test-00000232-00009308": {
         "ua": "Mozilla/2.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/8028604 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -242,7 +242,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009309": {
+    "test-00000232-00009309": {
         "ua": "Mozilla/5.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/57479338 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -269,7 +269,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009310": {
+    "test-00000232-00009310": {
         "ua": "Mozilla/1.0 (Windows; U; Windows NT; en-Us; rv:2.1.3) Gecko/48972706 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -284,10 +284,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -296,7 +296,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009311": {
+    "test-00000232-00009311": {
         "ua": "Mozilla/4.0 (Linux; Unix OS 2; en-Us; rv:2.5.3) Gecko/27015002 Firefox/1.3.3",
         "properties": {
             "Browser_Name": "Firefox",
@@ -316,14 +316,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009312": {
+    "test-00000232-00009312": {
         "ua": "Mozilla/6.0 (Windows; U; Windows NT; en-Us; rv:1.5.3) Gecko/47915444 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -338,10 +338,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -350,7 +350,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009313": {
+    "test-00000232-00009313": {
         "ua": "Mozilla/6.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/69989216 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -365,10 +365,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -377,7 +377,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009314": {
+    "test-00000232-00009314": {
         "ua": "Mozilla/1.0 (Linux; Unix OS 2; en-Us; rv:2.5.3) Gecko/62520853 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -397,14 +397,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009315": {
+    "test-00000232-00009315": {
         "ua": "Mozilla/3.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/28146124 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -419,10 +419,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -431,7 +431,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009316": {
+    "test-00000232-00009316": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT; en-Us; rv:2.1.3) Gecko/38497161 Firefox/1.3.3",
         "properties": {
             "Browser_Name": "Firefox",
@@ -446,10 +446,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -458,7 +458,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009317": {
+    "test-00000232-00009317": {
         "ua": "Mozilla/2.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/69765524 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -478,14 +478,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009318": {
+    "test-00000232-00009318": {
         "ua": "Mozilla/6.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/35871944",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -505,14 +505,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009319": {
+    "test-00000232-00009319": {
         "ua": "Mozilla/1.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/12090937",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -539,7 +539,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009320": {
+    "test-00000232-00009320": {
         "ua": "Mozilla/3.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/16100513 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -566,7 +566,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009321": {
+    "test-00000232-00009321": {
         "ua": "Mozilla/3.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/60876927 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -586,14 +586,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009322": {
+    "test-00000232-00009322": {
         "ua": "Mozilla/3.0 (Linux; Unix OS 2; en-Us; rv:1.5.3) Gecko/21528213 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -613,14 +613,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009323": {
+    "test-00000232-00009323": {
         "ua": "Mozilla/2.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/56116083 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -640,14 +640,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009324": {
+    "test-00000232-00009324": {
         "ua": "Mozilla/2.0 (Linux; Unix OS 2; en-Us; rv:1.5.3) Gecko/4683773",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -667,14 +667,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009325": {
+    "test-00000232-00009325": {
         "ua": "Mozilla/4.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/39930057 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -701,7 +701,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009326": {
+    "test-00000232-00009326": {
         "ua": "Mozilla/2.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/16594324 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -716,10 +716,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -728,7 +728,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009327": {
+    "test-00000232-00009327": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT; en-Us; rv:2.1.3) Gecko/58677991 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -743,10 +743,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -755,7 +755,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009328": {
+    "test-00000232-00009328": {
         "ua": "Mozilla/2.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/49318796 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -782,7 +782,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009329": {
+    "test-00000232-00009329": {
         "ua": "Mozilla/1.0 (Mac; Mac OS 3; en-Us; rv:1.5.3) Gecko/9661978",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -809,7 +809,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009330": {
+    "test-00000232-00009330": {
         "ua": "Mozilla/1.0 (Linux; Unix OS 2; en-Us; rv:1.5.3) Gecko/56274355 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -829,14 +829,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009331": {
+    "test-00000232-00009331": {
         "ua": "Mozilla/5.0 (Linux; Unix OS 2; en-Us; rv:1.5.3) Gecko/68252436",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -856,14 +856,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009332": {
+    "test-00000232-00009332": {
         "ua": "Mozilla/6.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/50371837 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -890,7 +890,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009333": {
+    "test-00000232-00009333": {
         "ua": "Mozilla/4.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/16564780 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -910,14 +910,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009334": {
+    "test-00000232-00009334": {
         "ua": "Mozilla/4.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/1744121 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -937,14 +937,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009335": {
+    "test-00000232-00009335": {
         "ua": "Mozilla/3.0 (Mac; Mac OS 3; en-Us; rv:2.5.3) Gecko/16218690 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -971,7 +971,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009336": {
+    "test-00000232-00009336": {
         "ua": "Mozilla/3.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/23026528 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -991,14 +991,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009337": {
+    "test-00000232-00009337": {
         "ua": "Mozilla/3.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/63113848 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1018,14 +1018,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009338": {
+    "test-00000232-00009338": {
         "ua": "Mozilla/4.0 (Linux; Unix OS 2; en-Us; rv:1.5.3) Gecko/30182567 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1045,14 +1045,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009339": {
+    "test-00000232-00009339": {
         "ua": "Mozilla/5.0 (Mac; Mac OS 3; en-Us; rv:1.5.3) Gecko/12534101 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -1079,7 +1079,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009340": {
+    "test-00000232-00009340": {
         "ua": "Mozilla/2.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/60606808 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1094,10 +1094,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1106,7 +1106,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009341": {
+    "test-00000232-00009341": {
         "ua": "Mozilla/4.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/69664229 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1121,10 +1121,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1133,7 +1133,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009342": {
+    "test-00000232-00009342": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/46391805 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1148,10 +1148,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1160,7 +1160,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009343": {
+    "test-00000232-00009343": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT; en-Us; rv:1.5.3) Gecko/60435873 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1175,10 +1175,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1187,7 +1187,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009344": {
+    "test-00000232-00009344": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/20840254 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1202,10 +1202,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1214,7 +1214,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009345": {
+    "test-00000232-00009345": {
         "ua": "Mozilla/3.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/65671535 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1234,14 +1234,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009346": {
+    "test-00000232-00009346": {
         "ua": "Mozilla/4.0 (Windows; U; Windows NT; en-Us; rv:1.5.3) Gecko/23729259 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1256,10 +1256,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1268,7 +1268,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009347": {
+    "test-00000232-00009347": {
         "ua": "Mozilla/3.0 (Windows; U; Windows NT; en-Us; rv:2.5.3) Gecko/34998278 Firefox/1.3.3",
         "properties": {
             "Browser_Name": "Firefox",
@@ -1283,10 +1283,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1295,7 +1295,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009348": {
+    "test-00000232-00009348": {
         "ua": "Mozilla/4.0 (Mac; Mac OS 3; en-Us; rv:2.1.3) Gecko/10227540 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1322,7 +1322,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009349": {
+    "test-00000232-00009349": {
         "ua": "Mozilla/6.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/2995531 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -1349,7 +1349,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009350": {
+    "test-00000232-00009350": {
         "ua": "Mozilla/1.0 (Mac; Mac OS 3; en-Us; rv:2.5.3) Gecko/43582992",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1376,7 +1376,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009351": {
+    "test-00000232-00009351": {
         "ua": "Mozilla/6.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/37691025",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1396,14 +1396,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009352": {
+    "test-00000232-00009352": {
         "ua": "Mozilla/5.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/38275579 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1423,14 +1423,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009353": {
+    "test-00000232-00009353": {
         "ua": "Mozilla/4.0 (Windows; U; Windows NT; en-Us; rv:1.5.3) Gecko/13732753 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -1445,10 +1445,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1457,7 +1457,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009354": {
+    "test-00000232-00009354": {
         "ua": "Mozilla/3.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/67885243 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1477,14 +1477,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009355": {
+    "test-00000232-00009355": {
         "ua": "Mozilla/3.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/63559122 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -1504,14 +1504,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009356": {
+    "test-00000232-00009356": {
         "ua": "Mozilla/3.0 (Mac; Mac OS 3; en-Us; rv:1.5.3) Gecko/12483454 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1538,7 +1538,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009357": {
+    "test-00000232-00009357": {
         "ua": "Mozilla/6.0 (Mac; Mac OS 3; en-Us; rv:1.5.3) Gecko/34185812 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -1565,7 +1565,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009358": {
+    "test-00000232-00009358": {
         "ua": "Mozilla/4.0 (Windows; U; Windows NT; en-Us; rv:2.5.3) Gecko/33295264",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1580,10 +1580,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1592,7 +1592,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009359": {
+    "test-00000232-00009359": {
         "ua": "Mozilla/6.0 (Linux; Unix OS 2; en-Us; rv:2.5.3) Gecko/6912253 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1612,14 +1612,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009360": {
+    "test-00000232-00009360": {
         "ua": "Mozilla/5.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/39799218 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -1634,10 +1634,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1646,7 +1646,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009361": {
+    "test-00000232-00009361": {
         "ua": "Mozilla/6.0 (Windows; U; Windows NT; en-Us; rv:2.5.3) Gecko/53440218",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1661,10 +1661,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1673,7 +1673,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009362": {
+    "test-00000232-00009362": {
         "ua": "Mozilla/1.0 (Windows; U; Windows NT; en-Us; rv:2.5.3) Gecko/2391984 Firefox/1.3.3",
         "properties": {
             "Browser_Name": "Firefox",
@@ -1688,10 +1688,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1700,7 +1700,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009363": {
+    "test-00000232-00009363": {
         "ua": "Mozilla/1.0 (Mac; Mac OS 3; en-Us; rv:2.1.3) Gecko/8727114",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1727,7 +1727,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009364": {
+    "test-00000232-00009364": {
         "ua": "Mozilla/1.0 (Linux; Unix OS 2; en-Us; rv:1.5.3) Gecko/42589039 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1747,14 +1747,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009365": {
+    "test-00000232-00009365": {
         "ua": "Mozilla/2.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/11510604 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1781,7 +1781,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009366": {
+    "test-00000232-00009366": {
         "ua": "Mozilla/5.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/50576537 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1801,14 +1801,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009367": {
+    "test-00000232-00009367": {
         "ua": "Mozilla/6.0 (Mac; Mac OS 3; en-Us; rv:2.5.3) Gecko/15461092 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1835,7 +1835,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009368": {
+    "test-00000232-00009368": {
         "ua": "Mozilla/4.0 (Windows; U; Windows NT; en-Us; rv:2.5.3) Gecko/12133143 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -1850,10 +1850,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -1862,7 +1862,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009369": {
+    "test-00000232-00009369": {
         "ua": "Mozilla/2.0 (Mac; Mac OS 3; en-Us; rv:1.5.3) Gecko/10358378 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1889,7 +1889,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009370": {
+    "test-00000232-00009370": {
         "ua": "Mozilla/3.0 (Mac; Mac OS 3; en-Us; rv:2.5.3) Gecko/44762651 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -1916,7 +1916,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009371": {
+    "test-00000232-00009371": {
         "ua": "Mozilla/3.0 (Mac; Mac OS 3; en-Us; rv:1.5.3) Gecko/24949015 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -1943,7 +1943,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009372": {
+    "test-00000232-00009372": {
         "ua": "Mozilla/5.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/38448624",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1963,14 +1963,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009373": {
+    "test-00000232-00009373": {
         "ua": "Mozilla/4.0 (Mac; Mac OS 3; en-Us; rv:2.1.3) Gecko/34553005 Firefox/1.3.3",
         "properties": {
             "Browser_Name": "Firefox",
@@ -1997,7 +1997,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009374": {
+    "test-00000232-00009374": {
         "ua": "Mozilla/2.0 (Windows; U; Windows NT; en-Us; rv:2.1.3) Gecko/2480617 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2012,10 +2012,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2024,7 +2024,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009375": {
+    "test-00000232-00009375": {
         "ua": "Mozilla/6.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/55170667 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2039,10 +2039,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2051,7 +2051,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009376": {
+    "test-00000232-00009376": {
         "ua": "Mozilla/2.0 (Windows; U; Windows NT; en-Us; rv:1.5.3) Gecko/49713423 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2066,10 +2066,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2078,7 +2078,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009377": {
+    "test-00000232-00009377": {
         "ua": "Mozilla/5.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/27696629",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2098,14 +2098,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009378": {
+    "test-00000232-00009378": {
         "ua": "Mozilla/1.0 (Windows; U; Windows NT; en-Us; rv:2.5.3) Gecko/41548660 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2120,10 +2120,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2132,7 +2132,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009379": {
+    "test-00000232-00009379": {
         "ua": "Mozilla/6.0 (Linux; Unix OS 2; en-Us; rv:2.5.3) Gecko/18158059 Firefox/1.3.3",
         "properties": {
             "Browser_Name": "Firefox",
@@ -2152,14 +2152,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009380": {
+    "test-00000232-00009380": {
         "ua": "Mozilla/2.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/67501168 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2179,14 +2179,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009381": {
+    "test-00000232-00009381": {
         "ua": "Mozilla/5.0 (Linux; Unix OS 2; en-Us; rv:1.5.3) Gecko/63014664 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2206,14 +2206,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009382": {
+    "test-00000232-00009382": {
         "ua": "Mozilla/2.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/69280154 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2233,14 +2233,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009383": {
+    "test-00000232-00009383": {
         "ua": "Mozilla/5.0 (Mac; Mac OS 3; en-Us; rv:2.1.3) Gecko/20952100 Firefox/1.3.3",
         "properties": {
             "Browser_Name": "Firefox",
@@ -2267,7 +2267,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009384": {
+    "test-00000232-00009384": {
         "ua": "Mozilla/5.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/65226261 Opera/2.3",
         "properties": {
             "Browser_Name": "Opera",
@@ -2287,14 +2287,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009385": {
+    "test-00000232-00009385": {
         "ua": "Mozilla/3.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/9849795 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2314,14 +2314,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009386": {
+    "test-00000232-00009386": {
         "ua": "Mozilla/3.0 (Linux; Unix OS 2; en-Us; rv:1.7.8) Gecko/27958307 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2341,14 +2341,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009387": {
+    "test-00000232-00009387": {
         "ua": "Mozilla/1.0 (Mac; Mac OS 3; en-Us; rv:1.5.3) Gecko/34926528 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2375,7 +2375,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009388": {
+    "test-00000232-00009388": {
         "ua": "Mozilla/6.0 (Windows; U; Windows NT; en-Us; rv:2.5.3) Gecko/30509664 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2390,10 +2390,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2402,7 +2402,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009389": {
+    "test-00000232-00009389": {
         "ua": "Mozilla/6.0 (Windows; U; Windows NT; en-Us; rv:1.7.8) Gecko/50240998 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2417,10 +2417,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2429,7 +2429,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009390": {
+    "test-00000232-00009390": {
         "ua": "Mozilla/4.0 (Windows; U; Windows NT; en-Us; rv:1.5.3) Gecko/32774019 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2444,10 +2444,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2456,7 +2456,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009391": {
+    "test-00000232-00009391": {
         "ua": "Mozilla/4.0 (Linux; Unix OS 2; en-Us; rv:2.5.3) Gecko/49983541 Firefox/1.3.3",
         "properties": {
             "Browser_Name": "Firefox",
@@ -2476,14 +2476,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009392": {
+    "test-00000232-00009392": {
         "ua": "Mozilla/2.0 (Windows; U; Windows NT; en-Us; rv:2.1.3) Gecko/41052738 Mozilla/2.3.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2498,10 +2498,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2510,7 +2510,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009393": {
+    "test-00000232-00009393": {
         "ua": "Mozilla/6.0 (Mac; Mac OS 3; en-Us; rv:1.7.8) Gecko/2892126 Firefox/1.3.3",
         "properties": {
             "Browser_Name": "Firefox",
@@ -2537,7 +2537,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009394": {
+    "test-00000232-00009394": {
         "ua": "Mozilla/4.0 (Mac; Mac OS 3; en-Us; rv:2.1.3) Gecko/8944475",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2564,7 +2564,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009395": {
+    "test-00000232-00009395": {
         "ua": "Mozilla/6.0 (Mac; Mac OS 3; en-Us; rv:2.1.3) Gecko/67074887 Safari/2.2.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2591,7 +2591,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009396": {
+    "test-00000232-00009396": {
         "ua": "Mozilla/1.0 (Mac; Mac OS 3; en-Us; rv:2.5.3) Gecko/62666464",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2618,7 +2618,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009397": {
+    "test-00000232-00009397": {
         "ua": "Mozilla/1.0 (Windows; U; Windows NT; en-Us; rv:2.1.3) Gecko/10060826 Internet Explorer/7",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2633,10 +2633,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2645,7 +2645,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009398": {
+    "test-00000232-00009398": {
         "ua": "Mozilla/4.0 (Windows; U; Windows NT; en-Us; rv:2.1.3) Gecko/39541761 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2660,10 +2660,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2672,7 +2672,7 @@
             "RenderingEngine_Maker": "Mozilla Foundation"
         }
     },
-    "browscap-issue-00000232-00009399": {
+    "test-00000232-00009399": {
         "ua": "Mozilla/5.0 (Linux; Unix OS 2; en-Us; rv:2.1.3) Gecko/65793933 Google Chrome/2.1.2",
         "properties": {
             "Browser_Name": "Chrome",
@@ -2692,7 +2692,7 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "Gecko",
             "RenderingEngine_Version": "unknown",
