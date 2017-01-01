@@ -62,7 +62,7 @@ class AndroidOs
             return false;
         }
 
-        if (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux; u; opera mini|maui|spreadtrum|vre;|linux; googletv)/i', $this->useragent)) {
+        if (preg_match('/(android|silk|juc ?\(linux;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux;|maui|spreadtrum|vre;|linux; googletv)/i', $this->useragent)) {
             return true;
         }
 
