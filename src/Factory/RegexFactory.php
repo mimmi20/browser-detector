@@ -38,9 +38,8 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Loader\RegexLoader;
 use Psr\Cache\CacheItemPoolInterface;
-use Stringy\Stringy;
-use Symfony\Component\Yaml\Yaml;
 use Psr\Log\LoggerInterface;
+use Stringy\Stringy;
 
 /**
  * detection class using regexes
@@ -96,10 +95,10 @@ class RegexFactory implements FactoryInterface
      *
      * @param string $useragent
      *
-     * @return bool
      * @throws \BrowserDetector\Loader\NotFoundException
      * @throws \InvalidArgumentException
      * @throws \BrowserDetector\Factory\Regex\NoMatchException
+     * @return bool
      */
     public function detect($useragent)
     {
@@ -118,6 +117,7 @@ class RegexFactory implements FactoryInterface
             if (preg_match($regex, $useragent, $matches)) {
                 $this->logger->debug('a regex matched');
                 $this->match = $matches;
+
                 return true;
             }
         }
@@ -160,6 +160,7 @@ class RegexFactory implements FactoryInterface
 
         if ($deviceLoader->has($manufacturercode . ' ' . $deviceCode)) {
             $this->logger->debug('device detected via manufacturercode and devicecode');
+
             return $deviceLoader->load($manufacturercode . ' ' . $deviceCode, $this->useragent);
         }
 
@@ -168,6 +169,7 @@ class RegexFactory implements FactoryInterface
 
             if (!in_array($device->getDeviceName(), ['unknown', null])) {
                 $this->logger->debug('device detected via devicecode');
+
                 return $device;
             }
         }
@@ -179,6 +181,7 @@ class RegexFactory implements FactoryInterface
                 $this->logger->debug('device detected via manufacturer');
                 /** @var \BrowserDetector\Factory\FactoryInterface $factory */
                 $factory = new $className($this->cache);
+
                 return $factory->detect($this->useragent);
             }
 
@@ -192,6 +195,7 @@ class RegexFactory implements FactoryInterface
                 $this->logger->debug('device detected via device type (mobile or tv)');
                 /** @var \BrowserDetector\Factory\FactoryInterface $factory */
                 $factory = new $className($this->cache);
+
                 return $factory->detect($this->useragent);
             }
 
@@ -217,6 +221,7 @@ class RegexFactory implements FactoryInterface
             && 'blackberry' === strtolower($this->match['manufacturercode'])
         ) {
             $this->logger->debug('platform forced to rim os');
+
             return $platformLoader->load('rim os', $this->useragent);
         }
 
@@ -228,6 +233,7 @@ class RegexFactory implements FactoryInterface
 
         if ('darwin' === $platformCode) {
             $darwinFactory = new Platform\DarwinFactory($this->cache, $platformLoader);
+
             return $darwinFactory->detect($this->useragent);
         }
 
@@ -244,6 +250,7 @@ class RegexFactory implements FactoryInterface
             $platformCode = 'android';
         } elseif ('linux' === $platformCode) {
             $linuxFactory = new Platform\LinuxFactory($this->cache, $platformLoader);
+
             return $linuxFactory->detect($this->useragent);
         } elseif ('bb10' === $platformCode || 'blackberry' === $platformCode) {
             // Rim OS

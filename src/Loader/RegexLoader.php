@@ -33,8 +33,8 @@ namespace BrowserDetector\Loader;
 
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
-use Symfony\Component\Yaml\Yaml;
 use Psr\Log\LoggerInterface;
+use Symfony\Component\Yaml\Yaml;
 
 /**
  * detection class using regexes
@@ -70,8 +70,8 @@ class RegexLoader
     }
 
     /**
-     * @return array|null
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @return array|null
      */
     public function getRegexes()
     {
@@ -92,7 +92,7 @@ class RegexLoader
     }
 
     /**
-     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
+     * @param  \Psr\Cache\CacheItemInterface             $cacheInitialized
      * @throws \BrowserDetector\Loader\NotFoundException
      */
     private function initCache(CacheItemInterface $cacheInitialized)

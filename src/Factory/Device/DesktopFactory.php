@@ -32,8 +32,8 @@
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Factory;
-use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Helper;
+use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
 
 /**

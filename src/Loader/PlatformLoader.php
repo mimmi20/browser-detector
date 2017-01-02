@@ -32,7 +32,6 @@
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Os as OsBits;
-use BrowserDetector\Helper;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
@@ -96,8 +95,8 @@ class PlatformLoader implements LoaderInterface
      * @param string      $useragent
      * @param string|null $inputVersion
      *
-     * @return \UaResult\Os\OsInterface
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @return \UaResult\Os\OsInterface
      */
     public function load($platformCode, $useragent, $inputVersion = null)
     {

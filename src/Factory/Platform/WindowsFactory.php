@@ -32,9 +32,9 @@
 namespace BrowserDetector\Factory\Platform;
 
 use BrowserDetector\Factory;
+use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
-use BrowserDetector\Loader\LoaderInterface;
 
 /**
  * @category  BrowserDetector

@@ -31,9 +31,9 @@
 
 namespace BrowserDetector\Loader;
 
-use UaResult\Company\Company;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use UaResult\Company\Company;
 
 /**
  * Browser detection class
@@ -94,8 +94,8 @@ class CompanyLoader implements LoaderInterface
      * @param string $companyKey
      * @param string $useragent
      *
-     * @return \UaResult\Company\Company
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @return \UaResult\Company\Company
      */
     public function load($companyKey, $useragent)
     {

@@ -91,8 +91,8 @@ class DeviceLoader implements LoaderInterface
      * @param string $deviceKey
      * @param string $useragent
      *
-     * @return \UaResult\Device\DeviceInterface
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @return \UaResult\Device\DeviceInterface
      */
     public function load($deviceKey, $useragent)
     {

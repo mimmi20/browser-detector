@@ -92,8 +92,8 @@ class EngineLoader implements LoaderInterface
      * @param string $engineKey
      * @param string $useragent
      *
-     * @return \UaResult\Engine\EngineInterface
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @return \UaResult\Engine\EngineInterface
      */
     public function load($engineKey, $useragent)
     {

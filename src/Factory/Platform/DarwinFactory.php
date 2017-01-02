@@ -32,8 +32,8 @@
 namespace BrowserDetector\Factory\Platform;
 
 use BrowserDetector\Factory;
-use Psr\Cache\CacheItemPoolInterface;
 use BrowserDetector\Loader\LoaderInterface;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * Browser detection class

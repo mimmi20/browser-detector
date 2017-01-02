@@ -46,8 +46,8 @@ interface LoaderInterface
      * @param string $key
      * @param string $useragent
      *
-     * @return mixed
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @return mixed
      */
     public function load($key, $useragent);
 

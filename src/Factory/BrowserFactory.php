@@ -31,10 +31,9 @@
 
 namespace BrowserDetector\Factory;
 
-use Psr\Cache\CacheItemPoolInterface;
-use UaBrowserType;
-use UaResult\Os\OsInterface;
 use BrowserDetector\Loader\LoaderInterface;
+use Psr\Cache\CacheItemPoolInterface;
+use UaResult\Os\OsInterface;
 
 /**
  * Browser detection class

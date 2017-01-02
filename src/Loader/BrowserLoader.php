@@ -36,7 +36,6 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
-use UaBrowserType;
 use UaResult\Browser\Browser;
 
 /**
@@ -94,8 +93,8 @@ class BrowserLoader implements LoaderInterface
      * @param string $browserKey
      * @param string $useragent
      *
-     * @return \UaResult\Browser\BrowserInterface
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @return \UaResult\Browser\BrowserInterface
      */
     public function load($browserKey, $useragent)
     {
