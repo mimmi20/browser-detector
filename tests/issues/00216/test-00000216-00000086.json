@@ -1,5 +1,5 @@
 {
-    "browscap-issue-00000216-00008600": {
+    "test-00000216-00008600": {
         "ua": "TObA",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -26,7 +26,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008601": {
+    "test-00000216-00008601": {
         "ua": "LTzm",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -53,7 +53,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008602": {
+    "test-00000216-00008602": {
         "ua": "wjAs",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -80,7 +80,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008603": {
+    "test-00000216-00008603": {
         "ua": "eHzL",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -107,7 +107,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008604": {
+    "test-00000216-00008604": {
         "ua": "SKTC",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -134,7 +134,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008605": {
+    "test-00000216-00008605": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%' RLIKE IF(5040=5040,0x4d6f7a696c6c612f342e302028636f6d70617469626c653b204d53494520372e303b2057696e646f7773204e5420352e313b205356313b202e4e455420434c5220322e302e353037323729,0x28) AND '%'='",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -154,14 +154,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008606": {
+    "test-00000216-00008606": {
         "ua": "(SELECT (CASE WHEN (5497=2487) THEN 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' ELSE 1/(SELECT 0) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -181,14 +181,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008607": {
+    "test-00000216-00008607": {
         "ua": "(SELECT (CASE WHEN (6859=6452) THEN 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' ELSE 1/(SELECT 0) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -208,14 +208,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008608": {
+    "test-00000216-00008608": {
         "ua": "(SELECT (CASE WHEN (5821=5821) THEN CHAR(77)+CHAR(111)+CHAR(122)+CHAR(105)+CHAR(108)+CHAR(108)+CHAR(97)+CHAR(47)+CHAR(52)+CHAR(46)+CHAR(48)+CHAR(32)+CHAR(40)+CHAR(99)+CHAR(111)+CHAR(109)+CHAR(112)+CHAR(97)+CHAR(116)+CHAR(105)+CHAR(98)+CHAR(108)+CHAR(101)+CHAR(59)+CHAR(32)+CHAR(77)+CHAR(83)+CHAR(73)+CHAR(69)+CHAR(32)+CHAR(55)+CHAR(46)+CHAR(48)+CHAR(59)+CHAR(32)+CHAR(87)+CHAR(105)+CHAR(110)+CHAR(100)+CHAR(111)+CHAR(119)+CHAR(115)+CHAR(32)+CHAR(78)+CHAR(84)+CHAR(32)+CHAR(53)+CHAR(46)+CHAR(49)+CHAR(59)+CHAR(32)+CHAR(83)+CHAR(86)+CHAR(49)+CHAR(59)+CHAR(32)+CHAR(46)+CHAR(78)+CHAR(69)+CHAR(84)+CHAR(32)+CHAR(67)+CHAR(76)+CHAR(82)+CHAR(32)+CHAR(50)+CHAR(46)+CHAR(48)+CHAR(46)+CHAR(53)+CHAR(48)+CHAR(55)+CHAR(50)+CHAR(55)+CHAR(41) ELSE 5821*(SELECT 5821 FROM master..sysdatabases) END))",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -242,7 +242,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008609": {
+    "test-00000216-00008609": {
         "ua": "(SELECT (CASE WHEN (8135=6146) THEN CHR(77)||CHR(111)||CHR(122)||CHR(105)||CHR(108)||CHR(108)||CHR(97)||CHR(47)||CHR(52)||CHR(46)||CHR(48)||CHR(32)||CHR(40)||CHR(99)||CHR(111)||CHR(109)||CHR(112)||CHR(97)||CHR(116)||CHR(105)||CHR(98)||CHR(108)||CHR(101)||CHR(59)||CHR(32)||CHR(77)||CHR(83)||CHR(73)||CHR(69)||CHR(32)||CHR(55)||CHR(46)||CHR(48)||CHR(59)||CHR(32)||CHR(87)||CHR(105)||CHR(110)||CHR(100)||CHR(111)||CHR(119)||CHR(115)||CHR(32)||CHR(78)||CHR(84)||CHR(32)||CHR(53)||CHR(46)||CHR(49)||CHR(59)||CHR(32)||CHR(83)||CHR(86)||CHR(49)||CHR(59)||CHR(32)||CHR(46)||CHR(78)||CHR(69)||CHR(84)||CHR(32)||CHR(67)||CHR(76)||CHR(82)||CHR(32)||CHR(50)||CHR(46)||CHR(48)||CHR(46)||CHR(53)||CHR(48)||CHR(55)||CHR(50)||CHR(55)||CHR(41) ELSE CAST(1 AS INT)/(SELECT 0 FROM DUAL) END) FROM DUAL)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -269,7 +269,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008610": {
+    "test-00000216-00008610": {
         "ua": "IIF(4220=4468,CHR(77)&CHR(111)&CHR(122)&CHR(105)&CHR(108)&CHR(108)&CHR(97)&CHR(47)&CHR(52)&CHR(46)&CHR(48)&CHR(32)&CHR(40)&CHR(99)&CHR(111)&CHR(109)&CHR(112)&CHR(97)&CHR(116)&CHR(105)&CHR(98)&CHR(108)&CHR(101)&CHR(59)&CHR(32)&CHR(77)&CHR(83)&CHR(73)&CHR(69)&CHR(32)&CHR(55)&CHR(46)&CHR(48)&CHR(59)&CHR(32)&CHR(87)&CHR(105)&CHR(110)&CHR(100)&CHR(111)&CHR(119)&CHR(115)&CHR(32)&CHR(78)&CHR(84)&CHR(32)&CHR(53)&CHR(46)&CHR(49)&CHR(59)&CHR(32)&CHR(83)&CHR(86)&CHR(49)&CHR(59)&CHR(32)&CHR(46)&CHR(78)&CHR(69)&CHR(84)&CHR(32)&CHR(67)&CHR(76)&CHR(82)&CHR(32)&CHR(50)&CHR(46)&CHR(48)&CHR(46)&CHR(53)&CHR(48)&CHR(55)&CHR(50)&CHR(55)&CHR(41),1/0)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -296,7 +296,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008611": {
+    "test-00000216-00008611": {
         "ua": "IIF(3319=3319,CHR(77)&CHR(111)&CHR(122)&CHR(105)&CHR(108)&CHR(108)&CHR(97)&CHR(47)&CHR(52)&CHR(46)&CHR(48)&CHR(32)&CHR(40)&CHR(99)&CHR(111)&CHR(109)&CHR(112)&CHR(97)&CHR(116)&CHR(105)&CHR(98)&CHR(108)&CHR(101)&CHR(59)&CHR(32)&CHR(77)&CHR(83)&CHR(73)&CHR(69)&CHR(32)&CHR(55)&CHR(46)&CHR(48)&CHR(59)&CHR(32)&CHR(87)&CHR(105)&CHR(110)&CHR(100)&CHR(111)&CHR(119)&CHR(115)&CHR(32)&CHR(78)&CHR(84)&CHR(32)&CHR(53)&CHR(46)&CHR(49)&CHR(59)&CHR(32)&CHR(83)&CHR(86)&CHR(49)&CHR(59)&CHR(32)&CHR(46)&CHR(78)&CHR(69)&CHR(84)&CHR(32)&CHR(67)&CHR(76)&CHR(82)&CHR(32)&CHR(50)&CHR(46)&CHR(48)&CHR(46)&CHR(53)&CHR(48)&CHR(55)&CHR(50)&CHR(55)&CHR(41),1/0)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -323,7 +323,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008612": {
+    "test-00000216-00008612": {
         "ua": "(CASE WHEN 9443=1398 THEN 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' ELSE NULL END)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -343,14 +343,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008613": {
+    "test-00000216-00008613": {
         "ua": "(CASE WHEN 9509=9509 THEN 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' ELSE NULL END)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -370,14 +370,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008614": {
+    "test-00000216-00008614": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (5778=8611) THEN 1 ELSE 1/(SELECT 0) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -397,14 +397,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008615": {
+    "test-00000216-00008615": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (2939=2939) THEN 1 ELSE 1/(SELECT 0) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -424,14 +424,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008616": {
+    "test-00000216-00008616": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (5822=7076) THEN 1 ELSE 1/(SELECT 0) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -451,14 +451,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008617": {
+    "test-00000216-00008617": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (3251=1033) THEN 0x4d6f7a696c6c612f342e302028636f6d70617469626c653b204d53494520372e303b2057696e646f7773204e5420352e313b205356313b202e4e455420434c5220322e302e353037323729 ELSE 3251*(SELECT 3251 FROM INFORMATION_SCHEMA.CHARACTER_SETS) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -478,14 +478,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008618": {
+    "test-00000216-00008618": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (3673=3673) THEN 0x4d6f7a696c6c612f342e302028636f6d70617469626c653b204d53494520372e303b2057696e646f7773204e5420352e313b205356313b202e4e455420434c5220322e302e353037323729 ELSE 3673*(SELECT 3673 FROM INFORMATION_SCHEMA.CHARACTER_SETS) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -505,14 +505,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008619": {
+    "test-00000216-00008619": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (3798=1951) THEN 0x4d6f7a696c6c612f342e302028636f6d70617469626c653b204d53494520372e303b2057696e646f7773204e5420352e313b205356313b202e4e455420434c5220322e302e353037323729 ELSE 3798*(SELECT 3798 FROM INFORMATION_SCHEMA.CHARACTER_SETS) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -532,14 +532,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008620": {
+    "test-00000216-00008620": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (4814=1122) THEN CHAR(77)+CHAR(111)+CHAR(122)+CHAR(105)+CHAR(108)+CHAR(108)+CHAR(97)+CHAR(47)+CHAR(52)+CHAR(46)+CHAR(48)+CHAR(32)+CHAR(40)+CHAR(99)+CHAR(111)+CHAR(109)+CHAR(112)+CHAR(97)+CHAR(116)+CHAR(105)+CHAR(98)+CHAR(108)+CHAR(101)+CHAR(59)+CHAR(32)+CHAR(77)+CHAR(83)+CHAR(73)+CHAR(69)+CHAR(32)+CHAR(55)+CHAR(46)+CHAR(48)+CHAR(59)+CHAR(32)+CHAR(87)+CHAR(105)+CHAR(110)+CHAR(100)+CHAR(111)+CHAR(119)+CHAR(115)+CHAR(32)+CHAR(78)+CHAR(84)+CHAR(32)+CHAR(53)+CHAR(46)+CHAR(49)+CHAR(59)+CHAR(32)+CHAR(83)+CHAR(86)+CHAR(49)+CHAR(59)+CHAR(32)+CHAR(46)+CHAR(78)+CHAR(69)+CHAR(84)+CHAR(32)+CHAR(67)+CHAR(76)+CHAR(82)+CHAR(32)+CHAR(50)+CHAR(46)+CHAR(48)+CHAR(46)+CHAR(53)+CHAR(48)+CHAR(55)+CHAR(50)+CHAR(55)+CHAR(41) ELSE 4814*(SELECT 4814 FROM master..sysdatabases) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -559,14 +559,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008621": {
+    "test-00000216-00008621": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (3718=3718) THEN CHAR(77)+CHAR(111)+CHAR(122)+CHAR(105)+CHAR(108)+CHAR(108)+CHAR(97)+CHAR(47)+CHAR(52)+CHAR(46)+CHAR(48)+CHAR(32)+CHAR(40)+CHAR(99)+CHAR(111)+CHAR(109)+CHAR(112)+CHAR(97)+CHAR(116)+CHAR(105)+CHAR(98)+CHAR(108)+CHAR(101)+CHAR(59)+CHAR(32)+CHAR(77)+CHAR(83)+CHAR(73)+CHAR(69)+CHAR(32)+CHAR(55)+CHAR(46)+CHAR(48)+CHAR(59)+CHAR(32)+CHAR(87)+CHAR(105)+CHAR(110)+CHAR(100)+CHAR(111)+CHAR(119)+CHAR(115)+CHAR(32)+CHAR(78)+CHAR(84)+CHAR(32)+CHAR(53)+CHAR(46)+CHAR(49)+CHAR(59)+CHAR(32)+CHAR(83)+CHAR(86)+CHAR(49)+CHAR(59)+CHAR(32)+CHAR(46)+CHAR(78)+CHAR(69)+CHAR(84)+CHAR(32)+CHAR(67)+CHAR(76)+CHAR(82)+CHAR(32)+CHAR(50)+CHAR(46)+CHAR(48)+CHAR(46)+CHAR(53)+CHAR(48)+CHAR(55)+CHAR(50)+CHAR(55)+CHAR(41) ELSE 3718*(SELECT 3718 FROM master..sysdatabases) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -586,14 +586,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008622": {
+    "test-00000216-00008622": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (2732=9087) THEN CHAR(77)+CHAR(111)+CHAR(122)+CHAR(105)+CHAR(108)+CHAR(108)+CHAR(97)+CHAR(47)+CHAR(52)+CHAR(46)+CHAR(48)+CHAR(32)+CHAR(40)+CHAR(99)+CHAR(111)+CHAR(109)+CHAR(112)+CHAR(97)+CHAR(116)+CHAR(105)+CHAR(98)+CHAR(108)+CHAR(101)+CHAR(59)+CHAR(32)+CHAR(77)+CHAR(83)+CHAR(73)+CHAR(69)+CHAR(32)+CHAR(55)+CHAR(46)+CHAR(48)+CHAR(59)+CHAR(32)+CHAR(87)+CHAR(105)+CHAR(110)+CHAR(100)+CHAR(111)+CHAR(119)+CHAR(115)+CHAR(32)+CHAR(78)+CHAR(84)+CHAR(32)+CHAR(53)+CHAR(46)+CHAR(49)+CHAR(59)+CHAR(32)+CHAR(83)+CHAR(86)+CHAR(49)+CHAR(59)+CHAR(32)+CHAR(46)+CHAR(78)+CHAR(69)+CHAR(84)+CHAR(32)+CHAR(67)+CHAR(76)+CHAR(82)+CHAR(32)+CHAR(50)+CHAR(46)+CHAR(48)+CHAR(46)+CHAR(53)+CHAR(48)+CHAR(55)+CHAR(50)+CHAR(55)+CHAR(41) ELSE 2732*(SELECT 2732 FROM master..sysdatabases) END))",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -613,14 +613,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008623": {
+    "test-00000216-00008623": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (4967=4257) THEN CHR(77)||CHR(111)||CHR(122)||CHR(105)||CHR(108)||CHR(108)||CHR(97)||CHR(47)||CHR(52)||CHR(46)||CHR(48)||CHR(32)||CHR(40)||CHR(99)||CHR(111)||CHR(109)||CHR(112)||CHR(97)||CHR(116)||CHR(105)||CHR(98)||CHR(108)||CHR(101)||CHR(59)||CHR(32)||CHR(77)||CHR(83)||CHR(73)||CHR(69)||CHR(32)||CHR(55)||CHR(46)||CHR(48)||CHR(59)||CHR(32)||CHR(87)||CHR(105)||CHR(110)||CHR(100)||CHR(111)||CHR(119)||CHR(115)||CHR(32)||CHR(78)||CHR(84)||CHR(32)||CHR(53)||CHR(46)||CHR(49)||CHR(59)||CHR(32)||CHR(83)||CHR(86)||CHR(49)||CHR(59)||CHR(32)||CHR(46)||CHR(78)||CHR(69)||CHR(84)||CHR(32)||CHR(67)||CHR(76)||CHR(82)||CHR(32)||CHR(50)||CHR(46)||CHR(48)||CHR(46)||CHR(53)||CHR(48)||CHR(55)||CHR(50)||CHR(55)||CHR(41) ELSE CAST(1 AS INT)/(SELECT 0 FROM DUAL) END) FROM DUAL)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -640,14 +640,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008624": {
+    "test-00000216-00008624": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),(SELECT (CASE WHEN (5444=5444) THEN CHR(77)||CHR(111)||CHR(122)||CHR(105)||CHR(108)||CHR(108)||CHR(97)||CHR(47)||CHR(52)||CHR(46)||CHR(48)||CHR(32)||CHR(40)||CHR(99)||CHR(111)||CHR(109)||CHR(112)||CHR(97)||CHR(116)||CHR(105)||CHR(98)||CHR(108)||CHR(101)||CHR(59)||CHR(32)||CHR(77)||CHR(83)||CHR(73)||CHR(69)||CHR(32)||CHR(55)||CHR(46)||CHR(48)||CHR(59)||CHR(32)||CHR(87)||CHR(105)||CHR(110)||CHR(100)||CHR(111)||CHR(119)||CHR(115)||CHR(32)||CHR(78)||CHR(84)||CHR(32)||CHR(53)||CHR(46)||CHR(49)||CHR(59)||CHR(32)||CHR(83)||CHR(86)||CHR(49)||CHR(59)||CHR(32)||CHR(46)||CHR(78)||CHR(69)||CHR(84)||CHR(32)||CHR(67)||CHR(76)||CHR(82)||CHR(32)||CHR(50)||CHR(46)||CHR(48)||CHR(46)||CHR(53)||CHR(48)||CHR(55)||CHR(50)||CHR(55)||CHR(41) ELSE CAST(1 AS INT)/(SELECT 0 FROM DUAL) END) FROM DUAL)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -667,14 +667,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008625": {
+    "test-00000216-00008625": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),IIF(6938=6938,CHR(77)&CHR(111)&CHR(122)&CHR(105)&CHR(108)&CHR(108)&CHR(97)&CHR(47)&CHR(52)&CHR(46)&CHR(48)&CHR(32)&CHR(40)&CHR(99)&CHR(111)&CHR(109)&CHR(112)&CHR(97)&CHR(116)&CHR(105)&CHR(98)&CHR(108)&CHR(101)&CHR(59)&CHR(32)&CHR(77)&CHR(83)&CHR(73)&CHR(69)&CHR(32)&CHR(55)&CHR(46)&CHR(48)&CHR(59)&CHR(32)&CHR(87)&CHR(105)&CHR(110)&CHR(100)&CHR(111)&CHR(119)&CHR(115)&CHR(32)&CHR(78)&CHR(84)&CHR(32)&CHR(53)&CHR(46)&CHR(49)&CHR(59)&CHR(32)&CHR(83)&CHR(86)&CHR(49)&CHR(59)&CHR(32)&CHR(46)&CHR(78)&CHR(69)&CHR(84)&CHR(32)&CHR(67)&CHR(76)&CHR(82)&CHR(32)&CHR(50)&CHR(46)&CHR(48)&CHR(46)&CHR(53)&CHR(48)&CHR(55)&CHR(50)&CHR(55)&CHR(41),1/0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -694,14 +694,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008626": {
+    "test-00000216-00008626": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727),IIF(1815=1489,CHR(77)&CHR(111)&CHR(122)&CHR(105)&CHR(108)&CHR(108)&CHR(97)&CHR(47)&CHR(52)&CHR(46)&CHR(48)&CHR(32)&CHR(40)&CHR(99)&CHR(111)&CHR(109)&CHR(112)&CHR(97)&CHR(116)&CHR(105)&CHR(98)&CHR(108)&CHR(101)&CHR(59)&CHR(32)&CHR(77)&CHR(83)&CHR(73)&CHR(69)&CHR(32)&CHR(55)&CHR(46)&CHR(48)&CHR(59)&CHR(32)&CHR(87)&CHR(105)&CHR(110)&CHR(100)&CHR(111)&CHR(119)&CHR(115)&CHR(32)&CHR(78)&CHR(84)&CHR(32)&CHR(53)&CHR(46)&CHR(49)&CHR(59)&CHR(32)&CHR(83)&CHR(86)&CHR(49)&CHR(59)&CHR(32)&CHR(46)&CHR(78)&CHR(69)&CHR(84)&CHR(32)&CHR(67)&CHR(76)&CHR(82)&CHR(32)&CHR(50)&CHR(46)&CHR(48)&CHR(46)&CHR(53)&CHR(48)&CHR(55)&CHR(50)&CHR(55)&CHR(41),1/0)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -721,14 +721,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008627": {
+    "test-00000216-00008627": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)))); IF((2899=1111),SELECT 2899,DROP FUNCTION OzTQ)#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -748,14 +748,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008628": {
+    "test-00000216-00008628": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727); IF((8901=5897),SELECT 8901,DROP FUNCTION BtGQ)#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -775,14 +775,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008629": {
+    "test-00000216-00008629": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'); IF((4012=9148),SELECT 4012,DROP FUNCTION CNda)#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -802,14 +802,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008630": {
+    "test-00000216-00008630": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'; IF((9087=9352),SELECT 9087,DROP FUNCTION GAZT)#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -829,14 +829,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008631": {
+    "test-00000216-00008631": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'); IF((3196=3154),SELECT 3196,DROP FUNCTION dQTI)#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -856,14 +856,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008632": {
+    "test-00000216-00008632": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)')); IF((1823=9414),SELECT 1823,DROP FUNCTION HDpY)#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -883,14 +883,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008633": {
+    "test-00000216-00008633": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)')); IF((2676=7836),SELECT 2676,DROP FUNCTION ivcw)#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -910,14 +910,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008634": {
+    "test-00000216-00008634": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'; IF((1414=8466),SELECT 1414,DROP FUNCTION ABuQ)#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -937,14 +937,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008635": {
+    "test-00000216-00008635": {
         "ua": "); IF((8312=4025),SELECT 8312,DROP FUNCTION pFza)#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -971,7 +971,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008636": {
+    "test-00000216-00008636": {
         "ua": ")); IF((1642=2761),SELECT 1642,DROP FUNCTION sUVV)#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -998,7 +998,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008637": {
+    "test-00000216-00008637": {
         "ua": ")); IF((2633=2633),SELECT 2633,DROP FUNCTION EOtL)#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1025,7 +1025,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008638": {
+    "test-00000216-00008638": {
         "ua": "); IF((7618=7765),SELECT 7618,DROP FUNCTION siPG)#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1052,7 +1052,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008639": {
+    "test-00000216-00008639": {
         "ua": "; IF((6330=4799),SELECT 6330,DROP FUNCTION xTcS)#",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1079,7 +1079,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008640": {
+    "test-00000216-00008640": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%'); IF((5133=6292),SELECT 5133,DROP FUNCTION MWtr)#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1099,14 +1099,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008641": {
+    "test-00000216-00008641": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')); IF((2633=2633),SELECT 2633,DROP FUNCTION EOtL)#",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1126,14 +1126,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008642": {
+    "test-00000216-00008642": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)); IF(4456=4571) SELECT 4456 ELSE DROP FUNCTION jgmz--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1153,14 +1153,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008643": {
+    "test-00000216-00008643": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'; IF(3058=9843) SELECT 3058 ELSE DROP FUNCTION ezsM--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1180,14 +1180,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008644": {
+    "test-00000216-00008644": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)); IF(2182=6374) SELECT 2182 ELSE DROP FUNCTION nOMG--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1207,14 +1207,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008645": {
+    "test-00000216-00008645": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)); IF(6142=4137) SELECT 6142 ELSE DROP FUNCTION sQyK--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1234,14 +1234,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008646": {
+    "test-00000216-00008646": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727))); IF(1810=4138) SELECT 1810 ELSE DROP FUNCTION HYei--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1261,14 +1261,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008647": {
+    "test-00000216-00008647": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727))); IF(8065=8065) SELECT 8065 ELSE DROP FUNCTION lbXn--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1288,14 +1288,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008648": {
+    "test-00000216-00008648": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727))); IF(2588=7797) SELECT 2588 ELSE DROP FUNCTION iSwt--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1315,14 +1315,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008649": {
+    "test-00000216-00008649": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727); IF(8809=4328) SELECT 8809 ELSE DROP FUNCTION lxXE--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1342,14 +1342,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008650": {
+    "test-00000216-00008650": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'); IF(3057=3274) SELECT 3057 ELSE DROP FUNCTION HZnw--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1369,14 +1369,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008651": {
+    "test-00000216-00008651": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'))); IF(8065=8065) SELECT 8065 ELSE DROP FUNCTION lbXn--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1396,14 +1396,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008652": {
+    "test-00000216-00008652": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'))); IF(1350=1739) SELECT 1350 ELSE DROP FUNCTION zBzs--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1423,14 +1423,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008653": {
+    "test-00000216-00008653": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'; IF(4561=7049) SELECT 4561 ELSE DROP FUNCTION ZRPc--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1450,14 +1450,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008654": {
+    "test-00000216-00008654": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'); IF(9449=7171) SELECT 9449 ELSE DROP FUNCTION kZmm--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1477,14 +1477,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008655": {
+    "test-00000216-00008655": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'); IF(4335=1578) SELECT 4335 ELSE DROP FUNCTION TVzE--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1504,14 +1504,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008656": {
+    "test-00000216-00008656": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)')); IF(5926=4169) SELECT 5926 ELSE DROP FUNCTION ttCl--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1531,14 +1531,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008657": {
+    "test-00000216-00008657": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)')); IF(9383=1369) SELECT 9383 ELSE DROP FUNCTION eZSv--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1558,14 +1558,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008658": {
+    "test-00000216-00008658": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'; IF(6518=2438) SELECT 6518 ELSE DROP FUNCTION mgou--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1585,14 +1585,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008659": {
+    "test-00000216-00008659": {
         "ua": "; IF(3317=2959) SELECT 3317 ELSE DROP FUNCTION VNlA--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1619,7 +1619,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008660": {
+    "test-00000216-00008660": {
         "ua": "; IF(5417=6854) SELECT 5417 ELSE DROP FUNCTION mzDN--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1646,7 +1646,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008661": {
+    "test-00000216-00008661": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%'); IF(8500=9032) SELECT 8500 ELSE DROP FUNCTION uzMO--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1666,14 +1666,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008662": {
+    "test-00000216-00008662": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%'); IF(8065=8065) SELECT 8065 ELSE DROP FUNCTION lbXn--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1693,14 +1693,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008663": {
+    "test-00000216-00008663": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')); IF(6820=3703) SELECT 6820 ELSE DROP FUNCTION tqOb--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1720,14 +1720,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008664": {
+    "test-00000216-00008664": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')); IF(2081=1735) SELECT 2081 ELSE DROP FUNCTION Ejwv--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1747,14 +1747,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008665": {
+    "test-00000216-00008665": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%'; IF(3050=6797) SELECT 3050 ELSE DROP FUNCTION FimV--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1774,14 +1774,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008666": {
+    "test-00000216-00008666": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%'; IF(8065=8065) SELECT 8065 ELSE DROP FUNCTION lbXn--",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1801,14 +1801,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008667": {
+    "test-00000216-00008667": {
         "ua": "105",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1835,7 +1835,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008668": {
+    "test-00000216-00008668": {
         "ua": "-8916); SELECT (CASE WHEN (3084=5414) THEN 3084 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1862,7 +1862,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008669": {
+    "test-00000216-00008669": {
         "ua": "-7020); SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1889,7 +1889,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008670": {
+    "test-00000216-00008670": {
         "ua": "104",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1916,7 +1916,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008671": {
+    "test-00000216-00008671": {
         "ua": "-3126'; SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1943,7 +1943,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008672": {
+    "test-00000216-00008672": {
         "ua": "-5792); SELECT (CASE WHEN (8001=9166) THEN 8001 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1970,7 +1970,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008673": {
+    "test-00000216-00008673": {
         "ua": "-2035); SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1997,7 +1997,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008674": {
+    "test-00000216-00008674": {
         "ua": "103",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2024,7 +2024,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008675": {
+    "test-00000216-00008675": {
         "ua": "-1364)); SELECT (CASE WHEN (4182=5669) THEN 4182 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2051,7 +2051,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008676": {
+    "test-00000216-00008676": {
         "ua": "102",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2078,7 +2078,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008677": {
+    "test-00000216-00008677": {
         "ua": "101",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2105,7 +2105,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008678": {
+    "test-00000216-00008678": {
         "ua": "-1993; SELECT (CASE WHEN (2269=3851) THEN 2269 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2132,7 +2132,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008679": {
+    "test-00000216-00008679": {
         "ua": "-2937; SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2159,7 +2159,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008680": {
+    "test-00000216-00008680": {
         "ua": "-4835'); SELECT (CASE WHEN (8112=1726) THEN 8112 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2186,7 +2186,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008681": {
+    "test-00000216-00008681": {
         "ua": "100",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2213,7 +2213,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008682": {
+    "test-00000216-00008682": {
         "ua": "99",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2240,7 +2240,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008683": {
+    "test-00000216-00008683": {
         "ua": "-6582'))); SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2267,7 +2267,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008684": {
+    "test-00000216-00008684": {
         "ua": "-8460'); SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2294,7 +2294,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008685": {
+    "test-00000216-00008685": {
         "ua": "-7556'; SELECT (CASE WHEN (3505=8818) THEN 3505 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2321,7 +2321,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008686": {
+    "test-00000216-00008686": {
         "ua": "-1747'; SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2348,7 +2348,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008687": {
+    "test-00000216-00008687": {
         "ua": ")); SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2375,7 +2375,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008688": {
+    "test-00000216-00008688": {
         "ua": "98",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2402,7 +2402,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008689": {
+    "test-00000216-00008689": {
         "ua": "97",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2429,7 +2429,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008690": {
+    "test-00000216-00008690": {
         "ua": "; SELECT (CASE WHEN (8859=5185) THEN 8859 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2456,7 +2456,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008691": {
+    "test-00000216-00008691": {
         "ua": "-3151%')); SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2483,7 +2483,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008692": {
+    "test-00000216-00008692": {
         "ua": "96",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2510,7 +2510,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008693": {
+    "test-00000216-00008693": {
         "ua": "-6209%'; SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2537,7 +2537,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008694": {
+    "test-00000216-00008694": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727))) AND (SELECT 5988 FROM(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5988=5988) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a) AND ((2101=2101",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2557,14 +2557,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008695": {
+    "test-00000216-00008695": {
         "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)))) AND (SELECT 5988 FROM(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5988=5988) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a) AND (((6630=6630",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2584,14 +2584,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008696": {
+    "test-00000216-00008696": {
         "ua": "wxme",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2618,7 +2618,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008697": {
+    "test-00000216-00008697": {
         "ua": "IjIl",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2645,7 +2645,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008698": {
+    "test-00000216-00008698": {
         "ua": "nUMf",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2672,7 +2672,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000216-00008699": {
+    "test-00000216-00008699": {
         "ua": "azPi",
         "properties": {
             "Browser_Name": "Default Browser",

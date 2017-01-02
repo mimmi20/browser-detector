@@ -1,5 +1,5 @@
 {
-    "browscap-issue-00000240-00014300": {
+    "test-00000240-00014300": {
         "ua": "yacybot (amd64 FreeBSD 7.0-RELEASE-p2; java 1.6.0_07; Europe/en) http://yacy.net/bot.html",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -14,10 +14,10 @@
             "Platform_Bits": 64,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -26,7 +26,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014301": {
+    "test-00000240-00014301": {
         "ua": "yacy/0.5900489 (www.yacy.net; amd64 FreeBSD 7.0-RELEASE-p2; java 1.6.0_07; Europe/en) Jakarta Commons-HttpClient/3.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -41,10 +41,10 @@
             "Platform_Bits": 64,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -53,7 +53,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014302": {
+    "test-00000240-00014302": {
         "ua": "yacy (www.yacy.net; v20040602; x86 Windows XP 5.1; java 1.6.0_02; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -73,14 +73,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014303": {
+    "test-00000240-00014303": {
         "ua": "yacy (www.yacy.net; v20040602; x86 Windows XP 5.1; java 1.6.0_01; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -100,14 +100,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014304": {
+    "test-00000240-00014304": {
         "ua": "yacy (www.yacy.net; v20040602; x86 Windows XP 5.1; java 1.6.0_01; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -127,14 +127,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014305": {
+    "test-00000240-00014305": {
         "ua": "yacy (www.yacy.net; v20040602; x86 Windows XP 5.1; java 1.6.0; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -154,14 +154,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014306": {
+    "test-00000240-00014306": {
         "ua": "yacy (www.yacy.net; v20040602; x86 Windows XP 5.1; java 1.5.0_11; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -181,14 +181,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014307": {
+    "test-00000240-00014307": {
         "ua": "yacy (www.yacy.net; v20040602; x86 Windows XP 5.1; java 1.5.0_09; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -208,14 +208,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014308": {
+    "test-00000240-00014308": {
         "ua": "yacy (www.yacy.net; v20040602; x86 Windows XP 5.1; java 1.5.0_08; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -235,14 +235,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014309": {
+    "test-00000240-00014309": {
         "ua": "yacy (www.yacy.net; v20040602; x86 Windows XP 5.1; java 1.5.0_06; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -262,14 +262,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014310": {
+    "test-00000240-00014310": {
         "ua": "yacy (www.yacy.net; v20040602; x86 Windows XP 5.1; java 1.5.0_06; America/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -289,14 +289,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Windows Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014311": {
+    "test-00000240-00014311": {
         "ua": "yacy (www.yacy.net; v20040602; ppc Mac OS X 10.4.7; java 1.5.0_06; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -316,14 +316,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014312": {
+    "test-00000240-00014312": {
         "ua": "yacy (www.yacy.net; v20040602; ppc Mac OS X 10.4.7; java 1.4.2_09; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -343,14 +343,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Macintosh",
             "Device_Brand_Name": "Apple",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014313": {
+    "test-00000240-00014313": {
         "ua": "yacy (www.yacy.net; v20040602; PA_RISC2.0 HP-UX B.11.11; java 1.5.0.01; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -377,7 +377,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014314": {
+    "test-00000240-00014314": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.8-3-686; java 1.5.0_07; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -397,14 +397,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014315": {
+    "test-00000240-00014315": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.8-2-686; java 1.5.0_02; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -424,14 +424,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014316": {
+    "test-00000240-00014316": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.18; java 1.5.0_09; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -451,14 +451,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014317": {
+    "test-00000240-00014317": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.18.5-vs2.0.3-rc1; java 1.5.0_10; GMT 01:00/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -478,14 +478,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014318": {
+    "test-00000240-00014318": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.18-openvz-12-1etch1-686; java 1.5.0_10; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -505,14 +505,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014319": {
+    "test-00000240-00014319": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.18-4-vserver-k7; java 1.5.0_10; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -532,14 +532,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014320": {
+    "test-00000240-00014320": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.17-gentoo; java 1.4.2-03; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -554,10 +554,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Gentoo Foundation Inc",
             "Platform_Brand_Name": "Gentoo",
-            "Device_Name": "Linux Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -566,7 +566,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014321": {
+    "test-00000240-00014321": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.17-5mdv; java 1.5.0_09; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -586,14 +586,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014322": {
+    "test-00000240-00014322": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.16.21-0.25-default; java 1.4.2_11; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -613,14 +613,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014323": {
+    "test-00000240-00014323": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.16.20-vs2.0.2-rc22-lsgtux0; java 1.4.2-02; Etc/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -640,14 +640,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014324": {
+    "test-00000240-00014324": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.16.13-4-smp; java 1.5.0_06; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -667,14 +667,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014325": {
+    "test-00000240-00014325": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.15-26-386; java 1.4.2-02; Pacific/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -694,14 +694,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014326": {
+    "test-00000240-00014326": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.13.2; java 1.5.0_04; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -721,14 +721,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014327": {
+    "test-00000240-00014327": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.13.1; java 1.5.0_04; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -748,14 +748,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014328": {
+    "test-00000240-00014328": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.6.12.6-xen; java 1.6.0-beta; Europe/de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -775,14 +775,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014329": {
+    "test-00000240-00014329": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.4.27-2-386; java 1.5.0_04; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -802,14 +802,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014330": {
+    "test-00000240-00014330": {
         "ua": "yacy (www.yacy.net; v20040602; i386 Linux 2.4.21-4.EL; java 1.6.0_01; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -829,14 +829,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014331": {
+    "test-00000240-00014331": {
         "ua": "yacy (www.yacy.net; v20040602; amd64 Linux 2.6.16-2-amd64-k8-smp; java 1.5.0_10; Europe/en)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -856,14 +856,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014332": {
+    "test-00000240-00014332": {
         "ua": "yacy (i386 Linux 2.6.13.2; java 1.5.0_04; Europe/en) yacy.net",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -883,14 +883,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014333": {
+    "test-00000240-00014333": {
         "ua": "yacy (i386 Linux 2.6.13.1; java 1.5.0_04; Europe/de) yacy.net",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -910,14 +910,14 @@
             "Device_Type": "UaDeviceType\\Desktop",
             "Device_Pointing_Method": "mouse",
             "Device_Dual_Orientation": false,
-            "Device_Code_Name": "unknown",
+            "Device_Code_Name": "Linux Desktop",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014334": {
+    "test-00000240-00014334": {
         "ua": "Y!OASIS/TEST no-ad Mozilla/4.08 [en] (X11; I; FreeBSD 2.2.8-STABLE i386)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -932,10 +932,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -944,7 +944,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014335": {
+    "test-00000240-00014335": {
         "ua": "Y!J/1.0 (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -971,7 +971,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014336": {
+    "test-00000240-00014336": {
         "ua": "Y!J-SRD/1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -998,7 +998,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014337": {
+    "test-00000240-00014337": {
         "ua": "Y!J-PSC/1.0 (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1025,7 +1025,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014338": {
+    "test-00000240-00014338": {
         "ua": "Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0; users 0; views 56)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1052,7 +1052,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014339": {
+    "test-00000240-00014339": {
         "ua": "Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0; users 0; views 28)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1079,7 +1079,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014340": {
+    "test-00000240-00014340": {
         "ua": "Y!J-BRI/0.0.1 crawler ( http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html )",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1106,7 +1106,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014341": {
+    "test-00000240-00014341": {
         "ua": "XXX<? echo \"w0000t\"; ?>XXX",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1133,7 +1133,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014342": {
+    "test-00000240-00014342": {
         "ua": "xx8kmtfaupljxymhfjxCyhwrt lqk ukpt",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1160,7 +1160,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014343": {
+    "test-00000240-00014343": {
         "ua": "XupiterToolbar",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1187,7 +1187,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014344": {
+    "test-00000240-00014344": {
         "ua": "XunBot/Xun 1.8.9 ( http://www.shunix.com/bot.htm)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1214,7 +1214,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014345": {
+    "test-00000240-00014345": {
         "ua": "XSpider 0.01;http://uncool.oicp.net/spider.html",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1241,7 +1241,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014346": {
+    "test-00000240-00014346": {
         "ua": "Xplore M28 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1256,11 +1256,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
@@ -1268,7 +1268,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014347": {
+    "test-00000240-00014347": {
         "ua": "Xplore M28",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1295,7 +1295,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014348": {
+    "test-00000240-00014348": {
         "ua": "Xplore G 18 UP.Link/1.1 (Google WAP Proxy/1.0)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1310,11 +1310,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
@@ -1322,7 +1322,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014349": {
+    "test-00000240-00014349": {
         "ua": "Xplore G 18 UP.Link/1.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1337,11 +1337,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
@@ -1349,7 +1349,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014350": {
+    "test-00000240-00014350": {
         "ua": "Xplore G 18",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1376,7 +1376,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014351": {
+    "test-00000240-00014351": {
         "ua": "xmubcgtlcy5efdddkpxfvhbndbgxkxqx",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1403,7 +1403,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014352": {
+    "test-00000240-00014352": {
         "ua": "XML-FeedPP/0.37 XML-TreePP/0.38 libwww-perl/5.825",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1430,7 +1430,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014353": {
+    "test-00000240-00014353": {
         "ua": "XML Spy",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1457,7 +1457,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014354": {
+    "test-00000240-00014354": {
         "ua": "xLightweb/2.7.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1484,7 +1484,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014355": {
+    "test-00000240-00014355": {
         "ua": "xLightweb/2.6",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1511,7 +1511,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014356": {
+    "test-00000240-00014356": {
         "ua": "xirq/0.1-dev (xirq; http://www.xirq.com; xirq@xirq.com)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1538,7 +1538,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014357": {
+    "test-00000240-00014357": {
         "ua": "xirq/0.1-beta (xirq; http://www.xirq.com; xirq@xirq.com)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1565,7 +1565,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014358": {
+    "test-00000240-00014358": {
         "ua": "xine/1.1.16.3",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1592,7 +1592,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014359": {
+    "test-00000240-00014359": {
         "ua": "xine/1.1.15",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1619,7 +1619,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014360": {
+    "test-00000240-00014360": {
         "ua": "xine/1.1.11.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1646,7 +1646,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014361": {
+    "test-00000240-00014361": {
         "ua": "XH p(+$p8+D",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1673,7 +1673,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014362": {
+    "test-00000240-00014362": {
         "ua": "Xerka WebBot v1.0.0 [UPVOpenDir]",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1700,7 +1700,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014363": {
+    "test-00000240-00014363": {
         "ua": "Xerka WebBot v1.0.0 [UPV_UPVNoDwlDB]",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1727,7 +1727,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014364": {
+    "test-00000240-00014364": {
         "ua": "Xerka WebBot v1.0.0 [UPV_Descarg]",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1754,7 +1754,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014365": {
+    "test-00000240-00014365": {
         "ua": "Xerka MetaBot v1.0.0 [AIDO_fotonica]",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1781,7 +1781,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014366": {
+    "test-00000240-00014366": {
         "ua": "Xenu's Link Sleuth 1.1c",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1808,7 +1808,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014367": {
+    "test-00000240-00014367": {
         "ua": "Xenu's Link Sleuth 1.0u",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1835,7 +1835,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014368": {
+    "test-00000240-00014368": {
         "ua": "Xenu's Link Sleuth 1.0p",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1862,7 +1862,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014369": {
+    "test-00000240-00014369": {
         "ua": "Xenu Link Sleuth 1.2j (beta)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1889,7 +1889,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014370": {
+    "test-00000240-00014370": {
         "ua": "Xenu Link Sleuth 1.2a",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1916,7 +1916,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014371": {
+    "test-00000240-00014371": {
         "ua": "Xenu Link Sleuth 1.1f",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1943,7 +1943,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014372": {
+    "test-00000240-00014372": {
         "ua": "xEdit 2.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1970,7 +1970,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014373": {
+    "test-00000240-00014373": {
         "ua": "Xda_Stellar; 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -1985,19 +1985,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "general O2 device",
-            "Device_Maker": "O2",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "O2",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014374": {
+    "test-00000240-00014374": {
         "ua": "Xda_Stellar/ 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)",
         "properties": {
             "Browser_Name": "Internet Explorer",
@@ -2012,19 +2012,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Microsoft Corporation",
             "Platform_Brand_Name": "Microsoft",
-            "Device_Name": "general O2 device",
-            "Device_Maker": "O2",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "O2",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014375": {
+    "test-00000240-00014375": {
         "ua": "xcute DV2",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2051,7 +2051,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014376": {
+    "test-00000240-00014376": {
         "ua": "xChaos_Arachne/4.1.70;rev.3 (DOS x86;WATTCP/1.05; 640x480",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2078,7 +2078,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014377": {
+    "test-00000240-00014377": {
         "ua": "xc2x1f-1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2105,7 +2105,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014378": {
+    "test-00000240-00014378": {
         "ua": "XBoX 64 (NVidea GForce 3 Architecture)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2120,19 +2120,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Xbox 360",
-            "Device_Maker": "Microsoft Corporation",
-            "Device_Type": "UaDeviceType\\TvConsole",
-            "Device_Pointing_Method": "mouse",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Microsoft",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014379": {
+    "test-00000240-00014379": {
         "ua": "Xaudio/1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2159,7 +2159,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014380": {
+    "test-00000240-00014380": {
         "ua": "X700/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2174,11 +2174,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "Symbian Foundation",
             "Platform_Brand_Name": "Symbian Foundation",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
@@ -2186,7 +2186,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014381": {
+    "test-00000240-00014381": {
         "ua": "x5├Ø",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2213,7 +2213,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014382": {
+    "test-00000240-00014382": {
         "ua": "X500 UP.Browser/6.2.2.7 (GUI) MMP/1.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2228,11 +2228,11 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Mobile Device",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
             "Device_Type": "UaDeviceType\\Unknown",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
+            "Device_Pointing_Method": null,
+            "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
@@ -2240,7 +2240,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014383": {
+    "test-00000240-00014383": {
         "ua": "X-WAP-PROFILE: http://device.sprintpcs.com/Samsung/SPH-A620/",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2255,19 +2255,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "general Samsung Device",
-            "Device_Maker": "Samsung",
-            "Device_Type": "UaDeviceType\\MobilePhone",
-            "Device_Pointing_Method": "touchscreen",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Samsung",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014384": {
+    "test-00000240-00014384": {
         "ua": "X-Crawler",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2294,7 +2294,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014385": {
+    "test-00000240-00014385": {
         "ua": "wxWindows 2.x",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2309,10 +2309,10 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Windows Desktop",
+            "Device_Name": "unknown",
             "Device_Maker": "unknown",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
             "Device_Brand_Name": "unknown",
@@ -2321,7 +2321,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014386": {
+    "test-00000240-00014386": {
         "ua": "wxWidgets 2.x",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2348,7 +2348,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014387": {
+    "test-00000240-00014387": {
         "ua": "wxDownload Fast",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2375,7 +2375,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014388": {
+    "test-00000240-00014388": {
         "ua": "wwwster/1.4 (Beta, mailto:gue@cis.uni-muenchen.de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2402,7 +2402,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014389": {
+    "test-00000240-00014389": {
         "ua": "WWWeasel Robot v1.00 (http://wwweasel.de)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2429,7 +2429,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014390": {
+    "test-00000240-00014390": {
         "ua": "WWWC/1.04",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2456,7 +2456,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014391": {
+    "test-00000240-00014391": {
         "ua": "WWWC/1.03",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2483,7 +2483,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014392": {
+    "test-00000240-00014392": {
         "ua": "www4mail/2.4 libwww-FM/2.14 (Unix; I)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2510,7 +2510,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014393": {
+    "test-00000240-00014393": {
         "ua": "WWW::Shorten::TinyURL/1.90",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2537,7 +2537,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014394": {
+    "test-00000240-00014394": {
         "ua": "www.zatka.com",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2564,7 +2564,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014395": {
+    "test-00000240-00014395": {
         "ua": "www.webwombat.com.au",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2591,7 +2591,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014396": {
+    "test-00000240-00014396": {
         "ua": "www.website-analyzer.net Website Analyzer Crawler",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2618,7 +2618,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014397": {
+    "test-00000240-00014397": {
         "ua": "www.travel-agent-finder.co.uk",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2645,7 +2645,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014398": {
+    "test-00000240-00014398": {
         "ua": "www.substancia.com WebGrabber (ver 1.0)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2672,7 +2672,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "browscap-issue-00000240-00014399": {
+    "test-00000240-00014399": {
         "ua": "www.substancia.com AutoHTTPAgent (ver 1.0)",
         "properties": {
             "Browser_Name": "Default Browser",

@@ -1,5 +1,5 @@
 {
-    "test-00151-03000": {
+    "test-00000151-00003000": {
         "ua": "Maven/2.0 CFNetwork/609.1.4 Darwin/13.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -26,7 +26,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03001": {
+    "test-00000151-00003001": {
         "ua": "CronoMail/2.5.1 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -53,7 +53,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03002": {
+    "test-00000151-00003002": {
         "ua": "AtomicLite/7.0.1 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -80,7 +80,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03003": {
+    "test-00000151-00003003": {
         "ua": "Unibox/260 CFNetwork/673.4 Darwin/13.4.0 (x86_64) (MacBookPro11%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -107,7 +107,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03004": {
+    "test-00000151-00003004": {
         "ua": "Safari/9537.85.10.17.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro11%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -134,61 +134,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03005": {
-        "ua": "Mercury/883 CFNetwork/672.1.15 Darwin/14.0.0",
-        "properties": {
-            "Browser_Name": "Mercury",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "iLegendSoft, Inc.",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "7.1.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "general Apple Device",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\MobileDevice",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "general Apple Device",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03006": {
-        "ua": "Mercury/883 CFNetwork/672.0.8 Darwin/14.0.0",
-        "properties": {
-            "Browser_Name": "Mercury",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "iLegendSoft, Inc.",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "7.0.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "general Apple Device",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\MobileDevice",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "general Apple Device",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03007": {
+    "test-00000151-00003007": {
         "ua": "HotmailBuzzr/4711 CFNetwork/672.1.15 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -215,7 +161,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03008": {
+    "test-00000151-00003008": {
         "ua": "MxBrowser-iPhone/33 CFNetwork/711.0.6 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Maxthon",
@@ -226,7 +172,7 @@
             "Browser_Version": "0.0",
             "Platform_Codename": "iOS",
             "Platform_Marketingname": "iOS",
-            "Platform_Version": "8.0.0",
+            "Platform_Version": "0.0.0",
             "Platform_Bits": 32,
             "Platform_Maker": "Apple Inc",
             "Platform_Brand_Name": "Apple",
@@ -242,34 +188,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03009": {
-        "ua": "Unibox/283 CFNetwork/596.5 Darwin/12.5.0 (x86_64) (iMac13%2C2)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.8.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03010": {
+    "test-00000151-00003010": {
         "ua": "Safari/7537.78.2 CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (iMac10%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -296,7 +215,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03011": {
+    "test-00000151-00003011": {
         "ua": "iCabMobile/1.1 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "iCab",
@@ -323,7 +242,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03012": {
+    "test-00000151-00003012": {
         "ua": "python-requests/2.3.0 CPython/2.7.6 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -338,19 +257,19 @@
             "Platform_Bits": 32,
             "Platform_Maker": "unknown",
             "Platform_Brand_Name": "unknown",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
+            "Device_Name": "unknown",
+            "Device_Maker": "unknown",
+            "Device_Type": "UaDeviceType\\Unknown",
+            "Device_Pointing_Method": null,
             "Device_Dual_Orientation": false,
             "Device_Code_Name": "unknown",
-            "Device_Brand_Name": "Apple",
+            "Device_Brand_Name": "unknown",
             "RenderingEngine_Name": "unknown",
             "RenderingEngine_Version": "unknown",
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03013": {
+    "test-00000151-00003013": {
         "ua": "Safari/9537.85.10.17.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro8%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -377,7 +296,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03014": {
+    "test-00000151-00003014": {
         "ua": "Mercury/883 CFNetwork/711.0.6 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Mercury",
@@ -404,34 +323,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03015": {
-        "ua": "Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacPro4%2C1)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 32,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.6.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03016": {
+    "test-00000151-00003016": {
         "ua": "Safari/9537.77.4 CFNetwork/673.3 Darwin/13.3.0 (x86_64) (MacBookPro8%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -458,7 +350,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03017": {
+    "test-00000151-00003017": {
         "ua": "HotmailBuzzr/4703 CFNetwork/672.1.14 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -485,7 +377,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03018": {
+    "test-00000151-00003018": {
         "ua": "Safari/9537.78.2 CFNetwork/673.3 Darwin/13.4.0 (x86_64) (MacBookPro8%2C2)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -512,7 +404,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03019": {
+    "test-00000151-00003019": {
         "ua": "Unibox/282 CFNetwork/720.0.9 Darwin/14.0.0 (x86_64)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -539,7 +431,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03020": {
+    "test-00000151-00003020": {
         "ua": "MxBrowser-iPhone/33 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Maxthon",
@@ -550,7 +442,7 @@
             "Browser_Version": "0.0",
             "Platform_Codename": "iOS",
             "Platform_Marketingname": "iOS",
-            "Platform_Version": "8.1.0",
+            "Platform_Version": "0.0.0",
             "Platform_Bits": 32,
             "Platform_Maker": "Apple Inc",
             "Platform_Brand_Name": "Apple",
@@ -566,7 +458,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03021": {
+    "test-00000151-00003021": {
         "ua": "HotmailBuzzr/4711 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -593,7 +485,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03022": {
+    "test-00000151-00003022": {
         "ua": "HotmailBuzzr/4711 CFNetwork/672.1.14 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -620,61 +512,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03023": {
-        "ua": "Unibox/260 CFNetwork/720.0.9 Darwin/14.0.0 (x86_64)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.10.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03024": {
-        "ua": "Unibox/283 CFNetwork/720.1.1 Darwin/14.0.0 (x86_64)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.10.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03025": {
+    "test-00000151-00003025": {
         "ua": "Opera%20Coast/3.21.84640 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Opera",
@@ -701,7 +539,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03026": {
+    "test-00000151-00003026": {
         "ua": "SiriViewService/1.0 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -728,7 +566,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03027": {
+    "test-00000151-00003027": {
         "ua": "browser/42010 CFNetwork/672.1.15 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -755,7 +593,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03028": {
+    "test-00000151-00003028": {
         "ua": "Puffin%20Free/12963 CFNetwork/609 Darwin/13.0.0",
         "properties": {
             "Browser_Name": "Puffin",
@@ -782,7 +620,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03029": {
+    "test-00000151-00003029": {
         "ua": "Safari/8537.85.10.17.1 CFNetwork/596.6.3 Darwin/12.5.0 (x86_64) (MacPro3%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -809,34 +647,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03030": {
-        "ua": "Mercury/872 CFNetwork/609.1.4 Darwin/13.0.0",
-        "properties": {
-            "Browser_Name": "Mercury",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "iLegendSoft, Inc.",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "6.1.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "general Apple Device",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\MobileDevice",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "general Apple Device",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03031": {
+    "test-00000151-00003031": {
         "ua": "Opera%20Coast/3.21.84640 CFNetwork/672.1.14 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Opera",
@@ -863,7 +674,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03032": {
+    "test-00000151-00003032": {
         "ua": "Mercury/883 CFNetwork/672.1.14 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Mercury",
@@ -890,7 +701,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03033": {
+    "test-00000151-00003033": {
         "ua": "Mercury/830 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Mercury",
@@ -917,7 +728,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03034": {
+    "test-00000151-00003034": {
         "ua": "FastBrowser/1 CFNetwork/672.1.15 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -944,7 +755,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03035": {
+    "test-00000151-00003035": {
         "ua": "Mercury/883 CFNetwork/672.1.13 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Mercury",
@@ -971,34 +782,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03036": {
-        "ua": "Mail/1993 CFNetwork/720.1.1 Darwin/14.0.0 (x86_64)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.10.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03037": {
+    "test-00000151-00003037": {
         "ua": "Safari/9537.85.10.17.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (Macmini4%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1025,7 +809,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03038": {
+    "test-00000151-00003038": {
         "ua": "Opera%20Coast/3.21.84640 CFNetwork/672.1.15 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Opera",
@@ -1052,7 +836,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03039": {
+    "test-00000151-00003039": {
         "ua": "Puffin/12856 CFNetwork/672.0.8 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Puffin",
@@ -1079,115 +863,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03040": {
-        "ua": "Safari/9537.85.10.17.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (iMac11%2C3)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.9.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03041": {
-        "ua": "Opera%20Coast/3.21.84640 CFNetwork/711.1.16 Darwin/14.0.0",
-        "properties": {
-            "Browser_Name": "Opera",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Opera Software ASA",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "8.1.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "general Apple Device",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\MobileDevice",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "general Apple Device",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03042": {
-        "ua": "Safari/7537.78.2 CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (MacBookPro8%2C1)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.7.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03043": {
-        "ua": "Unibox/190 CFNetwork/720.1.1 Darwin/14.0.0 (x86_64)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.10.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03044": {
+    "test-00000151-00003044": {
         "ua": "Safari/7537.78.2 CFNetwork/520.5.1 Darwin/11.4.2 (x86_64) (MacBookPro8%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1214,7 +890,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03045": {
+    "test-00000151-00003045": {
         "ua": "BrowserFree/1.2.1 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1241,7 +917,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03046": {
+    "test-00000151-00003046": {
         "ua": "Quick%20Look%20UI%20Helper/675 CFNetwork/720.1.1 Darwin/14.0.0 (x86_64)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1268,61 +944,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03047": {
-        "ua": "iCab/5.2 CFNetwork/720.1.1 Darwin/14.0.0 (x86_64)",
-        "properties": {
-            "Browser_Name": "iCab",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 64,
-            "Browser_Maker": "Alexander Clauss",
-            "Browser_Modus": null,
-            "Browser_Version": "5.2",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.10.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03048": {
-        "ua": "AtomicLite/7.0.1 CFNetwork/711.1.16 Darwin/14.0.0",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 32,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "8.1.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "general Apple Device",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\MobileDevice",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "general Apple Device",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03049": {
+    "test-00000151-00003049": {
         "ua": "Cookie%20Stumbler/2210 CFNetwork/720.1.1 Darwin/14.0.0 (x86_64)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1349,7 +971,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03050": {
+    "test-00000151-00003050": {
         "ua": "Puffin/13109 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Puffin",
@@ -1376,7 +998,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03051": {
+    "test-00000151-00003051": {
         "ua": "Twitter/6.18 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1403,7 +1025,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03052": {
+    "test-00000151-00003052": {
         "ua": "Cloud%20Storages%20Pro/2.2 CFNetwork/672.1.15 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1430,7 +1052,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03053": {
+    "test-00000151-00003053": {
         "ua": "CronoMail/2.5.3 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1457,7 +1079,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03054": {
+    "test-00000151-00003054": {
         "ua": "UrlWebViewForIpad/2.4 CFNetwork/672.1.15 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1468,7 +1090,7 @@
             "Browser_Version": "0.0",
             "Platform_Codename": "iOS",
             "Platform_Marketingname": "iOS",
-            "Platform_Version": "7.1.0",
+            "Platform_Version": "0.0.0",
             "Platform_Bits": 32,
             "Platform_Maker": "Apple Inc",
             "Platform_Brand_Name": "Apple",
@@ -1484,7 +1106,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03055": {
+    "test-00000151-00003055": {
         "ua": "UCBrowserHD/2.4.0.367 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "UC Browser",
@@ -1511,7 +1133,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03056": {
+    "test-00000151-00003056": {
         "ua": "Sleipnir/4.5.1 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (iMac10%2C1)",
         "properties": {
             "Browser_Name": "Sleipnir",
@@ -1538,7 +1160,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03057": {
+    "test-00000151-00003057": {
         "ua": "Mercury/810 CFNetwork/711.1.12 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Mercury",
@@ -1565,7 +1187,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03058": {
+    "test-00000151-00003058": {
         "ua": "Safari/9537.85.10.17.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (iMac8%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1592,7 +1214,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03059": {
+    "test-00000151-00003059": {
         "ua": "Puffin%20Free/12963 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Puffin",
@@ -1619,7 +1241,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03060": {
+    "test-00000151-00003060": {
         "ua": "Dolphin/6.5.1 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1646,7 +1268,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03061": {
+    "test-00000151-00003061": {
         "ua": "MobileMail/53 CFNetwork/485.10.2 Darwin/10.3.1",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1673,34 +1295,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03062": {
-        "ua": "Unibox/283 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (iMac14%2C2)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.9.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03063": {
+    "test-00000151-00003063": {
         "ua": "iCabMobile/1.1 CFNetwork/672.1.15 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "iCab",
@@ -1727,7 +1322,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03064": {
+    "test-00000151-00003064": {
         "ua": "MxBrowser-iPhone/33 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Maxthon",
@@ -1738,7 +1333,7 @@
             "Browser_Version": "0.0",
             "Platform_Codename": "iOS",
             "Platform_Marketingname": "iOS",
-            "Platform_Version": "8.1.0",
+            "Platform_Version": "0.0.0",
             "Platform_Bits": 32,
             "Platform_Maker": "Apple Inc",
             "Platform_Brand_Name": "Apple",
@@ -1754,7 +1349,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03065": {
+    "test-00000151-00003065": {
         "ua": "com.apple.WebKit.WebContent/10600.2.3 CFNetwork/720.1.1 Darwin/14.0.0 (x86_64)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1781,7 +1376,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03066": {
+    "test-00000151-00003066": {
         "ua": "Unibox/283 CFNetwork/673.3 Darwin/13.3.0 (x86_64) (iMac12%2C2)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1808,7 +1403,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03067": {
+    "test-00000151-00003067": {
         "ua": "Safari/9537.85.10.17.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro5%2C3)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1835,7 +1430,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03068": {
+    "test-00000151-00003068": {
         "ua": "Crackle/2.4.8 CFNetwork/548.1.4 Darwin/11.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1862,7 +1457,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03069": {
+    "test-00000151-00003069": {
         "ua": "Safari/8537.85.10.17.1 CFNetwork/596.6.3 Darwin/12.5.0 (x86_64) (MacBookPro9%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1889,7 +1484,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03070": {
+    "test-00000151-00003070": {
         "ua": "Safari/7537.78.2 CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (iMac11%2C3)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1916,7 +1511,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03071": {
+    "test-00000151-00003071": {
         "ua": "Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (Macmini1%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1943,7 +1538,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03072": {
+    "test-00000151-00003072": {
         "ua": "Puffin/13109 CFNetwork/672.0.8 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Puffin",
@@ -1970,7 +1565,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03073": {
+    "test-00000151-00003073": {
         "ua": "iDownloader/1.3 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -1997,7 +1592,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03074": {
+    "test-00000151-00003074": {
         "ua": "Opera%20Coast/4.00.86810 CFNetwork/711.0.6 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Opera",
@@ -2024,7 +1619,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03075": {
+    "test-00000151-00003075": {
         "ua": "Opera%20Coast/3.21.84640 CFNetwork/609.1.4 Darwin/13.0.0",
         "properties": {
             "Browser_Name": "Opera",
@@ -2051,7 +1646,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03076": {
+    "test-00000151-00003076": {
         "ua": "MxBrowser-iPhone/36 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Maxthon",
@@ -2062,7 +1657,7 @@
             "Browser_Version": "0.0",
             "Platform_Codename": "iOS",
             "Platform_Marketingname": "iOS",
-            "Platform_Version": "8.1.0",
+            "Platform_Version": "0.0.0",
             "Platform_Bits": 32,
             "Platform_Maker": "Apple Inc",
             "Platform_Brand_Name": "Apple",
@@ -2078,7 +1673,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03077": {
+    "test-00000151-00003077": {
         "ua": "Safari/9537.85.10.17.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro8%2C2)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2105,7 +1700,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03078": {
+    "test-00000151-00003078": {
         "ua": "Mercury/891 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Mercury",
@@ -2132,61 +1727,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03079": {
-        "ua": "Unibox/283 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacPro1%2C1)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.9.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03080": {
-        "ua": "Safari/10600.2.5 CFNetwork/720.1.1 Darwin/14.0.0 (x86_64)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.10.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03081": {
+    "test-00000151-00003081": {
         "ua": "Puffin%20Free/12963 CFNetwork/672.1.15 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Puffin",
@@ -2213,61 +1754,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03082": {
-        "ua": "Safari/7537.78.2 CFNetwork/520.5.3 Darwin/11.4.2 (i386) (MacBook4%2C1)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 32,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.7.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03083": {
-        "ua": "Unibox/283 CFNetwork/720.2.3 Darwin/14.1.0 (x86_64)",
-        "properties": {
-            "Browser_Name": "Default Browser",
-            "Browser_Type": "unknown",
-            "Browser_Bits": 64,
-            "Browser_Maker": "unknown",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "Mac OS X",
-            "Platform_Marketingname": "Mac OS X",
-            "Platform_Version": "10.10.0",
-            "Platform_Bits": 64,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "Macintosh",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\Desktop",
-            "Device_Pointing_Method": "mouse",
-            "Device_Dual_Orientation": false,
-            "Device_Code_Name": "Macintosh",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03084": {
+    "test-00000151-00003084": {
         "ua": "CronoMail/2.6.5 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2294,7 +1781,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03085": {
+    "test-00000151-00003085": {
         "ua": "browser/38704 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2321,7 +1808,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03086": {
+    "test-00000151-00003086": {
         "ua": "Safari5533.22.3 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac10%2C2)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2348,7 +1835,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03087": {
+    "test-00000151-00003087": {
         "ua": "SiriViewService/1.0 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2375,7 +1862,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03088": {
+    "test-00000151-00003088": {
         "ua": "Inboxcube/2.2.7 CFNetwork/711.1.16 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2402,7 +1889,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03089": {
+    "test-00000151-00003089": {
         "ua": "Mercury3Free/6.0.1 CFNetwork/672.0.8 Darwin/14.0.0",
         "properties": {
             "Browser_Name": "Mercury",
@@ -2429,7 +1916,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03090": {
+    "test-00000151-00003090": {
         "ua": "AtBat.Full/878 CFNetwork/548.0.4 Darwin/11.0.0",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2456,7 +1943,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03091": {
+    "test-00000151-00003091": {
         "ua": "Safari/9537.85.11.5 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro9%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2483,7 +1970,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03092": {
+    "test-00000151-00003092": {
         "ua": "Unibox/283 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro5%2C5)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2510,7 +1997,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03093": {
+    "test-00000151-00003093": {
         "ua": "Safari/7537.78.2 CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (iMac11%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2537,61 +2024,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03094": {
-        "ua": "Puffin%20Free/13170 CFNetwork/711.1.16 Darwin/14.0.0",
-        "properties": {
-            "Browser_Name": "Puffin",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "CloudMosa Inc.",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "8.1.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "general Apple Device",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\MobileDevice",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "general Apple Device",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03095": {
-        "ua": "Opera%20Coast/4.00.86810 CFNetwork/672.1.15 Darwin/14.0.0",
-        "properties": {
-            "Browser_Name": "Opera",
-            "Browser_Type": "Browser",
-            "Browser_Bits": 32,
-            "Browser_Maker": "Opera Software ASA",
-            "Browser_Modus": null,
-            "Browser_Version": "0.0",
-            "Platform_Codename": "iOS",
-            "Platform_Marketingname": "iOS",
-            "Platform_Version": "7.1.0",
-            "Platform_Bits": 32,
-            "Platform_Maker": "Apple Inc",
-            "Platform_Brand_Name": "Apple",
-            "Device_Name": "general Apple Device",
-            "Device_Maker": "Apple Inc",
-            "Device_Type": "UaDeviceType\\MobileDevice",
-            "Device_Pointing_Method": "touchscreen",
-            "Device_Dual_Orientation": true,
-            "Device_Code_Name": "general Apple Device",
-            "Device_Brand_Name": "Apple",
-            "RenderingEngine_Name": "unknown",
-            "RenderingEngine_Version": "unknown",
-            "RenderingEngine_Maker": "unknown"
-        }
-    },
-    "test-00151-03096": {
+    "test-00000151-00003096": {
         "ua": "Unibox/281 CFNetwork/720.2.3 Darwin/14.1.0 (x86_64)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2618,7 +2051,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03097": {
+    "test-00000151-00003097": {
         "ua": "Unibox/283 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro11%2C1)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2645,7 +2078,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03098": {
+    "test-00000151-00003098": {
         "ua": "Safari/8537.85.10.17.1 CFNetwork/596.6.3 Darwin/12.5.0 (x86_64) (MacBookPro5%2C5)",
         "properties": {
             "Browser_Name": "Default Browser",
@@ -2672,7 +2105,7 @@
             "RenderingEngine_Maker": "unknown"
         }
     },
-    "test-00151-03099": {
+    "test-00000151-00003099": {
         "ua": "Safari/9537.85.10.17.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro11%2C3)",
         "properties": {
             "Browser_Name": "Default Browser",
