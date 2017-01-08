@@ -27,16 +27,15 @@
     "source": "https://github.com/mimmi20/BrowserDetector"
   },
   "require": {
-    "php": ">=5.6.0",
-    "mimmi20/wurfl-generic-request": "dev-update-1.8",
-    "mimmi20/wurfl-constants": "dev-update-1.8",
+    "php": "^5.6 || ^7.0 || ^7.1",
+    "mimmi20/wurfl-generic-request": "^1.8",
     "psr/log": "^1.0",
     "psr/cache": "^1.0",
-    "mimmi20/ua-result": "^2.0@dev",
+    "mimmi20/ua-result": "^2.0",
     "mimmi20/ua-browser-type": "^1.0.3",
     "mimmi20/ua-device-type": "^1.0.5",
     "mimmi20/browser-detector-version": "dev-master",
-    "mimmi20/ua-normalizer": "dev-master",
+    "mimmi20/ua-normalizer": "^1.0",
     "danielstjules/stringy": "^2.3",
     "symfony/yaml": "^2.0 || ^3.0"
   },
@@ -46,8 +45,7 @@
     "cache/cache": "dev-master",
     "mikey179/vfsStream": "^1.6",
     "squizlabs/php_codesniffer": "^2.5",
-    "friendsofphp/php-cs-fixer": "^1.11",
-    "mimmi20/ua-data-mapper": "^2.0@dev"
+    "friendsofphp/php-cs-fixer": "^1.11"
   },
   "autoload": {
     "psr-4": {
