@@ -98,7 +98,7 @@ class PlatformLoader implements LoaderInterface
      * @throws \BrowserDetector\Loader\NotFoundException
      * @return \UaResult\Os\OsInterface
      */
-    public function load($platformCode, $useragent, $inputVersion = null)
+    public function load($platformCode, $useragent = '', $inputVersion = null)
     {
         $this->init();
 

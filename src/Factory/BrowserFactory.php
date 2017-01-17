@@ -67,7 +67,7 @@ class BrowserFactory implements FactoryInterface
     }
 
     /**
-     * Gets the information about the rendering engine by User Agent
+     * Gets the information about the browser by User Agent
      *
      * @param string                   $useragent
      * @param \UaResult\Os\OsInterface $platform

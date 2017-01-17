@@ -48,4 +48,18 @@ interface FactoryInterface
      * @return mixed
      */
     public function detect($useragent);
+
+    /**
+     * @param array $data
+     *
+     * @return mixed
+     */
+    public function fromArray(array $data);
+
+    /**
+     * @param string $json
+     *
+     * @return mixed
+     */
+    public function fromJson($json);
 }

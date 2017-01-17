@@ -94,7 +94,7 @@ class DeviceLoader implements LoaderInterface
      * @throws \BrowserDetector\Loader\NotFoundException
      * @return \UaResult\Device\DeviceInterface
      */
-    public function load($deviceKey, $useragent)
+    public function load($deviceKey, $useragent = '')
     {
         $this->init();
 

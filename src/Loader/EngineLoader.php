@@ -95,7 +95,7 @@ class EngineLoader implements LoaderInterface
      * @throws \BrowserDetector\Loader\NotFoundException
      * @return \UaResult\Engine\EngineInterface
      */
-    public function load($engineKey, $useragent)
+    public function load($engineKey, $useragent = '')
     {
         $this->init();
 

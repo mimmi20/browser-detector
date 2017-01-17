@@ -92,12 +92,11 @@ class CompanyLoader implements LoaderInterface
      * Gets the information about the company
      *
      * @param string $companyKey
-     * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      * @return \UaResult\Company\Company
      */
-    public function load($companyKey, $useragent)
+    public function load($companyKey)
     {
         $this->init();
 

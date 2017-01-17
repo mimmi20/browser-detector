@@ -44,12 +44,11 @@ interface LoaderInterface
 {
     /**
      * @param string $key
-     * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      * @return mixed
      */
-    public function load($key, $useragent);
+    public function load($key);
 
     /**
      * @param string $key

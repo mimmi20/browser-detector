@@ -96,7 +96,7 @@ class BrowserLoader implements LoaderInterface
      * @throws \BrowserDetector\Loader\NotFoundException
      * @return \UaResult\Browser\BrowserInterface
      */
-    public function load($browserKey, $useragent)
+    public function load($browserKey, $useragent = '')
     {
         $this->init();
 
