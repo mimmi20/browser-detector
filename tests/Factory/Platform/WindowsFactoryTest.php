@@ -60,8 +60,8 @@ class WindowsFactoryTest extends \PHPUnit_Framework_TestCase
 
         self::assertSame(
             $manufacturer,
-            $result->getManufacturer(),
-            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer() . '")'
+            $result->getManufacturer()->getName(),
+            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer()->getName() . '")'
         );
 
         self::assertSame(

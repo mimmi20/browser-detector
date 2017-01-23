@@ -2,8 +2,7 @@
   "aix": {
     "name": "AIX",
     "marketingName": "AIX",
-    "manufacturer": "IBM",
-    "brand": "IBM",
+    "manufacturer": "Ibm",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -14,8 +13,7 @@
   "amiga os": {
     "name": "Amiga OS",
     "marketingName": "Amiga OS",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -26,8 +24,7 @@
   "android": {
     "name": "Android",
     "marketingName": "Android",
-    "manufacturer": "Google Inc",
-    "brand": "Google",
+    "manufacturer": "Google",
     "version": {
       "class": "\\BrowserDetector\\Version\\AndroidOs",
       "search": null
@@ -36,8 +33,7 @@
   "atv os x": {
     "name": "ATV OS X",
     "marketingName": "ATV OS X",
-    "manufacturer": "Apple Inc",
-    "brand": "Apple",
+    "manufacturer": "Apple",
     "version": {
       "class": "\\BrowserDetector\\Version\\Ios",
       "search": null
@@ -47,7 +43,6 @@
     "name": "Bada",
     "marketingName": "Bada",
     "manufacturer": "Samsung",
-    "brand": "Samsung",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -59,7 +54,6 @@
     "name": "BeOS",
     "marketingName": "BeOS",
     "manufacturer": "Access",
-    "brand": "Access",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -70,8 +64,7 @@
   "brew": {
     "name": "Brew",
     "marketingName": "Brew",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -82,8 +75,7 @@
   "bsd": {
     "name": "BSD",
     "marketingName": "BSD",
-    "manufacturer": "University of California, Berkeley",
-    "brand": "Berkeley",
+    "manufacturer": "BerkleyUniversity",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -95,7 +87,6 @@
     "name": "CellOS",
     "marketingName": "CellOS",
     "manufacturer": "Sony",
-    "brand": "Sony",
     "version": {
       "class": null,
       "search": null
@@ -104,8 +95,7 @@
   "cent os linux": {
     "name": "Cent OS Linux",
     "marketingName": "Cent OS Linux",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": null,
       "search": null
@@ -114,8 +104,7 @@
   "cp/m": {
     "name": "CP/M",
     "marketingName": "CP/M",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": null,
       "search": null
@@ -124,8 +113,7 @@
   "chromeos": {
     "name": "ChromeOS",
     "marketingName": "ChromeOS",
-    "manufacturer": "Google Inc",
-    "brand": "Google",
+    "manufacturer": "Google",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -136,8 +124,7 @@
   "cygwin": {
     "name": "Cygwin",
     "marketingName": "Cygwin",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": null,
       "search": null
@@ -146,8 +133,7 @@
   "darwin": {
     "name": "Darwin",
     "marketingName": "Darwin",
-    "manufacturer": "Apple Inc",
-    "brand": "Apple",
+    "manufacturer": "Apple",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -158,8 +144,7 @@
   "debian": {
     "name": "Debian",
     "marketingName": "Debian",
-    "manufacturer": "Software in the Public Interest, Inc.",
-    "brand": "Software in the Public Interest",
+    "manufacturer": "SoftwareInThePublicInterest",
     "version": {
       "class": "\\BrowserDetector\\Version\\Debian",
       "search": null
@@ -168,8 +153,7 @@
   "debian with freebsd kernel": {
     "name": "Debian with FreeBSD Kernel",
     "marketingName": "Debian with FreeBSD Kernel",
-    "manufacturer": "Software in the Public Interest, Inc.",
-    "brand": "Software in the Public Interest",
+    "manufacturer": "SoftwareInThePublicInterest",
     "version": {
       "class": "\\BrowserDetector\\Version\\Debian",
       "search": null
@@ -178,8 +162,7 @@
   "dragonfly bsd": {
     "name": "DragonFly BSD",
     "marketingName": "DragonFly BSD",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -190,8 +173,7 @@
   "fedora linux": {
     "name": "Fedora Linux",
     "marketingName": "Fedora Linux",
-    "manufacturer": "Red Hat Inc",
-    "brand": "Redhat",
+    "manufacturer": "Redhat",
     "version": {
       "class": null,
       "search": null
@@ -200,8 +182,7 @@
   "firefoxos": {
     "name": "FirefoxOS",
     "marketingName": "FirefoxOS",
-    "manufacturer": "Mozilla Foundation",
-    "brand": "Mozilla",
+    "manufacturer": "MozillaFoundation",
     "version": {
       "class": "\\BrowserDetector\\Version\\FirefoxOs",
       "search": null
@@ -210,8 +191,7 @@
   "freebsd": {
     "name": "FreeBSD",
     "marketingName": "FreeBSD",
-    "manufacturer": "FreeBSD Foundation",
-    "brand": "FreeBSD",
+    "manufacturer": "FreeBsdFoundation",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -223,8 +203,7 @@
   "gentoo linux": {
     "name": "Gentoo Linux",
     "marketingName": "Gentoo Linux",
-    "manufacturer": "Gentoo Foundation Inc",
-    "brand": "Gentoo",
+    "manufacturer": "Gentoo",
     "version": {
       "class": null,
       "search": null
@@ -233,8 +212,7 @@
   "hp-ux": {
     "name": "HP-UX",
     "marketingName": "HP-UX",
-    "manufacturer": "HP",
-    "brand": "HP",
+    "manufacturer": "Hp",
     "version": {
       "class": null,
       "search": null
@@ -243,8 +221,7 @@
   "inferno os": {
     "name": "Inferno OS",
     "marketingName": "Inferno OS",
-    "manufacturer": "Vita Nuova Holdings Ltd",
-    "brand": "Vita Nuova",
+    "manufacturer": "Vita Nuova",
     "version": {
       "class": null,
       "search": null
@@ -253,8 +230,7 @@
   "ios": {
     "name": "iOS",
     "marketingName": "iOS",
-    "manufacturer": "Apple Inc",
-    "brand": "Apple",
+    "manufacturer": "Apple",
     "version": {
       "class": "\\BrowserDetector\\Version\\Ios",
       "search": null
@@ -263,8 +239,7 @@
   "irix": {
     "name": "IRIX",
     "marketingName": "IRIX",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": null,
       "search": null
@@ -274,7 +249,6 @@
     "name": "Java",
     "marketingName": "Java",
     "manufacturer": "Oracle",
-    "brand": "Oracle",
     "version": {
       "class": null,
       "search": null
@@ -283,8 +257,7 @@
   "joli os": {
     "name": "Joli OS",
     "marketingName": "Joli OS",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -295,8 +268,7 @@
   "kubuntu": {
     "name": "Kubuntu",
     "marketingName": "Kubuntu",
-    "manufacturer": "Canonical Foundation",
-    "brand": "Canonical",
+    "manufacturer": "Canonical",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -308,8 +280,7 @@
   "liberate": {
     "name": "Liberate",
     "marketingName": "Liberate",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -320,8 +291,7 @@
   "linux": {
     "name": "Linux",
     "marketingName": "Linux",
-    "manufacturer": "Linux Foundation",
-    "brand": "Linux Foundation",
+    "manufacturer": "LinuxFoundation",
     "version": {
       "class": null,
       "search": null
@@ -330,8 +300,7 @@
   "macintosh": {
     "name": "Macintosh",
     "marketingName": "Macintosh",
-    "manufacturer": "Apple Inc",
-    "brand": "Apple",
+    "manufacturer": "Apple",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -342,8 +311,7 @@
   "mac os x": {
     "name": "Mac OS X",
     "marketingName": "Mac OS X",
-    "manufacturer": "Apple Inc",
-    "brand": "Apple",
+    "manufacturer": "Apple",
     "version": {
       "class": "\\BrowserDetector\\Version\\Macosx",
       "search": null
@@ -352,8 +320,7 @@
   "linux smartphone os (maemo)": {
     "name": "Linux Smartphone OS (Maemo)",
     "marketingName": "Linux Smartphone OS (Maemo)",
-    "manufacturer": "Linux Foundation",
-    "brand": "Linux Foundation",
+    "manufacturer": "LinuxFoundation",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -365,7 +332,6 @@
     "name": "Mandriva Linux",
     "marketingName": "Mandriva Linux",
     "manufacturer": "Mandriva",
-    "brand": "Mandriva",
     "version": {
       "class": null,
       "search": null
@@ -374,8 +340,7 @@
   "meego": {
     "name": "MeeGo",
     "marketingName": "MeeGo",
-    "manufacturer": "Linux Foundation",
-    "brand": "Linux Foundation",
+    "manufacturer": "LinuxFoundation",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -386,8 +351,7 @@
   "linux mint": {
     "name": "Linux Mint",
     "marketingName": "Linux Mint",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -399,8 +363,7 @@
   "miui os": {
     "name": "Miui OS",
     "marketingName": "Miui OS",
-    "manufacturer": "Xiaomi Tech",
-    "brand": "Xiaomi",
+    "manufacturer": "XiaomiTech",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -412,8 +375,7 @@
   "moblin": {
     "name": "Moblin",
     "marketingName": "Moblin",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": null,
       "search": null
@@ -422,8 +384,7 @@
   "netbsd": {
     "name": "NetBSD",
     "marketingName": "NetBSD",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -435,7 +396,6 @@
     "name": "Nintendo OS",
     "marketingName": "Nintendo OS",
     "manufacturer": "Nintendo",
-    "brand": "Nintendo",
     "version": {
       "class": null,
       "search": null
@@ -445,7 +405,6 @@
     "name": "Nokia OS",
     "marketingName": "Nokia OS",
     "manufacturer": "Nokia",
-    "brand": "Nokia",
     "version": {
       "class": null,
       "search": null
@@ -454,8 +413,7 @@
   "openbsd": {
     "name": "OpenBSD",
     "marketingName": "OpenBSD",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -466,8 +424,7 @@
   "openvms": {
     "name": "OpenVMS",
     "marketingName": "OpenVMS",
-    "manufacturer": "HP",
-    "brand": "HP",
+    "manufacturer": "Hp",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -478,8 +435,7 @@
   "os/2": {
     "name": "OS/2",
     "marketingName": "OS/2",
-    "manufacturer": "IBM",
-    "brand": "IBM",
+    "manufacturer": "Ibm",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -492,7 +448,6 @@
     "name": "PalmOS",
     "marketingName": "PalmOS",
     "manufacturer": "Palm",
-    "brand": "Palm",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -503,8 +458,7 @@
   "redhat linux": {
     "name": "Redhat Linux",
     "marketingName": "Redhat Linux",
-    "manufacturer": "Red Hat Inc",
-    "brand": "Redhat",
+    "manufacturer": "Redhat",
     "version": {
       "class": null,
       "search": null
@@ -513,8 +467,7 @@
   "rim os": {
     "name": "RIM OS",
     "marketingName": "RIM OS",
-    "manufacturer": "Research In Motion Limited",
-    "brand": "RIM",
+    "manufacturer": "Rim",
     "version": {
       "class": "\\BrowserDetector\\Version\\RimOs",
       "search": null
@@ -523,8 +476,7 @@
   "rim tablet os": {
     "name": "RIM Tablet OS",
     "marketingName": "RIM Tablet OS",
-    "manufacturer": "Research In Motion Limited",
-    "brand": "RIM",
+    "manufacturer": "Rim",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -535,8 +487,7 @@
   "risc os": {
     "name": "RISC OS",
     "marketingName": "RISC OS",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -547,8 +498,7 @@
   "ruby": {
     "name": "Ruby",
     "marketingName": "Ruby",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": null,
       "search": null
@@ -557,8 +507,7 @@
   "sailfishos": {
     "name": "SailfishOS",
     "marketingName": "SailfishOS",
-    "manufacturer": "Jolla Ltd.",
-    "brand": "Jolla",
+    "manufacturer": "Jolla",
     "version": {
       "class": null,
       "search": null
@@ -567,8 +516,7 @@
   "slackware linux": {
     "name": "Slackware Linux",
     "marketingName": "Slackware Linux",
-    "manufacturer": "Slackware Linux Inc",
-    "brand": "Slackware",
+    "manufacturer": "Slackware",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -580,7 +528,6 @@
     "name": "Solaris",
     "marketingName": "Solaris",
     "manufacturer": "Oracle",
-    "brand": "Oracle",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -592,7 +539,6 @@
     "name": "SunOS",
     "marketingName": "SunOS",
     "manufacturer": "Oracle",
-    "brand": "Oracle",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -604,7 +550,6 @@
     "name": "Suse Linux",
     "marketingName": "Suse Linux",
     "manufacturer": "Suse",
-    "brand": "Suse",
     "version": {
       "class": null,
       "search": null
@@ -613,8 +558,7 @@
   "syllable": {
     "name": "Syllable",
     "marketingName": "Syllable",
-    "manufacturer": "Syllable Project",
-    "brand": "Syllable",
+    "manufacturer": "Syllable",
     "version": {
       "class": null,
       "search": null
@@ -623,8 +567,7 @@
   "symbian": {
     "name": "Symbian OS",
     "marketingName": "Symbian OS",
-    "manufacturer": "Symbian Foundation",
-    "brand": "Symbian Foundation",
+    "manufacturer": "SymbianFoundation",
     "version": {
       "class": null,
       "search": null
@@ -633,8 +576,7 @@
   "tizen": {
     "name": "Tizen",
     "marketingName": "Tizen",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -645,8 +587,7 @@
   "tru64 unix": {
     "name": "Tru64 UNIX",
     "marketingName": "Tru64 UNIX",
-    "manufacturer": "HP",
-    "brand": "HP",
+    "manufacturer": "Hp",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -658,8 +599,7 @@
   "ubuntu": {
     "name": "Ubuntu",
     "marketingName": "Ubuntu",
-    "manufacturer": "Canonical Foundation",
-    "brand": "Canonical",
+    "manufacturer": "Canonical",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -671,8 +611,7 @@
   "unix": {
     "name": "Unix",
     "marketingName": "Unix",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -683,8 +622,7 @@
   "unknown": {
     "name": "unknown",
     "marketingName": "unknown",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": null,
       "search": null
@@ -694,7 +632,6 @@
     "name": "Ventana Linux",
     "marketingName": "Ventana Linux",
     "manufacturer": "Ventana",
-    "brand": "Ventana",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -706,8 +643,7 @@
   "webos": {
     "name": "webOS",
     "marketingName": "webOS",
-    "manufacturer": "HP",
-    "brand": "HP",
+    "manufacturer": "Hp",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -720,8 +656,7 @@
   "windows": {
     "name": "Windows",
     "marketingName": "Windows",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -730,8 +665,7 @@
   "windows nt 10.0": {
     "name": "Windows NT 10.0",
     "marketingName": "Windows 10",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -740,8 +674,7 @@
   "windows nt 6.4": {
     "name": "Windows NT 6.4",
     "marketingName": "Windows 10",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -750,8 +683,7 @@
   "windows nt 5.0": {
     "name": "Windows NT 5.0",
     "marketingName": "Windows 2000",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -760,8 +692,7 @@
   "windows nt 5.01": {
     "name": "Windows NT 5.01",
     "marketingName": "Windows 2000",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -770,8 +701,7 @@
   "windows 2003": {
     "name": "Windows 2003",
     "marketingName": "Windows 2003",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -780,8 +710,7 @@
   "windows 3.1": {
     "name": "Windows 3.1",
     "marketingName": "Windows 3.1",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -790,8 +719,7 @@
   "windows nt 6.1": {
     "name": "Windows NT 6.1",
     "marketingName": "Windows 7",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -800,8 +728,7 @@
   "windows nt 6.2": {
     "name": "Windows NT 6.2",
     "marketingName": "Windows 8",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -810,8 +737,7 @@
   "windows nt 6.2; arm": {
     "name": "Windows RT 6.2",
     "marketingName": "Windows RT 8",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -820,8 +746,7 @@
   "windows nt 6.3": {
     "name": "Windows NT 6.3",
     "marketingName": "Windows 8.1",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -830,8 +755,7 @@
   "windows nt 6.3; arm": {
     "name": "Windows RT 6.3",
     "marketingName": "Windows RT 8.1",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -840,8 +764,7 @@
   "windows 95": {
     "name": "Windows 95",
     "marketingName": "Windows 95",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -850,8 +773,7 @@
   "windows 98": {
     "name": "Windows 98",
     "marketingName": "Windows 98",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -860,8 +782,7 @@
   "windows ce": {
     "name": "Windows CE",
     "marketingName": "Windows CE",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -870,8 +791,7 @@
   "windows me": {
     "name": "Windows ME",
     "marketingName": "Windows ME",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -880,8 +800,7 @@
   "windows mobile os": {
     "name": "Windows Mobile OS",
     "marketingName": "Windows Mobile OS",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": "\\BrowserDetector\\Version\\WindowsMobileOs",
       "search": null
@@ -890,8 +809,7 @@
   "windows nt": {
     "name": "Windows NT",
     "marketingName": "Windows NT",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -900,8 +818,7 @@
   "windows nt 4.10": {
     "name": "Windows NT 4.10",
     "marketingName": "Windows NT",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -910,8 +827,7 @@
   "windows nt 4.1": {
     "name": "Windows NT 4.1",
     "marketingName": "Windows NT",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -920,8 +836,7 @@
   "windows nt 4.0": {
     "name": "Windows NT 4.0",
     "marketingName": "Windows NT",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -930,8 +845,7 @@
   "windows nt 3.5": {
     "name": "Windows NT 3.5",
     "marketingName": "Windows NT",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -940,8 +854,7 @@
   "windows nt 3.1": {
     "name": "Windows NT 3.1",
     "marketingName": "Windows NT",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -950,8 +863,7 @@
   "windows phone": {
     "name": "Windows Phone OS",
     "marketingName": "Windows Phone OS",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": "\\BrowserDetector\\Version\\WindowsPhoneOs",
       "search": null
@@ -960,8 +872,7 @@
   "windows rt": {
     "name": "Windows RT",
     "marketingName": "Windows RT",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": "\\BrowserDetector\\Version\\WindowsRt",
       "search": null
@@ -970,8 +881,7 @@
   "windows nt 6.0": {
     "name": "Windows NT 6.0",
     "marketingName": "Windows Vista",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -980,8 +890,7 @@
   "windows nt 5.1": {
     "name": "Windows NT 5.1",
     "marketingName": "Windows XP",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -990,8 +899,7 @@
   "windows nt 5.2": {
     "name": "Windows NT 5.2",
     "marketingName": "Windows XP",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -1000,8 +908,7 @@
   "windows nt 5.3": {
     "name": "Windows NT 5.3",
     "marketingName": "Windows XP",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null
@@ -1010,8 +917,7 @@
   "wyderos": {
     "name": "WyderOS",
     "marketingName": "WyderOS",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -1022,8 +928,7 @@
   "zenwalk gnu linux": {
     "name": "Zenwalk GNU Linux",
     "marketingName": "Zenwalk GNU Linux",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": null,
       "search": null

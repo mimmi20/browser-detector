@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2016, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -35,6 +35,7 @@ use BrowserDetector\Helper;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
+use UaResult\Os\OsFactory;
 
 /**
  * Browser detection class
@@ -42,10 +43,10 @@ use Stringy\Stringy;
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PlatformFactory implements FactoryInterface
+class PlatformFactory implements FactoryInterface, FactoryFromInterface
 {
     /**
      * @var \Psr\Cache\CacheItemPoolInterface|null
@@ -238,5 +239,25 @@ class PlatformFactory implements FactoryInterface
         }
 
         return $this->loader->load($platformCode, $agent);
+    }
+
+    /**
+     * @param array $data
+     *
+     * @return \UaResult\Os\OsInterface
+     */
+    public function fromArray(array $data)
+    {
+        return (new OsFactory())->fromArray($data);
+    }
+
+    /**
+     * @param string $json
+     *
+     * @return \UaResult\Os\OsInterface
+     */
+    public function fromJson($json)
+    {
+        return (new OsFactory())->fromJson($json);
     }
 }

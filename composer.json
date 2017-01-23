@@ -27,23 +27,24 @@
     "source": "https://github.com/mimmi20/BrowserDetector"
   },
   "require": {
-    "php": "^5.6 || ^7.0 || ^7.1",
-    "mimmi20/wurfl-generic-request": "^1.8",
+    "php": "^7.0 || ^7.1",
+    "mimmi20/wurfl-generic-request": "~2.0.0",
     "psr/log": "^1.0",
     "psr/cache": "^1.0",
-    "mimmi20/ua-result": "^2.0",
-    "mimmi20/ua-browser-type": "^1.0.3",
-    "mimmi20/ua-device-type": "^1.0.5",
-    "mimmi20/browser-detector-version": "^1.0",
-    "mimmi20/ua-normalizer": "^1.0",
+    "mimmi20/ua-result": "~3.0.0",
+    "mimmi20/ua-browser-type": "~2.0.1",
+    "mimmi20/ua-device-type": "~2.0.1",
+    "mimmi20/browser-detector-version": "~2.0.1",
+    "mimmi20/browser-detector-loader-interface": "~1.0.0",
+    "mimmi20/browser-detector-factory-interface": "~1.0.1",
+    "mimmi20/ua-normalizer": "~1.0.1",
     "danielstjules/stringy": "^2.3",
-    "symfony/yaml": "^2.0 || ^3.0"
+    "symfony/yaml": "^3.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^5.4",
+    "phpunit/phpunit": "^5.7",
     "monolog/monolog": "^1.20",
     "cache/cache": "dev-master",
-    "mikey179/vfsStream": "^1.6",
     "squizlabs/php_codesniffer": "^2.5",
     "friendsofphp/php-cs-fixer": "^1.11"
   },
