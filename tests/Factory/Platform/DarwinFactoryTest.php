@@ -84,6 +84,20 @@ class DarwinFactoryTest extends \PHPUnit_Framework_TestCase
                 'Apple Inc',
                 64,
             ],
+            [
+                'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0',
+                'iOS',
+                '10.2.0',
+                'Apple Inc',
+                32,
+            ],
+            [
+                'TestApp/1.0 CFNetwork/808.1.4 Darwin/16.1.0',
+                'iOS',
+                '10.1.0',
+                'Apple Inc',
+                32,
+            ],
         ];
     }
 }

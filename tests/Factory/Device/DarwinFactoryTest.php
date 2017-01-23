@@ -142,6 +142,16 @@ class DarwinFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

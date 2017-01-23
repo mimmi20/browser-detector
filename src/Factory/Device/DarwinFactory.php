@@ -78,6 +78,10 @@ class DarwinFactory implements Factory\FactoryInterface
         $deviceCode   = 'macintosh';
         $appleFactory = new Mobile\AppleFactory($this->cache, $this->loader);
 
+        if (false !== strpos($useragent, 'CFNetwork/808')) {
+            return $appleFactory->detect($useragent);
+        }
+
         if (false !== strpos($useragent, 'CFNetwork/807')) {
             $deviceCode = 'macintosh';
         }

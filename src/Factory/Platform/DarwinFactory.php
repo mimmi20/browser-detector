@@ -75,6 +75,18 @@ class DarwinFactory implements Factory\FactoryInterface
      */
     public function detect($useragent)
     {
+        if (false !== strpos($useragent, 'CFNetwork/808.2')) {
+            return $this->loader->load('ios', $useragent, '10.2');
+        }
+
+        if (false !== strpos($useragent, 'CFNetwork/808.1')) {
+            return $this->loader->load('ios', $useragent, '10.1');
+        }
+
+        if (false !== strpos($useragent, 'CFNetwork/808')) {
+            return $this->loader->load('ios', $useragent, '10.0');
+        }
+
         if (false !== strpos($useragent, 'CFNetwork/807')) {
             return $this->loader->load('mac os x', $useragent, '10.12');
         }
