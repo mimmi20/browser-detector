@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2016, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -38,7 +38,7 @@ use Psr\Cache\CacheItemPoolInterface;
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class GzoneFactory implements Factory\FactoryInterface

@@ -2,7 +2,6 @@ language: php
 sudo: false
 
 php:
-  - 5.6
   - 7.0
   - 7.1
   - nightly
@@ -16,7 +15,6 @@ env:
 
 matrix:
   allow_failures:
-  # may fail due a segmentation fault
     - php: nightly
     - env: PREFER_LOWEST="--prefer-lowest"
 
@@ -25,14 +23,11 @@ before_script:
   - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction $PREFER_LOWEST
 
 script:
-  - vendor/bin/phpunit -c phpunit.library.xml --exclude-group useragenttest --colors=auto --coverage-text --coverage-clover=coverage.clover
+  - vendor/bin/phpunit --colors=auto --coverage-clover=coverage.clover
   - php -n -d memory_limit=768M vendor/bin/phpcs
   - php -n -d memory_limit=768M vendor/bin/php-cs-fixer fix --dry-run -vv
 
 after_success:
-#  - if [ "`phpenv version-name`" == "5.6" ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
-#  - if [ "`phpenv version-name`" == "5.6" ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
-
   - wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar
   - php -n coveralls.phar --verbose --coverage_clover=coverage.clover
 

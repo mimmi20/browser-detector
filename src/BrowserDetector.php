@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2016, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -47,7 +47,7 @@ use Wurfl\Request\GenericRequestFactory;
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class BrowserDetector
@@ -114,7 +114,7 @@ class BrowserDetector
             );
         }
 
-        $cacheId   = hash('sha512', $request->getDeviceUserAgent() . '||||' . $request->getBrowserUserAgent());
+        //$cacheId   = hash('sha512', $request->getDeviceUserAgent() . '||||' . $request->getBrowserUserAgent());
         $result    = null;
         //$cacheItem = $this->cache->getItem($cacheId);
 
@@ -205,7 +205,7 @@ class BrowserDetector
             $browser = (new Factory\BrowserFactory($this->cache, new Loader\BrowserLoader($this->cache)))->detect($browserUa, $platform);
         }
 
-        $engineLoader = new  Loader\EngineLoader($this->cache);
+        $engineLoader = new Loader\EngineLoader($this->cache);
 
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
             $this->logger->debug('engine forced to "webkit" on iOS');

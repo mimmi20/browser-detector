@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="tests/bootstrap.php">
-  <testsuites>
-    <testsuite name="BrowserDetector Test Suite">
-      <directory>tests/</directory>
-    </testsuite>
-  </testsuites>
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.7/phpunit.xsd"
+        beStrictAboutOutputDuringTests="true"
+        beStrictAboutTestsThatDoNotTestAnything="true"
+        beStrictAboutTodoAnnotatedTests="true"
+        verbose="true"
+        bootstrap="vendor/autoload.php"
+        >
+    <php>
+        <ini name="error_reporting" value="-1"/>
+        <ini name="memory_limit" value="-1"/>
+    </php>
 
-  <filter>
-    <whitelist>
-      <directory suffix=".php">src/</directory>
-    </whitelist>
-  </filter>
+    <testsuites>
+        <testsuite name="BrowserDetector Test Suite">
+            <directory>tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true" processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-text" target="php://stdout" showUncoveredFiles="true"/>
+    </logging>
 </phpunit>

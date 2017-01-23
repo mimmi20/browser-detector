@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2016, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -36,6 +36,7 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
 
 /**
@@ -44,7 +45,7 @@ use UaResult\Browser\Browser;
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class BrowserLoader implements LoaderInterface
@@ -121,23 +122,15 @@ class BrowserLoader implements LoaderInterface
             $version      = $versionClass->detectVersion($useragent);
         }
 
-        $typeClass = '\\UaBrowserType\\' . $browser->type;
-
         return new Browser(
             $browser->name,
-            $browser->manufacturer,
-            $browser->brand,
+            (new CompanyLoader($this->cache))->load($browser->manufacturer),
             $version,
             $engineLoader->load($browser->engine, $useragent),
-            new $typeClass(),
+            (new TypeLoader($this->cache))->load($browser->type),
             (new BrowserBits($useragent))->getBits(),
             $browser->pdfSupport,
-            $browser->rssSupport,
-            $browser->canSkipAlignedLinkRow,
-            $browser->claimsWebSupport,
-            $browser->supportsEmptyOptionValues,
-            $browser->supportsBasicAuthentication,
-            $browser->supportsPostMethod
+            $browser->rssSupport
         );
     }
 

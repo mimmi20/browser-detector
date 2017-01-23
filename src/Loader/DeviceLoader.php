@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2016, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -35,6 +35,7 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use UaDeviceType\TypeLoader;
 
 /**
  * Device detection class
@@ -42,7 +43,7 @@ use Psr\Cache\CacheItemPoolInterface;
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class DeviceLoader implements LoaderInterface
@@ -122,7 +123,6 @@ class DeviceLoader implements LoaderInterface
             }
         }
 
-        $typeClass   = '\\UaDeviceType\\' . $device->type;
         $platformKey = $device->platform;
 
         if (null === $platformKey) {
@@ -131,14 +131,16 @@ class DeviceLoader implements LoaderInterface
             $platform = (new PlatformLoader($this->cache))->load($platformKey, $useragent);
         }
 
+        $companyLoader = new CompanyLoader($this->cache);
+
         return new \UaResult\Device\Device(
             $device->codename,
             $device->marketingName,
-            $device->manufacturer,
-            $device->brand,
+            $companyLoader->load($device->manufacturer),
+            $companyLoader->load($device->brand),
             $version,
             $platform,
-            new $typeClass(),
+            (new TypeLoader($this->cache))->load($device->type),
             $device->pointingMethod,
             (int) $device->resolutionWidth,
             (int) $device->resolutionHeight,

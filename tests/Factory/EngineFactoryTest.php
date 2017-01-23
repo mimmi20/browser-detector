@@ -38,9 +38,8 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
      * @param string $engine
      * @param string $version
      * @param string $manufacturer
-     * @param string $brand
      */
-    public function testDetect($userAgent, $engine, $version, $manufacturer, $brand)
+    public function testDetect($userAgent, $engine, $version, $manufacturer)
     {
         $normalizer = (new NormalizerFactory())->build();
 
@@ -64,18 +63,10 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
             'Expected version to be "' . $version . '" (was "' . $result->getVersion()->getVersion() . '")'
         );
 
-        self::assertInternalType('string', $result->getManufacturer());
         self::assertSame(
             $manufacturer,
-            $result->getManufacturer(),
-            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer() . '")'
-        );
-
-        self::assertInternalType('string', $result->getBrand());
-        self::assertSame(
-            $brand,
-            $result->getBrand(),
-            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
+            $result->getManufacturer()->getName(),
+            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer()->getName() . '")'
         );
     }
 

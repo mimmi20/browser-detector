@@ -1,8 +1,7 @@
 {
   "blackberry": {
     "name": "BlackBerry",
-    "manufacturer": "Research In Motion Limited",
-    "brand": "RIM",
+    "manufacturer": "Rim",
     "version": {
       "class": null,
       "search": null
@@ -10,8 +9,7 @@
   },
   "blink": {
     "name": "Blink",
-    "manufacturer": "Google Inc",
-    "brand": "Google",
+    "manufacturer": "Google",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -24,26 +22,27 @@
   },
   "edge": {
     "name": "Edge",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": "VersionFactory",
-      "search": ["Edge"]
+      "search": [
+        "Edge"
+      ]
     }
   },
   "gecko": {
     "name": "Gecko",
-    "manufacturer": "Mozilla Foundation",
-    "brand": "Mozilla",
+    "manufacturer": "MozillaFoundation",
     "version": {
       "class": "VersionFactory",
-      "search": ["rv:"]
+      "search": [
+        "rv:"
+      ]
     }
   },
   "goanna": {
     "name": "Goanna",
-    "manufacturer": "Moonchild Productions",
-    "brand": "Moonchild",
+    "manufacturer": "MoonchildProductions",
     "version": {
       "class": "\\BrowserDetector\\Version\\Goanna",
       "search": null
@@ -51,17 +50,17 @@
   },
   "khtml": {
     "name": "KHTML",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
-      "search": ["KHTML"]
+      "search": [
+        "KHTML"
+      ]
     }
   },
   "netfront": {
     "name": "NetFront",
     "manufacturer": "Access",
-    "brand": "Access",
     "version": {
       "class": null,
       "search": null
@@ -69,26 +68,27 @@
   },
   "presto": {
     "name": "Presto",
-    "manufacturer": "Opera Software ASA",
-    "brand": "Opera",
+    "manufacturer": "Opera",
     "version": {
       "class": "VersionFactory",
-      "search": ["Presto"]
+      "search": [
+        "Presto"
+      ]
     }
   },
   "t5": {
     "name": "T5",
     "manufacturer": "Baidu",
-    "brand": "Baidu",
     "version": {
       "class": "VersionFactory",
-      "search": ["T5"]
+      "search": [
+        "T5"
+      ]
     }
   },
   "tasman": {
     "name": "Tasman",
-    "manufacturer": "Apple Inc",
-    "brand": "Apple",
+    "manufacturer": "Apple",
     "version": {
       "class": null,
       "search": null
@@ -97,7 +97,6 @@
   "teleca": {
     "name": "Teleca",
     "manufacturer": "Obigo",
-    "brand": "Obigo",
     "version": {
       "class": null,
       "search": null
@@ -105,8 +104,7 @@
   },
   "trident": {
     "name": "Trident",
-    "manufacturer": "Microsoft Corporation",
-    "brand": "Microsoft",
+    "manufacturer": "Microsoft",
     "version": {
       "class": "\\BrowserDetector\\Version\\Trident",
       "search": null
@@ -114,26 +112,27 @@
   },
   "u2": {
     "name": "U2",
-    "manufacturer": "UCWeb Inc.",
-    "brand": "UCWeb",
+    "manufacturer": "UcWeb",
     "version": {
       "class": "VersionFactory",
-      "search": ["U2"]
+      "search": [
+        "U2"
+      ]
     }
   },
   "u3": {
     "name": "U3",
-    "manufacturer": "UCWeb Inc.",
-    "brand": "UCWeb",
+    "manufacturer": "UcWeb",
     "version": {
       "class": "VersionFactory",
-      "search": ["U3"]
+      "search": [
+        "U3"
+      ]
     }
   },
   "unknown": {
     "name": "unknown",
-    "manufacturer": "unknown",
-    "brand": "unknown",
+    "manufacturer": "Unknown",
     "version": {
       "class": null,
       "search": null
@@ -141,8 +140,7 @@
   },
   "webkit": {
     "name": "WebKit",
-    "manufacturer": "Apple Inc",
-    "brand": "Apple",
+    "manufacturer": "Apple",
     "version": {
       "class": "VersionFactory",
       "search": [
