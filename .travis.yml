@@ -28,6 +28,9 @@ script:
   - php -n -d memory_limit=768M vendor/bin/php-cs-fixer fix --dry-run -vv
 
 after_success:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+
   - wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar
   - php -n coveralls.phar --verbose --coverage_clover=coverage.clover
 
