@@ -141,102 +141,28 @@ class BrowserDetector
      */
     private function buildResult(GenericRequest $request)
     {
-        $normalizer   = (new NormalizerFactory())->build();
-        $deviceUa     = $normalizer->normalize($request->getDeviceUserAgent());
-        $regexFactory = new Factory\RegexFactory($this->cache, $this->logger);
-
-        try {
-            $regexFactory->detect($deviceUa);
-            $device = $regexFactory->getDevice();
-        } catch (Loader\NotFoundException $e) {
-            $this->logger->info($e);
-            $device = null;
-        } catch (Factory\Regex\NoMatchException $e) {
-            $device = null;
-        } catch (\InvalidArgumentException $e) {
-            $this->logger->error($e);
-            $device = null;
-        } catch (\Exception $e) {
-            $this->logger->critical($e);
-            $device = null;
-        }
-
-        if (null === $device) {
-            $this->logger->debug('device not detected via regexes');
-            $device = (new Factory\DeviceFactory($this->cache, new Loader\DeviceLoader($this->cache)))->detect($deviceUa);
-        }
-
-        $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
-        $e         = null;
-
-        try {
-            $regexFactory->detect($browserUa);
-            $platform = $regexFactory->getPlatform();
-            $browser  = $regexFactory->getBrowser();
-        } catch (Loader\NotFoundException $e) {
-            $this->logger->info($e);
-            $platform = null;
-            $browser  = null;
-        } catch (Factory\Regex\NoMatchException $e) {
-            $platform = null;
-            $browser  = null;
-        } catch (\InvalidArgumentException $e) {
-            $this->logger->error($e);
-            $platform = null;
-            $browser  = null;
-        } catch (\Exception $e) {
-            $this->logger->critical($e);
-            $platform = null;
-            $browser  = null;
-        }
+        $normalizer = (new NormalizerFactory())->build();
+        $deviceUa   = $normalizer->normalize($request->getDeviceUserAgent());
+        $device     = (new Factory\DeviceFactory($this->cache, new Loader\DeviceLoader($this->cache)))->detect($deviceUa);
+        $browserUa  = $normalizer->normalize($request->getBrowserUserAgent());
+        $platform   = $device->getPlatform();
 
         if (null === $platform) {
-            $this->logger->debug('platform not detected via regexes, try to get from device');
-            $platform = $device->getPlatform();
-        }
-
-        if (null === $platform) {
-            $this->logger->debug('device not detected via regexes nor from the device');
+            $this->logger->debug('platform not detected from the device');
             $platform = (new Factory\PlatformFactory($this->cache, new Loader\PlatformLoader($this->cache)))->detect($browserUa);
         }
 
-        if (null === $browser) {
-            $this->logger->debug('browser not detected via regexes');
-            $browser = (new Factory\BrowserFactory($this->cache, new Loader\BrowserLoader($this->cache)))->detect($browserUa, $platform);
-        }
-
+        $browser      = (new Factory\BrowserFactory($this->cache, new Loader\BrowserLoader($this->cache)))->detect($browserUa, $platform);
         $engineLoader = new Loader\EngineLoader($this->cache);
 
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
             $this->logger->debug('engine forced to "webkit" on iOS');
             $engine = $engineLoader->load('webkit', $browserUa);
         } else {
-            if ($e === null) {
-                try {
-                    $engine = $regexFactory->getEngine();
-                } catch (Loader\NotFoundException $e) {
-                    $this->logger->info($e);
-                    $engine = null;
-                } catch (Factory\Regex\NoMatchException $e) {
-                    $engine = null;
-                } catch (\InvalidArgumentException $e) {
-                    $this->logger->error($e);
-                    $engine = null;
-                } catch (\Exception $e) {
-                    $this->logger->critical($e);
-                    $engine = null;
-                }
-            } else {
-                $engine = null;
-            }
+            $engine = $browser->getEngine();
 
             if (null === $engine) {
-                $this->logger->debug('engine not detected via regexes, try to get from browser');
-                $engine = $browser->getEngine();
-            }
-
-            if ('unknown' === $engine) {
-                $this->logger->debug('engine not detected via regexes nor from browser');
+                $this->logger->debug('engine not detected from browser');
                 $engine = (new Factory\EngineFactory($this->cache, $engineLoader))->detect($browserUa);
             }
         }
