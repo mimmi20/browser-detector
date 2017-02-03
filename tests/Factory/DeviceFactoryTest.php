@@ -8,6 +8,10 @@ use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
 use BrowserDetector\Factory\NormalizerFactory;
+use Psr\Log\NullLogger;
+use UaDeviceType\Type;
+use UaResult\Company\Company;
+use UaResult\Device\Device;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -50,7 +54,7 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
         $normalizedUa = $normalizer->normalize($userAgent);
 
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = $this->object->detect($normalizedUa);
+        list($result,) = $this->object->detect($normalizedUa);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -14488,5 +14492,43 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
                 'touchscreen',
             ],
         ];
+    }
+
+    public function testToarray()
+    {
+        $logger = new NullLogger();
+
+        $deviceName        = 'TestDevicename';
+        $marketingName     = 'TestMarketingname';
+        $manufacturer      = new Company('unknown', 'unknown');
+        $brand             = new Company('unknown', 'unknown');
+        $type              = new Type('unknown');
+        $pointingMethod    = 'touchscreen';
+        $resolutionWidth   = 480;
+        $resolutionHeight  = 1080;
+        $dualOrientation   = true;
+        $colors            = '68676';
+        $smsSupport        = true;
+        $nfcSupport        = false;
+        $hasQwertyKeyboard = true;
+
+        $original = new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $pointingMethod, $resolutionWidth, $resolutionHeight, $dualOrientation, $colors, $smsSupport, $nfcSupport, $hasQwertyKeyboard);
+
+        $array  = $original->toArray();
+        $object = $this->object->fromArray($logger, $array);
+
+        self::assertSame($deviceName, $object->getDeviceName());
+        self::assertSame($marketingName, $object->getMarketingName());
+        self::assertEquals($manufacturer, $object->getManufacturer());
+        self::assertEquals($brand, $object->getBrand());
+        self::assertEquals($type, $object->getType());
+        self::assertSame($pointingMethod, $object->getPointingMethod());
+        self::assertSame($resolutionWidth, $object->getResolutionWidth());
+        self::assertSame($resolutionHeight, $object->getResolutionHeight());
+        self::assertSame($dualOrientation, $object->getDualOrientation());
+        self::assertSame($colors, $object->getColors());
+        self::assertSame($smsSupport, $object->getSmsSupport());
+        self::assertSame($nfcSupport, $object->getNfcSupport());
+        self::assertSame($hasQwertyKeyboard, $object->getHasQwertyKeyboard());
     }
 }

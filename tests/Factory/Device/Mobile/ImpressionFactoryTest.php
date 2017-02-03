@@ -45,7 +45,7 @@ class ImpressionFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = $this->object->detect($agent);
+        list($result,) = $this->object->detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 

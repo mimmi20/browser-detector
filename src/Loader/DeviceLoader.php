@@ -31,11 +31,10 @@
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use UaDeviceType\TypeLoader;
+use UaResult\Company\CompanyLoader;
 
 /**
  * Device detection class
@@ -93,7 +92,7 @@ class DeviceLoader implements LoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @return \UaResult\Device\DeviceInterface
+     * @return array
      */
     public function load($deviceKey, $useragent = '')
     {
@@ -105,24 +104,7 @@ class DeviceLoader implements LoaderInterface
 
         $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
 
-        $device = $cacheItem->get();
-
-        if (!isset($device->version->class)) {
-            $version = null;
-        } else {
-            $deviceVersionClass = $device->version->class;
-
-            if (!is_string($deviceVersionClass)) {
-                $version = new Version(0);
-            } elseif ('VersionFactory' === $deviceVersionClass) {
-                $version = VersionFactory::detectVersion($useragent, $device->version->search);
-            } else {
-                /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-                $versionClass = new $deviceVersionClass($this->cache);
-                $version      = $versionClass->detectVersion($useragent);
-            }
-        }
-
+        $device      = $cacheItem->get();
         $platformKey = $device->platform;
 
         if (null === $platformKey) {
@@ -133,23 +115,24 @@ class DeviceLoader implements LoaderInterface
 
         $companyLoader = new CompanyLoader($this->cache);
 
-        return new \UaResult\Device\Device(
-            $device->codename,
-            $device->marketingName,
-            $companyLoader->load($device->manufacturer),
-            $companyLoader->load($device->brand),
-            $version,
+        return [
+            new \UaResult\Device\Device(
+                $device->codename,
+                $device->marketingName,
+                $companyLoader->load($device->manufacturer),
+                $companyLoader->load($device->brand),
+                (new TypeLoader($this->cache))->load($device->type),
+                $device->pointingMethod,
+                (int) $device->resolutionWidth,
+                (int) $device->resolutionHeight,
+                (bool) $device->dualOrientation,
+                (int) $device->colors,
+                (bool) $device->smsSupport,
+                (bool) $device->nfcSupport,
+                (bool) $device->hasQwertyKeyboard
+            ),
             $platform,
-            (new TypeLoader($this->cache))->load($device->type),
-            $device->pointingMethod,
-            (int) $device->resolutionWidth,
-            (int) $device->resolutionHeight,
-            (bool) $device->dualOrientation,
-            (int) $device->colors,
-            (bool) $device->smsSupport,
-            (bool) $device->nfcSupport,
-            (bool) $device->hasQwertyKeyboard
-        );
+        ];
     }
 
     /**

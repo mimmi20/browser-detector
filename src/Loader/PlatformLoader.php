@@ -38,6 +38,7 @@ use BrowserDetector\Version\VersionInterface;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use UaResult\Os\Os;
+use UaResult\Company\CompanyLoader;
 
 /**
  * Browser detection class

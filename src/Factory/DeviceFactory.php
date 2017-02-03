@@ -36,6 +36,7 @@ use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
 /**
@@ -47,7 +48,7 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DeviceFactory implements FactoryInterface, FactoryFromInterface
+class DeviceFactory implements FactoryInterface
 {
     /**
      * @var \Psr\Cache\CacheItemPoolInterface|null
@@ -74,7 +75,7 @@ class DeviceFactory implements FactoryInterface, FactoryFromInterface
      *
      * @param string $useragent
      *
-     * @return \UaResult\Device\DeviceInterface
+     * @return array
      */
     public function detect($useragent)
     {
@@ -102,22 +103,13 @@ class DeviceFactory implements FactoryInterface, FactoryFromInterface
     }
 
     /**
-     * @param array $data
+     * @param \Psr\Log\LoggerInterface $logger
+     * @param array                    $data
      *
      * @return \UaResult\Device\DeviceInterface
      */
-    public function fromArray(array $data)
+    public function fromArray(LoggerInterface $logger, array $data)
     {
-        return (new \UaResult\Device\DeviceFactory())->fromArray($data);
-    }
-
-    /**
-     * @param string $json
-     *
-     * @return \UaResult\Device\DeviceInterface
-     */
-    public function fromJson($json)
-    {
-        return (new \UaResult\Device\DeviceFactory())->fromJson($json);
+        return (new \UaResult\Device\DeviceFactory())->fromArray($this->cache, $logger, $data);
     }
 }

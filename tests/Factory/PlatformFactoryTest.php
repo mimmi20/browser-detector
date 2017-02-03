@@ -4,10 +4,14 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\PlatformLoader;
+use BrowserDetector\Version\VersionFactory;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
 use BrowserDetector\Factory\NormalizerFactory;
+use Psr\Log\NullLogger;
+use UaResult\Company\Company;
+use UaResult\Os\Os;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -930,5 +934,27 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 32,
             ],
         ];
+    }
+
+    public function testToarray()
+    {
+        $logger = new NullLogger();
+
+        $name          = 'TestPlatform';
+        $marketingName = 'TestMarketingname';
+        $manufacturer  = new Company('unknown', 'unknown');
+        $version       = (new VersionFactory())->set('0.0.0');
+        $bits          = 64;
+
+        $original = new Os($name, $marketingName, $manufacturer, $version, $bits);
+
+        $array  = $original->toArray();
+        $object = $this->object->fromArray($logger, $array);
+
+        self::assertSame($name, $object->getName());
+        self::assertSame($marketingName, $object->getMarketingName());
+        self::assertEquals($manufacturer, $object->getManufacturer());
+        self::assertEquals($version, $object->getVersion());
+        self::assertSame($bits, $object->getBits());
     }
 }
