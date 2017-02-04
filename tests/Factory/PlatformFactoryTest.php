@@ -4,10 +4,14 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\PlatformLoader;
+use BrowserDetector\Version\VersionFactory;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
 use BrowserDetector\Factory\NormalizerFactory;
+use Psr\Log\NullLogger;
+use UaResult\Company\Company;
+use UaResult\Os\Os;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -219,7 +223,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Wget/1.17.1 (cygwin)',
                 'Cygwin',
                 '0.0.0',
-                'unknown',
+                null,
                 32,
             ],
             [
@@ -352,7 +356,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mozilla/4.77C-SGI [en] (X11; I; IRIX64 6.5 IP30)',
                 'IRIX',
                 '0.0.0',
-                'unknown',
+                null,
                 64,
             ],
             [
@@ -497,9 +501,9 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Microsoft-CryptoAPI/6.3',
-                'unknown',
+                null,
                 '0.0.0',
-                'unknown',
+                null,
                 32,
             ],
             [
@@ -637,23 +641,23 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/5.0 CommonCrawler Node W6YSWFNKODF3CZPDD35IT2L6RYMGKYY3KPEZCTKI6DDCMYEVJZBRYY23GDPZCQW.A.ZNMSHA2FQHEQOZF4KOG43OH2FKIMIUIWH6ZREWD7F6T44AJK.cdn0.common.crawl.zone',
-                'unknown',
+                null,
                 '0.0.0',
-                'unknown',
+                null,
                 32,
             ],
             [
                 'microSearch-Crawler/V1.0.0.730',
-                'unknown',
+                null,
                 '0.0.0',
-                'unknown',
+                null,
                 32,
             ],
             [
                 'DWDS-Crawler +http://odo.dwds.de/dwds-crawler.html',
-                'unknown',
+                null,
                 '0.0.0',
-                'unknown',
+                null,
                 32,
             ],
             [
@@ -723,7 +727,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mozilla/5.0 (X11; NetBSD amd64; rv:43.0) Gecko/20100101 Firefox/43.0',
                 'NetBSD',
                 '0.0.0',
-                'unknown',
+                null,
                 64,
             ],
             [
@@ -786,7 +790,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Opera/9.80 (BREW; Opera Mini/5.0/27.2339; U; en) Presto/2.8.119 320X240 Samsung SCH-U750',
                 'Brew',
                 '0.0.0',
-                'unknown',
+                null,
                 32,
             ],
             [
@@ -877,7 +881,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.1) Gecko/20090725 Moblin/3.5.1-2.5.14.moblin2 Shiretoko/3.5.1',
                 'Moblin',
                 '0.0.0',
-                'unknown',
+                null,
                 32,
             ],
             [
@@ -930,5 +934,27 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 32,
             ],
         ];
+    }
+
+    public function testToarray()
+    {
+        $logger = new NullLogger();
+
+        $name          = 'TestPlatform';
+        $marketingName = 'TestMarketingname';
+        $manufacturer  = new Company('unknown', 'unknown');
+        $version       = (new VersionFactory())->set('0.0.0');
+        $bits          = 64;
+
+        $original = new Os($name, $marketingName, $manufacturer, $version, $bits);
+
+        $array  = $original->toArray();
+        $object = $this->object->fromArray($logger, $array);
+
+        self::assertSame($name, $object->getName());
+        self::assertSame($marketingName, $object->getMarketingName());
+        self::assertEquals($manufacturer, $object->getManufacturer());
+        self::assertEquals($version, $object->getVersion());
+        self::assertSame($bits, $object->getBits());
     }
 }

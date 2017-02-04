@@ -33,6 +33,7 @@ namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Psr\Log\LoggerInterface;
 use UaResult\Os\OsInterface;
 
 /**
@@ -44,7 +45,7 @@ use UaResult\Os\OsInterface;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BrowserFactory implements FactoryInterface, FactoryFromInterface
+class BrowserFactory implements FactoryInterface
 {
     /**
      * @var \Psr\Cache\CacheItemPoolInterface|null
@@ -72,7 +73,7 @@ class BrowserFactory implements FactoryInterface, FactoryFromInterface
      * @param string                   $useragent
      * @param \UaResult\Os\OsInterface $platform
      *
-     * @return \UaResult\Browser\Browser
+     * @return array
      */
     public function detect(
         $useragent,
@@ -2301,22 +2302,13 @@ class BrowserFactory implements FactoryInterface, FactoryFromInterface
     }
 
     /**
-     * @param array $data
+     * @param \Psr\Log\LoggerInterface $logger
+     * @param array                    $data
      *
      * @return \UaResult\Browser\Browser
      */
-    public function fromArray(array $data)
+    public function fromArray(LoggerInterface $logger, array $data)
     {
-        return (new \UaResult\Browser\BrowserFactory())->fromArray($data);
-    }
-
-    /**
-     * @param string $json
-     *
-     * @return \UaResult\Browser\Browser
-     */
-    public function fromJson($json)
-    {
-        return (new \UaResult\Browser\BrowserFactory())->fromJson($json);
+        return (new \UaResult\Browser\BrowserFactory())->fromArray($this->cache, $logger, $data);
     }
 }

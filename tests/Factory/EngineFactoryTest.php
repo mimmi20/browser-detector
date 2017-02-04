@@ -4,10 +4,14 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Version\VersionFactory;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
 use BrowserDetector\Factory\NormalizerFactory;
+use Psr\Log\NullLogger;
+use UaResult\Company\Company;
+use UaResult\Engine\Engine;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -161,5 +165,23 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
                 'Moonchild',
             ],
         ];
+    }
+
+    public function testToarray()
+    {
+        $logger = new NullLogger();
+
+        $name         = 'TestBrowser';
+        $manufacturer = new Company('unknown', 'unknown');
+        $version      = (new VersionFactory())->set('0.0.2-beta');
+
+        $original = new Engine($name, $manufacturer, $version);
+
+        $array  = $original->toArray();
+        $object = $this->object->fromArray($logger, $array);
+
+        self::assertSame($name, $object->getName());
+        self::assertEquals($manufacturer, $object->getManufacturer());
+        self::assertEquals($version, $object->getVersion());
     }
 }

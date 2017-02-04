@@ -35,6 +35,7 @@ use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
 /**
@@ -46,7 +47,7 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class EngineFactory implements FactoryInterface, FactoryFromInterface
+class EngineFactory implements FactoryInterface
 {
     /**
      * @var \Psr\Cache\CacheItemPoolInterface|null
@@ -96,8 +97,9 @@ class EngineFactory implements FactoryInterface, FactoryFromInterface
         } elseif (preg_match('/(goanna)/i', $useragent)) {
             $engineKey = 'goanna';
         } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
-            $chrome  = (new BrowserLoader($this->cache))->load('chrome', $useragent);
-            $version = $chrome->getVersion();
+            /** @var \UaResult\Browser\Browser $chrome */
+            list($chrome) = (new BrowserLoader($this->cache))->load('chrome', $useragent);
+            $version      = $chrome->getVersion();
 
             if (null !== $version) {
                 $chromeVersion = (int) $version->getVersion(VersionInterface::IGNORE_MINOR);
@@ -134,22 +136,13 @@ class EngineFactory implements FactoryInterface, FactoryFromInterface
     }
 
     /**
-     * @param array $data
+     * @param \Psr\Log\LoggerInterface $logger
+     * @param array                    $data
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function fromArray(array $data)
+    public function fromArray(LoggerInterface $logger, array $data)
     {
-        return (new \UaResult\Engine\EngineFactory())->fromArray($data);
-    }
-
-    /**
-     * @param string $json
-     *
-     * @return \UaResult\Engine\EngineInterface
-     */
-    public function fromJson($json)
-    {
-        return (new \UaResult\Engine\EngineFactory())->fromJson($json);
+        return (new \UaResult\Engine\EngineFactory())->fromArray($this->cache, $logger, $data);
     }
 }

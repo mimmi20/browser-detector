@@ -45,7 +45,7 @@ class DesktopFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = $this->object->detect($agent);
+        list($result,) = $this->object->detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -116,8 +116,8 @@ class DesktopFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mozilla/5.0 (Darwin; FreeBSD 5.6; en-GB; rv:1.8.1.17pre) Gecko/20080716 K-Meleon/1.5.0',
                 'general Desktop',
                 'general Desktop',
-                'unknown',
-                'unknown',
+                null,
+                null,
                 'Desktop',
                 false,
                 'mouse',

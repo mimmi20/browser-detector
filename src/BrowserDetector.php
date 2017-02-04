@@ -141,30 +141,25 @@ class BrowserDetector
      */
     private function buildResult(GenericRequest $request)
     {
-        $normalizer = (new NormalizerFactory())->build();
-        $deviceUa   = $normalizer->normalize($request->getDeviceUserAgent());
-        $device     = (new Factory\DeviceFactory($this->cache, new Loader\DeviceLoader($this->cache)))->detect($deviceUa);
-        $browserUa  = $normalizer->normalize($request->getBrowserUserAgent());
-        $platform   = $device->getPlatform();
+        $normalizer              = (new NormalizerFactory())->build();
+        $deviceUa                = $normalizer->normalize($request->getDeviceUserAgent());
+        list($device, $platform) = (new Factory\DeviceFactory($this->cache, new Loader\DeviceLoader($this->cache)))->detect($deviceUa);
+        $browserUa               = $normalizer->normalize($request->getBrowserUserAgent());
 
-        if (null === $platform) {
+        if (null === $platform || in_array($platform->getName(), [null, 'unknown'])) {
             $this->logger->debug('platform not detected from the device');
             $platform = (new Factory\PlatformFactory($this->cache, new Loader\PlatformLoader($this->cache)))->detect($browserUa);
         }
 
-        $browser      = (new Factory\BrowserFactory($this->cache, new Loader\BrowserLoader($this->cache)))->detect($browserUa, $platform);
-        $engineLoader = new Loader\EngineLoader($this->cache);
+        list($browser, $engine) = (new Factory\BrowserFactory($this->cache, new Loader\BrowserLoader($this->cache)))->detect($browserUa, $platform);
+        $engineLoader           = new Loader\EngineLoader($this->cache);
 
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
             $this->logger->debug('engine forced to "webkit" on iOS');
             $engine = $engineLoader->load('webkit', $browserUa);
-        } else {
-            $engine = $browser->getEngine();
-
-            if (null === $engine) {
-                $this->logger->debug('engine not detected from browser');
-                $engine = (new Factory\EngineFactory($this->cache, $engineLoader))->detect($browserUa);
-            }
+        } elseif (null === $engine || in_array($engine->getName(), [null, 'unknown'])) {
+            $this->logger->debug('engine not detected from browser');
+            $engine = (new Factory\EngineFactory($this->cache, $engineLoader))->detect($browserUa);
         }
 
         return new Result(

@@ -68,7 +68,7 @@ class CiotcudFactory implements Factory\FactoryInterface
      *
      * @param string $useragent
      *
-     * @return \UaResult\Device\DeviceInterface
+     * @return array
      */
     public function detect($useragent)
     {

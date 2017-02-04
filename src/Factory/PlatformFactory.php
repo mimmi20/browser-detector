@@ -34,6 +34,7 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Helper;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 use UaResult\Os\OsFactory;
 
@@ -46,7 +47,7 @@ use UaResult\Os\OsFactory;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PlatformFactory implements FactoryInterface, FactoryFromInterface
+class PlatformFactory implements FactoryInterface
 {
     /**
      * @var \Psr\Cache\CacheItemPoolInterface|null
@@ -242,22 +243,13 @@ class PlatformFactory implements FactoryInterface, FactoryFromInterface
     }
 
     /**
-     * @param array $data
+     * @param \Psr\Log\LoggerInterface $logger
+     * @param array                    $data
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function fromArray(array $data)
+    public function fromArray(LoggerInterface $logger, array $data)
     {
-        return (new OsFactory())->fromArray($data);
-    }
-
-    /**
-     * @param string $json
-     *
-     * @return \UaResult\Os\OsInterface
-     */
-    public function fromJson($json)
-    {
-        return (new OsFactory())->fromJson($json);
+        return (new OsFactory())->fromArray($this->cache, $logger, $data);
     }
 }

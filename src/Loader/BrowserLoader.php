@@ -38,6 +38,7 @@ use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
+use UaResult\Company\CompanyLoader;
 
 /**
  * Browser detection class
@@ -95,7 +96,7 @@ class BrowserLoader implements LoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @return \UaResult\Browser\BrowserInterface
+     * @return array
      */
     public function load($browserKey, $useragent = '')
     {
@@ -122,16 +123,18 @@ class BrowserLoader implements LoaderInterface
             $version      = $versionClass->detectVersion($useragent);
         }
 
-        return new Browser(
-            $browser->name,
-            (new CompanyLoader($this->cache))->load($browser->manufacturer),
-            $version,
+        return [
+            new Browser(
+                $browser->name,
+                (new CompanyLoader($this->cache))->load($browser->manufacturer),
+                $version,
+                (new TypeLoader($this->cache))->load($browser->type),
+                (new BrowserBits($useragent))->getBits(),
+                $browser->pdfSupport,
+                $browser->rssSupport
+            ),
             $engineLoader->load($browser->engine, $useragent),
-            (new TypeLoader($this->cache))->load($browser->type),
-            (new BrowserBits($useragent))->getBits(),
-            $browser->pdfSupport,
-            $browser->rssSupport
-        );
+        ];
     }
 
     /**
