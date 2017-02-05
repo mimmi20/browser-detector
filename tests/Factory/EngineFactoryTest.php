@@ -172,7 +172,7 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
         $logger = new NullLogger();
 
         $name         = 'TestBrowser';
-        $manufacturer = new Company('unknown', 'unknown');
+        $manufacturer = new Company('Unknown', null);
         $version      = (new VersionFactory())->set('0.0.2-beta');
 
         $original = new Engine($name, $manufacturer, $version);

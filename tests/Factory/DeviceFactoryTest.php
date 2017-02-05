@@ -14500,8 +14500,8 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
 
         $deviceName        = 'TestDevicename';
         $marketingName     = 'TestMarketingname';
-        $manufacturer      = new Company('unknown', 'unknown');
-        $brand             = new Company('unknown', 'unknown');
+        $manufacturer      = new Company('Unknown', null);
+        $brand             = new Company('Unknown', null);
         $type              = new Type('unknown');
         $pointingMethod    = 'touchscreen';
         $resolutionWidth   = 480;

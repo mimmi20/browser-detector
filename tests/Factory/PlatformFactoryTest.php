@@ -942,7 +942,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
 
         $name          = 'TestPlatform';
         $marketingName = 'TestMarketingname';
-        $manufacturer  = new Company('unknown', 'unknown');
+        $manufacturer  = new Company('Unknown', null);
         $version       = (new VersionFactory())->set('0.0.0');
         $bits          = 64;
 
