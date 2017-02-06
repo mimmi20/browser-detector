@@ -123,13 +123,13 @@ class DeviceLoader implements LoaderInterface
                 $companyLoader->load($device->brand),
                 (new TypeLoader($this->cache))->load($device->type),
                 $device->pointingMethod,
-                (int) $device->resolutionWidth,
-                (int) $device->resolutionHeight,
-                (bool) $device->dualOrientation,
-                (int) $device->colors,
-                (bool) $device->smsSupport,
-                (bool) $device->nfcSupport,
-                (bool) $device->hasQwertyKeyboard
+                $device->resolutionWidth,
+                $device->resolutionHeight,
+                $device->dualOrientation,
+                $device->colors,
+                $device->smsSupport,
+                $device->nfcSupport,
+                $device->hasQwertyKeyboard
             ),
             $platform,
         ];
