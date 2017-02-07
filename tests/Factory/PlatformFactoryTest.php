@@ -333,7 +333,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Opera/9.80 (Linux armv7l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;Vendor/THOM;SW-Version/V8-MT51F01-LF1V307;Cnt/DEU;Lan/bul) Presto/2.12.362 Version/12.11',
-                'Linux Smartphone OS (Maemo)',
+                'Maemo',
                 '0.0.0',
                 'Linux Foundation',
                 32,
@@ -396,7 +396,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/5.0 (X11; U; Linux arm7tdmi; rv:1.8.1.11) Gecko/20071130 Minimo/0.025',
-                'Linux Smartphone OS (Maemo)',
+                'Maemo',
                 '0.0.0',
                 'Linux Foundation',
                 32,
@@ -620,7 +620,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/5.0 (SMART-TV; X11; Linux armv7l) AppleWebKit/537.42 (KHTML, like Gecko) Chromium/25.0.1349.2 Chrome/25.0.1349.2 Safari/537.42',
-                'Linux Smartphone OS (Maemo)',
+                'Maemo',
                 '0.0.0',
                 'Linux Foundation',
                 32,
@@ -932,6 +932,20 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 '8.0.2',
                 'Apple Inc',
                 32,
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 4.01; Windows 3.11)',
+                'Windows 3.11',
+                '0.0.0',
+                'Microsoft Corporation',
+                16,
+            ],
+            [
+                'Mozilla/2.0 (compatible; MSIE 3.0; Windows 3.1)',
+                'Windows 3.1',
+                '0.0.0',
+                'Microsoft Corporation',
+                16,
             ],
         ];
     }

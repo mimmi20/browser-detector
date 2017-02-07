@@ -318,8 +318,8 @@
     }
   },
   "linux smartphone os (maemo)": {
-    "name": "Linux Smartphone OS (Maemo)",
-    "marketingName": "Linux Smartphone OS (Maemo)",
+    "name": "Maemo",
+    "marketingName": "Maemo",
     "manufacturer": "LinuxFoundation",
     "version": {
       "class": "VersionFactory",
@@ -710,6 +710,15 @@
   "windows 3.1": {
     "name": "Windows 3.1",
     "marketingName": "Windows 3.1",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null
+    }
+  },
+  "windows 3.11": {
+    "name": "Windows 3.11",
+    "marketingName": "Windows 3.11",
     "manufacturer": "Microsoft",
     "version": {
       "class": null,
