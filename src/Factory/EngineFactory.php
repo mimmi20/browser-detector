@@ -96,6 +96,8 @@ class EngineFactory implements FactoryInterface
             $engineKey = 'trident';
         } elseif (preg_match('/(goanna)/i', $useragent)) {
             $engineKey = 'goanna';
+        } elseif (preg_match('/(clecko)/i', $useragent)) {
+            $engineKey = 'clecko';
         } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
             /** @var \UaResult\Browser\Browser $chrome */
             list($chrome) = (new BrowserLoader($this->cache))->load('chrome', $useragent);

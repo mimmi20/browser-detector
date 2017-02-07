@@ -164,6 +164,13 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
                 'Moonchild Productions',
                 'Moonchild',
             ],
+            [
+                'NokiaN90-1/3.0545.5.1 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1 (en-US; rv:9.3.3) Clecko/20141026 Classilla/CFM',
+                'Clecko',
+                '9.3.3',
+                null,
+                null,
+            ],
         ];
     }
 

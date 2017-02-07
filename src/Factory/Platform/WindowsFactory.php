@@ -159,6 +159,10 @@ class WindowsFactory implements Factory\FactoryInterface
             return $this->loader->load('windows nt', $useragent);
         }
 
+        if ($s->containsAny(['Windows 3.11'], false)) {
+            return $this->loader->load('windows 3.11', $useragent);
+        }
+
         if ($s->containsAny(['Windows 3.1'], false)) {
             return $this->loader->load('windows 3.1', $useragent);
         }

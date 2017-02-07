@@ -112,6 +112,20 @@ class WindowsFactoryTest extends \PHPUnit_Framework_TestCase
                 'Microsoft Corporation',
                 32,
             ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 4.01; Windows 3.11)',
+                'Windows 3.11',
+                '0.0.0',
+                'Microsoft Corporation',
+                16,
+            ],
+            [
+                'Mozilla/2.0 (compatible; MSIE 3.0; Windows 3.1)',
+                'Windows 3.1',
+                '0.0.0',
+                'Microsoft Corporation',
+                16,
+            ],
         ];
     }
 }
