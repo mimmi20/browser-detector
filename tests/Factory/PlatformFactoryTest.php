@@ -536,7 +536,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/5.0 (Mobile; rv:32.0) Gecko/20100101 Firefox/32.0',
-                'FirefoxOS',
+                'Firefox OS',
                 '2.0.0',
                 'Mozilla Foundation',
                 32,
