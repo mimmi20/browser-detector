@@ -1,0 +1,428 @@
+regexes:
+    ####################################################################################################################
+    # Windows Phone
+    # Edge Mobile
+    - '/^Mozilla\/[\d.]+ ?\((?P<osname>Windows Phone) ?(?P<osversion>[\d.]+); Android [\d.]+; (?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?;? ?(?P<devicecode>[^;\)]+)([^\)]+)?\) AppleWebKit\/[\d.]+ \(KHTML, like Gecko\) Chrome\/(?P<chromeversion>[\d.+]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/[\d.+]+ (?P<browsername>Edge)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # IE Mobile 11
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicetype>Mobile)?;? ?(?P<osname>Windows Phone( OS)?) ?(?P<osversion>[\d.]+); .*(?P<enginename>Trident)\/(?P<engineversion>[\d.+ab]+); Touch; rv:([\d.]+); (.*)?(?P<browsername>IEMobile)\/(?P<browserversion>[\d.+ab]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?;? ?(?P<devicecode>[^;\)]+)?([^\)]+)?\)(?P<unknown>.*)?$/i'
+    # IE Mobile 11 (Desktop Mode)
+    - '/^Mozilla\/[\d.]+ ?\((?P<osname>Windows NT( [\d.]+)?(; ARM)?); .*(?P<enginename>Trident)\/(?P<engineversion>[\d.+ab]+); Touch; rv:([\d.]+)(; ARM)?(; Touch)?;? ?(?P<devicetype>WPDesktop);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?;? ?(?P<devicecode>[^;\)]+)?([^\)]+)?\)(?P<unknown>.*)?$/i'
+    # IE Mobile 6-10
+    - '/^Mozilla\/[\d.]+ ?\(compatible; MSIE ?[\d.+b]+; ?(.*)? ?(?P<osname>Windows Phone( OS)?) ?(?P<osversion>[\d.]+); (?P<enginename>Trident)?\/?(?P<engineversion>[\d.+ab]+)?; (?P<browsername>IEMobile)\/(?P<browserversion>[\d.+ab]+)(; ARM)?(; Touch)?;? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?;? ?(?P<devicecode>[^;\)]+)?([^\)]+)?\)(?P<unknown>.*)?$/i'
+    # IE Mobile 6-10 (Desktop Mode)
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>MSIE) ?(?P<browserversion>[\d.+b]+); ?(.*)? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?); (?P<enginename>Trident)?\/?(?P<engineversion>[\d.+ab]+)?(; ARM)?(; Touch)?;? ?(?P<devicetype>WPDesktop|XBLWP7);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?;? ?(?P<devicecode>[^;\)]+)?([^\)]+)?\)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Android OS
+    # Opera Mobile (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+) (?P<browsername>OPR)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Samsung Browser (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>SamsungBrowser)\/(?P<browserversion>[\d.+ab]+) (Chrome)\/(?P<chromeversion>[\d.]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Silk (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Silk)\/(?P<browserversion>[\d.+ab]+)( like)? (Chrome)\/(?P<chromeversion>[\d.]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # MQQBrowser (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *Version\/([\d.]+) (Chrome)\/(?P<chromeversion>[\d.]+) (?P<devicetype>Mobile|TV)? ?(?P<browsername>MQQBrowser)\/(?P<browserversion>[\d.+ab]+)(.*)(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Baidu Tieba (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *Version\/([\d.]+) (Chrome)\/(?P<chromeversion>[\d.]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+) (?P<browsername>tieba)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Androis Webview (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<version>Version)\/([\d.]+) (?P<browsername>Chrome)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # YaBrowser (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) (?P<browsername>YaBrowser)\/(?P<browserversion>[\d.+ab]+)( \([^\)]+\))? (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Flyflow (Safari based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>FlyFlow)\/(?P<browserversion>[\d.+ab]+) Version\/([\d.]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # YaBrowser (Safari based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>YaBrowser)\/(?P<browserversion>[\d.+ab]+)( \([^\)]+\))? (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Crosswalk (Safari based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) (Mobile|TV)? ?(?P<browsername>Crosswalk)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Chrome
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Chrome|CrMo)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Silk (Safari based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Silk)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Silk (Safari based, Desktop Mode)
+    - '/^Mozilla\/[\d.]+ ?\((?P<osname>Linux); ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Silk)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # UCBrowser (Safari based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(AppleWebKit)\/?([\d.+]+) ?\(KHTML, like Gecko\) *(?P<version>Version)\/([\d.]+) (?P<browsername>UCBrowser)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>U3)\/(?P<engineversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Android Webview (Safari based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<version>Version)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(?P<browsername>Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Android Webview (Safari based, Desktop Mode)
+    - '/^Mozilla\/[\d.]+ ?\((?P<osname>Linux); ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?([\d.+]+) ?\(KHTML, like Gecko\) *Version\/(?P<engineversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(?P<browsername>Safari)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Dolfin
+    - '/^Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Dolphin)\/(INT\-)?(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # IceCat (Browser-UA)
+    - '/^Mozilla\/[\d.]+ ?\(((?P<osname>Android)[ -]?(?P<osversion>[\d.]+)?; )?(Tablet|Mobile); rv:([\d.]+)\) ?(?P<enginename>Gecko)\/(?P<engineversion>[\d.+ab]+) (?P<browsername>IceCat)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Firefox (Browser-UA)
+    - '/^Mozilla\/[\d.]+ ?\(((?P<osname>Android)[ -]?(?P<osversion>[\d.]+)?; )?(Tablet|Mobile); rv:([\d.]+)\) ?(?P<enginename>Gecko)\/(?P<engineversion>[\d.+ab]+) (?P<browsername>Firefox|GranParadiso)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Dalvik
+    - '/^(?P<browsername>Dalvik)\/(?P<browserversion>[\d.+ab]+) ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\)(?P<unknown>.*)?$/i'
+    # Opera Mini
+    - '/^Opera\/[\d.]+ ?\(((?P<osname>Android)[ -]?(?P<osversion>[\d.]+)?; )? ?(?P<browsername>Opera Mini)\/(?P<browserversion>[\d.+ab]+)([^\)]+)?\) (?P<enginename>Presto)\/(?P<engineversion>[\d.+ab]+) Version\/([\d.]+)(?P<unknown>.*)?$/i'
+    # UCBrowser
+    - '/^UCWEB\/[\d.]+ ?\((?P<osname>Linux); Opera Mini\/([^;]+);? ?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) (?P<enginename>U2)\/(?P<engineversion>[\d.+ab]+) (?P<browsername>UCBrowser)\/(?P<browserversion>[\d.+ab]+) Mobile(?P<unknown>.*)?$/i'
+    - '/^JUC ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+)?;?;?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+)([^\)]+)?\) ?(?P<browsername>UCWEB)(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    - '/^JUC ?\(Linux; ?(?P<osversion>[\d.]+)?;?;?(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+)([^\)]+)?\) ?(?P<browsername>UCWEB)(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    - '/^UCWEB\/[\d.]+ ?\((Linux|MIDP\-2\.0); (?P<osname>Adr) ?(?P<osversion>[\d.]+)?; (?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+)([^\)]+)?\) (?P<enginename>U2)\/(?P<engineversion>[\d.+ab]+) (?P<browsername>UCBrowser)\/(?P<browserversion>[\d.+ab]+) U2\/[\d.+]+ (?P<devicetype>Mobile)(?P<unknown>.*)?$/i'
+    # MQQBrowser (Safari based)
+    - '/^(?P<browsername>MQQBrowser)\/(?P<browserversion>[\d.+ab]+)\/Mozilla\/[\d.]+ ?\(Linux; ?(?P<osname>Android)[ -]?(?P<osversion>[\d.]+);? ?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+) Build\/([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *Version\/([\d.]+) (?P<devicetype>Mobile|TV)? ?(.*)(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # iOS
+    # Chrome
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(?P<browsername>CriOS)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)?(\/[^ ]+)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # GSA
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(?P<browsername>GSA)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)?(\/[^ ]+)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Firefox
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(?P<browsername>FxiOS)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)?(\/[^ ]+)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Opera Mini
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(?P<browsername>OPiOS)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)?(\/[^ ]+)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # YaBrowser
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(?P<browsername>YaBrowser)\/(?P<browserversion>[\d.+ab]+)( \([^\)]+\))? (?P<devicetype>Mobile|TV)?(\/[^ ]+)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Opera Coast
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(?P<browsername>Coast)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)?(\/[^ ]+)? ?(Safari)?\/?([\d.]+)?(?P<unknown>.*)?$/i'
+    # YandexMobileBot
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(Version)\/([\d.]+) (?P<devicetype>Mobile|TV)?(\/[^ ]+)? ?(Safari)\/([\d.]+) \(compatible; (?P<browsername>YandexMobileBot)\/(?P<browserversion>[\d.+ab]+); ([^\)]+)?\)(?P<unknown>.*)?$/i'
+    # Puffin
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(Version)\/([\d.]+) (?P<devicetype>Mobile|TV)?(\/[^ ]+)? ?(Safari)\/([\d.]+) (?P<browsername>Puffin)\/(?P<browserversion>[\d.+ab]+)I(P|T)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(?P<devicetype>Mobile|TV)?(\/[^ ]+)? ?(Safari)\/([\d.]+) (?P<browsername>Puffin)\/(?P<browserversion>[\d.+ab]+)(?P<devicecode>I(P|T))(?P<unknown>.*)?$/i'
+    # Facebook App
+    - '/^Mozilla\/[\d.]+ ?\((iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(Mobile)([^\]]+)?\[FBAN\/FBIOS;(?P<browsername>FBAV)\/(?P<browserversion>[\d.+ab]+);FBBV\/[\d.]+;FBRV\/[\d.]+;FBDV\/(?P<devicecode>[^;]+);(?P<unknown>.*)?$/i'
+    # Twitter
+    - '/^Mozilla\/[\d.]+ ?\((iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(Mobile)([^\]]+)? ?(?P<browsername>Twitter)(?P<unknown>.*)?$/i'
+    # Safari
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(Version)\/([\d.]+) (?P<devicetype>Mobile|TV)?(\/[^ ]+)? ?(?P<browsername>Safari)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>iPhone|iPad|iPod( Touch)?); (?P<osname>CPU iPhone OS|CPU OS) ?(?P<osversion>[\d._]+) like Mac OS X([^\)]+)?\) (?P<enginename>AppleWebKit)\/(?P<engineversion>[\d.+ab]+) \(KHTML, like Gecko\) *(?P<browsername>Mobile)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Windows
+    # Edge
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) AppleWebKit\/[\d.]+ \(KHTML, like Gecko\) Chrome\/(?P<chromeversion>[\d.+]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/[\d.+]+ (?P<browsername>Edge)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Opera (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) ?(Safari)\/([\d.]+) (?P<browsername>OPR)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Yowser (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) ?(YaBrowser)\/([\d.]+)( \([^\)]+\))? (?P<browsername>Yowser)\/(?P<browserversion>[\d.+ab]+) (Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # YaBrowser (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) ?(?P<browsername>YaBrowser)\/(?P<browserversion>[\d.+ab]+)( \([^\)]+\))? (Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Iron (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) ?(?P<browsername>Iron)(\/(?P<browserversion>[\d.+ab]+))? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Comodo Dragon (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>(Comodo )?Dragon)(\/(?P<browserversion>[\d.+ab]+)) ?(Chrome)\/(?P<chromeversion>[\d.]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # UCBrwoser (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) ?(?P<browsername>UC?Browser)\/(?P<browserversion>[\d.+ab]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Maxthon (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Maxthon)\/(?P<browserversion>[\d.+ab]+) ?(Chrome)\/(?P<chromeversion>[\d.]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # coc_coc_browser (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>coc_coc_browser)\/(?P<browserversion>[\d.+ab]+) ?(Chrome)\/(?P<chromeversion>[\d.]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Chrome
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Chrome)\/(?P<browserversion>[\d.+ab]+) ?(Safari)?\/?([\d.]+)?(?P<unknown>.*)?$/i'
+    # Maxthon (Safari based)
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Maxthon)\/(?P<browserversion>[\d.+ab]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Safari
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Version)\/(?P<browserversion>[\d.+ab]+) ?(?P<browsername>Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # IE 11
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?; (?P<enginename>Trident)\/(?P<engineversion>[\d.+ab]+)(.*)?;(.*)? ?rv:(?P<browserversion>[\d.+ab]+)([^\)]+)?\) like Gecko(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?; (?P<enginename>Trident)\/(?P<engineversion>[\d.+ab]+)(.*)?; ?rv:(?P<browserversion>[\d.+ab]+)([^\)]+)?\) like Gecko(?P<unknown>.*)?$/i'
+    # IE 6-10
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>MSIE) ?(?P<browserversion>[\d.+b]+); ?(.*)? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\);]+)?; (?P<enginename>Trident)?\/?(?P<engineversion>[\d.+ab]+)?([^\)]+)?\)?(?P<unknown>.*)?$/i'
+    # PaleMoon
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?;? rv:([\d.]+)([^\)]+)?\) ?(Gecko)(\/[\d.]+)? (?P<enginename>Goanna)\/(?P<engineversion>[\d.+ab]+) (Firefox)\/([\d.]+) (?P<browsername>PaleMoon)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?;? rv:(?P<engineversion>[\d.+ab]+)([^\)]+)?\) ?(?P<enginename>Goanna)\/([\d.]+) (Gecko)(\/[\d.]+)?(.*)? (?P<browsername>PaleMoon)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?;? rv:(?P<engineversion>[\d.+ab]+)([^\)]+)?\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>PaleMoon)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Waterfox
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?;? rv:(?P<engineversion>[\d.+ab]+)([^\)]+)?\) ?(?P<enginename>Gecko)(\/[\d.]+)? (Firefox)\/([\d.]+) (?P<browsername>Waterfox)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # IceCat
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?;? rv:(?P<engineversion>[\d.+ab]+)([^\)]+)?\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>IceCat)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Firefox
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?;? rv:(?P<engineversion>[\d.+ab]+)([^\)]+)?\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Firefox|GranParadiso)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Thunderbird
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?(X11)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?;? rv:(?P<engineversion>[\d.+ab]+)([^\)]+)?\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Thunderbird)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Songbird
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Windows)?(X11)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?;? rv:(?P<engineversion>[\d.+ab]+)([^\)]+)?\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Songbird)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Opera (old)
+    - '/^(?P<browsername>Opera)\/[\d.]+ ?\((?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?([^\)]+)?\) (?P<enginename>Presto)\/(?P<engineversion>[\d.+ab]+) Version\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Outlook-Express
+    - '/^(?P<browsername>Outlook\-Express)\/(?P<browserversion>[\d.]+) ?\((MSIE [\d.]+)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?([^\)]+)?([^\)]+)?\) (?P<enginename>Trident)?\/?(?P<engineversion>[\d.+ab]+)?(?P<unknown>.*)?$/i'
+    - '/^(?P<browsername>Outlook\-Express)\/(?P<browserversion>[\d.]+) ?\((MSIE [\d.]+)?;? ?(?P<osname>Windows NT( [\d.]+)?(; ARM)?)(; (WOW64|Win64; x64))?;? ?(?P<enginename>Trident)?\/?(?P<engineversion>[\d.+ab]+)?(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # macOS
+    # Vivaldi
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Macintosh); ?(PPC|Intel) (?P<osname>Mac OS X) ?(?P<osversion>[\d._]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+) (?P<browsername>Vivaldi)\/(?P<browserversion>[\d.+ab]+)(.*)/'
+    # Chrome
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Macintosh); ?(PPC|Intel) (?P<osname>Mac OS X) ?(?P<osversion>[\d._]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Chrome)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(.*)/'
+    # Safari
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Macintosh); ?(PPC|Intel) (?P<osname>Mac OS X) ?(?P<osversion>[\d._]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *Version\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(?P<browsername>Safari)\/([\d.]+)(.*)/'
+    # Firefox
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Macintosh); ?(PPC|Intel) (?P<osname>Mac OS X) ?(?P<osversion>[\d._]+);? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Firefox|GranParadiso)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Thunderbird
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Macintosh); ?(PPC|Intel) (?P<osname>Mac OS X) ?(?P<osversion>[\d._]+);? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Thunderbird)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # OmniWeb
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>Macintosh); ?(PPC|Intel) (?P<osname>Mac OS X) ?(?P<osversion>[\d._]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko(, Safari(\/[\d.+]+)?)?\) (?P<browsername>OmniWeb)\/v?(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Darwin
+    # Safari
+    - '/^(?P<browsername>(Mobile)?Safari)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # BSNBrowserLite
+    - '/^(?P<browsername>BSNBrowserLite)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # iCab
+    - '/^(?P<browsername>iCab(Mobile)?)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # browseripad
+    - '/^(?P<browsername>browseripad)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Mercury
+    - '/^(?P<browsername>Mercury)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Opera Coast
+    - '/^(?P<browsername>Opera%20Coast)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Mail
+    - '/^(?P<browsername>Mail)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # AdSheet
+    - '/^(?P<browsername>AdSheet)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Appcent
+    - '/^(?P<browsername>Appcent)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Appzilla3
+    - '/^(?P<browsername>Appzilla3)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # AtomicBrowser
+    - '/^(?P<browsername>AtomicBrowser)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # com.apple.WebKit.Networking
+    - '/^(?P<browsername>com\.apple\.WebKit\.Networking)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # com.apple.WebKit.WebContent
+    - '/^(?P<browsername>com\.apple\.WebKit\.WebContent)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # com.apple.mobilenotes.SharingExtension
+    - '/^(?P<browsername>com\.apple\.mobilenotes\.SharingExtension)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # CSN Philly
+    - '/^(?P<browsername>CSN%20Philly)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # DealsFREE
+    - '/^(?P<browsername>DealsFREE)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Differences
+    - '/^(?P<browsername>Differences)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # FastBrowser
+    - '/^(?P<browsername>FastBrowser)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Flint
+    - '/^(?P<browsername>Flint)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # GolfLogix
+    - '/^(?P<browsername>GolfLogix)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Free Video Downloader
+    - '/^(?P<browsername>Free%20Video%20Downloader)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Google App
+    - '/^(?P<browsername>Google)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # GroupMe
+    - '/^(?P<browsername>GroupMe)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # iDownlaoder
+    - '/^(?P<browsername>iDownlaoder)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # iHeartRadio
+    - '/^(?P<browsername>iHeartRadio)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # iMangaX
+    - '/^(?P<browsername>iMangaX)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Instagram
+    - '/^(?P<browsername>Instagram)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Kenshoo
+    - '/^(?P<browsername>Kenshoo)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Lingo
+    - '/^(?P<browsername>Lingo)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # MobileTestLab
+    - '/^(?P<browsername>MobileTestLab)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # PacMan
+    - '/^(?P<browsername>PacMan)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Perfect Browser
+    - '/^(?P<browsername>Perfect%20Browser)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Puffin
+    - '/^(?P<browsername>Puffin)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Reeder
+    - '/^(?P<browsername>Reeder)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Rhapsody
+    - '/^(?P<browsername>Rhapsody)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Spillo
+    - '/^(?P<browsername>Spillo)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # UCBrowserHD
+    - '/^(?P<browsername>UCBrowserHD)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # VideoDownloaderDevstarPro
+    - '/^(?P<browsername>VideoDownloaderDevstarPro)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # YJTop
+    - '/^(?P<browsername>YJTop)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # TestApp
+    - '/^(?P<browsername>TestApp)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Pinterest
+    - '/^(?P<browsername>Pinterest)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Stitcher
+    - '/^(?P<browsername>Stitcher)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Mark Levin Show
+    - '/^(?P<browsername>Mark%20Levin%20Show)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # The Dan Patrick Show
+    - '/^(?P<browsername>The%20Dan%20Patrick%20Show)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # 77 WABC
+    - '/^(?P<browsername>77%20WABC)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # KNBR 680
+    - '/^(?P<browsername>KNBR%20680)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # PodcastOne
+    - '/^(?P<browsername>PodcastOne)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # AudioBoom
+    - '/^(?P<browsername>AudioBoom)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Sports Talk 1050
+    - '/^(?P<browsername>Sports%20Talk%201050)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # PodCruncher
+    - '/^(?P<browsername>PodCruncher)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # RSSRadio
+    - '/^(?P<browsername>RSSRadio)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Antenna
+    - '/^(?P<browsername>Antenna)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # ESPN Radio
+    - '/^(?P<browsername>ESPN%20Radio)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # MusicDownloader/MusicDownloaderLite
+    - '/^(?P<browsername>MusicDownloader(Lite)?)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # PodWrangler
+    - '/^(?P<browsername>PodWrangler)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Custom
+    - '/^(?P<browsername>Custom)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # GoodReader4
+    - '/^(?P<browsername>GoodReader\d?)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Free-Podcasts
+    - '/^(?P<browsername>Free\-Podcasts)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # TopPodcasts
+    - '/^(?P<browsername>TopPodcasts(Pro)?)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # BB_Work_Connect
+    - '/^(?P<browsername>BB_Work_Connect)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Unibox
+    - '/^(?P<browsername>Unibox)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # textPlusCA
+    - '/^(?P<browsername>textPlusCA)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # MxBrowser-iPhone
+    - '/^(?P<browsername>MxBrowser\-iPhone)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # MailBuzzr for Hotmail
+    - '/^(?P<browsername>MailBuzzr%20for%20Hotmail)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # CloudyTabs
+    - '/^(?P<browsername>CloudyTabs)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Fat%20Face
+    - '/^(?P<browsername>Fat%20Face)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # ksmobilebrowser
+    - '/^(?P<browsername>ksmobilebrowser)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Crawler (unknown version)
+    - '/^(?P<browsername>Crawler \(unknown version\))\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # onesafe iOS
+    - '/^(?P<browsername>onesafe%20iOS)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # httpscheck (unknown version)
+    - '/^(?P<browsername>httpscheck \(unknown version\))\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # RoboForm
+    - '/^(?P<browsername>RoboForm)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    # Seznam.cz
+    - '/^(?P<browsername>Seznam\.cz)\/(?P<browserversion>[\d.+ab]+) (?P<enginename>CFNetwork)\/(?P<engineversion>[\d.+ab]+) (?P<osname>Darwin)\/(?P<osversion>[\d._]+)( \((?P<osbits>x86_64|i386|i686 on x86_64)\))?( \((?P<devicecode>[^\)]+)\))?(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Ubuntu
+    # Chrome
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Ubuntu; Linux ?(i386|i686|i686 on x86_64|x86_64|sparc64)?)\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Chrome)\/(?P<browserversion>[\d.+ab]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Chrome OS
+    # Chrome
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>CrOS) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?([^\)]+)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Chrome)\/(?P<browserversion>[\d.+ab]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Linux
+    # Midori
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) ?(Safari)\/([\d.]+) (?P<browsername>Midori)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) (?P<browsername>Midori)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # QupZilla (Chrome based)
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>QupZilla)\/(?P<browserversion>[\d.+ab]+) (Chrome)\/(?P<chromeversion>[\d.]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Vivaldi
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(Chrome)\/(?P<chromeversion>[\d.]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+) (?P<browsername>Vivaldi)\/(?P<browserversion>[\d.+ab]+)(.*)/'
+    # Chrome
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Chrome)\/(?P<browserversion>[\d.+ab]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Arora (Safari based)
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>Arora)\/(?P<browserversion>[\d.+ab]+) ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Iceweasel
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (Firefox)\/([\d.]+) (?P<browsername>Iceweasel)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # PaleMoon
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? rv:([\d.]+)\) ?(Gecko)(\/[\d.]+)? (?P<enginename>Goanna)\/(?P<engineversion>[\d.+ab]+) (Firefox)\/([\d.]+) (?P<browsername>PaleMoon)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>PaleMoon)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Kazehakase
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? ?rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Kazehakase)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # IceCat
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>IceCat)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Iceape
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Iceape)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Firefox
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Firefox|GranParadiso)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Thunderbird
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Thunderbird)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Tizen
+    # Samsung Browser (Safari based)
+    - '/^Mozilla\/[\d.]+ ?\(Linux; (?P<osname>Tizen) (?P<osversion>[\d._]+)(;(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+))?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>SamsungBrowser)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\(SMART\-TV; Linux; (?P<osname>Tizen) (?P<osversion>[\d._]+)(;(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+))?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<browsername>SamsungBrowser)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\((SMART\-TV; )?Linux; (?P<osname>Tizen) (?P<osversion>[\d._]+)(;(?P<manufacturercode>HTC|Nokia|Microsoft|Samsung|ZTE|LG|BLU|Dell|Huawei|Archos|Allview|xbox|Lenovo|micromax|gfive|coolpad|odys|phicomm|oysters|kiano|keneksi|pantech|modecom|starway|philips|texet|kazam|cosmote|digma|arnova|asus|hp|thl|sony(ericsson)?|phicomm)?([ _\-])?(?P<devicecode>[a-zA-Z0-9\-\(\)\/\.\+_# ]+))?\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) *(?P<version>Version)\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(?P<browsername>Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    # Opera Mini (old)
+    - '/^Opera\/[\d.]+ ?\(((?P<osname>Tizen) ?(?P<osversion>[\d.]+)?; )? ?(?P<browsername>Opera Mini)\/(?P<browserversion>[\d.+ab]+)([^;]+)?;?\) (?P<enginename>Presto)\/(?P<engineversion>[\d.+ab]+) Version\/([\d.]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # FreeBSD
+    # Kazehakase
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>FreeBSD) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (Firefox)\/([\d.]+) (?P<browsername>Kazehakase)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>FreeBSD) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Kazehakase)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Firefox
+    - '/^Mozilla\/[\d.]+ ?\(X11;? (?P<osname>FreeBSD) ?(i386|i686|i686 on x86_64|x86_64|sparc64)?;? rv:(?P<engineversion>[\d.+ab]+)\) ?(?P<enginename>Gecko)(\/[\d.]+)? (?P<browsername>Firefox)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Blackberry
+    - '/^Mozilla\/[\d.]+ ?\((?P<osname>BB10); (?P<devicecode>Kbd|Touch)\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\((?P<osname>BlackBerry); (?P<devicecode>[^\)]+)\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) Version\/(?P<browserversion>[\d.+ab]+) (?P<devicetype>Mobile|TV)? ?(?P<browsername>Safari)\/([\d.]+)(?P<unknown>.*)?$/i'
+    - '/^(?P<manufacturercode>BlackBerry)(?P<devicecode>[^\/]+)\/(?P<osversion>[\d.+]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Nokia (old)
+    - '/^(?P<manufacturercode>Nokia)(?P<devicecode>[^\/]+)\/.* Mozilla\/[\d.]+ ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) (?P<browsername>Safari)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # BrowserNG
+    - '/^Mozilla\/[\d.]+ ?\((?P<osname>Symbian(OS)?)\/(?P<osversion>[\d.+]+); Series60\/[\d.+]+ (?P<manufacturercode>Nokia)(?P<devicecode>[^\/]+)\/[^\)]+\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) Version\/[\d.+]+ (?P<browsername>BrowserNG)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # NokiaBrowser
+    - '/^Mozilla\/[\d.]+ ?\((?P<osname>Symbian(OS)?)\/(?P<osversion>[\d.+]+); Series60\/[\d.+]+ (?P<manufacturercode>Nokia)(?P<devicecode>[^\/]+)\/[^\)]+\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) (?P<browsername>NokiaBrowser)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # UCBrowser
+    - '/^UCWEB\/[\d.]+ ?\((?P<osname>Java); MIDP\-2\.0; (?P<manufacturercode>Nokia)(?P<devicecode>[^\/\)]+)\) (?P<enginename>U2)\/(?P<engineversion>[\d.+ab]+) (?P<browsername>UCBrowser)\/(?P<browserversion>[\d.+ab]+) U2\/[\d.+]+ (?P<devicetype>Mobile)(?P<unknown>.*)?$/i'
+    - '/^UCWEB\/[\d.]+ ?\((?P<osname>Symbian(OS)?); .* (?P<manufacturercode>Nokia)(?P<devicecode>[^\/\)]+)\) (?P<enginename>U2)\/(?P<engineversion>[\d.+ab]+) (?P<browsername>UCBrowser)\/(?P<browserversion>[\d.+ab]+) U2\/[\d.+]+ (?P<devicetype>Mobile)(?P<unknown>.*)?$/i'
+    - '/^(?P<manufacturercode>Nokia)(?P<devicecode>[^\/]+)\/.* UCWEB\/.* (?P<enginename>U2)\/(?P<engineversion>[\d.+ab]+) (?P<browsername>UCBrowser)\/(?P<browserversion>[\d.+ab]+) U2\/[\d.+]+ (?P<devicetype>Mobile)(?P<unknown>.*)?$/i'
+    # Safari
+    - '/^Mozilla\/[\d.]+ ?\((?P<osname>Symbian(OS)?)\/(?P<osversion>[\d.+]+); Series60\/[\d.+]+ (?P<manufacturercode>Nokia)(?P<devicecode>[^\/]+)\/[^\)]+\) ?(?P<enginename>AppleWebKit)\/?(?P<engineversion>[\d.+ab]+) ?\(KHTML, like Gecko\) (?P<browsername>Safari)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Playstation
+    - '/^Mozilla\/[\d.]+ ?\((?P<devicecode>PLAYSTATION (3|4)); [\d.]+\)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Google Bot
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>Googlebot(\-Mobile)?)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    - '/^DoCoMo\/[\d.]+ (?P<devicecode>([^\(]+))\(([^\)]+)?\) ?\(compatible; (?P<browsername>Googlebot(\-Mobile)?)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    - '/^(?P<devicecode>([^\/]+))\/[\d.]+ Profile\/MIDP\-[\d.]+ Configuration\/CLDC\-[\d.]+ UP\.Browser\/[\d.]+ \(GUI\) MMP\/[\d.]+ ?\(compatible; (?P<browsername>Googlebot(\-Mobile)?)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # Mail.ru Bot
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<osname>Linux) ?(i386|i686|i686 on x86_64|x86_64|sparc64)??;?(?P<browsername>Mail\.RU_Bot)(\/Fast)?\/(?P<browserversion>[\d.+ab]+)?(?P<unknown>.*)?$/i'
+    ####################################################################################################################
+    # general Crawlers
+    # Sistrix
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>SISTRIX Crawler)([^\)]+)?\)(?P<unknown>.*)?$/i'
+    # Ezooms
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>Ezooms)\/(?P<browserversion>[\d.+ab]+)([^\)]+)?\)(?P<unknown>.*)?$/i'
+    # NLCrawler
+    - '/^(?P<browsername>NL\-Crawler)(?P<unknown>.*)?$/i'
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>NLCrawler)\/(?P<browserversion>[\d.+ab]+); (?P<osname>Linux)([^\)]+)?\) ?(?P<enginename>KHTML)\/([\d.+]+)(?P<unknown>.*)?$/i'
+    # CommonCrawler Node
+    - '/^Mozilla\/[\d.]+ ?(?P<browsername>CommonCrawler Node)(?P<unknown>.*)?$/i'
+    # grapeFX
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>grapeFX)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # GrapeshotCrawler
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>GrapeshotCrawler)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # niki-bot
+    - '/^(?P<browsername>niki\-bot)(?P<unknown>.*)?$/i'
+    # ContextAd Bot
+    - '/^(?P<browsername>ContextAd Bot) (?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # WordPress
+    - '/^(?P<browsername>WordPress)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # integrity
+    - '/^(?P<browsername>integrity)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # SecurityResearch.bot
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>SecurityResearch\.bot)(?P<unknown>.*)?$/i'
+    # contactbigdatafr
+    - '/^(.*)(?P<browsername>contactbigdatafr)(?P<unknown>.*)?$/i'
+    # yacybot
+    - '/^(?P<browsername>yacybot)(?P<unknown>.*)?$/i'
+    # Online Virus Scanner
+    - '/^(?P<browsername>Online Virus Scanner)(?P<unknown>.*)?$/i'
+    # UniversalFeedParser
+    - '/^(?P<browsername>UniversalFeedParser)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Java
+    - '/^(?P<browsername>Java)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # masscan
+    - '/^(?P<browsername>masscan)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # ZmEu
+    - '/^(?P<browsername>ZmEu)(?P<unknown>.*)?$/i'
+    # woobot
+    - '/^(?P<browsername>woobot)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # Sogou web spider
+    - '/^(?P<browsername>Sogou web spider)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+    # proximic
+    - '/^Mozilla\/[\d.]+ ?\(compatible; (?P<browsername>proximic)(?P<unknown>.*)?$/i'
+    # DomainCrawler
+    - '/^(?P<browsername>DomainCrawler)\/(?P<browserversion>[\d.+ab]+)(?P<unknown>.*)?$/i'
+

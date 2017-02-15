@@ -143,16 +143,48 @@ class BrowserDetector
     {
         $normalizer              = (new NormalizerFactory())->build();
         $deviceUa                = $normalizer->normalize($request->getDeviceUserAgent());
-        list($device, $platform) = (new Factory\DeviceFactory($this->cache, new Loader\DeviceLoader($this->cache)))->detect($deviceUa);
-        $browserUa               = $normalizer->normalize($request->getBrowserUserAgent());
+
+        $regexFactory = new Factory\RegexFactory($this->cache, $this->logger);
+
+        /** @var \UaResult\Device\DeviceInterface $device */
+        /** @var \UaResult\Os\OsInterface $platform */
+        try {
+            $regexFactory->detect($deviceUa);
+            list($device, $platform) = $regexFactory->getDevice();
+        } catch (Loader\NotFoundException $e) {
+            $this->logger->info($e);
+            $device   = null;
+            $platform = null;
+        } catch (Factory\Regex\NoMatchException $e) {
+            $device   = null;
+            $platform = null;
+        } catch (\InvalidArgumentException $e) {
+            $this->logger->error($e);
+            $device   = null;
+            $platform = null;
+        } catch (\Exception $e) {
+            $this->logger->critical($e);
+            $device   = null;
+            $platform = null;
+        }
+
+        if (null === $device) {
+            $this->logger->debug('device not detected via regexes');
+            list($device, $platform) = (new Factory\DeviceFactory($this->cache, new Loader\DeviceLoader($this->cache)))->detect($deviceUa);
+        }
+
+        $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
 
         if (null === $platform || in_array($platform->getName(), [null, 'unknown'])) {
             $this->logger->debug('platform not detected from the device');
             $platform = (new Factory\PlatformFactory($this->cache, new Loader\PlatformLoader($this->cache)))->detect($browserUa);
         }
 
+        /** @var \UaResult\Browser\BrowserInterface $browser */
+        /** @var \UaResult\Engine\EngineInterface $engine */
         list($browser, $engine) = (new Factory\BrowserFactory($this->cache, new Loader\BrowserLoader($this->cache)))->detect($browserUa, $platform);
         $engineLoader           = new Loader\EngineLoader($this->cache);
+
 
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
             $this->logger->debug('engine forced to "webkit" on iOS');
