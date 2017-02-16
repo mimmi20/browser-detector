@@ -165,7 +165,7 @@ class RegexFactory implements FactoryInterface
         }
 
         if ($deviceLoader->has($deviceCode)) {
-            /**  */
+            /** @var \UaResult\Device\DeviceInterface $device */
             list($device) = $deviceLoader->load($deviceCode, $this->useragent);
 
             if (!in_array($device->getDeviceName(), ['unknown', null])) {
@@ -346,7 +346,8 @@ class RegexFactory implements FactoryInterface
         }
 
         if ($browserLoader->has($browserCode)) {
-            $browser = $browserLoader->load($browserCode, $this->useragent);
+            /** @var \UaResult\Browser\BrowserInterface $browser */
+            list($browser) = $browserLoader->load($browserCode, $this->useragent);
 
             if (!in_array($browser->getName(), ['unknown', null])) {
                 return $browser;
