@@ -35,6 +35,7 @@ use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use UaDeviceType\TypeLoader;
 use UaResult\Company\CompanyLoader;
+use UaResult\Device\Device;
 
 /**
  * Device detection class
@@ -116,7 +117,7 @@ class DeviceLoader implements LoaderInterface
         $companyLoader = new CompanyLoader($this->cache);
 
         return [
-            new \UaResult\Device\Device(
+            new Device(
                 $device->codename,
                 $device->marketingName,
                 $companyLoader->load($device->manufacturer),
