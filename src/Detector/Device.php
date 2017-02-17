@@ -34,10 +34,10 @@ namespace BrowserDetector\Detector;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\Regex\NoMatchException;
 use BrowserDetector\Factory\RegexFactory;
-use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\NotFoundException;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
+use UaResult\Os\Os;
 
 /**
  * Browser Detection class
@@ -70,6 +70,11 @@ class Device
     private $regexFactory = null;
 
     /**
+     * @var \BrowserDetector\Factory\DeviceFactory
+     */
+    private $deviceFactory = null;
+
+    /**
      * sets the cache used to make the detection faster
      *
      * @param \Psr\Cache\CacheItemPoolInterface     $cache
@@ -79,11 +84,13 @@ class Device
     public function __construct(
         CacheItemPoolInterface $cache,
         LoggerInterface $logger,
-        RegexFactory $regexFactory
+        RegexFactory $regexFactory,
+        DeviceFactory $deviceDactory
     ) {
-        $this->cache        = $cache;
-        $this->logger       = $logger;
-        $this->regexFactory = $regexFactory;
+        $this->cache         = $cache;
+        $this->logger        = $logger;
+        $this->regexFactory  = $regexFactory;
+        $this->deviceFactory = $deviceDactory;
     }
 
     /**
@@ -118,12 +125,17 @@ class Device
             $platform = null;
         }
 
-        if (null === $device) {
-            $this->logger->debug('device not detected via regexes');
+        $this->logger->debug('device not detected via regexes');
 
-            return (new DeviceFactory($this->cache, new DeviceLoader($this->cache)))->detect($deviceUa);
+        try {
+            return $this->deviceFactory->detect($deviceUa);
+        } catch (NotFoundException $e) {
+            $this->logger->info($e);
         }
 
-        return [];
+        return [
+            new \UaResult\Device\Device(null, null),
+            new Os(null, null),
+        ];
     }
 }

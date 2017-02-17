@@ -35,7 +35,6 @@ use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Factory\Regex\NoMatchException;
 use BrowserDetector\Factory\RegexFactory;
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Loader\PlatformLoader;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
 
@@ -70,20 +69,28 @@ class Os
     private $regexFactory = null;
 
     /**
+     * @var \BrowserDetector\Factory\PlatformFactory
+     */
+    private $platformFactory = null;
+
+    /**
      * sets the cache used to make the detection faster
      *
-     * @param \Psr\Cache\CacheItemPoolInterface     $cache
-     * @param \Psr\Log\LoggerInterface              $logger
-     * @param \BrowserDetector\Factory\RegexFactory $regexFactory
+     * @param \Psr\Cache\CacheItemPoolInterface        $cache
+     * @param \Psr\Log\LoggerInterface                 $logger
+     * @param \BrowserDetector\Factory\RegexFactory    $regexFactory
+     * @param \BrowserDetector\Factory\PlatformFactory $platformFactory
      */
     public function __construct(
         CacheItemPoolInterface $cache,
         LoggerInterface $logger,
-        RegexFactory $regexFactory
+        RegexFactory $regexFactory,
+        PlatformFactory $platformFactory
     ) {
-        $this->cache        = $cache;
-        $this->logger       = $logger;
-        $this->regexFactory = $regexFactory;
+        $this->cache           = $cache;
+        $this->logger          = $logger;
+        $this->regexFactory    = $regexFactory;
+        $this->platformFactory = $platformFactory;
     }
 
     /**
@@ -114,7 +121,13 @@ class Os
 
         if (null === $platform || in_array($platform->getName(), [null, 'unknown'])) {
             $this->logger->debug('platform not detected from the device nor from regex');
-            $platform = (new PlatformFactory($this->cache, new PlatformLoader($this->cache)))->detect($browserUa);
+
+            try {
+                $platform = $this->platformFactory->detect($browserUa);
+            } catch (NotFoundException $e) {
+                $this->logger->info($e);
+                $platform = new \UaResult\Os\Os(null, null);
+            }
         }
 
         return $platform;

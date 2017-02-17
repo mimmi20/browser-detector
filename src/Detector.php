@@ -32,6 +32,9 @@
 namespace BrowserDetector;
 
 use BrowserDetector\Factory\NormalizerFactory;
+use BrowserDetector\Factory\PlatformFactory;
+use BrowserDetector\Loader\DeviceLoader;
+use BrowserDetector\Loader\PlatformLoader;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
 use UaResult\Result\Result;
@@ -75,6 +78,11 @@ class Detector
     private $regexFactory = null;
 
     /**
+     * @var null
+     */
+    private $deviceFactory = null;
+
+    /**
      * sets the cache used to make the detection faster
      *
      * @param \Psr\Cache\CacheItemPoolInterface $cache
@@ -111,6 +119,18 @@ class Detector
     }
 
     /**
+     * @return \BrowserDetector\Factory\DeviceFactory
+     */
+    public function getDeviceFactory()
+    {
+        if (null === $this->deviceFactory) {
+            $this->deviceFactory = new Factory\DeviceFactory($this->cache, new DeviceLoader($this->cache));
+        }
+
+        return $this->deviceFactory;
+    }
+
+    /**
      * Gets the information about the browser by User Agent
      *
      * @param string|array|\Wurfl\Request\GenericRequest $request
@@ -123,17 +143,19 @@ class Detector
             $request = $this->buildRequest($request);
         }
 
-        $regexFactory = $this->getRegexFactory();
-        $deviceUa     = $this->getNormalizer()->normalize($request->getDeviceUserAgent());
+        $regexFactory  = $this->getRegexFactory();
+        $deviceFactory = $this->getDeviceFactory();
+        $deviceUa      = $this->getNormalizer()->normalize($request->getDeviceUserAgent());
 
         /** @var \UaResult\Device\DeviceInterface $device */
         /** @var \UaResult\Os\OsInterface $platform */
-        list($device, $platform) = (new Detector\Device($this->cache, $this->logger, $regexFactory))->detect($deviceUa);
+        list($device, $platform) = (new Detector\Device($this->cache, $this->logger, $regexFactory, $deviceFactory))->detect($deviceUa);
 
         $browserUa = $this->getNormalizer()->normalize($request->getBrowserUserAgent());
 
         if (null === $platform || in_array($platform->getName(), [null, 'unknown'])) {
-            $platform = (new Detector\Os($this->cache, $this->logger, $regexFactory))->detect($browserUa);
+            $platformFactory = new PlatformFactory($this->cache, new PlatformLoader($this->cache));
+            $platform        = (new Detector\Os($this->cache, $this->logger, $regexFactory, $platformFactory))->detect($browserUa);
         }
 
         /** @var \UaResult\Browser\BrowserInterface $browser */
