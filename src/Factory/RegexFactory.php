@@ -167,12 +167,12 @@ class RegexFactory implements FactoryInterface
 
         if ($deviceLoader->has($deviceCode)) {
             /** @var \UaResult\Device\DeviceInterface $device */
-            list($browser, $engine) = $deviceLoader->load($deviceCode, $this->useragent);
+            list($device, $platform) = $deviceLoader->load($deviceCode, $this->useragent);
 
             if (!in_array($device->getDeviceName(), ['unknown', null])) {
                 $this->logger->debug('device detected via devicecode');
 
-                return [$browser, $engine];
+                return [$device, $platform];
             }
         }
 
