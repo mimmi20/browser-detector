@@ -126,8 +126,8 @@ class RegexFactory implements FactoryInterface
     }
 
     /**
-     * @return array
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @return array
      */
     public function getDevice()
     {
