@@ -77,9 +77,10 @@ class Device
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \Psr\Cache\CacheItemPoolInterface     $cache
-     * @param \Psr\Log\LoggerInterface              $logger
-     * @param \BrowserDetector\Factory\RegexFactory $regexFactory
+     * @param \Psr\Cache\CacheItemPoolInterface      $cache
+     * @param \Psr\Log\LoggerInterface               $logger
+     * @param \BrowserDetector\Factory\RegexFactory  $regexFactory
+     * @param \BrowserDetector\Factory\DeviceFactory $deviceDactory
      */
     public function __construct(
         CacheItemPoolInterface $cache,

@@ -135,6 +135,10 @@ class RegexFactory implements FactoryInterface
             throw new \InvalidArgumentException('no useragent was set');
         }
 
+        if (!is_array($this->match)) {
+            throw new \InvalidArgumentException('please call the detect function before trying to get the result');
+        }
+
         if (!array_key_exists('devicecode', $this->match) || '' === $this->match['devicecode']) {
             throw new Regex\NoMatchException('device not detected via regexes');
         }
@@ -216,6 +220,10 @@ class RegexFactory implements FactoryInterface
             throw new \InvalidArgumentException('no useragent was set');
         }
 
+        if (!is_array($this->match)) {
+            throw new \InvalidArgumentException('please call the detect function before trying to get the result');
+        }
+
         $platformLoader = new PlatformLoader($this->cache);
 
         if (!array_key_exists('osname', $this->match)
@@ -286,6 +294,10 @@ class RegexFactory implements FactoryInterface
     {
         if (null === $this->useragent) {
             throw new \InvalidArgumentException('no useragent was set');
+        }
+
+        if (!is_array($this->match)) {
+            throw new \InvalidArgumentException('please call the detect function before trying to get the result');
         }
 
         if (!array_key_exists('browsername', $this->match) || '' === $this->match['browsername']) {
@@ -367,6 +379,10 @@ class RegexFactory implements FactoryInterface
     {
         if (null === $this->useragent) {
             throw new \InvalidArgumentException('no useragent was set');
+        }
+
+        if (!is_array($this->match)) {
+            throw new \InvalidArgumentException('please call the detect function before trying to get the result');
         }
 
         if (!array_key_exists('enginename', $this->match) || '' === $this->match['enginename']) {
