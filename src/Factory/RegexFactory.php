@@ -80,6 +80,11 @@ class RegexFactory implements FactoryInterface
     private $loader = null;
 
     /**
+     * @var bool
+     */
+    private $runDetection = false;
+
+    /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
      * @param \Psr\Log\LoggerInterface          $logger
      */
@@ -98,7 +103,6 @@ class RegexFactory implements FactoryInterface
      * @throws \BrowserDetector\Loader\NotFoundException
      * @throws \InvalidArgumentException
      * @throws \BrowserDetector\Factory\Regex\NoMatchException
-     * @return bool
      */
     public function detect($useragent)
     {
@@ -118,10 +122,13 @@ class RegexFactory implements FactoryInterface
                 $this->logger->debug('a regex matched');
                 $this->match = $matches;
 
-                return true;
+                $this->runDetection = true;
+
+                return;
             }
         }
 
+        $this->runDetection = true;
         throw new Regex\NoMatchException('no regex did match');
     }
 
@@ -133,6 +140,10 @@ class RegexFactory implements FactoryInterface
     {
         if (null === $this->useragent) {
             throw new \InvalidArgumentException('no useragent was set');
+        }
+
+        if (!is_array($this->match) && $this->runDetection) {
+            throw new NotFoundException('device not found via regexes');
         }
 
         if (!is_array($this->match)) {
@@ -220,6 +231,10 @@ class RegexFactory implements FactoryInterface
             throw new \InvalidArgumentException('no useragent was set');
         }
 
+        if (!is_array($this->match) && $this->runDetection) {
+            throw new NotFoundException('platform not found via regexes');
+        }
+
         if (!is_array($this->match)) {
             throw new \InvalidArgumentException('please call the detect function before trying to get the result');
         }
@@ -294,6 +309,10 @@ class RegexFactory implements FactoryInterface
     {
         if (null === $this->useragent) {
             throw new \InvalidArgumentException('no useragent was set');
+        }
+
+        if (!is_array($this->match) && $this->runDetection) {
+            throw new NotFoundException('browser not found via regexes');
         }
 
         if (!is_array($this->match)) {
@@ -379,6 +398,10 @@ class RegexFactory implements FactoryInterface
     {
         if (null === $this->useragent) {
             throw new \InvalidArgumentException('no useragent was set');
+        }
+
+        if (!is_array($this->match) && $this->runDetection) {
+            throw new NotFoundException('engine not found via regexes');
         }
 
         if (!is_array($this->match)) {
