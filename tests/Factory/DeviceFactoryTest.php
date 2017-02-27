@@ -1,13 +1,22 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
+declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\DeviceFactory;
+use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
-use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
-use BrowserDetector\Factory\NormalizerFactory;
+use League\Flysystem\Filesystem;
 use Psr\Log\NullLogger;
 use UaDeviceType\Type;
 use UaResult\Company\Company;
@@ -54,7 +63,7 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
         $normalizedUa = $normalizer->normalize($userAgent);
 
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result,) = $this->object->detect($normalizedUa);
+        list($result) = $this->object->detect($normalizedUa);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 

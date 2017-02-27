@@ -1,13 +1,22 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
+declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Version\VersionFactory;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
-use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
+use League\Flysystem\Filesystem;
 use Psr\Log\NullLogger;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
