@@ -110,7 +110,7 @@ class PlatformLoader implements LoaderInterface
         $marketingName = $platform->marketingName;
 
         if ('Mac OS X' === $name
-            && version_compare((float) $version->getVersion(VersionInterface::IGNORE_MICRO), 10.12, '>=')
+            && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')
         ) {
             $name          = 'macOS';
             $marketingName = 'macOS';
