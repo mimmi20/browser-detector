@@ -1,6 +1,14 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-
+declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Psr\Cache\CacheItemPoolInterface;
@@ -35,13 +43,13 @@ class RimOs implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        if (false !== stripos($useragent, 'bb10') && false === stripos($useragent, 'version')) {
+        if (false !== mb_stripos($useragent, 'bb10') && false === mb_stripos($useragent, 'version')) {
             return VersionFactory::set('10.0.0');
         }
 
         $searches = ['BlackBerry[0-9a-z]+', 'BlackBerrySimulator'];
 
-        if (false !== stripos($useragent, 'bb10') || false === stripos($useragent, 'opera')) {
+        if (false !== mb_stripos($useragent, 'bb10') || false === mb_stripos($useragent, 'opera')) {
             $searches[] = 'Version';
         }
 

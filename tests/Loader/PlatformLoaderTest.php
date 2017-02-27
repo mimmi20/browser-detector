@@ -1,11 +1,20 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
+declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\PlatformLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
-use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
+use League\Flysystem\Filesystem;
 
 /**
  * Test class for \BrowserDetector\Loader\PlatformLoader

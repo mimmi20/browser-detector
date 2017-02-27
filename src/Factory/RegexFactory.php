@@ -1,6 +1,14 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-
+declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\BrowserLoader;
@@ -106,6 +114,7 @@ class RegexFactory implements FactoryInterface
 
     /**
      * @throws \BrowserDetector\Loader\NotFoundException
+     *
      * @return array
      */
     public function getDevice()
@@ -126,7 +135,7 @@ class RegexFactory implements FactoryInterface
             throw new Regex\NoMatchException('device not detected via regexes');
         }
 
-        $deviceCode   = strtolower($this->match['devicecode']);
+        $deviceCode   = mb_strtolower($this->match['devicecode']);
         $deviceLoader = new DeviceLoader($this->cache);
 
         if ('windows' === $deviceCode) {
@@ -135,13 +144,13 @@ class RegexFactory implements FactoryInterface
             return $deviceLoader->load('macintosh', $this->useragent);
         } elseif ('touch' === $deviceCode
             && array_key_exists('osname', $this->match)
-            && 'bb10' === strtolower($this->match['osname'])
+            && 'bb10' === mb_strtolower($this->match['osname'])
         ) {
             return $deviceLoader->load('z10', $this->useragent);
         }
 
         if (array_key_exists('manufacturercode', $this->match)) {
-            $manufacturercode = strtolower($this->match['manufacturercode']);
+            $manufacturercode = mb_strtolower($this->match['manufacturercode']);
         } else {
             $manufacturercode = '';
         }
@@ -178,7 +187,7 @@ class RegexFactory implements FactoryInterface
         }
 
         if (array_key_exists('devicetype', $this->match)) {
-            $className = '\\BrowserDetector\\Factory\\' . ucfirst(strtolower($this->match['devicetype']));
+            $className = '\\BrowserDetector\\Factory\\' . ucfirst(mb_strtolower($this->match['devicetype']));
 
             if (class_exists($className)) {
                 $this->logger->debug('device detected via device type (mobile or tv)');
@@ -215,7 +224,7 @@ class RegexFactory implements FactoryInterface
 
         if (!array_key_exists('osname', $this->match)
             && array_key_exists('manufacturercode', $this->match)
-            && 'blackberry' === strtolower($this->match['manufacturercode'])
+            && 'blackberry' === mb_strtolower($this->match['manufacturercode'])
         ) {
             $this->logger->debug('platform forced to rim os');
 
@@ -226,7 +235,7 @@ class RegexFactory implements FactoryInterface
             throw new Regex\NoMatchException('platform not detected via regexes');
         }
 
-        $platformCode = strtolower($this->match['osname']);
+        $platformCode = mb_strtolower($this->match['osname']);
 
         if ('darwin' === $platformCode) {
             $darwinFactory = new Platform\DarwinFactory($this->cache, $platformLoader);
@@ -256,7 +265,7 @@ class RegexFactory implements FactoryInterface
             $platformCode = 'chromeos';
         }
 
-        if (false !== strpos($platformCode, 'windows nt') && array_key_exists('devicetype', $this->match)) {
+        if (false !== mb_strpos($platformCode, 'windows nt') && array_key_exists('devicetype', $this->match)) {
             // Windows Phone Desktop Mode
             $platformCode = 'windows phone';
         }
@@ -295,7 +304,7 @@ class RegexFactory implements FactoryInterface
             throw new Regex\NoMatchException('browser not detected via regexes');
         }
 
-        $browserCode   = strtolower($this->match['browsername']);
+        $browserCode   = mb_strtolower($this->match['browsername']);
         $browserLoader = new BrowserLoader($this->cache);
 
         switch ($browserCode) {
@@ -321,7 +330,7 @@ class RegexFactory implements FactoryInterface
 
         if ('safari' === $browserCode) {
             if (array_key_exists('osname', $this->match)) {
-                $osname = strtolower($this->match['osname']);
+                $osname = mb_strtolower($this->match['osname']);
 
                 if ('android' === $osname || 'linux' === $osname) {
                     return $browserLoader->load('android webkit', $this->useragent);
@@ -341,7 +350,7 @@ class RegexFactory implements FactoryInterface
             }
 
             if (array_key_exists('manufacturercode', $this->match)) {
-                $devicemaker = strtolower($this->match['manufacturercode']);
+                $devicemaker = mb_strtolower($this->match['manufacturercode']);
 
                 if ('nokia' === $devicemaker) {
                     return $browserLoader->load('nokiabrowser', $this->useragent);
@@ -384,7 +393,7 @@ class RegexFactory implements FactoryInterface
             throw new Regex\NoMatchException('engine not detected via regexes');
         }
 
-        $engineCode   = strtolower($this->match['enginename']);
+        $engineCode   = mb_strtolower($this->match['enginename']);
         $engineLoader = new EngineLoader($this->cache);
 
         if ('cfnetwork' === $engineCode) {

@@ -1,6 +1,14 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-
+declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\LoaderInterface;
@@ -91,71 +99,71 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'phantomas';
         } elseif (preg_match('/Seznam screenshot\-generator/', $useragent)) {
             $browserKey = 'seznam screenshot generator';
-        } elseif (false !== strpos($useragent, 'PhantomJS')) {
+        } elseif (false !== mb_strpos($useragent, 'PhantomJS')) {
             $browserKey = 'phantomjs';
-        } elseif (false !== strpos($useragent, 'YaBrowser')) {
+        } elseif (false !== mb_strpos($useragent, 'YaBrowser')) {
             $browserKey = 'yabrowser';
-        } elseif (false !== strpos($useragent, 'Kamelio')) {
+        } elseif (false !== mb_strpos($useragent, 'Kamelio')) {
             $browserKey = 'kamelio app';
-        } elseif (false !== strpos($useragent, 'FBAV')) {
+        } elseif (false !== mb_strpos($useragent, 'FBAV')) {
             $browserKey = 'facebook app';
-        } elseif (false !== strpos($useragent, 'ACHEETAHI')) {
+        } elseif (false !== mb_strpos($useragent, 'ACHEETAHI')) {
             $browserKey = 'cm browser';
         } elseif (preg_match('/flyflow/i', $useragent)) {
             $browserKey = 'flyflow';
-        } elseif (false !== strpos($useragent, 'bdbrowser_i18n') || false !== strpos($useragent, 'baidubrowser')) {
+        } elseif (false !== mb_strpos($useragent, 'bdbrowser_i18n') || false !== mb_strpos($useragent, 'baidubrowser')) {
             $browserKey = 'baidu browser';
-        } elseif (false !== strpos($useragent, 'bdbrowserhd_i18n')) {
+        } elseif (false !== mb_strpos($useragent, 'bdbrowserhd_i18n')) {
             $browserKey = 'baidu browser hd';
-        } elseif (false !== strpos($useragent, 'bdbrowser_mini')) {
+        } elseif (false !== mb_strpos($useragent, 'bdbrowser_mini')) {
             $browserKey = 'baidu browser mini';
-        } elseif (false !== strpos($useragent, 'Puffin')) {
+        } elseif (false !== mb_strpos($useragent, 'Puffin')) {
             $browserKey = 'puffin';
         } elseif (preg_match('/stagefright/', $useragent)) {
             $browserKey = 'stagefright';
-        } elseif (false !== strpos($useragent, 'SamsungBrowser')) {
+        } elseif (false !== mb_strpos($useragent, 'SamsungBrowser')) {
             $browserKey = 'samsungbrowser';
-        } elseif (false !== strpos($useragent, 'Silk')) {
+        } elseif (false !== mb_strpos($useragent, 'Silk')) {
             $browserKey = 'silk';
-        } elseif (false !== strpos($useragent, 'coc_coc_browser')) {
+        } elseif (false !== mb_strpos($useragent, 'coc_coc_browser')) {
             $browserKey = 'coc_coc_browser';
-        } elseif (false !== strpos($useragent, 'NaverMatome')) {
+        } elseif (false !== mb_strpos($useragent, 'NaverMatome')) {
             $browserKey = 'matome';
         } elseif (preg_match('/FlipboardProxy/', $useragent)) {
             $browserKey = 'flipboardproxy';
-        } elseif (false !== strpos($useragent, 'Flipboard')) {
+        } elseif (false !== mb_strpos($useragent, 'Flipboard')) {
             $browserKey = 'flipboard app';
-        } elseif (false !== strpos($useragent, 'Seznam.cz')) {
+        } elseif (false !== mb_strpos($useragent, 'Seznam.cz')) {
             $browserKey = 'seznam browser';
-        } elseif (false !== strpos($useragent, 'Aviator')) {
+        } elseif (false !== mb_strpos($useragent, 'Aviator')) {
             $browserKey = 'aviator';
         } elseif (preg_match('/NetFrontLifeBrowser/', $useragent)) {
             $browserKey = 'netfrontlifebrowser';
         } elseif (preg_match('/IceDragon/', $useragent)) {
             $browserKey = 'icedragon';
-        } elseif (false !== strpos($useragent, 'Dragon') && false === strpos($useragent, 'DragonFly')) {
+        } elseif (false !== mb_strpos($useragent, 'Dragon') && false === mb_strpos($useragent, 'DragonFly')) {
             $browserKey = 'dragon';
-        } elseif (false !== strpos($useragent, 'Beamrise')) {
+        } elseif (false !== mb_strpos($useragent, 'Beamrise')) {
             $browserKey = 'beamrise';
-        } elseif (false !== strpos($useragent, 'Diglo')) {
+        } elseif (false !== mb_strpos($useragent, 'Diglo')) {
             $browserKey = 'diglo';
-        } elseif (false !== strpos($useragent, 'APUSBrowser')) {
+        } elseif (false !== mb_strpos($useragent, 'APUSBrowser')) {
             $browserKey = 'apusbrowser';
-        } elseif (false !== strpos($useragent, 'Chedot')) {
+        } elseif (false !== mb_strpos($useragent, 'Chedot')) {
             $browserKey = 'chedot';
-        } elseif (false !== strpos($useragent, 'Qword')) {
+        } elseif (false !== mb_strpos($useragent, 'Qword')) {
             $browserKey = 'qword browser';
-        } elseif (false !== strpos($useragent, 'Iridium')) {
+        } elseif (false !== mb_strpos($useragent, 'Iridium')) {
             $browserKey = 'iridium browser';
         } elseif (preg_match('/avant/i', $useragent)) {
             $browserKey = 'avant';
-        } elseif (false !== strpos($useragent, 'MxNitro')) {
+        } elseif (false !== mb_strpos($useragent, 'MxNitro')) {
             $browserKey = 'maxthon nitro';
         } elseif (preg_match('/(mxbrowser|maxthon|myie)/i', $useragent)) {
             $browserKey = 'maxthon';
         } elseif (preg_match('/superbird/i', $useragent)) {
             $browserKey = 'superbird';
-        } elseif (false !== strpos($useragent, 'TinyBrowser')) {
+        } elseif (false !== mb_strpos($useragent, 'TinyBrowser')) {
             $browserKey = 'tinybrowser';
         } elseif (preg_match('/MicroMessenger/', $useragent)) {
             $browserKey = 'wechat app';
@@ -171,14 +179,14 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'wkbrowser';
         } elseif (preg_match('/Mb2345Browser/', $useragent)) {
             $browserKey = '2345 browser';
-        } elseif (false !== strpos($useragent, 'Chrome')
-            && false !== strpos($useragent, 'Version')
-            && 0 < strpos($useragent, 'Chrome')
+        } elseif (false !== mb_strpos($useragent, 'Chrome')
+            && false !== mb_strpos($useragent, 'Version')
+            && 0 < mb_strpos($useragent, 'Chrome')
         ) {
             $browserKey = 'android webview';
-        } elseif (false !== strpos($useragent, 'Safari')
-            && false !== strpos($useragent, 'Version')
-            && false !== strpos($useragent, 'Tizen')
+        } elseif (false !== mb_strpos($useragent, 'Safari')
+            && false !== mb_strpos($useragent, 'Version')
+            && false !== mb_strpos($useragent, 'Tizen')
         ) {
             $browserKey = 'samsung webview';
         } elseif (preg_match('/cybeye/i', $useragent)) {
@@ -271,9 +279,9 @@ class BrowserFactory implements FactoryInterface
             || preg_match('/Mozilla\/\d\.\d+.*\(.*MSIE (3|2|1)\.\d+.*/', $useragent)
         ) {
             $browserKey = 'internet explorer';
-        } elseif (false !== strpos($useragent, 'Chromium')) {
+        } elseif (false !== mb_strpos($useragent, 'Chromium')) {
             $browserKey = 'chromium';
-        } elseif (false !== strpos($useragent, 'Iron')) {
+        } elseif (false !== mb_strpos($useragent, 'Iron')) {
             $browserKey = 'iron';
         } elseif (preg_match('/midori/i', $useragent)) {
             $browserKey = 'midori';
@@ -393,7 +401,7 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'android webkit';
         } elseif (preg_match('/Android\/[\d\.]+ release/', $useragent)) {
             $browserKey = 'android webkit';
-        } elseif (false !== strpos($useragent, 'BlackBerry') && false !== strpos($useragent, 'Version')) {
+        } elseif (false !== mb_strpos($useragent, 'BlackBerry') && false !== mb_strpos($useragent, 'Version')) {
             $browserKey = 'blackberry';
         } elseif (preg_match('/(webOS|wOSBrowser|wOSSystem)/', $useragent)) {
             $browserKey = 'webkit/webos';

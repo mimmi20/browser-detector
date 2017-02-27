@@ -1,6 +1,14 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-
+declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Psr\Cache\CacheItemPoolInterface;
@@ -38,14 +46,14 @@ class Goanna implements VersionCacheFactoryInterface
         // lastest version: version on "Goanna" token
         $doMatch = preg_match('/Goanna\/([\d\.]+)/', $useragent, $matches);
 
-        if ($doMatch && 2015 > substr($matches[1], 0, 4)) {
+        if ($doMatch && 2015 > mb_substr($matches[1], 0, 4)) {
             return VersionFactory::set($matches[1]);
         }
 
         // second version: version on "rv:" token
         $doMatch = preg_match('/rv\:([\d\.]+)/', $useragent, $matches);
 
-        if ($doMatch && 2 >= substr($matches[1], 0, 4)) {
+        if ($doMatch && 2 >= mb_substr($matches[1], 0, 4)) {
             return VersionFactory::set($matches[1]);
         }
 

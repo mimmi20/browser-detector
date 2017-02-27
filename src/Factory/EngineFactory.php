@@ -1,6 +1,14 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-
+declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\BrowserLoader;
@@ -62,8 +70,8 @@ class EngineFactory implements FactoryInterface
         } elseif ($s->contains(' T5/')) {
             $engineKey = 't5';
         } elseif (preg_match('/(msie|trident|outlook|kkman)/i', $useragent)
-            && false === stripos($useragent, 'opera')
-            && false === stripos($useragent, 'tasman')
+            && false === mb_stripos($useragent, 'opera')
+            && false === mb_stripos($useragent, 'tasman')
         ) {
             $engineKey = 'trident';
         } elseif (preg_match('/(goanna)/i', $useragent)) {

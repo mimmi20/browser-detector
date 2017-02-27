@@ -1,6 +1,14 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-
+declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
@@ -195,7 +203,7 @@ class Safari
             '8.1',
         ];
 
-        if (in_array(substr($detectedVersion, 0, 3), $regularVersions)) {
+        if (in_array(mb_substr($detectedVersion, 0, 3), $regularVersions)) {
             return $detectedVersion;
         }
 

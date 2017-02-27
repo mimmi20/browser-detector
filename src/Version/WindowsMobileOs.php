@@ -1,6 +1,14 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-
+declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Psr\Cache\CacheItemPoolInterface;
@@ -36,7 +44,7 @@ class WindowsMobileOs implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        if (false !== strpos($useragent, 'Windows NT 5.1')) {
+        if (false !== mb_strpos($useragent, 'Windows NT 5.1')) {
             return VersionFactory::set('6.0');
         }
 

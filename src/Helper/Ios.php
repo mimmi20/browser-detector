@@ -1,6 +1,14 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-
+declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
@@ -32,7 +40,7 @@ class Ios
      */
     public function isIos()
     {
-        if (false !== stripos($this->useragent, 'technipad')) {
+        if (false !== mb_stripos($this->useragent, 'technipad')) {
             return false;
         }
 

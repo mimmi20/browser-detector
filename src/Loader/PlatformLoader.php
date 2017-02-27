@@ -1,6 +1,14 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-
+declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Os as OsBits;
@@ -69,6 +77,7 @@ class PlatformLoader implements LoaderInterface
      * @param string|null $inputVersion
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     *
      * @return \UaResult\Os\OsInterface
      */
     public function load($platformCode, $useragent = '', $inputVersion = null)

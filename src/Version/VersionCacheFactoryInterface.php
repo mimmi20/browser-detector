@@ -1,5 +1,15 @@
 <?php
 /**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types = 1);
+/**
  * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -21,18 +31,20 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
+ *
  * @author    Thomas Mueller <mimmi20@live.de>
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
-
 namespace BrowserDetector\Version;
 
 /**
  * a general version detector factory
  *
  * @category  BrowserDetector
+ *
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */

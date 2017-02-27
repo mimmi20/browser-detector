@@ -1,12 +1,21 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
+declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
 use BrowserDetector\Factory\Device\Mobile\DexFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
-use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
+use League\Flysystem\Filesystem;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -45,7 +54,7 @@ class DexFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result,) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
