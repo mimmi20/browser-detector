@@ -87,10 +87,8 @@ class BrowserLoader implements LoaderInterface
             throw new NotFoundException('the browser with key "' . $browserKey . '" was not found');
         }
 
-        $engineLoader = new EngineLoader($this->cache);
-        $cacheItem    = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
-
-        $browser = $cacheItem->get();
+        $cacheItem = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
+        $browser   = $cacheItem->get();
 
         $browserVersionClass = $browser->version->class;
 
@@ -104,18 +102,29 @@ class BrowserLoader implements LoaderInterface
             $version      = $versionClass->detectVersion($useragent);
         }
 
-        return [
-            new Browser(
-                $browser->name,
-                (new CompanyLoader($this->cache))->load($browser->manufacturer),
-                $version,
-                (new TypeLoader($this->cache))->load($browser->type),
-                (new BrowserBits($useragent))->getBits(),
-                $browser->pdfSupport,
-                $browser->rssSupport
-            ),
-            $engineLoader->load($browser->engine, $useragent),
-        ];
+        $engineKey = $browser->engine;
+
+        if (null === $engineKey) {
+            $engine = null;
+        } else {
+            try {
+                $engine = (new EngineLoader($this->cache))->load($browser->engine, $useragent);
+            } catch (NotFoundException $e) {
+                $engine = null;
+            }
+        }
+
+        $browser = new Browser(
+            $browser->name,
+            (new CompanyLoader($this->cache))->load($browser->manufacturer),
+            $version,
+            (new TypeLoader($this->cache))->load($browser->type),
+            (new BrowserBits($useragent))->getBits(),
+            $browser->pdfSupport,
+            $browser->rssSupport
+        );
+
+        return [$browser, $engine];
     }
 
     /**

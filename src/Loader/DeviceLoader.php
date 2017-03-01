@@ -92,29 +92,32 @@ class DeviceLoader implements LoaderInterface
         if (null === $platformKey) {
             $platform = null;
         } else {
-            $platform = (new PlatformLoader($this->cache))->load($platformKey, $useragent);
+            try {
+                $platform = (new PlatformLoader($this->cache))->load($platformKey, $useragent);
+            } catch (NotFoundException $e) {
+                $platform = null;
+            }
         }
 
         $companyLoader = new CompanyLoader($this->cache);
 
-        return [
-            new Device(
-                $device->codename,
-                $device->marketingName,
-                $companyLoader->load($device->manufacturer),
-                $companyLoader->load($device->brand),
-                (new TypeLoader($this->cache))->load($device->type),
-                $device->pointingMethod,
-                $device->resolutionWidth,
-                $device->resolutionHeight,
-                $device->dualOrientation,
-                $device->colors,
-                $device->smsSupport,
-                $device->nfcSupport,
-                $device->hasQwertyKeyboard
-            ),
-            $platform,
-        ];
+        $device = new Device(
+            $device->codename,
+            $device->marketingName,
+            $companyLoader->load($device->manufacturer),
+            $companyLoader->load($device->brand),
+            (new TypeLoader($this->cache))->load($device->type),
+            $device->pointingMethod,
+            $device->resolutionWidth,
+            $device->resolutionHeight,
+            $device->dualOrientation,
+            $device->colors,
+            $device->smsSupport,
+            $device->nfcSupport,
+            $device->hasQwertyKeyboard
+        );
+
+        return [$device, $platform];
     }
 
     /**
