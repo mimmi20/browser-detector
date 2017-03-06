@@ -20,7 +20,7 @@ use League\Flysystem\Filesystem;
 /**
  * Test class for \BrowserDetector\Detector\Device\Tv\GeneralTv
  */
-class TvFactoryTest extends \PHPUnit_Framework_TestCase
+class TvFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Device\TvFactory

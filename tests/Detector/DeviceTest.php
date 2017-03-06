@@ -19,7 +19,7 @@ use UaResult\Os\Os;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class DeviceTest extends \PHPUnit_Framework_TestCase
+class DeviceTest extends \PHPUnit\Framework\TestCase
 {
     public function testDetectSuccess()
     {

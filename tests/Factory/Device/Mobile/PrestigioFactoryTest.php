@@ -20,7 +20,7 @@ use League\Flysystem\Filesystem;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class PrestigioFactoryTest extends \PHPUnit_Framework_TestCase
+class PrestigioFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Device\Mobile\PrestigioFactory

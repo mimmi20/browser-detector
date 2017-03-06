@@ -20,7 +20,7 @@ use League\Flysystem\Filesystem;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class ZekiFactoryTest extends \PHPUnit_Framework_TestCase
+class ZekiFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Device\Mobile\ZekiFactory

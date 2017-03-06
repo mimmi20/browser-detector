@@ -20,7 +20,7 @@ use League\Flysystem\Filesystem;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class BqFactoryTest extends \PHPUnit_Framework_TestCase
+class BqFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Device\Mobile\BqFactory
