@@ -18,7 +18,7 @@ use BrowserDetector\Loader\NotFoundException;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class OsTest extends \PHPUnit_Framework_TestCase
+class OsTest extends \PHPUnit\Framework\TestCase
 {
     public function testDetectSuccess()
     {

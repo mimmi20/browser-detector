@@ -25,7 +25,7 @@ use UaResult\Device\Device;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
+class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \BrowserDetector\Factory\DeviceFactory

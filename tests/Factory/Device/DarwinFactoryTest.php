@@ -20,7 +20,7 @@ use League\Flysystem\Filesystem;
 /**
  * Test class for \BrowserDetector\Factory\Device\DarwinFactory
  */
-class DarwinFactoryTest extends \PHPUnit_Framework_TestCase
+class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Platform\DarwinFactory

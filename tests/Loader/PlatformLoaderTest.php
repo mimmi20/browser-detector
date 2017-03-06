@@ -19,7 +19,7 @@ use League\Flysystem\Filesystem;
 /**
  * Test class for \BrowserDetector\Loader\PlatformLoader
  */
-class PlatformLoaderTest extends \PHPUnit_Framework_TestCase
+class PlatformLoaderTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \BrowserDetector\Loader\PlatformLoader

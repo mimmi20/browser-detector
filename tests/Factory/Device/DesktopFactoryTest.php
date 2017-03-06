@@ -20,7 +20,7 @@ use League\Flysystem\Filesystem;
 /**
  * Test class for \BrowserDetector\Detector\Device\Desktop\GeneralDesktop
  */
-class DesktopFactoryTest extends \PHPUnit_Framework_TestCase
+class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Device\DesktopFactory
