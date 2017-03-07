@@ -45,12 +45,12 @@ install:
   - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction $COMPOSER_FLAGS
 
 script:
-  - if [[ $COVERAGE = yes ]]; then vendor/bin/phpunit --coverage-clover=coverage.clover; else vendor/bin/phpunit --no-coverage; fi
+  - if [[ $COVERAGE = yes ]]; then vendor/bin/phpunit --coverage-clover=clover.xml; else vendor/bin/phpunit --no-coverage; fi
   - if [[ $EXECUTE_CS_CHECK == yes ]]; then php -n -d memory_limit=768M vendor/bin/phpcs; fi
   - if [[ $EXECUTE_CS_CHECK == yes ]]; then php -n -d memory_limit=768M vendor/bin/php-cs-fixer fix --dry-run -vv; fi
 
 after_success:
-  - if [[ $COVERAGE = yes ]]; then wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar && php -n coveralls.phar --verbose --coverage_clover=coverage.clover; fi
+  - if [[ $COVERAGE = yes ]]; then wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar && php -n coveralls.phar --verbose --coverage_clover=clover.xml; fi
 
 notifications:
   email: false
