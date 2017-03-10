@@ -90,7 +90,7 @@ class Device
 
             return $this->regexFactory->getDevice();
         } catch (NotFoundException $e) {
-            $this->logger->info($e);
+            $this->logger->debug($e);
             $device   = null;
             $platform = null;
         } catch (NoMatchException $e) {
@@ -111,7 +111,7 @@ class Device
         try {
             return $this->deviceFactory->detect($deviceUa);
         } catch (NotFoundException $e) {
-            $this->logger->info($e);
+            $this->logger->debug($e);
         }
 
         return [

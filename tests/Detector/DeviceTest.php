@@ -162,8 +162,8 @@ class DeviceTest extends \PHPUnit\Framework\TestCase
             ->getMock();
         $logger->expects(self::never())->method('error');
         $logger->expects(self::never())->method('critical');
-        $logger->expects(self::once())->method('info')->with($exception);
-        $logger->expects(self::once())->method('debug');
+        $logger->expects(self::never())->method('info')->with($exception);
+        $logger->expects(self::exactly(2))->method('debug');
 
         $regexFactory = $this->getMockBuilder('\BrowserDetector\Factory\RegexFactory')
             ->disableOriginalConstructor()
@@ -249,8 +249,8 @@ class DeviceTest extends \PHPUnit\Framework\TestCase
             ->getMock();
         $logger->expects(self::never())->method('error');
         $logger->expects(self::never())->method('critical');
-        $logger->expects(self::exactly(2))->method('info')->with($exception);
-        $logger->expects(self::once())->method('debug');
+        $logger->expects(self::never())->method('info')->with($exception);
+        $logger->expects(self::exactly(3))->method('debug');
 
         $regexFactory = $this->getMockBuilder('\BrowserDetector\Factory\RegexFactory')
             ->disableOriginalConstructor()
