@@ -411,6 +411,8 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'windows phone search';
         } elseif (preg_match('/Windows\-Update\-Agent/', $useragent)) {
             $browserKey = 'windows-update-agent';
+        } elseif (preg_match('/classilla/i', $useragent)) {
+            $browserKey = 'classilla';
         } elseif (preg_match('/nokia/i', $useragent)) {
             $browserKey = 'nokiabrowser';
         } elseif (preg_match('/twitter for i/i', $useragent)) {
@@ -461,7 +463,9 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'adidxbot';
         } elseif (preg_match('/msnbot/i', $useragent)) {
             $browserKey = 'bingbot';
-        } elseif (preg_match('/(backberry|bb10)/i', $useragent)) {
+        } elseif (preg_match('/BlackberryPlaybookTablet/', $useragent)) {
+            $browserKey = 'blackberry playbook tablet';
+        } elseif (preg_match('/(blackberry|bb10)/i', $useragent)) {
             $browserKey = 'blackberry';
         } elseif (preg_match('/WeTab\-Browser/', $useragent)) {
             $browserKey = 'wetab browser';
@@ -1712,8 +1716,6 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'billigfluegefinal app';
         } elseif (preg_match('/BingProductsBot/', $useragent)) {
             $browserKey = 'bing product search';
-        } elseif (preg_match('/BlackberryPlaybookTablet/', $useragent)) {
-            $browserKey = 'blackberry playbook tablet';
         } elseif (preg_match('/BlitzBot/', $useragent)) {
             $browserKey = 'blitzbot';
         } elseif (preg_match('/BluecoatDrtr/', $useragent)) {
@@ -1928,6 +1930,8 @@ class BrowserFactory implements FactoryInterface
             $browserKey = 'movabletype web log';
         } elseif (preg_match('/Mozad/', $useragent)) {
             $browserKey = 'mozad';
+        } elseif (preg_match('/archive\-de\.com/', $useragent)) {
+            $browserKey = 'archive-de.com';
         } elseif (preg_match('/Mozilla/', $useragent)) {
             $browserKey = 'mozilla';
         } elseif (preg_match('/MsieCrawler/', $useragent)) {

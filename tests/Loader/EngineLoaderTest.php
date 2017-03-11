@@ -37,12 +37,11 @@ class EngineLoaderTest extends \PHPUnit\Framework\TestCase
         $this->object = new EngineLoader($cache);
     }
 
-    /**
-     * @expectedException \BrowserDetector\Loader\NotFoundException
-     * @expectedExceptionMessage the engine with key "does not exist" was not found
-     */
     public function testLoadNotAvailable()
     {
+        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectExceptionMessage('the engine with key "does not exist" was not found');
+
         $this->object->load('does not exist', 'test-ua');
     }
 }

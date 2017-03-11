@@ -42,7 +42,7 @@ return PhpCsFixer\Config::create()
         'full_opening_tag' => true,
         'function_declaration' => true,
         'function_typehint_space' => true,
-        'general_phpdoc_annotation_remove' => ['expectedExceptionMessageRegExp'],
+        'general_phpdoc_annotation_remove' => ['expectedExceptionMessageRegExp', 'expectedException', 'expectedExceptionMessage'],
         'hash_to_slash_comment' => true,
         'header_comment' => ['header' => $header, 'commentType' => 'PHPDoc', 'location' => 'after_open', 'separate' => 'bottom'],
         'heredoc_to_nowdoc' => true,
