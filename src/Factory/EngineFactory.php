@@ -58,27 +58,40 @@ class EngineFactory implements FactoryInterface
      */
     public function detect($useragent)
     {
-        $s         = new Stringy($useragent);
-        $engineKey = 'unknown';
+        $s = new Stringy($useragent);
 
         if ($s->contains('Edge')) {
-            $engineKey = 'edge';
-        } elseif ($s->contains(' U2/')) {
-            $engineKey = 'u2';
-        } elseif ($s->contains(' U3/')) {
-            $engineKey = 'u3';
-        } elseif ($s->contains(' T5/')) {
-            $engineKey = 't5';
-        } elseif (preg_match('/(msie|trident|outlook|kkman)/i', $useragent)
-            && false === mb_stripos($useragent, 'opera')
-            && false === mb_stripos($useragent, 'tasman')
+            return $this->loader->load('edge', $useragent);
+        }
+
+        if ($s->contains(' U2/')) {
+            return $this->loader->load('u2', $useragent);
+        }
+
+        if ($s->contains(' U3/')) {
+            return $this->loader->load('u3', $useragent);
+        }
+
+        if ($s->contains(' T5/')) {
+            return $this->loader->load('t5', $useragent);
+        }
+
+        if ($s->containsAny(['msie', 'trident', 'outlook', 'kkman'], false)
+            && !$s->contains('opera', false)
+            && !$s->contains('tasman', false)
         ) {
-            $engineKey = 'trident';
-        } elseif (preg_match('/(goanna)/i', $useragent)) {
-            $engineKey = 'goanna';
-        } elseif (preg_match('/(clecko)/i', $useragent)) {
-            $engineKey = 'clecko';
-        } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
+            return $this->loader->load('trident', $useragent);
+        }
+
+        if ($s->contains('goanna', false)) {
+            return $this->loader->load('goanna', $useragent);
+        }
+
+        if ($s->contains('clecko', false)) {
+            return $this->loader->load('clecko', $useragent);
+        }
+
+        if ($s->containsAny(['webkit', 'cfnetwork', 'safari', 'dalvik'], false)) {
             /** @var \UaResult\Browser\Browser $chrome */
             list($chrome) = (new BrowserLoader($this->cache))->load('chrome', $useragent);
             $version      = $chrome->getVersion();
@@ -90,31 +103,43 @@ class EngineFactory implements FactoryInterface
             }
 
             if ($chromeVersion >= 28) {
-                $engineKey = 'blink';
-            } else {
-                $engineKey = 'webkit';
+                return $this->loader->load('blink', $useragent);
             }
-        } elseif (preg_match('/(KHTML|Konqueror)/', $useragent)) {
-            $engineKey = 'khtml';
-        } elseif (preg_match('/(tasman)/i', $useragent)
-            || $s->containsAll(['MSIE', 'Mac_PowerPC'])
-        ) {
-            $engineKey = 'tasman';
-        } elseif (preg_match('/(Presto|Opera)/', $useragent)) {
-            $engineKey = 'presto';
-        } elseif (preg_match('/(Gecko|Firefox)/', $useragent)) {
-            $engineKey = 'gecko';
-        } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $useragent)
-            && !$s->containsAny(['Kindle'])
-        ) {
-            $engineKey = 'netfront';
-        } elseif ($s->contains('BlackBerry')) {
-            $engineKey = 'blackberry';
-        } elseif (preg_match('/(Teleca|Obigo)/', $useragent)) {
-            $engineKey = 'teleca';
+
+            return $this->loader->load('webkit', $useragent);
         }
 
-        return $this->loader->load($engineKey, $useragent);
+        if ($s->containsAny(['khtml', 'konqueror'], false)) {
+            return $this->loader->load('khtml', $useragent);
+        }
+
+        if ($s->contains('tasman', false) || $s->containsAll(['MSIE', 'Mac_PowerPC'])) {
+            return $this->loader->load('tasman', $useragent);
+        }
+
+        if ($s->containsAny(['presto', 'opera'], false)) {
+            return $this->loader->load('presto', $useragent);
+        }
+
+        if ($s->containsAny(['gecko', 'firefox'], false)) {
+            return $this->loader->load('gecko', $useragent);
+        }
+
+        if ($s->containsAny(['netfront/', 'nf/', 'NetFrontLifeBrowserInterface', 'NF3', 'Nintendo 3DS'], false)
+            && !$s->containsAny(['kindle'], false)
+        ) {
+            return $this->loader->load('netfront', $useragent);
+        }
+
+        if ($s->contains('blackberry', false)) {
+            return $this->loader->load('blackberry', $useragent);
+        }
+
+        if ($s->containsAny(['teleca', 'obigo'], false)) {
+            return $this->loader->load('teleca', $useragent);
+        }
+
+        return $this->loader->load('unknown', $useragent);
     }
 
     /**
