@@ -37,12 +37,11 @@ class BrowserLoaderTest extends \PHPUnit\Framework\TestCase
         $this->object = new BrowserLoader($cache);
     }
 
-    /**
-     * @expectedException \BrowserDetector\Loader\NotFoundException
-     * @expectedExceptionMessage the browser with key "does not exist" was not found
-     */
     public function testLoadNotAvailable()
     {
+        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectExceptionMessage('the browser with key "does not exist" was not found');
+
         $this->object->load('does not exist', 'test-ua');
     }
 }

@@ -62,7 +62,6 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
         $result = $this->object->detect($normalizedUa);
 
         self::assertInstanceOf('\UaResult\Engine\EngineInterface', $result);
-        self::assertInternalType('string', $result->getName());
         self::assertSame(
             $engine,
             $result->getName(),
@@ -178,6 +177,90 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
                 'Clecko',
                 '9.3.3',
                 null,
+                null,
+            ],
+            [
+                'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-us; GT-S5670 Build/GINGERBREAD) U2/1.0.0 UCBrowser/9.4.1.362 Mobile',
+                'U2',
+                '1.0.0',
+                'UCWeb Inc.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; pt-BR; H5000 Build/IMM76D) AppleWebKit/534.31 (KHTML, like Gecko) UCBrowser/9.3.0.321 U3/0.8.0 Mobile Safari/534.31',
+                'U3',
+                '0.8.0',
+                'UCWeb Inc.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.2; ru-; TAB917QC-8GB Build/KVT49L) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.6.0.7',
+                'T5',
+                '2.0.0',
+                'Baidu',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.8 (like Gecko) (Debian)',
+                'KHTML',
+                '3.5.8',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible; Konqueror/2.2.2; Linux 2.4.14-xfs; X11; i686)',
+                'KHTML',
+                '0.0.0',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.0.11) Firefox/1.5.0.11;',
+                'Gecko',
+                '1.8.0.11',
+                'Mozilla Foundation',
+                null,
+            ],
+            [
+                'Mozilla/6.0 (Windows NT 6.2; WOW64; rv:16.0.1) Gecko/20121011 Firefox/16.0.1',
+                'Gecko',
+                '16.0.1',
+                'Mozilla Foundation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.1033 Mobile Safari/534.11+',
+                'WebKit',
+                '534.11.0',
+                'Apple Inc',
+                null,
+            ],
+            [
+                'BlackBerry9000/5.0.0.1079 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/114',
+                'BlackBerry',
+                '0.0.0',
+                'Research In Motion Limited',
+                null,
+            ],
+            [
+                'LG-GD350/V100 Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1',
+                'Teleca',
+                '0.0.0',
+                'Obigo',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible; archive-de.com/1.1; +http://archive-de.com/bot)',
+                null,
+                '0.0.0',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 6.0; U7 Plus Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+                'Blink',
+                '537.36.0',
+                'Google Inc',
                 null,
             ],
         ];

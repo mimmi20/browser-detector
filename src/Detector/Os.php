@@ -87,7 +87,7 @@ class Os
         try {
             $platform = $this->regexFactory->getPlatform();
         } catch (NotFoundException $e) {
-            $this->logger->info($e);
+            $this->logger->debug($e);
             $platform = null;
         } catch (NoMatchException $e) {
             $platform = null;
@@ -105,7 +105,7 @@ class Os
             try {
                 $platform = $this->platformFactory->detect($browserUa);
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->debug($e);
                 $platform = new \UaResult\Os\Os(null, null);
             }
         }

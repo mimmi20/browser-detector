@@ -14741,5 +14741,31 @@
       ]
     },
     "engine": "blink"
+  },
+  "classilla": {
+    "name": "Classilla",
+    "manufacturer": "Unknown",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "clecko"
+  },
+  "archive-de.com": {
+    "name": "archive-de.com bot",
+    "manufacturer": "Unknown",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "archive-de.com"
+      ]
+    },
+    "engine": "unknown"
   }
 }

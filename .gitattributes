@@ -29,9 +29,11 @@ LICENSE          text eol=lf diff
 .gitignore       export-ignore text eol=lf diff
 .php_cs          export-ignore text eol=lf diff=php whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=4
 .scrutinizer.yml export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+.styleci.yml     export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
 .travis.yml      export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
 appveyor.yml     export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
 circle.yml       export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
+codecov.yml      export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
 phpcs.xml        export-ignore text eol=lf diff
 phpunit.xml      export-ignore text eol=lf diff
 /tests           export-ignore
