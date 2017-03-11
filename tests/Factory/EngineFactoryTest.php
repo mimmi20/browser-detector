@@ -62,7 +62,6 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
         $result = $this->object->detect($normalizedUa);
 
         self::assertInstanceOf('\UaResult\Engine\EngineInterface', $result);
-        self::assertInternalType('string', $result->getName());
         self::assertSame(
             $engine,
             $result->getName(),
@@ -248,6 +247,20 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
                 'Teleca',
                 '0.0.0',
                 'Obigo',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible; archive-de.com/1.1; +http://archive-de.com/bot)',
+                null,
+                '0.0.0',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 6.0; U7 Plus Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+                'Blink',
+                '537.36.0',
+                'Google Inc',
                 null,
             ],
         ];

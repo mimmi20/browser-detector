@@ -93,13 +93,12 @@ class EngineFactory implements FactoryInterface
 
         if ($s->containsAny(['webkit', 'cfnetwork', 'safari', 'dalvik'], false)) {
             /** @var \UaResult\Browser\Browser $chrome */
-            list($chrome) = (new BrowserLoader($this->cache))->load('chrome', $useragent);
-            $version      = $chrome->getVersion();
+            list($chrome)  = (new BrowserLoader($this->cache))->load('chrome', $useragent);
+            $version       = $chrome->getVersion();
+            $chromeVersion = 0;
 
             if (null !== $version) {
                 $chromeVersion = (int) $version->getVersion(VersionInterface::IGNORE_MINOR);
-            } else {
-                $chromeVersion = 0;
             }
 
             if ($chromeVersion >= 28) {
