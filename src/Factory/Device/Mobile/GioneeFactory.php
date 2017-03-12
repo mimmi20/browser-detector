@@ -56,6 +56,8 @@ class GioneeFactory implements Factory\FactoryInterface
 
         if (preg_match('/ M3 /', $useragent)) {
             $deviceCode = 'm3';
+        } elseif (preg_match('/GIONEE50/', $useragent)) {
+            $deviceCode = 'gionee50';
         }
 
         return $this->loader->load($deviceCode, $useragent);
