@@ -14500,6 +14500,16 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'GIONEE50_12864_11B_HW (MRE\\2.5.00(3072) resolution\\240320 chipset\\MT6250 touch\\1 tpannel\\0 camera\\1 gsensor\\0 keyboard\\normal) 1307SY_0201_V1045 Release/2013.06.28 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US',
+                '50',
+                '50',
+                'Gionee',
+                'Gionee',
+                'Feature Phone',
+                false,
+                'unknown',
+            ],
         ];
     }
 
