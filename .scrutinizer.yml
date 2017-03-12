@@ -19,7 +19,7 @@ build:
                 command: 'vendor/bin/phpunit --coverage-clover=phpunit-coverage.xml'
                 coverage:
                     file: 'phpunit-coverage.xml'
-                    format: 'php-clover'
+                    format: 'clover'
     environment:
         php:
             version: 7.1
