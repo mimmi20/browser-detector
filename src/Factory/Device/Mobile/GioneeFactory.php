@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class GioneeFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general gionee device';
-
-        if (preg_match('/ M3 /', $useragent)) {
-            $deviceCode = 'm3';
-        } elseif (preg_match('/GIONEE50/', $useragent)) {
-            $deviceCode = 'gionee50';
+        if ($s->contains(' M3 ', false)) {
+            return $this->loader->load('m3', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('GIONEE50', false)) {
+            return $this->loader->load('gionee50', $useragent);
+        }
+
+        return $this->loader->load('general gionee device', $useragent);
     }
 }
