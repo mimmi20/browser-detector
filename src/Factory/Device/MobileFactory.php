@@ -55,67 +55,56 @@ class MobileFactory implements Factory\FactoryInterface
     {
         $s = new Stringy($useragent);
 
-        if (preg_match('/(hiphone|v919)/i', $useragent)) {
+        if ($s->containsAny(['hiphone', 'v919'], false)) {
             return (new Mobile\HiPhoneFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/(Technisat|TechniPad|AQIPAD|TechniPhone)/', $useragent)) {
+        if ($s->containsAny(['technisat', 'technipad', 'aqipad', 'techniphone'], false)) {
             return (new Mobile\TechnisatFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/(NaviPad)/', $useragent)) {
+        if ($s->contains('navipad', false)) {
             return (new Mobile\TexetFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/(MediPaD)/', $useragent)) {
+        if ($s->contains('medipad', false)) {
             return (new Mobile\BewatecFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/(MiPad)/', $useragent)) {
+        if ($s->contains('mipad', false)) {
             return (new Mobile\XiaomiFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/(nokia)/i', $useragent)) {
+        if ($s->contains('nokia', false)) {
             return (new Mobile\NokiaFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/iphone/i', $useragent)
-            && preg_match('/android/i', $useragent)
-            && !preg_match('/windows phone/i', $useragent)
+        if ($s->containsAll(['iphone', 'android'], false)
+            && !$s->contains('windows phone', false)
         ) {
             return (new Mobile\XiangheFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/iphone/i', $useragent)
-            && preg_match('/linux/i', $useragent)
-        ) {
+        if ($s->containsAll(['iphone', 'linux'], false)) {
             return (new Mobile\XiangheFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/iphone/i', $useragent)
-            && preg_match('/adr/i', $useragent)
-            && preg_match('/ucweb/i', $useragent)
-        ) {
+        if ($s->containsAll(['iphone', 'adr', 'ucweb'], false)) {
             return (new Mobile\XiangheFactory($this->cache, $this->loader))->detect($useragent);
-        }
-
-        if (preg_match('/iphone/i', $useragent)
-            && preg_match('/blackberry/i', $useragent)
-        ) {
-            return (new Mobile\BlackBerryFactory($this->cache, $this->loader))->detect($useragent);
-        }
-
-        if (preg_match('/(ipad|iphone|ipod|like mac os x)/i', $useragent)
-            && !preg_match('/windows phone/i', $useragent)
-            && !preg_match('/ adr /i', $useragent)
-            && !preg_match('/iPodder/', $useragent)
-            && !preg_match('/tripadvisor/i', $useragent)
-        ) {
-            return (new Mobile\AppleFactory($this->cache, $this->loader))->detect($useragent);
         }
 
         if ($s->contains('samsung', false)) {
             return (new Mobile\SamsungFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('blackberry', false)) {
+            return (new Mobile\BlackBerryFactory($this->cache, $this->loader))->detect($useragent);
+        }
+
+        if ($s->containsAny(['ipad', 'ipod', 'iphone', 'like mac os x'], false)
+            && !$s->containsAny(['windows phone', ' adr ', 'ipodder', 'tripadvisor'], false)
+        ) {
+            return (new Mobile\AppleFactory($this->cache, $this->loader))->detect($useragent);
         }
 
         if ($s->contains('asus', false)) {
@@ -276,7 +265,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\BeidouFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/(blackberry|playbook|rim tablet|bb10)/i', $useragent)) {
+        if (preg_match('/(playbook|rim tablet|bb10)/i', $useragent)) {
             return (new Mobile\BlackBerryFactory($this->cache, $this->loader))->detect($useragent);
         }
 
