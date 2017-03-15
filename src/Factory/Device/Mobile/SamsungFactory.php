@@ -2598,7 +2598,7 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-i9500', $useragent);
         }
 
-        if ($s->contains('Galaxy( ', '-)S', false)) {
+        if ($s->containsAny(['Galaxy S', 'Galaxy-S'], false)) {
             return $this->loader->load('samsung gt-i9010', $useragent);
         }
 
@@ -2606,11 +2606,11 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('samsung gt-i9010', $useragent);
         }
 
-        if ($s->contains('GT-I9008L', false)) {
+        if ($s->contains('gt-i9008l', false)) {
             return $this->loader->load('gt-i9008l', $useragent);
         }
 
-        if ($s->contains('GT-I9008', false)) {
+        if ($s->contains('gt-i9008', false)) {
             return $this->loader->load('gt-i9008', $useragent);
         }
 
@@ -2838,6 +2838,10 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-b7350', $useragent);
         }
 
+        if ($s->contains('gt-b5510l', false)) {
+            return $this->loader->load('gt-b5510l', $useragent);
+        }
+
         if ($s->contains('gt-b5510', false)) {
             return $this->loader->load('gt-b5510', $useragent);
         }
@@ -2848,6 +2852,10 @@ class SamsungFactory implements Factory\FactoryInterface
 
         if ($s->contains('gt-b2710', false)) {
             return $this->loader->load('gt-b2710', $useragent);
+        }
+
+        if ($s->contains('gt-b2100i', false)) {
+            return $this->loader->load('gt-b2100i', $useragent);
         }
 
         if ($s->containsAny(['gt-b2100', 'b2100'], false)) {

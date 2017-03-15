@@ -105,6 +105,16 @@ class GioneeFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
+                'this is a fake ua to trigger the fallback',
+                'general Gionee Device',
+                'general Gionee Device',
+                'Gionee',
+                'Gionee',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
                 'Mozilla/5.0 (Linux; Android 6.0; M3 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36',
                 'M3',
                 'Marathon M3',
