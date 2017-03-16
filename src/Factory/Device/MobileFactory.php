@@ -76,7 +76,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if ($s->contains('nokia', false)) {
-            return (new Mobile\NokiaFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\NokiaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if ($s->containsAll(['iphone', 'android'], false)
@@ -188,7 +188,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/sony/i', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/twinovo/i', $useragent)) {
@@ -218,7 +218,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/playstation/i', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/(amazon|kindle|silk|kftt|kfot|kfjwi|kfsowi|kfthwi|sd4930ur)/i', $useragent)) {
@@ -749,7 +749,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/(C|D|E|F)\d{4}/', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/Aqua\_Star/', $useragent)) {
@@ -1389,15 +1389,15 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/SGP\d{3}/', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/sgpt\d{2}/i', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/xperia/i', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/VS\d{3}/', $useragent)) {
@@ -1441,19 +1441,19 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/(S|L|W|M)T\d{2}/', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/SK\d{2}/', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/SO\-\d{2}(B|C|D|E)/', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/L50u/', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/VIVO/', $useragent)) {
@@ -1565,7 +1565,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/A5000/', $useragent)) {
-            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/FUNC/', $useragent)) {
@@ -1749,7 +1749,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/ N1 /', $useragent)) {
-            return (new Mobile\NokiaFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\NokiaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/RM\-\d{3,4}/', $useragent) && !preg_match('/(nokia|microsoft)/i', $useragent)) {
@@ -1757,11 +1757,11 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/RM\-\d{3,4}/', $useragent)) {
-            return (new Mobile\NokiaFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\NokiaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/(5130c\-2|lumia|arm; 909|id336|genm14)/i', $useragent)) {
-            return (new Mobile\NokiaFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\NokiaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/N8000D/', $useragent)) {
