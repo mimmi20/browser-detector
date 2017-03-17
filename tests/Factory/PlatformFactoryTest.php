@@ -1348,6 +1348,13 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
                 'Apple Inc',
                 32,
             ],
+            [
+                'QuickTime\\\\xaa.7.0.4 (qtver=7.0.4;cpu=PPC;os=Mac 10.3.9)',
+                'Mac OS X',
+                '10.3.9',
+                'Apple Inc',
+                32,
+            ],
         ];
     }
 

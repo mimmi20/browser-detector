@@ -281,6 +281,13 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
                 'Google Inc',
                 null,
             ],
+            [
+                'QuickTime\\\\xaa.7.0.4 (qtver=7.0.4;cpu=PPC;os=Mac 10.3.9)',
+                'Quicktime',
+                '7.0.4',
+                'Apple Inc',
+                null,
+            ],
         ];
     }
 }
