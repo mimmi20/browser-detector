@@ -160,7 +160,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/nexus 6p/i', $useragent)) {
-            return (new Mobile\HuaweiFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HuaweiFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/nexus 6/i', $useragent)) {
@@ -168,11 +168,11 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/nexus (one|9)/i', $useragent)) {
-            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/nexus(hd2| evohd2)/i', $useragent)) {
-            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/pantech/i', $useragent)) {
@@ -202,7 +202,7 @@ class MobileFactory implements Factory\FactoryInterface
         if (preg_match('/htc/i', $useragent)
             && !preg_match('/WOHTC/', $useragent)
         ) {
-            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/(SmartTab7|Smart 4G)/', $useragent)) {
@@ -370,7 +370,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/p7mini/i', $useragent)) {
-            return (new Mobile\HuaweiFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HuaweiFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/faktorzwei/i', $useragent)) {
@@ -398,7 +398,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/huawei/i', $useragent)) {
-            return (new Mobile\HuaweiFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HuaweiFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/micromax/i', $useragent)) {
@@ -745,7 +745,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/ONE E\d{4}/', $useragent)) {
-            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/(C|D|E|F)\d{4}/', $useragent)) {
@@ -1097,7 +1097,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/(wildfire|desire)/i', $useragent)) {
-            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/a101it/i', $useragent)) {
@@ -1377,7 +1377,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/one (s|x)/i', $useragent) && !preg_match('/vodafone smart/i', $useragent)) {
-            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/(Tablet\-PC\-4|Kinder\-Tablet)/', $useragent)) {
@@ -1417,11 +1417,11 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/(APA9292KT|PJ83100|831C|Evo 3D GSM|Eris 2\.1)/', $useragent)) {
-            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/adr\d{4}/i', $useragent)) {
-            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/NEXT/', $useragent)) {
@@ -1833,7 +1833,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/dream/i', $useragent)) {
-            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/F10X/', $useragent)) {
@@ -1977,11 +1977,11 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/H30\-U10/', $useragent)) {
-            return (new Mobile\HuaweiFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HuaweiFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/KIW\-L21/', $useragent)) {
-            return (new Mobile\HuaweiFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HuaweiFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/PICOpad_S1/', $useragent)) {
@@ -2045,7 +2045,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/One/', $useragent)) {
-            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM; WIN (JR|HD)/', $useragent)) {

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,328 +47,641 @@ class HuaweiFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general huawei device';
-
-        if (preg_match('/nexus 6p/i', $useragent)) {
-            $deviceCode = 'nexus 6p';
-        } elseif (preg_match('/tag\-al00/i', $useragent)) {
-            $deviceCode = 'tag-al00';
-        } elseif (preg_match('/tag\-l21/i', $useragent)) {
-            $deviceCode = 'tag-l21';
-        } elseif (preg_match('/tag\-l01/i', $useragent)) {
-            $deviceCode = 'tag-l01';
-        } elseif (preg_match('/ale\-21/i', $useragent)) {
-            $deviceCode = 'ale 21';
-        } elseif (preg_match('/ale\-l21/i', $useragent)) {
-            $deviceCode = 'ale-l21';
-        } elseif (preg_match('/ale\-l02/i', $useragent)) {
-            $deviceCode = 'ale-l02';
-        } elseif (preg_match('/gra\-l09/i', $useragent)) {
-            $deviceCode = 'gra-l09';
-        } elseif (preg_match('/GRACE/', $useragent)) {
-            $deviceCode = 'grace';
-        } elseif (preg_match('/p7\-l10/i', $useragent)) {
-            $deviceCode = 'p7-l10';
-        } elseif (preg_match('/p7\-l09/i', $useragent)) {
-            $deviceCode = 'p7-l09';
-        } elseif (preg_match('/(p7 mini|p7mini)/i', $useragent)) {
-            $deviceCode = 'p7 mini';
-        } elseif (preg_match('/p2\-6011/i', $useragent)) {
-            $deviceCode = 'p2-6011';
-        } elseif (preg_match('/eva\-l19/i', $useragent)) {
-            $deviceCode = 'eva-l19';
-        } elseif (preg_match('/eva\-l09/i', $useragent)) {
-            $deviceCode = 'eva-l09';
-        } elseif (preg_match('/scl\-l01/i', $useragent)) {
-            $deviceCode = 'scl-l01';
-        } elseif (preg_match('/scl\-l21/i', $useragent)) {
-            $deviceCode = 'scl-l21';
-        } elseif (preg_match('/scl\-u31/i', $useragent)) {
-            $deviceCode = 'scl-u31';
-        } elseif (preg_match('/nxt\-l29/i', $useragent)) {
-            $deviceCode = 'nxt-l29';
-        } elseif (preg_match('/nxt\-al10/i', $useragent)) {
-            $deviceCode = 'nxt-al10';
-        } elseif (preg_match('/gem\-703l/i', $useragent)) {
-            $deviceCode = 'gem-703l';
-        } elseif (preg_match('/gem\-702l/i', $useragent)) {
-            $deviceCode = 'gem-702l';
-        } elseif (preg_match('/gem\-701l/i', $useragent)) {
-            $deviceCode = 'gem-701l';
-        } elseif (preg_match('/g630\-u251/i', $useragent)) {
-            $deviceCode = 'g630-u251';
-        } elseif (preg_match('/g630\-u20/i', $useragent)) {
-            $deviceCode = 'g630-u20';
-        } elseif (preg_match('/g620s\-l01/i', $useragent)) {
-            $deviceCode = 'g620s-l01';
-        } elseif (preg_match('/g610\-u20/i', $useragent)) {
-            $deviceCode = 'g610-u20';
-        } elseif (preg_match('/g7\-l11/i', $useragent)) {
-            $deviceCode = 'g7-l11';
-        } elseif (preg_match('/g7\-l01/i', $useragent)) {
-            $deviceCode = 'g7-l01';
-        } elseif (preg_match('/g6\-l11/i', $useragent)) {
-            $deviceCode = 'g6-l11';
-        } elseif (preg_match('/g6\-u10/i', $useragent)) {
-            $deviceCode = 'g6-u10';
-        } elseif (preg_match('/pe\-tl10/i', $useragent)) {
-            $deviceCode = 'pe-tl10';
-        } elseif (preg_match('/rio\-l01/i', $useragent)) {
-            $deviceCode = 'rio-l01';
-        } elseif (preg_match('/cun\-l21/i', $useragent)) {
-            $deviceCode = 'cun-l21';
-        } elseif (preg_match('/cun\-l03/i', $useragent)) {
-            $deviceCode = 'cun-l03';
-        } elseif (preg_match('/crr\-l09/i', $useragent)) {
-            $deviceCode = 'crr-l09';
-        } elseif (preg_match('/chc\-u01/i', $useragent)) {
-            $deviceCode = 'chc-u01';
-        } elseif (preg_match('/g750\-u10/i', $useragent)) {
-            $deviceCode = 'g750-u10';
-        } elseif (preg_match('/g750\-t00/i', $useragent)) {
-            $deviceCode = 'g750-t00';
-        } elseif (preg_match('/g740\-l00/i', $useragent)) {
-            $deviceCode = 'g740-l00';
-        } elseif (preg_match('/g730\-u27/i', $useragent)) {
-            $deviceCode = 'g730-u27';
-        } elseif (preg_match('/g730\-u10/i', $useragent)) {
-            $deviceCode = 'g730-u10';
-        } elseif (preg_match('/vns\-l31/i', $useragent)) {
-            $deviceCode = 'vns-l31';
-        } elseif (preg_match('/vns\-l21/i', $useragent)) {
-            $deviceCode = 'vns-l21';
-        } elseif (preg_match('/tit\-u02/i', $useragent)) {
-            $deviceCode = 'tit-u02';
-        } elseif (preg_match('/y635\-l21/i', $useragent)) {
-            $deviceCode = 'y635-l21';
-        } elseif (preg_match('/y625\-u51/i', $useragent)) {
-            $deviceCode = 'y625-u51';
-        } elseif (preg_match('/y625\-u21/i', $useragent)) {
-            $deviceCode = 'y625-u21';
-        } elseif (preg_match('/y600\-u20/i', $useragent)) {
-            $deviceCode = 'y600-u20';
-        } elseif (preg_match('/y600\-u00/i', $useragent)) {
-            $deviceCode = 'y600-u00';
-        } elseif (preg_match('/y560\-l01/i', $useragent)) {
-            $deviceCode = 'y560-l01';
-        } elseif (preg_match('/y550\-l01/i', $useragent)) {
-            $deviceCode = 'y550-l01';
-        } elseif (preg_match('/y540\-u01/i', $useragent)) {
-            $deviceCode = 'y540-u01';
-        } elseif (preg_match('/y530\-u00/i', $useragent)) {
-            $deviceCode = 'y530-u00';
-        } elseif (preg_match('/y511/i', $useragent)) {
-            $deviceCode = 'y511';
-        } elseif (preg_match('/y635\-l21/i', $useragent)) {
-            $deviceCode = 'y635-l21';
-        } elseif (preg_match('/y360\-u61/i', $useragent)) {
-            $deviceCode = 'y360-u61';
-        } elseif (preg_match('/y360\-u31/i', $useragent)) {
-            $deviceCode = 'y360-u31';
-        } elseif (preg_match('/y340\-u081/i', $useragent)) {
-            $deviceCode = 'y340-u081';
-        } elseif (preg_match('/y336\-u02/i', $useragent)) {
-            $deviceCode = 'y336-u02';
-        } elseif (preg_match('/y330\-u11/i', $useragent)) {
-            $deviceCode = 'y330-u11';
-        } elseif (preg_match('/y330\-u05/i', $useragent)) {
-            $deviceCode = 'y330-u05';
-        } elseif (preg_match('/y330\-u01/i', $useragent)) {
-            $deviceCode = 'y330-u01';
-        } elseif (preg_match('/y320\-u30/i', $useragent)) {
-            $deviceCode = 'y320-u30';
-        } elseif (preg_match('/y320\-u10/i', $useragent)) {
-            $deviceCode = 'y320-u10';
-        } elseif (preg_match('/y300/i', $useragent)) {
-            $deviceCode = 'y300';
-        } elseif (preg_match('/y220\-u10/i', $useragent)) {
-            $deviceCode = 'y220-u10';
-        } elseif (preg_match('/y210\-0100/i', $useragent)) {
-            $deviceCode = 'y210-0100';
-        } elseif (preg_match('/w2\-u00/i', $useragent)) {
-            $deviceCode = 'w2-u00';
-        } elseif (preg_match('/w1\-u00/i', $useragent)) {
-            $deviceCode = 'w1-u00';
-        } elseif (preg_match('/h30\-u10/i', $useragent)) {
-            $deviceCode = 'h30-u10';
-        } elseif (preg_match('/kiw\-l21/i', $useragent)) {
-            $deviceCode = 'kiw-l21';
-        } elseif (preg_match('/lyo\-l21/i', $useragent)) {
-            $deviceCode = 'lyo-l21';
-        } elseif (preg_match('/vodafone 858/i', $useragent)) {
-            $deviceCode = 'vodafone 858';
-        } elseif (preg_match('/vodafone 845/i', $useragent)) {
-            $deviceCode = 'vodafone 845';
-        } elseif (preg_match('/u9510/i', $useragent)) {
-            $deviceCode = 'u9510';
-        } elseif (preg_match('/u9508/i', $useragent)) {
-            $deviceCode = 'u9508';
-        } elseif (preg_match('/u9200/i', $useragent)) {
-            $deviceCode = 'u9200';
-        } elseif (preg_match('/u8950n\-1/i', $useragent)) {
-            $deviceCode = 'u8950n-1';
-        } elseif (preg_match('/u8950n/i', $useragent)) {
-            $deviceCode = 'u8950n';
-        } elseif (preg_match('/u8950d/i', $useragent)) {
-            $deviceCode = 'u8950d';
-        } elseif (preg_match('/u8950\-1/i', $useragent)) {
-            $deviceCode = 'u8950-1';
-        } elseif (preg_match('/u8950/i', $useragent)) {
-            $deviceCode = 'u8950';
-        } elseif (preg_match('/u8860/i', $useragent)) {
-            $deviceCode = 'u8860';
-        } elseif (preg_match('/u8850/i', $useragent)) {
-            $deviceCode = 'u8850';
-        } elseif (preg_match('/u8825/i', $useragent)) {
-            $deviceCode = 'u8825';
-        } elseif (preg_match('/u8815/i', $useragent)) {
-            $deviceCode = 'u8815';
-        } elseif (preg_match('/u8800/i', $useragent)) {
-            $deviceCode = 'u8800';
-        } elseif (preg_match('/HUAWEI U8666 Build\/HuaweiU8666E/i', $useragent)) {
-            $deviceCode = 'u8666';
-        } elseif (preg_match('/u8666e/i', $useragent)) {
-            $deviceCode = 'u8666e';
-        } elseif (preg_match('/u8666/i', $useragent)) {
-            $deviceCode = 'u8666';
-        } elseif (preg_match('/u8655/i', $useragent)) {
-            $deviceCode = 'u8655';
-        } elseif (preg_match('/huawei\-u8651t/i', $useragent)) {
-            $deviceCode = 'u8651t';
-        } elseif (preg_match('/huawei\-u8651s/i', $useragent)) {
-            $deviceCode = 'u8651s';
-        } elseif (preg_match('/huawei\-u8651/i', $useragent)) {
-            $deviceCode = 'u8651';
-        } elseif (preg_match('/u8650/i', $useragent)) {
-            $deviceCode = 'u8650';
-        } elseif (preg_match('/u8600/i', $useragent)) {
-            $deviceCode = 'u8600';
-        } elseif (preg_match('/u8520/i', $useragent)) {
-            $deviceCode = 'u8520';
-        } elseif (preg_match('/u8510/i', $useragent)) {
-            $deviceCode = 's41hw';
-        } elseif (preg_match('/u8500/i', $useragent)) {
-            $deviceCode = 'u8500';
-        } elseif (preg_match('/u8350/i', $useragent)) {
-            $deviceCode = 'u8350';
-        } elseif (preg_match('/u8185/i', $useragent)) {
-            $deviceCode = 'u8185';
-        } elseif (preg_match('/u8180/i', $useragent)) {
-            $deviceCode = 'u8180';
-        } elseif (preg_match('/(u8110|tsp21)/i', $useragent)) {
-            $deviceCode = 'u8110';
-        } elseif (preg_match('/u8100/i', $useragent)) {
-            $deviceCode = 'u8100';
-        } elseif (preg_match('/u7510/i', $useragent)) {
-            $deviceCode = 'u7510';
-        } elseif (preg_match('/s8600/i', $useragent)) {
-            $deviceCode = 's8600';
-        } elseif (preg_match('/p6\-u06/i', $useragent)) {
-            $deviceCode = 'p6-u06';
-        } elseif (preg_match('/p6 s\-u06/i', $useragent)) {
-            $deviceCode = 'p6 s-u06';
-        } elseif (preg_match('/mt7\-tl10/i', $useragent)) {
-            $deviceCode = 'mt7-tl10';
-        } elseif (preg_match('/(mt7\-l09|jazz)/i', $useragent)) {
-            $deviceCode = 'mt7-l09';
-        } elseif (preg_match('/mt2\-l01/i', $useragent)) {
-            $deviceCode = 'mt2-l01';
-        } elseif (preg_match('/mt1\-u06/i', $useragent)) {
-            $deviceCode = 'mt1-u06';
-        } elseif (preg_match('/s8\-701w/i', $useragent)) {
-            $deviceCode = 's8-701w';
-        } elseif (preg_match('/(t1\-701u|t1 7\.0)/i', $useragent)) {
-            $deviceCode = 't1-701u';
-        } elseif (preg_match('/t1\-a21l/i', $useragent)) {
-            $deviceCode = 't1-a21l';
-        } elseif (preg_match('/t1\-a21w/i', $useragent)) {
-            $deviceCode = 't1-a21w';
-        } elseif (preg_match('/m2\-a01l/i', $useragent)) {
-            $deviceCode = 'm2-a01l';
-        } elseif (preg_match('/fdr\-a01l/i', $useragent)) {
-            $deviceCode = 'fdr-a01l';
-        } elseif (preg_match('/fdr\-a01w/i', $useragent)) {
-            $deviceCode = 'fdr-a01w';
-        } elseif (preg_match('/m2\-a01w/i', $useragent)) {
-            $deviceCode = 'm2-a01w';
-        } elseif (preg_match('/m2\-801w/i', $useragent)) {
-            $deviceCode = 'm2-801w';
-        } elseif (preg_match('/m2\-801l/i', $useragent)) {
-            $deviceCode = 'm2-801l';
-        } elseif (preg_match('/ath\-ul01/i', $useragent)) {
-            $deviceCode = 'ath-ul01';
-        } elseif (preg_match('/mediapad x1 7\.0/i', $useragent)) {
-            $deviceCode = 'mediapad x1 7.0';
-        } elseif (preg_match('/mediapad t1 8\.0/i', $useragent)) {
-            $deviceCode = 's8-701u';
-        } elseif (preg_match('/mediapad m1 8\.0/i', $useragent)) {
-            $deviceCode = 'mediapad m1 8.0';
-        } elseif (preg_match('/mediapad 10 link\+/i', $useragent)) {
-            $deviceCode = 'mediapad 10+';
-        } elseif (preg_match('/mediapad 10 fhd/i', $useragent)) {
-            $deviceCode = 'mediapad 10 fhd';
-        } elseif (preg_match('/mediapad 10 link/i', $useragent)) {
-            $deviceCode = 'huawei s7-301w';
-        } elseif (preg_match('/mediapad 7 lite/i', $useragent)) {
-            $deviceCode = 'mediapad 7 lite';
-        } elseif (preg_match('/mediapad 7 classic/i', $useragent)) {
-            $deviceCode = 'mediapad 7 classic';
-        } elseif (preg_match('/mediapad 7 youth/i', $useragent)) {
-            $deviceCode = 'mediapad 7 youth';
-        } elseif (preg_match('/mediapad/i', $useragent)) {
-            $deviceCode = 'huawei s7-301w';
-        } elseif (preg_match('/m860/i', $useragent)) {
-            $deviceCode = 'm860';
-        } elseif (preg_match('/m635/i', $useragent)) {
-            $deviceCode = 'm635';
-        } elseif (preg_match('/ideos s7 slim/i', $useragent)) {
-            $deviceCode = 's7_slim';
-        } elseif (preg_match('/ideos s7/i', $useragent)) {
-            $deviceCode = 'ideos s7';
-        } elseif (preg_match('/ideos /i', $useragent)) {
-            $deviceCode = 'bm-swu300';
-        } elseif (preg_match('/g510\-0100/i', $useragent)) {
-            $deviceCode = 'g510-0100';
-        } elseif (preg_match('/g7300/i', $useragent)) {
-            $deviceCode = 'g7300';
-        } elseif (preg_match('/g6609/i', $useragent)) {
-            $deviceCode = 'g6609';
-        } elseif (preg_match('/g6600/i', $useragent)) {
-            $deviceCode = 'g6600';
-        } elseif (preg_match('/g700\-u10/i', $useragent)) {
-            $deviceCode = 'g700-u10';
-        } elseif (preg_match('/g527\-u081/i', $useragent)) {
-            $deviceCode = 'g527-u081';
-        } elseif (preg_match('/g525\-u00/i', $useragent)) {
-            $deviceCode = 'g525-u00';
-        } elseif (preg_match('/g510/i', $useragent)) {
-            $deviceCode = 'g510';
-        } elseif (preg_match('/hn3\-u01/i', $useragent)) {
-            $deviceCode = 'hn3-u01';
-        } elseif (preg_match('/hol\-u19/i', $useragent)) {
-            $deviceCode = 'hol-u19';
-        } elseif (preg_match('/vie\-l09/i', $useragent)) {
-            $deviceCode = 'vie-l09';
-        } elseif (preg_match('/vie\-al10/i', $useragent)) {
-            $deviceCode = 'vie-al10';
-        } elseif (preg_match('/frd\-l09/i', $useragent)) {
-            $deviceCode = 'frd-l09';
-        } elseif (preg_match('/nmo\-l31/i', $useragent)) {
-            $deviceCode = 'nmo-l31';
-        } elseif (preg_match('/d2\-0082/i', $useragent)) {
-            $deviceCode = 'd2-0082';
-        } elseif (preg_match('/p8max/i', $useragent)) {
-            $deviceCode = 'p8max';
-        } elseif (preg_match('/4afrika/i', $useragent)) {
-            $deviceCode = '4afrika';
+        if ($s->contains('nexus 6p', false)) {
+            return $this->loader->load('nexus 6p', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('tag-al00', false)) {
+            return $this->loader->load('tag-al00', $useragent);
+        }
+
+        if ($s->contains('tag-l21', false)) {
+            return $this->loader->load('tag-l21', $useragent);
+        }
+
+        if ($s->contains('tag-l01', false)) {
+            return $this->loader->load('tag-l01', $useragent);
+        }
+
+        if ($s->contains('ale-21', false)) {
+            return $this->loader->load('ale 21', $useragent);
+        }
+
+        if ($s->contains('ale-l21', false)) {
+            return $this->loader->load('ale-l21', $useragent);
+        }
+
+        if ($s->contains('ale-l02', false)) {
+            return $this->loader->load('ale-l02', $useragent);
+        }
+
+        if ($s->contains('gra-l09', false)) {
+            return $this->loader->load('gra-l09', $useragent);
+        }
+
+        if ($s->contains('GRACE', false)) {
+            return $this->loader->load('grace', $useragent);
+        }
+
+        if ($s->contains('p7-l10', false)) {
+            return $this->loader->load('p7-l10', $useragent);
+        }
+
+        if ($s->contains('p7-l09', false)) {
+            return $this->loader->load('p7-l09', $useragent);
+        }
+
+        if ($s->containsAny(['p7 mini', 'p7mini'], false)) {
+            return $this->loader->load('p7 mini', $useragent);
+        }
+
+        if ($s->contains('p2-6011', false)) {
+            return $this->loader->load('p2-6011', $useragent);
+        }
+
+        if ($s->contains('eva-l19', false)) {
+            return $this->loader->load('eva-l19', $useragent);
+        }
+
+        if ($s->contains('eva-l09', false)) {
+            return $this->loader->load('eva-l09', $useragent);
+        }
+
+        if ($s->contains('scl-l01', false)) {
+            return $this->loader->load('scl-l01', $useragent);
+        }
+
+        if ($s->contains('scl-l21', false)) {
+            return $this->loader->load('scl-l21', $useragent);
+        }
+
+        if ($s->contains('scl-u31', false)) {
+            return $this->loader->load('scl-u31', $useragent);
+        }
+
+        if ($s->contains('nxt-l29', false)) {
+            return $this->loader->load('nxt-l29', $useragent);
+        }
+
+        if ($s->contains('nxt-al10', false)) {
+            return $this->loader->load('nxt-al10', $useragent);
+        }
+
+        if ($s->contains('gem-703l', false)) {
+            return $this->loader->load('gem-703l', $useragent);
+        }
+
+        if ($s->contains('gem-702l', false)) {
+            return $this->loader->load('gem-702l', $useragent);
+        }
+
+        if ($s->contains('gem-701l', false)) {
+            return $this->loader->load('gem-701l', $useragent);
+        }
+
+        if ($s->contains('g630-u251', false)) {
+            return $this->loader->load('g630-u251', $useragent);
+        }
+
+        if ($s->contains('g630-u20', false)) {
+            return $this->loader->load('g630-u20', $useragent);
+        }
+
+        if ($s->contains('g620s-l01', false)) {
+            return $this->loader->load('g620s-l01', $useragent);
+        }
+
+        if ($s->contains('g610-u20', false)) {
+            return $this->loader->load('g610-u20', $useragent);
+        }
+
+        if ($s->contains('g7-l11', false)) {
+            return $this->loader->load('g7-l11', $useragent);
+        }
+
+        if ($s->contains('g7-l01', false)) {
+            return $this->loader->load('g7-l01', $useragent);
+        }
+
+        if ($s->contains('g6-l11', false)) {
+            return $this->loader->load('g6-l11', $useragent);
+        }
+
+        if ($s->contains('g6-u10', false)) {
+            return $this->loader->load('g6-u10', $useragent);
+        }
+
+        if ($s->contains('pe-tl10', false)) {
+            return $this->loader->load('pe-tl10', $useragent);
+        }
+
+        if ($s->contains('rio-l01', false)) {
+            return $this->loader->load('rio-l01', $useragent);
+        }
+
+        if ($s->contains('cun-l21', false)) {
+            return $this->loader->load('cun-l21', $useragent);
+        }
+
+        if ($s->contains('cun-l03', false)) {
+            return $this->loader->load('cun-l03', $useragent);
+        }
+
+        if ($s->contains('crr-l09', false)) {
+            return $this->loader->load('crr-l09', $useragent);
+        }
+
+        if ($s->contains('chc-u01', false)) {
+            return $this->loader->load('chc-u01', $useragent);
+        }
+
+        if ($s->contains('g750-u10', false)) {
+            return $this->loader->load('g750-u10', $useragent);
+        }
+
+        if ($s->contains('g750-t00', false)) {
+            return $this->loader->load('g750-t00', $useragent);
+        }
+
+        if ($s->contains('g740-l00', false)) {
+            return $this->loader->load('g740-l00', $useragent);
+        }
+
+        if ($s->contains('g730-u27', false)) {
+            return $this->loader->load('g730-u27', $useragent);
+        }
+
+        if ($s->contains('g730-u10', false)) {
+            return $this->loader->load('g730-u10', $useragent);
+        }
+
+        if ($s->contains('vns-l31', false)) {
+            return $this->loader->load('vns-l31', $useragent);
+        }
+
+        if ($s->contains('vns-l21', false)) {
+            return $this->loader->load('vns-l21', $useragent);
+        }
+
+        if ($s->contains('tit-u02', false)) {
+            return $this->loader->load('tit-u02', $useragent);
+        }
+
+        if ($s->contains('y635-l21', false)) {
+            return $this->loader->load('y635-l21', $useragent);
+        }
+
+        if ($s->contains('y625-u51', false)) {
+            return $this->loader->load('y625-u51', $useragent);
+        }
+
+        if ($s->contains('y625-u21', false)) {
+            return $this->loader->load('y625-u21', $useragent);
+        }
+
+        if ($s->contains('y600-u20', false)) {
+            return $this->loader->load('y600-u20', $useragent);
+        }
+
+        if ($s->contains('y600-u00', false)) {
+            return $this->loader->load('y600-u00', $useragent);
+        }
+
+        if ($s->contains('y560-l01', false)) {
+            return $this->loader->load('y560-l01', $useragent);
+        }
+
+        if ($s->contains('y550-l01', false)) {
+            return $this->loader->load('y550-l01', $useragent);
+        }
+
+        if ($s->contains('y540-u01', false)) {
+            return $this->loader->load('y540-u01', $useragent);
+        }
+
+        if ($s->contains('y530-u00', false)) {
+            return $this->loader->load('y530-u00', $useragent);
+        }
+
+        if ($s->contains('y511', false)) {
+            return $this->loader->load('y511', $useragent);
+        }
+
+        if ($s->contains('y635-l21', false)) {
+            return $this->loader->load('y635-l21', $useragent);
+        }
+
+        if ($s->contains('y360-u61', false)) {
+            return $this->loader->load('y360-u61', $useragent);
+        }
+
+        if ($s->contains('y360-u31', false)) {
+            return $this->loader->load('y360-u31', $useragent);
+        }
+
+        if ($s->contains('y340-u081', false)) {
+            return $this->loader->load('y340-u081', $useragent);
+        }
+
+        if ($s->contains('y336-u02', false)) {
+            return $this->loader->load('y336-u02', $useragent);
+        }
+
+        if ($s->contains('y330-u11', false)) {
+            return $this->loader->load('y330-u11', $useragent);
+        }
+
+        if ($s->contains('y330-u05', false)) {
+            return $this->loader->load('y330-u05', $useragent);
+        }
+
+        if ($s->contains('y330-u01', false)) {
+            return $this->loader->load('y330-u01', $useragent);
+        }
+
+        if ($s->contains('y320-u30', false)) {
+            return $this->loader->load('y320-u30', $useragent);
+        }
+
+        if ($s->contains('y320-u10', false)) {
+            return $this->loader->load('y320-u10', $useragent);
+        }
+
+        if ($s->contains('y300', false)) {
+            return $this->loader->load('y300', $useragent);
+        }
+
+        if ($s->contains('y220-u10', false)) {
+            return $this->loader->load('y220-u10', $useragent);
+        }
+
+        if ($s->contains('y210-0100', false)) {
+            return $this->loader->load('y210-0100', $useragent);
+        }
+
+        if ($s->contains('w2-u00', false)) {
+            return $this->loader->load('w2-u00', $useragent);
+        }
+
+        if ($s->contains('w1-u00', false)) {
+            return $this->loader->load('w1-u00', $useragent);
+        }
+
+        if ($s->contains('h30-u10', false)) {
+            return $this->loader->load('h30-u10', $useragent);
+        }
+
+        if ($s->contains('kiw-l21', false)) {
+            return $this->loader->load('kiw-l21', $useragent);
+        }
+
+        if ($s->contains('lyo-l21', false)) {
+            return $this->loader->load('lyo-l21', $useragent);
+        }
+
+        if ($s->contains('vodafone 858', false)) {
+            return $this->loader->load('vodafone 858', $useragent);
+        }
+
+        if ($s->contains('vodafone 845', false)) {
+            return $this->loader->load('vodafone 845', $useragent);
+        }
+
+        if ($s->contains('u9510e', false)) {
+            return $this->loader->load('u9510e', $useragent);
+        }
+
+        if ($s->contains('u9510', false)) {
+            return $this->loader->load('u9510', $useragent);
+        }
+
+        if ($s->contains('u9508', false)) {
+            return $this->loader->load('u9508', $useragent);
+        }
+
+        if ($s->contains('u9200', false)) {
+            return $this->loader->load('u9200', $useragent);
+        }
+
+        if ($s->contains('u8950n-1', false)) {
+            return $this->loader->load('u8950n-1', $useragent);
+        }
+
+        if ($s->contains('u8950n', false)) {
+            return $this->loader->load('u8950n', $useragent);
+        }
+
+        if ($s->contains('u8950d', false)) {
+            return $this->loader->load('u8950d', $useragent);
+        }
+
+        if ($s->contains('u8950-1', false)) {
+            return $this->loader->load('u8950-1', $useragent);
+        }
+
+        if ($s->contains('u8950', false)) {
+            return $this->loader->load('u8950', $useragent);
+        }
+
+        if ($s->contains('u8860', false)) {
+            return $this->loader->load('u8860', $useragent);
+        }
+
+        if ($s->contains('u8850', false)) {
+            return $this->loader->load('u8850', $useragent);
+        }
+
+        if ($s->contains('u8825', false)) {
+            return $this->loader->load('u8825', $useragent);
+        }
+
+        if ($s->contains('u8815', false)) {
+            return $this->loader->load('u8815', $useragent);
+        }
+
+        if ($s->contains('u8800', false)) {
+            return $this->loader->load('u8800', $useragent);
+        }
+
+        if ($s->contains('HUAWEI U8666 Build/HuaweiU8666E', false)) {
+            return $this->loader->load('u8666', $useragent);
+        }
+
+        if ($s->contains('u8666e', false)) {
+            return $this->loader->load('u8666e', $useragent);
+        }
+
+        if ($s->contains('u8666', false)) {
+            return $this->loader->load('u8666', $useragent);
+        }
+
+        if ($s->contains('u8655', false)) {
+            return $this->loader->load('u8655', $useragent);
+        }
+
+        if ($s->contains('huawei-u8651t', false)) {
+            return $this->loader->load('u8651t', $useragent);
+        }
+
+        if ($s->contains('huawei-u8651s', false)) {
+            return $this->loader->load('u8651s', $useragent);
+        }
+
+        if ($s->contains('huawei-u8651', false)) {
+            return $this->loader->load('u8651', $useragent);
+        }
+
+        if ($s->contains('u8650', false)) {
+            return $this->loader->load('u8650', $useragent);
+        }
+
+        if ($s->contains('u8600', false)) {
+            return $this->loader->load('u8600', $useragent);
+        }
+
+        if ($s->contains('u8520', false)) {
+            return $this->loader->load('u8520', $useragent);
+        }
+
+        if ($s->contains('u8510', false)) {
+            return $this->loader->load('s41hw', $useragent);
+        }
+
+        if ($s->contains('u8500', false)) {
+            return $this->loader->load('u8500', $useragent);
+        }
+
+        if ($s->contains('u8350', false)) {
+            return $this->loader->load('u8350', $useragent);
+        }
+
+        if ($s->contains('u8185', false)) {
+            return $this->loader->load('u8185', $useragent);
+        }
+
+        if ($s->contains('u8180', false)) {
+            return $this->loader->load('u8180', $useragent);
+        }
+
+        if ($s->containsAny(['u8110', 'tsp21'], false)) {
+            return $this->loader->load('u8110', $useragent);
+        }
+
+        if ($s->contains('u8100', false)) {
+            return $this->loader->load('u8100', $useragent);
+        }
+
+        if ($s->contains('u7510', false)) {
+            return $this->loader->load('u7510', $useragent);
+        }
+
+        if ($s->contains('s8600', false)) {
+            return $this->loader->load('s8600', $useragent);
+        }
+
+        if ($s->contains('p6-u06', false)) {
+            return $this->loader->load('p6-u06', $useragent);
+        }
+
+        if ($s->contains('p6 s-u06', false)) {
+            return $this->loader->load('p6 s-u06', $useragent);
+        }
+
+        if ($s->contains('mt7-tl10', false)) {
+            return $this->loader->load('mt7-tl10', $useragent);
+        }
+
+        if ($s->containsAny(['mt7-l09', 'jazz'], false)) {
+            return $this->loader->load('mt7-l09', $useragent);
+        }
+
+        if ($s->contains('mt2-l01', false)) {
+            return $this->loader->load('mt2-l01', $useragent);
+        }
+
+        if ($s->contains('mt1-u06', false)) {
+            return $this->loader->load('mt1-u06', $useragent);
+        }
+
+        if ($s->contains('s8-701w', false)) {
+            return $this->loader->load('s8-701w', $useragent);
+        }
+
+        if ($s->containsAny(['t1-701u', 't1 7.0'], false)) {
+            return $this->loader->load('t1-701u', $useragent);
+        }
+
+        if ($s->contains('t1-a21l', false)) {
+            return $this->loader->load('t1-a21l', $useragent);
+        }
+
+        if ($s->contains('t1-a21w', false)) {
+            return $this->loader->load('t1-a21w', $useragent);
+        }
+
+        if ($s->contains('m2-a01l', false)) {
+            return $this->loader->load('m2-a01l', $useragent);
+        }
+
+        if ($s->contains('fdr-a01l', false)) {
+            return $this->loader->load('fdr-a01l', $useragent);
+        }
+
+        if ($s->contains('fdr-a01w', false)) {
+            return $this->loader->load('fdr-a01w', $useragent);
+        }
+
+        if ($s->contains('m2-a01w', false)) {
+            return $this->loader->load('m2-a01w', $useragent);
+        }
+
+        if ($s->contains('m2-801w', false)) {
+            return $this->loader->load('m2-801w', $useragent);
+        }
+
+        if ($s->contains('m2-801l', false)) {
+            return $this->loader->load('m2-801l', $useragent);
+        }
+
+        if ($s->contains('ath-ul01', false)) {
+            return $this->loader->load('ath-ul01', $useragent);
+        }
+
+        if ($s->contains('mediapad x1 7.0', false)) {
+            return $this->loader->load('mediapad x1 7.0', $useragent);
+        }
+
+        if ($s->contains('mediapad t1 8.0', false)) {
+            return $this->loader->load('s8-701u', $useragent);
+        }
+
+        if ($s->contains('mediapad m1 8.0', false)) {
+            return $this->loader->load('mediapad m1 8.0', $useragent);
+        }
+
+        if ($s->contains('mediapad 10 link+', false)) {
+            return $this->loader->load('mediapad 10+', $useragent);
+        }
+
+        if ($s->contains('mediapad 10 fhd', false)) {
+            return $this->loader->load('mediapad 10 fhd', $useragent);
+        }
+
+        if ($s->contains('mediapad 10 link', false)) {
+            return $this->loader->load('huawei s7-301w', $useragent);
+        }
+
+        if ($s->contains('mediapad 7 lite', false)) {
+            return $this->loader->load('mediapad 7 lite', $useragent);
+        }
+
+        if ($s->contains('mediapad 7 classic', false)) {
+            return $this->loader->load('mediapad 7 classic', $useragent);
+        }
+
+        if ($s->contains('mediapad 7 youth', false)) {
+            return $this->loader->load('mediapad 7 youth', $useragent);
+        }
+
+        if ($s->contains('mediapad', false)) {
+            return $this->loader->load('huawei s7-301w', $useragent);
+        }
+
+        if ($s->contains('m860', false)) {
+            return $this->loader->load('m860', $useragent);
+        }
+
+        if ($s->contains('m635', false)) {
+            return $this->loader->load('m635', $useragent);
+        }
+
+        if ($s->contains('ideos s7 slim', false)) {
+            return $this->loader->load('s7_slim', $useragent);
+        }
+
+        if ($s->contains('ideos s7', false)) {
+            return $this->loader->load('ideos s7', $useragent);
+        }
+
+        if ($s->contains('ideos ', false)) {
+            return $this->loader->load('bm-swu300', $useragent);
+        }
+
+        if ($s->contains('g510-0100', false)) {
+            return $this->loader->load('g510-0100', $useragent);
+        }
+
+        if ($s->contains('g7300', false)) {
+            return $this->loader->load('g7300', $useragent);
+        }
+
+        if ($s->contains('g6609', false)) {
+            return $this->loader->load('g6609', $useragent);
+        }
+
+        if ($s->contains('g6600', false)) {
+            return $this->loader->load('g6600', $useragent);
+        }
+
+        if ($s->contains('g700-u10', false)) {
+            return $this->loader->load('g700-u10', $useragent);
+        }
+
+        if ($s->contains('g527-u081', false)) {
+            return $this->loader->load('g527-u081', $useragent);
+        }
+
+        if ($s->contains('g525-u00', false)) {
+            return $this->loader->load('g525-u00', $useragent);
+        }
+
+        if ($s->contains('g510', false)) {
+            return $this->loader->load('g510', $useragent);
+        }
+
+        if ($s->contains('hn3-u01', false)) {
+            return $this->loader->load('hn3-u01', $useragent);
+        }
+
+        if ($s->contains('hol-u19', false)) {
+            return $this->loader->load('hol-u19', $useragent);
+        }
+
+        if ($s->contains('vie-l09', false)) {
+            return $this->loader->load('vie-l09', $useragent);
+        }
+
+        if ($s->contains('vie-al10', false)) {
+            return $this->loader->load('vie-al10', $useragent);
+        }
+
+        if ($s->contains('frd-l09', false)) {
+            return $this->loader->load('frd-l09', $useragent);
+        }
+
+        if ($s->contains('nmo-l31', false)) {
+            return $this->loader->load('nmo-l31', $useragent);
+        }
+
+        if ($s->contains('d2-0082', false)) {
+            return $this->loader->load('d2-0082', $useragent);
+        }
+
+        if ($s->contains('p8max', false)) {
+            return $this->loader->load('p8max', $useragent);
+        }
+
+        if ($s->contains('4afrika', false)) {
+            return $this->loader->load('4afrika', $useragent);
+        }
+
+        return $this->loader->load('general huawei device', $useragent);
     }
 }

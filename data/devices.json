@@ -9547,7 +9547,7 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
-    "dualOrientation": false,
+    "dualOrientation": true,
     "colors": null,
     "smsSupport": true,
     "nfcSupport": true,
@@ -12019,8 +12019,8 @@
     "hasQwertyKeyboard": false
   },
   "sensation xe beats z715e": {
-    "codename": "Sensation XE Beats Z715e",
-    "marketingName": "Sensation",
+    "codename": "Z715e",
+    "marketingName": "Sensation XE with Beats Audio",
     "manufacturer": "Htc",
     "brand": "Htc",
     "version": null,
@@ -12886,8 +12886,8 @@
     "hasQwertyKeyboard": false
   },
   "s7_slim": {
-    "codename": "S7_Slim",
-    "marketingName": "S7_Slim",
+    "codename": "S7 Slim",
+    "marketingName": "S7 Slim",
     "manufacturer": "Huawei",
     "brand": "Huawei",
     "version": null,
@@ -14197,6 +14197,23 @@
   "u9510": {
     "codename": "U9510",
     "marketingName": "U9510",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "version": null,
+    "platform": "android",
+    "type": "mobile-phone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": false,
+    "colors": null,
+    "smsSupport": true,
+    "nfcSupport": true,
+    "hasQwertyKeyboard": false
+  },
+  "u9510e": {
+    "codename": "U9510E",
+    "marketingName": "U9510E",
     "manufacturer": "Huawei",
     "brand": "Huawei",
     "version": null,
