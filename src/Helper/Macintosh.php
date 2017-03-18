@@ -60,6 +60,7 @@ class Macintosh
             'integrity',
             'camino',
             'pubsub',
+            'os=Mac',
         ];
 
         if (!$s->containsAny($mac, false)) {

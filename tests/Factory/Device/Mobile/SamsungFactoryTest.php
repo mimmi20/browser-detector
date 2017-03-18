@@ -6992,7 +6992,7 @@ class SamsungFactoryTest extends \PHPUnit\Framework\TestCase
                 'Samsung',
                 'TV Device',
                 false,
-                'unknown',
+                null,
             ],
         ];
     }

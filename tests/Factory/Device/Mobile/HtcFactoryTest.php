@@ -1075,16 +1075,6 @@ class HtcFactoryTest extends \PHPUnit\Framework\TestCase
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Vodafone Smart Tab III 7 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36',
-                'PJ401',
-                'One S',
-                'HTC',
-                'HTC',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
                 'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; SensationXL_Beats_X315e Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
                 'X315e',
                 'Sensation XL with Beats Audio',

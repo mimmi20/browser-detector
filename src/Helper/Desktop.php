@@ -38,15 +38,15 @@ class Desktop
 
     public function isDesktopDevice()
     {
-        if (preg_match('/firefox/i', $this->useragent) && preg_match('/anonym/i', $this->useragent)) {
-            return true;
-        }
-
-        if (preg_match('/trident/i', $this->useragent) && preg_match('/anonym/i', $this->useragent)) {
-            return true;
-        }
-
         $s = new Stringy($this->useragent);
+
+        if ($s->containsAll(['firefox', 'anonym'], false)) {
+            return true;
+        }
+
+        if ($s->containsAll(['trident', 'anonym'], false)) {
+            return true;
+        }
 
         if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return false;

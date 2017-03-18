@@ -138,7 +138,7 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
                 'SPV',
                 'Mobile Phone',
                 true,
-                'unknown',
+                null,
             ],
             [
                 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160',
@@ -778,7 +778,7 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
                 'Samsung',
                 'TV Device',
                 false,
-                'unknown',
+                null,
             ],
             [
                 'Mozilla/5.0 (Linux; U; Android 4.2.1; en-US; One Build/MIUI 4.8.29) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.8.8.730 U3/0.8.0 Mobile Safari/534.30',
@@ -1552,7 +1552,7 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 'Mozilla/5.0 (Series40; Nokia301.1/08.02; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.55',
-                '301.1',
+                '301',
                 'Asha 301',
                 'Nokia',
                 'Nokia',
@@ -15828,7 +15828,7 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
                 'Samsung',
                 'TV Device',
                 false,
-                'unknown',
+                null,
             ],
             [
                 'UCWEB/2.0 (Windows; U; wds 8.10; en-US; NOKIA; RM-914_im_mea3_394) U2/1.0.0 UCBrowser/4.2.1.541 U2/1.0.0 Mobile',
@@ -17134,16 +17134,6 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
                 'Mozilla/5.0 (Linux; Android 4.1.1; HTC One X Build/JRO03C) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19',
                 'PJ83100',
                 'One X',
-                'HTC',
-                'HTC',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Vodafone Smart Tab III 7 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36',
-                'PJ401',
-                'One S',
                 'HTC',
                 'HTC',
                 'Mobile Phone',
