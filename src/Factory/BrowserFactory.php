@@ -14,8 +14,8 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
-use UaResult\Os\OsInterface;
 use Stringy\Stringy;
+use UaResult\Os\OsInterface;
 
 /**
  * Browser detection class

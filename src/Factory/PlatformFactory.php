@@ -80,9 +80,9 @@ class PlatformFactory implements FactoryInterface
 
             if (!$doMatchPhone || $matchesPhone[1] >= 7) {
                 return $this->loader->load('windows phone', $useragent);
-            } else {
-                return $this->loader->load('windows mobile os', $useragent);
             }
+
+            return $this->loader->load('windows mobile os', $useragent);
         }
 
         if ($windowsHelper->isMobileWindows()) {
@@ -90,15 +90,15 @@ class PlatformFactory implements FactoryInterface
                 return $this->loader->load('windows phone', $useragent);
             }
 
-        if (preg_match('/Windows Mobile ([\d]+)/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
+            if (preg_match('/Windows Mobile ([\d]+)/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
                 return $this->loader->load('windows phone', $useragent);
             }
 
-        if (preg_match('/Windows NT ([\d\.]+); ARM; Lumia/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
+            if (preg_match('/Windows NT ([\d\.]+); ARM; Lumia/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
                 return $this->loader->load('windows phone', $useragent);
-            } else {
-                return $this->loader->load('windows mobile os', $useragent);
             }
+
+            return $this->loader->load('windows mobile os', $useragent);
         }
 
         if ($isWindows && $s->contains('ARM;')) {
