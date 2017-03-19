@@ -45,7 +45,7 @@ class Macosx implements VersionCacheFactoryInterface
     {
         $detectedVersion = VersionFactory::detectVersion(
             $useragent,
-            ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X']
+            ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac ']
         );
 
         if ($detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) > 999) {

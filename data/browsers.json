@@ -9521,10 +9521,12 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Quicktime"
+        "qtver=",
+        "Quicktime",
+        "QuickTime"
       ]
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "quora app": {
     "name": "Quora App",

@@ -189,7 +189,7 @@ class TvFactoryTest extends \PHPUnit\Framework\TestCase
                 'Samsung',
                 'TV Device',
                 false,
-                'unknown',
+                null,
             ],
             [
                 'Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL42W655A; CC/DEU) Presto/2.12.362 Version/12.11',

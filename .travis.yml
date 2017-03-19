@@ -21,7 +21,7 @@ matrix:
       sudo: required
       dist: trusty
       group: edge
-    - php: 7.1
+    - php: 7.0
       env: COVERAGE=yes
     - php: 7.1
       env: EXECUTE_CS_CHECK=yes

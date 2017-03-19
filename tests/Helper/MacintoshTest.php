@@ -37,6 +37,7 @@ class MacintoshTest extends \PHPUnit\Framework\TestCase
             ['Links (0.98; Darwin 6.0 Power Macintosh)'],
             ['Mozilla/5.0 Gecko/20030306 Camino/0.7'],
             ['Apple-PubSub/65.28'],
+            ['QuickTime\\\\xaa.7.0.4 (qtver=7.0.4;cpu=PPC;os=Mac 10.3.9)'],
         ];
     }
 

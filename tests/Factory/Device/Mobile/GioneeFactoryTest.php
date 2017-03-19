@@ -132,7 +132,7 @@ class GioneeFactoryTest extends \PHPUnit\Framework\TestCase
                 'Gionee',
                 'Feature Phone',
                 false,
-                'unknown',
+                null,
             ],
         ];
     }

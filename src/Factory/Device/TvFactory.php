@@ -122,6 +122,8 @@ class TvFactory implements Factory\FactoryInterface
             $deviceCode = 'cx919';
         } elseif (preg_match('/Apple TV/', $useragent)) {
             $deviceCode = 'appletv';
+        } elseif (preg_match('/netbox/i', $useragent)) {
+            $deviceCode = 'netbox';
         }
 
         return $this->loader->load($deviceCode, $useragent);

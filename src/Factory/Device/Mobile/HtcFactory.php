@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,328 +47,637 @@ class HtcFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general htc device';
-
         if (preg_match('/ X9 /', $useragent)) {
-            $deviceCode = 'x9';
-        } elseif (preg_match('/(Nexus[ \-]One|NexusOne)/i', $useragent)) {
-            $deviceCode = 'nexus one';
-        } elseif (preg_match('/Nexus 9/i', $useragent)) {
-            $deviceCode = 'nexus 9';
-        } elseif (preg_match('/nexus(hd2| evohd2)/i', $useragent)) {
-            $deviceCode = 'nexus hd2';
-        } elseif (preg_match('/8X by HTC/i', $useragent)) {
-            $deviceCode = 'windows phone 8x';
-        } elseif (preg_match('/PM23300/', $useragent)) {
-            $deviceCode = 'windows phone 8x';
-        } elseif (preg_match('/8S by HTC/i', $useragent)) {
-            $deviceCode = '8s';
-        } elseif (preg_match('/radar( c110e|; orange)/i', $useragent)) {
-            $deviceCode = 'radar c110e';
-        } elseif (preg_match('/radar 4g/i', $useragent)) {
-            $deviceCode = 'radar 4g';
-        } elseif (preg_match('/radar/i', $useragent)) {
-            $deviceCode = 'radar';
-        } elseif (preg_match('/(hd7|mondrian)/i', $useragent)) {
-            $deviceCode = 't9292';
-        } elseif (preg_match('/7 Mozart/i', $useragent)) {
-            $deviceCode = 't8698';
-        } elseif (preg_match('/t8282/i', $useragent)) {
-            $deviceCode = 'touch hd t8282';
-        } elseif (preg_match('/7 Pro T7576/i', $useragent)) {
-            $deviceCode = 't7576';
-        } elseif (preg_match('/HD2\_T8585/i', $useragent)) {
-            $deviceCode = 't8585';
-        } elseif (preg_match('/HD2/', $useragent) && preg_match('/android/i', $useragent)) {
-            $deviceCode = 'htc hd2';
-        } elseif (preg_match('/HD2/', $useragent)) {
-            $deviceCode = 'hd2';
-        } elseif (preg_match('/(HD[ |\_]mini)/i', $useragent)) {
-            $deviceCode = 'mini t5555';
-        } elseif (preg_match('/titan/i', $useragent)) {
-            $deviceCode = 'x310e';
-        } elseif (preg_match('/(7 Trophy|mwp6985)/i', $useragent)) {
-            $deviceCode = 'spark';
-        } elseif (preg_match('/0P6B180/i', $useragent)) {
-            $deviceCode = '0p6b180';
-        } elseif (preg_match('/one[_ ]m9plus/i', $useragent)) {
-            $deviceCode = 'm9 plus';
-        } elseif (preg_match('/one[_ ]m9/i', $useragent)) {
-            $deviceCode = 'm9';
-        } elseif (preg_match('/one[_ ]m8s/i', $useragent)) {
-            $deviceCode = 'm8s';
-        } elseif (preg_match('/one[_ ]m8/i', $useragent)) {
-            $deviceCode = 'htc m8';
-        } elseif (preg_match('/pn07120/i', $useragent)) {
-            $deviceCode = 'pn07120';
-        } elseif (preg_match('/(one[ _]x\+|onexplus)/i', $useragent)) {
-            $deviceCode = 'pm63100';
-        } elseif (preg_match('/one[ _]xl/i', $useragent)) {
-            $deviceCode = 'htc pj83100';
-        } elseif (preg_match('/(one[ _]x|onex|PJ83100)/i', $useragent)) {
-            $deviceCode = 'pj83100';
-        } elseif (preg_match('/one[ _]v/i', $useragent)) {
-            $deviceCode = 'one v';
-        } elseif (preg_match('/(one[ _]sv|onesv)/i', $useragent)) {
-            $deviceCode = 'one sv';
-        } elseif (preg_match('/(one[ _]s|ones)/i', $useragent)) {
-            $deviceCode = 'pj401';
-        } elseif (preg_match('/one[ _]mini[ _]2/i', $useragent)) {
-            $deviceCode = 'one mini 2';
-        } elseif (preg_match('/one[ _]mini/i', $useragent)) {
-            $deviceCode = 'one mini';
-        } elseif (preg_match('/(one[ _]max|himauhl_htc_asia_tw)/i', $useragent)) {
-            $deviceCode = 'one max';
-        } elseif (preg_match('/one/i', $useragent)) {
-            $deviceCode = 'm7';
-        } elseif (preg_match('/(Smart Tab III 7|SmartTabIII7)/i', $useragent)) {
-            $deviceCode = 'smart tab iii 7';
-        } elseif (preg_match('/(x315e|runnymede)/i', $useragent)) {
-            $deviceCode = 'htc x315e';
-        } elseif (preg_match('/sensation[ _]4g/i', $useragent)) {
-            $deviceCode = 'sensation 4g';
-        } elseif (preg_match('/(sensationxl|sensation xl)/i', $useragent)) {
-            $deviceCode = 'htc x315e';
-        } elseif (preg_match('/(sensation xe|sensationxe)/i', $useragent)) {
-            $deviceCode = 'sensation xe beats z715e';
-        } elseif (preg_match('/(htc\_sensation\-orange\-ls|htc\_sensation\-ls)/i', $useragent)) {
-            $deviceCode = 'htc z710 ls';
-        } elseif (preg_match('/sensation[ _]z710e/i', $useragent)) {
-            $deviceCode = 'z710e';
-        } elseif (preg_match('/(sensation|pyramid)/i', $useragent)) {
-            $deviceCode = 'htc z710';
-        } elseif (preg_match('/Xda\_Diamond\_2/i', $useragent)) {
-            $deviceCode = 'xda_diamond_2';
-        } elseif (preg_match('/Evo 3D GSM/i', $useragent)) {
-            $deviceCode = 'evo 3d gsm';
-        } elseif (preg_match('/(EVO[ _]3D|EVO3D|x515m)/i', $useragent)) {
-            $deviceCode = 'x515m';
-        } elseif (preg_match('/x515e/i', $useragent)) {
-            $deviceCode = 'x515e';
-        } elseif (preg_match('/x515/i', $useragent)) {
-            $deviceCode = 'x515';
-        } elseif (preg_match('/desirez\_a7272/i', $useragent)) {
-            $deviceCode = 'a7272';
-        } elseif (preg_match('/(desire[ _]z|desirez)/i', $useragent)) {
-            $deviceCode = 'desire z';
-        } elseif (preg_match('/(desire[ _]x|desirex)/i', $useragent)) {
-            $deviceCode = 't328e';
-        } elseif (preg_match('/(desire[ _]v|desirev)/i', $useragent)) {
-            $deviceCode = 'desire v';
-        } elseif (preg_match('/s510e/i', $useragent)) {
-            $deviceCode = 's510e';
-        } elseif (preg_match('/(desire[ _]sv|desiresv)/i', $useragent)) {
-            $deviceCode = 'desire sv';
-        } elseif (preg_match('/(desire[ _]s|desires)/i', $useragent)) {
-            $deviceCode = 'desire s';
-        } elseif (preg_match('/desirehd\-orange\-ls/i', $useragent)) {
-            $deviceCode = 'desire hd ls';
-        } elseif (preg_match('/a9191/i', $useragent)) {
-            $deviceCode = 'a9191';
-        } elseif (preg_match('/(desire hd|desirehd)/i', $useragent)) {
-            $deviceCode = 'desire hd';
-        } elseif (preg_match('/(desire[ _]c|desirec)/i', $useragent)) {
-            $deviceCode = '1000c';
-        } elseif (preg_match('/desire[ _]820s/i', $useragent)) {
-            $deviceCode = 'desire 820s';
-        } elseif (preg_match('/desire[ _]820/i', $useragent)) {
-            $deviceCode = 'desire 820';
-        } elseif (preg_match('/desire[ _]816g/i', $useragent)) {
-            $deviceCode = 'desire 816g';
-        } elseif (preg_match('/desire[ _]816/i', $useragent)) {
-            $deviceCode = 'desire 816';
-        } elseif (preg_match('/(0p4e2|desire[ _]601)/i', $useragent)) {
-            $deviceCode = '0p4e2';
-        } elseif (preg_match('/desire[ _]728g/i', $useragent)) {
-            $deviceCode = 'desire 728g';
-        } elseif (preg_match('/desire[ _]700/i', $useragent)) {
-            $deviceCode = 'desire 700';
-        } elseif (preg_match('/desire[ _]626g/i', $useragent)) {
-            $deviceCode = 'desire 626g';
-        } elseif (preg_match('/desire[ _]626/i', $useragent)) {
-            $deviceCode = 'desire 626';
-        } elseif (preg_match('/desire[ _]620g/i', $useragent)) {
-            $deviceCode = 'desire 620g';
-        } elseif (preg_match('/desire[ _]610/i', $useragent)) {
-            $deviceCode = 'desire 610';
-        } elseif (preg_match('/desire[ _]600c/i', $useragent)) {
-            $deviceCode = 'desire 600c';
-        } elseif (preg_match('/desire[ _]600/i', $useragent)) {
-            $deviceCode = 'desire 600';
-        } elseif (preg_match('/desire[ _]530/i', $useragent)) {
-            $deviceCode = 'desire 530';
-        } elseif (preg_match('/desire[ _]526g/i', $useragent)) {
-            $deviceCode = 'desire 526g';
-        } elseif (preg_match('/desire[ _]516/i', $useragent)) {
-            $deviceCode = 'desire 516';
-        } elseif (preg_match('/desire[ _]510/i', $useragent)) {
-            $deviceCode = 'desire 510';
-        } elseif (preg_match('/desire[ _]500/i', $useragent)) {
-            $deviceCode = 'desire 500';
-        } elseif (preg_match('/desire[ _]400/i', $useragent)) {
-            $deviceCode = 'desire 400';
-        } elseif (preg_match('/desire[ _]320/i', $useragent)) {
-            $deviceCode = 'desire 320';
-        } elseif (preg_match('/desire[ _]310/i', $useragent)) {
-            $deviceCode = 'desire 310';
-        } elseif (preg_match('/desire[ _]300/i', $useragent)) {
-            $deviceCode = 'desire 300';
-        } elseif (preg_match('/desire[_ ]eye/i', $useragent)) {
-            $deviceCode = 'desire eye';
-        } elseif (preg_match('/desire\_a8181/i', $useragent)) {
-            $deviceCode = 'a8181';
-        } elseif (preg_match('/desire/i', $useragent)) {
-            $deviceCode = 'desire';
-        } elseif (preg_match('/WildfireS\-orange\-LS|WildfireS\-LS/i', $useragent)) {
-            $deviceCode = 'wildfire s ls';
-        } elseif (preg_match('/ a315c /i', $useragent)) {
-            $deviceCode = 'a315c';
-        } elseif (preg_match('/Wildfire\_A3333/i', $useragent)) {
-            $deviceCode = 'a3333';
-        } elseif (preg_match('/(Wildfire S A510e|WildfireS_A510e)/i', $useragent)) {
-            $deviceCode = 'a510e';
-        } elseif (preg_match('/ADR6230/i', $useragent)) {
-            $deviceCode = 'adr6230';
-        } elseif (preg_match('/Wildfire[ |]S/i', $useragent)) {
-            $deviceCode = 'htc a510';
-        } elseif (preg_match('/Wildfire/i', $useragent)) {
-            $deviceCode = 'wildfire';
-        } elseif (preg_match('/Vision/i', $useragent)) {
-            $deviceCode = 'vision';
-        } elseif (preg_match('/velocity[ _]4g[ _]x710s/i', $useragent)) {
-            $deviceCode = 'x710s';
-        } elseif (preg_match('/velocity[ _]4g/i', $useragent)) {
-            $deviceCode = 'velocity 4g';
-        } elseif (preg_match('/Velocity/i', $useragent)) {
-            $deviceCode = 'velocity';
-        } elseif (preg_match('/Touch\_Diamond2/i', $useragent)) {
-            $deviceCode = 'touch diamond 2';
-        } elseif (preg_match('/tattoo/i', $useragent)) {
-            $deviceCode = 'tattoo';
-        } elseif (preg_match('/Touch\_Pro2\_T7373/i', $useragent)) {
-            $deviceCode = 't7373';
-        } elseif (preg_match('/Touch2/i', $useragent)) {
-            $deviceCode = 't3335';
-        } elseif (preg_match('/t329d/i', $useragent)) {
-            $deviceCode = 't329d';
-        } elseif (preg_match('/t328w/i', $useragent)) {
-            $deviceCode = 't328w';
-        } elseif (preg_match('/t328d/i', $useragent)) {
-            $deviceCode = 't328d';
-        } elseif (preg_match('/Smart\_F3188/i', $useragent)) {
-            $deviceCode = 'smart f3188';
-        } elseif (preg_match('/ShooterU/i', $useragent)) {
-            $deviceCode = 'shooter u';
-        } elseif (preg_match('/Salsa/i', $useragent)) {
-            $deviceCode = 'salsa';
-        } elseif (preg_match('/butterfly_s_901s/i', $useragent)) {
-            $deviceCode = 's901s';
-        } elseif (preg_match('/(Incredible S|IncredibleS|S710e)/i', $useragent)) {
-            $deviceCode = 's710e';
-        } elseif (preg_match('/(Rhyme|S510b)/i', $useragent)) {
-            $deviceCode = 's510b';
-        } elseif (preg_match('/ruby/i', $useragent)) {
-            $deviceCode = 'ruby';
-        } elseif (preg_match('/P3700/i', $useragent)) {
-            $deviceCode = 'p3700';
-        } elseif (preg_match('/MDA\_Vario\_V/i', $useragent)) {
-            $deviceCode = 'mda vario v';
-        } elseif (preg_match('/MDA Vario\/3/i', $useragent)) {
-            $deviceCode = 'mda vario iii';
-        } elseif (preg_match('/MDA Vario\/2/i', $useragent)) {
-            $deviceCode = 'mda vario ii';
-        } elseif (preg_match('/MDA\_Compact\_V/i', $useragent)) {
-            $deviceCode = 'mda compact v';
-        } elseif (preg_match('/Magic/i', $useragent)) {
-            $deviceCode = 'magic';
-        } elseif (preg_match('/Legend/i', $useragent)) {
-            $deviceCode = 'legend';
-        } elseif (preg_match('/(Hero|a6288)/i', $useragent)) {
-            $deviceCode = 'hero';
-        } elseif (preg_match('/Glacier/i', $useragent)) {
-            $deviceCode = 'glacier';
-        } elseif (preg_match('/G21/i', $useragent)) {
-            $deviceCode = 'g21';
-        } elseif (preg_match('/(Flyer[ |\_]P512)/i', $useragent)) {
-            $deviceCode = 'p512';
-        } elseif (preg_match('/(Flyer[ |\_]P510e)/i', $useragent)) {
-            $deviceCode = 'p510e';
-        } elseif (preg_match('/Flyer/i', $useragent)) {
-            $deviceCode = 'flyer';
-        } elseif (preg_match('/(pc36100|evo 4g|kingdom)/i', $useragent)) {
-            $deviceCode = 'pc36100';
-        } elseif (preg_match('/Dream/i', $useragent)) {
-            $deviceCode = 'dream';
-        } elseif (preg_match('/D820mu/i', $useragent)) {
-            $deviceCode = 'd820mu';
-        } elseif (preg_match('/D820us/i', $useragent)) {
-            $deviceCode = 'd820us';
-        } elseif (preg_match('/click/i', $useragent)) {
-            $deviceCode = 'click';
-        } elseif (preg_match('/eris/i', $useragent)) {
-            $deviceCode = 'eris';
-        } elseif (preg_match('/ C2/i', $useragent)) {
-            $deviceCode = 'c2';
-        } elseif (preg_match('/bravo/i', $useragent)) {
-            $deviceCode = 'bravo';
-        } elseif (preg_match('/butterfly/i', $useragent)) {
-            $deviceCode = 'butterfly';
-        } elseif (preg_match('/adr6350/i', $useragent)) {
-            $deviceCode = 'adr6350';
-        } elseif (preg_match('/apa9292kt/i', $useragent)) {
-            $deviceCode = '9292';
-        } elseif (preg_match('/a9192/i', $useragent)) {
-            $deviceCode = 'inspire 4g';
-        } elseif (preg_match('/APA7373KT/i', $useragent)) {
-            $deviceCode = 'a7373';
-        } elseif (preg_match('/Gratia/i', $useragent)) {
-            $deviceCode = 'a6380';
-        } elseif (preg_match('/A6366/i', $useragent)) {
-            $deviceCode = 'a6366';
-        } elseif (preg_match('/A3335/i', $useragent)) {
-            $deviceCode = 'a3335';
-        } elseif (preg_match('/chacha/i', $useragent)) {
-            $deviceCode = 'a810e';
-        } elseif (preg_match('/a510a/i', $useragent)) {
-            $deviceCode = 'a510a';
-        } elseif (preg_match('/(explorer|a310e)/i', $useragent)) {
-            $deviceCode = 'a310e';
-        } elseif (preg_match('/amaze/i', $useragent)) {
-            $deviceCode = 'amaze 4g';
-        } elseif (preg_match('/htc7088/i', $useragent)) {
-            $deviceCode = '7088';
-        } elseif (preg_match('/HTC6990LVW/', $useragent)) {
-            $deviceCode = 'htc6990lvw';
-        } elseif (preg_match('/htc6500lvw/i', $useragent)) {
-            $deviceCode = 'm7 (htc6500lvw)';
-        } elseif (preg_match('/htc6435lvw/i', $useragent)) {
-            $deviceCode = 'htc6435lvw';
-        } elseif (preg_match('/htc 919d/i', $useragent)) {
-            $deviceCode = '919d';
-        } elseif (preg_match('/831c/i', $useragent)) {
-            $deviceCode = '831c';
-        } elseif (preg_match('/htc 809d/i', $useragent)) {
-            $deviceCode = '809d';
-        } elseif (preg_match('/htc[ ]?802t/i', $useragent)) {
-            $deviceCode = '802t';
-        } elseif (preg_match('/htc 802d/i', $useragent)) {
-            $deviceCode = '802d';
-        } elseif (preg_match('/htc 606w/i', $useragent)) {
-            $deviceCode = 'desire 606w';
-        } elseif (preg_match('/htc d516d/i', $useragent)) {
-            $deviceCode = 'desire 516';
-        } elseif (preg_match('/VPA\_Touch/i', $useragent)) {
-            $deviceCode = 'vpa touch';
-        } elseif (preg_match('/HTC\_VPACompactIV/i', $useragent)) {
-            $deviceCode = 'vpa compact iv';
+            return $this->loader->load('x9', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if (preg_match('/(Nexus[ \-]One|NexusOne)/i', $useragent)) {
+            return $this->loader->load('nexus one', $useragent);
+        }
+
+        if (preg_match('/Nexus 9/i', $useragent)) {
+            return $this->loader->load('nexus 9', $useragent);
+        }
+
+        if (preg_match('/nexus(hd2| evohd2)/i', $useragent)) {
+            return $this->loader->load('nexus hd2', $useragent);
+        }
+
+        if (preg_match('/8X by HTC/i', $useragent)) {
+            return $this->loader->load('windows phone 8x', $useragent);
+        }
+
+        if (preg_match('/PM23300/', $useragent)) {
+            return $this->loader->load('windows phone 8x', $useragent);
+        }
+
+        if (preg_match('/8S by HTC/i', $useragent)) {
+            return $this->loader->load('8s', $useragent);
+        }
+
+        if (preg_match('/radar( c110e|; orange)/i', $useragent)) {
+            return $this->loader->load('radar c110e', $useragent);
+        }
+
+        if (preg_match('/radar 4g/i', $useragent)) {
+            return $this->loader->load('radar 4g', $useragent);
+        }
+
+        if (preg_match('/radar/i', $useragent)) {
+            return $this->loader->load('radar', $useragent);
+        }
+
+        if (preg_match('/(hd7|mondrian)/i', $useragent)) {
+            return $this->loader->load('t9292', $useragent);
+        }
+
+        if (preg_match('/7 Mozart/i', $useragent)) {
+            return $this->loader->load('t8698', $useragent);
+        }
+
+        if (preg_match('/t8282/i', $useragent)) {
+            return $this->loader->load('touch hd t8282', $useragent);
+        }
+
+        if (preg_match('/7 Pro T7576/i', $useragent)) {
+            return $this->loader->load('t7576', $useragent);
+        }
+
+        if (preg_match('/HD2\_T8585/i', $useragent)) {
+            return $this->loader->load('t8585', $useragent);
+        }
+
+        if (preg_match('/HD2/', $useragent) && preg_match('/android/i', $useragent)) {
+            return $this->loader->load('htc hd2', $useragent);
+        }
+
+        if (preg_match('/HD2/', $useragent)) {
+            return $this->loader->load('hd2', $useragent);
+        }
+
+        if (preg_match('/(HD[ |\_]mini)/i', $useragent)) {
+            return $this->loader->load('mini t5555', $useragent);
+        }
+
+        if (preg_match('/titan/i', $useragent)) {
+            return $this->loader->load('x310e', $useragent);
+        }
+
+        if (preg_match('/(7 Trophy|mwp6985)/i', $useragent)) {
+            return $this->loader->load('spark', $useragent);
+        }
+
+        if (preg_match('/0P6B180/i', $useragent)) {
+            return $this->loader->load('0p6b180', $useragent);
+        }
+
+        if (preg_match('/one[_ ]m9plus/i', $useragent)) {
+            return $this->loader->load('m9 plus', $useragent);
+        }
+
+        if (preg_match('/one[_ ]m9/i', $useragent)) {
+            return $this->loader->load('m9', $useragent);
+        }
+
+        if (preg_match('/one[_ ]m8s/i', $useragent)) {
+            return $this->loader->load('m8s', $useragent);
+        }
+
+        if (preg_match('/one[_ ]m8/i', $useragent)) {
+            return $this->loader->load('htc m8', $useragent);
+        }
+
+        if (preg_match('/pn07120/i', $useragent)) {
+            return $this->loader->load('pn07120', $useragent);
+        }
+
+        if (preg_match('/(one[ _]x\+|onexplus)/i', $useragent)) {
+            return $this->loader->load('pm63100', $useragent);
+        }
+
+        if (preg_match('/one[ _]xl/i', $useragent)) {
+            return $this->loader->load('htc pj83100', $useragent);
+        }
+
+        if (preg_match('/(one[ _]x|onex|PJ83100)/i', $useragent)) {
+            return $this->loader->load('pj83100', $useragent);
+        }
+
+        if (preg_match('/one[ _]v/i', $useragent)) {
+            return $this->loader->load('one v', $useragent);
+        }
+
+        if (preg_match('/(one[ _]sv|onesv)/i', $useragent)) {
+            return $this->loader->load('one sv', $useragent);
+        }
+
+        if (preg_match('/(one[ _]s|ones)/i', $useragent)) {
+            return $this->loader->load('pj401', $useragent);
+        }
+
+        if (preg_match('/one[ _]mini[ _]2/i', $useragent)) {
+            return $this->loader->load('one mini 2', $useragent);
+        }
+
+        if (preg_match('/one[ _]mini/i', $useragent)) {
+            return $this->loader->load('one mini', $useragent);
+        }
+
+        if (preg_match('/(one[ _]max|himauhl_htc_asia_tw)/i', $useragent)) {
+            return $this->loader->load('one max', $useragent);
+        }
+
+        if (preg_match('/one/i', $useragent)) {
+            return $this->loader->load('m7', $useragent);
+        }
+
+        if (preg_match('/(Smart Tab III 7|SmartTabIII7)/i', $useragent)) {
+            return $this->loader->load('smart tab iii 7', $useragent);
+        }
+
+        if (preg_match('/(x315e|runnymede)/i', $useragent)) {
+            return $this->loader->load('htc x315e', $useragent);
+        }
+
+        if (preg_match('/sensation[ _]4g/i', $useragent)) {
+            return $this->loader->load('sensation 4g', $useragent);
+        }
+
+        if (preg_match('/(sensationxl|sensation xl)/i', $useragent)) {
+            return $this->loader->load('htc x315e', $useragent);
+        }
+
+        if (preg_match('/(sensation xe|sensationxe)/i', $useragent)) {
+            return $this->loader->load('sensation xe beats z715e', $useragent);
+        }
+
+        if (preg_match('/(htc\_sensation\-orange\-ls|htc\_sensation\-ls)/i', $useragent)) {
+            return $this->loader->load('htc z710 ls', $useragent);
+        }
+
+        if (preg_match('/sensation[ _]z710e/i', $useragent)) {
+            return $this->loader->load('z710e', $useragent);
+        }
+
+        if (preg_match('/(sensation|pyramid)/i', $useragent)) {
+            return $this->loader->load('htc z710', $useragent);
+        }
+
+        if (preg_match('/Xda\_Diamond\_2/i', $useragent)) {
+            return $this->loader->load('xda_diamond_2', $useragent);
+        }
+
+        if (preg_match('/Evo 3D GSM/i', $useragent)) {
+            return $this->loader->load('evo 3d gsm', $useragent);
+        }
+
+        if (preg_match('/(EVO[ _]3D|EVO3D|x515m)/i', $useragent)) {
+            return $this->loader->load('x515m', $useragent);
+        }
+
+        if (preg_match('/x515e/i', $useragent)) {
+            return $this->loader->load('x515e', $useragent);
+        }
+
+        if (preg_match('/x515/i', $useragent)) {
+            return $this->loader->load('x515', $useragent);
+        }
+
+        if (preg_match('/desirez\_a7272/i', $useragent)) {
+            return $this->loader->load('a7272', $useragent);
+        }
+
+        if (preg_match('/(desire[ _]z|desirez)/i', $useragent)) {
+            return $this->loader->load('desire z', $useragent);
+        }
+
+        if (preg_match('/(desire[ _]x|desirex)/i', $useragent)) {
+            return $this->loader->load('t328e', $useragent);
+        }
+
+        if (preg_match('/(desire[ _]v|desirev)/i', $useragent)) {
+            return $this->loader->load('desire v', $useragent);
+        }
+
+        if (preg_match('/s510e/i', $useragent)) {
+            return $this->loader->load('s510e', $useragent);
+        }
+
+        if (preg_match('/(desire[ _]sv|desiresv)/i', $useragent)) {
+            return $this->loader->load('desire sv', $useragent);
+        }
+
+        if (preg_match('/(desire[ _]s|desires)/i', $useragent)) {
+            return $this->loader->load('desire s', $useragent);
+        }
+
+        if (preg_match('/desirehd\-orange\-ls/i', $useragent)) {
+            return $this->loader->load('desire hd ls', $useragent);
+        }
+
+        if (preg_match('/a9191/i', $useragent)) {
+            return $this->loader->load('a9191', $useragent);
+        }
+
+        if (preg_match('/(desire hd|desirehd)/i', $useragent)) {
+            return $this->loader->load('desire hd', $useragent);
+        }
+
+        if (preg_match('/(desire[ _]c|desirec)/i', $useragent)) {
+            return $this->loader->load('1000c', $useragent);
+        }
+
+        if (preg_match('/desire[ _]820s/i', $useragent)) {
+            return $this->loader->load('desire 820s', $useragent);
+        }
+
+        if (preg_match('/desire[ _]820/i', $useragent)) {
+            return $this->loader->load('desire 820', $useragent);
+        }
+
+        if (preg_match('/desire[ _]816g/i', $useragent)) {
+            return $this->loader->load('desire 816g', $useragent);
+        }
+
+        if (preg_match('/desire[ _]816/i', $useragent)) {
+            return $this->loader->load('desire 816', $useragent);
+        }
+
+        if (preg_match('/(0p4e2|desire[ _]601)/i', $useragent)) {
+            return $this->loader->load('0p4e2', $useragent);
+        }
+
+        if (preg_match('/desire[ _]728g/i', $useragent)) {
+            return $this->loader->load('desire 728g', $useragent);
+        }
+
+        if (preg_match('/desire[ _]700/i', $useragent)) {
+            return $this->loader->load('desire 700', $useragent);
+        }
+
+        if (preg_match('/desire[ _]626g/i', $useragent)) {
+            return $this->loader->load('desire 626g', $useragent);
+        }
+
+        if (preg_match('/desire[ _]626/i', $useragent)) {
+            return $this->loader->load('desire 626', $useragent);
+        }
+
+        if (preg_match('/desire[ _]620g/i', $useragent)) {
+            return $this->loader->load('desire 620g', $useragent);
+        }
+
+        if (preg_match('/desire[ _]610/i', $useragent)) {
+            return $this->loader->load('desire 610', $useragent);
+        }
+
+        if (preg_match('/desire[ _]600c/i', $useragent)) {
+            return $this->loader->load('desire 600c', $useragent);
+        }
+
+        if (preg_match('/desire[ _]600/i', $useragent)) {
+            return $this->loader->load('desire 600', $useragent);
+        }
+
+        if (preg_match('/desire[ _]530/i', $useragent)) {
+            return $this->loader->load('desire 530', $useragent);
+        }
+
+        if (preg_match('/desire[ _]526g/i', $useragent)) {
+            return $this->loader->load('desire 526g', $useragent);
+        }
+
+        if (preg_match('/desire[ _]516/i', $useragent)) {
+            return $this->loader->load('desire 516', $useragent);
+        }
+
+        if (preg_match('/desire[ _]510/i', $useragent)) {
+            return $this->loader->load('desire 510', $useragent);
+        }
+
+        if (preg_match('/desire[ _]500/i', $useragent)) {
+            return $this->loader->load('desire 500', $useragent);
+        }
+
+        if (preg_match('/desire[ _]400/i', $useragent)) {
+            return $this->loader->load('desire 400', $useragent);
+        }
+
+        if (preg_match('/desire[ _]320/i', $useragent)) {
+            return $this->loader->load('desire 320', $useragent);
+        }
+
+        if (preg_match('/desire[ _]310/i', $useragent)) {
+            return $this->loader->load('desire 310', $useragent);
+        }
+
+        if (preg_match('/desire[ _]300/i', $useragent)) {
+            return $this->loader->load('desire 300', $useragent);
+        }
+
+        if (preg_match('/desire[_ ]eye/i', $useragent)) {
+            return $this->loader->load('desire eye', $useragent);
+        }
+
+        if (preg_match('/desire\_a8181/i', $useragent)) {
+            return $this->loader->load('a8181', $useragent);
+        }
+
+        if (preg_match('/desire/i', $useragent)) {
+            return $this->loader->load('desire', $useragent);
+        }
+
+        if (preg_match('/WildfireS\-orange\-LS|WildfireS\-LS/i', $useragent)) {
+            return $this->loader->load('wildfire s ls', $useragent);
+        }
+
+        if (preg_match('/ a315c /i', $useragent)) {
+            return $this->loader->load('a315c', $useragent);
+        }
+
+        if (preg_match('/Wildfire\_A3333/i', $useragent)) {
+            return $this->loader->load('a3333', $useragent);
+        }
+
+        if (preg_match('/(Wildfire S A510e|WildfireS_A510e)/i', $useragent)) {
+            return $this->loader->load('a510e', $useragent);
+        }
+
+        if (preg_match('/ADR6230/i', $useragent)) {
+            return $this->loader->load('adr6230', $useragent);
+        }
+
+        if (preg_match('/Wildfire[ |]S/i', $useragent)) {
+            return $this->loader->load('htc a510', $useragent);
+        }
+
+        if (preg_match('/Wildfire/i', $useragent)) {
+            return $this->loader->load('wildfire', $useragent);
+        }
+
+        if (preg_match('/Vision/i', $useragent)) {
+            return $this->loader->load('vision', $useragent);
+        }
+
+        if (preg_match('/velocity[ _]4g[ _]x710s/i', $useragent)) {
+            return $this->loader->load('x710s', $useragent);
+        }
+
+        if (preg_match('/velocity[ _]4g/i', $useragent)) {
+            return $this->loader->load('velocity 4g', $useragent);
+        }
+
+        if (preg_match('/Velocity/i', $useragent)) {
+            return $this->loader->load('velocity', $useragent);
+        }
+
+        if (preg_match('/Touch\_Diamond2/i', $useragent)) {
+            return $this->loader->load('touch diamond 2', $useragent);
+        }
+
+        if (preg_match('/tattoo/i', $useragent)) {
+            return $this->loader->load('tattoo', $useragent);
+        }
+
+        if (preg_match('/Touch\_Pro2\_T7373/i', $useragent)) {
+            return $this->loader->load('t7373', $useragent);
+        }
+
+        if (preg_match('/Touch2/i', $useragent)) {
+            return $this->loader->load('t3335', $useragent);
+        }
+
+        if (preg_match('/t329d/i', $useragent)) {
+            return $this->loader->load('t329d', $useragent);
+        }
+
+        if (preg_match('/t328w/i', $useragent)) {
+            return $this->loader->load('t328w', $useragent);
+        }
+
+        if (preg_match('/t328d/i', $useragent)) {
+            return $this->loader->load('t328d', $useragent);
+        }
+
+        if (preg_match('/Smart\_F3188/i', $useragent)) {
+            return $this->loader->load('smart f3188', $useragent);
+        }
+
+        if (preg_match('/ShooterU/i', $useragent)) {
+            return $this->loader->load('shooter u', $useragent);
+        }
+
+        if (preg_match('/Salsa/i', $useragent)) {
+            return $this->loader->load('salsa', $useragent);
+        }
+
+        if (preg_match('/butterfly_s_901s/i', $useragent)) {
+            return $this->loader->load('s901s', $useragent);
+        }
+
+        if (preg_match('/(Incredible S|IncredibleS|S710e)/i', $useragent)) {
+            return $this->loader->load('s710e', $useragent);
+        }
+
+        if (preg_match('/(Rhyme|S510b)/i', $useragent)) {
+            return $this->loader->load('s510b', $useragent);
+        }
+
+        if (preg_match('/ruby/i', $useragent)) {
+            return $this->loader->load('ruby', $useragent);
+        }
+
+        if (preg_match('/P3700/i', $useragent)) {
+            return $this->loader->load('p3700', $useragent);
+        }
+
+        if (preg_match('/MDA\_Vario\_V/i', $useragent)) {
+            return $this->loader->load('mda vario v', $useragent);
+        }
+
+        if (preg_match('/MDA Vario\/3/i', $useragent)) {
+            return $this->loader->load('mda vario iii', $useragent);
+        }
+
+        if (preg_match('/MDA Vario\/2/i', $useragent)) {
+            return $this->loader->load('mda vario ii', $useragent);
+        }
+
+        if (preg_match('/MDA\_Compact\_V/i', $useragent)) {
+            return $this->loader->load('mda compact v', $useragent);
+        }
+
+        if (preg_match('/Magic/i', $useragent)) {
+            return $this->loader->load('magic', $useragent);
+        }
+
+        if (preg_match('/Legend/i', $useragent)) {
+            return $this->loader->load('legend', $useragent);
+        }
+
+        if (preg_match('/(Hero|a6288)/i', $useragent)) {
+            return $this->loader->load('hero', $useragent);
+        }
+
+        if (preg_match('/Glacier/i', $useragent)) {
+            return $this->loader->load('glacier', $useragent);
+        }
+
+        if (preg_match('/G21/i', $useragent)) {
+            return $this->loader->load('g21', $useragent);
+        }
+
+        if (preg_match('/(Flyer[ |\_]P512)/i', $useragent)) {
+            return $this->loader->load('p512', $useragent);
+        }
+
+        if (preg_match('/(Flyer[ |\_]P510e)/i', $useragent)) {
+            return $this->loader->load('p510e', $useragent);
+        }
+
+        if (preg_match('/Flyer/i', $useragent)) {
+            return $this->loader->load('flyer', $useragent);
+        }
+
+        if (preg_match('/(pc36100|evo 4g|kingdom)/i', $useragent)) {
+            return $this->loader->load('pc36100', $useragent);
+        }
+
+        if (preg_match('/Dream/i', $useragent)) {
+            return $this->loader->load('dream', $useragent);
+        }
+
+        if (preg_match('/D820mu/i', $useragent)) {
+            return $this->loader->load('d820mu', $useragent);
+        }
+
+        if (preg_match('/D820us/i', $useragent)) {
+            return $this->loader->load('d820us', $useragent);
+        }
+
+        if (preg_match('/click/i', $useragent)) {
+            return $this->loader->load('click', $useragent);
+        }
+
+        if (preg_match('/eris/i', $useragent)) {
+            return $this->loader->load('eris', $useragent);
+        }
+
+        if (preg_match('/ C2/i', $useragent)) {
+            return $this->loader->load('c2', $useragent);
+        }
+
+        if (preg_match('/bravo/i', $useragent)) {
+            return $this->loader->load('bravo', $useragent);
+        }
+
+        if (preg_match('/butterfly/i', $useragent)) {
+            return $this->loader->load('butterfly', $useragent);
+        }
+
+        if (preg_match('/adr6350/i', $useragent)) {
+            return $this->loader->load('adr6350', $useragent);
+        }
+
+        if (preg_match('/apa9292kt/i', $useragent)) {
+            return $this->loader->load('9292', $useragent);
+        }
+
+        if (preg_match('/a9192/i', $useragent)) {
+            return $this->loader->load('inspire 4g', $useragent);
+        }
+
+        if (preg_match('/APA7373KT/i', $useragent)) {
+            return $this->loader->load('a7373', $useragent);
+        }
+
+        if (preg_match('/Gratia/i', $useragent)) {
+            return $this->loader->load('a6380', $useragent);
+        }
+
+        if (preg_match('/A6366/i', $useragent)) {
+            return $this->loader->load('a6366', $useragent);
+        }
+
+        if (preg_match('/A3335/i', $useragent)) {
+            return $this->loader->load('a3335', $useragent);
+        }
+
+        if (preg_match('/chacha/i', $useragent)) {
+            return $this->loader->load('a810e', $useragent);
+        }
+
+        if (preg_match('/a510a/i', $useragent)) {
+            return $this->loader->load('a510a', $useragent);
+        }
+
+        if (preg_match('/(explorer|a310e)/i', $useragent)) {
+            return $this->loader->load('a310e', $useragent);
+        }
+
+        if (preg_match('/amaze/i', $useragent)) {
+            return $this->loader->load('amaze 4g', $useragent);
+        }
+
+        if (preg_match('/htc7088/i', $useragent)) {
+            return $this->loader->load('7088', $useragent);
+        }
+
+        if (preg_match('/HTC6990LVW/', $useragent)) {
+            return $this->loader->load('htc6990lvw', $useragent);
+        }
+
+        if (preg_match('/htc6500lvw/i', $useragent)) {
+            return $this->loader->load('m7 (htc6500lvw)', $useragent);
+        }
+
+        if (preg_match('/htc6435lvw/i', $useragent)) {
+            return $this->loader->load('htc6435lvw', $useragent);
+        }
+
+        if (preg_match('/htc 919d/i', $useragent)) {
+            return $this->loader->load('919d', $useragent);
+        }
+
+        if (preg_match('/831c/i', $useragent)) {
+            return $this->loader->load('831c', $useragent);
+        }
+
+        if (preg_match('/htc 809d/i', $useragent)) {
+            return $this->loader->load('809d', $useragent);
+        }
+
+        if (preg_match('/htc[ ]?802t/i', $useragent)) {
+            return $this->loader->load('802t', $useragent);
+        }
+
+        if (preg_match('/htc 802d/i', $useragent)) {
+            return $this->loader->load('802d', $useragent);
+        }
+
+        if (preg_match('/htc 606w/i', $useragent)) {
+            return $this->loader->load('desire 606w', $useragent);
+        }
+
+        if (preg_match('/htc d516d/i', $useragent)) {
+            return $this->loader->load('desire 516', $useragent);
+        }
+
+        if (preg_match('/VPA\_Touch/i', $useragent)) {
+            return $this->loader->load('vpa touch', $useragent);
+        }
+
+        if (preg_match('/HTC\_VPACompactIV/i', $useragent)) {
+            return $this->loader->load('vpa compact iv', $useragent);
+        }
+
+        return $this->loader->load('general htc device', $useragent);
     }
 }

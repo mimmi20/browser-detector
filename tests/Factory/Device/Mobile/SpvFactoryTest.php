@@ -109,7 +109,7 @@ class SpvFactoryTest extends \PHPUnit\Framework\TestCase
                 'SPV',
                 'Mobile Phone',
                 true,
-                'unknown',
+                null,
             ],
         ];
     }

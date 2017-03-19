@@ -52,18 +52,16 @@ class PlatformFactory implements FactoryInterface
     /**
      * Gets the information about the platform by User Agent
      *
-     * @param string $agent
+     * @param string $useragent
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect($agent)
+    public function detect($useragent)
     {
-        $s = new Stringy($agent);
+        $s = new Stringy($useragent);
 
         $isWindows     = false;
-        $windowsHelper = new Helper\Windows($agent);
-
-        $platformCode = 'unknown';
+        $windowsHelper = new Helper\Windows($useragent);
 
         if (!$windowsHelper->isMobileWindows()
             && $windowsHelper->isWindows()
@@ -74,152 +72,282 @@ class PlatformFactory implements FactoryInterface
         if ($windowsHelper->isMobileWindows()
             && $s->containsAny(['Windows CE', 'Windows Mobile; WCE'])
         ) {
-            $platformCode = 'windows ce';
-        } elseif (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop| wds )/', $agent)) {
-            $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $agent, $matchesPhone);
-
-            if (!$doMatchPhone || $matchesPhone[1] >= 7) {
-                $platformCode = 'windows phone';
-            } else {
-                $platformCode = 'windows mobile os';
-            }
-        } elseif ($windowsHelper->isMobileWindows()) {
-            if (preg_match('/mobile version([\d]+)/', $agent, $matchesMobile) && $matchesMobile[1] >= 70) {
-                $platformCode = 'windows phone';
-            } elseif (preg_match('/Windows Mobile ([\d]+)/', $agent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
-                $platformCode = 'windows phone';
-            } elseif (preg_match('/Windows NT ([\d\.]+); ARM; Lumia/', $agent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
-                $platformCode = 'windows phone';
-            } else {
-                $platformCode = 'windows mobile os';
-            }
-        } elseif ($isWindows && $s->contains('ARM;')) {
-            $platformCode = 'windows rt';
-        } elseif ($isWindows) {
-            return (new Platform\WindowsFactory($this->cache, $this->loader))->detect($agent);
-        } elseif (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|S60V3|S60V5)/', $agent)) {
-            $platformCode = 'symbian';
-        } elseif (preg_match('/(Series40)/', $agent)) {
-            $platformCode = 'nokia os';
-        } elseif ($s->contains('Bada')) {
-            $platformCode = 'bada';
-        } elseif ($s->contains('MeeGo')) {
-            $platformCode = 'meego';
-        } elseif (preg_match('/sailfish/i', $agent)) {
-            $platformCode = 'sailfishos';
-        } elseif (preg_match('/(android; linux arm)/i', $agent)) {
-            $platformCode = 'android';
-        } elseif ($s->containsAny(['debian apt-http', 'linux mint', 'ubuntu', 'fedora', 'redhat', 'red hat', 'kfreebsd', 'centos', 'mandriva', 'suse', 'gentoo', 'slackware', 'ventana', 'moblin'], false)) {
-            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($agent);
-        } elseif (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $agent)) {
-            $platformCode = 'linux smartphone os (maemo)';
-        } elseif (preg_match('/(BlackBerry|BB10)/', $agent)) {
-            $platformCode = 'rim os';
-        } elseif (preg_match('/(webos|hpwos)/i', $agent)) {
-            $platformCode = 'webos';
-        } elseif ($s->contains('Tizen')) {
-            $platformCode = 'tizen';
-        } elseif ((new Helper\FirefoxOs($agent))->isFirefoxOs()) {
-            $platformCode = 'firefoxos';
-        } elseif ($s->contains('freebsd', false)) {
-            $platformCode = 'freebsd';
-        } elseif ($s->containsAny(['darwin', 'cfnetwork'], false)) {
-            return (new Platform\DarwinFactory($this->cache, $this->loader))->detect($agent);
-        } elseif ($s->contains('playstation', false)) {
-            $platformCode = 'cellos';
-        } elseif (preg_match('/(micromaxx650|dolfin\/|yuanda50|wap[ \-]browser)/i', $agent)) {
-            $platformCode = 'java';
-        } elseif (preg_match('/CommonCrawler/', $agent)) {
-            $platformCode = 'unknown';
-        } elseif (preg_match('/MIUI/', $agent)) {
-            $platformCode = 'miui os';
-        } elseif ((new Helper\AndroidOs($agent))->isAndroid()) {
-            $platformCode = 'android';
-        } elseif ((new Helper\Ios($agent))->isIos()) {
-            $platformCode = 'ios';
-        } elseif (preg_match('/\b(profile)\b/i', $agent)) {
-            $platformCode = 'java';
-        } elseif (preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches) && $matches[1] >= 4) {
-            $platformCode = 'android';
-        } elseif (preg_match('/(Macintosh|Mac_PowerPC|PPC|68K)/', $agent)
-            && !$s->contains('OS X')
-        ) {
-            $platformCode = 'macintosh';
-        } elseif (preg_match('/(de|rasp)bian/i', $agent)) {
-            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($agent);
-        } elseif (preg_match('/(Macintosh|Mac OS X)/', $agent)) {
-            $platformCode = 'mac os x';
-        } elseif ($s->containsAny(['RIM Tablet'])) {
-            $platformCode = 'rim tablet os';
-        } elseif ($s->containsAny(['CrOS', 'Joli OS', 'Zenwalk GNU'])) {
-            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($agent);
-        } elseif ($s->contains('AIX')) {
-            $platformCode = 'aix';
-        } elseif ($s->contains('AmigaOS')) {
-            $platformCode = 'amiga os';
-        } elseif ($s->contains('BREW')) {
-            $platformCode = 'brew';
-        } elseif ($s->contains('cygwin', false)) {
-            $platformCode = 'cygwin';
-        } elseif ($s->contains('NetBSD')) {
-            $platformCode = 'netbsd';
-        } elseif ($s->contains('OpenBSD')) {
-            $platformCode = 'openbsd';
-        } elseif ($s->contains('DragonFly')) {
-            $platformCode = 'dragonfly bsd';
-        } elseif ($s->contains('BSD Four')) {
-            $platformCode = 'bsd';
-        } elseif ($s->containsAny(['HP-UX', 'HPUX'])) {
-            $platformCode = 'hp-ux';
-        } elseif ($s->containsAny(['beos'], false)) {
-            $platformCode = 'beos';
-        } elseif ($s->containsAny(['IRIX64', 'IRIX'])) {
-            $platformCode = 'irix';
-        } elseif ($s->contains('solaris', false)) {
-            $platformCode = 'solaris';
-        } elseif ($s->contains('sunos', false)) {
-            $platformCode = 'sunos';
-        } elseif ($s->contains('RISC')) {
-            $platformCode = 'risc os';
-        } elseif ($s->contains('OpenVMS')) {
-            $platformCode = 'openvms';
-        } elseif ($s->containsAny(['Tru64 UNIX', 'Digital Unix', 'OSF1'])) {
-            $platformCode = 'tru64 unix';
-        } elseif ($s->contains('unix', false)) {
-            $platformCode = 'unix';
-        } elseif ($s->containsAny(['os/2', 'warp'], false)) {
-            $platformCode = 'os/2';
-        } elseif ((new Helper\Linux($agent))->isLinux()) {
-            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($agent);
-        } elseif ($s->contains('CP/M')) {
-            $platformCode = 'cp/m';
-        } elseif ($s->containsAny(['Nintendo Wii', 'Nintendo 3DS'])) {
-            $platformCode = 'nintendo os';
-        } elseif ($s->containsAny(['Nokia'])) {
-            $platformCode = 'nokia os';
-        } elseif ($s->contains('ruby', false)) {
-            $platformCode = 'ruby';
-        } elseif ($s->containsAny(['Palm OS', 'PalmSource'])) {
-            $platformCode = 'palmos';
-        } elseif ($s->contains('WyderOS')) {
-            $platformCode = 'wyderos';
-        } elseif ($s->contains('Liberate')) {
-            $platformCode = 'liberate';
-        } elseif ($s->contains('Inferno')) {
-            $platformCode = 'inferno os';
-        } elseif ($s->contains('Syllable')) {
-            $platformCode = 'syllable';
-        } elseif ($s->containsAny(['Camino', 'PubSub', 'integrity'])) {
-            $platformCode = 'mac os x';
-        } elseif (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP|Dolfin\/|Spark284|Lemon B556|KKT20|GT\-C3312R)/', $agent)) {
-            $platformCode = 'java';
-        } elseif (preg_match('/(GT\-S5380)/', $agent)) {
-            $platformCode = 'bada';
-        } elseif (preg_match('/(Velocitymicro\/T408)/', $agent)) {
-            $platformCode = 'android';
+            return $this->loader->load('windows ce', $useragent);
         }
 
-        return $this->loader->load($platformCode, $agent);
+        if (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop| wds )/', $useragent)) {
+            $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $useragent, $matchesPhone);
+
+            if (!$doMatchPhone || $matchesPhone[1] >= 7) {
+                return $this->loader->load('windows phone', $useragent);
+            }
+
+            return $this->loader->load('windows mobile os', $useragent);
+        }
+
+        if ($windowsHelper->isMobileWindows()) {
+            if (preg_match('/mobile version([\d]+)/', $useragent, $matchesMobile) && $matchesMobile[1] >= 70) {
+                return $this->loader->load('windows phone', $useragent);
+            }
+
+            if (preg_match('/Windows Mobile ([\d]+)/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
+                return $this->loader->load('windows phone', $useragent);
+            }
+
+            if (preg_match('/Windows NT ([\d\.]+); ARM; Lumia/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
+                return $this->loader->load('windows phone', $useragent);
+            }
+
+            return $this->loader->load('windows mobile os', $useragent);
+        }
+
+        if ($isWindows && $s->contains('ARM;')) {
+            return $this->loader->load('windows rt', $useragent);
+        }
+
+        if ($isWindows) {
+            return (new Platform\WindowsFactory($this->cache, $this->loader))->detect($useragent);
+        }
+
+        if (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|S60V3|S60V5)/', $useragent)) {
+            return $this->loader->load('symbian', $useragent);
+        }
+
+        if (preg_match('/(Series40)/', $useragent)) {
+            return $this->loader->load('nokia os', $useragent);
+        }
+
+        if ($s->contains('Bada')) {
+            return $this->loader->load('bada', $useragent);
+        }
+
+        if ($s->contains('MeeGo')) {
+            return $this->loader->load('meego', $useragent);
+        }
+
+        if (preg_match('/sailfish/i', $useragent)) {
+            return $this->loader->load('sailfishos', $useragent);
+        }
+
+        if (preg_match('/(android; linux arm)/i', $useragent)) {
+            return $this->loader->load('android', $useragent);
+        }
+
+        if ($s->containsAny(['debian apt-http', 'linux mint', 'ubuntu', 'fedora', 'redhat', 'red hat', 'kfreebsd', 'centos', 'mandriva', 'suse', 'gentoo', 'slackware', 'ventana', 'moblin'], false)) {
+            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($useragent);
+        }
+
+        if (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $useragent)) {
+            return $this->loader->load('linux smartphone os (maemo)', $useragent);
+        }
+
+        if (preg_match('/(BlackBerry|BB10)/', $useragent)) {
+            return $this->loader->load('rim os', $useragent);
+        }
+
+        if (preg_match('/(webos|hpwos)/i', $useragent)) {
+            return $this->loader->load('webos', $useragent);
+        }
+
+        if ($s->contains('Tizen')) {
+            return $this->loader->load('tizen', $useragent);
+        }
+
+        if ((new Helper\FirefoxOs($useragent))->isFirefoxOs()) {
+            return $this->loader->load('firefoxos', $useragent);
+        }
+
+        if ($s->contains('freebsd', false)) {
+            return $this->loader->load('freebsd', $useragent);
+        }
+
+        if ($s->containsAny(['darwin', 'cfnetwork'], false)) {
+            return (new Platform\DarwinFactory($this->cache, $this->loader))->detect($useragent);
+        }
+
+        if ($s->contains('playstation', false)) {
+            return $this->loader->load('cellos', $useragent);
+        }
+
+        if (preg_match('/(micromaxx650|dolfin\/|yuanda50|wap[ \-]browser)/i', $useragent)) {
+            return $this->loader->load('java', $useragent);
+        }
+
+        if (preg_match('/CommonCrawler/', $useragent)) {
+            return $this->loader->load('unknown', $useragent);
+        }
+
+        if (preg_match('/MIUI/', $useragent)) {
+            return $this->loader->load('miui os', $useragent);
+        }
+
+        if ((new Helper\AndroidOs($useragent))->isAndroid()) {
+            return $this->loader->load('android', $useragent);
+        }
+
+        if ((new Helper\Ios($useragent))->isIos()) {
+            return $this->loader->load('ios', $useragent);
+        }
+
+        if (preg_match('/\b(profile)\b/i', $useragent)) {
+            return $this->loader->load('java', $useragent);
+        }
+
+        if (preg_match('/Linux; U; (\d+[\d\.]+)/', $useragent, $matches) && $matches[1] >= 4) {
+            return $this->loader->load('android', $useragent);
+        }
+
+        if (preg_match('/(Macintosh|Mac_PowerPC|PPC|68K)/', $useragent)
+            && !$s->containsAny(['OS X', 'os=Mac 10'])
+        ) {
+            return $this->loader->load('macintosh', $useragent);
+        }
+
+        if (preg_match('/(de|rasp)bian/i', $useragent)) {
+            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($useragent);
+        }
+
+        if ($s->containsAny(['macintosh', 'mac os x', 'os=mac 10'], false)) {
+            return $this->loader->load('mac os x', $useragent);
+        }
+
+        if ($s->containsAny(['RIM Tablet'])) {
+            return $this->loader->load('rim tablet os', $useragent);
+        }
+
+        if ($s->containsAny(['CrOS', 'Joli OS', 'Zenwalk GNU'])) {
+            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($useragent);
+        }
+
+        if ($s->contains('AIX')) {
+            return $this->loader->load('aix', $useragent);
+        }
+
+        if ($s->contains('AmigaOS')) {
+            return $this->loader->load('amiga os', $useragent);
+        }
+
+        if ($s->contains('BREW')) {
+            return $this->loader->load('brew', $useragent);
+        }
+
+        if ($s->contains('cygwin', false)) {
+            return $this->loader->load('cygwin', $useragent);
+        }
+
+        if ($s->contains('NetBSD')) {
+            return $this->loader->load('netbsd', $useragent);
+        }
+
+        if ($s->contains('OpenBSD')) {
+            return $this->loader->load('openbsd', $useragent);
+        }
+
+        if ($s->contains('DragonFly')) {
+            return $this->loader->load('dragonfly bsd', $useragent);
+        }
+
+        if ($s->contains('BSD Four')) {
+            return $this->loader->load('bsd', $useragent);
+        }
+
+        if ($s->containsAny(['HP-UX', 'HPUX'])) {
+            return $this->loader->load('hp-ux', $useragent);
+        }
+
+        if ($s->containsAny(['beos'], false)) {
+            return $this->loader->load('beos', $useragent);
+        }
+
+        if ($s->containsAny(['IRIX64', 'IRIX'])) {
+            return $this->loader->load('irix', $useragent);
+        }
+
+        if ($s->contains('solaris', false)) {
+            return $this->loader->load('solaris', $useragent);
+        }
+
+        if ($s->contains('sunos', false)) {
+            return $this->loader->load('sunos', $useragent);
+        }
+
+        if ($s->contains('RISC')) {
+            return $this->loader->load('risc os', $useragent);
+        }
+
+        if ($s->contains('OpenVMS')) {
+            return $this->loader->load('openvms', $useragent);
+        }
+
+        if ($s->containsAny(['Tru64 UNIX', 'Digital Unix', 'OSF1'])) {
+            return $this->loader->load('tru64 unix', $useragent);
+        }
+
+        if ($s->contains('unix', false)) {
+            return $this->loader->load('unix', $useragent);
+        }
+
+        if ($s->containsAny(['os/2', 'warp'], false)) {
+            return $this->loader->load('os/2', $useragent);
+        }
+
+        if ((new Helper\Linux($useragent))->isLinux()) {
+            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($useragent);
+        }
+
+        if ($s->contains('CP/M')) {
+            return $this->loader->load('cp/m', $useragent);
+        }
+
+        if ($s->containsAny(['Nintendo Wii', 'Nintendo 3DS'])) {
+            return $this->loader->load('nintendo os', $useragent);
+        }
+
+        if ($s->containsAny(['Nokia'])) {
+            return $this->loader->load('nokia os', $useragent);
+        }
+
+        if ($s->contains('ruby', false)) {
+            return $this->loader->load('ruby', $useragent);
+        }
+
+        if ($s->containsAny(['Palm OS', 'PalmSource'])) {
+            return $this->loader->load('palmos', $useragent);
+        }
+
+        if ($s->contains('WyderOS')) {
+            return $this->loader->load('wyderos', $useragent);
+        }
+
+        if ($s->contains('Liberate')) {
+            return $this->loader->load('liberate', $useragent);
+        }
+
+        if ($s->contains('Inferno')) {
+            return $this->loader->load('inferno os', $useragent);
+        }
+
+        if ($s->contains('Syllable')) {
+            return $this->loader->load('syllable', $useragent);
+        }
+
+        if ($s->containsAny(['Camino', 'PubSub', 'integrity'])) {
+            return $this->loader->load('mac os x', $useragent);
+        }
+
+        if (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP|Dolfin\/|Spark284|Lemon B556|KKT20|GT\-C3312R)/', $useragent)) {
+            return $this->loader->load('java', $useragent);
+        }
+
+        if (preg_match('/(GT\-S5380)/', $useragent)) {
+            return $this->loader->load('bada', $useragent);
+        }
+
+        if (preg_match('/(Velocitymicro\/T408)/', $useragent)) {
+            return $this->loader->load('android', $useragent);
+        }
+
+        return $this->loader->load('unknown', $useragent);
     }
 
     /**

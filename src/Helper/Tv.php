@@ -96,6 +96,7 @@ class Tv
             'apple tv',
             'mxl661l32',
             'nettv',
+            'netbox',
         ];
 
         if (!$s->containsAny($tvDevices, false)) {
