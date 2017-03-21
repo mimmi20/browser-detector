@@ -154,7 +154,7 @@ class MotorolaFactory implements Factory\FactoryInterface
             return $this->loader->load('xt311', $useragent);
         }
 
-        if ($s->contains('Xoom', false)) {
+        if ($s->contains('Xoom', true)) {
             return $this->loader->load('xoom', $useragent);
         }
 
@@ -186,12 +186,12 @@ class MotorolaFactory implements Factory\FactoryInterface
             return $this->loader->load('mz607', $useragent);
         }
 
-        if ($s->containsAny(['mz616', 'xoom 2'], false)) {
-            return $this->loader->load('mz616', $useragent);
-        }
-
         if ($s->contains('mz615', false)) {
             return $this->loader->load('mz615', $useragent);
+        }
+
+        if ($s->containsAny(['mz616', 'xoom 2'], false)) {
+            return $this->loader->load('mz616', $useragent);
         }
 
         if ($s->contains('mz604', false)) {
