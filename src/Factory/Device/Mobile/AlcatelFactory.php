@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,140 +47,261 @@ class AlcatelFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general alcatel device';
-
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)8008d/i', $useragent)) {
-            $deviceCode = 'ot-8008d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)8000d/i', $useragent)) {
-            $deviceCode = 'ot-8000d';
-        } elseif (preg_match('/7049d/i', $useragent)) {
-            $deviceCode = 'ot-7049d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7047d/i', $useragent)) {
-            $deviceCode = 'ot-7047d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7041x/i', $useragent)) {
-            $deviceCode = 'ot-7041x';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7041d/i', $useragent)) {
-            $deviceCode = 'ot-7041d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7025d/i', $useragent)) {
-            $deviceCode = 'ot-7025d';
-        } elseif (preg_match('/6050a/i', $useragent)) {
-            $deviceCode = 'ot-6050a';
-        } elseif (preg_match('/6043d/i', $useragent)) {
-            $deviceCode = 'ot-6043d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6040d/i', $useragent)) {
-            $deviceCode = 'ot-6040d';
-        } elseif (preg_match('/6036y/i', $useragent)) {
-            $deviceCode = 'ot-6036y';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6035r/i', $useragent)) {
-            $deviceCode = 'ot-6035r';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6034r/i', $useragent)) {
-            $deviceCode = 'ot-6034r';
-        } elseif (preg_match('/4034d/i', $useragent)) {
-            $deviceCode = 'ot-4034d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6033x/i', $useragent)) {
-            $deviceCode = 'ot-6033x';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6032/i', $useragent)) {
-            $deviceCode = 'ot-6032';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6030x/i', $useragent)) {
-            $deviceCode = 'ot-6030x';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6030d/i', $useragent)) {
-            $deviceCode = 'ot-6030d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6015x/i', $useragent)) {
-            $deviceCode = 'ot-6015x';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6012d/i', $useragent)) {
-            $deviceCode = 'ot-6012d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6010x/i', $useragent)) {
-            $deviceCode = 'ot-6010x';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6010d/i', $useragent)) {
-            $deviceCode = 'ot-6010d';
-        } elseif (preg_match('/5042d/i', $useragent)) {
-            $deviceCode = 'ot-5042d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)5036d/i', $useragent)) {
-            $deviceCode = 'ot-5036d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)5035d/i', $useragent)) {
-            $deviceCode = 'ot-5035d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)5020d/i', $useragent)) {
-            $deviceCode = 'ot-5020d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4037t/i', $useragent)) {
-            $deviceCode = 'ot-4037t';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4030x/i', $useragent)) {
-            $deviceCode = 'ot-4030x';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4030d/i', $useragent)) {
-            $deviceCode = 'ot-4030d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4015x/i', $useragent)) {
-            $deviceCode = 'ot-4015x';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4015d/i', $useragent)) {
-            $deviceCode = 'ot-4015d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4012x/i', $useragent)) {
-            $deviceCode = 'ot-4012x';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4012a/i', $useragent)) {
-            $deviceCode = 'ot-4012a';
-        } elseif (preg_match('/3075A/', $useragent)) {
-            $deviceCode = 'ot-3075a';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)997d/i', $useragent)) {
-            $deviceCode = 'ot-997d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)995/i', $useragent)) {
-            $deviceCode = 'ot-995';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)992d/i', $useragent)) {
-            $deviceCode = 'ot-992d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)991t/i', $useragent)) {
-            $deviceCode = 'ot-991t';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)991d/i', $useragent)) {
-            $deviceCode = 'ot-991d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)991/i', $useragent)) {
-            $deviceCode = 'ot-991';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)990/i', $useragent)) {
-            $deviceCode = 'ot-990';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)985d/i', $useragent)) {
-            $deviceCode = 'ot-985d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)980/i', $useragent)) {
-            $deviceCode = 'ot-980';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)918d/i', $useragent)) {
-            $deviceCode = 'ot-918d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)918/i', $useragent)) {
-            $deviceCode = 'ot-918';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)908/i', $useragent)) {
-            $deviceCode = 'ot-908';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)903d/i', $useragent)) {
-            $deviceCode = 'ot-903d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)890d/i', $useragent)) {
-            $deviceCode = 'one touch 890d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)890/i', $useragent)) {
-            $deviceCode = 'ot-890';
-        } elseif (preg_match('/OT871A/', $useragent)) {
-            $deviceCode = 'ot-871a';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)818/i', $useragent)) {
-            $deviceCode = 'ot-818';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)710d/i', $useragent)) {
-            $deviceCode = 'ot-710d';
-        } elseif (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)216/i', $useragent)) {
-            $deviceCode = 'ot-216';
-        } elseif (preg_match('/Vodafone 975N/', $useragent)) {
-            $deviceCode = '975n';
-        } elseif (preg_match('/(V860|Vodafone Smart II)/', $useragent)) {
-            $deviceCode = 'v860';
-        } elseif (preg_match('/P321/', $useragent)) {
-            $deviceCode = 'ot-p321';
-        } elseif (preg_match('/P320X/', $useragent)) {
-            $deviceCode = 'ot-p320x';
-        } elseif (preg_match('/P310X/', $useragent)) {
-            $deviceCode = 'ot-p310x';
-        } elseif (preg_match('/P310A/', $useragent)) {
-            $deviceCode = 'ot-p310a';
-        } elseif (preg_match('/ONE TOUCH TAB 8HD/', $useragent)) {
-            $deviceCode = 'ot-tab8hd';
-        } elseif (preg_match('/ONE TOUCH TAB 7HD/', $useragent)) {
-            $deviceCode = 'ot-tab7hd';
-        } elseif (preg_match('/ALCATEL ONE TOUCH Fierce/', $useragent)) {
-            $deviceCode = 'fierce';
+            return $this->loader->load('ot-8008d', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)8000d/i', $useragent)) {
+            return $this->loader->load('ot-8000d', $useragent);
+        }
+
+        if ($s->contains('7049d', false)) {
+            return $this->loader->load('ot-7049d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7047d/i', $useragent)) {
+            return $this->loader->load('ot-7047d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7041x/i', $useragent)) {
+            return $this->loader->load('ot-7041x', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7041d/i', $useragent)) {
+            return $this->loader->load('ot-7041d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7025d/i', $useragent)) {
+            return $this->loader->load('ot-7025d', $useragent);
+        }
+
+        if ($s->contains('6050a', false)) {
+            return $this->loader->load('ot-6050a', $useragent);
+        }
+
+        if ($s->contains('6043d', false)) {
+            return $this->loader->load('ot-6043d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6040d/i', $useragent)) {
+            return $this->loader->load('ot-6040d', $useragent);
+        }
+
+        if ($s->contains('6036y', false)) {
+            return $this->loader->load('ot-6036y', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6035r/i', $useragent)) {
+            return $this->loader->load('ot-6035r', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6034r/i', $useragent)) {
+            return $this->loader->load('ot-6034r', $useragent);
+        }
+
+        if ($s->contains('4034d', false)) {
+            return $this->loader->load('ot-4034d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6033x/i', $useragent)) {
+            return $this->loader->load('ot-6033x', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6032/i', $useragent)) {
+            return $this->loader->load('ot-6032', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6030x/i', $useragent)) {
+            return $this->loader->load('ot-6030x', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6030d/i', $useragent)) {
+            return $this->loader->load('ot-6030d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6015x/i', $useragent)) {
+            return $this->loader->load('ot-6015x', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6012d/i', $useragent)) {
+            return $this->loader->load('ot-6012d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6010x/i', $useragent)) {
+            return $this->loader->load('ot-6010x', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6010d/i', $useragent)) {
+            return $this->loader->load('ot-6010d', $useragent);
+        }
+
+        if ($s->contains('5042d', false)) {
+            return $this->loader->load('ot-5042d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)5036d/i', $useragent)) {
+            return $this->loader->load('ot-5036d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)5035d/i', $useragent)) {
+            return $this->loader->load('ot-5035d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)5020d/i', $useragent)) {
+            return $this->loader->load('ot-5020d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4037t/i', $useragent)) {
+            return $this->loader->load('ot-4037t', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4030x/i', $useragent)) {
+            return $this->loader->load('ot-4030x', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4030d/i', $useragent)) {
+            return $this->loader->load('ot-4030d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4015x/i', $useragent)) {
+            return $this->loader->load('ot-4015x', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4015d/i', $useragent)) {
+            return $this->loader->load('ot-4015d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4012x/i', $useragent)) {
+            return $this->loader->load('ot-4012x', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4012a/i', $useragent)) {
+            return $this->loader->load('ot-4012a', $useragent);
+        }
+
+        if ($s->contains('3075A', true)) {
+            return $this->loader->load('ot-3075a', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)997d/i', $useragent)) {
+            return $this->loader->load('ot-997d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)995/i', $useragent)) {
+            return $this->loader->load('ot-995', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)992d/i', $useragent)) {
+            return $this->loader->load('ot-992d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)991t/i', $useragent)) {
+            return $this->loader->load('ot-991t', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)991d/i', $useragent)) {
+            return $this->loader->load('ot-991d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)991/i', $useragent)) {
+            return $this->loader->load('ot-991', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)990/i', $useragent)) {
+            return $this->loader->load('ot-990', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)985d/i', $useragent)) {
+            return $this->loader->load('ot-985d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)980/i', $useragent)) {
+            return $this->loader->load('ot-980', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)918d/i', $useragent)) {
+            return $this->loader->load('ot-918d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)918/i', $useragent)) {
+            return $this->loader->load('ot-918', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)908/i', $useragent)) {
+            return $this->loader->load('ot-908', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)903d/i', $useragent)) {
+            return $this->loader->load('ot-903d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)890d/i', $useragent)) {
+            return $this->loader->load('one touch 890d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)890/i', $useragent)) {
+            return $this->loader->load('ot-890', $useragent);
+        }
+
+        if ($s->contains('OT871A', true)) {
+            return $this->loader->load('ot-871a', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)818/i', $useragent)) {
+            return $this->loader->load('ot-818', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)710d/i', $useragent)) {
+            return $this->loader->load('ot-710d', $useragent);
+        }
+
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)216/i', $useragent)) {
+            return $this->loader->load('ot-216', $useragent);
+        }
+
+        if ($s->contains('Vodafone 975N', true)) {
+            return $this->loader->load('975n', $useragent);
+        }
+
+        if ($s->containsAny(['V860', 'Vodafone Smart II'], true)) {
+            return $this->loader->load('v860', $useragent);
+        }
+
+        if ($s->contains('P321', true)) {
+            return $this->loader->load('ot-p321', $useragent);
+        }
+
+        if ($s->contains('P320X', true)) {
+            return $this->loader->load('ot-p320x', $useragent);
+        }
+
+        if ($s->contains('P310X', true)) {
+            return $this->loader->load('ot-p310x', $useragent);
+        }
+
+        if ($s->contains('P310A', true)) {
+            return $this->loader->load('ot-p310a', $useragent);
+        }
+
+        if ($s->contains('ONE TOUCH TAB 8HD', true)) {
+            return $this->loader->load('ot-tab8hd', $useragent);
+        }
+
+        if ($s->contains('ONE TOUCH TAB 7HD', true)) {
+            return $this->loader->load('ot-tab7hd', $useragent);
+        }
+
+        if ($s->contains('ALCATEL ONE TOUCH Fierce', true)) {
+            return $this->loader->load('fierce', $useragent);
+        }
+
+        return $this->loader->load('general alcatel device', $useragent);
     }
 }

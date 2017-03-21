@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,144 +47,269 @@ class MotorolaFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general motorola device';
-
-        if (preg_match('/MotoG3/i', $useragent)) {
-            $deviceCode = 'motog3';
-        } elseif (preg_match('/XT1080/i', $useragent)) {
-            $deviceCode = 'xt1080';
-        } elseif (preg_match('/XT1068/i', $useragent)) {
-            $deviceCode = 'xt1068';
-        } elseif (preg_match('/XT1058/i', $useragent)) {
-            $deviceCode = 'xt1058';
-        } elseif (preg_match('/XT1052/i', $useragent)) {
-            $deviceCode = 'xt1052';
-        } elseif (preg_match('/XT1039/i', $useragent)) {
-            $deviceCode = 'xt1039';
-        } elseif (preg_match('/XT1033/i', $useragent)) {
-            $deviceCode = 'xt1033';
-        } elseif (preg_match('/XT1032/i', $useragent)) {
-            $deviceCode = 'xt1032';
-        } elseif (preg_match('/XT1021/i', $useragent)) {
-            $deviceCode = 'xt1021';
-        } elseif (preg_match('/XT926/i', $useragent)) {
-            $deviceCode = 'xt926';
-        } elseif (preg_match('/XT925/i', $useragent)) {
-            $deviceCode = 'xt925';
-        } elseif (preg_match('/DROID RAZR HD/i', $useragent)) {
-            $deviceCode = 'xt923';
-        } elseif (preg_match('/XT910/i', $useragent)) {
-            $deviceCode = 'xt910';
-        } elseif (preg_match('/XT907/i', $useragent)) {
-            $deviceCode = 'xt907';
-        } elseif (preg_match('/XT890/i', $useragent)) {
-            $deviceCode = 'xt890';
-        } elseif (preg_match('/(XT875|DROID BIONIC 4G)/i', $useragent)) {
-            $deviceCode = 'xt875';
-        } elseif (preg_match('/XT720/i', $useragent)) {
-            $deviceCode = 'milestone xt720';
-        } elseif (preg_match('/XT702/i', $useragent)) {
-            $deviceCode = 'xt702';
-        } elseif (preg_match('/XT615/i', $useragent)) {
-            $deviceCode = 'xt615';
-        } elseif (preg_match('/XT610/i', $useragent)) {
-            $deviceCode = 'xt610';
-        } elseif (preg_match('/XT530/i', $useragent)) {
-            $deviceCode = 'xt530';
-        } elseif (preg_match('/XT389/i', $useragent)) {
-            $deviceCode = 'xt389';
-        } elseif (preg_match('/XT320/i', $useragent)) {
-            $deviceCode = 'xt320';
-        } elseif (preg_match('/XT316/i', $useragent)) {
-            $deviceCode = 'xt316';
-        } elseif (preg_match('/XT311/i', $useragent)) {
-            $deviceCode = 'xt311';
-        } elseif (preg_match('/Xoom/i', $useragent)) {
-            $deviceCode = 'xoom';
-        } elseif (preg_match('/WX308/i', $useragent)) {
-            $deviceCode = 'wx308';
-        } elseif (preg_match('/T720/i', $useragent)) {
-            $deviceCode = 't720';
-        } elseif (preg_match('/RAZRV3x/i', $useragent)) {
-            $deviceCode = 'razrv3x';
-        } elseif (preg_match('/MOT\-V3i/', $useragent)) {
-            $deviceCode = 'razr v3i';
-        } elseif (preg_match('/nexus 6/i', $useragent)) {
-            $deviceCode = 'nexus 6';
-        } elseif (preg_match('/mz608/i', $useragent)) {
-            $deviceCode = 'mz608';
-        } elseif (preg_match('/(mz607|xoom 2 me)/i', $useragent)) {
-            $deviceCode = 'mz607';
-        } elseif (preg_match('/(mz616|xoom 2)/i', $useragent)) {
-            $deviceCode = 'mz616';
-        } elseif (preg_match('/mz615/i', $useragent)) {
-            $deviceCode = 'mz615';
-        } elseif (preg_match('/mz604/i', $useragent)) {
-            $deviceCode = 'mz604';
-        } elseif (preg_match('/mz601/i', $useragent)) {
-            $deviceCode = 'mz601';
-        } elseif (preg_match('/milestone x/i', $useragent)) {
-            $deviceCode = 'milestone x';
-        } elseif (preg_match('/milestone/i', $useragent)) {
-            $deviceCode = 'milestone';
-        } elseif (preg_match('/me860/i', $useragent)) {
-            $deviceCode = 'me860';
-        } elseif (preg_match('/me600/i', $useragent)) {
-            $deviceCode = 'me600';
-        } elseif (preg_match('/me525/i', $useragent)) {
-            $deviceCode = 'me525';
-        } elseif (preg_match('/me511/i', $useragent)) {
-            $deviceCode = 'me511';
-        } elseif (preg_match('/mb860/i', $useragent)) {
-            $deviceCode = 'mb860';
-        } elseif (preg_match('/mb632/i', $useragent)) {
-            $deviceCode = 'mb632';
-        } elseif (preg_match('/mb612/i', $useragent)) {
-            $deviceCode = 'mb612';
-        } elseif (preg_match('/mb526/i', $useragent)) {
-            $deviceCode = 'mb526';
-        } elseif (preg_match('/mb525/i', $useragent)) {
-            $deviceCode = 'mb525';
-        } elseif (preg_match('/mb511/i', $useragent)) {
-            $deviceCode = 'mb511';
-        } elseif (preg_match('/mb300/i', $useragent)) {
-            $deviceCode = 'mb300';
-        } elseif (preg_match('/mb200/i', $useragent)) {
-            $deviceCode = 'mb200';
-        } elseif (preg_match('/es405b/i', $useragent)) {
-            $deviceCode = 'es405b';
-        } elseif (preg_match('/e1000/i', $useragent)) {
-            $deviceCode = 'e1000';
-        } elseif (preg_match('/DROID X2/i', $useragent)) {
-            $deviceCode = 'droid x2';
-        } elseif (preg_match('/DROIDX/i', $useragent)) {
-            $deviceCode = 'droidx';
-        } elseif (preg_match('/DROID RAZR 4G/i', $useragent)) {
-            $deviceCode = 'xt912b';
-        } elseif (preg_match('/DROID RAZR/i', $useragent)) {
-            $deviceCode = 'razr';
-        } elseif (preg_match('/DROID Pro/i', $useragent)) {
-            $deviceCode = 'droid pro';
-        } elseif (preg_match('/droid(\-| )bionic/i', $useragent)) {
-            $deviceCode = 'droid bionic';
-        } elseif (preg_match('/DROID2/', $useragent)) {
-            $deviceCode = 'droid2';
-        } elseif (preg_match('/Droid/', $useragent)) {
-            $deviceCode = 'droid';
-        } elseif (preg_match('/MotoA953/', $useragent)) {
-            $deviceCode = 'a953';
-        } elseif (preg_match('/MotoQ9c/', $useragent)) {
-            $deviceCode = 'q9c';
-        } elseif (preg_match('/L7/', $useragent)) {
-            $deviceCode = 'slvr l7';
+        if ($s->contains('MotoG3', false)) {
+            return $this->loader->load('motog3', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('XT1080', false)) {
+            return $this->loader->load('xt1080', $useragent);
+        }
+
+        if ($s->contains('XT1068', false)) {
+            return $this->loader->load('xt1068', $useragent);
+        }
+
+        if ($s->contains('XT1058', false)) {
+            return $this->loader->load('xt1058', $useragent);
+        }
+
+        if ($s->contains('XT1052', false)) {
+            return $this->loader->load('xt1052', $useragent);
+        }
+
+        if ($s->contains('XT1039', false)) {
+            return $this->loader->load('xt1039', $useragent);
+        }
+
+        if ($s->contains('XT1033', false)) {
+            return $this->loader->load('xt1033', $useragent);
+        }
+
+        if ($s->contains('XT1032', false)) {
+            return $this->loader->load('xt1032', $useragent);
+        }
+
+        if ($s->contains('XT1021', false)) {
+            return $this->loader->load('xt1021', $useragent);
+        }
+
+        if ($s->contains('XT926', false)) {
+            return $this->loader->load('xt926', $useragent);
+        }
+
+        if ($s->contains('XT925', false)) {
+            return $this->loader->load('xt925', $useragent);
+        }
+
+        if ($s->contains('DROID RAZR HD', false)) {
+            return $this->loader->load('xt923', $useragent);
+        }
+
+        if ($s->contains('XT910', false)) {
+            return $this->loader->load('xt910', $useragent);
+        }
+
+        if ($s->contains('XT907', false)) {
+            return $this->loader->load('xt907', $useragent);
+        }
+
+        if ($s->contains('XT890', false)) {
+            return $this->loader->load('xt890', $useragent);
+        }
+
+        if ($s->containsAny(['XT875', 'DROID BIONIC 4G'], false)) {
+            return $this->loader->load('xt875', $useragent);
+        }
+
+        if ($s->contains('XT720', false)) {
+            return $this->loader->load('milestone xt720', $useragent);
+        }
+
+        if ($s->contains('XT702', false)) {
+            return $this->loader->load('xt702', $useragent);
+        }
+
+        if ($s->contains('XT615', false)) {
+            return $this->loader->load('xt615', $useragent);
+        }
+
+        if ($s->contains('XT610', false)) {
+            return $this->loader->load('xt610', $useragent);
+        }
+
+        if ($s->contains('XT530', false)) {
+            return $this->loader->load('xt530', $useragent);
+        }
+
+        if ($s->contains('XT389', false)) {
+            return $this->loader->load('xt389', $useragent);
+        }
+
+        if ($s->contains('XT320', false)) {
+            return $this->loader->load('xt320', $useragent);
+        }
+
+        if ($s->contains('XT316', false)) {
+            return $this->loader->load('xt316', $useragent);
+        }
+
+        if ($s->contains('XT311', false)) {
+            return $this->loader->load('xt311', $useragent);
+        }
+
+        if ($s->contains('Xoom', true)) {
+            return $this->loader->load('xoom', $useragent);
+        }
+
+        if ($s->contains('WX308', false)) {
+            return $this->loader->load('wx308', $useragent);
+        }
+
+        if ($s->contains('T720', false)) {
+            return $this->loader->load('t720', $useragent);
+        }
+
+        if ($s->contains('RAZRV3x', false)) {
+            return $this->loader->load('razrv3x', $useragent);
+        }
+
+        if ($s->contains('MOT-V3i', true)) {
+            return $this->loader->load('razr v3i', $useragent);
+        }
+
+        if ($s->contains('nexus 6', false)) {
+            return $this->loader->load('nexus 6', $useragent);
+        }
+
+        if ($s->contains('mz608', false)) {
+            return $this->loader->load('mz608', $useragent);
+        }
+
+        if ($s->containsAny(['mz607', 'xoom 2 me'], false)) {
+            return $this->loader->load('mz607', $useragent);
+        }
+
+        if ($s->contains('mz615', false)) {
+            return $this->loader->load('mz615', $useragent);
+        }
+
+        if ($s->containsAny(['mz616', 'xoom 2'], false)) {
+            return $this->loader->load('mz616', $useragent);
+        }
+
+        if ($s->contains('mz604', false)) {
+            return $this->loader->load('mz604', $useragent);
+        }
+
+        if ($s->contains('mz601', false)) {
+            return $this->loader->load('mz601', $useragent);
+        }
+
+        if ($s->contains('milestone x', false)) {
+            return $this->loader->load('milestone x', $useragent);
+        }
+
+        if ($s->contains('milestone', false)) {
+            return $this->loader->load('milestone', $useragent);
+        }
+
+        if ($s->contains('me860', false)) {
+            return $this->loader->load('me860', $useragent);
+        }
+
+        if ($s->contains('me600', false)) {
+            return $this->loader->load('me600', $useragent);
+        }
+
+        if ($s->contains('me525', false)) {
+            return $this->loader->load('me525', $useragent);
+        }
+
+        if ($s->contains('me511', false)) {
+            return $this->loader->load('me511', $useragent);
+        }
+
+        if ($s->contains('mb860', false)) {
+            return $this->loader->load('mb860', $useragent);
+        }
+
+        if ($s->contains('mb632', false)) {
+            return $this->loader->load('mb632', $useragent);
+        }
+
+        if ($s->contains('mb612', false)) {
+            return $this->loader->load('mb612', $useragent);
+        }
+
+        if ($s->contains('mb526', false)) {
+            return $this->loader->load('mb526', $useragent);
+        }
+
+        if ($s->contains('mb525', false)) {
+            return $this->loader->load('mb525', $useragent);
+        }
+
+        if ($s->contains('mb511', false)) {
+            return $this->loader->load('mb511', $useragent);
+        }
+
+        if ($s->contains('mb300', false)) {
+            return $this->loader->load('mb300', $useragent);
+        }
+
+        if ($s->contains('mb200', false)) {
+            return $this->loader->load('mb200', $useragent);
+        }
+
+        if ($s->contains('es405b', false)) {
+            return $this->loader->load('es405b', $useragent);
+        }
+
+        if ($s->contains('e1000', false)) {
+            return $this->loader->load('e1000', $useragent);
+        }
+
+        if ($s->contains('DROID X2', false)) {
+            return $this->loader->load('droid x2', $useragent);
+        }
+
+        if ($s->contains('DROIDX', false)) {
+            return $this->loader->load('droidx', $useragent);
+        }
+
+        if ($s->contains('DROID RAZR 4G', false)) {
+            return $this->loader->load('xt912b', $useragent);
+        }
+
+        if ($s->contains('DROID RAZR', false)) {
+            return $this->loader->load('razr', $useragent);
+        }
+
+        if ($s->contains('DROID Pro', false)) {
+            return $this->loader->load('droid pro', $useragent);
+        }
+
+        if ($s->containsAny(['droid-bionic', 'droid bionic'], false)) {
+            return $this->loader->load('droid bionic', $useragent);
+        }
+
+        if ($s->contains('DROID2', true)) {
+            return $this->loader->load('droid2', $useragent);
+        }
+
+        if ($s->contains('Droid', true)) {
+            return $this->loader->load('droid', $useragent);
+        }
+
+        if ($s->contains('MotoA953', true)) {
+            return $this->loader->load('a953', $useragent);
+        }
+
+        if ($s->contains('MotoQ9c', true)) {
+            return $this->loader->load('q9c', $useragent);
+        }
+
+        if ($s->contains('L7', true)) {
+            return $this->loader->load('slvr l7', $useragent);
+        }
+
+        return $this->loader->load('general motorola device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,182 +47,349 @@ class LenovoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general lenovo device';
-
-        if (preg_match('/YT3\-X50L/i', $useragent)) {
-            $deviceCode = 'yt3-x50l';
-        } elseif (preg_match('/TB2\-X30F/i', $useragent)) {
-            $deviceCode = 'tb2-x30f';
-        } elseif (preg_match('/YOGA Tablet 2 Pro\-1380L/i', $useragent)) {
-            $deviceCode = '1380l';
-        } elseif (preg_match('/YOGA Tablet 2 Pro\-1380F/i', $useragent)) {
-            $deviceCode = '1380f';
-        } elseif (preg_match('/YOGA Tablet 2\-1050L/i', $useragent)) {
-            $deviceCode = '1050l';
-        } elseif (preg_match('/YOGA Tablet 2\-1050F/i', $useragent)) {
-            $deviceCode = '1050f';
-        } elseif (preg_match('/YOGA Tablet 2\-830L/i', $useragent)) {
-            $deviceCode = '830l';
-        } elseif (preg_match('/YOGA Tablet 2\-830F/i', $useragent)) {
-            $deviceCode = '830f';
-        } elseif (preg_match('/a10\-70f/i', $useragent)) {
-            $deviceCode = 'a10-70f';
-        } elseif (preg_match('/s6000l\-f/i', $useragent)) {
-            $deviceCode = 's6000l-f';
-        } elseif (preg_match('/s6000\-h/i', $useragent)) {
-            $deviceCode = 's6000-h';
-        } elseif (preg_match('/s6000\-f/i', $useragent)) {
-            $deviceCode = 'ideatab';
-        } elseif (preg_match('/s5000\-h/i', $useragent)) {
-            $deviceCode = 's5000-h';
-        } elseif (preg_match('/s5000\-f/i', $useragent)) {
-            $deviceCode = 's5000-f';
-        } elseif (preg_match('/ideatabs2110ah/i', $useragent)) {
-            $deviceCode = 's2110a-h';
-        } elseif (preg_match('/ideatabs2110af/i', $useragent)) {
-            $deviceCode = 's2110a-f';
-        } elseif (preg_match('/IdeaTabS2109A\-F/', $useragent)) {
-            $deviceCode = 's2109a-f';
-        } elseif (preg_match('/s920/i', $useragent)) {
-            $deviceCode = 's920';
-        } elseif (preg_match('/s880i/i', $useragent)) {
-            $deviceCode = 's880i';
-        } elseif (preg_match('/s856/i', $useragent)) {
-            $deviceCode = 's856';
-        } elseif (preg_match('/s820\_row/i', $useragent)) {
-            $deviceCode = 's820_row';
-        } elseif (preg_match('/s720/i', $useragent)) {
-            $deviceCode = 's720';
-        } elseif (preg_match('/s660/i', $useragent)) {
-            $deviceCode = 's660';
-        } elseif (preg_match('/p1050x/i', $useragent)) {
-            $deviceCode = 'lifetab p1050x';
-        } elseif (preg_match('/p1032x/i', $useragent)) {
-            $deviceCode = 'lifetab p1032x';
-        } elseif (preg_match('/p780/i', $useragent)) {
-            $deviceCode = 'p780';
-        } elseif (preg_match('/k910l/i', $useragent)) {
-            $deviceCode = 'k910l';
-        } elseif (preg_match('/k900/i', $useragent)) {
-            $deviceCode = 'k900';
-        } elseif (preg_match('/ k1/i', $useragent)) {
-            $deviceCode = 'k1';
-        } elseif (preg_match('/ideapada10/i', $useragent)) {
-            $deviceCode = 'ideapad a10';
-        } elseif (preg_match('/a1\_07/i', $useragent)) {
-            $deviceCode = 'ideapad a1';
-        } elseif (preg_match('/b8080\-h/i', $useragent)) {
-            $deviceCode = 'b8080-h';
-        } elseif (preg_match('/b8080\-f/i', $useragent)) {
-            $deviceCode = 'b8080-f';
-        } elseif (preg_match('/b8000\-h/i', $useragent)) {
-            $deviceCode = 'b8000-h';
-        } elseif (preg_match('/b8000\-f/i', $useragent)) {
-            $deviceCode = 'b8000-f';
-        } elseif (preg_match('/b6000\-hv/i', $useragent)) {
-            $deviceCode = 'b6000-hv';
-        } elseif (preg_match('/b6000\-h/i', $useragent)) {
-            $deviceCode = 'b6000-h';
-        } elseif (preg_match('/b6000\-f/i', $useragent)) {
-            $deviceCode = 'b6000-f';
-        } elseif (preg_match('/a7600\-h/i', $useragent)) {
-            $deviceCode = 'a7600-h';
-        } elseif (preg_match('/a7600\-f/i', $useragent)) {
-            $deviceCode = 'a7600-f';
-        } elseif (preg_match('/a7000\-a/i', $useragent)) {
-            $deviceCode = 'a7000-a';
-        } elseif (preg_match('/A5500\-H/i', $useragent)) {
-            $deviceCode = 'a5500-h';
-        } elseif (preg_match('/A5500\-F/i', $useragent)) {
-            $deviceCode = 'a5500-f';
-        } elseif (preg_match('/A3500\-H/i', $useragent)) {
-            $deviceCode = 'a3500-h';
-        } elseif (preg_match('/A3500\-FL/i', $useragent)) {
-            $deviceCode = 'a3500-fl';
-        } elseif (preg_match('/a3300\-hv/i', $useragent)) {
-            $deviceCode = 'a3300-hv';
-        } elseif (preg_match('/a3300\-h/i', $useragent)) {
-            $deviceCode = 'a3300-h';
-        } elseif (preg_match('/a3300\-gv/i', $useragent)) {
-            $deviceCode = 'a3300-gv';
-        } elseif (preg_match('/A3000\-H/i', $useragent)) {
-            $deviceCode = 'a3000-h';
-        } elseif (preg_match('/A2107A\-H/i', $useragent)) {
-            $deviceCode = 'a2107a-h';
-        } elseif (preg_match('/A1107/i', $useragent)) {
-            $deviceCode = 'a1107';
-        } elseif (preg_match('/A1000\-F/i', $useragent)) {
-            $deviceCode = 'a1000-f';
-        } elseif (preg_match('/A1000L\-F/i', $useragent)) {
-            $deviceCode = 'a1000l-f';
-        } elseif (preg_match('/A1000/i', $useragent)) {
-            $deviceCode = 'a1000';
-        } elseif (preg_match('/(a2109a|ideatab)/i', $useragent)) {
-            $deviceCode = 'a2109a';
-        } elseif (preg_match('/a889/i', $useragent)) {
-            $deviceCode = 'a889';
-        } elseif (preg_match('/a880/i', $useragent)) {
-            $deviceCode = 'a880';
-        } elseif (preg_match('/a850\+/i', $useragent)) {
-            $deviceCode = 'a850+';
-        } elseif (preg_match('/a850/i', $useragent)) {
-            $deviceCode = 'a850';
-        } elseif (preg_match('/a820/i', $useragent)) {
-            $deviceCode = 'a820';
-        } elseif (preg_match('/a816/i', $useragent)) {
-            $deviceCode = 'a816';
-        } elseif (preg_match('/a789/i', $useragent)) {
-            $deviceCode = 'a789';
-        } elseif (preg_match('/a766/i', $useragent)) {
-            $deviceCode = 'a766';
-        } elseif (preg_match('/a660/i', $useragent)) {
-            $deviceCode = 'a660';
-        } elseif (preg_match('/a656/i', $useragent)) {
-            $deviceCode = 'a656';
-        } elseif (preg_match('/a606/i', $useragent)) {
-            $deviceCode = 'a606';
-        } elseif (preg_match('/a590/i', $useragent)) {
-            $deviceCode = 'a590';
-        } elseif (preg_match('/a536/i', $useragent)) {
-            $deviceCode = 'a536';
-        } elseif (preg_match('/a390/i', $useragent)) {
-            $deviceCode = 'a390';
-        } elseif (preg_match('/a388t/i', $useragent)) {
-            $deviceCode = 'a388t';
-        } elseif (preg_match('/a328/i', $useragent)) {
-            $deviceCode = 'a328';
-        } elseif (preg_match('/a319/i', $useragent)) {
-            $deviceCode = 'a319';
-        } elseif (preg_match('/a288t/i', $useragent)) {
-            $deviceCode = 'a288t';
-        } elseif (preg_match('/a65/i', $useragent)) {
-            $deviceCode = 'a65';
-        } elseif (preg_match('/a60/i', $useragent)) {
-            $deviceCode = 'a60';
-        } elseif (preg_match('/(SmartTabIII10|Smart Tab III 10)/i', $useragent)) {
-            $deviceCode = 'smart tab iii 10';
-        } elseif (preg_match('/(SmartTabII10|SmartTab II 10)/i', $useragent)) {
-            $deviceCode = 'smarttab ii 10';
-        } elseif (preg_match('/SmartTabII7/i', $useragent)) {
-            $deviceCode = 'smarttab ii 7';
-        } elseif (preg_match('/smart tab 4g/i', $useragent)) {
-            $deviceCode = 'smart tab 4g';
-        } elseif (preg_match('/smart tab 4/i', $useragent)) {
-            $deviceCode = 'smart tab 4';
-        } elseif (preg_match('/smart tab 3g/i', $useragent)) {
-            $deviceCode = 'smart tab 3g';
-        } elseif (preg_match('/ThinkPad/i', $useragent)) {
-            $deviceCode = '1838';
-        } elseif (preg_match('/AT1010\-T/', $useragent)) {
-            $deviceCode = 'at1010-t';
+        if ($s->contains('YT3-X50L', false)) {
+            return $this->loader->load('yt3-x50l', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('TB2-X30F', false)) {
+            return $this->loader->load('tb2-x30f', $useragent);
+        }
+
+        if ($s->contains('YOGA Tablet 2 Pro-1380L', false)) {
+            return $this->loader->load('1380l', $useragent);
+        }
+
+        if ($s->contains('YOGA Tablet 2 Pro-1380F', false)) {
+            return $this->loader->load('1380f', $useragent);
+        }
+
+        if ($s->contains('YOGA Tablet 2-1050L', false)) {
+            return $this->loader->load('1050l', $useragent);
+        }
+
+        if ($s->contains('YOGA Tablet 2-1050F', false)) {
+            return $this->loader->load('1050f', $useragent);
+        }
+
+        if ($s->contains('YOGA Tablet 2-830L', false)) {
+            return $this->loader->load('830l', $useragent);
+        }
+
+        if ($s->contains('YOGA Tablet 2-830F', false)) {
+            return $this->loader->load('830f', $useragent);
+        }
+
+        if ($s->contains('a10-70f', false)) {
+            return $this->loader->load('a10-70f', $useragent);
+        }
+
+        if ($s->contains('s6000l-f', false)) {
+            return $this->loader->load('s6000l-f', $useragent);
+        }
+
+        if ($s->contains('s6000-h', false)) {
+            return $this->loader->load('s6000-h', $useragent);
+        }
+
+        if ($s->contains('s6000-f', false)) {
+            return $this->loader->load('s6000-f', $useragent);
+        }
+
+        if ($s->contains('s5000-h', false)) {
+            return $this->loader->load('s5000-h', $useragent);
+        }
+
+        if ($s->contains('s5000-f', false)) {
+            return $this->loader->load('s5000-f', $useragent);
+        }
+
+        if ($s->contains('ideatabs2110ah', false)) {
+            return $this->loader->load('s2110a-h', $useragent);
+        }
+
+        if ($s->contains('ideatabs2110af', false)) {
+            return $this->loader->load('s2110a-f', $useragent);
+        }
+
+        if ($s->contains('IdeaTabS2109A-F', true)) {
+            return $this->loader->load('s2109a-f', $useragent);
+        }
+
+        if ($s->contains('s920', false)) {
+            return $this->loader->load('s920', $useragent);
+        }
+
+        if ($s->contains('s880i', false)) {
+            return $this->loader->load('s880i', $useragent);
+        }
+
+        if ($s->contains('s856', false)) {
+            return $this->loader->load('s856', $useragent);
+        }
+
+        if ($s->contains('s820_row', false)) {
+            return $this->loader->load('s820_row', $useragent);
+        }
+
+        if ($s->contains('s720', false)) {
+            return $this->loader->load('s720', $useragent);
+        }
+
+        if ($s->contains('s660', false)) {
+            return $this->loader->load('s660', $useragent);
+        }
+
+        if ($s->contains('p1050x', false)) {
+            return $this->loader->load('lifetab p1050x', $useragent);
+        }
+
+        if ($s->contains('p1032x', false)) {
+            return $this->loader->load('lifetab p1032x', $useragent);
+        }
+
+        if ($s->contains('p780', false)) {
+            return $this->loader->load('p780', $useragent);
+        }
+
+        if ($s->contains('k910l', false)) {
+            return $this->loader->load('k910l', $useragent);
+        }
+
+        if ($s->contains('k900', false)) {
+            return $this->loader->load('k900', $useragent);
+        }
+
+        if ($s->contains(' k1', false)) {
+            return $this->loader->load('k1', $useragent);
+        }
+
+        if ($s->contains('ideapada10', false)) {
+            return $this->loader->load('ideapad a10', $useragent);
+        }
+
+        if ($s->contains('a1_07', false)) {
+            return $this->loader->load('ideapad a1', $useragent);
+        }
+
+        if ($s->contains('b8080-h', false)) {
+            return $this->loader->load('b8080-h', $useragent);
+        }
+
+        if ($s->contains('b8080-f', false)) {
+            return $this->loader->load('b8080-f', $useragent);
+        }
+
+        if ($s->contains('b8000-h', false)) {
+            return $this->loader->load('b8000-h', $useragent);
+        }
+
+        if ($s->contains('b8000-f', false)) {
+            return $this->loader->load('b8000-f', $useragent);
+        }
+
+        if ($s->contains('b6000-hv', false)) {
+            return $this->loader->load('b6000-hv', $useragent);
+        }
+
+        if ($s->contains('b6000-h', false)) {
+            return $this->loader->load('b6000-h', $useragent);
+        }
+
+        if ($s->contains('b6000-f', false)) {
+            return $this->loader->load('b6000-f', $useragent);
+        }
+
+        if ($s->contains('a7600-h', false)) {
+            return $this->loader->load('a7600-h', $useragent);
+        }
+
+        if ($s->contains('a7600-f', false)) {
+            return $this->loader->load('a7600-f', $useragent);
+        }
+
+        if ($s->contains('a7000-a', false)) {
+            return $this->loader->load('a7000-a', $useragent);
+        }
+
+        if ($s->contains('A5500-H', false)) {
+            return $this->loader->load('a5500-h', $useragent);
+        }
+
+        if ($s->contains('A5500-F', false)) {
+            return $this->loader->load('a5500-f', $useragent);
+        }
+
+        if ($s->contains('a3500-hv', false)) {
+            return $this->loader->load('a3500-hv', $useragent);
+        }
+
+        if ($s->contains('a3500-h', false)) {
+            return $this->loader->load('a3500-h', $useragent);
+        }
+
+        if ($s->contains('A3500-FL', false)) {
+            return $this->loader->load('a3500-fl', $useragent);
+        }
+
+        if ($s->contains('a3300-hv', false)) {
+            return $this->loader->load('a3300-hv', $useragent);
+        }
+
+        if ($s->contains('a3300-h', false)) {
+            return $this->loader->load('a3300-h', $useragent);
+        }
+
+        if ($s->contains('a3300-gv', false)) {
+            return $this->loader->load('a3300-gv', $useragent);
+        }
+
+        if ($s->contains('A3000-H', false)) {
+            return $this->loader->load('a3000-h', $useragent);
+        }
+
+        if ($s->contains('A2107A-H', false)) {
+            return $this->loader->load('a2107a-h', $useragent);
+        }
+
+        if ($s->contains('A1107', false)) {
+            return $this->loader->load('a1107', $useragent);
+        }
+
+        if ($s->contains('A1000-F', false)) {
+            return $this->loader->load('a1000-f', $useragent);
+        }
+
+        if ($s->contains('A1000L-F', false)) {
+            return $this->loader->load('a1000l-f', $useragent);
+        }
+
+        if ($s->contains('A1000', false)) {
+            return $this->loader->load('a1000', $useragent);
+        }
+
+        if ($s->containsAny(['a2109a', 'ideatab'], false)) {
+            return $this->loader->load('a2109a', $useragent);
+        }
+
+        if ($s->contains('a889', false)) {
+            return $this->loader->load('a889', $useragent);
+        }
+
+        if ($s->contains('a880', false)) {
+            return $this->loader->load('a880', $useragent);
+        }
+
+        if ($s->contains('a850+', false)) {
+            return $this->loader->load('a850+', $useragent);
+        }
+
+        if ($s->contains('a850', false)) {
+            return $this->loader->load('a850', $useragent);
+        }
+
+        if ($s->contains('a820', false)) {
+            return $this->loader->load('a820', $useragent);
+        }
+
+        if ($s->contains('a816', false)) {
+            return $this->loader->load('a816', $useragent);
+        }
+
+        if ($s->contains('a789', false)) {
+            return $this->loader->load('a789', $useragent);
+        }
+
+        if ($s->contains('a766', false)) {
+            return $this->loader->load('a766', $useragent);
+        }
+
+        if ($s->contains('a660', false)) {
+            return $this->loader->load('a660', $useragent);
+        }
+
+        if ($s->contains('a656', false)) {
+            return $this->loader->load('a656', $useragent);
+        }
+
+        if ($s->contains('a606', false)) {
+            return $this->loader->load('a606', $useragent);
+        }
+
+        if ($s->contains('a590', false)) {
+            return $this->loader->load('a590', $useragent);
+        }
+
+        if ($s->contains('a536', false)) {
+            return $this->loader->load('a536', $useragent);
+        }
+
+        if ($s->contains('a390', false)) {
+            return $this->loader->load('a390', $useragent);
+        }
+
+        if ($s->contains('a388t', false)) {
+            return $this->loader->load('a388t', $useragent);
+        }
+
+        if ($s->contains('a328', false)) {
+            return $this->loader->load('a328', $useragent);
+        }
+
+        if ($s->contains('a319', false)) {
+            return $this->loader->load('a319', $useragent);
+        }
+
+        if ($s->contains('a288t', false)) {
+            return $this->loader->load('a288t', $useragent);
+        }
+
+        if ($s->contains('a65', false)) {
+            return $this->loader->load('a65', $useragent);
+        }
+
+        if ($s->contains('a60', false)) {
+            return $this->loader->load('a60', $useragent);
+        }
+
+        if ($s->containsAny(['SmartTabIII10', 'Smart Tab III 10'], false)) {
+            return $this->loader->load('smart tab iii 10', $useragent);
+        }
+
+        if ($s->containsAny(['SmartTabII10', 'SmartTab II 10'], false)) {
+            return $this->loader->load('smarttab ii 10', $useragent);
+        }
+
+        if ($s->contains('SmartTabII7', false)) {
+            return $this->loader->load('smarttab ii 7', $useragent);
+        }
+
+        if ($s->contains('smart tab 4g', false)) {
+            return $this->loader->load('smart tab 4g', $useragent);
+        }
+
+        if ($s->contains('smart tab 4', false)) {
+            return $this->loader->load('smart tab 4', $useragent);
+        }
+
+        if ($s->contains('smart tab 3g', false)) {
+            return $this->loader->load('smart tab 3g', $useragent);
+        }
+
+        if ($s->contains('ThinkPad', false)) {
+            return $this->loader->load('1838', $useragent);
+        }
+
+        if ($s->contains('AT1010-T', true)) {
+            return $this->loader->load('at1010-t', $useragent);
+        }
+
+        return $this->loader->load('general lenovo device', $useragent);
     }
 }

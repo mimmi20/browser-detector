@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,102 +47,185 @@ class MedionFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general medion device';
-
-        if (preg_match('/medion e5001/i', $useragent)) {
-            $deviceCode = 'life e5001';
-        } elseif (preg_match('/medion e4502/i', $useragent)) {
-            $deviceCode = 'life e4502';
-        } elseif (preg_match('/medion e4504/i', $useragent)) {
-            $deviceCode = 'life e4504';
-        } elseif (preg_match('/medion e4503/i', $useragent)) {
-            $deviceCode = 'life e4503';
-        } elseif (preg_match('/medion e4506/i', $useragent)) {
-            $deviceCode = 'life e4506';
-        } elseif (preg_match('/medion e4005/i', $useragent)) {
-            $deviceCode = 'life e4005';
-        } elseif (preg_match('/x5020/i', $useragent)) {
-            $deviceCode = 'life x5020';
-        } elseif (preg_match('/x5004/i', $useragent)) {
-            $deviceCode = 'x5004';
-        } elseif (preg_match('/x4701/i', $useragent)) {
-            $deviceCode = 'x4701';
-        } elseif (preg_match('/p5001/i', $useragent)) {
-            $deviceCode = 'life p5001';
-        } elseif (preg_match('/p5004/i', $useragent)) {
-            $deviceCode = 'life p5004';
-        } elseif (preg_match('/p5005/i', $useragent)) {
-            $deviceCode = 'life p5005';
-        } elseif (preg_match('/s5004/i', $useragent)) {
-            $deviceCode = 'life s5004';
-        } elseif (preg_match('/LIFETAB_P1034X/i', $useragent)) {
-            $deviceCode = 'lifetab p1034x';
-        } elseif (preg_match('/LIFETAB_P733X/i', $useragent)) {
-            $deviceCode = 'lifetab p733x';
-        } elseif (preg_match('/LIFETAB_S9714/i', $useragent)) {
-            $deviceCode = 'lifetab s9714';
-        } elseif (preg_match('/LIFETAB_S9512/i', $useragent)) {
-            $deviceCode = 'lifetab s9512';
-        } elseif (preg_match('/LIFETAB_S1036X/i', $useragent)) {
-            $deviceCode = 'lifetab s1036x';
-        } elseif (preg_match('/LIFETAB_S1034X/i', $useragent)) {
-            $deviceCode = 'lifetab s1034x';
-        } elseif (preg_match('/LIFETAB_S1033X/i', $useragent)) {
-            $deviceCode = 'lifetab s1033x';
-        } elseif (preg_match('/LIFETAB_S831X/i', $useragent)) {
-            $deviceCode = 'lifetab s831x';
-        } elseif (preg_match('/LIFETAB_S785X/i', $useragent)) {
-            $deviceCode = 'lifetab s785x';
-        } elseif (preg_match('/LIFETAB_S732X/i', $useragent)) {
-            $deviceCode = 'lifetab s732x';
-        } elseif (preg_match('/LIFETAB_P9516/i', $useragent)) {
-            $deviceCode = 'lifetab p9516';
-        } elseif (preg_match('/LIFETAB_P9514/i', $useragent)) {
-            $deviceCode = 'lifetab p9514';
-        } elseif (preg_match('/LIFETAB_P891X/i', $useragent)) {
-            $deviceCode = 'lifetab p891x';
-        } elseif (preg_match('/LIFETAB_P831X\.2/i', $useragent)) {
-            $deviceCode = 'lifetab p831x.2';
-        } elseif (preg_match('/LIFETAB_P831X/i', $useragent)) {
-            $deviceCode = 'lifetab p831x';
-        } elseif (preg_match('/LIFETAB_E10320/i', $useragent)) {
-            $deviceCode = 'lifetab e10320';
-        } elseif (preg_match('/LIFETAB_E10316/i', $useragent)) {
-            $deviceCode = 'lifetab e10316';
-        } elseif (preg_match('/LIFETAB_E10312/i', $useragent)) {
-            $deviceCode = 'lifetab e10312';
-        } elseif (preg_match('/LIFETAB_E10310/i', $useragent)) {
-            $deviceCode = 'lifetab e10310';
-        } elseif (preg_match('/LIFETAB_E7316/i', $useragent)) {
-            $deviceCode = 'lifetab e7316';
-        } elseif (preg_match('/LIFETAB_E7313/i', $useragent)) {
-            $deviceCode = 'lifetab e7313';
-        } elseif (preg_match('/LIFETAB_E7312/i', $useragent)) {
-            $deviceCode = 'lifetab e7312';
-        } elseif (preg_match('/LIFETAB_E733X/i', $useragent)) {
-            $deviceCode = 'lifetab e733x';
-        } elseif (preg_match('/LIFETAB_E723X/i', $useragent)) {
-            $deviceCode = 'lifetab e723x';
-        } elseif (preg_match('/p4501/i', $useragent)) {
-            $deviceCode = 'md 98428';
-        } elseif (preg_match('/p4502/i', $useragent)) {
-            $deviceCode = 'life p4502';
-        } elseif (preg_match('/LIFE P4310/i', $useragent)) {
-            $deviceCode = 'life p4310';
-        } elseif (preg_match('/p4013/i', $useragent)) {
-            $deviceCode = 'life p4013';
-        } elseif (preg_match('/LIFE P4012/i', $useragent)) {
-            $deviceCode = 'lifetab p4012';
-        } elseif (preg_match('/LIFE E3501/i', $useragent)) {
-            $deviceCode = 'life e3501';
+        if ($s->contains('medion e5001', false)) {
+            return $this->loader->load('life e5001', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('medion e4502', false)) {
+            return $this->loader->load('life e4502', $useragent);
+        }
+
+        if ($s->contains('medion e4504', false)) {
+            return $this->loader->load('life e4504', $useragent);
+        }
+
+        if ($s->contains('medion e4503', false)) {
+            return $this->loader->load('life e4503', $useragent);
+        }
+
+        if ($s->contains('medion e4506', false)) {
+            return $this->loader->load('life e4506', $useragent);
+        }
+
+        if ($s->contains('medion e4005', false)) {
+            return $this->loader->load('life e4005', $useragent);
+        }
+
+        if ($s->contains('x5020', false)) {
+            return $this->loader->load('life x5020', $useragent);
+        }
+
+        if ($s->contains('x5004', false)) {
+            return $this->loader->load('x5004', $useragent);
+        }
+
+        if ($s->contains('x4701', false)) {
+            return $this->loader->load('x4701', $useragent);
+        }
+
+        if ($s->contains('p5001', false)) {
+            return $this->loader->load('life p5001', $useragent);
+        }
+
+        if ($s->contains('p5004', false)) {
+            return $this->loader->load('life p5004', $useragent);
+        }
+
+        if ($s->contains('p5005', false)) {
+            return $this->loader->load('life p5005', $useragent);
+        }
+
+        if ($s->contains('s5004', false)) {
+            return $this->loader->load('life s5004', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_P1034X', false)) {
+            return $this->loader->load('lifetab p1034x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_P733X', false)) {
+            return $this->loader->load('lifetab p733x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_S9714', false)) {
+            return $this->loader->load('lifetab s9714', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_S9512', false)) {
+            return $this->loader->load('lifetab s9512', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_S1036X', false)) {
+            return $this->loader->load('lifetab s1036x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_S1034X', false)) {
+            return $this->loader->load('lifetab s1034x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_S1033X', false)) {
+            return $this->loader->load('lifetab s1033x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_S831X', false)) {
+            return $this->loader->load('lifetab s831x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_S785X', false)) {
+            return $this->loader->load('lifetab s785x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_S732X', false)) {
+            return $this->loader->load('lifetab s732x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_P9516', false)) {
+            return $this->loader->load('lifetab p9516', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_P9514', false)) {
+            return $this->loader->load('lifetab p9514', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_P891X', false)) {
+            return $this->loader->load('lifetab p891x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_P831X.2', false)) {
+            return $this->loader->load('lifetab p831x.2', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_P831X', false)) {
+            return $this->loader->load('lifetab p831x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_E10320', false)) {
+            return $this->loader->load('lifetab e10320', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_E10316', false)) {
+            return $this->loader->load('lifetab e10316', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_E10312', false)) {
+            return $this->loader->load('lifetab e10312', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_E10310', false)) {
+            return $this->loader->load('lifetab e10310', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_E7316', false)) {
+            return $this->loader->load('lifetab e7316', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_E7313', false)) {
+            return $this->loader->load('lifetab e7313', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_E7312', false)) {
+            return $this->loader->load('lifetab e7312', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_E733X', false)) {
+            return $this->loader->load('lifetab e733x', $useragent);
+        }
+
+        if ($s->contains('LIFETAB_E723X', false)) {
+            return $this->loader->load('lifetab e723x', $useragent);
+        }
+
+        if ($s->contains('p4501', false)) {
+            return $this->loader->load('md 98428', $useragent);
+        }
+
+        if ($s->contains('p4502', false)) {
+            return $this->loader->load('life p4502', $useragent);
+        }
+
+        if ($s->contains('LIFE P4310', false)) {
+            return $this->loader->load('life p4310', $useragent);
+        }
+
+        if ($s->contains('p4013', false)) {
+            return $this->loader->load('life p4013', $useragent);
+        }
+
+        if ($s->contains('LIFE P4012', false)) {
+            return $this->loader->load('lifetab p4012', $useragent);
+        }
+
+        if ($s->contains('LIFE E3501', false)) {
+            return $this->loader->load('life e3501', $useragent);
+        }
+
+        return $this->loader->load('general medion device', $useragent);
     }
 }
