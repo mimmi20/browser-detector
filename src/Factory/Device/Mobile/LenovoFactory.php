@@ -99,7 +99,7 @@ class LenovoFactory implements Factory\FactoryInterface
         }
 
         if ($s->contains('s6000-f', false)) {
-            return $this->loader->load('ideatab', $useragent);
+            return $this->loader->load('s6000-f', $useragent);
         }
 
         if ($s->contains('s5000-h', false)) {
@@ -226,7 +226,11 @@ class LenovoFactory implements Factory\FactoryInterface
             return $this->loader->load('a5500-f', $useragent);
         }
 
-        if ($s->contains('A3500-H', false)) {
+        if ($s->contains('a3500-hv', false)) {
+            return $this->loader->load('a3500-hv', $useragent);
+        }
+
+        if ($s->contains('a3500-h', false)) {
             return $this->loader->load('a3500-h', $useragent);
         }
 
