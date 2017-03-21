@@ -171,7 +171,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/nexus(hd2| evohd2)/i', $useragent)) {
+        if ($s->containsAny(['nexus evohd2', 'nexushd2'], false)) {
             return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -179,11 +179,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PantechFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/(hp|p160u|touchpad|pixi|palm|blazer|cm\_tenderloin)/i', $useragent)) {
+        if ($s->containsAny(['hp', 'p160u', 'touchpad', 'pixi', 'palm', 'blazer', 'cm_tenderloin'], false)) {
             return (new Mobile\HpFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/(galaxy|nexus|i7110|i9100|i9300|yp\-g|blaze)/i', $useragent)) {
+        if ($s->containsAny(['galaxy', 'nexus', 'i7110', 'i9100', 'i9300', 'yp-g', 'blaze'], false)) {
             return (new Mobile\SamsungFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -205,15 +205,15 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(SmartTab7|Smart 4G)/', $useragent)) {
+        if ($s->containsAny(['SmartTab7', 'Smart 4G'], true)) {
             return (new Mobile\ZteFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/(lenovo|ideatab|ideapad|smarttab)/i', $useragent)) {
+        if ($s->containsAny(['lenovo', 'ideatab', 'ideapad', 'smarttab', 'thinkpad'], false)) {
             return (new Mobile\LenovoFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(acer|iconia|liquid)/i', $useragent)) {
+        if ($s->containsAny(['acer', 'iconia', 'liquid'], false)) {
             return (new Mobile\AcerFactory($this->cache, $this->loader))->detect($useragent);
         }
 
@@ -1360,7 +1360,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\TeslaMotorsFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if (preg_match('/MB\d{3}/', $useragent)) {
+        if (preg_match('/M(B|Z)\d{3}/', $useragent)) {
+            return (new Mobile\MotorolaFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/WX\d{3}/', $useragent)) {
             return (new Mobile\MotorolaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1376,7 +1380,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MtechFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if ($s->containsAny(['v860', 'vodafone smart II'], false)) {
+        if ($s->containsAny(['v860', 'vodafone smart II', 'vodafone 975n'], false)) {
             return (new Mobile\AlcatelFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1444,7 +1448,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MotorolaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains(' droid', false)) {
+        if ($s->containsAny([' droid', 'milestone', 'xoom'], false)) {
             return (new Mobile\MotorolaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1588,11 +1592,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DigmaFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if ($s->contains('K910L', true)) {
-            return (new Mobile\LenovoFactory($this->cache, $this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['P1032X', 'P1050X'], true)) {
+        if ($s->containsAny(['P1032X', 'P1050X', 'K910L', ' K1 ', ' A1', ' A65 '], true)) {
             return (new Mobile\LenovoFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1648,7 +1648,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SunupFactory($this->cache, $this->loader))->detect($useragent);
         }
 
-        if ($s->contains(' G3 ', true)) {
+        if ($s->containsAny([' G3 ', 'P509'], true)) {
             return (new Mobile\LgFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
