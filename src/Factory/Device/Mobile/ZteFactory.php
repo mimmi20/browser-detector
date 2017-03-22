@@ -114,7 +114,7 @@ class ZteFactory implements Factory\FactoryInterface
             return $this->loader->load('v808', $useragent);
         }
 
-        if ($s->contains('v788d', false)) {
+        if ($s->containsAny(['v788d', 'kis plus'], false)) {
             return $this->loader->load('zte v788d', $useragent);
         }
 
@@ -138,7 +138,7 @@ class ZteFactory implements Factory\FactoryInterface
             return $this->loader->load('smart 4g', $useragent);
         }
 
-        if ($s->contains('zte[ -]skate', false)) {
+        if ($s->containsAny(['zte skate', 'zte-skate'], false)) {
             return $this->loader->load('skate', $useragent);
         }
 
@@ -174,20 +174,12 @@ class ZteFactory implements Factory\FactoryInterface
             return $this->loader->load('v769m', $useragent);
         }
 
-        if ($s->contains('kis plus', false)) {
-            return $this->loader->load('zte v788d', $useragent);
-        }
-
         if ($s->contains('blade q maxi', false)) {
             return $this->loader->load('blade q maxi', $useragent);
         }
 
         if ($s->contains('blade iii_il', false)) {
             return $this->loader->load('blade iii', $useragent);
-        }
-
-        if ($s->contains('blade', false)) {
-            return $this->loader->load('zte blade', $useragent);
         }
 
         if ($s->contains('base tab', false)) {
@@ -202,7 +194,7 @@ class ZteFactory implements Factory\FactoryInterface
             return $this->loader->load('lutea 2', $useragent);
         }
 
-        if ($s->contains('base lutea', false)) {
+        if ($s->containsAny(['blade', 'base lutea'], false)) {
             return $this->loader->load('zte blade', $useragent);
         }
 
