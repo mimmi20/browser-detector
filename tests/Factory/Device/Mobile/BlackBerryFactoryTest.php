@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class BlackBerryFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -101,6 +104,16 @@ class BlackBerryFactoryTest extends \PHPUnit\Framework\TestCase
     public function providerDetect()
     {
         return [
+            [
+                'this is a fake ua to trigger the fallback',
+                'general BlackBerry Device',
+                'general BlackBerry Device',
+                'Research In Motion Limited',
+                'RIM',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
             [
                 'BlackBerry9000/4.6.0.126 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/285',
                 'BlackBerry 9000',

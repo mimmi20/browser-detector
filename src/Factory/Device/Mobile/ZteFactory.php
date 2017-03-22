@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,100 +47,181 @@ class ZteFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general zte device';
-
-        if (preg_match('/blade v6/i', $useragent)) {
-            $deviceCode = 'blade v6';
-        } elseif (preg_match('/blade l6/i', $useragent)) {
-            $deviceCode = 'blade l6';
-        } elseif (preg_match('/blade l5 plus/i', $useragent)) {
-            $deviceCode = 'blade l5 plus';
-        } elseif (preg_match('/blade l3/i', $useragent)) {
-            $deviceCode = 'blade l3';
-        } elseif (preg_match('/blade l2/i', $useragent)) {
-            $deviceCode = 'blade l2';
-        } elseif (preg_match('/n919/i', $useragent)) {
-            $deviceCode = 'n919';
-        } elseif (preg_match('/x920/i', $useragent)) {
-            $deviceCode = 'x920';
-        } elseif (preg_match('/w713/i', $useragent)) {
-            $deviceCode = 'w713';
-        } elseif (preg_match('/z221/i', $useragent)) {
-            $deviceCode = 'z221';
-        } elseif (preg_match('/(v975|geek)/i', $useragent)) {
-            $deviceCode = 'v975';
-        } elseif (preg_match('/v970/i', $useragent)) {
-            $deviceCode = 'v970';
-        } elseif (preg_match('/v967s/i', $useragent)) {
-            $deviceCode = 'v967s';
-        } elseif (preg_match('/v880/i', $useragent)) {
-            $deviceCode = 'v880';
-        } elseif (preg_match('/v829/i', $useragent)) {
-            $deviceCode = 'v829';
-        } elseif (preg_match('/v808/i', $useragent)) {
-            $deviceCode = 'v808';
-        } elseif (preg_match('/v788d/i', $useragent)) {
-            $deviceCode = 'zte v788d';
-        } elseif (preg_match('/v9/i', $useragent)) {
-            $deviceCode = 'v9';
-        } elseif (preg_match('/u930hd/i', $useragent)) {
-            $deviceCode = 'u930hd';
-        } elseif (preg_match('/smarttab10/i', $useragent)) {
-            $deviceCode = 'smart tab 10';
-        } elseif (preg_match('/smarttab7/i', $useragent)) {
-            $deviceCode = 'smarttab7';
-        } elseif (preg_match('/vodafone smart 4g/i', $useragent)) {
-            $deviceCode = 'smart 4g';
-        } elseif (preg_match('/zte[ \-]skate/i', $useragent)) {
-            $deviceCode = 'skate';
-        } elseif (preg_match('/racerii/i', $useragent)) {
-            $deviceCode = 'racer ii';
-        } elseif (preg_match('/racer/i', $useragent)) {
-            $deviceCode = 'racer';
-        } elseif (preg_match('/zteopen/i', $useragent)) {
-            $deviceCode = 'open';
-        } elseif (preg_match('/nx501/i', $useragent)) {
-            $deviceCode = 'nx501';
-        } elseif (preg_match('/nx402/i', $useragent)) {
-            $deviceCode = 'nx402';
-        } elseif (preg_match('/n918st/i', $useragent)) {
-            $deviceCode = 'n918st';
-        } elseif (preg_match('/ n600 /i', $useragent)) {
-            $deviceCode = 'n600';
-        } elseif (preg_match('/leo q2/i', $useragent)) {
-            $deviceCode = 'v769m';
-        } elseif (preg_match('/kis plus/i', $useragent)) {
-            $deviceCode = 'zte v788d';
-        } elseif (preg_match('/blade q maxi/i', $useragent)) {
-            $deviceCode = 'blade q maxi';
-        } elseif (preg_match('/blade iii\_il/i', $useragent)) {
-            $deviceCode = 'blade iii';
-        } elseif (preg_match('/blade/i', $useragent)) {
-            $deviceCode = 'zte blade';
-        } elseif (preg_match('/base tab/i', $useragent)) {
-            $deviceCode = 'base tab';
-        } elseif (preg_match('/base_lutea_3/i', $useragent)) {
-            $deviceCode = 'lutea 3';
-        } elseif (preg_match('/base lutea 2/i', $useragent)) {
-            $deviceCode = 'lutea 2';
-        } elseif (preg_match('/base lutea/i', $useragent)) {
-            $deviceCode = 'zte blade';
-        } elseif (preg_match('/atlas\_w/i', $useragent)) {
-            $deviceCode = 'atlas w';
-        } elseif (preg_match('/tania/i', $useragent)) {
-            $deviceCode = 'tania';
-        } elseif (preg_match('/g\-x991\-rio\-orange/i', $useragent)) {
-            $deviceCode = 'g-x991';
-        } elseif (preg_match('/beeline pro/i', $useragent)) {
-            $deviceCode = 'beeline pro';
+        if ($s->contains('blade v6', false)) {
+            return $this->loader->load('blade v6', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('blade l6', false)) {
+            return $this->loader->load('blade l6', $useragent);
+        }
+
+        if ($s->contains('blade l5 plus', false)) {
+            return $this->loader->load('blade l5 plus', $useragent);
+        }
+
+        if ($s->contains('blade l3', false)) {
+            return $this->loader->load('blade l3', $useragent);
+        }
+
+        if ($s->contains('blade l2', false)) {
+            return $this->loader->load('blade l2', $useragent);
+        }
+
+        if ($s->contains('n919', false)) {
+            return $this->loader->load('n919', $useragent);
+        }
+
+        if ($s->contains('x920', false)) {
+            return $this->loader->load('x920', $useragent);
+        }
+
+        if ($s->contains('w713', false)) {
+            return $this->loader->load('w713', $useragent);
+        }
+
+        if ($s->contains('z221', false)) {
+            return $this->loader->load('z221', $useragent);
+        }
+
+        if ($s->containsAny(['v975', 'geek'], false)) {
+            return $this->loader->load('v975', $useragent);
+        }
+
+        if ($s->contains('v970', false)) {
+            return $this->loader->load('v970', $useragent);
+        }
+
+        if ($s->contains('v967s', false)) {
+            return $this->loader->load('v967s', $useragent);
+        }
+
+        if ($s->contains('v880', false)) {
+            return $this->loader->load('v880', $useragent);
+        }
+
+        if ($s->contains('v829', false)) {
+            return $this->loader->load('v829', $useragent);
+        }
+
+        if ($s->contains('v808', false)) {
+            return $this->loader->load('v808', $useragent);
+        }
+
+        if ($s->contains('v788d', false)) {
+            return $this->loader->load('zte v788d', $useragent);
+        }
+
+        if ($s->contains('v9', false)) {
+            return $this->loader->load('v9', $useragent);
+        }
+
+        if ($s->contains('u930hd', false)) {
+            return $this->loader->load('u930hd', $useragent);
+        }
+
+        if ($s->contains('smarttab10', false)) {
+            return $this->loader->load('smart tab 10', $useragent);
+        }
+
+        if ($s->contains('smarttab7', false)) {
+            return $this->loader->load('smarttab7', $useragent);
+        }
+
+        if ($s->contains('vodafone smart 4g', false)) {
+            return $this->loader->load('smart 4g', $useragent);
+        }
+
+        if ($s->contains('zte[ -]skate', false)) {
+            return $this->loader->load('skate', $useragent);
+        }
+
+        if ($s->contains('racerii', false)) {
+            return $this->loader->load('racer ii', $useragent);
+        }
+
+        if ($s->contains('racer', false)) {
+            return $this->loader->load('racer', $useragent);
+        }
+
+        if ($s->contains('zteopen', false)) {
+            return $this->loader->load('open', $useragent);
+        }
+
+        if ($s->contains('nx501', false)) {
+            return $this->loader->load('nx501', $useragent);
+        }
+
+        if ($s->contains('nx402', false)) {
+            return $this->loader->load('nx402', $useragent);
+        }
+
+        if ($s->contains('n918st', false)) {
+            return $this->loader->load('n918st', $useragent);
+        }
+
+        if ($s->contains(' n600 ', false)) {
+            return $this->loader->load('n600', $useragent);
+        }
+
+        if ($s->contains('leo q2', false)) {
+            return $this->loader->load('v769m', $useragent);
+        }
+
+        if ($s->contains('kis plus', false)) {
+            return $this->loader->load('zte v788d', $useragent);
+        }
+
+        if ($s->contains('blade q maxi', false)) {
+            return $this->loader->load('blade q maxi', $useragent);
+        }
+
+        if ($s->contains('blade iii_il', false)) {
+            return $this->loader->load('blade iii', $useragent);
+        }
+
+        if ($s->contains('blade', false)) {
+            return $this->loader->load('zte blade', $useragent);
+        }
+
+        if ($s->contains('base tab', false)) {
+            return $this->loader->load('base tab', $useragent);
+        }
+
+        if ($s->contains('base_lutea_3', false)) {
+            return $this->loader->load('lutea 3', $useragent);
+        }
+
+        if ($s->contains('base lutea 2', false)) {
+            return $this->loader->load('lutea 2', $useragent);
+        }
+
+        if ($s->contains('base lutea', false)) {
+            return $this->loader->load('zte blade', $useragent);
+        }
+
+        if ($s->contains('atlas_w', false)) {
+            return $this->loader->load('atlas w', $useragent);
+        }
+
+        if ($s->contains('tania', false)) {
+            return $this->loader->load('tania', $useragent);
+        }
+
+        if ($s->contains('g-x991-rio-orange', false)) {
+            return $this->loader->load('g-x991', $useragent);
+        }
+
+        if ($s->contains('beeline pro', false)) {
+            return $this->loader->load('beeline pro', $useragent);
+        }
+
+        return $this->loader->load('general zte device', $useragent);
     }
 }

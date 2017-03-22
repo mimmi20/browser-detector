@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class OdysFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -101,6 +104,16 @@ class OdysFactoryTest extends \PHPUnit\Framework\TestCase
     public function providerDetect()
     {
         return [
+            [
+                'this is a fake ua to trigger the fallback',
+                'general Odys Device',
+                'general Odys Device',
+                'Odys',
+                'Odys',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
             [
                 'Mozilla/5.0 (Linux; Android 4.4.2; IEOS_QUAD_W Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2192.105088',
                 'Ieos Quad W',

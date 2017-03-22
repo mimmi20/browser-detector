@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,92 +47,165 @@ class BlackBerryFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general blackberry device';
-
-        if (preg_match('/BB10; Kbd/i', $useragent)) {
-            $deviceCode = 'kbd';
-        } elseif (preg_match('/BB10; Touch/i', $useragent)) {
-            $deviceCode = 'z10';
-        } elseif (preg_match('/PlayBook/i', $useragent)) {
-            $deviceCode = 'playbook';
-        } elseif (preg_match('/RIM Tablet/i', $useragent)) {
-            $deviceCode = 'tablet';
-        } elseif (preg_match('/9981/i', $useragent)) {
-            $deviceCode = 'blackberry 9981';
-        } elseif (preg_match('/9900/i', $useragent)) {
-            $deviceCode = 'blackberry bold touch 9900';
-        } elseif (preg_match('/9860/i', $useragent)) {
-            $deviceCode = 'blackberry torch 9860';
-        } elseif (preg_match('/9810/i', $useragent)) {
-            $deviceCode = 'blackberry 9810';
-        } elseif (preg_match('/9800/i', $useragent)) {
-            $deviceCode = 'blackberry 9800';
-        } elseif (preg_match('/9790/i', $useragent)) {
-            $deviceCode = 'blackberry 9790';
-        } elseif (preg_match('/9780/i', $useragent)) {
-            $deviceCode = 'blackberry 9780';
-        } elseif (preg_match('/9720/i', $useragent)) {
-            $deviceCode = 'blackberry 9720';
-        } elseif (preg_match('/9700/i', $useragent)) {
-            $deviceCode = 'blackberry 9700';
-        } elseif (preg_match('/9670/i', $useragent)) {
-            $deviceCode = 'blackberry 9670';
-        } elseif (preg_match('/9630/i', $useragent)) {
-            $deviceCode = 'blackberry 9630';
-        } elseif (preg_match('/9550/i', $useragent)) {
-            $deviceCode = 'blackberry 9550';
-        } elseif (preg_match('/9520/i', $useragent)) {
-            $deviceCode = 'blackberry 9520';
-        } elseif (preg_match('/9500/i', $useragent)) {
-            $deviceCode = 'blackberry 9500';
-        } elseif (preg_match('/9380/i', $useragent)) {
-            $deviceCode = 'blackberry 9380';
-        } elseif (preg_match('/9360/i', $useragent)) {
-            $deviceCode = 'blackberry 9360';
-        } elseif (preg_match('/9320/i', $useragent)) {
-            $deviceCode = 'blackberry 9320';
-        } elseif (preg_match('/9300/i', $useragent)) {
-            $deviceCode = 'blackberry 9300';
-        } elseif (preg_match('/9220/i', $useragent)) {
-            $deviceCode = 'blackberry 9220';
-        } elseif (preg_match('/9105/i', $useragent)) {
-            $deviceCode = 'blackberry 9105';
-        } elseif (preg_match('/9000/i', $useragent)) {
-            $deviceCode = 'blackberry 9000';
-        } elseif (preg_match('/8900/i', $useragent)) {
-            $deviceCode = 'blackberry 8900';
-        } elseif (preg_match('/8830/i', $useragent)) {
-            $deviceCode = 'blackberry 8830';
-        } elseif (preg_match('/8800/i', $useragent)) {
-            $deviceCode = 'blackberry 8800';
-        } elseif (preg_match('/8700/i', $useragent)) {
-            $deviceCode = 'blackberry 8700';
-        } elseif (preg_match('/8530/i', $useragent)) {
-            $deviceCode = 'blackberry 8530';
-        } elseif (preg_match('/8520/i', $useragent)) {
-            $deviceCode = 'blackberry 8520';
-        } elseif (preg_match('/8350i/i', $useragent)) {
-            $deviceCode = 'blackberry 8350i';
-        } elseif (preg_match('/8310/i', $useragent)) {
-            $deviceCode = 'blackberry 8310';
-        } elseif (preg_match('/8230/i', $useragent)) {
-            $deviceCode = 'blackberry 8230';
-        } elseif (preg_match('/8110/i', $useragent)) {
-            $deviceCode = 'blackberry 8110';
-        } elseif (preg_match('/8100/i', $useragent)) {
-            $deviceCode = 'blackberry 8100';
-        } elseif (preg_match('/7520/i', $useragent)) {
-            $deviceCode = 'blackberry 7520';
-        } elseif (preg_match('/7130/i', $useragent)) {
-            $deviceCode = 'blackberry 7130';
+        if ($s->contains('BB10; Kbd', false)) {
+            return $this->loader->load('kbd', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('BB10; Touch', false)) {
+            return $this->loader->load('z10', $useragent);
+        }
+
+        if ($s->contains('PlayBook', false)) {
+            return $this->loader->load('playbook', $useragent);
+        }
+
+        if ($s->contains('RIM Tablet', false)) {
+            return $this->loader->load('tablet', $useragent);
+        }
+
+        if ($s->contains('9981', false)) {
+            return $this->loader->load('blackberry 9981', $useragent);
+        }
+
+        if ($s->contains('9900', false)) {
+            return $this->loader->load('blackberry bold touch 9900', $useragent);
+        }
+
+        if ($s->contains('9860', false)) {
+            return $this->loader->load('blackberry torch 9860', $useragent);
+        }
+
+        if ($s->contains('9810', false)) {
+            return $this->loader->load('blackberry 9810', $useragent);
+        }
+
+        if ($s->contains('9800', false)) {
+            return $this->loader->load('blackberry 9800', $useragent);
+        }
+
+        if ($s->contains('9790', false)) {
+            return $this->loader->load('blackberry 9790', $useragent);
+        }
+
+        if ($s->contains('9780', false)) {
+            return $this->loader->load('blackberry 9780', $useragent);
+        }
+
+        if ($s->contains('9720', false)) {
+            return $this->loader->load('blackberry 9720', $useragent);
+        }
+
+        if ($s->contains('9700', false)) {
+            return $this->loader->load('blackberry 9700', $useragent);
+        }
+
+        if ($s->contains('9670', false)) {
+            return $this->loader->load('blackberry 9670', $useragent);
+        }
+
+        if ($s->contains('9630', false)) {
+            return $this->loader->load('blackberry 9630', $useragent);
+        }
+
+        if ($s->contains('9550', false)) {
+            return $this->loader->load('blackberry 9550', $useragent);
+        }
+
+        if ($s->contains('9520', false)) {
+            return $this->loader->load('blackberry 9520', $useragent);
+        }
+
+        if ($s->contains('9500', false)) {
+            return $this->loader->load('blackberry 9500', $useragent);
+        }
+
+        if ($s->contains('9380', false)) {
+            return $this->loader->load('blackberry 9380', $useragent);
+        }
+
+        if ($s->contains('9360', false)) {
+            return $this->loader->load('blackberry 9360', $useragent);
+        }
+
+        if ($s->contains('9320', false)) {
+            return $this->loader->load('blackberry 9320', $useragent);
+        }
+
+        if ($s->contains('9300', false)) {
+            return $this->loader->load('blackberry 9300', $useragent);
+        }
+
+        if ($s->contains('9220', false)) {
+            return $this->loader->load('blackberry 9220', $useragent);
+        }
+
+        if ($s->contains('9105', false)) {
+            return $this->loader->load('blackberry 9105', $useragent);
+        }
+
+        if ($s->contains('9000', false)) {
+            return $this->loader->load('blackberry 9000', $useragent);
+        }
+
+        if ($s->contains('8900', false)) {
+            return $this->loader->load('blackberry 8900', $useragent);
+        }
+
+        if ($s->contains('8830', false)) {
+            return $this->loader->load('blackberry 8830', $useragent);
+        }
+
+        if ($s->contains('8800', false)) {
+            return $this->loader->load('blackberry 8800', $useragent);
+        }
+
+        if ($s->contains('8700', false)) {
+            return $this->loader->load('blackberry 8700', $useragent);
+        }
+
+        if ($s->contains('8530', false)) {
+            return $this->loader->load('blackberry 8530', $useragent);
+        }
+
+        if ($s->contains('8520', false)) {
+            return $this->loader->load('blackberry 8520', $useragent);
+        }
+
+        if ($s->contains('8350i', false)) {
+            return $this->loader->load('blackberry 8350i', $useragent);
+        }
+
+        if ($s->contains('8310', false)) {
+            return $this->loader->load('blackberry 8310', $useragent);
+        }
+
+        if ($s->contains('8230', false)) {
+            return $this->loader->load('blackberry 8230', $useragent);
+        }
+
+        if ($s->contains('8110', false)) {
+            return $this->loader->load('blackberry 8110', $useragent);
+        }
+
+        if ($s->contains('8100', false)) {
+            return $this->loader->load('blackberry 8100', $useragent);
+        }
+
+        if ($s->contains('7520', false)) {
+            return $this->loader->load('blackberry 7520', $useragent);
+        }
+
+        if ($s->contains('7130', false)) {
+            return $this->loader->load('blackberry 7130', $useragent);
+        }
+
+        return $this->loader->load('general blackberry device', $useragent);
     }
 }

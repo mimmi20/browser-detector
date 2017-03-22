@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class AcerFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -101,6 +104,16 @@ class AcerFactoryTest extends \PHPUnit\Framework\TestCase
     public function providerDetect()
     {
         return [
+            [
+                'this is a fake ua to trigger the fallback',
+                'general Acer Device',
+                'general Acer Device',
+                'Acer',
+                'Acer',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
             [
                 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; ACERINC; TM01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
                 'TM01',
