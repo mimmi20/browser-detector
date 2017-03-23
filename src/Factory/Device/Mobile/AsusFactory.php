@@ -58,10 +58,6 @@ class AsusFactory implements Factory\FactoryInterface
             return $this->loader->load('eee pad transformer tf101g', $useragent);
         }
 
-        if ($s->containsAny(['Transformer TF201', 'Transformer Prime TF201'], false)) {
-            return $this->loader->load('asus eee pad tf201', $useragent);
-        }
-
         if ($s->contains('z00ad', false)) {
             return $this->loader->load('z00ad', $useragent);
         }
@@ -174,7 +170,7 @@ class AsusFactory implements Factory\FactoryInterface
             return $this->loader->load('asus a10', $useragent);
         }
 
-        if ($s->contains('Transformer Prime', false)) {
+        if ($s->containsAny(['Transformer TF201', 'Transformer Prime'], false)) {
             return $this->loader->load('asus eee pad tf201', $useragent);
         }
 
