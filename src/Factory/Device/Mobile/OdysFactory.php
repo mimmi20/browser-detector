@@ -58,6 +58,10 @@ class OdysFactory implements Factory\FactoryInterface
             return $this->loader->load('maven 10 plus', $useragent);
         }
 
+        if ($s->containsAny(['XELIO10EXTREME', 'Xelio 10 Extreme'], true)) {
+            return $this->loader->load('xelio 10 extreme', $useragent);
+        }
+
         if ($s->contains('xtreme', false)) {
             return $this->loader->load('xtreme', $useragent);
         }
@@ -80,10 +84,6 @@ class OdysFactory implements Factory\FactoryInterface
 
         if ($s->containsAny(['Xelio10Pro', 'Xelio 10 Pro'], false)) {
             return $this->loader->load('xelio 10 pro', $useragent);
-        }
-
-        if ($s->containsAny(['XELIO10EXTREME', 'Xelio 10 Extreme'], true)) {
-            return $this->loader->load('xelio 10 extreme', $useragent);
         }
 
         if ($s->containsAny(['XELIO7PRO', 'Xelio 7 pro'], true)) {
