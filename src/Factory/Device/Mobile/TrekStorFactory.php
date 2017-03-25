@@ -70,7 +70,7 @@ class TrekStorFactory implements Factory\FactoryInterface
             return $this->loader->load('vt10416-1', $useragent);
         }
 
-        if ($s->contains('(ST701041|SurfTab_7.0)', true)) {
+        if ($s->containsAny(['ST701041', 'SurfTab_7.0'], true)) {
             return $this->loader->load('st701041', $useragent);
         }
 
