@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,18 +47,17 @@ class TeslaMotorsFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general teslamotors device';
-
-        if (preg_match('/QtCarBrowser/', $useragent)) {
-            $deviceCode = 'model s';
+        if ($s->contains('QtCarBrowser', true)) {
+            return $this->loader->load('model s', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        return $this->loader->load('general teslamotors device', $useragent);
     }
 }

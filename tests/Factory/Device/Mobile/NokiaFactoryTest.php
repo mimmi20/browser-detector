@@ -376,7 +376,7 @@ class NokiaFactoryTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 'Mozilla/5.0 (Series40; Nokia301.1/08.02; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.55',
-                '301',
+                '301.1',
                 'Asha 301',
                 'Nokia',
                 'Nokia',
@@ -1906,7 +1906,7 @@ class NokiaFactoryTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 'Mozilla/5.0 (Series40; Nokia301.1/08.02; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/5.0.0.0.31',
-                '301',
+                '301.1',
                 'Asha 301',
                 'Nokia',
                 'Nokia',

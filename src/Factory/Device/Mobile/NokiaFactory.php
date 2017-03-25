@@ -714,7 +714,7 @@ class NokiaFactory implements Factory\FactoryInterface
             return $this->loader->load('3710', $useragent);
         }
 
-        if ($s->contains('Nokia301\.1', false)) {
+        if ($s->contains('Nokia301.1', false)) {
             return $this->loader->load('301.1', $useragent);
         }
 

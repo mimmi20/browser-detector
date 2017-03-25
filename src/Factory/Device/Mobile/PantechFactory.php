@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,26 +47,33 @@ class PantechFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general pantech device';
-
-        if (preg_match('/p9020/i', $useragent)) {
-            $deviceCode = 'p9020';
-        } elseif (preg_match('/p2020/i', $useragent)) {
-            $deviceCode = 'p2020';
-        } elseif (preg_match('/im\-a900k/i', $useragent)) {
-            $deviceCode = 'im-a900k';
-        } elseif (preg_match('/im\-a830l/i', $useragent)) {
-            $deviceCode = 'im-a830l';
-        } elseif (preg_match('/pt\-gf200/i', $useragent)) {
-            $deviceCode = 'pt-gf200';
+        if ($s->contains('p9020', false)) {
+            return $this->loader->load('p9020', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('p2020', false)) {
+            return $this->loader->load('p2020', $useragent);
+        }
+
+        if ($s->contains('im-a900k', false)) {
+            return $this->loader->load('im-a900k', $useragent);
+        }
+
+        if ($s->contains('im-a830l', false)) {
+            return $this->loader->load('im-a830l', $useragent);
+        }
+
+        if ($s->contains('pt-gf200', false)) {
+            return $this->loader->load('pt-gf200', $useragent);
+        }
+
+        return $this->loader->load('general pantech device', $useragent);
     }
 }

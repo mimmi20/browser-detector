@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,26 +47,33 @@ class ViewSonicFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general viewsonic device';
-
-        if (preg_match('/viewpad 10s/i', $useragent)) {
-            $deviceCode = 'viewpad 10s';
-        } elseif (preg_match('/viewpad 10e/i', $useragent)) {
-            $deviceCode = 'viewpad 10e';
-        } elseif (preg_match('/viewpad7e/i', $useragent)) {
-            $deviceCode = 'viewpad 7e';
-        } elseif (preg_match('/(viewpad7|viewpad\-7)/i', $useragent)) {
-            $deviceCode = 'viewpad7';
-        } elseif (preg_match('/viewsonic\-v350/i', $useragent)) {
-            $deviceCode = 'v350';
+        if ($s->contains('viewpad 10s', false)) {
+            return $this->loader->load('viewpad 10s', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('viewpad 10e', false)) {
+            return $this->loader->load('viewpad 10e', $useragent);
+        }
+
+        if ($s->contains('viewpad7e', false)) {
+            return $this->loader->load('viewpad 7e', $useragent);
+        }
+
+        if ($s->contains('(viewpad7|viewpad-7)', false)) {
+            return $this->loader->load('viewpad7', $useragent);
+        }
+
+        if ($s->contains('viewsonic-v350', false)) {
+            return $this->loader->load('v350', $useragent);
+        }
+
+        return $this->loader->load('general viewsonic device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class SupraFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general supra device';
-
-        if (preg_match('/m723g/i', $useragent)) {
-            $deviceCode = 'm723g';
-        } elseif (preg_match('/m121g/i', $useragent)) {
-            $deviceCode = 'm121g';
+        if ($s->contains('m723g', false)) {
+            return $this->loader->load('m723g', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('m121g', false)) {
+            return $this->loader->load('m121g', $useragent);
+        }
+
+        return $this->loader->load('general supra device', $useragent);
     }
 }

@@ -111,7 +111,7 @@ class LenovoFactoryTest extends \PHPUnit\Framework\TestCase
                 'Lenovo',
                 'Lenovo',
                 'Tablet',
-                false,
+                true,
                 'touchscreen',
             ],
             [

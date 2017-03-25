@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class TclFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general tcl device';
-
-        if (preg_match('/M2U/', $useragent)) {
-            $deviceCode = 'm2u';
-        } elseif (preg_match('/S720T/', $useragent)) {
-            $deviceCode = 's720t';
+        if ($s->contains('M2U', true)) {
+            return $this->loader->load('m2u', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('S720T', true)) {
+            return $this->loader->load('s720t', $useragent);
+        }
+
+        return $this->loader->load('general tcl device', $useragent);
     }
 }

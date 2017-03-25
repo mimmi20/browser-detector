@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,18 +47,17 @@ class XoloFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general xolo device';
-
-        if (preg_match('/a1000s/i', $useragent)) {
-            $deviceCode = 'a1000s';
+        if ($s->contains('a1000s', false)) {
+            return $this->loader->load('a1000s', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        return $this->loader->load('general xolo device', $useragent);
     }
 }

@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class NecFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -101,6 +104,16 @@ class NecFactoryTest extends \PHPUnit\Framework\TestCase
     public function providerDetect()
     {
         return [
+            [
+                'this is a fake ua to trigger the fallback',
+                'general NEC Device',
+                'general NEC Device',
+                'NEC',
+                'NEC',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
             [
                 'Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; N-06E Build/A1002301) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16',
                 'N-06E',

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,18 +47,17 @@ class LogicomFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general logicom device';
-
-        if (preg_match('/S9782/', $useragent)) {
-            $deviceCode = 's9782';
+        if ($s->contains('S9782', true)) {
+            return $this->loader->load('s9782', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        return $this->loader->load('general logicom device', $useragent);
     }
 }

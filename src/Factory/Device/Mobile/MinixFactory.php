@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,18 +47,17 @@ class MinixFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general minix device';
-
-        if (preg_match('/NEO\-X5/', $useragent)) {
-            $deviceCode = 'neo x5';
+        if ($s->contains('NEO-X5', true)) {
+            return $this->loader->load('neo x5', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        return $this->loader->load('general minix device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,24 +47,29 @@ class VericoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general verico device';
-
-        if (preg_match('/KM\-UQM11A/', $useragent)) {
-            $deviceCode = 'uqm11a';
-        } elseif (preg_match('/RP\-UDM02A/', $useragent)) {
-            $deviceCode = 'rp-udm02a';
-        } elseif (preg_match('/RP\-UDM01A/', $useragent)) {
-            $deviceCode = 'rp-udm01a';
-        } elseif (preg_match('/UQ785\-M1BGV/', $useragent)) {
-            $deviceCode = 'm1bgv';
+        if ($s->contains('KM-UQM11A', true)) {
+            return $this->loader->load('uqm11a', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('RP-UDM02A', true)) {
+            return $this->loader->load('rp-udm02a', $useragent);
+        }
+
+        if ($s->contains('RP-UDM01A', true)) {
+            return $this->loader->load('rp-udm01a', $useragent);
+        }
+
+        if ($s->contains('UQ785-M1BGV', true)) {
+            return $this->loader->load('m1bgv', $useragent);
+        }
+
+        return $this->loader->load('general verico device', $useragent);
     }
 }

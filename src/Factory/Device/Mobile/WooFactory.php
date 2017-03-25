@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,18 +47,17 @@ class WooFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general woo device';
-
-        if (preg_match('/SP\-6020 QUASAR/', $useragent)) {
-            $deviceCode = 'sp6020';
+        if ($s->contains('SP-6020 QUASAR', true)) {
+            return $this->loader->load('sp6020', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        return $this->loader->load('general woo device', $useragent);
     }
 }

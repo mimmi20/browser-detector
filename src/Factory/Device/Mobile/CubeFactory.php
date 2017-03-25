@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,26 +47,33 @@ class CubeFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general cube device';
-
-        if (preg_match('/u55gt/i', $useragent)) {
-            $deviceCode = 'u55gt';
-        } elseif (preg_match('/u51gt/i', $useragent)) {
-            $deviceCode = 'u51gt';
-        } elseif (preg_match('/u30gt 2/i', $useragent)) {
-            $deviceCode = 'u30gt2';
-        } elseif (preg_match('/u30gt/i', $useragent)) {
-            $deviceCode = 'u30gt';
-        } elseif (preg_match('/u25gt\-c4w/i', $useragent)) {
-            $deviceCode = 'u25gt-c4w';
+        if ($s->contains('u55gt', false)) {
+            return $this->loader->load('u55gt', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('u51gt', false)) {
+            return $this->loader->load('u51gt', $useragent);
+        }
+
+        if ($s->contains('u30gt 2', false)) {
+            return $this->loader->load('u30gt2', $useragent);
+        }
+
+        if ($s->contains('u30gt', false)) {
+            return $this->loader->load('u30gt', $useragent);
+        }
+
+        if ($s->contains('u25gt-c4w', false)) {
+            return $this->loader->load('u25gt-c4w', $useragent);
+        }
+
+        return $this->loader->load('general cube device', $useragent);
     }
 }

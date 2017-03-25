@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class SpiceFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general spice device';
-
-        if (preg_match('/mi\-424/i', $useragent)) {
-            $deviceCode = 'mi-424';
-        } elseif (preg_match('/QT\-75/', $useragent)) {
-            $deviceCode = 'qt-75';
-        } elseif (preg_match('/I2I/', $useragent)) {
-            $deviceCode = 'i2i';
+        if ($s->contains('mi-424', false)) {
+            return $this->loader->load('mi-424', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('QT-75', true)) {
+            return $this->loader->load('qt-75', $useragent);
+        }
+
+        if ($s->contains('I2I', true)) {
+            return $this->loader->load('i2i', $useragent);
+        }
+
+        return $this->loader->load('general spice device', $useragent);
     }
 }

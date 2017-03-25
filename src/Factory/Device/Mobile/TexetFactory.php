@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,34 +47,49 @@ class TexetFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general texet device';
-
-        if (preg_match('/x\-pad ix 7 3g/i', $useragent)) {
-            $deviceCode = 'tm-7068';
-        } elseif (preg_match('/x\-pad lite 7\.1/i', $useragent)) {
-            $deviceCode = 'tm-7066';
-        } elseif (preg_match('/x\-pad style 7\.1 3g/i', $useragent)) {
-            $deviceCode = 'tm-7058';
-        } elseif (preg_match('/x\-navi/i', $useragent)) {
-            $deviceCode = 'tm-4672';
-        } elseif (preg_match('/tm\-3204r/i', $useragent)) {
-            $deviceCode = 'tm-3204r';
-        } elseif (preg_match('/tm\-7055hd/i', $useragent)) {
-            $deviceCode = 'tm-7055hd';
-        } elseif (preg_match('/tm\-7058hd/i', $useragent)) {
-            $deviceCode = 'tm-7058hd';
-        } elseif (preg_match('/tm\-7058/i', $useragent)) {
-            $deviceCode = 'tm-7058';
-        } elseif (preg_match('/tm\-5204/i', $useragent)) {
-            $deviceCode = 'tm-5204';
+        if ($s->contains('x-pad ix 7 3g', false)) {
+            return $this->loader->load('tm-7068', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('x-pad lite 7.1', false)) {
+            return $this->loader->load('tm-7066', $useragent);
+        }
+
+        if ($s->contains('x-pad style 7.1 3g', false)) {
+            return $this->loader->load('tm-7058', $useragent);
+        }
+
+        if ($s->contains('x-navi', false)) {
+            return $this->loader->load('tm-4672', $useragent);
+        }
+
+        if ($s->contains('tm-3204r', false)) {
+            return $this->loader->load('tm-3204r', $useragent);
+        }
+
+        if ($s->contains('tm-7055hd', false)) {
+            return $this->loader->load('tm-7055hd', $useragent);
+        }
+
+        if ($s->contains('tm-7058hd', false)) {
+            return $this->loader->load('tm-7058hd', $useragent);
+        }
+
+        if ($s->contains('tm-7058', false)) {
+            return $this->loader->load('tm-7058', $useragent);
+        }
+
+        if ($s->contains('tm-5204', false)) {
+            return $this->loader->load('tm-5204', $useragent);
+        }
+
+        return $this->loader->load('general texet device', $useragent);
     }
 }

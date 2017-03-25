@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,26 +47,33 @@ class PhilipsFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general philips device';
-
-        if (preg_match('/W8510/', $useragent)) {
-            $deviceCode = 'w8510';
-        } elseif (preg_match('/W8500/', $useragent)) {
-            $deviceCode = 'w8500';
-        } elseif (preg_match('/W3509/', $useragent)) {
-            $deviceCode = 'w3509';
-        } elseif (preg_match('/W336/', $useragent)) {
-            $deviceCode = 'w336';
-        } elseif (preg_match('/PI3210G/', $useragent)) {
-            $deviceCode = 'pi3210g';
+        if ($s->contains('W8510', true)) {
+            return $this->loader->load('w8510', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('W8500', true)) {
+            return $this->loader->load('w8500', $useragent);
+        }
+
+        if ($s->contains('W3509', true)) {
+            return $this->loader->load('w3509', $useragent);
+        }
+
+        if ($s->contains('W336', true)) {
+            return $this->loader->load('w336', $useragent);
+        }
+
+        if ($s->contains('PI3210G', true)) {
+            return $this->loader->load('pi3210g', $useragent);
+        }
+
+        return $this->loader->load('general philips device', $useragent);
     }
 }

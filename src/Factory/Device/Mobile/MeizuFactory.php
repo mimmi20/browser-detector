@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class MeizuFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general meizu device';
-
-        if (preg_match('/mz\-mx5/i', $useragent)) {
-            $deviceCode = 'mx5';
-        } elseif (preg_match('/m040/i', $useragent)) {
-            $deviceCode = 'm040';
-        } elseif (preg_match('/(meizu\_m9| m9 )/i', $useragent)) {
-            $deviceCode = 'meizu m9';
+        if ($s->contains('mz-mx5', false)) {
+            return $this->loader->load('mx5', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('m040', false)) {
+            return $this->loader->load('m040', $useragent);
+        }
+
+        if ($s->contains('(meizu_m9| m9 )', false)) {
+            return $this->loader->load('meizu m9', $useragent);
+        }
+
+        return $this->loader->load('general meizu device', $useragent);
     }
 }

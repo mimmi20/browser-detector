@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,24 +47,29 @@ class DoogeeFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general doogee device';
-
-        if (preg_match('/DG2014/', $useragent)) {
-            $deviceCode = 'dg2014';
-        } elseif (preg_match('/DG800/', $useragent)) {
-            $deviceCode = 'dg800';
-        } elseif (preg_match('/DG330/', $useragent)) {
-            $deviceCode = 'dg330';
-        } elseif (preg_match('/F3_Pro/', $useragent)) {
-            $deviceCode = 'f3 pro';
+        if ($s->contains('DG2014', true)) {
+            return $this->loader->load('dg2014', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('DG800', true)) {
+            return $this->loader->load('dg800', $useragent);
+        }
+
+        if ($s->contains('DG330', true)) {
+            return $this->loader->load('dg330', $useragent);
+        }
+
+        if ($s->contains('F3_Pro', true)) {
+            return $this->loader->load('f3 pro', $useragent);
+        }
+
+        return $this->loader->load('general doogee device', $useragent);
     }
 }

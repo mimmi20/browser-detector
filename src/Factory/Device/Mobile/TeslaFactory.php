@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,24 +47,29 @@ class TeslaFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general tesla device';
-
-        if (preg_match('/TTL7/', $useragent)) {
-            $deviceCode = 'ttl7';
-        } elseif (preg_match('/TTH7/', $useragent)) {
-            $deviceCode = 'tth7';
-        } elseif (preg_match('/Tablet_785/', $useragent)) {
-            $deviceCode = 'tablet 785';
-        } elseif (preg_match('/Tablet_L7_3G/', $useragent)) {
-            $deviceCode = 'tablet l7 3g';
+        if ($s->contains('TTL7', true)) {
+            return $this->loader->load('ttl7', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('TTH7', true)) {
+            return $this->loader->load('tth7', $useragent);
+        }
+
+        if ($s->contains('Tablet_785', true)) {
+            return $this->loader->load('tablet 785', $useragent);
+        }
+
+        if ($s->contains('Tablet_L7_3G', true)) {
+            return $this->loader->load('tablet l7 3g', $useragent);
+        }
+
+        return $this->loader->load('general tesla device', $useragent);
     }
 }

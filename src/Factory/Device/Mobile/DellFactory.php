@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,34 +47,49 @@ class DellFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general dell device';
-
-        if (preg_match('/venue pro/i', $useragent)) {
-            $deviceCode = 'venue pro';
-        } elseif (preg_match('/venue 8 hspa\+/i', $useragent)) {
-            $deviceCode = 'venue 8 hspa+';
-        } elseif (preg_match('/venue 8 3830/i', $useragent)) {
-            $deviceCode = 'venue 8 3830';
-        } elseif (preg_match('/venue 7 hspa\+/i', $useragent)) {
-            $deviceCode = 'venue 7 hspa+';
-        } elseif (preg_match('/venue 7 3730/i', $useragent)) {
-            $deviceCode = 'venue 7 3730';
-        } elseif (preg_match('/venue/i', $useragent)) {
-            $deviceCode = 'venue';
-        } elseif (preg_match('/streak 10 pro/i', $useragent)) {
-            $deviceCode = 'streak 10 pro';
-        } elseif (preg_match('/streak 7/i', $useragent)) {
-            $deviceCode = 'streak 7';
-        } elseif (preg_match('/streak/i', $useragent)) {
-            $deviceCode = 'streak';
+        if ($s->contains('venue pro', false)) {
+            return $this->loader->load('venue pro', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('venue 8 hspa+', false)) {
+            return $this->loader->load('venue 8 hspa+', $useragent);
+        }
+
+        if ($s->contains('venue 8 3830', false)) {
+            return $this->loader->load('venue 8 3830', $useragent);
+        }
+
+        if ($s->contains('venue 7 hspa+', false)) {
+            return $this->loader->load('venue 7 hspa+', $useragent);
+        }
+
+        if ($s->contains('venue 7 3730', false)) {
+            return $this->loader->load('venue 7 3730', $useragent);
+        }
+
+        if ($s->contains('venue', false)) {
+            return $this->loader->load('venue', $useragent);
+        }
+
+        if ($s->contains('streak 10 pro', false)) {
+            return $this->loader->load('streak 10 pro', $useragent);
+        }
+
+        if ($s->contains('streak 7', false)) {
+            return $this->loader->load('streak 7', $useragent);
+        }
+
+        if ($s->contains('streak', false)) {
+            return $this->loader->load('streak', $useragent);
+        }
+
+        return $this->loader->load('general dell device', $useragent);
     }
 }

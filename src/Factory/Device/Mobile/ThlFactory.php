@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,32 +47,45 @@ class ThlFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general thl device';
-
-        if (preg_match('/W200/', $useragent)) {
-            $deviceCode = 'w200';
-        } elseif (preg_match('/W100/', $useragent)) {
-            $deviceCode = 'w100';
-        } elseif (preg_match('/W8\_beyond/', $useragent)) {
-            $deviceCode = 'thl w8';
-        } elseif (preg_match('/ThL W8/', $useragent)) {
-            $deviceCode = 'thl w8';
-        } elseif (preg_match('/ThL W7/', $useragent)) {
-            $deviceCode = 'w7';
-        } elseif (preg_match('/T6S/', $useragent)) {
-            $deviceCode = 't6s';
-        } elseif (preg_match('/4400/', $useragent)) {
-            $deviceCode = '4400';
-        } elseif (preg_match('/thl 2015/i', $useragent)) {
-            $deviceCode = '2015';
+        if ($s->contains('W200', true)) {
+            return $this->loader->load('w200', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('W100', true)) {
+            return $this->loader->load('w100', $useragent);
+        }
+
+        if ($s->contains('W8_beyond', true)) {
+            return $this->loader->load('thl w8', $useragent);
+        }
+
+        if ($s->contains('ThL W8', true)) {
+            return $this->loader->load('thl w8', $useragent);
+        }
+
+        if ($s->contains('ThL W7', true)) {
+            return $this->loader->load('w7', $useragent);
+        }
+
+        if ($s->contains('T6S', true)) {
+            return $this->loader->load('t6s', $useragent);
+        }
+
+        if ($s->contains('4400', true)) {
+            return $this->loader->load('4400', $useragent);
+        }
+
+        if ($s->contains('thl 2015', false)) {
+            return $this->loader->load('2015', $useragent);
+        }
+
+        return $this->loader->load('general thl device', $useragent);
     }
 }

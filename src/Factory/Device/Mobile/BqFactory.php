@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,32 +47,45 @@ class BqFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general bq device';
-
-        if (preg_match('/Aquaris E5 HD/', $useragent)) {
-            $deviceCode = 'aquaris e5 hd';
-        } elseif (preg_match('/Aquaris M10/', $useragent)) {
-            $deviceCode = 'aquaris m10';
-        } elseif (preg_match('/Aquaris M5/', $useragent)) {
-            $deviceCode = 'aquaris m5';
-        } elseif (preg_match('/Aquaris[ _]M4\.5/', $useragent)) {
-            $deviceCode = 'aquaris m4.5';
-        } elseif (preg_match('/Aquaris 5 HD/', $useragent)) {
-            $deviceCode = 'aquaris e5';
-        } elseif (preg_match('/7056G/', $useragent)) {
-            $deviceCode = '7056g';
-        } elseif (preg_match('/BQS\-4007/', $useragent)) {
-            $deviceCode = 'bqs-4007';
-        } elseif (preg_match('/BQS\-4005/', $useragent)) {
-            $deviceCode = 'bqs-4005';
+        if ($s->contains('Aquaris E5 HD', true)) {
+            return $this->loader->load('aquaris e5 hd', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('Aquaris M10', true)) {
+            return $this->loader->load('aquaris m10', $useragent);
+        }
+
+        if ($s->contains('Aquaris M5', true)) {
+            return $this->loader->load('aquaris m5', $useragent);
+        }
+
+        if ($s->containsAny(['Aquaris M4.5', 'Aquaris_M4.5'], true)) {
+            return $this->loader->load('aquaris m4.5', $useragent);
+        }
+
+        if ($s->contains('Aquaris 5 HD', true)) {
+            return $this->loader->load('aquaris e5', $useragent);
+        }
+
+        if ($s->contains('7056G', true)) {
+            return $this->loader->load('7056g', $useragent);
+        }
+
+        if ($s->contains('BQS-4007', true)) {
+            return $this->loader->load('bqs-4007', $useragent);
+        }
+
+        if ($s->contains('BQS-4005', true)) {
+            return $this->loader->load('bqs-4005', $useragent);
+        }
+
+        return $this->loader->load('general bq device', $useragent);
     }
 }

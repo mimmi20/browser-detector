@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class FeitengFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general feiteng device';
-
-        if (preg_match('/GT\-H9500/i', $useragent)) {
-            $deviceCode = 'gt-h9500';
-        } elseif (preg_match('/H7100/i', $useragent)) {
-            $deviceCode = 'h7100';
+        if ($s->contains('GT-H9500', false)) {
+            return $this->loader->load('gt-h9500', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('H7100', false)) {
+            return $this->loader->load('h7100', $useragent);
+        }
+
+        return $this->loader->load('general feiteng device', $useragent);
     }
 }

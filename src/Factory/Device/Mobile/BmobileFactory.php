@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class BmobileFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general bmobile device';
-
-        if (preg_match('/AX540/', $useragent)) {
-            $deviceCode = 'ax540';
-        } elseif (preg_match('/AX512/', $useragent)) {
-            $deviceCode = 'ax512';
+        if ($s->contains('AX540', true)) {
+            return $this->loader->load('ax540', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('AX512', true)) {
+            return $this->loader->load('ax512', $useragent);
+        }
+
+        return $this->loader->load('general bmobile device', $useragent);
     }
 }

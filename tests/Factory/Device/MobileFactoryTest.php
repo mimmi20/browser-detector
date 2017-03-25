@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -468,7 +471,7 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
                 'BEWATEC Kommunikationstechnik GmbH',
                 'BEWATEC',
                 'Tablet',
-                false,
+                true,
                 'touchscreen',
             ],
             [
@@ -868,7 +871,7 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
                 'Beeline',
                 'Beeline',
                 'Tablet',
-                false,
+                true,
                 'touchscreen',
             ],
             [
@@ -1423,7 +1426,7 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 'Mozilla/5.0 (Series40; Nokia301.1/08.02; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.55',
-                '301',
+                '301.1',
                 'Asha 301',
                 'Nokia',
                 'Nokia',
@@ -3798,7 +3801,7 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
                 'BEWATEC Kommunikationstechnik GmbH',
                 'BEWATEC',
                 'Tablet',
-                false,
+                true,
                 'touchscreen',
             ],
             [
@@ -16113,7 +16116,7 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 'Mozilla/5.0 (Series40; Nokia301.1/08.02; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/5.0.0.0.31',
-                '301',
+                '301.1',
                 'Asha 301',
                 'Nokia',
                 'Nokia',
@@ -17348,7 +17351,7 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
                 'Huawei',
                 'Huawei',
                 'Tablet',
-                false,
+                true,
                 'touchscreen',
             ],
             [

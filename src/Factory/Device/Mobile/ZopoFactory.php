@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,36 +47,53 @@ class ZopoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general zopo device';
-
-        if (preg_match('/ZP980/', $useragent)) {
-            $deviceCode = 'zp980';
-        } elseif (preg_match('/ZP950\+/', $useragent)) {
-            $deviceCode = 'zp950+';
-        } elseif (preg_match('/ZP950/', $useragent)) {
-            $deviceCode = 'zp950';
-        } elseif (preg_match('/ZP9(10|00H)/', $useragent)) {
-            $deviceCode = 'zp910';
-        } elseif (preg_match('/ZP900/', $useragent)) {
-            $deviceCode = 'zp900';
-        } elseif (preg_match('/ZP8(10|00H)/', $useragent)) {
-            $deviceCode = 'zp810';
-        } elseif (preg_match('/ZP500/', $useragent)) {
-            $deviceCode = 'zp500';
-        } elseif (preg_match('/ZP300/', $useragent)) {
-            $deviceCode = 'zp300';
-        } elseif (preg_match('/ZP200/', $useragent)) {
-            $deviceCode = 'zp200';
-        } elseif (preg_match('/ZP100/', $useragent)) {
-            $deviceCode = 'zp100';
+        if ($s->contains('ZP980', true)) {
+            return $this->loader->load('zp980', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('ZP950+', true)) {
+            return $this->loader->load('zp950+', $useragent);
+        }
+
+        if ($s->contains('ZP950', true)) {
+            return $this->loader->load('zp950', $useragent);
+        }
+
+        if ($s->contains('ZP9(10|00H)', true)) {
+            return $this->loader->load('zp910', $useragent);
+        }
+
+        if ($s->contains('ZP900', true)) {
+            return $this->loader->load('zp900', $useragent);
+        }
+
+        if ($s->contains('ZP8(10|00H)', true)) {
+            return $this->loader->load('zp810', $useragent);
+        }
+
+        if ($s->contains('ZP500', true)) {
+            return $this->loader->load('zp500', $useragent);
+        }
+
+        if ($s->contains('ZP300', true)) {
+            return $this->loader->load('zp300', $useragent);
+        }
+
+        if ($s->contains('ZP200', true)) {
+            return $this->loader->load('zp200', $useragent);
+        }
+
+        if ($s->contains('ZP100', true)) {
+            return $this->loader->load('zp100', $useragent);
+        }
+
+        return $this->loader->load('general zopo device', $useragent);
     }
 }

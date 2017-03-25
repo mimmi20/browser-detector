@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,30 +47,41 @@ class ModecomFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general modecom device';
-
-        if (preg_match('/FreeTAB 9702 HD X4/', $useragent)) {
-            $deviceCode = 'freetab 9702 hd x4';
-        } elseif (preg_match('/FreeTAB 9000 IPS IC/', $useragent)) {
-            $deviceCode = 'freetab 9000 ips ic';
-        } elseif (preg_match('/FreeTAB 8001 IPS X2 3G\+/', $useragent)) {
-            $deviceCode = 'freetab 8001 ips x2 3g+';
-        } elseif (preg_match('/FreeTAB 7800 IPS IC/', $useragent)) {
-            $deviceCode = 'freetab 7800 ips ic';
-        } elseif (preg_match('/FreeTAB 7001 HD IC/', $useragent)) {
-            $deviceCode = 'freetab 7001 hd ic';
-        } elseif (preg_match('/FreeTAB 1014 IPS X4 3G\+/', $useragent)) {
-            $deviceCode = 'freetab 1014 ips x4 3g+';
-        } elseif (preg_match('/FreeTAB 1001/', $useragent)) {
-            $deviceCode = 'freetab 1001';
+        if ($s->contains('FreeTAB 9702 HD X4', true)) {
+            return $this->loader->load('freetab 9702 hd x4', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('FreeTAB 9000 IPS IC', true)) {
+            return $this->loader->load('freetab 9000 ips ic', $useragent);
+        }
+
+        if ($s->contains('FreeTAB 8001 IPS X2 3G+', true)) {
+            return $this->loader->load('freetab 8001 ips x2 3g+', $useragent);
+        }
+
+        if ($s->contains('FreeTAB 7800 IPS IC', true)) {
+            return $this->loader->load('freetab 7800 ips ic', $useragent);
+        }
+
+        if ($s->contains('FreeTAB 7001 HD IC', true)) {
+            return $this->loader->load('freetab 7001 hd ic', $useragent);
+        }
+
+        if ($s->contains('FreeTAB 1014 IPS X4 3G+', true)) {
+            return $this->loader->load('freetab 1014 ips x4 3g+', $useragent);
+        }
+
+        if ($s->contains('FreeTAB 1001', true)) {
+            return $this->loader->load('freetab 1001', $useragent);
+        }
+
+        return $this->loader->load('general modecom device', $useragent);
     }
 }

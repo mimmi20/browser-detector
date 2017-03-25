@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class NgmFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general ngm device';
-
-        if (preg_match('/Miracle/', $useragent)) {
-            $deviceCode = 'wemove miracle';
-        } elseif (preg_match('/Dynamic Racing/', $useragent)) {
-            $deviceCode = 'dynamic racing gp';
+        if ($s->contains('Miracle', true)) {
+            return $this->loader->load('wemove miracle', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('Dynamic Racing', true)) {
+            return $this->loader->load('dynamic racing gp', $useragent);
+        }
+
+        return $this->loader->load('general ngm device', $useragent);
     }
 }

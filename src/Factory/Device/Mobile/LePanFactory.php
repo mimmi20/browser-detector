@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class LePanFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general lepan device';
-
-        if (preg_match('/LePanII/', $useragent)) {
-            $deviceCode = 'lepan ii';
-        } elseif (preg_match('/LePan/', $useragent)) {
-            $deviceCode = 'lepan';
+        if ($s->contains('LePanII', true)) {
+            return $this->loader->load('lepan ii', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('LePan', true)) {
+            return $this->loader->load('lepan', $useragent);
+        }
+
+        return $this->loader->load('general lepan device', $useragent);
     }
 }

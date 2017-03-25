@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class OlivettiFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general olivetti device';
-
-        if (preg_match('/OP111/', $useragent)) {
-            $deviceCode = 'op111';
-        } elseif (preg_match('/OP110/', $useragent)) {
-            $deviceCode = 'op110';
-        } elseif (preg_match('/OP070/', $useragent)) {
-            $deviceCode = 'olipad 70';
+        if ($s->contains('OP111', true)) {
+            return $this->loader->load('op111', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('OP110', true)) {
+            return $this->loader->load('op110', $useragent);
+        }
+
+        if ($s->contains('OP070', true)) {
+            return $this->loader->load('olipad 70', $useragent);
+        }
+
+        return $this->loader->load('general olivetti device', $useragent);
     }
 }

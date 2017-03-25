@@ -1561,7 +1561,7 @@ class HuaweiFactoryTest extends \PHPUnit\Framework\TestCase
                 'Huawei',
                 'Huawei',
                 'Tablet',
-                false,
+                true,
                 'touchscreen',
             ],
             [

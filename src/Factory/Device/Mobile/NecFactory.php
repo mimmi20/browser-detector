@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,24 +47,29 @@ class NecFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general nec device';
-
-        if (preg_match('/N905i/i', $useragent)) {
-            $deviceCode = 'n905i';
-        } elseif (preg_match('/N705i/i', $useragent)) {
-            $deviceCode = 'n705i';
-        } elseif (preg_match('/0912/i', $useragent)) {
-            $deviceCode = '0912';
-        } elseif (preg_match('/N\-06E/', $useragent)) {
-            $deviceCode = 'n-06e';
+        if ($s->contains('N905i', false)) {
+            return $this->loader->load('n905i', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('N705i', false)) {
+            return $this->loader->load('n705i', $useragent);
+        }
+
+        if ($s->contains('0912', false)) {
+            return $this->loader->load('0912', $useragent);
+        }
+
+        if ($s->contains('N-06E', true)) {
+            return $this->loader->load('n-06e', $useragent);
+        }
+
+        return $this->loader->load('general nec device', $useragent);
     }
 }

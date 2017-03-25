@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class GigabyteFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general gigabyte device';
-
-        if (preg_match('/Rio R1/', $useragent)) {
-            $deviceCode = 'rio r1';
-        } elseif (preg_match('/GSmart\_T4/', $useragent)) {
-            $deviceCode = 'gsmart t4';
+        if ($s->contains('Rio R1', true)) {
+            return $this->loader->load('rio r1', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('GSmart_T4', true)) {
+            return $this->loader->load('gsmart t4', $useragent);
+        }
+
+        return $this->loader->load('general gigabyte device', $useragent);
     }
 }

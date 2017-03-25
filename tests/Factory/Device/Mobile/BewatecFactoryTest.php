@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class BewatecFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -102,13 +105,23 @@ class BewatecFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
+                'this is a fake ua to trigger the fallback',
+                'general BEWATEC Device',
+                'general BEWATEC Device',
+                'BEWATEC Kommunikationstechnik GmbH',
+                'BEWATEC',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
                 'Mozilla/5.0 (Linux; Android 4.4.2; MediPaD Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
                 'MediPaD',
                 'MediPaD',
                 'BEWATEC Kommunikationstechnik GmbH',
                 'BEWATEC',
                 'Tablet',
-                false,
+                true,
                 'touchscreen',
             ],
             [
@@ -118,7 +131,7 @@ class BewatecFactoryTest extends \PHPUnit\Framework\TestCase
                 'BEWATEC Kommunikationstechnik GmbH',
                 'BEWATEC',
                 'Tablet',
-                false,
+                true,
                 'touchscreen',
             ],
         ];

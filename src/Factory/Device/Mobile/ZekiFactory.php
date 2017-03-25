@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class ZekiFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general zeki device';
-
-        if (preg_match('/TBDC1093/', $useragent)) {
-            $deviceCode = 'tbdc1093';
-        } elseif (preg_match('/TBDB863/', $useragent)) {
-            $deviceCode = 'tbdb863';
-        } elseif (preg_match('/TBD1083/', $useragent)) {
-            $deviceCode = 'tbd1083';
+        if ($s->contains('TBDC1093', true)) {
+            return $this->loader->load('tbdc1093', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('TBDB863', true)) {
+            return $this->loader->load('tbdb863', $useragent);
+        }
+
+        if ($s->contains('TBD1083', true)) {
+            return $this->loader->load('tbd1083', $useragent);
+        }
+
+        return $this->loader->load('general zeki device', $useragent);
     }
 }

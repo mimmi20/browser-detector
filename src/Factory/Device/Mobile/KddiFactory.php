@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class KddiFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general kddi device';
-
-        if (preg_match('/sn3f/i', $useragent)) {
-            $deviceCode = 'sn3f';
-        } elseif (preg_match('/kc31/i', $useragent)) {
-            $deviceCode = 'kc31';
+        if ($s->contains('sn3f', false)) {
+            return $this->loader->load('sn3f', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('kc31', false)) {
+            return $this->loader->load('kc31', $useragent);
+        }
+
+        return $this->loader->load('general kddi device', $useragent);
     }
 }

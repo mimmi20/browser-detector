@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class NuqleoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general nuqleo device';
-
-        if (preg_match('/zaffire 1010/i', $useragent)) {
-            $deviceCode = 'zaffire 1010';
-        } elseif (preg_match('/zaffire 785/i', $useragent)) {
-            $deviceCode = 'zaffire 785';
+        if ($s->contains('zaffire 1010', false)) {
+            return $this->loader->load('zaffire 1010', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('zaffire 785', false)) {
+            return $this->loader->load('zaffire 785', $useragent);
+        }
+
+        return $this->loader->load('general nuqleo device', $useragent);
     }
 }

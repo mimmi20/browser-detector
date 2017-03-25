@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class LexandFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general lexand device';
-
-        if (preg_match('/A1002/', $useragent)) {
-            $deviceCode = 'a1002';
-        } elseif (preg_match('/A811/', $useragent)) {
-            $deviceCode = 'a811';
+        if ($s->contains('A1002', true)) {
+            return $this->loader->load('a1002', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('A811', true)) {
+            return $this->loader->load('a811', $useragent);
+        }
+
+        return $this->loader->load('general lexand device', $useragent);
     }
 }

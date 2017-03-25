@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,26 +47,33 @@ class RitmixFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general ritmix device';
-
-        if (preg_match('/RMD\-1040/', $useragent)) {
-            $deviceCode = 'rmd-1040';
-        } elseif (preg_match('/RMD\-1028/', $useragent)) {
-            $deviceCode = 'rmd-1028';
-        } elseif (preg_match('/RMD\-1025/', $useragent)) {
-            $deviceCode = 'rmd-1025';
-        } elseif (preg_match('/RMD\-757/', $useragent)) {
-            $deviceCode = 'rmd-757';
-        } elseif (preg_match('/RMD\-753/', $useragent)) {
-            $deviceCode = 'rmd-753';
+        if ($s->contains('RMD-1040', true)) {
+            return $this->loader->load('rmd-1040', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('RMD-1028', true)) {
+            return $this->loader->load('rmd-1028', $useragent);
+        }
+
+        if ($s->contains('RMD-1025', true)) {
+            return $this->loader->load('rmd-1025', $useragent);
+        }
+
+        if ($s->contains('RMD-757', true)) {
+            return $this->loader->load('rmd-757', $useragent);
+        }
+
+        if ($s->contains('RMD-753', true)) {
+            return $this->loader->load('rmd-753', $useragent);
+        }
+
+        return $this->loader->load('general ritmix device', $useragent);
     }
 }

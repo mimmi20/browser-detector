@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class DenverFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general denver device';
-
-        if (preg_match('/TAD\-70112/i', $useragent)) {
-            $deviceCode = 'tad-70112';
-        } elseif (preg_match('/TAD\-10023/i', $useragent)) {
-            $deviceCode = 'tad-10023';
+        if ($s->contains('TAD-70112', false)) {
+            return $this->loader->load('tad-70112', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('TAD-10023', false)) {
+            return $this->loader->load('tad-10023', $useragent);
+        }
+
+        return $this->loader->load('general denver device', $useragent);
     }
 }

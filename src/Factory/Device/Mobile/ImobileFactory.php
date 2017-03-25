@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class ImobileFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general i-mobile device';
-
-        if (preg_match('/i\-STYLE 7\.7 DTV/', $useragent)) {
-            $deviceCode = 'i-style 7.7 dtv';
-        } elseif (preg_match('/IQX OKU/', $useragent)) {
-            $deviceCode = 'iq x oku';
-        } elseif (preg_match('/IQ 6A/', $useragent)) {
-            $deviceCode = 'iq 6a';
+        if ($s->contains('i-STYLE 7.7 DTV', true)) {
+            return $this->loader->load('i-style 7.7 dtv', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('IQX OKU', true)) {
+            return $this->loader->load('iq x oku', $useragent);
+        }
+
+        if ($s->contains('IQ 6A', true)) {
+            return $this->loader->load('iq 6a', $useragent);
+        }
+
+        return $this->loader->load('general i-mobile device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,32 +47,45 @@ class TmobileFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general t-mobile device';
-
-        if (preg_match('/Pulse/', $useragent)) {
-            $deviceCode = 'pulse';
-        } elseif (preg_match('/myTouch4G/', $useragent)) {
-            $deviceCode = 'mytouch4g';
-        } elseif (preg_match('/myTouch 3G Slide/', $useragent)) {
-            $deviceCode = 'mytouch3g';
-        } elseif (preg_match('/T\-Mobile(\_G2\_Touch| G2)/', $useragent)) {
-            $deviceCode = 'g2 touch';
-        } elseif (preg_match('/T\-Mobile G1/', $useragent)) {
-            $deviceCode = 'g1';
-        } elseif (preg_match('/mda compact\/3/i', $useragent)) {
-            $deviceCode = 'mda compact iii';
-        } elseif (preg_match('/mda compact/i', $useragent)) {
-            $deviceCode = 'mda compact';
-        } elseif (preg_match('/Ameo/', $useragent)) {
-            $deviceCode = 'ameo';
+        if ($s->contains('Pulse', true)) {
+            return $this->loader->load('pulse', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('myTouch4G', true)) {
+            return $this->loader->load('mytouch4g', $useragent);
+        }
+
+        if ($s->contains('myTouch 3G Slide', true)) {
+            return $this->loader->load('mytouch3g', $useragent);
+        }
+
+        if ($s->contains('T-Mobile(_G2_Touch| G2)', true)) {
+            return $this->loader->load('g2 touch', $useragent);
+        }
+
+        if ($s->contains('T-Mobile G1', true)) {
+            return $this->loader->load('g1', $useragent);
+        }
+
+        if ($s->contains('mda compact/3', false)) {
+            return $this->loader->load('mda compact iii', $useragent);
+        }
+
+        if ($s->contains('mda compact', false)) {
+            return $this->loader->load('mda compact', $useragent);
+        }
+
+        if ($s->contains('Ameo', true)) {
+            return $this->loader->load('ameo', $useragent);
+        }
+
+        return $this->loader->load('general t-mobile device', $useragent);
     }
 }

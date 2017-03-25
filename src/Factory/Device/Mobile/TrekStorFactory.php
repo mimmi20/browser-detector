@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,42 +47,65 @@ class TrekStorFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general trekstor device';
-
-        if (preg_match('/SurfTab duo W1 10\.1/', $useragent)) {
-            $deviceCode = 'surftab duo w1 10.1';
-        } elseif (preg_match('/WP 4\.7/', $useragent)) {
-            $deviceCode = 'winphone 4.7 hd';
-        } elseif (preg_match('/VT10416\-2/', $useragent)) {
-            $deviceCode = 'vt10416-2';
-        } elseif (preg_match('/VT10416\-1/', $useragent)) {
-            $deviceCode = 'vt10416-1';
-        } elseif (preg_match('/(ST701041|SurfTab\_7\.0)/', $useragent)) {
-            $deviceCode = 'st701041';
-        } elseif (preg_match('/ST10216\-2/', $useragent)) {
-            $deviceCode = 'st10216-2';
-        } elseif (preg_match('/ST80216/', $useragent)) {
-            $deviceCode = 'st80216';
-        } elseif (preg_match('/ST80208/', $useragent)) {
-            $deviceCode = 'st80208';
-        } elseif (preg_match('/ST70104/', $useragent)) {
-            $deviceCode = 'st70104';
-        } elseif (preg_match('/ST10416\-1/', $useragent)) {
-            $deviceCode = 'st10416-1';
-        } elseif (preg_match('/ST10216\-1/', $useragent)) {
-            $deviceCode = 'st10216-1';
-        } elseif (preg_match('/trekstor_liro_color/', $useragent)) {
-            $deviceCode = 'liro color';
-        } elseif (preg_match('/breeze 10\.1 quad/', $useragent)) {
-            $deviceCode = 'surftab breeze 10.1 quad';
+        if ($s->contains('SurfTab duo W1 10.1', true)) {
+            return $this->loader->load('surftab duo w1 10.1', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('WP 4.7', true)) {
+            return $this->loader->load('winphone 4.7 hd', $useragent);
+        }
+
+        if ($s->contains('VT10416-2', true)) {
+            return $this->loader->load('vt10416-2', $useragent);
+        }
+
+        if ($s->contains('VT10416-1', true)) {
+            return $this->loader->load('vt10416-1', $useragent);
+        }
+
+        if ($s->contains('(ST701041|SurfTab_7.0)', true)) {
+            return $this->loader->load('st701041', $useragent);
+        }
+
+        if ($s->contains('ST10216-2', true)) {
+            return $this->loader->load('st10216-2', $useragent);
+        }
+
+        if ($s->contains('ST80216', true)) {
+            return $this->loader->load('st80216', $useragent);
+        }
+
+        if ($s->contains('ST80208', true)) {
+            return $this->loader->load('st80208', $useragent);
+        }
+
+        if ($s->contains('ST70104', true)) {
+            return $this->loader->load('st70104', $useragent);
+        }
+
+        if ($s->contains('ST10416-1', true)) {
+            return $this->loader->load('st10416-1', $useragent);
+        }
+
+        if ($s->contains('ST10216-1', true)) {
+            return $this->loader->load('st10216-1', $useragent);
+        }
+
+        if ($s->contains('trekstor_liro_color', true)) {
+            return $this->loader->load('liro color', $useragent);
+        }
+
+        if ($s->contains('breeze 10.1 quad', true)) {
+            return $this->loader->load('surftab breeze 10.1 quad', $useragent);
+        }
+
+        return $this->loader->load('general trekstor device', $useragent);
     }
 }

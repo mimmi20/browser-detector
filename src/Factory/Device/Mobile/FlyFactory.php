@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,54 +47,89 @@ class FlyFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general fly device';
-
-        if (preg_match('/IQ4504/', $useragent)) {
-            $deviceCode = 'iq4504';
-        } elseif (preg_match('/IQ4502/', $useragent)) {
-            $deviceCode = 'iq4502';
-        } elseif (preg_match('/IQ4415/', $useragent)) {
-            $deviceCode = 'iq4415';
-        } elseif (preg_match('/IQ4411/', $useragent)) {
-            $deviceCode = 'iq4411 quad energie2';
-        } elseif (preg_match('/phoenix 2/i', $useragent)) {
-            $deviceCode = 'iq4410i';
-        } elseif (preg_match('/IQ4490/', $useragent)) {
-            $deviceCode = 'iq4490';
-        } elseif (preg_match('/IQ4410/', $useragent)) {
-            $deviceCode = 'iq4410 quad phoenix';
-        } elseif (preg_match('/IQ4409/', $useragent)) {
-            $deviceCode = 'iq4409 quad';
-        } elseif (preg_match('/IQ4404/', $useragent)) {
-            $deviceCode = 'iq4404';
-        } elseif (preg_match('/IQ4403/', $useragent)) {
-            $deviceCode = 'iq4403';
-        } elseif (preg_match('/IQ456/', $useragent)) {
-            $deviceCode = 'iq456';
-        } elseif (preg_match('/IQ452/', $useragent)) {
-            $deviceCode = 'iq452';
-        } elseif (preg_match('/IQ450/', $useragent)) {
-            $deviceCode = 'iq450';
-        } elseif (preg_match('/IQ449/', $useragent)) {
-            $deviceCode = 'iq449';
-        } elseif (preg_match('/IQ448/', $useragent)) {
-            $deviceCode = 'iq448';
-        } elseif (preg_match('/IQ444/', $useragent)) {
-            $deviceCode = 'iq444';
-        } elseif (preg_match('/IQ442/', $useragent)) {
-            $deviceCode = 'iq442';
-        } elseif (preg_match('/IQ436i/', $useragent)) {
-            $deviceCode = 'iq436i';
-        } elseif (preg_match('/IQ434/', $useragent)) {
-            $deviceCode = 'iq434';
+        if ($s->contains('IQ4504', true)) {
+            return $this->loader->load('iq4504', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('IQ4502', true)) {
+            return $this->loader->load('iq4502', $useragent);
+        }
+
+        if ($s->contains('IQ4415', true)) {
+            return $this->loader->load('iq4415', $useragent);
+        }
+
+        if ($s->contains('IQ4411', true)) {
+            return $this->loader->load('iq4411 quad energie2', $useragent);
+        }
+
+        if ($s->contains('phoenix 2', false)) {
+            return $this->loader->load('iq4410i', $useragent);
+        }
+
+        if ($s->contains('IQ4490', true)) {
+            return $this->loader->load('iq4490', $useragent);
+        }
+
+        if ($s->contains('IQ4410', true)) {
+            return $this->loader->load('iq4410 quad phoenix', $useragent);
+        }
+
+        if ($s->contains('IQ4409', true)) {
+            return $this->loader->load('iq4409 quad', $useragent);
+        }
+
+        if ($s->contains('IQ4404', true)) {
+            return $this->loader->load('iq4404', $useragent);
+        }
+
+        if ($s->contains('IQ4403', true)) {
+            return $this->loader->load('iq4403', $useragent);
+        }
+
+        if ($s->contains('IQ456', true)) {
+            return $this->loader->load('iq456', $useragent);
+        }
+
+        if ($s->contains('IQ452', true)) {
+            return $this->loader->load('iq452', $useragent);
+        }
+
+        if ($s->contains('IQ450', true)) {
+            return $this->loader->load('iq450', $useragent);
+        }
+
+        if ($s->contains('IQ449', true)) {
+            return $this->loader->load('iq449', $useragent);
+        }
+
+        if ($s->contains('IQ448', true)) {
+            return $this->loader->load('iq448', $useragent);
+        }
+
+        if ($s->contains('IQ444', true)) {
+            return $this->loader->load('iq444', $useragent);
+        }
+
+        if ($s->contains('IQ442', true)) {
+            return $this->loader->load('iq442', $useragent);
+        }
+
+        if ($s->contains('IQ436i', true)) {
+            return $this->loader->load('iq436i', $useragent);
+        }
+
+        if ($s->contains('IQ434', true)) {
+            return $this->loader->load('iq434', $useragent);
+        }
+
+        return $this->loader->load('general fly device', $useragent);
     }
 }

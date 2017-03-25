@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class TurboPadFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general turbopad device';
-
-        if (preg_match('/turbo x6/i', $useragent)) {
-            $deviceCode = 'turbo x6';
-        } elseif (preg_match('/turbo pad 500/i', $useragent)) {
-            $deviceCode = 'pad 500';
+        if ($s->contains('turbo x6', false)) {
+            return $this->loader->load('turbo x6', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('turbo pad 500', false)) {
+            return $this->loader->load('pad 500', $useragent);
+        }
+
+        return $this->loader->load('general turbopad device', $useragent);
     }
 }

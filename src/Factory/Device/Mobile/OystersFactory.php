@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class OystersFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general oysters device';
-
-        if (preg_match('/pacific800i/i', $useragent)) {
-            $deviceCode = 'pacific 800i';
-        } elseif (preg_match('/pacific 800/i', $useragent)) {
-            $deviceCode = 'pacific 800';
+        if ($s->contains('pacific800i', false)) {
+            return $this->loader->load('pacific 800i', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('pacific 800', false)) {
+            return $this->loader->load('pacific 800', $useragent);
+        }
+
+        return $this->loader->load('general oysters device', $useragent);
     }
 }

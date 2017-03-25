@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class StarFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general star device';
-
-        if (preg_match('/n9500/i', $useragent)) {
-            $deviceCode = 'n9500';
-        } elseif (preg_match('/n8000/i', $useragent)) {
-            $deviceCode = 'n8000';
-        } elseif (preg_match('/gt\-9000/i', $useragent)) {
-            $deviceCode = 'gt-9000';
+        if ($s->contains('n9500', false)) {
+            return $this->loader->load('n9500', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('n8000', false)) {
+            return $this->loader->load('n8000', $useragent);
+        }
+
+        if ($s->contains('gt-9000', false)) {
+            return $this->loader->load('gt-9000', $useragent);
+        }
+
+        return $this->loader->load('general star device', $useragent);
     }
 }
