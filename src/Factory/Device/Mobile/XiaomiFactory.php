@@ -78,6 +78,10 @@ class XiaomiFactory implements Factory\FactoryInterface
             return $this->loader->load('mi 2a', $useragent);
         }
 
+        if ($s->contains('MI 2S', true)) {
+            return $this->loader->load('mi 2s', $useragent);
+        }
+
         if ($s->contains('MI 2', true)) {
             return $this->loader->load('mi 2', $useragent);
         }
