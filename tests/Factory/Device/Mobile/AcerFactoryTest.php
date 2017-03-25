@@ -295,16 +295,6 @@ class AcerFactoryTest extends \PHPUnit\Framework\TestCase
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.2.2; TAB A742 Build/GSB7_20140710_INT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Safari/537.36',
-                'TAB A742',
-                'TAB A742',
-                'Acer',
-                'Acer',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
                 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; A701 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
                 'A701',
                 'Iconia Tab A701',
