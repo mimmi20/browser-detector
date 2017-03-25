@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,90 +47,157 @@ class AsusFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general asus device';
-
-        if (preg_match('/TF101G/i', $useragent)) {
-            $deviceCode = 'eee pad transformer tf101g';
-        } elseif (preg_match('/(Transformer TF201|Transformer Prime TF201)/i', $useragent)) {
-            $deviceCode = 'asus eee pad tf201';
-        } elseif (preg_match('/z00ad/i', $useragent)) {
-            $deviceCode = 'z00ad';
-        } elseif (preg_match('/k00c/i', $useragent)) {
-            $deviceCode = 'k00c';
-        } elseif (preg_match('/k00f/i', $useragent)) {
-            $deviceCode = 'k00f';
-        } elseif (preg_match('/k00z/i', $useragent)) {
-            $deviceCode = 'k00z';
-        } elseif (preg_match('/k01e/i', $useragent)) {
-            $deviceCode = 'k01e';
-        } elseif (preg_match('/k01a/i', $useragent)) {
-            $deviceCode = 'k01a';
-        } elseif (preg_match('/k017/i', $useragent)) {
-            $deviceCode = 'k017';
-        } elseif (preg_match('/K013/i', $useragent)) {
-            $deviceCode = 'k013';
-        } elseif (preg_match('/K012/i', $useragent)) {
-            $deviceCode = 'k012';
-        } elseif (preg_match('/(K00E|ME372CG)/i', $useragent)) {
-            $deviceCode = 'k00e';
-        } elseif (preg_match('/ME172V/i', $useragent)) {
-            $deviceCode = 'me172v';
-        } elseif (preg_match('/ME173X/i', $useragent)) {
-            $deviceCode = 'me173x';
-        } elseif (preg_match('/ME301T/i', $useragent)) {
-            $deviceCode = 'me301t';
-        } elseif (preg_match('/ME302C/i', $useragent)) {
-            $deviceCode = 'me302c';
-        } elseif (preg_match('/ME302KL/i', $useragent)) {
-            $deviceCode = 'me302kl';
-        } elseif (preg_match('/ME371MG/i', $useragent)) {
-            $deviceCode = 'me371mg';
-        } elseif (preg_match('/P1801\-T/i', $useragent)) {
-            $deviceCode = 'p1801-t';
-        } elseif (preg_match('/T00J/', $useragent)) {
-            $deviceCode = 't00j';
-        } elseif (preg_match('/T00N/', $useragent)) {
-            $deviceCode = 't00n';
-        } elseif (preg_match('/P01Y/', $useragent)) {
-            $deviceCode = 'p01y';
-        } elseif (preg_match('/TF101/i', $useragent)) {
-            $deviceCode = 'tf101';
-        } elseif (preg_match('/TF300TL/i', $useragent)) {
-            $deviceCode = 'tf300tl';
-        } elseif (preg_match('/TF300TG/i', $useragent)) {
-            $deviceCode = 'tf300tg';
-        } elseif (preg_match('/TF300T/i', $useragent)) {
-            $deviceCode = 'tf300t';
-        } elseif (preg_match('/TF700T/i', $useragent)) {
-            $deviceCode = 'tf700t';
-        } elseif (preg_match('/Slider SL101/i', $useragent)) {
-            $deviceCode = 'sl101';
-        } elseif (preg_match('/Garmin\-Asus A50/i', $useragent)) {
-            $deviceCode = 'a50';
-        } elseif (preg_match('/Garmin\-Asus A10/i', $useragent)) {
-            $deviceCode = 'asus a10';
-        } elseif (preg_match('/Transformer Prime/i', $useragent)) {
-            $deviceCode = 'asus eee pad tf201';
-        } elseif (preg_match('/padfone t004/i', $useragent)) {
-            $deviceCode = 'padfone t004';
-        } elseif (preg_match('/padfone 2/i', $useragent)) {
-            $deviceCode = 'a68';
-        } elseif (preg_match('/padfone/i', $useragent)) {
-            $deviceCode = 'padfone';
-        } elseif (preg_match('/nexus[ _]?7/i', $useragent)) {
-            $deviceCode = 'nexus 7';
-        } elseif (preg_match('/asus;galaxy6/i', $useragent)) {
-            $deviceCode = 'galaxy6';
-        } elseif (preg_match('/eee_701/i', $useragent)) {
-            $deviceCode = 'eee 701';
+        if ($s->contains('TF101G', false)) {
+            return $this->loader->load('eee pad transformer tf101g', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('z00ad', false)) {
+            return $this->loader->load('z00ad', $useragent);
+        }
+
+        if ($s->contains('k00c', false)) {
+            return $this->loader->load('k00c', $useragent);
+        }
+
+        if ($s->contains('k00f', false)) {
+            return $this->loader->load('k00f', $useragent);
+        }
+
+        if ($s->contains('k00z', false)) {
+            return $this->loader->load('k00z', $useragent);
+        }
+
+        if ($s->contains('k01e', false)) {
+            return $this->loader->load('k01e', $useragent);
+        }
+
+        if ($s->contains('k01a', false)) {
+            return $this->loader->load('k01a', $useragent);
+        }
+
+        if ($s->contains('k017', false)) {
+            return $this->loader->load('k017', $useragent);
+        }
+
+        if ($s->contains('K013', false)) {
+            return $this->loader->load('k013', $useragent);
+        }
+
+        if ($s->contains('K012', false)) {
+            return $this->loader->load('k012', $useragent);
+        }
+
+        if ($s->containsAny(['K00E', 'ME372CG'], false)) {
+            return $this->loader->load('k00e', $useragent);
+        }
+
+        if ($s->contains('ME172V', false)) {
+            return $this->loader->load('me172v', $useragent);
+        }
+
+        if ($s->contains('ME173X', false)) {
+            return $this->loader->load('me173x', $useragent);
+        }
+
+        if ($s->contains('ME301T', false)) {
+            return $this->loader->load('me301t', $useragent);
+        }
+
+        if ($s->contains('ME302C', false)) {
+            return $this->loader->load('me302c', $useragent);
+        }
+
+        if ($s->contains('ME302KL', false)) {
+            return $this->loader->load('me302kl', $useragent);
+        }
+
+        if ($s->contains('ME371MG', false)) {
+            return $this->loader->load('me371mg', $useragent);
+        }
+
+        if ($s->contains('P1801-T', false)) {
+            return $this->loader->load('p1801-t', $useragent);
+        }
+
+        if ($s->contains('T00J', true)) {
+            return $this->loader->load('t00j', $useragent);
+        }
+
+        if ($s->contains('T00N', true)) {
+            return $this->loader->load('t00n', $useragent);
+        }
+
+        if ($s->contains('P01Y', true)) {
+            return $this->loader->load('p01y', $useragent);
+        }
+
+        if ($s->contains('TF101', false)) {
+            return $this->loader->load('tf101', $useragent);
+        }
+
+        if ($s->contains('TF300TL', false)) {
+            return $this->loader->load('tf300tl', $useragent);
+        }
+
+        if ($s->contains('TF300TG', false)) {
+            return $this->loader->load('tf300tg', $useragent);
+        }
+
+        if ($s->contains('TF300T', false)) {
+            return $this->loader->load('tf300t', $useragent);
+        }
+
+        if ($s->contains('TF700T', false)) {
+            return $this->loader->load('tf700t', $useragent);
+        }
+
+        if ($s->contains('Slider SL101', false)) {
+            return $this->loader->load('sl101', $useragent);
+        }
+
+        if ($s->contains('Garmin-Asus A50', false)) {
+            return $this->loader->load('a50', $useragent);
+        }
+
+        if ($s->contains('Garmin-Asus A10', false)) {
+            return $this->loader->load('asus a10', $useragent);
+        }
+
+        if ($s->containsAny(['Transformer TF201', 'Transformer Prime'], false)) {
+            return $this->loader->load('asus eee pad tf201', $useragent);
+        }
+
+        if ($s->contains('padfone t004', false)) {
+            return $this->loader->load('padfone t004', $useragent);
+        }
+
+        if ($s->contains('padfone 2', false)) {
+            return $this->loader->load('a68', $useragent);
+        }
+
+        if ($s->contains('padfone', false)) {
+            return $this->loader->load('padfone', $useragent);
+        }
+
+        if ($s->containsAny(['nexus 7', 'nexus_7', 'nexus7'], false)) {
+            return $this->loader->load('nexus 7', $useragent);
+        }
+
+        if ($s->contains('asus;galaxy6', false)) {
+            return $this->loader->load('galaxy6', $useragent);
+        }
+
+        if ($s->contains('eee_701', false)) {
+            return $this->loader->load('eee 701', $useragent);
+        }
+
+        return $this->loader->load('general asus device', $useragent);
     }
 }
