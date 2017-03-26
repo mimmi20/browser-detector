@@ -1567,6 +1567,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ArnovaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
+        if (preg_match('/ARCHM\d{3}/', $useragent)) {
+            return (new Mobile\ArnovaFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
         if ($s->containsAny(['Touchlet', 'X7G'], true)) {
             return (new Mobile\PearlFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
