@@ -66,7 +66,7 @@ class ZopoFactory implements Factory\FactoryInterface
             return $this->loader->load('zp950', $useragent);
         }
 
-        if ($s->contains('ZP9(10|00H)', true)) {
+        if ($s->containsAny(['ZP910', 'ZP900H'], true)) {
             return $this->loader->load('zp910', $useragent);
         }
 
@@ -74,8 +74,12 @@ class ZopoFactory implements Factory\FactoryInterface
             return $this->loader->load('zp900', $useragent);
         }
 
-        if ($s->contains('ZP8(10|00H)', true)) {
+        if ($s->containsAny(['ZP810', 'ZP800H'], true)) {
             return $this->loader->load('zp810', $useragent);
+        }
+
+        if ($s->contains('ZP500+', true)) {
+            return $this->loader->load('zp500+', $useragent);
         }
 
         if ($s->contains('ZP500', true)) {
@@ -84,6 +88,10 @@ class ZopoFactory implements Factory\FactoryInterface
 
         if ($s->contains('ZP300', true)) {
             return $this->loader->load('zp300', $useragent);
+        }
+
+        if ($s->contains('ZP200+', true)) {
+            return $this->loader->load('zp200+', $useragent);
         }
 
         if ($s->contains('ZP200', true)) {
