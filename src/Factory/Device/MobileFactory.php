@@ -224,7 +224,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['amazon', 'kindle', 'silk', 'kftt', 'kfot', 'kfjwi', 'kfsowi', 'kfthwi', 'sd4930ur'], false)) {
+        if ($s->containsAny(['amazon', 'kindle', 'silk', 'kftt', 'kfot', 'kfjwi', 'kfsowi', 'kfthwi', 'sd4930ur', 'kfapwa'], false)) {
             return (new Mobile\AmazonFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
