@@ -54,10 +54,6 @@ class MicromaxFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('X650', false)) {
-            return $this->loader->load('x650', $useragent);
-        }
-
         if ($s->contains('A120', false)) {
             return $this->loader->load('a120', $useragent);
         }
@@ -96,6 +92,10 @@ class MicromaxFactory implements Factory\FactoryInterface
 
         if ($s->contains('A27', false)) {
             return $this->loader->load('a27', $useragent);
+        }
+
+        if ($s->contains('X650', false)) {
+            return $this->loader->load('x650', $useragent);
         }
 
         return $this->loader->load('general micromax device', $useragent);

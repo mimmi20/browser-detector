@@ -1127,7 +1127,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AcerFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/ a\d{3} /i', $useragent) && preg_match('/android 3\.2/i', $useragent)) {
+        if ($s->containsAny(['A120', 'A116', 'A114', 'A093', 'A065'], true)) {
             return (new Mobile\MicromaxFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
