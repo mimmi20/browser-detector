@@ -336,15 +336,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SharpFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('SH05C', true)) {
-            return (new Mobile\SharpFactory($this->cache, $this->loader))->detect($useragent, $s);
-        }
-
         if (preg_match('/\d{3}SH/', $useragent)) {
             return (new Mobile\SharpFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/SH\-\d{2}(D|F)/', $useragent)) {
+        if (preg_match('/SH\-?\d{2,4}(C|D|F|U)/', $useragent)) {
             return (new Mobile\SharpFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
