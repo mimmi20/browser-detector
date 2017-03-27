@@ -280,7 +280,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\CaterpillarFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['catnova', 'cat stargate', 'cat tablet'], false)) {
+        if ($s->containsAny(['catnova', 'cat nova', 'cat stargate', 'cat tablet'], false)) {
             return (new Mobile\CatSoundFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1403,8 +1403,8 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Tablet-PC-4', 'Kinder-Tablet'], true)) {
-            return (new Mobile\CatSoundFactory($this->cache, $this->loader))->detect($useragent, $s);
+        if ($s->containsAny(['tablet-pc-4', 'kinder-tablet'], false)) {
+            return (new Mobile\OdysFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/OP\d{3}/', $useragent)) {

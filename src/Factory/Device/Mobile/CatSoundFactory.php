@@ -78,14 +78,6 @@ class CatSoundFactory implements Factory\FactoryInterface
             return $this->loader->load('catsound tablet', $useragent);
         }
 
-        if ($s->contains('Tablet-PC-4', false)) {
-            return $this->loader->load('tablet pc 4', $useragent);
-        }
-
-        if ($s->contains('Kinder-Tablet', false)) {
-            return $this->loader->load('kinder-tablet', $useragent);
-        }
-
         return $this->loader->load('general catsound device', $useragent);
     }
 }
