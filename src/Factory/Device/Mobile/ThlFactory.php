@@ -62,11 +62,7 @@ class ThlFactory implements Factory\FactoryInterface
             return $this->loader->load('w100', $useragent);
         }
 
-        if ($s->contains('W8_beyond', true)) {
-            return $this->loader->load('thl w8', $useragent);
-        }
-
-        if ($s->contains('ThL W8', true)) {
+        if ($s->containsAny(['W8_beyond', 'ThL W8'], true)) {
             return $this->loader->load('thl w8', $useragent);
         }
 

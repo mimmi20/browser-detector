@@ -58,19 +58,19 @@ class TmobileFactory implements Factory\FactoryInterface
             return $this->loader->load('pulse', $useragent);
         }
 
-        if ($s->contains('myTouch4G', true)) {
+        if ($s->contains('mytouch4g', false)) {
             return $this->loader->load('mytouch4g', $useragent);
         }
 
-        if ($s->contains('myTouch 3G Slide', true)) {
+        if ($s->contains('mytouch 3g slide', false)) {
             return $this->loader->load('mytouch3g', $useragent);
         }
 
-        if ($s->contains('T-Mobile(_G2_Touch| G2)', true)) {
+        if ($s->containsAny(['t-mobile_g2_touch', 't-mobile g2'], false)) {
             return $this->loader->load('g2 touch', $useragent);
         }
 
-        if ($s->contains('T-Mobile G1', true)) {
+        if ($s->contains('t-mobile g1', false)) {
             return $this->loader->load('g1', $useragent);
         }
 

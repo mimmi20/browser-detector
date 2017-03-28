@@ -803,7 +803,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ThlFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('T-Mobile', true)) {
+        if ($s->contains('SPV', true)) {
+            return (new Mobile\SpvFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('t-mobile', false)) {
             return (new Mobile\TmobileFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1287,10 +1291,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MsiFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('SPV', true)) {
-            return (new Mobile\SpvFactory($this->cache, $this->loader))->detect($useragent, $s);
-        }
-
         if ($s->contains('Orange', true)) {
             return (new Mobile\OrangeFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
@@ -1432,6 +1432,10 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/AT\d{2,3}/', $useragent)) {
+            return (new Mobile\ToshibaFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100'], false)) {
             return (new Mobile\ToshibaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1715,7 +1719,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SunstechFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['TPC-PA10.1M', 'M7T', 'P93G', 'i75', 'M83g', ' M6 '], true)) {
+        if ($s->containsAny(['TPC-PA10.1M', 'M7T', 'P93G', 'i75', 'M83g', ' M6 ', 'M6pro', 'M9pro'], true)) {
             return (new Mobile\PipoFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1987,7 +1991,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LavaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('MDA', true)) {
+        if ($s->containsAny(['MDA', 'Pulse', 'myTouch4G'], true)) {
             return (new Mobile\TmobileFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 

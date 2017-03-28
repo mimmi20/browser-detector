@@ -54,15 +54,11 @@ class ToshibaFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('Toshiba/TG01', true)) {
+        if ($s->containsAny(['Toshiba/TG01', 'Toshiba-TG01'], true)) {
             return $this->loader->load('tg01', $useragent);
         }
 
-        if ($s->containsAny(['FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ'], true)) {
-            return $this->loader->load('folio 100', $useragent);
-        }
-
-        if ($s->contains('folio100', false)) {
+        if ($s->containsAny(['FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100'], false)) {
             return $this->loader->load('folio 100', $useragent);
         }
 

@@ -94,7 +94,7 @@ class MobileDevice
         /*
          * @var array Collection of mobile browser keywords
          */
-        $mobileBrowsers = [
+        $mobiles = [
             'android',
             'arm; touch',
             'aspen simulator',
@@ -197,9 +197,10 @@ class MobileDevice
             'velocitymicro',
             'lumia',
             'surftab',
+            'folio_and_a',
         ];
 
-        if ($s->containsAny($mobileBrowsers, false)) {
+        if ($s->containsAny($mobiles, false)) {
             return true;
         }
 
