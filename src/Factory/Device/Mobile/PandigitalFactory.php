@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class PandigitalFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general pandigital device';
-
-        if (preg_match('/sprnova1/i', $useragent)) {
-            $deviceCode = 'supernova';
-        } elseif (preg_match('/(opc1|SL20_20101210_B_PD_INX7E_ENG_6410POP)/', $useragent)) {
-            $deviceCode = 'novel';
-        } elseif (preg_match('/pandigital9hr/i', $useragent)) {
-            $deviceCode = '9hr';
+        if ($s->contains('sprnova1', false)) {
+            return $this->loader->load('supernova', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('(opc1|SL20_20101210_B_PD_INX7E_ENG_6410POP)', true)) {
+            return $this->loader->load('novel', $useragent);
+        }
+
+        if ($s->contains('pandigital9hr', false)) {
+            return $this->loader->load('9hr', $useragent);
+        }
+
+        return $this->loader->load('general pandigital device', $useragent);
     }
 }

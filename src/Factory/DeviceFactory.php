@@ -64,19 +64,19 @@ class DeviceFactory implements FactoryInterface
         if (!$s->containsAny(['freebsd', 'raspbian'], false)
             && $s->containsAny(['darwin', 'cfnetwork'], false)
         ) {
-            return (new Device\DarwinFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Device\DarwinFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if ((new MobileDevice($useragent))->isMobile()) {
-            return (new Device\MobileFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Device\MobileFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if ((new TvHelper($useragent))->isTvDevice()) {
-            return (new Device\TvFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Device\TvFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if ((new Desktop($useragent))->isDesktopDevice()) {
-            return (new Device\DesktopFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Device\DesktopFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         return $this->loader->load('unknown', $useragent);

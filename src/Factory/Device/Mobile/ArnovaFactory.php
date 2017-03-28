@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,36 +47,53 @@ class ArnovaFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general arnova device';
-
-        if (preg_match('/101 g4/i', $useragent)) {
-            $deviceCode = '101 g4';
-        } elseif (preg_match('/AN10DG3/i', $useragent)) {
-            $deviceCode = '10d g3';
-        } elseif (preg_match('/AN10BG3/i', $useragent)) {
-            $deviceCode = 'an10bg3';
-        } elseif (preg_match('/AN9G2I/i', $useragent)) {
-            $deviceCode = '9 g2';
-        } elseif (preg_match('/AN7FG3/i', $useragent)) {
-            $deviceCode = '7f g3';
-        } elseif (preg_match('/AN7EG3/i', $useragent)) {
-            $deviceCode = '7e g3';
-        } elseif (preg_match('/AN7DG3/i', $useragent)) {
-            $deviceCode = '7d g3';
-        } elseif (preg_match('/AN7CG2/i', $useragent)) {
-            $deviceCode = '7c g2';
-        } elseif (preg_match('/AN7BG2DT/i', $useragent)) {
-            $deviceCode = '7b g2 dt';
-        } elseif (preg_match('/ARCHM901/i', $useragent)) {
-            $deviceCode = 'archm901';
+        if ($s->contains('101 g4', false)) {
+            return $this->loader->load('101 g4', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('AN10DG3', false)) {
+            return $this->loader->load('10d g3', $useragent);
+        }
+
+        if ($s->contains('AN10BG3', false)) {
+            return $this->loader->load('an10bg3', $useragent);
+        }
+
+        if ($s->contains('AN9G2I', false)) {
+            return $this->loader->load('9 g2', $useragent);
+        }
+
+        if ($s->contains('AN7FG3', false)) {
+            return $this->loader->load('7f g3', $useragent);
+        }
+
+        if ($s->contains('AN7EG3', false)) {
+            return $this->loader->load('7e g3', $useragent);
+        }
+
+        if ($s->contains('AN7DG3', false)) {
+            return $this->loader->load('7d g3', $useragent);
+        }
+
+        if ($s->contains('AN7CG2', false)) {
+            return $this->loader->load('7c g2', $useragent);
+        }
+
+        if ($s->contains('AN7BG2DT', false)) {
+            return $this->loader->load('7b g2 dt', $useragent);
+        }
+
+        if ($s->contains('ARCHM901', false)) {
+            return $this->loader->load('archm901', $useragent);
+        }
+
+        return $this->loader->load('general arnova device', $useragent);
     }
 }

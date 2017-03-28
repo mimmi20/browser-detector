@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,28 +47,37 @@ class TriQFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general 3q device';
-
-        if (preg_match('/QS0716D/', $useragent)) {
-            $deviceCode = 'qs0716d';
-        } elseif (preg_match('/MT0812E/', $useragent)) {
-            $deviceCode = 'mt0812e';
-        } elseif (preg_match('/MT0739D/', $useragent)) {
-            $deviceCode = 'mt0739d';
-        } elseif (preg_match('/AC0732C/', $useragent)) {
-            $deviceCode = 'ac0732c';
-        } elseif (preg_match('/RC9724C/', $useragent)) {
-            $deviceCode = 'rc9724c';
-        } elseif (preg_match('/LC0720C/', $useragent)) {
-            $deviceCode = 'lc0720c';
+        if ($s->contains('QS0716D', true)) {
+            return $this->loader->load('qs0716d', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('MT0812E', true)) {
+            return $this->loader->load('mt0812e', $useragent);
+        }
+
+        if ($s->contains('MT0739D', true)) {
+            return $this->loader->load('mt0739d', $useragent);
+        }
+
+        if ($s->contains('AC0732C', true)) {
+            return $this->loader->load('ac0732c', $useragent);
+        }
+
+        if ($s->contains('RC9724C', true)) {
+            return $this->loader->load('rc9724c', $useragent);
+        }
+
+        if ($s->contains('LC0720C', true)) {
+            return $this->loader->load('lc0720c', $useragent);
+        }
+
+        return $this->loader->load('general 3q device', $useragent);
     }
 }

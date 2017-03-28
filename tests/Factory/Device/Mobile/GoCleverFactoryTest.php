@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class GoCleverFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -102,6 +105,16 @@ class GoCleverFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
+                'this is a fake ua to trigger the fallback',
+                'general GOCLEVER Device',
+                'general GOCLEVER Device',
+                'GOCLEVER',
+                'GOCLEVER',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
                 'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; ORION7o Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.3.0.552 U3/0.8.0 Mobile Safari/534.30',
                 'Orion 7o',
                 'Orion 7o',
@@ -138,6 +151,56 @@ class GoCleverFactoryTest extends \PHPUnit\Framework\TestCase
                 'GOCLEVER',
                 'GOCLEVER',
                 'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; TQ700 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36',
+                'TQ700',
+                'QUANTUM 700',
+                'GOCLEVER',
+                'GOCLEVER',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'TERRA_101 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24',
+                'A1021',
+                'TERRA 101',
+                'GOCLEVER',
+                'GOCLEVER',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; INSIGNIA_785_PRO Build/GOCLEVER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Safari/537.36',
+                'INSIGNIA 785 PRO',
+                'INSIGNIA 785 PRO',
+                'GOCLEVER',
+                'GOCLEVER',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; ARIES_785 Build/GOCLEVER) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.169 Safari/537.22',
+                'Aries 785',
+                'Aries 785',
+                'GOCLEVER',
+                'GOCLEVER',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; ARIES_101 Build/GOCLEVER) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.169 Safari/537.22',
+                'Aries 101',
+                'Aries 101',
+                'GOCLEVER',
+                'GOCLEVER',
+                'Tablet',
                 true,
                 'touchscreen',
             ],

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class SunstechFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general sunstech device';
-
-        if (preg_match('/tab917qc\-8gb/i', $useragent)) {
-            $deviceCode = 'tab917qc 8gb';
-        } elseif (preg_match('/TAB785DUAL/', $useragent)) {
-            $deviceCode = 'tab785 dual';
+        if ($s->contains('tab917qc-8gb', false)) {
+            return $this->loader->load('tab917qc 8gb', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('TAB785DUAL', true)) {
+            return $this->loader->load('tab785 dual', $useragent);
+        }
+
+        return $this->loader->load('general sunstech device', $useragent);
     }
 }

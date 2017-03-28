@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,28 +47,37 @@ class IconBitFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general iconbit device';
-
-        if (preg_match('/nt\-3710s/i', $useragent)) {
-            $deviceCode = 'nt-3710s';
-        } elseif (preg_match('/nt\-3702m/i', $useragent)) {
-            $deviceCode = 'nt-3702m';
-        } elseif (preg_match('/nt\-3601p/i', $useragent)) {
-            $deviceCode = 'nettab pocket 3g';
-        } elseif (preg_match('/nt\-1009t/i', $useragent)) {
-            $deviceCode = 'nt-1009t';
-        } elseif (preg_match('/nt\-1002t/i', $useragent)) {
-            $deviceCode = 'nt-1002t';
-        } elseif (preg_match('/nt\-1001t/i', $useragent)) {
-            $deviceCode = 'nt-1001t';
+        if ($s->contains('nt-3710s', false)) {
+            return $this->loader->load('nt-3710s', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('nt-3702m', false)) {
+            return $this->loader->load('nt-3702m', $useragent);
+        }
+
+        if ($s->contains('nt-3601p', false)) {
+            return $this->loader->load('nettab pocket 3g', $useragent);
+        }
+
+        if ($s->contains('nt-1009t', false)) {
+            return $this->loader->load('nt-1009t', $useragent);
+        }
+
+        if ($s->contains('nt-1002t', false)) {
+            return $this->loader->load('nt-1002t', $useragent);
+        }
+
+        if ($s->contains('nt-1001t', false)) {
+            return $this->loader->load('nt-1001t', $useragent);
+        }
+
+        return $this->loader->load('general iconbit device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class SprdFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general sprd device';
-
-        if (preg_match('/SPHS\_on\_Hsdroid/i', $useragent)) {
-            $deviceCode = 'sphs on hsdroid';
-        } elseif (preg_match('/GT\-A7100/i', $useragent)) {
-            $deviceCode = 'gt-a7100';
-        } elseif (preg_match('/B51\+/i', $useragent)) {
-            $deviceCode = 'b51+';
+        if ($s->contains('SPHS_on_Hsdroid', false)) {
+            return $this->loader->load('sphs on hsdroid', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('GT-A7100', false)) {
+            return $this->loader->load('gt-a7100', $useragent);
+        }
+
+        if ($s->contains('B51+', false)) {
+            return $this->loader->load('b51+', $useragent);
+        }
+
+        return $this->loader->load('general sprd device', $useragent);
     }
 }

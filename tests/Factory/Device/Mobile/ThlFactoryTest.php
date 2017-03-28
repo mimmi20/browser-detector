@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class ThlFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -102,6 +105,16 @@ class ThlFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
+                'this is a fake ua to trigger the fallback',
+                'general ThL Device',
+                'general ThL Device',
+                'ThL',
+                'ThL',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ru; thl_4400) U2/1.0.0 UCBrowser/9.9.1.554 Mobile',
                 '4400',
                 '4400',
@@ -125,6 +138,56 @@ class ThlFactoryTest extends \PHPUnit\Framework\TestCase
                 'Mozilla/5.0 (Linux; Android 4.4.4; thl 2015 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 ACHEETAHI/2100502063',
                 '2015',
                 '2015',
+                'ThL',
+                'ThL',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.1; W200 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36',
+                'W200',
+                'W200',
+                'ThL',
+                'ThL',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.1; W100 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36 OPR/25.0.1619.84037',
+                'W100',
+                'W100',
+                'ThL',
+                'ThL',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.1; ru; W8_beyond) U2/1.0.0 UCBrowser/9.2.0.419 U2/1.0.0 Mobile',
+                'W8',
+                'W8 Beyond',
+                'ThL',
+                'ThL',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.1; de-de; ThL W8 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'W8',
+                'W8 Beyond',
+                'ThL',
+                'ThL',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; thl T6S Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
+                'T6S',
+                'T6S',
                 'ThL',
                 'ThL',
                 'Mobile Phone',

@@ -111,7 +111,7 @@ class MedionFactoryTest extends \PHPUnit\Framework\TestCase
                 'Medion',
                 'Medion',
                 'Tablet',
-                false,
+                true,
                 'touchscreen',
             ],
             [

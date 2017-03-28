@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,24 +47,29 @@ class NintendoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general nintendo device';
-
-        if (preg_match('/WiiU/', $useragent)) {
-            $deviceCode = 'wiiu';
-        } elseif (preg_match('/Wii/', $useragent)) {
-            $deviceCode = 'wii';
-        } elseif (preg_match('/DSi/', $useragent)) {
-            $deviceCode = 'dsi';
-        } elseif (preg_match('/3DS/', $useragent)) {
-            $deviceCode = '3ds';
+        if ($s->contains('WiiU', true)) {
+            return $this->loader->load('wiiu', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('Wii', true)) {
+            return $this->loader->load('wii', $useragent);
+        }
+
+        if ($s->contains('DSi', true)) {
+            return $this->loader->load('dsi', $useragent);
+        }
+
+        if ($s->contains('3DS', true)) {
+            return $this->loader->load('3ds', $useragent);
+        }
+
+        return $this->loader->load('general nintendo device', $useragent);
     }
 }

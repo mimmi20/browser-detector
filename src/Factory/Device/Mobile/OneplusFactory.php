@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,26 +47,33 @@ class OneplusFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general oneplus device';
-
-        if (preg_match('/A3000/', $useragent)) {
-            $deviceCode = 'a3000';
-        } elseif (preg_match('/A2001/', $useragent)) {
-            $deviceCode = 'a2001';
-        } elseif (preg_match('/A2003/', $useragent)) {
-            $deviceCode = 'a2003';
-        } elseif (preg_match('/A2005/', $useragent)) {
-            $deviceCode = 'a2005';
-        } elseif (preg_match('/E1003/', $useragent)) {
-            $deviceCode = 'e1003';
+        if ($s->contains('A3000', true)) {
+            return $this->loader->load('a3000', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('A2001', true)) {
+            return $this->loader->load('a2001', $useragent);
+        }
+
+        if ($s->contains('A2003', true)) {
+            return $this->loader->load('a2003', $useragent);
+        }
+
+        if ($s->contains('A2005', true)) {
+            return $this->loader->load('a2005', $useragent);
+        }
+
+        if ($s->contains('E1003', true)) {
+            return $this->loader->load('e1003', $useragent);
+        }
+
+        return $this->loader->load('general oneplus device', $useragent);
     }
 }

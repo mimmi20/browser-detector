@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class AxgioFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general axgio device';
-
-        if (preg_match('/WING\-W2/', $useragent)) {
-            $deviceCode = 'wing w2';
-        } elseif (preg_match('/Neon\-N1/', $useragent)) {
-            $deviceCode = 'neon n1';
+        if ($s->contains('WING-W2', true)) {
+            return $this->loader->load('wing w2', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('Neon-N1', true)) {
+            return $this->loader->load('neon n1', $useragent);
+        }
+
+        return $this->loader->load('general axgio device', $useragent);
     }
 }

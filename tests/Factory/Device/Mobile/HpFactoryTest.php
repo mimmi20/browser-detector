@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class HpFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -102,6 +105,16 @@ class HpFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
+                'this is a fake ua to trigger the fallback',
+                'general HP Device',
+                'general HP Device',
+                'HP',
+                'HP',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
                 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160',
                 'Blazer',
                 'Blazer',
@@ -139,6 +152,56 @@ class HpFactoryTest extends \PHPUnit\Framework\TestCase
                 'HP',
                 'Tablet',
                 true,
+                'touchscreen',
+            ],
+            [
+                'HPiPAQhw6900/1.0/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x240)',
+                'iPAQ 6900',
+                'iPAQ 6900',
+                'HP',
+                'HP',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; HP Slate 10 HD Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
+                'Slate 10',
+                'Slate 10',
+                'HP',
+                'HP',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-D050; Blazer/4.3) 16;320x320',
+                'TX',
+                'TX',
+                'Palm',
+                'Palm',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (webOS/1.4.5; U; ru-RU) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.0',
+                'Pixi',
+                'Pixi',
+                'Palm',
+                'Palm',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (webOS/2.1.1; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0',
+                'P160U',
+                'Veer',
+                'HP',
+                'HP',
+                'Mobile Phone',
+                false,
                 'touchscreen',
             ],
         ];

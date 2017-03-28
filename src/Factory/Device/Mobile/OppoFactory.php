@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class OppoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general oppo device';
-
-        if (preg_match('/x909/i', $useragent)) {
-            $deviceCode = 'x909';
-        } elseif (preg_match('/r815/i', $useragent)) {
-            $deviceCode = 'r815';
-        } elseif (preg_match('/r813t/i', $useragent)) {
-            $deviceCode = 'r813t';
+        if ($s->contains('x909', false)) {
+            return $this->loader->load('x909', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('r815', false)) {
+            return $this->loader->load('r815', $useragent);
+        }
+
+        if ($s->contains('r813t', false)) {
+            return $this->loader->load('r813t', $useragent);
+        }
+
+        return $this->loader->load('general oppo device', $useragent);
     }
 }

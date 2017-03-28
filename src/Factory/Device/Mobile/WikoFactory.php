@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,34 +47,49 @@ class WikoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general wiko device';
-
-        if (preg_match('/SLIDE2/', $useragent)) {
-            $deviceCode = 'slide 2';
-        } elseif (preg_match('/JERRY/', $useragent)) {
-            $deviceCode = 'jerry';
-        } elseif (preg_match('/BLOOM/', $useragent)) {
-            $deviceCode = 'bloom';
-        } elseif (preg_match('/RAINBOW/', $useragent)) {
-            $deviceCode = 'rainbow';
-        } elseif (preg_match('/LENNY/', $useragent)) {
-            $deviceCode = 'lenny';
-        } elseif (preg_match('/GETAWAY/', $useragent)) {
-            $deviceCode = 'getaway';
-        } elseif (preg_match('/DARKMOON/', $useragent)) {
-            $deviceCode = 'darkmoon';
-        } elseif (preg_match('/DARKSIDE/', $useragent)) {
-            $deviceCode = 'darkside';
-        } elseif (preg_match('/CINK PEAX 2/', $useragent)) {
-            $deviceCode = 'cink peax 2';
+        if ($s->contains('SLIDE2', true)) {
+            return $this->loader->load('slide 2', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('JERRY', true)) {
+            return $this->loader->load('jerry', $useragent);
+        }
+
+        if ($s->contains('BLOOM', true)) {
+            return $this->loader->load('bloom', $useragent);
+        }
+
+        if ($s->contains('RAINBOW', true)) {
+            return $this->loader->load('rainbow', $useragent);
+        }
+
+        if ($s->contains('LENNY', true)) {
+            return $this->loader->load('lenny', $useragent);
+        }
+
+        if ($s->contains('GETAWAY', true)) {
+            return $this->loader->load('getaway', $useragent);
+        }
+
+        if ($s->contains('DARKMOON', true)) {
+            return $this->loader->load('darkmoon', $useragent);
+        }
+
+        if ($s->contains('DARKSIDE', true)) {
+            return $this->loader->load('darkside', $useragent);
+        }
+
+        if ($s->contains('CINK PEAX 2', true)) {
+            return $this->loader->load('cink peax 2', $useragent);
+        }
+
+        return $this->loader->load('general wiko device', $useragent);
     }
 }

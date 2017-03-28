@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class PulidFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general pulid device';
-
-        if (preg_match('/F15/', $useragent)) {
-            $deviceCode = 'f15';
-        } elseif (preg_match('/F11/', $useragent)) {
-            $deviceCode = 'f11';
+        if ($s->contains('F15', true)) {
+            return $this->loader->load('f15', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('F11', true)) {
+            return $this->loader->load('f11', $useragent);
+        }
+
+        return $this->loader->load('general pulid device', $useragent);
     }
 }

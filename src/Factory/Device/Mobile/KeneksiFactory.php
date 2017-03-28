@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class KeneksiFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general keneksi device';
-
-        if (preg_match('/crystal/i', $useragent)) {
-            $deviceCode = 'crystal';
-        } elseif (preg_match('/norma 2/i', $useragent)) {
-            $deviceCode = 'norma 2';
+        if ($s->contains('crystal', false)) {
+            return $this->loader->load('crystal', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('norma 2', false)) {
+            return $this->loader->load('norma 2', $useragent);
+        }
+
+        return $this->loader->load('general keneksi device', $useragent);
     }
 }

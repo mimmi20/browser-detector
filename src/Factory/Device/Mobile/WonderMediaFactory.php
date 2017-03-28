@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class WonderMediaFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general wondermedia device';
-
-        if (preg_match('/WM8850/', $useragent)) {
-            $deviceCode = 'prizm wm8850';
-        } elseif (preg_match('/WM8650/', $useragent)) {
-            $deviceCode = 'prizm wm8650';
+        if ($s->contains('WM8850', true)) {
+            return $this->loader->load('prizm wm8850', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('WM8650', true)) {
+            return $this->loader->load('prizm wm8650', $useragent);
+        }
+
+        return $this->loader->load('general wondermedia device', $useragent);
     }
 }

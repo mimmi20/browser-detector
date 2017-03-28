@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class BarnesNobleFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general barnes & noble device';
-
-        if (preg_match('/BN NookHD\+/i', $useragent)) {
-            $deviceCode = 'nook hd+';
-        } elseif (preg_match('/BNRV200/i', $useragent)) {
-            $deviceCode = 'bnrv200';
+        if ($s->contains('BN NookHD+', false)) {
+            return $this->loader->load('nook hd+', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('BNRV200', false)) {
+            return $this->loader->load('bnrv200', $useragent);
+        }
+
+        return $this->loader->load('general barnes & noble device', $useragent);
     }
 }

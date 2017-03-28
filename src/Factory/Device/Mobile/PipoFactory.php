@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,32 +47,45 @@ class PipoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general pipo device';
-
-        if (preg_match('/TPC\-PA10\.1M/', $useragent)) {
-            $deviceCode = 'pipo pa10.1m';
-        } elseif (preg_match('/p93g/i', $useragent)) {
-            $deviceCode = 'p9 3g';
-        } elseif (preg_match('/m9pro/i', $useragent)) {
-            $deviceCode = 'q107';
-        } elseif (preg_match('/m7t/i', $useragent)) {
-            $deviceCode = 'm7t';
-        } elseif (preg_match('/m6pro/i', $useragent)) {
-            $deviceCode = 'q977';
-        } elseif (preg_match('/i75/', $useragent)) {
-            $deviceCode = 'i75';
-        } elseif (preg_match('/m83g/i', $useragent)) {
-            $deviceCode = 'm8 3g';
-        } elseif (preg_match('/ M6 /', $useragent)) {
-            $deviceCode = 'm6';
+        if ($s->contains('TPC-PA10.1M', true)) {
+            return $this->loader->load('pipo pa10.1m', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('p93g', false)) {
+            return $this->loader->load('p9 3g', $useragent);
+        }
+
+        if ($s->contains('m9pro', false)) {
+            return $this->loader->load('q107', $useragent);
+        }
+
+        if ($s->contains('m7t', false)) {
+            return $this->loader->load('m7t', $useragent);
+        }
+
+        if ($s->contains('m6pro', false)) {
+            return $this->loader->load('q977', $useragent);
+        }
+
+        if ($s->contains('i75', true)) {
+            return $this->loader->load('i75', $useragent);
+        }
+
+        if ($s->contains('m83g', false)) {
+            return $this->loader->load('m8 3g', $useragent);
+        }
+
+        if ($s->contains(' M6 ', true)) {
+            return $this->loader->load('m6', $useragent);
+        }
+
+        return $this->loader->load('general pipo device', $useragent);
     }
 }

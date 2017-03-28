@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,26 +47,33 @@ class IrbisFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general irbis device';
-
-        if (preg_match('/TX68/', $useragent)) {
-            $deviceCode = 'tx68';
-        } elseif (preg_match('/TX18/', $useragent)) {
-            $deviceCode = 'tx18';
-        } elseif (preg_match('/TX17/', $useragent)) {
-            $deviceCode = 'tx17';
-        } elseif (preg_match('/TX08/', $useragent)) {
-            $deviceCode = 'tx08';
-        } elseif (preg_match('/TG97/', $useragent)) {
-            $deviceCode = 'tg97';
+        if ($s->contains('TX68', true)) {
+            return $this->loader->load('tx68', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('TX18', true)) {
+            return $this->loader->load('tx18', $useragent);
+        }
+
+        if ($s->contains('TX17', true)) {
+            return $this->loader->load('tx17', $useragent);
+        }
+
+        if ($s->contains('TX08', true)) {
+            return $this->loader->load('tx08', $useragent);
+        }
+
+        if ($s->contains('TG97', true)) {
+            return $this->loader->load('tg97', $useragent);
+        }
+
+        return $this->loader->load('general irbis device', $useragent);
     }
 }

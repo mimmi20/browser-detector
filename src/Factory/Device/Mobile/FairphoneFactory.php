@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class FairphoneFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general fairphone device';
-
-        if (preg_match('/FP1U/', $useragent)) {
-            $deviceCode = 'fp1u';
-        } elseif (preg_match('/FP1/', $useragent)) {
-            $deviceCode = 'fp1';
+        if ($s->contains('FP1U', true)) {
+            return $this->loader->load('fp1u', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('FP1', true)) {
+            return $this->loader->load('fp1', $useragent);
+        }
+
+        return $this->loader->load('general fairphone device', $useragent);
     }
 }

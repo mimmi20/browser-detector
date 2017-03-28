@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class AinolFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general ainol device';
-
-        if (preg_match('/numy\_note\_9/i', $useragent)) {
-            $deviceCode = 'numy note 9';
-        } elseif (preg_match('/novo7fire/i', $useragent)) {
-            $deviceCode = 'novo 7 fire';
+        if ($s->contains('numy_note_9', false)) {
+            return $this->loader->load('numy note 9', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('novo7fire', false)) {
+            return $this->loader->load('novo 7 fire', $useragent);
+        }
+
+        return $this->loader->load('general ainol device', $useragent);
     }
 }

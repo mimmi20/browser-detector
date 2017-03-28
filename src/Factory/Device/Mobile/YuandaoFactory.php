@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class YuandaoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general yuandao device';
-
-        if (preg_match('/N90FHDRK/', $useragent)) {
-            $deviceCode = 'yuandao n90fhdrk';
-        } elseif (preg_match('/n90 dual core2/i', $useragent)) {
-            $deviceCode = 'n90 dual core2';
+        if ($s->contains('N90FHDRK', true)) {
+            return $this->loader->load('yuandao n90fhdrk', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('n90 dual core2', false)) {
+            return $this->loader->load('n90 dual core2', $useragent);
+        }
+
+        return $this->loader->load('general yuandao device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class SimvalleyFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general simvalley device';
-
-        if (preg_match('/SPX\-5[ \_]3G/', $useragent)) {
-            $deviceCode = 'spx-5 3g';
-        } elseif (preg_match('/SPX\-5/', $useragent)) {
-            $deviceCode = 'spx-5';
+        if ($s->contains('SPX-5[ _]3G', true)) {
+            return $this->loader->load('spx-5 3g', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('SPX-5', true)) {
+            return $this->loader->load('spx-5', $useragent);
+        }
+
+        return $this->loader->load('general simvalley device', $useragent);
     }
 }

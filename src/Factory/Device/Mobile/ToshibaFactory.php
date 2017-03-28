@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,32 +47,41 @@ class ToshibaFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general toshiba device';
-
-        if (preg_match('/Toshiba\/TG01/', $useragent)) {
-            $deviceCode = 'tg01';
-        } elseif (preg_match('/(FOLIO_AND_A|TOSHIBA_AC_AND_AZ)/', $useragent)) {
-            $deviceCode = 'folio 100';
-        } elseif (preg_match('/folio100/i', $useragent)) {
-            $deviceCode = 'folio 100';
-        } elseif (preg_match('/AT300SE/', $useragent)) {
-            $deviceCode = 'at300se';
-        } elseif (preg_match('/AT300/', $useragent)) {
-            $deviceCode = 'at300';
-        } elseif (preg_match('/AT200/', $useragent)) {
-            $deviceCode = 'at200';
-        } elseif (preg_match('/AT100/', $useragent)) {
-            $deviceCode = 'at100';
-        } elseif (preg_match('/AT10\-A/', $useragent)) {
-            $deviceCode = 'at10-a';
+        if ($s->containsAny(['Toshiba/TG01', 'Toshiba-TG01'], true)) {
+            return $this->loader->load('tg01', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->containsAny(['FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100'], false)) {
+            return $this->loader->load('folio 100', $useragent);
+        }
+
+        if ($s->contains('AT300SE', true)) {
+            return $this->loader->load('at300se', $useragent);
+        }
+
+        if ($s->contains('AT300', true)) {
+            return $this->loader->load('at300', $useragent);
+        }
+
+        if ($s->contains('AT200', true)) {
+            return $this->loader->load('at200', $useragent);
+        }
+
+        if ($s->contains('AT100', true)) {
+            return $this->loader->load('at100', $useragent);
+        }
+
+        if ($s->contains('AT10-A', true)) {
+            return $this->loader->load('at10-a', $useragent);
+        }
+
+        return $this->loader->load('general toshiba device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,28 +47,37 @@ class CubotFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general cubot device';
-
-        if (preg_match('/S208/', $useragent)) {
-            $deviceCode = 's208';
-        } elseif (preg_match('/P9/i', $useragent)) {
-            $deviceCode = 'cubot u30gt';
-        } elseif (preg_match('/MT6572\_TD/i', $useragent)) {
-            $deviceCode = 'gt 95 3g';
-        } elseif (preg_match('/GT99/i', $useragent)) {
-            $deviceCode = 'gt99';
-        } elseif (preg_match('/C11/i', $useragent)) {
-            $deviceCode = 'c11';
-        } elseif (preg_match('/C7/i', $useragent)) {
-            $deviceCode = 'c7';
+        if ($s->contains('S208', true)) {
+            return $this->loader->load('s208', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('P9', false)) {
+            return $this->loader->load('cubot u30gt', $useragent);
+        }
+
+        if ($s->contains('MT6572_TD', false)) {
+            return $this->loader->load('gt 95 3g', $useragent);
+        }
+
+        if ($s->contains('GT99', false)) {
+            return $this->loader->load('gt99', $useragent);
+        }
+
+        if ($s->contains('C11', false)) {
+            return $this->loader->load('c11', $useragent);
+        }
+
+        if ($s->contains('C7', false)) {
+            return $this->loader->load('c7', $useragent);
+        }
+
+        return $this->loader->load('general cubot device', $useragent);
     }
 }

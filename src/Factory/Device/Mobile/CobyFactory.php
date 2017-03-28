@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,34 +47,49 @@ class CobyFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general coby device';
-
-        if (preg_match('/MID9742/i', $useragent)) {
-            $deviceCode = 'mid9742';
-        } elseif (preg_match('/MID8128/i', $useragent)) {
-            $deviceCode = 'mid8128';
-        } elseif (preg_match('/MID8127/i', $useragent)) {
-            $deviceCode = 'mid8127';
-        } elseif (preg_match('/MID8024/i', $useragent)) {
-            $deviceCode = 'mid8024';
-        } elseif (preg_match('/MID7022/i', $useragent)) {
-            $deviceCode = 'mid7022';
-        } elseif (preg_match('/MID7015/i', $useragent)) {
-            $deviceCode = 'mid7015';
-        } elseif (preg_match('/MID1126/i', $useragent)) {
-            $deviceCode = 'mid1126';
-        } elseif (preg_match('/MID1125/i', $useragent)) {
-            $deviceCode = 'mid1125';
-        } elseif (preg_match('/NBPC724/i', $useragent)) {
-            $deviceCode = 'nbpc724';
+        if ($s->contains('MID9742', false)) {
+            return $this->loader->load('mid9742', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('MID8128', false)) {
+            return $this->loader->load('mid8128', $useragent);
+        }
+
+        if ($s->contains('MID8127', false)) {
+            return $this->loader->load('mid8127', $useragent);
+        }
+
+        if ($s->contains('MID8024', false)) {
+            return $this->loader->load('mid8024', $useragent);
+        }
+
+        if ($s->contains('MID7022', false)) {
+            return $this->loader->load('mid7022', $useragent);
+        }
+
+        if ($s->contains('MID7015', false)) {
+            return $this->loader->load('mid7015', $useragent);
+        }
+
+        if ($s->contains('MID1126', false)) {
+            return $this->loader->load('mid1126', $useragent);
+        }
+
+        if ($s->contains('MID1125', false)) {
+            return $this->loader->load('mid1125', $useragent);
+        }
+
+        if ($s->contains('NBPC724', false)) {
+            return $this->loader->load('nbpc724', $useragent);
+        }
+
+        return $this->loader->load('general coby device', $useragent);
     }
 }

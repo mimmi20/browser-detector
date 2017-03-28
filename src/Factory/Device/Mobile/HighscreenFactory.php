@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,26 +47,33 @@ class HighscreenFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general highscreen device';
-
-        if (preg_match('/Zera[ \_]F/', $useragent)) {
-            $deviceCode = 'zera f';
-        } elseif (preg_match('/prime s/i', $useragent)) {
-            $deviceCode = 'omega prime s';
-        } elseif (preg_match('/ice2/i', $useragent)) {
-            $deviceCode = 'ice 2';
-        } elseif (preg_match('/explosion/i', $useragent)) {
-            $deviceCode = 'explosion';
-        } elseif (preg_match('/boost iise/i', $useragent)) {
-            $deviceCode = 'boost ii se';
+        if ($s->contains('Zera[ _]F', true)) {
+            return $this->loader->load('zera f', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('prime s', false)) {
+            return $this->loader->load('omega prime s', $useragent);
+        }
+
+        if ($s->contains('ice2', false)) {
+            return $this->loader->load('ice 2', $useragent);
+        }
+
+        if ($s->contains('explosion', false)) {
+            return $this->loader->load('explosion', $useragent);
+        }
+
+        if ($s->contains('boost iise', false)) {
+            return $this->loader->load('boost ii se', $useragent);
+        }
+
+        return $this->loader->load('general highscreen device', $useragent);
     }
 }

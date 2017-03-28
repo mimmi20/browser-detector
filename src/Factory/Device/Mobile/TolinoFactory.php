@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,24 +47,29 @@ class TolinoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general tolino device';
-
-        if (preg_match('/tab 8\.9/i', $useragent)) {
-            $deviceCode = 'tab 8.9';
-        } elseif (preg_match('/tab 8/i', $useragent)) {
-            $deviceCode = 'tab 8';
-        } elseif (preg_match('/tab 7/i', $useragent)) {
-            $deviceCode = 'tab 7';
-        } elseif (preg_match('/tolino/i', $useragent)) {
-            $deviceCode = 'tolino shine';
+        if ($s->contains('tab 8.9', false)) {
+            return $this->loader->load('tab 8.9', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('tab 8', false)) {
+            return $this->loader->load('tab 8', $useragent);
+        }
+
+        if ($s->contains('tab 7', false)) {
+            return $this->loader->load('tab 7', $useragent);
+        }
+
+        if ($s->contains('tolino', false)) {
+            return $this->loader->load('tolino shine', $useragent);
+        }
+
+        return $this->loader->load('general tolino device', $useragent);
     }
 }

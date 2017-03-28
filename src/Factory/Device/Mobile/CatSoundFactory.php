@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,32 +47,37 @@ class CatSoundFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general catsound device';
-
-        if (preg_match('/CatNova8/i', $useragent)) {
-            $deviceCode = 'cat nova 8';
-        } elseif (preg_match('/nova/i', $useragent)) {
-            $deviceCode = 'nova';
-        } elseif (preg_match('/Cat Tablet Galactica X/i', $useragent)) {
-            $deviceCode = 'galactica x';
-        } elseif (preg_match('/StarGate/i', $useragent)) {
-            $deviceCode = 'stargate';
-        } elseif (preg_match('/Cat Tablet PHOENIX/i', $useragent)) {
-            $deviceCode = 'phoenix';
-        } elseif (preg_match('/Cat Tablet/i', $useragent)) {
-            $deviceCode = 'catsound tablet';
-        } elseif (preg_match('/Tablet\-PC\-4/i', $useragent)) {
-            $deviceCode = 'tablet pc 4';
-        } elseif (preg_match('/Kinder\-Tablet/i', $useragent)) {
-            $deviceCode = 'kinder-tablet';
+        if ($s->contains('CatNova8', false)) {
+            return $this->loader->load('cat nova 8', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('nova', false)) {
+            return $this->loader->load('nova', $useragent);
+        }
+
+        if ($s->contains('Cat Tablet Galactica X', false)) {
+            return $this->loader->load('galactica x', $useragent);
+        }
+
+        if ($s->contains('StarGate', false)) {
+            return $this->loader->load('stargate', $useragent);
+        }
+
+        if ($s->contains('Cat Tablet PHOENIX', false)) {
+            return $this->loader->load('phoenix', $useragent);
+        }
+
+        if ($s->contains('Cat Tablet', false)) {
+            return $this->loader->load('catsound tablet', $useragent);
+        }
+
+        return $this->loader->load('general catsound device', $useragent);
     }
 }

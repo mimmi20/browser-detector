@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class DnsFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -102,6 +105,16 @@ class DnsFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
+                'this is a fake ua to trigger the fallback',
+                'general DNS Device',
+                'general DNS Device',
+                'DNS',
+                'DNS',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
                 'Mozilla/5.0 (Linux; U; Android 4.1.2; ru; s4502 Build/JZO54K) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.6.3.413 U3/0.8.0 Mobile Safari/533.1',
                 'S4502',
                 'S4502',
@@ -140,6 +153,66 @@ class DnsFactoryTest extends \PHPUnit\Framework\TestCase
                 'Mobile Phone',
                 true,
                 'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; DNS S5701 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36 OPR/27.0.1698.89115',
+                'S5701',
+                'S5701',
+                'DNS',
+                'DNS',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.1; S4505M Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.138 Mobile Safari/537.36 OPR/22.0.1485.78487',
+                'S4505M',
+                'S4505M',
+                'DNS',
+                'DNS',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; S4505 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.38 Mobile Safari/537.36',
+                'S4505',
+                'S4505',
+                'DNS',
+                'DNS',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.1.2; ru; S4501M) U2/1.0.0 UCBrowser/10.1.1.570 U2/1.0.0 Mobile',
+                'S4501M',
+                'S4501M',
+                'DNS',
+                'DNS',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; DNS_S4008 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.39 Mobile Safari/537.36',
+                'S4008',
+                'S4008',
+                'DNS',
+                'DNS',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; MB40II1 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30',
+                'MB40II1',
+                'MB40II1',
+                'DNS',
+                'DNS',
+                'Desktop',
+                false,
+                'mouse',
             ],
         ];
     }

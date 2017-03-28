@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class SiemensFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general siemens device';
-
-        if (preg_match('/SL45i/', $useragent)) {
-            $deviceCode = 'sl45i';
-        } elseif (preg_match('/SIE\-S65/', $useragent)) {
-            $deviceCode = 's65';
+        if ($s->contains('SL45i', true)) {
+            return $this->loader->load('sl45i', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('SIE-S65', true)) {
+            return $this->loader->load('s65', $useragent);
+        }
+
+        return $this->loader->load('general siemens device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class BewatecFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general bewatec device';
-
-        if (preg_match('/MediPaD13/', $useragent)) {
-            $deviceCode = 'medipad 13';
-        } elseif (preg_match('/MediPaD/', $useragent)) {
-            $deviceCode = 'medipad';
+        if ($s->contains('MediPaD13', true)) {
+            return $this->loader->load('medipad 13', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('MediPaD', true)) {
+            return $this->loader->load('medipad', $useragent);
+        }
+
+        return $this->loader->load('general bewatec device', $useragent);
     }
 }

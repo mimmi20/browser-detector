@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,50 +47,85 @@ class XiaomiFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general xiaomi device';
-
-        if (preg_match('/MI MAX/', $useragent)) {
-            $deviceCode = 'mi max';
-        } elseif (preg_match('/MI 4W/', $useragent)) {
-            $deviceCode = 'mi 4w';
-        } elseif (preg_match('/MI 4LTE/', $useragent)) {
-            $deviceCode = 'mi 4 lte';
-        } elseif (preg_match('/MI 3W/', $useragent)) {
-            $deviceCode = 'mi 3w';
-        } elseif (preg_match('/(MI PAD|MiPad)/', $useragent)) {
-            $deviceCode = 'mi pad';
-        } elseif (preg_match('/MI 2A/', $useragent)) {
-            $deviceCode = 'mi 2a';
-        } elseif (preg_match('/MI 2/', $useragent)) {
-            $deviceCode = 'mi 2';
-        } elseif (preg_match('/Redmi 3S/', $useragent)) {
-            $deviceCode = 'redmi 3s';
-        } elseif (preg_match('/Redmi 3/', $useragent)) {
-            $deviceCode = 'redmi 3';
-        } elseif (preg_match('/Redmi_Note_3/', $useragent)) {
-            $deviceCode = 'redmi note 3';
-        } elseif (preg_match('/Redmi Note 2/', $useragent)) {
-            $deviceCode = 'redmi note 2';
-        } elseif (preg_match('/HM NOTE 1W/', $useragent)) {
-            $deviceCode = 'hm note 1w';
-        } elseif (preg_match('/HM NOTE 1S/', $useragent)) {
-            $deviceCode = 'hm note 1s';
-        } elseif (preg_match('/HM NOTE 1LTETD/', $useragent)) {
-            $deviceCode = 'hm note 1lte td';
-        } elseif (preg_match('/HM NOTE 1LTE/', $useragent)) {
-            $deviceCode = 'hm note 1lte';
-        } elseif (preg_match('/HM\_1SW/', $useragent)) {
-            $deviceCode = 'hm 1sw';
-        } elseif (preg_match('/HM 1SC/', $useragent)) {
-            $deviceCode = 'hm 1sc';
+        if ($s->contains('MI MAX', true)) {
+            return $this->loader->load('mi max', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('MI 4W', true)) {
+            return $this->loader->load('mi 4w', $useragent);
+        }
+
+        if ($s->contains('MI 4LTE', true)) {
+            return $this->loader->load('mi 4 lte', $useragent);
+        }
+
+        if ($s->contains('MI 3W', true)) {
+            return $this->loader->load('mi 3w', $useragent);
+        }
+
+        if ($s->containsAny(['MI PAD', 'MiPad'], true)) {
+            return $this->loader->load('mi pad', $useragent);
+        }
+
+        if ($s->contains('MI 2A', true)) {
+            return $this->loader->load('mi 2a', $useragent);
+        }
+
+        if ($s->contains('MI 2S', true)) {
+            return $this->loader->load('mi 2s', $useragent);
+        }
+
+        if ($s->contains('MI 2', true)) {
+            return $this->loader->load('mi 2', $useragent);
+        }
+
+        if ($s->contains('Redmi 3S', true)) {
+            return $this->loader->load('redmi 3s', $useragent);
+        }
+
+        if ($s->contains('Redmi 3', true)) {
+            return $this->loader->load('redmi 3', $useragent);
+        }
+
+        if ($s->contains('Redmi_Note_3', true)) {
+            return $this->loader->load('redmi note 3', $useragent);
+        }
+
+        if ($s->contains('Redmi Note 2', true)) {
+            return $this->loader->load('redmi note 2', $useragent);
+        }
+
+        if ($s->contains('HM NOTE 1W', true)) {
+            return $this->loader->load('hm note 1w', $useragent);
+        }
+
+        if ($s->contains('HM NOTE 1S', true)) {
+            return $this->loader->load('hm note 1s', $useragent);
+        }
+
+        if ($s->contains('HM NOTE 1LTETD', true)) {
+            return $this->loader->load('hm note 1lte td', $useragent);
+        }
+
+        if ($s->contains('HM NOTE 1LTE', true)) {
+            return $this->loader->load('hm note 1lte', $useragent);
+        }
+
+        if ($s->contains('HM_1SW', true)) {
+            return $this->loader->load('hm 1sw', $useragent);
+        }
+
+        if ($s->contains('HM 1SC', true)) {
+            return $this->loader->load('hm 1sc', $useragent);
+        }
+
+        return $this->loader->load('general xiaomi device', $useragent);
     }
 }

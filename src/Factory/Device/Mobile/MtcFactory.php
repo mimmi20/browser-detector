@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class MtcFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general mtc device';
-
-        if (preg_match('/SMART Run/', $useragent)) {
-            $deviceCode = 'smart run';
-        } elseif (preg_match('/982/', $useragent)) {
-            $deviceCode = '982';
+        if ($s->contains('SMART Run', true)) {
+            return $this->loader->load('smart run', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('982', true)) {
+            return $this->loader->load('982', $useragent);
+        }
+
+        return $this->loader->load('general mtc device', $useragent);
     }
 }

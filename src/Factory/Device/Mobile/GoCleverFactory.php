@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,34 +47,49 @@ class GoCleverFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general goclever device';
-
-        if (preg_match('/TQ700/', $useragent)) {
-            $deviceCode = 'tq700';
-        } elseif (preg_match('/TERRA\_101/', $useragent)) {
-            $deviceCode = 'a1021';
-        } elseif (preg_match('/INSIGNIA\_785\_PRO/', $useragent)) {
-            $deviceCode = 'insignia 785 pro';
-        } elseif (preg_match('/ARIES\_785/', $useragent)) {
-            $deviceCode = 'aries 785';
-        } elseif (preg_match('/ARIES\_101/', $useragent)) {
-            $deviceCode = 'aries 101';
-        } elseif (preg_match('/ORION7o/', $useragent)) {
-            $deviceCode = 'orion 7o';
-        } elseif (preg_match('/QUANTUM 4/', $useragent)) {
-            $deviceCode = 'quantum 4';
-        } elseif (preg_match('/QUANTUM_700m/', $useragent)) {
-            $deviceCode = 'quantum 700m';
-        } elseif (preg_match('/TAB A93\.2/', $useragent)) {
-            $deviceCode = 'a93.2';
+        if ($s->contains('TQ700', true)) {
+            return $this->loader->load('tq700', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('TERRA_101', true)) {
+            return $this->loader->load('a1021', $useragent);
+        }
+
+        if ($s->contains('INSIGNIA_785_PRO', true)) {
+            return $this->loader->load('insignia 785 pro', $useragent);
+        }
+
+        if ($s->contains('ARIES_785', true)) {
+            return $this->loader->load('aries 785', $useragent);
+        }
+
+        if ($s->contains('ARIES_101', true)) {
+            return $this->loader->load('aries 101', $useragent);
+        }
+
+        if ($s->contains('ORION7o', true)) {
+            return $this->loader->load('orion 7o', $useragent);
+        }
+
+        if ($s->contains('QUANTUM 4', true)) {
+            return $this->loader->load('quantum 4', $useragent);
+        }
+
+        if ($s->contains('QUANTUM_700m', true)) {
+            return $this->loader->load('quantum 700m', $useragent);
+        }
+
+        if ($s->contains('TAB A93.2', true)) {
+            return $this->loader->load('a93.2', $useragent);
+        }
+
+        return $this->loader->load('general goclever device', $useragent);
     }
 }

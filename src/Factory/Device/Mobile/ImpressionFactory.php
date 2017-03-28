@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class ImpressionFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general impression device';
-
-        if (preg_match('/impad 9708/i', $useragent)) {
-            $deviceCode = 'impad 9708';
-        } elseif (preg_match('/impad6213m\_v2/i', $useragent)) {
-            $deviceCode = 'impad 6213m v2';
-        } elseif (preg_match('/impad 0413/i', $useragent)) {
-            $deviceCode = 'impad 0413';
+        if ($s->contains('impad 9708', false)) {
+            return $this->loader->load('impad 9708', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('impad6213m_v2', false)) {
+            return $this->loader->load('impad 6213m v2', $useragent);
+        }
+
+        if ($s->contains('impad 0413', false)) {
+            return $this->loader->load('impad 0413', $useragent);
+        }
+
+        return $this->loader->load('general impression device', $useragent);
     }
 }

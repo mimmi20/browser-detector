@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class BlaupunktFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general blaupunkt device';
-
-        if (preg_match('/Atlantis 1010A/', $useragent)) {
-            $deviceCode = 'atlantis 1010a';
-        } elseif (preg_match('/Endeavour 101L/i', $useragent)) {
-            $deviceCode = 'endeavour 101l';
-        } elseif (preg_match('/Endeavour 1010/i', $useragent)) {
-            $deviceCode = 'endeavour 1010';
+        if ($s->contains('Atlantis 1010A', true)) {
+            return $this->loader->load('atlantis 1010a', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('Endeavour 101L', false)) {
+            return $this->loader->load('endeavour 101l', $useragent);
+        }
+
+        if ($s->contains('Endeavour 1010', false)) {
+            return $this->loader->load('endeavour 1010', $useragent);
+        }
+
+        return $this->loader->load('general blaupunkt device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,32 +47,45 @@ class DigmaFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general digma device';
-
-        if (preg_match('/PS1043MG/', $useragent)) {
-            $deviceCode = 'ps1043mg';
-        } elseif (preg_match('/TT7026MW/', $useragent)) {
-            $deviceCode = 'tt7026mw';
-        } elseif (preg_match('/iDxD7/', $useragent)) {
-            $deviceCode = 'idxd7 3g';
-        } elseif (preg_match('/iDxD4/', $useragent)) {
-            $deviceCode = 'idxd4 3g';
-        } elseif (preg_match('/iDsD7/', $useragent)) {
-            $deviceCode = 'idsd7 3g';
-        } elseif (preg_match('/iDnD7/', $useragent)) {
-            $deviceCode = 'idnd7';
-        } elseif (preg_match('/iDjD7/', $useragent)) {
-            $deviceCode = 'idjd7';
-        } elseif (preg_match('/iDrQ10/', $useragent)) {
-            $deviceCode = 'idrq10 3g';
+        if ($s->contains('PS1043MG', true)) {
+            return $this->loader->load('ps1043mg', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('TT7026MW', true)) {
+            return $this->loader->load('tt7026mw', $useragent);
+        }
+
+        if ($s->contains('iDxD7', true)) {
+            return $this->loader->load('idxd7 3g', $useragent);
+        }
+
+        if ($s->contains('iDxD4', true)) {
+            return $this->loader->load('idxd4 3g', $useragent);
+        }
+
+        if ($s->contains('iDsD7', true)) {
+            return $this->loader->load('idsd7 3g', $useragent);
+        }
+
+        if ($s->contains('iDnD7', true)) {
+            return $this->loader->load('idnd7', $useragent);
+        }
+
+        if ($s->contains('iDjD7', true)) {
+            return $this->loader->load('idjd7', $useragent);
+        }
+
+        if ($s->contains('iDrQ10', true)) {
+            return $this->loader->load('idrq10 3g', $useragent);
+        }
+
+        return $this->loader->load('general digma device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class KianoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general kiano device';
-
-        if (preg_match('/intelect7/i', $useragent)) {
-            $deviceCode = 'intelect 7 3g';
-        } elseif (preg_match('/elegance 8 3g/i', $useragent)) {
-            $deviceCode = 'elegance 8 3g';
-        } elseif (preg_match('/elegance/i', $useragent)) {
-            $deviceCode = 'elegance';
+        if ($s->contains('intelect7', false)) {
+            return $this->loader->load('intelect 7 3g', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('elegance 8 3g', false)) {
+            return $this->loader->load('elegance 8 3g', $useragent);
+        }
+
+        if ($s->contains('elegance', false)) {
+            return $this->loader->load('elegance', $useragent);
+        }
+
+        return $this->loader->load('general kiano device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,34 +47,49 @@ class DnsFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general dns device';
-
-        if (preg_match('/s5701/i', $useragent)) {
-            $deviceCode = 's5701';
-        } elseif (preg_match('/s4505m/i', $useragent)) {
-            $deviceCode = 's4505m';
-        } elseif (preg_match('/s4505/i', $useragent)) {
-            $deviceCode = 's4505';
-        } elseif (preg_match('/s4503q/i', $useragent)) {
-            $deviceCode = 's4503q';
-        } elseif (preg_match('/s4502m/i', $useragent)) {
-            $deviceCode = 's4502m';
-        } elseif (preg_match('/s4502/i', $useragent)) {
-            $deviceCode = 's4502';
-        } elseif (preg_match('/s4501m/i', $useragent)) {
-            $deviceCode = 's4501m';
-        } elseif (preg_match('/S4008/', $useragent)) {
-            $deviceCode = 's4008';
-        } elseif (preg_match('/MB40II1/', $useragent)) {
-            $deviceCode = 'mb40ii1';
+        if ($s->contains('s5701', false)) {
+            return $this->loader->load('s5701', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('s4505m', false)) {
+            return $this->loader->load('s4505m', $useragent);
+        }
+
+        if ($s->contains('s4505', false)) {
+            return $this->loader->load('s4505', $useragent);
+        }
+
+        if ($s->contains('s4503q', false)) {
+            return $this->loader->load('s4503q', $useragent);
+        }
+
+        if ($s->contains('s4502m', false)) {
+            return $this->loader->load('s4502m', $useragent);
+        }
+
+        if ($s->contains('s4502', false)) {
+            return $this->loader->load('s4502', $useragent);
+        }
+
+        if ($s->contains('s4501m', false)) {
+            return $this->loader->load('s4501m', $useragent);
+        }
+
+        if ($s->contains('S4008', true)) {
+            return $this->loader->load('s4008', $useragent);
+        }
+
+        if ($s->contains('MB40II1', true)) {
+            return $this->loader->load('mb40ii1', $useragent);
+        }
+
+        return $this->loader->load('general dns device', $useragent);
     }
 }

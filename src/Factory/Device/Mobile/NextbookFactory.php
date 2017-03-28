@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class NextbookFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general nextbook device';
-
-        if (preg_match('/NEXT/', $useragent)) {
-            $deviceCode = 'next';
-        } elseif (preg_match('/DATAM803HC/', $useragent)) {
-            $deviceCode = 'm803hc';
+        if ($s->contains('NEXT', true)) {
+            return $this->loader->load('next', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('DATAM803HC', true)) {
+            return $this->loader->load('m803hc', $useragent);
+        }
+
+        return $this->loader->load('general nextbook device', $useragent);
     }
 }

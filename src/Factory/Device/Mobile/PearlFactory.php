@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class PearlFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general pearl device';
-
-        if (preg_match('/X10\.Dual\+/', $useragent)) {
-            $deviceCode = 'x10+';
-        } elseif (preg_match('/X10\.Dual/', $useragent)) {
-            $deviceCode = 'x10';
-        } elseif (preg_match('/X7G/', $useragent)) {
-            $deviceCode = 'touchlet x7g';
+        if ($s->contains('X10.Dual+', true)) {
+            return $this->loader->load('x10+', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('X10.Dual', true)) {
+            return $this->loader->load('x10', $useragent);
+        }
+
+        if ($s->contains('X7G', true)) {
+            return $this->loader->load('touchlet x7g', $useragent);
+        }
+
+        return $this->loader->load('general pearl device', $useragent);
     }
 }

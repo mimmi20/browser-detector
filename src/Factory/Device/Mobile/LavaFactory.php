@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class LavaFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general lava device';
-
-        if (preg_match('/Spark284/', $useragent)) {
-            $deviceCode = 'spark 284';
-        } elseif (preg_match('/KKT20/', $useragent)) {
-            $deviceCode = 'kkt20';
+        if ($s->contains('Spark284', true)) {
+            return $this->loader->load('spark 284', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('KKT20', true)) {
+            return $this->loader->load('kkt20', $useragent);
+        }
+
+        return $this->loader->load('general lava device', $useragent);
     }
 }

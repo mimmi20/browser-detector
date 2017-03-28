@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,25 @@ class WexlerFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general wexler device';
-
-        if (preg_match('/TAB A742/', $useragent)) {
-            $deviceCode = 'wexler tab a742';
-        } elseif (preg_match('/TAB\-7T/', $useragent)) {
-            $deviceCode = 'tab 7t';
-        } elseif (preg_match('/TAB7iD/', $useragent)) {
-            $deviceCode = 'tab7id';
+        if ($s->contains('TAB A742', true)) {
+            return $this->loader->load('wexler tab a742', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('TAB-7T', true)) {
+            return $this->loader->load('tab 7t', $useragent);
+        }
+
+        if ($s->contains('TAB7iD', true)) {
+            return $this->loader->load('tab7id', $useragent);
+        }
+
+        return $this->loader->load('general wexler device', $useragent);
     }
 }

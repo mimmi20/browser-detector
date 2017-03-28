@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,32 +47,45 @@ class MobistelFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general mobistel device';
-
-        if (preg_match('/cynus t6/i', $useragent)) {
-            $deviceCode = 'cynus t6';
-        } elseif (preg_match('/cynus t5/i', $useragent)) {
-            $deviceCode = 'cynus t5';
-        } elseif (preg_match('/cynus t2/i', $useragent)) {
-            $deviceCode = 'cynus t2';
-        } elseif (preg_match('/cynus t1/i', $useragent)) {
-            $deviceCode = 'cynus t1';
-        } elseif (preg_match('/cynus f5/i', $useragent)) {
-            $deviceCode = 'cynus f5';
-        } elseif (preg_match('/cynus f4/i', $useragent)) {
-            $deviceCode = 'mt-7521s';
-        } elseif (preg_match('/cynus f3/i', $useragent)) {
-            $deviceCode = 'cynus f3';
-        } elseif (preg_match('/cynus e1/i', $useragent)) {
-            $deviceCode = 'cynus e1';
+        if ($s->contains('cynus t6', false)) {
+            return $this->loader->load('cynus t6', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('cynus t5', false)) {
+            return $this->loader->load('cynus t5', $useragent);
+        }
+
+        if ($s->contains('cynus t2', false)) {
+            return $this->loader->load('cynus t2', $useragent);
+        }
+
+        if ($s->contains('cynus t1', false)) {
+            return $this->loader->load('cynus t1', $useragent);
+        }
+
+        if ($s->contains('cynus f5', false)) {
+            return $this->loader->load('cynus f5', $useragent);
+        }
+
+        if ($s->contains('cynus f4', false)) {
+            return $this->loader->load('mt-7521s', $useragent);
+        }
+
+        if ($s->contains('cynus f3', false)) {
+            return $this->loader->load('cynus f3', $useragent);
+        }
+
+        if ($s->contains('cynus e1', false)) {
+            return $this->loader->load('cynus e1', $useragent);
+        }
+
+        return $this->loader->load('general mobistel device', $useragent);
     }
 }

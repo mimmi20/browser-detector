@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class DoCoMoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general docomo device';
-
-        if (preg_match('/P905i/i', $useragent)) {
-            $deviceCode = 'p905i';
-        } elseif (preg_match('/P900i/i', $useragent)) {
-            $deviceCode = 'p900i';
+        if ($s->contains('P905i', false)) {
+            return $this->loader->load('p905i', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('P900i', false)) {
+            return $this->loader->load('p900i', $useragent);
+        }
+
+        return $this->loader->load('general docomo device', $useragent);
     }
 }

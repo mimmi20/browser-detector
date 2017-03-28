@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,34 +47,49 @@ class HpFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general hp device';
-
-        if (preg_match('/ipaqhw6900/i', $useragent)) {
-            $deviceCode = 'ipaq 6900';
-        } elseif (preg_match('/slate 17/i', $useragent)) {
-            $deviceCode = 'slate 17';
-        } elseif (preg_match('/slate 10 hd/i', $useragent)) {
-            $deviceCode = 'slate 10';
-        } elseif (preg_match('/(touchpad|cm\_tenderloin)/i', $useragent)) {
-            $deviceCode = 'touchpad';
-        } elseif (preg_match('/palm\-d050/i', $useragent)) {
-            $deviceCode = 'tx';
-        } elseif (preg_match('/pre\//i', $useragent)) {
-            $deviceCode = 'pre';
-        } elseif (preg_match('/pixi\//i', $useragent)) {
-            $deviceCode = 'pixi';
-        } elseif (preg_match('/blazer/i', $useragent)) {
-            $deviceCode = 'blazer';
-        } elseif (preg_match('/p160u/i', $useragent)) {
-            $deviceCode = 'p160u';
+        if ($s->contains('ipaqhw6900', false)) {
+            return $this->loader->load('ipaq 6900', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('slate 17', false)) {
+            return $this->loader->load('slate 17', $useragent);
+        }
+
+        if ($s->contains('slate 10 hd', false)) {
+            return $this->loader->load('slate 10', $useragent);
+        }
+
+        if ($s->containsAny(['touchpad', 'cm_tenderloin'], false)) {
+            return $this->loader->load('touchpad', $useragent);
+        }
+
+        if ($s->contains('palm-d050', false)) {
+            return $this->loader->load('tx', $useragent);
+        }
+
+        if ($s->contains('pre/', false)) {
+            return $this->loader->load('pre', $useragent);
+        }
+
+        if ($s->contains('pixi/', false)) {
+            return $this->loader->load('pixi', $useragent);
+        }
+
+        if ($s->contains('blazer', false)) {
+            return $this->loader->load('blazer', $useragent);
+        }
+
+        if ($s->contains('p160u', false)) {
+            return $this->loader->load('p160u', $useragent);
+        }
+
+        return $this->loader->load('general hp device', $useragent);
     }
 }

@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,28 +47,37 @@ class PointOfViewFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general point of view device';
-
-        if (preg_match('/TAB\-PROTAB25/', $useragent)) {
-            $deviceCode = 'protab 25';
-        } elseif (preg_match('/TAB\-PROTAB30/', $useragent)) {
-            $deviceCode = 'protab 3 xxl';
-        } elseif (preg_match('/tab\-protab2xxl/i', $useragent)) {
-            $deviceCode = 'protab 2 xxl';
-        } elseif (preg_match('/TAB\-PROTAB2XL/', $useragent)) {
-            $deviceCode = 'protab 2 xl';
-        } elseif (preg_match('/TAB\-PROTAB2\-IPS/', $useragent)) {
-            $deviceCode = 'protab 2 ips';
-        } elseif (preg_match('/PI1045/', $useragent)) {
-            $deviceCode = 'pi1045';
+        if ($s->contains('TAB-PROTAB25', true)) {
+            return $this->loader->load('protab 25', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('TAB-PROTAB30', true)) {
+            return $this->loader->load('protab 3 xxl', $useragent);
+        }
+
+        if ($s->contains('tab-protab2xxl', false)) {
+            return $this->loader->load('protab 2 xxl', $useragent);
+        }
+
+        if ($s->contains('TAB-PROTAB2XL', true)) {
+            return $this->loader->load('protab 2 xl', $useragent);
+        }
+
+        if ($s->contains('TAB-PROTAB2-IPS', true)) {
+            return $this->loader->load('protab 2 ips', $useragent);
+        }
+
+        if ($s->contains('PI1045', true)) {
+            return $this->loader->load('pi1045', $useragent);
+        }
+
+        return $this->loader->load('general point of view device', $useragent);
     }
 }

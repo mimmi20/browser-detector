@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,38 +47,57 @@ class MicromaxFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general micromax device';
-
-        if (preg_match('/X650/i', $useragent)) {
-            $deviceCode = 'x650';
-        } elseif (preg_match('/A120/i', $useragent)) {
-            $deviceCode = 'a120';
-        } elseif (preg_match('/A116/i', $useragent)) {
-            $deviceCode = 'a116';
-        } elseif (preg_match('/A114/i', $useragent)) {
-            $deviceCode = 'a114';
-        } elseif (preg_match('/A101/i', $useragent)) {
-            $deviceCode = 'micromax a101';
-        } elseif (preg_match('/A093/i', $useragent)) {
-            $deviceCode = 'a093';
-        } elseif (preg_match('/A065/i', $useragent)) {
-            $deviceCode = 'a065';
-        } elseif (preg_match('/A59/i', $useragent)) {
-            $deviceCode = 'a59';
-        } elseif (preg_match('/A40/i', $useragent)) {
-            $deviceCode = 'a40';
-        } elseif (preg_match('/A35/i', $useragent)) {
-            $deviceCode = 'a35';
-        } elseif (preg_match('/A27/i', $useragent)) {
-            $deviceCode = 'a27';
+        if ($s->contains('A120', false)) {
+            return $this->loader->load('a120', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('A116', false)) {
+            return $this->loader->load('a116', $useragent);
+        }
+
+        if ($s->contains('A114', false)) {
+            return $this->loader->load('a114', $useragent);
+        }
+
+        if ($s->contains('A101', false)) {
+            return $this->loader->load('micromax a101', $useragent);
+        }
+
+        if ($s->contains('A093', false)) {
+            return $this->loader->load('a093', $useragent);
+        }
+
+        if ($s->contains('A065', false)) {
+            return $this->loader->load('a065', $useragent);
+        }
+
+        if ($s->contains('A59', false)) {
+            return $this->loader->load('a59', $useragent);
+        }
+
+        if ($s->contains('A40', false)) {
+            return $this->loader->load('a40', $useragent);
+        }
+
+        if ($s->contains('A35', false)) {
+            return $this->loader->load('a35', $useragent);
+        }
+
+        if ($s->contains('A27', false)) {
+            return $this->loader->load('a27', $useragent);
+        }
+
+        if ($s->contains('X650', false)) {
+            return $this->loader->load('x650', $useragent);
+        }
+
+        return $this->loader->load('general micromax device', $useragent);
     }
 }

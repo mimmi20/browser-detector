@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class CreativeFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general creative device';
-
-        if (preg_match('/ZiiO10/i', $useragent)) {
-            $deviceCode = 'ziio 10';
-        } elseif (preg_match('/ZiiO7/i', $useragent)) {
-            $deviceCode = 'ziio7';
+        if ($s->contains('ZiiO10', false)) {
+            return $this->loader->load('ziio 10', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('ZiiO7', false)) {
+            return $this->loader->load('ziio7', $useragent);
+        }
+
+        return $this->loader->load('general creative device', $useragent);
     }
 }

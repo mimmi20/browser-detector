@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class NomiFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general nomi device';
-
-        if (preg_match('/C07000/', $useragent)) {
-            $deviceCode = 'c07000';
-        } elseif (preg_match('/A10100/', $useragent)) {
-            $deviceCode = 'a10100';
+        if ($s->contains('C07000', true)) {
+            return $this->loader->load('c07000', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('A10100', true)) {
+            return $this->loader->load('a10100', $useragent);
+        }
+
+        return $this->loader->load('general nomi device', $useragent);
     }
 }

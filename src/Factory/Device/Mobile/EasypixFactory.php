@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class EasypixFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general easypix device';
-
-        if (preg_match('/junior 4\.0/i', $useragent)) {
-            $deviceCode = 'junior 4.0';
-        } elseif (preg_match('/easypad 970/i', $useragent)) {
-            $deviceCode = 'easypad 970';
+        if ($s->contains('junior 4.0', false)) {
+            return $this->loader->load('junior 4.0', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('easypad 970', false)) {
+            return $this->loader->load('easypad 970', $useragent);
+        }
+
+        return $this->loader->load('general easypix device', $useragent);
     }
 }

@@ -16,6 +16,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -53,8 +54,10 @@ class ToshibaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent);
+        list($result) = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -102,6 +105,16 @@ class ToshibaFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
+                'this is a fake ua to trigger the fallback',
+                'general Toshiba Device',
+                'general Toshiba Device',
+                'Toshiba',
+                'Toshiba',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
                 'Opera/9.80 (X11; Linux i686; ADR-1102051633; U; TSB_CLOUD_COMPANION;TOSHIBA_AC_AND_AZ; de) Presto/2.5.28 Version/10.1',
                 'Folio 100',
                 'Folio 100',
@@ -115,6 +128,76 @@ class ToshibaFactoryTest extends \PHPUnit\Framework\TestCase
                 'Mozilla/5.0 (Linux; Android 4.1.1; AT300SE Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
                 'AT300SE',
                 'Regza AT300SE',
+                'Toshiba',
+                'Toshiba',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba-TG01-orange/ 02/ PPC; 480x800',
+                'TG01',
+                'TG01',
+                'Toshiba',
+                'Toshiba',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux;U;Linux2.6; de-de; TSB_CLOUD_COMPANION;FOLIO_AND_A) AppleWebKit/533.1 (KHTML,like Gecko) Version/4.0 Safari/533.1',
+                'Folio 100',
+                'Folio 100',
+                'Toshiba',
+                'Toshiba',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.0.3; folio100 Build/HTJ85B) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Safari/537.31 OPR/14.0.1074.58201',
+                'Folio 100',
+                'Folio 100',
+                'Toshiba',
+                'Toshiba',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; AT300 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'AT300',
+                'Regza AT300',
+                'Toshiba',
+                'Toshiba',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.0.3; AT200 Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36',
+                'AT200',
+                'Excite AT200',
+                'Toshiba',
+                'Toshiba',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.0.4; AT100 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Safari/537.36',
+                'AT100',
+                'AT100',
+                'Toshiba',
+                'Toshiba',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.1; AT10-A Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
+                'AT10-A',
+                'eXcite Pure',
                 'Toshiba',
                 'Toshiba',
                 'Tablet',

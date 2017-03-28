@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,24 +47,29 @@ class OvermaxFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general overmax device';
-
-        if (preg_match('/SteelCore\-B/', $useragent)) {
-            $deviceCode = 'steelcore';
-        } elseif (preg_match('/Solution 10II/', $useragent)) {
-            $deviceCode = 'solution 10 ii 3g';
-        } elseif (preg_match('/Solution 7III/', $useragent)) {
-            $deviceCode = 'solution 7 iii';
-        } elseif (preg_match('/Quattor 10\+/', $useragent)) {
-            $deviceCode = 'quattor 10+';
+        if ($s->contains('SteelCore-B', true)) {
+            return $this->loader->load('steelcore', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('Solution 10II', true)) {
+            return $this->loader->load('solution 10 ii 3g', $useragent);
+        }
+
+        if ($s->contains('Solution 7III', true)) {
+            return $this->loader->load('solution 7 iii', $useragent);
+        }
+
+        if ($s->contains('Quattor 10+', true)) {
+            return $this->loader->load('quattor 10+', $useragent);
+        }
+
+        return $this->loader->load('general overmax device', $useragent);
     }
 }

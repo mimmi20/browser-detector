@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class LencoFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general lenco device';
-
-        if (preg_match('/cooltab\-70/i', $useragent)) {
-            $deviceCode = 'cooltab-70';
-        } elseif (preg_match('/lencm900hz/i', $useragent)) {
-            $deviceCode = 'cm900hz';
+        if ($s->contains('cooltab-70', false)) {
+            return $this->loader->load('cooltab-70', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('lencm900hz', false)) {
+            return $this->loader->load('cm900hz', $useragent);
+        }
+
+        return $this->loader->load('general lenco device', $useragent);
     }
 }

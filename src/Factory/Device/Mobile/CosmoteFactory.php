@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class CosmoteFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general cosmote device';
-
-        if (preg_match('/xplore/i', $useragent)) {
-            $deviceCode = 'xplore';
-        } elseif (preg_match('/my_mini_tablet/i', $useragent)) {
-            $deviceCode = 'my mini tablet';
+        if ($s->contains('xplore', false)) {
+            return $this->loader->load('xplore', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('my_mini_tablet', false)) {
+            return $this->loader->load('my mini tablet', $useragent);
+        }
+
+        return $this->loader->load('general cosmote device', $useragent);
     }
 }

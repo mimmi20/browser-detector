@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,24 +47,29 @@ class ExplayFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general explay device';
-
-        if (preg_match('/surfer 7\.34/i', $useragent)) {
-            $deviceCode = 'surfer 7.34 3g';
-        } elseif (preg_match('/m1\_plus/i', $useragent)) {
-            $deviceCode = 'm1 plus';
-        } elseif (preg_match('/d7\.2 3g/i', $useragent)) {
-            $deviceCode = 'd7.2 3g';
-        } elseif (preg_match('/art 3g/i', $useragent)) {
-            $deviceCode = 'art 3g';
+        if ($s->contains('surfer 7.34', false)) {
+            return $this->loader->load('surfer 7.34 3g', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('m1_plus', false)) {
+            return $this->loader->load('m1 plus', $useragent);
+        }
+
+        if ($s->contains('d7.2 3g', false)) {
+            return $this->loader->load('d7.2 3g', $useragent);
+        }
+
+        if ($s->contains('art 3g', false)) {
+            return $this->loader->load('art 3g', $useragent);
+        }
+
+        return $this->loader->load('general explay device', $useragent);
     }
 }

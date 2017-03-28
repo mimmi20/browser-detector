@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class KyoceraFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general kyocera device';
-
-        if (preg_match('/KC\-S701/', $useragent)) {
-            $deviceCode = 'kc-s701';
-        } elseif (preg_match('/DM015K/', $useragent)) {
-            $deviceCode = 'dm015k';
+        if ($s->contains('KC-S701', true)) {
+            return $this->loader->load('kc-s701', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('DM015K', true)) {
+            return $this->loader->load('dm015k', $useragent);
+        }
+
+        return $this->loader->load('general kyocera device', $useragent);
     }
 }

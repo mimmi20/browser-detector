@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,20 +47,21 @@ class SprintFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general sprint device';
-
-        if (preg_match('/PPC\-6700/', $useragent)) {
-            $deviceCode = '6700';
-        } elseif (preg_match('/APA9292KT/', $useragent)) {
-            $deviceCode = 'sprint 9292';
+        if ($s->contains('PPC-6700', true)) {
+            return $this->loader->load('6700', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->contains('APA9292KT', true)) {
+            return $this->loader->load('sprint 9292', $useragent);
+        }
+
+        return $this->loader->load('general sprint device', $useragent);
     }
 }

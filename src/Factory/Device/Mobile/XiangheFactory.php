@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory\Device\Mobile;
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Stringy\Stringy;
 
 /**
  * @category  BrowserDetector
@@ -46,24 +47,29 @@ class XiangheFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general xianghe device';
-
-        if (preg_match('/iphone[ ]?6c/i', $useragent)) {
-            $deviceCode = 'iphone 6c';
-        } elseif (preg_match('/iphone[ ]?5c/i', $useragent)) {
-            $deviceCode = 'iphone 5c';
-        } elseif (preg_match('/iphone[ ]?5/i', $useragent)) {
-            $deviceCode = 'iphone 5';
-        } elseif (preg_match('/iphone/i', $useragent)) {
-            $deviceCode = 'xianghe iphone';
+        if ($s->containsAny(['iphone 6c', 'iphone6c'], false)) {
+            return $this->loader->load('iphone 6c', $useragent);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->containsAny(['iphone 5c', 'iphone5c'], false)) {
+            return $this->loader->load('iphone 5c', $useragent);
+        }
+
+        if ($s->containsAny(['iphone 5', 'iphone5'], false)) {
+            return $this->loader->load('iphone 5', $useragent);
+        }
+
+        if ($s->contains('iphone', false)) {
+            return $this->loader->load('xianghe iphone', $useragent);
+        }
+
+        return $this->loader->load('general xianghe device', $useragent);
     }
 }
