@@ -154,6 +154,26 @@ class TriQFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.3; en-US; QS0716D Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30',
+                'QS0716D',
+                'Q-pad',
+                '3Q',
+                '3Q',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0(Linux; U; Android 4.2.2; en-us; MT0812E Build/JDQ39) AppleWebKit/534.30 (KHTML, Like Gescko) Version/4.0 Mobile Safari/534.30',
+                'MT0812E',
+                'MT0812E',
+                '3Q',
+                '3Q',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

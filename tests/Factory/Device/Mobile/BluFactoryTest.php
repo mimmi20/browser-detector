@@ -174,6 +174,26 @@ class BluFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; VIVO IV Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36',
+                'Vivo IV',
+                'Vivo IV',
+                'BLU',
+                'BLU',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0(Linux;U;Android 4.2.2;en-us;BLU Studio 5.0 S II Build/JDQ39)AppleWebKit/534.30(KHTML,like Gecko)Version/4.0 Mobile Safari/534.30',
+                'Studio 5.0 S II',
+                'Studio 5.0 S II',
+                'BLU',
+                'BLU',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

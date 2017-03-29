@@ -144,6 +144,26 @@ class PantechFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'OneBrowser/3.1 (PantechP2020/JIUS10032011)',
+                'P2020',
+                'P2020',
+                'Pantech',
+                'Pantech',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.0.3; IM-A830L Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
+                'IM-A830L',
+                'Vega Racer 2',
+                'Pantech',
+                'Pantech',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

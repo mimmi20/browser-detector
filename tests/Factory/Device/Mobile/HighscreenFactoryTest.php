@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\NecFactory;
+use BrowserDetector\Factory\Device\Mobile\HighscreenFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class NecFactoryTest extends \PHPUnit\Framework\TestCase
+class HighscreenFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\NecFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\HighscreenFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class NecFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new NecFactory($cache, $loader);
+        $this->object = new HighscreenFactory($cache, $loader);
     }
 
     /**
@@ -106,53 +106,63 @@ class NecFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general NEC Device',
-                'general NEC Device',
-                'NEC',
-                'NEC',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; N-06E Build/A1002301) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16',
-                'N-06E',
-                'Medias X',
-                'NEC',
-                'NTT DoCoMo',
+                'general Highscreen Device',
+                'general Highscreen Device',
+                'Highscreen',
+                'Highscreen',
                 'Mobile Phone',
                 true,
                 'touchscreen',
             ],
             [
-                'DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)',
-                'N905i',
-                'N905i',
-                'NEC',
-                'NEC',
+                'Mozilla/5.0 (Linux; Android 5.0; Zera F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36',
+                'Zera F',
+                'Zera F',
+                'Highscreen',
+                'Highscreen',
                 'Mobile Phone',
-                false,
-                null,
-            ],
-            [
-                'DoCoMo/2.0 N705i(c100;TB;W24H16)',
-                'N705i',
-                'N705i',
-                'NEC',
-                'NEC',
-                'Mobile Phone',
-                false,
+                true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0(Linux;U; Android 4.0.4; en-us;NEC-0912 Build/A8212300)AppleWebKit/534.30(KHTML, Like Gecko)Version/4.0 Mobile Safari/534.30',
-                '0912',
-                'NEC Casio N-02E',
-                'NEC',
-                'NTT DoCoMo',
+                'Mozilla/5.0 (Linux; U; Android 4.3; ru-; Prime S Build/JLS36C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 AMIGOAPP CHANNEL_normal_install UUID_483e756496b4f3d1680bea9db00d4f04',
+                'Omega Prime S',
+                'Omega Prime S',
+                'Highscreen',
+                'Highscreen',
                 'Mobile Phone',
-                false,
-                null,
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; Ice2 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/32.0.0.23.15;]',
+                'ICE 2',
+                'ICE 2',
+                'Highscreen',
+                'Highscreen',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.2; Explosion Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36 OPR/27.0.1698.89115',
+                'Explosion',
+                'Explosion',
+                'Highscreen',
+                'Highscreen',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.3; Boost IIse Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Mobile Safari/537.36',
+                'Boost II SE',
+                'Boost II SE',
+                'Highscreen',
+                'Highscreen',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
         ];
     }

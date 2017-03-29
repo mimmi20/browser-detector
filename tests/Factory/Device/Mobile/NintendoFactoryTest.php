@@ -134,6 +134,36 @@ class NintendoFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'mouse',
             ],
+            [
+                'Opera/9.30 (Nintendo Wii; U; ; 3642; de)',
+                'Wii',
+                'Wii',
+                'Nintendo',
+                'Nintendo',
+                'TV Device',
+                false,
+                'mouse',
+            ],
+            [
+                'Internet ScreenBrowser 3.0 (Nintendo Wii; WiiOS 3.4)',
+                'Wii',
+                'Wii',
+                'Nintendo',
+                'Nintendo',
+                'TV Device',
+                false,
+                'mouse',
+            ],
+            [
+                'Opera/9.50 (Nintendo DSi; Opera/507; U; de)',
+                'DSi',
+                'DSi',
+                'Nintendo',
+                'Nintendo',
+                'Mobile Phone',
+                false,
+                null,
+            ],
         ];
     }
 }

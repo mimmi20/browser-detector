@@ -198,6 +198,7 @@ class MobileDevice
             'lumia',
             'surftab',
             'folio_and_a',
+            'docomo',
         ];
 
         if ($s->containsAny($mobiles, false)) {
