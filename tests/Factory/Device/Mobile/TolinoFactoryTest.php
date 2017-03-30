@@ -134,6 +134,26 @@ class TolinoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; tolino tab 7 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'Tab 7',
+                'Tab 7',
+                'TrekStor',
+                'Tolino',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.4; de-;tolino shine/1.7.3) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 BROWSER OS_BUILD/1115',
+                'Tolino Shine',
+                'Tolino Shine',
+                'Longshine',
+                'Weltbild',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

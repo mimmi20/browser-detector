@@ -124,6 +124,36 @@ class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.2; en-US; Surfer 7.34 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.1.0.527 U3/0.8.0 Mobile Safari/534.30',
+                'Surfer 7.34 3G',
+                'Surfer 7.34 3G',
+                'Explay',
+                'Explay',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; M1_Plus Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30',
+                'M1 Plus',
+                'M1 Plus',
+                'Explay',
+                'Explay',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; D7.2 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Mobile Safari/537.36',
+                'D7.2 3G',
+                'D7.2 3G',
+                'Explay',
+                'Explay',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

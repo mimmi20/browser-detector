@@ -54,7 +54,7 @@ class HighscreenFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('Zera[ _]F', true)) {
+        if ($s->containsAny(['Zera F', 'Zera_F'], true)) {
             return $this->loader->load('zera f', $useragent);
         }
 

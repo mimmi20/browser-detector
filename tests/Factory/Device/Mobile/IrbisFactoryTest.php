@@ -134,6 +134,36 @@ class IrbisFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; TX68 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36',
+                'TX68',
+                'TX68',
+                'Irbis',
+                'Irbis',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; TX17 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36',
+                'TX17',
+                'TX17',
+                'Irbis',
+                'Irbis',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.1; en-US; TG97 Build/JOP40D[20131017.121449]) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30',
+                'TG97',
+                'TG97',
+                'Irbis',
+                'Irbis',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

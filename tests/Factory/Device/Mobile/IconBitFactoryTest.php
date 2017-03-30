@@ -134,6 +134,36 @@ class IconBitFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; NT-3710S Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Safari/537.36',
+                'NT-3710S',
+                'NetTAB SKY 3G Plus',
+                'iconBIT',
+                'iconBIT',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; NT-3601P/3602P Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
+                'NetTAB Pocket 3G',
+                'NetTAB Pocket 3G',
+                'iconBIT',
+                'iconBIT',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; NT-1001T Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'NT-1001T',
+                'THOR LE',
+                'iconBIT',
+                'iconBIT',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

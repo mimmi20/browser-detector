@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\NecFactory;
+use BrowserDetector\Factory\Device\Mobile\PointOfViewFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class NecFactoryTest extends \PHPUnit\Framework\TestCase
+class PointOfViewFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\NecFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\PointOfViewFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class NecFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new NecFactory($cache, $loader);
+        $this->object = new PointOfViewFactory($cache, $loader);
     }
 
     /**
@@ -106,53 +106,73 @@ class NecFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general NEC Device',
-                'general NEC Device',
-                'NEC',
-                'NEC',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; N-06E Build/A1002301) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16',
-                'N-06E',
-                'Medias X',
-                'NEC',
-                'NTT DoCoMo',
-                'Mobile Phone',
+                'general Point of View Device',
+                'general Point of View Device',
+                'Point of View',
+                'Point of View',
+                'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)',
-                'N905i',
-                'N905i',
-                'NEC',
-                'NEC',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-            [
-                'DoCoMo/2.0 N705i(c100;TB;W24H16)',
-                'N705i',
-                'N705i',
-                'NEC',
-                'NEC',
-                'Mobile Phone',
-                false,
+                'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; POV_TAB-PROTAB25 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'Protab 25',
+                'Protab 2 XL',
+                'Point of View',
+                'Point of View',
+                'Tablet',
+                true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0(Linux;U; Android 4.0.4; en-us;NEC-0912 Build/A8212300)AppleWebKit/534.30(KHTML, Like Gecko)Version/4.0 Mobile Safari/534.30',
-                '0912',
-                'NEC Casio N-02E',
-                'NEC',
-                'NTT DoCoMo',
-                'Mobile Phone',
-                false,
-                null,
+                'Mozilla/5.0 (Linux; Android 4.1.1; POV_TAB-PROTAB30-IPS10 Build/JRO03H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36',
+                'Protab 3 XXL',
+                'Protab 3 XXL',
+                'Point of View',
+                'Point of View',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 2.3.4; TAB-PROTAB2XXL Build/GRJ22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.63 Safari/537.36 OPR/15.0.1162.60015',
+                'Protab 2 XXL',
+                'Protab 2 XXL',
+                'Point of View',
+                'Point of View',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.3; de-de; TAB-PROTAB2XL Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'Protab 2 XL',
+                'Protab 2 XL',
+                'Point of View',
+                'Point of View',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.0.3; TAB-PROTAB2-IPS9 Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19',
+                'Protab 2 IPS',
+                'Protab 2 IPS',
+                'Point of View',
+                'Point of View',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.1; ru-ru; POV_TAB-PI1045 Build/MASTER) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'PI1045',
+                'Mobii 1045',
+                'Point of View',
+                'Point of View',
+                'Tablet',
+                true,
+                'touchscreen',
             ],
         ];
     }

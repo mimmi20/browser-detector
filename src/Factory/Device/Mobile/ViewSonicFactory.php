@@ -66,7 +66,7 @@ class ViewSonicFactory implements Factory\FactoryInterface
             return $this->loader->load('viewpad 7e', $useragent);
         }
 
-        if ($s->contains('(viewpad7|viewpad-7)', false)) {
+        if ($s->containsAny(['viewpad7', 'viewpad-7'], false)) {
             return $this->loader->load('viewpad7', $useragent);
         }
 

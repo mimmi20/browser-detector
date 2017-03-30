@@ -328,7 +328,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\OdysFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['nec', 'n905i'], false) && !$s->contains('fennec', false)) {
+        if ($s->contains('nec', false) && !$s->contains('fennec', false)) {
             return (new Mobile\NecFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -342,6 +342,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if (preg_match('/SH\-?\d{2,4}(C|D|F|U)/', $useragent)) {
             return (new Mobile\SharpFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['n-06e', 'n905i', 'n705i'], false)) {
+            return (new Mobile\NecFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if ($s->containsAny(['docomo', 'p900i'], false)) {
@@ -687,10 +691,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\GzoneFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('N-06E', true)) {
-            return (new Mobile\NecFactory($this->cache, $this->loader))->detect($useragent, $s);
-        }
-
         if (preg_match('/(A|C)\d{5}/', $useragent)) {
             return (new Mobile\NomiFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
@@ -719,7 +719,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ZekiFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(AC0732C|RC9724C|MT0739D|QS0716D|LC0720C)/', $useragent)) {
+        if (preg_match('/(AC0732C|RC9724C|MT0739D|QS0716D|LC0720C|MT0812E)/', $useragent)) {
             return (new Mobile\TriQFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -833,6 +833,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('wiko', false)) {
             return (new Mobile\WikoFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('VIVO IV', true)) {
+            return (new Mobile\BluFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('vivo', false)) {
@@ -1483,10 +1487,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SonyFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('VIVO', true)) {
-            return (new Mobile\BluFactory($this->cache, $this->loader))->detect($useragent, $s);
-        }
-
         if ($s->contains('NOOK', true)) {
             return (new Mobile\BarnesNobleFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
@@ -1575,7 +1575,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PearlFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('POV', true)) {
+        if ($s->containsAny(['POV', 'TAB-PROTAB'], true)) {
             return (new Mobile\PointOfViewFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1667,7 +1667,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LgFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Zera_F', 'Boost IIse', 'Ice2', 'Prime S', 'Explosion'], true)) {
+        if ($s->containsAny(['zera f', 'zera_f', 'boost iise', 'ice2', 'prime s', 'explosion'], false)) {
             return (new Mobile\HighscreenFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
