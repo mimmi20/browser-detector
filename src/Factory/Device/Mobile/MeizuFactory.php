@@ -62,7 +62,7 @@ class MeizuFactory implements Factory\FactoryInterface
             return $this->loader->load('m040', $useragent);
         }
 
-        if ($s->contains('(meizu_m9| m9 )', false)) {
+        if ($s->containsAny(['meizu_m9', ' m9 '], false)) {
             return $this->loader->load('meizu m9', $useragent);
         }
 

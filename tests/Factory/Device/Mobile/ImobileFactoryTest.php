@@ -134,6 +134,16 @@ class ImobileFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; i-mobile i-STYLE 7.7 DTV Build/i_style_7_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.81 Mobile Safari/537.36 OPR/28.0.1764.90386',
+                'i-Style 7.7 DTV',
+                'i-Style 7.7 DTV',
+                'i-mobile',
+                'i-mobile',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

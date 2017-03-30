@@ -124,6 +124,16 @@ class KeneksiFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; Keneksi-Crystal Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.00 Mobile Safari/537.36',
+                'Crystal',
+                'Crystal',
+                'Keneksi',
+                'Keneksi',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -134,6 +134,16 @@ class SpiceFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; Spice Mi-424 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'Mi-424',
+                'Mi-424',
+                'Spice',
+                'Spice',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

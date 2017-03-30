@@ -124,6 +124,26 @@ class OppoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; x909 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.0.2.523 U3/0.8.0 Mobile Safari/534.30',
+                'X909',
+                'Find 5',
+                'OPPO',
+                'OPPO',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'OPPO_R813T/1.0 Linux/3.0.35.7 Android/4.0 Release/11.15.2012 Browser/AppleWebKit534.30 Mobile Safari/534.30 MBBMS/2.2',
+                'R813T',
+                'R813T',
+                'OPPO',
+                'OPPO',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

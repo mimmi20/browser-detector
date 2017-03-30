@@ -58,7 +58,7 @@ class BlaupunktFactory implements Factory\FactoryInterface
             return $this->loader->load('atlantis 1010a', $useragent);
         }
 
-        if ($s->contains('Endeavour 101L', false)) {
+        if ($s->containsAny(['Endeavour 101L', 'Endeavour_101L'], false)) {
             return $this->loader->load('endeavour 101l', $useragent);
         }
 
