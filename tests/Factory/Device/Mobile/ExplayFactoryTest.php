@@ -154,6 +154,16 @@ class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2.2; Ru-ru; Explay A320 Build/FRG83G) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1',
+                'A320',
+                'A320',
+                'Explay',
+                'Explay',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

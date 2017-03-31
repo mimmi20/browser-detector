@@ -124,6 +124,16 @@ class CosmoteFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.2; Cosmote Xplore Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31',
+                'Xplore',
+                'Xplore',
+                'Cosmote',
+                'Cosmote',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

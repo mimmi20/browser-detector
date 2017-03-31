@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\BlaupunktFactory;
+use BrowserDetector\Factory\Device\Mobile\KddiFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class BlaupunktFactoryTest extends \PHPUnit\Framework\TestCase
+class KddiFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\BlaupunktFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\KddiFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class BlaupunktFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new BlaupunktFactory($cache, $loader);
+        $this->object = new KddiFactory($cache, $loader);
     }
 
     /**
@@ -106,42 +106,22 @@ class BlaupunktFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Blaupunkt Device',
-                'general Blaupunkt Device',
-                'Blaupunkt',
-                'Blaupunkt',
+                'general KDDI Device',
+                'general KDDI Device',
+                'KDDI',
+                'KDDI',
                 'Mobile Phone',
                 false,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 5.1; Atlantis 1010A Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Safari/537.36',
-                'Atlantis 1010A',
-                'Atlantis 1010A',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Endeavour 1010 Build/ONDA_MID) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'Endeavour 1010',
-                'Endeavour 1010',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Endeavour_101L Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'Endeavour 101L',
-                'Endeavour 101L',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Tablet',
-                true,
+                'KDDI-KC31 UP.Browser/6.2.0.5 (GUI) MMP/2.0',
+                'KC31',
+                'W11K',
+                'KDDI',
+                'KDDI',
+                'Mobile Phone',
+                false,
                 'touchscreen',
             ],
         ];

@@ -134,6 +134,16 @@ class StarFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; N8000 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 YaBrowser/15.2.2214.3725.01 Safari/537.36',
+                'N8000',
+                'Note 3',
+                'Star',
+                'Star',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

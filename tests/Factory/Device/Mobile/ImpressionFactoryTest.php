@@ -134,6 +134,16 @@ class ImpressionFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16',
+                'ImPAD 9708',
+                'ImPAD 9708',
+                'Impression',
+                'Impression',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

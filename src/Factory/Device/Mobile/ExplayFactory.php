@@ -54,6 +54,10 @@ class ExplayFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
+        if ($s->contains('a320', false)) {
+            return $this->loader->load('explay-a320', $useragent);
+        }
+
         if ($s->contains('surfer 7.34', false)) {
             return $this->loader->load('surfer 7.34 3g', $useragent);
         }

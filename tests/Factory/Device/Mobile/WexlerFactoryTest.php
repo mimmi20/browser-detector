@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\BlaupunktFactory;
+use BrowserDetector\Factory\Device\Mobile\WexlerFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class BlaupunktFactoryTest extends \PHPUnit\Framework\TestCase
+class WexlerFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\BlaupunktFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\WexlerFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class BlaupunktFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new BlaupunktFactory($cache, $loader);
+        $this->object = new WexlerFactory($cache, $loader);
     }
 
     /**
@@ -106,40 +106,40 @@ class BlaupunktFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Blaupunkt Device',
-                'general Blaupunkt Device',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 5.1; Atlantis 1010A Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Safari/537.36',
-                'Atlantis 1010A',
-                'Atlantis 1010A',
-                'Blaupunkt',
-                'Blaupunkt',
+                'general Wexler Device',
+                'general Wexler Device',
+                'Wexler',
+                'Wexler',
                 'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Endeavour 1010 Build/ONDA_MID) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'Endeavour 1010',
-                'Endeavour 1010',
-                'Blaupunkt',
-                'Blaupunkt',
+                'Mozilla/5.0 (Linux; Android 4.2.2; TAB A742 Build/GSB7_20140710_INT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Safari/537.36',
+                'TAB A742',
+                'TAB A742',
+                'Wexler',
+                'Wexler',
                 'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Endeavour_101L Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'Endeavour 101L',
-                'Endeavour 101L',
-                'Blaupunkt',
-                'Blaupunkt',
+                'Mozilla/5.0 (Linux; U; Android 4.1.1; en-US; WEXLER-TAB-7T Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/9.9.6.495 U3/0.8.0 Mobile Safari/534.30',
+                'TAB 7T',
+                'TAB 7T',
+                'Wexler',
+                'Wexler',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.1; TAB7iD Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 YaBrowser/14.10.2062.12160.01 Safari/537.36',
+                'Tab7ID',
+                'Tab7ID',
+                'Wexler',
+                'Wexler',
                 'Tablet',
                 true,
                 'touchscreen',

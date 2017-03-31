@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\BlaupunktFactory;
+use BrowserDetector\Factory\Device\Mobile\SprdFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class BlaupunktFactoryTest extends \PHPUnit\Framework\TestCase
+class SprdFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\BlaupunktFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\SprdFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class BlaupunktFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new BlaupunktFactory($cache, $loader);
+        $this->object = new SprdFactory($cache, $loader);
     }
 
     /**
@@ -106,43 +106,43 @@ class BlaupunktFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Blaupunkt Device',
-                'general Blaupunkt Device',
-                'Blaupunkt',
-                'Blaupunkt',
+                'general sprd device',
+                'general sprd device',
+                'sprd',
+                'sprd',
                 'Mobile Phone',
                 false,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 5.1; Atlantis 1010A Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Safari/537.36',
-                'Atlantis 1010A',
-                'Atlantis 1010A',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Tablet',
+                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.4; en-US; SPHS_on_Hsdroid) U2/1.0.0 UCBrowser/8.9.2.373 U2/1.0.0 Mobile',
+                'SPHS On HSDroid',
+                'SPHS On HSDroid',
+                'sprd',
+                'sprd',
+                'Mobile Phone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Endeavour 1010 Build/ONDA_MID) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'Endeavour 1010',
-                'Endeavour 1010',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Tablet',
-                true,
+                'Mozilla/5.0 (Linux; U; Android 2.2.2; ru; GT-A7100 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.8.0.435 U3/0.8.0 Mobile Safari/533.1',
+                'GT-A7100',
+                'GT-A7100',
+                'sprd',
+                'sprd',
+                'Mobile Phone',
+                false,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Endeavour_101L Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'Endeavour 101L',
-                'Endeavour 101L',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Tablet',
-                true,
-                'touchscreen',
+                'Mozilla/5.0 (Linux; U; Android 2.3.6; zh-cn; sprd-B51+/1.0 Android/2.3.6 Release/fk.ho.hfgi Browser/AppleWebKit533.1 Build/MocorDroid2.3.5) AppleWebKit533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'B51+',
+                'B51+',
+                'sprd',
+                'sprd',
+                'Mobile Phone',
+                false,
+                null,
             ],
         ];
     }

@@ -124,6 +124,26 @@ class KianoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; Kiano Elegance 8 3G by Zanetti Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
+                'Elegance 8 3G',
+                'Elegance 8 3G',
+                'Kiano',
+                'Kiano',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; Kiano Elegance by Zanetti Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
+                'Elegance',
+                'Elegance',
+                'Kiano',
+                'Kiano',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
