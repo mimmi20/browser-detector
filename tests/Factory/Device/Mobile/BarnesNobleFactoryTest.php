@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\ExplayFactory;
+use BrowserDetector\Factory\Device\Mobile\BarnesNobleFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
+class BarnesNobleFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\ExplayFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\BarnesNobleFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new ExplayFactory($cache, $loader);
+        $this->object = new BarnesNobleFactory($cache, $loader);
     }
 
     /**
@@ -106,61 +106,31 @@ class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Explay Device',
-                'general Explay Device',
-                'Explay',
-                'Explay',
+                'general Barnes & Noble Device',
+                'general Barnes & Noble Device',
+                'Barnes & Noble',
+                'Barnes & Noble',
                 'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Art 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Safari/537.36',
-                'Art 3G',
-                'Art 3G',
-                'Explay',
-                'Explay',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.2; en-US; Surfer 7.34 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.1.0.527 U3/0.8.0 Mobile Safari/534.30',
-                'Surfer 7.34 3G',
-                'Surfer 7.34 3G',
-                'Explay',
-                'Explay',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; M1_Plus Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30',
-                'M1 Plus',
-                'M1 Plus',
-                'Explay',
-                'Explay',
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; BN NookHD+ Build/JDQ39E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 CyanogenMod/10.1.3/ovation',
+                'Nook HD+',
+                'Nook HD+',
+                'Barnes & Noble',
+                'Barnes & Noble',
                 'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.2.2; D7.2 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Mobile Safari/537.36',
-                'D7.2 3G',
-                'D7.2 3G',
-                'Explay',
-                'Explay',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.2; Ru-ru; Explay A320 Build/FRG83G) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1',
-                'A320',
-                'A320',
-                'Explay',
-                'Explay',
-                'Mobile Phone',
+                'Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; NOOK BNRV200 Build/ERD79 1.4.3) Apple WebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'BNRV200',
+                'Nook Color Wifi',
+                'Barnes & Noble',
+                'Barnes & Noble',
+                'Tablet',
                 true,
                 'touchscreen',
             ],

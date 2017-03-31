@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\ExplayFactory;
+use BrowserDetector\Factory\Device\Mobile\CaterpillarFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
+class CaterpillarFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\ExplayFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\CaterpillarFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new ExplayFactory($cache, $loader);
+        $this->object = new CaterpillarFactory($cache, $loader);
     }
 
     /**
@@ -106,60 +106,30 @@ class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Explay Device',
-                'general Explay Device',
-                'Explay',
-                'Explay',
-                'Tablet',
+                'general Caterpillar Device',
+                'general Caterpillar Device',
+                'Caterpillar',
+                'Caterpillar',
+                'Mobile Phone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Art 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Safari/537.36',
-                'Art 3G',
-                'Art 3G',
-                'Explay',
-                'Explay',
-                'FonePad',
+                'Mozilla/5.0 (Linux; Android 4.4.2; B15Q Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
+                'B15Q',
+                'Cat B15Q',
+                'Caterpillar',
+                'Caterpillar',
+                'Mobile Phone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; U; Android 4.1.2; en-US; Surfer 7.34 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.1.0.527 U3/0.8.0 Mobile Safari/534.30',
-                'Surfer 7.34 3G',
-                'Surfer 7.34 3G',
-                'Explay',
-                'Explay',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; M1_Plus Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30',
-                'M1 Plus',
-                'M1 Plus',
-                'Explay',
-                'Explay',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; D7.2 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Mobile Safari/537.36',
-                'D7.2 3G',
-                'D7.2 3G',
-                'Explay',
-                'Explay',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.2; Ru-ru; Explay A320 Build/FRG83G) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1',
-                'A320',
-                'A320',
-                'Explay',
-                'Explay',
+                'Mozilla/5.0 (Linux; U; Android 4.1.2; ru-ru; B15 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'B15',
+                'Cat B15',
+                'Caterpillar',
+                'Caterpillar',
                 'Mobile Phone',
                 true,
                 'touchscreen',

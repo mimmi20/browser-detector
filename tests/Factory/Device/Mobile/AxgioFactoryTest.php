@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\ExplayFactory;
+use BrowserDetector\Factory\Device\Mobile\AxgioFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
+class AxgioFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\ExplayFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\AxgioFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new ExplayFactory($cache, $loader);
+        $this->object = new AxgioFactory($cache, $loader);
     }
 
     /**
@@ -106,60 +106,30 @@ class ExplayFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Explay Device',
-                'general Explay Device',
-                'Explay',
-                'Explay',
-                'Tablet',
+                'general Axgio Device',
+                'general Axgio Device',
+                'Axgio',
+                'Axgio',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; WING-W2 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.00 Mobile Safari/537.36',
+                'Wing W2',
+                'Wing W2',
+                'Axgio',
+                'Axgio',
+                'Mobile Phone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Art 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Safari/537.36',
-                'Art 3G',
-                'Art 3G',
-                'Explay',
-                'Explay',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.2; en-US; Surfer 7.34 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.1.0.527 U3/0.8.0 Mobile Safari/534.30',
-                'Surfer 7.34 3G',
-                'Surfer 7.34 3G',
-                'Explay',
-                'Explay',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; M1_Plus Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30',
-                'M1 Plus',
-                'M1 Plus',
-                'Explay',
-                'Explay',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; D7.2 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Mobile Safari/537.36',
-                'D7.2 3G',
-                'D7.2 3G',
-                'Explay',
-                'Explay',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.2; Ru-ru; Explay A320 Build/FRG83G) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1',
-                'A320',
-                'A320',
-                'Explay',
-                'Explay',
+                'Mozilla/5.0 (Linux; Android 4.2.2; Neon-N1 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36',
+                'Neon N1',
+                'Neon N1',
+                'Axgio',
+                'Axgio',
                 'Mobile Phone',
                 true,
                 'touchscreen',
