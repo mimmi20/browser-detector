@@ -1267,7 +1267,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE2'], true)) {
+        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE2', 'LENNY', 'GETAWAY', 'RAINBOW'], true)) {
             return (new Mobile\WikoFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1571,7 +1571,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ArnovaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Touchlet', 'X7G'], true)) {
+        if ($s->containsAny(['Touchlet', 'X7G', 'X10.Dual'], true)) {
             return (new Mobile\PearlFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
