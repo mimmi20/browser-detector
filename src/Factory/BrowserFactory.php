@@ -62,415 +62,409 @@ class BrowserFactory implements FactoryInterface
     ) {
         $s = new Stringy($useragent);
 
-        if (preg_match('/RevIP\.info site analyzer/', $useragent)) {
+        if ($s->contains('RevIP.info site analyzer', false)) {
             return $this->loader->load('reverse ip lookup', $useragent);
         }
 
-        if (preg_match('/reddit pic scraper/i', $useragent)) {
+        if ($s->contains('reddit pic scraper', false)) {
             return $this->loader->load('reddit pic scraper', $useragent);
         }
 
-        if (preg_match('/Mozilla crawl/', $useragent)) {
+        if ($s->contains('Mozilla crawl', false)) {
             return $this->loader->load('mozilla crawler', $useragent);
         }
 
-        if (preg_match('/^\[FBAN/i', $useragent)) {
+        if ($s->startsWith('[FBAN', false)) {
             return $this->loader->load('facebook app', $useragent);
         }
 
-        if (preg_match('/UCBrowserHD/', $useragent)) {
+        if ($s->contains('UCBrowserHD', false)) {
             return $this->loader->load('uc browser hd', $useragent);
         }
 
-        if (preg_match('/(ucbrowser|uc browser|ucweb)/i', $useragent) && preg_match('/opera mini/i', $useragent)) {
+        if ($s->containsAny(['ucbrowser', 'uc browser', 'ucweb'], false) && $s->contains('opera mini', false)) {
             return $this->loader->load('ucbrowser', $useragent);
         }
 
-        if (preg_match('/(opera mini|opios)/i', $useragent)) {
+        if ($s->containsAny(['opera mini', 'opios'], false)) {
             return $this->loader->load('opera mini', $useragent);
         }
 
-        if (preg_match('/opera mobi/i', $useragent)
-            || (preg_match('/(opera|opr)/i', $useragent) && preg_match('/(Android|MTK|MAUI|SAMSUNG|Windows CE|SymbOS)/', $useragent))
+        if ($s->contains('opera mobi', false)
+            || ($s->containsAny(['opera', 'opr'], false) && $s->containsAny(['Android', 'MTK', 'MAUI', 'SAMSUNG', 'Windows CE', 'SymbOS'], false))
         ) {
             return $this->loader->load('opera mobile', $useragent);
         }
 
-        if (preg_match('/(ucbrowser|uc browser|ucweb)/i', $useragent)) {
+        if ($s->containsAny(['ucbrowser', 'uc browser', 'ucweb'], false)) {
             return $this->loader->load('ucbrowser', $useragent);
         }
 
-        if (preg_match('/IC OpenGraph Crawler/', $useragent)) {
+        if ($s->contains('IC OpenGraph Crawler', false)) {
             return $this->loader->load('ibm connections', $useragent);
         }
 
-        if (preg_match('/coast/i', $useragent)) {
+        if ($s->contains('coast', false)) {
             return $this->loader->load('coast', $useragent);
         }
 
-        if (preg_match('/(opera|opr)/i', $useragent)) {
+        if ($s->containsAny(['opera', 'opr'], false)) {
             return $this->loader->load('opera', $useragent);
         }
 
-        if (preg_match('/iCabMobile/', $useragent)) {
+        if ($s->contains('iCabMobile', false)) {
             return $this->loader->load('icab mobile', $useragent);
         }
 
-        if (preg_match('/iCab/', $useragent)) {
+        if ($s->contains('iCab', false)) {
             return $this->loader->load('icab', $useragent);
         }
 
-        if (preg_match('/HggH PhantomJS Screenshoter/', $useragent)) {
+        if ($s->contains('HggH PhantomJS Screenshoter', false)) {
             return $this->loader->load('hggh screenshot system with phantomjs', $useragent);
         }
 
-        if (preg_match('/bl\.uk\_lddc\_bot/', $useragent)) {
+        if ($s->contains('bl.uk_lddc_bot', false)) {
             return $this->loader->load('bl.uk_lddc_bot', $useragent);
         }
 
-        if (preg_match('/phantomas/', $useragent)) {
+        if ($s->contains('phantomas', false)) {
             return $this->loader->load('phantomas', $useragent);
         }
 
-        if (preg_match('/Seznam screenshot\-generator/', $useragent)) {
+        if ($s->contains('Seznam screenshot-generator', false)) {
             return $this->loader->load('seznam screenshot generator', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'PhantomJS')) {
+        if ($s->contains('PhantomJS', false)) {
             return $this->loader->load('phantomjs', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'YaBrowser')) {
+        if ($s->contains('YaBrowser', false)) {
             return $this->loader->load('yabrowser', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Kamelio')) {
+        if ($s->contains('Kamelio', false)) {
             return $this->loader->load('kamelio app', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'FBAV')) {
+        if ($s->contains('FBAV', false)) {
             return $this->loader->load('facebook app', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'ACHEETAHI')) {
+        if ($s->contains('ACHEETAHI', false)) {
             return $this->loader->load('cm browser', $useragent);
         }
 
-        if (preg_match('/flyflow/i', $useragent)) {
+        if ($s->contains('flyflow', false)) {
             return $this->loader->load('flyflow', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'bdbrowser_i18n') || false !== mb_strpos($useragent, 'baidubrowser')) {
+        if ($s->containsAny(['bdbrowser_i18n', 'baidubrowser'], false)) {
             return $this->loader->load('baidu browser', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'bdbrowserhd_i18n')) {
+        if ($s->contains('bdbrowserhd_i18n', false)) {
             return $this->loader->load('baidu browser hd', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'bdbrowser_mini')) {
+        if ($s->contains('bdbrowser_mini', false)) {
             return $this->loader->load('baidu browser mini', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Puffin')) {
+        if ($s->contains('Puffin', false)) {
             return $this->loader->load('puffin', $useragent);
         }
 
-        if (preg_match('/stagefright/', $useragent)) {
+        if ($s->contains('stagefright', false)) {
             return $this->loader->load('stagefright', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'SamsungBrowser')) {
+        if ($s->contains('SamsungBrowser', false)) {
             return $this->loader->load('samsungbrowser', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Silk')) {
+        if ($s->contains('Silk', false)) {
             return $this->loader->load('silk', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'coc_coc_browser')) {
+        if ($s->contains('coc_coc_browser', false)) {
             return $this->loader->load('coc_coc_browser', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'NaverMatome')) {
+        if ($s->contains('NaverMatome', false)) {
             return $this->loader->load('matome', $useragent);
         }
 
-        if (preg_match('/FlipboardProxy/', $useragent)) {
+        if ($s->contains('FlipboardProxy', false)) {
             return $this->loader->load('flipboardproxy', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Flipboard')) {
+        if ($s->contains('Flipboard', false)) {
             return $this->loader->load('flipboard app', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Seznam.cz')) {
+        if ($s->contains('Seznam.cz', false)) {
             return $this->loader->load('seznam browser', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Aviator')) {
+        if ($s->contains('Aviator', false)) {
             return $this->loader->load('aviator', $useragent);
         }
 
-        if (preg_match('/NetFrontLifeBrowser/', $useragent)) {
+        if ($s->contains('NetFrontLifeBrowser', false)) {
             return $this->loader->load('netfrontlifebrowser', $useragent);
         }
 
-        if (preg_match('/IceDragon/', $useragent)) {
+        if ($s->contains('IceDragon', false)) {
             return $this->loader->load('icedragon', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Dragon') && false === mb_strpos($useragent, 'DragonFly')) {
+        if ($s->contains('Dragon', false) && !$s->contains('DragonFly', false)) {
             return $this->loader->load('dragon', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Beamrise')) {
+        if ($s->contains('Beamrise', false)) {
             return $this->loader->load('beamrise', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Diglo')) {
+        if ($s->contains('Diglo', false)) {
             return $this->loader->load('diglo', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'APUSBrowser')) {
+        if ($s->contains('APUSBrowser', false)) {
             return $this->loader->load('apusbrowser', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Chedot')) {
+        if ($s->contains('Chedot', false)) {
             return $this->loader->load('chedot', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Qword')) {
+        if ($s->contains('Qword', false)) {
             return $this->loader->load('qword browser', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Iridium')) {
+        if ($s->contains('Iridium', false)) {
             return $this->loader->load('iridium browser', $useragent);
         }
 
-        if (preg_match('/avant/i', $useragent)) {
+        if ($s->contains('avant', false)) {
             return $this->loader->load('avant', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'MxNitro')) {
+        if ($s->contains('MxNitro', false)) {
             return $this->loader->load('maxthon nitro', $useragent);
         }
 
-        if (preg_match('/(mxbrowser|maxthon|myie)/i', $useragent)) {
+        if ($s->containsAny(['mxbrowser', 'maxthon', 'myie'], false)) {
             return $this->loader->load('maxthon', $useragent);
         }
 
-        if (preg_match('/superbird/i', $useragent)) {
+        if ($s->contains('superbird', false)) {
             return $this->loader->load('superbird', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'TinyBrowser')) {
+        if ($s->contains('TinyBrowser', false)) {
             return $this->loader->load('tinybrowser', $useragent);
         }
 
-        if (preg_match('/MicroMessenger/', $useragent)) {
+        if ($s->contains('MicroMessenger', false)) {
             return $this->loader->load('wechat app', $useragent);
         }
 
-        if (preg_match('/MQQBrowser\/Mini/', $useragent)) {
+        if ($s->contains('MQQBrowser/Mini', false)) {
             return $this->loader->load('qqbrowser mini', $useragent);
         }
 
-        if (preg_match('/MQQBrowser/', $useragent)) {
+        if ($s->contains('MQQBrowser', false)) {
             return $this->loader->load('qqbrowser', $useragent);
         }
 
-        if (preg_match('/pinterest/i', $useragent)) {
+        if ($s->contains('pinterest', false)) {
             return $this->loader->load('pinterest app', $useragent);
         }
 
-        if (preg_match('/baiduboxapp/', $useragent)) {
+        if ($s->contains('baiduboxapp', false)) {
             return $this->loader->load('baidu box app', $useragent);
         }
 
-        if (preg_match('/wkbrowser/', $useragent)) {
+        if ($s->contains('wkbrowser', false)) {
             return $this->loader->load('wkbrowser', $useragent);
         }
 
-        if (preg_match('/Mb2345Browser/', $useragent)) {
+        if ($s->contains('Mb2345Browser', false)) {
             return $this->loader->load('2345 browser', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Chrome')
-            && false !== mb_strpos($useragent, 'Version')
-            && 0 < mb_strpos($useragent, 'Chrome')
-        ) {
+        if ($s->containsAll(['Chrome', 'Version'], false)) {
             return $this->loader->load('android webview', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Safari')
-            && false !== mb_strpos($useragent, 'Version')
-            && false !== mb_strpos($useragent, 'Tizen')
-        ) {
+        if ($s->containsAll(['Safari', 'Version', 'Tizen'])) {
             return $this->loader->load('samsung webview', $useragent);
         }
 
-        if (preg_match('/cybeye/i', $useragent)) {
+        if ($s->contains('cybeye', false)) {
             return $this->loader->load('cybeye', $useragent);
         }
 
-        if (preg_match('/RebelMouse/', $useragent)) {
+        if ($s->contains('RebelMouse', false)) {
             return $this->loader->load('rebelmouse', $useragent);
         }
 
-        if (preg_match('/SeaMonkey/', $useragent)) {
+        if ($s->contains('SeaMonkey', false)) {
             return $this->loader->load('seamonkey', $useragent);
         }
 
-        if (preg_match('/Jobboerse/', $useragent)) {
+        if ($s->contains('Jobboerse', false)) {
             return $this->loader->load('jobboerse bot', $useragent);
         }
 
-        if (preg_match('/Navigator/', $useragent)) {
+        if ($s->contains('Navigator', false)) {
             return $this->loader->load('netscape navigator', $useragent);
         }
 
-        if (preg_match('/firefox/i', $useragent) && preg_match('/anonym/i', $useragent)) {
+        if ($s->containsAll(['firefox', 'anonym'], false)) {
             return $this->loader->load('firefox', $useragent);
         }
 
-        if (preg_match('/trident/i', $useragent) && preg_match('/anonym/i', $useragent)) {
+        if ($s->containsAll(['trident', 'anonym'], false)) {
             return $this->loader->load('internet explorer', $useragent);
         }
 
-        if (preg_match('/Windows\-RSS\-Platform/', $useragent)) {
+        if ($s->contains('Windows-RSS-Platform', false)) {
             return $this->loader->load('windows-rss-platform', $useragent);
         }
 
-        if (preg_match('/MarketwireBot/', $useragent)) {
+        if ($s->contains('MarketwireBot', false)) {
             return $this->loader->load('marketwirebot', $useragent);
         }
 
-        if (preg_match('/GoogleToolbar/', $useragent)) {
+        if ($s->contains('GoogleToolbar', false)) {
             return $this->loader->load('google toolbar', $useragent);
         }
 
-        if (preg_match('/netscape/i', $useragent) && preg_match('/msie/i', $useragent)) {
+        if ($s->containsAll(['netscape', 'msie'], false)) {
             return $this->loader->load('netscape', $useragent);
         }
 
-        if (preg_match('/LSSRocketCrawler/', $useragent)) {
+        if ($s->contains('LSSRocketCrawler', false)) {
             return $this->loader->load('lightspeed systems rocketcrawler', $useragent);
         }
 
-        if (preg_match('/lightspeedsystems/i', $useragent)) {
+        if ($s->contains('lightspeedsystems', false)) {
             return $this->loader->load('lightspeed systems crawler', $useragent);
         }
 
-        if (preg_match('/SL Commerce Client/', $useragent)) {
+        if ($s->contains('SL Commerce Client', false)) {
             return $this->loader->load('second live commerce client', $useragent);
         }
 
-        if (preg_match('/(IEMobile|WPDesktop|ZuneWP7|XBLWP7)/', $useragent)) {
+        if ($s->containsAny(['IEMobile', 'WPDesktop', 'ZuneWP7', 'XBLWP7'], false)) {
             return $this->loader->load('iemobile', $useragent);
         }
 
-        if (preg_match('/BingPreview/', $useragent)) {
+        if ($s->contains('BingPreview', false)) {
             return $this->loader->load('bing preview', $useragent);
         }
 
-        if (preg_match('/360Spider/', $useragent)) {
+        if ($s->contains('360Spider', false)) {
             return $this->loader->load('360spider', $useragent);
         }
 
-        if (preg_match('/Outlook\-Express/', $useragent)) {
+        if ($s->contains('Outlook-Express', false)) {
             return $this->loader->load('outlook-express', $useragent);
         }
 
-        if (preg_match('/Outlook/', $useragent)) {
+        if ($s->contains('Outlook', false)) {
             return $this->loader->load('outlook', $useragent);
         }
 
-        if (preg_match('/microsoft office mobile/i', $useragent)) {
+        if ($s->contains('microsoft office mobile', false)) {
             return $this->loader->load('office', $useragent);
         }
 
-        if (preg_match('/MSOffice/', $useragent)) {
+        if ($s->contains('MSOffice', false)) {
             return $this->loader->load('office', $useragent);
         }
 
-        if (preg_match('/Microsoft Office Protocol Discovery/', $useragent)) {
+        if ($s->contains('Microsoft Office Protocol Discovery', false)) {
             return $this->loader->load('ms opd', $useragent);
         }
 
-        if (preg_match('/excel/i', $useragent)) {
+        if ($s->contains('excel', false)) {
             return $this->loader->load('excel', $useragent);
         }
 
-        if (preg_match('/powerpoint/i', $useragent)) {
+        if ($s->contains('powerpoint', false)) {
             return $this->loader->load('powerpoint', $useragent);
         }
 
-        if (preg_match('/WordPress/', $useragent)) {
+        if ($s->contains('WordPress', false)) {
             return $this->loader->load('wordpress', $useragent);
         }
 
-        if (preg_match('/Word/', $useragent)) {
+        if ($s->contains('Word', false)) {
             return $this->loader->load('word', $useragent);
         }
 
-        if (preg_match('/OneNote/', $useragent)) {
+        if ($s->contains('OneNote', false)) {
             return $this->loader->load('onenote', $useragent);
         }
 
-        if (preg_match('/Visio/', $useragent)) {
+        if ($s->contains('Visio', false)) {
             return $this->loader->load('visio', $useragent);
         }
 
-        if (preg_match('/Access/', $useragent)) {
+        if ($s->contains('Access', false)) {
             return $this->loader->load('access', $useragent);
         }
 
-        if (preg_match('/Lync/', $useragent)) {
+        if ($s->contains('Lync', false)) {
             return $this->loader->load('lync', $useragent);
         }
 
-        if (preg_match('/Office SyncProc/', $useragent)) {
+        if ($s->contains('Office SyncProc', false)) {
             return $this->loader->load('office syncproc', $useragent);
         }
 
-        if (preg_match('/Office Upload Center/', $useragent)) {
+        if ($s->contains('Office Upload Center', false)) {
             return $this->loader->load('office upload center', $useragent);
         }
 
-        if (preg_match('/frontpage/i', $useragent)) {
+        if ($s->contains('frontpage', false)) {
             return $this->loader->load('frontpage', $useragent);
         }
 
-        if (preg_match('/microsoft office/i', $useragent)) {
+        if ($s->contains('microsoft office', false)) {
             return $this->loader->load('office', $useragent);
         }
 
-        if (preg_match('/Crazy Browser/', $useragent)) {
+        if ($s->contains('Crazy Browser', false)) {
             return $this->loader->load('crazy browser', $useragent);
         }
 
-        if (preg_match('/Deepnet Explorer/', $useragent)) {
+        if ($s->contains('Deepnet Explorer', false)) {
             return $this->loader->load('deepnet explorer', $useragent);
         }
 
-        if (preg_match('/kkman/i', $useragent)) {
+        if ($s->contains('kkman', false)) {
             return $this->loader->load('kkman', $useragent);
         }
 
-        if (preg_match('/Lunascape/', $useragent)) {
+        if ($s->contains('Lunascape', false)) {
             return $this->loader->load('lunascape', $useragent);
         }
 
-        if (preg_match('/Sleipnir/', $useragent)) {
+        if ($s->contains('Sleipnir', false)) {
             return $this->loader->load('sleipnir', $useragent);
         }
 
-        if (preg_match('/Smartsite HTTPClient/', $useragent)) {
+        if ($s->contains('Smartsite HTTPClient', false)) {
             return $this->loader->load('smartsite httpclient', $useragent);
         }
 
-        if (preg_match('/GomezAgent/', $useragent)) {
+        if ($s->contains('GomezAgent', false)) {
             return $this->loader->load('gomez site monitor', $useragent);
         }
 
@@ -484,155 +478,155 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('internet explorer', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Chromium')) {
+        if ($s->contains('Chromium', false)) {
             return $this->loader->load('chromium', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'Iron')) {
+        if ($s->contains('Iron', false)) {
             return $this->loader->load('iron', $useragent);
         }
 
-        if (preg_match('/midori/i', $useragent)) {
+        if ($s->contains('midori', false)) {
             return $this->loader->load('midori', $useragent);
         }
 
-        if (preg_match('/Google Page Speed Insights/', $useragent)) {
+        if ($s->contains('Google Page Speed Insights', false)) {
             return $this->loader->load('google pagespeed insights', $useragent);
         }
 
-        if (preg_match('/(web\/snippet)/', $useragent)) {
+        if ($s->contains('web/snippet', false)) {
             return $this->loader->load('google web snippet', $useragent);
         }
 
-        if (preg_match('/(googlebot\-mobile)/i', $useragent)) {
+        if ($s->contains('googlebot-mobile', false)) {
             return $this->loader->load('googlebot-mobile', $useragent);
         }
 
-        if (preg_match('/Google Wireless Transcoder/', $useragent)) {
+        if ($s->contains('Google Wireless Transcoder', false)) {
             return $this->loader->load('google wireless transcoder', $useragent);
         }
 
-        if (preg_match('/Locubot/', $useragent)) {
+        if ($s->contains('Locubot', false)) {
             return $this->loader->load('locubot', $useragent);
         }
 
-        if (preg_match('/(com\.google\.GooglePlus)/i', $useragent)) {
+        if ($s->contains('com.google.GooglePlus', false)) {
             return $this->loader->load('google+ app', $useragent);
         }
 
-        if (preg_match('/Google\-HTTP\-Java\-Client/', $useragent)) {
+        if ($s->contains('Google-HTTP-Java-Client', false)) {
             return $this->loader->load('google http client library for java', $useragent);
         }
 
-        if (preg_match('/acapbot/i', $useragent)) {
+        if ($s->contains('acapbot', false)) {
             return $this->loader->load('acapbot', $useragent);
         }
 
-        if (preg_match('/googlebot\-image/i', $useragent)) {
+        if ($s->contains('googlebot-image', false)) {
             return $this->loader->load('google image search', $useragent);
         }
 
-        if (preg_match('/googlebot/i', $useragent)) {
+        if ($s->contains('googlebot', false)) {
             return $this->loader->load('googlebot', $useragent);
         }
 
-        if (preg_match('/^GOOG$/', $useragent)) {
+        if ($s->startsWith('GOOG', true)) {
             return $this->loader->load('googlebot', $useragent);
         }
 
-        if (preg_match('/viera/i', $useragent)) {
+        if ($s->contains('viera', false)) {
             return $this->loader->load('smartviera', $useragent);
         }
 
-        if (preg_match('/Nichrome/', $useragent)) {
+        if ($s->contains('Nichrome', false)) {
             return $this->loader->load('nichrome', $useragent);
         }
 
-        if (preg_match('/Kinza/', $useragent)) {
+        if ($s->contains('Kinza', false)) {
             return $this->loader->load('kinza', $useragent);
         }
 
-        if (preg_match('/Google Keyword Suggestion/', $useragent)) {
+        if ($s->contains('Google Keyword Suggestion', false)) {
             return $this->loader->load('google keyword suggestion', $useragent);
         }
 
-        if (preg_match('/Google Web Preview/', $useragent)) {
+        if ($s->contains('Google Web Preview', false)) {
             return $this->loader->load('google web preview', $useragent);
         }
 
-        if (preg_match('/Google-Adwords-DisplayAds-WebRender/', $useragent)) {
+        if ($s->contains('Google-Adwords-DisplayAds-WebRender', false)) {
             return $this->loader->load('google adwords displayads webrender', $useragent);
         }
 
-        if (preg_match('/HubSpot Webcrawler/', $useragent)) {
+        if ($s->contains('HubSpot Webcrawler', false)) {
             return $this->loader->load('hubspot webcrawler', $useragent);
         }
 
-        if (preg_match('/RockMelt/', $useragent)) {
+        if ($s->contains('RockMelt', false)) {
             return $this->loader->load('rockmelt', $useragent);
         }
 
-        if (preg_match('/ SE /', $useragent)) {
+        if ($s->contains(' SE ', false)) {
             return $this->loader->load('sogou explorer', $useragent);
         }
 
-        if (preg_match('/ArchiveBot/', $useragent)) {
+        if ($s->contains('ArchiveBot', false)) {
             return $this->loader->load('archivebot', $useragent);
         }
 
-        if (preg_match('/Edge/', $useragent) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
+        if ($s->contains('Edge', false) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
             return $this->loader->load('edge mobile', $useragent);
         }
 
-        if (preg_match('/Edge/', $useragent)) {
+        if ($s->contains('Edge', false)) {
             return $this->loader->load('edge', $useragent);
         }
 
-        if (preg_match('/diffbot/i', $useragent)) {
+        if ($s->contains('diffbot', false)) {
             return $this->loader->load('diffbot', $useragent);
         }
 
-        if (preg_match('/vivaldi/i', $useragent)) {
+        if ($s->contains('vivaldi', false)) {
             return $this->loader->load('vivaldi', $useragent);
         }
 
-        if (preg_match('/LBBROWSER/', $useragent)) {
+        if ($s->contains('LBBROWSER', false)) {
             return $this->loader->load('liebao', $useragent);
         }
 
-        if (preg_match('/Amigo/', $useragent)) {
+        if ($s->contains('Amigo', false)) {
             return $this->loader->load('amigo', $useragent);
         }
 
-        if (preg_match('/CoolNovoChromePlus/', $useragent)) {
+        if ($s->contains('CoolNovoChromePlus', false)) {
             return $this->loader->load('coolnovo chrome plus', $useragent);
         }
 
-        if (preg_match('/CoolNovo/', $useragent)) {
+        if ($s->contains('CoolNovo', false)) {
             return $this->loader->load('coolnovo', $useragent);
         }
 
-        if (preg_match('/Kenshoo/', $useragent)) {
+        if ($s->contains('Kenshoo', false)) {
             return $this->loader->load('kenshoo', $useragent);
         }
 
-        if (preg_match('/Bowser/', $useragent)) {
+        if ($s->contains('Bowser', false)) {
             return $this->loader->load('bowser', $useragent);
         }
 
-        if (preg_match('/360SE/', $useragent)) {
+        if ($s->contains('360SE', false)) {
             return $this->loader->load('360 secure browser', $useragent);
         }
 
-        if (preg_match('/360EE/', $useragent)) {
+        if ($s->contains('360EE', false)) {
             return $this->loader->load('360 speed browser', $useragent);
         }
 
-        if (preg_match('/ASW/', $useragent)) {
+        if ($s->contains('ASW', false)) {
             return $this->loader->load('avast safezone', $useragent);
         }
 
-        if (preg_match('/Wire/', $useragent)) {
+        if ($s->contains('Wire', false)) {
             return $this->loader->load('wire app', $useragent);
         }
 
@@ -646,75 +640,75 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('dragon', $useragent);
         }
 
-        if (preg_match('/Flock/', $useragent)) {
+        if ($s->contains('Flock', false)) {
             return $this->loader->load('flock', $useragent);
         }
 
-        if (preg_match('/Crosswalk/', $useragent)) {
+        if ($s->contains('Crosswalk', false)) {
             return $this->loader->load('crosswalk', $useragent);
         }
 
-        if (preg_match('/Bromium Safari/', $useragent)) {
+        if ($s->contains('Bromium Safari', false)) {
             return $this->loader->load('vsentry', $useragent);
         }
 
-        if (preg_match('/(chrome|crmo|crios)/i', $useragent)) {
+        if ($s->containsAny(['chrome', 'crmo', 'crios'], false)) {
             return $this->loader->load('chrome', $useragent);
         }
 
-        if (preg_match('/(dolphin http client)/i', $useragent)) {
+        if ($s->contains('dolphin http client', false)) {
             return $this->loader->load('dolphin smalltalk http client', $useragent);
         }
 
-        if (preg_match('/(dolphin|dolfin)/i', $useragent)) {
+        if ($s->containsAny(['dolphin', 'dolfin'], false)) {
             return $this->loader->load('dolfin', $useragent);
         }
 
-        if (preg_match('/Arora/', $useragent)) {
+        if ($s->contains('Arora', false)) {
             return $this->loader->load('arora', $useragent);
         }
 
-        if (preg_match('/com\.douban\.group/i', $useragent)) {
+        if ($s->contains('com.douban.group', false)) {
             return $this->loader->load('douban app', $useragent);
         }
 
-        if (preg_match('/ovibrowser/i', $useragent)) {
+        if ($s->contains('ovibrowser', false)) {
             return $this->loader->load('nokia proxy browser', $useragent);
         }
 
-        if (preg_match('/MiuiBrowser/i', $useragent)) {
+        if ($s->contains('MiuiBrowser', false)) {
             return $this->loader->load('miui browser', $useragent);
         }
 
-        if (preg_match('/ibrowser/i', $useragent)) {
+        if ($s->contains('ibrowser', false)) {
             return $this->loader->load('ibrowser', $useragent);
         }
 
-        if (preg_match('/OneBrowser/', $useragent)) {
+        if ($s->contains('OneBrowser', false)) {
             return $this->loader->load('onebrowser', $useragent);
         }
 
-        if (preg_match('/Baiduspider\-image/', $useragent)) {
+        if ($s->contains('Baiduspider-image', false)) {
             return $this->loader->load('baidu image search', $useragent);
         }
 
-        if (preg_match('/http:\/\/www\.baidu\.com\/search/', $useragent)) {
+        if ($s->contains('http://www.baidu.com/search', false)) {
             return $this->loader->load('baidu mobile search', $useragent);
         }
 
-        if (preg_match('/(yjapp|yjtop)/i', $useragent)) {
+        if ($s->containsAny(['yjapp', 'yjtop'], false)) {
             return $this->loader->load('yahoo! app', $useragent);
         }
 
-        if (preg_match('/(linux; u; android|linux; android)/i', $useragent) && preg_match('/version/i', $useragent)) {
+        if ($s->containsAny(['linux; u; android', 'linux; android'], false) && $s->contains('version', false)) {
             return $this->loader->load('android webkit', $useragent);
         }
 
-        if (preg_match('/safari/i', $useragent) && null !== $platform && 'Android' === $platform->getName()) {
+        if ($s->contains('safari', false) && null !== $platform && 'Android' === $platform->getName()) {
             return $this->loader->load('android webkit', $useragent);
         }
 
-        if (preg_match('/Browser\/AppleWebKit/', $useragent)) {
+        if ($s->contains('Browser/AppleWebKit', false)) {
             return $this->loader->load('android webkit', $useragent);
         }
 
@@ -722,103 +716,107 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('android webkit', $useragent);
         }
 
-        if (false !== mb_strpos($useragent, 'BlackBerry') && false !== mb_strpos($useragent, 'Version')) {
+        if ($s->containsAll(['BlackBerry', 'Version'])) {
             return $this->loader->load('blackberry', $useragent);
         }
 
-        if (preg_match('/(webOS|wOSBrowser|wOSSystem)/', $useragent)) {
+        if ($s->containsAny(['webOS', 'wOSBrowser', 'wOSSystem'], false)) {
             return $this->loader->load('webkit/webos', $useragent);
         }
 
-        if (preg_match('/OmniWeb/', $useragent)) {
+        if ($s->contains('OmniWeb', false)) {
             return $this->loader->load('omniweb', $useragent);
         }
 
-        if (preg_match('/Windows Phone Search/', $useragent)) {
+        if ($s->contains('Windows Phone Search', false)) {
             return $this->loader->load('windows phone search', $useragent);
         }
 
-        if (preg_match('/Windows\-Update\-Agent/', $useragent)) {
+        if ($s->contains('Windows-Update-Agent', false)) {
             return $this->loader->load('windows-update-agent', $useragent);
         }
 
-        if (preg_match('/classilla/i', $useragent)) {
+        if ($s->contains('classilla', false)) {
             return $this->loader->load('classilla', $useragent);
         }
 
-        if (preg_match('/nokia/i', $useragent)) {
+        if ($s->contains('nokia', false)) {
             return $this->loader->load('nokiabrowser', $useragent);
         }
 
-        if (preg_match('/twitter for i/i', $useragent)) {
+        if ($s->contains('twitter for i', false)) {
             return $this->loader->load('twitter app', $useragent);
         }
 
-        if (preg_match('/twitterbot/i', $useragent)) {
+        if ($s->contains('twitterbot', false)) {
             return $this->loader->load('twitterbot', $useragent);
         }
 
-        if (preg_match('/GSA/', $useragent)) {
+        if ($s->contains('GSA', false)) {
             return $this->loader->load('google app', $useragent);
         }
 
-        if (preg_match('/QtCarBrowser/', $useragent)) {
+        if ($s->contains('quicktime', false)) {
+            return $this->loader->load('quicktime', $useragent);
+        }
+
+        if ($s->contains('QtCarBrowser', false)) {
             return $this->loader->load('model s browser', $useragent);
         }
 
-        if (preg_match('/Qt/', $useragent)) {
+        if ($s->contains('Qt', false)) {
             return $this->loader->load('qt', $useragent);
         }
 
-        if (preg_match('/Instagram/', $useragent)) {
+        if ($s->contains('Instagram', false)) {
             return $this->loader->load('instagram app', $useragent);
         }
 
-        if (preg_match('/WebClip/', $useragent)) {
+        if ($s->contains('WebClip', false)) {
             return $this->loader->load('webclip app', $useragent);
         }
 
-        if (preg_match('/Mercury/', $useragent)) {
+        if ($s->contains('Mercury', false)) {
             return $this->loader->load('mercury', $useragent);
         }
 
-        if (preg_match('/MacAppStore/', $useragent)) {
+        if ($s->contains('MacAppStore', false)) {
             return $this->loader->load('macappstore', $useragent);
         }
 
-        if (preg_match('/AppStore/', $useragent)) {
+        if ($s->contains('AppStore', false)) {
             return $this->loader->load('apple appstore app', $useragent);
         }
 
-        if (preg_match('/Webglance/', $useragent)) {
+        if ($s->contains('Webglance', false)) {
             return $this->loader->load('web glance', $useragent);
         }
 
-        if (preg_match('/YHOO\_Search\_App/', $useragent)) {
+        if ($s->contains('YHOO_Search_App', false)) {
             return $this->loader->load('yahoo mobile app', $useragent);
         }
 
-        if (preg_match('/NewsBlur Feed Fetcher/', $useragent)) {
+        if ($s->contains('NewsBlur Feed Fetcher', false)) {
             return $this->loader->load('newsblur feed fetcher', $useragent);
         }
 
-        if (preg_match('/AppleCoreMedia/', $useragent)) {
+        if ($s->contains('AppleCoreMedia', false)) {
             return $this->loader->load('coremedia', $useragent);
         }
 
-        if (preg_match('/dataaccessd/', $useragent)) {
+        if ($s->contains('dataaccessd', false)) {
             return $this->loader->load('ios dataaccessd', $useragent);
         }
 
-        if (preg_match('/MailChimp/', $useragent)) {
+        if ($s->contains('MailChimp', false)) {
             return $this->loader->load('mailchimp.com', $useragent);
         }
 
-        if (preg_match('/MailBar/', $useragent)) {
+        if ($s->contains('MailBar', false)) {
             return $this->loader->load('mailbar', $useragent);
         }
 
-        if (preg_match('/^Mail/', $useragent)) {
+        if ($s->startsWith('Mail', false)) {
             return $this->loader->load('apple mail', $useragent);
         }
 
@@ -834,203 +832,203 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('apple mail', $useragent);
         }
 
-        if (preg_match('/msnbot\-media/i', $useragent)) {
+        if ($s->contains('msnbot-media', false)) {
             return $this->loader->load('msnbot-media', $useragent);
         }
 
-        if (preg_match('/adidxbot/i', $useragent)) {
+        if ($s->contains('adidxbot', false)) {
             return $this->loader->load('adidxbot', $useragent);
         }
 
-        if (preg_match('/msnbot/i', $useragent)) {
+        if ($s->contains('msnbot', false)) {
             return $this->loader->load('bingbot', $useragent);
         }
 
-        if (preg_match('/BlackberryPlaybookTablet/', $useragent)) {
+        if ($s->contains('BlackberryPlaybookTablet', false)) {
             return $this->loader->load('blackberry playbook tablet', $useragent);
         }
 
-        if (preg_match('/(blackberry|bb10)/i', $useragent)) {
+        if ($s->containsAny(['blackberry', 'bb10'], false)) {
             return $this->loader->load('blackberry', $useragent);
         }
 
-        if (preg_match('/WeTab\-Browser/', $useragent)) {
+        if ($s->contains('WeTab-Browser', false)) {
             return $this->loader->load('wetab browser', $useragent);
         }
 
-        if (preg_match('/profiller/', $useragent)) {
+        if ($s->contains('profiller', false)) {
             return $this->loader->load('profiller', $useragent);
         }
 
-        if (preg_match('/(wkhtmltopdf)/i', $useragent)) {
+        if ($s->contains('wkhtmltopdf', false)) {
             return $this->loader->load('wkhtmltopdf', $useragent);
         }
 
-        if (preg_match('/(wkhtmltoimage)/i', $useragent)) {
+        if ($s->contains('wkhtmltoimage', false)) {
             return $this->loader->load('wkhtmltoimage', $useragent);
         }
 
-        if (preg_match('/(wp\-iphone|wp\-android)/', $useragent)) {
+        if ($s->containsAny(['wp-iphone', 'wp-android'], false)) {
             return $this->loader->load('wordpress app', $useragent);
         }
 
-        if (preg_match('/OktaMobile/', $useragent)) {
+        if ($s->contains('OktaMobile', false)) {
             return $this->loader->load('okta mobile app', $useragent);
         }
 
-        if (preg_match('/kmail2/', $useragent)) {
+        if ($s->contains('kmail2', false)) {
             return $this->loader->load('kmail2', $useragent);
         }
 
-        if (preg_match('/eb\-iphone/', $useragent)) {
+        if ($s->contains('eb-iphone', false)) {
             return $this->loader->load('eb iphone/ipad app', $useragent);
         }
 
-        if (preg_match('/ElmediaPlayer/', $useragent)) {
+        if ($s->contains('ElmediaPlayer', false)) {
             return $this->loader->load('elmedia player', $useragent);
         }
 
-        if (preg_match('/Schoolwires/', $useragent)) {
+        if ($s->contains('Schoolwires', false)) {
             return $this->loader->load('schoolwires app', $useragent);
         }
 
-        if (preg_match('/Dreamweaver/', $useragent)) {
+        if ($s->contains('Dreamweaver', false)) {
             return $this->loader->load('dreamweaver', $useragent);
         }
 
-        if (preg_match('/akregator/', $useragent)) {
+        if ($s->contains('akregator', false)) {
             return $this->loader->load('akregator', $useragent);
         }
 
-        if (preg_match('/Installatron/', $useragent)) {
+        if ($s->contains('Installatron', false)) {
             return $this->loader->load('installatron', $useragent);
         }
 
-        if (preg_match('/Quora Link Preview/', $useragent)) {
+        if ($s->contains('Quora Link Preview', false)) {
             return $this->loader->load('quora link preview bot', $useragent);
         }
 
-        if (preg_match('/Quora/', $useragent)) {
+        if ($s->contains('Quora', false)) {
             return $this->loader->load('quora app', $useragent);
         }
 
-        if (preg_match('/Rocky ChatWork Mobile/', $useragent)) {
+        if ($s->contains('Rocky ChatWork Mobile', false)) {
             return $this->loader->load('rocky chatwork mobile', $useragent);
         }
 
-        if (preg_match('/AdsBot\-Google\-Mobile/', $useragent)) {
+        if ($s->contains('AdsBot-Google-Mobile', false)) {
             return $this->loader->load('adsbot google-mobile', $useragent);
         }
 
-        if (preg_match('/epiphany/i', $useragent)) {
+        if ($s->contains('epiphany', false)) {
             return $this->loader->load('epiphany', $useragent);
         }
 
-        if (preg_match('/rekonq/', $useragent)) {
+        if ($s->contains('rekonq', false)) {
             return $this->loader->load('rekonq', $useragent);
         }
 
-        if (preg_match('/Skyfire/', $useragent)) {
+        if ($s->contains('Skyfire', false)) {
             return $this->loader->load('skyfire', $useragent);
         }
 
-        if (preg_match('/FlixsteriOS/', $useragent)) {
+        if ($s->contains('FlixsteriOS', false)) {
             return $this->loader->load('flixster app', $useragent);
         }
 
-        if (preg_match('/(adbeat\_bot|adbeat\.com)/', $useragent)) {
+        if ($s->containsAny(['adbeat_bot', 'adbeat.com'], false)) {
             return $this->loader->load('adbeat bot', $useragent);
         }
 
-        if (preg_match('/(SecondLife|Second Life)/', $useragent)) {
+        if ($s->containsAny(['SecondLife', 'Second Life'], false)) {
             return $this->loader->load('second live client', $useragent);
         }
 
-        if (preg_match('/(Salesforce1|SalesforceTouchContainer)/', $useragent)) {
+        if ($s->containsAny(['Salesforce1', 'SalesforceTouchContainer'], false)) {
             return $this->loader->load('salesforce app', $useragent);
         }
 
-        if (preg_match('/(nagios\-plugins|check\_http)/', $useragent)) {
+        if ($s->containsAny(['nagios-plugins', 'check_http'], false)) {
             return $this->loader->load('nagios', $useragent);
         }
 
-        if (preg_match('/bingbot/i', $useragent)) {
+        if ($s->contains('bingbot', false)) {
             return $this->loader->load('bingbot', $useragent);
         }
 
-        if (preg_match('/Mediapartners\-Google/', $useragent)) {
+        if ($s->contains('Mediapartners-Google', false)) {
             return $this->loader->load('adsense bot', $useragent);
         }
 
-        if (preg_match('/SMTBot/', $useragent)) {
+        if ($s->contains('SMTBot', false)) {
             return $this->loader->load('smtbot', $useragent);
         }
 
-        if (preg_match('/domain\.com/', $useragent)) {
+        if ($s->contains('domain.com', false)) {
             return $this->loader->load('pagepeeker screenshot maker', $useragent);
         }
 
-        if (preg_match('/PagePeeker/', $useragent)) {
+        if ($s->contains('PagePeeker', false)) {
             return $this->loader->load('pagepeeker', $useragent);
         }
 
-        if (preg_match('/DiigoBrowser/', $useragent)) {
+        if ($s->contains('DiigoBrowser', false)) {
             return $this->loader->load('diigo browser', $useragent);
         }
 
-        if (preg_match('/kontact/', $useragent)) {
+        if ($s->contains('kontact', false)) {
             return $this->loader->load('kontact', $useragent);
         }
 
-        if (preg_match('/QupZilla/', $useragent)) {
+        if ($s->contains('QupZilla', false)) {
             return $this->loader->load('qupzilla', $useragent);
         }
 
-        if (preg_match('/FxiOS/', $useragent)) {
+        if ($s->contains('FxiOS', false)) {
             return $this->loader->load('firefox for ios', $useragent);
         }
 
-        if (preg_match('/qutebrowser/', $useragent)) {
+        if ($s->contains('qutebrowser', false)) {
             return $this->loader->load('qutebrowser', $useragent);
         }
 
-        if (preg_match('/Otter/', $useragent)) {
+        if ($s->contains('Otter', false)) {
             return $this->loader->load('otter', $useragent);
         }
 
-        if (preg_match('/PaleMoon/', $useragent)) {
+        if ($s->contains('PaleMoon', false)) {
             return $this->loader->load('palemoon', $useragent);
         }
 
-        if (preg_match('/slurp/i', $useragent)) {
+        if ($s->contains('slurp', false)) {
             return $this->loader->load('slurp', $useragent);
         }
 
-        if (preg_match('/applebot/i', $useragent)) {
+        if ($s->contains('applebot', false)) {
             return $this->loader->load('applebot', $useragent);
         }
 
-        if (preg_match('/SoundCloud/', $useragent)) {
+        if ($s->contains('SoundCloud', false)) {
             return $this->loader->load('soundcloud app', $useragent);
         }
 
-        if (preg_match('/Rival IQ/', $useragent)) {
+        if ($s->contains('Rival IQ', false)) {
             return $this->loader->load('rival iq bot', $useragent);
         }
 
-        if (preg_match('/Evernote Clip Resolver/', $useragent)) {
+        if ($s->contains('Evernote Clip Resolver', false)) {
             return $this->loader->load('evernote clip resolver', $useragent);
         }
 
-        if (preg_match('/Evernote/', $useragent)) {
+        if ($s->contains('Evernote', false)) {
             return $this->loader->load('evernote app', $useragent);
         }
 
-        if (preg_match('/Fluid/', $useragent)) {
+        if ($s->contains('Fluid', false)) {
             return $this->loader->load('fluid', $useragent);
         }
 
-        if (preg_match('/safari/i', $useragent)) {
+        if ($s->contains('safari', false)) {
             return $this->loader->load('safari', $useragent);
         }
 
@@ -1038,15 +1036,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('safari', $useragent);
         }
 
-        if (preg_match('/TWCAN\/SportsNet/', $useragent)) {
+        if ($s->contains('TWCAN/SportsNet', false)) {
             return $this->loader->load('twc sportsnet', $useragent);
         }
 
-        if (preg_match('/AdobeAIR/', $useragent)) {
+        if ($s->contains('AdobeAIR', false)) {
             return $this->loader->load('adobe air', $useragent);
         }
 
-        if (preg_match('/(easouspider)/i', $useragent)) {
+        if ($s->contains('easouspider', false)) {
             return $this->loader->load('easouspider', $useragent);
         }
 
@@ -1054,103 +1052,103 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('mobile safari uiwebview', $useragent);
         }
 
-        if (preg_match('/waterfox/i', $useragent)) {
+        if ($s->contains('waterfox', false)) {
             return $this->loader->load('waterfox', $useragent);
         }
 
-        if (preg_match('/Thunderbird/', $useragent)) {
+        if ($s->contains('Thunderbird', false)) {
             return $this->loader->load('thunderbird', $useragent);
         }
 
-        if (preg_match('/Fennec/', $useragent)) {
+        if ($s->contains('Fennec', false)) {
             return $this->loader->load('fennec', $useragent);
         }
 
-        if (preg_match('/myibrow/', $useragent)) {
+        if ($s->contains('myibrow', false)) {
             return $this->loader->load('my internet browser', $useragent);
         }
 
-        if (preg_match('/Daumoa/', $useragent)) {
+        if ($s->contains('Daumoa', false)) {
             return $this->loader->load('daumoa', $useragent);
         }
 
-        if (preg_match('/PaleMoon/', $useragent)) {
+        if ($s->contains('PaleMoon', false)) {
             return $this->loader->load('palemoon', $useragent);
         }
 
-        if (preg_match('/iceweasel/i', $useragent)) {
+        if ($s->contains('iceweasel', false)) {
             return $this->loader->load('iceweasel', $useragent);
         }
 
-        if (preg_match('/icecat/i', $useragent)) {
+        if ($s->contains('icecat', false)) {
             return $this->loader->load('icecat', $useragent);
         }
 
-        if (preg_match('/iceape/i', $useragent)) {
+        if ($s->contains('iceape', false)) {
             return $this->loader->load('iceape', $useragent);
         }
 
-        if (preg_match('/galeon/i', $useragent)) {
+        if ($s->contains('galeon', false)) {
             return $this->loader->load('galeon', $useragent);
         }
 
-        if (preg_match('/SurveyBot/', $useragent)) {
+        if ($s->contains('SurveyBot', false)) {
             return $this->loader->load('surveybot', $useragent);
         }
 
-        if (preg_match('/aggregator\:Spinn3r/', $useragent)) {
+        if ($s->contains('aggregator:Spinn3r', false)) {
             return $this->loader->load('spinn3r rss aggregator', $useragent);
         }
 
-        if (preg_match('/TweetmemeBot/', $useragent)) {
+        if ($s->contains('TweetmemeBot', false)) {
             return $this->loader->load('tweetmeme bot', $useragent);
         }
 
-        if (preg_match('/Butterfly/', $useragent)) {
+        if ($s->contains('Butterfly', false)) {
             return $this->loader->load('butterfly robot', $useragent);
         }
 
-        if (preg_match('/James BOT/', $useragent)) {
+        if ($s->contains('James BOT', false)) {
             return $this->loader->load('jamesbot', $useragent);
         }
 
-        if (preg_match('/MSIE or Firefox mutant; not on Windows server/', $useragent)) {
+        if ($s->contains('MSIE or Firefox mutant; not on Windows server', false)) {
             return $this->loader->load('daumoa', $useragent);
         }
 
-        if (preg_match('/SailfishBrowser/', $useragent)) {
+        if ($s->contains('SailfishBrowser', false)) {
             return $this->loader->load('sailfish browser', $useragent);
         }
 
-        if (preg_match('/KcB/', $useragent)) {
+        if ($s->contains('KcB', false)) {
             return $this->loader->load('unknown', $useragent);
         }
 
-        if (preg_match('/kazehakase/i', $useragent)) {
+        if ($s->contains('kazehakase', false)) {
             return $this->loader->load('kazehakase', $useragent);
         }
 
-        if (preg_match('/cometbird/i', $useragent)) {
+        if ($s->contains('cometbird', false)) {
             return $this->loader->load('cometbird', $useragent);
         }
 
-        if (preg_match('/Camino/', $useragent)) {
+        if ($s->contains('Camino', false)) {
             return $this->loader->load('camino', $useragent);
         }
 
-        if (preg_match('/SlimerJS/', $useragent)) {
+        if ($s->contains('SlimerJS', false)) {
             return $this->loader->load('slimerjs', $useragent);
         }
 
-        if (preg_match('/MultiZilla/', $useragent)) {
+        if ($s->contains('MultiZilla', false)) {
             return $this->loader->load('multizilla', $useragent);
         }
 
-        if (preg_match('/Minimo/', $useragent)) {
+        if ($s->contains('Minimo', false)) {
             return $this->loader->load('minimo', $useragent);
         }
 
-        if (preg_match('/MicroB/', $useragent)) {
+        if ($s->contains('MicroB', false)) {
             return $this->loader->load('microb', $useragent);
         }
 
@@ -1161,67 +1159,67 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('firefox', $useragent);
         }
 
-        if (preg_match('/(firefox|minefield|shiretoko|bonecho|namoroka)/i', $useragent)) {
+        if ($s->containsAny(['firefox', 'minefield', 'shiretoko', 'bonecho', 'namoroka'], false)) {
             return $this->loader->load('firefox', $useragent);
         }
 
-        if (preg_match('/gvfs/', $useragent)) {
+        if ($s->contains('gvfs', false)) {
             return $this->loader->load('gvfs', $useragent);
         }
 
-        if (preg_match('/luakit/', $useragent)) {
+        if ($s->contains('luakit', false)) {
             return $this->loader->load('luakit', $useragent);
         }
 
-        if (preg_match('/playstation 3/i', $useragent)) {
+        if ($s->contains('playstation 3', false)) {
             return $this->loader->load('netfront', $useragent);
         }
 
-        if (preg_match('/sistrix/i', $useragent)) {
+        if ($s->contains('sistrix', false)) {
             return $this->loader->load('sistrix crawler', $useragent);
         }
 
-        if (preg_match('/ezooms/i', $useragent)) {
+        if ($s->contains('ezooms', false)) {
             return $this->loader->load('ezooms', $useragent);
         }
 
-        if (preg_match('/grapefx/i', $useragent)) {
+        if ($s->contains('grapefx', false)) {
             return $this->loader->load('grapefx', $useragent);
         }
 
-        if (preg_match('/grapeshotcrawler/i', $useragent)) {
+        if ($s->contains('grapeshotcrawler', false)) {
             return $this->loader->load('grapeshotcrawler', $useragent);
         }
 
-        if (preg_match('/(mail\.ru)/i', $useragent)) {
+        if ($s->contains('mail.ru', false)) {
             return $this->loader->load('mail.ru', $useragent);
         }
 
-        if (preg_match('/(proximic)/i', $useragent)) {
+        if ($s->contains('proximic', false)) {
             return $this->loader->load('proximic', $useragent);
         }
 
-        if (preg_match('/(polaris)/i', $useragent)) {
+        if ($s->contains('polaris', false)) {
             return $this->loader->load('polaris', $useragent);
         }
 
-        if (preg_match('/(another web mining tool|awmt)/i', $useragent)) {
+        if ($s->containsAny(['another web mining tool', 'awmt'], false)) {
             return $this->loader->load('another web mining tool', $useragent);
         }
 
-        if (preg_match('/(wbsearchbot|wbsrch)/i', $useragent)) {
+        if ($s->containsAny(['wbsearchbot', 'wbsrch'], false)) {
             return $this->loader->load('wbsearchbot', $useragent);
         }
 
-        if (preg_match('/(konqueror)/i', $useragent)) {
+        if ($s->contains('konqueror', false)) {
             return $this->loader->load('konqueror', $useragent);
         }
 
-        if (preg_match('/(typo3\-linkvalidator)/i', $useragent)) {
+        if ($s->contains('typo3-linkvalidator', false)) {
             return $this->loader->load('typo3 linkvalidator', $useragent);
         }
 
-        if (preg_match('/feeddlerrss/i', $useragent)) {
+        if ($s->contains('feeddlerrss', false)) {
             return $this->loader->load('feeddler rss reader', $useragent);
         }
 
@@ -1229,703 +1227,703 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('safari', $useragent);
         }
 
-        if (preg_match('/(ios|iphone|ipad|ipod)/i', $useragent)) {
+        if ($s->containsAny(['ios', 'iphone', 'ipad', 'ipod'], false)) {
             return $this->loader->load('mobile safari uiwebview', $useragent);
         }
 
-        if (preg_match('/paperlibot/i', $useragent)) {
+        if ($s->contains('paperlibot', false)) {
             return $this->loader->load('paper.li bot', $useragent);
         }
 
-        if (preg_match('/spbot/i', $useragent)) {
+        if ($s->contains('spbot', false)) {
             return $this->loader->load('seoprofiler', $useragent);
         }
 
-        if (preg_match('/dotbot/i', $useragent)) {
+        if ($s->contains('dotbot', false)) {
             return $this->loader->load('dotbot', $useragent);
         }
 
-        if (preg_match('/(google\-structureddatatestingtool|Google\-structured\-data\-testing\-tool)/i', $useragent)) {
+        if ($s->containsAny(['google-structureddatatestingtool', 'Google-structured-data-testing-tool'], false)) {
             return $this->loader->load('google structured-data testingtool', $useragent);
         }
 
-        if (preg_match('/webmastercoffee/i', $useragent)) {
+        if ($s->contains('webmastercoffee', false)) {
             return $this->loader->load('webmastercoffee', $useragent);
         }
 
-        if (preg_match('/ahrefs/i', $useragent)) {
+        if ($s->contains('ahrefs', false)) {
             return $this->loader->load('ahrefsbot', $useragent);
         }
 
-        if (preg_match('/apercite/i', $useragent)) {
+        if ($s->contains('apercite', false)) {
             return $this->loader->load('apercite', $useragent);
         }
 
-        if (preg_match('/woobot/', $useragent)) {
+        if ($s->contains('woobot', false)) {
             return $this->loader->load('woobot', $useragent);
         }
 
-        if (preg_match('/Blekkobot/', $useragent)) {
+        if ($s->contains('Blekkobot', false)) {
             return $this->loader->load('blekkobot', $useragent);
         }
 
-        if (preg_match('/PagesInventory/', $useragent)) {
+        if ($s->contains('PagesInventory', false)) {
             return $this->loader->load('pagesinventory bot', $useragent);
         }
 
-        if (preg_match('/Slackbot\-LinkExpanding/', $useragent)) {
+        if ($s->contains('Slackbot-LinkExpanding', false)) {
             return $this->loader->load('slackbot-link-expanding', $useragent);
         }
 
-        if (preg_match('/Slackbot/', $useragent)) {
+        if ($s->contains('Slackbot', false)) {
             return $this->loader->load('slackbot', $useragent);
         }
 
-        if (preg_match('/SEOkicks\-Robot/', $useragent)) {
+        if ($s->contains('SEOkicks-Robot', false)) {
             return $this->loader->load('seokicks robot', $useragent);
         }
 
-        if (preg_match('/Exabot/', $useragent)) {
+        if ($s->contains('Exabot', false)) {
             return $this->loader->load('exabot', $useragent);
         }
 
-        if (preg_match('/DomainSCAN/', $useragent)) {
+        if ($s->contains('DomainSCAN', false)) {
             return $this->loader->load('domainscan server monitoring', $useragent);
         }
 
-        if (preg_match('/JobRoboter/', $useragent)) {
+        if ($s->contains('JobRoboter', false)) {
             return $this->loader->load('jobroboter', $useragent);
         }
 
-        if (preg_match('/AcoonBot/', $useragent)) {
+        if ($s->contains('AcoonBot', false)) {
             return $this->loader->load('acoonbot', $useragent);
         }
 
-        if (preg_match('/woriobot/', $useragent)) {
+        if ($s->contains('woriobot', false)) {
             return $this->loader->load('woriobot', $useragent);
         }
 
-        if (preg_match('/MonoBot/', $useragent)) {
+        if ($s->contains('MonoBot', false)) {
             return $this->loader->load('monobot', $useragent);
         }
 
-        if (preg_match('/DomainSigmaCrawler/', $useragent)) {
+        if ($s->contains('DomainSigmaCrawler', false)) {
             return $this->loader->load('domainsigmacrawler', $useragent);
         }
 
-        if (preg_match('/bnf\.fr\_bot/', $useragent)) {
+        if ($s->contains('bnf.fr_bot', false)) {
             return $this->loader->load('bnf.fr bot', $useragent);
         }
 
-        if (preg_match('/CrawlRobot/', $useragent)) {
+        if ($s->contains('CrawlRobot', false)) {
             return $this->loader->load('crawlrobot', $useragent);
         }
 
-        if (preg_match('/AddThis\.com robot/', $useragent)) {
+        if ($s->contains('AddThis.com robot', false)) {
             return $this->loader->load('addthis.com robot', $useragent);
         }
 
-        if (preg_match('/(Yeti|naver\.com\/robots)/', $useragent)) {
+        if ($s->containsAny(['Yeti', 'naver.com/robots'], false)) {
             return $this->loader->load('naverbot', $useragent);
         }
 
-        if (preg_match('/^robots$/', $useragent)) {
+        if ($s->startsWith('robots', false)) {
             return $this->loader->load('testcrawler', $useragent);
         }
 
-        if (preg_match('/DeuSu/', $useragent)) {
+        if ($s->contains('DeuSu', false)) {
             return $this->loader->load('werbefreie deutsche suchmaschine', $useragent);
         }
 
-        if (preg_match('/obot/i', $useragent)) {
+        if ($s->contains('obot', false)) {
             return $this->loader->load('obot', $useragent);
         }
 
-        if (preg_match('/ZumBot/', $useragent)) {
+        if ($s->contains('ZumBot', false)) {
             return $this->loader->load('zumbot', $useragent);
         }
 
-        if (preg_match('/(umbot)/i', $useragent)) {
+        if ($s->contains('umbot', false)) {
             return $this->loader->load('umbot', $useragent);
         }
 
-        if (preg_match('/(picmole)/i', $useragent)) {
+        if ($s->contains('picmole', false)) {
             return $this->loader->load('picmole bot', $useragent);
         }
 
-        if (preg_match('/(zollard)/i', $useragent)) {
+        if ($s->contains('zollard', false)) {
             return $this->loader->load('zollard worm', $useragent);
         }
 
-        if (preg_match('/(fhscan core)/i', $useragent)) {
+        if ($s->contains('fhscan core', false)) {
             return $this->loader->load('fhscan core', $useragent);
         }
 
-        if (preg_match('/nbot/i', $useragent)) {
+        if ($s->contains('nbot', false)) {
             return $this->loader->load('nbot', $useragent);
         }
 
-        if (preg_match('/(loadtimebot)/i', $useragent)) {
+        if ($s->contains('loadtimebot', false)) {
             return $this->loader->load('loadtimebot', $useragent);
         }
 
-        if (preg_match('/(scrubby)/i', $useragent)) {
+        if ($s->contains('scrubby', false)) {
             return $this->loader->load('scrubby', $useragent);
         }
 
-        if (preg_match('/(squzer)/i', $useragent)) {
+        if ($s->contains('squzer', false)) {
             return $this->loader->load('squzer', $useragent);
         }
 
-        if (preg_match('/PiplBot/', $useragent)) {
+        if ($s->contains('PiplBot', false)) {
             return $this->loader->load('piplbot', $useragent);
         }
 
-        if (preg_match('/EveryoneSocialBot/', $useragent)) {
+        if ($s->contains('EveryoneSocialBot', false)) {
             return $this->loader->load('everyonesocialbot', $useragent);
         }
 
-        if (preg_match('/AOLbot/', $useragent)) {
+        if ($s->contains('AOLbot', false)) {
             return $this->loader->load('aolbot', $useragent);
         }
 
-        if (preg_match('/GLBot/', $useragent)) {
+        if ($s->contains('GLBot', false)) {
             return $this->loader->load('glbot', $useragent);
         }
 
-        if (preg_match('/(lbot)/i', $useragent)) {
+        if ($s->contains('lbot', false)) {
             return $this->loader->load('lbot', $useragent);
         }
 
-        if (preg_match('/(blexbot)/i', $useragent)) {
+        if ($s->contains('blexbot', false)) {
             return $this->loader->load('blexbot', $useragent);
         }
 
-        if (preg_match('/(socialradarbot)/i', $useragent)) {
+        if ($s->contains('socialradarbot', false)) {
             return $this->loader->load('socialradar bot', $useragent);
         }
 
-        if (preg_match('/(synapse)/i', $useragent)) {
+        if ($s->contains('synapse', false)) {
             return $this->loader->load('apache synapse', $useragent);
         }
 
-        if (preg_match('/(linkdexbot)/i', $useragent)) {
+        if ($s->contains('linkdexbot', false)) {
             return $this->loader->load('linkdex bot', $useragent);
         }
 
-        if (preg_match('/(coccoc)/i', $useragent)) {
+        if ($s->contains('coccoc', false)) {
             return $this->loader->load('coccoc bot', $useragent);
         }
 
-        if (preg_match('/(siteexplorer)/i', $useragent)) {
+        if ($s->contains('siteexplorer', false)) {
             return $this->loader->load('siteexplorer', $useragent);
         }
 
-        if (preg_match('/(semrushbot)/i', $useragent)) {
+        if ($s->contains('semrushbot', false)) {
             return $this->loader->load('semrushbot', $useragent);
         }
 
-        if (preg_match('/(istellabot)/i', $useragent)) {
+        if ($s->contains('istellabot', false)) {
             return $this->loader->load('istellabot', $useragent);
         }
 
-        if (preg_match('/(meanpathbot)/i', $useragent)) {
+        if ($s->contains('meanpathbot', false)) {
             return $this->loader->load('meanpathbot', $useragent);
         }
 
-        if (preg_match('/(XML Sitemaps Generator)/', $useragent)) {
+        if ($s->contains('XML Sitemaps Generator', false)) {
             return $this->loader->load('xml sitemaps generator', $useragent);
         }
 
-        if (preg_match('/SeznamBot/', $useragent)) {
+        if ($s->contains('SeznamBot', false)) {
             return $this->loader->load('seznambot', $useragent);
         }
 
-        if (preg_match('/URLAppendBot/', $useragent)) {
+        if ($s->contains('URLAppendBot', false)) {
             return $this->loader->load('urlappendbot', $useragent);
         }
 
-        if (preg_match('/NetSeer crawler/', $useragent)) {
+        if ($s->contains('NetSeer crawler', false)) {
             return $this->loader->load('netseer crawler', $useragent);
         }
 
-        if (preg_match('/SeznamBot/', $useragent)) {
+        if ($s->contains('SeznamBot', false)) {
             return $this->loader->load('seznambot', $useragent);
         }
 
-        if (preg_match('/Add Catalog/', $useragent)) {
+        if ($s->contains('Add Catalog', false)) {
             return $this->loader->load('add catalog', $useragent);
         }
 
-        if (preg_match('/Moreover/', $useragent)) {
+        if ($s->contains('Moreover', false)) {
             return $this->loader->load('moreover', $useragent);
         }
 
-        if (preg_match('/LinkpadBot/', $useragent)) {
+        if ($s->contains('LinkpadBot', false)) {
             return $this->loader->load('linkpadbot', $useragent);
         }
 
-        if (preg_match('/Lipperhey SEO Service/', $useragent)) {
+        if ($s->contains('Lipperhey SEO Service', false)) {
             return $this->loader->load('lipperhey seo service', $useragent);
         }
 
-        if (preg_match('/Blog Search/', $useragent)) {
+        if ($s->contains('Blog Search', false)) {
             return $this->loader->load('blog search', $useragent);
         }
 
-        if (preg_match('/Qualidator\.com Bot/', $useragent)) {
+        if ($s->contains('Qualidator.com Bot', false)) {
             return $this->loader->load('qualidator.com bot', $useragent);
         }
 
-        if (preg_match('/fr\-crawler/', $useragent)) {
+        if ($s->contains('fr-crawler', false)) {
             return $this->loader->load('fr-crawler', $useragent);
         }
 
-        if (preg_match('/ca\-crawler/', $useragent)) {
+        if ($s->contains('ca-crawler', false)) {
             return $this->loader->load('ca-crawler', $useragent);
         }
 
-        if (preg_match('/Website Thumbnail Generator/', $useragent)) {
+        if ($s->contains('Website Thumbnail Generator', false)) {
             return $this->loader->load('website thumbnail generator', $useragent);
         }
 
-        if (preg_match('/WebThumb/', $useragent)) {
+        if ($s->contains('WebThumb', false)) {
             return $this->loader->load('webthumb', $useragent);
         }
 
-        if (preg_match('/KomodiaBot/', $useragent)) {
+        if ($s->contains('KomodiaBot', false)) {
             return $this->loader->load('komodiabot', $useragent);
         }
 
-        if (preg_match('/GroupHigh/', $useragent)) {
+        if ($s->contains('GroupHigh', false)) {
             return $this->loader->load('grouphigh bot', $useragent);
         }
 
-        if (preg_match('/theoldreader/', $useragent)) {
+        if ($s->contains('theoldreader', false)) {
             return $this->loader->load('the old reader', $useragent);
         }
 
-        if (preg_match('/Google\-Site\-Verification/', $useragent)) {
+        if ($s->contains('Google-Site-Verification', false)) {
             return $this->loader->load('google-site-verification', $useragent);
         }
 
-        if (preg_match('/Prlog/', $useragent)) {
+        if ($s->contains('Prlog', false)) {
             return $this->loader->load('prlog', $useragent);
         }
 
-        if (preg_match('/CMS Crawler/', $useragent)) {
+        if ($s->contains('CMS Crawler', false)) {
             return $this->loader->load('cms crawler', $useragent);
         }
 
-        if (preg_match('/pmoz\.info ODP link checker/', $useragent)) {
+        if ($s->contains('pmoz.info ODP link checker', false)) {
             return $this->loader->load('pmoz.info odp link checker', $useragent);
         }
 
-        if (preg_match('/Twingly Recon/', $useragent)) {
+        if ($s->contains('Twingly Recon', false)) {
             return $this->loader->load('twingly recon', $useragent);
         }
 
-        if (preg_match('/Embedly/', $useragent)) {
+        if ($s->contains('Embedly', false)) {
             return $this->loader->load('embedly', $useragent);
         }
 
-        if (preg_match('/Alexabot/', $useragent)) {
+        if ($s->contains('Alexabot', false)) {
             return $this->loader->load('alexabot', $useragent);
         }
 
-        if (preg_match('/alexa site audit/', $useragent)) {
+        if ($s->contains('alexa site audit', false)) {
             return $this->loader->load('alexa site audit', $useragent);
         }
 
-        if (preg_match('/MJ12bot/', $useragent)) {
+        if ($s->contains('MJ12bot', false)) {
             return $this->loader->load('mj12bot', $useragent);
         }
 
-        if (preg_match('/HTTrack/', $useragent)) {
+        if ($s->contains('HTTrack', false)) {
             return $this->loader->load('httrack', $useragent);
         }
 
-        if (preg_match('/UnisterBot/', $useragent)) {
+        if ($s->contains('UnisterBot', false)) {
             return $this->loader->load('unisterbot', $useragent);
         }
 
-        if (preg_match('/CareerBot/', $useragent)) {
+        if ($s->contains('CareerBot', false)) {
             return $this->loader->load('careerbot', $useragent);
         }
 
-        if (preg_match('/80legs/i', $useragent)) {
+        if ($s->contains('80legs', false)) {
             return $this->loader->load('80legs', $useragent);
         }
 
-        if (preg_match('/wada\.vn/i', $useragent)) {
+        if ($s->contains('wada.vn', false)) {
             return $this->loader->load('wada.vn search bot', $useragent);
         }
 
-        if (preg_match('/(NX|WiiU|Nintendo 3DS)/', $useragent)) {
+        if ($s->containsAny(['NX', 'WiiU', 'Nintendo 3DS'], false)) {
             return $this->loader->load('netfront nx', $useragent);
         }
 
-        if (preg_match('/(netfront|playstation 4)/i', $useragent)) {
+        if ($s->containsAny(['netfront', 'playstation 4'], false)) {
             return $this->loader->load('netfront', $useragent);
         }
 
-        if (preg_match('/XoviBot/', $useragent)) {
+        if ($s->contains('XoviBot', false)) {
             return $this->loader->load('xovibot', $useragent);
         }
 
-        if (preg_match('/007ac9 Crawler/', $useragent)) {
+        if ($s->contains('007ac9 Crawler', false)) {
             return $this->loader->load('007ac9 crawler', $useragent);
         }
 
-        if (preg_match('/200PleaseBot/', $useragent)) {
+        if ($s->contains('200PleaseBot', false)) {
             return $this->loader->load('200pleasebot', $useragent);
         }
 
-        if (preg_match('/Abonti/', $useragent)) {
+        if ($s->contains('Abonti', false)) {
             return $this->loader->load('abonti websearch', $useragent);
         }
 
-        if (preg_match('/publiclibraryarchive/', $useragent)) {
+        if ($s->contains('publiclibraryarchive', false)) {
             return $this->loader->load('publiclibraryarchive bot', $useragent);
         }
 
-        if (preg_match('/PAD\-bot/', $useragent)) {
+        if ($s->contains('PAD-bot', false)) {
             return $this->loader->load('pad-bot', $useragent);
         }
 
-        if (preg_match('/SoftListBot/', $useragent)) {
+        if ($s->contains('SoftListBot', false)) {
             return $this->loader->load('softlistbot', $useragent);
         }
 
-        if (preg_match('/sReleaseBot/', $useragent)) {
+        if ($s->contains('sReleaseBot', false)) {
             return $this->loader->load('sreleasebot', $useragent);
         }
 
-        if (preg_match('/Vagabondo/', $useragent)) {
+        if ($s->contains('Vagabondo', false)) {
             return $this->loader->load('vagabondo', $useragent);
         }
 
-        if (preg_match('/special\_archiver/', $useragent)) {
+        if ($s->contains('special_archiver', false)) {
             return $this->loader->load('internet archive special archiver', $useragent);
         }
 
-        if (preg_match('/Optimizer/', $useragent)) {
+        if ($s->contains('Optimizer', false)) {
             return $this->loader->load('optimizer bot', $useragent);
         }
 
-        if (preg_match('/Sophora Linkchecker/', $useragent)) {
+        if ($s->contains('Sophora Linkchecker', false)) {
             return $this->loader->load('sophora linkchecker', $useragent);
         }
 
-        if (preg_match('/SEOdiver/', $useragent)) {
+        if ($s->contains('SEOdiver', false)) {
             return $this->loader->load('seodiver bot', $useragent);
         }
 
-        if (preg_match('/itsscan/', $useragent)) {
+        if ($s->contains('itsscan', false)) {
             return $this->loader->load('itsscan', $useragent);
         }
 
-        if (preg_match('/Google Desktop/', $useragent)) {
+        if ($s->contains('Google Desktop', false)) {
             return $this->loader->load('google desktop', $useragent);
         }
 
-        if (preg_match('/Lotus\-Notes/', $useragent)) {
+        if ($s->contains('Lotus-Notes', false)) {
             return $this->loader->load('lotus notes', $useragent);
         }
 
-        if (preg_match('/AskPeterBot/', $useragent)) {
+        if ($s->contains('AskPeterBot', false)) {
             return $this->loader->load('askpeterbot', $useragent);
         }
 
-        if (preg_match('/discoverybot/', $useragent)) {
+        if ($s->contains('discoverybot', false)) {
             return $this->loader->load('discovery bot', $useragent);
         }
 
-        if (preg_match('/YandexBot/', $useragent)) {
+        if ($s->contains('YandexBot', false)) {
             return $this->loader->load('yandexbot', $useragent);
         }
 
-        if (preg_match('/MOSBookmarks/', $useragent) && preg_match('/Link Checker/', $useragent)) {
+        if ($s->containsAll(['MOSBookmarks', 'Link Checker'], false)) {
             return $this->loader->load('mosbookmarks link checker', $useragent);
         }
 
-        if (preg_match('/MOSBookmarks/', $useragent)) {
+        if ($s->contains('MOSBookmarks', false)) {
             return $this->loader->load('mosbookmarks', $useragent);
         }
 
-        if (preg_match('/WebMasterAid/', $useragent)) {
+        if ($s->contains('WebMasterAid', false)) {
             return $this->loader->load('webmasteraid', $useragent);
         }
 
-        if (preg_match('/AboutUsBot Johnny5/', $useragent)) {
+        if ($s->contains('AboutUsBot Johnny5', false)) {
             return $this->loader->load('aboutus bot johnny5', $useragent);
         }
 
-        if (preg_match('/AboutUsBot/', $useragent)) {
+        if ($s->contains('AboutUsBot', false)) {
             return $this->loader->load('aboutus bot', $useragent);
         }
 
-        if (preg_match('/semantic\-visions\.com crawler/', $useragent)) {
+        if ($s->contains('semantic-visions.com crawler', false)) {
             return $this->loader->load('semantic-visions.com crawler', $useragent);
         }
 
-        if (preg_match('/waybackarchive\.org/', $useragent)) {
+        if ($s->contains('waybackarchive.org', false)) {
             return $this->loader->load('wayback archive bot', $useragent);
         }
 
-        if (preg_match('/OpenVAS/', $useragent)) {
+        if ($s->contains('OpenVAS', false)) {
             return $this->loader->load('open vulnerability assessment system', $useragent);
         }
 
-        if (preg_match('/MixrankBot/', $useragent)) {
+        if ($s->contains('MixrankBot', false)) {
             return $this->loader->load('mixrankbot', $useragent);
         }
 
-        if (preg_match('/InfegyAtlas/', $useragent)) {
+        if ($s->contains('InfegyAtlas', false)) {
             return $this->loader->load('infegyatlas', $useragent);
         }
 
-        if (preg_match('/MojeekBot/', $useragent)) {
+        if ($s->contains('MojeekBot', false)) {
             return $this->loader->load('mojeekbot', $useragent);
         }
 
-        if (preg_match('/memorybot/i', $useragent)) {
+        if ($s->contains('memorybot', false)) {
             return $this->loader->load('memorybot', $useragent);
         }
 
-        if (preg_match('/DomainAppender/', $useragent)) {
+        if ($s->contains('DomainAppender', false)) {
             return $this->loader->load('domainappender bot', $useragent);
         }
 
-        if (preg_match('/GIDBot/', $useragent)) {
+        if ($s->contains('GIDBot', false)) {
             return $this->loader->load('gidbot', $useragent);
         }
 
-        if (preg_match('/DBot/', $useragent)) {
+        if ($s->contains('DBot', false)) {
             return $this->loader->load('dbot', $useragent);
         }
 
-        if (preg_match('/PWBot/', $useragent)) {
+        if ($s->contains('PWBot', false)) {
             return $this->loader->load('pwbot', $useragent);
         }
 
-        if (preg_match('/\+5Bot/', $useragent)) {
+        if ($s->contains('+5Bot', false)) {
             return $this->loader->load('plus5bot', $useragent);
         }
 
-        if (preg_match('/WASALive\-Bot/', $useragent)) {
+        if ($s->contains('WASALive-Bot', false)) {
             return $this->loader->load('wasalive bot', $useragent);
         }
 
-        if (preg_match('/OpenHoseBot/', $useragent)) {
+        if ($s->contains('OpenHoseBot', false)) {
             return $this->loader->load('openhosebot', $useragent);
         }
 
-        if (preg_match('/URLfilterDB\-crawler/', $useragent)) {
+        if ($s->contains('URLfilterDB-crawler', false)) {
             return $this->loader->load('urlfilterdb crawler', $useragent);
         }
 
-        if (preg_match('/metager2\-verification\-bot/', $useragent)) {
+        if ($s->contains('metager2-verification-bot', false)) {
             return $this->loader->load('metager2-verification-bot', $useragent);
         }
 
-        if (preg_match('/Powermarks/', $useragent)) {
+        if ($s->contains('Powermarks', false)) {
             return $this->loader->load('powermarks', $useragent);
         }
 
-        if (preg_match('/CloudFlare\-AlwaysOnline/', $useragent)) {
+        if ($s->contains('CloudFlare-AlwaysOnline', false)) {
             return $this->loader->load('cloudflare alwaysonline', $useragent);
         }
 
-        if (preg_match('/Phantom\.js bot/', $useragent)) {
+        if ($s->contains('Phantom.js bot', false)) {
             return $this->loader->load('phantom.js bot', $useragent);
         }
 
-        if (preg_match('/Phantom/', $useragent)) {
+        if ($s->contains('Phantom', false)) {
             return $this->loader->load('phantom browser', $useragent);
         }
 
-        if (preg_match('/Shrook/', $useragent)) {
+        if ($s->contains('Shrook', false)) {
             return $this->loader->load('shrook', $useragent);
         }
 
-        if (preg_match('/netEstate NE Crawler/', $useragent)) {
+        if ($s->contains('netEstate NE Crawler', false)) {
             return $this->loader->load('netestate ne crawler', $useragent);
         }
 
-        if (preg_match('/garlikcrawler/i', $useragent)) {
+        if ($s->contains('garlikcrawler', false)) {
             return $this->loader->load('garlikcrawler', $useragent);
         }
 
-        if (preg_match('/metageneratorcrawler/i', $useragent)) {
+        if ($s->contains('metageneratorcrawler', false)) {
             return $this->loader->load('metageneratorcrawler', $useragent);
         }
 
-        if (preg_match('/ScreenerBot/', $useragent)) {
+        if ($s->contains('ScreenerBot', false)) {
             return $this->loader->load('screenerbot', $useragent);
         }
 
-        if (preg_match('/WebTarantula\.com Crawler/', $useragent)) {
+        if ($s->contains('WebTarantula.com Crawler', false)) {
             return $this->loader->load('webtarantula', $useragent);
         }
 
-        if (preg_match('/BacklinkCrawler/', $useragent)) {
+        if ($s->contains('BacklinkCrawler', false)) {
             return $this->loader->load('backlinkcrawler', $useragent);
         }
 
-        if (preg_match('/LinksCrawler/', $useragent)) {
+        if ($s->contains('LinksCrawler', false)) {
             return $this->loader->load('linkscrawler', $useragent);
         }
 
-        if (preg_match('/(ssearch\_bot|sSearch Crawler)/', $useragent)) {
+        if ($s->containsAny(['ssearch_bot', 'sSearch Crawler'], false)) {
             return $this->loader->load('ssearch crawler', $useragent);
         }
 
-        if (preg_match('/HRCrawler/', $useragent)) {
+        if ($s->contains('HRCrawler', false)) {
             return $this->loader->load('hrcrawler', $useragent);
         }
 
-        if (preg_match('/ICC\-Crawler/', $useragent)) {
+        if ($s->contains('ICC-Crawler', false)) {
             return $this->loader->load('icc-crawler', $useragent);
         }
 
-        if (preg_match('/Arachnida Web Crawler/', $useragent)) {
+        if ($s->contains('Arachnida Web Crawler', false)) {
             return $this->loader->load('arachnida web crawler', $useragent);
         }
 
-        if (preg_match('/Finderlein Research Crawler/', $useragent)) {
+        if ($s->contains('Finderlein Research Crawler', false)) {
             return $this->loader->load('finderlein research crawler', $useragent);
         }
 
-        if (preg_match('/TestCrawler/', $useragent)) {
+        if ($s->contains('TestCrawler', false)) {
             return $this->loader->load('testcrawler', $useragent);
         }
 
-        if (preg_match('/Scopia Crawler/', $useragent)) {
+        if ($s->contains('Scopia Crawler', false)) {
             return $this->loader->load('scopia crawler', $useragent);
         }
 
-        if (preg_match('/Crawler/', $useragent)) {
+        if ($s->contains('Crawler', false)) {
             return $this->loader->load('crawler', $useragent);
         }
 
-        if (preg_match('/MetaJobBot/', $useragent)) {
+        if ($s->contains('MetaJobBot', false)) {
             return $this->loader->load('metajobbot', $useragent);
         }
 
-        if (preg_match('/jig browser web/', $useragent)) {
+        if ($s->contains('jig browser web', false)) {
             return $this->loader->load('jig browser web', $useragent);
         }
 
-        if (preg_match('/T\-H\-U\-N\-D\-E\-R\-S\-T\-O\-N\-E/', $useragent)) {
+        if ($s->contains('T-H-U-N-D-E-R-S-T-O-N-E', false)) {
             return $this->loader->load('texis webscript', $useragent);
         }
 
-        if (preg_match('/focuseekbot/', $useragent)) {
+        if ($s->contains('focuseekbot', false)) {
             return $this->loader->load('focuseekbot', $useragent);
         }
 
-        if (preg_match('/vBSEO/', $useragent)) {
+        if ($s->contains('vBSEO', false)) {
             return $this->loader->load('vbulletin seo bot', $useragent);
         }
 
-        if (preg_match('/kgbody/', $useragent)) {
+        if ($s->contains('kgbody', false)) {
             return $this->loader->load('kgbody', $useragent);
         }
 
-        if (preg_match('/JobdiggerSpider/', $useragent)) {
+        if ($s->contains('JobdiggerSpider', false)) {
             return $this->loader->load('jobdiggerspider', $useragent);
         }
 
-        if (preg_match('/imrbot/', $useragent)) {
+        if ($s->contains('imrbot', false)) {
             return $this->loader->load('mignify bot', $useragent);
         }
 
-        if (preg_match('/kulturarw3/', $useragent)) {
+        if ($s->contains('kulturarw3', false)) {
             return $this->loader->load('kulturarw3', $useragent);
         }
 
-        if (preg_match('/LucidWorks/', $useragent)) {
+        if ($s->contains('LucidWorks', false)) {
             return $this->loader->load('lucidworks bot', $useragent);
         }
 
-        if (preg_match('/MerchantCentricBot/', $useragent)) {
+        if ($s->contains('MerchantCentricBot', false)) {
             return $this->loader->load('merchantcentricbot', $useragent);
         }
 
-        if (preg_match('/Nett\.io bot/', $useragent)) {
+        if ($s->contains('Nett.io bot', false)) {
             return $this->loader->load('nett.io bot', $useragent);
         }
 
-        if (preg_match('/SemanticBot/', $useragent)) {
+        if ($s->contains('SemanticBot', false)) {
             return $this->loader->load('semanticbot', $useragent);
         }
 
-        if (preg_match('/tweetedtimes/i', $useragent)) {
+        if ($s->contains('tweetedtimes', false)) {
             return $this->loader->load('tweetedtimes bot', $useragent);
         }
 
-        if (preg_match('/vkShare/', $useragent)) {
+        if ($s->contains('vkShare', false)) {
             return $this->loader->load('vkshare', $useragent);
         }
 
-        if (preg_match('/Yahoo Ad monitoring/', $useragent)) {
+        if ($s->contains('Yahoo Ad monitoring', false)) {
             return $this->loader->load('yahoo ad monitoring', $useragent);
         }
 
-        if (preg_match('/YioopBot/', $useragent)) {
+        if ($s->contains('YioopBot', false)) {
             return $this->loader->load('yioopbot', $useragent);
         }
 
-        if (preg_match('/zitebot/', $useragent)) {
+        if ($s->contains('zitebot', false)) {
             return $this->loader->load('zitebot', $useragent);
         }
 
-        if (preg_match('/Espial/', $useragent)) {
+        if ($s->contains('Espial', false)) {
             return $this->loader->load('espial tv browser', $useragent);
         }
 
-        if (preg_match('/SiteCon/', $useragent)) {
+        if ($s->contains('SiteCon', false)) {
             return $this->loader->load('sitecon', $useragent);
         }
 
-        if (preg_match('/iBooks Author/', $useragent)) {
+        if ($s->contains('iBooks Author', false)) {
             return $this->loader->load('ibooks author', $useragent);
         }
 
-        if (preg_match('/iWeb/', $useragent)) {
+        if ($s->contains('iWeb', false)) {
             return $this->loader->load('iweb', $useragent);
         }
 
-        if (preg_match('/NewsFire/', $useragent)) {
+        if ($s->contains('NewsFire', false)) {
             return $this->loader->load('newsfire', $useragent);
         }
 
-        if (preg_match('/RMSnapKit/', $useragent)) {
+        if ($s->contains('RMSnapKit', false)) {
             return $this->loader->load('rmsnapkit', $useragent);
         }
 
-        if (preg_match('/Sandvox/', $useragent)) {
+        if ($s->contains('Sandvox', false)) {
             return $this->loader->load('sandvox', $useragent);
         }
 
-        if (preg_match('/TubeTV/', $useragent)) {
+        if ($s->contains('TubeTV', false)) {
             return $this->loader->load('tubetv', $useragent);
         }
 
-        if (preg_match('/Elluminate Live/', $useragent)) {
+        if ($s->contains('Elluminate Live', false)) {
             return $this->loader->load('elluminate live', $useragent);
         }
 
-        if (preg_match('/Element Browser/', $useragent)) {
+        if ($s->contains('Element Browser', false)) {
             return $this->loader->load('element browser', $useragent);
         }
 
-        if (preg_match('/K\-Meleon/', $useragent)) {
+        if ($s->contains('K-Meleon', false)) {
             return $this->loader->load('k-meleon', $useragent);
         }
 
-        if (preg_match('/Esribot/', $useragent)) {
+        if ($s->contains('Esribot', false)) {
             return $this->loader->load('esribot', $useragent);
         }
 
@@ -1933,143 +1931,143 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('quicklook', $useragent);
         }
 
-        if (preg_match('/dillo/i', $useragent)) {
+        if ($s->contains('dillo', false)) {
             return $this->loader->load('dillo', $useragent);
         }
 
-        if (preg_match('/Digg/', $useragent)) {
+        if ($s->contains('Digg', false)) {
             return $this->loader->load('digg bot', $useragent);
         }
 
-        if (preg_match('/Zetakey/', $useragent)) {
+        if ($s->contains('Zetakey', false)) {
             return $this->loader->load('zetakey browser', $useragent);
         }
 
-        if (preg_match('/getprismatic\.com/', $useragent)) {
+        if ($s->contains('getprismatic.com', false)) {
             return $this->loader->load('prismatic app', $useragent);
         }
 
-        if (preg_match('/(FOMA|SH05C)/', $useragent)) {
+        if ($s->contains('(FOMA|SH05C)', false)) {
             return $this->loader->load('sharp', $useragent);
         }
 
-        if (preg_match('/OpenWebKitSharp/', $useragent)) {
+        if ($s->contains('OpenWebKitSharp', false)) {
             return $this->loader->load('open-webkit-sharp', $useragent);
         }
 
-        if (preg_match('/AjaxSnapBot/', $useragent)) {
+        if ($s->contains('AjaxSnapBot', false)) {
             return $this->loader->load('ajaxsnapbot', $useragent);
         }
 
-        if (preg_match('/Owler/', $useragent)) {
+        if ($s->contains('Owler', false)) {
             return $this->loader->load('owler bot', $useragent);
         }
 
-        if (preg_match('/Yahoo Link Preview/', $useragent)) {
+        if ($s->contains('Yahoo Link Preview', false)) {
             return $this->loader->load('yahoo link preview', $useragent);
         }
 
-        if (preg_match('/pub\-crawler/', $useragent)) {
+        if ($s->contains('pub-crawler', false)) {
             return $this->loader->load('pub-crawler', $useragent);
         }
 
-        if (preg_match('/Kraken/', $useragent)) {
+        if ($s->contains('Kraken', false)) {
             return $this->loader->load('kraken', $useragent);
         }
 
-        if (preg_match('/Qwantify/', $useragent)) {
+        if ($s->contains('Qwantify', false)) {
             return $this->loader->load('qwantify', $useragent);
         }
 
-        if (preg_match('/SetLinks bot/', $useragent)) {
+        if ($s->contains('SetLinks bot', false)) {
             return $this->loader->load('setlinks.ru crawler', $useragent);
         }
 
-        if (preg_match('/MegaIndex\.ru/', $useragent)) {
+        if ($s->contains('MegaIndex.ru', false)) {
             return $this->loader->load('megaindex bot', $useragent);
         }
 
-        if (preg_match('/Cliqzbot/', $useragent)) {
+        if ($s->contains('Cliqzbot', false)) {
             return $this->loader->load('cliqzbot', $useragent);
         }
 
-        if (preg_match('/DAWINCI ANTIPLAG SPIDER/', $useragent)) {
+        if ($s->contains('DAWINCI ANTIPLAG SPIDER', false)) {
             return $this->loader->load('dawinci antiplag spider', $useragent);
         }
 
-        if (preg_match('/AdvBot/', $useragent)) {
+        if ($s->contains('AdvBot', false)) {
             return $this->loader->load('advbot', $useragent);
         }
 
-        if (preg_match('/DuckDuckGo\-Favicons\-Bot/', $useragent)) {
+        if ($s->contains('DuckDuckGo-Favicons-Bot', false)) {
             return $this->loader->load('duckduck favicons bot', $useragent);
         }
 
-        if (preg_match('/ZyBorg/', $useragent)) {
+        if ($s->contains('ZyBorg', false)) {
             return $this->loader->load('wisenut search engine crawler', $useragent);
         }
 
-        if (preg_match('/HyperCrawl/', $useragent)) {
+        if ($s->contains('HyperCrawl', false)) {
             return $this->loader->load('hypercrawl', $useragent);
         }
 
-        if (preg_match('/ARCHIVE\.ORG\.UA crawler/', $useragent)) {
+        if ($s->contains('ARCHIVE.ORG.UA crawler', false)) {
             return $this->loader->load('internet archive', $useragent);
         }
 
-        if (preg_match('/worldwebheritage/', $useragent)) {
+        if ($s->contains('worldwebheritage', false)) {
             return $this->loader->load('worldwebheritage.org bot', $useragent);
         }
 
-        if (preg_match('/BegunAdvertising/', $useragent)) {
+        if ($s->contains('BegunAdvertising', false)) {
             return $this->loader->load('begun advertising bot', $useragent);
         }
 
-        if (preg_match('/TrendWinHttp/', $useragent)) {
+        if ($s->contains('TrendWinHttp', false)) {
             return $this->loader->load('trendwinhttp', $useragent);
         }
 
-        if (preg_match('/(winhttp|winhttprequest)/i', $useragent)) {
+        if ($s->contains('(winhttp|winhttprequest)', false)) {
             return $this->loader->load('winhttp', $useragent);
         }
 
-        if (preg_match('/SkypeUriPreview/', $useragent)) {
+        if ($s->contains('SkypeUriPreview', false)) {
             return $this->loader->load('skypeuripreview', $useragent);
         }
 
-        if (preg_match('/ScoutJet/', $useragent)) {
+        if ($s->contains('ScoutJet', false)) {
             return $this->loader->load('scoutjet', $useragent);
         }
 
-        if (preg_match('/Lipperhey\-Kaus\-Australis/', $useragent)) {
+        if ($s->contains('Lipperhey-Kaus-Australis', false)) {
             return $this->loader->load('lipperhey kaus australis', $useragent);
         }
 
-        if (preg_match('/Digincore bot/', $useragent)) {
+        if ($s->contains('Digincore bot', false)) {
             return $this->loader->load('digincore bot', $useragent);
         }
 
-        if (preg_match('/Steeler/', $useragent)) {
+        if ($s->contains('Steeler', false)) {
             return $this->loader->load('steeler', $useragent);
         }
 
-        if (preg_match('/Orangebot/', $useragent)) {
+        if ($s->contains('Orangebot', false)) {
             return $this->loader->load('orangebot', $useragent);
         }
 
-        if (preg_match('/Jasmine/', $useragent)) {
+        if ($s->contains('Jasmine', false)) {
             return $this->loader->load('jasmine', $useragent);
         }
 
-        if (preg_match('/electricmonk/', $useragent)) {
+        if ($s->contains('electricmonk', false)) {
             return $this->loader->load('duedil crawler', $useragent);
         }
 
-        if (preg_match('/yoozBot/', $useragent)) {
+        if ($s->contains('yoozBot', false)) {
             return $this->loader->load('yoozbot', $useragent);
         }
 
-        if (preg_match('/online\-webceo\-bot/', $useragent)) {
+        if ($s->contains('online-webceo-bot', false)) {
             return $this->loader->load('webceo bot', $useragent);
         }
 
@@ -2085,19 +2083,19 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('firefox', $useragent);
         }
 
-        if (preg_match('/Netscape/', $useragent)) {
+        if ($s->contains('Netscape', false)) {
             return $this->loader->load('netscape', $useragent);
         }
 
-        if (preg_match('/^Mozilla\/5\.0$/', $useragent)) {
+        if ($s->contains('^Mozilla/5.0$', false)) {
             return $this->loader->load('unknown', $useragent);
         }
 
-        if (preg_match('/Virtuoso/', $useragent)) {
+        if ($s->contains('Virtuoso', false)) {
             return $this->loader->load('virtuoso', $useragent);
         }
 
-        if (preg_match('/^Mozilla\/(3|4)\.\d+/', $useragent, $matches)
+        if (preg_match('/^Mozilla\/5\.0 \(.*rv:\d+\.\d+.*\) Gecko\/.*\//', $useragent)
             && !preg_match('/(msie|android)/i', $useragent, $matches)
         ) {
             return $this->loader->load('netscape', $useragent);
@@ -2107,2367 +2105,2363 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('dalvik', $useragent);
         }
 
-        if (preg_match('/niki\-bot/', $useragent)) {
+        if ($s->contains('niki-bot', false)) {
             return $this->loader->load('niki-bot', $useragent);
         }
 
-        if (preg_match('/ContextAd Bot/', $useragent)) {
+        if ($s->contains('ContextAd Bot', false)) {
             return $this->loader->load('contextad bot', $useragent);
         }
 
-        if (preg_match('/integrity/', $useragent)) {
+        if ($s->contains('integrity', false)) {
             return $this->loader->load('integrity', $useragent);
         }
 
-        if (preg_match('/masscan/', $useragent)) {
+        if ($s->contains('masscan', false)) {
             return $this->loader->load('masscan', $useragent);
         }
 
-        if (preg_match('/ZmEu/', $useragent)) {
+        if ($s->contains('ZmEu', false)) {
             return $this->loader->load('zmeu', $useragent);
         }
 
-        if (preg_match('/sogou web spider/i', $useragent)) {
+        if ($s->contains('sogou web spider', false)) {
             return $this->loader->load('sogou web spider', $useragent);
         }
 
-        if (preg_match('/(OpenWave|UP\.Browser|UP\/)/', $useragent)) {
+        if ($s->contains('(OpenWave|UP.Browser|UP/)', false)) {
             return $this->loader->load('openwave mobile browser', $useragent);
         }
 
-        if (preg_match('/(ObigoInternetBrowser|obigo\-browser|Obigo|Teleca)(\/|-)Q(\d+)/', $useragent)) {
+        if ($s->contains('(ObigoInternetBrowser|obigo-browser|Obigo|Teleca)(/|-)Q(\d+)', false)) {
             return $this->loader->load('obigo q', $useragent);
         }
 
-        if (preg_match('/(Teleca|Obigo|MIC\/|AU\-MIC)/', $useragent)) {
+        if ($s->contains('(Teleca|Obigo|MIC/|AU-MIC)', false)) {
             return $this->loader->load('teleca-obigo', $useragent);
         }
 
-        if (preg_match('/DavClnt/', $useragent)) {
+        if ($s->contains('DavClnt', false)) {
             return $this->loader->load('microsoft-webdav', $useragent);
         }
 
-        if (preg_match('/XING\-contenttabreceiver/', $useragent)) {
+        if ($s->contains('XING-contenttabreceiver', false)) {
             return $this->loader->load('xing contenttabreceiver', $useragent);
         }
 
-        if (preg_match('/Slingstone/', $useragent)) {
+        if ($s->contains('Slingstone', false)) {
             return $this->loader->load('yahoo slingstone', $useragent);
         }
 
-        if (preg_match('/BOT for JCE/', $useragent)) {
+        if ($s->contains('BOT for JCE', false)) {
             return $this->loader->load('bot for jce', $useragent);
         }
 
-        if (preg_match('/Validator\.nu\/LV/', $useragent)) {
+        if ($s->contains('Validator.nu/LV', false)) {
             return $this->loader->load('validator.nu/lv', $useragent);
         }
 
-        if (preg_match('/Curb/', $useragent)) {
+        if ($s->contains('Curb', false)) {
             return $this->loader->load('curb', $useragent);
         }
 
-        if (preg_match('/link_thumbnailer/', $useragent)) {
+        if ($s->contains('link_thumbnailer', false)) {
             return $this->loader->load('link_thumbnailer', $useragent);
         }
 
-        if (preg_match('/Ruby/', $useragent)) {
+        if ($s->contains('Ruby', false)) {
             return $this->loader->load('generic ruby crawler', $useragent);
         }
 
-        if (preg_match('/securepoint cf/', $useragent)) {
+        if ($s->contains('securepoint cf', false)) {
             return $this->loader->load('securepoint content filter', $useragent);
         }
 
-        if (preg_match('/sogou\-spider/i', $useragent)) {
+        if ($s->contains('sogou-spider', false)) {
             return $this->loader->load('sogou spider', $useragent);
         }
 
-        if (preg_match('/rankflex/i', $useragent)) {
+        if ($s->contains('rankflex', false)) {
             return $this->loader->load('rankflex', $useragent);
         }
 
-        if (preg_match('/domnutch/i', $useragent)) {
+        if ($s->contains('domnutch', false)) {
             return $this->loader->load('domnutch bot', $useragent);
         }
 
-        if (preg_match('/discovered/i', $useragent)) {
+        if ($s->contains('discovered', false)) {
             return $this->loader->load('discovered', $useragent);
         }
 
-        if (preg_match('/nutch/i', $useragent)) {
+        if ($s->contains('nutch', false)) {
             return $this->loader->load('nutch', $useragent);
         }
 
-        if (preg_match('/boardreader favicon fetcher/i', $useragent)) {
+        if ($s->contains('boardreader favicon fetcher', false)) {
             return $this->loader->load('boardreader favicon fetcher', $useragent);
         }
 
-        if (preg_match('/checksite verification agent/i', $useragent)) {
+        if ($s->contains('checksite verification agent', false)) {
             return $this->loader->load('checksite verification agent', $useragent);
         }
 
-        if (preg_match('/experibot/i', $useragent)) {
+        if ($s->contains('experibot', false)) {
             return $this->loader->load('experibot', $useragent);
         }
 
-        if (preg_match('/feedblitz/i', $useragent)) {
+        if ($s->contains('feedblitz', false)) {
             return $this->loader->load('feedblitz', $useragent);
         }
 
-        if (preg_match('/rss2html/i', $useragent)) {
+        if ($s->contains('rss2html', false)) {
             return $this->loader->load('rss2html', $useragent);
         }
 
-        if (preg_match('/feedlyapp/i', $useragent)) {
+        if ($s->contains('feedlyapp', false)) {
             return $this->loader->load('feedly app', $useragent);
         }
 
-        if (preg_match('/genderanalyzer/i', $useragent)) {
+        if ($s->contains('genderanalyzer', false)) {
             return $this->loader->load('genderanalyzer', $useragent);
         }
 
-        if (preg_match('/gooblog/i', $useragent)) {
+        if ($s->contains('gooblog', false)) {
             return $this->loader->load('gooblog', $useragent);
         }
 
-        if (preg_match('/tumblr/i', $useragent)) {
+        if ($s->contains('tumblr', false)) {
             return $this->loader->load('tumblr app', $useragent);
         }
 
-        if (preg_match('/w3c\_i18n\-checker/i', $useragent)) {
+        if ($s->contains('w3c_i18n-checker', false)) {
             return $this->loader->load('w3c i18n checker', $useragent);
         }
 
-        if (preg_match('/w3c\_unicorn/i', $useragent)) {
+        if ($s->contains('w3c_unicorn', false)) {
             return $this->loader->load('w3c unicorn', $useragent);
         }
 
-        if (preg_match('/alltop/i', $useragent)) {
+        if ($s->contains('alltop', false)) {
             return $this->loader->load('alltop app', $useragent);
         }
 
-        if (preg_match('/internetseer/i', $useragent)) {
+        if ($s->contains('internetseer', false)) {
             return $this->loader->load('internetseer.com', $useragent);
         }
 
-        if (preg_match('/ADmantX Platform Semantic Analyzer/', $useragent)) {
+        if ($s->contains('ADmantX Platform Semantic Analyzer', false)) {
             return $this->loader->load('admantx platform semantic analyzer', $useragent);
         }
 
-        if (preg_match('/UniversalFeedParser/', $useragent)) {
+        if ($s->contains('UniversalFeedParser', false)) {
             return $this->loader->load('universalfeedparser', $useragent);
         }
 
-        if (preg_match('/(binlar|larbin)/i', $useragent)) {
+        if ($s->contains('(binlar|larbin)', false)) {
             return $this->loader->load('larbin', $useragent);
         }
 
-        if (preg_match('/unityplayer/i', $useragent)) {
+        if ($s->contains('unityplayer', false)) {
             return $this->loader->load('unity web player', $useragent);
         }
 
-        if (preg_match('/WeSEE\:Search/', $useragent)) {
+        if ($s->contains('WeSEE\:Search', false)) {
             return $this->loader->load('wesee:search', $useragent);
         }
 
-        if (preg_match('/WeSEE\:Ads/', $useragent)) {
+        if ($s->contains('WeSEE\:Ads', false)) {
             return $this->loader->load('wesee:ads', $useragent);
         }
 
-        if (preg_match('/A6\-Indexer/', $useragent)) {
+        if ($s->contains('A6-Indexer', false)) {
             return $this->loader->load('a6-indexer', $useragent);
         }
 
-        if (preg_match('/NerdyBot/', $useragent)) {
+        if ($s->contains('NerdyBot', false)) {
             return $this->loader->load('nerdybot', $useragent);
         }
 
-        if (preg_match('/Peeplo Screenshot Bot/', $useragent)) {
+        if ($s->contains('Peeplo Screenshot Bot', false)) {
             return $this->loader->load('peeplo screenshot bot', $useragent);
         }
 
-        if (preg_match('/CCBot/', $useragent)) {
+        if ($s->contains('CCBot', false)) {
             return $this->loader->load('ccbot', $useragent);
         }
 
-        if (preg_match('/visionutils/', $useragent)) {
+        if ($s->contains('visionutils', false)) {
             return $this->loader->load('visionutils', $useragent);
         }
 
-        if (preg_match('/Feedly/', $useragent)) {
+        if ($s->contains('Feedly', false)) {
             return $this->loader->load('feedly feed fetcher', $useragent);
         }
 
-        if (preg_match('/Photon/', $useragent)) {
+        if ($s->contains('Photon', false)) {
             return $this->loader->load('photon', $useragent);
         }
 
-        if (preg_match('/WDG\_Validator/', $useragent)) {
+        if ($s->contains('WDG_Validator', false)) {
             return $this->loader->load('html validator', $useragent);
         }
 
-        if (preg_match('/Aboundex/', $useragent)) {
+        if ($s->contains('Aboundex', false)) {
             return $this->loader->load('aboundexbot', $useragent);
         }
 
-        if (preg_match('/YisouSpider/', $useragent)) {
+        if ($s->contains('YisouSpider', false)) {
             return $this->loader->load('yisouspider', $useragent);
         }
 
-        if (preg_match('/hivaBot/', $useragent)) {
+        if ($s->contains('hivaBot', false)) {
             return $this->loader->load('hivabot', $useragent);
         }
 
-        if (preg_match('/Comodo Spider/', $useragent)) {
+        if ($s->contains('Comodo Spider', false)) {
             return $this->loader->load('comodo spider', $useragent);
         }
 
-        if (preg_match('/OpenWebSpider/i', $useragent)) {
+        if ($s->contains('OpenWebSpider', false)) {
             return $this->loader->load('openwebspider', $useragent);
         }
 
-        if (preg_match('/R6_CommentReader/i', $useragent)) {
+        if ($s->contains('R6_CommentReader', false)) {
             return $this->loader->load('r6 commentreader', $useragent);
         }
 
-        if (preg_match('/R6_FeedFetcher/i', $useragent)) {
+        if ($s->contains('R6_FeedFetcher', false)) {
             return $this->loader->load('r6 feedfetcher', $useragent);
         }
 
-        if (preg_match('/(psbot\-image|psbot\-page)/i', $useragent)) {
+        if ($s->contains('(psbot-image|psbot-page)', false)) {
             return $this->loader->load('picsearch bot', $useragent);
         }
 
-        if (preg_match('/Bloglovin/', $useragent)) {
+        if ($s->contains('Bloglovin', false)) {
             return $this->loader->load('bloglovin bot', $useragent);
         }
 
-        if (preg_match('/viralvideochart/i', $useragent)) {
+        if ($s->contains('viralvideochart', false)) {
             return $this->loader->load('viralvideochart bot', $useragent);
         }
 
-        if (preg_match('/MetaHeadersBot/', $useragent)) {
+        if ($s->contains('MetaHeadersBot', false)) {
             return $this->loader->load('metaheadersbot', $useragent);
         }
 
-        if (preg_match('/Zend_?Http_?Client/', $useragent)) {
+        if ($s->contains('Zend[_\\]?Http[_\\]?Client', false)) {
             return $this->loader->load('zend_http_client', $useragent);
         }
 
-        if (preg_match('/wget/i', $useragent)) {
+        if ($s->contains('wget', false)) {
             return $this->loader->load('wget', $useragent);
         }
 
-        if (preg_match('/Scrapy/', $useragent)) {
+        if ($s->contains('Scrapy', false)) {
             return $this->loader->load('scrapy', $useragent);
         }
 
-        if (preg_match('/Moozilla/', $useragent)) {
+        if ($s->contains('Moozilla', false)) {
             return $this->loader->load('moozilla', $useragent);
         }
 
-        if (preg_match('/AntBot/', $useragent)) {
+        if ($s->contains('AntBot', false)) {
             return $this->loader->load('antbot', $useragent);
         }
 
-        if (preg_match('/Browsershots/', $useragent)) {
+        if ($s->contains('Browsershots', false)) {
             return $this->loader->load('browsershots', $useragent);
         }
 
-        if (preg_match('/revolt/', $useragent)) {
+        if ($s->contains('revolt', false)) {
             return $this->loader->load('bot revolt', $useragent);
         }
 
-        if (preg_match('/pdrlabs/i', $useragent)) {
+        if ($s->contains('pdrlabs', false)) {
             return $this->loader->load('pdrlabs bot', $useragent);
         }
 
-        if (preg_match('/elinks/i', $useragent)) {
+        if ($s->contains('elinks', false)) {
             return $this->loader->load('elinks', $useragent);
         }
 
-        if (preg_match('/Links/', $useragent)) {
+        if ($s->contains('Links', false)) {
             return $this->loader->load('links', $useragent);
         }
 
-        if (preg_match('/Airmail/', $useragent)) {
+        if ($s->contains('Airmail', false)) {
             return $this->loader->load('airmail', $useragent);
         }
 
-        if (preg_match('/SonyEricsson/', $useragent)) {
+        if ($s->contains('SonyEricsson', false)) {
             return $this->loader->load('semc', $useragent);
         }
 
-        if (preg_match('/WEB\.DE MailCheck/', $useragent)) {
+        if ($s->contains('WEB.DE MailCheck', false)) {
             return $this->loader->load('web.de mailcheck', $useragent);
         }
 
-        if (preg_match('/Screaming Frog SEO Spider/', $useragent)) {
+        if ($s->contains('Screaming Frog SEO Spider', false)) {
             return $this->loader->load('screaming frog seo spider', $useragent);
         }
 
-        if (preg_match('/AndroidDownloadManager/', $useragent)) {
+        if ($s->contains('AndroidDownloadManager', false)) {
             return $this->loader->load('android download manager', $useragent);
         }
 
-        if (preg_match('/Go ([\d\.]+) package http/', $useragent)) {
+        if ($s->contains('Go ([\d.]+) package http', false)) {
             return $this->loader->load('go httpclient', $useragent);
         }
 
-        if (preg_match('/Go-http-client/', $useragent)) {
+        if ($s->contains('Go-http-client', false)) {
             return $this->loader->load('go httpclient', $useragent);
         }
 
-        if (preg_match('/Proxy Gear Pro/', $useragent)) {
+        if ($s->contains('Proxy Gear Pro', false)) {
             return $this->loader->load('proxy gear pro', $useragent);
         }
 
-        if (preg_match('/WAP Browser\/MAUI/', $useragent)) {
+        if ($s->contains('WAP Browser/MAUI', false)) {
             return $this->loader->load('maui wap browser', $useragent);
         }
 
-        if (preg_match('/Tiny Tiny RSS/', $useragent)) {
+        if ($s->contains('Tiny Tiny RSS', false)) {
             return $this->loader->load('tiny tiny rss', $useragent);
         }
 
-        if (preg_match('/Readability/', $useragent)) {
+        if ($s->contains('Readability', false)) {
             return $this->loader->load('readability', $useragent);
         }
 
-        if (preg_match('/NSPlayer/', $useragent)) {
+        if ($s->contains('NSPlayer', false)) {
             return $this->loader->load('windows media player', $useragent);
         }
 
-        if (preg_match('/Pingdom/', $useragent)) {
+        if ($s->contains('Pingdom', false)) {
             return $this->loader->load('pingdom', $useragent);
         }
 
-        if (preg_match('/crazywebcrawler/i', $useragent)) {
+        if ($s->contains('crazywebcrawler', false)) {
             return $this->loader->load('crazywebcrawler', $useragent);
         }
 
-        if (preg_match('/GG PeekBot/', $useragent)) {
+        if ($s->contains('GG PeekBot', false)) {
             return $this->loader->load('gg peekbot', $useragent);
         }
 
-        if (preg_match('/iTunes/', $useragent)) {
+        if ($s->contains('iTunes', false)) {
             return $this->loader->load('itunes', $useragent);
         }
 
-        if (preg_match('/LibreOffice/', $useragent)) {
+        if ($s->contains('LibreOffice', false)) {
             return $this->loader->load('libreoffice', $useragent);
         }
 
-        if (preg_match('/OpenOffice/', $useragent)) {
+        if ($s->contains('OpenOffice', false)) {
             return $this->loader->load('openoffice', $useragent);
         }
 
-        if (preg_match('/ThumbnailAgent/', $useragent)) {
+        if ($s->contains('ThumbnailAgent', false)) {
             return $this->loader->load('thumbnailagent', $useragent);
         }
 
-        if (preg_match('/LinkStats Bot/', $useragent)) {
+        if ($s->contains('LinkStats Bot', false)) {
             return $this->loader->load('linkstats bot', $useragent);
         }
 
-        if (preg_match('/eZ Publish Link Validator/', $useragent)) {
+        if ($s->contains('eZ Publish Link Validator', false)) {
             return $this->loader->load('ez publish link validator', $useragent);
         }
 
-        if (preg_match('/ThumbSniper/', $useragent)) {
+        if ($s->contains('ThumbSniper', false)) {
             return $this->loader->load('thumbsniper', $useragent);
         }
 
-        if (preg_match('/stq\_bot/', $useragent)) {
+        if ($s->contains('stq_bot', false)) {
             return $this->loader->load('searchteq bot', $useragent);
         }
 
-        if (preg_match('/SNK Screenshot Bot/', $useragent)) {
+        if ($s->contains('SNK Screenshot Bot', false)) {
             return $this->loader->load('save n keep screenshot bot', $useragent);
         }
 
-        if (preg_match('/SynHttpClient/', $useragent)) {
+        if ($s->contains('SynHttpClient', false)) {
             return $this->loader->load('synhttpclient', $useragent);
         }
 
-        if (preg_match('/HTTPClient/', $useragent)) {
+        if ($s->contains('HTTPClient', false)) {
             return $this->loader->load('httpclient', $useragent);
         }
 
-        if (preg_match('/T\-Online Browser/', $useragent)) {
+        if ($s->contains('T-Online Browser', false)) {
             return $this->loader->load('t-online browser', $useragent);
         }
 
-        if (preg_match('/ImplisenseBot/', $useragent)) {
+        if ($s->contains('ImplisenseBot', false)) {
             return $this->loader->load('implisensebot', $useragent);
         }
 
-        if (preg_match('/BuiBui\-Bot/', $useragent)) {
+        if ($s->contains('BuiBui-Bot', false)) {
             return $this->loader->load('buibui-bot', $useragent);
         }
 
-        if (preg_match('/thumbshots\-de\-bot/', $useragent)) {
+        if ($s->contains('thumbshots-de-bot', false)) {
             return $this->loader->load('thumbshots-de-bot', $useragent);
         }
 
-        if (preg_match('/python\-requests/', $useragent)) {
+        if ($s->contains('python-requests', false)) {
             return $this->loader->load('python-requests', $useragent);
         }
 
-        if (preg_match('/Python\-urllib/', $useragent)) {
+        if ($s->contains('Python-urllib', false)) {
             return $this->loader->load('python-urllib', $useragent);
         }
 
-        if (preg_match('/Bot\.AraTurka\.com/', $useragent)) {
+        if ($s->contains('Bot.AraTurka.com', false)) {
             return $this->loader->load('bot.araturka.com', $useragent);
         }
 
-        if (preg_match('/http\_requester/', $useragent)) {
+        if ($s->contains('http_requester', false)) {
             return $this->loader->load('http_requester', $useragent);
         }
 
-        if (preg_match('/WhatWeb/', $useragent)) {
+        if ($s->contains('WhatWeb', false)) {
             return $this->loader->load('whatweb web scanner', $useragent);
         }
 
-        if (preg_match('/isc header collector handlers/', $useragent)) {
+        if ($s->contains('isc header collector handlers', false)) {
             return $this->loader->load('isc header collector handlers', $useragent);
         }
 
-        if (preg_match('/Thumbor/', $useragent)) {
+        if ($s->contains('Thumbor', false)) {
             return $this->loader->load('thumbor', $useragent);
         }
 
-        if (preg_match('/Forum Poster/', $useragent)) {
+        if ($s->contains('Forum Poster', false)) {
             return $this->loader->load('forum poster', $useragent);
         }
 
-        if (preg_match('/crawler4j/', $useragent)) {
+        if ($s->contains('crawler4j', false)) {
             return $this->loader->load('crawler4j', $useragent);
         }
 
-        if (preg_match('/Facebot/', $useragent)) {
+        if ($s->contains('Facebot', false)) {
             return $this->loader->load('facebot', $useragent);
         }
 
-        if (preg_match('/NetzCheckBot/', $useragent)) {
+        if ($s->contains('NetzCheckBot', false)) {
             return $this->loader->load('netzcheckbot', $useragent);
         }
 
-        if (preg_match('/MIB/', $useragent)) {
+        if ($s->contains('MIB', false)) {
             return $this->loader->load('motorola internet browser', $useragent);
         }
 
-        if (preg_match('/facebookscraper/', $useragent)) {
+        if ($s->contains('facebookscraper', false)) {
             return $this->loader->load('facebookscraper', $useragent);
         }
 
-        if (preg_match('/Zookabot/', $useragent)) {
+        if ($s->contains('Zookabot', false)) {
             return $this->loader->load('zookabot', $useragent);
         }
 
-        if (preg_match('/MetaURI/', $useragent)) {
+        if ($s->contains('MetaURI', false)) {
             return $this->loader->load('metauri bot', $useragent);
         }
 
-        if (preg_match('/FreeWebMonitoring SiteChecker/', $useragent)) {
+        if ($s->contains('FreeWebMonitoring SiteChecker', false)) {
             return $this->loader->load('freewebmonitoring sitechecker', $useragent);
         }
 
-        if (preg_match('/IPv4Scan/', $useragent)) {
+        if ($s->contains('IPv4Scan', false)) {
             return $this->loader->load('ipv4scan', $useragent);
         }
 
-        if (preg_match('/RED/', $useragent)) {
+        if ($s->contains('RED', false)) {
             return $this->loader->load('redbot', $useragent);
         }
 
-        if (preg_match('/domainsbot/', $useragent)) {
+        if ($s->contains('domainsbot', false)) {
             return $this->loader->load('domainsbot', $useragent);
         }
 
-        if (preg_match('/BUbiNG/', $useragent)) {
+        if ($s->contains('BUbiNG', false)) {
             return $this->loader->load('bubing bot', $useragent);
         }
 
-        if (preg_match('/RamblerMail/', $useragent)) {
+        if ($s->contains('RamblerMail', false)) {
             return $this->loader->load('ramblermail bot', $useragent);
         }
 
-        if (preg_match('/ichiro\/mobile/', $useragent)) {
+        if ($s->contains('ichiro/mobile', false)) {
             return $this->loader->load('ichiro mobile bot', $useragent);
         }
 
-        if (preg_match('/ichiro/', $useragent)) {
+        if ($s->contains('ichiro', false)) {
             return $this->loader->load('ichiro bot', $useragent);
         }
 
-        if (preg_match('/iisbot/', $useragent)) {
+        if ($s->contains('iisbot', false)) {
             return $this->loader->load('iis site analysis web crawler', $useragent);
         }
 
-        if (preg_match('/JoobleBot/', $useragent)) {
+        if ($s->contains('JoobleBot', false)) {
             return $this->loader->load('jooblebot', $useragent);
         }
 
-        if (preg_match('/Superfeedr bot/', $useragent)) {
+        if ($s->contains('Superfeedr bot', false)) {
             return $this->loader->load('superfeedr bot', $useragent);
         }
 
-        if (preg_match('/FeedBurner/', $useragent)) {
+        if ($s->contains('FeedBurner', false)) {
             return $this->loader->load('feedburner', $useragent);
         }
 
-        if (preg_match('/Fastladder/', $useragent)) {
+        if ($s->contains('Fastladder', false)) {
             return $this->loader->load('fastladder', $useragent);
         }
 
-        if (preg_match('/livedoor/', $useragent)) {
+        if ($s->contains('livedoor', false)) {
             return $this->loader->load('livedoor', $useragent);
         }
 
-        if (preg_match('/Icarus6j/', $useragent)) {
+        if ($s->contains('Icarus6j', false)) {
             return $this->loader->load('icarus6j', $useragent);
         }
 
-        if (preg_match('/wsr\-agent/', $useragent)) {
+        if ($s->contains('wsr-agent', false)) {
             return $this->loader->load('wsr-agent', $useragent);
         }
 
-        if (preg_match('/Blogshares Spiders/', $useragent)) {
+        if ($s->contains('Blogshares Spiders', false)) {
             return $this->loader->load('blogshares spiders', $useragent);
         }
 
-        if (preg_match('/TinEye\-bot/', $useragent)) {
+        if ($s->contains('TinEye-bot', false)) {
             return $this->loader->load('tineye bot', $useragent);
         }
 
-        if (preg_match('/QuickiWiki/', $useragent)) {
+        if ($s->contains('QuickiWiki', false)) {
             return $this->loader->load('quickiwiki bot', $useragent);
         }
 
-        if (preg_match('/PycURL/', $useragent)) {
+        if ($s->contains('PycURL', false)) {
             return $this->loader->load('pycurl', $useragent);
         }
 
-        if (preg_match('/libcurl\-agent/', $useragent)) {
+        if ($s->contains('libcurl-agent', false)) {
             return $this->loader->load('libcurl', $useragent);
         }
 
-        if (preg_match('/Taproot/', $useragent)) {
+        if ($s->contains('Taproot', false)) {
             return $this->loader->load('taproot bot', $useragent);
         }
 
-        if (preg_match('/GuzzleHttp/', $useragent)) {
+        if ($s->contains('GuzzleHttp', false)) {
             return $this->loader->load('guzzle http client', $useragent);
         }
 
-        if (preg_match('/curl/i', $useragent)) {
+        if ($s->contains('curl', false)) {
             return $this->loader->load('curl', $useragent);
         }
 
-        if (preg_match('/^PHP/', $useragent)) {
+        if ($s->contains('^PHP', false)) {
             return $this->loader->load('php', $useragent);
         }
 
-        if (preg_match('/Apple\-PubSub/', $useragent)) {
+        if ($s->contains('Apple-PubSub', false)) {
             return $this->loader->load('apple pubsub', $useragent);
         }
 
-        if (preg_match('/SimplePie/', $useragent)) {
+        if ($s->contains('SimplePie', false)) {
             return $this->loader->load('simplepie', $useragent);
         }
 
-        if (preg_match('/BigBozz/', $useragent)) {
+        if ($s->contains('BigBozz', false)) {
             return $this->loader->load('bigbozz - financial search', $useragent);
         }
 
-        if (preg_match('/ECCP/', $useragent)) {
+        if ($s->contains('ECCP', false)) {
             return $this->loader->load('eccp', $useragent);
         }
 
-        if (preg_match('/facebookexternalhit/', $useragent)) {
+        if ($s->contains('facebookexternalhit', false)) {
             return $this->loader->load('facebookexternalhit', $useragent);
         }
 
-        if (preg_match('/GigablastOpenSource/', $useragent)) {
+        if ($s->contains('GigablastOpenSource', false)) {
             return $this->loader->load('gigablast search engine', $useragent);
         }
 
-        if (preg_match('/WebIndex/', $useragent)) {
+        if ($s->contains('WebIndex', false)) {
             return $this->loader->load('webindex', $useragent);
         }
 
-        if (preg_match('/Prince/', $useragent)) {
+        if ($s->contains('Prince', false)) {
             return $this->loader->load('prince', $useragent);
         }
 
-        if (preg_match('/adsense\-snapshot\-google/i', $useragent)) {
+        if ($s->contains('adsense-snapshot-google', false)) {
             return $this->loader->load('adsense snapshot bot', $useragent);
         }
 
-        if (preg_match('/Amazon CloudFront/', $useragent)) {
+        if ($s->contains('Amazon CloudFront', false)) {
             return $this->loader->load('amazon cloudfront', $useragent);
         }
 
-        if (preg_match('/bandscraper/', $useragent)) {
+        if ($s->contains('bandscraper', false)) {
             return $this->loader->load('bandscraper', $useragent);
         }
 
-        if (preg_match('/bitlybot/', $useragent)) {
+        if ($s->contains('bitlybot', false)) {
             return $this->loader->load('bitlybot', $useragent);
         }
 
-        if (preg_match('/^bot$/', $useragent)) {
+        if ($s->contains('^bot$', false)) {
             return $this->loader->load('bot', $useragent);
         }
 
-        if (preg_match('/cars\-app\-browser/', $useragent)) {
+        if ($s->contains('cars-app-browser', false)) {
             return $this->loader->load('cars-app-browser', $useragent);
         }
 
-        if (preg_match('/Coursera\-Mobile/', $useragent)) {
+        if ($s->contains('Coursera-Mobile', false)) {
             return $this->loader->load('coursera mobile app', $useragent);
         }
 
-        if (preg_match('/Crowsnest/', $useragent)) {
+        if ($s->contains('Crowsnest', false)) {
             return $this->loader->load('crowsnest mobile app', $useragent);
         }
 
-        if (preg_match('/Dorado WAP\-Browser/', $useragent)) {
+        if ($s->contains('Dorado WAP-Browser', false)) {
             return $this->loader->load('dorado wap browser', $useragent);
         }
 
-        if (preg_match('/Goldfire Server/', $useragent)) {
+        if ($s->contains('Goldfire Server', false)) {
             return $this->loader->load('goldfire server', $useragent);
         }
 
-        if (preg_match('/EventMachine HttpClient/', $useragent)) {
+        if ($s->contains('EventMachine HttpClient', false)) {
             return $this->loader->load('eventmachine httpclient', $useragent);
         }
 
-        if (preg_match('/iBall/', $useragent)) {
+        if ($s->contains('iBall', false)) {
             return $this->loader->load('iball', $useragent);
         }
 
-        if (preg_match('/InAGist URL Resolver/', $useragent)) {
+        if ($s->contains('InAGist URL Resolver', false)) {
             return $this->loader->load('inagist url resolver', $useragent);
         }
 
-        if (preg_match('/Jeode/', $useragent)) {
+        if ($s->contains('Jeode', false)) {
             return $this->loader->load('jeode', $useragent);
         }
 
-        if (preg_match('/kraken/', $useragent)) {
+        if ($s->contains('kraken', false)) {
             return $this->loader->load('krakenjs', $useragent);
         }
 
-        if (preg_match('/com\.linkedin/', $useragent)) {
+        if ($s->contains('com.linkedin', false)) {
             return $this->loader->load('linkedinbot', $useragent);
         }
 
-        if (preg_match('/LivelapBot/', $useragent)) {
+        if ($s->contains('LivelapBot', false)) {
             return $this->loader->load('livelap crawler', $useragent);
         }
 
-        if (preg_match('/MixBot/', $useragent)) {
+        if ($s->contains('MixBot', false)) {
             return $this->loader->load('mixbot', $useragent);
         }
 
-        if (preg_match('/BuSecurityProject/', $useragent)) {
+        if ($s->contains('BuSecurityProject', false)) {
             return $this->loader->load('busecurityproject', $useragent);
         }
 
-        if (preg_match('/PageFreezer/', $useragent)) {
+        if ($s->contains('PageFreezer', false)) {
             return $this->loader->load('pagefreezer', $useragent);
         }
 
-        if (preg_match('/restify/', $useragent)) {
+        if ($s->contains('restify', false)) {
             return $this->loader->load('restify', $useragent);
         }
 
-        if (preg_match('/ShowyouBot/', $useragent)) {
+        if ($s->contains('ShowyouBot', false)) {
             return $this->loader->load('showyoubot', $useragent);
         }
 
-        if (preg_match('/vlc/i', $useragent)) {
+        if ($s->contains('vlc', false)) {
             return $this->loader->load('vlc media player', $useragent);
         }
 
-        if (preg_match('/WebRingChecker/', $useragent)) {
+        if ($s->contains('WebRingChecker', false)) {
             return $this->loader->load('webringchecker', $useragent);
         }
 
-        if (preg_match('/bot\-pge\.chlooe\.com/', $useragent)) {
+        if ($s->contains('bot-pge.chlooe.com', false)) {
             return $this->loader->load('chlooe bot', $useragent);
         }
 
-        if (preg_match('/seebot/', $useragent)) {
+        if ($s->contains('seebot', false)) {
             return $this->loader->load('seebot', $useragent);
         }
 
-        if (preg_match('/ltx71/', $useragent)) {
+        if ($s->contains('ltx71', false)) {
             return $this->loader->load('ltx71 bot', $useragent);
         }
 
-        if (preg_match('/CookieReports/', $useragent)) {
+        if ($s->contains('CookieReports', false)) {
             return $this->loader->load('cookie reports bot', $useragent);
         }
 
-        if (preg_match('/Elmer/', $useragent)) {
+        if ($s->contains('Elmer', false)) {
             return $this->loader->load('elmer', $useragent);
         }
 
-        if (preg_match('/Iframely/', $useragent)) {
+        if ($s->contains('Iframely', false)) {
             return $this->loader->load('iframely bot', $useragent);
         }
 
-        if (preg_match('/MetaInspector/', $useragent)) {
+        if ($s->contains('MetaInspector', false)) {
             return $this->loader->load('metainspector', $useragent);
         }
 
-        if (preg_match('/Microsoft\-CryptoAPI/', $useragent)) {
+        if ($s->contains('Microsoft-CryptoAPI', false)) {
             return $this->loader->load('microsoft cryptoapi', $useragent);
         }
 
-        if (preg_match('/OWASP\_SECRET\_BROWSER/', $useragent)) {
+        if ($s->contains('OWASP_SECRET_BROWSER', false)) {
             return $this->loader->load('owasp_secret_browser', $useragent);
         }
 
-        if (preg_match('/SMRF URL Expander/', $useragent)) {
+        if ($s->contains('SMRF URL Expander', false)) {
             return $this->loader->load('smrf url expander', $useragent);
         }
 
-        if (preg_match('/Speedy Spider/', $useragent)) {
+        if ($s->contains('Speedy Spider', false)) {
             return $this->loader->load('entireweb', $useragent);
         }
 
-        if (preg_match('/kizasi\-spider/', $useragent)) {
+        if ($s->contains('kizasi-spider', false)) {
             return $this->loader->load('kizasi-spider', $useragent);
         }
 
-        if (preg_match('/Superarama\.com \- BOT/', $useragent)) {
+        if ($s->contains('Superarama.com - BOT', false)) {
             return $this->loader->load('superarama.com - bot', $useragent);
         }
 
-        if (preg_match('/WNMbot/', $useragent)) {
+        if ($s->contains('WNMbot', false)) {
             return $this->loader->load('wnmbot', $useragent);
         }
 
-        if (preg_match('/Website Explorer/', $useragent)) {
+        if ($s->contains('Website Explorer', false)) {
             return $this->loader->load('website explorer', $useragent);
         }
 
-        if (preg_match('/city\-map screenshot service/', $useragent)) {
+        if ($s->contains('city-map screenshot service', false)) {
             return $this->loader->load('city-map screenshot service', $useragent);
         }
 
-        if (preg_match('/gosquared\-thumbnailer/', $useragent)) {
+        if ($s->contains('gosquared-thumbnailer', false)) {
             return $this->loader->load('gosquared-thumbnailer', $useragent);
         }
 
-        if (preg_match('/optivo\(R\) NetHelper/', $useragent)) {
+        if ($s->contains('optivo\(R\) NetHelper', false)) {
             return $this->loader->load('optivo nethelper', $useragent);
         }
 
-        if (preg_match('/pr\-cy\.ru Screenshot Bot/', $useragent)) {
+        if ($s->contains('pr-cy.ru Screenshot Bot', false)) {
             return $this->loader->load('screenshot bot', $useragent);
         }
 
-        if (preg_match('/Cyberduck/', $useragent)) {
+        if ($s->contains('Cyberduck', false)) {
             return $this->loader->load('cyberduck', $useragent);
         }
 
-        if (preg_match('/Lynx/', $useragent)) {
+        if ($s->contains('Lynx', false)) {
             return $this->loader->load('lynx', $useragent);
         }
 
-        if (preg_match('/AccServer/', $useragent)) {
+        if ($s->contains('AccServer', false)) {
             return $this->loader->load('accserver', $useragent);
         }
 
-        if (preg_match('/SafeSearch microdata crawler/', $useragent)) {
+        if ($s->contains('SafeSearch microdata crawler', false)) {
             return $this->loader->load('safesearch microdata crawler', $useragent);
         }
 
-        if (preg_match('/iZSearch/', $useragent)) {
+        if ($s->contains('iZSearch', false)) {
             return $this->loader->load('izsearch bot', $useragent);
         }
 
-        if (preg_match('/NetLyzer FastProbe/', $useragent)) {
+        if ($s->contains('NetLyzer FastProbe', false)) {
             return $this->loader->load('netlyzer fastprobe', $useragent);
         }
 
-        if (preg_match('/MnoGoSearch/', $useragent)) {
+        if ($s->contains('MnoGoSearch', false)) {
             return $this->loader->load('mnogosearch', $useragent);
         }
 
-        if (preg_match('/uipbot/', $useragent)) {
+        if ($s->contains('uipbot', false)) {
             return $this->loader->load('uipbot', $useragent);
         }
 
-        if (preg_match('/mbot/', $useragent)) {
+        if ($s->contains('mbot', false)) {
             return $this->loader->load('mbot', $useragent);
         }
 
-        if (preg_match('/MS Web Services Client Protocol/', $useragent)) {
+        if ($s->contains('MS Web Services Client Protocol', false)) {
             return $this->loader->load('.net framework clr', $useragent);
         }
 
-        if (preg_match('/(AtomicBrowser|AtomicLite)/', $useragent)) {
+        if ($s->contains('(AtomicBrowser|AtomicLite)', false)) {
             return $this->loader->load('atomic browser', $useragent);
         }
 
-        if (preg_match('/AppEngine\-Google/', $useragent)) {
+        if ($s->contains('AppEngine-Google', false)) {
             return $this->loader->load('google app engine', $useragent);
         }
 
-        if (preg_match('/Feedfetcher\-Google/', $useragent)) {
+        if ($s->contains('Feedfetcher-Google', false)) {
             return $this->loader->load('google feedfetcher', $useragent);
         }
 
-        if (preg_match('/Google/', $useragent)) {
+        if ($s->contains('Google', false)) {
             return $this->loader->load('google app', $useragent);
         }
 
-        if (preg_match('/UnwindFetchor/', $useragent)) {
+        if ($s->contains('UnwindFetchor', false)) {
             return $this->loader->load('unwindfetchor', $useragent);
         }
 
-        if (preg_match('/Perfect%20Browser/', $useragent)) {
+        if ($s->contains('Perfect%20Browser', false)) {
             return $this->loader->load('perfect browser', $useragent);
         }
 
-        if (preg_match('/Reeder/', $useragent)) {
+        if ($s->contains('Reeder', false)) {
             return $this->loader->load('reeder', $useragent);
         }
 
-        if (preg_match('/FastBrowser/', $useragent)) {
+        if ($s->contains('FastBrowser', false)) {
             return $this->loader->load('fastbrowser', $useragent);
         }
 
-        if (preg_match('/CFNetwork/', $useragent)) {
+        if ($s->contains('CFNetwork', false)) {
             return $this->loader->load('cfnetwork', $useragent);
         }
 
-        if (preg_match('/Y\!J\-(ASR|BSC)/', $useragent)) {
+        if ($s->contains('Y\!J-(ASR|BSC)', false)) {
             return $this->loader->load('yahoo! japan', $useragent);
         }
 
-        if (preg_match('/test certificate info/', $useragent)) {
+        if ($s->contains('test certificate info', false)) {
             return $this->loader->load('test certificate info', $useragent);
         }
 
-        if (preg_match('/fastbot crawler/', $useragent)) {
+        if ($s->contains('fastbot crawler', false)) {
             return $this->loader->load('fastbot crawler', $useragent);
         }
 
-        if (preg_match('/Riddler/', $useragent)) {
+        if ($s->contains('Riddler', false)) {
             return $this->loader->load('riddler', $useragent);
         }
 
-        if (preg_match('/SophosUpdateManager/', $useragent)) {
+        if ($s->contains('SophosUpdateManager', false)) {
             return $this->loader->load('sophosupdatemanager', $useragent);
         }
 
-        if (preg_match('/(Debian|Ubuntu) APT\-HTTP/', $useragent)) {
+        if ($s->contains('(Debian|Ubuntu) APT-HTTP', false)) {
             return $this->loader->load('apt http transport', $useragent);
         }
 
-        if (preg_match('/urlgrabber/', $useragent)) {
+        if ($s->contains('urlgrabber', false)) {
             return $this->loader->load('url grabber', $useragent);
         }
 
-        if (preg_match('/UCS \(ESX\)/', $useragent)) {
+        if ($s->contains('UCS \(ESX\)', false)) {
             return $this->loader->load('univention corporate server', $useragent);
         }
 
-        if (preg_match('/libwww\-perl/', $useragent)) {
+        if ($s->contains('libwww-perl', false)) {
             return $this->loader->load('libwww', $useragent);
         }
 
-        if (preg_match('/OpenBSD ftp/', $useragent)) {
+        if ($s->contains('OpenBSD ftp', false)) {
             return $this->loader->load('openbsd ftp', $useragent);
         }
 
-        if (preg_match('/SophosAgent/', $useragent)) {
+        if ($s->contains('SophosAgent', false)) {
             return $this->loader->load('sophosagent', $useragent);
         }
 
-        if (preg_match('/jupdate/', $useragent)) {
+        if ($s->contains('jupdate', false)) {
             return $this->loader->load('jupdate', $useragent);
         }
 
-        if (preg_match('/Roku\/DVP/', $useragent)) {
+        if ($s->contains('Roku/DVP', false)) {
             return $this->loader->load('roku dvp', $useragent);
         }
 
-        if (preg_match('/VocusBot/', $useragent)) {
+        if ($s->contains('VocusBot', false)) {
             return $this->loader->load('vocusbot', $useragent);
         }
 
-        if (preg_match('/PostRank/', $useragent)) {
+        if ($s->contains('PostRank', false)) {
             return $this->loader->load('postrank', $useragent);
         }
 
-        if (preg_match('/rogerbot/i', $useragent)) {
+        if ($s->contains('rogerbot', false)) {
             return $this->loader->load('rogerbot', $useragent);
         }
 
-        if (preg_match('/Safeassign/', $useragent)) {
+        if ($s->contains('Safeassign', false)) {
             return $this->loader->load('safeassign', $useragent);
         }
 
-        if (preg_match('/ExaleadCloudView/', $useragent)) {
+        if ($s->contains('ExaleadCloudView', false)) {
             return $this->loader->load('exalead cloudview', $useragent);
         }
 
-        if (preg_match('/Typhoeus/', $useragent)) {
+        if ($s->contains('Typhoeus', false)) {
             return $this->loader->load('typhoeus', $useragent);
         }
 
-        if (preg_match('/Camo Asset Proxy/', $useragent)) {
+        if ($s->contains('Camo Asset Proxy', false)) {
             return $this->loader->load('camo asset proxy', $useragent);
         }
 
-        if (preg_match('/YahooCacheSystem/', $useragent)) {
+        if ($s->contains('YahooCacheSystem', false)) {
             return $this->loader->load('yahoocachesystem', $useragent);
         }
 
-        if (preg_match('/wmtips\.com/', $useragent)) {
+        if ($s->contains('wmtips.com', false)) {
             return $this->loader->load('webmaster tips bot', $useragent);
         }
 
-        if (preg_match('/linkCheck/', $useragent)) {
+        if ($s->contains('linkCheck', false)) {
             return $this->loader->load('linkcheck', $useragent);
         }
 
-        if (preg_match('/ABrowse/', $useragent)) {
+        if ($s->contains('ABrowse', false)) {
             return $this->loader->load('abrowse', $useragent);
         }
 
-        if (preg_match('/GWPImages/', $useragent)) {
+        if ($s->contains('GWPImages', false)) {
             return $this->loader->load('gwpimages', $useragent);
         }
 
-        if (preg_match('/NoteTextView/', $useragent)) {
+        if ($s->contains('NoteTextView', false)) {
             return $this->loader->load('notetextview', $useragent);
         }
 
-        if (preg_match('/NING/', $useragent)) {
+        if ($s->contains('NING', false)) {
             return $this->loader->load('ning', $useragent);
         }
 
-        if (preg_match('/Sprinklr/', $useragent)) {
+        if ($s->contains('Sprinklr', false)) {
             return $this->loader->load('sprinklr', $useragent);
         }
 
-        if (preg_match('/URLChecker/', $useragent)) {
+        if ($s->contains('URLChecker', false)) {
             return $this->loader->load('urlchecker', $useragent);
         }
 
-        if (preg_match('/newsme/', $useragent)) {
+        if ($s->contains('newsme', false)) {
             return $this->loader->load('newsme', $useragent);
         }
 
-        if (preg_match('/Traackr/', $useragent)) {
+        if ($s->contains('Traackr', false)) {
             return $this->loader->load('traackr', $useragent);
         }
 
-        if (preg_match('/nineconnections/', $useragent)) {
+        if ($s->contains('nineconnections', false)) {
             return $this->loader->load('nineconnections', $useragent);
         }
 
-        if (preg_match('/Xenu Link Sleuth/', $useragent)) {
+        if ($s->contains('Xenu Link Sleuth', false)) {
             return $this->loader->load('xenus link sleuth', $useragent);
         }
 
-        if (preg_match('/superagent/', $useragent)) {
+        if ($s->contains('superagent', false)) {
             return $this->loader->load('superagent', $useragent);
         }
 
-        if (preg_match('/Goose/', $useragent)) {
+        if ($s->contains('Goose', false)) {
             return $this->loader->load('goose-extractor', $useragent);
         }
 
-        if (preg_match('/AHC/', $useragent)) {
+        if ($s->contains('AHC', false)) {
             return $this->loader->load('asynchronous http client', $useragent);
         }
 
-        if (preg_match('/newspaper/', $useragent)) {
+        if ($s->contains('newspaper', false)) {
             return $this->loader->load('newspaper', $useragent);
         }
 
-        if (preg_match('/Hatena::Bookmark/', $useragent)) {
+        if ($s->contains('Hatena::Bookmark', false)) {
             return $this->loader->load('hatena::bookmark', $useragent);
         }
 
-        if (preg_match('/EasyBib AutoCite/', $useragent)) {
+        if ($s->contains('EasyBib AutoCite', false)) {
             return $this->loader->load('easybib autocite', $useragent);
         }
 
-        if (preg_match('/ShortLinkTranslate/', $useragent)) {
+        if ($s->contains('ShortLinkTranslate', false)) {
             return $this->loader->load('shortlinktranslate', $useragent);
         }
 
-        if (preg_match('/Marketing Grader/', $useragent)) {
+        if ($s->contains('Marketing Grader', false)) {
             return $this->loader->load('marketing grader', $useragent);
         }
 
-        if (preg_match('/Grammarly/', $useragent)) {
+        if ($s->contains('Grammarly', false)) {
             return $this->loader->load('grammarly', $useragent);
         }
 
-        if (preg_match('/Dispatch/', $useragent)) {
+        if ($s->contains('Dispatch', false)) {
             return $this->loader->load('dispatch', $useragent);
         }
 
-        if (preg_match('/Raven Link Checker/', $useragent)) {
+        if ($s->contains('Raven Link Checker', false)) {
             return $this->loader->load('raven link checker', $useragent);
         }
 
-        if (preg_match('/http\-kit/', $useragent)) {
+        if ($s->contains('http-kit', false)) {
             return $this->loader->load('http kit', $useragent);
         }
 
-        if (preg_match('/sfFeedReader/', $useragent)) {
+        if ($s->contains('sfFeedReader', false)) {
             return $this->loader->load('symfony rss reader', $useragent);
         }
 
-        if (preg_match('/Twikle/', $useragent)) {
+        if ($s->contains('Twikle', false)) {
             return $this->loader->load('twikle bot', $useragent);
         }
 
-        if (preg_match('/node\-fetch/', $useragent)) {
+        if ($s->contains('node-fetch', false)) {
             return $this->loader->load('node-fetch', $useragent);
         }
 
-        if (preg_match('/BrokenLinkCheck\.com/', $useragent)) {
+        if ($s->contains('BrokenLinkCheck.com', false)) {
             return $this->loader->load('brokenlinkcheck', $useragent);
         }
 
-        if (preg_match('/BCKLINKS/', $useragent)) {
+        if ($s->contains('BCKLINKS', false)) {
             return $this->loader->load('bcklinks', $useragent);
         }
 
-        if (preg_match('/Faraday/', $useragent)) {
+        if ($s->contains('Faraday', false)) {
             return $this->loader->load('faraday', $useragent);
         }
 
-        if (preg_match('/gettor/', $useragent)) {
+        if ($s->contains('gettor', false)) {
             return $this->loader->load('gettor', $useragent);
         }
 
-        if (preg_match('/SEOstats/', $useragent)) {
+        if ($s->contains('SEOstats', false)) {
             return $this->loader->load('seostats', $useragent);
         }
 
-        if (preg_match('/ZnajdzFoto\/Image/', $useragent)) {
+        if ($s->contains('ZnajdzFoto/Image', false)) {
             return $this->loader->load('znajdzfoto/imagebot', $useragent);
         }
 
-        if (preg_match('/infoX\-WISG/', $useragent)) {
+        if ($s->contains('infoX-WISG', false)) {
             return $this->loader->load('infox-wisg', $useragent);
         }
 
-        if (preg_match('/wscheck\.com/', $useragent)) {
+        if ($s->contains('wscheck.com', false)) {
             return $this->loader->load('wscheck bot', $useragent);
         }
 
-        if (preg_match('/Tweetminster/', $useragent)) {
+        if ($s->contains('Tweetminster', false)) {
             return $this->loader->load('tweetminster bot', $useragent);
         }
 
-        if (preg_match('/Astute SRM/', $useragent)) {
+        if ($s->contains('Astute SRM', false)) {
             return $this->loader->load('astute social', $useragent);
         }
 
-        if (preg_match('/LongURL API/', $useragent)) {
+        if ($s->contains('LongURL API', false)) {
             return $this->loader->load('longurl bot', $useragent);
         }
 
-        if (preg_match('/Trove/', $useragent)) {
+        if ($s->contains('Trove', false)) {
             return $this->loader->load('trove bot', $useragent);
         }
 
-        if (preg_match('/Melvil Favicon/', $useragent)) {
+        if ($s->contains('Melvil Favicon', false)) {
             return $this->loader->load('melvil favicon bot', $useragent);
         }
 
-        if (preg_match('/Melvil/', $useragent)) {
+        if ($s->contains('Melvil', false)) {
             return $this->loader->load('melvil bot', $useragent);
         }
 
-        if (preg_match('/Pearltrees/', $useragent)) {
+        if ($s->contains('Pearltrees', false)) {
             return $this->loader->load('pearltrees bot', $useragent);
         }
 
-        if (preg_match('/Svven\-Summarizer/', $useragent)) {
+        if ($s->contains('Svven-Summarizer', false)) {
             return $this->loader->load('svven summarizer bot', $useragent);
         }
 
-        if (preg_match('/Athena Site Analyzer/', $useragent)) {
+        if ($s->contains('Athena Site Analyzer', false)) {
             return $this->loader->load('athena site analyzer', $useragent);
         }
 
-        if (preg_match('/Exploratodo/', $useragent)) {
+        if ($s->contains('Exploratodo', false)) {
             return $this->loader->load('exploratodo bot', $useragent);
         }
 
-        if (preg_match('/WhatsApp/', $useragent)) {
+        if ($s->contains('WhatsApp', false)) {
             return $this->loader->load('whatsapp', $useragent);
         }
 
-        if (preg_match('/DDG\-Android\-/', $useragent)) {
+        if ($s->contains('DDG-Android-', false)) {
             return $this->loader->load('duckduck app', $useragent);
         }
 
-        if (preg_match('/WebCorp/', $useragent)) {
+        if ($s->contains('WebCorp', false)) {
             return $this->loader->load('webcorp', $useragent);
         }
 
-        if (preg_match('/ROR Sitemap Generator/', $useragent)) {
+        if ($s->contains('ROR Sitemap Generator', false)) {
             return $this->loader->load('ror sitemap generator', $useragent);
         }
 
-        if (preg_match('/AuditMyPC Webmaster Tool/', $useragent)) {
+        if ($s->contains('AuditMyPC Webmaster Tool', false)) {
             return $this->loader->load('auditmypc webmaster tool', $useragent);
         }
 
-        if (preg_match('/XmlSitemapGenerator/', $useragent)) {
+        if ($s->contains('XmlSitemapGenerator', false)) {
             return $this->loader->load('xmlsitemapgenerator', $useragent);
         }
 
-        if (preg_match('/Stratagems Kumo/', $useragent)) {
+        if ($s->contains('Stratagems Kumo', false)) {
             return $this->loader->load('stratagems kumo', $useragent);
         }
 
-        if (preg_match('/YOURLS/', $useragent)) {
+        if ($s->contains('YOURLS', false)) {
             return $this->loader->load('yourls', $useragent);
         }
 
-        if (preg_match('/Embed PHP Library/', $useragent)) {
+        if ($s->contains('Embed PHP Library', false)) {
             return $this->loader->load('embed php library', $useragent);
         }
 
-        if (preg_match('/SPIP/', $useragent)) {
+        if ($s->contains('SPIP', false)) {
             return $this->loader->load('spip', $useragent);
         }
 
-        if (preg_match('/Friendica/', $useragent)) {
+        if ($s->contains('Friendica', false)) {
             return $this->loader->load('friendica', $useragent);
         }
 
-        if (preg_match('/MagpieRSS/', $useragent)) {
+        if ($s->contains('MagpieRSS', false)) {
             return $this->loader->load('magpierss', $useragent);
         }
 
-        if (preg_match('/Short URL Checker/', $useragent)) {
+        if ($s->contains('Short URL Checker', false)) {
             return $this->loader->load('short url checker', $useragent);
         }
 
-        if (preg_match('/webnumbrFetcher/', $useragent)) {
+        if ($s->contains('webnumbrFetcher', false)) {
             return $this->loader->load('webnumbr fetcher', $useragent);
         }
 
-        if (preg_match('/(WAP Browser|Spice QT\-75|KKT20\/MIDP)/', $useragent)) {
+        if ($s->containsAny(['WAP Browser', 'Spice QT-75', 'KKT20/MIDP'], false)) {
             return $this->loader->load('wap browser', $useragent);
         }
 
-        if (preg_match('/java/i', $useragent)) {
+        if ($s->contains('java', false)) {
             return $this->loader->load('java', $useragent);
         }
 
-        if (preg_match('/(unister\-test|unistertesting|unister\-https\-test)/i', $useragent)) {
+        if ($s->containsAny(['unister-test', 'unistertesting', 'unister-https-test'], false)) {
             return $this->loader->load('unistertesting', $useragent);
         }
 
-        if (preg_match('/AdMuncher/', $useragent)) {
+        if ($s->contains('AdMuncher', false)) {
             return $this->loader->load('ad muncher', $useragent);
         }
 
-        if (preg_match('/AdvancedEmailExtractor/', $useragent)) {
+        if ($s->contains('AdvancedEmailExtractor', false)) {
             return $this->loader->load('advanced email extractor', $useragent);
         }
 
-        if (preg_match('/AiHitBot/', $useragent)) {
+        if ($s->contains('AiHitBot', false)) {
             return $this->loader->load('aihitbot', $useragent);
         }
 
-        if (preg_match('/Alcatel/', $useragent)) {
+        if ($s->contains('Alcatel', false)) {
             return $this->loader->load('alcatel', $useragent);
         }
 
-        if (preg_match('/AlcoholSearch/', $useragent)) {
+        if ($s->contains('AlcoholSearch', false)) {
             return $this->loader->load('alcohol search', $useragent);
         }
 
-        if (preg_match('/ApacheHttpClient/', $useragent)) {
+        if ($s->contains('ApacheHttpClient', false)) {
             return $this->loader->load('apache-httpclient', $useragent);
         }
 
-        if (preg_match('/ArchiveDeBot/', $useragent)) {
+        if ($s->contains('ArchiveDeBot', false)) {
             return $this->loader->load('internet archive de', $useragent);
         }
 
-        if (preg_match('/Argclrint/', $useragent)) {
+        if ($s->contains('Argclrint', false)) {
             return $this->loader->load('argclrint', $useragent);
         }
 
-        if (preg_match('/AskBot/', $useragent)) {
+        if ($s->contains('AskBot', false)) {
             return $this->loader->load('ask bot', $useragent);
         }
 
-        if (preg_match('/AugustBot/', $useragent)) {
+        if ($s->contains('AugustBot', false)) {
             return $this->loader->load('augustbot', $useragent);
         }
 
-        if (preg_match('/Awesomebot/', $useragent)) {
+        if ($s->contains('Awesomebot', false)) {
             return $this->loader->load('awesomebot', $useragent);
         }
 
-        if (preg_match('/BaiduSpider/', $useragent)) {
+        if ($s->contains('BaiduSpider', false)) {
             return $this->loader->load('baiduspider', $useragent);
         }
 
-        if (preg_match('/Benq/', $useragent)) {
+        if ($s->contains('Benq', false)) {
             return $this->loader->load('benq', $useragent);
         }
 
-        if (preg_match('/Billigfluegefinal/', $useragent)) {
+        if ($s->contains('Billigfluegefinal', false)) {
             return $this->loader->load('billigfluegefinal app', $useragent);
         }
 
-        if (preg_match('/BingProductsBot/', $useragent)) {
+        if ($s->contains('BingProductsBot', false)) {
             return $this->loader->load('bing product search', $useragent);
         }
 
-        if (preg_match('/BlitzBot/', $useragent)) {
+        if ($s->contains('BlitzBot', false)) {
             return $this->loader->load('blitzbot', $useragent);
         }
 
-        if (preg_match('/BluecoatDrtr/', $useragent)) {
+        if ($s->contains('BluecoatDrtr', false)) {
             return $this->loader->load('dynamic realtime rating', $useragent);
         }
 
-        if (preg_match('/BndCrawler/', $useragent)) {
+        if ($s->contains('BndCrawler', false)) {
             return $this->loader->load('bnd crawler', $useragent);
         }
 
-        if (preg_match('/BoardReader/', $useragent)) {
+        if ($s->contains('BoardReader', false)) {
             return $this->loader->load('boardreader', $useragent);
         }
 
-        if (preg_match('/Boxee/', $useragent)) {
+        if ($s->contains('Boxee', false)) {
             return $this->loader->load('boxee', $useragent);
         }
 
-        if (preg_match('/Browser360/', $useragent)) {
+        if ($s->contains('Browser360', false)) {
             return $this->loader->load('360 browser', $useragent);
         }
 
-        if (preg_match('/Bwc/', $useragent)) {
+        if ($s->contains('Bwc', false)) {
             return $this->loader->load('bwc', $useragent);
         }
 
-        if (preg_match('/Camcrawler/', $useragent)) {
+        if ($s->contains('Camcrawler', false)) {
             return $this->loader->load('camcrawler', $useragent);
         }
 
-        if (preg_match('/CamelHttpStream/', $useragent)) {
+        if ($s->contains('CamelHttpStream', false)) {
             return $this->loader->load('camelhttpstream', $useragent);
         }
 
-        if (preg_match('/Charlotte/', $useragent)) {
+        if ($s->contains('Charlotte', false)) {
             return $this->loader->load('charlotte', $useragent);
         }
 
-        if (preg_match('/CheckLinks/', $useragent)) {
+        if ($s->contains('CheckLinks', false)) {
             return $this->loader->load('checklinks', $useragent);
         }
 
-        if (preg_match('/Choosy/', $useragent)) {
+        if ($s->contains('Choosy', false)) {
             return $this->loader->load('choosy', $useragent);
         }
 
-        if (preg_match('/ClarityDailyBot/', $useragent)) {
+        if ($s->contains('ClarityDailyBot', false)) {
             return $this->loader->load('claritydailybot', $useragent);
         }
 
-        if (preg_match('/Clipish/', $useragent)) {
+        if ($s->contains('Clipish', false)) {
             return $this->loader->load('clipish', $useragent);
         }
 
-        if (preg_match('/CloudSurfer/', $useragent)) {
+        if ($s->contains('CloudSurfer', false)) {
             return $this->loader->load('cloudsurfer', $useragent);
         }
 
-        if (preg_match('/CommonCrawl/', $useragent)) {
+        if ($s->contains('CommonCrawl', false)) {
             return $this->loader->load('commoncrawl', $useragent);
         }
 
-        if (preg_match('/ComodoCertificatesSpider/', $useragent)) {
+        if ($s->contains('ComodoCertificatesSpider', false)) {
             return $this->loader->load('comodo-certificates-spider', $useragent);
         }
 
-        if (preg_match('/CompSpyBot/', $useragent)) {
+        if ($s->contains('CompSpyBot', false)) {
             return $this->loader->load('compspybot', $useragent);
         }
 
-        if (preg_match('/CoobyBot/', $useragent)) {
+        if ($s->contains('CoobyBot', false)) {
             return $this->loader->load('coobybot', $useragent);
         }
 
-        if (preg_match('/CoreClassHttpClientCached/', $useragent)) {
+        if ($s->contains('CoreClassHttpClientCached', false)) {
             return $this->loader->load('core_class_httpclient_cached', $useragent);
         }
 
-        if (preg_match('/Coverscout/', $useragent)) {
+        if ($s->contains('Coverscout', false)) {
             return $this->loader->load('coverscout', $useragent);
         }
 
-        if (preg_match('/CrystalSemanticsBot/', $useragent)) {
+        if ($s->contains('CrystalSemanticsBot', false)) {
             return $this->loader->load('crystalsemanticsbot', $useragent);
         }
 
-        if (preg_match('/CurlPhp/', $useragent)) {
+        if ($s->contains('CurlPhp', false)) {
             return $this->loader->load('curl php', $useragent);
         }
 
-        if (preg_match('/CydralWebImageSearch/', $useragent)) {
+        if ($s->contains('CydralWebImageSearch', false)) {
             return $this->loader->load('cydral web image search', $useragent);
         }
 
-        if (preg_match('/DarwinBrowser/', $useragent)) {
+        if ($s->contains('DarwinBrowser', false)) {
             return $this->loader->load('darwin browser', $useragent);
         }
 
-        if (preg_match('/DCPbot/', $useragent)) {
+        if ($s->contains('DCPbot', false)) {
             return $this->loader->load('dcpbot', $useragent);
         }
 
-        if (preg_match('/Delibar/', $useragent)) {
+        if ($s->contains('Delibar', false)) {
             return $this->loader->load('delibar', $useragent);
         }
 
-        if (preg_match('/Diga/', $useragent)) {
+        if ($s->contains('Diga', false)) {
             return $this->loader->load('diga', $useragent);
         }
 
-        if (preg_match('/DoCoMo/', $useragent)) {
+        if ($s->contains('DoCoMo', false)) {
             return $this->loader->load('docomo', $useragent);
         }
 
-        if (preg_match('/DomainCrawler/', $useragent)) {
+        if ($s->contains('DomainCrawler', false)) {
             return $this->loader->load('domaincrawler', $useragent);
         }
 
-        if (preg_match('/Elefent/', $useragent)) {
+        if ($s->contains('Elefent', false)) {
             return $this->loader->load('elefent', $useragent);
         }
 
-        if (preg_match('/ElisaBot/', $useragent)) {
+        if ($s->contains('ElisaBot', false)) {
             return $this->loader->load('elisabot', $useragent);
         }
 
-        if (preg_match('/Eudora/', $useragent)) {
+        if ($s->contains('Eudora', false)) {
             return $this->loader->load('eudora', $useragent);
         }
 
-        if (preg_match('/EuripBot/', $useragent)) {
+        if ($s->contains('EuripBot', false)) {
             return $this->loader->load('europe internet portal', $useragent);
         }
 
-        if (preg_match('/EventGuruBot/', $useragent)) {
+        if ($s->contains('EventGuruBot', false)) {
             return $this->loader->load('eventguru bot', $useragent);
         }
 
-        if (preg_match('/ExbLanguageCrawler/', $useragent)) {
+        if ($s->contains('ExbLanguageCrawler', false)) {
             return $this->loader->load('exb language crawler', $useragent);
         }
 
-        if (preg_match('/Extras4iMovie/', $useragent)) {
+        if ($s->contains('Extras4iMovie', false)) {
             return $this->loader->load('extras4imovie', $useragent);
         }
 
-        if (preg_match('/FaceBookBot/', $useragent)) {
+        if ($s->contains('FaceBookBot', false)) {
             return $this->loader->load('facebook bot', $useragent);
         }
 
-        if (preg_match('/FalkMaps/', $useragent)) {
+        if ($s->contains('FalkMaps', false)) {
             return $this->loader->load('falkmaps', $useragent);
         }
 
-        if (preg_match('/FeedFinder/', $useragent)) {
+        if ($s->contains('FeedFinder', false)) {
             return $this->loader->load('feedfinder', $useragent);
         }
 
-        if (preg_match('/Findlinks/', $useragent)) {
+        if ($s->contains('Findlinks', false)) {
             return $this->loader->load('findlinks', $useragent);
         }
 
-        if (preg_match('/Firebird/', $useragent)) {
+        if ($s->contains('Firebird', false)) {
             return $this->loader->load('firebird', $useragent);
         }
 
-        if (preg_match('/Genieo/', $useragent)) {
+        if ($s->contains('Genieo', false)) {
             return $this->loader->load('genieo', $useragent);
         }
 
-        if (preg_match('/GenieoWebFilter/', $useragent)) {
+        if ($s->contains('GenieoWebFilter', false)) {
             return $this->loader->load('genieo web filter', $useragent);
         }
 
-        if (preg_match('/Getleft/', $useragent)) {
+        if ($s->contains('Getleft', false)) {
             return $this->loader->load('getleft', $useragent);
         }
 
-        if (preg_match('/GetPhotos/', $useragent)) {
+        if ($s->contains('GetPhotos', false)) {
             return $this->loader->load('getphotos', $useragent);
         }
 
-        if (preg_match('/Godzilla/', $useragent)) {
+        if ($s->contains('Godzilla', false)) {
             return $this->loader->load('godzilla', $useragent);
         }
 
-        if (preg_match('/Google/', $useragent)) {
+        if ($s->contains('Google', false)) {
             return $this->loader->load('google', $useragent);
         }
 
-        if (preg_match('/GoogleAdsbot/', $useragent)) {
+        if ($s->contains('GoogleAdsbot', false)) {
             return $this->loader->load('adsbot google', $useragent);
         }
 
-        if (preg_match('/GoogleEarth/', $useragent)) {
+        if ($s->contains('GoogleEarth', false)) {
             return $this->loader->load('google earth', $useragent);
         }
 
-        if (preg_match('/GoogleFontAnalysis/', $useragent)) {
+        if ($s->contains('GoogleFontAnalysis', false)) {
             return $this->loader->load('google fontanalysis', $useragent);
         }
 
-        if (preg_match('/GoogleImageProxy/', $useragent)) {
+        if ($s->contains('GoogleImageProxy', false)) {
             return $this->loader->load('google image proxy', $useragent);
         }
 
-        if (preg_match('/GoogleMarkupTester/', $useragent)) {
+        if ($s->contains('GoogleMarkupTester', false)) {
             return $this->loader->load('google markup tester', $useragent);
         }
 
-        if (preg_match('/GooglePageSpeed/', $useragent)) {
+        if ($s->contains('GooglePageSpeed', false)) {
             return $this->loader->load('google page speed', $useragent);
         }
 
-        if (preg_match('/GoogleSitemaps/', $useragent)) {
+        if ($s->contains('GoogleSitemaps', false)) {
             return $this->loader->load('google sitemaps', $useragent);
         }
 
-        if (preg_match('/GoogleTv/', $useragent)) {
+        if ($s->contains('GoogleTv', false)) {
             return $this->loader->load('googletv', $useragent);
         }
 
-        if (preg_match('/Grindr/', $useragent)) {
+        if ($s->contains('Grindr', false)) {
             return $this->loader->load('grindr', $useragent);
         }
 
-        if (preg_match('/GSLFbot/', $useragent)) {
+        if ($s->contains('GSLFbot', false)) {
             return $this->loader->load('gslfbot', $useragent);
         }
 
-        if (preg_match('/HaosouSpider/', $useragent)) {
+        if ($s->contains('HaosouSpider', false)) {
             return $this->loader->load('haosouspider', $useragent);
         }
 
-        if (preg_match('/HbbTv/', $useragent)) {
+        if ($s->contains('HbbTv', false)) {
             return $this->loader->load('hbbtv', $useragent);
         }
 
-        if (preg_match('/Heritrix/', $useragent)) {
+        if ($s->contains('Heritrix', false)) {
             return $this->loader->load('heritrix', $useragent);
         }
 
-        if (preg_match('/HitLeapViewer/', $useragent)) {
+        if ($s->contains('HitLeapViewer', false)) {
             return $this->loader->load('hitleap viewer', $useragent);
         }
 
-        if (preg_match('/Hitpad/', $useragent)) {
+        if ($s->contains('Hitpad', false)) {
             return $this->loader->load('hitpad', $useragent);
         }
 
-        if (preg_match('/HotWallpapers/', $useragent)) {
+        if ($s->contains('HotWallpapers', false)) {
             return $this->loader->load('hot wallpapers', $useragent);
         }
 
-        if (preg_match('/Ibisbrowser/', $useragent)) {
+        if ($s->contains('Ibisbrowser', false)) {
             return $this->loader->load('ibisbrowser', $useragent);
         }
 
-        if (preg_match('/Ibrowse/', $useragent)) {
+        if ($s->contains('Ibrowse', false)) {
             return $this->loader->load('ibrowse', $useragent);
         }
 
-        if (preg_match('/Ibuilder/', $useragent)) {
+        if ($s->contains('Ibuilder', false)) {
             return $this->loader->load('ibuilder', $useragent);
         }
 
-        if (preg_match('/Icedove/', $useragent)) {
+        if ($s->contains('Icedove', false)) {
             return $this->loader->load('icedove', $useragent);
         }
 
-        if (preg_match('/Iceowl/', $useragent)) {
+        if ($s->contains('Iceowl', false)) {
             return $this->loader->load('iceowl', $useragent);
         }
 
-        if (preg_match('/Ichromy/', $useragent)) {
+        if ($s->contains('Ichromy', false)) {
             return $this->loader->load('ichromy', $useragent);
         }
 
-        if (preg_match('/IcjobsCrawler/', $useragent)) {
+        if ($s->contains('IcjobsCrawler', false)) {
             return $this->loader->load('icjobs crawler', $useragent);
         }
 
-        if (preg_match('/ImageMobile/', $useragent)) {
+        if ($s->contains('ImageMobile', false)) {
             return $this->loader->load('imagemobile', $useragent);
         }
 
-        if (preg_match('/ImageSearcherS/', $useragent)) {
+        if ($s->contains('ImageSearcherS', false)) {
             return $this->loader->load('imagesearchers', $useragent);
         }
 
-        if (preg_match('/Incredimail/', $useragent)) {
+        if ($s->contains('Incredimail', false)) {
             return $this->loader->load('incredimail', $useragent);
         }
 
-        if (preg_match('/IndyLibrary/', $useragent)) {
+        if ($s->contains('IndyLibrary', false)) {
             return $this->loader->load('indy library', $useragent);
         }
 
-        if (preg_match('/InettvBrowser/', $useragent)) {
+        if ($s->contains('InettvBrowser', false)) {
             return $this->loader->load('inettvbrowser', $useragent);
         }
 
-        if (preg_match('/InfohelferCrawler/', $useragent)) {
+        if ($s->contains('InfohelferCrawler', false)) {
             return $this->loader->load('infohelfer crawler', $useragent);
         }
 
-        if (preg_match('/InsiteRobot/', $useragent)) {
+        if ($s->contains('InsiteRobot', false)) {
             return $this->loader->load('insite robot', $useragent);
         }
 
-        if (preg_match('/Insitesbot/', $useragent)) {
+        if ($s->contains('Insitesbot', false)) {
             return $this->loader->load('insitesbot', $useragent);
         }
 
-        if (preg_match('/IntegromedbCrawler/', $useragent)) {
+        if ($s->contains('IntegromedbCrawler', false)) {
             return $this->loader->load('integromedb crawler', $useragent);
         }
 
-        if (preg_match('/InternetArchive/', $useragent)) {
+        if ($s->contains('InternetArchive', false)) {
             return $this->loader->load('internet archive bot', $useragent);
         }
 
-        if (preg_match('/Ipick/', $useragent)) {
+        if ($s->contains('Ipick', false)) {
             return $this->loader->load('ipick', $useragent);
         }
 
-        if (preg_match('/Isource/', $useragent)) {
+        if ($s->contains('Isource', false)) {
             return $this->loader->load('isource+ app', $useragent);
         }
 
-        if (preg_match('/JakartaCommonsHttpClient/', $useragent)) {
+        if ($s->contains('JakartaCommonsHttpClient', false)) {
             return $this->loader->load('jakarta commons httpclient', $useragent);
         }
 
-        if (preg_match('/JigsawCssValidator/', $useragent)) {
+        if ($s->contains('JigsawCssValidator', false)) {
             return $this->loader->load('jigsaw css validator', $useragent);
         }
 
-        if (preg_match('/JustCrawler/', $useragent)) {
+        if ($s->contains('JustCrawler', false)) {
             return $this->loader->load('just-crawler', $useragent);
         }
 
-        if (preg_match('/Kindle/', $useragent)) {
+        if ($s->contains('Kindle', false)) {
             return $this->loader->load('kindle', $useragent);
         }
 
-        if (preg_match('/Linguatools/', $useragent)) {
+        if ($s->contains('Linguatools', false)) {
             return $this->loader->load('linguatoolsbot', $useragent);
         }
 
-        if (preg_match('/LingueeBot/', $useragent)) {
+        if ($s->contains('LingueeBot', false)) {
             return $this->loader->load('linguee bot', $useragent);
         }
 
-        if (preg_match('/LinkCheckerBot/', $useragent)) {
+        if ($s->contains('LinkCheckerBot', false)) {
             return $this->loader->load('link-checker', $useragent);
         }
 
-        if (preg_match('/LinkdexComBot/', $useragent)) {
+        if ($s->contains('LinkdexComBot', false)) {
             return $this->loader->load('linkdex bot', $useragent);
         }
 
-        if (preg_match('/LinkLint/', $useragent)) {
+        if ($s->contains('LinkLint', false)) {
             return $this->loader->load('linklint', $useragent);
         }
 
-        if (preg_match('/LinkWalkerBot/', $useragent)) {
+        if ($s->contains('LinkWalkerBot', false)) {
             return $this->loader->load('linkwalker', $useragent);
         }
 
-        if (preg_match('/LittleBookmarkBox/', $useragent)) {
+        if ($s->contains('LittleBookmarkBox', false)) {
             return $this->loader->load('little-bookmark-box app', $useragent);
         }
 
-        if (preg_match('/LtBot/', $useragent)) {
+        if ($s->contains('LtBot', false)) {
             return $this->loader->load('ltbot', $useragent);
         }
 
-        if (preg_match('/MacInroyPrivacyAuditors/', $useragent)) {
+        if ($s->contains('MacInroyPrivacyAuditors', false)) {
             return $this->loader->load('macinroy privacy auditors', $useragent);
         }
 
-        if (preg_match('/MaemoBrowser/', $useragent)) {
+        if ($s->contains('MaemoBrowser', false)) {
             return $this->loader->load('maemo browser', $useragent);
         }
 
-        if (preg_match('/MagpieCrawler/', $useragent)) {
+        if ($s->contains('MagpieCrawler', false)) {
             return $this->loader->load('magpie crawler', $useragent);
         }
 
-        if (preg_match('/MailExchangeWebServices/', $useragent)) {
+        if ($s->contains('MailExchangeWebServices', false)) {
             return $this->loader->load('mail exchangewebservices', $useragent);
         }
 
-        if (preg_match('/Maven/', $useragent)) {
+        if ($s->contains('Maven', false)) {
             return $this->loader->load('maven', $useragent);
         }
 
-        if (preg_match('/Mechanize/', $useragent)) {
+        if ($s->contains('Mechanize', false)) {
             return $this->loader->load('mechanize', $useragent);
         }
 
-        if (preg_match('/MicrosoftWindowsNetworkDiagnostics/', $useragent)) {
+        if ($s->contains('MicrosoftWindowsNetworkDiagnostics', false)) {
             return $this->loader->load('microsoft windows network diagnostics', $useragent);
         }
 
-        if (preg_match('/Mitsubishi/', $useragent)) {
+        if ($s->contains('Mitsubishi', false)) {
             return $this->loader->load('mitsubishi', $useragent);
         }
 
-        if (preg_match('/Mjbot/', $useragent)) {
+        if ($s->contains('Mjbot', false)) {
             return $this->loader->load('mjbot', $useragent);
         }
 
-        if (preg_match('/Mobilerss/', $useragent)) {
+        if ($s->contains('Mobilerss', false)) {
             return $this->loader->load('mobilerss', $useragent);
         }
 
-        if (preg_match('/MovableType/', $useragent)) {
+        if ($s->contains('MovableType', false)) {
             return $this->loader->load('movabletype web log', $useragent);
         }
 
-        if (preg_match('/Mozad/', $useragent)) {
+        if ($s->contains('Mozad', false)) {
             return $this->loader->load('mozad', $useragent);
         }
 
-        if (preg_match('/archive\-de\.com/', $useragent)) {
+        if ($s->contains('archive-de.com', false)) {
             return $this->loader->load('archive-de.com', $useragent);
         }
 
-        if (preg_match('/Mozilla/', $useragent)) {
+        if ($s->contains('Mozilla', false)) {
             return $this->loader->load('mozilla', $useragent);
         }
 
-        if (preg_match('/MsieCrawler/', $useragent)) {
+        if ($s->contains('MsieCrawler', false)) {
             return $this->loader->load('msiecrawler', $useragent);
         }
 
-        if (preg_match('/MsSearch/', $useragent)) {
+        if ($s->contains('MsSearch', false)) {
             return $this->loader->load('ms search', $useragent);
         }
 
-        if (preg_match('/MyEnginesBot/', $useragent)) {
+        if ($s->contains('MyEnginesBot', false)) {
             return $this->loader->load('myengines bot', $useragent);
         }
 
-        if (preg_match('/Nec/', $useragent)) {
+        if ($s->contains('Nec', false)) {
             return $this->loader->load('nec', $useragent);
         }
 
-        if (preg_match('/Netbox/', $useragent)) {
+        if ($s->contains('Netbox', false)) {
             return $this->loader->load('netbox', $useragent);
         }
 
-        if (preg_match('/NetNewsWire/', $useragent)) {
+        if ($s->contains('NetNewsWire', false)) {
             return $this->loader->load('netnewswire', $useragent);
         }
 
-        if (preg_match('/NetPositive/', $useragent)) {
+        if ($s->contains('NetPositive', false)) {
             return $this->loader->load('netpositive', $useragent);
         }
 
-        if (preg_match('/NetSurf/', $useragent)) {
+        if ($s->contains('NetSurf', false)) {
             return $this->loader->load('netsurf', $useragent);
         }
 
-        if (preg_match('/NetTv/', $useragent)) {
+        if ($s->contains('NetTv', false)) {
             return $this->loader->load('nettv', $useragent);
         }
 
-        if (preg_match('/Netvibes/', $useragent)) {
+        if ($s->contains('Netvibes', false)) {
             return $this->loader->load('netvibes', $useragent);
         }
 
-        if (preg_match('/NewsBot/', $useragent)) {
+        if ($s->contains('NewsBot', false)) {
             return $this->loader->load('news bot', $useragent);
         }
 
-        if (preg_match('/NewsRack/', $useragent)) {
+        if ($s->contains('NewsRack', false)) {
             return $this->loader->load('newsrack', $useragent);
         }
 
-        if (preg_match('/NixGibts/', $useragent)) {
+        if ($s->contains('NixGibts', false)) {
             return $this->loader->load('nixgibts', $useragent);
         }
 
-        if (preg_match('/NodeJsHttpRequest/', $useragent)) {
+        if ($s->contains('NodeJsHttpRequest', false)) {
             return $this->loader->load('node.js http_request', $useragent);
         }
 
-        if (preg_match('/OnePassword/', $useragent)) {
+        if ($s->contains('OnePassword', false)) {
             return $this->loader->load('1password', $useragent);
         }
 
-        if (preg_match('/OpenVas/', $useragent)) {
+        if ($s->contains('OpenVas', false)) {
             return $this->loader->load('open vulnerability assessment system', $useragent);
         }
 
-        if (preg_match('/OpenWeb/', $useragent)) {
+        if ($s->contains('OpenWeb', false)) {
             return $this->loader->load('openweb', $useragent);
         }
 
-        if (preg_match('/Origin/', $useragent)) {
+        if ($s->contains('Origin', false)) {
             return $this->loader->load('origin', $useragent);
         }
 
-        if (preg_match('/OssProxy/', $useragent)) {
+        if ($s->contains('OssProxy', false)) {
             return $this->loader->load('ossproxy', $useragent);
         }
 
-        if (preg_match('/Pagebull/', $useragent)) {
+        if ($s->contains('Pagebull', false)) {
             return $this->loader->load('pagebull', $useragent);
         }
 
-        if (preg_match('/PalmPixi/', $useragent)) {
+        if ($s->contains('PalmPixi', false)) {
             return $this->loader->load('palmpixi', $useragent);
         }
 
-        if (preg_match('/PalmPre/', $useragent)) {
+        if ($s->contains('PalmPre', false)) {
             return $this->loader->load('palmpre', $useragent);
         }
 
-        if (preg_match('/Panasonic/', $useragent)) {
+        if ($s->contains('Panasonic', false)) {
             return $this->loader->load('panasonic', $useragent);
         }
 
-        if (preg_match('/Pandora/', $useragent)) {
+        if ($s->contains('Pandora', false)) {
             return $this->loader->load('pandora', $useragent);
         }
 
-        if (preg_match('/Parchbot/', $useragent)) {
+        if ($s->contains('Parchbot', false)) {
             return $this->loader->load('parchbot', $useragent);
         }
 
-        if (preg_match('/PearHttpRequest/', $useragent)) {
+        if ($s->contains('PearHttpRequest', false)) {
             return $this->loader->load('pear http_request', $useragent);
         }
 
-        if (preg_match('/PearHttpRequest2/', $useragent)) {
+        if ($s->contains('PearHttpRequest2', false)) {
             return $this->loader->load('pear http_request2', $useragent);
         }
 
-        if (preg_match('/Philips/', $useragent)) {
+        if ($s->contains('Philips', false)) {
             return $this->loader->load('philips', $useragent);
         }
 
-        if (preg_match('/PixraySeeker/', $useragent)) {
+        if ($s->contains('PixraySeeker', false)) {
             return $this->loader->load('pixray-seeker', $useragent);
         }
 
-        if (preg_match('/Playstation/', $useragent)) {
+        if ($s->contains('Playstation', false)) {
             return $this->loader->load('playstation', $useragent);
         }
 
-        if (preg_match('/PlaystationBrowser/', $useragent)) {
+        if ($s->contains('PlaystationBrowser', false)) {
             return $this->loader->load('playstation browser', $useragent);
         }
 
-        if (preg_match('/Plukkie/', $useragent)) {
+        if ($s->contains('Plukkie', false)) {
             return $this->loader->load('plukkie', $useragent);
         }
 
-        if (preg_match('/PodtechNetwork/', $useragent)) {
+        if ($s->contains('PodtechNetwork', false)) {
             return $this->loader->load('podtech network', $useragent);
         }
 
-        if (preg_match('/Pogodak/', $useragent)) {
+        if ($s->contains('Pogodak', false)) {
             return $this->loader->load('pogodak', $useragent);
         }
 
-        if (preg_match('/Postbox/', $useragent)) {
+        if ($s->contains('Postbox', false)) {
             return $this->loader->load('postbox', $useragent);
         }
 
-        if (preg_match('/Powertv/', $useragent)) {
+        if ($s->contains('Powertv', false)) {
             return $this->loader->load('powertv', $useragent);
         }
 
-        if (preg_match('/Prism/', $useragent)) {
+        if ($s->contains('Prism', false)) {
             return $this->loader->load('prism', $useragent);
         }
 
-        if (preg_match('/Python/', $useragent)) {
+        if ($s->contains('Python', false)) {
             return $this->loader->load('python', $useragent);
         }
 
-        if (preg_match('/Qihoo/', $useragent)) {
+        if ($s->contains('Qihoo', false)) {
             return $this->loader->load('qihoo', $useragent);
         }
 
-        if (preg_match('/Qtek/', $useragent)) {
+        if ($s->contains('Qtek', false)) {
             return $this->loader->load('qtek', $useragent);
         }
 
-        if (preg_match('/QtWeb/', $useragent)) {
+        if ($s->contains('QtWeb', false)) {
             return $this->loader->load('qtweb internet browser', $useragent);
         }
 
-        if (preg_match('/Quantcastbot/', $useragent)) {
+        if ($s->contains('Quantcastbot', false)) {
             return $this->loader->load('quantcastbot', $useragent);
         }
 
-        if (preg_match('/QuerySeekerSpider/', $useragent)) {
+        if ($s->contains('QuerySeekerSpider', false)) {
             return $this->loader->load('queryseekerspider', $useragent);
         }
 
-        if ($s->contains('quicktime', false)) {
-            return $this->loader->load('quicktime', $useragent);
-        }
-
-        if (preg_match('/Realplayer/', $useragent)) {
+        if ($s->contains('Realplayer', false)) {
             return $this->loader->load('realplayer', $useragent);
         }
 
-        if (preg_match('/RgAnalytics/', $useragent)) {
+        if ($s->contains('RgAnalytics', false)) {
             return $this->loader->load('rganalytics', $useragent);
         }
 
-        if (preg_match('/Rippers/', $useragent)) {
+        if ($s->contains('Rippers', false)) {
             return $this->loader->load('ripper', $useragent);
         }
 
-        if (preg_match('/Rojo/', $useragent)) {
+        if ($s->contains('Rojo', false)) {
             return $this->loader->load('rojo', $useragent);
         }
 
-        if (preg_match('/RssingBot/', $useragent)) {
+        if ($s->contains('RssingBot', false)) {
             return $this->loader->load('rssingbot', $useragent);
         }
 
-        if (preg_match('/RssOwl/', $useragent)) {
+        if ($s->contains('RssOwl', false)) {
             return $this->loader->load('rssowl', $useragent);
         }
 
-        if (preg_match('/RukyBot/', $useragent)) {
+        if ($s->contains('RukyBot', false)) {
             return $this->loader->load('ruky roboter', $useragent);
         }
 
-        if (preg_match('/Ruunk/', $useragent)) {
+        if ($s->contains('Ruunk', false)) {
             return $this->loader->load('ruunk', $useragent);
         }
 
-        if (preg_match('/Samsung/', $useragent)) {
+        if ($s->contains('Samsung', false)) {
             return $this->loader->load('samsung', $useragent);
         }
 
-        if (preg_match('/SamsungMobileBrowser/', $useragent)) {
+        if ($s->contains('SamsungMobileBrowser', false)) {
             return $this->loader->load('samsung mobile browser', $useragent);
         }
 
-        if (preg_match('/Sanyo/', $useragent)) {
+        if ($s->contains('Sanyo', false)) {
             return $this->loader->load('sanyo', $useragent);
         }
 
-        if (preg_match('/SaveTheWorldHeritage/', $useragent)) {
+        if ($s->contains('SaveTheWorldHeritage', false)) {
             return $this->loader->load('save-the-world-heritage bot', $useragent);
         }
 
-        if (preg_match('/Scorpionbot/', $useragent)) {
+        if ($s->contains('Scorpionbot', false)) {
             return $this->loader->load('scorpionbot', $useragent);
         }
 
-        if (preg_match('/Scraper/', $useragent)) {
+        if ($s->contains('Scraper', false)) {
             return $this->loader->load('scraper', $useragent);
         }
 
-        if (preg_match('/Searchmetrics/', $useragent)) {
+        if ($s->contains('Searchmetrics', false)) {
             return $this->loader->load('searchmetricsbot', $useragent);
         }
 
-        if (preg_match('/SemagerBot/', $useragent)) {
+        if ($s->contains('SemagerBot', false)) {
             return $this->loader->load('semager bot', $useragent);
         }
 
-        if (preg_match('/SeoEngineWorldBot/', $useragent)) {
+        if ($s->contains('SeoEngineWorldBot', false)) {
             return $this->loader->load('seoengine world bot', $useragent);
         }
 
-        if (preg_match('/Setooz/', $useragent)) {
+        if ($s->contains('Setooz', false)) {
             return $this->loader->load('setooz', $useragent);
         }
 
-        if (preg_match('/Shiira/', $useragent)) {
+        if ($s->contains('Shiira', false)) {
             return $this->loader->load('shiira', $useragent);
         }
 
-        if (preg_match('/Shopsalad/', $useragent)) {
+        if ($s->contains('Shopsalad', false)) {
             return $this->loader->load('shopsalad', $useragent);
         }
 
-        if (preg_match('/Siemens/', $useragent)) {
+        if ($s->contains('Siemens', false)) {
             return $this->loader->load('siemens', $useragent);
         }
 
-        if (preg_match('/Sindice/', $useragent)) {
+        if ($s->contains('Sindice', false)) {
             return $this->loader->load('sindice fetcher', $useragent);
         }
 
-        if (preg_match('/SiteKiosk/', $useragent)) {
+        if ($s->contains('SiteKiosk', false)) {
             return $this->loader->load('sitekiosk', $useragent);
         }
 
-        if (preg_match('/SlimBrowser/', $useragent)) {
+        if ($s->contains('SlimBrowser', false)) {
             return $this->loader->load('slimbrowser', $useragent);
         }
 
-        if (preg_match('/SmartSync/', $useragent)) {
+        if ($s->contains('SmartSync', false)) {
             return $this->loader->load('smartsync app', $useragent);
         }
 
-        if (preg_match('/SmartTv/', $useragent)) {
+        if ($s->contains('SmartTv', false)) {
             return $this->loader->load('smarttv', $useragent);
         }
 
-        if (preg_match('/SmartTvWebBrowser/', $useragent)) {
+        if ($s->contains('SmartTvWebBrowser', false)) {
             return $this->loader->load('smarttv webbrowser', $useragent);
         }
 
-        if (preg_match('/Snapbot/', $useragent)) {
+        if ($s->contains('Snapbot', false)) {
             return $this->loader->load('snapbot', $useragent);
         }
 
-        if (preg_match('/Snoopy/', $useragent)) {
+        if ($s->contains('Snoopy', false)) {
             return $this->loader->load('snoopy', $useragent);
         }
 
-        if (preg_match('/Snowtape/', $useragent)) {
+        if ($s->contains('Snowtape', false)) {
             return $this->loader->load('snowtape', $useragent);
         }
 
-        if (preg_match('/Songbird/', $useragent)) {
+        if ($s->contains('Songbird', false)) {
             return $this->loader->load('songbird', $useragent);
         }
 
-        if (preg_match('/Sosospider/', $useragent)) {
+        if ($s->contains('Sosospider', false)) {
             return $this->loader->load('sosospider', $useragent);
         }
 
-        if (preg_match('/SpaceBison/', $useragent)) {
+        if ($s->contains('SpaceBison', false)) {
             return $this->loader->load('space bison', $useragent);
         }
 
-        if (preg_match('/Spector/', $useragent)) {
+        if ($s->contains('Spector', false)) {
             return $this->loader->load('spector', $useragent);
         }
 
-        if (preg_match('/SpeedySpider/', $useragent)) {
+        if ($s->contains('SpeedySpider', false)) {
             return $this->loader->load('speedy spider', $useragent);
         }
 
-        if (preg_match('/SpellCheckBot/', $useragent)) {
+        if ($s->contains('SpellCheckBot', false)) {
             return $this->loader->load('spellcheck bot', $useragent);
         }
 
-        if (preg_match('/SpiderLing/', $useragent)) {
+        if ($s->contains('SpiderLing', false)) {
             return $this->loader->load('spiderling', $useragent);
         }
 
-        if (preg_match('/Spiderlytics/', $useragent)) {
+        if ($s->contains('Spiderlytics', false)) {
             return $this->loader->load('spiderlytics', $useragent);
         }
 
-        if (preg_match('/SpiderPig/', $useragent)) {
+        if ($s->contains('SpiderPig', false)) {
             return $this->loader->load('spider-pig', $useragent);
         }
 
-        if (preg_match('/SprayCan/', $useragent)) {
+        if ($s->contains('SprayCan', false)) {
             return $this->loader->load('spray-can', $useragent);
         }
 
-        if (preg_match('/SPV/', $useragent)) {
+        if ($s->contains('SPV', false)) {
             return $this->loader->load('spv', $useragent);
         }
 
-        if (preg_match('/SquidWall/', $useragent)) {
+        if ($s->contains('SquidWall', false)) {
             return $this->loader->load('squidwall', $useragent);
         }
 
-        if (preg_match('/Sqwidgebot/', $useragent)) {
+        if ($s->contains('Sqwidgebot', false)) {
             return $this->loader->load('sqwidgebot', $useragent);
         }
 
-        if (preg_match('/Strata/', $useragent)) {
+        if ($s->contains('Strata', false)) {
             return $this->loader->load('strata', $useragent);
         }
 
-        if (preg_match('/StrategicBoardBot/', $useragent)) {
+        if ($s->contains('StrategicBoardBot', false)) {
             return $this->loader->load('strategicboardbot', $useragent);
         }
 
-        if (preg_match('/StrawberryjamUrlExpander/', $useragent)) {
+        if ($s->contains('StrawberryjamUrlExpander', false)) {
             return $this->loader->load('strawberryjam url expander', $useragent);
         }
 
-        if (preg_match('/Sunbird/', $useragent)) {
+        if ($s->contains('Sunbird', false)) {
             return $this->loader->load('sunbird', $useragent);
         }
 
-        if (preg_match('/Superfish/', $useragent)) {
+        if ($s->contains('Superfish', false)) {
             return $this->loader->load('superfish', $useragent);
         }
 
-        if (preg_match('/Superswan/', $useragent)) {
+        if ($s->contains('Superswan', false)) {
             return $this->loader->load('superswan', $useragent);
         }
 
-        if (preg_match('/SymphonyBrowser/', $useragent)) {
+        if ($s->contains('SymphonyBrowser', false)) {
             return $this->loader->load('symphonybrowser', $useragent);
         }
 
-        if (preg_match('/SynapticWalker/', $useragent)) {
+        if ($s->contains('SynapticWalker', false)) {
             return $this->loader->load('synapticwalker', $useragent);
         }
 
-        if (preg_match('/TagInspectorBot/', $useragent)) {
+        if ($s->contains('TagInspectorBot', false)) {
             return $this->loader->load('taginspector', $useragent);
         }
 
-        if (preg_match('/Tailrank/', $useragent)) {
+        if ($s->contains('Tailrank', false)) {
             return $this->loader->load('tailrank', $useragent);
         }
 
-        if (preg_match('/TasapImageRobot/', $useragent)) {
+        if ($s->contains('TasapImageRobot', false)) {
             return $this->loader->load('tasapimagerobot', $useragent);
         }
 
-        if (preg_match('/TenFourFox/', $useragent)) {
+        if ($s->contains('TenFourFox', false)) {
             return $this->loader->load('tenfourfox', $useragent);
         }
 
-        if (preg_match('/Terra/', $useragent)) {
+        if ($s->contains('Terra', false)) {
             return $this->loader->load('terra', $useragent);
         }
 
-        if (preg_match('/TheBatDownloadManager/', $useragent)) {
+        if ($s->contains('TheBatDownloadManager', false)) {
             return $this->loader->load('the bat download manager', $useragent);
         }
 
-        if (preg_match('/ThemeSearchAndExtractionCrawler/', $useragent)) {
+        if ($s->contains('ThemeSearchAndExtractionCrawler', false)) {
             return $this->loader->load('themesearchandextractioncrawler', $useragent);
         }
 
-        if (preg_match('/ThumbShotsBot/', $useragent)) {
+        if ($s->contains('ThumbShotsBot', false)) {
             return $this->loader->load('thumbshotsbot', $useragent);
         }
 
-        if (preg_match('/Thunderstone/', $useragent)) {
+        if ($s->contains('Thunderstone', false)) {
             return $this->loader->load('thunderstone', $useragent);
         }
 
-        if (preg_match('/TinEye/', $useragent)) {
+        if ($s->contains('TinEye', false)) {
             return $this->loader->load('tineye', $useragent);
         }
 
-        if (preg_match('/TkcAutodownloader/', $useragent)) {
+        if ($s->contains('TkcAutodownloader', false)) {
             return $this->loader->load('tkcautodownloader', $useragent);
         }
 
-        if (preg_match('/TlsProber/', $useragent)) {
+        if ($s->contains('TlsProber', false)) {
             return $this->loader->load('tlsprober', $useragent);
         }
 
-        if (preg_match('/Toshiba/', $useragent)) {
+        if ($s->contains('Toshiba', false)) {
             return $this->loader->load('toshiba', $useragent);
         }
 
-        if (preg_match('/TrendictionBot/', $useragent)) {
+        if ($s->contains('TrendictionBot', false)) {
             return $this->loader->load('trendiction bot', $useragent);
         }
 
-        if (preg_match('/TrendMicro/', $useragent)) {
+        if ($s->contains('TrendMicro', false)) {
             return $this->loader->load('trend micro', $useragent);
         }
 
-        if (preg_match('/TumblrRssSyndication/', $useragent)) {
+        if ($s->contains('TumblrRssSyndication', false)) {
             return $this->loader->load('tumblrrsssyndication', $useragent);
         }
 
-        if (preg_match('/TuringMachine/', $useragent)) {
+        if ($s->contains('TuringMachine', false)) {
             return $this->loader->load('turingmachine', $useragent);
         }
 
-        if (preg_match('/TurnitinBot/', $useragent)) {
+        if ($s->contains('TurnitinBot', false)) {
             return $this->loader->load('turnitinbot', $useragent);
         }
 
-        if (preg_match('/Tweetbot/', $useragent)) {
+        if ($s->contains('Tweetbot', false)) {
             return $this->loader->load('tweetbot', $useragent);
         }
 
-        if (preg_match('/TwengabotDiscover/', $useragent)) {
+        if ($s->contains('TwengabotDiscover', false)) {
             return $this->loader->load('twengabotdiscover', $useragent);
         }
 
-        if (preg_match('/Twitturls/', $useragent)) {
+        if ($s->contains('Twitturls', false)) {
             return $this->loader->load('twitturls', $useragent);
         }
 
-        if (preg_match('/Typo/', $useragent)) {
+        if ($s->contains('Typo', false)) {
             return $this->loader->load('typo3', $useragent);
         }
 
-        if (preg_match('/TypoLinkvalidator/', $useragent)) {
+        if ($s->contains('TypoLinkvalidator', false)) {
             return $this->loader->load('typolinkvalidator', $useragent);
         }
 
-        if (preg_match('/UnisterPortale/', $useragent)) {
+        if ($s->contains('UnisterPortale', false)) {
             return $this->loader->load('unisterportale', $useragent);
         }
 
-        if (preg_match('/UoftdbExperiment/', $useragent)) {
+        if ($s->contains('UoftdbExperiment', false)) {
             return $this->loader->load('uoftdb experiment', $useragent);
         }
 
-        if (preg_match('/Vanillasurf/', $useragent)) {
+        if ($s->contains('Vanillasurf', false)) {
             return $this->loader->load('vanillasurf', $useragent);
         }
 
-        if (preg_match('/Viralheat/', $useragent)) {
+        if ($s->contains('Viralheat', false)) {
             return $this->loader->load('viral heat', $useragent);
         }
 
-        if (preg_match('/VmsMosaic/', $useragent)) {
+        if ($s->contains('VmsMosaic', false)) {
             return $this->loader->load('vmsmosaic', $useragent);
         }
 
-        if (preg_match('/Vobsub/', $useragent)) {
+        if ($s->contains('Vobsub', false)) {
             return $this->loader->load('vobsub', $useragent);
         }
 
-        if (preg_match('/Voilabot/', $useragent)) {
+        if ($s->contains('Voilabot', false)) {
             return $this->loader->load('voilabot', $useragent);
         }
 
-        if (preg_match('/Vonnacom/', $useragent)) {
+        if ($s->contains('Vonnacom', false)) {
             return $this->loader->load('vonnacom', $useragent);
         }
 
-        if (preg_match('/Voyager/', $useragent)) {
+        if ($s->contains('Voyager', false)) {
             return $this->loader->load('voyager', $useragent);
         }
 
-        if (preg_match('/W3cChecklink/', $useragent)) {
+        if ($s->contains('W3cChecklink', false)) {
             return $this->loader->load('w3c-checklink', $useragent);
         }
 
-        if (preg_match('/W3cValidator/', $useragent)) {
+        if ($s->contains('W3cValidator', false)) {
             return $this->loader->load('w3c validator', $useragent);
         }
 
-        if (preg_match('/W3m/', $useragent)) {
+        if ($s->contains('W3m', false)) {
             return $this->loader->load('w3m', $useragent);
         }
 
-        if (preg_match('/Webaroo/', $useragent)) {
+        if ($s->contains('Webaroo', false)) {
             return $this->loader->load('webaroo', $useragent);
         }
 
-        if (preg_match('/Webbotru/', $useragent)) {
+        if ($s->contains('Webbotru', false)) {
             return $this->loader->load('webbotru', $useragent);
         }
 
-        if (preg_match('/Webcapture/', $useragent)) {
+        if ($s->contains('Webcapture', false)) {
             return $this->loader->load('webcapture', $useragent);
         }
 
-        if (preg_match('/WebDownloader/', $useragent)) {
+        if ($s->contains('WebDownloader', false)) {
             return $this->loader->load('web downloader', $useragent);
         }
 
-        if (preg_match('/Webimages/', $useragent)) {
+        if ($s->contains('Webimages', false)) {
             return $this->loader->load('webimages', $useragent);
         }
 
-        if (preg_match('/Weblide/', $useragent)) {
+        if ($s->contains('Weblide', false)) {
             return $this->loader->load('weblide', $useragent);
         }
 
-        if (preg_match('/WebLinkValidator/', $useragent)) {
+        if ($s->contains('WebLinkValidator', false)) {
             return $this->loader->load('web link validator', $useragent);
         }
 
-        if (preg_match('/WebmasterworldServerHeaderChecker/', $useragent)) {
+        if ($s->contains('WebmasterworldServerHeaderChecker', false)) {
             return $this->loader->load('webmasterworldserverheaderchecker', $useragent);
         }
 
-        if (preg_match('/WebOX/', $useragent)) {
+        if ($s->contains('WebOX', false)) {
             return $this->loader->load('webox', $useragent);
         }
 
-        if (preg_match('/Webscan/', $useragent)) {
+        if ($s->contains('Webscan', false)) {
             return $this->loader->load('webscan', $useragent);
         }
 
-        if (preg_match('/Websuchebot/', $useragent)) {
+        if ($s->contains('Websuchebot', false)) {
             return $this->loader->load('websuchebot', $useragent);
         }
 
-        if (preg_match('/WebtvMsntv/', $useragent)) {
+        if ($s->contains('WebtvMsntv', false)) {
             return $this->loader->load('webtv/msntv', $useragent);
         }
 
-        if (preg_match('/Wepbot/', $useragent)) {
+        if ($s->contains('Wepbot', false)) {
             return $this->loader->load('wepbot', $useragent);
         }
 
-        if (preg_match('/WiJobRoboter/', $useragent)) {
+        if ($s->contains('WiJobRoboter', false)) {
             return $this->loader->load('wi job roboter', $useragent);
         }
 
-        if (preg_match('/Wikimpress/', $useragent)) {
+        if ($s->contains('Wikimpress', false)) {
             return $this->loader->load('wikimpress', $useragent);
         }
 
-        if (preg_match('/Winamp/', $useragent)) {
+        if ($s->contains('Winamp', false)) {
             return $this->loader->load('winamp', $useragent);
         }
 
-        if (preg_match('/Winkbot/', $useragent)) {
+        if ($s->contains('Winkbot', false)) {
             return $this->loader->load('winkbot', $useragent);
         }
 
-        if (preg_match('/Winwap/', $useragent)) {
+        if ($s->contains('Winwap', false)) {
             return $this->loader->load('winwap', $useragent);
         }
 
-        if (preg_match('/Wire/', $useragent)) {
+        if ($s->contains('Wire', false)) {
             return $this->loader->load('wire', $useragent);
         }
 
-        if (preg_match('/Wisebot/', $useragent)) {
+        if ($s->contains('Wisebot', false)) {
             return $this->loader->load('wisebot', $useragent);
         }
 
-        if (preg_match('/Wizz/', $useragent)) {
+        if ($s->contains('Wizz', false)) {
             return $this->loader->load('wizz', $useragent);
         }
 
-        if (preg_match('/Worldlingo/', $useragent)) {
+        if ($s->contains('Worldlingo', false)) {
             return $this->loader->load('worldlingo', $useragent);
         }
 
-        if (preg_match('/WorldWideWeasel/', $useragent)) {
+        if ($s->contains('WorldWideWeasel', false)) {
             return $this->loader->load('world wide weasel', $useragent);
         }
 
-        if (preg_match('/Wotbox/', $useragent)) {
+        if ($s->contains('Wotbox', false)) {
             return $this->loader->load('wotbox', $useragent);
         }
 
-        if (preg_match('/WwwBrowser/', $useragent)) {
+        if ($s->contains('WwwBrowser', false)) {
             return $this->loader->load('www browser', $useragent);
         }
 
-        if (preg_match('/Wwwc/', $useragent)) {
+        if ($s->contains('Wwwc', false)) {
             return $this->loader->load('wwwc', $useragent);
         }
 
-        if (preg_match('/Wwwmail/', $useragent)) {
+        if ($s->contains('Wwwmail', false)) {
             return $this->loader->load('www4mail', $useragent);
         }
 
-        if (preg_match('/WwwMechanize/', $useragent)) {
+        if ($s->contains('WwwMechanize', false)) {
             return $this->loader->load('www-mechanize', $useragent);
         }
 
-        if (preg_match('/Wwwster/', $useragent)) {
+        if ($s->contains('Wwwster', false)) {
             return $this->loader->load('wwwster', $useragent);
         }
 
-        if (preg_match('/XaldonWebspider/', $useragent)) {
+        if ($s->contains('XaldonWebspider', false)) {
             return $this->loader->load('xaldon webspider', $useragent);
         }
 
-        if (preg_match('/XchaosArachne/', $useragent)) {
+        if ($s->contains('XchaosArachne', false)) {
             return $this->loader->load('xchaos arachne', $useragent);
         }
 
-        if (preg_match('/Xerka/', $useragent)) {
+        if ($s->contains('Xerka', false)) {
             return $this->loader->load('xerka', $useragent);
         }
 
-        if (preg_match('/XmlRpcForPhp/', $useragent)) {
+        if ($s->contains('XmlRpcForPhp', false)) {
             return $this->loader->load('xml-rpc for php', $useragent);
         }
 
-        if (preg_match('/Xspider/', $useragent)) {
+        if ($s->contains('Xspider', false)) {
             return $this->loader->load('xspider', $useragent);
         }
 
-        if (preg_match('/Xyleme/', $useragent)) {
+        if ($s->contains('Xyleme', false)) {
             return $this->loader->load('xyleme', $useragent);
         }
 
-        if (preg_match('/YacyBot/', $useragent)) {
+        if ($s->contains('YacyBot', false)) {
             return $this->loader->load('yacy bot', $useragent);
         }
 
-        if (preg_match('/Yadowscrawler/', $useragent)) {
+        if ($s->contains('Yadowscrawler', false)) {
             return $this->loader->load('yadowscrawler', $useragent);
         }
 
-        if (preg_match('/Yahoo/', $useragent)) {
+        if ($s->contains('Yahoo', false)) {
             return $this->loader->load('yahoo!', $useragent);
         }
 
-        if (preg_match('/YahooExternalCache/', $useragent)) {
+        if ($s->contains('YahooExternalCache', false)) {
             return $this->loader->load('yahooexternalcache', $useragent);
         }
 
-        if (preg_match('/YahooMobileMessenger/', $useragent)) {
+        if ($s->contains('YahooMobileMessenger', false)) {
             return $this->loader->load('yahoo! mobile messenger', $useragent);
         }
 
-        if (preg_match('/YahooPipes/', $useragent)) {
+        if ($s->contains('YahooPipes', false)) {
             return $this->loader->load('yahoo! pipes', $useragent);
         }
 
-        if (preg_match('/YandexImagesBot/', $useragent)) {
+        if ($s->contains('YandexImagesBot', false)) {
             return $this->loader->load('yandeximages', $useragent);
         }
 
-        if (preg_match('/YouWaveAndroidOnPc/', $useragent)) {
+        if ($s->contains('YouWaveAndroidOnPc', false)) {
             return $this->loader->load('youwave android on pc', $useragent);
         }
 

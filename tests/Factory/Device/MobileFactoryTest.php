@@ -24024,6 +24024,16 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'S8500 UCWEB6.0/UC Browser7.7.0.81',
+                'GT-S8500',
+                'Wave',
+                'Samsung',
+                'Samsung',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -182,7 +182,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HpFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['galaxy', 'nexus', 'i7110', 'i9100', 'i9300', 'yp-g', 'blaze'], false)) {
+        if ($s->containsAny(['galaxy', 'nexus', 'i7110', 'i9100', 'i9300', 'yp-g', 'blaze', 's8500'], false)) {
             return (new Mobile\SamsungFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 

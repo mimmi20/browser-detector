@@ -288,6 +288,13 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
                 'Apple Inc',
                 null,
             ],
+            [
+                'Zend\Http\Client',
+                'httpclient',
+                '0.0.0',
+                null,
+                null,
+            ],
         ];
     }
 }
