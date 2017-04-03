@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\SupraFactory;
+use BrowserDetector\Factory\Device\Mobile\NomiFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class SupraFactoryTest extends \PHPUnit\Framework\TestCase
+class NomiFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\SupraFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\NomiFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class SupraFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new SupraFactory($cache, $loader);
+        $this->object = new NomiFactory($cache, $loader);
     }
 
     /**
@@ -106,30 +106,30 @@ class SupraFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Supra Device',
-                'general Supra Device',
-                'Supra',
-                'Supra',
+                'general Nomi Device',
+                'general Nomi Device',
+                'Nomi',
+                'Nomi',
                 'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; ru; SUPRA_M121G) U2/1.0.0 UCBrowser/10.0.0.556 U2/1.0.0 Mobile',
-                'M121G',
-                'M121G',
-                'Supra',
-                'Supra',
+                'Mozilla/5.0 (Linux; Android 4.4.2; C07000 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 YaBrowser/14.7.1916.15743.00 Safari/537.36',
+                'C07000',
+                'C07000',
+                'Nomi',
+                'Nomi',
                 'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-; SUPRA M723G Build/JDQ39) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.5.0.4',
-                'M723G',
-                'M723G',
-                'Supra',
-                'Supra',
+                'Mozilla/5.0 (Linux; Android 4.4.2; A10100 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.114 Safari/537.36',
+                'A10100',
+                'A10100',
+                'Nomi',
+                'Nomi',
                 'Tablet',
                 true,
                 'touchscreen',

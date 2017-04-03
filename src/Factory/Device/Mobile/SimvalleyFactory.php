@@ -54,7 +54,7 @@ class SimvalleyFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('SPX-5[ _]3G', true)) {
+        if ($s->containsAny(['SPX-5 3G', 'SPX-5_3G'], true)) {
             return $this->loader->load('spx-5 3g', $useragent);
         }
 
