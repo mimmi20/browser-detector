@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\SupraFactory;
+use BrowserDetector\Factory\Device\Mobile\MtcFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class SupraFactoryTest extends \PHPUnit\Framework\TestCase
+class MtcFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\SupraFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\MtcFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class SupraFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new SupraFactory($cache, $loader);
+        $this->object = new MtcFactory($cache, $loader);
     }
 
     /**
@@ -106,31 +106,31 @@ class SupraFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Supra Device',
-                'general Supra Device',
-                'Supra',
-                'Supra',
+                'general MTC Device',
+                'general MTC Device',
+                'MTC',
+                'MTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; MTC SMART Run Build/ARK) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 ACHEETAHI/2100501044',
+                'SMART Run',
+                'SMART Run',
+                'MTC',
+                'MTC',
                 'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; ru; SUPRA_M121G) U2/1.0.0 UCBrowser/10.0.0.556 U2/1.0.0 Mobile',
-                'M121G',
-                'M121G',
-                'Supra',
-                'Supra',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-; SUPRA M723G Build/JDQ39) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.5.0.4',
-                'M723G',
-                'M723G',
-                'Supra',
-                'Supra',
-                'Tablet',
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; MTC 982 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30 SVN/150HWG1',
+                '982',
+                '982',
+                'MTC',
+                'MTC',
+                'Mobile Phone',
                 true,
                 'touchscreen',
             ],

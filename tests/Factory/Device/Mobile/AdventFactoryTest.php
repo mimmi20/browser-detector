@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\SupraFactory;
+use BrowserDetector\Factory\Device\Mobile\AdventFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class SupraFactoryTest extends \PHPUnit\Framework\TestCase
+class AdventFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\SupraFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\AdventFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class SupraFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new SupraFactory($cache, $loader);
+        $this->object = new AdventFactory($cache, $loader);
     }
 
     /**
@@ -106,30 +106,20 @@ class SupraFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Supra Device',
-                'general Supra Device',
-                'Supra',
-                'Supra',
+                'general Advent Device',
+                'general Advent Device',
+                'Advent',
+                'Advent',
                 'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; ru; SUPRA_M121G) U2/1.0.0 UCBrowser/10.0.0.556 U2/1.0.0 Mobile',
-                'M121G',
-                'M121G',
-                'Supra',
-                'Supra',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-; SUPRA M723G Build/JDQ39) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.5.0.4',
-                'M723G',
-                'M723G',
-                'Supra',
-                'Supra',
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Vega Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501028',
+                'P10AN01',
+                'Vega',
+                'Advent',
+                'Advent',
                 'Tablet',
                 true,
                 'touchscreen',
