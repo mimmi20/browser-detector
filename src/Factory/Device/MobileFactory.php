@@ -679,6 +679,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SiemensFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('SIE-', true)) {
+            return (new Mobile\SiemensFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('sprint', false)) {
             return (new Mobile\SprintFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
@@ -1131,6 +1135,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AcerFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
+        if ($s->containsAny(['A1002', 'A811'], true)) {
+            return (new Mobile\LexandFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
         if ($s->containsAny(['A120', 'A116', 'A114', 'A093', 'A065'], true)) {
             return (new Mobile\MicromaxFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
@@ -1455,7 +1463,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('NEXT', true)) {
+        if ($s->containsAny(['NEXT', 'DATAM803HC'], true)) {
             return (new Mobile\NextbookFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -1899,10 +1907,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\TwinovoFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['A1002', 'A811'], true)) {
-            return (new Mobile\LexandFactory($this->cache, $this->loader))->detect($useragent, $s);
-        }
-
         if ($s->contains(' A10', true)) {
             return (new Mobile\AllWinnerFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
@@ -2077,6 +2081,22 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->containsAny(['ARM; WIN JR', 'ARM; WIN HD'], true)) {
             return (new Mobile\BluFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('n820', false)) {
+            return (new Mobile\AmoiFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('N90FHDRK', true)) {
+            return (new Mobile\YuandaoFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('n90 dual core2', false)) {
+            return (new Mobile\YuandaoFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('lencm900hz', false)) {
+            return (new Mobile\LencoFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)
