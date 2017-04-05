@@ -335,12 +335,12 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('mac os x', $useragent);
         }
 
-        if (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP|Dolfin\/|Spark284|Lemon B556|KKT20|GT\-C3312R)/', $useragent)) {
-            return $this->loader->load('java', $useragent);
+        if ($s->containsAny(['GT-S5380', 'S8500'], true)) {
+            return $this->loader->load('bada', $useragent);
         }
 
-        if (preg_match('/(GT\-S5380)/', $useragent)) {
-            return $this->loader->load('bada', $useragent);
+        if (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP|Dolfin\/|Spark284|Lemon B556|KKT20|GT\-C3312R)/', $useragent)) {
+            return $this->loader->load('java', $useragent);
         }
 
         if (preg_match('/(Velocitymicro\/T408)/', $useragent)) {

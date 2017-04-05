@@ -290,7 +290,7 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 'Zend\Http\Client',
-                'httpclient',
+                'Zend_Http_Client',
                 '0.0.0',
                 null,
                 null,
