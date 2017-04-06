@@ -205,6 +205,10 @@ class MobileDevice
             return true;
         }
 
+        if ($s->contains('UCWEB', true)) {
+            return true;
+        }
+
         if ($s->contains('tablet', false)
             && !$s->contains('tablet pc', false)
         ) {

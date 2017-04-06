@@ -1355,6 +1355,13 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
                 'Apple Inc',
                 32,
             ],
+            [
+                'S8500 UCWEB6.0/UC Browser7.7.0.81',
+                'Bada',
+                '0.0.0',
+                'Samsung',
+                32,
+            ],
         ];
     }
 

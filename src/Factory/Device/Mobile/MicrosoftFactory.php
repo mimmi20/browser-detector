@@ -54,7 +54,7 @@ class MicrosoftFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('Windows NT 6.(2|3)', true)) {
+        if ($s->containsAny(['Windows NT 6.2', 'Windows NT 6.3'], true)) {
             return $this->loader->load('windows rt tablet', $useragent);
         }
 

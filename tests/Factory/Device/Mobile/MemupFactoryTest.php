@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\PipoFactory;
+use BrowserDetector\Factory\Device\Mobile\MemupFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class PipoFactoryTest extends \PHPUnit\Framework\TestCase
+class MemupFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\PipoFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\MemupFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class PipoFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new PipoFactory($cache, $loader);
+        $this->object = new MemupFactory($cache, $loader);
     }
 
     /**
@@ -106,81 +106,21 @@ class PipoFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general PiPO Device',
-                'general PiPO Device',
-                'PiPO Technology',
-                'PiPO',
-                'Tablet',
+                'general Memup Device',
+                'general Memup Device',
+                'Memup',
+                'Memup',
+                'Mobile Phone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; M7T Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.4.1.565 U3/0.8.0 Mobile Safari/534.30',
-                'M7T',
-                'M7T 3G',
-                'PiPO Technology',
-                'PiPO',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.4; ru-ru; M83g Build/M83g-eng 4.0.4 IMM76D test-keys_OTA:MID_2.1.1.1_20130207.131452) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16',
-                'M8 3G',
-                'Max M8 3G',
-                'PiPO Technology',
-                'PiPO',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; uk-ua; M6 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 [FB_IAB/FB4A;FBAV/31.0.0.20.13;]',
-                'M6',
-                'M6',
-                'PiPO Technology',
-                'PiPO',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; P93G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.01 Safari/537.36',
-                'P9 3G',
-                'P9 3G',
-                'PiPO Technology',
-                'PiPO',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; M9pro Build/JDQ39) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16 Chrome/33.0.0.0',
-                'Q107',
-                'M9 Pro',
-                'PiPO Technology',
-                'PiPO',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; M6pro Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 MxBrowser/4.4.2.1000',
-                'Q977',
-                'M6 pro',
-                'PiPO Technology',
-                'PiPO',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; i75 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.00 Mobile Safari/537.36',
-                'i75',
-                'i75',
-                'PiPO Technology',
-                'PiPO',
-                'Tablet',
+                'Mozilla/5.0 (Linux; U; Android 2.2; fr-fr; Slidepad Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'Slidepad',
+                'Slidepad',
+                'Memup',
+                'Memup',
+                'Mobile Phone',
                 true,
                 'touchscreen',
             ],

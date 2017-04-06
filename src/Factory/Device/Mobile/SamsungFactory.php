@@ -1950,7 +1950,7 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-s8530', $useragent);
         }
 
-        if ($s->contains('GT-S8500', false)) {
+        if ($s->contains('s8500', false)) {
             return $this->loader->load('gt-s8500', $useragent);
         }
 

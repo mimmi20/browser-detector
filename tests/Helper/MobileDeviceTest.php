@@ -76,6 +76,7 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
             ['Mozilla/5.0 (Linux; U; Linux Ventana; de-de; Transformer TF101G Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/8.0 Safari/534.13'],
             ['Mozilla/5.0 (Linux;U;Linux2.6; de-de; TSB_CLOUD_COMPANION;FOLIO_AND_A) AppleWebKit/533.1 (KHTML,like Gecko) Version/4.0 Safari/533.1'],
             ['DoCoMo/2.0 N705i(c100;TB;W24H16)'],
+            ['S8500 UCWEB6.0/UC Browser7.7.0.81'],
         ];
     }
 

@@ -54,10 +54,6 @@ class PipoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('TPC-PA10.1M', true)) {
-            return $this->loader->load('pipo pa10.1m', $useragent);
-        }
-
         if ($s->contains('p93g', false)) {
             return $this->loader->load('p9 3g', $useragent);
         }

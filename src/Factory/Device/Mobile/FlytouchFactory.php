@@ -54,10 +54,10 @@ class FlytouchFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('(Flytouch 9|Flytouch9)', false)) {
-            return $this->loader->load('9', $useragent);
+        if ($s->containsAny(['Flytouch 9', 'Flytouch9'], false)) {
+            return $this->loader->load('flytouch 9', $useragent);
         }
 
-        return $this->loader->load('flytouch', $useragent);
+        return $this->loader->load('general flytouch device', $useragent);
     }
 }
