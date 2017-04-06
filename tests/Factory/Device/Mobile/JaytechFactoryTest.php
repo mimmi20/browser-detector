@@ -116,8 +116,8 @@ class JaytechFactoryTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 'Mozilla/5.0 (Linux; Android 4.4.2; TPC-PA10.1M Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'PA10.1M',
-                'PA10.1M',
+                'TPC-PA10.1M',
+                'TPC-PA10.1M',
                 'JAY-tech',
                 'JAY-tech',
                 'Tablet',

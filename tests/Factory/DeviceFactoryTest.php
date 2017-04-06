@@ -22361,16 +22361,6 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.4.2; TPC-PA10.1M Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'PA10.1M',
-                'PA10.1M',
-                'PiPO Technology',
-                'PiPO',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
                 'Mozilla/5.0 (Linux; Android 4.4.2; P93G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.01 Safari/537.36',
                 'P9 3G',
                 'P9 3G',
@@ -24392,8 +24382,8 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 'Mozilla/5.0 (Linux; Android 4.4.2; TPC-PA10.1M Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'PA10.1M',
-                'PA10.1M',
+                'TPC-PA10.1M',
+                'TPC-PA10.1M',
                 'JAY-tech',
                 'JAY-tech',
                 'Tablet',

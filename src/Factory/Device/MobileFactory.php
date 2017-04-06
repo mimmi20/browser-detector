@@ -368,6 +368,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\XoroFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
+        if ($s->containsAny(['memup', 'slidepad'], false)) {
+            return (new Mobile\MemupFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
         if ($s->containsAny(['epad', 'p7901a'], false)) {
             return (new Mobile\EpadFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
@@ -582,10 +586,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('m-way', false)) {
             return (new Mobile\MwayFactory($this->cache, $this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('memup', false)) {
-            return (new Mobile\MemupFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('prestigio', false)) {
@@ -1615,6 +1615,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DigmaFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('K1 turbo', true)) {
+            return (new Mobile\KingzoneFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
         if ($s->containsAny(['P1032X', 'P1050X', 'K910L', ' K1 ', ' A1', ' A65 '], true)) {
             return (new Mobile\LenovoFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
@@ -1715,10 +1719,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ImpressionFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('K1 turbo', true)) {
-            return (new Mobile\KingzoneFactory($this->cache, $this->loader))->detect($useragent, $s);
-        }
-
         if ($s->contains('TAB917QC-8GB', true)) {
             return (new Mobile\SunstechFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
@@ -1727,7 +1727,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SunstechFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['TPC-PA10.1M', 'M7T', 'P93G', 'i75', 'M83g', ' M6 ', 'M6pro', 'M9pro'], true)) {
+        if ($s->containsAny(['M7T', 'P93G', 'i75', 'M83g', ' M6 ', 'M6pro', 'M9pro'], true)) {
             return (new Mobile\PipoFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
@@ -2097,6 +2097,14 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('lencm900hz', false)) {
             return (new Mobile\LencoFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('tp10.1-1500dc', false)) {
+            return (new Mobile\IonikFactory($this->cache, $this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('TPC-PA10.1M', true)) {
+            return (new Mobile\JaytechFactory($this->cache, $this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)

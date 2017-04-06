@@ -10,6 +10,7 @@
         beStrictAboutTodoAnnotatedTests="true"
         verbose="true"
         colors="auto"
+        failOnWarning="true"
         bootstrap="vendor/autoload.php"
         >
     <php>
