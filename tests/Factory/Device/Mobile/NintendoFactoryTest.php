@@ -37,7 +37,7 @@ class NintendoFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new NintendoFactory($cache, $loader);
+        $this->object = new NintendoFactory($loader);
     }
 
     /**

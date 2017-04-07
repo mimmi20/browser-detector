@@ -30,22 +30,15 @@ use UaResult\Os\OsFactory;
 class PlatformFactory implements FactoryInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface       $cache
      * @param \BrowserDetector\Loader\LoaderInterface $loader
      */
-    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
+    public function __construct(LoaderInterface $loader)
     {
-        $this->cache  = $cache;
         $this->loader = $loader;
     }
 
@@ -106,7 +99,7 @@ class PlatformFactory implements FactoryInterface
         }
 
         if ($isWindows) {
-            return (new Platform\WindowsFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Platform\WindowsFactory($this->loader))->detect($useragent);
         }
 
         if (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|S60V3|S60V5)/', $useragent)) {
@@ -134,7 +127,7 @@ class PlatformFactory implements FactoryInterface
         }
 
         if ($s->containsAny(['debian apt-http', 'linux mint', 'ubuntu', 'fedora', 'redhat', 'red hat', 'kfreebsd', 'centos', 'mandriva', 'suse', 'gentoo', 'slackware', 'ventana', 'moblin'], false)) {
-            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Platform\LinuxFactory($this->loader))->detect($useragent);
         }
 
         if (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $useragent)) {
@@ -162,7 +155,7 @@ class PlatformFactory implements FactoryInterface
         }
 
         if ($s->containsAny(['darwin', 'cfnetwork'], false)) {
-            return (new Platform\DarwinFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Platform\DarwinFactory($this->loader))->detect($useragent);
         }
 
         if ($s->contains('playstation', false)) {
@@ -204,7 +197,7 @@ class PlatformFactory implements FactoryInterface
         }
 
         if (preg_match('/(de|rasp)bian/i', $useragent)) {
-            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Platform\LinuxFactory($this->loader))->detect($useragent);
         }
 
         if ($s->containsAny(['macintosh', 'mac os x', 'os=mac 10'], false)) {
@@ -216,7 +209,7 @@ class PlatformFactory implements FactoryInterface
         }
 
         if ($s->containsAny(['CrOS', 'Joli OS', 'Zenwalk GNU'])) {
-            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Platform\LinuxFactory($this->loader))->detect($useragent);
         }
 
         if ($s->contains('AIX')) {
@@ -292,7 +285,7 @@ class PlatformFactory implements FactoryInterface
         }
 
         if ((new Helper\Linux($useragent))->isLinux()) {
-            return (new Platform\LinuxFactory($this->cache, $this->loader))->detect($useragent);
+            return (new Platform\LinuxFactory($this->loader))->detect($useragent);
         }
 
         if ($s->contains('CP/M')) {
@@ -348,16 +341,5 @@ class PlatformFactory implements FactoryInterface
         }
 
         return $this->loader->load('unknown', $useragent);
-    }
-
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
-     *
-     * @return \UaResult\Os\OsInterface
-     */
-    public function fromArray(LoggerInterface $logger, array $data)
-    {
-        return (new OsFactory())->fromArray($this->cache, $logger, $data);
     }
 }

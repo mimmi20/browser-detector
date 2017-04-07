@@ -37,7 +37,7 @@ class XiangheFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new XiangheFactory($cache, $loader);
+        $this->object = new XiangheFactory($loader);
     }
 
     /**

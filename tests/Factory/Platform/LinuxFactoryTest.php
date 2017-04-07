@@ -36,7 +36,7 @@ class LinuxFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new PlatformLoader($cache);
-        $this->object = new LinuxFactory($cache, $loader);
+        $this->object = new LinuxFactory($loader);
     }
 
     /**

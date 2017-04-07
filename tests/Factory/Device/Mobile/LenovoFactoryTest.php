@@ -37,7 +37,7 @@ class LenovoFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new LenovoFactory($cache, $loader);
+        $this->object = new LenovoFactory($loader);
     }
 
     /**

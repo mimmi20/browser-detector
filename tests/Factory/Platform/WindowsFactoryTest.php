@@ -36,7 +36,7 @@ class WindowsFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new PlatformLoader($cache);
-        $this->object = new WindowsFactory($cache, $loader);
+        $this->object = new WindowsFactory($loader);
     }
 
     /**

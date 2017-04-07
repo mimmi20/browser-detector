@@ -25,22 +25,15 @@ use Stringy\Stringy;
 class SunstechFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface       $cache
      * @param \BrowserDetector\Loader\LoaderInterface $loader
      */
-    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
+    public function __construct(LoaderInterface $loader)
     {
-        $this->cache  = $cache;
         $this->loader = $loader;
     }
 

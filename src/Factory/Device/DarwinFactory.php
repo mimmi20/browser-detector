@@ -28,22 +28,15 @@ use Stringy\Stringy;
 class DarwinFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface       $cache
      * @param \BrowserDetector\Loader\LoaderInterface $loader
      */
-    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
+    public function __construct(LoaderInterface $loader)
     {
-        $this->cache  = $cache;
         $this->loader = $loader;
     }
 
@@ -57,7 +50,7 @@ class DarwinFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        $appleFactory = new Mobile\AppleFactory($this->cache, $this->loader);
+        $appleFactory = new Mobile\AppleFactory($this->loader);
 
         if (false !== mb_strpos($useragent, 'CFNetwork/808')) {
             return $appleFactory->detect($useragent, $s);

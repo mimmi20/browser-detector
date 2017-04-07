@@ -37,7 +37,7 @@ class IrbisFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new IrbisFactory($cache, $loader);
+        $this->object = new IrbisFactory($loader);
     }
 
     /**

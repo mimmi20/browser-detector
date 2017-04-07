@@ -13,6 +13,7 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\NormalizerFactory;
+use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Version\VersionFactory;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
@@ -33,15 +34,20 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
     private $object = null;
 
     /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
     protected function setUp()
     {
         $adapter      = new Local(__DIR__ . '/../../cache/');
-        $cache        = new FilesystemCachePool(new Filesystem($adapter));
-        $loader       = new EngineLoader($cache);
-        $this->object = new EngineFactory($cache, $loader);
+        $this->cache  = new FilesystemCachePool(new Filesystem($adapter));
+        $loader       = new EngineLoader($this->cache);
+        $this->object = new EngineFactory($loader);
     }
 
     /**
@@ -54,12 +60,13 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($userAgent, $engine, $version, $manufacturer)
     {
-        $normalizer = (new NormalizerFactory())->build();
+        $normalizer    = (new NormalizerFactory())->build();
+        $browserLoader = new BrowserLoader($this->cache);
 
         $normalizedUa = $normalizer->normalize($userAgent);
 
         /** @var \UaResult\Engine\EngineInterface $result */
-        $result = $this->object->detect($normalizedUa);
+        $result = $this->object->detect($normalizedUa, $browserLoader);
 
         self::assertInstanceOf('\UaResult\Engine\EngineInterface', $result);
         self::assertSame(
@@ -277,7 +284,7 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
         $original = new Engine($name, $manufacturer, $version);
 
         $array  = $original->toArray();
-        $object = $this->object->fromArray($logger, $array);
+        $object = (new \UaResult\Engine\EngineFactory())->fromArray($this->cache, $logger, $array);
 
         self::assertSame($name, $object->getName());
         self::assertEquals($manufacturer, $object->getManufacturer());

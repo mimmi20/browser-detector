@@ -37,7 +37,7 @@ class LavaFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new LavaFactory($cache, $loader);
+        $this->object = new LavaFactory($loader);
     }
 
     /**

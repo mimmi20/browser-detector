@@ -30,33 +30,27 @@ use Stringy\Stringy;
 class EngineFactory implements FactoryInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface       $cache
      * @param \BrowserDetector\Loader\LoaderInterface $loader
      */
-    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
+    public function __construct(LoaderInterface $loader)
     {
-        $this->cache  = $cache;
         $this->loader = $loader;
     }
 
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string $useragent
+     * @param string                                $useragent
+     * @param \BrowserDetector\Loader\BrowserLoader $browserLoader
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function detect($useragent)
+    public function detect($useragent, BrowserLoader $browserLoader = null)
     {
         $s = new Stringy($useragent);
 
@@ -93,7 +87,7 @@ class EngineFactory implements FactoryInterface
 
         if ($s->containsAny(['webkit', 'cfnetwork', 'safari', 'dalvik'], false)) {
             /** @var \UaResult\Browser\Browser $chrome */
-            list($chrome)  = (new BrowserLoader($this->cache))->load('chrome', $useragent);
+            list($chrome)  = $browserLoader->load('chrome', $useragent);
             $version       = $chrome->getVersion();
             $chromeVersion = 0;
 
@@ -139,16 +133,5 @@ class EngineFactory implements FactoryInterface
         }
 
         return $this->loader->load('unknown', $useragent);
-    }
-
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
-     *
-     * @return \UaResult\Engine\EngineInterface
-     */
-    public function fromArray(LoggerInterface $logger, array $data)
-    {
-        return (new \UaResult\Engine\EngineFactory())->fromArray($this->cache, $logger, $data);
     }
 }

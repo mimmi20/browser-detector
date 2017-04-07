@@ -37,7 +37,7 @@ class IonikFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new IonikFactory($cache, $loader);
+        $this->object = new IonikFactory($loader);
     }
 
     /**
