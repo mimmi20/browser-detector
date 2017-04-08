@@ -14,7 +14,6 @@ namespace BrowserDetector\Factory\Device;
 use BrowserDetector\Factory;
 use BrowserDetector\Helper;
 use BrowserDetector\Loader\LoaderInterface;
-use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
 
 /**

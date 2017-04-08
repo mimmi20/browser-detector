@@ -77,8 +77,8 @@ class Detector
         $normalizer    = (new NormalizerFactory())->build();
         $deviceUa      = $normalizer->normalize($request->getDeviceUserAgent());
 
-        /** @var \UaResult\Device\DeviceInterface $device */
-        /** @var \UaResult\Os\OsInterface $platform */
+        /* @var \UaResult\Device\DeviceInterface $device */
+        /* @var \UaResult\Os\OsInterface $platform */
         try {
             list($device, $platform) = $deviceFactory->detect($deviceUa);
         } catch (NotFoundException $e) {

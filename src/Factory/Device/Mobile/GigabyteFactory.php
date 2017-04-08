@@ -13,7 +13,6 @@ namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
-use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
 
 /**

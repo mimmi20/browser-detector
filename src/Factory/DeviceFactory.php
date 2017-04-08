@@ -15,8 +15,6 @@ use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
 use BrowserDetector\Loader\LoaderInterface;
-use Psr\Cache\CacheItemPoolInterface;
-use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
 /**

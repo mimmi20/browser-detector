@@ -12,8 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\LoaderInterface;
-use Psr\Cache\CacheItemPoolInterface;
-use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 use UaResult\Os\OsInterface;
 

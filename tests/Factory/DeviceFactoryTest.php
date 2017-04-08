@@ -43,10 +43,10 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp()
     {
-        $adapter      = new Local(__DIR__ . '/../../cache/');
+        $adapter            = new Local(__DIR__ . '/../../cache/');
         $this->cache        = new FilesystemCachePool(new Filesystem($adapter));
-        $loader       = new DeviceLoader($this->cache);
-        $this->object = new DeviceFactory($loader);
+        $loader             = new DeviceLoader($this->cache);
+        $this->object       = new DeviceFactory($loader);
     }
 
     /**
