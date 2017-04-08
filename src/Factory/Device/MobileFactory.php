@@ -525,7 +525,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LePanFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['LogicPD', 'Zoom2', 'NookColor'], true)) {
+        if ($s->containsAny(['LogicPD', 'Zoom2', 'NookColor', 'Nook Color'], true)) {
             return (new Mobile\LogicpdFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -746,6 +746,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if (preg_match('/(C|D|E|F)\d{4}/', $useragent)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/PM\-\d{4}/', $useragent)) {
+            return (new Mobile\SanyoFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('Aqua_Star', true)) {
@@ -2098,6 +2102,14 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('TPC-PA10.1M', true)) {
             return (new Mobile\JaytechFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains(' G9 ', true)) {
+            return (new Mobile\MastoneFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('dL1', true)) {
+            return (new Mobile\PanasonicFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)
