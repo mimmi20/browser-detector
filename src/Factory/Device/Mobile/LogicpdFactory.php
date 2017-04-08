@@ -13,7 +13,6 @@ namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
-use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
 
 /**
@@ -25,22 +24,15 @@ use Stringy\Stringy;
 class LogicpdFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface       $cache
      * @param \BrowserDetector\Loader\LoaderInterface $loader
      */
-    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
+    public function __construct(LoaderInterface $loader)
     {
-        $this->cache  = $cache;
         $this->loader = $loader;
     }
 
@@ -54,7 +46,7 @@ class LogicpdFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('(zoom2|nookcolor)', false)) {
+        if ($s->containsAny(['zoom2', 'nookcolor'], false)) {
             return $this->loader->load('zoom2', $useragent);
         }
 

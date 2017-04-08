@@ -37,7 +37,7 @@ class VelocityMicroFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new VelocityMicroFactory($cache, $loader);
+        $this->object = new VelocityMicroFactory($loader);
     }
 
     /**

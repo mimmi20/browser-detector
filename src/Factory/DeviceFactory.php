@@ -15,8 +15,6 @@ use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
 use BrowserDetector\Loader\LoaderInterface;
-use Psr\Cache\CacheItemPoolInterface;
-use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
 /**
@@ -31,22 +29,15 @@ use Stringy\Stringy;
 class DeviceFactory implements FactoryInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface       $cache
      * @param \BrowserDetector\Loader\LoaderInterface $loader
      */
-    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
+    public function __construct(LoaderInterface $loader)
     {
-        $this->cache  = $cache;
         $this->loader = $loader;
     }
 
@@ -64,32 +55,21 @@ class DeviceFactory implements FactoryInterface
         if (!$s->containsAny(['freebsd', 'raspbian'], false)
             && $s->containsAny(['darwin', 'cfnetwork'], false)
         ) {
-            return (new Device\DarwinFactory($this->cache, $this->loader))->detect($useragent, $s);
+            return (new Device\DarwinFactory($this->loader))->detect($useragent, $s);
         }
 
         if ((new MobileDevice($useragent))->isMobile()) {
-            return (new Device\MobileFactory($this->cache, $this->loader))->detect($useragent, $s);
+            return (new Device\MobileFactory($this->loader))->detect($useragent, $s);
         }
 
         if ((new TvHelper($useragent))->isTvDevice()) {
-            return (new Device\TvFactory($this->cache, $this->loader))->detect($useragent, $s);
+            return (new Device\TvFactory($this->loader))->detect($useragent, $s);
         }
 
         if ((new Desktop($useragent))->isDesktopDevice()) {
-            return (new Device\DesktopFactory($this->cache, $this->loader))->detect($useragent, $s);
+            return (new Device\DesktopFactory($this->loader))->detect($useragent, $s);
         }
 
         return $this->loader->load('unknown', $useragent);
-    }
-
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
-     *
-     * @return \UaResult\Device\DeviceInterface
-     */
-    public function fromArray(LoggerInterface $logger, array $data)
-    {
-        return (new \UaResult\Device\DeviceFactory())->fromArray($this->cache, $logger, $data);
     }
 }

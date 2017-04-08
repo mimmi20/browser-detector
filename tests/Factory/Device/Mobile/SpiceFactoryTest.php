@@ -37,7 +37,7 @@ class SpiceFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new SpiceFactory($cache, $loader);
+        $this->object = new SpiceFactory($loader);
     }
 
     /**

@@ -37,7 +37,7 @@ class SprintFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new SprintFactory($cache, $loader);
+        $this->object = new SprintFactory($loader);
     }
 
     /**

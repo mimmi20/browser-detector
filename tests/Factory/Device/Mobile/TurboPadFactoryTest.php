@@ -37,7 +37,7 @@ class TurboPadFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new TurboPadFactory($cache, $loader);
+        $this->object = new TurboPadFactory($loader);
     }
 
     /**

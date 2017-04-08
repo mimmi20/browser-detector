@@ -37,7 +37,7 @@ class BewatecFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new BewatecFactory($cache, $loader);
+        $this->object = new BewatecFactory($loader);
     }
 
     /**

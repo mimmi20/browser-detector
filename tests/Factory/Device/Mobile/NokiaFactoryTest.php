@@ -37,7 +37,7 @@ class NokiaFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new NokiaFactory($cache, $loader);
+        $this->object = new NokiaFactory($loader);
     }
 
     /**

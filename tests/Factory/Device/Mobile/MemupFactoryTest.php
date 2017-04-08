@@ -37,7 +37,7 @@ class MemupFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new MemupFactory($cache, $loader);
+        $this->object = new MemupFactory($loader);
     }
 
     /**

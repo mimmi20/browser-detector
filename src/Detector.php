@@ -14,6 +14,7 @@ namespace BrowserDetector;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\DeviceLoader;
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
@@ -48,21 +49,6 @@ class Detector
     private $logger = null;
 
     /**
-     * @var \UaNormalizer\UserAgentNormalizer
-     */
-    private $normalizer = null;
-
-    /**
-     * @var \BrowserDetector\Factory\RegexFactory
-     */
-    private $regexFactory = null;
-
-    /**
-     * @var null
-     */
-    private $deviceFactory = null;
-
-    /**
      * sets the cache used to make the detection faster
      *
      * @param \Psr\Cache\CacheItemPoolInterface $cache
@@ -72,42 +58,6 @@ class Detector
     {
         $this->cache  = $cache;
         $this->logger = $logger;
-    }
-
-    /**
-     * @return \UaNormalizer\UserAgentNormalizer
-     */
-    public function getNormalizer()
-    {
-        if (null === $this->normalizer) {
-            $this->normalizer = (new NormalizerFactory())->build();
-        }
-
-        return $this->normalizer;
-    }
-
-    /**
-     * @return \BrowserDetector\Factory\RegexFactory
-     */
-    public function getRegexFactory()
-    {
-        if (null === $this->regexFactory) {
-            $this->regexFactory = new Factory\RegexFactory($this->cache, $this->logger);
-        }
-
-        return $this->regexFactory;
-    }
-
-    /**
-     * @return \BrowserDetector\Factory\DeviceFactory
-     */
-    public function getDeviceFactory()
-    {
-        if (null === $this->deviceFactory) {
-            $this->deviceFactory = new Factory\DeviceFactory($this->cache, new DeviceLoader($this->cache));
-        }
-
-        return $this->deviceFactory;
     }
 
     /**
@@ -123,24 +73,41 @@ class Detector
             $request = $this->buildRequest($request);
         }
 
-        $regexFactory  = $this->getRegexFactory();
-        $deviceFactory = $this->getDeviceFactory();
-        $deviceUa      = $this->getNormalizer()->normalize($request->getDeviceUserAgent());
+        $deviceFactory = new Factory\DeviceFactory(new DeviceLoader($this->cache));
+        $normalizer    = (new NormalizerFactory())->build();
+        $deviceUa      = $normalizer->normalize($request->getDeviceUserAgent());
 
-        /** @var \UaResult\Device\DeviceInterface $device */
-        /** @var \UaResult\Os\OsInterface $platform */
-        list($device, $platform) = (new Detector\Device($this->cache, $this->logger, $regexFactory, $deviceFactory))->detect($deviceUa);
+        /* @var \UaResult\Device\DeviceInterface $device */
+        /* @var \UaResult\Os\OsInterface $platform */
+        try {
+            list($device, $platform) = $deviceFactory->detect($deviceUa);
+        } catch (NotFoundException $e) {
+            $this->logger->debug($e);
 
-        $browserUa = $this->getNormalizer()->normalize($request->getBrowserUserAgent());
+            $device   = null;
+            $platform = null;
+        }
+
+        $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
 
         if (null === $platform || in_array($platform->getName(), [null, 'unknown'])) {
-            $platformFactory = new PlatformFactory($this->cache, new PlatformLoader($this->cache));
-            $platform        = (new Detector\Os($this->cache, $this->logger, $regexFactory, $platformFactory))->detect($browserUa);
+            $this->logger->debug('platform not detected from the device');
+
+            $platformFactory = new PlatformFactory(new PlatformLoader($this->cache));
+
+            try {
+                $platform = $platformFactory->detect($browserUa);
+            } catch (NotFoundException $e) {
+                $this->logger->debug($e);
+                $platform = null;
+            }
         }
+
+        $browserLoader = new Loader\BrowserLoader($this->cache);
 
         /** @var \UaResult\Browser\BrowserInterface $browser */
         /** @var \UaResult\Engine\EngineInterface $engine */
-        list($browser, $engine) = (new Factory\BrowserFactory($this->cache, new Loader\BrowserLoader($this->cache)))->detect($browserUa, $platform);
+        list($browser, $engine) = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $platform);
         $engineLoader           = new Loader\EngineLoader($this->cache);
 
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
@@ -148,7 +115,7 @@ class Detector
             $engine = $engineLoader->load('webkit', $browserUa);
         } elseif (null === $engine || in_array($engine->getName(), [null, 'unknown'])) {
             $this->logger->debug('engine not detected from browser');
-            $engine = (new Factory\EngineFactory($this->cache, $engineLoader))->detect($browserUa);
+            $engine = (new Factory\EngineFactory($engineLoader))->detect($browserUa, $browserLoader);
         }
 
         return new Result(

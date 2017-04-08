@@ -37,7 +37,7 @@ class DellFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new DellFactory($cache, $loader);
+        $this->object = new DellFactory($loader);
     }
 
     /**

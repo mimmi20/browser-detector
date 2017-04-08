@@ -37,7 +37,7 @@ class FlyFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new FlyFactory($cache, $loader);
+        $this->object = new FlyFactory($loader);
     }
 
     /**

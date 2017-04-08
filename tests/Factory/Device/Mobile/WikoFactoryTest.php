@@ -37,7 +37,7 @@ class WikoFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new WikoFactory($cache, $loader);
+        $this->object = new WikoFactory($loader);
     }
 
     /**

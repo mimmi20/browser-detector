@@ -1,17 +1,17 @@
 tools:
+    php_cs_fixer:
+        config:
+            level: psr2
     php_code_sniffer:
         config:
             standard: "PSR2"
-filter:
-    excluded_paths:
-        - 'test/*'
-checks:
-    php: true
+
 coding_style:
     php:
         spaces:
             other:
                 after_type_cast: false
+
 build:
     tests:
         override:

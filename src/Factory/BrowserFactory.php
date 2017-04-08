@@ -12,8 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\LoaderInterface;
-use Psr\Cache\CacheItemPoolInterface;
-use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 use UaResult\Os\OsInterface;
 
@@ -29,22 +27,15 @@ use UaResult\Os\OsInterface;
 class BrowserFactory implements FactoryInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface       $cache
      * @param \BrowserDetector\Loader\LoaderInterface $loader
      */
-    public function __construct(CacheItemPoolInterface $cache, LoaderInterface $loader)
+    public function __construct(LoaderInterface $loader)
     {
-        $this->cache  = $cache;
         $this->loader = $loader;
     }
 
@@ -4466,16 +4457,5 @@ class BrowserFactory implements FactoryInterface
         }
 
         return $this->loader->load('unknown', $useragent);
-    }
-
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
-     *
-     * @return \UaResult\Browser\Browser
-     */
-    public function fromArray(LoggerInterface $logger, array $data)
-    {
-        return (new \UaResult\Browser\BrowserFactory())->fromArray($this->cache, $logger, $data);
     }
 }

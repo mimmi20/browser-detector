@@ -33,15 +33,20 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
     private $object = null;
 
     /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
     protected function setUp()
     {
         $adapter      = new Local(__DIR__ . '/../../cache/');
-        $cache        = new FilesystemCachePool(new Filesystem($adapter));
-        $loader       = new BrowserLoader($cache);
-        $this->object = new BrowserFactory($cache, $loader);
+        $this->cache  = new FilesystemCachePool(new Filesystem($adapter));
+        $loader       = new BrowserLoader($this->cache);
+        $this->object = new BrowserFactory($loader);
     }
 
     public function testToarray()
@@ -55,7 +60,7 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
         $original = new Browser($name, $manufacturer, $version);
 
         $array  = $original->toArray();
-        $object = $this->object->fromArray($logger, $array);
+        $object = (new \UaResult\Browser\BrowserFactory())->fromArray($this->cache, $logger, $array);
 
         self::assertSame($name, $object->getName());
         self::assertEquals($manufacturer, $object->getManufacturer());

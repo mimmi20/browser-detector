@@ -37,7 +37,7 @@ class ToshibaFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new ToshibaFactory($cache, $loader);
+        $this->object = new ToshibaFactory($loader);
     }
 
     /**

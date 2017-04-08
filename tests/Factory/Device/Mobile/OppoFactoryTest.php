@@ -37,7 +37,7 @@ class OppoFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new OppoFactory($cache, $loader);
+        $this->object = new OppoFactory($loader);
     }
 
     /**

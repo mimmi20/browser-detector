@@ -21,6 +21,7 @@ use League\Flysystem\Filesystem;
 use Psr\Log\NullLogger;
 use UaResult\Company\Company;
 use UaResult\Os\Os;
+use UaResult\Os\OsFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -33,15 +34,20 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
     private $object = null;
 
     /**
+     * @var \Psr\Cache\CacheItemPoolInterface|null
+     */
+    private $cache = null;
+
+    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
     protected function setUp()
     {
         $adapter      = new Local(__DIR__ . '/../../cache/');
-        $cache        = new FilesystemCachePool(new Filesystem($adapter));
-        $loader       = new PlatformLoader($cache);
-        $this->object = new PlatformFactory($cache, $loader);
+        $this->cache  = new FilesystemCachePool(new Filesystem($adapter));
+        $loader       = new PlatformLoader($this->cache);
+        $this->object = new PlatformFactory($loader);
     }
 
     /**
@@ -1378,7 +1384,7 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
         $original = new Os($name, $marketingName, $manufacturer, $version, $bits);
 
         $array  = $original->toArray();
-        $object = $this->object->fromArray($logger, $array);
+        $object = (new OsFactory())->fromArray($this->cache, $logger, $array);
 
         self::assertSame($name, $object->getName());
         self::assertSame($marketingName, $object->getMarketingName());
