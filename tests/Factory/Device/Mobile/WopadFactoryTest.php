@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\GeniatechFactory;
+use BrowserDetector\Factory\Device\Mobile\WopadFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
+class WopadFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\GeniatechFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\WopadFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new GeniatechFactory($loader);
+        $this->object = new WopadFactory($loader);
     }
 
     /**
@@ -106,23 +106,23 @@ class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Geniatech Device',
-                'general Geniatech Device',
-                'Geniatech',
-                'Geniatech',
-                'TV Device',
-                false,
-                null,
+                'general Wopad Device',
+                'general Wopad Device',
+                'Wopad',
+                'Wopad',
+                'Tablet',
+                true,
+                'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.1.2; MX Enjoy TV BOX Build/V1.03.04MX01_20130805) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Safari/537.36',
-                'MX Enjoy TV BOX',
-                'MX Enjoy TV BOX',
-                'Geniatech',
-                'Geniatech',
-                'TV Device',
-                false,
-                null,
+                'Mozilla/5.0 (Linux; Android 4.2.2; Q10S Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36',
+                'Q10S',
+                'Q10S',
+                'Wopad',
+                'Wopad',
+                'Tablet',
+                true,
+                'touchscreen',
             ],
         ];
     }

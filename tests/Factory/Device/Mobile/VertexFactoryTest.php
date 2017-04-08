@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\GeniatechFactory;
+use BrowserDetector\Factory\Device\Mobile\VertexFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
+class VertexFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\GeniatechFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\VertexFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new GeniatechFactory($loader);
+        $this->object = new VertexFactory($loader);
     }
 
     /**
@@ -106,23 +106,23 @@ class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Geniatech Device',
-                'general Geniatech Device',
-                'Geniatech',
-                'Geniatech',
-                'TV Device',
-                false,
-                null,
+                'general Vertex Device',
+                'general Vertex Device',
+                'Vertex',
+                'Vertex',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.1.2; MX Enjoy TV BOX Build/V1.03.04MX01_20130805) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Safari/537.36',
-                'MX Enjoy TV BOX',
-                'MX Enjoy TV BOX',
-                'Geniatech',
-                'Geniatech',
-                'TV Device',
-                false,
-                null,
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru; Impress_L Build/JDQ39) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/9.5.1.494 Mobile',
+                'Impress L',
+                'Impress L',
+                'Vertex',
+                'Vertex',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
         ];
     }

@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\GeniatechFactory;
+use BrowserDetector\Factory\Device\Mobile\TrirayFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
+class TrirayFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\GeniatechFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\TrirayFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new GeniatechFactory($loader);
+        $this->object = new TrirayFactory($loader);
     }
 
     /**
@@ -106,23 +106,23 @@ class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Geniatech Device',
-                'general Geniatech Device',
-                'Geniatech',
-                'Geniatech',
-                'TV Device',
-                false,
-                null,
+                'general Tri-ray device',
+                'general Tri-ray device',
+                'Tri-ray Co., Ltd.',
+                'Tri-ray',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.1.2; MX Enjoy TV BOX Build/V1.03.04MX01_20130805) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Safari/537.36',
-                'MX Enjoy TV BOX',
-                'MX Enjoy TV BOX',
-                'Geniatech',
-                'Geniatech',
-                'TV Device',
-                false,
-                null,
+                'Mozilla/5.0 (Linux; Android 4.4.2; X8+ Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
+                'X8+',
+                'X8+',
+                'Tri-ray Co., Ltd.',
+                'Tri-ray',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
         ];
     }

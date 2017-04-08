@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\GeniatechFactory;
+use BrowserDetector\Factory\Device\Mobile\UmiFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
+class UmiFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\GeniatechFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\UmiFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new GeniatechFactory($loader);
+        $this->object = new UmiFactory($loader);
     }
 
     /**
@@ -106,23 +106,23 @@ class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Geniatech Device',
-                'general Geniatech Device',
-                'Geniatech',
-                'Geniatech',
-                'TV Device',
-                false,
-                null,
+                'general UMi Device',
+                'general UMi Device',
+                'UMi',
+                'UMi',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.1.2; MX Enjoy TV BOX Build/V1.03.04MX01_20130805) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Safari/537.36',
-                'MX Enjoy TV BOX',
-                'MX Enjoy TV BOX',
-                'Geniatech',
-                'Geniatech',
-                'TV Device',
-                false,
-                null,
+                'Mozilla/5.0 (Linux; U; Android 4.2.1; ru; UMI_X2 Build/JOP40D) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/9.7.0.520 Mobile',
+                'X2',
+                'X2',
+                'UMi',
+                'UMi',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
         ];
     }
