@@ -1143,6 +1143,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\CubotFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('A1000s', true)) {
+            return (new Mobile\XoloFactory($this->loader))->detect($useragent, $s);
+        }
+
         if (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
             return (new Mobile\AcerFactory($this->loader))->detect($useragent, $s);
         }
@@ -1759,10 +1763,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\GeniatechFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('A1000s', true)) {
-            return (new Mobile\XoloFactory($this->loader))->detect($useragent, $s);
-        }
-
         if ($s->contains('P3000', true)) {
             return (new Mobile\ElephoneFactory($this->loader))->detect($useragent, $s);
         }
@@ -2109,6 +2109,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('dL1', true)) {
             return (new Mobile\PanasonicFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('zt180', false)) {
+            return (new Mobile\ZenithinkFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)
