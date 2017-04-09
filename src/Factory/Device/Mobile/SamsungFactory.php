@@ -746,10 +746,6 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('sm-n920p', $useragent);
         }
 
-        if ($s->contains('sm-n920a', false)) {
-            return $this->loader->load('sm-n920a', $useragent);
-        }
-
         if ($s->contains('sm-n920i', false)) {
             return $this->loader->load('sm-n920i', $useragent);
         }
@@ -1230,7 +1226,7 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('sm-g900i', $useragent);
         }
 
-        if ($s->contains('sm-g900f', false)) {
+        if ($s->containsAny(['sm-g900f', 'galaxy s5'], false)) {
             return $this->loader->load('sm-g900f', $useragent);
         }
 
@@ -1982,6 +1978,10 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-s7560', $useragent);
         }
 
+        if ($s->contains('gt-s7530l', false)) {
+            return $this->loader->load('gt-s7530l', $useragent);
+        }
+
         if ($s->contains('gt-s7530', false)) {
             return $this->loader->load('gt-s7530', $useragent);
         }
@@ -2216,6 +2216,10 @@ class SamsungFactory implements Factory\FactoryInterface
 
         if ($s->contains('gt-s5230', false)) {
             return $this->loader->load('gt-s5230', $useragent);
+        }
+
+        if ($s->contains('gt-s5222r', false)) {
+            return $this->loader->load('gt-s5222r', $useragent);
         }
 
         if ($s->contains('gt-s5222', false)) {
@@ -2542,7 +2546,7 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-i9100g', $useragent);
         }
 
-        if ($s->containsAny(['gt-i9100', 'i9100'], false)) {
+        if ($s->containsAny(['gt-i9100', 'i9100', 'galaxy s ii'], false)) {
             return $this->loader->load('gt-i9100', $useragent);
         }
 
@@ -2586,11 +2590,15 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-i9010p', $useragent);
         }
 
-        if ($s->containsAny(['galaxy s4', 'galaxy-s4'], false)) {
+        if ($s->containsAny(['galaxy s4', 'galaxy-s4', 'galaxys4'], false)) {
             return $this->loader->load('gt-i9500', $useragent);
         }
 
-        if ($s->containsAny(['Galaxy S', 'Galaxy-S'], false)) {
+        if ($s->contains('galaxy s iv', false)) {
+            return $this->loader->load('gt-i950x', $useragent);
+        }
+
+        if ($s->containsAny(['galaxy s', 'galaxy-s'], false)) {
             return $this->loader->load('samsung gt-i9010', $useragent);
         }
 
@@ -2766,6 +2774,10 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-e2252', $useragent);
         }
 
+        if ($s->contains('GT-E2222L', false)) {
+            return $this->loader->load('gt-e2222l', $useragent);
+        }
+
         if ($s->contains('GT-E2222', false)) {
             return $this->loader->load('gt-e2222', $useragent);
         }
@@ -2822,7 +2834,11 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-b7610', $useragent);
         }
 
-        if ($s->contains('GT-B7510', false)) {
+        if ($s->contains('gt-b7510l', false)) {
+            return $this->loader->load('gt-b7510l', $useragent);
+        }
+
+        if ($s->contains('gt-b7510', false)) {
             return $this->loader->load('gt-b7510', $useragent);
         }
 
@@ -2926,12 +2942,20 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('sph-p100', $useragent);
         }
 
+        if ($s->contains('sph-m930bst', false)) {
+            return $this->loader->load('sph-m930bst', $useragent);
+        }
+
         if ($s->contains('sph-m930', false)) {
             return $this->loader->load('sph-m930', $useragent);
         }
 
         if ($s->contains('sph-m840', false)) {
             return $this->loader->load('sph-m840', $useragent);
+        }
+
+        if ($s->contains('sph-m580bst', false)) {
+            return $this->loader->load('sph-m580bst', $useragent);
         }
 
         if ($s->contains('sph-m580', false)) {
