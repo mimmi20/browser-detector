@@ -1818,10 +1818,6 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('shw-m380w', $useragent);
         }
 
-        if ($s->contains('shw-m930bst', false)) {
-            return $this->loader->load('shw-m930bst', $useragent);
-        }
-
         if ($s->contains('shw-m480w', false)) {
             return $this->loader->load('shw-m480w', $useragent);
         }
@@ -2422,7 +2418,15 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-n5100', $useragent);
         }
 
-        if ($s->contains('GT-M7600', false)) {
+        if ($s->containsAny(['gt-m7603', 'samsung-m7603'], false)) {
+            return $this->loader->load('gt-m7603', $useragent);
+        }
+
+        if ($s->contains('gt-m7600l', false)) {
+            return $this->loader->load('gt-m7600l', $useragent);
+        }
+
+        if ($s->containsAny(['gt-m7600', 'samsung-m7600'], false)) {
             return $this->loader->load('gt-m7600', $useragent);
         }
 
@@ -2586,10 +2590,6 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-i9023', $useragent);
         }
 
-        if ($s->contains('gt-i9010p', false)) {
-            return $this->loader->load('gt-i9010p', $useragent);
-        }
-
         if ($s->containsAny(['galaxy s4', 'galaxy-s4', 'galaxys4'], false)) {
             return $this->loader->load('gt-i9500', $useragent);
         }
@@ -2598,11 +2598,7 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-i950x', $useragent);
         }
 
-        if ($s->containsAny(['galaxy s', 'galaxy-s'], false)) {
-            return $this->loader->load('samsung gt-i9010', $useragent);
-        }
-
-        if ($s->contains('GT-I9010', false)) {
+        if ($s->containsAny(['galaxy s', 'galaxy-s', 'gt-i9010'], false)) {
             return $this->loader->load('samsung gt-i9010', $useragent);
         }
 
@@ -2766,7 +2762,11 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('gt-e3309t', $useragent);
         }
 
-        if ($s->contains('GT-E2550', false)) {
+        if ($s->contains('gt-e2550l', false)) {
+            return $this->loader->load('gt-e2550l', $useragent);
+        }
+
+        if ($s->contains('gt-e2550', false)) {
             return $this->loader->load('gt-e2550', $useragent);
         }
 
