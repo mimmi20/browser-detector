@@ -46,7 +46,7 @@ class HtcFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if (preg_match('/ X9 /', $useragent)) {
+        if ($s->contains(' X9 ', true)) {
             return $this->loader->load('x9', $useragent);
         }
 
@@ -54,7 +54,7 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('nexus one', $useragent);
         }
 
-        if (preg_match('/Nexus 9/i', $useragent)) {
+        if ($s->contains('nexus 9', false)) {
             return $this->loader->load('nexus 9', $useragent);
         }
 
@@ -62,15 +62,15 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('nexus hd2', $useragent);
         }
 
-        if (preg_match('/8X by HTC/i', $useragent)) {
+        if ($s->contains('8X by HTC', false)) {
             return $this->loader->load('windows phone 8x', $useragent);
         }
 
-        if (preg_match('/PM23300/', $useragent)) {
+        if ($s->contains('PM23300', true)) {
             return $this->loader->load('windows phone 8x', $useragent);
         }
 
-        if (preg_match('/8S by HTC/i', $useragent)) {
+        if ($s->contains('8S by HTC', false)) {
             return $this->loader->load('8s', $useragent);
         }
 
@@ -78,11 +78,11 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('radar c110e', $useragent);
         }
 
-        if (preg_match('/radar 4g/i', $useragent)) {
+        if ($s->contains('radar 4g', false)) {
             return $this->loader->load('radar 4g', $useragent);
         }
 
-        if (preg_match('/radar/i', $useragent)) {
+        if ($s->contains('radar', false)) {
             return $this->loader->load('radar', $useragent);
         }
 
@@ -90,19 +90,19 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('t9292', $useragent);
         }
 
-        if (preg_match('/7 Mozart/i', $useragent)) {
+        if ($s->contains('7 Mozart', false)) {
             return $this->loader->load('t8698', $useragent);
         }
 
-        if (preg_match('/t8282/i', $useragent)) {
+        if ($s->contains('t8282', false)) {
             return $this->loader->load('touch hd t8282', $useragent);
         }
 
-        if (preg_match('/7 Pro T7576/i', $useragent)) {
+        if ($s->contains('7 Pro T7576', false)) {
             return $this->loader->load('t7576', $useragent);
         }
 
-        if (preg_match('/HD2\_T8585/i', $useragent)) {
+        if ($s->contains('HD2_T8585', false)) {
             return $this->loader->load('t8585', $useragent);
         }
 
@@ -110,7 +110,7 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('htc hd2', $useragent);
         }
 
-        if (preg_match('/HD2/', $useragent)) {
+        if ($s->contains('HD2', true)) {
             return $this->loader->load('hd2', $useragent);
         }
 
@@ -118,7 +118,7 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('mini t5555', $useragent);
         }
 
-        if (preg_match('/titan/i', $useragent)) {
+        if ($s->contains('titan', false)) {
             return $this->loader->load('x310e', $useragent);
         }
 
@@ -126,7 +126,7 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('spark', $useragent);
         }
 
-        if (preg_match('/0P6B180/i', $useragent)) {
+        if ($s->contains('0P6B180', false)) {
             return $this->loader->load('0p6b180', $useragent);
         }
 
@@ -146,7 +146,7 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('htc m8', $useragent);
         }
 
-        if (preg_match('/pn07120/i', $useragent)) {
+        if ($s->contains('pn07120', false)) {
             return $this->loader->load('pn07120', $useragent);
         }
 
@@ -186,12 +186,8 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('one max', $useragent);
         }
 
-        if (preg_match('/one/i', $useragent)) {
+        if ($s->containsAny(['One', 'ONE'], true)) {
             return $this->loader->load('m7', $useragent);
-        }
-
-        if (preg_match('/(Smart Tab III 7|SmartTabIII7)/i', $useragent)) {
-            return $this->loader->load('smart tab iii 7', $useragent);
         }
 
         if (preg_match('/(x315e|runnymede)/i', $useragent)) {
@@ -222,27 +218,31 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('htc z710', $useragent);
         }
 
-        if (preg_match('/Xda\_Diamond\_2/i', $useragent)) {
-            return $this->loader->load('xda_diamond_2', $useragent);
+        if ($s->contains('evo 3d gsm', false)) {
+            return $this->loader->load('evo 3d gsm', $useragent);
         }
 
-        if (preg_match('/Evo 3D GSM/i', $useragent)) {
-            return $this->loader->load('evo 3d gsm', $useragent);
+        if ($s->contains('x515a', false)) {
+            return $this->loader->load('x515a', $useragent);
+        }
+
+        if ($s->contains('x515c', false)) {
+            return $this->loader->load('x515c', $useragent);
+        }
+
+        if ($s->contains('x515e', false)) {
+            return $this->loader->load('x515e', $useragent);
         }
 
         if (preg_match('/(EVO[ _]3D|EVO3D|x515m)/i', $useragent)) {
             return $this->loader->load('x515m', $useragent);
         }
 
-        if (preg_match('/x515e/i', $useragent)) {
-            return $this->loader->load('x515e', $useragent);
-        }
-
-        if (preg_match('/x515/i', $useragent)) {
+        if ($s->contains('x515', false)) {
             return $this->loader->load('x515', $useragent);
         }
 
-        if (preg_match('/desirez\_a7272/i', $useragent)) {
+        if ($s->contains('desirez_a7272', false)) {
             return $this->loader->load('a7272', $useragent);
         }
 
@@ -258,7 +258,7 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('desire v', $useragent);
         }
 
-        if (preg_match('/s510e/i', $useragent)) {
+        if ($s->contains('s510e', false)) {
             return $this->loader->load('s510e', $useragent);
         }
 
@@ -270,12 +270,16 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('desire s', $useragent);
         }
 
-        if (preg_match('/desirehd\-orange\-ls/i', $useragent)) {
+        if ($s->contains('desirehd-orange-ls', false)) {
             return $this->loader->load('desire hd ls', $useragent);
         }
 
-        if (preg_match('/a9191/i', $useragent)) {
+        if ($s->contains('a9191', false)) {
             return $this->loader->load('a9191', $useragent);
+        }
+
+        if ($s->contains('a9192', false)) {
+            return $this->loader->load('inspire 4g', $useragent);
         }
 
         if (preg_match('/(desire hd|desirehd)/i', $useragent)) {
@@ -378,11 +382,11 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('desire eye', $useragent);
         }
 
-        if (preg_match('/desire\_a8181/i', $useragent)) {
+        if ($s->contains('desire_a8181', false)) {
             return $this->loader->load('a8181', $useragent);
         }
 
-        if (preg_match('/desire/i', $useragent)) {
+        if ($s->contains('desire', false)) {
             return $this->loader->load('desire', $useragent);
         }
 
@@ -390,11 +394,11 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('wildfire s ls', $useragent);
         }
 
-        if (preg_match('/ a315c /i', $useragent)) {
+        if ($s->contains(' a315c ', false)) {
             return $this->loader->load('a315c', $useragent);
         }
 
-        if (preg_match('/Wildfire\_A3333/i', $useragent)) {
+        if ($s->contains('Wildfire_A3333', false)) {
             return $this->loader->load('a3333', $useragent);
         }
 
@@ -402,7 +406,7 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('a510e', $useragent);
         }
 
-        if (preg_match('/ADR6230/i', $useragent)) {
+        if ($s->contains('adr6230', false)) {
             return $this->loader->load('adr6230', $useragent);
         }
 
@@ -410,11 +414,11 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('htc a510', $useragent);
         }
 
-        if (preg_match('/Wildfire/i', $useragent)) {
+        if ($s->contains('wildfire', false)) {
             return $this->loader->load('wildfire', $useragent);
         }
 
-        if (preg_match('/Vision/i', $useragent)) {
+        if ($s->contains('vision', false)) {
             return $this->loader->load('vision', $useragent);
         }
 
@@ -426,51 +430,51 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('velocity 4g', $useragent);
         }
 
-        if (preg_match('/Velocity/i', $useragent)) {
+        if ($s->contains('velocity', false)) {
             return $this->loader->load('velocity', $useragent);
         }
 
-        if (preg_match('/Touch\_Diamond2/i', $useragent)) {
+        if ($s->contains('touch_diamond2', false)) {
             return $this->loader->load('touch diamond 2', $useragent);
         }
 
-        if (preg_match('/tattoo/i', $useragent)) {
+        if ($s->contains('tattoo', false)) {
             return $this->loader->load('tattoo', $useragent);
         }
 
-        if (preg_match('/Touch\_Pro2\_T7373/i', $useragent)) {
+        if ($s->contains('touch_pro2_t7373', false)) {
             return $this->loader->load('t7373', $useragent);
         }
 
-        if (preg_match('/Touch2/i', $useragent)) {
+        if ($s->contains('touch2', false)) {
             return $this->loader->load('t3335', $useragent);
         }
 
-        if (preg_match('/t329d/i', $useragent)) {
+        if ($s->contains('t329d', false)) {
             return $this->loader->load('t329d', $useragent);
         }
 
-        if (preg_match('/t328w/i', $useragent)) {
+        if ($s->contains('t328w', false)) {
             return $this->loader->load('t328w', $useragent);
         }
 
-        if (preg_match('/t328d/i', $useragent)) {
+        if ($s->contains('t328d', false)) {
             return $this->loader->load('t328d', $useragent);
         }
 
-        if (preg_match('/Smart\_F3188/i', $useragent)) {
+        if ($s->contains('smart_f3188', false)) {
             return $this->loader->load('smart f3188', $useragent);
         }
 
-        if (preg_match('/ShooterU/i', $useragent)) {
+        if ($s->contains('shooteru', false)) {
             return $this->loader->load('shooter u', $useragent);
         }
 
-        if (preg_match('/Salsa/i', $useragent)) {
+        if ($s->contains('salsa', false)) {
             return $this->loader->load('salsa', $useragent);
         }
 
-        if (preg_match('/butterfly_s_901s/i', $useragent)) {
+        if ($s->contains('butterfly_s_901s', false)) {
             return $this->loader->load('s901s', $useragent);
         }
 
@@ -482,35 +486,19 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('s510b', $useragent);
         }
 
-        if (preg_match('/ruby/i', $useragent)) {
+        if ($s->contains('ruby', false)) {
             return $this->loader->load('ruby', $useragent);
         }
 
-        if (preg_match('/P3700/i', $useragent)) {
+        if ($s->contains('p3700', false)) {
             return $this->loader->load('p3700', $useragent);
         }
 
-        if (preg_match('/MDA\_Vario\_V/i', $useragent)) {
-            return $this->loader->load('mda vario v', $useragent);
-        }
-
-        if (preg_match('/MDA Vario\/3/i', $useragent)) {
-            return $this->loader->load('mda vario iii', $useragent);
-        }
-
-        if (preg_match('/MDA Vario\/2/i', $useragent)) {
-            return $this->loader->load('mda vario ii', $useragent);
-        }
-
-        if (preg_match('/MDA\_Compact\_V/i', $useragent)) {
-            return $this->loader->load('mda compact v', $useragent);
-        }
-
-        if (preg_match('/Magic/i', $useragent)) {
+        if ($s->contains('magic', false)) {
             return $this->loader->load('magic', $useragent);
         }
 
-        if (preg_match('/Legend/i', $useragent)) {
+        if ($s->contains('legend', false)) {
             return $this->loader->load('legend', $useragent);
         }
 
@@ -518,11 +506,11 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('hero', $useragent);
         }
 
-        if (preg_match('/Glacier/i', $useragent)) {
+        if ($s->contains('glacier', false)) {
             return $this->loader->load('glacier', $useragent);
         }
 
-        if (preg_match('/G21/i', $useragent)) {
+        if ($s->contains('g21', false)) {
             return $this->loader->load('g21', $useragent);
         }
 
@@ -534,7 +522,7 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('p510e', $useragent);
         }
 
-        if (preg_match('/Flyer/i', $useragent)) {
+        if ($s->contains('flyer', false)) {
             return $this->loader->load('flyer', $useragent);
         }
 
@@ -542,71 +530,59 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('pc36100', $useragent);
         }
 
-        if (preg_match('/Dream/i', $useragent)) {
+        if ($s->contains('dream', false)) {
             return $this->loader->load('dream', $useragent);
         }
 
-        if (preg_match('/D820mu/i', $useragent)) {
+        if ($s->contains('d820mu', false)) {
             return $this->loader->load('d820mu', $useragent);
         }
 
-        if (preg_match('/D820us/i', $useragent)) {
+        if ($s->contains('d820us', false)) {
             return $this->loader->load('d820us', $useragent);
         }
 
-        if (preg_match('/click/i', $useragent)) {
+        if ($s->contains('click', false)) {
             return $this->loader->load('click', $useragent);
         }
 
-        if (preg_match('/eris/i', $useragent)) {
+        if ($s->contains('eris', false)) {
             return $this->loader->load('eris', $useragent);
         }
 
-        if (preg_match('/ C2/i', $useragent)) {
+        if ($s->contains(' c2', false)) {
             return $this->loader->load('c2', $useragent);
         }
 
-        if (preg_match('/bravo/i', $useragent)) {
+        if ($s->contains('bravo', false)) {
             return $this->loader->load('bravo', $useragent);
         }
 
-        if (preg_match('/butterfly/i', $useragent)) {
+        if ($s->contains('butterfly', false)) {
             return $this->loader->load('butterfly', $useragent);
         }
 
-        if (preg_match('/adr6350/i', $useragent)) {
+        if ($s->contains('adr6350', false)) {
             return $this->loader->load('adr6350', $useragent);
         }
 
-        if (preg_match('/apa9292kt/i', $useragent)) {
-            return $this->loader->load('9292', $useragent);
-        }
-
-        if (preg_match('/a9192/i', $useragent)) {
-            return $this->loader->load('inspire 4g', $useragent);
-        }
-
-        if (preg_match('/APA7373KT/i', $useragent)) {
-            return $this->loader->load('a7373', $useragent);
-        }
-
-        if (preg_match('/Gratia/i', $useragent)) {
+        if ($s->containsAny(['gratia', 'a6380'], false)) {
             return $this->loader->load('a6380', $useragent);
         }
 
-        if (preg_match('/A6366/i', $useragent)) {
+        if ($s->contains('a6366', false)) {
             return $this->loader->load('a6366', $useragent);
         }
 
-        if (preg_match('/A3335/i', $useragent)) {
+        if ($s->contains('a3335', false)) {
             return $this->loader->load('a3335', $useragent);
         }
 
-        if (preg_match('/chacha/i', $useragent)) {
+        if ($s->contains('chacha', false)) {
             return $this->loader->load('a810e', $useragent);
         }
 
-        if (preg_match('/a510a/i', $useragent)) {
+        if ($s->contains('a510a', false)) {
             return $this->loader->load('a510a', $useragent);
         }
 
@@ -614,35 +590,35 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('a310e', $useragent);
         }
 
-        if (preg_match('/amaze/i', $useragent)) {
+        if ($s->contains('amaze', false)) {
             return $this->loader->load('amaze 4g', $useragent);
         }
 
-        if (preg_match('/htc7088/i', $useragent)) {
+        if ($s->contains('htc7088', false)) {
             return $this->loader->load('7088', $useragent);
         }
 
-        if (preg_match('/HTC6990LVW/', $useragent)) {
+        if ($s->contains('HTC6990LVW', true)) {
             return $this->loader->load('htc6990lvw', $useragent);
         }
 
-        if (preg_match('/htc6500lvw/i', $useragent)) {
+        if ($s->contains('htc6500lvw', false)) {
             return $this->loader->load('m7 (htc6500lvw)', $useragent);
         }
 
-        if (preg_match('/htc6435lvw/i', $useragent)) {
+        if ($s->contains('htc6435lvw', false)) {
             return $this->loader->load('htc6435lvw', $useragent);
         }
 
-        if (preg_match('/htc 919d/i', $useragent)) {
+        if ($s->contains('htc 919d', false)) {
             return $this->loader->load('919d', $useragent);
         }
 
-        if (preg_match('/831c/i', $useragent)) {
+        if ($s->contains('831c', false)) {
             return $this->loader->load('831c', $useragent);
         }
 
-        if (preg_match('/htc 809d/i', $useragent)) {
+        if ($s->contains('htc 809d', false)) {
             return $this->loader->load('809d', $useragent);
         }
 
@@ -650,23 +626,23 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('802t', $useragent);
         }
 
-        if (preg_match('/htc 802d/i', $useragent)) {
+        if ($s->contains('htc 802d', false)) {
             return $this->loader->load('802d', $useragent);
         }
 
-        if (preg_match('/htc 606w/i', $useragent)) {
+        if ($s->contains('htc 606w', false)) {
             return $this->loader->load('desire 606w', $useragent);
         }
 
-        if (preg_match('/htc d516d/i', $useragent)) {
+        if ($s->contains('htc d516d', false)) {
             return $this->loader->load('desire 516', $useragent);
         }
 
-        if (preg_match('/VPA\_Touch/i', $useragent)) {
+        if ($s->contains('vpa_touch', false)) {
             return $this->loader->load('vpa touch', $useragent);
         }
 
-        if (preg_match('/HTC\_VPACompactIV/i', $useragent)) {
+        if ($s->contains('htc_vpacompactiv', false)) {
             return $this->loader->load('vpa compact iv', $useragent);
         }
 

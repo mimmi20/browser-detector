@@ -914,6 +914,16 @@ class LenovoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Vodafone Smart Tab III 7 Build/A3000_A422_000_027_130814_VF) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'Smart Tab III 7',
+                'Smart Tab III 7',
+                'Lenovo',
+                'Vodafone',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -50,6 +50,10 @@ class O2Factory implements Factory\FactoryInterface
             return $this->loader->load('xda orbit ii', $useragent);
         }
 
+        if ($s->contains('xda_diamond_2', false)) {
+            return $this->loader->load('xda_diamond_2', $useragent);
+        }
+
         return $this->loader->load('general o2 device', $useragent);
     }
 }

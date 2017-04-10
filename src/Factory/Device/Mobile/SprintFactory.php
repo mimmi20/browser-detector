@@ -50,8 +50,12 @@ class SprintFactory implements Factory\FactoryInterface
             return $this->loader->load('6700', $useragent);
         }
 
-        if ($s->contains('APA9292KT', true)) {
-            return $this->loader->load('sprint 9292', $useragent);
+        if ($s->contains('apa9292kt', false)) {
+            return $this->loader->load('9292', $useragent);
+        }
+
+        if ($s->contains('apa7373kt', false)) {
+            return $this->loader->load('a7373', $useragent);
         }
 
         return $this->loader->load('general sprint device', $useragent);

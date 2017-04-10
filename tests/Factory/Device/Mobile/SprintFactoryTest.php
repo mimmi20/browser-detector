@@ -134,6 +134,36 @@ class SprintFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2; en-us; Sprint APA9292KT Build/OMJ_EVO_2.2_Froyo_v3.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                '9292',
+                'EVO 4G',
+                'HTC',
+                'Sprint',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.1-update1; es-us; Sprint APA9292KT Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
+                '9292',
+                'EVO 4G',
+                'HTC',
+                'Sprint',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.3; en-us; Sprint APA7373KT Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'A7373',
+                'APA7373KT',
+                'HTC',
+                'Sprint',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

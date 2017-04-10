@@ -66,6 +66,22 @@ class TmobileFactory implements Factory\FactoryInterface
             return $this->loader->load('g1', $useragent);
         }
 
+        if ($s->contains('mda_vario_v', false)) {
+            return $this->loader->load('mda vario v', $useragent);
+        }
+
+        if ($s->contains('mda vario/3', false)) {
+            return $this->loader->load('mda vario iii', $useragent);
+        }
+
+        if ($s->contains('mda vario/2', false)) {
+            return $this->loader->load('mda vario ii', $useragent);
+        }
+
+        if ($s->contains('mda_compact_v', false)) {
+            return $this->loader->load('mda compact v', $useragent);
+        }
+
         if ($s->contains('mda compact/3', false)) {
             return $this->loader->load('mda compact iii', $useragent);
         }
