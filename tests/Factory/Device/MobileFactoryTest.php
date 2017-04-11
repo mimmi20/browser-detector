@@ -26014,6 +26014,16 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'stylus',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.3; en-ca; HTC-A510a Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'A510a',
+                'Wildfire S',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
