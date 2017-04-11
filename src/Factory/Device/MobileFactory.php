@@ -1799,7 +1799,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NokiaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['5130c-2', 'lumia', 'arm; 909', 'id336', 'genm14'], false)) {
+        if ($s->containsAny(['5130c-2', 'lumia', 'arm; 909', 'id336', 'genm14', 'n900'], false)) {
             return (new Mobile\NokiaFactory($this->loader))->detect($useragent, $s);
         }
 

@@ -334,7 +334,7 @@ class NokiaFactory implements Factory\FactoryInterface
             return $this->loader->load('n97', $useragent);
         }
 
-        if ($s->contains('nokian900', false)) {
+        if ($s->contains('n900', false)) {
             return $this->loader->load('n900', $useragent);
         }
 
@@ -456,10 +456,6 @@ class NokiaFactory implements Factory\FactoryInterface
 
         if ($s->contains('NokiaE55', false)) {
             return $this->loader->load('e55', $useragent);
-        }
-
-        if ($s->contains('NokiaE56', false)) {
-            return $this->loader->load('e56', $useragent);
         }
 
         if ($s->contains('NokiaE5', false)) {
@@ -644,10 +640,6 @@ class NokiaFactory implements Factory\FactoryInterface
 
         if ($s->contains('Nokia5530', false)) {
             return $this->loader->load('nokia 5530 classic', $useragent);
-        }
-
-        if ($s->contains('Nokia5330c', false)) {
-            return $this->loader->load('5330 classic', $useragent);
         }
 
         if ($s->contains('Nokia5310', false)) {
