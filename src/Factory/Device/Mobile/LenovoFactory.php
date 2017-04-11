@@ -382,6 +382,10 @@ class LenovoFactory implements Factory\FactoryInterface
             return $this->loader->load('at1010-t', $useragent);
         }
 
+        if ($s->containsAny(['smart tab iii 7', 'smarttabiii7'], false)) {
+            return $this->loader->load('smart tab iii 7', $useragent);
+        }
+
         return $this->loader->load('general lenovo device', $useragent);
     }
 }

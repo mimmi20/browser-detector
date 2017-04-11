@@ -124,6 +124,16 @@ class O2FactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Xda_Diamond_2 Opera/9.50 (Windows NT 5.1; U; de)',
+                'Xda Diamond 2',
+                'Xda Diamond 2',
+                'HTC',
+                'O2',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

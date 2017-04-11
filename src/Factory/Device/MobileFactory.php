@@ -1407,7 +1407,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ZteFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('vodafone smart tab iii 7', false)) {
+        if ($s->containsAny(['smart tab iii 7', 'smarttabiii7'], false)) {
             return (new Mobile\LenovoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1455,7 +1455,15 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PrestigioFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['APA9292KT', 'PJ83100', '831C', 'Evo 3D GSM', 'Eris 2.1'], true)) {
+        if ($s->contains('apa9292kt', false)) {
+            return (new Mobile\SprintFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['PJ83100', '831C', 'Evo 3D GSM', 'Eris 2.1'], true)) {
+            return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['a315c', 'vpa'], false)) {
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1791,7 +1799,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NokiaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['5130c-2', 'lumia', 'arm; 909', 'id336', 'genm14'], false)) {
+        if ($s->containsAny(['5130c-2', 'lumia', 'arm; 909', 'id336', 'genm14', 'n900'], false)) {
             return (new Mobile\NokiaFactory($this->loader))->detect($useragent, $s);
         }
 
