@@ -214,10 +214,6 @@ class NokiaFactory implements Factory\FactoryInterface
             return $this->loader->load('lumia 640 xl', $useragent);
         }
 
-        if ($s->contains('lumia 640', false)) {
-            return $this->loader->load('lumia 640', $useragent);
-        }
-
         if ($s->contains('lumia 710', false)) {
             return $this->loader->load('lumia 710', $useragent);
         }
@@ -668,10 +664,6 @@ class NokiaFactory implements Factory\FactoryInterface
 
         if ($s->contains('5130c-2', false)) {
             return $this->loader->load('5130c-2', $useragent);
-        }
-
-        if ($s->contains('Nokia5130c', false)) {
-            return $this->loader->load('5130 classic', $useragent);
         }
 
         if ($s->contains('Nokia3710', false)) {
