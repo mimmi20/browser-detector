@@ -290,10 +290,6 @@ class NokiaFactory implements Factory\FactoryInterface
             return $this->loader->load('lumia 435', $useragent);
         }
 
-        if ($s->contains('lumia', false)) {
-            return $this->loader->load('lumia', $useragent);
-        }
-
         if ($s->contains(' N1 ', true)) {
             return $this->loader->load('n1', $useragent);
         }
@@ -316,10 +312,6 @@ class NokiaFactory implements Factory\FactoryInterface
 
         if ($s->contains('nokian8-00', false)) {
             return $this->loader->load('n8-00', $useragent);
-        }
-
-        if ($s->contains('nokian8', false)) {
-            return $this->loader->load('n8', $useragent);
         }
 
         if ($s->contains('nokian90', false)) {
@@ -382,10 +374,6 @@ class NokiaFactory implements Factory\FactoryInterface
             return $this->loader->load('x2-05', $useragent);
         }
 
-        if ($s->contains('NokiaX2', false)) {
-            return $this->loader->load('x2', $useragent);
-        }
-
         if ($s->contains('NokiaX3-02', false)) {
             return $this->loader->load('x3-02', $useragent);
         }
@@ -394,16 +382,8 @@ class NokiaFactory implements Factory\FactoryInterface
             return $this->loader->load('x3-00', $useragent);
         }
 
-        if ($s->contains('NokiaX3', false)) {
-            return $this->loader->load('x3', $useragent);
-        }
-
         if ($s->contains('NokiaX6-00', false)) {
             return $this->loader->load('x6-00', $useragent);
-        }
-
-        if ($s->contains('NokiaX6', false)) {
-            return $this->loader->load('x6', $useragent);
         }
 
         if ($s->contains('NokiaX7-00', false)) {
