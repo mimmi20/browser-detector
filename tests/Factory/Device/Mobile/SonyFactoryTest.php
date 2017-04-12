@@ -1884,6 +1884,26 @@ class SonyFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'joystick',
             ],
+            [
+                'SonyEricssonW508a/R1FA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0 UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; SonyEricssonW508a) U2/1.0.0 UCBrowser/9.4.0.342 U2/1.0.0 Mobile',
+                'W508a',
+                'W508a',
+                'SonyEricsson',
+                'SonyEricsson',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'UCWEB/2.0 (Symbian; U; S60 V5; es-LA; SonyEricssonU1) U2/1.0.0 UCBrowser/9.1.0.319 U2/1.0.0 Mobile',
+                'U1',
+                'U1',
+                'SonyEricsson',
+                'SonyEricsson',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

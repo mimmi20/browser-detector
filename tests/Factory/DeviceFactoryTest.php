@@ -75,7 +75,7 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
         self::assertSame(
             $deviceName,
             $result->getDeviceName(),
-            'Expected device name to be "' . $deviceName . '" (was "' . serialize($result) . '")'
+            'Expected device name to be "' . $deviceName . '" (was "' . $result->getDeviceName() . '")'
         );
         self::assertSame(
             $marketingName,
@@ -27239,6 +27239,46 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
                 'LG-BL40-V10d Browser/Obigo-Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1',
                 'BL40',
                 'BL40',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'SonyEricssonW508a/R1FA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0 UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; SonyEricssonW508a) U2/1.0.0 UCBrowser/9.4.0.342 U2/1.0.0 Mobile',
+                'W508a',
+                'W508a',
+                'SonyEricsson',
+                'SonyEricsson',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'UCWEB/2.0 (Symbian; U; S60 V5; es-LA; SonyEricssonU1) U2/1.0.0 UCBrowser/9.1.0.319 U2/1.0.0 Mobile',
+                'U1',
+                'U1',
+                'SonyEricsson',
+                'SonyEricsson',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'LG-T300/V100 Obigo/Q7.3 MMS/LG-MMS-V1.1/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0',
+                'T300',
+                'T300',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'MQQBrowser/Mini2.5 (LG-LG900G/V100[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1)',
+                '900G',
+                '900G',
                 'LG',
                 'LG',
                 'Mobile Phone',

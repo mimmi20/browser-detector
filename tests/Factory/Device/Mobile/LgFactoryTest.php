@@ -1444,6 +1444,26 @@ class LgFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'LG-T300/V100 Obigo/Q7.3 MMS/LG-MMS-V1.1/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0',
+                'T300',
+                'T300',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'MQQBrowser/Mini2.5 (LG-LG900G/V100[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1)',
+                '900G',
+                '900G',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }
