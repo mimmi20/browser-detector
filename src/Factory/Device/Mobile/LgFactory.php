@@ -222,6 +222,10 @@ class LgFactory implements Factory\FactoryInterface
             return $this->loader->load('p505', $useragent);
         }
 
+        if ($s->contains('kp500', false)) {
+            return $this->loader->load('kp500', $useragent);
+        }
+
         if ($s->contains('p500h', false)) {
             return $this->loader->load('p500h', $useragent);
         }
@@ -280,10 +284,6 @@ class LgFactory implements Factory\FactoryInterface
 
         if ($s->contains('ks20', false)) {
             return $this->loader->load('ks20', $useragent);
-        }
-
-        if ($s->contains('kp500', false)) {
-            return $this->loader->load('kp500', $useragent);
         }
 
         if ($s->contains('km900', false)) {

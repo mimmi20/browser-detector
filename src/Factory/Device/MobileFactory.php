@@ -1687,6 +1687,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->containsAny(['c660', 'ls670', 'vm670'], false)) {
+            return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->containsAny(['zera f', 'zera_f', 'boost iise', 'ice2', 'prime s', 'explosion'], false)) {
             return (new Mobile\HighscreenFactory($this->loader))->detect($useragent, $s);
         }
@@ -1875,7 +1879,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' xst2 ', ' x2 '], false)) {
+        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' xst2 ', ' x2 ', 'r800x', 's500i', 'x1i'], false)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
