@@ -51,7 +51,6 @@ script:
 after_success:
   - if [[ $COVERAGE == yes ]]; then wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar && php -n coveralls.phar --verbose --coverage_clover=clover.xml; fi
   - if [[ $COVERAGE == yes ]]; then bash <(curl -s https://codecov.io/bash); fi
-  - if [[ $COVERAGE == yes ]]; then wget -c "https://github.com/codeclimate/php-test-reporter/releases/download/v0.4.0/codeclimate-test-reporter.phar" && codeclimate-test-reporter.phar upload; fi
 
 notifications:
   email: false

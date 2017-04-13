@@ -11,8 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use Psr\Cache\CacheItemPoolInterface;
-
 /**
  * @category  BrowserDetector
  *
@@ -21,19 +19,6 @@ use Psr\Cache\CacheItemPoolInterface;
  */
 class AndroidOs implements VersionCacheFactoryInterface
 {
-    /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     */
-    public function __construct(CacheItemPoolInterface $cache)
-    {
-        $this->cache = $cache;
-    }
-
     /**
      * returns the version of the operating system/platform
      *
@@ -47,22 +32,23 @@ class AndroidOs implements VersionCacheFactoryInterface
             return VersionFactory::set('2.1.1');
         }
 
-        $searches = [
-            'android android',
-            'android androidhouse team',
-            'android wildpuzzlerom v8 froyo',
-            'juc ?\(linux;',
-            'linux; googletv',
-            'android os',
-            'android;',
-            'android_',
-            'android ',
-            'android\/',
-            'android',
-            'adr ',
-        ];
-
-        $detector = VersionFactory::detectVersion($useragent, $searches);
+        $detector = VersionFactory::detectVersion(
+            $useragent,
+            [
+                'android android',
+                'android androidhouse team',
+                'android wildpuzzlerom v8 froyo',
+                'juc ?\(linux;',
+                'linux; googletv',
+                'android os',
+                'android;',
+                'android_',
+                'android ',
+                'android\/',
+                'android',
+                'adr ',
+            ]
+        );
 
         if ('0.0.0' !== $detector->getVersion()) {
             return $detector;

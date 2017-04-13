@@ -102,7 +102,7 @@ class PlatformLoader implements LoaderInterface
             $version = VersionFactory::detectVersion($useragent, $platform->version->search);
         } else {
             /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $platformVersionClass($this->cache);
+            $versionClass = new $platformVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }
 

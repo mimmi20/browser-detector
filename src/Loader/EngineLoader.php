@@ -97,7 +97,7 @@ class EngineLoader implements LoaderInterface
             $version = VersionFactory::detectVersion($useragent, $engine->version->search);
         } else {
             /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $engineVersionClass($this->cache);
+            $versionClass = new $engineVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }
 

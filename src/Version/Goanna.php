@@ -11,8 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use Psr\Cache\CacheItemPoolInterface;
-
 /**
  * @category  BrowserDetector
  *
@@ -21,19 +19,6 @@ use Psr\Cache\CacheItemPoolInterface;
  */
 class Goanna implements VersionCacheFactoryInterface
 {
-    /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     */
-    public function __construct(CacheItemPoolInterface $cache)
-    {
-        $this->cache = $cache;
-    }
-
     /**
      * returns the version of the operating system/platform
      *
