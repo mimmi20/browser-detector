@@ -534,6 +534,16 @@ class MedionFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; MEDION LIFE P4012 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'P4012',
+                'LifePhone P4012',
+                'Medion',
+                'Medion',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

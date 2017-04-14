@@ -46,10 +46,6 @@ class AcerFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('V989', false)) {
-            return $this->loader->load('v989', $useragent);
-        }
-
         if ($s->contains('V370', false)) {
             return $this->loader->load('v370', $useragent);
         }
@@ -110,10 +106,6 @@ class AcerFactory implements Factory\FactoryInterface
             return $this->loader->load('a1-810', $useragent);
         }
 
-        if ($s->contains('A742', false)) {
-            return $this->loader->load('tab a742', $useragent);
-        }
-
         if ($s->contains('A701', false)) {
             return $this->loader->load('a701', $useragent);
         }
@@ -172,10 +164,6 @@ class AcerFactory implements Factory\FactoryInterface
 
         if ($s->contains('a3-a10', false)) {
             return $this->loader->load('a3-a10', $useragent);
-        }
-
-        if ($s->contains('Iconia', false)) {
-            return $this->loader->load('iconia', $useragent);
         }
 
         if ($s->contains('G100W', false)) {

@@ -484,6 +484,16 @@ class BlackBerryFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'clickwheel',
             ],
+            [
+                'BlackBerry8350i/5.0.0.1074 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/317',
+                'BlackBerry 8350i',
+                'BlackBerry 8350i',
+                'Research In Motion Limited',
+                'RIM',
+                'Mobile Phone',
+                false,
+                'clickwheel',
+            ],
         ];
     }
 }

@@ -484,6 +484,16 @@ class AcerFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2.4; en-US; Stream-S110 Build/8NDKE8)',
+                'Stream S110',
+                'Stream S110',
+                'Acer',
+                'Acer',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

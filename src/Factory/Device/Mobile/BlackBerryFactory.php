@@ -58,10 +58,6 @@ class BlackBerryFactory implements Factory\FactoryInterface
             return $this->loader->load('playbook', $useragent);
         }
 
-        if ($s->contains('RIM Tablet', false)) {
-            return $this->loader->load('tablet', $useragent);
-        }
-
         if ($s->contains('9981', false)) {
             return $this->loader->load('blackberry 9981', $useragent);
         }

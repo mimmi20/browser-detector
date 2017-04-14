@@ -484,6 +484,16 @@ class AsusFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 1.5; en-us; eee_701 Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1',
+                'EEE 701',
+                'EEE 701',
+                'Asus',
+                'Asus',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

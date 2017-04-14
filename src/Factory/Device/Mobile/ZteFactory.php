@@ -170,7 +170,7 @@ class ZteFactory implements Factory\FactoryInterface
             return $this->loader->load('blade q maxi', $useragent);
         }
 
-        if ($s->contains('blade iii_il', false)) {
+        if ($s->contains('blade iii', false)) {
             return $this->loader->load('blade iii', $useragent);
         }
 
