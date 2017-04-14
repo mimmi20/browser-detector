@@ -134,6 +134,16 @@ class OlivettiFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2.2; es-es; OP070 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'Olipad 70',
+                'Olipad Smart',
+                'Olivetti',
+                'Olivetti',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

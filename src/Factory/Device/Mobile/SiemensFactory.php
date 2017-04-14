@@ -46,10 +46,6 @@ class SiemensFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('SL45i', true)) {
-            return $this->loader->load('sl45i', $useragent);
-        }
-
         if ($s->contains('SIE-S65', true)) {
             return $this->loader->load('s65', $useragent);
         }

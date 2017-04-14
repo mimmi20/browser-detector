@@ -114,6 +114,16 @@ class CoolpadFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.1.4; en-US; N930 Build/6CL0N1)',
+                'N930',
+                'N930',
+                'Coolpad',
+                'Coolpad',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

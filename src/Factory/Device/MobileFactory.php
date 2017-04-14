@@ -596,13 +596,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\XiaomiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/miui/i', $useragent)
-            && !preg_match('/miuibrowser/i', $useragent)
-            && !preg_match('/build\/miui/i', $useragent)
-        ) {
-            return (new Mobile\MiuiFactory($this->loader))->detect($useragent, $s);
-        }
-
         if ($s->containsAny(['mobistel', 'cynus'], false)) {
             return (new Mobile\MobistelFactory($this->loader))->detect($useragent, $s);
         }
@@ -1165,14 +1158,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('AT1010-T', true)) {
             return (new Mobile\LenovoFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('united', false)) {
-            return (new Mobile\UnitedFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('MT6515M', true)) {
-            return (new Mobile\UnitedFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('utstarcom', false)) {
@@ -1991,7 +1976,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LavaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['MDA', 'Pulse', 'myTouch4G'], true)) {
+        if ($s->containsAny(['MDA', 'Pulse', 'myTouch4G', 'Ameo'], true)) {
             return (new Mobile\TmobileFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2117,6 +2102,30 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('zt180', false)) {
             return (new Mobile\ZenithinkFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('e1107', false)) {
+            return (new Mobile\YusuFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('IS05', true)) {
+            return (new Mobile\SharpFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('P4D SIRIUS', true)) {
+            return (new Mobile\NvsblFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('smartpad', false)) {
+            return (new Mobile\EinsUndEinsFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('n930', false)) {
+            return (new Mobile\CoolpadFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('la-m1', false)) {
+            return (new Mobile\BeidouFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)

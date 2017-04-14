@@ -114,6 +114,16 @@ class EinsUndEinsFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2; de-de; smartpad Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'Smartpad',
+                'Smartpad',
+                '1 & 1',
+                '1 & 1',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -90,7 +90,7 @@ class TrekStorFactory implements Factory\FactoryInterface
             return $this->loader->load('st10216-1', $useragent);
         }
 
-        if ($s->contains('trekstor_liro_color', true)) {
+        if ($s->contains('trekstor_liro_color', false)) {
             return $this->loader->load('liro color', $useragent);
         }
 

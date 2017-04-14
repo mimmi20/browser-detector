@@ -50,7 +50,7 @@ class PandigitalFactory implements Factory\FactoryInterface
             return $this->loader->load('supernova', $useragent);
         }
 
-        if ($s->contains('(opc1|SL20_20101210_B_PD_INX7E_ENG_6410POP)', true)) {
+        if ($s->containsAny(['opc1', 'SL20_20101210_B_PD_INX7E_ENG_6410POP'], true)) {
             return $this->loader->load('novel', $useragent);
         }
 

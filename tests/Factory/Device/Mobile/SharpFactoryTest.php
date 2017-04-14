@@ -194,6 +194,26 @@ class SharpFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.3; en-US; SH7228U Build/115I91)',
+                'SH7228U',
+                'SH7228U',
+                'Sharp Corporation',
+                'Sharp',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2.1; ja-jp; IS05 Build/S9140) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'IS05',
+                'IS05',
+                'Sharp Corporation',
+                'Sharp',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

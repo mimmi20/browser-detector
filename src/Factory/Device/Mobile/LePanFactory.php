@@ -50,10 +50,6 @@ class LePanFactory implements Factory\FactoryInterface
             return $this->loader->load('lepan ii', $useragent);
         }
 
-        if ($s->contains('LePan', true)) {
-            return $this->loader->load('lepan', $useragent);
-        }
-
         return $this->loader->load('general lepan device', $useragent);
     }
 }

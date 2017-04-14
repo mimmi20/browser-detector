@@ -124,6 +124,26 @@ class PandigitalFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android Eclair; md-us Build/pandigitalopc1/sourceidDL00000009) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
+                'Novel',
+                'Novel',
+                'Pandigital',
+                'Pandigital',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.0; en-us; pandigital9hr) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
+                '9hr',
+                '9hr',
+                'Pandigital',
+                'Pandigital',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

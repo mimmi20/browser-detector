@@ -54,7 +54,11 @@ class TexetFactory implements Factory\FactoryInterface
             return $this->loader->load('tm-7066', $useragent);
         }
 
-        if ($s->contains('x-pad style 7.1 3g', false)) {
+        if ($s->contains('tm-7058hd', false)) {
+            return $this->loader->load('tm-7058hd', $useragent);
+        }
+
+        if ($s->containsAny(['tm-7058', 'x-pad style 7.1 3g'], false)) {
             return $this->loader->load('tm-7058', $useragent);
         }
 
@@ -68,14 +72,6 @@ class TexetFactory implements Factory\FactoryInterface
 
         if ($s->contains('tm-7055hd', false)) {
             return $this->loader->load('tm-7055hd', $useragent);
-        }
-
-        if ($s->contains('tm-7058hd', false)) {
-            return $this->loader->load('tm-7058hd', $useragent);
-        }
-
-        if ($s->contains('tm-7058', false)) {
-            return $this->loader->load('tm-7058', $useragent);
         }
 
         if ($s->contains('tm-5204', false)) {
