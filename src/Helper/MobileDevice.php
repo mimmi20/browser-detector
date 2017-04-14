@@ -199,6 +199,7 @@ class MobileDevice
             'surftab',
             'folio_and_a',
             'docomo',
+            'portalmmm',
         ];
 
         if ($s->containsAny($mobiles, false)) {

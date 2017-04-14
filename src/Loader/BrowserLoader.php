@@ -98,7 +98,7 @@ class BrowserLoader implements LoaderInterface
             $version = VersionFactory::detectVersion($useragent, $browser->version->search);
         } else {
             /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $browserVersionClass($this->cache);
+            $versionClass = new $browserVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }
 

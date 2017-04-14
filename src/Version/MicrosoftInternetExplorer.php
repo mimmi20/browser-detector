@@ -11,9 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use BrowserDetector\Loader\EngineLoader;
-use Psr\Cache\CacheItemPoolInterface;
-
 /**
  * @category  BrowserDetector
  *
@@ -45,19 +42,6 @@ class MicrosoftInternetExplorer implements VersionCacheFactoryInterface
     ];
 
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     */
-    public function __construct(CacheItemPoolInterface $cache)
-    {
-        $this->cache = $cache;
-    }
-
-    /**
      * returns the version of the operating system/platform
      *
      * @param string $useragent
@@ -66,8 +50,7 @@ class MicrosoftInternetExplorer implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $engine  = (new EngineLoader($this->cache))->load('trident', $useragent);
-        $version = $engine->getVersion();
+        $version = (new Trident())->detectVersion($useragent);
 
         if (null !== $version) {
             $engineVersion = (int) $version->getMajor();

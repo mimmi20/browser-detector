@@ -11,8 +11,6 @@ BrowserDetector
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mimmi20/BrowserDetector/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mimmi20/BrowserDetector/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/mimmi20/BrowserDetector/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mimmi20/BrowserDetector/?branch=master)
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/79dec022-e199-4822-b987-1bbcc5f2a5c6/mini.png)](https://insight.sensiolabs.com/projects/79dec022-e199-4822-b987-1bbcc5f2a5c6)
-
 [![Dependency Status](https://www.versioneye.com/user/projects/588d13bfc64626004e05797a/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/588d13bfc64626004e05797a)
 
 ## Requirements

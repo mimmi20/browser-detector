@@ -11,8 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use Psr\Cache\CacheItemPoolInterface;
-
 /**
  * @category  BrowserDetector
  *
@@ -21,19 +19,6 @@ use Psr\Cache\CacheItemPoolInterface;
  */
 class Ios implements VersionCacheFactoryInterface
 {
-    /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     */
-    public function __construct(CacheItemPoolInterface $cache)
-    {
-        $this->cache = $cache;
-    }
-
     /**
      * returns the version of the operating system/platform
      *
@@ -49,22 +34,23 @@ class Ios implements VersionCacheFactoryInterface
             return VersionFactory::set('1.0');
         }
 
-        $searches = [
-            'IphoneOSX',
-            'CPU OS\_',
-            'CPU OS',
-            'CPU iOS',
-            'CPU iPad OS',
-            'iPhone OS\;FBSV',
-            'iPhone OS',
-            'iPhone_OS',
-            'IUC\(U\;iOS',
-            'iPh OS',
-            'iosv',
-            'iOS',
-        ];
-
-        $detectedVersion = VersionFactory::detectVersion($useragent, $searches);
+        $detectedVersion = VersionFactory::detectVersion(
+            $useragent,
+            [
+                'IphoneOSX',
+                'CPU OS\_',
+                'CPU OS',
+                'CPU iOS',
+                'CPU iPad OS',
+                'iPhone OS\;FBSV',
+                'iPhone OS',
+                'iPhone_OS',
+                'IUC\(U\;iOS',
+                'iPh OS',
+                'iosv',
+                'iOS',
+            ]
+        );
 
         if ($detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) > 999) {
             $versions = [];

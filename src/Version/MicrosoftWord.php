@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
-use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -22,19 +21,6 @@ use Psr\Cache\CacheItemPoolInterface;
  */
 class MicrosoftWord implements VersionCacheFactoryInterface
 {
-    /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     */
-    public function __construct(CacheItemPoolInterface $cache)
-    {
-        $this->cache = $cache;
-    }
-
     /**
      * returns the version of the operating system/platform
      *

@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Helper\Safari as SafariHelper;
-use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * @category  BrowserDetector
@@ -22,19 +21,6 @@ use Psr\Cache\CacheItemPoolInterface;
  */
 class AndroidWebkit implements VersionCacheFactoryInterface
 {
-    /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     */
-    public function __construct(CacheItemPoolInterface $cache)
-    {
-        $this->cache = $cache;
-    }
-
     /**
      * returns the version of the operating system/platform
      *
@@ -104,8 +90,6 @@ class AndroidWebkit implements VersionCacheFactoryInterface
             return VersionFactory::set($matches[1]);
         }
 
-        $searches = ['Version', 'Safari', 'JUC \(Linux\; U\;'];
-
-        return VersionFactory::detectVersion($useragent, $searches);
+        return VersionFactory::detectVersion($useragent, ['Version', 'Safari', 'JUC \(Linux\; U\;']);
     }
 }

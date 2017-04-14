@@ -11,8 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use Psr\Cache\CacheItemPoolInterface;
-
 /**
  * @category  BrowserDetector
  *
@@ -21,19 +19,6 @@ use Psr\Cache\CacheItemPoolInterface;
  */
 class ObigoQ implements VersionCacheFactoryInterface
 {
-    /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     */
-    public function __construct(CacheItemPoolInterface $cache)
-    {
-        $this->cache = $cache;
-    }
-
     /**
      * returns the version of the operating system/platform
      *
@@ -63,13 +48,14 @@ class ObigoQ implements VersionCacheFactoryInterface
             return VersionFactory::set($matches[1]);
         }
 
-        $searches = [
-            'Teleca\-Q',
-            'Obigo\-Q',
-            'Obigo\/Q',
-            'Teleca\/Q',
-        ];
-
-        return VersionFactory::detectVersion($useragent, $searches);
+        return VersionFactory::detectVersion(
+            $useragent,
+            [
+                'Teleca\-Q',
+                'Obigo\-Q',
+                'Obigo\/Q',
+                'Teleca\/Q',
+            ]
+        );
     }
 }

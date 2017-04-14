@@ -266,10 +266,6 @@ class HuaweiFactory implements Factory\FactoryInterface
             return $this->loader->load('y511', $useragent);
         }
 
-        if ($s->contains('y635-l21', false)) {
-            return $this->loader->load('y635-l21', $useragent);
-        }
-
         if ($s->contains('y360-u61', false)) {
             return $this->loader->load('y360-u61', $useragent);
         }

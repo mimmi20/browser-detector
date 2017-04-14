@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use Psr\Cache\CacheItemPoolInterface;
 use Stringy\Stringy;
 
 /**
@@ -22,19 +21,6 @@ use Stringy\Stringy;
  */
 class WindowsMobileOs implements VersionCacheFactoryInterface
 {
-    /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     */
-    public function __construct(CacheItemPoolInterface $cache)
-    {
-        $this->cache = $cache;
-    }
-
     /**
      * returns the version of the operating system/platform
      *
@@ -51,13 +37,9 @@ class WindowsMobileOs implements VersionCacheFactoryInterface
         $s = new Stringy($useragent);
 
         if ($s->containsAny(['Windows Mobile', 'MSIEMobile'])) {
-            $searches = ['MSIEMobile'];
-
-            return VersionFactory::detectVersion($useragent, $searches, '6.0');
+            return VersionFactory::detectVersion($useragent, ['MSIEMobile'], '6.0');
         }
 
-        $searches = ['Windows Phone'];
-
-        return VersionFactory::detectVersion($useragent, $searches);
+        return VersionFactory::detectVersion($useragent, ['Windows Phone']);
     }
 }

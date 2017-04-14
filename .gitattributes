@@ -23,6 +23,7 @@ LICENSE          text eol=lf diff
 
 # files/folders to ignore
 /.*              export-ignore
+.codeclimate.yml export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
 .coveralls.yml   export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
 .editorconfig    export-ignore text eol=lf diff
 .gitattributes   export-ignore text eol=lf diff

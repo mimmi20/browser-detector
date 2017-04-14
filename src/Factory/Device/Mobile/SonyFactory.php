@@ -534,7 +534,7 @@ class SonyFactory implements Factory\FactoryInterface
             return $this->loader->load('sonyericsson x2', $useragent);
         }
 
-        if ($s->contains('X1i', false)) {
+        if ($s->contains('x1i', false)) {
             return $this->loader->load('x1i', $useragent);
         }
 
@@ -638,11 +638,7 @@ class SonyFactory implements Factory\FactoryInterface
             return $this->loader->load('so-01b', $useragent);
         }
 
-        if ($s->contains('SonyEricssonSO', false)) {
-            return $this->loader->load('so', $useragent);
-        }
-
-        if ($s->contains('S500i', false)) {
+        if ($s->contains('s500i', false)) {
             return $this->loader->load('s500i', $useragent);
         }
 
@@ -650,11 +646,11 @@ class SonyFactory implements Factory\FactoryInterface
             return $this->loader->load('s312', $useragent);
         }
 
-        if ($s->contains('R800x', false)) {
+        if ($s->contains('r800x', false)) {
             return $this->loader->load('r800x', $useragent);
         }
 
-        if ($s->contains('K810i', false)) {
+        if ($s->contains('k810i', false)) {
             return $this->loader->load('k810i', $useragent);
         }
 
