@@ -124,6 +124,16 @@ class AccentFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; ACCENT EAGLE7 3G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
+                'general Accent Device',
+                'general Accent Device',
+                'Accent',
+                'Accent',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

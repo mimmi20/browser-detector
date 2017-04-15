@@ -184,6 +184,36 @@ class AppleFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (iOS; U; iPh OS 6_1; zh-CN; iPh3,1) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile',
+                'iPhone',
+                'iPhone',
+                'Apple Inc',
+                'Apple',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'iOS/6.1.6 (10B500) dataaccessd/1.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
+            [
+                'MobileSafari/601.1 CFNetwork/758.0.2 Darwin/15.0.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -154,6 +154,16 @@ class DoogeeFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; DOOGEE-BIGBOY-DG600    Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'general Doogee Device',
+                'general Doogee Device',
+                'Doogee',
+                'Doogee',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -124,6 +124,16 @@ class HisenseFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Hisense-W2003',
+                'general Hisense Device',
+                'general Hisense Device',
+                'Hisense',
+                'Hisense',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

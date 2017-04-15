@@ -124,6 +124,16 @@ class MinixFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 null,
             ],
+            [
+                'XBMC/12.4-MINIX Git:20131225-38bc34f (Linux; Android; 3.0.36+ armv7l; http://www.xbmc.org)',
+                'general Minix Device',
+                'general Minix Device',
+                'Minix',
+                'Minix',
+                'Media Player',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

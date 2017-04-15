@@ -124,6 +124,16 @@ class KingzoneFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; Kingzone K1 turbo Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36',
+                'KZ-168',
+                'K1 Turbo',
+                'Shenzhen Kingzone Communication Co.,Ltd',
+                'Kingzone',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

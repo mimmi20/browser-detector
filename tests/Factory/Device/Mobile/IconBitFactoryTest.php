@@ -164,6 +164,16 @@ class IconBitFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; NT-3909T Build/iconBIT) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'general iconBIT Device',
+                'general iconBIT Device',
+                'iconBIT',
+                'iconBIT',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

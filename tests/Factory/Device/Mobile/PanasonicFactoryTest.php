@@ -124,6 +124,16 @@ class PanasonicFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; de-; Panasonic KX-PRXA15 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'general Panasonic Device',
+                'general Panasonic Device',
+                'Panasonic',
+                'Panasonic',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

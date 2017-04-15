@@ -124,6 +124,16 @@ class SanyoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Sanyo-SCP588CN/1.0 UP.Browser/6.2.2.6.g.1.101 (GUI) MMP/2.0',
+                'general Sanyo Device',
+                'general Sanyo Device',
+                'Sanyo',
+                'Sanyo',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

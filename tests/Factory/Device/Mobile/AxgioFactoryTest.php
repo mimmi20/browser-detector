@@ -134,6 +134,16 @@ class AxgioFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; Axgio Neon N2Q Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36',
+                'general Axgio Device',
+                'general Axgio Device',
+                'Axgio',
+                'Axgio',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -184,6 +184,16 @@ class PipoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.1; ru-ru; PIPO Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1',
+                'general PiPO Device',
+                'general PiPO Device',
+                'PiPO Technology',
+                'PiPO',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

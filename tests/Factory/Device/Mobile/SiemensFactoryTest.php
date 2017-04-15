@@ -124,6 +124,16 @@ class SiemensFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 null,
             ],
+            [
+                'YourWap Siemens SL45/2.63',
+                'general Siemens Device',
+                'general Siemens Device',
+                'Siemens',
+                'Siemens',
+                'Mobile Phone',
+                false,
+                null,
+            ],
         ];
     }
 }

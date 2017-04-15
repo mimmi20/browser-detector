@@ -78,6 +78,8 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
             ['DoCoMo/2.0 N705i(c100;TB;W24H16)'],
             ['S8500 UCWEB6.0/UC Browser7.7.0.81'],
             ['portalmmm/2.0 S500i(c20;TB)'],
+            ['Hisense-W2003'],
+            ['YourWap Siemens SL45/2.63'],
         ];
     }
 
