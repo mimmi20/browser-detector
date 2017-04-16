@@ -204,6 +204,16 @@ class HpFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; webOS/2.2.4; U; de-DE) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/3.0',
+                'Pre',
+                'Pre',
+                'HP',
+                'HP',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -46,10 +46,6 @@ class KddiFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('sn3f', false)) {
-            return $this->loader->load('sn3f', $useragent);
-        }
-
         if ($s->contains('kc31', false)) {
             return $this->loader->load('kc31', $useragent);
         }

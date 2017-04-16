@@ -24,6 +24,21 @@ use Stringy\Stringy;
 class CobyFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'mid9742' => 'mid9742',
+        'mid8128' => 'mid8128',
+        'mid8127' => 'mid8127',
+        'mid8024' => 'mid8024',
+        'mid7022' => 'mid7022',
+        'mid7015' => 'mid7015',
+        'mid1126' => 'mid1126',
+        'mid1125' => 'mid1125',
+        'nbpc724' => 'nbpc724',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,40 +61,10 @@ class CobyFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('MID9742', false)) {
-            return $this->loader->load('mid9742', $useragent);
-        }
-
-        if ($s->contains('MID8128', false)) {
-            return $this->loader->load('mid8128', $useragent);
-        }
-
-        if ($s->contains('MID8127', false)) {
-            return $this->loader->load('mid8127', $useragent);
-        }
-
-        if ($s->contains('MID8024', false)) {
-            return $this->loader->load('mid8024', $useragent);
-        }
-
-        if ($s->contains('MID7022', false)) {
-            return $this->loader->load('mid7022', $useragent);
-        }
-
-        if ($s->contains('MID7015', false)) {
-            return $this->loader->load('mid7015', $useragent);
-        }
-
-        if ($s->contains('MID1126', false)) {
-            return $this->loader->load('mid1126', $useragent);
-        }
-
-        if ($s->contains('MID1125', false)) {
-            return $this->loader->load('mid1125', $useragent);
-        }
-
-        if ($s->contains('NBPC724', false)) {
-            return $this->loader->load('nbpc724', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general coby device', $useragent);

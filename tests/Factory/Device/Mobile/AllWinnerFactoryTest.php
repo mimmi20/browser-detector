@@ -124,6 +124,16 @@ class AllWinnerFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; A10 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'A10',
+                'A10',
+                'AllWinner',
+                'AllWinner',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

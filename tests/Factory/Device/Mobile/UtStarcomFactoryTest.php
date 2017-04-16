@@ -124,6 +124,16 @@ class UtStarcomFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UTStarcom-G26/1.0 UP.Browser/6.2.2.7.c.1.103 (GUI) MMP/1.0',
+                'general UTStarcom Device',
+                'general UTStarcom Device',
+                'UTStarcom',
+                'UTStarcom',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

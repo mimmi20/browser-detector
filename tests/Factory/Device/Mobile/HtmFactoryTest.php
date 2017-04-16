@@ -114,6 +114,16 @@ class HtmFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.0; zh-cn; MT-GT-A9500/1.0 Android/4.2.0 Release/07.25.2013 Browser/AppleWebKit533.1 Build/MocorDroid2.3.5) AppleWebKit533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'GT-A9500',
+                'GT-A9500',
+                'HTM',
+                'HTM',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

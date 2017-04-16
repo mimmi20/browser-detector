@@ -66,10 +66,6 @@ class ArnovaFactory implements Factory\FactoryInterface
             return $this->loader->load('7f g3', $useragent);
         }
 
-        if ($s->contains('AN7EG3', false)) {
-            return $this->loader->load('7e g3', $useragent);
-        }
-
         if ($s->contains('AN7DG3', false)) {
             return $this->loader->load('7d g3', $useragent);
         }

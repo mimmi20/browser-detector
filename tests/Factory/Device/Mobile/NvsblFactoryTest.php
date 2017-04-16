@@ -114,6 +114,16 @@ class NvsblFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; P4D SIRIUS Build/MID) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'P4D Sirius',
+                'P4D Sirius',
+                'NVSBL',
+                'NVSBL',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

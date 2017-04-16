@@ -124,6 +124,16 @@ class WonderMediaFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android v2.2; de-de; WM8650 Build/FRG83D_v2.2 Android Froyo) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'WM8650',
+                'Prizm',
+                'WonderMedia',
+                'WonderMedia',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

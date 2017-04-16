@@ -184,6 +184,16 @@ class ModecomFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.1; pl-pl; MODECOM FreeTAB 9702 IPS X2 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'general MODECOM Device',
+                'general MODECOM Device',
+                'MODECOM',
+                'MODECOM',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

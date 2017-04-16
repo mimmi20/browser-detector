@@ -54,7 +54,7 @@ class XiangheFactory implements Factory\FactoryInterface
             return $this->loader->load('iphone 5c', $useragent);
         }
 
-        if ($s->containsAny(['iphone 5', 'iphone5'], false)) {
+        if ($s->containsAny(['iphone 5', 'iphone5', 'iphone_5'], false)) {
             return $this->loader->load('iphone 5', $useragent);
         }
 

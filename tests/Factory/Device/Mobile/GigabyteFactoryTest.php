@@ -134,6 +134,16 @@ class GigabyteFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                't600; v3.02.02 (compatible; msie 6.0; windows ce; iemobile 6.12) ppc; 240x320; gigabyte-g-smart',
+                'general Gigabyte Device',
+                'general Gigabyte Device',
+                'Gigabyte',
+                'Gigabyte',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

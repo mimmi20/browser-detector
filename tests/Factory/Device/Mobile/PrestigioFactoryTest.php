@@ -544,6 +544,16 @@ class PrestigioFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; PMP7280C3G Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'PMP7280C3G',
+                'Multipad 2 Ultra Duo 8.0 3G',
+                'Prestigio',
+                'Prestigio',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

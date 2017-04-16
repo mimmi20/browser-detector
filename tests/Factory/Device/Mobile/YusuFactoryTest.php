@@ -114,6 +114,16 @@ class YusuFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.6; de-de; e1107_v73_hjy_ctp Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'E1107',
+                'E1107',
+                'Yusu',
+                'Yusu',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

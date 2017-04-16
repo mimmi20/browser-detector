@@ -204,6 +204,16 @@ class WikoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.0.4; WIKO-CINK SLIM Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19',
+                'general Wiko Device',
+                'general Wiko Device',
+                'Wiko',
+                'Wiko',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

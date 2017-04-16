@@ -124,6 +124,16 @@ class AmoiFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'AMOI N820 Linux/3.0.13 Android/4.0.4 Release/09.24.2012 Browser/AppleWebKit534.30 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mobile Safari/534.30 Android 4.0.1;',
+                'N820',
+                'N820',
+                'Amoi',
+                'Amoi',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

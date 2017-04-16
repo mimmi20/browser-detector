@@ -24,6 +24,17 @@ use Stringy\Stringy;
 class IconBitFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'nt-3710s' => 'nt-3710s',
+        'nt-3702m' => 'nt-3702m',
+        'nt-3601p' => 'nettab pocket 3g',
+        'nt-1009t' => 'nt-1009t',
+        'nt-1001t' => 'nt-1001t',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,28 +57,10 @@ class IconBitFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('nt-3710s', false)) {
-            return $this->loader->load('nt-3710s', $useragent);
-        }
-
-        if ($s->contains('nt-3702m', false)) {
-            return $this->loader->load('nt-3702m', $useragent);
-        }
-
-        if ($s->contains('nt-3601p', false)) {
-            return $this->loader->load('nettab pocket 3g', $useragent);
-        }
-
-        if ($s->contains('nt-1009t', false)) {
-            return $this->loader->load('nt-1009t', $useragent);
-        }
-
-        if ($s->contains('nt-1002t', false)) {
-            return $this->loader->load('nt-1002t', $useragent);
-        }
-
-        if ($s->contains('nt-1001t', false)) {
-            return $this->loader->load('nt-1001t', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general iconbit device', $useragent);

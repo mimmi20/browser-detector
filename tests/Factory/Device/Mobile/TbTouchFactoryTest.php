@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\MiuiFactory;
+use BrowserDetector\Factory\Device\Mobile\TbTouchFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class MiuiFactoryTest extends \PHPUnit\Framework\TestCase
+class TbTouchFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\MiuiFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\TbTouchFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class MiuiFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new MiuiFactory($loader);
+        $this->object = new TbTouchFactory($loader);
     }
 
     /**
@@ -106,11 +106,21 @@ class MiuiFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Miui Device',
-                'general Miui Device',
-                'Miui',
-                'Miui',
-                'Mobile Phone',
+                'general TB Touch Device',
+                'general TB Touch Device',
+                'TB Touch',
+                'TB Touch',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; Ignis 8 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'Ignis 8',
+                'Ignis 8',
+                'TB Touch',
+                'TB Touch',
+                'Tablet',
                 true,
                 'touchscreen',
             ],

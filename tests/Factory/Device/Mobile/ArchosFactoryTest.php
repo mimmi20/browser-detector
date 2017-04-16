@@ -484,6 +484,26 @@ class ArchosFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2.1; de-de; A70H2 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'A70 H2',
+                'A70 H2',
+                'Archos',
+                'Archos',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2.1; de-de; A35DM Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'A35DM',
+                'A35DM',
+                'Archos',
+                'Archos',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

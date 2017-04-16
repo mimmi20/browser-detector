@@ -174,6 +174,16 @@ class CubotFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.1; de-de; C7 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'C7',
+                'C7',
+                'Cubot',
+                'Cubot',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

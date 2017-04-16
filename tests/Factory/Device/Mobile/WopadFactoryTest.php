@@ -124,6 +124,16 @@ class WopadFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android v1.02.11-2010.12.9_English; de-de; WOPAD 7001 Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
+                'general Wopad Device',
+                'general Wopad Device',
+                'Wopad',
+                'Wopad',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

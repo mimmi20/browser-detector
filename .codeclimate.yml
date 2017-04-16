@@ -31,10 +31,23 @@ engines:
         enabled: false
       Design/NpathComplexity:
         enabled: false
+      CyclomaticComplexity:
+        enabled: false
+      CleanCode/ElseExpression:
+        enabled: false
+      CleanCode/StaticAccess:
+        enabled: false
   phan:
     enabled: true
     config:
       file_extensions: "php"
+    checks:
+      PhanUndeclaredClassMethod:
+        enabled: false
+      PhanUndeclaredClassInstanceof:
+        enabled: false
+      PhanUndeclaredTypeParameter:
+        enabled: false
   phpcodesniffer:
     enabled: true
     config:

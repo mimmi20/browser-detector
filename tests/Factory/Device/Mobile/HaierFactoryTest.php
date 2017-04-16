@@ -124,6 +124,16 @@ class HaierFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; en-US; Haier-W718 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.8.855 U3/0.8.0 Mobile Safari/534.30',
+                'W718',
+                'W718',
+                'Haier',
+                'Haier',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

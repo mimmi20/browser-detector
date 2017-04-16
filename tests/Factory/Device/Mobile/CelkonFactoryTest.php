@@ -124,6 +124,16 @@ class CelkonFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; CELKON A9 Dual Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'general Celkon Device',
+                'general Celkon Device',
+                'Celkon',
+                'Celkon',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

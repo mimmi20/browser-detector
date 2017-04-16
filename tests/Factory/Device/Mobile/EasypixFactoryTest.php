@@ -124,6 +124,16 @@ class EasypixFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; ar-eg; Junior 4.0 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'Junior 4.0',
+                'Junior 4.0',
+                'Easypix',
+                'Easypix',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

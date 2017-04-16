@@ -234,6 +234,16 @@ class TrekStorFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.1-update1-1.0.0; de-de; TrekStor_Liro_Color Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
+                'Liro Color',
+                'Liro Color',
+                'TrekStor',
+                'TrekStor',
+                'Tablet',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

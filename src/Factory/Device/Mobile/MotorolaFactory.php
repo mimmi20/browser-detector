@@ -46,103 +46,103 @@ class MotorolaFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('MotoG3', false)) {
+        if ($s->contains('motog3', false)) {
             return $this->loader->load('motog3', $useragent);
         }
 
-        if ($s->contains('XT1080', false)) {
+        if ($s->contains('xt1080', false)) {
             return $this->loader->load('xt1080', $useragent);
         }
 
-        if ($s->contains('XT1068', false)) {
+        if ($s->contains('xt1068', false)) {
             return $this->loader->load('xt1068', $useragent);
         }
 
-        if ($s->contains('XT1058', false)) {
+        if ($s->contains('xt1058', false)) {
             return $this->loader->load('xt1058', $useragent);
         }
 
-        if ($s->contains('XT1052', false)) {
+        if ($s->contains('xt1052', false)) {
             return $this->loader->load('xt1052', $useragent);
         }
 
-        if ($s->contains('XT1039', false)) {
+        if ($s->contains('xt1039', false)) {
             return $this->loader->load('xt1039', $useragent);
         }
 
-        if ($s->contains('XT1033', false)) {
+        if ($s->contains('xt1033', false)) {
             return $this->loader->load('xt1033', $useragent);
         }
 
-        if ($s->contains('XT1032', false)) {
+        if ($s->contains('xt1032', false)) {
             return $this->loader->load('xt1032', $useragent);
         }
 
-        if ($s->contains('XT1021', false)) {
+        if ($s->contains('xt1021', false)) {
             return $this->loader->load('xt1021', $useragent);
         }
 
-        if ($s->contains('XT926', false)) {
+        if ($s->contains('xt926', false)) {
             return $this->loader->load('xt926', $useragent);
         }
 
-        if ($s->contains('XT925', false)) {
+        if ($s->contains('xt925', false)) {
             return $this->loader->load('xt925', $useragent);
         }
 
-        if ($s->contains('DROID RAZR HD', false)) {
+        if ($s->contains('droid razr hd', false)) {
             return $this->loader->load('xt923', $useragent);
         }
 
-        if ($s->contains('XT910', false)) {
+        if ($s->contains('xt910', false)) {
             return $this->loader->load('xt910', $useragent);
         }
 
-        if ($s->contains('XT907', false)) {
+        if ($s->contains('xt907', false)) {
             return $this->loader->load('xt907', $useragent);
         }
 
-        if ($s->contains('XT890', false)) {
+        if ($s->contains('xt890', false)) {
             return $this->loader->load('xt890', $useragent);
         }
 
-        if ($s->containsAny(['XT875', 'DROID BIONIC 4G'], false)) {
+        if ($s->containsAny(['xt875', 'droid bionic 4g'], false)) {
             return $this->loader->load('xt875', $useragent);
         }
 
-        if ($s->contains('XT720', false)) {
+        if ($s->contains('xt720', false)) {
             return $this->loader->load('milestone xt720', $useragent);
         }
 
-        if ($s->contains('XT702', false)) {
+        if ($s->contains('xt702', false)) {
             return $this->loader->load('xt702', $useragent);
         }
 
-        if ($s->contains('XT615', false)) {
+        if ($s->contains('xt615', false)) {
             return $this->loader->load('xt615', $useragent);
         }
 
-        if ($s->contains('XT610', false)) {
+        if ($s->contains('xt610', false)) {
             return $this->loader->load('xt610', $useragent);
         }
 
-        if ($s->contains('XT530', false)) {
+        if ($s->contains('xt530', false)) {
             return $this->loader->load('xt530', $useragent);
         }
 
-        if ($s->contains('XT389', false)) {
+        if ($s->contains('xt389', false)) {
             return $this->loader->load('xt389', $useragent);
         }
 
-        if ($s->contains('XT320', false)) {
+        if ($s->contains('xt320', false)) {
             return $this->loader->load('xt320', $useragent);
         }
 
-        if ($s->contains('XT316', false)) {
+        if ($s->contains('xt316', false)) {
             return $this->loader->load('xt316', $useragent);
         }
 
-        if ($s->contains('XT311', false)) {
+        if ($s->contains('xt311', false)) {
             return $this->loader->load('xt311', $useragent);
         }
 
@@ -150,11 +150,11 @@ class MotorolaFactory implements Factory\FactoryInterface
             return $this->loader->load('xoom', $useragent);
         }
 
-        if ($s->contains('WX308', false)) {
+        if ($s->contains('wx308', false)) {
             return $this->loader->load('wx308', $useragent);
         }
 
-        if ($s->contains('T720', false)) {
+        if ($s->contains('t720', false)) {
             return $this->loader->load('t720', $useragent);
         }
 

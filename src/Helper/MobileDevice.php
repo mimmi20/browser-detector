@@ -200,6 +200,8 @@ class MobileDevice
             'folio_and_a',
             'docomo',
             'portalmmm',
+            'hisense',
+            'siemens',
         ];
 
         if ($s->containsAny($mobiles, false)) {

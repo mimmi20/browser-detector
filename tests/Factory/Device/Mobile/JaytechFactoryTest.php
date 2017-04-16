@@ -124,6 +124,16 @@ class JaytechFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; JAY-TECH Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'general JAY-tech Device',
+                'general JAY-tech Device',
+                'JAY-tech',
+                'JAY-tech',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

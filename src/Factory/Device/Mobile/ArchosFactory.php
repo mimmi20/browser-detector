@@ -54,23 +54,23 @@ class ArchosFactory implements Factory\FactoryInterface
             return $this->loader->load('a80ksc', $useragent);
         }
 
-        if ($s->contains('A70S', false)) {
+        if ($s->contains('a70s', false)) {
             return $this->loader->load('a70s', $useragent);
         }
 
-        if ($s->contains('A70HB', false)) {
+        if ($s->contains('a70hb', false)) {
             return $this->loader->load('a70hb', $useragent);
         }
 
-        if ($s->contains('A70H2', false)) {
+        if ($s->contains('a70h2', false)) {
             return $this->loader->load('a70 h2', $useragent);
         }
 
-        if ($s->contains('A70CHT', false)) {
+        if ($s->contains('a70cht', false)) {
             return $this->loader->load('a70cht', $useragent);
         }
 
-        if ($s->contains('A70BHT', false)) {
+        if ($s->contains('a70bht', false)) {
             return $this->loader->load('a70bht', $useragent);
         }
 
@@ -172,10 +172,6 @@ class ArchosFactory implements Factory\FactoryInterface
 
         if ($s->contains('50 platinum', false)) {
             return $this->loader->load('50 platinum', $useragent);
-        }
-
-        if ($s->contains('50 cesium', false)) {
-            return $this->loader->load('50 cesium', $useragent);
         }
 
         if ($s->contains('50 oxygen plus', false)) {

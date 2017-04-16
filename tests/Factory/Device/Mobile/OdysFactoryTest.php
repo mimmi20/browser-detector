@@ -364,6 +364,36 @@ class OdysFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; UNO_X10 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'Uno X10',
+                'Uno X10',
+                'Odys',
+                'Odys',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.1-update1-1.0.0; en-us; Genesis Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
+                'Genesis',
+                'Genesis',
+                'Odys',
+                'Odys',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; GENESIS Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'Genesis',
+                'Genesis',
+                'Odys',
+                'Odys',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
