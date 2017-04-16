@@ -49,18 +49,23 @@ class Macintosh
         }
 
         $mac = [
-            'Macintosh',
-            'Darwin',
-            'Mac_PowerPC',
-            'MacBook',
-            'for Mac',
-            'PPC Mac',
-            'Mac OS X',
-            '(MacOS)',
+            'macintosh',
+            'darwin',
+            'mac_powerpc',
+            'macbook',
+            'for mac',
+            'ppc mac',
+            'mac os x',
+            '(macos)',
             'integrity',
             'camino',
             'pubsub',
-            'os=Mac',
+            'os=mac',
+            'imac',
+            'macmini',
+            'macpro',
+            'powermac',
+            'power%20macintosh',
         ];
 
         if (!$s->containsAny($mac, false)) {

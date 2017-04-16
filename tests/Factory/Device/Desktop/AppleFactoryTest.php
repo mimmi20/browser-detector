@@ -9,9 +9,9 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetectorTest\Factory\Device;
+namespace BrowserDetectorTest\Factory\Device\Desktop;
 
-use BrowserDetector\Factory\Device\DarwinFactory;
+use BrowserDetector\Factory\Device\Desktop\AppleFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -19,12 +19,12 @@ use League\Flysystem\Filesystem;
 use Stringy\Stringy;
 
 /**
- * Test class for \BrowserDetector\Factory\Device\DarwinFactory
+ * Test class for \BrowserDetector\Factory\Device\Desktop\AppleFactory
  */
-class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
+class AppleFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Platform\DarwinFactory
+     * @var \BrowserDetector\Factory\Device\Desktop\AppleFactory
      */
     private $object = null;
 
@@ -34,10 +34,10 @@ class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp()
     {
-        $adapter      = new Local(__DIR__ . '/../../../cache/');
+        $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new DarwinFactory($loader);
+        $this->object = new AppleFactory($loader);
     }
 
     /**
@@ -105,17 +105,7 @@ class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
-                'Mercury/894 CFNetwork/758.5.3 Darwin/15.6.0',
-                'general Apple Device',
-                'general Apple Device',
-                'Apple Inc',
-                'Apple',
-                'Mobile Device',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Unibox/377 CFNetwork/796 Darwin/16.0.0 (x86_64)',
+                'this is a fake ua to trigger the fallback',
                 'Macintosh',
                 'Macintosh',
                 'Apple Inc',
@@ -123,46 +113,6 @@ class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
                 'Desktop',
                 false,
                 'mouse',
-            ],
-            [
-                'Unibox/283 CFNetwork/760.6.3 Darwin/15.6.0 (x86_64)',
-                'Macintosh',
-                'Macintosh',
-                'Apple Inc',
-                'Apple',
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'Unibox/87 CFNetwork/798.3 Darwin/16.0.0',
-                'Macintosh',
-                'Macintosh',
-                'Apple Inc',
-                'Apple',
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'MobileSafari/601.1 CFNetwork/757 Darwin/15.0.0',
-                'general Apple Device',
-                'general Apple Device',
-                'Apple Inc',
-                'Apple',
-                'Mobile Device',
-                true,
-                'touchscreen',
-            ],
-            [
-                'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0',
-                'general Apple Device',
-                'general Apple Device',
-                'Apple Inc',
-                'Apple',
-                'Mobile Device',
-                true,
-                'touchscreen',
             ],
             [
                 'Safari/9537.85.10.17.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (iMac11%2C3)',

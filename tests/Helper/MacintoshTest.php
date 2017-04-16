@@ -38,6 +38,8 @@ class MacintoshTest extends \PHPUnit\Framework\TestCase
             ['Mozilla/5.0 Gecko/20030306 Camino/0.7'],
             ['Apple-PubSub/65.28'],
             ['QuickTime\\\\xaa.7.0.4 (qtver=7.0.4;cpu=PPC;os=Mac 10.3.9)'],
+            ['Safari5533.22.3 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac12%2C1)'],
+            ['Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacPro4%2C1)'],
         ];
     }
 
