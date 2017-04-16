@@ -116,6 +116,16 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
+                'this is a fake ua to trigger the fallback',
+                null,
+                null,
+                null,
+                null,
+                null,
+                false,
+                null,
+            ],
+            [
                 'Dalvik/1.6.0 (Linux; U; Android 4.4.4; MI PAD MIUI/5.11.1)',
                 'Mi Pad',
                 'Mi Pad',
@@ -28795,44 +28805,246 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'mouse',
             ],
+            [
+                'Safari/12602.1.50 CFNetwork/807.0.1 Darwin/16.0.0 (x86_64)',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'Safari/12602.1.43 CFNetwork/802.1 Darwin/16.0.0 (x86_64)',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'Safari/12602.1.32.7 CFNetwork/790.2 Darwin/16.0.0 (x86_64)',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'Safari/10600.1.25.1 CFNetwork/720.1.1 Darwin/14.0.0 (x86_64)',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'Unibox/283 CFNetwork/718 Darwin/14.0.0 (x86_64)',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'Unibox/189 CFNetwork/714 Darwin/14.0.0 (x86_64)',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'MobileSafari/600.1.4 CFNetwork/711.5.6 Darwin/14.0.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
+            [
+                'MobileSafari/600.1.4 CFNetwork/709.1 Darwin/14.0.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Unibox/190 CFNetwork/708.1 Darwin/14.0.0 (x86_64)',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'Unibox/190 CFNetwork/705 Darwin/14.0.0 (x86_64)',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'com.apple.WebKit.WebContent/10538.39.41 CFNetwork/699 Darwin/14.0.0 (x86_64)',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'Unibox/190 CFNetwork/696.0.2 Darwin/14.0.0 (x86_64))',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'Safari/9537.85.11.5 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro5%2C1)',
+                'MacBook Pro',
+                'MacBook Pro',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'MobileSafari/9537.53 CFNetwork/672.1.14 Darwin/14.0.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
+            [
+                'MobileSafari/8536.25 CFNetwork/609 Darwin/13.0.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
+            [
+                'MobileSafari/8536.25 CFNetwork/602 Darwin/13.0.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Safari/8537.85.12.18 CFNetwork/596.6.3 Darwin/12.6.0 (x86_64) (MacBookPro7%2C1)',
+                'MacBook Pro',
+                'MacBook Pro',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'MobileSafari/7534.48.3 CFNetwork/548.1.4 Darwin/11.0.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Safari/7534.20.8 CFNetwork/515.1 Darwin/11.0.0 (x86_64) (MacBook7%2C1)',
+                'MacBook',
+                'MacBook',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'MobileSafari/6533.18.5 CFNetwork/485.13.9 Darwin/11.0.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
+            [
+                'MobileSafari/531.21.10 CFNetwork/467.12 Darwin/10.3.1',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
+            [
+                'MobileSafari/528.16 CFNetwork/459 Darwin/10.0.0d3',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Safari5531.9 CFNetwork/422.15.2 Darwin/9.6.0 (i386) (MacBookPro5%2C1)',
+                'MacBook Pro',
+                'MacBook Pro',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'Safari/5526.11.2 CFNetwork/339.5 Darwin/9.5.0 (Power%20Macintosh) (PowerMac3,4)',
+                'PowerMac',
+                'PowerMac',
+                'Apple Inc',
+                'Apple',
+                'Desktop',
+                false,
+                'mouse',
+            ],
         ];
-    }
-
-    public function testToarray()
-    {
-        $logger = new NullLogger();
-
-        $deviceName        = 'TestDevicename';
-        $marketingName     = 'TestMarketingname';
-        $manufacturer      = new Company('Unknown', null);
-        $brand             = new Company('Unknown', null);
-        $type              = new Type('unknown');
-        $pointingMethod    = 'touchscreen';
-        $resolutionWidth   = 480;
-        $resolutionHeight  = 1080;
-        $dualOrientation   = true;
-        $colors            = '68676';
-        $smsSupport        = true;
-        $nfcSupport        = false;
-        $hasQwertyKeyboard = true;
-
-        $original = new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $pointingMethod, $resolutionWidth, $resolutionHeight, $dualOrientation, $colors, $smsSupport, $nfcSupport, $hasQwertyKeyboard);
-
-        $array  = $original->toArray();
-        $object = (new \UaResult\Device\DeviceFactory())->fromArray($this->cache, $logger, $array);
-
-        self::assertSame($deviceName, $object->getDeviceName());
-        self::assertSame($marketingName, $object->getMarketingName());
-        self::assertEquals($manufacturer, $object->getManufacturer());
-        self::assertEquals($brand, $object->getBrand());
-        self::assertEquals($type, $object->getType());
-        self::assertSame($pointingMethod, $object->getPointingMethod());
-        self::assertSame($resolutionWidth, $object->getResolutionWidth());
-        self::assertSame($resolutionHeight, $object->getResolutionHeight());
-        self::assertSame($dualOrientation, $object->getDualOrientation());
-        self::assertSame($colors, $object->getColors());
-        self::assertSame($smsSupport, $object->getSmsSupport());
-        self::assertSame($nfcSupport, $object->getNfcSupport());
-        self::assertSame($hasQwertyKeyboard, $object->getHasQwertyKeyboard());
     }
 }
