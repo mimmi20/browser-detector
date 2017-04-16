@@ -16,6 +16,7 @@ use BrowserDetector\Loader\PlatformLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -50,8 +51,10 @@ class LinuxFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $platform, $version, $manufacturer, $bits)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Os\OsInterface $result */
-        $result = $this->object->detect($agent);
+        $result = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Os\OsInterface', $result);
         self::assertSame(

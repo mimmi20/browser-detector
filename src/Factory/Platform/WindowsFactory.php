@@ -40,13 +40,12 @@ class WindowsFactory implements Factory\FactoryInterface
      * Gets the information about the platform by User Agent
      *
      * @param string $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $s = new Stringy($useragent);
-
         if ($s->containsAny(['Windows NT 10', 'Windows 10'], false)) {
             return $this->loader->load('windows nt 10.0', $useragent);
         }

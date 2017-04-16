@@ -27,6 +27,32 @@ use Stringy\Stringy;
 class LinuxFactory implements FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $platforms = [
+        'debian apt-http' => 'debian',
+        'linux mint' => 'linux mint',
+        'kubuntu' => 'kubuntu',
+        'ubuntu' => 'ubuntu',
+        'fedora' => 'fedora linux',
+        'redhat' => 'redhat linux',
+        'red hat' => 'redhat linux',
+        'debian' => 'debian',
+        'raspbian' => 'debian',
+        'centos' => 'cent os linux',
+        'cros' => 'chromeos',
+        'joli os' => 'joli os',
+        'mandriva' => 'mandriva linux',
+        'suse' => 'suse linux',
+        'gentoo' => 'gentoo linux',
+        'slackware' => 'slackware linux',
+        'ventana' => 'ventana linux',
+        'moblin' => 'moblin',
+        'zenwalk gnu' => 'zenwalk gnu linux',
+        'linux arm' => 'linux smartphone os (maemo)',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -42,54 +68,19 @@ class LinuxFactory implements FactoryInterface
     /**
      * Gets the information about the platform by User Agent
      *
-     * @param string $agent
+     * @param string $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect($agent)
+    public function detect($useragent, Stringy $s = null)
     {
-        $s = new Stringy($agent);
-
-        $platformCode = 'linux';
-
-        if ($s->contains('Debian APT-HTTP')) {
-            $platformCode = 'debian';
-        } elseif ($s->contains('linux mint', false)) {
-            $platformCode = 'linux mint';
-        } elseif ($s->contains('kubuntu', false)) {
-            $platformCode = 'kubuntu';
-        } elseif ($s->contains('ubuntu', false)) {
-            $platformCode = 'ubuntu';
-        } elseif ($s->contains('fedora', false)) {
-            $platformCode = 'fedora linux';
-        } elseif ($s->containsAny(['redhat', 'red hat'], false)) {
-            $platformCode = 'redhat linux';
-        } elseif ($s->contains('kfreebsd', false)) {
-            $platformCode = 'debian with freebsd kernel';
-        } elseif (preg_match('/(de|rasp)bian/i', $agent)) {
-            $platformCode = 'debian';
-        } elseif ($s->contains('centos', false)) {
-            $platformCode = 'cent os linux';
-        } elseif ($s->contains('CrOS')) {
-            $platformCode = 'chromeos';
-        } elseif ($s->contains('Joli OS')) {
-            $platformCode = 'joli os';
-        } elseif ($s->contains('mandriva', false)) {
-            $platformCode = 'mandriva linux';
-        } elseif ($s->contains('suse', false)) {
-            $platformCode = 'suse linux';
-        } elseif ($s->contains('gentoo', false)) {
-            $platformCode = 'gentoo linux';
-        } elseif ($s->contains('slackware', false)) {
-            $platformCode = 'slackware linux';
-        } elseif ($s->contains('ventana', false)) {
-            $platformCode = 'ventana linux';
-        } elseif ($s->contains('moblin', false)) {
-            $platformCode = 'moblin';
-        } elseif ($s->contains('Zenwalk GNU')) {
-            $platformCode = 'zenwalk gnu linux';
+        foreach ($this->platforms as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
-        return $this->loader->load($platformCode, $agent);
+        return $this->loader->load('linux', $useragent);
     }
 }

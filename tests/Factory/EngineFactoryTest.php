@@ -270,24 +270,13 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
                 'Google Inc',
                 null,
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; HUAWEI MT7-CL00 Build/HuaweiMT7-CL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/35.0.1916.138 Mobile Safari/537.36 T7/6.4',
+                'T7',
+                '6.4.0',
+                'Baidu',
+                null,
+            ],
         ];
-    }
-
-    public function testToarray()
-    {
-        $logger = new NullLogger();
-
-        $name         = 'TestBrowser';
-        $manufacturer = new Company('Unknown', null);
-        $version      = (new VersionFactory())->set('0.0.2-beta');
-
-        $original = new Engine($name, $manufacturer, $version);
-
-        $array  = $original->toArray();
-        $object = (new \UaResult\Engine\EngineFactory())->fromArray($this->cache, $logger, $array);
-
-        self::assertSame($name, $object->getName());
-        self::assertEquals($manufacturer, $object->getManufacturer());
-        self::assertEquals($version, $object->getVersion());
     }
 }

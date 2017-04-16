@@ -13,6 +13,7 @@ namespace BrowserDetector\Factory\Platform;
 
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
+use Stringy\Stringy;
 
 /**
  * Browser detection class
@@ -42,10 +43,11 @@ class DarwinFactory implements Factory\FactoryInterface
      * Gets the information about the platform by User Agent
      *
      * @param string $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect($useragent)
+    public function detect($useragent, Stringy $s = null)
     {
         if (false !== mb_strpos($useragent, 'CFNetwork/808.2')) {
             return $this->loader->load('ios', $useragent, '10.2');
