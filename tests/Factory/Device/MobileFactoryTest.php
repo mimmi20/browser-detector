@@ -28244,6 +28244,26 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Coolpad 8297W Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501072',
+                'general Coolpad Device',
+                'general Coolpad Device',
+                'Coolpad',
+                'Coolpad',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; Kingzone K1 turbo Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36',
+                'KZ-168',
+                'K1 Turbo',
+                'Shenzhen Kingzone Communication Co.,Ltd',
+                'Kingzone',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
