@@ -67,16 +67,12 @@ class DesktopFactory implements Factory\FactoryInterface
             return (new Desktop\AppleFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/eeepc/i', $useragent)) {
+        if ($s->contains('eeepc', false)) {
             return $this->loader->load('eee pc', $useragent);
         }
 
-        if (preg_match('/hp\-ux 9000/i', $useragent)) {
+        if ($s->contains('hp-ux 9000', false)) {
             return $this->loader->load('9000', $useragent);
-        }
-
-        if (preg_match('/Dillo/', $useragent)) {
-            return $this->loader->load('linux desktop', $useragent);
         }
 
         return $this->loader->load('general desktop', $useragent);

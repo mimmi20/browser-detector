@@ -92,6 +92,8 @@ class Desktop
             'osf1',
             'barca',
             'the bat!',
+            'hp-ux',
+            'hpux',
         ];
 
         if ($s->containsAny($othersDesktops, false)) {

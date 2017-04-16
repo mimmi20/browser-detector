@@ -224,6 +224,26 @@ class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'mouse',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; eeepc Build/IMM76L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+                'eee pc',
+                'eee pc',
+                'Asus',
+                'Asus',
+                'Desktop',
+                false,
+                'mouse',
+            ],
+            [
+                'Mozilla/5.0 (X11; U; HP-UX 9000/785; en-US; rv:1.7) Gecko/20040617',
+                '9000',
+                '9000',
+                'HP',
+                'HP',
+                'Desktop',
+                false,
+                'mouse',
+            ],
         ];
     }
 }

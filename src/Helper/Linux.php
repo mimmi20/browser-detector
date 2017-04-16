@@ -68,6 +68,8 @@ class Linux
             'sunos',
             'infegyatlas',
             'jobboerse',
+            'hp-ux',
+            'hpux',
         ];
 
         if ($s->containsAny($noLinux, false)) {
