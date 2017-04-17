@@ -91,16 +91,8 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('windows mobile os', $useragent);
         }
 
-        if ($isWindows && $s->contains('ARM;')) {
-            return $this->loader->load('windows rt', $useragent);
-        }
-
         if ($isWindows) {
             return (new Platform\WindowsFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/Linux; U; (\d+[\d\.]+)/', $useragent, $matches) && $matches[1] >= 4) {
-            return $this->loader->load('android', $useragent);
         }
 
         if ($s->contains('commoncrawler', false)) {

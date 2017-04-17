@@ -54,12 +54,16 @@ class AndroidOs implements VersionCacheFactoryInterface
             return $detector;
         }
 
-        if (false !== mb_stripos($useragent, 'android eclair')) {
-            return VersionFactory::set('2.1.0');
+        if (preg_match('/Linux; (\d+[\d\.]+)/', $useragent, $matches)) {
+            return VersionFactory::set($matches[1]);
         }
 
         if (false !== mb_stripos($useragent, 'gingerbread')) {
             return VersionFactory::set('2.3.0');
+        }
+
+        if (false !== mb_stripos($useragent, 'android eclair')) {
+            return VersionFactory::set('2.1.0');
         }
 
         return new Version(0);

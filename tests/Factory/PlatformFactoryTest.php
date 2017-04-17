@@ -1511,6 +1511,27 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
                 'Microsoft Corporation',
                 32,
             ],
+            [
+                'MQQBrowser/3.4/Adr (Linux; U; 4.1.2; zh-cn; GT-I9300 Build/JZO54K.I9300ZNEMD2;720*1280)',
+                'Android',
+                '4.1.2',
+                'Google Inc',
+                32,
+            ],
+            [
+                'MQQBrowser/2.8/Adr (Linux; U; 2.2; zh-cn; GT-I9000 Build/FROYO.XXJPO;480*800)',
+                'Android',
+                '2.2.0',
+                'Google Inc',
+                32,
+            ],
+            [
+                'MQQBrowser/25 (Linux; U; 2.3.3; zh-cn; GT-I9000 Build/GINGERBREAD.XWJVH;480*800)',
+                'Android',
+                '2.3.3',
+                'Google Inc',
+                32,
+            ],
         ];
     }
 }
