@@ -56,12 +56,16 @@ class EngineFactory implements FactoryInterface
             return $this->loader->load('edge', $useragent);
         }
 
+        if ($s->contains(' U3/')) {
+            return $this->loader->load('u3', $useragent);
+        }
+
         if ($s->contains(' U2/')) {
             return $this->loader->load('u2', $useragent);
         }
 
-        if ($s->contains(' U3/')) {
-            return $this->loader->load('u3', $useragent);
+        if ($s->contains(' T7/')) {
+            return $this->loader->load('t7', $useragent);
         }
 
         if ($s->contains(' T5/')) {

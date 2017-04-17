@@ -40,6 +40,7 @@ class Linux
         $s = new Stringy($this->useragent);
 
         $noLinux = [
+            'android',
             'loewe; sl121',
             'eeepc',
             'microsoft office',
@@ -51,6 +52,7 @@ class Linux
             'cryptoapi',
             'velocitymicro',
             'gt-c3312r',
+            'gt-i9100',
             'microsoft data access',
             'microsoft-webdav',
             'microsoft.outlook',
@@ -62,15 +64,23 @@ class Linux
             'openbsd',
             'bsd four',
             'microsearch',
-            'juc(',
             'osf1',
             'solaris',
             'sunos',
             'infegyatlas',
             'jobboerse',
+            'hp-ux',
+            'hpux',
+            'irix',
+            'hpwos',
+            'webos',
         ];
 
         if ($s->containsAny($noLinux, false)) {
+            return false;
+        }
+
+        if ($s->startsWith('juc', false)) {
             return false;
         }
 
@@ -78,6 +88,7 @@ class Linux
             // linux systems
             'linux',
             'debian',
+            'raspbian',
             'ubuntu',
             'suse',
             'fedora',

@@ -9,23 +9,34 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory\Device;
+namespace BrowserDetector\Factory\Device\Desktop;
 
 use BrowserDetector\Factory;
 use BrowserDetector\Loader\LoaderInterface;
 use Stringy\Stringy;
 
 /**
- * Browser detection class
- *
  * @category  BrowserDetector
  *
- * @author    Thomas Mueller <mimmi20@live.de>
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DarwinFactory implements Factory\FactoryInterface
+class AppleFactory implements Factory\FactoryInterface
 {
+    /**
+     * @var array
+     */
+    private $devices = [
+        'imac'              => 'imac',
+        'macbookpro'        => 'macbook pro',
+        'macbookair'        => 'macbook air',
+        'macbook'           => 'macbook',
+        'macmini'           => 'mac mini',
+        'macpro'            => 'macpro',
+        'powermac'          => 'powermac',
+        'power%20macintosh' => 'powermac',
+    ];
+
     /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
@@ -49,28 +60,12 @@ class DarwinFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        $appleMobileFactory  = new Mobile\AppleFactory($this->loader);
-        $appleDesktopFactory = new Desktop\AppleFactory($this->loader);
-
-        $mobileCodes = [
-            'cfnetwork/808',
-            'cfnetwork/758',
-            'cfnetwork/757',
-            'cfnetwork/711',
-            'cfnetwork/709',
-            'cfnetwork/672',
-            'cfnetwork/609',
-            'cfnetwork/602',
-            'cfnetwork/548',
-            'cfnetwork/485',
-            'cfnetwork/467',
-            'cfnetwork/459',
-        ];
-
-        if ($s->containsAny($mobileCodes, false)) {
-            return $appleMobileFactory->detect($useragent, $s);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
-        return $appleDesktopFactory->detect($useragent, $s);
+        return $this->loader->load('macintosh', $useragent);
     }
 }

@@ -16,6 +16,7 @@ use BrowserDetector\Loader\PlatformLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
+use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -50,8 +51,10 @@ class LinuxFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($agent, $platform, $version, $manufacturer, $bits)
     {
+        $s = new Stringy($agent);
+
         /** @var \UaResult\Os\OsInterface $result */
-        $result = $this->object->detect($agent);
+        $result = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Os\OsInterface', $result);
         self::assertSame(
@@ -86,6 +89,13 @@ class LinuxFactoryTest extends \PHPUnit\Framework\TestCase
     public function providerDetect()
     {
         return [
+            [
+                'this is a fake ua to trigger the fallback',
+                'Linux',
+                '0.0.0',
+                'Linux Foundation',
+                32,
+            ],
             [
                 'Mozilla/5.0 AppleWebKit/536.30.1 (KHTML, like Gecko) Version/6.0.5 Safari/536.30.1 Installatron (Mimicking WebKit)',
                 'Linux',
@@ -252,6 +262,13 @@ class LinuxFactoryTest extends \PHPUnit\Framework\TestCase
                 'Ubuntu',
                 '9.04.0',
                 'Canonical Foundation',
+                32,
+            ],
+            [
+                'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.2) Gecko/20090903 Iceweasel/3.5.2 (Zenwalk GNU Linux)',
+                'Zenwalk GNU Linux',
+                '0.0.0',
+                null,
                 32,
             ],
         ];

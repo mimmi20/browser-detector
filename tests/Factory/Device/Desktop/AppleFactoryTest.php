@@ -9,9 +9,9 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetectorTest\Factory\Device;
+namespace BrowserDetectorTest\Factory\Device\Desktop;
 
-use BrowserDetector\Factory\Device\DesktopFactory;
+use BrowserDetector\Factory\Device\Desktop\AppleFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -19,12 +19,12 @@ use League\Flysystem\Filesystem;
 use Stringy\Stringy;
 
 /**
- * Test class for \BrowserDetector\Detector\Device\Desktop\GeneralDesktop
+ * Test class for \BrowserDetector\Factory\Device\Desktop\AppleFactory
  */
-class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
+class AppleFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\DesktopFactory
+     * @var \BrowserDetector\Factory\Device\Desktop\AppleFactory
      */
     private $object = null;
 
@@ -34,10 +34,10 @@ class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp()
     {
-        $adapter      = new Local(__DIR__ . '/../../../cache/');
+        $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new DesktopFactory($loader);
+        $this->object = new AppleFactory($loader);
     }
 
     /**
@@ -105,31 +105,11 @@ class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
-                'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Raspbian/8.0 (1:3.8.2.0-0rpi27rpi1g) Epiphany/3.8.2',
-                'Raspberry Pi',
-                'Raspberry Pi',
-                'Raspberry Pi Foundation',
-                'Raspberry Pi Foundation',
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/7.6 (3.8.2.0-0rpi14rpi2) Epiphany/3.8.2',
-                'Raspberry Pi',
-                'Raspberry Pi',
-                'Raspberry Pi Foundation',
-                'Raspberry Pi Foundation',
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'Mozilla/5.0 (Darwin; FreeBSD 5.6; en-GB; rv:1.8.1.17pre) Gecko/20080716 K-Meleon/1.5.0',
-                'general Desktop',
-                'general Desktop',
-                null,
-                null,
+                'this is a fake ua to trigger the fallback',
+                'Macintosh',
+                'Macintosh',
+                'Apple Inc',
+                'Apple',
                 'Desktop',
                 false,
                 'mouse',
@@ -200,46 +180,6 @@ class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
                 'PowerMac',
                 'Apple Inc',
                 'Apple',
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586',
-                'Windows Desktop',
-                'Windows Desktop',
-                null,
-                null,
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'Dillo/0.8.5-i18n-misc',
-                'Linux Desktop',
-                'Linux Desktop',
-                null,
-                null,
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; eeepc Build/IMM76L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'eee pc',
-                'eee pc',
-                'Asus',
-                'Asus',
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'Mozilla/5.0 (X11; U; HP-UX 9000/785; en-US; rv:1.7) Gecko/20040617',
-                '9000',
-                '9000',
-                'HP',
-                'HP',
                 'Desktop',
                 false,
                 'mouse',

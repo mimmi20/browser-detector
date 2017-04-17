@@ -17,8 +17,15 @@ matrix:
   include:
     - php: 7.1
       env: COVERAGE=yes
+      sudo: required
+      dist: trusty
+      group: edge
+#    - php: 7.1
+#      env: COVERAGE=yes
     - php: 7.1
       env: EXECUTE_CS_CHECK=yes
+    - php: nightly
+      env: COMPOSER_FLAGS="--ignore-platform-reqs"
   allow_failures:
     - php: nightly
     - php: hhvm

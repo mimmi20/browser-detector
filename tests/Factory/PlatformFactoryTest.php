@@ -14,14 +14,10 @@ namespace BrowserDetectorTest\Factory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\PlatformLoader;
-use BrowserDetector\Version\VersionFactory;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
-use Psr\Log\NullLogger;
-use UaResult\Company\Company;
 use UaResult\Os\Os;
-use UaResult\Os\OsFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -1368,28 +1364,13 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
                 'Samsung',
                 32,
             ],
+            [
+                'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.2) Gecko/20090903 Iceweasel/3.5.2 (Zenwalk GNU Linux)',
+                'Zenwalk GNU Linux',
+                '0.0.0',
+                null,
+                32,
+            ],
         ];
-    }
-
-    public function testToarray()
-    {
-        $logger = new NullLogger();
-
-        $name          = 'TestPlatform';
-        $marketingName = 'TestMarketingname';
-        $manufacturer  = new Company('Unknown', null);
-        $version       = (new VersionFactory())->set('0.0.0');
-        $bits          = 64;
-
-        $original = new Os($name, $marketingName, $manufacturer, $version, $bits);
-
-        $array  = $original->toArray();
-        $object = (new OsFactory())->fromArray($this->cache, $logger, $array);
-
-        self::assertSame($name, $object->getName());
-        self::assertSame($marketingName, $object->getMarketingName());
-        self::assertEquals($manufacturer, $object->getManufacturer());
-        self::assertEquals($version, $object->getVersion());
-        self::assertSame($bits, $object->getBits());
     }
 }

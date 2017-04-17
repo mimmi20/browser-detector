@@ -59,13 +59,13 @@ class Windows
 
         $isNotReallyAWindows = [
             // other OS and Mobile Windows
-            'Linux',
-            'Macintosh',
-            'Mobi',
-            'MSIE or Firefox mutant',
-            'not on Windows server',
-            'J2ME/MIDP',
-            'PalmSource',
+            'linux',
+            'macintosh',
+            'mobi',
+            'msie or firefox mutant',
+            'not on windows server',
+            'j2me/midp',
+            'palmsource',
             '<',
             '>',
         ];

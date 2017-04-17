@@ -24,6 +24,38 @@ use Stringy\Stringy;
 class TvFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'xbox one'                    => 'xbox one',
+        'xbox'                        => 'xbox 360',
+        'dlink.dsm380'                => 'dsm 380',
+        'idl-6651n'                   => 'idl-6651n',
+        'sl32x'                       => 'sl32x',
+        'sl121'                       => 'sl121',
+        'sl150'                       => 'sl150',
+        'lf1v464'                     => 'lf1v464',
+        'lf1v401'                     => 'lf1v401',
+        'lf1v394'                     => 'lf1v394',
+        'lf1v373'                     => 'lf1v373',
+        'lf1v325'                     => 'lf1v325',
+        'lf1v307'                     => 'lf1v307',
+        'netrangemmh'                 => 'netrangemmh',
+        'viera'                       => 'viera tv',
+        'avm-2012'                    => 'blueray player',
+        'technisat digicorder isio s' => 'digicorder isio s',
+        'technisat digit isio s'      => 'digit isio s',
+        'technisat multyvision isio'  => 'multyvision isio',
+        'cx919'                       => 'cx919',
+        'gxt_dongle_3188'             => 'cx919',
+        '(; Philips; ; ; ; )'         => 'general philips tv',
+        'mxl661l32'                   => 'samsung smart tv',
+        'smart-tv'                    => 'samsung smart tv',
+        'apple tv'                    => 'appletv',
+        'netbox'                      => 'netbox',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,80 +78,20 @@ class TvFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        $deviceCode = 'general tv device';
-
-        if (preg_match('/xbox one/i', $useragent)) {
-            $deviceCode = 'xbox one';
-        } elseif (preg_match('/xbox/i', $useragent)) {
-            $deviceCode = 'xbox 360';
-        } elseif (preg_match('/dlink\.dsm380/i', $useragent)) {
-            $deviceCode = 'dsm 380';
-        } elseif (preg_match('/NSZ\-GS7\/GX70/', $useragent)) {
-            $deviceCode = 'nsz-gs7/gx70';
-        } elseif (preg_match('/googletv/i', $useragent)) {
-            $deviceCode = 'google tv';
-        } elseif (preg_match('/idl\-6651n/i', $useragent)) {
-            $deviceCode = 'idl-6651n';
-        } elseif (preg_match('/loewe; sl32x/i', $useragent)) {
-            $deviceCode = 'sl32x';
-        } elseif (preg_match('/loewe; sl121/i', $useragent)) {
-            $deviceCode = 'sl121';
-        } elseif (preg_match('/loewe; sl150/i', $useragent)) {
-            $deviceCode = 'sl150';
-        } elseif (preg_match('/lf1v464/i', $useragent)) {
-            $deviceCode = 'lf1v464';
-        } elseif (preg_match('/lf1v401/i', $useragent)) {
-            $deviceCode = 'lf1v401';
-        } elseif (preg_match('/lf1v394/i', $useragent)) {
-            $deviceCode = 'lf1v394';
-        } elseif (preg_match('/lf1v373/i', $useragent)) {
-            $deviceCode = 'lf1v373';
-        } elseif (preg_match('/lf1v325/i', $useragent)) {
-            $deviceCode = 'lf1v325';
-        } elseif (preg_match('/lf1v307/i', $useragent)) {
-            $deviceCode = 'lf1v307';
-        } elseif (preg_match('/NETRANGEMMH/', $useragent)) {
-            $deviceCode = 'netrangemmh';
-        } elseif (preg_match('/viera/i', $useragent)) {
-            $deviceCode = 'viera tv';
-        } elseif (preg_match('/AVM\-2012/', $useragent)) {
-            $deviceCode = 'blueray player';
-        } elseif (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
-            $deviceCode = 'general philips tv';
-        } elseif (preg_match('/Mxl661L32/', $useragent)) {
-            $deviceCode = 'samsung smart tv';
-        } elseif (preg_match('/SMART\-TV/', $useragent)) {
-            $deviceCode = 'samsung smart tv';
-        } elseif (preg_match('/KDL32HX755/', $useragent)) {
-            $deviceCode = 'kdl32hx755';
-        } elseif (preg_match('/KDL32W655A/', $useragent)) {
-            $deviceCode = 'kdl32w655a';
-        } elseif (preg_match('/KDL37EX720/', $useragent)) {
-            $deviceCode = 'kdl37ex720';
-        } elseif (preg_match('/KDL42W655A/', $useragent)) {
-            $deviceCode = 'kdl42w655a';
-        } elseif (preg_match('/KDL40EX720/', $useragent)) {
-            $deviceCode = 'kdl40ex720';
-        } elseif (preg_match('/KDL50W815B/', $useragent)) {
-            $deviceCode = 'kdl50w815b';
-        } elseif (preg_match('/SonyDTV115/', $useragent)) {
-            $deviceCode = 'dtv115';
-        } elseif (preg_match('/technisat digicorder isio s/i', $useragent)) {
-            $deviceCode = 'digicorder isio s';
-        } elseif (preg_match('/technisat digit isio s/i', $useragent)) {
-            $deviceCode = 'digit isio s';
-        } elseif (preg_match('/TechniSat MultyVision ISIO/', $useragent)) {
-            $deviceCode = 'multyvision isio';
-        } elseif (preg_match('/AQUOSBrowser/', $useragent)) {
-            $deviceCode = 'aquos tv';
-        } elseif (preg_match('/(CX919|gxt_dongle_3188)/', $useragent)) {
-            $deviceCode = 'cx919';
-        } elseif (preg_match('/Apple TV/', $useragent)) {
-            $deviceCode = 'appletv';
-        } elseif (preg_match('/netbox/i', $useragent)) {
-            $deviceCode = 'netbox';
+        if (preg_match('/KDL\d{2}/', $useragent)) {
+            return (new Tv\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
-        return $this->loader->load($deviceCode, $useragent);
+        if ($s->containsAny(['nsz-gs7/gx70', 'sonydtv'], false)) {
+            return (new Tv\SonyFactory($this->loader))->detect($useragent, $s);
+        }
+
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
+        return $this->loader->load('general tv device', $useragent);
     }
 }
