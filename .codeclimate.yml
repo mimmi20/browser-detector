@@ -11,6 +11,8 @@ engines:
         enabled: false
       Identical code:
         enabled: false
+      Similar code:
+        enabled: false
   fixme:
     enabled: true
   phpmd:
@@ -38,16 +40,9 @@ engines:
       CleanCode/StaticAccess:
         enabled: false
   phan:
-    enabled: true
+    enabled: false
     config:
       file_extensions: "php"
-    checks:
-      PhanUndeclaredClassMethod:
-        enabled: false
-      PhanUndeclaredClassInstanceof:
-        enabled: false
-      PhanUndeclaredTypeParameter:
-        enabled: false
   phpcodesniffer:
     enabled: true
     config:

@@ -1371,6 +1371,55 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
                 null,
                 32,
             ],
+            [
+                'Safari/7534.20.8 CFNetwork/647 Darwin/11.0.0',
+                'Mac OS X',
+                '10.9.0',
+                'Apple Inc',
+                32,
+            ],
+            [
+                'Safari/7534.20.8 CFNetwork/595 Darwin/11.0.0',
+                'Mac OS X',
+                '10.8.0',
+                'Apple Inc',
+                32,
+            ],
+            [
+                'Safari/7534.20.8 CFNetwork/561 Darwin/11.0.0',
+                'Mac OS X',
+                '10.8.0',
+                'Apple Inc',
+                32,
+            ],
+            [
+                'Safari/7534.20.8 CFNetwork/433 Darwin/11.0.0',
+                'Mac OS X',
+                '10.5.0',
+                'Apple Inc',
+                32,
+            ],
+            [
+                'Safari/7534.20.8 CFNetwork/330 Darwin/11.0.0',
+                'Mac OS X',
+                '10.5.0',
+                'Apple Inc',
+                32,
+            ],
+            [
+                'Safari/7534.20.8 CFNetwork/129 Darwin/11.0.0',
+                'Mac OS X',
+                '10.4.0',
+                'Apple Inc',
+                32,
+            ],
+            [
+                'Safari/7534.20.8 CFNetwork/4.0 Darwin/11.0.0',
+                'Mac OS X',
+                '10.3.0',
+                'Apple Inc',
+                32,
+            ],
         ];
     }
 }
