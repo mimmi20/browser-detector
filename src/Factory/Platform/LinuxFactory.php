@@ -31,26 +31,26 @@ class LinuxFactory implements FactoryInterface
      */
     private $platforms = [
         'debian apt-http' => 'debian',
-        'linux mint' => 'linux mint',
-        'kubuntu' => 'kubuntu',
-        'ubuntu' => 'ubuntu',
-        'fedora' => 'fedora linux',
-        'redhat' => 'redhat linux',
-        'red hat' => 'redhat linux',
-        'debian' => 'debian',
-        'raspbian' => 'debian',
-        'centos' => 'cent os linux',
-        'cros' => 'chromeos',
-        'joli os' => 'joli os',
-        'mandriva' => 'mandriva linux',
-        'suse' => 'suse linux',
-        'gentoo' => 'gentoo linux',
-        'slackware' => 'slackware linux',
-        'ventana' => 'ventana linux',
-        'moblin' => 'moblin',
-        'zenwalk gnu' => 'zenwalk gnu linux',
-        'linux arm' => 'linux smartphone os (maemo)',
-        'linux/x2/r1' => 'linux smartphone os (maemo)',
+        'linux mint'      => 'linux mint',
+        'kubuntu'         => 'kubuntu',
+        'ubuntu'          => 'ubuntu',
+        'fedora'          => 'fedora linux',
+        'redhat'          => 'redhat linux',
+        'red hat'         => 'redhat linux',
+        'debian'          => 'debian',
+        'raspbian'        => 'debian',
+        'centos'          => 'cent os linux',
+        'cros'            => 'chromeos',
+        'joli os'         => 'joli os',
+        'mandriva'        => 'mandriva linux',
+        'suse'            => 'suse linux',
+        'gentoo'          => 'gentoo linux',
+        'slackware'       => 'slackware linux',
+        'ventana'         => 'ventana linux',
+        'moblin'          => 'moblin',
+        'zenwalk gnu'     => 'zenwalk gnu linux',
+        'linux arm'       => 'linux smartphone os (maemo)',
+        'linux/x2/r1'     => 'linux smartphone os (maemo)',
     ];
 
     /**
@@ -69,7 +69,7 @@ class LinuxFactory implements FactoryInterface
     /**
      * Gets the information about the platform by User Agent
      *
-     * @param string $useragent
+     * @param string           $useragent
      * @param \Stringy\Stringy $s
      *
      * @return \UaResult\Os\OsInterface

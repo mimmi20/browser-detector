@@ -17,9 +17,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
-use Psr\Log\NullLogger;
 use UaDeviceType\Type;
-use UaResult\Company\Company;
 use UaResult\Device\Device;
 
 /**

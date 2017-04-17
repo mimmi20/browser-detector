@@ -15,12 +15,9 @@ use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\EngineLoader;
-use BrowserDetector\Version\VersionFactory;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
-use Psr\Log\NullLogger;
-use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 
 /**

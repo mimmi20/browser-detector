@@ -42,7 +42,7 @@ class DarwinFactory implements Factory\FactoryInterface
     /**
      * Gets the information about the platform by User Agent
      *
-     * @param string $useragent
+     * @param string           $useragent
      * @param \Stringy\Stringy $s
      *
      * @return \UaResult\Os\OsInterface
