@@ -50,6 +50,7 @@ class LinuxFactory implements FactoryInterface
         'moblin' => 'moblin',
         'zenwalk gnu' => 'zenwalk gnu linux',
         'linux arm' => 'linux smartphone os (maemo)',
+        'linux/x2/r1' => 'linux smartphone os (maemo)',
     ];
 
     /**

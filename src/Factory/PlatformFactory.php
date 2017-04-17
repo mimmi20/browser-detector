@@ -103,6 +103,10 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('android', $useragent);
         }
 
+        if ($s->contains('commoncrawler', false)) {
+            return $this->loader->load('unknown', $useragent);
+        }
+
         if ($s->containsAny(['symbianos', 'symbos', 'symbian', 'series 60', 's60v3', 's60v5'], false)) {
             return $this->loader->load('symbian', $useragent);
         }
@@ -111,11 +115,11 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('nokia os', $useragent);
         }
 
-        if ($s->contains('Bada')) {
+        if ($s->contains('bada', false)) {
             return $this->loader->load('bada', $useragent);
         }
 
-        if ($s->contains('MeeGo')) {
+        if ($s->contains('meego', false)) {
             return $this->loader->load('meego', $useragent);
         }
 
@@ -123,7 +127,60 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('sailfishos', $useragent);
         }
 
-        if ($s->contains('android; linux arm', false)) {
+        if ($s->contains('cygwin', false)) {
+            return $this->loader->load('cygwin', $useragent);
+        }
+
+        if ($s->contains('netbsd', false)) {
+            return $this->loader->load('netbsd', $useragent);
+        }
+
+        if ($s->contains('openbsd', false)) {
+            return $this->loader->load('openbsd', $useragent);
+        }
+
+        if ($s->contains('dragonfly', false)) {
+            return $this->loader->load('dragonfly bsd', $useragent);
+        }
+
+        if ($s->contains('bsd four', false)) {
+            return $this->loader->load('bsd', $useragent);
+        }
+
+        if ($s->containsAny(['hp-ux', 'hpux'], false)) {
+            return $this->loader->load('hp-ux', $useragent);
+        }
+
+        if ($s->contains('irix', false)) {
+            return $this->loader->load('irix', $useragent);
+        }
+
+        if ($s->containsAny(['webos', 'hpwos'], false)) {
+            return $this->loader->load('webos', $useragent);
+        }
+
+        if ($s->contains('tizen', false)) {
+            return $this->loader->load('tizen', $useragent);
+        }
+
+        if ($s->contains('kfreebsd', false)) {
+            // Debian with the FreeBSD kernel -> it is not a linux
+            return $this->loader->load('debian with freebsd kernel', $useragent);
+        }
+
+        if ($s->contains('freebsd', false)) {
+            return $this->loader->load('freebsd', $useragent);
+        }
+
+        if ($s->contains('MIUI', true)) {
+            return $this->loader->load('miui os', $useragent);
+        }
+
+        if ($s->containsAny(['micromaxx650', 'dolfin/', 'yuanda50', 'wap browser', 'wap-browser'], false)) {
+            return $this->loader->load('java', $useragent);
+        }
+
+        if ((new Helper\AndroidOs($useragent))->isAndroid()) {
             return $this->loader->load('android', $useragent);
         }
 
@@ -131,7 +188,7 @@ class PlatformFactory implements FactoryInterface
             return (new Platform\LinuxFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['maemo', 'like android', 'linux/x2/r1', 'linux arm'], false)) {
+        if ($s->containsAny(['maemo', 'like android'], false)) {
             return $this->loader->load('linux smartphone os (maemo)', $useragent);
         }
 
@@ -139,25 +196,8 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('rim os', $useragent);
         }
 
-        if ($s->containsAny(['webos', 'hpwos'], false)) {
-            return $this->loader->load('webos', $useragent);
-        }
-
-        if ($s->contains('Tizen')) {
-            return $this->loader->load('tizen', $useragent);
-        }
-
         if ((new Helper\FirefoxOs($useragent))->isFirefoxOs()) {
             return $this->loader->load('firefoxos', $useragent);
-        }
-
-        if ($s->contains('kfreebsd', false)) {
-            // Debian with the FreeBSD kernel
-            return $this->loader->load('debian with freebsd kernel', $useragent);
-        }
-
-        if ($s->contains('freebsd', false)) {
-            return $this->loader->load('freebsd', $useragent);
         }
 
         if ($s->containsAny(['darwin', 'cfnetwork'], false)) {
@@ -166,22 +206,6 @@ class PlatformFactory implements FactoryInterface
 
         if ($s->contains('playstation', false)) {
             return $this->loader->load('cellos', $useragent);
-        }
-
-        if ($s->containsAny(['micromaxx650', 'dolfin/', 'yuanda50', 'wap browser', 'wap-browser'], false)) {
-            return $this->loader->load('java', $useragent);
-        }
-
-        if ($s->contains('commoncrawler', false)) {
-            return $this->loader->load('unknown', $useragent);
-        }
-
-        if ($s->contains('MIUI', true)) {
-            return $this->loader->load('miui os', $useragent);
-        }
-
-        if ((new Helper\AndroidOs($useragent))->isAndroid()) {
-            return $this->loader->load('android', $useragent);
         }
 
         if ((new Helper\Ios($useragent))->isIos()) {
@@ -216,36 +240,8 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('brew', $useragent);
         }
 
-        if ($s->contains('cygwin', false)) {
-            return $this->loader->load('cygwin', $useragent);
-        }
-
-        if ($s->contains('netbsd', false)) {
-            return $this->loader->load('netbsd', $useragent);
-        }
-
-        if ($s->contains('openbsd', false)) {
-            return $this->loader->load('openbsd', $useragent);
-        }
-
-        if ($s->contains('dragonfly', false)) {
-            return $this->loader->load('dragonfly bsd', $useragent);
-        }
-
-        if ($s->contains('bsd four', false)) {
-            return $this->loader->load('bsd', $useragent);
-        }
-
-        if ($s->containsAny(['hp-ux', 'hpux'], false)) {
-            return $this->loader->load('hp-ux', $useragent);
-        }
-
         if ($s->contains('beos', false)) {
             return $this->loader->load('beos', $useragent);
-        }
-
-        if ($s->contains('irix', false)) {
-            return $this->loader->load('irix', $useragent);
         }
 
         if ($s->contains('solaris', false)) {

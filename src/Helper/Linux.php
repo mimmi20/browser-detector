@@ -71,6 +71,9 @@ class Linux
             'jobboerse',
             'hp-ux',
             'hpux',
+            'irix',
+            'hpwos',
+            'webos',
         ];
 
         if ($s->containsAny($noLinux, false)) {
@@ -85,6 +88,7 @@ class Linux
             // linux systems
             'linux',
             'debian',
+            'raspbian',
             'ubuntu',
             'suse',
             'fedora',
