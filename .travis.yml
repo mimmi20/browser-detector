@@ -15,6 +15,17 @@ env:
 
 matrix:
   include:
+    # Use the newer stack for HHVM as HHVM does not support Precise anymore since a long time and so Precise has an outdated version
+    - php: hhvm
+      env: COMPOSER_FLAGS="--ignore-platform-reqs"
+      sudo: required
+      dist: trusty
+      group: edge
+    - php: 7.1
+      env: COVERAGE=yes
+      sudo: required
+      dist: trusty
+      group: edge
     - php: 7.1
       env: COVERAGE=yes
     - php: 7.1
