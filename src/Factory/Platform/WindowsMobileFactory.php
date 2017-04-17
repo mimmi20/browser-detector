@@ -60,10 +60,6 @@ class WindowsMobileFactory implements Factory\FactoryInterface
             return $this->loader->load('windows mobile os', $useragent);
         }
 
-        if (preg_match('/mobile version([\d]+)/', $useragent, $matchesMobile) && $matchesMobile[1] >= 70) {
-            return $this->loader->load('windows phone', $useragent);
-        }
-
         if (preg_match('/Windows Mobile ([\d]+)/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
             return $this->loader->load('windows phone', $useragent);
         }
