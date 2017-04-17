@@ -46,10 +46,6 @@ class Windows
             return false;
         }
 
-        if ($s->containsAll(['windows nt', 'arm;'], false)) {
-            return false;
-        }
-
         // ignore mobile safari token if windows nt token is available
         if ($s->contains('windows nt', false)
             && $s->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
@@ -134,10 +130,6 @@ class Windows
 
         $s = new Stringy($this->useragent);
 
-        if ($s->containsAll(['windows nt', 'arm;'], false)) {
-            return true;
-        }
-
         $mobileWindows = [
             'windows ce',
             'windows phone',
@@ -150,6 +142,7 @@ class Windows
             'wpdesktop',
             'mobile version',
             'lumia',
+            ' wds ',
         ];
 
         if (!$s->containsAny($mobileWindows, false)) {

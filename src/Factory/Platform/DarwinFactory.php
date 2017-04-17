@@ -49,239 +49,143 @@ class DarwinFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if (false !== mb_strpos($useragent, 'CFNetwork/808.2')) {
+        if ($s->contains('cfnetwork/808.2', false)) {
             return $this->loader->load('ios', $useragent, '10.2');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/808.1')) {
+        if ($s->contains('cfnetwork/808.1', false)) {
             return $this->loader->load('ios', $useragent, '10.1');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/808')) {
+        if ($s->contains('cfnetwork/808', false)) {
             return $this->loader->load('ios', $useragent, '10.0');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/807')) {
+        if ($s->containsAny(['cfnetwork/807', 'cfnetwork/802', 'cfnetwork/798', 'cfnetwork/796'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.12');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/802')) {
-            return $this->loader->load('mac os x', $useragent, '10.12');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/798')) {
-            return $this->loader->load('mac os x', $useragent, '10.12');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/796')) {
-            return $this->loader->load('mac os x', $useragent, '10.12');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/790')) {
+        if ($s->contains('cfnetwork/790', false)) {
             return $this->loader->load('ios', $useragent, '10.0');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/760')) {
+        if ($s->contains('cfnetwork/760', false)) {
             return $this->loader->load('mac os x', $useragent, '10.11');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/758')) {
+        if ($s->contains('cfnetwork/758', false)) {
             return $this->loader->load('ios', $useragent, '9.0');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/757')) {
+        if ($s->contains('cfnetwork/757', false)) {
             return $this->loader->load('ios', $useragent, '9.0');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/720')) {
+        if ($s->containsAny(['cfnetwork/720', 'cfnetwork/718', 'cfnetwork/714', 'cfnetwork/709', 'cfnetwork/708', 'cfnetwork/705', 'cfnetwork/699', 'cfnetwork/696'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.10');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/718')) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/714')) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/711.5')) {
+        if ($s->contains('cfnetwork/711.5', false)) {
             return $this->loader->load('ios', $useragent, '8.4');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/711.4')) {
+        if ($s->contains('cfnetwork/711.4', false)) {
             return $this->loader->load('ios', $useragent, '8.4');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/711.3')) {
+        if ($s->contains('cfnetwork/711.3', false)) {
             return $this->loader->load('ios', $useragent, '8.3');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/711.2')) {
+        if ($s->contains('cfnetwork/711.2', false)) {
             return $this->loader->load('ios', $useragent, '8.2');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/711.1')) {
+        if ($s->contains('cfnetwork/711.1', false)) {
             return $this->loader->load('ios', $useragent, '8.1');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/711.0')) {
+        if ($s->contains('cfnetwork/711.0', false)) {
             return $this->loader->load('ios', $useragent, '8.0');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/709')) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/708')) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/705')) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/699')) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/696')) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/673')) {
+        if ($s->containsAny(['cfnetwork/673', 'cfnetwork/647'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.9');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/672.1')) {
+        if ($s->contains('cfnetwork/672.1', false)) {
             return $this->loader->load('ios', $useragent, '7.1');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/672.0')) {
+        if ($s->contains('cfnetwork/672.0', false)) {
             return $this->loader->load('ios', $useragent, '7.0');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/647')) {
-            return $this->loader->load('mac os x', $useragent, '10.9');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/609.1')) {
+        if ($s->contains('cfnetwork/609.1', false)) {
             return $this->loader->load('ios', $useragent, '6.1');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/609')) {
+        if ($s->contains('cfnetwork/609', false)) {
             return $this->loader->load('ios', $useragent, '6.0');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/602')) {
+        if ($s->contains('cfnetwork/602', false)) {
             return $this->loader->load('ios', $useragent, '6.0');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/596')) {
+        if ($s->containsAny(['cfnetwork/596', 'cfnetwork/595', 'cfnetwork/561'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.8');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/595')) {
-            return $this->loader->load('mac os x', $useragent, '10.8');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/561')) {
-            return $this->loader->load('mac os x', $useragent, '10.8');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/548.1')) {
+        if ($s->contains('cfnetwork/548.1', false)) {
             return $this->loader->load('ios', $useragent, '5.1');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/548.0')) {
+        if ($s->contains('cfnetwork/548.0', false)) {
             return $this->loader->load('ios', $useragent, '5.0');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/520')) {
+        if ($s->containsAny(['cfnetwork/520', 'cfnetwork/515'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.7');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/515')) {
-            return $this->loader->load('mac os x', $useragent, '10.7');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/485.13')) {
+        if ($s->contains('cfnetwork/485.13', false)) {
             return $this->loader->load('ios', $useragent, '4.3');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/485.12')) {
+        if ($s->contains('cfnetwork/485.12', false)) {
             return $this->loader->load('ios', $useragent, '4.2');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/485.10')) {
+        if ($s->contains('cfnetwork/485.10', false)) {
             return $this->loader->load('ios', $useragent, '4.1');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/485.2')) {
+        if ($s->contains('cfnetwork/485.2', false)) {
             return $this->loader->load('ios', $useragent, '4.0');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/467.12')) {
+        if ($s->contains('cfnetwork/467.12', false)) {
             return $this->loader->load('ios', $useragent, '3.2');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/459')) {
+        if ($s->contains('cfnetwork/459', false)) {
             return $this->loader->load('ios', $useragent, '3.1');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/454')) {
+        if ($s->contains('cfnetwork/454', false)) {
             return $this->loader->load('mac os x', $useragent, '10.6');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/438')) {
+        if ($s->containsAny(['cfnetwork/438', 'cfnetwork/433', 'cfnetwork/422', 'cfnetwork/339', 'cfnetwork/330', 'cfnetwork/221', 'cfnetwork/220', 'cfnetwork/217'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.5');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/433')) {
-            return $this->loader->load('mac os x', $useragent, '10.5');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/422')) {
-            return $this->loader->load('mac os x', $useragent, '10.5');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/339')) {
-            return $this->loader->load('mac os x', $useragent, '10.5');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/330')) {
-            return $this->loader->load('mac os x', $useragent, '10.5');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/221')) {
-            return $this->loader->load('mac os x', $useragent, '10.5');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/220')) {
-            return $this->loader->load('mac os x', $useragent, '10.5');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/217')) {
-            return $this->loader->load('mac os x', $useragent, '10.5');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/129')) {
+        if ($s->containsAny(['cfnetwork/129', 'cfnetwork/128'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.4');
         }
 
-        if (false !== mb_strpos($useragent, 'CFNetwork/128')) {
-            return $this->loader->load('mac os x', $useragent, '10.4');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/4.0')) {
-            return $this->loader->load('mac os x', $useragent, '10.3');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/1.2')) {
-            return $this->loader->load('mac os x', $useragent, '10.3');
-        }
-
-        if (false !== mb_strpos($useragent, 'CFNetwork/1.1')) {
+        if ($s->containsAny(['cfnetwork/4.0', 'cfnetwork/1.2', 'cfnetwork/1.1'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.3');
         }
 

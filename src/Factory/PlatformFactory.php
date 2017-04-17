@@ -50,57 +50,14 @@ class PlatformFactory implements FactoryInterface
     {
         $s = new Stringy($useragent);
 
-        $isWindows     = false;
         $windowsHelper = new Helper\Windows($useragent);
 
-        if (!$windowsHelper->isMobileWindows()
-            && $windowsHelper->isWindows()
-        ) {
-            $isWindows = true;
-        }
-
-        if ($windowsHelper->isMobileWindows()
-            && $s->containsAny(['Windows CE', 'Windows Mobile; WCE'])
-        ) {
-            return $this->loader->load('windows ce', $useragent);
-        }
-
-        if (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop| wds )/', $useragent)) {
-            $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $useragent, $matchesPhone);
-
-            if (!$doMatchPhone || $matchesPhone[1] >= 7) {
-                return $this->loader->load('windows phone', $useragent);
-            }
-
-            return $this->loader->load('windows mobile os', $useragent);
-        }
-
         if ($windowsHelper->isMobileWindows()) {
-            if (preg_match('/mobile version([\d]+)/', $useragent, $matchesMobile) && $matchesMobile[1] >= 70) {
-                return $this->loader->load('windows phone', $useragent);
-            }
-
-            if (preg_match('/Windows Mobile ([\d]+)/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
-                return $this->loader->load('windows phone', $useragent);
-            }
-
-            if (preg_match('/Windows NT ([\d\.]+); ARM; Lumia/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
-                return $this->loader->load('windows phone', $useragent);
-            }
-
-            return $this->loader->load('windows mobile os', $useragent);
+            return (new Platform\WindowsMobileFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($isWindows && $s->contains('ARM;')) {
-            return $this->loader->load('windows rt', $useragent);
-        }
-
-        if ($isWindows) {
+        if ($windowsHelper->isWindows()) {
             return (new Platform\WindowsFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/Linux; U; (\d+[\d\.]+)/', $useragent, $matches) && $matches[1] >= 4) {
-            return $this->loader->load('android', $useragent);
         }
 
         if ($s->contains('commoncrawler', false)) {
@@ -109,10 +66,6 @@ class PlatformFactory implements FactoryInterface
 
         if ($s->containsAny(['symbianos', 'symbos', 'symbian', 'series 60', 's60v3', 's60v5'], false)) {
             return $this->loader->load('symbian', $useragent);
-        }
-
-        if ($s->contains('series40', false)) {
-            return $this->loader->load('nokia os', $useragent);
         }
 
         if ($s->contains('bada', false)) {
@@ -184,6 +137,14 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('android', $useragent);
         }
 
+        if ($s->contains('aix', false)) {
+            return $this->loader->load('aix', $useragent);
+        }
+
+        if ($s->contains('openvms', false)) {
+            return $this->loader->load('openvms', $useragent);
+        }
+
         if ((new Helper\Linux($useragent))->isLinux()) {
             return (new Platform\LinuxFactory($this->loader))->detect($useragent, $s);
         }
@@ -204,19 +165,19 @@ class PlatformFactory implements FactoryInterface
             return (new Platform\DarwinFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('playstation', false)) {
-            return $this->loader->load('cellos', $useragent);
-        }
-
         if ((new Helper\Ios($useragent))->isIos()) {
             return $this->loader->load('ios', $useragent);
+        }
+
+        if ($s->containsAny(['series40', 'nokia'], false)) {
+            return $this->loader->load('nokia os', $useragent);
         }
 
         if (preg_match('/\b(profile)\b/i', $useragent)) {
             return $this->loader->load('java', $useragent);
         }
 
-        if ($s->containsAny(['macintosh', 'mac os x', 'os=mac 10'], false)) {
+        if ($s->containsAny(['mac os x', 'os=mac 10'], false)) {
             return $this->loader->load('mac os x', $useragent);
         }
 
@@ -224,12 +185,12 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('macintosh', $useragent);
         }
 
-        if ($s->contains('rim tablet', false)) {
-            return $this->loader->load('rim tablet os', $useragent);
+        if ($s->contains('macintosh', false)) {
+            return $this->loader->load('mac os x', $useragent);
         }
 
-        if ($s->contains('aix', false)) {
-            return $this->loader->load('aix', $useragent);
+        if ($s->contains('rim tablet', false)) {
+            return $this->loader->load('rim tablet os', $useragent);
         }
 
         if ($s->contains('amigaos', false)) {
@@ -256,10 +217,6 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('risc os', $useragent);
         }
 
-        if ($s->contains('openvms', false)) {
-            return $this->loader->load('openvms', $useragent);
-        }
-
         if ($s->containsAny(['tru64 unix', 'digital unix', 'osf1'], false)) {
             return $this->loader->load('tru64 unix', $useragent);
         }
@@ -278,14 +235,6 @@ class PlatformFactory implements FactoryInterface
 
         if ($s->containsAny(['nintendo wii', 'nintendo 3ds'], false)) {
             return $this->loader->load('nintendo os', $useragent);
-        }
-
-        if ($s->contains('nokia', false)) {
-            return $this->loader->load('nokia os', $useragent);
-        }
-
-        if ($s->contains('ruby', false)) {
-            return $this->loader->load('ruby', $useragent);
         }
 
         if ($s->containsAny(['palm os', 'palmsource'], false)) {

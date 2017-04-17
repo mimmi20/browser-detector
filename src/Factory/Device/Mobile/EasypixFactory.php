@@ -54,12 +54,10 @@ class EasypixFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('junior 4.0', false)) {
-            return $this->loader->load('junior 4.0', $useragent);
-        }
-
-        if ($s->contains('easypad 970', false)) {
-            return $this->loader->load('easypad 970', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general easypix device', $useragent);

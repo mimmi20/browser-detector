@@ -617,7 +617,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('avast safezone', $useragent);
         }
 
-        if ($s->contains('Wire', false)) {
+        if ($s->contains('wire', false)) {
             return $this->loader->load('wire app', $useragent);
         }
 
@@ -2087,7 +2087,7 @@ class BrowserFactory implements FactoryInterface
         }
 
         if (preg_match('/^Mozilla\/5\.0 \(.*rv:\d+\.\d+.*\) Gecko\/.*\//', $useragent)
-            && !preg_match('/(msie|android)/i', $useragent, $matches)
+            && !preg_match('/(msie|android)/i', $useragent)
         ) {
             return $this->loader->load('netscape', $useragent);
         }
