@@ -142,6 +142,7 @@ class Windows
             'wpdesktop',
             'mobile version',
             'lumia',
+            ' wds ',
         ];
 
         if (!$s->containsAny($mobileWindows, false)) {
