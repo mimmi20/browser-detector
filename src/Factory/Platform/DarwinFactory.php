@@ -61,19 +61,7 @@ class DarwinFactory implements Factory\FactoryInterface
             return $this->loader->load('ios', $useragent, '10.0');
         }
 
-        if ($s->contains('cfnetwork/807', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.12');
-        }
-
-        if ($s->contains('cfnetwork/802', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.12');
-        }
-
-        if ($s->contains('cfnetwork/798', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.12');
-        }
-
-        if ($s->contains('cfnetwork/796', false)) {
+        if ($s->containsAny(['cfnetwork/807', 'cfnetwork/802', 'cfnetwork/798', 'cfnetwork/796'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.12');
         }
 
@@ -93,15 +81,7 @@ class DarwinFactory implements Factory\FactoryInterface
             return $this->loader->load('ios', $useragent, '9.0');
         }
 
-        if ($s->contains('cfnetwork/720', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if ($s->contains('cfnetwork/718', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if ($s->contains('cfnetwork/714', false)) {
+        if ($s->containsAny(['cfnetwork/720', 'cfnetwork/718', 'cfnetwork/714', 'cfnetwork/709', 'cfnetwork/708', 'cfnetwork/705', 'cfnetwork/699', 'cfnetwork/696'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.10');
         }
 
@@ -129,27 +109,7 @@ class DarwinFactory implements Factory\FactoryInterface
             return $this->loader->load('ios', $useragent, '8.0');
         }
 
-        if ($s->contains('cfnetwork/709', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if ($s->contains('cfnetwork/708', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if ($s->contains('cfnetwork/705', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if ($s->contains('cfnetwork/699', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if ($s->contains('cfnetwork/696', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if ($s->contains('cfnetwork/673', false)) {
+        if ($s->containsAny(['cfnetwork/673', 'cfnetwork/647'], false)) {
             return $this->loader->load('mac os x', $useragent, '10.9');
         }
 
@@ -159,10 +119,6 @@ class DarwinFactory implements Factory\FactoryInterface
 
         if ($s->contains('cfnetwork/672.0', false)) {
             return $this->loader->load('ios', $useragent, '7.0');
-        }
-
-        if ($s->contains('cfnetwork/647', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.9');
         }
 
         if ($s->contains('cfnetwork/609.1', false)) {

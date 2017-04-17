@@ -90,6 +90,13 @@ class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
+                'this is a fake ua to trigger the fallback',
+                'Darwin',
+                '0.0.0',
+                'Apple Inc',
+                32,
+            ],
+            [
                 'Safari/12602.1.50.0.2 CFNetwork/807.0.1 Darwin/16.0.0 (x86_64)',
                 'macOS',
                 '10.12.0',
