@@ -53,7 +53,7 @@ class BrowserFactory implements FactoryInterface
     ) {
         $s = new Stringy($useragent);
 
-        if ($s->contains('RevIP.info site analyzer', false)) {
+        if ($s->contains('revip.info site analyzer', false)) {
             return $this->loader->load('reverse ip lookup', $useragent);
         }
 
@@ -61,90 +61,16 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('reddit pic scraper', $useragent);
         }
 
-        if ($s->contains('Mozilla crawl', false)) {
+        if ($s->contains('mozilla crawl', false)) {
             return $this->loader->load('mozilla crawler', $useragent);
         }
 
-        if ($s->startsWith('[FBAN', false)) {
+        if ($s->startsWith('[fban', false)) {
             return $this->loader->load('facebook app', $useragent);
         }
 
-        if ($s->contains('UCBrowserHD', false)) {
+        if ($s->contains('ucbrowserhd', false)) {
             return $this->loader->load('uc browser hd', $useragent);
-        }
-
-        if ($s->containsAny(['ucbrowser', 'uc browser', 'ucweb'], false) && $s->contains('opera mini', false)) {
-            return $this->loader->load('ucbrowser', $useragent);
-        }
-
-        if ($s->containsAny(['opera mini', 'opios'], false)) {
-            return $this->loader->load('opera mini', $useragent);
-        }
-
-        if ($s->contains('opera mobi', false)
-            || ($s->containsAny(['opera', 'opr'], false) && $s->containsAny(['Android', 'MTK', 'MAUI', 'SAMSUNG', 'Windows CE', 'SymbOS'], false))
-        ) {
-            return $this->loader->load('opera mobile', $useragent);
-        }
-
-        if ($s->containsAny(['ucbrowser', 'uc browser', 'ucweb'], false)) {
-            return $this->loader->load('ucbrowser', $useragent);
-        }
-
-        if ($s->contains('IC OpenGraph Crawler', false)) {
-            return $this->loader->load('ibm connections', $useragent);
-        }
-
-        if ($s->contains('coast', false)) {
-            return $this->loader->load('coast', $useragent);
-        }
-
-        if ($s->containsAny(['opera', 'opr'], false)) {
-            return $this->loader->load('opera', $useragent);
-        }
-
-        if ($s->contains('iCabMobile', false)) {
-            return $this->loader->load('icab mobile', $useragent);
-        }
-
-        if ($s->contains('iCab', false)) {
-            return $this->loader->load('icab', $useragent);
-        }
-
-        if ($s->contains('HggH PhantomJS Screenshoter', false)) {
-            return $this->loader->load('hggh screenshot system with phantomjs', $useragent);
-        }
-
-        if ($s->contains('bl.uk_lddc_bot', false)) {
-            return $this->loader->load('bl.uk_lddc_bot', $useragent);
-        }
-
-        if ($s->contains('phantomas', false)) {
-            return $this->loader->load('phantomas', $useragent);
-        }
-
-        if ($s->contains('Seznam screenshot-generator', false)) {
-            return $this->loader->load('seznam screenshot generator', $useragent);
-        }
-
-        if ($s->contains('PhantomJS', false)) {
-            return $this->loader->load('phantomjs', $useragent);
-        }
-
-        if ($s->contains('YaBrowser', false)) {
-            return $this->loader->load('yabrowser', $useragent);
-        }
-
-        if ($s->contains('Kamelio', false)) {
-            return $this->loader->load('kamelio app', $useragent);
-        }
-
-        if ($s->contains('FBAV', false)) {
-            return $this->loader->load('facebook app', $useragent);
-        }
-
-        if ($s->contains('ACHEETAHI', false)) {
-            return $this->loader->load('cm browser', $useragent);
         }
 
         if ($s->contains('flyflow', false)) {
@@ -163,7 +89,81 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('baidu browser mini', $useragent);
         }
 
-        if ($s->contains('Puffin', false)) {
+        if ($s->containsAny(['ucbrowser', 'ubrowser', 'uc browser', 'ucweb'], false) && $s->contains('opera mini', false)) {
+            return $this->loader->load('ucbrowser', $useragent);
+        }
+
+        if ($s->containsAny(['opera mini', 'opios'], false)) {
+            return $this->loader->load('opera mini', $useragent);
+        }
+
+        if ($s->contains('opera mobi', false)
+            || ($s->containsAny(['opera', 'opr'], false) && $s->containsAny(['android', 'mtk', 'maui', 'samsung', 'windows ce', 'symbos'], false))
+        ) {
+            return $this->loader->load('opera mobile', $useragent);
+        }
+
+        if ($s->containsAny(['ucbrowser', 'ubrowser', 'uc browser', 'ucweb'], false)) {
+            return $this->loader->load('ucbrowser', $useragent);
+        }
+
+        if ($s->contains('ic opengraph crawler', false)) {
+            return $this->loader->load('ibm connections', $useragent);
+        }
+
+        if ($s->contains('coast', false)) {
+            return $this->loader->load('coast', $useragent);
+        }
+
+        if ($s->containsAny(['opera', 'opr'], false)) {
+            return $this->loader->load('opera', $useragent);
+        }
+
+        if ($s->contains('icabmobile', false)) {
+            return $this->loader->load('icab mobile', $useragent);
+        }
+
+        if ($s->contains('icab', false)) {
+            return $this->loader->load('icab', $useragent);
+        }
+
+        if ($s->contains('hggh phantomjs screenshoter', false)) {
+            return $this->loader->load('hggh screenshot system with phantomjs', $useragent);
+        }
+
+        if ($s->contains('bl.uk_lddc_bot', false)) {
+            return $this->loader->load('bl.uk_lddc_bot', $useragent);
+        }
+
+        if ($s->contains('phantomas', false)) {
+            return $this->loader->load('phantomas', $useragent);
+        }
+
+        if ($s->contains('seznam screenshot-generator', false)) {
+            return $this->loader->load('seznam screenshot generator', $useragent);
+        }
+
+        if ($s->contains('phantomjs', false)) {
+            return $this->loader->load('phantomjs', $useragent);
+        }
+
+        if ($s->contains('yabrowser', false)) {
+            return $this->loader->load('yabrowser', $useragent);
+        }
+
+        if ($s->contains('kamelio', false)) {
+            return $this->loader->load('kamelio app', $useragent);
+        }
+
+        if ($s->contains('fbav', false)) {
+            return $this->loader->load('facebook app', $useragent);
+        }
+
+        if ($s->contains('acheetahi', false)) {
+            return $this->loader->load('cm browser', $useragent);
+        }
+
+        if ($s->contains('puffin', false)) {
             return $this->loader->load('puffin', $useragent);
         }
 
@@ -171,11 +171,11 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('stagefright', $useragent);
         }
 
-        if ($s->contains('SamsungBrowser', false)) {
+        if ($s->contains('samsungbrowser', false)) {
             return $this->loader->load('samsungbrowser', $useragent);
         }
 
-        if ($s->contains('Silk', false)) {
+        if ($s->contains('silk', false)) {
             return $this->loader->load('silk', $useragent);
         }
 
@@ -183,59 +183,59 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('coc_coc_browser', $useragent);
         }
 
-        if ($s->contains('NaverMatome', false)) {
+        if ($s->contains('navermatome', false)) {
             return $this->loader->load('matome', $useragent);
         }
 
-        if ($s->contains('FlipboardProxy', false)) {
+        if ($s->contains('flipboardproxy', false)) {
             return $this->loader->load('flipboardproxy', $useragent);
         }
 
-        if ($s->contains('Flipboard', false)) {
+        if ($s->contains('flipboard', false)) {
             return $this->loader->load('flipboard app', $useragent);
         }
 
-        if ($s->contains('Seznam.cz', false)) {
+        if ($s->contains('seznam.cz', false)) {
             return $this->loader->load('seznam browser', $useragent);
         }
 
-        if ($s->contains('Aviator', false)) {
+        if ($s->contains('aviator', false)) {
             return $this->loader->load('aviator', $useragent);
         }
 
-        if ($s->contains('NetFrontLifeBrowser', false)) {
+        if ($s->contains('netfrontlifebrowser', false)) {
             return $this->loader->load('netfrontlifebrowser', $useragent);
         }
 
-        if ($s->contains('IceDragon', false)) {
+        if ($s->contains('icedragon', false)) {
             return $this->loader->load('icedragon', $useragent);
         }
 
-        if ($s->contains('Dragon', false) && !$s->contains('DragonFly', false)) {
+        if ($s->contains('dragon', false) && !$s->contains('dragonfly', false)) {
             return $this->loader->load('dragon', $useragent);
         }
 
-        if ($s->contains('Beamrise', false)) {
+        if ($s->contains('beamrise', false)) {
             return $this->loader->load('beamrise', $useragent);
         }
 
-        if ($s->contains('Diglo', false)) {
+        if ($s->contains('diglo', false)) {
             return $this->loader->load('diglo', $useragent);
         }
 
-        if ($s->contains('APUSBrowser', false)) {
+        if ($s->contains('apusbrowser', false)) {
             return $this->loader->load('apusbrowser', $useragent);
         }
 
-        if ($s->contains('Chedot', false)) {
+        if ($s->contains('chedot', false)) {
             return $this->loader->load('chedot', $useragent);
         }
 
-        if ($s->contains('Qword', false)) {
+        if ($s->contains('qword', false)) {
             return $this->loader->load('qword browser', $useragent);
         }
 
-        if ($s->contains('Iridium', false)) {
+        if ($s->contains('iridium', false)) {
             return $this->loader->load('iridium browser', $useragent);
         }
 
@@ -243,7 +243,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('avant', $useragent);
         }
 
-        if ($s->contains('MxNitro', false)) {
+        if ($s->contains('mxnitro', false)) {
             return $this->loader->load('maxthon nitro', $useragent);
         }
 
@@ -255,19 +255,19 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('superbird', $useragent);
         }
 
-        if ($s->contains('TinyBrowser', false)) {
+        if ($s->contains('tinybrowser', false)) {
             return $this->loader->load('tinybrowser', $useragent);
         }
 
-        if ($s->contains('MicroMessenger', false)) {
+        if ($s->contains('micromessenger', false)) {
             return $this->loader->load('wechat app', $useragent);
         }
 
-        if ($s->contains('MQQBrowser/Mini', false)) {
+        if ($s->contains('mqqbrowser/mini', false)) {
             return $this->loader->load('qqbrowser mini', $useragent);
         }
 
-        if ($s->contains('MQQBrowser', false)) {
+        if ($s->contains('mqqbrowser', false)) {
             return $this->loader->load('qqbrowser', $useragent);
         }
 
