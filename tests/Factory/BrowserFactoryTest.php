@@ -13,16 +13,14 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\NormalizerFactory;
+use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\PlatformLoader;
-use BrowserDetector\Version\VersionFactory;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
-use Psr\Log\NullLogger;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
-use BrowserDetector\Factory\PlatformFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -55,7 +53,7 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
         $loader       = new BrowserLoader($this->cache);
         $this->object = new BrowserFactory($loader);
 
-        $platformLoader       = new PlatformLoader($this->cache);
+        $platformLoader        = new PlatformLoader($this->cache);
         $this->platformFactory = new PlatformFactory($platformLoader);
     }
 
