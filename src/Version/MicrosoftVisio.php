@@ -31,7 +31,7 @@ class MicrosoftVisio implements VersionCacheFactoryInterface
     public function detectVersion($useragent)
     {
         $doMatch = preg_match(
-            '/Visio(\/| )([\d\.]+)/',
+            '/Visio[\/ ]([\d\.]+)/',
             $useragent,
             $matches
         );

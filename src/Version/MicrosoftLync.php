@@ -31,7 +31,7 @@ class MicrosoftLync implements VersionCacheFactoryInterface
     public function detectVersion($useragent)
     {
         $doMatch = preg_match(
-            '/Lync(\/| )([\d\.]+)/',
+            '/Lync[\/ ]([\d\.]+)/',
             $useragent,
             $matches
         );

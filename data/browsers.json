@@ -2134,7 +2134,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "CoolNovoChromePlus"
+        "ChromePlus"
       ]
     },
     "engine": "unknown"
@@ -5779,10 +5779,8 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Kenshoo"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },
@@ -7822,7 +7820,7 @@
     "engine": "gecko"
   },
   "netscape navigator": {
-    "name": "Netscape Navigator",
+    "name": "Navigator",
     "manufacturer": "Netscape",
     "pdfSupport": true,
     "rssSupport": false,

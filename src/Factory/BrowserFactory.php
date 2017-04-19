@@ -283,15 +283,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('wkbrowser', $useragent);
         }
 
-        if ($s->contains('Mb2345Browser', false)) {
+        if ($s->contains('mb2345browser', false)) {
             return $this->loader->load('2345 browser', $useragent);
         }
 
-        if ($s->containsAll(['Chrome', 'Version'], false)) {
+        if ($s->containsAll(['chrome', 'version'], false)) {
             return $this->loader->load('android webview', $useragent);
         }
 
-        if ($s->containsAll(['Safari', 'Version', 'Tizen'])) {
+        if ($s->containsAll(['safari', 'version', 'tizen'], false)) {
             return $this->loader->load('samsung webview', $useragent);
         }
 
@@ -299,19 +299,19 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('cybeye', $useragent);
         }
 
-        if ($s->contains('RebelMouse', false)) {
+        if ($s->contains('rebelmouse', false)) {
             return $this->loader->load('rebelmouse', $useragent);
         }
 
-        if ($s->contains('SeaMonkey', false)) {
+        if ($s->contains('seamonkey', false)) {
             return $this->loader->load('seamonkey', $useragent);
         }
 
-        if ($s->contains('Jobboerse', false)) {
+        if ($s->contains('jobboerse', false)) {
             return $this->loader->load('jobboerse bot', $useragent);
         }
 
-        if ($s->contains('Navigator', false)) {
+        if ($s->contains('navigator', false)) {
             return $this->loader->load('netscape navigator', $useragent);
         }
 
@@ -323,15 +323,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('internet explorer', $useragent);
         }
 
-        if ($s->contains('Windows-RSS-Platform', false)) {
+        if ($s->contains('windows-rss-platform', false)) {
             return $this->loader->load('windows-rss-platform', $useragent);
         }
 
-        if ($s->contains('MarketwireBot', false)) {
+        if ($s->contains('marketwirebot', false)) {
             return $this->loader->load('marketwirebot', $useragent);
         }
 
-        if ($s->contains('GoogleToolbar', false)) {
+        if ($s->contains('googletoolbar', false)) {
             return $this->loader->load('google toolbar', $useragent);
         }
 
@@ -339,7 +339,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('netscape', $useragent);
         }
 
-        if ($s->contains('LSSRocketCrawler', false)) {
+        if ($s->contains('lssrocketcrawler', false)) {
             return $this->loader->load('lightspeed systems rocketcrawler', $useragent);
         }
 
@@ -347,27 +347,27 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('lightspeed systems crawler', $useragent);
         }
 
-        if ($s->contains('SL Commerce Client', false)) {
+        if ($s->contains('sl commerce client', false)) {
             return $this->loader->load('second live commerce client', $useragent);
         }
 
-        if ($s->containsAny(['IEMobile', 'WPDesktop', 'ZuneWP7', 'XBLWP7'], false)) {
+        if ($s->containsAny(['iemobile', 'wpdesktop', 'zunewp7', 'xblwp7'], false)) {
             return $this->loader->load('iemobile', $useragent);
         }
 
-        if ($s->contains('BingPreview', false)) {
+        if ($s->contains('bingpreview', false)) {
             return $this->loader->load('bing preview', $useragent);
         }
 
-        if ($s->contains('360Spider', false)) {
+        if ($s->contains('360spider', false)) {
             return $this->loader->load('360spider', $useragent);
         }
 
-        if ($s->contains('Outlook-Express', false)) {
+        if ($s->contains('outlook-express', false)) {
             return $this->loader->load('outlook-express', $useragent);
         }
 
-        if ($s->contains('Outlook', false)) {
+        if ($s->contains('outlook', false)) {
             return $this->loader->load('outlook', $useragent);
         }
 
@@ -375,15 +375,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('office', $useragent);
         }
 
-        if ($s->contains('MSOffice', false)) {
+        if ($s->contains('msoffice', false)) {
             return $this->loader->load('office', $useragent);
         }
 
-        if ($s->contains('Microsoft Office Protocol Discovery', false)) {
+        if ($s->contains('microsoft office protocol discovery', false)) {
             return $this->loader->load('ms opd', $useragent);
         }
 
-        if ($s->contains('excel', false)) {
+        if ($s->containsAny(['office excel', 'microsoft excel'], false)) {
             return $this->loader->load('excel', $useragent);
         }
 
@@ -391,35 +391,35 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('powerpoint', $useragent);
         }
 
-        if ($s->contains('WordPress', false)) {
+        if ($s->contains('wordpress', false)) {
             return $this->loader->load('wordpress', $useragent);
         }
 
-        if ($s->contains('Word', false)) {
+        if ($s->containsAny(['office word', 'microsoft word'], false)) {
             return $this->loader->load('word', $useragent);
         }
 
-        if ($s->contains('OneNote', false)) {
+        if ($s->containsAny(['office onenote', 'microsoft onenote'], false)) {
             return $this->loader->load('onenote', $useragent);
         }
 
-        if ($s->contains('Visio', false)) {
+        if ($s->containsAny(['office visio', 'microsoft visio'], false)) {
             return $this->loader->load('visio', $useragent);
         }
 
-        if ($s->contains('Access', false)) {
+        if ($s->containsAny(['office access', 'microsoft access'], false)) {
             return $this->loader->load('access', $useragent);
         }
 
-        if ($s->contains('Lync', false)) {
+        if ($s->contains('lync', false)) {
             return $this->loader->load('lync', $useragent);
         }
 
-        if ($s->contains('Office SyncProc', false)) {
+        if ($s->contains('office syncproc', false)) {
             return $this->loader->load('office syncproc', $useragent);
         }
 
-        if ($s->contains('Office Upload Center', false)) {
+        if ($s->contains('office upload center', false)) {
             return $this->loader->load('office upload center', $useragent);
         }
 
@@ -431,11 +431,11 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('office', $useragent);
         }
 
-        if ($s->contains('Crazy Browser', false)) {
+        if ($s->contains('crazy browser', false)) {
             return $this->loader->load('crazy browser', $useragent);
         }
 
-        if ($s->contains('Deepnet Explorer', false)) {
+        if ($s->contains('deepnet explorer', false)) {
             return $this->loader->load('deepnet explorer', $useragent);
         }
 
@@ -443,19 +443,19 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('kkman', $useragent);
         }
 
-        if ($s->contains('Lunascape', false)) {
+        if ($s->contains('lunascape', false)) {
             return $this->loader->load('lunascape', $useragent);
         }
 
-        if ($s->contains('Sleipnir', false)) {
+        if ($s->contains('sleipnir', false)) {
             return $this->loader->load('sleipnir', $useragent);
         }
 
-        if ($s->contains('Smartsite HTTPClient', false)) {
+        if ($s->contains('smartsite httpclient', false)) {
             return $this->loader->load('smartsite httpclient', $useragent);
         }
 
-        if ($s->contains('GomezAgent', false)) {
+        if ($s->contains('gomezagent', false)) {
             return $this->loader->load('gomez site monitor', $useragent);
         }
 
@@ -469,11 +469,11 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('internet explorer', $useragent);
         }
 
-        if ($s->contains('Chromium', false)) {
+        if ($s->contains('chromium', false)) {
             return $this->loader->load('chromium', $useragent);
         }
 
-        if ($s->contains('Iron', false)) {
+        if ($s->contains('iron', false)) {
             return $this->loader->load('iron', $useragent);
         }
 
@@ -481,7 +481,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('midori', $useragent);
         }
 
-        if ($s->contains('Google Page Speed Insights', false)) {
+        if ($s->contains('locubot', false)) {
+            return $this->loader->load('locubot', $useragent);
+        }
+
+        if ($s->contains('acapbot', false)) {
+            return $this->loader->load('acapbot', $useragent);
+        }
+
+        if ($s->contains('google page speed insights', false)) {
             return $this->loader->load('google pagespeed insights', $useragent);
         }
 
@@ -493,24 +501,16 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('googlebot-mobile', $useragent);
         }
 
-        if ($s->contains('Google Wireless Transcoder', false)) {
+        if ($s->contains('google wireless transcoder', false)) {
             return $this->loader->load('google wireless transcoder', $useragent);
         }
 
-        if ($s->contains('Locubot', false)) {
-            return $this->loader->load('locubot', $useragent);
-        }
-
-        if ($s->contains('com.google.GooglePlus', false)) {
+        if ($s->contains('com.google.googleplus', false)) {
             return $this->loader->load('google+ app', $useragent);
         }
 
-        if ($s->contains('Google-HTTP-Java-Client', false)) {
+        if ($s->contains('google-http-java-client', false)) {
             return $this->loader->load('google http client library for java', $useragent);
-        }
-
-        if ($s->contains('acapbot', false)) {
-            return $this->loader->load('acapbot', $useragent);
         }
 
         if ($s->contains('googlebot-image', false)) {
@@ -529,47 +529,47 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('smartviera', $useragent);
         }
 
-        if ($s->contains('Nichrome', false)) {
+        if ($s->contains('nichrome', false)) {
             return $this->loader->load('nichrome', $useragent);
         }
 
-        if ($s->contains('Kinza', false)) {
+        if ($s->contains('kinza', false)) {
             return $this->loader->load('kinza', $useragent);
         }
 
-        if ($s->contains('Google Keyword Suggestion', false)) {
+        if ($s->contains('google keyword suggestion', false)) {
             return $this->loader->load('google keyword suggestion', $useragent);
         }
 
-        if ($s->contains('Google Web Preview', false)) {
+        if ($s->contains('google web preview', false)) {
             return $this->loader->load('google web preview', $useragent);
         }
 
-        if ($s->contains('Google-Adwords-DisplayAds-WebRender', false)) {
+        if ($s->contains('google-adwords-displayads-webrender', false)) {
             return $this->loader->load('google adwords displayads webrender', $useragent);
         }
 
-        if ($s->contains('HubSpot Webcrawler', false)) {
+        if ($s->contains('hubspot webcrawler', false)) {
             return $this->loader->load('hubspot webcrawler', $useragent);
         }
 
-        if ($s->contains('RockMelt', false)) {
+        if ($s->contains('rockmelt', false)) {
             return $this->loader->load('rockmelt', $useragent);
         }
 
-        if ($s->contains(' SE ', false)) {
+        if ($s->contains(' se ', false)) {
             return $this->loader->load('sogou explorer', $useragent);
         }
 
-        if ($s->contains('ArchiveBot', false)) {
+        if ($s->contains('archivebot', false)) {
             return $this->loader->load('archivebot', $useragent);
         }
 
-        if ($s->contains('Edge', false) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
+        if ($s->contains('edge', false) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
             return $this->loader->load('edge mobile', $useragent);
         }
 
-        if ($s->contains('Edge', false)) {
+        if ($s->contains('edge', false)) {
             return $this->loader->load('edge', $useragent);
         }
 
@@ -581,40 +581,44 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('vivaldi', $useragent);
         }
 
-        if ($s->contains('LBBROWSER', false)) {
+        if ($s->contains('lbbrowser', false)) {
             return $this->loader->load('liebao', $useragent);
         }
 
-        if ($s->contains('Amigo', false)) {
+        if ($s->contains('amigo', false)) {
             return $this->loader->load('amigo', $useragent);
         }
 
-        if ($s->contains('CoolNovoChromePlus', false)) {
+        if ($s->contains('chromeplus', false)) {
             return $this->loader->load('coolnovo chrome plus', $useragent);
         }
 
-        if ($s->contains('CoolNovo', false)) {
+        if ($s->contains('coolnovo', false)) {
             return $this->loader->load('coolnovo', $useragent);
         }
 
-        if ($s->contains('Kenshoo', false)) {
+        if ($s->contains('kenshoo', false)) {
             return $this->loader->load('kenshoo', $useragent);
         }
 
-        if ($s->contains('Bowser', false)) {
+        if ($s->contains('bowser', false)) {
             return $this->loader->load('bowser', $useragent);
         }
 
-        if ($s->contains('360SE', false)) {
+        if ($s->contains('360se', false)) {
             return $this->loader->load('360 secure browser', $useragent);
         }
 
-        if ($s->contains('360EE', false)) {
+        if ($s->contains('360ee', false)) {
             return $this->loader->load('360 speed browser', $useragent);
         }
 
-        if ($s->contains('ASW', false)) {
+        if ($s->contains('asw', false)) {
             return $this->loader->load('avast safezone', $useragent);
+        }
+
+        if ($s->contains('schoolwires', false)) {
+            return $this->loader->load('schoolwires app', $useragent);
         }
 
         if ($s->contains('wire', false)) {
@@ -631,15 +635,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('dragon', $useragent);
         }
 
-        if ($s->contains('Flock', false)) {
+        if ($s->contains('flock', false)) {
             return $this->loader->load('flock', $useragent);
         }
 
-        if ($s->contains('Crosswalk', false)) {
+        if ($s->contains('crosswalk', false)) {
             return $this->loader->load('crosswalk', $useragent);
         }
 
-        if ($s->contains('Bromium Safari', false)) {
+        if ($s->contains('bromium safari', false)) {
             return $this->loader->load('vsentry', $useragent);
         }
 
@@ -877,10 +881,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('ElmediaPlayer', false)) {
             return $this->loader->load('elmedia player', $useragent);
-        }
-
-        if ($s->contains('Schoolwires', false)) {
-            return $this->loader->load('schoolwires app', $useragent);
         }
 
         if ($s->contains('Dreamweaver', false)) {

@@ -31,7 +31,7 @@ class MicrosoftExcel implements VersionCacheFactoryInterface
     public function detectVersion($useragent)
     {
         $doMatch = preg_match(
-            '/Excel\/([\d\.]+)/',
+            '/Excel[\/ ]([\d\.]+)/',
             $useragent,
             $matches
         );

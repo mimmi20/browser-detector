@@ -29,6 +29,14 @@ class MicrosoftOffice
      */
     public function mapVersion($version)
     {
+        if (in_array((int) $version, [2007, 2010, 2013, 2015])) {
+            return (string) (int) $version;
+        }
+
+        if (16 === (int) $version) {
+            return '2015';
+        }
+
         if (15 === (int) $version) {
             return '2013';
         }
@@ -69,21 +77,25 @@ class MicrosoftOffice
             return $matches[1];
         }
 
-        $doMatch = preg_match(
-            '/microsoft Office\/([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/Office\/([\d\.]+)/i', $useragent, $matches);
 
         if ($doMatch) {
             return $matches[1];
         }
 
-        $doMatch = preg_match(
-            '/microsoft Office\/(\d+)/',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/Office\/(\d+)/i', $useragent, $matches);
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match('/Office Mobile\/([\d\.]+)/i', $useragent, $matches);
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match('/Office Mobile\/(\d+)/i', $useragent, $matches);
 
         if ($doMatch) {
             return $matches[1];

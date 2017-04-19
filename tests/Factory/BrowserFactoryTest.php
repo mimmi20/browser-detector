@@ -14,6 +14,7 @@ namespace BrowserDetectorTest\Factory;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Loader\BrowserLoader;
+use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Version\VersionFactory;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,6 +22,7 @@ use League\Flysystem\Filesystem;
 use Psr\Log\NullLogger;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
+use BrowserDetector\Factory\PlatformFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -31,6 +33,11 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
      * @var \BrowserDetector\Factory\BrowserFactory
      */
     private $object = null;
+
+    /**
+     * @var \BrowserDetector\Factory\PlatformFactory
+     */
+    private $platformFactory = null;
 
     /**
      * @var \Psr\Cache\CacheItemPoolInterface|null
@@ -47,24 +54,9 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
         $this->cache  = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new BrowserLoader($this->cache);
         $this->object = new BrowserFactory($loader);
-    }
 
-    public function testToarray()
-    {
-        $logger = new NullLogger();
-
-        $name         = 'TestBrowser';
-        $manufacturer = new Company('Unknown', null);
-        $version      = (new VersionFactory())->set('0.0.2-beta');
-
-        $original = new Browser($name, $manufacturer, $version);
-
-        $array  = $original->toArray();
-        $object = (new \UaResult\Browser\BrowserFactory())->fromArray($this->cache, $logger, $array);
-
-        self::assertSame($name, $object->getName());
-        self::assertEquals($manufacturer, $object->getManufacturer());
-        self::assertEquals($version, $object->getVersion());
+        $platformLoader       = new PlatformLoader($this->cache);
+        $this->platformFactory = new PlatformFactory($platformLoader);
     }
 
     /**
@@ -80,9 +72,10 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
         $normalizer = (new NormalizerFactory())->build();
 
         $normalizedUa = $normalizer->normalize($userAgent);
+        $platform     = $this->platformFactory->detect($normalizedUa);
 
         /** @var \UaResult\Browser\BrowserInterface $result */
-        list($result) = $this->object->detect($normalizedUa);
+        list($result) = $this->object->detect($normalizedUa, $platform);
 
         self::assertInstanceOf('\UaResult\Browser\BrowserInterface', $result);
         self::assertSame(
@@ -725,6 +718,727 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
                 'Pinterest App',
                 '0.0.0',
                 'Ericsson Research',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; HUAWEI MT7-TL10 Build/HuaweiMT7-TL10) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 baiduboxapp/6.3.1 (Baidu; P1 4.4.2)',
+                'Baidu Box App',
+                '6.3.1',
+                'Baidu',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; HTC 802t 16GB Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 wkbrowser 3.2.56 696',
+                'WKBrowser',
+                '3.2.56',
+                'Keanu Lee',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; Coolpad 8675-FHD Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 Mb2345Browser/7.5.1',
+                '2345 Browser',
+                '7.5.1',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; Coolpad 8675-FHD Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
+                'Android WebView',
+                '4.0.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.3 Mobile Safari/537.3',
+                'Samsung WebView',
+                '2.3.0',
+                'Samsung',
+                null,
+            ],
+            [
+                'CybEye.com/2.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/4.0; GTB6.4)',
+                'CybEye',
+                '2.0.0',
+                'CybEye.com',
+                null,
+            ],
+            [
+                'RebelMouse/0.1 Mozilla/5.0 (compatible; http://rebelmouse.com) Gecko/20100101 Firefox/7.0.1',
+                'RebelMouse',
+                '0.1.0',
+                'RebelMouse',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0 SeaMonkey/2.31',
+                'SeaMonkey',
+                '2.31.0',
+                'Mozilla Foundation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0',
+                'JobBoerse Bot',
+                '0.0.0',
+                'Jobboerse.com',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.8pre) Gecko/20070928 Firefox/2.0.0.7 Navigator/9.0RC1',
+                'Navigator',
+                '9.0.0-RC+1',
+                'Netscape',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 5.1; rv:) Gecko/20100101 Firefox/ anonymized by Abelssoft 1433017337',
+                'Firefox',
+                '0.0.0',
+                'Mozilla Foundation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows 95; Anonymisiert durch AlMiSoft Browser-Anonymisierer 69351893; Trident/7.0; rv:11.0) like Gecko',
+                'Internet Explorer',
+                '11.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Windows-RSS-Platform/2.0 (IE 11.0; Windows NT 6.3)',
+                'Windows-RSS-Platform',
+                '2.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)',
+                'MarketwireBot',
+                '0.0.0',
+                'Marketwire L.P.',
+                null,
+            ],
+            [
+                'Mozilla/4.0 (compatible; GoogleToolbar 7.5.5111.1712; Windows XP 5.1; MSIE 8.0.6001.18702)',
+                'Google Toolbar',
+                '7.5.5111.1712',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Netscape/8.0.4',
+                'Netscape',
+                '8.0.4',
+                'Netscape',
+                null,
+            ],
+            [
+                'LSSRocketCrawler/1.0 LightspeedSystems',
+                'Lightspeed Systems RocketCrawler',
+                '1.0.0',
+                'Lightspeed Systems',
+                null,
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 7.0;Windows NT 5.1;.NET CLR 1.1.4322;.NET CLR 2.0.50727;.NET CLR 3.0.04506.30) Lightspeedsystems',
+                'Lightspeed Systems Crawler',
+                '0.0.0',
+                'Lightspeed Systems',
+                null,
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 6.0 ; .NET CLR 2.0.50215; SL Commerce Client v1.0; Tablet PC 2.0',
+                'Second Life Commerce Client',
+                '1.0.0',
+                'Linden Labs',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 635) like Gecko',
+                'IEMobile',
+                '11.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0;  WOW64;  Trident/5.0;  BingPreview/1.0b)',
+                'Bing Preview',
+                '1.0.0-beta',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; )  Firefox/1.5.0.11; 360Spider',
+                '360Spider',
+                '0.0.0',
+                'Qihoo 360 Technology Co. Ltd.',
+                null,
+            ],
+            [
+                'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; TmstmpExt)',
+                'Windows Live Mail',
+                '7.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Microsoft Office/14.0 (Windows NT 6.1; Microsoft Outlook 14.0.4760; Pro; ms-office; MSOffice 14)',
+                'Outlook',
+                '2010.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Microsoft Office Mobile/15.0',
+                'Office',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; MSOffice 12)',
+                'Office',
+                '2007.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Microsoft Office Protocol Discovery',
+                'MS OPD',
+                '0.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Microsoft Office Excel 2013 (15.0.4693) Windows NT 6.2',
+                'Excel',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X) PowerPoint/14.43.0',
+                'PowerPoint',
+                '2010.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'WordPress 4.0-alpha Feed Client Mozilla/5.0 Compatible',
+                'WordPress',
+                '4.0.0-alpha',
+                'wordpress.org',
+                null,
+            ],
+            [
+                'Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2',
+                'Word',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Microsoft Office OneNote 2013 (15.0.4693) Windows NT 6.2',
+                'OneNote',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Microsoft Office Visio 2013 (15.0.4693) Windows NT 6.2',
+                'Visio',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Microsoft Office/15.0 (Windows NT 6.2; Microsoft Access 15.0.4693; Pro)',
+                'Access',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Microsoft Office/15.0 (Windows NT 6.2; Microsoft Lync 15.0.4675; Pro)',
+                'Lync',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Microsoft Office SyncProc 2013 (15.0.4693) Windows NT 6.2',
+                'Office SyncProc',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Microsoft Office Upload Center 2013 (15.0.4693) Windows NT 6.2',
+                'Office Upload Center',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'MSFrontPage/15.0',
+                'FrontPage',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/2.0 (compatible; MS FrontPage 5.0)',
+                'FrontPage',
+                '0.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'non-browser; Microsoft Office/15.0 (Windows NT 6.2; 15.0.4691; Pro)',
+                'Office',
+                '2013.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Crazy Browser 1.0.5)',
+                'Crazy Browser',
+                '1.0.5',
+                'CrazyBrowser.com',
+                null,
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Deepnet Explorer 1.5.0; .NET CLR 1.0.3705)',
+                'Deepnet Explorer',
+                '1.5.0',
+                'Deepnet Security',
+                null,
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; KKman2.0)',
+                'KKMAN',
+                '2.0.0',
+                'KKBOX Taiwan Co., Ltd.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; rv:11.0; Lunascape 6.9.2.27391) like Gecko',
+                'Lunascape',
+                '6.9.2.27391',
+                'Lunascape Corporation',
+                null,
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; .NET4.0C; .NET4.0E; Sleipnir/2.9.9)',
+                'Sleipnir',
+                '2.9.9',
+                'Fenrir Inc',
+                null,
+            ],
+            [
+                'Smartsite HTTPClient - Mozilla/4.0 (compatible; MSIE 6.0)',
+                'Smartsite HTTPClient',
+                '0.0.0',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0; GomezAgent 3.0) Gecko/20100101 Firefox/13.0.1',
+                'Gomez Site Monitor',
+                '3.0.0',
+                'Compuware Corporation',
+                null,
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; WOW64; Trident/7.0; Touch; .NET4.0E; .NET4.0C; Tablet PC 2.0)',
+                'Internet Explorer',
+                '11.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/5.0)',
+                'Internet Explorer',
+                '9.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko',
+                'Internet Explorer',
+                '11.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.11 (KHTML, like Gecko) Ubuntu/12.04 Chromium/20.0.1132.47 Chrome/20.0.1132.47 Safari/536.11',
+                'Chromium',
+                '20.0.1132.47',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Iron/30.0.1650.0 Chrome/30.0.1650.0 Safari/537.36',
+                'Iron',
+                '30.0.1650.0',
+                'SRWare',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (X11; Linux) AppleWebKit/531.2+ Midori/0.3',
+                'Midori',
+                '0.3.0',
+                'Christian Dywan',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Page Speed Insights) Chrome/27.0.1453 Safari/537.36',
+                'Google PageSpeed Insights',
+                '0.0.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; rv:6.0) Gecko/20110814 Firefox/6.0 Google (+https://developers.google.com/+/web/snippet/)',
+                'Google Web Snippet',
+                '0.0.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)',
+                'Google Bot Mobile',
+                '2.1.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)',
+                'Google Bot Mobile',
+                '2.1.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (en-us) AppleWebKit/534.14 (KHTML, like Gecko; Google Wireless Transcoder) Chrome/9.0.597 Safari/534.14',
+                'Google Wireless Transcoder',
+                '0.0.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Locubot (compatible; Googlebot; msnbot)',
+                'Locubot',
+                '0.0.0',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (iPhone5,2; iPhone; U; CPU OS 7_0_4 like Mac OS X; it_IT) com.google.GooglePlus/29676 (KHTML, like Gecko) Mobile/N42AP (gzip)',
+                'Google+ App',
+                '0.0.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Google-HTTP-Java-Client/1.17.0-rc (gzip)',
+                'Google HTTP Client Library for Java',
+                '1.17.0-RC',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible;acapbot/0.1.;treat like Googlebot)',
+                'acapbot',
+                '0.1.0',
+                null,
+                null,
+            ],
+            [
+                'Googlebot-Image/1.0',
+                'Google Image Search',
+                '1.0.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+                'Google Bot',
+                '2.1.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'GOOG',
+                'Google Bot',
+                '0.0.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (X11; FreeBSD; U; Viera; pt-BR) AppleWebKit/535.1 (KHTML, like Gecko) Viera/1.5.1 Chrome/14.0.835.202 Safari/535.1',
+                'Viera Browser',
+                '1.5.1',
+                'Panasonic',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36 Nichrome/self/33',
+                'Nichrome',
+                '33.0.0',
+                'rambler.ru',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36 Kinza/1.2.0',
+                'Kinza',
+                '1.2.0',
+                'kinza.jp',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/534.16 (KHTML, like Gecko, Google Keyword Suggestion) Chrome/10.0.648.127 Safari/534.16',
+                'Google Keyword Suggestion',
+                '0.0.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Web Preview) Chrome/27.0.1453 Safari/537.36',
+                'Google Web Preview',
+                '0.0.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (en-us) AppleWebKit/537.36(KHTML, like Gecko; Google-Adwords-DisplayAds-WebRender;) Chrome/27.0.1453Safari/537.36',
+                'Google Adwords DisplayAds WebRender',
+                '0.0.0',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36 HubSpot Webcrawler',
+                'HubSpot Webcrawler',
+                '0.0.0',
+                'HubSpot, Inc.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) RockMelt/0.16.91.483 Chrome/16.0.912.77 Safari/535.7',
+                'RockMelt',
+                '0.16.91.483',
+                'Yahoo! Inc.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36 SE 2.X MetaSr 1.0',
+                'Sogou Explorer',
+                '2.0.0',
+                'Sogou Inc',
+                null,
+            ],
+            [
+                'ArchiveTeam ArchiveBot/20141009.02 (wpull 0.1002a1) and not Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36',
+                'ArchiveBot',
+                '0.0.0',
+                'ArchiveTeam',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.4; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36 Edge/12.0',
+                'Edge',
+                '12.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 930) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Mobile Safari/537.36 Edge/12.0',
+                'Edge Mobile',
+                '12.0.0',
+                'Microsoft Corporation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.15 (KHTML, like Gecko; +http://www.diffbot.com) Chrome/24.0.1295.0 Safari/537.15',
+                'Diffbot',
+                '0.0.0',
+                null,
+                null,
+            ],
+            [
+                'Diffbot/0.1',
+                'Diffbot',
+                '0.0.0',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Vivaldi/1.0.83.38 Safari/537.36',
+                'Vivaldi',
+                '1.0.83.38',
+                'Vivaldi Technologies',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.4; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36 LBBROWSER',
+                'liebao',
+                '0.0.0',
+                'Kingsoft',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1709.117 Amigo/32.0.1709.117 MRCHROME SOC Safari/537.36',
+                'Amigo',
+                '32.0.1709.117',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.2 (KHTML, like Gecko) ChromePlus/4.0.222.3 Chrome/4.0.222.3 Safari/532.2',
+                'CoolNovo Chrome Plus',
+                '4.0.222.3',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36 CoolNovo/2.0.9.20',
+                'CoolNovo',
+                '2.0.9.20',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36 Kenshoo/3049',
+                'Kenshoo',
+                '0.0.0',
+                'Kenshoo, Ltd.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (iOS; like Mac OS X) AppleWebKit/536.36 (KHTML, like Gecko) not Chrome/27.0.1500.95 Mobile/10B141 Safari/537.36 Bowser/0.2.1',
+                'Bowser',
+                '0.2.1',
+                'Ericsson Research',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible; MSIE 11.0; Windows NT 6.3; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; 360SE)',
+                '360 Secure Browser',
+                '0.0.0',
+                'Qihoo 360 Technology Co. Ltd.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36 QIHU 360SE',
+                '360 Secure Browser',
+                '0.0.0',
+                'Qihoo 360 Technology Co. Ltd.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36 QIHU 360EE',
+                '360 Speed Browser',
+                '0.0.0',
+                'Qihoo 360 Technology Co. Ltd.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 ASW/1.46.1990.55',
+                'Avast SafeZone',
+                '1.46.1990.55',
+                'AVAST Software s.r.o.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.3; en-us; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.67 like Chrome/39.0.2171.93 Safari/537.36',
+                'Silk',
+                '3.67.0',
+                'Amazon.com, Inc.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (iPod; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile Schoolwires',
+                'Schoolwires App',
+                '0.0.0',
+                'Schoolwires, Inc.',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Wire/2.3.2553 Chrome/45.0.2454.85 Electron/0.35.2 Safari/537.36',
+                'Wire App',
+                '2.3.2553',
+                'Wire Swiss GmbH',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.1.0.0 Safari/537.36',
+                'Dragon',
+                '31.1.0.0',
+                'Comodo Group Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Flock/3.5.2.4599 Chrome/7.0.517.442 Safari/534.7',
+                'Flock',
+                '3.5.2.4599',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; GT-I9195I Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Crosswalk/14.43.343.17 Mobile Safari/537.36',
+                'Crosswalk App',
+                '14.43.343.17',
+                'Intel Corporation',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Windows; chromeframe/2.4.8.5746) AppleWebKit/1.0 (KHTML, like Gecko) Bromium Safari/1.0',
+                'vSentry',
+                '1.0.0',
+                null,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; Nexus 4 Build/JDQ39E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Mobile Safari/537.36',
+                'Chrome',
+                '27.0.1453.90',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; GT-I9100 Build/IML74K) AppleWebKit/535.7 (KHTML, like Gecko) CrMo/16.0.912.77 Mobile Safari/535.7',
+                'Chrome',
+                '16.0.912.77',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) CriOS/30.0.1599.16 Mobile/11A501 Safari/8536.25',
+                'Chrome',
+                '30.0.1599.16',
+                'Google Inc',
+                null,
+            ],
+            [
+                'Dolphin http client/10.3.0(280) (Android)',
+                'Dolphin smalltalk http client',
+                '10.3.0',
+                'Steve Waring',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; GT-I9100 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Dolphin/INT-1.0 Mobile Safari/534.30',
+                'Dolfin',
+                '1.0.0',
+                'MopoTab Inc',
+                null,
+            ],
+            [
+                'SAMSUNG-SGH-T528g/T528UDKE4[TF355314045027030009640018153425713] Dolfin/1.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1',
+                'Dolfin',
+                '1.5.0',
+                'MopoTab Inc',
                 null,
             ],
         ];

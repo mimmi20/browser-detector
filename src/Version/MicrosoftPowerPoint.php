@@ -31,7 +31,7 @@ class MicrosoftPowerPoint implements VersionCacheFactoryInterface
     public function detectVersion($useragent)
     {
         $doMatch = preg_match(
-            '/PowerPoint\/([\d\.]+)/',
+            '/PowerPoint[\/ ]([\d\.]+)/',
             $useragent,
             $matches
         );
