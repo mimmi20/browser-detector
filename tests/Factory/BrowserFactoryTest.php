@@ -1637,16 +1637,16 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 'Mozilla/5.0 (X11; Linux) AppleWebKit/534.34 (KHTML, like Gecko) QtCarBrowser Safari/534.34',
-                'QtCarBrowser',
+                'Model S Browser',
                 '0.0.0',
-                'Apple Inc',
+                'Tesla Motors',
                 null,
             ],
             [
                 'Mozilla/5.0 (Windows; N; ; ru-RU) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Qt/4.5.3',
                 'Qt',
                 '4.5.3',
-                'Apple Inc',
+                null,
                 null,
             ],
         ];
