@@ -659,7 +659,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('dolfin', $useragent);
         }
 
-        if ($s->contains('Arora', false)) {
+        if ($s->contains('arora', false)) {
             return $this->loader->load('arora', $useragent);
         }
 
@@ -671,7 +671,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('nokia proxy browser', $useragent);
         }
 
-        if ($s->contains('MiuiBrowser', false)) {
+        if ($s->contains('miuibrowser', false)) {
             return $this->loader->load('miui browser', $useragent);
         }
 
@@ -679,12 +679,16 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('ibrowser', $useragent);
         }
 
-        if ($s->contains('OneBrowser', false)) {
+        if ($s->contains('onebrowser', false)) {
             return $this->loader->load('onebrowser', $useragent);
         }
 
-        if ($s->contains('Baiduspider-image', false)) {
+        if ($s->contains('baiduspider-image', false)) {
             return $this->loader->load('baidu image search', $useragent);
+        }
+
+        if ($s->contains('baiduspider', false)) {
+            return $this->loader->load('baiduspider', $useragent);
         }
 
         if ($s->contains('http://www.baidu.com/search', false)) {
@@ -695,7 +699,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('yahoo! app', $useragent);
         }
 
-        if ($s->containsAny(['linux; u; android', 'linux; android'], false) && $s->contains('version', false)) {
+        if ($s->containsAll(['linux; android', 'version'], false)) {
+            return $this->loader->load('android webkit', $useragent);
+        }
+
+        if (preg_match('/android[\/ ][\d\.]+ release/i', $useragent)) {
+            return $this->loader->load('android webkit', $useragent);
+        }
+
+        if ($s->contains('browser/applewebkit', false)) {
             return $this->loader->load('android webkit', $useragent);
         }
 
@@ -703,31 +715,23 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('android webkit', $useragent);
         }
 
-        if ($s->contains('Browser/AppleWebKit', false)) {
-            return $this->loader->load('android webkit', $useragent);
-        }
-
-        if (preg_match('/Android\/[\d\.]+ release/', $useragent)) {
-            return $this->loader->load('android webkit', $useragent);
-        }
-
-        if ($s->containsAll(['BlackBerry', 'Version'])) {
+        if ($s->containsAll(['blackberry', 'version'], false)) {
             return $this->loader->load('blackberry', $useragent);
         }
 
-        if ($s->containsAny(['webOS', 'wOSBrowser', 'wOSSystem'], false)) {
+        if ($s->containsAny(['webos', 'wosbrowser', 'wossystem'], false)) {
             return $this->loader->load('webkit/webos', $useragent);
         }
 
-        if ($s->contains('OmniWeb', false)) {
+        if ($s->contains('omniweb', false)) {
             return $this->loader->load('omniweb', $useragent);
         }
 
-        if ($s->contains('Windows Phone Search', false)) {
+        if ($s->contains('windows phone search', false)) {
             return $this->loader->load('windows phone search', $useragent);
         }
 
-        if ($s->contains('Windows-Update-Agent', false)) {
+        if ($s->contains('windows-update-agent', false)) {
             return $this->loader->load('windows-update-agent', $useragent);
         }
 
@@ -747,7 +751,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('twitterbot', $useragent);
         }
 
-        if ($s->contains('GSA', false)) {
+        if ($s->contains('GSA', true)) {
             return $this->loader->load('google app', $useragent);
         }
 
@@ -755,47 +759,47 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('quicktime', $useragent);
         }
 
-        if ($s->contains('QtCarBrowser', false)) {
+        if ($s->contains('qtcarbrowser', false)) {
             return $this->loader->load('model s browser', $useragent);
         }
 
-        if ($s->contains('Qt', false)) {
+        if ($s->contains('Qt', true)) {
             return $this->loader->load('qt', $useragent);
         }
 
-        if ($s->contains('Instagram', false)) {
+        if ($s->contains('instagram', false)) {
             return $this->loader->load('instagram app', $useragent);
         }
 
-        if ($s->contains('WebClip', false)) {
+        if ($s->contains('webclip', false)) {
             return $this->loader->load('webclip app', $useragent);
         }
 
-        if ($s->contains('Mercury', false)) {
+        if ($s->contains('mercury', false)) {
             return $this->loader->load('mercury', $useragent);
         }
 
-        if ($s->contains('MacAppStore', false)) {
+        if ($s->contains('macappstore', false)) {
             return $this->loader->load('macappstore', $useragent);
         }
 
-        if ($s->contains('AppStore', false)) {
+        if ($s->contains('appstore', false)) {
             return $this->loader->load('apple appstore app', $useragent);
         }
 
-        if ($s->contains('Webglance', false)) {
+        if ($s->contains('webglance', false)) {
             return $this->loader->load('web glance', $useragent);
         }
 
-        if ($s->contains('YHOO_Search_App', false)) {
+        if ($s->contains('yhoo_search_app', false)) {
             return $this->loader->load('yahoo mobile app', $useragent);
         }
 
-        if ($s->contains('NewsBlur Feed Fetcher', false)) {
+        if ($s->contains('newsblur feed fetcher', false)) {
             return $this->loader->load('newsblur feed fetcher', $useragent);
         }
 
-        if ($s->contains('AppleCoreMedia', false)) {
+        if ($s->contains('applecoremedia', false)) {
             return $this->loader->load('coremedia', $useragent);
         }
 
@@ -803,15 +807,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('ios dataaccessd', $useragent);
         }
 
-        if ($s->contains('MailChimp', false)) {
+        if ($s->contains('mailchimp', false)) {
             return $this->loader->load('mailchimp.com', $useragent);
         }
 
-        if ($s->contains('MailBar', false)) {
+        if ($s->contains('mailbar', false)) {
             return $this->loader->load('mailbar', $useragent);
         }
 
-        if ($s->startsWith('Mail', false)) {
+        if ($s->startsWith('mail', false)) {
             return $this->loader->load('apple mail', $useragent);
         }
 
@@ -3314,10 +3318,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('Awesomebot', false)) {
             return $this->loader->load('awesomebot', $useragent);
-        }
-
-        if ($s->contains('BaiduSpider', false)) {
-            return $this->loader->load('baiduspider', $useragent);
         }
 
         if ($s->contains('Benq', false)) {

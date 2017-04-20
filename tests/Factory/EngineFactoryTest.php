@@ -13,8 +13,11 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\NormalizerFactory;
+use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Loader\PlatformLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
@@ -57,13 +60,19 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testDetect($userAgent, $engine, $version, $manufacturer)
     {
-        $normalizer    = (new NormalizerFactory())->build();
-        $browserLoader = new BrowserLoader($this->cache);
+        $normalizer      = (new NormalizerFactory())->build();
+        $normalizedUa    = $normalizer->normalize($userAgent);
+        $browserLoader   = new BrowserLoader($this->cache);
+        $platformFactory = new PlatformFactory(new PlatformLoader($this->cache));
 
-        $normalizedUa = $normalizer->normalize($userAgent);
+        try {
+            $platform = $platformFactory->detect($normalizedUa);
+        } catch (NotFoundException $e) {
+            $platform = null;
+        }
 
         /** @var \UaResult\Engine\EngineInterface $result */
-        $result = $this->object->detect($normalizedUa, $browserLoader);
+        $result = $this->object->detect($normalizedUa, $browserLoader, $platform);
 
         self::assertInstanceOf('\UaResult\Engine\EngineInterface', $result);
         self::assertSame(
@@ -92,6 +101,13 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
     public function providerDetect()
     {
         return [
+            [
+                'this is a fake ua to trigger the fallback',
+                null,
+                '0.0.0',
+                null,
+                null,
+            ],
             [
                 'Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B440 Safari/600.1.4',
                 'WebKit',
@@ -273,6 +289,13 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
                 '6.4.0',
                 'Baidu',
                 null,
+            ],
+            [
+                'Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) CriOS/30.0.1599.16 Mobile/11A501 Safari/8536.25',
+                'WebKit',
+                '537.51.1',
+                'Apple Inc',
+                'Apple',
             ],
         ];
     }
