@@ -6501,20 +6501,6 @@
     },
     "engine": "unknown"
   },
-  "maemo browser": {
-    "name": "Maemo Browser",
-    "manufacturer": "Unknown",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Maemo Browser"
-      ]
-    },
-    "engine": "gecko"
-  },
   "magpie crawler": {
     "name": "Magpie Crawler",
     "manufacturer": "Brandwatch",
@@ -6902,7 +6888,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "MicroB"
+        "MicroB",
+        "Maemo Browser"
       ]
     },
     "engine": "gecko"
@@ -11260,6 +11247,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "SoundCloud\\-Android",
         "SoundCloud"
       ]
     },
