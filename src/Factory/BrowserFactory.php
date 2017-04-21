@@ -707,10 +707,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('android webkit', $useragent);
         }
 
-        if ($s->contains('browser/applewebkit', false)) {
-            return $this->loader->load('android webkit', $useragent);
-        }
-
         if ($s->contains('safari', false) && null !== $platform && 'Android' === $platform->getName()) {
             return $this->loader->load('android webkit', $useragent);
         }
@@ -843,7 +839,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('bingbot', $useragent);
         }
 
-        if ($s->contains('BlackberryPlaybookTablet', false)) {
+        if ($s->contains('playbook', false)) {
             return $this->loader->load('blackberry playbook tablet', $useragent);
         }
 
@@ -851,7 +847,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('blackberry', $useragent);
         }
 
-        if ($s->contains('WeTab-Browser', false)) {
+        if ($s->contains('wetab-browser', false)) {
             return $this->loader->load('wetab browser', $useragent);
         }
 
@@ -871,7 +867,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('wordpress app', $useragent);
         }
 
-        if ($s->contains('OktaMobile', false)) {
+        if ($s->contains('oktamobile', false)) {
             return $this->loader->load('okta mobile app', $useragent);
         }
 
@@ -883,11 +879,11 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('eb iphone/ipad app', $useragent);
         }
 
-        if ($s->contains('ElmediaPlayer', false)) {
+        if ($s->contains('elmediaplayer', false)) {
             return $this->loader->load('elmedia player', $useragent);
         }
 
-        if ($s->contains('Dreamweaver', false)) {
+        if ($s->contains('dreamweaver', false)) {
             return $this->loader->load('dreamweaver', $useragent);
         }
 
@@ -895,23 +891,23 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('akregator', $useragent);
         }
 
-        if ($s->contains('Installatron', false)) {
+        if ($s->contains('installatron', false)) {
             return $this->loader->load('installatron', $useragent);
         }
 
-        if ($s->contains('Quora Link Preview', false)) {
+        if ($s->contains('quora link preview', false)) {
             return $this->loader->load('quora link preview bot', $useragent);
         }
 
-        if ($s->contains('Quora', false)) {
+        if ($s->contains('quora', false)) {
             return $this->loader->load('quora app', $useragent);
         }
 
-        if ($s->contains('Rocky ChatWork Mobile', false)) {
+        if ($s->contains('rocky chatwork mobile', false)) {
             return $this->loader->load('rocky chatwork mobile', $useragent);
         }
 
-        if ($s->contains('AdsBot-Google-Mobile', false)) {
+        if ($s->contains('adsbot-google-mobile', false)) {
             return $this->loader->load('adsbot google-mobile', $useragent);
         }
 
@@ -923,11 +919,11 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('rekonq', $useragent);
         }
 
-        if ($s->contains('Skyfire', false)) {
+        if ($s->contains('skyfire', false)) {
             return $this->loader->load('skyfire', $useragent);
         }
 
-        if ($s->contains('FlixsteriOS', false)) {
+        if ($s->contains('flixsterios', false)) {
             return $this->loader->load('flixster app', $useragent);
         }
 
@@ -935,11 +931,11 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('adbeat bot', $useragent);
         }
 
-        if ($s->containsAny(['SecondLife', 'Second Life'], false)) {
+        if ($s->containsAny(['secondlife', 'second life'], false)) {
             return $this->loader->load('second live client', $useragent);
         }
 
-        if ($s->containsAny(['Salesforce1', 'SalesforceTouchContainer'], false)) {
+        if ($s->containsAny(['salesforce1', 'salesforcetouchcontainer'], false)) {
             return $this->loader->load('salesforce app', $useragent);
         }
 
@@ -951,11 +947,11 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('bingbot', $useragent);
         }
 
-        if ($s->contains('Mediapartners-Google', false)) {
+        if ($s->contains('mediapartners-google', false)) {
             return $this->loader->load('adsense bot', $useragent);
         }
 
-        if ($s->contains('SMTBot', false)) {
+        if ($s->contains('smtbot', false)) {
             return $this->loader->load('smtbot', $useragent);
         }
 
