@@ -1135,13 +1135,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('microb', $useragent);
         }
 
-        if (preg_match('/firefox/i', $useragent)
-            && !preg_match('/gecko/i', $useragent)
-            && preg_match('/anonymized/i', $useragent)
-        ) {
-            return $this->loader->load('firefox', $useragent);
-        }
-
         if ($s->containsAny(['firefox', 'minefield', 'shiretoko', 'bonecho', 'namoroka'], false)) {
             return $this->loader->load('firefox', $useragent);
         }
