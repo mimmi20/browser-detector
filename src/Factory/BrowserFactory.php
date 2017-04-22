@@ -1219,7 +1219,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('dotbot', $useragent);
         }
 
-        if ($s->containsAny(['google-structureddatatestingtool', 'Google-structured-data-testing-tool'], false)) {
+        if ($s->containsAny(['google-structureddatatestingtool', 'google-structured-data-testing-tool'], false)) {
             return $this->loader->load('google structured-data testingtool', $useragent);
         }
 
@@ -1239,39 +1239,43 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('woobot', $useragent);
         }
 
-        if ($s->contains('Blekkobot', false)) {
+        if ($s->contains('blekkobot', false)) {
             return $this->loader->load('blekkobot', $useragent);
         }
 
-        if ($s->contains('PagesInventory', false)) {
+        if ($s->contains('pagesinventory', false)) {
             return $this->loader->load('pagesinventory bot', $useragent);
         }
 
-        if ($s->contains('Slackbot-LinkExpanding', false)) {
+        if ($s->contains('slackbot-linkexpanding', false)) {
             return $this->loader->load('slackbot-link-expanding', $useragent);
         }
 
-        if ($s->contains('Slackbot', false)) {
+        if ($s->contains('slackbot', false)) {
             return $this->loader->load('slackbot', $useragent);
         }
 
-        if ($s->contains('SEOkicks-Robot', false)) {
+        if ($s->contains('seokicks-robot', false)) {
             return $this->loader->load('seokicks robot', $useragent);
         }
 
-        if ($s->contains('Exabot', false)) {
+        if ($s->contains('alexabot', false)) {
+            return $this->loader->load('alexabot', $useragent);
+        }
+
+        if ($s->contains('exabot', false)) {
             return $this->loader->load('exabot', $useragent);
         }
 
-        if ($s->contains('DomainSCAN', false)) {
+        if ($s->contains('domainscan', false)) {
             return $this->loader->load('domainscan server monitoring', $useragent);
         }
 
-        if ($s->contains('JobRoboter', false)) {
+        if ($s->contains('jobroboter', false)) {
             return $this->loader->load('jobroboter', $useragent);
         }
 
-        if ($s->contains('AcoonBot', false)) {
+        if ($s->contains('acoonbot', false)) {
             return $this->loader->load('acoonbot', $useragent);
         }
 
@@ -1279,11 +1283,11 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('woriobot', $useragent);
         }
 
-        if ($s->contains('MonoBot', false)) {
+        if ($s->contains('monobot', false)) {
             return $this->loader->load('monobot', $useragent);
         }
 
-        if ($s->contains('DomainSigmaCrawler', false)) {
+        if ($s->contains('domainsigmacrawler', false)) {
             return $this->loader->load('domainsigmacrawler', $useragent);
         }
 
@@ -1291,15 +1295,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('bnf.fr bot', $useragent);
         }
 
-        if ($s->contains('CrawlRobot', false)) {
+        if ($s->contains('crawlrobot', false)) {
             return $this->loader->load('crawlrobot', $useragent);
         }
 
-        if ($s->contains('AddThis.com robot', false)) {
+        if ($s->contains('addthis.com robot', false)) {
             return $this->loader->load('addthis.com robot', $useragent);
         }
 
-        if ($s->containsAny(['Yeti', 'naver.com/robots'], false)) {
+        if ($s->containsAny(['yeti', 'naver.com/robots'], false)) {
             return $this->loader->load('naverbot', $useragent);
         }
 
@@ -1307,7 +1311,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('testcrawler', $useragent);
         }
 
-        if ($s->contains('DeuSu', false)) {
+        if ($s->contains('deusu', false)) {
             return $this->loader->load('werbefreie deutsche suchmaschine', $useragent);
         }
 
@@ -1315,7 +1319,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('obot', $useragent);
         }
 
-        if ($s->contains('ZumBot', false)) {
+        if ($s->contains('zumbot', false)) {
             return $this->loader->load('zumbot', $useragent);
         }
 
@@ -1501,10 +1505,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('Embedly', false)) {
             return $this->loader->load('embedly', $useragent);
-        }
-
-        if ($s->contains('Alexabot', false)) {
-            return $this->loader->load('alexabot', $useragent);
         }
 
         if ($s->contains('alexa site audit', false)) {
