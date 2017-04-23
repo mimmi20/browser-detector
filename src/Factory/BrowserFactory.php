@@ -1355,19 +1355,19 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('squzer', $useragent);
         }
 
-        if ($s->contains('PiplBot', false)) {
+        if ($s->contains('piplbot', false)) {
             return $this->loader->load('piplbot', $useragent);
         }
 
-        if ($s->contains('EveryoneSocialBot', false)) {
+        if ($s->contains('everyonesocialbot', false)) {
             return $this->loader->load('everyonesocialbot', $useragent);
         }
 
-        if ($s->contains('AOLbot', false)) {
+        if ($s->contains('aolbot', false)) {
             return $this->loader->load('aolbot', $useragent);
         }
 
-        if ($s->contains('GLBot', false)) {
+        if ($s->contains('glbot', false)) {
             return $this->loader->load('glbot', $useragent);
         }
 
@@ -1411,47 +1411,43 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('meanpathbot', $useragent);
         }
 
-        if ($s->contains('XML Sitemaps Generator', false)) {
+        if ($s->contains('xml sitemaps generator', false)) {
             return $this->loader->load('xml sitemaps generator', $useragent);
         }
 
-        if ($s->contains('SeznamBot', false)) {
+        if ($s->contains('seznambot', false)) {
             return $this->loader->load('seznambot', $useragent);
         }
 
-        if ($s->contains('URLAppendBot', false)) {
+        if ($s->contains('urlappendbot', false)) {
             return $this->loader->load('urlappendbot', $useragent);
         }
 
-        if ($s->contains('NetSeer crawler', false)) {
+        if ($s->contains('netseer crawler', false)) {
             return $this->loader->load('netseer crawler', $useragent);
         }
 
-        if ($s->contains('SeznamBot', false)) {
-            return $this->loader->load('seznambot', $useragent);
-        }
-
-        if ($s->contains('Add Catalog', false)) {
+        if ($s->contains('add catalog', false)) {
             return $this->loader->load('add catalog', $useragent);
         }
 
-        if ($s->contains('Moreover', false)) {
+        if ($s->contains('moreover', false)) {
             return $this->loader->load('moreover', $useragent);
         }
 
-        if ($s->contains('LinkpadBot', false)) {
+        if ($s->contains('linkpadbot', false)) {
             return $this->loader->load('linkpadbot', $useragent);
         }
 
-        if ($s->contains('Lipperhey SEO Service', false)) {
+        if ($s->contains('lipperhey seo service', false)) {
             return $this->loader->load('lipperhey seo service', $useragent);
         }
 
-        if ($s->contains('Blog Search', false)) {
+        if ($s->contains('blog search', false)) {
             return $this->loader->load('blog search', $useragent);
         }
 
-        if ($s->contains('Qualidator.com Bot', false)) {
+        if ($s->contains('qualidator.com bot', false)) {
             return $this->loader->load('qualidator.com bot', $useragent);
         }
 
@@ -1463,19 +1459,19 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('ca-crawler', $useragent);
         }
 
-        if ($s->contains('Website Thumbnail Generator', false)) {
+        if ($s->contains('website thumbnail generator', false)) {
             return $this->loader->load('website thumbnail generator', $useragent);
         }
 
-        if ($s->contains('WebThumb', false)) {
+        if ($s->contains('webthumb', false)) {
             return $this->loader->load('webthumb', $useragent);
         }
 
-        if ($s->contains('KomodiaBot', false)) {
+        if ($s->contains('komodiabot', false)) {
             return $this->loader->load('komodiabot', $useragent);
         }
 
-        if ($s->contains('GroupHigh', false)) {
+        if ($s->contains('grouphigh', false)) {
             return $this->loader->load('grouphigh bot', $useragent);
         }
 
@@ -1483,27 +1479,27 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('the old reader', $useragent);
         }
 
-        if ($s->contains('Google-Site-Verification', false)) {
+        if ($s->contains('google-site-verification', false)) {
             return $this->loader->load('google-site-verification', $useragent);
         }
 
-        if ($s->contains('Prlog', false)) {
+        if ($s->contains('prlog', false)) {
             return $this->loader->load('prlog', $useragent);
         }
 
-        if ($s->contains('CMS Crawler', false)) {
+        if ($s->contains('cms crawler', false)) {
             return $this->loader->load('cms crawler', $useragent);
         }
 
-        if ($s->contains('pmoz.info ODP link checker', false)) {
+        if ($s->contains('pmoz.info odp link checker', false)) {
             return $this->loader->load('pmoz.info odp link checker', $useragent);
         }
 
-        if ($s->contains('Twingly Recon', false)) {
+        if ($s->contains('twingly recon', false)) {
             return $this->loader->load('twingly recon', $useragent);
         }
 
-        if ($s->contains('Embedly', false)) {
+        if ($s->contains('embedly', false)) {
             return $this->loader->load('embedly', $useragent);
         }
 
@@ -1511,23 +1507,23 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('alexa site audit', $useragent);
         }
 
-        if ($s->contains('MJ12bot', false)) {
+        if ($s->contains('mj12bot', false)) {
             return $this->loader->load('mj12bot', $useragent);
         }
 
-        if ($s->contains('HTTrack', false)) {
+        if ($s->contains('httrack', false)) {
             return $this->loader->load('httrack', $useragent);
         }
 
-        if ($s->contains('UnisterBot', false)) {
+        if ($s->contains('unisterbot', false)) {
             return $this->loader->load('unisterbot', $useragent);
         }
 
-        if ($s->contains('CareerBot', false)) {
+        if ($s->contains('careerbot', false)) {
             return $this->loader->load('careerbot', $useragent);
         }
 
-        if ($s->contains('80legs', false)) {
+        if ($s->containsAny(['80legs', '80bot'], false)) {
             return $this->loader->load('80legs', $useragent);
         }
 
@@ -1535,7 +1531,11 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('wada.vn search bot', $useragent);
         }
 
-        if ($s->containsAny(['NX', 'WiiU', 'Nintendo 3DS'], false)) {
+        if ($s->contains('NX', true)) {
+            return $this->loader->load('netfront nx', $useragent);
+        }
+
+        if ($s->containsAny(['wiiu', 'nintendo 3ds'], false)) {
             return $this->loader->load('netfront nx', $useragent);
         }
 
@@ -1543,19 +1543,19 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('netfront', $useragent);
         }
 
-        if ($s->contains('XoviBot', false)) {
+        if ($s->contains('xovibot', false)) {
             return $this->loader->load('xovibot', $useragent);
         }
 
-        if ($s->contains('007ac9 Crawler', false)) {
+        if ($s->contains('007ac9 crawler', false)) {
             return $this->loader->load('007ac9 crawler', $useragent);
         }
 
-        if ($s->contains('200PleaseBot', false)) {
+        if ($s->contains('200pleasebot', false)) {
             return $this->loader->load('200pleasebot', $useragent);
         }
 
-        if ($s->contains('Abonti', false)) {
+        if ($s->contains('abonti', false)) {
             return $this->loader->load('abonti websearch', $useragent);
         }
 
@@ -1563,19 +1563,19 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('publiclibraryarchive bot', $useragent);
         }
 
-        if ($s->contains('PAD-bot', false)) {
+        if ($s->contains('pad-bot', false)) {
             return $this->loader->load('pad-bot', $useragent);
         }
 
-        if ($s->contains('SoftListBot', false)) {
+        if ($s->contains('softlistbot', false)) {
             return $this->loader->load('softlistbot', $useragent);
         }
 
-        if ($s->contains('sReleaseBot', false)) {
+        if ($s->contains('sreleasebot', false)) {
             return $this->loader->load('sreleasebot', $useragent);
         }
 
-        if ($s->contains('Vagabondo', false)) {
+        if ($s->contains('vagabondo', false)) {
             return $this->loader->load('vagabondo', $useragent);
         }
 
@@ -1583,15 +1583,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('internet archive special archiver', $useragent);
         }
 
-        if ($s->contains('Optimizer', false)) {
+        if ($s->contains('optimizer', false)) {
             return $this->loader->load('optimizer bot', $useragent);
         }
 
-        if ($s->contains('Sophora Linkchecker', false)) {
+        if ($s->contains('sophora linkchecker', false)) {
             return $this->loader->load('sophora linkchecker', $useragent);
         }
 
-        if ($s->contains('SEOdiver', false)) {
+        if ($s->contains('seodiver', false)) {
             return $this->loader->load('seodiver bot', $useragent);
         }
 
@@ -1599,15 +1599,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('itsscan', $useragent);
         }
 
-        if ($s->contains('Google Desktop', false)) {
+        if ($s->contains('google desktop', false)) {
             return $this->loader->load('google desktop', $useragent);
         }
 
-        if ($s->contains('Lotus-Notes', false)) {
+        if ($s->contains('lotus-notes', false)) {
             return $this->loader->load('lotus notes', $useragent);
         }
 
-        if ($s->contains('AskPeterBot', false)) {
+        if ($s->contains('askpeterbot', false)) {
             return $this->loader->load('askpeterbot', $useragent);
         }
 
@@ -1615,27 +1615,27 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('discovery bot', $useragent);
         }
 
-        if ($s->contains('YandexBot', false)) {
+        if ($s->contains('yandexbot', false)) {
             return $this->loader->load('yandexbot', $useragent);
         }
 
-        if ($s->containsAll(['MOSBookmarks', 'Link Checker'], false)) {
+        if ($s->containsAll(['mosbookmarks', 'link checker'], false)) {
             return $this->loader->load('mosbookmarks link checker', $useragent);
         }
 
-        if ($s->contains('MOSBookmarks', false)) {
+        if ($s->contains('mosbookmarks', false)) {
             return $this->loader->load('mosbookmarks', $useragent);
         }
 
-        if ($s->contains('WebMasterAid', false)) {
+        if ($s->contains('webmasteraid', false)) {
             return $this->loader->load('webmasteraid', $useragent);
         }
 
-        if ($s->contains('AboutUsBot Johnny5', false)) {
+        if ($s->contains('aboutusbot johnny5', false)) {
             return $this->loader->load('aboutus bot johnny5', $useragent);
         }
 
-        if ($s->contains('AboutUsBot', false)) {
+        if ($s->contains('aboutusbot', false)) {
             return $this->loader->load('aboutus bot', $useragent);
         }
 
@@ -1647,7 +1647,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('wayback archive bot', $useragent);
         }
 
-        if ($s->contains('OpenVAS', false)) {
+        if ($s->contains('openvas', false)) {
             return $this->loader->load('open vulnerability assessment system', $useragent);
         }
 
