@@ -1582,7 +1582,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "ca-crawler"
+        "ca\\-crawler"
       ]
     },
     "engine": "unknown"
@@ -3764,7 +3764,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "fr-crawler"
+        "fr\\-crawler"
       ]
     },
     "engine": "unknown"
@@ -5641,6 +5641,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "jig browser web; ",
         "jig browser web"
       ]
     },
@@ -9013,7 +9014,7 @@
     "engine": "unknown"
   },
   "plus5bot": {
-    "name": "Plus5Bot",
+    "name": "+5Bot",
     "manufacturer": "Plus5Files",
     "pdfSupport": true,
     "rssSupport": false,
@@ -13082,7 +13083,7 @@
     "engine": "gecko"
   },
   "wasalive bot": {
-    "name": "WASALive Bot",
+    "name": "Was-Alive Bot",
     "manufacturer": "WasaLive",
     "pdfSupport": true,
     "rssSupport": false,

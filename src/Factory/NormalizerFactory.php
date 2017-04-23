@@ -47,7 +47,7 @@ class NormalizerFactory
                 new Generic\NovarraGoogleTranslator(),
                 new Generic\SerialNumbers(),
                 new Generic\TransferEncoding(),
-                new Generic\YesWAP(),
+                //new Generic\Android(),
             ]
         );
     }

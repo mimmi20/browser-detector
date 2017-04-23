@@ -30,10 +30,11 @@
     "php": "^7.0",
     "psr/log": "^1.0",
     "psr/cache": "^1.0",
+    "danielstjules/stringy": "^2.4",
     "mimmi20/ua-device-type": "~3.0.4",
     "mimmi20/wurfl-generic-request": "~2.0.5",
     "mimmi20/ua-result": "~3.0.8",
-    "mimmi20/ua-normalizer": "~1.0.5",
+    "mimmi20/ua-normalizer": "~2.0.0",
     "mimmi20/browser-detector-version": "~2.0.5",
     "mimmi20/ua-result-company": "~1.0.4",
     "symfony/yaml": "^3.2"
@@ -42,8 +43,8 @@
     "phpunit/phpunit": "^5.7 || ^6.0",
     "monolog/monolog": "^1.20",
     "cache/cache": "dev-master",
-    "squizlabs/php_codesniffer": "^2.5",
-    "friendsofphp/php-cs-fixer": "^2.2"
+    "squizlabs/php_codesniffer": "^2.8",
+    "friendsofphp/php-cs-fixer": "^2.3"
   },
   "autoload": {
     "psr-4": {

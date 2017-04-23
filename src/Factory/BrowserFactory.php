@@ -1651,15 +1651,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('open vulnerability assessment system', $useragent);
         }
 
-        if ($s->contains('MixrankBot', false)) {
+        if ($s->contains('mixrankbot', false)) {
             return $this->loader->load('mixrankbot', $useragent);
         }
 
-        if ($s->contains('InfegyAtlas', false)) {
+        if ($s->contains('infegyatlas', false)) {
             return $this->loader->load('infegyatlas', $useragent);
         }
 
-        if ($s->contains('MojeekBot', false)) {
+        if ($s->contains('mojeekbot', false)) {
             return $this->loader->load('mojeekbot', $useragent);
         }
 
@@ -1667,35 +1667,35 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('memorybot', $useragent);
         }
 
-        if ($s->contains('DomainAppender', false)) {
+        if ($s->contains('domainappender', false)) {
             return $this->loader->load('domainappender bot', $useragent);
         }
 
-        if ($s->contains('GIDBot', false)) {
+        if ($s->contains('gidbot', false)) {
             return $this->loader->load('gidbot', $useragent);
         }
 
-        if ($s->contains('DBot', false)) {
+        if ($s->contains('dbot', false)) {
             return $this->loader->load('dbot', $useragent);
         }
 
-        if ($s->contains('PWBot', false)) {
+        if ($s->contains('pwbot', false)) {
             return $this->loader->load('pwbot', $useragent);
         }
 
-        if ($s->contains('+5Bot', false)) {
+        if ($s->contains('+5bot', false)) {
             return $this->loader->load('plus5bot', $useragent);
         }
 
-        if ($s->contains('WASALive-Bot', false)) {
+        if ($s->contains('wasalive-bot', false)) {
             return $this->loader->load('wasalive bot', $useragent);
         }
 
-        if ($s->contains('OpenHoseBot', false)) {
+        if ($s->contains('openhosebot', false)) {
             return $this->loader->load('openhosebot', $useragent);
         }
 
-        if ($s->contains('URLfilterDB-crawler', false)) {
+        if ($s->contains('urlfilterdb-crawler', false)) {
             return $this->loader->load('urlfilterdb crawler', $useragent);
         }
 
@@ -1703,27 +1703,27 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('metager2-verification-bot', $useragent);
         }
 
-        if ($s->contains('Powermarks', false)) {
+        if ($s->contains('powermarks', false)) {
             return $this->loader->load('powermarks', $useragent);
         }
 
-        if ($s->contains('CloudFlare-AlwaysOnline', false)) {
+        if ($s->contains('cloudflare-alwaysonline', false)) {
             return $this->loader->load('cloudflare alwaysonline', $useragent);
         }
 
-        if ($s->contains('Phantom.js bot', false)) {
+        if ($s->contains('phantom.js bot', false)) {
             return $this->loader->load('phantom.js bot', $useragent);
         }
 
-        if ($s->contains('Phantom', false)) {
+        if ($s->contains('phantom', false)) {
             return $this->loader->load('phantom browser', $useragent);
         }
 
-        if ($s->contains('Shrook', false)) {
+        if ($s->contains('shrook', false)) {
             return $this->loader->load('shrook', $useragent);
         }
 
-        if ($s->contains('netEstate NE Crawler', false)) {
+        if ($s->contains('netestate ne crawler', false)) {
             return $this->loader->load('netestate ne crawler', $useragent);
         }
 
@@ -1735,63 +1735,67 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('metageneratorcrawler', $useragent);
         }
 
-        if ($s->contains('ScreenerBot', false)) {
+        if ($s->contains('screenerbot', false)) {
             return $this->loader->load('screenerbot', $useragent);
         }
 
-        if ($s->contains('WebTarantula.com Crawler', false)) {
+        if ($s->contains('webtarantula.com crawler', false)) {
             return $this->loader->load('webtarantula', $useragent);
         }
 
-        if ($s->contains('BacklinkCrawler', false)) {
+        if ($s->contains('backlinkcrawler', false)) {
             return $this->loader->load('backlinkcrawler', $useragent);
         }
 
-        if ($s->contains('LinksCrawler', false)) {
+        if ($s->contains('linkscrawler', false)) {
             return $this->loader->load('linkscrawler', $useragent);
         }
 
-        if ($s->containsAny(['ssearch_bot', 'sSearch Crawler'], false)) {
+        if ($s->containsAny(['ssearch_bot', 'ssearch crawler'], false)) {
             return $this->loader->load('ssearch crawler', $useragent);
         }
 
-        if ($s->contains('HRCrawler', false)) {
+        if ($s->contains('hrcrawler', false)) {
             return $this->loader->load('hrcrawler', $useragent);
         }
 
-        if ($s->contains('ICC-Crawler', false)) {
+        if ($s->contains('icc-crawler', false)) {
             return $this->loader->load('icc-crawler', $useragent);
         }
 
-        if ($s->contains('Arachnida Web Crawler', false)) {
+        if ($s->contains('arachnida web crawler', false)) {
             return $this->loader->load('arachnida web crawler', $useragent);
         }
 
-        if ($s->contains('Finderlein Research Crawler', false)) {
+        if ($s->contains('finderlein research crawler', false)) {
             return $this->loader->load('finderlein research crawler', $useragent);
         }
 
-        if ($s->contains('TestCrawler', false)) {
+        if ($s->contains('testcrawler', false)) {
             return $this->loader->load('testcrawler', $useragent);
         }
 
-        if ($s->contains('Scopia Crawler', false)) {
+        if ($s->contains('scopia crawler', false)) {
             return $this->loader->load('scopia crawler', $useragent);
         }
 
-        if ($s->contains('Crawler', false)) {
-            return $this->loader->load('crawler', $useragent);
+        if ($s->contains('metajobbot', false)) {
+            return $this->loader->load('metajobbot', $useragent);
         }
 
-        if ($s->contains('MetaJobBot', false)) {
-            return $this->loader->load('metajobbot', $useragent);
+        if ($s->contains('lucidworks', false)) {
+            return $this->loader->load('lucidworks bot', $useragent);
+        }
+
+        if ($s->contains('crawler', false)) {
+            return $this->loader->load('crawler', $useragent);
         }
 
         if ($s->contains('jig browser web', false)) {
             return $this->loader->load('jig browser web', $useragent);
         }
 
-        if ($s->contains('T-H-U-N-D-E-R-S-T-O-N-E', false)) {
+        if ($s->contains('t-h-u-n-d-e-r-s-t-o-n-e', false)) {
             return $this->loader->load('texis webscript', $useragent);
         }
 
@@ -1799,7 +1803,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('focuseekbot', $useragent);
         }
 
-        if ($s->contains('vBSEO', false)) {
+        if ($s->contains('vbseo', false)) {
             return $this->loader->load('vbulletin seo bot', $useragent);
         }
 
@@ -1807,7 +1811,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('kgbody', $useragent);
         }
 
-        if ($s->contains('JobdiggerSpider', false)) {
+        if ($s->contains('jobdiggerspider', false)) {
             return $this->loader->load('jobdiggerspider', $useragent);
         }
 
@@ -1819,19 +1823,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('kulturarw3', $useragent);
         }
 
-        if ($s->contains('LucidWorks', false)) {
-            return $this->loader->load('lucidworks bot', $useragent);
-        }
-
-        if ($s->contains('MerchantCentricBot', false)) {
+        if ($s->contains('merchantcentricbot', false)) {
             return $this->loader->load('merchantcentricbot', $useragent);
         }
 
-        if ($s->contains('Nett.io bot', false)) {
+        if ($s->contains('nett.io bot', false)) {
             return $this->loader->load('nett.io bot', $useragent);
         }
 
-        if ($s->contains('SemanticBot', false)) {
+        if ($s->contains('semanticbot', false)) {
             return $this->loader->load('semanticbot', $useragent);
         }
 
@@ -3803,10 +3803,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('OnePassword', false)) {
             return $this->loader->load('1password', $useragent);
-        }
-
-        if ($s->contains('OpenVas', false)) {
-            return $this->loader->load('open vulnerability assessment system', $useragent);
         }
 
         if ($s->contains('OpenWeb', false)) {
