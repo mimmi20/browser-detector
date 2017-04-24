@@ -4870,10 +4870,8 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "iBooks Author"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "webkit"
   },
@@ -5543,10 +5541,8 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "iWeb"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "webkit"
   },
@@ -10151,7 +10147,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Sandvox"
+        "Sandvox",
+        "Version"
       ]
     },
     "engine": "webkit"
