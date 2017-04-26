@@ -3440,20 +3440,6 @@
     },
     "engine": "webkit"
   },
-  "fastladder": {
-    "name": "Fastladder",
-    "manufacturer": "Unknown",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Fastladder FeedFetcher"
-      ]
-    },
-    "engine": "unknown"
-  },
   "feedblitz": {
     "name": "FeedBlitz",
     "manufacturer": "FeedBlitz",
@@ -12133,8 +12119,10 @@
     "rssSupport": false,
     "type": "bot",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "TOB"
+      ]
     },
     "engine": "unknown"
   },
