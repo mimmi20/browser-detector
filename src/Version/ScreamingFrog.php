@@ -17,7 +17,7 @@ namespace BrowserDetector\Version;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ObigoQ implements VersionCacheFactoryInterface
+class ScreamingFrog implements VersionCacheFactoryInterface
 {
     /**
      * returns the version of the operating system/platform
@@ -29,33 +29,15 @@ class ObigoQ implements VersionCacheFactoryInterface
     public function detectVersion($useragent)
     {
         $doMatch = preg_match(
-            '/ObigoInternetBrowser\/Q(\d+)/',
+            '/Screaming Frog SEO Spider\/\d+,\d/',
             $useragent,
             $matches
         );
 
         if ($doMatch) {
-            return VersionFactory::set($matches[1]);
+            $useragent = str_replace(',', '.', $useragent);
         }
 
-        $doMatch = preg_match(
-            '/obigo\-browser\/q(\d+)/i',
-            $useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($matches[1]);
-        }
-
-        return VersionFactory::detectVersion(
-            $useragent,
-            [
-                'Teleca\-Q',
-                'Obigo\-Q',
-                'Obigo\/Q',
-                'Teleca\/Q',
-            ]
-        );
+        return VersionFactory::detectVersion($useragent, ['Screaming Frog SEO Spider']);
     }
 }

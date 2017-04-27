@@ -1057,6 +1057,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "BigBozz\\-",
         "BigBozz"
       ]
     },
@@ -5368,7 +5369,7 @@
     "engine": "unknown"
   },
   "internetseer.com": {
-    "name": "InternetSeer.com",
+    "name": "InternetSeer Bot",
     "manufacturer": "InternetSeer",
     "pdfSupport": true,
     "rssSupport": false,
@@ -8318,6 +8319,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "OpenWebSpider v",
         "OpenWebSpider"
       ]
     },
@@ -10258,10 +10260,8 @@
     "rssSupport": false,
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Screaming Frog SEO Spider"
-      ]
+      "class": "\\BrowserDetector\\Version\\ScreamingFrog",
+      "search": null
     },
     "engine": "unknown"
   },
@@ -11821,7 +11821,8 @@
         "Obigo Browser",
         "Obigo\\-Browser",
         "Teleca\\-Obigo",
-        "TelecaBrowser"
+        "TelecaBrowser",
+        "obigo\\-browser"
       ]
     },
     "engine": "unknown"

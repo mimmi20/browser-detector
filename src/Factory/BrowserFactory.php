@@ -463,6 +463,10 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('orangebot', $useragent);
         }
 
+        if ($s->containsAny(['tob', 't-online browser'], false)) {
+            return $this->loader->load('t-online browser', $useragent);
+        }
+
         if (preg_match('/Mozilla\/5\.0.*\(.*Trident\/8\.0.*rv\:\d+\).*/', $useragent)
             || preg_match('/Mozilla\/5\.0.*\(.*Trident\/7\.0.*\) like Gecko.*/', $useragent)
             || preg_match('/Mozilla\/5\.0.*\(.*MSIE 10\.\d.*Trident\/(4|5|6|7|8)\.0.*/', $useragent)
@@ -1143,6 +1147,18 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('k-meleon', $useragent);
         }
 
+        if ($s->contains('curb', false)) {
+            return $this->loader->load('curb', $useragent);
+        }
+
+        if ($s->contains('link_thumbnailer', false)) {
+            return $this->loader->load('link_thumbnailer', $useragent);
+        }
+
+        if ($s->contains('ruby', false)) {
+            return $this->loader->load('generic ruby crawler', $useragent);
+        }
+
         if ($s->containsAny(['firefox', 'minefield', 'shiretoko', 'bonecho', 'namoroka'], false)) {
             return $this->loader->load('firefox', $useragent);
         }
@@ -1687,6 +1703,10 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('gidbot', $useragent);
         }
 
+        if ($s->contains('RED', true)) {
+            return $this->loader->load('redbot', $useragent);
+        }
+
         if ($s->contains('dbot', false)) {
             return $this->loader->load('dbot', $useragent);
         }
@@ -1821,6 +1841,102 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('virtuoso', false)) {
             return $this->loader->load('virtuoso', $useragent);
+        }
+
+        if ($s->contains('discovered', false)) {
+            return $this->loader->load('discovered', $useragent);
+        }
+
+        if ($s->contains('aboundex', false)) {
+            return $this->loader->load('aboundexbot', $useragent);
+        }
+
+        if ($s->contains('r6_commentreader', false)) {
+            return $this->loader->load('r6 commentreader', $useragent);
+        }
+
+        if ($s->contains('r6_feedfetcher', false)) {
+            return $this->loader->load('r6 feedfetcher', $useragent);
+        }
+
+        if ($s->contains('crazywebcrawler', false)) {
+            return $this->loader->load('crazywebcrawler', $useragent);
+        }
+
+        if ($s->contains('crawler4j', false)) {
+            return $this->loader->load('crawler4j', $useragent);
+        }
+
+        if ($s->contains('ichiro/mobile', false)) {
+            return $this->loader->load('ichiro mobile bot', $useragent);
+        }
+
+        if ($s->contains('ichiro', false)) {
+            return $this->loader->load('ichiro bot', $useragent);
+        }
+
+        if ($s->contains('tineye-bot', false)) {
+            return $this->loader->load('tineye bot', $useragent);
+        }
+
+        if ($s->contains('livelapbot', false)) {
+            return $this->loader->load('livelap crawler', $useragent);
+        }
+
+        if ($s->contains('SafeSearch microdata crawler', false)) {
+            return $this->loader->load('safesearch microdata crawler', $useragent);
+        }
+
+        if ($s->contains('fastbot crawler', false)) {
+            return $this->loader->load('fastbot crawler', $useragent);
+        }
+
+        if ($s->contains('BndCrawler', false)) {
+            return $this->loader->load('bnd crawler', $useragent);
+        }
+
+        if ($s->contains('Camcrawler', false)) {
+            return $this->loader->load('camcrawler', $useragent);
+        }
+
+        if ($s->contains('DomainCrawler', false)) {
+            return $this->loader->load('domaincrawler', $useragent);
+        }
+
+        if ($s->contains('ExbLanguageCrawler', false)) {
+            return $this->loader->load('exb language crawler', $useragent);
+        }
+
+        if ($s->contains('IcjobsCrawler', false)) {
+            return $this->loader->load('icjobs crawler', $useragent);
+        }
+
+        if ($s->contains('InfohelferCrawler', false)) {
+            return $this->loader->load('infohelfer crawler', $useragent);
+        }
+
+        if ($s->contains('IntegromedbCrawler', false)) {
+            return $this->loader->load('integromedb crawler', $useragent);
+        }
+
+        if ($s->contains('JustCrawler', false)) {
+            return $this->loader->load('just-crawler', $useragent);
+        }
+
+        if ($s->contains('MagpieCrawler', false)) {
+            return $this->loader->load('magpie crawler', $useragent);
+        }
+
+        if ($s->contains('MsieCrawler', false)) {
+            return $this->loader->load('msiecrawler', $useragent);
+        }
+
+        if ($s->contains('ThemeSearchAndExtractionCrawler', false)) {
+            return $this->loader->load('themesearchandextractioncrawler', $useragent);
+        }
+
+        if ($s->contains('Yadowscrawler', false)) {
+            return $this->loader->load('yadowscrawler', $useragent);
         }
 
         if ($s->contains('crawler', false)) {
@@ -1975,7 +2091,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('yahoo link preview', $useragent);
         }
 
-        if ($s->contains('kraken', false)) {
+        if ($s->containsAll(['kraken', 'linkfluence'], false)) {
             return $this->loader->load('kraken', $useragent);
         }
 
@@ -2133,18 +2249,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('validator.nu/lv', $useragent);
         }
 
-        if ($s->contains('curb', false)) {
-            return $this->loader->load('curb', $useragent);
-        }
-
-        if ($s->contains('link_thumbnailer', false)) {
-            return $this->loader->load('link_thumbnailer', $useragent);
-        }
-
-        if ($s->contains('ruby', false)) {
-            return $this->loader->load('generic ruby crawler', $useragent);
-        }
-
         if ($s->contains('securepoint cf', false)) {
             return $this->loader->load('securepoint content filter', $useragent);
         }
@@ -2159,10 +2263,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('domnutch', false)) {
             return $this->loader->load('domnutch bot', $useragent);
-        }
-
-        if ($s->contains('discovered', false)) {
-            return $this->loader->load('discovered', $useragent);
         }
 
         if ($s->contains('nutch', false)) {
@@ -2277,10 +2377,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('html validator', $useragent);
         }
 
-        if ($s->contains('aboundex', false)) {
-            return $this->loader->load('aboundexbot', $useragent);
-        }
-
         if ($s->contains('yisouspider', false)) {
             return $this->loader->load('yisouspider', $useragent);
         }
@@ -2295,14 +2391,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('openwebspider', false)) {
             return $this->loader->load('openwebspider', $useragent);
-        }
-
-        if ($s->contains('r6_commentreader', false)) {
-            return $this->loader->load('r6 commentreader', $useragent);
-        }
-
-        if ($s->contains('r6_feedfetcher', false)) {
-            return $this->loader->load('r6 feedfetcher', $useragent);
         }
 
         if ($s->containsAny(['psbot-image', 'psbot-page'], false)) {
@@ -2355,6 +2443,22 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('elinks', false)) {
             return $this->loader->load('elinks', $useragent);
+        }
+
+        if ($s->contains('linkstats bot', false)) {
+            return $this->loader->load('linkstats bot', $useragent);
+        }
+
+        if ($s->contains('BCKLINKS', false)) {
+            return $this->loader->load('bcklinks', $useragent);
+        }
+
+        if ($s->contains('CheckLinks', false)) {
+            return $this->loader->load('checklinks', $useragent);
+        }
+
+        if ($s->contains('Findlinks', false)) {
+            return $this->loader->load('findlinks', $useragent);
         }
 
         if ($s->contains('links', false)) {
@@ -2413,10 +2517,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('pingdom', $useragent);
         }
 
-        if ($s->contains('crazywebcrawler', false)) {
-            return $this->loader->load('crazywebcrawler', $useragent);
-        }
-
         if ($s->contains('gg peekbot', false)) {
             return $this->loader->load('gg peekbot', $useragent);
         }
@@ -2435,10 +2535,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('thumbnailagent', false)) {
             return $this->loader->load('thumbnailagent', $useragent);
-        }
-
-        if ($s->contains('linkstats bot', false)) {
-            return $this->loader->load('linkstats bot', $useragent);
         }
 
         if ($s->contains('ez publish link validator', false)) {
@@ -2461,12 +2557,28 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('synhttpclient', $useragent);
         }
 
-        if ($s->contains('httpclient', false)) {
-            return $this->loader->load('httpclient', $useragent);
+        if ($s->contains('eventmachine httpclient', false)) {
+            return $this->loader->load('eventmachine httpclient', $useragent);
         }
 
-        if ($s->containsAny(['tob', 't-online browser'], false)) {
-            return $this->loader->load('t-online browser', $useragent);
+        if ($s->contains('ApacheHttpClient', false)) {
+            return $this->loader->load('apache-httpclient', $useragent);
+        }
+
+        if ($s->contains('CoreClassHttpClientCached', false)) {
+            return $this->loader->load('core_class_httpclient_cached', $useragent);
+        }
+
+        if ($s->contains('JakartaCommonsHttpClient', false)) {
+            return $this->loader->load('jakarta commons httpclient', $useragent);
+        }
+
+        if ($s->contains('livedoor', false)) {
+            return $this->loader->load('livedoor', $useragent);
+        }
+
+        if ($s->contains('httpclient', false)) {
+            return $this->loader->load('httpclient', $useragent);
         }
 
         if ($s->contains('implisensebot', false)) {
@@ -2513,10 +2625,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('forum poster', $useragent);
         }
 
-        if ($s->contains('crawler4j', false)) {
-            return $this->loader->load('crawler4j', $useragent);
-        }
-
         if ($s->contains('facebot', false)) {
             return $this->loader->load('facebot', $useragent);
         }
@@ -2549,10 +2657,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('ipv4scan', $useragent);
         }
 
-        if ($s->contains('RED', true)) {
-            return $this->loader->load('redbot', $useragent);
-        }
-
         if ($s->contains('domainsbot', false)) {
             return $this->loader->load('domainsbot', $useragent);
         }
@@ -2563,14 +2667,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('ramblermail', false)) {
             return $this->loader->load('ramblermail bot', $useragent);
-        }
-
-        if ($s->contains('ichiro/mobile', false)) {
-            return $this->loader->load('ichiro mobile bot', $useragent);
-        }
-
-        if ($s->contains('ichiro', false)) {
-            return $this->loader->load('ichiro bot', $useragent);
         }
 
         if ($s->contains('iisbot', false)) {
@@ -2589,10 +2685,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('feedburner', $useragent);
         }
 
-        if ($s->contains('livedoor', false)) {
-            return $this->loader->load('livedoor', $useragent);
-        }
-
         if ($s->contains('icarus6j', false)) {
             return $this->loader->load('icarus6j', $useragent);
         }
@@ -2603,10 +2695,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('blogshares spiders', false)) {
             return $this->loader->load('blogshares spiders', $useragent);
-        }
-
-        if ($s->contains('tineye-bot', false)) {
-            return $this->loader->load('tineye bot', $useragent);
         }
 
         if ($s->contains('quickiwiki', false)) {
@@ -2705,19 +2793,15 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('goldfire server', $useragent);
         }
 
-        if ($s->contains('eventmachine httpclient', false)) {
-            return $this->loader->load('eventmachine httpclient', $useragent);
-        }
-
-        if ($s->contains('iBall', false)) {
+        if ($s->contains('iball', false)) {
             return $this->loader->load('iball', $useragent);
         }
 
-        if ($s->contains('InAGist URL Resolver', false)) {
+        if ($s->contains('inagist url resolver', false)) {
             return $this->loader->load('inagist url resolver', $useragent);
         }
 
-        if ($s->contains('Jeode', false)) {
+        if ($s->contains('jeode', false)) {
             return $this->loader->load('jeode', $useragent);
         }
 
@@ -2729,15 +2813,11 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('linkedinbot', $useragent);
         }
 
-        if ($s->contains('LivelapBot', false)) {
-            return $this->loader->load('livelap crawler', $useragent);
-        }
-
-        if ($s->contains('MixBot', false)) {
+        if ($s->contains('mixbot', false)) {
             return $this->loader->load('mixbot', $useragent);
         }
 
-        if ($s->contains('BuSecurityProject', false)) {
+        if ($s->contains('busecurityproject', false)) {
             return $this->loader->load('busecurityproject', $useragent);
         }
 
@@ -2849,10 +2929,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('accserver', $useragent);
         }
 
-        if ($s->contains('SafeSearch microdata crawler', false)) {
-            return $this->loader->load('safesearch microdata crawler', $useragent);
-        }
-
         if ($s->contains('iZSearch', false)) {
             return $this->loader->load('izsearch bot', $useragent);
         }
@@ -2919,10 +2995,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('test certificate info', false)) {
             return $this->loader->load('test certificate info', $useragent);
-        }
-
-        if ($s->contains('fastbot crawler', false)) {
-            return $this->loader->load('fastbot crawler', $useragent);
         }
 
         if ($s->contains('Riddler', false)) {
@@ -3109,10 +3181,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('brokenlinkcheck', $useragent);
         }
 
-        if ($s->contains('BCKLINKS', false)) {
-            return $this->loader->load('bcklinks', $useragent);
-        }
-
         if ($s->contains('Faraday', false)) {
             return $this->loader->load('faraday', $useragent);
         }
@@ -3265,10 +3333,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('alcohol search', $useragent);
         }
 
-        if ($s->contains('ApacheHttpClient', false)) {
-            return $this->loader->load('apache-httpclient', $useragent);
-        }
-
         if ($s->contains('ArchiveDeBot', false)) {
             return $this->loader->load('internet archive de', $useragent);
         }
@@ -3309,10 +3373,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('dynamic realtime rating', $useragent);
         }
 
-        if ($s->contains('BndCrawler', false)) {
-            return $this->loader->load('bnd crawler', $useragent);
-        }
-
         if ($s->contains('BoardReader', false)) {
             return $this->loader->load('boardreader', $useragent);
         }
@@ -3329,20 +3389,12 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('bwc', $useragent);
         }
 
-        if ($s->contains('Camcrawler', false)) {
-            return $this->loader->load('camcrawler', $useragent);
-        }
-
         if ($s->contains('CamelHttpStream', false)) {
             return $this->loader->load('camelhttpstream', $useragent);
         }
 
         if ($s->contains('Charlotte', false)) {
             return $this->loader->load('charlotte', $useragent);
-        }
-
-        if ($s->contains('CheckLinks', false)) {
-            return $this->loader->load('checklinks', $useragent);
         }
 
         if ($s->contains('Choosy', false)) {
@@ -3375,10 +3427,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('CoobyBot', false)) {
             return $this->loader->load('coobybot', $useragent);
-        }
-
-        if ($s->contains('CoreClassHttpClientCached', false)) {
-            return $this->loader->load('core_class_httpclient_cached', $useragent);
         }
 
         if ($s->contains('Coverscout', false)) {
@@ -3417,10 +3465,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('docomo', $useragent);
         }
 
-        if ($s->contains('DomainCrawler', false)) {
-            return $this->loader->load('domaincrawler', $useragent);
-        }
-
         if ($s->contains('Elefent', false)) {
             return $this->loader->load('elefent', $useragent);
         }
@@ -3441,10 +3485,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('eventguru bot', $useragent);
         }
 
-        if ($s->contains('ExbLanguageCrawler', false)) {
-            return $this->loader->load('exb language crawler', $useragent);
-        }
-
         if ($s->contains('Extras4iMovie', false)) {
             return $this->loader->load('extras4imovie', $useragent);
         }
@@ -3459,10 +3499,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('FeedFinder', false)) {
             return $this->loader->load('feedfinder', $useragent);
-        }
-
-        if ($s->contains('Findlinks', false)) {
-            return $this->loader->load('findlinks', $useragent);
         }
 
         if ($s->contains('Firebird', false)) {
@@ -3581,10 +3617,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('ichromy', $useragent);
         }
 
-        if ($s->contains('IcjobsCrawler', false)) {
-            return $this->loader->load('icjobs crawler', $useragent);
-        }
-
         if ($s->contains('ImageMobile', false)) {
             return $this->loader->load('imagemobile', $useragent);
         }
@@ -3605,20 +3637,12 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('inettvbrowser', $useragent);
         }
 
-        if ($s->contains('InfohelferCrawler', false)) {
-            return $this->loader->load('infohelfer crawler', $useragent);
-        }
-
         if ($s->contains('InsiteRobot', false)) {
             return $this->loader->load('insite robot', $useragent);
         }
 
         if ($s->contains('Insitesbot', false)) {
             return $this->loader->load('insitesbot', $useragent);
-        }
-
-        if ($s->contains('IntegromedbCrawler', false)) {
-            return $this->loader->load('integromedb crawler', $useragent);
         }
 
         if ($s->contains('InternetArchive', false)) {
@@ -3633,16 +3657,8 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('isource+ app', $useragent);
         }
 
-        if ($s->contains('JakartaCommonsHttpClient', false)) {
-            return $this->loader->load('jakarta commons httpclient', $useragent);
-        }
-
         if ($s->contains('JigsawCssValidator', false)) {
             return $this->loader->load('jigsaw css validator', $useragent);
-        }
-
-        if ($s->contains('JustCrawler', false)) {
-            return $this->loader->load('just-crawler', $useragent);
         }
 
         if ($s->contains('Kindle', false)) {
@@ -3683,10 +3699,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('MacInroyPrivacyAuditors', false)) {
             return $this->loader->load('macinroy privacy auditors', $useragent);
-        }
-
-        if ($s->contains('MagpieCrawler', false)) {
-            return $this->loader->load('magpie crawler', $useragent);
         }
 
         if ($s->contains('MailExchangeWebServices', false)) {
@@ -3731,10 +3743,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('Mozilla', false)) {
             return $this->loader->load('mozilla', $useragent);
-        }
-
-        if ($s->contains('MsieCrawler', false)) {
-            return $this->loader->load('msiecrawler', $useragent);
         }
 
         if ($s->contains('MsSearch', false)) {
@@ -4129,10 +4137,6 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('the bat download manager', $useragent);
         }
 
-        if ($s->contains('ThemeSearchAndExtractionCrawler', false)) {
-            return $this->loader->load('themesearchandextractioncrawler', $useragent);
-        }
-
         if ($s->contains('ThumbShotsBot', false)) {
             return $this->loader->load('thumbshotsbot', $useragent);
         }
@@ -4387,10 +4391,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('YacyBot', false)) {
             return $this->loader->load('yacy bot', $useragent);
-        }
-
-        if ($s->contains('Yadowscrawler', false)) {
-            return $this->loader->load('yadowscrawler', $useragent);
         }
 
         if ($s->contains('Yahoo', false)) {
