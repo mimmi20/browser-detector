@@ -3046,20 +3046,6 @@
     },
     "engine": "unknown"
   },
-  "entireweb": {
-    "name": "Entireweb",
-    "manufacturer": "Entireweb",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Entireweb"
-      ]
-    },
-    "engine": "unknown"
-  },
   "epiphany": {
     "name": "Epiphany",
     "manufacturer": "TheGnomeProject",
@@ -6901,7 +6887,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Microsoft CryptoAPI"
+        "Microsoft CryptoAPI",
+        "Microsoft\\-CryptoAPI"
       ]
     },
     "engine": "unknown"
@@ -8747,7 +8734,7 @@
     "engine": "unknown"
   },
   "perfect browser": {
-    "name": "PERFECT Browser",
+    "name": "Perfect Browser",
     "manufacturer": "Unknown",
     "pdfSupport": true,
     "rssSupport": false,
@@ -11284,7 +11271,7 @@
   },
   "speedy spider": {
     "name": "Speedy Spider",
-    "manufacturer": "Unknown",
+    "manufacturer": "Entireweb",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "bot",
