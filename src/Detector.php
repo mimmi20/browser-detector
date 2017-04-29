@@ -110,12 +110,9 @@ class Detector
         list($browser, $engine) = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $platform);
         $engineLoader           = new Loader\EngineLoader($this->cache);
 
-        if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
-            $this->logger->debug('engine forced to "webkit" on iOS');
-            $engine = $engineLoader->load('webkit', $browserUa);
-        } elseif (null === $engine || in_array($engine->getName(), [null, 'unknown'])) {
+        if (null === $engine || in_array($engine->getName(), [null, 'unknown'])) {
             $this->logger->debug('engine not detected from browser');
-            $engine = (new Factory\EngineFactory($engineLoader))->detect($browserUa, $browserLoader);
+            $engine = (new Factory\EngineFactory($engineLoader))->detect($browserUa, $browserLoader, $platform);
         }
 
         return new Result(

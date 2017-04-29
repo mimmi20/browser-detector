@@ -31,7 +31,7 @@ class MicrosoftAccess implements VersionCacheFactoryInterface
     public function detectVersion($useragent)
     {
         $doMatch = preg_match(
-            '/Access(\/| )([\d\.]+)/',
+            '/Access[\/ ]([\d\.]+)/',
             $useragent,
             $matches
         );

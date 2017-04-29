@@ -11,15 +11,13 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
-
 /**
  * @category  BrowserDetector
  *
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftPowerPoint implements VersionCacheFactoryInterface
+class ScreamingFrog implements VersionCacheFactoryInterface
 {
     /**
      * returns the version of the operating system/platform
@@ -31,17 +29,15 @@ class MicrosoftPowerPoint implements VersionCacheFactoryInterface
     public function detectVersion($useragent)
     {
         $doMatch = preg_match(
-            '/PowerPoint[\/ ]([\d\.]+)/',
+            '/Screaming Frog SEO Spider\/\d+,\d/',
             $useragent,
             $matches
         );
 
-        $helper = new MicrosoftOfficeHelper();
-
         if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
+            $useragent = str_replace(',', '.', $useragent);
         }
 
-        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($useragent)));
+        return VersionFactory::detectVersion($useragent, ['Screaming Frog SEO Spider']);
     }
 }

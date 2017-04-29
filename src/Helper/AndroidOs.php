@@ -54,6 +54,10 @@ class AndroidOs
             return true;
         }
 
+        if (preg_match('/(htc_sensation_z710e)/i', $this->useragent)) {
+            return true;
+        }
+
         return false;
     }
 }

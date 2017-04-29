@@ -39,7 +39,7 @@ class ObigoQ implements VersionCacheFactoryInterface
         }
 
         $doMatch = preg_match(
-            '/obigo\-browser\/Q(\d+)/',
+            '/obigo\-browser\/q(\d+)/i',
             $useragent,
             $matches
         );

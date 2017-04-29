@@ -31,7 +31,7 @@ class MicrosoftOfficeSyncProc implements VersionCacheFactoryInterface
     public function detectVersion($useragent)
     {
         $doMatch = preg_match(
-            '/Office SyncProc(\/| )([\d\.]+)/',
+            '/Office SyncProc[\/ ]([\d\.]+)/',
             $useragent,
             $matches
         );

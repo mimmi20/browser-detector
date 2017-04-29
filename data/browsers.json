@@ -540,7 +540,7 @@
     "engine": "unknown"
   },
   "apple appstore app": {
-    "name": "Apple AppStore App",
+    "name": "AppStore App",
     "manufacturer": "Apple",
     "pdfSupport": true,
     "rssSupport": false,
@@ -576,7 +576,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "CoreMedia v"
+        "CoreMedia v",
+        "AppleCoreMedia"
       ]
     },
     "engine": "webkit"
@@ -588,10 +589,8 @@
     "rssSupport": false,
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Mail"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "webkit"
   },
@@ -1058,6 +1057,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "BigBozz\\-",
         "BigBozz"
       ]
     },
@@ -1154,7 +1154,7 @@
     "engine": "unknown"
   },
   "blackberry playbook tablet": {
-    "name": "Blackberry Playbook Tablet",
+    "name": "Blackberry Playbook Browser",
     "manufacturer": "Rim",
     "pdfSupport": true,
     "rssSupport": false,
@@ -1357,7 +1357,8 @@
       "class": "VersionFactory",
       "search": [
         "80legs",
-        "008"
+        "80bot",
+        "008\\/"
       ]
     },
     "engine": "gecko"
@@ -1582,7 +1583,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "ca-crawler"
+        "ca\\-crawler"
       ]
     },
     "engine": "unknown"
@@ -2134,7 +2135,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "CoolNovoChromePlus"
+        "ChromePlus"
       ]
     },
     "engine": "unknown"
@@ -2760,7 +2761,7 @@
     "manufacturer": "Unknown",
     "pdfSupport": true,
     "rssSupport": false,
-    "type": "browser",
+    "type": "wap-browser",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -3041,20 +3042,6 @@
       "class": "VersionFactory",
       "search": [
         "Embed PHP Library"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "entireweb": {
-    "name": "Entireweb",
-    "manufacturer": "Entireweb",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Entireweb"
       ]
     },
     "engine": "unknown"
@@ -3440,20 +3427,6 @@
     },
     "engine": "webkit"
   },
-  "fastladder": {
-    "name": "Fastladder",
-    "manufacturer": "Unknown",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Fastladder FeedFetcher"
-      ]
-    },
-    "engine": "unknown"
-  },
   "feedblitz": {
     "name": "FeedBlitz",
     "manufacturer": "FeedBlitz",
@@ -3764,7 +3737,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "fr-crawler"
+        "fr\\-crawler"
       ]
     },
     "engine": "unknown"
@@ -4870,10 +4843,8 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "iBooks Author"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "webkit"
   },
@@ -5384,7 +5355,7 @@
     "engine": "unknown"
   },
   "internetseer.com": {
-    "name": "InternetSeer.com",
+    "name": "InternetSeer Bot",
     "manufacturer": "InternetSeer",
     "pdfSupport": true,
     "rssSupport": false,
@@ -5543,10 +5514,8 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "iWeb"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "webkit"
   },
@@ -5641,6 +5610,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "jig browser web; ",
         "jig browser web"
       ]
     },
@@ -5779,10 +5749,8 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Kenshoo"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },
@@ -6147,7 +6115,8 @@
       "class": "VersionFactory",
       "search": [
         "linkdex\\.com",
-        "linkdex\\.com\\/v"
+        "linkdex\\.com\\/v",
+        "linkdexbot"
       ]
     },
     "engine": "unknown"
@@ -6477,7 +6446,7 @@
     "engine": "unknown"
   },
   "macappstore": {
-    "name": "MacAppStore",
+    "name": "Mac AppStore App",
     "manufacturer": "Apple",
     "pdfSupport": true,
     "rssSupport": false,
@@ -6503,20 +6472,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "maemo browser": {
-    "name": "Maemo Browser",
-    "manufacturer": "Unknown",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Maemo Browser"
-      ]
-    },
-    "engine": "gecko"
   },
   "magpie crawler": {
     "name": "Magpie Crawler",
@@ -6561,7 +6516,7 @@
     "engine": "unknown"
   },
   "mailchimp.com": {
-    "name": "MailChimp.com",
+    "name": "MailChimp",
     "manufacturer": "TheRocketScienceGroup",
     "pdfSupport": true,
     "rssSupport": false,
@@ -6638,7 +6593,7 @@
     "manufacturer": "Unknown",
     "pdfSupport": true,
     "rssSupport": false,
-    "type": "browser",
+    "type": "wap-browser",
     "version": {
       "class": null,
       "search": null
@@ -6905,7 +6860,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "MicroB"
+        "MicroB",
+        "Maemo Browser"
       ]
     },
     "engine": "gecko"
@@ -6931,7 +6887,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Microsoft CryptoAPI"
+        "Microsoft CryptoAPI",
+        "Microsoft\\-CryptoAPI"
       ]
     },
     "engine": "unknown"
@@ -7822,7 +7779,7 @@
     "engine": "gecko"
   },
   "netscape navigator": {
-    "name": "Netscape Navigator",
+    "name": "Navigator",
     "manufacturer": "Netscape",
     "pdfSupport": true,
     "rssSupport": false,
@@ -7922,7 +7879,7 @@
     "manufacturer": "NewsBlur",
     "pdfSupport": true,
     "rssSupport": false,
-    "type": "bot",
+    "type": "feed-reader",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -8349,6 +8306,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "OpenWebSpider v",
         "OpenWebSpider"
       ]
     },
@@ -8395,7 +8353,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "OPiOS"
+        "OPiOS",
+        "Opera Mini"
       ]
     },
     "engine": "unknown"
@@ -8775,7 +8734,7 @@
     "engine": "unknown"
   },
   "perfect browser": {
-    "name": "PERFECT Browser",
+    "name": "Perfect Browser",
     "manufacturer": "Unknown",
     "pdfSupport": true,
     "rssSupport": false,
@@ -9026,7 +8985,7 @@
     "engine": "unknown"
   },
   "plus5bot": {
-    "name": "Plus5Bot",
+    "name": "+5Bot",
     "manufacturer": "Plus5Files",
     "pdfSupport": true,
     "rssSupport": false,
@@ -9517,7 +9476,7 @@
     "manufacturer": "Apple",
     "pdfSupport": true,
     "rssSupport": false,
-    "type": "bot",
+    "type": "multimedia-player",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -9739,6 +9698,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "reddit pic scraper v",
         "reddit pic scraper"
       ]
     },
@@ -10162,7 +10122,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Sandvox"
+        "Sandvox",
+        "Version"
       ]
     },
     "engine": "webkit"
@@ -10286,10 +10247,8 @@
     "rssSupport": false,
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Screaming Frog SEO Spider"
-      ]
+      "class": "\\BrowserDetector\\Version\\ScreamingFrog",
+      "search": null
     },
     "engine": "unknown"
   },
@@ -11261,6 +11220,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "SoundCloud\\-Android",
         "SoundCloud"
       ]
     },
@@ -11311,7 +11271,7 @@
   },
   "speedy spider": {
     "name": "Speedy Spider",
-    "manufacturer": "Unknown",
+    "manufacturer": "Entireweb",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "bot",
@@ -11848,7 +11808,8 @@
         "Obigo Browser",
         "Obigo\\-Browser",
         "Teleca\\-Obigo",
-        "TelecaBrowser"
+        "TelecaBrowser",
+        "obigo\\-browser"
       ]
     },
     "engine": "unknown"
@@ -12146,8 +12107,10 @@
     "rssSupport": false,
     "type": "bot",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "TOB"
+      ]
     },
     "engine": "unknown"
   },
@@ -12518,6 +12481,7 @@
       "search": [
         "UC Browser",
         "UCBrowser",
+        "UBrowser",
         "UCWEB",
         "Browser"
       ]
@@ -12533,10 +12497,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "UC Browser",
-        "UCBrowser",
-        "UCWEB",
-        "Browser"
+        "UCBrowserHD"
       ]
     },
     "engine": "unknown"
@@ -13095,7 +13056,7 @@
     "engine": "gecko"
   },
   "wasalive bot": {
-    "name": "WASALive Bot",
+    "name": "Was-Alive Bot",
     "manufacturer": "WasaLive",
     "pdfSupport": true,
     "rssSupport": false,
@@ -13229,11 +13190,8 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Webclip",
-        "WebClip"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "webkit"
   },
@@ -13659,7 +13617,7 @@
     "manufacturer": "Unknown",
     "pdfSupport": true,
     "rssSupport": false,
-    "type": "browser",
+    "type": "application",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -13784,7 +13742,7 @@
     "manufacturer": "Microsoft",
     "pdfSupport": true,
     "rssSupport": false,
-    "type": "bot",
+    "type": "feed-reader",
     "version": {
       "class": "VersionFactory",
       "search": [

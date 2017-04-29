@@ -30,14 +30,10 @@ class WindowsMobileOs implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        if (false !== mb_strpos($useragent, 'Windows NT 5.1')) {
-            return VersionFactory::set('6.0');
-        }
-
         $s = new Stringy($useragent);
 
-        if ($s->containsAny(['Windows Mobile', 'MSIEMobile'])) {
-            return VersionFactory::detectVersion($useragent, ['MSIEMobile'], '6.0');
+        if ($s->contains('windows nt 5.1', false) && !$s->contains('windows phone', false)) {
+            return VersionFactory::set('6.0');
         }
 
         return VersionFactory::detectVersion($useragent, ['Windows Phone']);

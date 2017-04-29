@@ -31,7 +31,7 @@ class MicrosoftOfficeUploadCenter implements VersionCacheFactoryInterface
     public function detectVersion($useragent)
     {
         $doMatch = preg_match(
-            '/Office Upload Center(\/| )([\d\.]+)/',
+            '/Office Upload Center[\/ ]([\d\.]+)/',
             $useragent,
             $matches
         );

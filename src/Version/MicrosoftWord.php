@@ -30,7 +30,7 @@ class MicrosoftWord implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $doMatch = preg_match('/Word\/([\d\.]+)/', $useragent, $matches);
+        $doMatch = preg_match('/Word[\/ ]([\d\.]+)/', $useragent, $matches);
 
         $helper = new MicrosoftOfficeHelper();
 

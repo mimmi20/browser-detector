@@ -180,6 +180,13 @@ class WindowsMobileFactoryTest extends \PHPUnit\Framework\TestCase
                 'Microsoft Corporation',
                 32,
             ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)',
+                'Windows Mobile OS',
+                '6.5.0',
+                'Microsoft Corporation',
+                32,
+            ],
         ];
     }
 }

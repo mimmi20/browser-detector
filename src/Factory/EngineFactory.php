@@ -15,6 +15,8 @@ use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Stringy\Stringy;
+use UaResult\Engine\Engine;
+use UaResult\Os\OsInterface;
 
 /**
  * Browser detection class
@@ -45,11 +47,16 @@ class EngineFactory implements FactoryInterface
      *
      * @param string                                $useragent
      * @param \BrowserDetector\Loader\BrowserLoader $browserLoader
+     * @param \UaResult\Os\OsInterface              $platform
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function detect($useragent, BrowserLoader $browserLoader = null)
+    public function detect($useragent, BrowserLoader $browserLoader = null, OsInterface $platform = null)
     {
+        if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
+            return $this->loader->load('webkit', $useragent);
+        }
+
         $s = new Stringy($useragent);
 
         if ($s->contains('Edge')) {
