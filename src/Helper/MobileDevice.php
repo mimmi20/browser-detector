@@ -234,11 +234,6 @@ class MobileDevice
             return true;
         }
 
-        $doMatch = preg_match('/\d+\*\d+/', $this->useragent);
-        if ($doMatch) {
-            return true;
-        }
-
         if ((new FirefoxOs($this->useragent))->isFirefoxOs()) {
             return true;
         }

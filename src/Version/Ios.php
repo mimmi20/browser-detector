@@ -28,7 +28,7 @@ class Ios implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $doMatch = preg_match('/CPU like Mac OS X/', $useragent, $matches);
+        $doMatch = preg_match('/CPU like Mac OS X/', $useragent);
 
         if ($doMatch) {
             return VersionFactory::set('1.0');

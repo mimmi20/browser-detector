@@ -102,17 +102,7 @@ class BrowserLoader implements LoaderInterface
             $version      = $versionClass->detectVersion($useragent);
         }
 
-        $engineKey = $browser->engine;
-
-        if (null === $engineKey) {
-            $engine = null;
-        } else {
-            try {
-                $engine = (new EngineLoader($this->cache))->load($browser->engine, $useragent);
-            } catch (NotFoundException $e) {
-                $engine = null;
-            }
-        }
+        $engine = (new EngineLoader($this->cache))->load($browser->engine, $useragent);
 
         $browser = new Browser(
             $browser->name,

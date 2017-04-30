@@ -30,8 +30,7 @@ class ScreamingFrog implements VersionCacheFactoryInterface
     {
         $doMatch = preg_match(
             '/Screaming Frog SEO Spider\/\d+,\d/',
-            $useragent,
-            $matches
+            $useragent
         );
 
         if ($doMatch) {

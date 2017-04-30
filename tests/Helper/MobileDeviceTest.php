@@ -80,6 +80,9 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
             ['portalmmm/2.0 S500i(c20;TB)'],
             ['Hisense-W2003'],
             ['YourWap Siemens SL45/2.63'],
+            ['Mozilla/5.0 (Mobile; rv:32.0) Gecko/20100101 Firefox/32.0'],
+            ['Mozilla/5.0 (Mobile; OneTouch6015X SVN:01010B MMS:1.1; rv:32.0) Gecko/32.0 Firefox/32.0'],
+            ['Mozilla/5.0 (Windows NT 6.3; ARM; Trident/7.0; Touch; rv:11.0) like Gecko'],
         ];
     }
 
@@ -136,6 +139,7 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
             ['Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko) Slackware/Chrome/12.0.742.100 Safari/534.30'],
             ['Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.1) Gecko/20090725 Moblin/3.5.1-2.5.14.moblin2 Shiretoko/3.5.1'],
             ['QuickTime\\\\xaa.7.0.4 (qtver=7.0.4;cpu=PPC;os=Mac 10.3.9)'],
+            ['Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV140;0001;0001) KD49X8505B; CC/DEU) Presto/2.12.407 Version/12.50'],
         ];
     }
 }
