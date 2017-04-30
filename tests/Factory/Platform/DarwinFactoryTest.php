@@ -467,6 +467,48 @@ class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
                 'Apple Inc',
                 32,
             ],
+            [
+                'Safari/11601.6.17 CFNetwork/760.5.1 Darwin/15.5.0 (x86_64)',
+                'Mac OS X',
+                '10.11.0',
+                'Apple Inc',
+                64,
+            ],
+            [
+                'Safari/11601.5.17.1 CFNetwork/760.4.2 Darwin/15.4.0 (x86_64)',
+                'Mac OS X',
+                '10.11.0',
+                'Apple Inc',
+                64,
+            ],
+            [
+                'Safari/11601.4.4 CFNetwork/760.2.6 Darwin/15.3.0 (x86_64)',
+                'Mac OS X',
+                '10.11.0',
+                'Apple Inc',
+                64,
+            ],
+            [
+                'Safari/11601.2.7.2 CFNetwork/760.1.2 Darwin/15.0.0 (x86_64)',
+                'Mac OS X',
+                '10.11.0',
+                'Apple Inc',
+                64,
+            ],
+            [
+                'Safari/10600.6.3 CFNetwork/720.3.13 Darwin/14.3.0 (x86_64)',
+                'Mac OS X',
+                '10.10.0',
+                'Apple Inc',
+                64,
+            ],
+            [
+                'Safari/10601.2.7.2 CFNetwork/720.5.7 Darwin/14.5.0 (x86_64)',
+                'Mac OS X',
+                '10.10.0',
+                'Apple Inc',
+                64,
+            ],
         ];
     }
 }

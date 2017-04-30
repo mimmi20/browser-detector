@@ -296,6 +296,34 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
                 'Apple Inc',
                 'Apple',
             ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; rv:38.9) Gecko/20100101 Goanna/2.0 Firefox/38.9 PaleMoon/26.0.0',
+                'Goanna',
+                '2.0.0',
+                'Moonchild Productions',
+                'Moonchild',
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:38.9) Gecko/20100101 Goanna/2.1 Firefox/38.9 PaleMoon/26.3.2',
+                'Goanna',
+                '2.1.0',
+                'Moonchild Productions',
+                'Moonchild',
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0) Gecko/20100101 Goanna/20160406 PaleMoon/26.2.1',
+                'Goanna',
+                '2.0.0',
+                'Moonchild Productions',
+                'Moonchild',
+            ],
+            [
+                'Mozilla/5.0 (X11; Linux x86_64; rv:3.0) Goanna/20170207 PaleMoon/27.1.0',
+                'Goanna',
+                '3.0.0',
+                'Moonchild Productions',
+                'Moonchild',
+            ],
         ];
     }
 }

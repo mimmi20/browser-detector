@@ -32,10 +32,6 @@ class Maxthon implements VersionCacheFactoryInterface
             return VersionFactory::set('2.0');
         }
 
-        if (false !== mb_strpos($useragent, 'MyIE')) {
-            return VersionFactory::set('1.0');
-        }
-
-        return VersionFactory::detectVersion($useragent, ['Maxthon', 'MxBrowser', 'Version'], '2.0');
+        return VersionFactory::detectVersion($useragent, ['Maxthon', 'MxBrowser', 'Version']);
     }
 }

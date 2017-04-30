@@ -36,120 +36,6 @@ class Safari
     }
 
     /**
-     * @return bool
-     */
-    public function isSafari()
-    {
-        $s = new Stringy($this->useragent);
-
-        if (!$s->contains('Mozilla/')
-            && !$s->contains('Safari')
-            && !$s->contains('Mobile')
-        ) {
-            return false;
-        }
-
-        if (!$s->containsAny(['Safari', 'AppleWebKit', 'CFNetwork'])) {
-            return false;
-        }
-
-        $isNotReallyAnSafari = [
-            // using also the KHTML rendering engine
-            '1Password',
-            'AdobeAIR',
-            'Arora',
-            'BB10',
-            'BlackBerry',
-            'BrowserNG',
-            'Chrome',
-            'Chromium',
-            'Coast',
-            'Dolfin',
-            'Dreamweaver',
-            'Epiphany',
-            'FBAN/',
-            'FBAV/',
-            'FBForIPhone',
-            'Flock',
-            'Galeon',
-            'Google Earth',
-            'iCab',
-            'Iron',
-            'konqueror',
-            'Lunascape',
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Mercury',
-            'Midori',
-            'MQQBrowser',
-            'NokiaBrowserInterface',
-            'OmniWeb',
-            'OPiOS',
-            'Origin',
-            'PaleMoon',
-            'PhantomJS',
-            'Qt',
-            'QuickLook',
-            'QupZilla',
-            'rekonq',
-            'Rockmelt',
-            'Silk',
-            'Shiira',
-            'WebBrowser',
-            'WebClip',
-            'WeTab',
-            'wOSBrowser',
-            'Skyfire',
-            'UCBrowser',
-            'wkhtmltoimage',
-            'wkhtmltopdf',
-            'MicroMessenger',
-            'DiigoBrowser',
-            //Bots
-            'GSA',
-            'GoogleBot',
-            'msnbot-media',
-            'bingpreview',
-            'spider-pig',
-            'adsbot-google-mobile',
-            'SMTBot',
-            'Google Web Preview',
-            'Google Page Speed Insights',
-            'Google Markup Tester',
-            'Mediapartners-Google',
-            'bingbot',
-            'adbeat',
-            'profiller',
-            'Kindle',
-            'Slurp',
-            'GINGERBREAD',
-            'Nokia',
-            'Twitter',
-            'MobileTestLab',
-            'Superbird',
-            'ACHEETAHI',
-            'Beamrise',
-            'APUSBrowser',
-            'Diglo',
-            'Chedot',
-            'kontact',
-            //mobile Version
-            'Tablet',
-            'Android',
-            'Tizen',
-            // Fakes
-            'Mac; Mac OS ',
-        ];
-
-        if ($s->containsAny($isNotReallyAnSafari, false)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * maps different Safari Versions to a normalized format
      *
      * @param string $detectedVersion
@@ -158,7 +44,11 @@ class Safari
      */
     public function mapSafariVersions($detectedVersion)
     {
-        if ($detectedVersion >= 10500) {
+        if ($detectedVersion >= 12600) {
+            $detectedVersion = '10.0';
+        } elseif ($detectedVersion >= 11600) {
+            $detectedVersion = '9.1';
+        } elseif ($detectedVersion >= 10500) {
             $detectedVersion = '8.0';
         } elseif ($detectedVersion >= 9500) {
             $detectedVersion = '7.0';
@@ -168,18 +58,14 @@ class Safari
             $detectedVersion = '5.1';
         } elseif ($detectedVersion >= 6500) {
             $detectedVersion = '5.0';
-        } elseif ($detectedVersion >= 1050) {
-            $detectedVersion = '8.0';
-        } elseif ($detectedVersion >= 950) {
-            $detectedVersion = '7.0';
-        } elseif ($detectedVersion >= 850) {
-            $detectedVersion = '6.0';
-        } elseif ($detectedVersion >= 750) {
-            $detectedVersion = '5.1';
-        } elseif ($detectedVersion >= 650) {
+        } elseif ($detectedVersion >= 4500) {
+            $detectedVersion = '4.0';
+        } elseif ($detectedVersion >= 600) {
             $detectedVersion = '5.0';
         } elseif ($detectedVersion >= 500) {
             $detectedVersion = '4.0';
+        } elseif ($detectedVersion >= 400) {
+            $detectedVersion = '3.0';
         }
 
         $regularVersions = [
@@ -201,9 +87,15 @@ class Safari
             '7.1',
             '8.0',
             '8.1',
+            '9.0',
+            '9.1',
+            '10.0',
+            '10.1',
         ];
 
-        if (in_array(mb_substr($detectedVersion, 0, 3), $regularVersions)) {
+        if (in_array(mb_substr($detectedVersion, 0, 3), $regularVersions)
+            || in_array(mb_substr($detectedVersion, 0, 4), $regularVersions)
+        ) {
             return $detectedVersion;
         }
 
