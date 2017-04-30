@@ -38,7 +38,7 @@ class Goanna implements VersionCacheFactoryInterface
         // second version: version on "rv:" token
         $doMatch = preg_match('/rv\:([\d\.]+)/', $useragent, $matchesSecond);
 
-        if ($doMatch && (false === stripos($useragent, 'gecko') || 2 >= mb_substr($matchesSecond[1], 0, 4))) {
+        if ($doMatch && (false === mb_stripos($useragent, 'gecko') || 2 >= mb_substr($matchesSecond[1], 0, 4))) {
             return VersionFactory::set($matchesSecond[1]);
         }
 

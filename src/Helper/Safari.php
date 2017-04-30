@@ -11,8 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
-use Stringy\Stringy;
-
 /**
  * a helper for detecting safari and some of his derefered browsers
  */
