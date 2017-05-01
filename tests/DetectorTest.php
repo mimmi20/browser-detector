@@ -18,6 +18,8 @@ use League\Flysystem\Filesystem;
 use Psr\Log\NullLogger;
 use UaResult\Result\Result;
 use UaResult\Result\ResultFactory;
+use Wurfl\Request\Constants;
+use Wurfl\Request\GenericRequest;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -54,7 +56,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
      */
-    public function testGetBrowser($userAgent, Result $expectedResult)
+    public function testGetBrowserFromUa($userAgent, Result $expectedResult)
     {
         /** @var \UaResult\Result\Result $result */
         $result = $this->object->getBrowser($userAgent);
@@ -62,6 +64,46 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
         self::assertInstanceOf('\UaResult\Result\Result', $result);
 
         self::assertEquals($expectedResult, $result);
+    }
+
+    /**
+     * @dataProvider providerGetBrowser
+     *
+     * @param string                  $userAgent
+     * @param \UaResult\Result\Result $expectedResult
+     */
+    public function testGetBrowserFromArray($userAgent, Result $expectedResult)
+    {
+        /** @var \UaResult\Result\Result $result */
+        $result = $this->object->getBrowser([Constants::HEADER_HTTP_USERAGENT => $userAgent]);
+
+        self::assertInstanceOf('\UaResult\Result\Result', $result);
+
+        self::assertEquals($expectedResult, $result);
+    }
+
+    /**
+     * @dataProvider providerGetBrowser
+     *
+     * @param string                  $userAgent
+     * @param \UaResult\Result\Result $expectedResult
+     */
+    public function testGetBrowserFromRequest($userAgent, Result $expectedResult)
+    {
+        /** @var \UaResult\Result\Result $result */
+        $result = $this->object->getBrowser(new GenericRequest([Constants::HEADER_HTTP_USERAGENT => $userAgent]));
+
+        self::assertInstanceOf('\UaResult\Result\Result', $result);
+
+        self::assertEquals($expectedResult, $result);
+    }
+
+    public function testGetBrowserFromInvalid()
+    {
+        $this->expectException('\UnexpectedValueException');
+        $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Wurfl\Request\GenericRequest');
+
+        $this->object->getBrowser(new \stdClass());
     }
 
     /**
