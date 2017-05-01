@@ -28,11 +28,7 @@ class FirefoxOs implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $doMatch = preg_match('/rv:(\d+\.\d+)/', $useragent, $matches);
-
-        if (!$doMatch) {
-            return new Version(0);
-        }
+        preg_match('/rv:(\d+\.\d+)/', $useragent, $matches);
 
         $version = (float) $matches[1];
 

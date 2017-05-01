@@ -53,6 +53,10 @@ class Windows
             return true;
         }
 
+        if ($this->isMobileWindows()) {
+            return false;
+        }
+
         $isNotReallyAWindows = [
             // other OS and Mobile Windows
             'linux',
@@ -67,10 +71,6 @@ class Windows
         ];
 
         if ($s->containsAny($isNotReallyAWindows, false)) {
-            return false;
-        }
-
-        if ($this->isMobileWindows()) {
             return false;
         }
 
@@ -124,10 +124,6 @@ class Windows
      */
     public function isMobileWindows()
     {
-        if (preg_match('/Puffin\/[\d\.]+W(T|P)/', $this->useragent)) {
-            return true;
-        }
-
         $s = new Stringy($this->useragent);
 
         $mobileWindows = [
@@ -146,17 +142,6 @@ class Windows
         ];
 
         if (!$s->containsAny($mobileWindows, false)) {
-            return false;
-        }
-
-        $isNotReallyAWindows = [
-            // other OS
-            'Linux',
-            'Macintosh',
-            'J2ME/MIDP',
-        ];
-
-        if ($s->containsAny($isNotReallyAWindows, false)) {
             return false;
         }
 

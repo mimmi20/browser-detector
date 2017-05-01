@@ -224,25 +224,6 @@ class MobileDevice
             return true;
         }
 
-        if ($s->contains('sonydtv', false)) {
-            return false;
-        }
-
-        if ($s->contains('ARM;')
-            && $s->containsAny(['Windows NT 6.2', 'Windows NT 6.3'])
-        ) {
-            return true;
-        }
-
-        $doMatch = preg_match('/\d+\*\d+/', $this->useragent);
-        if ($doMatch) {
-            return true;
-        }
-
-        if ((new FirefoxOs($this->useragent))->isFirefoxOs()) {
-            return true;
-        }
-
         if (preg_match('/Puffin\/[\d\.]+(A|I|W|M)(T|P)?/', $this->useragent)) {
             return true;
         }

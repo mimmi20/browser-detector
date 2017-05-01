@@ -32,7 +32,7 @@ class Debian implements VersionCacheFactoryInterface
     {
         $s = new Stringy($useragent);
 
-        if ($s->containsAll(['debian', 'squeeze'], true)) {
+        if ($s->containsAll(['debian', 'squeeze'], false)) {
             return VersionFactory::set('6.0');
         }
 

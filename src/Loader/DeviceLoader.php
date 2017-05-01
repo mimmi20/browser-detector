@@ -92,11 +92,7 @@ class DeviceLoader implements LoaderInterface
         if (null === $platformKey) {
             $platform = null;
         } else {
-            try {
-                $platform = (new PlatformLoader($this->cache))->load($platformKey, $useragent);
-            } catch (NotFoundException $e) {
-                $platform = null;
-            }
+            $platform = (new PlatformLoader($this->cache))->load($platformKey, $useragent);
         }
 
         $companyLoader = new CompanyLoader($this->cache);

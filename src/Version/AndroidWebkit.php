@@ -42,14 +42,6 @@ class AndroidWebkit implements VersionCacheFactoryInterface
             return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
-        if (preg_match('/android eclair/i', $useragent)) {
-            return VersionFactory::set('2.1');
-        }
-
-        if (preg_match('/gingerbread/i', $useragent)) {
-            return VersionFactory::set('2.3');
-        }
-
         $doMatch = preg_match(
             '/Safari\/([\d\.]+)/',
             $useragent,
@@ -58,36 +50,6 @@ class AndroidWebkit implements VersionCacheFactoryInterface
 
         if ($doMatch) {
             return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/AppleWebKit\/([\d\.]+)/',
-            $useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/MobileSafari\/([\d\.]+)/',
-            $useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/Android\/([\d\.]+)/',
-            $useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($matches[1]);
         }
 
         return VersionFactory::detectVersion($useragent, ['Version', 'Safari', 'JUC \(Linux\; U\;']);

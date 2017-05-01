@@ -30,18 +30,12 @@ class MicrosoftPowerPoint implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $doMatch = preg_match(
+        preg_match(
             '/PowerPoint[\/ ]([\d\.]+)/',
             $useragent,
             $matches
         );
 
-        $helper = new MicrosoftOfficeHelper();
-
-        if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
-        }
-
-        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($useragent)));
+        return VersionFactory::set((new MicrosoftOfficeHelper())->mapVersion($matches[1]));
     }
 }

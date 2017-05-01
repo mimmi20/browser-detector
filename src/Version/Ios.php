@@ -28,7 +28,7 @@ class Ios implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $doMatch = preg_match('/CPU like Mac OS X/', $useragent, $matches);
+        $doMatch = preg_match('/CPU like Mac OS X/', $useragent);
 
         if ($doMatch) {
             return VersionFactory::set('1.0');
@@ -51,15 +51,6 @@ class Ios implements VersionCacheFactoryInterface
                 'iOS',
             ]
         );
-
-        if ($detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) > 999) {
-            $versions = [];
-            $found    = preg_match('/(\d\d)(\d)(\d)/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions);
-
-            if ($found) {
-                return VersionFactory::set($versions[1] . '.' . $versions[2] . '.' . $versions[3]);
-            }
-        }
 
         if ($detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) > 99) {
             $versions = [];

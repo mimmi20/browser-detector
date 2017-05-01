@@ -40,25 +40,17 @@ class Ios
      */
     public function isIos()
     {
-        if (false !== mb_stripos($this->useragent, 'technipad')) {
-            return false;
-        }
-
         $s = new Stringy($this->useragent);
 
-        if ($s->containsAny(['trident', 'windows phone', 'android'], false)) {
+        if ($s->containsAny(['trident', 'windows phone', 'android', 'technipad'], false)) {
             return false;
         }
 
-        if (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS|iOS;)/', $this->useragent)) {
+        if ($s->containsAny(['like mac os x', 'ipad', 'iphone', 'ipod', 'cpu os', 'cpu ios', 'iuc(u;ios', 'ios;'], false)) {
             return true;
         }
 
         if (preg_match('/Puffin\/[\d\.]+I(P|T)/', $this->useragent)) {
-            return true;
-        }
-
-        if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return true;
         }
 
