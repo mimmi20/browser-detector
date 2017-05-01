@@ -34,31 +34,6 @@ class Trident implements VersionCacheFactoryInterface
             return VersionFactory::set($matches[1]);
         }
 
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);
-
-        if ($doMatch) {
-            $version = '';
-
-            switch ((float) $matches[1]) {
-                case 11.0:
-                    $version = '7.0';
-                    break;
-                case 10.0:
-                    $version = '6.0';
-                    break;
-                case 9.0:
-                    $version = '5.0';
-                    break;
-                case 8.0:
-                    $version = '4.0';
-                    break;
-                default:
-                    // do nothing here
-            }
-
-            return VersionFactory::set($version);
-        }
-
         return new Version(0);
     }
 }

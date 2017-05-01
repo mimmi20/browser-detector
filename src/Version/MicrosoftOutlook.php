@@ -42,26 +42,12 @@ class MicrosoftOutlook implements VersionCacheFactoryInterface
             return VersionFactory::set($helper->mapVersion($matches[1]));
         }
 
-        $doMatch = preg_match(
-            '/microsoft office outlook (\d+)/i',
-            $useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
-        }
-
-        $doMatch = preg_match(
+        preg_match(
             '/microsoft outlook ([\d\.]+)/i',
             $useragent,
             $matches
         );
 
-        if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
-        }
-
-        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($useragent)));
+        return VersionFactory::set($helper->mapVersion($matches[1]));
     }
 }

@@ -48,22 +48,6 @@ class Safari implements VersionCacheFactoryInterface
             return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
-        $doMatch = preg_match('/Safari([\d\.]+)/', $useragent, $matches);
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/MobileSafari\/([\d\.]+)/',
-            $useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
         return new Version(0);
     }
 }

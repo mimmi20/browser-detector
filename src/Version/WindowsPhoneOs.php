@@ -32,20 +32,20 @@ class WindowsPhoneOs implements VersionCacheFactoryInterface
     {
         $s = new Stringy($useragent);
 
-        if ($s->containsAny(['XBLWP7', 'ZuneWP7'])) {
+        if ($s->containsAny(['xblwp7', 'zunewp7'], false)) {
             return VersionFactory::set('7.5.0');
         }
 
-        if ($s->contains('wds 8.10')) {
+        if ($s->contains('wds 8.10', false)) {
             return VersionFactory::set('8.1.0');
         }
 
-        if ($s->contains('WPDesktop')) {
-            if ($s->contains('Windows NT 6.3')) {
+        if ($s->contains('wpdesktop', false)) {
+            if ($s->contains('windows nt 6.3', false)) {
                 return VersionFactory::set('8.1.0');
             }
 
-            if ($s->contains('Windows NT 6.2')) {
+            if ($s->contains('windows nt 6.2', false)) {
                 return VersionFactory::set('8.0.0');
             }
 

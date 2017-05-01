@@ -53,6 +53,10 @@ class Windows
             return true;
         }
 
+        if ($this->isMobileWindows()) {
+            return false;
+        }
+
         $isNotReallyAWindows = [
             // other OS and Mobile Windows
             'linux',
@@ -67,10 +71,6 @@ class Windows
         ];
 
         if ($s->containsAny($isNotReallyAWindows, false)) {
-            return false;
-        }
-
-        if ($this->isMobileWindows()) {
             return false;
         }
 

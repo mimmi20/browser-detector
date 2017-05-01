@@ -8288,6 +8288,24 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
                 'Email Client',
                 null,
             ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; MSOffice)',
+                'Office',
+                '0.0.0',
+                'Microsoft Corporation',
+                32,
+                'Application',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0)',
+                'Internet Explorer',
+                '10.0.0',
+                'Microsoft Corporation',
+                64,
+                'Browser',
+                null,
+            ],
         ];
     }
 }

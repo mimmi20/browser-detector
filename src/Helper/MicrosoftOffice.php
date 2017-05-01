@@ -71,12 +71,6 @@ class MicrosoftOffice
             return $matches[1];
         }
 
-        $doMatch = preg_match('/MSOffice (\d+)/', $useragent, $matches);
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
         $doMatch = preg_match('/Office\/([\d\.]+)/i', $useragent, $matches);
 
         if ($doMatch) {

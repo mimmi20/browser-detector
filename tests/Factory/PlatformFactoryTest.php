@@ -1805,6 +1805,27 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
                 'Mozilla Foundation',
                 32,
             ],
+            [
+                'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; XBLWP7; ZuneWP7)',
+                'Windows Phone OS',
+                '7.5.0',
+                'Microsoft Corporation',
+                32,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.3; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 928) like Gecko',
+                'Windows Phone OS',
+                '8.1.0',
+                'Microsoft Corporation',
+                32,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.4; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 928) like Gecko',
+                'Windows Phone OS',
+                '0.0.0',
+                'Microsoft Corporation',
+                32,
+            ],
         ];
     }
 }
