@@ -324,6 +324,27 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
                 'Moonchild Productions',
                 'Moonchild',
             ],
+            [
+                'BB_Work_Connect/1.0.23217.42 CFNetwork/711.3.18 Darwin/14.0.0Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0',
+                'WebKit',
+                '711.3.18',
+                'Apple Inc',
+                'Apple',
+            ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.4.2; A3-A10 Build/KOT49H)Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0',
+                'WebKit',
+                '0.0.0',
+                'Apple Inc',
+                'Apple',
+            ],
+            [
+                'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+                'Gecko',
+                '1.9.0-beta+4',
+                'Mozilla Foundation',
+                null,
+            ],
         ];
     }
 }

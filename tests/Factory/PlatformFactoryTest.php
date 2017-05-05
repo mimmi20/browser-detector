@@ -1826,6 +1826,20 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
                 'Microsoft Corporation',
                 32,
             ],
+            [
+                'BB_Work_Connect/1.0.23217.42 CFNetwork/711.3.18 Darwin/14.0.0Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0',
+                'iOS',
+                '8.3.0',
+                'Apple Inc',
+                64,
+            ],
+            [
+                'Nokia7230/5.0 (06.90) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+',
+                'Symbian OS',
+                '0.0.0',
+                'Symbian Foundation',
+                32,
+            ],
         ];
     }
 }

@@ -24,6 +24,57 @@ use Stringy\Stringy;
 class ZteFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'blade v6'          => 'blade v6',
+        'blade l6'          => 'blade l6',
+        'blade l5 plus'     => 'blade l5 plus',
+        'blade l3'          => 'blade l3',
+        'blade l2'          => 'blade l2',
+        'n919'              => 'n919',
+        'x920'              => 'x920',
+        'w713'              => 'w713',
+        'z221'              => 'z221',
+        'v975'              => 'v975',
+        'geek'              => 'v975',
+        'v970'              => 'v970',
+        'v967s'             => 'v967s',
+        'v880'              => 'v880',
+        'v829'              => 'v829',
+        'v808'              => 'v808',
+        'v788d'             => 'zte v788d',
+        'kis plus'          => 'zte v788d',
+        'v9'                => 'v9',
+        'u930hd'            => 'u930hd',
+        'smarttab10'        => 'smart tab 10',
+        'smarttab7'         => 'smarttab7',
+        'vodafone smart 4g' => 'smart 4g',
+        'zte skate'         => 'skate',
+        'zte-skate'         => 'skate',
+        'racerii'           => 'racer ii',
+        'racer'             => 'racer',
+        'zteopen'           => 'open',
+        'nx501'             => 'nx501',
+        'nx402'             => 'nx402',
+        'n918st'            => 'n918st',
+        ' n600 '            => 'n600',
+        'leo q2'            => 'v769m',
+        'blade q maxi'      => 'blade q maxi',
+        'blade iii'         => 'blade iii',
+        'base tab'          => 'base tab',
+        'base_lutea_3'      => 'lutea 3',
+        'base lutea 2'      => 'lutea 2',
+        'blade'             => 'zte blade',
+        'base lutea'        => 'zte blade',
+        'atlas_w'           => 'atlas w',
+        'atlas w'           => 'atlas w',
+        'tania'             => 'tania',
+        'g-x991-rio-orange' => 'g-x991',
+        'beeline pro'       => 'beeline pro',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,164 +97,10 @@ class ZteFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('blade v6', false)) {
-            return $this->loader->load('blade v6', $useragent);
-        }
-
-        if ($s->contains('blade l6', false)) {
-            return $this->loader->load('blade l6', $useragent);
-        }
-
-        if ($s->contains('blade l5 plus', false)) {
-            return $this->loader->load('blade l5 plus', $useragent);
-        }
-
-        if ($s->contains('blade l3', false)) {
-            return $this->loader->load('blade l3', $useragent);
-        }
-
-        if ($s->contains('blade l2', false)) {
-            return $this->loader->load('blade l2', $useragent);
-        }
-
-        if ($s->contains('n919', false)) {
-            return $this->loader->load('n919', $useragent);
-        }
-
-        if ($s->contains('x920', false)) {
-            return $this->loader->load('x920', $useragent);
-        }
-
-        if ($s->contains('w713', false)) {
-            return $this->loader->load('w713', $useragent);
-        }
-
-        if ($s->contains('z221', false)) {
-            return $this->loader->load('z221', $useragent);
-        }
-
-        if ($s->containsAny(['v975', 'geek'], false)) {
-            return $this->loader->load('v975', $useragent);
-        }
-
-        if ($s->contains('v970', false)) {
-            return $this->loader->load('v970', $useragent);
-        }
-
-        if ($s->contains('v967s', false)) {
-            return $this->loader->load('v967s', $useragent);
-        }
-
-        if ($s->contains('v880', false)) {
-            return $this->loader->load('v880', $useragent);
-        }
-
-        if ($s->contains('v829', false)) {
-            return $this->loader->load('v829', $useragent);
-        }
-
-        if ($s->contains('v808', false)) {
-            return $this->loader->load('v808', $useragent);
-        }
-
-        if ($s->containsAny(['v788d', 'kis plus'], false)) {
-            return $this->loader->load('zte v788d', $useragent);
-        }
-
-        if ($s->contains('v9', false)) {
-            return $this->loader->load('v9', $useragent);
-        }
-
-        if ($s->contains('u930hd', false)) {
-            return $this->loader->load('u930hd', $useragent);
-        }
-
-        if ($s->contains('smarttab10', false)) {
-            return $this->loader->load('smart tab 10', $useragent);
-        }
-
-        if ($s->contains('smarttab7', false)) {
-            return $this->loader->load('smarttab7', $useragent);
-        }
-
-        if ($s->contains('vodafone smart 4g', false)) {
-            return $this->loader->load('smart 4g', $useragent);
-        }
-
-        if ($s->containsAny(['zte skate', 'zte-skate'], false)) {
-            return $this->loader->load('skate', $useragent);
-        }
-
-        if ($s->contains('racerii', false)) {
-            return $this->loader->load('racer ii', $useragent);
-        }
-
-        if ($s->contains('racer', false)) {
-            return $this->loader->load('racer', $useragent);
-        }
-
-        if ($s->contains('zteopen', false)) {
-            return $this->loader->load('open', $useragent);
-        }
-
-        if ($s->contains('nx501', false)) {
-            return $this->loader->load('nx501', $useragent);
-        }
-
-        if ($s->contains('nx402', false)) {
-            return $this->loader->load('nx402', $useragent);
-        }
-
-        if ($s->contains('n918st', false)) {
-            return $this->loader->load('n918st', $useragent);
-        }
-
-        if ($s->contains(' n600 ', false)) {
-            return $this->loader->load('n600', $useragent);
-        }
-
-        if ($s->contains('leo q2', false)) {
-            return $this->loader->load('v769m', $useragent);
-        }
-
-        if ($s->contains('blade q maxi', false)) {
-            return $this->loader->load('blade q maxi', $useragent);
-        }
-
-        if ($s->contains('blade iii', false)) {
-            return $this->loader->load('blade iii', $useragent);
-        }
-
-        if ($s->contains('base tab', false)) {
-            return $this->loader->load('base tab', $useragent);
-        }
-
-        if ($s->contains('base_lutea_3', false)) {
-            return $this->loader->load('lutea 3', $useragent);
-        }
-
-        if ($s->contains('base lutea 2', false)) {
-            return $this->loader->load('lutea 2', $useragent);
-        }
-
-        if ($s->containsAny(['blade', 'base lutea'], false)) {
-            return $this->loader->load('zte blade', $useragent);
-        }
-
-        if ($s->contains('atlas_w', false)) {
-            return $this->loader->load('atlas w', $useragent);
-        }
-
-        if ($s->contains('tania', false)) {
-            return $this->loader->load('tania', $useragent);
-        }
-
-        if ($s->contains('g-x991-rio-orange', false)) {
-            return $this->loader->load('g-x991', $useragent);
-        }
-
-        if ($s->contains('beeline pro', false)) {
-            return $this->loader->load('beeline pro', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general zte device', $useragent);

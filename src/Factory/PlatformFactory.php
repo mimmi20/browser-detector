@@ -64,7 +64,7 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('unknown', $useragent);
         }
 
-        if ($s->containsAny(['symbianos', 'symbos', 'symbian', 'series 60', 's60v3', 's60v5'], false)) {
+        if ($s->containsAny(['symbianos', 'symbos', 'symbian', 'series 60', 's60v3', 's60v5', 'nokia7230'], false)) {
             return $this->loader->load('symbian', $useragent);
         }
 
@@ -145,6 +145,10 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('openvms', $useragent);
         }
 
+        if ($s->containsAny(['darwin', 'cfnetwork'], false)) {
+            return (new Platform\DarwinFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ((new Helper\Linux($useragent))->isLinux()) {
             return (new Platform\LinuxFactory($this->loader))->detect($useragent, $s);
         }
@@ -159,10 +163,6 @@ class PlatformFactory implements FactoryInterface
 
         if ((new Helper\FirefoxOs($useragent))->isFirefoxOs()) {
             return $this->loader->load('firefoxos', $useragent);
-        }
-
-        if ($s->containsAny(['darwin', 'cfnetwork'], false)) {
-            return (new Platform\DarwinFactory($this->loader))->detect($useragent, $s);
         }
 
         if ((new Helper\Ios($useragent))->isIos()) {

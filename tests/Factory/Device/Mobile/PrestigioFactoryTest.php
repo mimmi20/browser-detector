@@ -554,6 +554,16 @@ class PrestigioFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; PMT7177_3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Safari/537.36',
+                'PMT7177_3G',
+                'MultiPad 4 Diamond 10.1 3G',
+                'Prestigio',
+                'Prestigio',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -24,6 +24,24 @@ use Stringy\Stringy;
 class MicromaxFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'a120' => 'a120',
+        'a116' => 'a116',
+        'a114' => 'a114',
+        'a101' => 'micromax a101',
+        'a093' => 'a093',
+        'a065' => 'a065',
+        'a99'  => 'micromax a99',
+        'a59'  => 'a59',
+        'a40'  => 'a40',
+        'a35'  => 'a35',
+        'a27'  => 'a27',
+        'x650' => 'x650',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,48 +64,10 @@ class MicromaxFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('A120', false)) {
-            return $this->loader->load('a120', $useragent);
-        }
-
-        if ($s->contains('A116', false)) {
-            return $this->loader->load('a116', $useragent);
-        }
-
-        if ($s->contains('A114', false)) {
-            return $this->loader->load('a114', $useragent);
-        }
-
-        if ($s->contains('A101', false)) {
-            return $this->loader->load('micromax a101', $useragent);
-        }
-
-        if ($s->contains('A093', false)) {
-            return $this->loader->load('a093', $useragent);
-        }
-
-        if ($s->contains('A065', false)) {
-            return $this->loader->load('a065', $useragent);
-        }
-
-        if ($s->contains('A59', false)) {
-            return $this->loader->load('a59', $useragent);
-        }
-
-        if ($s->contains('A40', false)) {
-            return $this->loader->load('a40', $useragent);
-        }
-
-        if ($s->contains('A35', false)) {
-            return $this->loader->load('a35', $useragent);
-        }
-
-        if ($s->contains('A27', false)) {
-            return $this->loader->load('a27', $useragent);
-        }
-
-        if ($s->contains('X650', false)) {
-            return $this->loader->load('x650', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general micromax device', $useragent);

@@ -794,6 +794,16 @@ class MotorolaFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; MB886 Build/9.8.0Q-97_MB886_FFW-28) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'MB886',
+                'Atrix HD 4G LTE',
+                'Motorola',
+                'Motorola',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

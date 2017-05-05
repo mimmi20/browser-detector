@@ -994,6 +994,20 @@
     },
     "engine": "unknown"
   },
+  "bb work connect": {
+    "name": "BB Work Connect",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BB_Work_Connect"
+      ]
+    },
+    "engine": "unknown"
+  },
   "bcklinks": {
     "name": "BCKLINKS",
     "manufacturer": "Unknown",
@@ -1900,6 +1914,20 @@
       "class": "VersionFactory",
       "search": [
         "CloudFlare\\-AlwaysOnline"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cloudinary": {
+    "name": "Cloudinary Bot",
+    "manufacturer": "cloudinary",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cloudinary"
       ]
     },
     "engine": "unknown"
@@ -11068,6 +11096,18 @@
       "search": [
         "Socialradarbot"
       ]
+    },
+    "engine": "unknown"
+  },
+  "socialcast bot": {
+    "name": "socialcast Bot",
+    "manufacturer": "socialcast.com",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },

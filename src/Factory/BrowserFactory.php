@@ -1175,12 +1175,24 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('link_thumbnailer', $useragent);
         }
 
+        if ($s->contains('mechanize', false)) {
+            return $this->loader->load('mechanize', $useragent);
+        }
+
         if ($s->contains('ruby', false)) {
             return $this->loader->load('generic ruby crawler', $useragent);
         }
 
         if ($s->contains('googleimageproxy', false)) {
             return $this->loader->load('google image proxy', $useragent);
+        }
+
+        if ($s->contains('dalvik', false)) {
+            return $this->loader->load('dalvik', $useragent);
+        }
+
+        if ($s->contains('bb_work_connect', false)) {
+            return $this->loader->load('bb work connect', $useragent);
         }
 
         if ($s->containsAny(['firefox', 'minefield', 'shiretoko', 'bonecho', 'namoroka'], false)) {
@@ -2165,10 +2177,6 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('online-webceo-bot', false)) {
             return $this->loader->load('webceo bot', $useragent);
-        }
-
-        if ($s->contains('dalvik', false)) {
-            return $this->loader->load('dalvik', $useragent);
         }
 
         if ($s->contains('niki-bot', false)) {
@@ -3249,6 +3257,14 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('archive-de.com', false)) {
             return $this->loader->load('archive-de.com', $useragent);
+        }
+
+        if ($s->contains('socialcast', false)) {
+            return $this->loader->load('socialcast bot', $useragent);
+        }
+
+        if ($s->contains('cloudinary', false)) {
+            return $this->loader->load('cloudinary', $useragent);
         }
 
         return $this->loader->load('unknown', $useragent);

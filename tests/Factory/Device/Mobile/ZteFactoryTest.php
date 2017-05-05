@@ -544,6 +544,16 @@ class ZteFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.5; tr-tr; ATLAS W Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'Atlas W',
+                'Atlas W',
+                'ZTE',
+                'ZTE',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

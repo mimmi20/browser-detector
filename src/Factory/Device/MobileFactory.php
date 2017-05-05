@@ -88,7 +88,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\BlackBerryFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['ipad', 'ipod', 'iphone', 'like mac os x'], false)
+        if ($s->containsAny(['ipad', 'ipod', 'iphone', 'like mac os x', 'darwin', 'cfnetwork'], false)
             && !$s->containsAny(['windows phone', ' adr ', 'ipodder', 'tripadvisor'], false)
         ) {
             return (new Mobile\AppleFactory($this->loader))->detect($useragent, $s);
@@ -304,7 +304,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DenverFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('CONNECT7PRO', true)) {
+        if ($s->contains('connect7pro', false)) {
             return (new Mobile\OdysFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -312,7 +312,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NecFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('SHARP', true)) {
+        if ($s->contains('sharp', false)) {
             return (new Mobile\SharpFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -788,7 +788,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PentagramFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Z221', 'V788D', 'KIS PLUS', 'NX402', 'NX501', 'N918St', 'Beeline Pro', 'ATLAS_W', 'BASE Tab', 'X920', ' V9 ', 'W713'], true)) {
+        if ($s->containsAny(['Z221', 'V788D', 'KIS PLUS', 'NX402', 'NX501', 'N918St', 'Beeline Pro', 'ATLAS_W', 'BASE Tab', 'X920', ' V9 ', 'W713', 'ATLAS W'], true)) {
             return (new Mobile\ZteFactory($this->loader))->detect($useragent, $s);
         }
 

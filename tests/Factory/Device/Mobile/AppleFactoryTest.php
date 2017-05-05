@@ -214,6 +214,16 @@ class AppleFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'BB_Work_Connect/1.0.23217.42 CFNetwork/711.3.18 Darwin/14.0.0Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
