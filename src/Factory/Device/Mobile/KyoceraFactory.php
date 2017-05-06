@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class KyoceraFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'c6730'   => 'kyocera c6730',
+        'kc-s701' => 'kc-s701',
+        'dm015k'  => 'dm015k',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +55,10 @@ class KyoceraFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('KC-S701', true)) {
-            return $this->loader->load('kc-s701', $useragent);
-        }
-
-        if ($s->contains('DM015K', true)) {
-            return $this->loader->load('dm015k', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general kyocera device', $useragent);

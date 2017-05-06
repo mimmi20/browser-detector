@@ -24,6 +24,102 @@ use Stringy\Stringy;
 class LenovoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'yt3-x50l'                => 'yt3-x50l',
+        'tb2-x30f'                => 'tb2-x30f',
+        'yoga tablet 2 pro-1380l' => '1380l',
+        'yoga tablet 2 pro-1380f' => '1380f',
+        'yoga tablet 2-1050l'     => '1050l',
+        'yoga tablet 2-1050f'     => '1050f',
+        'yoga tablet 2-830l'      => '830l',
+        'yoga tablet 2-830f'      => '830f',
+        'a10-70f'                 => 'a10-70f',
+        's6000l-f'                => 's6000l-f',
+        's6000-h'                 => 's6000-h',
+        's6000-f'                 => 's6000-f',
+        's5000-h'                 => 's5000-h',
+        's5000-f'                 => 's5000-f',
+        'ideatabs2110ah'          => 's2110a-h',
+        'ideatabs2110af'          => 's2110a-f',
+        'ideatabs2109a-f'         => 's2109a-f',
+        's920'                    => 's920',
+        's880i'                   => 's880i',
+        's856'                    => 's856',
+        's820_row'                => 's820_row',
+        's720'                    => 's720',
+        's660'                    => 's660',
+        'p1050x'                  => 'lifetab p1050x',
+        'p1032x'                  => 'lifetab p1032x',
+        'p780'                    => 'p780',
+        'k910l'                   => 'k910l',
+        'k900'                    => 'k900',
+        ' k1'                     => 'k1',
+        'ideapada10'              => 'ideapad a10',
+        'a1_07'                   => 'ideapad a1',
+        'b8080-h'                 => 'b8080-h',
+        'b8080-f'                 => 'b8080-f',
+        'b8000-h'                 => 'b8000-h',
+        'b8000-f'                 => 'b8000-f',
+        'b6000-hv'                => 'b6000-hv',
+        'b6000-h'                 => 'b6000-h',
+        'b6000-f'                 => 'b6000-f',
+        'a7600-h'                 => 'a7600-h',
+        'a7600-f'                 => 'a7600-f',
+        'a7000-a'                 => 'a7000-a',
+        'a5500-h'                 => 'a5500-h',
+        'a5500-f'                 => 'a5500-f',
+        'a3500-hv'                => 'a3500-hv',
+        'a3500-h'                 => 'a3500-h',
+        'a3500-fl'                => 'a3500-fl',
+        'a3300-hv'                => 'a3300-hv',
+        'a3300-h'                 => 'a3300-h',
+        'a3300-gv'                => 'a3300-gv',
+        'a3000-h'                 => 'a3000-h',
+        'a2107a-h'                => 'a2107a-h',
+        'a1107'                   => 'a1107',
+        'a1000-f'                 => 'a1000-f',
+        'a1000l-f'                => 'a1000l-f',
+        'a1000'                   => 'a1000',
+        'a2109a'                  => 'a2109a',
+        'ideatab'                 => 'a2109a',
+        'a889'                    => 'a889',
+        'a880'                    => 'a880',
+        'a850+'                   => 'a850+',
+        'a850'                    => 'a850',
+        'a820'                    => 'a820',
+        'a816'                    => 'a816',
+        'a789'                    => 'a789',
+        'a766'                    => 'a766',
+        'a680'                    => 'lenovo a680',
+        'a660'                    => 'a660',
+        'a656'                    => 'a656',
+        'a606'                    => 'a606',
+        'a590'                    => 'a590',
+        'a536'                    => 'a536',
+        'a390'                    => 'a390',
+        'a388t'                   => 'a388t',
+        'a328'                    => 'a328',
+        'a319'                    => 'a319',
+        'a288t'                   => 'a288t',
+        'a65'                     => 'a65',
+        'a60'                     => 'a60',
+        'smarttabiii10'           => 'smart tab iii 10',
+        'smart tab iii 10'        => 'smart tab iii 10',
+        'smarttabii10'            => 'smarttab ii 10',
+        'smarttab ii 10'          => 'smarttab ii 10',
+        'smarttabii7'             => 'smarttab ii 7',
+        'smart tab 4g'            => 'smart tab 4g',
+        'smart tab 4'             => 'smart tab 4',
+        'smart tab 3g'            => 'smart tab 3g',
+        'thinkpad'                => '1838',
+        'at1010-t'                => 'at1010-t',
+        'smart tab iii 7'         => 'smart tab iii 7',
+        'smarttabiii7'            => 'smart tab iii 7',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,344 +142,10 @@ class LenovoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('YT3-X50L', false)) {
-            return $this->loader->load('yt3-x50l', $useragent);
-        }
-
-        if ($s->contains('TB2-X30F', false)) {
-            return $this->loader->load('tb2-x30f', $useragent);
-        }
-
-        if ($s->contains('YOGA Tablet 2 Pro-1380L', false)) {
-            return $this->loader->load('1380l', $useragent);
-        }
-
-        if ($s->contains('YOGA Tablet 2 Pro-1380F', false)) {
-            return $this->loader->load('1380f', $useragent);
-        }
-
-        if ($s->contains('YOGA Tablet 2-1050L', false)) {
-            return $this->loader->load('1050l', $useragent);
-        }
-
-        if ($s->contains('YOGA Tablet 2-1050F', false)) {
-            return $this->loader->load('1050f', $useragent);
-        }
-
-        if ($s->contains('YOGA Tablet 2-830L', false)) {
-            return $this->loader->load('830l', $useragent);
-        }
-
-        if ($s->contains('YOGA Tablet 2-830F', false)) {
-            return $this->loader->load('830f', $useragent);
-        }
-
-        if ($s->contains('a10-70f', false)) {
-            return $this->loader->load('a10-70f', $useragent);
-        }
-
-        if ($s->contains('s6000l-f', false)) {
-            return $this->loader->load('s6000l-f', $useragent);
-        }
-
-        if ($s->contains('s6000-h', false)) {
-            return $this->loader->load('s6000-h', $useragent);
-        }
-
-        if ($s->contains('s6000-f', false)) {
-            return $this->loader->load('s6000-f', $useragent);
-        }
-
-        if ($s->contains('s5000-h', false)) {
-            return $this->loader->load('s5000-h', $useragent);
-        }
-
-        if ($s->contains('s5000-f', false)) {
-            return $this->loader->load('s5000-f', $useragent);
-        }
-
-        if ($s->contains('ideatabs2110ah', false)) {
-            return $this->loader->load('s2110a-h', $useragent);
-        }
-
-        if ($s->contains('ideatabs2110af', false)) {
-            return $this->loader->load('s2110a-f', $useragent);
-        }
-
-        if ($s->contains('IdeaTabS2109A-F', true)) {
-            return $this->loader->load('s2109a-f', $useragent);
-        }
-
-        if ($s->contains('s920', false)) {
-            return $this->loader->load('s920', $useragent);
-        }
-
-        if ($s->contains('s880i', false)) {
-            return $this->loader->load('s880i', $useragent);
-        }
-
-        if ($s->contains('s856', false)) {
-            return $this->loader->load('s856', $useragent);
-        }
-
-        if ($s->contains('s820_row', false)) {
-            return $this->loader->load('s820_row', $useragent);
-        }
-
-        if ($s->contains('s720', false)) {
-            return $this->loader->load('s720', $useragent);
-        }
-
-        if ($s->contains('s660', false)) {
-            return $this->loader->load('s660', $useragent);
-        }
-
-        if ($s->contains('p1050x', false)) {
-            return $this->loader->load('lifetab p1050x', $useragent);
-        }
-
-        if ($s->contains('p1032x', false)) {
-            return $this->loader->load('lifetab p1032x', $useragent);
-        }
-
-        if ($s->contains('p780', false)) {
-            return $this->loader->load('p780', $useragent);
-        }
-
-        if ($s->contains('k910l', false)) {
-            return $this->loader->load('k910l', $useragent);
-        }
-
-        if ($s->contains('k900', false)) {
-            return $this->loader->load('k900', $useragent);
-        }
-
-        if ($s->contains(' k1', false)) {
-            return $this->loader->load('k1', $useragent);
-        }
-
-        if ($s->contains('ideapada10', false)) {
-            return $this->loader->load('ideapad a10', $useragent);
-        }
-
-        if ($s->contains('a1_07', false)) {
-            return $this->loader->load('ideapad a1', $useragent);
-        }
-
-        if ($s->contains('b8080-h', false)) {
-            return $this->loader->load('b8080-h', $useragent);
-        }
-
-        if ($s->contains('b8080-f', false)) {
-            return $this->loader->load('b8080-f', $useragent);
-        }
-
-        if ($s->contains('b8000-h', false)) {
-            return $this->loader->load('b8000-h', $useragent);
-        }
-
-        if ($s->contains('b8000-f', false)) {
-            return $this->loader->load('b8000-f', $useragent);
-        }
-
-        if ($s->contains('b6000-hv', false)) {
-            return $this->loader->load('b6000-hv', $useragent);
-        }
-
-        if ($s->contains('b6000-h', false)) {
-            return $this->loader->load('b6000-h', $useragent);
-        }
-
-        if ($s->contains('b6000-f', false)) {
-            return $this->loader->load('b6000-f', $useragent);
-        }
-
-        if ($s->contains('a7600-h', false)) {
-            return $this->loader->load('a7600-h', $useragent);
-        }
-
-        if ($s->contains('a7600-f', false)) {
-            return $this->loader->load('a7600-f', $useragent);
-        }
-
-        if ($s->contains('a7000-a', false)) {
-            return $this->loader->load('a7000-a', $useragent);
-        }
-
-        if ($s->contains('A5500-H', false)) {
-            return $this->loader->load('a5500-h', $useragent);
-        }
-
-        if ($s->contains('A5500-F', false)) {
-            return $this->loader->load('a5500-f', $useragent);
-        }
-
-        if ($s->contains('a3500-hv', false)) {
-            return $this->loader->load('a3500-hv', $useragent);
-        }
-
-        if ($s->contains('a3500-h', false)) {
-            return $this->loader->load('a3500-h', $useragent);
-        }
-
-        if ($s->contains('A3500-FL', false)) {
-            return $this->loader->load('a3500-fl', $useragent);
-        }
-
-        if ($s->contains('a3300-hv', false)) {
-            return $this->loader->load('a3300-hv', $useragent);
-        }
-
-        if ($s->contains('a3300-h', false)) {
-            return $this->loader->load('a3300-h', $useragent);
-        }
-
-        if ($s->contains('a3300-gv', false)) {
-            return $this->loader->load('a3300-gv', $useragent);
-        }
-
-        if ($s->contains('A3000-H', false)) {
-            return $this->loader->load('a3000-h', $useragent);
-        }
-
-        if ($s->contains('A2107A-H', false)) {
-            return $this->loader->load('a2107a-h', $useragent);
-        }
-
-        if ($s->contains('A1107', false)) {
-            return $this->loader->load('a1107', $useragent);
-        }
-
-        if ($s->contains('A1000-F', false)) {
-            return $this->loader->load('a1000-f', $useragent);
-        }
-
-        if ($s->contains('A1000L-F', false)) {
-            return $this->loader->load('a1000l-f', $useragent);
-        }
-
-        if ($s->contains('A1000', false)) {
-            return $this->loader->load('a1000', $useragent);
-        }
-
-        if ($s->containsAny(['a2109a', 'ideatab'], false)) {
-            return $this->loader->load('a2109a', $useragent);
-        }
-
-        if ($s->contains('a889', false)) {
-            return $this->loader->load('a889', $useragent);
-        }
-
-        if ($s->contains('a880', false)) {
-            return $this->loader->load('a880', $useragent);
-        }
-
-        if ($s->contains('a850+', false)) {
-            return $this->loader->load('a850+', $useragent);
-        }
-
-        if ($s->contains('a850', false)) {
-            return $this->loader->load('a850', $useragent);
-        }
-
-        if ($s->contains('a820', false)) {
-            return $this->loader->load('a820', $useragent);
-        }
-
-        if ($s->contains('a816', false)) {
-            return $this->loader->load('a816', $useragent);
-        }
-
-        if ($s->contains('a789', false)) {
-            return $this->loader->load('a789', $useragent);
-        }
-
-        if ($s->contains('a766', false)) {
-            return $this->loader->load('a766', $useragent);
-        }
-
-        if ($s->contains('a660', false)) {
-            return $this->loader->load('a660', $useragent);
-        }
-
-        if ($s->contains('a656', false)) {
-            return $this->loader->load('a656', $useragent);
-        }
-
-        if ($s->contains('a606', false)) {
-            return $this->loader->load('a606', $useragent);
-        }
-
-        if ($s->contains('a590', false)) {
-            return $this->loader->load('a590', $useragent);
-        }
-
-        if ($s->contains('a536', false)) {
-            return $this->loader->load('a536', $useragent);
-        }
-
-        if ($s->contains('a390', false)) {
-            return $this->loader->load('a390', $useragent);
-        }
-
-        if ($s->contains('a388t', false)) {
-            return $this->loader->load('a388t', $useragent);
-        }
-
-        if ($s->contains('a328', false)) {
-            return $this->loader->load('a328', $useragent);
-        }
-
-        if ($s->contains('a319', false)) {
-            return $this->loader->load('a319', $useragent);
-        }
-
-        if ($s->contains('a288t', false)) {
-            return $this->loader->load('a288t', $useragent);
-        }
-
-        if ($s->contains('a65', false)) {
-            return $this->loader->load('a65', $useragent);
-        }
-
-        if ($s->contains('a60', false)) {
-            return $this->loader->load('a60', $useragent);
-        }
-
-        if ($s->containsAny(['SmartTabIII10', 'Smart Tab III 10'], false)) {
-            return $this->loader->load('smart tab iii 10', $useragent);
-        }
-
-        if ($s->containsAny(['SmartTabII10', 'SmartTab II 10'], false)) {
-            return $this->loader->load('smarttab ii 10', $useragent);
-        }
-
-        if ($s->contains('SmartTabII7', false)) {
-            return $this->loader->load('smarttab ii 7', $useragent);
-        }
-
-        if ($s->contains('smart tab 4g', false)) {
-            return $this->loader->load('smart tab 4g', $useragent);
-        }
-
-        if ($s->contains('smart tab 4', false)) {
-            return $this->loader->load('smart tab 4', $useragent);
-        }
-
-        if ($s->contains('smart tab 3g', false)) {
-            return $this->loader->load('smart tab 3g', $useragent);
-        }
-
-        if ($s->contains('ThinkPad', false)) {
-            return $this->loader->load('1838', $useragent);
-        }
-
-        if ($s->contains('AT1010-T', true)) {
-            return $this->loader->load('at1010-t', $useragent);
-        }
-
-        if ($s->containsAny(['smart tab iii 7', 'smarttabiii7'], false)) {
-            return $this->loader->load('smart tab iii 7', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general lenovo device', $useragent);

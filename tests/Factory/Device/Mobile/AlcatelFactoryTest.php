@@ -774,6 +774,16 @@ class AlcatelFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; 5042A Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.117 Mobile Safari/537.36',
+                'OT-5042A',
+                'One Touch Pop 2',
+                'Alcatel',
+                'Alcatel',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

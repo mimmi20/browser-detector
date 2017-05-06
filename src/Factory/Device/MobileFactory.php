@@ -636,6 +636,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\KyoceraFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('C6730', false)) {
+            return (new Mobile\KyoceraFactory($this->loader))->detect($useragent, $s);
+        }
+
         if (preg_match('/(C|D|E|F)\d{4}/', $useragent)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
@@ -1408,7 +1412,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PipoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['OT-', '6036Y', '4034D', '5042D'], true)) {
+        if ($s->containsAny(['OT-', '6036Y', '4034D', '5042D', '5042A'], true)) {
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
