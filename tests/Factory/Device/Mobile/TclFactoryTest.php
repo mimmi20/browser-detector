@@ -134,6 +134,16 @@ class TclFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; VF685 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36',
+                'VF685',
+                'Smart 4 Fun',
+                'TCL',
+                'Vodafone',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

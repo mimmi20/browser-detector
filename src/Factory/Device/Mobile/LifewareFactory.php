@@ -21,33 +21,14 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class XiaomiFactory implements Factory\FactoryInterface
+class LifewareFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'mi max' => 'mi max',
-        'mi 4w' => 'mi 4w',
-        'mi 4lte' => 'mi 4 lte',
-        'mi 3w' => 'mi 3w',
-        'mi pad' => 'mi pad',
-        'mipad' => 'mi pad',
-        'mi 2a' => 'mi 2a',
-        'mi 2s' => 'mi 2s',
-        'mi 2' => 'mi 2',
-        'redmi 3s' => 'redmi 3s',
-        'redmi 3' => 'redmi 3',
-        'redmi_note_3' => 'redmi note 3',
-        'redmi note 2' => 'redmi note 2',
-        'hm note 1w' => 'hm note 1w',
-        'hm note 1s' => 'hm note 1s',
-        'hm note 1ltetd' => 'hm note 1lte td',
-        'hm note 1lte' => 'hm note 1lte',
-        'hm_1sw' => 'hm 1sw',
-        'hm 1sw' => 'hm 1sw',
-        'hm 1sc' => 'hm 1sc',
-        'hm 1s' => 'hm 1s',
+        'ft 4008' => 'lifeware ft-4008',
+        'ft_4008' => 'lifeware ft-4008',
     ];
 
     /**
@@ -79,6 +60,6 @@ class XiaomiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general xiaomi device', $useragent);
+        return $this->loader->load('general lifeware device', $useragent);
     }
 }

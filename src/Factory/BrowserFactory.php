@@ -2831,6 +2831,10 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('microsoft cryptoapi', $useragent);
         }
 
+        if ($s->contains('microsoft url control', false)) {
+            return $this->loader->load('microsoft url control', $useragent);
+        }
+
         if ($s->contains('owasp_secret_browser', false)) {
             return $this->loader->load('owasp_secret_browser', $useragent);
         }
@@ -3265,6 +3269,22 @@ class BrowserFactory implements FactoryInterface
 
         if ($s->contains('cloudinary', false)) {
             return $this->loader->load('cloudinary', $useragent);
+        }
+
+        if ($s->contains('mozilla', false)) {
+            return $this->loader->load('mozilla', $useragent);
+        }
+
+        if ($s->contains('fetchstream', false)) {
+            return $this->loader->load('fetch-stream', $useragent);
+        }
+
+        if ($s->contains('autoit', false)) {
+            return $this->loader->load('autoit', $useragent);
+        }
+
+        if ($s->contains('atvoice', false)) {
+            return $this->loader->load('atvoice', $useragent);
         }
 
         return $this->loader->load('unknown', $useragent);

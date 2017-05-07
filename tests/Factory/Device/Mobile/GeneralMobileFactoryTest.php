@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\PantechFactory;
+use BrowserDetector\Factory\Device\Mobile\GeneralMobileFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class PantechFactoryTest extends \PHPUnit\Framework\TestCase
+class GeneralMobileFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\PantechFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\GeneralMobileFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class PantechFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new PantechFactory($loader);
+        $this->object = new GeneralMobileFactory($loader);
     }
 
     /**
@@ -106,70 +106,20 @@ class PantechFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Pantech Device',
-                'general Pantech Device',
-                'Pantech',
-                'Pantech',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'PT-GF200 CLDC/CLDC-1.0 MIDP/MIDP-1.0',
-                'PT-GF200',
-                'PT-GF200',
-                'Pantech',
-                'Pantech',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-            [
-                'PantechP9020/JEUS04262010; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.18216; U; en-US) Opera 9.50',
-                'P9020',
-                'Pursuit P9020',
-                'Pantech',
-                'Pantech',
-                'Mobile Phone',
-                true,
-                null,
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; ko-kr; IM-A900K Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'IM-A900K',
-                'Vega Secret Up',
-                'Pantech',
-                'Pantech',
-                'Mobile Phone',
+                'general General Mobile Device',
+                'general General Mobile Device',
+                'General Mobile',
+                'General Mobile',
+                'Smartphone',
                 true,
                 'touchscreen',
             ],
             [
-                'OneBrowser/3.1 (PantechP2020/JIUS10032011)',
-                'P2020',
-                'P2020',
-                'Pantech',
-                'Pantech',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.3; IM-A830L Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
-                'IM-A830L',
-                'Vega Racer 2',
-                'Pantech',
-                'Pantech',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; ko-kr; IM-A850K/3.10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'IM-A850K',
-                'Vega R3',
-                'Pantech',
-                'Pantech',
+                'Mozilla/5.0 (Linux; Android 4.4.2; tr-tr; GM Discovery II Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+                'Discovery II',
+                'Discovery II',
+                'General Mobile',
+                'General Mobile',
                 'Smartphone',
                 true,
                 'touchscreen',

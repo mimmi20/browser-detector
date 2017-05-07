@@ -24,6 +24,23 @@ use Stringy\Stringy;
 class WikoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'wax' => 'wiko wax',
+        'slide2' => 'slide 2',
+        'slide' => 'wiko slide',
+        'jerry' => 'jerry',
+        'bloom' => 'bloom',
+        'rainbow' => 'rainbow',
+        'lenny' => 'lenny',
+        'getaway' => 'getaway',
+        'darkmoon' => 'darkmoon',
+        'darkside' => 'darkside',
+        'cink peax 2' => 'cink peax 2',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,40 +63,10 @@ class WikoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('SLIDE2', true)) {
-            return $this->loader->load('slide 2', $useragent);
-        }
-
-        if ($s->contains('JERRY', true)) {
-            return $this->loader->load('jerry', $useragent);
-        }
-
-        if ($s->contains('BLOOM', true)) {
-            return $this->loader->load('bloom', $useragent);
-        }
-
-        if ($s->contains('RAINBOW', true)) {
-            return $this->loader->load('rainbow', $useragent);
-        }
-
-        if ($s->contains('LENNY', true)) {
-            return $this->loader->load('lenny', $useragent);
-        }
-
-        if ($s->contains('GETAWAY', true)) {
-            return $this->loader->load('getaway', $useragent);
-        }
-
-        if ($s->contains('DARKMOON', true)) {
-            return $this->loader->load('darkmoon', $useragent);
-        }
-
-        if ($s->contains('DARKSIDE', true)) {
-            return $this->loader->load('darkside', $useragent);
-        }
-
-        if ($s->contains('CINK PEAX 2', true)) {
-            return $this->loader->load('cink peax 2', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general wiko device', $useragent);

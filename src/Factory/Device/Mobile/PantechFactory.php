@@ -24,6 +24,18 @@ use Stringy\Stringy;
 class PantechFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'p9020' => 'p9020',
+        'p2020' => 'p2020',
+        'im-a900k' => 'im-a900k',
+        'im-a850k' => 'pantech im-a850k',
+        'im-a830l' => 'im-a830l',
+        'pt-gf200' => 'pt-gf200',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,24 +58,10 @@ class PantechFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('p9020', false)) {
-            return $this->loader->load('p9020', $useragent);
-        }
-
-        if ($s->contains('p2020', false)) {
-            return $this->loader->load('p2020', $useragent);
-        }
-
-        if ($s->contains('im-a900k', false)) {
-            return $this->loader->load('im-a900k', $useragent);
-        }
-
-        if ($s->contains('im-a830l', false)) {
-            return $this->loader->load('im-a830l', $useragent);
-        }
-
-        if ($s->contains('pt-gf200', false)) {
-            return $this->loader->load('pt-gf200', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general pantech device', $useragent);

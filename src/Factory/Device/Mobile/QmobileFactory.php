@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class QmobileFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        ' a10 ' => 'qmobile a10',
+        'a290' => 'qmobile a290',
+        ' x60 ' => 'qmobile x60',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,8 +55,10 @@ class QmobileFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains(' A10 ', true)) {
-            return $this->loader->load('qmobile a10', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general qmobile device', $useragent);
