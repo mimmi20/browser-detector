@@ -17,8 +17,6 @@ use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
-use UaDeviceType\Type;
-use UaResult\Device\Device;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile

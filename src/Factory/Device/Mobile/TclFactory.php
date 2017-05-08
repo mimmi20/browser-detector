@@ -27,7 +27,7 @@ class TclFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm2u' => 'm2u',
+        'm2u'   => 'm2u',
         's720t' => 's720t',
         'vf685' => 'tcl vf685',
     ];

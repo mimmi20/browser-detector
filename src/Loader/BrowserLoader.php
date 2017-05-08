@@ -109,9 +109,7 @@ class BrowserLoader implements LoaderInterface
             (new CompanyLoader($this->cache))->load($browser->manufacturer),
             $version,
             (new TypeLoader($this->cache))->load($browser->type),
-            (new BrowserBits($useragent))->getBits(),
-            $browser->pdfSupport,
-            $browser->rssSupport
+            (new BrowserBits($useragent))->getBits()
         );
 
         return [$browser, $engine];

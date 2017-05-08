@@ -106,11 +106,7 @@ class DeviceLoader implements LoaderInterface
             $device->pointingMethod,
             $device->resolutionWidth,
             $device->resolutionHeight,
-            $device->dualOrientation,
-            $device->colors,
-            $device->smsSupport,
-            $device->nfcSupport,
-            $device->hasQwertyKeyboard
+            $device->dualOrientation
         );
 
         return [$device, $platform];

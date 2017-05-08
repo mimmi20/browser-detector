@@ -28,7 +28,7 @@ class QmobileFactory implements Factory\FactoryInterface
      */
     private $devices = [
         ' a10 ' => 'qmobile a10',
-        'a290' => 'qmobile a290',
+        'a290'  => 'qmobile a290',
         ' x60 ' => 'qmobile x60',
     ];
 

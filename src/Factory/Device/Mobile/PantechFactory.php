@@ -27,8 +27,8 @@ class PantechFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'p9020' => 'p9020',
-        'p2020' => 'p2020',
+        'p9020'    => 'p9020',
+        'p2020'    => 'p2020',
         'im-a900k' => 'im-a900k',
         'im-a850k' => 'pantech im-a850k',
         'im-a830l' => 'im-a830l',

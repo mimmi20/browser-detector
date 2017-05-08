@@ -27,16 +27,16 @@ class WikoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'wax' => 'wiko wax',
-        'slide2' => 'slide 2',
-        'slide' => 'wiko slide',
-        'jerry' => 'jerry',
-        'bloom' => 'bloom',
-        'rainbow' => 'rainbow',
-        'lenny' => 'lenny',
-        'getaway' => 'getaway',
-        'darkmoon' => 'darkmoon',
-        'darkside' => 'darkside',
+        'wax'         => 'wiko wax',
+        'slide2'      => 'slide 2',
+        'slide'       => 'wiko slide',
+        'jerry'       => 'jerry',
+        'bloom'       => 'bloom',
+        'rainbow'     => 'rainbow',
+        'lenny'       => 'lenny',
+        'getaway'     => 'getaway',
+        'darkmoon'    => 'darkmoon',
+        'darkside'    => 'darkside',
         'cink peax 2' => 'cink peax 2',
     ];
 
