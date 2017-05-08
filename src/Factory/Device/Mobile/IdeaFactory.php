@@ -21,15 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class QmobileFactory implements Factory\FactoryInterface
+class IdeaFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        ' a10 ' => 'qmobile a10',
-        'a290'  => 'qmobile a290',
-        ' x60 ' => 'qmobile x60',
+        'i4901' => 'idea i4901',
     ];
 
     /**
@@ -61,6 +59,6 @@ class QmobileFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general qmobile device', $useragent);
+        return $this->loader->load('general idea device', $useragent);
     }
 }

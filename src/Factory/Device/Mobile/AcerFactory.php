@@ -24,6 +24,51 @@ use Stringy\Stringy;
 class AcerFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'v370'         => 'v370',
+        'stream-s110'  => 'stream s110',
+        's500'         => 's500',
+        'liquid mt'    => 's120',
+        'liquid metal' => 's120',
+        'z150'         => 'z150',
+        'liquid'       => 's100',
+        'b1-770'       => 'b1-770',
+        'b1-730hd'     => 'b1-730hd',
+        'b1-721'       => 'b1-721',
+        'b1-711'       => 'b1-711',
+        'b1-710'       => 'b1-710',
+        'b1-a71'       => 'b1-a71',
+        'a1-830'       => 'a1-830',
+        'a1-811'       => 'a1-811',
+        'a1-810'       => 'a1-810',
+        'a701'         => 'a701',
+        'a700'         => 'a700',
+        'a511'         => 'a511',
+        'a510'         => 'a510',
+        'a501'         => 'a501',
+        'a500'         => 'a500',
+        'a211'         => 'a211',
+        'a210'         => 'a210',
+        'a200'         => 'a200',
+        'a101c'        => 'a101c',
+        'a101'         => 'a101',
+        'a100'         => 'a100',
+        'a3-a20'       => 'a3-a20',
+        'a3-a11'       => 'a3-a11',
+        'a3-a10'       => 'a3-a10',
+        'g100w'        => 'g100w',
+        'e320'         => 'e320',
+        'e310'         => 'e310',
+        'e140'         => 'e140',
+        'da241hl'      => 'da241hl',
+        'allegro'      => 'allegro',
+        'tm01'         => 'tm01',
+        'm220'         => 'm220',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,156 +91,10 @@ class AcerFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('V370', false)) {
-            return $this->loader->load('v370', $useragent);
-        }
-
-        if ($s->contains('Stream-S110', false)) {
-            return $this->loader->load('stream s110', $useragent);
-        }
-
-        if ($s->contains('S500', false)) {
-            return $this->loader->load('s500', $useragent);
-        }
-
-        if ($s->containsAny(['Liquid MT', 'Liquid Metal'], false)) {
-            return $this->loader->load('s120', $useragent);
-        }
-
-        if ($s->contains('Z150', false)) {
-            return $this->loader->load('z150', $useragent);
-        }
-
-        if ($s->contains('Liquid', false)) {
-            return $this->loader->load('s100', $useragent);
-        }
-
-        if ($s->contains('b1-770', false)) {
-            return $this->loader->load('b1-770', $useragent);
-        }
-
-        if ($s->contains('b1-730hd', false)) {
-            return $this->loader->load('b1-730hd', $useragent);
-        }
-
-        if ($s->contains('b1-721', false)) {
-            return $this->loader->load('b1-721', $useragent);
-        }
-
-        if ($s->contains('b1-711', false)) {
-            return $this->loader->load('b1-711', $useragent);
-        }
-
-        if ($s->contains('b1-710', false)) {
-            return $this->loader->load('b1-710', $useragent);
-        }
-
-        if ($s->contains('b1-a71', false)) {
-            return $this->loader->load('b1-a71', $useragent);
-        }
-
-        if ($s->contains('a1-830', false)) {
-            return $this->loader->load('a1-830', $useragent);
-        }
-
-        if ($s->contains('a1-811', false)) {
-            return $this->loader->load('a1-811', $useragent);
-        }
-
-        if ($s->contains('a1-810', false)) {
-            return $this->loader->load('a1-810', $useragent);
-        }
-
-        if ($s->contains('A701', false)) {
-            return $this->loader->load('a701', $useragent);
-        }
-
-        if ($s->contains('A700', false)) {
-            return $this->loader->load('a700', $useragent);
-        }
-
-        if ($s->contains('A511', false)) {
-            return $this->loader->load('a511', $useragent);
-        }
-
-        if ($s->contains('A510', false)) {
-            return $this->loader->load('a510', $useragent);
-        }
-
-        if ($s->contains('A501', false)) {
-            return $this->loader->load('a501', $useragent);
-        }
-
-        if ($s->contains('A500', false)) {
-            return $this->loader->load('a500', $useragent);
-        }
-
-        if ($s->contains('A211', false)) {
-            return $this->loader->load('a211', $useragent);
-        }
-
-        if ($s->contains('A210', false)) {
-            return $this->loader->load('a210', $useragent);
-        }
-
-        if ($s->contains('A200', false)) {
-            return $this->loader->load('a200', $useragent);
-        }
-
-        if ($s->contains('A101C', false)) {
-            return $this->loader->load('a101c', $useragent);
-        }
-
-        if ($s->contains('A101', false)) {
-            return $this->loader->load('a101', $useragent);
-        }
-
-        if ($s->contains('A100', false)) {
-            return $this->loader->load('a100', $useragent);
-        }
-
-        if ($s->contains('a3-a20', false)) {
-            return $this->loader->load('a3-a20', $useragent);
-        }
-
-        if ($s->contains('a3-a11', false)) {
-            return $this->loader->load('a3-a11', $useragent);
-        }
-
-        if ($s->contains('a3-a10', false)) {
-            return $this->loader->load('a3-a10', $useragent);
-        }
-
-        if ($s->contains('G100W', false)) {
-            return $this->loader->load('g100w', $useragent);
-        }
-
-        if ($s->contains('E320', false)) {
-            return $this->loader->load('e320', $useragent);
-        }
-
-        if ($s->contains('E310', false)) {
-            return $this->loader->load('e310', $useragent);
-        }
-
-        if ($s->contains('E140', false)) {
-            return $this->loader->load('e140', $useragent);
-        }
-
-        if ($s->contains('DA241HL', false)) {
-            return $this->loader->load('da241hl', $useragent);
-        }
-
-        if ($s->contains('allegro', false)) {
-            return $this->loader->load('allegro', $useragent);
-        }
-
-        if ($s->contains('TM01', true)) {
-            return $this->loader->load('tm01', $useragent);
-        }
-
-        if ($s->contains('M220', true)) {
-            return $this->loader->load('m220', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general acer device', $useragent);

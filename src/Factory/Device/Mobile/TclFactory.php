@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class TclFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'm2u'   => 'm2u',
+        's720t' => 's720t',
+        'vf685' => 'tcl vf685',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +55,10 @@ class TclFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('M2U', true)) {
-            return $this->loader->load('m2u', $useragent);
-        }
-
-        if ($s->contains('S720T', true)) {
-            return $this->loader->load('s720t', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general tcl device', $useragent);

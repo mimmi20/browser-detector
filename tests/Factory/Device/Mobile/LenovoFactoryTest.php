@@ -974,6 +974,16 @@ class LenovoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Lenovo A680_ROW Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'A680',
+                'A680',
+                'Lenovo',
+                'Lenovo',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

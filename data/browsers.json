@@ -994,6 +994,20 @@
     },
     "engine": "unknown"
   },
+  "bb work connect": {
+    "name": "BB Work Connect",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BB_Work_Connect"
+      ]
+    },
+    "engine": "unknown"
+  },
   "bcklinks": {
     "name": "BCKLINKS",
     "manufacturer": "Unknown",
@@ -1900,6 +1914,20 @@
       "class": "VersionFactory",
       "search": [
         "CloudFlare\\-AlwaysOnline"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cloudinary": {
+    "name": "Cloudinary Bot",
+    "manufacturer": "cloudinary",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cloudinary"
       ]
     },
     "engine": "unknown"
@@ -6959,6 +6987,18 @@
     },
     "engine": "unknown"
   },
+  "fetch-stream": {
+    "name": "FetchStream",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "internet explorer": {
     "name": "Internet Explorer",
     "manufacturer": "Microsoft",
@@ -7109,6 +7149,20 @@
         "Microsoft\\-WebDAV\\-MiniRedir",
         "Microsoft\\-WebDAV",
         "DavClnt"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "microsoft url control": {
+    "name": "Microsoft URL Control",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Microsoft URL Control \\- "
       ]
     },
     "engine": "unknown"
@@ -7459,7 +7513,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "rv\\:"
+        "Mozilla"
       ]
     },
     "engine": "gecko"
@@ -7770,10 +7824,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Netscape",
         "Netscape6",
-        "rv\\:",
-        "Mozilla"
+        "Netscape"
       ]
     },
     "engine": "gecko"
@@ -11068,6 +11120,18 @@
       "search": [
         "Socialradarbot"
       ]
+    },
+    "engine": "unknown"
+  },
+  "socialcast bot": {
+    "name": "socialcast Bot",
+    "manufacturer": "socialcast.com",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },
@@ -14713,6 +14777,30 @@
       "search": [
         "archive-de.com"
       ]
+    },
+    "engine": "unknown"
+  },
+  "autoit": {
+    "name": "AutoIt",
+    "manufacturer": "Jonathan Bennett",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "atvoice": {
+    "name": "atVoice",
+    "manufacturer": "UFA",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   }

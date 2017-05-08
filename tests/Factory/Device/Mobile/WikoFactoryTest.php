@@ -214,6 +214,26 @@ class WikoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.3; WAX Build/JLS36C)',
+                'WAX',
+                'WAX',
+                'Wiko',
+                'Wiko',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.4.2; SLIDE Build/KOT49H)',
+                'Slide',
+                'Slide',
+                'Wiko',
+                'Wiko',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

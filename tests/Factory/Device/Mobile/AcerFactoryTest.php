@@ -494,6 +494,16 @@ class AcerFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.4.2; A3-A10 Build/KOT49H)Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0',
+                'A3-A10',
+                'Iconia Tab A3',
+                'Acer',
+                'Acer',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

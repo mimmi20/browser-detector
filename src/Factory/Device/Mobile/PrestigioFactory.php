@@ -24,6 +24,57 @@ use Stringy\Stringy;
 class PrestigioFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'psp5453duo'      => 'prestigio psp5453duo',
+        'pmt7177_3g'      => 'pmt7177_3g',
+        'pmt7077_3g'      => 'pmt7077_3g',
+        'pmt3287_3g'      => 'pmt3287_3g',
+        'pmt3277_3g'      => 'pmt3277_3g',
+        'pmt3037_3g'      => 'pmt3037_3g',
+        'pmt5587_wi'      => 'pmt5587_wi',
+        'pmt3377_wi'      => 'pmt3377_wi',
+        'pmp7480d3g_quad' => 'pmp7480d3g_quad',
+        'pmp7380d3g'      => 'pmp7380d3g',
+        'pmp7280c3g_quad' => 'pmp7280c3g_quad',
+        'pmp7280c3g'      => 'pmp7280c3g',
+        'pmp7170b3g'      => 'pmp7170b3g',
+        'pmp7100d3g'      => 'pmp7100d3g',
+        'pmp7079d_quad'   => 'pmp7079d_quad',
+        'pmp7079d3g_quad' => 'pmp7079d3g_quad',
+        'pmp7074b3gru'    => 'pmp7074b3gru',
+        'pmp7070c3g'      => 'pmp7070c3g',
+        'pmp5785c_quad'   => 'pmp5785c_quad',
+        'pmp5785c3g_quad' => 'pmp5785c3g_quad',
+        'pmp5770d'        => 'pmp5770d',
+        'pmp5670c_duo'    => 'pmp5670c_duo',
+        'pmp5580c'        => 'pmp5580c',
+        'pmp5570c'        => 'pmp5570c',
+        'pmp5297c_quad'   => 'pmp5297c_quad',
+        'pmp5197dultra'   => 'pmp5197dultra',
+        'pmp5101c_quad'   => 'pmp5101c_quad',
+        'pmp5080cpro'     => 'pmp5080cpro',
+        'pmp5080b'        => 'pmp5080b',
+        'pmp3970b'        => 'pmp3970b',
+        'pmp3870c'        => 'pmp3870c',
+        'pmp3370b'        => 'pmp3370b',
+        'pmp3074bru'      => 'pmp3074bru',
+        'pmp3007c'        => 'pmp3007c',
+        'pap7600duo'      => 'pap7600duo',
+        'pap5503'         => 'pap5503',
+        'pap5044duo'      => 'pap5044duo',
+        'pap5000tduo'     => 'pap5000tduo',
+        'pap5000duo'      => 'pap5000duo',
+        'pap4500duo'      => 'pap4500duo',
+        'pap4044duo'      => 'pap4044duo',
+        'pap3350duo'      => 'pap3350duo',
+        'psp8500'         => 'psp8500',
+        'psp8400'         => 'psp8400',
+        'gv7777'          => 'gv7777',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,176 +97,10 @@ class PrestigioFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('PMT7077_3G', true)) {
-            return $this->loader->load('pmt7077_3g', $useragent);
-        }
-
-        if ($s->contains('PMT3287_3G', true)) {
-            return $this->loader->load('pmt3287_3g', $useragent);
-        }
-
-        if ($s->contains('PMT3277_3G', true)) {
-            return $this->loader->load('pmt3277_3g', $useragent);
-        }
-
-        if ($s->contains('PMT3037_3G', true)) {
-            return $this->loader->load('pmt3037_3g', $useragent);
-        }
-
-        if ($s->contains('PMT5587_Wi', true)) {
-            return $this->loader->load('pmt5587_wi', $useragent);
-        }
-
-        if ($s->contains('PMT3377_Wi', true)) {
-            return $this->loader->load('pmt3377_wi', $useragent);
-        }
-
-        if ($s->contains('PMP7480D3G_QUAD', true)) {
-            return $this->loader->load('pmp7480d3g_quad', $useragent);
-        }
-
-        if ($s->contains('PMP7380D3G', true)) {
-            return $this->loader->load('pmp7380d3g', $useragent);
-        }
-
-        if ($s->contains('PMP7280C3G_QUAD', true)) {
-            return $this->loader->load('pmp7280c3g_quad', $useragent);
-        }
-
-        if ($s->contains('PMP7280C3G', true)) {
-            return $this->loader->load('pmp7280c3g', $useragent);
-        }
-
-        if ($s->contains('PMP7170B3G', true)) {
-            return $this->loader->load('pmp7170b3g', $useragent);
-        }
-
-        if ($s->contains('PMP7100D3G', true)) {
-            return $this->loader->load('pmp7100d3g', $useragent);
-        }
-
-        if ($s->contains('PMP7079D_QUAD', true)) {
-            return $this->loader->load('pmp7079d_quad', $useragent);
-        }
-
-        if ($s->contains('PMP7079D3G_QUAD', true)) {
-            return $this->loader->load('pmp7079d3g_quad', $useragent);
-        }
-
-        if ($s->contains('PMP7074B3GRU', true)) {
-            return $this->loader->load('pmp7074b3gru', $useragent);
-        }
-
-        if ($s->contains('PMP7070C3G', true)) {
-            return $this->loader->load('pmp7070c3g', $useragent);
-        }
-
-        if ($s->contains('PMP5785C_QUAD', true)) {
-            return $this->loader->load('pmp5785c_quad', $useragent);
-        }
-
-        if ($s->contains('PMP5785C3G_QUAD', true)) {
-            return $this->loader->load('pmp5785c3g_quad', $useragent);
-        }
-
-        if ($s->contains('PMP5770D', true)) {
-            return $this->loader->load('pmp5770d', $useragent);
-        }
-
-        if ($s->contains('PMP5670C_DUO', true)) {
-            return $this->loader->load('pmp5670c_duo', $useragent);
-        }
-
-        if ($s->contains('PMP5580C', true)) {
-            return $this->loader->load('pmp5580c', $useragent);
-        }
-
-        if ($s->contains('PMP5570C', true)) {
-            return $this->loader->load('pmp5570c', $useragent);
-        }
-
-        if ($s->contains('PMP5297C_QUAD', true)) {
-            return $this->loader->load('pmp5297c_quad', $useragent);
-        }
-
-        if ($s->contains('PMP5197DULTRA', true)) {
-            return $this->loader->load('pmp5197dultra', $useragent);
-        }
-
-        if ($s->contains('PMP5101C_QUAD', true)) {
-            return $this->loader->load('pmp5101c_quad', $useragent);
-        }
-
-        if ($s->contains('PMP5080CPRO', true)) {
-            return $this->loader->load('pmp5080cpro', $useragent);
-        }
-
-        if ($s->contains('PMP5080B', true)) {
-            return $this->loader->load('pmp5080b', $useragent);
-        }
-
-        if ($s->contains('PMP3970B', true)) {
-            return $this->loader->load('pmp3970b', $useragent);
-        }
-
-        if ($s->contains('PMP3870C', true)) {
-            return $this->loader->load('pmp3870c', $useragent);
-        }
-
-        if ($s->contains('PMP3370B', true)) {
-            return $this->loader->load('pmp3370b', $useragent);
-        }
-
-        if ($s->contains('PMP3074BRU', true)) {
-            return $this->loader->load('pmp3074bru', $useragent);
-        }
-
-        if ($s->contains('PMP3007C', true)) {
-            return $this->loader->load('pmp3007c', $useragent);
-        }
-
-        if ($s->contains('PAP7600DUO', true)) {
-            return $this->loader->load('pap7600duo', $useragent);
-        }
-
-        if ($s->contains('PAP5503', true)) {
-            return $this->loader->load('pap5503', $useragent);
-        }
-
-        if ($s->contains('PAP5044DUO', true)) {
-            return $this->loader->load('pap5044duo', $useragent);
-        }
-
-        if ($s->contains('PAP5000TDUO', true)) {
-            return $this->loader->load('pap5000tduo', $useragent);
-        }
-
-        if ($s->contains('PAP5000DUO', true)) {
-            return $this->loader->load('pap5000duo', $useragent);
-        }
-
-        if ($s->contains('PAP4500DUO', true)) {
-            return $this->loader->load('pap4500duo', $useragent);
-        }
-
-        if ($s->contains('PAP4044DUO', true)) {
-            return $this->loader->load('pap4044duo', $useragent);
-        }
-
-        if ($s->contains('PAP3350DUO', true)) {
-            return $this->loader->load('pap3350duo', $useragent);
-        }
-
-        if ($s->contains('PSP8500', true)) {
-            return $this->loader->load('psp8500', $useragent);
-        }
-
-        if ($s->contains('PSP8400', true)) {
-            return $this->loader->load('psp8400', $useragent);
-        }
-
-        if ($s->contains('GV7777', true)) {
-            return $this->loader->load('gv7777', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general prestigio device', $useragent);

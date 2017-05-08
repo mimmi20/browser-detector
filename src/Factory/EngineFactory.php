@@ -15,7 +15,6 @@ use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Stringy\Stringy;
-use UaResult\Engine\Engine;
 use UaResult\Os\OsInterface;
 
 /**

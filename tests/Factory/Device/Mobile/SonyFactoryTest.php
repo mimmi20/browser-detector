@@ -1904,6 +1904,16 @@ class SonyFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; D2212 Build/18.5.B.0.26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36',
+                'D2212',
+                'Xperia E3 Dual',
+                'Sony',
+                'Sony',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

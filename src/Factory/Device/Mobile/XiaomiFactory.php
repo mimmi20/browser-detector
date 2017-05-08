@@ -24,6 +24,33 @@ use Stringy\Stringy;
 class XiaomiFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'mi max'         => 'mi max',
+        'mi 4w'          => 'mi 4w',
+        'mi 4lte'        => 'mi 4 lte',
+        'mi 3w'          => 'mi 3w',
+        'mi pad'         => 'mi pad',
+        'mipad'          => 'mi pad',
+        'mi 2a'          => 'mi 2a',
+        'mi 2s'          => 'mi 2s',
+        'mi 2'           => 'mi 2',
+        'redmi 3s'       => 'redmi 3s',
+        'redmi 3'        => 'redmi 3',
+        'redmi_note_3'   => 'redmi note 3',
+        'redmi note 2'   => 'redmi note 2',
+        'hm note 1w'     => 'hm note 1w',
+        'hm note 1s'     => 'hm note 1s',
+        'hm note 1ltetd' => 'hm note 1lte td',
+        'hm note 1lte'   => 'hm note 1lte',
+        'hm_1sw'         => 'hm 1sw',
+        'hm 1sw'         => 'hm 1sw',
+        'hm 1sc'         => 'hm 1sc',
+        'hm 1s'          => 'hm 1s',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,76 +73,10 @@ class XiaomiFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('MI MAX', true)) {
-            return $this->loader->load('mi max', $useragent);
-        }
-
-        if ($s->contains('MI 4W', true)) {
-            return $this->loader->load('mi 4w', $useragent);
-        }
-
-        if ($s->contains('MI 4LTE', true)) {
-            return $this->loader->load('mi 4 lte', $useragent);
-        }
-
-        if ($s->contains('MI 3W', true)) {
-            return $this->loader->load('mi 3w', $useragent);
-        }
-
-        if ($s->containsAny(['MI PAD', 'MiPad'], true)) {
-            return $this->loader->load('mi pad', $useragent);
-        }
-
-        if ($s->contains('MI 2A', true)) {
-            return $this->loader->load('mi 2a', $useragent);
-        }
-
-        if ($s->contains('MI 2S', true)) {
-            return $this->loader->load('mi 2s', $useragent);
-        }
-
-        if ($s->contains('MI 2', true)) {
-            return $this->loader->load('mi 2', $useragent);
-        }
-
-        if ($s->contains('Redmi 3S', true)) {
-            return $this->loader->load('redmi 3s', $useragent);
-        }
-
-        if ($s->contains('Redmi 3', true)) {
-            return $this->loader->load('redmi 3', $useragent);
-        }
-
-        if ($s->contains('Redmi_Note_3', true)) {
-            return $this->loader->load('redmi note 3', $useragent);
-        }
-
-        if ($s->contains('Redmi Note 2', true)) {
-            return $this->loader->load('redmi note 2', $useragent);
-        }
-
-        if ($s->contains('HM NOTE 1W', true)) {
-            return $this->loader->load('hm note 1w', $useragent);
-        }
-
-        if ($s->contains('HM NOTE 1S', true)) {
-            return $this->loader->load('hm note 1s', $useragent);
-        }
-
-        if ($s->contains('HM NOTE 1LTETD', true)) {
-            return $this->loader->load('hm note 1lte td', $useragent);
-        }
-
-        if ($s->contains('HM NOTE 1LTE', true)) {
-            return $this->loader->load('hm note 1lte', $useragent);
-        }
-
-        if ($s->contains('HM_1SW', true)) {
-            return $this->loader->load('hm 1sw', $useragent);
-        }
-
-        if ($s->contains('HM 1SC', true)) {
-            return $this->loader->load('hm 1sc', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general xiaomi device', $useragent);
