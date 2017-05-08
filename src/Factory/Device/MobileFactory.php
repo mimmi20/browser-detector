@@ -1835,10 +1835,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MicrosoftFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('cfnetwork', false)) {
-            return (new Mobile\AppleFactory($this->loader))->detect($useragent, $s);
-        }
-
         return $this->loader->load('general mobile device', $useragent);
     }
 }
