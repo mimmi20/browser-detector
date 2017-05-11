@@ -345,6 +345,13 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
                 'Mozilla Foundation',
                 null,
             ],
+            [
+                'Mozilla/5.0 (Windows NT 6.4; Trident/8.0; rv:550) AppleWebKit/537.36 (KHTML, like Gecko) Version/7.0 Safari/550.1.3',
+                'Trident',
+                '8.0.0',
+                'Microsoft Corporation',
+                'Microsoft',
+            ],
         ];
     }
 }
