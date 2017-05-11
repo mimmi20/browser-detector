@@ -52,8 +52,12 @@ class MicrosoftInternetExplorer implements VersionCacheFactoryInterface
             }
         }
 
-        preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);
 
-        return VersionFactory::set($matches[1]);
+        if ($doMatch) {
+            return VersionFactory::set($matches[1]);
+        }
+
+        return VersionFactory::set('0');
     }
 }
