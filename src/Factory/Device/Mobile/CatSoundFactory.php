@@ -24,6 +24,18 @@ use Stringy\Stringy;
 class CatSoundFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'catnova8'               => 'cat nova 8',
+        'nova'                   => 'nova',
+        'cat tablet galactica x' => 'galactica x',
+        'stargate'               => 'stargate',
+        'cat tablet phoenix'     => 'phoenix',
+        'cat tablet'             => 'catsound tablet',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,28 +58,10 @@ class CatSoundFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('CatNova8', false)) {
-            return $this->loader->load('cat nova 8', $useragent);
-        }
-
-        if ($s->contains('nova', false)) {
-            return $this->loader->load('nova', $useragent);
-        }
-
-        if ($s->contains('Cat Tablet Galactica X', false)) {
-            return $this->loader->load('galactica x', $useragent);
-        }
-
-        if ($s->contains('StarGate', false)) {
-            return $this->loader->load('stargate', $useragent);
-        }
-
-        if ($s->contains('Cat Tablet PHOENIX', false)) {
-            return $this->loader->load('phoenix', $useragent);
-        }
-
-        if ($s->contains('Cat Tablet', false)) {
-            return $this->loader->load('catsound tablet', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general catsound device', $useragent);

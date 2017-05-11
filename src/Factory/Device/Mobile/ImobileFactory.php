@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class ImobileFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'i-style 7.7 dtv' => 'i-style 7.7 dtv',
+        'iqx oku'         => 'iq x oku',
+        'iq 6a'           => 'iq 6a',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class ImobileFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('i-STYLE 7.7 DTV', true)) {
-            return $this->loader->load('i-style 7.7 dtv', $useragent);
-        }
-
-        if ($s->contains('IQX OKU', true)) {
-            return $this->loader->load('iq x oku', $useragent);
-        }
-
-        if ($s->contains('IQ 6A', true)) {
-            return $this->loader->load('iq 6a', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general i-mobile device', $useragent);

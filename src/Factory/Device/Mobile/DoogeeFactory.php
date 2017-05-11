@@ -24,6 +24,16 @@ use Stringy\Stringy;
 class DoogeeFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'dg2014' => 'dg2014',
+        'dg800'  => 'dg800',
+        'dg330'  => 'dg330',
+        'f3_pro' => 'f3 pro',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,20 +56,10 @@ class DoogeeFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('DG2014', true)) {
-            return $this->loader->load('dg2014', $useragent);
-        }
-
-        if ($s->contains('DG800', true)) {
-            return $this->loader->load('dg800', $useragent);
-        }
-
-        if ($s->contains('DG330', true)) {
-            return $this->loader->load('dg330', $useragent);
-        }
-
-        if ($s->contains('F3_Pro', true)) {
-            return $this->loader->load('f3 pro', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general doogee device', $useragent);

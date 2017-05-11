@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class AxgioFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'wing-w2' => 'wing w2',
+        'neon-n1' => 'neon n1',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class AxgioFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('WING-W2', true)) {
-            return $this->loader->load('wing w2', $useragent);
-        }
-
-        if ($s->contains('Neon-N1', true)) {
-            return $this->loader->load('neon n1', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general axgio device', $useragent);

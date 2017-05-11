@@ -24,6 +24,21 @@ use Stringy\Stringy;
 class DellFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'venue pro'     => 'venue pro',
+        'venue 8 hspa+' => 'venue 8 hspa+',
+        'venue 8 3830'  => 'venue 8 3830',
+        'venue 7 hspa+' => 'venue 7 hspa+',
+        'venue 7 3730'  => 'venue 7 3730',
+        'venue'         => 'venue',
+        'streak 10 pro' => 'streak 10 pro',
+        'streak 7'      => 'streak 7',
+        'streak'        => 'streak',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,40 +61,10 @@ class DellFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('venue pro', false)) {
-            return $this->loader->load('venue pro', $useragent);
-        }
-
-        if ($s->contains('venue 8 hspa+', false)) {
-            return $this->loader->load('venue 8 hspa+', $useragent);
-        }
-
-        if ($s->contains('venue 8 3830', false)) {
-            return $this->loader->load('venue 8 3830', $useragent);
-        }
-
-        if ($s->contains('venue 7 hspa+', false)) {
-            return $this->loader->load('venue 7 hspa+', $useragent);
-        }
-
-        if ($s->contains('venue 7 3730', false)) {
-            return $this->loader->load('venue 7 3730', $useragent);
-        }
-
-        if ($s->contains('venue', false)) {
-            return $this->loader->load('venue', $useragent);
-        }
-
-        if ($s->contains('streak 10 pro', false)) {
-            return $this->loader->load('streak 10 pro', $useragent);
-        }
-
-        if ($s->contains('streak 7', false)) {
-            return $this->loader->load('streak 7', $useragent);
-        }
-
-        if ($s->contains('streak', false)) {
-            return $this->loader->load('streak', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general dell device', $useragent);

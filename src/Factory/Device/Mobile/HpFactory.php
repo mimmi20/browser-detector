@@ -24,6 +24,22 @@ use Stringy\Stringy;
 class HpFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'ipaqhw6900'    => 'ipaq 6900',
+        'slate 17'      => 'slate 17',
+        'slate 10 hd'   => 'slate 10',
+        'touchpad'      => 'touchpad',
+        'cm_tenderloin' => 'touchpad',
+        'palm-d050'     => 'tx',
+        'pre/'          => 'pre',
+        'pixi/'         => 'pixi',
+        'blazer'        => 'blazer',
+        'p160u'         => 'p160u',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,40 +62,10 @@ class HpFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('ipaqhw6900', false)) {
-            return $this->loader->load('ipaq 6900', $useragent);
-        }
-
-        if ($s->contains('slate 17', false)) {
-            return $this->loader->load('slate 17', $useragent);
-        }
-
-        if ($s->contains('slate 10 hd', false)) {
-            return $this->loader->load('slate 10', $useragent);
-        }
-
-        if ($s->containsAny(['touchpad', 'cm_tenderloin'], false)) {
-            return $this->loader->load('touchpad', $useragent);
-        }
-
-        if ($s->contains('palm-d050', false)) {
-            return $this->loader->load('tx', $useragent);
-        }
-
-        if ($s->contains('pre/', false)) {
-            return $this->loader->load('pre', $useragent);
-        }
-
-        if ($s->contains('pixi/', false)) {
-            return $this->loader->load('pixi', $useragent);
-        }
-
-        if ($s->contains('blazer', false)) {
-            return $this->loader->load('blazer', $useragent);
-        }
-
-        if ($s->contains('p160u', false)) {
-            return $this->loader->load('p160u', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general hp device', $useragent);

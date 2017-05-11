@@ -24,6 +24,17 @@ use Stringy\Stringy;
 class CubeFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'u55gt'     => 'u55gt',
+        'u51gt'     => 'u51gt',
+        'u30gt 2'   => 'u30gt2',
+        'u30gt'     => 'u30gt',
+        'u25gt-c4w' => 'u25gt-c4w',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,24 +57,10 @@ class CubeFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('u55gt', false)) {
-            return $this->loader->load('u55gt', $useragent);
-        }
-
-        if ($s->contains('u51gt', false)) {
-            return $this->loader->load('u51gt', $useragent);
-        }
-
-        if ($s->contains('u30gt 2', false)) {
-            return $this->loader->load('u30gt2', $useragent);
-        }
-
-        if ($s->contains('u30gt', false)) {
-            return $this->loader->load('u30gt', $useragent);
-        }
-
-        if ($s->contains('u25gt-c4w', false)) {
-            return $this->loader->load('u25gt-c4w', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general cube device', $useragent);

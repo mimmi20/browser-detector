@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class DenverFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'tad-70112' => 'tad-70112',
+        'tad-10023' => 'tad-10023',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class DenverFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('TAD-70112', false)) {
-            return $this->loader->load('tad-70112', $useragent);
-        }
-
-        if ($s->contains('TAD-10023', false)) {
-            return $this->loader->load('tad-10023', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general denver device', $useragent);

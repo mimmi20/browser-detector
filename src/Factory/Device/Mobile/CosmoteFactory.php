@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class CosmoteFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'xplore'         => 'xplore',
+        'my_mini_tablet' => 'my mini tablet',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class CosmoteFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('xplore', false)) {
-            return $this->loader->load('xplore', $useragent);
-        }
-
-        if ($s->contains('my_mini_tablet', false)) {
-            return $this->loader->load('my mini tablet', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general cosmote device', $useragent);

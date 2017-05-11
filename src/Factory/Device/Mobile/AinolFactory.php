@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class AinolFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'numy_note_9' => 'numy note 9',
+        'novo7fire'   => 'novo 7 fire',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class AinolFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('numy_note_9', false)) {
-            return $this->loader->load('numy note 9', $useragent);
-        }
-
-        if ($s->contains('novo7fire', false)) {
-            return $this->loader->load('novo 7 fire', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general ainol device', $useragent);

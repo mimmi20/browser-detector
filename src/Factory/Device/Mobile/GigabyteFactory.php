@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class GigabyteFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'rio r1'    => 'rio r1',
+        'gsmart_t4' => 'gsmart t4',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class GigabyteFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('Rio R1', true)) {
-            return $this->loader->load('rio r1', $useragent);
-        }
-
-        if ($s->contains('GSmart_T4', true)) {
-            return $this->loader->load('gsmart t4', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general gigabyte device', $useragent);

@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class BarnesNobleFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'bn nookhd+' => 'nook hd+',
+        'bnrv200'    => 'bnrv200',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class BarnesNobleFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('BN NookHD+', false)) {
-            return $this->loader->load('nook hd+', $useragent);
-        }
-
-        if ($s->contains('BNRV200', false)) {
-            return $this->loader->load('bnrv200', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general barnes & noble device', $useragent);

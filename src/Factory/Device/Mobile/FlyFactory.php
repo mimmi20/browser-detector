@@ -24,6 +24,31 @@ use Stringy\Stringy;
 class FlyFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'iq4504'    => 'iq4504',
+        'iq4502'    => 'iq4502',
+        'iq4415'    => 'iq4415',
+        'iq4411'    => 'iq4411 quad energie2',
+        'phoenix 2' => 'iq4410i',
+        'iq4490'    => 'iq4490',
+        'iq4410'    => 'iq4410 quad phoenix',
+        'iq4409'    => 'iq4409 quad',
+        'iq4404'    => 'iq4404',
+        'iq4403'    => 'iq4403',
+        'iq456'     => 'iq456',
+        'iq452'     => 'iq452',
+        'iq450'     => 'iq450',
+        'iq449'     => 'iq449',
+        'iq448'     => 'iq448',
+        'iq444'     => 'iq444',
+        'iq442'     => 'iq442',
+        'iq436i'    => 'iq436i',
+        'iq434'     => 'iq434',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,80 +71,10 @@ class FlyFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('IQ4504', true)) {
-            return $this->loader->load('iq4504', $useragent);
-        }
-
-        if ($s->contains('IQ4502', true)) {
-            return $this->loader->load('iq4502', $useragent);
-        }
-
-        if ($s->contains('IQ4415', true)) {
-            return $this->loader->load('iq4415', $useragent);
-        }
-
-        if ($s->contains('IQ4411', true)) {
-            return $this->loader->load('iq4411 quad energie2', $useragent);
-        }
-
-        if ($s->contains('phoenix 2', false)) {
-            return $this->loader->load('iq4410i', $useragent);
-        }
-
-        if ($s->contains('IQ4490', true)) {
-            return $this->loader->load('iq4490', $useragent);
-        }
-
-        if ($s->contains('IQ4410', true)) {
-            return $this->loader->load('iq4410 quad phoenix', $useragent);
-        }
-
-        if ($s->contains('IQ4409', true)) {
-            return $this->loader->load('iq4409 quad', $useragent);
-        }
-
-        if ($s->contains('IQ4404', true)) {
-            return $this->loader->load('iq4404', $useragent);
-        }
-
-        if ($s->contains('IQ4403', true)) {
-            return $this->loader->load('iq4403', $useragent);
-        }
-
-        if ($s->contains('IQ456', true)) {
-            return $this->loader->load('iq456', $useragent);
-        }
-
-        if ($s->contains('IQ452', true)) {
-            return $this->loader->load('iq452', $useragent);
-        }
-
-        if ($s->contains('IQ450', true)) {
-            return $this->loader->load('iq450', $useragent);
-        }
-
-        if ($s->contains('IQ449', true)) {
-            return $this->loader->load('iq449', $useragent);
-        }
-
-        if ($s->contains('IQ448', true)) {
-            return $this->loader->load('iq448', $useragent);
-        }
-
-        if ($s->contains('IQ444', true)) {
-            return $this->loader->load('iq444', $useragent);
-        }
-
-        if ($s->contains('IQ442', true)) {
-            return $this->loader->load('iq442', $useragent);
-        }
-
-        if ($s->contains('IQ436i', true)) {
-            return $this->loader->load('iq436i', $useragent);
-        }
-
-        if ($s->contains('IQ434', true)) {
-            return $this->loader->load('iq434', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general fly device', $useragent);

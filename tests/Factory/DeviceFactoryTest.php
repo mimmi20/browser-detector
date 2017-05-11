@@ -17253,8 +17253,8 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 'Mozilla/5.0 (Linux; U; Android 2.3.3; de-de; HTC/WildfireS/1.33.161.2 Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'Wildfire',
-                'Wildfire',
+                'A510',
+                'Wildfire S',
                 'HTC',
                 'HTC',
                 'Mobile Phone',

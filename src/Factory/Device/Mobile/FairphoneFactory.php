@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class FairphoneFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'fp1u' => 'fp1u',
+        'fp1'  => 'fp1',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class FairphoneFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('FP1U', true)) {
-            return $this->loader->load('fp1u', $useragent);
-        }
-
-        if ($s->contains('FP1', true)) {
-            return $this->loader->load('fp1', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general fairphone device', $useragent);

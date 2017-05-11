@@ -24,6 +24,25 @@ use Stringy\Stringy;
 class AmazonFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'kftt'        => 'kftt',
+        'kfthwi'      => 'kfthwi',
+        'kfsowi'      => 'kfsowi',
+        'kfot'        => 'kfot',
+        'kfjwi'       => 'kfjwi',
+        'kfjwa'       => 'kfjwa',
+        'kfaswi'      => 'kfaswi',
+        'kfapwi'      => 'kfapwi',
+        'kfapwa'      => 'kfapwa',
+        'sd4930ur'    => 'sd4930ur',
+        'kindle fire' => 'd01400',
+        'kindle'      => 'kindle',
+        'silk'        => 'kindle',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,52 +65,10 @@ class AmazonFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('kftt', false)) {
-            return $this->loader->load('kftt', $useragent);
-        }
-
-        if ($s->contains('kfthwi', false)) {
-            return $this->loader->load('kfthwi', $useragent);
-        }
-
-        if ($s->contains('kfsowi', false)) {
-            return $this->loader->load('kfsowi', $useragent);
-        }
-
-        if ($s->contains('kfot', false)) {
-            return $this->loader->load('kfot', $useragent);
-        }
-
-        if ($s->contains('kfjwi', false)) {
-            return $this->loader->load('kfjwi', $useragent);
-        }
-
-        if ($s->contains('kfjwa', false)) {
-            return $this->loader->load('kfjwa', $useragent);
-        }
-
-        if ($s->contains('kfaswi', false)) {
-            return $this->loader->load('kfaswi', $useragent);
-        }
-
-        if ($s->contains('kfapwi', false)) {
-            return $this->loader->load('kfapwi', $useragent);
-        }
-
-        if ($s->contains('kfapwa', false)) {
-            return $this->loader->load('kfapwa', $useragent);
-        }
-
-        if ($s->contains('sd4930ur', false)) {
-            return $this->loader->load('sd4930ur', $useragent);
-        }
-
-        if ($s->contains('kindle fire', false)) {
-            return $this->loader->load('d01400', $useragent);
-        }
-
-        if ($s->containsAny(['kindle', 'silk'], false)) {
-            return $this->loader->load('kindle', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general amazon device', $useragent);

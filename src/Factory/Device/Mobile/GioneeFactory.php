@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class GioneeFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        ' m3 '     => 'm3',
+        'gionee50' => 'gionee50',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class GioneeFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains(' M3 ', false)) {
-            return $this->loader->load('m3', $useragent);
-        }
-
-        if ($s->contains('GIONEE50', false)) {
-            return $this->loader->load('gionee50', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general gionee device', $useragent);

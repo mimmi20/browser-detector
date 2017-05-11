@@ -24,6 +24,21 @@ use Stringy\Stringy;
 class DnsFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        's5701'   => 's5701',
+        's4505m'  => 's4505m',
+        's4505'   => 's4505',
+        's4503q'  => 's4503q',
+        's4502m'  => 's4502m',
+        's4502'   => 's4502',
+        's4501m'  => 's4501m',
+        's4008'   => 's4008',
+        'mb40ii1' => 'mb40ii1',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,40 +61,10 @@ class DnsFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('s5701', false)) {
-            return $this->loader->load('s5701', $useragent);
-        }
-
-        if ($s->contains('s4505m', false)) {
-            return $this->loader->load('s4505m', $useragent);
-        }
-
-        if ($s->contains('s4505', false)) {
-            return $this->loader->load('s4505', $useragent);
-        }
-
-        if ($s->contains('s4503q', false)) {
-            return $this->loader->load('s4503q', $useragent);
-        }
-
-        if ($s->contains('s4502m', false)) {
-            return $this->loader->load('s4502m', $useragent);
-        }
-
-        if ($s->contains('s4502', false)) {
-            return $this->loader->load('s4502', $useragent);
-        }
-
-        if ($s->contains('s4501m', false)) {
-            return $this->loader->load('s4501m', $useragent);
-        }
-
-        if ($s->contains('S4008', true)) {
-            return $this->loader->load('s4008', $useragent);
-        }
-
-        if ($s->contains('MB40II1', true)) {
-            return $this->loader->load('mb40ii1', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general dns device', $useragent);
