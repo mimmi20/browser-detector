@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class MtcFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'smart run' => 'smart run',
+        '982'       => '982',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class MtcFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('SMART Run', true)) {
-            return $this->loader->load('smart run', $useragent);
-        }
-
-        if ($s->contains('982', true)) {
-            return $this->loader->load('982', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general mtc device', $useragent);

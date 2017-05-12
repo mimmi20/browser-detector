@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class LavaFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'spark284' => 'spark 284',
+        'kkt20'    => 'kkt20',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class LavaFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('Spark284', true)) {
-            return $this->loader->load('spark 284', $useragent);
-        }
-
-        if ($s->contains('KKT20', true)) {
-            return $this->loader->load('kkt20', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general lava device', $useragent);

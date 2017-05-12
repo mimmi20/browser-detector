@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class SupraFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'm723g' => 'm723g',
+        'm121g' => 'm121g',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class SupraFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('m723g', false)) {
-            return $this->loader->load('m723g', $useragent);
-        }
-
-        if ($s->contains('m121g', false)) {
-            return $this->loader->load('m121g', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general supra device', $useragent);

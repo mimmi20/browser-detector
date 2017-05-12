@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class KianoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'intelect7'     => 'intelect 7 3g',
+        'elegance 8 3g' => 'elegance 8 3g',
+        'elegance'      => 'elegance',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class KianoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('intelect7', false)) {
-            return $this->loader->load('intelect 7 3g', $useragent);
-        }
-
-        if ($s->contains('elegance 8 3g', false)) {
-            return $this->loader->load('elegance 8 3g', $useragent);
-        }
-
-        if ($s->contains('elegance', false)) {
-            return $this->loader->load('elegance', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general kiano device', $useragent);

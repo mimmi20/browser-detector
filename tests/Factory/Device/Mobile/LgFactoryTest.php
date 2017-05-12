@@ -1484,6 +1484,36 @@ class LgFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4; en-us; LGL34C Build/KRT16S.L34CV10c) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'L34C',
+                'Optimus Fuel',
+                'LG',
+                'LG',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.2; es-sa; LG-P712 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'P712',
+                'Optimus L7 II',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; LG-D331 Build/KOT49I.A1413907724) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+                'D331',
+                'D331',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

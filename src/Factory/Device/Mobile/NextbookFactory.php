@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class NextbookFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'next'       => 'next',
+        'datam803hc' => 'm803hc',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class NextbookFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('NEXT', true)) {
-            return $this->loader->load('next', $useragent);
-        }
-
-        if ($s->contains('DATAM803HC', true)) {
-            return $this->loader->load('m803hc', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general nextbook device', $useragent);

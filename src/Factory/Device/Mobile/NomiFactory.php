@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class NomiFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'c07000' => 'c07000',
+        'a10100' => 'a10100',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class NomiFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('C07000', true)) {
-            return $this->loader->load('c07000', $useragent);
-        }
-
-        if ($s->contains('A10100', true)) {
-            return $this->loader->load('a10100', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general nomi device', $useragent);

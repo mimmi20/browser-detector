@@ -24,6 +24,20 @@ use Stringy\Stringy;
 class MobistelFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'cynus t6' => 'cynus t6',
+        'cynus t5' => 'cynus t5',
+        'cynus t2' => 'cynus t2',
+        'cynus t1' => 'cynus t1',
+        'cynus f5' => 'cynus f5',
+        'cynus f4' => 'mt-7521s',
+        'cynus f3' => 'cynus f3',
+        'cynus e1' => 'cynus e1',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,36 +60,10 @@ class MobistelFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('cynus t6', false)) {
-            return $this->loader->load('cynus t6', $useragent);
-        }
-
-        if ($s->contains('cynus t5', false)) {
-            return $this->loader->load('cynus t5', $useragent);
-        }
-
-        if ($s->contains('cynus t2', false)) {
-            return $this->loader->load('cynus t2', $useragent);
-        }
-
-        if ($s->contains('cynus t1', false)) {
-            return $this->loader->load('cynus t1', $useragent);
-        }
-
-        if ($s->contains('cynus f5', false)) {
-            return $this->loader->load('cynus f5', $useragent);
-        }
-
-        if ($s->contains('cynus f4', false)) {
-            return $this->loader->load('mt-7521s', $useragent);
-        }
-
-        if ($s->contains('cynus f3', false)) {
-            return $this->loader->load('cynus f3', $useragent);
-        }
-
-        if ($s->contains('cynus e1', false)) {
-            return $this->loader->load('cynus e1', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general mobistel device', $useragent);

@@ -24,6 +24,21 @@ use Stringy\Stringy;
 class TexetFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'x-pad ix 7 3g'      => 'tm-7068',
+        'x-pad lite 7.1'     => 'tm-7066',
+        'tm-7058hd'          => 'tm-7058hd',
+        'tm-7058'            => 'tm-7058',
+        'x-pad style 7.1 3g' => 'tm-7058',
+        'x-navi'             => 'tm-4672',
+        'tm-3204r'           => 'tm-3204r',
+        'tm-7055hd'          => 'tm-7055hd',
+        'tm-5204'            => 'tm-5204',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,36 +61,10 @@ class TexetFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('x-pad ix 7 3g', false)) {
-            return $this->loader->load('tm-7068', $useragent);
-        }
-
-        if ($s->contains('x-pad lite 7.1', false)) {
-            return $this->loader->load('tm-7066', $useragent);
-        }
-
-        if ($s->contains('tm-7058hd', false)) {
-            return $this->loader->load('tm-7058hd', $useragent);
-        }
-
-        if ($s->containsAny(['tm-7058', 'x-pad style 7.1 3g'], false)) {
-            return $this->loader->load('tm-7058', $useragent);
-        }
-
-        if ($s->contains('x-navi', false)) {
-            return $this->loader->load('tm-4672', $useragent);
-        }
-
-        if ($s->contains('tm-3204r', false)) {
-            return $this->loader->load('tm-3204r', $useragent);
-        }
-
-        if ($s->contains('tm-7055hd', false)) {
-            return $this->loader->load('tm-7055hd', $useragent);
-        }
-
-        if ($s->contains('tm-5204', false)) {
-            return $this->loader->load('tm-5204', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general texet device', $useragent);

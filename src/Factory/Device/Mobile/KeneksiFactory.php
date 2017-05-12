@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class KeneksiFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'crystal' => 'crystal',
+        'norma 2' => 'norma 2',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class KeneksiFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('crystal', false)) {
-            return $this->loader->load('crystal', $useragent);
-        }
-
-        if ($s->contains('norma 2', false)) {
-            return $this->loader->load('norma 2', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general keneksi device', $useragent);

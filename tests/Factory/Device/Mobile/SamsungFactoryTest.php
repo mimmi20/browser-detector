@@ -3107,7 +3107,7 @@ class SamsungFactoryTest extends \PHPUnit\Framework\TestCase
             [
                 'Mozilla/5.0 (Linux; Android 4.4.2; SM-T531 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36',
                 'SM-T531',
-                'Galaxy Tab 4 10.1',
+                'Galaxy Tab 4 10.1 3G',
                 'Samsung',
                 'Samsung',
                 'Tablet',
@@ -7662,6 +7662,16 @@ class SamsungFactoryTest extends \PHPUnit\Framework\TestCase
                 'Samsung',
                 'Mobile Phone',
                 false,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; tr-tr; SAMSUNG SM-T532 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36',
+                'SM-T532',
+                'Galaxy Tab 4 10.1 (Turkey, 3G + WiFi)',
+                'Samsung',
+                'Samsung',
+                'Tablet',
+                true,
                 'touchscreen',
             ],
         ];

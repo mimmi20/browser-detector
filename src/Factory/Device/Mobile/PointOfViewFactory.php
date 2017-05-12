@@ -24,6 +24,18 @@ use Stringy\Stringy;
 class PointOfViewFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'tab-protab25'    => 'protab 25',
+        'tab-protab30'    => 'protab 3 xxl',
+        'tab-protab2xxl'  => 'protab 2 xxl',
+        'tab-protab2xl'   => 'protab 2 xl',
+        'tab-protab2-ips' => 'protab 2 ips',
+        'pi1045'          => 'pi1045',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,28 +58,10 @@ class PointOfViewFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('TAB-PROTAB25', true)) {
-            return $this->loader->load('protab 25', $useragent);
-        }
-
-        if ($s->contains('TAB-PROTAB30', true)) {
-            return $this->loader->load('protab 3 xxl', $useragent);
-        }
-
-        if ($s->contains('tab-protab2xxl', false)) {
-            return $this->loader->load('protab 2 xxl', $useragent);
-        }
-
-        if ($s->contains('TAB-PROTAB2XL', true)) {
-            return $this->loader->load('protab 2 xl', $useragent);
-        }
-
-        if ($s->contains('TAB-PROTAB2-IPS', true)) {
-            return $this->loader->load('protab 2 ips', $useragent);
-        }
-
-        if ($s->contains('PI1045', true)) {
-            return $this->loader->load('pi1045', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general point of view device', $useragent);

@@ -28,6 +28,7 @@ class BluFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'vivo iv'         => 'vivo iv',
+        'studio 7.0'      => 'blu studio 7.0',
         'studio 5.5'      => 'studio 5.5',
         'studio 5.0 s ii' => 'studio 5.0 s ii',
         'win hd w510u'    => 'win hd w510u',

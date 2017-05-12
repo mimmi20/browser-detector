@@ -24,6 +24,16 @@ use Stringy\Stringy;
 class NintendoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'wiiu' => 'wiiu',
+        'wii'  => 'wii',
+        'dsi'  => 'dsi',
+        '3ds'  => '3ds',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,20 +56,10 @@ class NintendoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('WiiU', true)) {
-            return $this->loader->load('wiiu', $useragent);
-        }
-
-        if ($s->contains('Wii', true)) {
-            return $this->loader->load('wii', $useragent);
-        }
-
-        if ($s->contains('DSi', true)) {
-            return $this->loader->load('dsi', $useragent);
-        }
-
-        if ($s->contains('3DS', true)) {
-            return $this->loader->load('3ds', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general nintendo device', $useragent);

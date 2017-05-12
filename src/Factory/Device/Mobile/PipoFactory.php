@@ -24,6 +24,19 @@ use Stringy\Stringy;
 class PipoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'p93g'  => 'p9 3g',
+        'm9pro' => 'q107',
+        'm7t'   => 'm7t',
+        'm6pro' => 'q977',
+        'i75'   => 'i75',
+        'm83g'  => 'm8 3g',
+        ' m6 '  => 'm6',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,32 +59,10 @@ class PipoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('p93g', false)) {
-            return $this->loader->load('p9 3g', $useragent);
-        }
-
-        if ($s->contains('m9pro', false)) {
-            return $this->loader->load('q107', $useragent);
-        }
-
-        if ($s->contains('m7t', false)) {
-            return $this->loader->load('m7t', $useragent);
-        }
-
-        if ($s->contains('m6pro', false)) {
-            return $this->loader->load('q977', $useragent);
-        }
-
-        if ($s->contains('i75', true)) {
-            return $this->loader->load('i75', $useragent);
-        }
-
-        if ($s->contains('m83g', false)) {
-            return $this->loader->load('m8 3g', $useragent);
-        }
-
-        if ($s->contains(' M6 ', true)) {
-            return $this->loader->load('m6', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general pipo device', $useragent);

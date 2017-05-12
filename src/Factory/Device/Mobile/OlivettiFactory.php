@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class OlivettiFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'op111' => 'op111',
+        'op110' => 'op110',
+        'op070' => 'olipad 70',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class OlivettiFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('OP111', true)) {
-            return $this->loader->load('op111', $useragent);
-        }
-
-        if ($s->contains('OP110', true)) {
-            return $this->loader->load('op110', $useragent);
-        }
-
-        if ($s->contains('OP070', true)) {
-            return $this->loader->load('olipad 70', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general olivetti device', $useragent);

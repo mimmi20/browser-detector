@@ -21,25 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TmobileFactory implements Factory\FactoryInterface
+class GigasetFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'pulse'             => 'pulse',
-        'mytouch4g'         => 'mytouch4g',
-        'mytouch 3g slide'  => 'mytouch3g',
-        't-mobile_g2_touch' => 'g2 touch',
-        't-mobile g2'       => 'g2 touch',
-        't-mobile g1'       => 'g1',
-        'mda_vario_v'       => 'mda vario v',
-        'mda vario/3'       => 'mda vario iii',
-        'mda vario/2'       => 'mda vario ii',
-        'mda_compact_v'     => 'mda compact v',
-        'mda compact/3'     => 'mda compact iii',
-        'mda compact'       => 'mda compact',
-        'ameo'              => 'ameo',
+        'qv830' => 'gigaset qv830',
     ];
 
     /**
@@ -71,6 +59,6 @@ class TmobileFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general t-mobile device', $useragent);
+        return $this->loader->load('general gigaset device', $useragent);
     }
 }

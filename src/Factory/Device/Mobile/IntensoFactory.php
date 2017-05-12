@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class IntensoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'inm8002kp' => 'inm8002kp',
+        'inm803hc'  => 'tab 803',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class IntensoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('inm8002kp', false)) {
-            return $this->loader->load('inm8002kp', $useragent);
-        }
-
-        if ($s->contains('inm803hc', false)) {
-            return $this->loader->load('tab 803', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general intenso device', $useragent);

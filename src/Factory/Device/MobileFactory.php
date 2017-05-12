@@ -792,6 +792,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PentagramFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('gigaset', false)) {
+            return (new Mobile\GigasetFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->containsAny(['Z221', 'V788D', 'KIS PLUS', 'NX402', 'NX501', 'N918St', 'Beeline Pro', 'ATLAS_W', 'BASE Tab', 'X920', ' V9 ', 'W713', 'ATLAS W'], true)) {
             return (new Mobile\ZteFactory($this->loader))->detect($useragent, $s);
         }
@@ -1176,7 +1180,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NextbookFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/MT\d{4}/', $useragent)) {
+        if ($s->containsAny(['mt6572', ' c7 '], false)) {
             return (new Mobile\CubotFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1450,10 +1454,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('M5301', true)) {
             return (new Mobile\IruFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains(' C7 ', true)) {
-            return (new Mobile\CubotFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('GV7777', true)) {

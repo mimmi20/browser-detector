@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class SprdFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'sphs_on_hsdroid' => 'sphs on hsdroid',
+        'gt-a7100'        => 'gt-a7100',
+        'b51+'            => 'b51+',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class SprdFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('SPHS_on_Hsdroid', false)) {
-            return $this->loader->load('sphs on hsdroid', $useragent);
-        }
-
-        if ($s->contains('GT-A7100', false)) {
-            return $this->loader->load('gt-a7100', $useragent);
-        }
-
-        if ($s->contains('B51+', false)) {
-            return $this->loader->load('b51+', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general sprd device', $useragent);

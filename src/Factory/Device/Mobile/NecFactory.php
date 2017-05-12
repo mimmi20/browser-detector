@@ -24,6 +24,16 @@ use Stringy\Stringy;
 class NecFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'n905i' => 'n905i',
+        'n705i' => 'n705i',
+        '0912'  => '0912',
+        'n-06e' => 'n-06e',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,20 +56,10 @@ class NecFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('N905i', false)) {
-            return $this->loader->load('n905i', $useragent);
-        }
-
-        if ($s->contains('N705i', false)) {
-            return $this->loader->load('n705i', $useragent);
-        }
-
-        if ($s->contains('0912', false)) {
-            return $this->loader->load('0912', $useragent);
-        }
-
-        if ($s->contains('N-06E', true)) {
-            return $this->loader->load('n-06e', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general nec device', $useragent);

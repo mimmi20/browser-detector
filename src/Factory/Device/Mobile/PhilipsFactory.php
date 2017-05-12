@@ -24,6 +24,17 @@ use Stringy\Stringy;
 class PhilipsFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'w8510'   => 'w8510',
+        'w8500'   => 'w8500',
+        'w3509'   => 'w3509',
+        'w336'    => 'w336',
+        'pi3210g' => 'pi3210g',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,24 +57,10 @@ class PhilipsFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('W8510', true)) {
-            return $this->loader->load('w8510', $useragent);
-        }
-
-        if ($s->contains('W8500', true)) {
-            return $this->loader->load('w8500', $useragent);
-        }
-
-        if ($s->contains('W3509', true)) {
-            return $this->loader->load('w3509', $useragent);
-        }
-
-        if ($s->contains('W336', true)) {
-            return $this->loader->load('w336', $useragent);
-        }
-
-        if ($s->contains('PI3210G', true)) {
-            return $this->loader->load('pi3210g', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general philips device', $useragent);

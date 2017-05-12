@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class StarFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'n9500'   => 'n9500',
+        'n8000'   => 'n8000',
+        'gt-9000' => 'gt-9000',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class StarFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('n9500', false)) {
-            return $this->loader->load('n9500', $useragent);
-        }
-
-        if ($s->contains('n8000', false)) {
-            return $this->loader->load('n8000', $useragent);
-        }
-
-        if ($s->contains('gt-9000', false)) {
-            return $this->loader->load('gt-9000', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general star device', $useragent);

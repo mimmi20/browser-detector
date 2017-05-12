@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class PearlFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'x10.dual+' => 'x10+',
+        'x10.dual'  => 'x10',
+        'x7g'       => 'touchlet x7g',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class PearlFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('X10.Dual+', true)) {
-            return $this->loader->load('x10+', $useragent);
-        }
-
-        if ($s->contains('X10.Dual', true)) {
-            return $this->loader->load('x10', $useragent);
-        }
-
-        if ($s->contains('X7G', true)) {
-            return $this->loader->load('touchlet x7g', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general pearl device', $useragent);

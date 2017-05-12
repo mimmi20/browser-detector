@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class SimvalleyFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'spx-5 3g' => 'spx-5 3g',
+        'spx-5_3g' => 'spx-5 3g',
+        'spx-5'    => 'spx-5',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +55,10 @@ class SimvalleyFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->containsAny(['SPX-5 3G', 'SPX-5_3G'], true)) {
-            return $this->loader->load('spx-5 3g', $useragent);
-        }
-
-        if ($s->contains('SPX-5', true)) {
-            return $this->loader->load('spx-5', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general simvalley device', $useragent);

@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\QmobileFactory;
+use BrowserDetector\Factory\Device\Mobile\GigasetFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class QmobileFactoryTest extends \PHPUnit\Framework\TestCase
+class GigasetFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\QmobileFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\GigasetFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class QmobileFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new QmobileFactory($loader);
+        $this->object = new GigasetFactory($loader);
     }
 
     /**
@@ -106,51 +106,21 @@ class QmobileFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general QMobile Device',
-                'general QMobile Device',
-                'QMobile',
-                'QMobile',
-                'Smartphone',
+                'general Gigaset Device',
+                'general Gigaset Device',
+                'Gigaset Communications GmbH',
+                'Gigaset',
+                'Tablet',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; QMobile A10 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'A10',
-                'Noir A10',
-                'QMobile',
-                'QMobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; QMobile X60 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'X60',
-                'Noir X60',
-                'QMobile',
-                'QMobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; QMobile A290 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'A290',
-                'Noir A290',
-                'QMobile',
-                'QMobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; QMobile i7 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.92 Mobile Safari/537.36',
-                'I7',
-                'I7',
-                'QMobile',
-                'QMobile',
-                'Smartphone',
+                'Dalvik/1.6.0 (Linux; U; Android 4.2.2; Gigaset QV830 Build/JDQ39)',
+                'QV830',
+                'QV830',
+                'Gigaset Communications GmbH',
+                'Gigaset',
+                'Tablet',
                 true,
                 'touchscreen',
             ],
