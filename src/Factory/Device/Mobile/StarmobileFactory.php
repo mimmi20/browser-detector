@@ -21,14 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HaierFactory implements Factory\FactoryInterface
+class StarmobileFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'w718' => 'w718',
-        'w717' => 'haier w717',
+        'knight' => 'starmobile knight',
     ];
 
     /**
@@ -60,6 +59,6 @@ class HaierFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general haier device', $useragent);
+        return $this->loader->load('general starmobile device', $useragent);
     }
 }

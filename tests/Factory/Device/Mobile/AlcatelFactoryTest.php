@@ -794,6 +794,16 @@ class AlcatelFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.2.2; ONE TOUCH 4033D Build/JDQ39)',
+                'OT-4033D',
+                'One Touch Pop C3',
+                'Alcatel',
+                'Alcatel',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -214,6 +214,16 @@ class HpFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; HP 7 Plus Build/1.1.5_WW-ILEX-11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Safari/537.36',
+                'Slate 7 Plus',
+                'Slate 7 Plus',
+                'HP',
+                'HP',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

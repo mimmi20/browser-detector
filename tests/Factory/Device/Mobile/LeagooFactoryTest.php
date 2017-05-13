@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\DoogeeFactory;
+use BrowserDetector\Factory\Device\Mobile\LeagooFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class DoogeeFactoryTest extends \PHPUnit\Framework\TestCase
+class LeagooFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\DoogeeFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\LeagooFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class DoogeeFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new DoogeeFactory($loader);
+        $this->object = new LeagooFactory($loader);
     }
 
     /**
@@ -106,70 +106,20 @@ class DoogeeFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Doogee Device',
-                'general Doogee Device',
-                'Doogee',
-                'Doogee',
-                'Tablet',
+                'general LEAGOO Device',
+                'general LEAGOO Device',
+                'LEAGOO International Co., Limited',
+                'LEAGOO',
+                'Smartphone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.4.2; MINT-DG330 Build/MINT-DG330) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Mobile Safari/537.36',
-                'DG330',
-                'Mint',
-                'Doogee',
-                'Doogee',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.4.2; ru; DG800 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/9.9.3.478 U3/0.8.0 Mobile Safari/534.30',
-                'DG800',
-                'Valencia',
-                'Doogee',
-                'Doogee',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; TURBO DG2014 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36 OPR/27.0.1698.89115',
-                'DG2014',
-                'Turbo',
-                'Doogee',
-                'Doogee',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 5.1; F3_Pro Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
-                'F3 Pro',
-                'F3 Pro',
-                'Doogee',
-                'Doogee',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; DOOGEE-BIGBOY-DG600    Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'general Doogee Device',
-                'general Doogee Device',
-                'Doogee',
-                'Doogee',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Dalvik/1.6.0 (Linux; U; Android 4.4.2; VOYAGER2 DG310 Build/KOT49H)',
-                'DG310',
-                'Voyager 2',
-                'Doogee',
-                'Doogee',
+                'Mozilla/5.0 (Linux; Android 4.4.2; Lead 2 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+                'Lead 2',
+                'Lead 2',
+                'LEAGOO International Co., Limited',
+                'LEAGOO',
                 'Smartphone',
                 true,
                 'touchscreen',

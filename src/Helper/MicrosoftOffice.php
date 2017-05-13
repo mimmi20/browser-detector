@@ -83,6 +83,12 @@ class MicrosoftOffice
             return $matches[1];
         }
 
+        $doMatch = preg_match('/Office Mobile for Symbian\/([\d\.]+)/i', $useragent, $matches);
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
         return '0.0';
     }
 }

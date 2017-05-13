@@ -832,6 +832,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\StarwayFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('starmobile', false)) {
+            return (new Mobile\StarmobileFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('logicom', false)) {
             return (new Mobile\LogicomFactory($this->loader))->detect($useragent, $s);
         }
@@ -1592,7 +1596,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\TurboPadFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('HW-W718', true)) {
+        if ($s->containsAny(['HW-W718', 'W717'], true)) {
             return (new Mobile\HaierFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1680,7 +1684,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['h30-u10', 'kiw-l21', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'g6600', 'm860'], false)) {
+        if ($s->containsAny(['h30-u10', 'kiw-l21', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'g6600', 'm860', 'h60-l'], false)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1826,6 +1830,14 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('vf685', false)) {
             return (new Mobile\TclFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('lead 2', false)) {
+            return (new Mobile\LeagooFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('v1_viper', false)) {
+            return (new Mobile\AllviewFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)

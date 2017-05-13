@@ -8412,6 +8412,15 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
                 'Browser',
                 null,
             ],
+            [
+                'Microsoft Office Mobile for Symbian/14.0',
+                'Office',
+                '2010.0.0',
+                'Microsoft Corporation',
+                32,
+                'Application',
+                null,
+            ],
         ];
     }
 }

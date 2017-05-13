@@ -68,6 +68,109 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-j710f'  => 'sm-j710f',
         'sm-j710m'  => 'sm-j710m',
         'sm-j710h'  => 'sm-j710h',
+        'sm-j700f' => 'sm-j700f',
+        'sm-j700m' => 'sm-j700m',
+        'sm-j700h' => 'sm-j700h',
+        'sm-j510fn' => 'sm-j510fn',
+        'sm-j510f' => 'sm-j510f',
+        'sm-j500fn' => 'sm-j500fn',
+        'sm-j500f' => 'sm-j500f',
+        'sm-j500g' => 'sm-j500g',
+        'sm-j500m' => 'sm-j500m',
+        'sm-j500y' => 'sm-j500y',
+        'sm-j500h' => 'sm-j500h',
+        'sm-j5007' => 'sm-j5007',
+        'sm-j500' => 'sm-j500',
+        'galaxy j5' => 'sm-j500',
+        'sm-j320g' => 'sm-j320g',
+        'sm-j320fn' => 'sm-j320fn',
+        'sm-j320f' => 'sm-j320f',
+        'sm-j3109' => 'sm-j3109',
+        'sm-j120fn' => 'sm-j120fn',
+        'sm-j120f' => 'sm-j120f',
+        'sm-j120g' => 'sm-j120g',
+        'sm-j120h' => 'sm-j120h',
+        'sm-j120m' => 'sm-j120m',
+        'sm-j110f' => 'sm-j110f',
+        'sm-j110g' => 'sm-j110g',
+        'sm-j110h' => 'sm-j110h',
+        'sm-j110l' => 'sm-j110l',
+        'sm-j110m' => 'sm-j110m',
+        'sm-j111f' => 'sm-j111f',
+        'sm-j105h' => 'sm-j105h',
+        'sm-j100h' => 'sm-j100h',
+        'sm-j100y' => 'sm-j100y',
+        'sm-j100f' => 'sm-j100f',
+        'sm-j100ml' => 'sm-j100ml',
+        'sm-j200gu' => 'sm-j200gu',
+        'sm-j200g' => 'sm-j200g',
+        'sm-j200f' => 'sm-j200f',
+        'sm-j200h' => 'sm-j200h',
+        'sm-j200bt' => 'sm-j200bt',
+        'sm-j200y' => 'sm-j200y',
+        'sm-t280' => 'sm-t280',
+        'sm-t2105' => 'sm-t2105',
+        'sm-t210r' => 'sm-t210r',
+        'sm-t210l' => 'sm-t210l',
+        'sm-t210' => 'sm-t210',
+        'sm-t900' => 'sm-t900',
+        'sm-t819' => 'sm-t819',
+        'sm-t815y' => 'sm-t815y',
+        'sm-t815' => 'sm-t815',
+        'sm-t813' => 'sm-t813',
+        'sm-t810x' => 'sm-t810x',
+        'sm-t810' => 'sm-t810',
+        'sm-t805' => 'sm-t805',
+        'sm-t800' => 'sm-t800',
+        'sm-t719' => 'sm-t719',
+        'sm-t715' => 'sm-t715',
+        'sm-t713' => 'sm-t713',
+        'sm-t710' => 'sm-t710',
+        'sm-t705m' => 'sm-t705m',
+        'sm-t705' => 'sm-t705',
+        'sm-t700' => 'sm-t700',
+        'sm-t670' => 'sm-t670',
+        'sm-t585' => 'sm-t585',
+        'sm-t580' => 'sm-t580',
+        'sm-t550x' => 'sm-t550x',
+        'sm-t550' => 'sm-t550',
+        'sm-t555' => 'sm-t555',
+        'sm-t561' => 'sm-t561',
+        'sm-t560' => 'sm-t560',
+        'sm-t535' => 'sm-t535',
+        'sm-t533' => 'sm-t533',
+        'sm-t531' => 'sm-t531',
+        'sm - t531' => 'sm-t531',
+        'sm-t530nu' => 'sm-t530nu',
+        'sm-t530' => 'sm-t530',
+        'sm-t525' => 'sm-t525',
+        'sm-t520' => 'sm-t520',
+        'sm-t365' => 'sm-t365',
+        'sm-t355y' => 'sm-t355y',
+        'sm-t350' => 'sm-t350',
+        'sm-t335' => 'sm-t335',
+        'sm-t331' => 'sm-t331',
+        'sm-t330' => 'sm-t330',
+        'sm-t325' => 'sm-t325',
+        'sm-t320' => 'sm-t320',
+        'sm-t315' => 'sm-t315',
+        'sm-t311' => 'sm-t311',
+        'sm-t310' => 'sm-t310',
+        'sm-t235' => 'sm-t235',
+        'sm-t231' => 'sm-t231',
+        'sm-t230nu' => 'sm-t230nu',
+        'sm-t230' => 'sm-t230',
+        'sm-t211' => 'sm-t211',
+        'sm-t116' => 'sm-t116',
+        'sm-t113' => 'sm-t113',
+        'sm-t111' => 'sm-t111',
+        'sm-t110' => 'sm-t110',
+        'sm-p907a' => 'sm-p907a',
+        'sm-p905m' => 'sm-p905m',
+        'sm-p905v' => 'sm-p905v',
+        'sm-p905' => 'sm-p905',
+        'sm-p901' => 'sm-p901',
+        'sm-p900' => 'sm-p900',
     ];
 
     /**
@@ -97,410 +200,6 @@ class SamsungFactory implements Factory\FactoryInterface
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
-        }
-
-        if ($s->contains('sm-j700f', false)) {
-            return $this->loader->load('sm-j700f', $useragent);
-        }
-
-        if ($s->contains('sm-j700m', false)) {
-            return $this->loader->load('sm-j700m', $useragent);
-        }
-
-        if ($s->contains('sm-j700h', false)) {
-            return $this->loader->load('sm-j700h', $useragent);
-        }
-
-        if ($s->contains('sm-j510fn', false)) {
-            return $this->loader->load('sm-j510fn', $useragent);
-        }
-
-        if ($s->contains('sm-j510f', false)) {
-            return $this->loader->load('sm-j510f', $useragent);
-        }
-
-        if ($s->contains('sm-j500fn', false)) {
-            return $this->loader->load('sm-j500fn', $useragent);
-        }
-
-        if ($s->contains('sm-j500f', false)) {
-            return $this->loader->load('sm-j500f', $useragent);
-        }
-
-        if ($s->contains('sm-j500g', false)) {
-            return $this->loader->load('sm-j500g', $useragent);
-        }
-
-        if ($s->contains('sm-j500m', false)) {
-            return $this->loader->load('sm-j500m', $useragent);
-        }
-
-        if ($s->contains('sm-j500y', false)) {
-            return $this->loader->load('sm-j500y', $useragent);
-        }
-
-        if ($s->contains('sm-j500h', false)) {
-            return $this->loader->load('sm-j500h', $useragent);
-        }
-
-        if ($s->contains('sm-j5007', false)) {
-            return $this->loader->load('sm-j5007', $useragent);
-        }
-
-        if ($s->containsAny(['sm-j500', 'galaxy j5'], false)) {
-            return $this->loader->load('sm-j500', $useragent);
-        }
-
-        if ($s->contains('sm-j320g', false)) {
-            return $this->loader->load('sm-j320g', $useragent);
-        }
-
-        if ($s->contains('sm-j320fn', false)) {
-            return $this->loader->load('sm-j320fn', $useragent);
-        }
-
-        if ($s->contains('sm-j320f', false)) {
-            return $this->loader->load('sm-j320f', $useragent);
-        }
-
-        if ($s->contains('sm-j3109', false)) {
-            return $this->loader->load('sm-j3109', $useragent);
-        }
-
-        if ($s->contains('sm-j120fn', false)) {
-            return $this->loader->load('sm-j120fn', $useragent);
-        }
-
-        if ($s->contains('sm-j120f', false)) {
-            return $this->loader->load('sm-j120f', $useragent);
-        }
-
-        if ($s->contains('sm-j120g', false)) {
-            return $this->loader->load('sm-j120g', $useragent);
-        }
-
-        if ($s->contains('sm-j120h', false)) {
-            return $this->loader->load('sm-j120h', $useragent);
-        }
-
-        if ($s->contains('sm-j120m', false)) {
-            return $this->loader->load('sm-j120m', $useragent);
-        }
-
-        if ($s->contains('sm-j110f', false)) {
-            return $this->loader->load('sm-j110f', $useragent);
-        }
-
-        if ($s->contains('sm-j110g', false)) {
-            return $this->loader->load('sm-j110g', $useragent);
-        }
-
-        if ($s->contains('sm-j110h', false)) {
-            return $this->loader->load('sm-j110h', $useragent);
-        }
-
-        if ($s->contains('sm-j110l', false)) {
-            return $this->loader->load('sm-j110l', $useragent);
-        }
-
-        if ($s->contains('sm-j110m', false)) {
-            return $this->loader->load('sm-j110m', $useragent);
-        }
-
-        if ($s->contains('sm-j111f', false)) {
-            return $this->loader->load('sm-j111f', $useragent);
-        }
-
-        if ($s->contains('sm-j105h', false)) {
-            return $this->loader->load('sm-j105h', $useragent);
-        }
-
-        if ($s->contains('sm-j100h', false)) {
-            return $this->loader->load('sm-j100h', $useragent);
-        }
-
-        if ($s->contains('sm-j100y', false)) {
-            return $this->loader->load('sm-j100y', $useragent);
-        }
-
-        if ($s->contains('sm-j100f', false)) {
-            return $this->loader->load('sm-j100f', $useragent);
-        }
-
-        if ($s->contains('sm-j100ml', false)) {
-            return $this->loader->load('sm-j100ml', $useragent);
-        }
-
-        if ($s->contains('sm-j200gu', false)) {
-            return $this->loader->load('sm-j200gu', $useragent);
-        }
-
-        if ($s->contains('sm-j200g', false)) {
-            return $this->loader->load('sm-j200g', $useragent);
-        }
-
-        if ($s->contains('sm-j200f', false)) {
-            return $this->loader->load('sm-j200f', $useragent);
-        }
-
-        if ($s->contains('sm-j200h', false)) {
-            return $this->loader->load('sm-j200h', $useragent);
-        }
-
-        if ($s->contains('sm-j200bt', false)) {
-            return $this->loader->load('sm-j200bt', $useragent);
-        }
-
-        if ($s->contains('sm-j200y', false)) {
-            return $this->loader->load('sm-j200y', $useragent);
-        }
-
-        if ($s->contains('sm-t280', false)) {
-            return $this->loader->load('sm-t280', $useragent);
-        }
-
-        if ($s->contains('sm-t2105', false)) {
-            return $this->loader->load('sm-t2105', $useragent);
-        }
-
-        if ($s->contains('sm-t210r', false)) {
-            return $this->loader->load('sm-t210r', $useragent);
-        }
-
-        if ($s->contains('sm-t210l', false)) {
-            return $this->loader->load('sm-t210l', $useragent);
-        }
-
-        if ($s->contains('sm-t210', false)) {
-            return $this->loader->load('sm-t210', $useragent);
-        }
-
-        if ($s->contains('sm-t900', false)) {
-            return $this->loader->load('sm-t900', $useragent);
-        }
-
-        if ($s->contains('sm-t819', false)) {
-            return $this->loader->load('sm-t819', $useragent);
-        }
-
-        if ($s->contains('sm-t815y', false)) {
-            return $this->loader->load('sm-t815y', $useragent);
-        }
-
-        if ($s->contains('sm-t815', false)) {
-            return $this->loader->load('sm-t815', $useragent);
-        }
-
-        if ($s->contains('sm-t813', false)) {
-            return $this->loader->load('sm-t813', $useragent);
-        }
-
-        if ($s->contains('sm-t810x', false)) {
-            return $this->loader->load('sm-t810x', $useragent);
-        }
-
-        if ($s->contains('sm-t810', false)) {
-            return $this->loader->load('sm-t810', $useragent);
-        }
-
-        if ($s->contains('sm-t805', false)) {
-            return $this->loader->load('sm-t805', $useragent);
-        }
-
-        if ($s->contains('sm-t800', false)) {
-            return $this->loader->load('sm-t800', $useragent);
-        }
-
-        if ($s->contains('sm-t719', false)) {
-            return $this->loader->load('sm-t719', $useragent);
-        }
-
-        if ($s->contains('sm-t715', false)) {
-            return $this->loader->load('sm-t715', $useragent);
-        }
-
-        if ($s->contains('sm-t713', false)) {
-            return $this->loader->load('sm-t713', $useragent);
-        }
-
-        if ($s->contains('sm-t710', false)) {
-            return $this->loader->load('sm-t710', $useragent);
-        }
-
-        if ($s->contains('sm-t705m', false)) {
-            return $this->loader->load('sm-t705m', $useragent);
-        }
-
-        if ($s->contains('sm-t705', false)) {
-            return $this->loader->load('sm-t705', $useragent);
-        }
-
-        if ($s->contains('sm-t700', false)) {
-            return $this->loader->load('sm-t700', $useragent);
-        }
-
-        if ($s->contains('sm-t670', false)) {
-            return $this->loader->load('sm-t670', $useragent);
-        }
-
-        if ($s->contains('sm-t585', false)) {
-            return $this->loader->load('sm-t585', $useragent);
-        }
-
-        if ($s->contains('sm-t580', false)) {
-            return $this->loader->load('sm-t580', $useragent);
-        }
-
-        if ($s->contains('sm-t550x', false)) {
-            return $this->loader->load('sm-t550x', $useragent);
-        }
-
-        if ($s->contains('sm-t550', false)) {
-            return $this->loader->load('sm-t550', $useragent);
-        }
-
-        if ($s->contains('sm-t555', false)) {
-            return $this->loader->load('sm-t555', $useragent);
-        }
-
-        if ($s->contains('sm-t561', false)) {
-            return $this->loader->load('sm-t561', $useragent);
-        }
-
-        if ($s->contains('sm-t560', false)) {
-            return $this->loader->load('sm-t560', $useragent);
-        }
-
-        if ($s->contains('sm-t535', false)) {
-            return $this->loader->load('sm-t535', $useragent);
-        }
-
-        if ($s->contains('sm-t533', false)) {
-            return $this->loader->load('sm-t533', $useragent);
-        }
-
-        if ($s->containsAny(['sm-t531', 'sm - t531'], false)) {
-            return $this->loader->load('sm-t531', $useragent);
-        }
-
-        if ($s->contains('sm-t530nu', false)) {
-            return $this->loader->load('sm-t530nu', $useragent);
-        }
-
-        if ($s->contains('sm-t530', false)) {
-            return $this->loader->load('sm-t530', $useragent);
-        }
-
-        if ($s->contains('sm-t525', false)) {
-            return $this->loader->load('sm-t525', $useragent);
-        }
-
-        if ($s->contains('sm-t520', false)) {
-            return $this->loader->load('sm-t520', $useragent);
-        }
-
-        if ($s->contains('sm-t365', false)) {
-            return $this->loader->load('sm-t365', $useragent);
-        }
-
-        if ($s->contains('sm-t355y', false)) {
-            return $this->loader->load('sm-t355y', $useragent);
-        }
-
-        if ($s->contains('sm-t350', false)) {
-            return $this->loader->load('sm-t350', $useragent);
-        }
-
-        if ($s->contains('sm-t335', false)) {
-            return $this->loader->load('sm-t335', $useragent);
-        }
-
-        if ($s->contains('sm-t331', false)) {
-            return $this->loader->load('sm-t331', $useragent);
-        }
-
-        if ($s->contains('sm-t330', false)) {
-            return $this->loader->load('sm-t330', $useragent);
-        }
-
-        if ($s->contains('sm-t325', false)) {
-            return $this->loader->load('sm-t325', $useragent);
-        }
-
-        if ($s->contains('sm-t320', false)) {
-            return $this->loader->load('sm-t320', $useragent);
-        }
-
-        if ($s->contains('sm-t315', false)) {
-            return $this->loader->load('sm-t315', $useragent);
-        }
-
-        if ($s->contains('sm-t311', false)) {
-            return $this->loader->load('sm-t311', $useragent);
-        }
-
-        if ($s->contains('sm-t310', false)) {
-            return $this->loader->load('sm-t310', $useragent);
-        }
-
-        if ($s->contains('sm-t235', false)) {
-            return $this->loader->load('sm-t235', $useragent);
-        }
-
-        if ($s->contains('sm-t231', false)) {
-            return $this->loader->load('sm-t231', $useragent);
-        }
-
-        if ($s->contains('sm-t230nu', false)) {
-            return $this->loader->load('sm-t230nu', $useragent);
-        }
-
-        if ($s->contains('sm-t230', false)) {
-            return $this->loader->load('sm-t230', $useragent);
-        }
-
-        if ($s->contains('sm-t211', false)) {
-            return $this->loader->load('sm-t211', $useragent);
-        }
-
-        if ($s->contains('sm-t116', false)) {
-            return $this->loader->load('sm-t116', $useragent);
-        }
-
-        if ($s->contains('sm-t113', false)) {
-            return $this->loader->load('sm-t113', $useragent);
-        }
-
-        if ($s->contains('sm-t111', false)) {
-            return $this->loader->load('sm-t111', $useragent);
-        }
-
-        if ($s->contains('sm-t110', false)) {
-            return $this->loader->load('sm-t110', $useragent);
-        }
-
-        if ($s->contains('sm-p907a', false)) {
-            return $this->loader->load('sm-p907a', $useragent);
-        }
-
-        if ($s->contains('sm-p905m', false)) {
-            return $this->loader->load('sm-p905m', $useragent);
-        }
-
-        if ($s->contains('sm-p905v', false)) {
-            return $this->loader->load('sm-p905v', $useragent);
-        }
-
-        if ($s->contains('sm-p905', false)) {
-            return $this->loader->load('sm-p905', $useragent);
-        }
-
-        if ($s->contains('sm-p901', false)) {
-            return $this->loader->load('sm-p901', $useragent);
-        }
-
-        if ($s->contains('sm-p900', false)) {
-            return $this->loader->load('sm-p900', $useragent);
         }
 
         if ($s->contains('sm-p605', false)) {
@@ -971,10 +670,6 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('sm-g930', $useragent);
         }
 
-        if ($s->contains('sm-g9006v', false)) {
-            return $this->loader->load('sm-g9006v', $useragent);
-        }
-
         if ($s->contains('sm-g928f', false)) {
             return $this->loader->load('sm-g928f', $useragent);
         }
@@ -1095,12 +790,20 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('sm-g920w8', $useragent);
         }
 
+        if ($s->contains('sm-g906s', false)) {
+            return $this->loader->load('samsung sm-g906s', $useragent);
+        }
+
         if ($s->contains('sm-g903f', false)) {
             return $this->loader->load('sm-g903f', $useragent);
         }
 
         if ($s->contains('sm-g901f', false)) {
             return $this->loader->load('sm-g901f', $useragent);
+        }
+
+        if ($s->contains('sm-g9006v', false)) {
+            return $this->loader->load('sm-g9006v', $useragent);
         }
 
         if ($s->contains('sm-g900w8', false)) {

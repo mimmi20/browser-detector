@@ -30,6 +30,7 @@ class DoogeeFactory implements Factory\FactoryInterface
         'dg2014' => 'dg2014',
         'dg800'  => 'dg800',
         'dg330'  => 'dg330',
+        'dg310'  => 'doogee dg310',
         'f3_pro' => 'f3 pro',
     ];
 

@@ -48,6 +48,7 @@ class AsusFactory implements Factory\FactoryInterface
         'p1801-t'           => 'p1801-t',
         't00j'              => 't00j',
         't00n'              => 't00n',
+        't00q'              => 'asus t00q',
         'p01y'              => 'p01y',
         'tf101'             => 'tf101',
         'tf300tl'           => 'tf300tl',

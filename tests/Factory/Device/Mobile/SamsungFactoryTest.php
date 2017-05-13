@@ -7674,6 +7674,16 @@ class SamsungFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG SM-G906S Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36',
+                'SM-G906S',
+                'Galaxy S5 LTE',
+                'Samsung',
+                'Samsung',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

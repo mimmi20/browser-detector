@@ -27,7 +27,7 @@ class SonyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'nsz-gs7/gx70' => 'nsz-gs7/gx70',
+        'nsz-gs7/gx70' => 'nsz-gs7-gx70',
         'kdl32hx755'   => 'kdl32hx755',
         'kdl32w655a'   => 'kdl32w655a',
         'kdl37ex720'   => 'kdl37ex720',
