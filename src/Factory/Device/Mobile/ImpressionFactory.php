@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class ImpressionFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'impad 9708'    => 'impad 9708',
+        'impad6213m_v2' => 'impad 6213m v2',
+        'impad 0413'    => 'impad 0413',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class ImpressionFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('impad 9708', false)) {
-            return $this->loader->load('impad 9708', $useragent);
-        }
-
-        if ($s->contains('impad6213m_v2', false)) {
-            return $this->loader->load('impad 6213m v2', $useragent);
-        }
-
-        if ($s->contains('impad 0413', false)) {
-            return $this->loader->load('impad 0413', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general impression device', $useragent);

@@ -24,6 +24,19 @@ use Stringy\Stringy;
 class ModecomFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'freetab 9702 hd x4'      => 'freetab 9702 hd x4',
+        'freetab 9000 ips ic'     => 'freetab 9000 ips ic',
+        'freetab 8001 ips x2 3g+' => 'freetab 8001 ips x2 3g+',
+        'freetab 7800 ips ic'     => 'freetab 7800 ips ic',
+        'freetab 7001 hd ic'      => 'freetab 7001 hd ic',
+        'freetab 1014 ips x4 3g+' => 'freetab 1014 ips x4 3g+',
+        'freetab 1001'            => 'freetab 1001',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,32 +59,10 @@ class ModecomFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('FreeTAB 9702 HD X4', true)) {
-            return $this->loader->load('freetab 9702 hd x4', $useragent);
-        }
-
-        if ($s->contains('FreeTAB 9000 IPS IC', true)) {
-            return $this->loader->load('freetab 9000 ips ic', $useragent);
-        }
-
-        if ($s->contains('FreeTAB 8001 IPS X2 3G+', true)) {
-            return $this->loader->load('freetab 8001 ips x2 3g+', $useragent);
-        }
-
-        if ($s->contains('FreeTAB 7800 IPS IC', true)) {
-            return $this->loader->load('freetab 7800 ips ic', $useragent);
-        }
-
-        if ($s->contains('FreeTAB 7001 HD IC', true)) {
-            return $this->loader->load('freetab 7001 hd ic', $useragent);
-        }
-
-        if ($s->contains('FreeTAB 1014 IPS X4 3G+', true)) {
-            return $this->loader->load('freetab 1014 ips x4 3g+', $useragent);
-        }
-
-        if ($s->contains('FreeTAB 1001', true)) {
-            return $this->loader->load('freetab 1001', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general modecom device', $useragent);

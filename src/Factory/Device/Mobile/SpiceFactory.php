@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class SpiceFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'mi-424' => 'mi-424',
+        'qt-75'  => 'qt-75',
+        'i2i'    => 'i2i',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class SpiceFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('mi-424', false)) {
-            return $this->loader->load('mi-424', $useragent);
-        }
-
-        if ($s->contains('QT-75', true)) {
-            return $this->loader->load('qt-75', $useragent);
-        }
-
-        if ($s->contains('I2I', true)) {
-            return $this->loader->load('i2i', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general spice device', $useragent);

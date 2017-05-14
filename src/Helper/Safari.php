@@ -17,23 +17,6 @@ namespace BrowserDetector\Helper;
 class Safari
 {
     /**
-     * @var string the user agent to handle
-     */
-    private $useragent = '';
-
-    /**
-     * Class Constructor
-     *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\Safari
-     */
-    public function __construct($useragent)
-    {
-        $this->useragent = $useragent;
-    }
-
-    /**
      * maps different Safari Versions to a normalized format
      *
      * @param string $detectedVersion

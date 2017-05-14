@@ -24,6 +24,17 @@ use Stringy\Stringy;
 class ExplayFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'a320'        => 'explay-a320',
+        'surfer 7.34' => 'surfer 7.34 3g',
+        'm1_plus'     => 'm1 plus',
+        'd7.2 3g'     => 'd7.2 3g',
+        'art 3g'      => 'art 3g',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,24 +57,10 @@ class ExplayFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('a320', false)) {
-            return $this->loader->load('explay-a320', $useragent);
-        }
-
-        if ($s->contains('surfer 7.34', false)) {
-            return $this->loader->load('surfer 7.34 3g', $useragent);
-        }
-
-        if ($s->contains('m1_plus', false)) {
-            return $this->loader->load('m1 plus', $useragent);
-        }
-
-        if ($s->contains('d7.2 3g', false)) {
-            return $this->loader->load('d7.2 3g', $useragent);
-        }
-
-        if ($s->contains('art 3g', false)) {
-            return $this->loader->load('art 3g', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general explay device', $useragent);

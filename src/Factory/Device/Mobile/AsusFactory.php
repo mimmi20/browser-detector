@@ -24,6 +24,54 @@ use Stringy\Stringy;
 class AsusFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'tf101g'            => 'eee pad transformer tf101g',
+        'z00ad'             => 'z00ad',
+        'k00c'              => 'k00c',
+        'k00f'              => 'k00f',
+        'k00z'              => 'k00z',
+        'k01e'              => 'k01e',
+        'k01a'              => 'k01a',
+        'k019'              => 'asus k019',
+        'k017'              => 'k017',
+        'k013'              => 'k013',
+        'k012'              => 'k012',
+        'k00e'              => 'k00e',
+        'me372cg'           => 'k00e',
+        'me172v'            => 'me172v',
+        'me173x'            => 'me173x',
+        'me301t'            => 'me301t',
+        'me302c'            => 'me302c',
+        'me302kl'           => 'me302kl',
+        'me371mg'           => 'me371mg',
+        'p1801-t'           => 'p1801-t',
+        't00j'              => 't00j',
+        't00n'              => 't00n',
+        't00q'              => 'asus t00q',
+        'p01y'              => 'p01y',
+        'tf101'             => 'tf101',
+        'tf300tl'           => 'tf300tl',
+        'tf300tg'           => 'tf300tg',
+        'tf300t'            => 'tf300t',
+        'tf700t'            => 'tf700t',
+        'slider sl101'      => 'sl101',
+        'garmin-asus a50'   => 'a50',
+        'garmin-asus a10'   => 'asus a10',
+        'transformer tf201' => 'asus eee pad tf201',
+        'transformer prime' => 'asus eee pad tf201',
+        'padfone t004'      => 'padfone t004',
+        'padfone 2'         => 'a68',
+        'padfone'           => 'padfone',
+        'nexus 7'           => 'nexus 7',
+        'nexus_7'           => 'nexus 7',
+        'nexus7'            => 'nexus 7',
+        'asus;galaxy6'      => 'galaxy6',
+        'eee_701'           => 'eee 701',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,148 +94,10 @@ class AsusFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('TF101G', false)) {
-            return $this->loader->load('eee pad transformer tf101g', $useragent);
-        }
-
-        if ($s->contains('z00ad', false)) {
-            return $this->loader->load('z00ad', $useragent);
-        }
-
-        if ($s->contains('k00c', false)) {
-            return $this->loader->load('k00c', $useragent);
-        }
-
-        if ($s->contains('k00f', false)) {
-            return $this->loader->load('k00f', $useragent);
-        }
-
-        if ($s->contains('k00z', false)) {
-            return $this->loader->load('k00z', $useragent);
-        }
-
-        if ($s->contains('k01e', false)) {
-            return $this->loader->load('k01e', $useragent);
-        }
-
-        if ($s->contains('k01a', false)) {
-            return $this->loader->load('k01a', $useragent);
-        }
-
-        if ($s->contains('k017', false)) {
-            return $this->loader->load('k017', $useragent);
-        }
-
-        if ($s->contains('K013', false)) {
-            return $this->loader->load('k013', $useragent);
-        }
-
-        if ($s->contains('K012', false)) {
-            return $this->loader->load('k012', $useragent);
-        }
-
-        if ($s->containsAny(['K00E', 'ME372CG'], false)) {
-            return $this->loader->load('k00e', $useragent);
-        }
-
-        if ($s->contains('ME172V', false)) {
-            return $this->loader->load('me172v', $useragent);
-        }
-
-        if ($s->contains('ME173X', false)) {
-            return $this->loader->load('me173x', $useragent);
-        }
-
-        if ($s->contains('ME301T', false)) {
-            return $this->loader->load('me301t', $useragent);
-        }
-
-        if ($s->contains('ME302C', false)) {
-            return $this->loader->load('me302c', $useragent);
-        }
-
-        if ($s->contains('ME302KL', false)) {
-            return $this->loader->load('me302kl', $useragent);
-        }
-
-        if ($s->contains('ME371MG', false)) {
-            return $this->loader->load('me371mg', $useragent);
-        }
-
-        if ($s->contains('P1801-T', false)) {
-            return $this->loader->load('p1801-t', $useragent);
-        }
-
-        if ($s->contains('T00J', true)) {
-            return $this->loader->load('t00j', $useragent);
-        }
-
-        if ($s->contains('T00N', true)) {
-            return $this->loader->load('t00n', $useragent);
-        }
-
-        if ($s->contains('P01Y', true)) {
-            return $this->loader->load('p01y', $useragent);
-        }
-
-        if ($s->contains('TF101', false)) {
-            return $this->loader->load('tf101', $useragent);
-        }
-
-        if ($s->contains('TF300TL', false)) {
-            return $this->loader->load('tf300tl', $useragent);
-        }
-
-        if ($s->contains('TF300TG', false)) {
-            return $this->loader->load('tf300tg', $useragent);
-        }
-
-        if ($s->contains('TF300T', false)) {
-            return $this->loader->load('tf300t', $useragent);
-        }
-
-        if ($s->contains('TF700T', false)) {
-            return $this->loader->load('tf700t', $useragent);
-        }
-
-        if ($s->contains('Slider SL101', false)) {
-            return $this->loader->load('sl101', $useragent);
-        }
-
-        if ($s->contains('Garmin-Asus A50', false)) {
-            return $this->loader->load('a50', $useragent);
-        }
-
-        if ($s->contains('Garmin-Asus A10', false)) {
-            return $this->loader->load('asus a10', $useragent);
-        }
-
-        if ($s->containsAny(['Transformer TF201', 'Transformer Prime'], false)) {
-            return $this->loader->load('asus eee pad tf201', $useragent);
-        }
-
-        if ($s->contains('padfone t004', false)) {
-            return $this->loader->load('padfone t004', $useragent);
-        }
-
-        if ($s->contains('padfone 2', false)) {
-            return $this->loader->load('a68', $useragent);
-        }
-
-        if ($s->contains('padfone', false)) {
-            return $this->loader->load('padfone', $useragent);
-        }
-
-        if ($s->containsAny(['nexus 7', 'nexus_7', 'nexus7'], false)) {
-            return $this->loader->load('nexus 7', $useragent);
-        }
-
-        if ($s->contains('asus;galaxy6', false)) {
-            return $this->loader->load('galaxy6', $useragent);
-        }
-
-        if ($s->contains('eee_701', false)) {
-            return $this->loader->load('eee 701', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general asus device', $useragent);

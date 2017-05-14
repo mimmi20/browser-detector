@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class DoCoMoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'p905i' => 'p905i',
+        'p900i' => 'p900i',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class DoCoMoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('P905i', false)) {
-            return $this->loader->load('p905i', $useragent);
-        }
-
-        if ($s->contains('P900i', false)) {
-            return $this->loader->load('p900i', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general docomo device', $useragent);

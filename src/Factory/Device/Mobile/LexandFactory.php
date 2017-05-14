@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class LexandFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'a1002' => 'a1002',
+        'a811'  => 'a811',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class LexandFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('A1002', true)) {
-            return $this->loader->load('a1002', $useragent);
-        }
-
-        if ($s->contains('A811', true)) {
-            return $this->loader->load('a811', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general lexand device', $useragent);

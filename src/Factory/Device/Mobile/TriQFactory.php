@@ -24,6 +24,18 @@ use Stringy\Stringy;
 class TriQFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'qs0716d' => 'qs0716d',
+        'mt0812e' => 'mt0812e',
+        'mt0739d' => 'mt0739d',
+        'ac0732c' => 'ac0732c',
+        'rc9724c' => 'rc9724c',
+        'lc0720c' => 'lc0720c',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,28 +58,10 @@ class TriQFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('QS0716D', true)) {
-            return $this->loader->load('qs0716d', $useragent);
-        }
-
-        if ($s->contains('MT0812E', true)) {
-            return $this->loader->load('mt0812e', $useragent);
-        }
-
-        if ($s->contains('MT0739D', true)) {
-            return $this->loader->load('mt0739d', $useragent);
-        }
-
-        if ($s->contains('AC0732C', true)) {
-            return $this->loader->load('ac0732c', $useragent);
-        }
-
-        if ($s->contains('RC9724C', true)) {
-            return $this->loader->load('rc9724c', $useragent);
-        }
-
-        if ($s->contains('LC0720C', true)) {
-            return $this->loader->load('lc0720c', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general 3q device', $useragent);

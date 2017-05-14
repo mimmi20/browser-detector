@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class OppoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'x909'  => 'x909',
+        'r815'  => 'r815',
+        'r813t' => 'r813t',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class OppoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('x909', false)) {
-            return $this->loader->load('x909', $useragent);
-        }
-
-        if ($s->contains('r815', false)) {
-            return $this->loader->load('r815', $useragent);
-        }
-
-        if ($s->contains('r813t', false)) {
-            return $this->loader->load('r813t', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general oppo device', $useragent);

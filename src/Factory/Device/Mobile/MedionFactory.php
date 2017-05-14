@@ -24,6 +24,55 @@ use Stringy\Stringy;
 class MedionFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'medion e5001'    => 'life e5001',
+        'medion e4502'    => 'life e4502',
+        'medion e4504'    => 'life e4504',
+        'medion e4503'    => 'life e4503',
+        'medion e4506'    => 'life e4506',
+        'medion e4005'    => 'life e4005',
+        'x5020'           => 'life x5020',
+        'x5004'           => 'x5004',
+        'x4701'           => 'x4701',
+        'p5001'           => 'life p5001',
+        'p5004'           => 'life p5004',
+        'p5005'           => 'life p5005',
+        's5004'           => 'life s5004',
+        'lifetab_p1034x'  => 'lifetab p1034x',
+        'lifetab_p733x'   => 'lifetab p733x',
+        'lifetab_s9714'   => 'lifetab s9714',
+        'lifetab_s9512'   => 'lifetab s9512',
+        'lifetab_s1036x'  => 'lifetab s1036x',
+        'lifetab_s1034x'  => 'lifetab s1034x',
+        'lifetab_s1033x'  => 'lifetab s1033x',
+        'lifetab_s831x'   => 'lifetab s831x',
+        'lifetab_s785x'   => 'lifetab s785x',
+        'lifetab_s732x'   => 'lifetab s732x',
+        'lifetab_p9516'   => 'lifetab p9516',
+        'lifetab_p9514'   => 'lifetab p9514',
+        'lifetab_p891x'   => 'lifetab p891x',
+        'lifetab_p831x.2' => 'lifetab p831x.2',
+        'lifetab_p831x'   => 'lifetab p831x',
+        'lifetab_e10320'  => 'lifetab e10320',
+        'lifetab_e10316'  => 'lifetab e10316',
+        'lifetab_e10312'  => 'lifetab e10312',
+        'lifetab_e10310'  => 'lifetab e10310',
+        'lifetab_e7316'   => 'lifetab e7316',
+        'lifetab_e7313'   => 'lifetab e7313',
+        'lifetab_e7312'   => 'lifetab e7312',
+        'lifetab_e733x'   => 'lifetab e733x',
+        'lifetab_e723x'   => 'lifetab e723x',
+        'p4501'           => 'md 98428',
+        'p4502'           => 'life p4502',
+        'life p4310'      => 'life p4310',
+        'p4013'           => 'life p4013',
+        'life p4012'      => 'lifetab p4012',
+        'life e3501'      => 'life e3501',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,176 +95,10 @@ class MedionFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('medion e5001', false)) {
-            return $this->loader->load('life e5001', $useragent);
-        }
-
-        if ($s->contains('medion e4502', false)) {
-            return $this->loader->load('life e4502', $useragent);
-        }
-
-        if ($s->contains('medion e4504', false)) {
-            return $this->loader->load('life e4504', $useragent);
-        }
-
-        if ($s->contains('medion e4503', false)) {
-            return $this->loader->load('life e4503', $useragent);
-        }
-
-        if ($s->contains('medion e4506', false)) {
-            return $this->loader->load('life e4506', $useragent);
-        }
-
-        if ($s->contains('medion e4005', false)) {
-            return $this->loader->load('life e4005', $useragent);
-        }
-
-        if ($s->contains('x5020', false)) {
-            return $this->loader->load('life x5020', $useragent);
-        }
-
-        if ($s->contains('x5004', false)) {
-            return $this->loader->load('x5004', $useragent);
-        }
-
-        if ($s->contains('x4701', false)) {
-            return $this->loader->load('x4701', $useragent);
-        }
-
-        if ($s->contains('p5001', false)) {
-            return $this->loader->load('life p5001', $useragent);
-        }
-
-        if ($s->contains('p5004', false)) {
-            return $this->loader->load('life p5004', $useragent);
-        }
-
-        if ($s->contains('p5005', false)) {
-            return $this->loader->load('life p5005', $useragent);
-        }
-
-        if ($s->contains('s5004', false)) {
-            return $this->loader->load('life s5004', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_P1034X', false)) {
-            return $this->loader->load('lifetab p1034x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_P733X', false)) {
-            return $this->loader->load('lifetab p733x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_S9714', false)) {
-            return $this->loader->load('lifetab s9714', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_S9512', false)) {
-            return $this->loader->load('lifetab s9512', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_S1036X', false)) {
-            return $this->loader->load('lifetab s1036x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_S1034X', false)) {
-            return $this->loader->load('lifetab s1034x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_S1033X', false)) {
-            return $this->loader->load('lifetab s1033x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_S831X', false)) {
-            return $this->loader->load('lifetab s831x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_S785X', false)) {
-            return $this->loader->load('lifetab s785x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_S732X', false)) {
-            return $this->loader->load('lifetab s732x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_P9516', false)) {
-            return $this->loader->load('lifetab p9516', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_P9514', false)) {
-            return $this->loader->load('lifetab p9514', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_P891X', false)) {
-            return $this->loader->load('lifetab p891x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_P831X.2', false)) {
-            return $this->loader->load('lifetab p831x.2', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_P831X', false)) {
-            return $this->loader->load('lifetab p831x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_E10320', false)) {
-            return $this->loader->load('lifetab e10320', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_E10316', false)) {
-            return $this->loader->load('lifetab e10316', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_E10312', false)) {
-            return $this->loader->load('lifetab e10312', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_E10310', false)) {
-            return $this->loader->load('lifetab e10310', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_E7316', false)) {
-            return $this->loader->load('lifetab e7316', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_E7313', false)) {
-            return $this->loader->load('lifetab e7313', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_E7312', false)) {
-            return $this->loader->load('lifetab e7312', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_E733X', false)) {
-            return $this->loader->load('lifetab e733x', $useragent);
-        }
-
-        if ($s->contains('LIFETAB_E723X', false)) {
-            return $this->loader->load('lifetab e723x', $useragent);
-        }
-
-        if ($s->contains('p4501', false)) {
-            return $this->loader->load('md 98428', $useragent);
-        }
-
-        if ($s->contains('p4502', false)) {
-            return $this->loader->load('life p4502', $useragent);
-        }
-
-        if ($s->contains('LIFE P4310', false)) {
-            return $this->loader->load('life p4310', $useragent);
-        }
-
-        if ($s->contains('p4013', false)) {
-            return $this->loader->load('life p4013', $useragent);
-        }
-
-        if ($s->contains('LIFE P4012', false)) {
-            return $this->loader->load('lifetab p4012', $useragent);
-        }
-
-        if ($s->contains('LIFE E3501', false)) {
-            return $this->loader->load('life e3501', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general medion device', $useragent);

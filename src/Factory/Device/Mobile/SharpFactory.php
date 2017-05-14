@@ -24,6 +24,22 @@ use Stringy\Stringy;
 class SharpFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'sharp-tq-gx30i' => 'tq-gx30i',
+        'sh-10d'         => 'sh-10d',
+        'sh-01f'         => 'sh-01f',
+        'sh8128u'        => 'sh8128u',
+        'sh7228u'        => 'sh7228u',
+        '306sh'          => '306sh',
+        '304sh'          => '304sh',
+        'sh80f'          => 'sh80f',
+        'sh05c'          => 'sh-05c',
+        'is05'           => 'is05',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,44 +62,10 @@ class SharpFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('SHARP-TQ-GX30i', true)) {
-            return $this->loader->load('tq-gx30i', $useragent);
-        }
-
-        if ($s->contains('SH-10D', true)) {
-            return $this->loader->load('sh-10d', $useragent);
-        }
-
-        if ($s->contains('SH-01F', true)) {
-            return $this->loader->load('sh-01f', $useragent);
-        }
-
-        if ($s->contains('SH8128U', true)) {
-            return $this->loader->load('sh8128u', $useragent);
-        }
-
-        if ($s->contains('SH7228U', true)) {
-            return $this->loader->load('sh7228u', $useragent);
-        }
-
-        if ($s->contains('306SH', true)) {
-            return $this->loader->load('306sh', $useragent);
-        }
-
-        if ($s->contains('304SH', true)) {
-            return $this->loader->load('304sh', $useragent);
-        }
-
-        if ($s->contains('SH80F', true)) {
-            return $this->loader->load('sh80f', $useragent);
-        }
-
-        if ($s->contains('SH05C', true)) {
-            return $this->loader->load('sh-05c', $useragent);
-        }
-
-        if ($s->contains('IS05', true)) {
-            return $this->loader->load('is05', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general sharp device', $useragent);

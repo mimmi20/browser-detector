@@ -144,6 +144,16 @@ class QmobileFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; QMobile i7 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.92 Mobile Safari/537.36',
+                'I7',
+                'I7',
+                'QMobile',
+                'QMobile',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

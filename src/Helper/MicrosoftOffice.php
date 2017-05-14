@@ -61,11 +61,7 @@ class MicrosoftOffice
      */
     public function detectInternalVersion($useragent)
     {
-        $doMatch = preg_match(
-            '/MSOffice ([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/MSOffice ([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
             return $matches[1];
@@ -78,6 +74,12 @@ class MicrosoftOffice
         }
 
         $doMatch = preg_match('/Office Mobile\/([\d\.]+)/i', $useragent, $matches);
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match('/Office Mobile for Symbian\/([\d\.]+)/i', $useragent, $matches);
 
         if ($doMatch) {
             return $matches[1];

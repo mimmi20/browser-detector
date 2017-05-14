@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class BewatecFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'medipad13' => 'medipad 13',
+        'medipad'   => 'medipad',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class BewatecFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('MediPaD13', true)) {
-            return $this->loader->load('medipad 13', $useragent);
-        }
-
-        if ($s->contains('MediPaD', true)) {
-            return $this->loader->load('medipad', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general bewatec device', $useragent);

@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class ZekiFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'tbdc1093' => 'tbdc1093',
+        'tbdb863'  => 'tbdb863',
+        'tbd1083'  => 'tbd1083',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class ZekiFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('TBDC1093', true)) {
-            return $this->loader->load('tbdc1093', $useragent);
-        }
-
-        if ($s->contains('TBDB863', true)) {
-            return $this->loader->load('tbdb863', $useragent);
-        }
-
-        if ($s->contains('TBD1083', true)) {
-            return $this->loader->load('tbd1083', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general zeki device', $useragent);

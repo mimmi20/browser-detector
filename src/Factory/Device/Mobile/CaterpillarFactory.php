@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class CaterpillarFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'b15q' => 'b15q',
+        'b15'  => 'b15',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class CaterpillarFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('B15Q', false)) {
-            return $this->loader->load('b15q', $useragent);
-        }
-
-        if ($s->contains('B15', false)) {
-            return $this->loader->load('b15', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general caterpillar device', $useragent);

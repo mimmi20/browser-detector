@@ -24,6 +24,16 @@ use Stringy\Stringy;
 class VericoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'km-uqm11a'   => 'uqm11a',
+        'rp-udm02a'   => 'rp-udm02a',
+        'rp-udm01a'   => 'rp-udm01a',
+        'uq785-m1bgv' => 'm1bgv',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,20 +56,10 @@ class VericoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('KM-UQM11A', true)) {
-            return $this->loader->load('uqm11a', $useragent);
-        }
-
-        if ($s->contains('RP-UDM02A', true)) {
-            return $this->loader->load('rp-udm02a', $useragent);
-        }
-
-        if ($s->contains('RP-UDM01A', true)) {
-            return $this->loader->load('rp-udm01a', $useragent);
-        }
-
-        if ($s->contains('UQ785-M1BGV', true)) {
-            return $this->loader->load('m1bgv', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general verico device', $useragent);

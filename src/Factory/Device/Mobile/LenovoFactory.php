@@ -53,6 +53,8 @@ class LenovoFactory implements Factory\FactoryInterface
         'p1050x'                  => 'lifetab p1050x',
         'p1032x'                  => 'lifetab p1032x',
         'p780'                    => 'p780',
+        'p70-a'                   => 'lenovo p70-a',
+        'p70'                     => 'lenovo p70',
         'k910l'                   => 'k910l',
         'k900'                    => 'k900',
         ' k1'                     => 'k1',

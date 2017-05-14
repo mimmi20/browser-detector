@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class CreativeFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'ziio10' => 'ziio 10',
+        'ziio7'  => 'ziio7',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class CreativeFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('ZiiO10', false)) {
-            return $this->loader->load('ziio 10', $useragent);
-        }
-
-        if ($s->contains('ZiiO7', false)) {
-            return $this->loader->load('ziio7', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general creative device', $useragent);

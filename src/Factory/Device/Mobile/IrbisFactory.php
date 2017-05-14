@@ -24,6 +24,17 @@ use Stringy\Stringy;
 class IrbisFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'tx68' => 'tx68',
+        'tx18' => 'tx18',
+        'tx17' => 'tx17',
+        'tx08' => 'tx08',
+        'tg97' => 'tg97',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,24 +57,10 @@ class IrbisFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('TX68', true)) {
-            return $this->loader->load('tx68', $useragent);
-        }
-
-        if ($s->contains('TX18', true)) {
-            return $this->loader->load('tx18', $useragent);
-        }
-
-        if ($s->contains('TX17', true)) {
-            return $this->loader->load('tx17', $useragent);
-        }
-
-        if ($s->contains('TX08', true)) {
-            return $this->loader->load('tx08', $useragent);
-        }
-
-        if ($s->contains('TG97', true)) {
-            return $this->loader->load('tg97', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general irbis device', $useragent);

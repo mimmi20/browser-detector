@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class AppleFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'ipod' => 'ipod touch',
+        'ipad' => 'ipad',
+        'iph'  => 'iphone',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class AppleFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('ipod', false)) {
-            return $this->loader->load('ipod touch', $useragent);
-        }
-
-        if ($s->contains('ipad', false)) {
-            return $this->loader->load('ipad', $useragent);
-        }
-
-        if ($s->contains('iph', false)) {
-            return $this->loader->load('iphone', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         if (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {

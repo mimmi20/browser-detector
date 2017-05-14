@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class NgmFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'forward_art'    => 'ngm forward art',
+        'miracle'        => 'wemove miracle',
+        'dynamic racing' => 'dynamic racing gp',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +55,10 @@ class NgmFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('Miracle', true)) {
-            return $this->loader->load('wemove miracle', $useragent);
-        }
-
-        if ($s->contains('Dynamic Racing', true)) {
-            return $this->loader->load('dynamic racing gp', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general ngm device', $useragent);

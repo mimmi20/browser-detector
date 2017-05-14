@@ -24,6 +24,16 @@ use Stringy\Stringy;
 class BlaupunktFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'atlantis 1010a' => 'atlantis 1010a',
+        'endeavour 101l' => 'endeavour 101l',
+        'endeavour_101l' => 'endeavour 101l',
+        'endeavour 1010' => 'endeavour 1010',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +56,10 @@ class BlaupunktFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('Atlantis 1010A', true)) {
-            return $this->loader->load('atlantis 1010a', $useragent);
-        }
-
-        if ($s->containsAny(['Endeavour 101L', 'Endeavour_101L'], false)) {
-            return $this->loader->load('endeavour 101l', $useragent);
-        }
-
-        if ($s->contains('Endeavour 1010', false)) {
-            return $this->loader->load('endeavour 1010', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general blaupunkt device', $useragent);

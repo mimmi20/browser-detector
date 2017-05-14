@@ -24,6 +24,250 @@ use Stringy\Stringy;
 class HtcFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        ' x9 '                    => 'x9',
+        'nexus one'               => 'nexus one',
+        'nexus-one'               => 'nexus one',
+        'nexusone'                => 'nexus one',
+        'nexus 9'                 => 'nexus 9',
+        'nexushd2'                => 'nexus hd2',
+        'nexus evohd2'            => 'nexus hd2',
+        '8x by htc'               => 'windows phone 8x',
+        'pm23300'                 => 'windows phone 8x',
+        '8s by htc'               => '8s',
+        'radar c110e'             => 'radar c110e',
+        'radar; orange'           => 'radar c110e',
+        'radar 4g'                => 'radar 4g',
+        'radar'                   => 'radar',
+        'hd7'                     => 't9292',
+        'mondrian'                => 't9292',
+        '7 mozart'                => 't8698',
+        't8282'                   => 'touch hd t8282',
+        '7 pro t7576'             => 't7576',
+        'hd2_t8585'               => 't8585',
+        'htc hd2'                 => 'htc hd2',
+        'htc_hd2'                 => 'hd2',
+        'hd mini'                 => 'mini t5555',
+        'hd_mini'                 => 'mini t5555',
+        'titan'                   => 'x310e',
+        '7 trophy'                => 'spark',
+        'mwp6985'                 => 'spark',
+        '0p6b180'                 => '0p6b180',
+        'one_m9plus'              => 'm9 plus',
+        'one m9plus'              => 'm9 plus',
+        'one_m9'                  => 'm9',
+        'one m9'                  => 'm9',
+        'one_m8s'                 => 'm8s',
+        'one m8s'                 => 'm8s',
+        'one_m8'                  => 'htc m8',
+        'one m8'                  => 'htc m8',
+        'pn07120'                 => 'pn07120',
+        'one x+'                  => 'pm63100',
+        'one_x+'                  => 'pm63100',
+        'onexplus'                => 'pm63100',
+        'one xl'                  => 'htc pj83100',
+        'one_xl'                  => 'htc pj83100',
+        'one x'                   => 'pj83100',
+        'one_x'                   => 'pj83100',
+        'onex'                    => 'pj83100',
+        'pj83100'                 => 'pj83100',
+        'one v'                   => 'one v',
+        'one_v'                   => 'one v',
+        'one sv'                  => 'one sv',
+        'one_sv'                  => 'one sv',
+        'onesv'                   => 'one sv',
+        'one s'                   => 'pj401',
+        'one_s'                   => 'pj401',
+        'ones'                    => 'pj401',
+        'one mini 2'              => 'one mini 2',
+        'one_mini_2'              => 'one mini 2',
+        'one mini'                => 'one mini',
+        'one_mini'                => 'one mini',
+        'one max'                 => 'one max',
+        'one_max'                 => 'one max',
+        'himauhl_htc_asia_tw'     => 'one max',
+        'x315e'                   => 'htc x315e',
+        'runnymede'               => 'htc x315e',
+        'sensation 4g'            => 'sensation 4g',
+        'sensation_4g'            => 'sensation 4g',
+        'sensation xl'            => 'htc x315e',
+        'sensationxl'             => 'htc x315e',
+        'sensation xe'            => 'sensation xe beats z715e',
+        'sensationxe'             => 'sensation xe beats z715e',
+        'htc_sensation-orange-ls' => 'htc z710 ls',
+        'htc_sensation-ls'        => 'htc z710 ls',
+        'sensation z710e'         => 'z710e',
+        'sensation_z710e'         => 'z710e',
+        'sensation'               => 'htc z710',
+        'pyramid'                 => 'htc z710',
+        'evo 3d gsm'              => 'evo 3d gsm',
+        'x515a'                   => 'x515a',
+        'x515c'                   => 'x515c',
+        'x515e'                   => 'x515e',
+        'evo 3d'                  => 'x515m',
+        'evo_3d'                  => 'x515m',
+        'evo3d'                   => 'x515m',
+        'x515m'                   => 'x515m',
+        'x515'                    => 'x515',
+        'desirez_a7272'           => 'a7272',
+        'desire z'                => 'desire z',
+        'desire_z'                => 'desire z',
+        'desirez'                 => 'desire z',
+        'desire x'                => 't328e',
+        'desire_x'                => 't328e',
+        'desirex'                 => 't328e',
+        'desire v'                => 'desire v',
+        'desire_v'                => 'desire v',
+        'desirev'                 => 'desire v',
+        's510e'                   => 's510e',
+        'desire sv'               => 'desire sv',
+        'desire_sv'               => 'desire sv',
+        'desiresv'                => 'desire sv',
+        'desire s'                => 'desire s',
+        'desire_s'                => 'desire s',
+        'desires'                 => 'desire s',
+        'desirehd-orange-ls'      => 'desire hd ls',
+        'a9191'                   => 'a9191',
+        'a9192'                   => 'inspire 4g',
+        'desire hd'               => 'desire hd',
+        'desirehd'                => 'desire hd',
+        'desire c'                => '1000c',
+        'desire_c'                => '1000c',
+        'desirec'                 => '1000c',
+        'desire 820s'             => 'desire 820s',
+        'desire_820s'             => 'desire 820s',
+        'desire_820'              => 'desire 820',
+        'desire 820'              => 'desire 820',
+        'desire 816g'             => 'desire 816g',
+        'desire_816g'             => 'desire 816g',
+        'desire 816'              => 'desire 816',
+        'desire_816'              => 'desire 816',
+        '0p4e2'                   => '0p4e2',
+        'desire 601'              => '0p4e2',
+        'desire_601'              => '0p4e2',
+        'desire 728g'             => 'desire 728g',
+        'desire_728g'             => 'desire 728g',
+        'desire 700'              => 'desire 700',
+        'desire_700'              => 'desire 700',
+        'desire 626g'             => 'desire 626g',
+        'desire_626g'             => 'desire 626g',
+        'desire 626'              => 'desire 626',
+        'desire_626'              => 'desire 626',
+        'desire 620g'             => 'desire 620g',
+        'desire_620g'             => 'desire 620g',
+        'desire 610'              => 'desire 610',
+        'desire_610'              => 'desire 610',
+        'desire 600c'             => 'desire 600c',
+        'desire_600c'             => 'desire 600c',
+        'desire 600'              => 'desire 600',
+        'desire_600'              => 'desire 600',
+        'desire 530'              => 'desire 530',
+        'desire_530'              => 'desire 530',
+        'desire 526g'             => 'desire 526g',
+        'desire_526g'             => 'desire 526g',
+        'desire 516'              => 'desire 516',
+        'desire_516'              => 'desire 516',
+        'desire 510'              => 'desire 510',
+        'desire_510'              => 'desire 510',
+        'desire 500'              => 'desire 500',
+        'desire_500'              => 'desire 500',
+        'desire 400'              => 'desire 400',
+        'desire_400'              => 'desire 400',
+        'desire 320'              => 'desire 320',
+        'desire_320'              => 'desire 320',
+        'desire 310'              => 'desire 310',
+        'desire_310'              => 'desire 310',
+        'desire 300'              => 'desire 300',
+        'desire_300'              => 'desire 300',
+        'desire eye'              => 'desire eye',
+        'desire_eye'              => 'desire eye',
+        'desire_a8181'            => 'a8181',
+        'desire'                  => 'desire',
+        'wildfires-orange-ls'     => 'wildfire s ls',
+        'wildfires-ls'            => 'wildfire s ls',
+        ' a315c '                 => 'a315c',
+        'a510a'                   => 'a510a',
+        'wildfire_a3333'          => 'a3333',
+        'wildfire s a510e'        => 'a510e',
+        'wildfires_a510e'         => 'a510e',
+        'adr6230'                 => 'adr6230',
+        'wildfire s'              => 'htc a510',
+        'wildfires'               => 'htc a510',
+        'wildfire'                => 'wildfire',
+        'vision'                  => 'vision',
+        'velocity 4g x710s'       => 'x710s',
+        'velocity_4g_x710s'       => 'x710s',
+        'velocity 4g'             => 'velocity 4g',
+        'velocity_4g'             => 'velocity 4g',
+        'velocity'                => 'velocity',
+        'touch_diamond2'          => 'touch diamond 2',
+        'tattoo'                  => 'tattoo',
+        'touch_pro2_t7373'        => 't7373',
+        'touch2'                  => 't3335',
+        't329d'                   => 't329d',
+        't328w'                   => 't328w',
+        't328d'                   => 't328d',
+        'smart_f3188'             => 'smart f3188',
+        'shooteru'                => 'shooter u',
+        'salsa'                   => 'salsa',
+        'butterfly_s_901s'        => 's901s',
+        'incredible s'            => 's710e',
+        'incredibles'             => 's710e',
+        's710e'                   => 's710e',
+        'rhyme'                   => 's510b',
+        's510b'                   => 's510b',
+        'ruby'                    => 'ruby',
+        'p3700'                   => 'p3700',
+        'magic'                   => 'magic',
+        'legend'                  => 'legend',
+        'hero'                    => 'hero',
+        'a6288'                   => 'hero',
+        'glacier'                 => 'glacier',
+        'g21'                     => 'g21',
+        'flyer p512'              => 'p512',
+        'flyer_p512'              => 'p512',
+        'flyer p510e'             => 'p510e',
+        'flyer_p510e'             => 'p510e',
+        'flyer'                   => 'flyer',
+        'pc36100'                 => 'pc36100',
+        'evo 4g'                  => 'pc36100',
+        'kingdom'                 => 'pc36100',
+        'dream'                   => 'dream',
+        'd820mu'                  => 'd820mu',
+        'd820us'                  => 'd820us',
+        'click'                   => 'click',
+        'eris'                    => 'eris',
+        ' c2'                     => 'c2',
+        'bravo'                   => 'bravo',
+        'butterfly'               => 'butterfly',
+        'adr6350'                 => 'adr6350',
+        'gratia'                  => 'a6380',
+        'a6380'                   => 'a6380',
+        'a6366'                   => 'a6366',
+        'a3335'                   => 'a3335',
+        'chacha'                  => 'a810e',
+        'explorer'                => 'a310e',
+        'a310e'                   => 'a310e',
+        'amaze'                   => 'amaze 4g',
+        'htc7088'                 => '7088',
+        'htc6990lvw'              => 'htc6990lvw',
+        'htc6500lvw'              => 'm7 (htc6500lvw)',
+        'htc6435lvw'              => 'htc6435lvw',
+        'htc 919d'                => '919d',
+        '831c'                    => '831c',
+        'htc 809d'                => '809d',
+        'htc 802t'                => '802t',
+        'htc802t'                 => '802t',
+        'htc 802d'                => '802d',
+        'htc 606w'                => 'desire 606w',
+        'htc d516d'               => 'desire 516',
+        'vpa_touch'               => 'vpa touch',
+        'htc_vpacompactiv'        => 'vpa compact iv',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,604 +290,14 @@ class HtcFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains(' X9 ', true)) {
-            return $this->loader->load('x9', $useragent);
-        }
-
-        if (preg_match('/(Nexus[ \-]One|NexusOne)/i', $useragent)) {
-            return $this->loader->load('nexus one', $useragent);
-        }
-
-        if ($s->contains('nexus 9', false)) {
-            return $this->loader->load('nexus 9', $useragent);
-        }
-
-        if (preg_match('/nexus(hd2| evohd2)/i', $useragent)) {
-            return $this->loader->load('nexus hd2', $useragent);
-        }
-
-        if ($s->contains('8X by HTC', false)) {
-            return $this->loader->load('windows phone 8x', $useragent);
-        }
-
-        if ($s->contains('PM23300', true)) {
-            return $this->loader->load('windows phone 8x', $useragent);
-        }
-
-        if ($s->contains('8S by HTC', false)) {
-            return $this->loader->load('8s', $useragent);
-        }
-
-        if (preg_match('/radar( c110e|; orange)/i', $useragent)) {
-            return $this->loader->load('radar c110e', $useragent);
-        }
-
-        if ($s->contains('radar 4g', false)) {
-            return $this->loader->load('radar 4g', $useragent);
-        }
-
-        if ($s->contains('radar', false)) {
-            return $this->loader->load('radar', $useragent);
-        }
-
-        if (preg_match('/(hd7|mondrian)/i', $useragent)) {
-            return $this->loader->load('t9292', $useragent);
-        }
-
-        if ($s->contains('7 Mozart', false)) {
-            return $this->loader->load('t8698', $useragent);
-        }
-
-        if ($s->contains('t8282', false)) {
-            return $this->loader->load('touch hd t8282', $useragent);
-        }
-
-        if ($s->contains('7 Pro T7576', false)) {
-            return $this->loader->load('t7576', $useragent);
-        }
-
-        if ($s->contains('HD2_T8585', false)) {
-            return $this->loader->load('t8585', $useragent);
-        }
-
-        if (preg_match('/HD2/', $useragent) && preg_match('/android/i', $useragent)) {
-            return $this->loader->load('htc hd2', $useragent);
-        }
-
-        if ($s->contains('HD2', true)) {
-            return $this->loader->load('hd2', $useragent);
-        }
-
-        if (preg_match('/(HD[ |\_]mini)/i', $useragent)) {
-            return $this->loader->load('mini t5555', $useragent);
-        }
-
-        if ($s->contains('titan', false)) {
-            return $this->loader->load('x310e', $useragent);
-        }
-
-        if (preg_match('/(7 Trophy|mwp6985)/i', $useragent)) {
-            return $this->loader->load('spark', $useragent);
-        }
-
-        if ($s->contains('0P6B180', false)) {
-            return $this->loader->load('0p6b180', $useragent);
-        }
-
-        if (preg_match('/one[_ ]m9plus/i', $useragent)) {
-            return $this->loader->load('m9 plus', $useragent);
-        }
-
-        if (preg_match('/one[_ ]m9/i', $useragent)) {
-            return $this->loader->load('m9', $useragent);
-        }
-
-        if (preg_match('/one[_ ]m8s/i', $useragent)) {
-            return $this->loader->load('m8s', $useragent);
-        }
-
-        if (preg_match('/one[_ ]m8/i', $useragent)) {
-            return $this->loader->load('htc m8', $useragent);
-        }
-
-        if ($s->contains('pn07120', false)) {
-            return $this->loader->load('pn07120', $useragent);
-        }
-
-        if (preg_match('/(one[ _]x\+|onexplus)/i', $useragent)) {
-            return $this->loader->load('pm63100', $useragent);
-        }
-
-        if (preg_match('/one[ _]xl/i', $useragent)) {
-            return $this->loader->load('htc pj83100', $useragent);
-        }
-
-        if (preg_match('/(one[ _]x|onex|PJ83100)/i', $useragent)) {
-            return $this->loader->load('pj83100', $useragent);
-        }
-
-        if (preg_match('/one[ _]v/i', $useragent)) {
-            return $this->loader->load('one v', $useragent);
-        }
-
-        if (preg_match('/(one[ _]sv|onesv)/i', $useragent)) {
-            return $this->loader->load('one sv', $useragent);
-        }
-
-        if (preg_match('/(one[ _]s|ones)/i', $useragent)) {
-            return $this->loader->load('pj401', $useragent);
-        }
-
-        if (preg_match('/one[ _]mini[ _]2/i', $useragent)) {
-            return $this->loader->load('one mini 2', $useragent);
-        }
-
-        if (preg_match('/one[ _]mini/i', $useragent)) {
-            return $this->loader->load('one mini', $useragent);
-        }
-
-        if (preg_match('/(one[ _]max|himauhl_htc_asia_tw)/i', $useragent)) {
-            return $this->loader->load('one max', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         if ($s->containsAny(['One', 'ONE'], true)) {
             return $this->loader->load('m7', $useragent);
-        }
-
-        if (preg_match('/(x315e|runnymede)/i', $useragent)) {
-            return $this->loader->load('htc x315e', $useragent);
-        }
-
-        if (preg_match('/sensation[ _]4g/i', $useragent)) {
-            return $this->loader->load('sensation 4g', $useragent);
-        }
-
-        if (preg_match('/(sensationxl|sensation xl)/i', $useragent)) {
-            return $this->loader->load('htc x315e', $useragent);
-        }
-
-        if (preg_match('/(sensation xe|sensationxe)/i', $useragent)) {
-            return $this->loader->load('sensation xe beats z715e', $useragent);
-        }
-
-        if (preg_match('/(htc\_sensation\-orange\-ls|htc\_sensation\-ls)/i', $useragent)) {
-            return $this->loader->load('htc z710 ls', $useragent);
-        }
-
-        if (preg_match('/sensation[ _]z710e/i', $useragent)) {
-            return $this->loader->load('z710e', $useragent);
-        }
-
-        if (preg_match('/(sensation|pyramid)/i', $useragent)) {
-            return $this->loader->load('htc z710', $useragent);
-        }
-
-        if ($s->contains('evo 3d gsm', false)) {
-            return $this->loader->load('evo 3d gsm', $useragent);
-        }
-
-        if ($s->contains('x515a', false)) {
-            return $this->loader->load('x515a', $useragent);
-        }
-
-        if ($s->contains('x515c', false)) {
-            return $this->loader->load('x515c', $useragent);
-        }
-
-        if ($s->contains('x515e', false)) {
-            return $this->loader->load('x515e', $useragent);
-        }
-
-        if (preg_match('/(EVO[ _]3D|EVO3D|x515m)/i', $useragent)) {
-            return $this->loader->load('x515m', $useragent);
-        }
-
-        if ($s->contains('x515', false)) {
-            return $this->loader->load('x515', $useragent);
-        }
-
-        if ($s->contains('desirez_a7272', false)) {
-            return $this->loader->load('a7272', $useragent);
-        }
-
-        if (preg_match('/(desire[ _]z|desirez)/i', $useragent)) {
-            return $this->loader->load('desire z', $useragent);
-        }
-
-        if (preg_match('/(desire[ _]x|desirex)/i', $useragent)) {
-            return $this->loader->load('t328e', $useragent);
-        }
-
-        if (preg_match('/(desire[ _]v|desirev)/i', $useragent)) {
-            return $this->loader->load('desire v', $useragent);
-        }
-
-        if ($s->contains('s510e', false)) {
-            return $this->loader->load('s510e', $useragent);
-        }
-
-        if (preg_match('/(desire[ _]sv|desiresv)/i', $useragent)) {
-            return $this->loader->load('desire sv', $useragent);
-        }
-
-        if (preg_match('/(desire[ _]s|desires)/i', $useragent)) {
-            return $this->loader->load('desire s', $useragent);
-        }
-
-        if ($s->contains('desirehd-orange-ls', false)) {
-            return $this->loader->load('desire hd ls', $useragent);
-        }
-
-        if ($s->contains('a9191', false)) {
-            return $this->loader->load('a9191', $useragent);
-        }
-
-        if ($s->contains('a9192', false)) {
-            return $this->loader->load('inspire 4g', $useragent);
-        }
-
-        if (preg_match('/(desire hd|desirehd)/i', $useragent)) {
-            return $this->loader->load('desire hd', $useragent);
-        }
-
-        if (preg_match('/(desire[ _]c|desirec)/i', $useragent)) {
-            return $this->loader->load('1000c', $useragent);
-        }
-
-        if (preg_match('/desire[ _]820s/i', $useragent)) {
-            return $this->loader->load('desire 820s', $useragent);
-        }
-
-        if (preg_match('/desire[ _]820/i', $useragent)) {
-            return $this->loader->load('desire 820', $useragent);
-        }
-
-        if (preg_match('/desire[ _]816g/i', $useragent)) {
-            return $this->loader->load('desire 816g', $useragent);
-        }
-
-        if (preg_match('/desire[ _]816/i', $useragent)) {
-            return $this->loader->load('desire 816', $useragent);
-        }
-
-        if (preg_match('/(0p4e2|desire[ _]601)/i', $useragent)) {
-            return $this->loader->load('0p4e2', $useragent);
-        }
-
-        if (preg_match('/desire[ _]728g/i', $useragent)) {
-            return $this->loader->load('desire 728g', $useragent);
-        }
-
-        if (preg_match('/desire[ _]700/i', $useragent)) {
-            return $this->loader->load('desire 700', $useragent);
-        }
-
-        if (preg_match('/desire[ _]626g/i', $useragent)) {
-            return $this->loader->load('desire 626g', $useragent);
-        }
-
-        if (preg_match('/desire[ _]626/i', $useragent)) {
-            return $this->loader->load('desire 626', $useragent);
-        }
-
-        if (preg_match('/desire[ _]620g/i', $useragent)) {
-            return $this->loader->load('desire 620g', $useragent);
-        }
-
-        if (preg_match('/desire[ _]610/i', $useragent)) {
-            return $this->loader->load('desire 610', $useragent);
-        }
-
-        if (preg_match('/desire[ _]600c/i', $useragent)) {
-            return $this->loader->load('desire 600c', $useragent);
-        }
-
-        if (preg_match('/desire[ _]600/i', $useragent)) {
-            return $this->loader->load('desire 600', $useragent);
-        }
-
-        if (preg_match('/desire[ _]530/i', $useragent)) {
-            return $this->loader->load('desire 530', $useragent);
-        }
-
-        if (preg_match('/desire[ _]526g/i', $useragent)) {
-            return $this->loader->load('desire 526g', $useragent);
-        }
-
-        if (preg_match('/desire[ _]516/i', $useragent)) {
-            return $this->loader->load('desire 516', $useragent);
-        }
-
-        if (preg_match('/desire[ _]510/i', $useragent)) {
-            return $this->loader->load('desire 510', $useragent);
-        }
-
-        if (preg_match('/desire[ _]500/i', $useragent)) {
-            return $this->loader->load('desire 500', $useragent);
-        }
-
-        if (preg_match('/desire[ _]400/i', $useragent)) {
-            return $this->loader->load('desire 400', $useragent);
-        }
-
-        if (preg_match('/desire[ _]320/i', $useragent)) {
-            return $this->loader->load('desire 320', $useragent);
-        }
-
-        if (preg_match('/desire[ _]310/i', $useragent)) {
-            return $this->loader->load('desire 310', $useragent);
-        }
-
-        if (preg_match('/desire[ _]300/i', $useragent)) {
-            return $this->loader->load('desire 300', $useragent);
-        }
-
-        if (preg_match('/desire[_ ]eye/i', $useragent)) {
-            return $this->loader->load('desire eye', $useragent);
-        }
-
-        if ($s->contains('desire_a8181', false)) {
-            return $this->loader->load('a8181', $useragent);
-        }
-
-        if ($s->contains('desire', false)) {
-            return $this->loader->load('desire', $useragent);
-        }
-
-        if (preg_match('/WildfireS\-orange\-LS|WildfireS\-LS/i', $useragent)) {
-            return $this->loader->load('wildfire s ls', $useragent);
-        }
-
-        if ($s->contains(' a315c ', false)) {
-            return $this->loader->load('a315c', $useragent);
-        }
-
-        if ($s->contains('Wildfire_A3333', false)) {
-            return $this->loader->load('a3333', $useragent);
-        }
-
-        if (preg_match('/(Wildfire S A510e|WildfireS_A510e)/i', $useragent)) {
-            return $this->loader->load('a510e', $useragent);
-        }
-
-        if ($s->contains('adr6230', false)) {
-            return $this->loader->load('adr6230', $useragent);
-        }
-
-        if (preg_match('/Wildfire[ |]S/i', $useragent)) {
-            return $this->loader->load('htc a510', $useragent);
-        }
-
-        if ($s->contains('wildfire', false)) {
-            return $this->loader->load('wildfire', $useragent);
-        }
-
-        if ($s->contains('vision', false)) {
-            return $this->loader->load('vision', $useragent);
-        }
-
-        if (preg_match('/velocity[ _]4g[ _]x710s/i', $useragent)) {
-            return $this->loader->load('x710s', $useragent);
-        }
-
-        if (preg_match('/velocity[ _]4g/i', $useragent)) {
-            return $this->loader->load('velocity 4g', $useragent);
-        }
-
-        if ($s->contains('velocity', false)) {
-            return $this->loader->load('velocity', $useragent);
-        }
-
-        if ($s->contains('touch_diamond2', false)) {
-            return $this->loader->load('touch diamond 2', $useragent);
-        }
-
-        if ($s->contains('tattoo', false)) {
-            return $this->loader->load('tattoo', $useragent);
-        }
-
-        if ($s->contains('touch_pro2_t7373', false)) {
-            return $this->loader->load('t7373', $useragent);
-        }
-
-        if ($s->contains('touch2', false)) {
-            return $this->loader->load('t3335', $useragent);
-        }
-
-        if ($s->contains('t329d', false)) {
-            return $this->loader->load('t329d', $useragent);
-        }
-
-        if ($s->contains('t328w', false)) {
-            return $this->loader->load('t328w', $useragent);
-        }
-
-        if ($s->contains('t328d', false)) {
-            return $this->loader->load('t328d', $useragent);
-        }
-
-        if ($s->contains('smart_f3188', false)) {
-            return $this->loader->load('smart f3188', $useragent);
-        }
-
-        if ($s->contains('shooteru', false)) {
-            return $this->loader->load('shooter u', $useragent);
-        }
-
-        if ($s->contains('salsa', false)) {
-            return $this->loader->load('salsa', $useragent);
-        }
-
-        if ($s->contains('butterfly_s_901s', false)) {
-            return $this->loader->load('s901s', $useragent);
-        }
-
-        if (preg_match('/(Incredible S|IncredibleS|S710e)/i', $useragent)) {
-            return $this->loader->load('s710e', $useragent);
-        }
-
-        if (preg_match('/(Rhyme|S510b)/i', $useragent)) {
-            return $this->loader->load('s510b', $useragent);
-        }
-
-        if ($s->contains('ruby', false)) {
-            return $this->loader->load('ruby', $useragent);
-        }
-
-        if ($s->contains('p3700', false)) {
-            return $this->loader->load('p3700', $useragent);
-        }
-
-        if ($s->contains('magic', false)) {
-            return $this->loader->load('magic', $useragent);
-        }
-
-        if ($s->contains('legend', false)) {
-            return $this->loader->load('legend', $useragent);
-        }
-
-        if (preg_match('/(Hero|a6288)/i', $useragent)) {
-            return $this->loader->load('hero', $useragent);
-        }
-
-        if ($s->contains('glacier', false)) {
-            return $this->loader->load('glacier', $useragent);
-        }
-
-        if ($s->contains('g21', false)) {
-            return $this->loader->load('g21', $useragent);
-        }
-
-        if (preg_match('/(Flyer[ |\_]P512)/i', $useragent)) {
-            return $this->loader->load('p512', $useragent);
-        }
-
-        if (preg_match('/(Flyer[ |\_]P510e)/i', $useragent)) {
-            return $this->loader->load('p510e', $useragent);
-        }
-
-        if ($s->contains('flyer', false)) {
-            return $this->loader->load('flyer', $useragent);
-        }
-
-        if (preg_match('/(pc36100|evo 4g|kingdom)/i', $useragent)) {
-            return $this->loader->load('pc36100', $useragent);
-        }
-
-        if ($s->contains('dream', false)) {
-            return $this->loader->load('dream', $useragent);
-        }
-
-        if ($s->contains('d820mu', false)) {
-            return $this->loader->load('d820mu', $useragent);
-        }
-
-        if ($s->contains('d820us', false)) {
-            return $this->loader->load('d820us', $useragent);
-        }
-
-        if ($s->contains('click', false)) {
-            return $this->loader->load('click', $useragent);
-        }
-
-        if ($s->contains('eris', false)) {
-            return $this->loader->load('eris', $useragent);
-        }
-
-        if ($s->contains(' c2', false)) {
-            return $this->loader->load('c2', $useragent);
-        }
-
-        if ($s->contains('bravo', false)) {
-            return $this->loader->load('bravo', $useragent);
-        }
-
-        if ($s->contains('butterfly', false)) {
-            return $this->loader->load('butterfly', $useragent);
-        }
-
-        if ($s->contains('adr6350', false)) {
-            return $this->loader->load('adr6350', $useragent);
-        }
-
-        if ($s->containsAny(['gratia', 'a6380'], false)) {
-            return $this->loader->load('a6380', $useragent);
-        }
-
-        if ($s->contains('a6366', false)) {
-            return $this->loader->load('a6366', $useragent);
-        }
-
-        if ($s->contains('a3335', false)) {
-            return $this->loader->load('a3335', $useragent);
-        }
-
-        if ($s->contains('chacha', false)) {
-            return $this->loader->load('a810e', $useragent);
-        }
-
-        if ($s->contains('a510a', false)) {
-            return $this->loader->load('a510a', $useragent);
-        }
-
-        if (preg_match('/(explorer|a310e)/i', $useragent)) {
-            return $this->loader->load('a310e', $useragent);
-        }
-
-        if ($s->contains('amaze', false)) {
-            return $this->loader->load('amaze 4g', $useragent);
-        }
-
-        if ($s->contains('htc7088', false)) {
-            return $this->loader->load('7088', $useragent);
-        }
-
-        if ($s->contains('HTC6990LVW', true)) {
-            return $this->loader->load('htc6990lvw', $useragent);
-        }
-
-        if ($s->contains('htc6500lvw', false)) {
-            return $this->loader->load('m7 (htc6500lvw)', $useragent);
-        }
-
-        if ($s->contains('htc6435lvw', false)) {
-            return $this->loader->load('htc6435lvw', $useragent);
-        }
-
-        if ($s->contains('htc 919d', false)) {
-            return $this->loader->load('919d', $useragent);
-        }
-
-        if ($s->contains('831c', false)) {
-            return $this->loader->load('831c', $useragent);
-        }
-
-        if ($s->contains('htc 809d', false)) {
-            return $this->loader->load('809d', $useragent);
-        }
-
-        if (preg_match('/htc[ ]?802t/i', $useragent)) {
-            return $this->loader->load('802t', $useragent);
-        }
-
-        if ($s->contains('htc 802d', false)) {
-            return $this->loader->load('802d', $useragent);
-        }
-
-        if ($s->contains('htc 606w', false)) {
-            return $this->loader->load('desire 606w', $useragent);
-        }
-
-        if ($s->contains('htc d516d', false)) {
-            return $this->loader->load('desire 516', $useragent);
-        }
-
-        if ($s->contains('vpa_touch', false)) {
-            return $this->loader->load('vpa touch', $useragent);
-        }
-
-        if ($s->contains('htc_vpacompactiv', false)) {
-            return $this->loader->load('vpa compact iv', $useragent);
         }
 
         return $this->loader->load('general htc device', $useragent);

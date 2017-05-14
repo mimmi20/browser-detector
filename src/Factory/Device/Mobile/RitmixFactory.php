@@ -24,6 +24,17 @@ use Stringy\Stringy;
 class RitmixFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'rmd-1040' => 'rmd-1040',
+        'rmd-1028' => 'rmd-1028',
+        'rmd-1025' => 'rmd-1025',
+        'rmd-757'  => 'rmd-757',
+        'rmd-753'  => 'rmd-753',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,24 +57,10 @@ class RitmixFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('RMD-1040', true)) {
-            return $this->loader->load('rmd-1040', $useragent);
-        }
-
-        if ($s->contains('RMD-1028', true)) {
-            return $this->loader->load('rmd-1028', $useragent);
-        }
-
-        if ($s->contains('RMD-1025', true)) {
-            return $this->loader->load('rmd-1025', $useragent);
-        }
-
-        if ($s->contains('RMD-757', true)) {
-            return $this->loader->load('rmd-757', $useragent);
-        }
-
-        if ($s->contains('RMD-753', true)) {
-            return $this->loader->load('rmd-753', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general ritmix device', $useragent);

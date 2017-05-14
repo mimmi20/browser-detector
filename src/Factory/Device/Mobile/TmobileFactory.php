@@ -24,6 +24,25 @@ use Stringy\Stringy;
 class TmobileFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'pulse'             => 'pulse',
+        'mytouch4g'         => 'mytouch4g',
+        'mytouch 3g slide'  => 'mytouch3g',
+        't-mobile_g2_touch' => 'g2 touch',
+        't-mobile g2'       => 'g2 touch',
+        't-mobile g1'       => 'g1',
+        'mda_vario_v'       => 'mda vario v',
+        'mda vario/3'       => 'mda vario iii',
+        'mda vario/2'       => 'mda vario ii',
+        'mda_compact_v'     => 'mda compact v',
+        'mda compact/3'     => 'mda compact iii',
+        'mda compact'       => 'mda compact',
+        'ameo'              => 'ameo',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,52 +65,10 @@ class TmobileFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('Pulse', true)) {
-            return $this->loader->load('pulse', $useragent);
-        }
-
-        if ($s->contains('mytouch4g', false)) {
-            return $this->loader->load('mytouch4g', $useragent);
-        }
-
-        if ($s->contains('mytouch 3g slide', false)) {
-            return $this->loader->load('mytouch3g', $useragent);
-        }
-
-        if ($s->containsAny(['t-mobile_g2_touch', 't-mobile g2'], false)) {
-            return $this->loader->load('g2 touch', $useragent);
-        }
-
-        if ($s->contains('t-mobile g1', false)) {
-            return $this->loader->load('g1', $useragent);
-        }
-
-        if ($s->contains('mda_vario_v', false)) {
-            return $this->loader->load('mda vario v', $useragent);
-        }
-
-        if ($s->contains('mda vario/3', false)) {
-            return $this->loader->load('mda vario iii', $useragent);
-        }
-
-        if ($s->contains('mda vario/2', false)) {
-            return $this->loader->load('mda vario ii', $useragent);
-        }
-
-        if ($s->contains('mda_compact_v', false)) {
-            return $this->loader->load('mda compact v', $useragent);
-        }
-
-        if ($s->contains('mda compact/3', false)) {
-            return $this->loader->load('mda compact iii', $useragent);
-        }
-
-        if ($s->contains('mda compact', false)) {
-            return $this->loader->load('mda compact', $useragent);
-        }
-
-        if ($s->contains('Ameo', true)) {
-            return $this->loader->load('ameo', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general t-mobile device', $useragent);

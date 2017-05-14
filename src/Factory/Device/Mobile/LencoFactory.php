@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class LencoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'cooltab-70' => 'cooltab-70',
+        'lencm900hz' => 'cm900hz',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class LencoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('cooltab-70', false)) {
-            return $this->loader->load('cooltab-70', $useragent);
-        }
-
-        if ($s->contains('lencm900hz', false)) {
-            return $this->loader->load('cm900hz', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general lenco device', $useragent);

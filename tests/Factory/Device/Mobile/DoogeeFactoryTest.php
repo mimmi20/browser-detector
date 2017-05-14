@@ -164,6 +164,26 @@ class DoogeeFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.4.2; VOYAGER2 DG310 Build/KOT49H)',
+                'DG310',
+                'Voyager 2',
+                'Doogee',
+                'Doogee',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.2.2; VOYAGER DG300 Build/JDQ39)',
+                'DG300',
+                'Voyager',
+                'Doogee',
+                'Doogee',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

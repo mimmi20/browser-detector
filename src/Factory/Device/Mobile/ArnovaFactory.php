@@ -24,6 +24,21 @@ use Stringy\Stringy;
 class ArnovaFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        '101 g4'   => '101 g4',
+        'an10dg3'  => '10d g3',
+        'an10bg3'  => 'an10bg3',
+        'an9g2i'   => '9 g2',
+        'an7fg3'   => '7f g3',
+        'an7dg3'   => '7d g3',
+        'an7cg2'   => '7c g2',
+        'an7bg2dt' => '7b g2 dt',
+        'archm901' => 'archm901',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,40 +61,10 @@ class ArnovaFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('101 g4', false)) {
-            return $this->loader->load('101 g4', $useragent);
-        }
-
-        if ($s->contains('AN10DG3', false)) {
-            return $this->loader->load('10d g3', $useragent);
-        }
-
-        if ($s->contains('AN10BG3', false)) {
-            return $this->loader->load('an10bg3', $useragent);
-        }
-
-        if ($s->contains('AN9G2I', false)) {
-            return $this->loader->load('9 g2', $useragent);
-        }
-
-        if ($s->contains('AN7FG3', false)) {
-            return $this->loader->load('7f g3', $useragent);
-        }
-
-        if ($s->contains('AN7DG3', false)) {
-            return $this->loader->load('7d g3', $useragent);
-        }
-
-        if ($s->contains('AN7CG2', false)) {
-            return $this->loader->load('7c g2', $useragent);
-        }
-
-        if ($s->contains('AN7BG2DT', false)) {
-            return $this->loader->load('7b g2 dt', $useragent);
-        }
-
-        if ($s->contains('ARCHM901', false)) {
-            return $this->loader->load('archm901', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general arnova device', $useragent);

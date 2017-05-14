@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class MicrosoftFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'windows nt 6.2' => 'windows rt tablet',
+        'windows nt 6.3' => 'windows rt tablet',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,8 +54,10 @@ class MicrosoftFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->containsAny(['Windows NT 6.2', 'Windows NT 6.3'], true)) {
-            return $this->loader->load('windows rt tablet', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general microsoft device', $useragent);

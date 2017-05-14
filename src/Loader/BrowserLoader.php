@@ -102,15 +102,12 @@ class BrowserLoader implements LoaderInterface
             $version      = $versionClass->detectVersion($useragent);
         }
 
-        $engine = (new EngineLoader($this->cache))->load($browser->engine, $useragent);
+        $company = (new CompanyLoader($this->cache))->load($browser->manufacturer);
+        $type    = (new TypeLoader($this->cache))->load($browser->type);
+        $bits    = (new BrowserBits($useragent))->getBits();
 
-        $browser = new Browser(
-            $browser->name,
-            (new CompanyLoader($this->cache))->load($browser->manufacturer),
-            $version,
-            (new TypeLoader($this->cache))->load($browser->type),
-            (new BrowserBits($useragent))->getBits()
-        );
+        $engine  = (new EngineLoader($this->cache))->load($browser->engine, $useragent);
+        $browser = new Browser($browser->name, $company, $version, $type, $bits);
 
         return [$browser, $engine];
     }

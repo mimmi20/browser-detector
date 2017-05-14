@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class PanasonicFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'p55' => 'panasonic p55',
+        'dl1' => 'dl1',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,8 +54,10 @@ class PanasonicFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('dL1', true)) {
-            return $this->loader->load('dl1', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general panasonic device', $useragent);

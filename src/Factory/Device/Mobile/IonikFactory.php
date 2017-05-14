@@ -24,6 +24,13 @@ use Stringy\Stringy;
 class IonikFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'tp10.1-1500dc' => 'tp10.1-1500dc',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,8 +53,10 @@ class IonikFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('tp10.1-1500dc', false)) {
-            return $this->loader->load('tp10.1-1500dc', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general i-onik device', $useragent);

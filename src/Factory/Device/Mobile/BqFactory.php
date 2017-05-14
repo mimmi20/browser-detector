@@ -24,6 +24,21 @@ use Stringy\Stringy;
 class BqFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'aquaris e5 hd' => 'aquaris e5 hd',
+        'aquaris m10'   => 'aquaris m10',
+        'aquaris m5'    => 'aquaris m5',
+        'aquaris m4.5'  => 'aquaris m4.5',
+        'aquaris_m4.5'  => 'aquaris m4.5',
+        'aquaris 5 hd'  => 'aquaris e5',
+        '7056g'         => '7056g',
+        'bqs-4007'      => 'bqs-4007',
+        'bqs-4005'      => 'bqs-4005',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,36 +61,10 @@ class BqFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('Aquaris E5 HD', true)) {
-            return $this->loader->load('aquaris e5 hd', $useragent);
-        }
-
-        if ($s->contains('Aquaris M10', true)) {
-            return $this->loader->load('aquaris m10', $useragent);
-        }
-
-        if ($s->contains('Aquaris M5', true)) {
-            return $this->loader->load('aquaris m5', $useragent);
-        }
-
-        if ($s->containsAny(['Aquaris M4.5', 'Aquaris_M4.5'], true)) {
-            return $this->loader->load('aquaris m4.5', $useragent);
-        }
-
-        if ($s->contains('Aquaris 5 HD', true)) {
-            return $this->loader->load('aquaris e5', $useragent);
-        }
-
-        if ($s->contains('7056G', true)) {
-            return $this->loader->load('7056g', $useragent);
-        }
-
-        if ($s->contains('BQS-4007', true)) {
-            return $this->loader->load('bqs-4007', $useragent);
-        }
-
-        if ($s->contains('BQS-4005', true)) {
-            return $this->loader->load('bqs-4005', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general bq device', $useragent);

@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class FeitengFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'gt-h9500' => 'gt-h9500',
+        'h7100'    => 'h7100',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class FeitengFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('GT-H9500', false)) {
-            return $this->loader->load('gt-h9500', $useragent);
-        }
-
-        if ($s->contains('H7100', false)) {
-            return $this->loader->load('h7100', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general feiteng device', $useragent);

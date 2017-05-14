@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class NuqleoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'zaffire 1010' => 'zaffire 1010',
+        'zaffire 785'  => 'zaffire 785',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class NuqleoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('zaffire 1010', false)) {
-            return $this->loader->load('zaffire 1010', $useragent);
-        }
-
-        if ($s->contains('zaffire 785', false)) {
-            return $this->loader->load('zaffire 785', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general nuqleo device', $useragent);

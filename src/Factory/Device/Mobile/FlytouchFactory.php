@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class FlytouchFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'flytouch 9' => 'flytouch 9',
+        'flytouch9'  => 'flytouch 9',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,8 +54,10 @@ class FlytouchFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->containsAny(['Flytouch 9', 'Flytouch9'], false)) {
-            return $this->loader->load('flytouch 9', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general flytouch device', $useragent);

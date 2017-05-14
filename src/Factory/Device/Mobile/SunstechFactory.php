@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class SunstechFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'tab917qc-8gb' => 'tab917qc 8gb',
+        'tab785dual'   => 'tab785 dual',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class SunstechFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('tab917qc-8gb', false)) {
-            return $this->loader->load('tab917qc 8gb', $useragent);
-        }
-
-        if ($s->contains('TAB785DUAL', true)) {
-            return $this->loader->load('tab785 dual', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general sunstech device', $useragent);

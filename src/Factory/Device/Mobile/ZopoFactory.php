@@ -24,6 +24,26 @@ use Stringy\Stringy;
 class ZopoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'zp980'  => 'zp980',
+        'zp950+' => 'zp950+',
+        'zp950'  => 'zp950',
+        'zp910'  => 'zp910',
+        'zp900h' => 'zp910',
+        'zp900'  => 'zp900',
+        'zp810'  => 'zp810',
+        'zp800h' => 'zp810',
+        'zp500+' => 'zp500+',
+        'zp500'  => 'zp500',
+        'zp300'  => 'zp300',
+        'zp200+' => 'zp200+',
+        'zp200'  => 'zp200',
+        'zp100'  => 'zp100',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,52 +66,10 @@ class ZopoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('ZP980', true)) {
-            return $this->loader->load('zp980', $useragent);
-        }
-
-        if ($s->contains('ZP950+', true)) {
-            return $this->loader->load('zp950+', $useragent);
-        }
-
-        if ($s->contains('ZP950', true)) {
-            return $this->loader->load('zp950', $useragent);
-        }
-
-        if ($s->containsAny(['ZP910', 'ZP900H'], true)) {
-            return $this->loader->load('zp910', $useragent);
-        }
-
-        if ($s->contains('ZP900', true)) {
-            return $this->loader->load('zp900', $useragent);
-        }
-
-        if ($s->containsAny(['ZP810', 'ZP800H'], true)) {
-            return $this->loader->load('zp810', $useragent);
-        }
-
-        if ($s->contains('ZP500+', true)) {
-            return $this->loader->load('zp500+', $useragent);
-        }
-
-        if ($s->contains('ZP500', true)) {
-            return $this->loader->load('zp500', $useragent);
-        }
-
-        if ($s->contains('ZP300', true)) {
-            return $this->loader->load('zp300', $useragent);
-        }
-
-        if ($s->contains('ZP200+', true)) {
-            return $this->loader->load('zp200+', $useragent);
-        }
-
-        if ($s->contains('ZP200', true)) {
-            return $this->loader->load('zp200', $useragent);
-        }
-
-        if ($s->contains('ZP100', true)) {
-            return $this->loader->load('zp100', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general zopo device', $useragent);

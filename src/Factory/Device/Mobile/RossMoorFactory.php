@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class RossMoorFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'rm-997' => 'ross&moor rm-997',
+        'rm-560' => 'rm-560',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class RossMoorFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('rm-997', false)) {
-            return $this->loader->load('ross&moor rm-997', $useragent);
-        }
-
-        if ($s->contains('rm-560', false)) {
-            return $this->loader->load('rm-560', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general ross&moor device', $useragent);

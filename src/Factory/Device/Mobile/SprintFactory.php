@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class SprintFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'ppc-6700'  => '6700',
+        'apa9292kt' => '9292',
+        'apa7373kt' => 'a7373',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class SprintFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('PPC-6700', true)) {
-            return $this->loader->load('6700', $useragent);
-        }
-
-        if ($s->contains('apa9292kt', false)) {
-            return $this->loader->load('9292', $useragent);
-        }
-
-        if ($s->contains('apa7373kt', false)) {
-            return $this->loader->load('a7373', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general sprint device', $useragent);

@@ -24,6 +24,16 @@ use Stringy\Stringy;
 class PandigitalFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'sprnova1'                             => 'supernova',
+        'opc1'                                 => 'novel',
+        'sl20_20101210_b_pd_inx7e_eng_6410pop' => 'novel',
+        'pandigital9hr'                        => '9hr',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +56,10 @@ class PandigitalFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('sprnova1', false)) {
-            return $this->loader->load('supernova', $useragent);
-        }
-
-        if ($s->containsAny(['opc1', 'SL20_20101210_B_PD_INX7E_ENG_6410POP'], true)) {
-            return $this->loader->load('novel', $useragent);
-        }
-
-        if ($s->contains('pandigital9hr', false)) {
-            return $this->loader->load('9hr', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general pandigital device', $useragent);

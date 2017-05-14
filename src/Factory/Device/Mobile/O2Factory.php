@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class O2Factory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'xda_orbit_2'   => 'xda orbit ii',
+        'xda_diamond_2' => 'xda_diamond_2',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class O2Factory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('xda_orbit_2', false)) {
-            return $this->loader->load('xda orbit ii', $useragent);
-        }
-
-        if ($s->contains('xda_diamond_2', false)) {
-            return $this->loader->load('xda_diamond_2', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general o2 device', $useragent);

@@ -24,6 +24,13 @@ use Stringy\Stringy;
 class GeniatechFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'mx enjoy tv box' => 'mx enjoy tv box',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,8 +53,10 @@ class GeniatechFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('MX Enjoy TV BOX', true)) {
-            return $this->loader->load('mx enjoy tv box', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general geniatech device', $useragent);

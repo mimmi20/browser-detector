@@ -24,6 +24,18 @@ use Stringy\Stringy;
 class CubotFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        's208'      => 's208',
+        'p9'        => 'cubot u30gt',
+        'mt6572_td' => 'gt 95 3g',
+        'gt99'      => 'gt99',
+        'c11'       => 'c11',
+        'c7'        => 'c7',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,28 +58,10 @@ class CubotFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('S208', true)) {
-            return $this->loader->load('s208', $useragent);
-        }
-
-        if ($s->contains('P9', false)) {
-            return $this->loader->load('cubot u30gt', $useragent);
-        }
-
-        if ($s->contains('MT6572_TD', false)) {
-            return $this->loader->load('gt 95 3g', $useragent);
-        }
-
-        if ($s->contains('GT99', false)) {
-            return $this->loader->load('gt99', $useragent);
-        }
-
-        if ($s->contains('C11', false)) {
-            return $this->loader->load('c11', $useragent);
-        }
-
-        if ($s->contains('C7', false)) {
-            return $this->loader->load('c7', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general cubot device', $useragent);

@@ -494,6 +494,16 @@ class BlackBerryFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'clickwheel',
             ],
+            [
+                'Mozilla/5.0 (BlackBerry; U; BlackBerry 9930; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.755 Mobile Safari/534.11+',
+                'BlackBerry 9930',
+                'BlackBerry Bold Touch 9930',
+                'Research In Motion Limited',
+                'RIM',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
         ];
     }
 }

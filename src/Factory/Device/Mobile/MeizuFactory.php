@@ -24,6 +24,16 @@ use Stringy\Stringy;
 class MeizuFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'mz-mx5'   => 'mx5',
+        'm040'     => 'm040',
+        'meizu_m9' => 'meizu m9',
+        ' m9 '     => 'meizu m9',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +56,10 @@ class MeizuFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('mz-mx5', false)) {
-            return $this->loader->load('mx5', $useragent);
-        }
-
-        if ($s->contains('m040', false)) {
-            return $this->loader->load('m040', $useragent);
-        }
-
-        if ($s->containsAny(['meizu_m9', ' m9 '], false)) {
-            return $this->loader->load('meizu m9', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general meizu device', $useragent);

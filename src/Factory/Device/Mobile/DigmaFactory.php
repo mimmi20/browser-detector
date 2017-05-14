@@ -24,6 +24,20 @@ use Stringy\Stringy;
 class DigmaFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'ps1043mg' => 'ps1043mg',
+        'tt7026mw' => 'tt7026mw',
+        'idxd7'    => 'idxd7 3g',
+        'idxd4'    => 'idxd4 3g',
+        'idsd7'    => 'idsd7 3g',
+        'idnd7'    => 'idnd7',
+        'idjd7'    => 'idjd7',
+        'idrq10'   => 'idrq10 3g',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,36 +60,10 @@ class DigmaFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('PS1043MG', true)) {
-            return $this->loader->load('ps1043mg', $useragent);
-        }
-
-        if ($s->contains('TT7026MW', true)) {
-            return $this->loader->load('tt7026mw', $useragent);
-        }
-
-        if ($s->contains('iDxD7', true)) {
-            return $this->loader->load('idxd7 3g', $useragent);
-        }
-
-        if ($s->contains('iDxD4', true)) {
-            return $this->loader->load('idxd4 3g', $useragent);
-        }
-
-        if ($s->contains('iDsD7', true)) {
-            return $this->loader->load('idsd7 3g', $useragent);
-        }
-
-        if ($s->contains('iDnD7', true)) {
-            return $this->loader->load('idnd7', $useragent);
-        }
-
-        if ($s->contains('iDjD7', true)) {
-            return $this->loader->load('idjd7', $useragent);
-        }
-
-        if ($s->contains('iDrQ10', true)) {
-            return $this->loader->load('idrq10 3g', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general digma device', $useragent);

@@ -494,6 +494,26 @@ class AsusFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; ASUS_T00Q Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+                'T00Q',
+                'Zenfone 4 A450CG',
+                'Asus',
+                'Asus',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; K019 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.132 Safari/537.36',
+                'K019',
+                'Fonepad 7 FE375CG',
+                'Asus',
+                'Asus',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class OystersFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'pacific800i' => 'pacific 800i',
+        'pacific 800' => 'pacific 800',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class OystersFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('pacific800i', false)) {
-            return $this->loader->load('pacific 800i', $useragent);
-        }
-
-        if ($s->contains('pacific 800', false)) {
-            return $this->loader->load('pacific 800', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general oysters device', $useragent);

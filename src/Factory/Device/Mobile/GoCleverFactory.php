@@ -24,6 +24,21 @@ use Stringy\Stringy;
 class GoCleverFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'tq700'            => 'tq700',
+        'terra_101'        => 'a1021',
+        'insignia_785_pro' => 'insignia 785 pro',
+        'aries_785'        => 'aries 785',
+        'aries_101'        => 'aries 101',
+        'orion7o'          => 'orion 7o',
+        'quantum 4'        => 'quantum 4',
+        'quantum_700m'     => 'quantum 700m',
+        'tab a93.2'        => 'a93.2',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,40 +61,10 @@ class GoCleverFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('TQ700', true)) {
-            return $this->loader->load('tq700', $useragent);
-        }
-
-        if ($s->contains('TERRA_101', true)) {
-            return $this->loader->load('a1021', $useragent);
-        }
-
-        if ($s->contains('INSIGNIA_785_PRO', true)) {
-            return $this->loader->load('insignia 785 pro', $useragent);
-        }
-
-        if ($s->contains('ARIES_785', true)) {
-            return $this->loader->load('aries 785', $useragent);
-        }
-
-        if ($s->contains('ARIES_101', true)) {
-            return $this->loader->load('aries 101', $useragent);
-        }
-
-        if ($s->contains('ORION7o', true)) {
-            return $this->loader->load('orion 7o', $useragent);
-        }
-
-        if ($s->contains('QUANTUM 4', true)) {
-            return $this->loader->load('quantum 4', $useragent);
-        }
-
-        if ($s->contains('QUANTUM_700m', true)) {
-            return $this->loader->load('quantum 700m', $useragent);
-        }
-
-        if ($s->contains('TAB A93.2', true)) {
-            return $this->loader->load('a93.2', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general goclever device', $useragent);

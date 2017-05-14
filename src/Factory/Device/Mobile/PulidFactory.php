@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class PulidFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'f15' => 'f15',
+        'f11' => 'f11',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class PulidFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('F15', true)) {
-            return $this->loader->load('f15', $useragent);
-        }
-
-        if ($s->contains('F11', true)) {
-            return $this->loader->load('f11', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general pulid device', $useragent);

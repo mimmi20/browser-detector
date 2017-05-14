@@ -24,6 +24,17 @@ use Stringy\Stringy;
 class OneplusFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'a3000' => 'a3000',
+        'a2001' => 'a2001',
+        'a2003' => 'a2003',
+        'a2005' => 'a2005',
+        'e1003' => 'e1003',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,24 +57,10 @@ class OneplusFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('A3000', true)) {
-            return $this->loader->load('a3000', $useragent);
-        }
-
-        if ($s->contains('A2001', true)) {
-            return $this->loader->load('a2001', $useragent);
-        }
-
-        if ($s->contains('A2003', true)) {
-            return $this->loader->load('a2003', $useragent);
-        }
-
-        if ($s->contains('A2005', true)) {
-            return $this->loader->load('a2005', $useragent);
-        }
-
-        if ($s->contains('E1003', true)) {
-            return $this->loader->load('e1003', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general oneplus device', $useragent);

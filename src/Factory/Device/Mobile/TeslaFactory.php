@@ -24,6 +24,16 @@ use Stringy\Stringy;
 class TeslaFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'ttl7'         => 'ttl7',
+        'tth7'         => 'tth7',
+        'tablet_785'   => 'tablet 785',
+        'tablet_l7_3g' => 'tablet l7 3g',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,20 +56,10 @@ class TeslaFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('TTL7', true)) {
-            return $this->loader->load('ttl7', $useragent);
-        }
-
-        if ($s->contains('TTH7', true)) {
-            return $this->loader->load('tth7', $useragent);
-        }
-
-        if ($s->contains('Tablet_785', true)) {
-            return $this->loader->load('tablet 785', $useragent);
-        }
-
-        if ($s->contains('Tablet_L7_3G', true)) {
-            return $this->loader->load('tablet l7 3g', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general tesla device', $useragent);

@@ -24,6 +24,20 @@ use Stringy\Stringy;
 class XiangheFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'iphone 6c' => 'iphone 6c',
+        'iphone6c'  => 'iphone 6c',
+        'iphone 5c' => 'iphone 5c',
+        'iphone5c'  => 'iphone 5c',
+        'iphone 5'  => 'iphone 5',
+        'iphone_5'  => 'iphone 5',
+        'iphone5'   => 'iphone 5',
+        'iphone'    => 'xianghe iphone',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,20 +60,10 @@ class XiangheFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->containsAny(['iphone 6c', 'iphone6c'], false)) {
-            return $this->loader->load('iphone 6c', $useragent);
-        }
-
-        if ($s->containsAny(['iphone 5c', 'iphone5c'], false)) {
-            return $this->loader->load('iphone 5c', $useragent);
-        }
-
-        if ($s->containsAny(['iphone 5', 'iphone5', 'iphone_5'], false)) {
-            return $this->loader->load('iphone 5', $useragent);
-        }
-
-        if ($s->contains('iphone', false)) {
-            return $this->loader->load('xianghe iphone', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general xianghe device', $useragent);

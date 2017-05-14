@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class LogicpdFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'zoom2'     => 'zoom2',
+        'nookcolor' => 'zoom2',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,8 +54,10 @@ class LogicpdFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->containsAny(['zoom2', 'nookcolor'], false)) {
-            return $this->loader->load('zoom2', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general logicpd device', $useragent);

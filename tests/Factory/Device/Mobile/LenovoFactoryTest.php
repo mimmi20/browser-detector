@@ -984,6 +984,26 @@ class LenovoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; Lenovo P70-A/S100) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+                'P70-A',
+                'P70-A',
+                'Lenovo',
+                'Lenovo',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; Lenovo P70/S100) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+                'P70',
+                'P70',
+                'Lenovo',
+                'Lenovo',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

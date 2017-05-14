@@ -32,26 +32,25 @@ class AndroidOs implements VersionCacheFactoryInterface
             return VersionFactory::set('2.1.1');
         }
 
-        $detector = VersionFactory::detectVersion(
-            $useragent,
-            [
-                'android android',
-                'android androidhouse team',
-                'android wildpuzzlerom v8 froyo',
-                'juc ?\(linux;',
-                'linux; googletv',
-                'android os',
-                'android;',
-                'android_',
-                'android ',
-                'android\/',
-                'android',
-                'adr ',
-            ]
-        );
+        $search = [
+            'android android',
+            'android androidhouse team',
+            'android wildpuzzlerom v8 froyo',
+            'juc ?\(linux;',
+            'linux; googletv',
+            'android os',
+            'android;',
+            'android_',
+            'android ',
+            'android\/',
+            'android',
+            'adr ',
+        ];
 
-        if ('0.0.0' !== $detector->getVersion()) {
-            return $detector;
+        $detectedVersion = VersionFactory::detectVersion($useragent, $search);
+
+        if ('0.0.0' !== $detectedVersion->getVersion()) {
+            return $detectedVersion;
         }
 
         if (preg_match('/Linux; (\d+[\d\.]+)/', $useragent, $matches)) {

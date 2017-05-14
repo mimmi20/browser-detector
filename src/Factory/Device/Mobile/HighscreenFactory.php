@@ -24,6 +24,18 @@ use Stringy\Stringy;
 class HighscreenFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'zera f'     => 'zera f',
+        'zera_f'     => 'zera f',
+        'prime s'    => 'omega prime s',
+        'ice2'       => 'ice 2',
+        'explosion'  => 'explosion',
+        'boost iise' => 'boost ii se',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,24 +58,10 @@ class HighscreenFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->containsAny(['Zera F', 'Zera_F'], true)) {
-            return $this->loader->load('zera f', $useragent);
-        }
-
-        if ($s->contains('prime s', false)) {
-            return $this->loader->load('omega prime s', $useragent);
-        }
-
-        if ($s->contains('ice2', false)) {
-            return $this->loader->load('ice 2', $useragent);
-        }
-
-        if ($s->contains('explosion', false)) {
-            return $this->loader->load('explosion', $useragent);
-        }
-
-        if ($s->contains('boost iise', false)) {
-            return $this->loader->load('boost ii se', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general highscreen device', $useragent);

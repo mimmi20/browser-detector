@@ -24,6 +24,51 @@ use Stringy\Stringy;
 class ArchosFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'a101it'                => 'a101it',
+        'a80ksc'                => 'a80ksc',
+        'a70s'                  => 'a70s',
+        'a70hb'                 => 'a70hb',
+        'a70h2'                 => 'a70 h2',
+        'a70cht'                => 'a70cht',
+        'a70bht'                => 'a70bht',
+        'a35dm'                 => 'a35dm',
+        'a7eb'                  => '70c',
+        '101 xs 2'              => '101 xs 2',
+        '121 neon'              => '121 neon',
+        '101d neon'             => '101d neon',
+        '101 neon'              => '101 neon',
+        '101 copper'            => '101 copper',
+        '101g10'                => '101g10',
+        '101g9'                 => '101 g9',
+        '101b'                  => '101b',
+        '97 xenon'              => '97 xenon',
+        '97 titaniumhd'         => '97 titanium hd',
+        '97 neon'               => '97 neon',
+        '97 carbon'             => '97 carbon',
+        '80xsk'                 => '80xsk',
+        '80 xenon'              => '80 xenon',
+        '80g9'                  => '80 g9',
+        '80 cobalt'             => '80 cobalt',
+        '79 xenon'              => '79 xenon',
+        '70 xenon'              => '70 xenon',
+        '70it2'                 => '70it2',
+        '53 platinum'           => '53 platinum',
+        '50 titanium'           => '50 titanium',
+        '50b platinum'          => '50b platinum',
+        '50 platinum'           => '50 platinum',
+        '50 oxygen plus'        => '50 oxygen plus',
+        '50c oxygen'            => '50c oxygen',
+        '40 cesium'             => '40 cesium',
+        '40b titanium surround' => '40b titanium surround',
+        'archos5'               => '5',
+        'familypad 2'           => 'family pad 2',
+        'bush windows phone'    => 'eluma',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,160 +91,10 @@ class ArchosFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('A101IT', false)) {
-            return $this->loader->load('a101it', $useragent);
-        }
-
-        if ($s->contains('A80KSC', false)) {
-            return $this->loader->load('a80ksc', $useragent);
-        }
-
-        if ($s->contains('a70s', false)) {
-            return $this->loader->load('a70s', $useragent);
-        }
-
-        if ($s->contains('a70hb', false)) {
-            return $this->loader->load('a70hb', $useragent);
-        }
-
-        if ($s->contains('a70h2', false)) {
-            return $this->loader->load('a70 h2', $useragent);
-        }
-
-        if ($s->contains('a70cht', false)) {
-            return $this->loader->load('a70cht', $useragent);
-        }
-
-        if ($s->contains('a70bht', false)) {
-            return $this->loader->load('a70bht', $useragent);
-        }
-
-        if ($s->contains('a35dm', false)) {
-            return $this->loader->load('a35dm', $useragent);
-        }
-
-        if ($s->contains('a7eb', false)) {
-            return $this->loader->load('70c', $useragent);
-        }
-
-        if ($s->contains('101 xs 2', false)) {
-            return $this->loader->load('101 xs 2', $useragent);
-        }
-
-        if ($s->contains('121 neon', false)) {
-            return $this->loader->load('121 neon', $useragent);
-        }
-
-        if ($s->contains('101d neon', false)) {
-            return $this->loader->load('101d neon', $useragent);
-        }
-
-        if ($s->contains('101 neon', false)) {
-            return $this->loader->load('101 neon', $useragent);
-        }
-
-        if ($s->contains('101 copper', false)) {
-            return $this->loader->load('101 copper', $useragent);
-        }
-
-        if ($s->contains('101g10', false)) {
-            return $this->loader->load('101g10', $useragent);
-        }
-
-        if ($s->contains('101g9', false)) {
-            return $this->loader->load('101 g9', $useragent);
-        }
-
-        if ($s->contains('101b', false)) {
-            return $this->loader->load('101b', $useragent);
-        }
-
-        if ($s->contains('97 xenon', false)) {
-            return $this->loader->load('97 xenon', $useragent);
-        }
-
-        if ($s->contains('97 TITANIUMHD', false)) {
-            return $this->loader->load('97 titanium hd', $useragent);
-        }
-
-        if ($s->contains('97 neon', false)) {
-            return $this->loader->load('97 neon', $useragent);
-        }
-
-        if ($s->contains('97 carbon', false)) {
-            return $this->loader->load('97 carbon', $useragent);
-        }
-
-        if ($s->contains('80xsk', false)) {
-            return $this->loader->load('80xsk', $useragent);
-        }
-
-        if ($s->contains('80 xenon', false)) {
-            return $this->loader->load('80 xenon', $useragent);
-        }
-
-        if ($s->contains('80g9', false)) {
-            return $this->loader->load('80 g9', $useragent);
-        }
-
-        if ($s->contains('80 cobalt', false)) {
-            return $this->loader->load('80 cobalt', $useragent);
-        }
-
-        if ($s->contains('79 xenon', false)) {
-            return $this->loader->load('79 xenon', $useragent);
-        }
-
-        if ($s->contains('70 xenon', false)) {
-            return $this->loader->load('70 xenon', $useragent);
-        }
-
-        if ($s->contains('70it2', false)) {
-            return $this->loader->load('70it2', $useragent);
-        }
-
-        if ($s->contains('53 platinum', false)) {
-            return $this->loader->load('53 platinum', $useragent);
-        }
-
-        if ($s->contains('50 titanium', false)) {
-            return $this->loader->load('50 titanium', $useragent);
-        }
-
-        if ($s->contains('50b platinum', false)) {
-            return $this->loader->load('50b platinum', $useragent);
-        }
-
-        if ($s->contains('50 platinum', false)) {
-            return $this->loader->load('50 platinum', $useragent);
-        }
-
-        if ($s->contains('50 oxygen plus', false)) {
-            return $this->loader->load('50 oxygen plus', $useragent);
-        }
-
-        if ($s->contains('50c oxygen', false)) {
-            return $this->loader->load('50c oxygen', $useragent);
-        }
-
-        if ($s->contains('40 cesium', false)) {
-            return $this->loader->load('40 cesium', $useragent);
-        }
-
-        if ($s->contains('40b titanium surround', false)) {
-            return $this->loader->load('40b titanium surround', $useragent);
-        }
-
-        if ($s->contains('archos5', false)) {
-            return $this->loader->load('5', $useragent);
-        }
-
-        if ($s->contains('FAMILYPAD 2', false)) {
-            return $this->loader->load('family pad 2', $useragent);
-        }
-
-        if ($s->contains('bush windows phone', false)) {
-            return $this->loader->load('eluma', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general archos device', $useragent);

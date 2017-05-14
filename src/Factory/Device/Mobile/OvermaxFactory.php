@@ -24,6 +24,16 @@ use Stringy\Stringy;
 class OvermaxFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'steelcore-b'   => 'steelcore',
+        'solution 10ii' => 'solution 10 ii 3g',
+        'solution 7iii' => 'solution 7 iii',
+        'quattor 10+'   => 'quattor 10+',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,20 +56,10 @@ class OvermaxFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('SteelCore-B', true)) {
-            return $this->loader->load('steelcore', $useragent);
-        }
-
-        if ($s->contains('Solution 10II', true)) {
-            return $this->loader->load('solution 10 ii 3g', $useragent);
-        }
-
-        if ($s->contains('Solution 7III', true)) {
-            return $this->loader->load('solution 7 iii', $useragent);
-        }
-
-        if ($s->contains('Quattor 10+', true)) {
-            return $this->loader->load('quattor 10+', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general overmax device', $useragent);

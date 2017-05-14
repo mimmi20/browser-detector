@@ -24,6 +24,20 @@ use Stringy\Stringy;
 class TechnisatFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'technipad_10-3g' => 'technipad 10 3g',
+        'technipad 10-3g' => 'technipad 10 3g',
+        'technipad_10'    => 'technipad 10',
+        'technipad 10'    => 'technipad 10',
+        'aqipad_7g'       => 'aqiston aqipad 7g',
+        'aqipad 7g'       => 'aqiston aqipad 7g',
+        'techniphone_5'   => 'techniphone 5',
+        'techniphone 5'   => 'techniphone 5',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,20 +60,10 @@ class TechnisatFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->containsAny(['TechniPad_10-3G', 'TechniPad 10-3G'], true)) {
-            return $this->loader->load('technipad 10 3g', $useragent);
-        }
-
-        if ($s->containsAny(['TechniPad_10', 'TechniPad 10'], true)) {
-            return $this->loader->load('technipad 10', $useragent);
-        }
-
-        if ($s->containsAny(['AQIPAD_7G', 'AQIPAD 7G'], true)) {
-            return $this->loader->load('aqiston aqipad 7g', $useragent);
-        }
-
-        if ($s->containsAny(['TechniPhone_5', 'TechniPhone 5'], true)) {
-            return $this->loader->load('techniphone 5', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general technisat device', $useragent);

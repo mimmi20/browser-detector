@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class WonderMediaFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'wm8850' => 'prizm wm8850',
+        'wm8650' => 'prizm wm8650',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class WonderMediaFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('WM8850', true)) {
-            return $this->loader->load('prizm wm8850', $useragent);
-        }
-
-        if ($s->contains('WM8650', true)) {
-            return $this->loader->load('prizm wm8650', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general wondermedia device', $useragent);
