@@ -27,7 +27,8 @@ class GigasetFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'qv830' => 'gigaset qv830',
+        'qv1030' => 'gigaset qv1030',
+        'qv830'  => 'gigaset qv830',
     ];
 
     /**

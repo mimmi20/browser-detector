@@ -804,6 +804,16 @@ class AlcatelFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.6; fr-fr; ALCATEL ONE TOUCH 4010D Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'OT-4010D',
+                'One Touch T\'Pop',
+                'Alcatel',
+                'Alcatel',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

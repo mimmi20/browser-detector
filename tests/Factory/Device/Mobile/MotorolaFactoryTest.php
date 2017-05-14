@@ -807,7 +807,17 @@ class MotorolaFactoryTest extends \PHPUnit\Framework\TestCase
             [
                 'Mozilla/5.0 (Linux; Android 4.4.4; XT1025 Build/KXC21.5-40) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
                 'XT1025',
-                'Moto E Dual Sim',
+                'Moto E Dual SIM',
+                'Motorola',
+                'Motorola',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; XT1022 Build/KXC21.5-40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
+                'XT1022',
+                'Moto E Dual SIM',
                 'Motorola',
                 'Motorola',
                 'Smartphone',

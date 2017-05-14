@@ -31,6 +31,7 @@ class BlackBerryFactory implements Factory\FactoryInterface
         'bb10; touch' => 'z10',
         'playbook'    => 'playbook',
         '9981'        => 'blackberry 9981',
+        '9930'        => 'blackberry 9930',
         '9900'        => 'blackberry bold touch 9900',
         '9860'        => 'blackberry torch 9860',
         '9810'        => 'blackberry 9810',

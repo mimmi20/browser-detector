@@ -24,6 +24,13 @@ use Stringy\Stringy;
 class VelocityMicroFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        't408' => 'cruz',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,8 +53,10 @@ class VelocityMicroFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('T408', true)) {
-            return $this->loader->load('cruz', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general velocity micro device', $useragent);

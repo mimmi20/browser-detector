@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class YuandaoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'n90fhdrk'       => 'yuandao n90fhdrk',
+        'n90 dual core2' => 'n90 dual core2',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class YuandaoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('N90FHDRK', true)) {
-            return $this->loader->load('yuandao n90fhdrk', $useragent);
-        }
-
-        if ($s->contains('n90 dual core2', false)) {
-            return $this->loader->load('n90 dual core2', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general yuandao device', $useragent);

@@ -24,6 +24,18 @@ use Stringy\Stringy;
 class ViewSonicFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'viewpad 10s'    => 'viewpad 10s',
+        'viewpad 10e'    => 'viewpad 10e',
+        'viewpad7e'      => 'viewpad 7e',
+        'viewpad7'       => 'viewpad7',
+        'viewpad-7'      => 'viewpad7',
+        'viewsonic-v350' => 'v350',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,24 +58,10 @@ class ViewSonicFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('viewpad 10s', false)) {
-            return $this->loader->load('viewpad 10s', $useragent);
-        }
-
-        if ($s->contains('viewpad 10e', false)) {
-            return $this->loader->load('viewpad 10e', $useragent);
-        }
-
-        if ($s->contains('viewpad7e', false)) {
-            return $this->loader->load('viewpad 7e', $useragent);
-        }
-
-        if ($s->containsAny(['viewpad7', 'viewpad-7'], false)) {
-            return $this->loader->load('viewpad7', $useragent);
-        }
-
-        if ($s->contains('viewsonic-v350', false)) {
-            return $this->loader->load('v350', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general viewsonic device', $useragent);

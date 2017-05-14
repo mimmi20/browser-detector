@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\GigasetFactory;
+use BrowserDetector\Factory\Device\Mobile\SfrFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class GigasetFactoryTest extends \PHPUnit\Framework\TestCase
+class SfrFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\GigasetFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\SfrFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class GigasetFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new GigasetFactory($loader);
+        $this->object = new SfrFactory($loader);
     }
 
     /**
@@ -106,31 +106,21 @@ class GigasetFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Gigaset Device',
-                'general Gigaset Device',
-                'Gigaset Communications GmbH',
-                'Gigaset',
-                'Tablet',
+                'general SFR Device',
+                'general SFR Device',
+                'SOCIETE FRANCAISE DU RADIOTELEPHONE',
+                'SFR',
+                'Smartphone',
                 true,
                 'touchscreen',
             ],
             [
-                'Dalvik/1.6.0 (Linux; U; Android 4.2.2; Gigaset QV830 Build/JDQ39)',
-                'QV830',
-                'QV830',
-                'Gigaset Communications GmbH',
-                'Gigaset',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Dalvik/1.6.0 (Linux; U; Android 4.2.2; Gigaset QV1030 Build/JDQ39)',
-                'QV1030',
-                'QV1030',
-                'Gigaset Communications GmbH',
-                'Gigaset',
-                'Tablet',
+                'Mozilla/5.0 (Linux; U; Android 4.2.2;fr-fr; STARTRAIL4 Build/BQ_ZTEV1.0.0B07) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'StarTrail 4',
+                'StarTrail 4',
+                'SOCIETE FRANCAISE DU RADIOTELEPHONE',
+                'SFR',
+                'Smartphone',
                 true,
                 'touchscreen',
             ],

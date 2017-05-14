@@ -24,6 +24,22 @@ use Stringy\Stringy;
 class ToshibaFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'toshiba/tg01'      => 'tg01',
+        'toshiba-tg01'      => 'tg01',
+        'folio_and_a'       => 'folio 100',
+        'toshiba_ac_and_az' => 'folio 100',
+        'folio100'          => 'folio 100',
+        'at300se'           => 'at300se',
+        'at300'             => 'at300',
+        'at200'             => 'at200',
+        'at100'             => 'at100',
+        'at10-a'            => 'at10-a',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,32 +62,10 @@ class ToshibaFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->containsAny(['Toshiba/TG01', 'Toshiba-TG01'], true)) {
-            return $this->loader->load('tg01', $useragent);
-        }
-
-        if ($s->containsAny(['FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100'], false)) {
-            return $this->loader->load('folio 100', $useragent);
-        }
-
-        if ($s->contains('AT300SE', true)) {
-            return $this->loader->load('at300se', $useragent);
-        }
-
-        if ($s->contains('AT300', true)) {
-            return $this->loader->load('at300', $useragent);
-        }
-
-        if ($s->contains('AT200', true)) {
-            return $this->loader->load('at200', $useragent);
-        }
-
-        if ($s->contains('AT100', true)) {
-            return $this->loader->load('at100', $useragent);
-        }
-
-        if ($s->contains('AT10-A', true)) {
-            return $this->loader->load('at10-a', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general toshiba device', $useragent);

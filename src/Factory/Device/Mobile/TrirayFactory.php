@@ -24,6 +24,13 @@ use Stringy\Stringy;
 class TrirayFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'x8+' => 'x8+',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,8 +53,10 @@ class TrirayFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('X8+', false)) {
-            return $this->loader->load('x8+', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general tri-ray device', $useragent);

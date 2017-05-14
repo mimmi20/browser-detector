@@ -24,6 +24,26 @@ use Stringy\Stringy;
 class TrekStorFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'surftab duo w1 10.1' => 'surftab duo w1 10.1',
+        'wp 4.7'              => 'winphone 4.7 hd',
+        'vt10416-2'           => 'vt10416-2',
+        'vt10416-1'           => 'vt10416-1',
+        'st701041'            => 'st701041',
+        'surftab_7.0'         => 'st701041',
+        'st10216-2'           => 'st10216-2',
+        'st80216'             => 'st80216',
+        'st80208'             => 'st80208',
+        'st70104'             => 'st70104',
+        'st10416-1'           => 'st10416-1',
+        'st10216-1'           => 'st10216-1',
+        'trekstor_liro_color' => 'liro color',
+        'breeze 10.1 quad'    => 'surftab breeze 10.1 quad',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,56 +66,10 @@ class TrekStorFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('SurfTab duo W1 10.1', true)) {
-            return $this->loader->load('surftab duo w1 10.1', $useragent);
-        }
-
-        if ($s->contains('WP 4.7', true)) {
-            return $this->loader->load('winphone 4.7 hd', $useragent);
-        }
-
-        if ($s->contains('VT10416-2', true)) {
-            return $this->loader->load('vt10416-2', $useragent);
-        }
-
-        if ($s->contains('VT10416-1', true)) {
-            return $this->loader->load('vt10416-1', $useragent);
-        }
-
-        if ($s->containsAny(['ST701041', 'SurfTab_7.0'], true)) {
-            return $this->loader->load('st701041', $useragent);
-        }
-
-        if ($s->contains('ST10216-2', true)) {
-            return $this->loader->load('st10216-2', $useragent);
-        }
-
-        if ($s->contains('ST80216', true)) {
-            return $this->loader->load('st80216', $useragent);
-        }
-
-        if ($s->contains('ST80208', true)) {
-            return $this->loader->load('st80208', $useragent);
-        }
-
-        if ($s->contains('ST70104', true)) {
-            return $this->loader->load('st70104', $useragent);
-        }
-
-        if ($s->contains('ST10416-1', true)) {
-            return $this->loader->load('st10416-1', $useragent);
-        }
-
-        if ($s->contains('ST10216-1', true)) {
-            return $this->loader->load('st10216-1', $useragent);
-        }
-
-        if ($s->contains('trekstor_liro_color', false)) {
-            return $this->loader->load('liro color', $useragent);
-        }
-
-        if ($s->contains('breeze 10.1 quad', true)) {
-            return $this->loader->load('surftab breeze 10.1 quad', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general trekstor device', $useragent);

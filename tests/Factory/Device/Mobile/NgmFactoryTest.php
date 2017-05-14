@@ -134,6 +134,16 @@ class NgmFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 null,
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; it-it; Forward_Art Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'Forward Art',
+                'Forward Art',
+                'NGM',
+                'NGM',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

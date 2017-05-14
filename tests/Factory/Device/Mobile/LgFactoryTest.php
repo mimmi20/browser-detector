@@ -1514,6 +1514,26 @@ class LgFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; LG-D405 Build/KOT49I.A1400215746) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.94 Mobile Safari/537.36',
+                'D405',
+                'Optimus L90',
+                'LG',
+                'LG',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; VS810PP Build/KOT49I.VS810PP2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+                'VS810PP',
+                'Transpyre (Verizon)',
+                'LG',
+                'LG',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

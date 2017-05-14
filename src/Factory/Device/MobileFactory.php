@@ -200,6 +200,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LenovoFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('startrail4', false)) {
+            return (new Mobile\SfrFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->containsAny(['zte', 'racer'], false)) {
             return (new Mobile\ZteFactory($this->loader))->detect($useragent, $s);
         }
@@ -1120,7 +1124,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MtechFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['v860', 'vodafone smart II', 'vodafone 975n'], false)) {
+        if ($s->containsAny(['v860', 'vodafone smart II', 'vodafone 975n', 'vodafone 875'], false)) {
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1196,7 +1200,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/SO\-\d{2}(B|C|D|E)/', $useragent)) {
+        if (preg_match('/SO\-\d{2}(B|C|D|E|G)/', $useragent)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1838,6 +1842,14 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('v1_viper', false)) {
             return (new Mobile\AllviewFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('forward_art', false)) {
+            return (new Mobile\NgmFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('gnet', false)) {
+            return (new Mobile\GnetFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)

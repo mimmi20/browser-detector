@@ -27,10 +27,10 @@ class HuaweiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'h60-l01' => 'huawei h60-l01',
-        'h60-l02' => 'huawei h60-l02',
-        'h60-l04' => 'huawei h60-l04',
-        'h60-l12' => 'huawei h60-l12',
+        'h60-l01'                         => 'huawei h60-l01',
+        'h60-l02'                         => 'huawei h60-l02',
+        'h60-l04'                         => 'huawei h60-l04',
+        'h60-l12'                         => 'huawei h60-l12',
         'nexus 6p'                        => 'nexus 6p',
         'tag-al00'                        => 'tag-al00',
         'tag-l21'                         => 'tag-l21',

@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class TwinovoFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        't118' => 't118',
+        't108' => 't108',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class TwinovoFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('t118', false)) {
-            return $this->loader->load('t118', $useragent);
-        }
-
-        if ($s->contains('t108', false)) {
-            return $this->loader->load('t108', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general twinovo device', $useragent);

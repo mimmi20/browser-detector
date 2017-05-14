@@ -24,6 +24,14 @@ use Stringy\Stringy;
 class TurboPadFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'turbo x6'      => 'turbo x6',
+        'turbo pad 500' => 'pad 500',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,12 +54,10 @@ class TurboPadFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('turbo x6', false)) {
-            return $this->loader->load('turbo x6', $useragent);
-        }
-
-        if ($s->contains('turbo pad 500', false)) {
-            return $this->loader->load('pad 500', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general turbopad device', $useragent);

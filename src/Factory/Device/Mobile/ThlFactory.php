@@ -33,6 +33,7 @@ class ThlFactory implements Factory\FactoryInterface
         'thl w8'    => 'thl w8',
         'thl w7'    => 'w7',
         't6s'       => 't6s',
+        '5000'      => 'thl 5000',
         '4400'      => '4400',
         'thl 2015'  => '2015',
     ];

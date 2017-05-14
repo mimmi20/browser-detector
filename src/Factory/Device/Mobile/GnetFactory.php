@@ -21,13 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class YarvikFactory implements Factory\FactoryInterface
+class GnetFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'tab10-400' => 'tab10-400',
+        'gnet' => 'g net gnet',
     ];
 
     /**
@@ -59,6 +59,6 @@ class YarvikFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general yarvik device', $useragent);
+        return $this->loader->load('general g net device', $useragent);
     }
 }

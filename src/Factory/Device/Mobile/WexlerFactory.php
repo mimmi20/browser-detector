@@ -24,6 +24,15 @@ use Stringy\Stringy;
 class WexlerFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'tab a742' => 'wexler tab a742',
+        'tab-7t'   => 'tab 7t',
+        'tab7id'   => 'tab7id',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,16 +55,10 @@ class WexlerFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
-        if ($s->contains('TAB A742', true)) {
-            return $this->loader->load('wexler tab a742', $useragent);
-        }
-
-        if ($s->contains('TAB-7T', true)) {
-            return $this->loader->load('tab 7t', $useragent);
-        }
-
-        if ($s->contains('TAB7iD', true)) {
-            return $this->loader->load('tab7id', $useragent);
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
         return $this->loader->load('general wexler device', $useragent);

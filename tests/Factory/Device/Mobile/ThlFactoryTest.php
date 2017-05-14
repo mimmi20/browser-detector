@@ -194,6 +194,16 @@ class ThlFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.4.2; thl 5000 Build/KOT49H)',
+                '5000',
+                '5000',
+                'ThL',
+                'ThL',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -27,8 +27,8 @@ class PulidFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'f15'  => 'f15',
-        'f11'  => 'f11',
+        'f15' => 'f15',
+        'f11' => 'f11',
     ];
 
     /**
