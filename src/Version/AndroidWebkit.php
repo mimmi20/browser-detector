@@ -32,21 +32,13 @@ class AndroidWebkit implements VersionCacheFactoryInterface
     {
         $safariHelper = new SafariHelper();
 
-        $doMatch = preg_match(
-            '/Version\/([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/Version\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
             return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
-        $doMatch = preg_match(
-            '/Safari\/([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/Safari\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
             return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));

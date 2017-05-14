@@ -61,11 +61,7 @@ class MicrosoftOffice
      */
     public function detectInternalVersion($useragent)
     {
-        $doMatch = preg_match(
-            '/MSOffice ([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/MSOffice ([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
             return $matches[1];

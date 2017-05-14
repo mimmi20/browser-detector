@@ -116,13 +116,10 @@ class PlatformLoader implements LoaderInterface
             $marketingName = 'macOS';
         }
 
-        return new Os(
-            $name,
-            $marketingName,
-            (new CompanyLoader($this->cache))->load($platform->manufacturer),
-            $version,
-            (new OsBits($useragent))->getBits()
-        );
+        $company = (new CompanyLoader($this->cache))->load($platform->manufacturer);
+        $bits    = (new OsBits($useragent))->getBits();
+
+        return new Os($name, $marketingName, $company, $version, $bits);
     }
 
     /**
