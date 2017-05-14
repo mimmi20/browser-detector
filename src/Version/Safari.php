@@ -30,7 +30,7 @@ class Safari implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $safariHelper = new SafariHelper($useragent);
+        $safariHelper = new SafariHelper();
 
         $doMatch = preg_match('/Version\/([\d\.]+)/', $useragent, $matches);
 
