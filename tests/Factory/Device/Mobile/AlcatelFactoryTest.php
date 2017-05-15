@@ -814,6 +814,26 @@ class AlcatelFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1.1; el-gr; Vodafone 875 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.1 Mobile Safari/534.30 SVN/110HKG1',
+                'Vodafone 875',
+                '875',
+                'Alcatel',
+                'Vodafone',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; it-it; Vodafone 785 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30 SVN/120HDG1',
+                'Vodafone 785',
+                'Smart 4 Mini',
+                'Alcatel',
+                'Vodafone',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

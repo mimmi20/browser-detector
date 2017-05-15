@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\HisenseFactory;
+use BrowserDetector\Factory\Device\Mobile\TurkcellFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class HisenseFactoryTest extends \PHPUnit\Framework\TestCase
+class TurkcellFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\HisenseFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\TurkcellFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class HisenseFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new HisenseFactory($loader);
+        $this->object = new TurkcellFactory($loader);
     }
 
     /**
@@ -106,40 +106,20 @@ class HisenseFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Hisense Device',
-                'general Hisense Device',
-                'Hisense',
-                'Hisense',
-                'Tablet',
+                'general Turkcell Device',
+                'general Turkcell Device',
+                'Turkcell Iletisim Hizmetleri A.S.',
+                'Turkcell',
+                'Smartphone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.4.4; F5281 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/26.0.1985.135 Safari/537.36',
-                'F5281',
-                'Sero 8 Pro',
-                'Hisense',
-                'Hisense',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Hisense-W2003',
-                'general Hisense Device',
-                'general Hisense Device',
-                'Hisense',
-                'Hisense',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.1; HS-U970 Build/JOP40D) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31',
-                'HS-U970',
-                'HS-U970',
-                'Hisense',
-                'Hisense',
+                'Dalvik/1.6.0 (Linux; U; Android 4.4.2; TURKCELL T50 Build/KVT49L)',
+                'T50',
+                'T50',
+                'Turkcell Iletisim Hizmetleri A.S.',
+                'Turkcell',
                 'Smartphone',
                 true,
                 'touchscreen',

@@ -22,6 +22,7 @@ use UaResult\Result\Result;
 use UnexpectedValueException;
 use Wurfl\Request\GenericRequest;
 use Wurfl\Request\GenericRequestFactory;
+use Psr\Http\Message\MessageInterface;
 
 /**
  * Browser Detection class
@@ -63,7 +64,7 @@ class Detector
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string|array|\Wurfl\Request\GenericRequest $request
+     * @param string|array|\Wurfl\Request\GenericRequest|\Psr\Http\Message\MessageInterface $request
      *
      * @return \UaResult\Result\Result
      */
@@ -125,7 +126,7 @@ class Detector
     }
 
     /**
-     * @param $request
+     * @param string|array|\Psr\Http\Message\MessageInterface $request
      *
      * @throws \UnexpectedValueException
      *
@@ -138,17 +139,24 @@ class Detector
         if (is_string($request)) {
             $this->logger->debug('request object created from string');
 
-            return $requestFactory->createRequestForUserAgent($request);
+            return $requestFactory->createRequestFromString($request);
         }
 
         if (is_array($request)) {
             $this->logger->debug('request object created from array');
 
-            return $requestFactory->createRequest($request);
+            return $requestFactory->createRequestFromArray($request);
+        }
+
+        if ($request instanceof MessageInterface) {
+            $this->logger->debug('request object created from PSR-7 http message');
+
+            return $requestFactory->createRequestFromPsr7Message($request);
         }
 
         throw new UnexpectedValueException(
-            'the request parameter has to be a string, an array or an instance of \Wurfl\Request\GenericRequest'
+            'the request parameter has to be a string, an array, an instance of \Psr\Http\Message\MessageInterface '
+            . 'or an instance of \Wurfl\Request\GenericRequest'
         );
     }
 }

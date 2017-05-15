@@ -28,6 +28,7 @@ class LgFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'vs810pp'       => 'lg vs810 pp',
+        'd838'          => 'lg d838',
         'd405'          => 'lg d405',
         'd331'          => 'lg d331',
         'lgl34c'        => 'lg l34c',

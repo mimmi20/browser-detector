@@ -8421,6 +8421,15 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
                 'Application',
                 null,
             ],
+            [
+                'Windows Phone Ad Client/6.2.960.0 (Silverlight; MS_ORMMA_1_0; Windows Phone OS 10.0.13384.0; Microsoft; RM-1067_1005)',
+                'Windows Phone Ad Client',
+                '6.2.960.0',
+                'Microsoft Corporation',
+                32,
+                'Bot/Crawler',
+                null,
+            ],
         ];
     }
 }

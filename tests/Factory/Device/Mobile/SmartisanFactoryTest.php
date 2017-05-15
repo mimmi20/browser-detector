@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\HisenseFactory;
+use BrowserDetector\Factory\Device\Mobile\SmartisanFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class HisenseFactoryTest extends \PHPUnit\Framework\TestCase
+class SmartisanFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\HisenseFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\SmartisanFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class HisenseFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new HisenseFactory($loader);
+        $this->object = new SmartisanFactory($loader);
     }
 
     /**
@@ -106,40 +106,50 @@ class HisenseFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Hisense Device',
-                'general Hisense Device',
-                'Hisense',
-                'Hisense',
-                'Tablet',
+                'general Smartisan Device',
+                'general Smartisan Device',
+                'Smartisan Technology Co., Ltd',
+                'Smartisan',
+                'Smartphone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.4.4; F5281 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/26.0.1985.135 Safari/537.36',
-                'F5281',
-                'Sero 8 Pro',
-                'Hisense',
-                'Hisense',
-                'Tablet',
+                'Mozilla/5.0 (Linux; U; Android 5.1.1; zh-CN; YQ601 Build/LMY47V) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.3.727 U3/0.8.0 Mobile Safari/534.30',
+                'YQ601',
+                'U1 Jianguo',
+                'Smartisan Technology Co., Ltd',
+                'Smartisan',
+                'Smartphone',
                 true,
                 'touchscreen',
             ],
             [
-                'Hisense-W2003',
-                'general Hisense Device',
-                'general Hisense Device',
-                'Hisense',
-                'Hisense',
-                'Tablet',
+                'Mozilla/5.0 (Linux; Android 5.1.1; SM801 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+                'SM801',
+                'T2',
+                'Smartisan Technology Co., Ltd',
+                'Smartisan',
+                'Smartphone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.2.1; HS-U970 Build/JOP40D) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31',
-                'HS-U970',
-                'HS-U970',
-                'Hisense',
-                'Hisense',
+                'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; SM701 Build/SANFRANCISCO) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025469 Mobile Safari/533.1 MicroMessenger/6.2.5.49_r7ead8bf.620 NetType/WIFI Language/zh_CN QQ/6.6.0.2935',
+                'SM701',
+                'T1',
+                'Smartisan Technology Co., Ltd',
+                'Smartisan',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 6.0.1; SM919 Build/MXB48T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/WIFI Language/zh_CN',
+                'SM919',
+                'M1L',
+                'Smartisan Technology Co., Ltd',
+                'Smartisan',
                 'Smartphone',
                 true,
                 'touchscreen',

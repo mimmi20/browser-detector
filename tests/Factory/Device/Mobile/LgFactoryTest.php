@@ -1534,6 +1534,16 @@ class LgFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.1; LG-D838 Build/LRX21Y) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.1847.118 Mobile Safari/537.36',
+                'D838',
+                'G PRO 2',
+                'LG',
+                'LG',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

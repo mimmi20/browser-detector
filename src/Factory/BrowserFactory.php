@@ -502,6 +502,7 @@ class BrowserFactory implements FactoryInterface
             'evernote'                 => 'evernote app',
             'fluid'                    => 'fluid',
             'safari'                   => 'safari',
+            'windows phone ad client'  => 'windows phone ad client',
         ];
 
         foreach ($checkBeforeSafari as $search => $key) {

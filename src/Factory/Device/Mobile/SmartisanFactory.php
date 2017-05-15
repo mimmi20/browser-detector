@@ -21,14 +21,16 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HisenseFactory implements Factory\FactoryInterface
+class SmartisanFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'f5281' => 'f5281',
-        'hs-u970' => 'hisense hs-u970',
+        'yq601' => 'smartisan yq601',
+        'sm919' => 'smartisan sm919',
+        'sm801' => 'smartisan sm801',
+        'sm701' => 'smartisan sm701',
     ];
 
     /**
@@ -60,6 +62,6 @@ class HisenseFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general hisense device', $useragent);
+        return $this->loader->load('general smartisan device', $useragent);
     }
 }

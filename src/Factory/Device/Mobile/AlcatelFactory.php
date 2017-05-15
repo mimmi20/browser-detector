@@ -87,6 +87,8 @@ class AlcatelFactory implements Factory\FactoryInterface
         'ot-710d'                  => 'ot-710d',
         'ot-216'                   => 'ot-216',
         'vodafone 975n'            => '975n',
+        'vodafone 875'             => 'alcatel vodafone 875',
+        'vodafone 785'             => 'alcatel vodafone 785',
         'v860'                     => 'v860',
         'vodafone smart ii'        => 'v860',
         'p321'                     => 'ot-p321',

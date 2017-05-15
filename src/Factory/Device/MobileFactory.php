@@ -596,7 +596,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\OneplusFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('F5281', true)) {
+        if ($s->containsAny(['f5281', 'hs-u970'], false)) {
             return (new Mobile\HisenseFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1124,7 +1124,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MtechFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['v860', 'vodafone smart II', 'vodafone 975n', 'vodafone 875'], false)) {
+        if ($s->containsAny(['v860', 'vodafone smart II', 'vodafone 975n', 'vodafone 875', 'vodafone 785'], false)) {
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1850,6 +1850,22 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('gnet', false)) {
             return (new Mobile\GnetFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('hive v 3g', false)) {
+            return (new Mobile\TurboxFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('titanium octane', false)) {
+            return (new Mobile\KarbonnFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['yq601', 'sm919', 'sm801', 'sm701'], false)) {
+            return (new Mobile\SmartisanFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('turkcell', false)) {
+            return (new Mobile\TurkcellFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)

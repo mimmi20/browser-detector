@@ -113,6 +113,7 @@ class SonyFactory implements Factory\FactoryInterface
         'st18i'                => 'st18i',
         'st17i'                => 'st17i',
         'st15i'                => 'st15i',
+        'so-01g'               => 'sony so-01g',
         'so-05d'               => 'so-05d',
         'so-03e'               => 'so-03e',
         'so-03c'               => 'so-03c',
