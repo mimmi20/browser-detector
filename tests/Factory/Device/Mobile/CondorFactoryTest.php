@@ -124,6 +124,16 @@ class CondorFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; PGN-506 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+                'PGN-506',
+                'C7',
+                'Condor',
+                'Condor',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

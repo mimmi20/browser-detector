@@ -27,6 +27,7 @@ class AcerFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'e380'         => 'acer e380',
         'v370'         => 'v370',
         'stream-s110'  => 'stream s110',
         's500'         => 's500',

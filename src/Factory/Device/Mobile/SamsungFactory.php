@@ -184,6 +184,9 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-g532m'  => 'samsung sm-g532m',
         'sm-g485f'  => 'samsung sm-g485f',
         'sm-j327p'  => 'samsung sm-j327p',
+        'sm-g750f'  => 'samsung sm-g750f',
+        'sm-g7508q' => 'samsung sm-g7508q',
+        'sm-g7508'  => 'samsung sm-g7508',
     ];
 
     /**
@@ -1243,6 +1246,10 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('sgh-t499', $useragent);
         }
 
+        if ($s->contains('sgh-t399', false)) {
+            return $this->loader->load('samsung sgh-t399', $useragent);
+        }
+
         if ($s->contains('sgh-m919', false)) {
             return $this->loader->load('sgh-m919', $useragent);
         }
@@ -1781,6 +1788,10 @@ class SamsungFactory implements Factory\FactoryInterface
 
         if ($s->contains('gt-s5310', false)) {
             return $this->loader->load('gt-s5310', $useragent);
+        }
+
+        if ($s->contains('gt-s5303', false)) {
+            return $this->loader->load('samsung gt-s5303', $useragent);
         }
 
         if ($s->contains('gt-s5302', false)) {

@@ -21,17 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MeizuFactory implements Factory\FactoryInterface
+class MaxtronFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'mz-mx5'   => 'mx5',
-        'mx4'   => 'meizu mx4',
-        'm040'     => 'm040',
-        'meizu_m9' => 'meizu m9',
-        ' m9 '     => 'meizu m9',
+        ' v1 ' => 'maxtron v1',
     ];
 
     /**
@@ -63,6 +59,6 @@ class MeizuFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general meizu device', $useragent);
+        return $this->loader->load('general maxtron device', $useragent);
     }
 }

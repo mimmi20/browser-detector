@@ -38,6 +38,7 @@ class WikoFactory implements Factory\FactoryInterface
         'darkmoon'    => 'darkmoon',
         'darkside'    => 'darkside',
         'cink peax 2' => 'cink peax 2',
+        'kite' => 'wiko kite',
     ];
 
     /**

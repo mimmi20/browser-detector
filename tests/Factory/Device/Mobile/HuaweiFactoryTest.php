@@ -1844,6 +1844,16 @@ class HuaweiFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; HUAWEI Y600-U151 Build/HUAWEIY600-U151) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36',
+                'Y600-U151',
+                'Ascend Y600',
+                'Huawei',
+                'Huawei',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

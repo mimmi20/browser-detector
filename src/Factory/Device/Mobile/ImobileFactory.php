@@ -30,6 +30,7 @@ class ImobileFactory implements Factory\FactoryInterface
         'i-style 7.7 dtv' => 'i-style 7.7 dtv',
         'iqx oku'         => 'iq x oku',
         'iq 6a'           => 'iq 6a',
+        'iq 5.1' => 'i-mobile iq 5.1',
     ];
 
     /**

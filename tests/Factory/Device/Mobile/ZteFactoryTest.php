@@ -584,6 +584,16 @@ class ZteFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.1 ;en-us; ZTE V807 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30;',
+                'V807',
+                'Blade C',
+                'ZTE',
+                'ZTE',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

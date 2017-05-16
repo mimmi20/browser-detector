@@ -504,6 +504,16 @@ class AcerFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.4.2; E380 Build/KOT49H)',
+                'E380',
+                'Liquid E3',
+                'Acer',
+                'Acer',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

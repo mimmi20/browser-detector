@@ -1004,6 +1004,16 @@ class LenovoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.3.6; zh-cn; Lenovo-A269i/S001) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'A269i',
+                'A269i',
+                'Lenovo',
+                'Lenovo',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

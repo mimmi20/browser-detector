@@ -80,6 +80,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'y635-l21'                        => 'y635-l21',
         'y625-u51'                        => 'y625-u51',
         'y625-u21'                        => 'y625-u21',
+        'y600-u151'                       => 'huawei y600-u151',
         'y600-u20'                        => 'y600-u20',
         'y600-u00'                        => 'y600-u00',
         'y560-l01'                        => 'y560-l01',

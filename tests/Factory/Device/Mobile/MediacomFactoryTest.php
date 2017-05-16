@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\MeizuFactory;
+use BrowserDetector\Factory\Device\Mobile\MediacomFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class MeizuFactoryTest extends \PHPUnit\Framework\TestCase
+class MediacomFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\MeizuFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\MediacomFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class MeizuFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new MeizuFactory($loader);
+        $this->object = new MediacomFactory($loader);
     }
 
     /**
@@ -106,50 +106,30 @@ class MeizuFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general Meizu Device',
-                'general Meizu Device',
-                'Meizu Technology Co., Ltd.',
-                'Meizu',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 5.1; MZ-MX5 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36',
-                'MX5',
-                'MX5',
-                'Meizu Technology Co., Ltd.',
-                'Meizu',
-                'Mobile Phone',
+                'general Mediacom Device',
+                'general Mediacom Device',
+                'Mediacom',
+                'Mediacom',
+                'Smartphone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; Android 4.1.1; M040 Build/JRO03H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 YaBrowser/15.4.2272.2351.00 Mobile Safari/537.36',
-                'M040',
-                'M040',
-                'Meizu Technology Co., Ltd.',
-                'Meizu',
-                'Mobile Phone',
+                'Mozilla/5.0 (Linux; U; Android 4.2.1; it-it; M-PP2S500B Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'M-PP2S500B',
+                'PhonePad Duo S500',
+                'Mediacom',
+                'Mediacom',
+                'Smartphone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; U; Android 2.2; en-us; meizu_m9 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'M9',
-                'M9',
-                'Meizu Technology Co., Ltd.',
-                'Meizu',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Dalvik/1.6.0 (Linux; U; Android 4.4.2; MX4 Build/KOT49H)',
-                'MX4',
-                'MX4',
-                'Meizu Technology Co., Ltd.',
-                'Meizu',
+                'Mozilla/5.0 (Linux; Android 4.4.2; M-PPxG501 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+                'M-PPxG501',
+                'PhonePad Duo G501',
+                'Mediacom',
+                'Mediacom',
                 'Smartphone',
                 true,
                 'touchscreen',
