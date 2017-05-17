@@ -7874,6 +7874,26 @@ class SamsungFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; SM-G386T1 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36',
+                'SM-G386T1',
+                'Galaxy Avant (Metro PCS)',
+                'Samsung',
+                'Samsung',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; SM-G386T Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36',
+                'SM-G386T',
+                'Galaxy Avant (T-Mobile)',
+                'Samsung',
+                'Samsung',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

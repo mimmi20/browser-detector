@@ -864,6 +864,16 @@ class MotorolaFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.3; XT1040 Build/KXB21.14-L1.23-4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
+                'XT1040',
+                'Moto G 4G',
+                'Motorola',
+                'Motorola',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

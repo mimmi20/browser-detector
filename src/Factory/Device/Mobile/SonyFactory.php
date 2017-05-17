@@ -72,6 +72,7 @@ class SonyFactory implements Factory\FactoryInterface
         'd2302'                => 'd2302',
         'd2212'                => 'sony d2212',
         'd2203'                => 'd2203',
+        'd2202'                => 'sony d2202',
         'd2105'                => 'd2105',
         'd2005'                => 'd2005',
         'sgpt13'               => 'sgpt13',

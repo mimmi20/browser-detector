@@ -64,6 +64,7 @@ class HtcFactory implements Factory\FactoryInterface
         'one_m8'                  => 'htc m8',
         'one m8'                  => 'htc m8',
         'pn07120'                 => 'pn07120',
+        'pn071'                   => 'htc pn071',
         'one x+'                  => 'pm63100',
         'one_x+'                  => 'pm63100',
         'onexplus'                => 'pm63100',

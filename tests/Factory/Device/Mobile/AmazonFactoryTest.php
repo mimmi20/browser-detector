@@ -234,6 +234,16 @@ class AmazonFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.4.3; KFASWI Build/KTU84M)',
+                'KFASWI',
+                'Kindle Fire HD 7',
+                'Amazon.com, Inc.',
+                'Amazon',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -1544,6 +1544,16 @@ class LgFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; LG-F400S Build/KVT49L.F400S10t) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+                'F400S',
+                'G3',
+                'LG',
+                'LG',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

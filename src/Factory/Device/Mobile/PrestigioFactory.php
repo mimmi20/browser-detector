@@ -28,6 +28,7 @@ class PrestigioFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'psp5517duo'      => 'prestigio psp5517duo',
+        'psp5505duo'      => 'prestigio psp5505duo',
         'psp5453duo'      => 'prestigio psp5453duo',
         'pmt7177_3g'      => 'pmt7177_3g',
         'pmt7077_3g'      => 'pmt7077_3g',

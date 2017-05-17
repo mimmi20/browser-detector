@@ -38,6 +38,7 @@ class AsusFactory implements Factory\FactoryInterface
         'k017'              => 'k017',
         'k013'              => 'k013',
         'k012'              => 'k012',
+        'k011'              => 'asus k011',
         'k00e'              => 'k00e',
         'me372cg'           => 'k00e',
         'me172v'            => 'me172v',

@@ -514,6 +514,16 @@ class AsusFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; K011 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]',
+                'K011',
+                'Memo Pad 8 ME181C',
+                'Asus',
+                'Asus',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

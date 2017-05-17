@@ -164,6 +164,16 @@ class OneplusFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Dalvik/2.1.0 (Linux; U; Android 5.0.2; A0001 Build/LRX22G)',
+                'A0001',
+                'One A0001',
+                'OnePlus',
+                'OnePlus',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -36,6 +36,7 @@ class MotorolaFactory implements Factory\FactoryInterface
         'xt1055'          => 'motorola xt1055',
         'xt1053'          => 'motorola xt1053',
         'xt1052'          => 'xt1052',
+        'xt1040'          => 'motorola xt1040',
         'xt1039'          => 'xt1039',
         'xt1033'          => 'xt1033',
         'xt1032'          => 'xt1032',

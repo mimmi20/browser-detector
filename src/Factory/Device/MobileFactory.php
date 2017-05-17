@@ -216,7 +216,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['amazon', 'kindle', 'silk', 'kftt', 'kfot', 'kfjwi', 'kfsowi', 'kfthwi', 'sd4930ur', 'kfapwa'], false)) {
+        if ($s->containsAny(['amazon', 'kindle', 'silk', 'kftt', 'kfot', 'kfjwi', 'kfsowi', 'kfthwi', 'sd4930ur', 'kfapwa', 'kfaswi'], false)) {
             return (new Mobile\AmazonFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -292,7 +292,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\CosmoteFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['creative', 'ziilabs'], false)) {
+        if ($s->containsAny(['creative', 'ziilabs', 'ziio7'], false)) {
             return (new Mobile\CreativeFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -374,6 +374,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('DA241HL', true)) {
             return (new Mobile\AcerFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('SHL25', true)) {
+            return (new Mobile\SharpFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->containsAny(['Honlin', 'PC1088', 'HL'], true)) {
@@ -1008,7 +1012,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE', 'LENNY', 'GETAWAY', 'RAINBOW', 'WAX', 'KITE'], true)) {
+        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE', 'LENNY', 'GETAWAY', 'RAINBOW', 'WAX', 'KITE', 'BARRY'], true)) {
             return (new Mobile\WikoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1556,7 +1560,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' xst2 ', ' x2 ', 'r800x', 's500i', 'x1i'], false)) {
+        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' xst2 ', ' x2 ', 'r800x', 's500i', 'x1i', 'x10i'], false)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1882,6 +1886,18 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('tecno', false)) {
             return (new Mobile\TecnoFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains(' C2 ', true)) {
+            return (new Mobile\ZopoFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('A0001', true)) {
+            return (new Mobile\OneplusFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('l-ement500', false)) {
+            return (new Mobile\LogicomFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)

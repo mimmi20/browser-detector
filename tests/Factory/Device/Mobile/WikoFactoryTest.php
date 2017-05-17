@@ -244,6 +244,16 @@ class WikoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; BARRY Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36',
+                'BARRY',
+                'BARRY',
+                'Wiko',
+                'Wiko',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

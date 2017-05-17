@@ -1924,6 +1924,26 @@ class SonyFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2.1; ja-jp; X10i Build/Achotjan_2.2.1_v03) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'X10i',
+                'Xperia X10',
+                'SonyEricsson',
+                'SonyEricsson',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; D2202 Build/18.4.A.1.25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
+                'D2202',
+                'Xperia E3',
+                'Sony',
+                'Sony',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

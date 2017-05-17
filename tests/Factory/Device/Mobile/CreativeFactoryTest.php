@@ -134,6 +134,16 @@ class CreativeFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                '"Mozilla/5.0 (Linux; U; Android 2.1-update2; en-; ZiiO7 Build/v1.00.28-ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
+                'ZiiO7',
+                'ZiiO7',
+                'Creative',
+                'Creative',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -1030,6 +1030,14 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load('sm-g388f', $useragent);
         }
 
+        if ($s->contains('sm-g386t1', false)) {
+            return $this->loader->load('samsung sm-g386t1', $useragent);
+        }
+
+        if ($s->contains('sm-g386t', false)) {
+            return $this->loader->load('samsung sm-g386t', $useragent);
+        }
+
         if ($s->contains('sm-g386f', false)) {
             return $this->loader->load('sm-g386f', $useragent);
         }
