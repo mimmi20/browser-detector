@@ -1012,7 +1012,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE', 'LENNY', 'GETAWAY', 'RAINBOW', 'WAX', 'KITE', 'BARRY'], true)) {
+        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE', 'LENNY', 'GETAWAY', 'RAINBOW', 'WAX', 'KITE', 'BARRY', 'HIGHWAY SIGNS'], true)) {
             return (new Mobile\WikoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1172,7 +1172,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PrestigioFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['PJ83100', '831C', 'Evo 3D GSM', 'Eris 2.1'], true)) {
+        if ($s->containsAny(['PJ83100', '831C', 'Evo 3D GSM', 'Eris 2.1', '0PCV1'], true)) {
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1898,6 +1898,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('l-ement500', false)) {
             return (new Mobile\LogicomFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('is04', false)) {
+            return (new Mobile\KddiFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)

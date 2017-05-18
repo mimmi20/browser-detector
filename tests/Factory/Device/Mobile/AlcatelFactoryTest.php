@@ -854,6 +854,16 @@ class AlcatelFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 5036X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36',
+                'OT-5036X',
+                'One Touch Pop C5',
+                'Alcatel',
+                'Alcatel',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

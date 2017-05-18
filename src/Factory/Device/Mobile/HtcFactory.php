@@ -28,6 +28,7 @@ class HtcFactory implements Factory\FactoryInterface
      */
     private $devices = [
         ' x9 '                    => 'x9',
+        '0pcv1'                 => 'htc 0pcv1',
         'nexus one'               => 'nexus one',
         'nexus-one'               => 'nexus one',
         'nexusone'                => 'nexus one',

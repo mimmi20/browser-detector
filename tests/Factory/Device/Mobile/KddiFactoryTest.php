@@ -124,6 +124,16 @@ class KddiFactoryTest extends \PHPUnit\Framework\TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2.2; ja-jp; IS04 Build/FFK301) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'IS04',
+                'Regza IS04',
+                'KDDI',
+                'Fujitsu',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
