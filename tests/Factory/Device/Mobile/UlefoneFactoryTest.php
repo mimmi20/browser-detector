@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\VivoFactory;
+use BrowserDetector\Factory\Device\Mobile\UlefoneFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use Cache\Adapter\Filesystem\FilesystemCachePool;
 use League\Flysystem\Adapter\Local;
@@ -21,10 +21,10 @@ use Stringy\Stringy;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class VivoFactoryTest extends \PHPUnit\Framework\TestCase
+class UlefoneFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\VivoFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\UlefoneFactory
      */
     private $object = null;
 
@@ -37,7 +37,7 @@ class VivoFactoryTest extends \PHPUnit\Framework\TestCase
         $adapter      = new Local(__DIR__ . '/../../../../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $loader       = new DeviceLoader($cache);
-        $this->object = new VivoFactory($loader);
+        $this->object = new UlefoneFactory($loader);
     }
 
     /**
@@ -106,40 +106,20 @@ class VivoFactoryTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'this is a fake ua to trigger the fallback',
-                'general vivo Device',
-                'general vivo Device',
-                'vivo',
-                'vivo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; vivo Y22 Build/JDQ39) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025410 Mobile Safari/533.1 MicroMessenger/6.1.0.66_r1062275.542 NetType/WIFI',
-                'Y22',
-                'Y22',
-                'vivo',
-                'vivo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 6.0.1; en-US; vivo 1603 Build/MMB29M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
-                '1603',
-                'Y55L',
-                'vivo',
-                'vivo',
+                'general Ulefone Device',
+                'general Ulefone Device',
+                'Ulefone Technology Co., Ltd.',
+                'Ulefone',
                 'Smartphone',
                 true,
                 'touchscreen',
             ],
             [
-                'Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; vivo Y31L Build/LMY47V) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
-                'Y31L',
-                'Y31L',
-                'vivo',
-                'vivo',
+                'Mozilla/5.0 (Linux; Android 4.4.4; Be Pro Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
+                'Be Pro',
+                'Be Pro',
+                'Ulefone Technology Co., Ltd.',
+                'Ulefone',
                 'Smartphone',
                 true,
                 'touchscreen',

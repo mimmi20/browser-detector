@@ -104,6 +104,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-j110l'  => 'sm-j110l',
         'sm-j110m'  => 'sm-j110m',
         'sm-j111f'  => 'sm-j111f',
+        'sm-j105f'  => 'samsung sm-j105f',
         'sm-j105h'  => 'sm-j105h',
         'sm-j100h'  => 'sm-j100h',
         'sm-j100y'  => 'sm-j100y',
@@ -168,6 +169,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-t230nu' => 'sm-t230nu',
         'sm-t230'   => 'sm-t230',
         'sm-t211'   => 'sm-t211',
+        'sm-t116nu'   => 'samsung sm-t116nu',
         'sm-t116'   => 'sm-t116',
         'sm-t113'   => 'sm-t113',
         'sm-t111'   => 'sm-t111',
@@ -180,6 +182,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-p900'   => 'sm-p900',
         'sm-c900f'  => 'samsung sm-c900f',
         'sm-c9000'  => 'samsung sm-c9000',
+        'sm-g550fy'  => 'samsung sm-g550fy',
         'sm-g532g'  => 'samsung sm-g532g',
         'sm-g532m'  => 'samsung sm-g532m',
         'sm-g485f'  => 'samsung sm-g485f',
@@ -400,6 +403,201 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-g386t1' => 'samsung sm-g386t1',
         'sm-g386t' => 'samsung sm-g386t',
         'sm-g386f' => 'sm-g386f',
+        'sm-g361f' => 'sm-g361f',
+        'sm-g361h' => 'sm-g361h',
+        'sm-g360hu' => 'sm-g360hu',
+        'sm-g360h' => 'sm-g360h',
+        'sm-g360t1' => 'sm-g360t1',
+        'sm-g360t' => 'sm-g360t',
+        'sm-g360bt' => 'sm-g360bt',
+        'sm-g360f' => 'sm-g360f',
+        'sm-g360g' => 'sm-g360g',
+        'sm-g360az' => 'sm-g360az',
+        'sm-g357fz' => 'sm-g357fz',
+        'sm-g355hq' => 'sm-g355hq',
+        'sm-g355hn' => 'sm-g355hn',
+        'sm-g355h' => 'sm-g355h',
+        'sm-g355m' => 'sm-g355m',
+        'sm-g3502l' => 'sm-g3502l',
+        'sm-g3502t' => 'sm-g3502t',
+        'sm-g3500' => 'sm-g3500',
+        'sm-g350e' => 'sm-g350e',
+        'sm-g350' => 'sm-g350',
+        'sm-g318h' => 'sm-g318h',
+        'sm-g313hu' => 'sm-g313hu',
+        'sm-g313hn' => 'sm-g313hn',
+        'sm-g310hn' => 'sm-g310hn',
+        'sm-g130h' => 'sm-g130h',
+        'sm-g130e' => 'samsung sm-g130e',
+        'sm-g110h' => 'sm-g110h',
+        'sm-e700f' => 'sm-e700f',
+        'sm-e700h' => 'sm-e700h',
+        'sm-e700m' => 'sm-e700m',
+        'sm-e7000' => 'sm-e7000',
+        'sm-e7009' => 'sm-e7009',
+        'sm-e500h' => 'sm-e500h',
+        'sm-c115' => 'sm-c115',
+        'sm-c111' => 'sm-c111',
+        'sm-c105' => 'sm-c105',
+        'sm-c101' => 'sm-c101',
+        'sm-z130h' => 'sm-z130h',
+        'sm-b550h' => 'sm-b550h',
+        'sgh-t999' => 'sgh-t999',
+        'sgh-t989d' => 'sgh-t989d',
+        'sgh-t989' => 'sgh-t989',
+        'sgh-t959v' => 'sgh-t959v',
+        'sgh-t959' => 'sgh-t959',
+        'sgh-t899m' => 'sgh-t899m',
+        'sgh-t889' => 'sgh-t889',
+        'sgh-t859' => 'sgh-t859',
+        'sgh-t839' => 'sgh-t839',
+        'sgh-t769' => 'sgh-t769',
+        'blaze' => 'sgh-t769',
+        'sgh-t759' => 'sgh-t759',
+        'sgh-t669' => 'sgh-t669',
+        'sgh-t528g' => 'sgh-t528g',
+        'sgh-t499' => 'sgh-t499',
+        'sgh-t399' => 'samsung sgh-t399',
+        'sgh-m919' => 'sgh-m919',
+        'sgh-i997r' => 'sgh-i997r',
+        'sgh-i997' => 'sgh-i997',
+        'sgh-i957r' => 'sgh-i957r',
+        'sgh-i957' => 'sgh-i957',
+        'sgh-i917' => 'sgh-i917',
+        'sgh-i900v' => 'sgh-i900v',
+        'sgh-i9000' => 'sgh-i9000',
+        'sgh-i9008' => 'sgh-i9008',
+        'sgh-i900' => 'sgh-i900',
+        'sgh-i897' => 'sgh-i897',
+        'sgh-i857' => 'sgh-i857',
+        'sgh-i780' => 'sgh-i780',
+        'sgh-i777' => 'sgh-i777',
+        'sgh-i747m' => 'sgh-i747m',
+        'sgh-i747' => 'sgh-i747',
+        'sgh-i727r' => 'sgh-i727r',
+        'sgh-i727' => 'sgh-i727',
+        'sgh-i717' => 'sgh-i717',
+        'sgh-i577' => 'sgh-i577',
+        'sgh-i547' => 'sgh-i547',
+        'sgh-i497' => 'sgh-i497',
+        'sgh-i467' => 'sgh-i467',
+        'sgh-i337m' => 'sgh-i337m',
+        'sgh-i337' => 'sgh-i337',
+        'sgh-i317' => 'sgh-i317',
+        'sgh-i257' => 'sgh-i257',
+        'sgh-f480i' => 'sgh-f480i',
+        'sgh-f480' => 'sgh-f480',
+        'sgh-e250i' => 'sgh-e250i',
+        'sgh-e250' => 'sgh-e250',
+        'sgh-b100' => 'sgh-b100',
+        'sec-sghb100' => 'sgh-b100',
+        'sec-sghu600b' => 'sgh-u600b',
+        'sgh-u800e' => 'sgh-u800e',
+        'sgh-u800' => 'sgh-u800',
+        'shv-e370k' => 'shv-e370k',
+        'shv-e250k' => 'shv-e250k',
+        'shv-e250l' => 'shv-e250l',
+        'shv-e250s' => 'shv-e250s',
+        'shv-e210l' => 'shv-e210l',
+        'shv-e210k' => 'shv-e210k',
+        'shv-e210s' => 'shv-e210s',
+        'shv-e160s' => 'shv-e160s',
+        'shw-m110s' => 'shw-m110s',
+        'shw-m180s' => 'shw-m180s',
+        'shw-m380s' => 'shw-m380s',
+        'shw-m380w' => 'shw-m380w',
+        'shw-m480w' => 'shw-m480w',
+        'shw-m380k' => 'shw-m380k',
+        'scl24' => 'scl24',
+        'sch-u820' => 'sch-u820',
+        'sch-u750' => 'sch-u750',
+        'sch-u660' => 'sch-u660',
+        'sch-u485' => 'sch-u485',
+        'sch-r970' => 'sch-r970',
+        'sch-r950' => 'sch-r950',
+        'sch-r720' => 'sch-r720',
+        'sch-r530u' => 'sch-r530u',
+        'sch-r530c' => 'sch-r530c',
+        'sch-n719' => 'sch-n719',
+        'sch-m828c' => 'sch-m828c',
+        'sch-i535' => 'sch-i535',
+        'sch-i919' => 'sch-i919',
+        'sch-i815' => 'sch-i815',
+        'sch-i800' => 'sch-i800',
+        'sch-i699' => 'sch-i699',
+        'sch-i605' => 'sch-i605',
+        'sch-i545' => 'sch-i545',
+        'sch-i510' => 'sch-i510',
+        'sch-i500' => 'sch-i500',
+        'sch-i435' => 'sch-i435',
+        'sch-i400' => 'sch-i400',
+        'sch-i200' => 'sch-i200',
+        'sch-s720c' => 'sch-s720c',
+        'gt-s8600' => 'gt-s8600',
+        'gt-s8530' => 'gt-s8530',
+        's8500' => 'gt-s8500',
+        'samsung-s8300' => 'gt-s8300',
+        'gt-s8300' => 'gt-s8300',
+        'samsung-s8003' => 'gt-s8003',
+        'gt-s8003' => 'gt-s8003',
+        'samsung-s8000' => 'gt-s8000',
+        'gt-s8000' => 'gt-s8000',
+        'samsung-s7710' => 'gt-s7710',
+        'gt-s7710' => 'gt-s7710',
+        'gt-s7582' => 'gt-s7582',
+        'gt-s7580' => 'gt-s7580',
+        'gt-s7562l' => 'gt-s7562l',
+        'gt-s7562' => 'gt-s7562',
+        'gt-s7560' => 'gt-s7560',
+        'gt-s7530l' => 'gt-s7530l',
+        'gt-s7530' => 'gt-s7530',
+        'gt-s7500' => 'gt-s7500',
+        'gt-s7392' => 'gt-s7392',
+        'gt-s7390' => 'gt-s7390',
+        'gt-s7330' => 'gt-s7330',
+        'gt-s7275r' => 'gt-s7275r',
+        'gt-s7275' => 'gt-s7275',
+        'gt-s7272' => 'gt-s7272',
+        'gt-s7270' => 'gt-s7270',
+        'gt-s7262' => 'gt-s7262',
+        'gt-s7250' => 'gt-s7250',
+        'gt-s7233e' => 'gt-s7233e',
+        'gt-s7230e' => 'gt-s7230e',
+        'samsung-s7220' => 'gt-s7220',
+        'gt-s7220' => 'gt-s7220',
+        'gt-s6810p' => 'gt-s6810p',
+        'gt-s6810b' => 'gt-s6810b',
+        'gt-s6810' => 'gt-s6810',
+        'gt-s6802' => 'gt-s6802',
+        'gt-s6500d' => 'gt-s6500d',
+        'gt-s6500t' => 'gt-s6500t',
+        'gt-s6500' => 'gt-s6500',
+        'gt-s6312' => 'gt-s6312',
+        'gt-s6310n' => 'gt-s6310n',
+        'gt-s6310' => 'gt-s6310',
+        'gt-s6102b' => 'gt-s6102b',
+        'gt-s6102' => 'gt-s6102',
+        'gt-s5839i' => 'gt-s5839i',
+        'gt-s5830l' => 'gt-s5830l',
+        'gt-s5830i' => 'gt-s5830i',
+        'gt-s5830c' => 'gt-s5830c',
+        'gt-s5570i' => 'gt-s5570i',
+        'gt-s5570' => 'gt-s5570',
+        'gt-s5830' => 'gt-s5830',
+        'ace' => 'gt-s5830',
+        'gt-s5780' => 'gt-s5780',
+        'gt-s5750e' => 'gt-s5750e orange',
+        'gt-s5690' => 'gt-s5690',
+        'gt-s5670' => 'gt-s5670',
+        'gt-s5660' => 'gt-s5660',
+        'gt-s5620' => 'gt-s5620',
+        'gt-s5560i' => 'gt-s5560i',
+        'gt-s5560' => 'gt-s5560',
+        'gt-s5380' => 'gt-s5380',
+        'gt-s5369' => 'gt-s5369',
+        'gt-s5363' => 'gt-s5363',
+        'gt-s5360' => 'gt-s5360',
+        'gt-s5330' => 'gt-s5330',
     ];
 
     /**
@@ -429,754 +627,6 @@ class SamsungFactory implements Factory\FactoryInterface
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
-        }
-
-        if ($s->contains('sm-g361f', false)) {
-            return $this->loader->load('sm-g361f', $useragent);
-        }
-
-        if ($s->contains('sm-g361h', false)) {
-            return $this->loader->load('sm-g361h', $useragent);
-        }
-
-        if ($s->contains('sm-g360hu', false)) {
-            return $this->loader->load('sm-g360hu', $useragent);
-        }
-
-        if ($s->contains('sm-g360h', false)) {
-            return $this->loader->load('sm-g360h', $useragent);
-        }
-
-        if ($s->contains('sm-g360t1', false)) {
-            return $this->loader->load('sm-g360t1', $useragent);
-        }
-
-        if ($s->contains('sm-g360t', false)) {
-            return $this->loader->load('sm-g360t', $useragent);
-        }
-
-        if ($s->contains('sm-g360bt', false)) {
-            return $this->loader->load('sm-g360bt', $useragent);
-        }
-
-        if ($s->contains('sm-g360f', false)) {
-            return $this->loader->load('sm-g360f', $useragent);
-        }
-
-        if ($s->contains('sm-g360g', false)) {
-            return $this->loader->load('sm-g360g', $useragent);
-        }
-
-        if ($s->contains('sm-g360az', false)) {
-            return $this->loader->load('sm-g360az', $useragent);
-        }
-
-        if ($s->contains('sm-g357fz', false)) {
-            return $this->loader->load('sm-g357fz', $useragent);
-        }
-
-        if ($s->contains('sm-g355hq', false)) {
-            return $this->loader->load('sm-g355hq', $useragent);
-        }
-
-        if ($s->contains('sm-g355hn', false)) {
-            return $this->loader->load('sm-g355hn', $useragent);
-        }
-
-        if ($s->contains('sm-g355h', false)) {
-            return $this->loader->load('sm-g355h', $useragent);
-        }
-
-        if ($s->contains('sm-g355m', false)) {
-            return $this->loader->load('sm-g355m', $useragent);
-        }
-
-        if ($s->contains('sm-g3502l', false)) {
-            return $this->loader->load('sm-g3502l', $useragent);
-        }
-
-        if ($s->contains('sm-g3502t', false)) {
-            return $this->loader->load('sm-g3502t', $useragent);
-        }
-
-        if ($s->contains('sm-g3500', false)) {
-            return $this->loader->load('sm-g3500', $useragent);
-        }
-
-        if ($s->contains('sm-g350e', false)) {
-            return $this->loader->load('sm-g350e', $useragent);
-        }
-
-        if ($s->contains('sm-g350', false)) {
-            return $this->loader->load('sm-g350', $useragent);
-        }
-
-        if ($s->contains('sm-g318h', false)) {
-            return $this->loader->load('sm-g318h', $useragent);
-        }
-
-        if ($s->contains('sm-g313hu', false)) {
-            return $this->loader->load('sm-g313hu', $useragent);
-        }
-
-        if ($s->contains('sm-g313hn', false)) {
-            return $this->loader->load('sm-g313hn', $useragent);
-        }
-
-        if ($s->contains('sm-g310hn', false)) {
-            return $this->loader->load('sm-g310hn', $useragent);
-        }
-
-        if ($s->contains('sm-g130h', false)) {
-            return $this->loader->load('sm-g130h', $useragent);
-        }
-
-        if ($s->contains('sm-g130e', false)) {
-            return $this->loader->load('samsung sm-g130e', $useragent);
-        }
-
-        if ($s->contains('sm-g110h', false)) {
-            return $this->loader->load('sm-g110h', $useragent);
-        }
-
-        if ($s->contains('sm-e700f', false)) {
-            return $this->loader->load('sm-e700f', $useragent);
-        }
-
-        if ($s->contains('sm-e700h', false)) {
-            return $this->loader->load('sm-e700h', $useragent);
-        }
-
-        if ($s->contains('sm-e700m', false)) {
-            return $this->loader->load('sm-e700m', $useragent);
-        }
-
-        if ($s->contains('sm-e7000', false)) {
-            return $this->loader->load('sm-e7000', $useragent);
-        }
-
-        if ($s->contains('sm-e7009', false)) {
-            return $this->loader->load('sm-e7009', $useragent);
-        }
-
-        if ($s->contains('sm-e500h', false)) {
-            return $this->loader->load('sm-e500h', $useragent);
-        }
-
-        if ($s->contains('sm-c115', false)) {
-            return $this->loader->load('sm-c115', $useragent);
-        }
-
-        if ($s->contains('sm-c111', false)) {
-            return $this->loader->load('sm-c111', $useragent);
-        }
-
-        if ($s->contains('sm-c105', false)) {
-            return $this->loader->load('sm-c105', $useragent);
-        }
-
-        if ($s->contains('sm-c101', false)) {
-            return $this->loader->load('sm-c101', $useragent);
-        }
-
-        if ($s->contains('sm-z130h', false)) {
-            return $this->loader->load('sm-z130h', $useragent);
-        }
-
-        if ($s->contains('sm-b550h', false)) {
-            return $this->loader->load('sm-b550h', $useragent);
-        }
-
-        if ($s->contains('sgh-t999', false)) {
-            return $this->loader->load('sgh-t999', $useragent);
-        }
-
-        if ($s->contains('sgh-t989d', false)) {
-            return $this->loader->load('sgh-t989d', $useragent);
-        }
-
-        if ($s->contains('sgh-t989', false)) {
-            return $this->loader->load('sgh-t989', $useragent);
-        }
-
-        if ($s->contains('sgh-t959v', false)) {
-            return $this->loader->load('sgh-t959v', $useragent);
-        }
-
-        if ($s->contains('sgh-t959', false)) {
-            return $this->loader->load('sgh-t959', $useragent);
-        }
-
-        if ($s->contains('sgh-t899m', false)) {
-            return $this->loader->load('sgh-t899m', $useragent);
-        }
-
-        if ($s->contains('sgh-t889', false)) {
-            return $this->loader->load('sgh-t889', $useragent);
-        }
-
-        if ($s->contains('sgh-t859', false)) {
-            return $this->loader->load('sgh-t859', $useragent);
-        }
-
-        if ($s->contains('sgh-t839', false)) {
-            return $this->loader->load('sgh-t839', $useragent);
-        }
-
-        if ($s->containsAny(['sgh-t769', 'blaze'], false)) {
-            return $this->loader->load('sgh-t769', $useragent);
-        }
-
-        if ($s->contains('sgh-t759', false)) {
-            return $this->loader->load('sgh-t759', $useragent);
-        }
-
-        if ($s->contains('sgh-t669', false)) {
-            return $this->loader->load('sgh-t669', $useragent);
-        }
-
-        if ($s->contains('sgh-t528g', false)) {
-            return $this->loader->load('sgh-t528g', $useragent);
-        }
-
-        if ($s->contains('sgh-t499', false)) {
-            return $this->loader->load('sgh-t499', $useragent);
-        }
-
-        if ($s->contains('sgh-t399', false)) {
-            return $this->loader->load('samsung sgh-t399', $useragent);
-        }
-
-        if ($s->contains('sgh-m919', false)) {
-            return $this->loader->load('sgh-m919', $useragent);
-        }
-
-        if ($s->contains('sgh-i997r', false)) {
-            return $this->loader->load('sgh-i997r', $useragent);
-        }
-
-        if ($s->contains('sgh-i997', false)) {
-            return $this->loader->load('sgh-i997', $useragent);
-        }
-
-        if ($s->contains('SGH-I957R', false)) {
-            return $this->loader->load('sgh-i957r', $useragent);
-        }
-
-        if ($s->contains('SGH-i957', false)) {
-            return $this->loader->load('sgh-i957', $useragent);
-        }
-
-        if ($s->contains('sgh-i917', false)) {
-            return $this->loader->load('sgh-i917', $useragent);
-        }
-
-        if ($s->contains('sgh-i900v', false)) {
-            return $this->loader->load('sgh-i900v', $useragent);
-        }
-
-        if ($s->contains('sgh-i9000', false)) {
-            return $this->loader->load('sgh-i9000', $useragent);
-        }
-
-        if ($s->contains('sgh-i9008', false)) {
-            return $this->loader->load('sgh-i9008', $useragent);
-        }
-
-        if ($s->contains('sgh-i900', false)) {
-            return $this->loader->load('sgh-i900', $useragent);
-        }
-
-        if ($s->contains('sgh-i897', false)) {
-            return $this->loader->load('sgh-i897', $useragent);
-        }
-
-        if ($s->contains('sgh-i857', false)) {
-            return $this->loader->load('sgh-i857', $useragent);
-        }
-
-        if ($s->contains('sgh-i780', false)) {
-            return $this->loader->load('sgh-i780', $useragent);
-        }
-
-        if ($s->contains('sgh-i777', false)) {
-            return $this->loader->load('sgh-i777', $useragent);
-        }
-
-        if ($s->contains('sgh-i747m', false)) {
-            return $this->loader->load('sgh-i747m', $useragent);
-        }
-
-        if ($s->contains('sgh-i747', false)) {
-            return $this->loader->load('sgh-i747', $useragent);
-        }
-
-        if ($s->contains('sgh-i727r', false)) {
-            return $this->loader->load('sgh-i727r', $useragent);
-        }
-
-        if ($s->contains('sgh-i727', false)) {
-            return $this->loader->load('sgh-i727', $useragent);
-        }
-
-        if ($s->contains('sgh-i717', false)) {
-            return $this->loader->load('sgh-i717', $useragent);
-        }
-
-        if ($s->contains('sgh-i577', false)) {
-            return $this->loader->load('sgh-i577', $useragent);
-        }
-
-        if ($s->contains('sgh-i547', false)) {
-            return $this->loader->load('sgh-i547', $useragent);
-        }
-
-        if ($s->contains('sgh-i497', false)) {
-            return $this->loader->load('sgh-i497', $useragent);
-        }
-
-        if ($s->contains('sgh-i467', false)) {
-            return $this->loader->load('sgh-i467', $useragent);
-        }
-
-        if ($s->contains('sgh-i337m', false)) {
-            return $this->loader->load('sgh-i337m', $useragent);
-        }
-
-        if ($s->contains('sgh-i337', false)) {
-            return $this->loader->load('sgh-i337', $useragent);
-        }
-
-        if ($s->contains('sgh-i317', false)) {
-            return $this->loader->load('sgh-i317', $useragent);
-        }
-
-        if ($s->contains('sgh-i257', false)) {
-            return $this->loader->load('sgh-i257', $useragent);
-        }
-
-        if ($s->contains('sgh-f480i', false)) {
-            return $this->loader->load('sgh-f480i', $useragent);
-        }
-
-        if ($s->contains('sgh-f480', false)) {
-            return $this->loader->load('sgh-f480', $useragent);
-        }
-
-        if ($s->contains('sgh-e250i', false)) {
-            return $this->loader->load('sgh-e250i', $useragent);
-        }
-
-        if ($s->contains('sgh-e250', false)) {
-            return $this->loader->load('sgh-e250', $useragent);
-        }
-
-        if ($s->containsAny(['sgh-b100', 'sec-sghb100'], false)) {
-            return $this->loader->load('sgh-b100', $useragent);
-        }
-
-        if ($s->contains('sec-sghu600b', false)) {
-            return $this->loader->load('sgh-u600b', $useragent);
-        }
-
-        if ($s->contains('sgh-u800e', false)) {
-            return $this->loader->load('sgh-u800e', $useragent);
-        }
-
-        if ($s->contains('sgh-u800', false)) {
-            return $this->loader->load('sgh-u800', $useragent);
-        }
-
-        if ($s->contains('shv-e370k', false)) {
-            return $this->loader->load('shv-e370k', $useragent);
-        }
-
-        if ($s->contains('shv-e250k', false)) {
-            return $this->loader->load('shv-e250k', $useragent);
-        }
-
-        if ($s->contains('shv-e250l', false)) {
-            return $this->loader->load('shv-e250l', $useragent);
-        }
-
-        if ($s->contains('shv-e250s', false)) {
-            return $this->loader->load('shv-e250s', $useragent);
-        }
-
-        if ($s->contains('shv-e210l', false)) {
-            return $this->loader->load('shv-e210l', $useragent);
-        }
-
-        if ($s->contains('shv-e210k', false)) {
-            return $this->loader->load('shv-e210k', $useragent);
-        }
-
-        if ($s->contains('shv-e210s', false)) {
-            return $this->loader->load('shv-e210s', $useragent);
-        }
-
-        if ($s->contains('shv-e160s', false)) {
-            return $this->loader->load('shv-e160s', $useragent);
-        }
-
-        if ($s->contains('shw-m110s', false)) {
-            return $this->loader->load('shw-m110s', $useragent);
-        }
-
-        if ($s->contains('shw-m180s', false)) {
-            return $this->loader->load('shw-m180s', $useragent);
-        }
-
-        if ($s->contains('shw-m380s', false)) {
-            return $this->loader->load('shw-m380s', $useragent);
-        }
-
-        if ($s->contains('shw-m380w', false)) {
-            return $this->loader->load('shw-m380w', $useragent);
-        }
-
-        if ($s->contains('shw-m480w', false)) {
-            return $this->loader->load('shw-m480w', $useragent);
-        }
-
-        if ($s->contains('shw-m380k', false)) {
-            return $this->loader->load('shw-m380k', $useragent);
-        }
-
-        if ($s->contains('scl24', false)) {
-            return $this->loader->load('scl24', $useragent);
-        }
-
-        if ($s->contains('sch-u820', false)) {
-            return $this->loader->load('sch-u820', $useragent);
-        }
-
-        if ($s->contains('sch-u750', false)) {
-            return $this->loader->load('sch-u750', $useragent);
-        }
-
-        if ($s->contains('sch-u660', false)) {
-            return $this->loader->load('sch-u660', $useragent);
-        }
-
-        if ($s->contains('sch-u485', false)) {
-            return $this->loader->load('sch-u485', $useragent);
-        }
-
-        if ($s->contains('sch-r970', false)) {
-            return $this->loader->load('sch-r970', $useragent);
-        }
-
-        if ($s->contains('sch-r950', false)) {
-            return $this->loader->load('sch-r950', $useragent);
-        }
-
-        if ($s->contains('sch-r720', false)) {
-            return $this->loader->load('sch-r720', $useragent);
-        }
-
-        if ($s->contains('sch-r530u', false)) {
-            return $this->loader->load('sch-r530u', $useragent);
-        }
-
-        if ($s->contains('sch-r530c', false)) {
-            return $this->loader->load('sch-r530c', $useragent);
-        }
-
-        if ($s->contains('sch-n719', false)) {
-            return $this->loader->load('sch-n719', $useragent);
-        }
-
-        if ($s->contains('sch-m828c', false)) {
-            return $this->loader->load('sch-m828c', $useragent);
-        }
-
-        if ($s->contains('sch-i535', false)) {
-            return $this->loader->load('sch-i535', $useragent);
-        }
-
-        if ($s->contains('sch-i919', false)) {
-            return $this->loader->load('sch-i919', $useragent);
-        }
-
-        if ($s->contains('sch-i815', false)) {
-            return $this->loader->load('sch-i815', $useragent);
-        }
-
-        if ($s->contains('sch-i800', false)) {
-            return $this->loader->load('sch-i800', $useragent);
-        }
-
-        if ($s->contains('sch-i699', false)) {
-            return $this->loader->load('sch-i699', $useragent);
-        }
-
-        if ($s->contains('sch-i605', false)) {
-            return $this->loader->load('sch-i605', $useragent);
-        }
-
-        if ($s->contains('sch-i545', false)) {
-            return $this->loader->load('sch-i545', $useragent);
-        }
-
-        if ($s->contains('sch-i510', false)) {
-            return $this->loader->load('sch-i510', $useragent);
-        }
-
-        if ($s->contains('sch-i500', false)) {
-            return $this->loader->load('sch-i500', $useragent);
-        }
-
-        if ($s->contains('sch-i435', false)) {
-            return $this->loader->load('sch-i435', $useragent);
-        }
-
-        if ($s->contains('sch-i400', false)) {
-            return $this->loader->load('sch-i400', $useragent);
-        }
-
-        if ($s->contains('sch-i200', false)) {
-            return $this->loader->load('sch-i200', $useragent);
-        }
-
-        if ($s->contains('SCH-S720C', false)) {
-            return $this->loader->load('sch-s720c', $useragent);
-        }
-
-        if ($s->contains('GT-S8600', false)) {
-            return $this->loader->load('gt-s8600', $useragent);
-        }
-
-        if ($s->contains('GT-S8530', false)) {
-            return $this->loader->load('gt-s8530', $useragent);
-        }
-
-        if ($s->contains('s8500', false)) {
-            return $this->loader->load('gt-s8500', $useragent);
-        }
-
-        if ($s->containsAny(['samsung-s8300', 'gt-s8300'], false)) {
-            return $this->loader->load('gt-s8300', $useragent);
-        }
-
-        if ($s->containsAny(['samsung-s8003', 'gt-s8003'], false)) {
-            return $this->loader->load('gt-s8003', $useragent);
-        }
-
-        if ($s->containsAny(['samsung-s8000', 'gt-s8000'], false)) {
-            return $this->loader->load('gt-s8000', $useragent);
-        }
-
-        if ($s->containsAny(['samsung-s7710', 'gt-s7710'], false)) {
-            return $this->loader->load('gt-s7710', $useragent);
-        }
-
-        if ($s->contains('gt-s7582', false)) {
-            return $this->loader->load('gt-s7582', $useragent);
-        }
-
-        if ($s->contains('gt-s7580', false)) {
-            return $this->loader->load('gt-s7580', $useragent);
-        }
-
-        if ($s->contains('gt-s7562l', false)) {
-            return $this->loader->load('gt-s7562l', $useragent);
-        }
-
-        if ($s->contains('gt-s7562', false)) {
-            return $this->loader->load('gt-s7562', $useragent);
-        }
-
-        if ($s->contains('gt-s7560', false)) {
-            return $this->loader->load('gt-s7560', $useragent);
-        }
-
-        if ($s->contains('gt-s7530l', false)) {
-            return $this->loader->load('gt-s7530l', $useragent);
-        }
-
-        if ($s->contains('gt-s7530', false)) {
-            return $this->loader->load('gt-s7530', $useragent);
-        }
-
-        if ($s->contains('gt-s7500', false)) {
-            return $this->loader->load('gt-s7500', $useragent);
-        }
-
-        if ($s->contains('gt-s7392', false)) {
-            return $this->loader->load('gt-s7392', $useragent);
-        }
-
-        if ($s->contains('gt-s7390', false)) {
-            return $this->loader->load('gt-s7390', $useragent);
-        }
-
-        if ($s->contains('gt-s7330', false)) {
-            return $this->loader->load('gt-s7330', $useragent);
-        }
-
-        if ($s->contains('gt-s7275r', false)) {
-            return $this->loader->load('gt-s7275r', $useragent);
-        }
-
-        if ($s->contains('gt-s7275', false)) {
-            return $this->loader->load('gt-s7275', $useragent);
-        }
-
-        if ($s->contains('gt-s7272', false)) {
-            return $this->loader->load('gt-s7272', $useragent);
-        }
-
-        if ($s->contains('gt-s7270', false)) {
-            return $this->loader->load('gt-s7270', $useragent);
-        }
-
-        if ($s->contains('gt-s7262', false)) {
-            return $this->loader->load('gt-s7262', $useragent);
-        }
-
-        if ($s->contains('gt-s7250', false)) {
-            return $this->loader->load('gt-s7250', $useragent);
-        }
-
-        if ($s->contains('gt-s7233e', false)) {
-            return $this->loader->load('gt-s7233e', $useragent);
-        }
-
-        if ($s->contains('gt-s7230e', false)) {
-            return $this->loader->load('gt-s7230e', $useragent);
-        }
-
-        if ($s->containsAny(['samsung-s7220', 'gt-s7220'], false)) {
-            return $this->loader->load('gt-s7220', $useragent);
-        }
-
-        if ($s->contains('gt-s6810p', false)) {
-            return $this->loader->load('gt-s6810p', $useragent);
-        }
-
-        if ($s->contains('gt-s6810b', false)) {
-            return $this->loader->load('gt-s6810b', $useragent);
-        }
-
-        if ($s->contains('gt-s6810', false)) {
-            return $this->loader->load('gt-s6810', $useragent);
-        }
-
-        if ($s->contains('gt-s6802', false)) {
-            return $this->loader->load('gt-s6802', $useragent);
-        }
-
-        if ($s->contains('gt-s6500d', false)) {
-            return $this->loader->load('gt-s6500d', $useragent);
-        }
-
-        if ($s->contains('gt-s6500t', false)) {
-            return $this->loader->load('gt-s6500t', $useragent);
-        }
-
-        if ($s->contains('gt-s6500', false)) {
-            return $this->loader->load('gt-s6500', $useragent);
-        }
-
-        if ($s->contains('gt-s6312', false)) {
-            return $this->loader->load('gt-s6312', $useragent);
-        }
-
-        if ($s->contains('gt-s6310n', false)) {
-            return $this->loader->load('gt-s6310n', $useragent);
-        }
-
-        if ($s->contains('gt-s6310', false)) {
-            return $this->loader->load('gt-s6310', $useragent);
-        }
-
-        if ($s->contains('gt-s6102b', false)) {
-            return $this->loader->load('gt-s6102b', $useragent);
-        }
-
-        if ($s->contains('gt-s6102', false)) {
-            return $this->loader->load('gt-s6102', $useragent);
-        }
-
-        if ($s->contains('gt-s5839i', false)) {
-            return $this->loader->load('gt-s5839i', $useragent);
-        }
-
-        if ($s->contains('gt-s5830l', false)) {
-            return $this->loader->load('gt-s5830l', $useragent);
-        }
-
-        if ($s->contains('gt-s5830i', false)) {
-            return $this->loader->load('gt-s5830i', $useragent);
-        }
-
-        if ($s->contains('gt-s5830c', false)) {
-            return $this->loader->load('gt-s5830c', $useragent);
-        }
-
-        if ($s->contains('gt-s5570i', false)) {
-            return $this->loader->load('gt-s5570i', $useragent);
-        }
-
-        if ($s->contains('gt-s5570', false)) {
-            return $this->loader->load('gt-s5570', $useragent);
-        }
-
-        if ($s->containsAny(['gt-s5830', 'ace'], false)) {
-            return $this->loader->load('gt-s5830', $useragent);
-        }
-
-        if ($s->contains('gt-s5780', false)) {
-            return $this->loader->load('gt-s5780', $useragent);
-        }
-
-        if ($s->contains('gt-s5750e', false)) {
-            return $this->loader->load('gt-s5750e orange', $useragent);
-        }
-
-        if ($s->contains('gt-s5690', false)) {
-            return $this->loader->load('gt-s5690', $useragent);
-        }
-
-        if ($s->contains('gt-s5670', false)) {
-            return $this->loader->load('gt-s5670', $useragent);
-        }
-
-        if ($s->contains('gt-s5660', false)) {
-            return $this->loader->load('gt-s5660', $useragent);
-        }
-
-        if ($s->contains('gt-s5620', false)) {
-            return $this->loader->load('gt-s5620', $useragent);
-        }
-
-        if ($s->contains('gt-s5560i', false)) {
-            return $this->loader->load('gt-s5560i', $useragent);
-        }
-
-        if ($s->contains('gt-s5560', false)) {
-            return $this->loader->load('gt-s5560', $useragent);
-        }
-
-        if ($s->contains('gt-s5380', false)) {
-            return $this->loader->load('gt-s5380', $useragent);
-        }
-
-        if ($s->contains('gt-s5369', false)) {
-            return $this->loader->load('gt-s5369', $useragent);
-        }
-
-        if ($s->contains('gt-s5363', false)) {
-            return $this->loader->load('gt-s5363', $useragent);
-        }
-
-        if ($s->contains('gt-s5360', false)) {
-            return $this->loader->load('gt-s5360', $useragent);
-        }
-
-        if ($s->contains('gt-s5330', false)) {
-            return $this->loader->load('gt-s5330', $useragent);
         }
 
         if ($s->contains('gt-s5310m', false)) {

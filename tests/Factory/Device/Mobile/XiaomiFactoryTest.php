@@ -324,6 +324,16 @@ class XiaomiFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; Redmi Note 3 Build/LMY47V) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'Redmi Note 3',
+                'Redmi Note 3',
+                'Xiaomi Tech',
+                'Xiaomi',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

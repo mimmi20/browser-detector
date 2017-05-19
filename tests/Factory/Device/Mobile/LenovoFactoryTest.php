@@ -1024,6 +1024,26 @@ class LenovoFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; Lenovo A6020a40 Build/LMY47V) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'A6020a40',
+                'Vibe K5',
+                'Lenovo',
+                'Lenovo',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 5.1; en-US; Lenovo TB3-710I Build/LMY47I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'TB3-710I',
+                'Tab3 7 Essential',
+                'Lenovo',
+                'Lenovo',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -1754,6 +1754,26 @@ class HtcFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 5.1; en-US; HTC Desire 728 dual sim Build/LMY47D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'Desire 728',
+                'Desire 728',
+                'HTC',
+                'HTC',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 5.0.2; en-US; HTC One ME dual sim Build/LRX22G) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'One ME',
+                'One ME',
+                'HTC',
+                'HTC',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

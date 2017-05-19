@@ -21,27 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicromaxFactory implements Factory\FactoryInterface
+class UlefoneFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'e455' => 'micromax e455',
-        'a177' => 'micromax a177',
-        'a120' => 'a120',
-        'a116' => 'a116',
-        'a114' => 'a114',
-        'a107' => 'micromax a107',
-        'a101' => 'micromax a101',
-        'a093' => 'a093',
-        'a065' => 'a065',
-        'a99'  => 'micromax a99',
-        'a59'  => 'a59',
-        'a40'  => 'a40',
-        'a35'  => 'a35',
-        'a27'  => 'a27',
-        'x650' => 'x650',
+        'be pro' => 'ulefone be pro',
     ];
 
     /**
@@ -73,6 +59,6 @@ class MicromaxFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general micromax device', $useragent);
+        return $this->loader->load('general ulefone device', $useragent);
     }
 }

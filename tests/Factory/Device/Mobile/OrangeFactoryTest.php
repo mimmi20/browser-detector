@@ -124,6 +124,16 @@ class OrangeFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-gb; Orange Zilo Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30',
+                'Zilo',
+                'Zilo',
+                'Orange S.A.',
+                'Orange',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -7894,6 +7894,36 @@ class SamsungFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; SM-J105F Build/LMY47V) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'SM-J105F',
+                'Galaxy J1 Mini',
+                'Samsung',
+                'Samsung',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.4; en-US; SM-T116NU Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'SM-T116NU',
+                'Galaxy Tab 3 V',
+                'Samsung',
+                'Samsung',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 6.0.1; en-US; SM-G550FY Build/MMB29K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.1.5.890 U3/0.8.0 Mobile Safari/534.30',
+                'SM-G550FY',
+                'Galaxy On5',
+                'Samsung',
+                'Samsung',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

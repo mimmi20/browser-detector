@@ -244,6 +244,36 @@ class MicromaxFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 5.0.2; en-US; Micromax E455 Build/LRX22G) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'E455',
+                'Canvas Nitro 4G',
+                'Micromax',
+                'Micromax',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 5.0; en-US; Micromax A107 Build/LRX21M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'A107',
+                'Canvas Fire 4',
+                'Micromax',
+                'Micromax',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; Micromax A177 Build/MicromaxA177) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'A177',
+                'Canvas Juice',
+                'Micromax',
+                'Micromax',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

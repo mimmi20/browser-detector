@@ -524,6 +524,26 @@ class AsusFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; ASUS_Z007 Build/KVT49L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'Z007',
+                'Zenfone C ZC451CG',
+                'Asus',
+                'Asus',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; ASUS_T00I Build/KVT49L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30',
+                'T00I',
+                'Zenfone 4',
+                'Asus',
+                'Asus',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -124,6 +124,16 @@ class AllviewFactoryTest extends \PHPUnit\Framework\TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; ro-ro; A4You Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'A4You',
+                'A4 You',
+                'Allview Electronics SP. Z O.O.',
+                'Allview',
+                'Smartphone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
