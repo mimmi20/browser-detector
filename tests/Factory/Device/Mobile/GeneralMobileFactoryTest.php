@@ -103,27 +103,6 @@ class GeneralMobileFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general General Mobile Device',
-                'general General Mobile Device',
-                'General Mobile',
-                'General Mobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; tr-tr; GM Discovery II Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'Discovery II',
-                'Discovery II',
-                'General Mobile',
-                'General Mobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/generalmobile.json'), true);
     }
 }

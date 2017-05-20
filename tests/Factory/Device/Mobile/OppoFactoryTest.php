@@ -103,57 +103,6 @@ class OppoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general OPPO Device',
-                'general OPPO Device',
-                'OPPO',
-                'OPPO',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.1; R815 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.63 Mobile Safari/537.36 OPR/28.0.1764.89648',
-                'R815',
-                'R815',
-                'OPPO',
-                'OPPO',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; x909 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.0.2.523 U3/0.8.0 Mobile Safari/534.30',
-                'X909',
-                'Find 5',
-                'OPPO',
-                'OPPO',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'OPPO_R813T/1.0 Linux/3.0.35.7 Android/4.0 Release/11.15.2012 Browser/AppleWebKit534.30 Mobile Safari/534.30 MBBMS/2.2',
-                'R813T',
-                'R813T',
-                'OPPO',
-                'OPPO',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.4; R8106 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
-                'R8106',
-                'R5',
-                'OPPO',
-                'OPPO',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/oppo.json'), true);
     }
 }

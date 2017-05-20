@@ -103,27 +103,6 @@ class VelocityMicroFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Velocity Micro Device',
-                'general Velocity Micro Device',
-                'Velocity Micro',
-                'Velocity Micro',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; en-us; Velocitymicro/T408) AppleWebKit/530.17(KHTML, like Gecko) Version/4.0Safari/530.17',
-                'Cruz',
-                'T408',
-                'Velocity Micro',
-                'Velocity Micro',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/velocitymicro.json'), true);
     }
 }

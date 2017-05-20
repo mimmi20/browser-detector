@@ -103,37 +103,6 @@ class SunstechFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Sunstech Device',
-                'general Sunstech Device',
-                'Sunstech',
-                'Sunstech',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; es-es; TAB785DUAL Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'TAB785 DUAL',
-                'TAB785 DUAL',
-                'Sunstech',
-                'Sunstech',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.4.2; ru-; TAB917QC-8GB Build/KVT49L) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.6.0.7',
-                'TAB917QC 8GB',
-                'TAB917QC 8GB',
-                'Sunstech',
-                'Sunstech',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/sunstech.json'), true);
     }
 }

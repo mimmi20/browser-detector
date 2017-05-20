@@ -103,27 +103,6 @@ class MaxtronFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Maxtron Device',
-                'general Maxtron Device',
-                'Maxtron',
-                'Maxtron',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; V1 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'V1',
-                'V1',
-                'Maxtron',
-                'Maxtron',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/maxtron.json'), true);
     }
 }

@@ -103,27 +103,6 @@ class ElephoneFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Elephone Device',
-                'general Elephone Device',
-                'Elephone',
-                'Elephone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; P3000 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.68 Mobile Safari/537.36',
-                'P3000',
-                'P3000',
-                'Elephone',
-                'Elephone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/elephone.json'), true);
     }
 }

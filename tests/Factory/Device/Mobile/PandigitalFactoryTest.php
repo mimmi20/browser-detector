@@ -103,47 +103,6 @@ class PandigitalFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Pandigital Device',
-                'general Pandigital Device',
-                'Pandigital',
-                'Pandigital',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.1; en-us; pandigitalsprnova1/sourceidDL00000025) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'SuperNova',
-                'SuperNova',
-                'Pandigital',
-                'Pandigital',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android Eclair; md-us Build/pandigitalopc1/sourceidDL00000009) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
-                'Novel',
-                'Novel',
-                'Pandigital',
-                'Pandigital',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.0; en-us; pandigital9hr) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
-                '9hr',
-                '9hr',
-                'Pandigital',
-                'Pandigital',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/pandigital.json'), true);
     }
 }

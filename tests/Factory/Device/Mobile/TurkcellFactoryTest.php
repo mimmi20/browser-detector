@@ -103,27 +103,6 @@ class TurkcellFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Turkcell Device',
-                'general Turkcell Device',
-                'Turkcell Iletisim Hizmetleri A.S.',
-                'Turkcell',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Dalvik/1.6.0 (Linux; U; Android 4.4.2; TURKCELL T50 Build/KVT49L)',
-                'T50',
-                'T50',
-                'Turkcell Iletisim Hizmetleri A.S.',
-                'Turkcell',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/turkcell.json'), true);
     }
 }

@@ -103,37 +103,6 @@ class FairphoneFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Fairphone Device',
-                'general Fairphone Device',
-                'Fairphone',
-                'Fairphone',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-ch; FP1U Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'FP1U',
-                'FP1U',
-                'Fairphone',
-                'Fairphone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-ch; FP1 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'FP1',
-                'FP1',
-                'Fairphone',
-                'Fairphone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/fairphone.json'), true);
     }
 }

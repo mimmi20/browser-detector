@@ -103,37 +103,6 @@ class YuandaoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general YUANDAO Device',
-                'general YUANDAO Device',
-                'YUANDAO',
-                'YUANDAO',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; N90 DUAL CORE2 V12 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'N90 DUAL CORE2',
-                'N90 DUAL CORE2',
-                'YUANDAO',
-                'YUANDAO',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; N90FHDRK Build/N90FHDRK) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Safari/537.36',
-                'N90FHDRK',
-                'Vido N90FHD',
-                'YUANDAO',
-                'YUANDAO',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/yuandao.json'), true);
     }
 }

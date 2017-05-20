@@ -103,37 +103,6 @@ class O2FactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general O2 Device',
-                'general O2 Device',
-                'O2',
-                'O2',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Xda_orbit_2/240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)',
-                'Xda Orbit II',
-                'Xda Orbit II',
-                'O2',
-                'O2',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Xda_Diamond_2 Opera/9.50 (Windows NT 5.1; U; de)',
-                'Xda Diamond 2',
-                'Xda Diamond 2',
-                'HTC',
-                'O2',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/o2.json'), true);
     }
 }

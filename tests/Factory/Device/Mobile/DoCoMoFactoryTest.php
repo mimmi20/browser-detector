@@ -103,37 +103,6 @@ class DoCoMoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general DoCoMo Device',
-                'general DoCoMo Device',
-                'NTT DoCoMo',
-                'NTT DoCoMo',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'DoCoMo/2.0 P905i(c100;TB;W20H13)',
-                'P905i',
-                'P905i',
-                'NTT DoCoMo',
-                'NTT DoCoMo',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-            [
-                'DoCoMo/2.0 P900i(c100;TB;W24H11) (compatible; ichiro/mobile goo;+http://search.goo.ne.jp/option/use/sub4/sub4-1/)',
-                'P900i',
-                'P900i',
-                'NTT DoCoMo',
-                'NTT DoCoMo',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/docomo.json'), true);
     }
 }

@@ -103,27 +103,6 @@ class MantaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Manta Device',
-                'general Manta Device',
-                'Manta',
-                'Manta',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; MID802 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.82 Safari/537.36',
-                'MID802',
-                'Power Duo HD',
-                'Manta',
-                'Manta',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/manta.json'), true);
     }
 }

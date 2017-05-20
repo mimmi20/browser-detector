@@ -103,27 +103,6 @@ class ExeqFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Exeq Device',
-                'general Exeq Device',
-                'Exeq',
-                'Exeq',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.2; EXEQ P-720 Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31',
-                'P-720',
-                'P-720',
-                'Exeq',
-                'Exeq',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/exeq.json'), true);
     }
 }

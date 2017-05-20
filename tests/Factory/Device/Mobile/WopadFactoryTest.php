@@ -103,37 +103,6 @@ class WopadFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Wopad Device',
-                'general Wopad Device',
-                'Wopad',
-                'Wopad',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Q10S Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36',
-                'Q10S',
-                'Q10S',
-                'Wopad',
-                'Wopad',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android v1.02.11-2010.12.9_English; de-de; WOPAD 7001 Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
-                'general Wopad Device',
-                'general Wopad Device',
-                'Wopad',
-                'Wopad',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/wopad.json'), true);
     }
 }

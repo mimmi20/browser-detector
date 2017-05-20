@@ -103,27 +103,6 @@ class EbodaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general E-Boda Device',
-                'general E-Boda Device',
-                'E-Boda Distribution SRL.',
-                'E-Boda',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ro-ro; E-Boda Rainbow V47 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'Rainbow V47',
-                'Rainbow V47',
-                'E-Boda Distribution SRL.',
-                'E-Boda',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/eboda.json'), true);
     }
 }

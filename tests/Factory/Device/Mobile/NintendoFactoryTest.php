@@ -103,67 +103,6 @@ class NintendoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Nintendo Device',
-                'general Nintendo Device',
-                'Nintendo',
-                'Nintendo',
-                'Mobile Device',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.4.2.12 NintendoBrowser/4.3.1.11264.EU',
-                'WiiU',
-                'WiiU',
-                'Nintendo',
-                'Nintendo',
-                'TV Device',
-                false,
-                'mouse',
-            ],
-            [
-                'Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7610.EU',
-                '3DS',
-                '3DS',
-                'Nintendo',
-                'Nintendo',
-                'Mobile Device',
-                false,
-                'mouse',
-            ],
-            [
-                'Opera/9.30 (Nintendo Wii; U; ; 3642; de)',
-                'Wii',
-                'Wii',
-                'Nintendo',
-                'Nintendo',
-                'TV Device',
-                false,
-                'mouse',
-            ],
-            [
-                'Internet ScreenBrowser 3.0 (Nintendo Wii; WiiOS 3.4)',
-                'Wii',
-                'Wii',
-                'Nintendo',
-                'Nintendo',
-                'TV Device',
-                false,
-                'mouse',
-            ],
-            [
-                'Opera/9.50 (Nintendo DSi; Opera/507; U; de)',
-                'DSi',
-                'DSi',
-                'Nintendo',
-                'Nintendo',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/nintendo.json'), true);
     }
 }

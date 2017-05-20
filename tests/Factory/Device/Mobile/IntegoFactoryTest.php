@@ -103,27 +103,6 @@ class IntegoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Intego Device',
-                'general Intego Device',
-                'Intego',
-                'Intego',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.4; PX-0905 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.109 Safari/537.36',
-                'PX-0905',
-                'PX-0905',
-                'Intego',
-                'Intego',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/intego.json'), true);
     }
 }

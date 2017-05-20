@@ -103,27 +103,6 @@ class KeenerFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Keener Device',
-                'general Keener Device',
-                'Keener',
-                'Keener',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; K-8S Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 YaBrowser/14.5.1847.18211.00 Safari/537.36',
-                'K-8S',
-                'K-8S',
-                'Keener',
-                'Keener',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/keener.json'), true);
     }
 }

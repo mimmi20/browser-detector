@@ -103,57 +103,6 @@ class OvermaxFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Overmax Device',
-                'general Overmax Device',
-                'Overmax',
-                'Overmax',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.1; OV-SteelCore-B Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
-                'SteelCore',
-                'SteelCore',
-                'Overmax',
-                'Overmax',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; OV-Solution 10II Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
-                'Solution 10 II 3G',
-                'Solution 10 II 3G',
-                'Overmax',
-                'Overmax',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Solution 7III Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
-                'Solution 7 III',
-                'Solution 7 III',
-                'Overmax',
-                'Overmax',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; OV-Quattor 10+ Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
-                'Quattor 10+',
-                'Quattor 10+',
-                'Overmax',
-                'Overmax',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/overmax.json'), true);
     }
 }

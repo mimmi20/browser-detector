@@ -103,27 +103,6 @@ class PompFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Pomp Device',
-                'general Pomp Device',
-                'Pomp',
-                'Pomp',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.1; POMP W88 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Mobile Safari/537.36',
-                'W88',
-                'W88',
-                'Pomp',
-                'Pomp',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/pomp.json'), true);
     }
 }

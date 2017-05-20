@@ -103,27 +103,6 @@ class MytabFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general myTAB Device',
-                'general myTAB Device',
-                'myTAB',
-                'myTAB',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; myTAB Mini 3G Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19',
-                'Mini 3G',
-                'Mini 3G',
-                'myTAB',
-                'myTAB',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/mytab.json'), true);
     }
 }

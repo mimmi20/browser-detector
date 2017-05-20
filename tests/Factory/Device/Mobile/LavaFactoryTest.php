@@ -103,37 +103,6 @@ class LavaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Lava Device',
-                'general Lava Device',
-                'Lava',
-                'Lava',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'LAVA Spark284/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320',
-                'Spark 284',
-                'Spark 284',
-                'Lava',
-                'Lava',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'KKT20/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320',
-                'KKT20',
-                'KKT20',
-                'Lava',
-                'Lava',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/lava.json'), true);
     }
 }

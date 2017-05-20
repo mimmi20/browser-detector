@@ -103,37 +103,6 @@ class MtcFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general MTC Device',
-                'general MTC Device',
-                'MTC',
-                'MTC',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; MTC SMART Run Build/ARK) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 ACHEETAHI/2100501044',
-                'SMART Run',
-                'SMART Run',
-                'MTC',
-                'MTC',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; MTC 982 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30 SVN/150HWG1',
-                '982',
-                '982',
-                'MTC',
-                'MTC',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/mtc.json'), true);
     }
 }

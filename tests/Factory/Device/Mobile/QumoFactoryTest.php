@@ -103,27 +103,6 @@ class QumoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Qumo Device',
-                'general Qumo Device',
-                'Qumo',
-                'Qumo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ru; QUMO_QUEST_450) U2/1.0.0 UCBrowser/9.9.1.554 Mobile',
-                'QUEST 450',
-                'QUEST 450',
-                'Qumo',
-                'Qumo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/qumo.json'), true);
     }
 }

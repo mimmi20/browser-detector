@@ -103,27 +103,6 @@ class SymphonyFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Symphony Device',
-                'general Symphony Device',
-                'Symphony',
-                'Symphony',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Symphony W82 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'W82',
-                'Xplorer',
-                'Symphony',
-                'Symphony',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/symphony.json'), true);
     }
 }

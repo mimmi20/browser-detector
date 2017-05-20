@@ -103,27 +103,6 @@ class HaipaiFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Haipai Device',
-                'general Haipai Device',
-                'Haipai',
-                'Haipai',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 5.0.99; Haipai_Noble_I9220 Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.81 Mobile Safari/537.36 OPR/28.0.1764.90386',
-                'I9220',
-                'Noble',
-                'Haipai',
-                'Haipai',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/haipai.json'), true);
     }
 }

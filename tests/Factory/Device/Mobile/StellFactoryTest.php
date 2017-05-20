@@ -103,27 +103,6 @@ class StellFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general S-TELL Device',
-                'general S-TELL Device',
-                'S-TELL',
-                'S-TELL',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ru; S-TELL_M260) U2/1.0.0 UCBrowser/10.1.2.571 Mobile',
-                'M260',
-                'M260',
-                'S-TELL',
-                'S-TELL',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/stell.json'), true);
     }
 }

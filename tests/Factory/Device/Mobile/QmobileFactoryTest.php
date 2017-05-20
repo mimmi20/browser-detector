@@ -103,57 +103,6 @@ class QmobileFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general QMobile Device',
-                'general QMobile Device',
-                'QMobile',
-                'QMobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; QMobile A10 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'A10',
-                'Noir A10',
-                'QMobile',
-                'QMobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; QMobile X60 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'X60',
-                'Noir X60',
-                'QMobile',
-                'QMobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; QMobile A290 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'A290',
-                'Noir A290',
-                'QMobile',
-                'QMobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; QMobile i7 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.92 Mobile Safari/537.36',
-                'I7',
-                'I7',
-                'QMobile',
-                'QMobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/qmobile.json'), true);
     }
 }

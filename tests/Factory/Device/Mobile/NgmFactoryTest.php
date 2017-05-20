@@ -103,47 +103,6 @@ class NgmFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general NGM Device',
-                'general NGM Device',
-                'NGM',
-                'NGM',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; NGM Miracle Build/IMM76D) AppleWebKit/534.30 KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'WeMove Miracle',
-                'WeMove Miracle',
-                'NGM',
-                'NGM',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-            [
-                'NGM Dynamic Racing 2/V2 Linux/3.0.13 Android/4.2 Release/02.15.2012 Browser/AppleWebKit534.30 Mobile Safari/534.30 MBBMS/2.2 System/Android 4.2.2;',
-                'Dynamic Racing GP',
-                'Dynamic Racing GP',
-                'NGM',
-                'NGM',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; it-it; Forward_Art Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'Forward Art',
-                'Forward Art',
-                'NGM',
-                'NGM',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/ngm.json'), true);
     }
 }

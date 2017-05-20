@@ -103,27 +103,6 @@ class FlytouchFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Flytouch Device',
-                'general Flytouch Device',
-                'Flytouch',
-                'Flytouch',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Flytouch 9 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36',
-                '9',
-                'SuperPAD IX',
-                'Flytouch',
-                'Flytouch',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/flytouch.json'), true);
     }
 }

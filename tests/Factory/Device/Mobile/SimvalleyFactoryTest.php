@@ -103,37 +103,6 @@ class SimvalleyFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Simvalley Device',
-                'general Simvalley Device',
-                'Simvalley',
-                'Simvalley',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.5; de-de; SPX-5_3G Build/GRJ90) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'SPX-5 3G',
-                'SPX-5 3G',
-                'Simvalley',
-                'Simvalley',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.5; de-de; SPX-5 Build/GRJ90) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'SPX-5',
-                'SPX-5',
-                'Simvalley',
-                'Simvalley',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/simvalley.json'), true);
     }
 }

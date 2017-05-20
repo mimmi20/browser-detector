@@ -103,27 +103,6 @@ class GnetFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general G Net Device',
-                'general G Net Device',
-                'G Net International (Thailand) Co Ltd',
-                'G Net',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.4; th-th; GNET Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'G-Pad',
-                'G-Pad Explorer V',
-                'G Net International (Thailand) Co Ltd',
-                'G Net',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/gnet.json'), true);
     }
 }

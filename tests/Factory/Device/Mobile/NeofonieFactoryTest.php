@@ -103,27 +103,6 @@ class NeofonieFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Neofonie Device',
-                'general Neofonie Device',
-                'WeTab GmbH',
-                'WeTab',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (X11; U; Linux i686; de-DE) AppleWebKit/534.3 (KHTML, like Gecko) WeTab-Browser Safari/534.3',
-                'WeTab',
-                'WeTab',
-                'WeTab GmbH',
-                'WeTab',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/neofonie.json'), true);
     }
 }

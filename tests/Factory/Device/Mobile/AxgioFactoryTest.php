@@ -103,47 +103,6 @@ class AxgioFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Axgio Device',
-                'general Axgio Device',
-                'Axgio',
-                'Axgio',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; WING-W2 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.00 Mobile Safari/537.36',
-                'Wing W2',
-                'Wing W2',
-                'Axgio',
-                'Axgio',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Neon-N1 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36',
-                'Neon N1',
-                'Neon N1',
-                'Axgio',
-                'Axgio',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Axgio Neon N2Q Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36',
-                'general Axgio Device',
-                'general Axgio Device',
-                'Axgio',
-                'Axgio',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/axgio.json'), true);
     }
 }

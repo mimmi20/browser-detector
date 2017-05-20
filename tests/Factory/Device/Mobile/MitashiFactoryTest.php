@@ -103,27 +103,6 @@ class MitashiFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Mitashi Device',
-                'general Mitashi Device',
-                'Mitashi',
-                'Mitashi',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.4; AP-105 Build/IMM76D) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 YaBrowser/1.0.1364.172 Safari/537.22',
-                'AP-105',
-                'Play Duo King',
-                'Mitashi',
-                'Mitashi',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/mitashi.json'), true);
     }
 }

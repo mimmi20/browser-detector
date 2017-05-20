@@ -103,27 +103,6 @@ class SunupFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Sunup Device',
-                'general Sunup Device',
-                'Sunup',
-                'Sunup',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; OK999 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 YaBrowser/14.10.2062.12160.00 Mobile Safari/537.36',
-                'OK999',
-                'OK999',
-                'Sunup',
-                'Sunup',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/sunup.json'), true);
     }
 }

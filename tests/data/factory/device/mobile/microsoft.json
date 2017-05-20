@@ -1,0 +1,28 @@
+[
+    {
+        "ua": "this is a fake ua to trigger the fallback",
+        "codeName": "general Microsoft Device",
+        "marketingName": "general Microsoft Device",
+        "manufacturer": "Microsoft Corporation",
+        "brand": "Microsoft",
+        "type": "Tablet",
+        "dualOrientation": true,
+        "pointingMethod": "touchscreen",
+        "width": null,
+        "height": null,
+        "colors": null
+    },
+    {
+        "ua": "Mozilla\/5.0 (compatible; MSIE 10.0; Windows NT 6.3; ARM; Trident\/6.0; Touch)",
+        "codeName": "Windows RT Tablet",
+        "marketingName": "Windows RT Tablet",
+        "manufacturer": "Microsoft Corporation",
+        "brand": "Microsoft",
+        "type": "Tablet",
+        "dualOrientation": true,
+        "pointingMethod": "touchscreen",
+        "width": null,
+        "height": null,
+        "colors": null
+    }
+]

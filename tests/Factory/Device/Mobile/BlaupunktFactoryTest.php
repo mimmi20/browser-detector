@@ -103,47 +103,6 @@ class BlaupunktFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Blaupunkt Device',
-                'general Blaupunkt Device',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 5.1; Atlantis 1010A Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Safari/537.36',
-                'Atlantis 1010A',
-                'Atlantis 1010A',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Endeavour 1010 Build/ONDA_MID) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'Endeavour 1010',
-                'Endeavour 1010',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Endeavour_101L Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'Endeavour 101L',
-                'Endeavour 101L',
-                'Blaupunkt',
-                'Blaupunkt',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/blaupunkt.json'), true);
     }
 }

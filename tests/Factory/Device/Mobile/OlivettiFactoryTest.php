@@ -103,47 +103,6 @@ class OlivettiFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Olivetti Device',
-                'general Olivetti Device',
-                'Olivetti',
-                'Olivetti',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; OP111 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'OP111',
-                'OP111',
-                'Olivetti',
-                'Olivetti',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 3.1; OP110 Build/HMJ37) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Safari/537.31 OPR/14.0.1074.58201',
-                'OP110',
-                'OP110',
-                'Olivetti',
-                'Olivetti',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.2; es-es; OP070 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'Olipad 70',
-                'Olipad Smart',
-                'Olivetti',
-                'Olivetti',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/olivetti.json'), true);
     }
 }

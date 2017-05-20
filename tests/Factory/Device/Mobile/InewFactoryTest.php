@@ -103,27 +103,6 @@ class InewFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general iNew Device',
-                'general iNew Device',
-                'iNew',
-                'iNew',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; V3 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.86 Mobile Safari/537.36',
-                'V3',
-                'V3',
-                'iNew',
-                'iNew',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/inew.json'), true);
     }
 }

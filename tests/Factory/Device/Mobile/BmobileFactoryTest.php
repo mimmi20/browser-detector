@@ -103,37 +103,6 @@ class BmobileFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Bmobile Device',
-                'general Bmobile Device',
-                'Bmobile',
-                'Bmobile',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; es-es; AX512 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) FlyFlow/1.4 Version/4.0 Mobile Safari/534.30',
-                'AX512',
-                'AX512',
-                'Bmobile',
-                'Bmobile',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; Bmobile_AX540 Build/IMM76D) AppleWebKit/534.30 (KHMTL, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'AX540',
-                'AX540',
-                'Bmobile',
-                'Bmobile',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/bmobile.json'), true);
     }
 }

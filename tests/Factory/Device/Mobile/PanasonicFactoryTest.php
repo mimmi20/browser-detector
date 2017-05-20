@@ -103,47 +103,6 @@ class PanasonicFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Panasonic Device',
-                'general Panasonic Device',
-                'Panasonic',
-                'Panasonic',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.4; ru-ru; dL1 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'dL1',
-                'Eluga',
-                'Panasonic',
-                'Panasonic',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.4; de-; Panasonic KX-PRXA15 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'general Panasonic Device',
-                'general Panasonic Device',
-                'Panasonic',
-                'Panasonic',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Panasonic P55 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Mobile Safari/537.36',
-                'P55',
-                'Novo',
-                'Panasonic',
-                'Panasonic',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/panasonic.json'), true);
     }
 }

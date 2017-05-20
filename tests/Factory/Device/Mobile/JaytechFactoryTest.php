@@ -103,37 +103,6 @@ class JaytechFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general JAY-tech Device',
-                'general JAY-tech Device',
-                'JAY-tech',
-                'JAY-tech',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; TPC-PA10.1M Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'TPC-PA10.1M',
-                'TPC-PA10.1M',
-                'JAY-tech',
-                'JAY-tech',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; JAY-TECH Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'general JAY-tech Device',
-                'general JAY-tech Device',
-                'JAY-tech',
-                'JAY-tech',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/jaytech.json'), true);
     }
 }

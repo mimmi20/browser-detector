@@ -103,67 +103,6 @@ class ViewSonicFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general ViewSonic Device',
-                'general ViewSonic Device',
-                'ViewSonic',
-                'ViewSonic',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; ViewPad 10S Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'ViewPad 10S',
-                'ViewPad 10S',
-                'ViewSonic',
-                'ViewSonic',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; ViewPad 10e Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'ViewPad 10e',
-                'ViewPad 10e',
-                'ViewSonic',
-                'ViewSonic',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3;en-us; ViewSonic-ViewPad7e build/ERE27) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'ViewPad 7e',
-                'ViewPad 7e',
-                'ViewSonic',
-                'ViewSonic',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; ViewPad7 Build/FRG83G) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'ViewPad7',
-                'ViewPad7',
-                'ViewSonic',
-                'ViewSonic',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.7; de-de; ViewSonic-V350 Build/GWK74) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'V350',
-                'V350',
-                'ViewSonic',
-                'ViewSonic',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/viewsonic.json'), true);
     }
 }

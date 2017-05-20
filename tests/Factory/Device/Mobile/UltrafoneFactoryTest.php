@@ -103,27 +103,6 @@ class UltrafoneFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general ultrafone Device',
-                'general ultrafone Device',
-                'ultrafone',
-                'ultrafone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'ultrafone 303 Linux/3.0.13 Android/4.0.4 Release/06.19.2013 Browser/AppleWebKit534.30 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mobile Safari/534.30 Android 4.0.1;',
-                '303',
-                '303',
-                'ultrafone',
-                'ultrafone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/ultrafone.json'), true);
     }
 }

@@ -103,27 +103,6 @@ class GooPhoneFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general GooPhone Device',
-                'general GooPhone Device',
-                'GooPhone',
-                'GooPhone',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; GOOPHONE S4 MEGA Build/GOOPHONE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Mobile Safari/537.36',
-                'S4 Mega',
-                'S4 Mega',
-                'GooPhone',
-                'GooPhone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/goophone.json'), true);
     }
 }

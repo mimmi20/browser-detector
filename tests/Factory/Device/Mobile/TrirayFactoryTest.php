@@ -103,27 +103,6 @@ class TrirayFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Tri-ray device',
-                'general Tri-ray device',
-                'Tri-ray Co., Ltd.',
-                'Tri-ray',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; X8+ Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
-                'X8+',
-                'X8+',
-                'Tri-ray Co., Ltd.',
-                'Tri-ray',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/triray.json'), true);
     }
 }

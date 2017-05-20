@@ -103,37 +103,6 @@ class KingzoneFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Kingzone Device',
-                'general Kingzone Device',
-                'Shenzhen Kingzone Communication Co.,Ltd',
-                'Kingzone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.3.9; ru-ru; K1 turbo Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501044',
-                'KZ-168',
-                'K1 Turbo',
-                'Shenzhen Kingzone Communication Co.,Ltd',
-                'Kingzone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Kingzone K1 turbo Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36',
-                'KZ-168',
-                'K1 Turbo',
-                'Shenzhen Kingzone Communication Co.,Ltd',
-                'Kingzone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/kingzone.json'), true);
     }
 }

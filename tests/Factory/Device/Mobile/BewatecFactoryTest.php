@@ -103,37 +103,6 @@ class BewatecFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general BEWATEC Device',
-                'general BEWATEC Device',
-                'BEWATEC Kommunikationstechnik GmbH',
-                'BEWATEC',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; MediPaD Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'MediPaD',
-                'MediPaD',
-                'BEWATEC Kommunikationstechnik GmbH',
-                'BEWATEC',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; MediPaD13 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'MediPaD 13',
-                'MediPaD 13',
-                'BEWATEC Kommunikationstechnik GmbH',
-                'BEWATEC',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/bewatec.json'), true);
     }
 }

@@ -103,57 +103,6 @@ class ImobileFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general i-mobile Device',
-                'general i-mobile Device',
-                'i-mobile',
-                'i-mobile',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; i-mobile IQX OKU Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
-                'IQ X OKU',
-                'IQ X OKU',
-                'i-mobile',
-                'i-mobile',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; i-mobile IQ 6A Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'IQ 6A',
-                'IQ 6A',
-                'i-mobile',
-                'i-mobile',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; i-mobile i-STYLE 7.7 DTV Build/i_style_7_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.81 Mobile Safari/537.36 OPR/28.0.1764.90386',
-                'i-Style 7.7 DTV',
-                'i-Style 7.7 DTV',
-                'i-mobile',
-                'i-mobile',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.2; th-th; i-mobile IQ 5.1 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'IQ 5.1',
-                'IQ 5.1',
-                'i-mobile',
-                'i-mobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/imobile.json'), true);
     }
 }

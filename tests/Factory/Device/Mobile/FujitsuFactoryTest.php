@@ -103,27 +103,6 @@ class FujitsuFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Fujitsu Device',
-                'general Fujitsu Device',
-                'Fujitsu',
-                'Fujitsu',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; M532 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'M532',
-                'Stylistic',
-                'Fujitsu',
-                'Fujitsu',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/fujitsu.json'), true);
     }
 }

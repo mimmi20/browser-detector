@@ -103,27 +103,6 @@ class YulongFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Yulong Device',
-                'general Yulong Device',
-                'Yulong Computer',
-                'Yulong',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Dalvik/1.6.0 (Linux; U; Android 4.4.4; Vodafone 890N Build/KTU84P)',
-                '890N',
-                'Smart 4 Tourbo',
-                'Yulong Computer',
-                'Vodafone',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/yulong.json'), true);
     }
 }

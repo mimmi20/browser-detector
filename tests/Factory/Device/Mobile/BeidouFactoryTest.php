@@ -103,27 +103,6 @@ class BeidouFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Beidou Device',
-                'general Beidou Device',
-                'Beidou',
-                'Beidou',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.2; zh-CN; LA-M1 Build/JZO54K) AppleWebKit/534.31 (KHTML, like Gecko) UCBrowser/9.0.1.294 U3/0.8.0 Mobile Safari/534.31',
-                'LA-M1',
-                'Chili Pepper',
-                'Beidou',
-                'Beidou',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/beidou.json'), true);
     }
 }

@@ -103,27 +103,6 @@ class ShaanFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general SHAAN Device',
-                'general SHAAN Device',
-                'SHAAN',
-                'iBall',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'iBall Majestic 2.4D',
-                'Majestic 2.4D',
-                'Majestic 2.4D',
-                'SHAAN',
-                'iBall',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/shaan.json'), true);
     }
 }

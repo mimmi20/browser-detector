@@ -103,27 +103,6 @@ class BravisFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Bravis Device',
-                'general Bravis Device',
-                'Bravis',
-                'Bravis',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; BRAVIS NP 844 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.74 Safari/537.36 OPR/28.0.1764.89981',
-                'NP 844',
-                'NP 844',
-                'Bravis',
-                'Bravis',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/bravis.json'), true);
     }
 }

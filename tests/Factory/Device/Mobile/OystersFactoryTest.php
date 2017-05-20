@@ -103,37 +103,6 @@ class OystersFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Oysters Device',
-                'general Oysters Device',
-                'Oysters',
-                'Oysters',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.4.2; ru-ru; Oysters Pacific 800 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'Pacific 800',
-                'Pacific 800',
-                'Oysters',
-                'Oysters',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.4.2; ru-ru; Oysters Pacific800i Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'Pacific 800i',
-                'Pacific 800i',
-                'Oysters',
-                'Oysters',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/oysters.json'), true);
     }
 }

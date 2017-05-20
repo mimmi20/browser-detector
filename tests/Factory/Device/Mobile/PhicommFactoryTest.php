@@ -103,37 +103,6 @@ class PhicommFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Phicomm Device',
-                'general Phicomm Device',
-                'Phicomm',
-                'Phicomm',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.7; de-de; FWS610_EU Build/GWK74) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'FWS610',
-                'FWS610',
-                'Phicomm',
-                'Phicomm',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.3; de-de; PHICOMM CLUE C230 Build/JLS36C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'general Phicomm Device',
-                'general Phicomm Device',
-                'Phicomm',
-                'Phicomm',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/phicomm.json'), true);
     }
 }

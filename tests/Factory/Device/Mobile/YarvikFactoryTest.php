@@ -103,27 +103,6 @@ class YarvikFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Yarvik Device',
-                'general Yarvik Device',
-                'Yarvik',
-                'Yarvik',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; TAB10-400Build/NobleTAB10-400) AppleWebKit/534.30 (KHTML, likeGecko) Version/4.0 Safari/534.30',
-                'TAB10-400',
-                'Noble 10c',
-                'Yarvik',
-                'Yarvik',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/yarvik.json'), true);
     }
 }

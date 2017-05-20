@@ -103,27 +103,6 @@ class AmlogicFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Amlogic Device',
-                'general Amlogic Device',
-                'Amlogic',
-                'Amlogic',
-                'TV Device',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-; M8 Build/JDQ39) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.7.0.4',
-                'M8',
-                'M8',
-                'Amlogic',
-                'Amlogic',
-                'TV Device',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/amlogic.json'), true);
     }
 }

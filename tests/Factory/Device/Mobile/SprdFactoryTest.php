@@ -103,47 +103,6 @@ class SprdFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general sprd device',
-                'general sprd device',
-                'sprd',
-                'sprd',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.4; en-US; SPHS_on_Hsdroid) U2/1.0.0 UCBrowser/8.9.2.373 U2/1.0.0 Mobile',
-                'SPHS On HSDroid',
-                'SPHS On HSDroid',
-                'sprd',
-                'sprd',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.2; ru; GT-A7100 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.8.0.435 U3/0.8.0 Mobile Safari/533.1',
-                'GT-A7100',
-                'GT-A7100',
-                'sprd',
-                'sprd',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.6; zh-cn; sprd-B51+/1.0 Android/2.3.6 Release/fk.ho.hfgi Browser/AppleWebKit533.1 Build/MocorDroid2.3.5) AppleWebKit533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'B51+',
-                'B51+',
-                'sprd',
-                'sprd',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/sprd.json'), true);
     }
 }

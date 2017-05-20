@@ -103,57 +103,6 @@ class TolinoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Tolino Device',
-                'general Tolino Device',
-                'Tolino',
-                'Tolino',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (MIDP-2.0; U; zh-CN; tolino tab 8.9) U2/1.0.0 UCBrowser/3.4.3.532  U2/1.0.0 Mobile',
-                'Tab 8.9',
-                'Tab 8.9',
-                'Tolino',
-                'Tolino',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.4; tolino tab 8 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36',
-                'Tab 8',
-                'Tab 8',
-                'Tolino',
-                'Tolino',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; tolino tab 7 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'Tab 7',
-                'Tab 7',
-                'TrekStor',
-                'Tolino',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.4; de-;tolino shine/1.7.3) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 BROWSER OS_BUILD/1115',
-                'Tolino Shine',
-                'Tolino Shine',
-                'Longshine',
-                'Weltbild',
-                'Mobile Device',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/tolino.json'), true);
     }
 }

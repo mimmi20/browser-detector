@@ -103,27 +103,6 @@ class KarbonnFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Karbonn Device',
-                'general Karbonn Device',
-                'Karbonn',
-                'Karbonn',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Titanium Octane Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'Titanium Octane',
-                'Titanium Octane',
-                'Karbonn',
-                'Karbonn',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/karbonn.json'), true);
     }
 }

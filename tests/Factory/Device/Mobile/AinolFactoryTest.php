@@ -103,37 +103,6 @@ class AinolFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Ainol Device',
-                'general Ainol Device',
-                'Ainol',
-                'Ainol',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; Novo7Fire Build/JDQ39B) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.4.1.565 U3/0.8.0 Mobile Safari/534.30',
-                'Novo 7 Fire',
-                'Novo 7 Fire',
-                'Ainol',
-                'Ainol',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; Numy_Note_9 Build/JDQ39B) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.4.1.565 U3/0.8.0 Mobile Safari/534.30',
-                'Numy Note 9',
-                'Numy Note 9',
-                'Ainol',
-                'Ainol',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/ainol.json'), true);
     }
 }

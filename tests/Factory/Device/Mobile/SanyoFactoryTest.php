@@ -103,37 +103,6 @@ class SanyoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Sanyo Device',
-                'general Sanyo Device',
-                'Sanyo',
-                'Sanyo',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/4.0 (MobilePhone PM-8200/US/1.0) NetFront/3.x MMP/2.0',
-                'PM-8200',
-                'PM-8200',
-                'Sanyo',
-                'Sanyo',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Sanyo-SCP588CN/1.0 UP.Browser/6.2.2.6.g.1.101 (GUI) MMP/2.0',
-                'general Sanyo Device',
-                'general Sanyo Device',
-                'Sanyo',
-                'Sanyo',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/sanyo.json'), true);
     }
 }

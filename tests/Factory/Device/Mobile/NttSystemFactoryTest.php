@@ -103,27 +103,6 @@ class NttSystemFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general NTT System Device',
-                'general NTT System Device',
-                'NTT System',
-                'NTT System',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.1; NTT 611 Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
-                'NTT 611 10.1',
-                'NTT 611 10.1',
-                'NTT System',
-                'NTT System',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/nttsystem.json'), true);
     }
 }

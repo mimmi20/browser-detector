@@ -103,27 +103,6 @@ class CiotcudFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general CIOtCUD Device',
-                'general CIOtCUD Device',
-                'CIOtCUD',
-                'CIOtCUD',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; L930 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'L930',
-                'L930',
-                'CIOtCUD',
-                'CIOtCUD',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/ciotcud.json'), true);
     }
 }

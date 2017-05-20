@@ -103,27 +103,6 @@ class MwayFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general M-way Device',
-                'general M-way Device',
-                'M-way',
-                'M-way',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.1; MD948G Build/JOP40D[20130909.172306]) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Safari/537.36 OPR/16.0.1212.64462',
-                'MD-948G',
-                'MD-948G',
-                'M-way',
-                'M-way',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/mway.json'), true);
     }
 }

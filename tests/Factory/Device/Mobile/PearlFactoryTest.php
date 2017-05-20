@@ -103,47 +103,6 @@ class PearlFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Pearl Device',
-                'general Pearl Device',
-                'Pearl',
-                'Pearl',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; X10.Dual+ Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 ACHEETAHI/2100501094',
-                'X10+',
-                'Touchlet X10.Dual+',
-                'Pearl',
-                'Pearl',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.1; X10.Dual Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36',
-                'X10',
-                'X10',
-                'Pearl',
-                'Pearl',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.5; de-de; X7G Build/GRJ90) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'Touchlet X7G',
-                'Touchlet X7G',
-                'Pearl',
-                'Pearl',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/pearl.json'), true);
     }
 }

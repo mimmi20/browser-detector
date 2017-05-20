@@ -103,37 +103,6 @@ class MastoneFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Mastone Device',
-                'general Mastone Device',
-                'Mastone',
-                'Mastone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; AliyunOS 2.0; Android 4.0 Compatible; xx; G9 Build/AliyunOs-2012) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'G9',
-                'G9',
-                'Mastone',
-                'Mastone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mastone_G9_TD/V2.00 Release/3.19.2012 Mozilla/5.0 (Linux; U; Android 2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'G9',
-                'G9',
-                'Mastone',
-                'Mastone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/mastone.json'), true);
     }
 }

@@ -103,27 +103,6 @@ class TurboxFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Turbo-X Device',
-                'general Turbo-X Device',
-                'Turbo-X',
-                'Turbo-X',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Hive V 3G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'Hive V 3G',
-                'Hive V 3G',
-                'Turbo-X',
-                'Turbo-X',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/turbox.json'), true);
     }
 }

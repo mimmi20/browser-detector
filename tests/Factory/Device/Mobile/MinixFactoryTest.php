@@ -103,37 +103,6 @@ class MinixFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Minix Device',
-                'general Minix Device',
-                'Minix',
-                'Minix',
-                'Media Player',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; he-il; NEO-X5-116A Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'NEO X5',
-                'NEO X5',
-                'Minix',
-                'Minix',
-                'Media Player',
-                false,
-                null,
-            ],
-            [
-                'XBMC/12.4-MINIX Git:20131225-38bc34f (Linux; Android; 3.0.36+ armv7l; http://www.xbmc.org)',
-                'general Minix Device',
-                'general Minix Device',
-                'Minix',
-                'Minix',
-                'Media Player',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/minix.json'), true);
     }
 }

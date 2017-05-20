@@ -103,27 +103,6 @@ class UmiFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general UMi Device',
-                'general UMi Device',
-                'UMi',
-                'UMi',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.1; ru; UMI_X2 Build/JOP40D) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/9.7.0.520 Mobile',
-                'X2',
-                'X2',
-                'UMi',
-                'UMi',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/umi.json'), true);
     }
 }

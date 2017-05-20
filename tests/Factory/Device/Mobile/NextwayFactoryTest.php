@@ -103,27 +103,6 @@ class NextwayFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Nextway Device',
-                'general Nextway Device',
-                'Nextway',
-                'Nextway',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.1; F10X Build/MASTER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.63 Safari/537.36 OPR/15.0.1162.60140',
-                'F10X',
-                'F10X',
-                'Nextway',
-                'Nextway',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/nextway.json'), true);
     }
 }

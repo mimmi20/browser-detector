@@ -103,27 +103,6 @@ class DexFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general DEX Device',
-                'general DEX Device',
-                'DEX',
-                'DEX',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.1; IP1020-8GB Build/20130403) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 YaBrowser/14.5.1847.18211.00 Safari/537.36',
-                'iP1020',
-                'iP1020',
-                'DEX',
-                'DEX',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/dex.json'), true);
     }
 }

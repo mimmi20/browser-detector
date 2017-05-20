@@ -103,27 +103,6 @@ class TeslaMotorsFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Tesla Motors Device',
-                'general Tesla Motors Device',
-                'Tesla Motors',
-                'Tesla',
-                'Car Entertainment System',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (X11; Linux) AppleWebKit/534.34 (KHTML, like Gecko) QtCarBrowser Safari/534.34',
-                'Model S',
-                'Model S',
-                'Tesla Motors',
-                'Tesla',
-                'Car Entertainment System',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/teslamotors.json'), true);
     }
 }

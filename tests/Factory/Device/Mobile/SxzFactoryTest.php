@@ -103,27 +103,6 @@ class SxzFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general SXZ Device',
-                'general SXZ Device',
-                'SXZ',
-                'SXZ',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.3; ru-ru; SXZ-PDX0-01 Build/SXZ-PDX0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'PDX0-01',
-                'PDX0-01',
-                'SXZ',
-                'SXZ',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/sxz.json'), true);
     }
 }

@@ -103,27 +103,6 @@ class CceFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general CCE Device',
-                'general CCE Device',
-                'CCE',
-                'CCE',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0(Linux;U;Android 4.2.2;pt;CCE SK352)/AppleWebKit534.30 Mobile Safari/534.30',
-                'SK352',
-                'Motion Plus',
-                'CCE',
-                'CCE',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/cce.json'), true);
     }
 }

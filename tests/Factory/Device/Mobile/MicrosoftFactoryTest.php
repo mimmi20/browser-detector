@@ -103,27 +103,6 @@ class MicrosoftFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Microsoft Device',
-                'general Microsoft Device',
-                'Microsoft Corporation',
-                'Microsoft',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; ARM; Trident/6.0; Touch)',
-                'Windows RT Tablet',
-                'Windows RT Tablet',
-                'Microsoft Corporation',
-                'Microsoft',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/microsoft.json'), true);
     }
 }

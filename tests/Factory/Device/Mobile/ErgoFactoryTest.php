@@ -103,27 +103,6 @@ class ErgoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Ergo Device',
-                'general Ergo Device',
-                'Ergo',
-                'Ergo',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.1; Ergo Tab Crystal Lite Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36',
-                'Tab Crystal Lite',
-                'Tab Crystal Lite',
-                'Ergo',
-                'Ergo',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/ergo.json'), true);
     }
 }

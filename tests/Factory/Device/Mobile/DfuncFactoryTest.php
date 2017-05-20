@@ -103,27 +103,6 @@ class DfuncFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general DFunc Device',
-                'general DFunc Device',
-                'DFunc',
-                'DFunc',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.4; FUNC TITAN-02 Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19',
-                'Func Titan-02',
-                'Func Titan-02',
-                'DFunc',
-                'DFunc',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/dfunc.json'), true);
     }
 }

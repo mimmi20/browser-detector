@@ -103,27 +103,6 @@ class YotaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Yota Device',
-                'general Yota Device',
-                'Yota Devices',
-                'Yota',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.3; YD201 Build/KTU84L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.38 Mobile Safari/537.36',
-                'YD201',
-                'Yota Phone 2',
-                'Yota Devices',
-                'Yota',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/yota.json'), true);
     }
 }

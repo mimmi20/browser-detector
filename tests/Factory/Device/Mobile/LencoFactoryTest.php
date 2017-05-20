@@ -103,37 +103,6 @@ class LencoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Lenco Device',
-                'general Lenco Device',
-                'Lenco',
-                'Lenco',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; Lenco CoolTab-70 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'CoolTab-70',
-                'CoolTab-70',
-                'Lenco',
-                'Lenco',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.1; de-de; LENCM900HZ Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'CM900HZ',
-                'CM900HZ',
-                'Lenco',
-                'Lenco',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/lenco.json'), true);
     }
 }

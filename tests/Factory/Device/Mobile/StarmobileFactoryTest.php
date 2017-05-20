@@ -103,27 +103,6 @@ class StarmobileFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Starmobile Device',
-                'general Starmobile Device',
-                'Starmobile PH',
-                'Starmobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.1; en-us; Starmobile KNIGHT Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'Knight',
-                'Knight',
-                'Starmobile PH',
-                'Starmobile',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/starmobile.json'), true);
     }
 }

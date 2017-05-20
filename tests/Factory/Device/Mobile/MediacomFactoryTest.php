@@ -103,37 +103,6 @@ class MediacomFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Mediacom Device',
-                'general Mediacom Device',
-                'Mediacom',
-                'Mediacom',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.1; it-it; M-PP2S500B Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'M-PP2S500B',
-                'PhonePad Duo S500',
-                'Mediacom',
-                'Mediacom',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; M-PPxG501 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'M-PPxG501',
-                'PhonePad Duo G501',
-                'Mediacom',
-                'Mediacom',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/mediacom.json'), true);
     }
 }

@@ -103,57 +103,6 @@ class KyoceraFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Kyocera Device',
-                'general Kyocera Device',
-                'Kyocera',
-                'Kyocera',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; DM015K Build/102.0.1a10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YJApp-ANDROID jp.co.yahoo.android.yjtop/2.4.30',
-                'DM015K',
-                'Disney Mobile',
-                'Kyocera',
-                'Kyocera',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; KC-S701 Build/100.0.1600) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
-                'KC-S701',
-                'Torque',
-                'Kyocera',
-                'Kyocera',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; KYOCERA-E6560 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/28.0.0.20.16;]',
-                'general Kyocera Device',
-                'general Kyocera Device',
-                'Kyocera',
-                'Kyocera',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; C6730 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'C6730',
-                'Hydro Icon',
-                'Kyocera',
-                'Kyocera',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/kyocera.json'), true);
     }
 }

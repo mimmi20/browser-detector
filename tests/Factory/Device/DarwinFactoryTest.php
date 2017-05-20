@@ -103,6 +103,7 @@ class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
+        return json_decode(file_get_contents('tests/data/factory/device/darwin.json'), true);
         return [
             [
                 'this is a fake ua to trigger the fallback',

@@ -103,57 +103,6 @@ class TechnisatFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general TechniSat Device',
-                'general TechniSat Device',
-                'TechniSat',
-                'TechniSat',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; AQIPAD_7G Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'Aqiston Aqipad 7G',
-                'Aqiston Aqipad 7G',
-                'TechniSat',
-                'TechniSat',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.3; de-de; TechniPhone 5 Build/JLS36C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'TechniPhone 5',
-                'TechniPhone 5',
-                'TechniSat',
-                'TechniSat',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; TechniPad_10-3G Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'TechniPad 10 3G',
-                'TechniPad 10 3G',
-                'TechniSat',
-                'TechniSat',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; TechniPad 10 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'TechniPad 10',
-                'TechniPad 10',
-                'TechniSat',
-                'TechniSat',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/technisat.json'), true);
     }
 }

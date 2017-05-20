@@ -103,47 +103,6 @@ class WexlerFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Wexler Device',
-                'general Wexler Device',
-                'Wexler',
-                'Wexler',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; TAB A742 Build/GSB7_20140710_INT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Safari/537.36',
-                'TAB A742',
-                'TAB A742',
-                'Wexler',
-                'Wexler',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; en-US; WEXLER-TAB-7T Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/9.9.6.495 U3/0.8.0 Mobile Safari/534.30',
-                'TAB 7T',
-                'TAB 7T',
-                'Wexler',
-                'Wexler',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.1; TAB7iD Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 YaBrowser/14.10.2062.12160.01 Safari/537.36',
-                'Tab7ID',
-                'Tab7ID',
-                'Wexler',
-                'Wexler',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/wexler.json'), true);
     }
 }

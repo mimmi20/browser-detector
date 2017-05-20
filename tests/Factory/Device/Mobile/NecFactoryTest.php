@@ -103,57 +103,6 @@ class NecFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general NEC Device',
-                'general NEC Device',
-                'NEC',
-                'NEC',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; N-06E Build/A1002301) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16',
-                'N-06E',
-                'Medias X',
-                'NEC',
-                'NTT DoCoMo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)',
-                'N905i',
-                'N905i',
-                'NEC',
-                'NEC',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-            [
-                'DoCoMo/2.0 N705i(c100;TB;W24H16)',
-                'N705i',
-                'N705i',
-                'NEC',
-                'NEC',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0(Linux;U; Android 4.0.4; en-us;NEC-0912 Build/A8212300)AppleWebKit/534.30(KHTML, Like Gecko)Version/4.0 Mobile Safari/534.30',
-                '0912',
-                'NEC Casio N-02E',
-                'NEC',
-                'NTT DoCoMo',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/nec.json'), true);
     }
 }

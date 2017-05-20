@@ -103,27 +103,6 @@ class YxtelFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general YXTEL Device',
-                'general YXTEL Device',
-                'YXTEL',
-                'YXTEL',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; G009) U2/1.0.0 UCBrowser/8.8.1.359 Mobile',
-                'G009',
-                'G009',
-                'YXTEL',
-                'YXTEL',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/yxtel.json'), true);
     }
 }

@@ -103,37 +103,6 @@ class AccentFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Accent Device',
-                'general Accent Device',
-                'Accent',
-                'Accent',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.2; fr-fr; TOUAREG8_3G Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'Touareg8 3G',
-                'Touareg8 3G',
-                'Accent',
-                'Accent',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; ACCENT EAGLE7 3G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'general Accent Device',
-                'general Accent Device',
-                'Accent',
-                'Accent',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/accent.json'), true);
     }
 }

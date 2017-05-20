@@ -103,27 +103,6 @@ class LeagooFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general LEAGOO Device',
-                'general LEAGOO Device',
-                'LEAGOO International Co., Limited',
-                'LEAGOO',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Lead 2 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'Lead 2',
-                'Lead 2',
-                'LEAGOO International Co., Limited',
-                'LEAGOO',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/leagoo.json'), true);
     }
 }

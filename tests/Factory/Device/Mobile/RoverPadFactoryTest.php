@@ -103,27 +103,6 @@ class RoverPadFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general RoverPad Device',
-                'general RoverPad Device',
-                'RoverPad',
-                'RoverPad',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.1; Air A70 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36',
-                'Air A70',
-                'Air A70',
-                'RoverPad',
-                'RoverPad',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/roverpad.json'), true);
     }
 }

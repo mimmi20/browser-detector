@@ -103,27 +103,6 @@ class StarwayFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Starway Device',
-                'general Starway Device',
-                'Starway',
-                'Starway',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.4; STARWAY Andromeda S925 3G Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36 OPR/25.0.1619.84037',
-                'Andromeda S925 3G',
-                'Andromeda S925 3G',
-                'Starway',
-                'Starway',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/starway.json'), true);
     }
 }

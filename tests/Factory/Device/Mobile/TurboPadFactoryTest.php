@@ -103,37 +103,6 @@ class TurboPadFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general TurboPad Device',
-                'general TurboPad Device',
-                'TurboPad',
-                'TurboPad',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; Turbo Pad 500 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501028',
-                'Pad 500',
-                'Pad 500',
-                'TurboPad',
-                'TurboPad',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; Turbo X6 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501028',
-                'Turbo X6',
-                'Turbo X6',
-                'TurboPad',
-                'TurboPad',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/turbopad.json'), true);
     }
 }

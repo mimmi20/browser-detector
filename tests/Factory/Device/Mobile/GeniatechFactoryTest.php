@@ -103,27 +103,6 @@ class GeniatechFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Geniatech Device',
-                'general Geniatech Device',
-                'Geniatech',
-                'Geniatech',
-                'TV Device',
-                false,
-                null,
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.2; MX Enjoy TV BOX Build/V1.03.04MX01_20130805) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Safari/537.36',
-                'MX Enjoy TV BOX',
-                'MX Enjoy TV BOX',
-                'Geniatech',
-                'Geniatech',
-                'TV Device',
-                false,
-                null,
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/geniatech.json'), true);
     }
 }

@@ -103,37 +103,6 @@ class SupraFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Supra Device',
-                'general Supra Device',
-                'Supra',
-                'Supra',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; ru; SUPRA_M121G) U2/1.0.0 UCBrowser/10.0.0.556 U2/1.0.0 Mobile',
-                'M121G',
-                'M121G',
-                'Supra',
-                'Supra',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-; SUPRA M723G Build/JDQ39) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.5.0.4',
-                'M723G',
-                'M723G',
-                'Supra',
-                'Supra',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/supra.json'), true);
     }
 }

@@ -103,27 +103,6 @@ class KazamFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general KAZAM Device',
-                'general KAZAM Device',
-                'KAZAM',
-                'KAZAM',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; KAZAM Trooper2 50 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Mobile Safari/537.36',
-                'Trooper 2 5.0',
-                'Trooper 2 5.0',
-                'KAZAM',
-                'KAZAM',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/kazam.json'), true);
     }
 }

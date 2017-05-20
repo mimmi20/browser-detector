@@ -103,27 +103,6 @@ class PentagramFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Pentagram Device',
-                'general Pentagram Device',
-                'Pentagram',
-                'Pentagram',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; PentagramTAB7.6 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
-                'Tab 7.6',
-                'Tab 7.6',
-                'Pentagram',
-                'Pentagram',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/pentagram.json'), true);
     }
 }

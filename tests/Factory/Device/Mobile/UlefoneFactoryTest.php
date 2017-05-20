@@ -103,27 +103,6 @@ class UlefoneFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Ulefone Device',
-                'general Ulefone Device',
-                'Ulefone Technology Co., Ltd.',
-                'Ulefone',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.4; Be Pro Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
-                'Be Pro',
-                'Be Pro',
-                'Ulefone Technology Co., Ltd.',
-                'Ulefone',
-                'Smartphone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/ulefone.json'), true);
     }
 }

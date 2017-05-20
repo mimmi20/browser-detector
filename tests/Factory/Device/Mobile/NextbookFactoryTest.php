@@ -103,37 +103,6 @@ class NextbookFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Nextbook Device',
-                'general Nextbook Device',
-                'Nextbook',
-                'Nextbook',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; NEXT Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'Next',
-                'Next',
-                'Nextbook',
-                'Nextbook',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.1; ar-eg; DATAM803HC Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'M803HC',
-                'Premium8',
-                'Nextbook',
-                'Nextbook',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/nextbook.json'), true);
     }
 }

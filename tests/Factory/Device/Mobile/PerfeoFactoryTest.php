@@ -103,27 +103,6 @@ class PerfeoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Perfeo Device',
-                'general Perfeo Device',
-                'Perfeo',
-                'Perfeo',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.2; 7007HD Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
-                '7007-HD',
-                '7007-HD',
-                'Perfeo',
-                'Perfeo',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/perfeo.json'), true);
     }
 }

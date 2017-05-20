@@ -103,37 +103,6 @@ class BarnesNobleFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Barnes & Noble Device',
-                'general Barnes & Noble Device',
-                'Barnes & Noble',
-                'Barnes & Noble',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; BN NookHD+ Build/JDQ39E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 CyanogenMod/10.1.3/ovation',
-                'Nook HD+',
-                'Nook HD+',
-                'Barnes & Noble',
-                'Barnes & Noble',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; NOOK BNRV200 Build/ERD79 1.4.3) Apple WebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'BNRV200',
-                'Nook Color Wifi',
-                'Barnes & Noble',
-                'Barnes & Noble',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/barnesnoble.json'), true);
     }
 }

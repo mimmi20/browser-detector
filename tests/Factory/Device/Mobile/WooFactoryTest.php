@@ -103,27 +103,6 @@ class WooFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Woo Device',
-                'general Woo Device',
-                'Woo Electronics',
-                'Woo',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; SP-6020 QUASAR Build/JDQ39) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/10.1.0.527 U3/0.8.0 Mobile Safari/533.1',
-                'SP6020',
-                'Quasar',
-                'Woo Electronics',
-                'Woo',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/woo.json'), true);
     }
 }

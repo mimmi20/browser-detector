@@ -103,47 +103,6 @@ class StarFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Star Device',
-                'general Star Device',
-                'Star',
-                'Star',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; N9500 Build/IMM76I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'N9500',
-                'N9500',
-                'Star',
-                'Star',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.3.3; ru; GT-9000) U2/1.0.0 UCBrowser/9.9.0.543 U2/1.0.0 Mobile',
-                'GT-9000',
-                'H5W',
-                'Star',
-                'Star',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; N8000 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 YaBrowser/15.2.2214.3725.01 Safari/537.36',
-                'N8000',
-                'Note 3',
-                'Star',
-                'Star',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/star.json'), true);
     }
 }

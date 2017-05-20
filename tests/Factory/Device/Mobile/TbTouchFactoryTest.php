@@ -103,27 +103,6 @@ class TbTouchFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general TB Touch Device',
-                'general TB Touch Device',
-                'TB Touch',
-                'TB Touch',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; Ignis 8 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'Ignis 8',
-                'Ignis 8',
-                'TB Touch',
-                'TB Touch',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/tbtouch.json'), true);
     }
 }

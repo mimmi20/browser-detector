@@ -103,37 +103,6 @@ class UtStarcomFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general UTStarcom Device',
-                'general UTStarcom Device',
-                'UTStarcom',
-                'UTStarcom',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UTSTARCOM-GTX75/UC1.88 POLARIS/6.00 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0',
-                'GTX75',
-                'Quickfire',
-                'UTStarcom',
-                'AT&T',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UTStarcom-G26/1.0 UP.Browser/6.2.2.7.c.1.103 (GUI) MMP/1.0',
-                'general UTStarcom Device',
-                'general UTStarcom Device',
-                'UTStarcom',
-                'UTStarcom',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/utstarcom.json'), true);
     }
 }

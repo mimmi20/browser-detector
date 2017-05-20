@@ -103,47 +103,6 @@ class SpiceFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Spice Device',
-                'general Spice Device',
-                'Spice',
-                'Spice',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Spice QT-75',
-                'QT-75',
-                'QT-75',
-                'Spice',
-                'Spice',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'SYM.S200.SYM.T63.DEWAV60A_64_11B_HW (MRE/3.1.00(1280);MAUI/_DY33891_Symphony_L102;BDATE/2014/04/18 14:22;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/DEWAV60A_64_11B_HW;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;) Y3389_DY33891_Symphony_L102 Release/2014.04.18 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US',
-                'I2I',
-                'I2I',
-                'Spice',
-                'Spice',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; Spice Mi-424 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'Mi-424',
-                'Mi-424',
-                'Spice',
-                'Spice',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/spice.json'), true);
     }
 }

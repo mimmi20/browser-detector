@@ -103,27 +103,6 @@ class TelsdaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Telsda Device',
-                'general Telsda Device',
-                'Telsda',
-                'Telsda',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2; ru-ru; T9666-1 Build/IMI) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16',
-                'T9666-1',
-                'T9666-1',
-                'Telsda',
-                'Telsda',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/telsda.json'), true);
     }
 }

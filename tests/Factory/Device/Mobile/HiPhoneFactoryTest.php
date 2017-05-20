@@ -103,27 +103,6 @@ class HiPhoneFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general HiPhone Device',
-                'general HiPhone Device',
-                'HiPhone',
-                'HiPhone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.4; V919 3G Air DualOS Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36',
-                'V919',
-                'V919',
-                'HiPhone',
-                'HiPhone',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/hiphone.json'), true);
     }
 }
