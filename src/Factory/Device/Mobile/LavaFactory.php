@@ -28,9 +28,9 @@ class LavaFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'pixel v2+' => 'lava pixel v2+',
-        'iris x8s' => 'lava iris x8s',
-        'spark284' => 'spark 284',
-        'kkt20'    => 'kkt20',
+        'iris x8s'  => 'lava iris x8s',
+        'spark284'  => 'spark 284',
+        'kkt20'     => 'kkt20',
     ];
 
     /**

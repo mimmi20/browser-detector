@@ -28,8 +28,8 @@ class IntexFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'aqua trend' => 'intex aqua trend',
-        'aqua star' => 'aqua star',
-        'aqua_star' => 'aqua star',
+        'aqua star'  => 'aqua star',
+        'aqua_star'  => 'aqua star',
     ];
 
     /**

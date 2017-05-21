@@ -27,10 +27,10 @@ class VivoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'x7 plus' => 'vivo x7 plus',
-        'y22' => 'vivo y22',
+        'x7 plus'   => 'vivo x7 plus',
+        'y22'       => 'vivo y22',
         'vivo 1603' => 'vivo 1603',
-        'y31l' => 'vivo y31l',
+        'y31l'      => 'vivo y31l',
     ];
 
     /**

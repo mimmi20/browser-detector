@@ -17,12 +17,12 @@ use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use Psr\Cache\CacheItemPoolInterface;
+use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use UaResult\Result\Result;
 use UnexpectedValueException;
 use Wurfl\Request\GenericRequest;
 use Wurfl\Request\GenericRequestFactory;
-use Psr\Http\Message\MessageInterface;
 
 /**
  * Browser Detection class

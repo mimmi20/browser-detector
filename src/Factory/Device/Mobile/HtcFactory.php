@@ -28,8 +28,8 @@ class HtcFactory implements Factory\FactoryInterface
      */
     private $devices = [
         ' x9 '                    => 'x9',
-        'one me dual sim'                 => 'htc one me dual sim',
-        '0pcv1'                 => 'htc 0pcv1',
+        'one me dual sim'         => 'htc one me dual sim',
+        '0pcv1'                   => 'htc 0pcv1',
         'nexus one'               => 'nexus one',
         'nexus-one'               => 'nexus one',
         'nexusone'                => 'nexus one',
@@ -152,7 +152,7 @@ class HtcFactory implements Factory\FactoryInterface
         'desire_601'              => '0p4e2',
         'desire 728g'             => 'desire 728g',
         'desire_728g'             => 'desire 728g',
-        'desire 728'             => 'htc desire 728',
+        'desire 728'              => 'htc desire 728',
         'desire 700'              => 'desire 700',
         'desire_700'              => 'desire 700',
         'desire 626g'             => 'desire 626g',

@@ -250,8 +250,8 @@ class BrowserFactory implements FactoryInterface
             't-online browser'                    => 't-online browser',
             'appengine-google'                    => 'google app engine',
             'crystalsemanticsbot'                 => 'crystalsemanticsbot',
-            '360se'       => '360 secure browser',
-            '360ee'       => '360 speed browser',
+            '360se'                               => '360 secure browser',
+            '360ee'                               => '360 speed browser',
         ];
 
         foreach ($checkbeforeIe as $search => $key) {

@@ -28,7 +28,7 @@ class MediacomFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'm-pp2s500b' => 'mediacom m-pp2s500b',
-        'm-ppxg501' => 'mediacom m-ppxg501',
+        'm-ppxg501'  => 'mediacom m-ppxg501',
     ];
 
     /**

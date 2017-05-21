@@ -27,10 +27,10 @@ class LenovoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tb3-710i' => 'lenovo tb3-710i',
-        's860' => 'lenovo s860',
-        'a269i' => 'lenovo a269i',
-        'a6020a40' => 'lenovo a6020a40',
+        'tb3-710i'                => 'lenovo tb3-710i',
+        's860'                    => 'lenovo s860',
+        'a269i'                   => 'lenovo a269i',
+        'a6020a40'                => 'lenovo a6020a40',
         'yt3-x50l'                => 'yt3-x50l',
         'tb2-x30f'                => 'tb2-x30f',
         'yoga tablet 2 pro-1380l' => '1380l',

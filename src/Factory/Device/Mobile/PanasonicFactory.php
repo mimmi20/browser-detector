@@ -28,8 +28,8 @@ class PanasonicFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'eluga_arc_2' => 'panasonic eluga arc 2',
-        'p55' => 'panasonic p55',
-        'dl1' => 'dl1',
+        'p55'         => 'panasonic p55',
+        'dl1'         => 'dl1',
     ];
 
     /**

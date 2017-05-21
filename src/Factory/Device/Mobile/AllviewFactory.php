@@ -28,7 +28,7 @@ class AllviewFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'v1_viper' => 'allview v1 viper',
-        'a4you' => 'allview a4you',
+        'a4you'    => 'allview a4you',
     ];
 
     /**

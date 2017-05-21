@@ -29,7 +29,7 @@ class CoolpadFactory implements Factory\FactoryInterface
     private $devices = [
         'cp8676_i02' => 'coolpad cp8676 i02',
         'cp8298_i00' => 'coolpad cp8298 i00',
-        'n930' => 'n930',
+        'n930'       => 'n930',
     ];
 
     /**
