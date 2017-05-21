@@ -27,7 +27,9 @@ class WikoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'ozzy' => 'wiko ozzy',
         'highway signs' => 'wiko highway signs',
+        'highway' => 'wiko highway',
         'barry'         => 'wiko barry',
         'wax'         => 'wiko wax',
         'slide2'      => 'slide 2',

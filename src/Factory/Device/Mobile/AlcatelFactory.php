@@ -61,6 +61,7 @@ class AlcatelFactory implements Factory\FactoryInterface
         '5035d'                    => 'ot-5035d',
         '5020d'                    => 'ot-5020d',
         '4037t'                    => 'ot-4037t',
+        '4030a'                    => 'alcatel ot-4030a',
         '4030x'                    => 'ot-4030x',
         '4030d'                    => 'ot-4030d',
         '4015x'                    => 'ot-4015x',

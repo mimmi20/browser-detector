@@ -93,6 +93,7 @@ class NokiaFactory implements Factory\FactoryInterface
         'lumia 925'            => 'lumia 925',
         'nokia 925'            => 'lumia 925',
         'lumia 928'            => 'lumia 928',
+        'lumia 929'            => 'nokia lumia 929',
         'lumia 930'            => 'lumia 930',
         'lumia 950 xl'         => 'lumia 950 xl',
         'lumia 950'            => 'lumia 950',

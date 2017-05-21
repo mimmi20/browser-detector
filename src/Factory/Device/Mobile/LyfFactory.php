@@ -27,7 +27,9 @@ class LyfFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'ls-4505' => 'lyf ls-4505',
         'ls-4503' => 'lyf ls-4503',
+        'ls-4005' => 'lyf ls-4005',
     ];
 
     /**

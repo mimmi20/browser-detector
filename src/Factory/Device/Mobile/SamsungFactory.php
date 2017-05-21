@@ -158,6 +158,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-t350'   => 'sm-t350',
         'sm-t335'   => 'sm-t335',
         'sm-t331'   => 'sm-t331',
+        'sm-t330nu'   => 'samsung sm-t330nu',
         'sm-t330'   => 'sm-t330',
         'sm-t325'   => 'sm-t325',
         'sm-t320'   => 'sm-t320',
