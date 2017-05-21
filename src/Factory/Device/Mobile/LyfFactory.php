@@ -21,15 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IntexFactory implements Factory\FactoryInterface
+class LyfFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'aqua trend' => 'intex aqua trend',
-        'aqua star' => 'aqua star',
-        'aqua_star' => 'aqua star',
+        'ls-4503' => 'lyf ls-4503',
     ];
 
     /**
@@ -61,6 +59,6 @@ class IntexFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general intex device', $useragent);
+        return $this->loader->load('general lyf device', $useragent);
     }
 }

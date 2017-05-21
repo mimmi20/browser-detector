@@ -656,7 +656,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SanyoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Aqua_Star', 'Aqua Star'], true)) {
+        if ($s->containsAny(['aqua_star', 'aqua star', 'aqua trend'], false)) {
             return (new Mobile\IntexFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -802,6 +802,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('gigaset', false)) {
             return (new Mobile\GigasetFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('smartfren', false)) {
+            return (new Mobile\SmartfrenFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->containsAny(['Z221', 'V788D', 'KIS PLUS', 'NX402', 'NX501', 'N918St', 'Beeline Pro', 'ATLAS_W', 'BASE Tab', 'X920', ' V9 ', 'W713', 'ATLAS W'], true)) {
@@ -1352,7 +1356,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DnsFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains(' M3 ', true)) {
+        if ($s->containsAny([' M3 ', 'F103 Pro'], true)) {
             return (new Mobile\GioneeFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1910,6 +1914,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('be pro', false)) {
             return (new Mobile\UlefoneFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('ls-4503', false)) {
+            return (new Mobile\LyfFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)

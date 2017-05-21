@@ -27,6 +27,7 @@ class GioneeFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'f103 pro' => 'gionee f103 pro',
         ' m3 '     => 'm3',
         'gionee50' => 'gionee50',
     ];
