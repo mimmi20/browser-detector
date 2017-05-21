@@ -1,54 +1,54 @@
 [
-    {
-        "ua": "this is a fake ua to trigger the fallback",
-        "codeName": "general sprd device",
-        "marketingName": "general sprd device",
-        "manufacturer": "sprd",
-        "brand": "sprd",
-        "type": "Mobile Phone",
-        "dualOrientation": false,
-        "pointingMethod": "touchscreen",
-        "width": null,
-        "height": null,
-        "colors": null
-    },
-    {
-        "ua": "UCWEB\/2.0 (MIDP-2.0; U; Adr 4.4; en-US; SPHS_on_Hsdroid) U2\/1.0.0 UCBrowser\/8.9.2.373 U2\/1.0.0 Mobile",
-        "codeName": "SPHS On HSDroid",
-        "marketingName": "SPHS On HSDroid",
-        "manufacturer": "sprd",
-        "brand": "sprd",
-        "type": "Mobile Phone",
-        "dualOrientation": true,
-        "pointingMethod": "touchscreen",
-        "width": null,
-        "height": null,
-        "colors": null
-    },
-    {
-        "ua": "Mozilla\/5.0 (Linux; U; Android 2.2.2; ru; GT-A7100 Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 UCBrowser\/9.8.0.435 U3\/0.8.0 Mobile Safari\/533.1",
-        "codeName": "GT-A7100",
-        "marketingName": "GT-A7100",
-        "manufacturer": "sprd",
-        "brand": "sprd",
-        "type": "Mobile Phone",
-        "dualOrientation": false,
-        "pointingMethod": "touchscreen",
-        "width": null,
-        "height": null,
-        "colors": null
-    },
-    {
-        "ua": "Mozilla\/5.0 (Linux; U; Android 2.3.6; zh-cn; sprd-B51+\/1.0 Android\/2.3.6 Release\/fk.ho.hfgi Browser\/AppleWebKit533.1 Build\/MocorDroid2.3.5) AppleWebKit533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1",
-        "codeName": "B51+",
-        "marketingName": "B51+",
-        "manufacturer": "sprd",
-        "brand": "sprd",
-        "type": "Mobile Phone",
-        "dualOrientation": false,
-        "pointingMethod": null,
-        "width": null,
-        "height": null,
-        "colors": null
-    }
+  {
+    "ua": "this is a fake ua to trigger the fallback",
+    "codeName": "general sprd device",
+    "marketingName": "general sprd device",
+    "manufacturer": "sprd",
+    "brand": "sprd",
+    "type": "Mobile Phone",
+    "dualOrientation": false,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
+    "colors": null
+  },
+  {
+    "ua": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.4; en-US; SPHS_on_Hsdroid) U2\/.0.0 UCBrowser\//9.2.373 U2\/1/.0 Mobile",
+    "codeName": "SPHS On HSDroid",
+    "marketingName": "SPHS On HSDroid",
+    "manufacturer": "sprd",
+    "brand": "sprd",
+    "type": "Mobile Phone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla\/5./(Linux; U; Android 2.2.2; ru; GT-A7100 Build\/Moc/Droid2.3.5) AppleWebKit\/533./(KHTML, like Gecko) Version\/4.0 U/rowser\/9.8.0./5 U3\/0.8.0 M/ile Safari\/533.1",
+/      "codeName": "GT-A7100",
+"marketingName": "GT-A7100",
+"manufacturer": "sprd",
+"brand": "sprd",
+"type": "Mobile Phone",
+"dualOrientation": false,
+"pointingMethod": "touchscreen",
+"width": null,
+"height": null,
+"colors": null
+},
+{
+"ua": "Mozilla\/5.0 (Linu/ U; Android 2.3.6; zh-cn; sprd-B51+\/1.0 Androi//2.3.6 Relea/\/fk.ho.hfgi B/wser\/AppleWebKit53/1 Build\/MocorDroid2.3./ AppleWebKit533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safa/\/533.1",
+"codeName": "B51+",
+"marketingName": "B51+",
+"manufacturer": "sprd",
+"brand": "sprd",
+"type": "Mobile Phone",
+"dualOrientation": false,
+"pointingMethod": null,
+"width": null,
+"height": null,
+"colors": null
+}
 ]

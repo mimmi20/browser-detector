@@ -1,28 +1,28 @@
 [
-    {
-        "ua": "this is a fake ua to trigger the fallback",
-        "codeName": "general Beeline Device",
-        "marketingName": "general Beeline Device",
-        "manufacturer": "Beeline",
-        "brand": "Beeline",
-        "type": "Mobile Phone",
-        "dualOrientation": false,
-        "pointingMethod": "touchscreen",
-        "width": null,
-        "height": null,
-        "colors": null
-    },
-    {
-        "ua": "UCWEB\/2.0 (MIDP-2.0; U; zh-CN; Beeline Tab) U2\/1.0.0 UCBrowser\/3.4.3.532  U2\/1.0.0 Mobile",
-        "codeName": "Tab",
-        "marketingName": "Tab",
-        "manufacturer": "Beeline",
-        "brand": "Beeline",
-        "type": "Tablet",
-        "dualOrientation": true,
-        "pointingMethod": "touchscreen",
-        "width": null,
-        "height": null,
-        "colors": null
-    }
+  {
+    "ua": "this is a fake ua to trigger the fallback",
+    "codeName": "general Beeline Device",
+    "marketingName": "general Beeline Device",
+    "manufacturer": "Beeline",
+    "brand": "Beeline",
+    "type": "Mobile Phone",
+    "dualOrientation": false,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
+    "colors": null
+  },
+  {
+    "ua": "UCWEB/2.0 (MIDP-2.0; U; zh-CN; Beeline Tab) U2/1.0.0 UCBrowser/3.4.3.532  U2/1.0.0 Mobile",
+    "codeName": "Tab",
+    "marketingName": "Tab",
+    "manufacturer": "Beeline",
+    "brand": "Beeline",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
+    "colors": null
+  }
 ]
