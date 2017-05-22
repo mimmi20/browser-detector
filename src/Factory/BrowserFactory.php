@@ -217,6 +217,7 @@ class BrowserFactory implements FactoryInterface
             'haosouspider'                        => 'haosouspider',
             '360spider'                           => '360spider',
             'outlook-express'                     => 'outlook-express',
+            'outlook social connector'            => 'outlook social connector',
             'outlook'                             => 'outlook',
             'microsoft office mobile'             => 'office',
             'msoffice'                            => 'office',

@@ -14817,5 +14817,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "outlook social connector": {
+    "name": "Outlook Social Connector",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "email-client",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftOutlook",
+      "search": null
+    },
+    "engine": "unknown"
   }
 }
