@@ -103,27 +103,6 @@ class BeelineFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Beeline Device',
-                'general Beeline Device',
-                'Beeline',
-                'Beeline',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (MIDP-2.0; U; zh-CN; Beeline Tab) U2/1.0.0 UCBrowser/3.4.3.532  U2/1.0.0 Mobile',
-                'Tab',
-                'Tab',
-                'Beeline',
-                'Beeline',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/beeline.json'), true);
     }
 }

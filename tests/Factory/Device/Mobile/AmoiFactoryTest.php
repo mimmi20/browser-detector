@@ -103,37 +103,6 @@ class AmoiFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Amoi Device',
-                'general Amoi Device',
-                'Amoi',
-                'Amoi',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; N820 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'N820',
-                'N820',
-                'Amoi',
-                'Amoi',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'AMOI N820 Linux/3.0.13 Android/4.0.4 Release/09.24.2012 Browser/AppleWebKit534.30 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mobile Safari/534.30 Android 4.0.1;',
-                'N820',
-                'N820',
-                'Amoi',
-                'Amoi',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/amoi.json'), true);
     }
 }

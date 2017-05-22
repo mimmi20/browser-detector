@@ -103,37 +103,6 @@ class HummerFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Hummer Device',
-                'general Hummer Device',
-                'Hummer',
-                'Hummer',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; ru; H1+) U2/1.0.0 UCBrowser/10.1.0.563 U2/1.0.0 Mobile',
-                'H1+',
-                'H1+',
-                'Hummer',
-                'Hummer',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; HUMMER H1+ Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'H1+',
-                'H1+',
-                'Hummer',
-                'Hummer',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/hummer.json'), true);
     }
 }

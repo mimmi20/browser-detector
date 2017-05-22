@@ -103,27 +103,6 @@ class SenseitFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general SENSEIT Device',
-                'general SENSEIT Device',
-                'SENSEIT',
-                'SENSEIT',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; SENSEIT R390 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
-                'R390',
-                'R390',
-                'SENSEIT',
-                'SENSEIT',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/senseit.json'), true);
     }
 }

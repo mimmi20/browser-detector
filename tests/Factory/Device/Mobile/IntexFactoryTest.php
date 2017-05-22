@@ -103,37 +103,6 @@ class IntexFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Intex Device',
-                'general Intex Device',
-                'Intex',
-                'Intex',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'JUC (Linux; U; 2.3.6; zh-cn; Aqua_Star; 320*480) UCWEB7.9.0.94/139/444',
-                'Aqua Star',
-                'Aqua Star',
-                'Intex',
-                'Intex',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Intex Aqua N11 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
-                'general Intex Device',
-                'general Intex Device',
-                'Intex',
-                'Intex',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/intex.json'), true);
     }
 }

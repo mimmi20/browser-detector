@@ -103,27 +103,6 @@ class AxiooFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Axioo Device',
-                'general Axioo Device',
-                'Axioo',
-                'Axioo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; id; PICOpad_S1(7_3G)) U2/1.0.0 UCBrowser/10.1.0.563 U2/1.0.0 Mobile',
-                'PicoPad S1',
-                'PicoPad S1 (WiFi + 3G)',
-                'Axioo',
-                'Axioo',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/axioo.json'), true);
     }
 }

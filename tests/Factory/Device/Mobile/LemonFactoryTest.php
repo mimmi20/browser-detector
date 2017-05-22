@@ -103,27 +103,6 @@ class LemonFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Lemon Device',
-                'general Lemon Device',
-                'Lemon',
-                'Lemon',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Lemon B556',
-                'B556',
-                'B556',
-                'Lemon',
-                'Lemon',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/lemon.json'), true);
     }
 }

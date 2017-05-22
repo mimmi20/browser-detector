@@ -103,37 +103,6 @@ class EasypixFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Easypix Device',
-                'general Easypix Device',
-                'Easypix',
-                'Easypix',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; EasyPad 970 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'EasyPad 970',
-                'EasyPad 970',
-                'Easypix',
-                'Easypix',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.4; ar-eg; Junior 4.0 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'Junior 4.0',
-                'Junior 4.0',
-                'Easypix',
-                'Easypix',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/easypix.json'), true);
     }
 }

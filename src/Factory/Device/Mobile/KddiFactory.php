@@ -28,6 +28,7 @@ class KddiFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'kc31' => 'kc31',
+        'is04' => 'kddi is04',
     ];
 
     /**

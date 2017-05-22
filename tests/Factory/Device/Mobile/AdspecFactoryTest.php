@@ -103,27 +103,6 @@ class AdspecFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Adspec Device',
-                'general Adspec Device',
-                'Adspec',
-                'Adspec',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; AdTab 7 Lite Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'AdTab 7 Lite',
-                'AdTab 7 Lite',
-                'Adspec',
-                'Adspec',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/adspec.json'), true);
     }
 }

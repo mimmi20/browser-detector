@@ -39,6 +39,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'redmi 3s'       => 'redmi 3s',
         'redmi 3'        => 'redmi 3',
         'redmi_note_3'   => 'redmi note 3',
+        'redmi note 3'   => 'redmi note 3',
         'redmi note 2'   => 'redmi note 2',
         'hm note 1w'     => 'hm note 1w',
         'hm note 1s'     => 'hm note 1s',

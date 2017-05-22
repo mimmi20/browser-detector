@@ -103,27 +103,6 @@ class PegatronFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Pegatron Device',
-                'general Pegatron Device',
-                'Pegatron',
-                'Pegatron',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.0.3; ru-ru; chagall Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 ACHEETAHI/2100501074',
-                'Chagall',
-                'Chagall',
-                'Pegatron',
-                'Pegatron',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/pegatron.json'), true);
     }
 }

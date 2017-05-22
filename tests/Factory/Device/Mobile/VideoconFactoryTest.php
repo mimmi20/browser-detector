@@ -103,27 +103,6 @@ class VideoconFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Videocon Device',
-                'general Videocon Device',
-                'Videocon Industries Limited',
-                'Videocon',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 2.3.6; Videocon A15 Build/GRK39F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36 OPR/16.0.1212.64336',
-                'A15',
-                'A15',
-                'Videocon Industries Limited',
-                'Videocon',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/videocon.json'), true);
     }
 }

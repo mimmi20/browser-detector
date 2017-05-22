@@ -103,37 +103,6 @@ class LifewareFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Lifeware Device',
-                'general Lifeware Device',
-                'Lifeware',
-                'Lifeware',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; FT 4008 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
-                'FT-4008',
-                'Fabtab Quadro 8',
-                'Lifeware',
-                'Lifeware',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; en-US; FT_4008) U2/1.0.0 UCBrowser/9.8.0.534 U2/1.0.0 Mobile',
-                'FT-4008',
-                'Fabtab Quadro 8',
-                'Lifeware',
-                'Lifeware',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/lifeware.json'), true);
     }
 }

@@ -103,27 +103,6 @@ class KtouchFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general K-Touch Device',
-                'general K-Touch Device',
-                'K-Touch',
-                'K-Touch',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'TIANYU-KTOUCH/A930/Screen-240X320',
-                'Tianyu A930',
-                'Tianyu A930',
-                'K-Touch',
-                'K-Touch',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/ktouch.json'), true);
     }
 }

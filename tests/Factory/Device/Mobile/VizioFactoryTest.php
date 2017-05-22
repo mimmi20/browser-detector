@@ -103,27 +103,6 @@ class VizioFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Vizio Device',
-                'general Vizio Device',
-                'Vizio',
-                'Vizio',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 3.2.1; ru-ru; VTAB1008 Build/HTK55) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13',
-                'VTAB1008',
-                'VTAB1008',
-                'Vizio',
-                'Vizio',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/vizio.json'), true);
     }
 }

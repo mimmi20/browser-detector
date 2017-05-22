@@ -103,27 +103,6 @@ class BlissFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Bliss Device',
-                'general Bliss Device',
-                'Bliss',
-                'Bliss',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.3; Bliss Pad B9712KB Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Safari/537.36 OPR/27.0.1698.89115',
-                'Pad B9712KB',
-                'Pad B9712KB',
-                'Bliss',
-                'Bliss',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/bliss.json'), true);
     }
 }

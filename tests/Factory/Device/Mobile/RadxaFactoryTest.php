@@ -103,27 +103,6 @@ class RadxaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Radxa Device',
-                'general Radxa Device',
-                'Radxa',
-                'Radxa',
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; radxa rock Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.01 Safari/537.36',
-                'Rock',
-                'Rock',
-                'Radxa',
-                'Radxa',
-                'Desktop',
-                false,
-                'mouse',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/radxa.json'), true);
     }
 }

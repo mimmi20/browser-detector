@@ -103,27 +103,6 @@ class KeenHighFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Keen High Device',
-                'general Keen High Device',
-                'Keen High',
-                'Keen High',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.4; de-de; MT791 Build/GINGERBREAD.b04MT1ref.20120214) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'MT791',
-                'MT791',
-                'Keen High',
-                'Keen High',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/keenhigh.json'), true);
     }
 }

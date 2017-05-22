@@ -103,37 +103,6 @@ class DenverFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Denver Device',
-                'general Denver Device',
-                'DENVER ELECTRONICS A/S',
-                'Denver',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; TAD-70112 PO8292 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'TAD-70112',
-                'TAD-70112',
-                'DENVER ELECTRONICS A/S',
-                'Denver',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; da-dk; TAD-10023 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'TAD-10023',
-                'TAD-10023',
-                'DENVER ELECTRONICS A/S',
-                'Denver',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/denver.json'), true);
     }
 }

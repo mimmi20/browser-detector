@@ -103,47 +103,6 @@ class ZekiFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Zeki Device',
-                'general Zeki Device',
-                'Zeki',
-                'Zeki',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24',
-                'TBD1083',
-                'TBD1083',
-                'Zeki',
-                'Zeki',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'TBDC1093 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24',
-                'TBDC1093',
-                'TBDC1093',
-                'Zeki',
-                'Zeki',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24',
-                'TBDB863',
-                'TBDB863',
-                'Zeki',
-                'Zeki',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/zeki.json'), true);
     }
 }

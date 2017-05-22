@@ -103,27 +103,6 @@ class EinsUndEinsFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general 1 & 1 Device',
-                'general 1 & 1 Device',
-                '1 & 1',
-                '1 & 1',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2; de-de; smartpad Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'Smartpad',
-                'Smartpad',
-                '1 & 1',
-                '1 & 1',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/einsundeins.json'), true);
     }
 }

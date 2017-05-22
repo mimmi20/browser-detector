@@ -103,27 +103,6 @@ class JollaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Jolla Device',
-                'general Jolla Device',
-                'Jolla Ltd.',
-                'Jolla',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; Mobile; rv:31.0) Gecko/31.0 Firefox/31.0 SailfishBrowser/1.0',
-                'Sailfish',
-                'Sailfish',
-                'Jolla Ltd.',
-                'Jolla',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/jolla.json'), true);
     }
 }

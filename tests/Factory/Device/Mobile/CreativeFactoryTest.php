@@ -103,37 +103,6 @@ class CreativeFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Creative Device',
-                'general Creative Device',
-                'Creative',
-                'Creative',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.1; ZiiLABS ZiiO10  Build/v2.00.07-FROYO) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile Safari/528.16',
-                'ZiiO 10',
-                'ZiiO 10',
-                'Creative',
-                'Creative',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.1; ZiiLABS ZiiO7  Build/v2.00.13-FROYO) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile Safari/528.16',
-                'ZiiO7',
-                'ZiiO7',
-                'Creative',
-                'Creative',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/creative.json'), true);
     }
 }

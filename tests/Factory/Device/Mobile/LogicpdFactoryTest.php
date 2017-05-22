@@ -103,27 +103,6 @@ class LogicpdFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general LogicPD device',
-                'general LogicPD device',
-                'LogicPD',
-                'LogicPD',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; Nook Color (zoom2) Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'Zoom2',
-                'Zoom2',
-                'LogicPD',
-                'LogicPD',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/logicpd.json'), true);
     }
 }

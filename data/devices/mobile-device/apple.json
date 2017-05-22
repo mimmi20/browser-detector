@@ -1,0 +1,28 @@
+{
+  "general apple device": {
+    "codename": "general Apple Device",
+    "marketingName": "general Apple Device",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "platform": null,
+    "type": "mobile-device",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "ipod touch": {
+    "codename": "iPod Touch",
+    "marketingName": "iPod Touch",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "platform": "ios",
+    "type": "mobile-device",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
+    "dualOrientation": true,
+    "colors": null
+  }
+}

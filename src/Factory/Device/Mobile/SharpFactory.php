@@ -27,6 +27,7 @@ class SharpFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'shl25'          => 'sharp shl25',
         'sharp-tq-gx30i' => 'tq-gx30i',
         'sh-10d'         => 'sh-10d',
         'sh-01f'         => 'sh-01f',

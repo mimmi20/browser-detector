@@ -103,27 +103,6 @@ class HannspreeFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general HANNspree Device',
-                'general HANNspree Device',
-                'HANNspree',
-                'HANNspree',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.4; SN10T1 Build/IML77) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Safari/537.36',
-                'SN10T1',
-                'HANNSpad',
-                'HANNspree',
-                'HANNspree',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/hannspree.json'), true);
     }
 }

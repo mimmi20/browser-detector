@@ -103,27 +103,6 @@ class VastKingFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general VastKing Device',
-                'general VastKing Device',
-                'VastKing',
-                'VastKing',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.1; M717R-HD Build/JRO03H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.72 Safari/537.36 OPR/19.0.1340.69721',
-                'M717R-HD',
-                'M717R-HD',
-                'VastKing',
-                'VastKing',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/vastking.json'), true);
     }
 }

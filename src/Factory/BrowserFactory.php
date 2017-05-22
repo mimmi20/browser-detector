@@ -217,6 +217,7 @@ class BrowserFactory implements FactoryInterface
             'haosouspider'                        => 'haosouspider',
             '360spider'                           => '360spider',
             'outlook-express'                     => 'outlook-express',
+            'outlook social connector'            => 'outlook social connector',
             'outlook'                             => 'outlook',
             'microsoft office mobile'             => 'office',
             'msoffice'                            => 'office',
@@ -250,6 +251,8 @@ class BrowserFactory implements FactoryInterface
             't-online browser'                    => 't-online browser',
             'appengine-google'                    => 'google app engine',
             'crystalsemanticsbot'                 => 'crystalsemanticsbot',
+            '360se'                               => '360 secure browser',
+            '360ee'                               => '360 speed browser',
         ];
 
         foreach ($checkbeforeIe as $search => $key) {
@@ -314,8 +317,6 @@ class BrowserFactory implements FactoryInterface
             'coolnovo'    => 'coolnovo',
             'kenshoo'     => 'kenshoo',
             'bowser'      => 'bowser',
-            '360se'       => '360 secure browser',
-            '360ee'       => '360 speed browser',
             'asw'         => 'avast safezone',
             'schoolwires' => 'schoolwires app',
             'netnewswire' => 'netnewswire',
@@ -502,6 +503,7 @@ class BrowserFactory implements FactoryInterface
             'evernote'                 => 'evernote app',
             'fluid'                    => 'fluid',
             'safari'                   => 'safari',
+            'windows phone ad client'  => 'windows phone ad client',
         ];
 
         foreach ($checkBeforeSafari as $search => $key) {

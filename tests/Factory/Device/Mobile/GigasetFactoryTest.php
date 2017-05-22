@@ -103,37 +103,6 @@ class GigasetFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Gigaset Device',
-                'general Gigaset Device',
-                'Gigaset Communications GmbH',
-                'Gigaset',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Dalvik/1.6.0 (Linux; U; Android 4.2.2; Gigaset QV830 Build/JDQ39)',
-                'QV830',
-                'QV830',
-                'Gigaset Communications GmbH',
-                'Gigaset',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Dalvik/1.6.0 (Linux; U; Android 4.2.2; Gigaset QV1030 Build/JDQ39)',
-                'QV1030',
-                'QV1030',
-                'Gigaset Communications GmbH',
-                'Gigaset',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/gigaset.json'), true);
     }
 }

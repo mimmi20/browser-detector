@@ -103,27 +103,6 @@ class MtechFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general MTech Device',
-                'general MTech Device',
-                'MTech',
-                'MTech',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Mtech_ACE4) U2/1.0.0 UCBrowser/9.5.0.480 Mobile',
-                'Ace 4',
-                'Ace 4',
-                'MTech',
-                'MTech',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/mtech.json'), true);
     }
 }

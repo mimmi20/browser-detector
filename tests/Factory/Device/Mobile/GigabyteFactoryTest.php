@@ -103,47 +103,6 @@ class GigabyteFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Gigabyte Device',
-                'general Gigabyte Device',
-                'Gigabyte',
-                'Gigabyte',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.4; Rio R1 Build/IMM76I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.00 Mobile Safari/537.36',
-                'Rio R1',
-                'GSmart Rio R1',
-                'Gigabyte',
-                'Gigabyte',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ru; GSmart_T4) U2/1.0.0 UCBrowser/10.0.0.556 Mobile',
-                'GSmart T4',
-                'GSmart T4',
-                'Gigabyte',
-                'Gigabyte',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                't600; v3.02.02 (compatible; msie 6.0; windows ce; iemobile 6.12) ppc; 240x320; gigabyte-g-smart',
-                'general Gigabyte Device',
-                'general Gigabyte Device',
-                'Gigabyte',
-                'Gigabyte',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/gigabyte.json'), true);
     }
 }

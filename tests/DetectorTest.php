@@ -98,10 +98,32 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
         self::assertEquals($expectedResult, $result);
     }
 
+    /**
+     * @dataProvider providerGetBrowser
+     *
+     * @param string                  $userAgent
+     * @param \UaResult\Result\Result $expectedResult
+     */
+    public function testGetBrowserFromPsr7Message($userAgent, Result $expectedResult)
+    {
+        $message = $this->createMock('\Psr\Http\Message\MessageInterface');
+        $message
+            ->expects(self::once())
+            ->method('getHeaders')
+            ->willReturn([Constants::HEADER_HTTP_USERAGENT => [$userAgent]]);
+
+        /** @var \UaResult\Result\Result $result */
+        $result = $this->object->getBrowser($message);
+
+        self::assertInstanceOf('\UaResult\Result\Result', $result);
+
+        self::assertEquals($expectedResult, $result);
+    }
+
     public function testGetBrowserFromInvalid()
     {
         $this->expectException('\UnexpectedValueException');
-        $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Wurfl\Request\GenericRequest');
+        $this->expectExceptionMessage('the request parameter has to be a string, an array, an instance of \Psr\Http\Message\MessageInterface or an instance of \Wurfl\Request\GenericRequest');
 
         $this->object->getBrowser(new \stdClass());
     }

@@ -103,27 +103,6 @@ class LePanFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general LePan Device',
-                'general LePan Device',
-                'LePan',
-                'LePan',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 3.2.1; tr-tr; LePanII Build/HTK75) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13',
-                'LePan II',
-                'LePan II',
-                'LePan',
-                'LePan',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/lepan.json'), true);
     }
 }

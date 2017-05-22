@@ -103,27 +103,6 @@ class ArtelFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Artel Device',
-                'general Artel Device',
-                'Artel',
-                'Artel',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ru; Adi_5S) U2/1.0.0 UCBrowser/9.1.1.420 Mobile',
-                'Adi5S',
-                'Adi5S',
-                'Artel',
-                'Artel',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/artel.json'), true);
     }
 }

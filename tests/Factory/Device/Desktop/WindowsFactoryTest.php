@@ -103,27 +103,6 @@ class WindowsFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'Windows Desktop',
-                'Windows Desktop',
-                null,
-                null,
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586',
-                'Windows Desktop',
-                'Windows Desktop',
-                null,
-                null,
-                'Desktop',
-                false,
-                'mouse',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/desktop/windows.json'), true);
     }
 }

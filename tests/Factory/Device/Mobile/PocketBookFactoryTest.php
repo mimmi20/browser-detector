@@ -103,27 +103,6 @@ class PocketBookFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general PocketBook Device',
-                'general PocketBook Device',
-                'PocketBook',
-                'PocketBook',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; PocketBook SURFpad 4 L Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36',
-                'SURFpad 4 L',
-                'SURFpad 4 L',
-                'PocketBook',
-                'PocketBook',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/pocketbook.json'), true);
     }
 }

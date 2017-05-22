@@ -103,37 +103,6 @@ class IntensoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Intenso Device',
-                'general Intenso Device',
-                'Intenso',
-                'Intenso',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Tablet-PC-4.1-Mozilla/5.0 (Linux; U; Android 4.1.1; el-gr; INM8002KP Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'INM8002KP',
-                'TAB 824',
-                'Intenso',
-                'Intenso',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.1; de-de; INM803HC Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'Tab 803',
-                'Tab 803',
-                'Intenso',
-                'Intenso',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/intenso.json'), true);
     }
 }

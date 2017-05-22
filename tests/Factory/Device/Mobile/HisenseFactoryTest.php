@@ -103,37 +103,6 @@ class HisenseFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Hisense Device',
-                'general Hisense Device',
-                'Hisense',
-                'Hisense',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.4; F5281 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/26.0.1985.135 Safari/537.36',
-                'F5281',
-                'Sero 8 Pro',
-                'Hisense',
-                'Hisense',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Hisense-W2003',
-                'general Hisense Device',
-                'general Hisense Device',
-                'Hisense',
-                'Hisense',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/hisense.json'), true);
     }
 }

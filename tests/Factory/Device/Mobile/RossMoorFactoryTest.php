@@ -103,37 +103,6 @@ class RossMoorFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Ross&Moor Device',
-                'general Ross&Moor Device',
-                'Ross&Moor',
-                'Ross&Moor',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; RM-997 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.68 Safari/537.36',
-                'RM-997',
-                'RM-997',
-                'Ross&Moor',
-                'Ross&Moor',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; RM-560 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501044',
-                'RM-560',
-                'RM-560',
-                'Ross&Moor',
-                'Ross&Moor',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/rossmoor.json'), true);
     }
 }

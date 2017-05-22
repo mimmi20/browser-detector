@@ -29,6 +29,8 @@ class AsusFactory implements Factory\FactoryInterface
     private $devices = [
         'tf101g'            => 'eee pad transformer tf101g',
         'z00ad'             => 'z00ad',
+        'z007'              => 'asus z007',
+        't00i'              => 'asus t00i',
         'k00c'              => 'k00c',
         'k00f'              => 'k00f',
         'k00z'              => 'k00z',
@@ -38,6 +40,7 @@ class AsusFactory implements Factory\FactoryInterface
         'k017'              => 'k017',
         'k013'              => 'k013',
         'k012'              => 'k012',
+        'k011'              => 'asus k011',
         'k00e'              => 'k00e',
         'me372cg'           => 'k00e',
         'me172v'            => 'me172v',

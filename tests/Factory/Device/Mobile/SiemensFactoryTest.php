@@ -103,37 +103,6 @@ class SiemensFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Siemens Device',
-                'general Siemens Device',
-                'Siemens',
-                'Siemens',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-            [
-                'SIE-S65/58 UP.Browser/7.0.2.2.d.4(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1',
-                'S65',
-                'S65',
-                'Siemens',
-                'Siemens',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-            [
-                'YourWap Siemens SL45/2.63',
-                'general Siemens Device',
-                'general Siemens Device',
-                'Siemens',
-                'Siemens',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/siemens.json'), true);
     }
 }

@@ -103,37 +103,6 @@ class WonderMediaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general WonderMedia Device',
-                'general WonderMedia Device',
-                'WonderMedia',
-                'WonderMedia',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.3; WM8850-mid Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36',
-                'WM8850',
-                'Prizm',
-                'WonderMedia',
-                'WonderMedia',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android v2.2; de-de; WM8650 Build/FRG83D_v2.2 Android Froyo) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'WM8650',
-                'Prizm',
-                'WonderMedia',
-                'WonderMedia',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/wondermedia.json'), true);
     }
 }

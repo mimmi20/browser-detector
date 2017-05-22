@@ -103,37 +103,6 @@ class NuqleoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Nuqleo Device',
-                'general Nuqleo Device',
-                'Nuqleo',
-                'Nuqleo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux;U;Android 4.2.2; en-us; Nuqleo; Zaffire 1010 Build/ICS) AppleWebKit/531.21.10(KTHML,like Gecko) Version/4.0.4 Mobile/7B367 Safari/531.21.10',
-                'Zaffire 1010',
-                'Zaffire 1010',
-                'Nuqleo',
-                'Nuqleo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux;U; Android 4.2.2;  en-us;  Nuqleo; Zaffire 785 Build/ICS) AppleWebKit/531.21.10(KTHML,like Gecko) Version/4.0.4 Mobile/7B367 Safari/531.21.10',
-                'Zaffire 785',
-                'Zaffire 785',
-                'Nuqleo',
-                'Nuqleo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/nuqleo.json'), true);
     }
 }

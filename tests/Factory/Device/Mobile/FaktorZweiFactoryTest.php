@@ -103,27 +103,6 @@ class FaktorZweiFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Faktor Zwei Device',
-                'general Faktor Zwei Device',
-                'Faktor Zwei',
-                'Faktor Zwei',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.3.3; de-de; FX2-PAD10 Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                '812223',
-                'FX2 PAD10',
-                'Faktor Zwei',
-                'Faktor Zwei',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/faktorzwei.json'), true);
     }
 }

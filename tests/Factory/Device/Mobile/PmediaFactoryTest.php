@@ -103,27 +103,6 @@ class PmediaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general PMEDIA Device',
-                'general PMEDIA Device',
-                'PMEDIA',
-                'PMEDIA',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; PMSmart450 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
-                'PMSmart450',
-                'PMSmart450',
-                'PMEDIA',
-                'PMEDIA',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/pmedia.json'), true);
     }
 }

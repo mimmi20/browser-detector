@@ -103,27 +103,6 @@ class YuandaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general YUANDA Device',
-                'general YUANDA Device',
-                'YUANDA',
-                'YUANDA',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'YUANDA50_12864_11B_HW (MRE\\2.5.00(800) resolution\\320480 chipset\\MT6250 touch\\1 tpannel\\1 camera\\1 gsensor\\0 keyboard\\reduced) C529AH_JY_539_W1.11B.V2.2 Release/2012.09.26 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/ Q03C1-2.40 fr-FR',
-                '50',
-                '50',
-                'YUANDA',
-                'YUANDA',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/yuanda.json'), true);
     }
 }

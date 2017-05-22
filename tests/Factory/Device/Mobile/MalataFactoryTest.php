@@ -103,27 +103,6 @@ class MalataFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Malata Device',
-                'general Malata Device',
-                'Malata',
-                'Malata',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'MALATA I50 Linux/2.6.35.7 Android/2.3.6 Release/10.10.2012 Browser/AppleWebKit533.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mobile Safari/533.1',
-                'I50',
-                'I50',
-                'Malata',
-                'Malata',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/malata.json'), true);
     }
 }

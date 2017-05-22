@@ -103,27 +103,6 @@ class ZenithinkFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Zenithink Device',
-                'general Zenithink Device',
-                'Zenithink',
-                'Zenithink',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.1-update1; Cs-cz; Zt180 Build/ERE27) AppleWebKit/530.17 (KHTML, Like Gecko) Version/4.0 Mobile Safari/530.17',
-                'ZT180',
-                'ZT180',
-                'Zenithink',
-                'Zenithink',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/zenithink.json'), true);
     }
 }

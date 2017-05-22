@@ -103,27 +103,6 @@ class LogicomFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Logicom Device',
-                'general Logicom Device',
-                'Logicom',
-                'Logicom',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Logicom-S9782 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Safari/537.36',
-                'S9782',
-                'S9782',
-                'Logicom',
-                'Logicom',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/logicom.json'), true);
     }
 }

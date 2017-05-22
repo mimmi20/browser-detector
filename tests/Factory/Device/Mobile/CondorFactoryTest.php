@@ -103,27 +103,6 @@ class CondorFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Condor Device',
-                'general Condor Device',
-                'Condor',
-                'Condor',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; ar-SA; CTAB785R16-3G Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.0.2.523 U3/0.8.0 Mobile Safari/534.30',
-                'CTAB785R16-3G',
-                'CTAB 7.85 3G',
-                'Condor',
-                'Condor',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/condor.json'), true);
     }
 }

@@ -103,27 +103,6 @@ class GfiveFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general GFive Device',
-                'general GFive Device',
-                'GFive',
-                'GFive',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; GFIVE President G10 Fashion Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36',
-                'President G10 Fashion',
-                'President G10 Fashion',
-                'GFive',
-                'GFive',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/gfive.json'), true);
     }
 }

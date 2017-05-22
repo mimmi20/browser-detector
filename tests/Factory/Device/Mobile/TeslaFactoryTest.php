@@ -103,57 +103,6 @@ class TeslaFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Tesla Device',
-                'general Tesla Device',
-                'Tesla',
-                'Tesla',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.4.2; Tesla TTL7 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.128 Safari/537.36',
-                'TTL7',
-                'TTL7',
-                'Tesla',
-                'Tesla',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; sr-rs; Tesla_Tablet_785 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'Tablet 785',
-                'Tablet 785',
-                'Tesla',
-                'Tesla',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.2; sl-si; Tesla TTH7 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'TTH7',
-                'TTH7',
-                'Tesla',
-                'Tesla',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 5.1.1; Tesla_Tablet_L7_3G Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36',
-                'Tablet L7 3G',
-                'Tablet L7 3G',
-                'Tesla',
-                'Tesla',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/tesla.json'), true);
     }
 }

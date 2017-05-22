@@ -103,27 +103,6 @@ class IonikFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general I-ONIK Device',
-                'general I-ONIK Device',
-                'I-ONIK',
-                'I-ONIK',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; TP10.1-1500DC kb Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'TP10.1-1500DC',
-                'TP10.1-1500DC',
-                'I-ONIK',
-                'I-ONIK',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/ionik.json'), true);
     }
 }

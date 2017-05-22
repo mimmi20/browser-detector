@@ -6935,6 +6935,20 @@
     },
     "engine": "unknown"
   },
+  "windows phone ad client": {
+    "name": "Windows Phone Ad Client",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Windows Phone Ad Client"
+      ]
+    },
+    "engine": "unknown"
+  },
   "edge": {
     "name": "Edge",
     "manufacturer": "Microsoft",
@@ -14800,6 +14814,18 @@
     "type": "bot",
     "version": {
       "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "outlook social connector": {
+    "name": "Outlook Social Connector",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "email-client",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftOutlook",
       "search": null
     },
     "engine": "unknown"

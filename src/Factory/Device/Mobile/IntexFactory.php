@@ -27,7 +27,9 @@ class IntexFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'aqua_star' => 'aqua star',
+        'aqua trend' => 'intex aqua trend',
+        'aqua star'  => 'aqua star',
+        'aqua_star'  => 'aqua star',
     ];
 
     /**

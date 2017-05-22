@@ -103,27 +103,6 @@ class MegaFonFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general MegaFon Device',
-                'general MegaFon Device',
-                'MegaFon',
-                'MegaFon',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.4; MegaFon_SP-AI Build/1.2.10.4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.81 Mobile Safari/537.36 OPR/28.0.1764.90386',
-                'SP-AI',
-                'SP-AI',
-                'MegaFon',
-                'MegaFon',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/megafon.json'), true);
     }
 }

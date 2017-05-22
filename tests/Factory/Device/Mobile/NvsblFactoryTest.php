@@ -103,27 +103,6 @@ class NvsblFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general NVSBL Device',
-                'general NVSBL Device',
-                'NVSBL',
-                'NVSBL',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; P4D SIRIUS Build/MID) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'P4D Sirius',
-                'P4D Sirius',
-                'NVSBL',
-                'NVSBL',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/nvsbl.json'), true);
     }
 }

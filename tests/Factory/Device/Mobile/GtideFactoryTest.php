@@ -103,27 +103,6 @@ class GtideFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general G-Tide Device',
-                'general G-Tide Device',
-                'G-Tide',
-                'G-Tide',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; G-TiDE E77 Build/JDQ39) U2/1.0.0 UCBrowser/10.7.0.733 Mobile',
-                'E77',
-                'E77',
-                'G-Tide',
-                'G-Tide',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/gtide.json'), true);
     }
 }

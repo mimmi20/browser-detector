@@ -103,47 +103,6 @@ class KianoFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Kiano Device',
-                'general Kiano Device',
-                'Kiano',
-                'Kiano',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; KianoIntelect7 Build/Elegance) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Safari/537.36 OPR/27.0.1698.89115',
-                'Intelect 7 3G',
-                'Intelect 7 3G',
-                'Kiano',
-                'Kiano',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Kiano Elegance 8 3G by Zanetti Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
-                'Elegance 8 3G',
-                'Elegance 8 3G',
-                'Kiano',
-                'Kiano',
-                'FonePad',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.2.2; Kiano Elegance by Zanetti Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
-                'Elegance',
-                'Elegance',
-                'Kiano',
-                'Kiano',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/kiano.json'), true);
     }
 }

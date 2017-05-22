@@ -103,27 +103,6 @@ class ShiruFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Shiru Device',
-                'general Shiru Device',
-                'Shiru',
-                'Shiru',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.0.4; SAMURAI10(QuadCore) Build/SAMURAI10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.138 Safari/537.36',
-                'Samurai 10',
-                'Samurai 10',
-                'Shiru',
-                'Shiru',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/shiru.json'), true);
     }
 }

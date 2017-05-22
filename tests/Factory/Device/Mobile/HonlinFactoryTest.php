@@ -103,27 +103,6 @@ class HonlinFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Honlin Device',
-                'general Honlin Device',
-                'Honlin',
-                'Honlin',
-                'Desktop',
-                false,
-                'mouse',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 4.2.1; de-de; HL-PC1088 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 Mobile UCBrowser/3.4.3.532',
-                'PC1088',
-                'PC1088',
-                'Honlin',
-                'Honlin',
-                'Desktop',
-                false,
-                'mouse',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/honlin.json'), true);
     }
 }

@@ -103,27 +103,6 @@ class SpvFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general SPV Device',
-                'general SPV Device',
-                'SPV',
-                'SPV',
-                'Mobile Phone',
-                false,
-                null,
-            ],
-            [
-                'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M700; OpVer 19.123.2.733) OrangeBot-Mobile 2008.0 (mobilesearch.support@orange-ftgroup.com)',
-                'M700',
-                'M700',
-                'SPV',
-                'SPV',
-                'Mobile Phone',
-                true,
-                null,
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/spv.json'), true);
     }
 }

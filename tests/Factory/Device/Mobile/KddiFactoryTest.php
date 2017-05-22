@@ -103,27 +103,6 @@ class KddiFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general KDDI Device',
-                'general KDDI Device',
-                'KDDI',
-                'KDDI',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'KDDI-KC31 UP.Browser/6.2.0.5 (GUI) MMP/2.0',
-                'KC31',
-                'W11K',
-                'KDDI',
-                'KDDI',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/kddi.json'), true);
     }
 }

@@ -117,17 +117,23 @@ class DeviceLoader implements LoaderInterface
      */
     private function initCache(CacheItemInterface $cacheInitialized)
     {
-        static $devices = null;
+        $sourceDirectory = __DIR__ . '/../../data/devices/';
+        $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
 
-        if (null === $devices) {
-            $devices = json_decode(file_get_contents(__DIR__ . '/../../data/devices.json'));
-        }
+        foreach (new \RecursiveIteratorIterator($iterator) as $file) {
+            /** @var $file \SplFileInfo */
+            if (!$file->isFile() || $file->getExtension() !== 'json') {
+                continue;
+            }
 
-        foreach ($devices as $deviceKey => $deviceData) {
-            $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
-            $cacheItem->set($deviceData);
+            $devices = json_decode(file_get_contents($file->getPathname()));
 
-            $this->cache->save($cacheItem);
+            foreach ($devices as $deviceKey => $deviceData) {
+                $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
+                $cacheItem->set($deviceData);
+
+                $this->cache->save($cacheItem);
+            }
         }
 
         $cacheInitialized->set(true);

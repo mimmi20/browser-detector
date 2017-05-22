@@ -42,12 +42,16 @@ class MicrosoftOutlook implements VersionCacheFactoryInterface
             return VersionFactory::set($helper->mapVersion($matches[1]));
         }
 
-        preg_match(
+        $doMatch = preg_match(
             '/microsoft outlook ([\d\.]+)/i',
             $useragent,
             $matches
         );
 
-        return VersionFactory::set($helper->mapVersion($matches[1]));
+        if ($doMatch) {
+            return VersionFactory::set($helper->mapVersion($matches[1]));
+        }
+
+        return VersionFactory::set('0.0');
     }
 }

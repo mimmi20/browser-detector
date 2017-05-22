@@ -103,37 +103,6 @@ class CosmoteFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return [
-            [
-                'this is a fake ua to trigger the fallback',
-                'general Cosmote Device',
-                'general Cosmote Device',
-                'Cosmote',
-                'Cosmote',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Cosmote_My_mini_Tab 4.0.4; hu-hu; Cosmote_My_mini_Tablet Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
-                'My Mini Tablet',
-                'My Mini Tablet',
-                'Cosmote',
-                'Cosmote',
-                'Tablet',
-                true,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 4.1.2; Cosmote Xplore Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31',
-                'Xplore',
-                'Xplore',
-                'Cosmote',
-                'Cosmote',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-        ];
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/cosmote.json'), true);
     }
 }
