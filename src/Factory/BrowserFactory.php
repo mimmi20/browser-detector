@@ -1087,16 +1087,13 @@ class BrowserFactory implements FactoryInterface
             'netlyzer fastprobe' => 'netlyzer fastprobe',
             'mnogosearch' => 'mnogosearch',
             'uipbot' => 'uipbot',
+            'mbot' => 'mbot',
         ];
 
         foreach ($checkBeforeSafariUiwebview as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
-        }
-
-        if ($s->contains('mbot', false)) {
-            return $this->loader->load('mbot', $useragent);
         }
 
         if ($s->contains('ms web services client protocol', false)) {
