@@ -1088,16 +1088,13 @@ class BrowserFactory implements FactoryInterface
             'mnogosearch' => 'mnogosearch',
             'uipbot' => 'uipbot',
             'mbot' => 'mbot',
+            'ms web services client protocol' => '.net framework clr',
         ];
 
         foreach ($checkBeforeSafariUiwebview as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
-        }
-
-        if ($s->contains('ms web services client protocol', false)) {
-            return $this->loader->load('.net framework clr', $useragent);
         }
 
         if ($s->containsAny(['atomicbrowser', 'atomiclite'], false)) {
