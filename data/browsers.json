@@ -797,7 +797,20 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "AtomicBrowser",
+        "AtomicBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "atomic browser lite": {
+    "name": "Atomic Browser Lite",
+    "manufacturer": "RichardTrautvetter",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
         "AtomicLite"
       ]
     },

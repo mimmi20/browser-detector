@@ -1089,16 +1089,14 @@ class BrowserFactory implements FactoryInterface
             'uipbot' => 'uipbot',
             'mbot' => 'mbot',
             'ms web services client protocol' => '.net framework clr',
+            'atomicbrowser' => 'atomic browser',
+            'atomiclite' => 'atomic browser lite',
         ];
 
         foreach ($checkBeforeSafariUiwebview as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
-        }
-
-        if ($s->containsAny(['atomicbrowser', 'atomiclite'], false)) {
-            return $this->loader->load('atomic browser', $useragent);
         }
 
         if ($s->contains('feedfetcher-google', false)) {
