@@ -115,10 +115,8 @@
     "marketingName": "ChromeOS",
     "manufacturer": "Google",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "CrOS"
-      ]
+      "class": "\\BrowserDetector\\Version\\ChromeOs",
+      "search": null
     }
   },
   "cygwin": {
