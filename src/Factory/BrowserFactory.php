@@ -1091,20 +1091,14 @@ class BrowserFactory implements FactoryInterface
             'ms web services client protocol' => '.net framework clr',
             'atomicbrowser' => 'atomic browser',
             'atomiclite' => 'atomic browser lite',
+            'feedfetcher-google' => 'google feedfetcher',
+            'perfect%20browser' => 'perfect browser',
         ];
 
         foreach ($checkBeforeSafariUiwebview as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
-        }
-
-        if ($s->contains('feedfetcher-google', false)) {
-            return $this->loader->load('google feedfetcher', $useragent);
-        }
-
-        if ($s->contains('perfect%20browser', false)) {
-            return $this->loader->load('perfect browser', $useragent);
         }
 
         if ($s->contains('reeder', false)) {
