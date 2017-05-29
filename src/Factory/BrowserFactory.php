@@ -518,8 +518,8 @@ class BrowserFactory implements FactoryInterface
 
         $checkBeforeSafariUiwebview = [
             'twcan/sportsnet' => 'twc sportsnet',
-            'adobeair' => 'adobe air',
-            'easouspider' => 'easouspider',
+            'adobeair'        => 'adobe air',
+            'easouspider'     => 'easouspider',
         ];
 
         foreach ($checkBeforeSafariUiwebview as $search => $key) {
@@ -533,64 +533,64 @@ class BrowserFactory implements FactoryInterface
         }
 
         $checkBeforeIos = [
-            'waterfox' => 'waterfox',
-            'thunderbird' => 'thunderbird',
-            'fennec' => 'fennec',
-            'myibrow' => 'my internet browser',
-            'daumoa' => 'daumoa',
-            'unister-test' => 'unistertesting',
-            'unistertesting' => 'unistertesting',
-            'unister-https-test' => 'unistertesting',
-            'iceweasel' => 'iceweasel',
-            'icecat' => 'icecat',
-            'iceape' => 'iceape',
-            'galeon' => 'galeon',
-            'surveybot' => 'surveybot',
-            'aggregator:spinn3r' => 'spinn3r rss aggregator',
-            'tweetmemebot' => 'tweetmeme bot',
-            'butterfly' => 'butterfly robot',
-            'james bot' => 'jamesbot',
+            'waterfox'                                      => 'waterfox',
+            'thunderbird'                                   => 'thunderbird',
+            'fennec'                                        => 'fennec',
+            'myibrow'                                       => 'my internet browser',
+            'daumoa'                                        => 'daumoa',
+            'unister-test'                                  => 'unistertesting',
+            'unistertesting'                                => 'unistertesting',
+            'unister-https-test'                            => 'unistertesting',
+            'iceweasel'                                     => 'iceweasel',
+            'icecat'                                        => 'icecat',
+            'iceape'                                        => 'iceape',
+            'galeon'                                        => 'galeon',
+            'surveybot'                                     => 'surveybot',
+            'aggregator:spinn3r'                            => 'spinn3r rss aggregator',
+            'tweetmemebot'                                  => 'tweetmeme bot',
+            'butterfly'                                     => 'butterfly robot',
+            'james bot'                                     => 'jamesbot',
             'msie or firefox mutant; not on Windows server' => 'daumoa',
-            'sailfishbrowser' => 'sailfish browser',
-            'kazehakase' => 'kazehakase',
-            'cometbird' => 'cometbird',
-            'camino' => 'camino',
-            'slimerjs' => 'slimerjs',
-            'multizilla' => 'multizilla',
-            'minimo' => 'minimo',
-            'microb' => 'microb',
-            'maemo browser' => 'microb',
-            'maemobrowser' => 'microb',
-            'k-meleon' => 'k-meleon',
-            'curb' => 'curb',
-            'link_thumbnailer' => 'link_thumbnailer',
-            'mechanize' => 'mechanize',
-            'ruby' => 'generic ruby crawler',
-            'googleimageproxy' => 'google image proxy',
-            'dalvik' => 'dalvik',
-            'bb_work_connect' => 'bb work connect',
-            'firefox' => 'firefox',
-            'minefield' => 'firefox',
-            'shiretoko' => 'firefox',
-            'bonecho' => 'firefox',
-            'namoroka' => 'firefox',
-            'gvfs' => 'gvfs',
-            'luakit' => 'luakit',
-            'playstation 3' => 'netfront',
-            'sistrix' => 'sistrix crawler',
-            'ezooms' => 'ezooms',
-            'grapefx' => 'grapefx',
-            'grapeshotcrawler' => 'grapeshotcrawler',
-            'mail.ru' => 'mail.ru',
-            'proximic' => 'proximic',
-            'polaris' => 'polaris',
-            'another web mining tool' => 'another web mining tool',
-            'awmt' => 'another web mining tool',
-            'wbsearchbot' => 'wbsearchbot',
-            'wbsrch' => 'wbsearchbot',
-            'konqueror' => 'konqueror',
-            'typo3-linkvalidator' => 'typo3 linkvalidator',
-            'feeddlerrss' => 'feeddler rss reader',
+            'sailfishbrowser'                               => 'sailfish browser',
+            'kazehakase'                                    => 'kazehakase',
+            'cometbird'                                     => 'cometbird',
+            'camino'                                        => 'camino',
+            'slimerjs'                                      => 'slimerjs',
+            'multizilla'                                    => 'multizilla',
+            'minimo'                                        => 'minimo',
+            'microb'                                        => 'microb',
+            'maemo browser'                                 => 'microb',
+            'maemobrowser'                                  => 'microb',
+            'k-meleon'                                      => 'k-meleon',
+            'curb'                                          => 'curb',
+            'link_thumbnailer'                              => 'link_thumbnailer',
+            'mechanize'                                     => 'mechanize',
+            'ruby'                                          => 'generic ruby crawler',
+            'googleimageproxy'                              => 'google image proxy',
+            'dalvik'                                        => 'dalvik',
+            'bb_work_connect'                               => 'bb work connect',
+            'firefox'                                       => 'firefox',
+            'minefield'                                     => 'firefox',
+            'shiretoko'                                     => 'firefox',
+            'bonecho'                                       => 'firefox',
+            'namoroka'                                      => 'firefox',
+            'gvfs'                                          => 'gvfs',
+            'luakit'                                        => 'luakit',
+            'playstation 3'                                 => 'netfront',
+            'sistrix'                                       => 'sistrix crawler',
+            'ezooms'                                        => 'ezooms',
+            'grapefx'                                       => 'grapefx',
+            'grapeshotcrawler'                              => 'grapeshotcrawler',
+            'mail.ru'                                       => 'mail.ru',
+            'proximic'                                      => 'proximic',
+            'polaris'                                       => 'polaris',
+            'another web mining tool'                       => 'another web mining tool',
+            'awmt'                                          => 'another web mining tool',
+            'wbsearchbot'                                   => 'wbsearchbot',
+            'wbsrch'                                        => 'wbsearchbot',
+            'konqueror'                                     => 'konqueror',
+            'typo3-linkvalidator'                           => 'typo3 linkvalidator',
+            'feeddlerrss'                                   => 'feeddler rss reader',
         ];
 
         foreach ($checkBeforeIos as $search => $key) {
@@ -604,120 +604,120 @@ class BrowserFactory implements FactoryInterface
         }
 
         $checkBeforeMosbookmarks = [
-            'ios' => 'mobile safari uiwebview',
-            'iphone' => 'mobile safari uiwebview',
-            'ipad' => 'mobile safari uiwebview',
-            'ipod' => 'mobile safari uiwebview',
-            'paperlibot' => 'paper.li bot',
-            'spbot' => 'seoprofiler',
-            'dotbot' => 'dotbot',
-            'google-structureddatatestingtool' => 'google structured-data testingtool',
+            'ios'                                 => 'mobile safari uiwebview',
+            'iphone'                              => 'mobile safari uiwebview',
+            'ipad'                                => 'mobile safari uiwebview',
+            'ipod'                                => 'mobile safari uiwebview',
+            'paperlibot'                          => 'paper.li bot',
+            'spbot'                               => 'seoprofiler',
+            'dotbot'                              => 'dotbot',
+            'google-structureddatatestingtool'    => 'google structured-data testingtool',
             'google-structured-data-testing-tool' => 'google structured-data testingtool',
-            'webmastercoffee' => 'webmastercoffee',
-            'ahrefs' => 'ahrefsbot',
-            'apercite' => 'apercite',
-            'woobot' => 'woobot',
-            'scoutjet' => 'scoutjet',
-            'blekkobot' => 'blekkobot',
-            'pagesinventory' => 'pagesinventory bot',
-            'slackbot-linkexpanding' => 'slackbot-link-expanding',
-            'slackbot' => 'slackbot',
-            'seokicks-robot' => 'seokicks robot',
-            'alexabot' => 'alexabot',
-            'exabot' => 'exabot',
-            'domainscan' => 'domainscan server monitoring',
-            'jobroboter' => 'jobroboter',
-            'acoonbot' => 'acoonbot',
-            'woriobot' => 'woriobot',
-            'monobot' => 'monobot',
-            'domainsigmacrawler' => 'domainsigmacrawler',
-            'bnf.fr_bot' => 'bnf.fr bot',
-            'crawlrobot' => 'crawlrobot',
-            'addthis.com robot' => 'addthis.com robot',
-            'yeti' => 'naverbot',
-            'naver.com/robots' => 'naverbot',
-            'robots' => 'testcrawler',
-            'deusu' => 'werbefreie deutsche suchmaschine',
-            'obot' => 'obot',
-            'zumbot' => 'zumbot',
-            'umbot' => 'umbot',
-            'picmole' => 'picmole bot',
-            'zollard' => 'zollard worm',
-            'fhscan core' => 'fhscan core',
-            'nbot' => 'nbot',
-            'loadtimebot' => 'loadtimebot',
-            'scrubby' => 'scrubby',
-            'squzer' => 'squzer',
-            'piplbot' => 'piplbot',
-            'everyonesocialbot' => 'everyonesocialbot',
-            'aolbot' => 'aolbot',
-            'glbot' => 'glbot',
-            'lbot' => 'lbot',
-            'blexbot' => 'blexbot',
-            'socialradarbot' => 'socialradar bot',
-            'synapse' => 'apache synapse',
-            'linkdexbot' => 'linkdex bot',
-            'coccoc' => 'coccoc bot',
-            'siteexplorer' => 'siteexplorer',
-            'semrushbot' => 'semrushbot',
-            'istellabot' => 'istellabot',
-            'meanpathbot' => 'meanpathbot',
-            'xml sitemaps generator' => 'xml sitemaps generator',
-            'seznambot' => 'seznambot',
-            'urlappendbot' => 'urlappendbot',
-            'netseer crawler' => 'netseer crawler',
-            'add catalog' => 'add catalog',
-            'moreover' => 'moreover',
-            'linkpadbot' => 'linkpadbot',
-            'lipperhey seo service' => 'lipperhey seo service',
-            'blog search' => 'blog search',
-            'qualidator.com bot' => 'qualidator.com bot',
-            'fr-crawler' => 'fr-crawler',
-            'ca-crawler' => 'ca-crawler',
-            'website thumbnail generator' => 'website thumbnail generator',
-            'webthumb' => 'webthumb',
-            'komodiabot' => 'komodiabot',
-            'grouphigh' => 'grouphigh bot',
-            'theoldreader' => 'the old reader',
-            'google-site-verification' => 'google-site-verification',
-            'prlog' => 'prlog',
-            'cms crawler' => 'cms crawler',
-            'pmoz.info odp link checker' => 'pmoz.info odp link checker',
-            'twingly recon' => 'twingly recon',
-            'embedly' => 'embedly',
-            'alexa site audit' => 'alexa site audit',
-            'mj12bot' => 'mj12bot',
-            'httrack' => 'httrack',
-            'unisterbot' => 'unisterbot',
-            'careerbot' => 'careerbot',
-            '80legs' => '80legs',
-            '80bot' => '80legs',
-            'wada.vn' => 'wada.vn search bot',
-            'lynx' => 'lynx',
-            'nx' => 'netfront nx',
-            'wiiu' => 'netfront nx',
-            'nintendo 3ds' => 'netfront nx',
-            'netfront' => 'netfront',
-            'playstation 4' => 'netfront',
-            'xovibot' => 'xovibot',
-            '007ac9 crawler' => '007ac9 crawler',
-            '200pleasebot' => '200pleasebot',
-            'abonti' => 'abonti websearch',
-            'publiclibraryarchive' => 'publiclibraryarchive bot',
-            'pad-bot' => 'pad-bot',
-            'softlistbot' => 'softlistbot',
-            'sreleasebot' => 'sreleasebot',
-            'vagabondo' => 'vagabondo',
-            'special_archiver' => 'internet archive special archiver',
-            'optimizer' => 'optimizer bot',
-            'sophora linkchecker' => 'sophora linkchecker',
-            'seodiver' => 'seodiver bot',
-            'itsscan' => 'itsscan',
-            'google desktop' => 'google desktop',
-            'lotus-notes' => 'lotus notes',
-            'askpeterbot'=> 'askpeterbot',
-            'discoverybot' => 'discovery bot',
-            'yandexbot' => 'yandexbot',
+            'webmastercoffee'                     => 'webmastercoffee',
+            'ahrefs'                              => 'ahrefsbot',
+            'apercite'                            => 'apercite',
+            'woobot'                              => 'woobot',
+            'scoutjet'                            => 'scoutjet',
+            'blekkobot'                           => 'blekkobot',
+            'pagesinventory'                      => 'pagesinventory bot',
+            'slackbot-linkexpanding'              => 'slackbot-link-expanding',
+            'slackbot'                            => 'slackbot',
+            'seokicks-robot'                      => 'seokicks robot',
+            'alexabot'                            => 'alexabot',
+            'exabot'                              => 'exabot',
+            'domainscan'                          => 'domainscan server monitoring',
+            'jobroboter'                          => 'jobroboter',
+            'acoonbot'                            => 'acoonbot',
+            'woriobot'                            => 'woriobot',
+            'monobot'                             => 'monobot',
+            'domainsigmacrawler'                  => 'domainsigmacrawler',
+            'bnf.fr_bot'                          => 'bnf.fr bot',
+            'crawlrobot'                          => 'crawlrobot',
+            'addthis.com robot'                   => 'addthis.com robot',
+            'yeti'                                => 'naverbot',
+            'naver.com/robots'                    => 'naverbot',
+            'robots'                              => 'testcrawler',
+            'deusu'                               => 'werbefreie deutsche suchmaschine',
+            'obot'                                => 'obot',
+            'zumbot'                              => 'zumbot',
+            'umbot'                               => 'umbot',
+            'picmole'                             => 'picmole bot',
+            'zollard'                             => 'zollard worm',
+            'fhscan core'                         => 'fhscan core',
+            'nbot'                                => 'nbot',
+            'loadtimebot'                         => 'loadtimebot',
+            'scrubby'                             => 'scrubby',
+            'squzer'                              => 'squzer',
+            'piplbot'                             => 'piplbot',
+            'everyonesocialbot'                   => 'everyonesocialbot',
+            'aolbot'                              => 'aolbot',
+            'glbot'                               => 'glbot',
+            'lbot'                                => 'lbot',
+            'blexbot'                             => 'blexbot',
+            'socialradarbot'                      => 'socialradar bot',
+            'synapse'                             => 'apache synapse',
+            'linkdexbot'                          => 'linkdex bot',
+            'coccoc'                              => 'coccoc bot',
+            'siteexplorer'                        => 'siteexplorer',
+            'semrushbot'                          => 'semrushbot',
+            'istellabot'                          => 'istellabot',
+            'meanpathbot'                         => 'meanpathbot',
+            'xml sitemaps generator'              => 'xml sitemaps generator',
+            'seznambot'                           => 'seznambot',
+            'urlappendbot'                        => 'urlappendbot',
+            'netseer crawler'                     => 'netseer crawler',
+            'add catalog'                         => 'add catalog',
+            'moreover'                            => 'moreover',
+            'linkpadbot'                          => 'linkpadbot',
+            'lipperhey seo service'               => 'lipperhey seo service',
+            'blog search'                         => 'blog search',
+            'qualidator.com bot'                  => 'qualidator.com bot',
+            'fr-crawler'                          => 'fr-crawler',
+            'ca-crawler'                          => 'ca-crawler',
+            'website thumbnail generator'         => 'website thumbnail generator',
+            'webthumb'                            => 'webthumb',
+            'komodiabot'                          => 'komodiabot',
+            'grouphigh'                           => 'grouphigh bot',
+            'theoldreader'                        => 'the old reader',
+            'google-site-verification'            => 'google-site-verification',
+            'prlog'                               => 'prlog',
+            'cms crawler'                         => 'cms crawler',
+            'pmoz.info odp link checker'          => 'pmoz.info odp link checker',
+            'twingly recon'                       => 'twingly recon',
+            'embedly'                             => 'embedly',
+            'alexa site audit'                    => 'alexa site audit',
+            'mj12bot'                             => 'mj12bot',
+            'httrack'                             => 'httrack',
+            'unisterbot'                          => 'unisterbot',
+            'careerbot'                           => 'careerbot',
+            '80legs'                              => '80legs',
+            '80bot'                               => '80legs',
+            'wada.vn'                             => 'wada.vn search bot',
+            'lynx'                                => 'lynx',
+            'nx'                                  => 'netfront nx',
+            'wiiu'                                => 'netfront nx',
+            'nintendo 3ds'                        => 'netfront nx',
+            'netfront'                            => 'netfront',
+            'playstation 4'                       => 'netfront',
+            'xovibot'                             => 'xovibot',
+            '007ac9 crawler'                      => '007ac9 crawler',
+            '200pleasebot'                        => '200pleasebot',
+            'abonti'                              => 'abonti websearch',
+            'publiclibraryarchive'                => 'publiclibraryarchive bot',
+            'pad-bot'                             => 'pad-bot',
+            'softlistbot'                         => 'softlistbot',
+            'sreleasebot'                         => 'sreleasebot',
+            'vagabondo'                           => 'vagabondo',
+            'special_archiver'                    => 'internet archive special archiver',
+            'optimizer'                           => 'optimizer bot',
+            'sophora linkchecker'                 => 'sophora linkchecker',
+            'seodiver'                            => 'seodiver bot',
+            'itsscan'                             => 'itsscan',
+            'google desktop'                      => 'google desktop',
+            'lotus-notes'                         => 'lotus notes',
+            'askpeterbot'                         => 'askpeterbot',
+            'discoverybot'                        => 'discovery bot',
+            'yandexbot'                           => 'yandexbot',
         ];
 
         foreach ($checkBeforeMosbookmarks as $search => $key) {
@@ -730,155 +730,144 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('mosbookmarks link checker', $useragent);
         }
 
-        $checkBeforeKranken = [
-            'mosbookmarks' => 'mosbookmarks',
-            'webmasteraid' => 'webmasteraid',
-            'aboutusbot johnny5' => 'aboutus bot johnny5',
-            'aboutusbot' => 'aboutus bot',
-            'semantic-visions.com crawler' => 'semantic-visions.com crawler',
-            'waybackarchive.org' => 'wayback archive bot',
-            'openvas' => 'open vulnerability assessment system',
-            'mixrankbot' => 'mixrankbot',
-            'infegyatlas' => 'infegyatlas',
-            'mojeekbot' => 'mojeekbot',
-            'memorybot' => 'memorybot',
-            'domainappender' => 'domainappender bot',
-            'gidbot' => 'gidbot',
-            'wap browser/maui' => 'maui wap browser',
-            'discovered' => 'discovered',
-            'gosquared-thumbnailer' => 'gosquared-thumbnailer',
-            'red' => 'redbot',
-            'dbot' => 'dbot',
-            'pwbot' => 'pwbot',
-            '+5bot' => 'plus5bot',
-            'wasalive-bot' => 'wasalive bot',
-            'openhosebot' => 'openhosebot',
-            'urlfilterdb-crawler' => 'urlfilterdb crawler',
-            'metager2-verification-bot' => 'metager2-verification-bot',
-            'powermarks' => 'powermarks',
-            'cloudflare-alwaysonline' => 'cloudflare alwaysonline',
-            'phantom.js bot' => 'phantom.js bot',
-            'phantom' => 'phantom browser',
-            'shrook' => 'shrook',
-            'netestate ne crawler' => 'netestate ne crawler',
-            'garlikcrawler' => 'garlikcrawler',
-            'metageneratorcrawler' => 'metageneratorcrawler',
-            'screenerbot' => 'screenerbot',
-            'webtarantula.com crawler' => 'webtarantula',
-            'backlinkcrawler' => 'backlinkcrawler',
-            'linkscrawler' => 'linkscrawler',
-            'ssearch_bot' => 'ssearch crawler',
-            'ssearch crawler' => 'ssearch crawler',
-            'hrcrawler' => 'hrcrawler',
-            'icc-crawler' => 'icc-crawler',
-            'arachnida web crawler' => 'arachnida web crawler',
-            'finderlein research crawler' => 'finderlein research crawler',
-            'testcrawler' => 'testcrawler',
-            'scopia crawler' => 'scopia crawler',
-            'metajobbot' => 'metajobbot',
-            'lucidworks' => 'lucidworks bot',
-            'pub-crawler' => 'pub-crawler',
-            'archive.org.ua crawler' => 'internet archive',
-            'digincore bot' => 'digincore bot',
-            'steeler' => 'steeler',
-            'electricmonk' => 'duedil crawler',
-            'virtuoso' => 'virtuoso',
-            'aboundex' => 'aboundexbot',
-            'r6_commentreader' => 'r6 commentreader',
-            'r6_feedfetcher' => 'r6 feedfetcher',
-            'crazywebcrawler' => 'crazywebcrawler',
-            'crawler4j' => 'crawler4j',
-            'ichiro/mobile' => 'ichiro mobile bot',
-            'ichiro' => 'ichiro bot',
-            'tineye-bot' => 'tineye bot',
-            'livelapbot' => 'livelap crawler',
-            'safesearch microdata crawler' => 'safesearch microdata crawler',
-            'fastbot crawler' => 'fastbot crawler',
-            'camcrawler' => 'camcrawler',
-            'domaincrawler' => 'domaincrawler',
-            'pagefreezer' => 'pagefreezer',
-            'showyoubot' => 'showyoubot',
-            'y!j-asr' => 'yahoo! japan',
-            'y!j-bsc' => 'yahoo! japan',
-            'rogerbot' => 'rogerbot',
-            'crawler' => 'crawler',
-            'jig browser web' => 'jig browser web',
-            't-h-u-n-d-e-r-s-t-o-n-e' => 'texis webscript',
-            'focuseekbot' => 'focuseekbot',
-            'vbseo' => 'vbulletin seo bot',
-            'kgbody' => 'kgbody',
-            'jobdiggerspider' => 'jobdiggerspider',
-            'imrbot' => 'mignify bot',
-            'kulturarw3' => 'kulturarw3',
-            'merchantcentricbot' => 'merchantcentricbot',
-            'nett.io bot' => 'nett.io bot',
-            'semanticbot' => 'semanticbot',
-            'tweetedtimes' => 'tweetedtimes bot',
-            'vkshare' => 'vkshare',
-            'yahoo ad monitoring' => 'yahoo ad monitoring',
-            'yioopbot' => 'yioopbot',
-            'zitebot' => 'zitebot',
-            'espial' => 'espial tv browser',
-            'sitecon' => 'sitecon',
-            'ibooks author' => 'ibooks author',
-            'iweb' => 'iweb',
-            'newsfire' => 'newsfire',
-            'rmsnapkit' => 'rmsnapkit',
-            'sandvox' => 'sandvox',
-            'tubetv' => 'tubetv',
-            'elluminate live' => 'elluminate live',
-            'element browser' => 'element browser',
-            'esribot' => 'esribot',
-            'quicklook' => 'quicklook',
-            'dillo' => 'dillo',
-            'digg' => 'digg bot',
-            'zetakey' => 'zetakey browser',
-            'getprismatic.com' => 'prismatic app',
-            'foma' => 'sharp',
-            'sh05c' => 'sharp',
-            'openwebkitsharp' => 'open-webkit-sharp',
-            'ajaxsnapbot' => 'ajaxsnapbot',
-            'owler' => 'owler bot',
-            'yahoo link preview' => 'yahoo link preview',
-        ];
-
-        foreach ($checkBeforeKranken as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->containsAll(['kraken', 'linkfluence'], false)) {
-            return $this->loader->load('kraken', $useragent);
-        }
-
         $checkBeforeOpenwaveBrowser = [
-            'qwantify' => 'qwantify',
-            'setlinks bot' => 'setlinks.ru crawler',
-            'megaindex.ru' => 'megaindex bot',
-            'cliqzbot' => 'cliqzbot',
-            'dawinci antiplag spider' => 'dawinci antiplag spider',
-            'advbot' => 'advbot',
-            'duckduckgo-favicons-bot' => 'duckduck favicons bot',
-            'zyborg' => 'wisenut search engine crawler',
-            'hypercrawl' => 'hypercrawl',
-            'worldwebheritage' => 'worldwebheritage.org bot',
-            'begunadvertising' => 'begun advertising bot',
-            'trendwinhttp' => 'trendwinhttp',
-            'winhttp' => 'winhttp',
-            'skypeuripreview' => 'skypeuripreview',
-            'lipperhey-kaus-australis' => 'lipperhey kaus australis',
-            'jasmine' => 'jasmine',
-            'yoozbot' => 'yoozbot',
-            'online-webceo-bot' => 'webceo bot',
-            'niki-bot' => 'niki-bot',
-            'contextad bot' => 'contextad bot',
-            'integrity' => 'integrity',
-            'masscan' => 'masscan',
-            'zmeu' => 'zmeu',
-            'sogou web spider' => 'sogou web spider',
-            'openwave' => 'openwave mobile browser',
-            'up.browser' => 'openwave mobile browser',
+            'mosbookmarks'                 => 'mosbookmarks',
+            'webmasteraid'                 => 'webmasteraid',
+            'aboutusbot johnny5'           => 'aboutus bot johnny5',
+            'aboutusbot'                   => 'aboutus bot',
+            'semantic-visions.com crawler' => 'semantic-visions.com crawler',
+            'waybackarchive.org'           => 'wayback archive bot',
+            'openvas'                      => 'open vulnerability assessment system',
+            'mixrankbot'                   => 'mixrankbot',
+            'infegyatlas'                  => 'infegyatlas',
+            'mojeekbot'                    => 'mojeekbot',
+            'memorybot'                    => 'memorybot',
+            'domainappender'               => 'domainappender bot',
+            'gidbot'                       => 'gidbot',
+            'wap browser/maui'             => 'maui wap browser',
+            'discovered'                   => 'discovered',
+            'gosquared-thumbnailer'        => 'gosquared-thumbnailer',
+            'red'                          => 'redbot',
+            'dbot'                         => 'dbot',
+            'pwbot'                        => 'pwbot',
+            '+5bot'                        => 'plus5bot',
+            'wasalive-bot'                 => 'wasalive bot',
+            'openhosebot'                  => 'openhosebot',
+            'urlfilterdb-crawler'          => 'urlfilterdb crawler',
+            'metager2-verification-bot'    => 'metager2-verification-bot',
+            'powermarks'                   => 'powermarks',
+            'cloudflare-alwaysonline'      => 'cloudflare alwaysonline',
+            'phantom.js bot'               => 'phantom.js bot',
+            'phantom'                      => 'phantom browser',
+            'shrook'                       => 'shrook',
+            'netestate ne crawler'         => 'netestate ne crawler',
+            'garlikcrawler'                => 'garlikcrawler',
+            'metageneratorcrawler'         => 'metageneratorcrawler',
+            'screenerbot'                  => 'screenerbot',
+            'webtarantula.com crawler'     => 'webtarantula',
+            'backlinkcrawler'              => 'backlinkcrawler',
+            'linkscrawler'                 => 'linkscrawler',
+            'ssearch_bot'                  => 'ssearch crawler',
+            'ssearch crawler'              => 'ssearch crawler',
+            'hrcrawler'                    => 'hrcrawler',
+            'icc-crawler'                  => 'icc-crawler',
+            'arachnida web crawler'        => 'arachnida web crawler',
+            'finderlein research crawler'  => 'finderlein research crawler',
+            'testcrawler'                  => 'testcrawler',
+            'scopia crawler'               => 'scopia crawler',
+            'metajobbot'                   => 'metajobbot',
+            'lucidworks'                   => 'lucidworks bot',
+            'pub-crawler'                  => 'pub-crawler',
+            'archive.org.ua crawler'       => 'internet archive',
+            'digincore bot'                => 'digincore bot',
+            'steeler'                      => 'steeler',
+            'electricmonk'                 => 'duedil crawler',
+            'virtuoso'                     => 'virtuoso',
+            'aboundex'                     => 'aboundexbot',
+            'r6_commentreader'             => 'r6 commentreader',
+            'r6_feedfetcher'               => 'r6 feedfetcher',
+            'crazywebcrawler'              => 'crazywebcrawler',
+            'crawler4j'                    => 'crawler4j',
+            'ichiro/mobile'                => 'ichiro mobile bot',
+            'ichiro'                       => 'ichiro bot',
+            'tineye-bot'                   => 'tineye bot',
+            'livelapbot'                   => 'livelap crawler',
+            'safesearch microdata crawler' => 'safesearch microdata crawler',
+            'fastbot crawler'              => 'fastbot crawler',
+            'camcrawler'                   => 'camcrawler',
+            'domaincrawler'                => 'domaincrawler',
+            'pagefreezer'                  => 'pagefreezer',
+            'showyoubot'                   => 'showyoubot',
+            'y!j-asr'                      => 'yahoo! japan',
+            'y!j-bsc'                      => 'yahoo! japan',
+            'rogerbot'                     => 'rogerbot',
+            'commoncrawler node'           => 'commoncrawler node',
+            'crawler'                      => 'crawler',
+            'jig browser web'              => 'jig browser web',
+            't-h-u-n-d-e-r-s-t-o-n-e'      => 'texis webscript',
+            'focuseekbot'                  => 'focuseekbot',
+            'vbseo'                        => 'vbulletin seo bot',
+            'kgbody'                       => 'kgbody',
+            'jobdiggerspider'              => 'jobdiggerspider',
+            'imrbot'                       => 'mignify bot',
+            'kulturarw3'                   => 'kulturarw3',
+            'merchantcentricbot'           => 'merchantcentricbot',
+            'nett.io bot'                  => 'nett.io bot',
+            'semanticbot'                  => 'semanticbot',
+            'tweetedtimes'                 => 'tweetedtimes bot',
+            'vkshare'                      => 'vkshare',
+            'yahoo ad monitoring'          => 'yahoo ad monitoring',
+            'yioopbot'                     => 'yioopbot',
+            'zitebot'                      => 'zitebot',
+            'espial'                       => 'espial tv browser',
+            'sitecon'                      => 'sitecon',
+            'ibooks author'                => 'ibooks author',
+            'iweb'                         => 'iweb',
+            'newsfire'                     => 'newsfire',
+            'rmsnapkit'                    => 'rmsnapkit',
+            'sandvox'                      => 'sandvox',
+            'tubetv'                       => 'tubetv',
+            'elluminate live'              => 'elluminate live',
+            'element browser'              => 'element browser',
+            'esribot'                      => 'esribot',
+            'quicklook'                    => 'quicklook',
+            'dillo'                        => 'dillo',
+            'digg'                         => 'digg bot',
+            'zetakey'                      => 'zetakey browser',
+            'getprismatic.com'             => 'prismatic app',
+            'foma'                         => 'sharp',
+            'sh05c'                        => 'sharp',
+            'openwebkitsharp'              => 'open-webkit-sharp',
+            'ajaxsnapbot'                  => 'ajaxsnapbot',
+            'owler'                        => 'owler bot',
+            'yahoo link preview'           => 'yahoo link preview',
+            'linkfluence'                  => 'kraken',
+            'qwantify'                     => 'qwantify',
+            'setlinks bot'                 => 'setlinks.ru crawler',
+            'megaindex.ru'                 => 'megaindex bot',
+            'cliqzbot'                     => 'cliqzbot',
+            'dawinci antiplag spider'      => 'dawinci antiplag spider',
+            'advbot'                       => 'advbot',
+            'duckduckgo-favicons-bot'      => 'duckduck favicons bot',
+            'zyborg'                       => 'wisenut search engine crawler',
+            'hypercrawl'                   => 'hypercrawl',
+            'worldwebheritage'             => 'worldwebheritage.org bot',
+            'begunadvertising'             => 'begun advertising bot',
+            'trendwinhttp'                 => 'trendwinhttp',
+            'winhttp'                      => 'winhttp',
+            'skypeuripreview'              => 'skypeuripreview',
+            'lipperhey-kaus-australis'     => 'lipperhey kaus australis',
+            'jasmine'                      => 'jasmine',
+            'yoozbot'                      => 'yoozbot',
+            'online-webceo-bot'            => 'webceo bot',
+            'niki-bot'                     => 'niki-bot',
+            'contextad bot'                => 'contextad bot',
+            'integrity'                    => 'integrity',
+            'masscan'                      => 'masscan',
+            'zmeu'                         => 'zmeu',
+            'sogou web spider'             => 'sogou web spider',
+            'openwave'                     => 'openwave mobile browser',
+            'up.browser'                   => 'openwave mobile browser',
         ];
 
         foreach ($checkBeforeOpenwaveBrowser as $search => $key) {
@@ -896,75 +885,75 @@ class BrowserFactory implements FactoryInterface
         }
 
         $checkBeforeGoHttpClient = [
-            'teleca' => 'teleca-obigo',
-            'obigo' => 'teleca-obigo',
-            'au-mic' => 'teleca-obigo',
-            'mic/' => 'teleca-obigo',
-            'davclnt' => 'microsoft-webdav',
-            'xing-contenttabreceiver' => 'xing contenttabreceiver',
-            'slingstone' => 'yahoo slingstone',
-            'bot for jce' => 'bot for jce',
-            'validator.nu/lv' => 'validator.nu/lv',
-            'securepoint cf' => 'securepoint content filter',
-            'sogou-spider' => 'sogou spider',
-            'rankflex' => 'rankflex',
-            'domnutch' => 'domnutch bot',
-            'nutch' => 'nutch',
-            'boardreader favicon fetcher' => 'boardreader favicon fetcher',
-            'checksite verification agent' => 'checksite verification agent',
-            'experibot' => 'experibot',
-            'feedblitz' => 'feedblitz',
-            'rss2html' => 'rss2html',
-            'feedlyapp' => 'feedly app',
-            'genderanalyzer' => 'genderanalyzer',
-            'gooblog' => 'gooblog',
-            'tumblr' => 'tumblr app',
-            'w3c_i18n-checker' => 'w3c i18n checker',
-            'w3c_unicorn' => 'w3c unicorn',
-            'alltop' => 'alltop app',
-            'internetseer' => 'internetseer.com',
+            'teleca'                             => 'teleca-obigo',
+            'obigo'                              => 'teleca-obigo',
+            'au-mic'                             => 'teleca-obigo',
+            'mic/'                               => 'teleca-obigo',
+            'davclnt'                            => 'microsoft-webdav',
+            'xing-contenttabreceiver'            => 'xing contenttabreceiver',
+            'slingstone'                         => 'yahoo slingstone',
+            'bot for jce'                        => 'bot for jce',
+            'validator.nu/lv'                    => 'validator.nu/lv',
+            'securepoint cf'                     => 'securepoint content filter',
+            'sogou-spider'                       => 'sogou spider',
+            'rankflex'                           => 'rankflex',
+            'domnutch'                           => 'domnutch bot',
+            'nutch'                              => 'nutch',
+            'boardreader favicon fetcher'        => 'boardreader favicon fetcher',
+            'checksite verification agent'       => 'checksite verification agent',
+            'experibot'                          => 'experibot',
+            'feedblitz'                          => 'feedblitz',
+            'rss2html'                           => 'rss2html',
+            'feedlyapp'                          => 'feedly app',
+            'genderanalyzer'                     => 'genderanalyzer',
+            'gooblog'                            => 'gooblog',
+            'tumblr'                             => 'tumblr app',
+            'w3c_i18n-checker'                   => 'w3c i18n checker',
+            'w3c_unicorn'                        => 'w3c unicorn',
+            'alltop'                             => 'alltop app',
+            'internetseer'                       => 'internetseer.com',
             'admantx platform semantic analyzer' => 'admantx platform semantic analyzer',
-            'universalfeedparser' => 'universalfeedparser',
-            'binlar' => 'larbin',
-            'larbin' => 'larbin',
-            'unityplayer' => 'unity web player',
-            'wesee:search' => 'wesee:search',
-            'wesee:ads' => 'wesee:ads',
-            'a6-indexer' => 'a6-indexer',
-            'nerdybot' => 'nerdybot',
-            'peeplo screenshot bot' => 'peeplo screenshot bot',
-            'ccbot' => 'ccbot',
-            'visionutils' => 'visionutils',
-            'feedly' => 'feedly feed fetcher',
-            'photon' => 'photon',
-            'wdg_validator' => 'html validator',
-            'yisouspider' => 'yisouspider',
-            'hivabot' => 'hivabot',
-            'comodo spider' => 'comodo spider',
-            'openwebspider' => 'openwebspider',
-            'psbot-image' => 'picsearch bot',
-            'psbot-page' => 'picsearch bot',
-            'bloglovin' => 'bloglovin bot',
-            'viralvideochart' => 'viralvideochart bot',
-            'metaheadersbot' => 'metaheadersbot',
-            'zendhttpclient' => 'zend_http_client',
-            'zend_http_client' => 'zend_http_client',
-            'zend\http\client' => 'zend_http_client',
-            'wget' => 'wget',
-            'scrapy' => 'scrapy',
-            'moozilla' => 'moozilla',
-            'antbot' => 'antbot',
-            'browsershots' => 'browsershots',
-            'revolt' => 'bot revolt',
-            'pdrlabs' => 'pdrlabs bot',
-            'elinks' => 'elinks',
-            'linkstats bot' => 'linkstats bot',
-            'bcklinks' => 'bcklinks',
-            'links' => 'links',
-            'airmail' => 'airmail',
-            'web.de mailcheck' => 'web.de mailcheck',
-            'screaming frog seo spider' => 'screaming frog seo spider',
-            'androiddownloadmanager' => 'android download manager',
+            'universalfeedparser'                => 'universalfeedparser',
+            'binlar'                             => 'larbin',
+            'larbin'                             => 'larbin',
+            'unityplayer'                        => 'unity web player',
+            'wesee:search'                       => 'wesee:search',
+            'wesee:ads'                          => 'wesee:ads',
+            'a6-indexer'                         => 'a6-indexer',
+            'nerdybot'                           => 'nerdybot',
+            'peeplo screenshot bot'              => 'peeplo screenshot bot',
+            'ccbot'                              => 'ccbot',
+            'visionutils'                        => 'visionutils',
+            'feedly'                             => 'feedly feed fetcher',
+            'photon'                             => 'photon',
+            'wdg_validator'                      => 'html validator',
+            'yisouspider'                        => 'yisouspider',
+            'hivabot'                            => 'hivabot',
+            'comodo spider'                      => 'comodo spider',
+            'openwebspider'                      => 'openwebspider',
+            'psbot-image'                        => 'picsearch bot',
+            'psbot-page'                         => 'picsearch bot',
+            'bloglovin'                          => 'bloglovin bot',
+            'viralvideochart'                    => 'viralvideochart bot',
+            'metaheadersbot'                     => 'metaheadersbot',
+            'zendhttpclient'                     => 'zend_http_client',
+            'zend_http_client'                   => 'zend_http_client',
+            'zend\http\client'                   => 'zend_http_client',
+            'wget'                               => 'wget',
+            'scrapy'                             => 'scrapy',
+            'moozilla'                           => 'moozilla',
+            'antbot'                             => 'antbot',
+            'browsershots'                       => 'browsershots',
+            'revolt'                             => 'bot revolt',
+            'pdrlabs'                            => 'pdrlabs bot',
+            'elinks'                             => 'elinks',
+            'linkstats bot'                      => 'linkstats bot',
+            'bcklinks'                           => 'bcklinks',
+            'links'                              => 'links',
+            'airmail'                            => 'airmail',
+            'web.de mailcheck'                   => 'web.de mailcheck',
+            'screaming frog seo spider'          => 'screaming frog seo spider',
+            'androiddownloadmanager'             => 'android download manager',
         ];
 
         foreach ($checkBeforeGoHttpClient as $search => $key) {
@@ -977,492 +966,222 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('go httpclient', $useragent);
         }
 
-        $checkBeforeSafariUiwebview = [
-            'go-http-client' => 'go httpclient',
-            'proxy gear pro' => 'proxy gear pro',
-            'tiny tiny rss' => 'tiny tiny rss',
-            'readability' => 'readability',
-            'nsplayer' => 'windows media player',
-            'pingdom' => 'pingdom',
-            'gg peekbot' => 'gg peekbot',
-            'itunes' => 'itunes',
-            'libreoffice' => 'libreoffice',
-            'openoffice' => 'openoffice',
-            'thumbnailagent' => 'thumbnailagent',
-            'ez publish link validator' => 'ez publish link validator',
-            'thumbsniper' => 'thumbsniper',
-            'stq_bot' => 'searchteq bot',
-            'snk screenshot bot' => 'save n keep screenshot bot',
-            'synhttpclient' => 'synhttpclient',
-            'eventmachine httpclient' => 'eventmachine httpclient',
-            'livedoor' => 'livedoor',
-            'httpclient' => 'httpclient',
-            'implisensebot' => 'implisensebot',
-            'buibui-bot' => 'buibui-bot',
-            'thumbshots-de-bot' => 'thumbshots-de-bot',
-            'python-requests' => 'python-requests',
-            'python-urllib' => 'python-urllib',
-            'bot.araturka.com' => 'bot.araturka.com',
-            'http_requester' => 'http_requester',
-            'whatweb' => 'whatweb web scanner',
-            'isc header collector handlers' => 'isc header collector handlers',
-            'thumbor' => 'thumbor',
-            'forum poster' => 'forum poster',
-            'facebot' => 'facebot',
-            'netzcheckbot' => 'netzcheckbot',
-            'mib' => 'motorola internet browser',
-            'facebookscraper' => 'facebookscraper',
-            'zookabot' => 'zookabot',
-            'metauri' => 'metauri bot',
-            'freewebmonitoring sitechecker' => 'freewebmonitoring sitechecker',
-            'ipv4scan' => 'ipv4scan',
-            'domainsbot' => 'domainsbot',
-            'bubing' => 'bubing bot',
-            'ramblermail' => 'ramblermail bot',
-            'iisbot' => 'iis site analysis web crawler',
-            'jooblebot' => 'jooblebot',
-            'superfeedr bot' => 'superfeedr bot',
-            'feedburner' => 'feedburner',
-            'icarus6j' => 'icarus6j',
-            'wsr-agent' => 'wsr-agent',
-            'blogshares spiders' => 'blogshares spiders',
-            'quickiwiki' => 'quickiwiki bot',
-            'pycurl' => 'pycurl',
-            'libcurl-agent' => 'libcurl',
-            'taproot' => 'taproot bot',
-            'guzzlehttp' => 'guzzle http client',
-            'curl' => 'curl',
-            'facebookexternalhit' => 'facebookexternalhit',
-            'embed php library' => 'embed php library',
-            'php' => 'php',
-            'apple-pubsub' => 'apple pubsub',
-            'simplepie' => 'simplepie',
-            'bigbozz' => 'bigbozz - financial search',
-            'eccp' => 'eccp',
-            'gigablastopensource' => 'gigablast search engine',
-            'webindex' => 'webindex',
-            'prince' => 'prince',
-            'adsense-snapshot-google' => 'adsense snapshot bot',
-            'amazon cloudfront' => 'amazon cloudfront',
-            'bandscraper' => 'bandscraper',
-            'bitlybot' => 'bitlybot',
-            'cars-app-browser' => 'cars-app-browser',
-            'coursera-mobile' => 'coursera mobile app',
-            'crowsnest' => 'crowsnest mobile app',
-            'dorado wap-browser' => 'dorado wap browser',
-            'goldfire server' => 'goldfire server',
-            'iball' => 'iball',
-            'inagist url resolver' => 'inagist url resolver',
-            'jeode' => 'jeode',
-            'kraken' => 'krakenjs',
-            'com.linkedin' => 'linkedinbot',
-            'mixbot' => 'mixbot',
-            'busecurityproject' => 'busecurityproject',
-            'restify' => 'restify',
-            'vlc' => 'vlc media player',
-            'webringchecker' => 'webringchecker',
-            'bot-pge.chlooe.com' => 'chlooe bot',
-            'seebot' => 'seebot',
-            'ltx71' => 'ltx71 bot',
-            'cookiereports' => 'cookie reports bot',
-            'elmer' => 'elmer',
-            'iframely' => 'iframely bot',
-            'metainspector' => 'metainspector',
-            'microsoft-cryptoapi' => 'microsoft cryptoapi',
-            'microsoft url control' => 'microsoft url control',
-            'owasp_secret_browser' => 'owasp_secret_browser',
-            'smrf url expander' => 'smrf url expander',
-            'speedyspider' => 'speedy spider',
-            'speedy spider' => 'speedy spider',
-            'speedy_spider' => 'speedy spider',
-            'superarama.com - bot' => 'superarama.com - bot',
-            'wnmbot' => 'wnmbot',
-            'website explorer' => 'website explorer',
-            'city-map screenshot service' => 'city-map screenshot service',
-            'optivo(r) nethelper' => 'optivo nethelper',
-            'pr-cy.ru screenshot bot' => 'screenshot bot',
-            'cyberduck' => 'cyberduck',
-            'accserver' => 'accserver',
-            'izsearch' => 'izsearch bot',
-            'netlyzer fastprobe' => 'netlyzer fastprobe',
-            'mnogosearch' => 'mnogosearch',
-            'uipbot' => 'uipbot',
-            'mbot' => 'mbot',
+        $lastBrowsers = [
+            'go-http-client'                  => 'go httpclient',
+            'proxy gear pro'                  => 'proxy gear pro',
+            'tiny tiny rss'                   => 'tiny tiny rss',
+            'readability'                     => 'readability',
+            'nsplayer'                        => 'windows media player',
+            'pingdom'                         => 'pingdom',
+            'gg peekbot'                      => 'gg peekbot',
+            'itunes'                          => 'itunes',
+            'libreoffice'                     => 'libreoffice',
+            'openoffice'                      => 'openoffice',
+            'thumbnailagent'                  => 'thumbnailagent',
+            'ez publish link validator'       => 'ez publish link validator',
+            'thumbsniper'                     => 'thumbsniper',
+            'stq_bot'                         => 'searchteq bot',
+            'snk screenshot bot'              => 'save n keep screenshot bot',
+            'synhttpclient'                   => 'synhttpclient',
+            'eventmachine httpclient'         => 'eventmachine httpclient',
+            'livedoor'                        => 'livedoor',
+            'httpclient'                      => 'httpclient',
+            'implisensebot'                   => 'implisensebot',
+            'buibui-bot'                      => 'buibui-bot',
+            'thumbshots-de-bot'               => 'thumbshots-de-bot',
+            'python-requests'                 => 'python-requests',
+            'python-urllib'                   => 'python-urllib',
+            'bot.araturka.com'                => 'bot.araturka.com',
+            'http_requester'                  => 'http_requester',
+            'whatweb'                         => 'whatweb web scanner',
+            'isc header collector handlers'   => 'isc header collector handlers',
+            'thumbor'                         => 'thumbor',
+            'forum poster'                    => 'forum poster',
+            'facebot'                         => 'facebot',
+            'netzcheckbot'                    => 'netzcheckbot',
+            'mib'                             => 'motorola internet browser',
+            'facebookscraper'                 => 'facebookscraper',
+            'zookabot'                        => 'zookabot',
+            'metauri'                         => 'metauri bot',
+            'freewebmonitoring sitechecker'   => 'freewebmonitoring sitechecker',
+            'ipv4scan'                        => 'ipv4scan',
+            'domainsbot'                      => 'domainsbot',
+            'bubing'                          => 'bubing bot',
+            'ramblermail'                     => 'ramblermail bot',
+            'iisbot'                          => 'iis site analysis web crawler',
+            'jooblebot'                       => 'jooblebot',
+            'superfeedr bot'                  => 'superfeedr bot',
+            'feedburner'                      => 'feedburner',
+            'icarus6j'                        => 'icarus6j',
+            'wsr-agent'                       => 'wsr-agent',
+            'blogshares spiders'              => 'blogshares spiders',
+            'quickiwiki'                      => 'quickiwiki bot',
+            'pycurl'                          => 'pycurl',
+            'libcurl-agent'                   => 'libcurl',
+            'taproot'                         => 'taproot bot',
+            'guzzlehttp'                      => 'guzzle http client',
+            'curl'                            => 'curl',
+            'facebookexternalhit'             => 'facebookexternalhit',
+            'embed php library'               => 'embed php library',
+            'php'                             => 'php',
+            'apple-pubsub'                    => 'apple pubsub',
+            'simplepie'                       => 'simplepie',
+            'bigbozz'                         => 'bigbozz - financial search',
+            'eccp'                            => 'eccp',
+            'gigablastopensource'             => 'gigablast search engine',
+            'webindex'                        => 'webindex',
+            'prince'                          => 'prince',
+            'adsense-snapshot-google'         => 'adsense snapshot bot',
+            'amazon cloudfront'               => 'amazon cloudfront',
+            'bandscraper'                     => 'bandscraper',
+            'bitlybot'                        => 'bitlybot',
+            'cars-app-browser'                => 'cars-app-browser',
+            'coursera-mobile'                 => 'coursera mobile app',
+            'crowsnest'                       => 'crowsnest mobile app',
+            'dorado wap-browser'              => 'dorado wap browser',
+            'goldfire server'                 => 'goldfire server',
+            'iball'                           => 'iball',
+            'inagist url resolver'            => 'inagist url resolver',
+            'jeode'                           => 'jeode',
+            'kraken'                          => 'krakenjs',
+            'com.linkedin'                    => 'linkedinbot',
+            'mixbot'                          => 'mixbot',
+            'busecurityproject'               => 'busecurityproject',
+            'restify'                         => 'restify',
+            'vlc'                             => 'vlc media player',
+            'webringchecker'                  => 'webringchecker',
+            'bot-pge.chlooe.com'              => 'chlooe bot',
+            'seebot'                          => 'seebot',
+            'ltx71'                           => 'ltx71 bot',
+            'cookiereports'                   => 'cookie reports bot',
+            'elmer'                           => 'elmer',
+            'iframely'                        => 'iframely bot',
+            'metainspector'                   => 'metainspector',
+            'microsoft-cryptoapi'             => 'microsoft cryptoapi',
+            'microsoft url control'           => 'microsoft url control',
+            'owasp_secret_browser'            => 'owasp_secret_browser',
+            'smrf url expander'               => 'smrf url expander',
+            'speedyspider'                    => 'speedy spider',
+            'speedy spider'                   => 'speedy spider',
+            'speedy_spider'                   => 'speedy spider',
+            'superarama.com - bot'            => 'superarama.com - bot',
+            'wnmbot'                          => 'wnmbot',
+            'website explorer'                => 'website explorer',
+            'city-map screenshot service'     => 'city-map screenshot service',
+            'optivo(r) nethelper'             => 'optivo nethelper',
+            'pr-cy.ru screenshot bot'         => 'screenshot bot',
+            'cyberduck'                       => 'cyberduck',
+            'accserver'                       => 'accserver',
+            'izsearch'                        => 'izsearch bot',
+            'netlyzer fastprobe'              => 'netlyzer fastprobe',
+            'mnogosearch'                     => 'mnogosearch',
+            'uipbot'                          => 'uipbot',
+            'mbot'                            => 'mbot',
             'ms web services client protocol' => '.net framework clr',
-            'atomicbrowser' => 'atomic browser',
-            'atomiclite' => 'atomic browser lite',
-            'feedfetcher-google' => 'google feedfetcher',
-            'perfect%20browser' => 'perfect browser',
+            'atomicbrowser'                   => 'atomic browser',
+            'atomiclite'                      => 'atomic browser lite',
+            'feedfetcher-google'              => 'google feedfetcher',
+            'perfect%20browser'               => 'perfect browser',
+            'reeder'                          => 'reeder',
+            'fastbrowser'                     => 'fastbrowser',
+            'test certificate info'           => 'test certificate info',
+            'riddler'                         => 'riddler',
+            'sophosupdatemanager'             => 'sophosupdatemanager',
+            'debian apt-http'                 => 'apt http transport',
+            'ubuntu apt-http'                 => 'apt http transport',
+            'urlgrabber'                      => 'url grabber',
+            'libwww-perl'                     => 'libwww',
+            'openbsd ftp'                     => 'openbsd ftp',
+            'sophosagent'                     => 'sophosagent',
+            'jupdate'                         => 'jupdate',
+            'roku/dvp'                        => 'roku dvp',
+            'safeassign'                      => 'safeassign',
+            'exaleadcloudview'                => 'exalead cloudview',
+            'typhoeus'                        => 'typhoeus',
+            'camo asset proxy'                => 'camo asset proxy',
+            'yahoocachesystem'                => 'yahoocachesystem',
+            'wmtips.com'                      => 'webmaster tips bot',
+            'brokenlinkcheck.com'             => 'brokenlinkcheck',
+            'linkcheck'                       => 'linkcheck',
+            'abrowse'                         => 'abrowse',
+            'gwpimages'                       => 'gwpimages',
+            'notetextview'                    => 'notetextview',
+            'yourls'                          => 'yourls',
+            'ning'                            => 'ning',
+            'sprinklr'                        => 'sprinklr',
+            'urlchecker'                      => 'urlchecker',
+            'newsme'                          => 'newsme',
+            'traackr'                         => 'traackr',
+            'nineconnections'                 => 'nineconnections',
+            'xenu link sleuth'                => 'xenus link sleuth',
+            'superagent'                      => 'superagent',
+            'goose'                           => 'goose-extractor',
+            'ahc'                             => 'asynchronous http client',
+            'newspaper'                       => 'newspaper',
+            'hatena::bookmark'                => 'hatena::bookmark',
+            'easybib autocite'                => 'easybib autocite',
+            'shortlinktranslate'              => 'shortlinktranslate',
+            'marketing grader'                => 'marketing grader',
+            'grammarly'                       => 'grammarly',
+            'dispatch'                        => 'dispatch',
+            'raven link checker'              => 'raven link checker',
+            'http-kit'                        => 'http kit',
+            'sffeedreader'                    => 'symfony rss reader',
+            'twikle'                          => 'twikle bot',
+            'node-fetch'                      => 'node-fetch',
+            'faraday'                         => 'faraday',
+            'gettor'                          => 'gettor',
+            'seostats'                        => 'seostats',
+            'znajdzfoto/image'                => 'znajdzfoto/imagebot',
+            'infox-wisg'                      => 'infox-wisg',
+            'wscheck.com'                     => 'wscheck bot',
+            'tweetminster'                    => 'tweetminster bot',
+            'astute srm'                      => 'astute social',
+            'longurl api'                     => 'longurl bot',
+            'trove'                           => 'trove bot',
+            'melvil favicon'                  => 'melvil favicon bot',
+            'melvil'                          => 'melvil bot',
+            'pearltrees'                      => 'pearltrees bot',
+            'svven-summarizer'                => 'svven summarizer bot',
+            'athena site analyzer'            => 'athena site analyzer',
+            'exploratodo'                     => 'exploratodo bot',
+            'whatsapp'                        => 'whatsapp',
+            'ddg-android-'                    => 'duckduck app',
+            'webcorp'                         => 'webcorp',
+            'ror sitemap generator'           => 'ror sitemap generator',
+            'auditmypc webmaster tool'        => 'auditmypc webmaster tool',
+            'xmlsitemapgenerator'             => 'xmlsitemapgenerator',
+            'stratagems kumo'                 => 'stratagems kumo',
+            'spip'                            => 'spip',
+            'friendica'                       => 'friendica',
+            'magpierss'                       => 'magpierss',
+            'short url checker'               => 'short url checker',
+            'webnumbrfetcher'                 => 'webnumbr fetcher',
+            'wap browser'                     => 'wap browser',
+            'spice qt-75'                     => 'wap browser',
+            'kkt20/midp'                      => 'wap browser',
+            'java'                            => 'java',
+            'argclrint'                       => 'argclrint',
+            'blitzbot'                        => 'blitzbot',
+            'charlotte'                       => 'charlotte',
+            'firebird'                        => 'firebird',
+            'heritrix'                        => 'heritrix',
+            'iceowl'                          => 'iceowl',
+            'icedove'                         => 'icedove',
+            'archive-de.com'                  => 'archive-de.com',
+            'socialcast'                      => 'socialcast bot',
+            'cloudinary'                      => 'cloudinary',
+            'mozilla'                         => 'mozilla',
+            'goog'                            => 'googlebot',
+            'fetchstream'                     => 'fetch-stream',
+            'autoit'                          => 'autoit',
+            'atvoice'                         => 'atvoice',
         ];
 
-        foreach ($checkBeforeSafariUiwebview as $search => $key) {
+        foreach ($lastBrowsers as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
-        }
-
-        if ($s->contains('reeder', false)) {
-            return $this->loader->load('reeder', $useragent);
-        }
-
-        if ($s->contains('fastbrowser', false)) {
-            return $this->loader->load('fastbrowser', $useragent);
-        }
-
-        if ($s->contains('test certificate info', false)) {
-            return $this->loader->load('test certificate info', $useragent);
-        }
-
-        if ($s->contains('riddler', false)) {
-            return $this->loader->load('riddler', $useragent);
-        }
-
-        if ($s->contains('sophosupdatemanager', false)) {
-            return $this->loader->load('sophosupdatemanager', $useragent);
-        }
-
-        if ($s->containsAny(['debian apt-http', 'ubuntu apt-http'], false)) {
-            return $this->loader->load('apt http transport', $useragent);
-        }
-
-        if ($s->contains('urlgrabber', false)) {
-            return $this->loader->load('url grabber', $useragent);
-        }
-
-        if ($s->contains('libwww-perl', false)) {
-            return $this->loader->load('libwww', $useragent);
-        }
-
-        if ($s->contains('openbsd ftp', false)) {
-            return $this->loader->load('openbsd ftp', $useragent);
-        }
-
-        if ($s->contains('sophosagent', false)) {
-            return $this->loader->load('sophosagent', $useragent);
-        }
-
-        if ($s->contains('jupdate', false)) {
-            return $this->loader->load('jupdate', $useragent);
-        }
-
-        if ($s->contains('roku/dvp', false)) {
-            return $this->loader->load('roku dvp', $useragent);
-        }
-
-        if ($s->contains('safeassign', false)) {
-            return $this->loader->load('safeassign', $useragent);
-        }
-
-        if ($s->contains('exaleadcloudview', false)) {
-            return $this->loader->load('exalead cloudview', $useragent);
-        }
-
-        if ($s->contains('typhoeus', false)) {
-            return $this->loader->load('typhoeus', $useragent);
-        }
-
-        if ($s->contains('camo asset proxy', false)) {
-            return $this->loader->load('camo asset proxy', $useragent);
-        }
-
-        if ($s->contains('yahoocachesystem', false)) {
-            return $this->loader->load('yahoocachesystem', $useragent);
-        }
-
-        if ($s->contains('wmtips.com', false)) {
-            return $this->loader->load('webmaster tips bot', $useragent);
-        }
-
-        if ($s->contains('brokenlinkcheck.com', false)) {
-            return $this->loader->load('brokenlinkcheck', $useragent);
-        }
-
-        if ($s->contains('linkcheck', false)) {
-            return $this->loader->load('linkcheck', $useragent);
-        }
-
-        if ($s->contains('abrowse', false)) {
-            return $this->loader->load('abrowse', $useragent);
-        }
-
-        if ($s->contains('gwpimages', false)) {
-            return $this->loader->load('gwpimages', $useragent);
-        }
-
-        if ($s->contains('notetextview', false)) {
-            return $this->loader->load('notetextview', $useragent);
-        }
-
-        if ($s->contains('yourls', false)) {
-            return $this->loader->load('yourls', $useragent);
-        }
-
-        if ($s->contains('ning', false)) {
-            return $this->loader->load('ning', $useragent);
-        }
-
-        if ($s->contains('sprinklr', false)) {
-            return $this->loader->load('sprinklr', $useragent);
-        }
-
-        if ($s->contains('urlchecker', false)) {
-            return $this->loader->load('urlchecker', $useragent);
-        }
-
-        if ($s->contains('newsme', false)) {
-            return $this->loader->load('newsme', $useragent);
-        }
-
-        if ($s->contains('traackr', false)) {
-            return $this->loader->load('traackr', $useragent);
-        }
-
-        if ($s->contains('nineconnections', false)) {
-            return $this->loader->load('nineconnections', $useragent);
-        }
-
-        if ($s->contains('xenu link sleuth', false)) {
-            return $this->loader->load('xenus link sleuth', $useragent);
-        }
-
-        if ($s->contains('superagent', false)) {
-            return $this->loader->load('superagent', $useragent);
-        }
-
-        if ($s->contains('goose', false)) {
-            return $this->loader->load('goose-extractor', $useragent);
-        }
-
-        if ($s->contains('ahc', false)) {
-            return $this->loader->load('asynchronous http client', $useragent);
-        }
-
-        if ($s->contains('newspaper', false)) {
-            return $this->loader->load('newspaper', $useragent);
-        }
-
-        if ($s->contains('hatena::bookmark', false)) {
-            return $this->loader->load('hatena::bookmark', $useragent);
-        }
-
-        if ($s->contains('easybib autocite', false)) {
-            return $this->loader->load('easybib autocite', $useragent);
-        }
-
-        if ($s->contains('shortlinktranslate', false)) {
-            return $this->loader->load('shortlinktranslate', $useragent);
-        }
-
-        if ($s->contains('marketing grader', false)) {
-            return $this->loader->load('marketing grader', $useragent);
-        }
-
-        if ($s->contains('grammarly', false)) {
-            return $this->loader->load('grammarly', $useragent);
-        }
-
-        if ($s->contains('dispatch', false)) {
-            return $this->loader->load('dispatch', $useragent);
-        }
-
-        if ($s->contains('raven link checker', false)) {
-            return $this->loader->load('raven link checker', $useragent);
-        }
-
-        if ($s->contains('http-kit', false)) {
-            return $this->loader->load('http kit', $useragent);
-        }
-
-        if ($s->contains('sffeedreader', false)) {
-            return $this->loader->load('symfony rss reader', $useragent);
-        }
-
-        if ($s->contains('twikle', false)) {
-            return $this->loader->load('twikle bot', $useragent);
-        }
-
-        if ($s->contains('node-fetch', false)) {
-            return $this->loader->load('node-fetch', $useragent);
-        }
-
-        if ($s->contains('faraday', false)) {
-            return $this->loader->load('faraday', $useragent);
-        }
-
-        if ($s->contains('gettor', false)) {
-            return $this->loader->load('gettor', $useragent);
-        }
-
-        if ($s->contains('seostats', false)) {
-            return $this->loader->load('seostats', $useragent);
-        }
-
-        if ($s->contains('znajdzfoto/image', false)) {
-            return $this->loader->load('znajdzfoto/imagebot', $useragent);
-        }
-
-        if ($s->contains('infox-wisg', false)) {
-            return $this->loader->load('infox-wisg', $useragent);
-        }
-
-        if ($s->contains('wscheck.com', false)) {
-            return $this->loader->load('wscheck bot', $useragent);
-        }
-
-        if ($s->contains('tweetminster', false)) {
-            return $this->loader->load('tweetminster bot', $useragent);
-        }
-
-        if ($s->contains('astute srm', false)) {
-            return $this->loader->load('astute social', $useragent);
-        }
-
-        if ($s->contains('longurl api', false)) {
-            return $this->loader->load('longurl bot', $useragent);
-        }
-
-        if ($s->contains('trove', false)) {
-            return $this->loader->load('trove bot', $useragent);
-        }
-
-        if ($s->contains('melvil favicon', false)) {
-            return $this->loader->load('melvil favicon bot', $useragent);
-        }
-
-        if ($s->contains('melvil', false)) {
-            return $this->loader->load('melvil bot', $useragent);
-        }
-
-        if ($s->contains('pearltrees', false)) {
-            return $this->loader->load('pearltrees bot', $useragent);
-        }
-
-        if ($s->contains('svven-summarizer', false)) {
-            return $this->loader->load('svven summarizer bot', $useragent);
-        }
-
-        if ($s->contains('athena site analyzer', false)) {
-            return $this->loader->load('athena site analyzer', $useragent);
-        }
-
-        if ($s->contains('exploratodo', false)) {
-            return $this->loader->load('exploratodo bot', $useragent);
-        }
-
-        if ($s->contains('whatsapp', false)) {
-            return $this->loader->load('whatsapp', $useragent);
-        }
-
-        if ($s->contains('ddg-android-', false)) {
-            return $this->loader->load('duckduck app', $useragent);
-        }
-
-        if ($s->contains('webcorp', false)) {
-            return $this->loader->load('webcorp', $useragent);
-        }
-
-        if ($s->contains('ror sitemap generator', false)) {
-            return $this->loader->load('ror sitemap generator', $useragent);
-        }
-
-        if ($s->contains('auditmypc webmaster tool', false)) {
-            return $this->loader->load('auditmypc webmaster tool', $useragent);
-        }
-
-        if ($s->contains('xmlsitemapgenerator', false)) {
-            return $this->loader->load('xmlsitemapgenerator', $useragent);
-        }
-
-        if ($s->contains('stratagems kumo', false)) {
-            return $this->loader->load('stratagems kumo', $useragent);
-        }
-
-        if ($s->contains('spip', false)) {
-            return $this->loader->load('spip', $useragent);
-        }
-
-        if ($s->contains('friendica', false)) {
-            return $this->loader->load('friendica', $useragent);
-        }
-
-        if ($s->contains('magpierss', false)) {
-            return $this->loader->load('magpierss', $useragent);
-        }
-
-        if ($s->contains('short url checker', false)) {
-            return $this->loader->load('short url checker', $useragent);
-        }
-
-        if ($s->contains('webnumbrfetcher', false)) {
-            return $this->loader->load('webnumbr fetcher', $useragent);
-        }
-
-        if ($s->containsAny(['wap browser', 'spice qt-75', 'kkt20/midp'], false)) {
-            return $this->loader->load('wap browser', $useragent);
-        }
-
-        if ($s->contains('java', false)) {
-            return $this->loader->load('java', $useragent);
-        }
-
-        if ($s->contains('argclrint', false)) {
-            return $this->loader->load('argclrint', $useragent);
-        }
-
-        if ($s->contains('blitzbot', false)) {
-            return $this->loader->load('blitzbot', $useragent);
-        }
-
-        if ($s->contains('charlotte', false)) {
-            return $this->loader->load('charlotte', $useragent);
-        }
-
-        if ($s->contains('firebird', false)) {
-            return $this->loader->load('firebird', $useragent);
-        }
-
-        if ($s->contains('heritrix', false)) {
-            return $this->loader->load('heritrix', $useragent);
-        }
-
-        if ($s->contains('iceowl', false)) {
-            return $this->loader->load('iceowl', $useragent);
-        }
-
-        if ($s->contains('icedove', false)) {
-            return $this->loader->load('icedove', $useragent);
-        }
-
-        if ($s->contains('archive-de.com', false)) {
-            return $this->loader->load('archive-de.com', $useragent);
-        }
-
-        if ($s->contains('socialcast', false)) {
-            return $this->loader->load('socialcast bot', $useragent);
-        }
-
-        if ($s->contains('cloudinary', false)) {
-            return $this->loader->load('cloudinary', $useragent);
-        }
-
-        if ($s->contains('mozilla', false)) {
-            return $this->loader->load('mozilla', $useragent);
-        }
-
-        if ($s->startsWith('GOOG', true)) {
-            return $this->loader->load('googlebot', $useragent);
-        }
-
-        if ($s->contains('fetchstream', false)) {
-            return $this->loader->load('fetch-stream', $useragent);
-        }
-
-        if ($s->contains('autoit', false)) {
-            return $this->loader->load('autoit', $useragent);
-        }
-
-        if ($s->contains('atvoice', false)) {
-            return $this->loader->load('atvoice', $useragent);
         }
 
         return $this->loader->load('unknown', $useragent);
