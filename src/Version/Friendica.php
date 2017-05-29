@@ -28,11 +28,7 @@ class Friendica implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $doMatch = preg_match(
-            '/Friendica \'[^\']*\' (\d+[\d\.\_\-\+abcdehlprstv]*).*/',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/Friendica \'[^\']*\' (\d+[\d\.\_\-\+abcdehlprstv]*).*/', $useragent, $matches);
 
         if (!$doMatch) {
             return new Version(0);

@@ -30,11 +30,7 @@ class MicrosoftExcel implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        preg_match(
-            '/Excel[\/ ]([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        preg_match('/Excel[\/ ]([\d\.]+)/', $useragent, $matches);
 
         return VersionFactory::set((new MicrosoftOfficeHelper())->mapVersion($matches[1]));
     }

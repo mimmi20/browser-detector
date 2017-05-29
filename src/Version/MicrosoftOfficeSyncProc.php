@@ -30,11 +30,7 @@ class MicrosoftOfficeSyncProc implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        preg_match(
-            '/Office SyncProc[\/ ]([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        preg_match('/Office SyncProc[\/ ]([\d\.]+)/', $useragent, $matches);
 
         return VersionFactory::set((new MicrosoftOfficeHelper())->mapVersion($matches[1]));
     }

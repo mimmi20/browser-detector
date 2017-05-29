@@ -30,11 +30,7 @@ class MicrosoftOutlook implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $doMatch = preg_match(
-            '/microsoft office outlook ([\d\.]+)/i',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/microsoft office outlook ([\d\.]+)/i', $useragent, $matches);
 
         $helper = new MicrosoftOfficeHelper();
 
@@ -42,11 +38,7 @@ class MicrosoftOutlook implements VersionCacheFactoryInterface
             return VersionFactory::set($helper->mapVersion($matches[1]));
         }
 
-        $doMatch = preg_match(
-            '/microsoft outlook ([\d\.]+)/i',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/microsoft outlook ([\d\.]+)/i', $useragent, $matches);
 
         if ($doMatch) {
             return VersionFactory::set($helper->mapVersion($matches[1]));

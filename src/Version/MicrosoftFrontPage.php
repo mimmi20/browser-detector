@@ -30,11 +30,7 @@ class MicrosoftFrontPage implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        preg_match(
-            '/FrontPage[\/ ]([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        preg_match('/FrontPage[\/ ]([\d\.]+)/', $useragent, $matches);
 
         return VersionFactory::set((new MicrosoftOfficeHelper())->mapVersion($matches[1]));
     }

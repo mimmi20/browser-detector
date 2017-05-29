@@ -30,11 +30,7 @@ class MicrosoftVisio implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        preg_match(
-            '/Visio[\/ ]([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        preg_match('/Visio[\/ ]([\d\.]+)/', $useragent, $matches);
 
         return VersionFactory::set((new MicrosoftOfficeHelper())->mapVersion($matches[1]));
     }

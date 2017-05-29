@@ -30,11 +30,7 @@ class MicrosoftAccess implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        preg_match(
-            '/Access[\/ ]([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        preg_match('/Access[\/ ]([\d\.]+)/', $useragent, $matches);
 
         return VersionFactory::set((new MicrosoftOfficeHelper())->mapVersion($matches[1]));
     }
