@@ -12,9 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\BrowserLoader;
-use Cache\Adapter\Filesystem\FilesystemCachePool;
-use League\Flysystem\Adapter\Local;
-use League\Flysystem\Filesystem;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Loader\BrowserLoader
@@ -32,8 +30,7 @@ class BrowserLoaderTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp()
     {
-        $adapter      = new Local(__DIR__ . '/../../cache/');
-        $cache        = new FilesystemCachePool(new Filesystem($adapter));
+        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
         $this->object = new BrowserLoader($cache);
     }
 

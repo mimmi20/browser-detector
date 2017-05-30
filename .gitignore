@@ -13,7 +13,8 @@ result.txt
 phpunit.txt
 resources/browscap-*/
 tests/create-tests.php
-cache/cache/
+cache/*
+!cache/.gitkeep
 tests/temp/*.php
 tests/temp/*.ini
 tests/cache/
