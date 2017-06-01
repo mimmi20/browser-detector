@@ -21,14 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ElephoneFactory implements Factory\FactoryInterface
+class CrosscallFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'p8000' => 'elephone p8000',
-        'p3000' => 'p3000',
+        'trekker-x1' => 'crosscall trekker-x1',
     ];
 
     /**
@@ -60,6 +59,6 @@ class ElephoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general elephone device', $useragent);
+        return $this->loader->load('general crosscall device', $useragent);
     }
 }

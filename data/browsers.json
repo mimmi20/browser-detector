@@ -5543,6 +5543,9 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "iTunes\\-iPhone",
+        "iTunes\\-iPad",
+        "iTunes\\-iPod",
         "iTunes"
       ]
     },
@@ -9989,6 +9992,20 @@
       "class": "VersionFactory",
       "search": [
         "ROR Sitemap Generator"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sitemap generator": {
+    "name": "Sitemap Generator",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Sitemap Generator"
       ]
     },
     "engine": "unknown"
@@ -14842,5 +14859,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "bitdefender safepay": {
+    "name": "Safepay",
+    "manufacturer": "Bitdefender",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "blink"
   }
 }

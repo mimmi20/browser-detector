@@ -27,6 +27,7 @@ class AmazonFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'kfarwi'      => 'amazon kfarwi',
         'kftt'        => 'kftt',
         'kfthwi'      => 'kfthwi',
         'kfsowi'      => 'kfsowi',
@@ -36,6 +37,7 @@ class AmazonFactory implements Factory\FactoryInterface
         'kfaswi'      => 'kfaswi',
         'kfapwi'      => 'kfapwi',
         'kfapwa'      => 'kfapwa',
+        'fire2'       => 'amazon kindle fire 2',
         'sd4930ur'    => 'sd4930ur',
         'kindle fire' => 'd01400',
         'kindle'      => 'kindle',

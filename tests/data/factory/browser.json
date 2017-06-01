@@ -7414,5 +7414,53 @@
     "manufacturer": null,
     "bits": 32,
     "type": "Bot/Crawler"
+  },
+  {
+    "ua": "iTunes-iPhone/5.0.1 (6; 64GB)",
+    "browser": "iTunes",
+    "version": "5.0.1",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "iTunes-iPad/5.1.1 (2; 16GB; dt:74)",
+    "browser": "iTunes",
+    "version": "5.1.1",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "iTunes-iPod/4.2.1 (2; 8GB)",
+    "browser": "iTunes",
+    "version": "4.2.1",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "curl/7.15.5 (x86_64-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5",
+    "browser": "cURL",
+    "version": "7.15.5",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; Sitemap Generator/1.3; +http://www.check-domains.com/sitemap/index.php)",
+    "browser": "Sitemap Generator",
+    "version": "1.3.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.59 Safari/537.36 BitdefenderSafepay/2017 (3.55.0.2883.59 build 20170105, like Chrome 55)",
+    "browser": "Safepay",
+    "version": "0.0.0",
+    "manufacturer": "Bitdefender",
+    "bits": 32,
+    "type": "Browser"
   }
 ]

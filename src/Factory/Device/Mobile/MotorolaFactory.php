@@ -65,6 +65,7 @@ class MotorolaFactory implements Factory\FactoryInterface
         'xt702'           => 'xt702',
         'xt615'           => 'xt615',
         'xt610'           => 'xt610',
+        'xt535'           => 'motorola xt535',
         'xt530'           => 'xt530',
         'xt389'           => 'xt389',
         'xt320'           => 'xt320',

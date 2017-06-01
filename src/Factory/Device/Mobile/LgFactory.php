@@ -35,6 +35,7 @@ class LgFactory implements Factory\FactoryInterface
         'lgl34c'        => 'lg l34c',
         'e467f'         => 'lg e467f',
         'x150'          => 'x150',
+        'h500'          => 'lg h500',
         'h850'          => 'h850',
         'h525n'         => 'h525n',
         'h345'          => 'h345',
