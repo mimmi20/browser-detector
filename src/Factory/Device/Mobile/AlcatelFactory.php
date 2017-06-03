@@ -90,6 +90,7 @@ class AlcatelFactory implements Factory\FactoryInterface
         'ot871a'                   => 'ot-871a',
         'one_touch_818'            => 'ot-818',
         'ot-710d'                  => 'ot-710d',
+        'ot510a'                   => 'alcatel ot-510a',
         'ot-216'                   => 'ot-216',
         'vodafone 975n'            => '975n',
         'vodafone 875'             => 'alcatel vodafone 875',
@@ -103,6 +104,7 @@ class AlcatelFactory implements Factory\FactoryInterface
         'one touch tab 8hd'        => 'ot-tab8hd',
         'one touch tab 7hd'        => 'ot-tab7hd',
         'alcatel one touch fierce' => 'fierce',
+        'alcatel-oh5'              => 'alcatel oh5',
     ];
 
     /**

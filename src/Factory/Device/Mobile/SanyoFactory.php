@@ -27,6 +27,8 @@ class SanyoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'scp3810' => 'sanyo scp3810',
+        'e4100'   => 'sanyo e4100',
         'pm-8200' => 'pm-8200',
     ];
 

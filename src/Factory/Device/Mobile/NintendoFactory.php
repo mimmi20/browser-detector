@@ -30,6 +30,7 @@ class NintendoFactory implements Factory\FactoryInterface
         'wiiu' => 'wiiu',
         'wii'  => 'wii',
         'dsi'  => 'dsi',
+        'nintendo ds'  => 'nintendo ds',
         '3ds'  => '3ds',
     ];
 

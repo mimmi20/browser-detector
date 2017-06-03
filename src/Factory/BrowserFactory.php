@@ -163,6 +163,7 @@ class BrowserFactory implements FactoryInterface
             'baiduboxapp'     => 'baidu box app',
             'wkbrowser'       => 'wkbrowser',
             'mb2345browser'   => '2345 browser',
+            'sohunews'        => 'sohunews app',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {

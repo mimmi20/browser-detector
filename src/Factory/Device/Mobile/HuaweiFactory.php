@@ -27,6 +27,8 @@ class HuaweiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'ath-al00'                        => 'huawei ath-al00',
+        'chc-u03'                         => 'huawei chc-u03',
         'cam-l21'                         => 'huawei cam-l21',
         'mha-l29'                         => 'huawei mha-l29',
         'h60-l01'                         => 'huawei h60-l01',
@@ -198,6 +200,8 @@ class HuaweiFactory implements Factory\FactoryInterface
         'd2-0082'                         => 'd2-0082',
         'p8max'                           => 'p8max',
         '4afrika'                         => '4afrika',
+        'g2800'                           => 'huawei g2800',
+        'm750'                            => 'huawei m750',
     ];
 
     /**

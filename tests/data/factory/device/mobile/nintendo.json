@@ -33,7 +33,7 @@
     "brand": "Nintendo",
     "type": "Mobile Device",
     "dualOrientation": false,
-    "pointingMethod": "mouse",
+    "pointingMethod": null,
     "width": null,
     "height": null,
     "colors": null
@@ -76,5 +76,18 @@
     "width": null,
     "height": null,
     "colors": null
+  },
+  {
+    "ua": "Bunjalloo/0.7.6(Nintendo DS;U;en)",
+    "codeName": "DS",
+    "marketingName": "DS",
+    "manufacturer": "Nintendo",
+    "brand": "Nintendo",
+    "type": "Mobile Device",
+    "dualOrientation": false,
+    "pointingMethod": "stylus",
+    "width": 256,
+    "height": 192,
+    "colors": 262144
   }
 ]

@@ -6,10 +6,23 @@
     "brand": "Nintendo",
     "platform": null,
     "type": "mobile-console",
-    "pointingMethod": "mouse",
+    "pointingMethod": null,
     "resolutionWidth": 685,
     "resolutionHeight": 600,
     "dualOrientation": false,
     "colors": null
+  },
+  "nintendo ds": {
+    "codename": "DS",
+    "marketingName": "DS",
+    "manufacturer": "Nintendo",
+    "brand": "Nintendo",
+    "platform": null,
+    "type": "mobile-console",
+    "pointingMethod": "stylus",
+    "resolutionWidth": 256,
+    "resolutionHeight": 192,
+    "dualOrientation": false,
+    "colors": 262144
   }
 }

@@ -14871,5 +14871,19 @@
       "search": null
     },
     "engine": "blink"
+  },
+  "sohunews app": {
+    "name": "SohuNews App",
+    "manufacturer": "Sohu",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SohuNews"
+      ]
+    },
+    "engine": "blink"
   }
 }

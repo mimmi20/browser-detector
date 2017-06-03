@@ -71,7 +71,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if ($s->containsAll(['iphone', 'android'], false)
-            && !$s->contains('windows phone', false)
+            && !$s->containsAny(['windows phone', 'iphone; cpu iphone os'], false)
         ) {
             return (new Mobile\XiangheFactory($this->loader))->detect($useragent, $s);
         }
@@ -1416,7 +1416,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['c660', 'ls670', 'vm670'], false)) {
+        if ($s->containsAny(['c660', 'ls670', 'vm670', 'ln240'], false)) {
             return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1588,7 +1588,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AdventFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['dream', ' x9 ', 'x315e', 'z715e'], false)) {
+        if ($s->containsAny(['dream', ' x9 ', 'x315e', 'z715e', 'amaze'], false)) {
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1966,6 +1966,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('trekker-x1', false)) {
             return (new Mobile\CrosscallFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['scp3810', 'e4100'], false)) {
+            return (new Mobile\SanyoFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {
