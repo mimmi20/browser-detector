@@ -7470,5 +7470,53 @@
     "manufacturer": "Sohu.com Inc",
     "bits": 32,
     "type": "Application"
+  },
+  {
+    "ua": "yacybot (/global; amd64 Linux 4.8.0-52-generic; java 1.8.0_131; Europe/de) http://yacy.net/bot.html",
+    "browser": "YaCy Bot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; evc-batch/2.0.20170523014054)",
+    "browser": "evc-batch",
+    "version": "2.0.20170523014054",
+    "manufacturer": "eVenture Capital Partners II, LLC",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "RankingBot2 -- https://varocarbas.com/bot_ranking2/",
+    "browser": "RankingBot2",
+    "version": "0.0.0",
+    "manufacturer": "Alvaro Carballo Garcia",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36/1.0 (A StormCrawler-based crawler; http://someorganization.com/; someone@someorganization.com)",
+    "browser": "StormCrawler",
+    "version": "0.0.0",
+    "manufacturer": "DigitalPebble Ltd",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 PTST/1",
+    "browser": "WebPagetest",
+    "version": "1.0.0",
+    "manufacturer": "WPO Foundation",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "com.apple.Notes.SharingExtension/719.68 CFNetwork/811.5.4 Darwin/16.6.0 (x86_64)",
+    "browser": "Notes App",
+    "version": "719.68.0",
+    "manufacturer": "Apple Inc",
+    "bits": 64,
+    "type": "Application"
   }
 ]

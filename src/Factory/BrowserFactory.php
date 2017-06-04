@@ -347,6 +347,8 @@ class BrowserFactory implements FactoryInterface
             'domain.com'                  => 'pagepeeker screenshot maker',
             'pagepeeker'                  => 'pagepeeker',
             'bitdefendersafepay'          => 'bitdefender safepay',
+            'stormcrawler'          => 'stormcrawler',
+            'ptst'          => 'webpagetest',
             'chrome'                      => 'chrome',
             'crios'                       => 'chrome',
             'crmo'                        => 'chrome',
@@ -355,6 +357,7 @@ class BrowserFactory implements FactoryInterface
             'dolphin'                     => 'dolfin',
             'arora'                       => 'arora',
             'com.douban.group'            => 'douban app',
+            'com.apple.Notes'            => 'apple notes app',
             'ovibrowser'                  => 'nokia proxy browser',
             'miuibrowser'                 => 'miui browser',
             'ibrowser'                    => 'ibrowser',
@@ -1163,6 +1166,7 @@ class BrowserFactory implements FactoryInterface
             'wap browser'                     => 'wap browser',
             'spice qt-75'                     => 'wap browser',
             'kkt20/midp'                      => 'wap browser',
+            'yacybot'                         => 'yacybot',
             'java'                            => 'java',
             'argclrint'                       => 'argclrint',
             'blitzbot'                        => 'blitzbot',
@@ -1174,11 +1178,13 @@ class BrowserFactory implements FactoryInterface
             'archive-de.com'                  => 'archive-de.com',
             'socialcast'                      => 'socialcast bot',
             'cloudinary'                      => 'cloudinary',
+            'evc-batch'                       => 'evc-batch',
             'mozilla'                         => 'mozilla',
             'goog'                            => 'googlebot',
             'fetchstream'                     => 'fetch-stream',
             'autoit'                          => 'autoit',
             'atvoice'                         => 'atvoice',
+            'rankingbot2'                     => 'rankingbot2',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

@@ -27,6 +27,7 @@ class BqFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'aquaris x5' => 'bq aquaris x5',
         'aquaris e5 hd' => 'aquaris e5 hd',
         'aquaris m10'   => 'aquaris m10',
         'aquaris m5'    => 'aquaris m5',

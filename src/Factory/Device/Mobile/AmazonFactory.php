@@ -27,6 +27,9 @@ class AmazonFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'kfdowi'      => 'amazon kfdowi',
+        'kfauwi'      => 'amazon kfauwi',
+        'kfgiwi'      => 'amazon kfgiwi',
         'kftbwi'      => 'amazon kftbwi',
         'kfmewi'      => 'amazon kfmewi',
         'kffowi'      => 'amazon kffowi',

@@ -1088,6 +1088,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\VelocityMicroFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('myphone', false)) {
+            return (new Mobile\MyphoneFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('myTAB', true)) {
             return (new Mobile\MytabFactory($this->loader))->detect($useragent, $s);
         }
@@ -1222,6 +1226,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->containsAny(['mt6572', ' c7 '], false)) {
             return (new Mobile\CubotFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('mt10', false)) {
+            return (new Mobile\MtnFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/(S|L|W|M)T\d{2}/', $useragent)) {
@@ -1476,7 +1484,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MwayFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('P4501', true)) {
+        if ($s->containsAny(['p4501', 'p850x'], false)) {
             return (new Mobile\MedionFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1592,7 +1600,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' xst2 ', ' x2 ', 'r800x', 's500i', 'x1i', 'x10i', 'f3311'], false)) {
+        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' xst2 ', ' x2 ', 'r800x', 's500i', 'x1i', 'x10i', 'f3311', 'f5121'], false)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1724,7 +1732,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['h30-u10', 'kiw-l21', 'chc-u03', 'ath-al00', 'mha-l29', 'cam-l21', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'g6600', 'm860', 'h60-l', ' p6 '], false)) {
+        if ($s->containsAny(['h30-u10', 'kiw-l21', 'chc-u03', 'che2-l11', 'ath-al00', 'mha-l29', 'cam-l21', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'g6600', 'm860', 'h60-l', ' p6 ', 'vtr-'], false)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1872,7 +1880,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\TclFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('lead 2', false)) {
+        if ($s->containsAny(['lead 2', 't1_plus'], false)) {
             return (new Mobile\LeagooFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1932,7 +1940,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\KddiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('be pro', false)) {
+        if ($s->containsAny(['be pro', 'paris'], false)) {
             return (new Mobile\UlefoneFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1970,6 +1978,22 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->containsAny(['scp3810', 'e4100'], false)) {
             return (new Mobile\SanyoFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('neffos c5l', false)) {
+            return (new Mobile\TplinkFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('ht16', false)) {
+            return (new Mobile\HomtomFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains(' s30 ', false)) {
+            return (new Mobile\FireflyFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('apollo', false)) {
+            return (new Mobile\VerneeFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {

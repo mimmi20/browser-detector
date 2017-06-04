@@ -27,6 +27,7 @@ class LeagooFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        't1_plus' => 'leagoo t1 plus',
         'lead 2' => 'leagoo lead 2',
     ];
 

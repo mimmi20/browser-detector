@@ -27,6 +27,7 @@ class CubotFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'note_s'    => 'cubot note s',
         's208'      => 's208',
         'p9'        => 'cubot u30gt',
         'mt6572_td' => 'gt 95 3g',

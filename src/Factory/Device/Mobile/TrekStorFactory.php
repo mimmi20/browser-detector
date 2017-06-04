@@ -27,6 +27,7 @@ class TrekStorFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'surftab twin 11.6 lc1' => 'trekstor surftab twin 11.6 lc1',
         'surftab duo w1 10.1' => 'surftab duo w1 10.1',
         'wp 4.7'              => 'winphone 4.7 hd',
         'vt10416-2'           => 'vt10416-2',
