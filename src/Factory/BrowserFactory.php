@@ -163,6 +163,7 @@ class BrowserFactory implements FactoryInterface
             'baiduboxapp'     => 'baidu box app',
             'wkbrowser'       => 'wkbrowser',
             'mb2345browser'   => '2345 browser',
+            'sohunews'        => 'sohunews app',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -345,6 +346,9 @@ class BrowserFactory implements FactoryInterface
             'bromium safari'              => 'vsentry',
             'domain.com'                  => 'pagepeeker screenshot maker',
             'pagepeeker'                  => 'pagepeeker',
+            'bitdefendersafepay'          => 'bitdefender safepay',
+            'stormcrawler'                => 'stormcrawler',
+            'ptst'                        => 'webpagetest',
             'chrome'                      => 'chrome',
             'crios'                       => 'chrome',
             'crmo'                        => 'chrome',
@@ -353,6 +357,7 @@ class BrowserFactory implements FactoryInterface
             'dolphin'                     => 'dolfin',
             'arora'                       => 'arora',
             'com.douban.group'            => 'douban app',
+            'com.apple.Notes'             => 'apple notes app',
             'ovibrowser'                  => 'nokia proxy browser',
             'miuibrowser'                 => 'miui browser',
             'ibrowser'                    => 'ibrowser',
@@ -520,6 +525,7 @@ class BrowserFactory implements FactoryInterface
             'twcan/sportsnet' => 'twc sportsnet',
             'adobeair'        => 'adobe air',
             'easouspider'     => 'easouspider',
+            'itunes'          => 'itunes',
         ];
 
         foreach ($checkBeforeSafariUiwebview as $search => $key) {
@@ -747,6 +753,11 @@ class BrowserFactory implements FactoryInterface
             'wap browser/maui'             => 'maui wap browser',
             'discovered'                   => 'discovered',
             'gosquared-thumbnailer'        => 'gosquared-thumbnailer',
+            'pycurl'                       => 'pycurl',
+            'libcurl-agent'                => 'libcurl',
+            'taproot'                      => 'taproot bot',
+            'guzzlehttp'                   => 'guzzle http client',
+            'curl'                         => 'curl',
             'red'                          => 'redbot',
             'dbot'                         => 'dbot',
             'pwbot'                        => 'pwbot',
@@ -974,7 +985,6 @@ class BrowserFactory implements FactoryInterface
             'nsplayer'                        => 'windows media player',
             'pingdom'                         => 'pingdom',
             'gg peekbot'                      => 'gg peekbot',
-            'itunes'                          => 'itunes',
             'libreoffice'                     => 'libreoffice',
             'openoffice'                      => 'openoffice',
             'thumbnailagent'                  => 'thumbnailagent',
@@ -1016,12 +1026,9 @@ class BrowserFactory implements FactoryInterface
             'wsr-agent'                       => 'wsr-agent',
             'blogshares spiders'              => 'blogshares spiders',
             'quickiwiki'                      => 'quickiwiki bot',
-            'pycurl'                          => 'pycurl',
-            'libcurl-agent'                   => 'libcurl',
-            'taproot'                         => 'taproot bot',
-            'guzzlehttp'                      => 'guzzle http client',
-            'curl'                            => 'curl',
             'facebookexternalhit'             => 'facebookexternalhit',
+            'ror sitemap generator'           => 'ror sitemap generator',
+            'sitemap generator'               => 'sitemap generator',
             'embed php library'               => 'embed php library',
             'php'                             => 'php',
             'apple-pubsub'                    => 'apple pubsub',
@@ -1148,7 +1155,6 @@ class BrowserFactory implements FactoryInterface
             'whatsapp'                        => 'whatsapp',
             'ddg-android-'                    => 'duckduck app',
             'webcorp'                         => 'webcorp',
-            'ror sitemap generator'           => 'ror sitemap generator',
             'auditmypc webmaster tool'        => 'auditmypc webmaster tool',
             'xmlsitemapgenerator'             => 'xmlsitemapgenerator',
             'stratagems kumo'                 => 'stratagems kumo',
@@ -1160,6 +1166,7 @@ class BrowserFactory implements FactoryInterface
             'wap browser'                     => 'wap browser',
             'spice qt-75'                     => 'wap browser',
             'kkt20/midp'                      => 'wap browser',
+            'yacybot'                         => 'yacybot',
             'java'                            => 'java',
             'argclrint'                       => 'argclrint',
             'blitzbot'                        => 'blitzbot',
@@ -1171,11 +1178,13 @@ class BrowserFactory implements FactoryInterface
             'archive-de.com'                  => 'archive-de.com',
             'socialcast'                      => 'socialcast bot',
             'cloudinary'                      => 'cloudinary',
+            'evc-batch'                       => 'evc-batch',
             'mozilla'                         => 'mozilla',
             'goog'                            => 'googlebot',
             'fetchstream'                     => 'fetch-stream',
             'autoit'                          => 'autoit',
             'atvoice'                         => 'atvoice',
+            'rankingbot2'                     => 'rankingbot2',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

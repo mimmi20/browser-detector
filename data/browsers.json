@@ -551,7 +551,7 @@
         "AppStore"
       ]
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "applebot": {
     "name": "Applebot",
@@ -5543,6 +5543,9 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "iTunes\\-iPhone",
+        "iTunes\\-iPad",
+        "iTunes\\-iPod",
         "iTunes"
       ]
     },
@@ -9989,6 +9992,20 @@
       "class": "VersionFactory",
       "search": [
         "ROR Sitemap Generator"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sitemap generator": {
+    "name": "Sitemap Generator",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Sitemap Generator"
       ]
     },
     "engine": "unknown"
@@ -14842,5 +14859,97 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "bitdefender safepay": {
+    "name": "Safepay",
+    "manufacturer": "Bitdefender",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "blink"
+  },
+  "sohunews app": {
+    "name": "SohuNews App",
+    "manufacturer": "Sohu",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SohuNews"
+      ]
+    },
+    "engine": "blink"
+  },
+  "evc-batch": {
+    "name": "evc-batch",
+    "manufacturer": "evc",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "evc\\-batch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "rankingbot2": {
+    "name": "RankingBot2",
+    "manufacturer": "varocarbas",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "stormcrawler": {
+    "name": "StormCrawler",
+    "manufacturer": "DigitalPebble",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "webpagetest": {
+    "name": "WebPagetest",
+    "manufacturer": "WPO Foundation",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PTST"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "apple notes app": {
+    "name": "Notes App",
+    "manufacturer": "Apple",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "com\\.apple\\.Notes\\.SharingExtension"
+      ]
+    },
+    "engine": "webkit"
   }
 }

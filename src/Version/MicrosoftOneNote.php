@@ -30,11 +30,7 @@ class MicrosoftOneNote implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        preg_match(
-            '/OneNote[\/ ]([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        preg_match('/OneNote[\/ ]([\d\.]+)/', $useragent, $matches);
 
         return VersionFactory::set((new MicrosoftOfficeHelper())->mapVersion($matches[1]));
     }

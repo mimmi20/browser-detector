@@ -28,7 +28,9 @@ class OppoFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'x909'  => 'x909',
+        'r7sm'  => 'oppo r7sm',
         'r8106' => 'oppo r8106',
+        'u705t' => 'oppo u705t',
         'r815'  => 'r815',
         'r813t' => 'r813t',
     ];

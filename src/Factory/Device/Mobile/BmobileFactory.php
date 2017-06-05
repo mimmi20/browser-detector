@@ -27,6 +27,7 @@ class BmobileFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'ax810' => 'bmobile ax810',
         'ax540' => 'ax540',
         'ax512' => 'ax512',
     ];

@@ -27,6 +27,7 @@ class ElephoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'p8000' => 'elephone p8000',
         'p3000' => 'p3000',
     ];
 

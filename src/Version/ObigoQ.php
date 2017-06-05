@@ -28,34 +28,25 @@ class ObigoQ implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $doMatch = preg_match(
-            '/ObigoInternetBrowser\/Q(\d+)/',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/ObigoInternetBrowser\/Q(\d+)/', $useragent, $matches);
 
         if ($doMatch) {
             return VersionFactory::set($matches[1]);
         }
 
-        $doMatch = preg_match(
-            '/obigo\-browser\/q(\d+)/i',
-            $useragent,
-            $matches
-        );
+        $doMatch = preg_match('/obigo\-browser\/q(\d+)/i', $useragent, $matches);
 
         if ($doMatch) {
             return VersionFactory::set($matches[1]);
         }
 
-        return VersionFactory::detectVersion(
-            $useragent,
-            [
-                'Teleca\-Q',
-                'Obigo\-Q',
-                'Obigo\/Q',
-                'Teleca\/Q',
-            ]
-        );
+        $searches = [
+            'Teleca\-Q',
+            'Obigo\-Q',
+            'Obigo\/Q',
+            'Teleca\/Q',
+        ];
+
+        return VersionFactory::detectVersion($useragent, $searches);
     }
 }

@@ -27,8 +27,18 @@ class AmazonFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'kfdowi'      => 'amazon kfdowi',
+        'kfauwi'      => 'amazon kfauwi',
+        'kfgiwi'      => 'amazon kfgiwi',
+        'kftbwi'      => 'amazon kftbwi',
+        'kfmewi'      => 'amazon kfmewi',
+        'kffowi'      => 'amazon kffowi',
+        'kfsawi'      => 'amazon kfsawi',
+        'kfsawa'      => 'amazon kfsawa',
+        'kfarwi'      => 'amazon kfarwi',
         'kftt'        => 'kftt',
         'kfthwi'      => 'kfthwi',
+        'kfthwa'      => 'amazon kfthwa',
         'kfsowi'      => 'kfsowi',
         'kfot'        => 'kfot',
         'kfjwi'       => 'kfjwi',
@@ -36,6 +46,7 @@ class AmazonFactory implements Factory\FactoryInterface
         'kfaswi'      => 'kfaswi',
         'kfapwi'      => 'kfapwi',
         'kfapwa'      => 'kfapwa',
+        'fire2'       => 'amazon kindle fire 2',
         'sd4930ur'    => 'sd4930ur',
         'kindle fire' => 'd01400',
         'kindle'      => 'kindle',

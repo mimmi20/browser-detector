@@ -12,10 +12,8 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
-use Cache\Adapter\Filesystem\FilesystemCachePool;
-use League\Flysystem\Adapter\Local;
-use League\Flysystem\Filesystem;
 use Psr\Log\NullLogger;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use UaResult\Result\Result;
 use UaResult\Result\ResultFactory;
 use Wurfl\Request\Constants;
@@ -160,8 +158,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
             return static::$cache;
         }
 
-        $adapter       = new Local(__DIR__ . '/../cache/');
-        static::$cache = new FilesystemCachePool(new Filesystem($adapter));
+        static::$cache = new FilesystemAdapter('', 0, __DIR__ . '/../cache/');
 
         return static::$cache;
     }

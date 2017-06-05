@@ -16,9 +16,7 @@ use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\PlatformLoader;
-use Cache\Adapter\Filesystem\FilesystemCachePool;
-use League\Flysystem\Adapter\Local;
-use League\Flysystem\Filesystem;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -46,8 +44,7 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp()
     {
-        $adapter      = new Local(__DIR__ . '/../../cache/');
-        $this->cache  = new FilesystemCachePool(new Filesystem($adapter));
+        $this->cache  = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
         $loader       = new BrowserLoader($this->cache);
         $this->object = new BrowserFactory($loader);
 

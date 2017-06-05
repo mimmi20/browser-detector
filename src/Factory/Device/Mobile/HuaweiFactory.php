@@ -27,6 +27,15 @@ class HuaweiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'vtr-l09'                         => 'huawei vtr-l09',
+        'vtr-al00'                        => 'huawei vtr-al00',
+        'vtr-tl00'                        => 'huawei vtr-tl00',
+        'vtr-l29'                         => 'huawei vtr-l29',
+        'che2-l11'                        => 'huawei che2-l11',
+        'ath-al00'                        => 'huawei ath-al00',
+        'chc-u03'                         => 'huawei chc-u03',
+        'cam-l21'                         => 'huawei cam-l21',
+        'mha-l29'                         => 'huawei mha-l29',
         'h60-l01'                         => 'huawei h60-l01',
         'h60-l02'                         => 'huawei h60-l02',
         'h60-l04'                         => 'huawei h60-l04',
@@ -35,6 +44,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'tag-al00'                        => 'tag-al00',
         'tag-l21'                         => 'tag-l21',
         'tag-l01'                         => 'tag-l01',
+        'ale-cl00'                        => 'huawei ale-cl00',
         'ale-21'                          => 'ale 21',
         'ale-l21'                         => 'ale-l21',
         'ale-l02'                         => 'ale-l02',
@@ -60,6 +70,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'g630-u10'                        => 'huawei g630-u10',
         'g620s-l01'                       => 'g620s-l01',
         'g610-u20'                        => 'g610-u20',
+        'g606-t00'                        => 'huawei g606-t00',
         'g7-l11'                          => 'g7-l11',
         'g7-l01'                          => 'g7-l01',
         'g6-l11'                          => 'g6-l11',
@@ -194,6 +205,8 @@ class HuaweiFactory implements Factory\FactoryInterface
         'd2-0082'                         => 'd2-0082',
         'p8max'                           => 'p8max',
         '4afrika'                         => '4afrika',
+        'g2800'                           => 'huawei g2800',
+        'm750'                            => 'huawei m750',
     ];
 
     /**

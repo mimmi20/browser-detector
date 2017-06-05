@@ -108,6 +108,8 @@ class LenovoFactory implements Factory\FactoryInterface
         'a388t'                   => 'a388t',
         'a328'                    => 'a328',
         'a319'                    => 'a319',
+        'a316'                    => 'lenovo a316',
+        'a308t'                   => 'lenovo a308t',
         'a288t'                   => 'a288t',
         'a65'                     => 'a65',
         'a60'                     => 'a60',

@@ -30,11 +30,7 @@ class MicrosoftLync implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        preg_match(
-            '/Lync[\/ ]([\d\.]+)/',
-            $useragent,
-            $matches
-        );
+        preg_match('/Lync[\/ ]([\d\.]+)/', $useragent, $matches);
 
         return VersionFactory::set((new MicrosoftOfficeHelper())->mapVersion($matches[1]));
     }

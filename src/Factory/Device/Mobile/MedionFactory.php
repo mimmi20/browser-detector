@@ -36,6 +36,7 @@ class MedionFactory implements Factory\FactoryInterface
         'x5020'           => 'life x5020',
         'x5004'           => 'x5004',
         'x4701'           => 'x4701',
+        'p850x'           => 'medion p850x',
         'p5001'           => 'life p5001',
         'p5004'           => 'life p5004',
         'p5005'           => 'life p5005',

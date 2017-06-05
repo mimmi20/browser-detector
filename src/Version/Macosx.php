@@ -28,11 +28,8 @@ class Macosx implements VersionCacheFactoryInterface
      */
     public function detectVersion($useragent)
     {
-        $detectedVersion = VersionFactory::detectVersion(
-            $useragent,
-            ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac ']
-        );
+        $searches = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
-        return $detectedVersion;
+        return VersionFactory::detectVersion($useragent, $searches);
     }
 }

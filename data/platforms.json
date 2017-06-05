@@ -115,10 +115,8 @@
     "marketingName": "ChromeOS",
     "manufacturer": "Google",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "CrOS"
-      ]
+      "class": "\\BrowserDetector\\Version\\ChromeOs",
+      "search": null
     }
   },
   "cygwin": {
@@ -929,6 +927,15 @@
     "name": "Zenwalk GNU Linux",
     "marketingName": "Zenwalk GNU Linux",
     "manufacturer": "Unknown",
+    "version": {
+      "class": null,
+      "search": null
+    }
+  },
+  "nucleus os": {
+    "name": "Nucleus OS",
+    "marketingName": "Nucleus",
+    "manufacturer": "Accelerated Technology",
     "version": {
       "class": null,
       "search": null

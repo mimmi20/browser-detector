@@ -13,10 +13,8 @@ namespace BrowserDetectorTest\Factory\Device\Mobile;
 
 use BrowserDetector\Factory\Device\Mobile\NeofonieFactory;
 use BrowserDetector\Loader\DeviceLoader;
-use Cache\Adapter\Filesystem\FilesystemCachePool;
-use League\Flysystem\Adapter\Local;
-use League\Flysystem\Filesystem;
 use Stringy\Stringy;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -34,8 +32,7 @@ class NeofonieFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp()
     {
-        $adapter      = new Local(__DIR__ . '/../../../../cache/');
-        $cache        = new FilesystemCachePool(new Filesystem($adapter));
+        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../../cache/');
         $loader       = new DeviceLoader($cache);
         $this->object = new NeofonieFactory($loader);
     }
