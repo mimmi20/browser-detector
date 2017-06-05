@@ -27,11 +27,11 @@ class NintendoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'wiiu' => 'wiiu',
-        'wii'  => 'wii',
-        'dsi'  => 'dsi',
-        'nintendo ds'  => 'nintendo ds',
-        '3ds'  => '3ds',
+        'wiiu'        => 'wiiu',
+        'wii'         => 'wii',
+        'dsi'         => 'dsi',
+        'nintendo ds' => 'nintendo ds',
+        '3ds'         => '3ds',
     ];
 
     /**
