@@ -27,6 +27,8 @@ class HtcFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'htc 10'                  => 'htc 10',
+        'u11'                     => 'htc u11',
         ' x9 '                    => 'x9',
         'one me dual sim'         => 'htc one me dual sim',
         '0pcv1'                   => 'htc 0pcv1',
@@ -241,6 +243,7 @@ class HtcFactory implements Factory\FactoryInterface
         'dream'                   => 'dream',
         'd820mu'                  => 'd820mu',
         'd820us'                  => 'd820us',
+        'd820u'                   => 'htc d820u',
         'click'                   => 'click',
         'eris'                    => 'eris',
         ' c2'                     => 'c2',

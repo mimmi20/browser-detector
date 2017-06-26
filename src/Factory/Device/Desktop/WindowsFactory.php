@@ -24,6 +24,49 @@ use Stringy\Stringy;
 class WindowsFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $devices = [
+        'mddr'   => 'dell pc',
+        'mddc'   => 'dell pc',
+        'mdds'   => 'dell pc',
+        'mafs'   => 'fujitsu pc',
+        'maar'   => 'acer pc',
+        'masp'   => 'sony pc',
+        'masa'   => 'sony pc',
+        'mase'   => 'sony pc',
+        'np02'   => 'asus pc',
+        'np06'   => 'asus pc',
+        'np07'   => 'asus pc',
+        'np08'   => 'asus pc',
+        'np09'   => 'asus pc',
+        'maau'   => 'asus pc',
+        'asjb'   => 'asus pc',
+        'asu2'   => 'asus pc',
+        'masm'   => 'samsung pc',
+        'malc'   => 'lenovo pc',
+        'maln'   => 'lenovo pc',
+        'lcjb'   => 'lenovo pc',
+        'len2'   => 'lenovo pc',
+        'matm'   => 'toshiba pc',
+        'matb'   => 'toshiba pc',
+        'matp'   => 'toshiba pc',
+        'tnjb'   => 'toshiba pc',
+        'tajb'   => 'toshiba pc',
+        'mamd'   => 'medion pc',
+        'mami'   => 'msi pc',
+        'mam3'   => 'msi pc',
+        'magw'   => 'gateway pc',
+        'cpdtdf' => 'compaq pc',
+        'cpntdf' => 'compaq pc',
+        'cmntdf' => 'compaq pc',
+        'hpcmhp' => 'hp pc',
+        'hpntdf' => 'hp pc',
+        'hpdtdf' => 'hp pc',
+        'h9p'    => 'microsoft surface 3',
+    ];
+
+    /**
      * @var \BrowserDetector\Loader\LoaderInterface|null
      */
     private $loader = null;
@@ -46,6 +89,12 @@ class WindowsFactory implements Factory\FactoryInterface
      */
     public function detect($useragent, Stringy $s = null)
     {
+        foreach ($this->devices as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         return $this->loader->load('windows desktop', $useragent);
     }
 }

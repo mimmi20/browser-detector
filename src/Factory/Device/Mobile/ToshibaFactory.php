@@ -27,6 +27,7 @@ class ToshibaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'at10le-a'          => 'toshiba at10le-a',
         'toshiba/tg01'      => 'tg01',
         'toshiba-tg01'      => 'tg01',
         'folio_and_a'       => 'folio 100',

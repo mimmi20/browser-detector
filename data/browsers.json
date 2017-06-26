@@ -2895,6 +2895,20 @@
     },
     "engine": "unknown"
   },
+  "duckduck bot": {
+    "name": "DuckDuck Bot",
+    "manufacturer": "DuckDuckGo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DuckDuckBot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "duedil crawler": {
     "name": "DueDil Crawler",
     "manufacturer": "DueDil",
@@ -6174,7 +6188,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "com\\.linkedin"
+        "com\\.linkedin",
+        "LinkedInBot"
       ]
     },
     "engine": "unknown"
@@ -8450,8 +8465,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Version",
         "OPR",
+        "Version",
         "Opera ",
         "Opera Mobi",
         "Opera"
@@ -8661,7 +8676,7 @@
         "PaleMoon"
       ]
     },
-    "engine": "gecko"
+    "engine": null
   },
   "palmpixi": {
     "name": "PalmPixi",
@@ -14608,7 +14623,7 @@
     "engine": "unknown"
   },
   "yandeximages": {
-    "name": "YandexImages",
+    "name": "Yandex Image Search",
     "manufacturer": "Yandex",
     "pdfSupport": true,
     "rssSupport": false,
@@ -14951,5 +14966,75 @@
       ]
     },
     "engine": "webkit"
+  },
+  "oculus-browser": {
+    "name": "OculusBrowser",
+    "manufacturer": "Facebook",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OculusBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "surfbrowser": {
+    "name": "SurfBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SurfBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "avira scout": {
+    "name": "Avira Scout",
+    "manufacturer": "AviraOperations",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AviraScout"
+      ]
+    },
+    "engine": "blink"
+  },
+  "snapchat app": {
+    "name": "Snapchat",
+    "manufacturer": "Snap",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Snapchat"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "jakarta commons-httpclient": {
+    "name": "Jakarta Commons-HttpClient",
+    "manufacturer": "Apache",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Jakarta Commons\\-HttpClient"
+      ]
+    },
+    "engine": "unknown"
   }
 }

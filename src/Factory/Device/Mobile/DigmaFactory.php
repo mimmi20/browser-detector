@@ -27,14 +27,15 @@ class DigmaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ps1043mg' => 'ps1043mg',
-        'tt7026mw' => 'tt7026mw',
-        'idxd7'    => 'idxd7 3g',
-        'idxd4'    => 'idxd4 3g',
-        'idsd7'    => 'idsd7 3g',
-        'idnd7'    => 'idnd7',
-        'idjd7'    => 'idjd7',
-        'idrq10'   => 'idrq10 3g',
+        'vox s502 3g' => 'digma vox s502 3g',
+        'ps1043mg'    => 'ps1043mg',
+        'tt7026mw'    => 'tt7026mw',
+        'idxd7'       => 'idxd7 3g',
+        'idxd4'       => 'idxd4 3g',
+        'idsd7'       => 'idsd7 3g',
+        'idnd7'       => 'idnd7',
+        'idjd7'       => 'idjd7',
+        'idrq10'      => 'idrq10 3g',
     ];
 
     /**

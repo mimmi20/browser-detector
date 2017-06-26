@@ -27,6 +27,9 @@ class AlcatelFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'fiercexl'                 => 'alcatel fierce xl',
+        '4024d'                    => 'alcatel ot-4024d',
+        '4024x'                    => 'alcatel ot-4024x',
         '8008d'                    => 'ot-8008d',
         '8000d'                    => 'ot-8000d',
         '7049d'                    => 'ot-7049d',

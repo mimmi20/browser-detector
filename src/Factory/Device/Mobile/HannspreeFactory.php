@@ -27,7 +27,8 @@ class HannspreeFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'sn10t1' => 'hannspad sn10t1',
+        'sn10t1'  => 'hannspad sn10t1',
+        'hsg1303' => 'hannspree hsg1303',
     ];
 
     /**
