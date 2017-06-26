@@ -27,21 +27,22 @@ class TrekStorFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'surftab twin 11.6 lc1' => 'trekstor surftab twin 11.6 lc1',
-        'surftab duo w1 10.1'   => 'surftab duo w1 10.1',
-        'wp 4.7'                => 'winphone 4.7 hd',
-        'vt10416-2'             => 'vt10416-2',
-        'vt10416-1'             => 'vt10416-1',
-        'st701041'              => 'st701041',
-        'surftab_7.0'           => 'st701041',
-        'st10216-2'             => 'st10216-2',
-        'st80216'               => 'st80216',
-        'st80208'               => 'st80208',
-        'st70104'               => 'st70104',
-        'st10416-1'             => 'st10416-1',
-        'st10216-1'             => 'st10216-1',
-        'trekstor_liro_color'   => 'liro color',
-        'breeze 10.1 quad'      => 'surftab breeze 10.1 quad',
+        'surftab xintron i 10.1 3g' => 'trekstor surftab xintron i 10.1 3g',
+        'surftab twin 11.6 lc1'     => 'trekstor surftab twin 11.6 lc1',
+        'surftab duo w1 10.1'       => 'surftab duo w1 10.1',
+        'wp 4.7'                    => 'winphone 4.7 hd',
+        'vt10416-2'                 => 'vt10416-2',
+        'vt10416-1'                 => 'vt10416-1',
+        'st701041'                  => 'st701041',
+        'surftab_7.0'               => 'st701041',
+        'st10216-2'                 => 'st10216-2',
+        'st80216'                   => 'st80216',
+        'st80208'                   => 'st80208',
+        'st70104'                   => 'st70104',
+        'st10416-1'                 => 'st10416-1',
+        'st10216-1'                 => 'st10216-1',
+        'trekstor_liro_color'       => 'liro color',
+        'breeze 10.1 quad'          => 'surftab breeze 10.1 quad',
     ];
 
     /**

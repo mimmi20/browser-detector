@@ -27,9 +27,17 @@ class LenovoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'a2010-a'                 => 'lenovo a2010-a',
+        'tb2-x30l'                => 'lenovo tb2-x30l',
+        's8-50l'                  => 'lenovo s8-50l',
+        'a7-30f'                  => 'lenovo a7-30f',
+        'tb3-850m'                => 'lenovo tb3-850m',
         'tb3-710i'                => 'lenovo tb3-710i',
         's860'                    => 'lenovo s860',
+        'a806t'                   => 'lenovo a806t',
+        'a806'                    => 'lenovo a806',
         'a269i'                   => 'lenovo a269i',
+        'a2016a40'                => 'lenovo a2016a40',
         'a6020a40'                => 'lenovo a6020a40',
         'yt3-x50l'                => 'yt3-x50l',
         'tb2-x30f'                => 'tb2-x30f',
@@ -119,7 +127,6 @@ class LenovoFactory implements Factory\FactoryInterface
         'smarttab ii 10'          => 'smarttab ii 10',
         'smarttabii7'             => 'smarttab ii 7',
         'smart tab 4g'            => 'smart tab 4g',
-        'smart tab 4'             => 'smart tab 4',
         'smart tab 3g'            => 'smart tab 3g',
         'thinkpad'                => '1838',
         'at1010-t'                => 'at1010-t',

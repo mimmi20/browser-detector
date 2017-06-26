@@ -27,6 +27,7 @@ class MicromaxFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'a96'  => 'micromax a96',
         'e455' => 'micromax e455',
         'a177' => 'micromax a177',
         'a120' => 'a120',

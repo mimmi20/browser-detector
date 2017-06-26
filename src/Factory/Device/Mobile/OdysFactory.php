@@ -27,6 +27,7 @@ class OdysFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'mira'             => 'odys mira',
         'evolution12'      => 'odys evolution 12',
         'maven_10_plus'    => 'maven 10 plus',
         'xelio10extreme'   => 'xelio 10 extreme',

@@ -120,6 +120,9 @@ class BrowserFactory implements FactoryInterface
             'acheetahi'                   => 'cm browser',
             'puffin'                      => 'puffin',
             'stagefright'                 => 'stagefright',
+            'oculusbrowser'               => 'oculus-browser',
+            'surfbrowser'                 => 'surfbrowser',
+            'avirascout'                  => 'avira scout',
             'samsungbrowser'              => 'samsungbrowser',
             'silk'                        => 'silk',
             'coc_coc_browser'             => 'coc_coc_browser',
@@ -164,6 +167,7 @@ class BrowserFactory implements FactoryInterface
             'wkbrowser'       => 'wkbrowser',
             'mb2345browser'   => '2345 browser',
             'sohunews'        => 'sohunews app',
+            'miuibrowser'     => 'miui browser',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -322,6 +326,7 @@ class BrowserFactory implements FactoryInterface
             'schoolwires' => 'schoolwires app',
             'netnewswire' => 'netnewswire',
             'wire'        => 'wire app',
+            'qupzilla'    => 'qupzilla',
         ];
 
         foreach ($checkBeforeDragon as $search => $key) {
@@ -359,7 +364,6 @@ class BrowserFactory implements FactoryInterface
             'com.douban.group'            => 'douban app',
             'com.apple.Notes'             => 'apple notes app',
             'ovibrowser'                  => 'nokia proxy browser',
-            'miuibrowser'                 => 'miui browser',
             'ibrowser'                    => 'ibrowser',
             'onebrowser'                  => 'onebrowser',
             'baiduspider-image'           => 'baidu image search',
@@ -495,7 +499,6 @@ class BrowserFactory implements FactoryInterface
             'smtbot'                   => 'smtbot',
             'diigobrowser'             => 'diigo browser',
             'kontact'                  => 'kontact',
-            'qupzilla'                 => 'qupzilla',
             'fxios'                    => 'firefox for ios',
             'qutebrowser'              => 'qutebrowser',
             'otter'                    => 'otter',
@@ -509,6 +512,9 @@ class BrowserFactory implements FactoryInterface
             'fluid'                    => 'fluid',
             'safari'                   => 'safari',
             'windows phone ad client'  => 'windows phone ad client',
+            'ddg-android-'             => 'duckduck app',
+            'ddg-ios-'                 => 'duckduck app',
+            'snapchat'                 => 'snapchat app',
         ];
 
         foreach ($checkBeforeSafari as $search => $key) {
@@ -650,6 +656,8 @@ class BrowserFactory implements FactoryInterface
             'picmole'                             => 'picmole bot',
             'zollard'                             => 'zollard worm',
             'fhscan core'                         => 'fhscan core',
+            'com.linkedin'                        => 'linkedinbot',
+            'linkedinbot'                         => 'linkedinbot',
             'nbot'                                => 'nbot',
             'loadtimebot'                         => 'loadtimebot',
             'scrubby'                             => 'scrubby',
@@ -724,6 +732,7 @@ class BrowserFactory implements FactoryInterface
             'askpeterbot'                         => 'askpeterbot',
             'discoverybot'                        => 'discovery bot',
             'yandexbot'                           => 'yandexbot',
+            'yandeximages'                        => 'yandeximages',
         ];
 
         foreach ($checkBeforeMosbookmarks as $search => $key) {
@@ -860,6 +869,7 @@ class BrowserFactory implements FactoryInterface
             'dawinci antiplag spider'      => 'dawinci antiplag spider',
             'advbot'                       => 'advbot',
             'duckduckgo-favicons-bot'      => 'duckduck favicons bot',
+            'duckduckbot'                  => 'duckduck bot',
             'zyborg'                       => 'wisenut search engine crawler',
             'hypercrawl'                   => 'hypercrawl',
             'worldwebheritage'             => 'worldwebheritage.org bot',
@@ -995,6 +1005,7 @@ class BrowserFactory implements FactoryInterface
             'synhttpclient'                   => 'synhttpclient',
             'eventmachine httpclient'         => 'eventmachine httpclient',
             'livedoor'                        => 'livedoor',
+            'jakarta commons-httpclient'      => 'jakarta commons-httpclient',
             'httpclient'                      => 'httpclient',
             'implisensebot'                   => 'implisensebot',
             'buibui-bot'                      => 'buibui-bot',
@@ -1051,7 +1062,6 @@ class BrowserFactory implements FactoryInterface
             'inagist url resolver'            => 'inagist url resolver',
             'jeode'                           => 'jeode',
             'kraken'                          => 'krakenjs',
-            'com.linkedin'                    => 'linkedinbot',
             'mixbot'                          => 'mixbot',
             'busecurityproject'               => 'busecurityproject',
             'restify'                         => 'restify',
@@ -1153,7 +1163,6 @@ class BrowserFactory implements FactoryInterface
             'athena site analyzer'            => 'athena site analyzer',
             'exploratodo'                     => 'exploratodo bot',
             'whatsapp'                        => 'whatsapp',
-            'ddg-android-'                    => 'duckduck app',
             'webcorp'                         => 'webcorp',
             'auditmypc webmaster tool'        => 'auditmypc webmaster tool',
             'xmlsitemapgenerator'             => 'xmlsitemapgenerator',

@@ -27,6 +27,7 @@ class AllviewFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'p5_quad'  => 'allview p5 quad',
         'v1_viper' => 'allview v1 viper',
         'a4you'    => 'allview a4you',
     ];

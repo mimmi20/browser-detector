@@ -27,8 +27,11 @@ class XiaomiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'mi 5'           => 'xiaomitech mi 5',
+        'redmi note 4'   => 'xiaomitech redmi note 4',
         'mi note pro'    => 'xiaomitech mi note pro',
         'mi max'         => 'mi max',
+        'mi 4s'          => 'xiaomitech mi 4s',
         'mi 4w'          => 'mi 4w',
         'mi 4lte'        => 'mi 4 lte',
         'mi 3w'          => 'mi 3w',
@@ -50,6 +53,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'hm 1sw'         => 'hm 1sw',
         'hm 1sc'         => 'hm 1sc',
         'hm 1s'          => 'hm 1s',
+        '2014813'        => 'xiaomitech hongmi 2 4g',
     ];
 
     /**
