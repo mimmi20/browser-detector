@@ -539,6 +539,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'shv-e210k'       => 'shv-e210k',
         'shv-e210s'       => 'shv-e210s',
         'shv-e160s'       => 'shv-e160s',
+        'shw-m250k'       => 'samsung shw-m250k',
         'shw-m110s'       => 'shw-m110s',
         'shw-m180s'       => 'shw-m180s',
         'shw-m380s'       => 'shw-m380s',

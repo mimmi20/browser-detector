@@ -1116,6 +1116,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\VelocityMicroFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('allview', false)) {
+            return (new Mobile\AllViewFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('myphone', false)) {
             return (new Mobile\MyphoneFactory($this->loader))->detect($useragent, $s);
         }
@@ -1137,6 +1141,10 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if ($s->contains('dataaccessd', false)) {
+            return (new Mobile\AppleFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/iuc ?\(/i', $useragent)) {
             return (new Mobile\AppleFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1696,7 +1704,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\WopadFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['CTAB785R16-3G', 'PGN-506'], true)) {
+        if ($s->containsAny(['ctab785r16-3g', 'pgn-506', 'pkt-301'], false)) {
             return (new Mobile\CondorFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1736,7 +1744,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\O2Factory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['kkt20', 'iris x8s', 'pixel v2+'], false)) {
+        if ($s->containsAny(['kkt20', 'iris x8s', 'pixel v2+', 'iris700'], false)) {
             return (new Mobile\LavaFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1908,7 +1916,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LeagooFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['v1_viper', 'a4you', 'p5_quad'], false)) {
+        if ($s->containsAny(['v1_viper', 'a4you', 'p5_quad', 'x2_soul', 'ax4nano'], false)) {
             return (new Mobile\AllviewFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2030,6 +2038,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('z110_3g', false)) {
             return (new Mobile\XidoFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('mitab think', false)) {
+            return (new Mobile\WolderFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('pixel c', false)) {

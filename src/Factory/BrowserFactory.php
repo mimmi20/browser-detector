@@ -258,6 +258,7 @@ class BrowserFactory implements FactoryInterface
             'crystalsemanticsbot'                 => 'crystalsemanticsbot',
             '360se'                               => '360 secure browser',
             '360ee'                               => '360 speed browser',
+            'theworld'                               => 'theworld',
         ];
 
         foreach ($checkbeforeIe as $search => $key) {
@@ -300,6 +301,7 @@ class BrowserFactory implements FactoryInterface
             'rockmelt'                            => 'rockmelt',
             ' se '                                => 'sogou explorer',
             'archivebot'                          => 'archivebot',
+            'word'                      => 'word',
         ];
 
         foreach ($checkBeforeEdge as $search => $key) {
@@ -1002,6 +1004,7 @@ class BrowserFactory implements FactoryInterface
             'thumbsniper'                     => 'thumbsniper',
             'stq_bot'                         => 'searchteq bot',
             'snk screenshot bot'              => 'save n keep screenshot bot',
+            'okhttp'              => 'okhttp',
             'synhttpclient'                   => 'synhttpclient',
             'eventmachine httpclient'         => 'eventmachine httpclient',
             'livedoor'                        => 'livedoor',

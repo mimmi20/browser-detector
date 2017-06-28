@@ -36,6 +36,7 @@ class WikoFactory implements Factory\FactoryInterface
         'slide'         => 'wiko slide',
         'jerry'         => 'jerry',
         'bloom'         => 'bloom',
+        'rainbow 2'       => 'wiko rainbow 2',
         'rainbow'       => 'rainbow',
         'lenny'         => 'lenny',
         'getaway'       => 'getaway',

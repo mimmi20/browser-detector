@@ -29,6 +29,7 @@ class CondorFactory implements Factory\FactoryInterface
     private $devices = [
         'ctab785r16-3g' => 'ctab785r16-3g',
         'pgn-506'       => 'condor pgn-506',
+        'pkt-301'       => 'condor pkt-301',
     ];
 
     /**

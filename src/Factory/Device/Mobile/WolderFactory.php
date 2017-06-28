@@ -21,14 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AllWinnerFactory implements Factory\FactoryInterface
+class WolderFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'a10' => 'a10',
-        'allwinner-tablet' => 'allwinner tablet',
+        'mitab think' => 'wolder mitab think',
     ];
 
     /**
@@ -60,6 +59,6 @@ class AllWinnerFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general allwinner device', $useragent);
+        return $this->loader->load('general wolder device', $useragent);
     }
 }

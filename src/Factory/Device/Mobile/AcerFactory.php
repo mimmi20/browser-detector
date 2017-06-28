@@ -61,6 +61,7 @@ class AcerFactory implements Factory\FactoryInterface
         'a101c'        => 'a101c',
         'a101'         => 'a101',
         'a100'         => 'a100',
+        'a3-a20fhd'       => 'acer a3-a20fhd',
         'a3-a20'       => 'a3-a20',
         'a3-a11'       => 'a3-a11',
         'a3-a10'       => 'a3-a10',

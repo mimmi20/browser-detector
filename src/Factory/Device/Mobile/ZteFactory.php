@@ -27,6 +27,7 @@ class ZteFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'kis ii max'            => 'zte kis ii max',
         'nx512j'            => 'zte nx512j',
         'b2017g'            => 'zte b2017g',
         'n9132'             => 'zte n9132',
@@ -37,6 +38,7 @@ class ZteFactory implements Factory\FactoryInterface
         'blade a910'        => 'zte blade a910',
         'blade a452'        => 'zte blade a452',
         'blade vec'         => 'zte blade vec',
+        'blade s6 plus'         => 'zte blade s6 plus',
         'blade v6'          => 'blade v6',
         'blade l6'          => 'blade l6',
         'blade l5 plus'     => 'blade l5 plus',
