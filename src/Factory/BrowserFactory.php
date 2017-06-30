@@ -517,6 +517,7 @@ class BrowserFactory implements FactoryInterface
             'ddg-android-'             => 'duckduck app',
             'ddg-ios-'                 => 'duckduck app',
             'snapchat'                 => 'snapchat app',
+            'grindr'                 => 'grindr',
         ];
 
         foreach ($checkBeforeSafari as $search => $key) {

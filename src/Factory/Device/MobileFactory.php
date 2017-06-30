@@ -824,7 +824,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SmartfrenFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Z221', 'V788D', 'KIS PLUS', 'NX402', 'NX501', 'N918St', 'Beeline Pro', 'ATLAS_W', 'BASE Tab', 'X920', ' V9 ', 'W713', 'ATLAS W', 'OPENC', 'OPEN2'], true)) {
+        if ($s->containsAny(['Z221', 'V788D', 'KIS PLUS', 'NX402', 'NX501', 'N918St', 'Beeline Pro', 'ATLAS_W', 'BASE Tab', 'X920', ' V9 ', 'W713', 'ATLAS W', 'OPENC', 'OPEN2', 'NX549J'], true)) {
             return (new Mobile\ZteFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -988,7 +988,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\UtStarcomFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('FP1', true)) {
+        if ($s->containsAny(['FP1', 'FP2'], true)) {
             return (new Mobile\FairphoneFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1192,7 +1192,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LenovoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['smart tab 4', 'vf-1497'], false)) {
+        if ($s->containsAny(['smart tab 4', 'vf-1497', 'vfd 600'], false)) {
             return (new Mobile\VodafoneFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1576,7 +1576,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SamsungFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('le x820', false)) {
+        if ($s->containsAny(['le x820', 'le x620'], false)) {
             return (new Mobile\LeecoFactory($this->loader))->detect($useragent, $s);
         }
 
