@@ -168,6 +168,7 @@ class BrowserFactory implements FactoryInterface
             'mb2345browser'   => '2345 browser',
             'sohunews'        => 'sohunews app',
             'miuibrowser'     => 'miui browser',
+            'gsa'                  => 'google app',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -408,7 +409,6 @@ class BrowserFactory implements FactoryInterface
             'nokia'                => 'nokiabrowser',
             'twitter for i'        => 'twitter app',
             'twitterbot'           => 'twitterbot',
-            'gsa'                  => 'google app',
             'quicktime'            => 'quicktime',
             'qtcarbrowser'         => 'model s browser',
         ];

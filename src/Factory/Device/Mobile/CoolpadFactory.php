@@ -33,6 +33,7 @@ class CoolpadFactory implements Factory\FactoryInterface
         '8076d'        => 'coolpad 8076d',
         'e502'         => 'coolpad e502',
         'n930'         => 'n930',
+        'w713'              => 'coolpad w713',
     ];
 
     /**
