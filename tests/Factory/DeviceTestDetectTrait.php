@@ -78,16 +78,21 @@ trait DeviceTestDetectTrait
             'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
         );
 
-//        self::assertSame(
-//            $width,
-//            $result->getResolutionWidth(),
-//            'Expected pointing method to be "' . $width . '" (was "' . $result->getResolutionWidth() . '")'
-//        );
-//        self::assertSame(
-//            $height,
-//            $result->getResolutionHeight(),
-//            'Expected pointing method to be "' . $height . '" (was "' . $result->getResolutionHeight() . '")'
-//        );
+        if (null !== $width) {
+            self::assertSame(
+                $width,
+                $result->getResolutionWidth(),
+                'Expected display width to be "' . $width . '" (was "' . $result->getResolutionWidth() . '")'
+            );
+        }
+
+        if (null !== $height) {
+            self::assertSame(
+                $height,
+                $result->getResolutionHeight(),
+                'Expected display height to be "' . $height . '" (was "' . $result->getResolutionHeight() . '")'
+            );
+        }
         /*
         // @todo: add colors to result
         self::assertSame(

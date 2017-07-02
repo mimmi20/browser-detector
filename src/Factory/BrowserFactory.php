@@ -169,6 +169,7 @@ class BrowserFactory implements FactoryInterface
             'sohunews'        => 'sohunews app',
             'miuibrowser'     => 'miui browser',
             'gsa'                  => 'google app',
+            'alohabrowser'                  => 'aloha-browser',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -191,6 +192,9 @@ class BrowserFactory implements FactoryInterface
             'seamonkey'  => 'seamonkey',
             'jobboerse'  => 'jobboerse bot',
             'navigator'  => 'netscape navigator',
+            'tob'                                 => 't-online browser',
+            't-online browser'                    => 't-online browser',
+            'to-browser'                                 => 't-online browser',
         ];
 
         foreach ($checkBeforeAnonymus as $search => $key) {
@@ -253,8 +257,6 @@ class BrowserFactory implements FactoryInterface
             'smartsite httpclient'                => 'smartsite httpclient',
             'gomezagent'                          => 'gomez site monitor',
             'orangebot'                           => 'orangebot',
-            'tob'                                 => 't-online browser',
-            't-online browser'                    => 't-online browser',
             'appengine-google'                    => 'google app engine',
             'crystalsemanticsbot'                 => 'crystalsemanticsbot',
             '360se'                               => '360 secure browser',

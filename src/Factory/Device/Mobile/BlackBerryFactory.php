@@ -27,6 +27,8 @@ class BlackBerryFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'bbb100-2'   => 'blackberry bbb100-2',
+        'bba100-2'   => 'blackberry bba100-2',
         'stv100-4'   => 'blackberry stv100-4',
         'bb10; kbd'   => 'kbd',
         'bb10; touch' => 'z10',

@@ -27,6 +27,10 @@ class TclFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        '5095k'  => 'tcl 5095k',
+        '5095b'  => 'tcl 5095b',
+        '5095i'  => 'tcl 5095i',
+        '5095y'  => 'tcl 5095y',
         's700'  => 'tcl s700',
         'j620'  => 'tcl j620',
         'm2u'   => 'm2u',

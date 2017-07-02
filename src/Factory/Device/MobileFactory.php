@@ -252,7 +252,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\BarnesNobleFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['playbook', 'rim tablet', 'bb10', 'stv100'], false)) {
+        if ($s->containsAny(['playbook', 'rim tablet', 'bb10', 'stv100', 'bba100-2', 'bbb100-2'], false)) {
             return (new Mobile\BlackBerryFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -300,7 +300,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DellFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['denver', 'tad-'], false)) {
+        if ($s->containsAny(['denver', 'tad-', 'taq-'], false)) {
             return (new Mobile\DenverFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1052,7 +1052,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ExcelvanFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE', 'LENNY', 'GETAWAY', 'RAINBOW', 'WAX', 'KITE', 'BARRY', 'HIGHWAY', 'OZZY'], true)) {
+        if ($s->containsAny(['le x820', 'le x620', 'lex720', 'le x829'], false)) {
+            return (new Mobile\LeecoFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE', 'LENNY', 'GETAWAY', 'RAINBOW', 'WAX', 'KITE', 'BARRY', 'HIGHWAY', 'OZZY', 'RIDGE FAB 4G'], true)) {
             return (new Mobile\WikoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1404,7 +1408,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AllWinnerFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['P1032X', 'P1050X', 'K910L', ' K1 ', ' A1', ' A65 ', ' A60 ', 'YOGA Tablet'], true)) {
+        if ($s->containsAny(['P1032X', 'P1050X', 'K910L', ' K1 ', ' A1', ' A65 ', ' A60 ', 'YOGA Tablet', 'Tab2A7-20F'], true)) {
             return (new Mobile\LenovoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1516,7 +1520,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/[4-7]0[2-4]\d(A|D|N|X|Y)/', $useragent)) {
+        if (preg_match('/[4-8]0[2-5]\d(A|D|N|X|Y)/', $useragent)) {
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1570,10 +1574,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('N8000D', true)) {
             return (new Mobile\SamsungFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['le x820', 'le x620'], false)) {
-            return (new Mobile\LeecoFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/N\d{4}/', $useragent)) {
@@ -1648,7 +1648,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NextwayFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains(' M8 ', true)) {
+        if ($s->contains(' m8 ', false)) {
             return (new Mobile\AmlogicFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1680,7 +1680,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\TurboPadFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['HW-W718', 'W717'], true)) {
+        if ($s->containsAny(['HW-W718', 'W717', 'HM-N501-FL'], true)) {
             return (new Mobile\HaierFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1760,7 +1760,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['h30-u10', 'kiw-l21', 'chc-u03', 'che2-l11', 'ath-al00', 'mha-l29', 'cam-l21', 'frd-al10', 'nem-l51', 'pra-l', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', 'h60-l', ' p6 ', 'vtr-'], false)) {
+        if ($s->containsAny(['h30-u10', 'kiw-l21', 'chc-u03', 'che2-l11', 'ath-al00', 'mha-l29', 'cam-l21', 'frd-al10', 'nem-l51', 'pra-l', 'plk-l01', 'lon-l29', 'duk-l09', 'ale-', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', 'h60-l', ' p6 ', 'vtr-'], false)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1856,7 +1856,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\IonikFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['tpc-pa10.1m', 'tpc-736'], false)) {
+        if ($s->containsAny(['tpc-pa10.1m', 'tpc-736', 'tpc-xte7d'], false)) {
             return (new Mobile\JaytechFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1904,11 +1904,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LifewareFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('vf685', false)) {
+        if ($s->containsAny(['vf685', '5095b', '5095i', '5095k', '5095y'], false)) {
             return (new Mobile\TclFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['lead 2', 't1_plus'], false)) {
+        if ($s->containsAny(['lead 2', 't1_plus', 'elite 4'], false)) {
             return (new Mobile\LeagooFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2036,6 +2036,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\XidoFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('tb1016', false)) {
+            return (new Mobile\AcmeFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('mitab think', false)) {
             return (new Mobile\WolderFactory($this->loader))->detect($useragent, $s);
         }
@@ -2058,6 +2062,18 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('up580', false)) {
             return (new Mobile\UhappyFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('swift 2', false)) {
+            return (new Mobile\WileyfoxFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('m9c max', false)) {
+            return (new Mobile\BqeelFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('ilium l820', false)) {
+            return (new Mobile\LanixFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {

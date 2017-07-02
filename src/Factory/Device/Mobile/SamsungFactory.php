@@ -27,6 +27,9 @@ class SamsungFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'sm-g610f'        => 'samsung sm-g610f',
+        'sm-g610m'        => 'samsung sm-g610m',
+        'sm-g610y'        => 'samsung sm-g610y',
         'sm-g390f'        => 'samsung sm-g390f',
         'sm-g955fd'       => 'samsung sm-g955fd',
         'sm-g955f'        => 'samsung sm-g955f',
@@ -119,6 +122,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-j5007'        => 'sm-j5007',
         'sm-j500'         => 'sm-j500',
         'galaxy j5'       => 'sm-j500',
+        'sm-j320w8'       => 'samsung sm-j320w8',
         'sm-j320yz'       => 'samsung sm-j320yz',
         'sm-j320p'        => 'samsung sm-j320p',
         'sm-j320g'        => 'sm-j320g',

@@ -15062,5 +15062,19 @@
       "search": null
     },
     "engine": "trident"
+  },
+  "aloha-browser": {
+    "name": "Aloha Browser",
+    "manufacturer": "Aloha Mobile",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AlohaBrowser"
+      ]
+    },
+    "engine": "blink"
   }
 }

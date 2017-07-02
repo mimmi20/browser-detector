@@ -27,6 +27,8 @@ class HtcFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'm9u'                  => 'htc m9u',
+        'm9w'                  => 'htc m9w',
         'htc 10'                  => 'htc 10',
         'u11'                     => 'htc u11',
         ' x9 '                    => 'x9',
