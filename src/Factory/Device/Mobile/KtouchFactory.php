@@ -27,6 +27,7 @@ class KtouchFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'e619'  => 'k-touch e619',
         't96'  => 'k-touch t96',
         'a930' => 'tianyu a930',
     ];

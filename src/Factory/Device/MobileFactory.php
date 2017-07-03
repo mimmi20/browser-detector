@@ -912,6 +912,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\KeenHighFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->containsAny(['ktouch', 'k-touch'], false)) {
+            return (new Mobile\KtouchFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->containsAny(['g100w', 'stream-s110'], false)) {
             return (new Mobile\AcerFactory($this->loader))->detect($useragent, $s);
         }
@@ -1088,10 +1092,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AnkaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['ktouch', 'k-touch'], false)) {
-            return (new Mobile\KtouchFactory($this->loader))->detect($useragent, $s);
-        }
-
         if ($s->contains('lemon', false)) {
             return (new Mobile\LemonFactory($this->loader))->detect($useragent, $s);
         }
@@ -1252,7 +1252,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PrestigioFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['PJ83100', '831C', 'Evo 3D GSM', 'Eris 2.1', '0PCV1'], true)) {
+        if ($s->containsAny(['PJ83100', '831C', 'Evo 3D GSM', 'Eris 2.1', '0PCV1', 'MDA'], true)) {
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1744,7 +1744,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LavaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['MDA', 'Pulse', 'myTouch4G', 'Ameo'], true)) {
+        if ($s->containsAny(['Pulse', 'myTouch4G', 'Ameo'], true)) {
             return (new Mobile\TmobileFactory($this->loader))->detect($useragent, $s);
         }
 

@@ -215,6 +215,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'p8max'                           => 'p8max',
         '4afrika'                         => '4afrika',
         'g2800'                           => 'huawei g2800',
+        't8600'                           => 'huawei t8600',
         'm750'                            => 'huawei m750',
     ];
 

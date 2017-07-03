@@ -102,6 +102,7 @@ class MotorolaFactory implements Factory\FactoryInterface
         'mz615'           => 'mz615',
         'mz616'           => 'mz616',
         'xoom 2'          => 'mz616',
+        'mz606'           => 'motorola mz606',
         'mz604'           => 'mz604',
         'mz601'           => 'mz601',
         'xoom'            => 'xoom',

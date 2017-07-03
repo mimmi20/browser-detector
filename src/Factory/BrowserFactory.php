@@ -376,6 +376,7 @@ class BrowserFactory implements FactoryInterface
             'http://www.baidu.com/search' => 'baidu mobile search',
             'yjapp'                       => 'yahoo! app',
             'yjtop'                       => 'yahoo! app',
+            'ninesky'                       => 'ninesky-browser',
         ];
 
         foreach ($checkBeforeAndroidWebkit as $search => $key) {

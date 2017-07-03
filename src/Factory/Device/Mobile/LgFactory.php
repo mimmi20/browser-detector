@@ -199,6 +199,9 @@ class LgFactory implements Factory\FactoryInterface
         'lg272'         => 'lg 272',
         'vn271'         => 'lg vn271',
         'ln240'         => 'lg ln240',
+        'kt770'         => 'lg kt770',
+        'kt615'         => 'lg kt615',
+        'ks10'         => 'lg ks10',
     ];
 
     /**

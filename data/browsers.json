@@ -15076,5 +15076,19 @@
       ]
     },
     "engine": "blink"
+  },
+  "ninesky-browser": {
+    "name": "Ninesky Browser",
+    "manufacturer": "NineSky",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Ninesky\\-android\\-mobile"
+      ]
+    },
+    "engine": "webkit"
   }
 }

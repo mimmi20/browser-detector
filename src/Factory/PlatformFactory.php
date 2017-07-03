@@ -133,6 +133,10 @@ class PlatformFactory implements FactoryInterface
             return $this->loader->load('java', $useragent);
         }
 
+        if ($s->contains('aliyunos', false)) {
+            return $this->loader->load('yun os', $useragent);
+        }
+
         if ((new Helper\AndroidOs($useragent))->isAndroid()) {
             return $this->loader->load('android', $useragent);
         }
