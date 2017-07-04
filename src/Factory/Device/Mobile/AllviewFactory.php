@@ -32,7 +32,7 @@ class AllviewFactory implements Factory\FactoryInterface
         'p5_quad'  => 'allview p5 quad',
         'v1_viper' => 'allview v1 viper',
         'a4you'    => 'allview a4you',
-        'ax4nano'    => 'allview ax4nano',
+        'ax4nano'  => 'allview ax4nano',
     ];
 
     /**

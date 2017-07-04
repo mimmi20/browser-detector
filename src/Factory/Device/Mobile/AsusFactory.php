@@ -28,8 +28,8 @@ class AsusFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'k018'              => 'asus k018',
-        'x00dd'              => 'asus x00dd',
-        'z016d'              => 'asus z016d',
+        'x00dd'             => 'asus x00dd',
+        'z016d'             => 'asus z016d',
         'p024'              => 'asus p024',
         'p00c'              => 'asus p00c',
         'k01h'              => 'asus k01h',

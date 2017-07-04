@@ -14,7 +14,6 @@ namespace BrowserDetectorTest\Factory\Device\Tv;
 use BrowserDetector\Factory\Device\Tv\SonyFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
-use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**

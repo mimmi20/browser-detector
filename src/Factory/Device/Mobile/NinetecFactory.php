@@ -28,7 +28,7 @@ class NinetecFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'nt. p10g2' => 'ninetec nt.p10g2',
-        'nt.i10g2' => 'ninetec nt.i10g2',
+        'nt.i10g2'  => 'ninetec nt.i10g2',
     ];
 
     /**

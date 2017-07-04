@@ -21,17 +21,17 @@ trait DeviceTestDetectTrait
     /**
      * @dataProvider providerDetect
      *
-     * @param string $agent
-     * @param string $deviceName
-     * @param string $marketingName
-     * @param string $manufacturer
-     * @param string $brand
-     * @param string $deviceType
-     * @param bool   $dualOrientation
+     * @param string      $agent
+     * @param string      $deviceName
+     * @param string      $marketingName
+     * @param string      $manufacturer
+     * @param string      $brand
+     * @param string      $deviceType
+     * @param bool        $dualOrientation
      * @param string|null $pointingMethod
-     * @param int|null $width
-     * @param int|null $height
-     * @param int|null $colors
+     * @param int|null    $width
+     * @param int|null    $height
+     * @param int|null    $colors
      */
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod, $width, $height, $colors)
     {

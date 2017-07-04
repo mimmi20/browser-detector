@@ -168,8 +168,8 @@ class BrowserFactory implements FactoryInterface
             'mb2345browser'   => '2345 browser',
             'sohunews'        => 'sohunews app',
             'miuibrowser'     => 'miui browser',
-            'gsa'                  => 'google app',
-            'alohabrowser'                  => 'aloha-browser',
+            'gsa'             => 'google app',
+            'alohabrowser'    => 'aloha-browser',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -187,14 +187,14 @@ class BrowserFactory implements FactoryInterface
         }
 
         $checkBeforeAnonymus = [
-            'cybeye'     => 'cybeye',
-            'rebelmouse' => 'rebelmouse',
-            'seamonkey'  => 'seamonkey',
-            'jobboerse'  => 'jobboerse bot',
-            'navigator'  => 'netscape navigator',
-            'tob'                                 => 't-online browser',
-            't-online browser'                    => 't-online browser',
-            'to-browser'                                 => 't-online browser',
+            'cybeye'           => 'cybeye',
+            'rebelmouse'       => 'rebelmouse',
+            'seamonkey'        => 'seamonkey',
+            'jobboerse'        => 'jobboerse bot',
+            'navigator'        => 'netscape navigator',
+            'tob'              => 't-online browser',
+            't-online browser' => 't-online browser',
+            'to-browser'       => 't-online browser',
         ];
 
         foreach ($checkBeforeAnonymus as $search => $key) {
@@ -261,7 +261,7 @@ class BrowserFactory implements FactoryInterface
             'crystalsemanticsbot'                 => 'crystalsemanticsbot',
             '360se'                               => '360 secure browser',
             '360ee'                               => '360 speed browser',
-            'theworld'                               => 'theworld',
+            'theworld'                            => 'theworld',
         ];
 
         foreach ($checkbeforeIe as $search => $key) {
@@ -304,7 +304,7 @@ class BrowserFactory implements FactoryInterface
             'rockmelt'                            => 'rockmelt',
             ' se '                                => 'sogou explorer',
             'archivebot'                          => 'archivebot',
-            'word'                      => 'word',
+            'word'                                => 'word',
         ];
 
         foreach ($checkBeforeEdge as $search => $key) {
@@ -376,7 +376,7 @@ class BrowserFactory implements FactoryInterface
             'http://www.baidu.com/search' => 'baidu mobile search',
             'yjapp'                       => 'yahoo! app',
             'yjtop'                       => 'yahoo! app',
-            'ninesky'                       => 'ninesky-browser',
+            'ninesky'                     => 'ninesky-browser',
         ];
 
         foreach ($checkBeforeAndroidWebkit as $search => $key) {
@@ -520,7 +520,7 @@ class BrowserFactory implements FactoryInterface
             'ddg-android-'             => 'duckduck app',
             'ddg-ios-'                 => 'duckduck app',
             'snapchat'                 => 'snapchat app',
-            'grindr'                 => 'grindr',
+            'grindr'                   => 'grindr',
         ];
 
         foreach ($checkBeforeSafari as $search => $key) {
@@ -1008,7 +1008,7 @@ class BrowserFactory implements FactoryInterface
             'thumbsniper'                     => 'thumbsniper',
             'stq_bot'                         => 'searchteq bot',
             'snk screenshot bot'              => 'save n keep screenshot bot',
-            'okhttp'              => 'okhttp',
+            'okhttp'                          => 'okhttp',
             'synhttpclient'                   => 'synhttpclient',
             'eventmachine httpclient'         => 'eventmachine httpclient',
             'livedoor'                        => 'livedoor',

@@ -28,9 +28,9 @@ class DenverFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'taq-10223g' => 'denver taq-10223g',
-        'taq-10153' => 'denver taq-10153',
-        'tad-70112' => 'tad-70112',
-        'tad-10023' => 'tad-10023',
+        'taq-10153'  => 'denver taq-10153',
+        'tad-70112'  => 'tad-70112',
+        'tad-10023'  => 'tad-10023',
     ];
 
     /**

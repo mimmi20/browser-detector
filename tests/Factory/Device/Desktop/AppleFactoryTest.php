@@ -14,7 +14,6 @@ namespace BrowserDetectorTest\Factory\Device\Desktop;
 use BrowserDetector\Factory\Device\Desktop\AppleFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
-use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**

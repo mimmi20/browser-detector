@@ -28,8 +28,8 @@ class IruluFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'x11' => 'irulu x11',
-        'v3' => 'irulu v3',
-        'u1' => 'u1',
+        'v3'  => 'irulu v3',
+        'u1'  => 'u1',
     ];
 
     /**
