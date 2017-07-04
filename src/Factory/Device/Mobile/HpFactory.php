@@ -27,17 +27,18 @@ class HpFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        '7 plus'        => 'hp slate 7 plus',
-        'ipaqhw6900'    => 'ipaq 6900',
-        'slate 17'      => 'slate 17',
-        'slate 10 hd'   => 'slate 10',
-        'touchpad'      => 'touchpad',
-        'cm_tenderloin' => 'touchpad',
-        'palm-d050'     => 'tx',
-        'pre/'          => 'pre',
-        'pixi/'         => 'pixi',
-        'blazer'        => 'blazer',
-        'p160u'         => 'p160u',
+        'slatebook 10 x2 pc' => 'hp slatebook 10 x2 pc',
+        '7 plus'             => 'hp slate 7 plus',
+        'ipaqhw6900'         => 'ipaq 6900',
+        'slate 17'           => 'slate 17',
+        'slate 10 hd'        => 'slate 10',
+        'touchpad'           => 'touchpad',
+        'cm_tenderloin'      => 'touchpad',
+        'palm-d050'          => 'tx',
+        'pre/'               => 'pre',
+        'pixi/'              => 'pixi',
+        'blazer'             => 'blazer',
+        'p160u'              => 'p160u',
     ];
 
     /**

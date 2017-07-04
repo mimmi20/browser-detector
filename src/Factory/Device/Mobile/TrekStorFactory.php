@@ -27,6 +27,7 @@ class TrekStorFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'surftab theatre 13.3'          => 'trekstor surftab theatre 13.3',
         'surftab breeze 7.0 quad'       => 'trekstor surftab breeze 7.0 quad',
         'surftab breeze 10.1 quad plus' => 'trekstor surftab breeze 10.1 quad plus',
         'surftab xintron i 10.1 3g'     => 'trekstor surftab xintron i 10.1 3g',

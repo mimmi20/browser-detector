@@ -27,7 +27,9 @@ class PhicommFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'fws610_eu' => 'fws610',
+        'clue c230' => 'phicomm clue c230',
+        'clue 2s'   => 'phicomm clue 2s',
+        'fws610_eu' => 'phicomm fws610',
     ];
 
     /**

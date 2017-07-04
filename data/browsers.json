@@ -15090,5 +15090,47 @@
       ]
     },
     "engine": "webkit"
+  },
+  "lolifox": {
+    "name": "lolifox",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "lolifox"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "vivo-browser": {
+    "name": "VivoBrowser",
+    "manufacturer": "Vivo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "VivoBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "bingweb": {
+    "name": "BingWeb App",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BingWeb"
+      ]
+    },
+    "engine": "blink"
   }
 }

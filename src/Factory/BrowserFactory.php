@@ -170,6 +170,8 @@ class BrowserFactory implements FactoryInterface
             'miuibrowser'     => 'miui browser',
             'gsa'             => 'google app',
             'alohabrowser'    => 'aloha-browser',
+            'vivobrowser'     => 'vivo-browser',
+            'bingweb'         => 'bingweb',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -587,6 +589,7 @@ class BrowserFactory implements FactoryInterface
             'googleimageproxy'                              => 'google image proxy',
             'dalvik'                                        => 'dalvik',
             'bb_work_connect'                               => 'bb work connect',
+            'lolifox'                                       => 'lolifox',
             'firefox'                                       => 'firefox',
             'minefield'                                     => 'firefox',
             'shiretoko'                                     => 'firefox',

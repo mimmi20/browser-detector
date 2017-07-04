@@ -660,6 +660,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DoogeeFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->containsAny(['Touchlet', 'X7G', 'X10.Dual'], true)) {
+            return (new Mobile\PearlFactory($this->loader))->detect($useragent, $s);
+        }
+
         if (preg_match('/(C|D|E|F|G)\d{4}/', $useragent)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
@@ -1117,7 +1121,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if ($s->contains('allview', false)) {
-            return (new Mobile\AllViewFactory($this->loader))->detect($useragent, $s);
+            return (new Mobile\AllviewFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('myphone', false)) {
@@ -1366,10 +1370,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if (preg_match('/ARCHM\d{3}/', $useragent)) {
             return (new Mobile\ArnovaFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['Touchlet', 'X7G', 'X10.Dual'], true)) {
-            return (new Mobile\PearlFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->containsAny(['POV', 'TAB-PROTAB'], true)) {
