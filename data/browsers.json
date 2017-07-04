@@ -15036,5 +15036,59 @@
       ]
     },
     "engine": "unknown"
+  },
+  "okhttp": {
+    "name": "okhttp",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "okhttp"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "theworld": {
+    "name": "TheWorld Browser",
+    "manufacturer": "Phoenix Studio",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "trident"
+  },
+  "aloha-browser": {
+    "name": "Aloha Browser",
+    "manufacturer": "Aloha Mobile",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AlohaBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "ninesky-browser": {
+    "name": "Ninesky Browser",
+    "manufacturer": "NineSky",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Ninesky\\-android\\-mobile"
+      ]
+    },
+    "engine": "webkit"
   }
 }

@@ -46,7 +46,11 @@ class Ios
             return false;
         }
 
-        if ($s->containsAny(['like mac os x', 'ipad', 'iphone', 'ipod', 'cpu os', 'cpu ios', 'iuc(u;ios', 'ios;'], false)) {
+        if ($s->containsAny(['like mac os x', 'ipad', 'iphone', 'ipod', 'cpu os', 'cpu ios', 'ios;'], false)) {
+            return true;
+        }
+
+        if (preg_match('/iuc ?\(/i', $this->useragent)) {
             return true;
         }
 

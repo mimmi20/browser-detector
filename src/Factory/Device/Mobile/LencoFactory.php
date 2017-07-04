@@ -27,6 +27,7 @@ class LencoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'tab-925'    => 'lenco tab 925',
         'cooltab-70' => 'cooltab-70',
         'lencm900hz' => 'cm900hz',
     ];

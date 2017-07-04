@@ -27,6 +27,7 @@ class FairphoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'fp2'  => 'fairphone fp2',
         'fp1u' => 'fp1u',
         'fp1'  => 'fp1',
     ];

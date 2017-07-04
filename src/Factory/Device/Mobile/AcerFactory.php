@@ -27,6 +27,7 @@ class AcerFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'a1-841'       => 'acer a1-841',
         ' t08 '        => 'acer t08',
         'a1-840fhd'    => 'acer a1-840fhd',
         'a1-840'       => 'acer a1-840',
@@ -61,6 +62,7 @@ class AcerFactory implements Factory\FactoryInterface
         'a101c'        => 'a101c',
         'a101'         => 'a101',
         'a100'         => 'a100',
+        'a3-a20fhd'    => 'acer a3-a20fhd',
         'a3-a20'       => 'a3-a20',
         'a3-a11'       => 'a3-a11',
         'a3-a10'       => 'a3-a10',

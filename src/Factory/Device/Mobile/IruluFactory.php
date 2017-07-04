@@ -27,8 +27,9 @@ class IruluFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'v3' => 'irulu v3',
-        'u1' => 'u1',
+        'x11' => 'irulu x11',
+        'v3'  => 'irulu v3',
+        'u1'  => 'u1',
     ];
 
     /**

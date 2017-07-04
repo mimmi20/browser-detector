@@ -27,6 +27,8 @@ class HtcFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'm9u'                     => 'htc m9u',
+        'm9w'                     => 'htc m9w',
         'htc 10'                  => 'htc 10',
         'u11'                     => 'htc u11',
         ' x9 '                    => 'x9',
@@ -196,8 +198,7 @@ class HtcFactory implements Factory\FactoryInterface
         ' a315c '                 => 'a315c',
         'a510a'                   => 'a510a',
         'wildfire_a3333'          => 'a3333',
-        'wildfire s a510e'        => 'a510e',
-        'wildfires_a510e'         => 'a510e',
+        'a510e'                   => 'a510e',
         'adr6230'                 => 'adr6230',
         'wildfire s'              => 'htc a510',
         'wildfires'               => 'htc a510',
@@ -272,6 +273,21 @@ class HtcFactory implements Factory\FactoryInterface
         'htc d516d'               => 'desire 516',
         'vpa_touch'               => 'vpa touch',
         'htc_vpacompactiv'        => 'vpa compact iv',
+        'mda_vario_v'             => 'mda vario v',
+        'mda vario/3'             => 'mda vario iii',
+        'mda vario/2'             => 'mda vario ii',
+        'mda compact/3'           => 'mda compact iii',
+        'mda_compact_v'           => 'mda compact v',
+        'mda compact'             => 'mda compact',
+        'v3600'                   => 'htc v3600',
+        'v1510'                   => 'htc v1510',
+        's620'                    => 'htc s620',
+        'p3350'                   => 'htc p3350',
+        'htc-8500'                => 'htc 8500',
+        'x7500'                   => 'htc x7500',
+        'p6300'                   => 'htc p6300',
+        'p3300'                   => 'htc p3300',
+        'mteor'                   => 'htc mteor',
     ];
 
     /**

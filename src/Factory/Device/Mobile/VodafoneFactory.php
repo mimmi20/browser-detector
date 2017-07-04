@@ -27,6 +27,7 @@ class VodafoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'vfd 600'     => 'vodafone vfd 600',
         'vf-1497'     => 'vodafone vf-1497',
         'smart tab 4' => 'vodafone smart tab 4',
     ];

@@ -1,5 +1,6 @@
 language: php
 sudo: false
+dist: trusty
 
 php:
   - 7.0
@@ -49,6 +50,20 @@ script:
   - if [[ $COVERAGE == yes ]]; then vendor/bin/phpunit --colors=auto --coverage-clover=clover.xml; else vendor/bin/phpunit --colors=auto --no-coverage; fi
   - if [[ $EXECUTE_CS_CHECK == yes ]]; then php -n -d memory_limit=768M vendor/bin/phpcs; fi
   - if [[ $EXECUTE_CS_CHECK == yes ]]; then php -n -d memory_limit=768M vendor/bin/php-cs-fixer fix --dry-run -vv; fi
+#  - vendor/bin/phpunit --colors=auto --no-coverage
+
+#jobs:
+#  include:
+#    - stage: test with coverage
+#      php: 7.1
+#      env: COVERAGE=yes
+#      script: vendor/bin/phpunit --colors=auto --coverage-clover=clover.xml
+#    - stage: check coding style
+#      php: 7.1
+#      script: php -n -d memory_limit=768M vendor/bin/phpcs
+#    - stage: check coding style
+#      php: 7.1
+#      script: php -n -d memory_limit=768M vendor/bin/php-cs-fixer fix --dry-run -vv
 
 after_success:
   - if [[ $COVERAGE == yes ]]; then wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar && php -n coveralls.phar --verbose --coverage_clover=clover.xml; fi

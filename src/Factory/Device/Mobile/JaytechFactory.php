@@ -27,6 +27,7 @@ class JaytechFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'tpc-xte7d'   => 'jaytech tpc-xte7d',
         'tpc-pa10.1m' => 'pa10.1m',
         'tpc-736'     => 'jaytech tpc-736',
     ];

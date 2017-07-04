@@ -27,6 +27,7 @@ class CubeFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'i15-tcl'   => 'cube i15-tcl',
         'u55gt'     => 'u55gt',
         'u51gt'     => 'u51gt',
         'u30gt 2'   => 'u30gt2',

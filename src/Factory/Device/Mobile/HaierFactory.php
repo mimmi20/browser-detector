@@ -27,8 +27,9 @@ class HaierFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'w718' => 'w718',
-        'w717' => 'haier w717',
+        'hm-n501-fl' => 'haier hm-n501-fl',
+        'w718'       => 'w718',
+        'w717'       => 'haier w717',
     ];
 
     /**

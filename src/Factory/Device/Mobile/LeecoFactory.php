@@ -27,7 +27,10 @@ class LeecoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'le x829' => 'leeco le x829',
         'le x820' => 'leeco le x820',
+        'lex720'  => 'leeco le x720',
+        'le x620' => 'leeco le x620',
     ];
 
     /**

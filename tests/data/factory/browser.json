@@ -7614,5 +7614,45 @@
     "manufacturer": "Yandex LLC",
     "bits": 32,
     "type": "Bot/Crawler"
+  },
+  {
+    "ua": "okhttp/3.3.0",
+    "browser": "okhttp",
+    "version": "3.3.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; SV1; TheWorld)",
+    "browser": "TheWorld Browser",
+    "version": "0.0.0",
+    "manufacturer": "Phoenix Studio",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; U; CPU iPhone 4_2_1 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Mobile/7E18 Grindr/1.8.5 (iPhone1,2/4.2.1)",
+    "browser": "Grindr",
+    "version": "1.8.5",
+    "manufacturer":null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 7.0; LGE VS995 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Mobile Safari/537.36 AlohaBrowser/0.8.7.1",
+    "browser": "Aloha Browser",
+    "version": "0.8.7.1",
+    "manufacturer": "Aloha Mobile Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android v1.02_14.13-M_EN-2011.01.13; en_us) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Ninesky-android-mobile/2.1.0 Safari/533.1",
+    "browser": "Ninesky Browser",
+    "version": "2.1.0",
+    "manufacturer": "Ninesky Technology And Industrial Private Limited",
+    "bits": 32,
+    "type": "Browser"
   }
 ]

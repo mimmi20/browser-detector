@@ -33,12 +33,6 @@ class TmobileFactory implements Factory\FactoryInterface
         't-mobile_g2_touch' => 'g2 touch',
         't-mobile g2'       => 'g2 touch',
         't-mobile g1'       => 'g1',
-        'mda_vario_v'       => 'mda vario v',
-        'mda vario/3'       => 'mda vario iii',
-        'mda vario/2'       => 'mda vario ii',
-        'mda_compact_v'     => 'mda compact v',
-        'mda compact/3'     => 'mda compact iii',
-        'mda compact'       => 'mda compact',
         'ameo'              => 'ameo',
     ];
 

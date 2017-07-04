@@ -1,0 +1,28 @@
+[
+  {
+    "ua": "this is a fake ua to trigger the fallback",
+    "codeName": "general ACME Device",
+    "marketingName": "general ACME Device",
+    "manufacturer": "ACME Grupe",
+    "brand": "ACME",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; TB1016 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36",
+    "codeName": "TB1016",
+    "marketingName": "TB1016",
+    "manufacturer": "ACME Grupe",
+    "brand": "ACME",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1024,
+    "height": 600,
+    "colors": null
+  }
+]
