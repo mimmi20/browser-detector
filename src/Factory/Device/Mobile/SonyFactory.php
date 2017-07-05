@@ -27,6 +27,11 @@ class SonyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'f3211'                => 'sony f3211',
+        'f3212'                => 'sony f3212',
+        'f3215'                => 'sony f3215',
+        'f3216'                => 'sony f3216',
+        'f3213'                => 'sony f3213',
         'g8231'                => 'sony g8231',
         'g8232'                => 'sony g8232',
         'e5653'                => 'sony e5653',

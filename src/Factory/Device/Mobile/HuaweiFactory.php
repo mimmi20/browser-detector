@@ -27,6 +27,7 @@ class HuaweiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'nem-l22'                         => 'huawei nem-l22',
         'ale-l23'                         => 'huawei ale-l23',
         'ale-l21'                         => 'huawei ale-l21',
         'duk-l09'                         => 'huawei duk-l09',

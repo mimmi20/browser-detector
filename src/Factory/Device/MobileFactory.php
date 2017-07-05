@@ -960,7 +960,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LexandFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['A120', 'A116', 'A114', 'A093', 'A065', ' A96 '], true)) {
+        if ($s->containsAny(['A120', 'A116', 'A114', 'A093', 'A065', ' A96 ', 'Q327'], true)) {
             return (new Mobile\MicromaxFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1640,7 +1640,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' xst2 ', ' x2 ', 'r800x', 's500i', 'x1i', 'x10i', 'f3311', 'f5121'], false)) {
+        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' xst2 ', ' x2 ', 'r800x', 's500i', 'x1i', 'x10i', 'f3311', 'f5121', 'f3211'], false)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1760,7 +1760,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['h30-u10', 'kiw-l21', 'chc-u03', 'che2-l11', 'ath-al00', 'mha-l29', 'cam-l21', 'frd-al10', 'nem-l51', 'pra-l', 'plk-l01', 'lon-l29', 'duk-l09', 'ale-', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', 'h60-l', ' p6 ', 'vtr-'], false)) {
+        if ($s->containsAny(['h30-u10', 'kiw-l21', 'chc-u03', 'che2-l11', 'ath-al00', 'mha-l29', 'cam-l21', 'frd-al10', 'nem-l', 'pra-l', 'plk-l01', 'lon-l29', 'duk-l09', 'ale-', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', 'h60-l', ' p6 ', 'vtr-'], false)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1972,7 +1972,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\UlefoneFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['ls-4505', 'ls-4503', 'ls-4005'], false)) {
+        if (preg_match('/ls\-\d{4}/i', $useragent)) {
             return (new Mobile\LyfFactory($this->loader))->detect($useragent, $s);
         }
 
