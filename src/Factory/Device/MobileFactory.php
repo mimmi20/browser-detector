@@ -952,6 +952,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('4good', false)) {
+            return (new Mobile\FourGoodFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->containsAny(['A101', 'A500', 'Z200', 'Z500', ' T08 '], true)) {
             return (new Mobile\AcerFactory($this->loader))->detect($useragent, $s);
         }
@@ -2074,6 +2078,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('ilium l820', false)) {
             return (new Mobile\LanixFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('s501m 3g', false)) {
+            return (new Mobile\FourGoodFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {
