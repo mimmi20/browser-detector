@@ -8284,14 +8284,28 @@
   },
   "1password": {
     "name": "1Password",
-    "manufacturer": "Apple",
+    "manufacturer": "AgileBits",
     "pdfSupport": true,
     "rssSupport": false,
-    "type": "browser",
+    "type": "application",
     "version": {
       "class": "VersionFactory",
       "search": [
         "1Password"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "1passwordthumbs": {
+    "name": "1PasswordThumbs",
+    "manufacturer": "AgileBits",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "1PasswordThumbs"
       ]
     },
     "engine": "webkit"

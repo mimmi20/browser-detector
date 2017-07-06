@@ -27,6 +27,9 @@ class BravisFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'nb751' => 'bravis nb751',
+        'nb105' => 'bravis nb105',
+        'nb74' => 'bravis nb74',
         'np 844' => 'np 844',
     ];
 

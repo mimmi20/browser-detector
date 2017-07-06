@@ -172,6 +172,8 @@ class BrowserFactory implements FactoryInterface
             'alohabrowser'    => 'aloha-browser',
             'vivobrowser'     => 'vivo-browser',
             'bingweb'         => 'bingweb',
+            '1passwordthumbs' => '1passwordthumbs',
+            '1password'       => '1password',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {

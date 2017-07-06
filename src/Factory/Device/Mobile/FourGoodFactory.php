@@ -27,6 +27,7 @@ class FourGoodFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        't700i_3g' => '4good t700i 3g',
         's555m 4g' => '4good s555m 4g',
         's501m 3g' => '4good s501m 3g',
         's450m 4g' => '4good s450m 4g',

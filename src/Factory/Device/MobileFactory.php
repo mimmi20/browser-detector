@@ -1312,6 +1312,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\FlyFactory($this->loader))->detect($useragent, $s);
         }
 
+        if (preg_match('/FS\d{3,4}/', $useragent)) {
+            return (new Mobile\FlyFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('Phoenix 2', true)) {
             return (new Mobile\FlyFactory($this->loader))->detect($useragent, $s);
         }
@@ -2080,8 +2084,16 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LanixFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('s501m 3g', false)) {
+        if ($s->containsAny(['s501m 3g', 't700i_3g'], false)) {
             return (new Mobile\FourGoodFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('ixion_es255', false)) {
+            return (new Mobile\DexpFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/NB\d{2,3}/', $useragent)) {
+            return (new Mobile\BravisFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {
