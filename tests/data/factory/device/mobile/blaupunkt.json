@@ -5,8 +5,8 @@
     "marketingName": "general Blaupunkt Device",
     "manufacturer": "Blaupunkt",
     "brand": "Blaupunkt",
-    "type": "Mobile Phone",
-    "dualOrientation": false,
+    "type": "Tablet",
+    "dualOrientation": true,
     "pointingMethod": "touchscreen",
     "width": null,
     "height": null,
@@ -18,11 +18,11 @@
     "marketingName": "Atlantis 1010A",
     "manufacturer": "Blaupunkt",
     "brand": "Blaupunkt",
-    "type": "Tablet",
+    "type": "FonePad",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1024,
+    "height": 600,
     "colors": null
   },
   {
@@ -34,8 +34,8 @@
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 2048,
+    "height": 1536,
     "colors": null
   },
   {
@@ -47,8 +47,8 @@
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1024,
+    "height": 600,
     "colors": null
   },
   {
@@ -58,6 +58,19 @@
     "manufacturer": "Blaupunkt",
     "brand": "Blaupunkt",
     "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1024,
+    "height": 600,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1; Atlantis 1001A Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36",
+    "codeName": "Atlantis 1001A",
+    "marketingName": "Atlantis 1001A",
+    "manufacturer": "Blaupunkt",
+    "brand": "Blaupunkt",
+    "type": "FonePad",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
     "width": 1024,

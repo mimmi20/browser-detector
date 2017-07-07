@@ -72,6 +72,7 @@ class Safari
             '9.1',
             '10.0',
             '10.1',
+            '11.0',
         ];
 
         if (in_array(mb_substr($detectedVersion, 0, 3), $regularVersions)

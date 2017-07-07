@@ -15146,5 +15146,47 @@
       ]
     },
     "engine": "blink"
+  },
+  "cyberfox": {
+    "name": "Cyberfox",
+    "manufacturer": "8pecxstudios",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cyberfox"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "firefox klar": {
+    "name": "Firefox Klar",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Klar"
+      ]
+    },
+    "engine": "blink"
+  },
+  "eui browser": {
+    "name": "eUI Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "EUI Browser"
+      ]
+    },
+    "engine": "blink"
   }
 }

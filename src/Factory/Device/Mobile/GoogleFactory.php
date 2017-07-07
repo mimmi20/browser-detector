@@ -28,6 +28,7 @@ class GoogleFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'pixel c' => 'google pixel c',
+        'gce x86 phone' => 'google compute engine',
     ];
 
     /**

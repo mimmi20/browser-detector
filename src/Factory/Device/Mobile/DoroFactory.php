@@ -21,14 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TurboxFactory implements Factory\FactoryInterface
+class DoroFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'coral ii'  => 'turbo-x coral ii',
-        'hive v 3g' => 'turbo-x hive v 3g',
+        'liberto 820 mini' => 'doro liberto 820 mini',
     ];
 
     /**
@@ -60,6 +59,6 @@ class TurboxFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general turbo-x device', $useragent);
+        return $this->loader->load('general doro device', $useragent);
     }
 }

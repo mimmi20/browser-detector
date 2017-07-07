@@ -174,6 +174,8 @@ class BrowserFactory implements FactoryInterface
             'bingweb'         => 'bingweb',
             '1passwordthumbs' => '1passwordthumbs',
             '1password'       => '1password',
+            'klar/'           => 'firefox klar',
+            'eui browser'     => 'eui browser',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -592,6 +594,7 @@ class BrowserFactory implements FactoryInterface
             'dalvik'                                        => 'dalvik',
             'bb_work_connect'                               => 'bb work connect',
             'lolifox'                                       => 'lolifox',
+            'cyberfox'                                      => 'cyberfox',
             'firefox'                                       => 'firefox',
             'minefield'                                     => 'firefox',
             'shiretoko'                                     => 'firefox',

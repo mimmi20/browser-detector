@@ -27,6 +27,10 @@ class SamsungFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'sm-j3110'        => 'samsung sm-j3110',
+        'sm-j3119'        => 'samsung sm-j3119',
+        'sm-j105b'        => 'samsung sm-j105b',
+        'sm-j105h'        => 'samsung sm-j105h',
         'sm-g610f'        => 'samsung sm-g610f',
         'sm-g610m'        => 'samsung sm-g610m',
         'sm-g610y'        => 'samsung sm-g610y',
@@ -143,7 +147,6 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-j110m'        => 'sm-j110m',
         'sm-j111f'        => 'sm-j111f',
         'sm-j105f'        => 'samsung sm-j105f',
-        'sm-j105h'        => 'sm-j105h',
         'sm-j100h'        => 'sm-j100h',
         'sm-j100y'        => 'sm-j100y',
         'sm-j100f'        => 'sm-j100f',
@@ -154,6 +157,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-j200h'        => 'sm-j200h',
         'sm-j200bt'       => 'sm-j200bt',
         'sm-j200y'        => 'sm-j200y',
+        'sm-t285'         => 'samsung sm-t285',
         'sm-t280'         => 'sm-t280',
         'sm-t2105'        => 'sm-t2105',
         'sm-t210r'        => 'sm-t210r',
@@ -583,7 +587,8 @@ class SamsungFactory implements Factory\FactoryInterface
         'sch-i800'        => 'sch-i800',
         'sch-i699'        => 'sch-i699',
         'sch-i605'        => 'sch-i605',
-        'sch-i545'        => 'sch-i545',
+        'sch-i545'        => 'samsung sch-i545',
+        'i545'            => 'samsung sch-i545',
         'sch-i510'        => 'sch-i510',
         'sch-i500'        => 'sch-i500',
         'sch-i435'        => 'sch-i435',
