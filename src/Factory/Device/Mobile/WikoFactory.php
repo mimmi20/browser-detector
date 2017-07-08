@@ -27,6 +27,7 @@ class WikoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'sunny'         => 'wiko sunny',
         'pulp fab 4g'   => 'wiko pulp fab 4g',
         'ridge fab 4g'  => 'wiko ridge fab 4g',
         'rainbow jam'   => 'wiko rainbow jam',

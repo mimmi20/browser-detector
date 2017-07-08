@@ -27,6 +27,7 @@ class DoroFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'doro 8030'        => 'doro 8030',
         'liberto 820 mini' => 'doro liberto 820 mini',
     ];
 

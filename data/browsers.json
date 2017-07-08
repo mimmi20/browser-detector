@@ -1841,7 +1841,34 @@
       "class": "VersionFactory",
       "search": [
         "Chrome",
-        "CrMo",
+        "CrMo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "headless-chrome": {
+    "name": "Headless Chrome",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HeadlessChrome"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "chrome for ios": {
+    "name": "Chrome for iOS",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
         "CriOS"
       ]
     },

@@ -1505,7 +1505,7 @@
   },
   {
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) CriOS/30.0.1599.16 Mobile/11A501 Safari/8536.25",
-    "browser": "Chrome",
+    "browser": "Chrome for iOS",
     "version": "30.0.1599.16",
     "manufacturer": "Google Inc",
     "bits": 32,
@@ -7749,6 +7749,14 @@
     "version": "1.2.1.29",
     "manufacturer": null,
     "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/59.0.3071.36 Safari/537.36",
+    "browser": "Headless Chrome",
+    "version": "59.0.3071.36",
+    "manufacturer": "Google Inc",
+    "bits": 64,
     "type": "Browser"
   }
 ]
