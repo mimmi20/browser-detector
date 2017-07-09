@@ -27,6 +27,9 @@ class MotorolaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'xt1562'          => 'motorola xt1562',
+        'xt1064'          => 'motorola xt1064',
+        'moto g 2014'     => 'motorola xt1064',
         'xt1072'          => 'motorola xt1072',
         'moto g play'     => 'motorola moto g play',
         'xt1604'          => 'motorola xt1604',

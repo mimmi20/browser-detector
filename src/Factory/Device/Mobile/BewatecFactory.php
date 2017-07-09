@@ -27,8 +27,9 @@ class BewatecFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'medipad13' => 'medipad 13',
-        'medipad'   => 'medipad',
+        'medipad16' => 'bewatec medipad 16',
+        'medipad13' => 'bewatec medipad 13',
+        'medipad'   => 'bewatec medipad',
     ];
 
     /**

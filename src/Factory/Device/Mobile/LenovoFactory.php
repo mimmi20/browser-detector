@@ -27,6 +27,8 @@ class LenovoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'a5000'                   => 'lenovo a5000',
+        'p770'                    => 'lenovo p770',
         'k50-t5'                  => 'lenovo k50-t5',
         'a8-50l'                  => 'lenovo a8-50l',
         'tb3-x70l'                => 'lenovo tb3-x70l',
@@ -74,8 +76,6 @@ class LenovoFactory implements Factory\FactoryInterface
         's820_row'                => 's820_row',
         's720'                    => 's720',
         's660'                    => 's660',
-        'p1050x'                  => 'lifetab p1050x',
-        'p1032x'                  => 'lifetab p1032x',
         'p780'                    => 'p780',
         'p70-a'                   => 'lenovo p70-a',
         'p70'                     => 'lenovo p70',

@@ -5,7 +5,7 @@
     "marketingName": "general Coolpad Device",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "type": "Tablet",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
     "width": null,
@@ -18,24 +18,24 @@
     "marketingName": "N930",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "type": "Tablet",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 480,
+    "height": 800,
     "colors": null
   },
   {
     "ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Coolpad 8297W Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501072",
-    "codeName": "general Coolpad Device",
-    "marketingName": "general Coolpad Device",
+    "codeName": "8297W",
+    "marketingName": "F1",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "type": "Tablet",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 720,
+    "height": 1280,
     "colors": null
   },
   {
@@ -127,6 +127,19 @@
     "pointingMethod": "touchscreen",
     "width": 720,
     "height": 1280,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.0.1; 8079 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36",
+    "codeName": "8079",
+    "marketingName": "8079",
+    "manufacturer": "Coolpad",
+    "brand": "Coolpad",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 480,
+    "height": 854,
     "colors": null
   }
 ]

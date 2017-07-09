@@ -5,8 +5,8 @@
     "marketingName": "general BEWATEC Device",
     "manufacturer": "BEWATEC Kommunikationstechnik GmbH",
     "brand": "BEWATEC",
-    "type": "Mobile Phone",
-    "dualOrientation": false,
+    "type": "Tablet",
+    "dualOrientation": true,
     "pointingMethod": "touchscreen",
     "width": null,
     "height": null,
@@ -21,8 +21,8 @@
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1280,
+    "height": 800,
     "colors": null
   },
   {
@@ -34,8 +34,21 @@
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1920,
+    "height": 1080,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; MediPaD16 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36",
+    "codeName": "MediPaD 16",
+    "marketingName": "MediPaD 16",
+    "manufacturer": "BEWATEC Kommunikationstechnik GmbH",
+    "brand": "BEWATEC",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1920,
+    "height": 1080,
     "colors": null
   }
 ]

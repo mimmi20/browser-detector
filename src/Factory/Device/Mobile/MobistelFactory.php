@@ -27,14 +27,15 @@ class MobistelFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'cynus t6' => 'cynus t6',
-        'cynus t5' => 'cynus t5',
-        'cynus t2' => 'cynus t2',
-        'cynus t1' => 'cynus t1',
-        'cynus f5' => 'cynus f5',
-        'cynus f4' => 'mt-7521s',
-        'cynus f3' => 'cynus f3',
-        'cynus e1' => 'cynus e1',
+        'cynus t8' => 'mobistel cynus t8',
+        'cynus t6' => 'mobistel cynus t6',
+        'cynus t5' => 'mobistel cynus t5',
+        'cynus t2' => 'mobistel cynus t2',
+        'cynus t1' => 'mobistel cynus t1',
+        'cynus f5' => 'mobistel cynus f5',
+        'cynus f4' => 'mobistel mt-7521s',
+        'cynus f3' => 'mobistel cynus f3',
+        'cynus e1' => 'mobistel cynus e1',
     ];
 
     /**

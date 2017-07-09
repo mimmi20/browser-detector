@@ -27,6 +27,7 @@ class ExcelvanFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'mt13'  => 'excelvan mt13',
         'm1009' => 'excelvan m1009',
     ];
 

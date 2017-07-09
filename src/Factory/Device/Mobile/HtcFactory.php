@@ -27,6 +27,7 @@ class HtcFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'htc 10 evo'              => 'htc 10 evo',
         'one a9'                  => 'htc one a9',
         'u ultra'                 => 'htc u ultra',
         'u play'                  => 'htc u play',

@@ -21,16 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LeagooFactory implements Factory\FactoryInterface
+class YuntabFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'elite 5' => 'leagoo elite 5',
-        'elite 4' => 'leagoo elite 4',
-        't1_plus' => 'leagoo t1 plus',
-        'lead 2'  => 'leagoo lead 2',
+        'k107' => 'yuntab k107',
     ];
 
     /**
@@ -62,6 +59,6 @@ class LeagooFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general leagoo device', $useragent);
+        return $this->loader->load('general yuntab device', $useragent);
     }
 }

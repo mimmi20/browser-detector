@@ -7758,5 +7758,29 @@
     "manufacturer": "Google Inc",
     "bits": 64,
     "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 ResearchBot/0.6.2 (project: flattr-id-meta-tokens) This/1",
+    "browser": "ResearchBot",
+    "version": "0.6.2",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU iPhone OS 10.0.1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3 QHBrowser/244",
+    "browser": "Quick Heal Browser",
+    "version": "0.0.0",
+    "manufacturer": "Quick Heal Technologies Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) WhatsApp/0.2.4238 Chrome/53.0.2785.143 Electron/1.4.12 Safari/537.36",
+    "browser": "WhatsApp",
+    "version": "0.2.4238",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
   }
 ]

@@ -27,6 +27,7 @@ class LgFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'k420'          => 'lg k420',
         'h960'          => 'lg h960',
         'h840'          => 'lg h840',
         'h845'          => 'lg h845',

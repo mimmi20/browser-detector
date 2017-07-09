@@ -13788,7 +13788,7 @@
         "WhatsApp"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "whatweb web scanner": {
     "name": "WhatWeb Web Scanner",
@@ -15215,5 +15215,31 @@
       ]
     },
     "engine": "blink"
+  },
+  "research-bot": {
+    "name": "ResearchBot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ResearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "qh-browser": {
+    "name": "Quick Heal Browser",
+    "manufacturer": "Quick Heal",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   }
 }
