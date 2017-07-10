@@ -27,7 +27,7 @@ class VerneeFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'thor' => 'vernee thor',
+        'thor'   => 'vernee thor',
         'apollo' => 'vernee apollo',
     ];
 

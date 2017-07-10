@@ -2168,6 +2168,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\OukitelFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains(' m10 ', false)) {
+            return (new Mobile\BqFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('i545', true)) {
             return (new Mobile\SamsungFactory($this->loader))->detect($useragent, $s);
         }

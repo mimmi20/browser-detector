@@ -34,6 +34,7 @@ class BqFactory implements Factory\FactoryInterface
         'aquaris m4.5'  => 'aquaris m4.5',
         'aquaris_m4.5'  => 'aquaris m4.5',
         'aquaris 5 hd'  => 'aquaris e5',
+        ' m10 '         => 'aquaris m10',
         '7056g'         => '7056g',
         'bqs-4007'      => 'bqs-4007',
         'bqs-4005'      => 'bqs-4005',

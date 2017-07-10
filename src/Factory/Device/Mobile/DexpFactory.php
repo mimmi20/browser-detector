@@ -27,7 +27,7 @@ class DexpFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ixion_es255' => 'dexp ixion es255',
+        'ixion_es255'  => 'dexp ixion es255',
         'ursus 9ev 3g' => 'ursus 9ev 3g',
     ];
 

@@ -28,12 +28,12 @@ class DoogeeFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'y6_piano_black' => 'doogee y6 piano black',
-        'dg2014' => 'dg2014',
-        'dg800'  => 'dg800',
-        'dg330'  => 'dg330',
-        'dg310'  => 'doogee dg310',
-        'dg300'  => 'doogee dg300',
-        'f3_pro' => 'f3 pro',
+        'dg2014'         => 'dg2014',
+        'dg800'          => 'dg800',
+        'dg330'          => 'dg330',
+        'dg310'          => 'doogee dg310',
+        'dg300'          => 'doogee dg300',
+        'f3_pro'         => 'f3 pro',
     ];
 
     /**

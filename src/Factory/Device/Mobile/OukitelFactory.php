@@ -28,7 +28,7 @@ class OukitelFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'u7 plus' => 'oukitel u7 plus',
-        'u10' => 'oukitel u10',
+        'u10'     => 'oukitel u10',
     ];
 
     /**
