@@ -44,6 +44,6 @@ class TurboxFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return json_decode(file_get_contents('tests/data/factory/device/mobile/turbox.json'), true);
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/turbo-x.json'), true);
     }
 }

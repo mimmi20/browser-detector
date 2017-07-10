@@ -27,11 +27,12 @@ class BlaupunktFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'atlantis 1001a' => 'blaupunkt atlantis 1001a',
         'discovery 111c' => 'blaupunkt discovery 111c',
-        'atlantis 1010a' => 'atlantis 1010a',
-        'endeavour 101l' => 'endeavour 101l',
-        'endeavour_101l' => 'endeavour 101l',
-        'endeavour 1010' => 'endeavour 1010',
+        'atlantis 1010a' => 'blaupunkt atlantis 1010a',
+        'endeavour 101l' => 'blaupunkt endeavour 101l',
+        'endeavour_101l' => 'blaupunkt endeavour 101l',
+        'endeavour 1010' => 'blaupunkt endeavour 1010',
     ];
 
     /**

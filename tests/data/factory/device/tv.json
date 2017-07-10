@@ -267,7 +267,7 @@
     "brand": "Philips",
     "type": "TV Device",
     "dualOrientation": false,
-    "pointingMethod": "mouse",
+    "pointingMethod": null,
     "width": null,
     "height": null,
     "colors": null
@@ -317,6 +317,19 @@
     "marketingName": "Smart TV",
     "manufacturer": "Samsung",
     "brand": "Samsung",
+    "type": "TV Device",
+    "dualOrientation": false,
+    "pointingMethod": null,
+    "width": null,
+    "height": null,
+    "colors": null
+  },
+  {
+    "ua": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/6.0.2 SmartTvA/3.0.0 (PhilipsTV, 6.1.1,) en) Presto/2.12.407 Version/12.50",
+    "codeName": "general Philips TV",
+    "marketingName": "general Philips TV",
+    "manufacturer": "Philips",
+    "brand": "Philips",
     "type": "TV Device",
     "dualOrientation": false,
     "pointingMethod": null,

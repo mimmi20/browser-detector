@@ -28,6 +28,7 @@ class VivoFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'x7 plus'   => 'vivo x7 plus',
+        'x7'        => 'vivo x7',
         'y22'       => 'vivo y22',
         'vivo 1603' => 'vivo 1603',
         'y31l'      => 'vivo y31l',

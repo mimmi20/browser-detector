@@ -27,9 +27,10 @@ class UlefoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'vienna' => 'ulefone vienna',
-        'paris'  => 'ulefone paris',
-        'be pro' => 'ulefone be pro',
+        'u007 pro' => 'ulefone u007 pro',
+        'vienna'   => 'ulefone vienna',
+        'paris'    => 'ulefone paris',
+        'be pro'   => 'ulefone be pro',
     ];
 
     /**

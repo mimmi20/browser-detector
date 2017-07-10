@@ -27,6 +27,9 @@ class ArchosFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        '50b neon'              => 'archos 50b neon',
+        '101 helium'            => 'archos 101 helium',
+        '80d xenon'             => 'archos 80d xenon',
         '50d neon'              => 'archos 50d neon',
         '40c tiv2'              => 'archos 40c tiv2',
         '45c helium'            => 'archos 45c helium',

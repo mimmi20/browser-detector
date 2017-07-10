@@ -179,6 +179,7 @@ class NokiaFactory implements Factory\FactoryInterface
         'nokia9500'            => '9500',
         'nokia7510'            => '7510',
         'nokia7230'            => '7230',
+        'nokia6790s'           => 'nokia 6790s',
         'nokia6730c'           => '6730 classic',
         'nokia6720c'           => '6720 classic',
         'nokia6710s'           => '6710 slide',

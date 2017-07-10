@@ -1841,7 +1841,34 @@
       "class": "VersionFactory",
       "search": [
         "Chrome",
-        "CrMo",
+        "CrMo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "headless-chrome": {
+    "name": "Headless Chrome",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HeadlessChrome"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "chrome for ios": {
+    "name": "Chrome for iOS",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
         "CriOS"
       ]
     },
@@ -8284,14 +8311,28 @@
   },
   "1password": {
     "name": "1Password",
-    "manufacturer": "Apple",
+    "manufacturer": "AgileBits",
     "pdfSupport": true,
     "rssSupport": false,
-    "type": "browser",
+    "type": "application",
     "version": {
       "class": "VersionFactory",
       "search": [
         "1Password"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "1passwordthumbs": {
+    "name": "1PasswordThumbs",
+    "manufacturer": "AgileBits",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "1PasswordThumbs"
       ]
     },
     "engine": "webkit"
@@ -13747,7 +13788,7 @@
         "WhatsApp"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "whatweb web scanner": {
     "name": "WhatWeb Web Scanner",
@@ -15090,5 +15131,115 @@
       ]
     },
     "engine": "webkit"
+  },
+  "lolifox": {
+    "name": "lolifox",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "lolifox"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "vivo-browser": {
+    "name": "VivoBrowser",
+    "manufacturer": "Vivo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "VivoBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "bingweb": {
+    "name": "BingWeb App",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BingWeb"
+      ]
+    },
+    "engine": "blink"
+  },
+  "cyberfox": {
+    "name": "Cyberfox",
+    "manufacturer": "8pecxstudios",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cyberfox"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "firefox klar": {
+    "name": "Firefox Klar",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Klar"
+      ]
+    },
+    "engine": "blink"
+  },
+  "eui browser": {
+    "name": "eUI Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "EUI Browser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "research-bot": {
+    "name": "ResearchBot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ResearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "qh-browser": {
+    "name": "Quick Heal Browser",
+    "manufacturer": "Quick Heal",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   }
 }

@@ -27,6 +27,8 @@ class WindowsFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        //'masb' => '', // Microsoft System Builder -> no device
+        //'mapb' => '',
         'mddr'   => 'dell pc',
         'mddc'   => 'dell pc',
         'mdds'   => 'dell pc',

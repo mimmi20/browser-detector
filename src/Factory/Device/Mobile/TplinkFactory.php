@@ -27,11 +27,14 @@ class TplinkFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'neffos c5l' => 'tp-link neffos c5l',
-        'tp601a'     => 'tp-link neffos c5l',
-        'tp601b'     => 'tp-link neffos c5l',
-        'tp601c'     => 'tp-link neffos c5l',
-        'tp601e'     => 'tp-link neffos c5l',
+        'neffos y5l'    => 'tp-link neffos y5l',
+        'neffos c5 max' => 'tp-link neffos c5 max',
+        'neffos c5l'    => 'tp-link neffos c5l',
+        'neffos c5'     => 'tp-link neffos c5',
+        'tp601a'        => 'tp-link neffos c5l',
+        'tp601b'        => 'tp-link neffos c5l',
+        'tp601c'        => 'tp-link neffos c5l',
+        'tp601e'        => 'tp-link neffos c5l',
     ];
 
     /**

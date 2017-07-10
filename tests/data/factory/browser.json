@@ -1505,7 +1505,7 @@
   },
   {
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) CriOS/30.0.1599.16 Mobile/11A501 Safari/8536.25",
-    "browser": "Chrome",
+    "browser": "Chrome for iOS",
     "version": "30.0.1599.16",
     "manufacturer": "Google Inc",
     "bits": 32,
@@ -7654,5 +7654,133 @@
     "manufacturer": "Ninesky Technology And Industrial Private Limited",
     "bits": 32,
     "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.1.17) Gecko/20110123 Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2) Gecko/20070225 lolifox/0.32",
+    "browser": "lolifox",
+    "version": "0.32.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; vivo X7 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36 VivoBrowser/5.1.4",
+    "browser": "VivoBrowser",
+    "version": "5.1.4",
+    "manufacturer": "vivo",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0.1; SM-T555 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 BingWeb/6.8.25183598",
+    "browser": "BingWeb App",
+    "version": "6.8.25183598",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Microsoft Office Word x.0.1 Windows NT 6.2",
+    "browser": "Word",
+    "version": "0.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) 1Password/6.3.1 (like Version/9.3.1 Mobile/13E238 Safari/600.1.4)",
+    "browser": "1Password",
+    "version": "6.3.1",
+    "manufacturer": "AgileBits, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "1PasswordThumbs/1 CFNetwork/454.11.12 Darwin/10.7.0 (i386) (MacBookPro5%2C1)",
+    "browser": "1PasswordThumbs",
+    "version": "1.0.0",
+    "manufacturer": "AgileBits, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/2.0 (compatible; MS FrontPage x.0)",
+    "browser": "FrontPage",
+    "version": "0.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0 Cyberfox/52.2.0",
+    "browser": "Cyberfox",
+    "version": "52.2.0",
+    "manufacturer": "8pecxstudios",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Klar/3.3 Mobile/14C92",
+    "browser": "Firefox Klar",
+    "version": "3.3.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.25 (KHTML, like Gecko) Version/11.0 Mobile/15A5304j Safari/604.1",
+    "browser": "Safari",
+    "version": "11.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0.1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Klar/1.0 Chrome/58.0.3029.83 Mobile Safari/537.36",
+    "browser": "Firefox Klar",
+    "version": "1.0.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 6.0;zh_cn; LEX626 Build/HEXCNFN5902606111S) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/49.0.2623.91 Mobile Safari/537.36 EUI Browser/1.2.1.29",
+    "browser": "eUI Browser",
+    "version": "1.2.1.29",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/59.0.3071.36 Safari/537.36",
+    "browser": "Headless Chrome",
+    "version": "59.0.3071.36",
+    "manufacturer": "Google Inc",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 ResearchBot/0.6.2 (project: flattr-id-meta-tokens) This/1",
+    "browser": "ResearchBot",
+    "version": "0.6.2",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU iPhone OS 10.0.1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3 QHBrowser/244",
+    "browser": "Quick Heal Browser",
+    "version": "0.0.0",
+    "manufacturer": "Quick Heal Technologies Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) WhatsApp/0.2.4238 Chrome/53.0.2785.143 Electron/1.4.12 Safari/537.36",
+    "browser": "WhatsApp",
+    "version": "0.2.4238",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
   }
 ]

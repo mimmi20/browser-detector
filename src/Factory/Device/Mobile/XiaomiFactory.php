@@ -28,6 +28,7 @@ class XiaomiFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'redmi 4'        => 'xiaomitech redmi 4',
+        'mi 5s'          => 'xiaomitech mi 5s',
         'mi 5'           => 'xiaomitech mi 5',
         'redmi note 4x'  => 'xiaomitech redmi note 4x',
         'redmi note 4'   => 'xiaomitech redmi note 4',

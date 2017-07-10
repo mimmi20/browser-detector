@@ -27,9 +27,10 @@ class KianoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'intelect7'     => 'intelect 7 3g',
-        'elegance 8 3g' => 'elegance 8 3g',
-        'elegance'      => 'elegance',
+        'intelect7'        => 'kiano intelect 7 3g',
+        'elegance 10.1 3g' => 'kiano elegance 10.1 3g',
+        'elegance 8 3g'    => 'kiano elegance 8 3g',
+        'elegance'         => 'kiano elegance',
     ];
 
     /**

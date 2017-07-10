@@ -46,7 +46,7 @@ class Tv
             return false;
         }
 
-        $noDesktops = [
+        $noTvs = [
             'new-sogou-spider',
             'zollard',
             'socialradarbot',
@@ -66,7 +66,7 @@ class Tv
             '>',
         ];
 
-        if ($s->containsAny($noDesktops, false)) {
+        if ($s->containsAny($noTvs, false)) {
             return false;
         }
 
@@ -97,6 +97,7 @@ class Tv
             'mxl661l32',
             'nettv',
             'netbox',
+            'philipstv',
         ];
 
         if (!$s->containsAny($tvDevices, false)) {

@@ -27,7 +27,8 @@ class FujitsuFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm532' => 'm532',
+        'm305' => 'fujitsu m305',
+        'm532' => 'fujitsu m532',
     ];
 
     /**

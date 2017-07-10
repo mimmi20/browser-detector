@@ -27,6 +27,10 @@ class MedionFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'p1040x'          => 'medion p1040x',
+        'p1050x'          => 'medion p1050x',
+        'p1032x'          => 'medion p1032x',
+        'x6001'           => 'medion x6001',
         'e691x'           => 'medion e691x',
         'e4004'           => 'medion e4004',
         'medion e5001'    => 'life e5001',

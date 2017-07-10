@@ -27,7 +27,8 @@ class YotaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'yd201' => 'yd201',
+        'yd206' => 'yota yd206',
+        'yd201' => 'yota yd201',
     ];
 
     /**
