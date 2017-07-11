@@ -27,6 +27,8 @@ class HuaweiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'gra-l09'                         => 'huawei gra-l09',
+        'gra-ul00'                        => 'huawei gra-ul00',
         'frd-l14'                         => 'huawei frd-l14',
         'frd-al10'                        => 'huawei frd-al10',
         'frd-al00'                        => 'huawei frd-al00',
@@ -70,7 +72,6 @@ class HuaweiFactory implements Factory\FactoryInterface
         'ale-cl00'                        => 'huawei ale-cl00',
         'ale-21'                          => 'ale 21',
         'ale-l02'                         => 'ale-l02',
-        'gra-l09'                         => 'gra-l09',
         'grace'                           => 'grace',
         'p7-l10'                          => 'p7-l10',
         'p7-l09'                          => 'p7-l09',

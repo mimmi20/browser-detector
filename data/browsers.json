@@ -15241,5 +15241,19 @@
       "search": null
     },
     "engine": null
+  },
+  "basecamp3": {
+    "name": "Basecamp3",
+    "manufacturer": "Basecamp",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Basecamp3"
+      ]
+    },
+    "engine": "unknown"
   }
 }

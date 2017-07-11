@@ -30,10 +30,6 @@ class FirefoxOs implements VersionCacheFactoryInterface
     {
         preg_match('/rv:(\d+\.\d+)/', $useragent, $matches);
 
-        if (!isset($matches[1])) {
-            return new Version(0);
-        }
-
         $version = (float) $matches[1];
 
         if ($version >= 37.0) {

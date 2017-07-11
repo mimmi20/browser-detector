@@ -21,37 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WikoFactory implements Factory\FactoryInterface
+class ChuwiFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'plus'          => 'wiko plus',
-        'highway star'  => 'wiko highway star',
-        'fever'         => 'wiko fever',
-        'sunny'         => 'wiko sunny',
-        'pulp fab 4g'   => 'wiko pulp fab 4g',
-        'pulp fab'      => 'wiko pulp fab',
-        'ridge fab 4g'  => 'wiko ridge fab 4g',
-        'rainbow jam'   => 'wiko rainbow jam',
-        'ozzy'          => 'wiko ozzy',
-        'highway signs' => 'wiko highway signs',
-        'highway'       => 'wiko highway',
-        'barry'         => 'wiko barry',
-        'wax'           => 'wiko wax',
-        'slide2'        => 'slide 2',
-        'slide'         => 'wiko slide',
-        'jerry'         => 'jerry',
-        'bloom'         => 'bloom',
-        'rainbow 2'     => 'wiko rainbow 2',
-        'rainbow'       => 'rainbow',
-        'lenny'         => 'lenny',
-        'getaway'       => 'getaway',
-        'darkmoon'      => 'darkmoon',
-        'darkside'      => 'darkside',
-        'cink peax 2'   => 'cink peax 2',
-        'kite'          => 'wiko kite',
+        'vi8 plus' => 'chuwi vi8 plus',
     ];
 
     /**
@@ -83,6 +59,6 @@ class WikoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general wiko device', $useragent);
+        return $this->loader->load('general chuwi device', $useragent);
     }
 }
