@@ -21,21 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HisenseFactory implements Factory\FactoryInterface
+class WortmannFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'hs-g610' => 'hisense hs-g610',
-        'u972'    => 'hisense u972',
-        'hs-u971' => 'hisense hs-u971',
-        'hs-u970' => 'hisense hs-u970',
-        'hs-u800' => 'hisense hs-u800',
-        'hs-u606' => 'hisense hs-u606',
-        'hs-l691' => 'hisense hs-l691',
-        'hs-e912' => 'hisense hs-e912',
-        'f5281'   => 'hisense f5281',
+        'terra pad 1003' => 'wortmann terra pad 1003',
     ];
 
     /**
@@ -67,6 +59,6 @@ class HisenseFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general hisense device', $useragent);
+        return $this->loader->load('general wortmann device', $useragent);
     }
 }

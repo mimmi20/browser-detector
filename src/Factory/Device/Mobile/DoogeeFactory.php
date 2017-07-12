@@ -27,6 +27,7 @@ class DoogeeFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'x5max_pro'      => 'doogee x5max pro',
         'y6 max 3d'      => 'doogee y6 max 3d',
         'y6_piano_black' => 'doogee y6 piano black',
         'dg2014'         => 'dg2014',
