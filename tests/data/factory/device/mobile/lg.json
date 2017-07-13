@@ -187,7 +187,7 @@
     "marketingName": "Nexus 5X",
     "manufacturer": "LG",
     "brand": "Google",
-    "type": "Mobile Phone",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
     "width": null,
@@ -200,11 +200,11 @@
     "marketingName": "Nexus 5",
     "manufacturer": "LG",
     "brand": "Google",
-    "type": "Mobile Phone",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1080,
+    "height": 1920,
     "colors": null
   },
   {
@@ -508,15 +508,15 @@
   },
   {
     "ua": "Mozilla/5.0 (Linux; Android 4.4.3; Nexus5 V6.1 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
-    "codeName": "Nexus 5",
-    "marketingName": "Nexus 5",
+    "codeName": "Nexus 5 V6.1",
+    "marketingName": "Nexus 5 V6.1",
     "manufacturer": "LG",
     "brand": "Google",
-    "type": "Mobile Phone",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1080,
+    "height": 1920,
     "colors": null
   },
   {
@@ -2363,6 +2363,32 @@
     "pointingMethod": "touchscreen",
     "width": 1440,
     "height": 2560,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; Nexus 5 CAF Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36",
+    "codeName": "Nexus 5 CAF",
+    "marketingName": "Nexus 5 CAF",
+    "manufacturer": "LG",
+    "brand": "Google",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.0.2; LG-V400 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.1847.118 Safari/537.36,gzip(gfe)",
+    "codeName": "V400",
+    "marketingName": "G Pad 7.0",
+    "manufacturer": "LG",
+    "brand": "LG",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1280,
+    "height": 800,
     "colors": null
   }
 ]

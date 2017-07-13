@@ -828,7 +828,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ZteFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['lutea', 'blade iii', 'bs 451', 'orange hi 4g', 'orange reyo', 'n9132', 'nx512j'], false)) {
+        if ($s->containsAny(['lutea', 'blade iii', 'bs 451', 'orange hi 4g', 'orange reyo', 'n9132', 'nx512j', 'grand s flex'], false)) {
             return (new Mobile\ZteFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1740,7 +1740,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\WopadFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['ctab785r16-3g', 'pgn-506', 'pkt-301'], false)) {
+        if ($s->containsAny(['ctab785r16-3g', 'pgn-', 'pkt-301'], false)) {
             return (new Mobile\CondorFactory($this->loader))->detect($useragent, $s);
         }
 
