@@ -21,16 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PearlFactory implements Factory\FactoryInterface
+class TimmyFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'x10.quad.fm' => 'pearl x10.quad.fm',
-        'x10.dual+' => 'pearl x10+',
-        'x10.dual'  => 'pearl x10',
-        'x7g'       => 'pearl touchlet x7g',
+        ' m20 '   => 'timmy m20',
     ];
 
     /**
@@ -62,6 +59,6 @@ class PearlFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pearl device', $useragent);
+        return $this->loader->load('general timmy device', $useragent);
     }
 }

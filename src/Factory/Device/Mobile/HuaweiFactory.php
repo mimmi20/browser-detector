@@ -85,6 +85,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'scl-u31'                         => 'scl-u31',
         'nxt-l29'                         => 'nxt-l29',
         'nxt-al10'                        => 'nxt-al10',
+        'gem-703lt'                       => 'gem-703lt',
         'gem-703l'                        => 'gem-703l',
         'gem-702l'                        => 'gem-702l',
         'gem-701l'                        => 'gem-701l',
