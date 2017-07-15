@@ -12269,14 +12269,14 @@
     "manufacturer": "Unknown",
     "pdfSupport": true,
     "rssSupport": false,
-    "type": "bot",
+    "type": "browser",
     "version": {
       "class": "VersionFactory",
       "search": [
         "TOB"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "toshiba": {
     "name": "Toshiba",
@@ -15255,5 +15255,49 @@
       ]
     },
     "engine": "unknown"
+  },
+  "unibox": {
+    "name": "Unibox",
+    "manufacturer": "eightloops",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "email-client",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Unibox"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "ur-browser": {
+    "name": "UR Browser",
+    "manufacturer": "AdaptiveBee",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "UR Browser",
+        "URBrowser",
+        "UR\\/"
+      ]
+    },
+    "engine": "blink"
+  },
+  "dt-browser": {
+    "name": "DT Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DTB"
+      ]
+    },
+    "engine": null
   }
 }

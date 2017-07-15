@@ -27,6 +27,7 @@ class ZteFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'e8q+'              => 'zte e8q+',
         'nx511j'            => 'zte nx511j',
         'grand s flex'      => 'zte grand s flex',
         'blade l110'        => 'zte blade l110',
@@ -55,7 +56,8 @@ class ZteFactory implements Factory\FactoryInterface
         'blade s6 plus'     => 'zte blade s6 plus',
         'blade v6'          => 'blade v6',
         'blade l6'          => 'blade l6',
-        'blade l5 plus'     => 'blade l5 plus',
+        'blade l5 plus'     => 'zte blade l5 plus',
+        'blade l5'          => 'zte blade l5',
         'blade l3'          => 'blade l3',
         'blade l2'          => 'blade l2',
         'n919'              => 'n919',
@@ -70,7 +72,7 @@ class ZteFactory implements Factory\FactoryInterface
         'v808'              => 'v808',
         'v788d'             => 'zte v788d',
         'kis plus'          => 'zte v788d',
-        'v9'                => 'v9',
+        'v9'                => 'zte v9',
         'u930hd'            => 'u930hd',
         'smarttab10'        => 'smart tab 10',
         'smarttab7'         => 'smarttab7',

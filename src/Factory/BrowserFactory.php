@@ -201,6 +201,7 @@ class BrowserFactory implements FactoryInterface
             'tob'              => 't-online browser',
             't-online browser' => 't-online browser',
             'to-browser'       => 't-online browser',
+            'dt-browser'       => 'dt-browser',
         ];
 
         foreach ($checkBeforeAnonymus as $search => $key) {
@@ -338,6 +339,9 @@ class BrowserFactory implements FactoryInterface
             'netnewswire' => 'netnewswire',
             'wire'        => 'wire app',
             'qupzilla'    => 'qupzilla',
+            'ur browser'  => 'ur-browser',
+            'urbrowser'   => 'ur-browser',
+            ' ur/'        => 'ur-browser',
         ];
 
         foreach ($checkBeforeDragon as $search => $key) {
@@ -994,6 +998,7 @@ class BrowserFactory implements FactoryInterface
             'web.de mailcheck'                   => 'web.de mailcheck',
             'screaming frog seo spider'          => 'screaming frog seo spider',
             'androiddownloadmanager'             => 'android download manager',
+            'unibox'                             => 'unibox',
         ];
 
         foreach ($checkBeforeGoHttpClient as $search => $key) {

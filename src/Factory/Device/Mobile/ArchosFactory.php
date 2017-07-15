@@ -27,6 +27,7 @@ class ArchosFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'smart home tablet'     => 'archos arc-sh-q11',
         '80b platinum'          => 'archos 80b platinum',
         '50b neon'              => 'archos 50b neon',
         '101 helium'            => 'archos 101 helium',

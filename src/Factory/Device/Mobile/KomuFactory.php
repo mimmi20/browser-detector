@@ -21,40 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WikoFactory implements Factory\FactoryInterface
+class KomuFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'sunset'        => 'wiko sunset',
-        'plus'          => 'wiko plus',
-        'highway star'  => 'wiko highway star',
-        'fever'         => 'wiko fever',
-        'sunny'         => 'wiko sunny',
-        'pulp fab 4g'   => 'wiko pulp fab 4g',
-        'pulp fab'      => 'wiko pulp fab',
-        'ridge fab 4g'  => 'wiko ridge fab 4g',
-        'ridge fab'     => 'wiko ridge fab',
-        'l5510'         => 'wiko ridge fab',
-        'rainbow jam'   => 'wiko rainbow jam',
-        'ozzy'          => 'wiko ozzy',
-        'highway signs' => 'wiko highway signs',
-        'highway'       => 'wiko highway',
-        'barry'         => 'wiko barry',
-        'wax'           => 'wiko wax',
-        'slide2'        => 'wiko slide 2',
-        'slide'         => 'wiko slide',
-        'jerry'         => 'wiko jerry',
-        'bloom'         => 'wiko bloom',
-        'rainbow 2'     => 'wiko rainbow 2',
-        'rainbow'       => 'wiko rainbow',
-        'lenny'         => 'wiko lenny',
-        'getaway'       => 'wiko getaway',
-        'darkmoon'      => 'wiko darkmoon',
-        'darkside'      => 'wiko darkside',
-        'cink peax 2'   => 'wiko cink peax 2',
-        'kite'          => 'wiko kite',
+        ' k5 '   => 'komu k5',
     ];
 
     /**
@@ -86,6 +59,6 @@ class WikoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general wiko device', $useragent);
+        return $this->loader->load('general komu device', $useragent);
     }
 }
