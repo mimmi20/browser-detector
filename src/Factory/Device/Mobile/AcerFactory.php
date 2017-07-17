@@ -32,6 +32,8 @@ class AcerFactory implements Factory\FactoryInterface
         'a3-a40'       => 'acer a3-a40',
         'a1-841'       => 'acer a1-841',
         ' t08 '        => 'acer t08',
+        ' t07 '        => 'acer t07',
+        ' t06 '        => 'acer t06',
         'a1-840fhd'    => 'acer a1-840fhd',
         'a1-840'       => 'acer a1-840',
         'e380'         => 'acer e380',

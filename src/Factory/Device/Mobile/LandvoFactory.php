@@ -21,17 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class VodafoneFactory implements Factory\FactoryInterface
+class LandvoFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        '985n'        => 'vodafone 985n',
-        'smart 4 max' => 'vodafone smart 4 max',
-        'vfd 600'     => 'vodafone vfd 600',
-        'vf-1497'     => 'vodafone vf-1497',
-        'smart tab 4' => 'vodafone smart tab 4',
+        'l900'   => 'landvo l900',
     ];
 
     /**
@@ -63,6 +59,6 @@ class VodafoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general vodafone device', $useragent);
+        return $this->loader->load('general landvo device', $useragent);
     }
 }

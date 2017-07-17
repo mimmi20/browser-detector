@@ -27,15 +27,16 @@ class DellFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'venue pro'     => 'venue pro',
-        'venue 8 hspa+' => 'venue 8 hspa+',
-        'venue 8 3830'  => 'venue 8 3830',
-        'venue 7 hspa+' => 'venue 7 hspa+',
-        'venue 7 3730'  => 'venue 7 3730',
-        'venue'         => 'venue',
-        'streak 10 pro' => 'streak 10 pro',
-        'streak 7'      => 'streak 7',
-        'streak'        => 'streak',
+        'venue 8 7840'  => 'dell venue 8 7840',
+        'venue pro'     => 'dell venue pro',
+        'venue 8 hspa+' => 'dell venue 8 hspa+',
+        'venue 8 3830'  => 'dell venue 8 3830',
+        'venue 7 hspa+' => 'dell venue 7 hspa+',
+        'venue 7 3730'  => 'dell venue 7 3730',
+        'venue'         => 'dell venue',
+        'streak 10 pro' => 'dell streak 10 pro',
+        'streak 7'      => 'dell streak 7',
+        'streak'        => 'dell streak',
     ];
 
     /**

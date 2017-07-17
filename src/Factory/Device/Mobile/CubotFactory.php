@@ -27,6 +27,7 @@ class CubotFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'one'       => 'cubot one',
         ' cheetah ' => 'cubot cheetah',
         ' h1 '      => 'cubot h1',
         'note_s'    => 'cubot note s',

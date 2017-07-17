@@ -27,6 +27,8 @@ class SamsungFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'sm-g530az'       => 'samsung sm-g530az',
+        'sm-c5000'        => 'samsung sm-c5000',
         'shv-e330k'       => 'samsung shv-e330k',
         'sm-g570f'        => 'samsung sm-g570f',
         'sm-g570y'        => 'samsung sm-g570y',

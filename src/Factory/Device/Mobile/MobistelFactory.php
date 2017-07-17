@@ -32,6 +32,7 @@ class MobistelFactory implements Factory\FactoryInterface
         'cynus t5' => 'mobistel cynus t5',
         'cynus t2' => 'mobistel cynus t2',
         'cynus t1' => 'mobistel cynus t1',
+        'cynus_f9' => 'mobistel cynus f9',
         'cynus f5' => 'mobistel cynus f5',
         'cynus f4' => 'mobistel mt-7521s',
         'cynus f3' => 'mobistel cynus f3',
