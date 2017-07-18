@@ -27,6 +27,7 @@ class TrekStorFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'st10216-3'                     => 'trekstor st10216-3',
         'surftab theatre 13.3'          => 'trekstor surftab theatre 13.3',
         'surftab breeze 7.0 quad'       => 'trekstor surftab breeze 7.0 quad',
         'surftab breeze 10.1 quad plus' => 'trekstor surftab breeze 10.1 quad plus',
@@ -39,12 +40,12 @@ class TrekStorFactory implements Factory\FactoryInterface
         'vt10416-1'                     => 'vt10416-1',
         'st701041'                      => 'st701041',
         'surftab_7.0'                   => 'st701041',
-        'st10216-2'                     => 'st10216-2',
+        'st10216-2'                     => 'trekstor st10216-2',
         'st80216'                       => 'st80216',
         'st80208'                       => 'st80208',
         'st70104'                       => 'st70104',
         'st10416-1'                     => 'st10416-1',
-        'st10216-1'                     => 'st10216-1',
+        'st10216-1'                     => 'trekstor st10216-1',
         'trekstor_liro_color'           => 'liro color',
         'breeze 10.1 quad'              => 'surftab breeze 10.1 quad',
     ];

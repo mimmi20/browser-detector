@@ -5365,7 +5365,7 @@
     "version": "0.0.0",
     "manufacturer": null,
     "bits": 32,
-    "type": "Bot/Crawler"
+    "type": "Browser"
   },
   {
     "ua": "Mozilla/5.0; TOB 6.13 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",
@@ -5373,7 +5373,7 @@
     "version": "6.13.0",
     "manufacturer": null,
     "bits": 32,
-    "type": "Bot/Crawler"
+    "type": "Browser"
   },
   {
     "ua": "Mozilla/5.0 (compatible; MSIE 9.0; TOB 6.13; Windows NT 6.0; Trident/5.0)",
@@ -5381,7 +5381,7 @@
     "version": "6.13.0",
     "manufacturer": null,
     "bits": 32,
-    "type": "Bot/Crawler"
+    "type": "Browser"
   },
   {
     "ua": "ImplisenseBot 1.0",
@@ -7782,5 +7782,77 @@
     "manufacturer": null,
     "bits": 32,
     "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X) PowerPoint/x.0.0",
+    "browser": "PowerPoint",
+    "version": "0.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Basecamp3/1.6.0 Chrome/53.0.2785.143 Electron/1.4.15 Safari/537.36",
+    "browser": "Basecamp3",
+    "version": "1.6.0",
+    "manufacturer": "Basecamp",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (N; Windows NT 6.0) AppleWebKit/534.34 (KHTML, like Gecko) Google Earth/7.1.8.3036 Safari/534.34",
+    "browser": "Google Earth",
+    "version": "7.1.8.3036",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0 Cyberfox/52.1.3",
+    "browser": "Cyberfox",
+    "version": "52.1.3",
+    "manufacturer": "8pecxstudios",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Unibox/28 CFNetwork/711.5.6 Darwin/14.0.0",
+    "browser": "Unibox",
+    "version": "28.0.0",
+    "manufacturer": "eightloops GmbH",
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2623.87 URBrowser/48.1.2564.36 Safari/537.36",
+    "browser": "UR Browser",
+    "version": "48.1.2564.36",
+    "manufacturer": "AdaptiveBee SASU",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36 Chrome/55.0.2883.95 UR/55.1.2883.7",
+    "browser": "UR Browser",
+    "version": "55.1.2883.7",
+    "manufacturer": "AdaptiveBee SASU",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36 Chrome/55.0.2883.87 UR Browser/51.0.2704.51",
+    "browser": "UR Browser",
+    "version": "51.0.2704.51",
+    "manufacturer": "AdaptiveBee SASU",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.0; rv:37.0) Gecko/20100101 Firefox/37.0 DT-Browser/DTB7.37.0.3_03",
+    "browser": "DT Browser",
+    "version": "7.37.0.3.03",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
   }
 ]

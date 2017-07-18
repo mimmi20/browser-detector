@@ -27,7 +27,7 @@ class AnkaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'sx5' => 'sx5',
+        'sx5' => 'anka sx5',
     ];
 
     /**

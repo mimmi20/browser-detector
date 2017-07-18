@@ -1,4 +1,30 @@
 {
+  "general haier device": {
+    "codename": "general Haier Device",
+    "marketingName": "general Haier Device",
+    "manufacturer": "Haier",
+    "brand": "Haier",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": false,
+    "colors": null
+  },
+  "haier w718": {
+    "codename": "W718",
+    "marketingName": "W718",
+    "manufacturer": "Haier",
+    "brand": "Haier",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true,
+    "colors": null
+  },
   "haier w717": {
     "codename": "W717",
     "marketingName": "W717",
@@ -22,6 +48,19 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 720,
     "resolutionHeight": 1280,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "haier l52": {
+    "codename": "L52",
+    "marketingName": "L52",
+    "manufacturer": "Haier",
+    "brand": "Haier",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
     "dualOrientation": true,
     "colors": null
   }

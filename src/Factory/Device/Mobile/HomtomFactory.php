@@ -27,9 +27,10 @@ class HomtomFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ht20' => 'homtom ht20',
-        'ht17' => 'homtom ht17',
-        'ht16' => 'homtom ht16',
+        'ht7 pro' => 'homtom ht7 pro',
+        'ht20'    => 'homtom ht20',
+        'ht17'    => 'homtom ht17',
+        'ht16'    => 'homtom ht16',
     ];
 
     /**

@@ -27,7 +27,7 @@ class AccentFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'touareg8_3g' => 'touareg8 3g',
+        'touareg8_3g' => 'accent touareg8 3g',
     ];
 
     /**

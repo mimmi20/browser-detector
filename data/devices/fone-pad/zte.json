@@ -1,5 +1,5 @@
 {
-  "v9": {
+  "zte v9": {
     "codename": "V9",
     "marketingName": "V9",
     "manufacturer": "Zte",
@@ -9,6 +9,19 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 800,
     "resolutionHeight": 480,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "zte e8q+": {
+    "codename": "E8Q+",
+    "marketingName": "E8Q+",
+    "manufacturer": "Zte",
+    "brand": "Zte",
+    "platform": "android",
+    "type": "fone-pad",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
     "dualOrientation": true,
     "colors": null
   }

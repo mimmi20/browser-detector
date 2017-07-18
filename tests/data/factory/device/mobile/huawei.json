@@ -434,11 +434,11 @@
     "marketingName": "P8",
     "manufacturer": "Huawei",
     "brand": "Huawei",
-    "type": "Mobile Phone",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1080,
+    "height": 1920,
     "colors": null
   },
   {
@@ -2779,6 +2779,32 @@
     "pointingMethod": "touchscreen",
     "width": 1080,
     "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; HUAWEI GRA-UL00 Build/HUAWEIGRA-UL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36",
+    "codeName": "GRA-UL00",
+    "marketingName": "P8 Dual SIM",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; GEM-703LT Build/HUAWEIGEM-703LT) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
+    "codeName": "GEM-703LT",
+    "marketingName": "MediaPad X2 Premium Dual-SIM LTE",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
     "colors": null
   }
 ]

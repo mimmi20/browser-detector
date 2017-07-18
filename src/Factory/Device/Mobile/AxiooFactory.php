@@ -27,7 +27,7 @@ class AxiooFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'picopad_s1' => 'picopad s1',
+        'picopad_s1' => 'axioo picopad s1',
     ];
 
     /**

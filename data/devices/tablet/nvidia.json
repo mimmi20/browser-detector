@@ -13,8 +13,21 @@
     "colors": null
   },
   "nvidia shield tablet k1": {
-    "codename": "SHIELD Tablet K1",
-    "marketingName": "SHIELD Tablet K1",
+    "codename": "Shield K1",
+    "marketingName": "Shield K1",
+    "manufacturer": "NVIDIA",
+    "brand": "NVIDIA",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1920,
+    "resolutionHeight": 1200,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "nvidia shield tablet": {
+    "codename": "Shield",
+    "marketingName": "Shield",
     "manufacturer": "NVIDIA",
     "brand": "NVIDIA",
     "platform": "android",

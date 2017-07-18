@@ -27,6 +27,7 @@ class HisenseFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'hs-g610' => 'hisense hs-g610',
         'u972'    => 'hisense u972',
         'hs-u971' => 'hisense hs-u971',
         'hs-u970' => 'hisense hs-u970',

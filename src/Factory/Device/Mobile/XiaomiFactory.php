@@ -31,7 +31,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'mi 5s'          => 'xiaomitech mi 5s',
         'mi 5'           => 'xiaomitech mi 5',
         'redmi note 4x'  => 'xiaomitech redmi note 4x',
-        'redmi note 4'   => 'xiaomitech redmi note 4',
+        'note 4'         => 'xiaomitech redmi note 4',
         'mi note pro'    => 'xiaomitech mi note pro',
         'mi max'         => 'mi max',
         'mi 4s'          => 'xiaomitech mi 4s',
@@ -57,6 +57,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'hm 1sc'         => 'hm 1sc',
         'hm 1s'          => 'hm 1s',
         '2014813'        => 'xiaomitech hongmi 2 4g',
+        '2014011'        => 'xiaomitech hongmi 1s',
     ];
 
     /**

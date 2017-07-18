@@ -27,7 +27,7 @@ class AmlogicFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm8' => 'm8',
+        'm8' => 'amlogic m8',
     ];
 
     /**

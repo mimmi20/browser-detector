@@ -27,8 +27,8 @@ class AxgioFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'wing-w2' => 'wing w2',
-        'neon-n1' => 'neon n1',
+        'wing-w2' => 'axgio wing w2',
+        'neon-n1' => 'axgio neon n1',
     ];
 
     /**

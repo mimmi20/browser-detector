@@ -27,7 +27,7 @@ class AssistantFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ap-804' => 'ap-804',
+        'ap-804' => 'assistant ap-804',
     ];
 
     /**

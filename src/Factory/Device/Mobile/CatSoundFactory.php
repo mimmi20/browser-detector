@@ -27,11 +27,12 @@ class CatSoundFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'catnova8'               => 'cat nova 8',
-        'nova'                   => 'nova',
-        'cat tablet galactica x' => 'galactica x',
-        'stargate'               => 'stargate',
-        'cat tablet phoenix'     => 'phoenix',
+        'cathelix'               => 'catsound cathelix',
+        'catnova8'               => 'catsound cat nova 8',
+        'nova'                   => 'catsound nova',
+        'cat tablet galactica x' => 'catsound galactica x',
+        'stargate'               => 'catsound stargate',
+        'cat tablet phoenix'     => 'catsound phoenix',
         'cat tablet'             => 'catsound tablet',
     ];
 

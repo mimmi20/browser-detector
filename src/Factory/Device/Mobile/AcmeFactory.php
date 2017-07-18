@@ -27,7 +27,8 @@ class AcmeFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tb1016' => 'acme tb1016',
+        'tb717-3g' => 'acme tb717-3g',
+        'tb1016'   => 'acme tb1016',
     ];
 
     /**

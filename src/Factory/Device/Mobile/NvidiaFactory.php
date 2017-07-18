@@ -28,6 +28,7 @@ class NvidiaFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'shield tablet k1' => 'nvidia shield tablet k1',
+        'shield tablet'    => 'nvidia shield tablet',
     ];
 
     /**

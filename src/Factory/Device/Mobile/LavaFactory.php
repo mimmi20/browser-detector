@@ -27,6 +27,7 @@ class LavaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'iris x1'   => 'lava iris x1',
         'iris700'   => 'lava iris 700',
         'pixel v2+' => 'lava pixel v2+',
         'iris x8s'  => 'lava iris x8s',

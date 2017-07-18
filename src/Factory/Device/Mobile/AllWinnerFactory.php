@@ -27,7 +27,7 @@ class AllWinnerFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'a10'              => 'a10',
+        'a10'              => 'allwinner a10',
         'allwinner-tablet' => 'allwinner tablet',
     ];
 

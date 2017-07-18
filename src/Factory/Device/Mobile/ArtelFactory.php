@@ -27,7 +27,7 @@ class ArtelFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'adi_5s' => 'adi5s',
+        'adi_5s' => 'artel adi5s',
     ];
 
     /**

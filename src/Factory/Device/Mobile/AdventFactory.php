@@ -27,7 +27,7 @@ class AdventFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'vega' => 'p10an01',
+        'vega' => 'advent p10an01',
     ];
 
     /**

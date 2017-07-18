@@ -34,7 +34,7 @@ class AppleFactory implements Factory\FactoryInterface
         'ipod3,1'   => 'apple ipod touch version 3',
         'ipod2,1'   => 'apple ipod touch version 2',
         'ipod1,1'   => 'apple ipod touch version 1',
-        'ipod'      => 'ipod touch',
+        'ipod'      => 'apple ipod touch',
         'ipad6,8'   => 'apple ipad pro version 1',
         'ipad6,7'   => 'apple ipad pro version 1',
         'ipad6,4'   => 'apple ipad pro 9.7 version 1',
@@ -66,7 +66,7 @@ class AppleFactory implements Factory\FactoryInterface
         'ipad2,2'   => 'apple ipad version 2',
         'ipad2,1'   => 'apple ipad version 2',
         'ipad1,1'   => 'apple ipad version 1',
-        'ipad'      => 'ipad',
+        'ipad'      => 'apple ipad',
         'iphone9,4' => 'apple iphone 9,4',
         'iphone9,3' => 'apple iphone 9,3',
         'iphone8,4' => 'apple iphone se',
@@ -105,7 +105,7 @@ class AppleFactory implements Factory\FactoryInterface
         'iphone2,1' => 'apple iphone 3gs',
         'iphone1,2' => 'apple iphone 3g',
         'iphone1,1' => 'apple iphone 2g',
-        'iph'       => 'iphone',
+        'iph'       => 'apple iphone',
     ];
 
     /**
@@ -138,11 +138,11 @@ class AppleFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
-            return $this->loader->load('ipad', $useragent);
+            return $this->loader->load('apple ipad', $useragent);
         }
 
         if (preg_match('/Puffin\/[\d\.]+IP/', $useragent)) {
-            return $this->loader->load('iphone', $useragent);
+            return $this->loader->load('apple iphone', $useragent);
         }
 
         return $this->loader->load('general apple device', $useragent);

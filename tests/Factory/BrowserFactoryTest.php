@@ -34,21 +34,16 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
     private $platformFactory = null;
 
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
     protected function setUp()
     {
-        $this->cache  = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $loader       = new BrowserLoader($this->cache);
+        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
+        $loader       = new BrowserLoader($cache);
         $this->object = new BrowserFactory($loader);
 
-        $platformLoader        = new PlatformLoader($this->cache);
+        $platformLoader        = new PlatformLoader($cache);
         $this->platformFactory = new PlatformFactory($platformLoader);
     }
 
