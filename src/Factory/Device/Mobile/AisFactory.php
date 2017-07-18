@@ -27,7 +27,7 @@ class AisFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'iris708' => 'iris 708',
+        'iris708' => 'ais iris 708',
     ];
 
     /**

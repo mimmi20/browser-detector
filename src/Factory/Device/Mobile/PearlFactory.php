@@ -28,9 +28,9 @@ class PearlFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'x10.quad.fm' => 'pearl x10.quad.fm',
-        'x10.dual+' => 'pearl x10+',
-        'x10.dual'  => 'pearl x10',
-        'x7g'       => 'pearl touchlet x7g',
+        'x10.dual+'   => 'pearl x10+',
+        'x10.dual'    => 'pearl x10',
+        'x7g'         => 'pearl touchlet x7g',
     ];
 
     /**

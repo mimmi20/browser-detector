@@ -162,7 +162,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PantechFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['hp', 'p160u', 'touchpad', 'pixi', 'palm', 'blazer', 'cm_tenderloin'], false)) {
+        if ($s->containsAny(['hp', 'p160u', 'touchpad', 'pixi', 'palm', 'blazer', 'cm_tenderloin', 'slate'], false)) {
             return (new Mobile\HpFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1472,7 +1472,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DnsFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny([' M3 ', 'F103 Pro', ' D10 '], true)) {
+        if ($s->containsAny([' M3 ', 'F103 Pro'], true)) {
             return (new Mobile\GioneeFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2193,7 +2193,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if ($s->contains(' d10 ', false)) {
-            return (new Mobile\XcodyFactory($this->loader))->detect($useragent, $s);
+            return (new Mobile\XgodyFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('i545', true)) {

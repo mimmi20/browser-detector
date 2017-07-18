@@ -154,7 +154,6 @@ class LgFactory implements Factory\FactoryInterface
         'f240s'         => 'f240s',
         'f240k'         => 'f240k',
         'f220k'         => 'f220k',
-        'f200k'         => 'f200k',
         'f160k'         => 'f160k',
         'f100s'         => 'f100s',
         'f100l'         => 'f100l',

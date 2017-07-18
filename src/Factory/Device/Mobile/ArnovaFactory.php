@@ -27,15 +27,15 @@ class ArnovaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        '101 g4'   => '101 g4',
-        'an10dg3'  => '10d g3',
-        'an10bg3'  => 'an10bg3',
-        'an9g2i'   => '9 g2',
-        'an7fg3'   => '7f g3',
-        'an7dg3'   => '7d g3',
-        'an7cg2'   => '7c g2',
-        'an7bg2dt' => '7b g2 dt',
-        'archm901' => 'archm901',
+        '101 g4'   => 'arnova 101 g4',
+        'an10dg3'  => 'arnova 10d g3',
+        'an10bg3'  => 'arnova an10bg3',
+        'an9g2i'   => 'arnova 9 g2',
+        'an7fg3'   => 'arnova 7f g3',
+        'an7dg3'   => 'arnova 7d g3',
+        'an7cg2'   => 'arnova 7c g2',
+        'an7bg2dt' => 'arnova 7b g2 dt',
+        'archm901' => 'arnova archm901',
     ];
 
     /**

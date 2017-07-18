@@ -27,7 +27,7 @@ class AmoiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'n820' => 'n820',
+        'n820' => 'amoi n820',
     ];
 
     /**

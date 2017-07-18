@@ -27,18 +27,13 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
     private $object = null;
 
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
-     */
-    private $cache = null;
-
-    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
     protected function setUp()
     {
-        $this->cache  = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $loader       = new DeviceLoader($this->cache);
+        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
+        $loader       = new DeviceLoader($cache);
         $this->object = new DeviceFactory($loader);
     }
 

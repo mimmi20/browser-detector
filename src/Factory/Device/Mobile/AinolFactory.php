@@ -27,8 +27,8 @@ class AinolFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'numy_note_9' => 'numy note 9',
-        'novo7fire'   => 'novo 7 fire',
+        'numy_note_9' => 'ainol numy note 9',
+        'novo7fire'   => 'ainol novo 7 fire',
     ];
 
     /**

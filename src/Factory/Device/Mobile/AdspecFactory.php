@@ -27,7 +27,7 @@ class AdspecFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'adtab 7 lite' => 'adtab 7 lite',
+        'adtab 7 lite' => 'adspec adtab 7 lite',
     ];
 
     /**

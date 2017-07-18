@@ -27,7 +27,7 @@ class ArkFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'benefit m3s' => 'benefit m3s',
+        'benefit m3s' => 'ark benefit m3s',
     ];
 
     /**
