@@ -27,8 +27,8 @@ class FeitengFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'gt-h9500' => 'gt-h9500',
-        'h7100'    => 'h7100',
+        'gt-h9500' => 'feiteng gt-h9500',
+        'h7100'    => 'feiteng h7100',
     ];
 
     /**

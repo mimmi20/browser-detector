@@ -28,8 +28,8 @@ class GioneeFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'f103 pro' => 'gionee f103 pro',
-        ' m3 '     => 'm3',
-        'gionee50' => 'gionee50',
+        ' m3 '     => 'gionee m3',
+        'gionee50' => 'gionee 50',
     ];
 
     /**

@@ -27,7 +27,7 @@ class ErgoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tab crystal lite' => 'tab crystal lite',
+        'tab crystal lite' => 'ergo tab crystal lite',
     ];
 
     /**

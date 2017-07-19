@@ -27,7 +27,7 @@ class GeniatechFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'mx enjoy tv box' => 'mx enjoy tv box',
+        'mx enjoy tv box' => 'geniatech mx enjoy tv box',
     ];
 
     /**

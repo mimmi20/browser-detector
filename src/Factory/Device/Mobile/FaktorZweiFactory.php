@@ -27,7 +27,7 @@ class FaktorZweiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'fx2-pad10' => '812223',
+        'fx2-pad10' => 'faktorzwei 812223',
     ];
 
     /**

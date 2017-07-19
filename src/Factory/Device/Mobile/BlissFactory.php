@@ -27,7 +27,7 @@ class BlissFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'pad b9712kb' => 'pad b9712kb',
+        'pad b9712kb' => 'bliss pad b9712kb',
     ];
 
     /**

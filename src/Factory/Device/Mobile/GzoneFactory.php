@@ -27,7 +27,7 @@ class GzoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'cal21' => 'cal21',
+        'cal21' => 'gzone cal21',
     ];
 
     /**

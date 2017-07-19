@@ -27,7 +27,7 @@ class DinoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'dino762' => '762 a9',
+        'dino762' => 'dino 762 a9',
     ];
 
     /**

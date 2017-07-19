@@ -27,7 +27,7 @@ class GlobexFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'gu7814' => 'gu7814',
+        'gu7814' => 'globex gu7814',
     ];
 
     /**

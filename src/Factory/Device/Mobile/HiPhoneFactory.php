@@ -27,7 +27,7 @@ class HiPhoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'v919' => 'v919',
+        'v919' => 'hiphone v919',
     ];
 
     /**

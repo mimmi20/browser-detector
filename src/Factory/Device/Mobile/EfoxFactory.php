@@ -27,7 +27,7 @@ class EfoxFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'smart-e5' => 'smart e5',
+        'smart-e5' => 'efox smart e5',
     ];
 
     /**

@@ -27,8 +27,8 @@ class EasypixFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'junior 4.0'  => 'junior 4.0',
-        'easypad 970' => 'easypad 970',
+        'junior 4.0'  => 'easypix junior 4.0',
+        'easypad 970' => 'easypix easypad 970',
     ];
 
     /**

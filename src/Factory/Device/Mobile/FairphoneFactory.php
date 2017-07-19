@@ -28,8 +28,8 @@ class FairphoneFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'fp2'  => 'fairphone fp2',
-        'fp1u' => 'fp1u',
-        'fp1'  => 'fp1',
+        'fp1u' => 'fairphone fp1u',
+        'fp1'  => 'fairphone fp1',
     ];
 
     /**

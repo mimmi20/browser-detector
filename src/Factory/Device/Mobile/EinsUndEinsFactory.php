@@ -27,7 +27,7 @@ class EinsUndEinsFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'smartpad' => 'smartpad',
+        'smartpad' => '1&1 smartpad',
     ];
 
     /**

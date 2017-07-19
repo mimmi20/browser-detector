@@ -27,15 +27,15 @@ class DnsFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        's5701'   => 's5701',
-        's4505m'  => 's4505m',
-        's4505'   => 's4505',
-        's4503q'  => 's4503q',
-        's4502m'  => 's4502m',
-        's4502'   => 's4502',
-        's4501m'  => 's4501m',
-        's4008'   => 's4008',
-        'mb40ii1' => 'mb40ii1',
+        's5701'   => 'dns s5701',
+        's4505m'  => 'dns s4505m',
+        's4505'   => 'dns s4505',
+        's4503q'  => 'dns s4503q',
+        's4502m'  => 'dns s4502m',
+        's4502'   => 'dns s4502',
+        's4501m'  => 'dns s4501m',
+        's4008'   => 'dns s4008',
+        'mb40ii1' => 'dns mb40ii1',
     ];
 
     /**

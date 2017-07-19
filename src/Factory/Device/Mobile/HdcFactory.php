@@ -27,7 +27,7 @@ class HdcFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'galaxy s3 ex' => 'i9300',
+        'galaxy s3 ex' => 'hdc i9300',
     ];
 
     /**

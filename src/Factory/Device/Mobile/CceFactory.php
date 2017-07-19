@@ -27,7 +27,7 @@ class CceFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'sk352' => 'sk352',
+        'sk352' => 'cce sk352',
     ];
 
     /**

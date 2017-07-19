@@ -27,7 +27,7 @@ class EtulineFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        't880g' => 't880g',
+        't880g' => 'etuline t880g',
     ];
 
     /**

@@ -27,7 +27,7 @@ class HonlinFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'pc1088' => 'pc1088',
+        'pc1088' => 'honlin pc1088',
     ];
 
     /**

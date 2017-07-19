@@ -28,8 +28,8 @@ class BmobileFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'ax810' => 'bmobile ax810',
-        'ax540' => 'ax540',
-        'ax512' => 'ax512',
+        'ax540' => 'bmobile ax540',
+        'ax512' => 'bmobile ax512',
     ];
 
     /**

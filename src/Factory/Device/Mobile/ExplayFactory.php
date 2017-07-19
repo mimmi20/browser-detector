@@ -27,11 +27,11 @@ class ExplayFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'a320'        => 'explay-a320',
-        'surfer 7.34' => 'surfer 7.34 3g',
-        'm1_plus'     => 'm1 plus',
-        'd7.2 3g'     => 'd7.2 3g',
-        'art 3g'      => 'art 3g',
+        'a320'        => 'explay a320',
+        'surfer 7.34' => 'explay surfer 7.34 3g',
+        'm1_plus'     => 'explay m1 plus',
+        'd7.2 3g'     => 'explay d7.2 3g',
+        'art 3g'      => 'explay art 3g',
     ];
 
     /**
