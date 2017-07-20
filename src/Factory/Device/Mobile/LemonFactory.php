@@ -27,7 +27,7 @@ class LemonFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'b556' => 'b556',
+        'b556' => 'lemon b556',
     ];
 
     /**

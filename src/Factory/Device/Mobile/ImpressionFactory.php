@@ -27,9 +27,9 @@ class ImpressionFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'impad 9708'    => 'impad 9708',
-        'impad6213m_v2' => 'impad 6213m v2',
-        'impad 0413'    => 'impad 0413',
+        'impad 9708'    => 'impression impad 9708',
+        'impad6213m_v2' => 'impression impad 6213m v2',
+        'impad 0413'    => 'impression impad 0413',
     ];
 
     /**

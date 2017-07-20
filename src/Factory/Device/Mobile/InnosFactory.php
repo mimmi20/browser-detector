@@ -27,7 +27,7 @@ class InnosFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'd6000' => 'd6000',
+        'd6000' => 'innos d6000',
     ];
 
     /**

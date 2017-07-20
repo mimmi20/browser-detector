@@ -27,7 +27,7 @@ class KoboFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'kobo touch' => 'touch',
+        'kobo touch' => 'kobo touch',
     ];
 
     /**

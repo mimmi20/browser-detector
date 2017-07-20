@@ -27,7 +27,7 @@ class MagicFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'w700' => 'w700',
+        'w700' => 'magic w700',
     ];
 
     /**

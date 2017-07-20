@@ -27,7 +27,7 @@ class MegaFonFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'sp-ai' => 'sp-ai',
+        'sp-ai' => 'megafon sp-ai',
     ];
 
     /**

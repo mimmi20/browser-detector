@@ -28,8 +28,8 @@ class NgmFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'forward_art'    => 'ngm forward art',
-        'miracle'        => 'wemove miracle',
-        'dynamic racing' => 'dynamic racing gp',
+        'miracle'        => 'ngm wemove miracle',
+        'dynamic racing' => 'ngm dynamic racing gp',
     ];
 
     /**

@@ -27,7 +27,7 @@ class MinixFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'neo-x5' => 'neo x5',
+        'neo-x5' => 'minix neo x5',
     ];
 
     /**

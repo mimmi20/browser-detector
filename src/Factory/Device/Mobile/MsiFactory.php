@@ -27,7 +27,7 @@ class MsiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'primo76' => 'primo76',
+        'primo76' => 'msi primo76',
     ];
 
     /**

@@ -27,7 +27,7 @@ class NeoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'n003' => 'n003',
+        'n003' => 'neo n003',
     ];
 
     /**

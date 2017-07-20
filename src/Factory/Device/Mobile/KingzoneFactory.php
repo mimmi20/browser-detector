@@ -27,7 +27,7 @@ class KingzoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'k1 turbo' => 'kz-168',
+        'k1 turbo' => 'kingzone kz-168',
     ];
 
     /**

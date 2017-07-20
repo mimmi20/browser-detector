@@ -27,13 +27,13 @@ class ModecomFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'freetab 9702 hd x4'      => 'freetab 9702 hd x4',
-        'freetab 9000 ips ic'     => 'freetab 9000 ips ic',
-        'freetab 8001 ips x2 3g+' => 'freetab 8001 ips x2 3g+',
-        'freetab 7800 ips ic'     => 'freetab 7800 ips ic',
-        'freetab 7001 hd ic'      => 'freetab 7001 hd ic',
-        'freetab 1014 ips x4 3g+' => 'freetab 1014 ips x4 3g+',
-        'freetab 1001'            => 'freetab 1001',
+        'freetab 9702 hd x4'      => 'modecom freetab 9702 hd x4',
+        'freetab 9000 ips ic'     => 'modecom freetab 9000 ips ic',
+        'freetab 8001 ips x2 3g+' => 'modecom freetab 8001 ips x2 3g+',
+        'freetab 7800 ips ic'     => 'modecom freetab 7800 ips ic',
+        'freetab 7001 hd ic'      => 'modecom freetab 7001 hd ic',
+        'freetab 1014 ips x4 3g+' => 'modecom freetab 1014 ips x4 3g+',
+        'freetab 1001'            => 'modecom freetab 1001',
     ];
 
     /**

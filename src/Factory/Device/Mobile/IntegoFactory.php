@@ -27,7 +27,7 @@ class IntegoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'px-0905' => 'px-0905',
+        'px-0905' => 'intego px-0905',
     ];
 
     /**

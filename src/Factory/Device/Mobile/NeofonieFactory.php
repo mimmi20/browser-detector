@@ -27,7 +27,7 @@ class NeofonieFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'wetab' => 'wetab',
+        'wetab' => 'neofonie wetab',
     ];
 
     /**

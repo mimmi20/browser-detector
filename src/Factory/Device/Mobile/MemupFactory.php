@@ -27,7 +27,7 @@ class MemupFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'slidepad' => 'slidepad',
+        'slidepad' => 'memup slidepad',
     ];
 
     /**

@@ -27,7 +27,7 @@ class MastoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'g9' => 'g9',
+        'g9' => 'mastone g9',
     ];
 
     /**

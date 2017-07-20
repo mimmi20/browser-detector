@@ -27,7 +27,7 @@ class LogicomFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        's9782'      => 's9782',
+        's9782'      => 'logicom s9782',
         'l-ement500' => 'logicom l-ement500',
     ];
 

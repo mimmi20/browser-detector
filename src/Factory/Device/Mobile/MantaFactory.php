@@ -27,7 +27,7 @@ class MantaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'mid802' => 'mid802',
+        'mid802' => 'manta mid802',
     ];
 
     /**

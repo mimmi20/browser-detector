@@ -27,7 +27,7 @@ class NextwayFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'f10x' => 'f10x',
+        'f10x' => 'nextway f10x',
     ];
 
     /**

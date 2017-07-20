@@ -27,8 +27,8 @@ class NuqleoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'zaffire 1010' => 'zaffire 1010',
-        'zaffire 785'  => 'zaffire 785',
+        'zaffire 1010' => 'nuqleo zaffire 1010',
+        'zaffire 785'  => 'nuqleo zaffire 785',
     ];
 
     /**

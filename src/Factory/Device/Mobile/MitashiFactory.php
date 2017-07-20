@@ -27,7 +27,7 @@ class MitashiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ap-105' => 'ap-105',
+        'ap-105' => 'mitashi ap-105',
     ];
 
     /**

@@ -27,10 +27,10 @@ class NecFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'n905i' => 'n905i',
-        'n705i' => 'n705i',
-        '0912'  => '0912',
-        'n-06e' => 'n-06e',
+        'n905i' => 'nec n905i',
+        'n705i' => 'nec n705i',
+        '0912'  => 'nec 0912',
+        'n-06e' => 'nec n-06e',
     ];
 
     /**
