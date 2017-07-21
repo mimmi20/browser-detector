@@ -31,11 +31,11 @@ class OneplusFactory implements Factory\FactoryInterface
         'e1001' => 'oneplus e1001',
         'a3003' => 'oneplus a3003',
         'a0001' => 'oneplus a0001',
-        'a3000' => 'a3000',
-        'a2001' => 'a2001',
-        'a2003' => 'a2003',
-        'a2005' => 'a2005',
-        'e1003' => 'e1003',
+        'a3000' => 'oneplus a3000',
+        'a2001' => 'oneplus a2001',
+        'a2003' => 'oneplus a2003',
+        'a2005' => 'oneplus a2005',
+        'e1003' => 'oneplus e1003',
     ];
 
     /**

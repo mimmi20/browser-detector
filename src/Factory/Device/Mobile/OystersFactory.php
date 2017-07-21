@@ -27,8 +27,8 @@ class OystersFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'pacific800i' => 'pacific 800i',
-        'pacific 800' => 'pacific 800',
+        'pacific800i' => 'oysters pacific 800i',
+        'pacific 800' => 'oysters pacific 800',
     ];
 
     /**

@@ -27,13 +27,13 @@ class PipoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'p93g'  => 'p9 3g',
-        'm9pro' => 'q107',
-        'm7t'   => 'm7t',
-        'm6pro' => 'q977',
-        'i75'   => 'i75',
-        'm83g'  => 'm8 3g',
-        ' m6 '  => 'm6',
+        'p93g'  => 'pipo p9 3g',
+        'm9pro' => 'pipo q107',
+        'm7t'   => 'pipo m7t',
+        'm6pro' => 'pipo q977',
+        'i75'   => 'pipo i75',
+        'm83g'  => 'pipo m8 3g',
+        ' m6 '  => 'pipo m6',
     ];
 
     /**

@@ -27,7 +27,7 @@ class ReellexFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tab-97e-01' => 'tab-97e-01',
+        'tab-97e-01' => 'reellex tab-97e-01',
     ];
 
     /**

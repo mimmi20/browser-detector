@@ -27,9 +27,9 @@ class OlivettiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'op111' => 'op111',
-        'op110' => 'op110',
-        'op070' => 'olipad 70',
+        'op111' => 'olivetti op111',
+        'op110' => 'olivetti op110',
+        'op070' => 'olivetti olipad 70',
     ];
 
     /**

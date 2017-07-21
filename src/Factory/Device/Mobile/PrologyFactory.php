@@ -27,7 +27,7 @@ class PrologyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tab-970' => 'tab-970',
+        'tab-970' => 'prology tab-970',
     ];
 
     /**

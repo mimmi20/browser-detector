@@ -28,7 +28,7 @@ class RossMoorFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'rm-997' => 'ross&moor rm-997',
-        'rm-560' => 'rm-560',
+        'rm-560' => 'ross&moor rm-560',
     ];
 
     /**

@@ -27,7 +27,7 @@ class RoverPadFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'air a70' => 'air a70',
+        'air a70' => 'roverpad air a70',
     ];
 
     /**

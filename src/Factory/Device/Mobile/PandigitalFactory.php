@@ -27,10 +27,10 @@ class PandigitalFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'sprnova1'                             => 'supernova',
-        'opc1'                                 => 'novel',
-        'sl20_20101210_b_pd_inx7e_eng_6410pop' => 'novel',
-        'pandigital9hr'                        => '9hr',
+        'sprnova1'                             => 'pandigital supernova',
+        'opc1'                                 => 'pandigital novel',
+        'sl20_20101210_b_pd_inx7e_eng_6410pop' => 'pandigital novel',
+        'pandigital9hr'                        => 'pandigital 9hr',
     ];
 
     /**

@@ -27,7 +27,7 @@ class RugGearFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'rg500' => 'rg500',
+        'rg500' => 'ruggear rg500',
     ];
 
     /**

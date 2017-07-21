@@ -27,7 +27,7 @@ class QumoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'quest_450' => 'quest 450',
+        'quest_450' => 'qumo quest 450',
     ];
 
     /**

@@ -27,7 +27,7 @@ class PmediaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'pmsmart450' => 'pmsmart450',
+        'pmsmart450' => 'pmedia pmsmart450',
     ];
 
     /**
