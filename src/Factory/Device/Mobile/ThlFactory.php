@@ -30,7 +30,7 @@ class ThlFactory implements Factory\FactoryInterface
         't9'        => 'thl t9',
         'w200'      => 'thl w200',
         'w100'      => 'thl w100',
-        'w8_beyond' => 'thl w8 beyond',
+        'w8_beyond' => 'thl w8',
         'thl w8'    => 'thl w8',
         'thl w7'    => 'thl w7',
         't6s'       => 'thl t6s',

@@ -27,13 +27,13 @@ class SonyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'nsz-gs7/gx70' => 'nsz-gs7-gx70',
-        'kdl32hx755'   => 'kdl32hx755',
-        'kdl32w655a'   => 'kdl32w655a',
-        'kdl37ex720'   => 'kdl37ex720',
-        'kdl42w655a'   => 'kdl42w655a',
-        'kdl40ex720'   => 'kdl40ex720',
-        'kdl50w815b'   => 'kdl50w815b',
+        'nsz-gs7/gx70' => 'sony nsz-gs7-gx70',
+        'kdl32hx755'   => 'sony kdl32hx755',
+        'kdl32w655a'   => 'sony kdl32w655a',
+        'kdl37ex720'   => 'sony kdl37ex720',
+        'kdl42w655a'   => 'sony kdl42w655a',
+        'kdl40ex720'   => 'sony kdl40ex720',
+        'kdl50w815b'   => 'sony kdl50w815b',
     ];
 
     /**

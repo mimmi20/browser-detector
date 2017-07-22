@@ -203,7 +203,6 @@ class HuaweiFactory implements Factory\FactoryInterface
         'mediapad m1 8.0'                 => 'huawei mediapad m1 8.0',
         'mediapad 10 link+'               => 'huawei mediapad 10+',
         'mediapad 10 fhd'                 => 'huawei mediapad 10 fhd',
-        'mediapad 10 link'                => 'huawei s7-301w 10 link',
         'mediapad 7 lite'                 => 'huawei mediapad 7 lite',
         'mediapad 7 classic'              => 'huawei mediapad 7 classic',
         'mediapad 7 youth'                => 'huawei mediapad 7 youth',

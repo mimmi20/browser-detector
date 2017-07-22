@@ -57,8 +57,8 @@ class HtcFactory implements Factory\FactoryInterface
         't8282'                   => 'htc touch hd t8282',
         '7 pro t7576'             => 'htc t7576',
         'hd2_t8585'               => 'htc t8585',
-        'htc hd2'                 => 'htc hd2',
-        'htc_hd2'                 => 'htc hd2',
+        'htc hd2'                 => 'htc t8585',
+        'htc_hd2'                 => 'htc t8585',
         'hd mini'                 => 'htc mini t5555',
         'hd_mini'                 => 'htc mini t5555',
         'titan'                   => 'htc x310e',
@@ -324,7 +324,7 @@ class HtcFactory implements Factory\FactoryInterface
         }
 
         if ($s->containsAny(['One', 'ONE'], true)) {
-            return $this->loader->load('m7', $useragent);
+            return $this->loader->load('htc m7', $useragent);
         }
 
         return $this->loader->load('general htc device', $useragent);
