@@ -27,7 +27,7 @@ class SpvFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm700' => 'm700',
+        'm700' => 'spv m700',
     ];
 
     /**

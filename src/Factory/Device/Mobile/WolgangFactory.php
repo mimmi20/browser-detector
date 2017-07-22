@@ -27,7 +27,7 @@ class WolgangFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'at-as40se' => 'at-as40se',
+        'at-as40se' => 'wolgang at-as40se',
     ];
 
     /**

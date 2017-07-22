@@ -27,14 +27,14 @@ class TechnisatFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'technipad_10-3g' => 'technipad 10 3g',
-        'technipad 10-3g' => 'technipad 10 3g',
-        'technipad_10'    => 'technipad 10',
-        'technipad 10'    => 'technipad 10',
-        'aqipad_7g'       => 'aqiston aqipad 7g',
-        'aqipad 7g'       => 'aqiston aqipad 7g',
-        'techniphone_5'   => 'techniphone 5',
-        'techniphone 5'   => 'techniphone 5',
+        'technipad_10-3g' => 'technisat technipad 10 3g',
+        'technipad 10-3g' => 'technisat technipad 10 3g',
+        'technipad_10'    => 'technisat technipad 10',
+        'technipad 10'    => 'technisat technipad 10',
+        'aqipad_7g'       => 'technisat aqiston aqipad 7g',
+        'aqipad 7g'       => 'technisat aqiston aqipad 7g',
+        'techniphone_5'   => 'technisat techniphone 5',
+        'techniphone 5'   => 'technisat techniphone 5',
     ];
 
     /**

@@ -27,7 +27,7 @@ class ZenithinkFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'zt180' => 'zt180',
+        'zt180' => 'zenithink zt180',
     ];
 
     /**

@@ -27,9 +27,9 @@ class ZekiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tbdc1093' => 'tbdc1093',
-        'tbdb863'  => 'tbdb863',
-        'tbd1083'  => 'tbd1083',
+        'tbdc1093' => 'zeki tbdc1093',
+        'tbdb863'  => 'zeki tbdb863',
+        'tbd1083'  => 'zeki tbd1083',
     ];
 
     /**

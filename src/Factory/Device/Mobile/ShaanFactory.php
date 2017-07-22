@@ -27,7 +27,7 @@ class ShaanFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'iball majestic 2.4d' => 'majestic 2.4d',
+        'iball majestic 2.4d' => 'shaan majestic 2.4d',
     ];
 
     /**

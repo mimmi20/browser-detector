@@ -27,7 +27,7 @@ class TbTouchFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ignis 8' => 'ignis 8',
+        'ignis 8' => 'tbtouch ignis 8',
     ];
 
     /**

@@ -27,7 +27,7 @@ class SunupFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ok999' => 'ok999',
+        'ok999' => 'sunup ok999',
     ];
 
     /**

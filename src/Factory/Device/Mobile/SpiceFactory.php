@@ -27,9 +27,9 @@ class SpiceFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'mi-424' => 'mi-424',
-        'qt-75'  => 'qt-75',
-        'i2i'    => 'i2i',
+        'mi-424' => 'spice mi-424',
+        'qt-75'  => 'spice qt-75',
+        'i2i'    => 'spice i2i',
     ];
 
     /**

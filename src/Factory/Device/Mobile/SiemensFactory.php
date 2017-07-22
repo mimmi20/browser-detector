@@ -27,7 +27,7 @@ class SiemensFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'sie-s65' => 's65',
+        'sie-s65' => 'siemens s65',
     ];
 
     /**

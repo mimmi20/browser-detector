@@ -27,10 +27,10 @@ class TeslaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ttl7'         => 'ttl7',
-        'tth7'         => 'tth7',
-        'tablet_785'   => 'tablet 785',
-        'tablet_l7_3g' => 'tablet l7 3g',
+        'ttl7'         => 'tesla ttl7',
+        'tth7'         => 'tesla tth7',
+        'tablet_785'   => 'tesla tablet 785',
+        'tablet_l7_3g' => 'tesla tablet l7 3g',
     ];
 
     /**

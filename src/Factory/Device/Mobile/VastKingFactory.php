@@ -27,7 +27,7 @@ class VastKingFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm717r-hd' => 'm717r-hd',
+        'm717r-hd' => 'vastking m717r-hd',
     ];
 
     /**

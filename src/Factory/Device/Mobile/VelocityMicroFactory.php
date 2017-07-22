@@ -27,7 +27,7 @@ class VelocityMicroFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        't408' => 'cruz',
+        't408' => 'velocitymicro cruz',
     ];
 
     /**

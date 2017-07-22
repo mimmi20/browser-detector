@@ -27,7 +27,7 @@ class YusuFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'e1107' => 'e1107',
+        'e1107' => 'yusu e1107',
     ];
 
     /**

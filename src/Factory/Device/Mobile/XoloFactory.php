@@ -28,7 +28,7 @@ class XoloFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'one'    => 'xolo one',
-        'a1000s' => 'a1000s',
+        'a1000s' => 'xolo a1000s',
     ];
 
     /**

@@ -27,9 +27,9 @@ class SprintFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ppc-6700'  => '6700',
-        'apa9292kt' => '9292',
-        'apa7373kt' => 'a7373',
+        'ppc-6700'  => 'sprint 6700',
+        'apa9292kt' => 'sprint 9292',
+        'apa7373kt' => 'sprint a7373',
     ];
 
     /**

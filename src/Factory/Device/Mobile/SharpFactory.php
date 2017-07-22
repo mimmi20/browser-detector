@@ -28,16 +28,16 @@ class SharpFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'shl25'          => 'sharp shl25',
-        'sharp-tq-gx30i' => 'tq-gx30i',
-        'sh-10d'         => 'sh-10d',
-        'sh-01f'         => 'sh-01f',
-        'sh8128u'        => 'sh8128u',
-        'sh7228u'        => 'sh7228u',
-        '306sh'          => '306sh',
-        '304sh'          => '304sh',
-        'sh80f'          => 'sh80f',
-        'sh05c'          => 'sh-05c',
-        'is05'           => 'is05',
+        'sharp-tq-gx30i' => 'sharp tq-gx30i',
+        'sh-10d'         => 'sharp sh-10d',
+        'sh-01f'         => 'sharp sh-01f',
+        'sh8128u'        => 'sharp sh8128u',
+        'sh7228u'        => 'sharp sh7228u',
+        '306sh'          => 'sharp 306sh',
+        '304sh'          => 'sharp 304sh',
+        'sh80f'          => 'sharp sh80f',
+        'sh05c'          => 'sharp sh-05c',
+        'is05'           => 'sharp is05',
     ];
 
     /**

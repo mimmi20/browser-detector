@@ -28,15 +28,15 @@ class ThlFactory implements Factory\FactoryInterface
      */
     private $devices = [
         't9'        => 'thl t9',
-        'w200'      => 'w200',
-        'w100'      => 'w100',
-        'w8_beyond' => 'thl w8',
+        'w200'      => 'thl w200',
+        'w100'      => 'thl w100',
+        'w8_beyond' => 'thl w8 beyond',
         'thl w8'    => 'thl w8',
-        'thl w7'    => 'w7',
-        't6s'       => 't6s',
+        'thl w7'    => 'thl w7',
+        't6s'       => 'thl t6s',
         '5000'      => 'thl 5000',
-        '4400'      => '4400',
-        'thl 2015'  => '2015',
+        '4400'      => 'thl 4400',
+        'thl 2015'  => 'thl 2015',
     ];
 
     /**

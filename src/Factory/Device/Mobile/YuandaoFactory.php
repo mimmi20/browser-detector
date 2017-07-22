@@ -28,7 +28,7 @@ class YuandaoFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'n90fhdrk'       => 'yuandao n90fhdrk',
-        'n90 dual core2' => 'n90 dual core2',
+        'n90 dual core2' => 'yuandao n90 dual core2',
     ];
 
     /**

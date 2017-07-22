@@ -27,8 +27,8 @@ class TurboPadFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'turbo x6'      => 'turbo x6',
-        'turbo pad 500' => 'pad 500',
+        'turbo x6'      => 'turbopad turbo x6',
+        'turbo pad 500' => 'turbopad pad 500',
     ];
 
     /**

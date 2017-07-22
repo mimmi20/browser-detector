@@ -27,7 +27,7 @@ class TelsdaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        't9666-1' => 't9666-1',
+        't9666-1' => 'telsda t9666-1',
     ];
 
     /**

@@ -44,6 +44,6 @@ class TriQFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return json_decode(file_get_contents('tests/data/factory/device/mobile/triq.json'), true);
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/3q.json'), true);
     }
 }

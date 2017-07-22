@@ -28,16 +28,16 @@ class ToshibaFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'at10le-a'          => 'toshiba at10le-a',
-        'toshiba/tg01'      => 'tg01',
-        'toshiba-tg01'      => 'tg01',
-        'folio_and_a'       => 'folio 100',
-        'toshiba_ac_and_az' => 'folio 100',
-        'folio100'          => 'folio 100',
-        'at300se'           => 'at300se',
-        'at300'             => 'at300',
-        'at200'             => 'at200',
-        'at100'             => 'at100',
-        'at10-a'            => 'at10-a',
+        'toshiba/tg01'      => 'toshiba tg01',
+        'toshiba-tg01'      => 'toshiba tg01',
+        'folio_and_a'       => 'toshiba folio 100',
+        'toshiba_ac_and_az' => 'toshiba folio 100',
+        'folio100'          => 'toshiba folio 100',
+        'at300se'           => 'toshiba at300se',
+        'at300'             => 'toshiba at300',
+        'at200'             => 'toshiba at200',
+        'at100'             => 'toshiba at100',
+        'at10-a'            => 'toshiba at10-a',
     ];
 
     /**
