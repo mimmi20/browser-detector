@@ -15299,5 +15299,20 @@
       ]
     },
     "engine": null
+  },
+  "intelligent-search-assistant": {
+    "name": "intelligent search assistant",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "isa",
+        "intelligentsearchassistant"
+      ]
+    },
+    "engine": "unknown"
   }
 }
