@@ -27,7 +27,7 @@ class VertexFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'impress_l' => 'impress l',
+        'impress_l' => 'vertex impress l',
     ];
 
     /**

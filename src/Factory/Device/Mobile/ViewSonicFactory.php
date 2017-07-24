@@ -27,12 +27,12 @@ class ViewSonicFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'viewpad 10s'    => 'viewpad 10s',
-        'viewpad 10e'    => 'viewpad 10e',
-        'viewpad7e'      => 'viewpad 7e',
-        'viewpad7'       => 'viewpad7',
-        'viewpad-7'      => 'viewpad7',
-        'viewsonic-v350' => 'v350',
+        'viewpad 10s'    => 'viewsonic viewpad 10s',
+        'viewpad 10e'    => 'viewsonic viewpad 10e',
+        'viewpad7e'      => 'viewsonic viewpad 7e',
+        'viewpad7'       => 'viewsonic viewpad7',
+        'viewpad-7'      => 'viewsonic viewpad7',
+        'viewsonic-v350' => 'viewsonic v350',
     ];
 
     /**

@@ -27,12 +27,12 @@ class PointOfViewFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tab-protab25'    => 'protab 25',
-        'tab-protab30'    => 'protab 3 xxl',
-        'tab-protab2xxl'  => 'protab 2 xxl',
-        'tab-protab2xl'   => 'protab 2 xl',
-        'tab-protab2-ips' => 'protab 2 ips',
-        'pi1045'          => 'pi1045',
+        'tab-protab25'    => 'pointofview protab 25',
+        'tab-protab30'    => 'pointofview protab 3 xxl',
+        'tab-protab2xxl'  => 'pointofview protab 2 xxl',
+        'tab-protab2xl'   => 'pointofview protab 2 xl',
+        'tab-protab2-ips' => 'pointofview protab 2 ips',
+        'pi1045'          => 'pointofview pi1045',
     ];
 
     /**

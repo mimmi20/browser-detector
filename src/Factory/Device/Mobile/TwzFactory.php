@@ -27,7 +27,7 @@ class TwzFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'a49' => 'a49',
+        'a49' => 'twz a49',
     ];
 
     /**

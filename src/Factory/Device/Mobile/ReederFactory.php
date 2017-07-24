@@ -27,7 +27,7 @@ class ReederFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'reedera8r' => 'a8r',
+        'reedera8r' => 'reeder a8r',
     ];
 
     /**

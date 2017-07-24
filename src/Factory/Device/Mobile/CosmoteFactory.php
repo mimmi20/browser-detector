@@ -27,8 +27,8 @@ class CosmoteFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'xplore'         => 'xplore',
-        'my_mini_tablet' => 'my mini tablet',
+        'xplore'         => 'cosmote xplore',
+        'my_mini_tablet' => 'cosmote my mini tablet',
     ];
 
     /**

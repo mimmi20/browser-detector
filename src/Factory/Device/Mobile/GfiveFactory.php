@@ -27,7 +27,7 @@ class GfiveFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'president g10 fashion' => 'president g10 fashion',
+        'president g10 fashion' => 'gfive president g10 fashion',
     ];
 
     /**

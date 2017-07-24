@@ -27,7 +27,7 @@ class PegatronFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'chagall' => 'chagall',
+        'chagall' => 'pegatron chagall',
     ];
 
     /**

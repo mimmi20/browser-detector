@@ -27,8 +27,8 @@ class KeneksiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'crystal' => 'crystal',
-        'norma 2' => 'norma 2',
+        'crystal' => 'keneksi crystal',
+        'norma 2' => 'keneksi norma 2',
     ];
 
     /**

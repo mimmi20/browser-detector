@@ -27,8 +27,8 @@ class CreativeFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ziio10' => 'ziio 10',
-        'ziio7'  => 'ziio7',
+        'ziio10' => 'creative ziio 10',
+        'ziio7'  => 'creative ziio7',
     ];
 
     /**

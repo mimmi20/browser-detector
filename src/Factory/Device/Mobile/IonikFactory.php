@@ -27,7 +27,7 @@ class IonikFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tp10.1-1500dc' => 'tp10.1-1500dc',
+        'tp10.1-1500dc' => 'ionik tp10.1-1500dc',
     ];
 
     /**

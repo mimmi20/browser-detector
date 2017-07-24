@@ -28,7 +28,7 @@ class KazamFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'thunder q45' => 'kazam thunder q45',
-        'trooper2 50' => 'trooper 2 5.0',
+        'trooper2 50' => 'kazam trooper 2 5.0',
     ];
 
     /**

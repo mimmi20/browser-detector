@@ -27,7 +27,7 @@ class MasterFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'smartphone650' => 'smartphone 650',
+        'smartphone650' => 'master smartphone 650',
     ];
 
     /**

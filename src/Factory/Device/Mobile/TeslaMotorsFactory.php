@@ -27,7 +27,7 @@ class TeslaMotorsFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'qtcarbrowser' => 'model s',
+        'qtcarbrowser' => 'teslamotors model s',
     ];
 
     /**

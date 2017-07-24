@@ -27,14 +27,14 @@ class PantechFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'p9020'    => 'p9020',
+        'p9020'    => 'pantech p9020',
         'p7040'    => 'pantech p7040',
         'p6010'    => 'pantech p6010',
-        'p2020'    => 'p2020',
-        'im-a900k' => 'im-a900k',
+        'p2020'    => 'pantech p2020',
+        'im-a900k' => 'pantech im-a900k',
         'im-a850k' => 'pantech im-a850k',
-        'im-a830l' => 'im-a830l',
-        'pt-gf200' => 'pt-gf200',
+        'im-a830l' => 'pantech im-a830l',
+        'pt-gf200' => 'pantech pt-gf200',
     ];
 
     /**

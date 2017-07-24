@@ -27,7 +27,7 @@ class GtideFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'e77' => 'e77',
+        'e77' => 'gtide e77',
     ];
 
     /**
@@ -59,6 +59,6 @@ class GtideFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('g-tide general gtide device', $useragent);
+        return $this->loader->load('general gtide device', $useragent);
     }
 }

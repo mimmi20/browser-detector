@@ -27,7 +27,7 @@ class DexFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ip1020' => 'ip1020',
+        'ip1020' => 'dex ip1020',
     ];
 
     /**

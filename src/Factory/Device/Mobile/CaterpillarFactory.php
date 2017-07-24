@@ -27,8 +27,8 @@ class CaterpillarFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'b15q' => 'b15q',
-        'b15'  => 'b15',
+        'b15q' => 'caterpillar b15q',
+        'b15'  => 'caterpillar b15',
     ];
 
     /**

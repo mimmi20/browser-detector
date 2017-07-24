@@ -30,7 +30,7 @@ class PanasonicFactory implements Factory\FactoryInterface
         'eluga_arc_2' => 'panasonic eluga arc 2',
         't50'         => 'panasonic t50',
         'p55'         => 'panasonic p55',
-        'dl1'         => 'dl1',
+        'dl1'         => 'panasonic dl1',
     ];
 
     /**

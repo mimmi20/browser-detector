@@ -27,7 +27,7 @@ class ComagFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'wtdr1018' => 'wtdr1018',
+        'wtdr1018' => 'comag wtdr1018',
     ];
 
     /**

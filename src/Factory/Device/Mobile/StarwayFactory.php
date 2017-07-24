@@ -27,7 +27,7 @@ class StarwayFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'andromeda s925 3g' => 'andromeda s925 3g',
+        'andromeda s925 3g' => 'starway andromeda s925 3g',
     ];
 
     /**

@@ -27,13 +27,13 @@ class XiangheFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'iphone 6c' => 'iphone 6c',
-        'iphone6c'  => 'iphone 6c',
-        'iphone 5c' => 'iphone 5c',
-        'iphone5c'  => 'iphone 5c',
-        'iphone 5'  => 'iphone 5',
-        'iphone_5'  => 'iphone 5',
-        'iphone5'   => 'iphone 5',
+        'iphone 6c' => 'xianghe iphone 6c',
+        'iphone6c'  => 'xianghe iphone 6c',
+        'iphone 5c' => 'xianghe iphone 5c',
+        'iphone5c'  => 'xianghe iphone 5c',
+        'iphone 5'  => 'xianghe iphone 5',
+        'iphone_5'  => 'xianghe iphone 5',
+        'iphone5'   => 'xianghe iphone 5',
         'iphone'    => 'xianghe iphone',
     ];
 

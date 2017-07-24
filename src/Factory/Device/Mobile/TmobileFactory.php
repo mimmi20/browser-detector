@@ -27,13 +27,13 @@ class TmobileFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'pulse'             => 'pulse',
-        'mytouch4g'         => 'mytouch4g',
-        'mytouch 3g slide'  => 'mytouch3g',
-        't-mobile_g2_touch' => 'g2 touch',
-        't-mobile g2'       => 'g2 touch',
-        't-mobile g1'       => 'g1',
-        'ameo'              => 'ameo',
+        'pulse'             => 'tmobile pulse',
+        'mytouch4g'         => 'tmobile mytouch4g',
+        'mytouch 3g slide'  => 'tmobile mytouch3g',
+        't-mobile_g2_touch' => 'tmobile g2 touch',
+        't-mobile g2'       => 'tmobile g2 touch',
+        't-mobile g1'       => 'tmobile g1',
+        'ameo'              => 'tmobile ameo',
     ];
 
     /**

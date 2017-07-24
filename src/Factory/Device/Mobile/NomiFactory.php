@@ -27,8 +27,8 @@ class NomiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'c07000' => 'c07000',
-        'a10100' => 'a10100',
+        'c07000' => 'nomi c07000',
+        'a10100' => 'nomi a10100',
     ];
 
     /**

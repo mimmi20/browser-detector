@@ -27,8 +27,8 @@ class WonderMediaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'wm8850' => 'prizm wm8850',
-        'wm8650' => 'prizm wm8650',
+        'wm8850' => 'wondermedia prizm wm8850',
+        'wm8650' => 'wondermedia prizm wm8650',
     ];
 
     /**

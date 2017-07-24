@@ -27,7 +27,7 @@ class RadxaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'rock' => 'rock',
+        'rock' => 'radxa rock',
     ];
 
     /**

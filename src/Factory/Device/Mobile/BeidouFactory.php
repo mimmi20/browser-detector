@@ -27,7 +27,7 @@ class BeidouFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'la-m1' => 'la-m1',
+        'la-m1' => 'beidou la-m1',
     ];
 
     /**

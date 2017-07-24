@@ -52,7 +52,7 @@ class TvFactory implements Factory\FactoryInterface
         'mxl661l32'                   => 'samsung smart tv',
         'smart-tv'                    => 'samsung smart tv',
         'apple tv'                    => 'appletv',
-        'netbox'                      => 'netbox',
+        'netbox'                      => 'sony netbox',
     ];
 
     /**

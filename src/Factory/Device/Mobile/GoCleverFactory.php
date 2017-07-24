@@ -27,15 +27,15 @@ class GoCleverFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tq700'            => 'tq700',
-        'terra_101'        => 'a1021',
-        'insignia_785_pro' => 'insignia 785 pro',
-        'aries_785'        => 'aries 785',
-        'aries_101'        => 'aries 101',
-        'orion7o'          => 'orion 7o',
-        'quantum 4'        => 'quantum 4',
-        'quantum_700m'     => 'quantum 700m',
-        'tab a93.2'        => 'a93.2',
+        'tq700'            => 'goclever tq700',
+        'terra_101'        => 'goclever a1021',
+        'insignia_785_pro' => 'goclever insignia 785 pro',
+        'aries_785'        => 'goclever aries 785',
+        'aries_101'        => 'goclever aries 101',
+        'orion7o'          => 'goclever orion 7o',
+        'quantum 4'        => 'goclever quantum 4',
+        'quantum_700m'     => 'goclever quantum 700m',
+        'tab a93.2'        => 'goclever a93.2',
     ];
 
     /**

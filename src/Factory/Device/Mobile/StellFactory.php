@@ -27,7 +27,7 @@ class StellFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm260' => 'm260',
+        'm260' => 'stell m260',
     ];
 
     /**

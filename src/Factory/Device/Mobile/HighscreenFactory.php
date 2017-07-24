@@ -27,12 +27,12 @@ class HighscreenFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'zera f'     => 'zera f',
-        'zera_f'     => 'zera f',
-        'prime s'    => 'omega prime s',
-        'ice2'       => 'ice 2',
-        'explosion'  => 'explosion',
-        'boost iise' => 'boost ii se',
+        'zera f'     => 'highscreen zera f',
+        'zera_f'     => 'highscreen zera f',
+        'prime s'    => 'highscreen omega prime s',
+        'ice2'       => 'highscreen ice 2',
+        'explosion'  => 'highscreen explosion',
+        'boost iise' => 'highscreen boost ii se',
     ];
 
     /**

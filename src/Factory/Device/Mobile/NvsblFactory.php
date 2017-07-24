@@ -27,7 +27,7 @@ class NvsblFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'p4d sirius' => 'p4d sirius',
+        'p4d sirius' => 'nvsbl p4d sirius',
     ];
 
     /**

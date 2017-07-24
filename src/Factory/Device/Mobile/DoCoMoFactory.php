@@ -27,8 +27,8 @@ class DoCoMoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'p905i' => 'p905i',
-        'p900i' => 'p900i',
+        'p905i' => 'docomo p905i',
+        'p900i' => 'docomo p900i',
     ];
 
     /**

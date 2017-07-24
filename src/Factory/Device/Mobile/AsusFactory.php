@@ -27,6 +27,7 @@ class AsusFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'k015'              => 'asus k015',
         'z00ud'             => 'asus z00ud',
         'z00ed'             => 'asus z00ed',
         'z012d'             => 'asus z012d',

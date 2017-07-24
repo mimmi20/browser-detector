@@ -27,7 +27,7 @@ class HummerFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'h1+' => 'h1+',
+        'h1+' => 'hummer h1+',
     ];
 
     /**

@@ -27,7 +27,7 @@ class KeenHighFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'mt791' => 'mt791',
+        'mt791' => 'keenhigh mt791',
     ];
 
     /**

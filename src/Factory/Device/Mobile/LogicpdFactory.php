@@ -27,8 +27,8 @@ class LogicpdFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'zoom2'     => 'zoom2',
-        'nookcolor' => 'zoom2',
+        'zoom2'     => 'logicpd zoom2',
+        'nookcolor' => 'logicpd zoom2',
     ];
 
     /**

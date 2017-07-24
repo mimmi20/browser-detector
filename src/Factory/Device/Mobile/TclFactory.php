@@ -33,8 +33,8 @@ class TclFactory implements Factory\FactoryInterface
         '5095y' => 'tcl 5095y',
         's700'  => 'tcl s700',
         'j620'  => 'tcl j620',
-        'm2u'   => 'm2u',
-        's720t' => 's720t',
+        'm2u'   => 'tcl m2u',
+        's720t' => 'tcl s720t',
         'vf685' => 'tcl vf685',
     ];
 

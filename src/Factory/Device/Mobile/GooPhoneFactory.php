@@ -27,7 +27,7 @@ class GooPhoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        's4 mega' => 's4 mega',
+        's4 mega' => 'goophone s4 mega',
     ];
 
     /**

@@ -27,11 +27,11 @@ class RitmixFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'rmd-1040' => 'rmd-1040',
-        'rmd-1028' => 'rmd-1028',
-        'rmd-1025' => 'rmd-1025',
-        'rmd-757'  => 'rmd-757',
-        'rmd-753'  => 'rmd-753',
+        'rmd-1040' => 'ritmix rmd-1040',
+        'rmd-1028' => 'ritmix rmd-1028',
+        'rmd-1025' => 'ritmix rmd-1025',
+        'rmd-757'  => 'ritmix rmd-757',
+        'rmd-753'  => 'ritmix rmd-753',
     ];
 
     /**

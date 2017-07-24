@@ -27,7 +27,7 @@ class EpadFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'p7901a' => 'p7901a',
+        'p7901a' => 'epad p7901a',
     ];
 
     /**

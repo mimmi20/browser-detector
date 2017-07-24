@@ -27,7 +27,7 @@ class VideoconFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'a15' => 'a15',
+        'a15' => 'videocon a15',
     ];
 
     /**

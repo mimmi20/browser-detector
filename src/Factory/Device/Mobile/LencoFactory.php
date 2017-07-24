@@ -28,8 +28,8 @@ class LencoFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'tab-925'    => 'lenco tab 925',
-        'cooltab-70' => 'cooltab-70',
-        'lencm900hz' => 'cm900hz',
+        'cooltab-70' => 'lenco cooltab-70',
+        'lencm900hz' => 'lenco cm900hz',
     ];
 
     /**

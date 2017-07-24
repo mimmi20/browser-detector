@@ -1841,8 +1841,8 @@
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 540,
+    "height": 960,
     "colors": null
   },
   {
@@ -1854,8 +1854,8 @@
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 480,
+    "height": 800,
     "colors": null
   },
   {
@@ -1867,8 +1867,8 @@
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1080,
+    "height": 1920,
     "colors": null
   },
   {
@@ -1880,8 +1880,8 @@
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1440,
+    "height": 2560,
     "colors": null
   },
   {
@@ -2017,14 +2017,14 @@
   {
     "ua": "Mozilla/5.0 (Linux; Android 6.0.1; LG-K600 Build/MXB48T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36",
     "codeName": "K600",
-    "marketingName": "K600",
+    "marketingName": "X mach",
     "manufacturer": "LG",
     "brand": "LG",
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1440,
+    "height": 2560,
     "colors": null
   },
   {
@@ -2134,7 +2134,7 @@
   {
     "ua": "Mozilla/5.0 (Linux; Android 7.0; LGE US996 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Mobile Safari/537.36 AlohaBrowser/0.8.7.1",
     "codeName": "US996",
-    "marketingName": "V20 (US Cellular)",
+    "marketingName": "V20 (U.S. Cellular)",
     "manufacturer": "LG",
     "brand": "LG",
     "type": "Smartphone",
@@ -2202,11 +2202,11 @@
     "marketingName": "KT770",
     "manufacturer": "LG",
     "brand": "LG",
-    "type": "Mobile Phone",
-    "dualOrientation": true,
-    "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "type": "Feature Phone",
+    "dualOrientation": false,
+    "pointingMethod": null,
+    "width": 240,
+    "height": 400,
     "colors": null
   },
   {
@@ -2215,11 +2215,11 @@
     "marketingName": "KT615",
     "manufacturer": "LG",
     "brand": "LG",
-    "type": "Mobile Phone",
-    "dualOrientation": true,
-    "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "type": "Feature Phone",
+    "dualOrientation": false,
+    "pointingMethod": null,
+    "width": 320,
+    "height": 240,
     "colors": null
   },
   {
@@ -2228,11 +2228,11 @@
     "marketingName": "KS10",
     "manufacturer": "LG",
     "brand": "LG",
-    "type": "Mobile Phone",
-    "dualOrientation": true,
-    "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "type": "Feature Phone",
+    "dualOrientation": false,
+    "pointingMethod": null,
+    "width": 240,
+    "height": 320,
     "colors": null
   },
   {
@@ -2422,7 +2422,7 @@
     "codeName": "K500N",
     "marketingName": "X screen (Europe)",
     "manufacturer": "LG",
-    "brand": "Google",
+    "brand": "LG",
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
@@ -2435,12 +2435,77 @@
     "codeName": "K500DS",
     "marketingName": "X screen (Russia)",
     "manufacturer": "LG",
-    "brand": "Google",
+    "brand": "LG",
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
     "width": 720,
     "height": 1280,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0.1; LG-K100 Build/MXB48T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36",
+    "codeName": "K100",
+    "marketingName": "K3",
+    "manufacturer": "LG",
+    "brand": "LG",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 480,
+    "height": 854,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; LG-H955 Build/LMY47S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36",
+    "codeName": "H955",
+    "marketingName": "G Flex 2 (Europe, Middle East, Africa)",
+    "manufacturer": "LG",
+    "brand": "LG",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; LG-LS996 Build/LMY47S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36",
+    "codeName": "LS996",
+    "marketingName": "G Flex 2 (Sprint)",
+    "manufacturer": "LG",
+    "brand": "LG",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; LG-H950 Build/LMY47S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36",
+    "codeName": "H950",
+    "marketingName": "G Flex 2 (AT&T)",
+    "manufacturer": "LG",
+    "brand": "LG",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; LG-US995 Build/LMY47S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36",
+    "codeName": "US995",
+    "marketingName": "G Flex 2 (U.S. Cellular)",
+    "manufacturer": "LG",
+    "brand": "LG",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
     "colors": null
   }
 ]

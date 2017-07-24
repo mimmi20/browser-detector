@@ -27,8 +27,8 @@ class MicrosoftFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'windows nt 6.2' => 'windows rt tablet',
-        'windows nt 6.3' => 'windows rt tablet',
+        'windows nt 6.2' => 'microsoft windows rt tablet',
+        'windows nt 6.3' => 'microsoft windows rt tablet',
     ];
 
     /**

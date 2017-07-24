@@ -27,7 +27,7 @@ class CiotcudFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'l930' => 'l930',
+        'l930' => 'ciotcud l930',
     ];
 
     /**

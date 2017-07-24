@@ -27,7 +27,7 @@ class YarvikFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tab10-400' => 'tab10-400',
+        'tab10-400' => 'yarvik tab10-400',
     ];
 
     /**

@@ -27,7 +27,7 @@ class SenseitFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'r390' => 'r390',
+        'r390' => 'senseit r390',
     ];
 
     /**

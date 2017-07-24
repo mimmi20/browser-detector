@@ -27,7 +27,7 @@ class PerfeoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        '7007hd' => '7007-hd',
+        '7007hd' => 'perfeo 7007-hd',
     ];
 
     /**

@@ -27,7 +27,7 @@ class FnacFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'fnac 4.5' => 'phablet 4.5',
+        'fnac 4.5' => 'fnac phablet 4.5',
     ];
 
     /**

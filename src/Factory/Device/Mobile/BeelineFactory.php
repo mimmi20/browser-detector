@@ -27,7 +27,7 @@ class BeelineFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'beeline tab' => 'tab',
+        'beeline tab' => 'beeline tab',
     ];
 
     /**

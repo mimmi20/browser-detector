@@ -27,23 +27,24 @@ class ZopoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'zp952'  => 'zopo zp952',
         'zp998'  => 'zopo zp998',
-        'zp980'  => 'zp980',
+        'zp980'  => 'zopo zp980',
         'zp960'  => 'zopo zp960',
         ' c2 '   => 'zopo zp960',
-        'zp950+' => 'zp950+',
-        'zp950'  => 'zp950',
-        'zp910'  => 'zp910',
-        'zp900h' => 'zp910',
-        'zp900'  => 'zp900',
-        'zp810'  => 'zp810',
-        'zp800h' => 'zp810',
-        'zp500+' => 'zp500+',
-        'zp500'  => 'zp500',
-        'zp300'  => 'zp300',
-        'zp200+' => 'zp200+',
-        'zp200'  => 'zp200',
-        'zp100'  => 'zp100',
+        'zp950+' => 'zopo zp950+',
+        'zp950'  => 'zopo zp950',
+        'zp910'  => 'zopo zp910',
+        'zp900h' => 'zopo zp910',
+        'zp900'  => 'zopo zp900',
+        'zp810'  => 'zopo zp810',
+        'zp800h' => 'zopo zp810',
+        'zp500+' => 'zopo zp500+',
+        'zp500'  => 'zopo zp500',
+        'zp300'  => 'zopo zp300',
+        'zp200+' => 'zopo zp200+',
+        'zp200'  => 'zopo zp200',
+        'zp100'  => 'zopo zp100',
     ];
 
     /**

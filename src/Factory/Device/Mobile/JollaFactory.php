@@ -27,7 +27,7 @@ class JollaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'sailfish' => 'sailfish',
+        'sailfish' => 'jolla sailfish',
     ];
 
     /**

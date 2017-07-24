@@ -1354,14 +1354,14 @@
   {
     "ua": "Mozilla/5.0 (Linux; Android 7.0; Lenovo P2a42 Build/NRD90N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36",
     "codeName": "P2a42",
-    "marketingName": "P2a42",
+    "marketingName": "P2",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1080,
+    "height": 1920,
     "colors": null
   },
   {
@@ -1596,6 +1596,32 @@
     "pointingMethod": "touchscreen",
     "width": 2560,
     "height": 1600,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; Lenovo TB3-X70F Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Safari/537.36",
+    "codeName": "TB3-X70F",
+    "marketingName": "Yoga Tab 3 10 Plus",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1920,
+    "height": 1200,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; P2 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36",
+    "codeName": "P2a42",
+    "marketingName": "P2",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
     "colors": null
   }
 ]

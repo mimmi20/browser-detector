@@ -27,7 +27,7 @@ class MytabFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'mini 3g' => 'mini 3g',
+        'mini 3g' => 'mytab mini 3g',
     ];
 
     /**

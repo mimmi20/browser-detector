@@ -28,8 +28,8 @@ class WexlerFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'tab a742' => 'wexler tab a742',
-        'tab-7t'   => 'tab 7t',
-        'tab7id'   => 'tab7id',
+        'tab-7t'   => 'wexler tab 7t',
+        'tab7id'   => 'wexler tab7id',
     ];
 
     /**

@@ -27,7 +27,7 @@ class YxtelFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'g009' => 'g009',
+        'g009' => 'yxtel g009',
     ];
 
     /**

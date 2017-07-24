@@ -27,7 +27,7 @@ class PentagramFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'pentagramtab7.6' => 'tab 7.6',
+        'pentagramtab7.6' => 'pentagram tab 7.6',
     ];
 
     /**

@@ -1213,6 +1213,7 @@ class BrowserFactory implements FactoryInterface
             'cloudinary'                      => 'cloudinary',
             'evc-batch'                       => 'evc-batch',
             'researchbot'                     => 'research-bot',
+            'intelligentsearchassistant'      => 'intelligent-search-assistant',
             'mozilla'                         => 'mozilla',
             'goog'                            => 'googlebot',
             'fetchstream'                     => 'fetch-stream',

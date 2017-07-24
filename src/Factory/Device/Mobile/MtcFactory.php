@@ -27,8 +27,8 @@ class MtcFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'smart run' => 'smart run',
-        '982'       => '982',
+        'smart run' => 'mtc smart run',
+        '982'       => 'mtc 982',
     ];
 
     /**

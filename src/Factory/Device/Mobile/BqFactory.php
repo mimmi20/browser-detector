@@ -28,16 +28,16 @@ class BqFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'aquaris x5'    => 'bq aquaris x5',
-        'aquaris e5 hd' => 'aquaris e5 hd',
-        'aquaris m10'   => 'aquaris m10',
-        'aquaris m5'    => 'aquaris m5',
-        'aquaris m4.5'  => 'aquaris m4.5',
-        'aquaris_m4.5'  => 'aquaris m4.5',
-        'aquaris 5 hd'  => 'aquaris e5',
-        ' m10 '         => 'aquaris m10',
-        '7056g'         => '7056g',
-        'bqs-4007'      => 'bqs-4007',
-        'bqs-4005'      => 'bqs-4005',
+        'aquaris e5 hd' => 'bq aquaris e5 hd',
+        'aquaris m10'   => 'bq aquaris m10',
+        'aquaris m5'    => 'bq aquaris m5',
+        'aquaris m4.5'  => 'bq aquaris m4.5',
+        'aquaris_m4.5'  => 'bq aquaris m4.5',
+        'aquaris 5 hd'  => 'bq aquaris e5',
+        ' m10 '         => 'bq aquaris m10',
+        '7056g'         => 'bq 7056g',
+        'bqs-4007'      => 'bq bqs-4007',
+        'bqs-4005'      => 'bq bqs-4005',
     ];
 
     /**

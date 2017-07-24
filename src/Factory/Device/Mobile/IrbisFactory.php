@@ -27,11 +27,11 @@ class IrbisFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tx68' => 'tx68',
-        'tx18' => 'tx18',
-        'tx17' => 'tx17',
-        'tx08' => 'tx08',
-        'tg97' => 'tg97',
+        'tx68' => 'irbis tx68',
+        'tx18' => 'irbis tx18',
+        'tx17' => 'irbis tx17',
+        'tx08' => 'irbis tx08',
+        'tg97' => 'irbis tg97',
     ];
 
     /**

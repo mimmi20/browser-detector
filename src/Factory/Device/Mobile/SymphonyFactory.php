@@ -27,7 +27,7 @@ class SymphonyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'w82' => 'w82',
+        'w82' => 'symphony w82',
     ];
 
     /**

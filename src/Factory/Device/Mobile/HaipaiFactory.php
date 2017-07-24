@@ -27,7 +27,7 @@ class HaipaiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'noble_i9220' => 'i9220',
+        'noble_i9220' => 'haipai i9220',
     ];
 
     /**

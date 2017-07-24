@@ -27,7 +27,7 @@ class MtechFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ace4' => 'ace 4',
+        'ace4' => 'mtech ace 4',
     ];
 
     /**

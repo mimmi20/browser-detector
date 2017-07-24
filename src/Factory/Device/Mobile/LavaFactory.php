@@ -31,8 +31,8 @@ class LavaFactory implements Factory\FactoryInterface
         'iris700'   => 'lava iris 700',
         'pixel v2+' => 'lava pixel v2+',
         'iris x8s'  => 'lava iris x8s',
-        'spark284'  => 'spark 284',
-        'kkt20'     => 'kkt20',
+        'spark284'  => 'lava spark 284',
+        'kkt20'     => 'lava kkt20',
     ];
 
     /**

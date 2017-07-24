@@ -27,8 +27,8 @@ class TwinovoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        't118' => 't118',
-        't108' => 't108',
+        't118' => 'twinovo t118',
+        't108' => 'twinovo t108',
     ];
 
     /**

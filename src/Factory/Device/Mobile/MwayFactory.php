@@ -27,7 +27,7 @@ class MwayFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'md948g' => 'md-948g',
+        'md948g' => 'mway md-948g',
     ];
 
     /**
@@ -59,6 +59,6 @@ class MwayFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('m-way general m-way device', $useragent);
+        return $this->loader->load('general m-way device', $useragent);
     }
 }

@@ -27,8 +27,8 @@ class SunstechFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tab917qc-8gb' => 'tab917qc 8gb',
-        'tab785dual'   => 'tab785 dual',
+        'tab917qc-8gb' => 'sunstech tab917qc 8gb',
+        'tab785dual'   => 'sunstech tab785 dual',
     ];
 
     /**

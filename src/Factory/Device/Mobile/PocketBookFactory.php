@@ -27,7 +27,7 @@ class PocketBookFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'surfpad 4 l' => 'surfpad 4 l',
+        'surfpad 4 l' => 'pocketbook surfpad 4 l',
     ];
 
     /**

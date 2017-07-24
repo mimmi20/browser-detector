@@ -27,7 +27,7 @@ class TrirayFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'x8+' => 'x8+',
+        'x8+' => 'triray x8+',
     ];
 
     /**

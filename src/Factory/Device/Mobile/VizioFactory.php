@@ -27,7 +27,7 @@ class VizioFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'vtab1008' => 'vtab1008',
+        'vtab1008' => 'vizio vtab1008',
     ];
 
     /**

@@ -27,8 +27,8 @@ class O2Factory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'xda_orbit_2'   => 'xda orbit ii',
-        'xda_diamond_2' => 'xda_diamond_2',
+        'xda_orbit_2'   => 'o2 xda orbit ii',
+        'xda_diamond_2' => 'o2 xda_diamond_2',
     ];
 
     /**

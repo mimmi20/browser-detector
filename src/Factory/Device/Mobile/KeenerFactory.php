@@ -27,7 +27,7 @@ class KeenerFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'k-8s' => 'k-8s',
+        'k-8s' => 'keener k-8s',
     ];
 
     /**

@@ -27,11 +27,11 @@ class PhilipsFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'w8510'   => 'w8510',
-        'w8500'   => 'w8500',
-        'w3509'   => 'w3509',
-        'w336'    => 'w336',
-        'pi3210g' => 'pi3210g',
+        'w8510'   => 'philips w8510',
+        'w8500'   => 'philips w8500',
+        'w3509'   => 'philips w3509',
+        'w336'    => 'philips w336',
+        'pi3210g' => 'philips pi3210g',
     ];
 
     /**

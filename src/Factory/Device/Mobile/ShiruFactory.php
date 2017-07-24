@@ -27,7 +27,7 @@ class ShiruFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'samurai10' => 'samurai 10',
+        'samurai10' => 'shiru samurai 10',
     ];
 
     /**

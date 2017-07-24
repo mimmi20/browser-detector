@@ -27,8 +27,8 @@ class NextbookFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'next'       => 'next',
-        'datam803hc' => 'm803hc',
+        'next'       => 'nextbook next',
+        'datam803hc' => 'nextbook m803hc',
     ];
 
     /**

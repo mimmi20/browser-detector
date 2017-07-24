@@ -27,7 +27,7 @@ class HtmFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'mt-gt-a9500' => 'gt-a9500',
+        'mt-gt-a9500' => 'htm gt-a9500',
     ];
 
     /**

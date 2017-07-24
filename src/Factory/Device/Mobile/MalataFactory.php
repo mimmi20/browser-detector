@@ -27,7 +27,7 @@ class MalataFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'i50' => 'i50',
+        'i50' => 'malata i50',
     ];
 
     /**

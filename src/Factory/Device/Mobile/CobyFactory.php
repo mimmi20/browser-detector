@@ -27,15 +27,15 @@ class CobyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'mid9742' => 'mid9742',
-        'mid8128' => 'mid8128',
-        'mid8127' => 'mid8127',
-        'mid8024' => 'mid8024',
-        'mid7022' => 'mid7022',
-        'mid7015' => 'mid7015',
-        'mid1126' => 'mid1126',
-        'mid1125' => 'mid1125',
-        'nbpc724' => 'nbpc724',
+        'mid9742' => 'coby mid9742',
+        'mid8128' => 'coby mid8128',
+        'mid8127' => 'coby mid8127',
+        'mid8024' => 'coby mid8024',
+        'mid7022' => 'coby mid7022',
+        'mid7015' => 'coby mid7015',
+        'mid1126' => 'coby mid1126',
+        'mid1125' => 'coby mid1125',
+        'nbpc724' => 'coby nbpc724',
     ];
 
     /**

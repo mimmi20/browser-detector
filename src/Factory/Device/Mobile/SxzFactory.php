@@ -27,7 +27,7 @@ class SxzFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'pdx0-01' => 'pdx0-01',
+        'pdx0-01' => 'sxz pdx0-01',
     ];
 
     /**

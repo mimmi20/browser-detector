@@ -27,10 +27,10 @@ class VericoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'km-uqm11a'   => 'uqm11a',
-        'rp-udm02a'   => 'rp-udm02a',
-        'rp-udm01a'   => 'rp-udm01a',
-        'uq785-m1bgv' => 'm1bgv',
+        'km-uqm11a'   => 'verico uqm11a',
+        'rp-udm02a'   => 'verico rp-udm02a',
+        'rp-udm01a'   => 'verico rp-udm01a',
+        'uq785-m1bgv' => 'verico m1bgv',
     ];
 
     /**

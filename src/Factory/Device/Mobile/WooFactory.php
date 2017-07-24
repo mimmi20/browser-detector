@@ -27,7 +27,7 @@ class WooFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'sp-6020 quasar' => 'sp6020',
+        'sp-6020 quasar' => 'woo sp6020',
     ];
 
     /**

@@ -27,7 +27,7 @@ class IruFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm5301' => 'm5301',
+        'm5301' => 'iru m5301',
     ];
 
     /**

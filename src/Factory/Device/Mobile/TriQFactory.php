@@ -27,12 +27,12 @@ class TriQFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'qs0716d' => 'qs0716d',
-        'mt0812e' => 'mt0812e',
-        'mt0739d' => 'mt0739d',
-        'ac0732c' => 'ac0732c',
-        'rc9724c' => 'rc9724c',
-        'lc0720c' => 'lc0720c',
+        'qs0716d' => '3q qs0716d',
+        'mt0812e' => '3q mt0812e',
+        'mt0739d' => '3q mt0739d',
+        'ac0732c' => '3q ac0732c',
+        'rc9724c' => '3q rc9724c',
+        'lc0720c' => '3q lc0720c',
     ];
 
     /**

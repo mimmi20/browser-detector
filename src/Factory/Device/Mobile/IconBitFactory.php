@@ -27,11 +27,11 @@ class IconBitFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'nt-3710s' => 'nt-3710s',
-        'nt-3702m' => 'nt-3702m',
-        'nt-3601p' => 'nettab pocket 3g',
-        'nt-1009t' => 'nt-1009t',
-        'nt-1001t' => 'nt-1001t',
+        'nt-3710s' => 'iconbit nt-3710s',
+        'nt-3702m' => 'iconbit nt-3702m',
+        'nt-3601p' => 'iconbit nettab pocket 3g',
+        'nt-1009t' => 'iconbit nt-1009t',
+        'nt-1001t' => 'iconbit nt-1001t',
     ];
 
     /**

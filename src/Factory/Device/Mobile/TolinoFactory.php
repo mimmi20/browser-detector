@@ -27,9 +27,9 @@ class TolinoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tab 8.9' => 'tab 8.9',
-        'tab 8'   => 'tab 8',
-        'tab 7'   => 'tab 7',
+        'tab 8.9' => 'tolino tab 8.9',
+        'tab 8'   => 'tolino tab 8',
+        'tab 7'   => 'tolino tab 7',
         'tolino'  => 'tolino shine',
     ];
 

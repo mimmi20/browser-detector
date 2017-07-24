@@ -27,8 +27,8 @@ class SupraFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm723g' => 'm723g',
-        'm121g' => 'm121g',
+        'm723g' => 'supra m723g',
+        'm121g' => 'supra m121g',
     ];
 
     /**

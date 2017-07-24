@@ -27,9 +27,9 @@ class BarnesNobleFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'bn nookhd+' => 'nook hd+',
-        'bntv600'    => 'nook hd+',
-        'bnrv200'    => 'bnrv200',
+        'bn nookhd+' => 'barnesnoble nook hd+',
+        'bntv600'    => 'barnesnoble nook hd+',
+        'bnrv200'    => 'barnesnoble bnrv200',
     ];
 
     /**

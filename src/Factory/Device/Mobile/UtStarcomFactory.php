@@ -27,7 +27,7 @@ class UtStarcomFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'gtx75' => 'gtx75',
+        'gtx75' => 'utstarcom gtx75',
     ];
 
     /**

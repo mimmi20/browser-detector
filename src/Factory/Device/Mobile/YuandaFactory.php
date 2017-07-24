@@ -27,7 +27,7 @@ class YuandaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'yuanda50' => '50',
+        'yuanda50' => 'yuanda 50',
     ];
 
     /**

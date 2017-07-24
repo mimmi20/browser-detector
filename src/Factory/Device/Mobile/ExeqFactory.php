@@ -27,7 +27,7 @@ class ExeqFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'p-720' => 'p-720',
+        'p-720' => 'exeq p-720',
     ];
 
     /**
