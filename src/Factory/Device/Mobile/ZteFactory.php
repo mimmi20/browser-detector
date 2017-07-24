@@ -27,6 +27,7 @@ class ZteFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'blade v580'        => 'zte blade v580',
         'e8q+'              => 'zte e8q+',
         'nx511j'            => 'zte nx511j',
         'grand s flex'      => 'zte grand s flex',

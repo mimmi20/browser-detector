@@ -27,6 +27,7 @@ class ZopoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'zp952'  => 'zopo zp952',
         'zp998'  => 'zopo zp998',
         'zp980'  => 'zopo zp980',
         'zp960'  => 'zopo zp960',

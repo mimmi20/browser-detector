@@ -27,6 +27,15 @@ class HuaweiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'mha-l09'                         => 'huawei mha-l09',
+        'can-l01'                         => 'huawei can-l01',
+        'can-l11'                         => 'huawei can-l11',
+        'can-l02'                         => 'huawei can-l02',
+        'can-l12'                         => 'huawei can-l12',
+        'can-l03'                         => 'huawei can-l03',
+        'can-l13'                         => 'huawei can-l13',
+        'nem-l21'                         => 'huawei nem-l21',
+        'lua-l21'                         => 'huawei lua-l21',
         'gra-l09'                         => 'huawei gra-l09',
         'gra-ul00'                        => 'huawei gra-ul00',
         'frd-l14'                         => 'huawei frd-l14',

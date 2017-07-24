@@ -28,6 +28,7 @@ class WileyfoxFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'swift 2' => 'wileyfox swift 2',
+        'swift'   => 'wileyfox swift',
     ];
 
     /**
