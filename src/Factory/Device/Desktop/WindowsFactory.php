@@ -30,6 +30,7 @@ class WindowsFactory implements Factory\FactoryInterface
         //'masb' => '', // Microsoft System Builder -> no device
         //'mapb' => '',
         //'manm' => '',
+        //'dadk' => '',
         'mddr'   => 'dell pc',
         'mddc'   => 'dell pc',
         'mdds'   => 'dell pc',

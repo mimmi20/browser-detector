@@ -33,6 +33,7 @@ class HpFactory implements Factory\FactoryInterface
         'ipaqhw6900'         => 'hp ipaq 6900',
         'slate 17'           => 'hp slate 17',
         'slate 10 hd'        => 'hp slate 10',
+        'slate 6 voice'      => 'hp slate 6 voice',
         'touchpad'           => 'hp touchpad',
         'cm_tenderloin'      => 'hp touchpad',
         'palm-d050'          => 'palm tx',

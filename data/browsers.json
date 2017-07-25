@@ -15314,5 +15314,33 @@
       ]
     },
     "engine": "unknown"
+  },
+  "doccheckbot": {
+    "name": "doccheckbot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "doccheckbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fast webcrawler": {
+    "name": "Fast Webcrawler",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FAST\\-WebCrawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

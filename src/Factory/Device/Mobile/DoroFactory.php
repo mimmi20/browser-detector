@@ -29,6 +29,7 @@ class DoroFactory implements Factory\FactoryInterface
     private $devices = [
         'liberto 825'      => 'doro liberto 825',
         'liberto 820 mini' => 'doro liberto 820 mini',
+        'liberto 820'      => 'doro liberto 820',
         'doro 8030'        => 'doro 8030',
     ];
 

@@ -21,15 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class KazamFactory implements Factory\FactoryInterface
+class TianjiFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'thunder2 50' => 'kazam thunder2 50',
-        'thunder q45' => 'kazam thunder q45',
-        'trooper2 50' => 'kazam trooper 2 5.0',
+        'q880_xk' => 'tianji q880',
     ];
 
     /**
@@ -61,6 +59,6 @@ class KazamFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kazam device', $useragent);
+        return $this->loader->load('general tianji device', $useragent);
     }
 }
