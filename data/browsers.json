@@ -15342,5 +15342,33 @@
       ]
     },
     "engine": "unknown"
+  },
+  "kded": {
+    "name": "kded",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "kded"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "deepcrawl": {
+    "name": "deepcrawl",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "deepcrawl"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -304,7 +304,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DenverFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('connect7pro', false)) {
+        if ($s->containsAny(['connect7pro', 'connect8plus'], false)) {
             return (new Mobile\OdysFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -952,7 +952,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\FourGoodFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['A101', 'A500', 'Z200', 'Z500', ' T08 ', ' T07 ', ' T06 ', ' S55 '], true)) {
+        if ($s->containsAny(['A101', 'A500', 'Z200', 'Z500', ' T08 ', ' T07 ', ' T06 ', ' T03 ', ' S55 '], true)) {
             return (new Mobile\AcerFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1172,7 +1172,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AsusFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['padfone', 'transformer', 'slider sl101', 'eee_701'], false)) {
+        if ($s->containsAny(['padfone', 'transformer', 'slider sl101', 'eee_701', 'tpad_10'], false)) {
             return (new Mobile\AsusFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2182,6 +2182,14 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('discovery elite', false)) {
             return (new Mobile\GeneralMobileFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('q880_xk', false)) {
+            return (new Mobile\TianjiFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('c55', false)) {
+            return (new Mobile\CtroniqFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('l900', false)) {

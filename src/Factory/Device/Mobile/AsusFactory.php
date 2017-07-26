@@ -37,6 +37,7 @@ class AsusFactory implements Factory\FactoryInterface
         'z00yd'             => 'asus z00yd',
         'z010dd'            => 'asus z010dd',
         'k018'              => 'asus k018',
+        'tpad_10'           => 'asus k018',
         'x00dd'             => 'asus x00dd',
         'z016d'             => 'asus z016d',
         'p024'              => 'asus p024',

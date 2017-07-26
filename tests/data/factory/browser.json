@@ -7882,9 +7882,25 @@
   {
     "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X) Excel/14.10.0",
     "browser": "Excel",
-    "version": "2013.0.0",
+    "version": "2010.0.0",
     "manufacturer": "Microsoft Corporation",
     "bits": 32,
     "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux) AppleWebKit/534.34 (KHTML, like Gecko) kded/4.14.22 Safari/534.34",
+    "browser": "kded",
+    "version": "4.14.22",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Googlebot deepcrawl",
+    "browser": "deepcrawl",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
   }
 ]
