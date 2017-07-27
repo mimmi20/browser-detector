@@ -78,7 +78,12 @@ trait DeviceTestDetectTrait
             'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
         );
 
-        if (null !== $width) {
+        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== stripos($result->getDeviceName(), 'general')) {
+            self::assertNull(
+                $result->getResolutionWidth(),
+                'Expected display width to be "null" for general or desktop/tv devices (was "' . $result->getResolutionWidth() . '")'
+            );
+        } elseif (null !== $width) {
             self::assertSame(
                 $width,
                 $result->getResolutionWidth(),
@@ -86,7 +91,12 @@ trait DeviceTestDetectTrait
             );
         }
 
-        if (null !== $height) {
+        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== stripos($result->getDeviceName(), 'general')) {
+            self::assertNull(
+                $result->getResolutionHeight(),
+                'Expected display height to be "null" for general or desktop/tv devices (was "' . $result->getResolutionHeight() . '")'
+            );
+        } elseif (null !== $height) {
             self::assertSame(
                 $height,
                 $result->getResolutionHeight(),

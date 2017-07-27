@@ -30,6 +30,7 @@ class DoogeeFactory implements Factory\FactoryInterface
         'x5max_pro'      => 'doogee x5max pro',
         'y6 max 3d'      => 'doogee y6 max 3d',
         'y6_piano_black' => 'doogee y6 piano black',
+        'y6_piano'       => 'doogee y6 piano',
         'dg2014'         => 'doogee dg2014',
         'dg800'          => 'doogee dg800',
         'dg330'          => 'doogee dg330',

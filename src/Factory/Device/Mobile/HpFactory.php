@@ -29,6 +29,7 @@ class HpFactory implements Factory\FactoryInterface
     private $devices = [
         'slate 21'           => 'hp slate 21',
         'slatebook 10 x2 pc' => 'hp slatebook 10 x2 pc',
+        'slate 7 hd'         => 'hp slate 7 hd',
         '7 plus'             => 'hp slate 7 plus',
         'ipaqhw6900'         => 'hp ipaq 6900',
         'slate 17'           => 'hp slate 17',
