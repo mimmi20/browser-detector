@@ -2164,7 +2164,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\WortmannFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('jy-s3', false)) {
+        if ($s->contains('jy-', false)) {
             return (new Mobile\JiayuFactory($this->loader))->detect($useragent, $s);
         }
 

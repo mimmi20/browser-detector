@@ -80,7 +80,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'tag-l21'                         => 'huawei tag-l21',
         'tag-l01'                         => 'huawei tag-l01',
         'ale-cl00'                        => 'huawei ale-cl00',
-        'ale-21'                          => 'huawei ale 21',
+        'ale-21'                          => 'huawei ale-l21',
         'ale-l23'                         => 'huawei ale-l23',
         'ale-l21'                         => 'huawei ale-l21',
         'ale-l02'                         => 'huawei ale-l02',

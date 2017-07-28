@@ -218,6 +218,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-t230'         => 'samsung sm-t230',
         'sm-t211'         => 'samsung sm-t211',
         'sm-t116nu'       => 'samsung sm-t116nu',
+        'sm-t116bu'       => 'samsung sm-t116bu',
         'sm-t116'         => 'samsung sm-t116',
         'sm-t113'         => 'samsung sm-t113',
         'sm-t111'         => 'samsung sm-t111',

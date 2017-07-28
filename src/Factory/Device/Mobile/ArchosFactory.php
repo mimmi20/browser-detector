@@ -29,6 +29,7 @@ class ArchosFactory implements Factory\FactoryInterface
     private $devices = [
         '64 xenon'              => 'archos 64 xenon',
         '50e neon'              => 'archos 50e neon',
+        '50e helium'            => 'archos 50e helium',
         '45b neon'              => 'archos 45b neon',
         'gamepad2'              => 'archos gamepad2',
         '55 diamond 2 plus'     => 'archos 55 diamond 2 plus',
