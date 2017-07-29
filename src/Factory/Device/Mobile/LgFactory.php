@@ -49,6 +49,7 @@ class LgFactory implements Factory\FactoryInterface
         'nexus 5 caf'   => 'lg nexus 5 caf',
         'nexus5 v6.1'   => 'lg nexus 5 v6.1',
         'h815'          => 'lg h815',
+        'd335e'         => 'lg d335e',
         'd335'          => 'lg d335',
         'd331'          => 'lg d331',
         'f320k'         => 'lg f320k',

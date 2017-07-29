@@ -21,15 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GigabyteFactory implements Factory\FactoryInterface
+class VotoFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'rio r1'    => 'gigabyte rio r1',
-        'gsmart_t4' => 'gigabyte gsmart t4',
-        'gsmart t4' => 'gigabyte gsmart t4',
+        ' x6 '   => 'voto x6',
     ];
 
     /**
@@ -61,6 +59,6 @@ class GigabyteFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general gigabyte device', $useragent);
+        return $this->loader->load('general voto device', $useragent);
     }
 }

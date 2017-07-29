@@ -84,6 +84,7 @@ class AlcatelFactory implements Factory\FactoryInterface
         '3075a'                    => 'alcatel ot-3075a',
         'one touch 997d'           => 'alcatel ot-997d',
         'one_touch_995'            => 'alcatel ot-995',
+        'ot-995'                   => 'alcatel ot-995',
         'one touch 992d'           => 'alcatel ot-992d',
         'one touch 991t'           => 'alcatel ot-991t',
         'one touch 991d'           => 'alcatel ot-991d',

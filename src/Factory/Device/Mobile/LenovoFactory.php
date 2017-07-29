@@ -58,6 +58,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'a7-30f'                  => 'lenovo a7-30f',
         'tb3-850m'                => 'lenovo tb3-850m',
         'tb3-710i'                => 'lenovo tb3-710i',
+        's6000d'                  => 'lenovo s6000d',
         's860'                    => 'lenovo s860',
         'a806t'                   => 'lenovo a806t',
         'a806'                    => 'lenovo a806',

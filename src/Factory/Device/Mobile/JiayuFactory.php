@@ -28,6 +28,7 @@ class JiayuFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'jy-g3'   => 'jiayu jy-g3',
+        'jy-s3s'  => 'jiayu jy-s3s',
         'jy-s3'   => 'jiayu jy-s3',
     ];
 

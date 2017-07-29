@@ -531,6 +531,7 @@ class BrowserFactory implements FactoryInterface
             'qhbrowser'                => 'qh-browser',
             'google earth'             => 'google earth',
             'kded'                     => 'kded',
+            'iris/'                    => 'iris',
             'safari'                   => 'safari',
             'windows phone ad client'  => 'windows phone ad client',
             'ddg-android-'             => 'duckduck app',

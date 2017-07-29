@@ -15370,5 +15370,19 @@
       ]
     },
     "engine": "unknown"
+  },
+  "iris": {
+    "name": "Iris Browser",
+    "manufacturer": "Torch",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Iris"
+      ]
+    },
+    "engine": "webkit"
   }
 }

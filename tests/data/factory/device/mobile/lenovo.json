@@ -398,8 +398,8 @@
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1024,
+    "height": 600,
     "colors": null
   },
   {
@@ -1648,6 +1648,32 @@
     "pointingMethod": "touchscreen",
     "width": 1920,
     "height": 1200,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Vodafone Smart Tab III 10 Build/S6000_A422_000_027_130814_VF) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "codeName": "Smart Tab III 10",
+    "marketingName": "Smart Tab III 10",
+    "manufacturer": "Lenovo",
+    "brand": "Vodafone",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1024,
+    "height": 600,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; S6000D Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.38 Safari/537.36",
+    "codeName": "S6000D",
+    "marketingName": "A101 3G",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1024,
+    "height": 600,
     "colors": null
   }
 ]
