@@ -27,7 +27,8 @@ class SamsungFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'sm-g530az'       => 'samsung sm-g530az',
+        'sm-t807j'        => 'samsung sm-t807j',
+        'sct21'           => 'samsung sm-t807j',
         'sm-c5000'        => 'samsung sm-c5000',
         'shv-e330k'       => 'samsung shv-e330k',
         'sm-g570f'        => 'samsung sm-g570f',
@@ -441,8 +442,11 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-g710'         => 'samsung sm-g710',
         'sm-g531f'        => 'samsung sm-g531f',
         'sm-g531h'        => 'samsung sm-g531h',
-        'sm-g530t'        => 'samsung sm-g530t',
+        'sm-g530az'       => 'samsung sm-g530az',
+        'sm-g530a'        => 'samsung sm-g530a',
         'sm-g530h'        => 'samsung sm-g530h',
+        'sm-g530p'        => 'samsung sm-g530p',
+        'sm-g530t'        => 'samsung sm-g530t',
         'sm-g530fz'       => 'samsung sm-g530fz',
         'sm-g530f'        => 'samsung sm-g530f',
         'sm-g530y'        => 'samsung sm-g530y',

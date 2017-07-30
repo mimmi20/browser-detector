@@ -66,7 +66,7 @@ class WindowsFactory implements Factory\FactoryInterface
             return $this->loader->load('windows nt 6.2; arm', $useragent);
         }
 
-        if ($s->containsAny(['windows nt 6.2', 'windows 6.2', 'windows 8'], false)) {
+        if ($s->containsAny(['windows nt 6.2', 'windows 6.2', 'windows 8', 'winnt 6.2'], false)) {
             return $this->loader->load('windows nt 6.2', $useragent);
         }
 
@@ -122,11 +122,15 @@ class WindowsFactory implements Factory\FactoryInterface
             return $this->loader->load('windows nt 4.1', $useragent);
         }
 
-        if ($s->containsAny(['windows nt 4.0', 'windows nt4.0', 'windows 4.0'], false)) {
+        if ($s->containsAny(['windows nt 4.0', 'windows nt4.0', 'windows 4.0', 'winnt4.0'], false)) {
             return $this->loader->load('windows nt 4.0', $useragent);
         }
 
-        if ($s->containsAny(['windows nt 3.5', 'windows 3.5'], false)) {
+        if ($s->containsAny(['windows nt 3.51', 'windows 3.51', 'winnt3.51'], false)) {
+            return $this->loader->load('windows nt 3.51', $useragent);
+        }
+
+        if ($s->containsAny(['windows nt 3.5', 'windows 3.5', 'winnt3.5'], false)) {
             return $this->loader->load('windows nt 3.5', $useragent);
         }
 
@@ -134,7 +138,7 @@ class WindowsFactory implements Factory\FactoryInterface
             return $this->loader->load('windows nt 3.1', $useragent);
         }
 
-        if ($s->containsAny(['windows nt'], false)) {
+        if ($s->containsAny(['windows nt', 'winnt'], false)) {
             return $this->loader->load('windows nt', $useragent);
         }
 

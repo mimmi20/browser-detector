@@ -21,14 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackviewFactory implements Factory\FactoryInterface
+class TescoFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'bv5000' => 'blackview bv5000',
-        'crown'  => 'blackview t570',
+        'hudl 2' => 'tesco hudl 2',
     ];
 
     /**
@@ -60,6 +59,6 @@ class BlackviewFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general blackview device', $useragent);
+        return $this->loader->load('general tesco device', $useragent);
     }
 }

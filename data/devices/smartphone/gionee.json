@@ -1,4 +1,17 @@
 {
+  "general gionee device": {
+    "codename": "general Gionee Device",
+    "marketingName": "general Gionee Device",
+    "manufacturer": "Gionee",
+    "brand": "Gionee",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": false,
+    "colors": null
+  },
   "gionee f103 pro": {
     "codename": "F103 Pro",
     "marketingName": "F103 Pro",
@@ -22,6 +35,19 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1080,
     "resolutionHeight": 1920,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "gionee m3": {
+    "codename": "M3",
+    "marketingName": "Marathon M3",
+    "manufacturer": "Gionee",
+    "brand": "Gionee",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
     "dualOrientation": true,
     "colors": null
   }

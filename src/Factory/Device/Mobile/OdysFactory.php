@@ -27,6 +27,7 @@ class OdysFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'rapid7lte'        => 'odys rapid 7 lte',
         'pro q8 plus'      => 'odys pro q8 plus',
         'score_plus_3g'    => 'odys score plus 3g',
         'connect8plus'     => 'odys connect 8 plus 3g',
