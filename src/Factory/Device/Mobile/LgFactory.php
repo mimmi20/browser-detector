@@ -27,6 +27,19 @@ class LgFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'x210ds'        => 'lg x210ds',
+        'x210'          => 'lg x210',
+        'ms330'         => 'lg ms330',
+        'ls675'         => 'lg ls675',
+        'f180l'         => 'lg f180l',
+        'f180k'         => 'lg f180k',
+        'f180s'         => 'lg f180s',
+        'f180'          => 'lg f180',
+        'k220ds'        => 'lg k220ds',
+        'k220'          => 'lg k220',
+        'ls755'         => 'lg ls755',
+        'us610'         => 'lg us610',
+        'k450'          => 'lg k450',
         'h955'          => 'lg h955',
         'ls996'         => 'lg ls996',
         'h950'          => 'lg h950',
@@ -40,6 +53,7 @@ class LgFactory implements Factory\FactoryInterface
         'nexus 5 caf'   => 'lg nexus 5 caf',
         'nexus5 v6.1'   => 'lg nexus 5 v6.1',
         'h815'          => 'lg h815',
+        'd335e'         => 'lg d335e',
         'd335'          => 'lg d335',
         'd331'          => 'lg d331',
         'f320k'         => 'lg f320k',

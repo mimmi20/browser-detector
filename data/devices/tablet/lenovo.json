@@ -566,8 +566,8 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true,
     "colors": null
   },
@@ -651,14 +651,14 @@
   },
   "lenovo tb3-710f": {
     "codename": "TB3-710F",
-    "marketingName": "TB3-710F",
+    "marketingName": "Tab3 7 Essential",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
     "platform": null,
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true,
     "colors": null
   },
@@ -717,6 +717,19 @@
   "lenovo tb3-x70f": {
     "codename": "TB3-X70F",
     "marketingName": "Yoga Tab 3 10 Plus",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1920,
+    "resolutionHeight": 1200,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "lenovo yb1-x90l": {
+    "codename": "YB1-X90L",
+    "marketingName": "Yoga Book",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
     "platform": "android",

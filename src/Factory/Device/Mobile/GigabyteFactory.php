@@ -29,6 +29,7 @@ class GigabyteFactory implements Factory\FactoryInterface
     private $devices = [
         'rio r1'    => 'gigabyte rio r1',
         'gsmart_t4' => 'gigabyte gsmart t4',
+        'gsmart t4' => 'gigabyte gsmart t4',
     ];
 
     /**

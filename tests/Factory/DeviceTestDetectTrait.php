@@ -67,18 +67,92 @@ trait DeviceTestDetectTrait
             $result->getType()->getName(),
             'Expected device type to be "' . $deviceType . '" (was "' . $result->getType()->getName() . '")'
         );
-        self::assertSame(
-            $dualOrientation,
-            $result->getDualOrientation(),
-            'Expected dual orientation to be "' . $dualOrientation . '" (was "' . $result->getDualOrientation() . '")'
-        );
-        self::assertSame(
-            $pointingMethod,
-            $result->getPointingMethod(),
-            'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
-        );
 
-        if (null !== $width) {
+        if ($result->getType()->isDesktop() || $result->getType()->isTv()) {
+            self::assertFalse(
+                $result->getDualOrientation(),
+                'Expected dual orientation to be "false" (was "' . $result->getDualOrientation() . '")'
+            );
+
+            self::assertSame(
+                $dualOrientation,
+                $result->getDualOrientation(),
+                'Expected dual orientation to be "' . $dualOrientation . '" (was "' . $result->getDualOrientation() . '")'
+            );
+        } else {
+            self::assertSame(
+                $dualOrientation,
+                $result->getDualOrientation(),
+                'Expected dual orientation to be "' . $dualOrientation . '" (was "' . $result->getDualOrientation() . '")'
+            );
+        }
+
+        if ($result->getType()->isDesktop()) {
+            self::assertSame(
+                'mouse',
+                $result->getPointingMethod(),
+                'Expected pointing method to be "mouse" (was "' . $result->getPointingMethod() . '")'
+            );
+
+            self::assertSame(
+                $pointingMethod,
+                $result->getPointingMethod(),
+                'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+            );
+        } elseif ($result->getType()->isTv()) {
+            self::assertNull(
+                $result->getPointingMethod(),
+                'Expected pointing method to be "null" (was "' . $result->getPointingMethod() . '")'
+            );
+
+            self::assertSame(
+                $pointingMethod,
+                $result->getPointingMethod(),
+                'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+            );
+        } elseif (in_array($result->getType()->getName(), ['Tablet', 'FonePad', 'Smartphone'])) {
+            self::assertSame(
+                'touchscreen',
+                $result->getPointingMethod(),
+                'Expected pointing method to be "mouse" (was "' . $result->getPointingMethod() . '")'
+            );
+
+            self::assertSame(
+                $pointingMethod,
+                $result->getPointingMethod(),
+                'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+            );
+        } else {
+            self::assertSame(
+                $pointingMethod,
+                $result->getPointingMethod(),
+                'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+            );
+        }
+
+        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== mb_stripos($result->getDeviceName(), 'general')) {
+            self::assertNull(
+                $result->getResolutionWidth(),
+                'Expected display width to be "null" for general or desktop/tv devices (was "' . $result->getResolutionWidth() . '")'
+            );
+
+            self::assertSame(
+                $width,
+                $result->getResolutionWidth(),
+                'Expected display width to be "' . $width . '" (was "' . $result->getResolutionWidth() . '")'
+            );
+            //        } elseif (in_array($result->getType()->getName(), ['Tablet', 'FonePad', 'Smartphone'])) {
+//            self::assertNotNull(
+//                $result->getResolutionWidth(),
+//                'Expected display width NOT to be "null" for tablet/smartphone devices (was "' . $result->getResolutionWidth() . '")'
+//            );
+//
+//            self::assertSame(
+//                $width,
+//                $result->getResolutionWidth(),
+//                'Expected display width to be "' . $width . '" (was "' . $result->getResolutionWidth() . '")'
+//            );
+        } elseif (null !== $width) {
             self::assertSame(
                 $width,
                 $result->getResolutionWidth(),
@@ -86,7 +160,29 @@ trait DeviceTestDetectTrait
             );
         }
 
-        if (null !== $height) {
+        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== mb_stripos($result->getDeviceName(), 'general')) {
+            self::assertNull(
+                $result->getResolutionHeight(),
+                'Expected display height to be "null" for general or desktop/tv devices (was "' . $result->getResolutionHeight() . '")'
+            );
+
+            self::assertSame(
+                $height,
+                $result->getResolutionHeight(),
+                'Expected display height to be "' . $height . '" (was "' . $result->getResolutionHeight() . '")'
+            );
+            //        } elseif (in_array($result->getType()->getName(), ['Tablet', 'FonePad', 'Smartphone'])) {
+//            self::assertNotNull(
+//                $result->getResolutionHeight(),
+//                'Expected display height NOT to be "null" for tablet/smartphone devices (was "' . $result->getResolutionHeight() . '")'
+//            );
+//
+//            self::assertSame(
+//                $height,
+//                $result->getResolutionHeight(),
+//                'Expected display height to be "' . $height . '" (was "' . $result->getResolutionHeight() . '")'
+//            );
+        } elseif (null !== $height) {
             self::assertSame(
                 $height,
                 $result->getResolutionHeight(),

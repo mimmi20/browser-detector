@@ -93,7 +93,20 @@
   {
     "ua": "Mozilla/5.0 (Linux; Android 4.4.2; CatHelix Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.109 Safari/537.36",
     "codeName": "CatHelix",
-    "marketingName": "CatHelix",
+    "marketingName": "Cat Helix 3G",
+    "manufacturer": "S4 Handelsgruppe GmbH",
+    "brand": "Cat",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1024,
+    "height": 768,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; CatHelixM Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36",
+    "codeName": "CatHelixM",
+    "marketingName": "Cat Helix Wifi",
     "manufacturer": "S4 Handelsgruppe GmbH",
     "brand": "Cat",
     "type": "Tablet",
@@ -101,6 +114,19 @@
     "pointingMethod": "touchscreen",
     "width": 1024,
     "height": 768,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 2.3.6; ru-ru; NOVA Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
+    "codeName": "Nova",
+    "marketingName": "Nova",
+    "manufacturer": "S4 Handelsgruppe GmbH",
+    "brand": "Cat",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
     "colors": null
   }
 ]

@@ -15314,5 +15314,75 @@
       ]
     },
     "engine": "unknown"
+  },
+  "doccheckbot": {
+    "name": "doccheckbot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "doccheckbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fast webcrawler": {
+    "name": "Fast Webcrawler",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FAST\\-WebCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kded": {
+    "name": "kded",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "kded"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "deepcrawl": {
+    "name": "deepcrawl",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "deepcrawl"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "iris": {
+    "name": "Iris Browser",
+    "manufacturer": "Torch",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Iris"
+      ]
+    },
+    "engine": "webkit"
   }
 }

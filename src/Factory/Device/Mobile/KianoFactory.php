@@ -31,6 +31,7 @@ class KianoFactory implements Factory\FactoryInterface
         'elegance 10.1 3g' => 'kiano elegance 10.1 3g',
         'elegance 8 3g'    => 'kiano elegance 8 3g',
         'elegance'         => 'kiano elegance',
+        'slimtab7_3gr'     => 'kiano slimtab 7 3gr',
     ];
 
     /**

@@ -27,6 +27,7 @@ class IntensoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'tab1024'   => 'intenso tab 1024',
         'inm8002kp' => 'intenso inm8002kp',
         'inm803hc'  => 'intenso tab 803',
     ];

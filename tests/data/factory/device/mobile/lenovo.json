@@ -398,8 +398,8 @@
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1024,
+    "height": 600,
     "colors": null
   },
   {
@@ -1188,11 +1188,11 @@
     "marketingName": "A850+",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "type": "Mobile Phone",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 540,
+    "height": 960,
     "colors": null
   },
   {
@@ -1334,21 +1334,21 @@
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 720,
+    "height": 1280,
     "colors": null
   },
   {
     "ua": "Mozilla/5.0 (Linux; Android 5.0.1; Lenovo TB3-710F Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36",
     "codeName": "TB3-710F",
-    "marketingName": "TB3-710F",
+    "marketingName": "Tab3 7 Essential",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1024,
+    "height": 600,
     "colors": null
   },
   {
@@ -1622,6 +1622,84 @@
     "pointingMethod": "touchscreen",
     "width": 1080,
     "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; Lenovo K10a40 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36",
+    "codeName": "K10a40",
+    "marketingName": "C2",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 720,
+    "height": 1280,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0.1; Lenovo YB1-X90L Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+    "codeName": "YB1-X90L",
+    "marketingName": "Yoga Book",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1920,
+    "height": 1200,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Vodafone Smart Tab III 10 Build/S6000_A422_000_027_130814_VF) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "codeName": "Smart Tab III 10",
+    "marketingName": "Smart Tab III 10",
+    "manufacturer": "Lenovo",
+    "brand": "Vodafone",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1024,
+    "height": 600,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; S6000D Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.38 Safari/537.36",
+    "codeName": "S6000D",
+    "marketingName": "A101 3G",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1024,
+    "height": 600,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.4; Lenovo K80M Build/S100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36",
+    "codeName": "K80M",
+    "marketingName": "K80M",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; B5060 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36",
+    "codeName": "B5060",
+    "marketingName": "B5060",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 540,
+    "height": 960,
     "colors": null
   }
 ]

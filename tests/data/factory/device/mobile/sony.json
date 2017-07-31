@@ -1021,7 +1021,7 @@
     "brand": "Sony",
     "type": "TV Device",
     "dualOrientation": false,
-    "pointingMethod": "mouse",
+    "pointingMethod": null,
     "width": null,
     "height": null,
     "colors": null
@@ -1047,7 +1047,7 @@
     "brand": "Sony",
     "type": "TV Device",
     "dualOrientation": false,
-    "pointingMethod": "mouse",
+    "pointingMethod": null,
     "width": null,
     "height": null,
     "colors": null
@@ -1671,7 +1671,7 @@
     "brand": "Sony",
     "type": "TV Device",
     "dualOrientation": false,
-    "pointingMethod": "mouse",
+    "pointingMethod": null,
     "width": null,
     "height": null,
     "colors": null
@@ -2771,14 +2771,14 @@
   {
     "ua": "Mozilla/5.0 (Linux; Android 6.0; E5333 Build/27.3.B.0.129) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36",
     "codeName": "E5333",
-    "marketingName": "E5333",
+    "marketingName": "Xperia C4 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1080,
+    "height": 1920,
     "colors": null
   },
   {
@@ -2805,6 +2805,71 @@
     "pointingMethod": "touchscreen",
     "width": 1920,
     "height": 1200,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.4; E2115 Build/24.0.B.5.14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Mobile Safari/537.36",
+    "codeName": "E2115",
+    "marketingName": "Xperia E4 Dual",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 540,
+    "height": 960,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; E5343 Build/27.3.B.0.129) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36",
+    "codeName": "E5343",
+    "marketingName": "Xperia C4 Dual",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; E5363 Build/27.3.B.0.129) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36",
+    "codeName": "E5363",
+    "marketingName": "Xperia C4 Dual",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 7.0; E6633 Build/32.3.A.2.33) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36",
+    "codeName": "E6633",
+    "marketingName": "Xperia Z5 Dual",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 7.0; E6683 Build/32.3.A.2.33) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36",
+    "codeName": "E6683",
+    "marketingName": "Xperia Z5 Dual",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
     "colors": null
   }
 ]

@@ -27,7 +27,8 @@ class BlackviewFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'crown' => 'blackview t570',
+        'bv5000' => 'blackview bv5000',
+        'crown'  => 'blackview t570',
     ];
 
     /**

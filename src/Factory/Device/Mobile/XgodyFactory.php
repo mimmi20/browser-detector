@@ -27,7 +27,7 @@ class XgodyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        ' d10 '   => 'xgody d10',
+        ' d10 ' => 'xgody d10',
     ];
 
     /**
