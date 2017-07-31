@@ -28,6 +28,7 @@ class AdvanFactory implements Factory\FactoryInterface
      */
     private $devices = [
         't1x plus' => 'advan t1x plus',
+        'vandroid' => 'advan vandroid',
     ];
 
     /**

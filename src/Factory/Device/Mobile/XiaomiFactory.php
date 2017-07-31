@@ -27,6 +27,7 @@ class XiaomiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'redmi 4x'       => 'xiaomitech redmi 4x',
         'redmi 4'        => 'xiaomitech redmi 4',
         'mi 5s'          => 'xiaomitech mi 5s',
         'mi 5'           => 'xiaomitech mi 5',

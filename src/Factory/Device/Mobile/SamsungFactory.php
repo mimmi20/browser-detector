@@ -408,6 +408,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-g900i'        => 'samsung sm-g900i',
         'sm-g900a'        => 'samsung sm-g900a',
         'sm-g900h'        => 'samsung sm-g900h',
+        'sm-g900m'        => 'samsung sm-g900m',
         'sm-g900'         => 'samsung sm-g900',
         'sm-g890a'        => 'samsung sm-g890a',
         'sm-g870f'        => 'samsung sm-g870f',

@@ -130,7 +130,7 @@ trait DeviceTestDetectTrait
             );
         }
 
-        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== stripos($result->getDeviceName(), 'general')) {
+        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== mb_stripos($result->getDeviceName(), 'general')) {
             self::assertNull(
                 $result->getResolutionWidth(),
                 'Expected display width to be "null" for general or desktop/tv devices (was "' . $result->getResolutionWidth() . '")'
@@ -141,7 +141,7 @@ trait DeviceTestDetectTrait
                 $result->getResolutionWidth(),
                 'Expected display width to be "' . $width . '" (was "' . $result->getResolutionWidth() . '")'
             );
-//        } elseif (in_array($result->getType()->getName(), ['Tablet', 'FonePad', 'Smartphone'])) {
+            //        } elseif (in_array($result->getType()->getName(), ['Tablet', 'FonePad', 'Smartphone'])) {
 //            self::assertNotNull(
 //                $result->getResolutionWidth(),
 //                'Expected display width NOT to be "null" for tablet/smartphone devices (was "' . $result->getResolutionWidth() . '")'
@@ -160,7 +160,7 @@ trait DeviceTestDetectTrait
             );
         }
 
-        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== stripos($result->getDeviceName(), 'general')) {
+        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== mb_stripos($result->getDeviceName(), 'general')) {
             self::assertNull(
                 $result->getResolutionHeight(),
                 'Expected display height to be "null" for general or desktop/tv devices (was "' . $result->getResolutionHeight() . '")'
@@ -171,7 +171,7 @@ trait DeviceTestDetectTrait
                 $result->getResolutionHeight(),
                 'Expected display height to be "' . $height . '" (was "' . $result->getResolutionHeight() . '")'
             );
-//        } elseif (in_array($result->getType()->getName(), ['Tablet', 'FonePad', 'Smartphone'])) {
+            //        } elseif (in_array($result->getType()->getName(), ['Tablet', 'FonePad', 'Smartphone'])) {
 //            self::assertNotNull(
 //                $result->getResolutionHeight(),
 //                'Expected display height NOT to be "null" for tablet/smartphone devices (was "' . $result->getResolutionHeight() . '")'

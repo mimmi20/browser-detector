@@ -1188,11 +1188,11 @@
     "marketingName": "A850+",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "type": "Mobile Phone",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 540,
+    "height": 960,
     "colors": null
   },
   {
@@ -1334,8 +1334,8 @@
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 720,
+    "height": 1280,
     "colors": null
   },
   {
@@ -1674,6 +1674,32 @@
     "pointingMethod": "touchscreen",
     "width": 1024,
     "height": 600,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.4; Lenovo K80M Build/S100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36",
+    "codeName": "K80M",
+    "marketingName": "K80M",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; B5060 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36",
+    "codeName": "B5060",
+    "marketingName": "B5060",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 540,
+    "height": 960,
     "colors": null
   }
 ]

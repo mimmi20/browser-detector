@@ -27,6 +27,10 @@ class AlcatelFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        '7070x'                    => 'alcatel ot-7070x',
+        '5045d'                    => 'alcatel ot-5045d',
+        '5010d'                    => 'alcatel ot-5010d',
+        '8030y'                    => 'alcatel ot-8030y',
         '5025d'                    => 'alcatel ot-5025d',
         '4027d'                    => 'alcatel ot-4027d',
         '6016x'                    => 'alcatel ot-6016x',
@@ -54,6 +58,8 @@ class AlcatelFactory implements Factory\FactoryInterface
         '6036y'                    => 'alcatel ot-6036y',
         '6035r'                    => 'alcatel ot-6035r',
         '6034r'                    => 'alcatel ot-6034r',
+        '6034y'                    => 'alcatel ot-6034y',
+        '6034m'                    => 'alcatel ot-6034m',
         '4019a'                    => 'alcatel ot-4019a',
         '4010d'                    => 'alcatel ot-4010d',
         '4034d'                    => 'alcatel ot-4034d',
@@ -64,6 +70,9 @@ class AlcatelFactory implements Factory\FactoryInterface
         '6030d'                    => 'alcatel ot-6030d',
         '6015x'                    => 'alcatel ot-6015x',
         '6012d'                    => 'alcatel ot-6012d',
+        '6012e'                    => 'alcatel ot-6012e',
+        '6012a'                    => 'alcatel ot-6012a',
+        '6012w'                    => 'alcatel ot-6012w',
         '6010x'                    => 'alcatel ot-6010x',
         '6010d'                    => 'alcatel ot-6010d',
         '5042d'                    => 'alcatel ot-5042d',

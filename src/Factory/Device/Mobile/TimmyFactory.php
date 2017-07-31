@@ -27,7 +27,7 @@ class TimmyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        ' m20 '   => 'timmy m20',
+        ' m20 ' => 'timmy m20',
     ];
 
     /**

@@ -27,7 +27,7 @@ class VotoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        ' x6 '   => 'voto x6',
+        ' x6 ' => 'voto x6',
     ];
 
     /**
