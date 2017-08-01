@@ -15384,5 +15384,47 @@
       ]
     },
     "engine": "webkit"
+  },
+  "pcore-http": {
+    "name": "Pcore-HTTP",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Pcore\\-HTTP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "adcrawler": {
+    "name": "AdCrawler",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AdCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lightningquail": {
+    "name": "Lightningquail",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Lightningquail"
+      ]
+    },
+    "engine": "gecko"
   }
 }

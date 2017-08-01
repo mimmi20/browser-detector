@@ -7910,5 +7910,37 @@
     "manufacturer": "Torch Mobile",
     "bits": 32,
     "type": "Browser"
+  },
+  {
+    "ua": "W3C-checklink/4.2.1 [4.21] libwww-perl/5.803",
+    "browser": "W3C-checklink",
+    "version": "4.2.1",
+    "manufacturer": "W3C",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Pcore-HTTP/v0.23.19",
+    "browser": "Pcore-HTTP",
+    "version": "0.23.19",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "AdCrawler",
+    "browser": "AdCrawler",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; pl; rv:1.9.2.3) Gecko/20100401 Lightningquail/3.6.3",
+    "browser": "Lightningquail",
+    "version": "3.6.3",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
   }
 ]

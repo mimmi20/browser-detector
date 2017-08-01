@@ -67,6 +67,7 @@ class HtcFactory implements Factory\FactoryInterface
         '7 trophy'                => 'htc spark',
         'mwp6985'                 => 'htc spark',
         '0p6b180'                 => 'htc 0p6b180',
+        '0p6b'                    => 'htc 0p6b',
         'one_m9plus'              => 'htc m9 plus',
         'one m9plus'              => 'htc m9 plus',
         'one_m9'                  => 'htc m9',

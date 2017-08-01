@@ -27,6 +27,7 @@ class PrestigioFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'pap5300duo'      => 'prestigio pap5300duo',
         'psp5517duo'      => 'prestigio psp5517duo',
         'psp5508duo'      => 'prestigio psp5508duo',
         'psp5505duo'      => 'prestigio psp5505duo',

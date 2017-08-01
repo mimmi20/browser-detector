@@ -21,15 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralMobileFactory implements Factory\FactoryInterface
+class FnfFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'discovery elite' => 'general mobile discovery elite',
-        'discovery ii'    => 'general mobile discovery ii',
-        'discovery'       => 'general mobile discovery',
+        'ifive mini 4s' => 'fnf ifive mini 4s',
     ];
 
     /**
@@ -61,6 +59,6 @@ class GeneralMobileFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general general mobile device', $useragent);
+        return $this->loader->load('general fnf device', $useragent);
     }
 }

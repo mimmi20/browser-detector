@@ -640,11 +640,20 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('safari', $useragent);
         }
 
-        $checkBeforeMosbookmarks = [
+        $checkLastUiwebview = [
             'ios'                                 => 'mobile safari uiwebview',
             'iphone'                              => 'mobile safari uiwebview',
             'ipad'                                => 'mobile safari uiwebview',
             'ipod'                                => 'mobile safari uiwebview',
+        ];
+
+        foreach ($checkLastUiwebview as $search => $key) {
+            if (!$s->contains('windows', false) && $s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
+        $checkBeforeMosbookmarks = [
             'paperlibot'                          => 'paper.li bot',
             'spbot'                               => 'seoprofiler',
             'dotbot'                              => 'dotbot',
@@ -848,6 +857,7 @@ class BrowserFactory implements FactoryInterface
             'y!j-bsc'                      => 'yahoo! japan',
             'rogerbot'                     => 'rogerbot',
             'commoncrawler node'           => 'commoncrawler node',
+            'adcrawler'                    => 'adcrawler',
             'crawler'                      => 'crawler',
             'jig browser web'              => 'jig browser web',
             't-h-u-n-d-e-r-s-t-o-n-e'      => 'texis webscript',
@@ -1135,6 +1145,7 @@ class BrowserFactory implements FactoryInterface
             'debian apt-http'                 => 'apt http transport',
             'ubuntu apt-http'                 => 'apt http transport',
             'urlgrabber'                      => 'url grabber',
+            'w3c-checklink'                   => 'w3c-checklink',
             'libwww-perl'                     => 'libwww',
             'openbsd ftp'                     => 'openbsd ftp',
             'sophosagent'                     => 'sophosagent',
@@ -1152,6 +1163,7 @@ class BrowserFactory implements FactoryInterface
             'gwpimages'                       => 'gwpimages',
             'notetextview'                    => 'notetextview',
             'yourls'                          => 'yourls',
+            'lightningquail'                  => 'lightningquail',
             'ning'                            => 'ning',
             'sprinklr'                        => 'sprinklr',
             'urlchecker'                      => 'urlchecker',
@@ -1224,6 +1236,7 @@ class BrowserFactory implements FactoryInterface
             'autoit'                          => 'autoit',
             'atvoice'                         => 'atvoice',
             'rankingbot2'                     => 'rankingbot2',
+            'pcore-http'                      => 'pcore-http',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

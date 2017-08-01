@@ -27,6 +27,8 @@ class SonyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'g3221'                => 'sony g3221',
+        'g8141'                => 'sony g8141',
         'e6683'                => 'sony e6683',
         'e6633'                => 'sony e6633',
         'e2115'                => 'sony e2115',
@@ -81,6 +83,7 @@ class SonyFactory implements Factory\FactoryInterface
         'xperia z1 compact'    => 'sony d5503',
         'xperia z1'            => 'sony c6903',
         'c6903'                => 'sony c6903',
+        'xperia z ultra'       => 'sony c6833',
         'c6833'                => 'sony c6833',
         'c6606'                => 'sony c6606',
         'c6602'                => 'sonyericsson c6602',

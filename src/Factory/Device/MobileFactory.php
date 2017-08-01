@@ -940,6 +940,14 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\WexlerFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->containsAny(['vox s502 3g'], false)) {
+            return (new Mobile\DigmaFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/[lpt][st]\d{3,4}[emps]/i', $useragent)) {
+            return (new Mobile\DigmaFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('A400', true)) {
             return (new Mobile\CelkonFactory($this->loader))->detect($useragent, $s);
         }
@@ -982,10 +990,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('a1000s', false)) {
             return (new Mobile\XoloFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['vox s502 3g', 'ps1043mg', 'tt7026mw'], false)) {
-            return (new Mobile\DigmaFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
@@ -1316,6 +1320,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ExcelvanFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->containsAny(['MT6582/', 'mn84l_8039_20203'], true)) {
+            return $this->loader->load('general mobile device', $useragent);
+        }
+
         if (preg_match('/(S|L|W|M)T\d{2}/', $useragent)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
@@ -1432,7 +1440,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DfuncFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/iD(j|n|s|x|r)(D|Q)\d{1,2}/', $useragent)) {
+        if (preg_match('/iD(j|n|s|x|r)(D|Q)?\d{1,2}/', $useragent)) {
             return (new Mobile\DigmaFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1856,7 +1864,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AssistantFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('discovery elite', false)) {
+        if ($s->contains('discovery', false)) {
             return (new Mobile\GeneralMobileFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2230,6 +2238,14 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('tab1024', false)) {
             return (new Mobile\IntensoFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('ifive mini 4s', false)) {
+            return (new Mobile\FnfFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('blade', false)) {
+            return (new Mobile\ZteFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('i545', true)) {

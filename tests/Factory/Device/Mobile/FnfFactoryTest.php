@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\GeneralMobileFactory;
+use BrowserDetector\Factory\Device\Mobile\FnfFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
@@ -19,10 +19,10 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class GeneralMobileFactoryTest extends \PHPUnit\Framework\TestCase
+class FnfFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\GeneralMobileFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\FnfFactory
      */
     private $object = null;
 
@@ -34,7 +34,7 @@ class GeneralMobileFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../../cache/');
         $loader       = new DeviceLoader($cache);
-        $this->object = new GeneralMobileFactory($loader);
+        $this->object = new FnfFactory($loader);
     }
 
     use DeviceTestDetectTrait;
@@ -44,6 +44,6 @@ class GeneralMobileFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return json_decode(file_get_contents('tests/data/factory/device/mobile/general-mobile.json'), true);
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/fnf.json'), true);
     }
 }

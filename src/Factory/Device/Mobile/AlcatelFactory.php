@@ -33,6 +33,7 @@ class AlcatelFactory implements Factory\FactoryInterface
         '8030y'                    => 'alcatel ot-8030y',
         '5025d'                    => 'alcatel ot-5025d',
         '4027d'                    => 'alcatel ot-4027d',
+        '6016d'                    => 'alcatel ot-6016d',
         '6016x'                    => 'alcatel ot-6016x',
         'vf-795'                   => 'alcatel vf-795',
         '5022d'                    => 'alcatel ot-5022d',
