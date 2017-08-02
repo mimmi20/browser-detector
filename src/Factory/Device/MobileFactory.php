@@ -944,7 +944,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DigmaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/[lpt][st]\d{3,4}[emps]/i', $useragent)) {
+        if (preg_match('/(cs|vs|ps|tt|pt|lt|ct|ts|ns)\d{3,4}[aemps]/i', $useragent)) {
             return (new Mobile\DigmaFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -960,7 +960,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\FourGoodFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['A101', 'A500', 'Z200', 'Z500', ' T08 ', ' T07 ', ' T06 ', ' T04 ', ' T03 ', ' S55 '], true)) {
+        if ($s->containsAny(['A101', 'A500', 'Z200', 'Z500', ' T09 ', ' T08 ', ' T07 ', ' T06 ', ' T04 ', ' T03 ', ' S55 '], true)) {
             return (new Mobile\AcerFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1240,7 +1240,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny([' droid', 'milestone', 'xoom'], false)) {
+        if ($s->containsAny([' droid', 'milestone', 'xoom', 'razr hd'], false)) {
             return (new Mobile\MotorolaFactory($this->loader))->detect($useragent, $s);
         }
 
