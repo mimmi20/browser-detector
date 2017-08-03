@@ -240,7 +240,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SpiceFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('Symphony', true)) {
+        if ($s->contains('symphony', false)) {
             return (new Mobile\SymphonyFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2148,7 +2148,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ChanghongFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['crown', 'bv5000'], false)) {
+        if ($s->containsAny(['crown', 'bv5000', ' r6 '], false)) {
             return (new Mobile\BlackviewFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2164,7 +2164,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\KianoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('u7 plus', false)) {
+        if ($s->containsAny(['u7 plus', 'u16 max'], false)) {
             return (new Mobile\OukitelFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2250,6 +2250,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('i545', true)) {
             return (new Mobile\SamsungFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains(' i10 ', false)) {
+            return (new Mobile\SymphonyFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {
