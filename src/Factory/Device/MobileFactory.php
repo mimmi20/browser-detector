@@ -464,7 +464,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\KddiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('kobo touch', false)) {
+        if ($s->contains('kobo', false)) {
             return (new Mobile\KoboFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1452,7 +1452,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\KingzoneFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains(' A10 ', true)) {
+        if ($s->containsAny([' A10 ', 'MP907C'], true)) {
             return (new Mobile\AllWinnerFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1564,7 +1564,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SunstechFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['M7T', 'P93G', 'i75', 'M83g', ' M6 ', 'M6pro', 'M9pro', 'PIPO'], true)) {
+        if ($s->containsAny(['M7T', 'P93G', 'i75', 'M83g', ' M6 ', 'M6pro', 'M9pro', 'PIPO', ' T9 '], true)) {
             return (new Mobile\PipoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1848,7 +1848,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\EtulineFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('STUDIO 5.5', true)) {
+        if ($s->containsAny(['studio 5.5', 'studio xl 2'], false)) {
             return (new Mobile\BluFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2148,7 +2148,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ChanghongFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['crown', 'bv5000', ' r6 '], false)) {
+        if ($s->containsAny(['crown', 'bv5000', ' r6 ', ' a8 '], false)) {
             return (new Mobile\BlackviewFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2254,6 +2254,18 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains(' i10 ', false)) {
             return (new Mobile\SymphonyFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('arc', false)) {
+            return (new Mobile\KoboFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('m92d-3g', false)) {
+            return (new Mobile\SumvierFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('m502', false)) {
+            return (new Mobile\NavonFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {

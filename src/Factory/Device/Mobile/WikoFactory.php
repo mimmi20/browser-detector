@@ -38,6 +38,7 @@ class WikoFactory implements Factory\FactoryInterface
         'pulp fab 4g'   => 'wiko pulp fab 4g',
         'pulp fab'      => 'wiko pulp fab',
         'pulp 4g'       => 'wiko pulp 4g',
+        'pulp'          => 'wiko pulp',
         'ridge fab 4g'  => 'wiko ridge fab 4g',
         'ridge fab'     => 'wiko ridge fab',
         'l5510'         => 'wiko ridge fab',

@@ -30,6 +30,7 @@ class BlackviewFactory implements Factory\FactoryInterface
         'bv5000' => 'blackview bv5000',
         'crown'  => 'blackview t570',
         ' r6 '   => 'blackview r6',
+        ' a8 '   => 'blackview a8',
     ];
 
     /**

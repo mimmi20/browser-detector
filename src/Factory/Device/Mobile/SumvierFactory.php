@@ -21,16 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class JiayuFactory implements Factory\FactoryInterface
+class SumvierFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'jy-g4s' => 'jiayu jy-g4s',
-        'jy-g3'  => 'jiayu jy-g3',
-        'jy-s3s' => 'jiayu jy-s3s',
-        'jy-s3'  => 'jiayu jy-s3',
+        'm92d-3g' => 'sumvier m92d-3g',
     ];
 
     /**
@@ -62,6 +59,6 @@ class JiayuFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general jiayu device', $useragent);
+        return $this->loader->load('general sumvier device', $useragent);
     }
 }
