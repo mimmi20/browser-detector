@@ -21,18 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UmiFactory implements Factory\FactoryInterface
+class RamosFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'hammer_s'    => 'umi hammer s',
-        'london'      => 'umi london',
-        'umi_diamond' => 'umi diamond',
-        'umi_max'     => 'umi max',
-        'umi_super'   => 'umi super',
-        'umi_x2'      => 'umi x2',
+        'i11 pro' => 'ramos i11 pro',
     ];
 
     /**
@@ -64,6 +59,6 @@ class UmiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general umi device', $useragent);
+        return $this->loader->load('general ramos device', $useragent);
     }
 }

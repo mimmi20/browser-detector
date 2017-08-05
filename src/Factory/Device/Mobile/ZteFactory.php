@@ -32,6 +32,7 @@ class ZteFactory implements Factory\FactoryInterface
         'blade v580'        => 'zte blade v580',
         'e8q+'              => 'zte e8q+',
         's8q'               => 'zte s8q',
+        's7q'               => 'zte s7q',
         'nx511j'            => 'zte nx511j',
         'grand s flex'      => 'zte grand s flex',
         'blade l110'        => 'zte blade l110',
