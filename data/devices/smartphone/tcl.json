@@ -1,4 +1,17 @@
 {
+  "general tcl device": {
+    "codename": "general TCL Device",
+    "marketingName": "general TCL Device",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true,
+    "colors": null
+  },
   "tcl vf685": {
     "codename": "VF685",
     "marketingName": "Smart 4 Fun",
@@ -87,6 +100,32 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1080,
     "resolutionHeight": 1920,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "tcl s720t": {
+    "codename": "S720T",
+    "marketingName": "S720T",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "tcl m2u": {
+    "codename": "M2U",
+    "marketingName": "M2U",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
     "dualOrientation": true,
     "colors": null
   }

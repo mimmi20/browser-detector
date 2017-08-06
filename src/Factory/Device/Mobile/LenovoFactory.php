@@ -37,6 +37,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'k33a48'                  => 'lenovo k33a48',
         'z2121'                   => 'lenovo z2121',
         'a526'                    => 'lenovo a526',
+        's1032x'                  => 'lenovo s1032x',
         's1a40'                   => 'lenovo s1a40',
         'a5000'                   => 'lenovo a5000',
         'p770'                    => 'lenovo p770',

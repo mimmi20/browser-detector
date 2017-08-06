@@ -7051,7 +7051,7 @@
     "ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0); 360Spider(compatible; HaosouSpider; http://www.haosou.com/help/help_3_2.html)",
     "browser": "HaosouSpider",
     "version": "0.0.0",
-    "manufacturer": null,
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
     "bits": 32,
     "type": "Bot/Crawler"
   },
@@ -7059,7 +7059,7 @@
     "ua": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider(compatible; HaosouSpider; http://www.haosou.com/help/help_3_2.html)",
     "browser": "HaosouSpider",
     "version": "0.0.0",
-    "manufacturer": null,
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
     "bits": 32,
     "type": "Bot/Crawler"
   },
@@ -7942,5 +7942,21 @@
     "manufacturer": null,
     "bits": 32,
     "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.1.2; zh-cn; ZTE N900D Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30; 360 Aphone Browser (6.9.9.94beta)",
+    "browser": "360 Browser",
+    "version": "6.9.9.94-beta",
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X) Excel/x.10.0",
+    "browser": "Excel",
+    "version": "0.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
   }
 ]

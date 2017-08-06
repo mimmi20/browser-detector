@@ -209,14 +209,27 @@
   },
   "htc 0p6b": {
     "codename": "0P6B",
-    "marketingName": "0P6B",
+    "marketingName": "One M8",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "htc 0p6b180": {
+    "codename": "0P6B180",
+    "marketingName": "One M8 for Windows",
     "manufacturer": "Htc",
     "brand": "Htc",
     "platform": "windows phone",
-    "type": "mobile-phone",
+    "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
     "dualOrientation": true,
     "colors": null
   }

@@ -1505,14 +1505,15 @@
   },
   "360 browser": {
     "name": "360 Browser",
-    "manufacturer": "Unknown",
+    "manufacturer": "Qihoo",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "browser",
     "version": {
       "class": "VersionFactory",
       "search": [
-        "360%20Browser"
+        "360%20Browser",
+        "360 Aphone Browser \\("
       ]
     },
     "engine": "webkit"
@@ -4655,7 +4656,7 @@
   },
   "haosouspider": {
     "name": "HaosouSpider",
-    "manufacturer": "Unknown",
+    "manufacturer": "Qihoo",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "bot",

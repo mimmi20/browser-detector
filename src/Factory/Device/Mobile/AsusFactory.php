@@ -33,6 +33,7 @@ class AsusFactory implements Factory\FactoryInterface
         'p022'              => 'asus p022',
         'p023'              => 'asus p023',
         'p024'              => 'asus p024',
+        'p027'              => 'asus p027',
         'x00dd'             => 'asus x00dd',
         'x013d'             => 'asus x013d',
         'z007'              => 'asus z007',
