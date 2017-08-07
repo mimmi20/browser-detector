@@ -956,7 +956,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\DigmaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(cs|vs|ps|tt|pt|lt|ct|ts|ns)\d{3,4}[aemps]/i', $useragent)) {
+        if (preg_match('/(cs|vs|ps|tt|pt|lt|ct|ts|ns|ht)\d{3,4}[aempqs]/i', $useragent)) {
             return (new Mobile\DigmaFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1248,7 +1248,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\VodafoneFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['onetouch', 'one_touch', 'one touch', 'v860', 'vodafone smart', 'vodafone 975n', 'vodafone 875', 'vodafone 785', 'vf-795'], false)) {
+        if ($s->containsAny(['onetouch', 'one_touch', 'one touch', 'v860', 'vodafone smart', 'vodafone 975n', 'vodafone 875', 'vodafone 785', 'vf-795', 'vf-895n'], false)) {
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 

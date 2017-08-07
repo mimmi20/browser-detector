@@ -39,7 +39,7 @@ class TrekStorFactory implements Factory\FactoryInterface
         'wp 4.7'                        => 'trekstor winphone 4.7 hd',
         'vt10416-2'                     => 'trekstor vt10416-2',
         'vt10416-1'                     => 'trekstor vt10416-1',
-        'surftab_7.0'                   => 'trekstor st701041',
+        'surftab_7.0'                   => 'trekstor st70104-1',
         'st80216'                       => 'trekstor st80216',
         'st80208'                       => 'trekstor st80208',
         'st701041'                      => 'trekstor st70104-1',
