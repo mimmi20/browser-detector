@@ -44,6 +44,6 @@ class GeneralMobileFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return json_decode(file_get_contents('tests/data/factory/device/mobile/generalmobile.json'), true);
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/general-mobile.json'), true);
     }
 }

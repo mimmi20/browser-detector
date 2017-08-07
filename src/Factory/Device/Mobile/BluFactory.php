@@ -27,6 +27,7 @@ class BluFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'studio xl 2'     => 'blu studio xl 2',
         'studio g'        => 'blu studio g',
         'vivo iv'         => 'blu vivo iv',
         'studio 7.0'      => 'blu studio 7.0',

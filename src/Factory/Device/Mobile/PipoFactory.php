@@ -27,6 +27,7 @@ class PipoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        ' t9 '  => 'pipo t9',
         'p93g'  => 'pipo p9 3g',
         'm9pro' => 'pipo q107',
         'm7t'   => 'pipo m7t',

@@ -5,8 +5,8 @@
     "marketingName": "general Lava Device",
     "manufacturer": "Lava",
     "brand": "Lava",
-    "type": "Mobile Phone",
-    "dualOrientation": false,
+    "type": "Smartphone",
+    "dualOrientation": true,
     "pointingMethod": "touchscreen",
     "width": null,
     "height": null,
@@ -18,11 +18,11 @@
     "marketingName": "Spark 284",
     "manufacturer": "Lava",
     "brand": "Lava",
-    "type": "Mobile Phone",
+    "type": "Feature Phone",
     "dualOrientation": false,
-    "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "pointingMethod": null,
+    "width": 240,
+    "height": 320,
     "colors": null
   },
   {
@@ -31,11 +31,11 @@
     "marketingName": "KKT20",
     "manufacturer": "Lava",
     "brand": "Lava",
-    "type": "Mobile Phone",
+    "type": "Feature Phone",
     "dualOrientation": false,
-    "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "pointingMethod": null,
+    "width": 240,
+    "height": 320,
     "colors": null
   },
   {
@@ -101,6 +101,19 @@
     "pointingMethod": "touchscreen",
     "width": 480,
     "height": 854,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1; X17 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36",
+    "codeName": "X17",
+    "marketingName": "X17",
+    "manufacturer": "Lava",
+    "brand": "Lava",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 720,
+    "height": 1280,
     "colors": null
   }
 ]

@@ -27,15 +27,16 @@ class TclFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        '5095k' => 'tcl 5095k',
-        '5095b' => 'tcl 5095b',
-        '5095i' => 'tcl 5095i',
-        '5095y' => 'tcl 5095y',
-        's700'  => 'tcl s700',
-        'j620'  => 'tcl j620',
-        'm2u'   => 'tcl m2u',
-        's720t' => 'tcl s720t',
-        'vf685' => 'tcl vf685',
+        '5095k'   => 'tcl 5095k',
+        '5095b'   => 'tcl 5095b',
+        '5095i'   => 'tcl 5095i',
+        '5095y'   => 'tcl 5095y',
+        's700'    => 'tcl s700',
+        'j620'    => 'tcl j620',
+        'm2u'     => 'tcl m2u',
+        's720t'   => 'tcl s720t',
+        'vf685'   => 'tcl vf685',
+        'vf-1497' => 'tcl vf-1497',
     ];
 
     /**

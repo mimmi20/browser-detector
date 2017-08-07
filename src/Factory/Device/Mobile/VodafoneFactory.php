@@ -27,11 +27,11 @@ class VodafoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        '985n'        => 'vodafone 985n',
-        'smart 4 max' => 'vodafone smart 4 max',
-        'vfd 600'     => 'vodafone vfd 600',
-        'vf-1497'     => 'vodafone vf-1497',
-        'smart tab 4' => 'vodafone smart tab 4',
+        '985n'          => 'vodafone 985n',
+        'smart 4 max'   => 'vodafone smart 4 max',
+        'smart 4 turbo' => 'vodafone smart 4 turbo',
+        'vfd 600'       => 'vodafone vfd 600',
+        'smart tab 4'   => 'vodafone smart tab 4',
     ];
 
     /**

@@ -1,17 +1,4 @@
 {
-  "lenovo smart tab iii 7": {
-    "codename": "Smart Tab III 7",
-    "marketingName": "Smart Tab III 7",
-    "manufacturer": "Lenovo",
-    "brand": "Vodafone",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true,
-    "colors": null
-  },
   "general lenovo device": {
     "codename": "general Lenovo Device",
     "marketingName": "general Lenovo Device",
@@ -22,6 +9,19 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "lenovo smart tab iii 7": {
+    "codename": "Smart Tab III 7",
+    "marketingName": "Smart Tab III 7",
+    "manufacturer": "Lenovo",
+    "brand": "Vodafone",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
     "dualOrientation": true,
     "colors": null
   },
@@ -737,6 +737,19 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1920,
     "resolutionHeight": 1200,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "lenovo s1032x": {
+    "codename": "S1032X",
+    "marketingName": "S1032X",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
     "dualOrientation": true,
     "colors": null
   }

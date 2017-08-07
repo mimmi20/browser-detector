@@ -29,6 +29,7 @@ class GeneralMobileFactory implements Factory\FactoryInterface
     private $devices = [
         'discovery elite' => 'general mobile discovery elite',
         'discovery ii'    => 'general mobile discovery ii',
+        'discovery'       => 'general mobile discovery',
     ];
 
     /**

@@ -28,6 +28,7 @@ class TheqFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'tp41-3g' => 'theq tp41-3g',
+        'tp31-3g' => 'theq tp31-3g',
     ];
 
     /**

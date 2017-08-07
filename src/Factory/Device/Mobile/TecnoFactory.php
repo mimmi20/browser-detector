@@ -27,9 +27,10 @@ class TecnoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'l8' => 'tecno l8',
-        'p9' => 'tecno p9',
-        'h6' => 'tecno h6',
+        'l8'   => 'tecno l8',
+        'p9'   => 'tecno p9',
+        'h6'   => 'tecno h6',
+        ' f5 ' => 'tecno f5',
     ];
 
     /**

@@ -27,10 +27,11 @@ class TrekStorFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'st10216-3'                     => 'trekstor st10216-3',
         'surftab theatre 13.3'          => 'trekstor surftab theatre 13.3',
-        'surftab breeze 7.0 quad'       => 'trekstor surftab breeze 7.0 quad',
         'surftab breeze 10.1 quad plus' => 'trekstor surftab breeze 10.1 quad plus',
+        'breeze 10.1 quad'              => 'trekstor surftab breeze 10.1 quad',
+        'surftab breeze 9.6 quad 3g'    => 'trekstor surftab breeze 9.6 quad 3g',
+        'surftab breeze 7.0 quad'       => 'trekstor surftab breeze 7.0 quad',
         'xintroni10.1'                  => 'trekstor surftab xintron i 10.1 3g',
         'surftab xintron i 10.1 3g'     => 'trekstor surftab xintron i 10.1 3g',
         'surftab twin 11.6 lc1'         => 'trekstor surftab twin 11.6 lc1',
@@ -38,16 +39,17 @@ class TrekStorFactory implements Factory\FactoryInterface
         'wp 4.7'                        => 'trekstor winphone 4.7 hd',
         'vt10416-2'                     => 'trekstor vt10416-2',
         'vt10416-1'                     => 'trekstor vt10416-1',
-        'st701041'                      => 'trekstor st701041',
-        'surftab_7.0'                   => 'trekstor st701041',
-        'st10216-2'                     => 'trekstor st10216-2',
+        'surftab_7.0'                   => 'trekstor st70104-1',
         'st80216'                       => 'trekstor st80216',
         'st80208'                       => 'trekstor st80208',
-        'st70104'                       => 'trekstor st70104',
-        'st10416-1'                     => 'trekstor st10416-1',
+        'st701041'                      => 'trekstor st70104-1',
+        'st70104-1'                     => 'trekstor st70104-1',
+        'st70104-2'                     => 'trekstor st70104-2',
+        'st10216-3'                     => 'trekstor st10216-3',
+        'st10216-2'                     => 'trekstor st10216-2',
         'st10216-1'                     => 'trekstor st10216-1',
+        'st10416-1'                     => 'trekstor st10416-1',
         'trekstor_liro_color'           => 'trekstor liro color',
-        'breeze 10.1 quad'              => 'trekstor surftab breeze 10.1 quad',
     ];
 
     /**

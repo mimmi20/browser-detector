@@ -20,8 +20,8 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
     "dualOrientation": true,
     "colors": null
   },
@@ -33,8 +33,21 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "allwinner mp907c": {
+    "codename": "MP907C",
+    "marketingName": "MP907C",
+    "manufacturer": "AllWinner",
+    "brand": "AllWinner",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
     "dualOrientation": true,
     "colors": null
   }
