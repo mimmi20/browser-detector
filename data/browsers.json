@@ -15428,5 +15428,19 @@
       ]
     },
     "engine": "gecko"
+  },
+  "kiodia-spider": {
+    "name": "Kiodia Spider",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kiodia Spider"
+      ]
+    },
+    "engine": "unknown"
   }
 }

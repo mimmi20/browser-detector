@@ -629,6 +629,7 @@ class BrowserFactory implements FactoryInterface
             'wbsrch'                                        => 'wbsearchbot',
             'konqueror'                                     => 'konqueror',
             'typo3-linkvalidator'                           => 'typo3 linkvalidator',
+            'typo3'                                         => 'typo3',
             'feeddlerrss'                                   => 'feeddler rss reader',
         ];
 
@@ -956,6 +957,7 @@ class BrowserFactory implements FactoryInterface
             'securepoint cf'                     => 'securepoint content filter',
             'sogou-spider'                       => 'sogou spider',
             'rankflex'                           => 'rankflex',
+            'kiodia spider'                      => 'kiodia-spider',
             'domnutch'                           => 'domnutch bot',
             'nutch'                              => 'nutch',
             'boardreader favicon fetcher'        => 'boardreader favicon fetcher',

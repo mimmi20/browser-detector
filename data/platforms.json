@@ -958,5 +958,16 @@
       "class": null,
       "search": null
     }
+  },
+  "opensolaris": {
+    "name": "OpenSolaris",
+    "marketingName": "OpenSolaris",
+    "manufacturer": "Oracle",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OpenSolaris"
+      ]
+    }
   }
 }

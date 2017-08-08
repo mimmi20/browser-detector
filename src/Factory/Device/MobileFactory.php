@@ -2268,7 +2268,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SymphonyFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('arc', false)) {
+        if ($s->contains(' arc ', false)) {
             return (new Mobile\KoboFactory($this->loader))->detect($useragent, $s);
         }
 

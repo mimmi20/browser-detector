@@ -50,6 +50,7 @@ class ZteFactory implements Factory\FactoryInterface
         'orange hi 4g'      => 'zte hi 4g',
         'bs 451'            => 'zte bs 451',
         'blade v580'        => 'zte blade v580',
+        'blade v220'        => 'zte blade v220',
         'blade l110'        => 'zte blade l110',
         'blade vec 4g'      => 'zte blade vec 4g',
         'blade a510'        => 'zte blade a510',
