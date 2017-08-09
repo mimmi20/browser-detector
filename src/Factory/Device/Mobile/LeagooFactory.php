@@ -32,6 +32,7 @@ class LeagooFactory implements Factory\FactoryInterface
         'elite 4' => 'leagoo elite 4',
         't1_plus' => 'leagoo t1 plus',
         'lead 2'  => 'leagoo lead 2',
+        'lead 1'  => 'leagoo lead 1',
     ];
 
     /**

@@ -1100,7 +1100,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\OdysFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE', 'LENNY', 'GETAWAY', 'RAINBOW', 'WAX', 'KITE', 'BARRY', 'HIGHWAY', 'OZZY', 'RIDGE FAB', 'PULP', 'SUNNY', 'FEVER', 'PLUS', 'SUNSET', 'DARKNIGHT'], true)) {
+        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE', 'LENNY', 'GETAWAY', 'RAINBOW', 'WAX', 'KITE', 'BARRY', 'HIGHWAY', 'OZZY', 'RIDGE FAB', 'PULP', 'SUNNY', 'FEVER', 'PLUS', 'SUNSET', 'DARKNIGHT', 'FIZZ'], true)) {
             return (new Mobile\WikoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1320,7 +1320,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NextbookFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny([' c7 ', ' h1 ', ' cheetah '], false)) {
+        if ($s->containsAny([' c7 ', ' h1 ', ' cheetah ', ' x12 '], false)) {
             return (new Mobile\CubotFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1676,7 +1676,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\VertexFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['M040', 'MZ-MX5', 'MX4', ' M9 ', ' M2 '], true)) {
+        if ($s->containsAny(['M040', 'MZ-MX5', 'MX4', ' M9 ', ' M2 ', 'M032'], true)) {
             return (new Mobile\MeizuFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1752,7 +1752,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\TurboPadFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['HW-W718', 'W717', 'HM-N501-FL', ' L52 '], true)) {
+        if ($s->containsAny(['HW-W718', 'W717', 'HM-N501-FL', ' L52 ', ' G30 ', 'PAD G781'], true)) {
             return (new Mobile\HaierFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1972,7 +1972,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LifewareFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['lead 2', 't1_plus', 'elite 4', 'elite 5', 'shark 1'], false)) {
+        if ($s->containsAny(['lead 1', 'lead 2', 't1_plus', 'elite 4', 'elite 5', 'shark 1'], false)) {
             return (new Mobile\LeagooFactory($this->loader))->detect($useragent, $s);
         }
 

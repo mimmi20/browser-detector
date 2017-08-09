@@ -76,6 +76,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'yoga tablet 2-1050f'     => 'lenovo 1050f',
         'yoga tablet 2-830l'      => 'lenovo 830l',
         'yoga tablet 2-830f'      => 'lenovo 830f',
+        'a10-70l'                 => 'lenovo a10-70l',
         'a10-70f'                 => 'lenovo a10-70f',
         's6000l-f'                => 'lenovo s6000l-f',
         's6000-h'                 => 'lenovo s6000-h',

@@ -244,6 +244,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-g750f'        => 'samsung sm-g750f',
         'sm-g7508q'       => 'samsung sm-g7508q',
         'sm-g7508'        => 'samsung sm-g7508',
+        'sm-p607t'        => 'samsung sm-p607t',
         'sm-p605'         => 'samsung sm-p605',
         'sm-p601'         => 'samsung sm-p601',
         'sm-p600'         => 'samsung sm-p600',

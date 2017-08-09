@@ -234,6 +234,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'g6609'                           => 'huawei g6609',
         'g6600'                           => 'huawei g6600',
         'g700-u10'                        => 'huawei g700-u10',
+        'g700-u00'                        => 'huawei g700-u00',
         'g527-u081'                       => 'huawei g527-u081',
         'g525-u00'                        => 'huawei g525-u00',
         'g510'                            => 'huawei g510',

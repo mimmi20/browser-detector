@@ -46,6 +46,7 @@ class WikoFactory implements Factory\FactoryInterface
         'highway'       => 'wiko highway',
         'barry'         => 'wiko barry',
         'wax'           => 'wiko wax',
+        'fizz'          => 'wiko fizz',
         'slide2'        => 'wiko slide 2',
         'slide'         => 'wiko slide',
         'jerry'         => 'wiko jerry',
