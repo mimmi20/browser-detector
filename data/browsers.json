@@ -9481,10 +9481,11 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "MQQBrowser"
+        "MQQBrowser",
+        "QQBrowser"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "qqbrowser mini": {
     "name": "QQbrowser Mini",
@@ -9498,7 +9499,7 @@
         "MQQBrowser\\/Mini"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "qt": {
     "name": "Qt",
@@ -15439,6 +15440,62 @@
       "class": "VersionFactory",
       "search": [
         "Kiodia Spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "toquo.es-bot": {
+    "name": "toquo.es bot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "toquo\\.es"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "contacts crawler": {
+    "name": "Contacts Crawler",
+    "manufacturer": "Scrapinghub",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Contacts Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gloomarbot": {
+    "name": "GloomarBot",
+    "manufacturer": "Gloomar",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GloomarBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "booglebot": {
+    "name": "BoogleBot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BoogleBot"
       ]
     },
     "engine": "unknown"

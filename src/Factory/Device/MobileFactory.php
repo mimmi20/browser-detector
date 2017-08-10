@@ -916,6 +916,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\RamosFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('woxter', false)) {
+            return (new Mobile\WoxterFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains(' mt791 ', false)) {
             return (new Mobile\KeenHighFactory($this->loader))->detect($useragent, $s);
         }
@@ -996,7 +1000,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LenovoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['S208', 'S550', 'S600'], true)) {
+        if ($s->containsAny(['S208', 'S550', 'S600', 'Z100 Pro'], true)) {
             return (new Mobile\CubotFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2040,7 +2044,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LyfFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['x7 plus', 'x5max'], false)) {
+        if ($s->containsAny(['x7 plus', 'x5max', 'x5pro'], false)) {
             return (new Mobile\VivoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2298,6 +2302,30 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('excellent8', false)) {
             return (new Mobile\TomtecFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('s750', false)) {
+            return (new Mobile\BeneveFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('mpqc730', false)) {
+            return (new Mobile\MpmanFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('ih-g101', false)) {
+            return (new Mobile\InnoHitFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('g900', false)) {
+            return (new Mobile\IppoFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('nimbus 80qb', false)) {
+            return (new Mobile\WoxterFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('gs55-6', false)) {
+            return (new Mobile\GigasetFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {

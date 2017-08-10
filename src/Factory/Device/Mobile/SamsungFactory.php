@@ -490,6 +490,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-g313hu'       => 'samsung sm-g313hu',
         'sm-g313hn'       => 'samsung sm-g313hn',
         'sm-g310hn'       => 'samsung sm-g310hn',
+        'sm-g130hn'       => 'samsung sm-g130hn',
         'sm-g130h'        => 'samsung sm-g130h',
         'sm-g130e'        => 'samsung sm-g130e',
         'sm-g110h'        => 'samsung sm-g110h',

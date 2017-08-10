@@ -21,25 +21,14 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CubotFactory implements Factory\FactoryInterface
+class WoxterFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'z100 pro'  => 'cubot z100 pro',
-        'one'       => 'cubot one',
-        ' cheetah ' => 'cubot cheetah',
-        ' h1 '      => 'cubot h1',
-        'note_s'    => 'cubot note s',
-        'x12'       => 'cubot x12',
-        's600'      => 'cubot s600',
-        's550'      => 'cubot s550',
-        's208'      => 'cubot s208',
-        'p9'        => 'cubot p9',
-        'gt99'      => 'cubot gt99',
-        'c11'       => 'cubot c11',
-        'c7'        => 'cubot c7',
+        'nimbus 80qb' => 'woxter nimbus 80 qb',
+        'qx103'       => 'woxter qx 103',
     ];
 
     /**
@@ -71,6 +60,6 @@ class CubotFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general cubot device', $useragent);
+        return $this->loader->load('general woxter device', $useragent);
     }
 }

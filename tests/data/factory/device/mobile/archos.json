@@ -275,14 +275,14 @@
   {
     "ua": "Mozilla/5.0 (Linux; Android 4.2.2; ARCHOS 101b XS2 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36",
     "codeName": "101B",
-    "marketingName": "101B",
+    "marketingName": "Xenon",
     "manufacturer": "Archos S.A.",
     "brand": "Archos",
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1280,
+    "height": 800,
     "colors": null
   },
   {
@@ -803,6 +803,19 @@
     "pointingMethod": "touchscreen",
     "width": 1024,
     "height": 600,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.2.2; Archos 40 Titanium Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36",
+    "codeName": "40 Titanium",
+    "marketingName": "40 Titanium",
+    "manufacturer": "Archos S.A.",
+    "brand": "Archos",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 480,
+    "height": 800,
     "colors": null
   }
 ]

@@ -162,6 +162,7 @@ class BrowserFactory implements FactoryInterface
             'micromessenger'  => 'wechat app',
             'mqqbrowser/mini' => 'qqbrowser mini',
             'mqqbrowser'      => 'qqbrowser',
+            'qqbrowser'       => 'qqbrowser',
             'pinterest'       => 'pinterest app',
             'baiduboxapp'     => 'baidu box app',
             'wkbrowser'       => 'wkbrowser',
@@ -861,6 +862,7 @@ class BrowserFactory implements FactoryInterface
             'rogerbot'                     => 'rogerbot',
             'commoncrawler node'           => 'commoncrawler node',
             'adcrawler'                    => 'adcrawler',
+            'contacts crawler'             => 'contacts crawler',
             'crawler'                      => 'crawler',
             'jig browser web'              => 'jig browser web',
             't-h-u-n-d-e-r-s-t-o-n-e'      => 'texis webscript',
@@ -1083,6 +1085,7 @@ class BrowserFactory implements FactoryInterface
             'ror sitemap generator'           => 'ror sitemap generator',
             'sitemap generator'               => 'sitemap generator',
             'embed php library'               => 'embed php library',
+            'toquo.es'                        => 'toquo.es-bot',
             'php'                             => 'php',
             'apple-pubsub'                    => 'apple pubsub',
             'simplepie'                       => 'simplepie',
@@ -1241,6 +1244,8 @@ class BrowserFactory implements FactoryInterface
             'atvoice'                         => 'atvoice',
             'rankingbot2'                     => 'rankingbot2',
             'pcore-http'                      => 'pcore-http',
+            'gloomarbot'                      => 'gloomarbot',
+            'booglebot'                       => 'booglebot',
         ];
 
         foreach ($lastBrowsers as $search => $key) {
