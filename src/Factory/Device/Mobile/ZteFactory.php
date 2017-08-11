@@ -83,6 +83,7 @@ class ZteFactory implements Factory\FactoryInterface
         'v880'              => 'zte v880',
         'v829'              => 'zte v829',
         'v808'              => 'zte v808',
+        'v795'              => 'zte v795',
         'v788d'             => 'zte v788d',
         'v9'                => 'zte v9',
         'u930hd'            => 'zte u930hd',

@@ -1680,7 +1680,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\VertexFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['M040', 'MZ-MX5', 'MX4', ' M9 ', ' M2 ', 'M032'], true)) {
+        if ($s->containsAny(['M040', 'MZ-MX5', 'MX4', ' M9 ', ' M2 ', 'M032', 'PRO 5'], true)) {
             return (new Mobile\MeizuFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2008,7 +2008,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\TurkcellFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('m-pp', false)) {
+        if ($s->containsAny(['m-pp', 'm-mp'], false)) {
             return (new Mobile\MediacomFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2326,6 +2326,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('gs55-6', false)) {
             return (new Mobile\GigasetFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('vkb011b', false)) {
+            return (new Mobile\FengxiangFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {

@@ -7333,7 +7333,7 @@
         "MiuiBrowser"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "mixbot": {
     "name": "MixBot",
@@ -15499,5 +15499,61 @@
       ]
     },
     "engine": "unknown"
+  },
+  "php-curl-class": {
+    "name": "PHP-Curl-Class",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PHP\\-Curl\\-Class"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "rankactivelinkbot": {
+    "name": "RankActiveLinkBot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "RankActiveLinkBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lippershey": {
+    "name": "Lippershey Bot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Lippershey"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bobrowser": {
+    "name": "BoBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BoBrowser"
+      ]
+    },
+    "engine": "blink"
   }
 }

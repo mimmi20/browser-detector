@@ -8014,5 +8014,37 @@
     "manufacturer": null,
     "bits": 32,
     "type": "Bot/Crawler"
+  },
+  {
+    "ua": "PHP-Curl-Class/3.6.5 (+https://github.com/php-curl-class/php-curl-class) PHP/5.6.17-0+deb8u1 curl/7.38.0",
+    "browser": "PHP-Curl-Class",
+    "version": "3.6.5",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; RankActiveLinkBot; +https://rankactive.com/resources/rankactive-linkbot)",
+    "browser": "RankActiveLinkBot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; Lippershey/5.2; +https://www.lipperhey.com/en/about/)",
+    "browser": "Lippershey",
+    "version": "5.2.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 BoBrowser/45.0.2454.153 Safari/537.36",
+    "browser": "BoBrowser",
+    "version": "45.0.2454.153",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
   }
 ]

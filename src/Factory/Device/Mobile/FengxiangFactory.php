@@ -21,19 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DenverFactory implements Factory\FactoryInterface
+class FengxiangFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'tad-90032'  => 'denver tad-90032',
-        'tad-10023'  => 'denver tad-10023',
-        'taq-10112'  => 'denver taq-10112',
-        'taq-10153'  => 'denver taq-10153',
-        'taq-10223g' => 'denver taq-10223g',
-        'tad-70112'  => 'denver tad-70112',
-        'taq-70252'  => 'denver taq-70252',
+        'vkb011b' => 'fengxiang vkb011b',
     ];
 
     /**
@@ -65,6 +59,6 @@ class DenverFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general denver device', $useragent);
+        return $this->loader->load('general fengxiang device', $useragent);
     }
 }
