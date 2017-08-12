@@ -35,6 +35,7 @@ class ArchosFactory implements Factory\FactoryInterface
         '101 copper'            => 'archos 101 copper',
         '101 helium'            => 'archos 101 helium',
         '97c platinum'          => 'archos 97c platinum',
+        '97b titanium'          => 'archos 97b titanium',
         '97 xenon'              => 'archos 97 xenon',
         '97 titaniumhd'         => 'archos 97 titanium hd',
         '97 neon'               => 'archos 97 neon',

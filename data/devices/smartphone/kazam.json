@@ -1,4 +1,17 @@
 {
+  "general kazam device": {
+    "codename": "general KAZAM Device",
+    "marketingName": "general KAZAM Device",
+    "manufacturer": "Kazam",
+    "brand": "Kazam",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true,
+    "colors": null
+  },
   "kazam thunder q45": {
     "codename": "Thunder Q4.5",
     "marketingName": "Thunder Q4.5",
@@ -33,8 +46,34 @@
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "kazam trooper x55": {
+    "codename": "Trooper X5.5",
+    "marketingName": "Trooper X5.5",
+    "manufacturer": "Kazam",
+    "brand": "Kazam",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "kazam trooper 2 5.0": {
+    "codename": "Trooper 2 5.0",
+    "marketingName": "Trooper 2 5.0",
+    "manufacturer": "Kazam",
+    "brand": "Kazam",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
     "dualOrientation": true,
     "colors": null
   }

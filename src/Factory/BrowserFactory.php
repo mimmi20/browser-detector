@@ -610,6 +610,7 @@ class BrowserFactory implements FactoryInterface
             'bb_work_connect'                               => 'bb work connect',
             'lolifox'                                       => 'lolifox',
             'cyberfox'                                      => 'cyberfox',
+            'webmoney advisor'                              => 'webmoney advisor',
             'firefox'                                       => 'firefox',
             'minefield'                                     => 'firefox',
             'shiretoko'                                     => 'firefox',
@@ -633,6 +634,8 @@ class BrowserFactory implements FactoryInterface
             'typo3-linkvalidator'                           => 'typo3 linkvalidator',
             'typo3'                                         => 'typo3',
             'feeddlerrss'                                   => 'feeddler rss reader',
+            'online-versicherungsportal.info'               => 'online-versicherungsportal.info bot',
+            'versicherungssuchmaschine.net'                 => 'versicherungssuchmaschine.net bot',
         ];
 
         foreach ($checkBeforeIos as $search => $key) {
@@ -1250,6 +1253,7 @@ class BrowserFactory implements FactoryInterface
             'pcore-http'                      => 'pcore-http',
             'gloomarbot'                      => 'gloomarbot',
             'booglebot'                       => 'booglebot',
+            'orbiter'                         => 'orbiter',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

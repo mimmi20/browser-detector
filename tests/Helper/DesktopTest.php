@@ -132,6 +132,7 @@ class DesktopTest extends \PHPUnit\Framework\TestCase
             ['>Forum.WindowsFAQ.ru</a>'],
             ['iPodder/2.1 +http://ipodder.sf.net/'],
             ['TA SEO Crawler v0.1 URLData.pm (smcquaker@tripadvisor.com)'],
+            ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) online-versicherungsportal.info Safari/538.1'],
         ];
     }
 }

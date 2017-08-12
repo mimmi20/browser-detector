@@ -2332,6 +2332,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\FengxiangFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('trooper_x55', false)) {
+            return (new Mobile\KazamFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('I5', true)) {
             return (new Mobile\SopFactory($this->loader))->detect($useragent, $s);
         }

@@ -8046,5 +8046,37 @@
     "manufacturer": null,
     "bits": 32,
     "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) online-versicherungsportal.info Safari/538.1",
+    "browser": "online-versicherungsportal.info Bot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Orbiter/1.0 (http://dailyorbit.com/)",
+    "browser": "Orbiter Bot",
+    "version": "1.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) versicherungssuchmaschine.net Safari/538.1",
+    "browser": "versicherungssuchmaschine.net Bot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows  U  Windows NT 5.1  ru  rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 WebMoney Advisor",
+    "browser": "WebMoney Advisor",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
   }
 ]
