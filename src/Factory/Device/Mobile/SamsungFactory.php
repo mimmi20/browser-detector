@@ -294,6 +294,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'n9005'           => 'samsung sm-n9005',
         'sm-n9002'        => 'samsung sm-n9002',
         'n9002'           => 'samsung sm-n9002',
+        'n900+'           => 'samsung n900+',
         'sm-n8000'        => 'samsung sm-n8000',
         'sm-n7505l'       => 'samsung sm-n7505l',
         'sm-n7505'        => 'samsung sm-n7505',

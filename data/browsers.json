@@ -3394,7 +3394,7 @@
         "facebookexternalhit"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "facebook bot": {
     "name": "FaceBook Bot",
@@ -15605,5 +15605,73 @@
       "search": null
     },
     "engine": null
+  },
+  "readkit": {
+    "name": "ReadKit",
+    "manufacturer": "Webin",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "feed-reader",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "facebook messenger app": {
+    "name": "Facebook Messenger App",
+    "manufacturer": "Facebook",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Facebook",
+        "FBAV",
+        "facebookexternalhit"
+      ]
+    },
+    "engine": null
+  },
+  "slimboat": {
+    "name": "SlimBoat",
+    "manufacturer": "FlashPeak",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SlimBoat"
+      ]
+    },
+    "engine": "blink"
+  },
+  "hotmailbuzzr": {
+    "name": "HotmailBuzzr",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "email-client",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "k-ninja": {
+    "name": "K-Ninja",
+    "manufacturer": "KmeleonBrowserOrg",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "K\\-Ninja"
+      ]
+    },
+    "engine": "gecko"
   }
 }

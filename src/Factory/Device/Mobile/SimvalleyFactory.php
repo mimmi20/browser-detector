@@ -27,6 +27,7 @@ class SimvalleyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'spx-28'   => 'simvalley spx-28',
         'spx-5 3g' => 'simvalley spx-5 3g',
         'spx-5_3g' => 'simvalley spx-5 3g',
         'spx-5'    => 'simvalley spx-5',

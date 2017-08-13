@@ -8078,5 +8078,45 @@
     "manufacturer": null,
     "bits": 32,
     "type": "Bot/Crawler"
+  },
+  {
+    "ua": "ReadKit/7105 CFNetwork/720.4.3 Darwin/14.4.0 (x86_64)",
+    "browser": "ReadKit",
+    "version": "0.0.0",
+    "manufacturer": "Webin",
+    "bits": 32,
+    "type": "Feed Reader"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12F70 [FBAN/MessengerForiOS;FBAV/27.0.0.34.13;FBBV/9902566;FBDV/iPhone5,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/8.3;FBSS/2; FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5]",
+    "browser": "Facebook Messenger App",
+    "version": "27.0.0.34.13",
+    "manufacturer": "Facebook",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.34 (KHTML, like Gecko) SlimBoat/1.1.49 Chrome/25.0.1364.97 Version/5.1 Safari/534.34",
+    "browser": "SlimBoat",
+    "version": "1.1.49",
+    "manufacturer": "FlashPeak Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "HotmailBuzzr/4801 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "HotmailBuzzr",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.7) Gecko/20060917 K-Ninja/2.0.4",
+    "browser": "K-Ninja",
+    "version": "2.0.4",
+    "manufacturer": "kmeleonbrowser.org",
+    "bits": 32,
+    "type": "Browser"
   }
 ]

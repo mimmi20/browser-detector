@@ -1104,7 +1104,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\OdysFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE', 'LENNY', 'GETAWAY', 'RAINBOW', 'WAX', 'KITE', 'BARRY', 'HIGHWAY', 'OZZY', 'RIDGE FAB', 'PULP', 'SUNNY', 'FEVER', 'PLUS', 'SUNSET', 'DARKNIGHT', 'FIZZ'], true)) {
+        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'CINK PEAX 2', 'JERRY', 'BLOOM', 'SLIDE', 'LENNY', 'GETAWAY', 'RAINBOW', 'WAX', 'KITE', 'BARRY', 'HIGHWAY', 'OZZY', 'RIDGE', 'PULP', 'SUNNY', 'FEVER', 'PLUS', 'SUNSET', 'DARKNIGHT', 'FIZZ'], true)) {
             return (new Mobile\WikoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1568,7 +1568,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PmediaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['F031', 'SCL24', 'ACE', 'SCT21'], true)) {
+        if ($s->containsAny(['F031', 'SCL24', 'ACE', 'SCT21', 'N900+'], true)) {
             return (new Mobile\SamsungFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1924,7 +1924,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LencoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('tp10.1-1500dc', false)) {
+        if ($s->containsAny(['tp10.1-1500dc', 'tp8-1200qc', 'tu-1489a'], false)) {
             return (new Mobile\IonikFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2334,6 +2334,14 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('trooper_x55', false)) {
             return (new Mobile\KazamFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('end_101g-test', false)) {
+            return (new Mobile\BlaupunktFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains(' n3 ', false)) {
+            return (new Mobile\GooPhoneFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {

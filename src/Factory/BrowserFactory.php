@@ -116,6 +116,7 @@ class BrowserFactory implements FactoryInterface
             'phantomjs'                   => 'phantomjs',
             'yabrowser'                   => 'yabrowser',
             'kamelio'                     => 'kamelio app',
+            'fban/messenger'              => 'facebook messenger app',
             'fbav'                        => 'facebook app',
             'acheetahi'                   => 'cm browser',
             'puffin'                      => 'puffin',
@@ -177,6 +178,7 @@ class BrowserFactory implements FactoryInterface
             '1password'       => '1password',
             'klar/'           => 'firefox klar',
             'eui browser'     => 'eui browser',
+            'slimboat'        => 'slimboat',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -542,6 +544,7 @@ class BrowserFactory implements FactoryInterface
             'ddg-ios-'                 => 'duckduck app',
             'snapchat'                 => 'snapchat app',
             'grindr'                   => 'grindr',
+            'readkit'                  => 'readkit',
         ];
 
         foreach ($checkBeforeSafari as $search => $key) {
@@ -601,6 +604,7 @@ class BrowserFactory implements FactoryInterface
             'maemo browser'                                 => 'microb',
             'maemobrowser'                                  => 'microb',
             'k-meleon'                                      => 'k-meleon',
+            'k-ninja'                                       => 'k-ninja',
             'curb'                                          => 'curb',
             'link_thumbnailer'                              => 'link_thumbnailer',
             'mechanize'                                     => 'mechanize',
@@ -1019,6 +1023,7 @@ class BrowserFactory implements FactoryInterface
             'bcklinks'                           => 'bcklinks',
             'links'                              => 'links',
             'airmail'                            => 'airmail',
+            'hotmailbuzzr'                       => 'hotmailbuzzr',
             'web.de mailcheck'                   => 'web.de mailcheck',
             'screaming frog seo spider'          => 'screaming frog seo spider',
             'androiddownloadmanager'             => 'android download manager',

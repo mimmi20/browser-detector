@@ -49,6 +49,7 @@ class DigmaFactory implements Factory\FactoryInterface
         'pt452e'      => 'digma pt452e',
         'lt5001pg'    => 'digma lt5001pg',
         'lt4001pg'    => 'digma lt4001pg',
+        'idxd10 3g'   => 'digma idxd10 3g',
         'idxd8'       => 'digma idxd8',
         'idxd7'       => 'digma idxd7 3g',
         'idxd5'       => 'digma idxd5',

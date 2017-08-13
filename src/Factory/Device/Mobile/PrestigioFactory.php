@@ -31,6 +31,7 @@ class PrestigioFactory implements Factory\FactoryInterface
         'psp5517duo'      => 'prestigio psp5517duo',
         'psp5508duo'      => 'prestigio psp5508duo',
         'psp5505duo'      => 'prestigio psp5505duo',
+        'psp5504duo'      => 'prestigio psp5504duo',
         'psp5454duo'      => 'prestigio psp5454duo',
         'psp5453duo'      => 'prestigio psp5453duo',
         'pmt7177_3g'      => 'prestigio pmt7177_3g',

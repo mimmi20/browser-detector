@@ -5,8 +5,8 @@
     "marketingName": "general GooPhone Device",
     "manufacturer": "GooPhone",
     "brand": "GooPhone",
-    "type": "Mobile Phone",
-    "dualOrientation": false,
+    "type": "Smartphone",
+    "dualOrientation": true,
     "pointingMethod": "touchscreen",
     "width": null,
     "height": null,
@@ -18,11 +18,24 @@
     "marketingName": "S4 Mega",
     "manufacturer": "GooPhone",
     "brand": "GooPhone",
-    "type": "Mobile Phone",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.3.0; de-de; N3 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "codeName": "N3",
+    "marketingName": "N3",
+    "manufacturer": "GooPhone",
+    "brand": "GooPhone",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
     "colors": null
   }
 ]

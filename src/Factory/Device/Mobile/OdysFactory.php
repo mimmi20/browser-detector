@@ -66,6 +66,7 @@ class OdysFactory implements Factory\FactoryInterface
         'connect7pro'      => 'odys connect 7 pro',
         'genesis'          => 'odys genesis',
         'evo'              => 'odys evo',
+        'tablet-pc-4'      => 'odys tablet pc 4',
     ];
 
     /**
