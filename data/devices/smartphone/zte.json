@@ -475,8 +475,34 @@
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "zte blade a460": {
+    "codename": "Blade A460",
+    "marketingName": "Blade A460",
+    "manufacturer": "Zte",
+    "brand": "Zte",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "zte nx406e": {
+    "codename": "NX406E",
+    "marketingName": "Nubia Z5s mini",
+    "manufacturer": "Zte",
+    "brand": "Zte",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
     "dualOrientation": true,
     "colors": null
   }

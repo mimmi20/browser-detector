@@ -4863,7 +4863,7 @@
         "HubSpot Webcrawler"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "hypercrawl": {
     "name": "HyperCrawl",
@@ -14989,10 +14989,8 @@
     "rssSupport": false,
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "PTST"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },
@@ -15673,5 +15671,171 @@
       ]
     },
     "engine": "gecko"
+  },
+  "1stbrowser": {
+    "name": "1st Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "1stBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "tenta": {
+    "name": "Tenta",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Tenta"
+      ]
+    },
+    "engine": "blink"
+  },
+  "cent": {
+    "name": "Cent",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cent"
+      ]
+    },
+    "engine": "blink"
+  },
+  "salam browser": {
+    "name": "Salam Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Salam Browser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "whale browser": {
+    "name": "Whale Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Whale"
+      ]
+    },
+    "engine": "blink"
+  },
+  "slimjet browser": {
+    "name": "Slimjet Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Slimjet"
+      ]
+    },
+    "engine": "blink"
+  },
+  "corom browser": {
+    "name": "CoRom Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CoRom"
+      ]
+    },
+    "engine": "blink"
+  },
+  "kuaiso browser": {
+    "name": "Kuaiso Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kuaiso"
+      ]
+    },
+    "engine": "blink"
+  },
+  "hubspot marketing grader": {
+    "name": "HubSpot Marketing Grader",
+    "manufacturer": "HubSpotInc",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HubSpot Marketing Grader"
+      ]
+    },
+    "engine": null
+  },
+  "pinterest bot": {
+    "name": "Pinterest Bot",
+    "manufacturer": "EricssonResearch",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Pinterestbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "moatbot": {
+    "name": "moatbot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "moatbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "infegy bot": {
+    "name": "Infegy Bot",
+    "manufacturer": "Infegy",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

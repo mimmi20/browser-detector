@@ -21,16 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WileyfoxFactory implements Factory\FactoryInterface
+class PptvFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'spark +'      => 'wileyfox spark +',
-        'swift 2 plus' => 'wileyfox swift 2 plus',
-        'swift 2'      => 'wileyfox swift 2',
-        'swift'        => 'wileyfox swift',
+        'king 7' => 'pptv king 7',
     ];
 
     /**
@@ -62,6 +59,6 @@ class WileyfoxFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general wileyfox device', $useragent);
+        return $this->loader->load('general pptv device', $useragent);
     }
 }

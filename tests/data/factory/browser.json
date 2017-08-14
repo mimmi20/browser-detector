@@ -6617,9 +6617,9 @@
   },
   {
     "ua": "HubSpot Marketing Grader",
-    "browser": "Marketing Grader",
+    "browser": "HubSpot Marketing Grader",
     "version": "0.0.0",
-    "manufacturer": null,
+    "manufacturer": "HubSpot, Inc.",
     "bits": 32,
     "type": "Bot/Crawler"
   },
@@ -7506,7 +7506,7 @@
   {
     "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 PTST/1",
     "browser": "WebPagetest",
-    "version": "1.0.0",
+    "version": "0.0.0",
     "manufacturer": "WPO Foundation",
     "bits": 64,
     "type": "Bot/Crawler"
@@ -8033,7 +8033,7 @@
   },
   {
     "ua": "Mozilla/5.0 (compatible; Lippershey/5.2; +https://www.lipperhey.com/en/about/)",
-    "browser": "Lippershey",
+    "browser": "Lippershey Bot",
     "version": "5.2.0",
     "manufacturer": null,
     "bits": 32,
@@ -8052,7 +8052,7 @@
     "browser": "online-versicherungsportal.info Bot",
     "version": "0.0.0",
     "manufacturer": null,
-    "bits": 32,
+    "bits": 64,
     "type": "Bot/Crawler"
   },
   {
@@ -8068,7 +8068,7 @@
     "browser": "versicherungssuchmaschine.net Bot",
     "version": "0.0.0",
     "manufacturer": null,
-    "bits": 32,
+    "bits": 64,
     "type": "Bot/Crawler"
   },
   {
@@ -8084,7 +8084,7 @@
     "browser": "ReadKit",
     "version": "0.0.0",
     "manufacturer": "Webin",
-    "bits": 32,
+    "bits": 64,
     "type": "Feed Reader"
   },
   {
@@ -8118,5 +8118,101 @@
     "manufacturer": "kmeleonbrowser.org",
     "bits": 32,
     "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 1stBrowser/45.0.2454.146 Safari/537.36",
+    "browser": "1st Browser",
+    "version": "45.0.2454.146",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0) PTST/229",
+    "browser": "WebPagetest",
+    "version": "0.0.0",
+    "manufacturer": "WPO Foundation",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 6.0.1; en; SM-J700F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Tenta/1.1.0.1 Mobile Safari/537.36 Mobile",
+    "browser": "Tenta",
+    "version": "1.1.0.1",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 Cent/1.5.11.28",
+    "browser": "Cent",
+    "version": "1.5.11.28",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2551.0 (SBRO; Salam Browser) Safari/537.36",
+    "browser": "Salam Browser",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Whale/0.7.30.7 Safari/537.36",
+    "browser": "Whale Browser",
+    "version": "0.7.30.7",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36 Slimjet/6.0.1.0",
+    "browser": "Slimjet Browser",
+    "version": "6.0.1.0",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.2) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.67 CoRom/26.0.1410.67 Safari/537.31",
+    "browser": "CoRom Browser",
+    "version": "26.0.1410.67",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2745.1 Kuaiso/1.42.501.426 Safari/537.36",
+    "browser": "Kuaiso Browser",
+    "version": "1.42.501.426",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99  Safari/537.36 HubSpot Marketing Grader",
+    "browser": "HubSpot Marketing Grader",
+    "version": "0.0.0",
+    "manufacturer": "HubSpot, Inc.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36 moatbot",
+    "browser": "moatbot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36; +collection@infegy.com",
+    "browser": "Infegy Bot",
+    "version": "0.0.0",
+    "manufacturer": "infegy.com",
+    "bits": 64,
+    "type": "Bot/Crawler"
   }
 ]
