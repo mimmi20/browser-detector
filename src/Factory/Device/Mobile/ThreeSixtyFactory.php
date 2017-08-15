@@ -21,20 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackviewFactory implements Factory\FactoryInterface
+class ThreeSixtyFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'bv7000 pro' => 'blackview bv7000 pro',
-        'bv6000'     => 'blackview bv6000',
-        'bv5000'     => 'blackview bv5000',
-        'omega_pro'  => 'blackview omega pro',
-        'alife p1'   => 'blackview alife p1',
-        'crown'      => 'blackview t570',
-        ' r6 '       => 'blackview r6',
-        ' a8 '       => 'blackview a8',
+        '1501_m02' => '360 1501 m02',
     ];
 
     /**
@@ -66,6 +59,6 @@ class BlackviewFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general blackview device', $useragent);
+        return $this->loader->load('general 360 device', $useragent);
     }
 }

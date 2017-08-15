@@ -21,20 +21,23 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackviewFactory implements Factory\FactoryInterface
+class ZenFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'bv7000 pro' => 'blackview bv7000 pro',
-        'bv6000'     => 'blackview bv6000',
-        'bv5000'     => 'blackview bv5000',
-        'omega_pro'  => 'blackview omega pro',
-        'alife p1'   => 'blackview alife p1',
-        'crown'      => 'blackview t570',
-        ' r6 '       => 'blackview r6',
-        ' a8 '       => 'blackview a8',
+        'cinemax click' => 'zen cinemax click',
+        'cinemax_click' => 'zen cinemax click',
+        'cinemax 3'     => 'zen cinemax 3',
+        'cinemax 2+'    => 'zen cinemax 2+',
+        'cinemax2'      => 'zen cinemax 2',
+        'cinemax1'      => 'zen cinemax 1',
+        'cinemax 4g'    => 'zen cinemax 4g',
+        'cinemax_4g'    => 'zen cinemax 4g',
+        'cinemax force' => 'zen cinemax force',
+        'cinemax-force' => 'zen cinemax force',
+        'admire sxy'    => 'zen admire sxy',
     ];
 
     /**
@@ -66,6 +69,6 @@ class BlackviewFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general blackview device', $useragent);
+        return $this->loader->load('general zen device', $useragent);
     }
 }

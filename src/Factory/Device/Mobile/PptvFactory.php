@@ -27,7 +27,8 @@ class PptvFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'king 7' => 'pptv king 7',
+        'king 7s' => 'pptv king 7s',
+        'king 7'  => 'pptv king 7',
     ];
 
     /**

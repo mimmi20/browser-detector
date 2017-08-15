@@ -27,6 +27,7 @@ class StarFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        '9930i'   => 'star 9930i',
         'n9500'   => 'star n9500',
         'n8000'   => 'star n8000',
         'gt-9000' => 'star gt-9000',

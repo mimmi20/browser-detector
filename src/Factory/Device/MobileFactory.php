@@ -1264,7 +1264,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\VodafoneFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['onetouch', 'one_touch', 'one touch', 'v860', 'vodafone smart', 'vodafone 975n', 'vodafone 875', 'vodafone 785', 'vf-795', 'vf-895n'], false)) {
+        if ($s->containsAny(['onetouch', 'one_touch', 'one touch', 'v860', 'vodafone smart', 'vodafone 975n', 'vodafone 875', 'vodafone 785', 'vf-795', 'vf-895n', 'm812c'], false)) {
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1600,7 +1600,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/[4-9]0[1-7]\d(A|D|N|X|Y)/', $useragent)) {
+        if (preg_match('/[4-9]0[1-7]\d(A|D|M|N|X|Y)/', $useragent)) {
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1972,7 +1972,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\EinsUndEinsFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['n930', 'cp8676_i02', 'cp8298_i00', 'w713', '8079'], false)) {
+        if ($s->containsAny(['n930', 'cp8676_i02', 'cp8298_i00', 'w713', '8079', '5860s'], false)) {
             return (new Mobile\CoolpadFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2176,7 +2176,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ChanghongFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['crown', 'bv5000', 'bv6000', 'bv7000', ' r6 ', ' a8 '], false)) {
+        if ($s->containsAny(['crown', 'bv5000', 'bv6000', 'bv7000', ' r6 ', ' a8 ', 'alife p1', 'omega_pro'], false)) {
             return (new Mobile\BlackviewFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2350,6 +2350,18 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('king 7', false)) {
             return (new Mobile\PptvFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['admire sxy', 'cinemax'], false)) {
+            return (new Mobile\ZenFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('1501_m02', false)) {
+            return (new Mobile\ThreeSixtyFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('9930i', false)) {
+            return (new Mobile\StarFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {
