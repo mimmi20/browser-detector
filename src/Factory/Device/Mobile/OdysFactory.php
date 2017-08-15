@@ -60,11 +60,13 @@ class OdysFactory implements Factory\FactoryInterface
         'loox plus'        => 'odys loox plus',
         'loox'             => 'odys loox',
         'ieos_quad_10_pro' => 'odys ieos quad 10 pro',
+        'ieos_quad_pro'    => 'odys ieos quad pro',
         'ieos_quad_w'      => 'odys ieos quad w',
         'ieos_quad'        => 'odys ieos quad',
         'connect7pro'      => 'odys connect 7 pro',
         'genesis'          => 'odys genesis',
         'evo'              => 'odys evo',
+        'tablet-pc-4'      => 'odys tablet pc 4',
     ];
 
     /**

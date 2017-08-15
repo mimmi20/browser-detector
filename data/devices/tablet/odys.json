@@ -20,7 +20,7 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
+    "resolutionWidth": 1024,
     "resolutionHeight": 600,
     "dualOrientation": true,
     "colors": null
@@ -34,7 +34,7 @@
     "type": "tablet",
     "pointingMethod": "touchscreen",
     "resolutionWidth": 800,
-    "resolutionHeight": 600,
+    "resolutionHeight": 480,
     "dualOrientation": true,
     "colors": null
   },
@@ -59,8 +59,8 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true,
     "colors": null
   },
@@ -72,8 +72,8 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true,
     "colors": null
   },
@@ -85,8 +85,8 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true,
     "colors": null
   },
@@ -124,7 +124,7 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
+    "resolutionWidth": 1024,
     "resolutionHeight": 600,
     "dualOrientation": true,
     "colors": null
@@ -215,8 +215,8 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true,
     "colors": null
   },
@@ -229,7 +229,7 @@
     "type": "tablet",
     "pointingMethod": "touchscreen",
     "resolutionWidth": 800,
-    "resolutionHeight": 600,
+    "resolutionHeight": 480,
     "dualOrientation": true,
     "colors": null
   },
@@ -267,21 +267,8 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true,
-    "colors": null
-  },
-  "odys xelio pt2 pro": {
-    "codename": "Xelio PT2 Pro",
-    "marketingName": "Xelio PT2 Pro",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "platform": null,
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true,
     "colors": null
   },
@@ -373,6 +360,32 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1024,
     "resolutionHeight": 600,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "odys ieos quad pro": {
+    "codename": "Ieos Quad Pro",
+    "marketingName": "Ieos Quad Pro",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "odys tablet pc 4": {
+    "codename": "Tablet PC 4",
+    "marketingName": "Tablet PC 4",
+    "manufacturer": "Odys",
+    "brand": "Weltbild",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
     "dualOrientation": true,
     "colors": null
   }

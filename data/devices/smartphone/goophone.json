@@ -5,11 +5,11 @@
     "manufacturer": "GooPhone",
     "brand": "GooPhone",
     "platform": "android",
-    "type": "mobile-phone",
+    "type": "smartphone",
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
-    "dualOrientation": false,
+    "dualOrientation": true,
     "colors": null
   },
   "goophone s4 mega": {
@@ -18,10 +18,23 @@
     "manufacturer": "GooPhone",
     "brand": "GooPhone",
     "platform": "android",
-    "type": "mobile-phone",
+    "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "goophone n3": {
+    "codename": "N3",
+    "marketingName": "N3",
+    "manufacturer": "GooPhone",
+    "brand": "GooPhone",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
     "dualOrientation": true,
     "colors": null
   }

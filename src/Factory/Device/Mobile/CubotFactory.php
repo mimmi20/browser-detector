@@ -27,10 +27,12 @@ class CubotFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'z100 pro'  => 'cubot z100 pro',
         'one'       => 'cubot one',
         ' cheetah ' => 'cubot cheetah',
         ' h1 '      => 'cubot h1',
         'note_s'    => 'cubot note s',
+        'x12'       => 'cubot x12',
         's600'      => 'cubot s600',
         's550'      => 'cubot s550',
         's208'      => 'cubot s208',

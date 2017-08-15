@@ -66,6 +66,7 @@ class SonyFactory implements Factory\FactoryInterface
         'e5333'                => 'sony e5333',
         'e5306'                => 'sony e5306',
         'e5303'                => 'sony e5303',
+        'e2333'                => 'sony e2333',
         'e2303'                => 'sony e2303',
         'e2115'                => 'sony e2115',
         'e2105'                => 'sony e2105',

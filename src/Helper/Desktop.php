@@ -77,6 +77,7 @@ class Desktop
             'jobboerse',
             '<',
             '>',
+            'online-versicherungsportal.info',
         ];
 
         if ($s->containsAny($noDesktops, false)) {

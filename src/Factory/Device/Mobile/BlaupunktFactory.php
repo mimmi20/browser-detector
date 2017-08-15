@@ -33,6 +33,7 @@ class BlaupunktFactory implements Factory\FactoryInterface
         'discovery 102c' => 'blaupunkt discovery 102c',
         'endeavour 101l' => 'blaupunkt endeavour 101l',
         'endeavour_101l' => 'blaupunkt endeavour 101l',
+        'end_101g-test'  => 'blaupunkt endeavour 101g',
         'endeavour 1010' => 'blaupunkt endeavour 1010',
     ];
 

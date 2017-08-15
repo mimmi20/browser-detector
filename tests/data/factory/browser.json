@@ -6617,9 +6617,9 @@
   },
   {
     "ua": "HubSpot Marketing Grader",
-    "browser": "Marketing Grader",
+    "browser": "HubSpot Marketing Grader",
     "version": "0.0.0",
-    "manufacturer": null,
+    "manufacturer": "HubSpot, Inc.",
     "bits": 32,
     "type": "Bot/Crawler"
   },
@@ -7506,7 +7506,7 @@
   {
     "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 PTST/1",
     "browser": "WebPagetest",
-    "version": "1.0.0",
+    "version": "0.0.0",
     "manufacturer": "WPO Foundation",
     "bits": 64,
     "type": "Bot/Crawler"
@@ -7958,5 +7958,261 @@
     "manufacturer": "Microsoft Corporation",
     "bits": 32,
     "type": "Application"
+  },
+  {
+    "ua": "Kiodia Spider/Nutch-1.11",
+    "browser": "Kiodia Spider",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "TYPO3/6.2.19",
+    "browser": "Typo3",
+    "version": "6.2.19",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "toquo.es/1.3.1 (+http://www.toquo.es/bot.php)",
+    "browser": "toquo.es bot",
+    "version": "1.3.1",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Contacts Crawler (+http://www.scrapinghub.com)",
+    "browser": "Contacts Crawler",
+    "version": "0.0.0",
+    "manufacturer": "Scraping Hub Limited",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.1708.400 QQBrowser/9.5.9635.400",
+    "browser": "QQ Browser",
+    "version": "9.5.9635.400",
+    "manufacturer": "Tencent Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "GloomarBot/1.1 (https://www.gloomar.com/bot)",
+    "browser": "GloomarBot",
+    "version": "1.1.0",
+    "manufacturer": "Gloomar CZ a.s.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "BoogleBot/2.0",
+    "browser": "BoogleBot",
+    "version": "2.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "PHP-Curl-Class/3.6.5 (+https://github.com/php-curl-class/php-curl-class) PHP/5.6.17-0+deb8u1 curl/7.38.0",
+    "browser": "PHP-Curl-Class",
+    "version": "3.6.5",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; RankActiveLinkBot; +https://rankactive.com/resources/rankactive-linkbot)",
+    "browser": "RankActiveLinkBot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; Lippershey/5.2; +https://www.lipperhey.com/en/about/)",
+    "browser": "Lippershey Bot",
+    "version": "5.2.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 BoBrowser/45.0.2454.153 Safari/537.36",
+    "browser": "BoBrowser",
+    "version": "45.0.2454.153",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) online-versicherungsportal.info Safari/538.1",
+    "browser": "online-versicherungsportal.info Bot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Orbiter/1.0 (http://dailyorbit.com/)",
+    "browser": "Orbiter Bot",
+    "version": "1.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) versicherungssuchmaschine.net Safari/538.1",
+    "browser": "versicherungssuchmaschine.net Bot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows  U  Windows NT 5.1  ru  rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 WebMoney Advisor",
+    "browser": "WebMoney Advisor",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "ReadKit/7105 CFNetwork/720.4.3 Darwin/14.4.0 (x86_64)",
+    "browser": "ReadKit",
+    "version": "0.0.0",
+    "manufacturer": "Webin",
+    "bits": 64,
+    "type": "Feed Reader"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12F70 [FBAN/MessengerForiOS;FBAV/27.0.0.34.13;FBBV/9902566;FBDV/iPhone5,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/8.3;FBSS/2; FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5]",
+    "browser": "Facebook Messenger App",
+    "version": "27.0.0.34.13",
+    "manufacturer": "Facebook",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.34 (KHTML, like Gecko) SlimBoat/1.1.49 Chrome/25.0.1364.97 Version/5.1 Safari/534.34",
+    "browser": "SlimBoat",
+    "version": "1.1.49",
+    "manufacturer": "FlashPeak Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "HotmailBuzzr/4801 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "HotmailBuzzr",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.7) Gecko/20060917 K-Ninja/2.0.4",
+    "browser": "K-Ninja",
+    "version": "2.0.4",
+    "manufacturer": "kmeleonbrowser.org",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 1stBrowser/45.0.2454.146 Safari/537.36",
+    "browser": "1st Browser",
+    "version": "45.0.2454.146",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0) PTST/229",
+    "browser": "WebPagetest",
+    "version": "0.0.0",
+    "manufacturer": "WPO Foundation",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 6.0.1; en; SM-J700F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Tenta/1.1.0.1 Mobile Safari/537.36 Mobile",
+    "browser": "Tenta",
+    "version": "1.1.0.1",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 Cent/1.5.11.28",
+    "browser": "Cent",
+    "version": "1.5.11.28",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2551.0 (SBRO; Salam Browser) Safari/537.36",
+    "browser": "Salam Browser",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Whale/0.7.30.7 Safari/537.36",
+    "browser": "Whale Browser",
+    "version": "0.7.30.7",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36 Slimjet/6.0.1.0",
+    "browser": "Slimjet Browser",
+    "version": "6.0.1.0",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.2) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.67 CoRom/26.0.1410.67 Safari/537.31",
+    "browser": "CoRom Browser",
+    "version": "26.0.1410.67",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2745.1 Kuaiso/1.42.501.426 Safari/537.36",
+    "browser": "Kuaiso Browser",
+    "version": "1.42.501.426",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99  Safari/537.36 HubSpot Marketing Grader",
+    "browser": "HubSpot Marketing Grader",
+    "version": "0.0.0",
+    "manufacturer": "HubSpot, Inc.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36 moatbot",
+    "browser": "moatbot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36; +collection@infegy.com",
+    "browser": "Infegy Bot",
+    "version": "0.0.0",
+    "manufacturer": "infegy.com",
+    "bits": 64,
+    "type": "Bot/Crawler"
   }
 ]

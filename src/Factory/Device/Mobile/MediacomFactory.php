@@ -27,6 +27,7 @@ class MediacomFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'm-mp940m'   => 'mediacom m-mp940m',
         'm-pp2s500b' => 'mediacom m-pp2s500b',
         'm-ppxg501'  => 'mediacom m-ppxg501',
     ];

@@ -3394,7 +3394,7 @@
         "facebookexternalhit"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "facebook bot": {
     "name": "FaceBook Bot",
@@ -4863,7 +4863,7 @@
         "HubSpot Webcrawler"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "hypercrawl": {
     "name": "HyperCrawl",
@@ -7333,7 +7333,7 @@
         "MiuiBrowser"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "mixbot": {
     "name": "MixBot",
@@ -9481,10 +9481,11 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "MQQBrowser"
+        "MQQBrowser",
+        "QQBrowser"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "qqbrowser mini": {
     "name": "QQbrowser Mini",
@@ -9498,7 +9499,7 @@
         "MQQBrowser\\/Mini"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "qt": {
     "name": "Qt",
@@ -14988,10 +14989,8 @@
     "rssSupport": false,
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "PTST"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },
@@ -15428,5 +15427,415 @@
       ]
     },
     "engine": "gecko"
+  },
+  "kiodia-spider": {
+    "name": "Kiodia Spider",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kiodia Spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "toquo.es-bot": {
+    "name": "toquo.es bot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "toquo\\.es"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "contacts crawler": {
+    "name": "Contacts Crawler",
+    "manufacturer": "Scrapinghub",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Contacts Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gloomarbot": {
+    "name": "GloomarBot",
+    "manufacturer": "Gloomar",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GloomarBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "booglebot": {
+    "name": "BoogleBot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BoogleBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "php-curl-class": {
+    "name": "PHP-Curl-Class",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PHP\\-Curl\\-Class"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "rankactivelinkbot": {
+    "name": "RankActiveLinkBot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "RankActiveLinkBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lippershey": {
+    "name": "Lippershey Bot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Lippershey"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bobrowser": {
+    "name": "BoBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BoBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "online-versicherungsportal.info bot": {
+    "name": "online-versicherungsportal.info Bot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "orbiter": {
+    "name": "Orbiter Bot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Orbiter"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "versicherungssuchmaschine.net bot": {
+    "name": "versicherungssuchmaschine.net Bot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "webmoney advisor": {
+    "name": "WebMoney Advisor",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "readkit": {
+    "name": "ReadKit",
+    "manufacturer": "Webin",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "feed-reader",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "facebook messenger app": {
+    "name": "Facebook Messenger App",
+    "manufacturer": "Facebook",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Facebook",
+        "FBAV",
+        "facebookexternalhit"
+      ]
+    },
+    "engine": null
+  },
+  "slimboat": {
+    "name": "SlimBoat",
+    "manufacturer": "FlashPeak",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SlimBoat"
+      ]
+    },
+    "engine": "blink"
+  },
+  "hotmailbuzzr": {
+    "name": "HotmailBuzzr",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "email-client",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "k-ninja": {
+    "name": "K-Ninja",
+    "manufacturer": "KmeleonBrowserOrg",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "K\\-Ninja"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "1stbrowser": {
+    "name": "1st Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "1stBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "tenta": {
+    "name": "Tenta",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Tenta"
+      ]
+    },
+    "engine": "blink"
+  },
+  "cent": {
+    "name": "Cent",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cent"
+      ]
+    },
+    "engine": "blink"
+  },
+  "salam browser": {
+    "name": "Salam Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Salam Browser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "whale browser": {
+    "name": "Whale Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Whale"
+      ]
+    },
+    "engine": "blink"
+  },
+  "slimjet browser": {
+    "name": "Slimjet Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Slimjet"
+      ]
+    },
+    "engine": "blink"
+  },
+  "corom browser": {
+    "name": "CoRom Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CoRom"
+      ]
+    },
+    "engine": "blink"
+  },
+  "kuaiso browser": {
+    "name": "Kuaiso Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kuaiso"
+      ]
+    },
+    "engine": "blink"
+  },
+  "hubspot marketing grader": {
+    "name": "HubSpot Marketing Grader",
+    "manufacturer": "HubSpotInc",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HubSpot Marketing Grader"
+      ]
+    },
+    "engine": null
+  },
+  "pinterest bot": {
+    "name": "Pinterest Bot",
+    "manufacturer": "EricssonResearch",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Pinterestbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "moatbot": {
+    "name": "moatbot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "moatbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "infegy bot": {
+    "name": "Infegy Bot",
+    "manufacturer": "Infegy",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

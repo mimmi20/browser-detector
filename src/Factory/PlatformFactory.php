@@ -175,6 +175,7 @@ class PlatformFactory implements FactoryInterface
             'amigaos'            => 'amiga os',
             'brew'               => 'brew',
             'beos'               => 'beos',
+            'opensolaris'        => 'opensolaris',
             'solaris'            => 'solaris',
             'sunos'              => 'sunos',
             'risc'               => 'risc os',

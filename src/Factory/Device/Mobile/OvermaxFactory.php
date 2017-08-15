@@ -27,6 +27,7 @@ class OvermaxFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'ov-v10'        => 'overmax ov-v10',
         'steelcore-b'   => 'overmax steelcore',
         'solution 10ii' => 'overmax solution 10 ii 3g',
         'solution 7iii' => 'overmax solution 7 iii',

@@ -27,9 +27,11 @@ class MeizuFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'pro 5'    => 'meizu pro 5',
         'mz-mx5'   => 'meizu mx5',
         'mx4'      => 'meizu mx4',
         'm040'     => 'meizu m040',
+        'm032'     => 'meizu m032',
         'meizu_m9' => 'meizu m9',
         ' m9 '     => 'meizu m9',
         ' m2 '     => 'meizu m2',

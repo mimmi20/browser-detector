@@ -372,8 +372,8 @@
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1920,
+    "height": 1200,
     "colors": null
   },
   {
@@ -671,8 +671,8 @@
     "type": "FonePad",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1280,
+    "height": 800,
     "colors": null
   },
   {
@@ -697,8 +697,8 @@
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1280,
+    "height": 800,
     "colors": null
   },
   {
@@ -1713,6 +1713,45 @@
     "pointingMethod": "touchscreen",
     "width": 1280,
     "height": 800,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.0.1; Lenovo TAB 2 A10-70L Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Safari/537.36",
+    "codeName": "A10-70L",
+    "marketingName": "Tab 2",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1920,
+    "height": 1200,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; Lenovo K50a40 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.57 Mobile Safari/537.36",
+    "codeName": "K50a40",
+    "marketingName": "K50a40",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.0.2; Lenovo A6000 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Mobile Safari/537.36",
+    "codeName": "A6000",
+    "marketingName": "A6000",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
     "colors": null
   }
 ]

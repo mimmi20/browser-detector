@@ -43,7 +43,7 @@
     "marketingName": "Hongmi 2 4G",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
+    "platform": null,
     "type": "smartphone",
     "pointingMethod": "touchscreen",
     "resolutionWidth": 720,
@@ -132,6 +132,19 @@
   "xiaomitech redmi 4x": {
     "codename": "Redmi 4X",
     "marketingName": "Redmi 4X",
+    "manufacturer": "XiaomiTech",
+    "brand": "XiaomiTech",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "xiaomitech mi note": {
+    "codename": "MI Note",
+    "marketingName": "MI Note",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
     "platform": "android",
