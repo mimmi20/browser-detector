@@ -78,6 +78,8 @@ class Desktop
             '<',
             '>',
             'online-versicherungsportal.info',
+            'versicherungssuchmaschine.net',
+            'crkey',
         ];
 
         if ($s->containsAny($noDesktops, false)) {

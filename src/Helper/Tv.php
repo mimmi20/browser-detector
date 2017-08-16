@@ -98,6 +98,7 @@ class Tv
             'nettv',
             'netbox',
             'philipstv',
+            'crkey',
         ];
 
         if (!$s->containsAny($tvDevices, false)) {

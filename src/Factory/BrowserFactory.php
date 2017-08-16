@@ -180,6 +180,7 @@ class BrowserFactory implements FactoryInterface
             'klar/'           => 'firefox klar',
             'eui browser'     => 'eui browser',
             'slimboat'        => 'slimboat',
+            'yandexsearch'    => 'yandexsearch',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {

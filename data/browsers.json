@@ -15837,5 +15837,19 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "yandexsearch": {
+    "name": "Yandex Search App",
+    "manufacturer": "Yandex",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YandexSearch"
+      ]
+    },
+    "engine": null
   }
 }

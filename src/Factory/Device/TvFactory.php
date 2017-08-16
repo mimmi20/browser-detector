@@ -29,6 +29,7 @@ class TvFactory implements Factory\FactoryInterface
     private $devices = [
         'xbox one'                    => 'xbox one',
         'xbox'                        => 'xbox 360',
+        'crkey'                       => 'google cromecast',
         'dlink.dsm380'                => 'dsm 380',
         'idl-6651n'                   => 'idl-6651n',
         'sl32x'                       => 'sl32x',

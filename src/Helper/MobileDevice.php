@@ -68,6 +68,7 @@ class MobileDevice
             'ipodder',
             'tripadvisor',
             'nokia wap gateway',
+            'crkey',
         ];
 
         $s = new Stringy($this->useragent);

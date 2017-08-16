@@ -216,6 +216,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'ath-al00'                        => 'huawei ath-al00',
         'ath-ul01'                        => 'huawei ath-ul01',
         'mediapad x1 7.0'                 => 'huawei mediapad x1 7.0',
+        'mediapad t1 10 4g'               => 'huawei mediapad t1 10 4g',
         'mediapad t1 8.0'                 => 'huawei s8-701u',
         'mediapad m1 8.0'                 => 'huawei mediapad m1 8.0',
         'mediapad 10 link+'               => 'huawei mediapad 10+',

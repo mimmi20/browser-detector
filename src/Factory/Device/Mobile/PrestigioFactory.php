@@ -27,13 +27,14 @@ class PrestigioFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'pap5300duo'      => 'prestigio pap5300duo',
         'psp5517duo'      => 'prestigio psp5517duo',
         'psp5508duo'      => 'prestigio psp5508duo',
         'psp5505duo'      => 'prestigio psp5505duo',
         'psp5504duo'      => 'prestigio psp5504duo',
         'psp5454duo'      => 'prestigio psp5454duo',
         'psp5453duo'      => 'prestigio psp5453duo',
+        'psp8500'         => 'prestigio psp8500',
+        'psp8400'         => 'prestigio psp8400',
         'pmt7177_3g'      => 'prestigio pmt7177_3g',
         'pmt7077_3g'      => 'prestigio pmt7077_3g',
         'pmt3287_3g'      => 'prestigio pmt3287_3g',
@@ -41,6 +42,8 @@ class PrestigioFactory implements Factory\FactoryInterface
         'pmt3037_3g'      => 'prestigio pmt3037_3g',
         'pmt5587_wi'      => 'prestigio pmt5587_wi',
         'pmt3377_wi'      => 'prestigio pmt3377_wi',
+        'pmt3118_3g'      => 'prestigio pmt3118_3g',
+        'pmt3057_3g'      => 'prestigio pmt3057_3g',
         'pmp7480d3g_quad' => 'prestigio pmp7480d3g_quad',
         'pmp7380d3g'      => 'prestigio pmp7380d3g',
         'pmp7280c3g_quad' => 'prestigio pmp7280c3g_quad',
@@ -69,14 +72,13 @@ class PrestigioFactory implements Factory\FactoryInterface
         'pmp3007c'        => 'prestigio pmp3007c',
         'pap7600duo'      => 'prestigio pap7600duo',
         'pap5503'         => 'prestigio pap5503',
+        'pap5300duo'      => 'prestigio pap5300duo',
         'pap5044duo'      => 'prestigio pap5044duo',
         'pap5000tduo'     => 'prestigio pap5000tduo',
         'pap5000duo'      => 'prestigio pap5000duo',
         'pap4500duo'      => 'prestigio pap4500duo',
         'pap4044duo'      => 'prestigio pap4044duo',
         'pap3350duo'      => 'prestigio pap3350duo',
-        'psp8500'         => 'prestigio psp8500',
-        'psp8400'         => 'prestigio psp8400',
         'gv7777'          => 'prestigio gv7777',
     ];
 

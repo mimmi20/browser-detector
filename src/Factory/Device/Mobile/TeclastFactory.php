@@ -21,16 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DexpFactory implements Factory\FactoryInterface
+class TeclastFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'ixion es350'  => 'dexp ixion es350',
-        'ixion_es255'  => 'dexp ixion es255',
-        'ursus 9ev 3g' => 'dexp ursus 9ev 3g',
-        'h135'         => 'dexp h135',
+        'd4c5' => 'teclast d4c5',
     ];
 
     /**
@@ -62,6 +59,6 @@ class DexpFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general dexp device', $useragent);
+        return $this->loader->load('general teclast device', $useragent);
     }
 }

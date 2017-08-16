@@ -1731,14 +1731,14 @@
   {
     "ua": "Mozilla/5.0 (Linux; Android 6.0; Lenovo K50a40 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.57 Mobile Safari/537.36",
     "codeName": "K50a40",
-    "marketingName": "K50a40",
+    "marketingName": "K3 Note",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1080,
+    "height": 1920,
     "colors": null
   },
   {
@@ -1750,8 +1750,34 @@
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 720,
+    "height": 1280,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; Lenovo TAB 2 A7-30DC Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Safari/537.36",
+    "codeName": "A7-30DC",
+    "marketingName": "Tab 2",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1024,
+    "height": 600,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; Lenovo YT3-850M Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36",
+    "codeName": "YT3-850M",
+    "marketingName": "Yoga Tab 3 (8)",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1280,
+    "height": 800,
     "colors": null
   }
 ]

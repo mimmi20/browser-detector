@@ -1524,7 +1524,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MsiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/T(X|G)\d{2}/', $useragent)) {
+        if (preg_match('/T[GXZ]\d{2,3}/', $useragent)) {
             return (new Mobile\IrbisFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1600,7 +1600,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/[4-9]0[1-7]\d(A|D|M|N|X|Y)/', $useragent)) {
+        if (preg_match('/[4-9]0[0-7]\d(A|D|M|N|X|Y)/', $useragent)) {
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2362,6 +2362,14 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('9930i', false)) {
             return (new Mobile\StarFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('d4c5', false)) {
+            return (new Mobile\TeclastFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('t72', false)) {
+            return (new Mobile\OystersFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {

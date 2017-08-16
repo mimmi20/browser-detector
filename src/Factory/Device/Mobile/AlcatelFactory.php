@@ -28,6 +28,7 @@ class AlcatelFactory implements Factory\FactoryInterface
      */
     private $devices = [
         '9022x'                    => 'alcatel ot-9022x',
+        '9005x'                    => 'alcatel ot-9005x',
         '8050d'                    => 'alcatel ot-8050d',
         '8030y'                    => 'alcatel ot-8030y',
         '8008d'                    => 'alcatel ot-8008d',
