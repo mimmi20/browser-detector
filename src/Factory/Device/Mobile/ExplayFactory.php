@@ -27,6 +27,7 @@ class ExplayFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'rioplay'     => 'explay rio play',
         'a320'        => 'explay a320',
         'surfer 7.34' => 'explay surfer 7.34 3g',
         'm1_plus'     => 'explay m1 plus',

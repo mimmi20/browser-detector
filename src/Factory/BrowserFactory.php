@@ -169,6 +169,8 @@ class BrowserFactory implements FactoryInterface
             'baiduboxapp'     => 'baidu box app',
             'wkbrowser'       => 'wkbrowser',
             'mb2345browser'   => '2345 browser',
+            '2345explorer'    => '2345 browser',
+            '2345chrome'      => '2345 browser',
             'sohunews'        => 'sohunews app',
             'miuibrowser'     => 'miui browser',
             'gsa'             => 'google app',
@@ -412,6 +414,7 @@ class BrowserFactory implements FactoryInterface
             'yjapp'                       => 'yahoo! app',
             'yjtop'                       => 'yahoo! app',
             'ninesky'                     => 'ninesky-browser',
+            'listia'                      => 'listia',
         ];
 
         foreach ($checkBeforeAndroidWebkit as $search => $key) {

@@ -21,21 +21,22 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackviewFactory implements Factory\FactoryInterface
+class FreetelFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'bv7000 pro' => 'blackview bv7000 pro',
-        'bv6000'     => 'blackview bv6000',
-        'bv5000'     => 'blackview bv5000',
-        'dm550'      => 'blackview dm550',
-        'omega_pro'  => 'blackview omega pro',
-        'alife p1'   => 'blackview alife p1',
-        'crown'      => 'blackview t570',
-        ' r6 '       => 'blackview r6',
-        ' a8 '       => 'blackview a8',
+        'ftj162d' => 'freetel ftj162d',
+        'ftj161b' => 'freetel ftj161b',
+        'ftj152d' => 'freetel ftj152d',
+        'ftj152c' => 'freetel ftj152c',
+        'ftj152b' => 'freetel ftj152b',
+        'ftj152a' => 'freetel ftj152a',
+        'ft142d'  => 'freetel ft142d',
+        'ft142a'  => 'freetel ft142a',
+        'ft142'   => 'freetel ft142',
+        'ft141b'  => 'freetel ft141b',
     ];
 
     /**
@@ -67,6 +68,6 @@ class BlackviewFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general blackview device', $useragent);
+        return $this->loader->load('general freetel device', $useragent);
     }
 }

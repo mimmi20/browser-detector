@@ -1498,7 +1498,9 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Mb2345Browser"
+        "Mb2345Browser",
+        "2345Explorer",
+        "2345chrome"
       ]
     },
     "engine": "blink"
@@ -15848,6 +15850,20 @@
       "class": "VersionFactory",
       "search": [
         "YandexSearch"
+      ]
+    },
+    "engine": null
+  },
+  "listia": {
+    "name": "Listia",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Listia"
       ]
     },
     "engine": null

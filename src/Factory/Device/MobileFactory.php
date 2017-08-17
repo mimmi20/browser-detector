@@ -1568,7 +1568,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\TrirayFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Surfer 7.34', 'M1_Plus', 'D7.2 3G'], true)) {
+        if ($s->containsAny(['Surfer 7.34', 'M1_Plus', 'D7.2 3G', 'RioPlay'], true)) {
             return (new Mobile\ExplayFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2176,7 +2176,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ChanghongFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['crown', 'bv5000', 'bv6000', 'bv7000', ' r6 ', ' a8 ', 'alife p1', 'omega_pro'], false)) {
+        if ($s->containsAny(['crown', 'bv5000', 'bv6000', 'bv7000', ' r6 ', ' a8 ', 'alife p1', 'omega_pro', 'dm550'], false)) {
             return (new Mobile\BlackviewFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2370,6 +2370,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('t72', false)) {
             return (new Mobile\OystersFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/ftj?\d{3}/i', $useragent)) {
+            return (new Mobile\FreetelFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {
