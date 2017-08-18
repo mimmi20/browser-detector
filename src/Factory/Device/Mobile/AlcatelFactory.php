@@ -106,6 +106,7 @@ class AlcatelFactory implements Factory\FactoryInterface
         '3075a'                    => 'alcatel ot-3075a',
         'vf-895n'                  => 'alcatel vf-895n',
         'vf-795'                   => 'alcatel vf-795',
+        'telekom puls'             => 'alcatel telekom puls',
         'm812c'                    => 'alcatel m812c',
         'fiercexl'                 => 'alcatel fierce xl',
         'one touch 997d'           => 'alcatel ot-997d',

@@ -47,6 +47,7 @@ class ArchosFactory implements Factory\FactoryInterface
         '80 xenon'              => 'archos 80 xenon',
         '80 cobalt'             => 'archos 80 cobalt',
         '79 xenon'              => 'archos 79 xenon',
+        '70b xenon'             => 'archos 70b xenon',
         '70b helium'            => 'archos 70b helium',
         '70 xenon'              => 'archos 70 xenon',
         '70it2'                 => 'archos 70it2',

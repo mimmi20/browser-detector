@@ -115,6 +115,7 @@ class LinuxTest extends \PHPUnit\Framework\TestCase
             ['ELinks/0.11.4-2 (textmode; Debian; GNU/kFreeBSD 6.3-1-486 i686; 141x21-2)'],
             ['Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; fr-CA) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 Touchpad/1.0'],
             ['Mozilla/4.77C-SGI [en] (X11; I; IRIX64 6.5 IP30)'],
+            ['Mozilla/5.0 (X11; Linux x86_64; Remix SK1W)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'],
         ];
     }
 }

@@ -35,26 +35,19 @@ class TvFactory implements Factory\FactoryInterface
         'sl32x'                       => 'sl32x',
         'sl121'                       => 'sl121',
         'sl150'                       => 'sl150',
-        'lf1v464'                     => 'lf1v464',
-        'lf1v401'                     => 'lf1v401',
-        'lf1v394'                     => 'lf1v394',
-        'lf1v373'                     => 'lf1v373',
-        'lf1v325'                     => 'lf1v325',
-        'lf1v307'                     => 'lf1v307',
+        'digio i33-hd+'               => 'telestar digio 33i hd+',
         'netrangemmh'                 => 'netrangemmh',
         'viera'                       => 'viera tv',
-        'avm-2012'                    => 'philips blueray player',
         'technisat digicorder isio s' => 'digicorder isio s',
         'technisat digit isio s'      => 'digit isio s',
         'technisat multyvision isio'  => 'multyvision isio',
         'cx919'                       => 'cx919',
         'gxt_dongle_3188'             => 'cx919',
-        '(; philips; ; ; ; )'         => 'general philips tv',
-        'philipstv'                   => 'general philips tv',
         'mxl661l32'                   => 'samsung smart tv',
         'smart-tv'                    => 'samsung smart tv',
         'apple tv'                    => 'appletv',
         'netbox'                      => 'sony netbox',
+        '(;metz;mms;;;)'              => 'general metz tv',
     ];
 
     /**
@@ -86,6 +79,14 @@ class TvFactory implements Factory\FactoryInterface
 
         if ($s->containsAny(['nsz-gs7/gx70', 'sonydtv'], false)) {
             return (new Tv\SonyFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['THOMSON', 'LF1V'], true)) {
+            return (new Tv\ThomsonFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['philips', 'avm-'], false)) {
+            return (new Tv\PhilipsFactory($this->loader))->detect($useragent, $s);
         }
 
         foreach ($this->devices as $search => $key) {

@@ -131,6 +131,7 @@ class BrowserFactory implements FactoryInterface
             'flipboardproxy'              => 'flipboardproxy',
             'flipboard'                   => 'flipboard app',
             'seznam.cz'                   => 'seznam browser',
+            'sznprohlizec'                => 'seznam browser',
             'aviator'                     => 'aviator',
             'netfrontlifebrowser'         => 'netfrontlifebrowser',
             'icedragon'                   => 'icedragon',
@@ -296,7 +297,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('internet explorer', $useragent);
         }
 
-        $checkBeforeEdge = [
+        $checkBeforeCentBrowser = [
             'chromium'                            => 'chromium',
             'iron'                                => 'iron',
             'midori'                              => 'midori',
@@ -317,7 +318,20 @@ class BrowserFactory implements FactoryInterface
             '1stbrowser'                          => '1stbrowser',
             'tenta'                               => 'tenta',
             'merchantcentricbot'                  => 'merchantcentricbot',
-            'cent'                                => 'cent',
+            'appcent'                             => 'appcent',
+        ];
+
+        foreach ($checkBeforeCentBrowser as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
+        if ($s->contains('cent', false) && !$s->contains('centos', false)) {
+            return $this->loader->load('cent', $useragent);
+        }
+
+        $checkBeforeEdge = [
             'salam browser'                       => 'salam browser',
             'whale'                               => 'whale browser',
             'slimjet'                             => 'slimjet browser',
@@ -348,7 +362,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('edge mobile', $useragent);
         }
 
-        $checkBeforeDragon = [
+        $checkBeforeWire = [
             'edge'        => 'edge',
             'diffbot'     => 'diffbot',
             'vivaldi'     => 'vivaldi',
@@ -361,7 +375,19 @@ class BrowserFactory implements FactoryInterface
             'asw'         => 'avast safezone',
             'schoolwires' => 'schoolwires app',
             'netnewswire' => 'netnewswire',
-            'wire'        => 'wire app',
+        ];
+
+        foreach ($checkBeforeWire as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
+        if ($s->contains('wire', false) && $s->containsAny(['wired', 'wireless'])) {
+            return $this->loader->load('wire app', $useragent);
+        }
+
+        $checkBeforeDragon = [
             'qupzilla'    => 'qupzilla',
             'ur browser'  => 'ur-browser',
             'urbrowser'   => 'ur-browser',
@@ -440,18 +466,19 @@ class BrowserFactory implements FactoryInterface
         }
 
         $checkBeforeQt = [
-            'webos'                => 'webkit/webos',
-            'wosbrowser'           => 'webkit/webos',
-            'wossystem'            => 'webkit/webos',
-            'omniweb'              => 'omniweb',
-            'windows phone search' => 'windows phone search',
-            'windows-update-agent' => 'windows-update-agent',
-            'classilla'            => 'classilla',
-            'nokia'                => 'nokiabrowser',
-            'twitter for i'        => 'twitter app',
-            'twitterbot'           => 'twitterbot',
-            'quicktime'            => 'quicktime',
-            'qtcarbrowser'         => 'model s browser',
+            'webos'                  => 'webkit/webos',
+            'wosbrowser'             => 'webkit/webos',
+            'wossystem'              => 'webkit/webos',
+            'omniweb'                => 'omniweb',
+            'windows phone search'   => 'windows phone search',
+            'windows-update-agent'   => 'windows-update-agent',
+            'classilla'              => 'classilla',
+            'nokia'                  => 'nokiabrowser',
+            'twitter for i'          => 'twitter app',
+            'twitterbot'             => 'twitterbot',
+            'quicktime'              => 'quicktime',
+            'qtweb internet browser' => 'qtweb internet browser',
+            'qtcarbrowser'           => 'model s browser',
         ];
 
         foreach ($checkBeforeQt as $search => $key) {
@@ -559,6 +586,8 @@ class BrowserFactory implements FactoryInterface
             'iris/'                           => 'iris',
             'online-versicherungsportal.info' => 'online-versicherungsportal.info bot',
             'versicherungssuchmaschine.net'   => 'versicherungssuchmaschine.net bot',
+            'konqueror'                       => 'konqueror',
+            'mythbrowser'                     => 'mythbrowser',
             'safari'                          => 'safari',
             'windows phone ad client'         => 'windows phone ad client',
             'ddg-android-'                    => 'duckduck app',
@@ -566,6 +595,8 @@ class BrowserFactory implements FactoryInterface
             'snapchat'                        => 'snapchat app',
             'grindr'                          => 'grindr',
             'readkit'                         => 'readkit',
+            'xing-contenttabreceiver'         => 'xing contenttabreceiver',
+            'xing'                            => 'xing app',
         ];
 
         foreach ($checkBeforeSafari as $search => $key) {
@@ -655,7 +686,6 @@ class BrowserFactory implements FactoryInterface
             'awmt'                                          => 'another web mining tool',
             'wbsearchbot'                                   => 'wbsearchbot',
             'wbsrch'                                        => 'wbsearchbot',
-            'konqueror'                                     => 'konqueror',
             'typo3-linkvalidator'                           => 'typo3 linkvalidator',
             'typo3'                                         => 'typo3',
             'feeddlerrss'                                   => 'feeddler rss reader',
@@ -889,6 +919,7 @@ class BrowserFactory implements FactoryInterface
             'commoncrawler node'           => 'commoncrawler node',
             'adcrawler'                    => 'adcrawler',
             'contacts crawler'             => 'contacts crawler',
+            'iccrawler'                    => 'iccrawler',
             'crawler'                      => 'crawler',
             'jig browser web'              => 'jig browser web',
             't-h-u-n-d-e-r-s-t-o-n-e'      => 'texis webscript',
@@ -977,7 +1008,6 @@ class BrowserFactory implements FactoryInterface
             'au-mic'                             => 'teleca-obigo',
             'mic/'                               => 'teleca-obigo',
             'davclnt'                            => 'microsoft-webdav',
-            'xing-contenttabreceiver'            => 'xing contenttabreceiver',
             'slingstone'                         => 'yahoo slingstone',
             'bot for jce'                        => 'bot for jce',
             'validator.nu/lv'                    => 'validator.nu/lv',
@@ -1265,6 +1295,8 @@ class BrowserFactory implements FactoryInterface
             'doccheckbot'                     => 'doccheckbot',
             'rankactivelinkbot'               => 'rankactivelinkbot',
             'lippershey'                      => 'lippershey',
+            'boxee'                           => 'boxee',
+            'webianshell'                     => 'webianshell',
             'mozilla'                         => 'mozilla',
             'goog'                            => 'googlebot',
             'fetchstream'                     => 'fetch-stream',
@@ -1275,6 +1307,7 @@ class BrowserFactory implements FactoryInterface
             'gloomarbot'                      => 'gloomarbot',
             'booglebot'                       => 'booglebot',
             'orbiter'                         => 'orbiter',
+            'commerce browser center'         => 'commerce browser center',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

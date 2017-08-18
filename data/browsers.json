@@ -5967,7 +5967,7 @@
         "konqueror"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "kontact": {
     "name": "Kontact",
@@ -10734,7 +10734,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Seznam\\.cz"
+        "Seznam\\.cz",
+        "SznProhlizec"
       ]
     },
     "engine": "unknown"
@@ -11127,7 +11128,7 @@
         "SMART\\-TV"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "smrf url expander": {
     "name": "SMRF URL Expander",
@@ -14364,7 +14365,7 @@
   },
   "xing contenttabreceiver": {
     "name": "XING Contenttabreceiver",
-    "manufacturer": "Unknown",
+    "manufacturer": "XING",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "bot",
@@ -15867,5 +15868,83 @@
       ]
     },
     "engine": null
+  },
+  "xing app": {
+    "name": "XING App",
+    "manufacturer": "XING",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "XING"
+      ]
+    },
+    "engine": null
+  },
+  "mythbrowser": {
+    "name": "MythBrowser",
+    "manufacturer": "MythTV",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "webianshell": {
+    "name": "WebianShell",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebianShell"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "appcent": {
+    "name": "Appcent",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Appcent"
+      ]
+    },
+    "engine": null
+  },
+  "iccrawler": {
+    "name": "iCCrawler",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "commerce browser center": {
+    "name": "Commerce Browser Center",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

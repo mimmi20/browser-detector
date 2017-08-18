@@ -527,8 +527,21 @@
     "platform": "android",
     "type": "fone-pad",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
+    "resolutionWidth": 1920,
+    "resolutionHeight": 1200,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "samsung sm-t585n0": {
+    "codename": "SM-T585N0",
+    "marketingName": "Galaxy Tab A (2016, 10.1, LTE)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "platform": "android",
+    "type": "fone-pad",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1920,
+    "resolutionHeight": 1200,
     "dualOrientation": true,
     "colors": null
   },
