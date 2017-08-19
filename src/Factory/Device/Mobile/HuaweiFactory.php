@@ -197,6 +197,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'p6-u06'                          => 'huawei p6-u06',
         'p6 s-u06'                        => 'huawei p6 s-u06',
         ' p6 '                            => 'huawei p6',
+        'mt7-cl00'                        => 'huawei mt7-cl00',
         'mt7-tl10'                        => 'huawei mt7-tl10',
         'mt7-l09'                         => 'huawei mt7-l09',
         'jazz'                            => 'huawei mt7-l09',

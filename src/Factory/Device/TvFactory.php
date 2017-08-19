@@ -36,6 +36,10 @@ class TvFactory implements Factory\FactoryInterface
         'sl121'                       => 'sl121',
         'sl150'                       => 'sl150',
         'digio i33-hd+'               => 'telestar digio 33i hd+',
+        'mxl661l32'                   => 'samsung smart tv',
+        'smart-tv'                    => 'samsung smart tv',
+        '(;metz;mms;;;)'              => 'general metz tv',
+        '(;tcl; ; ; ;)'               => 'general tcl tv',
         'netrangemmh'                 => 'netrangemmh',
         'viera'                       => 'viera tv',
         'technisat digicorder isio s' => 'digicorder isio s',
@@ -43,11 +47,12 @@ class TvFactory implements Factory\FactoryInterface
         'technisat multyvision isio'  => 'multyvision isio',
         'cx919'                       => 'cx919',
         'gxt_dongle_3188'             => 'cx919',
-        'mxl661l32'                   => 'samsung smart tv',
-        'smart-tv'                    => 'samsung smart tv',
         'apple tv'                    => 'appletv',
         'netbox'                      => 'sony netbox',
-        '(;metz;mms;;;)'              => 'general metz tv',
+        'aston;xenahd twin connect'   => 'aston xenahd twin connect',
+        'arcelik;bk'                  => 'arcelik bk',
+        'arcelik;j5'                  => 'arcelik j5',
+        'mstar;t42'                   => 'mstar t42',
     ];
 
     /**

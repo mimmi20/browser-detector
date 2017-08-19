@@ -15034,10 +15034,11 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "SurfBrowser"
+        "SurfBrowser",
+        "Surf"
       ]
     },
-    "engine": "blink"
+    "engine": null
   },
   "avira scout": {
     "name": "Avira Scout",
@@ -15941,6 +15942,18 @@
     "pdfSupport": true,
     "rssSupport": false,
     "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "nightingale": {
+    "name": "Nightingale",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
     "version": {
       "class": null,
       "search": null

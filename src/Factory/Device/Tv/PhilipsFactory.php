@@ -27,7 +27,12 @@ class PhilipsFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'htb5570d'                    => 'philips htb5570d',
+        'htb5540d'                    => 'philips htb5540d',
         'htb4150b'                    => 'philips htb4150b',
+        'htb3570'                     => 'philips htb3570',
+        'bdp5600'                     => 'philips bdp5600',
+        'bdp3490'                     => 'philips bdp3490',
         'avm-2017'                    => 'philips blueray player',
         'avm-2016'                    => 'philips blueray player',
         'avm-2015'                    => 'philips blueray player',

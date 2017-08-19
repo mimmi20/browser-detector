@@ -779,6 +779,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'gt-i9300'        => 'samsung gt-i9300',
         'i9300'           => 'samsung gt-i9300',
         'gt-i9295'        => 'samsung gt-i9295',
+        'gt-i9228'        => 'samsung gt-i9228',
         'i9295'           => 'samsung gt-i9295',
         'gt-i9210'        => 'samsung gt-i9210',
         'gt-i9205'        => 'samsung gt-i9205',
