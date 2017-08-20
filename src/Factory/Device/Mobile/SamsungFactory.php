@@ -922,6 +922,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sph-l900'        => 'samsung sph-l900',
         'sph-l720'        => 'samsung sph-l720',
         'sph-l710'        => 'samsung sph-l710',
+        'sph-i800'        => 'samsung sph-i800',
         'sph-ip830w'      => 'samsung sph-ip830w',
         'sph-d710bst'     => 'samsung sph-d710bst',
         'sph-d710'        => 'samsung sph-d710',

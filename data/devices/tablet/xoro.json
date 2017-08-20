@@ -20,8 +20,21 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "xoro telepad 830": {
+    "codename": "TelePAD 830",
+    "marketingName": "TelePAD 830",
+    "manufacturer": "Xoro",
+    "brand": "Xoro",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
     "dualOrientation": true,
     "colors": null
   }

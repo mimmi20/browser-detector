@@ -33,6 +33,7 @@ class TriQFactory implements Factory\FactoryInterface
         'ac0732c' => '3q ac0732c',
         'rc9724c' => '3q rc9724c',
         'lc0720c' => '3q lc0720c',
+        'er71b'   => '3q er71b',
     ];
 
     /**

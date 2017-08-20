@@ -131,6 +131,7 @@ class BrowserFactory implements FactoryInterface
             'navermatome'                 => 'matome',
             'flipboardproxy'              => 'flipboardproxy',
             'flipboard'                   => 'flipboard app',
+            'seznambot'                   => 'seznambot',
             'seznam.cz'                   => 'seznam browser',
             'sznprohlizec'                => 'seznam browser',
             'aviator'                     => 'aviator',
@@ -442,6 +443,7 @@ class BrowserFactory implements FactoryInterface
             'yjtop'                       => 'yahoo! app',
             'ninesky'                     => 'ninesky-browser',
             'listia'                      => 'listia',
+            'aldiko'                      => 'aldiko',
         ];
 
         foreach ($checkBeforeAndroidWebkit as $search => $key) {
@@ -772,7 +774,6 @@ class BrowserFactory implements FactoryInterface
             'istellabot'                          => 'istellabot',
             'meanpathbot'                         => 'meanpathbot',
             'xml sitemaps generator'              => 'xml sitemaps generator',
-            'seznambot'                           => 'seznambot',
             'urlappendbot'                        => 'urlappendbot',
             'netseer crawler'                     => 'netseer crawler',
             'add catalog'                         => 'add catalog',

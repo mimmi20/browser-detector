@@ -28,6 +28,7 @@ class IonikFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'tp10.1-1500dc' => 'ionik tp10.1-1500dc',
+        'tp9.7-1500dc'  => 'ionik tp9.7-1500dc',
         'tp8-1200qc'    => 'ionik tp8-1200qc',
         'tu-1489a'      => 'ionik tu-1489a',
     ];

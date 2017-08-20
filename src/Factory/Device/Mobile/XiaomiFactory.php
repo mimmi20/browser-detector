@@ -59,6 +59,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'hm 1sw'         => 'xiaomitech hm 1sw',
         'hm 1sc'         => 'xiaomitech hm 1sc',
         'hm 1s'          => 'xiaomitech hm 1s',
+        '2015562'        => 'xiaomitech mi 4c',
         '2014813'        => 'xiaomitech hongmi 2 4g',
         '2014011'        => 'xiaomitech hongmi 1s',
     ];

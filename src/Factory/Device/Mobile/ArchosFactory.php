@@ -78,6 +78,7 @@ class ArchosFactory implements Factory\FactoryInterface
         '40b titanium surround' => 'archos 40b titanium surround',
         '40 titanium'           => 'archos 40 titanium',
         '40 cesium'             => 'archos 40 cesium',
+        'diamond s'             => 'archos diamond s',
         'gamepad2'              => 'archos gamepad2',
         'smart home tablet'     => 'archos arc-sh-q11',
         'a101it'                => 'archos a101it',

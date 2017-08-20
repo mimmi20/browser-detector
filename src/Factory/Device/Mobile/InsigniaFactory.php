@@ -27,7 +27,8 @@ class InsigniaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ns-14t004' => 'insignia ns-14t004',
+        'ns-14t004'   => 'insignia ns-14t004',
+        'ns-p10a6100' => 'insignia ns-p10a6100',
     ];
 
     /**
