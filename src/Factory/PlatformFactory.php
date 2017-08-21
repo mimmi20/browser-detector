@@ -140,6 +140,7 @@ class PlatformFactory implements FactoryInterface
             'like android' => 'linux smartphone os (maemo)',
             'blackberry'   => 'rim os',
             'bb10'         => 'rim os',
+            'remix'        => 'remixos',
         ];
 
         foreach ($platformsBeforeFirefoxOs as $searchkey => $platfornKey) {

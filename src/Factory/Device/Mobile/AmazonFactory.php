@@ -38,6 +38,7 @@ class AmazonFactory implements Factory\FactoryInterface
         'kfarwi'              => 'amazon kfarwi',
         'kftt'                => 'amazon kftt',
         'kfthwi'              => 'amazon kfthwi',
+        'kindle fire hdx 7'   => 'amazon kfthwi',
         'kfthwa'              => 'amazon kfthwa',
         'kfsowi'              => 'amazon kfsowi',
         'kfot'                => 'amazon kfot',

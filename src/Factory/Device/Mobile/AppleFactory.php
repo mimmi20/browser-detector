@@ -79,6 +79,7 @@ class AppleFactory implements Factory\FactoryInterface
         'iph8,1'    => 'apple iphone 6s',
         'iphone7,2' => 'apple iphone 6',
         'iph7,2'    => 'apple iphone 6',
+        'iphone 6'  => 'apple iphone 6',
         'iphone7,1' => 'apple iphone 6 plus',
         'iph7,1'    => 'apple iphone 6 plus',
         'iphone6,2' => 'apple iphone 5s',

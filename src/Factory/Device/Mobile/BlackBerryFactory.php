@@ -32,6 +32,7 @@ class BlackBerryFactory implements Factory\FactoryInterface
         'stv100-4'    => 'blackberry stv100-4',
         'bb10; kbd'   => 'blackberry kbd',
         'bb10; touch' => 'blackberry z10',
+        'bb10;touch'  => 'blackberry z10',
         'playbook'    => 'rim playbook',
         '9981'        => 'blackberry 9981',
         '9930'        => 'blackberry 9930',

@@ -48,6 +48,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'mi pad'         => 'xiaomitech mi pad',
         'mipad'          => 'xiaomitech mi pad',
         'mi 2a'          => 'xiaomitech mi 2a',
+        'mi 2sc'         => 'xiaomitech mi 2sc',
         'mi 2s'          => 'xiaomitech mi 2s',
         'mi 2'           => 'xiaomitech mi 2',
         'hm note 1w'     => 'xiaomitech hm note 1w',
@@ -58,6 +59,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'hm 1sw'         => 'xiaomitech hm 1sw',
         'hm 1sc'         => 'xiaomitech hm 1sc',
         'hm 1s'          => 'xiaomitech hm 1s',
+        '2015562'        => 'xiaomitech mi 4c',
         '2014813'        => 'xiaomitech hongmi 2 4g',
         '2014011'        => 'xiaomitech hongmi 1s',
     ];

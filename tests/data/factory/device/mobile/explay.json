@@ -21,8 +21,8 @@
     "type": "FonePad",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1024,
+    "height": 768,
     "colors": null
   },
   {
@@ -34,8 +34,8 @@
     "type": "FonePad",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1024,
+    "height": 600,
     "colors": null
   },
   {
@@ -47,8 +47,8 @@
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 800,
+    "height": 480,
     "colors": null
   },
   {
@@ -60,8 +60,8 @@
     "type": "FonePad",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1024,
+    "height": 600,
     "colors": null
   },
   {
@@ -70,11 +70,24 @@
     "marketingName": "A320",
     "manufacturer": "Explay",
     "brand": "Explay",
-    "type": "Mobile Phone",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 240,
+    "height": 400,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; RioPlay Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36",
+    "codeName": "Rio Play",
+    "marketingName": "Rio Play",
+    "manufacturer": "Explay",
+    "brand": "Explay",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 480,
+    "height": 854,
     "colors": null
   }
 ]

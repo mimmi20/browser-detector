@@ -74,6 +74,7 @@ class Linux
             'irix',
             'hpwos',
             'webos',
+            'remix',
         ];
 
         if ($s->containsAny($noLinux, false)) {

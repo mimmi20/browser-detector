@@ -27,10 +27,12 @@ class LenovoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'zuk z1'                  => 'lenovo zuk z1',
         'k80m'                    => 'lenovo k80m',
         'yb1-x90l'                => 'lenovo yb1-x90l',
         'yt3-x90f'                => 'lenovo yt3-x90f',
         'yt3-x50f'                => 'lenovo yt3-x50f',
+        'yt3-850m'                => 'lenovo yt3-850m',
         'k50a40'                  => 'lenovo k50a40',
         'k33a48'                  => 'lenovo k33a48',
         'k10a40'                  => 'lenovo k10a40',
@@ -94,10 +96,11 @@ class LenovoFactory implements Factory\FactoryInterface
         'a10-70l'                 => 'lenovo a10-70l',
         'a10-70f'                 => 'lenovo a10-70f',
         'a8-50l'                  => 'lenovo a8-50l',
-        'a7-10f'                  => 'lenovo a7-10f',
-        'a7-20f'                  => 'lenovo a7-20f',
         'a7-30hc'                 => 'lenovo a7-30hc',
         'a7-30h'                  => 'lenovo a7-30h',
+        'a7-30dc'                 => 'lenovo a7-30dc',
+        'a7-10f'                  => 'lenovo a7-10f',
+        'a7-20f'                  => 'lenovo a7-20f',
         'a7-30f'                  => 'lenovo a7-30f',
         'a7600-h'                 => 'lenovo a7600-h',
         'a7600-f'                 => 'lenovo a7600-f',

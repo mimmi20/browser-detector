@@ -28,6 +28,7 @@ class PompFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'c6'  => 'pomp c6',
+        'w99' => 'pomp w99',
         'w88' => 'pomp w88',
     ];
 

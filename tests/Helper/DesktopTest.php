@@ -133,6 +133,8 @@ class DesktopTest extends \PHPUnit\Framework\TestCase
             ['iPodder/2.1 +http://ipodder.sf.net/'],
             ['TA SEO Crawler v0.1 URLData.pm (smcquaker@tripadvisor.com)'],
             ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) online-versicherungsportal.info Safari/538.1'],
+            ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) versicherungssuchmaschine.net Safari/538.1'],
+            ['Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.22.74257'],
         ];
     }
 }

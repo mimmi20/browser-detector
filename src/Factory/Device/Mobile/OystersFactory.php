@@ -27,6 +27,11 @@ class OystersFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        't72n_3g'     => 'oysters t72n_3g',
+        't72m 3g'     => 'oysters t72m 3g',
+        't72hm3g'     => 'oysters t72hm3g',
+        't72ha_3g'    => 'oysters t72ha_3g',
+        't72er3g'     => 'oysters t72er3g',
         'pacific800i' => 'oysters pacific 800i',
         'pacific 800' => 'oysters pacific 800',
     ];

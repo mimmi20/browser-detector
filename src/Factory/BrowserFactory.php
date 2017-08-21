@@ -123,6 +123,7 @@ class BrowserFactory implements FactoryInterface
             'stagefright'                 => 'stagefright',
             'oculusbrowser'               => 'oculus-browser',
             'surfbrowser'                 => 'surfbrowser',
+            'surf/'                       => 'surfbrowser',
             'avirascout'                  => 'avira scout',
             'samsungbrowser'              => 'samsungbrowser',
             'silk'                        => 'silk',
@@ -130,7 +131,9 @@ class BrowserFactory implements FactoryInterface
             'navermatome'                 => 'matome',
             'flipboardproxy'              => 'flipboardproxy',
             'flipboard'                   => 'flipboard app',
+            'seznambot'                   => 'seznambot',
             'seznam.cz'                   => 'seznam browser',
+            'sznprohlizec'                => 'seznam browser',
             'aviator'                     => 'aviator',
             'netfrontlifebrowser'         => 'netfrontlifebrowser',
             'icedragon'                   => 'icedragon',
@@ -169,6 +172,8 @@ class BrowserFactory implements FactoryInterface
             'baiduboxapp'     => 'baidu box app',
             'wkbrowser'       => 'wkbrowser',
             'mb2345browser'   => '2345 browser',
+            '2345explorer'    => '2345 browser',
+            '2345chrome'      => '2345 browser',
             'sohunews'        => 'sohunews app',
             'miuibrowser'     => 'miui browser',
             'gsa'             => 'google app',
@@ -180,6 +185,7 @@ class BrowserFactory implements FactoryInterface
             'klar/'           => 'firefox klar',
             'eui browser'     => 'eui browser',
             'slimboat'        => 'slimboat',
+            'yandexsearch'    => 'yandexsearch',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -293,7 +299,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('internet explorer', $useragent);
         }
 
-        $checkBeforeEdge = [
+        $checkBeforeCentBrowser = [
             'chromium'                            => 'chromium',
             'iron'                                => 'iron',
             'midori'                              => 'midori',
@@ -314,7 +320,22 @@ class BrowserFactory implements FactoryInterface
             '1stbrowser'                          => '1stbrowser',
             'tenta'                               => 'tenta',
             'merchantcentricbot'                  => 'merchantcentricbot',
-            'cent'                                => 'cent',
+            'appcent'                             => 'appcent',
+            'commerce browser center'             => 'commerce browser center',
+            'iccrawler'                           => 'iccrawler',
+        ];
+
+        foreach ($checkBeforeCentBrowser as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
+        if ($s->contains('cent', false) && !$s->contains('centos', false)) {
+            return $this->loader->load('cent', $useragent);
+        }
+
+        $checkBeforeEdge = [
             'salam browser'                       => 'salam browser',
             'whale'                               => 'whale browser',
             'slimjet'                             => 'slimjet browser',
@@ -345,7 +366,7 @@ class BrowserFactory implements FactoryInterface
             return $this->loader->load('edge mobile', $useragent);
         }
 
-        $checkBeforeDragon = [
+        $checkBeforeWire = [
             'edge'        => 'edge',
             'diffbot'     => 'diffbot',
             'vivaldi'     => 'vivaldi',
@@ -358,7 +379,19 @@ class BrowserFactory implements FactoryInterface
             'asw'         => 'avast safezone',
             'schoolwires' => 'schoolwires app',
             'netnewswire' => 'netnewswire',
-            'wire'        => 'wire app',
+        ];
+
+        foreach ($checkBeforeWire as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
+        if ($s->contains('wire', false) && !$s->containsAny(['wired', 'wireless'], false)) {
+            return $this->loader->load('wire app', $useragent);
+        }
+
+        $checkBeforeDragon = [
             'qupzilla'    => 'qupzilla',
             'ur browser'  => 'ur-browser',
             'urbrowser'   => 'ur-browser',
@@ -411,6 +444,8 @@ class BrowserFactory implements FactoryInterface
             'yjapp'                       => 'yahoo! app',
             'yjtop'                       => 'yahoo! app',
             'ninesky'                     => 'ninesky-browser',
+            'listia'                      => 'listia',
+            'aldiko'                      => 'aldiko',
         ];
 
         foreach ($checkBeforeAndroidWebkit as $search => $key) {
@@ -436,18 +471,19 @@ class BrowserFactory implements FactoryInterface
         }
 
         $checkBeforeQt = [
-            'webos'                => 'webkit/webos',
-            'wosbrowser'           => 'webkit/webos',
-            'wossystem'            => 'webkit/webos',
-            'omniweb'              => 'omniweb',
-            'windows phone search' => 'windows phone search',
-            'windows-update-agent' => 'windows-update-agent',
-            'classilla'            => 'classilla',
-            'nokia'                => 'nokiabrowser',
-            'twitter for i'        => 'twitter app',
-            'twitterbot'           => 'twitterbot',
-            'quicktime'            => 'quicktime',
-            'qtcarbrowser'         => 'model s browser',
+            'webos'                  => 'webkit/webos',
+            'wosbrowser'             => 'webkit/webos',
+            'wossystem'              => 'webkit/webos',
+            'omniweb'                => 'omniweb',
+            'windows phone search'   => 'windows phone search',
+            'windows-update-agent'   => 'windows-update-agent',
+            'classilla'              => 'classilla',
+            'nokia'                  => 'nokiabrowser',
+            'twitter for i'          => 'twitter app',
+            'twitterbot'             => 'twitterbot',
+            'quicktime'              => 'quicktime',
+            'qtweb internet browser' => 'qtweb internet browser',
+            'qtcarbrowser'           => 'model s browser',
         ];
 
         foreach ($checkBeforeQt as $search => $key) {
@@ -555,6 +591,8 @@ class BrowserFactory implements FactoryInterface
             'iris/'                           => 'iris',
             'online-versicherungsportal.info' => 'online-versicherungsportal.info bot',
             'versicherungssuchmaschine.net'   => 'versicherungssuchmaschine.net bot',
+            'konqueror'                       => 'konqueror',
+            'mythbrowser'                     => 'mythbrowser',
             'safari'                          => 'safari',
             'windows phone ad client'         => 'windows phone ad client',
             'ddg-android-'                    => 'duckduck app',
@@ -562,6 +600,8 @@ class BrowserFactory implements FactoryInterface
             'snapchat'                        => 'snapchat app',
             'grindr'                          => 'grindr',
             'readkit'                         => 'readkit',
+            'xing-contenttabreceiver'         => 'xing contenttabreceiver',
+            'xing'                            => 'xing app',
         ];
 
         foreach ($checkBeforeSafari as $search => $key) {
@@ -651,7 +691,6 @@ class BrowserFactory implements FactoryInterface
             'awmt'                                          => 'another web mining tool',
             'wbsearchbot'                                   => 'wbsearchbot',
             'wbsrch'                                        => 'wbsearchbot',
-            'konqueror'                                     => 'konqueror',
             'typo3-linkvalidator'                           => 'typo3 linkvalidator',
             'typo3'                                         => 'typo3',
             'feeddlerrss'                                   => 'feeddler rss reader',
@@ -737,7 +776,6 @@ class BrowserFactory implements FactoryInterface
             'istellabot'                          => 'istellabot',
             'meanpathbot'                         => 'meanpathbot',
             'xml sitemaps generator'              => 'xml sitemaps generator',
-            'seznambot'                           => 'seznambot',
             'urlappendbot'                        => 'urlappendbot',
             'netseer crawler'                     => 'netseer crawler',
             'add catalog'                         => 'add catalog',
@@ -973,7 +1011,6 @@ class BrowserFactory implements FactoryInterface
             'au-mic'                             => 'teleca-obigo',
             'mic/'                               => 'teleca-obigo',
             'davclnt'                            => 'microsoft-webdav',
-            'xing-contenttabreceiver'            => 'xing contenttabreceiver',
             'slingstone'                         => 'yahoo slingstone',
             'bot for jce'                        => 'bot for jce',
             'validator.nu/lv'                    => 'validator.nu/lv',
@@ -1261,6 +1298,9 @@ class BrowserFactory implements FactoryInterface
             'doccheckbot'                     => 'doccheckbot',
             'rankactivelinkbot'               => 'rankactivelinkbot',
             'lippershey'                      => 'lippershey',
+            'boxee'                           => 'boxee',
+            'webianshell'                     => 'webianshell',
+            'nightingale'                     => 'nightingale',
             'mozilla'                         => 'mozilla',
             'goog'                            => 'googlebot',
             'fetchstream'                     => 'fetch-stream',

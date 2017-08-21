@@ -47,6 +47,8 @@ class TvTest extends \PHPUnit\Framework\TestCase
             ['Opera/9.80 (Linux armv7l; U; CE-HTML/1.0 NETTV/3.3.0; PHILIPS-AVM-2012; en) Presto/2.9.167 Version/11.50'],
             ['Mozilla/3.01 (compatible; Netbox/3.5 R92; Linux 2.2)'],
             ['Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/6.0.2 SmartTvA/3.0.0 (PhilipsTV, 6.1.1,) en) Presto/2.12.407 Version/12.50'],
+            ['Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.22.74257'],
+            ['Mozilla/5.0 (X11; Linux x86) AppleWebKit/537.30 (KHTML, like Gecko) Safari/537.30 HbbTV/1.1.1 (;Metz;MMS;;;) CE-HTML/1.0 FXM-U2FsdGVkX1/I+pI+pC2BJzChzdtVQ20DxoszKQr/82SvOOeNG27+jrwW50OgfU6C-END'],
         ];
     }
 

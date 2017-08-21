@@ -969,5 +969,25 @@
         "OpenSolaris"
       ]
     }
+  },
+  "startos": {
+    "name": "StartOS",
+    "marketingName": "StartOS",
+    "manufacturer": "YLMF",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "StartOS"
+      ]
+    }
+  },
+  "remixos": {
+    "name": "Remix OS",
+    "marketingName": "Remix OS",
+    "manufacturer": "Jide",
+    "version": {
+      "class": null,
+      "search": null
+    }
   }
 }

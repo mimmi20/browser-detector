@@ -29,6 +29,7 @@ class AsusFactory implements Factory\FactoryInterface
     private $devices = [
         'p00c'              => 'asus p00c',
         'p01y'              => 'asus p01y',
+        'p01t_1'            => 'asus p01t_1',
         'p021'              => 'asus p021',
         'p022'              => 'asus p022',
         'p023'              => 'asus p023',

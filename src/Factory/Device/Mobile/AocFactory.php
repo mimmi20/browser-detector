@@ -27,7 +27,9 @@ class AocFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm601' => 'aoc m601',
+        'u702'   => 'aoc u702',
+        'mg97dr' => 'aoc mg97dr',
+        'm601'   => 'aoc m601',
     ];
 
     /**

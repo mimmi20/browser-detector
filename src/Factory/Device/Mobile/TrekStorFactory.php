@@ -42,6 +42,7 @@ class TrekStorFactory implements Factory\FactoryInterface
         'surftab_7.0'                   => 'trekstor st70104-1',
         'st80216'                       => 'trekstor st80216',
         'st80208'                       => 'trekstor st80208',
+        'st70408_4'                     => 'trekstor st70408-4',
         'st701041'                      => 'trekstor st70104-1',
         'st70104-1'                     => 'trekstor st70104-1',
         'st70104-2'                     => 'trekstor st70104-2',

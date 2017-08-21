@@ -1498,7 +1498,10 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Mb2345Browser"
+        "Mb2345Browser",
+        "2345Explorer",
+        "2345chrome v",
+        "2345chrome"
       ]
     },
     "engine": "blink"
@@ -5965,7 +5968,7 @@
         "konqueror"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "kontact": {
     "name": "Kontact",
@@ -10732,7 +10735,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Seznam\\.cz"
+        "Seznam\\.cz",
+        "SznProhlizec"
       ]
     },
     "engine": "unknown"
@@ -11125,7 +11129,7 @@
         "SMART\\-TV"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "smrf url expander": {
     "name": "SMRF URL Expander",
@@ -14362,7 +14366,7 @@
   },
   "xing contenttabreceiver": {
     "name": "XING Contenttabreceiver",
-    "manufacturer": "Unknown",
+    "manufacturer": "XING",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "bot",
@@ -15031,10 +15035,11 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "SurfBrowser"
+        "SurfBrowser",
+        "Surf"
       ]
     },
-    "engine": "blink"
+    "engine": null
   },
   "avira scout": {
     "name": "Avira Scout",
@@ -15835,6 +15840,140 @@
     "version": {
       "class": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "yandexsearch": {
+    "name": "Yandex Search App",
+    "manufacturer": "Yandex",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YandexSearch"
+      ]
+    },
+    "engine": null
+  },
+  "listia": {
+    "name": "Listia",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Listia"
+      ]
+    },
+    "engine": null
+  },
+  "xing app": {
+    "name": "XING App",
+    "manufacturer": "XING",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "XING"
+      ]
+    },
+    "engine": null
+  },
+  "mythbrowser": {
+    "name": "MythBrowser",
+    "manufacturer": "MythTV",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "webianshell": {
+    "name": "WebianShell",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebianShell"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "appcent": {
+    "name": "Appcent",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Appcent"
+      ]
+    },
+    "engine": null
+  },
+  "iccrawler": {
+    "name": "iCCrawler",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "commerce browser center": {
+    "name": "Commerce Browser Center",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "nightingale": {
+    "name": "Nightingale",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Nightingale"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "aldiko": {
+    "name": "Aldiko",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Aldiko"
+      ]
     },
     "engine": "unknown"
   }

@@ -28,6 +28,7 @@ class AlcatelFactory implements Factory\FactoryInterface
      */
     private $devices = [
         '9022x'                    => 'alcatel ot-9022x',
+        '9005x'                    => 'alcatel ot-9005x',
         '8050d'                    => 'alcatel ot-8050d',
         '8030y'                    => 'alcatel ot-8030y',
         '8008d'                    => 'alcatel ot-8008d',
@@ -98,12 +99,15 @@ class AlcatelFactory implements Factory\FactoryInterface
         '4019a'                    => 'alcatel ot-4019a',
         '4015x'                    => 'alcatel ot-4015x',
         '4015d'                    => 'alcatel ot-4015d',
+        '4013m'                    => 'alcatel ot-4013m',
         '4012x'                    => 'alcatel ot-4012x',
         '4012a'                    => 'alcatel ot-4012a',
         '4010d'                    => 'alcatel ot-4010d',
         '3075a'                    => 'alcatel ot-3075a',
         'vf-895n'                  => 'alcatel vf-895n',
         'vf-795'                   => 'alcatel vf-795',
+        'telekom puls'             => 'alcatel telekom puls',
+        'm812c'                    => 'alcatel m812c',
         'fiercexl'                 => 'alcatel fierce xl',
         'one touch 997d'           => 'alcatel ot-997d',
         'one_touch_995'            => 'alcatel ot-995',

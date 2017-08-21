@@ -27,6 +27,7 @@ class ChuwiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'hibook'   => 'chuwi hibook',
         'vi8 plus' => 'chuwi vi8 plus',
     ];
 

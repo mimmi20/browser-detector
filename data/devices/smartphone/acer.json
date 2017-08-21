@@ -303,7 +303,7 @@
     "marketingName": "Liquid Z4 Duo",
     "manufacturer": "Acer",
     "brand": "Acer",
-    "platform": "windows phone",
+    "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
     "resolutionWidth": 480,
@@ -321,6 +321,32 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 720,
     "resolutionHeight": 1280,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "acer z130": {
+    "codename": "Z130",
+    "marketingName": "Liquid Z3",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "acer z410": {
+    "codename": "Z410",
+    "marketingName": "Liquid Z410",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
     "dualOrientation": true,
     "colors": null
   }

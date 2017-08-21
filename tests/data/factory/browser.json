@@ -4635,7 +4635,7 @@
     "ua": "XING-contenttabreceiver/2.0",
     "browser": "XING Contenttabreceiver",
     "version": "2.0.0",
-    "manufacturer": null,
+    "manufacturer": "XING AG",
     "bits": 32,
     "type": "Bot/Crawler"
   },
@@ -8214,5 +8214,125 @@
     "manufacturer": "infegy.com",
     "bits": 64,
     "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; Light_AT200 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.85 Safari/537.36 YandexSearch/5.45/apad",
+    "browser": "Yandex Search App",
+    "version": "5.45.0",
+    "manufacturer": "Yandex LLC",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; A200 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 Listia/1.100",
+    "browser": "Listia",
+    "version": "1.100.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; 2345Explorer 5.0.0.14102)",
+    "browser": "2345 Browser",
+    "version": "5.0.0.14102",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36 2345chrome v3.0.0.8180",
+    "browser": "2345 Browser",
+    "version": "3.0.0.8180",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E233; iPhone 6/9.3 XING/5.30.0",
+    "browser": "XING App",
+    "version": "5.30.0",
+    "manufacturer": "XING AG",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.34 (KHTML, like Gecko) konqueror/4.10.5 Safari/534.34",
+    "browser": "Konqueror",
+    "version": "4.10.5",
+    "manufacturer": "KDE e.V.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.34 (KHTML, like Gecko) mythfrontend MythBrowser/534.34",
+    "browser": "MythBrowser",
+    "version": "0.0.0",
+    "manufacturer": "MythTV",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux i686; rv:2.0) Gecko/20110318 WebianShell/0.1",
+    "browser": "WebianShell",
+    "version": "0.1.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 SznProhlizec/3.2.3a",
+    "browser": "Seznam Browser",
+    "version": "3.2.3-alpha",
+    "manufacturer": "Seznam.cz, a.s.",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Appcent/2.6 CFNetwork/672.1.15 Darwin/14.0.0",
+    "browser": "Appcent",
+    "version": "2.6.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "iCCrawler (http://www.iccenter.net/bot.htm)",
+    "browser": "iCCrawler",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Commerce Browser Center",
+    "browser": "Commerce Browser Center",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.28) Gecko/20130316 Nightingale/1.12.2a (20140529014224)",
+    "browser": "Nightingale",
+    "version": "1.12.2-alpha",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; SeznamBot/3.2-test4; +http://napoveda.seznam.cz/en/seznambot-intro/)",
+    "browser": "SeznamBot",
+    "version": "3.2.0",
+    "manufacturer": "Seznam.cz, a.s.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; VT10416-2 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Aldiko/3.0.13-standard",
+    "browser": "Aldiko",
+    "version": "3.0.13",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
   }
 ]
