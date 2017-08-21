@@ -33,7 +33,7 @@ class ThomsonFactory implements Factory\FactoryInterface
         'lf1v373'                     => 'thomson lf1v373',
         'lf1v325'                     => 'thomson lf1v325',
         'lf1v307'                     => 'thomson lf1v307',
-        'ths845'                     => 'thomson ths845',
+        'ths845'                      => 'thomson ths845',
     ];
 
     /**

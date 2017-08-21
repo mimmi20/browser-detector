@@ -47,23 +47,23 @@ class MobileFactory implements Factory\FactoryInterface
     public function detect($useragent, Stringy $s = null)
     {
         $factoriesBeforeSamsung = [
-            'hiphone' => '\BrowserDetector\Factory\Device\Mobile\HiPhoneFactory',
-            'v919' => '\BrowserDetector\Factory\Device\Mobile\HiPhoneFactory',
-            'technisat' => '\BrowserDetector\Factory\Device\Mobile\TechnisatFactory',
-            'technipad' => '\BrowserDetector\Factory\Device\Mobile\TechnisatFactory',
-            'aqipad' => '\BrowserDetector\Factory\Device\Mobile\TechnisatFactory',
+            'hiphone'     => '\BrowserDetector\Factory\Device\Mobile\HiPhoneFactory',
+            'v919'        => '\BrowserDetector\Factory\Device\Mobile\HiPhoneFactory',
+            'technisat'   => '\BrowserDetector\Factory\Device\Mobile\TechnisatFactory',
+            'technipad'   => '\BrowserDetector\Factory\Device\Mobile\TechnisatFactory',
+            'aqipad'      => '\BrowserDetector\Factory\Device\Mobile\TechnisatFactory',
             'techniphone' => '\BrowserDetector\Factory\Device\Mobile\TechnisatFactory',
-            'navipad' => '\BrowserDetector\Factory\Device\Mobile\TexetFactory',
-            'medipad' => '\BrowserDetector\Factory\Device\Mobile\BewatecFactory',
-            'mipad' => '\BrowserDetector\Factory\Device\Mobile\XiaomiFactory',
-            'nokia' => '\BrowserDetector\Factory\Device\Mobile\NokiaFactory',
+            'navipad'     => '\BrowserDetector\Factory\Device\Mobile\TexetFactory',
+            'medipad'     => '\BrowserDetector\Factory\Device\Mobile\BewatecFactory',
+            'mipad'       => '\BrowserDetector\Factory\Device\Mobile\XiaomiFactory',
+            'nokia'       => '\BrowserDetector\Factory\Device\Mobile\NokiaFactory',
         ];
-
 
         foreach ($factoriesBeforeSamsung as $test => $factoryName) {
             if ($s->contains($test, false)) {
                 /** @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
+
                 return $factory->detect($useragent, $s);
             }
         }
@@ -79,15 +79,15 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         $factoriesBeforeApple = [
-            'samsung' => '\BrowserDetector\Factory\Device\Mobile\SamsungFactory',
+            'samsung'    => '\BrowserDetector\Factory\Device\Mobile\SamsungFactory',
             'blackberry' => '\BrowserDetector\Factory\Device\Mobile\BlackBerryFactory',
         ];
-
 
         foreach ($factoriesBeforeApple as $test => $factoryName) {
             if ($s->contains($test, false)) {
                 /** @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
+
                 return $factory->detect($useragent, $s);
             }
         }
@@ -99,37 +99,37 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         $factoriesBeforeLg = [
-            'asus' => '\BrowserDetector\Factory\Device\Mobile\AsusFactory',
+            'asus'        => '\BrowserDetector\Factory\Device\Mobile\AsusFactory',
             'mt-gt-a9500' => '\BrowserDetector\Factory\Device\Mobile\HtmFactory',
-            'gt-a7100' => '\BrowserDetector\Factory\Device\Mobile\SprdFactory',
-            'feiteng' => '\BrowserDetector\Factory\Device\Mobile\FeitengFactory',
-            'gt-h' => '\BrowserDetector\Factory\Device\Mobile\FeitengFactory',
-            'cube' => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
-            'u30gt' => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
-            'u51gt' => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
-            'u55gt' => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
-            'i15-tcl' => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
-            'u25gt-c4w' => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
-            'gtx75' => '\BrowserDetector\Factory\Device\Mobile\UtStarcomFactory',
-            'gt-9000' => '\BrowserDetector\Factory\Device\Mobile\StarFactory',
+            'gt-a7100'    => '\BrowserDetector\Factory\Device\Mobile\SprdFactory',
+            'feiteng'     => '\BrowserDetector\Factory\Device\Mobile\FeitengFactory',
+            'gt-h'        => '\BrowserDetector\Factory\Device\Mobile\FeitengFactory',
+            'cube'        => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
+            'u30gt'       => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
+            'u51gt'       => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
+            'u55gt'       => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
+            'i15-tcl'     => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
+            'u25gt-c4w'   => '\BrowserDetector\Factory\Device\Mobile\CubeFactory',
+            'gtx75'       => '\BrowserDetector\Factory\Device\Mobile\UtStarcomFactory',
+            'gt-9000'     => '\BrowserDetector\Factory\Device\Mobile\StarFactory',
         ];
-
 
         foreach ($factoriesBeforeLg as $test => $factoryName) {
             if ($s->contains($test, false)) {
                 /** @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
+
                 return $factory->detect($useragent, $s);
             }
         }
 
-//        if ($s->contains('GTX75', true)) {
-//            return (new Mobile\UtStarcomFactory($this->loader))->detect($useragent, $s);
-//        }
+        //        if ($s->contains('GTX75', true)) {
+        //            return (new Mobile\UtStarcomFactory($this->loader))->detect($useragent, $s);
+        //        }
 
-//        if ($s->contains('gt-9000', false)) {
-//            return (new Mobile\StarFactory($this->loader))->detect($useragent, $s);
-//        }
+        //        if ($s->contains('gt-9000', false)) {
+        //            return (new Mobile\StarFactory($this->loader))->detect($useragent, $s);
+        //        }
 
         if ($s->contains('LG', true)) {
             return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
@@ -140,37 +140,37 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         $factoriesBeforeLg = [
-            'hdc' => '\BrowserDetector\Factory\Device\Mobile\HdcFactory',
-            'galaxy s3 ex' => '\BrowserDetector\Factory\Device\Mobile\HdcFactory',
-            'nexus 5' => '\BrowserDetector\Factory\Device\Mobile\LgFactory',
-            'nexus 4' => '\BrowserDetector\Factory\Device\Mobile\LgFactory',
-            'nexus5' => '\BrowserDetector\Factory\Device\Mobile\LgFactory',
-            'nexus4' => '\BrowserDetector\Factory\Device\Mobile\LgFactory',
-            'nexus 7' => '\BrowserDetector\Factory\Device\Mobile\AsusFactory',
-            'nexus_7' => '\BrowserDetector\Factory\Device\Mobile\AsusFactory',
-            'nexus7' => '\BrowserDetector\Factory\Device\Mobile\AsusFactory',
-            'nexus 6p' => '\BrowserDetector\Factory\Device\Mobile\HuaweiFactory',
-            'nexus 6' => '\BrowserDetector\Factory\Device\Mobile\MotorolaFactory',
-            'nexus one' => '\BrowserDetector\Factory\Device\Mobile\HtcFactory',
-            'nexus 9' => '\BrowserDetector\Factory\Device\Mobile\HtcFactory',
-            'nexus evohd2' => '\BrowserDetector\Factory\Device\Mobile\HtcFactory',
-            'nexushd2' => '\BrowserDetector\Factory\Device\Mobile\HtcFactory',
-            'pantech' => '\BrowserDetector\Factory\Device\Mobile\PantechFactory',
-            'hp' => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
-            'p160u' => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
-            'touchpad' => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
-            'pixi' => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
-            'palm' => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
-            'blazer' => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
+            'hdc'           => '\BrowserDetector\Factory\Device\Mobile\HdcFactory',
+            'galaxy s3 ex'  => '\BrowserDetector\Factory\Device\Mobile\HdcFactory',
+            'nexus 5'       => '\BrowserDetector\Factory\Device\Mobile\LgFactory',
+            'nexus 4'       => '\BrowserDetector\Factory\Device\Mobile\LgFactory',
+            'nexus5'        => '\BrowserDetector\Factory\Device\Mobile\LgFactory',
+            'nexus4'        => '\BrowserDetector\Factory\Device\Mobile\LgFactory',
+            'nexus 7'       => '\BrowserDetector\Factory\Device\Mobile\AsusFactory',
+            'nexus_7'       => '\BrowserDetector\Factory\Device\Mobile\AsusFactory',
+            'nexus7'        => '\BrowserDetector\Factory\Device\Mobile\AsusFactory',
+            'nexus 6p'      => '\BrowserDetector\Factory\Device\Mobile\HuaweiFactory',
+            'nexus 6'       => '\BrowserDetector\Factory\Device\Mobile\MotorolaFactory',
+            'nexus one'     => '\BrowserDetector\Factory\Device\Mobile\HtcFactory',
+            'nexus 9'       => '\BrowserDetector\Factory\Device\Mobile\HtcFactory',
+            'nexus evohd2'  => '\BrowserDetector\Factory\Device\Mobile\HtcFactory',
+            'nexushd2'      => '\BrowserDetector\Factory\Device\Mobile\HtcFactory',
+            'pantech'       => '\BrowserDetector\Factory\Device\Mobile\PantechFactory',
+            'hp'            => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
+            'p160u'         => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
+            'touchpad'      => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
+            'pixi'          => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
+            'palm'          => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
+            'blazer'        => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
             'cm_tenderloin' => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
-            'slate' => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
+            'slate'         => '\BrowserDetector\Factory\Device\Mobile\HpFactory',
         ];
-
 
         foreach ($factoriesBeforeLg as $test => $factoryName) {
             if ($s->contains($test, false)) {
                 /** @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
+
                 return $factory->detect($useragent, $s);
             }
         }
