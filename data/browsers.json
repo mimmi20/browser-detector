@@ -1500,6 +1500,7 @@
       "search": [
         "Mb2345Browser",
         "2345Explorer",
+        "2345chrome v",
         "2345chrome"
       ]
     },
@@ -15955,8 +15956,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Nightingale"
+      ]
     },
     "engine": "unknown"
   },

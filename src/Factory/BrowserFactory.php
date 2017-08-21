@@ -321,6 +321,8 @@ class BrowserFactory implements FactoryInterface
             'tenta'                               => 'tenta',
             'merchantcentricbot'                  => 'merchantcentricbot',
             'appcent'                             => 'appcent',
+            'commerce browser center'             => 'commerce browser center',
+            'iccrawler'                           => 'iccrawler',
         ];
 
         foreach ($checkBeforeCentBrowser as $search => $key) {
@@ -385,7 +387,7 @@ class BrowserFactory implements FactoryInterface
             }
         }
 
-        if ($s->contains('wire', false) && $s->containsAny(['wired', 'wireless'])) {
+        if ($s->contains('wire', false) && !$s->containsAny(['wired', 'wireless'], false)) {
             return $this->loader->load('wire app', $useragent);
         }
 
@@ -921,7 +923,6 @@ class BrowserFactory implements FactoryInterface
             'commoncrawler node'           => 'commoncrawler node',
             'adcrawler'                    => 'adcrawler',
             'contacts crawler'             => 'contacts crawler',
-            'iccrawler'                    => 'iccrawler',
             'crawler'                      => 'crawler',
             'jig browser web'              => 'jig browser web',
             't-h-u-n-d-e-r-s-t-o-n-e'      => 'texis webscript',
@@ -1310,7 +1311,6 @@ class BrowserFactory implements FactoryInterface
             'gloomarbot'                      => 'gloomarbot',
             'booglebot'                       => 'booglebot',
             'orbiter'                         => 'orbiter',
-            'commerce browser center'         => 'commerce browser center',
         ];
 
         foreach ($lastBrowsers as $search => $key) {
