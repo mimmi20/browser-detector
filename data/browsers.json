@@ -15976,5 +15976,45 @@
       ]
     },
     "engine": "unknown"
+  },
+  "vorboss web crawler": {
+    "name": "Vorboss Web Crawler",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "generic site loader": {
+    "name": "Generic Site Loader",
+    "manufacturer": "JoinVision",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Generic Site Loader"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sslbot": {
+    "name": "SSLbot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SSLbot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

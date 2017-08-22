@@ -40,6 +40,7 @@ class ZopoFactory implements Factory\FactoryInterface
         'zp900'   => 'zopo zp900',
         'zp810'   => 'zopo zp810',
         'zp800h'  => 'zopo zp810',
+        'zp700'   => 'zopo zp700',
         'zp500+'  => 'zopo zp500+',
         'zp500'   => 'zopo zp500',
         'zp300'   => 'zopo zp300',

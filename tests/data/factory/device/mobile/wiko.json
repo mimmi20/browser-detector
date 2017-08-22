@@ -14,8 +14,8 @@
   },
   {
     "ua": "Mozilla/5.0 (Linux; Android 6.0; JERRY Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36",
-    "codeName": "JERRY",
-    "marketingName": "JERRY",
+    "codeName": "Jerry",
+    "marketingName": "Jerry",
     "manufacturer": "Wiko",
     "brand": "Wiko",
     "type": "Smartphone",
@@ -27,8 +27,8 @@
   },
   {
     "ua": "Mozilla/5.0 (Linux; Android 4.4.2; BLOOM Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36",
-    "codeName": "BLOOM",
-    "marketingName": "BLOOM",
+    "codeName": "Bloom",
+    "marketingName": "Bloom",
     "manufacturer": "Wiko",
     "brand": "Wiko",
     "type": "Smartphone",
@@ -40,8 +40,8 @@
   },
   {
     "ua": "Dalvik/1.6.0 (Linux; U; Android 4.2.1; DARKSIDE Build/JOP40D)",
-    "codeName": "DARKSIDE",
-    "marketingName": "DARKSIDE",
+    "codeName": "Darkside",
+    "marketingName": "Darkside",
     "manufacturer": "Wiko",
     "brand": "Wiko",
     "type": "Smartphone",
@@ -79,8 +79,8 @@
   },
   {
     "ua": "Mozilla/5.0 (Linux; Android 4.4.2; LENNY Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
-    "codeName": "LENNY",
-    "marketingName": "LENNY",
+    "codeName": "Lenny",
+    "marketingName": "Lenny",
     "manufacturer": "Wiko",
     "brand": "Wiko",
     "type": "Smartphone",
@@ -144,8 +144,8 @@
   },
   {
     "ua": "Dalvik/1.6.0 (Linux; U; Android 4.3; WAX Build/JLS36C)",
-    "codeName": "WAX",
-    "marketingName": "WAX",
+    "codeName": "Wax",
+    "marketingName": "Wax",
     "manufacturer": "Wiko",
     "brand": "Wiko",
     "type": "Smartphone",
@@ -183,8 +183,8 @@
   },
   {
     "ua": "Mozilla/5.0 (Linux; Android 4.2.2; BARRY Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36",
-    "codeName": "BARRY",
-    "marketingName": "BARRY",
+    "codeName": "Barry",
+    "marketingName": "Barry",
     "manufacturer": "Wiko",
     "brand": "Wiko",
     "type": "Smartphone",
@@ -196,8 +196,8 @@
   },
   {
     "ua": "Dalvik/1.6.0 (Linux; U; Android 4.4.2; HIGHWAY SIGNS Build/KOT49H)",
-    "codeName": "HIGHWAY SIGNS",
-    "marketingName": "HIGHWAY SIGNS",
+    "codeName": "Highway Signs",
+    "marketingName": "Highway Signs",
     "manufacturer": "Wiko",
     "brand": "Wiko",
     "type": "Smartphone",
@@ -209,8 +209,8 @@
   },
   {
     "ua": "Dalvik/1.6.0 (Linux; U; Android 4.2.2; HIGHWAY Build/JDQ39)",
-    "codeName": "HIGHWAY",
-    "marketingName": "HIGHWAY",
+    "codeName": "Highway",
+    "marketingName": "Highway",
     "manufacturer": "Wiko",
     "brand": "Wiko",
     "type": "Smartphone",
@@ -222,8 +222,8 @@
   },
   {
     "ua": "Mozilla/5.0 (Linux; Android 4.2.2; OZZY Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36",
-    "codeName": "OZZY",
-    "marketingName": "OZZY",
+    "codeName": "Ozzy",
+    "marketingName": "Ozzy",
     "manufacturer": "Wiko",
     "brand": "Wiko",
     "type": "Smartphone",
@@ -517,6 +517,32 @@
     "pointingMethod": "touchscreen",
     "width": 720,
     "height": 1280,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.1.1; CINK SLIM Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36",
+    "codeName": "Cink Slim",
+    "marketingName": "Cink Slim",
+    "manufacturer": "Wiko",
+    "brand": "Wiko",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 480,
+    "height": 800,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; HIGHWAY 4G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36",
+    "codeName": "Highway 4G",
+    "marketingName": "Highway 4G",
+    "manufacturer": "Wiko",
+    "brand": "Wiko",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
     "colors": null
   }
 ]

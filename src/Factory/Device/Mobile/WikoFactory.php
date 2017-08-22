@@ -43,6 +43,7 @@ class WikoFactory implements Factory\FactoryInterface
         'l5510'         => 'wiko ridge fab',
         'ridge 4g'      => 'wiko ridge 4g',
         'ozzy'          => 'wiko ozzy',
+        'highway 4g'    => 'wiko highway 4g',
         'highway star'  => 'wiko highway star',
         'highway signs' => 'wiko highway signs',
         'highway'       => 'wiko highway',
