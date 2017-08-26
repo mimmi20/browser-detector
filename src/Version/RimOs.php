@@ -24,9 +24,9 @@ class RimOs implements VersionCacheFactoryInterface
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\VersionInterface
      */
-    public function detectVersion($useragent)
+    public function detectVersion(string $useragent): VersionInterface
     {
         if (false !== mb_stripos($useragent, 'bb10') && false === mb_stripos($useragent, 'version')) {
             return VersionFactory::set('10.0.0');

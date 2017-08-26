@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper;
+use Stringy\Stringy;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -24,9 +25,9 @@ class IosTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsiOS($agent)
+    public function testIsiOS(string $agent)
     {
-        $object = new Helper\Ios($agent);
+        $object = new Helper\Ios(new Stringy($agent));
 
         self::assertTrue($object->isIos());
     }
@@ -56,9 +57,9 @@ class IosTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotiOS($agent)
+    public function testIsNotiOS(string $agent)
     {
-        $object = new Helper\Ios($agent);
+        $object = new Helper\Ios(new Stringy($agent));
 
         self::assertFalse($object->isIos());
     }

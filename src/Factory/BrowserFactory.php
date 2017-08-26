@@ -47,10 +47,8 @@ class BrowserFactory implements FactoryInterface
      *
      * @return array
      */
-    public function detect(
-        $useragent,
-        OsInterface $platform = null
-    ) {
+    public function detect(string $useragent, Stringy $s = null, OsInterface $platform = null): array
+    {
         $s = new Stringy($useragent);
 
         $firstCheck = [

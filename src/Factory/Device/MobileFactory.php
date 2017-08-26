@@ -44,7 +44,7 @@ class MobileFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null): array
     {
         $factoriesBeforeSamsung = [
             'hiphone'     => '\BrowserDetector\Factory\Device\Mobile\HiPhoneFactory',

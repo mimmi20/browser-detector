@@ -13,11 +13,13 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
 use Psr\Log\NullLogger;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use UaResult\Result\Result;
 use UaResult\Result\ResultFactory;
-use Wurfl\Request\Constants;
-use Wurfl\Request\GenericRequest;
+use BrowserDetector\Helper\Constants;
+use BrowserDetector\Helper\GenericRequest;
+use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -86,22 +88,6 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
      */
-    public function testGetBrowserFromRequest($userAgent, Result $expectedResult)
-    {
-        /** @var \UaResult\Result\Result $result */
-        $result = $this->object->getBrowser(new GenericRequest([Constants::HEADER_HTTP_USERAGENT => $userAgent]));
-
-        self::assertInstanceOf('\UaResult\Result\Result', $result);
-
-        self::assertEquals($expectedResult, $result);
-    }
-
-    /**
-     * @dataProvider providerGetBrowser
-     *
-     * @param string                  $userAgent
-     * @param \UaResult\Result\Result $expectedResult
-     */
     public function testGetBrowserFromPsr7Message($userAgent, Result $expectedResult)
     {
         $message = $this->createMock('\Psr\Http\Message\MessageInterface');
@@ -121,7 +107,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     public function testGetBrowserFromInvalid()
     {
         $this->expectException('\UnexpectedValueException');
-        $this->expectExceptionMessage('the request parameter has to be a string, an array, an instance of \Psr\Http\Message\MessageInterface or an instance of \Wurfl\Request\GenericRequest');
+        $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface');
 
         $this->object->getBrowser(new \stdClass());
     }
@@ -129,7 +115,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     /**
      * @return array[]
      */
-    public function providerGetBrowser()
+    public function providerGetBrowser(): array
     {
         $data  = [];
         $tests = json_decode(file_get_contents('tests/data/detector.json'));
@@ -152,7 +138,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     /**
      * @return \Psr\Cache\CacheItemPoolInterface
      */
-    private static function getCache()
+    private static function getCache(): CacheItemPoolInterface
     {
         if (null !== static::$cache) {
             return static::$cache;
@@ -166,7 +152,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     /**
      * @return \Monolog\Logger
      */
-    private static function getLogger()
+    private static function getLogger(): LoggerInterface
     {
         if (null !== static::$logger) {
             return static::$logger;

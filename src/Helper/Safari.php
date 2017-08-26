@@ -23,7 +23,7 @@ class Safari
      *
      * @return string
      */
-    public function mapSafariVersions($detectedVersion)
+    public function mapSafariVersions(string $detectedVersion): string
     {
         if ($detectedVersion >= 12600) {
             $detectedVersion = '10.0';

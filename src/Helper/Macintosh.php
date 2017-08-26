@@ -19,32 +19,31 @@ use Stringy\Stringy;
 class Macintosh
 {
     /**
-     * @var string the user agent to handle
+     * @var \Stringy\Stringy the user agent to handle
      */
-    private $useragent = '';
+    private $useragent = null;
 
     /**
      * Class Constructor
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\Macintosh
+     * @param \Stringy\Stringy $useragent
      */
-    public function __construct($useragent)
+    public function __construct(Stringy $useragent)
     {
         $this->useragent = $useragent;
     }
 
-    public function isMacintosh()
+    /**
+     * @return bool
+     */
+    public function isMacintosh(): bool
     {
-        $s = new Stringy($this->useragent);
-
         $noMac = [
             'freebsd',
             'raspbian',
         ];
 
-        if ($s->containsAny($noMac, false)) {
+        if ($this->useragent->containsAny($noMac, false)) {
             return false;
         }
 
@@ -68,7 +67,7 @@ class Macintosh
             'power%20macintosh',
         ];
 
-        if (!$s->containsAny($mac, false)) {
+        if (!$this->useragent->containsAny($mac, false)) {
             return false;
         }
 

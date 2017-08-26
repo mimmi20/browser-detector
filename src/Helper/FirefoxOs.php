@@ -19,18 +19,16 @@ use Stringy\Stringy;
 class FirefoxOs
 {
     /**
-     * @var string the user agent to handle
+     * @var \Stringy\Stringy the user agent to handle
      */
-    private $useragent = '';
+    private $useragent = null;
 
     /**
      * Class Constructor
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\FirefoxOs
+     * @param \Stringy\Stringy $useragent
      */
-    public function __construct($useragent)
+    public function __construct(Stringy $useragent)
     {
         $this->useragent = $useragent;
     }
@@ -38,20 +36,18 @@ class FirefoxOs
     /**
      * @return bool
      */
-    public function isFirefoxOs()
+    public function isFirefoxOs(): bool
     {
-        $s = new Stringy($this->useragent);
-
-        if (!$s->startsWith('mozilla/', false)
-            || !$s->containsAll(['rv:', 'gecko', 'firefox'], false)
-            || $s->contains('android', false)
+        if (!$this->useragent->startsWith('mozilla/', false)
+            || !$this->useragent->containsAll(['rv:', 'gecko', 'firefox'], false)
+            || $this->useragent->contains('android', false)
         ) {
             return false;
         }
 
         $doMatch = preg_match(
             '/^Mozilla\/5\.0 \(.*(Mobile|Tablet);.*rv:(\d+\.\d+).*\) Gecko\/(\d+).* Firefox\/(\d+\.\d+).*/',
-            $this->useragent
+            (string) $this->useragent
         );
 
         if (!$doMatch) {

@@ -22,7 +22,7 @@ $detector = new \BrowserDetector\Detector($cache, $logger);
 $result = $detector->getBrowser($request);
 ```
 
-The request parameter may be a string, an array or a \Wurfl\Request\GenericRequest instance. PSR-7 compatible messages are not supported yet.
+The request parameter may be a string, an array or a PSR-7 compatible message.
 
 ## Usage Examples
 

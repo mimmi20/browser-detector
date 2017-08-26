@@ -45,9 +45,9 @@ class DesktopFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null): array
     {
-        if ((new Helper\Windows($useragent))->isWindows()) {
+        if ((new Helper\Windows($s))->isWindows()) {
             return (new Desktop\WindowsFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -59,11 +59,11 @@ class DesktopFactory implements Factory\FactoryInterface
             return $this->loader->load('raspberry pi', $useragent);
         }
 
-        if ((new Helper\Linux($useragent))->isLinux()) {
+        if ((new Helper\Linux($s))->isLinux()) {
             return $this->loader->load('linux desktop', $useragent);
         }
 
-        if ((new Helper\Macintosh($useragent))->isMacintosh()) {
+        if ((new Helper\Macintosh($s))->isMacintosh()) {
             return (new Desktop\AppleFactory($this->loader))->detect($useragent, $s);
         }
 

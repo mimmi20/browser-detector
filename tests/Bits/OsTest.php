@@ -24,17 +24,16 @@ class OsTest extends \PHPUnit\Framework\TestCase
      * @param string $useragent
      * @param int    $expected
      */
-    public function testGetBits($useragent, $expected)
+    public function testGetBits(string $useragent, int $expected)
     {
         $object = new Os($useragent);
-        self::assertSame($expected, $object->getBits());
         self::assertSame($expected, $object->getBits());
     }
 
     /**
      * @return array[]
      */
-    public function providerGetBits()
+    public function providerGetBits(): array
     {
         return [
             [
@@ -58,13 +57,5 @@ class OsTest extends \PHPUnit\Framework\TestCase
                 'expected' => 32,
             ],
         ];
-    }
-
-    public function testGetBitsFails()
-    {
-        $this->expectException('\UnexpectedValueException');
-        $this->expectExceptionMessage('The useragent parameter is required in this function');
-
-        new Os(123);
     }
 }

@@ -16,6 +16,7 @@ use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Stringy\Stringy;
 use UaResult\Os\OsInterface;
+use UaResult\Engine\EngineInterface;
 
 /**
  * Browser detection class
@@ -50,7 +51,7 @@ class EngineFactory implements FactoryInterface
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function detect($useragent, BrowserLoader $browserLoader = null, OsInterface $platform = null)
+    public function detect(string $useragent, Stringy $s = null, BrowserLoader $browserLoader = null, OsInterface $platform = null): EngineInterface
     {
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
             return $this->loader->load('webkit', $useragent);

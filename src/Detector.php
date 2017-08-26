@@ -19,10 +19,12 @@ use BrowserDetector\Loader\PlatformLoader;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
+use Stringy\Stringy;
 use UaResult\Result\Result;
+use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
-use Wurfl\Request\GenericRequest;
-use Wurfl\Request\GenericRequestFactory;
+use BrowserDetector\Helper\GenericRequest;
+use BrowserDetector\Helper\GenericRequestFactory;
 
 /**
  * Browser Detection class
@@ -64,15 +66,13 @@ class Detector
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string|array|\Wurfl\Request\GenericRequest|\Psr\Http\Message\MessageInterface $request
+     * @param \Psr\Http\Message\MessageInterface|array|string $headers
      *
-     * @return \UaResult\Result\Result
+     * @return \UaResult\Result\ResultInterface
      */
-    public function getBrowser($request)
+    public function getBrowser($headers): ResultInterface
     {
-        if (!($request instanceof GenericRequest)) {
-            $request = $this->buildRequest($request);
-        }
+        $request = $this->buildRequest($headers);
 
         $deviceFactory = new Factory\DeviceFactory(new DeviceLoader($this->cache));
         $normalizer    = (new NormalizerFactory())->build();
@@ -81,7 +81,7 @@ class Detector
         /* @var \UaResult\Device\DeviceInterface $device */
         /* @var \UaResult\Os\OsInterface $platform */
         try {
-            list($device, $platform) = $deviceFactory->detect($deviceUa);
+            list($device, $platform) = $deviceFactory->detect($deviceUa, new Stringy($deviceUa));
         } catch (NotFoundException $e) {
             $this->logger->debug($e);
 
@@ -90,6 +90,7 @@ class Detector
         }
 
         $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
+        $s         = new Stringy($browserUa);
 
         if (null === $platform || in_array($platform->getName(), [null, 'unknown'])) {
             $this->logger->debug('platform not detected from the device');
@@ -97,7 +98,7 @@ class Detector
             $platformFactory = new PlatformFactory(new PlatformLoader($this->cache));
 
             try {
-                $platform = $platformFactory->detect($browserUa);
+                $platform = $platformFactory->detect($browserUa, $s);
             } catch (NotFoundException $e) {
                 $this->logger->debug($e);
                 $platform = null;
@@ -108,16 +109,16 @@ class Detector
 
         /** @var \UaResult\Browser\BrowserInterface $browser */
         /** @var \UaResult\Engine\EngineInterface $engine */
-        list($browser, $engine) = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $platform);
+        list($browser, $engine) = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
         $engineLoader           = new Loader\EngineLoader($this->cache);
 
         if (null === $engine || in_array($engine->getName(), [null, 'unknown'])) {
             $this->logger->debug('engine not detected from browser');
-            $engine = (new Factory\EngineFactory($engineLoader))->detect($browserUa, $browserLoader, $platform);
+            $engine = (new Factory\EngineFactory($engineLoader))->detect($browserUa, $s, $browserLoader, $platform);
         }
 
         return new Result(
-            $request,
+            $request->getHeaders(),
             $device,
             $platform,
             $browser,
@@ -126,20 +127,20 @@ class Detector
     }
 
     /**
-     * @param string|array|\Psr\Http\Message\MessageInterface $request
+     * @param \Psr\Http\Message\MessageInterface|array|string $request
      *
      * @throws \UnexpectedValueException
      *
-     * @return \Wurfl\Request\GenericRequest
+     * @return \BrowserDetector\Helper\GenericRequest
      */
-    private function buildRequest($request)
+    private function buildRequest($request): GenericRequest
     {
         $requestFactory = new GenericRequestFactory();
 
-        if (is_string($request)) {
-            $this->logger->debug('request object created from string');
+        if ($request instanceof MessageInterface) {
+            $this->logger->debug('request object created from PSR-7 http message');
 
-            return $requestFactory->createRequestFromString($request);
+            return $requestFactory->createRequestFromPsr7Message($request);
         }
 
         if (is_array($request)) {
@@ -148,15 +149,14 @@ class Detector
             return $requestFactory->createRequestFromArray($request);
         }
 
-        if ($request instanceof MessageInterface) {
-            $this->logger->debug('request object created from PSR-7 http message');
+        if (is_string($request)) {
+            $this->logger->debug('request object created from string');
 
-            return $requestFactory->createRequestFromPsr7Message($request);
+            return $requestFactory->createRequestFromString($request);
         }
 
         throw new UnexpectedValueException(
-            'the request parameter has to be a string, an array, an instance of \Psr\Http\Message\MessageInterface '
-            . 'or an instance of \Wurfl\Request\GenericRequest'
+            'the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface'
         );
     }
 }

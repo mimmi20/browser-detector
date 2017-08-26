@@ -38,14 +38,8 @@ class Os
      *
      * @param string $useragent
      */
-    public function __construct($useragent)
+    public function __construct(string $useragent)
     {
-        if (!is_string($useragent) || null === $useragent) {
-            throw new \UnexpectedValueException(
-                'The useragent parameter is required in this function'
-            );
-        }
-
         $this->useragent = $useragent;
     }
 
@@ -54,7 +48,7 @@ class Os
      *
      * @return int
      */
-    public function getBits()
+    public function getBits(): int
     {
         if (null !== $this->bits) {
             return $this->bits;
@@ -70,7 +64,7 @@ class Os
      *
      * @return int
      */
-    private function detectBits()
+    private function detectBits(): int
     {
         $s = new Stringy($this->useragent);
 

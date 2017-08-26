@@ -26,9 +26,9 @@ class Safari implements VersionCacheFactoryInterface
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\VersionInterface
      */
-    public function detectVersion($useragent)
+    public function detectVersion(string $useragent): VersionInterface
     {
         $safariHelper = new SafariHelper();
 
@@ -44,6 +44,6 @@ class Safari implements VersionCacheFactoryInterface
             return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
-        return new Version(0);
+        return new Version('0');
     }
 }

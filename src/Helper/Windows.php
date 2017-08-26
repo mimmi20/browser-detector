@@ -19,18 +19,16 @@ use Stringy\Stringy;
 class Windows
 {
     /**
-     * @var string the user agent to handle
+     * @var \Stringy\Stringy the user agent to handle
      */
-    private $useragent = '';
+    private $useragent = null;
 
     /**
      * Class Constructor
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\Windows
+     * @param \Stringy\Stringy $useragent
      */
-    public function __construct($useragent)
+    public function __construct(Stringy $useragent)
     {
         $this->useragent = $useragent;
     }
@@ -38,17 +36,15 @@ class Windows
     /**
      * @return bool
      */
-    public function isWindows()
+    public function isWindows(): bool
     {
-        $s = new Stringy($this->useragent);
-
-        if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
+        if ($this->useragent->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return false;
         }
 
         // ignore mobile safari token if windows nt token is available
-        if ($s->contains('windows nt', false)
-            && $s->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
+        if ($this->useragent->contains('windows nt', false)
+            && $this->useragent->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
         ) {
             return true;
         }
@@ -70,19 +66,19 @@ class Windows
             '>',
         ];
 
-        if ($s->containsAny($isNotReallyAWindows, false)) {
+        if ($this->useragent->containsAny($isNotReallyAWindows, false)) {
             return false;
         }
 
-        if (preg_match('/firefox/i', $this->useragent) && preg_match('/anonym/i', $this->useragent)) {
+        if (preg_match('/firefox/i', (string) $this->useragent) && preg_match('/anonym/i', (string) $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/trident/i', $this->useragent) && preg_match('/anonym/i', $this->useragent)) {
+        if (preg_match('/trident/i', (string) $this->useragent) && preg_match('/anonym/i', (string) $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/(DavClnt|revolt|Microsoft Outlook|WMPlayer|Lavf|NSPlayer)/', $this->useragent)) {
+        if (preg_match('/(DavClnt|revolt|Microsoft Outlook|WMPlayer|Lavf|NSPlayer)/', (string) $this->useragent)) {
             return true;
         }
 
@@ -112,7 +108,7 @@ class Windows
             'the bat!',
         ];
 
-        if (!$s->containsAny($windows, false)) {
+        if (!$this->useragent->containsAny($windows, false)) {
             return false;
         }
 
@@ -122,10 +118,8 @@ class Windows
     /**
      * @return bool
      */
-    public function isMobileWindows()
+    public function isMobileWindows(): bool
     {
-        $s = new Stringy($this->useragent);
-
         $mobileWindows = [
             'windows ce',
             'windows phone',
@@ -141,7 +135,7 @@ class Windows
             ' wds ',
         ];
 
-        if (!$s->containsAny($mobileWindows, false)) {
+        if (!$this->useragent->containsAny($mobileWindows, false)) {
             return false;
         }
 

@@ -24,14 +24,14 @@ class Friendica implements VersionCacheFactoryInterface
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\VersionInterface
      */
-    public function detectVersion($useragent)
+    public function detectVersion(string $useragent): VersionInterface
     {
         $doMatch = preg_match('/Friendica \'[^\']*\' (\d+[\d\.\_\-\+abcdehlprstv]*).*/', $useragent, $matches);
 
         if (!$doMatch) {
-            return new Version(0);
+            return new Version('0');
         }
 
         return VersionFactory::set($matches[1]);

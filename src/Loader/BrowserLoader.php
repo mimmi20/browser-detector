@@ -47,7 +47,7 @@ class BrowserLoader implements LoaderInterface
     /**
      * initializes cache
      */
-    private function init()
+    private function init(): void
     {
         $cacheInitializedId = hash('sha512', 'browser-cache is initialized');
         $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
@@ -62,7 +62,7 @@ class BrowserLoader implements LoaderInterface
      *
      * @return bool
      */
-    public function has($browserKey)
+    public function has(string $browserKey): bool
     {
         $this->init();
 
@@ -79,7 +79,7 @@ class BrowserLoader implements LoaderInterface
      *
      * @return array
      */
-    public function load($browserKey, $useragent = '')
+    public function load(string $browserKey, string $useragent = ''): array
     {
         $this->init();
 
@@ -93,7 +93,7 @@ class BrowserLoader implements LoaderInterface
         $browserVersionClass = $browser->version->class;
 
         if (!is_string($browserVersionClass)) {
-            $version = new Version(0);
+            $version = new Version('0');
         } elseif ('VersionFactory' === $browserVersionClass) {
             $version = VersionFactory::detectVersion($useragent, $browser->version->search);
         } else {
@@ -121,7 +121,7 @@ class BrowserLoader implements LoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      */
-    private function initCache(CacheItemInterface $cacheInitialized)
+    private function initCache(CacheItemInterface $cacheInitialized): void
     {
         static $browsers = null;
 

@@ -24,9 +24,9 @@ class ScreamingFrog implements VersionCacheFactoryInterface
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\VersionInterface
      */
-    public function detectVersion($useragent)
+    public function detectVersion(string $useragent): VersionInterface
     {
         $doMatch = preg_match(
             '/Screaming Frog SEO Spider\/\d+,\d/',

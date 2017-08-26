@@ -89,7 +89,7 @@ class FlyFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null): array
     {
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {

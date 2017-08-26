@@ -24,9 +24,9 @@ class Trident implements VersionCacheFactoryInterface
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\VersionInterface
      */
-    public function detectVersion($useragent)
+    public function detectVersion(string $useragent): VersionInterface
     {
         $doMatch = preg_match('/Trident\/([\d\.]+)/', $useragent, $matches);
 
@@ -34,6 +34,6 @@ class Trident implements VersionCacheFactoryInterface
             return VersionFactory::set($matches[1]);
         }
 
-        return new Version(0);
+        return new Version('0');
     }
 }

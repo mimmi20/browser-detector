@@ -27,17 +27,15 @@
     "source": "https://github.com/mimmi20/BrowserDetector"
   },
   "require": {
-    "php": "^7.0",
+    "php": "^7.1",
     "psr/log": "^1.0",
     "psr/cache": "^1.0",
     "psr/http-message": "^1.0",
     "danielstjules/stringy": "^3.0",
-    "mimmi20/browser-detector-loader-interface": "~1.0.1",
-    "mimmi20/browser-detector-factory-interface": "~1.0.2",
-    "mimmi20/ua-result": "~3.1.4",
-    "mimmi20/ua-normalizer": "~2.0.0",
-    "mimmi20/browser-detector-version": "~2.0.6",
-    "mimmi20/ua-result-company": "~1.0.16",
+    "mimmi20/browser-detector-loader-interface": "~2.0.0",
+    "mimmi20/ua-result": "~4.0.0",
+    "mimmi20/browser-detector-version": "~3.0.0",
+    "mimmi20/ua-result-company": "~2.0.0",
     "symfony/yaml": "^3.3"
   },
   "require-dev": {
@@ -45,7 +43,7 @@
     "monolog/monolog": "^1.23",
     "symfony/cache": "^3.3",
     "squizlabs/php_codesniffer": "^3.0",
-    "friendsofphp/php-cs-fixer": "^2.4"
+    "friendsofphp/php-cs-fixer": "^2.5"
   },
   "autoload": {
     "psr-4": {

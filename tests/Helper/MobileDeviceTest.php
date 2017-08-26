@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper;
+use Stringy\Stringy;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -24,9 +25,9 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsMobile($agent)
+    public function testIsMobile(string $agent)
     {
-        $object = new Helper\MobileDevice($agent);
+        $object = new Helper\MobileDevice(new Stringy($agent));
 
         self::assertTrue($object->isMobile());
     }
@@ -92,9 +93,9 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotMobile($agent)
+    public function testIsNotMobile(string $agent)
     {
-        $object = new Helper\MobileDevice($agent);
+        $object = new Helper\MobileDevice(new Stringy($agent));
 
         self::assertFalse($object->isMobile());
     }
