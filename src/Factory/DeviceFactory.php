@@ -44,7 +44,7 @@ class DeviceFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string $useragent
+     * @param string           $useragent
      * @param \Stringy\Stringy $s
      *
      * @return array

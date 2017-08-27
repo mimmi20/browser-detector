@@ -13,6 +13,8 @@ namespace BrowserDetector;
 
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
+use BrowserDetector\Helper\GenericRequest;
+use BrowserDetector\Helper\GenericRequestFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
@@ -23,8 +25,6 @@ use Stringy\Stringy;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
-use BrowserDetector\Helper\GenericRequest;
-use BrowserDetector\Helper\GenericRequestFactory;
 
 /**
  * Browser Detection class

@@ -32,7 +32,7 @@ class Ios
     {
         $this->useragent = $useragent;
     }
-    
+
     /**
      * @return bool
      */

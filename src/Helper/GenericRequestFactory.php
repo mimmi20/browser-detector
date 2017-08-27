@@ -21,7 +21,7 @@ class GenericRequestFactory
     /**
      * Creates Generic Request from the given HTTP Request (normally $_SERVER)
      *
-     * @param array $headers                     HTTP Request
+     * @param array $headers HTTP Request
      *
      * @return \BrowserDetector\Helper\GenericRequest
      */

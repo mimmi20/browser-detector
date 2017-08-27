@@ -12,14 +12,13 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
-use Psr\Log\NullLogger;
+use BrowserDetector\Helper\Constants;
+use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use UaResult\Result\Result;
 use UaResult\Result\ResultFactory;
-use BrowserDetector\Helper\Constants;
-use BrowserDetector\Helper\GenericRequest;
-use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -118,7 +117,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     public function providerGetBrowser(): array
     {
         $data  = [];
-        $tests = json_decode(file_get_contents('tests/data/detector.json'));
+        $tests = json_decode(file_get_contents('tests/data/detector.json'), true);
 
         foreach ($tests as $key => $test) {
             if (isset($data[$key])) {
@@ -127,8 +126,8 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
             }
 
             $data[$key] = [
-                'ua'     => $test->ua,
-                'result' => (new ResultFactory())->fromArray(static::getCache(), static::getLogger(), (array) $test->result),
+                'ua'     => $test['ua'],
+                'result' => (new ResultFactory())->fromArray(static::getCache(), static::getLogger(), $test['result']),
             ];
         }
 
