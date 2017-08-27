@@ -321,6 +321,7 @@ class BrowserFactory implements FactoryInterface
             'appcent'                             => 'appcent',
             'commerce browser center'             => 'commerce browser center',
             'iccrawler'                           => 'iccrawler',
+            'centil-schweiz webbot'               => 'centil-schweiz webbot',
         ];
 
         foreach ($checkBeforeCentBrowser as $search => $key) {
