@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\Desktop;
+use Stringy\Stringy;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -24,9 +25,9 @@ class DesktopTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsDesktop($agent)
+    public function testIsDesktop(string $agent)
     {
-        $object = new Desktop($agent);
+        $object = new Desktop(new Stringy($agent));
 
         self::assertTrue($object->isDesktopDevice());
     }
@@ -86,9 +87,9 @@ class DesktopTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNoDesktop($agent)
+    public function testIsNoDesktop(string $agent)
     {
-        $object = new Desktop($agent);
+        $object = new Desktop(new Stringy($agent));
 
         self::assertFalse($object->isDesktopDevice());
     }

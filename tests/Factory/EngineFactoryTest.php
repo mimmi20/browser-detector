@@ -18,6 +18,7 @@ use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
+use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
@@ -61,14 +62,16 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
         $browserLoader   = new BrowserLoader($this->cache);
         $platformFactory = new PlatformFactory(new PlatformLoader($this->cache));
 
+        $s = new Stringy($normalizedUa);
+
         try {
-            $platform = $platformFactory->detect($normalizedUa);
+            $platform = $platformFactory->detect($normalizedUa, $s);
         } catch (NotFoundException $e) {
             $platform = null;
         }
 
         /** @var \UaResult\Engine\EngineInterface $result */
-        $result = $this->object->detect($normalizedUa, $browserLoader, $platform);
+        $result = $this->object->detect($normalizedUa, $s, $browserLoader, $platform);
 
         self::assertInstanceOf('\UaResult\Engine\EngineInterface', $result);
         self::assertSame(

@@ -44,7 +44,7 @@ class WindowsMobileFactory implements Factory\FactoryInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null)
     {
         if ($s->containsAny(['windows ce', 'windows mobile; wce'], false)) {
             return $this->loader->load('windows ce', $useragent);

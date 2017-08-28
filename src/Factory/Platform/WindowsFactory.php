@@ -44,7 +44,7 @@ class WindowsFactory implements Factory\FactoryInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null)
     {
         if ($s->containsAny(['windows nt 10', 'windows 10'], false)) {
             return $this->loader->load('windows nt 10.0', $useragent);

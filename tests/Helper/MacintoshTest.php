@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper;
+use Stringy\Stringy;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -24,9 +25,9 @@ class MacintoshTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsMacintosh($agent)
+    public function testIsMacintosh(string $agent)
     {
-        $object = new Helper\Macintosh($agent);
+        $object = new Helper\Macintosh(new Stringy($agent));
 
         self::assertTrue($object->isMacintosh());
     }
@@ -48,9 +49,9 @@ class MacintoshTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotMacintosh($agent)
+    public function testIsNotMacintosh(string $agent)
     {
-        $object = new Helper\Macintosh($agent);
+        $object = new Helper\Macintosh(new Stringy($agent));
 
         self::assertFalse($object->isMacintosh());
     }

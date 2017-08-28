@@ -44,29 +44,28 @@ class DeviceFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string $useragent
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
      *
      * @return array
      */
-    public function detect($useragent)
+    public function detect(string $useragent, Stringy $s = null): array
     {
-        $s = new Stringy($useragent);
-
         if (!$s->containsAny(['freebsd', 'raspbian'], false)
             && $s->containsAny(['darwin', 'cfnetwork'], false)
         ) {
             return (new Device\DarwinFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ((new MobileDevice($useragent))->isMobile()) {
+        if ((new MobileDevice($s))->isMobile()) {
             return (new Device\MobileFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ((new TvHelper($useragent))->isTvDevice()) {
+        if ((new TvHelper($s))->isTvDevice()) {
             return (new Device\TvFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ((new Desktop($useragent))->isDesktopDevice()) {
+        if ((new Desktop($s))->isDesktopDevice()) {
             return (new Device\DesktopFactory($this->loader))->detect($useragent, $s);
         }
 

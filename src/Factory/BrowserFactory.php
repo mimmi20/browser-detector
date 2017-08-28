@@ -47,10 +47,8 @@ class BrowserFactory implements FactoryInterface
      *
      * @return array
      */
-    public function detect(
-        $useragent,
-        OsInterface $platform = null
-    ) {
+    public function detect(string $useragent, Stringy $s = null, OsInterface $platform = null): array
+    {
         $s = new Stringy($useragent);
 
         $firstCheck = [
@@ -323,6 +321,7 @@ class BrowserFactory implements FactoryInterface
             'appcent'                             => 'appcent',
             'commerce browser center'             => 'commerce browser center',
             'iccrawler'                           => 'iccrawler',
+            'centil-schweiz webbot'               => 'centil-schweiz webbot',
         ];
 
         foreach ($checkBeforeCentBrowser as $search => $key) {
@@ -766,6 +765,7 @@ class BrowserFactory implements FactoryInterface
             'everyonesocialbot'                   => 'everyonesocialbot',
             'aolbot'                              => 'aolbot',
             'glbot'                               => 'glbot',
+            'sslbot'                              => 'sslbot',
             'lbot'                                => 'lbot',
             'blexbot'                             => 'blexbot',
             'synapse'                             => 'apache synapse',
@@ -923,6 +923,7 @@ class BrowserFactory implements FactoryInterface
             'commoncrawler node'           => 'commoncrawler node',
             'adcrawler'                    => 'adcrawler',
             'contacts crawler'             => 'contacts crawler',
+            'vorboss web crawler'          => 'vorboss web crawler',
             'crawler'                      => 'crawler',
             'jig browser web'              => 'jig browser web',
             't-h-u-n-d-e-r-s-t-o-n-e'      => 'texis webscript',
@@ -1311,6 +1312,7 @@ class BrowserFactory implements FactoryInterface
             'gloomarbot'                      => 'gloomarbot',
             'booglebot'                       => 'booglebot',
             'orbiter'                         => 'orbiter',
+            'generic site loader'             => 'generic site loader',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

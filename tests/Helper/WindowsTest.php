@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper;
+use Stringy\Stringy;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -24,9 +25,9 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsWindows($agent)
+    public function testIsWindows(string $agent)
     {
-        self::assertTrue((new Helper\Windows($agent))->isWindows());
+        self::assertTrue((new Helper\Windows(new Stringy($agent)))->isWindows());
     }
 
     public function providerIsWindows()
@@ -57,9 +58,9 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotWindows($agent)
+    public function testIsNotWindows(string $agent)
     {
-        self::assertFalse((new Helper\Windows($agent))->isWindows());
+        self::assertFalse((new Helper\Windows(new Stringy($agent)))->isWindows());
     }
 
     public function providerIsNotWindows()
@@ -98,9 +99,9 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsMobileWindows($agent)
+    public function testIsMobileWindows(string $agent)
     {
-        self::assertTrue((new Helper\Windows($agent))->isMobileWindows());
+        self::assertTrue((new Helper\Windows(new Stringy($agent)))->isMobileWindows());
     }
 
     public function providerIsMobileWindows()
@@ -116,9 +117,9 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotMobileWindows($agent)
+    public function testIsNotMobileWindows(string $agent)
     {
-        self::assertFalse((new Helper\Windows($agent))->isMobileWindows());
+        self::assertFalse((new Helper\Windows(new Stringy($agent)))->isMobileWindows());
     }
 
     public function providerIsNotMobileWindows()

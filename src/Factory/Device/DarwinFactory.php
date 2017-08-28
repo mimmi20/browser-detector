@@ -47,7 +47,7 @@ class DarwinFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null): array
     {
         $appleMobileFactory  = new Mobile\AppleFactory($this->loader);
         $appleDesktopFactory = new Desktop\AppleFactory($this->loader);

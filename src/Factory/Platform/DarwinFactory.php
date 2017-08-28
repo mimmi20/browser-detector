@@ -47,7 +47,7 @@ class DarwinFactory implements Factory\FactoryInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null)
     {
         if ($s->contains('cfnetwork/808.2', false)) {
             return $this->loader->load('ios', $useragent, '10.2');

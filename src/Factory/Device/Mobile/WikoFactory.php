@@ -43,6 +43,7 @@ class WikoFactory implements Factory\FactoryInterface
         'l5510'         => 'wiko ridge fab',
         'ridge 4g'      => 'wiko ridge 4g',
         'ozzy'          => 'wiko ozzy',
+        'highway 4g'    => 'wiko highway 4g',
         'highway star'  => 'wiko highway star',
         'highway signs' => 'wiko highway signs',
         'highway'       => 'wiko highway',
@@ -88,7 +89,7 @@ class WikoFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null): array
     {
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {

@@ -76,7 +76,7 @@ class TvFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null): array
     {
         if (preg_match('/KDL\d{2}/', $useragent)) {
             return (new Tv\SonyFactory($this->loader))->detect($useragent, $s);

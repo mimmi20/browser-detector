@@ -44,7 +44,7 @@ class DeviceLoader implements LoaderInterface
     /**
      * initializes cache
      */
-    private function init()
+    private function init(): void
     {
         $cacheInitializedId = hash('sha512', 'device-cache is initialized');
         $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
@@ -59,7 +59,7 @@ class DeviceLoader implements LoaderInterface
      *
      * @return bool
      */
-    public function has($deviceKey)
+    public function has(string $deviceKey): bool
     {
         $this->init();
 
@@ -76,7 +76,7 @@ class DeviceLoader implements LoaderInterface
      *
      * @return array
      */
-    public function load($deviceKey, $useragent = '')
+    public function load(string $deviceKey, string $useragent = ''): array
     {
         $this->init();
 
@@ -115,7 +115,7 @@ class DeviceLoader implements LoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      */
-    private function initCache(CacheItemInterface $cacheInitialized)
+    private function initCache(CacheItemInterface $cacheInitialized): void
     {
         $sourceDirectory = __DIR__ . '/../../data/devices/';
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);

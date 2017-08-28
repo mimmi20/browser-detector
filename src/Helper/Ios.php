@@ -19,18 +19,16 @@ use Stringy\Stringy;
 class Ios
 {
     /**
-     * @var string the user agent to handle
+     * @var \Stringy\Stringy the user agent to handle
      */
-    private $useragent = '';
+    private $useragent = null;
 
     /**
      * Class Constructor
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\Ios
+     * @param \Stringy\Stringy $useragent
      */
-    public function __construct($useragent)
+    public function __construct(Stringy $useragent)
     {
         $this->useragent = $useragent;
     }
@@ -38,23 +36,21 @@ class Ios
     /**
      * @return bool
      */
-    public function isIos()
+    public function isIos(): bool
     {
-        $s = new Stringy($this->useragent);
-
-        if ($s->containsAny(['trident', 'windows phone', 'android', 'technipad'], false)) {
+        if ($this->useragent->containsAny(['trident', 'windows phone', 'android', 'technipad'], false)) {
             return false;
         }
 
-        if ($s->containsAny(['like mac os x', 'ipad', 'iphone', 'ipod', 'cpu os', 'cpu ios', 'ios;'], false)) {
+        if ($this->useragent->containsAny(['like mac os x', 'ipad', 'iphone', 'ipod', 'cpu os', 'cpu ios', 'ios;'], false)) {
             return true;
         }
 
-        if (preg_match('/iuc ?\(/i', $this->useragent)) {
+        if (preg_match('/iuc ?\(/i', (string) $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+I(P|T)/', $this->useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+I(P|T)/', (string) $this->useragent)) {
             return true;
         }
 
@@ -70,7 +66,7 @@ class Ios
             'dataaccessd',
         ];
 
-        if (!$s->containsAny($os, false)) {
+        if (!$this->useragent->containsAny($os, false)) {
             return false;
         }
 

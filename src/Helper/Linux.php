@@ -19,26 +19,25 @@ use Stringy\Stringy;
 class Linux
 {
     /**
-     * @var string the user agent to handle
+     * @var \Stringy\Stringy the user agent to handle
      */
-    private $useragent = '';
+    private $useragent = null;
 
     /**
      * Class Constructor
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\Linux
+     * @param \Stringy\Stringy $useragent
      */
-    public function __construct($useragent)
+    public function __construct(Stringy $useragent)
     {
         $this->useragent = $useragent;
     }
 
-    public function isLinux()
+    /**
+     * @return bool
+     */
+    public function isLinux(): bool
     {
-        $s = new Stringy($this->useragent);
-
         $noLinux = [
             'android',
             'loewe; sl121',
@@ -77,11 +76,11 @@ class Linux
             'remix',
         ];
 
-        if ($s->containsAny($noLinux, false)) {
+        if ($this->useragent->containsAny($noLinux, false)) {
             return false;
         }
 
-        if ($s->startsWith('juc', false)) {
+        if ($this->useragent->startsWith('juc', false)) {
             return false;
         }
 
@@ -120,19 +119,19 @@ class Linux
             'x11',
         ];
 
-        if (!$s->containsAny($linux, false)) {
+        if (!$this->useragent->containsAny($linux, false)) {
             return false;
         }
 
-        if (preg_match('/TBD\d{4}/', $this->useragent)) {
+        if (preg_match('/TBD\d{4}/', (string) $this->useragent)) {
             return false;
         }
 
-        if (preg_match('/TBD(B|C)\d{3,4}/', $this->useragent)) {
+        if (preg_match('/TBD(B|C)\d{3,4}/', (string) $this->useragent)) {
             return false;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+(A|I|W|M)(T|P)?/', $this->useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+(A|I|W|M)(T|P)?/', (string) $this->useragent)) {
             return false;
         }
 

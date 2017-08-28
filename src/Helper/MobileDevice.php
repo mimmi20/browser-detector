@@ -19,18 +19,16 @@ use Stringy\Stringy;
 class MobileDevice
 {
     /**
-     * @var string the user agent to handle
+     * @var \Stringy\Stringy the user agent to handle
      */
-    private $useragent = '';
+    private $useragent = null;
 
     /**
      * Class Constructor
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\MobileDevice
+     * @param \Stringy\Stringy $useragent
      */
-    public function __construct($useragent)
+    public function __construct(Stringy $useragent)
     {
         $this->useragent = $useragent;
     }
@@ -40,7 +38,7 @@ class MobileDevice
      *
      * @return bool
      */
-    public function isMobile()
+    public function isMobile(): bool
     {
         $noMobiles = [
             'xbox',
@@ -71,23 +69,21 @@ class MobileDevice
             'crkey',
         ];
 
-        $s = new Stringy($this->useragent);
-
-        if ($s->containsAny($noMobiles, false)) {
+        if ($this->useragent->containsAny($noMobiles, false)) {
             return false;
         }
 
-        if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
+        if ($this->useragent->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return true;
         }
 
-        if ($s->containsAll(['windows nt', 'arm;'], false)) {
+        if ($this->useragent->containsAll(['windows nt', 'arm;'], false)) {
             return true;
         }
 
         // ignore mobile safari token if windows nt token is available
-        if ($s->contains('windows nt', false)
-            && $s->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
+        if ($this->useragent->contains('windows nt', false)
+            && $this->useragent->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
         ) {
             return false;
         }
@@ -205,27 +201,27 @@ class MobileDevice
             'siemens',
         ];
 
-        if ($s->containsAny($mobiles, false)) {
+        if ($this->useragent->containsAny($mobiles, false)) {
             return true;
         }
 
-        if ($s->contains('UCWEB', true)) {
+        if ($this->useragent->contains('UCWEB', true)) {
             return true;
         }
 
-        if ($s->contains('tablet', false)
-            && !$s->contains('tablet pc', false)
+        if ($this->useragent->contains('tablet', false)
+            && !$this->useragent->contains('tablet pc', false)
         ) {
             return true;
         }
 
-        if ($s->contains('mobile', false)
-            && !$s->contains('automobile', false)
+        if ($this->useragent->contains('mobile', false)
+            && !$this->useragent->contains('automobile', false)
         ) {
             return true;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+(A|I|W|M)(T|P)?/', $this->useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+(A|I|W|M)(T|P)?/', (string) $this->useragent)) {
             return true;
         }
 
@@ -237,11 +233,11 @@ class MobileDevice
             return true;
         }
 
-        if (preg_match('/TBD\d{4}/', $this->useragent)) {
+        if (preg_match('/TBD\d{4}/', (string) $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/TBD(B|C|G)\d{3,4}/', $this->useragent)) {
+        if (preg_match('/TBD(B|C|G)\d{3,4}/', (string) $this->useragent)) {
             return true;
         }
 

@@ -23,11 +23,10 @@ class MicrosoftOffice
      * maps the version
      *
      * @param string $version
-     *                        returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return string
      */
-    public function mapVersion($version)
+    public function mapVersion(string $version): string
     {
         if (in_array((int) $version, [2007, 2010, 2013, 2016])) {
             return (string) (int) $version;
@@ -59,7 +58,7 @@ class MicrosoftOffice
      *
      * @return string
      */
-    public function detectInternalVersion($useragent)
+    public function detectInternalVersion(string $useragent): string
     {
         $doMatch = preg_match('/MSOffice ([\d\.]+)/', $useragent, $matches);
 

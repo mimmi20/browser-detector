@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper;
+use Stringy\Stringy;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -24,9 +25,9 @@ class LinuxTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsLinux($agent)
+    public function testIsLinux(string $agent)
     {
-        self::assertTrue((new Helper\Linux($agent))->isLinux());
+        self::assertTrue((new Helper\Linux(new Stringy($agent)))->isLinux());
     }
 
     public function providerIsLinux()
@@ -63,9 +64,9 @@ class LinuxTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotLinux($agent)
+    public function testIsNotLinux(string $agent)
     {
-        self::assertFalse((new Helper\Linux($agent))->isLinux());
+        self::assertFalse((new Helper\Linux(new Stringy($agent)))->isLinux());
     }
 
     public function providerIsNotLinux()

@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper;
+use Stringy\Stringy;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -24,9 +25,9 @@ class AndroidOsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsAndroidOs($agent)
+    public function testIsAndroidOs(string $agent)
     {
-        self::assertTrue((new Helper\AndroidOs($agent))->isAndroid());
+        self::assertTrue((new Helper\AndroidOs(new Stringy($agent)))->isAndroid());
     }
 
     public function providerIsAndroidOs()
@@ -42,9 +43,9 @@ class AndroidOsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotAndroidOs($agent)
+    public function testIsNotAndroidOs(string $agent)
     {
-        self::assertFalse((new Helper\AndroidOs($agent))->isAndroid());
+        self::assertFalse((new Helper\AndroidOs(new Stringy($agent)))->isAndroid());
     }
 
     public function providerIsNotAndroidOs()

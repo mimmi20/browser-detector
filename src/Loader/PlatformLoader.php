@@ -19,6 +19,7 @@ use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use UaResult\Company\CompanyLoader;
 use UaResult\Os\Os;
+use UaResult\Os\OsInterface;
 
 /**
  * Browser detection class
@@ -47,7 +48,7 @@ class PlatformLoader implements LoaderInterface
     /**
      * initializes cache
      */
-    private function init()
+    private function init(): void
     {
         $cacheInitializedId = hash('sha512', 'platform-cache is initialized');
         $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
@@ -62,7 +63,7 @@ class PlatformLoader implements LoaderInterface
      *
      * @return bool
      */
-    public function has($platformCode)
+    public function has(string $platformCode): bool
     {
         $this->init();
 
@@ -80,7 +81,7 @@ class PlatformLoader implements LoaderInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function load($platformCode, $useragent = '', $inputVersion = null)
+    public function load(string $platformCode, string $useragent = '', string $inputVersion = null): OsInterface
     {
         $this->init();
 
@@ -97,7 +98,7 @@ class PlatformLoader implements LoaderInterface
         if (null !== $inputVersion && is_string($inputVersion)) {
             $version = VersionFactory::set($inputVersion);
         } elseif (!is_string($platformVersionClass)) {
-            $version = new Version(0);
+            $version = new Version('0');
         } elseif ('VersionFactory' === $platformVersionClass) {
             $version = VersionFactory::detectVersion($useragent, $platform->version->search);
         } else {
@@ -125,7 +126,7 @@ class PlatformLoader implements LoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      */
-    private function initCache(CacheItemInterface $cacheInitialized)
+    private function initCache(CacheItemInterface $cacheInitialized): void
     {
         static $platforms = null;
 

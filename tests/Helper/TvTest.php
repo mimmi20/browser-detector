@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper;
+use Stringy\Stringy;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -24,9 +25,9 @@ class TvTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsTv($agent)
+    public function testIsTv(string $agent)
     {
-        $object = new Helper\Tv($agent);
+        $object = new Helper\Tv(new Stringy($agent));
 
         self::assertTrue($object->isTvDevice());
     }
@@ -57,9 +58,9 @@ class TvTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotTv($agent)
+    public function testIsNotTv(string $agent)
     {
-        $object = new Helper\Tv($agent);
+        $object = new Helper\Tv(new Stringy($agent));
 
         self::assertFalse($object->isTvDevice());
     }

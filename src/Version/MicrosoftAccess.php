@@ -26,9 +26,9 @@ class MicrosoftAccess implements VersionCacheFactoryInterface
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\VersionInterface
      */
-    public function detectVersion($useragent)
+    public function detectVersion(string $useragent): VersionInterface
     {
         preg_match('/Access[\/ ]([\d\.]+)/', $useragent, $matches);
 

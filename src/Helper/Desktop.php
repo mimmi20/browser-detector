@@ -20,41 +20,40 @@ use Stringy\Stringy;
 class Desktop
 {
     /**
-     * @var string the user agent to handle
+     * @var \Stringy\Stringy the user agent to handle
      */
-    private $useragent = '';
+    private $useragent = null;
 
     /**
      * Class Constructor
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\Desktop
+     * @param \Stringy\Stringy $useragent
      */
-    public function __construct($useragent)
+    public function __construct(Stringy $useragent)
     {
         $this->useragent = $useragent;
     }
 
-    public function isDesktopDevice()
+    /**
+     * @return bool
+     */
+    public function isDesktopDevice(): bool
     {
-        $s = new Stringy($this->useragent);
-
-        if ($s->containsAll(['firefox', 'anonym'], false)) {
+        if ($this->useragent->containsAll(['firefox', 'anonym'], false)) {
             return true;
         }
 
-        if ($s->containsAll(['trident', 'anonym'], false)) {
+        if ($this->useragent->containsAll(['trident', 'anonym'], false)) {
             return true;
         }
 
-        if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
+        if ($this->useragent->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return false;
         }
 
         // ignore mobile safari token if windows nt token is available
-        if ($s->contains('windows nt', false)
-            && $s->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
+        if ($this->useragent->contains('windows nt', false)
+            && $this->useragent->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
         ) {
             return true;
         }
@@ -82,7 +81,7 @@ class Desktop
             'crkey',
         ];
 
-        if ($s->containsAny($noDesktops, false)) {
+        if ($this->useragent->containsAny($noDesktops, false)) {
             return false;
         }
 
@@ -99,7 +98,7 @@ class Desktop
             'hpux',
         ];
 
-        if ($s->containsAny($othersDesktops, false)) {
+        if ($this->useragent->containsAny($othersDesktops, false)) {
             return true;
         }
 
@@ -156,7 +155,7 @@ class Desktop
             'ms frontpage',
         ];
 
-        if (!$s->containsAny($desktopCodes, false)) {
+        if (!$this->useragent->containsAny($desktopCodes, false)) {
             return false;
         }
 

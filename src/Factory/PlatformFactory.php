@@ -14,6 +14,7 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Helper;
 use BrowserDetector\Loader\LoaderInterface;
 use Stringy\Stringy;
+use UaResult\Os\OsInterface;
 
 /**
  * Browser detection class
@@ -46,11 +47,11 @@ class PlatformFactory implements FactoryInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect($useragent)
+    public function detect(string $useragent, Stringy $s = null): OsInterface
     {
         $s = new Stringy($useragent);
 
-        $windowsHelper = new Helper\Windows($useragent);
+        $windowsHelper = new Helper\Windows($s);
 
         if ($windowsHelper->isMobileWindows()) {
             return (new Platform\WindowsMobileFactory($this->loader))->detect($useragent, $s);
@@ -112,7 +113,7 @@ class PlatformFactory implements FactoryInterface
             }
         }
 
-        if ((new Helper\AndroidOs($useragent))->isAndroid()) {
+        if ((new Helper\AndroidOs($s))->isAndroid()) {
             return $this->loader->load('android', $useragent);
         }
 
@@ -131,7 +132,7 @@ class PlatformFactory implements FactoryInterface
             return (new Platform\DarwinFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ((new Helper\Linux($useragent))->isLinux()) {
+        if ((new Helper\Linux($s))->isLinux()) {
             return (new Platform\LinuxFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -149,11 +150,11 @@ class PlatformFactory implements FactoryInterface
             }
         }
 
-        if ((new Helper\FirefoxOs($useragent))->isFirefoxOs()) {
+        if ((new Helper\FirefoxOs($s))->isFirefoxOs()) {
             return $this->loader->load('firefoxos', $useragent);
         }
 
-        if ((new Helper\Ios($useragent))->isIos()) {
+        if ((new Helper\Ios($s))->isIos()) {
             return $this->loader->load('ios', $useragent);
         }
 

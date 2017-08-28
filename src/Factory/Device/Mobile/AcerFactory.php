@@ -54,6 +54,7 @@ class AcerFactory implements Factory\FactoryInterface
         'b1-770'       => 'acer b1-770',
         'b1-730hd'     => 'acer b1-730hd',
         'b1-721'       => 'acer b1-721',
+        'b1-720'       => 'acer b1-720',
         'b1-711'       => 'acer b1-711',
         'b1-710'       => 'acer b1-710',
         'b1-a71'       => 'acer b1-a71',
@@ -111,7 +112,7 @@ class AcerFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null): array
     {
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {

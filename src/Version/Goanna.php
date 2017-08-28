@@ -24,9 +24,9 @@ class Goanna implements VersionCacheFactoryInterface
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\VersionInterface
      */
-    public function detectVersion($useragent)
+    public function detectVersion(string $useragent): VersionInterface
     {
         // lastest version: version on "Goanna" token
         $doMatch = preg_match('/Goanna\/([\d\.]+)/', $useragent, $matchesFirst);

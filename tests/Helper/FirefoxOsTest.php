@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\FirefoxOs;
+use Stringy\Stringy;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -24,9 +25,9 @@ class FirefoxOsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsFirefoxOs($agent)
+    public function testIsFirefoxOs(string $agent)
     {
-        self::assertTrue((new FirefoxOs($agent))->isFirefoxOs());
+        self::assertTrue((new FirefoxOs(new Stringy($agent)))->isFirefoxOs());
     }
 
     public function providerIsFirefoxOs()
@@ -43,9 +44,9 @@ class FirefoxOsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotFirefoxOs($agent)
+    public function testIsNotFirefoxOs(string $agent)
     {
-        self::assertFalse((new FirefoxOs($agent))->isFirefoxOs());
+        self::assertFalse((new FirefoxOs(new Stringy($agent)))->isFirefoxOs());
     }
 
     public function providerIsNotFirefoxOs()

@@ -75,7 +75,7 @@ class LinuxFactory implements FactoryInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null)
     {
         foreach ($this->platforms as $search => $key) {
             if ($s->contains($search, false)) {

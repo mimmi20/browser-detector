@@ -11,8 +11,8 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use UaNormalizer\Generic;
-use UaNormalizer\UserAgentNormalizer;
+use BrowserDetector\Helper\Normalizer;
+use BrowserDetector\Helper\Normalizer\UserAgentNormalizer;
 
 /**
  * detection class using regexes
@@ -28,26 +28,25 @@ class NormalizerFactory
     /**
      * builds a useragent normalizer chain
      *
-     * @return \UaNormalizer\UserAgentNormalizer
+     * @return \BrowserDetector\Helper\Normalizer\UserAgentNormalizer
      */
-    public function build()
+    public function build(): UserAgentNormalizer
     {
         return new UserAgentNormalizer(
             [
-                new Generic\BabelFish(),
-                new Generic\IISLogging(),
-                new Generic\LocaleRemover(),
-                new Generic\EncryptionRemover(),
-                new Generic\Mozilla(),
-                new Generic\Linux(),
-                new Generic\KhtmlGecko(),
-                new Generic\HexCode(),
-                new Generic\WindowsNt(),
-                new Generic\Tokens(),
-                new Generic\NovarraGoogleTranslator(),
-                new Generic\SerialNumbers(),
-                new Generic\TransferEncoding(),
-                //new Generic\Android(),
+                new Normalizer\BabelFish(),
+                new Normalizer\IISLogging(),
+                new Normalizer\LocaleRemover(),
+                new Normalizer\EncryptionRemover(),
+                new Normalizer\Mozilla(),
+                new Normalizer\Linux(),
+                new Normalizer\KhtmlGecko(),
+                new Normalizer\HexCode(),
+                new Normalizer\WindowsNt(),
+                new Normalizer\Tokens(),
+                new Normalizer\NovarraGoogleTranslator(),
+                new Normalizer\SerialNumbers(),
+                new Normalizer\TransferEncoding(),
             ]
         );
     }

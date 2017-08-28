@@ -17,6 +17,7 @@ use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use UaResult\Company\CompanyLoader;
 use UaResult\Engine\Engine;
+use UaResult\Engine\EngineInterface;
 
 /**
  * Browser detection class
@@ -45,7 +46,7 @@ class EngineLoader implements LoaderInterface
     /**
      * initializes cache
      */
-    private function init()
+    private function init(): void
     {
         $cacheInitializedId = hash('sha512', 'engine-cache is initialized');
         $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
@@ -60,7 +61,7 @@ class EngineLoader implements LoaderInterface
      *
      * @return bool
      */
-    public function has($engineKey)
+    public function has(string $engineKey): bool
     {
         $this->init();
 
@@ -77,7 +78,7 @@ class EngineLoader implements LoaderInterface
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function load($engineKey, $useragent = '')
+    public function load(string $engineKey, string $useragent = ''): EngineInterface
     {
         $this->init();
 
@@ -92,7 +93,7 @@ class EngineLoader implements LoaderInterface
         $engineVersionClass = $engine->version->class;
 
         if (!is_string($engineVersionClass)) {
-            $version = new Version(0);
+            $version = new Version('0');
         } elseif ('VersionFactory' === $engineVersionClass) {
             $version = VersionFactory::detectVersion($useragent, $engine->version->search);
         } else {
@@ -111,7 +112,7 @@ class EngineLoader implements LoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      */
-    private function initCache(CacheItemInterface $cacheInitialized)
+    private function initCache(CacheItemInterface $cacheInitialized): void
     {
         static $engines = null;
 

@@ -19,18 +19,16 @@ use Stringy\Stringy;
 class Tv
 {
     /**
-     * @var string the user agent to handle
+     * @var \Stringy\Stringy the user agent to handle
      */
-    private $useragent = '';
+    private $useragent = null;
 
     /**
      * Class Constructor
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\Tv
+     * @param \Stringy\Stringy $useragent
      */
-    public function __construct($useragent)
+    public function __construct(Stringy $useragent)
     {
         $this->useragent = $useragent;
     }
@@ -38,11 +36,9 @@ class Tv
     /**
      * @return bool
      */
-    public function isTvDevice()
+    public function isTvDevice(): bool
     {
-        $s = new Stringy($this->useragent);
-
-        if ($s->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
+        if ($this->useragent->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return false;
         }
 
@@ -66,7 +62,7 @@ class Tv
             '>',
         ];
 
-        if ($s->containsAny($noTvs, false)) {
+        if ($this->useragent->containsAny($noTvs, false)) {
             return false;
         }
 
@@ -102,7 +98,7 @@ class Tv
             'metz',
         ];
 
-        if (!$s->containsAny($tvDevices, false)) {
+        if (!$this->useragent->containsAny($tvDevices, false)) {
             return false;
         }
 

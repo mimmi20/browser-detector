@@ -33,6 +33,7 @@ class UmiFactory implements Factory\FactoryInterface
         'umi_max'     => 'umi max',
         'umi_super'   => 'umi super',
         'umi_x2'      => 'umi x2',
+        'umi x2'      => 'umi x2',
     ];
 
     /**
@@ -56,7 +57,7 @@ class UmiFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect($useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s = null): array
     {
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {

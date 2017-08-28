@@ -26,9 +26,9 @@ class MicrosoftOutlook implements VersionCacheFactoryInterface
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\VersionInterface
      */
-    public function detectVersion($useragent)
+    public function detectVersion(string $useragent): VersionInterface
     {
         $doMatch = preg_match('/microsoft office outlook ([\d\.]+)/i', $useragent, $matches);
 

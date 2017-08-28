@@ -11,24 +11,24 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
+use Stringy\Stringy;
+
 /**
  * a helper to detect windows
  */
 class AndroidOs
 {
     /**
-     * @var string the user agent to handle
+     * @var \Stringy\Stringy the user agent to handle
      */
-    private $useragent = '';
+    private $useragent = null;
 
     /**
      * Class Constructor
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\AndroidOs
+     * @param \Stringy\Stringy $useragent
      */
-    public function __construct($useragent)
+    public function __construct(Stringy $useragent)
     {
         $this->useragent = $useragent;
     }
@@ -36,25 +36,25 @@ class AndroidOs
     /**
      * @return bool
      */
-    public function isAndroid()
+    public function isAndroid(): bool
     {
-        if (preg_match('/(windows|palmsource)/i', $this->useragent)) {
+        if (preg_match('/(windows|palmsource)/i', (string) $this->useragent)) {
             return false;
         }
 
-        if (preg_match('/(android|silk|juc ?\(linux;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux;|maui|spreadtrum|vre;|linux; googletv)/i', $this->useragent)) {
+        if (preg_match('/(android|silk|juc ?\(linux;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux;|maui|spreadtrum|vre;|linux; googletv)/i', (string) $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+A(T|P)/', $this->useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+A(T|P)/', (string) $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/(beyondpod)/i', $this->useragent)) {
+        if (preg_match('/(beyondpod)/i', (string) $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/(htc_sensation_z710e)/i', $this->useragent)) {
+        if (preg_match('/(htc_sensation_z710e)/i', (string) $this->useragent)) {
             return true;
         }
 

@@ -14,6 +14,7 @@ namespace BrowserDetectorTest\Factory;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Loader\DeviceLoader;
+use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
@@ -56,7 +57,7 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
         $normalizedUa = $normalizer->normalize($userAgent);
 
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($normalizedUa);
+        list($result) = $this->object->detect($normalizedUa, new Stringy($normalizedUa));
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -114,6 +115,7 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
             }
 
             $subfileTests = json_decode(file_get_contents($file->getPathname()), true);
+            //var_dump($subfileTests);exit;
 
             foreach ($subfileTests as $subfileTest) {
                 if ('this is a fake ua to trigger the fallback' === $subfileTest['ua']) {

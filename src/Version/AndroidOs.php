@@ -24,9 +24,9 @@ class AndroidOs implements VersionCacheFactoryInterface
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\VersionInterface
      */
-    public function detectVersion($useragent)
+    public function detectVersion(string $useragent): VersionInterface
     {
         if (false !== mb_stripos($useragent, 'android 2.1-update1')) {
             return VersionFactory::set('2.1.1');
@@ -65,6 +65,6 @@ class AndroidOs implements VersionCacheFactoryInterface
             return VersionFactory::set('2.1.0');
         }
 
-        return new Version(0);
+        return new Version('0');
     }
 }
