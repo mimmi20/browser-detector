@@ -44,6 +44,7 @@ class BrowserFactory implements FactoryInterface
      *
      * @param string                   $useragent
      * @param \UaResult\Os\OsInterface $platform
+     * @param null|Stringy             $s
      *
      * @return array
      */

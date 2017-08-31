@@ -48,6 +48,7 @@ class EngineFactory implements FactoryInterface
      * @param string                                $useragent
      * @param \BrowserDetector\Loader\BrowserLoader $browserLoader
      * @param \UaResult\Os\OsInterface              $platform
+     * @param null|Stringy                          $s
      *
      * @return \UaResult\Engine\EngineInterface
      */
