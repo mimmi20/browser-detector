@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 $header = <<<EOF
 This file is part of the browser-detector package.
@@ -103,8 +104,8 @@ return PhpCsFixer\Config::create()
         'php_unit_dedicate_assert' => true,
         'php_unit_fqcn_annotation' => true,
         'php_unit_strict' => false,
-        'phpdoc_add_missing_param_annotation' => true,
-        'phpdoc_align' => true,
+        'phpdoc_add_missing_param_annotation' => ['only_untyped' => false],
+        'phpdoc_align' => ['tags' => ['param', 'return', 'throws']],
         'phpdoc_inline_tag' => true,
         'phpdoc_no_access' => true,
         'phpdoc_no_alias_tag' => ['property-read' => 'property', 'property-write' => 'property', 'type' => 'var'],
@@ -132,7 +133,7 @@ return PhpCsFixer\Config::create()
         'semicolon_after_instruction' => true,
         'short_scalar_cast' => true,
         'silenced_deprecation_error' => true,
-        'simplified_null_return' => true,
+        'simplified_null_return' => false,
         'single_blank_line_at_eof' => true,
         'single_blank_line_before_namespace' => false,
         'single_class_element_per_statement' => true,
