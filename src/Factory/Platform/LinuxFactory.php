@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Platform;
 
 use BrowserDetector\Factory\FactoryInterface;
-use BrowserDetector\Loader\LoaderInterface;
+use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
@@ -60,9 +60,9 @@ class LinuxFactory implements FactoryInterface
     private $loader = null;
 
     /**
-     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
      */
-    public function __construct(LoaderInterface $loader)
+    public function __construct(ExtendedLoaderInterface $loader)
     {
         $this->loader = $loader;
     }

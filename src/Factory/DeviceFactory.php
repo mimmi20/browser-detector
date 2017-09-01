@@ -14,7 +14,7 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
-use BrowserDetector\Loader\LoaderInterface;
+use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
@@ -34,9 +34,9 @@ class DeviceFactory implements FactoryInterface
     private $loader = null;
 
     /**
-     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
      */
-    public function __construct(LoaderInterface $loader)
+    public function __construct(ExtendedLoaderInterface $loader)
     {
         $this->loader = $loader;
     }

@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Helper;
-use BrowserDetector\Loader\LoaderInterface;
+use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 use UaResult\Os\OsInterface;
 
@@ -33,9 +33,9 @@ class PlatformFactory implements FactoryInterface
     private $loader = null;
 
     /**
-     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
      */
-    public function __construct(LoaderInterface $loader)
+    public function __construct(ExtendedLoaderInterface $loader)
     {
         $this->loader = $loader;
     }

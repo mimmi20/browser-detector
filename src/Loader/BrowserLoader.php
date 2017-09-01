@@ -29,7 +29,7 @@ use UaResult\Company\CompanyLoader;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BrowserLoader implements LoaderInterface
+class BrowserLoader implements ExtendedLoaderInterface
 {
     /**
      * @var \Psr\Cache\CacheItemPoolInterface|null

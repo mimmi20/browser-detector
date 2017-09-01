@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\BrowserLoader;
-use BrowserDetector\Loader\LoaderInterface;
+use BrowserDetector\Loader\ExtendedLoaderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Stringy\Stringy;
 use UaResult\Engine\EngineInterface;
@@ -35,9 +35,9 @@ class EngineFactory implements FactoryInterface
     private $loader = null;
 
     /**
-     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
      */
-    public function __construct(LoaderInterface $loader)
+    public function __construct(ExtendedLoaderInterface $loader)
     {
         $this->loader = $loader;
     }
