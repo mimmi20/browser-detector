@@ -28,9 +28,9 @@ interface ExtendedLoaderInterface
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
-     * @return array
+     * @return mixed
      */
-    public function load(string $browserKey, string $useragent = ''): array;
+    public function load(string $browserKey, string $useragent = '');
 
     /**
      * @param string $key
