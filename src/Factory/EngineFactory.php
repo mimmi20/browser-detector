@@ -30,7 +30,7 @@ use UaResult\Os\OsInterface;
 class EngineFactory implements FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\LoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface|null
      */
     private $loader = null;
 

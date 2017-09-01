@@ -83,7 +83,7 @@ class PrestigioFactory implements Factory\FactoryInterface
     ];
 
     /**
-     * @var \BrowserDetector\Loader\LoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface|null
      */
     private $loader = null;
 

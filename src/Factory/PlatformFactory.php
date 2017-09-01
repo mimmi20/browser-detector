@@ -28,7 +28,7 @@ use UaResult\Os\OsInterface;
 class PlatformFactory implements FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\LoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface|null
      */
     private $loader = null;
 
