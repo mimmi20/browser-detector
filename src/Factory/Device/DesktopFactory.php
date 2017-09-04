@@ -25,7 +25,7 @@ use Stringy\Stringy;
 class DesktopFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
@@ -45,7 +45,7 @@ class DesktopFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s = null): array
+    public function detect(string $useragent, Stringy $s): array
     {
         if ((new Helper\Windows($s))->isWindows()) {
             return (new Desktop\WindowsFactory($this->loader))->detect($useragent, $s);

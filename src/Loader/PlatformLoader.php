@@ -33,7 +33,7 @@ use UaResult\Os\OsInterface;
 class PlatformLoader implements ExtendedLoaderInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
+     * @var \Psr\Cache\CacheItemPoolInterface
      */
     private $cache = null;
 

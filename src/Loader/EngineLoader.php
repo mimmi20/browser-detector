@@ -31,7 +31,7 @@ use UaResult\Engine\EngineInterface;
 class EngineLoader implements ExtendedLoaderInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
+     * @var \Psr\Cache\CacheItemPoolInterface
      */
     private $cache = null;
 

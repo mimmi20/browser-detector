@@ -55,7 +55,7 @@ class LinuxFactory implements FactoryInterface
     ];
 
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
@@ -75,7 +75,7 @@ class LinuxFactory implements FactoryInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect(string $useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s)
     {
         foreach ($this->platforms as $search => $key) {
             if ($s->contains($search, false)) {

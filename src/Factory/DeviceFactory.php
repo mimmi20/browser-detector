@@ -29,7 +29,7 @@ use Stringy\Stringy;
 class DeviceFactory implements FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
@@ -49,7 +49,7 @@ class DeviceFactory implements FactoryInterface
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s = null): array
+    public function detect(string $useragent, Stringy $s): array
     {
         if (!$s->containsAny(['freebsd', 'raspbian'], false)
             && $s->containsAny(['darwin', 'cfnetwork'], false)

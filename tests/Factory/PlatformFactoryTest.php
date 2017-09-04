@@ -14,6 +14,7 @@ namespace BrowserDetectorTest\Factory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\PlatformLoader;
+use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
@@ -53,7 +54,7 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
         $normalizedUa = $normalizer->normalize($userAgent);
 
         /** @var \UaResult\Os\OsInterface $result */
-        $result = $this->object->detect($normalizedUa);
+        $result = $this->object->detect($normalizedUa, new Stringy($normalizedUa));
 
         self::assertInstanceOf('\UaResult\Os\OsInterface', $result);
         self::assertSame(

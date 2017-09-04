@@ -31,7 +31,7 @@ class GenericRequestTest extends \PHPUnit\Framework\TestCase
             Constants::HEADER_UCBROWSER_UA   => $browserUa,
         ];
 
-        $object = new GenericRequest($headers, false);
+        $object = new GenericRequest($headers);
 
         self::assertSame($headers, $object->getHeaders());
         self::assertSame($browserUa, $object->getBrowserUserAgent());

@@ -32,7 +32,7 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
     private $object = null;
 
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
+     * @var \Psr\Cache\CacheItemPoolInterface
      */
     private $cache = null;
 

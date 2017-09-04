@@ -27,7 +27,7 @@ use Stringy\Stringy;
 class DarwinFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
@@ -47,7 +47,7 @@ class DarwinFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s = null): array
+    public function detect(string $useragent, Stringy $s): array
     {
         $appleMobileFactory  = new Mobile\AppleFactory($this->loader);
         $appleDesktopFactory = new Desktop\AppleFactory($this->loader);

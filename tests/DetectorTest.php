@@ -89,6 +89,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      */
     public function testGetBrowserFromPsr7Message($userAgent, Result $expectedResult)
     {
+        /** @var \Psr\Http\Message\MessageInterface|\PHPUnit_Framework_MockObject_MockObject $message */
         $message = $this->createMock('\Psr\Http\Message\MessageInterface');
         $message
             ->expects(self::once())
@@ -149,7 +150,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return \Monolog\Logger
+     * @return \Psr\Log\LoggerInterface
      */
     private static function getLogger(): LoggerInterface
     {

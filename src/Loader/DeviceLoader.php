@@ -29,7 +29,7 @@ use UaResult\Device\Device;
 class DeviceLoader implements ExtendedLoaderInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
+     * @var \Psr\Cache\CacheItemPoolInterface
      */
     private $cache = null;
 
@@ -102,7 +102,7 @@ class DeviceLoader implements ExtendedLoaderInterface
             $device->marketingName,
             $companyLoader->load($device->manufacturer),
             $companyLoader->load($device->brand),
-            (new TypeLoader($this->cache))->load($device->type),
+            (new TypeLoader())->load($device->type),
             $device->pointingMethod,
             $device->resolutionWidth,
             $device->resolutionHeight,

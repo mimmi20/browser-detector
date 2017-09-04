@@ -37,9 +37,9 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
             Constants::HEADER_HTTP_USERAGENT => $userAgent,
         ];
 
-        $expected = new GenericRequest($header, false);
+        $expected = new GenericRequest($header);
 
-        $result = $this->object->createRequestFromArray($header, false);
+        $result = $this->object->createRequestFromArray($header);
 
         self::assertInstanceOf('\BrowserDetector\Helper\GenericRequest', $result);
         self::assertEquals($expected, $result);
@@ -50,9 +50,9 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $header    = [];
 
-        $expected = new GenericRequest($header, false);
+        $expected = new GenericRequest($header);
 
-        $result = $this->object->createRequestFromArray($header, false);
+        $result = $this->object->createRequestFromArray($header);
 
         self::assertInstanceOf('\BrowserDetector\Helper\GenericRequest', $result);
         self::assertEquals($expected, $result);
@@ -66,7 +66,7 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
             Constants::HEADER_HTTP_USERAGENT => $userAgent,
         ];
 
-        $expected = new GenericRequest($header, false);
+        $expected = new GenericRequest($header);
 
         $result = $this->object->createRequestFromString($userAgent);
 
@@ -89,7 +89,7 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
             Constants::HEADER_DEVICE_UA      => [$deviceUa],
         ];
 
-        $expected = new GenericRequest($headers, true);
+        $expected = new GenericRequest($headers);
 
         $message = $this->createMock('\Psr\Http\Message\MessageInterface');
         $message->expects(self::once())

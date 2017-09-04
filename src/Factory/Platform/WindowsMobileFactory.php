@@ -24,7 +24,7 @@ use Stringy\Stringy;
 class WindowsMobileFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
@@ -44,7 +44,7 @@ class WindowsMobileFactory implements Factory\FactoryInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect(string $useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s)
     {
         if ($s->containsAny(['windows ce', 'windows mobile; wce'], false)) {
             return $this->loader->load('windows ce', $useragent);

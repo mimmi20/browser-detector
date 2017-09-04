@@ -22,7 +22,7 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Platform\DarwinFactory
+     * @var \BrowserDetector\Factory\Device\DarwinFactory
      */
     private $object = null;
 

@@ -38,7 +38,7 @@ class CatSoundFactory implements Factory\FactoryInterface
     ];
 
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
@@ -58,7 +58,7 @@ class CatSoundFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s = null): array
+    public function detect(string $useragent, Stringy $s): array
     {
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {

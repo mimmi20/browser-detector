@@ -24,7 +24,7 @@ use Stringy\Stringy;
 class MobileFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
@@ -44,7 +44,7 @@ class MobileFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s = null): array
+    public function detect(string $useragent, Stringy $s): array
     {
         $factoriesBeforeSamsung = [
             'hiphone'     => '\BrowserDetector\Factory\Device\Mobile\HiPhoneFactory',
