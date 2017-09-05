@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Platform;
 
 use BrowserDetector\Factory\FactoryInterface;
-use BrowserDetector\Loader\LoaderInterface;
+use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
@@ -55,14 +55,14 @@ class LinuxFactory implements FactoryInterface
     ];
 
     /**
-     * @var \BrowserDetector\Loader\LoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
     /**
-     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
      */
-    public function __construct(LoaderInterface $loader)
+    public function __construct(ExtendedLoaderInterface $loader)
     {
         $this->loader = $loader;
     }
@@ -75,7 +75,7 @@ class LinuxFactory implements FactoryInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect(string $useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s)
     {
         foreach ($this->platforms as $search => $key) {
             if ($s->contains($search, false)) {

@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Platform;
 
 use BrowserDetector\Factory;
-use BrowserDetector\Loader\LoaderInterface;
+use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
@@ -24,14 +24,14 @@ use Stringy\Stringy;
 class WindowsMobileFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\LoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
     /**
-     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
      */
-    public function __construct(LoaderInterface $loader)
+    public function __construct(ExtendedLoaderInterface $loader)
     {
         $this->loader = $loader;
     }
@@ -44,7 +44,7 @@ class WindowsMobileFactory implements Factory\FactoryInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect(string $useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s)
     {
         if ($s->containsAny(['windows ce', 'windows mobile; wce'], false)) {
             return $this->loader->load('windows ce', $useragent);

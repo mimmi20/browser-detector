@@ -29,10 +29,10 @@ use UaResult\Company\CompanyLoader;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BrowserLoader implements LoaderInterface
+class BrowserLoader implements ExtendedLoaderInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
+     * @var \Psr\Cache\CacheItemPoolInterface
      */
     private $cache = null;
 
@@ -103,7 +103,7 @@ class BrowserLoader implements LoaderInterface
         }
 
         $company   = (new CompanyLoader($this->cache))->load($browser->manufacturer);
-        $type      = (new TypeLoader($this->cache))->load($browser->type);
+        $type      = (new TypeLoader())->load($browser->type);
         $bits      = (new BrowserBits($useragent))->getBits();
         $engineKey = $browser->engine;
 

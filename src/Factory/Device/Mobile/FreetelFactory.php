@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
-use BrowserDetector\Loader\LoaderInterface;
+use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
@@ -40,14 +40,14 @@ class FreetelFactory implements Factory\FactoryInterface
     ];
 
     /**
-     * @var \BrowserDetector\Loader\LoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
     /**
-     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
      */
-    public function __construct(LoaderInterface $loader)
+    public function __construct(ExtendedLoaderInterface $loader)
     {
         $this->loader = $loader;
     }
@@ -60,7 +60,7 @@ class FreetelFactory implements Factory\FactoryInterface
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s = null): array
+    public function detect(string $useragent, Stringy $s): array
     {
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {

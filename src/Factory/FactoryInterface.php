@@ -21,5 +21,5 @@ interface FactoryInterface
      *
      * @return mixed
      */
-    public function detect(string $useragent, Stringy $s = null);
+    public function detect(string $useragent, Stringy $s);
 }

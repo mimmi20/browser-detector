@@ -26,10 +26,10 @@ use UaResult\Device\Device;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DeviceLoader implements LoaderInterface
+class DeviceLoader implements ExtendedLoaderInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
+     * @var \Psr\Cache\CacheItemPoolInterface
      */
     private $cache = null;
 
@@ -102,7 +102,7 @@ class DeviceLoader implements LoaderInterface
             $device->marketingName,
             $companyLoader->load($device->manufacturer),
             $companyLoader->load($device->brand),
-            (new TypeLoader($this->cache))->load($device->type),
+            (new TypeLoader())->load($device->type),
             $device->pointingMethod,
             $device->resolutionWidth,
             $device->resolutionHeight,

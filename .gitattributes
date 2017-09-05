@@ -37,6 +37,7 @@ appveyor.yml     export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at
 circle.yml       export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
 codecov.yml      export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
 phpcs.xml        export-ignore text eol=lf diff
+phpstan.neon     export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
 phpunit.xml      export-ignore text eol=lf diff
 /tests           export-ignore
 /cache           export-ignore

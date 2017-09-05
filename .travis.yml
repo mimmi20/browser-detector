@@ -25,7 +25,9 @@ before_install:
   - echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - travis_retry composer self-update
 
-install: travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction $COMPOSER_FLAGS -vv
+install:
+  - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
+  - travis_retry composer require --update-with-dependencies --prefer-dist phpunit/phpunit:^6.2
 
 script:
   - composer validate
@@ -63,12 +65,25 @@ jobs:
         - bash <(curl -s https://codecov.io/bash) -f clover.xml -F phpunit
     - stage: check coding style
       php: 7.1
-      env: COMPOSER_FLAGS="--no-dev"
-      script: wget https://github.com/squizlabs/PHP_CodeSniffer/releases/download/3.0.2/phpcs.phar && php -n phpcs.phar
+      env: COMPOSER_FLAGS=""
+      install:
+        - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
+        - travis_retry composer require --update-with-dependencies --prefer-dist squizlabs/php_codesniffer:^3.0
+      script: vendor/bin/phpcs
     - stage: check coding style
       php: 7.1
-      env: COMPOSER_FLAGS="--no-dev"
-      script: wget https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.5.0/php-cs-fixer.phar && php -n php-cs-fixer.phar fix --dry-run -vv
+      env: COMPOSER_FLAGS=""
+      install:
+        - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
+        - travis_retry composer require --update-with-dependencies --prefer-dist friendsofphp/php-cs-fixer:^2.5
+      script: vendor/bin/php-cs-fixer fix --dry-run -vv
+    - stage: static code analysis
+      php: 7.1
+      env: COMPOSER_FLAGS=""
+      install:
+        - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
+        - travis_retry composer require --update-with-dependencies --prefer-dist phpstan/phpstan:0.8.4
+      script: vendor/bin/phpstan analyse -l 7 -c phpstan.neon --autoload-file=vendor/autoload.php --memory-limit=768M --no-progress src tests
 
 notifications:
   email: false

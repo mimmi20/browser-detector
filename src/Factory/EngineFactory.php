@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\BrowserLoader;
-use BrowserDetector\Loader\LoaderInterface;
+use BrowserDetector\Loader\ExtendedLoaderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Stringy\Stringy;
 use UaResult\Engine\EngineInterface;
@@ -30,14 +30,14 @@ use UaResult\Os\OsInterface;
 class EngineFactory implements FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\LoaderInterface|null
+     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader = null;
 
     /**
-     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
      */
-    public function __construct(LoaderInterface $loader)
+    public function __construct(ExtendedLoaderInterface $loader)
     {
         $this->loader = $loader;
     }
@@ -45,13 +45,14 @@ class EngineFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string                                $useragent
-     * @param \BrowserDetector\Loader\BrowserLoader $browserLoader
-     * @param \UaResult\Os\OsInterface              $platform
+     * @param string                                     $useragent
+     * @param Stringy                                    $s
+     * @param \BrowserDetector\Loader\BrowserLoader|null $browserLoader
+     * @param \UaResult\Os\OsInterface|null              $platform
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function detect(string $useragent, Stringy $s = null, BrowserLoader $browserLoader = null, OsInterface $platform = null): EngineInterface
+    public function detect(string $useragent, Stringy $s, ?BrowserLoader $browserLoader = null, ?OsInterface $platform = null): EngineInterface
     {
         if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
             return $this->loader->load('webkit', $useragent);
@@ -94,7 +95,7 @@ class EngineFactory implements FactoryInterface
             return $this->loader->load('clecko', $useragent);
         }
 
-        if ($s->containsAny(['webkit', 'cfnetwork', 'safari', 'dalvik'], false)) {
+        if (null !== $browserLoader && $s->containsAny(['webkit', 'cfnetwork', 'safari', 'dalvik'], false)) {
             /** @var \UaResult\Browser\Browser $chrome */
             list($chrome)  = $browserLoader->load('chrome', $useragent);
             $version       = $chrome->getVersion();

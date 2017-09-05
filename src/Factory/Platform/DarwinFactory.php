@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Platform;
 
 use BrowserDetector\Factory;
-use BrowserDetector\Loader\LoaderInterface;
+use BrowserDetector\Loader\PlatformLoader;
 use Stringy\Stringy;
 
 /**
@@ -27,14 +27,14 @@ use Stringy\Stringy;
 class DarwinFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\LoaderInterface|null
+     * @var \BrowserDetector\Loader\PlatformLoader
      */
-    private $loader = null;
+    private $loader;
 
     /**
-     * @param \BrowserDetector\Loader\LoaderInterface $loader
+     * @param \BrowserDetector\Loader\PlatformLoader $loader
      */
-    public function __construct(LoaderInterface $loader)
+    public function __construct(PlatformLoader $loader)
     {
         $this->loader = $loader;
     }
@@ -47,7 +47,7 @@ class DarwinFactory implements Factory\FactoryInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect(string $useragent, Stringy $s = null)
+    public function detect(string $useragent, Stringy $s)
     {
         if ($s->contains('cfnetwork/808.2', false)) {
             return $this->loader->load('ios', $useragent, '10.2');
