@@ -25,13 +25,13 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Factory\DeviceFactory
      */
-    private $object = null;
+    private $object;
 
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
         $loader       = new DeviceLoader($cache);
@@ -50,14 +50,14 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
      * @param bool   $dualOrientation
      * @param string $pointingMethod
      */
-    public function testDetect($userAgent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
+    public function testDetect($userAgent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod): void
     {
         $normalizer = (new NormalizerFactory())->build();
 
         $normalizedUa = $normalizer->normalize($userAgent);
 
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($normalizedUa, new Stringy($normalizedUa));
+        [$result] = $this->object->detect($normalizedUa, new Stringy($normalizedUa));
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -110,7 +110,7 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
             /** @var $file \SplFileInfo */
-            if (!$file->isFile() || $file->getExtension() !== 'json') {
+            if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }
 

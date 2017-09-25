@@ -27,18 +27,18 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Factory\BrowserFactory
      */
-    private $object = null;
+    private $object;
 
     /**
      * @var \BrowserDetector\Factory\PlatformFactory
      */
-    private $platformFactory = null;
+    private $platformFactory;
 
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
         $loader       = new BrowserLoader($cache);
@@ -58,7 +58,7 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
      * @param int    $bits
      * @param string $type
      */
-    public function testDetect($userAgent, $browser, $version, $manufacturer, $bits, $type)
+    public function testDetect($userAgent, $browser, $version, $manufacturer, $bits, $type): void
     {
         $normalizer = (new NormalizerFactory())->build();
 
@@ -69,7 +69,7 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
         $platform     = $this->platformFactory->detect($normalizedUa, $s);
 
         /** @var \UaResult\Browser\BrowserInterface $result */
-        list($result) = $this->object->detect($normalizedUa, $s, $platform);
+        [$result] = $this->object->detect($normalizedUa, $s, $platform);
 
         self::assertInstanceOf('\UaResult\Browser\BrowserInterface', $result);
         self::assertSame(

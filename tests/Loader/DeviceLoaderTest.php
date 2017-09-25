@@ -22,19 +22,19 @@ class DeviceLoaderTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Loader\DeviceLoader
      */
-    private $object = null;
+    private $object;
 
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
         $this->object = new DeviceLoader($cache);
     }
 
-    public function testLoadNotAvailable()
+    public function testLoadNotAvailable(): void
     {
         $this->expectException('\BrowserDetector\Loader\NotFoundException');
         $this->expectExceptionMessage('the device with key "does not exist" was not found');

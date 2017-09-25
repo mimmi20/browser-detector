@@ -24,13 +24,13 @@ class WindowsFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Factory\Platform\WindowsFactory
      */
-    private $object = null;
+    private $object;
 
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
         $loader       = new PlatformLoader($cache);
@@ -46,7 +46,7 @@ class WindowsFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string $manufacturer
      * @param int    $bits
      */
-    public function testDetect($agent, $platform, $version, $manufacturer, $bits)
+    public function testDetect($agent, $platform, $version, $manufacturer, $bits): void
     {
         $s = new Stringy($agent);
 

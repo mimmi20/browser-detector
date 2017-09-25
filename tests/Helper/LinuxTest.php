@@ -25,7 +25,7 @@ class LinuxTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsLinux(string $agent)
+    public function testIsLinux(string $agent): void
     {
         self::assertTrue((new Helper\Linux(new Stringy($agent)))->isLinux());
     }
@@ -64,7 +64,7 @@ class LinuxTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotLinux(string $agent)
+    public function testIsNotLinux(string $agent): void
     {
         self::assertFalse((new Helper\Linux(new Stringy($agent)))->isLinux());
     }

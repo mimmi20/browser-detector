@@ -33,12 +33,12 @@ trait DeviceTestDetectTrait
      * @param int|null    $height
      * @param int|null    $colors
      */
-    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod, $width, $height, $colors)
+    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod, $width, $height, $colors): void
     {
         $s = new Stringy($agent);
 
         /** @var \UaResult\Device\DeviceInterface $result */
-        list($result) = $this->object->detect($agent, $s);
+        [$result] = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 

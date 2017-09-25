@@ -29,18 +29,18 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Factory\EngineFactory
      */
-    private $object = null;
+    private $object;
 
     /**
      * @var \Psr\Cache\CacheItemPoolInterface
      */
-    private $cache = null;
+    private $cache;
 
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->cache  = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
         $loader       = new EngineLoader($this->cache);
@@ -55,7 +55,7 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string $version
      * @param string $manufacturer
      */
-    public function testDetect($userAgent, $engine, $version, $manufacturer)
+    public function testDetect($userAgent, $engine, $version, $manufacturer): void
     {
         $normalizer      = (new NormalizerFactory())->build();
         $normalizedUa    = $normalizer->normalize($userAgent);

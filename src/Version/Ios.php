@@ -51,7 +51,7 @@ class Ios implements VersionCacheFactoryInterface
 
         $detectedVersion = VersionFactory::detectVersion($useragent, $searches);
 
-        if ($detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) > 99) {
+        if (99 < $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR)) {
             $versions = [];
             $found    = preg_match('/(\d)(\d)(\d)/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions);
 

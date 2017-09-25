@@ -25,7 +25,7 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsMobile(string $agent)
+    public function testIsMobile(string $agent): void
     {
         $object = new Helper\MobileDevice(new Stringy($agent));
 
@@ -93,7 +93,7 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotMobile(string $agent)
+    public function testIsNotMobile(string $agent): void
     {
         $object = new Helper\MobileDevice(new Stringy($agent));
 

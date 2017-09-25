@@ -20,7 +20,7 @@ use BrowserDetector\Helper\GenericRequestFactory;
  */
 class GenericRequestTest extends \PHPUnit\Framework\TestCase
 {
-    public function testConstruct()
+    public function testConstruct(): void
     {
         $userAgent = 'testUA';
         $browserUa = 'testBrowserUA';
@@ -38,7 +38,7 @@ class GenericRequestTest extends \PHPUnit\Framework\TestCase
         self::assertSame($deviceUa, $object->getDeviceUserAgent());
     }
 
-    public function testToarray()
+    public function testToarray(): void
     {
         $userAgent = 'testUA';
         $headers   = [
@@ -52,7 +52,7 @@ class GenericRequestTest extends \PHPUnit\Framework\TestCase
         self::assertEquals($original, $object);
     }
 
-    public function testToarraySimple()
+    public function testToarraySimple(): void
     {
         $userAgent = 'testUA';
         $headers   = [

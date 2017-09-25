@@ -23,9 +23,9 @@ class SerialNumbersTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Helper\Normalizer\SerialNumbers
      */
-    private $normalizer = null;
+    private $normalizer;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->normalizer = new SerialNumbers();
     }
@@ -37,7 +37,7 @@ class SerialNumbersTest extends \PHPUnit\Framework\TestCase
      * @param string $userAgent
      * @param string $expected
      */
-    public function testRemoveSerialNumber($userAgent, $expected)
+    public function testRemoveSerialNumber($userAgent, $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);

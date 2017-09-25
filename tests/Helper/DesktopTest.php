@@ -25,7 +25,7 @@ class DesktopTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsDesktop(string $agent)
+    public function testIsDesktop(string $agent): void
     {
         $object = new Desktop(new Stringy($agent));
 
@@ -87,7 +87,7 @@ class DesktopTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNoDesktop(string $agent)
+    public function testIsNoDesktop(string $agent): void
     {
         $object = new Desktop(new Stringy($agent));
 

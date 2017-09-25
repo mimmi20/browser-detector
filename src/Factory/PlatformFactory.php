@@ -44,7 +44,7 @@ class PlatformFactory implements FactoryInterface
      * Gets the information about the platform by User Agent
      *
      * @param string       $useragent
-     * @param null|Stringy $s
+     * @param Stringy|null $s
      *
      * @return \UaResult\Os\OsInterface
      */

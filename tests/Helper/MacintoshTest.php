@@ -25,7 +25,7 @@ class MacintoshTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsMacintosh(string $agent)
+    public function testIsMacintosh(string $agent): void
     {
         $object = new Helper\Macintosh(new Stringy($agent));
 
@@ -49,7 +49,7 @@ class MacintoshTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotMacintosh(string $agent)
+    public function testIsNotMacintosh(string $agent): void
     {
         $object = new Helper\Macintosh(new Stringy($agent));
 

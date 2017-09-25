@@ -31,7 +31,7 @@ class DeviceLoader implements ExtendedLoaderInterface
     /**
      * @var \Psr\Cache\CacheItemPoolInterface
      */
-    private $cache = null;
+    private $cache;
 
     /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
@@ -74,7 +74,7 @@ class DeviceLoader implements ExtendedLoaderInterface
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
-     * @return array
+     * @return (\UaResult\Device\DeviceInterface|\UaResult\Os\OsInterface|null)[]
      */
     public function load(string $deviceKey, string $useragent = ''): array
     {
@@ -122,7 +122,7 @@ class DeviceLoader implements ExtendedLoaderInterface
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
             /** @var $file \SplFileInfo */
-            if (!$file->isFile() || $file->getExtension() !== 'json') {
+            if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }
 

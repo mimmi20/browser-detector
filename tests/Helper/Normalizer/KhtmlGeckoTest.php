@@ -23,9 +23,9 @@ class KhtmlGeckoTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Helper\Normalizer\KhtmlGecko
      */
-    private $normalizer = null;
+    private $normalizer;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->normalizer = new KhtmlGecko();
     }
@@ -37,7 +37,7 @@ class KhtmlGeckoTest extends \PHPUnit\Framework\TestCase
      * @param string $userAgent
      * @param string $expected
      */
-    public function shouldNormalizeTheKhtmlGeckoToken($userAgent, $expected)
+    public function shouldNormalizeTheKhtmlGeckoToken($userAgent, $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);
