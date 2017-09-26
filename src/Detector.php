@@ -42,14 +42,14 @@ class Detector
      *
      * @var \Psr\Cache\CacheItemPoolInterface
      */
-    private $cache = null;
+    private $cache;
 
     /**
      * an logger instance
      *
      * @var \Psr\Log\LoggerInterface
      */
-    private $logger = null;
+    private $logger;
 
     /**
      * sets the cache used to make the detection faster
@@ -66,7 +66,7 @@ class Detector
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param \Psr\Http\Message\MessageInterface|array|string $headers
+     * @param array|\Psr\Http\Message\MessageInterface|string $headers
      *
      * @return \UaResult\Result\ResultInterface
      */
@@ -81,7 +81,7 @@ class Detector
         /* @var \UaResult\Device\DeviceInterface $device */
         /* @var \UaResult\Os\OsInterface $platform */
         try {
-            list($device, $platform) = $deviceFactory->detect($deviceUa, new Stringy($deviceUa));
+            [$device, $platform] = $deviceFactory->detect($deviceUa, new Stringy($deviceUa));
         } catch (NotFoundException $e) {
             $this->logger->debug($e);
 
@@ -109,7 +109,7 @@ class Detector
 
         /** @var \UaResult\Browser\BrowserInterface $browser */
         /** @var \UaResult\Engine\EngineInterface $engine */
-        list($browser, $engine) = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
+        [$browser, $engine]     = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
         $engineLoader           = new Loader\EngineLoader($this->cache);
 
         if (null === $engine || in_array($engine->getName(), [null, 'unknown'])) {
@@ -127,7 +127,7 @@ class Detector
     }
 
     /**
-     * @param \Psr\Http\Message\MessageInterface|array|string $request
+     * @param array|\Psr\Http\Message\MessageInterface|string $request
      *
      * @throws \UnexpectedValueException
      *

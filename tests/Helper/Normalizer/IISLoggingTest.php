@@ -23,9 +23,9 @@ class IISLoggingTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Helper\Normalizer\IISLogging
      */
-    private $normalizer = null;
+    private $normalizer;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->normalizer = new IISLogging();
     }
@@ -37,7 +37,7 @@ class IISLoggingTest extends \PHPUnit\Framework\TestCase
      * @param string $userAgent
      * @param string $expected
      */
-    public function testNormalize($userAgent, $expected)
+    public function testNormalize($userAgent, $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);

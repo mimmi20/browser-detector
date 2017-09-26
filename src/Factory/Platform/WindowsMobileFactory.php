@@ -26,7 +26,7 @@ class WindowsMobileFactory implements Factory\FactoryInterface
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
-    private $loader = null;
+    private $loader;
 
     /**
      * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
@@ -53,18 +53,18 @@ class WindowsMobileFactory implements Factory\FactoryInterface
         if (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop| wds )/', $useragent)) {
             $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $useragent, $matchesPhone);
 
-            if (!$doMatchPhone || $matchesPhone[1] >= 7) {
+            if (!$doMatchPhone || 7 <= $matchesPhone[1]) {
                 return $this->loader->load('windows phone', $useragent);
             }
 
             return $this->loader->load('windows mobile os', $useragent);
         }
 
-        if (preg_match('/Windows Mobile ([\d]+)/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
+        if (preg_match('/Windows Mobile ([\d]+)/', $useragent, $matchesMobile) && 7.0 <= (float) $matchesMobile[1]) {
             return $this->loader->load('windows phone', $useragent);
         }
 
-        if (preg_match('/Windows NT ([\d\.]+); ARM; Lumia/', $useragent, $matchesMobile) && (float) $matchesMobile[1] >= 7.0) {
+        if (preg_match('/Windows NT ([\d\.]+); ARM; Lumia/', $useragent, $matchesMobile) && 7.0 <= (float) $matchesMobile[1]) {
             return $this->loader->load('windows phone', $useragent);
         }
 

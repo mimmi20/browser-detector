@@ -34,7 +34,7 @@ class BrowserLoader implements ExtendedLoaderInterface
     /**
      * @var \Psr\Cache\CacheItemPoolInterface
      */
-    private $cache = null;
+    private $cache;
 
     /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
@@ -77,7 +77,7 @@ class BrowserLoader implements ExtendedLoaderInterface
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
-     * @return array
+     * @return (\UaResult\Browser\Browser|\UaResult\Engine\EngineInterface|null)[]
      */
     public function load(string $browserKey, string $useragent = ''): array
     {

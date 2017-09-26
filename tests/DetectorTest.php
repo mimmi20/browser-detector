@@ -28,7 +28,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Detector
      */
-    private $object = null;
+    private $object;
 
     /**
      * @var \Psr\Cache\CacheItemPoolInterface
@@ -44,7 +44,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->object = new Detector(static::getCache(), static::getLogger());
     }
@@ -55,7 +55,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
      */
-    public function testGetBrowserFromUa($userAgent, Result $expectedResult)
+    public function testGetBrowserFromUa($userAgent, Result $expectedResult): void
     {
         /** @var \UaResult\Result\Result $result */
         $result = $this->object->getBrowser($userAgent);
@@ -71,7 +71,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
      */
-    public function testGetBrowserFromArray($userAgent, Result $expectedResult)
+    public function testGetBrowserFromArray($userAgent, Result $expectedResult): void
     {
         /** @var \UaResult\Result\Result $result */
         $result = $this->object->getBrowser([Constants::HEADER_HTTP_USERAGENT => $userAgent]);
@@ -87,9 +87,9 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
      */
-    public function testGetBrowserFromPsr7Message($userAgent, Result $expectedResult)
+    public function testGetBrowserFromPsr7Message($userAgent, Result $expectedResult): void
     {
-        /** @var \Psr\Http\Message\MessageInterface|\PHPUnit_Framework_MockObject_MockObject $message */
+        /** @var \PHPUnit_Framework_MockObject_MockObject|\Psr\Http\Message\MessageInterface $message */
         $message = $this->createMock('\Psr\Http\Message\MessageInterface');
         $message
             ->expects(self::once())
@@ -104,7 +104,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
         self::assertEquals($expectedResult, $result);
     }
 
-    public function testGetBrowserFromInvalid()
+    public function testGetBrowserFromInvalid(): void
     {
         $this->expectException('\UnexpectedValueException');
         $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface');

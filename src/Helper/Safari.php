@@ -25,27 +25,27 @@ class Safari
      */
     public function mapSafariVersions(string $detectedVersion): string
     {
-        if ($detectedVersion >= 12600) {
+        if (12600 <= $detectedVersion) {
             $detectedVersion = '10.0';
-        } elseif ($detectedVersion >= 11600) {
+        } elseif (11600 <= $detectedVersion) {
             $detectedVersion = '9.1';
-        } elseif ($detectedVersion >= 10500) {
+        } elseif (10500 <= $detectedVersion) {
             $detectedVersion = '8.0';
-        } elseif ($detectedVersion >= 9500) {
+        } elseif (9500 <= $detectedVersion) {
             $detectedVersion = '7.0';
-        } elseif ($detectedVersion >= 8500) {
+        } elseif (8500 <= $detectedVersion) {
             $detectedVersion = '6.0';
-        } elseif ($detectedVersion >= 7500) {
+        } elseif (7500 <= $detectedVersion) {
             $detectedVersion = '5.1';
-        } elseif ($detectedVersion >= 6500) {
+        } elseif (6500 <= $detectedVersion) {
             $detectedVersion = '5.0';
-        } elseif ($detectedVersion >= 4500) {
+        } elseif (4500 <= $detectedVersion) {
             $detectedVersion = '4.0';
-        } elseif ($detectedVersion >= 600) {
+        } elseif (600 <= $detectedVersion) {
             $detectedVersion = '5.0';
-        } elseif ($detectedVersion >= 500) {
+        } elseif (500 <= $detectedVersion) {
             $detectedVersion = '4.0';
-        } elseif ($detectedVersion >= 400) {
+        } elseif (400 <= $detectedVersion) {
             $detectedVersion = '3.0';
         }
 

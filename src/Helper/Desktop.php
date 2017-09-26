@@ -22,7 +22,7 @@ class Desktop
     /**
      * @var \Stringy\Stringy the user agent to handle
      */
-    private $useragent = null;
+    private $useragent;
 
     /**
      * Class Constructor

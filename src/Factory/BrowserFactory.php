@@ -29,7 +29,7 @@ class BrowserFactory implements FactoryInterface
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
-    private $loader = null;
+    private $loader;
 
     /**
      * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
@@ -44,7 +44,7 @@ class BrowserFactory implements FactoryInterface
      *
      * @param string                   $useragent
      * @param \UaResult\Os\OsInterface $platform
-     * @param null|Stringy             $s
+     * @param Stringy|null             $s
      *
      * @return array
      */
@@ -405,11 +405,11 @@ class BrowserFactory implements FactoryInterface
         }
 
         if (preg_match('/chrome\/(\d+)\.(\d+)/i', $useragent, $matches)
-            && isset($matches[1])
-            && isset($matches[2])
-            && $matches[1] >= 1
-            && $matches[2] > 0
-            && $matches[2] <= 10
+            && isset($matches[1], $matches[2])
+
+            && 1 <= $matches[1]
+            && 0 < $matches[2]
+            && 10 >= $matches[2]
         ) {
             return $this->loader->load('dragon', $useragent);
         }

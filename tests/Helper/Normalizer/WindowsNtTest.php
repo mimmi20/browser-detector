@@ -23,9 +23,9 @@ class WindowsNtTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Helper\Normalizer\WindowsNt
      */
-    private $normalizer = null;
+    private $normalizer;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->normalizer = new WindowsNt();
     }
@@ -37,7 +37,7 @@ class WindowsNtTest extends \PHPUnit\Framework\TestCase
      * @param string $userAgent
      * @param string $expected
      */
-    public function shouldNormalizeTheWindowsNtToken($userAgent, $expected)
+    public function shouldNormalizeTheWindowsNtToken($userAgent, $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);

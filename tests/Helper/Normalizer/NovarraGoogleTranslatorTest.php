@@ -23,9 +23,9 @@ class NovarraGoogleTranslatorTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Helper\Normalizer\NovarraGoogleTranslator
      */
-    private $normalizer = null;
+    private $normalizer;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->normalizer = new NovarraGoogleTranslator();
     }
@@ -37,7 +37,7 @@ class NovarraGoogleTranslatorTest extends \PHPUnit\Framework\TestCase
      * @param string $userAgent
      * @param string $expected
      */
-    public function testNovarraAndGoogleTranslator($userAgent, $expected)
+    public function testNovarraAndGoogleTranslator($userAgent, $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);

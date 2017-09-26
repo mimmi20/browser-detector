@@ -25,7 +25,7 @@ class IosTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsiOS(string $agent)
+    public function testIsiOS(string $agent): void
     {
         $object = new Helper\Ios(new Stringy($agent));
 
@@ -57,7 +57,7 @@ class IosTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotiOS(string $agent)
+    public function testIsNotiOS(string $agent): void
     {
         $object = new Helper\Ios(new Stringy($agent));
 

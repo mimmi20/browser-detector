@@ -24,13 +24,13 @@ class TvFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Factory\Device\TvFactory
      */
-    private $object = null;
+    private $object;
 
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
         $loader       = new DeviceLoader($cache);
@@ -51,7 +51,7 @@ class TvFactoryTest extends \PHPUnit\Framework\TestCase
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
             /** @var $file \SplFileInfo */
-            if (!$file->isFile() || $file->getExtension() !== 'json') {
+            if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }
 

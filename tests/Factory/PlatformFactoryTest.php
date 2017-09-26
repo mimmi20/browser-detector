@@ -25,13 +25,13 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Factory\PlatformFactory
      */
-    private $object = null;
+    private $object;
 
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
         $loader       = new PlatformLoader($cache);
@@ -47,7 +47,7 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string $manufacturer
      * @param int    $bits
      */
-    public function testDetect($userAgent, $platform, $version, $manufacturer, $bits)
+    public function testDetect($userAgent, $platform, $version, $manufacturer, $bits): void
     {
         $normalizer = (new NormalizerFactory())->build();
 
@@ -95,7 +95,7 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
             /** @var $file \SplFileInfo */
-            if (!$file->isFile() || $file->getExtension() !== 'json') {
+            if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }
 

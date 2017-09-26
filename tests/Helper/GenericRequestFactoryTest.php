@@ -23,14 +23,14 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Helper\GenericRequestFactory
      */
-    private $object = null;
+    private $object;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->object = new GenericRequestFactory();
     }
 
-    public function testCreateRequestFromArray()
+    public function testCreateRequestFromArray(): void
     {
         $userAgent = 'testUA';
         $header    = [
@@ -46,7 +46,7 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
         self::assertSame($userAgent, $result->getBrowserUserAgent());
     }
 
-    public function testCreateRequestFromEmptyHeaders()
+    public function testCreateRequestFromEmptyHeaders(): void
     {
         $header    = [];
 
@@ -59,7 +59,7 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
         self::assertSame('', $result->getBrowserUserAgent());
     }
 
-    public function testCreateRequestFromString()
+    public function testCreateRequestFromString(): void
     {
         $userAgent = 'testUA';
         $header    = [
@@ -75,7 +75,7 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
         self::assertSame($userAgent, $result->getBrowserUserAgent());
     }
 
-    public function testCreateRequestFromPsr7Message()
+    public function testCreateRequestFromPsr7Message(): void
     {
         $userAgent = 'testUA';
         $deviceUa  = 'testDeviceUa';

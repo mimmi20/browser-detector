@@ -25,7 +25,7 @@ class TvTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsTv(string $agent)
+    public function testIsTv(string $agent): void
     {
         $object = new Helper\Tv(new Stringy($agent));
 
@@ -58,7 +58,7 @@ class TvTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotTv(string $agent)
+    public function testIsNotTv(string $agent): void
     {
         $object = new Helper\Tv(new Stringy($agent));
 

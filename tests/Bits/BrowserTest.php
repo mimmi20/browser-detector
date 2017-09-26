@@ -24,7 +24,7 @@ class BrowserTest extends \PHPUnit\Framework\TestCase
      * @param string $useragent
      * @param int    $expected
      */
-    public function testGetBits(string $useragent, int $expected)
+    public function testGetBits(string $useragent, int $expected): void
     {
         $object = new Browser($useragent);
         self::assertSame($expected, $object->getBits());

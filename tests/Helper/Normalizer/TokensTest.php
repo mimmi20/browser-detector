@@ -23,9 +23,9 @@ class TokensTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Helper\Normalizer\Tokens
      */
-    private $normalizer = null;
+    private $normalizer;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->normalizer = new Tokens();
     }
@@ -37,7 +37,7 @@ class TokensTest extends \PHPUnit\Framework\TestCase
      * @param string $userAgent
      * @param string $expected
      */
-    public function shouldNormalizeTheDamagedToken($userAgent, $expected)
+    public function shouldNormalizeTheDamagedToken($userAgent, $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);

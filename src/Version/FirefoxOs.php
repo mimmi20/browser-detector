@@ -32,35 +32,35 @@ class FirefoxOs implements VersionCacheFactoryInterface
 
         $version = (float) $matches[1];
 
-        if ($version >= 37.0) {
+        if (37.0 <= $version) {
             return new Version('2', '2');
         }
 
-        if ($version >= 34.0) {
+        if (34.0 <= $version) {
             return new Version('2', '1');
         }
 
-        if ($version >= 32.0) {
+        if (32.0 <= $version) {
             return new Version('2', '0');
         }
 
-        if ($version >= 30.0) {
+        if (30.0 <= $version) {
             return new Version('1', '4');
         }
 
-        if ($version >= 28.0) {
+        if (28.0 <= $version) {
             return new Version('1', '3');
         }
 
-        if ($version >= 26.0) {
+        if (26.0 <= $version) {
             return new Version('1', '2');
         }
 
-        if ($version >= 18.1) {
+        if (18.1 <= $version) {
             return new Version('1', '1');
         }
 
-        if ($version >= 18.0) {
+        if (18.0 <= $version) {
             return new Version('1', '0');
         }
 

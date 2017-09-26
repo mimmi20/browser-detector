@@ -28,7 +28,7 @@ class UserAgentNormalizerTest extends \PHPUnit\Framework\TestCase
      * @param string $userAgent
      * @param string $expected
      */
-    public function testNormalizeConstruct($userAgent, $expected)
+    public function testNormalizeConstruct($userAgent, $expected): void
     {
         $normalizer = new UserAgentNormalizer([new Mozilla()]);
 
@@ -44,7 +44,7 @@ class UserAgentNormalizerTest extends \PHPUnit\Framework\TestCase
      * @param string $userAgent
      * @param string $expected
      */
-    public function testNormalizeAdd($userAgent, $expected)
+    public function testNormalizeAdd($userAgent, $expected): void
     {
         $normalizer = new UserAgentNormalizer();
         $normalizer->add(new Mozilla());

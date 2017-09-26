@@ -26,12 +26,12 @@ class Os
     /**
      * @var string the user agent to handle
      */
-    private $useragent = null;
+    private $useragent;
 
     /**
      * @var int the bits of the detected browser
      */
-    private $bits = null;
+    private $bits;
 
     /**
      * class constructor

@@ -25,7 +25,7 @@ class FirefoxOsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsFirefoxOs(string $agent)
+    public function testIsFirefoxOs(string $agent): void
     {
         self::assertTrue((new FirefoxOs(new Stringy($agent)))->isFirefoxOs());
     }
@@ -44,7 +44,7 @@ class FirefoxOsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotFirefoxOs(string $agent)
+    public function testIsNotFirefoxOs(string $agent): void
     {
         self::assertFalse((new FirefoxOs(new Stringy($agent)))->isFirefoxOs());
     }

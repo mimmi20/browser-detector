@@ -32,7 +32,7 @@ class EngineFactory implements FactoryInterface
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
-    private $loader = null;
+    private $loader;
 
     /**
      * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
@@ -97,7 +97,7 @@ class EngineFactory implements FactoryInterface
 
         if (null !== $browserLoader && $s->containsAny(['webkit', 'cfnetwork', 'safari', 'dalvik'], false)) {
             /** @var \UaResult\Browser\Browser $chrome */
-            list($chrome)  = $browserLoader->load('chrome', $useragent);
+            [$chrome]      = $browserLoader->load('chrome', $useragent);
             $version       = $chrome->getVersion();
             $chromeVersion = 0;
 
@@ -105,7 +105,7 @@ class EngineFactory implements FactoryInterface
                 $chromeVersion = (int) $version->getVersion(VersionInterface::IGNORE_MINOR);
             }
 
-            if ($chromeVersion >= 28) {
+            if (28 <= $chromeVersion) {
                 return $this->loader->load('blink', $useragent);
             }
 

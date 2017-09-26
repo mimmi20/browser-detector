@@ -23,9 +23,9 @@ class EncryptionRemoverTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \BrowserDetector\Helper\Normalizer\EncryptionRemover
      */
-    private $normalizer = null;
+    private $normalizer;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->normalizer = new EncryptionRemover();
     }
@@ -37,7 +37,7 @@ class EncryptionRemoverTest extends \PHPUnit\Framework\TestCase
      * @param string $userAgent
      * @param string $expected
      */
-    public function shouldNormalizeTheEncryptionToken($userAgent, $expected)
+    public function shouldNormalizeTheEncryptionToken($userAgent, $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);

@@ -259,7 +259,7 @@ class NokiaFactory implements Factory\FactoryInterface
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
-    private $loader = null;
+    private $loader;
 
     /**
      * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader

@@ -25,7 +25,7 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsWindows(string $agent)
+    public function testIsWindows(string $agent): void
     {
         self::assertTrue((new Helper\Windows(new Stringy($agent)))->isWindows());
     }
@@ -58,7 +58,7 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotWindows(string $agent)
+    public function testIsNotWindows(string $agent): void
     {
         self::assertFalse((new Helper\Windows(new Stringy($agent)))->isWindows());
     }
@@ -99,7 +99,7 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsMobileWindows(string $agent)
+    public function testIsMobileWindows(string $agent): void
     {
         self::assertTrue((new Helper\Windows(new Stringy($agent)))->isMobileWindows());
     }
@@ -117,7 +117,7 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $agent
      */
-    public function testIsNotMobileWindows(string $agent)
+    public function testIsNotMobileWindows(string $agent): void
     {
         self::assertFalse((new Helper\Windows(new Stringy($agent)))->isMobileWindows());
     }
