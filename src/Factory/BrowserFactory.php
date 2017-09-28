@@ -1303,6 +1303,7 @@ class BrowserFactory implements FactoryInterface
             'boxee'                           => 'boxee',
             'webianshell'                     => 'webianshell',
             'nightingale'                     => 'nightingale',
+            'sundance'                        => 'sundance',
             'mozilla'                         => 'mozilla',
             'goog'                            => 'googlebot',
             'fetchstream'                     => 'fetch-stream',
