@@ -27,7 +27,8 @@ class MpieFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        '909t' => 'mpie 909t',
+        '909t'  => 'mpie 909t',
+        ' m13 ' => 'mpie m13',
     ];
 
     /**

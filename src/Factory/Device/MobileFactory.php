@@ -373,7 +373,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\FujitsuFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['sn10t1', 'hsg1303'], false)) {
+        if ($s->containsAny(['sn10t1'], false)) {
+            return (new Mobile\HannspreeFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/hsg\d{4}/i', $useragent)) {
             return (new Mobile\HannspreeFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1577,7 +1581,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['c660', 'ls670', 'vm670', 'ln240'], false)) {
+        if ($s->containsAny(['c660', 'ls670', 'vm670', 'ln240', 'optimus g'], false)) {
             return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1849,7 +1853,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\FeitengFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['x909', 'r815', 'r8106', 'u705t', 'find7', 'a37f', 'r7f', 'r7sf', 'x9006', 'x9076'], false)) {
+        if ($s->containsAny(['x909', 'r815', 'r8106', 'u705t', 'find7', 'a37f', 'r7f', 'r7sf', 'x9006', 'x9076', ' 1201 '], false)) {
             return (new Mobile\OppoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2021,7 +2025,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LeagooFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['v1_viper', 'a4you', 'p5_quad', 'x2_soul', 'ax4nano'], false)) {
+        if ($s->containsAny(['v1_viper', 'a4you', 'p5_quad', 'x2_soul', 'ax4nano', 'x1_soul'], false)) {
             return (new Mobile\AllviewFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2153,7 +2157,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NinetecFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('909t', false)) {
+        if ($s->containsAny(['909t', ' m13 '], false)) {
             return (new Mobile\MpieFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2221,7 +2225,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\KianoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['u7 plus', 'u16 max', 'k6000 pro', 'k4000'], false)) {
+        if ($s->containsAny(['u7 plus', 'u16 max', 'k6000 pro', 'k4000', 'k10000'], false)) {
             return (new Mobile\OukitelFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2423,6 +2427,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('shift7', false)) {
             return (new Mobile\ShiftFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('k960', false)) {
+            return (new Mobile\JlinkszFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {

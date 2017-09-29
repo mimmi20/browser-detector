@@ -57,6 +57,7 @@ class ArchosFactory implements Factory\FactoryInterface
         '55 platinum'           => 'archos 55 platinum',
         '55 helium'             => 'archos 55 helium',
         '53 platinum'           => 'archos 53 platinum',
+        '52 platinum'           => 'archos 52 platinum',
         '50e neon'              => 'archos 50e neon',
         '50e helium'            => 'archos 50e helium',
         '50d neon'              => 'archos 50d neon',

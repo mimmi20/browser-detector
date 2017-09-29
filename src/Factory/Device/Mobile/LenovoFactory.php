@@ -53,6 +53,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'p1a42'                   => 'lenovo p1a42',
         'p2a42'                   => 'lenovo p2a42',
         ' p2 '                    => 'lenovo p2a42',
+        's8-50f'                  => 'lenovo s8-50f',
         's8-50l'                  => 'lenovo s8-50l',
         's6000d'                  => 'lenovo s6000d',
         's860'                    => 'lenovo s860',

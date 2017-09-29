@@ -140,6 +140,7 @@ class LgFactory implements Factory\FactoryInterface
         'p690'          => 'lg p690',
         'p509'          => 'lg p509',
         'optimus-t'     => 'lg p509',
+        'optimus g'     => 'lg optimus g',
         'p505r'         => 'lg p505r',
         'p505'          => 'lg p505',
         'kp500'         => 'lg kp500',

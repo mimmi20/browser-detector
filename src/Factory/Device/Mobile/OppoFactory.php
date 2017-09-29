@@ -39,6 +39,7 @@ class OppoFactory implements Factory\FactoryInterface
         'u705t' => 'oppo u705t',
         'r815'  => 'oppo r815',
         'r813t' => 'oppo r813t',
+        '1201'  => 'oppo 1201',
     ];
 
     /**

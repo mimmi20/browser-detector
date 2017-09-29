@@ -21,18 +21,13 @@ use Stringy\Stringy;
  * @copyright 2012-2017 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class JaytechFactory implements Factory\FactoryInterface
+class JlinkszFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'tpc-xte10d'  => 'jaytech tpc-xte10d',
-        'tpc-x10f1'   => 'jaytech tpc-x10f1',
-        'tpc-xte7d'   => 'jaytech tpc-xte7d',
-        'tpc-pa10.1m' => 'jaytech pa10.1m',
-        'tpc-736'     => 'jaytech tpc-736',
-        'tpc-pa9702'  => 'jaytech tpc-pa9702',
+        'k960' => 'jlinksz k960',
     ];
 
     /**
@@ -64,6 +59,6 @@ class JaytechFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general jaytech device', $useragent);
+        return $this->loader->load('general jlinksz device', $useragent);
     }
 }
