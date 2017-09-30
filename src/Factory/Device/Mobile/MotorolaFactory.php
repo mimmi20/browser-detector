@@ -27,6 +27,7 @@ class MotorolaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'moto g4 plus'    => 'motorola moto g4 plus',
         'xt830c'          => 'motorola xt830c',
         'xt1562'          => 'motorola xt1562',
         'xt1064'          => 'motorola xt1064',
@@ -145,6 +146,7 @@ class MotorolaFactory implements Factory\FactoryInterface
         'motoa953'        => 'motorola a953',
         'motoq9c'         => 'motorola q9c',
         'l7'              => 'motorola slvr l7',
+        ' z '             => 'motorola moto z',
         ' droid '         => 'motorola droid',
     ];
 

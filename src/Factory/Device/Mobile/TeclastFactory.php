@@ -28,6 +28,7 @@ class TeclastFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'd4c5' => 'teclast d4c5',
+        'k9c6' => 'teclast k9c6',
     ];
 
     /**

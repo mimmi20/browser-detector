@@ -28,6 +28,7 @@ class XoroFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'telepad 9a1' => 'xoro xor400250',
+        'pad1851'     => 'xoro pad 1851',
         'telepad830'  => 'xoro telepad 830',
     ];
 

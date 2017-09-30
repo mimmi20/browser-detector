@@ -27,6 +27,7 @@ class CaptivaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        '10.1 hd'              => 'captiva 10.1 hd',
         'pad 10.1 quad fhd 3g' => 'captiva pad 10.1 quad fhd 3g',
     ];
 

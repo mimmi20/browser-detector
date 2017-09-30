@@ -114,6 +114,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'a3500-hv'                => 'lenovo a3500-hv',
         'a3500-h'                 => 'lenovo a3500-h',
         'a3500-fl'                => 'lenovo a3500-fl',
+        'a3500-f'                 => 'lenovo a3500-f',
         'a3300-hv'                => 'lenovo a3300-hv',
         'a3300-h'                 => 'lenovo a3300-h',
         'a3300-gv'                => 'lenovo a3300-gv',

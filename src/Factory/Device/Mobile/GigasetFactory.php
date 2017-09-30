@@ -28,6 +28,7 @@ class GigasetFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'gs55-6' => 'gigaset gs55-6',
+        'gs53-6' => 'gigaset gs53-6',
         'gs160'  => 'gigaset gs160',
         'qv1030' => 'gigaset qv1030',
         'qv830'  => 'gigaset qv830',

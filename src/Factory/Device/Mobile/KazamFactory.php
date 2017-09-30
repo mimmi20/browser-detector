@@ -30,6 +30,7 @@ class KazamFactory implements Factory\FactoryInterface
         'thunder2 50'  => 'kazam thunder2 50',
         'thunder q45'  => 'kazam thunder q45',
         'trooper2 50'  => 'kazam trooper 2 5.0',
+        'trooper 455'  => 'kazam trooper 455',
         'trooper 451'  => 'kazam trooper 451',
         'trooper 450l' => 'kazam trooper 450l',
         'trooper_450l' => 'kazam trooper 450l',

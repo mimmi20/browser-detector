@@ -27,7 +27,9 @@ class MpmanFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'mpqc730' => 'mpman mpqc730',
+        'mpqc1040i' => 'mpman mpqc1040i',
+        'mpqc1010'  => 'mpman mpqc1010',
+        'mpqc730'   => 'mpman mpqc730',
     ];
 
     /**
