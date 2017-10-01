@@ -29,6 +29,7 @@ class SamsungFactory implements Factory\FactoryInterface
     private $devices = [
         'sm-t807j'        => 'samsung sm-t807j',
         'sct21'           => 'samsung sm-t807j',
+        'sm-c7000'        => 'samsung sm-c7000',
         'sm-c5000'        => 'samsung sm-c5000',
         'shv-e330k'       => 'samsung shv-e330k',
         'sm-g570f'        => 'samsung sm-g570f',
@@ -121,6 +122,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-j700f'        => 'samsung sm-j700f',
         'sm-j700m'        => 'samsung sm-j700m',
         'sm-j700h'        => 'samsung sm-j700h',
+        'sm-j530f'        => 'samsung sm-j530f',
         'sm-j510fn'       => 'samsung sm-j510fn',
         'sm-j510f'        => 'samsung sm-j510f',
         'sm-j5108'        => 'samsung sm-j5108',

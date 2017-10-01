@@ -1521,7 +1521,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NvidiaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['K910L', ' K1 ', ' A1', ' A65 ', ' A60 ', 'YOGA Tablet', 'Tab2A7-', 'P770', 'ZUK ', ' P2 ', 'YB1-X90L', 'B5060', 'S1032X'], true)) {
+        if ($s->containsAny(['K910L', ' K1 ', ' A1', ' A65 ', ' A60 ', 'YOGA Tablet', 'Tab2A7-', 'P770', 'ZUK ', ' P2 ', 'YB1-X90L', 'B5060', 'S1032X', 'X1030X'], true)) {
             return (new Mobile\LenovoFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1669,7 +1669,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\GeniatechFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['P3000', 'P8000'], true)) {
+        if ($s->containsAny(['P3000', 'P8000', 'P9000'], true)) {
             return (new Mobile\ElephoneFactory($this->loader))->detect($useragent, $s);
         }
 

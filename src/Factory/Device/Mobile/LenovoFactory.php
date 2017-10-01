@@ -27,6 +27,7 @@ class LenovoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'x1030x'                  => 'lenovo x1030x',
         'zuk z1'                  => 'lenovo zuk z1',
         'k80m'                    => 'lenovo k80m',
         'yb1-x90l'                => 'lenovo yb1-x90l',

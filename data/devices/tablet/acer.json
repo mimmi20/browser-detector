@@ -332,8 +332,21 @@
     "platform": null,
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "acer b3-a20b": {
+    "codename": "B3-A20B",
+    "marketingName": "Iconia One 10",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
     "dualOrientation": true,
     "colors": null
   }

@@ -48,6 +48,7 @@ class AcerFactory implements Factory\FactoryInterface
         'z150'         => 'acer z150',
         'z130'         => 'acer z130',
         'liquid'       => 'acer s100',
+        'b3-a20b'      => 'acer b3-a20b',
         'b3-a20'       => 'acer b3-a20',
         'b3-a30'       => 'acer b3-a30',
         'b1-810'       => 'acer b1-810',
