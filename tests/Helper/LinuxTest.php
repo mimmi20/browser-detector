@@ -24,12 +24,17 @@ class LinuxTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsLinux
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsLinux(string $agent): void
     {
         self::assertTrue((new Helper\Linux(new Stringy($agent)))->isLinux());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsLinux()
     {
         return [
@@ -63,12 +68,17 @@ class LinuxTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsNotLinux
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsNotLinux(string $agent): void
     {
         self::assertFalse((new Helper\Linux(new Stringy($agent)))->isLinux());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsNotLinux()
     {
         return [

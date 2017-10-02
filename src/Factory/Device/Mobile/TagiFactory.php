@@ -27,7 +27,7 @@ class TagiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'x12'   => 'tagi x12',
+        'x12' => 'tagi x12',
     ];
 
     /**

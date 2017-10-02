@@ -69,7 +69,7 @@ jobs:
       install:
         - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
         - travis_retry composer require --update-with-dependencies --prefer-dist squizlabs/php_codesniffer:^3.0
-      script: vendor/bin/phpcs
+      script: vendor/bin/phpcs --colors
     - stage: check coding style
       php: 7.1
       env: COMPOSER_FLAGS=""

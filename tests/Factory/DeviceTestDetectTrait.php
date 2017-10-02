@@ -141,17 +141,6 @@ trait DeviceTestDetectTrait
                 $result->getResolutionWidth(),
                 'Expected display width to be "' . $width . '" (was "' . $result->getResolutionWidth() . '")'
             );
-            //        } elseif (in_array($result->getType()->getName(), ['Tablet', 'FonePad', 'Smartphone'])) {
-//            self::assertNotNull(
-//                $result->getResolutionWidth(),
-//                'Expected display width NOT to be "null" for tablet/smartphone devices (was "' . $result->getResolutionWidth() . '")'
-//            );
-//
-//            self::assertSame(
-//                $width,
-//                $result->getResolutionWidth(),
-//                'Expected display width to be "' . $width . '" (was "' . $result->getResolutionWidth() . '")'
-//            );
         } elseif (null !== $width) {
             self::assertSame(
                 $width,
@@ -171,17 +160,6 @@ trait DeviceTestDetectTrait
                 $result->getResolutionHeight(),
                 'Expected display height to be "' . $height . '" (was "' . $result->getResolutionHeight() . '")'
             );
-            //        } elseif (in_array($result->getType()->getName(), ['Tablet', 'FonePad', 'Smartphone'])) {
-//            self::assertNotNull(
-//                $result->getResolutionHeight(),
-//                'Expected display height NOT to be "null" for tablet/smartphone devices (was "' . $result->getResolutionHeight() . '")'
-//            );
-//
-//            self::assertSame(
-//                $height,
-//                $result->getResolutionHeight(),
-//                'Expected display height to be "' . $height . '" (was "' . $result->getResolutionHeight() . '")'
-//            );
         } elseif (null !== $height) {
             self::assertSame(
                 $height,
@@ -189,13 +167,5 @@ trait DeviceTestDetectTrait
                 'Expected display height to be "' . $height . '" (was "' . $result->getResolutionHeight() . '")'
             );
         }
-        /*
-        // @todo: add colors to result
-        self::assertSame(
-            $colors,
-            $result->col(),
-            'Expected pointing method to be "' . $colors . '" (was "' . $result->getPointingMethod() . '")'
-        );
-        /**/
     }
 }

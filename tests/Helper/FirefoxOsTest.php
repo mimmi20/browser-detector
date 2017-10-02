@@ -24,12 +24,17 @@ class FirefoxOsTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsFirefoxOs
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsFirefoxOs(string $agent): void
     {
         self::assertTrue((new FirefoxOs(new Stringy($agent)))->isFirefoxOs());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsFirefoxOs()
     {
         return [
@@ -43,12 +48,17 @@ class FirefoxOsTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsNotFirefoxOs
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsNotFirefoxOs(string $agent): void
     {
         self::assertFalse((new FirefoxOs(new Stringy($agent)))->isFirefoxOs());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsNotFirefoxOs()
     {
         return [

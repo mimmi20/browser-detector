@@ -25,6 +25,12 @@ class MozillaTest extends \PHPUnit\Framework\TestCase
      */
     private $normalizer;
 
+    /**
+     * Sets up the fixture, for example, open a network connection.
+     * This method is called before a test is executed.
+     *
+     * @return void
+     */
     protected function setUp(): void
     {
         $this->normalizer = new Mozilla();
@@ -36,13 +42,18 @@ class MozillaTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $userAgent
      * @param string $expected
+     *
+     * @return void
      */
-    public function shouldNormalizeTheMozillaToken($userAgent, $expected): void
+    public function shouldNormalizeTheMozillaToken(string $userAgent, string $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);
     }
 
+    /**
+     * @return array[]
+     */
     public function userAgentsDataProvider()
     {
         return [

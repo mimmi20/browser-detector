@@ -24,6 +24,8 @@ class MacintoshTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsMacintosh
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsMacintosh(string $agent): void
     {
@@ -32,6 +34,9 @@ class MacintoshTest extends \PHPUnit\Framework\TestCase
         self::assertTrue($object->isMacintosh());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsMacintosh()
     {
         return [
@@ -48,6 +53,8 @@ class MacintoshTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsNotMacintosh
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsNotMacintosh(string $agent): void
     {
@@ -56,6 +63,9 @@ class MacintoshTest extends \PHPUnit\Framework\TestCase
         self::assertFalse($object->isMacintosh());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsNotMacintosh()
     {
         return [

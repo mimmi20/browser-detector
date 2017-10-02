@@ -27,6 +27,8 @@ class EngineLoaderTest extends \PHPUnit\Framework\TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @return void
      */
     protected function setUp(): void
     {
@@ -34,6 +36,9 @@ class EngineLoaderTest extends \PHPUnit\Framework\TestCase
         $this->object = new EngineLoader($cache);
     }
 
+    /**
+     * @return void
+     */
     public function testLoadNotAvailable(): void
     {
         $this->expectException('\BrowserDetector\Loader\NotFoundException');

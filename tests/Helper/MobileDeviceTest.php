@@ -24,6 +24,8 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsMobile
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsMobile(string $agent): void
     {
@@ -32,6 +34,9 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
         self::assertTrue($object->isMobile());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsMobile()
     {
         return [
@@ -92,6 +97,8 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsNotMobile
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsNotMobile(string $agent): void
     {
@@ -100,6 +107,9 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
         self::assertFalse($object->isMobile());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsNotMobile()
     {
         return [

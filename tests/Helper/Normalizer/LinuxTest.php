@@ -25,6 +25,12 @@ class LinuxTest extends \PHPUnit\Framework\TestCase
      */
     private $normalizer;
 
+    /**
+     * Sets up the fixture, for example, open a network connection.
+     * This method is called before a test is executed.
+     *
+     * @return void
+     */
     protected function setUp(): void
     {
         $this->normalizer = new Linux();
@@ -36,13 +42,18 @@ class LinuxTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $userAgent
      * @param string $expected
+     *
+     * @return void
      */
-    public function shouldNormalizeTheLinuxToken($userAgent, $expected): void
+    public function shouldNormalizeTheLinuxToken(string $userAgent, string $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);
     }
 
+    /**
+     * @return array[]
+     */
     public function userAgentsDataProvider()
     {
         return [

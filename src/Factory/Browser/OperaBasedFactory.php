@@ -298,30 +298,30 @@ class OperaBasedFactory implements FactoryInterface
         }
 
         $checkBeforeCentBrowser = [
-            'chromium'                            => 'chromium',
-            'iron'                                => 'iron',
-            'midori'                              => 'midori',
-            'locubot'                             => 'locubot',
-            'acapbot'                             => 'acapbot',
-            'deepcrawl'                           => 'deepcrawl',
-            'google page speed insights'          => 'google pagespeed insights',
-            'web/snippet'                         => 'google web snippet',
-            'googlebot-mobile'                    => 'googlebot-mobile',
-            'google wireless transcoder'          => 'google wireless transcoder',
-            'com.google.googleplus'               => 'google+ app',
-            'google-http-java-client'             => 'google http client library for java',
-            'googlebot-image'                     => 'google image search',
-            'googlebot'                           => 'googlebot',
-            'viera'                               => 'smartviera',
-            'nichrome'                            => 'nichrome',
-            'kinza'                               => 'kinza',
-            '1stbrowser'                          => '1stbrowser',
-            'tenta'                               => 'tenta',
-            'merchantcentricbot'                  => 'merchantcentricbot',
-            'appcent'                             => 'appcent',
-            'commerce browser center'             => 'commerce browser center',
-            'iccrawler'                           => 'iccrawler',
-            'centil-schweiz webbot'               => 'centil-schweiz webbot',
+            'chromium'                   => 'chromium',
+            'iron'                       => 'iron',
+            'midori'                     => 'midori',
+            'locubot'                    => 'locubot',
+            'acapbot'                    => 'acapbot',
+            'deepcrawl'                  => 'deepcrawl',
+            'google page speed insights' => 'google pagespeed insights',
+            'web/snippet'                => 'google web snippet',
+            'googlebot-mobile'           => 'googlebot-mobile',
+            'google wireless transcoder' => 'google wireless transcoder',
+            'com.google.googleplus'      => 'google+ app',
+            'google-http-java-client'    => 'google http client library for java',
+            'googlebot-image'            => 'google image search',
+            'googlebot'                  => 'googlebot',
+            'viera'                      => 'smartviera',
+            'nichrome'                   => 'nichrome',
+            'kinza'                      => 'kinza',
+            '1stbrowser'                 => '1stbrowser',
+            'tenta'                      => 'tenta',
+            'merchantcentricbot'         => 'merchantcentricbot',
+            'appcent'                    => 'appcent',
+            'commerce browser center'    => 'commerce browser center',
+            'iccrawler'                  => 'iccrawler',
+            'centil-schweiz webbot'      => 'centil-schweiz webbot',
         ];
 
         foreach ($checkBeforeCentBrowser as $search => $key) {
@@ -391,10 +391,10 @@ class OperaBasedFactory implements FactoryInterface
         }
 
         $checkBeforeDragon = [
-            'qupzilla'    => 'qupzilla',
-            'ur browser'  => 'ur-browser',
-            'urbrowser'   => 'ur-browser',
-            ' ur/'        => 'ur-browser',
+            'qupzilla'   => 'qupzilla',
+            'ur browser' => 'ur-browser',
+            'urbrowser'  => 'ur-browser',
+            ' ur/'       => 'ur-browser',
         ];
 
         foreach ($checkBeforeDragon as $search => $key) {
@@ -706,10 +706,10 @@ class OperaBasedFactory implements FactoryInterface
         }
 
         $checkLastUiwebview = [
-            'ios'                                 => 'mobile safari uiwebview',
-            'iphone'                              => 'mobile safari uiwebview',
-            'ipad'                                => 'mobile safari uiwebview',
-            'ipod'                                => 'mobile safari uiwebview',
+            'ios'    => 'mobile safari uiwebview',
+            'iphone' => 'mobile safari uiwebview',
+            'ipad'   => 'mobile safari uiwebview',
+            'ipod'   => 'mobile safari uiwebview',
         ];
 
         foreach ($checkLastUiwebview as $search => $key) {

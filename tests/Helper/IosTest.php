@@ -24,6 +24,8 @@ class IosTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsiOS
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsiOS(string $agent): void
     {
@@ -32,6 +34,9 @@ class IosTest extends \PHPUnit\Framework\TestCase
         self::assertTrue($object->isIos());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsiOS()
     {
         return [
@@ -56,6 +61,8 @@ class IosTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsNotiOS
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsNotiOS(string $agent): void
     {
@@ -64,6 +71,9 @@ class IosTest extends \PHPUnit\Framework\TestCase
         self::assertFalse($object->isIos());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsNotiOS()
     {
         return [

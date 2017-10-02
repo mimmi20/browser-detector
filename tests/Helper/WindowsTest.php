@@ -24,12 +24,17 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsWindows
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsWindows(string $agent): void
     {
         self::assertTrue((new Helper\Windows(new Stringy($agent)))->isWindows());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsWindows()
     {
         return [
@@ -57,12 +62,17 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsNotWindows
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsNotWindows(string $agent): void
     {
         self::assertFalse((new Helper\Windows(new Stringy($agent)))->isWindows());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsNotWindows()
     {
         return [
@@ -98,12 +108,17 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsMobileWindows
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsMobileWindows(string $agent): void
     {
         self::assertTrue((new Helper\Windows(new Stringy($agent)))->isMobileWindows());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsMobileWindows()
     {
         return [
@@ -116,12 +131,17 @@ class WindowsTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsNotMobileWindows
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsNotMobileWindows(string $agent): void
     {
         self::assertFalse((new Helper\Windows(new Stringy($agent)))->isMobileWindows());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsNotMobileWindows()
     {
         return [

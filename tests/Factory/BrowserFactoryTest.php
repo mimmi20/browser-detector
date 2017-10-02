@@ -37,6 +37,8 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @return void
      */
     protected function setUp(): void
     {
@@ -66,7 +68,7 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
 
         $s = new Stringy($normalizedUa);
 
-        $platform     = $this->platformFactory->detect($normalizedUa, $s);
+        $platform = $this->platformFactory->detect($normalizedUa, $s);
 
         /** @var \UaResult\Browser\BrowserInterface $result */
         [$result] = $this->object->detect($normalizedUa, $s, $platform);

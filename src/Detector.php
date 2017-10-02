@@ -109,8 +109,8 @@ class Detector
 
         /** @var \UaResult\Browser\BrowserInterface $browser */
         /** @var \UaResult\Engine\EngineInterface $engine */
-        [$browser, $engine]     = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
-        $engineLoader           = new Loader\EngineLoader($this->cache);
+        [$browser, $engine] = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
+        $engineLoader       = new Loader\EngineLoader($this->cache);
 
         if (null === $engine || in_array($engine->getName(), [null, 'unknown'])) {
             $this->logger->debug('engine not detected from browser');

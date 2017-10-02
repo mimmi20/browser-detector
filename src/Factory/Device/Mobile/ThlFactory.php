@@ -27,16 +27,16 @@ class ThlFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        't6c'       => 'thl t6c',
-        't9'        => 'thl t9',
-        'w200'      => 'thl w200',
-        'w100'      => 'thl w100',
-        ' w8'       => 'thl w8',
-        'thl w7'    => 'thl w7',
-        't6s'       => 'thl t6s',
-        '5000'      => 'thl 5000',
-        '4400'      => 'thl 4400',
-        'thl 2015'  => 'thl 2015',
+        't6c'      => 'thl t6c',
+        't9'       => 'thl t9',
+        'w200'     => 'thl w200',
+        'w100'     => 'thl w100',
+        ' w8'      => 'thl w8',
+        'thl w7'   => 'thl w7',
+        't6s'      => 'thl t6s',
+        '5000'     => 'thl 5000',
+        '4400'     => 'thl 4400',
+        'thl 2015' => 'thl 2015',
     ];
 
     /**

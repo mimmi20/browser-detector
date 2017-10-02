@@ -24,6 +24,8 @@ class TvTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsTv
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsTv(string $agent): void
     {
@@ -32,6 +34,9 @@ class TvTest extends \PHPUnit\Framework\TestCase
         self::assertTrue($object->isTvDevice());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsTv()
     {
         return [
@@ -57,6 +62,8 @@ class TvTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsNotTv
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsNotTv(string $agent): void
     {
@@ -65,6 +72,9 @@ class TvTest extends \PHPUnit\Framework\TestCase
         self::assertFalse($object->isTvDevice());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsNotTv()
     {
         return [

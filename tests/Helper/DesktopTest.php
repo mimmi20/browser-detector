@@ -24,6 +24,8 @@ class DesktopTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsDesktop
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsDesktop(string $agent): void
     {
@@ -32,6 +34,9 @@ class DesktopTest extends \PHPUnit\Framework\TestCase
         self::assertTrue($object->isDesktopDevice());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsDesktop()
     {
         return [
@@ -86,6 +91,8 @@ class DesktopTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsNoDesktop
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsNoDesktop(string $agent): void
     {
@@ -94,6 +101,9 @@ class DesktopTest extends \PHPUnit\Framework\TestCase
         self::assertFalse($object->isDesktopDevice());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsNoDesktop()
     {
         return [

@@ -24,12 +24,17 @@ class AndroidOsTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsAndroidOs
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsAndroidOs(string $agent): void
     {
         self::assertTrue((new Helper\AndroidOs(new Stringy($agent)))->isAndroid());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsAndroidOs()
     {
         return [
@@ -42,12 +47,17 @@ class AndroidOsTest extends \PHPUnit\Framework\TestCase
      * @dataProvider providerIsNotAndroidOs
      *
      * @param string $agent
+     *
+     * @return void
      */
     public function testIsNotAndroidOs(string $agent): void
     {
         self::assertFalse((new Helper\AndroidOs(new Stringy($agent)))->isAndroid());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerIsNotAndroidOs()
     {
         return [

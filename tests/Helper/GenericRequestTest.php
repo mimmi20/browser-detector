@@ -20,6 +20,9 @@ use BrowserDetector\Helper\GenericRequestFactory;
  */
 class GenericRequestTest extends \PHPUnit\Framework\TestCase
 {
+    /**
+     * @return void
+     */
     public function testConstruct(): void
     {
         $userAgent = 'testUA';
@@ -38,6 +41,9 @@ class GenericRequestTest extends \PHPUnit\Framework\TestCase
         self::assertSame($deviceUa, $object->getDeviceUserAgent());
     }
 
+    /**
+     * @return void
+     */
     public function testToarray(): void
     {
         $userAgent = 'testUA';
@@ -45,13 +51,16 @@ class GenericRequestTest extends \PHPUnit\Framework\TestCase
             Constants::HEADER_HTTP_USERAGENT => $userAgent,
         ];
 
-        $original   = new GenericRequest($headers);
-        $array      = $original->getHeaders();
-        $object     = (new GenericRequestFactory())->createRequestFromArray($array);
+        $original = new GenericRequest($headers);
+        $array    = $original->getHeaders();
+        $object   = (new GenericRequestFactory())->createRequestFromArray($array);
 
         self::assertEquals($original, $object);
     }
 
+    /**
+     * @return void
+     */
     public function testToarraySimple(): void
     {
         $userAgent = 'testUA';
@@ -59,8 +68,8 @@ class GenericRequestTest extends \PHPUnit\Framework\TestCase
             Constants::HEADER_HTTP_USERAGENT => $userAgent,
         ];
 
-        $original   = new GenericRequest($headers);
-        $array      = $original->getHeaders();
+        $original = new GenericRequest($headers);
+        $array    = $original->getHeaders();
 
         self::assertEquals($headers, $array);
     }
