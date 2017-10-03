@@ -36,7 +36,7 @@ class EngineLoader implements ExtendedLoaderInterface
      *
      * @return self
      */
-    public function __construct(CacheItemPoolInterface $cache): self
+    public function __construct(CacheItemPoolInterface $cache)
     {
         $this->cache = $cache;
     }

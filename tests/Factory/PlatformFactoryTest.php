@@ -45,15 +45,15 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider providerDetect
      *
-     * @param string $agent
-     * @param string $platform
-     * @param string $version
-     * @param string $manufacturer
-     * @param int    $bits
+     * @param string      $agent
+     * @param string|null $platform
+     * @param string|null $version
+     * @param string|null $manufacturer
+     * @param int|null    $bits
      *
      * @return void
      */
-    public function testDetect(string $agent, string $platform, string $version, string $manufacturer, int $bits): void
+    public function testDetect(string $agent, ?string $platform, ?string $version, ?string $manufacturer, ?int $bits): void
     {
         $normalizer = (new NormalizerFactory())->build();
 

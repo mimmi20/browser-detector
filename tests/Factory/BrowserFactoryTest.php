@@ -55,16 +55,16 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider providerDetect
      *
-     * @param string $userAgent
-     * @param string $browser
-     * @param string $version
-     * @param string $manufacturer
-     * @param int    $bits
-     * @param string $type
+     * @param string      $userAgent
+     * @param string|null $browser
+     * @param string|null $version
+     * @param string|null $manufacturer
+     * @param int|null    $bits
+     * @param string|null $type
      *
      * @return void
      */
-    public function testDetect(string $userAgent, string $browser, string $version, string $manufacturer, int $bits, string $type): void
+    public function testDetect(string $userAgent, ?string $browser, ?string $version, ?string $manufacturer, ?int $bits, ?string $type): void
     {
         $normalizer = (new NormalizerFactory())->build();
 

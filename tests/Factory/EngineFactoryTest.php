@@ -54,14 +54,14 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider providerDetect
      *
-     * @param string $userAgent
-     * @param string $engine
-     * @param string $version
-     * @param string $manufacturer
+     * @param string      $userAgent
+     * @param string|null $engine
+     * @param string|null $version
+     * @param string|null $manufacturer
      *
      * @return void
      */
-    public function testDetect(string $userAgent, string $engine, string $version, string $manufacturer): void
+    public function testDetect(string $userAgent, ?string $engine, ?string $version, ?string $manufacturer): void
     {
         $normalizer      = (new NormalizerFactory())->build();
         $normalizedUa    = $normalizer->normalize($userAgent);

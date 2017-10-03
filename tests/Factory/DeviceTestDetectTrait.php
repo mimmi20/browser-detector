@@ -24,12 +24,12 @@ trait DeviceTestDetectTrait
      * @dataProvider providerDetect
      *
      * @param string      $agent
-     * @param string      $deviceName
-     * @param string      $marketingName
-     * @param string      $manufacturer
-     * @param string      $brand
-     * @param string      $deviceType
-     * @param bool        $dualOrientation
+     * @param string|null $deviceName
+     * @param string|null $marketingName
+     * @param string|null $manufacturer
+     * @param string|null $brand
+     * @param string|null $deviceType
+     * @param bool|null   $dualOrientation
      * @param string|null $pointingMethod
      * @param int|null    $width
      * @param int|null    $height
@@ -37,7 +37,7 @@ trait DeviceTestDetectTrait
      *
      * @return void
      */
-    public function testDetect(string $agent, string $deviceName, string $marketingName, string $manufacturer, string $brand, string $deviceType, bool $dualOrientation, ?string $pointingMethod, ?int $width, ?int $height, ?int $colors): void
+    public function testDetect(string $agent, ?string $deviceName, ?string $marketingName, ? string $manufacturer, ?string $brand, ?string $deviceType, ?bool $dualOrientation, ?string $pointingMethod, ?int $width, ?int $height, ?int $colors): void
     {
         $s = new Stringy($agent);
 
@@ -134,7 +134,7 @@ trait DeviceTestDetectTrait
             );
         }
 
-        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== mb_stripos($result->getDeviceName(), 'general')) {
+        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== mb_stripos((string) $result->getDeviceName(), 'general')) {
             self::assertNull(
                 $result->getResolutionWidth(),
                 'Expected display width to be "null" for general or desktop/tv devices (was "' . $result->getResolutionWidth() . '")'
@@ -153,7 +153,7 @@ trait DeviceTestDetectTrait
             );
         }
 
-        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== mb_stripos($result->getDeviceName(), 'general')) {
+        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== mb_stripos((string) $result->getDeviceName(), 'general')) {
             self::assertNull(
                 $result->getResolutionHeight(),
                 'Expected display height to be "null" for general or desktop/tv devices (was "' . $result->getResolutionHeight() . '")'
