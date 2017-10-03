@@ -19,6 +19,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
 {
@@ -30,6 +32,8 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @return void
      */
     protected function setUp(): void
     {
@@ -49,14 +53,16 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string $deviceType
      * @param bool   $dualOrientation
      * @param string $pointingMethod
+     *
+     * @return void
      */
-    public function testDetect($userAgent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod): void
+    public function testDetect(string $userAgent, string $deviceName, string $marketingName, string $manufacturer, string $brand, string $deviceType, bool $dualOrientation, string $pointingMethod): void
     {
         $normalizer = (new NormalizerFactory())->build();
 
         $normalizedUa = $normalizer->normalize($userAgent);
 
-        /** @var \UaResult\Device\DeviceInterface $result */
+        /* @var \UaResult\Device\DeviceInterface $result */
         [$result] = $this->object->detect($normalizedUa, new Stringy($normalizedUa));
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
@@ -109,13 +115,12 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
         $tests = [];
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-            /** @var $file \SplFileInfo */
+            /* @var $file \SplFileInfo */
             if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }
 
             $subfileTests = json_decode(file_get_contents($file->getPathname()), true);
-            //var_dump($subfileTests);exit;
 
             foreach ($subfileTests as $subfileTest) {
                 if ('this is a fake ua to trigger the fallback' === $subfileTest['ua']) {

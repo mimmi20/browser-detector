@@ -23,11 +23,7 @@ use UaResult\Company\CompanyLoader;
 /**
  * Browser detection class
  *
- * @category  BrowserDetector
- *
- * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class BrowserLoader implements ExtendedLoaderInterface
 {
@@ -38,14 +34,18 @@ class BrowserLoader implements ExtendedLoaderInterface
 
     /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
+     *
+     * @return self
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    public function __construct(CacheItemPoolInterface $cache): self
     {
         $this->cache = $cache;
     }
 
     /**
      * initializes cache
+     *
+     * @return void
      */
     private function init(): void
     {
@@ -97,7 +97,7 @@ class BrowserLoader implements ExtendedLoaderInterface
         } elseif ('VersionFactory' === $browserVersionClass) {
             $version = VersionFactory::detectVersion($useragent, $browser->version->search);
         } else {
-            /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
+            /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
             $versionClass = new $browserVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }
@@ -120,6 +120,8 @@ class BrowserLoader implements ExtendedLoaderInterface
 
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
+     *
+     * @return void
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {

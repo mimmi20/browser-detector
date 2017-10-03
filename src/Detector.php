@@ -29,11 +29,7 @@ use UnexpectedValueException;
 /**
  * Browser Detection class
  *
- * @category  BrowserDetector
- *
- * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class Detector
 {
@@ -78,8 +74,8 @@ class Detector
         $normalizer    = (new NormalizerFactory())->build();
         $deviceUa      = $normalizer->normalize($request->getDeviceUserAgent());
 
-        /* @var \UaResult\Device\DeviceInterface $device */
-        /* @var \UaResult\Os\OsInterface $platform */
+        // @var \UaResult\Device\DeviceInterface $device
+        // @var \UaResult\Os\OsInterface $platform
         try {
             [$device, $platform] = $deviceFactory->detect($deviceUa, new Stringy($deviceUa));
         } catch (NotFoundException $e) {
@@ -107,8 +103,8 @@ class Detector
 
         $browserLoader = new Loader\BrowserLoader($this->cache);
 
-        /** @var \UaResult\Browser\BrowserInterface $browser */
-        /** @var \UaResult\Engine\EngineInterface $engine */
+        // @var \UaResult\Browser\BrowserInterface $browser
+        // @var \UaResult\Engine\EngineInterface $engine
         [$browser, $engine] = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
         $engineLoader       = new Loader\EngineLoader($this->cache);
 

@@ -19,6 +19,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
 {
@@ -43,19 +45,21 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider providerDetect
      *
-     * @param string $userAgent
+     * @param string $agent
      * @param string $platform
      * @param string $version
      * @param string $manufacturer
      * @param int    $bits
+     *
+     * @return void
      */
-    public function testDetect($userAgent, $platform, $version, $manufacturer, $bits): void
+    public function testDetect(string $agent, string $platform, string $version, string $manufacturer, int $bits): void
     {
         $normalizer = (new NormalizerFactory())->build();
 
-        $normalizedUa = $normalizer->normalize($userAgent);
+        $normalizedUa = $normalizer->normalize($agent);
 
-        /** @var \UaResult\Os\OsInterface $result */
+        /* @var \UaResult\Os\OsInterface $result */
         $result = $this->object->detect($normalizedUa, new Stringy($normalizedUa));
 
         self::assertInstanceOf('\UaResult\Os\OsInterface', $result);
@@ -96,7 +100,7 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
         $tests = [];
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-            /** @var $file \SplFileInfo */
+            /* @var $file \SplFileInfo */
             if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }

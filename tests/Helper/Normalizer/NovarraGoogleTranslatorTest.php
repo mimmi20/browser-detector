@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\NovarraGoogleTranslator;
  * Class NovarraGoogleTranslatorTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class NovarraGoogleTranslatorTest extends \PHPUnit\Framework\TestCase
 {

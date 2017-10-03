@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\LocaleRemover;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class LocaleRemoverTest extends \PHPUnit\Framework\TestCase
 {

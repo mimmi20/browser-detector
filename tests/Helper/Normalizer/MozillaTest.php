@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\Mozilla;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class MozillaTest extends \PHPUnit\Framework\TestCase
 {

@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\Linux;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class LinuxTest extends \PHPUnit\Framework\TestCase
 {

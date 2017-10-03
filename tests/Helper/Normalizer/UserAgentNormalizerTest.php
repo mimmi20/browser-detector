@@ -18,6 +18,8 @@ use BrowserDetector\Helper\Normalizer\UserAgentNormalizer;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class UserAgentNormalizerTest extends \PHPUnit\Framework\TestCase
 {

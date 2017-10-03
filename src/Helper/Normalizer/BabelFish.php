@@ -13,6 +13,8 @@ namespace BrowserDetector\Helper\Normalizer;
 
 /**
  * User Agent Normalizer - removes BabelFish garbage from user agent
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class BabelFish implements NormalizerInterface
 {

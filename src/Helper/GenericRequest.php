@@ -16,6 +16,8 @@ use BrowserDetector\Helper\GenericRequest\Utils;
 /**
  * Generic WURFL Request object containing User Agent, UAProf and xhtml device data; its id
  * property is the SHA512 hash of the user agent
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class GenericRequest
 {

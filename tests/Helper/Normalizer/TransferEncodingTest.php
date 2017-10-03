@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\TransferEncoding;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class TransferEncodingTest extends \PHPUnit\Framework\TestCase
 {

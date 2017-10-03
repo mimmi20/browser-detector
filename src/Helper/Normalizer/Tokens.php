@@ -13,6 +13,8 @@ namespace BrowserDetector\Helper\Normalizer;
 
 /**
  * User Agent Normalizer - replaces damaged tokens in the user agent
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class Tokens implements NormalizerInterface
 {

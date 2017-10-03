@@ -16,10 +16,7 @@ use Stringy\Stringy;
 /**
  * Class to detect the Bit count for an Browser
  *
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class Browser
 {

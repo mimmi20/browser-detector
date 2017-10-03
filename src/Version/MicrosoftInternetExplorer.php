@@ -12,10 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class MicrosoftInternetExplorer implements VersionCacheFactoryInterface
 {
@@ -41,7 +38,7 @@ class MicrosoftInternetExplorer implements VersionCacheFactoryInterface
             case 7:
                 return VersionFactory::set('11.0');
             default:
-                //nothing to do
+                // nothing to do
                 break;
         }
 

@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class MobileFactory implements Factory\FactoryInterface
 {
@@ -61,7 +58,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeSamsung as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /** @var Factory\FactoryInterface $factory */
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -85,7 +82,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeApple as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /** @var Factory\FactoryInterface $factory */
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -116,20 +113,12 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeLg as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /** @var Factory\FactoryInterface $factory */
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
             }
         }
-
-        //        if ($s->contains('GTX75', true)) {
-        //            return (new Mobile\UtStarcomFactory($this->loader))->detect($useragent, $s);
-        //        }
-
-        //        if ($s->contains('gt-9000', false)) {
-        //            return (new Mobile\StarFactory($this->loader))->detect($useragent, $s);
-        //        }
 
         if ($s->contains('LG', true)) {
             return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
@@ -168,7 +157,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeLg as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /** @var Factory\FactoryInterface $factory */
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);

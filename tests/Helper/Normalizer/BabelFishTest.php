@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\BabelFish;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class BabelFishTest extends \PHPUnit\Framework\TestCase
 {

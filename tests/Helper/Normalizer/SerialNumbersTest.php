@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\SerialNumbers;
  * Class SerialNumbersTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class SerialNumbersTest extends \PHPUnit\Framework\TestCase
 {

@@ -16,6 +16,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Loader\PlatformLoader
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class PlatformLoaderTest extends \PHPUnit\Framework\TestCase
 {

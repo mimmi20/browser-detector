@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\Tokens;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class TokensTest extends \PHPUnit\Framework\TestCase
 {

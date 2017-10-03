@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\WindowsNt;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class WindowsNtTest extends \PHPUnit\Framework\TestCase
 {

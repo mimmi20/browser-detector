@@ -15,6 +15,8 @@ use Stringy\Stringy;
 
 /**
  * Test class for \BrowserDetector\Factory\Device\Desktop\AppleFactory
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 trait DeviceTestDetectTrait
 {
@@ -32,12 +34,14 @@ trait DeviceTestDetectTrait
      * @param int|null    $width
      * @param int|null    $height
      * @param int|null    $colors
+     *
+     * @return void
      */
-    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod, $width, $height, $colors): void
+    public function testDetect(string $agent, string $deviceName, string $marketingName, string $manufacturer, string $brand, string $deviceType, bool $dualOrientation, ?string $pointingMethod, ?int $width, ?int $height, ?int $colors): void
     {
         $s = new Stringy($agent);
 
-        /** @var \UaResult\Device\DeviceInterface $result */
+        /* @var \UaResult\Device\DeviceInterface $result */
         [$result] = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);

@@ -18,6 +18,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Factory\Device\DarwinFactory
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
 {

@@ -18,6 +18,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class PanasonicFactoryTest extends \PHPUnit\Framework\TestCase
 {

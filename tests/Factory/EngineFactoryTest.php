@@ -23,6 +23,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class EngineFactoryTest extends \PHPUnit\Framework\TestCase
 {
@@ -56,8 +58,10 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string $engine
      * @param string $version
      * @param string $manufacturer
+     *
+     * @return void
      */
-    public function testDetect($userAgent, $engine, $version, $manufacturer): void
+    public function testDetect(string $userAgent, string $engine, string $version, string $manufacturer): void
     {
         $normalizer      = (new NormalizerFactory())->build();
         $normalizedUa    = $normalizer->normalize($userAgent);
@@ -72,7 +76,7 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
             $platform = null;
         }
 
-        /** @var \UaResult\Engine\EngineInterface $result */
+        /* @var \UaResult\Engine\EngineInterface $result */
         $result = $this->object->detect($normalizedUa, $s, $browserLoader, $platform);
 
         self::assertInstanceOf('\UaResult\Engine\EngineInterface', $result);

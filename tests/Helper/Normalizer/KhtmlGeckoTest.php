@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\KhtmlGecko;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class KhtmlGeckoTest extends \PHPUnit\Framework\TestCase
 {

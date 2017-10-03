@@ -18,6 +18,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Desktop\GeneralDesktop
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
 {
@@ -52,7 +54,7 @@ class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
         $tests = [];
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-            /** @var $file \SplFileInfo */
+            /* @var $file \SplFileInfo */
             if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }

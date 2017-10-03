@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\EncryptionRemover;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class EncryptionRemoverTest extends \PHPUnit\Framework\TestCase
 {

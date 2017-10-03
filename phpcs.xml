@@ -8,66 +8,8 @@
     <arg name="encoding" value="utf-8"/>
 
     <!-- inherit rules from: -->
-    <rule ref="PEAR">
-        <exclude name="PEAR.Commenting.FileComment.MissingVersion"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingCategoryTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingPackageTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingAuthorTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingLicenseTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingLinkTag"/>
-        <exclude name="PEAR.Commenting.ClassComment.MissingCategoryTag"/>
-        <exclude name="PEAR.Commenting.ClassComment.MissingPackageTag"/>
-        <exclude name="PEAR.Commenting.ClassComment.MissingAuthorTag"/>
-        <exclude name="PEAR.Commenting.ClassComment.MissingLicenseTag"/>
-        <exclude name="PEAR.Commenting.ClassComment.MissingLinkTag"/>
-        <exclude name="Generic.Commenting.DocComment.MissingShort"/>
-        <exclude name="Generic.Commenting.DocComment.ShortNotCapital"/>
-        <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
-        <exclude name="PEAR.Commenting.FunctionComment.MissingReturn"/>
-        <exclude name="PEAR.Commenting.FunctionComment.Missing"/>
-        <exclude name="PEAR.Commenting.FunctionComment.MissingParamComment"/>
-    </rule>
-
-    <rule ref="Zend">
-        <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
-    </rule>
-
-    <rule ref="Squiz">
-        <exclude name="Squiz.Files.FileExtension.ClassFound"/>
-        <exclude name="Generic.Commenting.DocComment.MissingShort"/>
-        <exclude name="Generic.Commenting.DocComment.ShortNotCapital"/>
-        <exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
-        <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed"/>
-        <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
-        <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
-        <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>
-        <exclude name="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
-        <exclude name="Squiz.Operators.ComparisonOperatorUsage.NotAllowed"/>
-        <exclude name="Squiz.Operators.ComparisonOperatorUsage.ImplicitTrue"/>
-        <exclude name="Squiz.ControlStructures.ElseIfDeclaration.NotAllowed"/>
-        <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
-    </rule>
-
-    <rule ref="PSR2">
-        <exclude name="Generic.Files.LineLength.TooLong"/><!-- can not be suppressed -->
-        <exclude name="PEAR.Functions.ValidDefaultValue"/><!-- we want to allow null as "default" value -->
-        <exclude name="PSR2.Classes.ClassDeclaration"/><!-- we want whitespace around class body and rules for extends and implements, using PEAR instead -->
-        <!-- <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/><! - - we want to put first expression of multiline condition on next line -->
-        <exclude name="Squiz.Functions.LowercaseFunctionKeywords"/><!-- checked by more generic Generic.PHP.LowerCaseKeyword -->
-        <exclude name="Squiz.ControlStructures.LowercaseDeclaration"/><!-- checked by more generic Generic.PHP.LowerCaseKeyword -->
-        <!-- <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/><! - - we want to allow empty line in control structure e.g. in catch blocks, where it can improve readability -->
-        <!-- <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpenBrace"/><! - - we want to put first expression of multiline condition on next line -->
-        <!-- <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/><! - - we want to allow empty line in control structure e.g. in try blocks, where it can improve readability -->
-    </rule>
 
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
-
-    <!-- Remove trailing whitespace at the end of each line of code. -->
-    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
-        <properties>
-            <property name="ignoreBlankLines" value="false"/>
-        </properties>
-    </rule>
 
     <!-- Code MUST use an indent of 4 spaces, and MUST NOT use tabs for indenting. -->
     <rule ref="Generic.WhiteSpace.ScopeIndent"/>
@@ -75,9 +17,6 @@
 
     <!-- PHP code MUST use only UTF-8 without BOM. -->
     <rule ref="Generic.Files.ByteOrderMark"/>
-
-    <!-- PHP code MUST NOT contain functions outside of classes -->
-    <rule ref="Squiz.Functions.GlobalFunction"/>
 
     <!-- PHP code MUST NOT contain any character before the opening tag -->
     <rule ref="Generic.PHP.CharacterBeforePHPOpeningTag"/>
@@ -95,9 +34,6 @@
     <!-- PHP files should contain an empty line at the end of the file -->
     <rule ref="Generic.Files.EndFileNewline"/>
 
-    <!-- PHP code MUST NOT contain perl-style comments -->
-    <rule ref="PEAR.Commenting.InlineComment"/>
-
     <!-- Allow only unix file endings (newlines) -->
     <rule ref="Generic.Files.LineEndings">
         <properties>
@@ -112,28 +48,14 @@
     </rule>
     <rule ref="Generic.PHP.DeprecatedFunctions" />
     <rule ref="Generic.PHP.ForbiddenFunctions" />
-    <rule ref="Squiz.Scope.StaticThisUsage" />
-    <rule ref="Squiz.Scope.MemberVarScope" />
-    <rule ref="Squiz.Scope.MethodScope" />
-
-    <!-- Braces shall be used for all blocks. -->
-    <rule ref="Squiz.ControlStructures.ControlSignature"/>
 
     <!-- Braces should always be used, even when they are not required. -->
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
 
-    <!-- Use elseif, not else if. -->
-    <rule ref="PSR2.ControlStructures.ElseIfDeclaration"/>
-
-    <!-- Omitting the closing PHP tag at the end of a file is preferred. -->
-    <rule ref="PSR2.Files.ClosingTag"/>
-
     <!-- When type casting, do it like so: $foo = (boolean) $bar; -->
     <rule ref="Generic.Formatting.SpaceAfterCast"/>
-    <rule ref="Squiz.WhiteSpace.CastSpacing"/>
 
     <!-- Rule: In general, readability is more important than cleverness or brevity. -->
-    <rule ref="Squiz.PHP.DisallowMultipleAssignments"/>
     <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
 
     <!-- (No) Error Control Operator @. -->
@@ -149,12 +71,61 @@
     <rule ref="Generic.Files.InlineHTML"/>
     <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
     <rule ref="Generic.NamingConventions.ConstructorName"/>
-    <rule ref="PEAR.Classes.ClassDeclaration"/>
-    <rule ref="PEAR.Formatting.MultiLineAssignment"/>
-    <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
 
-    <rule ref="Squiz.Arrays.ArrayBracketSpacing"/>
-    <rule ref="Squiz.Arrays.ArrayDeclaration">
+    <rule ref="PEAR">
+        <exclude name="Generic.Commenting.DocComment.MissingShort"/>
+        <exclude name="Generic.Commenting.DocComment.ShortNotCapital"/>
+        <exclude name="Generic.Commenting.DocComment.TagValueIndent"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingVersion"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingCategoryTag"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingPackageTag"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingAuthorTag"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingLicenseTag"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingLinkTag"/>
+        <exclude name="PEAR.Commenting.ClassComment.MissingCategoryTag"/>
+        <exclude name="PEAR.Commenting.ClassComment.MissingPackageTag"/>
+        <exclude name="PEAR.Commenting.ClassComment.MissingLicenseTag"/>
+        <exclude name="PEAR.Commenting.ClassComment.MissingLinkTag"/>
+        <exclude name="PEAR.Commenting.FunctionComment.MissingReturn"/>
+        <exclude name="PEAR.Commenting.FunctionComment.Missing"/>
+        <exclude name="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+        <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
+        <exclude name="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+    </rule>
+
+    <rule ref="Zend">
+        <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+    </rule>
+
+    <rule ref="Squiz">
+        <exclude name="Generic.Commenting.DocComment.MissingShort"/>
+        <exclude name="Generic.Commenting.DocComment.ShortNotCapital"/>
+        <exclude name="Squiz.Files.FileExtension.ClassFound"/>
+        <exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
+        <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed"/>
+        <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
+        <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
+        <exclude name="Squiz.Commenting.BlockComment.SingleLine"/>
+        <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+        <exclude name="Squiz.Commenting.InlineComment.NotCapital"/>
+        <exclude name="Squiz.Commenting.FunctionComment.InvalidReturn"/>
+        <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
+        <exclude name="Squiz.Commenting.FunctionComment.IncorrectParamVarName"/>
+        <exclude name="Squiz.Commenting.FunctionComment.EmptyThrows"/>
+        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
+        <exclude name="Squiz.Commenting.FunctionCommentThrowTag.Missing"/>
+        <exclude name="Squiz.Commenting.DocCommentAlignment.SpaceAfterStar"/>
+        <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+        <exclude name="Squiz.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
+        <exclude name="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+        <exclude name="Squiz.Operators.ComparisonOperatorUsage.NotAllowed"/>
+        <exclude name="Squiz.Operators.ComparisonOperatorUsage.ImplicitTrue"/>
+        <exclude name="Squiz.Operators.IncrementDecrementUsage.NoBrackets"/>
+        <exclude name="Squiz.ControlStructures.ElseIfDeclaration.NotAllowed"/>
+        <exclude name="Squiz.ControlStructures.SwitchDeclaration.BreakIndent"/>
+        <exclude name="Squiz.ControlStructures.SwitchDeclaration.SpacingAfterBreak"/>
+        <exclude name="Squiz.PHP.CommentedOutCode.Found"/>
         <exclude name="Squiz.Arrays.ArrayDeclaration.CloseBraceNewLine"/><!-- does not handle wrapped content -->
         <exclude name="Squiz.Arrays.ArrayDeclaration.CloseBraceNotAligned"/><!-- expects closing brace at the same level as opening brace -->
         <exclude name="Squiz.Arrays.ArrayDeclaration.DoubleArrowNotAligned"/><!-- we don't want spacing with alignment -->
@@ -165,84 +136,22 @@
         <exclude name="Squiz.Arrays.ArrayDeclaration.NoCommaAfterLast"/><!-- expects multi-value array always written on multiple lines -->
         <exclude name="Squiz.Arrays.ArrayDeclaration.SingleLineNotAllowed"/><!-- multiple values can be written on a single line -->
         <exclude name="Squiz.Arrays.ArrayDeclaration.ValueNotAligned"/><!-- we don't want spacing with alignment -->
-    </rule>
-    <rule ref="Squiz.Classes.ClassFileName"/>
-    <rule ref="Squiz.Classes.SelfMemberReference"/>
-    <rule ref="Squiz.Commenting.DocCommentAlignment">
-        <exclude name="Squiz.Commenting.DocCommentAlignment.SpaceAfterStar"/><!-- space needed for indented annotations -->
-    </rule>
-    <rule ref="Squiz.Commenting.EmptyCatchComment"/>
-    <rule ref="Squiz.Commenting.FunctionComment">
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.EmptyThrows"/><! - - @throws are forbidden -->
-        <exclude name="Squiz.Commenting.FunctionComment.IncorrectParamVarName"/><!-- requires long boolean and integer parameters -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.IncorrectTypeHint"/><! - - collection syntax such as string[] is not supported -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.InvalidReturn"/><! - - enforces incorrect types -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.InvalidReturnNotVoid"/><! - - is not able to detect return types such as string|null as correct -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.InvalidThrows"/><! - - @throws are forbidden -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.Missing"/><! - - PHPDoc is not required on all methods -->
-        <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/><!-- comments are not required for @param -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.MissingReturn"/><! - - void type is not used -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/><! - - comments don't have to be sentences -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.ParamCommentNotCapital"/><! - - comments don't have to be sentences -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamName"/><! - - we don't want spacing with alignment -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType"/><! - - we don't want spacing with alignment -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.ThrowsNoFullStop"/><! - - @throws are forbidden -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.ThrowsNotCapital"/><! - - @throws are forbidden -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.TypeHintMissing"/><! - - doesn't work with self as typehint -->
-        <!-- <exclude name="Squiz.Commenting.FunctionComment.InvalidTypeHint"/><! - - Make sure that each parameter is included in the doc block -->
-    </rule>
-    <rule ref="Squiz.Commenting.FunctionComment.DuplicateReturn">
-        <message>Only 1 @return annotation is allowed in a function comment</message>
-    </rule>
-    <rule ref="Squiz.Commenting.FunctionComment.ExtraParamComment">
-        <message>Extra @param annotation</message>
-    </rule>
-    <rule ref="Squiz.Commenting.FunctionComment.InvalidNoReturn">
-        <message>Function has no return statement, but annotation @return is present</message>
-    </rule>
-    <rule ref="Squiz.Commenting.FunctionComment.MissingParamTag">
-        <message>@param annotation for parameter "%s" missing</message>
+        <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>
+        <exclude name="Squiz.WhiteSpace.FunctionSpacing.Before"/>
+        <exclude name="Squiz.WhiteSpace.FunctionSpacing.After"/><!-- does not allow PHPUnit ignore comments -->
+        <exclude name="Squiz.WhiteSpace.MemberVarSpacing.Incorrect"/>
     </rule>
 
-    <!-- PHPStorm prefers throws annotations from deeper code as well, this causes
-      the number in the method and the number in the phpdoc to mismatch
-    <rule ref="Squiz.Commenting.FunctionCommentThrowTag">
-        <exclude name="Squiz.Commenting.FunctionCommentThrowTag.WrongNumber"/>
-    </rule>
-     -->
-
-    <rule ref="Squiz.Operators.IncrementDecrementUsage">
-        <exclude name="Squiz.Operators.IncrementDecrementUsage.NoBrackets"/><!-- afaik there is no need for brackets -->
-    </rule>
-    <rule ref="Squiz.Operators.ValidLogicalOperators"/>
-    <rule ref="Squiz.PHP.GlobalKeyword"/>
-    <rule ref="Squiz.PHP.Heredoc"/>
-    <rule ref="Squiz.PHP.InnerFunctions"/>
-    <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
-    <rule ref="Squiz.PHP.NonExecutableCode"/>
-    <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
-    <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar">
-        <message>Variable "%s" not allowed in double quoted string; use sprintf() instead</message>
-    </rule>
     <rule ref="Squiz.Strings.ConcatenationSpacing">
         <properties>
             <property name="ignoreNewlines" value="true"/>
             <property name="spacing" value="1"/>
         </properties>
     </rule>
-    <rule ref="Squiz.Strings.EchoedStrings"/>
-    <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace"/>
     <rule ref="Squiz.WhiteSpace.FunctionSpacing">
-        <exclude name="Squiz.WhiteSpace.FunctionSpacing.Before"/>
-        <exclude name="Squiz.WhiteSpace.FunctionSpacing.After"/><!-- does not allow PHPUnit ignore comments -->
         <properties>
             <property name="spacing" value="1"/>
         </properties>
-    </rule>
-    <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
-    <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
-    <rule ref="Squiz.WhiteSpace.MemberVarSpacing">
-        <exclude name="Squiz.WhiteSpace.MemberVarSpacing.Incorrect"/>
     </rule>
     <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing">
         <properties>
@@ -254,7 +163,6 @@
             <property name="ignoreNewlines" value="true"/>
         </properties>
     </rule>
-    <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
         <properties>
             <property name="ignoreBlankLines" value="false"/><!-- turned on by PSR2 -> turning off to be more general -->
@@ -262,6 +170,14 @@
     </rule>
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines">
         <severity>5</severity><!-- turned off by PSR2 -> turning on with default severity -->
+    </rule>
+
+    <rule ref="PSR2">
+        <exclude name="Generic.Files.LineLength.TooLong"/><!-- can not be suppressed -->
+        <exclude name="PEAR.Functions.ValidDefaultValue"/><!-- we want to allow null as "default" value -->
+        <exclude name="PSR2.Classes.ClassDeclaration"/><!-- we want whitespace around class body and rules for extends and implements, using PEAR instead -->
+        <exclude name="Squiz.Functions.LowercaseFunctionKeywords"/><!-- checked by more generic Generic.PHP.LowerCaseKeyword -->
+        <exclude name="Squiz.ControlStructures.LowercaseDeclaration"/><!-- checked by more generic Generic.PHP.LowerCaseKeyword -->
     </rule>
 
     <!-- Paths to check -->

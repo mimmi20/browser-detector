@@ -18,6 +18,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Factory\Device\Tv\SonyFactory
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class SonyFactoryTest extends \PHPUnit\Framework\TestCase
 {

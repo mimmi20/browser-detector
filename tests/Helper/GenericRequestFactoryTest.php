@@ -17,6 +17,8 @@ use BrowserDetector\Helper\GenericRequestFactory;
 
 /**
  * test case
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
 {

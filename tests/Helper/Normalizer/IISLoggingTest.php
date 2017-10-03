@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\IISLogging;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class IISLoggingTest extends \PHPUnit\Framework\TestCase
 {

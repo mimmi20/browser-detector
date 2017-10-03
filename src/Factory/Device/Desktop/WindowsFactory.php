@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class WindowsFactory implements Factory\FactoryInterface
 {
@@ -27,10 +24,10 @@ class WindowsFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        //'masb' => '', // Microsoft System Builder -> no device
-        //'mapb' => '',
-        //'manm' => '',
-        //'dadk' => '',
+        // 'masb' => '', // Microsoft System Builder -> no device
+        // 'mapb' => '',
+        // 'manm' => '',
+        // 'dadk' => '',
         'mddr'   => 'dell pc',
         'mddc'   => 'dell pc',
         'mdds'   => 'dell pc',

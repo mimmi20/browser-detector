@@ -15,6 +15,8 @@ use BrowserDetector\Helper\Constants;
 
 /**
  * WURFL related utilities
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class Utils
 {

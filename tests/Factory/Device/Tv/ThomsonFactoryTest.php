@@ -18,6 +18,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Factory\Device\Tv\ThomsonFactory
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class ThomsonFactoryTest extends \PHPUnit\Framework\TestCase
 {
