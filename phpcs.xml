@@ -8,7 +8,6 @@
     <arg name="encoding" value="utf-8"/>
 
     <!-- inherit rules from: -->
-
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
     <!-- Code MUST use an indent of 4 spaces, and MUST NOT use tabs for indenting. -->
@@ -69,110 +68,11 @@
     <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
     <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
     <rule ref="Generic.Files.InlineHTML"/>
-    <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
+    <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman">
+        <exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+    </rule>
     <rule ref="Generic.NamingConventions.ConstructorName"/>
-
-    <rule ref="PEAR">
-        <exclude name="Generic.Commenting.DocComment.MissingShort"/>
-        <exclude name="Generic.Commenting.DocComment.ShortNotCapital"/>
-        <exclude name="Generic.Commenting.DocComment.TagValueIndent"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingVersion"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingCategoryTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingPackageTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingAuthorTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingLicenseTag"/>
-        <exclude name="PEAR.Commenting.FileComment.MissingLinkTag"/>
-        <exclude name="PEAR.Commenting.ClassComment.MissingCategoryTag"/>
-        <exclude name="PEAR.Commenting.ClassComment.MissingPackageTag"/>
-        <exclude name="PEAR.Commenting.ClassComment.MissingLicenseTag"/>
-        <exclude name="PEAR.Commenting.ClassComment.MissingLinkTag"/>
-        <exclude name="PEAR.Commenting.ClassComment.MissingAuthorTag"/>
-        <exclude name="PEAR.Commenting.FunctionComment.MissingReturn"/>
-        <exclude name="PEAR.Commenting.FunctionComment.Missing"/>
-        <exclude name="PEAR.Commenting.FunctionComment.MissingParamComment"/>
-        <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
-        <exclude name="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
-        <exclude name="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
-    </rule>
-
-    <rule ref="Zend">
-        <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
-    </rule>
-
-    <rule ref="Squiz">
-        <exclude name="Generic.Commenting.DocComment.MissingShort"/>
-        <exclude name="Generic.Commenting.DocComment.ShortNotCapital"/>
-        <exclude name="Squiz.Files.FileExtension.ClassFound"/>
-        <exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
-        <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed"/>
-        <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
-        <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
-        <exclude name="Squiz.Commenting.BlockComment.SingleLine"/>
-        <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
-        <exclude name="Squiz.Commenting.InlineComment.NotCapital"/>
-        <exclude name="Squiz.Commenting.FunctionComment.InvalidReturn"/>
-        <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
-        <exclude name="Squiz.Commenting.FunctionComment.IncorrectParamVarName"/>
-        <exclude name="Squiz.Commenting.FunctionComment.EmptyThrows"/>
-        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
-        <exclude name="Squiz.Commenting.FunctionCommentThrowTag.Missing"/>
-        <exclude name="Squiz.Commenting.DocCommentAlignment.SpaceAfterStar"/>
-        <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
-        <exclude name="Squiz.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
-        <exclude name="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
-        <exclude name="Squiz.Operators.ComparisonOperatorUsage.NotAllowed"/>
-        <exclude name="Squiz.Operators.ComparisonOperatorUsage.ImplicitTrue"/>
-        <exclude name="Squiz.Operators.IncrementDecrementUsage.NoBrackets"/>
-        <exclude name="Squiz.ControlStructures.ElseIfDeclaration.NotAllowed"/>
-        <exclude name="Squiz.ControlStructures.SwitchDeclaration.BreakIndent"/>
-        <exclude name="Squiz.ControlStructures.SwitchDeclaration.SpacingAfterBreak"/>
-        <exclude name="Squiz.PHP.CommentedOutCode.Found"/>
-        <exclude name="Squiz.Arrays.ArrayDeclaration.CloseBraceNewLine"/><!-- does not handle wrapped content -->
-        <exclude name="Squiz.Arrays.ArrayDeclaration.CloseBraceNotAligned"/><!-- expects closing brace at the same level as opening brace -->
-        <exclude name="Squiz.Arrays.ArrayDeclaration.DoubleArrowNotAligned"/><!-- we don't want spacing with alignment -->
-        <exclude name="Squiz.Arrays.ArrayDeclaration.FirstIndexNoNewline"/><!-- expects multi-value array always written on multiple lines -->
-        <exclude name="Squiz.Arrays.ArrayDeclaration.FirstValueNoNewline"/><!-- expects multi-value array always written on multiple lines -->
-        <exclude name="Squiz.Arrays.ArrayDeclaration.KeyNotAligned"/><!-- uses indentation of only single space -->
-        <exclude name="Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed"/><!-- even a single-value array can be written on multiple lines -->
-        <exclude name="Squiz.Arrays.ArrayDeclaration.NoCommaAfterLast"/><!-- expects multi-value array always written on multiple lines -->
-        <exclude name="Squiz.Arrays.ArrayDeclaration.SingleLineNotAllowed"/><!-- multiple values can be written on a single line -->
-        <exclude name="Squiz.Arrays.ArrayDeclaration.ValueNotAligned"/><!-- we don't want spacing with alignment -->
-        <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>
-        <exclude name="Squiz.WhiteSpace.FunctionSpacing.Before"/>
-        <exclude name="Squiz.WhiteSpace.FunctionSpacing.After"/><!-- does not allow PHPUnit ignore comments -->
-        <exclude name="Squiz.WhiteSpace.MemberVarSpacing.Incorrect"/>
-    </rule>
-
-    <rule ref="Squiz.Strings.ConcatenationSpacing">
-        <properties>
-            <property name="ignoreNewlines" value="true"/>
-            <property name="spacing" value="1"/>
-        </properties>
-    </rule>
-    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
-        <properties>
-            <property name="spacing" value="1"/>
-        </properties>
-    </rule>
-    <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing">
-        <properties>
-            <property name="ignoreNewlines" value="true"/>
-        </properties>
-    </rule>
-    <rule ref="Squiz.WhiteSpace.OperatorSpacing">
-        <properties>
-            <property name="ignoreNewlines" value="true"/>
-        </properties>
-    </rule>
-    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
-        <properties>
-            <property name="ignoreBlankLines" value="false"/><!-- turned on by PSR2 -> turning off to be more general -->
-        </properties>
-    </rule>
-    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines">
-        <severity>5</severity><!-- turned off by PSR2 -> turning on with default severity -->
-    </rule>
-
+    
     <rule ref="PSR2">
         <exclude name="Generic.Files.LineLength.TooLong"/><!-- can not be suppressed -->
         <exclude name="PEAR.Functions.ValidDefaultValue"/><!-- we want to allow null as "default" value -->
@@ -180,6 +80,16 @@
         <exclude name="Squiz.Functions.LowercaseFunctionKeywords"/><!-- checked by more generic Generic.PHP.LowerCaseKeyword -->
         <exclude name="Squiz.ControlStructures.LowercaseDeclaration"/><!-- checked by more generic Generic.PHP.LowerCaseKeyword -->
     </rule>
+
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
+        <properties>
+            <property name="ignoreBlankLines" value="false"/>
+        </properties>
+    </rule>
+    
+    <rule ref="Squiz.Commenting.FunctionComment.Missing"/>
+    <rule ref="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing"/>
+    <rule ref="Squiz.Commenting.FunctionComment.MissingReturn"/>
 
     <!-- Paths to check -->
     <file>src</file>
