@@ -24,6 +24,7 @@ class CyrusFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'cs25' => 'cyrus cs25',
         'cs24' => 'cyrus cs24',
     ];
 

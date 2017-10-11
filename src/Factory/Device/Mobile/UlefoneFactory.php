@@ -26,6 +26,7 @@ class UlefoneFactory implements Factory\FactoryInterface
     private $devices = [
         'future'   => 'ulefone future',
         'u007 pro' => 'ulefone u007 pro',
+        'u007'     => 'ulefone u007',
         'vienna'   => 'ulefone vienna',
         'paris'    => 'ulefone paris',
         'be pro'   => 'ulefone be pro',

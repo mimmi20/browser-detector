@@ -1176,6 +1176,7 @@ class GenericBrowserFactory implements FactoryInterface
             'metainspector'                   => 'metainspector',
             'microsoft-cryptoapi'             => 'microsoft cryptoapi',
             'microsoft url control'           => 'microsoft url control',
+            'microsoft data access internet publishing provider dav'           => 'microsoft data access internet publishing provider dav',
             'owasp_secret_browser'            => 'owasp_secret_browser',
             'smrf url expander'               => 'smrf url expander',
             'speedyspider'                    => 'speedy spider',

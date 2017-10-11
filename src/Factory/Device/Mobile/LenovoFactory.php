@@ -140,6 +140,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'a680'                    => 'lenovo a680',
         'a660'                    => 'lenovo a660',
         'a656'                    => 'lenovo a656',
+        'a616'                    => 'lenovo a616',
         'a606'                    => 'lenovo a606',
         'a590'                    => 'lenovo a590',
         'a536'                    => 'lenovo a536',

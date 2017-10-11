@@ -25,6 +25,7 @@ class ShiftFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'shift7' => 'shift shift7',
+        'shift5.2' => 'shift shift5.2',
     ];
 
     /**

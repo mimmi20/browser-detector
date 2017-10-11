@@ -275,6 +275,7 @@ class IeBasedFactory implements FactoryInterface
             '360 aphone browser'                  => '360 browser',
             'theworld'                            => 'theworld',
             'ptst'                                => 'webpagetest',
+            'mathplayer'                                => 'mathplayer',
         ];
 
         foreach ($checkbeforeIe as $search => $key) {

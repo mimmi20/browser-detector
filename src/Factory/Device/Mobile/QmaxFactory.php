@@ -18,25 +18,13 @@ use Stringy\Stringy;
 /**
  * @author Thomas Müller <mimmi20@live.de>
  */
-class DoogeeFactory implements Factory\FactoryInterface
+class QmaxFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        't6'      => 'doogee t6',
-        'x9pro'      => 'doogee x9 pro',
-        'x5max_pro'      => 'doogee x5max pro',
-        'y6 max 3d'      => 'doogee y6 max 3d',
-        'y6 max'      => 'doogee y6 max',
-        'y6_piano_black' => 'doogee y6 piano black',
-        'y6_piano'       => 'doogee y6 piano',
-        'dg2014'         => 'doogee dg2014',
-        'dg800'          => 'doogee dg800',
-        'dg330'          => 'doogee dg330',
-        'dg310'          => 'doogee dg310',
-        'dg300'          => 'doogee dg300',
-        'f3_pro'         => 'doogee f3 pro',
+        'qt-10' => 'qmax qt-10',
     ];
 
     /**
@@ -68,6 +56,6 @@ class DoogeeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general doogee device', $useragent);
+        return $this->loader->load('general qmax device', $useragent);
     }
 }
