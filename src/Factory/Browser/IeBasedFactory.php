@@ -47,103 +47,7 @@ class IeBasedFactory implements FactoryInterface
      */
     public function detect(string $useragent, Stringy $s, ?OsInterface $platform = null): array
     {
-        $firstCheck = [
-            'revip.info site analyzer' => 'reverse ip lookup',
-            'reddit pic scraper'       => 'reddit pic scraper',
-            'mozilla crawl'            => 'mozilla crawler',
-        ];
-
-        foreach ($firstCheck as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->startsWith('[fban', false)) {
-            return $this->loader->load('facebook app', $useragent);
-        }
-
-        $checkBeforeOpera = [
-            'ucbrowserhd'      => 'uc browser hd',
-            'flyflow'          => 'flyflow',
-            'bdbrowser_i18n'   => 'baidu browser',
-            'baidubrowser'     => 'baidu browser',
-            'bdbrowserhd_i18n' => 'baidu browser hd',
-            'bdbrowser_mini'   => 'baidu browser mini',
-        ];
-
-        foreach ($checkBeforeOpera as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->containsAny(['ucbrowser', 'ubrowser', 'uc browser', 'ucweb'], false) && $s->contains('opera mini', false)) {
-            return $this->loader->load('ucbrowser', $useragent);
-        }
-
-        if ($s->containsAny(['opera mini', 'opios'], false)) {
-            return $this->loader->load('opera mini', $useragent);
-        }
-
-        if ($s->contains('opera mobi', false)
-            || ($s->containsAny(['opera', 'opr'], false) && $s->containsAny(['android', 'mtk', 'maui', 'samsung', 'windows ce', 'symbos'], false))
-        ) {
-            return $this->loader->load('opera mobile', $useragent);
-        }
-
-        $checkBeforeComodoDragon = [
-            'ucbrowser'                   => 'ucbrowser',
-            'ubrowser'                    => 'ucbrowser',
-            'uc browser'                  => 'ucbrowser',
-            'ucweb'                       => 'ucbrowser',
-            'ic opengraph crawler'        => 'ibm connections',
-            'coast'                       => 'coast',
-            'opr'                         => 'opera',
-            'opera'                       => 'opera',
-            'icabmobile'                  => 'icab mobile',
-            'icab'                        => 'icab',
-            'hggh phantomjs screenshoter' => 'hggh screenshot system with phantomjs',
-            'bl.uk_lddc_bot'              => 'bl.uk_lddc_bot',
-            'phantomas'                   => 'phantomas',
-            'seznam screenshot-generator' => 'seznam screenshot generator',
-            'phantomjs'                   => 'phantomjs',
-            'yabrowser'                   => 'yabrowser',
-            'kamelio'                     => 'kamelio app',
-            'fban/messenger'              => 'facebook messenger app',
-            'fbav'                        => 'facebook app',
-            'acheetahi'                   => 'cm browser',
-            'puffin'                      => 'puffin',
-            'stagefright'                 => 'stagefright',
-            'oculusbrowser'               => 'oculus-browser',
-            'surfbrowser'                 => 'surfbrowser',
-            'surf/'                       => 'surfbrowser',
-            'avirascout'                  => 'avira scout',
-            'samsungbrowser'              => 'samsungbrowser',
-            'silk'                        => 'silk',
-            'coc_coc_browser'             => 'coc_coc_browser',
-            'navermatome'                 => 'matome',
-            'flipboardproxy'              => 'flipboardproxy',
-            'flipboard'                   => 'flipboard app',
-            'seznambot'                   => 'seznambot',
-            'seznam.cz'                   => 'seznam browser',
-            'sznprohlizec'                => 'seznam browser',
-            'aviator'                     => 'aviator',
-            'netfrontlifebrowser'         => 'netfrontlifebrowser',
-            'icedragon'                   => 'icedragon',
-        ];
-
-        foreach ($checkBeforeComodoDragon as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('dragon', false) && !$s->contains('dragonfly', false)) {
-            return $this->loader->load('dragon', $useragent);
-        }
-
-        $checkBeforeWebview = [
+        $checkBeforeAnonymus = [
             'beamrise'        => 'beamrise',
             'diglo'           => 'diglo',
             'apusbrowser'     => 'apusbrowser',
@@ -180,23 +84,6 @@ class IeBasedFactory implements FactoryInterface
             'eui browser'     => 'eui browser',
             'slimboat'        => 'slimboat',
             'yandexsearch'    => 'yandexsearch',
-        ];
-
-        foreach ($checkBeforeWebview as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->containsAll(['chrome', 'version'], false)) {
-            return $this->loader->load('android webview', $useragent);
-        }
-
-        if ($s->containsAll(['safari', 'version', 'tizen'], false)) {
-            return $this->loader->load('samsung webview', $useragent);
-        }
-
-        $checkBeforeAnonymus = [
             'cybeye'           => 'cybeye',
             'rebelmouse'       => 'rebelmouse',
             'seamonkey'        => 'seamonkey',
@@ -212,10 +99,6 @@ class IeBasedFactory implements FactoryInterface
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
-        }
-
-        if ($s->containsAll(['firefox', 'anonym'], false)) {
-            return $this->loader->load('firefox', $useragent);
         }
 
         if ($s->containsAll(['trident', 'anonym'], false)) {
@@ -294,7 +177,7 @@ class IeBasedFactory implements FactoryInterface
             return $this->loader->load('internet explorer', $useragent);
         }
 
-        $checkBeforeCentBrowser = [
+        $lastBrowsers = [
             'chromium'                   => 'chromium',
             'iron'                       => 'iron',
             'midori'                     => 'midori',
@@ -319,216 +202,6 @@ class IeBasedFactory implements FactoryInterface
             'commerce browser center'    => 'commerce browser center',
             'iccrawler'                  => 'iccrawler',
             'centil-schweiz webbot'      => 'centil-schweiz webbot',
-        ];
-
-        foreach ($checkBeforeCentBrowser as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('cent', false) && !$s->contains('centos', false)) {
-            return $this->loader->load('cent', $useragent);
-        }
-
-        $checkBeforeEdge = [
-            'salam browser'                       => 'salam browser',
-            'whale'                               => 'whale browser',
-            'slimjet'                             => 'slimjet browser',
-            'corom'                               => 'corom browser',
-            'kuaiso'                              => 'kuaiso browser',
-            'moatbot'                             => 'moatbot',
-            'socialradarbot'                      => 'socialradar bot',
-            'infegyatlas'                         => 'infegyatlas',
-            'infegy'                              => 'infegy bot',
-            'google keyword suggestion'           => 'google keyword suggestion',
-            'google web preview'                  => 'google web preview',
-            'google-adwords-displayads-webrender' => 'google adwords displayads webrender',
-            'hubspot marketing grader'            => 'hubspot marketing grader',
-            'hubspot webcrawler'                  => 'hubspot webcrawler',
-            'rockmelt'                            => 'rockmelt',
-            ' se '                                => 'sogou explorer',
-            'archivebot'                          => 'archivebot',
-            'word'                                => 'word',
-        ];
-
-        foreach ($checkBeforeEdge as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('edge', false) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
-            return $this->loader->load('edge mobile', $useragent);
-        }
-
-        $checkBeforeWire = [
-            'edge'        => 'edge',
-            'diffbot'     => 'diffbot',
-            'vivaldi'     => 'vivaldi',
-            'lbbrowser'   => 'liebao',
-            'amigo'       => 'amigo',
-            'chromeplus'  => 'coolnovo chrome plus',
-            'coolnovo'    => 'coolnovo',
-            'kenshoo'     => 'kenshoo',
-            'bowser'      => 'bowser',
-            'asw'         => 'avast safezone',
-            'schoolwires' => 'schoolwires app',
-            'netnewswire' => 'netnewswire',
-        ];
-
-        foreach ($checkBeforeWire as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('wire', false) && !$s->containsAny(['wired', 'wireless'], false)) {
-            return $this->loader->load('wire app', $useragent);
-        }
-
-        $checkBeforeDragon = [
-            'qupzilla'   => 'qupzilla',
-            'ur browser' => 'ur-browser',
-            'urbrowser'  => 'ur-browser',
-            ' ur/'       => 'ur-browser',
-        ];
-
-        foreach ($checkBeforeDragon as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if (preg_match('/chrome\/(\d+)\.(\d+)/i', $useragent, $matches)
-            && isset($matches[1], $matches[2])
-            && 1 <= $matches[1]
-            && 0 < $matches[2]
-            && 10 >= $matches[2]
-        ) {
-            return $this->loader->load('dragon', $useragent);
-        }
-
-        $checkBeforeAndroidWebkit = [
-            'flock'                       => 'flock',
-            'crosswalk'                   => 'crosswalk',
-            'bromium safari'              => 'vsentry',
-            'domain.com'                  => 'pagepeeker screenshot maker',
-            'pagepeeker'                  => 'pagepeeker',
-            'bitdefendersafepay'          => 'bitdefender safepay',
-            'stormcrawler'                => 'stormcrawler',
-            'whatsapp'                    => 'whatsapp',
-            'basecamp3'                   => 'basecamp3',
-            'bobrowser'                   => 'bobrowser',
-            'headlesschrome'              => 'headless-chrome',
-            'crios'                       => 'chrome for ios',
-            'chrome'                      => 'chrome',
-            'crmo'                        => 'chrome',
-            'dolphin http client'         => 'dolphin smalltalk http client',
-            'dolfin'                      => 'dolfin',
-            'dolphin'                     => 'dolfin',
-            'arora'                       => 'arora',
-            'com.douban.group'            => 'douban app',
-            'com.apple.Notes'             => 'apple notes app',
-            'ovibrowser'                  => 'nokia proxy browser',
-            'ibrowser'                    => 'ibrowser',
-            'onebrowser'                  => 'onebrowser',
-            'baiduspider-image'           => 'baidu image search',
-            'baiduspider'                 => 'baiduspider',
-            'http://www.baidu.com/search' => 'baidu mobile search',
-            'yjapp'                       => 'yahoo! app',
-            'yjtop'                       => 'yahoo! app',
-            'ninesky'                     => 'ninesky-browser',
-            'listia'                      => 'listia',
-            'aldiko'                      => 'aldiko',
-        ];
-
-        foreach ($checkBeforeAndroidWebkit as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->containsAll(['linux; android', 'version'], false)) {
-            return $this->loader->load('android webkit', $useragent);
-        }
-
-        if (preg_match('/android[\/ ][\d\.]+ release/i', $useragent)) {
-            return $this->loader->load('android webkit', $useragent);
-        }
-
-        if ($s->contains('safari', false) && null !== $platform && 'Android' === $platform->getName()) {
-            return $this->loader->load('android webkit', $useragent);
-        }
-
-        if ($s->containsAll(['blackberry', 'version'], false)) {
-            return $this->loader->load('blackberry', $useragent);
-        }
-
-        $checkBeforeQt = [
-            'webos'                  => 'webkit/webos',
-            'wosbrowser'             => 'webkit/webos',
-            'wossystem'              => 'webkit/webos',
-            'omniweb'                => 'omniweb',
-            'windows phone search'   => 'windows phone search',
-            'windows-update-agent'   => 'windows-update-agent',
-            'classilla'              => 'classilla',
-            'nokia'                  => 'nokiabrowser',
-            'twitter for i'          => 'twitter app',
-            'twitterbot'             => 'twitterbot',
-            'quicktime'              => 'quicktime',
-            'qtweb internet browser' => 'qtweb internet browser',
-            'qtcarbrowser'           => 'model s browser',
-        ];
-
-        foreach ($checkBeforeQt as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('Qt', true)) {
-            return $this->loader->load('qt', $useragent);
-        }
-
-        $checkBeforeAppleMail = [
-            'instagram'             => 'instagram app',
-            'webclip'               => 'webclip app',
-            'mercury'               => 'mercury',
-            'macappstore'           => 'macappstore',
-            'appstore'              => 'apple appstore app',
-            'webglance'             => 'web glance',
-            'yhoo_search_app'       => 'yahoo mobile app',
-            'newsblur feed fetcher' => 'newsblur feed fetcher',
-            'applecoremedia'        => 'coremedia',
-            'dataaccessd'           => 'ios dataaccessd',
-            'mailchimp'             => 'mailchimp.com',
-            'mailbar'               => 'mailbar',
-        ];
-
-        foreach ($checkBeforeAppleMail as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->startsWith('mail', false)) {
-            return $this->loader->load('apple mail', $useragent);
-        }
-
-        if (preg_match('/^Mozilla\/5\.0.*\(.*(CPU iPhone OS|CPU OS) \d+(_|\.)\d+.* like Mac OS X.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $useragent)) {
-            return $this->loader->load('apple mail', $useragent);
-        }
-
-        if (preg_match('/^Mozilla\/5\.0 \(Macintosh; Intel Mac OS X.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $useragent)) {
-            return $this->loader->load('apple mail', $useragent);
-        }
-
-        if (preg_match('/^Mozilla\/5\.0 \(Windows.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $useragent)) {
-            return $this->loader->load('apple mail', $useragent);
-        }
-
-        $checkBeforeSafari = [
             'msnbot-media'                    => 'msnbot-media',
             'adidxbot'                        => 'adidxbot',
             'msnbot'                          => 'bingbot',
@@ -597,36 +270,6 @@ class IeBasedFactory implements FactoryInterface
             'readkit'                         => 'readkit',
             'xing-contenttabreceiver'         => 'xing contenttabreceiver',
             'xing'                            => 'xing app',
-        ];
-
-        foreach ($checkBeforeSafari as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if (preg_match('/^Mozilla\/(4|5)\.0 \(Macintosh; .* Mac OS X .*\) AppleWebKit\/.* \(KHTML, like Gecko\) Version\/[\d\.]+$/i', $useragent)) {
-            return $this->loader->load('safari', $useragent);
-        }
-
-        $checkBeforeSafariUiwebview = [
-            'twcan/sportsnet' => 'twc sportsnet',
-            'adobeair'        => 'adobe air',
-            'easouspider'     => 'easouspider',
-            'itunes'          => 'itunes',
-        ];
-
-        foreach ($checkBeforeSafariUiwebview as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if (preg_match('/^Mozilla\/5\.0.*\((iPhone|iPad|iPod).*\).*AppleWebKit\/.*\(.*KHTML, like Gecko.*\).*Mobile.*/i', $useragent)) {
-            return $this->loader->load('mobile safari uiwebview', $useragent);
-        }
-
-        $checkBeforeIos = [
             'waterfox'                                      => 'waterfox',
             'thunderbird'                                   => 'thunderbird',
             'fennec'                                        => 'fennec',
@@ -689,157 +332,6 @@ class IeBasedFactory implements FactoryInterface
             'typo3-linkvalidator'                           => 'typo3 linkvalidator',
             'typo3'                                         => 'typo3',
             'feeddlerrss'                                   => 'feeddler rss reader',
-        ];
-
-        foreach ($checkBeforeIos as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if (preg_match('/^mozilla\/5\.0 \((iphone|ipad|ipod).*CPU like Mac OS X.*\) AppleWebKit\/\d+/i', $useragent)) {
-            return $this->loader->load('safari', $useragent);
-        }
-
-        $checkLastUiwebview = [
-            'ios'    => 'mobile safari uiwebview',
-            'iphone' => 'mobile safari uiwebview',
-            'ipad'   => 'mobile safari uiwebview',
-            'ipod'   => 'mobile safari uiwebview',
-        ];
-
-        foreach ($checkLastUiwebview as $search => $key) {
-            if (!$s->contains('windows', false) && $s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        $checkBeforeMosbookmarks = [
-            'paperlibot'                          => 'paper.li bot',
-            'spbot'                               => 'seoprofiler',
-            'dotbot'                              => 'dotbot',
-            'google-structureddatatestingtool'    => 'google structured-data testingtool',
-            'google-structured-data-testing-tool' => 'google structured-data testingtool',
-            'webmastercoffee'                     => 'webmastercoffee',
-            'ahrefs'                              => 'ahrefsbot',
-            'apercite'                            => 'apercite',
-            'woobot'                              => 'woobot',
-            'scoutjet'                            => 'scoutjet',
-            'blekkobot'                           => 'blekkobot',
-            'pagesinventory'                      => 'pagesinventory bot',
-            'slackbot-linkexpanding'              => 'slackbot-link-expanding',
-            'slackbot'                            => 'slackbot',
-            'seokicks-robot'                      => 'seokicks robot',
-            'alexabot'                            => 'alexabot',
-            'exabot'                              => 'exabot',
-            'domainscan'                          => 'domainscan server monitoring',
-            'jobroboter'                          => 'jobroboter',
-            'acoonbot'                            => 'acoonbot',
-            'woriobot'                            => 'woriobot',
-            'monobot'                             => 'monobot',
-            'domainsigmacrawler'                  => 'domainsigmacrawler',
-            'bnf.fr_bot'                          => 'bnf.fr bot',
-            'crawlrobot'                          => 'crawlrobot',
-            'addthis.com robot'                   => 'addthis.com robot',
-            'yeti'                                => 'naverbot',
-            'naver.com/robots'                    => 'naverbot',
-            'robots'                              => 'testcrawler',
-            'deusu'                               => 'werbefreie deutsche suchmaschine',
-            'obot'                                => 'obot',
-            'zumbot'                              => 'zumbot',
-            'umbot'                               => 'umbot',
-            'picmole'                             => 'picmole bot',
-            'zollard'                             => 'zollard worm',
-            'fhscan core'                         => 'fhscan core',
-            'com.linkedin'                        => 'linkedinbot',
-            'linkedinbot'                         => 'linkedinbot',
-            'nbot'                                => 'nbot',
-            'loadtimebot'                         => 'loadtimebot',
-            'scrubby'                             => 'scrubby',
-            'squzer'                              => 'squzer',
-            'piplbot'                             => 'piplbot',
-            'everyonesocialbot'                   => 'everyonesocialbot',
-            'aolbot'                              => 'aolbot',
-            'glbot'                               => 'glbot',
-            'sslbot'                              => 'sslbot',
-            'lbot'                                => 'lbot',
-            'blexbot'                             => 'blexbot',
-            'synapse'                             => 'apache synapse',
-            'linkdexbot'                          => 'linkdex bot',
-            'coccoc'                              => 'coccoc bot',
-            'siteexplorer'                        => 'siteexplorer',
-            'semrushbot'                          => 'semrushbot',
-            'istellabot'                          => 'istellabot',
-            'meanpathbot'                         => 'meanpathbot',
-            'xml sitemaps generator'              => 'xml sitemaps generator',
-            'urlappendbot'                        => 'urlappendbot',
-            'netseer crawler'                     => 'netseer crawler',
-            'add catalog'                         => 'add catalog',
-            'moreover'                            => 'moreover',
-            'linkpadbot'                          => 'linkpadbot',
-            'lipperhey seo service'               => 'lipperhey seo service',
-            'blog search'                         => 'blog search',
-            'qualidator.com bot'                  => 'qualidator.com bot',
-            'fr-crawler'                          => 'fr-crawler',
-            'ca-crawler'                          => 'ca-crawler',
-            'website thumbnail generator'         => 'website thumbnail generator',
-            'webthumb'                            => 'webthumb',
-            'komodiabot'                          => 'komodiabot',
-            'grouphigh'                           => 'grouphigh bot',
-            'theoldreader'                        => 'the old reader',
-            'google-site-verification'            => 'google-site-verification',
-            'prlog'                               => 'prlog',
-            'cms crawler'                         => 'cms crawler',
-            'pmoz.info odp link checker'          => 'pmoz.info odp link checker',
-            'twingly recon'                       => 'twingly recon',
-            'embedly'                             => 'embedly',
-            'alexa site audit'                    => 'alexa site audit',
-            'mj12bot'                             => 'mj12bot',
-            'httrack'                             => 'httrack',
-            'unisterbot'                          => 'unisterbot',
-            'careerbot'                           => 'careerbot',
-            '80legs'                              => '80legs',
-            '80bot'                               => '80legs',
-            'wada.vn'                             => 'wada.vn search bot',
-            'lynx'                                => 'lynx',
-            'nx'                                  => 'netfront nx',
-            'wiiu'                                => 'netfront nx',
-            'nintendo 3ds'                        => 'netfront nx',
-            'netfront'                            => 'netfront',
-            'playstation 4'                       => 'netfront',
-            'xovibot'                             => 'xovibot',
-            '007ac9 crawler'                      => '007ac9 crawler',
-            '200pleasebot'                        => '200pleasebot',
-            'abonti'                              => 'abonti websearch',
-            'publiclibraryarchive'                => 'publiclibraryarchive bot',
-            'pad-bot'                             => 'pad-bot',
-            'softlistbot'                         => 'softlistbot',
-            'sreleasebot'                         => 'sreleasebot',
-            'vagabondo'                           => 'vagabondo',
-            'special_archiver'                    => 'internet archive special archiver',
-            'optimizer'                           => 'optimizer bot',
-            'sophora linkchecker'                 => 'sophora linkchecker',
-            'seodiver'                            => 'seodiver bot',
-            'itsscan'                             => 'itsscan',
-            'google desktop'                      => 'google desktop',
-            'lotus-notes'                         => 'lotus notes',
-            'askpeterbot'                         => 'askpeterbot',
-            'discoverybot'                        => 'discovery bot',
-            'yandexbot'                           => 'yandexbot',
-            'yandeximages'                        => 'yandeximages',
-        ];
-
-        foreach ($checkBeforeMosbookmarks as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->containsAll(['mosbookmarks', 'link checker'], false)) {
-            return $this->loader->load('mosbookmarks link checker', $useragent);
-        }
-
-        $checkBeforeOpenwaveBrowser = [
             'mosbookmarks'                 => 'mosbookmarks',
             'webmasteraid'                 => 'webmasteraid',
             'aboutusbot johnny5'           => 'aboutus bot johnny5',
@@ -986,23 +478,6 @@ class IeBasedFactory implements FactoryInterface
             'sogou web spider'             => 'sogou web spider',
             'openwave'                     => 'openwave mobile browser',
             'up.browser'                   => 'openwave mobile browser',
-        ];
-
-        foreach ($checkBeforeOpenwaveBrowser as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('UP/', true)) {
-            return $this->loader->load('openwave mobile browser', $useragent);
-        }
-
-        if (preg_match('/(obigointernetbrowser|obigo\-browser|obigo|telecabrowser|teleca)(\/|-)q(\d+)/i', $useragent)) {
-            return $this->loader->load('obigo q', $useragent);
-        }
-
-        $checkBeforeGoHttpClient = [
             'teleca'                             => 'teleca-obigo',
             'obigo'                              => 'teleca-obigo',
             'au-mic'                             => 'teleca-obigo',
@@ -1074,19 +549,6 @@ class IeBasedFactory implements FactoryInterface
             'screaming frog seo spider'          => 'screaming frog seo spider',
             'androiddownloadmanager'             => 'android download manager',
             'unibox'                             => 'unibox',
-        ];
-
-        foreach ($checkBeforeGoHttpClient as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if (preg_match('/go ([\d\.]+) package http/i', $useragent)) {
-            return $this->loader->load('go httpclient', $useragent);
-        }
-
-        $lastBrowsers = [
             'go-http-client'                  => 'go httpclient',
             'proxy gear pro'                  => 'proxy gear pro',
             'tiny tiny rss'                   => 'tiny tiny rss',
@@ -1319,6 +781,6 @@ class IeBasedFactory implements FactoryInterface
             }
         }
 
-        return $this->loader->load('unknown', $useragent);
+        return $this->loader->load('internet explorer', $useragent);
     }
 }

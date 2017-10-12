@@ -50,7 +50,7 @@ class BrowserFactory implements FactoryInterface
             return (new Browser\EdgeBasedFactory($this->loader))->detect($useragent, $s, $platform);
         }
 
-        if ($s->contains('chrome', false)) {
+        if ($s->containsAny(['chrome', 'crmo'], false)) {
             return (new Browser\ChromeBasedFactory($this->loader))->detect($useragent, $s, $platform);
         }
 

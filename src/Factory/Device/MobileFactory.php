@@ -1130,6 +1130,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\WikoFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('e-boda', false)) {
+            return (new Mobile\EbodaFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->containsAny(['l5510', 'rainbow'], false)) {
             return (new Mobile\WikoFactory($this->loader))->detect($useragent, $s);
         }
@@ -1244,10 +1248,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('tesla', false)) {
             return (new Mobile\TeslaFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('e-boda', false)) {
-            return (new Mobile\EbodaFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('doro', false)) {
@@ -2440,6 +2440,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('ektra', false)) {
             return (new Mobile\KodakFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('presto', false)) {
+            return (new Mobile\OplusFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('I5', true)) {

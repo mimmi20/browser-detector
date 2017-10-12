@@ -63,36 +63,7 @@ class GenericBrowserFactory implements FactoryInterface
             return $this->loader->load('facebook app', $useragent);
         }
 
-        $checkBeforeOpera = [
-            'ucbrowserhd'      => 'uc browser hd',
-            'flyflow'          => 'flyflow',
-            'bdbrowser_i18n'   => 'baidu browser',
-            'baidubrowser'     => 'baidu browser',
-            'bdbrowserhd_i18n' => 'baidu browser hd',
-            'bdbrowser_mini'   => 'baidu browser mini',
-        ];
-
-        foreach ($checkBeforeOpera as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->containsAny(['ucbrowser', 'ubrowser', 'uc browser', 'ucweb'], false) && $s->contains('opera mini', false)) {
-            return $this->loader->load('ucbrowser', $useragent);
-        }
-
-        if ($s->containsAny(['opera mini', 'opios'], false)) {
-            return $this->loader->load('opera mini', $useragent);
-        }
-
-        if ($s->contains('opera mobi', false)
-            || ($s->containsAny(['opera', 'opr'], false) && $s->containsAny(['android', 'mtk', 'maui', 'samsung', 'windows ce', 'symbos'], false))
-        ) {
-            return $this->loader->load('opera mobile', $useragent);
-        }
-
-        $checkBeforeComodoDragon = [
+        $checkBeforeIos = [
             'ucbrowser'                   => 'ucbrowser',
             'ubrowser'                    => 'ucbrowser',
             'uc browser'                  => 'ucbrowser',
@@ -131,19 +102,6 @@ class GenericBrowserFactory implements FactoryInterface
             'aviator'                     => 'aviator',
             'netfrontlifebrowser'         => 'netfrontlifebrowser',
             'icedragon'                   => 'icedragon',
-        ];
-
-        foreach ($checkBeforeComodoDragon as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('dragon', false) && !$s->contains('dragonfly', false)) {
-            return $this->loader->load('dragon', $useragent);
-        }
-
-        $checkBeforeWebview = [
             'beamrise'        => 'beamrise',
             'diglo'           => 'diglo',
             'apusbrowser'     => 'apusbrowser',
@@ -180,23 +138,6 @@ class GenericBrowserFactory implements FactoryInterface
             'eui browser'     => 'eui browser',
             'slimboat'        => 'slimboat',
             'yandexsearch'    => 'yandexsearch',
-        ];
-
-        foreach ($checkBeforeWebview as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->containsAll(['chrome', 'version'], false)) {
-            return $this->loader->load('android webview', $useragent);
-        }
-
-        if ($s->containsAll(['safari', 'version', 'tizen'], false)) {
-            return $this->loader->load('samsung webview', $useragent);
-        }
-
-        $checkBeforeAnonymus = [
             'cybeye'           => 'cybeye',
             'rebelmouse'       => 'rebelmouse',
             'seamonkey'        => 'seamonkey',
@@ -206,23 +147,6 @@ class GenericBrowserFactory implements FactoryInterface
             't-online browser' => 't-online browser',
             'to-browser'       => 't-online browser',
             'dt-browser'       => 'dt-browser',
-        ];
-
-        foreach ($checkBeforeAnonymus as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->containsAll(['firefox', 'anonym'], false)) {
-            return $this->loader->load('firefox', $useragent);
-        }
-
-        if ($s->containsAll(['trident', 'anonym'], false)) {
-            return $this->loader->load('internet explorer', $useragent);
-        }
-
-        $checkbeforeIe = [
             'windows-rss-platform'                => 'windows-rss-platform',
             'marketwirebot'                       => 'marketwirebot',
             'googletoolbar'                       => 'google toolbar',
@@ -275,25 +199,6 @@ class GenericBrowserFactory implements FactoryInterface
             '360 aphone browser'                  => '360 browser',
             'theworld'                            => 'theworld',
             'ptst'                                => 'webpagetest',
-        ];
-
-        foreach ($checkbeforeIe as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if (preg_match('/Mozilla\/5\.0.*\(.*Trident\/8\.0.*rv\:\d+\).*/', $useragent)
-            || preg_match('/Mozilla\/5\.0.*\(.*Trident\/7\.0.*\) like Gecko.*/', $useragent)
-            || preg_match('/Mozilla\/5\.0.*\(.*MSIE 10\.\d.*Trident\/(4|5|6|7|8)\.0.*/', $useragent)
-            || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (9|8|7|6)\.0.*/', $useragent)
-            || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (5|4)\.\d+.*/', $useragent)
-            || preg_match('/Mozilla\/\d\.\d+.*\(.*MSIE (3|2|1)\.\d+.*/', $useragent)
-        ) {
-            return $this->loader->load('internet explorer', $useragent);
-        }
-
-        $checkBeforeCentBrowser = [
             'chromium'                   => 'chromium',
             'iron'                       => 'iron',
             'midori'                     => 'midori',
@@ -318,19 +223,6 @@ class GenericBrowserFactory implements FactoryInterface
             'commerce browser center'    => 'commerce browser center',
             'iccrawler'                  => 'iccrawler',
             'centil-schweiz webbot'      => 'centil-schweiz webbot',
-        ];
-
-        foreach ($checkBeforeCentBrowser as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('cent', false) && !$s->contains('centos', false)) {
-            return $this->loader->load('cent', $useragent);
-        }
-
-        $checkBeforeEdge = [
             'salam browser'                       => 'salam browser',
             'whale'                               => 'whale browser',
             'slimjet'                             => 'slimjet browser',
@@ -349,19 +241,6 @@ class GenericBrowserFactory implements FactoryInterface
             ' se '                                => 'sogou explorer',
             'archivebot'                          => 'archivebot',
             'word'                                => 'word',
-        ];
-
-        foreach ($checkBeforeEdge as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('edge', false) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
-            return $this->loader->load('edge mobile', $useragent);
-        }
-
-        $checkBeforeWire = [
             'edge'        => 'edge',
             'diffbot'     => 'diffbot',
             'vivaldi'     => 'vivaldi',
@@ -374,41 +253,6 @@ class GenericBrowserFactory implements FactoryInterface
             'asw'         => 'avast safezone',
             'schoolwires' => 'schoolwires app',
             'netnewswire' => 'netnewswire',
-        ];
-
-        foreach ($checkBeforeWire as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('wire', false) && !$s->containsAny(['wired', 'wireless'], false)) {
-            return $this->loader->load('wire app', $useragent);
-        }
-
-        $checkBeforeDragon = [
-            'qupzilla'   => 'qupzilla',
-            'ur browser' => 'ur-browser',
-            'urbrowser'  => 'ur-browser',
-            ' ur/'       => 'ur-browser',
-        ];
-
-        foreach ($checkBeforeDragon as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if (preg_match('/chrome\/(\d+)\.(\d+)/i', $useragent, $matches)
-            && isset($matches[1], $matches[2])
-            && 1 <= $matches[1]
-            && 0 < $matches[2]
-            && 10 >= $matches[2]
-        ) {
-            return $this->loader->load('dragon', $useragent);
-        }
-
-        $checkBeforeAndroidWebkit = [
             'flock'                       => 'flock',
             'crosswalk'                   => 'crosswalk',
             'bromium safari'              => 'vsentry',
@@ -440,31 +284,6 @@ class GenericBrowserFactory implements FactoryInterface
             'ninesky'                     => 'ninesky-browser',
             'listia'                      => 'listia',
             'aldiko'                      => 'aldiko',
-        ];
-
-        foreach ($checkBeforeAndroidWebkit as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->containsAll(['linux; android', 'version'], false)) {
-            return $this->loader->load('android webkit', $useragent);
-        }
-
-        if (preg_match('/android[\/ ][\d\.]+ release/i', $useragent)) {
-            return $this->loader->load('android webkit', $useragent);
-        }
-
-        if ($s->contains('safari', false) && null !== $platform && 'Android' === $platform->getName()) {
-            return $this->loader->load('android webkit', $useragent);
-        }
-
-        if ($s->containsAll(['blackberry', 'version'], false)) {
-            return $this->loader->load('blackberry', $useragent);
-        }
-
-        $checkBeforeQt = [
             'webos'                  => 'webkit/webos',
             'wosbrowser'             => 'webkit/webos',
             'wossystem'              => 'webkit/webos',
@@ -478,19 +297,6 @@ class GenericBrowserFactory implements FactoryInterface
             'quicktime'              => 'quicktime',
             'qtweb internet browser' => 'qtweb internet browser',
             'qtcarbrowser'           => 'model s browser',
-        ];
-
-        foreach ($checkBeforeQt as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->contains('Qt', true)) {
-            return $this->loader->load('qt', $useragent);
-        }
-
-        $checkBeforeAppleMail = [
             'instagram'             => 'instagram app',
             'webclip'               => 'webclip app',
             'mercury'               => 'mercury',
@@ -503,31 +309,6 @@ class GenericBrowserFactory implements FactoryInterface
             'dataaccessd'           => 'ios dataaccessd',
             'mailchimp'             => 'mailchimp.com',
             'mailbar'               => 'mailbar',
-        ];
-
-        foreach ($checkBeforeAppleMail as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if ($s->startsWith('mail', false)) {
-            return $this->loader->load('apple mail', $useragent);
-        }
-
-        if (preg_match('/^Mozilla\/5\.0.*\(.*(CPU iPhone OS|CPU OS) \d+(_|\.)\d+.* like Mac OS X.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $useragent)) {
-            return $this->loader->load('apple mail', $useragent);
-        }
-
-        if (preg_match('/^Mozilla\/5\.0 \(Macintosh; Intel Mac OS X.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $useragent)) {
-            return $this->loader->load('apple mail', $useragent);
-        }
-
-        if (preg_match('/^Mozilla\/5\.0 \(Windows.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $useragent)) {
-            return $this->loader->load('apple mail', $useragent);
-        }
-
-        $checkBeforeSafari = [
             'msnbot-media'                    => 'msnbot-media',
             'adidxbot'                        => 'adidxbot',
             'msnbot'                          => 'bingbot',
@@ -596,36 +377,10 @@ class GenericBrowserFactory implements FactoryInterface
             'readkit'                         => 'readkit',
             'xing-contenttabreceiver'         => 'xing contenttabreceiver',
             'xing'                            => 'xing app',
-        ];
-
-        foreach ($checkBeforeSafari as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if (preg_match('/^Mozilla\/(4|5)\.0 \(Macintosh; .* Mac OS X .*\) AppleWebKit\/.* \(KHTML, like Gecko\) Version\/[\d\.]+$/i', $useragent)) {
-            return $this->loader->load('safari', $useragent);
-        }
-
-        $checkBeforeSafariUiwebview = [
             'twcan/sportsnet' => 'twc sportsnet',
             'adobeair'        => 'adobe air',
             'easouspider'     => 'easouspider',
             'itunes'          => 'itunes',
-        ];
-
-        foreach ($checkBeforeSafariUiwebview as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if (preg_match('/^Mozilla\/5\.0.*\((iPhone|iPad|iPod).*\).*AppleWebKit\/.*\(.*KHTML, like Gecko.*\).*Mobile.*/i', $useragent)) {
-            return $this->loader->load('mobile safari uiwebview', $useragent);
-        }
-
-        $checkBeforeIos = [
             'waterfox'                                      => 'waterfox',
             'thunderbird'                                   => 'thunderbird',
             'fennec'                                        => 'fennec',
@@ -694,10 +449,6 @@ class GenericBrowserFactory implements FactoryInterface
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
-        }
-
-        if (preg_match('/^mozilla\/5\.0 \((iphone|ipad|ipod).*CPU like Mac OS X.*\) AppleWebKit\/\d+/i', $useragent)) {
-            return $this->loader->load('safari', $useragent);
         }
 
         $checkLastUiwebview = [

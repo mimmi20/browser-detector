@@ -24,7 +24,7 @@ class KodakFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ektra'   => 'Kodak ektra',
+        'ektra'   => 'kodak ektra',
     ];
 
     /**
