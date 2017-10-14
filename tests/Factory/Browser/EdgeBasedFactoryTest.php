@@ -9,9 +9,9 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetectorTest\Factory;
+namespace BrowserDetectorTest\Factory\Browser;
 
-use BrowserDetector\Factory\BrowserFactory;
+use BrowserDetector\Factory\Browser\EdgeBasedFactory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
@@ -24,10 +24,10 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
+class EdgeBasedFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\BrowserFactory
+     * @var \BrowserDetector\Factory\Browser\EdgeBasedFactory
      */
     private $object;
 
@@ -44,9 +44,9 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
+        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
         $loader       = new BrowserLoader($cache);
-        $this->object = new BrowserFactory($loader);
+        $this->object = new EdgeBasedFactory($loader);
 
         $platformLoader        = new PlatformLoader($cache);
         $this->platformFactory = new PlatformFactory($platformLoader);
@@ -115,43 +115,6 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        $sourceDirectory = 'tests/data/factory/browser/';
-        $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
-
-        $tests = [];
-
-        foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-            /* @var $file \SplFileInfo */
-            if (!$file->isFile() || 'json' !== $file->getExtension()) {
-                continue;
-            }
-
-            $subfileTests = json_decode(file_get_contents($file->getPathname()), true);
-
-            foreach ($subfileTests as $subfileTest) {
-                if ('this is a fake ua to trigger the fallback' === $subfileTest['ua']) {
-                    continue;
-                }
-
-                if (array_key_exists($subfileTest['ua'], $tests)) {
-                    echo 'UA ', $subfileTest['ua'], ' was already added', PHP_EOL;
-                    continue;
-                }
-
-                $tests[$subfileTest['ua']] = $subfileTest;
-            }
-        }
-
-        $fileTests = json_decode(file_get_contents('tests/data/factory/browser.json'), true);
-
-        foreach ($fileTests as $fileTest) {
-            if (array_key_exists($fileTest['ua'], $tests)) {
-                continue;
-            }
-
-            $tests[$fileTest['ua']] = $fileTest;
-        }
-        
-        return $tests;
+        return json_decode(file_get_contents('tests/data/factory/browser/edge-based.json'), true);
     }
 }

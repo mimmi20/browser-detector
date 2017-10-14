@@ -1,0 +1,770 @@
+[
+  {
+    "ua": "this is a fake ua to trigger the fallback",
+    "browser": "Chrome",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; U7 Plus Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36",
+    "browser": "Android WebView",
+    "version": "4.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.57 Safari/537.36 OPR/16.0.1196.62",
+    "browser": "Opera",
+    "version": "16.0.1196.62",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 YaBrowser/14.2.1700.12599 Safari/537.36",
+    "browser": "Yandex Browser",
+    "version": "14.2.1700.12599",
+    "manufacturer": "Yandex LLC",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.4; SCL24 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 Kamelio Android",
+    "browser": "Kamelio App",
+    "version": "0.0.0",
+    "manufacturer": "Kamelio",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; MTC SMART Run Build/ARK) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 ACHEETAHI/2100501044",
+    "browser": "CM Browser",
+    "version": "0.0.0",
+    "manufacturer": "Cheetah Mobile",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; gxt_dongle_3188 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 bdbrowserhd_i18n/1.8.0.1",
+    "browser": "Baidu Browser HD",
+    "version": "1.8.0.1",
+    "manufacturer": "Baidu",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 3.2.1; en-us) AppleWebKit/534.35 (KHTML, like Gecko) Chrome/11.0.696.65 Safari/534.35 Puffin/2.10990AT Mobile",
+    "browser": "Puffin",
+    "version": "2.10990.0",
+    "manufacturer": "CloudMosa Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900F Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36",
+    "browser": "Samsung Browser",
+    "version": "2.1.0",
+    "manufacturer": "Samsung",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/49.0 Chrome/43.0.2357.126_coc_coc Safari/537.36",
+    "browser": "Coc Coc Browser",
+    "version": "49.0.0",
+    "manufacturer": "Coc Coc Company Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.4; GT-I9300I Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 Flipboard/3.1.5/2581,3.1.5.2581,2015-02-24 17:19, +0800, ru",
+    "browser": "Flipboard App",
+    "version": "3.1.5",
+    "manufacturer": "Flipboard, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36 Seznam.cz/1.2.1",
+    "browser": "Seznam Browser",
+    "version": "1.2.1",
+    "manufacturer": "Seznam.cz, a.s.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) WhiteHat Aviator/33.0.1750.117 Chrome/33.0.1750.117 Safari/537.36",
+    "browser": "Aviator",
+    "version": "33.0.1750.117",
+    "manufacturer": "WhiteHat Security",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Dragon/43.3.3.185 Chrome/43.0.2357.81 Safari/537.36",
+    "browser": "Dragon",
+    "version": "43.3.3.185",
+    "manufacturer": "Comodo Group Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Beamrise/27.3.0.5964 Chrome/27.0.1453.116 Safari/537.36",
+    "browser": "Beamrise",
+    "version": "27.3.0.5964",
+    "manufacturer": "Beamrise Team",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Diglo/28.0.1479.334 Chrome/28.0.1479.0 Safari/537.36",
+    "browser": "Diglo",
+    "version": "28.0.1479.334",
+    "manufacturer": "Diglo Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.2; en) Chrome/37.0.2049.0 (KHTML, like Gecko) Version/4.0 APUSBrowser/1.1.315  Safari/",
+    "browser": "APUSBrowser",
+    "version": "1.1.315",
+    "manufacturer": "APUS-Group",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Iridium/44.0 Safari/537.36 Chrome/43.0.2357.132",
+    "browser": "Iridium Browser",
+    "version": "44.0.0",
+    "manufacturer": "Iridium Browser Team",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.1.3000 Chrome/35.0.1849.0 Safari/537.36",
+    "browser": "Maxthon Nitro",
+    "version": "1.0.1.3000",
+    "manufacturer": "Maxthon International Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.0; SAMSUNG-SM-N900A Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.129 Mobile Safari/537.36 [Pinterest/Android]",
+    "browser": "Pinterest App",
+    "version": "0.0.0",
+    "manufacturer": "Ericsson Research",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; HTC 802t 16GB Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 wkbrowser 3.2.56 696",
+    "browser": "WKBrowser",
+    "version": "3.2.56",
+    "manufacturer": "Keanu Lee",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.4; Coolpad 8675-FHD Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 Mb2345Browser/7.5.1",
+    "browser": "2345 Browser",
+    "version": "7.5.1",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.4; Coolpad 8675-FHD Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36",
+    "browser": "Android WebView",
+    "version": "4.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.11 (KHTML, like Gecko) Ubuntu/12.04 Chromium/20.0.1132.47 Chrome/20.0.1132.47 Safari/536.11",
+    "browser": "Chromium",
+    "version": "20.0.1132.47",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Iron/30.0.1650.0 Chrome/30.0.1650.0 Safari/537.36",
+    "browser": "Iron",
+    "version": "30.0.1650.0",
+    "manufacturer": "SRWare",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Page Speed Insights) Chrome/27.0.1453 Safari/537.36",
+    "browser": "Google PageSpeed Insights",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (en-us) AppleWebKit/534.14 (KHTML, like Gecko; Google Wireless Transcoder) Chrome/9.0.597 Safari/534.14",
+    "browser": "Google Wireless Transcoder",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; FreeBSD; U; Viera; pt-BR) AppleWebKit/535.1 (KHTML, like Gecko) Viera/1.5.1 Chrome/14.0.835.202 Safari/535.1",
+    "browser": "Viera Browser",
+    "version": "1.5.1",
+    "manufacturer": "Panasonic",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36 Nichrome/self/33",
+    "browser": "Nichrome",
+    "version": "33.0.0",
+    "manufacturer": "rambler.ru",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36 Kinza/1.2.0",
+    "browser": "Kinza",
+    "version": "1.2.0",
+    "manufacturer": "kinza.jp",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/534.16 (KHTML, like Gecko, Google Keyword Suggestion) Chrome/10.0.648.127 Safari/534.16",
+    "browser": "Google Keyword Suggestion",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Web Preview) Chrome/27.0.1453 Safari/537.36",
+    "browser": "Google Web Preview",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (en-us) AppleWebKit/537.36(KHTML, like Gecko; Google-Adwords-DisplayAds-WebRender;) Chrome/27.0.1453Safari/537.36",
+    "browser": "Google Adwords DisplayAds WebRender",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36 HubSpot Webcrawler",
+    "browser": "HubSpot Webcrawler",
+    "version": "0.0.0",
+    "manufacturer": "HubSpot, Inc.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) RockMelt/0.16.91.483 Chrome/16.0.912.77 Safari/535.7",
+    "browser": "RockMelt",
+    "version": "0.16.91.483",
+    "manufacturer": "Yahoo! Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36 SE 2.X MetaSr 1.0",
+    "browser": "Sogou Explorer",
+    "version": "2.0.0",
+    "manufacturer": "Sogou Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "ArchiveTeam ArchiveBot/20141009.02 (wpull 0.1002a1) and not Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36",
+    "browser": "ArchiveBot",
+    "version": "0.0.0",
+    "manufacturer": "ArchiveTeam",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.15 (KHTML, like Gecko; +http://www.diffbot.com) Chrome/24.0.1295.0 Safari/537.15",
+    "browser": "Diffbot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Vivaldi/1.0.83.38 Safari/537.36",
+    "browser": "Vivaldi",
+    "version": "1.0.83.38",
+    "manufacturer": "Vivaldi Technologies",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.4; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36 LBBROWSER",
+    "browser": "liebao",
+    "version": "0.0.0",
+    "manufacturer": "Kingsoft",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1709.117 Amigo/32.0.1709.117 MRCHROME SOC Safari/537.36",
+    "browser": "Amigo",
+    "version": "32.0.1709.117",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.2 (KHTML, like Gecko) ChromePlus/4.0.222.3 Chrome/4.0.222.3 Safari/532.2",
+    "browser": "CoolNovo Chrome Plus",
+    "version": "4.0.222.3",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36 CoolNovo/2.0.9.20",
+    "browser": "CoolNovo",
+    "version": "2.0.9.20",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36 Kenshoo/3049",
+    "browser": "Kenshoo",
+    "version": "0.0.0",
+    "manufacturer": "Kenshoo, Ltd.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iOS; like Mac OS X) AppleWebKit/536.36 (KHTML, like Gecko) not Chrome/27.0.1500.95 Mobile/10B141 Safari/537.36 Bowser/0.2.1",
+    "browser": "Bowser",
+    "version": "0.2.1",
+    "manufacturer": "Ericsson Research",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36 QIHU 360SE",
+    "browser": "360 Secure Browser",
+    "version": "0.0.0",
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36 QIHU 360EE",
+    "browser": "360 Speed Browser",
+    "version": "0.0.0",
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 ASW/1.46.1990.55",
+    "browser": "Avast SafeZone",
+    "version": "1.46.1990.55",
+    "manufacturer": "AVAST Software s.r.o.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.4.3; en-us; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.67 like Chrome/39.0.2171.93 Safari/537.36",
+    "browser": "Silk",
+    "version": "3.67.0",
+    "manufacturer": "Amazon.com, Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Wire/2.3.2553 Chrome/45.0.2454.85 Electron/0.35.2 Safari/537.36",
+    "browser": "Wire App",
+    "version": "2.3.2553",
+    "manufacturer": "Wire Swiss GmbH",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.1.0.0 Safari/537.36",
+    "browser": "Dragon",
+    "version": "31.1.0.0",
+    "manufacturer": "Comodo Group Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Flock/3.5.2.4599 Chrome/7.0.517.442 Safari/534.7",
+    "browser": "Flock",
+    "version": "3.5.2.4599",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.4; GT-I9195I Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Crosswalk/14.43.343.17 Mobile Safari/537.36",
+    "browser": "Crosswalk App",
+    "version": "14.43.343.17",
+    "manufacturer": "Intel Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; chromeframe/2.4.8.5746) AppleWebKit/1.0 (KHTML, like Gecko) Bromium Safari/1.0",
+    "browser": "vSentry",
+    "version": "1.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.2.2; Nexus 4 Build/JDQ39E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Mobile Safari/537.36",
+    "browser": "Chrome",
+    "version": "27.0.1453.90",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; GT-I9100 Build/IML74K) AppleWebKit/535.7 (KHTML, like Gecko) CrMo/16.0.912.77 Mobile Safari/535.7",
+    "browser": "Chrome",
+    "version": "16.0.912.77",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.21 (KHTML, like Gecko) Chrome/19.0.1042.0 Safari/535.21 PagePeeker/2.1; +http://pagepeeker.com/robots/",
+    "browser": "PagePeeker",
+    "version": "2.1.0",
+    "manufacturer": "pagepeeker SRL",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider(compatible; HaosouSpider; http://www.haosou.com/help/help_3_2.html)",
+    "browser": "HaosouSpider",
+    "version": "0.0.0",
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.59 Safari/537.36 BitdefenderSafepay/2017 (3.55.0.2883.59 build 20170105, like Chrome 55)",
+    "browser": "Safepay",
+    "version": "0.0.0",
+    "manufacturer": "Bitdefender",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0.1; ATH-AL00 Build/HONORATH-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 JsKit/1.0 (Android) SohuNews/5.7.3 BuildCode/113",
+    "browser": "SohuNews App",
+    "version": "5.7.3",
+    "manufacturer": "Sohu.com Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36/1.0 (A StormCrawler-based crawler; http://someorganization.com/; someone@someorganization.com)",
+    "browser": "StormCrawler",
+    "version": "0.0.0",
+    "manufacturer": "DigitalPebble Ltd",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 PTST/1",
+    "browser": "WebPagetest",
+    "version": "0.0.0",
+    "manufacturer": "WPO Foundation",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 7.0; SM-G955U Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/3.1.0 SamsungBrowser/4.0 Chrome/57.0.2987.146 Mobile VR Safari/537.36",
+    "browser": "OculusBrowser",
+    "version": "3.1.0",
+    "manufacturer": "Facebook",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Android 6.0.1; LGE LGLS676) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 SurfBrowser/3.0",
+    "browser": "SurfBrowser",
+    "version": "3.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) QupZilla/2.1.2 Chrome/53.0.2785.148 Safari/537.36",
+    "browser": "QupZilla",
+    "version": "2.1.2",
+    "manufacturer": "David Rosca and Community",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 5.0.2; de-de; Redmi Note 2 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.85 Mobile Safari/537.36 XiaoMi/MiuiBrowser/8.1.6",
+    "browser": "Miui Browser",
+    "version": "8.1.6",
+    "manufacturer": "Xiaomi Tech",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 6.0.1; SM-T715 Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Safari/537.36 OPR/26.0.2254.117551",
+    "browser": "Opera Mobile",
+    "version": "26.0.2254.117551",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 AviraScout/17.5.3029.2783",
+    "browser": "Avira Scout",
+    "version": "17.5.3029.2783",
+    "manufacturer": "Avira Operations GmbH & Co. KG.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 7.0; LGE VS995 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Mobile Safari/537.36 AlohaBrowser/0.8.7.1",
+    "browser": "Aloha Browser",
+    "version": "0.8.7.1",
+    "manufacturer": "Aloha Mobile Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; vivo X7 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36 VivoBrowser/5.1.4",
+    "browser": "VivoBrowser",
+    "version": "5.1.4",
+    "manufacturer": "vivo",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0.1; SM-T555 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 BingWeb/6.8.25183598",
+    "browser": "BingWeb App",
+    "version": "6.8.25183598",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0.1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Klar/1.0 Chrome/58.0.3029.83 Mobile Safari/537.36",
+    "browser": "Firefox Klar",
+    "version": "1.0.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 6.0;zh_cn; LEX626 Build/HEXCNFN5902606111S) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/49.0.2623.91 Mobile Safari/537.36 EUI Browser/1.2.1.29",
+    "browser": "eUI Browser",
+    "version": "1.2.1.29",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/59.0.3071.36 Safari/537.36",
+    "browser": "Headless Chrome",
+    "version": "59.0.3071.36",
+    "manufacturer": "Google Inc",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) WhatsApp/0.2.4238 Chrome/53.0.2785.143 Electron/1.4.12 Safari/537.36",
+    "browser": "WhatsApp",
+    "version": "0.2.4238",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Basecamp3/1.6.0 Chrome/53.0.2785.143 Electron/1.4.15 Safari/537.36",
+    "browser": "Basecamp3",
+    "version": "1.6.0",
+    "manufacturer": "Basecamp",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2623.87 URBrowser/48.1.2564.36 Safari/537.36",
+    "browser": "UR Browser",
+    "version": "48.1.2564.36",
+    "manufacturer": "AdaptiveBee SASU",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36 Chrome/55.0.2883.95 UR/55.1.2883.7",
+    "browser": "UR Browser",
+    "version": "55.1.2883.7",
+    "manufacturer": "AdaptiveBee SASU",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36 Chrome/55.0.2883.87 UR Browser/51.0.2704.51",
+    "browser": "UR Browser",
+    "version": "51.0.2704.51",
+    "manufacturer": "AdaptiveBee SASU",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.1708.400 QQBrowser/9.5.9635.400",
+    "browser": "QQ Browser",
+    "version": "9.5.9635.400",
+    "manufacturer": "Tencent Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 BoBrowser/45.0.2454.153 Safari/537.36",
+    "browser": "BoBrowser",
+    "version": "45.0.2454.153",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.34 (KHTML, like Gecko) SlimBoat/1.1.49 Chrome/25.0.1364.97 Version/5.1 Safari/534.34",
+    "browser": "SlimBoat",
+    "version": "1.1.49",
+    "manufacturer": "FlashPeak Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 1stBrowser/45.0.2454.146 Safari/537.36",
+    "browser": "1st Browser",
+    "version": "45.0.2454.146",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 6.0.1; en; SM-J700F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Tenta/1.1.0.1 Mobile Safari/537.36 Mobile",
+    "browser": "Tenta",
+    "version": "1.1.0.1",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 Cent/1.5.11.28",
+    "browser": "Cent",
+    "version": "1.5.11.28",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2551.0 (SBRO; Salam Browser) Safari/537.36",
+    "browser": "Salam Browser",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Whale/0.7.30.7 Safari/537.36",
+    "browser": "Whale Browser",
+    "version": "0.7.30.7",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36 Slimjet/6.0.1.0",
+    "browser": "Slimjet Browser",
+    "version": "6.0.1.0",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.2) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.67 CoRom/26.0.1410.67 Safari/537.31",
+    "browser": "CoRom Browser",
+    "version": "26.0.1410.67",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2745.1 Kuaiso/1.42.501.426 Safari/537.36",
+    "browser": "Kuaiso Browser",
+    "version": "1.42.501.426",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99  Safari/537.36 HubSpot Marketing Grader",
+    "browser": "HubSpot Marketing Grader",
+    "version": "0.0.0",
+    "manufacturer": "HubSpot, Inc.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36 moatbot",
+    "browser": "moatbot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36; +collection@infegy.com",
+    "browser": "Infegy Bot",
+    "version": "0.0.0",
+    "manufacturer": "infegy.com",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; Light_AT200 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.85 Safari/537.36 YandexSearch/5.45/apad",
+    "browser": "Yandex Search App",
+    "version": "5.45.0",
+    "manufacturer": "Yandex LLC",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36 2345chrome v3.0.0.8180",
+    "browser": "2345 Browser",
+    "version": "3.0.0.8180",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 SznProhlizec/3.2.3a",
+    "browser": "Seznam Browser",
+    "version": "3.2.3-alpha",
+    "manufacturer": "Seznam.cz, a.s.",
+    "bits": 64,
+    "type": "Browser"
+  }
+]
