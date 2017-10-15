@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Browser;
 
-use BrowserDetector\Factory\Browser\ChromeBasedFactory;
+use BrowserDetector\Factory\Browser\WebkitOrKhtmlOrSafariBasedFactory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
@@ -24,10 +24,10 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class ChromeBasedFactoryTest extends \PHPUnit\Framework\TestCase
+class WebkitOrKhtmlOrSafariBasedFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Browser\ChromeBasedFactory
+     * @var \BrowserDetector\Factory\Browser\WebkitOrKhtmlOrSafariBasedFactory
      */
     private $object;
 
@@ -46,7 +46,7 @@ class ChromeBasedFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
         $loader       = new BrowserLoader($cache);
-        $this->object = new ChromeBasedFactory($loader);
+        $this->object = new WebkitOrKhtmlOrSafariBasedFactory($loader);
 
         $platformLoader        = new PlatformLoader($cache);
         $this->platformFactory = new PlatformFactory($platformLoader);
@@ -115,6 +115,6 @@ class ChromeBasedFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return json_decode(file_get_contents('tests/data/factory/browser/chrome-based.json'), true);
+        return json_decode(file_get_contents('tests/data/factory/browser/safari-based.json'), true);
     }
 }

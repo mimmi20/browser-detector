@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Browser;
 
-use BrowserDetector\Factory\Browser\IeBasedFactory;
+use BrowserDetector\Factory\Browser\TridentOrIeBasedFactory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
@@ -24,10 +24,10 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class IeBasedFactoryTest extends \PHPUnit\Framework\TestCase
+class TridentOrIeBasedFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Browser\IeBasedFactory
+     * @var \BrowserDetector\Factory\Browser\TridentOrIeBasedFactory
      */
     private $object;
 
@@ -46,7 +46,7 @@ class IeBasedFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
         $loader       = new BrowserLoader($cache);
-        $this->object = new IeBasedFactory($loader);
+        $this->object = new TridentOrIeBasedFactory($loader);
 
         $platformLoader        = new PlatformLoader($cache);
         $this->platformFactory = new PlatformFactory($platformLoader);

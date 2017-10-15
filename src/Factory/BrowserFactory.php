@@ -51,23 +51,27 @@ class BrowserFactory implements FactoryInterface
         }
 
         if ($s->containsAny(['chrome', 'crmo'], false)) {
-            return (new Browser\ChromeBasedFactory($this->loader))->detect($useragent, $s, $platform);
+            return (new Browser\BlinkOrChromeBasedFactory($this->loader))->detect($useragent, $s, $platform);
         }
 
-        if ($s->containsAny(['safari', 'webkit', 'cfnetwork', 'dalvik'], false)) {
-            return (new Browser\SafariBasedFactory($this->loader))->detect($useragent, $s, $platform);
+        if ($s->containsAny(['safari', 'webkit', 'cfnetwork', 'dalvik', 'ipad', 'ipod', 'iphone', 'khtml'], false)) {
+            return (new Browser\WebkitOrKhtmlOrSafariBasedFactory($this->loader))->detect($useragent, $s, $platform);
+        }
+
+        if ($s->contains('iOS', true)) {
+            return (new Browser\WebkitOrKhtmlOrSafariBasedFactory($this->loader))->detect($useragent, $s, $platform);
         }
 
         if ($s->containsAny(['opera', 'presto'], false)) {
-            return (new Browser\OperaBasedFactory($this->loader))->detect($useragent, $s, $platform);
+            return (new Browser\PrestoOrOperaBasedFactory($this->loader))->detect($useragent, $s, $platform);
         }
 
         if ($s->containsAny(['msie', 'trident', 'like gecko'], false)) {
-            return (new Browser\IeBasedFactory($this->loader))->detect($useragent, $s, $platform);
+            return (new Browser\TridentOrIeBasedFactory($this->loader))->detect($useragent, $s, $platform);
         }
 
-        if ($s->containsAny(['firefox', 'gecko'], false)) {
-            return (new Browser\FirefoxBasedFactory($this->loader))->detect($useragent, $s, $platform);
+        if ($s->containsAny(['firefox', 'minefield', 'shiretoko', 'bonecho', 'namoroka', 'gecko'], false)) {
+            return (new Browser\GeckoOrFirefoxBasedFactory($this->loader))->detect($useragent, $s, $platform);
         }
 
         return (new Browser\GenericBrowserFactory($this->loader))->detect($useragent, $s, $platform);

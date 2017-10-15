@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Browser;
 
-use BrowserDetector\Factory\Browser\OperaBasedFactory;
+use BrowserDetector\Factory\Browser\BlinkOrChromeBasedFactory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
@@ -24,10 +24,10 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class OperaBasedFactoryTest extends \PHPUnit\Framework\TestCase
+class BlinkOrChromeBasedFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Browser\OperaBasedFactory
+     * @var \BrowserDetector\Factory\Browser\BlinkOrChromeBasedFactory
      */
     private $object;
 
@@ -46,7 +46,7 @@ class OperaBasedFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
         $loader       = new BrowserLoader($cache);
-        $this->object = new OperaBasedFactory($loader);
+        $this->object = new BlinkOrChromeBasedFactory($loader);
 
         $platformLoader        = new PlatformLoader($cache);
         $this->platformFactory = new PlatformFactory($platformLoader);
@@ -115,6 +115,6 @@ class OperaBasedFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return json_decode(file_get_contents('tests/data/factory/browser/opera-based.json'), true);
+        return json_decode(file_get_contents('tests/data/factory/browser/chrome-based.json'), true);
     }
 }

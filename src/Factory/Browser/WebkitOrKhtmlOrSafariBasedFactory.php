@@ -21,7 +21,7 @@ use UaResult\Os\OsInterface;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class SafariBasedFactory implements FactoryInterface
+class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
 {
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -224,7 +224,7 @@ class SafariBasedFactory implements FactoryInterface
 //            'web/snippet'                => 'google web snippet',
 //            'googlebot-mobile'           => 'googlebot-mobile',
 //            'google wireless transcoder' => 'google wireless transcoder',
-//            'com.google.googleplus'      => 'google+ app',
+            'com.google.googleplus'      => 'google+ app',
 //            'google-http-java-client'    => 'google http client library for java',
 //            'googlebot-image'            => 'google image search',
             'googlebot'                  => 'googlebot',
@@ -304,11 +304,7 @@ class SafariBasedFactory implements FactoryInterface
         if ($s->contains('safari', false) && null !== $platform && 'Android' === $platform->getName()) {
             return $this->loader->load('android webkit', $useragent);
         }
-//
-//        if ($s->containsAll(['blackberry', 'version'], false)) {
-//            return $this->loader->load('blackberry', $useragent);
-//        }
-//
+
         $checkBeforeQt = [
             'webos'                  => 'webkit/webos',
             'wosbrowser'             => 'webkit/webos',
@@ -340,12 +336,12 @@ class SafariBasedFactory implements FactoryInterface
             'webclip'               => 'webclip app',
             'mercury'               => 'mercury',
             'macappstore'           => 'macappstore',
-//            'appstore'              => 'apple appstore app',
+            'appstore'              => 'apple appstore app',
             'webglance'             => 'web glance',
             'yhoo_search_app'       => 'yahoo mobile app',
             'newsblur feed fetcher' => 'newsblur feed fetcher',
-//            'applecoremedia'        => 'coremedia',
-//            'dataaccessd'           => 'ios dataaccessd',
+            'applecoremedia'        => 'coremedia',
+            'dataaccessd'           => 'ios dataaccessd',
 //            'mailchimp'             => 'mailchimp.com',
 //            'mailbar'               => 'mailbar',
         ];
@@ -383,18 +379,17 @@ class SafariBasedFactory implements FactoryInterface
             'profiller'                       => 'profiller',
             'wkhtmltopdf'                     => 'wkhtmltopdf',
             'wkhtmltoimage'                   => 'wkhtmltoimage',
-//            'wp-iphone'                       => 'wordpress app',
-//            'wp-android'                      => 'wordpress app',
+            'wp-iphone'                       => 'wordpress app',
             'oktamobile'                      => 'okta mobile app',
             'kmail2'                          => 'kmail2',
-//            'eb-iphone'                       => 'eb iphone/ipad app',
+            'eb-iphone'                       => 'eb iphone/ipad app',
             'elmediaplayer'                   => 'elmedia player',
             'dreamweaver'                     => 'dreamweaver',
             'akregator'                       => 'akregator',
             'installatron'                    => 'installatron',
 //            'quora link preview'              => 'quora link preview bot',
-//            'quora'                           => 'quora app',
-//            'rocky chatwork mobile'           => 'rocky chatwork mobile',
+            'quora'                           => 'quora app',
+            'rocky chatwork mobile'           => 'rocky chatwork mobile',
             'adsbot-google-mobile'            => 'adsbot google-mobile',
             'epiphany'                        => 'epiphany',
             'rekonq'                          => 'rekonq',
@@ -419,7 +414,7 @@ class SafariBasedFactory implements FactoryInterface
             'palemoon'                        => 'palemoon',
 //            'slurp'                           => 'slurp',
             'applebot'                        => 'applebot',
-//            'soundcloud'                      => 'soundcloud app',
+            'soundcloud'                      => 'soundcloud app',
             'rival iq'                        => 'rival iq bot',
 //            'evernote clip resolver'          => 'evernote clip resolver',
             'evernote'                        => 'evernote app',
@@ -436,7 +431,7 @@ class SafariBasedFactory implements FactoryInterface
 //            'windows phone ad client'         => 'windows phone ad client',
 //            'ddg-android-'                    => 'duckduck app',
 //            'ddg-ios-'                        => 'duckduck app',
-//            'snapchat'                        => 'snapchat app',
+            'snapchat'                        => 'snapchat app',
             'grindr'                          => 'grindr',
             'readkit'                         => 'readkit',
 //            'xing-contenttabreceiver'         => 'xing contenttabreceiver',
@@ -532,7 +527,7 @@ class SafariBasedFactory implements FactoryInterface
 //            'wbsrch'                                        => 'wbsearchbot',
 //            'typo3-linkvalidator'                           => 'typo3 linkvalidator',
 //            'typo3'                                         => 'typo3',
-//            'feeddlerrss'                                   => 'feeddler rss reader',
+            'feeddlerrss'                                   => 'feeddler rss reader',
         ];
 
         foreach ($checkBeforeIos as $search => $key) {
@@ -540,11 +535,11 @@ class SafariBasedFactory implements FactoryInterface
                 return $this->loader->load($key, $useragent);
             }
         }
-//
-//        if (preg_match('/^mozilla\/5\.0 \((iphone|ipad|ipod).*CPU like Mac OS X.*\) AppleWebKit\/\d+/i', $useragent)) {
-//            return $this->loader->load('safari', $useragent);
-//        }
-//
+
+        if (preg_match('/^mozilla\/5\.0 \((iphone|ipad|ipod).*CPU like Mac OS X.*\) AppleWebKit\/\d+/i', $useragent)) {
+            return $this->loader->load('safari', $useragent);
+        }
+
         $lastBrowsers = [
 //            'paperlibot'                          => 'paper.li bot',
 //            'spbot'                               => 'seoprofiler',
@@ -1099,6 +1094,10 @@ class SafariBasedFactory implements FactoryInterface
 //            'booglebot'                       => 'booglebot',
 //            'orbiter'                         => 'orbiter',
 //            'generic site loader'             => 'generic site loader',
+            'ios'    => 'mobile safari uiwebview',
+            'iphone' => 'mobile safari uiwebview',
+            'ipad'   => 'mobile safari uiwebview',
+            'ipod'   => 'mobile safari uiwebview',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

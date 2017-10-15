@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Browser;
 
-use BrowserDetector\Factory\Browser\FirefoxBasedFactory;
+use BrowserDetector\Factory\Browser\PrestoOrOperaBasedFactory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
@@ -24,10 +24,10 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class FirefoxBasedFactoryTest extends \PHPUnit\Framework\TestCase
+class PrestoOrOperaBasedFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Browser\FirefoxBasedFactory
+     * @var \BrowserDetector\Factory\Browser\PrestoOrOperaBasedFactory
      */
     private $object;
 
@@ -46,7 +46,7 @@ class FirefoxBasedFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
         $loader       = new BrowserLoader($cache);
-        $this->object = new FirefoxBasedFactory($loader);
+        $this->object = new PrestoOrOperaBasedFactory($loader);
 
         $platformLoader        = new PlatformLoader($cache);
         $this->platformFactory = new PlatformFactory($platformLoader);
@@ -115,6 +115,6 @@ class FirefoxBasedFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return json_decode(file_get_contents('tests/data/factory/browser/firefox-based.json'), true);
+        return json_decode(file_get_contents('tests/data/factory/browser/opera-based.json'), true);
     }
 }
