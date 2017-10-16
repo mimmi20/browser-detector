@@ -21,11 +21,7 @@ use UaResult\Os\OsInterface;
 /**
  * Browser detection class
  *
- * @category  BrowserDetector
- *
- * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class EngineFactory implements FactoryInterface
 {
@@ -96,7 +92,7 @@ class EngineFactory implements FactoryInterface
         }
 
         if (null !== $browserLoader && $s->containsAny(['webkit', 'cfnetwork', 'safari', 'dalvik'], false)) {
-            /** @var \UaResult\Browser\Browser $chrome */
+            /* @var \UaResult\Browser\Browser $chrome */
             [$chrome]      = $browserLoader->load('chrome', $useragent);
             $version       = $chrome->getVersion();
             $chromeVersion = 0;

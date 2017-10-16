@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class HuaweiFactory implements Factory\FactoryInterface
 {
@@ -117,6 +114,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'rio-l01'                         => 'huawei rio-l01',
         'cun-l21'                         => 'huawei cun-l21',
         'cun-l03'                         => 'huawei cun-l03',
+        'cun-l01'                         => 'huawei cun-l01',
         'crr-l09'                         => 'huawei crr-l09',
         'chc-u23'                         => 'huawei chc-u23',
         'chc-u03'                         => 'huawei chc-u03',

@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class UlefoneFactory implements Factory\FactoryInterface
 {
@@ -27,7 +24,9 @@ class UlefoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'future'   => 'ulefone future',
         'u007 pro' => 'ulefone u007 pro',
+        'u007'     => 'ulefone u007',
         'vienna'   => 'ulefone vienna',
         'paris'    => 'ulefone paris',
         'be pro'   => 'ulefone be pro',

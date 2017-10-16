@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class LeecoFactory implements Factory\FactoryInterface
 {
@@ -31,6 +28,7 @@ class LeecoFactory implements Factory\FactoryInterface
         'lex626'   => 'leeco le x626',
         'le x829'  => 'leeco le x829',
         'le x820'  => 'leeco le x820',
+        'lex820'   => 'leeco le x820',
         'lex720'   => 'leeco le x720',
         'le x620'  => 'leeco le x620',
     ];

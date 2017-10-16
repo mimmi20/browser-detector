@@ -1,0 +1,58 @@
+[
+  {
+    "ua": "this is a fake ua to trigger the fallback",
+    "browser": "Opera",
+    "version": "0.0.0",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ru) Opera 8.01",
+    "browser": "Opera",
+    "version": "8.01.0",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-us; GT-S5670 Build/GINGERBREAD) U2/1.0.0 UCBrowser/9.4.1.362 Mobile",
+    "browser": "UC Browser",
+    "version": "9.4.1.362",
+    "manufacturer": "UCWeb Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "SAMSUNG-GT-E3309T Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.34189/34.1016; U; en) Presto/2.8.119 Version/11.10",
+    "browser": "Opera Mini",
+    "version": "4.4.34189",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Opera/9.80 (Android 4.0.4; Linux; Opera Mobi/ADR-1210091050) Presto/2.11.355 Version/12.10",
+    "browser": "Opera Mobile",
+    "version": "12.10.0",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Huawei/1.0/HUAWEI-G7300 Browser/Opera MMS/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; it-IT) Presto/2.5.28 Version/10.10",
+    "browser": "Opera Mobile",
+    "version": "10.10.0",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "MicromaxX650 ASTRO36_TD/v3 MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10",
+    "browser": "Opera Mobile",
+    "version": "10.10.0",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Browser"
+  }
+]

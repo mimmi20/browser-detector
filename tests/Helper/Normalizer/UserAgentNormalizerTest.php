@@ -18,6 +18,8 @@ use BrowserDetector\Helper\Normalizer\UserAgentNormalizer;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class UserAgentNormalizerTest extends \PHPUnit\Framework\TestCase
 {
@@ -27,8 +29,10 @@ class UserAgentNormalizerTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $userAgent
      * @param string $expected
+     *
+     * @return void
      */
-    public function testNormalizeConstruct($userAgent, $expected): void
+    public function testNormalizeConstruct(string $userAgent, string $expected): void
     {
         $normalizer = new UserAgentNormalizer([new Mozilla()]);
 
@@ -43,8 +47,10 @@ class UserAgentNormalizerTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $userAgent
      * @param string $expected
+     *
+     * @return void
      */
-    public function testNormalizeAdd($userAgent, $expected): void
+    public function testNormalizeAdd(string $userAgent, string $expected): void
     {
         $normalizer = new UserAgentNormalizer();
         $normalizer->add(new Mozilla());
@@ -54,6 +60,9 @@ class UserAgentNormalizerTest extends \PHPUnit\Framework\TestCase
         self::assertSame($expected, $normalizer->normalize($userAgent));
     }
 
+    /**
+     * @return array[]
+     */
     public function userAgentsDataProvider()
     {
         return [

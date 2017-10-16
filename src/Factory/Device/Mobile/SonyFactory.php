@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class SonyFactory implements Factory\FactoryInterface
 {
@@ -56,6 +53,7 @@ class SonyFactory implements Factory\FactoryInterface
         'e6653'                => 'sony e6653',
         'e6633'                => 'sony e6633',
         'e6553'                => 'sony e6553',
+        'e6533'                => 'sony e6533',
         'e5823'                => 'sony e5823',
         'e5653'                => 'sony e5653',
         'e5633'                => 'sony e5633',
@@ -66,7 +64,9 @@ class SonyFactory implements Factory\FactoryInterface
         'e5333'                => 'sony e5333',
         'e5306'                => 'sony e5306',
         'e5303'                => 'sony e5303',
+        'e2363'                => 'sony e2363',
         'e2333'                => 'sony e2333',
+        'e2312'                => 'sony e2312',
         'e2303'                => 'sony e2303',
         'e2115'                => 'sony e2115',
         'e2105'                => 'sony e2105',

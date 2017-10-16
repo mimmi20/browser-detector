@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class OdysFactory implements Factory\FactoryInterface
 {
@@ -27,6 +24,7 @@ class OdysFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'neo6_lte'         => 'odys neo 6 lte',
         'visio'            => 'odys visio',
         'rapid7lte'        => 'odys rapid 7 lte',
         'pro q8 plus'      => 'odys pro q8 plus',

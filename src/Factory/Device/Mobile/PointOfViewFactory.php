@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class PointOfViewFactory implements Factory\FactoryInterface
 {
@@ -27,6 +24,7 @@ class PointOfViewFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'tab-p517'        => 'pointofview tab p517',
         'tab-protab25'    => 'pointofview protab 25',
         'tab-protab30'    => 'pointofview protab 3 xxl',
         'tab-protab2xxl'  => 'pointofview protab 2 xxl',

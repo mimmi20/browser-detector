@@ -14,11 +14,7 @@ namespace BrowserDetector\Loader;
 /**
  * Browser detection class
  *
- * @category  BrowserDetector
- *
- * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2016 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 interface ExtendedLoaderInterface
 {

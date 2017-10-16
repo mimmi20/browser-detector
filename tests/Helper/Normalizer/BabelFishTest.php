@@ -17,6 +17,8 @@ use BrowserDetector\Helper\Normalizer\BabelFish;
  * Class LocaleRemoverTest
  *
  * @group Handlers
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class BabelFishTest extends \PHPUnit\Framework\TestCase
 {
@@ -25,6 +27,12 @@ class BabelFishTest extends \PHPUnit\Framework\TestCase
      */
     private $normalizer;
 
+    /**
+     * Sets up the fixture, for example, open a network connection.
+     * This method is called before a test is executed.
+     *
+     * @return void
+     */
     protected function setUp(): void
     {
         $this->normalizer = new BabelFish();
@@ -36,13 +44,18 @@ class BabelFishTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $userAgent
      * @param string $expected
+     *
+     * @return void
      */
-    public function testNormalize($userAgent, $expected): void
+    public function testNormalize(string $userAgent, string $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);
     }
 
+    /**
+     * @return array[]
+     */
     public function userAgentsDataProvider()
     {
         return [

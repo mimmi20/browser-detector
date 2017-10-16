@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class MpmanFactory implements Factory\FactoryInterface
 {
@@ -27,7 +24,9 @@ class MpmanFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'mpqc730' => 'mpman mpqc730',
+        'mpqc1040i' => 'mpman mpqc1040i',
+        'mpqc1010'  => 'mpman mpqc1010',
+        'mpqc730'   => 'mpman mpqc730',
     ];
 
     /**

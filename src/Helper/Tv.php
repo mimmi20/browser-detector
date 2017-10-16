@@ -15,6 +15,8 @@ use Stringy\Stringy;
 
 /**
  * a helper to detect TV devices
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class Tv
 {

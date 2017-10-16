@@ -723,8 +723,8 @@
     "type": "FonePad",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1280,
+    "height": 800,
     "colors": null
   },
   {
@@ -736,8 +736,8 @@
     "type": "FonePad",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1280,
+    "height": 800,
     "colors": null
   },
   {
@@ -749,8 +749,8 @@
     "type": "Tablet",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 1280,
+    "height": 800,
     "colors": null
   },
   {
@@ -1791,6 +1791,58 @@
     "pointingMethod": "touchscreen",
     "width": 1080,
     "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.0.1; Lenovo TAB S8-50F Build/BMAIN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36",
+    "codeName": "S8-50F",
+    "marketingName": "Tab S8",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1920,
+    "height": 1200,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A3500-F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36",
+    "codeName": "A3500-F",
+    "marketingName": "A7-50",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1280,
+    "height": 800,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 7.0; X1030X Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36",
+    "codeName": "X1030X",
+    "marketingName": "X1030X",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1920,
+    "height": 1200,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.4; Lenovo A616 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 BingWeb/6.9.25207201",
+    "codeName": "A616",
+    "marketingName": "A616",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 480,
+    "height": 854,
     "colors": null
   }
 ]

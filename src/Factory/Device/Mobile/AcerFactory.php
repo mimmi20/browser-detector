@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class AcerFactory implements Factory\FactoryInterface
 {
@@ -48,6 +45,7 @@ class AcerFactory implements Factory\FactoryInterface
         'z150'         => 'acer z150',
         'z130'         => 'acer z130',
         'liquid'       => 'acer s100',
+        'b3-a20b'      => 'acer b3-a20b',
         'b3-a20'       => 'acer b3-a20',
         'b3-a30'       => 'acer b3-a30',
         'b1-810'       => 'acer b1-810',

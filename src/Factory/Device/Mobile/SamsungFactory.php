@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class SamsungFactory implements Factory\FactoryInterface
 {
@@ -29,6 +26,7 @@ class SamsungFactory implements Factory\FactoryInterface
     private $devices = [
         'sm-t807j'        => 'samsung sm-t807j',
         'sct21'           => 'samsung sm-t807j',
+        'sm-c7000'        => 'samsung sm-c7000',
         'sm-c5000'        => 'samsung sm-c5000',
         'shv-e330k'       => 'samsung shv-e330k',
         'sm-g570f'        => 'samsung sm-g570f',
@@ -121,8 +119,13 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-j700f'        => 'samsung sm-j700f',
         'sm-j700m'        => 'samsung sm-j700m',
         'sm-j700h'        => 'samsung sm-j700h',
+        'sm-j530f'        => 'samsung sm-j530f',
         'sm-j510fn'       => 'samsung sm-j510fn',
         'sm-j510f'        => 'samsung sm-j510f',
+        'sm-j5108'        => 'samsung sm-j5108',
+        'sm-j510g'        => 'samsung sm-j510g',
+        'sm-j510y'        => 'samsung sm-j510y',
+        'sm-j510m'        => 'samsung sm-j510m',
         'sm-j500fn'       => 'samsung sm-j500fn',
         'sm-j500f'        => 'samsung sm-j500f',
         'sm-j500g'        => 'samsung sm-j500g',
@@ -380,12 +383,18 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-g928p'        => 'samsung sm-g928p',
         'sm-g928i'        => 'samsung sm-g928i',
         'sm-g9287'        => 'samsung sm-g9287',
+        'sm-g925fq'       => 'samsung sm-g925fq',
         'sm-g925f'        => 'samsung sm-g925f',
         'sm-g925t'        => 'samsung sm-g925t',
         'sm-g925r4'       => 'samsung sm-g925r4',
         'sm-g925i'        => 'samsung sm-g925i',
         'sm-g925p'        => 'samsung sm-g925p',
         'sm-g925k'        => 'samsung sm-g925k',
+        'sm-g925l'        => 'samsung sm-g925l',
+        'sm-g925s'        => 'samsung sm-g925s',
+        'sm-g925v'        => 'samsung sm-g925v',
+        'sm-g925a'        => 'samsung sm-g925a',
+        'sm-g9250'        => 'samsung sm-g9250',
         'sm-g920k'        => 'samsung sm-g920k',
         'sm-g920l'        => 'samsung sm-g920l',
         'sm-g920p'        => 'samsung sm-g920p',
@@ -494,6 +503,8 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-g318h'        => 'samsung sm-g318h',
         'sm-g313hu'       => 'samsung sm-g313hu',
         'sm-g313hn'       => 'samsung sm-g313hn',
+        'sm-g313hz'       => 'samsung sm-g313hz',
+        'sm-g313h'        => 'samsung sm-g313h',
         'sm-g310hn'       => 'samsung sm-g310hn',
         'sm-g130hn'       => 'samsung sm-g130hn',
         'sm-g130h'        => 'samsung sm-g130h',
@@ -634,6 +645,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'gt-s7580'        => 'samsung gt-s7580',
         'gt-s7562l'       => 'samsung gt-s7562l',
         'gt-s7562'        => 'samsung gt-s7562',
+        'samsungs7562'    => 'samsung gt-s7562',
         'gt-s7560'        => 'samsung gt-s7560',
         'gt-s7530l'       => 'samsung gt-s7530l',
         'gt-s7530'        => 'samsung gt-s7530',

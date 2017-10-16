@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class TrekStorFactory implements Factory\FactoryInterface
 {
@@ -43,6 +40,7 @@ class TrekStorFactory implements Factory\FactoryInterface
         'st80216'                       => 'trekstor st80216',
         'st80208'                       => 'trekstor st80208',
         'st70408_4'                     => 'trekstor st70408-4',
+        'st70408-1'                     => 'trekstor st70408-1',
         'st701041'                      => 'trekstor st70104-1',
         'st70104-1'                     => 'trekstor st70104-1',
         'st70104-2'                     => 'trekstor st70104-2',

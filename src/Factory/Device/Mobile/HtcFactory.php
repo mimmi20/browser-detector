@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class HtcFactory implements Factory\FactoryInterface
 {
@@ -172,6 +169,7 @@ class HtcFactory implements Factory\FactoryInterface
         'desire_626'              => 'htc desire 626',
         'desire 620g'             => 'htc desire 620g',
         'desire_620g'             => 'htc desire 620g',
+        'desire_620 '             => 'htc desire 620',
         'desire 610'              => 'htc desire 610',
         'desire_610'              => 'htc desire 610',
         'desire 600c'             => 'htc desire 600c',

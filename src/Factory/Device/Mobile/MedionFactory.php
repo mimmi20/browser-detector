@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class MedionFactory implements Factory\FactoryInterface
 {
@@ -32,6 +29,7 @@ class MedionFactory implements Factory\FactoryInterface
         'p1040x'          => 'medion p1040x',
         'p1050x'          => 'medion p1050x',
         'p1032x'          => 'medion p1032x',
+        'p970x'           => 'medion p970x',
         'x6001'           => 'medion x6001',
         'e691x'           => 'medion e691x',
         'e4004'           => 'medion e4004',

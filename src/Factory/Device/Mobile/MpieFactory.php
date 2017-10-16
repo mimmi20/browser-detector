@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class MpieFactory implements Factory\FactoryInterface
 {
@@ -27,7 +24,8 @@ class MpieFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        '909t' => 'mpie 909t',
+        '909t'  => 'mpie 909t',
+        ' m13 ' => 'mpie m13',
     ];
 
     /**

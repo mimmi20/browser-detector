@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class LenovoFactory implements Factory\FactoryInterface
 {
@@ -27,6 +24,7 @@ class LenovoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'x1030x'                  => 'lenovo x1030x',
         'zuk z1'                  => 'lenovo zuk z1',
         'k80m'                    => 'lenovo k80m',
         'yb1-x90l'                => 'lenovo yb1-x90l',
@@ -53,6 +51,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'p1a42'                   => 'lenovo p1a42',
         'p2a42'                   => 'lenovo p2a42',
         ' p2 '                    => 'lenovo p2a42',
+        's8-50f'                  => 'lenovo s8-50f',
         's8-50l'                  => 'lenovo s8-50l',
         's6000d'                  => 'lenovo s6000d',
         's860'                    => 'lenovo s860',
@@ -113,6 +112,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'a3500-hv'                => 'lenovo a3500-hv',
         'a3500-h'                 => 'lenovo a3500-h',
         'a3500-fl'                => 'lenovo a3500-fl',
+        'a3500-f'                 => 'lenovo a3500-f',
         'a3300-hv'                => 'lenovo a3300-hv',
         'a3300-h'                 => 'lenovo a3300-h',
         'a3300-gv'                => 'lenovo a3300-gv',
@@ -140,6 +140,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'a680'                    => 'lenovo a680',
         'a660'                    => 'lenovo a660',
         'a656'                    => 'lenovo a656',
+        'a616'                    => 'lenovo a616',
         'a606'                    => 'lenovo a606',
         'a590'                    => 'lenovo a590',
         'a536'                    => 'lenovo a536',

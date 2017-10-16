@@ -15,6 +15,8 @@ use BrowserDetector\Bits\Browser;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class BrowserTest extends \PHPUnit\Framework\TestCase
 {
@@ -23,6 +25,8 @@ class BrowserTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $useragent
      * @param int    $expected
+     *
+     * @return void
      */
     public function testGetBits(string $useragent, int $expected): void
     {

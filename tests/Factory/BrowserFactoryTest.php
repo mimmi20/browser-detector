@@ -21,6 +21,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
 {
@@ -37,6 +39,8 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @return void
      */
     protected function setUp(): void
     {
@@ -51,14 +55,16 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider providerDetect
      *
-     * @param string $userAgent
-     * @param string $browser
-     * @param string $version
-     * @param string $manufacturer
-     * @param int    $bits
-     * @param string $type
+     * @param string      $userAgent
+     * @param string|null $browser
+     * @param string|null $version
+     * @param string|null $manufacturer
+     * @param int|null    $bits
+     * @param string|null $type
+     *
+     * @return void
      */
-    public function testDetect($userAgent, $browser, $version, $manufacturer, $bits, $type): void
+    public function testDetect(string $userAgent, ?string $browser, ?string $version, ?string $manufacturer, ?int $bits, ?string $type): void
     {
         $normalizer = (new NormalizerFactory())->build();
 
@@ -66,9 +72,9 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
 
         $s = new Stringy($normalizedUa);
 
-        $platform     = $this->platformFactory->detect($normalizedUa, $s);
+        $platform = $this->platformFactory->detect($normalizedUa, $s);
 
-        /** @var \UaResult\Browser\BrowserInterface $result */
+        /* @var \UaResult\Browser\BrowserInterface $result */
         [$result] = $this->object->detect($normalizedUa, $s, $platform);
 
         self::assertInstanceOf('\UaResult\Browser\BrowserInterface', $result);
@@ -109,6 +115,44 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return json_decode(file_get_contents('tests/data/factory/browser.json'), true);
+        $sourceDirectory = 'tests/data/factory/browser/';
+        $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
+
+        $tests = [];
+
+        foreach (new \RecursiveIteratorIterator($iterator) as $file) {
+            /* @var $file \SplFileInfo */
+            if (!$file->isFile() || 'json' !== $file->getExtension()) {
+                continue;
+            }
+
+            $subfileTests = json_decode(file_get_contents($file->getPathname()), true);
+
+            foreach ($subfileTests as $subfileTest) {
+                if ('this is a fake ua to trigger the fallback' === $subfileTest['ua']) {
+                    continue;
+                }
+
+                if (array_key_exists($subfileTest['ua'], $tests)) {
+                    echo 'UA ', $subfileTest['ua'], ' was already added', PHP_EOL;
+
+                    continue;
+                }
+
+                $tests[$subfileTest['ua']] = $subfileTest;
+            }
+        }
+
+        $fileTests = json_decode(file_get_contents('tests/data/factory/browser.json'), true);
+
+        foreach ($fileTests as $fileTest) {
+            if (array_key_exists($fileTest['ua'], $tests)) {
+                continue;
+            }
+
+            $tests[$fileTest['ua']] = $fileTest;
+        }
+
+        return $tests;
     }
 }

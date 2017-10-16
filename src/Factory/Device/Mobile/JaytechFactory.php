@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class JaytechFactory implements Factory\FactoryInterface
 {
@@ -32,6 +29,7 @@ class JaytechFactory implements Factory\FactoryInterface
         'tpc-xte7d'   => 'jaytech tpc-xte7d',
         'tpc-pa10.1m' => 'jaytech pa10.1m',
         'tpc-736'     => 'jaytech tpc-736',
+        'tpc-pa9702'  => 'jaytech tpc-pa9702',
     ];
 
     /**

@@ -15,13 +15,9 @@ use BrowserDetector\Helper\Normalizer;
 use BrowserDetector\Helper\Normalizer\UserAgentNormalizer;
 
 /**
- * detection class using regexes
+ * factory to create a useragent normalizer
  *
- * @category  BrowserDetector
- *
- * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class NormalizerFactory
 {

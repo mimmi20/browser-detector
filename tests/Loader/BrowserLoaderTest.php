@@ -16,6 +16,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Loader\BrowserLoader
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class BrowserLoaderTest extends \PHPUnit\Framework\TestCase
 {
@@ -27,6 +29,8 @@ class BrowserLoaderTest extends \PHPUnit\Framework\TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @return void
      */
     protected function setUp(): void
     {
@@ -34,6 +38,9 @@ class BrowserLoaderTest extends \PHPUnit\Framework\TestCase
         $this->object = new BrowserLoader($cache);
     }
 
+    /**
+     * @return void
+     */
     public function testLoadNotAvailable(): void
     {
         $this->expectException('\BrowserDetector\Loader\NotFoundException');

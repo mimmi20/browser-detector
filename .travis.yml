@@ -4,6 +4,7 @@ dist: trusty
 
 php:
   - 7.1
+  - 7.2
 
 os: linux
 
@@ -20,7 +21,7 @@ addons:
     repo_token: 43db4d76514521ffd97e65f2a6806a106ae168f1db55397741485212f9c70ae7
 
 before_install:
-  - phpenv config-rm xdebug.ini
+  - phpenv config-rm xdebug.ini || echo "xdebug not available"
   - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - travis_retry composer self-update
@@ -35,21 +36,10 @@ script:
 
 jobs:
   allow_failures:
-    - php: 7.2
     - php: nightly
   include:
-    - php: 7.2
-      env: COMPOSER_FLAGS="--ignore-platform-reqs"
-      before_install:
-        - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        - echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        - travis_retry composer self-update
     - php: nightly
       env: COMPOSER_FLAGS="--ignore-platform-reqs"
-      before_install:
-        - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        - echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        - travis_retry composer self-update
     - stage: test with coverage
       php: 7.1
       env:
@@ -69,7 +59,7 @@ jobs:
       install:
         - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
         - travis_retry composer require --update-with-dependencies --prefer-dist squizlabs/php_codesniffer:^3.0
-      script: vendor/bin/phpcs
+      script: vendor/bin/phpcs --colors
     - stage: check coding style
       php: 7.1
       env: COMPOSER_FLAGS=""

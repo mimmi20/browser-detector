@@ -18,6 +18,8 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class MobileFactoryTest extends \PHPUnit\Framework\TestCase
 {
@@ -29,6 +31,8 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @return void
      */
     protected function setUp(): void
     {
@@ -50,7 +54,7 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
         $tests = [];
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-            /** @var $file \SplFileInfo */
+            /* @var $file \SplFileInfo */
             if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }

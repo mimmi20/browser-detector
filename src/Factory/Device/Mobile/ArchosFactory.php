@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class ArchosFactory implements Factory\FactoryInterface
 {
@@ -32,6 +29,7 @@ class ArchosFactory implements Factory\FactoryInterface
         '101 xs 2'              => 'archos 101 xs 2',
         '101 oxygen'            => 'archos 101 oxygen',
         '101 neon'              => 'archos 101 neon',
+        '101 magnus'            => 'archos 101 magnus',
         '101 copper'            => 'archos 101 copper',
         '101 helium'            => 'archos 101 helium',
         '97c platinum'          => 'archos 97c platinum',
@@ -57,6 +55,8 @@ class ArchosFactory implements Factory\FactoryInterface
         '55 platinum'           => 'archos 55 platinum',
         '55 helium'             => 'archos 55 helium',
         '53 platinum'           => 'archos 53 platinum',
+        '52 platinum'           => 'archos 52 platinum',
+        '50f helium'            => 'archos 50f helium',
         '50e neon'              => 'archos 50e neon',
         '50e helium'            => 'archos 50e helium',
         '50d neon'              => 'archos 50d neon',

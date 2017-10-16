@@ -1,0 +1,386 @@
+[
+  {
+    "ua": "this is a fake ua to trigger the fallback",
+    "browser": "Internet Explorer",
+    "version": "0.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)",
+    "browser": "Internet Explorer",
+    "version": "8.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko",
+    "browser": "Internet Explorer",
+    "version": "11.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 6.0; PPC Mac OS X 10.6.8; Tasman 1.0)",
+    "browser": "Internet Explorer",
+    "version": "6.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0; Avant Browser)",
+    "browser": "Avant",
+    "version": "0.0.0",
+    "manufacturer": "Avant Force",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "CybEye.com/2.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/4.0; GTB6.4)",
+    "browser": "CybEye",
+    "version": "2.0.0",
+    "manufacturer": "CybEye.com",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows 95; Anonymisiert durch AlMiSoft Browser-Anonymisierer 69351893; Trident/7.0; rv:11.0) like Gecko",
+    "browser": "Internet Explorer",
+    "version": "11.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)",
+    "browser": "MarketwireBot",
+    "version": "0.0.0",
+    "manufacturer": "Marketwire L.P.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; GoogleToolbar 7.5.5111.1712; Windows XP 5.1; MSIE 8.0.6001.18702)",
+    "browser": "Google Toolbar",
+    "version": "7.5.5111.1712",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Netscape/8.0.4",
+    "browser": "Netscape",
+    "version": "8.0.4",
+    "manufacturer": "Netscape",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 7.0;Windows NT 5.1;.NET CLR 1.1.4322;.NET CLR 2.0.50727;.NET CLR 3.0.04506.30) Lightspeedsystems",
+    "browser": "Lightspeed Systems Crawler",
+    "version": "0.0.0",
+    "manufacturer": "Lightspeed Systems",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 6.0 ; .NET CLR 2.0.50215; SL Commerce Client v1.0; Tablet PC 2.0",
+    "browser": "Second Life Commerce Client",
+    "version": "1.0.0",
+    "manufacturer": "Linden Labs",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 635) like Gecko",
+    "browser": "IEMobile",
+    "version": "11.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0;  WOW64;  Trident/5.0;  BingPreview/1.0b)",
+    "browser": "Bing Preview",
+    "version": "1.0.0-beta",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; TmstmpExt)",
+    "browser": "Windows Live Mail",
+    "version": "7.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; MSOffice 12)",
+    "browser": "Office",
+    "version": "2007.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Crazy Browser 1.0.5)",
+    "browser": "Crazy Browser",
+    "version": "1.0.5",
+    "manufacturer": "CrazyBrowser.com",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Deepnet Explorer 1.5.0; .NET CLR 1.0.3705)",
+    "browser": "Deepnet Explorer",
+    "version": "1.5.0",
+    "manufacturer": "Deepnet Security",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; KKman2.0)",
+    "browser": "KKMAN",
+    "version": "2.0.0",
+    "manufacturer": "KKBOX Taiwan Co., Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; rv:11.0; Lunascape 6.9.2.27391) like Gecko",
+    "browser": "Lunascape",
+    "version": "6.9.2.27391",
+    "manufacturer": "Lunascape Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; .NET4.0C; .NET4.0E; Sleipnir/2.9.9)",
+    "browser": "Sleipnir",
+    "version": "2.9.9",
+    "manufacturer": "Fenrir Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Smartsite HTTPClient - Mozilla/4.0 (compatible; MSIE 6.0)",
+    "browser": "Smartsite HTTPClient",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; WOW64; Trident/7.0; Touch; .NET4.0E; .NET4.0C; Tablet PC 2.0)",
+    "browser": "Internet Explorer",
+    "version": "11.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/5.0)",
+    "browser": "Internet Explorer",
+    "version": "9.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
+    "browser": "Internet Explorer",
+    "version": "11.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 11.0; Windows NT 6.3; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; 360SE)",
+    "browser": "360 Secure Browser",
+    "version": "0.0.0",
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE or Firefox mutant; not on Windows server; + http://tab.search.daum.net/aboutWebSearch.html) Daumoa/3.0",
+    "browser": "Daumoa",
+    "version": "3.0.0",
+    "manufacturer": "Daum Communications Corp",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE or Firefox mutant; not on Windows server;)",
+    "browser": "Daumoa",
+    "version": "0.0.0",
+    "manufacturer": "Daum Communications Corp",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (SH05C;FOMA;like Gecko)",
+    "browser": "Sharp",
+    "version": "0.0.0",
+    "manufacturer": "Sharp Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M700; OpVer 19.123.2.733) OrangeBot-Mobile 2008.0 (mobilesearch.support@orange-ftgroup.com)",
+    "browser": "Orangebot",
+    "version": "0.0.0",
+    "manufacturer": "Orange S.A.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "New-Sogou-Spider/1.0 (compatible; MSIE 5.5; Windows 98)",
+    "browser": "Sogou Spider",
+    "version": "1.0.0",
+    "manufacturer": "Sogou Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0; TOB 6.13 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",
+    "browser": "T-Online Browser",
+    "version": "6.13.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 9.0; TOB 6.13; Windows NT 6.0; Trident/5.0)",
+    "browser": "T-Online Browser",
+    "version": "6.13.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "SimplePie/1.2.1-dev (Feed Parser; http://simplepie.org; Allow like Gecko) Build/20111015034325",
+    "browser": "SimplePie",
+    "version": "1.2.1-dev",
+    "manufacturer": "Ryan Parman, Geoffrey Sneddon, Ryan McCue and contributors",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US) AppEngine-Google; (+http://code.google.com/appengine; appid: s~virustotalcloud)",
+    "browser": "Google App Engine",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; ArgClrInt/1.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.21022; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)",
+    "browser": "ArgClrInt",
+    "version": "1.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; CrystalSemanticsBot http://www.crystalsemantics.com/service-navigation/imprint/useragent/)",
+    "browser": "CrystalSemanticsBot",
+    "version": "0.0.0",
+    "manufacturer": "CrystalSemantics",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0); 360Spider(compatible; HaosouSpider; http://www.haosou.com/help/help_3_2.html)",
+    "browser": "HaosouSpider",
+    "version": "0.0.0",
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.2; MALNJS; MSOffice 12)",
+    "browser": "Office",
+    "version": "2007.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.2; MALNJS; MSOffice 16)",
+    "browser": "Office",
+    "version": "2016.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Trident/6.0; Windows NT 5.0; ZangoToolbar 7.8.58; MyIE2)",
+    "browser": "Maxthon",
+    "version": "2.0.0",
+    "manufacturer": "Maxthon International Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; MSOffice)",
+    "browser": "Office",
+    "version": "0.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0)",
+    "browser": "Internet Explorer",
+    "version": "10.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; .NET4.0E; .NET4.0C; 360SE)",
+    "browser": "360 Secure Browser",
+    "version": "0.0.0",
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; SV1; TheWorld)",
+    "browser": "TheWorld Browser",
+    "version": "0.0.0",
+    "manufacturer": "Phoenix Studio",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0) PTST/229",
+    "browser": "WebPagetest",
+    "version": "0.0.0",
+    "manufacturer": "WPO Foundation",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; 2345Explorer 5.0.0.14102)",
+    "browser": "2345 Browser",
+    "version": "5.0.0.14102",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MathPlayer 2.0)",
+    "browser": "MathPlayer",
+    "version": "2.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Multimedia Player"
+  }
+]

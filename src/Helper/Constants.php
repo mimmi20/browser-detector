@@ -13,6 +13,8 @@ namespace BrowserDetector\Helper;
 
 /**
  * API Constants
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class Constants
 {

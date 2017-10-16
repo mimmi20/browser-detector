@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class CubotFactory implements Factory\FactoryInterface
 {
@@ -32,6 +29,7 @@ class CubotFactory implements Factory\FactoryInterface
         ' cheetah ' => 'cubot cheetah',
         ' h1 '      => 'cubot h1',
         'note_s'    => 'cubot note s',
+        'x16'       => 'cubot x16',
         'x12'       => 'cubot x12',
         's600'      => 'cubot s600',
         's550'      => 'cubot s550',

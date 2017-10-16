@@ -17,6 +17,8 @@ use BrowserDetector\Helper\GenericRequestFactory;
 
 /**
  * test case
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
 {
@@ -25,11 +27,17 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
      */
     private $object;
 
+    /**
+     * @return void
+     */
     public function setUp(): void
     {
         $this->object = new GenericRequestFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testCreateRequestFromArray(): void
     {
         $userAgent = 'testUA';
@@ -46,9 +54,12 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
         self::assertSame($userAgent, $result->getBrowserUserAgent());
     }
 
+    /**
+     * @return void
+     */
     public function testCreateRequestFromEmptyHeaders(): void
     {
-        $header    = [];
+        $header = [];
 
         $expected = new GenericRequest($header);
 
@@ -59,6 +70,9 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
         self::assertSame('', $result->getBrowserUserAgent());
     }
 
+    /**
+     * @return void
+     */
     public function testCreateRequestFromString(): void
     {
         $userAgent = 'testUA';
@@ -75,6 +89,9 @@ class GenericRequestFactoryTest extends \PHPUnit\Framework\TestCase
         self::assertSame($userAgent, $result->getBrowserUserAgent());
     }
 
+    /**
+     * @return void
+     */
     public function testCreateRequestFromPsr7Message(): void
     {
         $userAgent = 'testUA';

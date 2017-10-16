@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class AllviewFactory implements Factory\FactoryInterface
 {
@@ -28,6 +25,7 @@ class AllviewFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'x2_soul'    => 'allview x2 soul',
+        'x1_soul'    => 'allview x1 soul',
         'p5-mini'    => 'allview p5 mini',
         'p5_quad'    => 'allview p5 quad',
         'v1_viper_i' => 'allview v1 viper i',

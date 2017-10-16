@@ -189,8 +189,21 @@
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "lenovo a3500-f": {
+    "codename": "A3500-F",
+    "marketingName": "A7-50",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
     "dualOrientation": true,
     "colors": null
   },
@@ -750,6 +763,32 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1280,
     "resolutionHeight": 800,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "lenovo s8-50f": {
+    "codename": "S8-50F",
+    "marketingName": "Tab S8",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1920,
+    "resolutionHeight": 1200,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "lenovo x1030x": {
+    "codename": "X1030X",
+    "marketingName": "X1030X",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1920,
+    "resolutionHeight": 1200,
     "dualOrientation": true,
     "colors": null
   }

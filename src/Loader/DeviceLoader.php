@@ -20,11 +20,7 @@ use UaResult\Device\Device;
 /**
  * Device detection class
  *
- * @category  BrowserDetector
- *
- * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class DeviceLoader implements ExtendedLoaderInterface
 {
@@ -35,6 +31,8 @@ class DeviceLoader implements ExtendedLoaderInterface
 
     /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
+     *
+     * @return self
      */
     public function __construct(CacheItemPoolInterface $cache)
     {
@@ -43,6 +41,8 @@ class DeviceLoader implements ExtendedLoaderInterface
 
     /**
      * initializes cache
+     *
+     * @return void
      */
     private function init(): void
     {
@@ -114,6 +114,8 @@ class DeviceLoader implements ExtendedLoaderInterface
 
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
+     *
+     * @return void
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {
@@ -121,7 +123,7 @@ class DeviceLoader implements ExtendedLoaderInterface
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-            /** @var $file \SplFileInfo */
+            /* @var $file \SplFileInfo */
             if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }

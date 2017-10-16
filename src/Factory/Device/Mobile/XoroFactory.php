@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class XoroFactory implements Factory\FactoryInterface
 {
@@ -28,6 +25,7 @@ class XoroFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'telepad 9a1' => 'xoro xor400250',
+        'pad1851'     => 'xoro pad 1851',
         'telepad830'  => 'xoro telepad 830',
     ];
 

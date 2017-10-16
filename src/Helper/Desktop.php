@@ -16,6 +16,8 @@ use Stringy\Stringy;
 
 /**
  * a helper to detect Desktop devices
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class Desktop
 {

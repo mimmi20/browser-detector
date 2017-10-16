@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class WortmannFactory implements Factory\FactoryInterface
 {
@@ -28,6 +25,7 @@ class WortmannFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'terra pad 1003' => 'wortmann terra pad 1003',
+        'pad1002'        => 'wortmann terra pad 1002',
     ];
 
     /**

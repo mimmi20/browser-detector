@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class MobistelFactory implements Factory\FactoryInterface
 {
@@ -33,9 +30,12 @@ class MobistelFactory implements Factory\FactoryInterface
         'cynus t2' => 'mobistel cynus t2',
         'cynus t1' => 'mobistel cynus t1',
         'cynus_f9' => 'mobistel cynus f9',
+        'cynus f6' => 'mobistel cynus f6',
         'cynus f5' => 'mobistel cynus f5',
         'cynus f4' => 'mobistel mt-7521s',
         'cynus f3' => 'mobistel cynus f3',
+        'cynus e7' => 'mobistel cynus e7',
+        'cynus_e5' => 'mobistel cynus e5',
         'cynus e1' => 'mobistel cynus e1',
     ];
 

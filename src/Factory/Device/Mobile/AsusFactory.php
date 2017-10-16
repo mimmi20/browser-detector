@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class AsusFactory implements Factory\FactoryInterface
 {
@@ -56,6 +53,7 @@ class AsusFactory implements Factory\FactoryInterface
         'k00f'              => 'asus k00f',
         'k00r'              => 'asus k00r',
         'k00z'              => 'asus k00z',
+        'k007'              => 'asus k007',
         'k010'              => 'asus k010',
         'k011'              => 'asus k011',
         'k012'              => 'asus k012',

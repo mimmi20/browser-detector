@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class OppoFactory implements Factory\FactoryInterface
 {
@@ -39,6 +36,7 @@ class OppoFactory implements Factory\FactoryInterface
         'u705t' => 'oppo u705t',
         'r815'  => 'oppo r815',
         'r813t' => 'oppo r813t',
+        '1201'  => 'oppo 1201',
     ];
 
     /**

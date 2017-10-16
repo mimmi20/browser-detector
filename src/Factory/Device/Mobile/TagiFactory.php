@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class TagiFactory implements Factory\FactoryInterface
 {
@@ -27,7 +24,7 @@ class TagiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'x12'   => 'tagi x12',
+        'x12' => 'tagi x12',
     ];
 
     /**

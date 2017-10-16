@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class ZteFactory implements Factory\FactoryInterface
 {
@@ -31,10 +28,11 @@ class ZteFactory implements Factory\FactoryInterface
         'e8q+'              => 'zte e8q+',
         's8q'               => 'zte s8q',
         's7q'               => 'zte s7q',
-        'nx511j'            => 'zte nx511j',
-        'nx541j'            => 'zte nx541j',
+        'nx597j'            => 'zte nx597j',
         'nx549j'            => 'zte nx549j',
+        'nx541j'            => 'zte nx541j',
         'nx512j'            => 'zte nx512j',
+        'nx511j'            => 'zte nx511j',
         'nx501'             => 'zte nx501',
         'nx406e'            => 'zte nx406e',
         'nx402'             => 'zte nx402',

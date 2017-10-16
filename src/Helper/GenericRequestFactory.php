@@ -15,11 +15,13 @@ use Psr\Http\Message\MessageInterface;
 
 /**
  * Creates a Generic WURFL Request from the raw HTTP Request
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class GenericRequestFactory
 {
     /**
-     * Creates Generic Request from the given HTTP Request (normally $_SERVER)
+     * Creates Generic Request from the given HTTP Request (normally $_SERVER).
      *
      * @param array $headers HTTP Request
      *

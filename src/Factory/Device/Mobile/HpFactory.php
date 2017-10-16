@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class HpFactory implements Factory\FactoryInterface
 {
@@ -29,6 +26,7 @@ class HpFactory implements Factory\FactoryInterface
     private $devices = [
         'slate 21'           => 'hp slate 21',
         'slatebook 10 x2 pc' => 'hp slatebook 10 x2 pc',
+        'slate 8 pro'        => 'hp slate 8 pro',
         'slate 7 hd'         => 'hp slate 7 hd',
         '7 plus'             => 'hp slate 7 plus',
         'ipaqhw6900'         => 'hp ipaq 6900',

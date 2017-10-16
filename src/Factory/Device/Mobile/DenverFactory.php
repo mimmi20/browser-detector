@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class DenverFactory implements Factory\FactoryInterface
 {
@@ -27,13 +24,14 @@ class DenverFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tad-90032'  => 'denver tad-90032',
-        'tad-10023'  => 'denver tad-10023',
-        'taq-10112'  => 'denver taq-10112',
-        'taq-10153'  => 'denver taq-10153',
-        'taq-10223g' => 'denver taq-10223g',
-        'tad-70112'  => 'denver tad-70112',
-        'taq-70252'  => 'denver taq-70252',
+        'tad-90032'    => 'denver tad-90032',
+        'tad-10023'    => 'denver tad-10023',
+        'taq-10112'    => 'denver taq-10112',
+        'taq-10153'    => 'denver taq-10153',
+        'taq-10172mk3' => 'denver taq-10172mk3',
+        'taq-10223g'   => 'denver taq-10223g',
+        'tad-70112'    => 'denver tad-70112',
+        'taq-70252'    => 'denver taq-70252',
     ];
 
     /**

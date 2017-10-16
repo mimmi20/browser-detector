@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class DoogeeFactory implements Factory\FactoryInterface
 {
@@ -27,8 +24,11 @@ class DoogeeFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        't6'             => 'doogee t6',
+        'x9pro'          => 'doogee x9 pro',
         'x5max_pro'      => 'doogee x5max pro',
         'y6 max 3d'      => 'doogee y6 max 3d',
+        'y6 max'         => 'doogee y6 max',
         'y6_piano_black' => 'doogee y6 piano black',
         'y6_piano'       => 'doogee y6 piano',
         'dg2014'         => 'doogee dg2014',

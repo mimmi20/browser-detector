@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class CaptivaFactory implements Factory\FactoryInterface
 {
@@ -27,6 +24,7 @@ class CaptivaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        '10.1 hd'              => 'captiva 10.1 hd',
         'pad 10.1 quad fhd 3g' => 'captiva pad 10.1 quad fhd 3g',
     ];
 

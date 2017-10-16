@@ -24,11 +24,7 @@ use UaResult\Os\OsInterface;
 /**
  * Browser detection class
  *
- * @category  BrowserDetector
- *
- * @author    Thomas Mueller <mimmi20@live.de>
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class PlatformLoader implements ExtendedLoaderInterface
 {
@@ -39,6 +35,8 @@ class PlatformLoader implements ExtendedLoaderInterface
 
     /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
+     *
+     * @return self
      */
     public function __construct(CacheItemPoolInterface $cache)
     {
@@ -47,6 +45,8 @@ class PlatformLoader implements ExtendedLoaderInterface
 
     /**
      * initializes cache
+     *
+     * @return void
      */
     private function init(): void
     {
@@ -102,7 +102,7 @@ class PlatformLoader implements ExtendedLoaderInterface
         } elseif ('VersionFactory' === $platformVersionClass) {
             $version = VersionFactory::detectVersion($useragent, $platform->version->search);
         } else {
-            /** @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
+            /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
             $versionClass = new $platformVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }
@@ -125,6 +125,8 @@ class PlatformLoader implements ExtendedLoaderInterface
 
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
+     *
+     * @return void
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {

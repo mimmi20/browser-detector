@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class ElephoneFactory implements Factory\FactoryInterface
 {
@@ -27,7 +24,9 @@ class ElephoneFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'p9000' => 'elephone p9000',
         'p8000' => 'elephone p8000',
+        'p7000' => 'elephone p7000',
         'p3000' => 'elephone p3000',
         's2'    => 'elephone s2',
     ];

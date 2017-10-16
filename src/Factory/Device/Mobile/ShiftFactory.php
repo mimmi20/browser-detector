@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class ShiftFactory implements Factory\FactoryInterface
 {
@@ -27,7 +24,8 @@ class ShiftFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'shift7' => 'shift shift7',
+        'shift7'   => 'shift shift7',
+        'shift5.2' => 'shift shift5.2',
     ];
 
     /**

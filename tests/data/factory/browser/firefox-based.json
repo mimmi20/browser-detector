@@ -1,0 +1,506 @@
+[
+  {
+    "ua": "this is a fake ua to trigger the fallback",
+    "browser": "Firefox",
+    "version": "0.0.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.0.11) Firefox/1.5.0.11;",
+    "browser": "Firefox",
+    "version": "1.5.0.11",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/6.0 (Windows NT 6.2; WOW64; rv:16.0.1) Gecko/20121011 Firefox/16.0.1",
+    "browser": "Firefox",
+    "version": "16.0.1",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:28.0) Gecko/20100101 Firefox/28.0 (FlipboardProxy/1.1; +http://flipboard.com/browserproxy)",
+    "browser": "FlipboardProxy",
+    "version": "1.1.0",
+    "manufacturer": "Flipboard, Inc.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; rv:26.0) Gecko/20100101 Firefox/26.0 IceDragon/26.0.0.2",
+    "browser": "IceDragon",
+    "version": "26.0.0.2",
+    "manufacturer": "Comodo Group Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "TinyBrowser/2.0 (TinyBrowser Comment; rv:1.9.1a2pre) Gecko/20201231",
+    "browser": "TinyBrowser",
+    "version": "2.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "RebelMouse/0.1 Mozilla/5.0 (compatible; http://rebelmouse.com) Gecko/20100101 Firefox/7.0.1",
+    "browser": "RebelMouse",
+    "version": "0.1.0",
+    "manufacturer": "RebelMouse",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0 SeaMonkey/2.31",
+    "browser": "SeaMonkey",
+    "version": "2.31.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0",
+    "browser": "JobBoerse Bot",
+    "version": "0.0.0",
+    "manufacturer": "Jobboerse.com",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.8pre) Gecko/20070928 Firefox/2.0.0.7 Navigator/9.0RC1",
+    "browser": "Navigator",
+    "version": "9.0.0-RC+1",
+    "manufacturer": "Netscape",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.1; rv:) Gecko/20100101 Firefox/ anonymized by Abelssoft 1433017337",
+    "browser": "Firefox",
+    "version": "0.0.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; )  Firefox/1.5.0.11; 360Spider",
+    "browser": "360Spider",
+    "version": "0.0.0",
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0; GomezAgent 3.0) Gecko/20100101 Firefox/13.0.1",
+    "browser": "Gomez Site Monitor",
+    "version": "3.0.0",
+    "manufacturer": "Compuware Corporation",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; rv:6.0) Gecko/20110814 Firefox/6.0 Google (+https://developers.google.com/+/web/snippet/)",
+    "browser": "Google Web Snippet",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Series40; Nokia306/03.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.9.0.0.22",
+    "browser": "Nokia Proxy Browser",
+    "version": "3.9.0.0.22",
+    "manufacturer": "Nokia",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 5.2; rv:25.5) Gecko/20150609 Firefox/31.9 PaleMoon/25.5.0",
+    "browser": "PaleMoon",
+    "version": "25.5.0",
+    "manufacturer": "Moonchild Productions",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT; Win64; x64; rv:26.0) Gecko/20100101 Firefox/26.0 Waterfox/26.0",
+    "browser": "Waterfox",
+    "version": "26.0.0",
+    "manufacturer": "www.waterfoxproject.org",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Thunderbird/24.4.0 Lightning/2.6.4",
+    "browser": "Thunderbird",
+    "version": "24.4.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5",
+    "browser": "Fennec",
+    "version": "10.0.5",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; rv:5.0.0.3) Whistler/20110021 myibrow/5.0.0.3 (Firefox/7.0 Gecko/000 compatible)",
+    "browser": "My Internet Browser",
+    "version": "5.0.0.3",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0 Iceweasel/25.0",
+    "browser": "Iceweasel",
+    "version": "25.0.0",
+    "manufacturer": "Software in the Public Interest, Inc.",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux sparc64; es-PY; rv:5.0) Gecko/20100101 IceCat/5.0 (like Firefox/5.0; Debian-6.0.1)",
+    "browser": "IceCat",
+    "version": "5.0.0",
+    "manufacturer": "GNU",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.13) Gecko/20100916 Iceape/2.0.8",
+    "browser": "Iceape",
+    "version": "2.0.8",
+    "manufacturer": "Software in the Public Interest, Inc.",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.19) Gecko/20081216 Galeon/2.0.4 Firefox/2.0.0.19",
+    "browser": "Galeon",
+    "version": "2.0.4",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/2009073022 Firefox/3.5.2 (.NET CLR 3.5.30729) SurveyBot/2.3 (DomainTools)",
+    "browser": "SurveyBot",
+    "version": "2.3.0",
+    "manufacturer": "DomainTools",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.19; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/2010040121 Firefox/3.0.19",
+    "browser": "Spinn3r RSS Aggregator",
+    "version": "3.1.0",
+    "manufacturer": "Tailrank Inc",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (TweetmemeBot/4.0; +http://datasift.com/bot.html) Gecko/20100101 Firefox/31.0",
+    "browser": "Tweetmeme Bot",
+    "version": "4.0.0",
+    "manufacturer": "datasift.com",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Butterfly/1.0; +http://labs.topsy.com/butterfly/) Gecko/2009032608 Firefox/3.0.8",
+    "browser": "Butterfly Robot",
+    "version": "1.0.0",
+    "manufacturer": "Topsy Labs",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6 - James BOT - WebCrawler http://cognitiveseo.com/bot.html",
+    "browser": "JamesBOT",
+    "version": "0.0.0",
+    "manufacturer": "GESKIMO SRL",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; Mobile; rv:31.0) Gecko/31.0 Firefox/31.0 SailfishBrowser/1.0",
+    "browser": "Sailfish Browser",
+    "version": "1.0.0",
+    "manufacturer": "Jolla Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux i686; U;rv: 1.7.13) Gecko/20070322 Kazehakase/0.4.4.1",
+    "browser": "Kazehakase",
+    "version": "0.4.4.1",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.3) Gecko/20100409 Firefox/3.6.3 CometBird/3.6.3",
+    "browser": "CometBird",
+    "version": "3.6.3",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; XH; rv:8.578.498) fr, Gecko/20121021 Camino/8.723+ (Firefox compatible)",
+    "browser": "Camino",
+    "version": "8.723.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 SlimerJS/0.9.5",
+    "browser": "SlimerJS",
+    "version": "0.9.5",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows XP) Gecko MultiZilla/1.6.1.0a",
+    "browser": "MultiZilla",
+    "version": "1.6.1.0-alpha",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux arm7tdmi; rv:1.8.1.11) Gecko/20071130 Minimo/0.025",
+    "browser": "Minimo",
+    "version": "0.025.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux armv7l; ru-RU; rv:1.9.2.3pre) Gecko/20100723 Firefox/3.5 Maemo Browser 1.7.4.8 RX-51 N900",
+    "browser": "MicroB",
+    "version": "1.7.4.8",
+    "manufacturer": "Nokia",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; XML Sitemaps Generator; http://www.xml-sitemaps.com) Gecko XML-Sitemaps/1.0",
+    "browser": "XML Sitemaps Generator",
+    "version": "1.0.0",
+    "manufacturer": "XML Sitemaps",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.9.2.19) Gecko WebThumb/1.0",
+    "browser": "WebThumb",
+    "version": "1.0.0",
+    "manufacturer": "Boutell.Com, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; 80bot/0.71; http://www.80legs.com/spider.html;) Gecko/2008032620",
+    "browser": "80Legs",
+    "version": "0.71.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/webcrawler.html;) Gecko/2008032620",
+    "browser": "80Legs",
+    "version": "0.83.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE; rv:1.8.1.24pre) Gecko/20100228 K-Meleon/1.5.4",
+    "browser": "K-Meleon",
+    "version": "1.5.4",
+    "manufacturer": "kmeleonbrowser.org",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.0; rv:24.0) Gecko/20140105 Firefox/24.0 K-Meleon/74.0",
+    "browser": "K-Meleon",
+    "version": "74.0.0",
+    "manufacturer": "kmeleonbrowser.org",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Ruby, Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6",
+    "browser": "Generic Ruby Crawler",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/20100101 Firefox/15.0.1 AppEngine-Google; (+http://code.google.com/appengine; appid: s~javashowsiteinfo)",
+    "browser": "Google App Engine",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64; rv:16.0) Gecko/20100101 Firefox/16.0 Iceweasel/16.0 unister-test-acceptance",
+    "browser": "UnisterTesting",
+    "version": "0.0.0",
+    "manufacturer": "Unister Holding GmbH",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.11) Gecko/20080109 (Charlotte/0.9t; http://www.searchme.com/support/) (Charlotte/0.9t; http://www.searchme.com/support/)",
+    "browser": "Charlotte",
+    "version": "0.9.0",
+    "manufacturer": "www.searchme.com",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; x64; fr; rv:1.9.2.13) Gecko/20101203 Firebird/3.6.13",
+    "browser": "Firebird",
+    "version": "3.6.13",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7 (via ggpht.com GoogleImageProxy)",
+    "browser": "Google Image Proxy",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Icedove/31.3.0",
+    "browser": "Icedove",
+    "version": "31.3.0",
+    "manufacturer": "Software in the Public Interest, Inc.",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.16) Gecko/20121027 Iceowl/1.0b1 Icedove/3.0.11",
+    "browser": "Iceowl",
+    "version": "1.0.0-beta+1",
+    "manufacturer": "Software in the Public Interest, Inc.",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4",
+    "browser": "Firefox",
+    "version": "3.0.0-beta+4",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9a3pre) Gecko/20070330",
+    "browser": "Mozilla",
+    "version": "5.0.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux i686; rv:45.9) Gecko/20100101 Goanna/3.2 Firefox/45.9 PaleMoon/27.3.0",
+    "browser": "PaleMoon",
+    "version": "27.3.0",
+    "manufacturer": "Moonchild Productions",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.1.17) Gecko/20110123 Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2) Gecko/20070225 lolifox/0.32",
+    "browser": "lolifox",
+    "version": "0.32.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0 Cyberfox/52.2.0",
+    "browser": "Cyberfox",
+    "version": "52.2.0",
+    "manufacturer": "8pecxstudios",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0 Cyberfox/52.1.3",
+    "browser": "Cyberfox",
+    "version": "52.1.3",
+    "manufacturer": "8pecxstudios",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.0; rv:37.0) Gecko/20100101 Firefox/37.0 DT-Browser/DTB7.37.0.3_03",
+    "browser": "DT Browser",
+    "version": "7.37.0.3.03",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; pl; rv:1.9.2.3) Gecko/20100401 Lightningquail/3.6.3",
+    "browser": "Lightningquail",
+    "version": "3.6.3",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows  U  Windows NT 5.1  ru  rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 WebMoney Advisor",
+    "browser": "WebMoney Advisor",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.7) Gecko/20060917 K-Ninja/2.0.4",
+    "browser": "K-Ninja",
+    "version": "2.0.4",
+    "manufacturer": "kmeleonbrowser.org",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux i686; rv:2.0) Gecko/20110318 WebianShell/0.1",
+    "browser": "WebianShell",
+    "version": "0.1.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.28) Gecko/20130316 Nightingale/1.12.2a (20140529014224)",
+    "browser": "Nightingale",
+    "version": "1.12.2-alpha",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Application"
+  }
+]

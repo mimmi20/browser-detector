@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class HannspreeFactory implements Factory\FactoryInterface
 {
@@ -29,6 +26,7 @@ class HannspreeFactory implements Factory\FactoryInterface
     private $devices = [
         'sn10t1'  => 'hannspree sn10t1',
         'hsg1303' => 'hannspree hsg1303',
+        'hsg1279' => 'hannspree hsg1279',
     ];
 
     /**

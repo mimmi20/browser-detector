@@ -13,6 +13,8 @@ namespace BrowserDetector\Helper\Normalizer;
 
 /**
  * User Agent Normalizer - clean IIS Logging from user agent
+ *
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class IISLogging implements NormalizerInterface
 {
@@ -25,8 +27,8 @@ class IISLogging implements NormalizerInterface
      */
     public function normalize(string $userAgent): string
     {
-        //If there are no spaces in a UA and more than 2 plus symbols, the UA is likely affected by IIS style logging issues
-        if (0 === mb_substr_count($userAgent, ' ') and 2 < mb_substr_count($userAgent, '+')) {
+        // If there are no spaces in a UA and more than 2 plus symbols, the UA is likely affected by IIS style logging issues
+        if (0 === mb_substr_count($userAgent, ' ') && 2 < mb_substr_count($userAgent, '+')) {
             $userAgent = str_replace('+', ' ', $userAgent);
         }
 

@@ -1,0 +1,1554 @@
+[
+  {
+    "ua": "this is a fake ua to trigger the fallback",
+    "browser": "Safari",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B440 Safari/600.1.4",
+    "browser": "Safari",
+    "version": "8.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.3; de-de; GT-I9300 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "browser": "Android Webkit",
+    "version": "4.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.1.25 (KHTML, like Gecko)",
+    "browser": "Apple Mail",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (BB10; Touch) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.2.2.1609 Mobile Safari/537.35+",
+    "browser": "BlackBerry",
+    "version": "10.2.2.1609",
+    "manufacturer": "Research In Motion Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 930) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537",
+    "browser": "IEMobile",
+    "version": "11.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:26.0.0b2) Goanna/20150828 Gecko/20100101 AppleWebKit/601.1.37 (KHTML, like Gecko) Version/9.0 Safari/601.1.37 PaleMoon/26.0.0b2",
+    "browser": "PaleMoon",
+    "version": "26.0.0-beta+2",
+    "manufacturer": "Moonchild Productions",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.0.4; pt-BR; H5000 Build/IMM76D) AppleWebKit/534.31 (KHTML, like Gecko) UCBrowser/9.3.0.321 U3/0.8.0 Mobile Safari/534.31",
+    "browser": "UC Browser",
+    "version": "9.3.0.321",
+    "manufacturer": "UCWeb Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.4.2; ru-; TAB917QC-8GB Build/KVT49L) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.6.0.7",
+    "browser": "Baidu Browser",
+    "version": "4.6.0.7",
+    "manufacturer": "Baidu",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.1033 Mobile Safari/534.11+",
+    "browser": "BlackBerry",
+    "version": "7.1.0.1033",
+    "manufacturer": "Research In Motion Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "UCBrowserHD/2.4.0.367 CFNetwork/672.1.15 Darwin/14.0.0",
+    "browser": "UC Browser HD",
+    "version": "2.4.0.367",
+    "manufacturer": "UCWeb Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) OPiOS/8.0.1.80062 Mobile/11D201 Safari/9537.53",
+    "browser": "Opera Mini",
+    "version": "8.0.1.80062",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Coast/3.0.0.74604 Mobile/11D201 Safari/7534.48.3",
+    "browser": "Coast",
+    "version": "3.0.0.74604",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "iCabMobile/1.0.6 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "iCab Mobile",
+    "version": "1.0.6",
+    "manufacturer": "Alexander Clauss",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) CasperJS/1.1.0-beta3+PhantomJS/1.9.7 Safari/534.34",
+    "browser": "PhantomJS",
+    "version": "1.9.7",
+    "manufacturer": "phantomjs.org",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Unknown; BSD Four) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.2 Safari/534.34",
+    "browser": "PhantomJS",
+    "version": "1.9.2",
+    "manufacturer": "phantomjs.org",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPod touch; U; CPU iPhone OS 4_2_1 like Mac OS X; es_ES) AppleWebKit (KHTML, like Gecko) Mobile [FBAN/FBForIPhone;FBAV/4.1.1;FBBV/4110.0;FBDV/iPod2,1;FBMD/iPod touch;FBSN/iPhone OS;FBSV/4.2.1;FBSS/1; FBCR/;FBID/phone;FBLC/es_ES;FBSF/1.0]",
+    "browser": "Facebook App",
+    "version": "4.1.1",
+    "manufacturer": "Facebook",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; GT-I9100G Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) FlyFlow/2.5 Version/4.0 Mobile Safari/533.1 baidubrowser/042_6.3.5.2_diordna_008_084/gnusmas_01_4.3.2_G0019I-TG/7400001l/AFCD145CE647EC590CFE42154CB19B89%7C274573340474753/1",
+    "browser": "FlyFlow",
+    "version": "2.5.0",
+    "manufacturer": "Baidu",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.1.2; ru-; s4502 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 bdbrowser_mini/1.0.0.0",
+    "browser": "Baidu Browser Mini",
+    "version": "1.0.0.0",
+    "manufacturer": "Baidu",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; en-us; KFTT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.11 Safari/535.19 Silk-Accelerated=true",
+    "browser": "Silk",
+    "version": "3.11.0",
+    "manufacturer": "Amazon.com, Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 2.3.6; ja-jp; SC-02C Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 NaverMatome-Android/4.0.7",
+    "browser": "Matome",
+    "version": "4.0.7",
+    "manufacturer": "NHN Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android; es_mx; WT19a Build/) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 NetFrontLifeBrowser/2.3 Mobile (Dragonfruit)",
+    "browser": "NetFrontLifeBrowser",
+    "version": "2.3.0",
+    "manufacturer": "Access",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chedot/43.0.2357.402 Safari/537.36",
+    "browser": "Chedot",
+    "version": "43.0.2357.402",
+    "manufacturer": "Chedot.com",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Qword/35.0.1905.5 Safari/537.36",
+    "browser": "Qword Browser",
+    "version": "35.0.1905.5",
+    "manufacturer": "Qword Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 2.3.6; fa-fa; GT-S5830i Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 MxBrowser/4.3.0.2000",
+    "browser": "Maxthon",
+    "version": "4.3.0.2000",
+    "manufacturer": "Maxthon International Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 2.3.4; de-de; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Maxthon/4.0.3.3000",
+    "browser": "Maxthon",
+    "version": "4.0.3.3000",
+    "manufacturer": "Maxthon International Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) SuperBird/24.0",
+    "browser": "SuperBird",
+    "version": "24.0.0",
+    "manufacturer": "superbird-browser.com",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; HM NOTE 1LTETD Build/KVT49L) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025410 Mobile Safari/533.1 MicroMessenger/6.1.0.66_r1062275.542 NetType/cmnet",
+    "browser": "WeChat App",
+    "version": "6.1.0.66",
+    "manufacturer": "Tencent Ltd.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "MQQBrowser/3.0/Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; GT-I9100 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "browser": "QQ Browser",
+    "version": "3.0.0",
+    "manufacturer": "Tencent Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12F69 [Pinterest/iOS]",
+    "browser": "Pinterest App",
+    "version": "0.0.0",
+    "manufacturer": "Ericsson Research",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; HUAWEI MT7-TL10 Build/HuaweiMT7-TL10) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 baiduboxapp/6.3.1 (Baidu; P1 4.4.2)",
+    "browser": "Baidu Box App",
+    "version": "6.3.1",
+    "manufacturer": "Baidu",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.3 Mobile Safari/537.3",
+    "browser": "Samsung WebView",
+    "version": "2.3.0",
+    "manufacturer": "Samsung",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux) AppleWebKit/531.2+ Midori/0.3",
+    "browser": "Midori",
+    "version": "0.3.0",
+    "manufacturer": "Christian Dywan",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPod; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile Schoolwires",
+    "browser": "Schoolwires App",
+    "version": "0.0.0",
+    "manufacturer": "Schoolwires, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) CriOS/30.0.1599.16 Mobile/11A501 Safari/8536.25",
+    "browser": "Chrome for iOS",
+    "version": "30.0.1599.16",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; GT-I9100 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Dolphin/INT-1.0 Mobile Safari/534.30",
+    "browser": "Dolfin",
+    "version": "1.0.0",
+    "manufacturer": "MopoTab Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/532.4 (KHTML, like Gecko) Arora/0.10.2 Safari/532.4",
+    "browser": "Arora",
+    "version": "0.10.2",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "com.douban.group/2.2.0(220) Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn; MI 2A Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "browser": "douban App",
+    "version": "2.2.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.4.4; ru-ru; MI 2S Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36 XiaoMi/MiuiBrowser/2.0.1",
+    "browser": "Miui Browser",
+    "version": "2.0.1",
+    "manufacturer": "Xiaomi Tech",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "iBrowser/3.1/Mozilla/5.0 (Linux; U; Android 2.2; en-gb; GT-I5510 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
+    "browser": "iBrowser",
+    "version": "3.1.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "OneBrowser/3.5/Mozilla/5.0 (Linux; U; Android 2.3.6; en-gb; GT-S5302 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
+    "browser": "OneBrowser",
+    "version": "3.5.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux;u;Android 2.3.7;zh-cn;) AppleWebKit/533.1 (KHTML,like Gecko) Version/4.0 Mobile Safari/533.1 (compatible; +http://www.baidu.com/search/spider.html)",
+    "browser": "Baidu Mobile Search",
+    "version": "0.0.0",
+    "manufacturer": "Baidu",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (linux; u; android 4.1.1; ja-jp; sgpt12 build/tjs0166) applewebkit/534.30 (khtml, like gecko) version/4.0 safari/534.30 yjapp-android jp.co.yahoo.android.yjtop/2.1.8",
+    "browser": "Yahoo! App",
+    "version": "2.1.8",
+    "manufacturer": "Yahoo! Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; HTC_One_X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "browser": "Android Webkit",
+    "version": "4.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; HTC_Sensation_Z710e; da-dk) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16",
+    "browser": "Android Webkit",
+    "version": "5.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "MT6515M-A1+/1.0 Linux/2.6.35.7 Android 2.3.6 Release/12.09.2012 Browser/AppleWebKit533.1 (KHTML, like Gecko) Mozilla/5.0 Mobile",
+    "browser": "Android Webkit",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "AT-AS40SE Linux/3.0.13 Android/4.0.4 Release/04.10.2013 Browser/AppleWebKit534.30 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mobile Safari/534.30 Android 4.0.1;",
+    "browser": "Android Webkit",
+    "version": "4.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "OPPO_R813T/1.0 Linux/3.0.35.7 Android/4.0 Release/11.15.2012 Browser/AppleWebKit534.30 Mobile Safari/534.30 MBBMS/2.2",
+    "browser": "Android Webkit",
+    "version": "4.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9320; de) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.714 Mobile Safari/534.11+",
+    "browser": "BlackBerry",
+    "version": "7.1.0.714",
+    "manufacturer": "Research In Motion Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; fr-CA) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 Touchpad/1.0",
+    "browser": "webOS Browser",
+    "version": "0.0.0",
+    "manufacturer": "HP",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_9_1; en-US) AppleWebKit/533.21.1+(KHTML, like Gecko, Safari/533.19.4) Version/5.11 OmniWeb/622.16.0",
+    "browser": "OmniWeb",
+    "version": "5.11.0",
+    "manufacturer": "Omni Development Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Nokia7230/5.0 (05.71) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+",
+    "browser": "Nokia Browser",
+    "version": "0.0.0",
+    "manufacturer": "Nokia",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Mobile/11D201 Twitter for iPhone",
+    "browser": "Twitter App",
+    "version": "0.0.0",
+    "manufacturer": "Twitter",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) GSA/3.2.1.25875 Mobile/11B554a Safari/8536.25",
+    "browser": "Google App",
+    "version": "3.2.1.25875",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux) AppleWebKit/534.34 (KHTML, like Gecko) QtCarBrowser Safari/534.34",
+    "browser": "Model S Browser",
+    "version": "0.0.0",
+    "manufacturer": "Tesla Motors",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; N; ; ru-RU) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Qt/4.5.3",
+    "browser": "Qt",
+    "version": "4.5.3",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Instagram 5.0.2 (iPhone5,1; iPhone OS 7_0_4; en_US; en) AppleWebKit/420+",
+    "browser": "Instagram App",
+    "version": "5.0.2",
+    "manufacturer": "Facebook",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) WebClip/7537.76.1 Safari/7537.76.4",
+    "browser": "WebClip App",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU OS 6_0_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mercury/8.0.1 Mobile/10A523 Safari/8536.25",
+    "browser": "Mercury",
+    "version": "8.0.1",
+    "manufacturer": "iLegendSoft, Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "MacAppStore/2.0 (Macintosh; OS X 10.10.2; 14C81f) AppleWebKit/0600.3.10.2",
+    "browser": "Mac AppStore App",
+    "version": "2.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux; C -) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Webglance/0.1",
+    "browser": "Web Glance",
+    "version": "0.1.0",
+    "manufacturer": "webglance.com",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "NewsBlur Feed Fetcher - 0 subscribers - http://www.newsblur.com/site/1719739/nouvelles-cinema (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_1) AppleWebKit/534.48.3 (KHTML, like Gecko) Version/5.1 Safari/534.48.3)",
+    "browser": "NewsBlur Feed Fetcher",
+    "version": "0.0.0",
+    "manufacturer": "www.newsblur.com",
+    "bits": 32,
+    "type": "Feed Reader"
+  },
+  {
+    "ua": "Mail/53 CFNetwork/711.2.23 Darwin/14.0.0",
+    "browser": "Apple Mail",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko)",
+    "browser": "Apple Mail",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko)",
+    "browser": "Apple Mail",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.57.2 (KHTML, like Gecko)",
+    "browser": "Apple Mail",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534+ (KHTML, like Gecko) MsnBot-Media /1.0b",
+    "browser": "msnbot-media",
+    "version": "1.0.0-beta",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (BB10; Touch) AppleWebKit/537.35  (KHTML, like Gecko) Version/10.3.1.2243 Mobile Safari/537.35",
+    "browser": "BlackBerry",
+    "version": "10.3.1.2243",
+    "manufacturer": "Research In Motion Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.1.0; en-US) AppleWebKit/536.2+ (KHTML, like Gecko) Version/7.2.1.0 Safari/536.2+",
+    "browser": "Blackberry Playbook Browser",
+    "version": "7.2.1.0",
+    "manufacturer": "Research In Motion Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux i686; de-DE) AppleWebKit/534.3 (KHTML, like Gecko) WeTab-Browser Safari/534.3",
+    "browser": "WeTab Browser",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) profiller Safari/537.21",
+    "browser": "profiller",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/534.34 (KHTML, like Gecko) wkhtmltopdf Safari/534.34",
+    "browser": "wkhtmltopdf",
+    "version": "0.0.0",
+    "manufacturer": "wkhtmltopdf.org",
+    "bits": 64,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) wkhtmltoimage Safari/534.34",
+    "browser": "wkhtmltoimage",
+    "version": "0.0.0",
+    "manufacturer": "wkhtmltopdf.org",
+    "bits": 64,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/8.1 Mobile/9B179 Safari/7534.48.3 OktaMobile/4.0.9",
+    "browser": "Okta Mobile App",
+    "version": "4.0.9",
+    "manufacturer": "Okta, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) kmail2/4.14.2 Safari/534.34",
+    "browser": "KMail2",
+    "version": "4.14.2",
+    "manufacturer": "KDE e.V.",
+    "bits": 64,
+    "type": "Email Client"
+  },
+  {
+    "ua": "ElmediaPlayer Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.13+ (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2",
+    "browser": "Elmedia Player",
+    "version": "0.0.0",
+    "manufacturer": "Eltima Software",
+    "bits": 32,
+    "type": "Multimedia Player"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; en_US) AppleWebKit/533.19.4 (KHTML, like Gecko) Dreamweaver/12.0.0.5808 Version/5.0.3 Safari/533.19.4",
+    "browser": "Dreamweaver",
+    "version": "12.0.0.5808",
+    "manufacturer": "Adobe Systems Incorporated",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11;) AppleWebKit/534.34 (KHTML, like Gecko) akregator/4.14.1 Safari/534.34",
+    "browser": "akregator",
+    "version": "4.14.1",
+    "manufacturer": "KDE e.V.",
+    "bits": 32,
+    "type": "Feed Reader"
+  },
+  {
+    "ua": "Mozilla/5.0 AppleWebKit/536.30.1 (KHTML, like Gecko) Version/6.0.5 Safari/536.30.1 Installatron (Mimicking WebKit)",
+    "browser": "Installatron",
+    "version": "6.0.5",
+    "manufacturer": "Installatron LLC.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "AdsBot-Google-Mobile (+http://www.google.com/mobile/adsbot.html) Mozilla (iPhone; U; CPU iPhone OS 3 0 like Mac OS X) AppleWebKit (KHTML, like Gecko) Mobile Safari",
+    "browser": "AdsBot Google-Mobile",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux i686; de-de) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/531.2+ Debian/squeeze (2.30.6-1) Epiphany/2.30.6",
+    "browser": "Epiphany",
+    "version": "2.30.6",
+    "manufacturer": "The GNOME Project",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.34 (KHTML, like Gecko) rekonq Safari/534.34",
+    "browser": "rekonq",
+    "version": "0.0.0",
+    "manufacturer": "KDE e.V.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0",
+    "browser": "Skyfire",
+    "version": "2.0.0",
+    "manufacturer": "Opera Software ASA",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "FlixsteriOS/6.15 (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11A465",
+    "browser": "Flixster App",
+    "version": "6.15.0",
+    "manufacturer": "Flixster, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; U; Linux x86; de-de) adbeat.com/policy Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3 AppleWebKit/532.4 Safari/532.4",
+    "browser": "Adbeat Bot",
+    "version": "0.0.0",
+    "manufacturer": "adbeat.com",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; ; en-US) AppleWebKit/533.3 (KHTML, like Gecko) SecondLife/3.7.23.297296 (Second Life Release; default skin) Safari/533.3",
+    "browser": "Second Life Client",
+    "version": "3.7.23.297296",
+    "manufacturer": "Linden Labs",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "iPhone OS/8.1.1 (iPhone) Salesforce1/7.0(3002930) XBranding/1.0 SalesforceTouchContainer/2.0 Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B435",
+    "browser": "SalesForce App",
+    "version": "7.0.0",
+    "manufacturer": "Salesforce.com, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_1 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8B117 Safari/6531.22.7 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)",
+    "browser": "AdSense Bot",
+    "version": "2.1.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) domain.com Safari/538.1",
+    "browser": "PagePeeker Screenshot Maker",
+    "version": "0.0.0",
+    "manufacturer": "pagepeeker SRL",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10A403 Safari/6533.18.5 DiigoBrowser",
+    "browser": "Diigo Browser",
+    "version": "0.0.0",
+    "manufacturer": "Diigo, Inc.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) kontact/4.14.9 Safari/534.34",
+    "browser": "Kontact",
+    "version": "4.14.9",
+    "manufacturer": "KDE e.V.",
+    "bits": 64,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) QupZilla/1.6.1 Safari/537.21",
+    "browser": "QupZilla",
+    "version": "1.6.1",
+    "manufacturer": "David Rosca and Community",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/1.0 Mobile/12F69 Safari/600.1.4",
+    "browser": "Firefox for iOS",
+    "version": "1.0.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) qutebrowser/0.2.1 Safari/538.1",
+    "browser": "qutebrowser",
+    "version": "0.2.1",
+    "manufacturer": "Florian Bruhin",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/538.1 (KHTML, like Gecko) Otter/0.9.03 beta 3 Safari/538.1",
+    "browser": "Otter",
+    "version": "0.9.03",
+    "manufacturer": "otter-browser.org",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Applebot/0.1; +http://www.apple.com/go/applebot)",
+    "browser": "Applebot",
+    "version": "0.1.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9) AppleWebKit/537.71 (KHTML, like Gecko) Version/7.0 Safari/537.71 (Rival IQ, rivaliq.com)",
+    "browser": "Rival IQ Bot",
+    "version": "0.0.0",
+    "manufacturer": "Rival IQ Corporation",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Evernote Windows/276742; Windows/6.1.7601 Service Pack 1 (Win64); Safari/536.5",
+    "browser": "Evernote App",
+    "version": "0.0.0",
+    "manufacturer": "Evernote Corporation",
+    "bits": 64,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_1; nl-nl) AppleWebKit/532.3+ (KHTML, like Gecko) Fluid/0.9.6 Safari/532.3+",
+    "browser": "Fluid",
+    "version": "0.9.6",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.73.11 (KHTML, like Gecko) Version/7.0.1 Safari/537.73.11",
+    "browser": "Safari",
+    "version": "7.0.1",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.6.3 (KHTML, like Gecko) Version/8.0.6",
+    "browser": "Safari",
+    "version": "8.0.6",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU OS 8_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile [TWCAN/SportsNetForiOS]",
+    "browser": "TWC SportsNet",
+    "version": "0.0.0",
+    "manufacturer": "Time Warner Cable",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Android; U; -GB) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/13.0",
+    "browser": "Adobe AIR",
+    "version": "13.0.0",
+    "manufacturer": "Adobe Systems Incorporated",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B440",
+    "browser": "Mobile Safari UIWebView",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux i686) AppleWebKit/535.22+ (KHTML, like Gecko) WebKitGTK+/1.8.0 luakit",
+    "browser": "luakit",
+    "version": "1.8.0",
+    "manufacturer": "Mason Larobina",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; U; CPU like Mac OS X; en) AppleWebKit/420+",
+    "browser": "Safari",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+    "browser": "Google Bot",
+    "version": "2.1.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.28 (KHTML, like Gecko) NX/3.0.3.12.11 NintendoBrowser/2.1.0.9559.EU",
+    "browser": "NetFront NX",
+    "version": "3.0.3.12.11",
+    "manufacturer": "Access",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (PlayStation 4 1.72) AppleWebKit/536.26 (KHTML, like Gecko)",
+    "browser": "NetFront",
+    "version": "0.0.0",
+    "manufacturer": "Access",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; CloudFlare-AlwaysOnline/1.0; +http://www.cloudflare.com/always-online) AppleWebKit/534.34",
+    "browser": "CloudFlare AlwaysOnline",
+    "version": "1.0.0",
+    "manufacturer": "CloudFlare, Inc.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (LG-C199 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)",
+    "browser": "Phantom Browser",
+    "version": "2.0.0",
+    "manufacturer": "LG",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10) AppleWebKit/600.1.25 (KHTML, like Gecko) Shrook/434l",
+    "browser": "Shrook",
+    "version": "0.0.0",
+    "manufacturer": "Utsire Software",
+    "bits": 32,
+    "type": "Feed Reader"
+  },
+  {
+    "ua": "HRCrawler/2.0 (XF86; MacOS x86_64) AppleWebKit/537.31 (KHTML, like Gecko)",
+    "browser": "HRCrawler",
+    "version": "2.0.0",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)",
+    "browser": "Espial TV Browser",
+    "version": "6.1.15",
+    "manufacturer": "Espial Group",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; en-gb) AppleWebKit/418.9.1 (KHTML, like Gecko) SiteCon/8.10.22",
+    "browser": "SiteCon",
+    "version": "8.10.22",
+    "manufacturer": "NCC Group.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10) AppleWebKit/600.1.25 (KHTML, like Gecko) iBooks Author/652",
+    "browser": "iBooks Author",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10) AppleWebKit/600.1.25 (KHTML, like Gecko) iWeb/304",
+    "browser": "iWeb",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10) AppleWebKit/600.1.25 (KHTML, like Gecko) NewsFire",
+    "browser": "NewsFire",
+    "version": "0.0.0",
+    "manufacturer": "David Watanabe",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10) AppleWebKit/600.1.25 (KHTML, like Gecko) RMSnapKit/1.0",
+    "browser": "RMSnapKit",
+    "version": "1.0.0",
+    "manufacturer": "realmacsoftware",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.74.9 (KHTML, like Gecko) Version/2.9.1 Sandvox",
+    "browser": "Sandvox",
+    "version": "2.9.1",
+    "manufacturer": "Karelia Software",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.78.2 (KHTML, like Gecko) TubeTV",
+    "browser": "TubeTV",
+    "version": "0.0.0",
+    "manufacturer": "Chimoosoft",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Elluminate Live! Web Tour",
+    "browser": "Elluminate Live",
+    "version": "0.0.0",
+    "manufacturer": "Blackboard Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533+ (KHTML, like Gecko) Element Browser 5.0",
+    "browser": "Element Browser",
+    "version": "5.0.0",
+    "manufacturer": "Element Software",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.1.25 (KHTML, like Gecko) QuickLook/5.0",
+    "browser": "QuickLook",
+    "version": "5.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android) AppleWebKit/533.1 (KHTML, like Gecko) Mobile Zetakey/3.2",
+    "browser": "Zetakey Browser",
+    "version": "3.2.0",
+    "manufacturer": "Zetakey Solutions Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Intel Mac OS X 10_6_6) AppleWebKit/534.24 (KHTML, like Gecko) (Contact: backend@getprismatic.com)",
+    "browser": "Prismatic App",
+    "version": "0.0.0",
+    "manufacturer": "Prismatic",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_6) AppleWebKit/534.24 (KHTML, like Gecko) (Contact: backend@getprismatic.com)",
+    "browser": "Prismatic App",
+    "version": "0.0.0",
+    "manufacturer": "Prismatic",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534+ (KHTML, like Gecko) OpenWebKitSharp",
+    "browser": "open-webkit-sharp",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Dalvik/1.6.0 (Linux; U; Android 4.0.4; GT-I9100 Build/IMM76D)",
+    "browser": "Dalvik",
+    "version": "1.6.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "iTunes/11.3.1 (Windows; Microsoft Windows 7 x64 Home Premium Edition Service Pack 1 (Build 7601)) AppleWebKit/537.60.17",
+    "browser": "iTunes",
+    "version": "11.3.1",
+    "manufacturer": "Apple Inc",
+    "bits": 64,
+    "type": "Application"
+  },
+  {
+    "ua": "AtomicBrowser/3.7.1 CFNetwork/467.12 Darwin/10.3.1",
+    "browser": "Atomic Browser",
+    "version": "3.7.1",
+    "manufacturer": "Richard Trautvetter",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "AtomicLite/7.0.1 CFNetwork/672.1.13 Darwin/14.0.0",
+    "browser": "Atomic Browser Lite",
+    "version": "7.0.1",
+    "manufacturer": "Richard Trautvetter",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Perfect%20Browser/9.1 CFNetwork/672.0.8 Darwin/14.0.0",
+    "browser": "Perfect Browser",
+    "version": "9.1.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Reeder/2.1.1 CFNetwork/672.0.8 Darwin/14.0.0",
+    "browser": "Reeder",
+    "version": "2.1.1",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "FastBrowser/1 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "FastBrowser",
+    "version": "1.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; U; ABrowse 0.6; Syllable) AppleWebKit/420+ (KHTML, like Gecko)",
+    "browser": "ABrowse",
+    "version": "0.6.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Safari/12602.1.38.2 CFNetwork/796 Darwin/16.0.0 (x86_64)",
+    "browser": "Safari",
+    "version": "10.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Safari/10600.6.3 CFNetwork/720.3.13 Darwin/14.3.0 (x86_64)",
+    "browser": "Safari",
+    "version": "8.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Safari/10601.2.7.2 CFNetwork/720.5.7 Darwin/14.5.0 (x86_64)",
+    "browser": "Safari",
+    "version": "8.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Safari/11601.6.17 CFNetwork/760.5.1 Darwin/15.5.0 (x86_64)",
+    "browser": "Safari",
+    "version": "9.1.0",
+    "manufacturer": "Apple Inc",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Safari/9537.86.2.7.2 CFNetwork/673.6 Darwin/13.4.0 (x86_64) (MacBookPro8%2C2)",
+    "browser": "Safari",
+    "version": "7.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Safari/8537.85.17.9.1 CFNetwork/596.6.4 Darwin/12.6.0 (x86_64) (iMac13%2C2)",
+    "browser": "Safari",
+    "version": "6.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Safari/7537.78.2 CFNetwork/520.5.3 Darwin/11.4.2 (i386) (Macmini2%2C1)",
+    "browser": "Safari",
+    "version": "5.1.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook5%2C1)",
+    "browser": "Safari",
+    "version": "5.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Safari/1 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook5%2C1)",
+    "browser": "Safari",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Safari/5526.11.2 CFNetwork/339.5 Darwin/9.5.0 (i386) (MacBookPro2,2)",
+    "browser": "Safari",
+    "version": "4.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 0.5; en-us) AppleWebKit/522+ (KHTML, like Gecko) Safari/419.3",
+    "browser": "Android Webkit",
+    "version": "3.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/418 (KHTML, like Gecko) Safari/417.9.2",
+    "browser": "Safari",
+    "version": "3.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Banana Safari/537.21",
+    "browser": "Safari",
+    "version": "4.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "MobileSafari/600.1.4 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "Safari",
+    "version": "5.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "BB_Work_Connect/1.0.23217.42 CFNetwork/711.3.18 Darwin/14.0.0Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0",
+    "browser": "BB Work Connect",
+    "version": "1.0.23217.42",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Application"
+  },
+  {
+    "ua": "Dalvik/1.6.0 (Linux; U; Android 4.4.2; A3-A10 Build/KOT49H)Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0",
+    "browser": "Dalvik",
+    "version": "1.6.0",
+    "manufacturer": "Google Inc",
+    "bits": 64,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.4; Trident/8.0; rv:550) AppleWebKit/537.36 (KHTML, like Gecko) Version/7.0 Safari/550.1.3",
+    "browser": "Internet Explorer",
+    "version": "0.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "com.apple.Notes.SharingExtension/719.68 CFNetwork/811.5.4 Darwin/16.6.0 (x86_64)",
+    "browser": "Notes App",
+    "version": "719.68.0",
+    "manufacturer": "Apple Inc",
+    "bits": 64,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; U; CPU iPhone 4_2_1 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Mobile/7E18 Grindr/1.8.5 (iPhone1,2/4.2.1)",
+    "browser": "Grindr",
+    "version": "1.8.5",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android v1.02_14.13-M_EN-2011.01.13; en_us) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Ninesky-android-mobile/2.1.0 Safari/533.1",
+    "browser": "Ninesky Browser",
+    "version": "2.1.0",
+    "manufacturer": "Ninesky Technology And Industrial Private Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) 1Password/6.3.1 (like Version/9.3.1 Mobile/13E238 Safari/600.1.4)",
+    "browser": "1Password",
+    "version": "6.3.1",
+    "manufacturer": "AgileBits, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "1PasswordThumbs/1 CFNetwork/454.11.12 Darwin/10.7.0 (i386) (MacBookPro5%2C1)",
+    "browser": "1PasswordThumbs",
+    "version": "1.0.0",
+    "manufacturer": "AgileBits, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Klar/3.3 Mobile/14C92",
+    "browser": "Firefox Klar",
+    "version": "3.3.0",
+    "manufacturer": "Mozilla Foundation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.25 (KHTML, like Gecko) Version/11.0 Mobile/15A5304j Safari/604.1",
+    "browser": "Safari",
+    "version": "11.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPad; CPU iPhone OS 10.0.1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3 QHBrowser/244",
+    "browser": "Quick Heal Browser",
+    "version": "0.0.0",
+    "manufacturer": "Quick Heal Technologies Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (N; Windows NT 6.0) AppleWebKit/534.34 (KHTML, like Gecko) Google Earth/7.1.8.3036 Safari/534.34",
+    "browser": "Google Earth",
+    "version": "7.1.8.3036",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Unibox/28 CFNetwork/711.5.6 Darwin/14.0.0",
+    "browser": "Unibox",
+    "version": "28.0.0",
+    "manufacturer": "eightloops GmbH",
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux) AppleWebKit/534.34 (KHTML, like Gecko) kded/4.14.22 Safari/534.34",
+    "browser": "kded",
+    "version": "4.14.22",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT; U; en) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Iris/1.1.7 Safari/525.20",
+    "browser": "Iris Browser",
+    "version": "1.1.7",
+    "manufacturer": "Torch Mobile",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.1.2; zh-cn; ZTE N900D Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30; 360 Aphone Browser (6.9.9.94beta)",
+    "browser": "360 Browser",
+    "version": "6.9.9.94-beta",
+    "manufacturer": "Qihoo 360 Technology Co. Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) online-versicherungsportal.info Safari/538.1",
+    "browser": "online-versicherungsportal.info Bot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) versicherungssuchmaschine.net Safari/538.1",
+    "browser": "versicherungssuchmaschine.net Bot",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "ReadKit/7105 CFNetwork/720.4.3 Darwin/14.4.0 (x86_64)",
+    "browser": "ReadKit",
+    "version": "0.0.0",
+    "manufacturer": "Webin",
+    "bits": 64,
+    "type": "Feed Reader"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12F70 [FBAN/MessengerForiOS;FBAV/27.0.0.34.13;FBBV/9902566;FBDV/iPhone5,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/8.3;FBSS/2; FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5]",
+    "browser": "Facebook Messenger App",
+    "version": "27.0.0.34.13",
+    "manufacturer": "Facebook",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "HotmailBuzzr/4801 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "HotmailBuzzr",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; A200 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 Listia/1.100",
+    "browser": "Listia",
+    "version": "1.100.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E233; iPhone 6/9.3 XING/5.30.0",
+    "browser": "XING App",
+    "version": "5.30.0",
+    "manufacturer": "XING AG",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.34 (KHTML, like Gecko) konqueror/4.10.5 Safari/534.34",
+    "browser": "Konqueror",
+    "version": "4.10.5",
+    "manufacturer": "KDE e.V.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.34 (KHTML, like Gecko) mythfrontend MythBrowser/534.34",
+    "browser": "MythBrowser",
+    "version": "0.0.0",
+    "manufacturer": "MythTV",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Appcent/2.6 CFNetwork/672.1.15 Darwin/14.0.0",
+    "browser": "Appcent",
+    "version": "2.6.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; VT10416-2 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Aldiko/3.0.13-standard",
+    "browser": "Aldiko",
+    "version": "3.0.13",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone5,2; iPhone; U; CPU OS 7_0_4 like Mac OS X; it_IT) com.google.GooglePlus/29676 (KHTML, like Gecko) Mobile/N42AP (gzip)",
+    "browser": "Google+ App",
+    "version": "0.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.8 (like Gecko) (Debian)",
+    "browser": "Konqueror",
+    "version": "3.5.0",
+    "manufacturer": "KDE e.V.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Snapchat/10.4.2.0 (iPhone8,1; iOS 10.2.1; gzip)",
+    "browser": "Snapchat",
+    "version": "10.4.2.0",
+    "manufacturer": "Snap Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "FeeddlerRSS 2.4 (iPad; iPhone OS 7.1; en_GB)",
+    "browser": "Feeddler RSS Reader",
+    "version": "2.4.0",
+    "manufacturer": "Che-Bin Liu",
+    "bits": 32,
+    "type": "Feed Reader"
+  },
+  {
+    "ua": "Stitcher/iOS",
+    "browser": "Mobile Safari UIWebView",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "SoundCloud/3.0.0 build 2547; iPhone/iPhone OS/7.1.1",
+    "browser": "SoundCloud App",
+    "version": "3.0.0",
+    "manufacturer": "SoundCloud Limited",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Rocky ChatWork Mobile/3.4.1 iosv7.1.2 (iPhone App iPhone6,1)",
+    "browser": "Rocky ChatWork Mobile",
+    "version": "3.4.1",
+    "manufacturer": "ChatWork",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Quora 4.0.1 rv:222 (iPhone3,1; iPhone OS 7.1.2; he_IL)",
+    "browser": "Quora App",
+    "version": "4.0.1",
+    "manufacturer": "Quora, Inc.",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "eb-iphone/3.8.6.1 (iPhone OS 7.0.3, iPad) Mobile",
+    "browser": "EB iPhone/IPad App",
+    "version": "3.8.6.1",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "wp-iphone/4.4 (iPhone OS 8.0.2, iPad) Mobile",
+    "browser": "WordPress App",
+    "version": "4.4.0",
+    "manufacturer": "wordpress.org",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "AppleCoreMedia/1.0.0.11D5145e (iPad; U; CPU OS 7_1 like Mac OS X; fr_fr)",
+    "browser": "CoreMedia",
+    "version": "1.0.0.11",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "AppStore/2.0 iOS/7.1.1 model/iPhone5,1 build/11D201 (6; dt:79)",
+    "browser": "AppStore App",
+    "version": "2.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "iOS/6.1.3 (10B329) dataaccessd/1.0",
+    "browser": "iOS dataaccessd",
+    "version": "1.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "iTunes-iPhone/5.0.1 (6; 64GB)",
+    "browser": "iTunes",
+    "version": "5.0.1",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "iTunes-iPad/5.1.1 (2; 16GB; dt:74)",
+    "browser": "iTunes",
+    "version": "5.1.1",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "iTunes-iPod/4.2.1 (2; 8GB)",
+    "browser": "iTunes",
+    "version": "4.2.1",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "YahooMobile/1.0 (Yahoo! Search; 3.1.2) (Apple; iPod touch; iPhone OS/7.1.1); YHOO_Search_App/3.1.2",
+    "browser": "Yahoo Mobile App",
+    "version": "3.1.2",
+    "manufacturer": "Yahoo! Inc.",
+    "bits": 32,
+    "type": "Application"
+  }
+]

@@ -16,10 +16,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 /**
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @author Thomas Müller <mimmi20@live.de>
  */
 class CyrusFactory implements Factory\FactoryInterface
 {
@@ -27,6 +24,7 @@ class CyrusFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'cs25' => 'cyrus cs25',
         'cs24' => 'cyrus cs24',
     ];
 
