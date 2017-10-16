@@ -20,7 +20,7 @@ addons:
     repo_token: 43db4d76514521ffd97e65f2a6806a106ae168f1db55397741485212f9c70ae7
 
 before_install:
-  - phpenv config-rm xdebug.ini
+  - phpenv config-rm xdebug.ini || echo "xdebug not available"
   - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - travis_retry composer self-update
@@ -40,16 +40,8 @@ jobs:
   include:
     - php: 7.2
       env: COMPOSER_FLAGS="--ignore-platform-reqs"
-      before_install:
-        - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        - echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        - travis_retry composer self-update
     - php: nightly
       env: COMPOSER_FLAGS="--ignore-platform-reqs"
-      before_install:
-        - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        - echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        - travis_retry composer self-update
     - stage: test with coverage
       php: 7.1
       env:

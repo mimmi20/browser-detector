@@ -24,7 +24,7 @@ class OplusFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'presto'   => 'o+ presto',
+        'presto' => 'o+ presto',
     ];
 
     /**

@@ -49,6 +49,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
     {
         $checkBeforeOpera = [
             'bdbrowserhd_i18n' => 'baidu browser hd',
+            'opera mobi'       => 'opera mobile',
         ];
 
         foreach ($checkBeforeOpera as $search => $key) {
@@ -57,29 +58,29 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             }
         }
 
-        if ($s->contains('opera mobi', false)
-            || ($s->containsAny(['opera', 'opr'], false) && $s->containsAny(['android', 'mtk', 'maui', 'samsung', 'windows ce', 'symbos'], false))
+        if ($s->containsAny(['opera', 'opr'], false)
+            && $s->containsAny(['android', 'mtk', 'maui', 'samsung', 'windows ce', 'symbos'], false)
         ) {
             return $this->loader->load('opera mobile', $useragent);
         }
 
         $checkBeforeComodoDragon = [
-            'opr'                         => 'opera',
-            'yabrowser'                   => 'yabrowser',
-            'kamelio'                     => 'kamelio app',
-            'acheetahi'                   => 'cm browser',
-            'puffin'                      => 'puffin',
-            'oculusbrowser'               => 'oculus-browser',
-            'surfbrowser'                 => 'surfbrowser',
-            'surf/'                       => 'surfbrowser',
-            'avirascout'                  => 'avira scout',
-            'samsungbrowser'              => 'samsungbrowser',
-            'silk'                        => 'silk',
-            'coc_coc_browser'             => 'coc_coc_browser',
-            'flipboard'                   => 'flipboard app',
-            'seznam.cz'                   => 'seznam browser',
-            'sznprohlizec'                => 'seznam browser',
-            'aviator'                     => 'aviator',
+            'opr'             => 'opera',
+            'yabrowser'       => 'yabrowser',
+            'kamelio'         => 'kamelio app',
+            'acheetahi'       => 'cm browser',
+            'puffin'          => 'puffin',
+            'oculusbrowser'   => 'oculus-browser',
+            'surfbrowser'     => 'surfbrowser',
+            'surf/'           => 'surfbrowser',
+            'avirascout'      => 'avira scout',
+            'samsungbrowser'  => 'samsungbrowser',
+            'silk'            => 'silk',
+            'coc_coc_browser' => 'coc_coc_browser',
+            'flipboard'       => 'flipboard app',
+            'seznam.cz'       => 'seznam browser',
+            'sznprohlizec'    => 'seznam browser',
+            'aviator'         => 'aviator',
         ];
 
         foreach ($checkBeforeComodoDragon as $search => $key) {
@@ -93,26 +94,26 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
         }
 
         $checkBeforeWebview = [
-            'beamrise'        => 'beamrise',
-            'diglo'           => 'diglo',
-            'apusbrowser'     => 'apusbrowser',
-            'iridium'         => 'iridium browser',
-            'mxnitro'         => 'maxthon nitro',
-            'qqbrowser'       => 'qqbrowser',
-            'pinterest'       => 'pinterest app',
-            'wkbrowser'       => 'wkbrowser',
-            'mb2345browser'   => '2345 browser',
-            '2345explorer'    => '2345 browser',
-            '2345chrome'      => '2345 browser',
-            'sohunews'        => 'sohunews app',
-            'miuibrowser'     => 'miui browser',
-            'alohabrowser'    => 'aloha-browser',
-            'vivobrowser'     => 'vivo-browser',
-            'bingweb'         => 'bingweb',
-            'klar/'           => 'firefox klar',
-            'eui browser'     => 'eui browser',
-            'slimboat'        => 'slimboat',
-            'yandexsearch'    => 'yandexsearch',
+            'beamrise'      => 'beamrise',
+            'diglo'         => 'diglo',
+            'apusbrowser'   => 'apusbrowser',
+            'iridium'       => 'iridium browser',
+            'mxnitro'       => 'maxthon nitro',
+            'qqbrowser'     => 'qqbrowser',
+            'pinterest'     => 'pinterest app',
+            'wkbrowser'     => 'wkbrowser',
+            'mb2345browser' => '2345 browser',
+            '2345explorer'  => '2345 browser',
+            '2345chrome'    => '2345 browser',
+            'sohunews'      => 'sohunews app',
+            'miuibrowser'   => 'miui browser',
+            'alohabrowser'  => 'aloha-browser',
+            'vivobrowser'   => 'vivo-browser',
+            'bingweb'       => 'bingweb',
+            'klar/'         => 'firefox klar',
+            'eui browser'   => 'eui browser',
+            'slimboat'      => 'slimboat',
+            'yandexsearch'  => 'yandexsearch',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -134,15 +135,15 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             '360se'                               => '360 secure browser',
             '360ee'                               => '360 speed browser',
             'ptst'                                => 'webpagetest',
-            'chromium'                   => 'chromium',
-            'iron'                       => 'iron',
-            'google page speed insights' => 'google pagespeed insights',
-            'google wireless transcoder' => 'google wireless transcoder',
-            'viera'                      => 'smartviera',
-            'nichrome'                   => 'nichrome',
-            'kinza'                      => 'kinza',
-            '1stbrowser'                 => '1stbrowser',
-            'tenta'                      => 'tenta',
+            'chromium'                            => 'chromium',
+            'iron'                                => 'iron',
+            'google page speed insights'          => 'google pagespeed insights',
+            'google wireless transcoder'          => 'google wireless transcoder',
+            'viera'                               => 'smartviera',
+            'nichrome'                            => 'nichrome',
+            'kinza'                               => 'kinza',
+            '1stbrowser'                          => '1stbrowser',
+            'tenta'                               => 'tenta',
             'salam browser'                       => 'salam browser',
             'whale'                               => 'whale browser',
             'slimjet'                             => 'slimjet browser',
@@ -158,15 +159,15 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'rockmelt'                            => 'rockmelt',
             ' se '                                => 'sogou explorer',
             'archivebot'                          => 'archivebot',
-            'diffbot'     => 'diffbot',
-            'vivaldi'     => 'vivaldi',
-            'lbbrowser'   => 'liebao',
-            'amigo'       => 'amigo',
-            'chromeplus'  => 'coolnovo chrome plus',
-            'coolnovo'    => 'coolnovo',
-            'kenshoo'     => 'kenshoo',
-            'bowser'      => 'bowser',
-            'asw'         => 'avast safezone',
+            'diffbot'                             => 'diffbot',
+            'vivaldi'                             => 'vivaldi',
+            'lbbrowser'                           => 'liebao',
+            'amigo'                               => 'amigo',
+            'chromeplus'                          => 'coolnovo chrome plus',
+            'coolnovo'                            => 'coolnovo',
+            'kenshoo'                             => 'kenshoo',
+            'bowser'                              => 'bowser',
+            'asw'                                 => 'avast safezone',
         ];
 
         foreach ($checkBeforeWire as $search => $key) {
@@ -189,20 +190,20 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
         }
 
         $lastBrowsers = [
-            'qupzilla'   => 'qupzilla',
-            'ur browser' => 'ur-browser',
-            'urbrowser'  => 'ur-browser',
-            ' ur/'       => 'ur-browser',
-            'flock'                       => 'flock',
-            'crosswalk'                   => 'crosswalk',
-            'bromium safari'              => 'vsentry',
-            'pagepeeker'                  => 'pagepeeker',
-            'bitdefendersafepay'          => 'bitdefender safepay',
-            'stormcrawler'                => 'stormcrawler',
-            'whatsapp'                    => 'whatsapp',
-            'basecamp3'                   => 'basecamp3',
-            'bobrowser'                   => 'bobrowser',
-            'headlesschrome'              => 'headless-chrome',
+            'qupzilla'           => 'qupzilla',
+            'ur browser'         => 'ur-browser',
+            'urbrowser'          => 'ur-browser',
+            ' ur/'               => 'ur-browser',
+            'flock'              => 'flock',
+            'crosswalk'          => 'crosswalk',
+            'bromium safari'     => 'vsentry',
+            'pagepeeker'         => 'pagepeeker',
+            'bitdefendersafepay' => 'bitdefender safepay',
+            'stormcrawler'       => 'stormcrawler',
+            'whatsapp'           => 'whatsapp',
+            'basecamp3'          => 'basecamp3',
+            'bobrowser'          => 'bobrowser',
+            'headlesschrome'     => 'headless-chrome',
         ];
 
         foreach ($lastBrowsers as $search => $key) {
