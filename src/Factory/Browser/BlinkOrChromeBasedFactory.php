@@ -99,6 +99,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'apusbrowser'   => 'apusbrowser',
             'iridium'       => 'iridium browser',
             'mxnitro'       => 'maxthon nitro',
+            'mxbrowser'     => 'maxthon',
             'qqbrowser'     => 'qqbrowser',
             'pinterest'     => 'pinterest app',
             'wkbrowser'     => 'wkbrowser',

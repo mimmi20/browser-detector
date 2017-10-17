@@ -33,6 +33,7 @@ class DoogeeFactory implements Factory\FactoryInterface
         'y6_piano'       => 'doogee y6 piano',
         'dg2014'         => 'doogee dg2014',
         'dg800'          => 'doogee dg800',
+        'dg600'          => 'doogee dg600',
         'dg330'          => 'doogee dg330',
         'dg310'          => 'doogee dg310',
         'dg300'          => 'doogee dg300',

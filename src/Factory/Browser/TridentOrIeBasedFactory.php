@@ -68,6 +68,7 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'bingpreview'                                   => 'bing preview',
             'haosouspider'                                  => 'haosouspider',
             'outlook-express'                               => 'outlook-express',
+            'outlook'                                       => 'outlook',
             'msoffice'                                      => 'office',
             'microsoft office'                              => 'office',
             'crazy browser'                                 => 'crazy browser',

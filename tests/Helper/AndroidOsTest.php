@@ -42,6 +42,7 @@ class AndroidOsTest extends \PHPUnit\Framework\TestCase
         return [
             ['Mozilla/5.0 (X11; U; Linux x86_64; en-gb) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36 Puffin/4.1.1.1119AP'],
             ['Mozilla/5.0 (Linux; U; en-us; BeyondPod 4)'],
+            ['Opera/9.80 (Android; Opera Mini/9.0.1829/37.6283; U; de) Presto/2.12.423 Version/12.16'],
         ];
     }
 
@@ -84,6 +85,8 @@ class AndroidOsTest extends \PHPUnit\Framework\TestCase
             ['Mozilla/5.0 (Linux; U; Linux Ventana; de-de; Transformer TF101G Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/8.0 Safari/534.13'],
             ['Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.1) Gecko/20090725 Moblin/3.5.1-2.5.14.moblin2 Shiretoko/3.5.1'],
             ['QuickTime\\\\xaa.7.0.4 (qtver=7.0.4;cpu=PPC;os=Mac 10.3.9)'],
+            ['Opera/9.80 (Windows Mobile; Opera Mini/5.1.21595/37.6334; U; de) Presto/2.12.423 Version/12.16'],
+            ['Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.22228/37.6334; U; de) Presto/2.12.423 Version/12.16'],
         ];
     }
 }

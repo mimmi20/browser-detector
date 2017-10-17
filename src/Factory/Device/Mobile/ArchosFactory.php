@@ -50,6 +50,7 @@ class ArchosFactory implements Factory\FactoryInterface
         '70 xenon'              => 'archos 70 xenon',
         '70it2'                 => 'archos 70it2',
         '64 xenon'              => 'archos 64 xenon',
+        '62 xenon'              => 'archos 62 xenon',
         '59 xenon'              => 'archos 59 xenon',
         '55 diamond 2 plus'     => 'archos 55 diamond 2 plus',
         '55 platinum'           => 'archos 55 platinum',

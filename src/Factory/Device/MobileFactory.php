@@ -347,7 +347,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if ($s->containsAny(['epad', 'p7901a'], false)) {
-            return (new Mobile\EpadFactory($this->loader))->detect($useragent, $s);
+            return (new Mobile\ZenithinkFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('p7mini', false)) {
@@ -588,6 +588,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if (preg_match('/XT\d{3,4}/', $useragent)) {
             return (new Mobile\MotorolaFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('g3mini', false)) {
+            return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/(A|C)\d{5}/', $useragent)) {
@@ -1834,7 +1838,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\VericoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('RG500', true)) {
+        if (preg_match('/RG\d{3}/', $useragent)) {
             return (new Mobile\RugGearFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -2442,7 +2446,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\KodakFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('presto', false)) {
+        if ($s->contains('presto', false) && !$s->contains('opera', false)) {
             return (new Mobile\OplusFactory($this->loader))->detect($useragent, $s);
         }
 

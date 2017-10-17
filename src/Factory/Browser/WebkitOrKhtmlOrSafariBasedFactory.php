@@ -141,6 +141,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'ninesky'                     => 'ninesky-browser',
             'listia'                      => 'listia',
             'aldiko'                      => 'aldiko',
+            'acheetahi'                   => 'cm browser',
         ];
 
         foreach ($checkBeforeAndroidWebkit as $search => $key) {
@@ -266,6 +267,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'versicherungssuchmaschine.net'   => 'versicherungssuchmaschine.net bot',
             'konqueror'                       => 'konqueror',
             'mythbrowser'                     => 'mythbrowser',
+            'puffin'                          => 'puffin',
             'safari'                          => 'safari',
             'snapchat'                        => 'snapchat app',
             'grindr'                          => 'grindr',

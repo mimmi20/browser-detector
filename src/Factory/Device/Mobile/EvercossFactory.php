@@ -25,6 +25,7 @@ class EvercossFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'a66a' => 'evercoss a66a',
+        'a5p'  => 'evercoss a5p',
     ];
 
     /**
