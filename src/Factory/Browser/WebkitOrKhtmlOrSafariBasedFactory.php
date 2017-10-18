@@ -268,6 +268,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'konqueror'                       => 'konqueror',
             'mythbrowser'                     => 'mythbrowser',
             'puffin'                          => 'puffin',
+            'wayback save page'               => 'wayback archive bot',
             'safari'                          => 'safari',
             'snapchat'                        => 'snapchat app',
             'grindr'                          => 'grindr',

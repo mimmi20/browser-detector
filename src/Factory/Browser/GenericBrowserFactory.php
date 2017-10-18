@@ -204,6 +204,7 @@ class GenericBrowserFactory implements FactoryInterface
             'naver.com/robots'                    => 'naverbot',
             'robots'                              => 'testcrawler',
             'deusu'                               => 'werbefreie deutsche suchmaschine',
+            'yodaobot'                            => 'yodaobot',
             'obot'                                => 'obot',
             'zumbot'                              => 'zumbot',
             'umbot'                               => 'umbot',
@@ -727,6 +728,8 @@ class GenericBrowserFactory implements FactoryInterface
             'booglebot'                                              => 'booglebot',
             'orbiter'                                                => 'orbiter',
             'generic site loader'                                    => 'generic site loader',
+            'web downloader'                                         => 'web downloader',
+            'wpscan'                                                 => 'wpscan',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

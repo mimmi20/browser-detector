@@ -2450,6 +2450,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\OplusFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('m52_red_note', false)) {
+            return (new Mobile\MlaisFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('I5', true)) {
             return (new Mobile\SopFactory($this->loader))->detect($useragent, $s);
         }

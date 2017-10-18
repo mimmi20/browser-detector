@@ -16087,5 +16087,47 @@
       ]
     },
     "engine": "unknown"
+  },
+  "wpscan": {
+    "name": "WPScan",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WPScan v"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "savewealth": {
+    "name": "SaveWealth",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SaveWealth"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yodaobot": {
+    "name": "YodaoBot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YodaoBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

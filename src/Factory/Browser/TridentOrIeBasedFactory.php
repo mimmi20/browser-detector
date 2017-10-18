@@ -91,6 +91,8 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'sogou-spider'                                  => 'sogou spider',
             'simplepie'                                     => 'simplepie',
             'argclrint'                                     => 'argclrint',
+            'wayback save page'                             => 'wayback archive bot',
+            'savewealth'                                    => 'savewealth',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

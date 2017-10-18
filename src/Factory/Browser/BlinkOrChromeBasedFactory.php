@@ -205,6 +205,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'basecamp3'          => 'basecamp3',
             'bobrowser'          => 'bobrowser',
             'headlesschrome'     => 'headless-chrome',
+            'wayback save page'  => 'wayback archive bot',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

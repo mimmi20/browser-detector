@@ -102,8 +102,6 @@ class BrowserLoader implements ExtendedLoaderInterface
             $version      = $versionClass->detectVersion($useragent);
         }
 
-        $company   = (new CompanyLoader($this->cache))->load($browser->manufacturer);
-        $type      = (new TypeLoader())->load($browser->type);
         $bits      = (new BrowserBits($useragent))->getBits();
         $engineKey = $browser->engine;
 
@@ -113,7 +111,7 @@ class BrowserLoader implements ExtendedLoaderInterface
             $engine = null;
         }
 
-        $browser = new Browser($browser->name, $company, $version, $type, $bits);
+        $browser = new Browser($browser->name, $browser->manufacturer, $version, $browser->type, $bits);
 
         return [$browser, $engine];
     }
@@ -133,6 +131,10 @@ class BrowserLoader implements ExtendedLoaderInterface
 
         foreach ($browsers as $browserKey => $browserData) {
             $cacheItem = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
+
+            $browserData->type         = (new TypeLoader())->load($browserData->type);
+            $browserData->manufacturer = (new CompanyLoader($this->cache))->load($browserData->manufacturer);
+
             $cacheItem->set($browserData);
 
             $this->cache->save($cacheItem);

@@ -95,14 +95,12 @@ class DeviceLoader implements ExtendedLoaderInterface
             $platform = (new PlatformLoader($this->cache))->load($platformKey, $useragent);
         }
 
-        $companyLoader = new CompanyLoader($this->cache);
-
         $device = new Device(
             $device->codename,
             $device->marketingName,
-            $companyLoader->load($device->manufacturer),
-            $companyLoader->load($device->brand),
-            (new TypeLoader())->load($device->type),
+            $device->manufacturer,
+            $device->brand,
+            $device->type,
             $device->pointingMethod,
             $device->resolutionWidth,
             $device->resolutionHeight,
@@ -122,6 +120,8 @@ class DeviceLoader implements ExtendedLoaderInterface
         $sourceDirectory = __DIR__ . '/../../data/devices/';
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
 
+        $companyLoader = new CompanyLoader($this->cache);
+
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
             /* @var $file \SplFileInfo */
             if (!$file->isFile() || 'json' !== $file->getExtension()) {
@@ -132,6 +132,11 @@ class DeviceLoader implements ExtendedLoaderInterface
 
             foreach ($devices as $deviceKey => $deviceData) {
                 $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
+
+                $deviceData->manufacturer = $companyLoader->load($deviceData->manufacturer);
+                $deviceData->brand = $companyLoader->load($deviceData->brand);
+                $deviceData->type  = (new TypeLoader())->load($deviceData->type);
+
                 $cacheItem->set($deviceData);
 
                 $this->cache->save($cacheItem);

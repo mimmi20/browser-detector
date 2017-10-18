@@ -100,6 +100,7 @@ class GeckoOrFirefoxBasedFactory implements FactoryInterface
             'lolifox'                                       => 'lolifox',
             'cyberfox'                                      => 'cyberfox',
             'webmoney advisor'                              => 'webmoney advisor',
+            'wayback save page'                             => 'wayback archive bot',
             'firefox'                                       => 'firefox',
             'minefield'                                     => 'firefox',
             'shiretoko'                                     => 'firefox',

@@ -1554,7 +1554,7 @@
   {
     "ua": "Puffin%20Free/13939 CFNetwork/711.4.6 Darwin/14.0.0",
     "browser": "Puffin",
-    "version": "0.0.0",
+    "version": "13939.0.0",
     "manufacturer": "CloudMosa Inc.",
     "bits": 32,
     "type": "Browser"
@@ -1566,5 +1566,13 @@
     "manufacturer": "Cheetah Mobile",
     "bits": 32,
     "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) parser.py Safari/537.21 (via Wayback Save Page)",
+    "browser": "Wayback Archive Bot",
+    "version": "0.0.0",
+    "manufacturer": "waybackarchive.org",
+    "bits": 32,
+    "type": "Bot/Crawler"
   }
 ]
