@@ -50,10 +50,10 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
         $checkBeforeWebview = [
             'ucbrowserhd'         => 'uc browser hd',
             'flyflow'             => 'flyflow',
-            'bdbrowser_i18n'      => 'baidu browser',
             'baidubrowser'        => 'baidu browser',
             'bdbrowserhd'         => 'baidu browser hd',
             'bdbrowser_mini'      => 'baidu browser mini',
+            'bdbrowser'      => 'baidu browser',
             'opera mini'          => 'opera mini',
             'opios'               => 'opera mini',
             'ucbrowser'           => 'ucbrowser',
@@ -193,6 +193,8 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'newsblur feed fetcher' => 'newsblur feed fetcher',
             'applecoremedia'        => 'coremedia',
             'dataaccessd'           => 'ios dataaccessd',
+            'hotmailbuzzr'            => 'hotmailbuzzr',
+            'mailbuzzr%20hotmail'            => 'hotmailbuzzr',
         ];
 
         foreach ($checkBeforeAppleMail as $search => $key) {
@@ -339,13 +341,13 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'zetakey'                 => 'zetakey browser',
             'getprismatic.com'        => 'prismatic app',
             'openwebkitsharp'         => 'open-webkit-sharp',
-            'hotmailbuzzr'            => 'hotmailbuzzr',
             'unibox'                  => 'unibox',
             'atomicbrowser'           => 'atomic browser',
             'atomiclite'              => 'atomic browser lite',
             'perfect%20browser'       => 'perfect browser',
             'reeder'                  => 'reeder',
             'fastbrowser'             => 'fastbrowser',
+            'worxwebappstore'             => 'worxwebappstore',
             'abrowse'                 => 'abrowse',
             'goog'                    => 'googlebot',
             'ios'                     => 'mobile safari uiwebview',

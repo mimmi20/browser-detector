@@ -99,6 +99,8 @@ class GeckoOrFirefoxBasedFactory implements FactoryInterface
             'googleimageproxy'                              => 'google image proxy',
             'lolifox'                                       => 'lolifox',
             'cyberfox'                                      => 'cyberfox',
+            'to-browser'                          => 't-online browser',
+            'tob'                                 => 't-online browser',
             'webmoney advisor'                              => 'webmoney advisor',
             'wayback save page'                             => 'wayback archive bot',
             'firefox'                                       => 'firefox',

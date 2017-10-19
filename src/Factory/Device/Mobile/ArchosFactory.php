@@ -26,6 +26,7 @@ class ArchosFactory implements Factory\FactoryInterface
     private $devices = [
         '121 neon'              => 'archos 121 neon',
         '101d neon'             => 'archos 101d neon',
+        '101b copper'             => 'archos 101b copper',
         '101 xs 2'              => 'archos 101 xs 2',
         '101 oxygen'            => 'archos 101 oxygen',
         '101 neon'              => 'archos 101 neon',
@@ -57,6 +58,7 @@ class ArchosFactory implements Factory\FactoryInterface
         '55 helium'             => 'archos 55 helium',
         '53 platinum'           => 'archos 53 platinum',
         '52 platinum'           => 'archos 52 platinum',
+        '50f neon'            => 'archos 50f neon',
         '50f helium'            => 'archos 50f helium',
         '50e neon'              => 'archos 50e neon',
         '50e helium'            => 'archos 50e helium',

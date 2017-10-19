@@ -142,6 +142,7 @@ class SamsungFactory implements Factory\FactoryInterface
         'sm-j320g'        => 'samsung sm-j320g',
         'sm-j320fn'       => 'samsung sm-j320fn',
         'sm-j320f'        => 'samsung sm-j320f',
+        'sm-j320a'        => 'samsung sm-j320a',
         'sm-j3109'        => 'samsung sm-j3109',
         'sm-j120a'        => 'samsung sm-j120a',
         'sm-j120fn'       => 'samsung sm-j120fn',

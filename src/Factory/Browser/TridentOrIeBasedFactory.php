@@ -53,9 +53,9 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'myie'                                          => 'maxthon',
             '2345explorer'                                  => '2345 browser',
             'cybeye'                                        => 'cybeye',
-            'tob'                                           => 't-online browser',
             't-online browser'                              => 't-online browser',
             'to-browser'                                    => 't-online browser',
+            'tob'                                           => 't-online browser',
             'marketwirebot'                                 => 'marketwirebot',
             'googletoolbar'                                 => 'google toolbar',
             'netscape'                                      => 'netscape',
@@ -93,6 +93,7 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'argclrint'                                     => 'argclrint',
             'wayback save page'                             => 'wayback archive bot',
             'savewealth'                                    => 'savewealth',
+            'cobalt'                                    => 'cobalt',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

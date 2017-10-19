@@ -48,7 +48,8 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
     public function detect(string $useragent, Stringy $s, ?OsInterface $platform = null): array
     {
         $checkBeforeOpera = [
-            'bdbrowserhd_i18n' => 'baidu browser hd',
+            'bdbrowserhd' => 'baidu browser hd',
+            'bdbrowser'      => 'baidu browser',
             'opera mobi'       => 'opera mobile',
         ];
 
@@ -115,6 +116,8 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'eui browser'   => 'eui browser',
             'slimboat'      => 'slimboat',
             'yandexsearch'  => 'yandexsearch',
+            'fban/messenger'      => 'facebook messenger app',
+            'fbav'                => 'facebook app',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -206,6 +209,11 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'bobrowser'          => 'bobrowser',
             'headlesschrome'     => 'headless-chrome',
             'wayback save page'  => 'wayback archive bot',
+            'googlebot-mobile'                    => 'googlebot-mobile',
+            'googlebot-image'                     => 'google image search',
+            'googlebot'                           => 'googlebot',
+            'origin'                           => 'origin',
+            'qtwebengine'                           => 'qtwebengine',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

@@ -24,7 +24,7 @@ class XidoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'z110_3g' => 'xido z110 3g',
+        'z110' => 'xido z110 3g',
     ];
 
     /**

@@ -74,9 +74,9 @@ class GenericBrowserFactory implements FactoryInterface
             'seznambot'                           => 'seznambot',
             'qqbrowser/mini'                      => 'qqbrowser mini',
             'pinterest'                           => 'pinterest app',
-            'tob'                                 => 't-online browser',
             't-online browser'                    => 't-online browser',
             'to-browser'                          => 't-online browser',
+            'tob'                                 => 't-online browser',
             'windows-rss-platform'                => 'windows-rss-platform',
             'lssrocketcrawler'                    => 'lightspeed systems rocketcrawler',
             'outlook social connector'            => 'outlook social connector',
@@ -730,6 +730,9 @@ class GenericBrowserFactory implements FactoryInterface
             'generic site loader'                                    => 'generic site loader',
             'web downloader'                                         => 'web downloader',
             'wpscan'                                                 => 'wpscan',
+            'wsp'                                                 => 'wsp',
+            'origin'                           => 'origin',
+            'mozilla'                                       => 'mozilla',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

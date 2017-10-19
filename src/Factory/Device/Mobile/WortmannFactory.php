@@ -24,6 +24,7 @@ class WortmannFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'terra pad 1004' => 'wortmann terra pad 1004',
         'terra pad 1003' => 'wortmann terra pad 1003',
         'pad1002'        => 'wortmann terra pad 1002',
     ];

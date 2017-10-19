@@ -919,7 +919,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "bdbrowser_i18n"
+        "bdbrowser_i18n",
+        "bdbrowser"
       ]
     },
     "engine": "unknown"
@@ -8569,7 +8570,7 @@
         "Origin"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "ossproxy": {
     "name": "OSSProxy",
@@ -16126,6 +16127,62 @@
       "class": "VersionFactory",
       "search": [
         "YodaoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "worxwebappstore": {
+    "name": "WorxWebAppStore",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WorxWebAppStore"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wsp": {
+    "name": "WSP Bot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WSP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "qtwebengine": {
+    "name": "QtWebEngine",
+    "manufacturer": "LogicWare",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QtWebEngine"
+      ]
+    },
+    "engine": null
+  },
+  "cobalt": {
+    "name": "Cobalt Application Container",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cobalt"
       ]
     },
     "engine": "unknown"
