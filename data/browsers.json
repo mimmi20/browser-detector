@@ -4188,7 +4188,7 @@
         "GSA"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "google app engine": {
     "name": "Google App Engine",
@@ -16186,5 +16186,43 @@
       ]
     },
     "engine": "unknown"
+  },
+  "bsnbrowserlite": {
+    "name": "BSNBrowserLite",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "google mobile app": {
+    "name": "Google Mobile App",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GoogleMobile"
+      ]
+    },
+    "engine": null
+  },
+  "apple mobilenotes": {
+    "name": "MobileNotes",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
   }
 }

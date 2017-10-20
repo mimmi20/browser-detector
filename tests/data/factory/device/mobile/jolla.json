@@ -5,7 +5,7 @@
     "marketingName": "general Jolla Device",
     "manufacturer": "Jolla Ltd.",
     "brand": "Jolla",
-    "type": "Mobile Phone",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
     "width": null,
@@ -18,11 +18,24 @@
     "marketingName": "Sailfish",
     "manufacturer": "Jolla Ltd.",
     "brand": "Jolla",
-    "type": "Mobile Phone",
+    "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 540,
+    "height": 960,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.4.4; Jolla C Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36 OPR/42.7.2246.114996",
+    "codeName": "Jolla C",
+    "marketingName": "Jolla C",
+    "manufacturer": "Jolla Ltd.",
+    "brand": "Jolla",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 720,
+    "height": 1280,
     "colors": null
   }
 ]

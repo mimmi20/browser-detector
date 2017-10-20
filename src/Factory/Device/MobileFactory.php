@@ -954,7 +954,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['a101it', 'a7eb', 'a70bht', 'a70cht', 'a70hb', 'a70s', 'a80ksc', 'a35dm', 'a70h2'], false)) {
+        if ($s->containsAny(['a101it', 'a7eb', 'a70bht', 'a70cht', 'a70hb', 'a70s', 'a80ksc', 'a35dm', 'a70h2', 'a50ti'], false)) {
             return (new Mobile\ArchosFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1310,7 +1310,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MotorolaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['h30-u10', 'kiw-', 'chc-', 'che2-', 'ath-', 'mha-', 'cam-', 'frd-', 'nem-', 'pra-', 'plk-', 'lon-', 'duk-', 'ale-', 'gra-', 'vtr-', 'was-', 'bln-', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', 'h60-l', ' p6 '], false)) {
+        if ($s->containsAny(['h30-u10', 'kiw-', 'chc-', 'che2-', 'ath-', 'mha-', 'cam-', 'frd-', 'nem-', 'pra-', 'plk-', 'lon-', 'duk-', 'ale-', 'gra-', 'vtr-', 'was-', 'bln-', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', 'h60-l', ' p6 ', 'hi6210sft'], false)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1370,8 +1370,12 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NextbookFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny([' c7 ', ' h1 ', ' cheetah ', ' x12 ', ' x16 '], false)) {
+        if ($s->containsAny([' c7 ', ' h1 ', ' cheetah ', ' x12 ', ' x16 ', ' x17_s '], false)) {
             return (new Mobile\CubotFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('mt10b', false)) {
+            return (new Mobile\ExcelvanFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('mt10', false)) {
@@ -2448,6 +2452,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('presto', false) && !$s->contains('opera', false)) {
             return (new Mobile\OplusFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('kt107', false)) {
+            return (new Mobile\BdfFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('m52_red_note', false)) {

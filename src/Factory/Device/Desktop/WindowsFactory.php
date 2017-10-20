@@ -65,6 +65,7 @@ class WindowsFactory implements Factory\FactoryInterface
         'hpntdf' => 'hp pc',
         'hpdtdf' => 'hp pc',
         'h9p'    => 'microsoft surface 3',
+        'surfbook w1'    => 'trekstor surfbook w1',
     ];
 
     /**

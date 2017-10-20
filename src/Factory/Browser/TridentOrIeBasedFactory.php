@@ -94,6 +94,7 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'wayback save page'                             => 'wayback archive bot',
             'savewealth'                                    => 'savewealth',
             'cobalt'                                    => 'cobalt',
+            'qqbrowser'           => 'qqbrowser',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

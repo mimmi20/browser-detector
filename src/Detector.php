@@ -88,7 +88,7 @@ class Detector
         $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
         $s         = new Stringy($browserUa);
 
-        if (null === $platform || in_array($platform->getName(), [null, 'unknown'])) {
+        if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
 
             $platformFactory = new PlatformFactory(new PlatformLoader($this->cache));
@@ -108,7 +108,7 @@ class Detector
         [$browser, $engine] = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
         $engineLoader       = new Loader\EngineLoader($this->cache);
 
-        if (null === $engine || in_array($engine->getName(), [null, 'unknown'])) {
+        if (null === $engine) {
             $this->logger->debug('engine not detected from browser');
             $engine = (new Factory\EngineFactory($engineLoader))->detect($browserUa, $s, $browserLoader, $platform);
         }

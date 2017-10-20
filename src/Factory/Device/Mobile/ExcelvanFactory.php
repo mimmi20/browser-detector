@@ -26,6 +26,7 @@ class ExcelvanFactory implements Factory\FactoryInterface
     private $devices = [
         'kp-703' => 'excelvan kp-703',
         'mt13'   => 'excelvan mt13',
+        'mt10b'   => 'excelvan mt10b',
         'm1009b' => 'excelvan m1009b',
         'm1009'  => 'excelvan m1009',
     ];

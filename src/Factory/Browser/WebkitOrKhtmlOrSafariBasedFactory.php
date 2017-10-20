@@ -79,10 +79,13 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'pinterest'           => 'pinterest app',
             'baiduboxapp'         => 'baidu box app',
             'miuibrowser'         => 'miui browser',
+            'com.google.googlemobile'                 => 'google mobile app',
             'gsa'                 => 'google app',
             '1passwordthumbs'     => '1passwordthumbs',
             '1password'           => '1password',
+            'bingweb'       => 'bingweb',
             'klar/'               => 'firefox klar',
+            'com.apple.mobilenotes'               => 'apple mobilenotes',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -348,6 +351,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'reeder'                  => 'reeder',
             'fastbrowser'             => 'fastbrowser',
             'worxwebappstore'             => 'worxwebappstore',
+            'bsnbrowserlite'             => 'bsnbrowserlite',
             'abrowse'                 => 'abrowse',
             'goog'                    => 'googlebot',
             'ios'                     => 'mobile safari uiwebview',

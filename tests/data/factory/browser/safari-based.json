@@ -1590,5 +1590,37 @@
     "manufacturer": null,
     "bits": 32,
     "type": "Email Client"
+  },
+  {
+    "ua": "BSNBrowserLite/1001 CFNetwork/811.5.4 Darwin/16.6.0",
+    "browser": "BSNBrowserLite",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 iphone6splus BingWeb/6.8.6.0",
+    "browser": "BingWeb App",
+    "version": "6.8.6.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "com.google.GoogleMobile/27.0.0 iPhone/10.3.2 hw/iPhone8_1",
+    "browser": "Google Mobile App",
+    "version": "27.0.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "com.apple.mobilenotes.SharingExtension/1140.75 CFNetwork/811.5.4 Darwin/16.6.0",
+    "browser": "MobileNotes",
+    "version": "0.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
   }
 ]

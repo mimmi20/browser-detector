@@ -55,6 +55,7 @@ class WikoFactory implements Factory\FactoryInterface
         'rainbow up'    => 'wiko rainbow up',
         'rainbow jam'   => 'wiko rainbow jam',
         'rainbow 2'     => 'wiko rainbow 2',
+        'rainbow lite'   => 'wiko rainbow lite',
         'rainbow'       => 'wiko rainbow',
         'lenny3'        => 'wiko lenny3',
         'lenny'         => 'wiko lenny',

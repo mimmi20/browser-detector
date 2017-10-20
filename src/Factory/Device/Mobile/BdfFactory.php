@@ -18,25 +18,13 @@ use Stringy\Stringy;
 /**
  * @author Thomas Müller <mimmi20@live.de>
  */
-class CoolpadFactory implements Factory\FactoryInterface
+class BdfFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'r108'        => 'coolpad r108',
-        '8297w'        => 'coolpad 8297w',
-        '8079'         => 'coolpad 8079',
-        '8076d'        => 'coolpad 8076d',
-        'coolpad 5891' => 'coolpad 5891',
-        '5860s'        => 'coolpad 5860s',
-        'cp8676_i02'   => 'coolpad cp8676 i02',
-        'cp8298_i00'   => 'coolpad cp8298 i00',
-        'e561'         => 'coolpad e561',
-        'e502'         => 'coolpad e502',
-        'e501'         => 'coolpad e501',
-        'n930'         => 'coolpad n930',
-        'w713'         => 'coolpad w713',
+        'kt107' => 'bdf kt107',
     ];
 
     /**
@@ -68,6 +56,6 @@ class CoolpadFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general coolpad device', $useragent);
+        return $this->loader->load('general bdf device', $useragent);
     }
 }

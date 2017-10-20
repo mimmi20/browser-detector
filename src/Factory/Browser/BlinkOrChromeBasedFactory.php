@@ -118,6 +118,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'yandexsearch'  => 'yandexsearch',
             'fban/messenger'      => 'facebook messenger app',
             'fbav'                => 'facebook app',
+            'gsa'                 => 'google app',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
