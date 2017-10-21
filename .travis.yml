@@ -28,11 +28,12 @@ before_install:
 
 install:
   - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
-  - travis_retry composer require --update-with-dependencies --prefer-dist phpunit/phpunit:^6.2
+  - travis_retry composer require --update-with-dependencies --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest phpunit/phpunit:^6.2
+  - travis_retry composer require --update-with-dependencies --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest scriptfusion/phpunit-immediate-exception-printer:^1.0
 
 script:
   - composer validate
-  - vendor/bin/phpunit --colors --no-coverage
+  - vendor/bin/phpunit --printer 'ScriptFUSION\PHPUnitImmediateExceptionPrinter\ImmediateExceptionPrinter' --colors --no-coverage
 
 jobs:
   allow_failures:
@@ -49,7 +50,7 @@ jobs:
         - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
         - echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
         - travis_retry composer self-update
-      script: vendor/bin/phpunit --colors --coverage-clover=clover.xml
+      script: vendor/bin/phpunit --printer 'ScriptFUSION\PHPUnitImmediateExceptionPrinter\ImmediateExceptionPrinter' --colors --coverage-clover=clover.xml --coverage-text
       after_success:
         - wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar && php -n coveralls.phar --verbose --coverage_clover=clover.xml
         - bash <(curl -s https://codecov.io/bash) -f clover.xml -F phpunit
@@ -58,21 +59,21 @@ jobs:
       env: COMPOSER_FLAGS=""
       install:
         - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
-        - travis_retry composer require --update-with-dependencies --prefer-dist squizlabs/php_codesniffer:^3.0
+        - travis_retry composer require --update-with-dependencies --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest squizlabs/php_codesniffer:^3.0
       script: vendor/bin/phpcs --colors
     - stage: check coding style
       php: 7.1
       env: COMPOSER_FLAGS=""
       install:
         - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
-        - travis_retry composer require --update-with-dependencies --prefer-dist friendsofphp/php-cs-fixer:^2.5
+        - travis_retry composer require --update-with-dependencies --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest friendsofphp/php-cs-fixer:^2.5
       script: vendor/bin/php-cs-fixer fix --dry-run -vv
     - stage: static code analysis
       php: 7.1
       env: COMPOSER_FLAGS=""
       install:
         - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
-        - travis_retry composer require --update-with-dependencies --prefer-dist phpstan/phpstan:0.8.4
+        - travis_retry composer require --update-with-dependencies --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest phpstan/phpstan:0.8.4
       script: vendor/bin/phpstan analyse -l 7 -c phpstan.neon --autoload-file=vendor/autoload.php --memory-limit=768M --no-progress src tests
 
 notifications:
