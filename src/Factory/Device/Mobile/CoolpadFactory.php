@@ -24,7 +24,7 @@ class CoolpadFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'r108'        => 'coolpad r108',
+        'r108'         => 'coolpad r108',
         '8297w'        => 'coolpad 8297w',
         '8079'         => 'coolpad 8079',
         '8076d'        => 'coolpad 8076d',

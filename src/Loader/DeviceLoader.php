@@ -120,7 +120,8 @@ class DeviceLoader implements ExtendedLoaderInterface
         $sourceDirectory = __DIR__ . '/../../data/devices/';
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
 
-        $companyLoader = new CompanyLoader($this->cache);
+        $companyLoader = CompanyLoader::getInstance($this->cache);
+        $typeLoader    = TypeLoader::getInstance();
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
             /* @var $file \SplFileInfo */
@@ -134,8 +135,8 @@ class DeviceLoader implements ExtendedLoaderInterface
                 $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
 
                 $deviceData->manufacturer = $companyLoader->load($deviceData->manufacturer);
-                $deviceData->brand = $companyLoader->load($deviceData->brand);
-                $deviceData->type  = (new TypeLoader())->load($deviceData->type);
+                $deviceData->brand        = $companyLoader->load($deviceData->brand);
+                $deviceData->type         = $typeLoader->load($deviceData->type);
 
                 $cacheItem->set($deviceData);
 

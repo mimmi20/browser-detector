@@ -28,8 +28,8 @@ before_install:
 
 install:
   - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
-  - travis_retry composer require --update-with-dependencies --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest phpunit/phpunit:^6.2
-  - travis_retry composer require --update-with-dependencies --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest scriptfusion/phpunit-immediate-exception-printer:^1.0
+  - travis_retry composer require --update-with-dependencies --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest $COMPOSER_FLAGS -vv phpunit/phpunit:^6.2
+  - travis_retry composer require --update-with-dependencies --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest $COMPOSER_FLAGS -vv scriptfusion/phpunit-immediate-exception-printer:^1.0
 
 script:
   - composer validate
@@ -59,21 +59,21 @@ jobs:
       env: COMPOSER_FLAGS=""
       install:
         - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
-        - travis_retry composer require --update-with-dependencies --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest squizlabs/php_codesniffer:^3.0
+        - travis_retry composer require --update-with-dependencies --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest $COMPOSER_FLAGS -vv squizlabs/php_codesniffer:^3.0
       script: vendor/bin/phpcs --colors
     - stage: check coding style
       php: 7.1
       env: COMPOSER_FLAGS=""
       install:
         - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
-        - travis_retry composer require --update-with-dependencies --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest friendsofphp/php-cs-fixer:^2.5
+        - travis_retry composer require --update-with-dependencies --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest $COMPOSER_FLAGS -vv friendsofphp/php-cs-fixer:^2.5
       script: vendor/bin/php-cs-fixer fix --dry-run -vv
     - stage: static code analysis
       php: 7.1
       env: COMPOSER_FLAGS=""
       install:
         - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
-        - travis_retry composer require --update-with-dependencies --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest phpstan/phpstan:0.8.4
+        - travis_retry composer require --update-with-dependencies --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest $COMPOSER_FLAGS -vv phpstan/phpstan:0.8.4
       script: vendor/bin/phpstan analyse -l 7 -c phpstan.neon --autoload-file=vendor/autoload.php --memory-limit=768M --no-progress src tests
 
 notifications:

@@ -129,11 +129,14 @@ class BrowserLoader implements ExtendedLoaderInterface
             $browsers = json_decode(file_get_contents(__DIR__ . '/../../data/browsers.json'));
         }
 
+        $companyLoader = CompanyLoader::getInstance($this->cache);
+        $typeLoader    = TypeLoader::getInstance();
+
         foreach ($browsers as $browserKey => $browserData) {
             $cacheItem = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
 
-            $browserData->type         = (new TypeLoader())->load($browserData->type);
-            $browserData->manufacturer = (new CompanyLoader($this->cache))->load($browserData->manufacturer);
+            $browserData->type         = $typeLoader->load($browserData->type);
+            $browserData->manufacturer = $companyLoader->load($browserData->manufacturer);
 
             $cacheItem->set($browserData);
 

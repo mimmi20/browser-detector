@@ -38,7 +38,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'mi note pro'    => 'xiaomitech mi note pro',
         'mi note'        => 'xiaomitech mi note',
         'mi max'         => 'xiaomitech mi max',
-        'mi-4c'        => 'xiaomitech mi 4c',
+        'mi-4c'          => 'xiaomitech mi 4c',
         'mi 4s'          => 'xiaomitech mi 4s',
         'mi 4w'          => 'xiaomitech mi 4w',
         'mi 4lte'        => 'xiaomitech mi 4 lte',

@@ -730,9 +730,9 @@ class GenericBrowserFactory implements FactoryInterface
             'generic site loader'                                    => 'generic site loader',
             'web downloader'                                         => 'web downloader',
             'wpscan'                                                 => 'wpscan',
-            'wsp'                                                 => 'wsp',
-            'origin'                           => 'origin',
-            'mozilla'                                       => 'mozilla',
+            'wsp'                                                    => 'wsp',
+            'origin'                                                 => 'origin',
+            'mozilla'                                                => 'mozilla',
         ];
 
         foreach ($lastBrowsers as $search => $key) {
