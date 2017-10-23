@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
-use BrowserDetector\Factory\Device\Mobile\GzoneFactory;
+use BrowserDetector\Factory\Device\Mobile\CasioFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
@@ -21,10 +21,10 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class GzoneFactoryTest extends \PHPUnit\Framework\TestCase
+class CasioFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Mobile\GzoneFactory
+     * @var \BrowserDetector\Factory\Device\Mobile\CasioFactory
      */
     private $object;
 
@@ -38,7 +38,7 @@ class GzoneFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../../cache/');
         $loader       = new DeviceLoader($cache);
-        $this->object = new GzoneFactory($loader);
+        $this->object = new CasioFactory($loader);
     }
 
     use DeviceTestDetectTrait;
@@ -48,6 +48,6 @@ class GzoneFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function providerDetect()
     {
-        return json_decode(file_get_contents('tests/data/factory/device/mobile/gzone.json'), true);
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/casio.json'), true);
     }
 }

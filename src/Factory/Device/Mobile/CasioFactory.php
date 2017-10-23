@@ -18,13 +18,13 @@ use Stringy\Stringy;
 /**
  * @author Thomas Müller <mimmi20@live.de>
  */
-class GzoneFactory implements Factory\FactoryInterface
+class CasioFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'cal21' => 'gzone cal21',
+        'cal21' => 'casio gzone cal21',
     ];
 
     /**
@@ -56,6 +56,6 @@ class GzoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general gzone device', $useragent);
+        return $this->loader->load('general casio device', $useragent);
     }
 }

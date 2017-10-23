@@ -36,9 +36,9 @@ class HpFactory implements Factory\FactoryInterface
         'touchpad'           => 'hp touchpad',
         'cm_tenderloin'      => 'hp touchpad',
         'palm-d050'          => 'palm tx',
+        'pre/3'              => 'hp pre 3',
         'pre/'               => 'hp pre',
         'pixi/'              => 'palm pixi',
-        'blazer'             => 'palm blazer',
         'p160u'              => 'hp p160u',
     ];
 

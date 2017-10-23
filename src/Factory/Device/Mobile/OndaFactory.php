@@ -24,7 +24,8 @@ class OndaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'v989' => 'onda v989',
+        'v919 3g air' => 'onda v919 3g air',
+        'v989'        => 'onda v989',
     ];
 
     /**
