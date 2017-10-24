@@ -359,42 +359,28 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\EfoxFactory($this->loader))->detect($useragent, $s);
         }
 
-        $factoriesBeforeEfox = [
+        $factoriesBeforeHannspree = [
             'xoro' => Mobile\XoroFactory::class,
             'telepad' => Mobile\XoroFactory::class,
+            'memup' => Mobile\MemupFactory::class,
+            'slidepad' => Mobile\MemupFactory::class,
+            'epad' => Mobile\ZenithinkFactory::class,
+            'p7901a' => Mobile\ZenithinkFactory::class,
+            'p7mini' => Mobile\HuaweiFactory::class,
+            'flytouch' => Mobile\FlytouchFactory::class,
+            'fujitsu' => Mobile\FujitsuFactory::class,
+            'm532' => Mobile\FujitsuFactory::class,
+            'm305' => Mobile\FujitsuFactory::class,
+            'sn10t1' => Mobile\HannspreeFactory::class,
         ];
 
-        foreach ($factoriesBeforeEfox as $test => $factoryName) {
+        foreach ($factoriesBeforeHannspree as $test => $factoryName) {
             if ($s->contains($test, false)) {
                 /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
             }
-        }
-
-        if ($s->containsAny(['memup', 'slidepad'], false)) {
-            return (new Mobile\MemupFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['epad', 'p7901a'], false)) {
-            return (new Mobile\ZenithinkFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('p7mini', false)) {
-            return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('flytouch', false)) {
-            return (new Mobile\FlytouchFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['fujitsu', 'm532', 'm305'], false)) {
-            return (new Mobile\FujitsuFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['sn10t1'], false)) {
-            return (new Mobile\HannspreeFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/hsg\d{4}/i', $useragent)) {
@@ -409,7 +395,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SharpFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/thl/i', $useragent) && !preg_match('/LIAuthLibrary/', $useragent)) {
+        if ($s->contains('thl', false) && !$s->contains('liauthlibrary', false)) {
             return (new Mobile\ThlFactory($this->loader))->detect($useragent, $s);
         }
 
