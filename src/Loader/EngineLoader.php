@@ -104,7 +104,7 @@ class EngineLoader implements ExtendedLoaderInterface
 
         return new Engine(
             $engine->name,
-            (new CompanyLoader($this->cache))->load($engine->manufacturer),
+            $engine->manufacturer,
             $version
         );
     }
@@ -122,8 +122,13 @@ class EngineLoader implements ExtendedLoaderInterface
             $engines = json_decode(file_get_contents(__DIR__ . '/../../data/engines.json'));
         }
 
+        $companyLoader = CompanyLoader::getInstance($this->cache);
+
         foreach ($engines as $engineKey => $engineData) {
             $cacheItem = $this->cache->getItem(hash('sha512', 'engine-cache-' . $engineKey));
+
+            $engineData->manufacturer = $companyLoader->load($engineData->manufacturer);
+
             $cacheItem->set($engineData);
 
             $this->cache->save($cacheItem);

@@ -27,6 +27,7 @@ class BqFactory implements Factory\FactoryInterface
         'edison 3'      => 'bq edison 3',
         'aquaris x5'    => 'bq aquaris x5',
         'aquaris e5 hd' => 'bq aquaris e5 hd',
+        'aquaris e5'    => 'bq aquaris e5',
         'aquaris m10'   => 'bq aquaris m10',
         'aquaris m5'    => 'bq aquaris m5',
         'aquaris m4.5'  => 'bq aquaris m4.5',

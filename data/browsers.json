@@ -919,7 +919,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "bdbrowser_i18n"
+        "bdbrowser_i18n",
+        "bdbrowser"
       ]
     },
     "engine": "unknown"
@@ -1848,7 +1849,7 @@
         "CrMo"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "headless-chrome": {
     "name": "Headless Chrome",
@@ -1862,7 +1863,7 @@
         "HeadlessChrome"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "chrome for ios": {
     "name": "Chrome for iOS",
@@ -4187,7 +4188,7 @@
         "GSA"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "google app engine": {
     "name": "Google App Engine",
@@ -8569,7 +8570,7 @@
         "Origin"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "ossproxy": {
     "name": "OSSProxy",
@@ -12167,6 +12168,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "Thunderbird\\-Portable",
         "Thunderbird"
       ]
     },
@@ -16086,5 +16088,141 @@
       ]
     },
     "engine": "unknown"
+  },
+  "wpscan": {
+    "name": "WPScan",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WPScan v"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "savewealth": {
+    "name": "SaveWealth",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SaveWealth"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yodaobot": {
+    "name": "YodaoBot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YodaoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "worxwebappstore": {
+    "name": "WorxWebAppStore",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WorxWebAppStore"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wsp": {
+    "name": "WSP Bot",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WSP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "qtwebengine": {
+    "name": "QtWebEngine",
+    "manufacturer": "LogicWare",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QtWebEngine"
+      ]
+    },
+    "engine": null
+  },
+  "cobalt": {
+    "name": "Cobalt Application Container",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cobalt"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bsnbrowserlite": {
+    "name": "BSNBrowserLite",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "google mobile app": {
+    "name": "Google Mobile App",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GoogleMobile"
+      ]
+    },
+    "engine": null
+  },
+  "apple mobilenotes": {
+    "name": "MobileNotes",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
   }
 }

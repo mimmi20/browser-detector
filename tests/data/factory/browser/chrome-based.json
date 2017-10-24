@@ -766,5 +766,61 @@
     "manufacturer": "Seznam.cz, a.s.",
     "bits": 64,
     "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1421650137; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.90 Mobile Safari/537.36 MxBrowser/4.5.1.2000",
+    "browser": "Maxthon",
+    "version": "4.5.1.2000",
+    "manufacturer": "Maxthon International Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 (via Wayback Save Page)",
+    "browser": "Wayback Archive Bot",
+    "version": "0.0.0",
+    "manufacturer": "waybackarchive.org",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+    "browser": "Google Bot",
+    "version": "2.1.0",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 7.0; SM-G930F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 bdbrowser/6.4.0.4",
+    "browser": "Baidu Browser",
+    "version": "6.4.0.4",
+    "manufacturer": "Baidu",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.6.0 Chrome/45.0.2454.101 Safari/537.36 EA Download Manager Origin/10.4.11.52733",
+    "browser": "Origin",
+    "version": "10.4.11.52733",
+    "manufacturer": "Electronic Arts Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/126.0.0.23.77;]",
+    "browser": "Facebook App",
+    "version": "126.0.0.23.77",
+    "manufacturer": "Facebook",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 5.0.2; ZTE Blade L3 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 GSA/7.1.29.21.arm",
+    "browser": "Google App",
+    "version": "7.1.29.21",
+    "manufacturer": "Google Inc",
+    "bits": 32,
+    "type": "Application"
   }
 ]

@@ -117,10 +117,9 @@ class PlatformLoader implements ExtendedLoaderInterface
             $marketingName = 'macOS';
         }
 
-        $company = (new CompanyLoader($this->cache))->load($platform->manufacturer);
-        $bits    = (new OsBits($useragent))->getBits();
+        $bits = (new OsBits($useragent))->getBits();
 
-        return new Os($name, $marketingName, $company, $version, $bits);
+        return new Os($name, $marketingName, $platform->manufacturer, $version, $bits);
     }
 
     /**
@@ -136,8 +135,13 @@ class PlatformLoader implements ExtendedLoaderInterface
             $platforms = json_decode(file_get_contents(__DIR__ . '/../../data/platforms.json'));
         }
 
+        $companyLoader = CompanyLoader::getInstance($this->cache);
+
         foreach ($platforms as $platformCode => $platformData) {
             $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
+
+            $platformData->manufacturer = $companyLoader->load($platformData->manufacturer);
+
             $cacheItem->set($platformData);
 
             $this->cache->save($cacheItem);

@@ -53,9 +53,9 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'myie'                                          => 'maxthon',
             '2345explorer'                                  => '2345 browser',
             'cybeye'                                        => 'cybeye',
-            'tob'                                           => 't-online browser',
             't-online browser'                              => 't-online browser',
             'to-browser'                                    => 't-online browser',
+            'tob'                                           => 't-online browser',
             'marketwirebot'                                 => 'marketwirebot',
             'googletoolbar'                                 => 'google toolbar',
             'netscape'                                      => 'netscape',
@@ -68,6 +68,7 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'bingpreview'                                   => 'bing preview',
             'haosouspider'                                  => 'haosouspider',
             'outlook-express'                               => 'outlook-express',
+            'outlook'                                       => 'outlook',
             'msoffice'                                      => 'office',
             'microsoft office'                              => 'office',
             'crazy browser'                                 => 'crazy browser',
@@ -90,6 +91,10 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'sogou-spider'                                  => 'sogou spider',
             'simplepie'                                     => 'simplepie',
             'argclrint'                                     => 'argclrint',
+            'wayback save page'                             => 'wayback archive bot',
+            'savewealth'                                    => 'savewealth',
+            'cobalt'                                        => 'cobalt',
+            'qqbrowser'                                     => 'qqbrowser',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

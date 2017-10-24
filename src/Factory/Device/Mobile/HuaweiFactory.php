@@ -83,6 +83,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'ale-l23'                         => 'huawei ale-l23',
         'ale-l21'                         => 'huawei ale-l21',
         'ale-l02'                         => 'huawei ale-l02',
+        'hi6210sft'                       => 'huawei hi6210sft',
         'grace'                           => 'huawei grace',
         'p7-l10'                          => 'huawei p7-l10',
         'p7-l09'                          => 'huawei p7-l09',

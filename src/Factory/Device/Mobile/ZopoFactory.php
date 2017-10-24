@@ -26,6 +26,7 @@ class ZopoFactory implements Factory\FactoryInterface
     private $devices = [
         '9xxquad' => 'zopo 9xxquad',
         'zp998'   => 'zopo zp998',
+        'zp990+'  => 'zopo zp990+',
         'zp980'   => 'zopo zp980',
         'zp960'   => 'zopo zp960',
         ' c2 '    => 'zopo zp960',

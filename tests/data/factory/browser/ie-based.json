@@ -382,5 +382,45 @@
     "manufacturer": null,
     "bits": 32,
     "type": "Multimedia Player"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; Tablet PC 2.0; .NET4.0E; Microsoft Outlook 14.0.7153; ms-office; MSOffice 14)",
+    "browser": "Outlook",
+    "version": "2010.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 64,
+    "type": "Email Client"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0; ASU2JS) (via Wayback Save Page)",
+    "browser": "Wayback Archive Bot",
+    "version": "0.0.0",
+    "manufacturer": "waybackarchive.org",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; SaveWealth)",
+    "browser": "SaveWealth",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) Cobalt/10.61955-debug (unlike Gecko) Starboard/4",
+    "browser": "Cobalt Application Container",
+    "version": "10.61955.0",
+    "manufacturer": "Google Inc",
+    "bits": 64,
+    "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; QQBrowser/7.0.4350.400)",
+    "browser": "QQ Browser",
+    "version": "7.0.4350.400",
+    "manufacturer": "Tencent Ltd.",
+    "bits": 32,
+    "type": "Browser"
   }
 ]

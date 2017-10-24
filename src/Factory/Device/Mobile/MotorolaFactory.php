@@ -48,6 +48,7 @@ class MotorolaFactory implements Factory\FactoryInterface
         'xt1581'          => 'motorola xt1581',
         'xt1580'          => 'motorola xt1580',
         'xt1572'          => 'motorola xt1572',
+        'moto x'          => 'motorola xt1052',
         'xt1092'          => 'motorola xt1092',
         'xt1635-02'       => 'motorola xt1635-02',
         'xt1254'          => 'motorola xt1254',

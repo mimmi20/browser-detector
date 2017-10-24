@@ -48,8 +48,9 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
     public function detect(string $useragent, Stringy $s, ?OsInterface $platform = null): array
     {
         $checkBeforeOpera = [
-            'bdbrowserhd_i18n' => 'baidu browser hd',
-            'opera mobi'       => 'opera mobile',
+            'bdbrowserhd' => 'baidu browser hd',
+            'bdbrowser'   => 'baidu browser',
+            'opera mobi'  => 'opera mobile',
         ];
 
         foreach ($checkBeforeOpera as $search => $key) {
@@ -94,26 +95,30 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
         }
 
         $checkBeforeWebview = [
-            'beamrise'      => 'beamrise',
-            'diglo'         => 'diglo',
-            'apusbrowser'   => 'apusbrowser',
-            'iridium'       => 'iridium browser',
-            'mxnitro'       => 'maxthon nitro',
-            'qqbrowser'     => 'qqbrowser',
-            'pinterest'     => 'pinterest app',
-            'wkbrowser'     => 'wkbrowser',
-            'mb2345browser' => '2345 browser',
-            '2345explorer'  => '2345 browser',
-            '2345chrome'    => '2345 browser',
-            'sohunews'      => 'sohunews app',
-            'miuibrowser'   => 'miui browser',
-            'alohabrowser'  => 'aloha-browser',
-            'vivobrowser'   => 'vivo-browser',
-            'bingweb'       => 'bingweb',
-            'klar/'         => 'firefox klar',
-            'eui browser'   => 'eui browser',
-            'slimboat'      => 'slimboat',
-            'yandexsearch'  => 'yandexsearch',
+            'beamrise'       => 'beamrise',
+            'diglo'          => 'diglo',
+            'apusbrowser'    => 'apusbrowser',
+            'iridium'        => 'iridium browser',
+            'mxnitro'        => 'maxthon nitro',
+            'mxbrowser'      => 'maxthon',
+            'qqbrowser'      => 'qqbrowser',
+            'pinterest'      => 'pinterest app',
+            'wkbrowser'      => 'wkbrowser',
+            'mb2345browser'  => '2345 browser',
+            '2345explorer'   => '2345 browser',
+            '2345chrome'     => '2345 browser',
+            'sohunews'       => 'sohunews app',
+            'miuibrowser'    => 'miui browser',
+            'alohabrowser'   => 'aloha-browser',
+            'vivobrowser'    => 'vivo-browser',
+            'bingweb'        => 'bingweb',
+            'klar/'          => 'firefox klar',
+            'eui browser'    => 'eui browser',
+            'slimboat'       => 'slimboat',
+            'yandexsearch'   => 'yandexsearch',
+            'fban/messenger' => 'facebook messenger app',
+            'fbav'           => 'facebook app',
+            'gsa'            => 'google app',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -204,6 +209,12 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'basecamp3'          => 'basecamp3',
             'bobrowser'          => 'bobrowser',
             'headlesschrome'     => 'headless-chrome',
+            'wayback save page'  => 'wayback archive bot',
+            'googlebot-mobile'   => 'googlebot-mobile',
+            'googlebot-image'    => 'google image search',
+            'googlebot'          => 'googlebot',
+            'origin'             => 'origin',
+            'qtwebengine'        => 'qtwebengine',
         ];
 
         foreach ($lastBrowsers as $search => $key) {
