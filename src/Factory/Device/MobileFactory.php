@@ -1713,55 +1713,83 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\VericoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['UQ785-M1BGV', 'KM-UQM11A'], true)) {
-            return (new Mobile\VericoFactory($this->loader))->detect($useragent, $s);
-        }
-
         if (preg_match('/RG\d{3}/', $useragent)) {
             return (new Mobile\RugGearFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('T9666-1', true)) {
+        if ($s->containsAny(['UQ785-M1BGV', 'KM-UQM11A'], false)) {
+            return (new Mobile\VericoFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('t9666-1', false)) {
             return (new Mobile\TelsdaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('N003', true)) {
+        if ($s->contains('n003', false)) {
             return (new Mobile\NeoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('AP-105', true)) {
+        if ($s->contains('ap-105', false)) {
             return (new Mobile\MitashiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('H7100', true)) {
+        if ($s->contains('h7100', false)) {
             return (new Mobile\FeitengFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['x909', 'r815', 'r8106', 'u705t', 'find7', 'a37f', 'r7f', 'r7sf', 'x9006', 'x9076', ' 1201 '], false)) {
-            return (new Mobile\OppoFactory($this->loader))->detect($useragent, $s);
-        }
+        $factoriesBeforeXiaomi = [
+            'x909' => Mobile\OppoFactory::class,
+            'r815' => Mobile\OppoFactory::class,
+            'r8106' => Mobile\OppoFactory::class,
+            'u705t' => Mobile\OppoFactory::class,
+            'find7' => Mobile\OppoFactory::class,
+            'a37f' => Mobile\OppoFactory::class,
+            'r7f' => Mobile\OppoFactory::class,
+            'r7sf' => Mobile\OppoFactory::class,
+            'x9006' => Mobile\OppoFactory::class,
+            'x9076' => Mobile\OppoFactory::class,
+            ' 1201 ' => Mobile\OppoFactory::class,
+            'xda' => Mobile\O2Factory::class,
+            'kkt20' => Mobile\LavaFactory::class,
+            'pixel v2+' => Mobile\LavaFactory::class,
+            ' x17 ' => Mobile\LavaFactory::class,
+        ];
 
-        if ($s->contains('xda', false)) {
-            return (new Mobile\O2Factory($this->loader))->detect($useragent, $s);
-        }
+        foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
+            if ($s->contains($test, false)) {
+                /* @var Factory\FactoryInterface $factory */
+                $factory = new $factoryName($this->loader);
 
-        if ($s->containsAny(['kkt20', 'pixel v2+', ' x17 '], false)) {
-            return (new Mobile\LavaFactory($this->loader))->detect($useragent, $s);
+                return $factory->detect($useragent, $s);
+            }
         }
 
         if ($s->contains('iris', false) && !$s->contains('windows', false)) {
             return (new Mobile\LavaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Pulse', 'myTouch4G', 'Ameo'], true)) {
+        if ($s->containsAny(['Pulse', 'myTouch4G', 'Ameo'], false)) {
             return (new Mobile\TmobileFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['redmi', 'note 4', '2014813', '2014011', '2015562'], false)) {
-            return (new Mobile\XiaomiFactory($this->loader))->detect($useragent, $s);
+        $factoriesBeforeXiaomi = [
+            'redmi' => Mobile\XiaomiFactory::class,
+            'note 4' => Mobile\XiaomiFactory::class,
+            '2014813' => Mobile\XiaomiFactory::class,
+            '2014011' => Mobile\XiaomiFactory::class,
+            '2015562' => Mobile\XiaomiFactory::class,
+        ];
+
+        foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
+            if ($s->contains($test, false)) {
+                /* @var Factory\FactoryInterface $factory */
+                $factory = new $factoryName($this->loader);
+
+                return $factory->detect($useragent, $s);
+            }
         }
 
-        if ($s->contains('G009', true)) {
+        if ($s->contains('G009', false)) {
             return (new Mobile\YxtelFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1769,35 +1797,15 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('PICOpad_S1', false)) {
-            return (new Mobile\AxiooFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('Adi_5S', false)) {
-            return (new Mobile\ArtelFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('Norma 2', false)) {
-            return (new Mobile\KeneksiFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('DM015K', false)) {
-            return (new Mobile\KyoceraFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('KC-S701', false)) {
-            return (new Mobile\KyoceraFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('T880G', false)) {
-            return (new Mobile\EtulineFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['studio 5.5', 'studio xl 2'], false)) {
-            return (new Mobile\BluFactory($this->loader))->detect($useragent, $s);
-        }
-
         $factoriesBeforeXiaomi = [
+            'picopad_s1' => Mobile\AxiooFactory::class,
+            'adi_5s' => Mobile\ArtelFactory::class,
+            'norma 2' => Mobile\KeneksiFactory::class,
+            'dm015k' => Mobile\KyoceraFactory::class,
+            'kc-s701' => Mobile\KyoceraFactory::class,
+            't880g' => Mobile\EtulineFactory::class,
+            'studio 5.5' => Mobile\BluFactory::class,
+            'studio xl 2' => Mobile\BluFactory::class,
             'f3_pro' => Mobile\DoogeeFactory::class,
             'y6_piano' => Mobile\DoogeeFactory::class,
             'y6 max' => Mobile\DoogeeFactory::class,
