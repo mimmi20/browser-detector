@@ -106,6 +106,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'a7000-a'                 => 'lenovo a7000-a',
         'a6020a40'                => 'lenovo a6020a40',
         'a6000'                   => 'lenovo a6000',
+        'a5500-hv'                => 'lenovo a5500-hv',
         'a5500-h'                 => 'lenovo a5500-h',
         'a5500-f'                 => 'lenovo a5500-f',
         'a5000'                   => 'lenovo a5000',
