@@ -1717,27 +1717,13 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\RugGearFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['UQ785-M1BGV', 'KM-UQM11A'], false)) {
-            return (new Mobile\VericoFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('t9666-1', false)) {
-            return (new Mobile\TelsdaFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('n003', false)) {
-            return (new Mobile\NeoFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('ap-105', false)) {
-            return (new Mobile\MitashiFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('h7100', false)) {
-            return (new Mobile\FeitengFactory($this->loader))->detect($useragent, $s);
-        }
-
         $factoriesBeforeXiaomi = [
+            'uq785-m1bgv' => Mobile\VericoFactory::class,
+            'km-uqm11a' => Mobile\VericoFactory::class,
+            't9666-1' => Mobile\TelsdaFactory::class,
+            'n003' => Mobile\NeoFactory::class,
+            'ap-105' => Mobile\MitashiFactory::class,
+            'h7100' => Mobile\FeitengFactory::class,
             'x909' => Mobile\OppoFactory::class,
             'r815' => Mobile\OppoFactory::class,
             'r8106' => Mobile\OppoFactory::class,
@@ -1768,16 +1754,16 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LavaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Pulse', 'myTouch4G', 'Ameo'], false)) {
-            return (new Mobile\TmobileFactory($this->loader))->detect($useragent, $s);
-        }
-
         $factoriesBeforeXiaomi = [
+            'pulse' => Mobile\TmobileFactory::class,
+            'mytouch4g' => Mobile\TmobileFactory::class,
+            'ameo' => Mobile\TmobileFactory::class,
             'redmi' => Mobile\XiaomiFactory::class,
             'note 4' => Mobile\XiaomiFactory::class,
             '2014813' => Mobile\XiaomiFactory::class,
             '2014011' => Mobile\XiaomiFactory::class,
             '2015562' => Mobile\XiaomiFactory::class,
+            'g009' => Mobile\YxtelFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
@@ -1787,10 +1773,6 @@ class MobileFactory implements Factory\FactoryInterface
 
                 return $factory->detect($useragent, $s);
             }
-        }
-
-        if ($s->contains('G009', false)) {
-            return (new Mobile\YxtelFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/U\d{4}/', $useragent)) {
