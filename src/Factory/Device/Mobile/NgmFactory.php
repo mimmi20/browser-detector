@@ -24,9 +24,9 @@ class NgmFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'forward_art'    => 'ngm forward art',
-        'miracle'        => 'ngm wemove miracle',
-        'dynamic racing' => 'ngm dynamic racing gp',
+        'forward_art'      => 'ngm forward art',
+        'miracle'          => 'ngm wemove miracle',
+        'dynamic racing 2' => 'ngm dynamic racing 2',
     ];
 
     /**

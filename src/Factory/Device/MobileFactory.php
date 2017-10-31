@@ -746,7 +746,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if ($s->contains('ultrafone', false)) {
-            return (new Mobile\UltrafoneFactory($this->loader))->detect($useragent, $s);
+            return (new Mobile\ZenFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('malata', false)) {
