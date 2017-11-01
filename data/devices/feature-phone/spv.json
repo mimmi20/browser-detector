@@ -5,8 +5,8 @@
     "manufacturer": "SPV",
     "brand": "SPV",
     "platform": "windows ce",
-    "type": "mobile-phone",
-    "pointingMethod": null,
+    "type": "feature-phone",
+    "pointingMethod": "stylus",
     "resolutionWidth": null,
     "resolutionHeight": null,
     "dualOrientation": false,
@@ -15,14 +15,14 @@
   "spv m700": {
     "codename": "M700",
     "marketingName": "M700",
-    "manufacturer": "SPV",
+    "manufacturer": "Htc",
     "brand": "SPV",
     "platform": "windows ce",
-    "type": "mobile-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true,
+    "type": "feature-phone",
+    "pointingMethod": "stylus",
+    "resolutionWidth": 240,
+    "resolutionHeight": 320,
+    "dualOrientation": false,
     "colors": null
   }
 }

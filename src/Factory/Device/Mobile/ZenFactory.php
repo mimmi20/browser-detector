@@ -35,7 +35,7 @@ class ZenFactory implements Factory\FactoryInterface
         'cinemax force' => 'zen cinemax force',
         'cinemax-force' => 'zen cinemax force',
         'admire sxy'    => 'zen admire sxy',
-        '303'     => 'zen ultrafone 303',
+        '303'           => 'zen ultrafone 303',
     ];
 
     /**

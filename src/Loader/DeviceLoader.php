@@ -13,6 +13,8 @@ namespace BrowserDetector\Loader;
 
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Seld\JsonLint\JsonParser;
+use Seld\JsonLint\ParsingException;
 use UaDeviceType\TypeLoader;
 use UaResult\Company\CompanyLoader;
 use UaResult\Device\Device;
@@ -113,6 +115,9 @@ class DeviceLoader implements ExtendedLoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
+     * @throws \Seld\JsonLint\ParsingException
+     * @throws \RuntimeException
+     *
      * @return void
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
@@ -122,6 +127,7 @@ class DeviceLoader implements ExtendedLoaderInterface
 
         $companyLoader = CompanyLoader::getInstance($this->cache);
         $typeLoader    = TypeLoader::getInstance();
+        $jsonParser    = new JsonParser();
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
             /* @var $file \SplFileInfo */
@@ -129,7 +135,14 @@ class DeviceLoader implements ExtendedLoaderInterface
                 continue;
             }
 
-            $devices = json_decode(file_get_contents($file->getPathname()));
+            try {
+                $devices = $jsonParser->parse(
+                    file_get_contents($file->getPathname()),
+                    JsonParser::DETECT_KEY_CONFLICTS
+                );
+            } catch (ParsingException $e) {
+                throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
+            }
 
             foreach ($devices as $deviceKey => $deviceData) {
                 $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));

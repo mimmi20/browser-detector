@@ -18,15 +18,13 @@ use Stringy\Stringy;
 /**
  * @author Thomas Müller <mimmi20@live.de>
  */
-class SiemensFactory implements Factory\FactoryInterface
+class MhorseFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'sie-s65' => 'siemens s65',
-        'sl45i'   => 'siemens sl45i',
-        'sl45'    => 'siemens sl45',
+        'sphs_on_hsdroid' => 'mhorse sphs on hsdroid',
     ];
 
     /**
@@ -58,6 +56,6 @@ class SiemensFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general siemens device', $useragent);
+        return $this->loader->load('general mhorse device', $useragent);
     }
 }
