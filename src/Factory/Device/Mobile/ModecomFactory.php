@@ -25,6 +25,7 @@ class ModecomFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'freetab 9702 hd x4'      => 'modecom freetab 9702 hd x4',
+        'freetab 9702 ips x2'     => 'modecom freetab 9702 ips x2',
         'freetab 9000 ips ic'     => 'modecom freetab 9000 ips ic',
         'freetab 8001 ips x2 3g+' => 'modecom freetab 8001 ips x2 3g+',
         'freetab 7800 ips ic'     => 'modecom freetab 7800 ips ic',

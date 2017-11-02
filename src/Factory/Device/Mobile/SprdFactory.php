@@ -24,9 +24,7 @@ class SprdFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'sphs_on_hsdroid' => 'sprd sphs on hsdroid',
-        'gt-a7100'        => 'sprd gt-a7100',
-        'b51+'            => 'sprd b51+',
+        'b51+' => 'sprd b51+',
     ];
 
     /**

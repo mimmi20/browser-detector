@@ -25,6 +25,7 @@ class WopadFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'q10s' => 'wopad q10s',
+        '7001' => 'wopad 7001',
     ];
 
     /**

@@ -37,8 +37,9 @@
     "mimmi20/browser-detector-version": "~4.0.2",
     "mimmi20/ua-browser-type": "~5.0.0",
     "mimmi20/ua-device-type": "~5.0.0",
-    "mimmi20/ua-result-company": "~3.0.1",
-    "symfony/yaml": "^3.3"
+    "mimmi20/ua-result-company": "3.0.3",
+    "symfony/yaml": "^3.3",
+    "seld/jsonlint": "^1.5"
   },
   "require-dev": {
     "phpunit/phpunit": "^6.4",

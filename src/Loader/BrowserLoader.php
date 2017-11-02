@@ -16,6 +16,8 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Seld\JsonLint\JsonParser;
+use Seld\JsonLint\ParsingException;
 use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
 use UaResult\Company\CompanyLoader;
@@ -119,14 +121,23 @@ class BrowserLoader implements ExtendedLoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
+     * @throws \Seld\JsonLint\ParsingException
+     * @throws \RuntimeException
+     *
      * @return void
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {
-        static $browsers = null;
+        $jsonParser = new JsonParser();
+        $file       = new \SplFileInfo(__DIR__ . '/../../data/browsers.json');
 
-        if (null === $browsers) {
-            $browsers = json_decode(file_get_contents(__DIR__ . '/../../data/browsers.json'));
+        try {
+            $browsers = $jsonParser->parse(
+                file_get_contents($file->getPathname()),
+                JsonParser::DETECT_KEY_CONFLICTS
+            );
+        } catch (ParsingException $e) {
+            throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
         }
 
         $companyLoader = CompanyLoader::getInstance($this->cache);

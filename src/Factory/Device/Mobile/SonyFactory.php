@@ -101,7 +101,7 @@ class SonyFactory implements Factory\FactoryInterface
         'c6802'                => 'sony c6802',
         'c6606'                => 'sony c6606',
         'c6603'                => 'sony c6603',
-        'c6602'                => 'sonyericsson c6602',
+        'c6602'                => 'sony c6602',
         'c6503'                => 'sony c6503',
         'c5502'                => 'sony c5502',
         'c5303'                => 'sony c5303',

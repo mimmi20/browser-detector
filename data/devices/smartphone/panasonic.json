@@ -1,4 +1,17 @@
 {
+  "general panasonic device": {
+    "codename": "general Panasonic Device",
+    "marketingName": "general Panasonic Device",
+    "manufacturer": "Panasonic",
+    "brand": "Panasonic",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true,
+    "colors": null
+  },
   "panasonic p55": {
     "codename": "P55",
     "marketingName": "Novo",
@@ -35,6 +48,32 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 480,
     "resolutionHeight": 854,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "panasonic dl1": {
+    "codename": "dL1",
+    "marketingName": "Eluga",
+    "manufacturer": "Panasonic",
+    "brand": "Panasonic",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "panasonic kx-prxa15": {
+    "codename": "KX-PRXA15",
+    "marketingName": "KX-PRXA15",
+    "manufacturer": "Panasonic",
+    "brand": "Panasonic",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
     "dualOrientation": true,
     "colors": null
   }

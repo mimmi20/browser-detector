@@ -27,6 +27,7 @@ class ZekiFactory implements Factory\FactoryInterface
         'tbdc1093' => 'zeki tbdc1093',
         'tbdb863'  => 'zeki tbdb863',
         'tbd1083'  => 'zeki tbd1083',
+        'tbdg773'  => 'zeki tbdg773',
     ];
 
     /**

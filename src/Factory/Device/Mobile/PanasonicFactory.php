@@ -28,6 +28,7 @@ class PanasonicFactory implements Factory\FactoryInterface
         't50'         => 'panasonic t50',
         'p55'         => 'panasonic p55',
         'dl1'         => 'panasonic dl1',
+        'kx-prxa15'   => 'panasonic kx-prxa15',
     ];
 
     /**
