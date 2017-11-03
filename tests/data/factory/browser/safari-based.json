@@ -1630,5 +1630,29 @@
     "manufacturer": "Apple Inc",
     "bits": 64,
     "type": "Browser"
+  },
+  {
+    "ua": "iCab/5.7 CFNetwork/760.6.3 Darwin/15.6.0 (x86_64)",
+    "browser": "iCab",
+    "version": "5.7.0",
+    "manufacturer": "Alexander Clauss",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; Cloudflare-AMP/1.0; +https://amp.cloudflare.com/doc/fetcher.html) AppleWebKit/534.34",
+    "browser": "Cloudflare AMP Fetcher",
+    "version": "1.0.0",
+    "manufacturer": "CloudFlare, Inc.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Iron/0.2.152.0 Safari/14871328.525",
+    "browser": "Iron",
+    "version": "0.2.152.0",
+    "manufacturer": "SRWare",
+    "bits": 32,
+    "type": "Browser"
   }
 ]

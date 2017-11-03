@@ -131,7 +131,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             return $this->loader->load('android webview', $useragent);
         }
 
-        if ($s->contains('cent', false) && !$s->contains('centos', false)) {
+        if ($s->contains('cent', false) && !$s->containsAny(['centos', 'center'], false)) {
             return $this->loader->load('cent', $useragent);
         }
 
@@ -215,6 +215,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'googlebot'          => 'googlebot',
             'origin'             => 'origin',
             'qtwebengine'        => 'qtwebengine',
+            'chromeframe'                                   => 'internet explorer with chromeframe',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

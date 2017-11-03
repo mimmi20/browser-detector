@@ -453,7 +453,7 @@
         "Version"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "another web mining tool": {
     "name": "Another Web Mining Tool",
@@ -1179,7 +1179,7 @@
         "Version"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "blackberry playbook tablet": {
     "name": "Blackberry Playbook Browser",
@@ -2101,7 +2101,7 @@
         "Chrome"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "icedragon": {
     "name": "IceDragon",
@@ -7126,7 +7126,7 @@
       "class": "\\BrowserDetector\\Version\\MicrosoftOffice",
       "search": null
     },
-    "engine": "trident"
+    "engine": null
   },
   "ms opd": {
     "name": "MS OPD",
@@ -7140,7 +7140,7 @@
         "Microsoft Office Protocol Discovery"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "office syncproc": {
     "name": "Office SyncProc",
@@ -7152,7 +7152,7 @@
       "class": "\\BrowserDetector\\Version\\MicrosoftOfficeSyncProc",
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "office upload center": {
     "name": "Office Upload Center",
@@ -7164,7 +7164,7 @@
       "class": "\\BrowserDetector\\Version\\MicrosoftOfficeUploadCenter",
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "onenote": {
     "name": "OneNote",
@@ -7176,7 +7176,7 @@
       "class": "\\BrowserDetector\\Version\\MicrosoftOneNote",
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "outlook": {
     "name": "Outlook",
@@ -7188,7 +7188,7 @@
       "class": "\\BrowserDetector\\Version\\MicrosoftOutlook",
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "powerpoint": {
     "name": "PowerPoint",
@@ -7200,7 +7200,7 @@
       "class": "\\BrowserDetector\\Version\\MicrosoftPowerPoint",
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "visio": {
     "name": "Visio",
@@ -7212,7 +7212,7 @@
       "class": "\\BrowserDetector\\Version\\MicrosoftVisio",
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "microsoft-webdav": {
     "name": "Microsoft-WebDAV",
@@ -7268,7 +7268,7 @@
       "class": "\\BrowserDetector\\Version\\MicrosoftWord",
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "midori": {
     "name": "Midori",
@@ -8199,7 +8199,7 @@
         "Version"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "nokia proxy browser": {
     "name": "Nokia Proxy Browser",
@@ -8254,7 +8254,7 @@
       "class": "\\BrowserDetector\\Version\\ObigoQ",
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "obot": {
     "name": "oBot",
@@ -8469,7 +8469,7 @@
         "OPR"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "coast": {
     "name": "Coast",
@@ -8485,7 +8485,7 @@
         "Coast"
       ]
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "opera mini": {
     "name": "Opera Mini",
@@ -8500,7 +8500,7 @@
         "Opera Mini"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "opera mobile": {
     "name": "Opera Mobile",
@@ -8518,7 +8518,7 @@
         "Opera"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "optimizer bot": {
     "name": "Optimizer Bot",
@@ -11268,7 +11268,7 @@
         "SE"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "sogou spider": {
     "name": "Sogou Spider",
@@ -16224,5 +16224,45 @@
       "search": null
     },
     "engine": "webkit"
+  },
+  "internet explorer with chromeframe": {
+    "name": "Internet Explorer with Chromeframe",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftInternetExplorer",
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "cloudflare amp fetcher": {
+    "name": "Cloudflare AMP Fetcher",
+    "manufacturer": "CloudFlare",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cloudflare\\-AMP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "simplescraper": {
+    "name": "SimpleScraper",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SimpleScraper"
+      ]
+    },
+    "engine": "unknown"
   }
 }
