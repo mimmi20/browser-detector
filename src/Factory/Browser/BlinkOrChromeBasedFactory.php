@@ -173,6 +173,9 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'kenshoo'                             => 'kenshoo',
             'bowser'                              => 'bowser',
             'asw'                                 => 'avast safezone',
+            'ucbrowser'               => 'ucbrowser',
+            'ubrowser'                => 'ucbrowser',
+            'uc browser'              => 'ucbrowser',
         ];
 
         foreach ($checkBeforeWire as $search => $key) {

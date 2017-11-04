@@ -81,7 +81,7 @@
         "ABrowse"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "acapbot": {
     "name": "acapbot",
@@ -1877,7 +1877,7 @@
         "CriOS"
       ]
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "chromium": {
     "name": "Chromium",
@@ -6715,7 +6715,7 @@
       "class": "\\BrowserDetector\\Version\\Maxthon",
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "maxthon nitro": {
     "name": "Maxthon Nitro",
@@ -6858,7 +6858,7 @@
         "Mercury3Free"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "metageneratorcrawler": {
     "name": "MetaGeneratorCrawler",
@@ -16264,5 +16264,89 @@
       ]
     },
     "engine": "unknown"
+  },
+  "idownloader": {
+    "name": "iDownloader",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iDownloader"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "cronomail": {
+    "name": "CronoMail",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "email-client",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CronoMail"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "siriviewservice": {
+    "name": "SiriViewService",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SiriViewService"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "inboxcube": {
+    "name": "Inboxcube",
+    "manufacturer": "Inboxcube",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "email-client",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Inboxcube"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "atbat": {
+    "name": "AtBat",
+    "manufacturer": "MLB",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AtBat"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "polarity": {
+    "name": "Polarity",
+    "manufacturer": "Weebly",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Polarity"
+      ]
+    },
+    "engine": null
   }
 }

@@ -361,6 +361,12 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'ipad'                    => 'mobile safari uiwebview',
             'ipod'                    => 'mobile safari uiwebview',
             'cloudflare-amp'                    => 'cloudflare amp fetcher',
+            'idownloader'                    => 'idownloader',
+            'cronomail'                    => 'cronomail',
+            'browser/'                    => 'darwin browser',
+            'siriviewservice'                    => 'siriviewservice',
+            'inboxcube'                    => 'inboxcube',
+            'atbat'                    => 'atbat',
         ];
 
         foreach ($lastBrowsers as $search => $key) {
