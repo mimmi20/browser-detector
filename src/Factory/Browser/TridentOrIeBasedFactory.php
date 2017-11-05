@@ -95,7 +95,6 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'savewealth'                                    => 'savewealth',
             'cobalt'                                        => 'cobalt',
             'qqbrowser'                                     => 'qqbrowser',
-            'chromeframe'                                   => 'internet explorer with chromeframe',
             'polarity'                                      => 'polarity',
         ];
 

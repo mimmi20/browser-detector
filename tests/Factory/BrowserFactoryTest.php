@@ -134,7 +134,7 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
                 }
 
                 if (array_key_exists($subfileTest['ua'], $tests)) {
-                    echo 'UA ', $subfileTest['ua'], ' was already added', PHP_EOL;
+                    echo 'UA "', $subfileTest['ua'], '" was already added', PHP_EOL;
 
                     continue;
                 }
