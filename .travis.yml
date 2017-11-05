@@ -73,7 +73,11 @@ jobs:
       env:
         - COMPOSER_FLAGS=""
         - TEST=phpstan
-      script: wget https://github.com/phpstan/phpstan/releases/download/0.8.5/phpstan.phar && php phpstan.phar analyse -l 7 -c phpstan.neon --autoload-file=vendor/autoload.php --memory-limit=768M --no-progress src tests
+#      script: wget https://github.com/phpstan/phpstan/releases/download/0.8.5/phpstan.phar && php phpstan.phar analyse -l 7 -c phpstan.neon --autoload-file=vendor/autoload.php --memory-limit=768M --no-progress src tests
+      install:
+        - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
+        - travis_retry composer require --update-with-dependencies --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --dev $COMPOSER_FLAGS -vv phpstan/phpstan
+      script: vendor/bin/phpstan analyse -l 7 -c phpstan.neon --autoload-file=vendor/autoload.php --memory-limit=768M --no-progress src tests
 
 notifications:
   email: false
