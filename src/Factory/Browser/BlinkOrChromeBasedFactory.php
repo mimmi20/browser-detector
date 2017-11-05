@@ -173,9 +173,9 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'kenshoo'                             => 'kenshoo',
             'bowser'                              => 'bowser',
             'asw'                                 => 'avast safezone',
-            'ucbrowser'               => 'ucbrowser',
-            'ubrowser'                => 'ucbrowser',
-            'uc browser'              => 'ucbrowser',
+            'ucbrowser'                           => 'ucbrowser',
+            'ubrowser'                            => 'ucbrowser',
+            'uc browser'                          => 'ucbrowser',
         ];
 
         foreach ($checkBeforeWire as $search => $key) {
@@ -218,7 +218,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'googlebot'          => 'googlebot',
             'origin'             => 'origin',
             'qtwebengine'        => 'qtwebengine',
-            'chromeframe'                                   => 'internet explorer with chromeframe',
+            'chromeframe'        => 'internet explorer with chromeframe',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

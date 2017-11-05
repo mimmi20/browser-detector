@@ -64,10 +64,9 @@ class GenericBrowserFactory implements FactoryInterface
         }
 
         $checkBeforeMosbookmarks = [
-            'ucbrowser'               => 'ucbrowser',
-            'uc browser'              => 'ucbrowser',
-            'ucweb'                   => 'ucbrowser',
-            'nokia'         => 'nokiabrowser',
+            'ucbrowser'                           => 'ucbrowser',
+            'uc browser'                          => 'ucbrowser',
+            'ucweb'                               => 'ucbrowser',
             'ic opengraph crawler'                => 'ibm connections',
             'icab'                                => 'icab',
             'hggh phantomjs screenshoter'         => 'hggh screenshot system with phantomjs',
@@ -131,6 +130,7 @@ class GenericBrowserFactory implements FactoryInterface
             'windows phone search'                => 'windows phone search',
             'windows-update-agent'                => 'windows-update-agent',
             'classilla'                           => 'classilla',
+            'nokia'                               => 'nokiabrowser',
             'twitterbot'                          => 'twitterbot',
             'quicktime'                           => 'quicktime',
             'mailchimp'                           => 'mailchimp.com',

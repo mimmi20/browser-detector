@@ -96,7 +96,7 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'cobalt'                                        => 'cobalt',
             'qqbrowser'                                     => 'qqbrowser',
             'chromeframe'                                   => 'internet explorer with chromeframe',
-            'polarity'                                   => 'polarity',
+            'polarity'                                      => 'polarity',
         ];
 
         foreach ($lastBrowsers as $search => $key) {
