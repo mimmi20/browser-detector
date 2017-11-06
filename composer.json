@@ -37,7 +37,7 @@
     "mimmi20/browser-detector-version": "~4.0.2",
     "mimmi20/ua-browser-type": "~5.0.0",
     "mimmi20/ua-device-type": "~5.0.0",
-    "mimmi20/ua-result-company": "3.0.3",
+    "mimmi20/ua-result-company": "3.0.4",
     "symfony/yaml": "^3.3",
     "seld/jsonlint": "^1.5"
   },
@@ -46,7 +46,7 @@
     "monolog/monolog": "^1.23",
     "symfony/cache": "^3.3",
     "squizlabs/php_codesniffer": "^3.1",
-    "friendsofphp/php-cs-fixer": "^2.7",
+    "friendsofphp/php-cs-fixer": "2.7.1",
     "phpstan/phpstan": "^0.8.5"
   },
   "autoload": {

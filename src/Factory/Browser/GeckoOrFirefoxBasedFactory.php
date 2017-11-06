@@ -103,6 +103,7 @@ class GeckoOrFirefoxBasedFactory implements FactoryInterface
             'tob'                                           => 't-online browser',
             'webmoney advisor'                              => 'webmoney advisor',
             'wayback save page'                             => 'wayback archive bot',
+            'caremedicom'                                   => 'caremedicom',
             'firefox'                                       => 'firefox',
             'minefield'                                     => 'firefox',
             'shiretoko'                                     => 'firefox',

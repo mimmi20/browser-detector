@@ -62,6 +62,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'ucweb'                   => 'ucbrowser',
             'coast'                   => 'coast',
             'icabmobile'              => 'icab mobile',
+            'icab'                    => 'icab',
             'phantomjs'               => 'phantomjs',
             'fban/messenger'          => 'facebook messenger app',
             'fbav'                    => 'facebook app',
@@ -145,6 +146,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'listia'                      => 'listia',
             'aldiko'                      => 'aldiko',
             'acheetahi'                   => 'cm browser',
+            'iron'                        => 'iron',
         ];
 
         foreach ($checkBeforeAndroidWebkit as $search => $key) {
@@ -358,6 +360,13 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'iphone'                  => 'mobile safari uiwebview',
             'ipad'                    => 'mobile safari uiwebview',
             'ipod'                    => 'mobile safari uiwebview',
+            'cloudflare-amp'          => 'cloudflare amp fetcher',
+            'idownloader'             => 'idownloader',
+            'cronomail'               => 'cronomail',
+            'browser/'                => 'darwin browser',
+            'siriviewservice'         => 'siriviewservice',
+            'inboxcube'               => 'inboxcube',
+            'atbat'                   => 'atbat',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

@@ -95,6 +95,7 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'savewealth'                                    => 'savewealth',
             'cobalt'                                        => 'cobalt',
             'qqbrowser'                                     => 'qqbrowser',
+            'polarity'                                      => 'polarity',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

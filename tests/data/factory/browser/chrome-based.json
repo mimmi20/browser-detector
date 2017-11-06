@@ -822,5 +822,21 @@
     "manufacturer": "Google Inc",
     "bits": 32,
     "type": "Application"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; chromeframe/28.0.1500.72)",
+    "browser": "Internet Explorer with Chromeframe",
+    "version": "9.0.0",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 UBrowser/4.0.4627.2 Safari/537.36",
+    "browser": "UC Browser",
+    "version": "4.0.4627.2",
+    "manufacturer": "UCWeb Inc.",
+    "bits": 32,
+    "type": "Browser"
   }
 ]

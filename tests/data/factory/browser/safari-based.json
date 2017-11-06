@@ -1630,5 +1630,85 @@
     "manufacturer": "Apple Inc",
     "bits": 64,
     "type": "Browser"
+  },
+  {
+    "ua": "iCab/5.7 CFNetwork/760.6.3 Darwin/15.6.0 (x86_64)",
+    "browser": "iCab",
+    "version": "5.7.0",
+    "manufacturer": "Alexander Clauss",
+    "bits": 64,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (compatible; Cloudflare-AMP/1.0; +https://amp.cloudflare.com/doc/fetcher.html) AppleWebKit/534.34",
+    "browser": "Cloudflare AMP Fetcher",
+    "version": "1.0.0",
+    "manufacturer": "CloudFlare, Inc.",
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Iron/0.2.152.0 Safari/14871328.525",
+    "browser": "Iron",
+    "version": "0.2.152.0",
+    "manufacturer": "SRWare",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "iDownloader/1.3 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "iDownloader",
+    "version": "1.3.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "MxBrowser-iPhone/36 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "Maxthon",
+    "version": "36.0.0",
+    "manufacturer": "Maxthon International Limited",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "CronoMail/2.6.5 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "CronoMail",
+    "version": "2.6.5",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "browser/38704 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "Darwin Browser",
+    "version": "0.0.0",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "SiriViewService/1.0 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "SiriViewService",
+    "version": "1.0.0",
+    "manufacturer": "Apple Inc",
+    "bits": 32,
+    "type": "Application"
+  },
+  {
+    "ua": "Inboxcube/2.2.7 CFNetwork/711.1.16 Darwin/14.0.0",
+    "browser": "Inboxcube",
+    "version": "2.2.7",
+    "manufacturer": "Inboxcube Inc.",
+    "bits": 32,
+    "type": "Email Client"
+  },
+  {
+    "ua": "AtBat.Full/878 CFNetwork/548.0.4 Darwin/11.0.0",
+    "browser": "AtBat",
+    "version": "0.0.0",
+    "manufacturer": "MLB Advanced Media, LP",
+    "bits": 32,
+    "type": "Application"
   }
 ]
