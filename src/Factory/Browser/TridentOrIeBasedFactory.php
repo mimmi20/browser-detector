@@ -67,6 +67,7 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'xblwp7'                                        => 'iemobile',
             'bingpreview'                                   => 'bing preview',
             'haosouspider'                                  => 'haosouspider',
+            'windows-rss-platform'                          => 'windows-rss-platform',
             'outlook-express'                               => 'outlook-express',
             'outlook'                                       => 'outlook',
             'msoffice'                                      => 'office',
@@ -96,6 +97,7 @@ class TridentOrIeBasedFactory implements FactoryInterface
             'cobalt'                                        => 'cobalt',
             'qqbrowser'                                     => 'qqbrowser',
             'polarity'                                      => 'polarity',
+            'bidubrowser'                                   => 'baidu browser',
         ];
 
         foreach ($lastBrowsers as $search => $key) {

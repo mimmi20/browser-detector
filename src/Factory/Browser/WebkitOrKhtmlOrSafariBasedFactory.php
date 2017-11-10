@@ -56,6 +56,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'bdbrowser'               => 'baidu browser',
             'opera mini'              => 'opera mini',
             'opios'                   => 'opera mini',
+            'bidubrowser'             => 'baidu browser',
             'ucbrowser'               => 'ucbrowser',
             'ubrowser'                => 'ucbrowser',
             'uc browser'              => 'ucbrowser',
@@ -67,6 +68,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'fban/messenger'          => 'facebook messenger app',
             'fbav'                    => 'facebook app',
             'silk'                    => 'silk',
+            'flipboard'               => 'flipboard app',
             'navermatome'             => 'matome',
             'netfrontlifebrowser'     => 'netfrontlifebrowser',
             'chedot'                  => 'chedot',
@@ -77,6 +79,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'superbird'               => 'superbird',
             'micromessenger'          => 'wechat app',
             'qqbrowser'               => 'qqbrowser',
+            'pinterestbot'            => 'pinterest bot',
             'pinterest'               => 'pinterest app',
             'baiduboxapp'             => 'baidu box app',
             'miuibrowser'             => 'miui browser',
@@ -84,6 +87,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'gsa'                     => 'google app',
             '1passwordthumbs'         => '1passwordthumbs',
             '1password'               => '1password',
+            'alohabrowser'            => 'aloha-browser',
             'bingweb'                 => 'bingweb',
             'klar/'                   => 'firefox klar',
             'com.apple.mobilenotes'   => 'apple mobilenotes',
@@ -131,12 +135,14 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'schoolwires'                 => 'schoolwires app',
             'qupzilla'                    => 'qupzilla',
             'domain.com'                  => 'pagepeeker screenshot maker',
+            'coc_coc_browser'             => 'coc_coc_browser',
             'crios'                       => 'chrome for ios',
             'dolfin'                      => 'dolfin',
             'dolphin'                     => 'dolfin',
             'arora'                       => 'arora',
             'com.douban.group'            => 'douban app',
             'com.apple.Notes'             => 'apple notes app',
+            'ibrowser/mini'               => 'ibrowser mini',
             'ibrowser'                    => 'ibrowser',
             'onebrowser'                  => 'onebrowser',
             'http://www.baidu.com/search' => 'baidu mobile search',
@@ -145,8 +151,13 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'ninesky'                     => 'ninesky-browser',
             'listia'                      => 'listia',
             'aldiko'                      => 'aldiko',
+            'opr'                         => 'opera',
+            'yabrowser'                   => 'yabrowser',
             'acheetahi'                   => 'cm browser',
             'iron'                        => 'iron',
+            'outlook'                     => 'outlook',
+            'newb'                        => 'newb',
+            'chromium'                    => 'chromium',
         ];
 
         foreach ($checkBeforeAndroidWebkit as $search => $key) {
@@ -168,13 +179,15 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
         }
 
         $checkBeforeQt = [
-            'webos'         => 'webkit/webos',
-            'wosbrowser'    => 'webkit/webos',
-            'wossystem'     => 'webkit/webos',
-            'omniweb'       => 'omniweb',
-            'nokia'         => 'nokiabrowser',
-            'twitter for i' => 'twitter app',
-            'qtcarbrowser'  => 'model s browser',
+            'webos'                  => 'webkit/webos',
+            'wosbrowser'             => 'webkit/webos',
+            'wossystem'              => 'webkit/webos',
+            'omniweb'                => 'omniweb',
+            'nokia'                  => 'nokiabrowser',
+            'twitter for i'          => 'twitter app',
+            'qtcarbrowser'           => 'model s browser',
+            'qtweb internet browser' => 'qtweb internet browser',
+            'boxee'                  => 'boxee',
         ];
 
         foreach ($checkBeforeQt as $search => $key) {
@@ -201,6 +214,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'dataaccessd'           => 'ios dataaccessd',
             'hotmailbuzzr'          => 'hotmailbuzzr',
             'mailbuzzr%20hotmail'   => 'hotmailbuzzr',
+            'mailbar'               => 'mailbar',
         ];
 
         foreach ($checkBeforeAppleMail as $search => $key) {
@@ -256,6 +270,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'salesforce1'                     => 'salesforce app',
             'salesforcetouchcontainer'        => 'salesforce app',
             'mediapartners-google'            => 'adsense bot',
+            'appengine-google'                => 'google app engine',
             'diigobrowser'                    => 'diigo browser',
             'kontact'                         => 'kontact',
             'fxios'                           => 'firefox for ios',
@@ -294,6 +309,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'twcan/sportsnet' => 'twc sportsnet',
             'adobeair'        => 'adobe air',
             'itunes'          => 'itunes',
+            'ddg-ios-'        => 'duckduck app',
         ];
 
         foreach ($checkBeforeSafariUiwebview as $search => $key) {
@@ -367,6 +383,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'siriviewservice'         => 'siriviewservice',
             'inboxcube'               => 'inboxcube',
             'atbat'                   => 'atbat',
+            'android'                 => 'android webkit',
         ];
 
         foreach ($lastBrowsers as $search => $key) {
