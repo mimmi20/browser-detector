@@ -48,9 +48,10 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
     public function detect(string $useragent, Stringy $s, ?OsInterface $platform = null): array
     {
         $checkBeforeOpera = [
-            'bdbrowserhd' => 'baidu browser hd',
-            'bdbrowser'   => 'baidu browser',
-            'opera mobi'  => 'opera mobile',
+            'baidubrowser' => 'baidu browser',
+            'bdbrowserhd'  => 'baidu browser hd',
+            'bdbrowser'    => 'baidu browser',
+            'opera mobi'   => 'opera mobile',
         ];
 
         foreach ($checkBeforeOpera as $search => $key) {
@@ -100,8 +101,11 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'apusbrowser'    => 'apusbrowser',
             'iridium'        => 'iridium browser',
             'mxnitro'        => 'maxthon nitro',
+            'maxthon'        => 'maxthon',
             'mxbrowser'      => 'maxthon',
+            'micromessenger' => 'wechat app',
             'qqbrowser'      => 'qqbrowser',
+            'pinterestbot'   => 'pinterest bot',
             'pinterest'      => 'pinterest app',
             'wkbrowser'      => 'wkbrowser',
             'mb2345browser'  => '2345 browser',
@@ -119,6 +123,11 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'fban/messenger' => 'facebook messenger app',
             'fbav'           => 'facebook app',
             'gsa'            => 'google app',
+            'bidubrowser'    => 'baidu browser',
+            'ucbrowser'      => 'ucbrowser',
+            'ubrowser'       => 'ucbrowser',
+            'uc browser'     => 'ucbrowser',
+            'baiduboxapp'    => 'baidu box app',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
@@ -139,6 +148,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'haosouspider'                        => 'haosouspider',
             '360se'                               => '360 secure browser',
             '360ee'                               => '360 speed browser',
+            'theworld'                            => 'theworld',
             'ptst'                                => 'webpagetest',
             'chromium'                            => 'chromium',
             'iron'                                => 'iron',
@@ -156,7 +166,9 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'kuaiso'                              => 'kuaiso browser',
             'moatbot'                             => 'moatbot',
             'infegy'                              => 'infegy bot',
+            'appengine-google'                    => 'google app engine',
             'google keyword suggestion'           => 'google keyword suggestion',
+            'google web preview analytics'        => 'google web preview analytics',
             'google web preview'                  => 'google web preview',
             'google-adwords-displayads-webrender' => 'google adwords displayads webrender',
             'hubspot marketing grader'            => 'hubspot marketing grader',
@@ -172,10 +184,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'coolnovo'                            => 'coolnovo',
             'kenshoo'                             => 'kenshoo',
             'bowser'                              => 'bowser',
-            'asw'                                 => 'avast safezone',
-            'ucbrowser'                           => 'ucbrowser',
-            'ubrowser'                            => 'ucbrowser',
-            'uc browser'                          => 'ucbrowser',
+            'asw/'                                => 'avast safezone',
         ];
 
         foreach ($checkBeforeWire as $search => $key) {
@@ -218,6 +227,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'googlebot'          => 'googlebot',
             'origin'             => 'origin',
             'qtwebengine'        => 'qtwebengine',
+            'chrome/'            => 'chrome',
             'chromeframe'        => 'internet explorer with chromeframe',
         ];
 

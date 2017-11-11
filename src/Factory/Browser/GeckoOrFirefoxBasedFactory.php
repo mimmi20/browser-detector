@@ -47,10 +47,6 @@ class GeckoOrFirefoxBasedFactory implements FactoryInterface
      */
     public function detect(string $useragent, Stringy $s, ?OsInterface $platform = null): array
     {
-        if ($s->containsAll(['firefox', 'anonym'], false)) {
-            return $this->loader->load('firefox', $useragent);
-        }
-
         $lastBrowsers = [
             'flipboardproxy'                                => 'flipboardproxy',
             'icedragon'                                     => 'icedragon',
@@ -58,6 +54,7 @@ class GeckoOrFirefoxBasedFactory implements FactoryInterface
             'rebelmouse'                                    => 'rebelmouse',
             'seamonkey'                                     => 'seamonkey',
             'jobboerse'                                     => 'jobboerse bot',
+            'netscape'                                      => 'netscape',
             'navigator'                                     => 'netscape navigator',
             'dt-browser'                                    => 'dt-browser',
             '360spider'                                     => '360spider',
@@ -104,6 +101,8 @@ class GeckoOrFirefoxBasedFactory implements FactoryInterface
             'webmoney advisor'                              => 'webmoney advisor',
             'wayback save page'                             => 'wayback archive bot',
             'caremedicom'                                   => 'caremedicom',
+            'puffin'                                        => 'puffin',
+            'omniweb'                                       => 'omniweb',
             'firefox'                                       => 'firefox',
             'minefield'                                     => 'firefox',
             'shiretoko'                                     => 'firefox',

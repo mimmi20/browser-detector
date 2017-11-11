@@ -920,7 +920,9 @@
       "class": "VersionFactory",
       "search": [
         "bdbrowser_i18n",
-        "bdbrowser"
+        "bdbrowser",
+        "baidubrowser",
+        "BIDUBrowser"
       ]
     },
     "engine": null
@@ -1474,7 +1476,7 @@
         "boxee"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "brokenlinkcheck": {
     "name": "BrokenLinkCheck",
@@ -2911,7 +2913,7 @@
         "DDG\\-Android\\-"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "duckduck favicons bot": {
     "name": "DuckDuck Favicons Bot",
@@ -4200,7 +4202,7 @@
       "class": null,
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "googlebot": {
     "name": "Google Bot",
@@ -4478,7 +4480,21 @@
         "Google Web Preview"
       ]
     },
-    "engine": "unknown"
+    "engine": null
+  },
+  "google web preview analytics": {
+    "name": "Google Web Preview Analytics",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot-trancoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google Web Preview Analytics"
+      ]
+    },
+    "engine": null
   },
   "google web snippet": {
     "name": "Google Web Snippet",
@@ -4962,6 +4978,20 @@
       ]
     },
     "engine": "webkit"
+  },
+  "ibrowser mini": {
+    "name": "iBrowser Mini",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iBrowser\\/Mini"
+      ]
+    },
+    "engine": null
   },
   "ibuilder": {
     "name": "iBuilder",
@@ -6111,7 +6141,7 @@
         "LBBROWSER"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "lightspeed systems crawler": {
     "name": "Lightspeed Systems Crawler",
@@ -6520,7 +6550,7 @@
         "iLunascape"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "lynx": {
     "name": "Lynx",
@@ -7822,7 +7852,7 @@
         "NF3"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "netfrontlifebrowser": {
     "name": "NetFrontLifeBrowser",
@@ -8298,7 +8328,7 @@
         "OmniWeb"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "onebrowser": {
     "name": "OneBrowser",
@@ -8464,9 +8494,9 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "OPR",
         "Version",
-        "Opera",
-        "OPR"
+        "Opera"
       ]
     },
     "engine": null
@@ -9043,7 +9073,7 @@
         "Pinterest"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "piplbot": {
     "name": "PiplBot",
@@ -12558,7 +12588,7 @@
       "class": null,
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "twitterbot": {
     "name": "Twitterbot",
@@ -13699,7 +13729,7 @@
         "MicroMessenger"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "wepbot": {
     "name": "Wepbot",
@@ -14986,7 +15016,7 @@
       "class": null,
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "webpagetest": {
     "name": "WebPagetest",
@@ -14998,7 +15028,7 @@
       "class": null,
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "apple notes app": {
     "name": "Notes App",
@@ -15261,7 +15291,7 @@
         "Basecamp3"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "unibox": {
     "name": "Unibox",
@@ -15571,7 +15601,7 @@
       "class": null,
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "orbiter": {
     "name": "Orbiter Bot",
@@ -15597,7 +15627,7 @@
       "class": null,
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "webmoney advisor": {
     "name": "WebMoney Advisor",
@@ -15817,7 +15847,7 @@
         "Pinterestbot"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "moatbot": {
     "name": "moatbot",
@@ -16362,5 +16392,19 @@
       ]
     },
     "engine": "gecko"
+  },
+  "newb": {
+    "name": "NewB",
+    "manufacturer": "Philips",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NewB"
+      ]
+    },
+    "engine": "webkit"
   }
 }

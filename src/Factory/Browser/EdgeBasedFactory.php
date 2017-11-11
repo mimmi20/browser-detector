@@ -47,6 +47,18 @@ class EdgeBasedFactory implements FactoryInterface
      */
     public function detect(string $useragent, Stringy $s, ?OsInterface $platform = null): array
     {
+        $browsers = [
+            'qqbrowser'       => 'qqbrowser',
+            'coc_coc_browser' => 'coc_coc_browser',
+            'bingpreview'     => 'bing preview',
+        ];
+
+        foreach ($browsers as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         if ($s->contains('edge', false) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
             return $this->loader->load('edge mobile', $useragent);
         }

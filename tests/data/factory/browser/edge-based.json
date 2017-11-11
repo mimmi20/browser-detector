@@ -30,5 +30,29 @@
     "manufacturer": "Microsoft Corporation",
     "bits": 32,
     "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.11067 BingPreview/1.0b",
+    "browser": "Bing Preview",
+    "version": "1.0.0-beta",
+    "manufacturer": "Microsoft Corporation",
+    "bits": 64,
+    "type": "Bot/Crawler"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10565 QQBrowser/8.2.3638.400",
+    "browser": "QQ Browser",
+    "version": "8.2.3638.400",
+    "manufacturer": "Tencent Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; WebView/3.0) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/58.109.136 Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586",
+    "browser": "Coc Coc Browser",
+    "version": "58.109.136",
+    "manufacturer": "Coc Coc Company Limited",
+    "bits": 32,
+    "type": "Browser"
   }
 ]
