@@ -78,6 +78,7 @@ class AsusFactory implements Factory\FactoryInterface
         'me302kl'           => 'asus me302kl',
         'me371mg'           => 'asus me371mg',
         'p1801-t'           => 'asus p1801-t',
+        'tx201la'           => 'asus tx201la',
         't00j'              => 'asus t00j',
         't00n'              => 'asus t00n',
         't00q'              => 'asus t00q',

@@ -235,7 +235,7 @@
     "ua": "Mozilla/5.0 (iPad; CPU OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12F69 [Pinterest/iOS]",
     "browser": "Pinterest App",
     "version": "0.0.0",
-    "manufacturer": "Ericsson Research",
+    "manufacturer": "Pinterest Inc.",
     "bits": 32,
     "type": "Application"
   },
@@ -1753,7 +1753,7 @@
   },
   {
     "ua": "Mozilla/5.0 (Linux; U; Android 4.1.2; GT-N7000 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 OPR/24.0.2254.115367",
-    "browser": "Opera",
+    "browser": "Opera Mobile",
     "version": "24.0.2254.115367",
     "manufacturer": "Opera Software ASA",
     "bits": 32,
@@ -1820,6 +1820,30 @@
     "browser": "Boxee",
     "version": "1.0.1",
     "manufacturer": "Boxee Inc",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "Surf/0.4.1 (X11; U; Unix; en-US) AppleWebKit/531.2+ Compatible (Safari)",
+    "browser": "SurfBrowser",
+    "version": "0.4.1",
+    "manufacturer": null,
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "ozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117",
+    "browser": "QQ Browser",
+    "version": "6.5.3.410",
+    "manufacturer": "Tencent Ltd.",
+    "bits": 32,
+    "type": "Browser"
+  },
+  {
+    "ua": "MavenPlus/5.9.2 CFNetwork/758.2.8 Darwin/15.0.0",
+    "browser": "MavenPlus",
+    "version": "5.9.2",
+    "manufacturer": "Gihyun Jung",
     "bits": 32,
     "type": "Browser"
   }

@@ -34,6 +34,7 @@ class CubotFactory implements Factory\FactoryInterface
         'x12'       => 'cubot x12',
         's600'      => 'cubot s600',
         's550'      => 'cubot s550',
+        's308'      => 'cubot s308',
         's208'      => 'cubot s208',
         'p9'        => 'cubot p9',
         'gt99'      => 'cubot gt99',

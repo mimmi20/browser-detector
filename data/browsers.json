@@ -6723,10 +6723,10 @@
   },
   "maven": {
     "name": "Maven",
-    "manufacturer": "Unknown",
+    "manufacturer": "Gihyun Jung",
     "pdfSupport": true,
     "rssSupport": false,
-    "type": "bot",
+    "type": "browser",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -9063,7 +9063,7 @@
   },
   "pinterest app": {
     "name": "Pinterest App",
-    "manufacturer": "EricssonResearch",
+    "manufacturer": "Pinterest",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "application",
@@ -9516,7 +9516,8 @@
       "class": "VersionFactory",
       "search": [
         "MQQBrowser",
-        "QQBrowser"
+        "QQBrowser",
+        " QQ\\/"
       ]
     },
     "engine": null
@@ -15837,7 +15838,7 @@
   },
   "pinterest bot": {
     "name": "Pinterest Bot",
-    "manufacturer": "EricssonResearch",
+    "manufacturer": "Pinterest",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "bot",
@@ -15861,7 +15862,7 @@
         "moatbot"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "infegy bot": {
     "name": "Infegy Bot",
@@ -15873,7 +15874,7 @@
       "class": null,
       "search": null
     },
-    "engine": "unknown"
+    "engine": null
   },
   "yandexsearch": {
     "name": "Yandex Search App",
@@ -15993,7 +15994,7 @@
         "Nightingale"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "aldiko": {
     "name": "Aldiko",
@@ -16007,7 +16008,7 @@
         "Aldiko"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "vorboss web crawler": {
     "name": "Vorboss Web Crawler",
@@ -16403,6 +16404,20 @@
       "class": "VersionFactory",
       "search": [
         "NewB"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "mavenplus": {
+    "name": "MavenPlus",
+    "manufacturer": "Gihyun Jung",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MavenPlus"
       ]
     },
     "engine": "webkit"

@@ -893,7 +893,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LenovoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['S208', 'S550', 'S600', 'Z100 Pro'], true)) {
+        if ($s->containsAny(['S208', 'S550', 'S600', 'Z100 Pro', 'S308'], true)) {
             return (new Mobile\CubotFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1121,7 +1121,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AsusFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['padfone', 'transformer', 'slider sl101', 'eee_701', 'tpad_10'], false)) {
+        if ($s->containsAny(['padfone', 'transformer', 'slider sl101', 'eee_701', 'tpad_10', 'tx201la'], false)) {
             return (new Mobile\AsusFactory($this->loader))->detect($useragent, $s);
         }
 
