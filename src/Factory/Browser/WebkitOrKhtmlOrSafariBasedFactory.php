@@ -127,7 +127,14 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             return $this->loader->load('internet explorer', $useragent);
         }
 
+        if ($s->containsAny(['opera', 'opr'], false)
+            && $s->containsAny(['android', 'mtk', 'maui', 'samsung', 'windows ce', 'symbos'], false)
+        ) {
+            return $this->loader->load('opera mobile', $useragent);
+        }
+
         $checkBeforeAndroidWebkit = [
+            'opr'                         => 'opera',
             'midori'                      => 'midori',
             'com.google.googleplus'       => 'google+ app',
             'googlebot'                   => 'googlebot',
@@ -151,13 +158,14 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'ninesky'                     => 'ninesky-browser',
             'listia'                      => 'listia',
             'aldiko'                      => 'aldiko',
-            'opr'                         => 'opera',
             'yabrowser'                   => 'yabrowser',
             'acheetahi'                   => 'cm browser',
             'iron'                        => 'iron',
             'outlook'                     => 'outlook',
             'newb'                        => 'newb',
             'chromium'                    => 'chromium',
+            'surfbrowser'                 => 'surfbrowser',
+            'surf/'                       => 'surfbrowser',
         ];
 
         foreach ($checkBeforeAndroidWebkit as $search => $key) {
@@ -352,6 +360,8 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'espial'                  => 'espial tv browser',
             'sitecon'                 => 'sitecon',
             'ibooks author'           => 'ibooks author',
+            ' qq/'                    => 'qqbrowser',
+            'uiwebview'               => 'mobile safari uiwebview',
             'iweb'                    => 'iweb',
             'newsfire'                => 'newsfire',
             'rmsnapkit'               => 'rmsnapkit',
@@ -383,6 +393,8 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'siriviewservice'         => 'siriviewservice',
             'inboxcube'               => 'inboxcube',
             'atbat'                   => 'atbat',
+            'mavenplus'               => 'mavenplus',
+            'maven'                   => 'maven',
             'android'                 => 'android webkit',
         ];
 

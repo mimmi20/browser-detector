@@ -34,7 +34,7 @@ install:
 
 script:
   - composer validate
-#  - vendor/bin/phpunit --printer 'ScriptFUSION\PHPUnitImmediateExceptionPrinter\ImmediateExceptionPrinter' --colors --no-coverage
+#  - vendor/bin/phpunit --colors --no-coverage
   - wget https://phar.phpunit.de/phpunit-6.4.3.phar && php phpunit-6.4.3.phar --colors --no-coverage
 
 jobs:
