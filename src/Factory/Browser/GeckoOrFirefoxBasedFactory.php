@@ -103,6 +103,7 @@ class GeckoOrFirefoxBasedFactory implements FactoryInterface
             'caremedicom'                                   => 'caremedicom',
             'puffin'                                        => 'puffin',
             'omniweb'                                       => 'omniweb',
+            'flock'                                         => 'flock',
             'firefox'                                       => 'firefox',
             'minefield'                                     => 'firefox',
             'shiretoko'                                     => 'firefox',

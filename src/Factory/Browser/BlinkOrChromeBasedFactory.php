@@ -68,6 +68,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
 
         $checkBeforeComodoDragon = [
             'opr'             => 'opera',
+            'midori'          => 'midori',
             'yabrowser'       => 'yabrowser',
             'kamelio'         => 'kamelio app',
             'acheetahi'       => 'cm browser',
@@ -83,6 +84,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'seznam.cz'       => 'seznam browser',
             'sznprohlizec'    => 'seznam browser',
             'aviator'         => 'aviator',
+            'sleipnir'        => 'sleipnir',
         ];
 
         foreach ($checkBeforeComodoDragon as $search => $key) {

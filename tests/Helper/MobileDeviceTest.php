@@ -93,6 +93,7 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
             ['Mozilla/5.0 (Windows NT 6.3; ARM; Trident/7.0; Touch; rv:11.0) like Gecko'],
             ['Mozilla/5.0 (Windows NT; U; en) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Iris/1.1.7 Safari/525.20'],
             ['Opera/9.80 (Windows Mobile; Opera Mini/5.1.21595/37.6334; U; de) Presto/2.12.423 Version/12.16'],
+            ['Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5'],
         ];
     }
 
@@ -156,6 +157,7 @@ class MobileDeviceTest extends \PHPUnit\Framework\TestCase
             ['QuickTime\\\\xaa.7.0.4 (qtver=7.0.4;cpu=PPC;os=Mac 10.3.9)'],
             ['Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV140;0001;0001) KD49X8505B; CC/DEU) Presto/2.12.407 Version/12.50'],
             ['Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.22.74257'],
+            ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.1) Gecko/20110318 Firefox/4.0b13pre Fennec/4.0'],
         ];
     }
 }

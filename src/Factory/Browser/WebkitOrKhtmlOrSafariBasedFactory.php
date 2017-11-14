@@ -147,6 +147,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'dolfin'                      => 'dolfin',
             'dolphin'                     => 'dolfin',
             'arora'                       => 'arora',
+            'lunascape'                   => 'lunascape',
             'com.douban.group'            => 'douban app',
             'com.apple.Notes'             => 'apple notes app',
             'ibrowser/mini'               => 'ibrowser mini',
