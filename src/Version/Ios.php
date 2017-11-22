@@ -11,6 +11,8 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
+use peterkahl\iOSbuild\iOSbuild;
+
 /**
  * @author Thomas Müller <mimmi20@live.de>
  */
@@ -29,6 +31,20 @@ class Ios implements VersionCacheFactoryInterface
 
         if ($doMatch) {
             return VersionFactory::set('1.0');
+        }
+
+        if (false !== stripos($useragent, 'mobile/')) {
+            $matches = [];
+
+            $doMatch = preg_match('/mobile\/((\d+)([A-Z])(\d+)([a-z])?)/i', $useragent, $matches);
+
+            if ($doMatch && isset($matches[1])) {
+                $buildVersion = iOSbuild::getVersion($matches[1]);
+
+                if (false !== $buildVersion) {
+                    return VersionFactory::set($buildVersion);
+                }
+            }
         }
 
         $searches = [
