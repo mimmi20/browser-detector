@@ -14,6 +14,7 @@ namespace BrowserDetectorTest\Factory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\PlatformLoader;
+use Psr\Log\NullLogger;
 use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
@@ -38,7 +39,8 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $loader       = new PlatformLoader($cache);
+        $logger       = new NullLogger();
+        $loader       = new PlatformLoader($cache, $logger);
         $this->object = new PlatformFactory($loader);
     }
 

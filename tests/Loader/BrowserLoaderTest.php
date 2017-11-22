@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\BrowserLoader;
+use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
@@ -27,6 +28,11 @@ class BrowserLoaderTest extends \PHPUnit\Framework\TestCase
     private $object;
 
     /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
@@ -35,7 +41,8 @@ class BrowserLoaderTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $this->object = new BrowserLoader($cache);
+        $logger       = new NullLogger();
+        $this->object = new BrowserLoader($cache, $logger);
     }
 
     /**

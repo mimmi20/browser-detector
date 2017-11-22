@@ -16,6 +16,7 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use UaBrowserType\TypeLoader;
@@ -35,13 +36,22 @@ class BrowserLoader implements ExtendedLoaderInterface
     private $cache;
 
     /**
+     * an logger instance
+     *
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @param \Psr\Log\LoggerInterface          $logger
      *
      * @return self
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    public function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->logger = $logger;
     }
 
     /**
@@ -100,7 +110,7 @@ class BrowserLoader implements ExtendedLoaderInterface
             $version = VersionFactory::detectVersion($useragent, $browser->version->search);
         } else {
             /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $browserVersionClass();
+            $versionClass = new $browserVersionClass($this->logger);
             $version      = $versionClass->detectVersion($useragent);
         }
 
@@ -108,7 +118,7 @@ class BrowserLoader implements ExtendedLoaderInterface
         $engineKey = $browser->engine;
 
         if (null !== $engineKey) {
-            $engine = (new EngineLoader($this->cache))->load($engineKey, $useragent);
+            $engine = (new EngineLoader($this->cache, $this->logger))->load($engineKey, $useragent);
         } else {
             $engine = null;
         }

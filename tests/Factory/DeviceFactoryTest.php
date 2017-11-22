@@ -13,6 +13,7 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Loader\DeviceLoader;
+use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
@@ -36,7 +37,8 @@ class DeviceFactoryTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $loader       = new DeviceLoader($cache);
+        $logger       = new NullLogger();
+        $loader       = new DeviceLoader($cache, $logger);
         $this->object = new DeviceFactory($loader);
     }
 

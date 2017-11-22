@@ -70,7 +70,7 @@ class Detector
     {
         $request = $this->buildRequest($headers);
 
-        $deviceFactory = new Factory\DeviceFactory(new DeviceLoader($this->cache));
+        $deviceFactory = new Factory\DeviceFactory(new DeviceLoader($this->cache, $this->logger));
         $normalizer    = (new NormalizerFactory())->build();
         $deviceUa      = $normalizer->normalize($request->getDeviceUserAgent());
 
@@ -91,7 +91,7 @@ class Detector
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
 
-            $platformFactory = new PlatformFactory(new PlatformLoader($this->cache));
+            $platformFactory = new PlatformFactory(new PlatformLoader($this->cache, $this->logger));
 
             try {
                 $platform = $platformFactory->detect($browserUa, $s);
@@ -101,12 +101,12 @@ class Detector
             }
         }
 
-        $browserLoader = new Loader\BrowserLoader($this->cache);
+        $browserLoader = new Loader\BrowserLoader($this->cache, $this->logger);
 
         // @var \UaResult\Browser\BrowserInterface $browser
         // @var \UaResult\Engine\EngineInterface $engine
         [$browser, $engine] = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
-        $engineLoader       = new Loader\EngineLoader($this->cache);
+        $engineLoader       = new Loader\EngineLoader($this->cache, $this->logger);
 
         if (null === $engine) {
             $this->logger->debug('engine not detected from browser');
