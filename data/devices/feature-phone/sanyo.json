@@ -1,4 +1,17 @@
 {
+  "general sanyo device": {
+    "codename": "general Sanyo Device",
+    "marketingName": "general Sanyo Device",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "platform": "brew",
+    "type": "feature-phone",
+    "pointingMethod": null,
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": false,
+    "colors": null
+  },
   "sanyo scp3810": {
     "codename": "SCP-3810",
     "marketingName": "SCP-3810",
@@ -22,6 +35,19 @@
     "pointingMethod": null,
     "resolutionWidth": 240,
     "resolutionHeight": 320,
+    "dualOrientation": false,
+    "colors": null
+  },
+  "sanyo pm-8200": {
+    "codename": "PM-8200",
+    "marketingName": "PM-8200",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "platform": "java",
+    "type": "feature-phone",
+    "pointingMethod": null,
+    "resolutionWidth": 132,
+    "resolutionHeight": 160,
     "dualOrientation": false,
     "colors": null
   }
