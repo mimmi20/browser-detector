@@ -1569,7 +1569,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NokiaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/RM\-\d{3,4}/', $useragent) && !preg_match('/(nokia|microsoft)/i', $useragent)) {
+        if ($s->containsAny(['rm-1042'], false)) {
+            return (new Mobile\NokiaFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['rm-997', 'rm-560'], false) && !preg_match('/(nokia|microsoft)/i', $useragent)) {
             return (new Mobile\RossMoorFactory($this->loader))->detect($useragent, $s);
         }
 
