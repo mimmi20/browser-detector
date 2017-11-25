@@ -3,7 +3,7 @@ BrowserDetector
 
 ## Requirements
 
-This library requires PHP 7.0+.
+This library requires PHP 7.1+.
 Also a PSR-3 compatible logger and a PSR-6 compatible cache are required.
 
 ## Installation
