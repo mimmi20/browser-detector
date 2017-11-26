@@ -27,7 +27,7 @@
   },
   "sony sgp312": {
     "codename": "SGP312",
-    "marketingName": "Xperia Tablet Z",
+    "marketingName": "Xperia Tablet Z Wi-Fi",
     "manufacturer": "Sony",
     "brand": "Sony",
     "platform": "android",
@@ -40,7 +40,7 @@
   },
   "sony sgp511": {
     "codename": "SGP511",
-    "marketingName": "Xperia Tablet Z2 WiFi",
+    "marketingName": "Xperia Z2 Tablet Wi-Fi",
     "manufacturer": "Sony",
     "brand": "Sony",
     "platform": "android",
@@ -53,7 +53,7 @@
   },
   "sony sgp512": {
     "codename": "SGP512",
-    "marketingName": "Xperia Tablet Z WiFi",
+    "marketingName": "Xperia Z2 Tablet Wi-Fi",
     "manufacturer": "Sony",
     "brand": "Sony",
     "platform": "android",
@@ -66,7 +66,7 @@
   },
   "sony sgp611": {
     "codename": "SGP611",
-    "marketingName": "Xperia Z3",
+    "marketingName": "Xperia Z3 Tablet Compact Wi-Fi",
     "manufacturer": "Sony",
     "brand": "Sony",
     "platform": "android",
@@ -100,6 +100,45 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1280,
     "resolutionHeight": 800,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "sony prst1": {
+    "codename": "PRS-T1",
+    "marketingName": "Reader Wi-Fi",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 600,
+    "resolutionHeight": 800,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "sony sgp412": {
+    "codename": "SGP412",
+    "marketingName": "Xperia Z Ultra WiFi",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1920,
+    "resolutionHeight": 1080,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "sony sgp712": {
+    "codename": "SGP712",
+    "marketingName": "Xperia Z4 Tablet WiFi",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 2560,
+    "resolutionHeight": 1600,
     "dualOrientation": true,
     "colors": null
   }
