@@ -242,7 +242,6 @@ class SonyFactory implements Factory\FactoryInterface
         'tablet s'             => 'sony tablet s',
         'tablet p'             => 'sony sgpt211',
         'netbox'               => 'sony netbox',
-        'xst2'                 => 'sonyericsson xst2',
         'x2'                   => 'sonyericsson x2',
         'x1i'                  => 'sonyericsson x1i',
         'wt19iv'               => 'sonyericsson wt19iv',

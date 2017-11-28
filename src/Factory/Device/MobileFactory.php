@@ -1649,7 +1649,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' xst2 ', ' x2 ', 'r800x', 's500i', 'x1i', 'x10i'], false)) {
+        if ($s->contains(' xst2 ', false)) {
+            return (new Mobile\FourgSystemsFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' x2 ', 'r800x', 's500i', 'x1i', 'x10i'], false)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
