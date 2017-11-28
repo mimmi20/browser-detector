@@ -13,6 +13,7 @@ namespace BrowserDetector\Loader;
 
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
+use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use UaDeviceType\TypeLoader;
@@ -32,13 +33,22 @@ class DeviceLoader implements ExtendedLoaderInterface
     private $cache;
 
     /**
+     * an logger instance
+     *
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @param \Psr\Log\LoggerInterface          $logger
      *
      * @return self
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    public function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->logger = $logger;
     }
 
     /**
@@ -94,7 +104,7 @@ class DeviceLoader implements ExtendedLoaderInterface
         if (null === $platformKey) {
             $platform = null;
         } else {
-            $platform = (new PlatformLoader($this->cache))->load($platformKey, $useragent);
+            $platform = (new PlatformLoader($this->cache, $this->logger))->load($platformKey, $useragent);
         }
 
         $device = new Device(

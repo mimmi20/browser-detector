@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\EngineLoader;
+use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
@@ -35,7 +36,8 @@ class EngineLoaderTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $this->object = new EngineLoader($cache);
+        $logger       = new NullLogger();
+        $this->object = new EngineLoader($cache, $logger);
     }
 
     /**

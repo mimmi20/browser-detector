@@ -14,6 +14,7 @@ namespace BrowserDetectorTest\Factory\Device\Mobile;
 use BrowserDetector\Factory\Device\Mobile\ToshibaFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
+use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
@@ -37,7 +38,8 @@ class ToshibaFactoryTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../../cache/');
-        $loader       = new DeviceLoader($cache);
+        $logger       = new NullLogger();
+        $loader       = new DeviceLoader($cache, $logger);
         $this->object = new ToshibaFactory($loader);
     }
 

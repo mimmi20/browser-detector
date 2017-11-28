@@ -16,6 +16,7 @@ use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\PlatformLoader;
+use Psr\Log\NullLogger;
 use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
@@ -32,6 +33,11 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
     private $object;
 
     /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
      * @var \BrowserDetector\Factory\PlatformFactory
      */
     private $platformFactory;
@@ -45,10 +51,11 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $loader       = new BrowserLoader($cache);
+        $logger       = new NullLogger();
+        $loader       = new BrowserLoader($cache, $logger);
         $this->object = new BrowserFactory($loader);
 
-        $platformLoader        = new PlatformLoader($cache);
+        $platformLoader        = new PlatformLoader($cache, $logger);
         $this->platformFactory = new PlatformFactory($platformLoader);
     }
 

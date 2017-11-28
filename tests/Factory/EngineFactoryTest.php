@@ -18,6 +18,7 @@ use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
+use Psr\Log\NullLogger;
 use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
@@ -39,6 +40,11 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
     private $cache;
 
     /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
@@ -47,7 +53,8 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $this->cache  = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $loader       = new EngineLoader($this->cache);
+        $this->logger = new NullLogger();
+        $loader       = new EngineLoader($this->cache, $this->logger);
         $this->object = new EngineFactory($loader);
     }
 
@@ -65,8 +72,8 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $normalizer      = (new NormalizerFactory())->build();
         $normalizedUa    = $normalizer->normalize($userAgent);
-        $browserLoader   = new BrowserLoader($this->cache);
-        $platformFactory = new PlatformFactory(new PlatformLoader($this->cache));
+        $browserLoader   = new BrowserLoader($this->cache, $this->logger);
+        $platformFactory = new PlatformFactory(new PlatformLoader($this->cache, $this->logger));
 
         $s = new Stringy($normalizedUa);
 

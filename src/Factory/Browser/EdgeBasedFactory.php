@@ -51,6 +51,7 @@ class EdgeBasedFactory implements FactoryInterface
             'qqbrowser'       => 'qqbrowser',
             'coc_coc_browser' => 'coc_coc_browser',
             'bingpreview'     => 'bing preview',
+            'tob'             => 't-online browser',
         ];
 
         foreach ($browsers as $search => $key) {

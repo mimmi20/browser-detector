@@ -105,7 +105,6 @@ class MobileDevice
             'dalvik',
             'danger hiptop',
             'embider',
-            'fennec',
             'firefox or ie',
             'foma',
             'folio100',

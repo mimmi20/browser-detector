@@ -11,11 +11,31 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
+use peterkahl\iOSbuild\iOSbuild;
+use Psr\Log\LoggerInterface;
+
 /**
  * @author Thomas Müller <mimmi20@live.de>
  */
 class Ios implements VersionCacheFactoryInterface
 {
+    /**
+     * an logger instance
+     *
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return self
+     */
+    public function __construct(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
@@ -29,6 +49,22 @@ class Ios implements VersionCacheFactoryInterface
 
         if ($doMatch) {
             return VersionFactory::set('1.0');
+        }
+
+        $matches = [];
+
+        $doMatch = preg_match('/mobile\/(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+
+        if ($doMatch && isset($matches[1])) {
+            $buildVersion = iOSbuild::getVersion($matches[1]);
+
+            if (false !== $buildVersion) {
+                return VersionFactory::set($buildVersion);
+            }
+
+            $this->logger->warning(
+                'build version "' . $matches[1] . '" not found in "peterkahl/apple-ios-build-version" from UA "' . $useragent . '"'
+            );
         }
 
         $searches = [

@@ -47,7 +47,7 @@ class GeckoOrFirefoxBasedFactory implements FactoryInterface
      */
     public function detect(string $useragent, Stringy $s, ?OsInterface $platform = null): array
     {
-        $lastBrowsers = [
+        $browsers = [
             'flipboardproxy'                                => 'flipboardproxy',
             'icedragon'                                     => 'icedragon',
             'tinybrowser'                                   => 'tinybrowser',
@@ -103,6 +103,8 @@ class GeckoOrFirefoxBasedFactory implements FactoryInterface
             'caremedicom'                                   => 'caremedicom',
             'puffin'                                        => 'puffin',
             'omniweb'                                       => 'omniweb',
+            'flock'                                         => 'flock',
+            'epiphany'                                      => 'epiphany',
             'firefox'                                       => 'firefox',
             'minefield'                                     => 'firefox',
             'shiretoko'                                     => 'firefox',
@@ -122,7 +124,7 @@ class GeckoOrFirefoxBasedFactory implements FactoryInterface
             'mozilla'                                       => 'mozilla',
         ];
 
-        foreach ($lastBrowsers as $search => $key) {
+        foreach ($browsers as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }

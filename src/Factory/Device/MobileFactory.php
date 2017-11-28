@@ -1569,7 +1569,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NokiaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/RM\-\d{3,4}/', $useragent) && !preg_match('/(nokia|microsoft)/i', $useragent)) {
+        if ($s->containsAny(['rm-1042'], false)) {
+            return (new Mobile\NokiaFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['rm-997', 'rm-560'], false) && !preg_match('/(nokia|microsoft)/i', $useragent)) {
             return (new Mobile\RossMoorFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1645,7 +1649,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' xst2 ', ' x2 ', 'r800x', 's500i', 'x1i', 'x10i'], false)) {
+        if ($s->contains(' xst2 ', false)) {
+            return (new Mobile\FourgSystemsFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['netbox', ' x10 ', ' e10i ', ' x2 ', 'r800x', 's500i', 'x1i', 'x10i'], false)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
