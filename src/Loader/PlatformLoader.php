@@ -156,7 +156,7 @@ class PlatformLoader implements ExtendedLoaderInterface
             throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
         }
 
-        $companyLoader = CompanyLoader::getInstance($this->cache);
+        $companyLoader = CompanyLoader::getInstance($this->cache, $this->logger);
 
         foreach ($platforms as $platformCode => $platformData) {
             $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
