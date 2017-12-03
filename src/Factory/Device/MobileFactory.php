@@ -1783,7 +1783,7 @@ class MobileFactory implements Factory\FactoryInterface
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
-            if ($s->contains($test, false)) {
+            if ($s->contains((string) $test, false)) {
                 /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
@@ -2061,7 +2061,7 @@ class MobileFactory implements Factory\FactoryInterface
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
-            if ($s->contains($test, false)) {
+            if ($s->contains((string) $test, false)) {
                 /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 

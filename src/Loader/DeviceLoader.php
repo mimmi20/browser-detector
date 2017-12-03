@@ -135,7 +135,7 @@ class DeviceLoader implements ExtendedLoaderInterface
         $sourceDirectory = __DIR__ . '/../../data/devices/';
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
 
-        $companyLoader = CompanyLoader::getInstance($this->cache);
+        $companyLoader = CompanyLoader::getInstance($this->cache, $this->logger);
         $typeLoader    = TypeLoader::getInstance();
         $jsonParser    = new JsonParser();
 

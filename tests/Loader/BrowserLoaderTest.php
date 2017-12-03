@@ -28,11 +28,6 @@ class BrowserLoaderTest extends \PHPUnit\Framework\TestCase
     private $object;
 
     /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
-
-    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *

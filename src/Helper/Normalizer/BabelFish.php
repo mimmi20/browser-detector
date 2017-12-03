@@ -21,7 +21,7 @@ class BabelFish implements NormalizerInterface
     /**
      * @param string $userAgent
      *
-     * @return mixed|string
+     * @return string
      */
     public function normalize(string $userAgent): string
     {

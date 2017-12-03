@@ -143,7 +143,7 @@ class EngineLoader implements ExtendedLoaderInterface
             throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
         }
 
-        $companyLoader = CompanyLoader::getInstance($this->cache);
+        $companyLoader = CompanyLoader::getInstance($this->cache, $this->logger);
 
         foreach ($engines as $engineKey => $engineData) {
             $cacheItem = $this->cache->getItem(hash('sha512', 'engine-cache-' . $engineKey));
