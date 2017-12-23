@@ -53,6 +53,8 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string|null $manufacturer
      * @param int|null    $bits
      *
+     * @throws \Psr\Cache\InvalidArgumentException
+     *
      * @return void
      */
     public function testDetect(string $agent, ?string $platform, ?string $version, ?string $manufacturer, ?int $bits): void

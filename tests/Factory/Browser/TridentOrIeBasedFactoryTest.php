@@ -16,6 +16,7 @@ use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\PlatformLoader;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
@@ -25,7 +26,7 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class TridentOrIeBasedFactoryTest extends \PHPUnit\Framework\TestCase
+class TridentOrIeBasedFactoryTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Browser\TridentOrIeBasedFactory
@@ -68,6 +69,8 @@ class TridentOrIeBasedFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string|null $manufacturer
      * @param int|null    $bits
      * @param string|null $type
+     *
+     * @throws \Psr\Cache\InvalidArgumentException
      *
      * @return void
      */

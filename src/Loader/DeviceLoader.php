@@ -54,6 +54,9 @@ class DeviceLoader implements ExtendedLoaderInterface
     /**
      * initializes cache
      *
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
+     *
      * @return void
      */
     private function init(): void
@@ -68,6 +71,9 @@ class DeviceLoader implements ExtendedLoaderInterface
 
     /**
      * @param string $deviceKey
+     *
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return bool
      */
@@ -84,9 +90,10 @@ class DeviceLoader implements ExtendedLoaderInterface
      * @param string $deviceKey
      * @param string $useragent
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
-     * @return (\UaResult\Device\DeviceInterface|\UaResult\Os\OsInterface|null)[]
+     * @return array
      */
     public function load(string $deviceKey, string $useragent = ''): array
     {
@@ -125,8 +132,8 @@ class DeviceLoader implements ExtendedLoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
-     * @throws \Seld\JsonLint\ParsingException
      * @throws \RuntimeException
+     * @throws \Psr\Cache\InvalidArgumentException
      *
      * @return void
      */
@@ -135,7 +142,7 @@ class DeviceLoader implements ExtendedLoaderInterface
         $sourceDirectory = __DIR__ . '/../../data/devices/';
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
 
-        $companyLoader = CompanyLoader::getInstance($this->cache, $this->logger);
+        $companyLoader = CompanyLoader::getInstance();
         $typeLoader    = TypeLoader::getInstance();
         $jsonParser    = new JsonParser();
 

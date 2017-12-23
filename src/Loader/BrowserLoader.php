@@ -57,6 +57,9 @@ class BrowserLoader implements ExtendedLoaderInterface
     /**
      * initializes cache
      *
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
+     *
      * @return void
      */
     private function init(): void
@@ -71,6 +74,9 @@ class BrowserLoader implements ExtendedLoaderInterface
 
     /**
      * @param string $browserKey
+     *
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return bool
      */
@@ -87,9 +93,10 @@ class BrowserLoader implements ExtendedLoaderInterface
      * @param string $browserKey
      * @param string $useragent
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
-     * @return (\UaResult\Browser\Browser|\UaResult\Engine\EngineInterface|null)[]
+     * @return array
      */
     public function load(string $browserKey, string $useragent = ''): array
     {
@@ -131,8 +138,8 @@ class BrowserLoader implements ExtendedLoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
-     * @throws \Seld\JsonLint\ParsingException
      * @throws \RuntimeException
+     * @throws \Psr\Cache\InvalidArgumentException
      *
      * @return void
      */
@@ -150,7 +157,7 @@ class BrowserLoader implements ExtendedLoaderInterface
             throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
         }
 
-        $companyLoader = CompanyLoader::getInstance($this->cache, $this->logger);
+        $companyLoader = CompanyLoader::getInstance();
         $typeLoader    = TypeLoader::getInstance();
 
         foreach ($browsers as $browserKey => $browserData) {

@@ -41,6 +41,9 @@ class EngineLoaderTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
+     *
      * @return void
      */
     public function testLoadNotAvailable(): void
