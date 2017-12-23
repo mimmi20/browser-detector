@@ -64,7 +64,7 @@ jobs:
     - stage: composer validate
       php: 7.1
       install: skip
-      script: composer validate --strict
+      script: composer validate
 
     - stage: check coding style
       php: 7.1
