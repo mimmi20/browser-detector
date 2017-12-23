@@ -41,8 +41,9 @@ class DarwinFactory implements Factory\FactoryInterface
      * @param string           $useragent
      * @param \Stringy\Stringy $s
      *
-     * @return \UaResult\Os\OsInterface
      * @throws \Psr\Cache\InvalidArgumentException
+     *
+     * @return \UaResult\Os\OsInterface
      */
     public function detect(string $useragent, Stringy $s)
     {

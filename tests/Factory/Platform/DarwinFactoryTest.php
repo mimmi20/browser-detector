@@ -53,8 +53,9 @@ class DarwinFactoryTest extends TestCase
      * @param string|null $manufacturer
      * @param int|null    $bits
      *
-     * @return void
      * @throws \Psr\Cache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testDetect(string $agent, ?string $platform, ?string $version, ?string $manufacturer, ?int $bits): void
     {

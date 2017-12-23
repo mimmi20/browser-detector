@@ -69,8 +69,9 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
      * @param int|null    $bits
      * @param string|null $type
      *
-     * @return void
      * @throws \Psr\Cache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testDetect(string $userAgent, ?string $browser, ?string $version, ?string $manufacturer, ?int $bits, ?string $type): void
     {

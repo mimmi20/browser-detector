@@ -56,9 +56,11 @@ class BrowserLoader implements ExtendedLoaderInterface
 
     /**
      * initializes cache
-     * @return void
+     *
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
     private function init(): void
     {
@@ -73,9 +75,10 @@ class BrowserLoader implements ExtendedLoaderInterface
     /**
      * @param string $browserKey
      *
-     * @return bool
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return bool
      */
     public function has(string $browserKey): bool
     {
@@ -90,9 +93,10 @@ class BrowserLoader implements ExtendedLoaderInterface
      * @param string $browserKey
      * @param string $useragent
      *
-     * @return array
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return array
      */
     public function load(string $browserKey, string $useragent = ''): array
     {
@@ -135,8 +139,9 @@ class BrowserLoader implements ExtendedLoaderInterface
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
      * @throws \RuntimeException
-     * @return void
      * @throws \Psr\Cache\InvalidArgumentException
+     *
+     * @return void
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {

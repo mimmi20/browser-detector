@@ -57,9 +57,11 @@ class PlatformLoader implements ExtendedLoaderInterface
 
     /**
      * initializes cache
-     * @return void
+     *
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
     private function init(): void
     {
@@ -74,9 +76,10 @@ class PlatformLoader implements ExtendedLoaderInterface
     /**
      * @param string $platformCode
      *
-     * @return bool
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return bool
      */
     public function has(string $platformCode): bool
     {
@@ -92,9 +95,10 @@ class PlatformLoader implements ExtendedLoaderInterface
      * @param string      $useragent
      * @param string|null $inputVersion
      *
-     * @return \UaResult\Os\OsInterface
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return \UaResult\Os\OsInterface
      */
     public function load(string $platformCode, string $useragent = '', string $inputVersion = null): OsInterface
     {
@@ -141,8 +145,9 @@ class PlatformLoader implements ExtendedLoaderInterface
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
      * @throws \RuntimeException
-     * @return void
      * @throws \Psr\Cache\InvalidArgumentException
+     *
+     * @return void
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {

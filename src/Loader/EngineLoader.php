@@ -55,9 +55,11 @@ class EngineLoader implements ExtendedLoaderInterface
 
     /**
      * initializes cache
-     * @return void
+     *
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
     private function init(): void
     {
@@ -72,9 +74,10 @@ class EngineLoader implements ExtendedLoaderInterface
     /**
      * @param string $engineKey
      *
-     * @return bool
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return bool
      */
     public function has(string $engineKey): bool
     {
@@ -89,9 +92,10 @@ class EngineLoader implements ExtendedLoaderInterface
      * @param string $engineKey
      * @param string $useragent
      *
-     * @return \UaResult\Engine\EngineInterface
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return \UaResult\Engine\EngineInterface
      */
     public function load(string $engineKey, string $useragent = ''): EngineInterface
     {
@@ -128,8 +132,9 @@ class EngineLoader implements ExtendedLoaderInterface
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
      * @throws \RuntimeException
-     * @return void
      * @throws \Psr\Cache\InvalidArgumentException
+     *
+     * @return void
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {

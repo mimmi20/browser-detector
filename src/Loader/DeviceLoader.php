@@ -53,9 +53,11 @@ class DeviceLoader implements ExtendedLoaderInterface
 
     /**
      * initializes cache
-     * @return void
+     *
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
     private function init(): void
     {
@@ -70,9 +72,10 @@ class DeviceLoader implements ExtendedLoaderInterface
     /**
      * @param string $deviceKey
      *
-     * @return bool
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return bool
      */
     public function has(string $deviceKey): bool
     {
@@ -87,9 +90,10 @@ class DeviceLoader implements ExtendedLoaderInterface
      * @param string $deviceKey
      * @param string $useragent
      *
-     * @return array
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return array
      */
     public function load(string $deviceKey, string $useragent = ''): array
     {
@@ -129,8 +133,9 @@ class DeviceLoader implements ExtendedLoaderInterface
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
      * @throws \RuntimeException
-     * @return void
      * @throws \Psr\Cache\InvalidArgumentException
+     *
+     * @return void
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {

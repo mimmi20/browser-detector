@@ -16,7 +16,7 @@ jobs:
           key: composer-v1-{{ checksum "composer.json" }}
           paths:
             - vendor
-      - run: vendor/bin/phpunit --colors --columns 117 --coverage-text
+      - run: vendor/bin/phpunit --colors --columns 121 --coverage-text
   phpcs:
     docker:
       - image: circleci/php:7.1

@@ -59,9 +59,10 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
      *
-     * @return void
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
     public function testGetBrowserFromUa(string $userAgent, Result $expectedResult): void
     {
@@ -79,9 +80,10 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
      *
-     * @return void
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
     public function testGetBrowserFromArray(string $userAgent, Result $expectedResult): void
     {
@@ -99,9 +101,10 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
      *
-     * @return void
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
     public function testGetBrowserFromPsr7Message(string $userAgent, Result $expectedResult): void
     {
@@ -121,9 +124,10 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return void
      * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
     public function testGetBrowserFromInvalid(): void
     {
