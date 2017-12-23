@@ -56,8 +56,9 @@ class BrowserLoader implements ExtendedLoaderInterface
 
     /**
      * initializes cache
-     *
      * @return void
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     private function init(): void
     {
@@ -73,6 +74,8 @@ class BrowserLoader implements ExtendedLoaderInterface
      * @param string $browserKey
      *
      * @return bool
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     public function has(string $browserKey): bool
     {
@@ -87,9 +90,9 @@ class BrowserLoader implements ExtendedLoaderInterface
      * @param string $browserKey
      * @param string $useragent
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
-     * @return (\UaResult\Browser\Browser|\UaResult\Engine\EngineInterface|null)[]
+     * @return array
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     public function load(string $browserKey, string $useragent = ''): array
     {
@@ -131,10 +134,9 @@ class BrowserLoader implements ExtendedLoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
-     * @throws \Seld\JsonLint\ParsingException
      * @throws \RuntimeException
-     *
      * @return void
+     * @throws \Psr\Cache\InvalidArgumentException
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {
@@ -150,7 +152,7 @@ class BrowserLoader implements ExtendedLoaderInterface
             throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
         }
 
-        $companyLoader = CompanyLoader::getInstance($this->cache, $this->logger);
+        $companyLoader = CompanyLoader::getInstance();
         $typeLoader    = TypeLoader::getInstance();
 
         foreach ($browsers as $browserKey => $browserData) {

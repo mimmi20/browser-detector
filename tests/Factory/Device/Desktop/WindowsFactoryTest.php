@@ -14,6 +14,7 @@ namespace BrowserDetectorTest\Factory\Device\Desktop;
 use BrowserDetector\Factory\Device\Desktop\WindowsFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
@@ -22,7 +23,7 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class WindowsFactoryTest extends \PHPUnit\Framework\TestCase
+class WindowsFactoryTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Device\Desktop\WindowsFactory

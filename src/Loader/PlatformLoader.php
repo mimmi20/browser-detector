@@ -57,8 +57,9 @@ class PlatformLoader implements ExtendedLoaderInterface
 
     /**
      * initializes cache
-     *
      * @return void
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     private function init(): void
     {
@@ -74,6 +75,8 @@ class PlatformLoader implements ExtendedLoaderInterface
      * @param string $platformCode
      *
      * @return bool
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     public function has(string $platformCode): bool
     {
@@ -89,9 +92,9 @@ class PlatformLoader implements ExtendedLoaderInterface
      * @param string      $useragent
      * @param string|null $inputVersion
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
      * @return \UaResult\Os\OsInterface
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     public function load(string $platformCode, string $useragent = '', string $inputVersion = null): OsInterface
     {
@@ -137,10 +140,9 @@ class PlatformLoader implements ExtendedLoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
-     * @throws \Seld\JsonLint\ParsingException
      * @throws \RuntimeException
-     *
      * @return void
+     * @throws \Psr\Cache\InvalidArgumentException
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {
@@ -156,7 +158,7 @@ class PlatformLoader implements ExtendedLoaderInterface
             throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
         }
 
-        $companyLoader = CompanyLoader::getInstance($this->cache, $this->logger);
+        $companyLoader = CompanyLoader::getInstance();
 
         foreach ($platforms as $platformCode => $platformData) {
             $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));

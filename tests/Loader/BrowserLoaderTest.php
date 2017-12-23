@@ -42,6 +42,8 @@ class BrowserLoaderTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @return void
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     public function testLoadNotAvailable(): void
     {

@@ -67,6 +67,8 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string|null $manufacturer
      *
      * @return void
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     public function testDetect(string $userAgent, ?string $engine, ?string $version, ?string $manufacturer): void
     {

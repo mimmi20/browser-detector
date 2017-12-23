@@ -13,6 +13,7 @@ namespace BrowserDetectorTest\Factory\Platform;
 
 use BrowserDetector\Factory\Platform\WindowsMobileFactory;
 use BrowserDetector\Loader\PlatformLoader;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
@@ -22,7 +23,7 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class WindowsMobileFactoryTest extends \PHPUnit\Framework\TestCase
+class WindowsMobileFactoryTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Platform\WindowsMobileFactory

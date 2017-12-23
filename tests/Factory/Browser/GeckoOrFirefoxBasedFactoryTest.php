@@ -16,6 +16,7 @@ use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\PlatformLoader;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
@@ -25,7 +26,7 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class GeckoOrFirefoxBasedFactoryTest extends \PHPUnit\Framework\TestCase
+class GeckoOrFirefoxBasedFactoryTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Browser\GeckoOrFirefoxBasedFactory
@@ -70,6 +71,7 @@ class GeckoOrFirefoxBasedFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string|null $type
      *
      * @return void
+     * @throws \Psr\Cache\InvalidArgumentException
      */
     public function testDetect(string $userAgent, ?string $browser, ?string $version, ?string $manufacturer, ?int $bits, ?string $type): void
     {

@@ -1,0 +1,79 @@
+version: 2
+jobs:
+  phpunit:
+    docker:
+      - image: circleci/php:7.1
+        environment:
+          TZ: "/usr/share/zoneinfo/Europe/Berlin"
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - composer-v1-{{ checksum "composer.json" }}
+            - composer-v1-
+      - run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+      - save_cache:
+          key: composer-v1-{{ checksum "composer.json" }}
+          paths:
+            - vendor
+      - run: vendor/bin/phpunit --colors --columns 117 --coverage-text
+  phpcs:
+    docker:
+      - image: circleci/php:7.1
+        environment:
+          TZ: "/usr/share/zoneinfo/Europe/Berlin"
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - composer-v1-{{ checksum "composer.json" }}
+            - composer-v1-
+      - run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+      - save_cache:
+          key: composer-v1-{{ checksum "composer.json" }}
+          paths:
+            - vendor
+      - run: vendor/bin/phpcs --colors
+  php-cs-fixer:
+    docker:
+      - image: circleci/php:7.1
+        environment:
+          TZ: "/usr/share/zoneinfo/Europe/Berlin"
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - composer-v1-{{ checksum "composer.json" }}
+            - composer-v1-
+      - run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+      - save_cache:
+          key: composer-v1-{{ checksum "composer.json" }}
+          paths:
+            - vendor
+      - run: vendor/bin/php-cs-fixer fix --dry-run -vv
+  phpstan:
+    docker:
+      - image: circleci/php:7.1
+        environment:
+          TZ: "/usr/share/zoneinfo/Europe/Berlin"
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - composer-v1-{{ checksum "composer.json" }}
+            - composer-v1-
+      - run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+      - save_cache:
+          key: composer-v1-{{ checksum "composer.json" }}
+          paths:
+            - vendor
+      - run: vendor/bin/phpstan.phar analyse -l 7 -c phpstan.neon --autoload-file=vendor/autoload.php --memory-limit=768M --no-progress src tests
+
+workflows:
+  version: 2
+  tests:
+    jobs:
+      - phpunit
+      - phpcs
+      - php-cs-fixer
+      - phpstan

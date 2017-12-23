@@ -65,6 +65,8 @@ class Detector
      * @param array|\Psr\Http\Message\MessageInterface|string $headers
      *
      * @return \UaResult\Result\ResultInterface
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     public function getBrowser($headers): ResultInterface
     {

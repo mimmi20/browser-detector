@@ -55,8 +55,9 @@ class EngineLoader implements ExtendedLoaderInterface
 
     /**
      * initializes cache
-     *
      * @return void
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     private function init(): void
     {
@@ -72,6 +73,8 @@ class EngineLoader implements ExtendedLoaderInterface
      * @param string $engineKey
      *
      * @return bool
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     public function has(string $engineKey): bool
     {
@@ -86,9 +89,9 @@ class EngineLoader implements ExtendedLoaderInterface
      * @param string $engineKey
      * @param string $useragent
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
      * @return \UaResult\Engine\EngineInterface
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
     public function load(string $engineKey, string $useragent = ''): EngineInterface
     {
@@ -124,10 +127,9 @@ class EngineLoader implements ExtendedLoaderInterface
     /**
      * @param \Psr\Cache\CacheItemInterface $cacheInitialized
      *
-     * @throws \Seld\JsonLint\ParsingException
      * @throws \RuntimeException
-     *
      * @return void
+     * @throws \Psr\Cache\InvalidArgumentException
      */
     private function initCache(CacheItemInterface $cacheInitialized): void
     {
@@ -143,7 +145,7 @@ class EngineLoader implements ExtendedLoaderInterface
             throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
         }
 
-        $companyLoader = CompanyLoader::getInstance($this->cache, $this->logger);
+        $companyLoader = CompanyLoader::getInstance();
 
         foreach ($engines as $engineKey => $engineData) {
             $cacheItem = $this->cache->getItem(hash('sha512', 'engine-cache-' . $engineKey));

@@ -13,6 +13,7 @@ namespace BrowserDetectorTest\Factory\Platform;
 
 use BrowserDetector\Factory\Platform\DarwinFactory;
 use BrowserDetector\Loader\PlatformLoader;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Stringy\Stringy;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
@@ -22,7 +23,7 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
+class DarwinFactoryTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Platform\DarwinFactory
@@ -53,6 +54,7 @@ class DarwinFactoryTest extends \PHPUnit\Framework\TestCase
      * @param int|null    $bits
      *
      * @return void
+     * @throws \Psr\Cache\InvalidArgumentException
      */
     public function testDetect(string $agent, ?string $platform, ?string $version, ?string $manufacturer, ?int $bits): void
     {
