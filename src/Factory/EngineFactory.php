@@ -46,9 +46,6 @@ class EngineFactory implements FactoryInterface
      * @param \BrowserDetector\Loader\BrowserLoader|null $browserLoader
      * @param \UaResult\Os\OsInterface|null              $platform
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return \UaResult\Engine\EngineInterface
      */
     public function detect(string $useragent, Stringy $s, ?BrowserLoader $browserLoader = null, ?OsInterface $platform = null): EngineInterface

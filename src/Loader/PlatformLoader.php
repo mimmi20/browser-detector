@@ -15,79 +15,97 @@ use BrowserDetector\Bits\Os as OsBits;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
-use Psr\Cache\CacheItemInterface;
-use Psr\Cache\CacheItemPoolInterface;
-use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
-use Seld\JsonLint\ParsingException;
 use UaResult\Company\CompanyLoader;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 
-/**
- * Browser detection class
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
 class PlatformLoader implements ExtendedLoaderInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface
+     * @var \stdClass[]
      */
-    private $cache;
+    private $platforms = [];
 
     /**
-     * an logger instance
-     *
-     * @var \Psr\Log\LoggerInterface
+     * @var self|null
      */
-    private $logger;
+    private static $instance;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     * @param \Psr\Log\LoggerInterface          $logger
-     *
+     * @throws \Seld\JsonLint\ParsingException
+     */
+    private function __construct()
+    {
+        $this->init();
+    }
+
+    /**
      * @return self
      */
-    public function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger)
+    public static function getInstance()
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        if (null === self::$instance) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
+    }
+
+    /**
+     * @return void
+     */
+    public static function resetInstance(): void
+    {
+        self::$instance = null;
     }
 
     /**
      * initializes cache
      *
-     * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
     private function init(): void
     {
-        $cacheInitializedId = hash('sha512', 'platform-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+        $this->platforms = [];
 
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
+        foreach ($this->getPlatforms() as $key => $data) {
+            $this->platforms[$key] = $data;
+        }
+    }
+
+    /**
+     * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return \Generator|\stdClass[]
+     */
+    private function getPlatforms(): \Generator
+    {
+        static $platforms = null;
+
+        if (null === $platforms) {
+            $jsonParser = new JsonParser();
+            $platforms  = $jsonParser->parse(
+                file_get_contents(__DIR__ . '/../../data/platforms.json'),
+                JsonParser::DETECT_KEY_CONFLICTS
+            );
+        }
+
+        foreach ($platforms as $key => $data) {
+            yield $key => $data;
         }
     }
 
     /**
      * @param string $platformCode
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return bool
      */
     public function has(string $platformCode): bool
     {
-        $this->init();
-
-        $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
-
-        return $cacheItem->isHit();
+        return array_key_exists($platformCode, $this->platforms);
     }
 
     /**
@@ -95,22 +113,15 @@ class PlatformLoader implements ExtendedLoaderInterface
      * @param string      $useragent
      * @param string|null $inputVersion
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return \UaResult\Os\OsInterface
      */
     public function load(string $platformCode, string $useragent = '', string $inputVersion = null): OsInterface
     {
-        $this->init();
-
         if (!$this->has($platformCode)) {
             throw new NotFoundException('the platform with key "' . $platformCode . '" was not found');
         }
 
-        $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
-
-        $platform = $cacheItem->get();
+        $platform = $this->platforms[$platformCode];
 
         $platformVersionClass = $platform->version->class;
 
@@ -122,12 +133,13 @@ class PlatformLoader implements ExtendedLoaderInterface
             $version = VersionFactory::detectVersion($useragent, $platform->version->search);
         } else {
             /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $platformVersionClass($this->logger);
+            $versionClass = new $platformVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }
 
         $name          = $platform->name;
         $marketingName = $platform->marketingName;
+        $manufacturer  = CompanyLoader::getInstance()->load($platform->manufacturer);
 
         if ('Mac OS X' === $name
             && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')
@@ -138,44 +150,6 @@ class PlatformLoader implements ExtendedLoaderInterface
 
         $bits = (new OsBits($useragent))->getBits();
 
-        return new Os($name, $marketingName, $platform->manufacturer, $version, $bits);
-    }
-
-    /**
-     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
-     *
-     * @throws \RuntimeException
-     * @throws \Psr\Cache\InvalidArgumentException
-     *
-     * @return void
-     */
-    private function initCache(CacheItemInterface $cacheInitialized): void
-    {
-        $jsonParser = new JsonParser();
-        $file       = new \SplFileInfo(__DIR__ . '/../../data/platforms.json');
-
-        try {
-            $platforms = $jsonParser->parse(
-                file_get_contents($file->getPathname()),
-                JsonParser::DETECT_KEY_CONFLICTS
-            );
-        } catch (ParsingException $e) {
-            throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
-        }
-
-        $companyLoader = CompanyLoader::getInstance();
-
-        foreach ($platforms as $platformCode => $platformData) {
-            $cacheItem = $this->cache->getItem(hash('sha512', 'platform-cache-' . $platformCode));
-
-            $platformData->manufacturer = $companyLoader->load($platformData->manufacturer);
-
-            $cacheItem->set($platformData);
-
-            $this->cache->save($cacheItem);
-        }
-
-        $cacheInitialized->set(true);
-        $this->cache->save($cacheInitialized);
+        return new Os($name, $marketingName, $manufacturer, $version, $bits);
     }
 }

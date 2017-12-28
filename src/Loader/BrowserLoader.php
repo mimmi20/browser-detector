@@ -14,164 +14,137 @@ namespace BrowserDetector\Loader;
 use BrowserDetector\Bits\Browser as BrowserBits;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
-use Psr\Cache\CacheItemInterface;
-use Psr\Cache\CacheItemPoolInterface;
-use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
-use Seld\JsonLint\ParsingException;
 use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
 use UaResult\Company\CompanyLoader;
 
-/**
- * Browser detection class
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
 class BrowserLoader implements ExtendedLoaderInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface
+     * @var \stdClass[]
      */
-    private $cache;
+    private $browsers = [];
 
     /**
-     * an logger instance
-     *
-     * @var \Psr\Log\LoggerInterface
+     * @var self|null
      */
-    private $logger;
+    private static $instance;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     * @param \Psr\Log\LoggerInterface          $logger
-     *
+     * @throws \Seld\JsonLint\ParsingException
+     */
+    private function __construct()
+    {
+        $this->init();
+    }
+
+    /**
      * @return self
      */
-    public function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger)
+    public static function getInstance()
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        if (null === self::$instance) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
+    }
+
+    /**
+     * @return void
+     */
+    public static function resetInstance(): void
+    {
+        self::$instance = null;
     }
 
     /**
      * initializes cache
      *
-     * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
     private function init(): void
     {
-        $cacheInitializedId = hash('sha512', 'browser-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+        $this->browsers = [];
 
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
+        foreach ($this->getBrowsers() as $key => $data) {
+            $this->browsers[$key] = $data;
+        }
+    }
+
+    /**
+     * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return \Generator|\stdClass[]
+     */
+    private function getBrowsers(): \Generator
+    {
+        static $browsers = null;
+
+        if (null === $browsers) {
+            $jsonParser = new JsonParser();
+            $browsers   = $jsonParser->parse(
+                file_get_contents(__DIR__ . '/../../data/browsers.json'),
+                JsonParser::DETECT_KEY_CONFLICTS
+            );
+        }
+
+        foreach ($browsers as $key => $data) {
+            yield $key => $data;
         }
     }
 
     /**
      * @param string $browserKey
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return bool
      */
     public function has(string $browserKey): bool
     {
-        $this->init();
-
-        $cacheItem = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
-
-        return $cacheItem->isHit();
+        return array_key_exists($browserKey, $this->browsers);
     }
 
     /**
      * @param string $browserKey
      * @param string $useragent
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return array
      */
     public function load(string $browserKey, string $useragent = ''): array
     {
-        $this->init();
-
         if (!$this->has($browserKey)) {
             throw new NotFoundException('the browser with key "' . $browserKey . '" was not found');
         }
 
-        $cacheItem = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
-        $browser   = $cacheItem->get();
-
-        $browserVersionClass = $browser->version->class;
+        $browserData         = $this->browsers[$browserKey];
+        $browserVersionClass = $browserData->version->class;
+        $manufacturer        = CompanyLoader::getInstance()->load($browserData->manufacturer);
+        $type                = TypeLoader::getInstance()->load($browserData->type);
 
         if (!is_string($browserVersionClass)) {
             $version = new Version('0');
         } elseif ('VersionFactory' === $browserVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $browser->version->search);
+            $version = VersionFactory::detectVersion($useragent, $browserData->version->search);
         } else {
             /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $browserVersionClass($this->logger);
+            $versionClass = new $browserVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }
 
         $bits      = (new BrowserBits($useragent))->getBits();
-        $engineKey = $browser->engine;
+        $engineKey = $browserData->engine;
 
         if (null !== $engineKey) {
-            $engine = (new EngineLoader($this->cache, $this->logger))->load($engineKey, $useragent);
+            $engine = EngineLoader::getInstance()->load($engineKey, $useragent);
         } else {
             $engine = null;
         }
 
-        $browser = new Browser($browser->name, $browser->manufacturer, $version, $browser->type, $bits);
+        $browser = new Browser($browserData->name, $manufacturer, $version, $type, $bits);
 
         return [$browser, $engine];
-    }
-
-    /**
-     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
-     *
-     * @throws \RuntimeException
-     * @throws \Psr\Cache\InvalidArgumentException
-     *
-     * @return void
-     */
-    private function initCache(CacheItemInterface $cacheInitialized): void
-    {
-        $jsonParser = new JsonParser();
-        $file       = new \SplFileInfo(__DIR__ . '/../../data/browsers.json');
-
-        try {
-            $browsers = $jsonParser->parse(
-                file_get_contents($file->getPathname()),
-                JsonParser::DETECT_KEY_CONFLICTS
-            );
-        } catch (ParsingException $e) {
-            throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
-        }
-
-        $companyLoader = CompanyLoader::getInstance();
-        $typeLoader    = TypeLoader::getInstance();
-
-        foreach ($browsers as $browserKey => $browserData) {
-            $cacheItem = $this->cache->getItem(hash('sha512', 'browser-cache-' . $browserKey));
-
-            $browserData->type         = $typeLoader->load($browserData->type);
-            $browserData->manufacturer = $companyLoader->load($browserData->manufacturer);
-
-            $cacheItem->set($browserData);
-
-            $this->cache->save($cacheItem);
-        }
-
-        $cacheInitialized->set(true);
-        $this->cache->save($cacheInitialized);
     }
 }
