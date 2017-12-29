@@ -12,15 +12,16 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\PlatformLoader;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Loader\PlatformLoader
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class PlatformLoaderTest extends \PHPUnit\Framework\TestCase
+class PlatformLoaderTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Loader\PlatformLoader
@@ -35,15 +36,13 @@ class PlatformLoaderTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
+        $cache        = new FilesystemCache('', 0, __DIR__ . '/../../../cache/');
         $logger       = new NullLogger();
-        $this->object = new PlatformLoader($cache, $logger);
+
+        $this->object = PlatformLoader::getInstance($cache, $logger);
     }
 
     /**
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return void
      */
     public function testLoadNotAvailable(): void

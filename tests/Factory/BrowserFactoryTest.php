@@ -16,26 +16,17 @@ use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\PlatformLoader;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Stringy\Stringy;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
-class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
+class BrowserFactoryTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Factory\BrowserFactory
      */
     private $object;
-
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
 
     /**
      * @var \BrowserDetector\Factory\PlatformFactory
@@ -50,12 +41,12 @@ class BrowserFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
+        $cache        = new FilesystemCache('', 0, __DIR__ . '/../../cache/');
         $logger       = new NullLogger();
-        $loader       = new BrowserLoader($cache, $logger);
+        $loader       = BrowserLoader::getInstance($cache, $logger);
         $this->object = new BrowserFactory($loader);
 
-        $platformLoader        = new PlatformLoader($cache, $logger);
+        $platformLoader        = PlatformLoader::getInstance($cache, $logger);
         $this->platformFactory = new PlatformFactory($platformLoader);
     }
 

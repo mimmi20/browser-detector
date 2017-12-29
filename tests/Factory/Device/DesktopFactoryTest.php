@@ -15,7 +15,7 @@ use BrowserDetector\Factory\Device\DesktopFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Desktop\GeneralDesktop
@@ -37,9 +37,9 @@ class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
+        $cache        = new FilesystemCache('', 0, __DIR__ . '/../../../cache/');
         $logger       = new NullLogger();
-        $loader       = new DeviceLoader($cache, $logger);
+        $loader       = DeviceLoader::getInstance($cache, $logger);
         $this->object = new DesktopFactory($loader);
     }
 

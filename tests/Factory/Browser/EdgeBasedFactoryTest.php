@@ -19,13 +19,8 @@ use BrowserDetector\Loader\PlatformLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Stringy\Stringy;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
 class EdgeBasedFactoryTest extends TestCase
 {
     /**
@@ -51,12 +46,12 @@ class EdgeBasedFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
+        $cache        = new FilesystemCache('', 0, __DIR__ . '/../../../cache/');
         $logger       = new NullLogger();
-        $loader       = new BrowserLoader($cache, $logger);
+        $loader       = BrowserLoader::getInstance($cache, $logger);
         $this->object = new EdgeBasedFactory($loader);
 
-        $platformLoader        = new PlatformLoader($cache, $logger);
+        $platformLoader        = PlatformLoader::getInstance($cache, $logger);
         $this->platformFactory = new PlatformFactory($platformLoader);
     }
 

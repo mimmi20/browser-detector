@@ -13,11 +13,6 @@ namespace BrowserDetectorTest\Bits;
 
 use BrowserDetector\Bits\Browser;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
 class BrowserTest extends \PHPUnit\Framework\TestCase
 {
     /**

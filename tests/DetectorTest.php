@@ -13,34 +13,19 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
 use BrowserDetector\Helper\Constants;
-use Psr\Cache\CacheItemPoolInterface;
-use Psr\Log\LoggerInterface;
+use PHPUnit\Framework\TestCase;
+use Psr\Http\Message\MessageInterface;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 use UaResult\Result\Result;
 use UaResult\Result\ResultFactory;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
-class DetectorTest extends \PHPUnit\Framework\TestCase
+class DetectorTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Detector
      */
     private $object;
-
-    /**
-     * @var \Psr\Cache\CacheItemPoolInterface
-     */
-    private static $cache = null;
-
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private static $logger = null;
 
     /**
      * Sets up the fixture, for example, open a network connection.
@@ -50,17 +35,17 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $this->object = new Detector(static::getCache(), static::getLogger());
+        $logger = new NullLogger();
+        $cache  = new FilesystemCache('', 0, __DIR__ . '/../cache/');
+
+        $this->object = new Detector($cache, $logger);
     }
 
     /**
      * @dataProvider providerGetBrowser
      *
-     * @param string                  $userAgent
-     * @param \UaResult\Result\Result $expectedResult
-     *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
+     * @param string $userAgent
+     * @param Result $expectedResult
      *
      * @return void
      */
@@ -69,7 +54,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
         /* @var \UaResult\Result\Result $result */
         $result = $this->object->getBrowser($userAgent);
 
-        self::assertInstanceOf('\UaResult\Result\Result', $result);
+        self::assertInstanceOf(Result::class, $result);
 
         self::assertEquals($expectedResult, $result);
     }
@@ -77,20 +62,17 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider providerGetBrowser
      *
-     * @param string                  $userAgent
-     * @param \UaResult\Result\Result $expectedResult
-     *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
+     * @param string $userAgent
+     * @param Result $expectedResult
      *
      * @return void
      */
     public function testGetBrowserFromArray(string $userAgent, Result $expectedResult): void
     {
-        /* @var \UaResult\Result\Result $result */
+        /* @var Result $result */
         $result = $this->object->getBrowser([Constants::HEADER_HTTP_USERAGENT => $userAgent]);
 
-        self::assertInstanceOf('\UaResult\Result\Result', $result);
+        self::assertInstanceOf(Result::class, $result);
 
         self::assertEquals($expectedResult, $result);
     }
@@ -98,35 +80,29 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider providerGetBrowser
      *
-     * @param string                  $userAgent
-     * @param \UaResult\Result\Result $expectedResult
-     *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
+     * @param string $userAgent
+     * @param Result $expectedResult
      *
      * @return void
      */
     public function testGetBrowserFromPsr7Message(string $userAgent, Result $expectedResult): void
     {
         /* @var \PHPUnit_Framework_MockObject_MockObject|\Psr\Http\Message\MessageInterface $message */
-        $message = $this->createMock('\Psr\Http\Message\MessageInterface');
+        $message = $this->createMock(MessageInterface::class);
         $message
             ->expects(self::once())
             ->method('getHeaders')
             ->willReturn([Constants::HEADER_HTTP_USERAGENT => [$userAgent]]);
 
-        /* @var \UaResult\Result\Result $result */
+        /* @var Result $result */
         $result = $this->object->getBrowser($message);
 
-        self::assertInstanceOf('\UaResult\Result\Result', $result);
+        self::assertInstanceOf(Result::class, $result);
 
         self::assertEquals($expectedResult, $result);
     }
 
     /**
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return void
      */
     public function testGetBrowserFromInvalid(): void
@@ -142,8 +118,9 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      */
     public function providerGetBrowser(): array
     {
-        $data  = [];
-        $tests = json_decode(file_get_contents('tests/data/detector.json'), true);
+        $data   = [];
+        $tests  = json_decode(file_get_contents('tests/data/detector.json'), true);
+        $logger = new NullLogger();
 
         foreach ($tests as $key => $test) {
             if (isset($data[$key])) {
@@ -153,38 +130,10 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
 
             $data[$key] = [
                 'ua'     => $test['ua'],
-                'result' => (new ResultFactory())->fromArray(static::getLogger(), $test['result']),
+                'result' => (new ResultFactory())->fromArray($logger, $test['result']),
             ];
         }
 
         return $data;
-    }
-
-    /**
-     * @return \Psr\Cache\CacheItemPoolInterface
-     */
-    private static function getCache(): CacheItemPoolInterface
-    {
-        if (null !== static::$cache) {
-            return static::$cache;
-        }
-
-        static::$cache = new FilesystemAdapter('', 0, __DIR__ . '/../cache/');
-
-        return static::$cache;
-    }
-
-    /**
-     * @return \Psr\Log\LoggerInterface
-     */
-    private static function getLogger(): LoggerInterface
-    {
-        if (null !== static::$logger) {
-            return static::$logger;
-        }
-
-        static::$logger = new NullLogger();
-
-        return static::$logger;
     }
 }

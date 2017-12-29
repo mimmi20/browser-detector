@@ -18,9 +18,9 @@ use BrowserDetector\Helper\GenericRequestFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
-use Psr\Cache\CacheItemPoolInterface;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
+use Psr\SimpleCache\CacheInterface;
 use Stringy\Stringy;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
@@ -36,7 +36,7 @@ class Detector
     /**
      * a cache object
      *
-     * @var \Psr\Cache\CacheItemPoolInterface
+     * @var \Psr\SimpleCache\CacheInterface
      */
     private $cache;
 
@@ -50,10 +50,10 @@ class Detector
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     * @param \Psr\Log\LoggerInterface          $logger
+     * @param \Psr\SimpleCache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface        $logger
      */
-    public function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger)
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
         $this->cache  = $cache;
         $this->logger = $logger;
@@ -64,16 +64,13 @@ class Detector
      *
      * @param array|\Psr\Http\Message\MessageInterface|string $headers
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return \UaResult\Result\ResultInterface
      */
     public function getBrowser($headers): ResultInterface
     {
         $request = $this->buildRequest($headers);
 
-        $deviceFactory = new Factory\DeviceFactory(new DeviceLoader($this->cache, $this->logger));
+        $deviceFactory = new Factory\DeviceFactory(DeviceLoader::getInstance($this->cache, $this->logger));
         $normalizer    = (new NormalizerFactory())->build();
         $deviceUa      = $normalizer->normalize($request->getDeviceUserAgent());
 
@@ -94,7 +91,7 @@ class Detector
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
 
-            $platformFactory = new PlatformFactory(new PlatformLoader($this->cache, $this->logger));
+            $platformFactory = new PlatformFactory(PlatformLoader::getInstance($this->cache, $this->logger));
 
             try {
                 $platform = $platformFactory->detect($browserUa, $s);
@@ -104,12 +101,12 @@ class Detector
             }
         }
 
-        $browserLoader = new Loader\BrowserLoader($this->cache, $this->logger);
+        $browserLoader = Loader\BrowserLoader::getInstance($this->cache, $this->logger);
 
         // @var \UaResult\Browser\BrowserInterface $browser
         // @var \UaResult\Engine\EngineInterface $engine
         [$browser, $engine] = (new Factory\BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
-        $engineLoader       = new Loader\EngineLoader($this->cache, $this->logger);
+        $engineLoader       = Loader\EngineLoader::getInstance($this->cache, $this->logger);
 
         if (null === $engine) {
             $this->logger->debug('engine not detected from browser');

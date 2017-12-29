@@ -13,103 +13,152 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
-use Psr\Cache\CacheItemInterface;
-use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
+use Psr\SimpleCache\CacheInterface;
+use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
-use Seld\JsonLint\ParsingException;
 use UaResult\Company\CompanyLoader;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
-/**
- * Browser detection class
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
 class EngineLoader implements ExtendedLoaderInterface
 {
+    private const CACHE_PREFIX = 'engine';
+
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface
+     * @var \Psr\SimpleCache\CacheInterface
      */
     private $cache;
 
     /**
-     * an logger instance
-     *
      * @var \Psr\Log\LoggerInterface
      */
     private $logger;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     * @param \Psr\Log\LoggerInterface          $logger
-     *
-     * @return self
+     * @var self|null
      */
-    public function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger)
+    private static $instance;
+
+    /**
+     * @param \Psr\SimpleCache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface        $logger
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
+     */
+    private function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
         $this->cache  = $cache;
         $this->logger = $logger;
+
+        $this->init();
+    }
+
+    /**
+     * @param \Psr\SimpleCache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface        $logger
+     *
+     * @return self
+     */
+    public static function getInstance(CacheInterface $cache, LoggerInterface $logger)
+    {
+        if (null === self::$instance) {
+            self::$instance = new self($cache, $logger);
+        }
+
+        return self::$instance;
+    }
+
+    /**
+     * @return void
+     */
+    public static function resetInstance(): void
+    {
+        self::$instance = null;
     }
 
     /**
      * initializes cache
      *
-     * @throws \Psr\Cache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
     private function init(): void
     {
-        $cacheInitializedId = hash('sha512', 'engine-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+        foreach ($this->getEngines() as $engineKey => $data) {
+            $cacheKey = $this->getCacheKey((string) $engineKey);
 
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
+            if ($this->cache->has($cacheKey)) {
+                continue;
+            }
+
+            $this->cache->set($cacheKey, $data);
+        }
+    }
+
+    /**
+     * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return \Generator|\stdClass[]
+     */
+    private function getEngines(): \Generator
+    {
+        static $engines = null;
+
+        if (null === $engines) {
+            $jsonParser = new JsonParser();
+            $engines    = $jsonParser->parse(
+                file_get_contents(__DIR__ . '/../../data/engines.json'),
+                JsonParser::DETECT_KEY_CONFLICTS
+            );
+        }
+
+        foreach ($engines as $engineKey => $data) {
+            yield $engineKey => $data;
         }
     }
 
     /**
      * @param string $engineKey
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return bool
      */
     public function has(string $engineKey): bool
     {
-        $this->init();
+        try {
+            return $this->cache->has($this->getCacheKey($engineKey));
+        } catch (InvalidArgumentException $e) {
+            $this->logger->info($e);
 
-        $cacheItem = $this->cache->getItem(hash('sha512', 'engine-cache-' . $engineKey));
-
-        return $cacheItem->isHit();
+            return false;
+        }
     }
 
     /**
      * @param string $engineKey
      * @param string $useragent
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
+     * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return \UaResult\Engine\EngineInterface
      */
     public function load(string $engineKey, string $useragent = ''): EngineInterface
     {
-        $this->init();
-
         if (!$this->has($engineKey)) {
             throw new NotFoundException('the engine with key "' . $engineKey . '" was not found');
         }
 
-        $cacheItem = $this->cache->getItem(hash('sha512', 'engine-cache-' . $engineKey));
-
-        $engine = $cacheItem->get();
+        try {
+            $engine = $this->cache->get($this->getCacheKey($engineKey));
+        } catch (InvalidArgumentException $e) {
+            throw new NotFoundException('the engine with key "' . $engineKey . '" was not found', 0, $e);
+        }
 
         $engineVersionClass = $engine->version->class;
+        $manufacturer       = CompanyLoader::getInstance()->load($engine->manufacturer);
 
         if (!is_string($engineVersionClass)) {
             $version = new Version('0');
@@ -117,52 +166,24 @@ class EngineLoader implements ExtendedLoaderInterface
             $version = VersionFactory::detectVersion($useragent, $engine->version->search);
         } else {
             /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
-            $versionClass = new $engineVersionClass($this->logger);
+            $versionClass = new $engineVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }
 
         return new Engine(
             $engine->name,
-            $engine->manufacturer,
+            $manufacturer,
             $version
         );
     }
 
     /**
-     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
+     * @param string $deviceKey
      *
-     * @throws \RuntimeException
-     * @throws \Psr\Cache\InvalidArgumentException
-     *
-     * @return void
+     * @return string
      */
-    private function initCache(CacheItemInterface $cacheInitialized): void
+    private function getCacheKey(string $deviceKey): string
     {
-        $jsonParser = new JsonParser();
-        $file       = new \SplFileInfo(__DIR__ . '/../../data/engines.json');
-
-        try {
-            $engines = $jsonParser->parse(
-                file_get_contents($file->getPathname()),
-                JsonParser::DETECT_KEY_CONFLICTS
-            );
-        } catch (ParsingException $e) {
-            throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
-        }
-
-        $companyLoader = CompanyLoader::getInstance();
-
-        foreach ($engines as $engineKey => $engineData) {
-            $cacheItem = $this->cache->getItem(hash('sha512', 'engine-cache-' . $engineKey));
-
-            $engineData->manufacturer = $companyLoader->load($engineData->manufacturer);
-
-            $cacheItem->set($engineData);
-
-            $this->cache->save($cacheItem);
-        }
-
-        $cacheInitialized->set(true);
-        $this->cache->save($cacheInitialized);
+        return self::CACHE_PREFIX . '_' . str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $deviceKey);
     }
 }

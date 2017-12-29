@@ -18,16 +18,14 @@ use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
+use BrowserDetector\Version\Version;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Stringy\Stringy;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
+use UaResult\Engine\EngineInterface;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
-class EngineFactoryTest extends \PHPUnit\Framework\TestCase
+class EngineFactoryTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Factory\EngineFactory
@@ -35,14 +33,14 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
     private $object;
 
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface
+     * @var \BrowserDetector\Factory\PlatformFactory
      */
-    private $cache;
+    private $platformFactory;
 
     /**
-     * @var \Psr\Log\LoggerInterface
+     * @var \BrowserDetector\Loader\BrowserLoader
      */
-    private $logger;
+    private $browserLoader;
 
     /**
      * Sets up the fixture, for example, open a network connection.
@@ -52,10 +50,15 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $this->cache  = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $this->logger = new NullLogger();
-        $loader       = new EngineLoader($this->cache, $this->logger);
+        $cache        = new FilesystemCache('', 0, __DIR__ . '/../../cache/');
+        $logger       = new NullLogger();
+        $loader       = EngineLoader::getInstance($cache, $logger);
         $this->object = new EngineFactory($loader);
+
+        $platformLoader        = PlatformLoader::getInstance($cache, $logger);
+        $this->platformFactory = new PlatformFactory($platformLoader);
+
+        $this->browserLoader   = BrowserLoader::getInstance($cache, $logger);
     }
 
     /**
@@ -67,7 +70,6 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string|null $manufacturer
      *
      * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
@@ -75,28 +77,26 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $normalizer      = (new NormalizerFactory())->build();
         $normalizedUa    = $normalizer->normalize($userAgent);
-        $browserLoader   = new BrowserLoader($this->cache, $this->logger);
-        $platformFactory = new PlatformFactory(new PlatformLoader($this->cache, $this->logger));
 
         $s = new Stringy($normalizedUa);
 
         try {
-            $platform = $platformFactory->detect($normalizedUa, $s);
+            $platform = $this->platformFactory->detect($normalizedUa, $s);
         } catch (NotFoundException $e) {
             $platform = null;
         }
 
         /* @var \UaResult\Engine\EngineInterface $result */
-        $result = $this->object->detect($normalizedUa, $s, $browserLoader, $platform);
+        $result = $this->object->detect($normalizedUa, $s, $this->browserLoader, $platform);
 
-        self::assertInstanceOf('\UaResult\Engine\EngineInterface', $result);
+        self::assertInstanceOf(EngineInterface::class, $result);
         self::assertSame(
             $engine,
             $result->getName(),
             'Expected engine name to be "' . $engine . '" (was "' . $result->getName() . '")'
         );
 
-        self::assertInstanceOf('\BrowserDetector\Version\Version', $result->getVersion());
+        self::assertInstanceOf(Version::class, $result->getVersion());
         self::assertSame(
             $version,
             $result->getVersion()->getVersion(),

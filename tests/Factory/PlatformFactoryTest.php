@@ -14,16 +14,12 @@ namespace BrowserDetectorTest\Factory;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\PlatformLoader;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Stringy\Stringy;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
-class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
+class PlatformFactoryTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Factory\PlatformFactory
@@ -38,9 +34,9 @@ class PlatformFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
+        $cache        = new FilesystemCache('', 0, __DIR__ . '/../../cache/');
         $logger       = new NullLogger();
-        $loader       = new PlatformLoader($cache, $logger);
+        $loader       = PlatformLoader::getInstance($cache, $logger);
         $this->object = new PlatformFactory($loader);
     }
 
