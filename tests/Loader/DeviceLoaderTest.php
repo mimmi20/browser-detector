@@ -12,15 +12,14 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\DeviceLoader;
-use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for \BrowserDetector\Loader\DeviceLoader
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class DeviceLoaderTest extends \PHPUnit\Framework\TestCase
+class DeviceLoaderTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Loader\DeviceLoader
@@ -35,15 +34,10 @@ class DeviceLoaderTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $logger       = new NullLogger();
-        $this->object = new DeviceLoader($cache, $logger);
+        $this->object = DeviceLoader::getInstance();
     }
 
     /**
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return void
      */
     public function testLoadNotAvailable(): void

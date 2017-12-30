@@ -18,31 +18,20 @@ use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
-use Psr\Log\NullLogger;
+use PHPUnit\Framework\TestCase;
 use Stringy\Stringy;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class EngineFactoryTest extends \PHPUnit\Framework\TestCase
+class EngineFactoryTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Factory\EngineFactory
      */
     private $object;
-
-    /**
-     * @var \Psr\Cache\CacheItemPoolInterface
-     */
-    private $cache;
-
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
 
     /**
      * Sets up the fixture, for example, open a network connection.
@@ -52,9 +41,7 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $this->cache  = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $this->logger = new NullLogger();
-        $loader       = new EngineLoader($this->cache, $this->logger);
+        $loader       = EngineLoader::getInstance();
         $this->object = new EngineFactory($loader);
     }
 
@@ -66,17 +53,14 @@ class EngineFactoryTest extends \PHPUnit\Framework\TestCase
      * @param string|null $version
      * @param string|null $manufacturer
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return void
      */
     public function testDetect(string $userAgent, ?string $engine, ?string $version, ?string $manufacturer): void
     {
         $normalizer      = (new NormalizerFactory())->build();
         $normalizedUa    = $normalizer->normalize($userAgent);
-        $browserLoader   = new BrowserLoader($this->cache, $this->logger);
-        $platformFactory = new PlatformFactory(new PlatformLoader($this->cache, $this->logger));
+        $browserLoader   = BrowserLoader::getInstance();
+        $platformFactory = new PlatformFactory(PlatformLoader::getInstance());
 
         $s = new Stringy($normalizedUa);
 

@@ -13,10 +13,9 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
 use BrowserDetector\Helper\Constants;
-use Psr\Cache\CacheItemPoolInterface;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use UaResult\Result\Result;
 use UaResult\Result\ResultFactory;
 
@@ -25,17 +24,12 @@ use UaResult\Result\ResultFactory;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class DetectorTest extends \PHPUnit\Framework\TestCase
+class DetectorTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Detector
      */
     private $object;
-
-    /**
-     * @var \Psr\Cache\CacheItemPoolInterface
-     */
-    private static $cache = null;
 
     /**
      * @var \Psr\Log\LoggerInterface
@@ -50,7 +44,7 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $this->object = new Detector(static::getCache(), static::getLogger());
+        $this->object = new Detector(static::getLogger());
     }
 
     /**
@@ -58,9 +52,6 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      *
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
-     *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
@@ -80,9 +71,6 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return void
      */
     public function testGetBrowserFromArray(string $userAgent, Result $expectedResult): void
@@ -100,9 +88,6 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
      *
      * @param string                  $userAgent
      * @param \UaResult\Result\Result $expectedResult
-     *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
@@ -124,9 +109,6 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return void
      */
     public function testGetBrowserFromInvalid(): void
@@ -158,20 +140,6 @@ class DetectorTest extends \PHPUnit\Framework\TestCase
         }
 
         return $data;
-    }
-
-    /**
-     * @return \Psr\Cache\CacheItemPoolInterface
-     */
-    private static function getCache(): CacheItemPoolInterface
-    {
-        if (null !== static::$cache) {
-            return static::$cache;
-        }
-
-        static::$cache = new FilesystemAdapter('', 0, __DIR__ . '/../cache/');
-
-        return static::$cache;
     }
 
     /**

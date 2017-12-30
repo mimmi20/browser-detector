@@ -15,8 +15,6 @@ use BrowserDetector\Factory\Device\Desktop\AppleFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Factory\Device\Desktop\AppleFactory
@@ -38,9 +36,7 @@ class AppleFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../../cache/');
-        $logger       = new NullLogger();
-        $loader       = new DeviceLoader($cache, $logger);
+        $loader       = DeviceLoader::getInstance();
         $this->object = new AppleFactory($loader);
     }
 

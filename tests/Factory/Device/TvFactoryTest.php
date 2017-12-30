@@ -14,8 +14,6 @@ namespace BrowserDetectorTest\Factory\Device;
 use BrowserDetector\Factory\Device\TvFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
-use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Tv\GeneralTv
@@ -37,9 +35,7 @@ class TvFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
-        $logger       = new NullLogger();
-        $loader       = new DeviceLoader($cache, $logger);
+        $loader       = DeviceLoader::getInstance();
         $this->object = new TvFactory($loader);
     }
 

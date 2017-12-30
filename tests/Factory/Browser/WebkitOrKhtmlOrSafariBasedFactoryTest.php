@@ -17,9 +17,7 @@ use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\PlatformLoader;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 use Stringy\Stringy;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -34,11 +32,6 @@ class WebkitOrKhtmlOrSafariBasedFactoryTest extends TestCase
     private $object;
 
     /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
-
-    /**
      * @var \BrowserDetector\Factory\PlatformFactory
      */
     private $platformFactory;
@@ -51,12 +44,10 @@ class WebkitOrKhtmlOrSafariBasedFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
-        $logger       = new NullLogger();
-        $loader       = new BrowserLoader($cache, $logger);
+        $loader       = BrowserLoader::getInstance();
         $this->object = new WebkitOrKhtmlOrSafariBasedFactory($loader);
 
-        $platformLoader        = new PlatformLoader($cache, $logger);
+        $platformLoader        = PlatformLoader::getInstance();
         $this->platformFactory = new PlatformFactory($platformLoader);
     }
 

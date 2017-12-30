@@ -11,170 +11,159 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-use Psr\Cache\CacheItemInterface;
-use Psr\Cache\CacheItemPoolInterface;
-use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use UaDeviceType\TypeLoader;
 use UaResult\Company\CompanyLoader;
 use UaResult\Device\Device;
 
-/**
- * Device detection class
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
 class DeviceLoader implements ExtendedLoaderInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface
+     * @var \stdClass[]
      */
-    private $cache;
+    private $devices = [];
 
     /**
-     * an logger instance
-     *
-     * @var \Psr\Log\LoggerInterface
+     * @var self|null
      */
-    private $logger;
+    private static $instance;
 
     /**
-     * @param \Psr\Cache\CacheItemPoolInterface $cache
-     * @param \Psr\Log\LoggerInterface          $logger
-     *
+     * @throws \RuntimeException
+     */
+    private function __construct()
+    {
+        $this->init();
+    }
+
+    /**
      * @return self
      */
-    public function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger)
+    public static function getInstance()
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        if (null === self::$instance) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
+    }
+
+    /**
+     * @return void
+     */
+    public static function resetInstance(): void
+    {
+        self::$instance = null;
     }
 
     /**
      * initializes cache
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
+     * @throws \RuntimeException
      *
      * @return void
      */
     private function init(): void
     {
-        $cacheInitializedId = hash('sha512', 'device-cache is initialized');
-        $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
+        $this->devices = [];
 
-        if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            $this->initCache($cacheInitialized);
+        foreach ($this->getDevices() as $key => $data) {
+            $this->devices[$key] = $data;
+        }
+    }
+
+    /**
+     * @throws \RuntimeException
+     *
+     * @return \Generator|\stdClass[]
+     */
+    private function getDevices(): \Generator
+    {
+        static $devices = null;
+
+        if (null === $devices) {
+            $sourceDirectory = __DIR__ . '/../../data/devices/';
+            $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
+            $jsonParser      = new JsonParser();
+            $devices         = [];
+
+            foreach (new \RecursiveIteratorIterator($iterator) as $file) {
+                /* @var $file \SplFileInfo */
+                if (!$file->isFile() || 'json' !== $file->getExtension()) {
+                    continue;
+                }
+
+                try {
+                    $devicesFile = $jsonParser->parse(
+                        file_get_contents($file->getPathname()),
+                        JsonParser::DETECT_KEY_CONFLICTS
+                    );
+                } catch (ParsingException $e) {
+                    throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
+                }
+
+                foreach ($devicesFile as $deviceKey => $deviceData) {
+                    if (array_key_exists($deviceKey, $devices)) {
+                        throw new \RuntimeException('device key "' . $deviceKey . '" was defined more then once');
+                    }
+
+                    $devices[$deviceKey] = $deviceData;
+                }
+            }
+        }
+
+        foreach ($devices as $key => $data) {
+            yield $key => $data;
         }
     }
 
     /**
      * @param string $deviceKey
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return bool
      */
     public function has(string $deviceKey): bool
     {
-        $this->init();
-
-        $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
-
-        return $cacheItem->isHit();
+        return array_key_exists($deviceKey, $this->devices);
     }
 
     /**
      * @param string $deviceKey
      * @param string $useragent
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return array
      */
     public function load(string $deviceKey, string $useragent = ''): array
     {
-        $this->init();
-
         if (!$this->has($deviceKey)) {
             throw new NotFoundException('the device with key "' . $deviceKey . '" was not found');
         }
 
-        $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
-
-        $device      = $cacheItem->get();
-        $platformKey = $device->platform;
+        $deviceData      = $this->devices[$deviceKey];
+        $platformKey     = $deviceData->platform;
 
         if (null === $platformKey) {
             $platform = null;
         } else {
-            $platform = (new PlatformLoader($this->cache, $this->logger))->load($platformKey, $useragent);
+            $platform = PlatformLoader::getInstance()->load($platformKey, $useragent);
         }
-
-        $device = new Device(
-            $device->codename,
-            $device->marketingName,
-            $device->manufacturer,
-            $device->brand,
-            $device->type,
-            $device->pointingMethod,
-            $device->resolutionWidth,
-            $device->resolutionHeight,
-            $device->dualOrientation
-        );
-
-        return [$device, $platform];
-    }
-
-    /**
-     * @param \Psr\Cache\CacheItemInterface $cacheInitialized
-     *
-     * @throws \RuntimeException
-     * @throws \Psr\Cache\InvalidArgumentException
-     *
-     * @return void
-     */
-    private function initCache(CacheItemInterface $cacheInitialized): void
-    {
-        $sourceDirectory = __DIR__ . '/../../data/devices/';
-        $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
 
         $companyLoader = CompanyLoader::getInstance();
         $typeLoader    = TypeLoader::getInstance();
-        $jsonParser    = new JsonParser();
 
-        foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-            /* @var $file \SplFileInfo */
-            if (!$file->isFile() || 'json' !== $file->getExtension()) {
-                continue;
-            }
+        $device = new Device(
+            $deviceData->codename,
+            $deviceData->marketingName,
+            $companyLoader->load($deviceData->manufacturer),
+            $companyLoader->load($deviceData->brand),
+            $typeLoader->load($deviceData->type),
+            $deviceData->pointingMethod,
+            $deviceData->resolutionWidth,
+            $deviceData->resolutionHeight,
+            $deviceData->dualOrientation
+        );
 
-            try {
-                $devices = $jsonParser->parse(
-                    file_get_contents($file->getPathname()),
-                    JsonParser::DETECT_KEY_CONFLICTS
-                );
-            } catch (ParsingException $e) {
-                throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
-            }
-
-            foreach ($devices as $deviceKey => $deviceData) {
-                $cacheItem = $this->cache->getItem(hash('sha512', 'device-cache-' . $deviceKey));
-
-                $deviceData->manufacturer = $companyLoader->load($deviceData->manufacturer);
-                $deviceData->brand        = $companyLoader->load($deviceData->brand);
-                $deviceData->type         = $typeLoader->load($deviceData->type);
-
-                $cacheItem->set($deviceData);
-
-                $this->cache->save($cacheItem);
-            }
-        }
-
-        $cacheInitialized->set(true);
-        $this->cache->save($cacheInitialized);
+        return [$device, $platform];
     }
 }
