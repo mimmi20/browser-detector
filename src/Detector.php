@@ -20,11 +20,12 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\CacheInterface;
 use Stringy\Stringy;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
+use BrowserDetector\Cache\Cache;
+use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 
 /**
  * Browser Detection class
@@ -36,7 +37,7 @@ class Detector
     /**
      * a cache object
      *
-     * @var \Psr\SimpleCache\CacheInterface
+     * @var \BrowserDetector\Cache\Cache
      */
     private $cache;
 
@@ -53,9 +54,9 @@ class Detector
      * @param \Psr\SimpleCache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface        $logger
      */
-    public function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(PsrCacheInterface $cache, LoggerInterface $logger)
     {
-        $this->cache  = $cache;
+        $this->cache  = new Cache($cache);
         $this->logger = $logger;
     }
 

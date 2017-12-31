@@ -16,9 +16,10 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\CacheInterface;
+use BrowserDetector\Cache\CacheInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
+use Seld\JsonLint\ParsingException;
 use UaResult\Company\CompanyLoader;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
@@ -28,7 +29,7 @@ class PlatformLoader implements ExtendedLoaderInterface
     private const CACHE_PREFIX = 'platform';
 
     /**
-     * @var \Psr\SimpleCache\CacheInterface
+     * @var \BrowserDetector\Cache\CacheInterface
      */
     private $cache;
 
@@ -43,7 +44,7 @@ class PlatformLoader implements ExtendedLoaderInterface
     private static $instance;
 
     /**
-     * @param \Psr\SimpleCache\CacheInterface $cache
+     * @param \BrowserDetector\Cache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface        $logger
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
@@ -53,12 +54,10 @@ class PlatformLoader implements ExtendedLoaderInterface
     {
         $this->cache  = $cache;
         $this->logger = $logger;
-
-        $this->init();
     }
 
     /**
-     * @param \Psr\SimpleCache\CacheInterface $cache
+     * @param \BrowserDetector\Cache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface        $logger
      *
      * @return self
@@ -90,15 +89,23 @@ class PlatformLoader implements ExtendedLoaderInterface
      */
     private function init(): void
     {
+        $initKey = $this->getCacheKey('initialized');
+
+        if ($this->cache->hasItem($initKey) && $this->cache->getItem($initKey)) {
+            return;
+        }
+
         foreach ($this->getPlatforms() as $platformCode => $data) {
             $cacheKey = $this->getCacheKey((string) $platformCode);
 
-            if ($this->cache->has($cacheKey)) {
+            if ($this->cache->hasItem($cacheKey)) {
                 continue;
             }
 
-            $this->cache->set($cacheKey, $data);
+            $this->cache->setItem($cacheKey, $data);
         }
+
+        $this->cache->setItem($initKey, true);
     }
 
     /**
@@ -131,7 +138,7 @@ class PlatformLoader implements ExtendedLoaderInterface
     public function has(string $platformCode): bool
     {
         try {
-            return $this->cache->has($this->getCacheKey($platformCode));
+            return $this->cache->hasItem($this->getCacheKey($platformCode));
         } catch (InvalidArgumentException $e) {
             $this->logger->info($e);
 
@@ -155,7 +162,7 @@ class PlatformLoader implements ExtendedLoaderInterface
         }
 
         try {
-            $platform = $this->cache->get($this->getCacheKey($platformCode));
+            $platform = $this->cache->getItem($this->getCacheKey($platformCode));
         } catch (InvalidArgumentException $e) {
             throw new NotFoundException('the platform with key "' . $platformCode . '" was not found', 0, $e);
         }
@@ -198,5 +205,14 @@ class PlatformLoader implements ExtendedLoaderInterface
     private function getCacheKey(string $deviceKey): string
     {
         return self::CACHE_PREFIX . '_' . str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $deviceKey);
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
+     */
+    public function warmupCache()
+    {
+        $this->init();
     }
 }

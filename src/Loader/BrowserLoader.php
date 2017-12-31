@@ -15,9 +15,10 @@ use BrowserDetector\Bits\Browser as BrowserBits;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\CacheInterface;
+use BrowserDetector\Cache\CacheInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
+use Seld\JsonLint\ParsingException;
 use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
 use UaResult\Company\CompanyLoader;
@@ -27,7 +28,7 @@ class BrowserLoader implements ExtendedLoaderInterface
     private const CACHE_PREFIX = 'browser';
 
     /**
-     * @var \Psr\SimpleCache\CacheInterface
+     * @var \BrowserDetector\Cache\CacheInterface
      */
     private $cache;
 
@@ -42,7 +43,7 @@ class BrowserLoader implements ExtendedLoaderInterface
     private static $instance;
 
     /**
-     * @param \Psr\SimpleCache\CacheInterface $cache
+     * @param \BrowserDetector\Cache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface        $logger
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
@@ -52,12 +53,10 @@ class BrowserLoader implements ExtendedLoaderInterface
     {
         $this->cache  = $cache;
         $this->logger = $logger;
-
-        $this->init();
     }
 
     /**
-     * @param \Psr\SimpleCache\CacheInterface $cache
+     * @param \BrowserDetector\Cache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface        $logger
      *
      * @return self
@@ -89,15 +88,23 @@ class BrowserLoader implements ExtendedLoaderInterface
      */
     private function init(): void
     {
+        $initKey = $this->getCacheKey('initialized');
+
+        if ($this->cache->hasItem($initKey) && $this->cache->getItem($initKey)) {
+            return;
+        }
+
         foreach ($this->getBrowsers() as $browserKey => $data) {
             $cacheKey = $this->getCacheKey((string) $browserKey);
 
-            if ($this->cache->has($cacheKey)) {
+            if ($this->cache->hasItem($cacheKey)) {
                 continue;
             }
 
-            $this->cache->set($cacheKey, $data);
+            $this->cache->setItem($cacheKey, $data);
         }
+
+        $this->cache->setItem($initKey, true);
     }
 
     /**
@@ -130,7 +137,7 @@ class BrowserLoader implements ExtendedLoaderInterface
     public function has(string $browserKey): bool
     {
         try {
-            return $this->cache->has($this->getCacheKey($browserKey));
+            return $this->cache->hasItem($this->getCacheKey($browserKey));
         } catch (InvalidArgumentException $e) {
             $this->logger->info($e);
 
@@ -153,7 +160,7 @@ class BrowserLoader implements ExtendedLoaderInterface
         }
 
         try {
-            $browserData = $this->cache->get($this->getCacheKey($browserKey));
+            $browserData = $this->cache->getItem($this->getCacheKey($browserKey));
         } catch (InvalidArgumentException $e) {
             throw new NotFoundException('the browser with key "' . $browserKey . '" was not found', 0, $e);
         }
@@ -200,5 +207,14 @@ class BrowserLoader implements ExtendedLoaderInterface
     private function getCacheKey(string $deviceKey): string
     {
         return self::CACHE_PREFIX . '_' . str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $deviceKey);
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
+     */
+    public function warmupCache()
+    {
+        $this->init();
     }
 }
