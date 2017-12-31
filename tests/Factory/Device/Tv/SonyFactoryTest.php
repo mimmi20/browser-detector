@@ -15,6 +15,7 @@ use BrowserDetector\Factory\Device\Tv\SonyFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
 use Psr\Log\NullLogger;
+use BrowserDetector\Cache\Cache;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
@@ -25,11 +26,6 @@ use Symfony\Component\Cache\Simple\FilesystemCache;
 class SonyFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\Tv\SonyFactory
-     */
-    private $object;
-
-    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
@@ -37,9 +33,12 @@ class SonyFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemCache('', 0, __DIR__ . '/../../../../cache/');
+        $cache        = new FilesystemCache('', 0, 'cache/');
         $logger       = new NullLogger();
-        $loader       = DeviceLoader::getInstance($cache, $logger);
+        $loader       = DeviceLoader::getInstance(new Cache($cache), $logger);
+
+        $loader->warmupCache();
+        
         $this->object = new SonyFactory($loader);
     }
 

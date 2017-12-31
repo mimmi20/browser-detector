@@ -14,27 +14,27 @@ namespace BrowserDetectorTest\Factory\Device\Mobile;
 use BrowserDetector\Factory\Device\Mobile\LeagooFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
+use BrowserDetector\Cache\Cache;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
-class LeagooFactoryTest extends \PHPUnit\Framework\TestCase
+class LeagooFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Factory\Device\Mobile\LeagooFactory
-     */
-    private $object;
-
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
-     *
      * @return void
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemCache('', 0, __DIR__ . '/../../../../cache/');
+        $cache        = new FilesystemCache('', 0, 'cache/');
         $logger       = new NullLogger();
-        $loader       = DeviceLoader::getInstance($cache, $logger);
+        $loader       = DeviceLoader::getInstance(new Cache($cache), $logger);
+
+        $loader->warmupCache();
+        
         $this->object = new LeagooFactory($loader);
     }
 

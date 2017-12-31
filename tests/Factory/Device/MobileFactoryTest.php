@@ -15,6 +15,7 @@ use BrowserDetector\Factory\Device\MobileFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
 use Psr\Log\NullLogger;
+use BrowserDetector\Cache\Cache;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
 class MobileFactoryTest extends \PHPUnit\Framework\TestCase
@@ -32,9 +33,12 @@ class MobileFactoryTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemCache('', 0, __DIR__ . '/../../../cache/');
+        $cache        = new FilesystemCache('', 0, 'cache/');
         $logger       = new NullLogger();
-        $loader       = DeviceLoader::getInstance($cache, $logger);
+        $loader       = DeviceLoader::getInstance(new Cache($cache), $logger);
+
+        $loader->warmupCache();
+        
         $this->object = new MobileFactory($loader);
     }
 
