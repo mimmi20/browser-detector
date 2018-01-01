@@ -16,9 +16,7 @@ use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 class Cache implements CacheInterface
 {
     /**
-     * Path to the cache directory
-     *
-     * @var \BrowserDetector\Cache\CacheInterface
+     * @var \Psr\SimpleCache\CacheInterface
      */
     private $cache;
 
