@@ -12,14 +12,13 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Os as OsBits;
+use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
-use BrowserDetector\Cache\CacheInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
-use Seld\JsonLint\ParsingException;
 use UaResult\Company\CompanyLoader;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
@@ -45,7 +44,7 @@ class PlatformLoader implements ExtendedLoaderInterface
 
     /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface        $logger
+     * @param \Psr\Log\LoggerInterface              $logger
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
@@ -58,7 +57,7 @@ class PlatformLoader implements ExtendedLoaderInterface
 
     /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface        $logger
+     * @param \Psr\Log\LoggerInterface              $logger
      *
      * @return self
      */
@@ -210,8 +209,10 @@ class PlatformLoader implements ExtendedLoaderInterface
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
-    public function warmupCache()
+    public function warmupCache(): void
     {
         $this->init();
     }

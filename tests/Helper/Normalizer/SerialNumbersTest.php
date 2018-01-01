@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper\Normalizer;
 
 use BrowserDetector\Helper\Normalizer\SerialNumbers;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class SerialNumbersTest
@@ -20,7 +21,7 @@ use BrowserDetector\Helper\Normalizer\SerialNumbers;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class SerialNumbersTest extends \PHPUnit\Framework\TestCase
+class SerialNumbersTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Helper\Normalizer\SerialNumbers

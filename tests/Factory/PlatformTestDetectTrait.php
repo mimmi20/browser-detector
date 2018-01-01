@@ -11,14 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
-use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\NormalizerFactory;
-use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\PlatformLoader;
-use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 use Stringy\Stringy;
-use Symfony\Component\Cache\Simple\FilesystemCache;
 
 trait PlatformTestDetectTrait
 {
@@ -30,6 +25,8 @@ trait PlatformTestDetectTrait
     /**
      * Tears down the fixture, for example, close a network connection.
      * This method is called after a test is executed.
+     *
+     * @return void
      */
     protected function tearDown(): void
     {

@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper\Normalizer;
 
 use BrowserDetector\Helper\Normalizer\HexCode;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class LocaleRemoverTest
@@ -20,7 +21,7 @@ use BrowserDetector\Helper\Normalizer\HexCode;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class HexCodeTest extends \PHPUnit\Framework\TestCase
+class HexCodeTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Helper\Normalizer\HexCode

@@ -15,8 +15,8 @@ use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\PlatformLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Simple\FilesystemCache;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Loader\PlatformLoader
@@ -28,6 +28,8 @@ class PlatformLoaderTest extends TestCase
     /**
      * Tears down the fixture, for example, close a network connection.
      * This method is called after a test is executed.
+     *
+     * @return void
      */
     protected function tearDown(): void
     {

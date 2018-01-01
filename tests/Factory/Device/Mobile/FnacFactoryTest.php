@@ -11,18 +11,21 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Device\Mobile\FnacFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use BrowserDetector\Cache\Cache;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
-class FnacFactoryTest extends \PHPUnit\Framework\TestCase
+class FnacFactoryTest extends TestCase
 {
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
@@ -33,7 +36,7 @@ class FnacFactoryTest extends \PHPUnit\Framework\TestCase
         $loader       = DeviceLoader::getInstance(new Cache($cache), $logger);
 
         $loader->warmupCache();
-        
+
         $this->object = new FnacFactory($loader);
     }
 

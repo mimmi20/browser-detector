@@ -28,6 +28,8 @@ class DeviceLoaderTest extends TestCase
     /**
      * Tears down the fixture, for example, close a network connection.
      * This method is called after a test is executed.
+     *
+     * @return void
      */
     protected function tearDown(): void
     {
@@ -46,7 +48,7 @@ class DeviceLoaderTest extends TestCase
         $logger       = new NullLogger();
 
         $object = DeviceLoader::getInstance(new Cache($cache), $logger);
-        
+
         $object->load('does not exist', 'test-ua');
     }
 

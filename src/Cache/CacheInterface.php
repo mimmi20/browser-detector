@@ -1,6 +1,14 @@
 <?php
-declare(strict_types = 1);
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
+declare(strict_types = 1);
 namespace BrowserDetector\Cache;
 
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
@@ -32,14 +40,14 @@ interface CacheInterface
     /**
      * save the content into an php file
      *
-     * @param string $cacheId     The cache id
-     * @param mixed  $content     The content to store
+     * @param string $cacheId The cache id
+     * @param mixed  $content The content to store
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return bool whether the file was correctly written to the disk
      */
-    public function setItem(string $cacheId, $content) : bool;
+    public function setItem(string $cacheId, $content): bool;
 
     /**
      * Test if an item exists.
@@ -50,7 +58,7 @@ interface CacheInterface
      *
      * @return bool
      */
-    public function hasItem(string $cacheId) : bool;
+    public function hasItem(string $cacheId): bool;
 
     /**
      * Remove an item.
@@ -61,7 +69,7 @@ interface CacheInterface
      *
      * @return bool
      */
-    public function removeItem(string $cacheId) : bool;
+    public function removeItem(string $cacheId): bool;
 
     /**
      * Flush the whole storage
@@ -70,5 +78,5 @@ interface CacheInterface
      *
      * @return bool
      */
-    public function flush() : bool;
+    public function flush(): bool;
 }

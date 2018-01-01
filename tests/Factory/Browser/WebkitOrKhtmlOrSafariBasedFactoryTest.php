@@ -11,16 +11,14 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Browser;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Browser\WebkitOrKhtmlOrSafariBasedFactory;
-use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetectorTest\Factory\BrowserTestDetectTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Stringy\Stringy;
-use BrowserDetector\Cache\Cache;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
 class WebkitOrKhtmlOrSafariBasedFactoryTest extends TestCase
@@ -28,9 +26,11 @@ class WebkitOrKhtmlOrSafariBasedFactoryTest extends TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
-     * @return void
+     *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
     protected function setUp(): void
     {

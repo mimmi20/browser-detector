@@ -11,8 +11,8 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-use Psr\Log\LoggerInterface;
 use BrowserDetector\Cache\CacheInterface;
+use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
@@ -41,7 +41,7 @@ class DeviceLoader implements ExtendedLoaderInterface
 
     /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface        $logger
+     * @param \Psr\Log\LoggerInterface              $logger
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
@@ -53,7 +53,7 @@ class DeviceLoader implements ExtendedLoaderInterface
 
     /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface        $logger
+     * @param \Psr\Log\LoggerInterface              $logger
      *
      * @return self
      */
@@ -228,8 +228,10 @@ class DeviceLoader implements ExtendedLoaderInterface
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
-    public function warmupCache()
+    public function warmupCache(): void
     {
         $this->init();
     }

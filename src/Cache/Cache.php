@@ -1,6 +1,14 @@
 <?php
-declare(strict_types = 1);
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
+declare(strict_types = 1);
 namespace BrowserDetector\Cache;
 
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
@@ -36,13 +44,13 @@ class Cache implements CacheInterface
      */
     public function getItem(string $cacheId)
     {
-        if (! $this->cache->has($cacheId)) {
+        if (!$this->cache->has($cacheId)) {
             return null;
         }
 
         $data = $this->cache->get($cacheId);
 
-        if (! is_array($data) || ! array_key_exists('content', $data)) {
+        if (!is_array($data) || !array_key_exists('content', $data)) {
             return null;
         }
 
@@ -52,14 +60,14 @@ class Cache implements CacheInterface
     /**
      * save the content into an php file
      *
-     * @param string $cacheId     The cache id
-     * @param mixed  $content     The content to store
+     * @param string $cacheId The cache id
+     * @param mixed  $content The content to store
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return bool whether the file was correctly written to the disk
      */
-    public function setItem(string $cacheId, $content) : bool
+    public function setItem(string $cacheId, $content): bool
     {
         // Get the whole PHP code
         $data = [
@@ -79,7 +87,7 @@ class Cache implements CacheInterface
      *
      * @return bool
      */
-    public function hasItem(string $cacheId) : bool
+    public function hasItem(string $cacheId): bool
     {
         return $this->cache->has($cacheId);
     }
@@ -93,7 +101,7 @@ class Cache implements CacheInterface
      *
      * @return bool
      */
-    public function removeItem(string $cacheId) : bool
+    public function removeItem(string $cacheId): bool
     {
         return $this->cache->delete($cacheId);
     }
@@ -103,7 +111,7 @@ class Cache implements CacheInterface
      *
      * @return bool
      */
-    public function flush() : bool
+    public function flush(): bool
     {
         return $this->cache->clear();
     }

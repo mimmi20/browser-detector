@@ -11,26 +11,24 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\EngineFactory;
-use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\EngineLoader;
-use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
-use BrowserDetector\Version\Version;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Stringy\Stringy;
-use BrowserDetector\Cache\Cache;
 use Symfony\Component\Cache\Simple\FilesystemCache;
-use UaResult\Engine\EngineInterface;
 
 class EngineFactoryTest extends TestCase
 {
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */

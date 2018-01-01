@@ -11,13 +11,12 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Platform;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Platform\LinuxFactory;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetectorTest\Factory\PlatformTestDetectTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Stringy\Stringy;
-use BrowserDetector\Cache\Cache;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
 class LinuxFactoryTest extends TestCase
@@ -25,9 +24,11 @@ class LinuxFactoryTest extends TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
-     * @return void
+     *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return void
      */
     protected function setUp(): void
     {
@@ -36,7 +37,7 @@ class LinuxFactoryTest extends TestCase
         $loader       = PlatformLoader::getInstance(new Cache($cache), $logger);
 
         $loader->warmupCache();
-        
+
         $this->object = new LinuxFactory($loader);
     }
 

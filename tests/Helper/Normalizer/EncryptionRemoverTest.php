@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper\Normalizer;
 
 use BrowserDetector\Helper\Normalizer\EncryptionRemover;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class LocaleRemoverTest
@@ -20,7 +21,7 @@ use BrowserDetector\Helper\Normalizer\EncryptionRemover;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class EncryptionRemoverTest extends \PHPUnit\Framework\TestCase
+class EncryptionRemoverTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Helper\Normalizer\EncryptionRemover

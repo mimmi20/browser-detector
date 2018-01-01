@@ -11,6 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Helper\GenericRequest;
@@ -20,12 +21,11 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
+use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use Stringy\Stringy;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
-use BrowserDetector\Cache\Cache;
-use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 
 /**
  * Browser Detection class

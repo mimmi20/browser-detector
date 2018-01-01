@@ -11,13 +11,11 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
-use BrowserDetector\Factory\NormalizerFactory;
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\PlatformLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Stringy\Stringy;
-use BrowserDetector\Cache\Cache;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
 class PlatformFactoryTest extends TestCase
@@ -25,6 +23,9 @@ class PlatformFactoryTest extends TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
@@ -35,7 +36,7 @@ class PlatformFactoryTest extends TestCase
         $loader       = PlatformLoader::getInstance(new Cache($cache), $logger);
 
         $loader->warmupCache();
-        
+
         $this->object = new PlatformFactory($loader);
     }
 

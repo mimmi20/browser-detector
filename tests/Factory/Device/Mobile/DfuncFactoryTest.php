@@ -11,12 +11,12 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Device\Mobile\DfuncFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use BrowserDetector\Cache\Cache;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
 class DfuncFactoryTest extends TestCase
@@ -24,8 +24,10 @@ class DfuncFactoryTest extends TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
-     * @return void
+     *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     protected function setUp(): void
     {
@@ -34,7 +36,7 @@ class DfuncFactoryTest extends TestCase
         $loader       = DeviceLoader::getInstance(new Cache($cache), $logger);
 
         $loader->warmupCache();
-        
+
         $this->object = new DfuncFactory($loader);
     }
 
