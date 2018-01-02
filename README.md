@@ -1,5 +1,4 @@
-BrowserDetector
-===============
+# BrowserDetector
 
 [![Latest Stable Version](https://poser.pugx.org/mimmi20/browser-detector/v/stable?format=flat-square)](https://packagist.org/packages/mimmi20/browser-detector)
 [![Latest Unstable Version](https://poser.pugx.org/mimmi20/browser-detector/v/unstable?format=flat-square)](https://packagist.org/packages/mimmi20/browser-detector)
