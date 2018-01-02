@@ -8,6 +8,7 @@
 
 [![Build Status](https://travis-ci.org/mimmi20/BrowserDetector.svg?branch=master)](https://travis-ci.org/mimmi20/BrowserDetector)
 [![codecov](https://codecov.io/gh/mimmi20/BrowserDetector/branch/master/graph/badge.svg)](https://codecov.io/gh/mimmi20/BrowserDetector)
+[![Maintainability](https://api.codeclimate.com/v1/badges/cfb5e456908dbeb55112/maintainability)](https://codeclimate.com/github/mimmi20/BrowserDetector/maintainability)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/mimmi20/BrowserDetector.svg)](http://isitmaintained.com/project/mimmi20/BrowserDetector "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/mimmi20/BrowserDetector.svg)](http://isitmaintained.com/project/mimmi20/BrowserDetector "Percentage of issues still open")
 [![Dependency Status](https://gemnasium.com/badges/github.com/mimmi20/BrowserDetector.svg)](https://gemnasium.com/github.com/mimmi20/BrowserDetector)
