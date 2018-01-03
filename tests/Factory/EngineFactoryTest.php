@@ -34,20 +34,21 @@ class EngineFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemCache('', 0, 'cache/');
-        $logger       = new NullLogger();
-        $loader       = EngineLoader::getInstance(new Cache($cache), $logger);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+        $loader = EngineLoader::getInstance(new Cache($cache), $logger);
+
+        $loader->warmupCache();
+
         $this->object = new EngineFactory($loader);
 
-        $platformLoader        = PlatformLoader::getInstance(new Cache($cache), $logger);
+        $platformLoader = PlatformLoader::getInstance(new Cache($cache), $logger);
 
         $platformLoader->warmupCache();
 
         $this->platformFactory = new PlatformFactory($platformLoader);
 
-        $this->browserLoader   = BrowserLoader::getInstance(new Cache($cache), $logger);
-
-        $this->browserLoader->warmupCache();
+        $this->browserLoader = BrowserLoader::getInstance(new Cache($cache), $logger);
 
         $this->browserLoader->warmupCache();
     }

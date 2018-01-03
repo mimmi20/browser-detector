@@ -32,9 +32,9 @@ class WindowsMobileFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemCache('', 0, 'cache/');
-        $logger       = new NullLogger();
-        $loader       = PlatformLoader::getInstance(new Cache($cache), $logger);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+        $loader = PlatformLoader::getInstance(new Cache($cache), $logger);
 
         $loader->warmupCache();
 

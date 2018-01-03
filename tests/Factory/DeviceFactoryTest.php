@@ -30,9 +30,9 @@ class DeviceFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemCache('', 0, 'cache/');
-        $logger       = new NullLogger();
-        $loader       = DeviceLoader::getInstance(new Cache($cache), $logger);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+        $loader = DeviceLoader::getInstance(new Cache($cache), $logger);
 
         $loader->warmupCache();
 

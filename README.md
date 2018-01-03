@@ -27,6 +27,16 @@ Run the command below to install via Composer
 composer require mimmi20/browser-detector
 ```
 
+## Preparation
+
+Before you can use this library, you have to warmup the cache. This should be done not in the same process like the detection.
+
+```php
+$detector = new \BrowserDetector\Detector($cache, $logger);
+
+$detector->warmupCache();
+```
+
 ## Usage
 
 ```php

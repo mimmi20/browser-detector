@@ -44,8 +44,8 @@ class DeviceLoaderTest extends TestCase
         $this->expectException('\BrowserDetector\Loader\NotFoundException');
         $this->expectExceptionMessage('the device with key "does not exist" was not found');
 
-        $cache        = new FilesystemCache('', 0, 'cache/');
-        $logger       = new NullLogger();
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
 
         $object = DeviceLoader::getInstance(new Cache($cache), $logger);
 
@@ -63,7 +63,7 @@ class DeviceLoaderTest extends TestCase
             ->getMock();
         $cache->expects(self::once())->method('hasItem')->willThrowException(new InvalidArgumentException());
 
-        $logger       = new NullLogger();
+        $logger = new NullLogger();
 
         $object = DeviceLoader::getInstance($cache, $logger);
 
@@ -85,7 +85,7 @@ class DeviceLoaderTest extends TestCase
         $cache->expects(self::once())->method('hasItem')->willReturn(true);
         $cache->expects(self::once())->method('getItem')->willThrowException(new InvalidArgumentException());
 
-        $logger       = new NullLogger();
+        $logger = new NullLogger();
 
         $object = DeviceLoader::getInstance($cache, $logger);
 

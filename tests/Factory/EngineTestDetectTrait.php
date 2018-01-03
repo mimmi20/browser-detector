@@ -64,8 +64,8 @@ trait EngineTestDetectTrait
      */
     public function testDetect(string $userAgent, ?string $engine, ?string $version, ?string $manufacturer): void
     {
-        $normalizer      = (new NormalizerFactory())->build();
-        $normalizedUa    = $normalizer->normalize($userAgent);
+        $normalizer   = (new NormalizerFactory())->build();
+        $normalizedUa = $normalizer->normalize($userAgent);
 
         $s = new Stringy($normalizedUa);
 

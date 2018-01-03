@@ -13,6 +13,10 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
 use BrowserDetector\Helper\Constants;
+use BrowserDetector\Loader\BrowserLoader;
+use BrowserDetector\Loader\DeviceLoader;
+use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\PlatformLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\NullLogger;
@@ -31,6 +35,9 @@ class DetectorTest extends TestCase
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
+     *
      * @return void
      */
     protected function setUp(): void
@@ -39,6 +46,21 @@ class DetectorTest extends TestCase
         $cache  = new FilesystemCache('', 0, __DIR__ . '/../cache/');
 
         $this->object = new Detector($cache, $logger);
+        $this->object->warmupCache();
+    }
+
+    /**
+     * Tears down the fixture, for example, close a network connection.
+     * This method is called after a test is executed.
+     *
+     * @return void
+     */
+    protected function tearDown(): void
+    {
+        BrowserLoader::resetInstance();
+        DeviceLoader::resetInstance();
+        EngineLoader::resetInstance();
+        PlatformLoader::resetInstance();
     }
 
     /**

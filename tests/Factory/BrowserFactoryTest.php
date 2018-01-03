@@ -33,15 +33,18 @@ class BrowserFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemCache('', 0, 'cache/');
-        $logger       = new NullLogger();
-        $loader       = BrowserLoader::getInstance(new Cache($cache), $logger);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+        $loader = BrowserLoader::getInstance(new Cache($cache), $logger);
 
         $loader->warmupCache();
 
         $this->object = new BrowserFactory($loader);
 
-        $platformLoader        = PlatformLoader::getInstance(new Cache($cache), $logger);
+        $platformLoader = PlatformLoader::getInstance(new Cache($cache), $logger);
+
+        $platformLoader->warmupCache();
+
         $this->platformFactory = new PlatformFactory($platformLoader);
     }
 
