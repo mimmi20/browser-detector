@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper;
+use PHPUnit\Framework\TestCase;
 use Stringy\Stringy;
 
 /**
@@ -20,7 +21,7 @@ use Stringy\Stringy;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class TvTest extends \PHPUnit\Framework\TestCase
+class TvTest extends TestCase
 {
     /**
      * @dataProvider providerIsTv

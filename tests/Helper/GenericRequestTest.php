@@ -14,13 +14,14 @@ namespace BrowserDetectorTest\Helper;
 use BrowserDetector\Helper\Constants;
 use BrowserDetector\Helper\GenericRequest;
 use BrowserDetector\Helper\GenericRequestFactory;
+use PHPUnit\Framework\TestCase;
 
 /**
  * test case
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class GenericRequestTest extends \PHPUnit\Framework\TestCase
+class GenericRequestTest extends TestCase
 {
     /**
      * @return void

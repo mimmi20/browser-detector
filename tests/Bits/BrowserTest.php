@@ -12,13 +12,9 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Bits;
 
 use BrowserDetector\Bits\Browser;
+use PHPUnit\Framework\TestCase;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
-class BrowserTest extends \PHPUnit\Framework\TestCase
+class BrowserTest extends TestCase
 {
     /**
      * @dataProvider providerGetBits

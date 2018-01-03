@@ -11,35 +11,32 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Device\Mobile\HomtomFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
-class HomtomFactoryTest extends \PHPUnit\Framework\TestCase
+class HomtomFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Factory\Device\Mobile\HomtomFactory
-     */
-    private $object;
-
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../../cache/');
-        $logger       = new NullLogger();
-        $loader       = new DeviceLoader($cache, $logger);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+        $loader = DeviceLoader::getInstance(new Cache($cache), $logger);
+
+        $loader->warmupCache();
+
         $this->object = new HomtomFactory($loader);
     }
 

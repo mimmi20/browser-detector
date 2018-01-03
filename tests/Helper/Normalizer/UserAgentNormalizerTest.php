@@ -13,6 +13,7 @@ namespace BrowserDetectorTest\Helper\Normalizer;
 
 use BrowserDetector\Helper\Normalizer\Mozilla;
 use BrowserDetector\Helper\Normalizer\UserAgentNormalizer;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class LocaleRemoverTest
@@ -21,7 +22,7 @@ use BrowserDetector\Helper\Normalizer\UserAgentNormalizer;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class UserAgentNormalizerTest extends \PHPUnit\Framework\TestCase
+class UserAgentNormalizerTest extends TestCase
 {
     /**
      * @test

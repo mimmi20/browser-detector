@@ -21,6 +21,11 @@ use Stringy\Stringy;
 trait DeviceTestDetectTrait
 {
     /**
+     * @var \BrowserDetector\Factory\DeviceFactory
+     */
+    private $object;
+
+    /**
      * @dataProvider providerDetect
      *
      * @param string      $agent

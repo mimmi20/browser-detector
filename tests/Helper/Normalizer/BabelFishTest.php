@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper\Normalizer;
 
 use BrowserDetector\Helper\Normalizer\BabelFish;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class LocaleRemoverTest
@@ -20,7 +21,7 @@ use BrowserDetector\Helper\Normalizer\BabelFish;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class BabelFishTest extends \PHPUnit\Framework\TestCase
+class BabelFishTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Helper\Normalizer\BabelFish

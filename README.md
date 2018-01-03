@@ -1,10 +1,23 @@
-BrowserDetector
-===============
+# BrowserDetector
+
+[![Latest Stable Version](https://poser.pugx.org/mimmi20/browser-detector/v/stable?format=flat-square)](https://packagist.org/packages/mimmi20/browser-detector)
+[![Latest Unstable Version](https://poser.pugx.org/mimmi20/browser-detector/v/unstable?format=flat-square)](https://packagist.org/packages/mimmi20/browser-detector)
+[![License](https://poser.pugx.org/mimmi20/browser-detector/license?format=flat-square)](https://packagist.org/packages/mimmi20/browser-detector)
+
+## Code Status
+
+[![Build Status](https://travis-ci.org/mimmi20/BrowserDetector.svg?branch=master)](https://travis-ci.org/mimmi20/BrowserDetector)
+[![codecov](https://codecov.io/gh/mimmi20/BrowserDetector/branch/master/graph/badge.svg)](https://codecov.io/gh/mimmi20/BrowserDetector)
+[![Maintainability](https://api.codeclimate.com/v1/badges/cfb5e456908dbeb55112/maintainability)](https://codeclimate.com/github/mimmi20/BrowserDetector/maintainability)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/mimmi20/BrowserDetector.svg)](http://isitmaintained.com/project/mimmi20/BrowserDetector "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/mimmi20/BrowserDetector.svg)](http://isitmaintained.com/project/mimmi20/BrowserDetector "Percentage of issues still open")
+[![Dependency Status](https://gemnasium.com/badges/github.com/mimmi20/BrowserDetector.svg)](https://gemnasium.com/github.com/mimmi20/BrowserDetector)
+
 
 ## Requirements
 
 This library requires PHP 7.1+.
-Also a PSR-3 compatible logger and a PSR-6 compatible cache are required.
+Also a PSR-3 compatible logger and a PSR-16 compatible cache are required.
 
 ## Installation
 
@@ -12,6 +25,16 @@ Run the command below to install via Composer
 
 ```shell
 composer require mimmi20/browser-detector
+```
+
+## Preparation
+
+Before you can use this library, you have to warmup the cache. This should be done not in the same process like the detection.
+
+```php
+$detector = new \BrowserDetector\Detector($cache, $logger);
+
+$detector->warmupCache();
 ```
 
 ## Usage
@@ -45,19 +68,6 @@ $result = $detector->getBrowser($the_user_agent);
 ## The result
 
 The `getBrowser` function returns a [ua-result](https://github.com/mimmi20/ua-result) object.
-
-## Project status
-
-[![Latest Stable Version](https://poser.pugx.org/mimmi20/browser-detector/v/stable)](https://packagist.org/packages/mimmi20/browser-detector)
-[![Latest Unstable Version](https://poser.pugx.org/mimmi20/browser-detector/v/unstable)](https://packagist.org/packages/mimmi20/browser-detector)
-[![License](https://poser.pugx.org/mimmi20/browser-detector/license)](https://packagist.org/packages/mimmi20/browser-detector)
-
-[![Build Status](https://api.travis-ci.org/mimmi20/BrowserDetector.png?branch=master)](https://travis-ci.org/mimmi20/BrowserDetector)
-
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mimmi20/BrowserDetector/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mimmi20/BrowserDetector/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/mimmi20/BrowserDetector/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mimmi20/BrowserDetector/?branch=master)
-
-[![Dependency Status](https://www.versioneye.com/user/projects/588d13bfc64626004e05797a/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/588d13bfc64626004e05797a)
 
 ## Issues and feature requests
 

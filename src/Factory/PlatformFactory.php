@@ -42,8 +42,6 @@ class PlatformFactory implements FactoryInterface
      * @param string  $useragent
      * @param Stringy $s
      *
-     * @throws \Psr\Cache\InvalidArgumentException
-     *
      * @return \UaResult\Os\OsInterface
      */
     public function detect(string $useragent, Stringy $s): OsInterface

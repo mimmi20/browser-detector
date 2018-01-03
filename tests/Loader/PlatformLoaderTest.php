@@ -11,39 +11,32 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\PlatformLoader;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Exception\InvalidArgumentException;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Loader\PlatformLoader
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class PlatformLoaderTest extends \PHPUnit\Framework\TestCase
+class PlatformLoaderTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Loader\PlatformLoader
-     */
-    private $object;
-
-    /**
-     * Sets up the fixture, for example, open a network connection.
-     * This method is called before a test is executed.
+     * Tears down the fixture, for example, close a network connection.
+     * This method is called after a test is executed.
      *
      * @return void
      */
-    protected function setUp(): void
+    protected function tearDown(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../cache/');
-        $logger       = new NullLogger();
-        $this->object = new PlatformLoader($cache, $logger);
+        PlatformLoader::resetInstance();
     }
 
     /**
-     * @throws \Psr\Cache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return void
      */
     public function testLoadNotAvailable(): void
@@ -51,6 +44,51 @@ class PlatformLoaderTest extends \PHPUnit\Framework\TestCase
         $this->expectException('\BrowserDetector\Loader\NotFoundException');
         $this->expectExceptionMessage('the platform with key "does not exist" was not found');
 
-        $this->object->load('does not exist', 'test-ua');
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+
+        $object = PlatformLoader::getInstance(new Cache($cache), $logger);
+
+        $object->load('does not exist', 'test-ua');
+    }
+
+    /**
+     * @return void
+     */
+    public function testHasFail(): void
+    {
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem'])
+            ->getMock();
+        $cache->expects(self::once())->method('hasItem')->willThrowException(new InvalidArgumentException());
+
+        $logger = new NullLogger();
+
+        $object = PlatformLoader::getInstance($cache, $logger);
+
+        self::assertFalse($object->has('does not exist'));
+    }
+
+    /**
+     * @return void
+     */
+    public function testLoadFail(): void
+    {
+        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectExceptionMessage('the platform with key "does not exist" was not found');
+
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem'])
+            ->getMock();
+        $cache->expects(self::once())->method('hasItem')->willReturn(true);
+        $cache->expects(self::once())->method('getItem')->willThrowException(new InvalidArgumentException());
+
+        $logger = new NullLogger();
+
+        $object = PlatformLoader::getInstance($cache, $logger);
+
+        $object->load('does not exist');
     }
 }

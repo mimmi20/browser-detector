@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper\Normalizer;
 
 use BrowserDetector\Helper\Normalizer\NovarraGoogleTranslator;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class NovarraGoogleTranslatorTest
@@ -20,7 +21,7 @@ use BrowserDetector\Helper\Normalizer\NovarraGoogleTranslator;
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class NovarraGoogleTranslatorTest extends \PHPUnit\Framework\TestCase
+class NovarraGoogleTranslatorTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Helper\Normalizer\NovarraGoogleTranslator

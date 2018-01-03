@@ -11,83 +11,37 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Platform;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Platform\WindowsMobileFactory;
 use BrowserDetector\Loader\PlatformLoader;
+use BrowserDetectorTest\Factory\PlatformTestDetectTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Stringy\Stringy;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
 class WindowsMobileFactoryTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Platform\WindowsMobileFactory
-     */
-    private $object;
-
-    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
-        $logger       = new NullLogger();
-        $loader       = new PlatformLoader($cache, $logger);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+        $loader = PlatformLoader::getInstance(new Cache($cache), $logger);
+
+        $loader->warmupCache();
+
         $this->object = new WindowsMobileFactory($loader);
     }
 
-    /**
-     * @dataProvider providerDetect
-     *
-     * @param string      $agent
-     * @param string|null $platform
-     * @param string|null $version
-     * @param string|null $manufacturer
-     * @param int|null    $bits
-     *
-     * @return void
-     */
-    public function testDetect(string $agent, ?string $platform, ?string $version, ?string $manufacturer, ?int $bits): void
-    {
-        $s = new Stringy($agent);
-
-        /* @var \UaResult\Os\OsInterface $result */
-        $result = $this->object->detect($agent, $s);
-
-        self::assertInstanceOf('\UaResult\Os\OsInterface', $result);
-        self::assertSame(
-            $platform,
-            $result->getName(),
-            'Expected platform name to be "' . $platform . '" (was "' . $result->getName() . '")'
-        );
-
-        self::assertInstanceOf('\BrowserDetector\Version\Version', $result->getVersion());
-        self::assertSame(
-            $version,
-            $result->getVersion()->getVersion(),
-            'Expected version to be "' . $version . '" (was "' . $result->getVersion()->getVersion() . '")'
-        );
-
-        self::assertSame(
-            $manufacturer,
-            $result->getManufacturer()->getName(),
-            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer()->getName() . '")'
-        );
-
-        self::assertSame(
-            $bits,
-            $result->getBits(),
-            'Expected bits count to be "' . $bits . '" (was "' . $result->getBits() . '")'
-        );
-    }
+    use PlatformTestDetectTrait;
 
     /**
      * @return array[]

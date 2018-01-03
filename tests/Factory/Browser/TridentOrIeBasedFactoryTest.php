@@ -11,114 +11,45 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Browser;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Browser\TridentOrIeBasedFactory;
-use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\PlatformLoader;
+use BrowserDetectorTest\Factory\BrowserTestDetectTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Stringy\Stringy;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
- *
- * @author Thomas Müller <mimmi20@live.de>
- */
 class TridentOrIeBasedFactoryTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Browser\TridentOrIeBasedFactory
-     */
-    private $object;
-
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
-
-    /**
-     * @var \BrowserDetector\Factory\PlatformFactory
-     */
-    private $platformFactory;
-
-    /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
-        $logger       = new NullLogger();
-        $loader       = new BrowserLoader($cache, $logger);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+        $loader = BrowserLoader::getInstance(new Cache($cache), $logger);
+
+        $loader->warmupCache();
+
         $this->object = new TridentOrIeBasedFactory($loader);
 
-        $platformLoader        = new PlatformLoader($cache, $logger);
+        $platformLoader = PlatformLoader::getInstance(new Cache($cache), $logger);
+
+        $platformLoader->warmupCache();
+
         $this->platformFactory = new PlatformFactory($platformLoader);
     }
 
-    /**
-     * @dataProvider providerDetect
-     *
-     * @param string      $userAgent
-     * @param string|null $browser
-     * @param string|null $version
-     * @param string|null $manufacturer
-     * @param int|null    $bits
-     * @param string|null $type
-     *
-     * @throws \Psr\Cache\InvalidArgumentException
-     *
-     * @return void
-     */
-    public function testDetect(string $userAgent, ?string $browser, ?string $version, ?string $manufacturer, ?int $bits, ?string $type): void
-    {
-        $normalizer = (new NormalizerFactory())->build();
-
-        $normalizedUa = $normalizer->normalize($userAgent);
-
-        $s = new Stringy($normalizedUa);
-
-        $platform = $this->platformFactory->detect($normalizedUa, $s);
-
-        /* @var \UaResult\Browser\BrowserInterface $result */
-        [$result] = $this->object->detect($normalizedUa, $s, $platform);
-
-        self::assertInstanceOf('\UaResult\Browser\BrowserInterface', $result);
-        self::assertSame(
-            $browser,
-            $result->getName(),
-            'Expected browser name to be "' . $browser . '" (was "' . $result->getName() . '")'
-        );
-
-        self::assertInstanceOf('\BrowserDetector\Version\Version', $result->getVersion());
-        self::assertSame(
-            $version,
-            $result->getVersion()->getVersion(),
-            'Expected version to be "' . $version . '" (was "' . $result->getVersion()->getVersion() . '")'
-        );
-
-        self::assertSame(
-            $manufacturer,
-            $result->getManufacturer()->getName(),
-            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer()->getName() . '")'
-        );
-
-        self::assertSame(
-            $bits,
-            $result->getBits(),
-            'Expected browser bits to be "' . $bits . '" (was "' . $result->getBits() . '")'
-        );
-
-        self::assertSame(
-            $type,
-            $result->getType()->getName(),
-            'Expected browser type to be "' . $type . '" (was "' . $result->getType()->getName() . '")'
-        );
-    }
+    use BrowserTestDetectTrait;
 
     /**
      * @return array[]

@@ -11,18 +11,20 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Device\DesktopFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Desktop\GeneralDesktop
  *
  * @author Thomas Müller <mimmi20@live.de>
  */
-class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
+class DesktopFactoryTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Factory\Device\DesktopFactory
@@ -33,13 +35,18 @@ class DesktopFactoryTest extends \PHPUnit\Framework\TestCase
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../../../cache/');
-        $logger       = new NullLogger();
-        $loader       = new DeviceLoader($cache, $logger);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+        $loader = DeviceLoader::getInstance(new Cache($cache), $logger);
+
+        $loader->warmupCache();
+
         $this->object = new DesktopFactory($loader);
     }
 
