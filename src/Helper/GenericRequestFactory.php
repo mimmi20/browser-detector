@@ -15,8 +15,6 @@ use Psr\Http\Message\MessageInterface;
 
 /**
  * Creates a Generic WURFL Request from the raw HTTP Request
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class GenericRequestFactory
 {

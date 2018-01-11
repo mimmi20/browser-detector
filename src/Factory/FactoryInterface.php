@@ -15,8 +15,6 @@ use Stringy\Stringy;
 
 /**
  * interface for all factories
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 interface FactoryInterface
 {

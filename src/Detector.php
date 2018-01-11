@@ -34,8 +34,6 @@ use UnexpectedValueException;
 
 /**
  * Browser Detection class
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class Detector
 {

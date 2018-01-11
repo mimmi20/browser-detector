@@ -175,7 +175,7 @@ class PlatformLoader implements ExtendedLoaderInterface
         } elseif ('VersionFactory' === $platformVersionClass) {
             $version = VersionFactory::detectVersion($useragent, $platform->version->search);
         } else {
-            /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
+            // @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass
             $versionClass = new $platformVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }

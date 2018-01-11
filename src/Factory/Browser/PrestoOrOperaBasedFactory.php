@@ -18,8 +18,6 @@ use UaResult\Os\OsInterface;
 
 /**
  * Browser detection class
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class PrestoOrOperaBasedFactory implements FactoryInterface
 {

@@ -13,9 +13,6 @@ namespace BrowserDetector\Version;
 
 use peterkahl\OSXbuild\OSXbuild;
 
-/**
- * @author Thomas Müller <mimmi20@live.de>
- */
 class Macosx implements VersionCacheFactoryInterface
 {
     /**

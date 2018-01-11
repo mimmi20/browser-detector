@@ -21,8 +21,6 @@ use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Factory\Device\DarwinFactory
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class DarwinFactoryTest extends TestCase
 {

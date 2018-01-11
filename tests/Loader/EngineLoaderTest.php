@@ -20,8 +20,6 @@ use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Loader\EngineLoader
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class EngineLoaderTest extends TestCase
 {

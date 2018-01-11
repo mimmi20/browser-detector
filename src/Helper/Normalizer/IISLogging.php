@@ -13,8 +13,6 @@ namespace BrowserDetector\Helper\Normalizer;
 
 /**
  * User Agent Normalizer - clean IIS Logging from user agent
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class IISLogging implements NormalizerInterface
 {

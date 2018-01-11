@@ -16,8 +16,6 @@ use BrowserDetector\Helper\Normalizer\UserAgentNormalizer;
 
 /**
  * factory to create a useragent normalizer
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class NormalizerFactory
 {

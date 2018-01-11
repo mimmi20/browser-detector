@@ -21,8 +21,6 @@ use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Factory\Device\Desktop\AppleFactory
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class AppleFactoryTest extends TestCase
 {

@@ -13,8 +13,6 @@ namespace BrowserDetector\Helper\Normalizer;
 
 /**
  * User Agent Normalizer - generic interface for all normalizers
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 interface NormalizerInterface
 {

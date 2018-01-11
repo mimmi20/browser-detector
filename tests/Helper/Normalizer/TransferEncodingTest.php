@@ -18,8 +18,6 @@ use PHPUnit\Framework\TestCase;
  * Class LocaleRemoverTest
  *
  * @group Handlers
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class TransferEncodingTest extends TestCase
 {
@@ -40,7 +38,6 @@ class TransferEncodingTest extends TestCase
     }
 
     /**
-     * @test
      * @dataProvider userAgentsDataProvider
      *
      * @param string $userAgent

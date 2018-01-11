@@ -19,13 +19,10 @@ use PHPUnit\Framework\TestCase;
  * Class LocaleRemoverTest
  *
  * @group Handlers
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class UserAgentNormalizerTest extends TestCase
 {
     /**
-     * @test
      * @dataProvider userAgentsDataProvider
      *
      * @param string $userAgent
@@ -43,7 +40,6 @@ class UserAgentNormalizerTest extends TestCase
     }
 
     /**
-     * @test
      * @dataProvider userAgentsDataProvider
      *
      * @param string $userAgent

@@ -17,8 +17,6 @@ use Stringy\Stringy;
 
 /**
  * Browser detection class
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class DarwinFactory implements Factory\FactoryInterface
 {

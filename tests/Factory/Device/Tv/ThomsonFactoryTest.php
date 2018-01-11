@@ -21,8 +21,6 @@ use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Factory\Device\Tv\ThomsonFactory
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class ThomsonFactoryTest extends TestCase
 {

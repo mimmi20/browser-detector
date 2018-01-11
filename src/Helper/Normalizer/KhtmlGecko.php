@@ -13,8 +13,6 @@ namespace BrowserDetector\Helper\Normalizer;
 
 /**
  * User Agent Normalizer - normalizes the KHTML, like Gecko Token from user agent
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class KhtmlGecko implements NormalizerInterface
 {

@@ -13,9 +13,6 @@ namespace BrowserDetector\Version;
 
 use peterkahl\iOSbuild\iOSbuild;
 
-/**
- * @author Thomas Müller <mimmi20@live.de>
- */
 class Ios implements VersionCacheFactoryInterface
 {
     /**

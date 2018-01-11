@@ -11,9 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-/**
- * @author Thomas Müller <mimmi20@live.de>
- */
 class Maxthon implements VersionCacheFactoryInterface
 {
     /**

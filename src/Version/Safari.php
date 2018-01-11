@@ -13,9 +13,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Helper\Safari as SafariHelper;
 
-/**
- * @author Thomas Müller <mimmi20@live.de>
- */
 class Safari implements VersionCacheFactoryInterface
 {
     /**

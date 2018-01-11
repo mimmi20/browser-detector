@@ -11,9 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
-/**
- * @author Thomas Müller <mimmi20@live.de>
- */
 class MicrosoftOffice
 {
     /**

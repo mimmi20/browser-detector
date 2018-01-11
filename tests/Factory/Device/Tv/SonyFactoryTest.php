@@ -21,8 +21,6 @@ use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Factory\Device\Tv\SonyFactory
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class SonyFactoryTest extends TestCase
 {
