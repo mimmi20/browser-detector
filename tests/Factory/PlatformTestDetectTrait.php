@@ -52,7 +52,7 @@ trait PlatformTestDetectTrait
 
         $normalizedUa = $normalizer->normalize($agent);
 
-        /* @var \UaResult\Os\OsInterface $result */
+        // @var \UaResult\Os\OsInterface $result
         $result = $this->object->detect($normalizedUa, new Stringy($normalizedUa));
 
         self::assertInstanceOf('\UaResult\Os\OsInterface', $result);

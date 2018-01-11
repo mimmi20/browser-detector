@@ -21,8 +21,6 @@ use Symfony\Component\Cache\Simple\FilesystemCache;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Tv\GeneralTv
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class TvFactoryTest extends TestCase
 {
@@ -63,7 +61,7 @@ class TvFactoryTest extends TestCase
         $tests = [];
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-            /* @var $file \SplFileInfo */
+            // @var $file \SplFileInfo
             if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }

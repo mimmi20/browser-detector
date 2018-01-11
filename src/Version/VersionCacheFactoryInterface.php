@@ -13,8 +13,6 @@ namespace BrowserDetector\Version;
 
 /**
  * a general version detector factory
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 interface VersionCacheFactoryInterface
 {

@@ -16,9 +16,6 @@ use BrowserDetector\Helper;
 use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
-/**
- * @author Thomas Müller <mimmi20@live.de>
- */
 class DesktopFactory implements Factory\FactoryInterface
 {
     /**

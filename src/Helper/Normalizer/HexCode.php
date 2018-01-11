@@ -13,8 +13,6 @@ namespace BrowserDetector\Helper\Normalizer;
 
 /**
  * User Agent Normalizer - removes hexcode garbage from user agent
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class HexCode implements NormalizerInterface
 {

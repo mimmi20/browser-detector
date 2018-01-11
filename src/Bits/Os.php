@@ -15,8 +15,6 @@ use Stringy\Stringy;
 
 /**
  * Class to detect the Bit count for an Platform/Operating System
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class Os
 {

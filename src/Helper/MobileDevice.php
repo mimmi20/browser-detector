@@ -15,8 +15,6 @@ use Stringy\Stringy;
 
 /**
  * helper to get information if the device is a mobile
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class MobileDevice
 {
@@ -90,7 +88,7 @@ class MobileDevice
             return false;
         }
 
-        /* @var array $mobiles Collection of mobile browser keywords */
+        // @var array $mobiles Collection of mobile browser keywords
         $mobiles = [
             'android',
             'arm; touch',

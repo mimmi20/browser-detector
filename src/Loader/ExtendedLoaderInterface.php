@@ -13,8 +13,6 @@ namespace BrowserDetector\Loader;
 
 /**
  * Browser detection class
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 interface ExtendedLoaderInterface
 {

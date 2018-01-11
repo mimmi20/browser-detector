@@ -15,8 +15,6 @@ use Stringy\Stringy;
 
 /**
  * a helper to detect windows
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class Windows
 {

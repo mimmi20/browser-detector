@@ -73,7 +73,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUa(string $userAgent, Result $expectedResult): void
     {
-        /* @var \UaResult\Result\Result $result */
+        // @var \UaResult\Result\Result $result
         $result = $this->object->getBrowser($userAgent);
 
         self::assertInstanceOf(Result::class, $result);
@@ -91,7 +91,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromArray(string $userAgent, Result $expectedResult): void
     {
-        /* @var Result $result */
+        // @var Result $result
         $result = $this->object->getBrowser([Constants::HEADER_HTTP_USERAGENT => $userAgent]);
 
         self::assertInstanceOf(Result::class, $result);
@@ -109,14 +109,14 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromPsr7Message(string $userAgent, Result $expectedResult): void
     {
-        /* @var \PHPUnit_Framework_MockObject_MockObject|\Psr\Http\Message\MessageInterface $message */
+        // @var \PHPUnit_Framework_MockObject_MockObject|\Psr\Http\Message\MessageInterface $message
         $message = $this->createMock(MessageInterface::class);
         $message
             ->expects(self::once())
             ->method('getHeaders')
             ->willReturn([Constants::HEADER_HTTP_USERAGENT => [$userAgent]]);
 
-        /* @var Result $result */
+        // @var Result $result
         $result = $this->object->getBrowser($message);
 
         self::assertInstanceOf(Result::class, $result);

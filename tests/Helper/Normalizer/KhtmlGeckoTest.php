@@ -18,8 +18,6 @@ use PHPUnit\Framework\TestCase;
  * Class LocaleRemoverTest
  *
  * @group Handlers
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class KhtmlGeckoTest extends TestCase
 {
@@ -40,7 +38,6 @@ class KhtmlGeckoTest extends TestCase
     }
 
     /**
-     * @test
      * @dataProvider userAgentsDataProvider
      *
      * @param string $userAgent
@@ -48,7 +45,7 @@ class KhtmlGeckoTest extends TestCase
      *
      * @return void
      */
-    public function shouldNormalizeTheKhtmlGeckoToken(string $userAgent, string $expected): void
+    public function testShouldNormalizeTheKhtmlGeckoToken(string $userAgent, string $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);

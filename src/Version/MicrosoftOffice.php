@@ -13,9 +13,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 
-/**
- * @author Thomas Müller <mimmi20@live.de>
- */
 class MicrosoftOffice implements VersionCacheFactoryInterface
 {
     /**

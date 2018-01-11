@@ -75,7 +75,7 @@ trait EngineTestDetectTrait
             $platform = null;
         }
 
-        /* @var \UaResult\Engine\EngineInterface $result */
+        // @var \UaResult\Engine\EngineInterface $result
         $result = $this->object->detect($normalizedUa, $s, $this->browserLoader, $platform);
 
         self::assertInstanceOf(EngineInterface::class, $result);

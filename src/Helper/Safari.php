@@ -13,8 +13,6 @@ namespace BrowserDetector\Helper;
 
 /**
  * a helper for detecting safari and some of his derefered browsers
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class Safari
 {

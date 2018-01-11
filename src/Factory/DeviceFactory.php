@@ -19,8 +19,6 @@ use Stringy\Stringy;
 
 /**
  * Device detection class
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class DeviceFactory implements FactoryInterface
 {

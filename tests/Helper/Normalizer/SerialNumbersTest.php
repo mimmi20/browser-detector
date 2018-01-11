@@ -18,8 +18,6 @@ use PHPUnit\Framework\TestCase;
  * Class SerialNumbersTest
  *
  * @group Handlers
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class SerialNumbersTest extends TestCase
 {
@@ -40,7 +38,6 @@ class SerialNumbersTest extends TestCase
     }
 
     /**
-     * @test
      * @dataProvider serialNumbersDataProvider
      *
      * @param string $userAgent

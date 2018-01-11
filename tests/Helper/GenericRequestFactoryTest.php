@@ -18,8 +18,6 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * test case
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class GenericRequestFactoryTest extends TestCase
 {

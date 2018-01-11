@@ -18,8 +18,6 @@ use PHPUnit\Framework\TestCase;
  * Class NovarraGoogleTranslatorTest
  *
  * @group Handlers
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class NovarraGoogleTranslatorTest extends TestCase
 {
@@ -40,7 +38,6 @@ class NovarraGoogleTranslatorTest extends TestCase
     }
 
     /**
-     * @test
      * @dataProvider novarraGoogleTranslatorDataProvider
      *
      * @param string $userAgent

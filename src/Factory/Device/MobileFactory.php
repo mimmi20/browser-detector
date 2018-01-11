@@ -15,9 +15,6 @@ use BrowserDetector\Factory;
 use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
-/**
- * @author Thomas Müller <mimmi20@live.de>
- */
 class MobileFactory implements Factory\FactoryInterface
 {
     /**
@@ -58,7 +55,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeSamsung as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -82,7 +79,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeApple as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -113,7 +110,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeLg as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -211,7 +208,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeOnda as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -251,7 +248,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeCoby as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -286,7 +283,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeNec as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -331,7 +328,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeHannspree as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -379,7 +376,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeIntenso as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -428,7 +425,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1263,7 +1260,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeGeneralMobile as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1283,7 +1280,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeSony as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1417,7 +1414,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeIconbit as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1496,7 +1493,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeAlcatel as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1543,7 +1540,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeRossMoor as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1641,7 +1638,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeVerico as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1682,7 +1679,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1707,7 +1704,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
             if ($s->contains((string) $test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1739,7 +1736,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1981,7 +1978,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
             if ($s->contains((string) $test, false)) {
-                /* @var Factory\FactoryInterface $factory */
+                // @var Factory\FactoryInterface $factory
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);

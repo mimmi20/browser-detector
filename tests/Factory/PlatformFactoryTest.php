@@ -53,7 +53,7 @@ class PlatformFactoryTest extends TestCase
         $tests = [];
 
         foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-            /* @var $file \SplFileInfo */
+            // @var $file \SplFileInfo
             if (!$file->isFile() || 'json' !== $file->getExtension()) {
                 continue;
             }

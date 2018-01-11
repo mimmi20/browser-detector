@@ -18,8 +18,6 @@ use PHPUnit\Framework\TestCase;
  * Class LocaleRemoverTest
  *
  * @group Handlers
- *
- * @author Thomas Müller <mimmi20@live.de>
  */
 class TokensTest extends TestCase
 {
@@ -40,7 +38,6 @@ class TokensTest extends TestCase
     }
 
     /**
-     * @test
      * @dataProvider userAgentsDataProvider
      *
      * @param string $userAgent
@@ -48,7 +45,7 @@ class TokensTest extends TestCase
      *
      * @return void
      */
-    public function shouldNormalizeTheDamagedToken(string $userAgent, string $expected): void
+    public function testShouldNormalizeTheDamagedToken(string $userAgent, string $expected): void
     {
         $found = $this->normalizer->normalize($userAgent);
         self::assertSame($expected, $found);

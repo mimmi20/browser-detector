@@ -15,9 +15,6 @@ use BrowserDetector\Helper;
 use PHPUnit\Framework\TestCase;
 use Stringy\Stringy;
 
-/**
- * @author Thomas Müller <mimmi20@live.de>
- */
 class LinuxTest extends TestCase
 {
     /**

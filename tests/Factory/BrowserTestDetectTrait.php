@@ -64,7 +64,7 @@ trait BrowserTestDetectTrait
 
         $platform = $this->platformFactory->detect($normalizedUa, $s);
 
-        /* @var \UaResult\Browser\BrowserInterface $result */
+        // @var \UaResult\Browser\BrowserInterface $result
         [$result] = $this->object->detect($normalizedUa, $s, $platform);
 
         self::assertInstanceOf('\UaResult\Browser\BrowserInterface', $result);
