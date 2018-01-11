@@ -24,8 +24,22 @@ class ItelFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'it1702'   => 'itel it1702',
         'it1701'   => 'itel it1701',
+        'it1508'   => 'itel it1508',
         '1505-a02' => 'itel 1505-a02',
+        'it1503'   => 'itel it1503',
+        'it1502'   => 'itel it1502',
+        'it1501'   => 'itel it1501',
+        'it1500'   => 'itel it1500',
+        'it1452'   => 'itel it1452',
+        'it1451'   => 'itel it1451',
+        'it1407'   => 'itel it1407',
+        'it1403+'  => 'itel it1403+',
+        'it1403'   => 'itel it1403',
+        'it1400'   => 'itel it1400',
+        'it1351e'  => 'itel it1351e',
+        'it1351'   => 'itel it1351',
     ];
 
     /**
