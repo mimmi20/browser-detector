@@ -78,8 +78,8 @@ class Detector
         $normalizer    = (new NormalizerFactory())->build();
         $deviceUa      = $normalizer->normalize($request->getDeviceUserAgent());
 
-        // @var \UaResult\Device\DeviceInterface $device
-        // @var \UaResult\Os\OsInterface $platform
+        /* @var \UaResult\Device\DeviceInterface $device */
+        /* @var \UaResult\Os\OsInterface $platform */
         try {
             [$device, $platform] = $deviceFactory->detect($deviceUa, new Stringy($deviceUa));
         } catch (NotFoundException $e) {
@@ -107,8 +107,8 @@ class Detector
 
         $browserLoader = BrowserLoader::getInstance($this->cache, $this->logger);
 
-        // @var \UaResult\Browser\BrowserInterface $browser
-        // @var \UaResult\Engine\EngineInterface $engine
+        /* @var \UaResult\Browser\BrowserInterface $browser */
+        /* @var \UaResult\Engine\EngineInterface $engine */
         [$browser, $engine] = (new BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
         $engineLoader       = EngineLoader::getInstance($this->cache, $this->logger);
 

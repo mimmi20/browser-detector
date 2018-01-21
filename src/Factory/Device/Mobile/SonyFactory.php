@@ -139,6 +139,7 @@ class SonyFactory implements Factory\FactoryInterface
         'c1905'                => 'sony c1905',
         'c1904'                => 'sony c1904',
         'c1605'                => 'sony c1605',
+        'c1604'                => 'sony c1604',
         'c1505'                => 'sony c1505',
         'c1504'                => 'sony c1504',
         'sgp612'               => 'sony sgp612',

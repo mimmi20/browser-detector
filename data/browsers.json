@@ -12586,8 +12586,10 @@
     "rssSupport": true,
     "type": "application",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Twitter"
+      ]
     },
     "engine": null
   },

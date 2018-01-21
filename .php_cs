@@ -180,7 +180,7 @@ return PhpCsFixer\Config::create()
         'single_class_element_per_statement'          => ['elements' => ['const', 'property']],
         'single_import_per_statement'                 => true,
         'single_line_after_imports'                   => true,
-        'single_line_comment_style'                   => ['comment_types' => ['asterisk', 'hash']],
+        'single_line_comment_style'                   => ['comment_types' => ['hash']],
         'single_quote'                                => true,
         'space_after_semicolon'                       => ['remove_in_empty_for_expressions' => true],
         'standardize_not_equals'                      => true,

@@ -81,6 +81,7 @@ class HtcFactory implements Factory\FactoryInterface
         'one_x'                   => 'htc pj83100 x',
         'onex'                    => 'htc pj83100 x',
         'pj83100'                 => 'htc pj83100 x',
+        'ph39100'                 => 'htc ph39100',
         'one v'                   => 'htc one v',
         'one_v'                   => 'htc one v',
         'one sv'                  => 'htc one sv',

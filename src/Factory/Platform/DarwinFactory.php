@@ -75,6 +75,18 @@ class DarwinFactory implements Factory\FactoryInterface
             return $this->loader->load('mac os x', $useragent, '10.11');
         }
 
+        if ($s->contains('cfnetwork/758.3', false)) {
+            return $this->loader->load('ios', $useragent, '9.3');
+        }
+
+        if ($s->contains('cfnetwork/758.2', false)) {
+            return $this->loader->load('ios', $useragent, '9.2');
+        }
+
+        if ($s->contains('cfnetwork/758.1', false)) {
+            return $this->loader->load('ios', $useragent, '9.1');
+        }
+
         if ($s->contains('cfnetwork/758', false)) {
             return $this->loader->load('ios', $useragent, '9.0');
         }

@@ -150,6 +150,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'y320-u10'                        => 'huawei y320-u10',
         'y300'                            => 'huawei y300',
         'y220-u10'                        => 'huawei y220-u10',
+        'y220-u00'                        => 'huawei y220-u00',
         'y210-0100'                       => 'huawei y210-0100',
         'w2-u00'                          => 'huawei w2-u00',
         'w1-u00'                          => 'huawei w1-u00',

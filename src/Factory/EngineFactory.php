@@ -90,7 +90,7 @@ class EngineFactory implements FactoryInterface
         }
 
         if (null !== $browserLoader && $s->containsAny(['webkit', 'cfnetwork', 'safari', 'dalvik'], false)) {
-            // @var \UaResult\Browser\Browser $chrome
+            /* @var \UaResult\Browser\Browser $chrome */
             [$chrome]      = $browserLoader->load('chrome', $useragent);
             $version       = $chrome->getVersion();
             $chromeVersion = 0;

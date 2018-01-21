@@ -25,7 +25,19 @@ class TecnoFactory implements Factory\FactoryInterface
         'l8'   => 'tecno l8',
         'p9'   => 'tecno p9',
         'h6'   => 'tecno h6',
+        ' f7'  => 'tecno f7',
         ' f5 ' => 'tecno f5',
+        ' d5 ' => 'tecno d5',
+        ' m5'  => 'tecno m5',
+        '_m5'  => 'tecno m5',
+        ' p5'  => 'tecno p5',
+        '_p5'  => 'tecno p5',
+        ' d3'  => 'tecno d3',
+        '_d3'  => 'tecno d3',
+        ' m3'  => 'tecno m3',
+        '_m3'  => 'tecno m3',
+        ' s3'  => 'tecno s3',
+        '_s3'  => 'tecno s3',
     ];
 
     /**

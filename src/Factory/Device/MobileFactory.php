@@ -55,7 +55,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeSamsung as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -79,7 +79,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeApple as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -110,7 +110,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeLg as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -121,7 +121,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum)\-/i', $useragent)) {
+        if (preg_match('/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek)\-/i', $useragent)) {
             return (new Mobile\SamsungFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -208,7 +208,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeOnda as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -248,7 +248,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeCoby as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -283,7 +283,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeNec as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -328,7 +328,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeHannspree as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -376,7 +376,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeIntenso as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /*  @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -421,11 +421,12 @@ class MobileFactory implements Factory\FactoryInterface
             'qmobile'    => Mobile\QmobileFactory::class,
             'sanyo'      => Mobile\SanyoFactory::class,
             'siemens'    => Mobile\SiemensFactory::class,
+            'benq'       => Mobile\SiemensFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -564,7 +565,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SanyoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['aqua_star', 'aqua star', 'aqua trend'], false)) {
+        if ($s->containsAny(['aqua_star', 'aqua star', 'aqua trend', 'cloud_m5_ii'], false)) {
             return (new Mobile\IntexFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -640,7 +641,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\YuandaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/Fly/', $useragent) && !preg_match('/FlyFlow/', $useragent)) {
+        if (preg_match('/F[Ll][Yy]/', $useragent) && !preg_match('/FlyFlow/', $useragent)) {
             return (new Mobile\FlyFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -696,6 +697,18 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PhilipsFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('infinix', false)) {
+            return (new Mobile\InfinixFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('infocus', false)) {
+            return (new Mobile\InfocusFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('karbonn', false)) {
+            return (new Mobile\KarbonnFactory($this->loader))->detect($useragent, $s);
+        }
+
         if ($s->contains('NTT', true)) {
             return (new Mobile\NttSystemFactory($this->loader))->detect($useragent, $s);
         }
@@ -712,7 +725,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SmartfrenFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Z221', 'V788D', 'KIS PLUS', 'N918St', 'Beeline Pro', 'ATLAS_W', 'BASE Tab', 'X920', ' V9 ', 'ATLAS W', 'OPENC', 'OPEN2'], true)) {
+        if ($s->containsAny(['Z221', 'V788D', 'KIS PLUS', 'N918St', 'Beeline Pro', 'ATLAS_W', 'BASE Tab', 'X920', ' V9 ', 'ATLAS W', 'OPENC', 'OPEN2', 'A310'], true)) {
             return (new Mobile\ZteFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1184,7 +1197,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MotorolaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['h30-u10', 'kiw-', 'chc-', 'che2-', 'ath-', 'mha-', 'cam-', 'frd-', 'nem-', 'pra-', 'plk-', 'lon-', 'duk-', 'ale-', 'gra-', 'vtr-', 'was-', 'bln-', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', 'h60-l', ' p6 ', 'hi6210sft'], false)) {
+        if ($s->containsAny(['h30-u10', 'kiw-', 'chc-', 'che2-', 'ath-', 'mha-', 'cam-', 'frd-', 'nem-', 'pra-', 'plk-', 'lon-', 'duk-', 'ale-', 'gra-', 'vtr-', 'was-', 'bln-', 'ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', 'h60-l', ' p6 ', 'hi6210sft', 'y220-u00'], false)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1260,7 +1273,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeGeneralMobile as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1280,7 +1293,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeSony as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1414,7 +1427,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeIconbit as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1493,7 +1506,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeAlcatel as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1540,7 +1553,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeRossMoor as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1638,7 +1651,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeVerico as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1679,7 +1692,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1704,7 +1717,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
             if ($s->contains((string) $test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1736,7 +1749,7 @@ class MobileFactory implements Factory\FactoryInterface
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
             if ($s->contains($test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
@@ -1857,6 +1870,7 @@ class MobileFactory implements Factory\FactoryInterface
             'gnet'            => Mobile\GnetFactory::class,
             'hive v 3g'       => Mobile\TurboxFactory::class,
             'titanium octane' => Mobile\KarbonnFactory::class,
+            'titanium s202'   => Mobile\KarbonnFactory::class,
             'turkcell'        => Mobile\TurkcellFactory::class,
             ' v1 '            => Mobile\MaxtronFactory::class,
             'tecno'           => Mobile\TecnoFactory::class,
@@ -1974,11 +1988,17 @@ class MobileFactory implements Factory\FactoryInterface
             'ektra'           => Mobile\KodakFactory::class,
             'kt107'           => Mobile\BdfFactory::class,
             'm52_red_note'    => Mobile\MlaisFactory::class,
+            'sunmicrosystems' => Mobile\SunFactory::class,
+            ' p2'             => Mobile\GioneeFactory::class,
+            ' a50'            => Mobile\MicromaxFactory::class,
+            'max2_plus_3g'    => Mobile\InnjooFactory::class,
+            'a727'            => Mobile\AzpenFactory::class,
+            'coolpix s800c'   => Mobile\NikonFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
             if ($s->contains((string) $test, false)) {
-                // @var Factory\FactoryInterface $factory
+                /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);

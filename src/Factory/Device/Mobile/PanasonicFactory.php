@@ -24,6 +24,7 @@ class PanasonicFactory implements Factory\FactoryInterface
         'eluga_arc_2' => 'panasonic eluga arc 2',
         't50'         => 'panasonic t50',
         'p55'         => 'panasonic p55',
+        'p31'         => 'panasonic p31',
         'dl1'         => 'panasonic dl1',
         'kx-prxa15'   => 'panasonic kx-prxa15',
     ];

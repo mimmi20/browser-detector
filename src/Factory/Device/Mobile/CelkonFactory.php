@@ -23,6 +23,7 @@ class CelkonFactory implements Factory\FactoryInterface
     private $devices = [
         'a400'    => 'celkon a400',
         'a9 dual' => 'celkon a9 dual',
+        'a15'     => 'celkon a15',
     ];
 
     /**

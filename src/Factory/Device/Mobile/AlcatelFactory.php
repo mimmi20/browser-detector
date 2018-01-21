@@ -98,6 +98,7 @@ class AlcatelFactory implements Factory\FactoryInterface
         '4012x'                    => 'alcatel ot-4012x',
         '4012a'                    => 'alcatel ot-4012a',
         '4010d'                    => 'alcatel ot-4010d',
+        '4007x'                    => 'alcatel ot-4007x',
         '3075a'                    => 'alcatel ot-3075a',
         'vf-895n'                  => 'alcatel vf-895n',
         'vf-795'                   => 'alcatel vf-795',
