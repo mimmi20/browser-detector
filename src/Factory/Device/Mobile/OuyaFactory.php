@@ -21,7 +21,7 @@ class OuyaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ouya'   => 'ouya ouya',
+        'ouya' => 'ouya ouya',
     ];
 
     /**

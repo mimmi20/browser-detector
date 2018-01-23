@@ -21,7 +21,7 @@ class NikonFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'coolpix s800c'   => 'nikon coolpix s800c',
+        'coolpix s800c' => 'nikon coolpix s800c',
     ];
 
     /**

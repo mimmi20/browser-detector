@@ -21,7 +21,7 @@ class InnjooFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'max2_plus'   => 'innjoo Max 2 Plus',
+        'max2_plus' => 'innjoo Max 2 Plus',
     ];
 
     /**

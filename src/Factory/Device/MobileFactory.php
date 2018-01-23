@@ -422,6 +422,8 @@ class MobileFactory implements Factory\FactoryInterface
             'sanyo'      => Mobile\SanyoFactory::class,
             'siemens'    => Mobile\SiemensFactory::class,
             'benq'       => Mobile\SiemensFactory::class,
+            'sagem'      => Mobile\SagemFactory::class,
+            'ouya'       => Mobile\OuyaFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
@@ -889,7 +891,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LexandFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['A120', 'A116', 'A114', 'A093', 'A065', ' A96 ', 'Q327'], true)) {
+        if ($s->containsAny(['A120', 'A116', 'A114', 'A093', 'A065', ' A96 ', 'Q327', ' A47'], true)) {
             return (new Mobile\MicromaxFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -923,6 +925,14 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains(' z110', false)) {
             return (new Mobile\XidoFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['titanium octane', 'titanium s202'], false)) {
+            return (new Mobile\KarbonnFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('a727', false)) {
+            return (new Mobile\AzpenFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
@@ -1869,8 +1879,6 @@ class MobileFactory implements Factory\FactoryInterface
             'forward_art'     => Mobile\NgmFactory::class,
             'gnet'            => Mobile\GnetFactory::class,
             'hive v 3g'       => Mobile\TurboxFactory::class,
-            'titanium octane' => Mobile\KarbonnFactory::class,
-            'titanium s202'   => Mobile\KarbonnFactory::class,
             'turkcell'        => Mobile\TurkcellFactory::class,
             ' v1 '            => Mobile\MaxtronFactory::class,
             'tecno'           => Mobile\TecnoFactory::class,

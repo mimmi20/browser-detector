@@ -197,6 +197,7 @@ class MobileDevice
             'portalmmm',
             'hisense',
             'siemens',
+            'karbonn',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {

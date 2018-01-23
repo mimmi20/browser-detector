@@ -24,6 +24,7 @@ class SprintFactory implements Factory\FactoryInterface
         'ppc-6700'  => 'sprint 6700',
         'apa9292kt' => 'sprint 9292',
         'apa7373kt' => 'sprint a7373',
+        's2151'     => 'sprint s2151',
     ];
 
     /**

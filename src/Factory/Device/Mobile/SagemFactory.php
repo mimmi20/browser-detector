@@ -15,13 +15,17 @@ use BrowserDetector\Factory;
 use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
-class AzpenFactory implements Factory\FactoryInterface
+class SagemFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'a727' => 'azpen a727',
+        'my511x'  => 'sagem my511x',
+        'my411x'  => 'sagem my411x',
+        'my411c'  => 'sagem my411c',
+        'myC5-2v' => 'sagem myC5-2v',
+        'myv-55'  => 'sagem myv-55',
     ];
 
     /**
@@ -53,6 +57,6 @@ class AzpenFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general azpen device', $useragent);
+        return $this->loader->load('general sagem device', $useragent);
     }
 }
