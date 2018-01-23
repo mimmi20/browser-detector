@@ -107,6 +107,7 @@ class ZteFactory implements Factory\FactoryInterface
         'tania'             => 'zte tania',
         'g-x991-rio-orange' => 'zte g-x991',
         'beeline pro'       => 'zte beeline pro',
+        'a310'              => 'zte a310',
     ];
 
     /**

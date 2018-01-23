@@ -45,7 +45,6 @@ class EngineLoader implements ExtendedLoaderInterface
      * @param \Psr\Log\LoggerInterface              $logger
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
      */
     private function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
@@ -171,7 +170,7 @@ class EngineLoader implements ExtendedLoaderInterface
         } elseif ('VersionFactory' === $engineVersionClass) {
             $version = VersionFactory::detectVersion($useragent, $engine->version->search);
         } else {
-            // @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass
+            /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
             $versionClass = new $engineVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }

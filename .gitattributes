@@ -1,43 +1,43 @@
 # text files
 *                text=auto
-*.markdown       text eol=lf diff whitespace=blank-at-eol,blank-at-eof
-*.md             text eol=lf diff whitespace=blank-at-eol,blank-at-eof
-*.js             text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-*.css            text eol=lf diff=css whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=4
-*.json           text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-*.lock           text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-*.html           text eol=lf diff=html
-*.php            text eol=lf diff=php whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=4
-*.yml            text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-*.yaml           text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-*.xml            text eol=lf diff
-*.dist           text eol=lf diff
-*.txt            text eol=lf diff
-*.ini            text eol=lf diff
-*.sh             text eol=lf diff
-*.tmp            text eol=lf diff
-LICENSE          text eol=lf diff
+*.markdown       text eol=lf
+*.md             text eol=lf
+*.js             text eol=lf
+*.css            text eol=lf
+*.json           text eol=lf
+*.lock           text eol=lf
+*.html           text eol=lf
+*.php            text eol=lf
+*.yml            text eol=lf
+*.yaml           text eol=lf
+*.xml            text eol=lf
+*.dist           text eol=lf
+*.txt            text eol=lf
+*.ini            text eol=lf
+*.sh             text eol=lf
+*.tmp            text eol=lf
+LICENSE          text eol=lf
 
 # binary files
 *.zip            -text binary
 
 # files/folders to ignore
 /.*              export-ignore
-.codeclimate.yml export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-.coveralls.yml   export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-.editorconfig    export-ignore text eol=lf diff
-.gitattributes   export-ignore text eol=lf diff
-.gitignore       export-ignore text eol=lf diff
-.php_cs          export-ignore text eol=lf diff=php whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=4
-.scrutinizer.yml export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-.styleci.yml     export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-.travis.yml      export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-.sensiolabs.yml  export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-appveyor.yml     export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-circle.yml       export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-codecov.yml      export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-phpcs.xml        export-ignore text eol=lf diff
-phpstan.neon     export-ignore text eol=lf diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
-phpunit.xml      export-ignore text eol=lf diff
+.codeclimate.yml export-ignore text eol=lf
+.coveralls.yml   export-ignore text eol=lf
+.editorconfig    export-ignore text eol=lf
+.gitattributes   export-ignore text eol=lf
+.gitignore       export-ignore text eol=lf
+.php_cs          export-ignore text eol=lf
+.scrutinizer.yml export-ignore text eol=lf
+.styleci.yml     export-ignore text eol=lf
+.travis.yml      export-ignore text eol=lf
+.sensiolabs.yml  export-ignore text eol=lf
+appveyor.yml     export-ignore text eol=lf
+circle.yml       export-ignore text eol=lf
+codecov.yml      export-ignore text eol=lf
+phpcs.xml        export-ignore text eol=lf
+phpstan.neon     export-ignore text eol=lf
+phpunit.xml      export-ignore text eol=lf
 /tests           export-ignore
 /cache           export-ignore

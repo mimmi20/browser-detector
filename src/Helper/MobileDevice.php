@@ -67,6 +67,7 @@ class MobileDevice
             'tripadvisor',
             'nokia wap gateway',
             'crkey',
+            'lenovog780',
         ];
 
         if ($this->useragent->containsAny($noMobiles, false)) {
@@ -88,7 +89,7 @@ class MobileDevice
             return false;
         }
 
-        // @var array $mobiles Collection of mobile browser keywords
+        /* @var array $mobiles Collection of mobile browser keywords */
         $mobiles = [
             'android',
             'arm; touch',
@@ -196,6 +197,7 @@ class MobileDevice
             'portalmmm',
             'hisense',
             'siemens',
+            'karbonn',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {

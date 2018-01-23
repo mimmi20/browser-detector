@@ -25,6 +25,8 @@ class GioneeFactory implements Factory\FactoryInterface
         ' e7 '     => 'gionee e7',
         ' m3 '     => 'gionee m3',
         'gionee50' => 'gionee 50',
+        ' p2'      => 'gionee p2',
+        's80'      => 'gionee s80',
     ];
 
     /**

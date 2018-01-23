@@ -60,6 +60,9 @@ class FlyFactory implements Factory\FactoryInterface
         'iq441'     => 'fly iq441',
         'iq436i'    => 'fly iq436i',
         'iq434'     => 'fly iq434',
+        'e158'      => 'fly e158',
+        'e141tv'    => 'fly e141tv',
+        'ds123'     => 'fly ds123',
     ];
 
     /**

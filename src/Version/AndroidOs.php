@@ -32,6 +32,7 @@ class AndroidOs implements VersionCacheFactoryInterface
             'android wildpuzzlerom v8 froyo',
             'juc ?\(linux;',
             'linux; googletv',
+            'android ouya',
             'android os',
             'android;',
             'android_',

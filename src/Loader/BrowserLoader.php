@@ -46,7 +46,6 @@ class BrowserLoader implements ExtendedLoaderInterface
      * @param \Psr\Log\LoggerInterface              $logger
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
      */
     private function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
@@ -173,7 +172,7 @@ class BrowserLoader implements ExtendedLoaderInterface
         } elseif ('VersionFactory' === $browserVersionClass) {
             $version = VersionFactory::detectVersion($useragent, $browserData->version->search);
         } else {
-            // @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass
+            /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
             $versionClass = new $browserVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }

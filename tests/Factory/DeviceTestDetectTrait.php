@@ -44,7 +44,7 @@ trait DeviceTestDetectTrait
     {
         $s = new Stringy($agent);
 
-        // @var \UaResult\Device\DeviceInterface $result
+        /* @var \UaResult\Device\DeviceInterface $result */
         [$result] = $this->object->detect($agent, $s);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);

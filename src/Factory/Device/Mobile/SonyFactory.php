@@ -139,6 +139,7 @@ class SonyFactory implements Factory\FactoryInterface
         'c1905'                => 'sony c1905',
         'c1904'                => 'sony c1904',
         'c1605'                => 'sony c1605',
+        'c1604'                => 'sony c1604',
         'c1505'                => 'sony c1505',
         'c1504'                => 'sony c1504',
         'sgp612'               => 'sony sgp612',
@@ -308,6 +309,14 @@ class SonyFactory implements Factory\FactoryInterface
         'psp'                  => 'sony playstation portable',
         'playstation 4'        => 'sony playstation 4',
         'playstation 3'        => 'sony playstation 3',
+        'f100i'                => 'sonyericsson f100i',
+        'j105i'                => 'sonyericsson j105i',
+        'p910i'                => 'sonyericsson p910i',
+        'p910c'                => 'sonyericsson p910c',
+        'p910a'                => 'sonyericsson p910a',
+        'w100i'                => 'sonyericsson w100i',
+        'w20'                  => 'sonyericsson w20',
+        'ck13i'                => 'sonyericsson ck13i',
     ];
 
     /**

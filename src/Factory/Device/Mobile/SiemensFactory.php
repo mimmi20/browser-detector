@@ -24,6 +24,7 @@ class SiemensFactory implements Factory\FactoryInterface
         'sie-s65' => 'siemens s65',
         'sl45i'   => 'siemens sl45i',
         'sl45'    => 'siemens sl45',
+        'cf61'    => 'benq-siemens cf61',
     ];
 
     /**

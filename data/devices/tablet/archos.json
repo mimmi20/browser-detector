@@ -377,8 +377,8 @@
     "colors": null
   },
   "archos gamepad2": {
-    "codename": "Game Pad 2",
-    "marketingName": "Game Pad 2",
+    "codename": "GamePad 2",
+    "marketingName": "GamePad 2",
     "manufacturer": "Archos",
     "brand": "Archos",
     "platform": "android",
@@ -516,6 +516,19 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1024,
     "resolutionHeight": 768,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "archos gamepad": {
+    "codename": "GamePad",
+    "marketingName": "GamePad",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true,
     "colors": null
   }

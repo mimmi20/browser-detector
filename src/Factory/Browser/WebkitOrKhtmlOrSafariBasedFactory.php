@@ -192,6 +192,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'omniweb'                => 'omniweb',
             'nokia'                  => 'nokiabrowser',
             'twitter for i'          => 'twitter app',
+            'twitter/'               => 'twitter app',
             'qtcarbrowser'           => 'model s browser',
             'qtweb internet browser' => 'qtweb internet browser',
             'boxee'                  => 'boxee',

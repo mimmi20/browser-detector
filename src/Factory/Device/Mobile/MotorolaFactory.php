@@ -143,6 +143,7 @@ class MotorolaFactory implements Factory\FactoryInterface
         'l7'              => 'motorola slvr l7',
         ' z '             => 'motorola moto z',
         ' droid '         => 'motorola droid',
+        'v360v'           => 'motorola v360v',
     ];
 
     /**

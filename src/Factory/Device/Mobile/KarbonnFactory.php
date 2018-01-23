@@ -22,6 +22,11 @@ class KarbonnFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'titanium octane' => 'karbonn titanium octane',
+        'titanium s202'   => 'karbonn titanium s202',
+        'karbonn_a2'      => 'karbonn a2',
+        'k595'            => 'karbonn k595',
+        'k222s'           => 'karbonn k222s',
+        'k84'             => 'karbonn k84',
     ];
 
     /**
