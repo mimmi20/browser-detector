@@ -250,6 +250,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'g2800'                           => 'huawei g2800',
         't8600'                           => 'huawei t8600',
         'm750'                            => 'huawei m750',
+        'mt2l03'                          => 'huawei mt2l03',
     ];
 
     /**
