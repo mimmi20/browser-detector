@@ -128,6 +128,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'ubrowser'       => 'ucbrowser',
             'uc browser'     => 'ucbrowser',
             'baiduboxapp'    => 'baidu box app',
+            'liebaofast'     => 'liebao fast',
         ];
 
         foreach ($checkBeforeWebview as $search => $key) {
