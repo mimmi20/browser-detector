@@ -302,6 +302,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SharpFactory($this->loader))->detect($useragent, $s);
         }
 
+        if (preg_match('/m\-(m|p)p/i', $useragent)) {
+            return (new Mobile\MediacomFactory($this->loader))->detect($useragent, $s);
+        }
+
         $factoriesBeforeHannspree = [
             'n-06e'      => Mobile\NecFactory::class,
             'n905i'      => Mobile\NecFactory::class,
@@ -947,8 +951,12 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LenovoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('utstarcom', false)) {
+        if ($s->contains('utstar', false)) {
             return (new Mobile\UtStarcomFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('vk-', false)) {
+            return (new Mobile\VkMobileFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->containsAny(['FP1', 'FP2'], true)) {
@@ -1427,9 +1435,11 @@ class MobileFactory implements Factory\FactoryInterface
             'tab7id'        => Mobile\WexlerFactory::class,
             'xiaomi'        => Mobile\XiaomiFactory::class,
             'mb40ii1'       => Mobile\DnsFactory::class,
+            'm3 note'       => Mobile\MeizuFactory::class,
             ' m3 '          => Mobile\GioneeFactory::class,
             'f103 pro'      => Mobile\GioneeFactory::class,
             ' e7 '          => Mobile\GioneeFactory::class,
+            'gn810'         => Mobile\GioneeFactory::class,
             'w100'          => Mobile\ThlFactory::class,
             'w200'          => Mobile\ThlFactory::class,
             ' w8'           => Mobile\ThlFactory::class,
@@ -1559,6 +1569,7 @@ class MobileFactory implements Factory\FactoryInterface
             'genm14'          => Mobile\NokiaFactory::class,
             'n900'            => Mobile\NokiaFactory::class,
             '9930i'           => Mobile\StarFactory::class,
+            'n9100'           => Mobile\SamsungFactory::class,
         ];
 
         foreach ($factoriesBeforeRossMoor as $test => $factoryName) {
@@ -1608,10 +1619,13 @@ class MobileFactory implements Factory\FactoryInterface
             'h1+'            => Mobile\HummerFactory::class,
             'impress_l'      => Mobile\VertexFactory::class,
             'm040'           => Mobile\MeizuFactory::class,
-            'mz-mx5'         => Mobile\MeizuFactory::class,
+            'mz-'            => Mobile\MeizuFactory::class,
             'mx4'            => Mobile\MeizuFactory::class,
             ' m9 '           => Mobile\MeizuFactory::class,
+            'm2 note'        => Mobile\MeizuFactory::class,
+            'm571c'          => Mobile\MeizuFactory::class,
             ' m2 '           => Mobile\MeizuFactory::class,
+            'm1 note'        => Mobile\MeizuFactory::class,
             'm032'           => Mobile\MeizuFactory::class,
             'pro 5'          => Mobile\MeizuFactory::class,
             'neo-x5'         => Mobile\MinixFactory::class,
@@ -1694,6 +1708,7 @@ class MobileFactory implements Factory\FactoryInterface
             'x9006'       => Mobile\OppoFactory::class,
             'x9076'       => Mobile\OppoFactory::class,
             ' 1201 '      => Mobile\OppoFactory::class,
+            'n1t'         => Mobile\OppoFactory::class,
             'xda'         => Mobile\O2Factory::class,
             'kkt20'       => Mobile\LavaFactory::class,
             'pixel v2+'   => Mobile\LavaFactory::class,
@@ -1796,10 +1811,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if (preg_match('/(sm|yq)\d{3}/i', $useragent)) {
             return (new Mobile\SmartisanFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/m\-(m|p)p/i', $useragent)) {
-            return (new Mobile\MediacomFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ls\-\d{4}/i', $useragent)) {
