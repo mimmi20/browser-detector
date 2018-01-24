@@ -57,6 +57,7 @@ class BlackBerryFactory implements Factory\FactoryInterface
         '8530'        => 'blackberry 8530',
         '8520'        => 'blackberry 8520',
         '8350i'       => 'blackberry 8350i',
+        '8330'        => 'blackberry 8330',
         '8310'        => 'blackberry 8310',
         '8230'        => 'blackberry 8230',
         '8110'        => 'blackberry 8110',
