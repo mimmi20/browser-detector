@@ -198,6 +198,7 @@ class MobileDevice
             'hisense',
             'siemens',
             'karbonn',
+            'm2 note',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {
