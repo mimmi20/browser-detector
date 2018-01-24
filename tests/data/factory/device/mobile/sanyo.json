@@ -27,15 +27,15 @@
   },
   {
     "ua": "Sanyo-SCP588CN/1.0 UP.Browser/6.2.2.6.g.1.101 (GUI) MMP/2.0",
-    "codeName": "general Sanyo Device",
-    "marketingName": "general Sanyo Device",
+    "codeName": "SCP-588CN",
+    "marketingName": "SCP-588CN",
     "manufacturer": "Sanyo",
     "brand": "Sanyo",
     "type": "Feature Phone",
     "dualOrientation": false,
     "pointingMethod": null,
-    "width": null,
-    "height": null,
+    "width": 176,
+    "height": 136,
     "colors": null
   },
   {
@@ -62,6 +62,45 @@
     "pointingMethod": null,
     "width": 240,
     "height": 320,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760",
+    "codeName": "SCP-6760",
+    "marketingName": "Incognito",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "Feature Phone",
+    "dualOrientation": false,
+    "pointingMethod": null,
+    "width": 320,
+    "height": 240,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6780",
+    "codeName": "SCP-6780",
+    "marketingName": "Innuendo",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "Feature Phone",
+    "dualOrientation": false,
+    "pointingMethod": null,
+    "width": 400,
+    "height": 280,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/4.0 (REX; U; en-us; Sanyo; SCP-6750/US; NetFront/3.4/AMB)",
+    "codeName": "SCP-6750",
+    "marketingName": "Katana Eclipse",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "Feature Phone",
+    "dualOrientation": false,
+    "pointingMethod": null,
+    "width": 176,
+    "height": 220,
     "colors": null
   }
 ]
