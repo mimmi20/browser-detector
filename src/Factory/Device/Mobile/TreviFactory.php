@@ -21,7 +21,10 @@ class TreviFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        ' c4 ' => 'trevi c4',
+        ' c4 '          => 'trevi c4',
+        'phablet 5,3 q' => 'trevi phablet 5,3 q',
+        'reverse_5.5q'  => 'trevi reverse 5.5q',
+        'phablet 6 s'   => 'trevi phablet 6 s',
     ];
 
     /**
