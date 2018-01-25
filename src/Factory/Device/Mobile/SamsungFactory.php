@@ -424,6 +424,13 @@ class SamsungFactory implements Factory\FactoryInterface
                 'sm-p350'  => 'samsung sm-p350',
             ],
             'sm-n' => [
+                'sm-n950fd' => 'samsung sm-n950fd',
+                'sm-n950f'  => 'samsung sm-n950f',
+                'sm-n950u1' => 'samsung sm-n950u1',
+                'sm-n950u'  => 'samsung sm-n950u',
+                'sm-n950w'  => 'samsung sm-n950w',
+                'sm-n9500'  => 'samsung sm-n9500',
+                'sm-n950n'  => 'samsung sm-n950n',
                 'sm-n930fd' => 'samsung sm-n930fd',
                 'sm-n930f'  => 'samsung sm-n930f',
                 'sm-n930w8' => 'samsung sm-n930w8',
@@ -965,6 +972,7 @@ class SamsungFactory implements Factory\FactoryInterface
             'yp-gb70' => 'samsung yp-gb70',
             'yp-g70'  => 'samsung yp-g70',
             'yp-g1'   => 'samsung yp-g1',
+            'yp-gb1'  => 'samsung yp-gb1',
         ],
         'sph-' => [
             'sph-p100'    => 'samsung sph-p100',
