@@ -2023,7 +2023,7 @@ class MobileFactory implements Factory\FactoryInterface
             'max2_plus_3g'    => Mobile\InnjooFactory::class,
             'a727'            => Mobile\AzpenFactory::class,
             'coolpix s800c'   => Mobile\NikonFactory::class,
-            'vsd220'          => Mobile\ViewsonicFactory::class,
+            'vsd220'          => Mobile\ViewSonicFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {

@@ -21,13 +21,13 @@ class SanyoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'scp6780' => 'sanyo scp6780',
-        'scp6760' => 'sanyo scp6760',
+        'scp6780'  => 'sanyo scp6780',
+        'scp6760'  => 'sanyo scp6760',
         'scp-6750' => 'sanyo scp6750',
         'scp588cn' => 'sanyo scp588cn',
-        'scp3810' => 'sanyo scp3810',
-        'e4100'   => 'sanyo e4100',
-        'pm-8200' => 'sanyo pm-8200',
+        'scp3810'  => 'sanyo scp3810',
+        'e4100'    => 'sanyo e4100',
+        'pm-8200'  => 'sanyo pm-8200',
     ];
 
     /**
