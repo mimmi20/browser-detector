@@ -165,6 +165,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'chromium'                    => 'chromium',
             'surfbrowser'                 => 'surfbrowser',
             'surf/'                       => 'surfbrowser',
+            'v1_and_sq'                   => 'qqbrowser',
         ];
 
         foreach ($checkBeforeAndroidWebkit as $search => $key) {
