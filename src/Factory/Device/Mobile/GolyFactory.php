@@ -21,9 +21,9 @@ class GolyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'goly_x5'   => 'goly x5',
-        'goly x6'   => 'goly x6',
-        'a100'   => 'goly a100',
+        'goly_x5' => 'goly x5',
+        'goly x6' => 'goly x6',
+        'a100'    => 'goly a100',
     ];
 
     /**

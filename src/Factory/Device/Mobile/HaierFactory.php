@@ -22,7 +22,7 @@ class HaierFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'pad g781'   => 'haier pad g781',
-        'sy0880'   => 'haier sy0880',
+        'sy0880'     => 'haier sy0880',
         'l52'        => 'haier l52',
         'g30'        => 'haier g30',
         'hm-n501-fl' => 'haier hm-n501-fl',
@@ -33,8 +33,8 @@ class HaierFactory implements Factory\FactoryInterface
         'w718'       => 'haier w718',
         'w717'       => 'haier w717',
         'w716'       => 'haier w716',
-        'hw-n86w'       => 'haier n86w',
-        'ht-i600'       => 'haier ht-i600',
+        'hw-n86w'    => 'haier n86w',
+        'ht-i600'    => 'haier ht-i600',
     ];
 
     /**

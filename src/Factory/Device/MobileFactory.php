@@ -244,7 +244,7 @@ class MobileFactory implements Factory\FactoryInterface
             'nbpc724'      => Mobile\CobyFactory::class,
             'o+'           => Mobile\OplusFactory::class,
             'oplus'        => Mobile\OplusFactory::class,
-            'goly' => Mobile\GolyFactory::class,
+            'goly'         => Mobile\GolyFactory::class,
         ];
 
         foreach ($factoriesBeforeCoby as $test => $factoryName) {
@@ -1457,7 +1457,7 @@ class MobileFactory implements Factory\FactoryInterface
             'w100'          => Mobile\ThlFactory::class,
             'w200'          => Mobile\ThlFactory::class,
             ' w8'           => Mobile\ThlFactory::class,
-            'w713'            => Mobile\CoolpadFactory::class,
+            'w713'          => Mobile\CoolpadFactory::class,
         ];
 
         foreach ($factoriesBeforeIconbit as $test => $factoryName) {
@@ -1751,16 +1751,16 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         $factoriesBeforeXiaomi = [
-            'pulse'     => Mobile\TmobileFactory::class,
-            'mytouch4g' => Mobile\TmobileFactory::class,
-            'ameo'      => Mobile\TmobileFactory::class,
-            'garminfone'      => Mobile\TmobileFactory::class,
-            'redmi'     => Mobile\XiaomiFactory::class,
-            'note 4'    => Mobile\XiaomiFactory::class,
-            '2014813'   => Mobile\XiaomiFactory::class,
-            '2014011'   => Mobile\XiaomiFactory::class,
-            '2015562'   => Mobile\XiaomiFactory::class,
-            'g009'      => Mobile\YxtelFactory::class,
+            'pulse'      => Mobile\TmobileFactory::class,
+            'mytouch4g'  => Mobile\TmobileFactory::class,
+            'ameo'       => Mobile\TmobileFactory::class,
+            'garminfone' => Mobile\TmobileFactory::class,
+            'redmi'      => Mobile\XiaomiFactory::class,
+            'note 4'     => Mobile\XiaomiFactory::class,
+            '2014813'    => Mobile\XiaomiFactory::class,
+            '2014011'    => Mobile\XiaomiFactory::class,
+            '2015562'    => Mobile\XiaomiFactory::class,
+            'g009'       => Mobile\YxtelFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
@@ -1936,7 +1936,7 @@ class MobileFactory implements Factory\FactoryInterface
             'mitab think'     => Mobile\WolderFactory::class,
             'pixel'           => Mobile\GoogleFactory::class,
             'gce x86 phone'   => Mobile\GoogleFactory::class,
-            'glass 1'   => Mobile\GoogleFactory::class,
+            'glass 1'         => Mobile\GoogleFactory::class,
             '909t'            => Mobile\MpieFactory::class,
             ' m13 '           => Mobile\MpieFactory::class,
             'z30'             => Mobile\MagnusFactory::class,
