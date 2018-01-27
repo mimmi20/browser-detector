@@ -99,6 +99,7 @@ class AsusFactory implements Factory\FactoryInterface
         'nexus7'            => 'asus nexus 7',
         'asus;galaxy6'      => 'asus galaxy6',
         'eee_701'           => 'asus eee 701',
+        'nuvifone-m10'           => 'asus nuvifone m10',
     ];
 
     /**
