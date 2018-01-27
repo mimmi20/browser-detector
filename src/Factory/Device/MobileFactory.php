@@ -244,6 +244,7 @@ class MobileFactory implements Factory\FactoryInterface
             'nbpc724'      => Mobile\CobyFactory::class,
             'o+'           => Mobile\OplusFactory::class,
             'oplus'        => Mobile\OplusFactory::class,
+            'goly' => Mobile\GolyFactory::class,
         ];
 
         foreach ($factoriesBeforeCoby as $test => $factoryName) {
@@ -485,6 +486,18 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\GioneeFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('videocon', false)) {
+            return (new Mobile\VideoconFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('gigaset', false)) {
+            return (new Mobile\GigasetFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/V1\d{2}/', $useragent)) {
+            return (new Mobile\GioneeFactory($this->loader))->detect($useragent, $s);
+        }
+
         if (preg_match('/(A|C)\d{5}/', $useragent)) {
             return (new Mobile\NomiFactory($this->loader))->detect($useragent, $s);
         }
@@ -501,7 +514,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HisenseFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['f5281', 'u972'], false)) {
+        if ($s->containsAny(['f5281', 'u972', 'e621t'], false)) {
             return (new Mobile\HisenseFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -733,10 +746,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PentagramFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('gigaset', false)) {
-            return (new Mobile\GigasetFactory($this->loader))->detect($useragent, $s);
-        }
-
         if ($s->contains('smartfren', false)) {
             return (new Mobile\SmartfrenFactory($this->loader))->detect($useragent, $s);
         }
@@ -949,7 +958,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AzpenFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
+        if (preg_match('/ [aevzs]\d{3} /i', $useragent)) {
             return (new Mobile\AcerFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -971,10 +980,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->containsAny(['FP1', 'FP2'], true)) {
             return (new Mobile\FairphoneFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('videocon', false)) {
-            return (new Mobile\VideoconFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('mastone', false)) {
@@ -1452,6 +1457,7 @@ class MobileFactory implements Factory\FactoryInterface
             'w100'          => Mobile\ThlFactory::class,
             'w200'          => Mobile\ThlFactory::class,
             ' w8'           => Mobile\ThlFactory::class,
+            'w713'            => Mobile\CoolpadFactory::class,
         ];
 
         foreach ($factoriesBeforeIconbit as $test => $factoryName) {
@@ -1461,6 +1467,10 @@ class MobileFactory implements Factory\FactoryInterface
 
                 return $factory->detect($useragent, $s);
             }
+        }
+
+        if (preg_match('/ W\d{3} /', $useragent)) {
+            return (new Mobile\HaierFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/NT\-\d{4}(S|P|T|M)/', $useragent)) {
@@ -1618,6 +1628,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SimvalleyFactory($this->loader))->detect($useragent, $s);
         }
 
+        if (preg_match('/H[WT]\-[WIN]\d{2,3}/', $useragent)) {
+            return (new Mobile\HaierFactory($this->loader))->detect($useragent, $s);
+        }
+
         $factoriesBeforeVerico = [
             'rio r1'         => Mobile\GigabyteFactory::class,
             'gsmart_t4'      => Mobile\GigabyteFactory::class,
@@ -1667,7 +1681,6 @@ class MobileFactory implements Factory\FactoryInterface
             'touareg8_3g'    => Mobile\AccentFactory::class,
             'chagall'        => Mobile\PegatronFactory::class,
             'turbo x6'       => Mobile\TurboPadFactory::class,
-            'hw-w718'        => Mobile\HaierFactory::class,
             'w717'           => Mobile\HaierFactory::class,
             'hm-n501-fl'     => Mobile\HaierFactory::class,
             ' l52 '          => Mobile\HaierFactory::class,
@@ -1741,6 +1754,7 @@ class MobileFactory implements Factory\FactoryInterface
             'pulse'     => Mobile\TmobileFactory::class,
             'mytouch4g' => Mobile\TmobileFactory::class,
             'ameo'      => Mobile\TmobileFactory::class,
+            'garminfone'      => Mobile\TmobileFactory::class,
             'redmi'     => Mobile\XiaomiFactory::class,
             'note 4'    => Mobile\XiaomiFactory::class,
             '2014813'   => Mobile\XiaomiFactory::class,
@@ -1879,7 +1893,6 @@ class MobileFactory implements Factory\FactoryInterface
             'a0001'           => Mobile\OneplusFactory::class,
             'smartpad'        => Mobile\EinsUndEinsFactory::class,
             'n930'            => Mobile\CoolpadFactory::class,
-            'w713'            => Mobile\CoolpadFactory::class,
             '8079'            => Mobile\CoolpadFactory::class,
             '5860s'           => Mobile\CoolpadFactory::class,
             'la-m1'           => Mobile\BeidouFactory::class,
@@ -1923,6 +1936,7 @@ class MobileFactory implements Factory\FactoryInterface
             'mitab think'     => Mobile\WolderFactory::class,
             'pixel'           => Mobile\GoogleFactory::class,
             'gce x86 phone'   => Mobile\GoogleFactory::class,
+            'glass 1'   => Mobile\GoogleFactory::class,
             '909t'            => Mobile\MpieFactory::class,
             ' m13 '           => Mobile\MpieFactory::class,
             'z30'             => Mobile\MagnusFactory::class,

@@ -9733,6 +9733,21 @@
     },
     "engine": "webkit"
   },
+  "qvodplayerbrowser": {
+    "name": "Qvod Player Browser",
+    "manufacturer": "Qvod Technology",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QvodPlayerBrowser",
+        "QvodPlayerBrowser:"
+      ]
+    },
+    "engine": null
+  },
   "qwantify": {
     "name": "Qwantify",
     "manufacturer": "Qwant",
