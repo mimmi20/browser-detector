@@ -514,7 +514,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HisenseFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['f5281', 'u972', 'e621t'], false)) {
+        if ($s->containsAny(['f5281', 'u972', 'e621t', 'eg680'], false)) {
             return (new Mobile\HisenseFactory($this->loader))->detect($useragent, $s);
         }
 
