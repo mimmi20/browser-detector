@@ -21,10 +21,13 @@ class GoogleFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'pixel 2 xl'       => 'google pixel 2 xl',
+        'pixel 2'       => 'google pixel 2',
         'pixel c'       => 'google pixel c',
         'pixel xl'      => 'google pixel xl',
         'pixel'         => 'google pixel',
         'gce x86 phone' => 'google compute engine',
+        'glass 1' => 'google glass 1',
     ];
 
     /**
