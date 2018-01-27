@@ -622,7 +622,7 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if ($s->contains('SPV', true)) {
-            return (new Mobile\SpvFactory($this->loader))->detect($useragent, $s);
+            return (new Mobile\OrangeFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('t-mobile', false)) {
