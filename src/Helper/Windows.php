@@ -133,6 +133,7 @@ class Windows
             'mobile version',
             'lumia',
             ' wds ',
+            'wpos:',
         ];
 
         if (!$this->useragent->containsAny($mobileWindows, false)) {

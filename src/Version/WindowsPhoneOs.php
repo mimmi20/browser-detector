@@ -46,7 +46,7 @@ class WindowsPhoneOs implements VersionCacheFactoryInterface
             return VersionFactory::set('0.0.0');
         }
 
-        $searches = ['Windows Phone OS', 'Windows Phone', 'wds', 'Windows Mobile', 'Windows NT'];
+        $searches = ['Windows Phone OS', 'Windows Phone', 'wds', 'Windows Mobile', 'Windows NT', 'WPOS\:'];
 
         return VersionFactory::detectVersion($useragent, $searches);
     }
