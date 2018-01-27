@@ -501,7 +501,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\GioneeFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(A|C)\d{5}/', $useragent)) {
+        if (preg_match('/P[CG]\d{5}/', $useragent)) {
+            return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/[AC]\d{5}/', $useragent)) {
             return (new Mobile\NomiFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -509,7 +513,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\OneplusFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/one a200(1|3|5)/i', $useragent)) {
+        if (preg_match('/one a200[135]/i', $useragent)) {
             return (new Mobile\OneplusFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -589,7 +593,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\WortmannFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(C|D|E|F|G)\d{4}/', $useragent)) {
+        if (preg_match('/[CDEFG]\d{4}/', $useragent)) {
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1281,7 +1285,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\PrestigioFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['PJ83100', '831C', 'Evo 3D GSM', 'Eris 2.1', '0PCV1', 'MDA'], true)) {
+        if ($s->containsAny(['PJ83100', '831C', 'Evo 3D GSM', 'Eris 2.1', '0PCV1', 'MDA', 'EVO3D_X515m'], true)) {
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
