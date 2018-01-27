@@ -433,6 +433,7 @@ class MobileFactory implements Factory\FactoryInterface
             'cowon'      => Mobile\CowonFactory::class,
             'homtom'     => Mobile\HomtomFactory::class,
             'hosin'      => Mobile\HosinFactory::class,
+            'hasee'      => Mobile\HaseeFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
