@@ -1671,6 +1671,7 @@ class MobileFactory implements Factory\FactoryInterface
             'x525a'          => Mobile\HtcFactory::class,
             'z710e'          => Mobile\HtcFactory::class,
             'amaze'          => Mobile\HtcFactory::class,
+            'butterfly2'     => Mobile\HtcFactory::class,
             ' xst2 '         => Mobile\FourgSystemsFactory::class,
             'netbox'         => Mobile\SonyFactory::class,
             ' x10 '          => Mobile\SonyFactory::class,

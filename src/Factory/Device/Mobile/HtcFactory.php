@@ -237,7 +237,7 @@ class HtcFactory implements Factory\FactoryInterface
         'velocity'                => 'htc velocity',
         'touch_diamond2'          => 'htc touch diamond 2',
         'tattoo'                  => 'htc tattoo',
-        'schubert'                => 'htc schubert',
+        'schubert'                => 'htc t9292',
         'touch_pro2_t7373'        => 'htc t7373',
         'touch2'                  => 'htc t3335',
         't528w'                   => 'htc t528w',
