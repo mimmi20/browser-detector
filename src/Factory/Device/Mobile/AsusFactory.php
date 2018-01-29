@@ -60,9 +60,10 @@ class AsusFactory implements Factory\FactoryInterface
         'k012'              => 'asus k012',
         'k013'              => 'asus k013',
         'k015'              => 'asus k015',
+        'k016'              => 'asus k016',
+        'k017'              => 'asus k017',
         'k018'              => 'asus k018',
         'tpad_10'           => 'asus k018',
-        'k017'              => 'asus k017',
         'k019'              => 'asus k019',
         'k01a'              => 'asus k01a',
         'k01b'              => 'asus k01b',
@@ -98,6 +99,7 @@ class AsusFactory implements Factory\FactoryInterface
         'nexus7'            => 'asus nexus 7',
         'asus;galaxy6'      => 'asus galaxy6',
         'eee_701'           => 'asus eee 701',
+        'nuvifone-m10'      => 'asus nuvifone m10',
     ];
 
     /**

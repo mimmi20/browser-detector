@@ -6143,6 +6143,20 @@
     },
     "engine": null
   },
+  "liebao fast": {
+    "name": "LieBaoFast",
+    "manufacturer": "Kingsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LieBaoFast"
+      ]
+    },
+    "engine": null
+  },
   "lightspeed systems crawler": {
     "name": "Lightspeed Systems Crawler",
     "manufacturer": "LightspeedSystems",
@@ -9517,7 +9531,8 @@
       "search": [
         "MQQBrowser",
         "QQBrowser",
-        " QQ\\/"
+        " QQ\\/",
+        "V1\\_AND\\_SQ\\_"
       ]
     },
     "engine": null
@@ -9717,6 +9732,21 @@
       ]
     },
     "engine": "webkit"
+  },
+  "qvodplayerbrowser": {
+    "name": "Qvod Player Browser",
+    "manufacturer": "Qvod Technology",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QvodPlayerBrowser",
+        "QvodPlayerBrowser:"
+      ]
+    },
+    "engine": null
   },
   "qwantify": {
     "name": "Qwantify",

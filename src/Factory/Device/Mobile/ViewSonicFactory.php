@@ -27,6 +27,7 @@ class ViewSonicFactory implements Factory\FactoryInterface
         'viewpad7'       => 'viewsonic viewpad7',
         'viewpad-7'      => 'viewsonic viewpad7',
         'viewsonic-v350' => 'viewsonic v350',
+        'vsd220'         => 'viewsonic vsd220',
     ];
 
     /**

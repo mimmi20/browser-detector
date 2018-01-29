@@ -46,6 +46,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'mi 2sc'         => 'xiaomitech mi 2sc',
         'mi 2s'          => 'xiaomitech mi 2s',
         'mi 2'           => 'xiaomitech mi 2',
+        'hm note 1td'    => 'xiaomitech hm note 1td',
         'hm note 1w'     => 'xiaomitech hm note 1w',
         'hm note 1s'     => 'xiaomitech hm note 1s',
         'hm note 1ltetd' => 'xiaomitech hm note 1lte td',

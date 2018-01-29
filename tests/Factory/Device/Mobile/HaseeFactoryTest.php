@@ -12,14 +12,14 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device\Mobile;
 
 use BrowserDetector\Cache\Cache;
-use BrowserDetector\Factory\Device\Mobile\SpvFactory;
+use BrowserDetector\Factory\Device\Mobile\HaseeFactory;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetectorTest\Factory\DeviceTestDetectTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
-class SpvFactoryTest extends TestCase
+class HaseeFactoryTest extends TestCase
 {
     /**
      * Sets up the fixture, for example, open a network connection.
@@ -37,7 +37,7 @@ class SpvFactoryTest extends TestCase
 
         $loader->warmupCache();
 
-        $this->object = new SpvFactory($loader);
+        $this->object = new HaseeFactory($loader);
     }
 
     use DeviceTestDetectTrait;
@@ -47,6 +47,6 @@ class SpvFactoryTest extends TestCase
      */
     public function providerDetect()
     {
-        return json_decode(file_get_contents('tests/data/factory/device/mobile/spv.json'), true);
+        return json_decode(file_get_contents('tests/data/factory/device/mobile/hasee.json'), true);
     }
 }

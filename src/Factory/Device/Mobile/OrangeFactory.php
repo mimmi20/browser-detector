@@ -23,6 +23,9 @@ class OrangeFactory implements Factory\FactoryInterface
     private $devices = [
         'funtab 8' => 'orange funtab 8',
         'zilo'     => 'orange zilo',
+        'm700'     => 'spv m700',
+        'e650'     => 'spv e650',
+        'e600'     => 'spv e600',
     ];
 
     /**

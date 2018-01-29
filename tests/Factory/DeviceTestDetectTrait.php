@@ -137,10 +137,10 @@ trait DeviceTestDetectTrait
             );
         }
 
-        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== mb_stripos((string) $result->getDeviceName(), 'general')) {
+        if (false !== mb_stripos((string) $result->getDeviceName(), 'general')) {
             self::assertNull(
                 $result->getResolutionWidth(),
-                'Expected display width to be "null" for general or desktop/tv devices (was "' . $result->getResolutionWidth() . '")'
+                'Expected display width to be "null" for general devices (was "' . $result->getResolutionWidth() . '")'
             );
 
             self::assertSame(
@@ -154,12 +154,23 @@ trait DeviceTestDetectTrait
                 $result->getResolutionWidth(),
                 'Expected display width to be "' . $width . '" (was "' . $result->getResolutionWidth() . '")'
             );
+        } elseif ($result->getType()->isDesktop() || $result->getType()->isTv()) {
+            self::assertNull(
+                $result->getResolutionWidth(),
+                'Expected display width to be "null" for desktop/tv devices (was "' . $result->getResolutionWidth() . '")'
+            );
+
+            self::assertSame(
+                $width,
+                $result->getResolutionWidth(),
+                'Expected display width to be "' . $width . '" (was "' . $result->getResolutionWidth() . '")'
+            );
         }
 
-        if ($result->getType()->isDesktop() || $result->getType()->isTv() || false !== mb_stripos((string) $result->getDeviceName(), 'general')) {
+        if (false !== mb_stripos((string) $result->getDeviceName(), 'general')) {
             self::assertNull(
                 $result->getResolutionHeight(),
-                'Expected display height to be "null" for general or desktop/tv devices (was "' . $result->getResolutionHeight() . '")'
+                'Expected display height to be "null" for general devices (was "' . $result->getResolutionHeight() . '")'
             );
 
             self::assertSame(
@@ -168,6 +179,17 @@ trait DeviceTestDetectTrait
                 'Expected display height to be "' . $height . '" (was "' . $result->getResolutionHeight() . '")'
             );
         } elseif (null !== $height) {
+            self::assertSame(
+                $height,
+                $result->getResolutionHeight(),
+                'Expected display height to be "' . $height . '" (was "' . $result->getResolutionHeight() . '")'
+            );
+        } elseif ($result->getType()->isDesktop() || $result->getType()->isTv()) {
+            self::assertNull(
+                $result->getResolutionHeight(),
+                'Expected display height to be "null" for desktop/tv devices (was "' . $result->getResolutionHeight() . '")'
+            );
+
             self::assertSame(
                 $height,
                 $result->getResolutionHeight(),

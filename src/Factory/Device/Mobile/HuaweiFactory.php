@@ -162,6 +162,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'u9510e'                          => 'huawei u9510e',
         'u9510'                           => 'huawei u9510',
         'u9508'                           => 'huawei u9508',
+        'u9500'                           => 'huawei u9500',
         'u9200'                           => 'huawei u9200',
         'u8950n-1'                        => 'huawei u8950n-1',
         'u8950n'                          => 'huawei u8950n',
@@ -171,6 +172,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'u8860'                           => 'huawei u8860',
         'u8850'                           => 'huawei u8850',
         'u8825'                           => 'huawei u8825',
+        'u8818'                           => 'huawei u8818',
         'u8815'                           => 'huawei u8815',
         'u8800'                           => 'huawei u8800',
         'huawei u8666 build/huaweiu8666e' => 'huawei u8666',
@@ -250,6 +252,12 @@ class HuaweiFactory implements Factory\FactoryInterface
         'g2800'                           => 'huawei g2800',
         't8600'                           => 'huawei t8600',
         'm750'                            => 'huawei m750',
+        'mt2l03'                          => 'huawei mt2l03',
+        'c8815'                           => 'huawei c8815',
+        'c8813q'                          => 'huawei c8813q',
+        'c8813'                           => 'huawei c8813',
+        'c8812'                           => 'huawei c8812',
+        'c8500s'                          => 'huawei c8500s',
     ];
 
     /**

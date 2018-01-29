@@ -529,6 +529,10 @@ class GenericBrowserFactory implements FactoryInterface
             return $this->loader->load('go httpclient', $useragent);
         }
 
+        if (preg_match('/NF[34]/i', $useragent)) {
+            return $this->loader->load('netfront', $useragent);
+        }
+
         $lastBrowsers = [
             'go-http-client'                                         => 'go httpclient',
             'proxy gear pro'                                         => 'proxy gear pro',

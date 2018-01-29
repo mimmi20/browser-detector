@@ -15,13 +15,13 @@ use BrowserDetector\Factory;
 use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
-class SpvFactory implements Factory\FactoryInterface
+class VkMobileFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'm700' => 'spv m700',
+        'vk900' => 'vk-mobile vk900',
     ];
 
     /**
@@ -53,6 +53,6 @@ class SpvFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general spv device', $useragent);
+        return $this->loader->load('general vk-mobile device', $useragent);
     }
 }

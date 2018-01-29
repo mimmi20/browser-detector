@@ -1,17 +1,4 @@
 {
-  "htc t9292": {
-    "codename": "T9292",
-    "marketingName": "HD7",
-    "manufacturer": "Htc",
-    "brand": "Htc",
-    "platform": "windows phone",
-    "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true,
-    "colors": null
-  },
   "htc t7576": {
     "codename": "T7576",
     "marketingName": "7 Pro",
@@ -371,6 +358,32 @@
     "platform": "windows mobile os",
     "type": "feature-phone",
     "pointingMethod": "stylus",
+    "resolutionWidth": 240,
+    "resolutionHeight": 320,
+    "dualOrientation": false,
+    "colors": null
+  },
+  "htc s510": {
+    "codename": "S510",
+    "marketingName": "Snap",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "platform": "windows mobile os",
+    "type": "feature-phone",
+    "pointingMethod": "stylus",
+    "resolutionWidth": 320,
+    "resolutionHeight": 240,
+    "dualOrientation": false,
+    "colors": null
+  },
+  "htc t3232": {
+    "codename": "T3232",
+    "marketingName": "Touch 3G",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "platform": "windows ce",
+    "type": "feature-phone",
+    "pointingMethod": "touchscreen",
     "resolutionWidth": 240,
     "resolutionHeight": 320,
     "dualOrientation": false,

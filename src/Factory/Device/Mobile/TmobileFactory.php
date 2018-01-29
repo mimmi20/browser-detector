@@ -27,6 +27,7 @@ class TmobileFactory implements Factory\FactoryInterface
         't-mobile_g2_touch' => 'tmobile g2 touch',
         't-mobile g2'       => 'tmobile g2 touch',
         't-mobile g1'       => 'tmobile g1',
+        'garminfone'        => 'tmobile garminfone',
         'ameo'              => 'tmobile ameo',
     ];
 
