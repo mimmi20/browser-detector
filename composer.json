@@ -26,6 +26,12 @@
     "issues": "https://github.com/mimmi20/BrowserDetector/issues",
     "source": "https://github.com/mimmi20/BrowserDetector"
   },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/mimmi20/Apple-iOS-build.git"
+    }
+  ],
   "require": {
     "php": "^7.1",
     "psr/log": "^1.0",
@@ -40,7 +46,7 @@
     "mimmi20/ua-result-company": "~3.2.3",
     "symfony/yaml": "^3.3||^4.0",
     "seld/jsonlint": "^1.7",
-    "peterkahl/apple-ios-build-version": ">=39",
+    "peterkahl/apple-ios-build-version": "dev-master",
     "peterkahl/apple-os-x-build-version": ">=31"
   },
   "require-dev": {
