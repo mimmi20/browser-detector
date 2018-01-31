@@ -26,6 +26,12 @@
     "issues": "https://github.com/mimmi20/BrowserDetector/issues",
     "source": "https://github.com/mimmi20/BrowserDetector"
   },
+  "repositories": [
+    {
+      "type": "git",
+      "url":  "https://github.com/mimmi20/Apple-iOS-build.git"
+    }
+  ],
   "require": {
     "php": "^7.1",
     "psr/log": "^1.0",

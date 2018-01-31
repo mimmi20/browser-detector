@@ -23,7 +23,6 @@ addons:
 
 stages:
   - composer validate
-  - check coding style
   - static code analysis
   - test
   - test with coverage
@@ -67,14 +66,14 @@ jobs:
       install: skip
       script: composer validate
 
-    - stage: check coding style
+    - stage: static code analysis
       php: 7.1
       env:
         - TEST=phpcs
         - COMPOSER_FLAGS=""
       script: vendor/bin/phpcs --colors
       
-    - stage: check coding style
+    - stage: static code analysis
       php: 7.1
       env:
         - TEST=php-cs-fixer
