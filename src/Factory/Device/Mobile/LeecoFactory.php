@@ -28,6 +28,7 @@ class LeecoFactory implements Factory\FactoryInterface
         'lex820'   => 'leeco le x820',
         'lex720'   => 'leeco le x720',
         'le x620'  => 'leeco le x620',
+        'le x507'  => 'leeco le x507',
     ];
 
     /**

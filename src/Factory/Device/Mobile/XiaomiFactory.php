@@ -36,6 +36,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'mi note'        => 'xiaomitech mi note',
         'mi max'         => 'xiaomitech mi max',
         'mi-4c'          => 'xiaomitech mi 4c',
+        'mi 4i'          => 'xiaomitech mi 4i',
         'mi 4s'          => 'xiaomitech mi 4s',
         'mi 4w'          => 'xiaomitech mi 4w',
         'mi 4lte'        => 'xiaomitech mi 4 lte',
@@ -56,7 +57,9 @@ class XiaomiFactory implements Factory\FactoryInterface
         'hm 1sc'         => 'xiaomitech hm 1sc',
         'hm 1s'          => 'xiaomitech hm 1s',
         '2015562'        => 'xiaomitech mi 4c',
+        '2014818'        => 'xiaomitech hongmi 2 3g',
         '2014813'        => 'xiaomitech hongmi 2 4g',
+        '2014811'        => 'xiaomitech hongmi 2 4g dual sim',
         '2014011'        => 'xiaomitech hongmi 1s',
     ];
 

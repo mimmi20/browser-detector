@@ -23,6 +23,7 @@ class ViewSonicFactory implements Factory\FactoryInterface
     private $devices = [
         'viewpad 10s'    => 'viewsonic viewpad 10s',
         'viewpad 10e'    => 'viewsonic viewpad 10e',
+        'viewpad 7q'     => 'viewsonic viewpad 7q',
         'viewpad7e'      => 'viewsonic viewpad 7e',
         'viewpad7'       => 'viewsonic viewpad7',
         'viewpad-7'      => 'viewsonic viewpad7',

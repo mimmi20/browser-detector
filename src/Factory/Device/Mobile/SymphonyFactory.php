@@ -21,6 +21,7 @@ class SymphonyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'h150' => 'symphony h150',
         'i10'  => 'symphony i10',
         'w82'  => 'symphony w82',
         'l102' => 'symphony l102',
