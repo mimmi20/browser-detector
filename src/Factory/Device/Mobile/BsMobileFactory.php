@@ -15,13 +15,13 @@ use BrowserDetector\Factory;
 use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
-class QuadroFactory implements Factory\FactoryInterface
+class BsMobileFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        'sq-50e85f' => 'quadro sq-50e85f',
+        'rune' => 'bs-mobile rune',
     ];
 
     /**
@@ -53,6 +53,6 @@ class QuadroFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general quadro device', $useragent);
+        return $this->loader->load('general bs-mobile device', $useragent);
     }
 }

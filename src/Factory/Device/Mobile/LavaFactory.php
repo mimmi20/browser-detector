@@ -30,6 +30,7 @@ class LavaFactory implements Factory\FactoryInterface
         'iris x8s'    => 'lava iris x8s',
         'iris402+'    => 'lava iris 402+',
         'x1 atom'     => 'lava iris x1 atom',
+        'x1 selfie'   => 'lava iris x1 selfie',
         'spark284'    => 'lava spark 284',
         'kkt20'       => 'lava kkt20',
     ];

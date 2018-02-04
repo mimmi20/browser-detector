@@ -21,7 +21,7 @@ class WaltonFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'primo-zx'   => 'walton primo zx',
+        'primo-zx' => 'walton primo zx',
     ];
 
     /**

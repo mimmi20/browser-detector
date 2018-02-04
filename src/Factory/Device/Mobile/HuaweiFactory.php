@@ -92,6 +92,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'scl-l01'                         => 'huawei scl-l01',
         'scl-l21'                         => 'huawei scl-l21',
         'scl-u31'                         => 'huawei scl-u31',
+        'nxt-ul00'                        => 'huawei nxt-ul00',
         'nxt-l29'                         => 'huawei nxt-l29',
         'nxt-l09'                         => 'huawei nxt-l09',
         'nxt-al10'                        => 'huawei nxt-al10',

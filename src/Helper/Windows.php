@@ -83,6 +83,8 @@ class Windows
         }
 
         $windows = [
+            'windows nt',
+            'windows iot',
             'win10',
             'win9',
             'win8',
@@ -95,7 +97,6 @@ class Windows
             'winnt',
             'win31',
             'winme',
-            'windows nt',
             'windows 98',
             'windows 95',
             'windows 3.1',

@@ -21,8 +21,8 @@ class TurboxFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'coral ii'  => 'turbo-x coral ii',
-        'hive v 3g' => 'turbo-x hive v 3g',
+        'coral ii'   => 'turbo-x coral ii',
+        'hive v 3g'  => 'turbo-x hive v 3g',
         'hive iv 3g' => 'turbo-x hive iv 3g',
     ];
 

@@ -92,14 +92,27 @@
   },
   "qmobile t250": {
     "codename": "T250",
-    "marketingName": "T250",
+    "marketingName": "Bolt",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 480,
+    "resolutionHeight": 768,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "qmobile s2": {
+    "codename": "S2",
+    "marketingName": "Noir",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
     "dualOrientation": true,
     "colors": null
   }

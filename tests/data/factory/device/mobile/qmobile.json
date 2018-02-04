@@ -93,14 +93,27 @@
   {
     "ua": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; QMobile T250 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.0.731 U3/0.8.0 Mobile Safari/534.30",
     "codeName": "T250",
-    "marketingName": "T250",
+    "marketingName": "Bolt",
     "manufacturer": "QMobile",
     "brand": "QMobile",
     "type": "Smartphone",
     "dualOrientation": true,
     "pointingMethod": "touchscreen",
-    "width": null,
-    "height": null,
+    "width": 480,
+    "height": 768,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 5.1; en-US; QMobile S2 Build/LMY47I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.0.731 U3/0.8.0 Mobile Safari/534.30",
+    "codeName": "S2",
+    "marketingName": "Noir",
+    "manufacturer": "QMobile",
+    "brand": "QMobile",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 720,
+    "height": 1280,
     "colors": null
   }
 ]

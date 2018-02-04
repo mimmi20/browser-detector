@@ -21,7 +21,7 @@ class SunsbellFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'x538'   => 'sunsbell x538',
+        'x538' => 'sunsbell x538',
     ];
 
     /**

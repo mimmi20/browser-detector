@@ -199,6 +199,7 @@ class MobileDevice
             'siemens',
             'karbonn',
             'm2 note',
+            'lenovotablet',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {

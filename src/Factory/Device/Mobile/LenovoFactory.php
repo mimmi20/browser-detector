@@ -45,6 +45,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'tb2-x30f'                => 'lenovo tb2-x30f',
         'tb-7703x'                => 'lenovo tb-7703x',
         'yt3-x90l'                => 'lenovo yt3-x90l',
+        'p1ma40'                  => 'lenovo p1ma40',
         'p1a42'                   => 'lenovo p1a42',
         'p2a42'                   => 'lenovo p2a42',
         ' p2 '                    => 'lenovo p2a42',
@@ -102,6 +103,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'a7-30f'                  => 'lenovo a7-30f',
         'a7600-h'                 => 'lenovo a7600-h',
         'a7600-f'                 => 'lenovo a7600-f',
+        'a7010a48'                => 'lenovo a7010a48',
         'a7000-a'                 => 'lenovo a7000-a',
         'a6020a40'                => 'lenovo a6020a40',
         'a6000'                   => 'lenovo a6000',
@@ -167,6 +169,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'at1010-t'                => 'lenovo at1010-t',
         'smart tab iii 7'         => 'lenovo smart tab iii 7',
         'smarttabiii7'            => 'lenovo smart tab iii 7',
+        'lenovotablet'            => 'lenovo tablet',
     ];
 
     /**

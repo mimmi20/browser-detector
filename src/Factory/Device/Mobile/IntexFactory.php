@@ -21,15 +21,17 @@ class IntexFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'aqua n11'    => 'intex aqua n11',
-        'aqua trend'  => 'intex aqua trend',
+        'aqua n11'     => 'intex aqua n11',
+        'aqua trend'   => 'intex aqua trend',
         'aqua power+'  => 'intex aqua power+',
-        'aqua life ii'   => 'intex aqua life ii',
-        'aqua star ii'   => 'intex aqua star ii',
-        'aqua star'   => 'intex aqua star',
-        'aqua_star'   => 'intex aqua star',
-        'aqua_y2+'   => 'intex aqua y2+',
-        'cloud_m5_ii' => 'intex cloud m5 ii',
+        'aqua_lifeiii' => 'intex aqua life iii',
+        'aqua life ii' => 'intex aqua life ii',
+        'aqua star ii' => 'intex aqua star ii',
+        'aqua star 4g' => 'intex aqua star 4g',
+        'aqua star'    => 'intex aqua star',
+        'aqua_star'    => 'intex aqua star',
+        'aqua_y2+'     => 'intex aqua y2+',
+        'cloud_m5_ii'  => 'intex cloud m5 ii',
     ];
 
     /**

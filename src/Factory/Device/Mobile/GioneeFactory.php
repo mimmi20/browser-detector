@@ -44,6 +44,7 @@ class GioneeFactory implements Factory\FactoryInterface
         'gn800'    => 'gionee gn800',
         'gn705w'   => 'gionee gn705w',
         ' e7 '     => 'gionee e7',
+        ' m5 '     => 'gionee m5',
         ' m3 '     => 'gionee m3',
         'gionee50' => 'gionee 50',
         ' p2'      => 'gionee p2',

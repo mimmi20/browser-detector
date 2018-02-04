@@ -30,6 +30,10 @@
     {
       "type": "git",
       "url":  "https://github.com/mimmi20/Apple-iOS-build.git"
+    },
+    {
+      "type": "git",
+      "url":  "https://github.com/mimmi20/Apple-OS-X-build.git"
     }
   ],
   "require": {
@@ -46,8 +50,8 @@
     "mimmi20/ua-result-company": "~3.2.3",
     "symfony/yaml": "^3.3||^4.0",
     "seld/jsonlint": "^1.7",
-    "peterkahl/apple-ios-build-version": ">=39",
-    "peterkahl/apple-os-x-build-version": ">=31"
+    "peterkahl/apple-ios-build-version": "dev-master",
+    "peterkahl/apple-os-x-build-version": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "^6.5",
