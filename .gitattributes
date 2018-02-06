@@ -22,22 +22,22 @@ LICENSE          text eol=lf
 *.zip            -text binary
 
 # files/folders to ignore
-/.*              export-ignore
-.codeclimate.yml export-ignore text eol=lf
-.coveralls.yml   export-ignore text eol=lf
-.editorconfig    export-ignore text eol=lf
-.gitattributes   export-ignore text eol=lf
-.gitignore       export-ignore text eol=lf
-.php_cs          export-ignore text eol=lf
-.scrutinizer.yml export-ignore text eol=lf
-.styleci.yml     export-ignore text eol=lf
-.travis.yml      export-ignore text eol=lf
-.sensiolabs.yml  export-ignore text eol=lf
-appveyor.yml     export-ignore text eol=lf
-circle.yml       export-ignore text eol=lf
-codecov.yml      export-ignore text eol=lf
-phpcs.xml        export-ignore text eol=lf
-phpstan.neon     export-ignore text eol=lf
-phpunit.xml      export-ignore text eol=lf
-/tests           export-ignore
-/cache           export-ignore
+/.*                  export-ignore
+.codeclimate.yml     export-ignore text eol=lf
+.coveralls.yml       export-ignore text eol=lf
+.editorconfig        export-ignore text eol=lf
+.gitattributes       export-ignore text eol=lf
+.gitignore           export-ignore text eol=lf
+.php_cs              export-ignore text eol=lf
+.scrutinizer.yml     export-ignore text eol=lf
+.styleci.yml         export-ignore text eol=lf
+.travis.yml          export-ignore text eol=lf
+.sensiolabs.yml      export-ignore text eol=lf
+appveyor.yml         export-ignore text eol=lf
+.circleci/config.yml export-ignore text eol=lf
+codecov.yml          export-ignore text eol=lf
+phpcs.xml            export-ignore text eol=lf
+phpstan.neon         export-ignore text eol=lf
+phpunit.xml          export-ignore text eol=lf
+/tests               export-ignore
+/cache               export-ignore
