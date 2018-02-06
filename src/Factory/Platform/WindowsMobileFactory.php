@@ -40,11 +40,15 @@ class WindowsMobileFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s)
     {
+        if ($s->contains('windows iot 10', false)) {
+            return $this->loader->load('windows iot 10.0', $useragent);
+        }
+
         if ($s->containsAny(['windows ce', 'windows mobile; wce'], false)) {
             return $this->loader->load('windows ce', $useragent);
         }
 
-        if (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop| wds |WPOS\:)/', $useragent)) {
+        if (preg_match('/Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop| wds |WPOS\:/', $useragent)) {
             $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $useragent, $matchesPhone);
 
             if (!$doMatchPhone || 7 <= $matchesPhone[1]) {

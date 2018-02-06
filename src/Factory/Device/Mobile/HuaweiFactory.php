@@ -21,120 +21,206 @@ class HuaweiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'bln-l21'                         => 'huawei bln-l21',
-        'bln-al10'                        => 'huawei bln-al10',
-        'bln-tl00'                        => 'huawei bln-tl00',
-        'bln-tl10'                        => 'huawei bln-tl10',
-        'can-l01'                         => 'huawei can-l01',
-        'can-l11'                         => 'huawei can-l11',
-        'can-l02'                         => 'huawei can-l02',
-        'can-l12'                         => 'huawei can-l12',
-        'can-l03'                         => 'huawei can-l03',
-        'can-l13'                         => 'huawei can-l13',
-        'lua-l21'                         => 'huawei lua-l21',
-        'gra-l09'                         => 'huawei gra-l09',
-        'gra-ul00'                        => 'huawei gra-ul00',
-        'frd-l14'                         => 'huawei frd-l14',
-        'frd-al10'                        => 'huawei frd-al10',
-        'frd-al00'                        => 'huawei frd-al00',
-        'frd-l19'                         => 'huawei frd-l19',
-        'frd-l09'                         => 'huawei frd-l09',
-        'frd-tl00'                        => 'huawei frd-tl00',
-        'was-lx1a'                        => 'huawei was-lx1a',
-        'was-lx1'                         => 'huawei was-lx1',
-        'was-lx2j'                        => 'huawei was-lx2j',
-        'was-lx2'                         => 'huawei was-lx2',
-        'was-lx3'                         => 'huawei was-lx3',
-        'was-l03t'                        => 'huawei was-l03t',
-        'btv-dl09'                        => 'huawei btv-dl09',
-        'btv-w09'                         => 'huawei btv-w09',
-        'duk-l09'                         => 'huawei duk-l09',
-        'lon-l29'                         => 'huawei lon-l29',
-        'plk-l01'                         => 'huawei plk-l01',
-        'pra-la1'                         => 'huawei pra-la1',
-        'pra-lx1'                         => 'huawei pra-lx1',
-        'nem-al10'                        => 'huawei nem-al10',
-        'nem-l51'                         => 'huawei nem-l51',
-        'nem-l22'                         => 'huawei nem-l22',
-        'nem-l21'                         => 'huawei nem-l21',
-        'vtr-l09'                         => 'huawei vtr-l09',
-        'vtr-al00'                        => 'huawei vtr-al00',
-        'vtr-tl00'                        => 'huawei vtr-tl00',
-        'vtr-l29'                         => 'huawei vtr-l29',
-        'che2-l11'                        => 'huawei che2-l11',
-        'cam-l21'                         => 'huawei cam-l21',
-        'mha-al00'                        => 'huawei mha-al00',
-        'mha-l29'                         => 'huawei mha-l29',
-        'mha-l09'                         => 'huawei mha-l09',
-        'h60-l01'                         => 'huawei h60-l01',
-        'h60-l02'                         => 'huawei h60-l02',
-        'h60-l04'                         => 'huawei h60-l04',
-        'h60-l12'                         => 'huawei h60-l12',
+        'bln-' => [
+            'bln-l21'  => 'huawei bln-l21',
+            'bln-al10' => 'huawei bln-al10',
+            'bln-tl00' => 'huawei bln-tl00',
+            'bln-tl10' => 'huawei bln-tl10',
+        ],
+        'can-' => [
+            'can-l01' => 'huawei can-l01',
+            'can-l11' => 'huawei can-l11',
+            'can-l02' => 'huawei can-l02',
+            'can-l12' => 'huawei can-l12',
+            'can-l03' => 'huawei can-l03',
+            'can-l13' => 'huawei can-l13',
+        ],
+        'lua-' => [
+            'lua-l21' => 'huawei lua-l21',
+        ],
+        'gra-' => [
+            'gra-l09'  => 'huawei gra-l09',
+            'gra-ul00' => 'huawei gra-ul00',
+        ],
+        'frd-' => [
+            'frd-l14'  => 'huawei frd-l14',
+            'frd-al10' => 'huawei frd-al10',
+            'frd-al00' => 'huawei frd-al00',
+            'frd-l19'  => 'huawei frd-l19',
+            'frd-l09'  => 'huawei frd-l09',
+            'frd-tl00' => 'huawei frd-tl00',
+        ],
+        'was-' => [
+            'was-lx1a' => 'huawei was-lx1a',
+            'was-lx1'  => 'huawei was-lx1',
+            'was-lx2j' => 'huawei was-lx2j',
+            'was-lx2'  => 'huawei was-lx2',
+            'was-lx3'  => 'huawei was-lx3',
+            'was-l03t' => 'huawei was-l03t',
+        ],
+        'btv-' => [
+            'btv-dl09' => 'huawei btv-dl09',
+            'btv-w09'  => 'huawei btv-w09',
+        ],
+        'duk-' => [
+            'duk-l09' => 'huawei duk-l09',
+        ],
+        'lon-' => [
+            'lon-l29' => 'huawei lon-l29',
+        ],
+        'plk-' => [
+            'plk-tl01h' => 'huawei plk-tl01h',
+            'plk-l01'   => 'huawei plk-l01',
+        ],
+        'pra-' => [
+            'pra-la1' => 'huawei pra-la1',
+            'pra-lx1' => 'huawei pra-lx1',
+        ],
+        'nem-' => [
+            'nem-al10' => 'huawei nem-al10',
+            'nem-l51'  => 'huawei nem-l51',
+            'nem-l22'  => 'huawei nem-l22',
+            'nem-l21'  => 'huawei nem-l21',
+        ],
+        'vtr-' => [
+            'vtr-l09'  => 'huawei vtr-l09',
+            'vtr-al00' => 'huawei vtr-al00',
+            'vtr-tl00' => 'huawei vtr-tl00',
+            'vtr-l29'  => 'huawei vtr-l29',
+        ],
+        'che2-' => [
+            'che2-l11' => 'huawei che2-l11',
+        ],
+        'cam-' => [
+            'cam-l21' => 'huawei cam-l21',
+        ],
+        'mha-' => [
+            'mha-al00' => 'huawei mha-al00',
+            'mha-l29'  => 'huawei mha-l29',
+            'mha-l09'  => 'huawei mha-l09',
+        ],
+        'h60-' => [
+            'h60-l01' => 'huawei h60-l01',
+            'h60-l02' => 'huawei h60-l02',
+            'h60-l04' => 'huawei h60-l04',
+            'h60-l12' => 'huawei h60-l12',
+        ],
+        'tag-' => [
+            'tag-al00' => 'huawei tag-al00',
+            'tag-l21'  => 'huawei tag-l21',
+            'tag-l01'  => 'huawei tag-l01',
+        ],
+        'ale-' => [
+            'ale-ul00' => 'huawei ale-ul00',
+            'ale-cl00' => 'huawei ale-cl00',
+            'ale-21'   => 'huawei ale-l21',
+            'ale-l23'  => 'huawei ale-l23',
+            'ale-l21'  => 'huawei ale-l21',
+            'ale-l02'  => 'huawei ale-l02',
+        ],
+        'p7-' => [
+            'p7-l10' => 'huawei p7-l10',
+            'p7-l09' => 'huawei p7-l09',
+        ],
+        'p7 mini' => 'huawei p7 mini',
+        'p7mini'  => 'huawei p7 mini',
+        'eva-'    => [
+            'eva-l19' => 'huawei eva-l19',
+            'eva-l09' => 'huawei eva-l09',
+        ],
+        'scl-' => [
+            'scl-l01' => 'huawei scl-l01',
+            'scl-l21' => 'huawei scl-l21',
+            'scl-u31' => 'huawei scl-u31',
+        ],
+        'nxt-' => [
+            'nxt-ul00' => 'huawei nxt-ul00',
+            'nxt-l29'  => 'huawei nxt-l29',
+            'nxt-l09'  => 'huawei nxt-l09',
+            'nxt-al10' => 'huawei nxt-al10',
+        ],
+        'gem-' => [
+            'gem-703lt' => 'huawei gem-703lt',
+            'gem-703l'  => 'huawei gem-703l',
+            'gem-702l'  => 'huawei gem-702l',
+            'gem-701l'  => 'huawei gem-701l',
+        ],
+        'g630-' => [
+            'g630-u251' => 'huawei g630-u251',
+            'g630-u20'  => 'huawei g630-u20',
+            'g630-u10'  => 'huawei g630-u10',
+        ],
+        'cun-' => [
+            'cun-l21' => 'huawei cun-l21',
+            'cun-l03' => 'huawei cun-l03',
+            'cun-l01' => 'huawei cun-l01',
+        ],
+        'chc-' => [
+            'chc-u23' => 'huawei chc-u23',
+            'chc-u03' => 'huawei chc-u03',
+            'chc-u01' => 'huawei chc-u01',
+        ],
+        'p2-' => [
+            'p2-6011' => 'huawei p2-6011',
+        ],
+        'g7-' => [
+            'g7-l11' => 'huawei g7-l11',
+            'g7-l01' => 'huawei g7-l01',
+        ],
+        'g6-' => [
+            'g6-l11' => 'huawei g6-l11',
+            'g6-u10' => 'huawei g6-u10',
+        ],
+        'pe-' => [
+            'pe-tl10' => 'huawei pe-tl10',
+        ],
+        'rio-' => [
+            'rio-l01' => 'huawei rio-l01',
+        ],
+        'crr-' => [
+            'crr-l09' => 'huawei crr-l09',
+        ],
+        'vns-' => [
+            'vns-l31' => 'huawei vns-l31',
+            'vns-l22' => 'huawei vns-l22',
+            'vns-l21' => 'huawei vns-l21',
+        ],
+        'g750-' => [
+            'g750-u10' => 'huawei g750-u10',
+            'g750-t00' => 'huawei g750-t00',
+        ],
+        'g740-' => [
+            'g740-l00' => 'huawei g740-l00',
+        ],
+        'g730-' => [
+            'g730-u27' => 'huawei g730-u27',
+            'g730-u10' => 'huawei g730-u10',
+        ],
+        'tit-' => [
+            'tit-u02' => 'huawei tit-u02',
+        ],
+        'y635-' => [
+            'y635-l21' => 'huawei y635-l21',
+            'y635-l01' => 'huawei y635-l01',
+        ],
+        'y625-' => [
+            'y625-u51' => 'huawei y625-u51',
+            'y625-u21' => 'huawei y625-u21',
+        ],
+        'y600-' => [
+            'y600-u151' => 'huawei y600-u151',
+            'y600-u20'  => 'huawei y600-u20',
+            'y600-u00'  => 'huawei y600-u00',
+        ],
+
+        'honor 6'                         => 'huawei h60-l01',
         'nexus 6p'                        => 'huawei nexus 6p',
-        'tag-al00'                        => 'huawei tag-al00',
-        'tag-l21'                         => 'huawei tag-l21',
-        'tag-l01'                         => 'huawei tag-l01',
-        'ale-ul00'                        => 'huawei ale-ul00',
-        'ale-cl00'                        => 'huawei ale-cl00',
-        'ale-21'                          => 'huawei ale-l21',
-        'ale-l23'                         => 'huawei ale-l23',
-        'ale-l21'                         => 'huawei ale-l21',
-        'ale-l02'                         => 'huawei ale-l02',
         'hi6210sft'                       => 'huawei hi6210sft',
         'grace'                           => 'huawei grace',
-        'p7-l10'                          => 'huawei p7-l10',
-        'p7-l09'                          => 'huawei p7-l09',
-        'p7 mini'                         => 'huawei p7 mini',
-        'p7mini'                          => 'huawei p7 mini',
-        'p2-6011'                         => 'huawei p2-6011',
-        'eva-l19'                         => 'huawei eva-l19',
-        'eva-l09'                         => 'huawei eva-l09',
-        'scl-l01'                         => 'huawei scl-l01',
-        'scl-l21'                         => 'huawei scl-l21',
-        'scl-u31'                         => 'huawei scl-u31',
-        'nxt-ul00'                        => 'huawei nxt-ul00',
-        'nxt-l29'                         => 'huawei nxt-l29',
-        'nxt-l09'                         => 'huawei nxt-l09',
-        'nxt-al10'                        => 'huawei nxt-al10',
         'huaweinxt'                       => 'huawei nxt-l09',
-        'gem-703lt'                       => 'huawei gem-703lt',
-        'gem-703l'                        => 'huawei gem-703l',
-        'gem-702l'                        => 'huawei gem-702l',
-        'gem-701l'                        => 'huawei gem-701l',
-        'g630-u251'                       => 'huawei g630-u251',
-        'g630-u20'                        => 'huawei g630-u20',
-        'g630-u10'                        => 'huawei g630-u10',
         'g620s-l01'                       => 'huawei g620s-l01',
         'g610-u20'                        => 'huawei g610-u20',
         'g606-t00'                        => 'huawei g606-t00',
-        'g7-l11'                          => 'huawei g7-l11',
-        'g7-l01'                          => 'huawei g7-l01',
-        'g6-l11'                          => 'huawei g6-l11',
-        'g6-u10'                          => 'huawei g6-u10',
-        'pe-tl10'                         => 'huawei pe-tl10',
-        'rio-l01'                         => 'huawei rio-l01',
-        'cun-l21'                         => 'huawei cun-l21',
-        'cun-l03'                         => 'huawei cun-l03',
-        'cun-l01'                         => 'huawei cun-l01',
-        'crr-l09'                         => 'huawei crr-l09',
-        'chc-u23'                         => 'huawei chc-u23',
-        'chc-u03'                         => 'huawei chc-u03',
-        'chc-u01'                         => 'huawei chc-u01',
-        'g750-u10'                        => 'huawei g750-u10',
-        'g750-t00'                        => 'huawei g750-t00',
-        'g740-l00'                        => 'huawei g740-l00',
-        'g730-u27'                        => 'huawei g730-u27',
-        'g730-u10'                        => 'huawei g730-u10',
-        'vns-l31'                         => 'huawei vns-l31',
-        'vns-l22'                         => 'huawei vns-l22',
-        'vns-l21'                         => 'huawei vns-l21',
-        'tit-u02'                         => 'huawei tit-u02',
-        'y635-l21'                        => 'huawei y635-l21',
-        'y625-u51'                        => 'huawei y625-u51',
-        'y625-u21'                        => 'huawei y625-u21',
-        'y600-u151'                       => 'huawei y600-u151',
-        'y600-u20'                        => 'huawei y600-u20',
-        'y600-u00'                        => 'huawei y600-u00',
         'y560-l01'                        => 'huawei y560-l01',
         'y550-l01'                        => 'huawei y550-l01',
         'y541-u02'                        => 'huawei y541-u02',
@@ -286,10 +372,28 @@ class HuaweiFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
-        foreach ($this->devices as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
+        return $this->detectInArray($this->devices, $useragent, $s);
+    }
+
+    /**
+     * @param array            $devices
+     * @param string           $useragent
+     * @param \Stringy\Stringy $s
+     *
+     * @return array
+     */
+    private function detectInArray(array $devices, string $useragent, Stringy $s): array
+    {
+        foreach ($devices as $search => $key) {
+            if (!$s->contains($search, false)) {
+                continue;
             }
+
+            if (is_array($key)) {
+                return $this->detectInArray($key, $useragent, $s);
+            }
+
+            return $this->loader->load($key, $useragent);
         }
 
         return $this->loader->load('general huawei device', $useragent);

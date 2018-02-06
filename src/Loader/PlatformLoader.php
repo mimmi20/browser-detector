@@ -170,7 +170,7 @@ class PlatformLoader implements ExtendedLoaderInterface
         if (null !== $inputVersion && is_string($inputVersion)) {
             $version = VersionFactory::set($inputVersion);
         } elseif (!is_string($platformVersionClass) && isset($platform->version->value) && is_numeric($platform->version->value)) {
-            $version = VersionFactory::set($platform->version->value);
+            $version = VersionFactory::set((string) $platform->version->value);
         } elseif (!is_string($platformVersionClass)) {
             $version = new Version('0');
         } elseif ('VersionFactory' === $platformVersionClass) {

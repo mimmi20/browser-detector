@@ -23,7 +23,9 @@ class LenovoFactory implements Factory\FactoryInterface
     private $devices = [
         'x1030x'                  => 'lenovo x1030x',
         'zuk z1'                  => 'lenovo zuk z1',
+        'k920'                    => 'lenovo k920',
         'k80m'                    => 'lenovo k80m',
+        'k50_t5'                  => 'lenovo k50 t5',
         'yb1-x90l'                => 'lenovo yb1-x90l',
         'yt3-x90f'                => 'lenovo yt3-x90f',
         'yt3-x50f'                => 'lenovo yt3-x50f',
@@ -69,6 +71,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'ideatabs2110ah'          => 'lenovo s2110a-h',
         'ideatabs2110af'          => 'lenovo s2110a-f',
         'ideatabs2109a-f'         => 'lenovo s2109a-f',
+        's90-a'                   => 'lenovo s90-a',
         's920'                    => 'lenovo s920',
         's880i'                   => 'lenovo s880i',
         's856'                    => 'lenovo s856',

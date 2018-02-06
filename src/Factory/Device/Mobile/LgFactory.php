@@ -234,6 +234,7 @@ class LgFactory implements Factory\FactoryInterface
         'd415'          => 'lg d415',
         'd410'          => 'lg d410',
         'd405'          => 'lg d405',
+        'd390n'         => 'lg d390n',
         'd373'          => 'lg d373',
         'd335e'         => 'lg d335e',
         'd335'          => 'lg d335',

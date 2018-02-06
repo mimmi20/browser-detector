@@ -68,6 +68,7 @@ class MobileDevice
             'nokia wap gateway',
             'crkey',
             'lenovog780',
+            'windows iot',
         ];
 
         if ($this->useragent->containsAny($noMobiles, false)) {

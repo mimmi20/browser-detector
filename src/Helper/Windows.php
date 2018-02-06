@@ -124,6 +124,7 @@ class Windows
         $mobileWindows = [
             'windows ce',
             'windows phone',
+            'windows iot',
             'windows mobile',
             'microsoft windows; ppc',
             'iemobile',
