@@ -21,6 +21,9 @@ class QmobileFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        't250'  => 'qmobile t250',
+        ' s2 '  => 'qmobile s2',
+        ' s1 '  => 'qmobile s1',
         ' i7 '  => 'qmobile i7',
         'a300'  => 'qmobile a300',
         'a290'  => 'qmobile a290',

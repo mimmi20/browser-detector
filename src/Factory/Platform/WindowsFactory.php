@@ -40,6 +40,10 @@ class WindowsFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s)
     {
+        if ($s->contains('windows iot 10', false)) {
+            return $this->loader->load('windows iot 10.0', $useragent);
+        }
+
         if ($s->containsAny(['windows nt 10', 'windows 10'], false)) {
             return $this->loader->load('windows nt 10.0', $useragent);
         }

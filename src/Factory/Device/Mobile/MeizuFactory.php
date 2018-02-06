@@ -28,6 +28,7 @@ class MeizuFactory implements Factory\FactoryInterface
         'm1 note'  => 'meizu m1 note',
         'pro 5'    => 'meizu pro 5',
         'mz-mx5'   => 'meizu mx5',
+        'mx4 pro'  => 'meizu mx4 pro',
         'mx4'      => 'meizu mx4',
         'm040'     => 'meizu m040',
         'm032'     => 'meizu m032',

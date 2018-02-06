@@ -27,6 +27,7 @@ class OppoFactory implements Factory\FactoryInterface
         'r7sf'  => 'oppo r7sf',
         'r7f'   => 'oppo r7f',
         'a37f'  => 'oppo a37f',
+        'a33f'  => 'oppo a33f',
         'find7' => 'oppo find7',
         'x909'  => 'oppo x909',
         'r7sm'  => 'oppo r7sm',
@@ -34,6 +35,7 @@ class OppoFactory implements Factory\FactoryInterface
         'u705t' => 'oppo u705t',
         'r815'  => 'oppo r815',
         'r813t' => 'oppo r813t',
+        'r831k' => 'oppo r831k',
         '1201'  => 'oppo 1201',
     ];
 

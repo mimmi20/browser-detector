@@ -21,7 +21,9 @@ class InfocusFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm350' => 'infocus m350',
+        'm370i' => 'infocus m370i',
+        'm350'  => 'infocus m350',
+        'm320m' => 'infocus m320m',
     ];
 
     /**

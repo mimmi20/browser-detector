@@ -26,6 +26,7 @@ class HisenseFactory implements Factory\FactoryInterface
         'i639t'     => 'hisense i639t',
         'i639m'     => 'hisense i639m',
         'u972'      => 'hisense u972',
+        'e2281uk'   => 'hisense e2281uk',
         'hs-x68t'   => 'hisense hs-x68t',
         'hs-x8t'    => 'hisense hs-x8t',
         'hs-x8c'    => 'hisense hs-x8c',

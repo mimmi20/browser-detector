@@ -21,8 +21,11 @@ class XoloFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'one'    => 'xolo one',
-        'a1000s' => 'xolo a1000s',
+        'q1010i'    => 'xolo q1010i',
+        'q600s'     => 'xolo q600s',
+        'win q1000' => 'xolo win q1000',
+        'one'       => 'xolo one',
+        'a1000s'    => 'xolo a1000s',
     ];
 
     /**

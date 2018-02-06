@@ -68,6 +68,7 @@ class MobileDevice
             'nokia wap gateway',
             'crkey',
             'lenovog780',
+            'windows iot',
         ];
 
         if ($this->useragent->containsAny($noMobiles, false)) {
@@ -199,6 +200,7 @@ class MobileDevice
             'siemens',
             'karbonn',
             'm2 note',
+            'lenovotablet',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {
