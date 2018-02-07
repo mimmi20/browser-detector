@@ -1421,7 +1421,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MeizuFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['x9pro', 'x5max_pro'], false)) {
+        if ($s->containsAny(['x9pro', 'x5max_pro', 'x6pro'], false)) {
             return (new Mobile\DoogeeFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1550,6 +1550,7 @@ class MobileFactory implements Factory\FactoryInterface
             ' x17 '           => Mobile\LavaFactory::class,
             'x1 atom'         => Mobile\LavaFactory::class,
             'x1 selfie'       => Mobile\LavaFactory::class,
+            'x5 4g'           => Mobile\LavaFactory::class,
             'pulse'           => Mobile\TmobileFactory::class,
             'mytouch4g'       => Mobile\TmobileFactory::class,
             'ameo'            => Mobile\TmobileFactory::class,

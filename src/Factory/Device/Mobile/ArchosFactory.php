@@ -63,6 +63,7 @@ class ArchosFactory implements Factory\FactoryInterface
         '50e neon'              => 'archos 50e neon',
         '50e helium'            => 'archos 50e helium',
         '50d neon'              => 'archos 50d neon',
+        '50d helium'            => 'archos 50d helium',
         '50c platinum'          => 'archos 50c platinum',
         '50c oxygen'            => 'archos 50c oxygen',
         '50b neon'              => 'archos 50b neon',

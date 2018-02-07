@@ -23,6 +23,8 @@ class InfinixFactory implements Factory\FactoryInterface
     private $devices = [
         'x600-lte' => 'infinix x600 lte',
         'x600'     => 'infinix x600',
+        'note 2'   => 'infinix x600',
+        'x552'     => 'infinix x552',
         'x551'     => 'infinix x551',
         'x510'     => 'infinix x510',
         'x507'     => 'infinix x507',

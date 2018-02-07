@@ -23,6 +23,7 @@ class PhicommFactory implements Factory\FactoryInterface
     private $devices = [
         'c630'      => 'phicomm c630',
         'e670'      => 'phicomm e670',
+        'e653'      => 'phicomm e653',
         'clue c230' => 'phicomm clue c230',
         'clue 2s'   => 'phicomm clue 2s',
         'fws610_eu' => 'phicomm fws610',

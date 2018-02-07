@@ -21,6 +21,7 @@ class WileyfoxFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'storm'        => 'wileyfox storm',
         'spark +'      => 'wileyfox spark +',
         'swift 2 plus' => 'wileyfox swift 2 plus',
         'swift 2'      => 'wileyfox swift 2',

@@ -35,6 +35,7 @@ class PrestigioFactory implements Factory\FactoryInterface
         'pmt3277_3g'      => 'prestigio pmt3277_3g',
         'pmt3037_3g'      => 'prestigio pmt3037_3g',
         'pmt5587_wi'      => 'prestigio pmt5587_wi',
+        'pmt3767_3g'      => 'prestigio pmt3767_3g',
         'pmt3377_wi'      => 'prestigio pmt3377_wi',
         'pmt3118_3g'      => 'prestigio pmt3118_3g',
         'pmt3057_3g'      => 'prestigio pmt3057_3g',

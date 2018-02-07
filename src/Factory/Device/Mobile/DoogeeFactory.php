@@ -23,6 +23,7 @@ class DoogeeFactory implements Factory\FactoryInterface
     private $devices = [
         't6'             => 'doogee t6',
         'x9pro'          => 'doogee x9 pro',
+        'x6pro'          => 'doogee x6 pro',
         'x5max_pro'      => 'doogee x5max pro',
         'y6 max 3d'      => 'doogee y6 max 3d',
         'y6 max'         => 'doogee y6 max',

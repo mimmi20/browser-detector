@@ -38,6 +38,9 @@ class HuaweiFactory implements Factory\FactoryInterface
         'lua-' => [
             'lua-l21' => 'huawei lua-l21',
         ],
+        'scc-' => [
+            'scc-u21' => 'huawei scc-u21',
+        ],
         'gra-' => [
             'gra-l09'  => 'huawei gra-l09',
             'gra-ul00' => 'huawei gra-ul00',

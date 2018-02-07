@@ -23,6 +23,7 @@ class YuFactory implements Factory\FactoryInterface
     private $devices = [
         'yu5510' => 'yu yu5510',
         'ao5510' => 'yu yu5510',
+        'yu5010' => 'yu yu5010',
         'yu4711' => 'yu yu4711',
     ];
 
