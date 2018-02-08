@@ -1761,6 +1761,7 @@ class MobileFactory implements Factory\FactoryInterface
             'sf1'             => Mobile\ObiFactory::class,
             'harrier tab'     => Mobile\EeFactory::class,
             'excite prime'    => Mobile\CloudfoneFactory::class,
+            ' z1 '            => Mobile\NinetologyFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
