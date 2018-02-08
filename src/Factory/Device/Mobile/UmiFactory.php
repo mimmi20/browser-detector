@@ -21,6 +21,8 @@ class UmiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'iron pro'      => 'umi iron pro',
+        'iron'          => 'umi iron',
         'zero'          => 'umi zero',
         'hammer_s'      => 'umi hammer s',
         'london'        => 'umi london',

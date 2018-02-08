@@ -41,6 +41,7 @@ class XiaomiFactory implements Factory\FactoryInterface
         'mi 4w'          => 'xiaomitech mi 4w',
         'mi 4lte'        => 'xiaomitech mi 4 lte',
         'mi 3w'          => 'xiaomitech mi 3w',
+        'mi pad 2'       => 'xiaomitech mi pad 2',
         'mi pad'         => 'xiaomitech mi pad',
         'mipad'          => 'xiaomitech mi pad',
         'mi 2a'          => 'xiaomitech mi 2a',

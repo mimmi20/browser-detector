@@ -21,6 +21,8 @@ class IntelFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'tr10rs1'  => 'intel tr10rs1',
+        'tr10cd1'  => 'intel tr10cd1',
         'w032i-c3' => 'intel w032i c3',
     ];
 

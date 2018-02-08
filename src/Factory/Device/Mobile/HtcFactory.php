@@ -33,6 +33,7 @@ class HtcFactory implements Factory\FactoryInterface
         'u11'                     => 'htc u11',
         ' x9 '                    => 'htc x9',
         'one me dual sim'         => 'htc one me dual sim',
+        '0pja10'                  => 'htc 0pja10',
         '0pcv2'                   => 'htc 0pcv2',
         '0pcv1'                   => 'htc 0pcv1',
         'nexus one'               => 'htc nexus one',

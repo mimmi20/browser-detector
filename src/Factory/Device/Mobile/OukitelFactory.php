@@ -21,6 +21,7 @@ class OukitelFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'universetap'   => 'oukitel universetap',
         'u16 max'   => 'oukitel u16 max',
         'u10'       => 'oukitel u10',
         'u7 plus'   => 'oukitel u7 plus',

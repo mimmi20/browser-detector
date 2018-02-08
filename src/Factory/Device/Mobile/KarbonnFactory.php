@@ -28,6 +28,7 @@ class KarbonnFactory implements Factory\FactoryInterface
         'machfive'          => 'karbonn titanium machfive',
         'karbonna26'        => 'karbonn a26',
         'karbonn_a2'        => 'karbonn a2',
+        'sparkle v'         => 'karbonn sparkle v',
         'k595'              => 'karbonn k595',
         'k222s'             => 'karbonn k222s',
         'k84'               => 'karbonn k84',

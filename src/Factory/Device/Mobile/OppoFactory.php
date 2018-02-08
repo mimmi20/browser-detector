@@ -24,6 +24,8 @@ class OppoFactory implements Factory\FactoryInterface
         'n1t'   => 'oppo n1t',
         'x9076' => 'oppo x9076',
         'x9006' => 'oppo x9006',
+        'r7plusf'  => 'oppo r7 plus',
+        'r7kf'  => 'oppo r7 lite',
         'r7sf'  => 'oppo r7sf',
         'r7f'   => 'oppo r7f',
         'a37f'  => 'oppo a37f',

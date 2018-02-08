@@ -15,27 +15,13 @@ use BrowserDetector\Factory;
 use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
-class LavaFactory implements Factory\FactoryInterface
+class EeFactory implements Factory\FactoryInterface
 {
     /**
      * @var array
      */
     private $devices = [
-        ' x17 '       => 'lava x17',
-        'iris fuel60' => 'lava iris fuel60',
-        'iris fuel50' => 'lava iris fuel50',
-        'iris x8 l'   => 'lava iris x8 l',
-        'iris x1'     => 'lava iris x1',
-        'iris700'     => 'lava iris 700',
-        'pixel v2+'   => 'lava pixel v2+',
-        'pixelv1'     => 'lava pixel v1',
-        'iris x8s'    => 'lava iris x8s',
-        'iris402+'    => 'lava iris 402+',
-        'x1 atom'     => 'lava iris x1 atom',
-        'x1 selfie'   => 'lava iris x1 selfie',
-        'x5 4g'       => 'lava iris x5 4g',
-        'spark284'    => 'lava spark 284',
-        'kkt20'       => 'lava kkt20',
+        'harrier tab' => 'ee harrier tab',
     ];
 
     /**
@@ -67,6 +53,6 @@ class LavaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lava device', $useragent);
+        return $this->loader->load('general ee device', $useragent);
     }
 }

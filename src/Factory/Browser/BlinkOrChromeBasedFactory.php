@@ -145,6 +145,10 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             return $this->loader->load('cent', $useragent);
         }
 
+        if ($s->contains('iron', false) && !$s->contains('IRON', true)) {
+            return $this->loader->load('iron', $useragent);
+        }
+
         $checkBeforeWire = [
             'haosouspider'                        => 'haosouspider',
             '360se'                               => '360 secure browser',
@@ -153,7 +157,6 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'theworld'                            => 'theworld',
             'ptst'                                => 'webpagetest',
             'chromium'                            => 'chromium',
-            'iron'                                => 'iron',
             'google page speed insights'          => 'google pagespeed insights',
             'google wireless transcoder'          => 'google wireless transcoder',
             'viera'                               => 'smartviera',
