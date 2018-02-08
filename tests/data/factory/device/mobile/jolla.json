@@ -14,8 +14,8 @@
   },
   {
     "ua": "Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; Mobile; rv:31.0) Gecko/31.0 Firefox/31.0 SailfishBrowser/1.0",
-    "codeName": "Sailfish",
-    "marketingName": "Sailfish",
+    "codeName": "Phone",
+    "marketingName": "Phone",
     "manufacturer": "Jolla Ltd.",
     "brand": "Jolla",
     "type": "Smartphone",
@@ -36,6 +36,19 @@
     "pointingMethod": "touchscreen",
     "width": 720,
     "height": 1280,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; Tablet; rv:31.0) Gecko/31.0 Firefox/31.0 SailfishBrowser/1.0",
+    "codeName": "Tablet",
+    "marketingName": "Tablet",
+    "manufacturer": "Jolla Ltd.",
+    "brand": "Jolla",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 2048,
+    "height": 1536,
     "colors": null
   }
 ]
