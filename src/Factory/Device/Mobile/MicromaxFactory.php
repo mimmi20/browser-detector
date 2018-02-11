@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -27,9 +27,11 @@ class MicromaxFactory implements Factory\FactoryInterface
         'q380'   => 'micromax q380',
         'q372'   => 'micromax q372',
         'q345'   => 'micromax q345',
+        'q332'   => 'micromax q332',
         'q327'   => 'micromax q327',
         'e481'   => 'micromax e481',
         'e455'   => 'micromax e455',
+        'e352'   => 'micromax e352',
         'e313'   => 'micromax e313',
         'd321'   => 'micromax d321',
         'aq5001' => 'micromax aq5001',

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -35,6 +35,7 @@ class PrestigioFactory implements Factory\FactoryInterface
         'pmt3277_3g'      => 'prestigio pmt3277_3g',
         'pmt3037_3g'      => 'prestigio pmt3037_3g',
         'pmt5587_wi'      => 'prestigio pmt5587_wi',
+        'pmt3767_3g'      => 'prestigio pmt3767_3g',
         'pmt3377_wi'      => 'prestigio pmt3377_wi',
         'pmt3118_3g'      => 'prestigio pmt3118_3g',
         'pmt3057_3g'      => 'prestigio pmt3057_3g',

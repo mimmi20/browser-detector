@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -22,6 +22,7 @@ class KyoceraFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'e6560'   => 'kyocera e6560',
+        'c6742'   => 'kyocera c6742',
         'c6730'   => 'kyocera c6730',
         'kc-s701' => 'kyocera kc-s701',
         'dm015k'  => 'kyocera dm015k',

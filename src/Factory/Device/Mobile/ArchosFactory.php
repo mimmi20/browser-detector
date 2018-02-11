@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -63,6 +63,7 @@ class ArchosFactory implements Factory\FactoryInterface
         '50e neon'              => 'archos 50e neon',
         '50e helium'            => 'archos 50e helium',
         '50d neon'              => 'archos 50d neon',
+        '50d helium'            => 'archos 50d helium',
         '50c platinum'          => 'archos 50c platinum',
         '50c oxygen'            => 'archos 50c oxygen',
         '50b neon'              => 'archos 50b neon',

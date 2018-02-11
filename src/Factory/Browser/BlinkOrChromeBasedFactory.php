@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -145,6 +145,10 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             return $this->loader->load('cent', $useragent);
         }
 
+        if ($s->contains('iron', false) && !$s->contains('IRON', true)) {
+            return $this->loader->load('iron', $useragent);
+        }
+
         $checkBeforeWire = [
             'haosouspider'                        => 'haosouspider',
             '360se'                               => '360 secure browser',
@@ -153,7 +157,6 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'theworld'                            => 'theworld',
             'ptst'                                => 'webpagetest',
             'chromium'                            => 'chromium',
-            'iron'                                => 'iron',
             'google page speed insights'          => 'google pagespeed insights',
             'google wireless transcoder'          => 'google wireless transcoder',
             'viera'                               => 'smartviera',

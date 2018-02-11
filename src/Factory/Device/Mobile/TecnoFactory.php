@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -32,6 +32,7 @@ class TecnoFactory implements Factory\FactoryInterface
         ' f5 '    => 'tecno f5',
         ' d5 '    => 'tecno d5',
         ' m5'     => 'tecno m5',
+        '-j5'     => 'tecno j5',
         '_m5'     => 'tecno m5',
         'p5_plus' => 'tecno p5 plus',
         ' p5'     => 'tecno p5',

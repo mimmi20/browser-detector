@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -21,6 +21,7 @@ class TurboxFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'pi_4g'      => 'turbo-x pi 4g',
         'coral ii'   => 'turbo-x coral ii',
         'hive v 3g'  => 'turbo-x hive v 3g',
         'hive iv 3g' => 'turbo-x hive iv 3g',

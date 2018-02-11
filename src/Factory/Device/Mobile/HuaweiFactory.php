@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -37,6 +37,9 @@ class HuaweiFactory implements Factory\FactoryInterface
         ],
         'lua-' => [
             'lua-l21' => 'huawei lua-l21',
+        ],
+        'scc-' => [
+            'scc-u21' => 'huawei scc-u21',
         ],
         'gra-' => [
             'gra-l09'  => 'huawei gra-l09',

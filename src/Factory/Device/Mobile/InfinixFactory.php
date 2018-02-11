@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -23,6 +23,8 @@ class InfinixFactory implements Factory\FactoryInterface
     private $devices = [
         'x600-lte' => 'infinix x600 lte',
         'x600'     => 'infinix x600',
+        'note 2'   => 'infinix x600',
+        'x552'     => 'infinix x552',
         'x551'     => 'infinix x551',
         'x510'     => 'infinix x510',
         'x507'     => 'infinix x507',

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -131,6 +131,10 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             return $this->loader->load('opera mobile', $useragent);
         }
 
+        if ($s->contains('iron', false) && !$s->contains('IRON', true)) {
+            return $this->loader->load('iron', $useragent);
+        }
+
         $checkBeforeAndroidWebkit = [
             'opr'                         => 'opera',
             'midori'                      => 'midori',
@@ -159,7 +163,6 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'aldiko'                      => 'aldiko',
             'yabrowser'                   => 'yabrowser',
             'acheetahi'                   => 'cm browser',
-            'iron'                        => 'iron',
             'outlook'                     => 'outlook',
             'newb'                        => 'newb',
             'chromium'                    => 'chromium',

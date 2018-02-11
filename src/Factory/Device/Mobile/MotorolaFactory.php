@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -23,6 +23,7 @@ class MotorolaFactory implements Factory\FactoryInterface
     private $devices = [
         'moto g4 plus'    => 'motorola moto g4 plus',
         'xt830c'          => 'motorola xt830c',
+        'xt1563'          => 'motorola xt1563',
         'xt1562'          => 'motorola xt1562',
         'xt1064'          => 'motorola xt1064',
         'moto g 2014'     => 'motorola xt1064',
@@ -42,10 +43,14 @@ class MotorolaFactory implements Factory\FactoryInterface
         'moto g (5) plus' => 'motorola xt1686',
         'moto g (5)'      => 'motorola moto g5',
         'xt1032'          => 'motorola xt1032',
+        'xt1585'          => 'motorola xt1585',
         'xt1581'          => 'motorola xt1581',
         'xt1580'          => 'motorola xt1580',
         'xt1572'          => 'motorola xt1572',
         'moto x'          => 'motorola xt1052',
+        'xt1097'          => 'motorola xt1097',
+        'xt1096'          => 'motorola xt1096',
+        'xt1095'          => 'motorola xt1095',
         'xt1092'          => 'motorola xt1092',
         'xt1635-02'       => 'motorola xt1635-02',
         'xt1254'          => 'motorola xt1254',

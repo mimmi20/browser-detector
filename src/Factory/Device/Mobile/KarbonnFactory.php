@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -28,6 +28,7 @@ class KarbonnFactory implements Factory\FactoryInterface
         'machfive'          => 'karbonn titanium machfive',
         'karbonna26'        => 'karbonn a26',
         'karbonn_a2'        => 'karbonn a2',
+        'sparkle v'         => 'karbonn sparkle v',
         'k595'              => 'karbonn k595',
         'k222s'             => 'karbonn k222s',
         'k84'               => 'karbonn k84',

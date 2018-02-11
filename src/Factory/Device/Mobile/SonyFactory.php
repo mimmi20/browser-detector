@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -58,10 +58,12 @@ class SonyFactory implements Factory\FactoryInterface
         'e6533'                => 'sony e6533',
         'e5823'                => 'sony e5823',
         'e5803'                => 'sony e5803',
+        'e5663'                => 'sony e5663',
         'e5653'                => 'sony e5653',
         'e5633'                => 'sony e5633',
         'e5606'                => 'sony e5606',
         'e5603'                => 'sony e5603',
+        'e5563'                => 'sony e5563',
         'e5363'                => 'sony e5363',
         'e5353'                => 'sony e5353',
         'e5343'                => 'sony e5343',

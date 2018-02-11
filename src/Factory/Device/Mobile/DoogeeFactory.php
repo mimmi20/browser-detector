@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -23,6 +23,7 @@ class DoogeeFactory implements Factory\FactoryInterface
     private $devices = [
         't6'             => 'doogee t6',
         'x9pro'          => 'doogee x9 pro',
+        'x6pro'          => 'doogee x6 pro',
         'x5max_pro'      => 'doogee x5max pro',
         'y6 max 3d'      => 'doogee y6 max 3d',
         'y6 max'         => 'doogee y6 max',

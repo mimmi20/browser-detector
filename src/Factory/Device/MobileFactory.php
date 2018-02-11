@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2017, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -542,6 +542,7 @@ class MobileFactory implements Factory\FactoryInterface
             'oukitel'      => Mobile\OukitelFactory::class,
             'itel'         => Mobile\ItelFactory::class,
             'wileyfox'     => Mobile\WileyfoxFactory::class,
+            'morefine'     => Mobile\MorefineFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
@@ -841,7 +842,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\XidoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['titanium', 'machfive'], false)) {
+        if ($s->containsAny(['titanium', 'machfive', 'sparkle v'], false)) {
             return (new Mobile\KarbonnFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1021,7 +1022,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['PJ83100', '831C', 'Eris 2.1', '0PCV1', 'MDA'], true)) {
+        if ($s->containsAny(['PJ83100', '831C', 'Eris 2.1', '0PCV1', 'MDA', '0PJA10'], true)) {
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1421,7 +1422,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MeizuFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['x9pro', 'x5max_pro'], false)) {
+        if ($s->containsAny(['x9pro', 'x5max_pro', 'x6pro'], false)) {
             return (new Mobile\DoogeeFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1459,6 +1460,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('RUNE', true)) {
             return (new Mobile\BsMobileFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->contains('IRON', true)) {
+            return (new Mobile\UmiFactory($this->loader))->detect($useragent, $s);
         }
 
         $factoriesBeforeXiaomi = [
@@ -1539,6 +1544,8 @@ class MobileFactory implements Factory\FactoryInterface
             'a33f'            => Mobile\OppoFactory::class,
             'r7f'             => Mobile\OppoFactory::class,
             'r7sf'            => Mobile\OppoFactory::class,
+            'r7kf'            => Mobile\OppoFactory::class,
+            'r7plusf'         => Mobile\OppoFactory::class,
             'x9006'           => Mobile\OppoFactory::class,
             'x9076'           => Mobile\OppoFactory::class,
             ' 1201 '          => Mobile\OppoFactory::class,
@@ -1546,10 +1553,12 @@ class MobileFactory implements Factory\FactoryInterface
             'r831k'           => Mobile\OppoFactory::class,
             'xda'             => Mobile\O2Factory::class,
             'kkt20'           => Mobile\LavaFactory::class,
+            'pixelv1'         => Mobile\LavaFactory::class,
             'pixel v2+'       => Mobile\LavaFactory::class,
             ' x17 '           => Mobile\LavaFactory::class,
             'x1 atom'         => Mobile\LavaFactory::class,
             'x1 selfie'       => Mobile\LavaFactory::class,
+            'x5 4g'           => Mobile\LavaFactory::class,
             'pulse'           => Mobile\TmobileFactory::class,
             'mytouch4g'       => Mobile\TmobileFactory::class,
             'ameo'            => Mobile\TmobileFactory::class,
@@ -1653,6 +1662,8 @@ class MobileFactory implements Factory\FactoryInterface
             'h135'            => Mobile\DexpFactory::class,
             'atl-21'          => Mobile\ArtizleeFactory::class,
             'w032i-c3'        => Mobile\IntelFactory::class,
+            'tr10rs1'         => Mobile\IntelFactory::class,
+            'tr10cd1'         => Mobile\IntelFactory::class,
             'cs24'            => Mobile\CyrusFactory::class,
             'cs25'            => Mobile\CyrusFactory::class,
             ' t02 '           => Mobile\ChanghongFactory::class,
@@ -1675,6 +1686,7 @@ class MobileFactory implements Factory\FactoryInterface
             'k6000 pro'       => Mobile\OukitelFactory::class,
             'k4000'           => Mobile\OukitelFactory::class,
             'k10000'          => Mobile\OukitelFactory::class,
+            'universetap'     => Mobile\OukitelFactory::class,
             'vi8 plus'        => Mobile\ChuwiFactory::class,
             'hibook'          => Mobile\ChuwiFactory::class,
             'jy-'             => Mobile\JiayuFactory::class,
@@ -1746,6 +1758,10 @@ class MobileFactory implements Factory\FactoryInterface
             'x538'            => Mobile\SunsbellFactory::class,
             'm370i'           => Mobile\InfocusFactory::class,
             'i1-3gd'          => Mobile\CubeFactory::class,
+            'sf1'             => Mobile\ObiFactory::class,
+            'harrier tab'     => Mobile\EeFactory::class,
+            'excite prime'    => Mobile\CloudfoneFactory::class,
+            ' z1 '            => Mobile\NinetologyFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
