@@ -353,7 +353,7 @@ class SonyFactory implements Factory\FactoryInterface
         $matches = [];
 
         if (preg_match('/([acdefg]\d{4}|sgp\d{3}|x[ml]\d{2}[th]|sgpt\d{2}|[slwm]t\d{2}|[sm]k\d{2}|so\-\d{2}[bcdeg]|l\d{2}u)/i', $useragent, $matches)) {
-            $key = 'sony ' . strtolower($matches[1]);
+            $key = 'sony ' . mb_strtolower($matches[1]);
 
             if ($this->loader->has($key)) {
                 return $this->loader->load($key, $useragent);
