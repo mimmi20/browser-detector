@@ -350,6 +350,16 @@ class SonyFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/([acdefg]\d{4}|sgp\d{3}|x[ml]\d{2}[th]|sgpt\d{2}|[slwm]t\d{2}|[sm]k\d{2}|so\-\d{2}[bcdeg]|l\d{2}u)/i', $useragent, $matches)) {
+            $key = 'sony ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
