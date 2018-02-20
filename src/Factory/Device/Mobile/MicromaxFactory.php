@@ -57,6 +57,52 @@ class MicromaxFactory implements Factory\FactoryInterface
         'a40'    => 'micromax a40',
         'a35'    => 'micromax a35',
         'a27'    => 'micromax a27',
+        'p280'    => 'micromax p280',
+        'p250'    => 'micromax p250',
+        'p275'    => 'micromax p275',
+        'p500'    => 'micromax p500',
+        'x351'    => 'micromax x351',
+        'x321'    => 'micromax x321',
+        'x324'    => 'micromax x324',
+        'x325'    => 'micromax x325',
+        'x328'    => 'micromax x328',
+        'x329'    => 'micromax x329',
+        'x446'    => 'micromax x446',
+        'x1i ultra'    => 'micromax x1i ultra',
+        'x103i'    => 'micromax x103i',
+        'x101i'    => 'micromax x101i',
+        'x295'    => 'micromax x295',
+        'x263'    => 'micromax x263',
+        'x267'    => 'micromax x267',
+        'x272'    => 'micromax x272',
+        'x335'    => 'micromax x335',
+        'x335c'    => 'micromax x335c',
+        'q50'    => 'micromax q50',
+        'q5'    => 'micromax q5',
+        'x292i'    => 'micromax x292i',
+        'x292'    => 'micromax x292',
+        'x279i'    => 'micromax x279i',
+        'x279'    => 'micromax x279',
+        'x336'    => 'micromax x336',
+        'x337'    => 'micromax x337',
+        'x367'    => 'micromax x367',
+        'x282'    => 'micromax x282',
+        'x288'    => 'micromax x288',
+        'x070'    => 'micromax x070',
+        'x088'    => 'micromax x088',
+        'x085'    => 'micromax x085',
+        'x084'    => 'micromax x084',
+        'x081'    => 'micromax x081',
+        'x097'    => 'micromax x097',
+        'x098'    => 'micromax x098',
+        'x247'    => 'micromax x247',
+        'x455i'    => 'micromax x455i',
+        'x456'    => 'micromax x456',
+        'x457'    => 'micromax x457',
+        'x458'    => 'micromax x458',
+        'x352'    => 'micromax x352',
+        'x353'    => 'micromax x353',
+        'x501'    => 'micromax x501',
         'x650'   => 'micromax x650',
     ];
 
@@ -83,6 +129,16 @@ class MicromaxFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/micromax[ _](a?[adepqsx]\d{1,4}[bciqrs]?)/i', $useragent, $matches)) {
+            $key = 'micromax ' . strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

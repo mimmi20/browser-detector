@@ -121,7 +121,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek)\-/i', $useragent)) {
+        if (preg_match('/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-/i', $useragent)) {
             return (new Mobile\SamsungFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -154,7 +154,6 @@ class MobileFactory implements Factory\FactoryInterface
             'i7110'         => Mobile\SamsungFactory::class,
             'i9100'         => Mobile\SamsungFactory::class,
             'i9300'         => Mobile\SamsungFactory::class,
-            'yp-g'          => Mobile\SamsungFactory::class,
             'blaze'         => Mobile\SamsungFactory::class,
             's8500'         => Mobile\SamsungFactory::class,
             'sony'          => Mobile\SonyFactory::class,
