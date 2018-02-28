@@ -21,6 +21,8 @@ class NokiaFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'ta-1021'               => 'nokia ta-1021',
+        'ta-1004'               => 'nokia ta-1004',
         'genm14'               => 'nokia xl2',
         'nokia_xl'             => 'nokia xl',
         'rm-1030'              => 'nokia xl',

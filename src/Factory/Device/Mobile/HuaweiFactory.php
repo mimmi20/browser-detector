@@ -74,6 +74,10 @@ class HuaweiFactory implements Factory\FactoryInterface
         'plk-' => [
             'plk-tl01h' => 'huawei plk-tl01h',
             'plk-l01'   => 'huawei plk-l01',
+            'plk-cl00'   => 'huawei plk-cl00',
+            'plk-ul00'   => 'huawei plk-ul00',
+            'plk-tl00'   => 'huawei plk-tl00',
+            'plk-al10'   => 'huawei plk-al10',
         ],
         'pra-' => [
             'pra-la1' => 'huawei pra-la1',
@@ -93,6 +97,10 @@ class HuaweiFactory implements Factory\FactoryInterface
         ],
         'che2-' => [
             'che2-l11' => 'huawei che2-l11',
+            'che2-tl00m' => 'huawei che2-tl00m',
+            'che2-ul00' => 'huawei che2-ul00',
+            'che2-tl00h' => 'huawei che2-tl00h',
+            'che2-tl00' => 'huawei che2-tl00',
         ],
         'cam-' => [
             'cam-l21' => 'huawei cam-l21',
@@ -105,7 +113,9 @@ class HuaweiFactory implements Factory\FactoryInterface
         'h60-' => [
             'h60-l01' => 'huawei h60-l01',
             'h60-l02' => 'huawei h60-l02',
+            'h60-l03' => 'huawei h60-l03',
             'h60-l04' => 'huawei h60-l04',
+            'h60-l11' => 'huawei h60-l11',
             'h60-l12' => 'huawei h60-l12',
         ],
         'tag-' => [
@@ -134,7 +144,10 @@ class HuaweiFactory implements Factory\FactoryInterface
         'scl-' => [
             'scl-l01' => 'huawei scl-l01',
             'scl-l21' => 'huawei scl-l21',
+            'scl-tl00h' => 'huawei scl-tl00h',
             'scl-u31' => 'huawei scl-u31',
+            'scl-cl00' => 'huawei scl-cl00',
+            'scl-al00' => 'huawei scl-al00',
         ],
         'nxt-' => [
             'nxt-ul00' => 'huawei nxt-ul00',
@@ -215,6 +228,46 @@ class HuaweiFactory implements Factory\FactoryInterface
             'y600-u20'  => 'huawei y600-u20',
             'y600-u00'  => 'huawei y600-u00',
         ],
+        'g610-' => [
+            'g610-u20'                        => 'huawei g610-u20',
+            'g610-c00'                        => 'huawei g610-c00',
+        ],
+        'g621-' => [
+            'g621-tl00m'                       => 'huawei g621-tl00m',
+            'g621-tl00'                       => 'huawei g621-tl00',
+        ],
+        'h30-' => [
+            'h30-c00'                       => 'huawei h30-c00',
+            'h30-l02'                       => 'huawei h30-l02',
+            'h30-l01m'                       => 'huawei h30-l01m',
+            'h30-l01'                       => 'huawei h30-l01',
+            'h30-t00'                       => 'huawei h30-t00',
+            'h30-t10'                       => 'huawei h30-t10',
+        ],
+        'chm-' => [
+            'chm-u01'                       => 'huawei chm-u01',
+            'chm-tl00h'                       => 'huawei chm-tl00h',
+            'chm-tl00'                       => 'huawei chm-tl00',
+            'chm-ul00'                       => 'huawei chm-ul00',
+            'chm-cl00'                       => 'huawei chm-cl00',
+        ],
+        'che-' => [
+            'che-tl00h' => 'huawei che-tl00h',
+        ],
+        'che1-' => [
+            'che1-cl10' => 'huawei che1-cl10',
+            'che1-cl20' => 'huawei che1-cl20',
+        ],
+        'y320-' => [
+            'y320-u30'                        => 'huawei y320-u30',
+            'y320-u10'                        => 'huawei y320-u10',
+            'y320-t00'                        => 'huawei y320-t00',
+        ],
+        'vky-' => [
+            'vky-al00' => 'huawei vky-al00',
+            'vky-l29' => 'huawei vky-l29',
+            'vky-l09' => 'huawei vky-l09',
+        ],
 
         'honor 6'                         => 'huawei h60-l01',
         'nexus 6p'                        => 'huawei nexus 6p',
@@ -222,13 +275,13 @@ class HuaweiFactory implements Factory\FactoryInterface
         'grace'                           => 'huawei grace',
         'huaweinxt'                       => 'huawei nxt-l09',
         'g620s-l01'                       => 'huawei g620s-l01',
-        'g610-u20'                        => 'huawei g610-u20',
         'g606-t00'                        => 'huawei g606-t00',
         'y560-l01'                        => 'huawei y560-l01',
         'y550-l01'                        => 'huawei y550-l01',
         'y541-u02'                        => 'huawei y541-u02',
         'y540-u01'                        => 'huawei y540-u01',
         'y530-u00'                        => 'huawei y530-u00',
+        'y511-t00'                            => 'huawei y511-t00',
         'y511'                            => 'huawei y511',
         'y360-u61'                        => 'huawei y360-u61',
         'y360-u31'                        => 'huawei y360-u31',
@@ -237,8 +290,6 @@ class HuaweiFactory implements Factory\FactoryInterface
         'y330-u11'                        => 'huawei y330-u11',
         'y330-u05'                        => 'huawei y330-u05',
         'y330-u01'                        => 'huawei y330-u01',
-        'y320-u30'                        => 'huawei y320-u30',
-        'y320-u10'                        => 'huawei y320-u10',
         'y300'                            => 'huawei y300',
         'y220-u10'                        => 'huawei y220-u10',
         'y220-u00'                        => 'huawei y220-u00',
@@ -254,6 +305,10 @@ class HuaweiFactory implements Factory\FactoryInterface
         'u9510'                           => 'huawei u9510',
         'u9508'                           => 'huawei u9508',
         'u9500'                           => 'huawei u9500',
+        'u9202l-4'                           => 'huawei u9202l-4',
+        'u9202l-3'                           => 'huawei u9202l-3',
+        'u9202l-2'                           => 'huawei u9202l-2',
+        'u9202l-1'                           => 'huawei u9202l-1',
         'u9200'                           => 'huawei u9200',
         'u8950n-1'                        => 'huawei u8950n-1',
         'u8950n'                          => 'huawei u8950n',
@@ -266,9 +321,15 @@ class HuaweiFactory implements Factory\FactoryInterface
         'u8818'                           => 'huawei u8818',
         'u8815'                           => 'huawei u8815',
         'u8800'                           => 'huawei u8800',
+        'u8686'                           => 'huawei u8686',
+        'prism ii'                           => 'huawei u8686',
+        'u8667'                           => 'huawei u8667',
         'huawei u8666 build/huaweiu8666e' => 'huawei u8666',
         'u8666e'                          => 'huawei u8666e',
         'u8666'                           => 'huawei u8666',
+        'u8665'                           => 'huawei u8665',
+        'u8655-51'                           => 'huawei u8655-51',
+        'u8655-1'                           => 'huawei u8655-1',
         'u8655'                           => 'huawei u8655',
         'huawei-u8651t'                   => 'huawei u8651t',
         'huawei-u8651s'                   => 'huawei u8651s',
@@ -279,6 +340,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         'u8510'                           => 'huawei s41hw',
         'u8500'                           => 'huawei u8500',
         'u8350'                           => 'huawei u8350',
+        'u8230'                           => 'huawei u8230',
         'u8185'                           => 'huawei u8185',
         'u8180'                           => 'huawei u8180',
         'u8110'                           => 'huawei u8110',
@@ -286,6 +348,9 @@ class HuaweiFactory implements Factory\FactoryInterface
         'u8100'                           => 'huawei u8100',
         'u7510'                           => 'huawei u7510',
         's8600'                           => 'huawei s8600',
+        'h883g'                           => 'huawei h883g',
+        'h881c'                           => 'huawei h881c',
+        'h867g'                           => 'huawei h867g',
         'p6-u06'                          => 'huawei p6-u06',
         'p6 s-u06'                        => 'huawei p6 s-u06',
         ' p6 '                            => 'huawei p6',
@@ -318,15 +383,19 @@ class HuaweiFactory implements Factory\FactoryInterface
         'mediapad 7 classic'              => 'huawei mediapad 7 classic',
         'mediapad 7 youth'                => 'huawei mediapad 7 youth',
         'mediapad'                        => 'huawei s7-301w',
+        'm931'                            => 'huawei m931',
         'm860'                            => 'huawei m860',
+        'm636'                            => 'huawei m636',
         'm635'                            => 'huawei m635',
         'ideos s7 slim'                   => 'huawei s7_slim',
         'ideos s7'                        => 'huawei ideos s7',
         'ideos '                          => 'huawei bm-swu300',
         'g510-0100'                       => 'huawei g510-0100',
         'g7300'                           => 'huawei g7300',
+        'g6800'                           => 'huawei g6800',
         'g6609'                           => 'huawei g6609',
         'g6600'                           => 'huawei g6600',
+        'g6310'                           => 'huawei g6310',
         'g700-u10'                        => 'huawei g700-u10',
         'g700-u00'                        => 'huawei g700-u00',
         'g527-u081'                       => 'huawei g527-u081',
@@ -342,6 +411,8 @@ class HuaweiFactory implements Factory\FactoryInterface
         '4afrika'                         => 'huawei 4afrika',
         'g2800'                           => 'huawei g2800',
         't8600'                           => 'huawei t8600',
+        't8300'                           => 'huawei t8300',
+        't8100'                           => 'huawei t8100',
         'm750'                            => 'huawei m750',
         'mt2l03'                          => 'huawei mt2l03',
         'c8817l'                          => 'huawei c8817l',
@@ -387,6 +458,22 @@ class HuaweiFactory implements Factory\FactoryInterface
      */
     private function detectInArray(array $devices, string $useragent, Stringy $s): array
     {
+        if (preg_match('/((ags|ale|ath|bln|bnd|cam|ch[cm]|che[12]?|duk|frd|gra|h[36]0|kiw|lon|mha|nem|plk|pra|scl|vky|vtr|was|y220)\-[0-9a-z]+)/i', $useragent, $matches)) {
+            $key = 'huawei ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
+        if (preg_match('/(U\d{4}(-\d+)?)/', $useragent, $matches)) {
+            $key = 'huawei ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($devices as $search => $key) {
             if (!$s->contains($search, false)) {
                 continue;

@@ -73,6 +73,10 @@ class MozillaTest extends TestCase
                 'Firefox',
                 'Firefox',
             ],
+            [
+                'Mozilla 5.0 (Linux; U; Android 4.1.2; en-us; HUAWEI G610-C00 Build HuaweiG610-C00) UC AppleWebKit 534.31 (KHTML, like Gecko) Mobile Safari 534.31',
+                'Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; HUAWEI G610-C00 Build HuaweiG610-C00) UC AppleWebKit 534.31 (KHTML, like Gecko) Mobile Safari 534.31',
+            ],
         ];
     }
 }

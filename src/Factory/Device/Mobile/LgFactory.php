@@ -81,6 +81,7 @@ class LgFactory implements Factory\FactoryInterface
         'h900'          => 'lg h900',
         'h955'          => 'lg h955',
         'h950'          => 'lg h950',
+        'h930'          => 'lg h930',
         'h918'          => 'lg h918',
         'h910'          => 'lg h910',
         'h870'          => 'lg h870',

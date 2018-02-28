@@ -965,11 +965,19 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MotorolaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(h[36]0|kiw|chc|che2|ath|mha|cam|frd|nem|pra|plk|lon|duk|ale|gra|vtr|was|bln|y220)\-/i', $useragent)) {
+        if (preg_match('/(ags|ale|ath|bln|bnd|cam|ch[cm]|che[12]?|duk|frd|gra|h[36]0|kiw|lon|mha|nem|plk|pra|scl|vky|vtr|was|y220)\-/i', $useragent)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['ideos', 'u8500', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', ' p6 ', 'hi6210sft', 'honor'], false)) {
+        if (preg_match('/(YU|AO)\d{4}/', $useragent)) {
+            return (new Mobile\YuFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/U\d{4}/', $useragent)) {
+            return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['ideos', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', ' p6 ', 'hi6210sft', 'honor'], false)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1314,6 +1322,7 @@ class MobileFactory implements Factory\FactoryInterface
             'n900'            => Mobile\NokiaFactory::class,
             '9930i'           => Mobile\StarFactory::class,
             'n9100'           => Mobile\SamsungFactory::class,
+            'n7100'           => Mobile\SamsungFactory::class,
         ];
 
         foreach ($factoriesBeforeRossMoor as $test => $factoryName) {
@@ -1330,6 +1339,10 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         if (preg_match('/RM\-\d{3,4}/', $useragent)) {
+            return (new Mobile\NokiaFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/TA\-\d{4}/', $useragent)) {
             return (new Mobile\NokiaFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1367,14 +1380,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('iris', false) && !$s->contains('windows', false)) {
             return (new Mobile\LavaFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/(YU|AO)\d{4}/', $useragent)) {
-            return (new Mobile\YuFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/U\d{4}/', $useragent)) {
-            return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('ap-105', false)) {
@@ -1782,6 +1787,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('i5', true)) {
             return (new Mobile\VsunFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if ($s->containsAny(['kin.two', 'zunehd'], true)) {
+            return (new Mobile\MicrosoftFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ARM;/', $useragent)

@@ -25,6 +25,6 @@ class Mozilla implements NormalizerInterface
      */
     public function normalize(string $userAgent): string
     {
-        return preg_replace('/Moz(il|zi)la\/([\d.]+) */', 'Mozilla/$2 ', $userAgent);
+        return preg_replace('/Moz(il|zi)la[\/ ]([\d.]+) */', 'Mozilla/$2 ', $userAgent);
     }
 }
