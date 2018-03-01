@@ -65,7 +65,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
         }
 
         $checkBeforeComodoDragon = [
-            'opr'             => 'opera',
+            'opr/'            => 'opera',
             'midori'          => 'midori',
             'yabrowser'       => 'yabrowser',
             'kamelio'         => 'kamelio app',

@@ -268,6 +268,10 @@ class HuaweiFactory implements Factory\FactoryInterface
             'vky-l29' => 'huawei vky-l29',
             'vky-l09' => 'huawei vky-l09',
         ],
+        'ags-' => [
+            'ags-l09' => 'huawei ags-l09',
+            'ags-l03' => 'huawei ags-l03',
+        ],
 
         'honor 6'                         => 'huawei h60-l01',
         'nexus 6p'                        => 'huawei nexus 6p',
