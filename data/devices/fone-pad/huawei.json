@@ -209,7 +209,7 @@
   },
   "huawei ags-l09": {
     "codename": "AGS-L09",
-    "marketingName": "MediaPad T3 10",
+    "marketingName": "MediaPad T3 10 (Global)",
     "manufacturer": "Huawei",
     "brand": "Huawei",
     "platform": "android",
@@ -222,7 +222,7 @@
   },
   "huawei ags-l03": {
     "codename": "AGS-L03",
-    "marketingName": "MediaPad T3 10",
+    "marketingName": "MediaPad T3 10 (USA)",
     "manufacturer": "Huawei",
     "brand": "Huawei",
     "platform": "android",
@@ -230,6 +230,19 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1280,
     "resolutionHeight": 800,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "huawei bah-l09": {
+    "codename": "BAH-L09",
+    "marketingName": "M3 Lite (LTE)",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "platform": "android",
+    "type": "fone-pad",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1920,
+    "resolutionHeight": 1200,
     "dualOrientation": true,
     "colors": null
   }

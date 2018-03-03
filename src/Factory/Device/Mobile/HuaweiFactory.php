@@ -271,6 +271,46 @@ class HuaweiFactory implements Factory\FactoryInterface
         'ags-' => [
             'ags-l09' => 'huawei ags-l09',
             'ags-l03' => 'huawei ags-l03',
+            'ags-w09' => 'huawei ags-w09',
+        ],
+        'bnd-' => [
+            'bnd-l21' => 'huawei bnd-l21',
+            'bnd-l22' => 'huawei bnd-l22',
+            'bnd-l24' => 'huawei bnd-l24',
+            'bnd-al10' => 'huawei bnd-al10',
+            'bnd-tl10' => 'huawei bnd-tl10',
+        ],
+        'mya-' => [
+            'mya-l41' => 'huawei mya-l41',
+            'mya-l02' => 'huawei mya-l02',
+            'mya-l03' => 'huawei mya-l03',
+            'mya-l22' => 'huawei mya-l22',
+            'mya-l23' => 'huawei mya-l23',
+            'mya-al10' => 'huawei mya-al10',
+            'mya-tl10' => 'huawei mya-tl10',
+        ],
+        'bah-' => [
+            'bah-l09' => 'huawei bah-l09',
+            'bah-w09' => 'huawei bah-w09',
+        ],
+        'bla-' => [
+            'bla-l09' => 'huawei bla-l09',
+            'bla-l29' => 'huawei bla-l29',
+            'bla-al10' => 'huawei bla-al10',
+        ],
+        'rne-' => [
+            'rne-l21' => 'huawei rne-l21',
+            'rne-l22' => 'huawei rne-l22',
+            'rne-l01' => 'huawei rne-l01',
+            'rne-l23' => 'huawei rne-l23',
+            'rne-al10' => 'huawei rne-al10',
+            'rne-l02' => 'huawei rne-l02',
+        ],
+        'fig-' => [
+            'fig-lx1' => 'huawei fig-lx1',
+            'fig-lx2' => 'huawei fig-lx2',
+            'fig-lx3' => 'huawei fig-lx3',
+            'fig-la1' => 'huawei fig-la1',
         ],
 
         'honor 6'                         => 'huawei h60-l01',
@@ -462,7 +502,7 @@ class HuaweiFactory implements Factory\FactoryInterface
      */
     private function detectInArray(array $devices, string $useragent, Stringy $s): array
     {
-        if (preg_match('/((ags|ale|ath|bln|bnd|cam|ch[cm]|che[12]?|duk|frd|gra|h[36]0|kiw|lon|mha|nem|plk|pra|scl|vky|vtr|was|y220)\-[0-9a-z]+)/i', $useragent, $matches)) {
+        if (preg_match('/((ags|ale|ath|bah|bl[an]|bnd|cam|ch[cm]|che[12]?|duk|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|vky|vtr|was|y220)\-[0-9a-z]+)/i', $useragent, $matches)) {
             $key = 'huawei ' . mb_strtolower($matches[1]);
 
             if ($this->loader->has($key)) {

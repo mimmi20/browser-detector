@@ -965,7 +965,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MotorolaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(ags|ale|ath|bln|bnd|cam|ch[cm]|che[12]?|duk|frd|gra|h[36]0|kiw|lon|mha|nem|plk|pra|scl|vky|vtr|was|y220)\-/i', $useragent)) {
+        if (preg_match('/(ags|ale|ath|bah|bl[an]|bnd|cam|ch[cm]|che[12]?|duk|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|vky|vtr|was|y220)\-/i', $useragent)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1312,7 +1312,7 @@ class MobileFactory implements Factory\FactoryInterface
             'mx enjoy tv box' => Mobile\GeniatechFactory::class,
             'm5301'           => Mobile\IruFactory::class,
             'gv7777'          => Mobile\PrestigioFactory::class,
-            'rm-1042'         => Mobile\NokiaFactory::class,
+            //'rm-1042'         => Mobile\NokiaFactory::class,
             ' n1 '            => Mobile\NokiaFactory::class,
             '5130c-2'         => Mobile\NokiaFactory::class,
             'lumia'           => Mobile\NokiaFactory::class,
