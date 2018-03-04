@@ -1216,6 +1216,10 @@ class MobileFactory implements Factory\FactoryInterface
             }
         }
 
+        if (preg_match('/(OT\-)?[4-9]0[0-7]\d[ADKMNOXY]/', $useragent)) {
+            return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
+        }
+
         if (preg_match('/ W\d{3} /', $useragent)) {
             return (new Mobile\HaierFactory($this->loader))->detect($useragent, $s);
         }
@@ -1242,10 +1246,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('ACE', true)) {
             return (new Mobile\SamsungFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/[4-9]0[0-7]\d[ADMNXY]/', $useragent)) {
-            return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/PX\-\d{4}/', $useragent)) {

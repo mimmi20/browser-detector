@@ -39,6 +39,9 @@ class AlcatelFactory implements Factory\FactoryInterface
         '7040d'                    => 'alcatel ot-7040d',
         '7040a'                    => 'alcatel ot-7040a',
         '7025d'                    => 'alcatel ot-7025d',
+        '6070k'                    => 'alcatel ot-6070k',
+        '6070y'                    => 'alcatel ot-6070y',
+        '6070o'                    => 'alcatel ot-6070o',
         '6050a'                    => 'alcatel ot-6050a',
         '6045y'                    => 'alcatel ot-6045y',
         '6043d'                    => 'alcatel ot-6043d',
@@ -167,6 +170,22 @@ class AlcatelFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/((ot\-)?[4-9]0[0-7]\d[adkmnoxy])/i', $useragent, $matches)) {
+            $key = 'alcatel ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+
+            $key = 'alcatel ot-' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

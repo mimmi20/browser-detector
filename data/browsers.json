@@ -15259,7 +15259,7 @@
     "engine": "gecko"
   },
   "firefox klar": {
-    "name": "Firefox Klar",
+    "name": "Firefox Focus",
     "manufacturer": "MozillaFoundation",
     "pdfSupport": true,
     "rssSupport": false,
@@ -15267,6 +15267,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "Focus",
         "Klar"
       ]
     },

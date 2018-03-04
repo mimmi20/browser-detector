@@ -1224,7 +1224,7 @@
   {
     "ua": "Mozilla/5.0 (Linux; Android 6.0; Lenovo TB3-850M Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36",
     "codeName": "TB3-850M",
-    "marketingName": "TB3-850M",
+    "marketingName": "Tab3 8",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
     "type": "FonePad",
@@ -1960,6 +1960,58 @@
     "pointingMethod": "touchscreen",
     "width": 720,
     "height": 1280,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; Lenovo TB3-850F Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Safari/537.36",
+    "codeName": "TB3-850F",
+    "marketingName": "Tab3 8",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1280,
+    "height": 800,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0; Lenovo TB3-730X Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Safari/537.36",
+    "codeName": "TB3-730X",
+    "marketingName": "Tab3 7",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1024,
+    "height": 600,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 7.0; Lenovo K53a48 Build/NRD90N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36",
+    "codeName": "K53a48",
+    "marketingName": "K6 Note",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "Smartphone",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 6.0.1; Lenovo YT-X703F Build/S100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Safari/537.36",
+    "codeName": "YT-X703F",
+    "marketingName": "Yoga Tab 3 Plus",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 2560,
+    "height": 1600,
     "colors": null
   }
 ]

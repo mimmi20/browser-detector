@@ -117,6 +117,7 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'vivobrowser'    => 'vivo-browser',
             'bingweb'        => 'bingweb',
             'klar/'          => 'firefox klar',
+            'focus/'                   => 'firefox klar',
             'eui browser'    => 'eui browser',
             'slimboat'       => 'slimboat',
             'yandexsearch'   => 'yandexsearch',

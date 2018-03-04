@@ -24,6 +24,7 @@ class HtcFactory implements Factory\FactoryInterface
         'po58220'                 => 'htc po58220',
         'one_e8'                  => 'htc one e8',
         'htc 10 evo'              => 'htc 10 evo',
+        'a9u'                  => 'htc a9u',
         'one a9'                  => 'htc one a9',
         'u ultra'                 => 'htc u ultra',
         'u play'                  => 'htc u play',
