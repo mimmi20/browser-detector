@@ -31,6 +31,7 @@ class HisenseFactory implements Factory\FactoryInterface
         'hs-x8t'    => 'hisense hs-x8t',
         'hs-x8c'    => 'hisense hs-x8c',
         'hs-x1'     => 'hisense hs-x1',
+        'hs-u980'   => 'hisense hs-u980',
         'hs-u971'   => 'hisense hs-u971',
         'hs-u970'   => 'hisense hs-u970',
         'hs-u966'   => 'hisense hs-u966',

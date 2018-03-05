@@ -33,6 +33,7 @@ class LenovoFactory implements Factory\FactoryInterface
         'yt3-x50f'                => 'lenovo yt3-x50f',
         'yt3-850m'                => 'lenovo yt3-850m',
         'yt-x703f'                => 'lenovo yt-x703f',
+        'a7020a48'                => 'lenovo a7020a48',
         'k53a48'                  => 'lenovo k53a48',
         'k50a40'                  => 'lenovo k50a40',
         'k33a48'                  => 'lenovo k33a48',

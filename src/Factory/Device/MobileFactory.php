@@ -542,6 +542,7 @@ class MobileFactory implements Factory\FactoryInterface
             'itel'         => Mobile\ItelFactory::class,
             'wileyfox'     => Mobile\WileyfoxFactory::class,
             'morefine'     => Mobile\MorefineFactory::class,
+            'vernee'       => Mobile\VerneeFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
@@ -585,7 +586,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MotorolaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/M[Ii][ -](\d|PAD|MAX|NOTE)/', $useragent)) {
+        if (preg_match('/M[Ii][ -](\d|PAD|MAX|NOTE|A1)/', $useragent)) {
             return (new Mobile\XiaomiFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -607,14 +608,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('g3mini', false)) {
             return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/GN\d{3}/', $useragent)) {
-            return (new Mobile\GioneeFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/V1\d{2}/', $useragent)) {
-            return (new Mobile\GioneeFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/P[CG]\d{5}/', $useragent)) {
@@ -821,7 +814,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\LenovoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['S208', 'S550', 'S600', 'Z100 Pro', 'S308'], true)) {
+        if ($s->containsAny(['S208', 'S550', 'S600', 'Z100 Pro', 'S308', 'NOTE Plus'], true)) {
             return (new Mobile\CubotFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -847,6 +840,14 @@ class MobileFactory implements Factory\FactoryInterface
 
         if ($s->contains('a727', false)) {
             return (new Mobile\AzpenFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/(ags|ale|ath|bah|bl[an]|bnd|cam|ch[cm]|che[12]?|duk|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|vky|vtr|was|y220)\-/i', $useragent)) {
+            return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/V1\d{2}/', $useragent)) {
+            return (new Mobile\GioneeFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/ [aevzs]\d{3} /i', $useragent)) {
@@ -965,20 +966,36 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\MotorolaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(ags|ale|ath|bah|bl[an]|bnd|cam|ch[cm]|che[12]?|duk|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|vky|vtr|was|y220)\-/i', $useragent)) {
-            return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
+        if (preg_match('/SGP\d{3}|X[ML]\d{2}[th]/', $useragent)) {
+            return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
+
+        if (preg_match('/sgpt\d{2}/i', $useragent)) {
+            return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
+        }
+
+//        if (preg_match('/(ags|ale|ath|bah|bl[an]|bnd|cam|ch[cm]|che[12]?|duk|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|vky|vtr|was|y220)\-/i', $useragent)) {
+//            return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
+//        }
 
         if (preg_match('/(YU|AO)\d{4}/', $useragent)) {
             return (new Mobile\YuFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/U\d{4}/', $useragent)) {
+        if (preg_match('/u\d{4}/i', $useragent)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->containsAny(['ideos', 'vodafone 858', 'vodafone 845', 'ascend', 'm860', ' p6 ', 'hi6210sft', 'honor'], false)) {
             return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/P(GN|KT)\-?\d{3}/', $useragent)) {
+            return (new Mobile\CondorFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/GN\d{3}/', $useragent)) {
+            return (new Mobile\GioneeFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('vodafone 890n', false)) {
@@ -995,14 +1012,6 @@ class MobileFactory implements Factory\FactoryInterface
 
         if (preg_match('/OP\d{3}/', $useragent)) {
             return (new Mobile\OlivettiFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/SGP\d{3}|X[ML]\d{2}[th]/', $useragent)) {
-            return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/sgpt\d{2}/i', $useragent)) {
-            return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/VS\d{3}/', $useragent)) {
@@ -1220,7 +1229,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\AlcatelFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/ W\d{3} /', $useragent)) {
+        if (preg_match('/ W\d{3}[ )]/', $useragent)) {
             return (new Mobile\HaierFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1313,16 +1322,26 @@ class MobileFactory implements Factory\FactoryInterface
             'm5301'           => Mobile\IruFactory::class,
             'gv7777'          => Mobile\PrestigioFactory::class,
             //'rm-1042'         => Mobile\NokiaFactory::class,
-            ' n1 '            => Mobile\NokiaFactory::class,
-            '5130c-2'         => Mobile\NokiaFactory::class,
-            'lumia'           => Mobile\NokiaFactory::class,
-            'arm; 909'        => Mobile\NokiaFactory::class,
-            'id336'           => Mobile\NokiaFactory::class,
-            'genm14'          => Mobile\NokiaFactory::class,
-            'n900'            => Mobile\NokiaFactory::class,
-            '9930i'           => Mobile\StarFactory::class,
-            'n9100'           => Mobile\SamsungFactory::class,
-            'n7100'           => Mobile\SamsungFactory::class,
+            ' n1 '       => Mobile\NokiaFactory::class,
+            '5130c-2'    => Mobile\NokiaFactory::class,
+            'lumia'      => Mobile\NokiaFactory::class,
+            'arm; 909'   => Mobile\NokiaFactory::class,
+            'id336'      => Mobile\NokiaFactory::class,
+            'genm14'     => Mobile\NokiaFactory::class,
+            'n900'       => Mobile\NokiaFactory::class,
+            '9930i'      => Mobile\StarFactory::class,
+            'n9100'      => Mobile\SamsungFactory::class,
+            'n7100'      => Mobile\SamsungFactory::class,
+            'm717r-hd'   => Mobile\VastKingFactory::class,
+            'tm785m3'    => Mobile\NuVisionFactory::class,
+            'm502'       => Mobile\NavonFactory::class,
+            'lencm900hz' => Mobile\LencoFactory::class,
+            'xm100'      => Mobile\LandvoFactory::class,
+            'dm015k'     => Mobile\KyoceraFactory::class,
+            'm370i'      => Mobile\InfocusFactory::class,
+            'dm550'      => Mobile\BlackviewFactory::class,
+            ' m8 '       => Mobile\AmlogicFactory::class,
+            'm601'       => Mobile\AocFactory::class,
         ];
 
         foreach ($factoriesBeforeRossMoor as $test => $factoryName) {
@@ -1366,7 +1385,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SimvalleyFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/H[WT]\-[WIN]\d{2,3}/', $useragent)) {
+        if (preg_match('/H[MTW]\-[GINW]\d{2,3}/', $useragent)) {
             return (new Mobile\HaierFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1470,216 +1489,227 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\UmiFactory($this->loader))->detect($useragent, $s);
         }
 
+        if (preg_match('/bv[5-8]000/i', $useragent)) {
+            return (new Mobile\BlackviewFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/rio r1|gsmart/i', $useragent)) {
+            return (new Mobile\GigabyteFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/mz\-| m\d |m\d{3}|m\d note|pro 5/i', $useragent)) {
+            return (new Mobile\MeizuFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/[sxz]\d{3}[ae]/i', $useragent)) {
+            return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
+        }
+
         $factoriesBeforeXiaomi = [
-            'rio r1'          => Mobile\GigabyteFactory::class,
-            'gsmart_t4'       => Mobile\GigabyteFactory::class,
-            '7007hd'          => Mobile\PerfeoFactory::class,
-            'pt-gf200'        => Mobile\PantechFactory::class,
-            'k-8s'            => Mobile\KeenerFactory::class,
-            'm601'            => Mobile\AocFactory::class,
-            'h1+'             => Mobile\HummerFactory::class,
-            'impress_l'       => Mobile\VertexFactory::class,
-            'm040'            => Mobile\MeizuFactory::class,
-            'mz-'             => Mobile\MeizuFactory::class,
-            ' m9 '            => Mobile\MeizuFactory::class,
-            'm2 note'         => Mobile\MeizuFactory::class,
-            'm571c'           => Mobile\MeizuFactory::class,
-            ' m2 '            => Mobile\MeizuFactory::class,
-            'm1 note'         => Mobile\MeizuFactory::class,
-            'm032'            => Mobile\MeizuFactory::class,
-            'pro 5'           => Mobile\MeizuFactory::class,
-            'neo-x5'          => Mobile\MinixFactory::class,
-            'numy_note_9'     => Mobile\AinolFactory::class,
-            'novo7fire'       => Mobile\AinolFactory::class,
-            'tab-97e-01'      => Mobile\ReellexFactory::class,
-            'vega'            => Mobile\AdventFactory::class,
-            'dream'           => Mobile\HtcFactory::class,
-            ' x9 '            => Mobile\HtcFactory::class,
-            'x315e'           => Mobile\HtcFactory::class,
-            'z715e'           => Mobile\HtcFactory::class,
-            's710e'           => Mobile\HtcFactory::class,
-            'x525a'           => Mobile\HtcFactory::class,
-            'z710e'           => Mobile\HtcFactory::class,
-            'amaze'           => Mobile\HtcFactory::class,
-            'butterfly2'      => Mobile\HtcFactory::class,
-            ' xst2 '          => Mobile\FourgSystemsFactory::class,
-            'netbox'          => Mobile\SonyFactory::class,
-            ' x10 '           => Mobile\SonyFactory::class,
-            ' e10i '          => Mobile\SonyFactory::class,
-            ' x2 '            => Mobile\SonyFactory::class,
-            'r800x'           => Mobile\SonyFactory::class,
-            's500i'           => Mobile\SonyFactory::class,
-            'x1i'             => Mobile\SonyFactory::class,
-            'x10i'            => Mobile\SonyFactory::class,
-            'tf300t'          => Mobile\AsusFactory::class,
-            'f10x'            => Mobile\NextwayFactory::class,
-            ' m8 '            => Mobile\AmlogicFactory::class,
-            'adtab 7 lite'    => Mobile\AdspecFactory::class,
-            'neon-n1'         => Mobile\AxgioFactory::class,
-            'wing-w2'         => Mobile\AxgioFactory::class,
-            't118'            => Mobile\TwinovoFactory::class,
-            't108'            => Mobile\TwinovoFactory::class,
-            'touareg8_3g'     => Mobile\AccentFactory::class,
-            'chagall'         => Mobile\PegatronFactory::class,
-            'turbo x6'        => Mobile\TurboPadFactory::class,
-            'w717'            => Mobile\HaierFactory::class,
-            'hm-n501-fl'      => Mobile\HaierFactory::class,
-            ' l52 '           => Mobile\HaierFactory::class,
-            ' g30 '           => Mobile\HaierFactory::class,
-            'pad g781'        => Mobile\HaierFactory::class,
-            'air a70'         => Mobile\RoverPadFactory::class,
-            'sp-6020 quasar'  => Mobile\WooFactory::class,
-            'm717r-hd'        => Mobile\VastKingFactory::class,
-            'q10s'            => Mobile\WopadFactory::class,
-            'ctab785r16-3g'   => Mobile\CondorFactory::class,
-            'pgn-'            => Mobile\CondorFactory::class,
-            'pkt-301'         => Mobile\CondorFactory::class,
-            'uq785-m1bgv'     => Mobile\VericoFactory::class,
-            'km-uqm11a'       => Mobile\VericoFactory::class,
-            't9666-1'         => Mobile\TelsdaFactory::class,
-            'n003'            => Mobile\NeoFactory::class,
-            'h7100'           => Mobile\FeitengFactory::class,
-            'x909'            => Mobile\OppoFactory::class,
-            'r815'            => Mobile\OppoFactory::class,
-            'r8106'           => Mobile\OppoFactory::class,
-            'u705t'           => Mobile\OppoFactory::class,
-            'find7'           => Mobile\OppoFactory::class,
-            'a37f'            => Mobile\OppoFactory::class,
-            'a33f'            => Mobile\OppoFactory::class,
-            'r7f'             => Mobile\OppoFactory::class,
-            'r7sf'            => Mobile\OppoFactory::class,
-            'r7kf'            => Mobile\OppoFactory::class,
-            'r7plusf'         => Mobile\OppoFactory::class,
-            'x9006'           => Mobile\OppoFactory::class,
-            'x9076'           => Mobile\OppoFactory::class,
-            ' 1201 '          => Mobile\OppoFactory::class,
-            'n1t'             => Mobile\OppoFactory::class,
-            'r831k'           => Mobile\OppoFactory::class,
-            'xda'             => Mobile\O2Factory::class,
-            'kkt20'           => Mobile\LavaFactory::class,
-            'pixelv1'         => Mobile\LavaFactory::class,
-            'pixel v2+'       => Mobile\LavaFactory::class,
-            ' x17 '           => Mobile\LavaFactory::class,
-            'x1 atom'         => Mobile\LavaFactory::class,
-            'x1 selfie'       => Mobile\LavaFactory::class,
-            'x5 4g'           => Mobile\LavaFactory::class,
-            'pulse'           => Mobile\TmobileFactory::class,
-            'mytouch4g'       => Mobile\TmobileFactory::class,
-            'ameo'            => Mobile\TmobileFactory::class,
-            'garminfone'      => Mobile\TmobileFactory::class,
-            'redmi'           => Mobile\XiaomiFactory::class,
-            'note 4'          => Mobile\XiaomiFactory::class,
-            '2014818'         => Mobile\XiaomiFactory::class,
-            '2014813'         => Mobile\XiaomiFactory::class,
-            '2014011'         => Mobile\XiaomiFactory::class,
-            '2015562'         => Mobile\XiaomiFactory::class,
-            'g009'            => Mobile\YxtelFactory::class,
-            'picopad_s1'      => Mobile\AxiooFactory::class,
-            'adi_5s'          => Mobile\ArtelFactory::class,
-            'norma 2'         => Mobile\KeneksiFactory::class,
-            'dm015k'          => Mobile\KyoceraFactory::class,
-            'kc-s701'         => Mobile\KyoceraFactory::class,
-            't880g'           => Mobile\EtulineFactory::class,
-            'studio 5.5'      => Mobile\BluFactory::class,
-            'studio xl 2'     => Mobile\BluFactory::class,
-            'f3_pro'          => Mobile\DoogeeFactory::class,
-            'y6_piano'        => Mobile\DoogeeFactory::class,
-            'y6 max'          => Mobile\DoogeeFactory::class,
-            ' t6 '            => Mobile\DoogeeFactory::class,
-            'tab-970'         => Mobile\PrologyFactory::class,
-            'a66a'            => Mobile\EvercossFactory::class,
-            'n90fhdrk'        => Mobile\YuandaoFactory::class,
-            'nova'            => Mobile\CatSoundFactory::class,
-            'i545'            => Mobile\SamsungFactory::class,
-            'discovery'       => Mobile\GeneralMobileFactory::class,
-            't720'            => Mobile\MotorolaFactory::class,
-            'n820'            => Mobile\AmoiFactory::class,
-            'n90 dual core2'  => Mobile\YuandaoFactory::class,
-            'lencm900hz'      => Mobile\LencoFactory::class,
-            'tpc-'            => Mobile\JaytechFactory::class,
-            ' g9 '            => Mobile\MastoneFactory::class,
-            'dl1'             => Mobile\PanasonicFactory::class,
-            'eluga_arc_2'     => Mobile\PanasonicFactory::class,
-            'zt180'           => Mobile\ZenithinkFactory::class,
-            'e1107'           => Mobile\YusuFactory::class,
-            'is05'            => Mobile\SharpFactory::class,
-            'p4d sirius'      => Mobile\NvsblFactory::class,
-            ' c2 '            => Mobile\ZopoFactory::class,
-            'a0001'           => Mobile\OneplusFactory::class,
-            'smartpad'        => Mobile\EinsUndEinsFactory::class,
-            'n930'            => Mobile\CoolpadFactory::class,
-            '8079'            => Mobile\CoolpadFactory::class,
-            '5860s'           => Mobile\CoolpadFactory::class,
-            'la-m1'           => Mobile\BeidouFactory::class,
-            'i4901'           => Mobile\IdeaFactory::class,
-            'lead 1'          => Mobile\LeagooFactory::class,
-            'lead 2'          => Mobile\LeagooFactory::class,
-            't1_plus'         => Mobile\LeagooFactory::class,
-            'elite 4'         => Mobile\LeagooFactory::class,
-            'elite 5'         => Mobile\LeagooFactory::class,
-            'shark 1'         => Mobile\LeagooFactory::class,
-            'v1_viper'        => Mobile\AllviewFactory::class,
-            'a4you'           => Mobile\AllviewFactory::class,
-            'p5_quad'         => Mobile\AllviewFactory::class,
-            'x2_soul'         => Mobile\AllviewFactory::class,
-            'ax4nano'         => Mobile\AllviewFactory::class,
-            'x1_soul'         => Mobile\AllviewFactory::class,
-            'forward_art'     => Mobile\NgmFactory::class,
-            'gnet'            => Mobile\GnetFactory::class,
-            'hive v 3g'       => Mobile\TurboxFactory::class,
-            'hive iv 3g'      => Mobile\TurboxFactory::class,
-            'turkcell'        => Mobile\TurkcellFactory::class,
-            ' v1 '            => Mobile\MaxtronFactory::class,
-            'l-ement500'      => Mobile\LogicomFactory::class,
-            'is04'            => Mobile\KddiFactory::class,
-            'be pro'          => Mobile\UlefoneFactory::class,
-            'paris'           => Mobile\UlefoneFactory::class,
-            'vienna'          => Mobile\UlefoneFactory::class,
-            'u007'            => Mobile\UlefoneFactory::class,
-            'future'          => Mobile\UlefoneFactory::class,
-            't1x plus'        => Mobile\AdvanFactory::class,
-            'vandroid'        => Mobile\AdvanFactory::class,
-            'sense golly'     => Mobile\IproFactory::class,
-            'sirius_qs'       => Mobile\VoninoFactory::class,
-            'dl 1803'         => Mobile\DlFactory::class,
-            's10q-3g'         => Mobile\SmartbookFactory::class,
-            'trekker-x1'      => Mobile\CrosscallFactory::class,
-            ' s30 '           => Mobile\FireflyFactory::class,
-            'apollo'          => Mobile\VerneeFactory::class,
-            'thor'            => Mobile\VerneeFactory::class,
-            '1505-a02'        => Mobile\ItelFactory::class,
-            'mitab think'     => Mobile\WolderFactory::class,
-            'pixel'           => Mobile\GoogleFactory::class,
-            'gce x86 phone'   => Mobile\GoogleFactory::class,
-            'glass 1'         => Mobile\GoogleFactory::class,
-            '909t'            => Mobile\MpieFactory::class,
-            ' m13 '           => Mobile\MpieFactory::class,
-            'z30'             => Mobile\MagnusFactory::class,
-            'up580'           => Mobile\UhappyFactory::class,
-            'swift'           => Mobile\WileyfoxFactory::class,
-            'm9c max'         => Mobile\BqeelFactory::class,
-            'qt-10'           => Mobile\QmaxFactory::class,
-            'ilium l820'      => Mobile\LanixFactory::class,
-            's501m 3g'        => Mobile\FourGoodFactory::class,
-            't700i_3g'        => Mobile\FourGoodFactory::class,
-            'ixion_es255'     => Mobile\DexpFactory::class,
-            'h135'            => Mobile\DexpFactory::class,
-            'atl-21'          => Mobile\ArtizleeFactory::class,
-            'w032i-c3'        => Mobile\IntelFactory::class,
-            'tr10rs1'         => Mobile\IntelFactory::class,
-            'tr10cd1'         => Mobile\IntelFactory::class,
-            'cs24'            => Mobile\CyrusFactory::class,
-            'cs25'            => Mobile\CyrusFactory::class,
-            ' t02 '           => Mobile\ChanghongFactory::class,
-            'crown'           => Mobile\BlackviewFactory::class,
-            'bv5000'          => Mobile\BlackviewFactory::class,
-            'bv6000'          => Mobile\BlackviewFactory::class,
-            'bv7000'          => Mobile\BlackviewFactory::class,
+            //'rio r1'          => Mobile\GigabyteFactory::class,
+            //'gsmart'          => Mobile\GigabyteFactory::class,
+            '7007hd'    => Mobile\PerfeoFactory::class,
+            'pt-gf200'  => Mobile\PantechFactory::class,
+            'k-8s'      => Mobile\KeenerFactory::class,
+            'h1+'       => Mobile\HummerFactory::class,
+            'impress_l' => Mobile\VertexFactory::class,
+            //'m040'            => Mobile\MeizuFactory::class,
+            //'mz-'             => Mobile\MeizuFactory::class,
+            //' m9 '            => Mobile\MeizuFactory::class,
+            //'m2 note'         => Mobile\MeizuFactory::class,
+            //'m571c'           => Mobile\MeizuFactory::class,
+            //' m2 '            => Mobile\MeizuFactory::class,
+            //'m1 note'         => Mobile\MeizuFactory::class,
+            //'m032'            => Mobile\MeizuFactory::class,
+            //'pro 5'           => Mobile\MeizuFactory::class,
+            'neo-x5'      => Mobile\MinixFactory::class,
+            'numy_note_9' => Mobile\AinolFactory::class,
+            'novo7fire'   => Mobile\AinolFactory::class,
+            'tab-97e-01'  => Mobile\ReellexFactory::class,
+            'vega'        => Mobile\AdventFactory::class,
+            'dream'       => Mobile\HtcFactory::class,
+            ' x9 '        => Mobile\HtcFactory::class,
+            //'x315e'           => Mobile\HtcFactory::class,
+            //'z715e'           => Mobile\HtcFactory::class,
+            //'s710e'           => Mobile\HtcFactory::class,
+            //'x525a'           => Mobile\HtcFactory::class,
+            //'z710e'           => Mobile\HtcFactory::class,
+            'amaze'        => Mobile\HtcFactory::class,
+            'butterfly2'   => Mobile\HtcFactory::class,
+            ' xst2 '       => Mobile\FourgSystemsFactory::class,
+            'netbox'       => Mobile\SonyFactory::class,
+            ' x10 '        => Mobile\SonyFactory::class,
+            ' e10i '       => Mobile\SonyFactory::class,
+            ' x2 '         => Mobile\SonyFactory::class,
+            'r800x'        => Mobile\SonyFactory::class,
+            's500i'        => Mobile\SonyFactory::class,
+            'x1i'          => Mobile\SonyFactory::class,
+            'x10i'         => Mobile\SonyFactory::class,
+            'tf300t'       => Mobile\AsusFactory::class,
+            'f10x'         => Mobile\NextwayFactory::class,
+            'adtab 7 lite' => Mobile\AdspecFactory::class,
+            'neon-n1'      => Mobile\AxgioFactory::class,
+            'wing-w2'      => Mobile\AxgioFactory::class,
+            't118'         => Mobile\TwinovoFactory::class,
+            't108'         => Mobile\TwinovoFactory::class,
+            'touareg8_3g'  => Mobile\AccentFactory::class,
+            'chagall'      => Mobile\PegatronFactory::class,
+            'turbo x6'     => Mobile\TurboPadFactory::class,
+            //'w717'            => Mobile\HaierFactory::class,
+            ' l52 '          => Mobile\HaierFactory::class,
+            ' g30 '          => Mobile\HaierFactory::class,
+            'pad g781'       => Mobile\HaierFactory::class,
+            'air a70'        => Mobile\RoverPadFactory::class,
+            'sp-6020 quasar' => Mobile\WooFactory::class,
+            'q10s'           => Mobile\WopadFactory::class,
+            'ctab785r16-3g'  => Mobile\CondorFactory::class,
+            //'pgn-'            => Mobile\CondorFactory::class,
+            'pkt-301' => Mobile\CondorFactory::class,
+            //'pgn608'          => Mobile\CondorFactory::class,
+            'uq785-m1bgv'    => Mobile\VericoFactory::class,
+            'km-uqm11a'      => Mobile\VericoFactory::class,
+            't9666-1'        => Mobile\TelsdaFactory::class,
+            'n003'           => Mobile\NeoFactory::class,
+            'h7100'          => Mobile\FeitengFactory::class,
+            'x909'           => Mobile\OppoFactory::class,
+            'r815'           => Mobile\OppoFactory::class,
+            'r8106'          => Mobile\OppoFactory::class,
+            'u705t'          => Mobile\OppoFactory::class,
+            'find7'          => Mobile\OppoFactory::class,
+            'a37f'           => Mobile\OppoFactory::class,
+            'a33f'           => Mobile\OppoFactory::class,
+            'r7f'            => Mobile\OppoFactory::class,
+            'r7sf'           => Mobile\OppoFactory::class,
+            'r7kf'           => Mobile\OppoFactory::class,
+            'r7plusf'        => Mobile\OppoFactory::class,
+            'x9006'          => Mobile\OppoFactory::class,
+            'x9076'          => Mobile\OppoFactory::class,
+            ' 1201 '         => Mobile\OppoFactory::class,
+            'n1t'            => Mobile\OppoFactory::class,
+            'r831k'          => Mobile\OppoFactory::class,
+            'xda'            => Mobile\O2Factory::class,
+            'kkt20'          => Mobile\LavaFactory::class,
+            'pixelv1'        => Mobile\LavaFactory::class,
+            'pixel v2+'      => Mobile\LavaFactory::class,
+            ' x17 '          => Mobile\LavaFactory::class,
+            'x1 atom'        => Mobile\LavaFactory::class,
+            'x1 selfie'      => Mobile\LavaFactory::class,
+            'x5 4g'          => Mobile\LavaFactory::class,
+            'pulse'          => Mobile\TmobileFactory::class,
+            'mytouch4g'      => Mobile\TmobileFactory::class,
+            'ameo'           => Mobile\TmobileFactory::class,
+            'garminfone'     => Mobile\TmobileFactory::class,
+            'redmi'          => Mobile\XiaomiFactory::class,
+            'note 4'         => Mobile\XiaomiFactory::class,
+            '2014818'        => Mobile\XiaomiFactory::class,
+            '2014813'        => Mobile\XiaomiFactory::class,
+            '2014011'        => Mobile\XiaomiFactory::class,
+            '2015562'        => Mobile\XiaomiFactory::class,
+            'g009'           => Mobile\YxtelFactory::class,
+            'picopad_s1'     => Mobile\AxiooFactory::class,
+            'adi_5s'         => Mobile\ArtelFactory::class,
+            'norma 2'        => Mobile\KeneksiFactory::class,
+            'kc-s701'        => Mobile\KyoceraFactory::class,
+            't880g'          => Mobile\EtulineFactory::class,
+            'studio 5.5'     => Mobile\BluFactory::class,
+            'studio xl 2'    => Mobile\BluFactory::class,
+            'f3_pro'         => Mobile\DoogeeFactory::class,
+            'y6_piano'       => Mobile\DoogeeFactory::class,
+            'y6 max'         => Mobile\DoogeeFactory::class,
+            ' t6 '           => Mobile\DoogeeFactory::class,
+            'tab-970'        => Mobile\PrologyFactory::class,
+            'a66a'           => Mobile\EvercossFactory::class,
+            'n90fhdrk'       => Mobile\YuandaoFactory::class,
+            'nova'           => Mobile\CatSoundFactory::class,
+            'i545'           => Mobile\SamsungFactory::class,
+            'discovery'      => Mobile\GeneralMobileFactory::class,
+            't720'           => Mobile\MotorolaFactory::class,
+            'n820'           => Mobile\AmoiFactory::class,
+            'n90 dual core2' => Mobile\YuandaoFactory::class,
+            'tpc-'           => Mobile\JaytechFactory::class,
+            ' g9 '           => Mobile\MastoneFactory::class,
+            'dl1'            => Mobile\PanasonicFactory::class,
+            'eluga_arc_2'    => Mobile\PanasonicFactory::class,
+            'zt180'          => Mobile\ZenithinkFactory::class,
+            'e1107'          => Mobile\YusuFactory::class,
+            'is05'           => Mobile\SharpFactory::class,
+            'p4d sirius'     => Mobile\NvsblFactory::class,
+            ' c2 '           => Mobile\ZopoFactory::class,
+            'a0001'          => Mobile\OneplusFactory::class,
+            'smartpad'       => Mobile\EinsUndEinsFactory::class,
+            'n930'           => Mobile\CoolpadFactory::class,
+            '8079'           => Mobile\CoolpadFactory::class,
+            '5860s'          => Mobile\CoolpadFactory::class,
+            'la-m1'          => Mobile\BeidouFactory::class,
+            'i4901'          => Mobile\IdeaFactory::class,
+            'lead 1'         => Mobile\LeagooFactory::class,
+            'lead 2'         => Mobile\LeagooFactory::class,
+            't1_plus'        => Mobile\LeagooFactory::class,
+            'elite 4'        => Mobile\LeagooFactory::class,
+            'elite 5'        => Mobile\LeagooFactory::class,
+            'shark 1'        => Mobile\LeagooFactory::class,
+            'v1_viper'       => Mobile\AllviewFactory::class,
+            'a4you'          => Mobile\AllviewFactory::class,
+            'p5_quad'        => Mobile\AllviewFactory::class,
+            'x2_soul'        => Mobile\AllviewFactory::class,
+            'ax4nano'        => Mobile\AllviewFactory::class,
+            'x1_soul'        => Mobile\AllviewFactory::class,
+            'forward_art'    => Mobile\NgmFactory::class,
+            'gnet'           => Mobile\GnetFactory::class,
+            'hive v 3g'      => Mobile\TurboxFactory::class,
+            'hive iv 3g'     => Mobile\TurboxFactory::class,
+            'turkcell'       => Mobile\TurkcellFactory::class,
+            ' v1 '           => Mobile\MaxtronFactory::class,
+            'l-ement500'     => Mobile\LogicomFactory::class,
+            'is04'           => Mobile\KddiFactory::class,
+            'be pro'         => Mobile\UlefoneFactory::class,
+            'paris'          => Mobile\UlefoneFactory::class,
+            'vienna'         => Mobile\UlefoneFactory::class,
+            'u007'           => Mobile\UlefoneFactory::class,
+            'future'         => Mobile\UlefoneFactory::class,
+            'power_3'        => Mobile\UlefoneFactory::class,
+            't1x plus'       => Mobile\AdvanFactory::class,
+            'vandroid'       => Mobile\AdvanFactory::class,
+            'sense golly'    => Mobile\IproFactory::class,
+            'sirius_qs'      => Mobile\VoninoFactory::class,
+            'dl 1803'        => Mobile\DlFactory::class,
+            's10q-3g'        => Mobile\SmartbookFactory::class,
+            'trekker-x1'     => Mobile\CrosscallFactory::class,
+            ' s30 '          => Mobile\FireflyFactory::class,
+            'apollo'         => Mobile\VerneeFactory::class,
+            'thor'           => Mobile\VerneeFactory::class,
+            '1505-a02'       => Mobile\ItelFactory::class,
+            'mitab think'    => Mobile\WolderFactory::class,
+            'pixel'          => Mobile\GoogleFactory::class,
+            'gce x86 phone'  => Mobile\GoogleFactory::class,
+            'glass 1'        => Mobile\GoogleFactory::class,
+            '909t'           => Mobile\MpieFactory::class,
+            ' m13 '          => Mobile\MpieFactory::class,
+            'z30'            => Mobile\MagnusFactory::class,
+            'up580'          => Mobile\UhappyFactory::class,
+            'swift'          => Mobile\WileyfoxFactory::class,
+            'm9c max'        => Mobile\BqeelFactory::class,
+            'qt-10'          => Mobile\QmaxFactory::class,
+            'ilium l820'     => Mobile\LanixFactory::class,
+            's501m 3g'       => Mobile\FourGoodFactory::class,
+            't700i_3g'       => Mobile\FourGoodFactory::class,
+            'ixion_es255'    => Mobile\DexpFactory::class,
+            'h135'           => Mobile\DexpFactory::class,
+            'atl-21'         => Mobile\ArtizleeFactory::class,
+            'w032i-c3'       => Mobile\IntelFactory::class,
+            'tr10rs1'        => Mobile\IntelFactory::class,
+            'tr10cd1'        => Mobile\IntelFactory::class,
+            'cs24'           => Mobile\CyrusFactory::class,
+            'cs25'           => Mobile\CyrusFactory::class,
+            ' t02 '          => Mobile\ChanghongFactory::class,
+            'crown'          => Mobile\BlackviewFactory::class,
+            //'bv5000'          => Mobile\BlackviewFactory::class,
+            //'bv6000'          => Mobile\BlackviewFactory::class,
+            //'bv7000'          => Mobile\BlackviewFactory::class,
             ' r6 '            => Mobile\BlackviewFactory::class,
             ' a8 '            => Mobile\BlackviewFactory::class,
             'alife p1'        => Mobile\BlackviewFactory::class,
             'omega_pro'       => Mobile\BlackviewFactory::class,
-            'dm550'           => Mobile\BlackviewFactory::class,
             'k107'            => Mobile\YuntabFactory::class,
             'london'          => Mobile\UmiFactory::class,
             'hammer_s'        => Mobile\UmiFactory::class,
@@ -1688,13 +1718,13 @@ class MobileFactory implements Factory\FactoryInterface
             'u7 plus'         => Mobile\OukitelFactory::class,
             'u16 max'         => Mobile\OukitelFactory::class,
             'k6000 pro'       => Mobile\OukitelFactory::class,
+            'k6000 plus'      => Mobile\OukitelFactory::class,
             'k4000'           => Mobile\OukitelFactory::class,
             'k10000'          => Mobile\OukitelFactory::class,
             'universetap'     => Mobile\OukitelFactory::class,
             'vi8 plus'        => Mobile\ChuwiFactory::class,
             'hibook'          => Mobile\ChuwiFactory::class,
             'jy-'             => Mobile\JiayuFactory::class,
-            'gsmart'          => Mobile\GigabyteFactory::class,
             ' m10 '           => Mobile\BqFactory::class,
             'edison 3'        => Mobile\BqFactory::class,
             ' m20 '           => Mobile\TimmyFactory::class,
@@ -1702,7 +1732,6 @@ class MobileFactory implements Factory\FactoryInterface
             'q880_xk'         => Mobile\TianjiFactory::class,
             'c55'             => Mobile\CtroniqFactory::class,
             'l900'            => Mobile\LandvoFactory::class,
-            'xm100'           => Mobile\LandvoFactory::class,
             ' k5 '            => Mobile\KomuFactory::class,
             ' x6 '            => Mobile\VotoFactory::class,
             ' m71 '           => Mobile\EplutusFactory::class,
@@ -1714,7 +1743,6 @@ class MobileFactory implements Factory\FactoryInterface
             ' h150 '          => Mobile\SymphonyFactory::class,
             ' arc '           => Mobile\KoboFactory::class,
             'm92d-3g'         => Mobile\SumvierFactory::class,
-            'm502'            => Mobile\NavonFactory::class,
             ' c4 '            => Mobile\TreviFactory::class,
             'phablet 5,3 q'   => Mobile\TreviFactory::class,
             ' f5 '            => Mobile\TecnoFactory::class,
@@ -1747,7 +1775,6 @@ class MobileFactory implements Factory\FactoryInterface
             'shift5.2'        => Mobile\ShiftFactory::class,
             'k960'            => Mobile\JlinkszFactory::class,
             'q8002'           => Mobile\CryptoFactory::class,
-            'tm785m3'         => Mobile\NuVisionFactory::class,
             'ektra'           => Mobile\KodakFactory::class,
             'kt107'           => Mobile\BdfFactory::class,
             'm52_red_note'    => Mobile\MlaisFactory::class,
@@ -1760,7 +1787,6 @@ class MobileFactory implements Factory\FactoryInterface
             'vsd220'          => Mobile\ViewSonicFactory::class,
             'primo-zx'        => Mobile\WaltonFactory::class,
             'x538'            => Mobile\SunsbellFactory::class,
-            'm370i'           => Mobile\InfocusFactory::class,
             'i1-3gd'          => Mobile\CubeFactory::class,
             'sf1'             => Mobile\ObiFactory::class,
             'harrier tab'     => Mobile\EeFactory::class,
@@ -1789,7 +1815,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\VsunFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['kin.two', 'zunehd'], true)) {
+        if ($s->containsAny(['kin.two', 'zunehd'], false)) {
             return (new Mobile\MicrosoftFactory($this->loader))->detect($useragent, $s);
         }
 

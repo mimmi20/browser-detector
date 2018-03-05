@@ -23,8 +23,8 @@ class MicrosoftFactory implements Factory\FactoryInterface
     private $devices = [
         'windows nt 6.2' => 'microsoft windows rt tablet',
         'windows nt 6.3' => 'microsoft windows rt tablet',
-        'kin.two' => 'microsoft kin two',
-        'zunehd' => 'microsoft zune hd',
+        'kin.two'        => 'microsoft kin two',
+        'zunehd'         => 'microsoft zune hd',
     ];
 
     /**

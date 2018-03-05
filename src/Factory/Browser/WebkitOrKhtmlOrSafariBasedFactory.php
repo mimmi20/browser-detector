@@ -88,7 +88,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'alohabrowser'            => 'aloha-browser',
             'bingweb'                 => 'bingweb',
             'klar/'                   => 'firefox klar',
-            'focus/'                   => 'firefox klar',
+            'focus/'                  => 'firefox klar',
             'com.apple.mobilenotes'   => 'apple mobilenotes',
         ];
 

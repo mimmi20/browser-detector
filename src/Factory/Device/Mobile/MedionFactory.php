@@ -31,6 +31,7 @@ class MedionFactory implements Factory\FactoryInterface
         'p850x'           => 'medion p850x',
         'x6001'           => 'medion x6001',
         'e691x'           => 'medion e691x',
+        'e5020'           => 'medion e5020',
         'e4004'           => 'medion e4004',
         'medion e5001'    => 'medion life e5001',
         'medion e4502'    => 'medion life e4502',

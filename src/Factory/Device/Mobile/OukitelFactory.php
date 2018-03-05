@@ -26,6 +26,7 @@ class OukitelFactory implements Factory\FactoryInterface
         'u10'         => 'oukitel u10',
         'u7 plus'     => 'oukitel u7 plus',
         'k10000'      => 'oukitel k10000',
+        'k6000 plus'  => 'oukitel k6000 plus',
         'k6000 pro'   => 'oukitel k6000 pro',
         'k4000'       => 'oukitel k4000',
     ];

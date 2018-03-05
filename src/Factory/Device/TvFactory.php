@@ -47,6 +47,8 @@ class TvFactory implements Factory\FactoryInterface
         'arcelik;bk'                  => 'arcelik bk',
         'arcelik;j5'                  => 'arcelik j5',
         'mstar;t42'                   => 'mstar t42',
+        'aldinord; mb120'             => 'aldinord mb120',
+        'aldinord;'                   => 'general aldinord tv',
     ];
 
     /**

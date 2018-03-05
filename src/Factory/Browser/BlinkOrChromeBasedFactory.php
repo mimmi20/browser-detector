@@ -49,6 +49,8 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             'baidubrowser' => 'baidu browser',
             'bdbrowserhd'  => 'baidu browser hd',
             'bdbrowser'    => 'baidu browser',
+            'miuibrowser'  => 'miui browser',
+            'omi/'         => 'opera devices',
             'opera mobi'   => 'opera mobile',
         ];
 
@@ -112,12 +114,11 @@ class BlinkOrChromeBasedFactory implements FactoryInterface
             '2345explorer'   => '2345 browser',
             '2345chrome'     => '2345 browser',
             'sohunews'       => 'sohunews app',
-            'miuibrowser'    => 'miui browser',
             'alohabrowser'   => 'aloha-browser',
             'vivobrowser'    => 'vivo-browser',
             'bingweb'        => 'bingweb',
             'klar/'          => 'firefox klar',
-            'focus/'                   => 'firefox klar',
+            'focus/'         => 'firefox klar',
             'eui browser'    => 'eui browser',
             'slimboat'       => 'slimboat',
             'yandexsearch'   => 'yandexsearch',
