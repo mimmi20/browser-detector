@@ -8564,6 +8564,20 @@
     },
     "engine": null
   },
+  "opera devices": {
+    "name": "Opera Devices",
+    "manufacturer": "Opera",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OMI"
+      ]
+    },
+    "engine": null
+  },
   "optimizer bot": {
     "name": "Optimizer Bot",
     "manufacturer": "Unknown",
@@ -15259,7 +15273,7 @@
     "engine": "gecko"
   },
   "firefox klar": {
-    "name": "Firefox Klar",
+    "name": "Firefox Focus",
     "manufacturer": "MozillaFoundation",
     "pdfSupport": true,
     "rssSupport": false,
@@ -15267,6 +15281,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "Focus",
         "Klar"
       ]
     },

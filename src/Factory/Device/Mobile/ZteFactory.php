@@ -55,6 +55,8 @@ class ZteFactory implements Factory\FactoryInterface
         'blade c341'        => 'zte blade c341',
         'blade a910'        => 'zte blade a910',
         'blade a612'        => 'zte blade a612',
+        'blade a520'        => 'zte blade a520',
+        'blade a512'        => 'zte blade a512',
         'blade a510'        => 'zte blade a510',
         'blade a460'        => 'zte blade a460',
         'blade a452'        => 'zte blade a452',

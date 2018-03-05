@@ -24,6 +24,7 @@ class VerneeFactory implements Factory\FactoryInterface
         'thor'        => 'vernee thor',
         'apollo lite' => 'vernee apollo lite',
         'apollo'      => 'vernee apollo',
+        'vernee_m5'   => 'vernee m5',
     ];
 
     /**

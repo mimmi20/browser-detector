@@ -24,9 +24,11 @@ class ArchosFactory implements Factory\FactoryInterface
         '121 neon'              => 'archos 121 neon',
         '101d neon'             => 'archos 101d neon',
         '101c copper'           => 'archos 101c copper',
+        '101b xenon v2'         => 'archos 101b xenon v2',
         '101b copper'           => 'archos 101b copper',
         '101 xenon v2'          => 'archos 101 xenon v2',
         '101 xs 2'              => 'archos 101 xs 2',
+        '101 platinum'          => 'archos 101 platinum',
         '101 oxygen'            => 'archos 101 oxygen',
         '101 neon'              => 'archos 101 neon',
         '101 magnus'            => 'archos 101 magnus',
@@ -38,6 +40,7 @@ class ArchosFactory implements Factory\FactoryInterface
         '97 titaniumhd'         => 'archos 97 titanium hd',
         '97 neon'               => 'archos 97 neon',
         '97 carbon'             => 'archos 97 carbon',
+        '90b copper'            => 'archos 90b copper',
         '80xsk'                 => 'archos 80xsk',
         '80g9'                  => 'archos 80 g9',
         '80d xenon'             => 'archos 80d xenon',
@@ -127,6 +130,16 @@ class ArchosFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(\d+[b-f]? (carbon|cesium|cobalt|copper|diamond|helium|magnus|neon|oxygen|platinum|titanium(?:hd)?|tiv2|xenon|xs2?)(?: (2|v2|2 plus|plus|surround))?)/i', $useragent, $matches)) {
+            $key = 'archos ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

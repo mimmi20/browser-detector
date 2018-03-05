@@ -21,6 +21,7 @@ class OneplusFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'a5010' => 'oneplus a5010',
         'a5000' => 'oneplus a5000',
         'e1001' => 'oneplus e1001',
         'a3003' => 'oneplus a3003',

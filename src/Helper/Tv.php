@@ -96,6 +96,7 @@ class Tv
             'philipstv',
             'crkey',
             'metz',
+            'omi/',
         ];
 
         if (!$this->useragent->containsAny($tvDevices, false)) {

@@ -23,6 +23,7 @@ class BqFactory implements Factory\FactoryInterface
     private $devices = [
         'edison 3 mini'   => 'bq edison 3 mini',
         'edison 3'        => 'bq edison 3',
+        'aquaris x pro'   => 'bq aquaris x pro',
         'aquaris x5'      => 'bq aquaris x5',
         'aquaris e5 hd'   => 'bq aquaris e5 hd',
         'aquaris e5'      => 'bq aquaris e5',

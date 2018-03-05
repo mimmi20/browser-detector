@@ -235,7 +235,7 @@
   },
   "lenovo tb3-850m": {
     "codename": "TB3-850M",
-    "marketingName": "TB3-850M",
+    "marketingName": "Tab3 8",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
     "platform": "android",
@@ -438,6 +438,45 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1024,
     "resolutionHeight": 600,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "lenovo tb3-850f": {
+    "codename": "TB3-850F",
+    "marketingName": "Tab3 8",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "platform": "android",
+    "type": "fone-pad",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "lenovo tb3-730x": {
+    "codename": "TB3-730X",
+    "marketingName": "Tab3 7",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "platform": "android",
+    "type": "fone-pad",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
+    "dualOrientation": true,
+    "colors": null
+  },
+  "lenovo yt-x703f": {
+    "codename": "YT-X703F",
+    "marketingName": "Yoga Tab 3 Plus",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "platform": "android",
+    "type": "fone-pad",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 2560,
+    "resolutionHeight": 1600,
     "dualOrientation": true,
     "colors": null
   }
