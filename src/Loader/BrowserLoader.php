@@ -165,7 +165,7 @@ class BrowserLoader implements ExtendedLoaderInterface
 
         $browserVersionClass = $browserData->version->class;
         $manufacturer        = CompanyLoader::getInstance()->load($browserData->manufacturer);
-        $type                = TypeLoader::getInstance()->load($browserData->type);
+        $type                = (new TypeLoader())->load($browserData->type);
 
         if (!is_string($browserVersionClass)) {
             $version = new Version('0');
