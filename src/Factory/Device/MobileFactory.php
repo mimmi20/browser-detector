@@ -1503,6 +1503,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
+        if (preg_match('/i\-style|iq ?\d/i', $useragent)) {
+            return (new Mobile\ImobileFactory($this->loader))->detect($useragent, $s);
+        }
+
         $factoriesBeforeXiaomi = [
             '7007hd'    => Mobile\PerfeoFactory::class,
             'pt-gf200'  => Mobile\PantechFactory::class,
