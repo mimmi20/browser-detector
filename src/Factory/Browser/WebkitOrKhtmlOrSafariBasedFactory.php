@@ -306,6 +306,7 @@ class WebkitOrKhtmlOrSafariBasedFactory implements FactoryInterface
             'mythbrowser'                     => 'mythbrowser',
             'puffin'                          => 'puffin',
             'wayback save page'               => 'wayback archive bot',
+            'sailfishbrowser'                               => 'sailfish browser',
             'safari'                          => 'safari',
             'snapchat'                        => 'snapchat app',
             'grindr'                          => 'grindr',
