@@ -546,6 +546,7 @@ class MobileFactory implements Factory\FactoryInterface
             'iocean'       => Mobile\IoceanFactory::class,
             'intki'        => Mobile\IntkiFactory::class,
             'i-joy'        => Mobile\IjoyFactory::class,
+            'inq'          => Mobile\InqFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
