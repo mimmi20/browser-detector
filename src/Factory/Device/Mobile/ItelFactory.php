@@ -35,8 +35,12 @@ class ItelFactory implements Factory\FactoryInterface
         'it1403+'  => 'itel it1403+',
         'it1403'   => 'itel it1403',
         'it1400'   => 'itel it1400',
+        'inote_mini'   => 'itel it1400',
+        'inote mini'   => 'itel it1400',
         'it1351e'  => 'itel it1351e',
         'it1351'   => 'itel it1351',
+        'iNote beyond'   => 'itel inote beyond',
+        'iNote_beyond'   => 'itel inote beyond',
     ];
 
     /**

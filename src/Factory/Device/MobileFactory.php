@@ -1669,6 +1669,7 @@ class MobileFactory implements Factory\FactoryInterface
             'apollo'         => Mobile\VerneeFactory::class,
             'thor'           => Mobile\VerneeFactory::class,
             '1505-a02'       => Mobile\ItelFactory::class,
+            'inote'          => Mobile\ItelFactory::class,
             'mitab think'    => Mobile\WolderFactory::class,
             'pixel'          => Mobile\GoogleFactory::class,
             'gce x86 phone'  => Mobile\GoogleFactory::class,
