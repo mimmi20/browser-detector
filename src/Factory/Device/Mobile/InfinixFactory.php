@@ -26,8 +26,16 @@ class InfinixFactory implements Factory\FactoryInterface
         'note 2'   => 'infinix x600',
         'x552'     => 'infinix x552',
         'x551'     => 'infinix x551',
+        'x530'     => 'infinix x530',
         'x510'     => 'infinix x510',
         'x507'     => 'infinix x507',
+        'x503'     => 'infinix x503',
+        'x501'     => 'infinix x501',
+        'x450'     => 'infinix x450',
+        'x401'     => 'infinix x401',
+        'x352'     => 'infinix x352',
+        'x351'     => 'infinix x351',
+        'buzz'     => 'infinix buzz',
     ];
 
     /**
