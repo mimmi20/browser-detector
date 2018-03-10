@@ -26,9 +26,9 @@ class Utils
         Constants::HEADER_DEVICE_UA           => 'device',
         Constants::HEADER_UCBROWSER_DEVICE_UA => 'device',
         Constants::HEADER_SKYFIRE_PHONE       => 'device',
+        Constants::HEADER_OPERAMINI_PHONE_UA  => 'device',
         Constants::HEADER_SKYFIRE_VERSION     => 'browser',
         Constants::HEADER_BLUECOAT_VIA        => 'browser',
-        Constants::HEADER_OPERAMINI_PHONE_UA  => 'browser',
         Constants::HEADER_BOLT_PHONE_UA       => 'browser',
         Constants::HEADER_UCBROWSER_UA        => 'browser',
         Constants::HEADER_MOBILE_UA           => 'browser',
@@ -39,14 +39,14 @@ class Utils
     /**
      * @var array
      */
-    private $request = [];
+    private $headers = [];
 
     /**
      * @param array $request
      */
     public function __construct(array $request = [])
     {
-        $this->request = $request;
+        $this->headers = $request;
     }
 
     /**
@@ -61,8 +61,8 @@ class Utils
                 continue;
             }
 
-            if (isset($this->request[$header])) {
-                return $this->request[$header];
+            if (isset($this->headers[$header])) {
+                return $this->headers[$header];
             }
         }
 
@@ -81,8 +81,8 @@ class Utils
                 continue;
             }
 
-            if (isset($this->request[$header])) {
-                return $this->request[$header];
+            if (isset($this->headers[$header])) {
+                return $this->headers[$header];
             }
         }
 
