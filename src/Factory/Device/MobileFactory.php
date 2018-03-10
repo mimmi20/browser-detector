@@ -543,6 +543,7 @@ class MobileFactory implements Factory\FactoryInterface
             'wileyfox'     => Mobile\WileyfoxFactory::class,
             'morefine'     => Mobile\MorefineFactory::class,
             'vernee'       => Mobile\VerneeFactory::class,
+            'iocean'       => Mobile\IoceanFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
@@ -974,10 +975,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
         }
 
-//        if (preg_match('/(ags|ale|ath|bah|bl[an]|bnd|cam|ch[cm]|che[12]?|duk|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|vky|vtr|was|y220)\-/i', $useragent)) {
-//            return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
-//        }
-
         if (preg_match('/(YU|AO)\d{4}/', $useragent)) {
             return (new Mobile\YuFactory($this->loader))->detect($useragent, $s);
         }
@@ -1273,6 +1270,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ElephoneFactory($this->loader))->detect($useragent, $s);
         }
 
+        if ($s->contains('One', true)) {
+            return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
+        }
+
         $factoriesBeforeRossMoor = [
             'primo76'         => Mobile\MsiFactory::class,
             'x-pad'           => Mobile\TexetFactory::class,
@@ -1321,7 +1322,6 @@ class MobileFactory implements Factory\FactoryInterface
             'mx enjoy tv box' => Mobile\GeniatechFactory::class,
             'm5301'           => Mobile\IruFactory::class,
             'gv7777'          => Mobile\PrestigioFactory::class,
-            //'rm-1042'         => Mobile\NokiaFactory::class,
             ' n1 '       => Mobile\NokiaFactory::class,
             '5130c-2'    => Mobile\NokiaFactory::class,
             'lumia'      => Mobile\NokiaFactory::class,
@@ -1413,10 +1413,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\BlaupunktFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->contains('One', true)) {
-            return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
-        }
-
         if (preg_match('/ARM; WIN (JR|HD)/', $useragent)) {
             return (new Mobile\BluFactory($this->loader))->detect($useragent, $s);
         }
@@ -1506,22 +1502,11 @@ class MobileFactory implements Factory\FactoryInterface
         }
 
         $factoriesBeforeXiaomi = [
-            //'rio r1'          => Mobile\GigabyteFactory::class,
-            //'gsmart'          => Mobile\GigabyteFactory::class,
             '7007hd'    => Mobile\PerfeoFactory::class,
             'pt-gf200'  => Mobile\PantechFactory::class,
             'k-8s'      => Mobile\KeenerFactory::class,
             'h1+'       => Mobile\HummerFactory::class,
             'impress_l' => Mobile\VertexFactory::class,
-            //'m040'            => Mobile\MeizuFactory::class,
-            //'mz-'             => Mobile\MeizuFactory::class,
-            //' m9 '            => Mobile\MeizuFactory::class,
-            //'m2 note'         => Mobile\MeizuFactory::class,
-            //'m571c'           => Mobile\MeizuFactory::class,
-            //' m2 '            => Mobile\MeizuFactory::class,
-            //'m1 note'         => Mobile\MeizuFactory::class,
-            //'m032'            => Mobile\MeizuFactory::class,
-            //'pro 5'           => Mobile\MeizuFactory::class,
             'neo-x5'      => Mobile\MinixFactory::class,
             'numy_note_9' => Mobile\AinolFactory::class,
             'novo7fire'   => Mobile\AinolFactory::class,
@@ -1529,11 +1514,6 @@ class MobileFactory implements Factory\FactoryInterface
             'vega'        => Mobile\AdventFactory::class,
             'dream'       => Mobile\HtcFactory::class,
             ' x9 '        => Mobile\HtcFactory::class,
-            //'x315e'           => Mobile\HtcFactory::class,
-            //'z715e'           => Mobile\HtcFactory::class,
-            //'s710e'           => Mobile\HtcFactory::class,
-            //'x525a'           => Mobile\HtcFactory::class,
-            //'z710e'           => Mobile\HtcFactory::class,
             'amaze'        => Mobile\HtcFactory::class,
             'butterfly2'   => Mobile\HtcFactory::class,
             ' xst2 '       => Mobile\FourgSystemsFactory::class,
@@ -1555,7 +1535,6 @@ class MobileFactory implements Factory\FactoryInterface
             'touareg8_3g'  => Mobile\AccentFactory::class,
             'chagall'      => Mobile\PegatronFactory::class,
             'turbo x6'     => Mobile\TurboPadFactory::class,
-            //'w717'            => Mobile\HaierFactory::class,
             ' l52 '          => Mobile\HaierFactory::class,
             ' g30 '          => Mobile\HaierFactory::class,
             'pad g781'       => Mobile\HaierFactory::class,
@@ -1563,9 +1542,7 @@ class MobileFactory implements Factory\FactoryInterface
             'sp-6020 quasar' => Mobile\WooFactory::class,
             'q10s'           => Mobile\WopadFactory::class,
             'ctab785r16-3g'  => Mobile\CondorFactory::class,
-            //'pgn-'            => Mobile\CondorFactory::class,
             'pkt-301' => Mobile\CondorFactory::class,
-            //'pgn608'          => Mobile\CondorFactory::class,
             'uq785-m1bgv'    => Mobile\VericoFactory::class,
             'km-uqm11a'      => Mobile\VericoFactory::class,
             't9666-1'        => Mobile\TelsdaFactory::class,
@@ -1703,9 +1680,6 @@ class MobileFactory implements Factory\FactoryInterface
             'cs25'           => Mobile\CyrusFactory::class,
             ' t02 '          => Mobile\ChanghongFactory::class,
             'crown'          => Mobile\BlackviewFactory::class,
-            //'bv5000'          => Mobile\BlackviewFactory::class,
-            //'bv6000'          => Mobile\BlackviewFactory::class,
-            //'bv7000'          => Mobile\BlackviewFactory::class,
             ' r6 '            => Mobile\BlackviewFactory::class,
             ' a8 '            => Mobile\BlackviewFactory::class,
             'alife p1'        => Mobile\BlackviewFactory::class,
