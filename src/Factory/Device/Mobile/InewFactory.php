@@ -21,6 +21,11 @@ class InewFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'one' => 'inew one',
+        'v7a' => 'inew v7a',
+        'v3-e' => 'inew v3-e',
+        'v3e' => 'inew v3-e',
+        'v3c' => 'inew v3c',
         ' v3 ' => 'inew v3',
     ];
 

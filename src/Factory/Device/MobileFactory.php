@@ -547,6 +547,7 @@ class MobileFactory implements Factory\FactoryInterface
             'intki'        => Mobile\IntkiFactory::class,
             'i-joy'        => Mobile\IjoyFactory::class,
             'inq'          => Mobile\InqFactory::class,
+            'inew'         => Mobile\InewFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
@@ -1277,6 +1278,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
+        if (preg_match('/ v\d\-?[ace]?[ )]/i', $useragent)) {
+            return (new Mobile\InewFactory($this->loader))->detect($useragent, $s);
+        }
+
         $factoriesBeforeRossMoor = [
             'primo76'         => Mobile\MsiFactory::class,
             'x-pad'           => Mobile\TexetFactory::class,
@@ -1320,7 +1325,6 @@ class MobileFactory implements Factory\FactoryInterface
             'm9pro'           => Mobile\PipoFactory::class,
             ' t9 '            => Mobile\PipoFactory::class,
             'md948g'          => Mobile\MwayFactory::class,
-            ' v3 '            => Mobile\InewFactory::class,
             'smartphone650'   => Mobile\MasterFactory::class,
             'mx enjoy tv box' => Mobile\GeniatechFactory::class,
             'm5301'           => Mobile\IruFactory::class,
