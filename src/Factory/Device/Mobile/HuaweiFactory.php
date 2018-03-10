@@ -230,6 +230,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         ],
         'g610-' => [
             'g610-u20' => 'huawei g610-u20',
+            'g610-u00' => 'huawei g610-u00',
             'g610-c00' => 'huawei g610-c00',
         ],
         'g621-' => [
