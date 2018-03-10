@@ -1284,6 +1284,10 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\InewFactory($this->loader))->detect($useragent, $s);
         }
 
+        if (preg_match('/KM\-/', $useragent)) {
+            return (new Mobile\KtTechFactory($this->loader))->detect($useragent, $s);
+        }
+
         $factoriesBeforeRossMoor = [
             'primo76'         => Mobile\MsiFactory::class,
             'x-pad'           => Mobile\TexetFactory::class,
