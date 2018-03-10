@@ -549,6 +549,7 @@ class MobileFactory implements Factory\FactoryInterface
             'inq'          => Mobile\InqFactory::class,
             'inew'         => Mobile\InewFactory::class,
             'iberry'       => Mobile\IberryFactory::class,
+            'koobee'       => Mobile\KoobeeFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
