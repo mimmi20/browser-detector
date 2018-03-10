@@ -544,6 +544,7 @@ class MobileFactory implements Factory\FactoryInterface
             'morefine'     => Mobile\MorefineFactory::class,
             'vernee'       => Mobile\VerneeFactory::class,
             'iocean'       => Mobile\IoceanFactory::class,
+            'intki'        => Mobile\IntkiFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
