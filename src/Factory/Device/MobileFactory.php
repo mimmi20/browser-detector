@@ -703,7 +703,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SanyoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/aqua[_ ]|cloud_m5_ii/i', $useragent)) {
+        if (preg_match('/(aqua|cloud)[_ ]/i', $useragent)) {
             return (new Mobile\IntexFactory($this->loader))->detect($useragent, $s);
         }
 
