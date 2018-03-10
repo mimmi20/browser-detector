@@ -21,10 +21,10 @@ class KingsunFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        's6'   => 'kingsun s6',
-        's5q'  => 'kingsun s5q',
-        's8'   => 'kingsun s8',
-        'f1'   => 'kingsun f1',
+        's6'  => 'kingsun s6',
+        's5q' => 'kingsun s5q',
+        's8'  => 'kingsun s8',
+        'f1'  => 'kingsun f1',
     ];
 
     /**

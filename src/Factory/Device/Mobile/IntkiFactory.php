@@ -21,7 +21,7 @@ class IntkiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'e86'   => 'intki e86',
+        'e86' => 'intki e86',
     ];
 
     /**

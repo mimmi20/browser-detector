@@ -22,9 +22,9 @@ class KomuFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'energy' => 'komu energy',
-        ' k5 ' => 'komu k5',
-        'color' => 'komu color',
-        'mini' => 'komu mini',
+        ' k5 '   => 'komu k5',
+        'color'  => 'komu color',
+        'mini'   => 'komu mini',
     ];
 
     /**

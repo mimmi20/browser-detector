@@ -21,7 +21,7 @@ class IoceanFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'x7'   => 'iocean x7',
+        'x7' => 'iocean x7',
     ];
 
     /**

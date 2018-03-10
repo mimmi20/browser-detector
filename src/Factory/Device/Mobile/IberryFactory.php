@@ -21,9 +21,9 @@ class IberryFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'auxus nuclea n1'   => 'iberry auxus nuclea n1',
-        'auxus ax02'   => 'iberry auxus ax02',
-        'auxus ax01'   => 'iberry auxus ax01',
+        'auxus nuclea n1' => 'iberry auxus nuclea n1',
+        'auxus ax02'      => 'iberry auxus ax02',
+        'auxus ax01'      => 'iberry auxus ax01',
     ];
 
     /**

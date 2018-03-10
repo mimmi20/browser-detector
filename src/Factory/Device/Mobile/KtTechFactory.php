@@ -21,7 +21,7 @@ class KtTechFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'km-e100'   => 'kt-tech km-e100',
+        'km-e100' => 'kt-tech km-e100',
     ];
 
     /**

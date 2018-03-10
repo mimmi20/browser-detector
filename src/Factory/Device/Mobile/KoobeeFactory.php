@@ -23,7 +23,7 @@ class KoobeeFactory implements Factory\FactoryInterface
     private $devices = [
         'm3'   => 'koobee m3',
         'm2'   => 'koobee m2',
-        't550'   => 'koobee t550',
+        't550' => 'koobee t550',
     ];
 
     /**

@@ -21,11 +21,11 @@ class IjoyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'elektra l'   => 'ijoy elektra l',
+        'elektra l'    => 'ijoy elektra l',
         'i-call 504'   => 'ijoy i-call 504',
-        'i-call 300v2'   => 'ijoy i-call 300v2',
+        'i-call 300v2' => 'ijoy i-call 300v2',
         'i-call 300'   => 'ijoy i-call 300',
-        'i-call'   => 'ijoy i-call',
+        'i-call'       => 'ijoy i-call',
     ];
 
     /**

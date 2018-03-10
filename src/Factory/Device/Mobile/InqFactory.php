@@ -21,7 +21,7 @@ class InqFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'cloud touch'   => 'inq cloud touch',
+        'cloud touch' => 'inq cloud touch',
     ];
 
     /**
