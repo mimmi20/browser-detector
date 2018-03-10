@@ -548,6 +548,7 @@ class MobileFactory implements Factory\FactoryInterface
             'i-joy'        => Mobile\IjoyFactory::class,
             'inq'          => Mobile\InqFactory::class,
             'inew'         => Mobile\InewFactory::class,
+            'iberry'       => Mobile\IberryFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
@@ -1329,6 +1330,7 @@ class MobileFactory implements Factory\FactoryInterface
             'mx enjoy tv box' => Mobile\GeniatechFactory::class,
             'm5301'           => Mobile\IruFactory::class,
             'gv7777'          => Mobile\PrestigioFactory::class,
+            'auxus'           => Mobile\IberryFactory::class,
             ' n1 '       => Mobile\NokiaFactory::class,
             '5130c-2'    => Mobile\NokiaFactory::class,
             'lumia'      => Mobile\NokiaFactory::class,

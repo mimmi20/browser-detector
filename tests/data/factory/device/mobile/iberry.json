@@ -1,0 +1,54 @@
+[
+  {
+    "ua": "this is a fake ua to trigger the fallback",
+    "codeName": "general iBerry Device",
+    "marketingName": "general iBerry Device",
+    "manufacturer": "iBerry",
+    "brand": "iBerry",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": null,
+    "height": null,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.0.3; AUXUS AX01 Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36",
+    "codeName": "Auxus AX01",
+    "marketingName": "Auxus AX01",
+    "manufacturer": "iBerry",
+    "brand": "iBerry",
+    "type": "Tablet",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 800,
+    "height": 480,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; iberry AUXUS AX02 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
+    "codeName": "Auxus AX02",
+    "marketingName": "Auxus AX02",
+    "manufacturer": "iBerry",
+    "brand": "iBerry",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 800,
+    "height": 480,
+    "colors": null
+  },
+  {
+    "ua": "Mozilla/5.0 (Linux; Android 4.2.1; AUXUS Nuclea N1 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36 OPR/16.0.1212.64462",
+    "codeName": "Auxus Nuclea N1",
+    "marketingName": "Auxus Nuclea N1",
+    "manufacturer": "iBerry",
+    "brand": "iBerry",
+    "type": "FonePad",
+    "dualOrientation": true,
+    "pointingMethod": "touchscreen",
+    "width": 1080,
+    "height": 1920,
+    "colors": null
+  }
+]
