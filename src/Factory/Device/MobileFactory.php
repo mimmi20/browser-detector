@@ -545,6 +545,7 @@ class MobileFactory implements Factory\FactoryInterface
             'vernee'       => Mobile\VerneeFactory::class,
             'iocean'       => Mobile\IoceanFactory::class,
             'intki'        => Mobile\IntkiFactory::class,
+            'i-joy'        => Mobile\IjoyFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
@@ -1750,6 +1751,8 @@ class MobileFactory implements Factory\FactoryInterface
             'shift5.2'        => Mobile\ShiftFactory::class,
             'k960'            => Mobile\JlinkszFactory::class,
             'q8002'           => Mobile\CryptoFactory::class,
+            'i-call'          => Mobile\IjoyFactory::class,
+            'elektra l'       => Mobile\IjoyFactory::class,
             'ektra'           => Mobile\KodakFactory::class,
             'kt107'           => Mobile\BdfFactory::class,
             'm52_red_note'    => Mobile\MlaisFactory::class,
