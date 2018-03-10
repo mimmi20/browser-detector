@@ -25,6 +25,7 @@ class IconBitFactory implements Factory\FactoryInterface
         'nt-3710s' => 'iconbit nt-3710s',
         'nt-3702m' => 'iconbit nt-3702m',
         'nt-3601p' => 'iconbit nettab pocket 3g',
+        'nt-3506m' => 'iconbit nt-3506m',
         'nt-1009t' => 'iconbit nt-1009t',
         'nt-1001t' => 'iconbit nt-1001t',
     ];
