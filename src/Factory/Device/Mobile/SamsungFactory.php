@@ -1162,7 +1162,7 @@ class SamsungFactory implements Factory\FactoryInterface
     {
         $matches = [];
 
-        if (preg_match('/((gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-[0-9a-z]+)/i', $useragent, $matches)) {
+        if (preg_match('/((?:gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-[0-9a-z]+)/i', $useragent, $matches)) {
             $key = 'samsung ' . mb_strtolower($matches[1]);
 
             if ($this->loader->has($key)) {

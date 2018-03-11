@@ -21,6 +21,11 @@ class InewFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'one'  => 'inew one',
+        'v7a'  => 'inew v7a',
+        'v3-e' => 'inew v3-e',
+        'v3e'  => 'inew v3-e',
+        'v3c'  => 'inew v3c',
         ' v3 ' => 'inew v3',
     ];
 
@@ -47,6 +52,16 @@ class InewFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/( v\d\-?[ace]?[ )])/i', $useragent, $matches)) {
+            $key = 'intex ' . mb_strtolower(trim(str_replace(')', '', $matches[1])));
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

@@ -199,14 +199,13 @@ class DeviceLoader implements ExtendedLoaderInterface
         }
 
         $companyLoader = CompanyLoader::getInstance();
-        $typeLoader    = TypeLoader::getInstance();
 
         $device = new Device(
             $deviceData->codename,
             $deviceData->marketingName,
             $companyLoader->load($deviceData->manufacturer),
             $companyLoader->load($deviceData->brand),
-            $typeLoader->load($deviceData->type),
+            (new TypeLoader())->load($deviceData->type),
             $deviceData->pointingMethod,
             $deviceData->resolutionWidth,
             $deviceData->resolutionHeight,

@@ -42,7 +42,13 @@ $detector->warmupCache();
 ```php
 $detector = new \BrowserDetector\Detector($cache, $logger);
 
+// generic call (deprecated)
 $result = $detector->getBrowser($request);
+
+// call depending on the data
+$result = $detector->parseString($request);
+$result = $detector->parseArray($request);
+$result = $detector->parseMessage($request); // for a PSR7 MessageInterface
 ```
 
 The request parameter may be a string, an array or a PSR-7 compatible message.
@@ -54,7 +60,11 @@ The request parameter may be a string, an array or a PSR-7 compatible message.
 ```php
 $detector = new \BrowserDetector\Detector($cache, $logger);
 
+// generic call (deprecated)
 $result = $detector->getBrowser($_SERVER);
+
+// call depending on the data
+$result = $detector->parseArray($_SERVER);
 ```
 
 ### Using a sample useragent
@@ -62,12 +72,16 @@ $result = $detector->getBrowser($_SERVER);
 ```php
 $detector = new \BrowserDetector\Detector($cache, $logger);
 
+// generic call (deprecated)
 $result = $detector->getBrowser($the_user_agent);
+
+// call depending on the data
+$result = $detector->parseString($the_user_agent);
 ```
 
 ## The result
 
-The `getBrowser` function returns a [ua-result](https://github.com/mimmi20/ua-result) object.
+The `getBrowser` function and the `parse*` functions return a [ua-result](https://github.com/mimmi20/ua-result) object.
 
 ## Issues and feature requests
 

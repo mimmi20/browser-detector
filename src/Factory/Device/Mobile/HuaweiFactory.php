@@ -230,6 +230,7 @@ class HuaweiFactory implements Factory\FactoryInterface
         ],
         'g610-' => [
             'g610-u20' => 'huawei g610-u20',
+            'g610-u00' => 'huawei g610-u00',
             'g610-c00' => 'huawei g610-c00',
         ],
         'g621-' => [
@@ -502,7 +503,7 @@ class HuaweiFactory implements Factory\FactoryInterface
      */
     private function detectInArray(array $devices, string $useragent, Stringy $s): array
     {
-        if (preg_match('/((ags|ale|ath|bah|bl[an]|bnd|cam|ch[cm]|che[12]?|duk|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|vky|vtr|was|y220)\-[0-9a-z]+)/i', $useragent, $matches)) {
+        if (preg_match('/((?:ags|ale|ath|bah|bl[an]|bnd|cam|ch[cm]|che[12]?|duk|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|vky|vtr|was|y220)\-[0-9a-z]+)/i', $useragent, $matches)) {
             $key = 'huawei ' . mb_strtolower($matches[1]);
 
             if ($this->loader->has($key)) {

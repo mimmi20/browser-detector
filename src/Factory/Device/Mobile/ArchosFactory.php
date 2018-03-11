@@ -132,7 +132,7 @@ class ArchosFactory implements Factory\FactoryInterface
     {
         $matches = [];
 
-        if (preg_match('/(\d+[b-f]? (carbon|cesium|cobalt|copper|diamond|helium|magnus|neon|oxygen|platinum|titanium(?:hd)?|tiv2|xenon|xs2?)(?: (2|v2|2 plus|plus|surround))?)/i', $useragent, $matches)) {
+        if (preg_match('/(\d+[b-f]? (?:carbon|cesium|cobalt|copper|diamond|helium|magnus|neon|oxygen|platinum|titanium(?:hd)?|tiv2|xenon|xs2?)(?: (2|v2|2 plus|plus|surround))?)/i', $useragent, $matches)) {
             $key = 'archos ' . mb_strtolower($matches[1]);
 
             if ($this->loader->has($key)) {

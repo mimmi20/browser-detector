@@ -21,7 +21,10 @@ class KomuFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        ' k5 ' => 'komu k5',
+        'energy' => 'komu energy',
+        ' k5 '   => 'komu k5',
+        'color'  => 'komu color',
+        'mini'   => 'komu mini',
     ];
 
     /**
