@@ -89,6 +89,24 @@ class DetectorTest extends TestCase
      *
      * @return void
      */
+    public function testParseString(string $userAgent, Result $expectedResult): void
+    {
+        /* @var \UaResult\Result\Result $result */
+        $result = $this->object->parseString($userAgent);
+
+        self::assertInstanceOf(Result::class, $result);
+
+        self::assertEquals($expectedResult, $result);
+    }
+
+    /**
+     * @dataProvider providerGetBrowser
+     *
+     * @param string $userAgent
+     * @param Result $expectedResult
+     *
+     * @return void
+     */
     public function testGetBrowserFromArray(string $userAgent, Result $expectedResult): void
     {
         /* @var Result $result */
@@ -107,6 +125,26 @@ class DetectorTest extends TestCase
      *
      * @return void
      */
+    public function testParseArray(string $userAgent, Result $expectedResult): void
+    {
+        /* @var Result $result */
+        $result = $this->object->parseArray([Constants::HEADER_HTTP_USERAGENT => $userAgent]);
+
+        self::assertInstanceOf(Result::class, $result);
+
+        self::assertEquals($expectedResult, $result);
+    }
+
+    /**
+     * @dataProvider providerGetBrowser
+     *
+     * @param string $userAgent
+     * @param Result $expectedResult
+     *
+     * @throws \ReflectionException
+     *
+     * @return void
+     */
     public function testGetBrowserFromPsr7Message(string $userAgent, Result $expectedResult): void
     {
         /* @var \PHPUnit_Framework_MockObject_MockObject|\Psr\Http\Message\MessageInterface $message */
@@ -118,6 +156,33 @@ class DetectorTest extends TestCase
 
         /* @var Result $result */
         $result = $this->object->getBrowser($message);
+
+        self::assertInstanceOf(Result::class, $result);
+
+        self::assertEquals($expectedResult, $result);
+    }
+
+    /**
+     * @dataProvider providerGetBrowser
+     *
+     * @param string $userAgent
+     * @param Result $expectedResult
+     *
+     * @throws \ReflectionException
+     *
+     * @return void
+     */
+    public function testParseMessage(string $userAgent, Result $expectedResult): void
+    {
+        /* @var \PHPUnit_Framework_MockObject_MockObject|\Psr\Http\Message\MessageInterface $message */
+        $message = $this->createMock(MessageInterface::class);
+        $message
+            ->expects(self::once())
+            ->method('getHeaders')
+            ->willReturn([Constants::HEADER_HTTP_USERAGENT => [$userAgent]]);
+
+        /* @var Result $result */
+        $result = $this->object->parseMessage($message);
 
         self::assertInstanceOf(Result::class, $result);
 

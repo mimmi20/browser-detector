@@ -69,11 +69,65 @@ class Detector
      * @param array|\Psr\Http\Message\MessageInterface|string $headers
      *
      * @return \UaResult\Result\ResultInterface
+     *
+     * @deprecated
      */
     public function getBrowser($headers): ResultInterface
     {
         $request = $this->buildRequest($headers);
 
+        return $this->parse($request);
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param string $useragent
+     *
+     * @return \UaResult\Result\Result
+     */
+    public function parseString(string $useragent)
+    {
+        $request = (new GenericRequestFactory())->createRequestFromString($useragent);
+
+        return $this->parse($request);
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param array $headers
+     *
+     * @return \UaResult\Result\Result
+     */
+    public function parseArray(array $headers)
+    {
+        $request = (new GenericRequestFactory())->createRequestFromArray($headers);
+
+        return $this->parse($request);
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param MessageInterface $message
+     *
+     * @return \UaResult\Result\Result
+     */
+    public function parseMessage(MessageInterface $message)
+    {
+        $request = (new GenericRequestFactory())->createRequestFromPsr7Message($message);
+
+        return $this->parse($request);
+    }
+
+    /**
+     * @param \BrowserDetector\Helper\GenericRequest $request
+     *
+     * @return \UaResult\Result\Result
+     */
+    private function parse(GenericRequest $request)
+    {
         $deviceFactory = new DeviceFactory(DeviceLoader::getInstance($this->cache, $this->logger));
         $normalizer    = (new NormalizerFactory())->build();
         $deviceUa      = $normalizer->normalize($request->getDeviceUserAgent());
