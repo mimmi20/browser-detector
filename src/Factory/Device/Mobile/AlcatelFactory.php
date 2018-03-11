@@ -172,7 +172,7 @@ class AlcatelFactory implements Factory\FactoryInterface
     {
         $matches = [];
 
-        if (preg_match('/((ot\-)?[4-9]0[0-7]\d[adkmnoxy])/i', $useragent, $matches)) {
+        if (preg_match('/((?:ot\-)?[4-9]0[0-7]\d[adkmnoxy])/i', $useragent, $matches)) {
             $key = 'alcatel ' . mb_strtolower($matches[1]);
 
             if ($this->loader->has($key)) {

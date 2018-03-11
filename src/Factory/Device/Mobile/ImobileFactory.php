@@ -72,6 +72,16 @@ class ImobileFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/((i\-style|iq) ?(\d[0-9\.\-]*(?:a| pro| dtv)?))/i', $useragent, $matches)) {
+            $key = 'i-mobile ' . mb_strtolower(str_replace('-', '.', $matches[2] . ' ' . $matches[3]));
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

@@ -35,10 +35,10 @@ class ItelFactory implements Factory\FactoryInterface
         'it1403+'      => 'itel it1403+',
         'it1403'       => 'itel it1403',
         'it1400'       => 'itel it1400',
-        'inote_mini'   => 'itel it1400',
-        'inote mini'   => 'itel it1400',
         'it1351e'      => 'itel it1351e',
         'it1351'       => 'itel it1351',
+        'inote_mini'   => 'itel it1351',
+        'inote mini'   => 'itel it1351',
         'iNote beyond' => 'itel inote beyond',
         'iNote_beyond' => 'itel inote beyond',
     ];
@@ -66,6 +66,16 @@ class ItelFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(it\d{4}[e\+]?)/i', $useragent, $matches)) {
+            $key = 'intex ' . mb_strtolower(str_replace('_', ' ', $matches[1]));
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

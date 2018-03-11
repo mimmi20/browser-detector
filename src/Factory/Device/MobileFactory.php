@@ -707,7 +707,11 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\SanyoFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/(aqua|cloud)[_ ]/i', $useragent)) {
+        if ($s->containsAny(['FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100'], false)) {
+            return (new Mobile\ToshibaFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/(aqua|cloud)[_ \.]/i', $useragent)) {
             return (new Mobile\IntexFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1031,10 +1035,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\ToshibaFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100'], false)) {
-            return (new Mobile\ToshibaFactory($this->loader))->detect($useragent, $s);
-        }
-
         if (preg_match('/P[AS]P|PM[PT]/', $useragent)) {
             return (new Mobile\PrestigioFactory($this->loader))->detect($useragent, $s);
         }
@@ -1219,6 +1219,8 @@ class MobileFactory implements Factory\FactoryInterface
             'w713'          => Mobile\CoolpadFactory::class,
             'ot-'           => Mobile\AlcatelFactory::class,
             'n8000d'        => Mobile\SamsungFactory::class,
+            'n003'          => Mobile\NeoFactory::class,
+            ' v1 '          => Mobile\MaxtronFactory::class,
         ];
 
         foreach ($factoriesBeforeIconbit as $test => $factoryName) {
@@ -1284,6 +1286,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if (preg_match('/ v\d\-?[ace]?[ )]/i', $useragent)) {
             return (new Mobile\InewFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/(RP|KM)\-U[DQ]M\d{2}/', $useragent)) {
+            return (new Mobile\VericoFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/KM\-/', $useragent)) {
@@ -1405,10 +1411,6 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HaierFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/RP\-UDM\d{2}/', $useragent)) {
-            return (new Mobile\VericoFactory($this->loader))->detect($useragent, $s);
-        }
-
         if (preg_match('/RG\d{3}/', $useragent)) {
             return (new Mobile\RugGearFactory($this->loader))->detect($useragent, $s);
         }
@@ -1517,7 +1519,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/i\-style|iq ?\d/i', $useragent)) {
+        if (preg_match('/(i\-style|iq) ?\d/i', $useragent)) {
             return (new Mobile\ImobileFactory($this->loader))->detect($useragent, $s);
         }
 
@@ -1564,9 +1566,7 @@ class MobileFactory implements Factory\FactoryInterface
             'ctab785r16-3g'   => Mobile\CondorFactory::class,
             'pkt-301'         => Mobile\CondorFactory::class,
             'uq785-m1bgv'     => Mobile\VericoFactory::class,
-            'km-uqm11a'       => Mobile\VericoFactory::class,
             't9666-1'         => Mobile\TelsdaFactory::class,
-            'n003'            => Mobile\NeoFactory::class,
             'h7100'           => Mobile\FeitengFactory::class,
             'x909'            => Mobile\OppoFactory::class,
             'r815'            => Mobile\OppoFactory::class,
@@ -1656,7 +1656,6 @@ class MobileFactory implements Factory\FactoryInterface
             'hive v 3g'       => Mobile\TurboxFactory::class,
             'hive iv 3g'      => Mobile\TurboxFactory::class,
             'turkcell'        => Mobile\TurkcellFactory::class,
-            ' v1 '            => Mobile\MaxtronFactory::class,
             'l-ement500'      => Mobile\LogicomFactory::class,
             'is04'            => Mobile\KddiFactory::class,
             'be pro'          => Mobile\UlefoneFactory::class,
