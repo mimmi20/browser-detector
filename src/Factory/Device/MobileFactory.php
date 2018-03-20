@@ -554,6 +554,7 @@ class MobileFactory implements Factory\FactoryInterface
             'komu'         => Mobile\KomuFactory::class,
             'kopo'         => Mobile\KopoFactory::class,
             'koridy'       => Mobile\KoridyFactory::class,
+            'kumai'        => Mobile\KumaiFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
