@@ -11,9 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
-use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Loader\PlatformLoader;
 use Stringy\Stringy;
+use UaNormalizer\NormalizerFactory;
 
 trait PlatformTestDetectTrait
 {

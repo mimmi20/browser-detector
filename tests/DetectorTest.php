@@ -12,17 +12,17 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
-use BrowserDetector\Helper\Constants;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\PlatformLoader;
 use PHPUnit\Framework\TestCase;
-use Psr\Http\Message\MessageInterface;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Simple\FilesystemCache;
+use UaRequest\Constants;
 use UaResult\Result\Result;
 use UaResult\Result\ResultFactory;
+use Zend\Diactoros\ServerRequestFactory;
 
 class DetectorTest extends TestCase
 {
@@ -141,18 +141,11 @@ class DetectorTest extends TestCase
      * @param string $userAgent
      * @param Result $expectedResult
      *
-     * @throws \ReflectionException
-     *
      * @return void
      */
     public function testGetBrowserFromPsr7Message(string $userAgent, Result $expectedResult): void
     {
-        /* @var \PHPUnit_Framework_MockObject_MockObject|\Psr\Http\Message\MessageInterface $message */
-        $message = $this->createMock(MessageInterface::class);
-        $message
-            ->expects(self::once())
-            ->method('getHeaders')
-            ->willReturn([Constants::HEADER_HTTP_USERAGENT => [$userAgent]]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$userAgent]]);
 
         /* @var Result $result */
         $result = $this->object->getBrowser($message);
@@ -168,18 +161,11 @@ class DetectorTest extends TestCase
      * @param string $userAgent
      * @param Result $expectedResult
      *
-     * @throws \ReflectionException
-     *
      * @return void
      */
     public function testParseMessage(string $userAgent, Result $expectedResult): void
     {
-        /* @var \PHPUnit_Framework_MockObject_MockObject|\Psr\Http\Message\MessageInterface $message */
-        $message = $this->createMock(MessageInterface::class);
-        $message
-            ->expects(self::once())
-            ->method('getHeaders')
-            ->willReturn([Constants::HEADER_HTTP_USERAGENT => [$userAgent]]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$userAgent]]);
 
         /* @var Result $result */
         $result = $this->object->parseMessage($message);

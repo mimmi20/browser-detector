@@ -15,10 +15,7 @@ use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\EngineFactory;
-use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Helper\GenericRequest;
-use BrowserDetector\Helper\GenericRequestFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\EngineLoader;
@@ -28,6 +25,9 @@ use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use Stringy\Stringy;
+use UaNormalizer\NormalizerFactory;
+use UaRequest\GenericRequest;
+use UaRequest\GenericRequestFactory;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
@@ -122,7 +122,7 @@ class Detector
     }
 
     /**
-     * @param \BrowserDetector\Helper\GenericRequest $request
+     * @param \UaRequest\GenericRequest $request
      *
      * @return \UaResult\Result\Result
      */
@@ -185,7 +185,7 @@ class Detector
      *
      * @throws \UnexpectedValueException
      *
-     * @return \BrowserDetector\Helper\GenericRequest
+     * @return \UaRequest\GenericRequest
      */
     private function buildRequest($request): GenericRequest
     {
