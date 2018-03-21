@@ -21,9 +21,9 @@ class KoridyFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'h20'    => 'koridy h20',
-        'h16'    => 'koridy h16',
-        'h15'    => 'koridy h15',
+        'h20' => 'koridy h20',
+        'h16' => 'koridy h16',
+        'h15' => 'koridy h15',
     ];
 
     /**

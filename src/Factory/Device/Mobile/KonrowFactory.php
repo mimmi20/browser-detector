@@ -21,11 +21,11 @@ class KonrowFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'bigcool'   => 'konrow bigcool',
-        'cool-k'    => 'konrow cool-k',
-        'coolfive'  => 'konrow coolfive',
-        'just5'  => 'konrow just5',
-        'link5'  => 'konrow link5',
+        'bigcool'  => 'konrow bigcool',
+        'cool-k'   => 'konrow cool-k',
+        'coolfive' => 'konrow coolfive',
+        'just5'    => 'konrow just5',
+        'link5'    => 'konrow link5',
     ];
 
     /**

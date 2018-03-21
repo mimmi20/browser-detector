@@ -21,10 +21,10 @@ class KumaiFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'kumai 918'   => 'kumai 918',
-        'kumai 290s'  => 'kumai 290s',
-        'kumai 290'   => 'kumai 290',
-        'kumai 260'   => 'kumai 260',
+        'kumai 918'  => 'kumai 918',
+        'kumai 290s' => 'kumai 290s',
+        'kumai 290'  => 'kumai 290',
+        'kumai 260'  => 'kumai 260',
     ];
 
     /**

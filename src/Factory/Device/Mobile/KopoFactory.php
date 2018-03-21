@@ -21,8 +21,8 @@ class KopoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'l128'   => 'kopo l128',
-        ' l8'    => 'kopo l8',
+        'l128' => 'kopo l128',
+        ' l8'  => 'kopo l8',
     ];
 
     /**
