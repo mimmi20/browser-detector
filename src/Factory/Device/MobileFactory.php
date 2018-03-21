@@ -1043,6 +1043,7 @@ class MobileFactory implements Factory\FactoryInterface
             'tm785m3'         => Mobile\NuVisionFactory::class,
             'm502'            => Mobile\NavonFactory::class,
             'lencm900hz'      => Mobile\LencoFactory::class,
+            'xm300'           => Mobile\LandvoFactory::class,
             'xm100'           => Mobile\LandvoFactory::class,
             'm370i'           => Mobile\InfocusFactory::class,
             'dm550'           => Mobile\BlackviewFactory::class,

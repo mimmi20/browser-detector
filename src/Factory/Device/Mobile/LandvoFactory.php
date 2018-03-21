@@ -21,8 +21,10 @@ class LandvoFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'xm100' => 'landvo xm100',
-        'l900'  => 'landvo l900',
+        'xm300 pro' => 'landvo xm300 pro',
+        'xm100s'    => 'landvo xm100s',
+        'xm100'     => 'landvo xm100',
+        'l900'      => 'landvo l900',
     ];
 
     /**
