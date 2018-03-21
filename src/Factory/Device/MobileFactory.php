@@ -40,21 +40,18 @@ class MobileFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
-        $factoriesBeforeSamsung = [
-            'hiphone'     => Mobile\HiPhoneFactory::class,
-            'v919 3g air' => Mobile\OndaFactory::class,
-            'technisat'   => Mobile\TechnisatFactory::class,
-            'technipad'   => Mobile\TechnisatFactory::class,
-            'aqipad'      => Mobile\TechnisatFactory::class,
-            'techniphone' => Mobile\TechnisatFactory::class,
-            'navipad'     => Mobile\TexetFactory::class,
-            'medipad'     => Mobile\BewatecFactory::class,
-            'mipad'       => Mobile\XiaomiFactory::class,
-            'nokia'       => Mobile\NokiaFactory::class,
+        $factoriesBeforeXianghe = [
+            '/hiphone/i'                                => Mobile\HiPhoneFactory::class,
+            '/v919 3g air/i'                            => Mobile\OndaFactory::class,
+            '/technisat|technipad|aqipad|techniphone/i' => Mobile\TechnisatFactory::class,
+            '/navipad/i'                                => Mobile\TexetFactory::class,
+            '/medipad/i'                                => Mobile\BewatecFactory::class,
+            '/mipad/i'                                  => Mobile\XiaomiFactory::class,
+            '/nokia/i'                                  => Mobile\NokiaFactory::class,
         ];
 
-        foreach ($factoriesBeforeSamsung as $test => $factoryName) {
-            if ($s->contains($test, false)) {
+        foreach ($factoriesBeforeXianghe as $rule => $factoryName) {
+            if (preg_match($rule, $useragent)) {
                 /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
@@ -72,217 +69,77 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\XiangheFactory($this->loader))->detect($useragent, $s);
         }
 
-        $factoriesBeforeApple = [
-            'samsung'    => Mobile\SamsungFactory::class,
-            'blackberry' => Mobile\BlackBerryFactory::class,
-        ];
-
-        foreach ($factoriesBeforeApple as $test => $factoryName) {
-            if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
-                $factory = new $factoryName($this->loader);
-
-                return $factory->detect($useragent, $s);
-            }
-        }
-
-        if ($s->containsAny(['ipad', 'ipod', 'iphone', 'like mac os x', 'darwin', 'cfnetwork'], false)
-            && !$s->containsAny(['windows phone', ' adr ', 'ipodder', 'tripadvisor'], false)
+        if (preg_match('/ipad|ipod|iphone|like mac os x|darwin|cfnetwork/i', $useragent)
+            && !preg_match('/windows phone| adr |ipodder|tripadvisor/i', $useragent)
         ) {
             return (new Mobile\AppleFactory($this->loader))->detect($useragent, $s);
-        }
-
-        $factoriesBeforeLg = [
-            'asus'        => Mobile\AsusFactory::class,
-            'mt-gt-a9500' => Mobile\HtmFactory::class,
-            'gt-a7100'    => Mobile\HtmFactory::class,
-            'feiteng'     => Mobile\FeitengFactory::class,
-            'gt-h'        => Mobile\FeitengFactory::class,
-            'cube'        => Mobile\CubeFactory::class,
-            'u30gt'       => Mobile\CubeFactory::class,
-            'u51gt'       => Mobile\CubeFactory::class,
-            'u55gt'       => Mobile\CubeFactory::class,
-            'i15-tcl'     => Mobile\CubeFactory::class,
-            'u25gt-c4w'   => Mobile\CubeFactory::class,
-            'gtx75'       => Mobile\UtStarcomFactory::class,
-            'gt-9000'     => Mobile\StarFactory::class,
-        ];
-
-        foreach ($factoriesBeforeLg as $test => $factoryName) {
-            if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
-                $factory = new $factoryName($this->loader);
-
-                return $factory->detect($useragent, $s);
-            }
-        }
-
-        if ($s->contains('LG', true)) {
-            return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-/i', $useragent)) {
-            return (new Mobile\SamsungFactory($this->loader))->detect($useragent, $s);
-        }
-
-        $factoriesBeforeOnda = [
-            'hdc'           => Mobile\HdcFactory::class,
-            'galaxy s3 ex'  => Mobile\HdcFactory::class,
-            'nexus 5'       => Mobile\LgFactory::class,
-            'nexus 4'       => Mobile\LgFactory::class,
-            'nexus5'        => Mobile\LgFactory::class,
-            'nexus4'        => Mobile\LgFactory::class,
-            'nexus 7'       => Mobile\AsusFactory::class,
-            'nexus_7'       => Mobile\AsusFactory::class,
-            'nexus7'        => Mobile\AsusFactory::class,
-            'nexus 6p'      => Mobile\HuaweiFactory::class,
-            'nexus 6'       => Mobile\MotorolaFactory::class,
-            'nexus one'     => Mobile\HtcFactory::class,
-            'nexus 9'       => Mobile\HtcFactory::class,
-            'nexus evohd2'  => Mobile\HtcFactory::class,
-            'nexushd2'      => Mobile\HtcFactory::class,
-            'pantech'       => Mobile\PantechFactory::class,
-            'hp'            => Mobile\HpFactory::class,
-            'p160u'         => Mobile\HpFactory::class,
-            'touchpad'      => Mobile\HpFactory::class,
-            'pixi'          => Mobile\HpFactory::class,
-            'palm'          => Mobile\HpFactory::class,
-            'cm_tenderloin' => Mobile\HpFactory::class,
-            'slate'         => Mobile\HpFactory::class,
-            'galaxy'        => Mobile\SamsungFactory::class,
-            'nexus'         => Mobile\SamsungFactory::class,
-            'i7110'         => Mobile\SamsungFactory::class,
-            'i9100'         => Mobile\SamsungFactory::class,
-            'i9300'         => Mobile\SamsungFactory::class,
-            'blaze'         => Mobile\SamsungFactory::class,
-            's8500'         => Mobile\SamsungFactory::class,
-            'sony'          => Mobile\SonyFactory::class,
-            'accent'        => Mobile\AccentFactory::class,
-            'smarttab10'    => Mobile\ZteFactory::class,
-            'smarttab7'     => Mobile\ZteFactory::class,
-            'smart 4g'      => Mobile\ZteFactory::class,
-            'smart ultra 6' => Mobile\ZteFactory::class,
-            'lenovo'        => Mobile\LenovoFactory::class,
-            'ideatab'       => Mobile\LenovoFactory::class,
-            'ideapad'       => Mobile\LenovoFactory::class,
-            'smarttab'      => Mobile\LenovoFactory::class,
-            'thinkpad'      => Mobile\LenovoFactory::class,
-            'startrail4'    => Mobile\SfrFactory::class,
-            'zte'           => Mobile\ZteFactory::class,
-            'racer'         => Mobile\ZteFactory::class,
-            'acer'          => Mobile\AcerFactory::class,
-            'iconia'        => Mobile\AcerFactory::class,
-            'liquid'        => Mobile\AcerFactory::class,
-            'playstation'   => Mobile\SonyFactory::class,
-            'amazon'        => Mobile\AmazonFactory::class,
-            'kindle'        => Mobile\AmazonFactory::class,
-            'silk'          => Mobile\AmazonFactory::class,
-            'kftt'          => Mobile\AmazonFactory::class,
-            'kfot'          => Mobile\AmazonFactory::class,
-            'kfjwi'         => Mobile\AmazonFactory::class,
-            'kfsowi'        => Mobile\AmazonFactory::class,
-            'kfthwi'        => Mobile\AmazonFactory::class,
-            'sd4930ur'      => Mobile\AmazonFactory::class,
-            'kfapwa'        => Mobile\AmazonFactory::class,
-            'kfaswi'        => Mobile\AmazonFactory::class,
-            'kfapwi'        => Mobile\AmazonFactory::class,
-            'kfdowi'        => Mobile\AmazonFactory::class,
-            'kfauwi'        => Mobile\AmazonFactory::class,
-            'kfgiwi'        => Mobile\AmazonFactory::class,
-            'kftbwi'        => Mobile\AmazonFactory::class,
-            'kfmewi'        => Mobile\AmazonFactory::class,
-            'kffowi'        => Mobile\AmazonFactory::class,
-            'kfsawi'        => Mobile\AmazonFactory::class,
-            'kfsawa'        => Mobile\AmazonFactory::class,
-            'kfarwi'        => Mobile\AmazonFactory::class,
-            'kfthwa'        => Mobile\AmazonFactory::class,
-            'kfjwa'         => Mobile\AmazonFactory::class,
-            'fire2'         => Mobile\AmazonFactory::class,
-            'amoi'          => Mobile\AmoiFactory::class,
-            'blaupunkt'     => Mobile\BlaupunktFactory::class,
-            'endeavour'     => Mobile\BlaupunktFactory::class,
-            'dataaccessd'   => Mobile\AppleFactory::class,
-            'cce'           => Mobile\CceFactory::class,
-        ];
-
-        foreach ($factoriesBeforeOnda as $test => $factoryName) {
-            if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
-                $factory = new $factoryName($this->loader);
-
-                return $factory->detect($useragent, $s);
-            }
         }
 
         if ($s->contains('htc', false) && !$s->contains('wohtc', false)) {
             return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
         }
 
-        $factoriesBeforeCoby = [
-            'onda'         => Mobile\OndaFactory::class,
-            'archos'       => Mobile\ArchosFactory::class,
-            'irulu'        => Mobile\IruluFactory::class,
-            'symphony'     => Mobile\SymphonyFactory::class,
-            'spice'        => Mobile\SpiceFactory::class,
-            'arnova'       => Mobile\ArnovaFactory::class,
-            ' bn '         => Mobile\BarnesNobleFactory::class,
-            'bntv600'      => Mobile\BarnesNobleFactory::class,
-            'playbook'     => Mobile\BlackBerryFactory::class,
-            'rim tablet'   => Mobile\BlackBerryFactory::class,
-            'bb10'         => Mobile\BlackBerryFactory::class,
-            'stv100'       => Mobile\BlackBerryFactory::class,
-            'bba100-2'     => Mobile\BlackBerryFactory::class,
-            'bbb100-2'     => Mobile\BlackBerryFactory::class,
-            'b15'          => Mobile\CaterpillarFactory::class,
-            'catnova'      => Mobile\CatSoundFactory::class,
-            'cat nova'     => Mobile\CatSoundFactory::class,
-            'cat stargate' => Mobile\CatSoundFactory::class,
-            'cat tablet'   => Mobile\CatSoundFactory::class,
-            'cathelix'     => Mobile\CatSoundFactory::class,
-            'coby'         => Mobile\CobyFactory::class,
-            'nbpc724'      => Mobile\CobyFactory::class,
-            'o+'           => Mobile\OplusFactory::class,
-            'oplus'        => Mobile\OplusFactory::class,
-            'goly'         => Mobile\GolyFactory::class,
-        ];
-
-        foreach ($factoriesBeforeCoby as $test => $factoryName) {
-            if ($s->contains($test, false)) {
-                /* @var Factory\FactoryInterface $factory */
-                $factory = new $factoryName($this->loader);
-
-                return $factory->detect($useragent, $s);
-            }
-        }
-
-        if (preg_match('/MID\d{4}/', $useragent)) {
-            return (new Mobile\CobyFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/WM\d{4}/', $useragent)) {
-            return (new Mobile\WonderMediaFactory($this->loader))->detect($useragent, $s);
-        }
-
         $factoriesBeforeNec = [
-            'comag'        => Mobile\ComagFactory::class,
-            'wtdr1018'     => Mobile\ComagFactory::class,
-            'coolpad'      => Mobile\CoolpadFactory::class,
-            'cosmote'      => Mobile\CosmoteFactory::class,
-            'creative'     => Mobile\CreativeFactory::class,
-            'ziilabs'      => Mobile\CreativeFactory::class,
-            'ziio7'        => Mobile\CreativeFactory::class,
-            'cubot'        => Mobile\CubotFactory::class,
-            'dell'         => Mobile\DellFactory::class,
-            'denver'       => Mobile\DenverFactory::class,
-            'tad-'         => Mobile\DenverFactory::class,
-            'taq-'         => Mobile\DenverFactory::class,
-            'connect7pro'  => Mobile\OdysFactory::class,
-            'connect8plus' => Mobile\OdysFactory::class,
-            'sharp'        => Mobile\SharpFactory::class,
+            '/samsung/i'                                                                                                                          => Mobile\SamsungFactory::class,
+            '/blackberry/i'                                                                                                                       => Mobile\BlackBerryFactory::class,
+            '/asus/i'                                                                                                                             => Mobile\AsusFactory::class,
+            '/mt\-gt\-a9500|gt\-a7100/i'                                                                                                          => Mobile\HtmFactory::class,
+            '/feiteng|gt\-h/i'                                                                                                                    => Mobile\FeitengFactory::class,
+            '/cube|u30gt|u51gt|u55gt|i15\-tcl|u25gt\-c4w/i'                                                                                       => Mobile\CubeFactory::class,
+            '/gtx75/i'                                                                                                                            => Mobile\UtStarcomFactory::class,
+            '/gt\-9000/i'                                                                                                                         => Mobile\StarFactory::class,
+            '/LG/'                                                                                                                                => Mobile\LgFactory::class,
+            '/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-/i'                                                                         => Mobile\SamsungFactory::class,
+            '/hdc|galaxy s3 ex/i'                                                                                                                 => Mobile\HdcFactory::class,
+            '/nexus ?[45]/i'                                                                                                                      => Mobile\LgFactory::class,
+            '/nexus[ _]?7/i'                                                                                                                      => Mobile\AsusFactory::class,
+            '/nexus 6p/i'                                                                                                                         => Mobile\HuaweiFactory::class,
+            '/nexus 6/i'                                                                                                                          => Mobile\MotorolaFactory::class,
+            '/nexus ?(?:one|9|evohd2|hd2)/i'                                                                                                      => Mobile\HtcFactory::class,
+            '/pantech/i'                                                                                                                          => Mobile\PantechFactory::class,
+            '/hp|p160u|touchpad|pixi|palm|cm_tenderloin|slate/i'                                                                                  => Mobile\HpFactory::class,
+            '/galaxy|nexus|i(?:7110|9100|9300)|blaze|s8500/i'                                                                                     => Mobile\SamsungFactory::class,
+            '/sony/i'                                                                                                                             => Mobile\SonyFactory::class,
+            '/accent/i'                                                                                                                           => Mobile\AccentFactory::class,
+            '/smart ?(?:tab(?:10|7)|4g|ultra 6)/i'                                                                                                => Mobile\ZteFactory::class,
+            '/lenovo|idea(?:tab|pad)|smarttab|thinkpad/i'                                                                                         => Mobile\LenovoFactory::class,
+            '/startrail4/i'                                                                                                                       => Mobile\SfrFactory::class,
+            '/zte|racer/i'                                                                                                                        => Mobile\ZteFactory::class,
+            '/acer|iconia|liquid/i'                                                                                                               => Mobile\AcerFactory::class,
+            '/playstation/i'                                                                                                                      => Mobile\SonyFactory::class,
+            '/amazon|kindle|silk|kf(?:tt|ot|jwi|sowi|thwi|apwa|aswi|apwi|dowi|auwi|giwi|tbwi|mewi|fowi|sawi|sawa|arwi|thwa|jwa)|sd4930ur|fire2/i' => Mobile\AmazonFactory::class,
+            '/amoi/i'                                                                                                                             => Mobile\AmoiFactory::class,
+            '/blaupunkt|endeavour/i'                                                                                                              => Mobile\BlaupunktFactory::class,
+            '/dataaccessd/i'                                                                                                                      => Mobile\AppleFactory::class,
+            '/cce/i'                                                                                                                              => Mobile\CceFactory::class,
+            '/onda/i'                                                                                                                             => Mobile\OndaFactory::class,
+            '/archos/i'                                                                                                                           => Mobile\ArchosFactory::class,
+            '/irulu/i'                                                                                                                            => Mobile\IruluFactory::class,
+            '/symphony/i'                                                                                                                         => Mobile\SymphonyFactory::class,
+            '/spice/i'                                                                                                                            => Mobile\SpiceFactory::class,
+            '/arnova/i'                                                                                                                           => Mobile\ArnovaFactory::class,
+            '/ bn |bntv600/i'                                                                                                                     => Mobile\BarnesNobleFactory::class,
+            '/playbook|rim tablet|bb10|stv100|bb[ab]100\-2/i'                                                                                     => Mobile\BlackBerryFactory::class,
+            '/b15/i'                                                                                                                              => Mobile\CaterpillarFactory::class,
+            '/cat ?(?:nova|stargate|tablet|helix)/i'                                                                                              => Mobile\CatSoundFactory::class,
+            '/coby|nbpc724/i'                                                                                                                     => Mobile\CobyFactory::class,
+            '/o\+|oplus/i'                                                                                                                        => Mobile\OplusFactory::class,
+            '/goly/i'                                                                                                                             => Mobile\GolyFactory::class,
+            '/MID\d{4}/'                                                                                                                          => Mobile\CobyFactory::class,
+            '/WM\d{4}/'                                                                                                                           => Mobile\WonderMediaFactory::class,
+            '/comag|wtdr1018/i'                                                                                                                   => Mobile\ComagFactory::class,
+            '/coolpad/i'                                                                                                                          => Mobile\CoolpadFactory::class,
+            '/cosmote/i'                                                                                                                          => Mobile\CosmoteFactory::class,
+            '/creative|ziilabs|ziio7/i'                                                                                                           => Mobile\CreativeFactory::class,
+            '/cubot/i'                                                                                                                            => Mobile\CubotFactory::class,
+            '/dell/i'                                                                                                                             => Mobile\DellFactory::class,
+            '/denver|ta[dq]\-/i'                                                                                                                  => Mobile\DenverFactory::class,
+            '/connect(?:7pro|8plus)/i'                                                                                                            => Mobile\OdysFactory::class,
+            '/sharp/i'                                                                                                                            => Mobile\SharpFactory::class,
         ];
 
-        foreach ($factoriesBeforeNec as $test => $factoryName) {
-            if ($s->contains($test, false)) {
+        foreach ($factoriesBeforeNec as $rule => $factoryName) {
+            if (preg_match($rule, $useragent)) {
                 /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
@@ -294,437 +151,261 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\NecFactory($this->loader))->detect($useragent, $s);
         }
 
-        if (preg_match('/\d{3}SH/', $useragent)) {
-            return (new Mobile\SharpFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/SH\-?\d{2,4}(C|D|F|U)/', $useragent)) {
-            return (new Mobile\SharpFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/m\-(m|p)p/i', $useragent)) {
-            return (new Mobile\MediacomFactory($this->loader))->detect($useragent, $s);
-        }
-
-        $factoriesBeforeHannspree = [
-            'n-06e'      => Mobile\NecFactory::class,
-            'n905i'      => Mobile\NecFactory::class,
-            'n705i'      => Mobile\NecFactory::class,
-            'docomo'     => Mobile\DoCoMoFactory::class,
-            'p900i'      => Mobile\DoCoMoFactory::class,
-            'easypix'    => Mobile\EasypixFactory::class,
-            'easypad'    => Mobile\EasypixFactory::class,
-            'junior 4.0' => Mobile\EasypixFactory::class,
-            'smart-e5'   => Mobile\EfoxFactory::class,
-            'xoro'       => Mobile\XoroFactory::class,
-            'telepad'    => Mobile\XoroFactory::class,
-            'memup'      => Mobile\MemupFactory::class,
-            'slidepad'   => Mobile\MemupFactory::class,
-            'epad'       => Mobile\ZenithinkFactory::class,
-            'p7901a'     => Mobile\ZenithinkFactory::class,
-            'p7mini'     => Mobile\HuaweiFactory::class,
-            'flytouch'   => Mobile\FlytouchFactory::class,
-            'fujitsu'    => Mobile\FujitsuFactory::class,
-            'm532'       => Mobile\FujitsuFactory::class,
-            'm305'       => Mobile\FujitsuFactory::class,
-            'sn10t1'     => Mobile\HannspreeFactory::class,
+        $factoriesBeforeThl = [
+            '/\d{3}SH/'                      => Mobile\SharpFactory::class,
+            '/SH\-?\d{2,4}(C|D|F|U)/'        => Mobile\SharpFactory::class,
+            '/m\-(m|p)p/i'                   => Mobile\MediacomFactory::class,
+            '/n\-06e|n[79]05i/i'             => Mobile\NecFactory::class,
+            '/docomo|p900i/i'                => Mobile\DoCoMoFactory::class,
+            '/easy(?:pix|pad)|junior 4\.0/i' => Mobile\EasypixFactory::class,
+            '/smart\-e5/i'                   => Mobile\EfoxFactory::class,
+            '/xoro|telepad/i'                => Mobile\XoroFactory::class,
+            '/memup|slidepad/i'              => Mobile\MemupFactory::class,
+            '/epad|p7901a/i'                 => Mobile\ZenithinkFactory::class,
+            '/p7mini/i'                      => Mobile\HuaweiFactory::class,
+            '/flytouch/i'                    => Mobile\FlytouchFactory::class,
+            '/fujitsu|m532|m305/i'           => Mobile\FujitsuFactory::class,
+            '/sn10t1|hsg\d{4}/i'             => Mobile\HannspreeFactory::class,
+            '/DA241HL/'                      => Mobile\AcerFactory::class,
+            '/SHL25/'                        => Mobile\SharpFactory::class,
         ];
 
-        foreach ($factoriesBeforeHannspree as $test => $factoryName) {
-            if ($s->contains($test, false)) {
+        foreach ($factoriesBeforeThl as $rule => $factoryName) {
+            if (preg_match($rule, $useragent)) {
                 /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
             }
-        }
-
-        if (preg_match('/hsg\d{4}/i', $useragent)) {
-            return (new Mobile\HannspreeFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('DA241HL', true)) {
-            return (new Mobile\AcerFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('SHL25', true)) {
-            return (new Mobile\SharpFactory($this->loader))->detect($useragent, $s);
         }
 
         if ($s->contains('thl', false) && !$s->contains('liauthlibrary', false)) {
             return (new Mobile\ThlFactory($this->loader))->detect($useragent, $s);
         }
 
-        if ($s->containsAny(['Honlin', 'PC1088', 'HL'], true)) {
-            return (new Mobile\HonlinFactory($this->loader))->detect($useragent, $s);
-        }
-
-        $factoriesBeforeIntenso = [
-            'huawei'    => Mobile\HuaweiFactory::class,
-            'micromax'  => Mobile\MicromaxFactory::class,
-            'explay'    => Mobile\ExplayFactory::class,
-            'oneplus'   => Mobile\OneplusFactory::class,
-            'kingzone'  => Mobile\KingzoneFactory::class,
-            'goophone'  => Mobile\GooPhoneFactory::class,
-            'g-tide'    => Mobile\GtideFactory::class,
-            'turbopad'  => Mobile\TurboPadFactory::class,
-            'turbo pad' => Mobile\TurboPadFactory::class,
-            'haier'     => Mobile\HaierFactory::class,
-            'hummer'    => Mobile\HummerFactory::class,
-            'oysters'   => Mobile\OystersFactory::class,
-            'gfive'     => Mobile\GfiveFactory::class,
-            'iconbit'   => Mobile\IconBitFactory::class,
-            'sxz'       => Mobile\SxzFactory::class,
-            'aoc'       => Mobile\AocFactory::class,
+        $factoriesBeforeFly = [
+            '/Honlin|PC1088|HL/'                                                        => Mobile\HonlinFactory::class,
+            '/huawei/i'                                                                 => Mobile\HuaweiFactory::class,
+            '/micromax/i'                                                               => Mobile\MicromaxFactory::class,
+            '/explay/i'                                                                 => Mobile\ExplayFactory::class,
+            '/oneplus/i'                                                                => Mobile\OneplusFactory::class,
+            '/kingzone/i'                                                               => Mobile\KingzoneFactory::class,
+            '/goophone/i'                                                               => Mobile\GooPhoneFactory::class,
+            '/g\-tide/i'                                                                => Mobile\GtideFactory::class,
+            '/turbo ?pad/i'                                                             => Mobile\TurboPadFactory::class,
+            '/haier/i'                                                                  => Mobile\HaierFactory::class,
+            '/hummer/i'                                                                 => Mobile\HummerFactory::class,
+            '/oysters/i'                                                                => Mobile\OystersFactory::class,
+            '/gfive/i'                                                                  => Mobile\GfiveFactory::class,
+            '/iconbit/i'                                                                => Mobile\IconBitFactory::class,
+            '/sxz/i'                                                                    => Mobile\SxzFactory::class,
+            '/aoc/i'                                                                    => Mobile\AocFactory::class,
+            '/INM\d{3,4}/'                                                              => Mobile\IntensoFactory::class,
+            '/jay\-tech/i'                                                              => Mobile\JaytechFactory::class,
+            '/jolla|sailfish/i'                                                         => Mobile\JollaFactory::class,
+            '/kazam/i'                                                                  => Mobile\KazamFactory::class,
+            '/kddi/i'                                                                   => Mobile\KddiFactory::class,
+            '/kobo/i'                                                                   => Mobile\KoboFactory::class,
+            '/lenco/i'                                                                  => Mobile\LencoFactory::class,
+            '/lepan/i'                                                                  => Mobile\LePanFactory::class,
+            '/logicpd|zoom2|nook ?color/i'                                              => Mobile\LogicpdFactory::class,
+            '/medion|lifetab/i'                                                         => Mobile\MedionFactory::class,
+            '/meizu/i'                                                                  => Mobile\MeizuFactory::class,
+            '/hisense/i'                                                                => Mobile\HisenseFactory::class,
+            '/minix/i'                                                                  => Mobile\MinixFactory::class,
+            '/allwinner/i'                                                              => Mobile\AllWinnerFactory::class,
+            '/supra/i'                                                                  => Mobile\SupraFactory::class,
+            '/prestigio/i'                                                              => Mobile\PrestigioFactory::class,
+            '/mobistel|cynus/i'                                                         => Mobile\MobistelFactory::class,
+            '/moto/i'                                                                   => Mobile\MotorolaFactory::class,
+            '/nintendo/i'                                                               => Mobile\NintendoFactory::class,
+            '/odys/i'                                                                   => Mobile\OdysFactory::class,
+            '/oppo/i'                                                                   => Mobile\OppoFactory::class,
+            '/panasonic/i'                                                              => Mobile\PanasonicFactory::class,
+            '/pandigital/i'                                                             => Mobile\PandigitalFactory::class,
+            '/phicomm/i'                                                                => Mobile\PhicommFactory::class,
+            '/pomp/i'                                                                   => Mobile\PompFactory::class,
+            '/qmobile/i'                                                                => Mobile\QmobileFactory::class,
+            '/sanyo/i'                                                                  => Mobile\SanyoFactory::class,
+            '/siemens/i'                                                                => Mobile\SiemensFactory::class,
+            '/benq/i'                                                                   => Mobile\SiemensFactory::class,
+            '/sagem/i'                                                                  => Mobile\SagemFactory::class,
+            '/ouya/i'                                                                   => Mobile\OuyaFactory::class,
+            '/trevi/i'                                                                  => Mobile\TreviFactory::class,
+            '/cowon/i'                                                                  => Mobile\CowonFactory::class,
+            '/homtom/i'                                                                 => Mobile\HomtomFactory::class,
+            '/hosin/i'                                                                  => Mobile\HosinFactory::class,
+            '/hasee/i'                                                                  => Mobile\HaseeFactory::class,
+            '/tecno/i'                                                                  => Mobile\TecnoFactory::class,
+            '/intex/i'                                                                  => Mobile\IntexFactory::class,
+            '/sprint/i'                                                                 => Mobile\SprintFactory::class,
+            '/gionee/i'                                                                 => Mobile\GioneeFactory::class,
+            '/videocon/i'                                                               => Mobile\VideoconFactory::class,
+            '/gigaset/i'                                                                => Mobile\GigasetFactory::class,
+            '/dns/i'                                                                    => Mobile\DnsFactory::class,
+            '/kyocera/i'                                                                => Mobile\KyoceraFactory::class,
+            '/texet/i'                                                                  => Mobile\TexetFactory::class,
+            '/s\-tell/i'                                                                => Mobile\StellFactory::class,
+            '/bliss/i'                                                                  => Mobile\BlissFactory::class,
+            '/alcatel/i'                                                                => Mobile\AlcatelFactory::class,
+            '/tolino/i'                                                                 => Mobile\TolinoFactory::class,
+            '/toshiba/i'                                                                => Mobile\ToshibaFactory::class,
+            '/trekstor/i'                                                               => Mobile\TrekStorFactory::class,
+            '/viewsonic/i'                                                              => Mobile\ViewSonicFactory::class,
+            '/viewpad/i'                                                                => Mobile\ViewSonicFactory::class,
+            '/wiko/i'                                                                   => Mobile\WikoFactory::class,
+            '/vivo iv/i'                                                                => Mobile\BluFactory::class,
+            '/vivo/i'                                                                   => Mobile\VivoFactory::class,
+            '/haipai/i'                                                                 => Mobile\HaipaiFactory::class,
+            '/megafon/i'                                                                => Mobile\MegaFonFactory::class,
+            '/yuanda/i'                                                                 => Mobile\YuandaFactory::class,
+            '/pocketbook/i'                                                             => Mobile\PocketBookFactory::class,
+            '/goclever/i'                                                               => Mobile\GoCleverFactory::class,
+            '/senseit/i'                                                                => Mobile\SenseitFactory::class,
+            '/twz/i'                                                                    => Mobile\TwzFactory::class,
+            '/i\-mobile/i'                                                              => Mobile\ImobileFactory::class,
+            '/evercoss/i'                                                               => Mobile\EvercossFactory::class,
+            '/dino/i'                                                                   => Mobile\DinoFactory::class,
+            '/shaan/i'                                                                  => Mobile\ShaanFactory::class,
+            '/iball/i'                                                                  => Mobile\ShaanFactory::class,
+            '/modecom/i'                                                                => Mobile\ModecomFactory::class,
+            '/kiano/i'                                                                  => Mobile\KianoFactory::class,
+            '/philips/i'                                                                => Mobile\PhilipsFactory::class,
+            '/infinix/i'                                                                => Mobile\InfinixFactory::class,
+            '/infocus/i'                                                                => Mobile\InfocusFactory::class,
+            '/karbonn/i'                                                                => Mobile\KarbonnFactory::class,
+            '/pentagram/i'                                                              => Mobile\PentagramFactory::class,
+            '/smartfren/i'                                                              => Mobile\SmartfrenFactory::class,
+            '/ngm/i'                                                                    => Mobile\NgmFactory::class,
+            '/orange hi 4g/i'                                                           => Mobile\ZteFactory::class,
+            '/orange reyo/i'                                                            => Mobile\ZteFactory::class,
+            '/orange/i'                                                                 => Mobile\OrangeFactory::class,
+            '/spv/i'                                                                    => Mobile\OrangeFactory::class,
+            '/t\-mobile/i'                                                              => Mobile\TmobileFactory::class,
+            '/mot/i'                                                                    => Mobile\MotorolaFactory::class,
+            '/hs\-/i'                                                                   => Mobile\HisenseFactory::class,
+            '/beeline pro/i'                                                            => Mobile\ZteFactory::class,
+            '/beeline/i'                                                                => Mobile\BeelineFactory::class,
+            '/digma/i'                                                                  => Mobile\DigmaFactory::class,
+            '/axgio/i'                                                                  => Mobile\AxgioFactory::class,
+            '/zopo/i'                                                                   => Mobile\ZopoFactory::class,
+            '/malata/i'                                                                 => Mobile\MalataFactory::class,
+            '/starway/i'                                                                => Mobile\StarwayFactory::class,
+            '/starmobile/i'                                                             => Mobile\StarmobileFactory::class,
+            '/logicom/i'                                                                => Mobile\LogicomFactory::class,
+            '/gigabyte/i'                                                               => Mobile\GigabyteFactory::class,
+            '/qumo/i'                                                                   => Mobile\QumoFactory::class,
+            '/celkon/i'                                                                 => Mobile\CelkonFactory::class,
+            '/bravis/i'                                                                 => Mobile\BravisFactory::class,
+            '/fnac/i'                                                                   => Mobile\FnacFactory::class,
+            '/tcl/i'                                                                    => Mobile\TclFactory::class,
+            '/radxa/i'                                                                  => Mobile\RadxaFactory::class,
+            '/xolo/i'                                                                   => Mobile\XoloFactory::class,
+            '/dragon touch/i'                                                           => Mobile\DragonTouchFactory::class,
+            '/ramos/i'                                                                  => Mobile\RamosFactory::class,
+            '/woxter/i'                                                                 => Mobile\WoxterFactory::class,
+            '/k\-?touch/i'                                                              => Mobile\KtouchFactory::class,
+            '/mastone/i'                                                                => Mobile\MastoneFactory::class,
+            '/nuqleo/i'                                                                 => Mobile\NuqleoFactory::class,
+            '/wexler/i'                                                                 => Mobile\WexlerFactory::class,
+            '/exeq/i'                                                                   => Mobile\ExeqFactory::class,
+            '/4good/i'                                                                  => Mobile\FourGoodFactory::class,
+            '/utstar/i'                                                                 => Mobile\UtStarcomFactory::class,
+            '/walton/i'                                                                 => Mobile\WaltonFactory::class,
+            '/quadro/i'                                                                 => Mobile\QuadroFactory::class,
+            '/xiaomi/i'                                                                 => Mobile\XiaomiFactory::class,
+            '/pipo/i'                                                                   => Mobile\PipoFactory::class,
+            '/tesla/i'                                                                  => Mobile\TeslaFactory::class,
+            '/doro/i'                                                                   => Mobile\DoroFactory::class,
+            '/captiva/i'                                                                => Mobile\CaptivaFactory::class,
+            '/elephone/i'                                                               => Mobile\ElephoneFactory::class,
+            '/cyrus/i'                                                                  => Mobile\CyrusFactory::class,
+            '/wopad/i'                                                                  => Mobile\WopadFactory::class,
+            '/anka/i'                                                                   => Mobile\AnkaFactory::class,
+            '/lemon/i'                                                                  => Mobile\LemonFactory::class,
+            '/lava/i'                                                                   => Mobile\LavaFactory::class,
+            '/sop\-/i'                                                                  => Mobile\SopFactory::class,
+            '/vsun/i'                                                                   => Mobile\VsunFactory::class,
+            '/advan/i'                                                                  => Mobile\AdvanFactory::class,
+            '/velocity/i'                                                               => Mobile\VelocityMicroFactory::class,
+            '/allview/i'                                                                => Mobile\AllviewFactory::class,
+            '/myphone/i'                                                                => Mobile\MyphoneFactory::class,
+            '/turbo\-x/i'                                                               => Mobile\TurboxFactory::class,
+            '/tagi/i'                                                                   => Mobile\TagiFactory::class,
+            '/avvio/i'                                                                  => Mobile\AvvioFactory::class,
+            '/e\-boda/i'                                                                => Mobile\EbodaFactory::class,
+            '/ergo/i'                                                                   => Mobile\ErgoFactory::class,
+            '/pulid/i'                                                                  => Mobile\PulidFactory::class,
+            '/dexp/i'                                                                   => Mobile\DexpFactory::class,
+            '/keneksi/i'                                                                => Mobile\KeneksiFactory::class,
+            '/reeder/i'                                                                 => Mobile\ReederFactory::class,
+            '/globex/i'                                                                 => Mobile\GlobexFactory::class,
+            '/oukitel/i'                                                                => Mobile\OukitelFactory::class,
+            '/itel/i'                                                                   => Mobile\ItelFactory::class,
+            '/wileyfox/i'                                                               => Mobile\WileyfoxFactory::class,
+            '/morefine/i'                                                               => Mobile\MorefineFactory::class,
+            '/vernee/i'                                                                 => Mobile\VerneeFactory::class,
+            '/iocean/i'                                                                 => Mobile\IoceanFactory::class,
+            '/intki/i'                                                                  => Mobile\IntkiFactory::class,
+            '/i\-joy/i'                                                                 => Mobile\IjoyFactory::class,
+            '/inq/i'                                                                    => Mobile\InqFactory::class,
+            '/inew/i'                                                                   => Mobile\InewFactory::class,
+            '/iberry/i'                                                                 => Mobile\IberryFactory::class,
+            '/koobee/i'                                                                 => Mobile\KoobeeFactory::class,
+            '/kingsun/i'                                                                => Mobile\KingsunFactory::class,
+            '/komu/i'                                                                   => Mobile\KomuFactory::class,
+            '/kopo/i'                                                                   => Mobile\KopoFactory::class,
+            '/koridy/i'                                                                 => Mobile\KoridyFactory::class,
+            '/kumai/i'                                                                  => Mobile\KumaiFactory::class,
+            '/konrow/i'                                                                 => Mobile\KonrowFactory::class,
+            '/BLU/'                                                                     => Mobile\BluFactory::class,
+            '/MTC/'                                                                     => Mobile\MtcFactory::class,
+            '/eSTAR/'                                                                   => Mobile\EstarFactory::class,
+            '/DARK(?:MOON|SIDE|NIGHT)/'                                                 => Mobile\WikoFactory::class,
+            '/ARK/'                                                                     => Mobile\ArkFactory::class,
+            '/Magic/'                                                                   => Mobile\MagicFactory::class,
+            '/XT811/'                                                                   => Mobile\FlipkartFactory::class,
+            '/XT\d{3,4}/'                                                               => Mobile\MotorolaFactory::class,
+            '/M[Ii][ -](?:\d|PAD|MAX|NOTE|A1)/'                                         => Mobile\XiaomiFactory::class,
+            '/HM[ _](?:NOTE|1SC|1SW|1S)/'                                               => Mobile\XiaomiFactory::class,
+            '/WeTab/'                                                                   => Mobile\NeofonieFactory::class,
+            '/SIE\-/'                                                                   => Mobile\SiemensFactory::class,
+            '/CAL21/'                                                                   => Mobile\CasioFactory::class,
+            '/g3mini/i'                                                                 => Mobile\LgFactory::class,
+            '/P[CG]\d{5}/'                                                              => Mobile\HtcFactory::class,
+            '/[AC]\d{5}/'                                                               => Mobile\NomiFactory::class,
+            '/one e\d{4}/i'                                                             => Mobile\OneplusFactory::class,
+            '/one a200[135]/i'                                                          => Mobile\OneplusFactory::class,
+            '/HS\-/'                                                                    => Mobile\HisenseFactory::class,
+            '/f5281|u972|e621t|eg680|e2281uk/i'                                         => Mobile\HisenseFactory::class,
+            '/TBD\d{4}|TBD[BCG]\d{3,4}/'                                                => Mobile\ZekiFactory::class,
+            '/AC0732C|RC9724C|MT0739D|QS0716D|LC0720C|MT0812E/'                         => Mobile\TriQFactory::class,
+            '/ImPAD6213M_v2/'                                                           => Mobile\ImpressionFactory::class,
+            '/S4503Q/'                                                                  => Mobile\DnsFactory::class,
+            '/D6000/'                                                                   => Mobile\InnosFactory::class,
+            '/[SV]T\d{5}/'                                                              => Mobile\TrekStorFactory::class,
+            '/e6560|c6750|c6742|c6730|c6522n|c5215|c5170|c5155|c5120|dm015k|kc\-s701/i' => Mobile\KyoceraFactory::class,
+            '/[eps]\d{3,4}x?/i'                                                         => Mobile\MedionFactory::class,
+            '/g6600/i'                                                                  => Mobile\HuaweiFactory::class,
+            '/DG\d{3,4}/'                                                               => Mobile\DoogeeFactory::class,
+            '/Touchlet|X7G|X10\./'                                                      => Mobile\PearlFactory::class,
+            '/mpqc\d{3,4}/i'                                                            => Mobile\MpmanFactory::class,
+            '/terra pad|pad1002/i'                                                      => Mobile\WortmannFactory::class,
+            '/[CDEFG]\d{4}/'                                                            => Mobile\SonyFactory::class,
+            '/PM\-\d{4}/'                                                               => Mobile\SanyoFactory::class,
+            '/folio_and_a|toshiba_ac_and_az|folio100/i'                                 => Mobile\ToshibaFactory::class,
+            '/(aqua|cloud)[_ \.]/i'                                                     => Mobile\IntexFactory::class,
+            '/3Q/'                                                                      => Mobile\TriQFactory::class,
+            '/UMI/'                                                                     => Mobile\UmiFactory::class,
         ];
 
-        foreach ($factoriesBeforeIntenso as $test => $factoryName) {
-            if ($s->contains($test, false)) {
-                /*  @var Factory\FactoryInterface $factory */
-                $factory = new $factoryName($this->loader);
-
-                return $factory->detect($useragent, $s);
-            }
-        }
-
-        if (preg_match('/INM\d{3,4}/', $useragent)) {
-            return (new Mobile\IntensoFactory($this->loader))->detect($useragent, $s);
-        }
-
-        $factoriesBeforeXiaomi = [
-            'jay-tech'     => Mobile\JaytechFactory::class,
-            'jolla'        => Mobile\JollaFactory::class,
-            'sailfish'     => Mobile\JollaFactory::class,
-            'kazam'        => Mobile\KazamFactory::class,
-            'kddi'         => Mobile\KddiFactory::class,
-            'kobo'         => Mobile\KoboFactory::class,
-            'lenco'        => Mobile\LencoFactory::class,
-            'lepan'        => Mobile\LePanFactory::class,
-            'logicpd'      => Mobile\LogicpdFactory::class,
-            'zoom2'        => Mobile\LogicpdFactory::class,
-            'nookcolor'    => Mobile\LogicpdFactory::class,
-            'nook color'   => Mobile\LogicpdFactory::class,
-            'medion'       => Mobile\MedionFactory::class,
-            'lifetab'      => Mobile\MedionFactory::class,
-            'meizu'        => Mobile\MeizuFactory::class,
-            'hisense'      => Mobile\HisenseFactory::class,
-            'minix'        => Mobile\MinixFactory::class,
-            'allwinner'    => Mobile\AllWinnerFactory::class,
-            'supra'        => Mobile\SupraFactory::class,
-            'prestigio'    => Mobile\PrestigioFactory::class,
-            'mobistel'     => Mobile\MobistelFactory::class,
-            'cynus'        => Mobile\MobistelFactory::class,
-            'moto'         => Mobile\MotorolaFactory::class,
-            'nintendo'     => Mobile\NintendoFactory::class,
-            'odys'         => Mobile\OdysFactory::class,
-            'oppo'         => Mobile\OppoFactory::class,
-            'panasonic'    => Mobile\PanasonicFactory::class,
-            'pandigital'   => Mobile\PandigitalFactory::class,
-            'phicomm'      => Mobile\PhicommFactory::class,
-            'pomp'         => Mobile\PompFactory::class,
-            'qmobile'      => Mobile\QmobileFactory::class,
-            'sanyo'        => Mobile\SanyoFactory::class,
-            'siemens'      => Mobile\SiemensFactory::class,
-            'benq'         => Mobile\SiemensFactory::class,
-            'sagem'        => Mobile\SagemFactory::class,
-            'ouya'         => Mobile\OuyaFactory::class,
-            'trevi'        => Mobile\TreviFactory::class,
-            'cowon'        => Mobile\CowonFactory::class,
-            'homtom'       => Mobile\HomtomFactory::class,
-            'hosin'        => Mobile\HosinFactory::class,
-            'hasee'        => Mobile\HaseeFactory::class,
-            'tecno'        => Mobile\TecnoFactory::class,
-            'intex'        => Mobile\IntexFactory::class,
-            'sprint'       => Mobile\SprintFactory::class,
-            'gionee'       => Mobile\GioneeFactory::class,
-            'videocon'     => Mobile\VideoconFactory::class,
-            'gigaset'      => Mobile\GigasetFactory::class,
-            'dns'          => Mobile\DnsFactory::class,
-            'kyocera'      => Mobile\KyoceraFactory::class,
-            'texet'        => Mobile\TexetFactory::class,
-            's-tell'       => Mobile\StellFactory::class,
-            'bliss'        => Mobile\BlissFactory::class,
-            'alcatel'      => Mobile\AlcatelFactory::class,
-            'tolino'       => Mobile\TolinoFactory::class,
-            'toshiba'      => Mobile\ToshibaFactory::class,
-            'trekstor'     => Mobile\TrekStorFactory::class,
-            'viewsonic'    => Mobile\ViewSonicFactory::class,
-            'viewpad'      => Mobile\ViewSonicFactory::class,
-            'wiko'         => Mobile\WikoFactory::class,
-            'vivo iv'      => Mobile\BluFactory::class,
-            'vivo'         => Mobile\VivoFactory::class,
-            'haipai'       => Mobile\HaipaiFactory::class,
-            'megafon'      => Mobile\MegaFonFactory::class,
-            'yuanda'       => Mobile\YuandaFactory::class,
-            'pocketbook'   => Mobile\PocketBookFactory::class,
-            'goclever'     => Mobile\GoCleverFactory::class,
-            'senseit'      => Mobile\SenseitFactory::class,
-            'twz'          => Mobile\TwzFactory::class,
-            'i-mobile'     => Mobile\ImobileFactory::class,
-            'evercoss'     => Mobile\EvercossFactory::class,
-            'dino'         => Mobile\DinoFactory::class,
-            'shaan'        => Mobile\ShaanFactory::class,
-            'iball'        => Mobile\ShaanFactory::class,
-            'modecom'      => Mobile\ModecomFactory::class,
-            'kiano'        => Mobile\KianoFactory::class,
-            'philips'      => Mobile\PhilipsFactory::class,
-            'infinix'      => Mobile\InfinixFactory::class,
-            'infocus'      => Mobile\InfocusFactory::class,
-            'karbonn'      => Mobile\KarbonnFactory::class,
-            'pentagram'    => Mobile\PentagramFactory::class,
-            'smartfren'    => Mobile\SmartfrenFactory::class,
-            'ngm'          => Mobile\NgmFactory::class,
-            'orange hi 4g' => Mobile\ZteFactory::class,
-            'orange reyo'  => Mobile\ZteFactory::class,
-            'orange'       => Mobile\OrangeFactory::class,
-            'spv'          => Mobile\OrangeFactory::class,
-            't-mobile'     => Mobile\TmobileFactory::class,
-            'mot'          => Mobile\MotorolaFactory::class,
-            'hs-'          => Mobile\HisenseFactory::class,
-            'beeline pro'  => Mobile\ZteFactory::class,
-            'beeline'      => Mobile\BeelineFactory::class,
-            'digma'        => Mobile\DigmaFactory::class,
-            'axgio'        => Mobile\AxgioFactory::class,
-            'zopo'         => Mobile\ZopoFactory::class,
-            'malata'       => Mobile\MalataFactory::class,
-            'starway'      => Mobile\StarwayFactory::class,
-            'starmobile'   => Mobile\StarmobileFactory::class,
-            'logicom'      => Mobile\LogicomFactory::class,
-            'gigabyte'     => Mobile\GigabyteFactory::class,
-            'qumo'         => Mobile\QumoFactory::class,
-            'celkon'       => Mobile\CelkonFactory::class,
-            'bravis'       => Mobile\BravisFactory::class,
-            'fnac'         => Mobile\FnacFactory::class,
-            'tcl'          => Mobile\TclFactory::class,
-            'radxa'        => Mobile\RadxaFactory::class,
-            'xolo'         => Mobile\XoloFactory::class,
-            'dragon touch' => Mobile\DragonTouchFactory::class,
-            'ramos'        => Mobile\RamosFactory::class,
-            'woxter'       => Mobile\WoxterFactory::class,
-            'ktouch'       => Mobile\KtouchFactory::class,
-            'k-touch'      => Mobile\KtouchFactory::class,
-            'mastone'      => Mobile\MastoneFactory::class,
-            'nuqleo'       => Mobile\NuqleoFactory::class,
-            'wexler'       => Mobile\WexlerFactory::class,
-            'exeq'         => Mobile\ExeqFactory::class,
-            '4good'        => Mobile\FourGoodFactory::class,
-            'utstar'       => Mobile\UtStarcomFactory::class,
-            'walton'       => Mobile\WaltonFactory::class,
-            'quadro'       => Mobile\QuadroFactory::class,
-            'xiaomi'       => Mobile\XiaomiFactory::class,
-            'pipo'         => Mobile\PipoFactory::class,
-            'tesla'        => Mobile\TeslaFactory::class,
-            'doro'         => Mobile\DoroFactory::class,
-            'captiva'      => Mobile\CaptivaFactory::class,
-            'elephone'     => Mobile\ElephoneFactory::class,
-            'cyrus'        => Mobile\CyrusFactory::class,
-            'wopad'        => Mobile\WopadFactory::class,
-            'anka'         => Mobile\AnkaFactory::class,
-            'lemon'        => Mobile\LemonFactory::class,
-            'lava'         => Mobile\LavaFactory::class,
-            'sop-'         => Mobile\SopFactory::class,
-            'vsun'         => Mobile\VsunFactory::class,
-            'advan'        => Mobile\AdvanFactory::class,
-            'velocity'     => Mobile\VelocityMicroFactory::class,
-            'allview'      => Mobile\AllviewFactory::class,
-            'myphone'      => Mobile\MyphoneFactory::class,
-            'turbo-x'      => Mobile\TurboxFactory::class,
-            'tagi'         => Mobile\TagiFactory::class,
-            'avvio'        => Mobile\AvvioFactory::class,
-            'e-boda'       => Mobile\EbodaFactory::class,
-            'ergo'         => Mobile\ErgoFactory::class,
-            'pulid'        => Mobile\PulidFactory::class,
-            'dexp'         => Mobile\DexpFactory::class,
-            'keneksi'      => Mobile\KeneksiFactory::class,
-            'reeder'       => Mobile\ReederFactory::class,
-            'globex'       => Mobile\GlobexFactory::class,
-            'oukitel'      => Mobile\OukitelFactory::class,
-            'itel'         => Mobile\ItelFactory::class,
-            'wileyfox'     => Mobile\WileyfoxFactory::class,
-            'morefine'     => Mobile\MorefineFactory::class,
-            'vernee'       => Mobile\VerneeFactory::class,
-            'iocean'       => Mobile\IoceanFactory::class,
-            'intki'        => Mobile\IntkiFactory::class,
-            'i-joy'        => Mobile\IjoyFactory::class,
-            'inq'          => Mobile\InqFactory::class,
-            'inew'         => Mobile\InewFactory::class,
-            'iberry'       => Mobile\IberryFactory::class,
-            'koobee'       => Mobile\KoobeeFactory::class,
-            'kingsun'      => Mobile\KingsunFactory::class,
-            'komu'         => Mobile\KomuFactory::class,
-            'kopo'         => Mobile\KopoFactory::class,
-            'koridy'       => Mobile\KoridyFactory::class,
-            'kumai'        => Mobile\KumaiFactory::class,
-            'konrow'       => Mobile\KonrowFactory::class,
-        ];
-
-        foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
-            if ($s->contains($test, false)) {
+        foreach ($factoriesBeforeFly as $rule => $factoryName) {
+            if (preg_match($rule, $useragent)) {
                 /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);
 
                 return $factory->detect($useragent, $s);
             }
-        }
-
-        if ($s->contains('BLU', true)) {
-            return (new Mobile\BluFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('MTC', true)) {
-            return (new Mobile\MtcFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('eSTAR', true)) {
-            return (new Mobile\EstarFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['DARKMOON', 'DARKSIDE', 'DARKNIGHT'], true)) {
-            return (new Mobile\WikoFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('ARK', true)) {
-            return (new Mobile\ArkFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('Magic', true)) {
-            return (new Mobile\MagicFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('XT811', true)) {
-            return (new Mobile\FlipkartFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/XT\d{3,4}/', $useragent)) {
-            return (new Mobile\MotorolaFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/M[Ii][ -](\d|PAD|MAX|NOTE|A1)/', $useragent)) {
-            return (new Mobile\XiaomiFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/HM[ _](NOTE|1SC|1SW|1S)/', $useragent)) {
-            return (new Mobile\XiaomiFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('WeTab', true)) {
-            return (new Mobile\NeofonieFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('SIE-', true)) {
-            return (new Mobile\SiemensFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('CAL21', true)) {
-            return (new Mobile\CasioFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('g3mini', false)) {
-            return (new Mobile\LgFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/P[CG]\d{5}/', $useragent)) {
-            return (new Mobile\HtcFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/[AC]\d{5}/', $useragent)) {
-            return (new Mobile\NomiFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/one e\d{4}/i', $useragent)) {
-            return (new Mobile\OneplusFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/one a200[135]/i', $useragent)) {
-            return (new Mobile\OneplusFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('HS-', true)) {
-            return (new Mobile\HisenseFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['f5281', 'u972', 'e621t', 'eg680', 'e2281uk'], false)) {
-            return (new Mobile\HisenseFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/TBD\d{4}/', $useragent)) {
-            return (new Mobile\ZekiFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/TBD[BCG]\d{3,4}/', $useragent)) {
-            return (new Mobile\ZekiFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/(AC0732C|RC9724C|MT0739D|QS0716D|LC0720C|MT0812E)/', $useragent)) {
-            return (new Mobile\TriQFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('ImPAD6213M_v2', true)) {
-            return (new Mobile\ImpressionFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('S4503Q', true)) {
-            return (new Mobile\DnsFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('D6000', true)) {
-            return (new Mobile\InnosFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/[SV]T\d{5}/', $useragent)) {
-            return (new Mobile\TrekStorFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('c6730', false)) {
-            return (new Mobile\KyoceraFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['p4501', 'p850x', 'e4004', 'e691x', 'p1050x', 'p1032x', 'p1040x', 's1035x', 'p1035x', 'p4502', 'p851x'], false)) {
-            return (new Mobile\MedionFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['g6600'], false)) {
-            return (new Mobile\HuaweiFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/DG\d{3,4}/', $useragent)) {
-            return (new Mobile\DoogeeFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['Touchlet', 'X7G', 'X10.'], true)) {
-            return (new Mobile\PearlFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/mpqc\d{3,4}/i', $useragent)) {
-            return (new Mobile\MpmanFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['terra pad', 'pad1002'], false)) {
-            return (new Mobile\WortmannFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/[CDEFG]\d{4}/', $useragent)) {
-            return (new Mobile\SonyFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/PM\-\d{4}/', $useragent)) {
-            return (new Mobile\SanyoFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100'], false)) {
-            return (new Mobile\ToshibaFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if (preg_match('/(aqua|cloud)[_ \.]/i', $useragent)) {
-            return (new Mobile\IntexFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('3Q', true)) {
-            return (new Mobile\TriQFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('UMI', true)) {
-            return (new Mobile\UmiFactory($this->loader))->detect($useragent, $s);
         }
 
         if (preg_match('/F[Ll][Yy]/', $useragent) && !preg_match('/FlyFlow/', $useragent)) {
@@ -1363,7 +1044,6 @@ class MobileFactory implements Factory\FactoryInterface
             'm502'            => Mobile\NavonFactory::class,
             'lencm900hz'      => Mobile\LencoFactory::class,
             'xm100'           => Mobile\LandvoFactory::class,
-            'dm015k'          => Mobile\KyoceraFactory::class,
             'm370i'           => Mobile\InfocusFactory::class,
             'dm550'           => Mobile\BlackviewFactory::class,
             ' m8 '            => Mobile\AmlogicFactory::class,
@@ -1531,7 +1211,7 @@ class MobileFactory implements Factory\FactoryInterface
             return (new Mobile\KonrowFactory($this->loader))->detect($useragent, $s);
         }
 
-        $factoriesBeforeXiaomi = [
+        $factoriesBeforeFly = [
             '7007hd'          => Mobile\PerfeoFactory::class,
             'pt-gf200'        => Mobile\PantechFactory::class,
             'k-8s'            => Mobile\KeenerFactory::class,
@@ -1614,7 +1294,6 @@ class MobileFactory implements Factory\FactoryInterface
             'picopad_s1'      => Mobile\AxiooFactory::class,
             'adi_5s'          => Mobile\ArtelFactory::class,
             'norma 2'         => Mobile\KeneksiFactory::class,
-            'kc-s701'         => Mobile\KyoceraFactory::class,
             't880g'           => Mobile\EtulineFactory::class,
             'studio 5.5'      => Mobile\BluFactory::class,
             'studio xl 2'     => Mobile\BluFactory::class,
@@ -1798,7 +1477,7 @@ class MobileFactory implements Factory\FactoryInterface
             ' z1 '            => Mobile\NinetologyFactory::class,
         ];
 
-        foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
+        foreach ($factoriesBeforeFly as $test => $factoryName) {
             if ($s->contains((string) $test, false)) {
                 /* @var Factory\FactoryInterface $factory */
                 $factory = new $factoryName($this->loader);

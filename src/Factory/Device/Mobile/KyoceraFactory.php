@@ -22,8 +22,14 @@ class KyoceraFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'e6560'   => 'kyocera e6560',
+        'c6750'   => 'kyocera c6750',
         'c6742'   => 'kyocera c6742',
         'c6730'   => 'kyocera c6730',
+        'c6522n'  => 'kyocera c6522n',
+        'c5215'   => 'kyocera c5215',
+        'c5170'   => 'kyocera c5170',
+        'c5155'   => 'kyocera c5155',
+        'c5120'   => 'kyocera c5120',
         'kc-s701' => 'kyocera kc-s701',
         'dm015k'  => 'kyocera dm015k',
     ];
