@@ -555,6 +555,7 @@ class MobileFactory implements Factory\FactoryInterface
             'kopo'         => Mobile\KopoFactory::class,
             'koridy'       => Mobile\KoridyFactory::class,
             'kumai'        => Mobile\KumaiFactory::class,
+            'konrow'       => Mobile\KonrowFactory::class,
         ];
 
         foreach ($factoriesBeforeXiaomi as $test => $factoryName) {
@@ -1524,6 +1525,10 @@ class MobileFactory implements Factory\FactoryInterface
 
         if (preg_match('/(i\-style|iq) ?\d/i', $useragent)) {
             return (new Mobile\ImobileFactory($this->loader))->detect($useragent, $s);
+        }
+
+        if (preg_match('/BIGCOOL|COOLFIVE|COOL\-K|Just5|LINK5/', $useragent)) {
+            return (new Mobile\KonrowFactory($this->loader))->detect($useragent, $s);
         }
 
         $factoriesBeforeXiaomi = [
