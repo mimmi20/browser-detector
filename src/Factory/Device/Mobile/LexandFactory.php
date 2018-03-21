@@ -23,6 +23,7 @@ class LexandFactory implements Factory\FactoryInterface
     private $devices = [
         'a1002' => 'lexand a1002',
         'a811'  => 'lexand a811',
+        's5a4'  => 'lexand s5a4',
     ];
 
     /**
