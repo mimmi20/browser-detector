@@ -18,6 +18,8 @@ use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
+use Seld\JsonLint\ParsingException;
+use Symfony\Component\Finder\Finder;
 use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
 use UaResult\Company\CompanyLoader;
@@ -58,6 +60,7 @@ class BrowserLoader implements ExtendedLoaderInterface
      * @param \Psr\Log\LoggerInterface              $logger
      *
      * @return self
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public static function getInstance(CacheInterface $cache, LoggerInterface $logger)
     {
@@ -106,7 +109,7 @@ class BrowserLoader implements ExtendedLoaderInterface
     }
 
     /**
-     * @throws \Seld\JsonLint\ParsingException
+     * @throws \RuntimeException
      *
      * @return \Generator|\stdClass[]
      */
@@ -116,10 +119,36 @@ class BrowserLoader implements ExtendedLoaderInterface
 
         if (null === $browsers) {
             $jsonParser = new JsonParser();
-            $browsers   = $jsonParser->parse(
-                file_get_contents(__DIR__ . '/../../data/browsers.json'),
-                JsonParser::DETECT_KEY_CONFLICTS
-            );
+            $browsers   = [];
+
+            $finder = new Finder();
+            $finder->files();
+            $finder->name('*.json');
+            $finder->ignoreDotFiles(true);
+            $finder->ignoreVCS(true);
+            $finder->ignoreUnreadableDirs();
+            $finder->in(__DIR__ . '/../../data/browsers/');
+
+            foreach ($finder as $file) {
+                /** @var \Symfony\Component\Finder\SplFileInfo $file */
+
+                try {
+                    $browsersFile = $jsonParser->parse(
+                        $file->getContents(),
+                        JsonParser::DETECT_KEY_CONFLICTS
+                    );
+                } catch (ParsingException $e) {
+                    throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
+                }
+
+                foreach ($browsersFile as $browserKey => $browserData) {
+                    if (array_key_exists($browserKey, $browsers)) {
+                        throw new \RuntimeException('browser key "' . $browserKey . '" was defined more then once');
+                    }
+
+                    $browsers[$browserKey] = $browserData;
+                }
+            }
         }
 
         foreach ($browsers as $browserKey => $data) {
@@ -198,13 +227,13 @@ class BrowserLoader implements ExtendedLoaderInterface
     }
 
     /**
-     * @param string $deviceKey
+     * @param string $browserKey
      *
      * @return string
      */
-    private function getCacheKey(string $deviceKey): string
+    private function getCacheKey(string $browserKey): string
     {
-        return self::CACHE_PREFIX . '_' . str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $deviceKey);
+        return self::CACHE_PREFIX . '_' . str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $browserKey);
     }
 
     /**

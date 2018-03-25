@@ -1,0 +1,221 @@
+{
+    "airmail": {
+        "name": "Airmail",
+        "manufacturer": "Bloop",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "Airmail"
+            ]
+        },
+        "engine": "webkit"
+    },
+    "apple mail": {
+        "name": "Apple Mail",
+        "manufacturer": "Apple",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": null,
+            "search": null
+        },
+        "engine": "webkit"
+    },
+    "cronomail": {
+        "name": "CronoMail",
+        "manufacturer": "Unknown",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "CronoMail"
+            ]
+        },
+        "engine": "webkit"
+    },
+    "hotmailbuzzr": {
+        "name": "HotmailBuzzr",
+        "manufacturer": "Unknown",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": null,
+            "search": null
+        },
+        "engine": "webkit"
+    },
+    "inboxcube": {
+        "name": "Inboxcube",
+        "manufacturer": "Inboxcube",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "Inboxcube"
+            ]
+        },
+        "engine": "webkit"
+    },
+    "incredimail": {
+        "name": "Incredimail",
+        "manufacturer": "Unknown",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "Incredimail",
+                "Incredimail\\-"
+            ]
+        },
+        "engine": "webkit"
+    },
+    "kmail2": {
+        "name": "KMail2",
+        "manufacturer": "Kde",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "kmail2"
+            ]
+        },
+        "engine": "webkit"
+    },
+    "kontact": {
+        "name": "Kontact",
+        "manufacturer": "Kde",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "kontact"
+            ]
+        },
+        "engine": "webkit"
+    },
+    "lotus notes": {
+        "name": "Lotus Notes",
+        "manufacturer": "Ibm",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "LotusNotes",
+                "Lotus\\-Notes"
+            ]
+        },
+        "engine": "unknown"
+    },
+    "mailbar": {
+        "name": "MailBar",
+        "manufacturer": "MailBar",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "MailBar"
+            ]
+        },
+        "engine": "unknown"
+    },
+    "outlook": {
+        "name": "Outlook",
+        "manufacturer": "Microsoft",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "\\BrowserDetector\\Version\\MicrosoftOutlook",
+            "search": null
+        },
+        "engine": null
+    },
+    "outlook social connector": {
+        "name": "Outlook Social Connector",
+        "manufacturer": "Microsoft",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "\\BrowserDetector\\Version\\MicrosoftOutlook",
+            "search": null
+        },
+        "engine": "unknown"
+    },
+    "outlook-express": {
+        "name": "Windows Live Mail",
+        "manufacturer": "Microsoft",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "Outlook-Express"
+            ]
+        },
+        "engine": "trident"
+    },
+    "postbox": {
+        "name": "Postbox",
+        "manufacturer": "Postbox",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "Postbox"
+            ]
+        },
+        "engine": "gecko"
+    },
+    "thunderbird": {
+        "name": "Thunderbird",
+        "manufacturer": "MozillaFoundation",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "Thunderbird\\-Portable",
+                "Thunderbird"
+            ]
+        },
+        "engine": "gecko"
+    },
+    "unibox": {
+        "name": "Unibox",
+        "manufacturer": "eightloops",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "email-client",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "Unibox"
+            ]
+        },
+        "engine": "webkit"
+    }
+}
