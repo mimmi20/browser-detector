@@ -336,6 +336,7 @@ class MobileFactory implements Factory\FactoryInterface
             '/HL/'                     => Mobile\HonlinFactory::class,
             '/mtech/i'                 => Mobile\MtechFactory::class,
             '/myTAB/'                  => Mobile\MytabFactory::class,
+            '/lexand/'                 => Mobile\LexandFactory::class,
             // @todo: general rules
             '/u30gt|u55gt/i'                                  => Mobile\CubeFactory::class,
             '/gtx75/i'                                        => Mobile\UtStarcomFactory::class,
@@ -433,7 +434,7 @@ class MobileFactory implements Factory\FactoryInterface
             '/A400/'                                                           => Mobile\CelkonFactory::class,
             '/A5000/'                                                          => Mobile\SonyFactory::class,
             '/A101|A500|Z[25]00| T0[346789] | S55 |DA220HQL/'                  => Mobile\AcerFactory::class,
-            '/A1002|A811|S5A4/'                                                => Mobile\LexandFactory::class,
+            '/A1002|A811|S[45]A\d|SC7 PRO HD/'                                 => Mobile\LexandFactory::class,
             '/A120|A116|A114|A093|A065| A96 |Q327| A47/'                       => Mobile\MicromaxFactory::class,
             '/smart tab 4g/i'                                                  => Mobile\LenovoFactory::class,
             '/smart tab 4|vfd 600|985n/i'                                      => Mobile\VodafoneFactory::class,
