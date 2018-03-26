@@ -59,8 +59,9 @@ class BrowserLoader implements ExtendedLoaderInterface
      * @param \BrowserDetector\Cache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface              $logger
      *
-     * @return self
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return self
      */
     public static function getInstance(CacheInterface $cache, LoggerInterface $logger)
     {
@@ -130,7 +131,7 @@ class BrowserLoader implements ExtendedLoaderInterface
             $finder->in(__DIR__ . '/../../data/browsers/');
 
             foreach ($finder as $file) {
-                /** @var \Symfony\Component\Finder\SplFileInfo $file */
+                /* @var \Symfony\Component\Finder\SplFileInfo $file */
 
                 try {
                     $browsersFile = $jsonParser->parse(
