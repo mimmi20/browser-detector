@@ -1,0 +1,63 @@
+{
+    "nokia proxy browser": {
+        "name": "Nokia Proxy Browser",
+        "manufacturer": "Nokia",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "transcoder",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "OviBrowser"
+            ]
+        },
+        "engine": "gecko"
+    },
+    "opera mini": {
+        "name": "Opera Mini",
+        "manufacturer": "Opera",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "transcoder",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "OPiOS",
+                "Opera Mini"
+            ]
+        },
+        "engine": null
+    },
+    "silk": {
+        "name": "Silk",
+        "manufacturer": "Amazon",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "transcoder",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "Silk"
+            ]
+        },
+        "engine": null
+    },
+    "ucbrowser": {
+        "name": "UC Browser",
+        "manufacturer": "UcWeb",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "transcoder",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "UC Browser",
+                "UCBrowser",
+                "UBrowser",
+                "UCWEB",
+                "Browser"
+            ]
+        },
+        "engine": null
+    }
+}

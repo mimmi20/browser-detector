@@ -16,6 +16,7 @@ use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
+use Symfony\Component\Finder\Finder;
 use UaDeviceType\TypeLoader;
 use UaResult\Company\CompanyLoader;
 use UaResult\Device\Device;
@@ -54,6 +55,8 @@ class DeviceLoader implements ExtendedLoaderInterface
     /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface              $logger
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return self
      */
@@ -113,20 +116,23 @@ class DeviceLoader implements ExtendedLoaderInterface
         static $devices = null;
 
         if (null === $devices) {
-            $sourceDirectory = __DIR__ . '/../../data/devices/';
-            $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);
-            $jsonParser      = new JsonParser();
-            $devices         = [];
+            $jsonParser = new JsonParser();
+            $devices    = [];
 
-            foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-                /* @var $file \SplFileInfo */
-                if (!$file->isFile() || 'json' !== $file->getExtension()) {
-                    continue;
-                }
+            $finder = new Finder();
+            $finder->files();
+            $finder->name('*.json');
+            $finder->ignoreDotFiles(true);
+            $finder->ignoreVCS(true);
+            $finder->ignoreUnreadableDirs();
+            $finder->in(__DIR__ . '/../../data/devices/');
+
+            foreach ($finder as $file) {
+                /* @var \Symfony\Component\Finder\SplFileInfo $file */
 
                 try {
                     $devicesFile = $jsonParser->parse(
-                        file_get_contents($file->getPathname()),
+                        $file->getContents(),
                         JsonParser::DETECT_KEY_CONFLICTS
                     );
                 } catch (ParsingException $e) {

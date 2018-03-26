@@ -23,12 +23,19 @@ class KazamFactory implements Factory\FactoryInterface
     private $devices = [
         'thunder2 50'  => 'kazam thunder2 50',
         'thunder q45'  => 'kazam thunder q45',
-        'trooper2 50'  => 'kazam trooper 2 5.0',
+        'trooper2 50'  => 'kazam trooper2 50',
         'trooper 455'  => 'kazam trooper 455',
         'trooper 451'  => 'kazam trooper 451',
         'trooper 450l' => 'kazam trooper 450l',
         'trooper_450l' => 'kazam trooper 450l',
         'trooper_x55'  => 'kazam trooper x55',
+        'trooper x55'  => 'kazam trooper x55',
+        'trooper_x50'  => 'kazam trooper x50',
+        'trooper x50'  => 'kazam trooper x50',
+        'trooper_x45'  => 'kazam trooper x45',
+        'trooper_x40'  => 'kazam trooper x40',
+        'trooper_x35'  => 'kazam trooper x35',
+        'tornado 348'  => 'kazam tornado 348',
     ];
 
     /**
@@ -54,6 +61,16 @@ class KazamFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/((?:trooper|tornado|thunder)2?[ _][qx]?\d{2,3}l?)/i', $useragent, $matches)) {
+            $key = 'kazam ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

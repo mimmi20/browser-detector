@@ -1,0 +1,118 @@
+{
+    "elmedia player": {
+        "name": "Elmedia Player",
+        "manufacturer": "EltimaSoftware",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "multimedia-player",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "ElmediaPlayer"
+            ]
+        },
+        "engine": "unknown"
+    },
+    "mathplayer": {
+        "name": "MathPlayer",
+        "manufacturer": "Unknown",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "multimedia-player",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "MathPlayer"
+            ]
+        },
+        "engine": "unknown"
+    },
+    "quicktime": {
+        "name": "Quicktime",
+        "manufacturer": "Apple",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "multimedia-player",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "qtver=",
+                "Quicktime",
+                "QuickTime"
+            ]
+        },
+        "engine": "webkit"
+    },
+    "qvodplayerbrowser": {
+        "name": "Qvod Player Browser",
+        "manufacturer": "Qvod Technology",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "multimedia-player",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "QvodPlayerBrowser",
+                "QvodPlayerBrowser:"
+            ]
+        },
+        "engine": null
+    },
+    "roku dvp": {
+        "name": "Roku DVP",
+        "manufacturer": "Roku",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "multimedia-player",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "Roku\\/DVP\\-"
+            ]
+        },
+        "engine": "unknown"
+    },
+    "vlc media player": {
+        "name": "VLC Media Player",
+        "manufacturer": "VideoLan",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "multimedia-player",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "VLC"
+            ]
+        },
+        "engine": "unknown"
+    },
+    "winamp": {
+        "name": "Winamp",
+        "manufacturer": "Unknown",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "multimedia-player",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "WinampMPEG"
+            ]
+        },
+        "engine": "unknown"
+    },
+    "windows media player": {
+        "name": "Windows Media Player",
+        "manufacturer": "Microsoft",
+        "pdfSupport": true,
+        "rssSupport": false,
+        "type": "multimedia-player",
+        "version": {
+            "class": "VersionFactory",
+            "search": [
+                "Windows\\-Media\\-Player",
+                "NSPlayer"
+            ]
+        },
+        "engine": "trident"
+    }
+}

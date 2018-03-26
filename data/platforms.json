@@ -991,8 +991,10 @@
     "marketingName": "Yun OS",
     "manufacturer": "Alibaba",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "YunOs"
+      ]
     }
   },
   "opensolaris": {

@@ -11,13 +11,13 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
-use BrowserDetector\Factory\NormalizerFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Version\Version;
 use Stringy\Stringy;
+use UaNormalizer\NormalizerFactory;
 use UaResult\Engine\EngineInterface;
 
 trait EngineTestDetectTrait

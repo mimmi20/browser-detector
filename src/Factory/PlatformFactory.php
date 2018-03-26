@@ -99,6 +99,7 @@ class PlatformFactory implements FactoryInterface
             'yuanda50'     => 'java',
             'wap browser'  => 'java',
             'wap-browser'  => 'java',
+            'yunos'        => 'yun os',
             'aliyunos'     => 'yun os',
         ];
 

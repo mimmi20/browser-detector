@@ -21,8 +21,14 @@ class LexandFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'a1002' => 'lexand a1002',
-        'a811'  => 'lexand a811',
+        'a1002'      => 'lexand a1002',
+        'a811'       => 'lexand a811',
+        's5a4'       => 'lexand s5a4',
+        's4a5'       => 'lexand s4a5',
+        's4a4'       => 'lexand s4a4',
+        's4a2'       => 'lexand s4a2',
+        's4a1'       => 'lexand s4a1',
+        'sc7 pro hd' => 'lexand sc7 pro hd',
     ];
 
     /**
