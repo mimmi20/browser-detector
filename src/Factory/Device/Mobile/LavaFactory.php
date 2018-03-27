@@ -24,13 +24,15 @@ class LavaFactory implements Factory\FactoryInterface
         ' x17 '       => 'lava x17',
         'iris fuel60' => 'lava iris fuel60',
         'iris fuel50' => 'lava iris fuel50',
-        'iris x8 l'   => 'lava iris x8 l',
+        'iris x8 l'   => 'lava iris x8l',
         'iris x1'     => 'lava iris x1',
         'iris700'     => 'lava iris 700',
         'pixel v2+'   => 'lava pixel v2+',
         'pixelv1'     => 'lava pixel v1',
         'iris x8s'    => 'lava iris x8s',
         'iris402+'    => 'lava iris 402+',
+        'iris_349+'   => 'lava iris 349+',
+        'iris349i'    => 'lava iris 349i',
         'x1 atom'     => 'lava iris x1 atom',
         'x1 selfie'   => 'lava iris x1 selfie',
         'x5 4g'       => 'lava iris x5 4g',
@@ -61,6 +63,20 @@ class LavaFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(iris|pixel|spark)[ _]?((?:fuel|x|v)?\d+) ?([ils+])?/i', $useragent, $matches)) {
+            $key = 'lava ' . mb_strtolower($matches[1]) . ' ' . mb_strtolower($matches[2]);
+
+            if (isset($matches[3])) {
+                $key .= mb_strtolower($matches[3]);
+            }
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
