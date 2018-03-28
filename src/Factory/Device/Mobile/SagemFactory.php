@@ -24,7 +24,7 @@ class SagemFactory implements Factory\FactoryInterface
         'my511x'  => 'sagem my511x',
         'my411x'  => 'sagem my411x',
         'my411c'  => 'sagem my411c',
-        'myC5-2v' => 'sagem myC5-2v',
+        'myc5-2v' => 'sagem myC5-2v',
         'myv-55'  => 'sagem myv-55',
     ];
 
@@ -51,6 +51,16 @@ class SagemFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(my(?:\d{3}[cx]|c5\-2v|v\-55))/i', $useragent, $matches)) {
+            $key = 'sagem ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

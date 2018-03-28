@@ -21,7 +21,7 @@ class SfrFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'startrail4' => 'sfr startrail 4',
+        'startrail4' => 'sfr startrail4',
     ];
 
     /**
@@ -47,6 +47,16 @@ class SfrFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(startrail4)/i', $useragent, $matches)) {
+            $key = 'sfr ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

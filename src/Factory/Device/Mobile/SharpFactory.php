@@ -22,7 +22,7 @@ class SharpFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'shl25'          => 'sharp shl25',
-        'sharp-tq-gx30i' => 'sharp tq-gx30i',
+        'tq-gx30i' => 'sharp tq-gx30i',
         'sh-10d'         => 'sharp sh-10d',
         'sh-01f'         => 'sharp sh-01f',
         'sh8128u'        => 'sharp sh8128u',
@@ -30,7 +30,7 @@ class SharpFactory implements Factory\FactoryInterface
         '306sh'          => 'sharp 306sh',
         '304sh'          => 'sharp 304sh',
         'sh80f'          => 'sharp sh80f',
-        'sh05c'          => 'sharp sh-05c',
+        'sh05c'          => 'sharp sh05c',
         'is05'           => 'sharp is05',
     ];
 
@@ -57,6 +57,18 @@ class SharpFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $regex = '/(' . implode('|', array_map('preg_quote', array_keys($this->devices))) . ')/i';
+
+        $matches = [];
+
+        if (preg_match($regex, $useragent, $matches)) {
+            $key = $this->devices[mb_strtolower($matches[1])];
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

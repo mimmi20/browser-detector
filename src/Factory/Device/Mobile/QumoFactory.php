@@ -47,6 +47,16 @@ class QumoFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(quest)[ _]?(\d{3})/i', $useragent, $matches)) {
+            $key = 'qumo ' . mb_strtolower($matches[1]) . ' ' . mb_strtolower($matches[2]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

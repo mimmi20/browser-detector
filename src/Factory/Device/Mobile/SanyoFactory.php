@@ -27,7 +27,7 @@ class SanyoFactory implements Factory\FactoryInterface
         'scp588cn' => 'sanyo scp588cn',
         'scp3810'  => 'sanyo scp3810',
         'e4100'    => 'sanyo e4100',
-        'pm-8200'  => 'sanyo pm-8200',
+        'pm-8200'  => 'sanyo pm8200',
     ];
 
     /**
@@ -53,6 +53,16 @@ class SanyoFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(scp|e|pm)\-?(\d{3,4}(?:cn)?)/i', $useragent, $matches)) {
+            $key = 'lava ' . mb_strtolower($matches[1]) . ' ' . mb_strtolower($matches[2]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

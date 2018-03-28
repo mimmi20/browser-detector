@@ -21,7 +21,7 @@ class ShiruFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'samurai10' => 'shiru samurai 10',
+        'samurai10' => 'shiru samurai10',
     ];
 
     /**
@@ -47,6 +47,16 @@ class ShiruFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(samurai10)/i', $useragent, $matches)) {
+            $key = 'shiru ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

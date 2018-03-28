@@ -167,8 +167,8 @@ class SonyFactory implements Factory\FactoryInterface
         'sgp641'               => 'sony sgp641',
         'sgp621'               => 'sony sgp621',
         'sgp611'               => 'sony sgp611',
-        'SGP551'               => 'sony sgp551',
-        'SGP521'               => 'sony sgp521',
+        'sgp551'               => 'sony sgp551',
+        'sgp521'               => 'sony sgp521',
         'sgp512'               => 'sony sgp512',
         'sgp511'               => 'sony sgp511',
         'sgp412'               => 'sony sgp412',
@@ -258,8 +258,8 @@ class SonyFactory implements Factory\FactoryInterface
         'w995'                 => 'sonyericsson w995',
         'w918c'                => 'sonyericsson w918c',
         'w910i'                => 'sonyericsson w910i',
-        'W890i'                => 'sonyericsson w890i',
-        'W890c'                => 'sonyericsson w890c',
+        'w890i'                => 'sonyericsson w890i',
+        'w890c'                => 'sonyericsson w890c',
         'w760i'                => 'sonyericsson w760i',
         'w760c'                => 'sonyericsson w760c',
         'w715v'                => 'sonyericsson w715v',
@@ -350,10 +350,22 @@ class SonyFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+//        $matches = [];
+//
+//        if (preg_match('/([acdefg]\d{4}|sgp\d{3}|x[ml]\d{2}[th]|sgpt\d{2}|[slwm]t\d{2}|[sm]k\d{2}|so\-\d{2}[bcdeg]|l\d{2}u)/i', $useragent, $matches)) {
+//            $key = 'sony ' . mb_strtolower($matches[1]);
+//
+//            if ($this->loader->has($key)) {
+//                return $this->loader->load($key, $useragent);
+//            }
+//        }
+
+        $regex = '/(' . implode('|', array_map('preg_quote', array_keys($this->devices))) . ')/i';
+
         $matches = [];
 
-        if (preg_match('/([acdefg]\d{4}|sgp\d{3}|x[ml]\d{2}[th]|sgpt\d{2}|[slwm]t\d{2}|[sm]k\d{2}|so\-\d{2}[bcdeg]|l\d{2}u)/i', $useragent, $matches)) {
-            $key = 'sony ' . mb_strtolower($matches[1]);
+        if (preg_match($regex, $useragent, $matches)) {
+            $key = $this->devices[mb_strtolower($matches[1])];
 
             if ($this->loader->has($key)) {
                 return $this->loader->load($key, $useragent);
