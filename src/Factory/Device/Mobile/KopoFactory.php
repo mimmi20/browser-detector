@@ -26,6 +26,11 @@ class KopoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kopo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class KopoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kopo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

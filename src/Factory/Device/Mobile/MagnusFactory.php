@@ -25,6 +25,11 @@ class MagnusFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general magnus device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MagnusFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general magnus device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

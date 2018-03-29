@@ -43,6 +43,11 @@ class MediacomFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general mediacom device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -71,6 +76,6 @@ class MediacomFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general mediacom device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

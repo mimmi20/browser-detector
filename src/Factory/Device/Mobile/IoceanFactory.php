@@ -25,6 +25,11 @@ class IoceanFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general iocean device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class IoceanFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general iocean device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

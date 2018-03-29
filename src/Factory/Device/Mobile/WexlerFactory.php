@@ -27,6 +27,11 @@ class WexlerFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general wexler device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class WexlerFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general wexler device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -28,6 +28,11 @@ class SymphonyFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general symphony device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -68,6 +73,6 @@ class SymphonyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general symphony device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

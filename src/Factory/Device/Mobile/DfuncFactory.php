@@ -58,6 +58,6 @@ class DfuncFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general dfunc device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

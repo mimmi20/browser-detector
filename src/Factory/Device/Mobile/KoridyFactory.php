@@ -27,6 +27,11 @@ class KoridyFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general koridy device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class KoridyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general koridy device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

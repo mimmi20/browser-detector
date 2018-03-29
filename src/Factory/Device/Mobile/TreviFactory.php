@@ -28,6 +28,11 @@ class TreviFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general trevi device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class TreviFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general trevi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

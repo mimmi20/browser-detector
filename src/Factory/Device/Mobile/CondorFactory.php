@@ -63,6 +63,6 @@ class CondorFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general condor device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

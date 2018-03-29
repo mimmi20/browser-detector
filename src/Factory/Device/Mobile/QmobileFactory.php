@@ -34,6 +34,11 @@ class QmobileFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general qmobile device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -72,6 +77,6 @@ class QmobileFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general qmobile device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

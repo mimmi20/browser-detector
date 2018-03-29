@@ -27,6 +27,11 @@ class XoroFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general xoro device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class XoroFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general xoro device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -21,8 +21,8 @@ class AccentFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'touareg8_3g' => 'accent touareg8 3g',
-        'eagle7 3g'   => 'accent eagle7 3g',
+        'touareg8' => 'accent touareg8',
+        'eagle7'   => 'accent eagle7',
     ];
 
     /**
@@ -53,12 +53,22 @@ class AccentFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(touareg8|eagle7)/i', $useragent, $matches)) {
+            $key = 'accent ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
         }
 
-        return $this->loader->load('general accent device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

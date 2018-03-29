@@ -25,6 +25,11 @@ class MhorseFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general mhorse device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MhorseFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general mhorse device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

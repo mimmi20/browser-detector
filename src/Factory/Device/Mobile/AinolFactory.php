@@ -22,7 +22,7 @@ class AinolFactory implements Factory\FactoryInterface
      */
     private $devices = [
         'numy_note_9' => 'ainol numy note 9',
-        'novo7fire'   => 'ainol novo 7 fire',
+        'novo7fire'   => 'ainol novo7fire',
     ];
 
     /**
@@ -59,6 +59,6 @@ class AinolFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ainol device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

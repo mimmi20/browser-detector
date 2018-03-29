@@ -25,6 +25,11 @@ class ThreeSixtyFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general 360 device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class ThreeSixtyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general 360 device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

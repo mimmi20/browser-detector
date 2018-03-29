@@ -58,6 +58,6 @@ class AmoiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general amoi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

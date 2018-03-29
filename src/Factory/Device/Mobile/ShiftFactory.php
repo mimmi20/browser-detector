@@ -26,6 +26,11 @@ class ShiftFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general shift device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -64,6 +69,6 @@ class ShiftFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general shift device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

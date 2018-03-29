@@ -58,6 +58,6 @@ class ExeqFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general exeq device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

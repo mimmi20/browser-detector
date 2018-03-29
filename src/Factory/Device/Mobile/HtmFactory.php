@@ -26,6 +26,11 @@ class HtmFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general htm device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class HtmFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general htm device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

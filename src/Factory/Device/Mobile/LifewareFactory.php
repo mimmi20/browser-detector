@@ -26,6 +26,11 @@ class LifewareFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general lifeware device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class LifewareFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lifeware device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

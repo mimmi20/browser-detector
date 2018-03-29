@@ -469,6 +469,11 @@ class HuaweiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general huawei device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -531,6 +536,6 @@ class HuaweiFactory implements Factory\FactoryInterface
             return $this->loader->load($key, $useragent);
         }
 
-        return $this->loader->load('general huawei device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -63,6 +63,6 @@ class BravisFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general bravis device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

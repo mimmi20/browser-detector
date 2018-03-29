@@ -29,6 +29,11 @@ class KonrowFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general konrow device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -57,6 +62,6 @@ class KonrowFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general konrow device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

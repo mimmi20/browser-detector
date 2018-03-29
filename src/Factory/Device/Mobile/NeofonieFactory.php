@@ -25,6 +25,11 @@ class NeofonieFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general neofonie device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class NeofonieFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general neofonie device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

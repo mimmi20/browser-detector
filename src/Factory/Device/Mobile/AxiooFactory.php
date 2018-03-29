@@ -58,6 +58,6 @@ class AxiooFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general axioo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

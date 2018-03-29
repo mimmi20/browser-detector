@@ -29,6 +29,11 @@ class FourGoodFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general 4good device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -57,6 +62,6 @@ class FourGoodFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general 4good device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

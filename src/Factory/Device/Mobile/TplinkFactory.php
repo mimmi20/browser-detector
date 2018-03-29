@@ -33,6 +33,11 @@ class TplinkFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general tp-link device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -61,6 +66,6 @@ class TplinkFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general tp-link device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

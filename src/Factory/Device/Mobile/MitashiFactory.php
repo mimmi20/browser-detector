@@ -25,6 +25,11 @@ class MitashiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general mitashi device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MitashiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general mitashi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

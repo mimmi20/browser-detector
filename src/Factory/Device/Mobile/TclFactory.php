@@ -34,6 +34,11 @@ class TclFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general tcl device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -74,6 +79,6 @@ class TclFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general tcl device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

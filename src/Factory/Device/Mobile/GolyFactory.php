@@ -27,6 +27,11 @@ class GolyFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general goly device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class GolyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general goly device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -25,6 +25,11 @@ class PmediaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general pmedia device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class PmediaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pmedia device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

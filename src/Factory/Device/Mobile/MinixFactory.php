@@ -25,6 +25,11 @@ class MinixFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general minix device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MinixFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general minix device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -25,6 +25,11 @@ class VertexFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general vertex device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class VertexFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general vertex device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

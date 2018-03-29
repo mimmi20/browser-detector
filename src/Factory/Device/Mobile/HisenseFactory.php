@@ -64,6 +64,11 @@ class HisenseFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general hisense device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -92,6 +97,6 @@ class HisenseFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general hisense device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

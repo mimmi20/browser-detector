@@ -46,6 +46,11 @@ class TecnoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general tecno device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -74,6 +79,6 @@ class TecnoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general tecno device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

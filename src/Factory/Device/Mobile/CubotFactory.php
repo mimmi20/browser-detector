@@ -74,6 +74,6 @@ class CubotFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general cubot device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -26,6 +26,11 @@ class TurboPadFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general turbopad device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class TurboPadFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general turbopad device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

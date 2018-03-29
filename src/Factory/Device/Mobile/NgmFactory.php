@@ -29,6 +29,11 @@ class NgmFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general ngm device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -57,6 +62,6 @@ class NgmFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ngm device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

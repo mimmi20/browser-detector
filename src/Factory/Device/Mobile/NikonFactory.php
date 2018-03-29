@@ -25,6 +25,11 @@ class NikonFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general nikon device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class NikonFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general nikon device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

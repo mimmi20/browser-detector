@@ -29,6 +29,11 @@ class VodafoneFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general vodafone device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -57,6 +62,6 @@ class VodafoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general vodafone device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

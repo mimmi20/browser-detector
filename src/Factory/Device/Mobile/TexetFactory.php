@@ -33,6 +33,11 @@ class TexetFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general texet device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -61,6 +66,6 @@ class TexetFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general texet device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

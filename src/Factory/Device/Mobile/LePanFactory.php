@@ -25,6 +25,11 @@ class LePanFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general lepan device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class LePanFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lepan device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

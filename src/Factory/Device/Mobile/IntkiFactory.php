@@ -25,6 +25,11 @@ class IntkiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general intki device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class IntkiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general intki device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

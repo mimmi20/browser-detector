@@ -25,6 +25,11 @@ class IdeaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general idea device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class IdeaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general idea device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

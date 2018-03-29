@@ -26,6 +26,11 @@ class InsigniaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general insignia device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class InsigniaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general insignia device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

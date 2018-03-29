@@ -36,9 +36,14 @@ class KtouchFactory implements Factory\FactoryInterface
         'e780'    => 'k-touch e780',
         'e619'    => 'k-touch e619',
         't96'     => 'k-touch t96',
-        'a930'    => 'k-touch tianyu a930',
+        'a930'    => 'k-touch a930',
         'a11'     => 'k-touch a11',
     ];
+
+    /**
+     * @var string
+     */
+    private $genericDevice = 'general k-touch device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -69,6 +74,6 @@ class KtouchFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ktouch device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -25,6 +25,11 @@ class MsiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general msi device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MsiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general msi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

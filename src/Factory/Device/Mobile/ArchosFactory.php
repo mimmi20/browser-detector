@@ -151,6 +151,6 @@ class ArchosFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general archos device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

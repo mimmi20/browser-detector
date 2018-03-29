@@ -28,6 +28,11 @@ class MicrosoftFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general microsoft device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class MicrosoftFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general microsoft device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

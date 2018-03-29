@@ -58,6 +58,6 @@ class AnkaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general anka device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

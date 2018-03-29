@@ -25,6 +25,11 @@ class WaltonFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general walton device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class WaltonFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general walton device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

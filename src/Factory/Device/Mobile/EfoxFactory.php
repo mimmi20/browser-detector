@@ -58,6 +58,6 @@ class EfoxFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general efox device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

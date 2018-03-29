@@ -58,6 +58,6 @@ class DinoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general dino device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

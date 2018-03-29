@@ -26,6 +26,11 @@ class OndaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general onda device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class OndaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general onda device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

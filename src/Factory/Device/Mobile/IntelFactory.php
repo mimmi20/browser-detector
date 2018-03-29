@@ -27,6 +27,11 @@ class IntelFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general intel device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class IntelFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general intel device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

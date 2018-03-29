@@ -25,6 +25,11 @@ class YuntabFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general yuntab device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class YuntabFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general yuntab device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

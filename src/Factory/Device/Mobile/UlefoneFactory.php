@@ -31,6 +31,11 @@ class UlefoneFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general ulefone device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -59,6 +64,6 @@ class UlefoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ulefone device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

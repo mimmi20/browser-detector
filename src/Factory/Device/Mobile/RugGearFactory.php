@@ -26,6 +26,11 @@ class RugGearFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general ruggear device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -64,6 +69,6 @@ class RugGearFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ruggear device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

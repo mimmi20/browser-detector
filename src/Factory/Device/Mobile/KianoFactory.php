@@ -30,6 +30,11 @@ class KianoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kiano device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -58,6 +63,6 @@ class KianoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kiano device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -27,6 +27,11 @@ class IntensoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general intenso device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class IntensoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general intenso device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

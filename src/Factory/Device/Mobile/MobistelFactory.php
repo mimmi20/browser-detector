@@ -37,6 +37,11 @@ class MobistelFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general mobistel device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -65,6 +70,6 @@ class MobistelFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general mobistel device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

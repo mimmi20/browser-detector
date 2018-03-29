@@ -29,7 +29,7 @@ class BarnesNobleFactory implements Factory\FactoryInterface
     /**
      * @var string
      */
-    private $genericDevice = 'general accent device';
+    private $genericDevice = 'general barnes & noble device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -60,6 +60,6 @@ class BarnesNobleFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general barnes & noble device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -21,14 +21,19 @@ class PointOfViewFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'tab-p517'        => 'pointofview tab p517',
-        'tab-protab25'    => 'pointofview protab 25',
-        'tab-protab30'    => 'pointofview protab 3 xxl',
-        'tab-protab2xxl'  => 'pointofview protab 2 xxl',
-        'tab-protab2xl'   => 'pointofview protab 2 xl',
-        'tab-protab2-ips' => 'pointofview protab 2 ips',
-        'pi1045'          => 'pointofview pi1045',
+        'tab-p517'        => 'point-of-view tab p517',
+        'tab-protab25'    => 'point-of-view protab 25',
+        'tab-protab30'    => 'point-of-view protab 3 xxl',
+        'tab-protab2xxl'  => 'point-of-view protab 2 xxl',
+        'tab-protab2xl'   => 'point-of-view protab 2 xl',
+        'tab-protab2-ips' => 'point-of-view protab 2 ips',
+        'pi1045'          => 'point-of-view pi1045',
     ];
+
+    /**
+     * @var string
+     */
+    private $genericDevice = 'general point-of-view device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -59,6 +64,6 @@ class PointOfViewFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general point of view device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

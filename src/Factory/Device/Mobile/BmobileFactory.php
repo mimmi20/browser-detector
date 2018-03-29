@@ -60,6 +60,6 @@ class BmobileFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general bmobile device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

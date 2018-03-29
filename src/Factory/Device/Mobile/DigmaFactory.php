@@ -96,6 +96,6 @@ class DigmaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general digma device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -25,6 +25,11 @@ class MasterFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general master device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MasterFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general master device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

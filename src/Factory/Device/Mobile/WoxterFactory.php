@@ -26,6 +26,11 @@ class WoxterFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general woxter device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class WoxterFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general woxter device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

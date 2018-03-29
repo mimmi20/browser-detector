@@ -38,6 +38,11 @@ class MeizuFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general meizu device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -66,6 +71,6 @@ class MeizuFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general meizu device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

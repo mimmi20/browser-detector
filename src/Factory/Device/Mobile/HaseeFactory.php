@@ -28,6 +28,11 @@ class HaseeFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general hasee device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class HaseeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general hasee device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

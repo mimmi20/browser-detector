@@ -21,15 +21,20 @@ class TmobileFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'pulse'             => 'tmobile pulse',
-        'mytouch4g'         => 'tmobile mytouch4g',
-        'mytouch 3g slide'  => 'tmobile mytouch3g',
-        't-mobile_g2_touch' => 'tmobile g2 touch',
-        't-mobile g2'       => 'tmobile g2 touch',
-        't-mobile g1'       => 'tmobile g1',
-        'garminfone'        => 'tmobile garminfone',
-        'ameo'              => 'tmobile ameo',
+        'pulse'             => 't-mobile pulse',
+        'mytouch4g'         => 't-mobile mytouch4g',
+        'mytouch 3g slide'  => 't-mobile mytouch3g',
+        't-mobile_g2_touch' => 't-mobile g2 touch',
+        't-mobile g2'       => 't-mobile g2 touch',
+        't-mobile g1'       => 't-mobile g1',
+        'garminfone'        => 't-mobile garminfone',
+        'ameo'              => 't-mobile ameo',
     ];
+
+    /**
+     * @var string
+     */
+    private $genericDevice = 'general t-mobile device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -60,6 +65,6 @@ class TmobileFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general t-mobile device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

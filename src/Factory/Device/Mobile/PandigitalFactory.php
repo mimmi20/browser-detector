@@ -28,6 +28,11 @@ class PandigitalFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general pandigital device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class PandigitalFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pandigital device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

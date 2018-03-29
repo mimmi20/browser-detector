@@ -30,6 +30,11 @@ class InewFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general inew device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -68,6 +73,6 @@ class InewFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general inew device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

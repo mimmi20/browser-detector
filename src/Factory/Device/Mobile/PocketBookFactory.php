@@ -25,6 +25,11 @@ class PocketBookFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general pocketbook device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class PocketBookFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pocketbook device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -58,6 +58,6 @@ class EinsUndEinsFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general einsundeins device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

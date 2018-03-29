@@ -25,6 +25,11 @@ class FnfFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general fnf device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class FnfFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general fnf device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

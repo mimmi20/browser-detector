@@ -27,6 +27,11 @@ class LencoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general lenco device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class LencoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lenco device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

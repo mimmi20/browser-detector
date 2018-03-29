@@ -44,6 +44,11 @@ class ItelFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general itel device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -82,6 +87,6 @@ class ItelFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general itel device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

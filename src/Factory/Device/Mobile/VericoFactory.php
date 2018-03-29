@@ -28,6 +28,11 @@ class VericoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general verico device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class VericoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general verico device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

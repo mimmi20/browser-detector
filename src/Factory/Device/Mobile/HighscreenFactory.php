@@ -30,6 +30,11 @@ class HighscreenFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general highscreen device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -58,6 +63,6 @@ class HighscreenFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general highscreen device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -39,6 +39,11 @@ class KazamFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kazam device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -77,6 +82,6 @@ class KazamFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kazam device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

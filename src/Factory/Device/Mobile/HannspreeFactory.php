@@ -27,6 +27,11 @@ class HannspreeFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general hannspree device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class HannspreeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general hannspree device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

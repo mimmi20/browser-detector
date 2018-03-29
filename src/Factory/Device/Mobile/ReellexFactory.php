@@ -25,6 +25,11 @@ class ReellexFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general reellex device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class ReellexFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general reellex device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

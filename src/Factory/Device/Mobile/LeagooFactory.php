@@ -30,6 +30,11 @@ class LeagooFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general leagoo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -58,6 +63,6 @@ class LeagooFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general leagoo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

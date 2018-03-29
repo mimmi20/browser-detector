@@ -36,6 +36,11 @@ class ToshibaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general toshiba device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -64,6 +69,6 @@ class ToshibaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general toshiba device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

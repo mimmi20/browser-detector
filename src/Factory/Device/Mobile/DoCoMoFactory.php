@@ -59,6 +59,6 @@ class DoCoMoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general docomo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

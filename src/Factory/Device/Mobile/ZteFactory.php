@@ -114,6 +114,11 @@ class ZteFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general zte device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -142,6 +147,6 @@ class ZteFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general zte device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

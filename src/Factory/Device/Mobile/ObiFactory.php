@@ -25,6 +25,11 @@ class ObiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general obi device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class ObiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general obi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

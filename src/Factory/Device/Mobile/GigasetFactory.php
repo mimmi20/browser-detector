@@ -29,6 +29,11 @@ class GigasetFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general gigaset device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -57,6 +62,6 @@ class GigasetFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general gigaset device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

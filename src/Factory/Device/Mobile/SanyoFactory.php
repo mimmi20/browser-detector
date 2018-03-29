@@ -31,6 +31,11 @@ class SanyoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general sanyo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -69,6 +74,6 @@ class SanyoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general sanyo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

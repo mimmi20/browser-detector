@@ -59,6 +59,6 @@ class CaterpillarFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general caterpillar device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

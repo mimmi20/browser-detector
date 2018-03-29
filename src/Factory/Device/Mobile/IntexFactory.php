@@ -58,6 +58,11 @@ class IntexFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general intex device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -96,6 +101,6 @@ class IntexFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general intex device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

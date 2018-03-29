@@ -28,6 +28,11 @@ class SiemensFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general siemens device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -68,6 +73,6 @@ class SiemensFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general siemens device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

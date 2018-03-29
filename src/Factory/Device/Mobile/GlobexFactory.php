@@ -25,6 +25,11 @@ class GlobexFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general globex device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class GlobexFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general globex device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -25,6 +25,11 @@ class TomtecFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general tomtec device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class TomtecFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general tomtec device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

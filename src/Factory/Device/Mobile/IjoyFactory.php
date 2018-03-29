@@ -29,6 +29,11 @@ class IjoyFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general ijoy device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -67,6 +72,6 @@ class IjoyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ijoy device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

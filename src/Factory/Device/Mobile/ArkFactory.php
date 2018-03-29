@@ -58,6 +58,6 @@ class ArkFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ark device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

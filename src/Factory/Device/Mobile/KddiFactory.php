@@ -31,6 +31,11 @@ class KddiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kddi device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -59,6 +64,6 @@ class KddiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kddi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

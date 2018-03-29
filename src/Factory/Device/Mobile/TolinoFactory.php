@@ -28,6 +28,11 @@ class TolinoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general tolino device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class TolinoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general tolino device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

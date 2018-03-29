@@ -58,6 +58,6 @@ class EeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ee device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

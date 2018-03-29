@@ -65,6 +65,6 @@ class BlaupunktFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general blaupunkt device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

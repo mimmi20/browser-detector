@@ -58,6 +58,6 @@ class AzpenFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general azpen device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

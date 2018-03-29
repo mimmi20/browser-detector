@@ -25,6 +25,11 @@ class RoverPadFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general roverpad device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class RoverPadFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general roverpad device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

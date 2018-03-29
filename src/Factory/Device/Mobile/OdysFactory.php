@@ -67,6 +67,11 @@ class OdysFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general odys device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -95,6 +100,6 @@ class OdysFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general odys device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

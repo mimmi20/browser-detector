@@ -26,6 +26,11 @@ class OplusFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general o+ device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class OplusFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general o+ device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

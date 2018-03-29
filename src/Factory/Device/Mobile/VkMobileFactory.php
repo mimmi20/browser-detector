@@ -25,6 +25,11 @@ class VkMobileFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general vk-mobile device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class VkMobileFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general vk-mobile device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

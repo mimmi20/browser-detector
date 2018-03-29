@@ -45,6 +45,11 @@ class ZopoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general zopo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -73,6 +78,6 @@ class ZopoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general zopo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

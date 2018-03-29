@@ -26,6 +26,11 @@ class NinetecFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general ninetec device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class NinetecFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ninetec device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

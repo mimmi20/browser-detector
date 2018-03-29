@@ -25,6 +25,11 @@ class MlsFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general mls device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MlsFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general mls device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

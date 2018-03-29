@@ -28,6 +28,11 @@ class PearlFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general pearl device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class PearlFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pearl device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

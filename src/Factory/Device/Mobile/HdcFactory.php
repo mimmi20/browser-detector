@@ -25,6 +25,11 @@ class HdcFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general hdc device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class HdcFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general hdc device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -28,6 +28,11 @@ class HosinFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general hosin device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class HosinFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general hosin device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

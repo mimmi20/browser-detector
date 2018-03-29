@@ -21,8 +21,13 @@ class YonesToptechFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'bs1078' => 'yones toptech bs1078',
+        'bs1078' => 'yones-toptech bs1078',
     ];
+
+    /**
+     * @var string
+     */
+    private $genericDevice = 'general yones-toptech device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -47,12 +52,22 @@ class YonesToptechFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(bs1078)/i', $useragent, $matches)) {
+            $key = 'yones-toptech ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
         }
 
-        return $this->loader->load('general yones toptech device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

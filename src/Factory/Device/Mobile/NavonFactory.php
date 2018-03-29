@@ -25,6 +25,11 @@ class NavonFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general navon device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class NavonFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general navon device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -58,6 +58,6 @@ class EplutusFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general eplutus device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

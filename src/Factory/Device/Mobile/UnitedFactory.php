@@ -25,6 +25,11 @@ class UnitedFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general united device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class UnitedFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general united device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

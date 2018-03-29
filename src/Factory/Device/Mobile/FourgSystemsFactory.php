@@ -25,6 +25,11 @@ class FourgSystemsFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general 4g-systems device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class FourgSystemsFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general 4g-systems device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

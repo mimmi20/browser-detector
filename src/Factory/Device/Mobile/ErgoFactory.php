@@ -58,6 +58,6 @@ class ErgoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ergo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

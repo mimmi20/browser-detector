@@ -25,6 +25,11 @@ class MlaisFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general mlais device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MlaisFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general mlais device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

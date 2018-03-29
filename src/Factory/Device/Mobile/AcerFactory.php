@@ -124,6 +124,6 @@ class AcerFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general acer device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

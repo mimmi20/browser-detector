@@ -61,6 +61,6 @@ class DoroFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general doro device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

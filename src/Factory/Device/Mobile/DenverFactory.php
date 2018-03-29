@@ -66,6 +66,6 @@ class DenverFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general denver device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

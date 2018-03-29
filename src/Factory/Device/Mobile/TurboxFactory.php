@@ -28,6 +28,11 @@ class TurboxFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general turbo-x device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class TurboxFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general turbo-x device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

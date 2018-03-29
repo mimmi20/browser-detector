@@ -65,6 +65,11 @@ class WikoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general wiko device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -93,6 +98,6 @@ class WikoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general wiko device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

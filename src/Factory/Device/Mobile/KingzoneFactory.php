@@ -25,6 +25,11 @@ class KingzoneFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kingzone device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class KingzoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kingzone device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

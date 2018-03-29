@@ -59,6 +59,6 @@ class ChuwiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general chuwi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

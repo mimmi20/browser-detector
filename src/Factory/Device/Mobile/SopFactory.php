@@ -25,6 +25,11 @@ class SopFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general sop device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class SopFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general sop device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

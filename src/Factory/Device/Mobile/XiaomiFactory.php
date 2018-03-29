@@ -67,6 +67,11 @@ class XiaomiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general xiaomitech device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -95,6 +100,6 @@ class XiaomiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general xiaomi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

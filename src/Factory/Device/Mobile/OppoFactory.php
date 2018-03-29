@@ -42,6 +42,11 @@ class OppoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general oppo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -70,6 +75,6 @@ class OppoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general oppo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

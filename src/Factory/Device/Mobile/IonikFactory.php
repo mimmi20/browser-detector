@@ -28,6 +28,11 @@ class IonikFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general ionik device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class IonikFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general i-onik device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

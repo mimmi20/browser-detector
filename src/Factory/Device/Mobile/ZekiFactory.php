@@ -28,6 +28,11 @@ class ZekiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general zeki device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class ZekiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general zeki device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

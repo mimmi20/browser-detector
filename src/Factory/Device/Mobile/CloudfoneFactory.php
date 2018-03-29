@@ -58,6 +58,6 @@ class CloudfoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general cloudfone device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

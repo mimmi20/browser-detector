@@ -346,6 +346,11 @@ class HtcFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general htc device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -378,6 +383,6 @@ class HtcFactory implements Factory\FactoryInterface
             return $this->loader->load('htc m7', $useragent);
         }
 
-        return $this->loader->load('general htc device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -31,6 +31,11 @@ class GoogleFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general google device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -59,6 +64,6 @@ class GoogleFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general google device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

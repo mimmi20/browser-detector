@@ -25,6 +25,11 @@ class KodakFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kodak device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class KodakFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kodak device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -60,6 +60,6 @@ class AocFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general aoc device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

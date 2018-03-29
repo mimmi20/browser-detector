@@ -25,6 +25,11 @@ class SmartbookFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general smartbook device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class SmartbookFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general smartbook device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

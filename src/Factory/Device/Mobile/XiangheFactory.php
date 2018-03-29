@@ -32,6 +32,11 @@ class XiangheFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general xianghe device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -60,6 +65,6 @@ class XiangheFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general xianghe device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

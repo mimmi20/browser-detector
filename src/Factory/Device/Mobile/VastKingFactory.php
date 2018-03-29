@@ -25,6 +25,11 @@ class VastKingFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general vastking device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class VastKingFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general vastking device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

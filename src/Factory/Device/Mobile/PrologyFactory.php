@@ -25,6 +25,11 @@ class PrologyFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general prology device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -65,6 +70,6 @@ class PrologyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general prology device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

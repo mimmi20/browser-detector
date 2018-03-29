@@ -27,6 +27,11 @@ class SupraFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general supra device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -67,6 +72,6 @@ class SupraFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general supra device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

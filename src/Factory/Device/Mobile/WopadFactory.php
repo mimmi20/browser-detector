@@ -26,6 +26,11 @@ class WopadFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general wopad device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class WopadFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general wopad device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

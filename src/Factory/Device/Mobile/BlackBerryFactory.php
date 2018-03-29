@@ -100,6 +100,6 @@ class BlackBerryFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general blackberry device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

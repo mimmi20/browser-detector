@@ -40,6 +40,11 @@ class HpFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general hp device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -68,6 +73,6 @@ class HpFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general hp device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

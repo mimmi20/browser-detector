@@ -30,6 +30,11 @@ class JaytechFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general jaytech device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -58,6 +63,6 @@ class JaytechFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general jaytech device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

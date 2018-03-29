@@ -28,6 +28,11 @@ class KomuFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general komu device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class KomuFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general komu device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

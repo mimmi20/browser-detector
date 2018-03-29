@@ -32,6 +32,11 @@ class ModecomFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general modecom device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -60,6 +65,6 @@ class ModecomFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general modecom device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

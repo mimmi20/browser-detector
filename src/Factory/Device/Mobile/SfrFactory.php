@@ -25,6 +25,11 @@ class SfrFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general sfr device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class SfrFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general sfr device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -50,6 +50,11 @@ class ImobileFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general i-mobile device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -88,6 +93,6 @@ class ImobileFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general i-mobile device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

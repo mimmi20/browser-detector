@@ -58,6 +58,6 @@ class BeneveFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general beneve device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

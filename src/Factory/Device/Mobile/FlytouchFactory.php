@@ -26,6 +26,11 @@ class FlytouchFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general flytouch device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class FlytouchFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general flytouch device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

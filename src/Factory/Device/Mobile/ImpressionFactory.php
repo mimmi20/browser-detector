@@ -27,6 +27,11 @@ class ImpressionFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general impression device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class ImpressionFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general impression device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

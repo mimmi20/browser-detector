@@ -28,6 +28,11 @@ class SimvalleyFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general simvalley device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -68,6 +73,6 @@ class SimvalleyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general simvalley device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

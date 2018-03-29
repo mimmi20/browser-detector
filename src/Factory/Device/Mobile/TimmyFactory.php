@@ -25,6 +25,11 @@ class TimmyFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general timmy device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class TimmyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general timmy device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -58,6 +58,6 @@ class ArtizleeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general artizlee device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

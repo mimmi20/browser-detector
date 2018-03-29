@@ -25,6 +25,11 @@ class QumoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general qumo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class QumoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general qumo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

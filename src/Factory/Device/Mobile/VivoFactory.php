@@ -33,6 +33,11 @@ class VivoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general vivo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -61,6 +66,6 @@ class VivoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general vivo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

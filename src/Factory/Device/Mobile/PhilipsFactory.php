@@ -29,6 +29,11 @@ class PhilipsFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general philips device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -57,6 +62,6 @@ class PhilipsFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general philips device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

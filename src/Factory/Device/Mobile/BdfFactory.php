@@ -58,6 +58,6 @@ class BdfFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general bdf device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

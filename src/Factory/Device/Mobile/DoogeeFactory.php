@@ -72,6 +72,6 @@ class DoogeeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general doogee device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

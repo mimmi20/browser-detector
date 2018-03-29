@@ -26,6 +26,11 @@ class TeclastFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general teclast device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -48,12 +53,10 @@ class TeclastFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
-        $regex = '/(' . implode('|', array_map(function($value) { return preg_quote($value, '/'); }, array_keys($this->devices))) . ')/i';
-
         $matches = [];
 
-        if (preg_match($regex, $useragent, $matches)) {
-            $key = $this->devices[mb_strtolower($matches[1])];
+        if (preg_match('/(d4c5|k9c6)/i', $useragent, $matches)) {
+            $key = 'teclast ' . mb_strtolower($matches[1]);
 
             if ($this->loader->has($key)) {
                 return $this->loader->load($key, $useragent);
@@ -66,6 +69,6 @@ class TeclastFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general teclast device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

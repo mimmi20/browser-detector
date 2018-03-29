@@ -25,6 +25,11 @@ class NextwayFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general nextway device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class NextwayFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general nextway device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

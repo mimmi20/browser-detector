@@ -28,6 +28,11 @@ class StarFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general star device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -68,6 +73,6 @@ class StarFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general star device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

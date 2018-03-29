@@ -58,6 +58,6 @@ class DragonTouchFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general dragon touch device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

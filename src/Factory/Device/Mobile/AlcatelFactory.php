@@ -197,6 +197,6 @@ class AlcatelFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general alcatel device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

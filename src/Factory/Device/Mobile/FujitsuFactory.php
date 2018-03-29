@@ -26,6 +26,11 @@ class FujitsuFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general fujitsu device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class FujitsuFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general fujitsu device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

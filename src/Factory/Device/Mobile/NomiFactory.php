@@ -26,6 +26,11 @@ class NomiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general nomi device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class NomiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general nomi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

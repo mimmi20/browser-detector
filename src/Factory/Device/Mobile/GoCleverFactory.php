@@ -33,6 +33,11 @@ class GoCleverFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general goclever device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -61,6 +66,6 @@ class GoCleverFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general goclever device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

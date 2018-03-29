@@ -29,6 +29,11 @@ class OrangeFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general orange device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -57,6 +62,6 @@ class OrangeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general orange device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -31,6 +31,11 @@ class IconBitFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general iconbit device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -59,6 +64,6 @@ class IconBitFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general iconbit device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

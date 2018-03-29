@@ -26,6 +26,11 @@ class TwinovoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general twinovo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class TwinovoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general twinovo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

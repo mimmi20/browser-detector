@@ -25,6 +25,11 @@ class ShiruFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general shiru device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class ShiruFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general shiru device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

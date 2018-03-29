@@ -21,8 +21,13 @@ class StellFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'm260' => 'stell m260',
+        'm260' => 's-tell m260',
     ];
+
+    /**
+     * @var string
+     */
+    private $genericDevice = 'general s-tell device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -47,12 +52,10 @@ class StellFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
-        $regex = '/(' . implode('|', array_map('preg_quote', array_keys($this->devices))) . ')/i';
-
         $matches = [];
 
-        if (preg_match($regex, $useragent, $matches)) {
-            $key = $this->devices[mb_strtolower($matches[1])];
+        if (preg_match('/(m260)/i', $useragent, $matches)) {
+            $key = 's-tell ' . mb_strtolower($matches[1]);
 
             if ($this->loader->has($key)) {
                 return $this->loader->load($key, $useragent);
@@ -65,6 +68,6 @@ class StellFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general s-tell device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

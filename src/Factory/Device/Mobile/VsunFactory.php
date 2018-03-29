@@ -25,6 +25,11 @@ class VsunFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general vsun device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class VsunFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general vsun device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

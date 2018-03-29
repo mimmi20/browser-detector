@@ -31,6 +31,11 @@ class TriQFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general 3q device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -59,6 +64,6 @@ class TriQFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general 3q device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -62,6 +62,6 @@ class ExcelvanFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general excelvan device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

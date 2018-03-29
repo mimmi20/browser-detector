@@ -23,10 +23,15 @@ class LingwinFactory implements Factory\FactoryInterface
     private $devices = [
         ' k5'   => 'lingwin k5',
         ' k1'   => 'lingwin k1',
-        't620'   => 'lingwin t620',
-        'u880'   => 'lingwin u880',
-        'u820s'   => 'lingwin u820s',
+        't620'  => 'lingwin t620',
+        'u880'  => 'lingwin u880',
+        'u820s' => 'lingwin u820s',
     ];
+
+    /**
+     * @var string
+     */
+    private $genericDevice = 'general lingwin device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -57,6 +62,6 @@ class LingwinFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lingwin device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

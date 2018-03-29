@@ -25,6 +25,11 @@ class XgodyFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general xgody device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class XgodyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general xgody device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

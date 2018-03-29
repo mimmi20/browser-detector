@@ -25,6 +25,11 @@ class KtTechFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kt-tech device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class KtTechFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kt-tech device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

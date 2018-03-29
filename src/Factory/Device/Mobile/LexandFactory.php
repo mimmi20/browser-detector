@@ -32,6 +32,11 @@ class LexandFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general lexand device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -60,6 +65,6 @@ class LexandFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lexand device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

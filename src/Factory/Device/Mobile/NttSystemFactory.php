@@ -21,8 +21,13 @@ class NttSystemFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ntt 611' => 'ntt 611 10.1',
+        'ntt 611' => 'ntt-system 611',
     ];
+
+    /**
+     * @var string
+     */
+    private $genericDevice = 'general ntt-system device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -53,6 +58,6 @@ class NttSystemFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ntt system device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

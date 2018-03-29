@@ -25,6 +25,11 @@ class SxzFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general sxz device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -65,6 +70,6 @@ class SxzFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general sxz device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

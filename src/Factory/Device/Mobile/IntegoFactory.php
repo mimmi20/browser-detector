@@ -25,6 +25,11 @@ class IntegoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general intego device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class IntegoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general intego device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

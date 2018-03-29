@@ -31,6 +31,11 @@ class HomtomFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general homtom device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -59,6 +64,6 @@ class HomtomFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general homtom device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -25,6 +25,11 @@ class NuVisionFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general nuvision device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class NuVisionFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general nuvision device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

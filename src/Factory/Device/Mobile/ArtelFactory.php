@@ -58,6 +58,6 @@ class ArtelFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general artel device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

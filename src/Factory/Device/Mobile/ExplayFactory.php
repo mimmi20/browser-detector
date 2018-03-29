@@ -63,6 +63,6 @@ class ExplayFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general explay device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

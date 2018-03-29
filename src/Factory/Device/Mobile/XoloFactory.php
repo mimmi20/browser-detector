@@ -29,6 +29,11 @@ class XoloFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general xolo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -57,6 +62,6 @@ class XoloFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general xolo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

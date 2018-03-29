@@ -21,8 +21,13 @@ class TbTouchFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'ignis 8' => 'tbtouch ignis 8',
+        'ignis 8' => 'tb-touch ignis 8',
     ];
+
+    /**
+     * @var string
+     */
+    private $genericDevice = 'general tb-touch device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -47,12 +52,10 @@ class TbTouchFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
-        $regex = '/(' . implode('|', array_map('preg_quote', array_keys($this->devices))) . ')/i';
-
         $matches = [];
 
-        if (preg_match($regex, $useragent, $matches)) {
-            $key = $this->devices[mb_strtolower($matches[1])];
+        if (preg_match('/(ignis 8)/i', $useragent, $matches)) {
+            $key = 'tb-touch ' . mb_strtolower($matches[1]);
 
             if ($this->loader->has($key)) {
                 return $this->loader->load($key, $useragent);
@@ -65,6 +68,6 @@ class TbTouchFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general tb touch device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

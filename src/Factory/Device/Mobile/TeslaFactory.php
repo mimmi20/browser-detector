@@ -28,6 +28,11 @@ class TeslaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general tesla device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class TeslaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general tesla device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

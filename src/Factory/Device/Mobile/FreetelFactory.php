@@ -34,6 +34,11 @@ class FreetelFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general freetel device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -62,6 +67,6 @@ class FreetelFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general freetel device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -25,6 +25,11 @@ class InqFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general inq device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class InqFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general inq device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

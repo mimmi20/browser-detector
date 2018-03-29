@@ -25,6 +25,11 @@ class WolgangFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general wolgang device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -47,12 +52,22 @@ class WolgangFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(at\-as40se)/i', $useragent, $matches)) {
+            $key = 'wolgang ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
         }
 
-        return $this->loader->load('general wolgang device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -26,6 +26,11 @@ class FeitengFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general feiteng device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class FeitengFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general feiteng device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

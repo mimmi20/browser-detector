@@ -25,6 +25,11 @@ class MagicFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general magic device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MagicFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general magic device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

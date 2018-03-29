@@ -25,6 +25,11 @@ class StarmobileFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general starmobile device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -65,6 +70,6 @@ class StarmobileFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general starmobile device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -28,6 +28,11 @@ class SmartisanFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general smartisan device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -66,6 +71,6 @@ class SmartisanFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general smartisan device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

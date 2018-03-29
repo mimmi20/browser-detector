@@ -25,6 +25,11 @@ class WolderFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general wolder device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class WolderFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general wolder device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

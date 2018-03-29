@@ -59,6 +59,6 @@ class AcmeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general acme device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

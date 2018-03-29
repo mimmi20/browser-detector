@@ -177,6 +177,6 @@ class AppleFactory implements Factory\FactoryInterface
             return $this->loader->load('apple iphone', $useragent);
         }
 
-        return $this->loader->load('general apple device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

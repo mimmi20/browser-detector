@@ -29,6 +29,11 @@ class NintendoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general nintendo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -57,6 +62,6 @@ class NintendoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general nintendo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

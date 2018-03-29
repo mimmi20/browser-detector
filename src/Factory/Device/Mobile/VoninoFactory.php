@@ -25,6 +25,11 @@ class VoninoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general vonino device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class VoninoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general vonino device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

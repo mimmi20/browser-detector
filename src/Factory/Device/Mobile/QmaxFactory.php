@@ -25,6 +25,11 @@ class QmaxFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general qmax device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -65,6 +70,6 @@ class QmaxFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general qmax device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

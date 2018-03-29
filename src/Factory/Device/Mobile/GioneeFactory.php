@@ -52,6 +52,11 @@ class GioneeFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general gionee device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -80,6 +85,6 @@ class GioneeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general gionee device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

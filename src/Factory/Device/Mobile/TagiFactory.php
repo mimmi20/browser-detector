@@ -25,6 +25,11 @@ class TagiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general tagi device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -65,6 +70,6 @@ class TagiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general tagi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

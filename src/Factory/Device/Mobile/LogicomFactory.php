@@ -26,6 +26,11 @@ class LogicomFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general logicom device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class LogicomFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general logicom device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -308,6 +308,11 @@ class LgFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general lg device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -336,6 +341,6 @@ class LgFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lg device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

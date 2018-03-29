@@ -1126,6 +1126,11 @@ class SamsungFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general samsung device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -1182,6 +1187,6 @@ class SamsungFactory implements Factory\FactoryInterface
             return $this->loader->load($key, $useragent);
         }
 
-        return $this->loader->load('general samsung device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

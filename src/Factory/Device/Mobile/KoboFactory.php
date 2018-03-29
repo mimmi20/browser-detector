@@ -26,6 +26,11 @@ class KoboFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kobo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class KoboFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kobo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

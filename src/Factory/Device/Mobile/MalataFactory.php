@@ -25,6 +25,11 @@ class MalataFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general malata device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MalataFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general malata device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

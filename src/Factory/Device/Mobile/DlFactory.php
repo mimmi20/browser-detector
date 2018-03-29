@@ -58,6 +58,6 @@ class DlFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general dl device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

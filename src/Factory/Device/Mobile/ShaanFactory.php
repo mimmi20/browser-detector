@@ -25,6 +25,11 @@ class ShaanFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general shaan device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class ShaanFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general shaan device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

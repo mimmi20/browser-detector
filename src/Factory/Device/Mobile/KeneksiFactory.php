@@ -26,6 +26,11 @@ class KeneksiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general keneksi device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class KeneksiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general keneksi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

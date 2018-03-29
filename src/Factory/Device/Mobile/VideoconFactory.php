@@ -26,6 +26,11 @@ class VideoconFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general videocon device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class VideoconFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general videocon device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

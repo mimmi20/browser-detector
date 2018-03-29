@@ -28,6 +28,11 @@ class SprintFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general sprint device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -68,6 +73,6 @@ class SprintFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general sprint device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

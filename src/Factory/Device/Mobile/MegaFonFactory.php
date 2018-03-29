@@ -25,6 +25,11 @@ class MegaFonFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general megafon device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MegaFonFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general megafon device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

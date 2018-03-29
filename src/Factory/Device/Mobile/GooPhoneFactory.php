@@ -26,6 +26,11 @@ class GooPhoneFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general goophone device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class GooPhoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general goophone device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -26,6 +26,11 @@ class NvidiaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general nvidia device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class NvidiaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general nvidia device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

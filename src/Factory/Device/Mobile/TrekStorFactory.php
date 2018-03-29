@@ -49,6 +49,11 @@ class TrekStorFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general trekstor device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -77,6 +82,6 @@ class TrekStorFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general trekstor device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -25,6 +25,11 @@ class VotoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general voto device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class VotoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general voto device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -29,6 +29,11 @@ class WileyfoxFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general wileyfox device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -57,6 +62,6 @@ class WileyfoxFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general wileyfox device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

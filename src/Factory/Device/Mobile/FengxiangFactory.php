@@ -25,6 +25,11 @@ class FengxiangFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general fengxiang device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class FengxiangFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general fengxiang device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

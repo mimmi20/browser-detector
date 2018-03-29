@@ -39,6 +39,11 @@ class InfinixFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general infinix device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -67,6 +72,6 @@ class InfinixFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general infinix device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

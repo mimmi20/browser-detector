@@ -25,6 +25,11 @@ class HummerFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general hummer device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class HummerFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general hummer device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

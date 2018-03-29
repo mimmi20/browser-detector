@@ -26,6 +26,11 @@ class FnacFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general fnac device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class FnacFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general fnac device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

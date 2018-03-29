@@ -58,6 +58,6 @@ class EtulineFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general etuline device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

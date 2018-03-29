@@ -25,6 +25,11 @@ class RadxaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general radxa device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class RadxaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general radxa device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

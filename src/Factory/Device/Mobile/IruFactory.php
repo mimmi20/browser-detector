@@ -25,6 +25,11 @@ class IruFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general iru device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class IruFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general iru device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -193,6 +193,11 @@ class LenovoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general lenovo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -221,6 +226,6 @@ class LenovoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lenovo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -28,6 +28,11 @@ class KingsunFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kingsun device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class KingsunFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kingsun device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

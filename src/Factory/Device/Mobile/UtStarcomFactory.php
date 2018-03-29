@@ -27,6 +27,11 @@ class UtStarcomFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general utstarcom device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class UtStarcomFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general utstarcom device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

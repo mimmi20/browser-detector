@@ -25,6 +25,11 @@ class SumvierFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general sumvier device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -65,6 +70,6 @@ class SumvierFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general sumvier device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

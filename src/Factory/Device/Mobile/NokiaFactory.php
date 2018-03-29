@@ -297,6 +297,11 @@ class NokiaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general nokia device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -325,6 +330,6 @@ class NokiaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general nokia device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

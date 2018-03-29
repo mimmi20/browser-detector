@@ -28,6 +28,11 @@ class VerneeFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general vernee device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class VerneeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general vernee device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

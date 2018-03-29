@@ -67,6 +67,6 @@ class BlackviewFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general blackview device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

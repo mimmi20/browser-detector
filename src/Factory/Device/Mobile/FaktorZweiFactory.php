@@ -25,6 +25,11 @@ class FaktorZweiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general faktorzwei device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class FaktorZweiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general faktorzwei device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

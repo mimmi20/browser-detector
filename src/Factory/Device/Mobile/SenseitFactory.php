@@ -25,6 +25,11 @@ class SenseitFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general senseit device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class SenseitFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general senseit device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

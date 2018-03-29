@@ -25,6 +25,11 @@ class FireflyFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general firefly device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class FireflyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general firefly device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

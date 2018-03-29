@@ -25,6 +25,11 @@ class KeenerFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general keener device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class KeenerFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general keener device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

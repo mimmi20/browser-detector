@@ -65,6 +65,6 @@ class AllviewFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general allview device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

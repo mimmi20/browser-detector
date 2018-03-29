@@ -26,6 +26,11 @@ class NextbookFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general nextbook device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class NextbookFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general nextbook device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

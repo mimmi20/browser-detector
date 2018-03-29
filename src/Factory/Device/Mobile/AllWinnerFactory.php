@@ -60,6 +60,6 @@ class AllWinnerFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general allwinner device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

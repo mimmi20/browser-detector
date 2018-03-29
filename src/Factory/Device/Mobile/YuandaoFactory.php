@@ -26,6 +26,11 @@ class YuandaoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general yuandao device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class YuandaoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general yuandao device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -32,6 +32,11 @@ class PipoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general pipo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -60,6 +65,6 @@ class PipoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pipo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

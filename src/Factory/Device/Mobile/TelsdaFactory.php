@@ -25,6 +25,11 @@ class TelsdaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general telsda device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class TelsdaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general telsda device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

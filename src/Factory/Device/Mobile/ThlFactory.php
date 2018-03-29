@@ -34,6 +34,11 @@ class ThlFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general thl device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -62,6 +67,6 @@ class ThlFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general thl device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

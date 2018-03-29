@@ -32,6 +32,11 @@ class IrbisFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general irbis device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -60,6 +65,6 @@ class IrbisFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general irbis device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

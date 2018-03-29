@@ -25,6 +25,11 @@ class InnjooFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general innjoo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class InnjooFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general innjoo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

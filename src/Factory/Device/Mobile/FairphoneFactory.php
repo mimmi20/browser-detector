@@ -27,6 +27,11 @@ class FairphoneFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general fairphone device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class FairphoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general fairphone device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

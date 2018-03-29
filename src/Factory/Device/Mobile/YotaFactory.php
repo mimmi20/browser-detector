@@ -26,6 +26,11 @@ class YotaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general yota device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class YotaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general yota device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

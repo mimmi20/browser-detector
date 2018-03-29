@@ -28,6 +28,11 @@ class MpmanFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general mpman device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class MpmanFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general mpman device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

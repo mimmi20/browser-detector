@@ -48,6 +48,11 @@ class KarbonnFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general karbonn device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -76,6 +81,6 @@ class KarbonnFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general karbonn device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

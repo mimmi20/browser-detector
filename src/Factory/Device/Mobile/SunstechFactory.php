@@ -26,6 +26,11 @@ class SunstechFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general sunstech device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -66,6 +71,6 @@ class SunstechFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general sunstech device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

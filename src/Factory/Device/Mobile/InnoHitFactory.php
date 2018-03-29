@@ -25,6 +25,11 @@ class InnoHitFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general innohit device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class InnoHitFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general innohit device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

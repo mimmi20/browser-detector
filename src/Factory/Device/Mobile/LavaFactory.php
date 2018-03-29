@@ -41,6 +41,11 @@ class LavaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general lava device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -83,6 +88,6 @@ class LavaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lava device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

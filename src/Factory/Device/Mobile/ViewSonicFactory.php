@@ -32,6 +32,11 @@ class ViewSonicFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general viewsonic device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -60,6 +65,6 @@ class ViewSonicFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general viewsonic device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

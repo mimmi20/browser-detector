@@ -35,6 +35,11 @@ class UmiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general umi device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class UmiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general umi device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

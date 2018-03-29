@@ -26,6 +26,11 @@ class TheqFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general theq device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class TheqFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general theq device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

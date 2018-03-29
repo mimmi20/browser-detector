@@ -78,6 +78,11 @@ class PrestigioFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general prestigio device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -118,6 +123,6 @@ class PrestigioFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general prestigio device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

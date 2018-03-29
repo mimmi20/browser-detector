@@ -25,6 +25,11 @@ class YusuFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general yusu device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class YusuFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general yusu device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

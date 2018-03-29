@@ -25,6 +25,11 @@ class GnetFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general g net device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class GnetFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general g net device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -26,6 +26,11 @@ class PptvFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general pptv device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class PptvFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pptv device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

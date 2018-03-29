@@ -25,6 +25,11 @@ class MorefineFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general morefine device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MorefineFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general morefine device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

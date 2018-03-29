@@ -25,6 +25,11 @@ class KeenHighFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general keenhigh device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -47,12 +52,22 @@ class KeenHighFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(mt791)/i', $useragent, $matches)) {
+            $key = 'keenhigh ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
         }
 
-        return $this->loader->load('general keen high device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

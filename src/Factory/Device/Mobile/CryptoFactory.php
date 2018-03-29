@@ -58,6 +58,6 @@ class CryptoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general crypto device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

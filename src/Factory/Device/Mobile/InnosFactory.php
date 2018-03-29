@@ -25,6 +25,11 @@ class InnosFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general innos device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class InnosFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general innos device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

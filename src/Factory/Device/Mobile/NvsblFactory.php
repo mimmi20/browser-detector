@@ -25,6 +25,11 @@ class NvsblFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general nvsbl device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class NvsblFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general nvsbl device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

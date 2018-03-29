@@ -25,6 +25,11 @@ class TurkcellFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general turkcell device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class TurkcellFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general turkcell device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

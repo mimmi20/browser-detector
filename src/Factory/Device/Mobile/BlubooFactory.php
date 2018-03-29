@@ -58,6 +58,6 @@ class BlubooFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general bluboo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

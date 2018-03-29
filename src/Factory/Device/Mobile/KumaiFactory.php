@@ -28,6 +28,11 @@ class KumaiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kumai device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class KumaiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kumai device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

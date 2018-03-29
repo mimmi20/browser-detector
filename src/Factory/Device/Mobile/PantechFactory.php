@@ -32,6 +32,11 @@ class PantechFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general pantech device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -60,6 +65,6 @@ class PantechFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pantech device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -58,6 +58,6 @@ class BlissFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general bliss device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

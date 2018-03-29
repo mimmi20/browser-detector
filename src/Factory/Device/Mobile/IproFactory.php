@@ -25,6 +25,11 @@ class IproFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general ipro device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class IproFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ipro device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -21,8 +21,13 @@ class VelocityMicroFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        't408' => 'velocitymicro cruz',
+        't408' => 'velocity-micro t408',
     ];
+
+    /**
+     * @var string
+     */
+    private $genericDevice = 'general velocity-micro device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -47,12 +52,22 @@ class VelocityMicroFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $matches = [];
+
+        if (preg_match('/(t408)/i', $useragent, $matches)) {
+            $key = 'velocity-micro ' . mb_strtolower($matches[1]);
+
+            if ($this->loader->has($key)) {
+                return $this->loader->load($key, $useragent);
+            }
+        }
+
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
         }
 
-        return $this->loader->load('general velocity micro device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

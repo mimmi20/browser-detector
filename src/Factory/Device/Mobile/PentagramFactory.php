@@ -25,6 +25,11 @@ class PentagramFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general pentagram device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class PentagramFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pentagram device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

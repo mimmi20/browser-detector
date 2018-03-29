@@ -58,6 +58,6 @@ class AvvioFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general avvio device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

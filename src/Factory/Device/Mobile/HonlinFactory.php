@@ -25,6 +25,11 @@ class HonlinFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general honlin device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class HonlinFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general honlin device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -31,6 +31,11 @@ class OystersFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general oysters device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -59,6 +64,6 @@ class OystersFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general oysters device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

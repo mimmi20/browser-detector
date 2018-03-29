@@ -25,6 +25,11 @@ class MtechFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general mtech device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class MtechFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general mtech device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -27,6 +27,11 @@ class OlivettiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general olivetti device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class OlivettiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general olivetti device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

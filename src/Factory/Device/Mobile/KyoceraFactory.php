@@ -35,6 +35,11 @@ class KyoceraFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general kyocera device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class KyoceraFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general kyocera device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

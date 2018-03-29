@@ -39,6 +39,11 @@ class HaierFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general haier device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -67,6 +72,6 @@ class HaierFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general haier device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

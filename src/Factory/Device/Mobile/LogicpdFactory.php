@@ -26,6 +26,11 @@ class LogicpdFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general logicpd device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class LogicpdFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general logicpd device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -24,6 +24,11 @@ class HiPhoneFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general hiphone device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -52,6 +57,6 @@ class HiPhoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general hiphone device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

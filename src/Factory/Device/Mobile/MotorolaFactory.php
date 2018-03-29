@@ -161,6 +161,11 @@ class MotorolaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general motorola device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -189,6 +194,6 @@ class MotorolaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general motorola device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

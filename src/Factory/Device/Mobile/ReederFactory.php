@@ -21,8 +21,13 @@ class ReederFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
-        'reedera8r' => 'reeder a8r',
+        'a8r' => 'reeder a8r',
     ];
+
+    /**
+     * @var string
+     */
+    private $genericDevice = 'general reeder device';
 
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
@@ -63,6 +68,6 @@ class ReederFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general reeder device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -25,6 +25,11 @@ class HaipaiFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general haipai device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class HaipaiFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general haipai device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

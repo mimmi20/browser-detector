@@ -25,6 +25,11 @@ class PegatronFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general pegatron device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class PegatronFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pegatron device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

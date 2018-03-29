@@ -25,6 +25,11 @@ class LemonFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general lemon device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class LemonFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lemon device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

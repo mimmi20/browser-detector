@@ -27,6 +27,11 @@ class KoobeeFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general koobee device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class KoobeeFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general koobee device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

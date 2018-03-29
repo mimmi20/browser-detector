@@ -28,6 +28,11 @@ class LandvoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general landvo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class LandvoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general landvo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

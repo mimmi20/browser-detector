@@ -25,6 +25,11 @@ class YulongFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general yulong device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class YulongFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general yulong device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -32,6 +32,11 @@ class TechnisatFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general technisat device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -72,6 +77,6 @@ class TechnisatFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general technisat device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

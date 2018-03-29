@@ -27,6 +27,11 @@ class IberryFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general iberry device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -65,6 +70,6 @@ class IberryFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general iberry device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

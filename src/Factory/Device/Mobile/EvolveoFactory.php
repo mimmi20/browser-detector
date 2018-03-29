@@ -58,6 +58,6 @@ class EvolveoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general evolveo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

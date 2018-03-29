@@ -62,6 +62,6 @@ class ElephoneFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general elephone device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

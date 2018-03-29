@@ -25,6 +25,11 @@ class JustFiveFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general just5 device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class JustFiveFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general just5 device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -26,6 +26,11 @@ class SpiceFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general spice device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -64,6 +69,6 @@ class SpiceFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general spice device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

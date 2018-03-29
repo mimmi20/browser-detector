@@ -58,6 +58,6 @@ class ComagFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general comag device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

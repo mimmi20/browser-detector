@@ -25,6 +25,11 @@ class QuadroFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general quadro device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class QuadroFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general quadro device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

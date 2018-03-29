@@ -29,6 +29,11 @@ class SagemFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general sagem device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -67,6 +72,6 @@ class SagemFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general sagem device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

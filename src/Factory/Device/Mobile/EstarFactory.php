@@ -58,6 +58,6 @@ class EstarFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general estar device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

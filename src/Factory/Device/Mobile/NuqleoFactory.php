@@ -26,6 +26,11 @@ class NuqleoFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general nuqleo device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class NuqleoFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general nuqleo device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

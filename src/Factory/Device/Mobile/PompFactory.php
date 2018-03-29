@@ -27,6 +27,11 @@ class PompFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general pomp device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class PompFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general pomp device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

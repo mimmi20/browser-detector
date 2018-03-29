@@ -25,6 +25,11 @@ class YarvikFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general yarvik device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class YarvikFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general yarvik device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

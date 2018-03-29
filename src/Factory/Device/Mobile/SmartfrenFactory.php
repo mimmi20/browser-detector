@@ -25,6 +25,11 @@ class SmartfrenFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general smartfren device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -63,6 +68,6 @@ class SmartfrenFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general smartfren device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

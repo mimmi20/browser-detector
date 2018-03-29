@@ -33,6 +33,11 @@ class PanasonicFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general panasonic device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -61,6 +66,6 @@ class PanasonicFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general panasonic device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

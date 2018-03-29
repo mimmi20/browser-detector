@@ -59,6 +59,6 @@ class EvercossFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general evercoss device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

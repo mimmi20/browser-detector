@@ -55,6 +55,11 @@ class LyfFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general lyf device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -83,6 +88,6 @@ class LyfFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general lyf device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

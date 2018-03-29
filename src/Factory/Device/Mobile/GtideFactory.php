@@ -25,6 +25,11 @@ class GtideFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general gtide device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -53,6 +58,6 @@ class GtideFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general gtide device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

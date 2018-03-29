@@ -26,6 +26,11 @@ class RossMoorFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general ross&moor device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -64,6 +69,6 @@ class RossMoorFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general ross&moor device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

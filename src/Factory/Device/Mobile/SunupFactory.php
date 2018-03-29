@@ -25,6 +25,11 @@ class SunupFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general sunup device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -65,6 +70,6 @@ class SunupFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general sunup device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

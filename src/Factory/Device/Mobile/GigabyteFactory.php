@@ -28,6 +28,11 @@ class GigabyteFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general gigabyte device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -56,6 +61,6 @@ class GigabyteFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general gigabyte device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

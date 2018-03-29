@@ -66,6 +66,6 @@ class CobyFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general coby device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

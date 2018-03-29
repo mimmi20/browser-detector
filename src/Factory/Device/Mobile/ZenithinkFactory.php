@@ -26,6 +26,11 @@ class ZenithinkFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general zenithink device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -54,6 +59,6 @@ class ZenithinkFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general zenithink device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

@@ -27,6 +27,11 @@ class InfocusFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general infocus device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class InfocusFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general infocus device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

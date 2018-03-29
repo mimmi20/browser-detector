@@ -79,6 +79,11 @@ class MedionFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general medion device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -107,6 +112,6 @@ class MedionFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general medion device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

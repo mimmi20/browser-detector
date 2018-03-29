@@ -27,6 +27,11 @@ class JollaFactory implements Factory\FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general jolla device';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -55,6 +60,6 @@ class JollaFactory implements Factory\FactoryInterface
             }
         }
 
-        return $this->loader->load('general jolla device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }
