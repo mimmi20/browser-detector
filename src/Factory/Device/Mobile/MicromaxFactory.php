@@ -21,6 +21,14 @@ class MicromaxFactory implements Factory\FactoryInterface
      * @var array
      */
     private $devices = [
+        'p650'      => 'micromax p650',
+        'p600'      => 'micromax p600',
+        'p560'      => 'micromax p560',
+        'p410i'     => 'micromax p410i',
+        'p410'      => 'micromax p410',
+        'p362'      => 'micromax p362',
+        'p360'      => 'micromax p360',
+        'p350'      => 'micromax p350',
         'q413'      => 'micromax q413',
         'q392'      => 'micromax q392',
         'q391'      => 'micromax q391',

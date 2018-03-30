@@ -1,110 +1,110 @@
 {
-    "akregator": {
-        "name": "akregator",
-        "manufacturer": "Kde",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "feed-reader",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Akregator"
-            ]
-        },
-        "engine": "webkit"
+  "akregator": {
+    "name": "akregator",
+    "manufacturer": "Kde",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Akregator"
+      ]
     },
-    "feeddler rss reader": {
-        "name": "Feeddler RSS Reader",
-        "manufacturer": "CheBinLiu",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "feed-reader",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "FeeddlerRSS"
-            ]
-        },
-        "engine": "unknown"
+    "engine": "webkit"
+  },
+  "feeddler rss reader": {
+    "name": "Feeddler RSS Reader",
+    "manufacturer": "CheBinLiu",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FeeddlerRSS"
+      ]
     },
-    "magpierss": {
-        "name": "MagpieRSS",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "feed-reader",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MagpieRSS"
-            ]
-        },
-        "engine": "unknown"
+    "engine": "unknown"
+  },
+  "magpierss": {
+    "name": "MagpieRSS",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MagpieRSS"
+      ]
     },
-    "newsblur feed fetcher": {
-        "name": "NewsBlur Feed Fetcher",
-        "manufacturer": "NewsBlur",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "feed-reader",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "NewsBlur Feed Fetcher"
-            ]
-        },
-        "engine": "unknown"
+    "engine": "unknown"
+  },
+  "newsblur feed fetcher": {
+    "name": "NewsBlur Feed Fetcher",
+    "manufacturer": "NewsBlur",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NewsBlur Feed Fetcher"
+      ]
     },
-    "readkit": {
-        "name": "ReadKit",
-        "manufacturer": "Webin",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "feed-reader",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
+    "engine": "unknown"
+  },
+  "readkit": {
+    "name": "ReadKit",
+    "manufacturer": "Webin",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "feed-reader",
+    "version": {
+      "class": null,
+      "search": null
     },
-    "shrook": {
-        "name": "Shrook",
-        "manufacturer": "UtsireSoftware",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "feed-reader",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
+    "engine": "webkit"
+  },
+  "shrook": {
+    "name": "Shrook",
+    "manufacturer": "UtsireSoftware",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "feed-reader",
+    "version": {
+      "class": null,
+      "search": null
     },
-    "symfony rss reader": {
-        "name": "Symfony RSS Reader",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "feed-reader",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "sfFeedReader"
-            ]
-        },
-        "engine": "unknown"
+    "engine": "unknown"
+  },
+  "symfony rss reader": {
+    "name": "Symfony RSS Reader",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "sfFeedReader"
+      ]
     },
-    "windows-rss-platform": {
-        "name": "Windows-RSS-Platform",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "feed-reader",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Windows\\-RSS\\-Platform"
-            ]
-        },
-        "engine": "trident"
-    }
+    "engine": "unknown"
+  },
+  "windows-rss-platform": {
+    "name": "Windows-RSS-Platform",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Windows\\-RSS\\-Platform"
+      ]
+    },
+    "engine": "trident"
+  }
 }

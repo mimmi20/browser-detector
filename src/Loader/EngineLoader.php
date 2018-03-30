@@ -17,6 +17,8 @@ use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
+use Seld\JsonLint\ParsingException;
+use Symfony\Component\Finder\Finder;
 use UaResult\Company\CompanyLoader;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
@@ -36,6 +38,16 @@ class EngineLoader implements ExtendedLoaderInterface
     private $logger;
 
     /**
+     * @var string|null
+     */
+    private $path;
+
+    /**
+     * @var JsonParser
+     */
+    private $jsonParser;
+
+    /**
      * @var self|null
      */
     private static $instance;
@@ -50,6 +62,9 @@ class EngineLoader implements ExtendedLoaderInterface
     {
         $this->cache  = $cache;
         $this->logger = $logger;
+        $this->jsonParser = new JsonParser();
+
+        $this->initPath();
     }
 
     /**
@@ -57,6 +72,7 @@ class EngineLoader implements ExtendedLoaderInterface
      * @param \Psr\Log\LoggerInterface              $logger
      *
      * @return self
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public static function getInstance(CacheInterface $cache, LoggerInterface $logger)
     {
@@ -78,12 +94,14 @@ class EngineLoader implements ExtendedLoaderInterface
     /**
      * initializes cache
      *
+     * @param bool   $load
+     *
      * @throws \Seld\JsonLint\ParsingException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
-    private function init(): void
+    private function init(bool $load = false): void
     {
         $initKey = $this->getCacheKey('initialized');
 
@@ -91,39 +109,43 @@ class EngineLoader implements ExtendedLoaderInterface
             return;
         }
 
-        foreach ($this->getEngines() as $engineKey => $data) {
-            $cacheKey = $this->getCacheKey((string) $engineKey);
+        $finder = new Finder();
+        $finder->files();
+        $finder->name('*.json');
+        $finder->ignoreDotFiles(true);
+        $finder->ignoreVCS(true);
+        $finder->ignoreUnreadableDirs();
+        $finder->in($this->path);
 
-            if ($this->cache->hasItem($cacheKey)) {
-                continue;
+        $cacheFiles = [];
+
+        foreach ($finder as $file) {
+            /* @var \Symfony\Component\Finder\SplFileInfo $file */
+            try {
+                $devicesFile = $this->jsonParser->parse(
+                    $file->getContents(),
+                    JsonParser::DETECT_KEY_CONFLICTS
+                );
+            } catch (ParsingException $e) {
+                throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
             }
 
-            $this->cache->setItem($cacheKey, $data);
+            foreach ($devicesFile as $deviceKey => $deviceData) {
+
+                if (array_key_exists($deviceKey, $cacheFiles)) {
+                    continue;
+                }
+
+                $cacheFiles[$deviceKey]   = $file->getPathname();
+            }
+
+            if ($load) {
+                $this->loadFileToCache($file->getPathname());
+            }
         }
 
+        $this->cache->setItem($this->getCacheKey('cacheFiles'), $cacheFiles);
         $this->cache->setItem($initKey, true);
-    }
-
-    /**
-     * @throws \Seld\JsonLint\ParsingException
-     *
-     * @return \Generator|\stdClass[]
-     */
-    private function getEngines(): \Generator
-    {
-        static $engines = null;
-
-        if (null === $engines) {
-            $jsonParser = new JsonParser();
-            $engines    = $jsonParser->parse(
-                file_get_contents(__DIR__ . '/../../data/engines.json'),
-                JsonParser::DETECT_KEY_CONFLICTS
-            );
-        }
-
-        foreach ($engines as $engineKey => $data) {
-            yield $engineKey => $data;
-        }
     }
 
     /**
@@ -183,13 +205,55 @@ class EngineLoader implements ExtendedLoaderInterface
     }
 
     /**
-     * @param string $deviceKey
+     * @param string $engineKey
      *
      * @return string
      */
-    private function getCacheKey(string $deviceKey): string
+    private function getCacheKey(string $engineKey): string
     {
-        return self::CACHE_PREFIX . '_' . str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $deviceKey);
+        return sprintf(
+            '%s_%s_%s',
+            self::CACHE_PREFIX,
+            $this->clearCacheKey($this->path),
+            $this->clearCacheKey($engineKey)
+        );
+    }
+
+    /**
+     * @param string $key
+     *
+     * @return string
+     */
+    private function clearCacheKey(string $key)
+    {
+        return str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $key);
+    }
+
+    /**
+     * @param string $filePath
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     */
+    private function loadFileToCache(string $filePath): void
+    {
+        try {
+            $fileData = $this->jsonParser->parse(
+                file_get_contents($filePath),
+                JsonParser::DETECT_KEY_CONFLICTS
+            );
+        } catch (ParsingException $e) {
+            throw new \RuntimeException('file "' . $filePath . '" contains invalid json', 0, $e);
+        }
+
+        foreach ($fileData as $key => $data) {
+            $cacheKey = $this->getCacheKey((string) $key);
+
+            if ($this->cache->hasItem($cacheKey)) {
+                continue;
+            }
+
+            $this->cache->setItem($cacheKey, $data);
+        }
     }
 
     /**
@@ -201,5 +265,10 @@ class EngineLoader implements ExtendedLoaderInterface
     public function warmupCache(): void
     {
         $this->init();
+    }
+
+    private function initPath(): void
+    {
+        $this->path = __DIR__ . '/../../data/engines';
     }
 }

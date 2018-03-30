@@ -39,6 +39,16 @@ class BrowserLoader implements ExtendedLoaderInterface
     private $logger;
 
     /**
+     * @var string|null
+     */
+    private $path;
+
+    /**
+     * @var JsonParser
+     */
+    private $jsonParser;
+
+    /**
      * @var self|null
      */
     private static $instance;
@@ -53,6 +63,9 @@ class BrowserLoader implements ExtendedLoaderInterface
     {
         $this->cache  = $cache;
         $this->logger = $logger;
+        $this->jsonParser = new JsonParser();
+
+        $this->initPath();
     }
 
     /**
@@ -83,12 +96,14 @@ class BrowserLoader implements ExtendedLoaderInterface
     /**
      * initializes cache
      *
+     * @param bool   $load
+     *
      * @throws \Seld\JsonLint\ParsingException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
-    private function init(): void
+    private function init(bool $load = false): void
     {
         $initKey = $this->getCacheKey('initialized');
 
@@ -96,65 +111,43 @@ class BrowserLoader implements ExtendedLoaderInterface
             return;
         }
 
-        foreach ($this->getBrowsers() as $browserKey => $data) {
-            $cacheKey = $this->getCacheKey((string) $browserKey);
+        $finder = new Finder();
+        $finder->files();
+        $finder->name('*.json');
+        $finder->ignoreDotFiles(true);
+        $finder->ignoreVCS(true);
+        $finder->ignoreUnreadableDirs();
+        $finder->in($this->path);
 
-            if ($this->cache->hasItem($cacheKey)) {
-                continue;
+        $cacheFiles = [];
+
+        foreach ($finder as $file) {
+            /* @var \Symfony\Component\Finder\SplFileInfo $file */
+            try {
+                $devicesFile = $this->jsonParser->parse(
+                    $file->getContents(),
+                    JsonParser::DETECT_KEY_CONFLICTS
+                );
+            } catch (ParsingException $e) {
+                throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
             }
 
-            $this->cache->setItem($cacheKey, $data);
+            foreach ($devicesFile as $deviceKey => $deviceData) {
+
+                if (array_key_exists($deviceKey, $cacheFiles)) {
+                    continue;
+                }
+
+                $cacheFiles[$deviceKey]   = $file->getPathname();
+            }
+
+            if ($load) {
+                $this->loadFileToCache($file->getPathname());
+            }
         }
 
+        $this->cache->setItem($this->getCacheKey('cacheFiles'), $cacheFiles);
         $this->cache->setItem($initKey, true);
-    }
-
-    /**
-     * @throws \RuntimeException
-     *
-     * @return \Generator|\stdClass[]
-     */
-    private function getBrowsers(): \Generator
-    {
-        static $browsers = null;
-
-        if (null === $browsers) {
-            $jsonParser = new JsonParser();
-            $browsers   = [];
-
-            $finder = new Finder();
-            $finder->files();
-            $finder->name('*.json');
-            $finder->ignoreDotFiles(true);
-            $finder->ignoreVCS(true);
-            $finder->ignoreUnreadableDirs();
-            $finder->in(__DIR__ . '/../../data/browsers/');
-
-            foreach ($finder as $file) {
-                /* @var \Symfony\Component\Finder\SplFileInfo $file */
-
-                try {
-                    $browsersFile = $jsonParser->parse(
-                        $file->getContents(),
-                        JsonParser::DETECT_KEY_CONFLICTS
-                    );
-                } catch (ParsingException $e) {
-                    throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
-                }
-
-                foreach ($browsersFile as $browserKey => $browserData) {
-                    if (array_key_exists($browserKey, $browsers)) {
-                        throw new \RuntimeException('browser key "' . $browserKey . '" was defined more then once');
-                    }
-
-                    $browsers[$browserKey] = $browserData;
-                }
-            }
-        }
-
-        foreach ($browsers as $browserKey => $data) {
-            yield $browserKey => $data;
-        }
     }
 
     /**
@@ -209,17 +202,14 @@ class BrowserLoader implements ExtendedLoaderInterface
 
         $bits      = (new BrowserBits($useragent))->getBits();
         $engineKey = $browserData->engine;
+        $engine    = null;
 
         if (null !== $engineKey) {
             try {
                 $engine = EngineLoader::getInstance($this->cache, $this->logger)->load($engineKey, $useragent);
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
-
-                $engine = null;
             }
-        } else {
-            $engine = null;
         }
 
         $browser = new Browser($browserData->name, $manufacturer, $version, $type, $bits);
@@ -234,7 +224,49 @@ class BrowserLoader implements ExtendedLoaderInterface
      */
     private function getCacheKey(string $browserKey): string
     {
-        return self::CACHE_PREFIX . '_' . str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $browserKey);
+        return sprintf(
+            '%s_%s_%s',
+            self::CACHE_PREFIX,
+            $this->clearCacheKey($this->path),
+            $this->clearCacheKey($browserKey)
+        );
+    }
+
+    /**
+     * @param string $key
+     *
+     * @return string
+     */
+    private function clearCacheKey(string $key)
+    {
+        return str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $key);
+    }
+
+    /**
+     * @param string $filePath
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     */
+    private function loadFileToCache(string $filePath): void
+    {
+        try {
+            $fileData = $this->jsonParser->parse(
+                file_get_contents($filePath),
+                JsonParser::DETECT_KEY_CONFLICTS
+            );
+        } catch (ParsingException $e) {
+            throw new \RuntimeException('file "' . $filePath . '" contains invalid json', 0, $e);
+        }
+
+        foreach ($fileData as $key => $data) {
+            $cacheKey = $this->getCacheKey((string) $key);
+
+            if ($this->cache->hasItem($cacheKey)) {
+                continue;
+            }
+
+            $this->cache->setItem($cacheKey, $data);
+        }
     }
 
     /**
@@ -246,5 +278,10 @@ class BrowserLoader implements ExtendedLoaderInterface
     public function warmupCache(): void
     {
         $this->init();
+    }
+
+    private function initPath(): void
+    {
+        $this->path = __DIR__ . '/../../data/browsers';
     }
 }

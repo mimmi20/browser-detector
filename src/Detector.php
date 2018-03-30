@@ -69,8 +69,8 @@ class Detector
      * @param array|\Psr\Http\Message\MessageInterface|string $headers
      *
      * @return \UaResult\Result\ResultInterface
-     *
      * @deprecated
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function getBrowser($headers): ResultInterface
     {
@@ -85,6 +85,7 @@ class Detector
      * @param string $useragent
      *
      * @return \UaResult\Result\Result
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function parseString(string $useragent)
     {
@@ -99,6 +100,7 @@ class Detector
      * @param array $headers
      *
      * @return \UaResult\Result\Result
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function parseArray(array $headers)
     {
@@ -113,6 +115,7 @@ class Detector
      * @param MessageInterface $message
      *
      * @return \UaResult\Result\Result
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function parseMessage(MessageInterface $message)
     {
@@ -125,10 +128,11 @@ class Detector
      * @param \UaRequest\GenericRequest $request
      *
      * @return \UaResult\Result\Result
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     private function parse(GenericRequest $request)
     {
-        $deviceFactory = new DeviceFactory(DeviceLoader::getInstance($this->cache, $this->logger));
+        $deviceFactory = new DeviceFactory($this->cache, $this->logger);
         $normalizer    = (new NormalizerFactory())->build();
         $deviceUa      = $normalizer->normalize($request->getDeviceUserAgent());
 
@@ -225,6 +229,5 @@ class Detector
         BrowserLoader::getInstance($this->cache, $this->logger)->warmupCache();
         PlatformLoader::getInstance($this->cache, $this->logger)->warmupCache();
         EngineLoader::getInstance($this->cache, $this->logger)->warmupCache();
-        DeviceLoader::getInstance($this->cache, $this->logger)->warmupCache();
     }
 }

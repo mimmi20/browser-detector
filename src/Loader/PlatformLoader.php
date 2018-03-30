@@ -19,6 +19,8 @@ use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
+use Seld\JsonLint\ParsingException;
+use Symfony\Component\Finder\Finder;
 use UaResult\Company\CompanyLoader;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
@@ -38,6 +40,16 @@ class PlatformLoader implements ExtendedLoaderInterface
     private $logger;
 
     /**
+     * @var string|null
+     */
+    private $path;
+
+    /**
+     * @var JsonParser
+     */
+    private $jsonParser;
+
+    /**
      * @var self|null
      */
     private static $instance;
@@ -52,6 +64,9 @@ class PlatformLoader implements ExtendedLoaderInterface
     {
         $this->cache  = $cache;
         $this->logger = $logger;
+        $this->jsonParser = new JsonParser();
+
+        $this->initPath();
     }
 
     /**
@@ -59,6 +74,7 @@ class PlatformLoader implements ExtendedLoaderInterface
      * @param \Psr\Log\LoggerInterface              $logger
      *
      * @return self
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public static function getInstance(CacheInterface $cache, LoggerInterface $logger)
     {
@@ -80,12 +96,14 @@ class PlatformLoader implements ExtendedLoaderInterface
     /**
      * initializes cache
      *
+     * @param bool   $load
+     *
      * @throws \Seld\JsonLint\ParsingException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
-    private function init(): void
+    private function init(bool $load = false): void
     {
         $initKey = $this->getCacheKey('initialized');
 
@@ -93,39 +111,43 @@ class PlatformLoader implements ExtendedLoaderInterface
             return;
         }
 
-        foreach ($this->getPlatforms() as $platformCode => $data) {
-            $cacheKey = $this->getCacheKey((string) $platformCode);
+        $finder = new Finder();
+        $finder->files();
+        $finder->name('*.json');
+        $finder->ignoreDotFiles(true);
+        $finder->ignoreVCS(true);
+        $finder->ignoreUnreadableDirs();
+        $finder->in($this->path);
 
-            if ($this->cache->hasItem($cacheKey)) {
-                continue;
+        $cacheFiles = [];
+
+        foreach ($finder as $file) {
+            /* @var \Symfony\Component\Finder\SplFileInfo $file */
+            try {
+                $devicesFile = $this->jsonParser->parse(
+                    $file->getContents(),
+                    JsonParser::DETECT_KEY_CONFLICTS
+                );
+            } catch (ParsingException $e) {
+                throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
             }
 
-            $this->cache->setItem($cacheKey, $data);
+            foreach ($devicesFile as $deviceKey => $deviceData) {
+
+                if (array_key_exists($deviceKey, $cacheFiles)) {
+                    continue;
+                }
+
+                $cacheFiles[$deviceKey]   = $file->getPathname();
+            }
+
+            if ($load) {
+                $this->loadFileToCache($file->getPathname());
+            }
         }
 
+        $this->cache->setItem($this->getCacheKey('cacheFiles'), $cacheFiles);
         $this->cache->setItem($initKey, true);
-    }
-
-    /**
-     * @throws \Seld\JsonLint\ParsingException
-     *
-     * @return \Generator|\stdClass[]
-     */
-    private function getPlatforms(): \Generator
-    {
-        static $platforms = null;
-
-        if (null === $platforms) {
-            $jsonParser = new JsonParser();
-            $platforms  = $jsonParser->parse(
-                file_get_contents(__DIR__ . '/../../data/platforms.json'),
-                JsonParser::DETECT_KEY_CONFLICTS
-            );
-        }
-
-        foreach ($platforms as $platformCode => $data) {
-            yield $platformCode => $data;
-        }
     }
 
     /**
@@ -198,13 +220,55 @@ class PlatformLoader implements ExtendedLoaderInterface
     }
 
     /**
-     * @param string $deviceKey
+     * @param string $platformKey
      *
      * @return string
      */
-    private function getCacheKey(string $deviceKey): string
+    private function getCacheKey(string $platformKey): string
     {
-        return self::CACHE_PREFIX . '_' . str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $deviceKey);
+        return sprintf(
+            '%s_%s_%s',
+            self::CACHE_PREFIX,
+            $this->clearCacheKey($this->path),
+            $this->clearCacheKey($platformKey)
+        );
+    }
+
+    /**
+     * @param string $key
+     *
+     * @return string
+     */
+    private function clearCacheKey(string $key)
+    {
+        return str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $key);
+    }
+
+    /**
+     * @param string $filePath
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     */
+    private function loadFileToCache(string $filePath): void
+    {
+        try {
+            $fileData = $this->jsonParser->parse(
+                file_get_contents($filePath),
+                JsonParser::DETECT_KEY_CONFLICTS
+            );
+        } catch (ParsingException $e) {
+            throw new \RuntimeException('file "' . $filePath . '" contains invalid json', 0, $e);
+        }
+
+        foreach ($fileData as $key => $data) {
+            $cacheKey = $this->getCacheKey((string) $key);
+
+            if ($this->cache->hasItem($cacheKey)) {
+                continue;
+            }
+
+            $this->cache->setItem($cacheKey, $data);
+        }
     }
 
     /**
@@ -216,5 +280,10 @@ class PlatformLoader implements ExtendedLoaderInterface
     public function warmupCache(): void
     {
         $this->init();
+    }
+
+    private function initPath(): void
+    {
+        $this->path = __DIR__ . '/../../data/platforms';
     }
 }

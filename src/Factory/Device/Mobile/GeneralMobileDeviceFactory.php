@@ -23,6 +23,11 @@ class GeneralMobileDeviceFactory implements Factory\FactoryInterface
     private $loader;
 
     /**
+     * @var string
+     */
+    private $genericDevice = 'general mobile device';
+
+    /**
      * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
      */
     public function __construct(ExtendedLoaderInterface $loader)
@@ -40,6 +45,6 @@ class GeneralMobileDeviceFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
-        return $this->loader->load('general mobile device', $useragent);
+        return $this->loader->load($this->genericDevice, $useragent);
     }
 }

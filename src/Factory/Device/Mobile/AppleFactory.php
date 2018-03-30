@@ -122,18 +122,7 @@ class AppleFactory implements Factory\FactoryInterface
      */
     private $genericDevice = 'general apple device';
 
-    /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
-     */
-    private $loader;
-
-    /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
-     */
-    public function __construct(ExtendedLoaderInterface $loader)
-    {
-        $this->loader = $loader;
-    }
+    use Factory\DeviceFactoryTrait;
 
     /**
      * detects the device name from the given user agent
@@ -145,24 +134,6 @@ class AppleFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s): array
     {
-        $matches = [];
-
-        if (preg_match('/(iphone|ipad|ipod)(\d+)[,_c](\d)/i', $useragent, $matches)) {
-            $key = 'apple ' . mb_strtolower($matches[1]) . ' ' . $matches[2] . ',' . $matches[3];
-
-            if ($this->loader->has($key)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        if (preg_match('/iph(\d+),(\d)/i', $useragent, $matches)) {
-            $key = 'apple iphone ' . $matches[1] . ',' . $matches[2];
-
-            if ($this->loader->has($key)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
         foreach ($this->devices as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);

@@ -33,45 +33,5 @@ class IjoyFactory implements Factory\FactoryInterface
      */
     private $genericDevice = 'general ijoy device';
 
-    /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
-     */
-    private $loader;
-
-    /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
-     */
-    public function __construct(ExtendedLoaderInterface $loader)
-    {
-        $this->loader = $loader;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @param string           $useragent
-     * @param \Stringy\Stringy $s
-     *
-     * @return array
-     */
-    public function detect(string $useragent, Stringy $s): array
-    {
-        $matches = [];
-
-        if (preg_match('/((?:i\-call|elektra)(?: [0-9a-z]+)?)/i', $useragent, $matches)) {
-            $key = 'ijoy ' . mb_strtolower($matches[1]);
-
-            if ($this->loader->has($key)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        foreach ($this->devices as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        return $this->loader->load($this->genericDevice, $useragent);
-    }
+    use Factory\DeviceFactoryTrait;
 }

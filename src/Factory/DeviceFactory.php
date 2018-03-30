@@ -11,10 +11,12 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
+use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
 /**
@@ -23,16 +25,23 @@ use Stringy\Stringy;
 class DeviceFactory implements FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
+     * @var \BrowserDetector\Cache\CacheInterface
      */
-    private $loader;
+    private $cache;
 
     /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
+     * @var \Psr\Log\LoggerInterface
      */
-    public function __construct(ExtendedLoaderInterface $loader)
+    private $logger;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface              $logger
+     */
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->loader = $loader;
+        $this->cache  = $cache;
+        $this->logger = $logger;
     }
 
     /**
@@ -42,27 +51,30 @@ class DeviceFactory implements FactoryInterface
      * @param \Stringy\Stringy $s
      *
      * @return array
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function detect(string $useragent, Stringy $s): array
     {
         if (!$s->containsAny(['freebsd', 'raspbian'], false)
             && $s->containsAny(['darwin', 'cfnetwork'], false)
         ) {
-            return (new Device\DarwinFactory($this->loader))->detect($useragent, $s);
+            return (new Device\DarwinFactory($this->cache, $this->logger))->detect($useragent, $s);
         }
 
         if ((new MobileDevice($s))->isMobile()) {
-            return (new Device\MobileFactory($this->loader))->detect($useragent, $s);
+            return (new Device\MobileFactory($this->cache, $this->logger))->detect($useragent, $s);
         }
 
         if ((new TvHelper($s))->isTvDevice()) {
-            return (new Device\TvFactory($this->loader))->detect($useragent, $s);
+            return (new Device\TvFactory($this->cache, $this->logger))->detect($useragent, $s);
         }
 
         if ((new Desktop($s))->isDesktopDevice()) {
-            return (new Device\DesktopFactory($this->loader))->detect($useragent, $s);
+            return (new Device\DesktopFactory($this->cache, $this->logger))->detect($useragent, $s);
         }
 
-        return $this->loader->load('unknown', $useragent);
+        $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
+        $loader = $loaderFactory('unknown', 'unknown');
+        return $loader($useragent);
     }
 }

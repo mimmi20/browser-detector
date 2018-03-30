@@ -11,57 +11,32 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
+use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Factory;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
 class TvFactory implements Factory\FactoryInterface
 {
     /**
-     * @var array
+     * @var \BrowserDetector\Cache\CacheInterface
      */
-    private $devices = [
-        'xbox one'                    => 'xbox one',
-        'xbox'                        => 'xbox 360',
-        'crkey'                       => 'google cromecast',
-        'dlink.dsm380'                => 'dsm 380',
-        'idl-6651n'                   => 'idl-6651n',
-        'sl32x'                       => 'sl32x',
-        'sl121'                       => 'sl121',
-        'sl150'                       => 'sl150',
-        'digio i33-hd+'               => 'telestar digio 33i hd+',
-        'mxl661l32'                   => 'samsung smart tv',
-        'smart-tv'                    => 'samsung smart tv',
-        '(;metz;mms;;;)'              => 'general metz tv',
-        '(;tcl; ; ; ;)'               => 'general tcl tv',
-        'netrangemmh'                 => 'netrangemmh',
-        'viera'                       => 'viera tv',
-        'technisat digicorder isio s' => 'digicorder isio s',
-        'technisat digit isio s'      => 'digit isio s',
-        'technisat multyvision isio'  => 'multyvision isio',
-        'cx919'                       => 'cx919',
-        'gxt_dongle_3188'             => 'cx919',
-        'apple tv'                    => 'appletv',
-        'netbox'                      => 'sony netbox',
-        'aston;xenahd twin connect'   => 'aston xenahd twin connect',
-        'arcelik;bk'                  => 'arcelik bk',
-        'arcelik;j5'                  => 'arcelik j5',
-        'mstar;t42'                   => 'mstar t42',
-        'aldinord; mb120'             => 'aldinord mb120',
-        'aldinord;'                   => 'general aldinord tv',
-    ];
+    private $cache;
 
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
+     * @var \Psr\Log\LoggerInterface
      */
-    private $loader;
+    private $logger;
 
     /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
+     * @param \BrowserDetector\Cache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface              $logger
      */
-    public function __construct(ExtendedLoaderInterface $loader)
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->loader = $loader;
+        $this->cache  = $cache;
+        $this->logger = $logger;
     }
 
     /**
@@ -71,31 +46,33 @@ class TvFactory implements Factory\FactoryInterface
      * @param \Stringy\Stringy $s
      *
      * @return array
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
+
         if (preg_match('/KDL\d{2}/', $useragent)) {
-            return (new Tv\SonyFactory($this->loader))->detect($useragent, $s);
+            $loader = $loaderFactory('sony', 'tv');
+            return $loader($useragent);
         }
 
         if ($s->containsAny(['nsz-gs7/gx70', 'sonydtv'], false)) {
-            return (new Tv\SonyFactory($this->loader))->detect($useragent, $s);
+            $loader = $loaderFactory('sony', 'tv');
+            return $loader($useragent);
         }
 
         if ($s->containsAny(['THOMSON', 'LF1V'], true)) {
-            return (new Tv\ThomsonFactory($this->loader))->detect($useragent, $s);
+            $loader = $loaderFactory('thomson', 'tv');
+            return $loader($useragent);
         }
 
         if ($s->containsAny(['philips', 'avm-'], false)) {
-            return (new Tv\PhilipsFactory($this->loader))->detect($useragent, $s);
+            $loader = $loaderFactory('philips', 'tv');
+            return $loader($useragent);
         }
 
-        foreach ($this->devices as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
-            }
-        }
-
-        return $this->loader->load('general tv device', $useragent);
+        $loader = $loaderFactory('generictv', 'tv');
+        return $loader($useragent);
     }
 }

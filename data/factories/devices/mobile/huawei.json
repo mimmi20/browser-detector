@@ -1,0 +1,449 @@
+{
+  "rules": {
+    "/bln\\-/i": {
+      "/bln\\-l21/i": "huawei bln-l21",
+      "/bln\\-al10/i": "huawei bln-al10",
+      "/bln\\-tl00/i": "huawei bln-tl00",
+      "/bln\\-tl10/i": "huawei bln-tl10"
+    },
+    "/can\\-/i": {
+      "/can\\-l01/i": "huawei can-l01",
+      "/can\\-l11/i": "huawei can-l11",
+      "/can\\-l02/i": "huawei can-l02",
+      "/can\\-l12/i": "huawei can-l12",
+      "/can\\-l03/i": "huawei can-l03",
+      "/can\\-l13/i": "huawei can-l13"
+    },
+    "/lua\\-/i": {
+      "/lua\\-l21/i": "huawei lua-l21"
+    },
+    "/scc\\-/i": {
+      "/scc\\-u21/i": "huawei scc-u21"
+    },
+    "/gra\\-/i": {
+      "/gra\\-l09/i": "huawei gra-l09",
+      "/gra\\-ul00/i": "huawei gra-ul00"
+    },
+    "/frd\\-/i": {
+      "/frd\\-l14/i": "huawei frd-l14",
+      "/frd\\-al10/i": "huawei frd-al10",
+      "/frd\\-al00/i": "huawei frd-al00",
+      "/frd\\-l19/i": "huawei frd-l19",
+      "/frd\\-l09/i": "huawei frd-l09",
+      "/frd\\-tl00/i": "huawei frd-tl00"
+    },
+    "/was\\-/i": {
+      "/was\\-lx1a/i": "huawei was-lx1a",
+      "/was\\-lx1/i": "huawei was-lx1",
+      "/was\\-lx2j/i": "huawei was-lx2j",
+      "/was\\-lx2/i": "huawei was-lx2",
+      "/was\\-lx3/i": "huawei was-lx3",
+      "/was\\-l03t/i": "huawei was-l03t"
+    },
+    "/btv\\-/i": {
+      "/btv\\-dl09/i": "huawei btv-dl09",
+      "/btv\\-w09/i": "huawei btv-w09"
+    },
+    "/duk\\-/i": {
+      "/duk\\-l09/i": "huawei duk-l09"
+    },
+    "/lon\\-/i": {
+      "/lon\\-l29/i": "huawei lon-l29"
+    },
+    "/plk\\-/i": {
+      "/plk\\-tl01h/i": "huawei plk-tl01h",
+      "/plk\\-l01/i": "huawei plk-l01",
+      "/plk\\-cl00/i": "huawei plk-cl00",
+      "/plk\\-ul00/i": "huawei plk-ul00",
+      "/plk\\-tl00/i": "huawei plk-tl00",
+      "/plk\\-al10/i": "huawei plk-al10"
+    },
+    "/pra\\-/i": {
+      "/pra\\-la1/i": "huawei pra-la1",
+      "/pra\\-lx1/i": "huawei pra-lx1"
+    },
+    "/nem\\-/i": {
+      "/nem\\-al10/i": "huawei nem-al10",
+      "/nem\\-l51/i": "huawei nem-l51",
+      "/nem\\-l22/i": "huawei nem-l22",
+      "/nem\\-l21/i": "huawei nem-l21"
+    },
+    "/vtr\\-/i": {
+      "/vtr\\-l09/i": "huawei vtr-l09",
+      "/vtr\\-al00/i": "huawei vtr-al00",
+      "/vtr\\-tl00/i": "huawei vtr-tl00",
+      "/vtr\\-l29/i": "huawei vtr-l29"
+    },
+    "/che2\\-/i": {
+      "/che2\\-l11/i": "huawei che2-l11",
+      "/che2\\-tl00m/i": "huawei che2-tl00m",
+      "/che2\\-ul00/i": "huawei che2-ul00",
+      "/che2\\-tl00h/i": "huawei che2-tl00h",
+      "/che2\\-tl00/i": "huawei che2-tl00"
+    },
+    "/cam\\-/i": {
+      "/cam\\-l21/i": "huawei cam-l21"
+    },
+    "/mha\\-/i": {
+      "/mha\\-al00/i": "huawei mha-al00",
+      "/mha\\-l29/i": "huawei mha-l29",
+      "/mha\\-l09/i": "huawei mha-l09"
+    },
+    "/h60\\-/i": {
+      "/h60\\-l01/i": "huawei h60-l01",
+      "/h60\\-l02/i": "huawei h60-l02",
+      "/h60\\-l03/i": "huawei h60-l03",
+      "/h60\\-l04/i": "huawei h60-l04",
+      "/h60\\-l11/i": "huawei h60-l11",
+      "/h60\\-l12/i": "huawei h60-l12"
+    },
+    "/tag\\-/i": {
+      "/tag\\-al00/i": "huawei tag-al00",
+      "/tag\\-l21/i": "huawei tag-l21",
+      "/tag\\-l01/i": "huawei tag-l01"
+    },
+    "/ale\\-/i": {
+      "/ale\\-ul00/i": "huawei ale-ul00",
+      "/ale\\-cl00/i": "huawei ale-cl00",
+      "/ale\\-21/i": "huawei ale-l21",
+      "/ale\\-l23/i": "huawei ale-l23",
+      "/ale\\-l21/i": "huawei ale-l21",
+      "/ale\\-l02/i": "huawei ale-l02"
+    },
+    "/p7\\-/i": {
+      "/p7\\-l10/i": "huawei p7-l10",
+      "/p7\\-l09/i": "huawei p7-l09"
+    },
+    "/p7 mini/i": "huawei p7 mini",
+    "/p7mini/i": "huawei p7 mini",
+    "/eva\\-/i": {
+      "/eva\\-l19/i": "huawei eva-l19",
+      "/eva\\-l09/i": "huawei eva-l09"
+    },
+    "/scl\\-/i": {
+      "/scl\\-l01/i": "huawei scl-l01",
+      "/scl\\-l21/i": "huawei scl-l21",
+      "/scl\\-tl00h/i": "huawei scl-tl00h",
+      "/scl\\-u31/i": "huawei scl-u31",
+      "/scl\\-cl00/i": "huawei scl-cl00",
+      "/scl\\-al00/i": "huawei scl-al00"
+    },
+    "/nxt\\-/i": {
+      "/nxt\\-ul00/i": "huawei nxt-ul00",
+      "/nxt\\-l29/i": "huawei nxt-l29",
+      "/nxt\\-l09/i": "huawei nxt-l09",
+      "/nxt\\-al10/i": "huawei nxt-al10"
+    },
+    "/gem\\-/i": {
+      "/gem\\-703lt/i": "huawei gem-703lt",
+      "/gem\\-703l/i": "huawei gem-703l",
+      "/gem\\-702l/i": "huawei gem-702l",
+      "/gem\\-701l/i": "huawei gem-701l"
+    },
+    "/g630\\-/i": {
+      "/g630\\-u251/i": "huawei g630-u251",
+      "/g630\\-u20/i": "huawei g630-u20",
+      "/g630\\-u10/i": "huawei g630-u10"
+    },
+    "/cun\\-/i": {
+      "/cun\\-l21/i": "huawei cun-l21",
+      "/cun\\-l03/i": "huawei cun-l03",
+      "/cun\\-l01/i": "huawei cun-l01"
+    },
+    "/chc\\-/i": {
+      "/chc\\-u23/i": "huawei chc-u23",
+      "/chc\\-u03/i": "huawei chc-u03",
+      "/chc\\-u01/i": "huawei chc-u01"
+    },
+    "/p2\\-/i": {
+      "/p2\\-6011/i": "huawei p2-6011"
+    },
+    "/g7\\-/i": {
+      "/g7\\-l11/i": "huawei g7-l11",
+      "/g7\\-l01/i": "huawei g7-l01"
+    },
+    "/g6\\-/i": {
+      "/g6\\-l11/i": "huawei g6-l11",
+      "/g6\\-u10/i": "huawei g6-u10"
+    },
+    "/pe\\-/i": {
+      "/pe\\-tl10/i": "huawei pe-tl10"
+    },
+    "/rio\\-/i": {
+      "/rio\\-l01/i": "huawei rio-l01"
+    },
+    "/crr\\-/i": {
+      "/crr\\-l09/i": "huawei crr-l09"
+    },
+    "/vns\\-/i": {
+      "/vns\\-l31/i": "huawei vns-l31",
+      "/vns\\-l22/i": "huawei vns-l22",
+      "/vns\\-l21/i": "huawei vns-l21"
+    },
+    "/g750\\-/i": {
+      "/g750\\-u10/i": "huawei g750-u10",
+      "/g750\\-t00/i": "huawei g750-t00"
+    },
+    "/g740\\-/i": {
+      "/g740\\-l00/i": "huawei g740-l00"
+    },
+    "/g730\\-/i": {
+      "/g730\\-u27/i": "huawei g730-u27",
+      "/g730\\-u10/i": "huawei g730-u10"
+    },
+    "/tit\\-/i": {
+      "/tit\\-u02/i": "huawei tit-u02"
+    },
+    "/y635\\-/i": {
+      "/y635\\-l21/i": "huawei y635-l21",
+      "/y635\\-l01/i": "huawei y635-l01"
+    },
+    "/y625\\-/i": {
+      "/y625\\-u51/i": "huawei y625-u51",
+      "/y625\\-u21/i": "huawei y625-u21"
+    },
+    "/y600\\-/i": {
+      "/y600\\-u151/i": "huawei y600-u151",
+      "/y600\\-u20/i": "huawei y600-u20",
+      "/y600\\-u00/i": "huawei y600-u00"
+    },
+    "/g610\\-/i": {
+      "/g610\\-u20/i": "huawei g610-u20",
+      "/g610\\-u00/i": "huawei g610-u00",
+      "/g610\\-c00/i": "huawei g610-c00"
+    },
+    "/g621\\-/i": {
+      "/g621\\-tl00m/i": "huawei g621-tl00m",
+      "/g621\\-tl00/i": "huawei g621-tl00"
+    },
+    "/h30\\-/i": {
+      "/h30\\-c00/i": "huawei h30-c00",
+      "/h30\\-l02/i": "huawei h30-l02",
+      "/h30\\-l01m/i": "huawei h30-l01m",
+      "/h30\\-l01/i": "huawei h30-l01",
+      "/h30\\-t00/i": "huawei h30-t00",
+      "/h30\\-t10/i": "huawei h30-t10"
+    },
+    "/chm\\-/i": {
+      "/chm\\-u01/i": "huawei chm-u01",
+      "/chm\\-tl00h/i": "huawei chm-tl00h",
+      "/chm\\-tl00/i": "huawei chm-tl00",
+      "/chm\\-ul00/i": "huawei chm-ul00",
+      "/chm\\-cl00/i": "huawei chm-cl00"
+    },
+    "/che\\-/i": {
+      "/che\\-tl00h/i": "huawei che-tl00h"
+    },
+    "/che1\\-/i": {
+      "/che1\\-cl10/i": "huawei che1-cl10",
+      "/che1\\-cl20/i": "huawei che1-cl20"
+    },
+    "/y320\\-/i": {
+      "/y320\\-u30/i": "huawei y320-u30",
+      "/y320\\-u10/i": "huawei y320-u10",
+      "/y320\\-t00/i": "huawei y320-t00"
+    },
+    "/vky\\-/i": {
+      "/vky\\-al00/i": "huawei vky-al00",
+      "/vky\\-l29/i": "huawei vky-l29",
+      "/vky\\-l09/i": "huawei vky-l09"
+    },
+    "/ags\\-/i": {
+      "/ags\\-l09/i": "huawei ags-l09",
+      "/ags\\-l03/i": "huawei ags-l03",
+      "/ags\\-w09/i": "huawei ags-w09"
+    },
+    "/bnd\\-/i": {
+      "/bnd\\-l21/i": "huawei bnd-l21",
+      "/bnd\\-l22/i": "huawei bnd-l22",
+      "/bnd\\-l24/i": "huawei bnd-l24",
+      "/bnd\\-al10/i": "huawei bnd-al10",
+      "/bnd\\-tl10/i": "huawei bnd-tl10"
+    },
+    "/mya\\-/i": {
+      "/mya\\-l41/i": "huawei mya-l41",
+      "/mya\\-l02/i": "huawei mya-l02",
+      "/mya\\-l03/i": "huawei mya-l03",
+      "/mya\\-l22/i": "huawei mya-l22",
+      "/mya\\-l23/i": "huawei mya-l23",
+      "/mya\\-al10/i": "huawei mya-al10",
+      "/mya\\-tl10/i": "huawei mya-tl10"
+    },
+    "/bah\\-/i": {
+      "/bah\\-l09/i": "huawei bah-l09",
+      "/bah\\-w09/i": "huawei bah-w09"
+    },
+    "/bla\\-/i": {
+      "/bla\\-l09/i": "huawei bla-l09",
+      "/bla\\-l29/i": "huawei bla-l29",
+      "/bla\\-al10/i": "huawei bla-al10"
+    },
+    "/rne\\-/i": {
+      "/rne\\-l21/i": "huawei rne-l21",
+      "/rne\\-l22/i": "huawei rne-l22",
+      "/rne\\-l01/i": "huawei rne-l01",
+      "/rne\\-l23/i": "huawei rne-l23",
+      "/rne\\-al10/i": "huawei rne-al10",
+      "/rne\\-l02/i": "huawei rne-l02"
+    },
+    "/fig\\-/i": {
+      "/fig\\-lx1/i": "huawei fig-lx1",
+      "/fig\\-lx2/i": "huawei fig-lx2",
+      "/fig\\-lx3/i": "huawei fig-lx3",
+      "/fig\\-la1/i": "huawei fig-la1"
+    },
+    "/honor 6/i": "huawei h60-l01",
+    "/nexus 6p/i": "huawei nexus 6p",
+    "/hi6210sft/i": "huawei hi6210sft",
+    "/grace/i": "huawei grace",
+    "/huaweinxt/i": "huawei nxt-l09",
+    "/g620s\\-l01/i": "huawei g620s-l01",
+    "/g606\\-t00/i": "huawei g606-t00",
+    "/y560\\-l01/i": "huawei y560-l01",
+    "/y550\\-l01/i": "huawei y550-l01",
+    "/y541\\-u02/i": "huawei y541-u02",
+    "/y540\\-u01/i": "huawei y540-u01",
+    "/y530\\-u00/i": "huawei y530-u00",
+    "/y511\\-t00/i": "huawei y511-t00",
+    "/y511/i": "huawei y511",
+    "/y360\\-u61/i": "huawei y360-u61",
+    "/y360\\-u31/i": "huawei y360-u31",
+    "/y340\\-u081/i": "huawei y340-u081",
+    "/y336\\-u02/i": "huawei y336-u02",
+    "/y330\\-u11/i": "huawei y330-u11",
+    "/y330\\-u05/i": "huawei y330-u05",
+    "/y330\\-u01/i": "huawei y330-u01",
+    "/y300/i": "huawei y300",
+    "/y220\\-u10/i": "huawei y220-u10",
+    "/y220\\-u00/i": "huawei y220-u00",
+    "/y210\\-0100/i": "huawei y210-0100",
+    "/w2\\-u00/i": "huawei w2-u00",
+    "/w1\\-u00/i": "huawei w1-u00",
+    "/h30\\-u10/i": "huawei h30-u10",
+    "/kiw\\-l21/i": "huawei kiw-l21",
+    "/lyo\\-l21/i": "huawei lyo-l21",
+    "/vodafone 858/i": "huawei vodafone 858",
+    "/vodafone 845/i": "huawei vodafone 845",
+    "/u9510e/i": "huawei u9510e",
+    "/u9510/i": "huawei u9510",
+    "/u9508/i": "huawei u9508",
+    "/u9500/i": "huawei u9500",
+    "/u9202l\\-4/i": "huawei u9202l-4",
+    "/u9202l\\-3/i": "huawei u9202l-3",
+    "/u9202l\\-2/i": "huawei u9202l-2",
+    "/u9202l\\-1/i": "huawei u9202l-1",
+    "/u9200/i": "huawei u9200",
+    "/u8950n\\-1/i": "huawei u8950n-1",
+    "/u8950n/i": "huawei u8950n",
+    "/u8950d/i": "huawei u8950d",
+    "/u8950\\-1/i": "huawei u8950-1",
+    "/u8950/i": "huawei u8950",
+    "/u8860/i": "huawei u8860",
+    "/u8850/i": "huawei u8850",
+    "/u8825/i": "huawei u8825",
+    "/u8818/i": "huawei u8818",
+    "/u8815/i": "huawei u8815",
+    "/u8800/i": "huawei u8800",
+    "/u8686/i": "huawei u8686",
+    "/prism ii/i": "huawei u8686",
+    "/u8667/i": "huawei u8667",
+    "/huawei u8666 build/huaweiu8666e/i": "huawei u8666",
+    "/u8666e/i": "huawei u8666e",
+    "/u8666/i": "huawei u8666",
+    "/u8665/i": "huawei u8665",
+    "/u8655\\-51/i": "huawei u8655-51",
+    "/u8655\\-1/i": "huawei u8655-1",
+    "/u8655/i": "huawei u8655",
+    "/huawei\\-u8651t/i": "huawei u8651t",
+    "/huawei\\-u8651s/i": "huawei u8651s",
+    "/huawei\\-u8651/i": "huawei u8651",
+    "/u8650/i": "huawei u8650",
+    "/u8600/i": "huawei u8600",
+    "/u8520/i": "huawei u8520",
+    "/u8510/i": "huawei s41hw",
+    "/u8500/i": "huawei u8500",
+    "/u8350/i": "huawei u8350",
+    "/u8230/i": "huawei u8230",
+    "/u8185/i": "huawei u8185",
+    "/u8180/i": "huawei u8180",
+    "/u8110/i": "huawei u8110",
+    "/tsp21/i": "huawei u8110",
+    "/u8100/i": "huawei u8100",
+    "/u7510/i": "huawei u7510",
+    "/s8600/i": "huawei s8600",
+    "/h883g/i": "huawei h883g",
+    "/h881c/i": "huawei h881c",
+    "/h867g/i": "huawei h867g",
+    "/p6\\-u06/i": "huawei p6-u06",
+    "/p6 s\\-u06/i": "huawei p6 s-u06",
+    "/ p6 /i": "huawei p6",
+    "/mt7\\-cl00/i": "huawei mt7-cl00",
+    "/mt7\\-tl10/i": "huawei mt7-tl10",
+    "/mt7\\-l09/i": "huawei mt7-l09",
+    "/jazz/i": "huawei mt7-l09",
+    "/mt2\\-l01/i": "huawei mt2-l01",
+    "/mt1\\-u06/i": "huawei mt1-u06",
+    "/s8\\-701w/i": "huawei s8-701w",
+    "/t1\\-701u/i": "huawei t1-701u",
+    "/t1 7\\.0/i": "huawei t1-701u",
+    "/t1\\-a21l/i": "huawei t1-a21l",
+    "/t1\\-a21w/i": "huawei t1-a21w",
+    "/m2\\-a01l/i": "huawei m2-a01l",
+    "/fdr\\-a01l/i": "huawei fdr-a01l",
+    "/fdr\\-a01w/i": "huawei fdr-a01w",
+    "/m2\\-a01w/i": "huawei m2-a01w",
+    "/m2\\-801w/i": "huawei m2-801w",
+    "/m2\\-801l/i": "huawei m2-801l",
+    "/ath\\-al00/i": "huawei ath-al00",
+    "/ath\\-ul01/i": "huawei ath-ul01",
+    "/mediapad x1 7\\.0/i": "huawei mediapad x1 7.0",
+    "/mediapad t1 10 4g/i": "huawei mediapad t1 10 4g",
+    "/mediapad t1 8\\.0/i": "huawei s8-701u",
+    "/mediapad m1 8\\.0/i": "huawei mediapad m1 8.0",
+    "/mediapad 10 link\\+/i": "huawei mediapad 10+",
+    "/mediapad 10 fhd/i": "huawei mediapad 10 fhd",
+    "/mediapad 7 lite/i": "huawei mediapad 7 lite",
+    "/mediapad 7 classic/i": "huawei mediapad 7 classic",
+    "/mediapad 7 youth/i": "huawei mediapad 7 youth",
+    "/mediapad/i": "huawei s7-301w",
+    "/m931/i": "huawei m931",
+    "/m860/i": "huawei m860",
+    "/m636/i": "huawei m636",
+    "/m635/i": "huawei m635",
+    "/ideos s7 slim/i": "huawei s7_slim",
+    "/ideos s7/i": "huawei ideos s7",
+    "/ideos /i": "huawei bm-swu300",
+    "/g510\\-0100/i": "huawei g510-0100",
+    "/g7300/i": "huawei g7300",
+    "/g6800/i": "huawei g6800",
+    "/g6609/i": "huawei g6609",
+    "/g6600/i": "huawei g6600",
+    "/g6310/i": "huawei g6310",
+    "/g700\\-u10/i": "huawei g700-u10",
+    "/g700\\-u00/i": "huawei g700-u00",
+    "/g527\\-u081/i": "huawei g527-u081",
+    "/g525\\-u00/i": "huawei g525-u00",
+    "/g510/i": "huawei g510",
+    "/hn3\\-u01/i": "huawei hn3-u01",
+    "/hol\\-u19/i": "huawei hol-u19",
+    "/vie\\-l09/i": "huawei vie-l09",
+    "/vie\\-al10/i": "huawei vie-al10",
+    "/nmo\\-l31/i": "huawei nmo-l31",
+    "/d2\\-0082/i": "huawei d2-0082",
+    "/p8max/i": "huawei p8max",
+    "/4afrika/i": "huawei 4afrika",
+    "/g2800/i": "huawei g2800",
+    "/t8600/i": "huawei t8600",
+    "/t8300/i": "huawei t8300",
+    "/t8100/i": "huawei t8100",
+    "/m750/i": "huawei m750",
+    "/mt2l03/i": "huawei mt2l03",
+    "/c8817l/i": "huawei c8817l",
+    "/c8815/i": "huawei c8815",
+    "/c8813q/i": "huawei c8813q",
+    "/c8813/i": "huawei c8813",
+    "/c8812/i": "huawei c8812",
+    "/c8500s/i": "huawei c8500s"
+  },
+  "generic": "general huawei device"
+}

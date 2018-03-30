@@ -45,6 +45,8 @@ class MicrosoftFactory implements Factory\FactoryInterface
         $this->loader = $loader;
     }
 
+    use Factory\DeviceFactoryTrait;
+
     /**
      * detects the device name from the given user agent
      *

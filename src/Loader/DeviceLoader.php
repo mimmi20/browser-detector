@@ -21,7 +21,7 @@ use UaDeviceType\TypeLoader;
 use UaResult\Company\CompanyLoader;
 use UaResult\Device\Device;
 
-class DeviceLoader implements ExtendedLoaderInterface
+class DeviceLoader
 {
     private const CACHE_PREFIX = 'device';
 
@@ -36,54 +36,85 @@ class DeviceLoader implements ExtendedLoaderInterface
     private $logger;
 
     /**
-     * @var self|null
+     * @var string|null
      */
-    private static $instance;
+    private $devicesPath;
+
+    /**
+     * @var string|null
+     */
+    private $rulesPath;
+
+    /**
+     * @var JsonParser
+     */
+    private $jsonParser;
+
+    /**
+     * @var array
+     */
+    private $devices = [];
+
+    /**
+     * @var string|null
+     */
+    private $genericDevice = null;
 
     /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface              $logger
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @param string                                $path
+     * @param string                                $mode
      */
-    private function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(CacheInterface $cache, LoggerInterface $logger, string $path, string $mode)
     {
         $this->cache  = $cache;
         $this->logger = $logger;
+        $this->jsonParser = new JsonParser();
+
+        $this->initPath($path, $mode);
     }
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
+     * @param string $useragent
      *
+     * @return array
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return self
      */
-    public static function getInstance(CacheInterface $cache, LoggerInterface $logger)
+    public function __invoke(string $useragent): array
     {
-        if (null === self::$instance) {
-            self::$instance = new self($cache, $logger);
+        $this->init();
+        return $this->detectInArray($this->devices, $useragent);
+    }
+
+    /**
+     * @param array            $devices
+     * @param string           $useragent
+     *
+     * @return array
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     */
+    private function detectInArray(array $devices, string $useragent): array
+    {
+        foreach ($devices as $search => $key) {
+            if (!preg_match($search, $useragent)) {
+                continue;
+            }
+
+            if (is_array($key)) {
+                return $this->detectInArray($key, $useragent);
+            }
+
+            return $this->load($key, $useragent);
         }
 
-        return self::$instance;
-    }
-
-    /**
-     * @return void
-     */
-    public static function resetInstance(): void
-    {
-        self::$instance = null;
+        return $this->load($this->genericDevice, $useragent);
     }
 
     /**
      * initializes cache
-     *
-     * @throws \RuntimeException
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     private function init(): void
     {
@@ -93,65 +124,50 @@ class DeviceLoader implements ExtendedLoaderInterface
             return;
         }
 
-        foreach ($this->getDevices() as $deviceKey => $data) {
-            $cacheKey = $this->getCacheKey((string) $deviceKey);
+        $finder = new Finder();
+        $finder->files();
+        $finder->name('*.json');
+        $finder->ignoreDotFiles(true);
+        $finder->ignoreVCS(true);
+        $finder->ignoreUnreadableDirs();
+        $finder->in($this->devicesPath);
 
-            if ($this->cache->hasItem($cacheKey)) {
-                continue;
+        foreach ($finder as $file) {
+            /* @var \Symfony\Component\Finder\SplFileInfo $file */
+            try {
+                $fileData = $this->jsonParser->parse(
+                    $file->getContents(),
+                    JsonParser::DETECT_KEY_CONFLICTS
+                );
+            } catch (ParsingException $e) {
+                throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
             }
 
-            $this->cache->setItem($cacheKey, $data);
+            foreach ($fileData as $key => $data) {
+                $cacheKey = $this->getCacheKey((string) $key);
+
+                if ($this->cache->hasItem($cacheKey)) {
+                    $this->logger->warning(sprintf('deviceKey "%s" was defined more than once', $key));
+                    continue;
+                }
+
+                $this->cache->setItem($cacheKey, $data);
+            }
         }
+
+        try {
+            $fileData = $this->jsonParser->parse(
+                $this->rulesPath,
+                JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
+            );
+        } catch (ParsingException $e) {
+            throw new \RuntimeException('file "' . $this->rulesPath . '" contains invalid json', 0, $e);
+        }
+
+        $this->devices       = $fileData['rules'];
+        $this->genericDevice = $fileData['generic'];
 
         $this->cache->setItem($initKey, true);
-    }
-
-    /**
-     * @throws \RuntimeException
-     *
-     * @return \Generator|\stdClass[]
-     */
-    private function getDevices(): \Generator
-    {
-        static $devices = null;
-
-        if (null === $devices) {
-            $jsonParser = new JsonParser();
-            $devices    = [];
-
-            $finder = new Finder();
-            $finder->files();
-            $finder->name('*.json');
-            $finder->ignoreDotFiles(true);
-            $finder->ignoreVCS(true);
-            $finder->ignoreUnreadableDirs();
-            $finder->in(__DIR__ . '/../../data/devices/');
-
-            foreach ($finder as $file) {
-                /* @var \Symfony\Component\Finder\SplFileInfo $file */
-
-                try {
-                    $devicesFile = $jsonParser->parse(
-                        $file->getContents(),
-                        JsonParser::DETECT_KEY_CONFLICTS
-                    );
-                } catch (ParsingException $e) {
-                    throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
-                }
-
-                foreach ($devicesFile as $deviceKey => $deviceData) {
-                    if (array_key_exists($deviceKey, $devices)) {
-                        throw new \RuntimeException('device key "' . $deviceKey . '" was defined more then once');
-                    }
-
-                    $devices[$deviceKey] = $deviceData;
-                }
-            }
-        }
-
-        foreach ($devices as $deviceKey => $data) {
-            yield $deviceKey => $data;
-        }
     }
 
     /**
@@ -159,15 +175,15 @@ class DeviceLoader implements ExtendedLoaderInterface
      *
      * @return bool
      */
-    public function has(string $deviceKey): bool
+    private function has(string $deviceKey): bool
     {
         try {
             return $this->cache->hasItem($this->getCacheKey($deviceKey));
         } catch (InvalidArgumentException $e) {
             $this->logger->info($e);
-
-            return false;
         }
+
+        return false;
     }
 
     /**
@@ -175,10 +191,10 @@ class DeviceLoader implements ExtendedLoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
-     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @return array
      */
-    public function load(string $deviceKey, string $useragent = ''): array
+    private function load(string $deviceKey, string $useragent = ''): array
     {
         if (!$this->has($deviceKey)) {
             throw new NotFoundException('the device with key "' . $deviceKey . '" was not found');
@@ -191,16 +207,13 @@ class DeviceLoader implements ExtendedLoaderInterface
         }
 
         $platformKey = $deviceData->platform;
+        $platform    = null;
 
-        if (null === $platformKey) {
-            $platform = null;
-        } else {
+        if (null !== $platformKey) {
             try {
                 $platform = PlatformLoader::getInstance($this->cache, $this->logger)->load($platformKey, $useragent);
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
-
-                $platform = null;
             }
         }
 
@@ -228,16 +241,31 @@ class DeviceLoader implements ExtendedLoaderInterface
      */
     private function getCacheKey(string $deviceKey): string
     {
-        return self::CACHE_PREFIX . '_' . str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $deviceKey);
+        return sprintf(
+            '%s_%s_%s',
+            self::CACHE_PREFIX,
+            $this->clearCacheKey($this->devicesPath),
+            $this->clearCacheKey($deviceKey)
+        );
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @param string $key
      *
-     * @return void
+     * @return string
      */
-    public function warmupCache(): void
+    private function clearCacheKey(string $key)
     {
-        $this->init();
+        return str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $key);
+    }
+
+    /**
+     * @param string $company
+     * @param string $mode
+     */
+    private function initPath(string $company, string $mode): void
+    {
+        $this->devicesPath = __DIR__ . '/../../data/devices/' . $company;
+        $this->rulesPath   = __DIR__ . '/../../data/factories/devices/' . $mode . '/'. $company . '.json';
     }
 }

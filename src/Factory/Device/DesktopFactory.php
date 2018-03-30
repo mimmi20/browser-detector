@@ -11,24 +11,33 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
+use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Factory;
 use BrowserDetector\Helper;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
 class DesktopFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
+     * @var \BrowserDetector\Cache\CacheInterface
      */
-    private $loader;
+    private $cache;
 
     /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
+     * @var \Psr\Log\LoggerInterface
      */
-    public function __construct(ExtendedLoaderInterface $loader)
+    private $logger;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface              $logger
+     */
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->loader = $loader;
+        $this->cache  = $cache;
+        $this->logger = $logger;
     }
 
     /**
@@ -38,37 +47,35 @@ class DesktopFactory implements Factory\FactoryInterface
      * @param \Stringy\Stringy $s
      *
      * @return array
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function detect(string $useragent, Stringy $s): array
     {
+        $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
+
         if ((new Helper\Windows($s))->isWindows()) {
-            return (new Desktop\WindowsFactory($this->loader))->detect($useragent, $s);
+            $loader = $loaderFactory('windows', 'desktop');
+            return $loader($useragent);
         }
 
-        if ($s->contains('raspbian', false)) {
-            return $this->loader->load('raspberry pi', $useragent);
-        }
-
-        if ($s->containsAll(['debian', 'rpi'], false)) {
-            return $this->loader->load('raspberry pi', $useragent);
+        if ($s->containsAny(['raspbian', 'eeepc', 'hp-ux 9000'], false)
+            || $s->containsAll(['debian', 'rpi'], false)
+        ) {
+            $loader = $loaderFactory('genericdesktop', 'desktop');
+            return $loader($useragent);
         }
 
         if ((new Helper\Linux($s))->isLinux()) {
-            return $this->loader->load('linux desktop', $useragent);
+            $loader = $loaderFactory('linux', 'desktop');
+            return $loader($useragent);
         }
 
         if ((new Helper\Macintosh($s))->isMacintosh()) {
-            return (new Desktop\AppleFactory($this->loader))->detect($useragent, $s);
+            $loader = $loaderFactory('apple', 'desktop');
+            return $loader($useragent);
         }
 
-        if ($s->contains('eeepc', false)) {
-            return $this->loader->load('eee pc', $useragent);
-        }
-
-        if ($s->contains('hp-ux 9000', false)) {
-            return $this->loader->load('9000', $useragent);
-        }
-
-        return $this->loader->load('general desktop', $useragent);
+        $loader = $loaderFactory('generaldesktop', 'desktop');
+        return $loader($useragent);
     }
 }

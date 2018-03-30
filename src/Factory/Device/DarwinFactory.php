@@ -11,8 +11,10 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
+use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Factory;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
 /**
@@ -21,16 +23,23 @@ use Stringy\Stringy;
 class DarwinFactory implements Factory\FactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
+     * @var \BrowserDetector\Cache\CacheInterface
      */
-    private $loader;
+    private $cache;
 
     /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
+     * @var \Psr\Log\LoggerInterface
      */
-    public function __construct(ExtendedLoaderInterface $loader)
+    private $logger;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface              $logger
+     */
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->loader = $loader;
+        $this->cache  = $cache;
+        $this->logger = $logger;
     }
 
     /**
@@ -40,11 +49,11 @@ class DarwinFactory implements Factory\FactoryInterface
      * @param \Stringy\Stringy $s
      *
      * @return array
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function detect(string $useragent, Stringy $s): array
     {
-        $appleMobileFactory  = new Mobile\AppleFactory($this->loader);
-        $appleDesktopFactory = new Desktop\AppleFactory($this->loader);
+        $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
 
         $mobileCodes = [
             'cfnetwork/808',
@@ -62,9 +71,11 @@ class DarwinFactory implements Factory\FactoryInterface
         ];
 
         if ($s->containsAny($mobileCodes, false)) {
-            return $appleMobileFactory->detect($useragent, $s);
+            $loader = $loaderFactory('apple', 'mobile');
+        } else {
+            $loader = $loaderFactory('apple', 'desktop');
         }
 
-        return $appleDesktopFactory->detect($useragent, $s);
+        return $loader($useragent);
     }
 }

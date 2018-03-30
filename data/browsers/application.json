@@ -1,1515 +1,1515 @@
 {
-    "1password": {
-        "name": "1Password",
-        "manufacturer": "AgileBits",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "1Password"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "1passwordthumbs": {
-        "name": "1PasswordThumbs",
-        "manufacturer": "AgileBits",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "1PasswordThumbs"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "access": {
-        "name": "Access",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftAccess",
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "adobe air": {
-        "name": "Adobe AIR",
-        "manufacturer": "Adobe",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "AdobeAIR"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "aldiko": {
-        "name": "Aldiko",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Aldiko"
-            ]
-        },
-        "engine": null
-    },
-    "alltop app": {
-        "name": "Alltop App",
-        "manufacturer": "Alltop",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Alltop"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "android download manager": {
-        "name": "Android Download Manager",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "AndroidDownloadManager"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "appcent": {
-        "name": "Appcent",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Appcent"
-            ]
-        },
-        "engine": null
-    },
-    "apple appstore app": {
-        "name": "AppStore App",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "AppStore"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "apple mobilenotes": {
-        "name": "MobileNotes",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "apple notes app": {
-        "name": "Notes App",
-        "manufacturer": "Apple",
-        "pdfSupport": false,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "com\\.apple\\.Notes\\.SharingExtension"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "atbat": {
-        "name": "AtBat",
-        "manufacturer": "MLB",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "AtBat"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "baidu box app": {
-        "name": "Baidu Box App",
-        "manufacturer": "Baidu",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "baiduboxapp"
-            ]
-        },
-        "engine": null
-    },
-    "basecamp3": {
-        "name": "Basecamp3",
-        "manufacturer": "Basecamp",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Basecamp3"
-            ]
-        },
-        "engine": null
-    },
-    "bb work connect": {
-        "name": "BB Work Connect",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "BB_Work_Connect"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "billigfluegefinal app": {
-        "name": "billigFluegeFinal App",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "BilligFluegeFinal",
-                "billigFluegeFinal"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "bingweb": {
-        "name": "BingWeb App",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "BingWeb"
-            ]
-        },
-        "engine": "blink"
-    },
-    "cfnetwork": {
-        "name": "CFNetwork",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "coast": {
-        "name": "Coast",
-        "manufacturer": "Opera",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "OperaCoast",
-                "Opera%20Coast",
-                "Coast"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "cobalt": {
-        "name": "Cobalt Application Container",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Cobalt"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "coremedia": {
-        "name": "CoreMedia",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "CoreMedia v",
-                "AppleCoreMedia"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "coursera mobile app": {
-        "name": "Coursera Mobile App",
-        "manufacturer": "Coursera",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Coursera\\-Mobile"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "crosswalk": {
-        "name": "Crosswalk App",
-        "manufacturer": "Intel Corporation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Crosswalk"
-            ]
-        },
-        "engine": "blink"
-    },
-    "crowsnest mobile app": {
-        "name": "Crowsnest Mobile App",
-        "manufacturer": "Gocro",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Crowsnest"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "cyberduck": {
-        "name": "Cyberduck",
-        "manufacturer": "Iterate",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Cyberduck"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "cybeye": {
-        "name": "CybEye",
-        "manufacturer": "CybEye",
-        "pdfSupport": true,
-        "rssSupport": true,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "CybEye\\.com"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "dalvik": {
-        "name": "Dalvik",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Dalvik"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "douban app": {
-        "name": "douban App",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "com\\.douban\\.group"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "dreamweaver": {
-        "name": "Dreamweaver",
-        "manufacturer": "Adobe",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Dreamweaver"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "duckduck app": {
-        "name": "DuckDuck App",
-        "manufacturer": "DuckDuckGo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "DDG\\-Android\\-"
-            ]
-        },
-        "engine": null
-    },
-    "eb iphone/ipad app": {
-        "name": "EB iPhone/IPad App",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "eb\\-iphone"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "elluminate live": {
-        "name": "Elluminate Live",
-        "manufacturer": "Blackboard",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "evernote app": {
-        "name": "Evernote App",
-        "manufacturer": "Evernote",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "excel": {
-        "name": "Excel",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftExcel",
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "facebook app": {
-        "name": "Facebook App",
-        "manufacturer": "Facebook",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Facebook",
-                "FBAV",
-                "facebookexternalhit"
-            ]
-        },
-        "engine": null
-    },
-    "facebook messenger app": {
-        "name": "Facebook Messenger App",
-        "manufacturer": "Facebook",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Facebook",
-                "FBAV",
-                "facebookexternalhit"
-            ]
-        },
-        "engine": null
-    },
-    "fastbrowser": {
-        "name": "FastBrowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "FastBrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "flipboard app": {
-        "name": "Flipboard App",
-        "manufacturer": "Flipboard",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Flipboard"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "flixster app": {
-        "name": "Flixster App",
-        "manufacturer": "Flixster",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "FlixsteriOS"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "frontpage": {
-        "name": "FrontPage",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftFrontPage",
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "google app": {
-        "name": "Google App",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "GSA"
-            ]
-        },
-        "engine": null
-    },
-    "google mobile app": {
-        "name": "Google Mobile App",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "GoogleMobile"
-            ]
-        },
-        "engine": null
-    },
-    "google+ app": {
-        "name": "Google+ App",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": true,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": null
-    },
-    "ibooks author": {
-        "name": "iBooks Author",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "instagram app": {
-        "name": "Instagram App",
-        "manufacturer": "Facebook",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Instagram"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "installatron": {
-        "name": "Installatron",
-        "manufacturer": "Installatron",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Version",
-                "Installatron"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "ios dataaccessd": {
-        "name": "iOS dataaccessd",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "dataaccessd"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "itunes": {
-        "name": "iTunes",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "iTunes\\-iPhone",
-                "iTunes\\-iPad",
-                "iTunes\\-iPod",
-                "iTunes"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "iweb": {
-        "name": "iWeb",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "kamelio app": {
-        "name": "Kamelio App",
-        "manufacturer": "Kamelio",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Kamelio"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "kenshoo": {
-        "name": "Kenshoo",
-        "manufacturer": "Kenshoo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "libreoffice": {
-        "name": "LibreOffice",
-        "manufacturer": "TheDocumentFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "LibreOffice"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "listia": {
-        "name": "Listia",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Listia"
-            ]
-        },
-        "engine": null
-    },
-    "little-bookmark-box app": {
-        "name": "Little-Bookmark-Box App",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Little%20Bookmark%20Box"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "lync": {
-        "name": "Lync",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftLync",
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "macappstore": {
-        "name": "Mac AppStore App",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MacAppStore"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "matome": {
-        "name": "Matome",
-        "manufacturer": "NhnCorporation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "NaverMatome\\-Android"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "newsfire": {
-        "name": "NewsFire",
-        "manufacturer": "DavidWatanabe",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "NewsFire"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "nightingale": {
-        "name": "Nightingale",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Nightingale"
-            ]
-        },
-        "engine": null
-    },
-    "office": {
-        "name": "Office",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftOffice",
-            "search": null
-        },
-        "engine": null
-    },
-    "office syncproc": {
-        "name": "Office SyncProc",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftOfficeSyncProc",
-            "search": null
-        },
-        "engine": null
-    },
-    "office upload center": {
-        "name": "Office Upload Center",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftOfficeUploadCenter",
-            "search": null
-        },
-        "engine": null
-    },
-    "okta mobile app": {
-        "name": "Okta Mobile App",
-        "manufacturer": "Okta",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "OktaMobile"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "onenote": {
-        "name": "OneNote",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftOneNote",
-            "search": null
-        },
-        "engine": null
-    },
-    "openoffice": {
-        "name": "OpenOffice",
-        "manufacturer": "Apache",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "OpenOffice"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "perfect browser": {
-        "name": "Perfect Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Perfect Browser",
-                "Perfect Browser\\-iPad",
-                "Perfect%20Browser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "phantomas": {
-        "name": "phantomas",
-        "manufacturer": "MaciejBrencz",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "phantomas"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "pinterest app": {
-        "name": "Pinterest App",
-        "manufacturer": "Pinterest",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Pinterest"
-            ]
-        },
-        "engine": null
-    },
-    "polaris": {
-        "name": "Polaris",
-        "manufacturer": "Infraware",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Polaris"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "powerpoint": {
-        "name": "PowerPoint",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftPowerPoint",
-            "search": null
-        },
-        "engine": null
-    },
-    "prince": {
-        "name": "Prince",
-        "manufacturer": "YesLogic",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Prince"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "prismatic app": {
-        "name": "Prismatic App",
-        "manufacturer": "Prismatic",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "quora app": {
-        "name": "Quora App",
-        "manufacturer": "Quora",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Quora"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "readability": {
-        "name": "Readability",
-        "manufacturer": "SfxEntertainment",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "rebelmouse": {
-        "name": "RebelMouse",
-        "manufacturer": "RebelMouse",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "RebelMouse"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "reeder": {
-        "name": "Reeder",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Reeder"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "rocky chatwork mobile": {
-        "name": "Rocky ChatWork Mobile",
-        "manufacturer": "ChatWork",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Rocky ChatWork Mobile"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "salesforce app": {
-        "name": "SalesForce App",
-        "manufacturer": "Salesforce",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Salesforce1"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "sandvox": {
-        "name": "Sandvox",
-        "manufacturer": "KareliaSoftware",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Sandvox",
-                "Version"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "schoolwires app": {
-        "name": "Schoolwires App",
-        "manufacturer": "Schoolwires",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Schoolwires"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "second live commerce client": {
-        "name": "Second Life Commerce Client",
-        "manufacturer": "LindenLabs",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SL Commerce Client v",
-                "SL Commerce Client"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "siriviewservice": {
-        "name": "SiriViewService",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SiriViewService"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "sitecon": {
-        "name": "SiteCon",
-        "manufacturer": "NccGroup",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SiteCon"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "smartsync app": {
-        "name": "SmartSync App",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SmartSync"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "snapchat app": {
-        "name": "Snapchat",
-        "manufacturer": "Snap",
-        "pdfSupport": false,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Snapchat"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "sohunews app": {
-        "name": "SohuNews App",
-        "manufacturer": "Sohu",
-        "pdfSupport": false,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SohuNews"
-            ]
-        },
-        "engine": "blink"
-    },
-    "soundcloud app": {
-        "name": "SoundCloud App",
-        "manufacturer": "SoundCloud",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SoundCloud\\-Android",
-                "SoundCloud"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "stagefright": {
-        "name": "stagefright",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "stagefright"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "tubetv": {
-        "name": "TubeTV",
-        "manufacturer": "Chimoosoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "TubeTV"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "tumblr app": {
-        "name": "Tumblr App",
-        "manufacturer": "Tumblr",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Tumblr"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "twc sportsnet": {
-        "name": "TWC SportsNet",
-        "manufacturer": "TimeWarnerCable",
-        "pdfSupport": true,
-        "rssSupport": true,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "twitter app": {
-        "name": "Twitter App",
-        "manufacturer": "Twitter",
-        "pdfSupport": true,
-        "rssSupport": true,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Twitter"
-            ]
-        },
-        "engine": null
-    },
-    "uc browser hd": {
-        "name": "UC Browser HD",
-        "manufacturer": "UcWeb",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "UCBrowserHD"
-            ]
-        },
-        "engine": null
-    },
-    "visio": {
-        "name": "Visio",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftVisio",
-            "search": null
-        },
-        "engine": null
-    },
-    "vobsub": {
-        "name": "vobsub",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "vobsub"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "webclip app": {
-        "name": "WebClip App",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "webthumb": {
-        "name": "WebThumb",
-        "manufacturer": "Boutell",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "WebThumb"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "wechat app": {
-        "name": "WeChat App",
-        "manufacturer": "Tencent",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MicroMessenger"
-            ]
-        },
-        "engine": null
-    },
-    "whatsapp": {
-        "name": "WhatsApp",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "WhatsApp"
-            ]
-        },
-        "engine": null
-    },
-    "wire app": {
-        "name": "Wire App",
-        "manufacturer": "WireSwiss",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Wire"
-            ]
-        },
-        "engine": "blink"
-    },
-    "wkhtmltoimage": {
-        "name": "wkhtmltoimage",
-        "manufacturer": "WkHtmltopdfOrg",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "wkhtmltoimage"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "wkhtmltopdf": {
-        "name": "wkhtmltopdf",
-        "manufacturer": "WkHtmltopdfOrg",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "wkhtmltopdf"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "word": {
-        "name": "Word",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftWord",
-            "search": null
-        },
-        "engine": null
-    },
-    "wordpress app": {
-        "name": "WordPress App",
-        "manufacturer": "WordPress",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "wp\\-iphone",
-                "wp\\-android"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "worxwebappstore": {
-        "name": "WorxWebAppStore",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "WorxWebAppStore"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "xing app": {
-        "name": "XING App",
-        "manufacturer": "XING",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "XING"
-            ]
-        },
-        "engine": null
-    },
-    "yahoo mobile app": {
-        "name": "Yahoo Mobile App",
-        "manufacturer": "Yahoo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "YHOO\\_Search\\_App"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "yahoo! app": {
-        "name": "Yahoo! App",
-        "manufacturer": "Yahoo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "jp\\.co\\.yahoo\\.android\\.yjtop",
-                "yjapp"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "yahoo! mobile messenger": {
-        "name": "Yahoo! Mobile Messenger",
-        "manufacturer": "Yahoo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "YahooMobileMessenger"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "yandexsearch": {
-        "name": "Yandex Search App",
-        "manufacturer": "Yandex",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "application",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "YandexSearch"
-            ]
-        },
-        "engine": null
-    }
+  "1password": {
+    "name": "1Password",
+    "manufacturer": "AgileBits",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "1Password"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "1passwordthumbs": {
+    "name": "1PasswordThumbs",
+    "manufacturer": "AgileBits",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "1PasswordThumbs"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "access": {
+    "name": "Access",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftAccess",
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "adobe air": {
+    "name": "Adobe AIR",
+    "manufacturer": "Adobe",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AdobeAIR"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "aldiko": {
+    "name": "Aldiko",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Aldiko"
+      ]
+    },
+    "engine": null
+  },
+  "alltop app": {
+    "name": "Alltop App",
+    "manufacturer": "Alltop",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Alltop"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "android download manager": {
+    "name": "Android Download Manager",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AndroidDownloadManager"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "appcent": {
+    "name": "Appcent",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Appcent"
+      ]
+    },
+    "engine": null
+  },
+  "apple appstore app": {
+    "name": "AppStore App",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AppStore"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "apple mobilenotes": {
+    "name": "MobileNotes",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "apple notes app": {
+    "name": "Notes App",
+    "manufacturer": "Apple",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "com\\.apple\\.Notes\\.SharingExtension"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "atbat": {
+    "name": "AtBat",
+    "manufacturer": "MLB",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AtBat"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "baidu box app": {
+    "name": "Baidu Box App",
+    "manufacturer": "Baidu",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "baiduboxapp"
+      ]
+    },
+    "engine": null
+  },
+  "basecamp3": {
+    "name": "Basecamp3",
+    "manufacturer": "Basecamp",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Basecamp3"
+      ]
+    },
+    "engine": null
+  },
+  "bb work connect": {
+    "name": "BB Work Connect",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BB_Work_Connect"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "billigfluegefinal app": {
+    "name": "billigFluegeFinal App",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BilligFluegeFinal",
+        "billigFluegeFinal"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "bingweb": {
+    "name": "BingWeb App",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BingWeb"
+      ]
+    },
+    "engine": "blink"
+  },
+  "cfnetwork": {
+    "name": "CFNetwork",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "coast": {
+    "name": "Coast",
+    "manufacturer": "Opera",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OperaCoast",
+        "Opera%20Coast",
+        "Coast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "cobalt": {
+    "name": "Cobalt Application Container",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cobalt"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "coremedia": {
+    "name": "CoreMedia",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CoreMedia v",
+        "AppleCoreMedia"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "coursera mobile app": {
+    "name": "Coursera Mobile App",
+    "manufacturer": "Coursera",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Coursera\\-Mobile"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "crosswalk": {
+    "name": "Crosswalk App",
+    "manufacturer": "Intel Corporation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Crosswalk"
+      ]
+    },
+    "engine": "blink"
+  },
+  "crowsnest mobile app": {
+    "name": "Crowsnest Mobile App",
+    "manufacturer": "Gocro",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Crowsnest"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "cyberduck": {
+    "name": "Cyberduck",
+    "manufacturer": "Iterate",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cyberduck"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cybeye": {
+    "name": "CybEye",
+    "manufacturer": "CybEye",
+    "pdfSupport": true,
+    "rssSupport": true,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CybEye\\.com"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dalvik": {
+    "name": "Dalvik",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Dalvik"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "douban app": {
+    "name": "douban App",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "com\\.douban\\.group"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "dreamweaver": {
+    "name": "Dreamweaver",
+    "manufacturer": "Adobe",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Dreamweaver"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "duckduck app": {
+    "name": "DuckDuck App",
+    "manufacturer": "DuckDuckGo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DDG\\-Android\\-"
+      ]
+    },
+    "engine": null
+  },
+  "eb iphone/ipad app": {
+    "name": "EB iPhone/IPad App",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "eb\\-iphone"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "elluminate live": {
+    "name": "Elluminate Live",
+    "manufacturer": "Blackboard",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "evernote app": {
+    "name": "Evernote App",
+    "manufacturer": "Evernote",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "excel": {
+    "name": "Excel",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftExcel",
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "facebook app": {
+    "name": "Facebook App",
+    "manufacturer": "Facebook",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Facebook",
+        "FBAV",
+        "facebookexternalhit"
+      ]
+    },
+    "engine": null
+  },
+  "facebook messenger app": {
+    "name": "Facebook Messenger App",
+    "manufacturer": "Facebook",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Facebook",
+        "FBAV",
+        "facebookexternalhit"
+      ]
+    },
+    "engine": null
+  },
+  "fastbrowser": {
+    "name": "FastBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FastBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "flipboard app": {
+    "name": "Flipboard App",
+    "manufacturer": "Flipboard",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Flipboard"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "flixster app": {
+    "name": "Flixster App",
+    "manufacturer": "Flixster",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FlixsteriOS"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "frontpage": {
+    "name": "FrontPage",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftFrontPage",
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "google app": {
+    "name": "Google App",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GSA"
+      ]
+    },
+    "engine": null
+  },
+  "google mobile app": {
+    "name": "Google Mobile App",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GoogleMobile"
+      ]
+    },
+    "engine": null
+  },
+  "google+ app": {
+    "name": "Google+ App",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": true,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ibooks author": {
+    "name": "iBooks Author",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "instagram app": {
+    "name": "Instagram App",
+    "manufacturer": "Facebook",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Instagram"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "installatron": {
+    "name": "Installatron",
+    "manufacturer": "Installatron",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version",
+        "Installatron"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "ios dataaccessd": {
+    "name": "iOS dataaccessd",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "dataaccessd"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "itunes": {
+    "name": "iTunes",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iTunes\\-iPhone",
+        "iTunes\\-iPad",
+        "iTunes\\-iPod",
+        "iTunes"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "iweb": {
+    "name": "iWeb",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "kamelio app": {
+    "name": "Kamelio App",
+    "manufacturer": "Kamelio",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kamelio"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "kenshoo": {
+    "name": "Kenshoo",
+    "manufacturer": "Kenshoo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "libreoffice": {
+    "name": "LibreOffice",
+    "manufacturer": "TheDocumentFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LibreOffice"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "listia": {
+    "name": "Listia",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Listia"
+      ]
+    },
+    "engine": null
+  },
+  "little-bookmark-box app": {
+    "name": "Little-Bookmark-Box App",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Little%20Bookmark%20Box"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "lync": {
+    "name": "Lync",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftLync",
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "macappstore": {
+    "name": "Mac AppStore App",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MacAppStore"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "matome": {
+    "name": "Matome",
+    "manufacturer": "NhnCorporation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NaverMatome\\-Android"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "newsfire": {
+    "name": "NewsFire",
+    "manufacturer": "DavidWatanabe",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NewsFire"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "nightingale": {
+    "name": "Nightingale",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Nightingale"
+      ]
+    },
+    "engine": null
+  },
+  "office": {
+    "name": "Office",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftOffice",
+      "search": null
+    },
+    "engine": null
+  },
+  "office syncproc": {
+    "name": "Office SyncProc",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftOfficeSyncProc",
+      "search": null
+    },
+    "engine": null
+  },
+  "office upload center": {
+    "name": "Office Upload Center",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftOfficeUploadCenter",
+      "search": null
+    },
+    "engine": null
+  },
+  "okta mobile app": {
+    "name": "Okta Mobile App",
+    "manufacturer": "Okta",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OktaMobile"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "onenote": {
+    "name": "OneNote",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftOneNote",
+      "search": null
+    },
+    "engine": null
+  },
+  "openoffice": {
+    "name": "OpenOffice",
+    "manufacturer": "Apache",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OpenOffice"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "perfect browser": {
+    "name": "Perfect Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Perfect Browser",
+        "Perfect Browser\\-iPad",
+        "Perfect%20Browser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "phantomas": {
+    "name": "phantomas",
+    "manufacturer": "MaciejBrencz",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "phantomas"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pinterest app": {
+    "name": "Pinterest App",
+    "manufacturer": "Pinterest",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Pinterest"
+      ]
+    },
+    "engine": null
+  },
+  "polaris": {
+    "name": "Polaris",
+    "manufacturer": "Infraware",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Polaris"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "powerpoint": {
+    "name": "PowerPoint",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftPowerPoint",
+      "search": null
+    },
+    "engine": null
+  },
+  "prince": {
+    "name": "Prince",
+    "manufacturer": "YesLogic",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Prince"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "prismatic app": {
+    "name": "Prismatic App",
+    "manufacturer": "Prismatic",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "quora app": {
+    "name": "Quora App",
+    "manufacturer": "Quora",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Quora"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "readability": {
+    "name": "Readability",
+    "manufacturer": "SfxEntertainment",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "rebelmouse": {
+    "name": "RebelMouse",
+    "manufacturer": "RebelMouse",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "RebelMouse"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "reeder": {
+    "name": "Reeder",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Reeder"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "rocky chatwork mobile": {
+    "name": "Rocky ChatWork Mobile",
+    "manufacturer": "ChatWork",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Rocky ChatWork Mobile"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "salesforce app": {
+    "name": "SalesForce App",
+    "manufacturer": "Salesforce",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Salesforce1"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "sandvox": {
+    "name": "Sandvox",
+    "manufacturer": "KareliaSoftware",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Sandvox",
+        "Version"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "schoolwires app": {
+    "name": "Schoolwires App",
+    "manufacturer": "Schoolwires",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Schoolwires"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "second live commerce client": {
+    "name": "Second Life Commerce Client",
+    "manufacturer": "LindenLabs",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SL Commerce Client v",
+        "SL Commerce Client"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "siriviewservice": {
+    "name": "SiriViewService",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SiriViewService"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "sitecon": {
+    "name": "SiteCon",
+    "manufacturer": "NccGroup",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SiteCon"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "smartsync app": {
+    "name": "SmartSync App",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SmartSync"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "snapchat app": {
+    "name": "Snapchat",
+    "manufacturer": "Snap",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Snapchat"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "sohunews app": {
+    "name": "SohuNews App",
+    "manufacturer": "Sohu",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SohuNews"
+      ]
+    },
+    "engine": "blink"
+  },
+  "soundcloud app": {
+    "name": "SoundCloud App",
+    "manufacturer": "SoundCloud",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SoundCloud\\-Android",
+        "SoundCloud"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "stagefright": {
+    "name": "stagefright",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "stagefright"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tubetv": {
+    "name": "TubeTV",
+    "manufacturer": "Chimoosoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TubeTV"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "tumblr app": {
+    "name": "Tumblr App",
+    "manufacturer": "Tumblr",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Tumblr"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "twc sportsnet": {
+    "name": "TWC SportsNet",
+    "manufacturer": "TimeWarnerCable",
+    "pdfSupport": true,
+    "rssSupport": true,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "twitter app": {
+    "name": "Twitter App",
+    "manufacturer": "Twitter",
+    "pdfSupport": true,
+    "rssSupport": true,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Twitter"
+      ]
+    },
+    "engine": null
+  },
+  "uc browser hd": {
+    "name": "UC Browser HD",
+    "manufacturer": "UcWeb",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "UCBrowserHD"
+      ]
+    },
+    "engine": null
+  },
+  "visio": {
+    "name": "Visio",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftVisio",
+      "search": null
+    },
+    "engine": null
+  },
+  "vobsub": {
+    "name": "vobsub",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "vobsub"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webclip app": {
+    "name": "WebClip App",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "webthumb": {
+    "name": "WebThumb",
+    "manufacturer": "Boutell",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebThumb"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wechat app": {
+    "name": "WeChat App",
+    "manufacturer": "Tencent",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MicroMessenger"
+      ]
+    },
+    "engine": null
+  },
+  "whatsapp": {
+    "name": "WhatsApp",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WhatsApp"
+      ]
+    },
+    "engine": null
+  },
+  "wire app": {
+    "name": "Wire App",
+    "manufacturer": "WireSwiss",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Wire"
+      ]
+    },
+    "engine": "blink"
+  },
+  "wkhtmltoimage": {
+    "name": "wkhtmltoimage",
+    "manufacturer": "WkHtmltopdfOrg",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "wkhtmltoimage"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wkhtmltopdf": {
+    "name": "wkhtmltopdf",
+    "manufacturer": "WkHtmltopdfOrg",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "wkhtmltopdf"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "word": {
+    "name": "Word",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftWord",
+      "search": null
+    },
+    "engine": null
+  },
+  "wordpress app": {
+    "name": "WordPress App",
+    "manufacturer": "WordPress",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "wp\\-iphone",
+        "wp\\-android"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "worxwebappstore": {
+    "name": "WorxWebAppStore",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WorxWebAppStore"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "xing app": {
+    "name": "XING App",
+    "manufacturer": "XING",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "XING"
+      ]
+    },
+    "engine": null
+  },
+  "yahoo mobile app": {
+    "name": "Yahoo Mobile App",
+    "manufacturer": "Yahoo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YHOO\\_Search\\_App"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yahoo! app": {
+    "name": "Yahoo! App",
+    "manufacturer": "Yahoo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "jp\\.co\\.yahoo\\.android\\.yjtop",
+        "yjapp"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yahoo! mobile messenger": {
+    "name": "Yahoo! Mobile Messenger",
+    "manufacturer": "Yahoo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YahooMobileMessenger"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandexsearch": {
+    "name": "Yandex Search App",
+    "manufacturer": "Yandex",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YandexSearch"
+      ]
+    },
+    "engine": null
+  }
 }
