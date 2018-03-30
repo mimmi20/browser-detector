@@ -34,13 +34,14 @@ class AppleFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        $cache  = new FilesystemCache('', 0, 'cache/');
-        $logger = new NullLogger();
-        $loader = DeviceLoader::getInstance(new Cache($cache), $logger);
-
-        $loader->warmupCache();
-
-        $this->object = new AppleFactory($loader);
+        $this->markTestSkipped();
+//        $cache  = new FilesystemCache('', 0, 'cache/');
+//        $logger = new NullLogger();
+//        $loader = DeviceLoader::getInstance(new Cache($cache), $logger);
+//
+//        $loader->warmupCache();
+//
+//        $this->object = new AppleFactory($loader);
     }
 
     use DeviceTestDetectTrait;
