@@ -19,11 +19,12 @@ use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use Symfony\Component\Finder\Finder;
+use Symfony\Component\Finder\SplFileInfo;
 use UaResult\Company\CompanyLoader;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
-class EngineLoader implements ExtendedLoaderInterface
+class EngineLoader
 {
     private const CACHE_PREFIX = 'engine';
 
@@ -40,7 +41,12 @@ class EngineLoader implements ExtendedLoaderInterface
     /**
      * @var string|null
      */
-    private $path;
+    private $enginesPath;
+
+    /**
+     * @var string|null
+     */
+    private $rulesPath;
 
     /**
      * @var JsonParser
@@ -48,17 +54,10 @@ class EngineLoader implements ExtendedLoaderInterface
     private $jsonParser;
 
     /**
-     * @var self|null
-     */
-    private static $instance;
-
-    /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface              $logger
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
-    private function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
         $this->cache  = $cache;
         $this->logger = $logger;
@@ -68,40 +67,55 @@ class EngineLoader implements ExtendedLoaderInterface
     }
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
+     * @param string $useragent
      *
-     * @return self
+     * @return EngineInterface
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      */
-    public static function getInstance(CacheInterface $cache, LoggerInterface $logger)
+    public function __invoke(string $useragent): EngineInterface
     {
-        if (null === self::$instance) {
-            self::$instance = new self($cache, $logger);
-        }
+        $this->init();
 
-        return self::$instance;
+        $devices = $this->cache->getItem($this->getCacheKey('rules'));
+        $generic = $this->cache->getItem($this->getCacheKey('generic'));
+
+        return $this->detectInArray($devices, $generic, $useragent);
     }
 
     /**
-     * @return void
+     * @param array  $rules
+     * @param string $generic
+     * @param string $useragent
+     *
+     * @return EngineInterface
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
-    public static function resetInstance(): void
+    private function detectInArray(array $rules, string $generic, string $useragent): EngineInterface
     {
-        self::$instance = null;
+        foreach ($rules as $search => $key) {
+            if (!preg_match($search, $useragent)) {
+                continue;
+            }
+
+            if (is_array($key)) {
+                return $this->detectInArray($key, $generic, $useragent);
+            }
+
+            return $this->load($key, $useragent);
+        }
+
+        return $this->load($generic, $useragent);
     }
 
     /**
      * initializes cache
      *
-     * @param bool   $load
-     *
-     * @throws \Seld\JsonLint\ParsingException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
-    private function init(bool $load = false): void
+    private function init(): void
     {
         $initKey = $this->getCacheKey('initialized');
 
@@ -115,14 +129,12 @@ class EngineLoader implements ExtendedLoaderInterface
         $finder->ignoreDotFiles(true);
         $finder->ignoreVCS(true);
         $finder->ignoreUnreadableDirs();
-        $finder->in($this->path);
-
-        $cacheFiles = [];
+        $finder->in($this->enginesPath);
 
         foreach ($finder as $file) {
             /* @var \Symfony\Component\Finder\SplFileInfo $file */
             try {
-                $devicesFile = $this->jsonParser->parse(
+                $fileData = $this->jsonParser->parse(
                     $file->getContents(),
                     JsonParser::DETECT_KEY_CONFLICTS
                 );
@@ -130,33 +142,44 @@ class EngineLoader implements ExtendedLoaderInterface
                 throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
             }
 
-            foreach ($devicesFile as $deviceKey => $deviceData) {
+            foreach ($fileData as $key => $data) {
+                $cacheKey = $this->getCacheKey((string) $key);
 
-                if (array_key_exists($deviceKey, $cacheFiles)) {
+                if ($this->cache->hasItem($cacheKey)) {
+                    $this->logger->warning(sprintf('key "%s" was defined more than once', $key));
                     continue;
                 }
 
-                $cacheFiles[$deviceKey]   = $file->getPathname();
-            }
-
-            if ($load) {
-                $this->loadFileToCache($file->getPathname());
+                $this->cache->setItem($cacheKey, $data);
             }
         }
 
-        $this->cache->setItem($this->getCacheKey('cacheFiles'), $cacheFiles);
+        $file = new SplFileInfo($this->rulesPath, '', '');
+
+        try {
+            $fileData = $this->jsonParser->parse(
+                $file->getContents(),
+                JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
+            );
+        } catch (ParsingException $e) {
+            throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
+        }
+
+        $this->cache->setItem($this->getCacheKey('rules'), $fileData['rules']);
+        $this->cache->setItem($this->getCacheKey('generic'), $fileData['generic']);
+
         $this->cache->setItem($initKey, true);
     }
 
     /**
-     * @param string $engineKey
+     * @param string $key
      *
      * @return bool
      */
-    public function has(string $engineKey): bool
+    private function has(string $key): bool
     {
         try {
-            return $this->cache->hasItem($this->getCacheKey($engineKey));
+            return $this->cache->hasItem($this->getCacheKey($key));
         } catch (InvalidArgumentException $e) {
             $this->logger->info($e);
 
@@ -205,17 +228,18 @@ class EngineLoader implements ExtendedLoaderInterface
     }
 
     /**
-     * @param string $engineKey
+     * @param string $key
      *
      * @return string
      */
-    private function getCacheKey(string $engineKey): string
+    private function getCacheKey(string $key): string
     {
         return sprintf(
-            '%s_%s_%s',
+            '%s_%s_%s_%s',
             self::CACHE_PREFIX,
-            $this->clearCacheKey($this->path),
-            $this->clearCacheKey($engineKey)
+            $this->clearCacheKey($this->enginesPath),
+            $this->clearCacheKey($this->rulesPath),
+            $this->clearCacheKey($key)
         );
     }
 
@@ -230,45 +254,11 @@ class EngineLoader implements ExtendedLoaderInterface
     }
 
     /**
-     * @param string $filePath
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     */
-    private function loadFileToCache(string $filePath): void
-    {
-        try {
-            $fileData = $this->jsonParser->parse(
-                file_get_contents($filePath),
-                JsonParser::DETECT_KEY_CONFLICTS
-            );
-        } catch (ParsingException $e) {
-            throw new \RuntimeException('file "' . $filePath . '" contains invalid json', 0, $e);
-        }
-
-        foreach ($fileData as $key => $data) {
-            $cacheKey = $this->getCacheKey((string) $key);
-
-            if ($this->cache->hasItem($cacheKey)) {
-                continue;
-            }
-
-            $this->cache->setItem($cacheKey, $data);
-        }
-    }
-
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return void
      */
-    public function warmupCache(): void
-    {
-        $this->init();
-    }
-
     private function initPath(): void
     {
-        $this->path = __DIR__ . '/../../data/engines';
+        $this->enginesPath = __DIR__ . '/../../data/engines';
+        $this->rulesPath   = __DIR__ . '/../../data/factories/engines.json';
     }
 }

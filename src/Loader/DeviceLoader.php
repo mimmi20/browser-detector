@@ -12,11 +12,13 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Factory\PlatformFactory;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use Symfony\Component\Finder\Finder;
+use Symfony\Component\Finder\SplFileInfo;
 use UaDeviceType\TypeLoader;
 use UaResult\Company\CompanyLoader;
 use UaResult\Device\Device;
@@ -51,16 +53,6 @@ class DeviceLoader
     private $jsonParser;
 
     /**
-     * @var array
-     */
-    private $devices = [];
-
-    /**
-     * @var string|null
-     */
-    private $genericDevice = null;
-
-    /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface              $logger
      * @param string                                $path
@@ -84,31 +76,36 @@ class DeviceLoader
     public function __invoke(string $useragent): array
     {
         $this->init();
-        return $this->detectInArray($this->devices, $useragent);
+
+        $devices = $this->cache->getItem($this->getCacheKey('rules'));
+        $generic = $this->cache->getItem($this->getCacheKey('generic'));
+
+        return $this->detectInArray($devices, $generic, $useragent);
     }
 
     /**
-     * @param array            $devices
-     * @param string           $useragent
+     * @param array  $rules
+     * @param string $generic
+     * @param string $useragent
      *
      * @return array
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
-    private function detectInArray(array $devices, string $useragent): array
+    private function detectInArray(array $rules, string $generic, string $useragent): array
     {
-        foreach ($devices as $search => $key) {
+        foreach ($rules as $search => $key) {
             if (!preg_match($search, $useragent)) {
                 continue;
             }
 
             if (is_array($key)) {
-                return $this->detectInArray($key, $useragent);
+                return $this->detectInArray($key, $generic, $useragent);
             }
 
             return $this->load($key, $useragent);
         }
 
-        return $this->load($this->genericDevice, $useragent);
+        return $this->load($generic, $useragent);
     }
 
     /**
@@ -147,7 +144,7 @@ class DeviceLoader
                 $cacheKey = $this->getCacheKey((string) $key);
 
                 if ($this->cache->hasItem($cacheKey)) {
-                    $this->logger->warning(sprintf('deviceKey "%s" was defined more than once', $key));
+                    $this->logger->warning(sprintf('key "%s" was defined more than once', $key));
                     continue;
                 }
 
@@ -155,30 +152,32 @@ class DeviceLoader
             }
         }
 
+        $file = new SplFileInfo($this->rulesPath, '', '');
+
         try {
             $fileData = $this->jsonParser->parse(
-                $this->rulesPath,
+                $file->getContents(),
                 JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
             );
         } catch (ParsingException $e) {
-            throw new \RuntimeException('file "' . $this->rulesPath . '" contains invalid json', 0, $e);
+            throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
         }
 
-        $this->devices       = $fileData['rules'];
-        $this->genericDevice = $fileData['generic'];
+        $this->cache->setItem($this->getCacheKey('rules'), $fileData['rules']);
+        $this->cache->setItem($this->getCacheKey('generic'), $fileData['generic']);
 
         $this->cache->setItem($initKey, true);
     }
 
     /**
-     * @param string $deviceKey
+     * @param string $key
      *
      * @return bool
      */
-    private function has(string $deviceKey): bool
+    private function has(string $key): bool
     {
         try {
-            return $this->cache->hasItem($this->getCacheKey($deviceKey));
+            return $this->cache->hasItem($this->getCacheKey($key));
         } catch (InvalidArgumentException $e) {
             $this->logger->info($e);
         }
@@ -191,7 +190,6 @@ class DeviceLoader
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @return array
      */
     private function load(string $deviceKey, string $useragent = ''): array
@@ -211,7 +209,9 @@ class DeviceLoader
 
         if (null !== $platformKey) {
             try {
-                $platform = PlatformLoader::getInstance($this->cache, $this->logger)->load($platformKey, $useragent);
+                $loaderFactory = new PlatformLoaderFactory($this->cache, $this->logger);
+                $loader = $loaderFactory('unknown');
+                $platform = $loader->load($platformKey, $useragent);
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
             }
@@ -235,17 +235,18 @@ class DeviceLoader
     }
 
     /**
-     * @param string $deviceKey
+     * @param string $key
      *
      * @return string
      */
-    private function getCacheKey(string $deviceKey): string
+    private function getCacheKey(string $key): string
     {
         return sprintf(
-            '%s_%s_%s',
+            '%s_%s_%s_%s',
             self::CACHE_PREFIX,
             $this->clearCacheKey($this->devicesPath),
-            $this->clearCacheKey($deviceKey)
+            $this->clearCacheKey($this->rulesPath),
+            $this->clearCacheKey($key)
         );
     }
 

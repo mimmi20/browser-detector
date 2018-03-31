@@ -19,7 +19,7 @@ use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
-class DeviceLoaderFactory
+class EngineLoaderFactory
 {
     /**
      * @var \BrowserDetector\Cache\CacheInterface
@@ -42,23 +42,16 @@ class DeviceLoaderFactory
     }
 
     /**
-     * @param string $company
-     * @param string $mode
-     *
-     * @return DeviceLoader
+     * @return EngineLoader
      */
-    public function __invoke(string $company, string $mode): DeviceLoader
+    public function __invoke(): EngineLoader
     {
-        static $loaders = [];
+        static $loader = null;
 
-        $key = sprintf('%s::%s', $company, $mode);
-
-        if (!array_key_exists($key, $loaders)) {
-            $loader = new DeviceLoader($this->cache, $this->logger, $company, $mode);
-
-            $loaders[$key] = $loader;
+        if (null === $loader) {
+            $loader = new EngineLoader($this->cache, $this->logger);
         }
 
-        return $loaders[$key];
+        return $loader;
     }
 }

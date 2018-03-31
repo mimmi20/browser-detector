@@ -52,8 +52,6 @@ class EngineFactory implements FactoryInterface
             return $this->loader->load('webkit', $useragent);
         }
 
-        $s = new Stringy($useragent);
-
         if ($s->contains('Edge')) {
             return $this->loader->load('edge', $useragent);
         }
@@ -122,7 +120,7 @@ class EngineFactory implements FactoryInterface
             return $this->loader->load('gecko', $useragent);
         }
 
-        if ($s->containsAny(['netfront/', 'nf/', 'NetFrontLifeBrowserInterface', 'NF3', 'Nintendo 3DS'], false)
+        if ($s->containsAny(['netfront/', 'nf/', 'netfrontlifebrowserinterface', 'NF3', 'nintendo 3ds'], false)
             && !$s->containsAny(['kindle'], false)
         ) {
             return $this->loader->load('netfront', $useragent);
