@@ -21,11 +21,12 @@ use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use Symfony\Component\Finder\Finder;
+use Symfony\Component\Finder\SplFileInfo;
 use UaResult\Company\CompanyLoader;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 
-class PlatformLoader implements ExtendedLoaderInterface
+class PlatformLoader
 {
     private const CACHE_PREFIX = 'platform';
 
@@ -42,7 +43,12 @@ class PlatformLoader implements ExtendedLoaderInterface
     /**
      * @var string|null
      */
-    private $path;
+    private $platformsPath;
+
+    /**
+     * @var string|null
+     */
+    private $rulesPath;
 
     /**
      * @var JsonParser
@@ -50,60 +56,68 @@ class PlatformLoader implements ExtendedLoaderInterface
     private $jsonParser;
 
     /**
-     * @var self|null
-     */
-    private static $instance;
-
-    /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
      * @param \Psr\Log\LoggerInterface              $logger
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @param string                                $mode
      */
-    private function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(CacheInterface $cache, LoggerInterface $logger, string $mode)
     {
         $this->cache  = $cache;
         $this->logger = $logger;
         $this->jsonParser = new JsonParser();
 
-        $this->initPath();
+        $this->initPath($mode);
     }
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
+     * @param string $useragent
      *
-     * @return self
+     * @return OsInterface
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
-    public static function getInstance(CacheInterface $cache, LoggerInterface $logger)
+    public function __invoke(string $useragent): OsInterface
     {
-        if (null === self::$instance) {
-            self::$instance = new self($cache, $logger);
-        }
+        $this->init();
 
-        return self::$instance;
+        $platforms = $this->cache->getItem($this->getCacheKey('rules'));
+        $generic   = $this->cache->getItem($this->getCacheKey('generic'));
+
+        return $this->detectInArray($platforms, $generic, $useragent);
     }
 
     /**
-     * @return void
+     * @param array  $rules
+     * @param string $generic
+     * @param string $useragent
+     *
+     * @return OsInterface
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
-    public static function resetInstance(): void
+    private function detectInArray(array $rules, string $generic, string $useragent): OsInterface
     {
-        self::$instance = null;
+        foreach ($rules as $search => $key) {
+            if (!preg_match($search, $useragent)) {
+                continue;
+            }
+
+            if (is_array($key)) {
+                return $this->detectInArray($key, $generic, $useragent);
+            }
+
+            return $this->load($key, $useragent);
+        }
+
+        return $this->load($generic, $useragent);
     }
 
     /**
      * initializes cache
      *
-     * @param bool   $load
-     *
-     * @throws \Seld\JsonLint\ParsingException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
-    private function init(bool $load = false): void
+    private function init(): void
     {
         $initKey = $this->getCacheKey('initialized');
 
@@ -117,14 +131,12 @@ class PlatformLoader implements ExtendedLoaderInterface
         $finder->ignoreDotFiles(true);
         $finder->ignoreVCS(true);
         $finder->ignoreUnreadableDirs();
-        $finder->in($this->path);
-
-        $cacheFiles = [];
+        $finder->in($this->platformsPath);
 
         foreach ($finder as $file) {
             /* @var \Symfony\Component\Finder\SplFileInfo $file */
             try {
-                $devicesFile = $this->jsonParser->parse(
+                $fileData = $this->jsonParser->parse(
                     $file->getContents(),
                     JsonParser::DETECT_KEY_CONFLICTS
                 );
@@ -132,33 +144,43 @@ class PlatformLoader implements ExtendedLoaderInterface
                 throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
             }
 
-            foreach ($devicesFile as $deviceKey => $deviceData) {
+            foreach ($fileData as $key => $data) {
+                $cacheKey = $this->getCacheKey((string) $key);
 
-                if (array_key_exists($deviceKey, $cacheFiles)) {
+                if ($this->cache->hasItem($cacheKey)) {
+                    $this->logger->warning(sprintf('key "%s" was defined more than once', $key));
                     continue;
                 }
 
-                $cacheFiles[$deviceKey]   = $file->getPathname();
-            }
-
-            if ($load) {
-                $this->loadFileToCache($file->getPathname());
+                $this->cache->setItem($cacheKey, $data);
             }
         }
 
-        $this->cache->setItem($this->getCacheKey('cacheFiles'), $cacheFiles);
+        $file = new SplFileInfo($this->rulesPath, '', '');
+
+        try {
+            $fileData = $this->jsonParser->parse(
+                $file->getContents(),
+                JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
+            );
+        } catch (ParsingException $e) {
+            throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
+        }
+
+        $this->cache->setItem($this->getCacheKey('rules'), $fileData['rules']);
+        $this->cache->setItem($this->getCacheKey('generic'), $fileData['generic']);
         $this->cache->setItem($initKey, true);
     }
 
     /**
-     * @param string $platformCode
+     * @param string $key
      *
      * @return bool
      */
-    public function has(string $platformCode): bool
+    private function has(string $key): bool
     {
         try {
-            return $this->cache->hasItem($this->getCacheKey($platformCode));
+            return $this->cache->hasItem($this->getCacheKey($key));
         } catch (InvalidArgumentException $e) {
             $this->logger->info($e);
 
@@ -169,13 +191,12 @@ class PlatformLoader implements ExtendedLoaderInterface
     /**
      * @param string      $platformCode
      * @param string      $useragent
-     * @param string|null $inputVersion
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function load(string $platformCode, string $useragent = '', string $inputVersion = null): OsInterface
+    public function load(string $platformCode, string $useragent = ''): OsInterface
     {
         if (!$this->has($platformCode)) {
             throw new NotFoundException('the platform with key "' . $platformCode . '" was not found');
@@ -189,9 +210,7 @@ class PlatformLoader implements ExtendedLoaderInterface
 
         $platformVersionClass = $platform->version->class;
 
-        if (null !== $inputVersion && is_string($inputVersion)) {
-            $version = VersionFactory::set($inputVersion);
-        } elseif (!is_string($platformVersionClass) && isset($platform->version->value) && is_numeric($platform->version->value)) {
+        if (!is_string($platformVersionClass) && isset($platform->version->value) && is_numeric($platform->version->value)) {
             $version = VersionFactory::set((string) $platform->version->value);
         } elseif (!is_string($platformVersionClass)) {
             $version = new Version('0');
@@ -220,17 +239,18 @@ class PlatformLoader implements ExtendedLoaderInterface
     }
 
     /**
-     * @param string $platformKey
+     * @param string $key
      *
      * @return string
      */
-    private function getCacheKey(string $platformKey): string
+    private function getCacheKey(string $key): string
     {
         return sprintf(
-            '%s_%s_%s',
+            '%s_%s_%s_%s',
             self::CACHE_PREFIX,
-            $this->clearCacheKey($this->path),
-            $this->clearCacheKey($platformKey)
+            $this->clearCacheKey($this->platformsPath),
+            $this->clearCacheKey($this->rulesPath),
+            $this->clearCacheKey($key)
         );
     }
 
@@ -245,45 +265,12 @@ class PlatformLoader implements ExtendedLoaderInterface
     }
 
     /**
-     * @param string $filePath
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     */
-    private function loadFileToCache(string $filePath): void
-    {
-        try {
-            $fileData = $this->jsonParser->parse(
-                file_get_contents($filePath),
-                JsonParser::DETECT_KEY_CONFLICTS
-            );
-        } catch (ParsingException $e) {
-            throw new \RuntimeException('file "' . $filePath . '" contains invalid json', 0, $e);
-        }
-
-        foreach ($fileData as $key => $data) {
-            $cacheKey = $this->getCacheKey((string) $key);
-
-            if ($this->cache->hasItem($cacheKey)) {
-                continue;
-            }
-
-            $this->cache->setItem($cacheKey, $data);
-        }
-    }
-
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
+     * @param string $mode
      * @return void
      */
-    public function warmupCache(): void
+    private function initPath(string $mode): void
     {
-        $this->init();
-    }
-
-    private function initPath(): void
-    {
-        $this->path = __DIR__ . '/../../data/platforms';
+        $this->platformsPath = __DIR__ . '/../../data/platforms';
+        $this->rulesPath   = __DIR__ . '/../../data/factories/platforms/' . $mode . '.json';
     }
 }

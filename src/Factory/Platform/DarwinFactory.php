@@ -21,6 +21,66 @@ use Stringy\Stringy;
 class DarwinFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $platforms = [
+        '/cfnetwork\/887.*\(x86_64\)/' => 'mac os x',
+        'cfnetwork/887' =>'ios',
+        'cfnetwork/808' => 'ios',
+        'cfnetwork/811' => 'mac os x',
+        'cfnetwork/807' => 'mac os x',
+        'cfnetwork/802' => 'mac os x',
+        'cfnetwork/798' => 'mac os x',
+        'cfnetwork/796' => 'mac os x',
+        'cfnetwork/790' => 'ios',
+        'cfnetwork/760' => 'mac os x',
+        'cfnetwork/758' => 'ios',
+        'cfnetwork/757' => 'ios',
+        'cfnetwork/720' => 'mac os x',
+        'cfnetwork/718' => 'mac os x',
+        'cfnetwork/714' => 'mac os x',
+        'cfnetwork/709' => 'mac os x',
+        'cfnetwork/708' => 'mac os x',
+        'cfnetwork/705' => 'mac os x',
+        'cfnetwork/699' => 'mac os x',
+        'cfnetwork/696' => 'mac os x',
+        'cfnetwork/711' => 'ios',
+        'cfnetwork/673' => 'mac os x',
+        'cfnetwork/647' => 'mac os x',
+        'cfnetwork/672' => 'ios',
+        'cfnetwork/609' => 'ios',
+        'cfnetwork/602' => 'ios',
+        'cfnetwork/596' => 'mac os x',
+        'cfnetwork/595' => 'mac os x',
+        'cfnetwork/561' => 'mac os x',
+        'cfnetwork/548' => 'ios',
+        'cfnetwork/520' => 'mac os x',
+        'cfnetwork/515' => 'mac os x',
+        'cfnetwork/485' => 'ios',
+        'cfnetwork/467' => 'ios',
+        'cfnetwork/459' => 'ios',
+        'cfnetwork/454' => 'mac os x',
+        'cfnetwork/438' => 'mac os x',
+        'cfnetwork/433' => 'mac os x',
+        'cfnetwork/422' => 'mac os x',
+        'cfnetwork/339' => 'mac os x',
+        'cfnetwork/330' => 'mac os x',
+        'cfnetwork/221' => 'mac os x',
+        'cfnetwork/220' => 'mac os x',
+        'cfnetwork/217' => 'mac os x',
+        'cfnetwork/129' => 'mac os x',
+        'cfnetwork/128' => 'mac os x',
+        'cfnetwork/4.0' => 'mac os x',
+        'cfnetwork/1.2' => 'mac os x',
+        'cfnetwork/1.1' => 'mac os x',
+    ];
+
+    /**
+     * @var string
+     */
+    private $genericPlatform = 'darwin';
+
+    /**
      * @var \BrowserDetector\Loader\PlatformLoader
      */
     private $loader;
@@ -43,166 +103,12 @@ class DarwinFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s)
     {
-        if ($s->contains('cfnetwork/887', false) && $s->contains('(x86_64)', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.13');
+        foreach ($this->platforms as $searchkey => $platfornKey) {
+            if ($s->contains($searchkey, false)) {
+                return $this->loader->load($platfornKey, $useragent);
+            }
         }
 
-        if ($s->contains('cfnetwork/887', false)) {
-            return $this->loader->load('ios', $useragent, '11.0');
-        }
-
-        if ($s->contains('cfnetwork/808.2', false)) {
-            return $this->loader->load('ios', $useragent, '10.2');
-        }
-
-        if ($s->contains('cfnetwork/808.1', false)) {
-            return $this->loader->load('ios', $useragent, '10.1');
-        }
-
-        if ($s->contains('cfnetwork/808', false)) {
-            return $this->loader->load('ios', $useragent, '10.0');
-        }
-
-        if ($s->containsAny(['cfnetwork/811', 'cfnetwork/807', 'cfnetwork/802', 'cfnetwork/798', 'cfnetwork/796'], false)) {
-            return $this->loader->load('mac os x', $useragent, '10.12');
-        }
-
-        if ($s->contains('cfnetwork/790', false)) {
-            return $this->loader->load('ios', $useragent, '10.0');
-        }
-
-        if ($s->contains('cfnetwork/760', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.11');
-        }
-
-        if ($s->contains('cfnetwork/758.3', false)) {
-            return $this->loader->load('ios', $useragent, '9.3');
-        }
-
-        if ($s->contains('cfnetwork/758.2', false)) {
-            return $this->loader->load('ios', $useragent, '9.2');
-        }
-
-        if ($s->contains('cfnetwork/758.1', false)) {
-            return $this->loader->load('ios', $useragent, '9.1');
-        }
-
-        if ($s->contains('cfnetwork/758', false)) {
-            return $this->loader->load('ios', $useragent, '9.0');
-        }
-
-        if ($s->contains('cfnetwork/757', false)) {
-            return $this->loader->load('ios', $useragent, '9.0');
-        }
-
-        if ($s->containsAny(['cfnetwork/720', 'cfnetwork/718', 'cfnetwork/714', 'cfnetwork/709', 'cfnetwork/708', 'cfnetwork/705', 'cfnetwork/699', 'cfnetwork/696'], false)) {
-            return $this->loader->load('mac os x', $useragent, '10.10');
-        }
-
-        if ($s->contains('cfnetwork/711.5', false)) {
-            return $this->loader->load('ios', $useragent, '8.4');
-        }
-
-        if ($s->contains('cfnetwork/711.4', false)) {
-            return $this->loader->load('ios', $useragent, '8.4');
-        }
-
-        if ($s->contains('cfnetwork/711.3', false)) {
-            return $this->loader->load('ios', $useragent, '8.3');
-        }
-
-        if ($s->contains('cfnetwork/711.2', false)) {
-            return $this->loader->load('ios', $useragent, '8.2');
-        }
-
-        if ($s->contains('cfnetwork/711.1', false)) {
-            return $this->loader->load('ios', $useragent, '8.1');
-        }
-
-        if ($s->contains('cfnetwork/711.0', false)) {
-            return $this->loader->load('ios', $useragent, '8.0');
-        }
-
-        if ($s->containsAny(['cfnetwork/673', 'cfnetwork/647'], false)) {
-            return $this->loader->load('mac os x', $useragent, '10.9');
-        }
-
-        if ($s->contains('cfnetwork/672.1', false)) {
-            return $this->loader->load('ios', $useragent, '7.1');
-        }
-
-        if ($s->contains('cfnetwork/672.0', false)) {
-            return $this->loader->load('ios', $useragent, '7.0');
-        }
-
-        if ($s->contains('cfnetwork/609.1', false)) {
-            return $this->loader->load('ios', $useragent, '6.1');
-        }
-
-        if ($s->contains('cfnetwork/609', false)) {
-            return $this->loader->load('ios', $useragent, '6.0');
-        }
-
-        if ($s->contains('cfnetwork/602', false)) {
-            return $this->loader->load('ios', $useragent, '6.0');
-        }
-
-        if ($s->containsAny(['cfnetwork/596', 'cfnetwork/595', 'cfnetwork/561'], false)) {
-            return $this->loader->load('mac os x', $useragent, '10.8');
-        }
-
-        if ($s->contains('cfnetwork/548.1', false)) {
-            return $this->loader->load('ios', $useragent, '5.1');
-        }
-
-        if ($s->contains('cfnetwork/548.0', false)) {
-            return $this->loader->load('ios', $useragent, '5.0');
-        }
-
-        if ($s->containsAny(['cfnetwork/520', 'cfnetwork/515'], false)) {
-            return $this->loader->load('mac os x', $useragent, '10.7');
-        }
-
-        if ($s->contains('cfnetwork/485.13', false)) {
-            return $this->loader->load('ios', $useragent, '4.3');
-        }
-
-        if ($s->contains('cfnetwork/485.12', false)) {
-            return $this->loader->load('ios', $useragent, '4.2');
-        }
-
-        if ($s->contains('cfnetwork/485.10', false)) {
-            return $this->loader->load('ios', $useragent, '4.1');
-        }
-
-        if ($s->contains('cfnetwork/485.2', false)) {
-            return $this->loader->load('ios', $useragent, '4.0');
-        }
-
-        if ($s->contains('cfnetwork/467.12', false)) {
-            return $this->loader->load('ios', $useragent, '3.2');
-        }
-
-        if ($s->contains('cfnetwork/459', false)) {
-            return $this->loader->load('ios', $useragent, '3.1');
-        }
-
-        if ($s->contains('cfnetwork/454', false)) {
-            return $this->loader->load('mac os x', $useragent, '10.6');
-        }
-
-        if ($s->containsAny(['cfnetwork/438', 'cfnetwork/433', 'cfnetwork/422', 'cfnetwork/339', 'cfnetwork/330', 'cfnetwork/221', 'cfnetwork/220', 'cfnetwork/217'], false)) {
-            return $this->loader->load('mac os x', $useragent, '10.5');
-        }
-
-        if ($s->containsAny(['cfnetwork/129', 'cfnetwork/128'], false)) {
-            return $this->loader->load('mac os x', $useragent, '10.4');
-        }
-
-        if ($s->containsAny(['cfnetwork/4.0', 'cfnetwork/1.2', 'cfnetwork/1.1'], false)) {
-            return $this->loader->load('mac os x', $useragent, '10.3');
-        }
-
-        return $this->loader->load('darwin', $useragent);
+        return $this->loader->load($this->genericPlatform, $useragent);
     }
 }

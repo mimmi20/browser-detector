@@ -18,6 +18,78 @@ use Stringy\Stringy;
 class WindowsFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $platforms = [
+        'windows iot 10' => 'windows iot 10.0',
+        'windows nt 10' => 'windows nt 10.0',
+        'windows 10' => 'windows nt 10.0',
+        'windows nt 6.4' => 'windows nt 6.4',
+        'windows 6.4' => 'windows nt 6.4',
+        'windows nt 6.3; arm' => 'windows nt 6.3; arm',
+        'windows nt 6.3' => 'windows nt 6.3',
+        'windows 6.3' => 'windows nt 6.3',
+        'windows 8.1' => 'windows nt 6.3',
+        'windows nt 6.2; arm' => 'windows nt 6.2; arm',
+        'windows nt 6.2' => 'windows nt 6.2',
+        'windows 6.2' => 'windows nt 6.2',
+        'windows 8' => 'windows nt 6.2',
+        'winnt 6.2' => 'windows nt 6.2',
+        'windows nt 6.1' => 'windows nt 6.1',
+        'windows 6.1' => 'windows nt 6.1',
+        'windows 7' => 'windows nt 6.1',
+        'windows nt 6.0' => 'windows nt 6.0',
+        'windows 6.0' => 'windows nt 6.0',
+        'windows vista' => 'windows nt 6.0',
+        'windows 2003' => 'windows 2003',
+        'windows nt 5.3' => 'windows nt 5.3',
+        'windows 5.3' => 'windows nt 5.3',
+        'windows nt 5.2' => 'windows nt 5.2',
+        'windows 5.2' => 'windows nt 5.2',
+        'win9x/nt 4.90' => 'windows me',
+        'win 9x 4.90' => 'windows me',
+        'win 9x4.90' => 'windows me',
+        'windows me' => 'windows me',
+        'windows nt 5.1' => 'windows nt 5.1',
+        'windows 5.1' => 'windows nt 5.1',
+        'windows xp' => 'windows nt 5.1',
+        'windows nt 5.01' => 'windows nt 5.01',
+        'windows 5.01' => 'windows nt 5.01',
+        'windows nt 5.0' => 'windows nt 5.0',
+        'windows nt5.0' => 'windows nt 5.0',
+        'windows 5.0' => 'windows nt 5.0',
+        'windows 2000' => 'windows nt 5.0',
+        'win98' => 'windows 98',
+        'windows 98' => 'windows 98',
+        'win95' => 'windows 95',
+        'windows 95' => 'windows 95',
+        'windows nt 4.10' => 'windows nt 4.10',
+        'windows 4.10' => 'windows nt 4.10',
+        'windows nt 4.1' => 'windows nt 4.1',
+        'windows 4.1' => 'windows nt 4.1',
+        'windows nt 4.0' => 'windows nt 4.0',
+        'windows nt4.0' => 'windows nt 4.0',
+        'windows 4.0' => 'windows nt 4.0',
+        'winnt4.0' => 'windows nt 4.0',
+        'windows nt 3.51' => 'windows nt 3.51',
+        'windows 3.51' => 'windows nt 3.51',
+        'winnt3.51' => 'windows nt 3.51',
+        'windows nt 3.5' => 'windows nt 3.5',
+        'windows 3.5' => 'windows nt 3.5',
+        'winnt3.5' => 'windows nt 3.5',
+        'windows nt 3.1' => 'windows nt 3.1',
+        'windows nt' => 'windows nt',
+        'winnt' => 'windows nt',
+        'windows 3.11' => 'windows 3.11',
+        'windows 3.1' => 'windows 3.1',
+    ];
+
+    /**
+     * @var string
+     */
+    private $genericPlatform = 'windows';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -40,114 +112,12 @@ class WindowsFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s)
     {
-        if ($s->contains('windows iot 10', false)) {
-            return $this->loader->load('windows iot 10.0', $useragent);
+        foreach ($this->platforms as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
+            }
         }
 
-        if ($s->containsAny(['windows nt 10', 'windows 10'], false)) {
-            return $this->loader->load('windows nt 10.0', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 6.4', 'windows 6.4'], false)) {
-            return $this->loader->load('windows nt 6.4', $useragent);
-        }
-
-        if ($s->contains('windows nt 6.3; arm', false)) {
-            return $this->loader->load('windows nt 6.3; arm', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 6.3', 'windows 6.3', 'windows 8.1'], false)) {
-            return $this->loader->load('windows nt 6.3', $useragent);
-        }
-
-        if ($s->contains('windows nt 6.2; arm', false)) {
-            return $this->loader->load('windows nt 6.2; arm', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 6.2', 'windows 6.2', 'windows 8', 'winnt 6.2'], false)) {
-            return $this->loader->load('windows nt 6.2', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 6.1', 'windows 6.1', 'windows 7'], false)) {
-            return $this->loader->load('windows nt 6.1', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 6.0', 'windows 6.0', 'windows vista'], false)) {
-            return $this->loader->load('windows nt 6.0', $useragent);
-        }
-
-        if ($s->contains('windows 2003', false)) {
-            return $this->loader->load('windows 2003', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 5.3', 'windows 5.3'], false)) {
-            return $this->loader->load('windows nt 5.3', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 5.2', 'windows 5.2'], false)) {
-            return $this->loader->load('windows nt 5.2', $useragent);
-        }
-
-        if ($s->containsAny(['win9x/nt 4.90', 'win 9x 4.90', 'win 9x4.90', 'windows me'], false)) {
-            return $this->loader->load('windows me', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 5.1', 'windows 5.1', 'windows xp'], false)) {
-            return $this->loader->load('windows nt 5.1', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 5.01', 'windows 5.01'], false)) {
-            return $this->loader->load('windows nt 5.01', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 5.0', 'windows nt5.0', 'windows 5.0', 'windows 2000'], false)) {
-            return $this->loader->load('windows nt 5.0', $useragent);
-        }
-
-        if ($s->containsAny(['win98', 'windows 98'], false)) {
-            return $this->loader->load('windows 98', $useragent);
-        }
-
-        if ($s->containsAny(['win95', 'windows 95'], false)) {
-            return $this->loader->load('windows 95', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 4.10', 'windows 4.10'], false)) {
-            return $this->loader->load('windows nt 4.10', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 4.1', 'windows 4.1'], false)) {
-            return $this->loader->load('windows nt 4.1', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 4.0', 'windows nt4.0', 'windows 4.0', 'winnt4.0'], false)) {
-            return $this->loader->load('windows nt 4.0', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 3.51', 'windows 3.51', 'winnt3.51'], false)) {
-            return $this->loader->load('windows nt 3.51', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 3.5', 'windows 3.5', 'winnt3.5'], false)) {
-            return $this->loader->load('windows nt 3.5', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt 3.1'], false)) {
-            return $this->loader->load('windows nt 3.1', $useragent);
-        }
-
-        if ($s->containsAny(['windows nt', 'winnt'], false)) {
-            return $this->loader->load('windows nt', $useragent);
-        }
-
-        if ($s->containsAny(['windows 3.11'], false)) {
-            return $this->loader->load('windows 3.11', $useragent);
-        }
-
-        if ($s->containsAny(['windows 3.1'], false)) {
-            return $this->loader->load('windows 3.1', $useragent);
-        }
-
-        return $this->loader->load('windows', $useragent);
+        return $this->loader->load($this->genericPlatform, $useragent);
     }
 }

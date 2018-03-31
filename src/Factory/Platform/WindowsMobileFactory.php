@@ -18,6 +18,24 @@ use Stringy\Stringy;
 class WindowsMobileFactory implements Factory\FactoryInterface
 {
     /**
+     * @var array
+     */
+    private $platforms = [
+        'windows iot 10' => 'windows iot 10.0',
+        'windows ce' => 'windows ce',
+        'windows mobile; wce' => 'windows ce',
+        '/Windows Phone 6/' => 'windows mobile os',
+        '/Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop| wds |WPOS\:/' => 'windows phone',
+        '/Windows Mobile (7|10)/' => 'windows phone',
+        '/Windows NT (?:7|8|10); ARM; Lumia/' => 'windows phone',
+    ];
+
+    /**
+     * @var string
+     */
+    private $genericPlatform = 'windows mobile os';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -40,32 +58,12 @@ class WindowsMobileFactory implements Factory\FactoryInterface
      */
     public function detect(string $useragent, Stringy $s)
     {
-        if ($s->contains('windows iot 10', false)) {
-            return $this->loader->load('windows iot 10.0', $useragent);
-        }
-
-        if ($s->containsAny(['windows ce', 'windows mobile; wce'], false)) {
-            return $this->loader->load('windows ce', $useragent);
-        }
-
-        if (preg_match('/Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop| wds |WPOS\:/', $useragent)) {
-            $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $useragent, $matchesPhone);
-
-            if (!$doMatchPhone || 7 <= $matchesPhone[1]) {
-                return $this->loader->load('windows phone', $useragent);
+        foreach ($this->platforms as $search => $key) {
+            if ($s->contains($search, false)) {
+                return $this->loader->load($key, $useragent);
             }
-
-            return $this->loader->load('windows mobile os', $useragent);
         }
 
-        if (preg_match('/Windows Mobile ([\d]+)/', $useragent, $matchesMobile) && 7.0 <= (float) $matchesMobile[1]) {
-            return $this->loader->load('windows phone', $useragent);
-        }
-
-        if (preg_match('/Windows NT ([\d\.]+); ARM; Lumia/', $useragent, $matchesMobile) && 7.0 <= (float) $matchesMobile[1]) {
-            return $this->loader->load('windows phone', $useragent);
-        }
-
-        return $this->loader->load('windows mobile os', $useragent);
+        return $this->loader->load($this->genericPlatform, $useragent);
     }
 }

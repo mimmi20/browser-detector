@@ -49,6 +49,11 @@ class LinuxFactory implements FactoryInterface
     ];
 
     /**
+     * @var string
+     */
+    private $genericPlatform = 'linux';
+
+    /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
     private $loader;
@@ -77,6 +82,6 @@ class LinuxFactory implements FactoryInterface
             }
         }
 
-        return $this->loader->load('linux', $useragent);
+        return $this->loader->load($this->genericPlatform, $useragent);
     }
 }
