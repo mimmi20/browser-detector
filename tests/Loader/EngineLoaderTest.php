@@ -24,17 +24,6 @@ use Symfony\Component\Cache\Simple\FilesystemCache;
 class EngineLoaderTest extends TestCase
 {
     /**
-     * Tears down the fixture, for example, close a network connection.
-     * This method is called after a test is executed.
-     *
-     * @return void
-     */
-    protected function tearDown(): void
-    {
-        EngineLoader::resetInstance();
-    }
-
-    /**
      * @return void
      */
     public function testLoadNotAvailable(): void

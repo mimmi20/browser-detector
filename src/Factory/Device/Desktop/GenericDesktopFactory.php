@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device\Desktop;
 
 use BrowserDetector\Factory;
-use BrowserDetector\Helper;
 use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 

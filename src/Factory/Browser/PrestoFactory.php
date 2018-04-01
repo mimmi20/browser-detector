@@ -19,8 +19,21 @@ use UaResult\Os\OsInterface;
 /**
  * Browser detection class
  */
-class EdgeBasedFactory implements FactoryInterface
+class PrestoFactory implements FactoryInterface
 {
+    private $browsers = [
+        '/ucweb.*opera mini/i'                                             => 'ucbrowser',
+        'opera mini'                                                       => 'opera mini',
+        'opera mobi'                                                       => 'opera mobile',
+        '/(?:android|mtk|maui|samsung|windows ce|symbos).*(?:opera|opr)/i' => 'opera mobile',
+        '/(?:opera|opr).*(?:android|mtk|maui|samsung|windows ce|symbos)/i' => 'opera mobile',
+    ];
+
+    /**
+     * @var string
+     */
+    private $genericBrowser = 'opera';
+
     /**
      * @var \BrowserDetector\Loader\ExtendedLoaderInterface
      */
@@ -45,23 +58,12 @@ class EdgeBasedFactory implements FactoryInterface
      */
     public function detect(string $useragent, Stringy $s, ?OsInterface $platform = null): array
     {
-        $browsers = [
-            'qqbrowser'       => 'qqbrowser',
-            'coc_coc_browser' => 'coc_coc_browser',
-            'bingpreview'     => 'bing preview',
-            'tob'             => 't-online browser',
-        ];
-
-        foreach ($browsers as $search => $key) {
+        foreach ($this->browsers as $search => $key) {
             if ($s->contains($search, false)) {
                 return $this->loader->load($key, $useragent);
             }
         }
 
-        if ($s->contains('edge', false) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
-            return $this->loader->load('edge mobile', $useragent);
-        }
-
-        return $this->loader->load('edge', $useragent);
+        return $this->loader->load($this->genericBrowser, $useragent);
     }
 }

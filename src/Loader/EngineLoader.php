@@ -39,14 +39,14 @@ class EngineLoader
     private $logger;
 
     /**
-     * @var string|null
+     * @var string
      */
-    private $enginesPath;
+    private $enginesPath = '';
 
     /**
-     * @var string|null
+     * @var string
      */
-    private $rulesPath;
+    private $rulesPath = '';
 
     /**
      * @var JsonParser
@@ -59,8 +59,8 @@ class EngineLoader
      */
     public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        $this->cache      = $cache;
+        $this->logger     = $logger;
         $this->jsonParser = new JsonParser();
 
         $this->initPath();
@@ -69,9 +69,10 @@ class EngineLoader
     /**
      * @param string $useragent
      *
-     * @return EngineInterface
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \Seld\JsonLint\ParsingException
+     *
+     * @return EngineInterface
      */
     public function __invoke(string $useragent): EngineInterface
     {
@@ -88,8 +89,9 @@ class EngineLoader
      * @param string $generic
      * @param string $useragent
      *
-     * @return EngineInterface
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return EngineInterface
      */
     private function detectInArray(array $rules, string $generic, string $useragent): EngineInterface
     {

@@ -14,16 +14,14 @@ namespace BrowserDetector;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\DeviceFactory;
-use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Loader\BrowserLoader;
-use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Loader\PlatformLoader;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
+use Psr\SimpleCache\InvalidArgumentException;
+use Seld\JsonLint\ParsingException;
 use Stringy\Stringy;
 use UaNormalizer\NormalizerFactory;
 use UaRequest\GenericRequest;
@@ -68,9 +66,11 @@ class Detector
      *
      * @param array|\Psr\Http\Message\MessageInterface|string $headers
      *
-     * @return \UaResult\Result\ResultInterface
-     * @deprecated
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return \UaResult\Result\ResultInterface
+     *
+     * @deprecated
      */
     public function getBrowser($headers): ResultInterface
     {
@@ -84,8 +84,9 @@ class Detector
      *
      * @param string $useragent
      *
-     * @return \UaResult\Result\Result
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return \UaResult\Result\Result
      */
     public function parseString(string $useragent)
     {
@@ -99,8 +100,9 @@ class Detector
      *
      * @param array $headers
      *
-     * @return \UaResult\Result\Result
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return \UaResult\Result\Result
      */
     public function parseArray(array $headers)
     {
@@ -112,10 +114,11 @@ class Detector
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param MessageInterface $message
+     * @param \Psr\Http\Message\MessageInterface $message
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return \UaResult\Result\Result
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function parseMessage(MessageInterface $message)
     {
@@ -127,8 +130,9 @@ class Detector
     /**
      * @param \UaRequest\GenericRequest $request
      *
-     * @return \UaResult\Result\Result
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return \UaResult\Result\Result
      */
     private function parse(GenericRequest $request)
     {
@@ -153,7 +157,7 @@ class Detector
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
 
-            $platformFactory = new PlatformFactory(PlatformLoader::getInstance($this->cache, $this->logger));
+            $platformFactory = new PlatformFactory($this->cache, $this->logger);
 
             try {
                 $platform = $platformFactory->detect($browserUa, $s);
@@ -163,16 +167,23 @@ class Detector
             }
         }
 
-        $browserLoader = BrowserLoader::getInstance($this->cache, $this->logger);
-
         /* @var \UaResult\Browser\BrowserInterface $browser */
         /* @var \UaResult\Engine\EngineInterface $engine */
-        [$browser, $engine] = (new BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
-        $engineLoader       = EngineLoader::getInstance($this->cache, $this->logger);
+        [$browser, $engine] = (new BrowserFactory($this->cache, $this->logger))->detect($browserUa, $s);
+        $engineLoader       = new EngineLoader($this->cache, $this->logger);
 
         if (null === $engine) {
             $this->logger->debug('engine not detected from browser');
-            $engine = (new EngineFactory($engineLoader))->detect($browserUa, $s, $browserLoader, $platform);
+
+            if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
+                $engine = $engineLoader->load('webkit', $browserUa);
+            } else {
+                try {
+                    $engine = $engineLoader($browserUa);
+                } catch (InvalidArgumentException | ParsingException $e) {
+                    $this->logger->info($e);
+                }
+            }
         }
 
         return new Result(
@@ -216,18 +227,5 @@ class Detector
         throw new UnexpectedValueException(
             'the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface'
         );
-    }
-
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
-     * @return void
-     */
-    public function warmupCache(): void
-    {
-        BrowserLoader::getInstance($this->cache, $this->logger)->warmupCache();
-        PlatformLoader::getInstance($this->cache, $this->logger)->warmupCache();
-        EngineLoader::getInstance($this->cache, $this->logger)->warmupCache();
     }
 }

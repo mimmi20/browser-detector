@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device\Mobile;
 
 use BrowserDetector\Factory;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Stringy\Stringy;
 
 class HtcFactory implements Factory\FactoryInterface

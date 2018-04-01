@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Factory\PlatformFactory;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
@@ -38,14 +37,14 @@ class DeviceLoader
     private $logger;
 
     /**
-     * @var string|null
+     * @var string
      */
-    private $devicesPath;
+    private $devicesPath = '';
 
     /**
-     * @var string|null
+     * @var string
      */
-    private $rulesPath;
+    private $rulesPath = '';
 
     /**
      * @var JsonParser
@@ -60,8 +59,8 @@ class DeviceLoader
      */
     public function __construct(CacheInterface $cache, LoggerInterface $logger, string $path, string $mode)
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        $this->cache      = $cache;
+        $this->logger     = $logger;
         $this->jsonParser = new JsonParser();
 
         $this->initPath($path, $mode);
@@ -70,8 +69,9 @@ class DeviceLoader
     /**
      * @param string $useragent
      *
-     * @return array
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return array
      */
     public function __invoke(string $useragent): array
     {
@@ -88,8 +88,9 @@ class DeviceLoader
      * @param string $generic
      * @param string $useragent
      *
-     * @return array
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return array
      */
     private function detectInArray(array $rules, string $generic, string $useragent): array
     {
@@ -110,8 +111,10 @@ class DeviceLoader
 
     /**
      * initializes cache
-     * @return void
+     *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     private function init(): void
     {
@@ -190,6 +193,7 @@ class DeviceLoader
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     *
      * @return array
      */
     private function load(string $deviceKey, string $useragent = ''): array
@@ -210,8 +214,8 @@ class DeviceLoader
         if (null !== $platformKey) {
             try {
                 $loaderFactory = new PlatformLoaderFactory($this->cache, $this->logger);
-                $loader = $loaderFactory('unknown');
-                $platform = $loader->load($platformKey, $useragent);
+                $loader        = $loaderFactory('unknown');
+                $platform      = $loader->load($platformKey, $useragent);
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
             }
@@ -263,10 +267,12 @@ class DeviceLoader
     /**
      * @param string $company
      * @param string $mode
+     *
+     * @return void
      */
     private function initPath(string $company, string $mode): void
     {
         $this->devicesPath = __DIR__ . '/../../data/devices/' . $company;
-        $this->rulesPath   = __DIR__ . '/../../data/factories/devices/' . $mode . '/'. $company . '.json';
+        $this->rulesPath   = __DIR__ . '/../../data/factories/devices/' . $mode . '/' . $company . '.json';
     }
 }

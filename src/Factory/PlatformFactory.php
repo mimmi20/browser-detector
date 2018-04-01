@@ -13,7 +13,6 @@ namespace BrowserDetector\Factory;
 
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Helper;
-use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Loader\PlatformLoaderFactory;
 use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
@@ -47,6 +46,8 @@ class PlatformFactory implements FactoryInterface
      * @param string  $useragent
      * @param Stringy $s
      *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return \UaResult\Os\OsInterface
      */
     public function detect(string $useragent, Stringy $s): OsInterface
@@ -56,11 +57,13 @@ class PlatformFactory implements FactoryInterface
 
         if ($windowsHelper->isMobileWindows()) {
             $loader = $loaderFactory('windows');
+
             return $loader($useragent);
         }
 
         if ($windowsHelper->isWindows()) {
             $loader = $loaderFactory('windowsmobile');
+
             return $loader($useragent);
         }
 
@@ -93,11 +96,13 @@ class PlatformFactory implements FactoryInterface
 
         if ($s->containsAny(array_keys($platformsBeforeMiuiOs), false)) {
             $loader = $loaderFactory('genericplatform');
+
             return $loader($useragent);
         }
 
         if (preg_match('/micromaxx650|dolfin\/|yuanda50|wap[- ]?browser/i', $useragent)) {
             $loader = $loaderFactory('java');
+
             return $loader($useragent);
         }
 
@@ -106,21 +111,25 @@ class PlatformFactory implements FactoryInterface
             || (new Helper\AndroidOs($s))->isAndroid()
         ) {
             $loader = $loaderFactory('android');
+
             return $loader($useragent);
         }
 
         if (preg_match('/aix|openvms/i', $useragent)) {
             $loader = $loaderFactory('genericplatform');
+
             return $loader($useragent);
         }
 
         if (preg_match('/darwin|cfnetwork/i', $useragent)) {
             $loader = $loaderFactory('darwin');
+
             return $loader($useragent);
         }
 
         if ((new Helper\Linux($s))->isLinux()) {
             $loader = $loaderFactory('linux');
+
             return $loader($useragent);
         }
 
@@ -134,26 +143,31 @@ class PlatformFactory implements FactoryInterface
 
         if ($s->containsAny(array_keys($platformsBeforeFirefoxOs), false)) {
             $loader = $loaderFactory('genericplatform');
+
             return $loader($useragent);
         }
 
         if ((new Helper\FirefoxOs($s))->isFirefoxOs()) {
             $loader = $loaderFactory('firefoxos');
+
             return $loader($useragent);
         }
 
         if ((new Helper\Ios($s))->isIos()) {
             $loader = $loaderFactory('ios');
+
             return $loader($useragent);
         }
 
         if (preg_match('/series40|nokia/i', $useragent)) {
             $loader = $loaderFactory('nokiaos');
+
             return $loader($useragent);
         }
 
         if (preg_match('/\b(profile)\b/i', $useragent)) {
             $loader = $loaderFactory('java');
+
             return $loader($useragent);
         }
 
@@ -209,10 +223,12 @@ class PlatformFactory implements FactoryInterface
 
         if ($s->containsAny(array_keys($platforms), false)) {
             $loader = $loaderFactory('genericplatform');
+
             return $loader($useragent);
         }
 
         $loader = $loaderFactory('unknown');
+
         return $loader($useragent);
     }
 }

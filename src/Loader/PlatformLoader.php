@@ -41,14 +41,14 @@ class PlatformLoader
     private $logger;
 
     /**
-     * @var string|null
+     * @var string
      */
-    private $platformsPath;
+    private $platformsPath = '';
 
     /**
-     * @var string|null
+     * @var string
      */
-    private $rulesPath;
+    private $rulesPath = '';
 
     /**
      * @var JsonParser
@@ -62,8 +62,8 @@ class PlatformLoader
      */
     public function __construct(CacheInterface $cache, LoggerInterface $logger, string $mode)
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        $this->cache      = $cache;
+        $this->logger     = $logger;
         $this->jsonParser = new JsonParser();
 
         $this->initPath($mode);
@@ -72,8 +72,9 @@ class PlatformLoader
     /**
      * @param string $useragent
      *
-     * @return OsInterface
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return OsInterface
      */
     public function __invoke(string $useragent): OsInterface
     {
@@ -90,8 +91,9 @@ class PlatformLoader
      * @param string $generic
      * @param string $useragent
      *
-     * @return OsInterface
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return OsInterface
      */
     private function detectInArray(array $rules, string $generic, string $useragent): OsInterface
     {
@@ -189,8 +191,8 @@ class PlatformLoader
     }
 
     /**
-     * @param string      $platformCode
-     * @param string      $useragent
+     * @param string $platformCode
+     * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
@@ -266,11 +268,12 @@ class PlatformLoader
 
     /**
      * @param string $mode
+     *
      * @return void
      */
     private function initPath(string $mode): void
     {
         $this->platformsPath = __DIR__ . '/../../data/platforms';
-        $this->rulesPath   = __DIR__ . '/../../data/factories/platforms/' . $mode . '.json';
+        $this->rulesPath     = __DIR__ . '/../../data/factories/platforms/' . $mode . '.json';
     }
 }

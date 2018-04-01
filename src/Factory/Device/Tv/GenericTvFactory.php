@@ -12,8 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device\Tv;
 
 use BrowserDetector\Factory;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
-use Stringy\Stringy;
 
 class GenericTvFactory implements Factory\FactoryInterface
 {

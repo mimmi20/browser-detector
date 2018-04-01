@@ -24,8 +24,9 @@ use Symfony\Component\Cache\Simple\FilesystemCache;
 class PlatformLoaderTest extends TestCase
 {
     /**
-     * @return void
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testLoadNotAvailable(): void
     {
@@ -42,8 +43,9 @@ class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @return void
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testHasFail(): void
     {
@@ -62,8 +64,9 @@ class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @return void
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testLoadFail(): void
     {

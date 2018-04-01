@@ -50,31 +50,41 @@ class DeviceFactory implements FactoryInterface
      * @param string           $useragent
      * @param \Stringy\Stringy $s
      *
-     * @return array
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return array
      */
     public function detect(string $useragent, Stringy $s): array
     {
         if (!$s->containsAny(['freebsd', 'raspbian'], false)
             && $s->containsAny(['darwin', 'cfnetwork'], false)
         ) {
-            return (new Device\DarwinFactory($this->cache, $this->logger))->detect($useragent, $s);
+            $factory = new Device\DarwinFactory($this->cache, $this->logger);
+
+            return $factory($useragent);
         }
 
         if ((new MobileDevice($s))->isMobile()) {
-            return (new Device\MobileFactory($this->cache, $this->logger))->detect($useragent, $s);
+            $factory = new Device\MobileFactory($this->cache, $this->logger);
+
+            return $factory($useragent);
         }
 
         if ((new TvHelper($s))->isTvDevice()) {
-            return (new Device\TvFactory($this->cache, $this->logger))->detect($useragent, $s);
+            $factory = new Device\TvFactory($this->cache, $this->logger);
+
+            return $factory($useragent);
         }
 
         if ((new Desktop($s))->isDesktopDevice()) {
-            return (new Device\DesktopFactory($this->cache, $this->logger))->detect($useragent, $s);
+            $factory = new Device\DesktopFactory($this->cache, $this->logger);
+
+            return $factory($useragent);
         }
 
         $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
-        $loader = $loaderFactory('unknown', 'unknown');
+        $loader        = $loaderFactory('unknown', 'unknown');
+
         return $loader($useragent);
     }
 }

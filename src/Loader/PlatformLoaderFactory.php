@@ -12,12 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Helper\Desktop;
-use BrowserDetector\Helper\MobileDevice;
-use BrowserDetector\Helper\Tv as TvHelper;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
 use Psr\Log\LoggerInterface;
-use Stringy\Stringy;
 
 class PlatformLoaderFactory
 {

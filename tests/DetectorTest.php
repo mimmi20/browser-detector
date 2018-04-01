@@ -12,10 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
-use BrowserDetector\Loader\BrowserLoader;
-use BrowserDetector\Loader\DeviceLoader;
-use BrowserDetector\Loader\EngineLoader;
-use BrowserDetector\Loader\PlatformLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Simple\FilesystemCache;
@@ -42,24 +38,11 @@ class DetectorTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->markTestSkipped();
+        //$this->markTestSkipped();
         $logger = new NullLogger();
         $cache  = new FilesystemCache('', 0, __DIR__ . '/../cache/');
 
         $this->object = new Detector($cache, $logger);
-        $this->object->warmupCache();
-    }
-
-    /**
-     * Tears down the fixture, for example, close a network connection.
-     * This method is called after a test is executed.
-     *
-     * @return void
-     */
-    protected function tearDown(): void
-    {
-        BrowserLoader::resetInstance();
-        EngineLoader::resetInstance();
     }
 
     /**
@@ -68,8 +51,9 @@ class DetectorTest extends TestCase
      * @param string $userAgent
      * @param Result $expectedResult
      *
-     * @return void
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testGetBrowserFromUa(string $userAgent, Result $expectedResult): void
     {
@@ -87,8 +71,9 @@ class DetectorTest extends TestCase
      * @param string $userAgent
      * @param Result $expectedResult
      *
-     * @return void
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testParseString(string $userAgent, Result $expectedResult): void
     {
@@ -106,8 +91,9 @@ class DetectorTest extends TestCase
      * @param string $userAgent
      * @param Result $expectedResult
      *
-     * @return void
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testGetBrowserFromArray(string $userAgent, Result $expectedResult): void
     {
@@ -125,8 +111,9 @@ class DetectorTest extends TestCase
      * @param string $userAgent
      * @param Result $expectedResult
      *
-     * @return void
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testParseArray(string $userAgent, Result $expectedResult): void
     {
@@ -144,8 +131,9 @@ class DetectorTest extends TestCase
      * @param string $userAgent
      * @param Result $expectedResult
      *
-     * @return void
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testGetBrowserFromPsr7Message(string $userAgent, Result $expectedResult): void
     {
@@ -165,8 +153,9 @@ class DetectorTest extends TestCase
      * @param string $userAgent
      * @param Result $expectedResult
      *
-     * @return void
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testParseMessage(string $userAgent, Result $expectedResult): void
     {
@@ -181,8 +170,9 @@ class DetectorTest extends TestCase
     }
 
     /**
-     * @return void
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
      */
     public function testGetBrowserFromInvalid(): void
     {

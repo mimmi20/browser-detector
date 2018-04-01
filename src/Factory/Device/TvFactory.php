@@ -12,13 +12,18 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Factory;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
-use Stringy\Stringy;
 
-class TvFactory implements Factory\FactoryInterface
+class TvFactory
 {
+    private $factories = [
+        '/KDL\d{2}/'               => 'sony',
+        '/nsz-gs7\/gx70|sonydtv/i' => 'sony',
+        '/THOMSON|LF1V/'           => 'thomson',
+        '/philips|avm\-/i'         => 'philips',
+    ];
+
     /**
      * @var \BrowserDetector\Cache\CacheInterface
      */
@@ -42,37 +47,26 @@ class TvFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string           $useragent
-     * @param \Stringy\Stringy $s
+     * @param string $useragent
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
-    public function detect(string $useragent, Stringy $s): array
+    public function __invoke(string $useragent): array
     {
         $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
 
-        if (preg_match('/KDL\d{2}/', $useragent)) {
-            $loader = $loaderFactory('sony', 'tv');
-            return $loader($useragent);
-        }
+        foreach ($this->factories as $rule => $factoryName) {
+            if (preg_match($rule, $useragent)) {
+                $loader = $loaderFactory($factoryName, 'tv');
 
-        if ($s->containsAny(['nsz-gs7/gx70', 'sonydtv'], false)) {
-            $loader = $loaderFactory('sony', 'tv');
-            return $loader($useragent);
-        }
-
-        if ($s->containsAny(['THOMSON', 'LF1V'], true)) {
-            $loader = $loaderFactory('thomson', 'tv');
-            return $loader($useragent);
-        }
-
-        if ($s->containsAny(['philips', 'avm-'], false)) {
-            $loader = $loaderFactory('philips', 'tv');
-            return $loader($useragent);
+                return $loader($useragent);
+            }
         }
 
         $loader = $loaderFactory('generictv', 'tv');
+
         return $loader($useragent);
     }
 }

@@ -12,13 +12,12 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Factory;
 use BrowserDetector\Helper;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
-class DesktopFactory implements Factory\FactoryInterface
+class DesktopFactory
 {
     /**
      * @var \BrowserDetector\Cache\CacheInterface
@@ -43,18 +42,20 @@ class DesktopFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string           $useragent
-     * @param \Stringy\Stringy $s
+     * @param string $useragent
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
-    public function detect(string $useragent, Stringy $s): array
+    public function __invoke(string $useragent): array
     {
         $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
+        $s             = new Stringy($useragent);
 
         if ((new Helper\Windows($s))->isWindows()) {
             $loader = $loaderFactory('windows', 'desktop');
+
             return $loader($useragent);
         }
 
@@ -62,20 +63,24 @@ class DesktopFactory implements Factory\FactoryInterface
             || $s->containsAll(['debian', 'rpi'], false)
         ) {
             $loader = $loaderFactory('genericdesktop', 'desktop');
+
             return $loader($useragent);
         }
 
         if ((new Helper\Linux($s))->isLinux()) {
             $loader = $loaderFactory('linux', 'desktop');
+
             return $loader($useragent);
         }
 
         if ((new Helper\Macintosh($s))->isMacintosh()) {
             $loader = $loaderFactory('apple', 'desktop');
+
             return $loader($useragent);
         }
 
         $loader = $loaderFactory('generaldesktop', 'desktop');
+
         return $loader($useragent);
     }
 }

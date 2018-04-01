@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Browser;
 
 use BrowserDetector\Cache\Cache;
-use BrowserDetector\Factory\Browser\GeckoOrFirefoxBasedFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\PlatformLoader;

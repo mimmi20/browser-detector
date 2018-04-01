@@ -21,13 +21,13 @@ class WindowsMobileFactory implements Factory\FactoryInterface
      * @var array
      */
     private $platforms = [
-        'windows iot 10' => 'windows iot 10.0',
-        'windows ce' => 'windows ce',
-        'windows mobile; wce' => 'windows ce',
-        '/Windows Phone 6/' => 'windows mobile os',
+        'windows iot 10'                                                         => 'windows iot 10.0',
+        'windows ce'                                                             => 'windows ce',
+        'windows mobile; wce'                                                    => 'windows ce',
+        '/Windows Phone 6/'                                                      => 'windows mobile os',
         '/Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop| wds |WPOS\:/' => 'windows phone',
-        '/Windows Mobile (7|10)/' => 'windows phone',
-        '/Windows NT (?:7|8|10); ARM; Lumia/' => 'windows phone',
+        '/Windows Mobile (7|10)/'                                                => 'windows phone',
+        '/Windows NT (?:7|8|10); ARM; Lumia/'                                    => 'windows phone',
     ];
 
     /**

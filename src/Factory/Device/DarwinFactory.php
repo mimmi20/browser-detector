@@ -12,16 +12,18 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Factory;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
-use Stringy\Stringy;
 
 /**
  * Browser detection class
  */
-class DarwinFactory implements Factory\FactoryInterface
+class DarwinFactory
 {
+    private $factories = [
+        '/cfnetwork\/(?:808|75[78]|711|709|672|60[29]|548|485|467|459)/i' => 'mobile',
+    ];
+
     /**
      * @var \BrowserDetector\Cache\CacheInterface
      */
@@ -45,36 +47,25 @@ class DarwinFactory implements Factory\FactoryInterface
     /**
      * detects the device name from the given user agent
      *
-     * @param string           $useragent
-     * @param \Stringy\Stringy $s
+     * @param string $useragent
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
-    public function detect(string $useragent, Stringy $s): array
+    public function __invoke(string $useragent): array
     {
         $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
 
-        $mobileCodes = [
-            'cfnetwork/808',
-            'cfnetwork/758',
-            'cfnetwork/757',
-            'cfnetwork/711',
-            'cfnetwork/709',
-            'cfnetwork/672',
-            'cfnetwork/609',
-            'cfnetwork/602',
-            'cfnetwork/548',
-            'cfnetwork/485',
-            'cfnetwork/467',
-            'cfnetwork/459',
-        ];
+        foreach ($this->factories as $rule => $mode) {
+            if (preg_match($rule, $useragent)) {
+                $loader = $loaderFactory('apple', $mode);
 
-        if ($s->containsAny($mobileCodes, false)) {
-            $loader = $loaderFactory('apple', 'mobile');
-        } else {
-            $loader = $loaderFactory('apple', 'desktop');
+                return $loader($useragent);
+            }
         }
+
+        $loader = $loaderFactory('apple', 'desktop');
 
         return $loader($useragent);
     }
