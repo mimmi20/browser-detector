@@ -18,15 +18,16 @@ use Symfony\Component\Cache\Simple\ArrayCache;
 final class CacheTest extends TestCase
 {
     /**
-     * @return void
      * @throws \ReflectionException
+     *
+     * @return void
      */
     public function testConstruct(): void
     {
         /** @var ArrayCache $adapter */
         $adapter = $this->createMock(ArrayCache::class);
 
-        $cache   = new Cache($adapter);
+        $cache = new Cache($adapter);
 
         self::assertInstanceOf(Cache::class, $cache);
     }
@@ -71,7 +72,7 @@ final class CacheTest extends TestCase
             ->will(self::returnValue(null));
 
         /** @var ArrayCache $adapter */
-        $cache   = new Cache($adapter);
+        $cache = new Cache($adapter);
 
         self::assertFalse($cache->setItem('version', 6012));
         self::assertNull($cache->getItem('version'));
@@ -104,7 +105,7 @@ final class CacheTest extends TestCase
             ->will(self::returnValue(null));
 
         /** @var ArrayCache $adapter */
-        $cache   = new Cache($adapter);
+        $cache = new Cache($adapter);
 
         self::assertFalse($cache->setItem('version', 6012));
         self::assertNull($cache->getItem('version'));
@@ -136,7 +137,7 @@ final class CacheTest extends TestCase
             ->will(self::returnValue(null));
 
         /** @var ArrayCache $adapter */
-        $cache   = new Cache($adapter);
+        $cache = new Cache($adapter);
 
         self::assertFalse($cache->hasItem('version'));
     }
@@ -159,7 +160,7 @@ final class CacheTest extends TestCase
             ->will(self::returnValue(false));
 
         /** @var ArrayCache $adapter */
-        $cache   = new Cache($adapter);
+        $cache = new Cache($adapter);
 
         self::assertFalse($cache->removeItem('version'));
     }
@@ -181,7 +182,7 @@ final class CacheTest extends TestCase
             ->will(self::returnValue(false));
 
         /** @var ArrayCache $adapter */
-        $cache   = new Cache($adapter);
+        $cache = new Cache($adapter);
 
         self::assertFalse($cache->flush());
     }

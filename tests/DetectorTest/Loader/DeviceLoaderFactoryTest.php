@@ -16,14 +16,13 @@ use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Exception\InvalidArgumentException;
-use Symfony\Component\Cache\Simple\FilesystemCache;
 
 class DeviceLoaderFactoryTest extends TestCase
 {
     /**
-     * @return void
      * @throws \ReflectionException
+     *
+     * @return void
      */
     public function testInvoke(): void
     {

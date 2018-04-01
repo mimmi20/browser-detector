@@ -16,14 +16,13 @@ use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Loader\PlatformLoaderFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Exception\InvalidArgumentException;
-use Symfony\Component\Cache\Simple\FilesystemCache;
 
 class PlatformLoaderFactoryTest extends TestCase
 {
     /**
-     * @return void
      * @throws \ReflectionException
+     *
+     * @return void
      */
     public function testInvoke(): void
     {
