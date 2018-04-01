@@ -14,12 +14,8 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Loader\BrowserLoaderFactory;
 use Psr\Log\LoggerInterface;
-use Stringy\Stringy;
 
-/**
- * Browser detection class
- */
-class BrowserFactory implements FactoryInterface
+class BrowserFactory implements BrowserFactoryInterface
 {
     private $factories = [
         '/edge/i'                                                  => 'edge',
@@ -54,14 +50,13 @@ class BrowserFactory implements FactoryInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string  $useragent
-     * @param Stringy $s
+     * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s): array
+    public function __invoke(string $useragent): array
     {
         $loaderFactory = new BrowserLoaderFactory($this->cache, $this->logger);
 

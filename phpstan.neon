@@ -5,5 +5,5 @@ parameters:
   excludes_analyse:
     - */tests/*/data/*
   ignoreErrors:
-#    - '~MockObject~'
-    - '~Parameter #1 \$headers of method BrowserDetector\Detector::getBrowser\(\) expects mixed\[\]|Psr\Http\Message\MessageInterface|string, stdClass given.~'
+    - '~MockObject~'
+#    - '~Parameter #1 \$headers of method BrowserDetector\Detector::getBrowser\(\) expects mixed\[\]|Psr\Http\Message\MessageInterface|string, stdClass given.~'

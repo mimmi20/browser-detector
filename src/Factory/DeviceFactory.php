@@ -22,7 +22,7 @@ use Stringy\Stringy;
 /**
  * Device detection class
  */
-class DeviceFactory implements FactoryInterface
+class DeviceFactory implements DeviceFactoryInterface
 {
     /**
      * @var \BrowserDetector\Cache\CacheInterface
@@ -47,15 +47,16 @@ class DeviceFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string           $useragent
-     * @param \Stringy\Stringy $s
+     * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s): array
+    public function __invoke(string $useragent): array
     {
+        $s = new Stringy($useragent);
+
         if (!$s->containsAny(['freebsd', 'raspbian'], false)
             && $s->containsAny(['darwin', 'cfnetwork'], false)
         ) {

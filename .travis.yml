@@ -26,6 +26,7 @@ stages:
   - static code analysis
   - test
   - test with coverage
+  - integration tests
 
 before_install:
   - stty cols 130
@@ -36,7 +37,7 @@ before_install:
 
 install: travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest $COMPOSER_FLAGS -vv
 
-script: vendor/bin/phpunit --colors --columns 121 --no-coverage
+script: vendor/bin/phpunit -c phpunit.xml --colors --columns 117 --no-coverage
 
 jobs:
   allow_failures:
@@ -55,7 +56,7 @@ jobs:
         - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
         - echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
         - travis_retry composer self-update
-      script: vendor/bin/phpunit --colors --columns 121 --coverage-clover=clover.xml --coverage-text
+      script: vendor/bin/phpunit -c phpunit.xml --colors --columns 117 --coverage-clover=clover.xml --coverage-text
       after_success:
         - wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.0.0/php-coveralls.phar && php -n php-coveralls.phar --verbose --coverage_clover=clover.xml
         - bash <(curl -s https://codecov.io/bash) -f clover.xml -F phpunit
@@ -86,6 +87,13 @@ jobs:
         - TEST=phpstan
         - COMPOSER_FLAGS=""
       script: vendor/bin/phpstan analyse -l 7 -c phpstan.neon --autoload-file=vendor/autoload.php --memory-limit=768M --no-progress src tests
+
+    - stage: integration tests
+      php: 7.1
+      env:
+        - TEST="phpunit - integration"
+        - COMPOSER_FLAGS=""
+      script: php -n vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --columns 121 --verbose
 
 notifications:
   email: false

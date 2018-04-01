@@ -59,7 +59,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "BrowserDetectorTest\\": "tests/"
+      "BrowserDetectorTest\\": "tests/DetectorTest/",
+      "UserAgentsTest\\": "tests/UserAgentsTest/"
     }
   },
   "support": {

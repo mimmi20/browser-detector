@@ -18,7 +18,7 @@ use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 use UaResult\Os\OsInterface;
 
-class PlatformFactory implements FactoryInterface
+class PlatformFactory implements PlatformFactoryInterface
 {
     /**
      * @var \BrowserDetector\Cache\CacheInterface
@@ -43,15 +43,15 @@ class PlatformFactory implements FactoryInterface
     /**
      * Gets the information about the platform by User Agent
      *
-     * @param string  $useragent
-     * @param Stringy $s
+     * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect(string $useragent, Stringy $s): OsInterface
+    public function __invoke(string $useragent): OsInterface
     {
+        $s             = new Stringy($useragent);
         $windowsHelper = new Helper\Windows($s);
         $loaderFactory = new PlatformLoaderFactory($this->cache, $this->logger);
 

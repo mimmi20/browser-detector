@@ -24,7 +24,7 @@ use UaResult\Company\CompanyLoader;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
-class EngineLoader
+class EngineLoader implements EngineLoaderInterface
 {
     private const CACHE_PREFIX = 'engine';
 
