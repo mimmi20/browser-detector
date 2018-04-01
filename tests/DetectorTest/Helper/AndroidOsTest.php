@@ -43,6 +43,7 @@ class AndroidOsTest extends TestCase
             ['Mozilla/5.0 (Linux; U; en-us; BeyondPod 4)'],
             ['Opera/9.80 (Android; Opera Mini/9.0.1829/37.6283; U; de) Presto/2.12.423 Version/12.16'],
             ['Mozilla/5.0 (Linux; U; Android OUYA 4.1.2; en-us; OUYA Build/JZO54L-OUYA) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'],
+            ['Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; HTC_Sensation_Z710e; da-dk) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16'],
         ];
     }
 

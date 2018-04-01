@@ -98,6 +98,8 @@ class MobileDeviceTest extends TestCase
             ['WAP Browser-Karbonn K84/1.0.0'],
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12; Microsoft ZuneHD 4.3)'],
             ['Mozilla/5.0 (Windows; U; Windows NT 5.1;en-us;LenovoTablet Build/1.0) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'],
+            ['Mozilla/5.0 (Tablet; rv:26.0) Gecko/18.0 Firefox/26.0'],
+            ['Mozilla/5.0 (Mobile; rv:18.0) Gecko/18.0 Firefox/18.0'],
         ];
     }
 

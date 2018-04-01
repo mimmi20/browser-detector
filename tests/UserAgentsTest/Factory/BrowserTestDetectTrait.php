@@ -17,7 +17,7 @@ use UaNormalizer\NormalizerFactory;
 trait BrowserTestDetectTrait
 {
     /**
-     * @var \BrowserDetector\Factory\Browser\EdgeFactory
+     * @var \BrowserDetector\Factory\BrowserFactory
      */
     private $object;
 

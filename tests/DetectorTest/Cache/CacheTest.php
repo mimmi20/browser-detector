@@ -19,10 +19,13 @@ final class CacheTest extends TestCase
 {
     /**
      * @return void
+     * @throws \ReflectionException
      */
     public function testConstruct(): void
     {
-        $adapter = new ArrayCache();
+        /** @var ArrayCache $adapter */
+        $adapter = $this->createMock(ArrayCache::class);
+
         $cache   = new Cache($adapter);
 
         self::assertInstanceOf(Cache::class, $cache);
@@ -40,5 +43,146 @@ final class CacheTest extends TestCase
 
         $cache->setItem('version', 6012);
         self::assertEquals(6012, $cache->getItem('version'));
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testHasNotItem(): void
+    {
+        $adapter = $this->getMockBuilder(ArrayCache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['has', 'set', 'get'])
+            ->getMock();
+        $adapter
+            ->expects(self::once())
+            ->method('has')
+            ->with('version')
+            ->will(self::returnValue(false));
+        $adapter
+            ->expects(self::once())
+            ->method('set')
+            ->will(self::returnValue(false));
+        $adapter
+            ->expects(self::never())
+            ->method('get')
+            ->will(self::returnValue(null));
+
+        /** @var ArrayCache $adapter */
+        $cache   = new Cache($adapter);
+
+        self::assertFalse($cache->setItem('version', 6012));
+        self::assertNull($cache->getItem('version'));
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testHasNotItem2(): void
+    {
+        $adapter = $this->getMockBuilder(ArrayCache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['has', 'set', 'get'])
+            ->getMock();
+        $adapter
+            ->expects(self::once())
+            ->method('has')
+            ->with('version')
+            ->will(self::returnValue(true));
+        $adapter
+            ->expects(self::once())
+            ->method('set')
+            ->will(self::returnValue(false));
+        $adapter
+            ->expects(self::once())
+            ->method('get')
+            ->with('version')
+            ->will(self::returnValue(null));
+
+        /** @var ArrayCache $adapter */
+        $cache   = new Cache($adapter);
+
+        self::assertFalse($cache->setItem('version', 6012));
+        self::assertNull($cache->getItem('version'));
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testHasNotItem3(): void
+    {
+        $adapter = $this->getMockBuilder(ArrayCache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['has', 'set', 'get'])
+            ->getMock();
+        $adapter
+            ->expects(self::once())
+            ->method('has')
+            ->with('version')
+            ->will(self::returnValue(false));
+        $adapter
+            ->expects(self::never())
+            ->method('set')
+            ->will(self::returnValue(false));
+        $adapter
+            ->expects(self::never())
+            ->method('get')
+            ->will(self::returnValue(null));
+
+        /** @var ArrayCache $adapter */
+        $cache   = new Cache($adapter);
+
+        self::assertFalse($cache->hasItem('version'));
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testRemoveItem(): void
+    {
+        $adapter = $this->getMockBuilder(ArrayCache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['delete'])
+            ->getMock();
+        $adapter
+            ->expects(self::once())
+            ->method('delete')
+            ->with('version')
+            ->will(self::returnValue(false));
+
+        /** @var ArrayCache $adapter */
+        $cache   = new Cache($adapter);
+
+        self::assertFalse($cache->removeItem('version'));
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testFlush(): void
+    {
+        $adapter = $this->getMockBuilder(ArrayCache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['clear'])
+            ->getMock();
+        $adapter
+            ->expects(self::once())
+            ->method('clear')
+            ->will(self::returnValue(false));
+
+        /** @var ArrayCache $adapter */
+        $cache   = new Cache($adapter);
+
+        self::assertFalse($cache->flush());
     }
 }

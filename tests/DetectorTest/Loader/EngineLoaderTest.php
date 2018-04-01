@@ -18,9 +18,6 @@ use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
-/**
- * Test class for \BrowserDetector\Loader\EngineLoader
- */
 class EngineLoaderTest extends TestCase
 {
     /**

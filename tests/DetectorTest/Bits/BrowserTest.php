@@ -27,7 +27,13 @@ class BrowserTest extends TestCase
     public function testGetBits(string $useragent, int $expected): void
     {
         $object = new Browser($useragent);
-        self::assertSame($expected, $object->getBits());
+
+        $result = $object->getBits();
+        self::assertSame($expected, $result);
+
+        $secondResult = $object->getBits();
+        self::assertSame($expected, $secondResult);
+        self::assertSame($result, $secondResult);
     }
 
     /**

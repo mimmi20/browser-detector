@@ -50,11 +50,7 @@ class AndroidOs
             return true;
         }
 
-        if (preg_match('/(beyondpod)/i', (string) $this->useragent)) {
-            return true;
-        }
-
-        if (preg_match('/(htc_sensation_z710e)/i', (string) $this->useragent)) {
+        if (preg_match('/(beyondpod|htc_sensation_z710e)/i', (string) $this->useragent)) {
             return true;
         }
 
