@@ -27,6 +27,7 @@ class IosTest extends TestCase
      * @param string $agent
      *
      * @return void
+     * @covers \BrowserDetector\Helper\Ios::isIos()
      */
     public function testIsiOS(string $agent): void
     {
@@ -64,6 +65,7 @@ class IosTest extends TestCase
      * @param string $agent
      *
      * @return void
+     * @covers \BrowserDetector\Helper\Ios::isIos()
      */
     public function testIsNotiOS(string $agent): void
     {

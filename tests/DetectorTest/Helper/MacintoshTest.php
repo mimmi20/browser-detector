@@ -27,6 +27,7 @@ class MacintoshTest extends TestCase
      * @param string $agent
      *
      * @return void
+     * @covers \BrowserDetector\Helper\Macintosh::isMacintosh()
      */
     public function testIsMacintosh(string $agent): void
     {
@@ -56,6 +57,7 @@ class MacintoshTest extends TestCase
      * @param string $agent
      *
      * @return void
+     * @covers \BrowserDetector\Helper\Macintosh::isMacintosh()
      */
     public function testIsNotMacintosh(string $agent): void
     {

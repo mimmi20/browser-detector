@@ -23,6 +23,7 @@ class DesktopTest extends TestCase
      * @param string $agent
      *
      * @return void
+     * @covers \BrowserDetector\Helper\Desktop::isDesktopDevice()
      */
     public function testIsDesktop(string $agent): void
     {
@@ -91,6 +92,7 @@ class DesktopTest extends TestCase
      * @param string $agent
      *
      * @return void
+     * @covers \BrowserDetector\Helper\Desktop::isDesktopDevice()
      */
     public function testIsNoDesktop(string $agent): void
     {

@@ -23,6 +23,9 @@ class BrowserTest extends TestCase
      * @param int    $expected
      *
      * @return void
+     *
+     * @covers \BrowserDetector\Bits\Browser::getBits()
+     * @covers \BrowserDetector\Bits\Browser::detectBits()
      */
     public function testGetBits(string $useragent, int $expected): void
     {

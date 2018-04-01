@@ -23,6 +23,7 @@ class DeviceLoaderFactoryTest extends TestCase
      * @throws \ReflectionException
      *
      * @return void
+     * @covers \BrowserDetector\Loader\DeviceLoaderFactory::__invoke()
      */
     public function testInvoke(): void
     {

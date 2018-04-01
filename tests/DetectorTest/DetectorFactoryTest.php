@@ -21,6 +21,7 @@ class DetectorFactoryTest extends TestCase
 {
     /**
      * @return void
+     * @covers \BrowserDetector\DetectorFactory::__invoke()
      */
     public function testInvoke(): void
     {

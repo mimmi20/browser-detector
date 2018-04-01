@@ -23,6 +23,7 @@ class PlatformLoaderFactoryTest extends TestCase
      * @throws \ReflectionException
      *
      * @return void
+     * @covers \BrowserDetector\Loader\PlatformLoaderFactory::__invoke()
      */
     public function testInvoke(): void
     {

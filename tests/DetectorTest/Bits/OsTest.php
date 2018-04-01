@@ -23,6 +23,9 @@ class OsTest extends TestCase
      * @param int    $expected
      *
      * @return void
+     *
+     * @covers \BrowserDetector\Bits\Os::getBits()
+     * @covers \BrowserDetector\Bits\Os::detectBits()
      */
     public function testGetBits(string $useragent, int $expected): void
     {
