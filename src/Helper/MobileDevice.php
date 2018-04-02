@@ -223,7 +223,7 @@ class MobileDevice
             return true;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+(A|I|W|M)(T|P)?/', (string) $this->useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+[AIWM][TP]?/', (string) $this->useragent)) {
             return true;
         }
 

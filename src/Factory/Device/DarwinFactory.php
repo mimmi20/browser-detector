@@ -21,7 +21,8 @@ use Psr\Log\LoggerInterface;
 class DarwinFactory
 {
     private $factories = [
-        '/cfnetwork\/(?:808|75[78]|711|709|672|60[29]|548|485|467|459)/i' => 'mobile',
+        '/cfnetwork\/(?:887|790).*\(x86_64\)/i' => 'desktop',
+        '/cfnetwork\/(?:887|808|790|75[78]|711|709|672|60[29]|548|485|467|459)/i' => 'mobile',
     ];
 
     /**

@@ -23,9 +23,6 @@ class BrowserTest extends TestCase
      * @param int    $expected
      *
      * @return void
-     *
-     * @covers \BrowserDetector\Bits\Browser::getBits()
-     * @covers \BrowserDetector\Bits\Browser::detectBits()
      */
     public function testGetBits(string $useragent, int $expected): void
     {
@@ -46,23 +43,23 @@ class BrowserTest extends TestCase
     {
         return [
             [
-                'ua'       => 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.5.0',
+                'ua' => 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.5.0',
                 'expected' => 32,
             ],
             [
-                'ua'       => 'Mozilla/5.0 (X11; U; Linux x86_64; C) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.7.1 Safari/533.3',
+                'ua' => 'Mozilla/5.0 (X11; U; Linux x86_64; C) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.7.1 Safari/533.3',
                 'expected' => 64,
             ],
             [
-                'ua'       => 'Mozilla/2.0 (Compatible; MSIE 3.02; AOL 4.0; Windows 3.1)',
+                'ua' => 'Mozilla/2.0 (Compatible; MSIE 3.02; AOL 4.0; Windows 3.1)',
                 'expected' => 16,
             ],
             [
-                'ua'       => 'ShitScript/1.0 (CP/M; 8-bit)',
+                'ua' => 'ShitScript/1.0 (CP/M; 8-bit)',
                 'expected' => 8,
             ],
             [
-                'ua'       => 'Mozilla/5.0 Galeon/1.2.6 (X11; Linux i686; U;) Gecko/20020830',
+                'ua' => 'Mozilla/5.0 Galeon/1.2.6 (X11; Linux i686; U;) Gecko/20020830',
                 'expected' => 32,
             ],
         ];

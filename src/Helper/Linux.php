@@ -73,6 +73,7 @@ class Linux
             'irix',
             'hpwos',
             'webos',
+            'web0s',
             'remix',
         ];
 

@@ -23,7 +23,6 @@ class EngineLoaderFactoryTest extends TestCase
      * @throws \ReflectionException
      *
      * @return void
-     * @covers \BrowserDetector\Loader\EngineLoaderFactory::__invoke()
      */
     public function testInvoke(): void
     {

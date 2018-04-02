@@ -70,7 +70,6 @@ class EngineLoader implements EngineLoaderInterface
      * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
      *
      * @return EngineInterface
      */

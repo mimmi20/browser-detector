@@ -56,45 +56,18 @@ class PlatformFactory implements PlatformFactoryInterface
         $loaderFactory = new PlatformLoaderFactory($this->cache, $this->logger);
 
         if ($windowsHelper->isMobileWindows()) {
-            $loader = $loaderFactory('windows');
-
-            return $loader($useragent);
-        }
-
-        if ($windowsHelper->isWindows()) {
             $loader = $loaderFactory('windowsmobile');
 
             return $loader($useragent);
         }
 
-        $platformsBeforeMiuiOs = [
-            'commoncrawler' => 'unknown',
-            'symbianos'     => 'symbian',
-            'symbos'        => 'symbian',
-            'symbian'       => 'symbian',
-            'series 60'     => 'symbian',
-            's60v3'         => 'symbian',
-            's60v5'         => 'symbian',
-            'nokia7230'     => 'symbian',
-            'bada'          => 'bada',
-            'meego'         => 'meego',
-            'sailfish'      => 'sailfishos',
-            'cygwin'        => 'cygwin',
-            'netbsd'        => 'netbsd',
-            'openbsd'       => 'openbsd',
-            'dragonfly'     => 'dragonfly bsd',
-            'hp-ux'         => 'hp-ux',
-            'hpux'          => 'hp-ux',
-            'irix'          => 'irix',
-            'webos'         => 'webos',
-            'hpwos'         => 'webos',
-            'tizen'         => 'tizen',
-            'kfreebsd'      => 'debian with freebsd kernel',
-            'freebsd'       => 'freebsd',
-            'bsd'           => 'bsd',
-        ];
+        if ($windowsHelper->isWindows()) {
+            $loader = $loaderFactory('windows');
 
-        if ($s->containsAny(array_keys($platformsBeforeMiuiOs), false)) {
+            return $loader($useragent);
+        }
+
+        if (preg_match('/commoncrawler|symb(ian|os)|series ?60|s60v[35]|nokia7230|bada|meego|sailfish|cygwin|bsd|dragonfly|hp\-?ux|irix|web[o0]s|hpwos|tizen/i', $useragent)) {
             $loader = $loaderFactory('genericplatform');
 
             return $loader($useragent);
@@ -133,15 +106,7 @@ class PlatformFactory implements PlatformFactoryInterface
             return $loader($useragent);
         }
 
-        $platformsBeforeFirefoxOs = [
-            'maemo'        => 'linux smartphone os (maemo)',
-            'like android' => 'linux smartphone os (maemo)',
-            'blackberry'   => 'rim os',
-            'bb10'         => 'rim os',
-            'remix'        => 'remixos',
-        ];
-
-        if ($s->containsAny(array_keys($platformsBeforeFirefoxOs), false)) {
+        if (preg_match('/maemo|like android|blackberry|bb10|remix/i', $useragent)) {
             $loader = $loaderFactory('genericplatform');
 
             return $loader($useragent);
@@ -159,65 +124,65 @@ class PlatformFactory implements PlatformFactoryInterface
             return $loader($useragent);
         }
 
-        if (preg_match('/series40|nokia/i', $useragent)) {
+        if (preg_match('/series ?40|nokia/i', $useragent)) {
             $loader = $loaderFactory('nokiaos');
 
             return $loader($useragent);
         }
 
-        if (preg_match('/\b(profile)\b/i', $useragent)) {
+        if (preg_match('/\bprofile\b/i', $useragent)) {
             $loader = $loaderFactory('java');
 
             return $loader($useragent);
         }
 
         $platforms = [
-            'mac os x'           => 'mac os x',
-            'os=mac 10'          => 'mac os x',
-            'mac_powerpc'        => 'macintosh',
-            'ppc'                => 'macintosh',
-            '68k'                => 'macintosh',
-            'macintosh'          => 'mac os x',
-            'rim tablet'         => 'rim tablet os',
-            'amigaos'            => 'amiga os',
-            'brew'               => 'brew',
-            'beos'               => 'beos',
-            'opensolaris'        => 'opensolaris',
-            'solaris'            => 'solaris',
-            'sunos'              => 'sunos',
-            'risc'               => 'risc os',
-            'tru64 unix'         => 'tru64 unix',
-            'digital unix'       => 'tru64 unix',
-            'osf1'               => 'tru64 unix',
-            'unix'               => 'unix',
-            'os/2'               => 'os/2',
-            'warp'               => 'os/2',
-            'cp/m'               => 'cp/m',
-            'nintendo wii'       => 'nintendo os',
-            'nintendo 3ds'       => 'nintendo os',
-            'palm os'            => 'palmos',
-            'palmsource'         => 'palmos',
-            'wyderos'            => 'wyderos',
-            'liberate'           => 'liberate',
-            'inferno'            => 'inferno os',
-            'syllable'           => 'syllable',
-            'camino'             => 'mac os x',
-            'pubsub'             => 'mac os x',
-            'integrity'          => 'mac os x',
-            'gt-s5380'           => 'bada',
-            's8500'              => 'bada',
-            'java'               => 'java',
-            'j2me/midp'          => 'java',
-            'profile/midp'       => 'java',
-            'juc'                => 'java',
-            'ucweb'              => 'java',
-            'netfront'           => 'java',
-            'jasmine/1.0'        => 'java',
-            'obigo'              => 'java',
-            'spark284'           => 'java',
-            'lemon b556'         => 'java',
-            'kkt20'              => 'java',
-            'gt-c3312r'          => 'java',
+            'mac os x' => 'mac os x',
+            'os=mac 10' => 'mac os x',
+            'mac_powerpc' => 'macintosh',
+            'ppc' => 'macintosh',
+            '68k' => 'macintosh',
+            'macintosh' => 'mac os x',
+            'rim tablet' => 'rim tablet os',
+            'amigaos' => 'amiga os',
+            'brew' => 'brew',
+            'beos' => 'beos',
+            'opensolaris' => 'opensolaris',
+            'solaris' => 'solaris',
+            'sunos' => 'sunos',
+            'risc' => 'risc os',
+            'tru64 unix' => 'tru64 unix',
+            'digital unix' => 'tru64 unix',
+            'osf1' => 'tru64 unix',
+            'unix' => 'unix',
+            'os/2' => 'os/2',
+            'warp' => 'os/2',
+            'cp/m' => 'cp/m',
+            'nintendo wii' => 'nintendo os',
+            'nintendo 3ds' => 'nintendo os',
+            'palm os' => 'palmos',
+            'palmsource' => 'palmos',
+            'wyderos' => 'wyderos',
+            'liberate' => 'liberate',
+            'inferno' => 'inferno os',
+            'syllable' => 'syllable',
+            'camino' => 'mac os x',
+            'pubsub' => 'mac os x',
+            'integrity' => 'mac os x',
+            'gt-s5380' => 'bada',
+            's8500' => 'bada',
+            'java' => 'java',
+            'j2me/midp' => 'java',
+            'profile/midp' => 'java',
+            'juc' => 'java',
+            'ucweb' => 'java',
+            'netfront' => 'java',
+            'jasmine/1.0' => 'java',
+            'obigo' => 'java',
+            'spark284' => 'java',
+            'lemon b556' => 'java',
+            'kkt20' => 'java',
+            'gt-c3312r' => 'java',
             'velocitymicro/t408' => 'android',
         ];
 

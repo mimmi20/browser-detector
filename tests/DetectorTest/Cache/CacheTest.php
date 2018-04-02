@@ -21,9 +21,6 @@ final class CacheTest extends TestCase
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
-     *
-     * @covers \BrowserDetector\Cache\Cache::setItem()
-     *                         @covers \BrowserDetector\Cache\Cache::getItem()
      */
     public function testVersion(): void
     {
@@ -38,9 +35,6 @@ final class CacheTest extends TestCase
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
-     *
-     * @covers \BrowserDetector\Cache\Cache::setItem()
-     *                         @covers \BrowserDetector\Cache\Cache::getItem()
      */
     public function testHasNotItem(): void
     {
@@ -73,9 +67,6 @@ final class CacheTest extends TestCase
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
-     *
-     * @covers \BrowserDetector\Cache\Cache::setItem()
-     *                         @covers \BrowserDetector\Cache\Cache::getItem()
      */
     public function testHasNotItem2(): void
     {
@@ -109,8 +100,6 @@ final class CacheTest extends TestCase
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
-     *
-     * @covers \BrowserDetector\Cache\Cache::hasItem()
      */
     public function testHasNotItem3(): void
     {
@@ -142,8 +131,6 @@ final class CacheTest extends TestCase
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
-     *
-     * @covers \BrowserDetector\Cache\Cache::removeItem()
      */
     public function testRemoveItem(): void
     {
@@ -165,8 +152,6 @@ final class CacheTest extends TestCase
 
     /**
      * @return void
-     *
-     * @covers \BrowserDetector\Cache\Cache::flush()
      */
     public function testFlush(): void
     {

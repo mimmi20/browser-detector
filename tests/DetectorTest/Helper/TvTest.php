@@ -27,7 +27,6 @@ class TvTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\Tv::isTvDevice()
      */
     public function testIsTv(string $agent): void
     {
@@ -68,7 +67,6 @@ class TvTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\Tv::isTvDevice()
      */
     public function testIsNotTv(string $agent): void
     {

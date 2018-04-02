@@ -37,7 +37,7 @@ class DetectorTest extends TestCase
     protected function setUp(): void
     {
         $logger = new NullLogger();
-        $cache  = new FilesystemCache('', 0, __DIR__ . '/../../cache/');
+        $cache  = new FilesystemCache('', 0, 'cache/');
 
         $factory = new DetectorFactory($cache, $logger);
 
@@ -187,7 +187,7 @@ class DetectorTest extends TestCase
             }
 
             $data[$key] = [
-                'ua'     => $test['ua'],
+                'ua' => $test['ua'],
                 'result' => (new ResultFactory())->fromArray($logger, $test['result']),
             ];
         }

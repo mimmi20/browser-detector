@@ -95,7 +95,7 @@
     "/qvodplayerbrowser/i": "qvodplayerbrowser",
     "/linux; android.*version/i": "android webkit",
     "/android[\\/ ][\\d\\.]+ release/i": "android webkit",
-    "/(?:android|mtk|maui|samsung|windows ce|symbos|gingerbread).*safari/i": "android webkit",
+    "/(?:android|mtk|maui|samsung|windows ce|symbos|gingerbread|z710e).*safari/i": "android webkit",
     "/webos/i": "webkit/webos",
     "/wosbrowser/i": "webkit/webos",
     "/wossystem/i": "webkit/webos",

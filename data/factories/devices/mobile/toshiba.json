@@ -2,8 +2,7 @@
   "rules": {
     "/at10pe\\-a/i": "toshiba at10pe-a",
     "/at10le\\-a/i": "toshiba at10le-a",
-    "/toshiba/tg01/i": "toshiba tg01",
-    "/toshiba\\-tg01/i": "toshiba tg01",
+    "/toshiba[\\/\\-]tg01/i": "toshiba tg01",
     "/folio_and_a/i": "toshiba folio 100",
     "/toshiba_ac_and_az/i": "toshiba folio 100",
     "/folio100/i": "toshiba folio 100",

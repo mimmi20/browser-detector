@@ -18,13 +18,13 @@ use Psr\Log\LoggerInterface;
 class BrowserFactory implements BrowserFactoryInterface
 {
     private $factories = [
-        '/edge/i'                                                  => 'edge',
-        '/chrome|crmo/i'                                           => 'blink',
+        '/edge/i' => 'edge',
+        '/chrome|crmo/i' => 'blink',
         '/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i' => 'webkit',
-        '/iOS/'                                                    => 'webkit',
-        '/presto|opera/i'                                          => 'presto',
-        '/trident|msie|like gecko/i'                               => 'trident',
-        '/gecko|firefox|minefield|shiretoko|bonecho|namoroka/i'    => 'gecko',
+        '/iOS/' => 'webkit',
+        '/presto|opera/i' => 'presto',
+        '/trident|msie|like gecko/i' => 'trident',
+        '/gecko|firefox|minefield|shiretoko|bonecho|namoroka/i' => 'gecko',
     ];
 
     /**

@@ -114,8 +114,7 @@
       "/p7\\-l10/i": "huawei p7-l10",
       "/p7\\-l09/i": "huawei p7-l09"
     },
-    "/p7 mini/i": "huawei p7 mini",
-    "/p7mini/i": "huawei p7 mini",
+    "/p7 ?mini/i": "huawei p7 mini",
     "/eva\\-/i": {
       "/eva\\-l19/i": "huawei eva-l19",
       "/eva\\-l09/i": "huawei eva-l09"
@@ -222,7 +221,8 @@
       "/h30\\-l01m/i": "huawei h30-l01m",
       "/h30\\-l01/i": "huawei h30-l01",
       "/h30\\-t00/i": "huawei h30-t00",
-      "/h30\\-t10/i": "huawei h30-t10"
+      "/h30\\-t10/i": "huawei h30-t10",
+      "/h30\\-u10/i": "huawei h30-u10"
     },
     "/chm\\-/i": {
       "/chm\\-u01/i": "huawei chm-u01",
@@ -245,12 +245,12 @@
     },
     "/vky\\-/i": {
       "/vky\\-al00/i": "huawei vky-al00",
-      "/vky\\-l29/i": "huawei vky-l29",
-      "/vky\\-l09/i": "huawei vky-l09"
+      "/vky\\-l09/i": "huawei vky-l09",
+      "/vky\\-l29/i": "huawei vky-l29"
     },
     "/ags\\-/i": {
-      "/ags\\-l09/i": "huawei ags-l09",
       "/ags\\-l03/i": "huawei ags-l03",
+      "/ags\\-l09/i": "huawei ags-l09",
       "/ags\\-w09/i": "huawei ags-w09"
     },
     "/bnd\\-/i": {
@@ -319,7 +319,6 @@
     "/y210\\-0100/i": "huawei y210-0100",
     "/w2\\-u00/i": "huawei w2-u00",
     "/w1\\-u00/i": "huawei w1-u00",
-    "/h30\\-u10/i": "huawei h30-u10",
     "/kiw\\-l21/i": "huawei kiw-l21",
     "/lyo\\-l21/i": "huawei lyo-l21",
     "/vodafone 858/i": "huawei vodafone 858",
@@ -347,7 +346,7 @@
     "/u8686/i": "huawei u8686",
     "/prism ii/i": "huawei u8686",
     "/u8667/i": "huawei u8667",
-    "/huawei u8666 build/huaweiu8666e/i": "huawei u8666",
+    "/huawei u8666 build\\/huaweiu8666e/i": "huawei u8666",
     "/u8666e/i": "huawei u8666e",
     "/u8666/i": "huawei u8666",
     "/u8665/i": "huawei u8665",

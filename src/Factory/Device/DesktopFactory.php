@@ -12,13 +12,32 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Helper;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
-use Stringy\Stringy;
 
 class DesktopFactory
 {
+    private $factories = [
+        '/raspbian|debian.*rpi/i' => 'raspberry pi foundation',
+        '/eeepc|np0[26789]|maau|asjb|asu2/i' => 'asus',
+        '/mdd[crs]/i' => 'dell',
+        '/mafs/i' => 'fujitsu',
+        '/maar/i' => 'acer',
+        '/mas[aep]/i' => 'sony',
+        '/masm/i' => 'samsung',
+        '/mal[cn]|lcjb|len2|lenovog780/i' => 'lenovo',
+        '/mat[bmp]|tnjb|tajb/i' => 'toshiba',
+        '/mamd/i' => 'medion',
+        '/mam[i3]/i' => 'msi',
+        '/magw/i' => 'gateway',
+        '/cpdtdf|cpntdf|cmntdf/i' => 'compaq',
+        '/hpcmhp|hpntdf|hpdtdf|hp\-ux 9000/i' => 'hp',
+        '/h9p/i' => 'microsoft',
+        '/surfbook w1/i' => 'trekstor',
+        '/freebsd/i' => 'unknown',
+        '/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i' => 'apple',
+    ];
+
     /**
      * @var \BrowserDetector\Cache\CacheInterface
      */
@@ -51,35 +70,16 @@ class DesktopFactory
     public function __invoke(string $useragent): array
     {
         $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
-        $s             = new Stringy($useragent);
 
-        if ((new Helper\Windows($s))->isWindows()) {
-            $loader = $loaderFactory('windows', 'desktop');
+        foreach ($this->factories as $rule => $company) {
+            if (preg_match($rule, $useragent)) {
+                $loader = $loaderFactory($company, 'desktop');
 
-            return $loader($useragent);
+                return $loader($useragent);
+            }
         }
 
-        if ($s->containsAny(['raspbian', 'eeepc', 'hp-ux 9000'], false)
-            || $s->containsAll(['debian', 'rpi'], false)
-        ) {
-            $loader = $loaderFactory('genericdesktop', 'desktop');
-
-            return $loader($useragent);
-        }
-
-        if ((new Helper\Linux($s))->isLinux()) {
-            $loader = $loaderFactory('linux', 'desktop');
-
-            return $loader($useragent);
-        }
-
-        if ((new Helper\Macintosh($s))->isMacintosh()) {
-            $loader = $loaderFactory('apple', 'desktop');
-
-            return $loader($useragent);
-        }
-
-        $loader = $loaderFactory('generaldesktop', 'desktop');
+        $loader = $loaderFactory('unknown', 'desktop');
 
         return $loader($useragent);
     }

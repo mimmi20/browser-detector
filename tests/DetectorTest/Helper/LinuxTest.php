@@ -23,7 +23,6 @@ class LinuxTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\Linux::isLinux()
      */
     public function testIsLinux(string $agent): void
     {
@@ -68,7 +67,6 @@ class LinuxTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\Linux::isLinux()
      */
     public function testIsNotLinux(string $agent): void
     {

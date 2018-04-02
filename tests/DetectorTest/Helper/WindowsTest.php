@@ -27,7 +27,6 @@ class WindowsTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\Windows::isWindows()
      */
     public function testIsWindows(string $agent): void
     {
@@ -68,7 +67,6 @@ class WindowsTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\Windows::isWindows()
      */
     public function testIsNotWindows(string $agent): void
     {
@@ -116,7 +114,6 @@ class WindowsTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\Windows::isMobileWindows()
      */
     public function testIsMobileWindows(string $agent): void
     {
@@ -143,7 +140,6 @@ class WindowsTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\Windows::isMobileWindows()
      */
     public function testIsNotMobileWindows(string $agent): void
     {

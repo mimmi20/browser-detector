@@ -13,9 +13,6 @@ namespace UserAgentsTest\Factory;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\BrowserFactory;
-use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Loader\BrowserLoader;
-use BrowserDetector\Loader\PlatformLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Simple\FilesystemCache;
@@ -26,27 +23,14 @@ class BrowserFactoryTest extends TestCase
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return void
      */
     protected function setUp(): void
     {
-        $this->markTestSkipped();
-//        $cache  = new FilesystemCache('', 0, 'cache/');
-//        $logger = new NullLogger();
-//        $loader = BrowserLoader::getInstance(new Cache($cache), $logger);
-//
-//        $loader->warmupCache();
-//
-//        $this->object = new BrowserFactory($loader);
-//
-//        $platformLoader = PlatformLoader::getInstance(new Cache($cache), $logger);
-//
-//        $platformLoader->warmupCache();
-//
-//        $this->platformFactory = new PlatformFactory($platformLoader);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+
+        $this->object = new BrowserFactory(new Cache($cache), $logger);
     }
 
     use BrowserTestDetectTrait;

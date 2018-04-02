@@ -35,7 +35,6 @@ class DetectorTest extends TestCase
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
-     * @covers \BrowserDetector\Detector::getBrowser()
      */
     public function testGetBrowserFromUaOld(): void
     {

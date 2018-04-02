@@ -13,7 +13,6 @@ namespace UserAgentsTest\Factory;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Loader\PlatformLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Simple\FilesystemCache;
@@ -31,14 +30,10 @@ class PlatformFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->markTestSkipped();
-//        $cache  = new FilesystemCache('', 0, 'cache/');
-//        $logger = new NullLogger();
-//        $loader = PlatformLoader::getInstance(new Cache($cache), $logger);
-//
-//        $loader->warmupCache();
-//
-//        $this->object = new PlatformFactory($loader);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+
+        $this->object = new PlatformFactory(new Cache($cache), $logger);
     }
 
     use PlatformTestDetectTrait;

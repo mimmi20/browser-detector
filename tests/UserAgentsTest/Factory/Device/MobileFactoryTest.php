@@ -13,7 +13,6 @@ namespace UserAgentsTest\Factory\Device;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Device\MobileFactory;
-use BrowserDetector\Loader\DeviceLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Simple\FilesystemCache;
@@ -36,14 +35,10 @@ class MobileFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->markTestSkipped();
-//        $cache  = new FilesystemCache('', 0, 'cache/');
-//        $logger = new NullLogger();
-//        $loader = DeviceLoader::getInstance(new Cache($cache), $logger);
-//
-//        $loader->warmupCache();
-//
-//        $this->object = new MobileFactory($loader);
+        $cache  = new FilesystemCache('', 0, 'cache/');
+        $logger = new NullLogger();
+
+        $this->object = new MobileFactory(new Cache($cache), $logger);
     }
 
     use DeviceTestDetectTrait;

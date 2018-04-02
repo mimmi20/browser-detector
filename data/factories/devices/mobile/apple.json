@@ -93,7 +93,9 @@
     "/iphone2,1/i": "apple iphone 2,1",
     "/iphone1,2/i": "apple iphone 1,2",
     "/iphone1,1/i": "apple iphone 1,1",
-    "/iph/i": "apple iphone"
+    "/iph/i": "apple iphone",
+    "/Puffin\\/[\\d\\.]+IP/": "apple iphone",
+    "/Puffin\\/[\\d\\.]+IT/": "apple ipad"
   },
   "generic": "general apple device"
 }

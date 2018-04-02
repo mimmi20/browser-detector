@@ -18,10 +18,26 @@ use Psr\Log\LoggerInterface;
 class TvFactory
 {
     private $factories = [
-        '/KDL\d{2}/'               => 'sony',
-        '/nsz-gs7\/gx70|sonydtv/i' => 'sony',
-        '/THOMSON|LF1V/'           => 'thomson',
-        '/philips|avm\-/i'         => 'philips',
+        '/kdl\d{2}|nsz\-gs7\/gx70|sonydtv|netbox/i' => 'sony',
+        '/THOMSON|LF1V/' => 'thomson',
+        '/philips|avm\-/i' => 'philips',
+        '/xbox/i' => 'microsoft',
+        '/crkey/i' => 'google',
+        '/dlink\.dsm380/i' => 'dlink',
+        '/sl150|sl32x|sl121/i' => 'loewe',
+        '/digio i33\-hd\+/i' => 'telestar',
+        '/aldinord/i' => 'aldi-nord',
+        '/cx919|gxt_dongle_3188/i' => 'andoer',
+        '/technisat/i' => 'technisat',
+        '/;metz;/i' => 'metz',
+        '/;tcl;/i' => 'tcl',
+        '/;aston;/i' => 'aston',
+        '/;arcelik;/i' => 'arcelik',
+        '/;mstar;/i' => 'mstar',
+        '/mxl661l32|smart\-tv/i' => 'samsung',
+        '/viera/i' => 'panasonic',
+        '/apple tv/i' => 'apple',
+        '/netrangemmh/i' => 'netrange',
     ];
 
     /**
@@ -57,15 +73,15 @@ class TvFactory
     {
         $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
 
-        foreach ($this->factories as $rule => $factoryName) {
+        foreach ($this->factories as $rule => $company) {
             if (preg_match($rule, $useragent)) {
-                $loader = $loaderFactory($factoryName, 'tv');
+                $loader = $loaderFactory($company, 'tv');
 
                 return $loader($useragent);
             }
         }
 
-        $loader = $loaderFactory('generictv', 'tv');
+        $loader = $loaderFactory('unknown', 'tv');
 
         return $loader($useragent);
     }

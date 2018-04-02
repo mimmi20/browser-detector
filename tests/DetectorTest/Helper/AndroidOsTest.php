@@ -27,7 +27,6 @@ class AndroidOsTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\AndroidOs::isAndroid()
      */
     public function testIsAndroidOs(string $agent): void
     {
@@ -54,7 +53,6 @@ class AndroidOsTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\AndroidOs::isAndroid()
      */
     public function testIsNotAndroidOs(string $agent): void
     {

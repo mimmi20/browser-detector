@@ -27,7 +27,6 @@ class FirefoxOsTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\FirefoxOs::isFirefoxOs()
      */
     public function testIsFirefoxOs(string $agent): void
     {
@@ -52,7 +51,6 @@ class FirefoxOsTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\FirefoxOs::isFirefoxOs()
      */
     public function testIsNotFirefoxOs(string $agent): void
     {

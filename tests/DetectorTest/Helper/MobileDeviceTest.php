@@ -27,7 +27,6 @@ class MobileDeviceTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\MobileDevice::isMobile()
      */
     public function testIsMobile(string $agent): void
     {
@@ -110,7 +109,6 @@ class MobileDeviceTest extends TestCase
      * @param string $agent
      *
      * @return void
-     * @covers \BrowserDetector\Helper\MobileDevice::isMobile()
      */
     public function testIsNotMobile(string $agent): void
     {

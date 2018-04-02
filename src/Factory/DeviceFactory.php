@@ -14,7 +14,7 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
-use BrowserDetector\Helper\Tv as TvHelper;
+use BrowserDetector\Helper\Tv;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
@@ -71,7 +71,7 @@ class DeviceFactory implements DeviceFactoryInterface
             return $factory($useragent);
         }
 
-        if ((new TvHelper($s))->isTvDevice()) {
+        if ((new Tv($s))->isTvDevice()) {
             $factory = new Device\TvFactory($this->cache, $this->logger);
 
             return $factory($useragent);
