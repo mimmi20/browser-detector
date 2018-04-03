@@ -34,7 +34,9 @@ class AndroidOs implements VersionCacheFactoryInterface
             'linux; googletv',
             'android ouya',
             'android os',
-            'android[;_ \/]?',
+            'android[;_ ]',
+            'android\/',
+            'android',
             'adr ',
         ];
 
