@@ -453,6 +453,15 @@
       ]
     }
   },
+  "raspbian": {
+    "name": "Raspbian",
+    "marketingName": "Raspbian",
+    "manufacturer": "SoftwareInThePublicInterest",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\Raspbian",
+      "search": null
+    }
+  },
   "redhat linux": {
     "name": "Redhat Linux",
     "marketingName": "Redhat Linux",
@@ -648,6 +657,17 @@
         "WebOS",
         "webOS",
         "hpwOS"
+      ]
+    }
+  },
+  "lg webos": {
+    "name": "webOS",
+    "marketingName": "webOS",
+    "manufacturer": "LG",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Web0S"
       ]
     }
   },

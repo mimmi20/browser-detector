@@ -18,9 +18,6 @@ use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 use UserAgentsTest\Factory\DeviceTestDetectTrait;
 
-/**
- * Test class for \BrowserDetector\Detector\Device\Tv\GeneralTv
- */
 class TvFactoryTest extends TestCase
 {
     /**

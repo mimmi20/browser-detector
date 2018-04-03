@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use BrowserDetector\Helper\Safari as SafariHelper;
+use BrowserDetector\Version\Helper\Safari as SafariHelper;
 
 class AndroidWebkit implements VersionCacheFactoryInterface
 {
@@ -29,15 +29,16 @@ class AndroidWebkit implements VersionCacheFactoryInterface
         $doMatch = preg_match('/Version\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
+            return VersionFactory::set($safariHelper->mapSafariVersion($matches[1]));
         }
 
         $doMatch = preg_match('/Safari\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
+            return VersionFactory::set($safariHelper->mapSafariVersion($matches[1]));
         }
 
-        return VersionFactory::detectVersion($useragent, ['Version', 'Safari', 'JUC \(Linux\; U\;']);
+        //return VersionFactory::detectVersion($useragent, ['Version', 'Safari', 'JUC \(Linux\; U\;']);
+        return VersionFactory::set('0');
     }
 }

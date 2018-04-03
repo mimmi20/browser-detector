@@ -11,9 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use Stringy\Stringy;
-
-class Debian implements VersionCacheFactoryInterface
+class Raspbian implements VersionCacheFactoryInterface
 {
     /**
      * returns the version of the operating system/platform
@@ -24,12 +22,14 @@ class Debian implements VersionCacheFactoryInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $s = new Stringy($useragent);
-
-        if ($s->contains('squeeze', false)) {
-            return VersionFactory::set('6.0');
+        if (preg_match('/raspbian\/([\d\.]+)/i', $useragent, $matches)) {
+            return VersionFactory::set($matches[1]);
         }
 
-        return VersionFactory::detectVersion($useragent, ['kFreeBSD', 'Debian']);
+        if (preg_match('/debian\/([\d\.]+).*rpi/i', $useragent, $matches)) {
+            return VersionFactory::set($matches[1]);
+        }
+
+        return VersionFactory::set('0');
     }
 }

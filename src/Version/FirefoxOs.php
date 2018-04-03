@@ -26,6 +26,10 @@ class FirefoxOs implements VersionCacheFactoryInterface
 
         $version = (float) $matches[1];
 
+        if (44.0 <= $version) {
+            return new Version('2', '5');
+        }
+
         if (37.0 <= $version) {
             return new Version('2', '2');
         }

@@ -13,9 +13,6 @@ namespace UserAgentsTest\Factory;
 
 use UaResult\Device\DeviceInterface;
 
-/**
- * Test class for \BrowserDetector\Factory\Device\Desktop\AppleFactory
- */
 trait DeviceTestDetectTrait
 {
     /**

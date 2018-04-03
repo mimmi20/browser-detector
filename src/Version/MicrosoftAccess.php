@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
+use BrowserDetector\Version\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 
 class MicrosoftAccess implements VersionCacheFactoryInterface
 {
@@ -27,7 +27,7 @@ class MicrosoftAccess implements VersionCacheFactoryInterface
         $doMatch = preg_match('/Access[\/ ]([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set((new MicrosoftOfficeHelper())->mapVersion($matches[1]));
+            return VersionFactory::set((new MicrosoftOfficeHelper())->mapOfficeVersion($matches[1]));
         }
 
         return VersionFactory::set('0.0');

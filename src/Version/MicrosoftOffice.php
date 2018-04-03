@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
+use BrowserDetector\Version\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 
 class MicrosoftOffice implements VersionCacheFactoryInterface
 {
@@ -26,6 +26,42 @@ class MicrosoftOffice implements VersionCacheFactoryInterface
     {
         $helper = new MicrosoftOfficeHelper();
 
-        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($useragent)));
+        return VersionFactory::set($helper->mapOfficeVersion($this->detectInternalVersion($useragent)));
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @param string $useragent
+     *
+     * @return string
+     */
+    private function detectInternalVersion(string $useragent): string
+    {
+        $doMatch = preg_match('/MSOffice ([\d\.]+)/', $useragent, $matches);
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match('/Office\/([\d\.]+)/i', $useragent, $matches);
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match('/Office Mobile\/([\d\.]+)/i', $useragent, $matches);
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match('/Office Mobile for Symbian\/([\d\.]+)/i', $useragent, $matches);
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        return '0';
     }
 }

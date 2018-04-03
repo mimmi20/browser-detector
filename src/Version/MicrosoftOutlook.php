@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
+use BrowserDetector\Version\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 
 class MicrosoftOutlook implements VersionCacheFactoryInterface
 {
@@ -29,13 +29,13 @@ class MicrosoftOutlook implements VersionCacheFactoryInterface
         $helper = new MicrosoftOfficeHelper();
 
         if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
+            return VersionFactory::set($helper->mapOfficeVersion($matches[1]));
         }
 
         $doMatch = preg_match('/microsoft outlook ([\d\.]+)/i', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
+            return VersionFactory::set($helper->mapOfficeVersion($matches[1]));
         }
 
         return VersionFactory::set('0.0');
