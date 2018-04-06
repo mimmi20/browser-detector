@@ -23,9 +23,15 @@ class Maxthon implements VersionCacheFactoryInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         if (false !== mb_strpos($useragent, 'MyIE2')) {
-            return VersionFactory::set('2.0');
+            return (new VersionFactory())->set('2.0');
         }
 
-        return VersionFactory::detectVersion($useragent, ['MxBrowser\\-iPhone', 'Maxthon', 'MxBrowser', 'Version']);
+        if (false !== mb_strpos($useragent, 'MyIE')) {
+            $versionFactory = new VersionFactory('/^v?(?<major>\d+)(?:[-|\.](?<minor>\d+))?(?:[-|\.](?<micro>\d+))?(?:[-|\.](?<patch>\d+))?(?:[-|\.](?<micropatch>\d+))?(?:[-_.+ ]?(?<stability>rc|alpha|a|beta|b|patch|pl?|stable|dev|d)[-_.+ ]?(?<build>\d*))?.*$/i');
+
+            return $versionFactory->detectVersion($useragent, ['MyIE']);
+        }
+
+        return (new VersionFactory())->detectVersion($useragent, ['MxBrowser\\-iPhone', 'Maxthon', 'MxBrowser', 'Version']);
     }
 }

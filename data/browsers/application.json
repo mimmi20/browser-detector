@@ -34,8 +34,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftAccess",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Access"
+      ]
     },
     "engine": "unknown"
   },
@@ -276,21 +278,6 @@
     },
     "engine": "unknown"
   },
-  "coremedia": {
-    "name": "CoreMedia",
-    "manufacturer": "Apple",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "CoreMedia v",
-        "AppleCoreMedia"
-      ]
-    },
-    "engine": "webkit"
-  },
   "coursera mobile app": {
     "name": "Coursera Mobile App",
     "manufacturer": "Coursera",
@@ -462,8 +449,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftExcel",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Excel"
+      ]
     },
     "engine": "unknown"
   },
@@ -548,8 +537,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftFrontPage",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "FrontPage"
+      ]
     },
     "engine": "unknown"
   },
@@ -752,8 +743,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftLync",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Lync"
+      ]
     },
     "engine": "unknown"
   },
@@ -820,8 +813,13 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftOffice",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Office Mobile for Symbian",
+        "Office Mobile",
+        "MSOffice",
+        "Office"
+      ]
     },
     "engine": null
   },
@@ -832,8 +830,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftOfficeSyncProc",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Office SyncProc"
+      ]
     },
     "engine": null
   },
@@ -844,8 +844,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftOfficeUploadCenter",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Office Upload Center"
+      ]
     },
     "engine": null
   },
@@ -870,8 +872,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftOneNote",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "OneNote"
+      ]
     },
     "engine": null
   },
@@ -954,8 +958,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftPowerPoint",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "PowerPoint"
+      ]
     },
     "engine": null
   },
@@ -1285,8 +1291,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftVisio",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Visio"
+      ]
     },
     "engine": null
   },
@@ -1407,8 +1415,10 @@
     "rssSupport": false,
     "type": "application",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftWord",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Word"
+      ]
     },
     "engine": null
   },

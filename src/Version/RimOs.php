@@ -23,7 +23,7 @@ class RimOs implements VersionCacheFactoryInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         if (false !== mb_stripos($useragent, 'bb10') && false === mb_stripos($useragent, 'version')) {
-            return VersionFactory::set('10.0.0');
+            return (new VersionFactory())->set('10.0.0');
         }
 
         $searches = ['BlackBerry[0-9a-z]+', 'BlackBerry; [0-9a-z]+\/', 'BlackBerrySimulator'];
@@ -32,6 +32,6 @@ class RimOs implements VersionCacheFactoryInterface
             array_unshift($searches, 'Version');
         }
 
-        return VersionFactory::detectVersion($useragent, $searches);
+        return (new VersionFactory())->detectVersion($useragent, $searches);
     }
 }

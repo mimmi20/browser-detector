@@ -214,7 +214,7 @@ class EngineLoader implements EngineLoaderInterface
         if (!is_string($engineVersionClass)) {
             $version = new Version('0');
         } elseif ('VersionFactory' === $engineVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $engine->version->search);
+            $version = (new VersionFactory())->detectVersion($useragent, $engine->version->search);
         } else {
             /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
             $versionClass = new $engineVersionClass();

@@ -23,13 +23,13 @@ class Raspbian implements VersionCacheFactoryInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         if (preg_match('/raspbian\/([\d\.]+)/i', $useragent, $matches)) {
-            return VersionFactory::set($matches[1]);
+            return (new VersionFactory())->set($matches[1]);
         }
 
         if (preg_match('/debian\/([\d\.]+).*rpi/i', $useragent, $matches)) {
-            return VersionFactory::set($matches[1]);
+            return (new VersionFactory())->set($matches[1]);
         }
 
-        return VersionFactory::set('0');
+        return (new VersionFactory())->set('0');
     }
 }

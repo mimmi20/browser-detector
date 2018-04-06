@@ -26,17 +26,17 @@ class Goanna implements VersionCacheFactoryInterface
         $doMatch = preg_match('/Goanna\/([\d\.]+)/', $useragent, $matchesFirst);
 
         if ($doMatch && 2015 > mb_substr($matchesFirst[1], 0, 4)) {
-            return VersionFactory::set($matchesFirst[1]);
+            return (new VersionFactory())->set($matchesFirst[1]);
         }
 
         // second version: version on "rv:" token
         $doMatch = preg_match('/rv\:([\d\.]+)/', $useragent, $matchesSecond);
 
         if ($doMatch && (false === mb_stripos($useragent, 'gecko') || 2 >= mb_substr($matchesSecond[1], 0, 4))) {
-            return VersionFactory::set($matchesSecond[1]);
+            return (new VersionFactory())->set($matchesSecond[1]);
         }
 
         // first version: uses gecko version
-        return VersionFactory::set('1.0');
+        return (new VersionFactory())->set('1.0');
     }
 }

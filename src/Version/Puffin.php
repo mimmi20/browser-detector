@@ -11,9 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use BrowserDetector\Version\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
-
-class MicrosoftOneNote implements VersionCacheFactoryInterface
+class Puffin implements VersionCacheFactoryInterface
 {
     /**
      * returns the version of the operating system/platform
@@ -24,12 +22,10 @@ class MicrosoftOneNote implements VersionCacheFactoryInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = preg_match('/OneNote[\/ ]([\d\.]+)/', $useragent, $matches);
-
-        if ($doMatch) {
-            return VersionFactory::set((new MicrosoftOfficeHelper())->mapOfficeVersion($matches[1]));
+        if (preg_match('/(?:Puffin%20Free|Puffin)\/([\d\.]+)/', $useragent, $matches)) {
+            return (new VersionFactory())->set($matches[1]);
         }
 
-        return VersionFactory::set('0.0');
+        return (new VersionFactory())->set('0');
     }
 }

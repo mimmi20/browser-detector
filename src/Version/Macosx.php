@@ -26,15 +26,23 @@ class Macosx implements VersionCacheFactoryInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $matches = [];
+        $doMatch = preg_match('/\((?:build )?(\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
 
-        $doMatch = preg_match('/\((build )?(\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
-
-        if ($doMatch && isset($matches[2])) {
-            $buildVersion = OSXbuild::getVersion($matches[2]);
+        if ($doMatch && isset($matches[1])) {
+            $buildVersion = OSXbuild::getVersion($matches[1]);
 
             if (false !== $buildVersion) {
-                return VersionFactory::set($buildVersion);
+                return (new VersionFactory())->set($buildVersion);
+            }
+        }
+
+        $doMatch = preg_match('/coremedia v\d+\.\d+\.\d+\.(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+
+        if ($doMatch && isset($matches[1])) {
+            $buildVersion = OSXbuild::getVersion($matches[1]);
+
+            if (false !== $buildVersion) {
+                return (new VersionFactory())->set($buildVersion);
             }
         }
 
@@ -81,13 +89,30 @@ class Macosx implements VersionCacheFactoryInterface
 
             foreach ($searches as $rule => $version) {
                 if (preg_match($rule, $useragent)) {
-                    return VersionFactory::set($version);
+                    return (new VersionFactory())->set($version);
                 }
             }
         }
 
         $searches = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
-        return VersionFactory::detectVersion($useragent, $searches);
+        $detectedVersion = (new VersionFactory())->detectVersion($useragent, $searches);
+
+        if (99 < $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR)) {
+            $versions = [];
+            $found    = preg_match('/(\d{2})(\d)(\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions);
+
+            if ($found) {
+                $version = $versions[1] . '.' . $versions[2];
+
+                if (isset($versions[3])) {
+                    $version .= '.' . $versions[3];
+                }
+
+                return (new VersionFactory())->set($version);
+            }
+        }
+
+        return $detectedVersion;
     }
 }

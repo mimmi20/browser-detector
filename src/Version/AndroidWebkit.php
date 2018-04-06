@@ -29,16 +29,16 @@ class AndroidWebkit implements VersionCacheFactoryInterface
         $doMatch = preg_match('/Version\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersion($matches[1]));
+            return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches[1]));
         }
 
         $doMatch = preg_match('/Safari\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersion($matches[1]));
+            return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches[1]));
         }
 
-        //return VersionFactory::detectVersion($useragent, ['Version', 'Safari', 'JUC \(Linux\; U\;']);
-        return VersionFactory::set('0');
+        //return (new VersionFactory())->detectVersion($useragent, ['Version', 'Safari', 'JUC \(Linux\; U\;']);
+        return (new VersionFactory())->set('0');
     }
 }

@@ -217,7 +217,7 @@ class BrowserLoader implements ExtendedLoaderInterface
         if (!is_string($browserVersionClass)) {
             $version = new Version('0');
         } elseif ('VersionFactory' === $browserVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $browserData->version->search);
+            $version = (new VersionFactory())->detectVersion($useragent, $browserData->version->search);
         } else {
             /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
             $versionClass = new $browserVersionClass();

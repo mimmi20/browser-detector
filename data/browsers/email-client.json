@@ -144,8 +144,11 @@
     "rssSupport": false,
     "type": "email-client",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftOutlook",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "microsoft office outlook",
+        "microsoft outlook"
+      ]
     },
     "engine": null
   },
@@ -156,8 +159,12 @@
     "rssSupport": false,
     "type": "email-client",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftOutlook",
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "outlook social connector",
+        "microsoft office outlook",
+        "microsoft outlook"
+      ]
     },
     "engine": "unknown"
   },

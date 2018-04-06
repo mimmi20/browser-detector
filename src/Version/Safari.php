@@ -29,13 +29,13 @@ class Safari implements VersionCacheFactoryInterface
         $doMatch = preg_match('/Version\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersion($matches[1]));
+            return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches[1]));
         }
 
         $doMatch = preg_match('/Safari\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersion($matches[1]));
+            return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches[1]));
         }
 
         return new Version('0');

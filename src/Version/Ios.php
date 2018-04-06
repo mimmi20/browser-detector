@@ -27,10 +27,8 @@ class Ios implements VersionCacheFactoryInterface
         $doMatch = preg_match('/CPU like Mac OS X/', $useragent);
 
         if ($doMatch) {
-            return VersionFactory::set('1.0');
+            return (new VersionFactory())->set('1.0');
         }
-
-        $matches = [];
 
         $doMatch = preg_match('/mobile\/(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
@@ -38,7 +36,17 @@ class Ios implements VersionCacheFactoryInterface
             $buildVersion = iOSbuild::getVersion($matches[1]);
 
             if (false !== $buildVersion) {
-                return VersionFactory::set($buildVersion);
+                return (new VersionFactory())->set($buildVersion);
+            }
+        }
+
+        $doMatch = preg_match('/applecoremedia\/\d+\.\d+\.\d+\.(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+
+        if ($doMatch && isset($matches[1])) {
+            $buildVersion = iOSbuild::getVersion($matches[1]);
+
+            if (false !== $buildVersion) {
+                return (new VersionFactory())->set($buildVersion);
             }
         }
 
@@ -77,15 +85,14 @@ class Ios implements VersionCacheFactoryInterface
 
             foreach ($searches as $rule => $version) {
                 if (preg_match($rule, $useragent)) {
-                    return VersionFactory::set($version);
+                    return (new VersionFactory())->set($version);
                 }
             }
         }
 
         $searches = [
             'IphoneOSX',
-            'CPU OS\_',
-            'CPU OS',
+            'CPU OS_?',
             'CPU iOS',
             'CPU iPad OS',
             'iPhone OS\;FBSV',
@@ -97,19 +104,10 @@ class Ios implements VersionCacheFactoryInterface
             'iOS',
         ];
 
-        $detectedVersion = VersionFactory::detectVersion($useragent, $searches);
-
-        if (99 < $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR)) {
-            $versions = [];
-            $found    = preg_match('/(\d)(\d)(\d)/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions);
-
-            if ($found) {
-                return VersionFactory::set($versions[1] . '.' . $versions[2] . '.' . $versions[3]);
-            }
-        }
+        $detectedVersion = (new VersionFactory())->detectVersion($useragent, $searches);
 
         if ('10.10' === $detectedVersion->getVersion(VersionInterface::IGNORE_MICRO)) {
-            return VersionFactory::set('8.0.0');
+            return (new VersionFactory())->set('8.0.0');
         }
 
         return $detectedVersion;

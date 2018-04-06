@@ -1,4 +1,16 @@
 {
+  "coremedia": {
+    "name": "CoreMedia",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\CoreMedia",
+      "search": null
+    },
+    "engine": "webkit"
+  },
   "elmedia player": {
     "name": "Elmedia Player",
     "manufacturer": "EltimaSoftware",

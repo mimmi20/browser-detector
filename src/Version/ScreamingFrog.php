@@ -31,6 +31,6 @@ class ScreamingFrog implements VersionCacheFactoryInterface
             $useragent = str_replace(',', '.', $useragent);
         }
 
-        return VersionFactory::detectVersion($useragent, ['Screaming Frog SEO Spider']);
+        return (new VersionFactory())->detectVersion($useragent, ['Screaming Frog SEO Spider']);
     }
 }

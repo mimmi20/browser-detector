@@ -2626,11 +2626,8 @@
     "rssSupport": false,
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Puffin",
-        "Puffin%20Free"
-      ]
+      "class": "\\BrowserDetector\\Version\\Puffin",
+      "search": null
     },
     "engine": "webkit"
   },

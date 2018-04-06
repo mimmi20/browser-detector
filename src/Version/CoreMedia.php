@@ -11,9 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use BrowserDetector\Version\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
-
-class MicrosoftAccess implements VersionCacheFactoryInterface
+class CoreMedia implements VersionCacheFactoryInterface
 {
     /**
      * returns the version of the operating system/platform
@@ -24,12 +22,12 @@ class MicrosoftAccess implements VersionCacheFactoryInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = preg_match('/Access[\/ ]([\d\.]+)/', $useragent, $matches);
+        $doMatch = preg_match('/(?:CoreMedia v|AppleCoreMedia\/)(\d+)\.(\d+)\.(\d+)/', $useragent, $matchesFirst);
 
         if ($doMatch) {
-            return VersionFactory::set((new MicrosoftOfficeHelper())->mapOfficeVersion($matches[1]));
+            return (new VersionFactory())->set($matchesFirst[1] . '.' . $matchesFirst[2] . '.' . $matchesFirst[3]);
         }
 
-        return VersionFactory::set('0.0');
+        return (new VersionFactory())->set('0');
     }
 }

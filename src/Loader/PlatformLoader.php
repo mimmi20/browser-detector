@@ -213,11 +213,11 @@ class PlatformLoader
         $platformVersionClass = $platform->version->class;
 
         if (!is_string($platformVersionClass) && isset($platform->version->value) && is_numeric($platform->version->value)) {
-            $version = VersionFactory::set((string) $platform->version->value);
+            $version = (new VersionFactory())->set((string) $platform->version->value);
         } elseif (!is_string($platformVersionClass)) {
             $version = new Version('0');
         } elseif ('VersionFactory' === $platformVersionClass) {
-            $version = VersionFactory::detectVersion($useragent, $platform->version->search);
+            $version = (new VersionFactory())->detectVersion($useragent, $platform->version->search);
         } else {
             /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
             $versionClass = new $platformVersionClass();
