@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Factory\BrowserFactoryInterface;
-use BrowserDetector\Factory\DeviceFactory;
+use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Factory\PlatformFactoryInterface;
 use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
@@ -63,14 +63,14 @@ class Detector
      * sets the cache used to make the detection faster
      *
      * @param \Psr\Log\LoggerInterface                          $logger
-     * @param \BrowserDetector\Factory\DeviceFactory            $deviceFactory
+     * @param \BrowserDetector\Factory\DeviceFactoryInterface   $deviceFactory
      * @param \BrowserDetector\Factory\PlatformFactoryInterface $platformFactory
      * @param \BrowserDetector\Factory\BrowserFactoryInterface  $browserFactory
      * @param \BrowserDetector\Loader\EngineLoaderInterface     $engineLoader
      */
     public function __construct(
         LoggerInterface $logger,
-        DeviceFactory $deviceFactory,
+        DeviceFactoryInterface $deviceFactory,
         PlatformFactoryInterface $platformFactory,
         BrowserFactoryInterface $browserFactory,
         EngineLoaderInterface $engineLoader

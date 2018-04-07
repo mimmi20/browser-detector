@@ -68,6 +68,10 @@ class ObigoQTest extends TestCase
                 'LG-GT505/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1',
                 '7.1.0',
             ],
+            [
+                'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
+                '0.0.0',
+            ],
         ];
     }
 }
