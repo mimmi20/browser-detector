@@ -12,31 +12,58 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Cache\Cache;
-use BrowserDetector\Loader\PlatformLoader;
+use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Loader\PlatformLoaderFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Exception\InvalidArgumentException;
-use Symfony\Component\Cache\Simple\FilesystemCache;
 
 class PlatformLoaderTest extends TestCase
 {
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \ReflectionException
      *
      * @return void
      */
     public function testLoadNotAvailable(): void
     {
         $this->markTestSkipped();
-//        $this->expectException('\BrowserDetector\Loader\NotFoundException');
-//        $this->expectExceptionMessage('the platform with key "does not exist" was not found');
-//
-//        $cache  = new FilesystemCache('', 0, 'cache/');
-//        $logger = new NullLogger();
-//
-//        $object = PlatformLoader::getInstance(new Cache($cache), $logger);
-//
-//        $object->load('does not exist', 'test-ua');
+        /** @var NullLogger $logger */
+        $logger = $this->createMock(NullLogger::class);
+
+        /** @var Cache $cache */
+        $cache = $this->createMock(Cache::class);
+
+        $factory = new PlatformLoaderFactory($cache, $logger);
+        $object  = $factory('unknown');
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionMessage('the platform with key "does not exist" was not found');
+
+        $object->load('does not exist', 'test-ua');
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \ReflectionException
+     *
+     * @return void
+     */
+    public function testInvoke(): void
+    {
+        $this->markTestSkipped();
+        /** @var NullLogger $logger */
+        $logger = $this->createMock(NullLogger::class);
+
+        /** @var Cache $cache */
+        $cache = $this->createMock(Cache::class);
+
+        $factory = new PlatformLoaderFactory($cache, $logger);
+        $object  = $factory('unknown');
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionMessage('the platform with key "does not exist" was not found');
+
+        $object('test-ua');
     }
 
     /**

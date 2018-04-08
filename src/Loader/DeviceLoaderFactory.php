@@ -13,6 +13,8 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;
+use Seld\JsonLint\JsonParser;
+use Symfony\Component\Finder\Finder;
 
 class DeviceLoaderFactory
 {
@@ -49,7 +51,25 @@ class DeviceLoaderFactory
         $key = sprintf('%s::%s', $company, $mode);
 
         if (!array_key_exists($key, $loaders)) {
-            $loader = new DeviceLoader($this->cache, $this->logger, $company, $mode);
+            $dataPath  = __DIR__ . '/../../data/devices/' . $company;
+            $rulesPath = __DIR__ . '/../../data/factories/devices/' . $mode . '/' . $company . '.json';
+
+            $finder = new Finder();
+            $finder->files();
+            $finder->name('*.json');
+            $finder->ignoreDotFiles(true);
+            $finder->ignoreVCS(true);
+            $finder->ignoreUnreadableDirs();
+            $finder->in($dataPath);
+
+            $loader = new DeviceLoader(
+                $this->cache,
+                $this->logger,
+                $finder,
+                new JsonParser(),
+                $dataPath,
+                $rulesPath
+            );
 
             $loaders[$key] = $loader;
         }

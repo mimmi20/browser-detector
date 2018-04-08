@@ -13,6 +13,8 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;
+use Seld\JsonLint\JsonParser;
+use Symfony\Component\Finder\Finder;
 
 class EngineLoaderFactory
 {
@@ -44,7 +46,25 @@ class EngineLoaderFactory
         static $loader = null;
 
         if (null === $loader) {
-            $loader = new EngineLoader($this->cache, $this->logger);
+            $dataPath  = __DIR__ . '/../../data/engines';
+            $rulesPath = __DIR__ . '/../../data/factories/engines.json';
+
+            $finder = new Finder();
+            $finder->files();
+            $finder->name('*.json');
+            $finder->ignoreDotFiles(true);
+            $finder->ignoreVCS(true);
+            $finder->ignoreUnreadableDirs();
+            $finder->in($dataPath);
+
+            $loader = new EngineLoader(
+                $this->cache,
+                $this->logger,
+                $finder,
+                new JsonParser(),
+                $dataPath,
+                $rulesPath
+            );
         }
 
         return $loader;

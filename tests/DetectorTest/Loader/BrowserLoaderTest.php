@@ -13,28 +13,81 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\BrowserLoader;
+use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
+use Seld\JsonLint\JsonParser;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
-use Symfony\Component\Cache\Simple\FilesystemCache;
+use Symfony\Component\Finder\Finder;
 
 class BrowserLoaderTest extends TestCase
 {
     /**
+     * @throws \ReflectionException
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
-    public function testLoadNotAvailable(): void
+    public function testInvoke(): void
     {
         $this->markTestSkipped();
-//        $this->expectException('\BrowserDetector\Loader\NotFoundException');
-//        $this->expectExceptionMessage('the browser with key "does not exist" was not found');
-//
-//        $cache  = new FilesystemCache('', 0, 'cache/');
-//        $logger = new NullLogger();
-//
-//        $object = BrowserLoader::getInstance(new Cache($cache), $logger);
-//
-//        $object->load('does not exist', 'test-ua');
+        $logger = $this->createMock(NullLogger::class);
+
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem'])
+            ->getMock();
+
+        $map = [
+            ['browser_default__initialized', true],
+            ['browser_default__generic-browser', true],
+        ];
+
+        $cache
+            ->expects(self::any())
+            ->method('hasItem')
+            ->will(self::returnValueMap($map));
+
+        $map = [
+            ['browser_default__initialized', true],
+            ['browser_default__rules', []],
+            ['browser_default__generic', 'generic-browser'],
+            ['browser_default__generic-browser', null],
+        ];
+
+        $cache
+            ->expects(self::any())
+            ->method('getItem')
+            ->will(self::returnValueMap($map));
+
+        $finder = $this->getMockBuilder(Finder::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['in'])
+            ->getMock();
+        $finder
+            ->expects(self::any())
+            ->method('in')
+            ->will(self::returnSelf());
+
+        $jsonParser = $this->createMock(JsonParser::class);
+
+        /** @var Cache $cache */
+        /** @var NullLogger $logger */
+        /** @var Finder $finder */
+        /** @var JsonParser $jsonParser */
+        $object = new BrowserLoader(
+            $cache,
+            $logger,
+            $finder,
+            $jsonParser,
+            'default',
+            ''
+        );
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionMessage('the browser with key "does not exist" was not found');
+
+        $object('test-ua');
     }
 
     /**

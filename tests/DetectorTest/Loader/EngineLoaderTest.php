@@ -13,28 +13,59 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\EngineLoaderFactory;
+use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
-use Symfony\Component\Cache\Simple\FilesystemCache;
 
 class EngineLoaderTest extends TestCase
 {
     /**
+     * @throws \ReflectionException
+     *
      * @return void
      */
     public function testLoadNotAvailable(): void
     {
         $this->markTestSkipped();
-//        $this->expectException('\BrowserDetector\Loader\NotFoundException');
-//        $this->expectExceptionMessage('the engine with key "does not exist" was not found');
-//
-//        $cache  = new FilesystemCache('', 0, 'cache/');
-//        $logger = new NullLogger();
-//
-//        $object = EngineLoader::getInstance(new Cache($cache), $logger);
-//
-//        $object->load('does not exist', 'test-ua');
+        /** @var NullLogger $logger */
+        $logger = $this->createMock(NullLogger::class);
+
+        /** @var Cache $cache */
+        $cache = $this->createMock(Cache::class);
+
+        $factory = new EngineLoaderFactory($cache, $logger);
+        $object  = $factory();
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionMessage('the engine with key "does not exist" was not found');
+
+        $object->load('does not exist', 'test-ua');
+    }
+
+    /**
+     * @throws \ReflectionException
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testInvoke(): void
+    {
+        $this->markTestSkipped();
+        /** @var NullLogger $logger */
+        $logger = $this->createMock(NullLogger::class);
+
+        /** @var Cache $cache */
+        $cache = $this->createMock(Cache::class);
+
+        $factory = new EngineLoaderFactory($cache, $logger);
+        $object  = $factory();
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionMessage('the engine with key "does not exist" was not found');
+
+        $object('test-ua');
     }
 
     /**

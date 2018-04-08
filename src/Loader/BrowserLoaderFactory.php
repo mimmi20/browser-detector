@@ -13,6 +13,8 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Cache\CacheInterface;
 use Psr\Log\LoggerInterface;
+use Seld\JsonLint\JsonParser;
+use Symfony\Component\Finder\Finder;
 
 class BrowserLoaderFactory
 {
@@ -46,7 +48,25 @@ class BrowserLoaderFactory
         static $loaders = [];
 
         if (!array_key_exists($mode, $loaders)) {
-            $loader = new BrowserLoader($this->cache, $this->logger, $mode);
+            $dataPath  = __DIR__ . '/../../data/browsers';
+            $rulesPath = __DIR__ . '/../../data/factories/browsers/' . $mode . '.json';
+
+            $finder = new Finder();
+            $finder->files();
+            $finder->name('*.json');
+            $finder->ignoreDotFiles(true);
+            $finder->ignoreVCS(true);
+            $finder->ignoreUnreadableDirs();
+            $finder->in($dataPath);
+
+            $loader = new BrowserLoader(
+                $this->cache,
+                $this->logger,
+                $finder,
+                new JsonParser(),
+                $dataPath,
+                $rulesPath
+            );
 
             $loaders[$mode] = $loader;
         }

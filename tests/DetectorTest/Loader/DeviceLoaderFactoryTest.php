@@ -33,11 +33,11 @@ class DeviceLoaderFactoryTest extends TestCase
         $cache = $this->createMock(Cache::class);
 
         $factory = new DeviceLoaderFactory($cache, $logger);
-        $object  = $factory('default', 'default');
+        $object  = $factory('unknown', 'default');
 
         self::assertInstanceOf(DeviceLoader::class, $object);
 
-        $objectTwo = $factory('default', 'default');
+        $objectTwo = $factory('unknown', 'default');
 
         self::assertInstanceOf(DeviceLoader::class, $objectTwo);
         self::assertSame($objectTwo, $object);

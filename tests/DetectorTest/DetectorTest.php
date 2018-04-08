@@ -90,6 +90,11 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         /* @var \UaResult\Result\Result $result */
@@ -157,6 +162,11 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -228,6 +238,11 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $this->expectException(\UnexpectedValueException::class);
@@ -295,6 +310,11 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         /* @var \UaResult\Result\Result $result */
@@ -362,6 +382,11 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         /* @var Result $result */
@@ -429,6 +454,11 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -500,6 +530,11 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -572,6 +607,11 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -646,6 +686,11 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -720,6 +765,11 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -796,6 +846,11 @@ class DetectorTest extends TestCase
             ->with('webkit', 'testagent')
             ->will(self::returnValue(new Engine('webkit-test')));
 
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineLoader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
