@@ -40,7 +40,7 @@ class Detector
     private $logger;
 
     /**
-     * @var \BrowserDetector\Factory\DeviceFactory
+     * @var \BrowserDetector\Factory\DeviceFactoryInterface
      */
     private $deviceFactory;
 

@@ -53,8 +53,8 @@ class DetectorFactory
             $platformFactory = new PlatformFactory($this->cache, $this->logger);
             $browserFactory  = new BrowserFactory($this->cache, $this->logger);
 
-            $factory       = new EngineLoaderFactory($this->cache, $this->logger);
-            $engineLoader  = $factory();
+            $factory      = new EngineLoaderFactory($this->cache, $this->logger);
+            $engineLoader = $factory();
 
             $detector = new Detector($this->logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
         }
