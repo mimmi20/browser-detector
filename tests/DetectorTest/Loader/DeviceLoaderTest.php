@@ -13,6 +13,8 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\DeviceLoader;
+use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Helper\InitRules;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
@@ -56,18 +58,22 @@ class DeviceLoaderTest extends TestCase
             ->will(self::returnSelf());
 
         $jsonParser = $this->createMock(JsonParser::class);
+        $cacheKey   = $this->createMock(CacheKey::class);
+        $initRules  = $this->createMock(InitRules::class);
 
         /** @var Cache $cache */
         /** @var NullLogger $logger */
         /** @var Finder $finder */
         /** @var JsonParser $jsonParser */
+        /** @var CacheKey $cacheKey */
+        /** @var InitRules $initRules */
         $object = new DeviceLoader(
             $cache,
             $logger,
             $finder,
             $jsonParser,
-            'default',
-            ''
+            $cacheKey,
+            $initRules
         );
 
         $this->expectException(NotFoundException::class);

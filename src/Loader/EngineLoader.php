@@ -20,8 +20,6 @@ use UaResult\Engine\EngineInterface;
 
 class EngineLoader implements EngineLoaderInterface
 {
-    private const CACHE_PREFIX = 'engine';
-
     use LoaderTrait;
 
     /**
@@ -35,8 +33,9 @@ class EngineLoader implements EngineLoaderInterface
     {
         $this->init();
 
-        $devices = $this->cache->getItem($this->getCacheKey('rules'));
-        $generic = $this->cache->getItem($this->getCacheKey('generic'));
+        $cacheKey = $this->cacheKey;
+        $devices  = $this->cache->getItem($cacheKey('rules'));
+        $generic  = $this->cache->getItem($cacheKey('generic'));
 
         return $this->detectInArray($devices, $generic, $useragent);
     }
@@ -51,19 +50,25 @@ class EngineLoader implements EngineLoaderInterface
      */
     public function load(string $engineKey, string $useragent = ''): EngineInterface
     {
+        $cacheKey = $this->cacheKey;
+
         try {
-            $engine = $this->cache->getItem($this->getCacheKey($engineKey));
+            $engineData = $this->cache->getItem($cacheKey($engineKey));
         } catch (InvalidArgumentException $e) {
             throw new NotFoundException('the engine with key "' . $engineKey . '" was not found', 0, $e);
         }
 
-        $engineVersionClass = $engine->version->class;
-        $manufacturer       = CompanyLoader::getInstance()->load($engine->manufacturer);
+        if (null === $engineData) {
+            throw new NotFoundException('the engine with key "' . $engineKey . '" was not found');
+        }
+
+        $engineVersionClass = $engineData->version->class;
+        $manufacturer       = CompanyLoader::getInstance()->load($engineData->manufacturer);
 
         if (!is_string($engineVersionClass)) {
             $version = new Version('0');
         } elseif ('VersionFactory' === $engineVersionClass) {
-            $version = (new VersionFactory())->detectVersion($useragent, $engine->version->search);
+            $version = (new VersionFactory())->detectVersion($useragent, $engineData->version->search);
         } else {
             /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
             $versionClass = new $engineVersionClass();
@@ -71,7 +76,7 @@ class EngineLoader implements EngineLoaderInterface
         }
 
         return new Engine(
-            $engine->name,
+            $engineData->name,
             $manufacturer,
             $version
         );

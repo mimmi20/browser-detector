@@ -12,13 +12,12 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Helper\InitRules;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\InvalidArgumentException;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use Symfony\Component\Finder\Finder;
-use Symfony\Component\Finder\SplFileInfo;
-use UaResult\Browser\Browser;
 
 trait LoaderTrait
 {
@@ -43,37 +42,47 @@ trait LoaderTrait
     private $rulesPath = '';
 
     /**
-     * @var JsonParser
+     * @var \Seld\JsonLint\JsonParser
      */
     private $jsonParser;
 
     /**
-     * @var Finder
+     * @var \Symfony\Component\Finder\Finder
      */
     private $finder;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
-     * @param \Symfony\Component\Finder\Finder      $finder
-     * @param \Seld\JsonLint\JsonParser             $jsonParser
-     * @param string                                $dataPath
-     * @param string                                $rulesPath
+     * @var \BrowserDetector\Loader\Helper\CacheKey
+     */
+    private $cacheKey;
+
+    /**
+     * @var \BrowserDetector\Loader\Helper\InitRules
+     */
+    private $initRules;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface    $cache
+     * @param \Psr\Log\LoggerInterface                 $logger
+     * @param \Symfony\Component\Finder\Finder         $finder
+     * @param \Seld\JsonLint\JsonParser                $jsonParser
+     * @param \BrowserDetector\Loader\Helper\CacheKey  $cacheKey
+     * @param \BrowserDetector\Loader\Helper\InitRules $initRules
      */
     public function __construct(
         CacheInterface $cache,
         LoggerInterface $logger,
         Finder $finder,
         JsonParser $jsonParser,
-        string $dataPath,
-        string $rulesPath
+        CacheKey $cacheKey,
+        InitRules $initRules
     ) {
         $this->cache      = $cache;
         $this->logger     = $logger;
         $this->finder     = $finder;
         $this->jsonParser = $jsonParser;
-        $this->dataPath   = $dataPath;
-        $this->rulesPath  = $rulesPath;
+        $this->cacheKey   = $cacheKey;
+        $this->initRules  = $initRules;
     }
 
     /**
@@ -87,44 +96,11 @@ trait LoaderTrait
     {
         $this->init();
 
-        $devices = $this->cache->getItem($this->getCacheKey('rules'));
-        $generic = $this->cache->getItem($this->getCacheKey('generic'));
+        $cacheKey = $this->cacheKey;
+        $devices  = $this->cache->getItem($cacheKey('rules'));
+        $generic  = $this->cache->getItem($cacheKey('generic'));
 
         return $this->detectInArray($devices, $generic, $useragent);
-    }
-
-    /**
-     * @param array  $rules
-     * @param string $generic
-     * @param string $useragent
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return mixed
-     */
-    private function detectInArray(array $rules, string $generic, string $useragent)
-    {
-        foreach ($rules as $search => $key) {
-            if (!preg_match($search, $useragent)) {
-                continue;
-            }
-
-            if (is_array($key)) {
-                return $this->detectInArray($key, $generic, $useragent);
-            }
-
-            if (!$this->has($key)) {
-                throw new NotFoundException('the data with key "' . $key . '" were not found');
-            }
-
-            return $this->load($key, $useragent);
-        }
-
-        if (!$this->has($generic)) {
-            throw new NotFoundException('the data with key "' . $generic . '" were not found');
-        }
-
-        return $this->load($generic, $useragent);
     }
 
     /**
@@ -136,7 +112,8 @@ trait LoaderTrait
      */
     private function init(): void
     {
-        $initKey = $this->getCacheKey('initialized');
+        $cacheKey = $this->cacheKey;
+        $initKey  = $cacheKey('initialized');
 
         if ($this->cache->hasItem($initKey) && $this->cache->getItem($initKey)) {
             return;
@@ -154,72 +131,46 @@ trait LoaderTrait
             }
 
             foreach ($fileData as $key => $data) {
-                $cacheKey = $this->getCacheKey((string) $key);
+                $itemKey = $cacheKey((string) $key);
 
-                if ($this->cache->hasItem($cacheKey)) {
+                if ($this->cache->hasItem($itemKey)) {
                     $this->logger->warning(sprintf('key "%s" was defined more than once', $key));
                     continue;
                 }
 
-                $this->cache->setItem($cacheKey, $data);
+                $this->cache->setItem($itemKey, $data);
             }
         }
 
-        $file = new SplFileInfo($this->rulesPath, '', '');
-
-        try {
-            $fileData = $this->jsonParser->parse(
-                $file->getContents(),
-                JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
-            );
-        } catch (ParsingException $e) {
-            throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
-        }
-
-        $this->cache->setItem($this->getCacheKey('rules'), $fileData['rules']);
-        $this->cache->setItem($this->getCacheKey('generic'), $fileData['generic']);
+        $initRules = $this->initRules;
+        $initRules();
         $this->cache->setItem($initKey, true);
     }
 
     /**
-     * @param string $key
+     * @param array  $rules
+     * @param string $generic
+     * @param string $useragent
      *
-     * @return bool
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \BrowserDetector\Loader\NotFoundException
+     *
+     * @return mixed
      */
-    private function has(string $key): bool
+    private function detectInArray(array $rules, string $generic, string $useragent)
     {
-        try {
-            return $this->cache->hasItem($this->getCacheKey($key));
-        } catch (InvalidArgumentException $e) {
-            $this->logger->info($e);
+        foreach ($rules as $search => $key) {
+            if (!preg_match($search, $useragent)) {
+                continue;
+            }
+
+            if (is_array($key)) {
+                return $this->detectInArray($key, $generic, $useragent);
+            }
+
+            return $this->load($key, $useragent);
         }
 
-        return false;
-    }
-
-    /**
-     * @param string $key
-     *
-     * @return string
-     */
-    private function getCacheKey(string $key): string
-    {
-        return sprintf(
-            '%s_%s_%s_%s',
-            self::CACHE_PREFIX,
-            $this->clearCacheKey($this->dataPath),
-            $this->clearCacheKey($this->rulesPath),
-            $this->clearCacheKey($key)
-        );
-    }
-
-    /**
-     * @param string $key
-     *
-     * @return string
-     */
-    private function clearCacheKey(string $key)
-    {
-        return str_replace(['{', '}', '(', ')', '/', '\\', '@', ':'], '_', $key);
+        return $this->load($generic, $useragent);
     }
 }

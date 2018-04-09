@@ -22,9 +22,9 @@ use UaResult\Os\OsInterface;
 
 class PlatformLoader
 {
-    private const CACHE_PREFIX = 'platform';
-
-    use LoaderTrait;
+    use LoaderTrait {
+        init as public;
+    }
 
     /**
      * @param string $platformCode
@@ -36,29 +36,35 @@ class PlatformLoader
      */
     public function load(string $platformCode, string $useragent = ''): OsInterface
     {
+        $cacheKey = $this->cacheKey;
+
         try {
-            $platform = $this->cache->getItem($this->getCacheKey($platformCode));
+            $platformData = $this->cache->getItem($cacheKey($platformCode));
         } catch (InvalidArgumentException $e) {
             throw new NotFoundException('the platform with key "' . $platformCode . '" was not found', 0, $e);
         }
 
-        $platformVersionClass = $platform->version->class;
+        if (null === $platformData) {
+            throw new NotFoundException('the platform with key "' . $platformCode . '" was not found');
+        }
 
-        if (!is_string($platformVersionClass) && isset($platform->version->value) && is_numeric($platform->version->value)) {
-            $version = (new VersionFactory())->set((string) $platform->version->value);
+        $platformVersionClass = $platformData->version->class;
+
+        if (!is_string($platformVersionClass) && isset($platformData->version->value) && is_numeric($platformData->version->value)) {
+            $version = (new VersionFactory())->set((string) $platformData->version->value);
         } elseif (!is_string($platformVersionClass)) {
             $version = new Version('0');
         } elseif ('VersionFactory' === $platformVersionClass) {
-            $version = (new VersionFactory())->detectVersion($useragent, $platform->version->search);
+            $version = (new VersionFactory())->detectVersion($useragent, $platformData->version->search);
         } else {
             /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
             $versionClass = new $platformVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }
 
-        $name          = $platform->name;
-        $marketingName = $platform->marketingName;
-        $manufacturer  = CompanyLoader::getInstance()->load($platform->manufacturer);
+        $name          = $platformData->name;
+        $marketingName = $platformData->marketingName;
+        $manufacturer  = CompanyLoader::getInstance()->load($platformData->manufacturer);
 
         if ('Mac OS X' === $name
             && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')

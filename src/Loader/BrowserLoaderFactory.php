@@ -12,12 +12,17 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Helper\InitRules;
 use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
 use Symfony\Component\Finder\Finder;
+use Symfony\Component\Finder\SplFileInfo;
 
 class BrowserLoaderFactory
 {
+    private const CACHE_PREFIX = 'browser';
+
     /**
      * @var \BrowserDetector\Cache\CacheInterface
      */
@@ -59,13 +64,18 @@ class BrowserLoaderFactory
             $finder->ignoreUnreadableDirs();
             $finder->in($dataPath);
 
+            $jsonParser = new JsonParser();
+            $cacheKey   = new CacheKey(self::CACHE_PREFIX, $dataPath, $rulesPath);
+            $file       = new SplFileInfo($rulesPath, '', '');
+            $initRules  = new InitRules($this->cache, $jsonParser, $cacheKey, $file);
+
             $loader = new BrowserLoader(
                 $this->cache,
                 $this->logger,
                 $finder,
-                new JsonParser(),
-                $dataPath,
-                $rulesPath
+                $jsonParser,
+                $cacheKey,
+                $initRules
             );
 
             $loaders[$mode] = $loader;

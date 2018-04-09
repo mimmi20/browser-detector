@@ -21,8 +21,6 @@ use UaResult\Company\CompanyLoader;
 
 class BrowserLoader
 {
-    private const CACHE_PREFIX = 'browser';
-
     use LoaderTrait;
 
     /**
@@ -35,10 +33,16 @@ class BrowserLoader
      */
     private function load(string $browserKey, string $useragent = ''): array
     {
+        $cacheKey = $this->cacheKey;
+
         try {
-            $browserData = $this->cache->getItem($this->getCacheKey($browserKey));
+            $browserData = $this->cache->getItem($cacheKey($browserKey));
         } catch (InvalidArgumentException $e) {
             throw new NotFoundException('the browser with key "' . $browserKey . '" was not found', 0, $e);
+        }
+
+        if (null === $browserData) {
+            throw new NotFoundException('the browser with key "' . $browserKey . '" was not found');
         }
 
         $browserVersionClass = $browserData->version->class;

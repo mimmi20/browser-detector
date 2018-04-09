@@ -18,8 +18,6 @@ use UaResult\Device\Device;
 
 class DeviceLoader
 {
-    private const CACHE_PREFIX = 'device';
-
     use LoaderTrait;
 
     /**
@@ -32,10 +30,16 @@ class DeviceLoader
      */
     private function load(string $deviceKey, string $useragent = ''): array
     {
+        $cacheKey = $this->cacheKey;
+
         try {
-            $deviceData = $this->cache->getItem($this->getCacheKey($deviceKey));
+            $deviceData = $this->cache->getItem($cacheKey($deviceKey));
         } catch (InvalidArgumentException $e) {
             throw new NotFoundException('the device with key "' . $deviceKey . '" was not found', 0, $e);
+        }
+
+        if (null === $deviceData) {
+            throw new NotFoundException('the device with key "' . $deviceKey . '" was not found');
         }
 
         $platformKey = $deviceData->platform;
@@ -45,8 +49,9 @@ class DeviceLoader
             try {
                 $loaderFactory = new PlatformLoaderFactory($this->cache, $this->logger);
                 $loader        = $loaderFactory('unknown');
-                $platform      = $loader->load($platformKey, $useragent);
-            } catch (NotFoundException $e) {
+                $loader->init();
+                $platform = $loader->load($platformKey, $useragent);
+            } catch (NotFoundException | InvalidArgumentException $e) {
                 $this->logger->info($e);
             }
         }
