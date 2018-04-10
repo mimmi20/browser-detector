@@ -14,12 +14,11 @@ namespace BrowserDetector;
 use BrowserDetector\Factory\BrowserFactoryInterface;
 use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Factory\PlatformFactoryInterface;
-use BrowserDetector\Loader\EngineLoaderInterface;
+use BrowserDetector\Loader\Loader;
 use BrowserDetector\Loader\NotFoundException;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
-use Seld\JsonLint\ParsingException;
 use UaNormalizer\NormalizerFactory;
 use UaRequest\GenericRequest;
 use UaRequest\GenericRequestFactory;
@@ -55,7 +54,7 @@ class Detector
     private $browserFactory;
 
     /**
-     * @var \BrowserDetector\Loader\EngineLoaderInterface
+     * @var \BrowserDetector\Loader\Loader
      */
     private $engineLoader;
 
@@ -66,14 +65,14 @@ class Detector
      * @param \BrowserDetector\Factory\DeviceFactoryInterface   $deviceFactory
      * @param \BrowserDetector\Factory\PlatformFactoryInterface $platformFactory
      * @param \BrowserDetector\Factory\BrowserFactoryInterface  $browserFactory
-     * @param \BrowserDetector\Loader\EngineLoaderInterface     $engineLoader
+     * @param \BrowserDetector\Loader\Loader                    $engineLoader
      */
     public function __construct(
         LoggerInterface $logger,
         DeviceFactoryInterface $deviceFactory,
         PlatformFactoryInterface $platformFactory,
         BrowserFactoryInterface $browserFactory,
-        EngineLoaderInterface $engineLoader
+        Loader $engineLoader
     ) {
         $this->logger          = $logger;
         $this->deviceFactory   = $deviceFactory;
@@ -168,7 +167,7 @@ class Detector
 
                 try {
                     $engine = $engineLoader($browserUa);
-                } catch (InvalidArgumentException | ParsingException $e) {
+                } catch (InvalidArgumentException $e) {
                     $this->logger->info($e);
                 }
             }

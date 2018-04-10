@@ -18,48 +18,30 @@ use UaResult\Company\CompanyLoader;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
-class EngineLoader implements EngineLoaderInterface
+class EngineLoader implements SpecificLoaderInterface
 {
     use LoaderTrait;
 
     /**
-     * @param string $useragent
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return EngineInterface
-     */
-    public function __invoke(string $useragent): EngineInterface
-    {
-        $this->init();
-
-        $cacheKey = $this->cacheKey;
-        $devices  = $this->cache->getItem($cacheKey('rules'));
-        $generic  = $this->cache->getItem($cacheKey('generic'));
-
-        return $this->detectInArray($devices, $generic, $useragent);
-    }
-
-    /**
-     * @param string $engineKey
+     * @param string $key
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function load(string $engineKey, string $useragent = ''): EngineInterface
+    public function __invoke(string $key, string $useragent = ''): EngineInterface
     {
         $cacheKey = $this->cacheKey;
 
         try {
-            $engineData = $this->cache->getItem($cacheKey($engineKey));
+            $engineData = $this->cache->getItem($cacheKey($key));
         } catch (InvalidArgumentException $e) {
-            throw new NotFoundException('the engine with key "' . $engineKey . '" was not found', 0, $e);
+            throw new NotFoundException('the engine with key "' . $key . '" was not found', 0, $e);
         }
 
         if (null === $engineData) {
-            throw new NotFoundException('the engine with key "' . $engineKey . '" was not found');
+            throw new NotFoundException('the engine with key "' . $key . '" was not found');
         }
 
         $engineVersionClass = $engineData->version->class;

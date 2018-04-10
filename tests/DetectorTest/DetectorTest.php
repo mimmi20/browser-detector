@@ -15,11 +15,11 @@ use BrowserDetector\Detector;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\Loader;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Seld\JsonLint\ParsingException;
+use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaRequest\Constants;
 use UaRequest\GenericRequestFactory;
 use UaResult\Browser\Browser;
@@ -79,7 +79,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), new Engine()]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -94,7 +94,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         /* @var \UaResult\Result\Result $result */
@@ -151,7 +151,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), new Engine()]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -166,7 +166,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -227,7 +227,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), new Engine()]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -242,7 +242,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $this->expectException(\UnexpectedValueException::class);
@@ -299,7 +299,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), new Engine()]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -314,7 +314,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         /* @var \UaResult\Result\Result $result */
@@ -371,7 +371,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), new Engine()]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -386,7 +386,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         /* @var Result $result */
@@ -443,7 +443,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), new Engine()]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -458,7 +458,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -519,7 +519,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), new Engine()]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -534,7 +534,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -596,7 +596,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), new Engine()]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -611,7 +611,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -673,7 +673,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), null]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -690,7 +690,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -752,7 +752,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), null]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -760,7 +760,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::throwException(new ParsingException('test')));
+            ->will(self::throwException(new InvalidArgumentException('test')));
         $engineLoader
             ->expects(self::never())
             ->method('load');
@@ -769,7 +769,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
@@ -831,7 +831,7 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::returnValue([new Browser(), null]));
 
-        $engineLoader = $this->getMockBuilder(EngineLoader::class)
+        $engineLoader = $this->getMockBuilder(Loader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
@@ -850,7 +850,7 @@ class DetectorTest extends TestCase
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
-        /** @var EngineLoader $engineLoader */
+        /** @var Loader $engineLoader */
         $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);

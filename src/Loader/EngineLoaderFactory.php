@@ -13,6 +13,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Helper\InitData;
 use BrowserDetector\Loader\Helper\InitRules;
 use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
@@ -44,9 +45,9 @@ class EngineLoaderFactory
     }
 
     /**
-     * @return EngineLoader
+     * @return Loader
      */
-    public function __invoke(): EngineLoader
+    public function __invoke(): Loader
     {
         static $loader = null;
 
@@ -66,14 +67,26 @@ class EngineLoaderFactory
             $cacheKey   = new CacheKey(self::CACHE_PREFIX, $dataPath, $rulesPath);
             $file       = new SplFileInfo($rulesPath, '', '');
             $initRules  = new InitRules($this->cache, $jsonParser, $cacheKey, $file);
+            $initData   = new InitData(
+                $this->cache,
+                $finder,
+                $jsonParser,
+                $cacheKey
+            );
 
             $loader = new EngineLoader(
                 $this->cache,
                 $this->logger,
-                $finder,
-                $jsonParser,
+                $cacheKey
+            );
+
+            $loader = new Loader(
+                $this->cache,
+                $this->logger,
                 $cacheKey,
-                $initRules
+                $initRules,
+                $initData,
+                $loader
             );
         }
 

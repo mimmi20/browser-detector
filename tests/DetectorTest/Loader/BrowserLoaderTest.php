@@ -14,13 +14,10 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\Helper\CacheKey;
-use BrowserDetector\Loader\Helper\InitRules;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Seld\JsonLint\JsonParser;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
-use Symfony\Component\Finder\Finder;
 
 class BrowserLoaderTest extends TestCase
 {
@@ -62,32 +59,15 @@ class BrowserLoaderTest extends TestCase
             ->method('getItem')
             ->will(self::returnValueMap($map));
 
-        $finder = $this->getMockBuilder(Finder::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['in'])
-            ->getMock();
-        $finder
-            ->expects(self::any())
-            ->method('in')
-            ->will(self::returnSelf());
-
-        $jsonParser = $this->createMock(JsonParser::class);
-        $cacheKey   = $this->createMock(CacheKey::class);
-        $initRules  = $this->createMock(InitRules::class);
+        $cacheKey = $this->createMock(CacheKey::class);
 
         /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var Finder $finder */
-        /** @var JsonParser $jsonParser */
         /** @var CacheKey $cacheKey */
-        /** @var InitRules $initRules */
         $object = new BrowserLoader(
             $cache,
             $logger,
-            $finder,
-            $jsonParser,
-            $cacheKey,
-            $initRules
+            $cacheKey
         );
 
         $this->expectException(NotFoundException::class);

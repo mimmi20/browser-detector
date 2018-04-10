@@ -19,30 +19,30 @@ use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
 use UaResult\Company\CompanyLoader;
 
-class BrowserLoader
+class BrowserLoader implements SpecificLoaderInterface
 {
     use LoaderTrait;
 
     /**
-     * @param string $browserKey
+     * @param string $key
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return array
      */
-    private function load(string $browserKey, string $useragent = ''): array
+    public function __invoke(string $key, string $useragent = ''): array
     {
         $cacheKey = $this->cacheKey;
 
         try {
-            $browserData = $this->cache->getItem($cacheKey($browserKey));
+            $browserData = $this->cache->getItem($cacheKey($key));
         } catch (InvalidArgumentException $e) {
-            throw new NotFoundException('the browser with key "' . $browserKey . '" was not found', 0, $e);
+            throw new NotFoundException('the browser with key "' . $key . '" was not found', 0, $e);
         }
 
         if (null === $browserData) {
-            throw new NotFoundException('the browser with key "' . $browserKey . '" was not found');
+            throw new NotFoundException('the browser with key "' . $key . '" was not found');
         }
 
         $browserVersionClass = $browserData->version->class;

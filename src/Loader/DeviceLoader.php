@@ -16,30 +16,30 @@ use UaDeviceType\TypeLoader;
 use UaResult\Company\CompanyLoader;
 use UaResult\Device\Device;
 
-class DeviceLoader
+class DeviceLoader implements SpecificLoaderInterface
 {
     use LoaderTrait;
 
     /**
-     * @param string $deviceKey
+     * @param string $key
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return array
      */
-    private function load(string $deviceKey, string $useragent = ''): array
+    public function __invoke(string $key, string $useragent = ''): array
     {
         $cacheKey = $this->cacheKey;
 
         try {
-            $deviceData = $this->cache->getItem($cacheKey($deviceKey));
+            $deviceData = $this->cache->getItem($cacheKey($key));
         } catch (InvalidArgumentException $e) {
-            throw new NotFoundException('the device with key "' . $deviceKey . '" was not found', 0, $e);
+            throw new NotFoundException('the device with key "' . $key . '" was not found', 0, $e);
         }
 
         if (null === $deviceData) {
-            throw new NotFoundException('the device with key "' . $deviceKey . '" was not found');
+            throw new NotFoundException('the device with key "' . $key . '" was not found');
         }
 
         $platformKey = $deviceData->platform;

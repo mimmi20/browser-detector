@@ -13,6 +13,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Helper\InitData;
 use BrowserDetector\Loader\Helper\InitRules;
 use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
@@ -47,9 +48,9 @@ class DeviceLoaderFactory
      * @param string $company
      * @param string $mode
      *
-     * @return DeviceLoader
+     * @return Loader
      */
-    public function __invoke(string $company, string $mode): DeviceLoader
+    public function __invoke(string $company, string $mode): Loader
     {
         static $loaders = [];
 
@@ -71,17 +72,27 @@ class DeviceLoaderFactory
             $cacheKey   = new CacheKey(self::CACHE_PREFIX, $dataPath, $rulesPath);
             $file       = new SplFileInfo($rulesPath, '', '');
             $initRules  = new InitRules($this->cache, $jsonParser, $cacheKey, $file);
+            $initData   = new InitData(
+                $this->cache,
+                $finder,
+                $jsonParser,
+                $cacheKey
+            );
 
             $loader = new DeviceLoader(
                 $this->cache,
                 $this->logger,
-                $finder,
-                $jsonParser,
-                $cacheKey,
-                $initRules
+                $cacheKey
             );
 
-            $loaders[$key] = $loader;
+            $loaders[$key] = new Loader(
+                $this->cache,
+                $this->logger,
+                $cacheKey,
+                $initRules,
+                $initData,
+                $loader
+            );
         }
 
         return $loaders[$key];

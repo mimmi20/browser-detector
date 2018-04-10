@@ -20,32 +20,30 @@ use UaResult\Company\CompanyLoader;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 
-class PlatformLoader
+class PlatformLoader implements SpecificLoaderInterface
 {
-    use LoaderTrait {
-        init as public;
-    }
+    use LoaderTrait;
 
     /**
-     * @param string $platformCode
+     * @param string $key
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function load(string $platformCode, string $useragent = ''): OsInterface
+    public function __invoke(string $key, string $useragent = ''): OsInterface
     {
         $cacheKey = $this->cacheKey;
 
         try {
-            $platformData = $this->cache->getItem($cacheKey($platformCode));
+            $platformData = $this->cache->getItem($cacheKey($key));
         } catch (InvalidArgumentException $e) {
-            throw new NotFoundException('the platform with key "' . $platformCode . '" was not found', 0, $e);
+            throw new NotFoundException('the platform with key "' . $key . '" was not found', 0, $e);
         }
 
         if (null === $platformData) {
-            throw new NotFoundException('the platform with key "' . $platformCode . '" was not found');
+            throw new NotFoundException('the platform with key "' . $key . '" was not found');
         }
 
         $platformVersionClass = $platformData->version->class;
