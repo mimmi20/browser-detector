@@ -12,8 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Browser as BrowserBits;
+use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\Helper\CacheKey;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
+use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
@@ -21,7 +24,57 @@ use UaResult\Company\CompanyLoader;
 
 class BrowserLoader implements SpecificLoaderInterface
 {
-    use LoaderTrait;
+    /**
+     * @var \BrowserDetector\Cache\CacheInterface
+     */
+    private $cache;
+
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @var \BrowserDetector\Loader\Helper\CacheKey
+     */
+    private $cacheKey;
+
+    /**
+     * @var \UaResult\Company\CompanyLoader
+     */
+    private $companyLoader;
+    /**
+     * @var \UaBrowserType\TypeLoader
+     */
+    private $typeLoader;
+    /**
+     * @var \BrowserDetector\Loader\Loader
+     */
+    private $engineLoader;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface   $cache
+     * @param \Psr\Log\LoggerInterface                $logger
+     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
+     * @param \UaResult\Company\CompanyLoader         $companyLoader
+     * @param \UaBrowserType\TypeLoader               $typeLoader
+     * @param \BrowserDetector\Loader\Loader          $engineLoader
+     */
+    public function __construct(
+        CacheInterface $cache,
+        LoggerInterface $logger,
+        CacheKey $cacheKey,
+        CompanyLoader $companyLoader,
+        TypeLoader $typeLoader,
+        Loader $engineLoader
+    ) {
+        $this->cache         = $cache;
+        $this->logger        = $logger;
+        $this->cacheKey      = $cacheKey;
+        $this->companyLoader = $companyLoader;
+        $this->typeLoader    = $typeLoader;
+        $this->engineLoader  = $engineLoader;
+    }
 
     /**
      * @param string $key
@@ -46,8 +99,8 @@ class BrowserLoader implements SpecificLoaderInterface
         }
 
         $browserVersionClass = $browserData->version->class;
-        $manufacturer        = CompanyLoader::getInstance()->load($browserData->manufacturer);
-        $type                = (new TypeLoader())->load($browserData->type);
+        $manufacturer        = $this->companyLoader->load($browserData->manufacturer);
+        $type                = $this->typeLoader->load($browserData->type);
 
         if (!is_string($browserVersionClass)) {
             $version = new Version('0');
@@ -65,9 +118,7 @@ class BrowserLoader implements SpecificLoaderInterface
 
         if (null !== $engineKey) {
             try {
-                $loaderFactory = new EngineLoaderFactory($this->cache, $this->logger);
-                $loader        = $loaderFactory();
-                $engine        = $loader->load($engineKey, $useragent);
+                $engine = $this->engineLoader->load($engineKey, $useragent);
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
             }

@@ -11,6 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\Helper\CacheKey;
+use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use UaDeviceType\TypeLoader;
 use UaResult\Company\CompanyLoader;
@@ -18,7 +21,56 @@ use UaResult\Device\Device;
 
 class DeviceLoader implements SpecificLoaderInterface
 {
-    use LoaderTrait;
+    /**
+     * @var \BrowserDetector\Cache\CacheInterface
+     */
+    private $cache;
+
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @var \BrowserDetector\Loader\Helper\CacheKey
+     */
+    private $cacheKey;
+    /**
+     * @var \UaResult\Company\CompanyLoader
+     */
+    private $companyLoader;
+    /**
+     * @var \UaDeviceType\TypeLoader
+     */
+    private $typeLoader;
+    /**
+     * @var \BrowserDetector\Loader\Loader
+     */
+    private $platformLoader;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface   $cache
+     * @param \Psr\Log\LoggerInterface                $logger
+     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
+     * @param \UaResult\Company\CompanyLoader         $companyLoader
+     * @param \UaDeviceType\TypeLoader                $typeLoader
+     * @param \BrowserDetector\Loader\Loader          $platformLoader
+     */
+    public function __construct(
+        CacheInterface $cache,
+        LoggerInterface $logger,
+        CacheKey $cacheKey,
+        CompanyLoader $companyLoader,
+        TypeLoader $typeLoader,
+        Loader $platformLoader
+    ) {
+        $this->cache          = $cache;
+        $this->logger         = $logger;
+        $this->cacheKey       = $cacheKey;
+        $this->companyLoader  = $companyLoader;
+        $this->typeLoader     = $typeLoader;
+        $this->platformLoader = $platformLoader;
+    }
 
     /**
      * @param string $key
@@ -47,23 +99,19 @@ class DeviceLoader implements SpecificLoaderInterface
 
         if (null !== $platformKey) {
             try {
-                $loaderFactory = new PlatformLoaderFactory($this->cache, $this->logger);
-                $loader        = $loaderFactory('unknown');
-                $loader->init();
-                $platform = $loader->load($platformKey, $useragent);
+                $this->platformLoader->init();
+                $platform = $this->platformLoader->load($platformKey, $useragent);
             } catch (NotFoundException | InvalidArgumentException $e) {
                 $this->logger->info($e);
             }
         }
 
-        $companyLoader = CompanyLoader::getInstance();
-
         $device = new Device(
             $deviceData->codename,
             $deviceData->marketingName,
-            $companyLoader->load($deviceData->manufacturer),
-            $companyLoader->load($deviceData->brand),
-            (new TypeLoader())->load($deviceData->type),
+            $this->companyLoader->load($deviceData->manufacturer),
+            $this->companyLoader->load($deviceData->brand),
+            $this->typeLoader->load($deviceData->type),
             $deviceData->pointingMethod,
             $deviceData->resolutionWidth,
             $deviceData->resolutionHeight,

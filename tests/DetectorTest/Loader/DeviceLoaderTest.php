@@ -14,95 +14,219 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Loader;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
+use UaDeviceType\TypeLoader;
+use UaDeviceType\Unknown;
+use UaResult\Company\Company;
+use UaResult\Company\CompanyLoader;
 
 class DeviceLoaderTest extends TestCase
 {
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \ReflectionException
-     *
      * @return void
      */
-    public function testInvoke(): void
+    public function testInvokeCacheException(): void
     {
-        $this->markTestSkipped();
-        $logger = $this->createMock(NullLogger::class);
+        $logger = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['info'])
+            ->getMock();
+
+        $logger
+            ->expects(self::never())
+            ->method('info');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
+
+        $map = [
+            ['device_default__initialized', true],
+            ['device_default__generic-device', true],
+        ];
+
         $cache
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('hasItem')
-            ->will(self::returnValue(true));
+            ->will(self::returnValueMap($map));
+
         $cache
             ->expects(self::once())
             ->method('getItem')
-            ->will(self::returnValue(true));
+            ->with('device_default__key')
+            ->will(self::throwException(new InvalidArgumentException('fail')));
 
-        $cacheKey = $this->createMock(CacheKey::class);
+        $cacheKey = $this->getMockBuilder(CacheKey::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+
+        $map = [
+            ['test-key', 'device_default__key'],
+        ];
+
+        $cacheKey
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('test-key')
+            ->will(self::returnValueMap($map));
+
+        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load'])
+            ->getMock();
+
+        $companyLoader
+            ->expects(self::never())
+            ->method('load')
+            ->with('Unknown')
+            ->willReturn(new Company('Unknown'));
+
+        $typeLoader = $this->getMockBuilder(TypeLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load'])
+            ->getMock();
+
+        $typeLoader
+            ->expects(self::never())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $platformLoader = $this->getMockBuilder(Loader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load'])
+            ->getMock();
+
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
 
         /** @var Cache $cache */
         /** @var NullLogger $logger */
         /** @var CacheKey $cacheKey */
+        /** @var CompanyLoader $companyLoader */
+        /** @var TypeLoader $typeLoader */
+        /** @var Loader $platformLoader */
         $object = new DeviceLoader(
             $cache,
             $logger,
-            $cacheKey
+            $cacheKey,
+            $companyLoader,
+            $typeLoader,
+            $platformLoader
         );
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the device with key "does not exist" was not found');
+        $this->expectExceptionMessage('the device with key "test-key" was not found');
 
-        $object('test-ua');
+        $object('test-key', 'test-ua');
     }
 
     /**
      * @return void
      */
-    public function testHasFail(): void
+    public function testInvokeCacheNotFound(): void
     {
-        $this->markTestSkipped();
-//        $cache = $this->getMockBuilder(Cache::class)
-//            ->disableOriginalConstructor()
-//            ->setMethods(['hasItem'])
-//            ->getMock();
-//        $cache->expects(self::once())->method('hasItem')->willThrowException(new InvalidArgumentException());
-//
-//        $logger = new NullLogger();
-//
-//        $object = new DeviceLoader(new Cache($cache), $logger, '.', '');
-//
-//        self::assertFalse($object->has('does not exist'));
-    }
+        $logger = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['info'])
+            ->getMock();
 
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return void
-     */
-    public function testLoadFail(): void
-    {
-        $this->markTestSkipped();
-//        $this->expectException('\BrowserDetector\Loader\NotFoundException');
-//        $this->expectExceptionMessage('the device with key "does not exist" was not found');
-//
-//        $cache = $this->getMockBuilder(Cache::class)
-//            ->disableOriginalConstructor()
-//            ->setMethods(['hasItem', 'getItem'])
-//            ->getMock();
-//        $cache->expects(self::once())->method('hasItem')->willReturn(true);
-//        $cache->expects(self::once())->method('getItem')->willThrowException(new InvalidArgumentException());
-//
-//        $logger = new NullLogger();
-//
-//        $object = new DeviceLoader(new Cache($cache), $logger, '.', '');
-//
-//        $object->load('does not exist');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem'])
+            ->getMock();
+
+        $map = [
+            ['device_default__initialized', true],
+            ['device_default__generic-device', true],
+        ];
+
+        $cache
+            ->expects(self::never())
+            ->method('hasItem')
+            ->will(self::returnValueMap($map));
+
+        $cache
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('device_default__key')
+            ->will(self::returnValue(null));
+
+        $cacheKey = $this->getMockBuilder(CacheKey::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+
+        $map = [
+            ['test-key', 'device_default__key'],
+        ];
+
+        $cacheKey
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('test-key')
+            ->will(self::returnValueMap($map));
+
+        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load'])
+            ->getMock();
+
+        $companyLoader
+            ->expects(self::never())
+            ->method('load')
+            ->with('Unknown')
+            ->willReturn(new Company('Unknown'));
+
+        $typeLoader = $this->getMockBuilder(TypeLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load'])
+            ->getMock();
+
+        $typeLoader
+            ->expects(self::never())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $platformLoader = $this->getMockBuilder(Loader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load'])
+            ->getMock();
+
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+
+        /** @var Cache $cache */
+        /** @var NullLogger $logger */
+        /** @var CacheKey $cacheKey */
+        /** @var CompanyLoader $companyLoader */
+        /** @var TypeLoader $typeLoader */
+        /** @var Loader $platformLoader */
+        $object = new DeviceLoader(
+            $cache,
+            $logger,
+            $cacheKey,
+            $companyLoader,
+            $typeLoader,
+            $platformLoader
+        );
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionMessage('the device with key "test-key" was not found');
+
+        $object('test-key', 'test-ua');
     }
 }

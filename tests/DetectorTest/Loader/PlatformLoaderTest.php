@@ -12,103 +12,142 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Cache\Cache;
+use BrowserDetector\Loader\Helper\CacheKey;
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Loader\PlatformLoaderFactory;
+use BrowserDetector\Loader\PlatformLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
+use Symfony\Component\Cache\Exception\InvalidArgumentException;
 
 class PlatformLoaderTest extends TestCase
 {
     /**
-     * @throws \ReflectionException
-     *
      * @return void
      */
-    public function testLoadNotAvailable(): void
+    public function testInvokeCacheException(): void
     {
-        $this->markTestSkipped();
-        /** @var NullLogger $logger */
-        $logger = $this->createMock(NullLogger::class);
+        $logger = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['info'])
+            ->getMock();
+
+        $logger
+            ->expects(self::never())
+            ->method('info');
+
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem'])
+            ->getMock();
+
+        $map = [
+            ['platform_default__initialized', true],
+            ['platform_default__generic-platform', true],
+        ];
+
+        $cache
+            ->expects(self::never())
+            ->method('hasItem')
+            ->will(self::returnValueMap($map));
+
+        $cache
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('platform_default__key')
+            ->will(self::throwException(new InvalidArgumentException('fail')));
+
+        $cacheKey = $this->getMockBuilder(CacheKey::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+
+        $map = [
+            ['test-key', 'platform_default__key'],
+        ];
+
+        $cacheKey
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('test-key')
+            ->will(self::returnValueMap($map));
 
         /** @var Cache $cache */
-        $cache = $this->createMock(Cache::class);
-
-        $factory = new PlatformLoaderFactory($cache, $logger);
-        $object  = $factory('unknown');
+        /** @var NullLogger $logger */
+        /** @var CacheKey $cacheKey */
+        $object = new PlatformLoader(
+            $cache,
+            $logger,
+            $cacheKey
+        );
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the platform with key "does not exist" was not found');
+        $this->expectExceptionMessage('the platform with key "test-key" was not found');
 
-        $object->load('does not exist', 'test-ua');
+        $object('test-key', 'test-ua');
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \ReflectionException
-     *
      * @return void
      */
-    public function testInvoke(): void
+    public function testInvokeCacheNotFound(): void
     {
-        $this->markTestSkipped();
-        /** @var NullLogger $logger */
-        $logger = $this->createMock(NullLogger::class);
+        $logger = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['info'])
+            ->getMock();
+
+        $logger
+            ->expects(self::never())
+            ->method('info');
+
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem'])
+            ->getMock();
+
+        $map = [
+            ['platform_default__initialized', true],
+            ['platform_default__generic-platform', true],
+        ];
+
+        $cache
+            ->expects(self::never())
+            ->method('hasItem')
+            ->will(self::returnValueMap($map));
+
+        $cache
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('platform_default__key')
+            ->will(self::returnValue(null));
+
+        $cacheKey = $this->getMockBuilder(CacheKey::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+
+        $map = [
+            ['test-key', 'platform_default__key'],
+        ];
+
+        $cacheKey
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('test-key')
+            ->will(self::returnValueMap($map));
 
         /** @var Cache $cache */
-        $cache = $this->createMock(Cache::class);
-
-        $factory = new PlatformLoaderFactory($cache, $logger);
-        $object  = $factory('unknown');
+        /** @var NullLogger $logger */
+        /** @var CacheKey $cacheKey */
+        $object = new PlatformLoader(
+            $cache,
+            $logger,
+            $cacheKey
+        );
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the platform with key "does not exist" was not found');
+        $this->expectExceptionMessage('the platform with key "test-key" was not found');
 
-        $object('test-ua');
-    }
-
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return void
-     */
-    public function testHasFail(): void
-    {
-        $this->markTestSkipped();
-//        $cache = $this->getMockBuilder(Cache::class)
-//            ->disableOriginalConstructor()
-//            ->setMethods(['hasItem'])
-//            ->getMock();
-//        $cache->expects(self::once())->method('hasItem')->willThrowException(new InvalidArgumentException());
-//
-//        $logger = new NullLogger();
-//
-//        $object = PlatformLoader::getInstance($cache, $logger);
-//
-//        self::assertFalse($object->has('does not exist'));
-    }
-
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return void
-     */
-    public function testLoadFail(): void
-    {
-        $this->markTestSkipped();
-//        $this->expectException('\BrowserDetector\Loader\NotFoundException');
-//        $this->expectExceptionMessage('the platform with key "does not exist" was not found');
-//
-//        $cache = $this->getMockBuilder(Cache::class)
-//            ->disableOriginalConstructor()
-//            ->setMethods(['hasItem', 'getItem'])
-//            ->getMock();
-//        $cache->expects(self::once())->method('hasItem')->willReturn(true);
-//        $cache->expects(self::once())->method('getItem')->willThrowException(new InvalidArgumentException());
-//
-//        $logger = new NullLogger();
-//
-//        $object = PlatformLoader::getInstance($cache, $logger);
-//
-//        $object->load('does not exist');
+        $object('test-key', 'test-ua');
     }
 }

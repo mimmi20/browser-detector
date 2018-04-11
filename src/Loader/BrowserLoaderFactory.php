@@ -19,6 +19,8 @@ use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
+use UaBrowserType\TypeLoader;
+use UaResult\Company\CompanyLoader;
 
 class BrowserLoaderFactory
 {
@@ -76,10 +78,16 @@ class BrowserLoaderFactory
                 $cacheKey
             );
 
+            $loaderFactory = new EngineLoaderFactory($this->cache, $this->logger);
+            $engineLoader  = $loaderFactory();
+
             $loader = new BrowserLoader(
                 $this->cache,
                 $this->logger,
-                $cacheKey
+                $cacheKey,
+                CompanyLoader::getInstance(),
+                new TypeLoader(),
+                $engineLoader
             );
 
             $loaders[$mode] = new Loader(

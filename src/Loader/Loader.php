@@ -88,7 +88,7 @@ class Loader
         $devices  = $this->cache->getItem($cacheKey('rules'));
         $generic  = $this->cache->getItem($cacheKey('generic'));
 
-        return $this->detectInArray($devices, $generic, $useragent, $this->specificLoader);
+        return $this->detectInArray($devices, $generic, $useragent);
     }
 
     /**
@@ -116,17 +116,16 @@ class Loader
     }
 
     /**
-     * @param array                                           $rules
-     * @param string                                          $generic
-     * @param string                                          $useragent
-     * @param \BrowserDetector\Loader\SpecificLoaderInterface $load
+     * @param array  $rules
+     * @param string $generic
+     * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return mixed
      */
-    private function detectInArray(array $rules, string $generic, string $useragent, SpecificLoaderInterface $load)
+    private function detectInArray(array $rules, string $generic, string $useragent)
     {
         foreach ($rules as $search => $key) {
             if (!preg_match($search, $useragent)) {
@@ -134,13 +133,13 @@ class Loader
             }
 
             if (is_array($key)) {
-                return $this->detectInArray($key, $generic, $useragent, $load);
+                return $this->detectInArray($key, $generic, $useragent);
             }
 
-            return $load($key, $useragent);
+            return $this->load($key, $useragent);
         }
 
-        return $load($generic, $useragent);
+        return $this->load($generic, $useragent);
     }
 
     /**

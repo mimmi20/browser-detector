@@ -19,6 +19,8 @@ use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
+use UaDeviceType\TypeLoader;
+use UaResult\Company\CompanyLoader;
 
 class DeviceLoaderFactory
 {
@@ -79,10 +81,16 @@ class DeviceLoaderFactory
                 $cacheKey
             );
 
+            $loaderFactory  = new PlatformLoaderFactory($this->cache, $this->logger);
+            $platformLoader = $loaderFactory('unknown');
+
             $loader = new DeviceLoader(
                 $this->cache,
                 $this->logger,
-                $cacheKey
+                $cacheKey,
+                CompanyLoader::getInstance(),
+                new TypeLoader(),
+                $platformLoader
             );
 
             $loaders[$key] = new Loader(
