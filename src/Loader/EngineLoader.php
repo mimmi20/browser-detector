@@ -11,8 +11,11 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\Helper\CacheKey;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
+use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use UaResult\Company\CompanyLoader;
 use UaResult\Engine\Engine;
@@ -20,7 +23,42 @@ use UaResult\Engine\EngineInterface;
 
 class EngineLoader implements SpecificLoaderInterface
 {
-    use LoaderTrait;
+    /**
+     * @var \BrowserDetector\Cache\CacheInterface
+     */
+    private $cache;
+
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @var \BrowserDetector\Loader\Helper\CacheKey
+     */
+    private $cacheKey;
+    /**
+     * @var \UaResult\Company\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface   $cache
+     * @param \Psr\Log\LoggerInterface                $logger
+     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
+     * @param \UaResult\Company\CompanyLoader         $companyLoader
+     */
+    public function __construct(
+        CacheInterface $cache,
+        LoggerInterface $logger,
+        CacheKey $cacheKey,
+        CompanyLoader $companyLoader
+    ) {
+        $this->cache         = $cache;
+        $this->logger        = $logger;
+        $this->cacheKey      = $cacheKey;
+        $this->companyLoader = $companyLoader;
+    }
 
     /**
      * @param string $key
@@ -45,7 +83,7 @@ class EngineLoader implements SpecificLoaderInterface
         }
 
         $engineVersionClass = $engineData->version->class;
-        $manufacturer       = CompanyLoader::getInstance()->load($engineData->manufacturer);
+        $manufacturer       = $this->companyLoader->load($engineData->manufacturer);
 
         if (!is_string($engineVersionClass)) {
             $version = new Version('0');

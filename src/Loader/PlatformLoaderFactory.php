@@ -19,6 +19,7 @@ use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
+use UaResult\Company\CompanyLoader;
 
 class PlatformLoaderFactory
 {
@@ -79,7 +80,8 @@ class PlatformLoaderFactory
             $loader = new PlatformLoader(
                 $this->cache,
                 $this->logger,
-                $cacheKey
+                $cacheKey,
+                CompanyLoader::getInstance()
             );
 
             $loaders[$mode] = new Loader(

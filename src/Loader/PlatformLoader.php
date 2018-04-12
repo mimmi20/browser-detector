@@ -12,9 +12,12 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Os as OsBits;
+use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\Helper\CacheKey;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
+use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use UaResult\Company\CompanyLoader;
 use UaResult\Os\Os;
@@ -22,7 +25,42 @@ use UaResult\Os\OsInterface;
 
 class PlatformLoader implements SpecificLoaderInterface
 {
-    use LoaderTrait;
+    /**
+     * @var \BrowserDetector\Cache\CacheInterface
+     */
+    private $cache;
+
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @var \BrowserDetector\Loader\Helper\CacheKey
+     */
+    private $cacheKey;
+    /**
+     * @var \UaResult\Company\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface   $cache
+     * @param \Psr\Log\LoggerInterface                $logger
+     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
+     * @param \UaResult\Company\CompanyLoader         $companyLoader
+     */
+    public function __construct(
+        CacheInterface $cache,
+        LoggerInterface $logger,
+        CacheKey $cacheKey,
+        CompanyLoader $companyLoader
+    ) {
+        $this->cache         = $cache;
+        $this->logger        = $logger;
+        $this->cacheKey      = $cacheKey;
+        $this->companyLoader = $companyLoader;
+    }
 
     /**
      * @param string $key
@@ -62,7 +100,7 @@ class PlatformLoader implements SpecificLoaderInterface
 
         $name          = $platformData->name;
         $marketingName = $platformData->marketingName;
-        $manufacturer  = CompanyLoader::getInstance()->load($platformData->manufacturer);
+        $manufacturer  = $this->companyLoader->load($platformData->manufacturer);
 
         if ('Mac OS X' === $name
             && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')

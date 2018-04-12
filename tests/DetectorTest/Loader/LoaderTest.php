@@ -324,4 +324,109 @@ class LoaderTest extends TestCase
 
         self::assertSame('abc-test', $object($useragent));
     }
+
+    /**
+     * @throws \ReflectionException
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testInvokeSecondRun(): void
+    {
+        $logger = $this->createMock(NullLogger::class);
+
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+
+        $cache
+            ->expects(self::never())
+            ->method('setItem')
+            ->with('browser_default__initialized', true)
+            ->will(self::returnValue(true));
+
+        $map = [
+            ['browser_default__initialized', true],
+            ['browser_default__generic-browser', true],
+        ];
+
+        $cache
+            ->expects(self::never())
+            ->method('hasItem')
+            ->will(self::returnValueMap($map));
+
+        $map = [
+            ['browser_default__initialized', true],
+            [
+                'browser_default__rules',
+                [
+                    '/sm\-/i' => [
+                        '/sm\-s/i' => [
+                            '/sm\-s820l/i' => 'samsung sm-s820l',
+                        ],
+                        '/sm\-z/i' => [
+                            '/sm\-z130h/i' => 'samsung sm-z130h',
+                        ],
+                    ],
+                ],
+            ],
+            ['browser_default__generic', 'generic-browser'],
+            ['browser_default__generic-browser', null],
+        ];
+
+        $cache
+            ->expects(self::exactly(3))
+            ->method('getItem')
+            ->will(self::returnValueMap($map));
+
+        $cacheKey = $this->getMockBuilder(CacheKey::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+
+        $map = [
+            ['initialized', 'browser_default__initialized'],
+            ['rules', 'browser_default__rules'],
+            ['generic', 'browser_default__generic'],
+            ['generic-browser', 'browser_default__generic-browser'],
+        ];
+
+        $cacheKey
+            ->expects(self::exactly(3))
+            ->method('__invoke')
+            ->will(self::returnValueMap($map));
+
+        $initRules      = $this->createMock(InitRules::class);
+        $initData       = $this->createMock(InitData::class);
+        $specificLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+
+        $useragent = 'test-ua';
+
+        $specificLoader
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('generic-browser', $useragent)
+            ->will(self::returnValue('abc-test'));
+
+        /** @var Cache $cache */
+        /** @var NullLogger $logger */
+        /** @var CacheKey $cacheKey */
+        /** @var InitRules $initRules */
+        /** @var InitData $initData */
+        /** @var SpecificLoaderInterface $specificLoader */
+        $object = new Loader(
+            $cache,
+            $logger,
+            $cacheKey,
+            $initRules,
+            $initData,
+            $specificLoader
+        );
+
+        self::assertSame('abc-test', $object($useragent));
+    }
 }

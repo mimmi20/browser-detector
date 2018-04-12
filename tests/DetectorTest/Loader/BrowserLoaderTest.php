@@ -342,7 +342,7 @@ class BrowserLoaderTest extends TestCase
     /**
      * @return void
      */
-    public function testInvokeVersionAndEngineException(): void
+    public function testInvokeGenericVersionAndEngineException(): void
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
@@ -488,7 +488,7 @@ class BrowserLoaderTest extends TestCase
             'manufacturer' => 'Unknown',
             'type' => 'unknown',
             'engine' => 'unknown',
-            'name' => null,
+            'name' => 'test-browser',
         ];
 
         $cache
@@ -564,8 +564,14 @@ class BrowserLoaderTest extends TestCase
 
         self::assertInternalType('array', $result);
         self::assertArrayHasKey(0, $result);
-        self::assertInstanceOf(BrowserInterface::class, $result[0]);
+        /** @var BrowserInterface $browserResult */
+        $browserResult = $result[0];
+        self::assertInstanceOf(BrowserInterface::class, $browserResult);
         self::assertArrayHasKey(1, $result);
-        self::assertInstanceOf(EngineInterface::class, $result[1]);
+        /** @var EngineInterface $engineResult */
+        $engineResult = $result[1];
+        self::assertInstanceOf(EngineInterface::class, $engineResult);
+
+        self:self::assertSame('test-browser', $browserResult->getName());
     }
 }
