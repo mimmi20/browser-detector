@@ -163,6 +163,16 @@ class PlatformFactoryTest extends TestCase
                 new Os(),
             ],
             [
+                'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.2.1.2141 Mobile Safari/537.35+',
+                'genericplatform',
+                new Os(),
+            ],
+            [
+                'nokia6120c/UC Browser8.0.3.107/69/444 UNTRUSTED/1.0',
+                'symbian',
+                new Os(),
+            ],
+            [
                 'this is a fake ua to trigger the fallback',
                 'unknown',
                 new Os(),
