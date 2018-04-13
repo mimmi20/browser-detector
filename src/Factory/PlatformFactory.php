@@ -21,14 +21,9 @@ use UaResult\Os\OsInterface;
 class PlatformFactory implements PlatformFactoryInterface
 {
     /**
-     * @var \BrowserDetector\Cache\CacheInterface
+     * @var \BrowserDetector\Loader\PlatformLoaderFactory
      */
-    private $cache;
-
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
+    private $loaderFactory;
 
     /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
@@ -36,8 +31,7 @@ class PlatformFactory implements PlatformFactoryInterface
      */
     public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        $this->loaderFactory = new PlatformLoaderFactory($cache, $logger);
     }
 
     /**
@@ -53,7 +47,7 @@ class PlatformFactory implements PlatformFactoryInterface
     {
         $s             = new Stringy($useragent);
         $windowsHelper = new Helper\Windows($s);
-        $loaderFactory = new PlatformLoaderFactory($this->cache, $this->logger);
+        $loaderFactory = $this->loaderFactory;
 
         if ($windowsHelper->isMobileWindows()) {
             $loader = $loaderFactory('windowsmobile');
@@ -67,7 +61,13 @@ class PlatformFactory implements PlatformFactoryInterface
             return $loader($useragent);
         }
 
-        if (preg_match('/commoncrawler|symb(ian|os)|series ?60|s60v[35]|nokia7230|bada|meego|sailfish|cygwin|bsd|dragonfly|hp\-?ux|irix|web[o0]s|hpwos|tizen/i', $useragent)) {
+        if (preg_match('/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/i', $useragent)) {
+            $loader = $loaderFactory('symbian');
+
+            return $loader($useragent);
+        }
+
+        if (preg_match('/commoncrawler|bada|meego|sailfish|cygwin|bsd|dragonfly|hp\-?ux|irix|web[o0]s|hpwos/i', $useragent)) {
             $loader = $loaderFactory('genericplatform');
 
             return $loader($useragent);
@@ -80,7 +80,7 @@ class PlatformFactory implements PlatformFactoryInterface
         }
 
         if (preg_match('/MIUI/', $useragent)
-            || preg_match('/yunos/i', $useragent)
+            || preg_match('/yunos|tizen/i', $useragent)
             || (new Helper\AndroidOs($s))->isAndroid()
         ) {
             $loader = $loaderFactory('android');
@@ -124,8 +124,8 @@ class PlatformFactory implements PlatformFactoryInterface
             return $loader($useragent);
         }
 
-        if (preg_match('/series ?40|nokia/i', $useragent)) {
-            $loader = $loaderFactory('nokiaos');
+        if (preg_match('/nokia/i', $useragent)) {
+            $loader = $loaderFactory('symbian');
 
             return $loader($useragent);
         }

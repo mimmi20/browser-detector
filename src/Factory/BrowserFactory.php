@@ -28,14 +28,9 @@ class BrowserFactory implements BrowserFactoryInterface
     ];
 
     /**
-     * @var \BrowserDetector\Cache\CacheInterface
+     * @var \BrowserDetector\Loader\BrowserLoaderFactory
      */
-    private $cache;
-
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
+    private $loaderFactory;
 
     /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
@@ -43,8 +38,7 @@ class BrowserFactory implements BrowserFactoryInterface
      */
     public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        $this->loaderFactory = new BrowserLoaderFactory($cache, $logger);
     }
 
     /**
@@ -58,7 +52,7 @@ class BrowserFactory implements BrowserFactoryInterface
      */
     public function __invoke(string $useragent): array
     {
-        $loaderFactory = new BrowserLoaderFactory($this->cache, $this->logger);
+        $loaderFactory = $this->loaderFactory;
 
         foreach ($this->factories as $rule => $mode) {
             if (preg_match($rule, $useragent)) {

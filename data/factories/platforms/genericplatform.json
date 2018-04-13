@@ -1,13 +1,6 @@
 {
   "rules": {
     "/commoncrawler/i": "unknown",
-    "/symbianos/i": "symbian",
-    "/symbos/i": "symbian",
-    "/symbian/i": "symbian",
-    "/series 60/i": "symbian",
-    "/s60v3/i": "symbian",
-    "/s60v5/i": "symbian",
-    "/nokia7230/i": "symbian",
     "/bada/i": "bada",
     "/meego/i": "meego",
     "/sailfish/i": "sailfishos",
@@ -21,7 +14,6 @@
     "/web0s/i": "lg webos",
     "/webos/i": "webos",
     "/hpwos/i": "webos",
-    "/tizen/i": "tizen",
     "/kfreebsd/i": "debian with freebsd kernel",
     "/freebsd/i": "freebsd",
     "/bsd/i": "bsd",

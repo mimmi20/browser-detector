@@ -26,14 +26,9 @@ class DarwinFactory
     ];
 
     /**
-     * @var \BrowserDetector\Cache\CacheInterface
+     * @var \BrowserDetector\Loader\DeviceLoaderFactory
      */
-    private $cache;
-
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
+    private $loaderFactory;
 
     /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
@@ -41,8 +36,7 @@ class DarwinFactory
      */
     public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        $this->loaderFactory = new DeviceLoaderFactory($cache, $logger);
     }
 
     /**
@@ -56,7 +50,7 @@ class DarwinFactory
      */
     public function __invoke(string $useragent): array
     {
-        $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
+        $loaderFactory = $this->loaderFactory;
 
         foreach ($this->factories as $rule => $mode) {
             if (preg_match($rule, $useragent)) {

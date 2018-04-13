@@ -25,14 +25,29 @@ use Stringy\Stringy;
 class DeviceFactory implements DeviceFactoryInterface
 {
     /**
-     * @var \BrowserDetector\Cache\CacheInterface
+     * @var Device\DarwinFactory
      */
-    private $cache;
+    private $darwinFactory;
 
     /**
-     * @var \Psr\Log\LoggerInterface
+     * @var Device\MobileFactory
      */
-    private $logger;
+    private $mobileFactory;
+
+    /**
+     * @var Device\TvFactory
+     */
+    private $tvFactory;
+
+    /**
+     * @var Device\DesktopFactory
+     */
+    private $desktopFactory;
+
+    /**
+     * @var DeviceLoaderFactory
+     */
+    private $loaderFactory;
 
     /**
      * @param \BrowserDetector\Cache\CacheInterface $cache
@@ -40,8 +55,11 @@ class DeviceFactory implements DeviceFactoryInterface
      */
     public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        $this->darwinFactory  = new Device\DarwinFactory($cache, $logger);
+        $this->mobileFactory  = new Device\MobileFactory($cache, $logger);
+        $this->tvFactory      = new Device\TvFactory($cache, $logger);
+        $this->desktopFactory = new Device\DesktopFactory($cache, $logger);
+        $this->loaderFactory  = new DeviceLoaderFactory($cache, $logger);
     }
 
     /**
@@ -60,30 +78,30 @@ class DeviceFactory implements DeviceFactoryInterface
         if (!$s->containsAny(['freebsd', 'raspbian'], false)
             && $s->containsAny(['darwin', 'cfnetwork'], false)
         ) {
-            $factory = new Device\DarwinFactory($this->cache, $this->logger);
+            $factory = $this->darwinFactory;
 
             return $factory($useragent);
         }
 
         if ((new MobileDevice($s))->isMobile()) {
-            $factory = new Device\MobileFactory($this->cache, $this->logger);
+            $factory = $this->mobileFactory;
 
             return $factory($useragent);
         }
 
         if ((new Tv($s))->isTvDevice()) {
-            $factory = new Device\TvFactory($this->cache, $this->logger);
+            $factory = $this->tvFactory;
 
             return $factory($useragent);
         }
 
         if ((new Desktop($s))->isDesktopDevice()) {
-            $factory = new Device\DesktopFactory($this->cache, $this->logger);
+            $factory = $this->desktopFactory;
 
             return $factory($useragent);
         }
 
-        $loaderFactory = new DeviceLoaderFactory($this->cache, $this->logger);
+        $loaderFactory = $this->loaderFactory;
         $loader        = $loaderFactory('unknown', 'unknown');
 
         return $loader($useragent);
