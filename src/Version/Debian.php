@@ -26,10 +26,10 @@ class Debian implements VersionCacheFactoryInterface
     {
         $s = new Stringy($useragent);
 
-        if ($s->containsAll(['debian', 'squeeze'], false)) {
-            return VersionFactory::set('6.0');
+        if ($s->contains('squeeze', false)) {
+            return (new VersionFactory())->set('6.0');
         }
 
-        return VersionFactory::detectVersion($useragent, ['kFreeBSD', 'Debian', 'Raspbian']);
+        return (new VersionFactory())->detectVersion($useragent, ['kFreeBSD', 'Debian']);
     }
 }

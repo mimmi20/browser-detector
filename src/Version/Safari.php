@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use BrowserDetector\Helper\Safari as SafariHelper;
+use BrowserDetector\Version\Helper\Safari as SafariHelper;
 
 class Safari implements VersionCacheFactoryInterface
 {
@@ -29,13 +29,13 @@ class Safari implements VersionCacheFactoryInterface
         $doMatch = preg_match('/Version\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
+            return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches[1]));
         }
 
         $doMatch = preg_match('/Safari\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
+            return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches[1]));
         }
 
         return new Version('0');

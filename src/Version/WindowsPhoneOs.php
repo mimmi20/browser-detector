@@ -27,27 +27,27 @@ class WindowsPhoneOs implements VersionCacheFactoryInterface
         $s = new Stringy($useragent);
 
         if ($s->containsAny(['xblwp7', 'zunewp7'], false)) {
-            return VersionFactory::set('7.5.0');
+            return (new VersionFactory())->set('7.5.0');
         }
 
-        if ($s->contains('wds 8.10', false)) {
-            return VersionFactory::set('8.1.0');
+        if (preg_match('/wds ([\d.]+)/i', $useragent, $matches)) {
+            return (new VersionFactory())->set($matches[1]);
         }
 
         if ($s->contains('wpdesktop', false)) {
             if ($s->contains('windows nt 6.3', false)) {
-                return VersionFactory::set('8.1.0');
+                return (new VersionFactory())->set('8.1.0');
             }
 
             if ($s->contains('windows nt 6.2', false)) {
-                return VersionFactory::set('8.0.0');
+                return (new VersionFactory())->set('8.0.0');
             }
 
-            return VersionFactory::set('0.0.0');
+            return (new VersionFactory())->set('0');
         }
 
-        $searches = ['Windows Phone OS', 'Windows Phone', 'wds', 'Windows Mobile', 'Windows NT', 'WPOS\:'];
+        $searches = ['Windows Phone OS', 'Windows Phone', 'Windows Mobile', 'Windows NT', 'WPOS\:'];
 
-        return VersionFactory::detectVersion($useragent, $searches);
+        return (new VersionFactory())->detectVersion($useragent, $searches);
     }
 }

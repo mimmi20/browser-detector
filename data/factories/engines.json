@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "/Edge/": "edge",
+    "/ U3\\//": "u3",
+    "/ U2\\//": "u2",
+    "/ T7\\//": "t7",
+    "/ T5\\//": "t5",
+    "/opera|presto\\//i": "presto",
+    "/tasman/i": "tasman",
+    "/msie|trident|outlook|kkman/i": "trident",
+    "/goanna/i": "goanna",
+    "/clecko/i": "clecko",
+    "/chrome\\/(?:2[89]|[3-9]\\d)/i": "blink",
+    "/webkit|cfnetwork|safari|dalvik/i": "webkit",
+    "/khtml|konqueror/i": "khtml",
+    "/gecko|firefox/i": "gecko",
+    "/netfront\\/|nf\\/|netfrontlifebrowserinterface|nf3|nintendo 3ds/i": "netfront",
+    "/blackberry/i": "blackberry",
+    "/teleca|obigo/i": "teleca"
+  },
+  "generic": "unknown"
+}

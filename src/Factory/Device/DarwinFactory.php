@@ -11,60 +11,57 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
-use BrowserDetector\Factory;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
-use Stringy\Stringy;
+use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use Psr\Log\LoggerInterface;
 
 /**
  * Browser detection class
  */
-class DarwinFactory implements Factory\FactoryInterface
+class DarwinFactory
 {
-    /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
-     */
-    private $loader;
+    private $factories = [
+        '/cfnetwork\/(?:887|790).*\(x86_64\)/i' => 'desktop',
+        '/cfnetwork\/(?:887|808|790|75[78]|711|709|672|60[29]|548|485|467|459)/i' => 'mobile',
+    ];
 
     /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
+     * @var \BrowserDetector\Loader\DeviceLoaderFactory
      */
-    public function __construct(ExtendedLoaderInterface $loader)
+    private $loaderFactory;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface              $logger
+     */
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->loader = $loader;
+        $this->loaderFactory = new DeviceLoaderFactory($cache, $logger);
     }
 
     /**
      * detects the device name from the given user agent
      *
-     * @param string           $useragent
-     * @param \Stringy\Stringy $s
+     * @param string $useragent
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s): array
+    public function __invoke(string $useragent): array
     {
-        $appleMobileFactory  = new Mobile\AppleFactory($this->loader);
-        $appleDesktopFactory = new Desktop\AppleFactory($this->loader);
+        $loaderFactory = $this->loaderFactory;
 
-        $mobileCodes = [
-            'cfnetwork/808',
-            'cfnetwork/758',
-            'cfnetwork/757',
-            'cfnetwork/711',
-            'cfnetwork/709',
-            'cfnetwork/672',
-            'cfnetwork/609',
-            'cfnetwork/602',
-            'cfnetwork/548',
-            'cfnetwork/485',
-            'cfnetwork/467',
-            'cfnetwork/459',
-        ];
+        foreach ($this->factories as $rule => $mode) {
+            if (preg_match($rule, $useragent)) {
+                $loader = $loaderFactory('apple', $mode);
 
-        if ($s->containsAny($mobileCodes, false)) {
-            return $appleMobileFactory->detect($useragent, $s);
+                return $loader($useragent);
+            }
         }
 
-        return $appleDesktopFactory->detect($useragent, $s);
+        $loader = $loaderFactory('apple', 'desktop');
+
+        return $loader($useragent);
     }
 }

@@ -23,7 +23,7 @@ class AndroidOs implements VersionCacheFactoryInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         if (false !== mb_stripos($useragent, 'android 2.1-update1')) {
-            return VersionFactory::set('2.1.1');
+            return (new VersionFactory())->set('2.1.1');
         }
 
         $search = [
@@ -34,30 +34,28 @@ class AndroidOs implements VersionCacheFactoryInterface
             'linux; googletv',
             'android ouya',
             'android os',
-            'android;',
-            'android_',
-            'android ',
+            'android[;_ ]',
             'android\/',
             'android',
             'adr ',
         ];
 
-        $detectedVersion = VersionFactory::detectVersion($useragent, $search);
+        $detectedVersion = (new VersionFactory())->detectVersion($useragent, $search);
 
         if ('0.0.0' !== $detectedVersion->getVersion()) {
             return $detectedVersion;
         }
 
         if (preg_match('/Linux; (\d+[\d\.]+)/', $useragent, $matches)) {
-            return VersionFactory::set($matches[1]);
+            return (new VersionFactory())->set($matches[1]);
         }
 
         if (false !== mb_stripos($useragent, 'gingerbread')) {
-            return VersionFactory::set('2.3.0');
+            return (new VersionFactory())->set('2.3.0');
         }
 
         if (false !== mb_stripos($useragent, 'android eclair')) {
-            return VersionFactory::set('2.1.0');
+            return (new VersionFactory())->set('2.1.0');
         }
 
         return new Version('0');

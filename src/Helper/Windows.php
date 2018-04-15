@@ -70,11 +70,11 @@ class Windows
             return false;
         }
 
-        if (preg_match('/firefox/i', (string) $this->useragent) && preg_match('/anonym/i', (string) $this->useragent)) {
+        if ($this->useragent->containsAll(['firefox', 'anonym'], false)) {
             return true;
         }
 
-        if (preg_match('/trident/i', (string) $this->useragent) && preg_match('/anonym/i', (string) $this->useragent)) {
+        if ($this->useragent->containsAll(['trident', 'anonym'], false)) {
             return true;
         }
 

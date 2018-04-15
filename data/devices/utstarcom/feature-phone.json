@@ -1,0 +1,50 @@
+{
+  "general utstarcom device": {
+    "codename": "general UTStarcom Device",
+    "marketingName": "general UTStarcom Device",
+    "manufacturer": "UtStarcom",
+    "brand": "UtStarcom",
+    "platform": "android",
+    "type": "feature-phone",
+    "pointingMethod": null,
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": false
+  },
+  "utstarcom g26": {
+    "codename": "G26",
+    "marketingName": "G26",
+    "manufacturer": "UtStarcom",
+    "brand": "UtStarcom",
+    "platform": "java",
+    "type": "feature-phone",
+    "pointingMethod": "stylus",
+    "resolutionWidth": 128,
+    "resolutionHeight": 128,
+    "dualOrientation": false
+  },
+  "utstarcom gtx75": {
+    "codename": "GTX75",
+    "marketingName": "Quickfire",
+    "manufacturer": "UtStarcom",
+    "brand": "Att",
+    "platform": "java",
+    "type": "feature-phone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 240,
+    "resolutionHeight": 320,
+    "dualOrientation": false
+  },
+  "utstarcom xv6175": {
+    "codename": "XV6175",
+    "marketingName": "XV6175",
+    "manufacturer": "UtStarcom",
+    "brand": "UtStarcom",
+    "platform": "windows ce",
+    "type": "feature-phone",
+    "pointingMethod": "stylus",
+    "resolutionWidth": 176,
+    "resolutionHeight": 220,
+    "dualOrientation": false
+  }
+}

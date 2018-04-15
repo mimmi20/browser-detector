@@ -1,0 +1,50 @@
+{
+  "allwinner a10": {
+    "codename": "A10",
+    "marketingName": "A10",
+    "manufacturer": "AllWinner",
+    "brand": "AllWinner",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "allwinner mp907c": {
+    "codename": "MP907C",
+    "marketingName": "MP907C",
+    "manufacturer": "AllWinner",
+    "brand": "AllWinner",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
+    "dualOrientation": true
+  },
+  "allwinner tablet": {
+    "codename": "Tablet",
+    "marketingName": "Tablet",
+    "manufacturer": "AllWinner",
+    "brand": "AllWinner",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "general allwinner device": {
+    "codename": "general AllWinner Device",
+    "marketingName": "general AllWinner Device",
+    "manufacturer": "AllWinner",
+    "brand": "AllWinner",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  }
+}

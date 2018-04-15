@@ -1,31 +1,31 @@
 {
-    "httrack": {
-        "name": "HTTrack",
-        "manufacturer": "XavierRoche",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "offline-browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "HTTrack"
-            ]
-        },
-        "engine": "unknown"
+  "httrack": {
+    "name": "HTTrack",
+    "manufacturer": "XavierRoche",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "offline-browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HTTrack"
+      ]
     },
-    "wget": {
-        "name": "wget",
-        "manufacturer": "FreeSoftwareFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "offline-browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Wget",
-                "wget"
-            ]
-        },
-        "engine": "unknown"
-    }
+    "engine": "unknown"
+  },
+  "wget": {
+    "name": "wget",
+    "manufacturer": "FreeSoftwareFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "offline-browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Wget",
+        "wget"
+      ]
+    },
+    "engine": "unknown"
+  }
 }

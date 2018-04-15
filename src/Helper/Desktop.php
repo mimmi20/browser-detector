@@ -110,24 +110,12 @@ class Desktop
             return true;
         }
 
-        if ((new Helper\Macintosh($this->useragent))->isMacintosh()) {
+        // macOS
+        if (preg_match('/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i', (string) $this->useragent)) {
             return true;
         }
 
         $desktopCodes = [
-            // Mac
-            'macintosh',
-            'darwin',
-            'mac_powerpc',
-            'macbook',
-            'for mac',
-            'ppc mac',
-            'mac os x',
-            'imac',
-            'macbookpro',
-            'macbookair',
-            'macbook',
-            'macmini',
             // BSD
             'freebsd',
             'openbsd',

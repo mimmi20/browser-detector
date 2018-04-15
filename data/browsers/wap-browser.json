@@ -1,40 +1,40 @@
 {
-    "dorado wap browser": {
-        "name": "Dorado WAP Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "wap-browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Dorado WAP\\-Browser"
-            ]
-        },
-        "engine": "unknown"
+  "dorado wap browser": {
+    "name": "Dorado WAP Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "wap-browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Dorado WAP\\-Browser"
+      ]
     },
-    "maui wap browser": {
-        "name": "MAUI Wap Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "wap-browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
+    "engine": "unknown"
+  },
+  "maui wap browser": {
+    "name": "MAUI Wap Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "wap-browser",
+    "version": {
+      "class": null,
+      "search": null
     },
-    "wap browser": {
-        "name": "WAP Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "wap-browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "gecko"
-    }
+    "engine": "unknown"
+  },
+  "wap browser": {
+    "name": "WAP Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "wap-browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "gecko"
+  }
 }

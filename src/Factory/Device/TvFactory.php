@@ -11,91 +11,72 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
-use BrowserDetector\Factory;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
-use Stringy\Stringy;
+use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use Psr\Log\LoggerInterface;
 
-class TvFactory implements Factory\FactoryInterface
+class TvFactory
 {
-    /**
-     * @var array
-     */
-    private $devices = [
-        'xbox one'                    => 'xbox one',
-        'xbox'                        => 'xbox 360',
-        'crkey'                       => 'google cromecast',
-        'dlink.dsm380'                => 'dsm 380',
-        'idl-6651n'                   => 'idl-6651n',
-        'sl32x'                       => 'sl32x',
-        'sl121'                       => 'sl121',
-        'sl150'                       => 'sl150',
-        'digio i33-hd+'               => 'telestar digio 33i hd+',
-        'mxl661l32'                   => 'samsung smart tv',
-        'smart-tv'                    => 'samsung smart tv',
-        '(;metz;mms;;;)'              => 'general metz tv',
-        '(;tcl; ; ; ;)'               => 'general tcl tv',
-        'netrangemmh'                 => 'netrangemmh',
-        'viera'                       => 'viera tv',
-        'technisat digicorder isio s' => 'digicorder isio s',
-        'technisat digit isio s'      => 'digit isio s',
-        'technisat multyvision isio'  => 'multyvision isio',
-        'cx919'                       => 'cx919',
-        'gxt_dongle_3188'             => 'cx919',
-        'apple tv'                    => 'appletv',
-        'netbox'                      => 'sony netbox',
-        'aston;xenahd twin connect'   => 'aston xenahd twin connect',
-        'arcelik;bk'                  => 'arcelik bk',
-        'arcelik;j5'                  => 'arcelik j5',
-        'mstar;t42'                   => 'mstar t42',
-        'aldinord; mb120'             => 'aldinord mb120',
-        'aldinord;'                   => 'general aldinord tv',
+    private $factories = [
+        '/kdl\d{2}|nsz\-gs7\/gx70|sonydtv|netbox/i' => 'sony',
+        '/THOMSON|LF1V/' => 'thomson',
+        '/philips|avm\-/i' => 'philips',
+        '/xbox/i' => 'microsoft',
+        '/crkey/i' => 'google',
+        '/dlink\.dsm380/i' => 'dlink',
+        '/sl150|sl32x|sl121/i' => 'loewe',
+        '/digio i33\-hd\+/i' => 'telestar',
+        '/aldinord/i' => 'aldi-nord',
+        '/cx919|gxt_dongle_3188/i' => 'andoer',
+        '/technisat/i' => 'technisat',
+        '/;metz;/i' => 'metz',
+        '/;tcl;/i' => 'tcl',
+        '/;aston;/i' => 'aston',
+        '/;arcelik;/i' => 'arcelik',
+        '/;mstar;/i' => 'mstar',
+        '/mxl661l32|smart\-tv/i' => 'samsung',
+        '/viera/i' => 'panasonic',
+        '/apple tv/i' => 'apple',
+        '/netrangemmh/i' => 'netrange',
     ];
 
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
+     * @var \BrowserDetector\Loader\DeviceLoaderFactory
      */
-    private $loader;
+    private $loaderFactory;
 
     /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
+     * @param \BrowserDetector\Cache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface              $logger
      */
-    public function __construct(ExtendedLoaderInterface $loader)
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->loader = $loader;
+        $this->loaderFactory = new DeviceLoaderFactory($cache, $logger);
     }
 
     /**
      * detects the device name from the given user agent
      *
-     * @param string           $useragent
-     * @param \Stringy\Stringy $s
+     * @param string $useragent
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s): array
+    public function __invoke(string $useragent): array
     {
-        if (preg_match('/KDL\d{2}/', $useragent)) {
-            return (new Tv\SonyFactory($this->loader))->detect($useragent, $s);
-        }
+        $loaderFactory = $this->loaderFactory;
 
-        if ($s->containsAny(['nsz-gs7/gx70', 'sonydtv'], false)) {
-            return (new Tv\SonyFactory($this->loader))->detect($useragent, $s);
-        }
+        foreach ($this->factories as $rule => $company) {
+            if (preg_match($rule, $useragent)) {
+                $loader = $loaderFactory($company, 'tv');
 
-        if ($s->containsAny(['THOMSON', 'LF1V'], true)) {
-            return (new Tv\ThomsonFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->containsAny(['philips', 'avm-'], false)) {
-            return (new Tv\PhilipsFactory($this->loader))->detect($useragent, $s);
-        }
-
-        foreach ($this->devices as $search => $key) {
-            if ($s->contains($search, false)) {
-                return $this->loader->load($key, $useragent);
+                return $loader($useragent);
             }
         }
 
-        return $this->loader->load('general tv device', $useragent);
+        $loader = $loaderFactory('unknown', 'tv');
+
+        return $loader($useragent);
     }
 }

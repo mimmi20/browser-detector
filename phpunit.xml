@@ -8,7 +8,6 @@
     beStrictAboutOutputDuringTests="true"
     beStrictAboutTestsThatDoNotTestAnything="true"
     beStrictAboutTodoAnnotatedTests="true"
-    verbose="true"
     failOnWarning="true"
     bootstrap="vendor/autoload.php"
     >
@@ -19,7 +18,7 @@
     </php>
 
     <testsuite name="BrowserDetector Test Suite">
-        <directory>tests/</directory>
+        <directory>tests/DetectorTest/</directory>
     </testsuite>
 
     <filter>

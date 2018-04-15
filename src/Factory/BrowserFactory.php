@@ -11,67 +11,59 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Loader\ExtendedLoaderInterface;
-use Stringy\Stringy;
-use UaResult\Os\OsInterface;
+use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\BrowserLoaderFactory;
+use Psr\Log\LoggerInterface;
 
-/**
- * Browser detection class
- */
-class BrowserFactory implements FactoryInterface
+class BrowserFactory implements BrowserFactoryInterface
 {
-    /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
-     */
-    private $loader;
+    private $factories = [
+        '/edge/i' => 'edge',
+        '/chrome|crmo/i' => 'blink',
+        '/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i' => 'webkit',
+        '/iOS/' => 'webkit',
+        '/presto|opera/i' => 'presto',
+        '/trident|msie|like gecko/i' => 'trident',
+        '/gecko|firefox|minefield|shiretoko|bonecho|namoroka/i' => 'gecko',
+    ];
 
     /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
+     * @var \BrowserDetector\Loader\BrowserLoaderFactory
      */
-    public function __construct(ExtendedLoaderInterface $loader)
+    private $loaderFactory;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface              $logger
+     */
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->loader = $loader;
+        $this->loaderFactory = new BrowserLoaderFactory($cache, $logger);
     }
 
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string                        $useragent
-     * @param Stringy                       $s
-     * @param \UaResult\Os\OsInterface|null $platform
+     * @param string $useragent
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s, ?OsInterface $platform = null): array
+    public function __invoke(string $useragent): array
     {
-        if ($s->contains('edge', false)) {
-            return (new Browser\EdgeBasedFactory($this->loader))->detect($useragent, $s, $platform);
+        $loaderFactory = $this->loaderFactory;
+
+        foreach ($this->factories as $rule => $mode) {
+            if (preg_match($rule, $useragent)) {
+                $loader = $loaderFactory($mode);
+
+                return $loader($useragent);
+            }
         }
 
-        if ($s->containsAny(['chrome', 'crmo'], false)) {
-            return (new Browser\BlinkOrChromeBasedFactory($this->loader))->detect($useragent, $s, $platform);
-        }
+        $loader = $loaderFactory('genericbrowser');
 
-        if ($s->containsAny(['safari', 'webkit', 'cfnetwork', 'dalvik', 'ipad', 'ipod', 'iphone', 'khtml'], false)) {
-            return (new Browser\WebkitOrKhtmlOrSafariBasedFactory($this->loader))->detect($useragent, $s, $platform);
-        }
-
-        if ($s->contains('iOS', true)) {
-            return (new Browser\WebkitOrKhtmlOrSafariBasedFactory($this->loader))->detect($useragent, $s, $platform);
-        }
-
-        if ($s->containsAny(['opera', 'presto'], false)) {
-            return (new Browser\PrestoOrOperaBasedFactory($this->loader))->detect($useragent, $s, $platform);
-        }
-
-        if ($s->containsAny(['msie', 'trident', 'like gecko'], false)) {
-            return (new Browser\TridentOrIeBasedFactory($this->loader))->detect($useragent, $s, $platform);
-        }
-
-        if ($s->containsAny(['firefox', 'minefield', 'shiretoko', 'bonecho', 'namoroka', 'gecko'], false)) {
-            return (new Browser\GeckoOrFirefoxBasedFactory($this->loader))->detect($useragent, $s, $platform);
-        }
-
-        return (new Browser\GenericBrowserFactory($this->loader))->detect($useragent, $s, $platform);
+        return $loader($useragent);
     }
 }

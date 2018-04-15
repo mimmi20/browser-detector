@@ -1,43 +1,43 @@
 {
-    "google feedfetcher": {
-        "name": "Google Feedfetcher",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "bot-syndication-reader",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Feedfetcher\\-Google",
-                "Feedfetcher\\-Google\\-iGoogleGadgets"
-            ]
-        },
-        "engine": "unknown"
+  "google feedfetcher": {
+    "name": "Google Feedfetcher",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot-syndication-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Feedfetcher\\-Google",
+        "Feedfetcher\\-Google\\-iGoogleGadgets"
+      ]
     },
-    "r6 feedfetcher": {
-        "name": "R6 FeedFetcher",
-        "manufacturer": "Salesforce",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "bot-syndication-reader",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
+    "engine": "unknown"
+  },
+  "r6 feedfetcher": {
+    "name": "R6 FeedFetcher",
+    "manufacturer": "Salesforce",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot-syndication-reader",
+    "version": {
+      "class": null,
+      "search": null
     },
-    "spinn3r rss aggregator": {
-        "name": "Spinn3r RSS Aggregator",
-        "manufacturer": "Tailrank",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "bot-syndication-reader",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Spinn3r"
-            ]
-        },
-        "engine": "gecko"
-    }
+    "engine": "unknown"
+  },
+  "spinn3r rss aggregator": {
+    "name": "Spinn3r RSS Aggregator",
+    "manufacturer": "Tailrank",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot-syndication-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Spinn3r"
+      ]
+    },
+    "engine": "gecko"
+  }
 }

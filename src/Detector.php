@@ -11,20 +11,14 @@
 declare(strict_types = 1);
 namespace BrowserDetector;
 
-use BrowserDetector\Cache\Cache;
-use BrowserDetector\Factory\BrowserFactory;
-use BrowserDetector\Factory\DeviceFactory;
-use BrowserDetector\Factory\EngineFactory;
-use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Loader\BrowserLoader;
-use BrowserDetector\Loader\DeviceLoader;
-use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Factory\BrowserFactoryInterface;
+use BrowserDetector\Factory\DeviceFactoryInterface;
+use BrowserDetector\Factory\PlatformFactoryInterface;
+use BrowserDetector\Loader\Loader;
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Loader\PlatformLoader;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
-use Stringy\Stringy;
+use Psr\SimpleCache\InvalidArgumentException;
 use UaNormalizer\NormalizerFactory;
 use UaRequest\GenericRequest;
 use UaRequest\GenericRequestFactory;
@@ -38,13 +32,6 @@ use UnexpectedValueException;
 class Detector
 {
     /**
-     * a cache object
-     *
-     * @var \BrowserDetector\Cache\Cache
-     */
-    private $cache;
-
-    /**
      * an logger instance
      *
      * @var \Psr\Log\LoggerInterface
@@ -52,21 +39,54 @@ class Detector
     private $logger;
 
     /**
+     * @var \BrowserDetector\Factory\DeviceFactoryInterface
+     */
+    private $deviceFactory;
+
+    /**
+     * @var \BrowserDetector\Factory\PlatformFactoryInterface
+     */
+    private $platformFactory;
+
+    /**
+     * @var \BrowserDetector\Factory\BrowserFactoryInterface
+     */
+    private $browserFactory;
+
+    /**
+     * @var \BrowserDetector\Loader\Loader
+     */
+    private $engineLoader;
+
+    /**
      * sets the cache used to make the detection faster
      *
-     * @param \Psr\SimpleCache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface        $logger
+     * @param \Psr\Log\LoggerInterface                          $logger
+     * @param \BrowserDetector\Factory\DeviceFactoryInterface   $deviceFactory
+     * @param \BrowserDetector\Factory\PlatformFactoryInterface $platformFactory
+     * @param \BrowserDetector\Factory\BrowserFactoryInterface  $browserFactory
+     * @param \BrowserDetector\Loader\Loader                    $engineLoader
      */
-    public function __construct(PsrCacheInterface $cache, LoggerInterface $logger)
-    {
-        $this->cache  = new Cache($cache);
-        $this->logger = $logger;
+    public function __construct(
+        LoggerInterface $logger,
+        DeviceFactoryInterface $deviceFactory,
+        PlatformFactoryInterface $platformFactory,
+        BrowserFactoryInterface $browserFactory,
+        Loader $engineLoader
+    ) {
+        $this->logger          = $logger;
+        $this->deviceFactory   = $deviceFactory;
+        $this->platformFactory = $platformFactory;
+        $this->browserFactory  = $browserFactory;
+        $this->engineLoader    = $engineLoader;
     }
 
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param array|\Psr\Http\Message\MessageInterface|string $headers
+     * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $headers
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return \UaResult\Result\ResultInterface
      *
@@ -74,49 +94,21 @@ class Detector
      */
     public function getBrowser($headers): ResultInterface
     {
+        return $this->__invoke($headers);
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $headers
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return \UaResult\Result\ResultInterface
+     */
+    public function __invoke($headers): ResultInterface
+    {
         $request = $this->buildRequest($headers);
-
-        return $this->parse($request);
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param string $useragent
-     *
-     * @return \UaResult\Result\Result
-     */
-    public function parseString(string $useragent)
-    {
-        $request = (new GenericRequestFactory())->createRequestFromString($useragent);
-
-        return $this->parse($request);
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param array $headers
-     *
-     * @return \UaResult\Result\Result
-     */
-    public function parseArray(array $headers)
-    {
-        $request = (new GenericRequestFactory())->createRequestFromArray($headers);
-
-        return $this->parse($request);
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param MessageInterface $message
-     *
-     * @return \UaResult\Result\Result
-     */
-    public function parseMessage(MessageInterface $message)
-    {
-        $request = (new GenericRequestFactory())->createRequestFromPsr7Message($message);
 
         return $this->parse($request);
     }
@@ -124,18 +116,20 @@ class Detector
     /**
      * @param \UaRequest\GenericRequest $request
      *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return \UaResult\Result\Result
      */
     private function parse(GenericRequest $request)
     {
-        $deviceFactory = new DeviceFactory(DeviceLoader::getInstance($this->cache, $this->logger));
         $normalizer    = (new NormalizerFactory())->build();
         $deviceUa      = $normalizer->normalize($request->getDeviceUserAgent());
+        $deviceFactory = $this->deviceFactory;
 
         /* @var \UaResult\Device\DeviceInterface $device */
         /* @var \UaResult\Os\OsInterface $platform */
         try {
-            [$device, $platform] = $deviceFactory->detect($deviceUa, new Stringy($deviceUa));
+            [$device, $platform] = $deviceFactory($deviceUa);
         } catch (NotFoundException $e) {
             $this->logger->debug($e);
 
@@ -144,31 +138,39 @@ class Detector
         }
 
         $browserUa = $normalizer->normalize($request->getBrowserUserAgent());
-        $s         = new Stringy($browserUa);
 
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
-
-            $platformFactory = new PlatformFactory(PlatformLoader::getInstance($this->cache, $this->logger));
+            $platformFactory = $this->platformFactory;
 
             try {
-                $platform = $platformFactory->detect($browserUa, $s);
+                $platform = $platformFactory($browserUa);
             } catch (NotFoundException $e) {
                 $this->logger->debug($e);
                 $platform = null;
             }
         }
 
-        $browserLoader = BrowserLoader::getInstance($this->cache, $this->logger);
+        $browserFactory = $this->browserFactory;
 
         /* @var \UaResult\Browser\BrowserInterface $browser */
         /* @var \UaResult\Engine\EngineInterface $engine */
-        [$browser, $engine] = (new BrowserFactory($browserLoader))->detect($browserUa, $s, $platform);
-        $engineLoader       = EngineLoader::getInstance($this->cache, $this->logger);
+        [$browser, $engine] = $browserFactory($browserUa);
 
         if (null === $engine) {
             $this->logger->debug('engine not detected from browser');
-            $engine = (new EngineFactory($engineLoader))->detect($browserUa, $s, $browserLoader, $platform);
+
+            if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
+                $engine = $this->engineLoader->load('webkit', $browserUa);
+            } else {
+                $engineLoader = $this->engineLoader;
+
+                try {
+                    $engine = $engineLoader($browserUa);
+                } catch (InvalidArgumentException $e) {
+                    $this->logger->info($e);
+                }
+            }
         }
 
         return new Result(
@@ -181,7 +183,7 @@ class Detector
     }
 
     /**
-     * @param array|\Psr\Http\Message\MessageInterface|string $request
+     * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $request
      *
      * @throws \UnexpectedValueException
      *
@@ -189,6 +191,12 @@ class Detector
      */
     private function buildRequest($request): GenericRequest
     {
+        if ($request instanceof GenericRequest) {
+            $this->logger->debug('request object used as is');
+
+            return $request;
+        }
+
         $requestFactory = new GenericRequestFactory();
 
         if ($request instanceof MessageInterface) {
@@ -212,19 +220,5 @@ class Detector
         throw new UnexpectedValueException(
             'the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface'
         );
-    }
-
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
-     *
-     * @return void
-     */
-    public function warmupCache(): void
-    {
-        BrowserLoader::getInstance($this->cache, $this->logger)->warmupCache();
-        PlatformLoader::getInstance($this->cache, $this->logger)->warmupCache();
-        EngineLoader::getInstance($this->cache, $this->logger)->warmupCache();
-        DeviceLoader::getInstance($this->cache, $this->logger)->warmupCache();
     }
 }

@@ -1,72 +1,72 @@
 {
-    "adsense bot": {
-        "name": "AdSense Bot",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "bot-trancoder",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Mediapartners\\-Google"
-            ]
-        },
-        "engine": "unknown"
+  "adsense bot": {
+    "name": "AdSense Bot",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot-trancoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mediapartners\\-Google"
+      ]
     },
-    "google markup tester": {
-        "name": "Google Markup Tester",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "bot-trancoder",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Google Markup Tester"
-            ]
-        },
-        "engine": "unknown"
+    "engine": "unknown"
+  },
+  "google markup tester": {
+    "name": "Google Markup Tester",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot-trancoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google Markup Tester"
+      ]
     },
-    "google web preview": {
-        "name": "Google Web Preview",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "bot-trancoder",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Google Web Preview"
-            ]
-        },
-        "engine": null
+    "engine": "unknown"
+  },
+  "google web preview": {
+    "name": "Google Web Preview",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot-trancoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google Web Preview"
+      ]
     },
-    "google web preview analytics": {
-        "name": "Google Web Preview Analytics",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "bot-trancoder",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Google Web Preview Analytics"
-            ]
-        },
-        "engine": null
+    "engine": null
+  },
+  "google web preview analytics": {
+    "name": "Google Web Preview Analytics",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot-trancoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google Web Preview Analytics"
+      ]
     },
-    "google wireless transcoder": {
-        "name": "Google Wireless Transcoder",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "bot-trancoder",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Google Wireless Transcoder"
-            ]
-        },
-        "engine": "unknown"
-    }
+    "engine": null
+  },
+  "google wireless transcoder": {
+    "name": "Google Wireless Transcoder",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot-trancoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google Wireless Transcoder"
+      ]
+    },
+    "engine": "unknown"
+  }
 }

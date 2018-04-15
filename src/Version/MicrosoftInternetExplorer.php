@@ -26,14 +26,14 @@ class MicrosoftInternetExplorer implements VersionCacheFactoryInterface
         $engineVersion = (int) $version->getMajor();
 
         switch ($engineVersion) {
-            case 4:
-                return VersionFactory::set('8.0');
-            case 5:
-                return VersionFactory::set('9.0');
-            case 6:
-                return VersionFactory::set('10.0');
             case 7:
-                return VersionFactory::set('11.0');
+                return (new VersionFactory())->set('11.0');
+            case 6:
+                return (new VersionFactory())->set('10.0');
+            case 5:
+                return (new VersionFactory())->set('9.0');
+            case 4:
+                return (new VersionFactory())->set('8.0');
             default:
                 // nothing to do
                 break;
@@ -42,9 +42,9 @@ class MicrosoftInternetExplorer implements VersionCacheFactoryInterface
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($matches[1]);
+            return (new VersionFactory())->set($matches[1]);
         }
 
-        return VersionFactory::set('0');
+        return (new VersionFactory())->set('0');
     }
 }

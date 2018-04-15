@@ -1,3704 +1,3701 @@
 {
-    "1stbrowser": {
-        "name": "1st Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "1stBrowser"
-            ]
-        },
-        "engine": "blink"
-    },
-    "2345 browser": {
-        "name": "2345 Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Mb2345Browser",
-                "2345Explorer",
-                "2345chrome v",
-                "2345chrome"
-            ]
-        },
-        "engine": "blink"
-    },
-    "360 browser": {
-        "name": "360 Browser",
-        "manufacturer": "Qihoo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "360%20Browser",
-                "360 Aphone Browser \\("
-            ]
-        },
-        "engine": "webkit"
-    },
-    "360 secure browser": {
-        "name": "360 Secure Browser",
-        "manufacturer": "Qihoo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "QIHU 360SE"
-            ]
-        },
-        "engine": "blink"
-    },
-    "360 speed browser": {
-        "name": "360 Speed Browser",
-        "manufacturer": "Qihoo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "QIHU 360EE"
-            ]
-        },
-        "engine": "blink"
-    },
-    "abrowse": {
-        "name": "ABrowse",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "ABrowse"
-            ]
-        },
-        "engine": null
-    },
-    "alcatel": {
-        "name": "Alcatel",
-        "manufacturer": "Alcatel",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "aloha-browser": {
-        "name": "Aloha Browser",
-        "manufacturer": "Aloha Mobile",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "AlohaBrowser"
-            ]
-        },
-        "engine": "blink"
-    },
-    "amigo": {
-        "name": "Amigo",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Amigo"
-            ]
-        },
-        "engine": null
-    },
-    "android webkit": {
-        "name": "Android Webkit",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\AndroidWebkit",
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "android webview": {
-        "name": "Android WebView",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Version"
-            ]
-        },
-        "engine": null
-    },
-    "apusbrowser": {
-        "name": "APUSBrowser",
-        "manufacturer": "ApusGroup",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "APUSBrowser"
-            ]
-        },
-        "engine": null
-    },
-    "argclrint": {
-        "name": "ArgClrInt",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "ArgClrInt",
-                "Argclrint"
-            ]
-        },
-        "engine": "trident"
-    },
-    "arora": {
-        "name": "Arora",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Arora"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "atomic browser": {
-        "name": "Atomic Browser",
-        "manufacturer": "RichardTrautvetter",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "AtomicBrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "atomic browser lite": {
-        "name": "Atomic Browser Lite",
-        "manufacturer": "RichardTrautvetter",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "AtomicLite"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "avant": {
-        "name": "Avant",
-        "manufacturer": "AvantForce",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": null
-    },
-    "avast safezone": {
-        "name": "Avast SafeZone",
-        "manufacturer": "AvastSoftware",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "ASW"
-            ]
-        },
-        "engine": null
-    },
-    "aviator": {
-        "name": "Aviator",
-        "manufacturer": "WhiteHat",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Aviator"
-            ]
-        },
-        "engine": null
-    },
-    "avira scout": {
-        "name": "Avira Scout",
-        "manufacturer": "AviraOperations",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "AviraScout"
-            ]
-        },
-        "engine": "blink"
-    },
-    "baidu browser": {
-        "name": "Baidu Browser",
-        "manufacturer": "Baidu",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "bdbrowser_i18n",
-                "bdbrowser",
-                "baidubrowser",
-                "BIDUBrowser"
-            ]
-        },
-        "engine": null
-    },
-    "baidu browser hd": {
-        "name": "Baidu Browser HD",
-        "manufacturer": "Baidu",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "bdbrowserhd_i18n"
-            ]
-        },
-        "engine": null
-    },
-    "baidu browser mini": {
-        "name": "Baidu Browser Mini",
-        "manufacturer": "Baidu",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "bdbrowser_mini"
-            ]
-        },
-        "engine": null
-    },
-    "beamrise": {
-        "name": "Beamrise",
-        "manufacturer": "BeamriseTeam",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Beamrise"
-            ]
-        },
-        "engine": null
-    },
-    "benq": {
-        "name": "Benq",
-        "manufacturer": "Benq",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "bitdefender safepay": {
-        "name": "Safepay",
-        "manufacturer": "Bitdefender",
-        "pdfSupport": false,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "blink"
-    },
-    "blackberry": {
-        "name": "BlackBerry",
-        "manufacturer": "Rim",
-        "pdfSupport": false,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "BlackBerry[0-9a-z]+",
-                "BlackBerrySimulator",
-                "Version"
-            ]
-        },
-        "engine": null
-    },
-    "blackberry playbook tablet": {
-        "name": "Blackberry Playbook Browser",
-        "manufacturer": "Rim",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Version"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "boardreader": {
-        "name": "BoardReader",
-        "manufacturer": "BoardReader",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "BoardReader"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "bobrowser": {
-        "name": "BoBrowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "BoBrowser"
-            ]
-        },
-        "engine": "blink"
-    },
-    "bowser": {
-        "name": "Bowser",
-        "manufacturer": "EricssonResearch",
-        "pdfSupport": false,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Bowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "boxee": {
-        "name": "Boxee",
-        "manufacturer": "Boxee",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Boxee",
-                "boxee"
-            ]
-        },
-        "engine": null
-    },
-    "bsnbrowserlite": {
-        "name": "BSNBrowserLite",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "camino": {
-        "name": "Camino",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Camino"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "cent": {
-        "name": "Cent",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Cent"
-            ]
-        },
-        "engine": "blink"
-    },
-    "chedot": {
-        "name": "Chedot",
-        "manufacturer": "Chedot",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Chedot"
-            ]
-        },
-        "engine": null
-    },
-    "choosy": {
-        "name": "Choosy",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Choosy"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "chrome": {
-        "name": "Chrome",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Chrome",
-                "CrMo"
-            ]
-        },
-        "engine": null
-    },
-    "chrome for ios": {
-        "name": "Chrome for iOS",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "CriOS"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "chromium": {
-        "name": "Chromium",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Chromium"
-            ]
-        },
-        "engine": null
-    },
-    "classilla": {
-        "name": "Classilla",
-        "manufacturer": "Unknown",
-        "pdfSupport": false,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "clecko"
-    },
-    "clipish": {
-        "name": "Clipish",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Clipish"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "cloudsurfer": {
-        "name": "CloudSurfer",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "CloudSurfer"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "cm browser": {
-        "name": "CM Browser",
-        "manufacturer": "CheetahMobile",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": null
-    },
-    "coc_coc_browser": {
-        "name": "Coc Coc Browser",
-        "manufacturer": "CocCocCompany",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "coc_coc_browser"
-            ]
-        },
-        "engine": null
-    },
-    "cometbird": {
-        "name": "CometBird",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "CometBird"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "coolnovo": {
-        "name": "CoolNovo",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "CoolNovo"
-            ]
-        },
-        "engine": null
-    },
-    "coolnovo chrome plus": {
-        "name": "CoolNovo Chrome Plus",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "ChromePlus"
-            ]
-        },
-        "engine": null
-    },
-    "corom browser": {
-        "name": "CoRom Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "CoRom"
-            ]
-        },
-        "engine": "blink"
-    },
-    "crazy browser": {
-        "name": "Crazy Browser",
-        "manufacturer": "CrazyBrowser",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Crazy Browser"
-            ]
-        },
-        "engine": "trident"
-    },
-    "cyberfox": {
-        "name": "Cyberfox",
-        "manufacturer": "8pecxstudios",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Cyberfox"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "darwin browser": {
-        "name": "Darwin Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "deepnet explorer": {
-        "name": "Deepnet Explorer",
-        "manufacturer": "DeepnetSecurity",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Deepnet Explorer"
-            ]
-        },
-        "engine": "trident"
-    },
-    "diga": {
-        "name": "Diga",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Diga"
-            ]
-        },
-        "engine": null
-    },
-    "diglo": {
-        "name": "Diglo",
-        "manufacturer": "Diglo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Diglo"
-            ]
-        },
-        "engine": null
-    },
-    "diigo browser": {
-        "name": "Diigo Browser",
-        "manufacturer": "Diigo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Version",
-                "DiigoBrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "dillo": {
-        "name": "Dillo",
-        "manufacturer": "DilloProject",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Dillo"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "docomo": {
-        "name": "DoCoMo",
-        "manufacturer": "DoCoMo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "dolfin": {
-        "name": "Dolfin",
-        "manufacturer": "MopoTab",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Dolphin HD",
-                "Dolphin\\/INT\\-",
-                "Dolphin\\/INT",
-                "Dolfin",
-                "Dolphin"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "dragon": {
-        "name": "Dragon",
-        "manufacturer": "Comodo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Comodo Dragon",
-                "Dragon",
-                "Chrome"
-            ]
-        },
-        "engine": null
-    },
-    "dt-browser": {
-        "name": "DT Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "DTB"
-            ]
-        },
-        "engine": null
-    },
-    "edge": {
-        "name": "Edge",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Edge"
-            ]
-        },
-        "engine": "edge"
-    },
-    "edge mobile": {
-        "name": "Edge Mobile",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Edge"
-            ]
-        },
-        "engine": "edge"
-    },
-    "element browser": {
-        "name": "Element Browser",
-        "manufacturer": "ElementSoftware",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Element Browser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "elinks": {
-        "name": "ELinks",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "ELinks"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "epiphany": {
-        "name": "Epiphany",
-        "manufacturer": "TheGnomeProject",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Epiphany",
-                "Version",
-                "Safari",
-                "AppleWebKit"
-            ]
-        },
-        "engine": null
-    },
-    "espial tv browser": {
-        "name": "Espial TV Browser",
-        "manufacturer": "EspialGroup",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Espial"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "eudora": {
-        "name": "Eudora",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Eudora"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "eui browser": {
-        "name": "eUI Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "EUI Browser"
-            ]
-        },
-        "engine": "blink"
-    },
-    "extras4imovie": {
-        "name": "Extras4iMovie",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Extras4iMovie"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "falkmaps": {
-        "name": "FalkMaps",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "FalkMaps"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "fennec": {
-        "name": "Fennec",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Fennec"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "firebird": {
-        "name": "Firebird",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Firebird"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "firefox": {
-        "name": "Firefox",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Firefox",
-                "Minefield",
-                "Shiretoko",
-                "BonEcho",
-                "Namoroka",
-                "Fennec"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "firefox for ios": {
-        "name": "Firefox for iOS",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "FxiOS"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "firefox klar": {
-        "name": "Firefox Focus",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Focus",
-                "Klar"
-            ]
-        },
-        "engine": "blink"
-    },
-    "flock": {
-        "name": "Flock",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Flock"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "fluid": {
-        "name": "Fluid",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Fluid"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "flyflow": {
-        "name": "FlyFlow",
-        "manufacturer": "Baidu",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "FlyFlow",
-                "FlyFlow\\-"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "galeon": {
-        "name": "Galeon",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Galeon"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "google": {
-        "name": "Google",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "google desktop": {
-        "name": "Google Desktop",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Google Desktop"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "google earth": {
-        "name": "Google Earth",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Google Earth"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "googletv": {
-        "name": "GoogleTV",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "hbbtv": {
-        "name": "HbbTV",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "HbbTV"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "headless-chrome": {
-        "name": "Headless Chrome",
-        "manufacturer": "Google",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "HeadlessChrome"
-            ]
-        },
-        "engine": null
-    },
-    "hitpad": {
-        "name": "Hitpad",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Hitpad"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "hot wallpapers": {
-        "name": "Hot Wallpapers",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Hot Wallpapers"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "iball": {
-        "name": "iBall",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "ibisbrowser": {
-        "name": "Ibisbrowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Ibisbrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "ibrowse": {
-        "name": "IBrowse",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "IBrowse"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "ibrowser": {
-        "name": "iBrowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "iBrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "ibrowser mini": {
-        "name": "iBrowser Mini",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "iBrowser\\/Mini"
-            ]
-        },
-        "engine": null
-    },
-    "ibuilder": {
-        "name": "iBuilder",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "iBuilder"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "icab": {
-        "name": "iCab",
-        "manufacturer": "AlexanderClauss",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "iCabMobile",
-                "iCab"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "icab mobile": {
-        "name": "iCab Mobile",
-        "manufacturer": "AlexanderClauss",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "iCabMobile",
-                "iCab"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "iceape": {
-        "name": "Iceape",
-        "manufacturer": "SoftwareInThePublicInterest",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Iceape"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "icecat": {
-        "name": "IceCat",
-        "manufacturer": "Gnu",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "IceCat"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "icedove": {
-        "name": "Icedove",
-        "manufacturer": "SoftwareInThePublicInterest",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Icedove"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "icedragon": {
-        "name": "IceDragon",
-        "manufacturer": "Comodo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "IceDragon"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "iceowl": {
-        "name": "Iceowl",
-        "manufacturer": "SoftwareInThePublicInterest",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Iceowl"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "iceweasel": {
-        "name": "Iceweasel",
-        "manufacturer": "SoftwareInThePublicInterest",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Iceweasel",
-                "Firefox"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "ichromy": {
-        "name": "iChromy",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "iemobile": {
-        "name": "IEMobile",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": true,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "IEMobile",
-                "MSIE",
-                "rv\\:"
-            ]
-        },
-        "engine": "trident"
-    },
-    "inettvbrowser": {
-        "name": "InettvBrowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "InettvBrowser",
-                "Version"
-            ]
-        },
-        "engine": "presto"
-    },
-    "internet explorer": {
-        "name": "Internet Explorer",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftInternetExplorer",
-            "search": null
-        },
-        "engine": "trident"
-    },
-    "internet explorer with chromeframe": {
-        "name": "Internet Explorer with Chromeframe",
-        "manufacturer": "Microsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\MicrosoftInternetExplorer",
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "ipick": {
-        "name": "iPick",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "iPick"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "iridium browser": {
-        "name": "Iridium Browser",
-        "manufacturer": "IridiumBrowserTeam",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Iridium"
-            ]
-        },
-        "engine": null
-    },
-    "iris": {
-        "name": "Iris Browser",
-        "manufacturer": "Torch",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Iris"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "iron": {
-        "name": "Iron",
-        "manufacturer": "Srware",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Iron",
-                "Chrome"
-            ]
-        },
-        "engine": null
-    },
-    "isource+ app": {
-        "name": "iSource+ App",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "iSource\\+"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "jasmine": {
-        "name": "Jasmine",
-        "manufacturer": "PivotalLabs",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Jasmine"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "jig browser web": {
-        "name": "jig browser web",
-        "manufacturer": "W3c",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "jig browser web; ",
-                "jig browser web"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "k-meleon": {
-        "name": "K-Meleon",
-        "manufacturer": "KmeleonBrowserOrg",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "K\\-Meleon"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "k-ninja": {
-        "name": "K-Ninja",
-        "manufacturer": "KmeleonBrowserOrg",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "K\\-Ninja"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "kazehakase": {
-        "name": "Kazehakase",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Kazehakase"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "kded": {
-        "name": "kded",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "kded"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "kindle": {
-        "name": "Kindle",
-        "manufacturer": "Amazon",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Kindle"
-            ]
-        },
-        "engine": null
-    },
-    "kinza": {
-        "name": "Kinza",
-        "manufacturer": "Kinza",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Kinza"
-            ]
-        },
-        "engine": null
-    },
-    "kkman": {
-        "name": "KKMAN",
-        "manufacturer": "Kkbox",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "KKman"
-            ]
-        },
-        "engine": "trident"
-    },
-    "konqueror": {
-        "name": "Konqueror",
-        "manufacturer": "Kde",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Konqueror",
-                "konqueror"
-            ]
-        },
-        "engine": null
-    },
-    "kuaiso browser": {
-        "name": "Kuaiso Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Kuaiso"
-            ]
-        },
-        "engine": "blink"
-    },
-    "liebao": {
-        "name": "liebao",
-        "manufacturer": "Kingsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "LBBROWSER"
-            ]
-        },
-        "engine": null
-    },
-    "liebao fast": {
-        "name": "LieBaoFast",
-        "manufacturer": "Kingsoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "LieBaoFast"
-            ]
-        },
-        "engine": null
-    },
-    "links": {
-        "name": "Links",
-        "manufacturer": "MikulasPatocka",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Links",
-                "Links \\("
-            ]
-        },
-        "engine": "unknown"
-    },
-    "lolifox": {
-        "name": "lolifox",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "lolifox"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "luakit": {
-        "name": "luakit",
-        "manufacturer": "MasonLarobina",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "WebKitGTK\\+"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "lunascape": {
-        "name": "Lunascape",
-        "manufacturer": "Lunascape",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Lunascape",
-                "iLunascape"
-            ]
-        },
-        "engine": null
-    },
-    "lynx": {
-        "name": "Lynx",
-        "manufacturer": "ThomasDickey",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Lynx"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "mail exchangewebservices": {
-        "name": "Mail ExchangeWebServices",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "ExchangeWebServices",
-                "Mail"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "maven": {
-        "name": "Maven",
-        "manufacturer": "Gihyun Jung",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Maven"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "mavenplus": {
-        "name": "MavenPlus",
-        "manufacturer": "Gihyun Jung",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MavenPlus"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "maxthon": {
-        "name": "Maxthon",
-        "manufacturer": "Maxthon",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\Maxthon",
-            "search": null
-        },
-        "engine": null
-    },
-    "maxthon nitro": {
-        "name": "Maxthon Nitro",
-        "manufacturer": "Maxthon",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MxNitro"
-            ]
-        },
-        "engine": null
-    },
-    "mercury": {
-        "name": "Mercury",
-        "manufacturer": "IlegendSoft",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Mercury3",
-                "Mercury",
-                "Mercury3Free"
-            ]
-        },
-        "engine": null
-    },
-    "microb": {
-        "name": "MicroB",
-        "manufacturer": "Nokia",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MicroB",
-                "Maemo Browser"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "midori": {
-        "name": "Midori",
-        "manufacturer": "ChristianDywan",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Midori",
-                "Midori\\-"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "minimo": {
-        "name": "Minimo",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Minimo"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "mitsubishi": {
-        "name": "Mitsubishi",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "miui browser": {
-        "name": "Miui Browser",
-        "manufacturer": "XiaomiTech",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MiuiBrowser"
-            ]
-        },
-        "engine": null
-    },
-    "mobile safari uiwebview": {
-        "name": "Mobile Safari UIWebView",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": true,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "mobilerss": {
-        "name": "MobileRSS",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MobileRSS",
-                "MobileRSSFree",
-                "MobileRSSFree\\-iPad"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "model s browser": {
-        "name": "Model S Browser",
-        "manufacturer": "TeslaMotors",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "QtCarBrowser"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "motorola internet browser": {
-        "name": "Motorola Internet Browser",
-        "manufacturer": "Motorola",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MIB",
-                "MIB\\/BER"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "mozad": {
-        "name": "Mozad",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Mozad"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "mozilla": {
-        "name": "Mozilla",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Mozilla"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "multizilla": {
-        "name": "MultiZilla",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MultiZilla"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "my internet browser": {
-        "name": "My Internet Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "myibrow"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "mythbrowser": {
-        "name": "MythBrowser",
-        "manufacturer": "MythTV",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "nec": {
-        "name": "Nec",
-        "manufacturer": "Nec",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "netbox": {
-        "name": "Netbox",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Netbox"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "netfront": {
-        "name": "NetFront",
-        "manufacturer": "Access",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "NetFront",
-                "NF",
-                "NetFrontLifeBrowser",
-                "NF3"
-            ]
-        },
-        "engine": null
-    },
-    "netfront nx": {
-        "name": "NetFront NX",
-        "manufacturer": "Access",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "NX"
-            ]
-        },
-        "engine": null
-    },
-    "netfrontlifebrowser": {
-        "name": "NetFrontLifeBrowser",
-        "manufacturer": "Access",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "NetFrontLifeBrowser"
-            ]
-        },
-        "engine": "netfront"
-    },
-    "netnewswire": {
-        "name": "NetNewsWire",
-        "manufacturer": "BlackPixel",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "NetNewsWire"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "netscape": {
-        "name": "Netscape",
-        "manufacturer": "Netscape",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Netscape6",
-                "Netscape"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "netscape navigator": {
-        "name": "Navigator",
-        "manufacturer": "Netscape",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Navigator"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "nettv": {
-        "name": "NetTV",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "NETTV"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "newb": {
-        "name": "NewB",
-        "manufacturer": "Philips",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "NewB"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "nichrome": {
-        "name": "Nichrome",
-        "manufacturer": "Rambler",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Nichrome\\/self",
-                "Nichrome"
-            ]
-        },
-        "engine": null
-    },
-    "ninesky-browser": {
-        "name": "Ninesky Browser",
-        "manufacturer": "NineSky",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Ninesky\\-android\\-mobile"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "nokiabrowser": {
-        "name": "Nokia Browser",
-        "manufacturer": "Nokia",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "BrowserNG",
-                "NokiaBrowser",
-                "Version"
-            ]
-        },
-        "engine": null
-    },
-    "obigo q": {
-        "name": "Obigo Q",
-        "manufacturer": "Obigo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\ObigoQ",
-            "search": null
-        },
-        "engine": null
-    },
-    "oculus-browser": {
-        "name": "OculusBrowser",
-        "manufacturer": "Facebook",
-        "pdfSupport": false,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "OculusBrowser"
-            ]
-        },
-        "engine": "blink"
-    },
-    "omniweb": {
-        "name": "OmniWeb",
-        "manufacturer": "OmniDevelopment",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Version",
-                "Omniweb",
-                "OmniWeb"
-            ]
-        },
-        "engine": null
-    },
-    "onebrowser": {
-        "name": "OneBrowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "OneBrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "open-webkit-sharp": {
-        "name": "open-webkit-sharp",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "OpenWebKitSharp"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "openwave mobile browser": {
-        "name": "Openwave Mobile Browser",
-        "manufacturer": "Myriad",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "UP\\.Browser",
-                "UP",
-                "OpenWave"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "opera": {
-        "name": "Opera",
-        "manufacturer": "Opera",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "OPR",
-                "Version",
-                "Opera"
-            ]
-        },
-        "engine": null
-    },
-    "opera devices": {
-        "name": "Opera Devices",
-        "manufacturer": "Opera",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "OMI"
-            ]
-        },
-        "engine": null
-    },
-    "opera mobile": {
-        "name": "Opera Mobile",
-        "manufacturer": "Opera",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "OPR",
-                "Version",
-                "Opera ",
-                "Opera Mobi",
-                "Opera"
-            ]
-        },
-        "engine": null
-    },
-    "origin": {
-        "name": "Origin",
-        "manufacturer": "ElectronicArts",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Origin"
-            ]
-        },
-        "engine": null
-    },
-    "otter": {
-        "name": "Otter",
-        "manufacturer": "OtterBrowserOrg",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Otter"
-            ]
-        },
-        "engine": "blink"
-    },
-    "palemoon": {
-        "name": "PaleMoon",
-        "manufacturer": "MoonchildProductions",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "PaleMoon"
-            ]
-        },
-        "engine": null
-    },
-    "palmpixi": {
-        "name": "PalmPixi",
-        "manufacturer": "Hp",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "PalmPixi"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "palmpre": {
-        "name": "PalmPre",
-        "manufacturer": "Hp",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "PalmPre"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "panasonic": {
-        "name": "Panasonic",
-        "manufacturer": "Panasonic",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "phantom browser": {
-        "name": "Phantom Browser",
-        "manufacturer": "Lg",
-        "pdfSupport": false,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Phantom",
-                "Phantom\\/V"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "phantomjs": {
-        "name": "PhantomJS",
-        "manufacturer": "PhantomJs",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "PhantomJS"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "philips": {
-        "name": "Philips",
-        "manufacturer": "Philips",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "playstation": {
-        "name": "Playstation",
-        "manufacturer": "Sony",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Playstation"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "playstation browser": {
-        "name": "Playstation Browser",
-        "manufacturer": "Sony",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": null
-    },
-    "polarity": {
-        "name": "Polarity",
-        "manufacturer": "Weebly",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Polarity"
-            ]
-        },
-        "engine": null
-    },
-    "powertv": {
-        "name": "Powertv",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Powertv"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "prism": {
-        "name": "Prism",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Prism"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "puffin": {
-        "name": "Puffin",
-        "manufacturer": "CloudMosa",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Puffin",
-                "Puffin%20Free"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "qh-browser": {
-        "name": "Quick Heal Browser",
-        "manufacturer": "Quick Heal",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": null
-    },
-    "qqbrowser": {
-        "name": "QQ Browser",
-        "manufacturer": "Tencent",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MQQBrowser",
-                "QQBrowser",
-                " QQ\\/",
-                "V1\\_AND\\_SQ\\_"
-            ]
-        },
-        "engine": null
-    },
-    "qqbrowser mini": {
-        "name": "QQbrowser Mini",
-        "manufacturer": "Tencent",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MQQBrowser\\/Mini"
-            ]
-        },
-        "engine": null
-    },
-    "qt": {
-        "name": "Qt",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Qt"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "qtek": {
-        "name": "Qtek",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "qtweb internet browser": {
-        "name": "QtWeb Internet Browser",
-        "manufacturer": "LogicWare",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "QtWeb Internet Browser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "qtwebengine": {
-        "name": "QtWebEngine",
-        "manufacturer": "LogicWare",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "QtWebEngine"
-            ]
-        },
-        "engine": null
-    },
-    "quicklook": {
-        "name": "QuickLook",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "QuickLook"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "qupzilla": {
-        "name": "QupZilla",
-        "manufacturer": "DavidRosca",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "QupZilla"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "qutebrowser": {
-        "name": "qutebrowser",
-        "manufacturer": "FlorianBruhin",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "qutebrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "qword browser": {
-        "name": "Qword Browser",
-        "manufacturer": "QwordCorporation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Qword"
-            ]
-        },
-        "engine": null
-    },
-    "rekonq": {
-        "name": "rekonq",
-        "manufacturer": "Kde",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Version",
-                "rekonq"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "rockmelt": {
-        "name": "RockMelt",
-        "manufacturer": "Yahoo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "RockMelt"
-            ]
-        },
-        "engine": null
-    },
-    "ruunk": {
-        "name": "Ruunk",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Ruunk"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "safari": {
-        "name": "Safari",
-        "manufacturer": "Apple",
-        "pdfSupport": true,
-        "rssSupport": true,
-        "type": "browser",
-        "version": {
-            "class": "\\BrowserDetector\\Version\\Safari",
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "sailfish browser": {
-        "name": "Sailfish Browser",
-        "manufacturer": "Jolla",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SailfishBrowser"
-            ]
-        },
-        "engine": null
-    },
-    "salam browser": {
-        "name": "Salam Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Salam Browser"
-            ]
-        },
-        "engine": "blink"
-    },
-    "samsung": {
-        "name": "Samsung",
-        "manufacturer": "Samsung",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": null
-    },
-    "samsung mobile browser": {
-        "name": "Samsung Mobile Browser",
-        "manufacturer": "Samsung",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": null
-    },
-    "samsung webview": {
-        "name": "Samsung WebView",
-        "manufacturer": "Samsung",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Version"
-            ]
-        },
-        "engine": null
-    },
-    "samsungbrowser": {
-        "name": "Samsung Browser",
-        "manufacturer": "Samsung",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SamsungBrowser",
-                "Version"
-            ]
-        },
-        "engine": null
-    },
-    "sanyo": {
-        "name": "Sanyo",
-        "manufacturer": "Sanyo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "seamonkey": {
-        "name": "SeaMonkey",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SeaMonkey",
-                "Seamonkey"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "semc": {
-        "name": "SEMC",
-        "manufacturer": "SonyEricsson",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SEMC\\-Browser"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "seznam browser": {
-        "name": "Seznam Browser",
-        "manufacturer": "Seznam",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Seznam\\.cz",
-                "SznProhlizec"
-            ]
-        },
-        "engine": null
-    },
-    "sharp": {
-        "name": "Sharp",
-        "manufacturer": "Sharp",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "shiira": {
-        "name": "Shiira",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Shiira"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "siemens": {
-        "name": "Siemens",
-        "manufacturer": "Siemens",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "sitekiosk": {
-        "name": "SiteKiosk",
-        "manufacturer": "Provisio",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SiteKiosk"
-            ]
-        },
-        "engine": "trident"
-    },
-    "skyfire": {
-        "name": "Skyfire",
-        "manufacturer": "Opera",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Skyfire"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "sleipnir": {
-        "name": "Sleipnir",
-        "manufacturer": "Fenrir",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Version",
-                "Sleipnir"
-            ]
-        },
-        "engine": null
-    },
-    "slimboat": {
-        "name": "SlimBoat",
-        "manufacturer": "FlashPeak",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SlimBoat"
-            ]
-        },
-        "engine": "blink"
-    },
-    "slimbrowser": {
-        "name": "SlimBrowser",
-        "manufacturer": "FlashPeak",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SlimBrowser"
-            ]
-        },
-        "engine": "trident"
-    },
-    "slimerjs": {
-        "name": "SlimerJS",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SlimerJS"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "slimjet browser": {
-        "name": "Slimjet Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Slimjet"
-            ]
-        },
-        "engine": "blink"
-    },
-    "smarttv": {
-        "name": "SmartTV",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SmartTV",
-                "SMART\\-TV",
-                "WebBrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "smarttv webbrowser": {
-        "name": "SmartTV WebBrowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "WebBrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "smartviera": {
-        "name": "Viera Browser",
-        "manufacturer": "Panasonic",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Viera",
-                "SMART\\-TV"
-            ]
-        },
-        "engine": null
-    },
-    "sogou explorer": {
-        "name": "Sogou Explorer",
-        "manufacturer": "Sogou",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SE"
-            ]
-        },
-        "engine": null
-    },
-    "songbird": {
-        "name": "Songbird",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Songbird"
-            ]
-        },
-        "engine": null
-    },
-    "spector": {
-        "name": "Spector",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Spector",
-                "Spector%20Pro"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "spv": {
-        "name": "SPV",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "strata": {
-        "name": "Strata",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Strata"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "sunbird": {
-        "name": "Sunbird",
-        "manufacturer": "MozillaFoundation",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Sunbird"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "sundance": {
-        "name": "Sundance",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Sundance"
-            ]
-        },
-        "engine": null
-    },
-    "superbird": {
-        "name": "SuperBird",
-        "manufacturer": "SuperBird",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Superbird"
-            ]
-        },
-        "engine": null
-    },
-    "superswan": {
-        "name": "Superswan",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Superswan"
-            ]
-        },
-        "engine": null
-    },
-    "surfbrowser": {
-        "name": "SurfBrowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": false,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SurfBrowser",
-                "Surf"
-            ]
-        },
-        "engine": null
-    },
-    "symphonybrowser": {
-        "name": "SymphonyBrowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "SymphonyBrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "t-online browser": {
-        "name": "T-Online Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "TOB"
-            ]
-        },
-        "engine": null
-    },
-    "teleca-obigo": {
-        "name": "Teleca-Obigo",
-        "manufacturer": "Obigo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "MIC",
-                "ObigoInternetBrowser",
-                "Obigo Browser",
-                "Obigo\\-Browser",
-                "Teleca\\-Obigo",
-                "TelecaBrowser",
-                "obigo\\-browser"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "tenfourfox": {
-        "name": "TenFourFox",
-        "manufacturer": "CameronKaiser",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "TenFourFox"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "tenta": {
-        "name": "Tenta",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Tenta"
-            ]
-        },
-        "engine": "blink"
-    },
-    "terra": {
-        "name": "Terra",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Terra",
-                "TerraFree",
-                "TerraFree\\-iPad"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "theworld": {
-        "name": "TheWorld Browser",
-        "manufacturer": "Phoenix Studio",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "trident"
-    },
-    "tinybrowser": {
-        "name": "TinyBrowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "TinyBrowser"
-            ]
-        },
-        "engine": null
-    },
-    "toshiba": {
-        "name": "Toshiba",
-        "manufacturer": "Toshiba",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "unknown"
-    },
-    "ur-browser": {
-        "name": "UR Browser",
-        "manufacturer": "AdaptiveBee",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "UR Browser",
-                "URBrowser",
-                "UR\\/"
-            ]
-        },
-        "engine": "blink"
-    },
-    "vanillasurf": {
-        "name": "Vanillasurf",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Vanillasurf"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "vivaldi": {
-        "name": "Vivaldi",
-        "manufacturer": "Vivaldi",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Vivaldi"
-            ]
-        },
-        "engine": null
-    },
-    "vivo-browser": {
-        "name": "VivoBrowser",
-        "manufacturer": "Vivo",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "VivoBrowser"
-            ]
-        },
-        "engine": "blink"
-    },
-    "vmsmosaic": {
-        "name": "VmsMosaic",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "VmsMosaic"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "vonnacom": {
-        "name": "Vonnacom",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Vonnacom"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "w3m": {
-        "name": "w3m",
-        "manufacturer": "SakamotoHironori",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "w3m"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "waterfox": {
-        "name": "Waterfox",
-        "manufacturer": "WaterfoxProject",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "WaterFox",
-                "Waterfox"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "webianshell": {
-        "name": "WebianShell",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "WebianShell"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "webkit/webos": {
-        "name": "webOS Browser",
-        "manufacturer": "Hp",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Version",
-                "webOS",
-                "webOSBrowser"
-            ]
-        },
-        "engine": "webkit"
-    },
-    "webox": {
-        "name": "WebOX",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "WebOX"
-            ]
-        },
-        "engine": "gecko"
-    },
-    "webtv/msntv": {
-        "name": "WebTV/MSNTV",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "WebTV"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "wetab browser": {
-        "name": "WeTab Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": null,
-            "search": null
-        },
-        "engine": "webkit"
-    },
-    "whale browser": {
-        "name": "Whale Browser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Whale"
-            ]
-        },
-        "engine": "blink"
-    },
-    "winwap": {
-        "name": "WinWAP",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "WinWAP",
-                "WinWAP\\-PRO"
-            ]
-        },
-        "engine": "unknown"
-    },
-    "wkbrowser": {
-        "name": "WKBrowser",
-        "manufacturer": "KeanuLee",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "wkbrowser"
-            ]
-        },
-        "engine": "blink"
-    },
-    "yabrowser": {
-        "name": "Yandex Browser",
-        "manufacturer": "Yandex",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "YaBrowser"
-            ]
-        },
-        "engine": null
-    },
-    "yowser": {
-        "name": "Yowser",
-        "manufacturer": "Unknown",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Yowser"
-            ]
-        },
-        "engine": null
-    },
-    "zetakey browser": {
-        "name": "Zetakey Browser",
-        "manufacturer": "ZetakeySolutions",
-        "pdfSupport": true,
-        "rssSupport": false,
-        "type": "browser",
-        "version": {
-            "class": "VersionFactory",
-            "search": [
-                "Zetakey"
-            ]
-        },
-        "engine": "webkit"
-    }
+  "1stbrowser": {
+    "name": "1st Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "1stBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "2345 browser": {
+    "name": "2345 Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mb2345Browser",
+        "2345Explorer",
+        "2345chrome v",
+        "2345chrome"
+      ]
+    },
+    "engine": "blink"
+  },
+  "360 browser": {
+    "name": "360 Browser",
+    "manufacturer": "Qihoo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "360%20Browser",
+        "360 Aphone Browser \\("
+      ]
+    },
+    "engine": "webkit"
+  },
+  "360 secure browser": {
+    "name": "360 Secure Browser",
+    "manufacturer": "Qihoo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QIHU 360SE"
+      ]
+    },
+    "engine": "blink"
+  },
+  "360 speed browser": {
+    "name": "360 Speed Browser",
+    "manufacturer": "Qihoo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QIHU 360EE"
+      ]
+    },
+    "engine": "blink"
+  },
+  "abrowse": {
+    "name": "ABrowse",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ABrowse"
+      ]
+    },
+    "engine": null
+  },
+  "alcatel": {
+    "name": "Alcatel",
+    "manufacturer": "Alcatel",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "aloha-browser": {
+    "name": "Aloha Browser",
+    "manufacturer": "Aloha Mobile",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AlohaBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "amigo": {
+    "name": "Amigo",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Amigo"
+      ]
+    },
+    "engine": null
+  },
+  "android webkit": {
+    "name": "Android Webkit",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\AndroidWebkit",
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "android webview": {
+    "name": "Android WebView",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version"
+      ]
+    },
+    "engine": null
+  },
+  "apusbrowser": {
+    "name": "APUSBrowser",
+    "manufacturer": "ApusGroup",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "APUSBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "argclrint": {
+    "name": "ArgClrInt",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ArgClrInt",
+        "Argclrint"
+      ]
+    },
+    "engine": "trident"
+  },
+  "arora": {
+    "name": "Arora",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Arora"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "atomic browser": {
+    "name": "Atomic Browser",
+    "manufacturer": "RichardTrautvetter",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AtomicBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "atomic browser lite": {
+    "name": "Atomic Browser Lite",
+    "manufacturer": "RichardTrautvetter",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AtomicLite"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "avant": {
+    "name": "Avant",
+    "manufacturer": "AvantForce",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "avast safezone": {
+    "name": "Avast SafeZone",
+    "manufacturer": "AvastSoftware",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ASW"
+      ]
+    },
+    "engine": null
+  },
+  "aviator": {
+    "name": "Aviator",
+    "manufacturer": "WhiteHat",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Aviator"
+      ]
+    },
+    "engine": null
+  },
+  "avira scout": {
+    "name": "Avira Scout",
+    "manufacturer": "AviraOperations",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AviraScout"
+      ]
+    },
+    "engine": "blink"
+  },
+  "baidu browser": {
+    "name": "Baidu Browser",
+    "manufacturer": "Baidu",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "bdbrowser_i18n",
+        "bdbrowser",
+        "baidubrowser",
+        "BIDUBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "baidu browser hd": {
+    "name": "Baidu Browser HD",
+    "manufacturer": "Baidu",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "bdbrowserhd_i18n"
+      ]
+    },
+    "engine": null
+  },
+  "baidu browser mini": {
+    "name": "Baidu Browser Mini",
+    "manufacturer": "Baidu",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "bdbrowser_mini"
+      ]
+    },
+    "engine": null
+  },
+  "beamrise": {
+    "name": "Beamrise",
+    "manufacturer": "BeamriseTeam",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Beamrise"
+      ]
+    },
+    "engine": null
+  },
+  "benq": {
+    "name": "Benq",
+    "manufacturer": "Benq",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "bitdefender safepay": {
+    "name": "Safepay",
+    "manufacturer": "Bitdefender",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "blink"
+  },
+  "blackberry": {
+    "name": "BlackBerry",
+    "manufacturer": "Rim",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BlackBerry[0-9a-z]+",
+        "BlackBerrySimulator",
+        "Version"
+      ]
+    },
+    "engine": null
+  },
+  "blackberry playbook tablet": {
+    "name": "Blackberry Playbook Browser",
+    "manufacturer": "Rim",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "boardreader": {
+    "name": "BoardReader",
+    "manufacturer": "BoardReader",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BoardReader"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "bobrowser": {
+    "name": "BoBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BoBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "bowser": {
+    "name": "Bowser",
+    "manufacturer": "EricssonResearch",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Bowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "boxee": {
+    "name": "Boxee",
+    "manufacturer": "Boxee",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Boxee",
+        "boxee"
+      ]
+    },
+    "engine": null
+  },
+  "bsnbrowserlite": {
+    "name": "BSNBrowserLite",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "camino": {
+    "name": "Camino",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Camino"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "cent": {
+    "name": "Cent",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cent"
+      ]
+    },
+    "engine": "blink"
+  },
+  "chedot": {
+    "name": "Chedot",
+    "manufacturer": "Chedot",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Chedot"
+      ]
+    },
+    "engine": null
+  },
+  "choosy": {
+    "name": "Choosy",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Choosy"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "chrome": {
+    "name": "Chrome",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Chrome",
+        "CrMo"
+      ]
+    },
+    "engine": null
+  },
+  "chrome for ios": {
+    "name": "Chrome for iOS",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CriOS"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "chromium": {
+    "name": "Chromium",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Chromium"
+      ]
+    },
+    "engine": null
+  },
+  "classilla": {
+    "name": "Classilla",
+    "manufacturer": "Unknown",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "clecko"
+  },
+  "clipish": {
+    "name": "Clipish",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Clipish"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "cloudsurfer": {
+    "name": "CloudSurfer",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CloudSurfer"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "cm browser": {
+    "name": "CM Browser",
+    "manufacturer": "CheetahMobile",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "coc_coc_browser": {
+    "name": "Coc Coc Browser",
+    "manufacturer": "CocCocCompany",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "coc_coc_browser"
+      ]
+    },
+    "engine": null
+  },
+  "cometbird": {
+    "name": "CometBird",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CometBird"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "coolnovo": {
+    "name": "CoolNovo",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CoolNovo"
+      ]
+    },
+    "engine": null
+  },
+  "coolnovo chrome plus": {
+    "name": "CoolNovo Chrome Plus",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ChromePlus"
+      ]
+    },
+    "engine": null
+  },
+  "corom browser": {
+    "name": "CoRom Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CoRom"
+      ]
+    },
+    "engine": "blink"
+  },
+  "crazy browser": {
+    "name": "Crazy Browser",
+    "manufacturer": "CrazyBrowser",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Crazy Browser"
+      ]
+    },
+    "engine": "trident"
+  },
+  "cyberfox": {
+    "name": "Cyberfox",
+    "manufacturer": "8pecxstudios",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cyberfox"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "darwin browser": {
+    "name": "Darwin Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "deepnet explorer": {
+    "name": "Deepnet Explorer",
+    "manufacturer": "DeepnetSecurity",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Deepnet Explorer"
+      ]
+    },
+    "engine": "trident"
+  },
+  "diga": {
+    "name": "Diga",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Diga"
+      ]
+    },
+    "engine": null
+  },
+  "diglo": {
+    "name": "Diglo",
+    "manufacturer": "Diglo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Diglo"
+      ]
+    },
+    "engine": null
+  },
+  "diigo browser": {
+    "name": "Diigo Browser",
+    "manufacturer": "Diigo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version",
+        "DiigoBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "dillo": {
+    "name": "Dillo",
+    "manufacturer": "DilloProject",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Dillo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "docomo": {
+    "name": "DoCoMo",
+    "manufacturer": "DoCoMo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "dolfin": {
+    "name": "Dolfin",
+    "manufacturer": "MopoTab",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Dolphin HD",
+        "Dolphin\\/INT\\-",
+        "Dolphin\\/INT",
+        "Dolfin",
+        "Dolphin"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "dragon": {
+    "name": "Dragon",
+    "manufacturer": "Comodo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Comodo Dragon",
+        "Dragon",
+        "Chrome"
+      ]
+    },
+    "engine": null
+  },
+  "dt-browser": {
+    "name": "DT Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DTB"
+      ]
+    },
+    "engine": null
+  },
+  "edge": {
+    "name": "Edge",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Edge"
+      ]
+    },
+    "engine": "edge"
+  },
+  "edge mobile": {
+    "name": "Edge Mobile",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Edge"
+      ]
+    },
+    "engine": "edge"
+  },
+  "element browser": {
+    "name": "Element Browser",
+    "manufacturer": "ElementSoftware",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Element Browser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "elinks": {
+    "name": "ELinks",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ELinks"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "epiphany": {
+    "name": "Epiphany",
+    "manufacturer": "TheGnomeProject",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Epiphany",
+        "Version",
+        "Safari",
+        "AppleWebKit"
+      ]
+    },
+    "engine": null
+  },
+  "espial tv browser": {
+    "name": "Espial TV Browser",
+    "manufacturer": "EspialGroup",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Espial"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "eudora": {
+    "name": "Eudora",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Eudora"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "eui browser": {
+    "name": "eUI Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "EUI Browser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "extras4imovie": {
+    "name": "Extras4iMovie",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Extras4iMovie"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "falkmaps": {
+    "name": "FalkMaps",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FalkMaps"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fennec": {
+    "name": "Fennec",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Fennec"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "firebird": {
+    "name": "Firebird",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Firebird"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "firefox": {
+    "name": "Firefox",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Firefox",
+        "Minefield",
+        "Shiretoko",
+        "BonEcho",
+        "Namoroka",
+        "Fennec"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "firefox for ios": {
+    "name": "Firefox for iOS",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FxiOS"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "firefox klar": {
+    "name": "Firefox Focus",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Focus",
+        "Klar"
+      ]
+    },
+    "engine": "blink"
+  },
+  "flock": {
+    "name": "Flock",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Flock"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fluid": {
+    "name": "Fluid",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Fluid"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "flyflow": {
+    "name": "FlyFlow",
+    "manufacturer": "Baidu",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FlyFlow",
+        "FlyFlow\\-"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "galeon": {
+    "name": "Galeon",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Galeon"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "google": {
+    "name": "Google",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "google desktop": {
+    "name": "Google Desktop",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google Desktop"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "google earth": {
+    "name": "Google Earth",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google Earth"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "googletv": {
+    "name": "GoogleTV",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "hbbtv": {
+    "name": "HbbTV",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HbbTV"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "headless-chrome": {
+    "name": "Headless Chrome",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HeadlessChrome"
+      ]
+    },
+    "engine": null
+  },
+  "hitpad": {
+    "name": "Hitpad",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Hitpad"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "hot wallpapers": {
+    "name": "Hot Wallpapers",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Hot Wallpapers"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "iball": {
+    "name": "iBall",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "ibisbrowser": {
+    "name": "Ibisbrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Ibisbrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "ibrowse": {
+    "name": "IBrowse",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "IBrowse"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ibrowser": {
+    "name": "iBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "ibrowser mini": {
+    "name": "iBrowser Mini",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iBrowser\\/Mini"
+      ]
+    },
+    "engine": null
+  },
+  "ibuilder": {
+    "name": "iBuilder",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iBuilder"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "icab": {
+    "name": "iCab",
+    "manufacturer": "AlexanderClauss",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iCabMobile",
+        "iCab"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "icab mobile": {
+    "name": "iCab Mobile",
+    "manufacturer": "AlexanderClauss",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iCabMobile",
+        "iCab"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "iceape": {
+    "name": "Iceape",
+    "manufacturer": "SoftwareInThePublicInterest",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Iceape"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "icecat": {
+    "name": "IceCat",
+    "manufacturer": "Gnu",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "IceCat"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "icedove": {
+    "name": "Icedove",
+    "manufacturer": "SoftwareInThePublicInterest",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Icedove"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "icedragon": {
+    "name": "IceDragon",
+    "manufacturer": "Comodo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "IceDragon"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "iceowl": {
+    "name": "Iceowl",
+    "manufacturer": "SoftwareInThePublicInterest",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Iceowl"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "iceweasel": {
+    "name": "Iceweasel",
+    "manufacturer": "SoftwareInThePublicInterest",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Iceweasel",
+        "Firefox"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "ichromy": {
+    "name": "iChromy",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "iemobile": {
+    "name": "IEMobile",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": true,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "IEMobile",
+        "MSIE",
+        "rv\\:"
+      ]
+    },
+    "engine": "trident"
+  },
+  "inettvbrowser": {
+    "name": "InettvBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "InettvBrowser",
+        "Version"
+      ]
+    },
+    "engine": "presto"
+  },
+  "internet explorer": {
+    "name": "Internet Explorer",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftInternetExplorer",
+      "search": null
+    },
+    "engine": "trident"
+  },
+  "internet explorer with chromeframe": {
+    "name": "Internet Explorer with Chromeframe",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\MicrosoftInternetExplorer",
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "ipick": {
+    "name": "iPick",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iPick"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "iridium browser": {
+    "name": "Iridium Browser",
+    "manufacturer": "IridiumBrowserTeam",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Iridium"
+      ]
+    },
+    "engine": null
+  },
+  "iris": {
+    "name": "Iris Browser",
+    "manufacturer": "Torch",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Iris"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "iron": {
+    "name": "Iron",
+    "manufacturer": "Srware",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Iron",
+        "Chrome"
+      ]
+    },
+    "engine": null
+  },
+  "isource+ app": {
+    "name": "iSource+ App",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iSource\\+"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "jasmine": {
+    "name": "Jasmine",
+    "manufacturer": "PivotalLabs",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Jasmine"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "jig browser web": {
+    "name": "jig browser web",
+    "manufacturer": "W3c",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "jig browser web; ",
+        "jig browser web"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "k-meleon": {
+    "name": "K-Meleon",
+    "manufacturer": "KmeleonBrowserOrg",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "K\\-Meleon"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "k-ninja": {
+    "name": "K-Ninja",
+    "manufacturer": "KmeleonBrowserOrg",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "K\\-Ninja"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "kazehakase": {
+    "name": "Kazehakase",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kazehakase"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "kded": {
+    "name": "kded",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "kded"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "kindle": {
+    "name": "Kindle",
+    "manufacturer": "Amazon",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kindle"
+      ]
+    },
+    "engine": null
+  },
+  "kinza": {
+    "name": "Kinza",
+    "manufacturer": "Kinza",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kinza"
+      ]
+    },
+    "engine": null
+  },
+  "kkman": {
+    "name": "KKMAN",
+    "manufacturer": "Kkbox",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "KKman"
+      ]
+    },
+    "engine": "trident"
+  },
+  "konqueror": {
+    "name": "Konqueror",
+    "manufacturer": "Kde",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Konqueror",
+        "konqueror"
+      ]
+    },
+    "engine": null
+  },
+  "kuaiso browser": {
+    "name": "Kuaiso Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kuaiso"
+      ]
+    },
+    "engine": "blink"
+  },
+  "liebao": {
+    "name": "liebao",
+    "manufacturer": "Kingsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LBBROWSER"
+      ]
+    },
+    "engine": null
+  },
+  "liebao fast": {
+    "name": "LieBaoFast",
+    "manufacturer": "Kingsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LieBaoFast"
+      ]
+    },
+    "engine": null
+  },
+  "links": {
+    "name": "Links",
+    "manufacturer": "MikulasPatocka",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Links",
+        "Links \\("
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lolifox": {
+    "name": "lolifox",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "lolifox"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "luakit": {
+    "name": "luakit",
+    "manufacturer": "MasonLarobina",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebKitGTK\\+"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "lunascape": {
+    "name": "Lunascape",
+    "manufacturer": "Lunascape",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Lunascape",
+        "iLunascape"
+      ]
+    },
+    "engine": null
+  },
+  "lynx": {
+    "name": "Lynx",
+    "manufacturer": "ThomasDickey",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Lynx"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mail exchangewebservices": {
+    "name": "Mail ExchangeWebServices",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ExchangeWebServices",
+        "Mail"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "maven": {
+    "name": "Maven",
+    "manufacturer": "Gihyun Jung",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Maven"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "mavenplus": {
+    "name": "MavenPlus",
+    "manufacturer": "Gihyun Jung",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MavenPlus"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "maxthon": {
+    "name": "Maxthon",
+    "manufacturer": "Maxthon",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\Maxthon",
+      "search": null
+    },
+    "engine": null
+  },
+  "maxthon nitro": {
+    "name": "Maxthon Nitro",
+    "manufacturer": "Maxthon",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MxNitro"
+      ]
+    },
+    "engine": null
+  },
+  "mercury": {
+    "name": "Mercury",
+    "manufacturer": "IlegendSoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mercury3",
+        "Mercury",
+        "Mercury3Free"
+      ]
+    },
+    "engine": null
+  },
+  "microb": {
+    "name": "MicroB",
+    "manufacturer": "Nokia",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MicroB",
+        "Maemo Browser"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "midori": {
+    "name": "Midori",
+    "manufacturer": "ChristianDywan",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Midori",
+        "Midori\\-"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "minimo": {
+    "name": "Minimo",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Minimo"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "mitsubishi": {
+    "name": "Mitsubishi",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "miui browser": {
+    "name": "Miui Browser",
+    "manufacturer": "XiaomiTech",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MiuiBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "mobile safari uiwebview": {
+    "name": "Mobile Safari UIWebView",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": true,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "mobilerss": {
+    "name": "MobileRSS",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MobileRSS",
+        "MobileRSSFree",
+        "MobileRSSFree\\-iPad"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "model s browser": {
+    "name": "Model S Browser",
+    "manufacturer": "TeslaMotors",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QtCarBrowser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "motorola internet browser": {
+    "name": "Motorola Internet Browser",
+    "manufacturer": "Motorola",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MIB",
+        "MIB\\/BER"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mozad": {
+    "name": "Mozad",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mozad"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "mozilla": {
+    "name": "Mozilla",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mozilla"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "multizilla": {
+    "name": "MultiZilla",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MultiZilla"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "my internet browser": {
+    "name": "My Internet Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "myibrow"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "mythbrowser": {
+    "name": "MythBrowser",
+    "manufacturer": "MythTV",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "nec": {
+    "name": "Nec",
+    "manufacturer": "Nec",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "netbox": {
+    "name": "Netbox",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Netbox"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "netfront": {
+    "name": "NetFront",
+    "manufacturer": "Access",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NetFront",
+        "NF",
+        "NetFrontLifeBrowser",
+        "NF3"
+      ]
+    },
+    "engine": null
+  },
+  "netfront nx": {
+    "name": "NetFront NX",
+    "manufacturer": "Access",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NX"
+      ]
+    },
+    "engine": null
+  },
+  "netfrontlifebrowser": {
+    "name": "NetFrontLifeBrowser",
+    "manufacturer": "Access",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NetFrontLifeBrowser"
+      ]
+    },
+    "engine": "netfront"
+  },
+  "netnewswire": {
+    "name": "NetNewsWire",
+    "manufacturer": "BlackPixel",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NetNewsWire"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "netscape": {
+    "name": "Netscape",
+    "manufacturer": "Netscape",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Netscape6",
+        "Netscape"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "netscape navigator": {
+    "name": "Navigator",
+    "manufacturer": "Netscape",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Navigator"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "nettv": {
+    "name": "NetTV",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NETTV"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "newb": {
+    "name": "NewB",
+    "manufacturer": "Philips",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NewB"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "nichrome": {
+    "name": "Nichrome",
+    "manufacturer": "Rambler",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Nichrome\\/self",
+        "Nichrome"
+      ]
+    },
+    "engine": null
+  },
+  "ninesky-browser": {
+    "name": "Ninesky Browser",
+    "manufacturer": "NineSky",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Ninesky\\-android\\-mobile"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "nokiabrowser": {
+    "name": "Nokia Browser",
+    "manufacturer": "Nokia",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BrowserNG",
+        "NokiaBrowser",
+        "Version"
+      ]
+    },
+    "engine": null
+  },
+  "obigo q": {
+    "name": "Obigo Q",
+    "manufacturer": "Obigo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\ObigoQ",
+      "search": null
+    },
+    "engine": null
+  },
+  "oculus-browser": {
+    "name": "OculusBrowser",
+    "manufacturer": "Facebook",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OculusBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "omniweb": {
+    "name": "OmniWeb",
+    "manufacturer": "OmniDevelopment",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version",
+        "Omniweb",
+        "OmniWeb"
+      ]
+    },
+    "engine": null
+  },
+  "onebrowser": {
+    "name": "OneBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OneBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "open-webkit-sharp": {
+    "name": "open-webkit-sharp",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OpenWebKitSharp"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "openwave mobile browser": {
+    "name": "Openwave Mobile Browser",
+    "manufacturer": "Myriad",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "UP\\.Browser",
+        "UP",
+        "OpenWave"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "opera": {
+    "name": "Opera",
+    "manufacturer": "Opera",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OPR",
+        "Version",
+        "Opera"
+      ]
+    },
+    "engine": null
+  },
+  "opera devices": {
+    "name": "Opera Devices",
+    "manufacturer": "Opera",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OMI"
+      ]
+    },
+    "engine": null
+  },
+  "opera mobile": {
+    "name": "Opera Mobile",
+    "manufacturer": "Opera",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OPR",
+        "Version",
+        "Opera ",
+        "Opera Mobi",
+        "Opera"
+      ]
+    },
+    "engine": null
+  },
+  "origin": {
+    "name": "Origin",
+    "manufacturer": "ElectronicArts",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Origin"
+      ]
+    },
+    "engine": null
+  },
+  "otter": {
+    "name": "Otter",
+    "manufacturer": "OtterBrowserOrg",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Otter"
+      ]
+    },
+    "engine": "blink"
+  },
+  "palemoon": {
+    "name": "PaleMoon",
+    "manufacturer": "MoonchildProductions",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PaleMoon"
+      ]
+    },
+    "engine": null
+  },
+  "palmpixi": {
+    "name": "PalmPixi",
+    "manufacturer": "Hp",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PalmPixi"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "palmpre": {
+    "name": "PalmPre",
+    "manufacturer": "Hp",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PalmPre"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "panasonic": {
+    "name": "Panasonic",
+    "manufacturer": "Panasonic",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "phantom browser": {
+    "name": "Phantom Browser",
+    "manufacturer": "Lg",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Phantom",
+        "Phantom\\/V"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "phantomjs": {
+    "name": "PhantomJS",
+    "manufacturer": "PhantomJs",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PhantomJS"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "philips": {
+    "name": "Philips",
+    "manufacturer": "Philips",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "playstation": {
+    "name": "Playstation",
+    "manufacturer": "Sony",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Playstation"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "playstation browser": {
+    "name": "Playstation Browser",
+    "manufacturer": "Sony",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "polarity": {
+    "name": "Polarity",
+    "manufacturer": "Weebly",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Polarity"
+      ]
+    },
+    "engine": null
+  },
+  "powertv": {
+    "name": "Powertv",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Powertv"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "prism": {
+    "name": "Prism",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Prism"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "puffin": {
+    "name": "Puffin",
+    "manufacturer": "CloudMosa",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\Puffin",
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "qh-browser": {
+    "name": "Quick Heal Browser",
+    "manufacturer": "Quick Heal",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "qqbrowser": {
+    "name": "QQ Browser",
+    "manufacturer": "Tencent",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MQQBrowser",
+        "QQBrowser",
+        " QQ\\/",
+        "V1\\_AND\\_SQ\\_"
+      ]
+    },
+    "engine": null
+  },
+  "qqbrowser mini": {
+    "name": "QQbrowser Mini",
+    "manufacturer": "Tencent",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MQQBrowser\\/Mini"
+      ]
+    },
+    "engine": null
+  },
+  "qt": {
+    "name": "Qt",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Qt"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "qtek": {
+    "name": "Qtek",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "qtweb internet browser": {
+    "name": "QtWeb Internet Browser",
+    "manufacturer": "LogicWare",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QtWeb Internet Browser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "qtwebengine": {
+    "name": "QtWebEngine",
+    "manufacturer": "LogicWare",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QtWebEngine"
+      ]
+    },
+    "engine": null
+  },
+  "quicklook": {
+    "name": "QuickLook",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QuickLook"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "qupzilla": {
+    "name": "QupZilla",
+    "manufacturer": "DavidRosca",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QupZilla"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "qutebrowser": {
+    "name": "qutebrowser",
+    "manufacturer": "FlorianBruhin",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "qutebrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "qword browser": {
+    "name": "Qword Browser",
+    "manufacturer": "QwordCorporation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Qword"
+      ]
+    },
+    "engine": null
+  },
+  "rekonq": {
+    "name": "rekonq",
+    "manufacturer": "Kde",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version",
+        "rekonq"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "rockmelt": {
+    "name": "RockMelt",
+    "manufacturer": "Yahoo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "RockMelt"
+      ]
+    },
+    "engine": null
+  },
+  "ruunk": {
+    "name": "Ruunk",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Ruunk"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "safari": {
+    "name": "Safari",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": true,
+    "type": "browser",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\Safari",
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "sailfish browser": {
+    "name": "Sailfish Browser",
+    "manufacturer": "Jolla",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SailfishBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "salam browser": {
+    "name": "Salam Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Salam Browser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "samsung": {
+    "name": "Samsung",
+    "manufacturer": "Samsung",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "samsung mobile browser": {
+    "name": "Samsung Mobile Browser",
+    "manufacturer": "Samsung",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "samsung webview": {
+    "name": "Samsung WebView",
+    "manufacturer": "Samsung",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version"
+      ]
+    },
+    "engine": null
+  },
+  "samsungbrowser": {
+    "name": "Samsung Browser",
+    "manufacturer": "Samsung",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SamsungBrowser",
+        "Version"
+      ]
+    },
+    "engine": null
+  },
+  "sanyo": {
+    "name": "Sanyo",
+    "manufacturer": "Sanyo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "seamonkey": {
+    "name": "SeaMonkey",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SeaMonkey",
+        "Seamonkey"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "semc": {
+    "name": "SEMC",
+    "manufacturer": "SonyEricsson",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SEMC\\-Browser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seznam browser": {
+    "name": "Seznam Browser",
+    "manufacturer": "Seznam",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Seznam\\.cz",
+        "SznProhlizec"
+      ]
+    },
+    "engine": null
+  },
+  "sharp": {
+    "name": "Sharp",
+    "manufacturer": "Sharp",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "shiira": {
+    "name": "Shiira",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Shiira"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "siemens": {
+    "name": "Siemens",
+    "manufacturer": "Siemens",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sitekiosk": {
+    "name": "SiteKiosk",
+    "manufacturer": "Provisio",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SiteKiosk"
+      ]
+    },
+    "engine": "trident"
+  },
+  "skyfire": {
+    "name": "Skyfire",
+    "manufacturer": "Opera",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Skyfire"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "sleipnir": {
+    "name": "Sleipnir",
+    "manufacturer": "Fenrir",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version",
+        "Sleipnir"
+      ]
+    },
+    "engine": null
+  },
+  "slimboat": {
+    "name": "SlimBoat",
+    "manufacturer": "FlashPeak",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SlimBoat"
+      ]
+    },
+    "engine": "blink"
+  },
+  "slimbrowser": {
+    "name": "SlimBrowser",
+    "manufacturer": "FlashPeak",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SlimBrowser"
+      ]
+    },
+    "engine": "trident"
+  },
+  "slimerjs": {
+    "name": "SlimerJS",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SlimerJS"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "slimjet browser": {
+    "name": "Slimjet Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Slimjet"
+      ]
+    },
+    "engine": "blink"
+  },
+  "smarttv": {
+    "name": "SmartTV",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SmartTV",
+        "SMART\\-TV",
+        "WebBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "smarttv webbrowser": {
+    "name": "SmartTV WebBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "smartviera": {
+    "name": "Viera Browser",
+    "manufacturer": "Panasonic",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Viera",
+        "SMART\\-TV"
+      ]
+    },
+    "engine": null
+  },
+  "sogou explorer": {
+    "name": "Sogou Explorer",
+    "manufacturer": "Sogou",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SE"
+      ]
+    },
+    "engine": null
+  },
+  "songbird": {
+    "name": "Songbird",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Songbird"
+      ]
+    },
+    "engine": null
+  },
+  "spector": {
+    "name": "Spector",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Spector",
+        "Spector%20Pro"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "spv": {
+    "name": "SPV",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "strata": {
+    "name": "Strata",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Strata"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sunbird": {
+    "name": "Sunbird",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Sunbird"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "sundance": {
+    "name": "Sundance",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Sundance"
+      ]
+    },
+    "engine": null
+  },
+  "superbird": {
+    "name": "SuperBird",
+    "manufacturer": "SuperBird",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Superbird"
+      ]
+    },
+    "engine": null
+  },
+  "superswan": {
+    "name": "Superswan",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Superswan"
+      ]
+    },
+    "engine": null
+  },
+  "surfbrowser": {
+    "name": "SurfBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SurfBrowser",
+        "Surf"
+      ]
+    },
+    "engine": null
+  },
+  "symphonybrowser": {
+    "name": "SymphonyBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SymphonyBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "t-online browser": {
+    "name": "T-Online Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TOB"
+      ]
+    },
+    "engine": null
+  },
+  "teleca-obigo": {
+    "name": "Teleca-Obigo",
+    "manufacturer": "Obigo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MIC",
+        "ObigoInternetBrowser",
+        "Obigo Browser",
+        "Obigo\\-Browser",
+        "Teleca\\-Obigo",
+        "TelecaBrowser",
+        "obigo\\-browser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tenfourfox": {
+    "name": "TenFourFox",
+    "manufacturer": "CameronKaiser",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TenFourFox"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "tenta": {
+    "name": "Tenta",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Tenta"
+      ]
+    },
+    "engine": "blink"
+  },
+  "terra": {
+    "name": "Terra",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Terra",
+        "TerraFree",
+        "TerraFree\\-iPad"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "theworld": {
+    "name": "TheWorld Browser",
+    "manufacturer": "Phoenix Studio",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "trident"
+  },
+  "tinybrowser": {
+    "name": "TinyBrowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TinyBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "toshiba": {
+    "name": "Toshiba",
+    "manufacturer": "Toshiba",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "ur-browser": {
+    "name": "UR Browser",
+    "manufacturer": "AdaptiveBee",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "UR Browser",
+        "URBrowser",
+        "UR\\/"
+      ]
+    },
+    "engine": "blink"
+  },
+  "vanillasurf": {
+    "name": "Vanillasurf",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Vanillasurf"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "vivaldi": {
+    "name": "Vivaldi",
+    "manufacturer": "Vivaldi",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Vivaldi"
+      ]
+    },
+    "engine": null
+  },
+  "vivo-browser": {
+    "name": "VivoBrowser",
+    "manufacturer": "Vivo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "VivoBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "vmsmosaic": {
+    "name": "VmsMosaic",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "VmsMosaic"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vonnacom": {
+    "name": "Vonnacom",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Vonnacom"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "w3m": {
+    "name": "w3m",
+    "manufacturer": "SakamotoHironori",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "w3m"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "waterfox": {
+    "name": "Waterfox",
+    "manufacturer": "WaterfoxProject",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WaterFox",
+        "Waterfox"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "webianshell": {
+    "name": "WebianShell",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebianShell"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "webkit/webos": {
+    "name": "webOS Browser",
+    "manufacturer": "Hp",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version",
+        "webOS",
+        "webOSBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "webox": {
+    "name": "WebOX",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebOX"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "webtv/msntv": {
+    "name": "WebTV/MSNTV",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebTV"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wetab browser": {
+    "name": "WeTab Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "whale browser": {
+    "name": "Whale Browser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Whale"
+      ]
+    },
+    "engine": "blink"
+  },
+  "winwap": {
+    "name": "WinWAP",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WinWAP",
+        "WinWAP\\-PRO"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wkbrowser": {
+    "name": "WKBrowser",
+    "manufacturer": "KeanuLee",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "wkbrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "yabrowser": {
+    "name": "Yandex Browser",
+    "manufacturer": "Yandex",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YaBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "yowser": {
+    "name": "Yowser",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Yowser"
+      ]
+    },
+    "engine": null
+  },
+  "zetakey browser": {
+    "name": "Zetakey Browser",
+    "manufacturer": "ZetakeySolutions",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Zetakey"
+      ]
+    },
+    "engine": "webkit"
+  }
 }

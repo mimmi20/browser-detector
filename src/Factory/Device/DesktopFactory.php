@@ -11,64 +11,70 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
-use BrowserDetector\Factory;
-use BrowserDetector\Helper;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
-use Stringy\Stringy;
+use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use Psr\Log\LoggerInterface;
 
-class DesktopFactory implements Factory\FactoryInterface
+class DesktopFactory
 {
-    /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
-     */
-    private $loader;
+    private $factories = [
+        '/raspbian|debian.*rpi/i' => 'raspberry pi foundation',
+        '/eeepc|np0[26789]|maau|asjb|asu2/i' => 'asus',
+        '/mdd[crs]/i' => 'dell',
+        '/mafs/i' => 'fujitsu',
+        '/maar/i' => 'acer',
+        '/mas[aep]/i' => 'sony',
+        '/masm/i' => 'samsung',
+        '/mal[cn]|lcjb|len2|lenovog780/i' => 'lenovo',
+        '/mat[bmp]|tnjb|tajb/i' => 'toshiba',
+        '/mamd/i' => 'medion',
+        '/mam[i3]/i' => 'msi',
+        '/magw/i' => 'gateway',
+        '/cpdtdf|cpntdf|cmntdf/i' => 'compaq',
+        '/hpcmhp|hpntdf|hpdtdf|hp\-ux 9000/i' => 'hp',
+        '/h9p/i' => 'microsoft',
+        '/surfbook w1/i' => 'trekstor',
+        '/freebsd/i' => 'unknown',
+        '/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i' => 'apple',
+    ];
 
     /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
+     * @var \BrowserDetector\Loader\DeviceLoaderFactory
      */
-    public function __construct(ExtendedLoaderInterface $loader)
+    private $loaderFactory;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface              $logger
+     */
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->loader = $loader;
+        $this->loaderFactory = new DeviceLoaderFactory($cache, $logger);
     }
 
     /**
      * detects the device name from the given user agent
      *
-     * @param string           $useragent
-     * @param \Stringy\Stringy $s
+     * @param string $useragent
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s): array
+    public function __invoke(string $useragent): array
     {
-        if ((new Helper\Windows($s))->isWindows()) {
-            return (new Desktop\WindowsFactory($this->loader))->detect($useragent, $s);
+        $loaderFactory = $this->loaderFactory;
+
+        foreach ($this->factories as $rule => $company) {
+            if (preg_match($rule, $useragent)) {
+                $loader = $loaderFactory($company, 'desktop');
+
+                return $loader($useragent);
+            }
         }
 
-        if ($s->contains('raspbian', false)) {
-            return $this->loader->load('raspberry pi', $useragent);
-        }
+        $loader = $loaderFactory('unknown', 'desktop');
 
-        if ($s->containsAll(['debian', 'rpi'], false)) {
-            return $this->loader->load('raspberry pi', $useragent);
-        }
-
-        if ((new Helper\Linux($s))->isLinux()) {
-            return $this->loader->load('linux desktop', $useragent);
-        }
-
-        if ((new Helper\Macintosh($s))->isMacintosh()) {
-            return (new Desktop\AppleFactory($this->loader))->detect($useragent, $s);
-        }
-
-        if ($s->contains('eeepc', false)) {
-            return $this->loader->load('eee pc', $useragent);
-        }
-
-        if ($s->contains('hp-ux 9000', false)) {
-            return $this->loader->load('9000', $useragent);
-        }
-
-        return $this->loader->load('general desktop', $useragent);
+        return $loader($useragent);
     }
 }

@@ -28,6 +28,6 @@ class Friendica implements VersionCacheFactoryInterface
             return new Version('0');
         }
 
-        return VersionFactory::set($matches[1]);
+        return (new VersionFactory())->set($matches[1]);
     }
 }

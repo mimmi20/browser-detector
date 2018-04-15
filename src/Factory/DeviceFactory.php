@@ -11,58 +11,99 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
+use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
-use BrowserDetector\Helper\Tv as TvHelper;
-use BrowserDetector\Loader\ExtendedLoaderInterface;
+use BrowserDetector\Helper\Tv;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
 /**
  * Device detection class
  */
-class DeviceFactory implements FactoryInterface
+class DeviceFactory implements DeviceFactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\ExtendedLoaderInterface
+     * @var Device\DarwinFactory
      */
-    private $loader;
+    private $darwinFactory;
 
     /**
-     * @param \BrowserDetector\Loader\ExtendedLoaderInterface $loader
+     * @var Device\MobileFactory
      */
-    public function __construct(ExtendedLoaderInterface $loader)
+    private $mobileFactory;
+
+    /**
+     * @var Device\TvFactory
+     */
+    private $tvFactory;
+
+    /**
+     * @var Device\DesktopFactory
+     */
+    private $desktopFactory;
+
+    /**
+     * @var DeviceLoaderFactory
+     */
+    private $loaderFactory;
+
+    /**
+     * @param \BrowserDetector\Cache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface              $logger
+     */
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->loader = $loader;
+        $this->darwinFactory  = new Device\DarwinFactory($cache, $logger);
+        $this->mobileFactory  = new Device\MobileFactory($cache, $logger);
+        $this->tvFactory      = new Device\TvFactory($cache, $logger);
+        $this->desktopFactory = new Device\DesktopFactory($cache, $logger);
+        $this->loaderFactory  = new DeviceLoaderFactory($cache, $logger);
     }
 
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string           $useragent
-     * @param \Stringy\Stringy $s
+     * @param string $useragent
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */
-    public function detect(string $useragent, Stringy $s): array
+    public function __invoke(string $useragent): array
     {
+        $s = new Stringy($useragent);
+
         if (!$s->containsAny(['freebsd', 'raspbian'], false)
             && $s->containsAny(['darwin', 'cfnetwork'], false)
         ) {
-            return (new Device\DarwinFactory($this->loader))->detect($useragent, $s);
+            $factory = $this->darwinFactory;
+
+            return $factory($useragent);
         }
 
         if ((new MobileDevice($s))->isMobile()) {
-            return (new Device\MobileFactory($this->loader))->detect($useragent, $s);
+            $factory = $this->mobileFactory;
+
+            return $factory($useragent);
         }
 
-        if ((new TvHelper($s))->isTvDevice()) {
-            return (new Device\TvFactory($this->loader))->detect($useragent, $s);
+        if ((new Tv($s))->isTvDevice()) {
+            $factory = $this->tvFactory;
+
+            return $factory($useragent);
         }
 
         if ((new Desktop($s))->isDesktopDevice()) {
-            return (new Device\DesktopFactory($this->loader))->detect($useragent, $s);
+            $factory = $this->desktopFactory;
+
+            return $factory($useragent);
         }
 
-        return $this->loader->load('unknown', $useragent);
+        $loaderFactory = $this->loaderFactory;
+        $loader        = $loaderFactory('unknown', 'unknown');
+
+        return $loader($useragent);
     }
 }

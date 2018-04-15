@@ -25,7 +25,7 @@ class Trident implements VersionCacheFactoryInterface
         $doMatch = preg_match('/Trident\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return VersionFactory::set($matches[1]);
+            return (new VersionFactory())->set($matches[1]);
         }
 
         return new Version('0');

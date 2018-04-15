@@ -11,213 +11,189 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
+use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Helper;
-use BrowserDetector\Loader\PlatformLoader;
+use BrowserDetector\Loader\PlatformLoaderFactory;
+use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 use UaResult\Os\OsInterface;
 
-/**
- * Browser detection class
- */
-class PlatformFactory implements FactoryInterface
+class PlatformFactory implements PlatformFactoryInterface
 {
     /**
-     * @var \BrowserDetector\Loader\PlatformLoader
+     * @var \BrowserDetector\Loader\PlatformLoaderFactory
      */
-    private $loader;
+    private $loaderFactory;
 
     /**
-     * @param \BrowserDetector\Loader\PlatformLoader $loader
+     * @param \BrowserDetector\Cache\CacheInterface $cache
+     * @param \Psr\Log\LoggerInterface              $logger
      */
-    public function __construct(PlatformLoader $loader)
+    public function __construct(CacheInterface $cache, LoggerInterface $logger)
     {
-        $this->loader = $loader;
+        $this->loaderFactory = new PlatformLoaderFactory($cache, $logger);
     }
 
     /**
      * Gets the information about the platform by User Agent
      *
-     * @param string  $useragent
-     * @param Stringy $s
+     * @param string $useragent
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detect(string $useragent, Stringy $s): OsInterface
+    public function __invoke(string $useragent): OsInterface
     {
-        $s = new Stringy($useragent);
-
+        $s             = new Stringy($useragent);
         $windowsHelper = new Helper\Windows($s);
+        $loaderFactory = $this->loaderFactory;
 
         if ($windowsHelper->isMobileWindows()) {
-            return (new Platform\WindowsMobileFactory($this->loader))->detect($useragent, $s);
+            $loader = $loaderFactory('windowsmobile');
+
+            return $loader($useragent);
         }
 
         if ($windowsHelper->isWindows()) {
-            return (new Platform\WindowsFactory($this->loader))->detect($useragent, $s);
+            $loader = $loaderFactory('windows');
+
+            return $loader($useragent);
         }
 
-        $platformsBeforeMiuiOs = [
-            'commoncrawler' => 'unknown',
-            'symbianos'     => 'symbian',
-            'symbos'        => 'symbian',
-            'symbian'       => 'symbian',
-            'series 60'     => 'symbian',
-            's60v3'         => 'symbian',
-            's60v5'         => 'symbian',
-            'nokia7230'     => 'symbian',
-            'bada'          => 'bada',
-            'meego'         => 'meego',
-            'sailfish'      => 'sailfishos',
-            'cygwin'        => 'cygwin',
-            'netbsd'        => 'netbsd',
-            'openbsd'       => 'openbsd',
-            'dragonfly'     => 'dragonfly bsd',
-            'hp-ux'         => 'hp-ux',
-            'hpux'          => 'hp-ux',
-            'irix'          => 'irix',
-            'webos'         => 'webos',
-            'hpwos'         => 'webos',
-            'tizen'         => 'tizen',
-            'kfreebsd'      => 'debian with freebsd kernel',
-            'freebsd'       => 'freebsd',
-            'bsd'           => 'bsd',
-        ];
+        if (preg_match('/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/i', $useragent)) {
+            $loader = $loaderFactory('symbian');
 
-        foreach ($platformsBeforeMiuiOs as $searchkey => $platfornKey) {
-            if ($s->contains($searchkey, false)) {
-                return $this->loader->load($platfornKey, $useragent);
-            }
+            return $loader($useragent);
         }
 
-        if ($s->contains('MIUI', true)) {
-            return $this->loader->load('miui os', $useragent);
+        if (preg_match('/commoncrawler|bada|meego|sailfish|cygwin|bsd|dragonfly|hp\-?ux|irix|web[o0]s|hpwos/i', $useragent)) {
+            $loader = $loaderFactory('genericplatform');
+
+            return $loader($useragent);
         }
 
-        $platformsBeforeAndroid = [
-            'micromaxx650' => 'java',
-            'dolfin/'      => 'java',
-            'yuanda50'     => 'java',
-            'wap browser'  => 'java',
-            'wap-browser'  => 'java',
-            'yunos'        => 'yun os',
-            'aliyunos'     => 'yun os',
-        ];
+        if (preg_match('/micromaxx650|dolfin\/|yuanda50|wap[- ]?browser/i', $useragent)) {
+            $loader = $loaderFactory('java');
 
-        foreach ($platformsBeforeAndroid as $searchkey => $platfornKey) {
-            if ($s->contains($searchkey, false)) {
-                return $this->loader->load($platfornKey, $useragent);
-            }
+            return $loader($useragent);
         }
 
-        if ((new Helper\AndroidOs($s))->isAndroid()) {
-            return $this->loader->load('android', $useragent);
+        if (preg_match('/MIUI/', $useragent)
+            || preg_match('/yunos|tizen/i', $useragent)
+            || (new Helper\AndroidOs($s))->isAndroid()
+        ) {
+            $loader = $loaderFactory('android');
+
+            return $loader($useragent);
         }
 
-        $platformsBeforeDarwin = [
-            'aix'     => 'aix',
-            'openvms' => 'openvms',
-        ];
+        if (preg_match('/aix|openvms/i', $useragent)) {
+            $loader = $loaderFactory('genericplatform');
 
-        foreach ($platformsBeforeDarwin as $searchkey => $platfornKey) {
-            if ($s->contains($searchkey, false)) {
-                return $this->loader->load($platfornKey, $useragent);
-            }
+            return $loader($useragent);
         }
 
-        if ($s->containsAny(['darwin', 'cfnetwork'], false)) {
-            return (new Platform\DarwinFactory($this->loader))->detect($useragent, $s);
+        if (preg_match('/darwin|cfnetwork/i', $useragent)) {
+            $loader = $loaderFactory('darwin');
+
+            return $loader($useragent);
         }
 
         if ((new Helper\Linux($s))->isLinux()) {
-            return (new Platform\LinuxFactory($this->loader))->detect($useragent, $s);
+            $loader = $loaderFactory('linux');
+
+            return $loader($useragent);
         }
 
-        $platformsBeforeFirefoxOs = [
-            'maemo'        => 'linux smartphone os (maemo)',
-            'like android' => 'linux smartphone os (maemo)',
-            'blackberry'   => 'rim os',
-            'bb10'         => 'rim os',
-            'remix'        => 'remixos',
-        ];
+        if (preg_match('/maemo|like android|blackberry|bb10|remix/i', $useragent)) {
+            $loader = $loaderFactory('genericplatform');
 
-        foreach ($platformsBeforeFirefoxOs as $searchkey => $platfornKey) {
-            if ($s->contains($searchkey, false)) {
-                return $this->loader->load($platfornKey, $useragent);
-            }
+            return $loader($useragent);
         }
 
         if ((new Helper\FirefoxOs($s))->isFirefoxOs()) {
-            return $this->loader->load('firefoxos', $useragent);
+            $loader = $loaderFactory('firefoxos');
+
+            return $loader($useragent);
         }
 
         if ((new Helper\Ios($s))->isIos()) {
-            return $this->loader->load('ios', $useragent);
+            $loader = $loaderFactory('ios');
+
+            return $loader($useragent);
         }
 
-        if ($s->containsAny(['series40', 'nokia'], false)) {
-            return $this->loader->load('nokia os', $useragent);
+        if (preg_match('/nokia/i', $useragent)) {
+            $loader = $loaderFactory('symbian');
+
+            return $loader($useragent);
         }
 
-        if (preg_match('/\b(profile)\b/i', $useragent)) {
-            return $this->loader->load('java', $useragent);
+        if (preg_match('/\bprofile\b/i', $useragent)) {
+            $loader = $loaderFactory('java');
+
+            return $loader($useragent);
         }
 
         $platforms = [
-            'mac os x'           => 'mac os x',
-            'os=mac 10'          => 'mac os x',
-            'mac_powerpc'        => 'macintosh',
-            'ppc'                => 'macintosh',
-            '68k'                => 'macintosh',
-            'macintosh'          => 'mac os x',
-            'rim tablet'         => 'rim tablet os',
-            'amigaos'            => 'amiga os',
-            'brew'               => 'brew',
-            'beos'               => 'beos',
-            'opensolaris'        => 'opensolaris',
-            'solaris'            => 'solaris',
-            'sunos'              => 'sunos',
-            'risc'               => 'risc os',
-            'tru64 unix'         => 'tru64 unix',
-            'digital unix'       => 'tru64 unix',
-            'osf1'               => 'tru64 unix',
-            'unix'               => 'unix',
-            'os/2'               => 'os/2',
-            'warp'               => 'os/2',
-            'cp/m'               => 'cp/m',
-            'nintendo wii'       => 'nintendo os',
-            'nintendo 3ds'       => 'nintendo os',
-            'palm os'            => 'palmos',
-            'palmsource'         => 'palmos',
-            'wyderos'            => 'wyderos',
-            'liberate'           => 'liberate',
-            'inferno'            => 'inferno os',
-            'syllable'           => 'syllable',
-            'camino'             => 'mac os x',
-            'pubsub'             => 'mac os x',
-            'integrity'          => 'mac os x',
-            'gt-s5380'           => 'bada',
-            's8500'              => 'bada',
-            'java'               => 'java',
-            'j2me/midp'          => 'java',
-            'profile/midp'       => 'java',
-            'juc'                => 'java',
-            'ucweb'              => 'java',
-            'netfront'           => 'java',
-            'jasmine/1.0'        => 'java',
-            'obigo'              => 'java',
-            'spark284'           => 'java',
-            'lemon b556'         => 'java',
-            'kkt20'              => 'java',
-            'gt-c3312r'          => 'java',
+            'mac os x' => 'mac os x',
+            'os=mac 10' => 'mac os x',
+            'mac_powerpc' => 'macintosh',
+            'ppc' => 'macintosh',
+            '68k' => 'macintosh',
+            'macintosh' => 'mac os x',
+            'rim tablet' => 'rim tablet os',
+            'amigaos' => 'amiga os',
+            'brew' => 'brew',
+            'beos' => 'beos',
+            'opensolaris' => 'opensolaris',
+            'solaris' => 'solaris',
+            'sunos' => 'sunos',
+            'risc' => 'risc os',
+            'tru64 unix' => 'tru64 unix',
+            'digital unix' => 'tru64 unix',
+            'osf1' => 'tru64 unix',
+            'unix' => 'unix',
+            'os/2' => 'os/2',
+            'warp' => 'os/2',
+            'cp/m' => 'cp/m',
+            'nintendo wii' => 'nintendo os',
+            'nintendo 3ds' => 'nintendo os',
+            'palm os' => 'palmos',
+            'palmsource' => 'palmos',
+            'wyderos' => 'wyderos',
+            'liberate' => 'liberate',
+            'inferno' => 'inferno os',
+            'syllable' => 'syllable',
+            'camino' => 'mac os x',
+            'pubsub' => 'mac os x',
+            'integrity' => 'mac os x',
+            'gt-s5380' => 'bada',
+            's8500' => 'bada',
+            'java' => 'java',
+            'j2me/midp' => 'java',
+            'profile/midp' => 'java',
+            'juc' => 'java',
+            'ucweb' => 'java',
+            'netfront' => 'java',
+            'jasmine/1.0' => 'java',
+            'obigo' => 'java',
+            'spark284' => 'java',
+            'lemon b556' => 'java',
+            'kkt20' => 'java',
+            'gt-c3312r' => 'java',
             'velocitymicro/t408' => 'android',
         ];
 
-        foreach ($platforms as $searchkey => $platfornKey) {
-            if ($s->contains($searchkey, false)) {
-                return $this->loader->load($platfornKey, $useragent);
-            }
+        if ($s->containsAny(array_keys($platforms), false)) {
+            $loader = $loaderFactory('genericplatform');
+
+            return $loader($useragent);
         }
 
-        return $this->loader->load('unknown', $useragent);
+        $loader = $loaderFactory('unknown');
+
+        return $loader($useragent);
     }
 }
