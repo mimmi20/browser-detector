@@ -548,7 +548,7 @@ class MobileFactory
         '/IRON/' => 'umi',
         '/bv[5-8]000/i' => 'blackview',
         '/rio r1|gsmart/i' => 'gigabyte',
-        '/mz\-| m\d |m\d{3}|m\d note|pro 5/i' => 'meizu',
+        '/mz\-| m\ds? |m\d{3}|m\d note|pro 5/i' => 'meizu',
         '/[sxz]\d{3}[ae]/i' => 'htc',
         '/(i\-style|iq) ?\d/i' => 'imobile',
         '/7007hd/i' => 'perfeo',
