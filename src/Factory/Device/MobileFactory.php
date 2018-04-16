@@ -266,7 +266,8 @@ class MobileFactory
         '/HL/' => 'honlin',
         '/mtech/i' => 'mtech',
         '/myTAB/' => 'mytab',
-        '/lexand/' => 'lexand',
+        '/lexand/i' => 'lexand',
+        '/meeg/i' => 'meeg',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
