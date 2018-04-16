@@ -425,7 +425,7 @@ class MobileFactory
         '/TQ\d{3}/' => 'goclever',
         '/RMD\-\d{3,4}/' => 'ritmix',
         '/AX\d{3}/' => 'bmobile',
-        '/FreeTAB \d{4}/' => 'modecom',
+        '/freetab \d{4}|xino/i' => 'modecom',
         '/OV\-|Solution 7III/' => 'overmax',
         '/MID\d{3}/' => 'manta',
         '/FX2/' => 'faktorzwei',
