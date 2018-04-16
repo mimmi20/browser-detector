@@ -458,7 +458,7 @@ class MobileFactory
         '/w[12]00| w8/i' => 'thl',
         '/w713/i' => 'coolpad',
         '/ot\-/i' => 'alcatel',
-        '/n8000d|n[79]100/i' => 'samsung',
+        '/n8000d|n[79]100|g710[68]/i' => 'samsung',
         '/n003/i' => 'neo',
         '/ v1 /i' => 'maxtron',
         '/(OT\-)?[4-9]0[0-7]\d[ADKMNOXY]/' => 'alcatel',
