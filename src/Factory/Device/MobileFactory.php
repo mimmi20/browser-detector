@@ -268,6 +268,7 @@ class MobileFactory
         '/myTAB/' => 'mytab',
         '/lexand/i' => 'lexand',
         '/meeg/i' => 'meeg',
+        '/mofut/i' => 'mofut',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
@@ -294,7 +295,7 @@ class MobileFactory
         '/ta[dq]\-/i' => 'denver',
         '/connect(?:7pro|8plus)/i' => 'odys',
         '/\d{3}SH|SH\-?\d{2,4}[CDFU]/' => 'sharp',
-        '/m\-[mp]p/i' => 'mediacom',
+        '/m[\-_][mp]p/i' => 'mediacom',
         '/p900i/i' => 'docomo',
         '/easypad|junior 4\.0/i' => 'easypix',
         '/smart\-e5/i' => 'efox',

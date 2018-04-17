@@ -96,6 +96,11 @@ class DarwinFactoryTest extends TestCase
                 [],
             ],
             [
+                'Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook5%2C1)',
+                'desktop',
+                [],
+            ],
+            [
                 'Reeder/3.0.50 CFNetwork/887 Darwin/17.0.0',
                 'mobile',
                 [],
