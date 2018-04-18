@@ -15,7 +15,7 @@ use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\Helper\CacheKey;
 use BrowserDetector\Loader\Helper\InitData;
 use BrowserDetector\Loader\Helper\InitRules;
-use BrowserDetector\Loader\Loader;
+use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\SpecificLoaderInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
@@ -103,7 +103,7 @@ class LoaderTest extends TestCase
         /** @var InitRules $initRules */
         /** @var InitData $initData */
         /** @var SpecificLoaderInterface $specificLoader */
-        $object = new Loader(
+        $object = new GenericLoader(
             $cache,
             $logger,
             $cacheKey,
@@ -208,7 +208,7 @@ class LoaderTest extends TestCase
         /** @var InitRules $initRules */
         /** @var InitData $initData */
         /** @var SpecificLoaderInterface $specificLoader */
-        $object = new Loader(
+        $object = new GenericLoader(
             $cache,
             $logger,
             $cacheKey,
@@ -313,7 +313,7 @@ class LoaderTest extends TestCase
         /** @var InitRules $initRules */
         /** @var InitData $initData */
         /** @var SpecificLoaderInterface $specificLoader */
-        $object = new Loader(
+        $object = new GenericLoader(
             $cache,
             $logger,
             $cacheKey,
@@ -418,7 +418,7 @@ class LoaderTest extends TestCase
         /** @var InitRules $initRules */
         /** @var InitData $initData */
         /** @var SpecificLoaderInterface $specificLoader */
-        $object = new Loader(
+        $object = new GenericLoader(
             $cache,
             $logger,
             $cacheKey,

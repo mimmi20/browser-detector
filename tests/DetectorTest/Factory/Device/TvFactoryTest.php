@@ -14,7 +14,7 @@ namespace BrowserDetectorTest\Factory\Device;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Device\TvFactory;
 use BrowserDetector\Loader\DeviceLoaderFactory;
-use BrowserDetector\Loader\Loader;
+use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -55,7 +55,7 @@ class TvFactoryTest extends TestCase
      */
     public function testInvoke(string $useragent, string $expectedCompany, array $expectedResult): void
     {
-        $mockLoader = $this->getMockBuilder(Loader::class)
+        $mockLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
             ->getMock();

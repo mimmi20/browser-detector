@@ -13,7 +13,7 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Loader\Loader;
+use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\PlatformLoaderFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
@@ -57,7 +57,7 @@ class PlatformFactoryTest extends TestCase
      */
     public function testInvoke(string $useragent, string $expectedMode, OsInterface $expectedResult): void
     {
-        $mockLoader = $this->getMockBuilder(Loader::class)
+        $mockLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
             ->getMock();

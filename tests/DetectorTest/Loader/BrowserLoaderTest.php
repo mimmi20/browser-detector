@@ -14,7 +14,7 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\Helper\CacheKey;
-use BrowserDetector\Loader\Loader;
+use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
@@ -98,7 +98,7 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $engineLoader = $this->getMockBuilder(Loader::class)
+        $engineLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
@@ -112,7 +112,7 @@ class BrowserLoaderTest extends TestCase
         /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var Loader $engineLoader */
+        /** @var GenericLoader $engineLoader */
         $object = new BrowserLoader(
             $cache,
             $logger,
@@ -196,7 +196,7 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $engineLoader = $this->getMockBuilder(Loader::class)
+        $engineLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
@@ -210,7 +210,7 @@ class BrowserLoaderTest extends TestCase
         /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var Loader $engineLoader */
+        /** @var GenericLoader $engineLoader */
         $object = new BrowserLoader(
             $cache,
             $logger,
@@ -306,7 +306,7 @@ class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $engineLoader = $this->getMockBuilder(Loader::class)
+        $engineLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
@@ -320,7 +320,7 @@ class BrowserLoaderTest extends TestCase
         /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var Loader $engineLoader */
+        /** @var GenericLoader $engineLoader */
         $object = new BrowserLoader(
             $cache,
             $logger,
@@ -419,7 +419,7 @@ class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $engineLoader = $this->getMockBuilder(Loader::class)
+        $engineLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
@@ -435,7 +435,7 @@ class BrowserLoaderTest extends TestCase
         /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var Loader $engineLoader */
+        /** @var GenericLoader $engineLoader */
         $object = new BrowserLoader(
             $cache,
             $logger,
@@ -534,7 +534,7 @@ class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $engineLoader = $this->getMockBuilder(Loader::class)
+        $engineLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
@@ -550,7 +550,7 @@ class BrowserLoaderTest extends TestCase
         /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var Loader $engineLoader */
+        /** @var GenericLoader $engineLoader */
         $object = new BrowserLoader(
             $cache,
             $logger,

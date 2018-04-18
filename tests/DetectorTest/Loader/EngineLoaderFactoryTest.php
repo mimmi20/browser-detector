@@ -13,7 +13,7 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\EngineLoaderFactory;
-use BrowserDetector\Loader\Loader;
+use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -35,11 +35,11 @@ class EngineLoaderFactoryTest extends TestCase
         $factory = new EngineLoaderFactory($cache, $logger);
         $object  = $factory();
 
-        self::assertInstanceOf(Loader::class, $object);
+        self::assertInstanceOf(GenericLoader::class, $object);
 
         $objectTwo = $factory();
 
-        self::assertInstanceOf(Loader::class, $objectTwo);
+        self::assertInstanceOf(GenericLoader::class, $objectTwo);
         self::assertSame($objectTwo, $object);
     }
 }

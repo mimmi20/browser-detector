@@ -50,9 +50,9 @@ class DeviceLoaderFactory
      * @param string $company
      * @param string $mode
      *
-     * @return Loader
+     * @return GenericLoaderInterface
      */
-    public function __invoke(string $company, string $mode): Loader
+    public function __invoke(string $company, string $mode): GenericLoaderInterface
     {
         static $loaders = [];
 
@@ -93,7 +93,7 @@ class DeviceLoaderFactory
                 $platformLoader
             );
 
-            $loaders[$key] = new Loader(
+            $loaders[$key] = new GenericLoader(
                 $this->cache,
                 $this->logger,
                 $cacheKey,

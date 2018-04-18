@@ -13,8 +13,8 @@ namespace BrowserDetector;
 
 use BrowserDetector\Factory\BrowserFactoryInterface;
 use BrowserDetector\Factory\DeviceFactoryInterface;
+use BrowserDetector\Factory\EngineFactoryInterface;
 use BrowserDetector\Factory\PlatformFactoryInterface;
-use BrowserDetector\Loader\Loader;
 use BrowserDetector\Loader\NotFoundException;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
@@ -29,7 +29,7 @@ use UnexpectedValueException;
 /**
  * Browser Detection class
  */
-class Detector
+class Detector implements DetectorInterface
 {
     /**
      * an logger instance
@@ -54,9 +54,9 @@ class Detector
     private $browserFactory;
 
     /**
-     * @var \BrowserDetector\Loader\Loader
+     * @var \BrowserDetector\Factory\EngineFactoryInterface
      */
-    private $engineLoader;
+    private $engineFactory;
 
     /**
      * sets the cache used to make the detection faster
@@ -65,20 +65,20 @@ class Detector
      * @param \BrowserDetector\Factory\DeviceFactoryInterface   $deviceFactory
      * @param \BrowserDetector\Factory\PlatformFactoryInterface $platformFactory
      * @param \BrowserDetector\Factory\BrowserFactoryInterface  $browserFactory
-     * @param \BrowserDetector\Loader\Loader                    $engineLoader
+     * @param \BrowserDetector\Factory\EngineFactoryInterface   $engineFactory
      */
     public function __construct(
         LoggerInterface $logger,
         DeviceFactoryInterface $deviceFactory,
         PlatformFactoryInterface $platformFactory,
         BrowserFactoryInterface $browserFactory,
-        Loader $engineLoader
+        EngineFactoryInterface $engineFactory
     ) {
         $this->logger          = $logger;
         $this->deviceFactory   = $deviceFactory;
         $this->platformFactory = $platformFactory;
         $this->browserFactory  = $browserFactory;
-        $this->engineLoader    = $engineLoader;
+        $this->engineFactory   = $engineFactory;
     }
 
     /**
@@ -161,12 +161,12 @@ class Detector
             $this->logger->debug('engine not detected from browser');
 
             if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
-                $engine = $this->engineLoader->load('webkit', $browserUa);
+                $engine = $this->engineFactory->load('webkit', $browserUa);
             } else {
-                $engineLoader = $this->engineLoader;
+                $engineFactory = $this->engineFactory;
 
                 try {
-                    $engine = $engineLoader($browserUa);
+                    $engine = $engineFactory($browserUa);
                 } catch (InvalidArgumentException $e) {
                     $this->logger->info($e);
                 }

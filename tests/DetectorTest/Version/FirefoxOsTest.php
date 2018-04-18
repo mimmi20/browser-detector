@@ -92,6 +92,10 @@ class FirefoxOsTest extends TestCase
                 'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
                 '0.0.0',
             ],
+            [
+                'warmup',
+                '0.0.0',
+            ],
         ];
     }
 }

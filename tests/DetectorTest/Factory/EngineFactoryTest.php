@@ -9,19 +9,21 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetectorTest\Factory\Device;
+namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Cache\Cache;
-use BrowserDetector\Factory\Device\MobileFactory;
-use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Loader\GenericLoader;
+use BrowserDetector\Loader\EngineLoaderFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
+use UaResult\Engine\Engine;
+use UaResult\Engine\EngineInterface;
 
-class MobileFactoryTest extends TestCase
+class EngineFactoryTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\MobileFactory
+     * @var \BrowserDetector\Factory\EngineFactory
      */
     private $object;
 
@@ -38,22 +40,21 @@ class MobileFactoryTest extends TestCase
         /** @var Cache $cache */
         $cache = $this->createMock(Cache::class);
 
-        $this->object = new MobileFactory($cache, $logger);
+        $this->object = new EngineFactory($cache, $logger);
     }
 
     /**
      * @dataProvider providerUseragents
      *
-     * @param string $useragent
-     * @param string $expectedCompany
-     * @param array  $expectedResult
+     * @param string      $useragent
+     * @param EngineInterface $expectedResult
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
      *
      * @return void
      */
-    public function testInvoke(string $useragent, string $expectedCompany, array $expectedResult): void
+    public function testInvoke(string $useragent, EngineInterface $expectedResult): void
     {
         $mockLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
@@ -65,14 +66,13 @@ class MobileFactoryTest extends TestCase
             ->with($useragent)
             ->willReturn($expectedResult);
 
-        $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactory::class)
+        $mockLoaderFactory = $this->getMockBuilder(EngineLoaderFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
             ->getMock();
         $mockLoaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with($expectedCompany, 'mobile')
             ->willReturn($mockLoader);
 
         $property = new \ReflectionProperty($this->object, 'loaderFactory');
@@ -91,19 +91,8 @@ class MobileFactoryTest extends TestCase
     {
         return [
             [
-                'Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.3 Mobile Safari/537.3',
-                'samsung',
-                [],
-            ],
-            [
-                'Mozilla/5.0 (Linux; U; Android 2.2.2; ru; GT-A7100 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.8.0.435 U3/0.8.0 Mobile Safari/533.1',
-                'htm',
-                [],
-            ],
-            [
-                'this is a fake ua to trigger the fallback',
-                'unknown',
-                [],
+                'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 930) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
+                new Engine(),
             ],
         ];
     }
