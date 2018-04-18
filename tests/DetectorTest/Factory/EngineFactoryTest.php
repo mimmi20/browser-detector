@@ -13,8 +13,8 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\EngineFactory;
-use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\EngineLoaderFactory;
+use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use UaResult\Engine\Engine;
@@ -46,7 +46,7 @@ class EngineFactoryTest extends TestCase
     /**
      * @dataProvider providerUseragents
      *
-     * @param string      $useragent
+     * @param string          $useragent
      * @param EngineInterface $expectedResult
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException

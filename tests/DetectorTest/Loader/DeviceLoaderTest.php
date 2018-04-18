@@ -13,8 +13,8 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\DeviceLoader;
-use BrowserDetector\Loader\Helper\CacheKey;
 use BrowserDetector\Loader\GenericLoader;
+use BrowserDetector\Loader\Helper\CacheKey;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;

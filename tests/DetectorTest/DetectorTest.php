@@ -16,7 +16,6 @@ use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;

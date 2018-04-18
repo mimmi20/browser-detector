@@ -16,7 +16,6 @@ use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Loader\EngineLoaderFactory;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 

@@ -12,10 +12,10 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Cache\Cache;
+use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\Helper\CacheKey;
 use BrowserDetector\Loader\Helper\InitData;
 use BrowserDetector\Loader\Helper\InitRules;
-use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\SpecificLoaderInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;

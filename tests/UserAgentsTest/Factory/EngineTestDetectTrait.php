@@ -31,6 +31,7 @@ trait EngineTestDetectTrait
      * @param string|null $manufacturer
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
     public function testDetect(string $agent, ?string $engine, ?string $version, ?string $manufacturer): void
@@ -48,7 +49,7 @@ trait EngineTestDetectTrait
         self::assertSame(
             $engine,
             $result->getName(),
-            'Expected Engine name to be "' . $engine.'" (was "' . $result->getName() . '")'
+            'Expected Engine name to be "' . $engine . '" (was "' . $result->getName() . '")'
         );
 
         self::assertInstanceOf(Version::class, $result->getVersion());
