@@ -12,13 +12,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
 
 /**
  * Browser detection class
  */
-class DarwinFactory
+class DarwinFactory implements DeviceFactoryInterface
 {
     private $factories = [
         '/cfnetwork\/.*\((?:x86_64|i386)\)/i' => 'desktop',

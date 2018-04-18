@@ -12,10 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
 
-class MobileFactory
+class MobileFactory implements DeviceFactoryInterface
 {
     private $factories = [
         // @todo: rules with company name in UA
@@ -269,6 +270,7 @@ class MobileFactory
         '/lexand/i' => 'lexand',
         '/meeg/i' => 'meeg',
         '/mofut/i' => 'mofut',
+        '/majestic/i' => 'majestic',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
@@ -334,7 +336,7 @@ class MobileFactory
         '/D6000/' => 'innos',
         '/[SV]T\d{5}/' => 'trekstor',
         '/e6560|c6750|c6742|c6730|c6522n|c5215|c5170|c5155|c5120|dm015k|kc\-s701/i' => 'kyocera',
-        '/p4501|p850x|e4004|e691x|p1050x|p1032x|p1040x|s1035x|p1035x|p4502|p851x/i' => 'medion',
+        '/p4501|p850x|e4004|e691x|p1050x|p1032x|p1040x|s1035x|p1035x|p4502|p851x|x5001/i' => 'medion',
         '/g6600/i' => 'huawei',
         '/DG\d{3,4}/' => 'doogee',
         '/Touchlet|X7G|X10\./' => 'pearl',
@@ -713,6 +715,7 @@ class MobileFactory
         '/excite prime/i' => 'cloudfone',
         '/ z1 /i' => 'ninetology',
         '/ Presto /' => 'oplus',
+        '/crono/i' => 'majestic',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/kin\.two|zunehd/i' => 'microsoft',

@@ -12,10 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
 
-class DesktopFactory
+class DesktopFactory implements DeviceFactoryInterface
 {
     private $factories = [
         '/raspbian|debian.*rpi/i' => 'raspberry pi foundation',

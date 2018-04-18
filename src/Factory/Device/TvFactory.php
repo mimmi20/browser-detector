@@ -12,10 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
 
-class TvFactory
+class TvFactory implements DeviceFactoryInterface
 {
     private $factories = [
         '/kdl\d{2}|nsz\-gs7\/gx70|sonydtv|netbox/i' => 'sony',
