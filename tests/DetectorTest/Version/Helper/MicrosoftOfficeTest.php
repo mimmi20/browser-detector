@@ -45,7 +45,7 @@ class MicrosoftOfficeTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerVersion()
+    public function providerVersion(): array
     {
         return [
             ['2007', '2007'],

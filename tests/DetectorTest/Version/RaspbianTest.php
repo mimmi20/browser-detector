@@ -49,7 +49,7 @@ class RaspbianTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerVersion()
+    public function providerVersion(): array
     {
         return [
             [

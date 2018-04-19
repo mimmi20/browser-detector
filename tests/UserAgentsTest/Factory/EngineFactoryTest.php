@@ -40,7 +40,7 @@ class EngineFactoryTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerDetect()
+    public function providerDetect(): array
     {
         $tests = [];
 

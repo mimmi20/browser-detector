@@ -32,7 +32,7 @@ class WindowsTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsWindows()
+    public function providerIsWindows(): array
     {
         return [
             ['Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)'],
@@ -72,7 +72,7 @@ class WindowsTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsNotWindows()
+    public function providerIsNotWindows(): array
     {
         return [
             ['Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3'],
@@ -119,7 +119,7 @@ class WindowsTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsMobileWindows()
+    public function providerIsMobileWindows(): array
     {
         return [
             ['Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M700; OpVer 19.123.2.733) OrangeBot-Mobile 2008.0 (mobilesearch.support@orange-ftgroup.com)'],
@@ -145,7 +145,7 @@ class WindowsTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsNotMobileWindows()
+    public function providerIsNotMobileWindows(): array
     {
         return [
             ['Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3'],

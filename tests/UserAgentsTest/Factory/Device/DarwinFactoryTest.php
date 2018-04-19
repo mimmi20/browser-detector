@@ -46,7 +46,7 @@ class DarwinFactoryTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerDetect()
+    public function providerDetect(): array
     {
         return json_decode(file_get_contents('tests/data/factory/device/darwin.json'), true);
     }

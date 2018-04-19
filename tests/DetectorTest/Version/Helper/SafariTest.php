@@ -45,7 +45,7 @@ class SafariTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerVersion()
+    public function providerVersion(): array
     {
         return [
             ['3.0', '3.0'],

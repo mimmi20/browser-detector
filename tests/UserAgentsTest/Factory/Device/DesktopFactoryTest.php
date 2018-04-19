@@ -46,7 +46,7 @@ class DesktopFactoryTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerDetect()
+    public function providerDetect(): array
     {
         $sourceDirectory = 'tests/data/factory/device/desktop/';
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);

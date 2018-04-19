@@ -41,7 +41,7 @@ class PlatformFactoryTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerDetect()
+    public function providerDetect(): array
     {
         $sourceDirectory = 'tests/data/factory/platform/';
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);

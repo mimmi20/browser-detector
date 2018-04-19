@@ -87,7 +87,7 @@ class TvFactoryTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerUseragents()
+    public function providerUseragents(): array
     {
         return [
             [

@@ -34,7 +34,7 @@ class MobileDeviceTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsMobile()
+    public function providerIsMobile(): array
     {
         return [
             ['Mozilla/5.0 (Mobile; ALCATELOneTouch4012X/SVN 01010B; rv:18.1) Gecko/18.1 Firefox/18.1'],
@@ -116,7 +116,7 @@ class MobileDeviceTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsNotMobile()
+    public function providerIsNotMobile(): array
     {
         return [
             ['Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.0.2000 Chrome/35.0.1849.0 Safari/537.36'],

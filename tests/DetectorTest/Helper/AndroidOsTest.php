@@ -32,7 +32,7 @@ class AndroidOsTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsAndroidOs()
+    public function providerIsAndroidOs(): array
     {
         return [
             ['Mozilla/5.0 (X11; U; Linux x86_64; en-gb) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36 Puffin/4.1.1.1119AP'],
@@ -58,7 +58,7 @@ class AndroidOsTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsNotAndroidOs()
+    public function providerIsNotAndroidOs(): array
     {
         return [
             ['Microsoft Office Excel 2013'],

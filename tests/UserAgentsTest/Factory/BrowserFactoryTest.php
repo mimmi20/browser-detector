@@ -40,7 +40,7 @@ class BrowserFactoryTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerDetect()
+    public function providerDetect(): array
     {
         $sourceDirectory = 'tests/data/factory/browser/';
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);

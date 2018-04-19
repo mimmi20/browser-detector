@@ -34,7 +34,7 @@ class TvTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsTv()
+    public function providerIsTv(): array
     {
         return [
             ['dlink.dsm380'],
@@ -74,7 +74,7 @@ class TvTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsNotTv()
+    public function providerIsNotTv(): array
     {
         return [
             ['Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.0.2000 Chrome/35.0.1849.0 Safari/537.36'],
