@@ -341,7 +341,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/g6600/i' => 'huawei',
         '/DG\d{3,4}/' => 'doogee',
         '/Touchlet|X7G|X10\./' => 'pearl',
-        '/mpqc\d{3,4}/i' => 'mpman',
+        '/mpqc\d{3,4}|ph\d{3}/i' => 'mpman',
         '/terra pad|pad1002/i' => 'wortmann',
         '/g710[68]/i' => 'samsung',
         '/[CDEFG]\d{4}/' => 'sony',
