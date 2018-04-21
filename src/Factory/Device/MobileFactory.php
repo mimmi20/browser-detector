@@ -398,6 +398,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/vodafone smart 4 max|smart 4 turbo/i' => 'vodafone',
         '/one[ _]?touch|v860|vodafone (?:smart|785|875|975n)|vf\-(?:795|895n)|m812c|telekom puls/i' => 'alcatel',
         '/xperia/i' => 'sony',
+        '/momodesign md droid/i' => 'zte',
         '/ droid|milestone|xoom|razr hd| z /i' => 'motorola',
         '/SGP\d{3}|X[ML]\d{2}[th]/' => 'sony',
         '/sgpt\d{2}/i' => 'sony',
