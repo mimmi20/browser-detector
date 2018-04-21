@@ -1080,8 +1080,10 @@
     "marketingName": "Remix OS",
     "manufacturer": "Jide",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "RemixOS"
+      ]
     }
   }
 }

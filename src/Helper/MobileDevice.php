@@ -201,6 +201,7 @@ class MobileDevice
             'karbonn',
             'm2 note',
             'lenovotablet',
+            'remixos',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {
