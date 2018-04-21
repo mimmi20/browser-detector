@@ -40,7 +40,7 @@ class DeviceFactoryTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerDetect()
+    public function providerDetect(): array
     {
         $sourceDirectory = 'tests/data/factory/device/';
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);

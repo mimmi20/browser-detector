@@ -17,7 +17,7 @@ use BrowserDetector\Loader\Helper\InitData;
 use BrowserDetector\Loader\Helper\InitRules;
 use Psr\Log\LoggerInterface;
 
-class Loader
+class GenericLoader implements GenericLoaderInterface
 {
     /**
      * @var \BrowserDetector\Cache\CacheInterface
@@ -77,6 +77,7 @@ class Loader
      * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return mixed
      */
@@ -145,6 +146,8 @@ class Loader
     /**
      * @param string $key
      * @param string $useragent
+     *
+     * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return mixed
      */

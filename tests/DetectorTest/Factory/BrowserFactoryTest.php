@@ -14,7 +14,7 @@ namespace BrowserDetectorTest\Factory;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Loader\BrowserLoaderFactory;
-use BrowserDetector\Loader\Loader;
+use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -55,7 +55,7 @@ class BrowserFactoryTest extends TestCase
      */
     public function testInvoke(string $useragent, string $expectedMode, array $expectedResult): void
     {
-        $mockLoader = $this->getMockBuilder(Loader::class)
+        $mockLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
             ->getMock();
@@ -87,7 +87,7 @@ class BrowserFactoryTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerUseragents()
+    public function providerUseragents(): array
     {
         return [
             [

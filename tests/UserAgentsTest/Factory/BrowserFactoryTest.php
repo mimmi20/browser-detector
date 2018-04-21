@@ -23,6 +23,8 @@ class BrowserFactoryTest extends TestCase
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
     protected function setUp(): void
@@ -38,7 +40,7 @@ class BrowserFactoryTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerDetect()
+    public function providerDetect(): array
     {
         $sourceDirectory = 'tests/data/factory/browser/';
         $iterator        = new \RecursiveDirectoryIterator($sourceDirectory);

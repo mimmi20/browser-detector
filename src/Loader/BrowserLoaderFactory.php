@@ -49,9 +49,9 @@ class BrowserLoaderFactory
     /**
      * @param string $mode
      *
-     * @return Loader
+     * @return GenericLoaderInterface
      */
-    public function __invoke(string $mode): Loader
+    public function __invoke(string $mode): GenericLoaderInterface
     {
         static $loaders = [];
 
@@ -90,7 +90,7 @@ class BrowserLoaderFactory
                 $engineLoader
             );
 
-            $loaders[$mode] = new Loader(
+            $loaders[$mode] = new GenericLoader(
                 $this->cache,
                 $this->logger,
                 $cacheKey,

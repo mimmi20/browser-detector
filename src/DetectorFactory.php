@@ -14,8 +14,8 @@ namespace BrowserDetector;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\DeviceFactory;
+use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Loader\EngineLoaderFactory;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 
@@ -52,11 +52,9 @@ class DetectorFactory
             $deviceFactory   = new DeviceFactory($this->cache, $this->logger);
             $platformFactory = new PlatformFactory($this->cache, $this->logger);
             $browserFactory  = new BrowserFactory($this->cache, $this->logger);
+            $engineFactory   = new EngineFactory($this->cache, $this->logger);
 
-            $factory      = new EngineLoaderFactory($this->cache, $this->logger);
-            $engineLoader = $factory();
-
-            $detector = new Detector($this->logger, $deviceFactory, $platformFactory, $browserFactory, $engineLoader);
+            $detector = new Detector($this->logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
         }
 
         return $detector;

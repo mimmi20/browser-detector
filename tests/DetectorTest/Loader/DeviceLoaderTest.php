@@ -13,8 +13,8 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\DeviceLoader;
+use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\Helper\CacheKey;
-use BrowserDetector\Loader\Loader;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
@@ -101,7 +101,7 @@ class DeviceLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $platformLoader = $this->getMockBuilder(Loader::class)
+        $platformLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
@@ -115,7 +115,7 @@ class DeviceLoaderTest extends TestCase
         /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var Loader $platformLoader */
+        /** @var GenericLoader $platformLoader */
         $object = new DeviceLoader(
             $cache,
             $logger,
@@ -203,7 +203,7 @@ class DeviceLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $platformLoader = $this->getMockBuilder(Loader::class)
+        $platformLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
@@ -217,7 +217,7 @@ class DeviceLoaderTest extends TestCase
         /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var Loader $platformLoader */
+        /** @var GenericLoader $platformLoader */
         $object = new DeviceLoader(
             $cache,
             $logger,
@@ -319,7 +319,7 @@ class DeviceLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $platformLoader = $this->getMockBuilder(Loader::class)
+        $platformLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
@@ -333,7 +333,7 @@ class DeviceLoaderTest extends TestCase
         /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var Loader $platformLoader */
+        /** @var GenericLoader $platformLoader */
         $object = new DeviceLoader(
             $cache,
             $logger,
@@ -438,7 +438,7 @@ class DeviceLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $platformLoader = $this->getMockBuilder(Loader::class)
+        $platformLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load', 'init'])
             ->getMock();
@@ -459,7 +459,7 @@ class DeviceLoaderTest extends TestCase
         /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var Loader $platformLoader */
+        /** @var GenericLoader $platformLoader */
         $object = new DeviceLoader(
             $cache,
             $logger,
@@ -564,7 +564,7 @@ class DeviceLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $platformLoader = $this->getMockBuilder(Loader::class)
+        $platformLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load', 'init'])
             ->getMock();
@@ -585,7 +585,7 @@ class DeviceLoaderTest extends TestCase
         /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var Loader $platformLoader */
+        /** @var GenericLoader $platformLoader */
         $object = new DeviceLoader(
             $cache,
             $logger,

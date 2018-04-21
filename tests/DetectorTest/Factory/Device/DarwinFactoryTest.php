@@ -14,7 +14,7 @@ namespace BrowserDetectorTest\Factory\Device;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Device\DarwinFactory;
 use BrowserDetector\Loader\DeviceLoaderFactory;
-use BrowserDetector\Loader\Loader;
+use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -55,7 +55,7 @@ class DarwinFactoryTest extends TestCase
      */
     public function testInvoke(string $useragent, string $expectedMode, array $expectedResult): void
     {
-        $mockLoader = $this->getMockBuilder(Loader::class)
+        $mockLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
             ->getMock();
@@ -87,11 +87,16 @@ class DarwinFactoryTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerUseragents()
+    public function providerUseragents(): array
     {
         return [
             [
                 'Safari/13604.1.38.1.6 CFNetwork/887 Darwin/17.0.0 (x86_64)',
+                'desktop',
+                [],
+            ],
+            [
+                'Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook5%2C1)',
                 'desktop',
                 [],
             ],

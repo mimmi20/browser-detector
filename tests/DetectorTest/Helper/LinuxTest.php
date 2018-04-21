@@ -32,7 +32,7 @@ class LinuxTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsLinux()
+    public function providerIsLinux(): array
     {
         return [
             ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.8.2'],
@@ -76,7 +76,7 @@ class LinuxTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsNotLinux()
+    public function providerIsNotLinux(): array
     {
         return [
             ['Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3'],

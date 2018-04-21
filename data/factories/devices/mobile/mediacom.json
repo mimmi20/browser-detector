@@ -1,24 +1,69 @@
 {
   "rules": {
-    "/m\\-mp7s2d3g/i": "mediacom m-mp7s2d3g",
-    "/m\\-mp7s2a3g/i": "mediacom m-mp7s2a3g",
-    "/m\\-mp7s2k3g/i": "mediacom m-mp7s2k3g",
-    "/m\\-mp7s2b3g/i": "mediacom m-mp7s2b3g",
-    "/m\\-mp75s23g/i": "mediacom m-mp75s23g",
-    "/m\\-mp721m/i": "mediacom m-mp721m",
-    "/m\\-mp720m/i": "mediacom m-mp720m",
-    "/m\\-ppg700/i": "mediacom m-ppg700",
-    "/m\\-pp2s650c/i": "mediacom m-pp2s650c",
-    "/m\\-pp2s650/i": "mediacom m-pp2s650",
-    "/m\\-ppxs551u/i": "mediacom m-ppxs551u",
-    "/m\\-pp2s550/i": "mediacom m-pp2s550",
-    "/m\\-ppag550/i": "mediacom m-ppag550",
-    "/m\\-ppxs531/i": "mediacom m-ppxs531",
-    "/m\\-mp5303g/i": "mediacom m-mp5303g",
-    "/m\\-pp2g530/i": "mediacom m-pp2g530",
-    "/m\\-mp940m/i": "mediacom m-mp940m",
-    "/m\\-pp2s500b/i": "mediacom m-pp2s500b",
-    "/m\\-ppxg501/i": "mediacom m-ppxg501"
+    "/m[_\\-]mp/i": {
+      "/m[_\\-]mp7/i": {
+        "/m[_\\-]mp7s/i": {
+          "/m[_\\-]mp7s2d3g/i": "mediacom m-mp7s2d3g",
+          "/m[_\\-]mp7s2a3g/i": "mediacom m-mp7s2a3g",
+          "/m[_\\-]mp7s2k3g/i": "mediacom m-mp7s2k3g",
+          "/m[_\\-]mp7s2b3g/i": "mediacom m-mp7s2b3g"
+        },
+        "/m[_\\-]mp75/i": {
+          "/m[_\\-]mp75s23g/i": "mediacom m-mp75s23g"
+        },
+        "/m[_\\-]mp72/i": {
+          "/m[_\\-]mp721m/i": "mediacom m-mp721m",
+          "/m[_\\-]mp720m/i": "mediacom m-mp720m"
+        }
+      },
+      "/m[_\\-]mp5303g/i": "mediacom m-mp5303g",
+      "/m[_\\-]mp940m/i": "mediacom m-mp940m"
+    },
+    "/m[_\\-]pp/i": {
+      "/m[_\\-]ppg/i": {
+        "/m[_\\-]ppg700/i": "mediacom m-ppg700"
+      },
+      "/m[_\\-]pp2/i": {
+        "/m[_\\-]pp2s/i": {
+          "/m[_\\-]pp2s650c/i": "mediacom m-pp2s650c",
+          "/m[_\\-]pp2s650/i": "mediacom m-pp2s650",
+          "/m[_\\-]pp2s550/i": "mediacom m-pp2s550",
+          "/m[_\\-]pp2s500c/i": "mediacom m-pp2s500c",
+          "/m[_\\-]pp2s500b/i": "mediacom m-pp2s500b",
+          "/m[_\\-]pp2s500/i": "mediacom m-pp2s500"
+        },
+        "/m[_\\-]pp2g/i": {
+          "/m[_\\-]pp2g530/i": "mediacom m-pp2g530"
+        }
+      },
+      "/m[_\\-]ppx/i": {
+        "/m[_\\-]ppxs/i": {
+          "/m[_\\-]ppxs551u/i": "mediacom m-ppxs551u",
+          "/m[_\\-]ppxs531/i": "mediacom m-ppxs531",
+          "/m[_\\-]ppxs501/i": "mediacom m-ppxs501",
+          "/m[_\\-]ppxs470/i": "mediacom m-ppxs470"
+        },
+        "/m[_\\-]ppxg/i": {
+          "/m[_\\-]ppxg501/i": "mediacom m-ppxg501",
+          "/m[_\\-]ppxg400/i": "mediacom m-ppxg400"
+        },
+        "/m[_\\-]ppxx/i": {
+          "/m[_\\-]ppxx520u/i": "mediacom m-ppxx520u"
+        }
+      },
+      "/m[_\\-]ppa/i": {
+        "/m[_\\-]ppag/i": {
+          "/m[_\\-]ppag550/i": "mediacom m-ppag550",
+          "/m[_\\-]ppag500/i": "mediacom m-ppag500"
+        },
+        "/m[_\\-]ppax/i": {
+          "/m[_\\-]ppax510u/i": "mediacom m-ppax510u",
+          "/m[_\\-]ppax470u/i": "mediacom m-ppax470u"
+        }
+      },
+      "/m[_\\-]ppbg500/i": "mediacom m-ppbg500",
+      "/m[_\\-]ppcg500/i": "mediacom m-ppcg500"
+    }
   },
   "generic": "general mediacom device"
 }

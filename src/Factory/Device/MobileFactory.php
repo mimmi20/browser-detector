@@ -12,10 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
 
-class MobileFactory
+class MobileFactory implements DeviceFactoryInterface
 {
     private $factories = [
         // @todo: rules with company name in UA
@@ -266,7 +267,12 @@ class MobileFactory
         '/HL/' => 'honlin',
         '/mtech/i' => 'mtech',
         '/myTAB/' => 'mytab',
-        '/lexand/' => 'lexand',
+        '/lexand/i' => 'lexand',
+        '/meeg/i' => 'meeg',
+        '/mofut/i' => 'mofut',
+        '/majestic/i' => 'majestic',
+        '/mlled/i' => 'mlled',
+        '/m\.t\.t\./i' => 'mtt',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
@@ -293,7 +299,7 @@ class MobileFactory
         '/ta[dq]\-/i' => 'denver',
         '/connect(?:7pro|8plus)/i' => 'odys',
         '/\d{3}SH|SH\-?\d{2,4}[CDFU]/' => 'sharp',
-        '/m\-[mp]p/i' => 'mediacom',
+        '/m[\-_][mp]p/i' => 'mediacom',
         '/p900i/i' => 'docomo',
         '/easypad|junior 4\.0/i' => 'easypix',
         '/smart\-e5/i' => 'efox',
@@ -313,7 +319,7 @@ class MobileFactory
         '/ARK/' => 'ark',
         '/Magic/' => 'magic',
         '/XT811/' => 'flipkart',
-        '/XT\d{3,4}/' => 'motorola',
+        '/XT\d{3,4}|WX\d{3}|MB\d{3}/' => 'motorola',
         '/M[Ii][ -](?:\d|PAD|MAX|NOTE|A1)/' => 'xiaomi',
         '/HM[ _](?:NOTE|1SC|1SW|1S)/' => 'xiaomi',
         '/WeTab/' => 'neofonie',
@@ -332,12 +338,13 @@ class MobileFactory
         '/D6000/' => 'innos',
         '/[SV]T\d{5}/' => 'trekstor',
         '/e6560|c6750|c6742|c6730|c6522n|c5215|c5170|c5155|c5120|dm015k|kc\-s701/i' => 'kyocera',
-        '/p4501|p850x|e4004|e691x|p1050x|p1032x|p1040x|s1035x|p1035x|p4502|p851x/i' => 'medion',
+        '/p4501|p850x|e4004|e691x|p1050x|p1032x|p1040x|s1035x|p1035x|p4502|p851x|x5001/i' => 'medion',
         '/g6600/i' => 'huawei',
         '/DG\d{3,4}/' => 'doogee',
         '/Touchlet|X7G|X10\./' => 'pearl',
-        '/mpqc\d{3,4}/i' => 'mpman',
+        '/mpqc\d{3,4}|ph\d{3}/i' => 'mpman',
         '/terra pad|pad1002/i' => 'wortmann',
+        '/g710[68]/i' => 'samsung',
         '/[CDEFG]\d{4}/' => 'sony',
         '/PM\-\d{4}/' => 'sanyo',
         '/folio_and_a|toshiba_ac_and_az|folio100/i' => 'toshiba',
@@ -387,10 +394,10 @@ class MobileFactory
         '/padfone|transformer|slider sl101|eee_701|tpad_10|tx201la/i' => 'asus',
         '/QtCarBrowser/' => 'teslamotors',
         '/m[bez]\d{3}/i' => 'motorola',
-        '/WX\d{3}/' => 'motorola',
         '/vodafone smart 4 max|smart 4 turbo/i' => 'vodafone',
         '/one[ _]?touch|v860|vodafone (?:smart|785|875|975n)|vf\-(?:795|895n)|m812c|telekom puls/i' => 'alcatel',
         '/xperia/i' => 'sony',
+        '/momodesign md droid/i' => 'zte',
         '/ droid|milestone|xoom|razr hd| z /i' => 'motorola',
         '/SGP\d{3}|X[ML]\d{2}[th]/' => 'sony',
         '/sgpt\d{2}/i' => 'sony',
@@ -424,7 +431,7 @@ class MobileFactory
         '/TQ\d{3}/' => 'goclever',
         '/RMD\-\d{3,4}/' => 'ritmix',
         '/AX\d{3}/' => 'bmobile',
-        '/FreeTAB \d{4}/' => 'modecom',
+        '/freetab \d{4}|xino/i' => 'modecom',
         '/OV\-|Solution 7III/' => 'overmax',
         '/MID\d{3}/' => 'manta',
         '/FX2/' => 'faktorzwei',
@@ -534,7 +541,7 @@ class MobileFactory
         '/ft[ _]\d{4}/i' => 'lifeware',
         '/(?:sm|yq)\d{3}/i' => 'smartisan',
         '/ls\-\d{4}/i' => 'lyf',
-        '/mx4/i' => 'meizu',
+        '/mx\d/i' => 'meizu',
         '/x[69]pro|x5max_pro/i' => 'doogee',
         '/x\d ?(plus|max|pro)/i' => 'vivo',
         '/neffos|tp\d{3}/i' => 'tplink',
@@ -548,7 +555,7 @@ class MobileFactory
         '/IRON/' => 'umi',
         '/bv[5-8]000/i' => 'blackview',
         '/rio r1|gsmart/i' => 'gigabyte',
-        '/mz\-| m\d |m\d{3}|m\d note|pro 5/i' => 'meizu',
+        '/mz\-| m\ds? |m\d{3}|m\d note|pro 5/i' => 'meizu',
         '/[sxz]\d{3}[ae]/i' => 'htc',
         '/(i\-style|iq) ?\d/i' => 'imobile',
         '/7007hd/i' => 'perfeo',
@@ -710,6 +717,7 @@ class MobileFactory
         '/excite prime/i' => 'cloudfone',
         '/ z1 /i' => 'ninetology',
         '/ Presto /' => 'oplus',
+        '/crono/i' => 'majestic',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/kin\.two|zunehd/i' => 'microsoft',

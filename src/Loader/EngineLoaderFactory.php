@@ -46,9 +46,9 @@ class EngineLoaderFactory
     }
 
     /**
-     * @return Loader
+     * @return GenericLoaderInterface
      */
-    public function __invoke(): Loader
+    public function __invoke(): GenericLoaderInterface
     {
         static $loader = null;
 
@@ -82,7 +82,7 @@ class EngineLoaderFactory
                 CompanyLoader::getInstance()
             );
 
-            $loader = new Loader(
+            $loader = new GenericLoader(
                 $this->cache,
                 $this->logger,
                 $cacheKey,

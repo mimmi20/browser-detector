@@ -34,7 +34,7 @@ class IosTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsiOS()
+    public function providerIsiOS(): array
     {
         return [
             ['AntennaPod/1.5.2.0'],
@@ -71,7 +71,7 @@ class IosTest extends TestCase
     /**
      * @return array[]
      */
-    public function providerIsNotiOS()
+    public function providerIsNotiOS(): array
     {
         return [
             ['Microsoft Office Excel 2013'],

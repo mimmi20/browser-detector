@@ -18,7 +18,7 @@ use BrowserDetector\Factory\Device\MobileFactory;
 use BrowserDetector\Factory\Device\TvFactory;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Loader\DeviceLoaderFactory;
-use BrowserDetector\Loader\Loader;
+use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -456,7 +456,7 @@ class DeviceFactoryTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $desktopFactory);
 
-        $loader = $this->getMockBuilder(Loader::class)
+        $loader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
             ->getMock();
