@@ -273,6 +273,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/majestic/i' => 'majestic',
         '/mlled/i' => 'mlled',
         '/m\.t\.t\./i' => 'mtt',
+        '/meu/i' => 'meu',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
