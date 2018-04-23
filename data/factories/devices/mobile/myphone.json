@@ -1,7 +1,8 @@
 {
   "rules": {
     "/infinity[ _]ii[ _]lte/i": "myphone infinity 2 lte",
-    "/axe[ _](?:3g|lte)/i": "myphone axe lte",
+    "/axe[ _]lte/i": "myphone axe lte",
+    "/axe[ _]3g/i": "myphone axe 3g",
     "/cube[ _]lte/i": "myphone cube lte",
     "/a919 duo/i": "myphone a919 duo",
     "/a888/i": "myphone a888",

@@ -28,6 +28,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/HTC/' => 'htc',
         '/asus/i' => 'asus',
         '/feiteng/i' => 'feiteng',
+        '/myphone|cube_lte/i' => 'myphone', // must be before Cube
         '/cube/i' => 'cube',
         '/LG/' => 'lg',
         '/pantech/i' => 'pantech',
@@ -219,7 +220,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/advan/i' => 'advan',
         '/velocity/i' => 'velocitymicro',
         '/allview/i' => 'allview',
-        '/myphone/i' => 'myphone',
         '/turbo\-x/i' => 'turbox',
         '/tagi/i' => 'tagi',
         '/avvio/i' => 'avvio',
