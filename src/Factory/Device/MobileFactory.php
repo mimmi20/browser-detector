@@ -624,7 +624,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/i4901/i' => 'idea',
         '/lead [12]|t1_plus|elite [45]|shark 1/i' => 'leagoo',
         '/v1_viper|a4you|p5_quad|x2_soul|ax4nano|x1_soul/i' => 'allview',
-        '/forward_art/i' => 'ngm',
+        '/forward|dynamic/i' => 'ngm',
         '/gnet/i' => 'gnet',
         '/hive v 3g|hive iv 3g/i' => 'turbox',
         '/turkcell/i' => 'turkcell',

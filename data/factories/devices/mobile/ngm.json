@@ -1,10 +1,26 @@
 {
   "rules": {
+    "/legend[ _]?xl/i": "ngm legend xl",
     "/m500/i": "ngm m500",
-    "/forward_art/i": "ngm forward art",
-    "/miracle/i": "ngm wemove miracle",
+    "/forward[ _]art/i": "ngm forward art",
+    "/forward[ _]active/i": "ngm forward active",
+    "/forward[ _]?endurance/i": "ngm forward endurance",
+    "/forward[ _]?prime/i": "ngm forward prime",
+    "/forward[ _]?xtreme/i": "ngm forward xtreme",
+    "/forward[ _]?young/i": "ngm forward young",
+    "/forward[ _]?zero/i": "ngm forward zero",
+    "/miracle/i": "ngm miracle",
+    "/orion/i": "ngm orion",
+    "/spirit/i": "ngm spirit",
+    "/time/i": "ngm time",
+    "/vanity smart/i": "ngm vanity smart",
+    "/winn/i": "ngm winn",
     "/dynamic racing 3/i": "ngm dynamic racing 3",
-    "/dynamic racing 2/i": "ngm dynamic racing 2"
+    "/dynamic racing 2/i": "ngm dynamic racing 2",
+    "/dynamic[ _]maxi/i": "ngm dynamic maxi",
+    "/dynamic[ _]star/i": "ngm dynamic star",
+    "/dynamic[ _]fun/i": "ngm dynamic fun",
+    "/coffee/i": "ngm coffee"
   },
   "generic": "general ngm device"
 }
