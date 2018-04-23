@@ -118,8 +118,9 @@ class BrowserLoader implements SpecificLoaderInterface
 
         if (null !== $engineKey) {
             try {
+                $this->engineLoader->init();
                 $engine = $this->engineLoader->load($engineKey, $useragent);
-            } catch (NotFoundException $e) {
+            } catch (NotFoundException | InvalidArgumentException $e) {
                 $this->logger->info($e);
             }
         }
