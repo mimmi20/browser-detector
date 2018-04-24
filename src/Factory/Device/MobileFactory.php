@@ -22,8 +22,8 @@ class MobileFactory implements DeviceFactoryInterface
         // @todo: rules with company name in UA
         '/hiphone/i' => 'hiphone',
         '/technisat/i' => 'technisat',
+        '/samsung|gt\-i8750/i' => 'samsung',
         '/nokia/i' => 'nokia',
-        '/samsung/i' => 'samsung',
         '/blackberry/i' => 'rim',
         '/HTC/' => 'htc',
         '/asus/i' => 'asus',
@@ -189,7 +189,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/tcl/i' => 'tcl',
         '/radxa/i' => 'radxa',
         '/xolo/i' => 'xolo',
-        '/nokia; rm\-997/i' => 'nokia',
         '/rm\-(?:997|560)/i' => 'rossmoor',
         '/RM\-\d{3,4}|TA\-\d{4}/' => 'nokia',
         '/dragon touch/i' => 'dragontouch',
