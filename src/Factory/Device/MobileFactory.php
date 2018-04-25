@@ -275,6 +275,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/meu/i' => 'meu',
         '/noain/i' => 'noain',
         '/nomi/i' => 'nomi',
+        '/nexian/i' => 'nexian',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
