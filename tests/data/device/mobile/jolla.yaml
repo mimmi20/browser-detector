@@ -1,0 +1,90 @@
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; Mobile; rv:31.0) Gecko/31.0 Firefox/31.0 SailfishBrowser/1.0'
+  device:
+    deviceName: Phone
+    marketingName: Phone
+    manufacturer: Jolla
+    brand: Jolla
+    pointingMethod: touchscreen
+    resolutionWidth: 540
+    resolutionHeight: 960
+    dualOrientation: true
+    type: smartphone
+  browser:
+    name: 'Sailfish Browser'
+    modus: null
+    version: 1.0.0
+    manufacturer: Jolla
+    bits: 32
+    type: browser
+  os:
+    name: SailfishOS
+    marketingName: SailfishOS
+    version: 0.0.0
+    manufacturer: Jolla
+    bits: 32
+  engine:
+    name: Gecko
+    version: 31.0.0
+    manufacturer: MozillaFoundation
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 4.4.4; Jolla C Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36 OPR/42.7.2246.114996'
+  device:
+    deviceName: 'Jolla C'
+    marketingName: 'Jolla C'
+    manufacturer: Jolla
+    brand: Jolla
+    pointingMethod: touchscreen
+    resolutionWidth: 720
+    resolutionHeight: 1280
+    dualOrientation: true
+    type: smartphone
+  browser:
+    name: 'Opera Mobile'
+    modus: null
+    version: 42.7.2246.114996
+    manufacturer: Opera
+    bits: 32
+    type: browser
+  os:
+    name: Android
+    marketingName: Android
+    version: 4.4.4
+    manufacturer: Google
+    bits: 32
+  engine:
+    name: Blink
+    version: 537.36.0
+    manufacturer: Google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; Tablet; rv:31.0) Gecko/31.0 Firefox/31.0 SailfishBrowser/1.0'
+  device:
+    deviceName: Tablet
+    marketingName: Tablet
+    manufacturer: Jolla
+    brand: Jolla
+    pointingMethod: touchscreen
+    resolutionWidth: 2048
+    resolutionHeight: 1536
+    dualOrientation: true
+    type: tablet
+  browser:
+    name: 'Sailfish Browser'
+    modus: null
+    version: 1.0.0
+    manufacturer: Jolla
+    bits: 32
+    type: browser
+  os:
+    name: SailfishOS
+    marketingName: SailfishOS
+    version: 0.0.0
+    manufacturer: Jolla
+    bits: 32
+  engine:
+    name: Gecko
+    version: 31.0.0
+    manufacturer: MozillaFoundation

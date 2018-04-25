@@ -1,0 +1,90 @@
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; A400 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501080'
+  device:
+    deviceName: A400
+    marketingName: A400
+    manufacturer: Celkon
+    brand: Celkon
+    pointingMethod: touchscreen
+    resolutionWidth: 480
+    resolutionHeight: 800
+    dualOrientation: true
+    type: smartphone
+  browser:
+    name: 'CM Browser'
+    modus: null
+    version: 0.0.0
+    manufacturer: CheetahMobile
+    bits: 32
+    type: browser
+  os:
+    name: Android
+    marketingName: Android
+    version: 4.2.2
+    manufacturer: Google
+    bits: 32
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; CELKON A9 Dual Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
+  device:
+    deviceName: 'A9 Dual'
+    marketingName: 'A9 Dual'
+    manufacturer: Celkon
+    brand: Celkon
+    pointingMethod: touchscreen
+    resolutionWidth: 320
+    resolutionHeight: 480
+    dualOrientation: true
+    type: smartphone
+  browser:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: Google
+    bits: 32
+    type: browser
+  os:
+    name: Android
+    marketingName: Android
+    version: 4.2.2
+    manufacturer: Google
+    bits: 32
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; en-US; Celkon_A15) U2/1.0.0 UCBrowser/9.0.2.389 U2/1.0.0 Mobile'
+  device:
+    deviceName: A15
+    marketingName: A15
+    manufacturer: Celkon
+    brand: Celkon
+    pointingMethod: touchscreen
+    resolutionWidth: 320
+    resolutionHeight: 480
+    dualOrientation: true
+    type: smartphone
+  browser:
+    name: 'UC Browser'
+    modus: null
+    version: 9.0.2.389
+    manufacturer: UcWeb
+    bits: 32
+    type: transcoder
+  os:
+    name: Android
+    marketingName: Android
+    version: 4.2.2
+    manufacturer: Google
+    bits: 32
+  engine:
+    name: U2
+    version: 1.0.0
+    manufacturer: UcWeb

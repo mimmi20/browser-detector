@@ -1,0 +1,90 @@
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; koobee M2 Build/JLS36C) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025440 Mobile Safari/533.1 MicroMessenger/6.2.2.54_rec1912d.581 NetType/WIFI Language/zh_CN'
+  device:
+    deviceName: M2
+    marketingName: 'Muse M2'
+    manufacturer: Koobee
+    brand: Koobee
+    pointingMethod: touchscreen
+    resolutionWidth: 720
+    resolutionHeight: 1280
+    dualOrientation: true
+    type: smartphone
+  browser:
+    name: 'WeChat App'
+    modus: null
+    version: 6.2.2.54
+    manufacturer: Tencent
+    bits: 32
+    type: application
+  os:
+    name: Android
+    marketingName: Android
+    version: 4.3.0
+    manufacturer: Google
+    bits: 32
+  engine:
+    name: WebKit
+    version: 533.1.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; koobee M3 Build/JLS36C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
+  device:
+    deviceName: M3
+    marketingName: M3
+    manufacturer: Koobee
+    brand: Koobee
+    pointingMethod: touchscreen
+    resolutionWidth: 720
+    resolutionHeight: 1280
+    dualOrientation: true
+    type: smartphone
+  browser:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: Google
+    bits: 32
+    type: browser
+  os:
+    name: Android
+    marketingName: Android
+    version: 4.3.0
+    manufacturer: Google
+    bits: 32
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'koobee-T550/1.0 Linux/2.6.35.7 Android/2.3.5 Release/01.17.2013 Browser/AppleWebKit533.1 (KHTML, like Gecko) Mozilla/5.0 Mobile'
+  device:
+    deviceName: T550
+    marketingName: T550
+    manufacturer: Koobee
+    brand: Koobee
+    pointingMethod: touchscreen
+    resolutionWidth: 480
+    resolutionHeight: 800
+    dualOrientation: true
+    type: smartphone
+  browser:
+    name: 'Android Webkit'
+    modus: null
+    version: 0.0.0
+    manufacturer: Google
+    bits: 32
+    type: browser
+  os:
+    name: Android
+    marketingName: Android
+    version: 2.3.5
+    manufacturer: Google
+    bits: 32
+  engine:
+    name: WebKit
+    version: 533.1.0
+    manufacturer: Apple
