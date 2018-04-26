@@ -49,12 +49,12 @@ class DeviceLoader implements SpecificLoaderInterface
     private $platformLoader;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface   $cache
-     * @param \Psr\Log\LoggerInterface                $logger
-     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
-     * @param \UaResult\Company\CompanyLoader         $companyLoader
-     * @param \UaDeviceType\TypeLoader                $typeLoader
-     * @param \BrowserDetector\Loader\GenericLoaderInterface   $platformLoader
+     * @param \BrowserDetector\Cache\CacheInterface          $cache
+     * @param \Psr\Log\LoggerInterface                       $logger
+     * @param \BrowserDetector\Loader\Helper\CacheKey        $cacheKey
+     * @param \UaResult\Company\CompanyLoader                $companyLoader
+     * @param \UaDeviceType\TypeLoader                       $typeLoader
+     * @param \BrowserDetector\Loader\GenericLoaderInterface $platformLoader
      */
     public function __construct(
         CacheInterface $cache,

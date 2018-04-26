@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "/edge/i": "edge",
+    "/chrome|crmo/i": "blink",
+    "/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i": "webkit",
+    "/iOS/": "webkit",
+    "/presto|opera/i": "presto",
+    "/opera|presto\\//i": "presto",
+    "/trident|msie|like gecko/i": "trident",
+    "/gecko|firefox|minefield|shiretoko|bonecho|namoroka/i": "gecko"
+  },
+  "generic": "genericbrowser"
+}

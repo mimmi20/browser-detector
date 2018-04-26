@@ -53,12 +53,12 @@ class BrowserLoader implements SpecificLoaderInterface
     private $engineLoader;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface   $cache
-     * @param \Psr\Log\LoggerInterface                $logger
-     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
-     * @param \UaResult\Company\CompanyLoader         $companyLoader
-     * @param \UaBrowserType\TypeLoader               $typeLoader
-     * @param \BrowserDetector\Loader\GenericLoaderInterface   $engineLoader
+     * @param \BrowserDetector\Cache\CacheInterface          $cache
+     * @param \Psr\Log\LoggerInterface                       $logger
+     * @param \BrowserDetector\Loader\Helper\CacheKey        $cacheKey
+     * @param \UaResult\Company\CompanyLoader                $companyLoader
+     * @param \UaBrowserType\TypeLoader                      $typeLoader
+     * @param \BrowserDetector\Loader\GenericLoaderInterface $engineLoader
      */
     public function __construct(
         CacheInterface $cache,
