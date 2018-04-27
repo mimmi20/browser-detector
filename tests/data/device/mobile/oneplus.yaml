@@ -298,3 +298,63 @@
     name: Blink
     version: 537.36.0
     manufacturer: Google
+-
+  headers:
+    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; du_oneplus3 Build/N6F26Q)'
+  device:
+    deviceName: '3'
+    marketingName: '3'
+    manufacturer: Oneplus
+    brand: Oneplus
+    pointingMethod: touchscreen
+    resolutionWidth: 1080
+    resolutionHeight: 1920
+    dualOrientation: true
+    type: smartphone
+  browser:
+    name: Dalvik
+    modus: null
+    version: 2.1.0
+    manufacturer: Google
+    bits: 32
+    type: application
+  os:
+    name: Android
+    marketingName: Android
+    version: 7.1.1
+    manufacturer: Google
+    bits: 32
+  engine:
+    name: WebKit
+    version: 0.0.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: '2.1.0 (Linux; U; Android 7.0; ONEPLUS A3010 Build/NRD90M)'
+  device:
+    deviceName: A3010
+    marketingName: 3T
+    manufacturer: Oneplus
+    brand: Oneplus
+    pointingMethod: touchscreen
+    resolutionWidth: 1080
+    resolutionHeight: 1920
+    dualOrientation: true
+    type: smartphone
+  browser:
+    name: null
+    modus: null
+    version: 0.0.0
+    manufacturer: Unknown
+    bits: 32
+    type: unknown
+  os:
+    name: Android
+    marketingName: Android
+    version: 7.0.0
+    manufacturer: Google
+    bits: 32
+  engine:
+    name: null
+    version: 0.0.0
+    manufacturer: Unknown
