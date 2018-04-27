@@ -14,9 +14,10 @@ namespace UserAgentsTest;
 use BrowserDetector\DetectorFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
+use Seld\JsonLint\JsonParser;
+use Seld\JsonLint\ParsingException;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 use Symfony\Component\Finder\Finder;
-use Symfony\Component\Yaml\Yaml;
 use UaResult\Result\Result;
 use UaResult\Result\ResultFactory;
 
@@ -67,12 +68,13 @@ class DetectorTest extends TestCase
 
     /**
      * @return array[]
+     * @throws \Exception
      */
     public function providerGetBrowser(): array
     {
         $finder = new Finder();
         $finder->files();
-        $finder->name('*.yaml');
+        $finder->name('*.json');
         $finder->ignoreDotFiles(true);
         $finder->ignoreVCS(true);
         $finder->ignoreUnreadableDirs();
@@ -81,10 +83,19 @@ class DetectorTest extends TestCase
         $data   = [];
         $logger = new NullLogger();
 
+        $jsonParser = new JsonParser();
+
         foreach ($finder as $file) {
             /* @var \Symfony\Component\Finder\SplFileInfo $file */
 
-            $tests = Yaml::parse($file->getContents(), Yaml::PARSE_EXCEPTION_ON_INVALID_TYPE);
+            try {
+                $tests = $jsonParser->parse(
+                    $file->getContents(),
+                    JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
+                );
+            } catch (ParsingException $e) {
+                throw new \Exception(sprintf('file "%s" contains invalid json', $file->getPathname()), 0, $e);
+            }
 
             foreach ($tests as $test) {
                 $expectedResult = (new ResultFactory())->fromArray($logger, $test);
