@@ -67,8 +67,9 @@ class DetectorTest extends TestCase
     }
 
     /**
-     * @return array[]
      * @throws \Exception
+     *
+     * @return array[]
      */
     public function providerGetBrowser(): array
     {
