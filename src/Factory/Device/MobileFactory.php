@@ -276,6 +276,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/noain/i' => 'noain',
         '/nomi/i' => 'nomi',
         '/nexian/i' => 'nexian',
+        '/ouki/i' => 'ouki',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
@@ -330,6 +331,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/CAL21/' => 'casio',
         '/g3mini/i' => 'lg',
         '/P[CG]\d{5}/' => 'htc',
+        '/OK[AU]\d{1,2}/' => 'ouki',
         '/[AC]\d{5}/' => 'nomi',
         '/one e\d{4}/i' => 'oneplus',
         '/one a200[135]/i' => 'oneplus',
