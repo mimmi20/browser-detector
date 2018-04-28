@@ -277,6 +277,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/nomi/i' => 'nomi',
         '/nexian/i' => 'nexian',
         '/ouki/i' => 'ouki',
+        '/opsson/i' => 'opsson',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
@@ -574,6 +575,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/vega/i' => 'advent',
         '/dream| x9 |amaze|butterfly2/i' => 'htc',
         '/ xst2 /i' => 'fourgsystems',
+        '/iusai/i' => 'opsson',
         '/netbox| x10 | e10i | x2 |r800x|s500i|x1i|x10i/i' => 'sony',
         '/tf300t/i' => 'asus',
         '/f10x/i' => 'nextway',
