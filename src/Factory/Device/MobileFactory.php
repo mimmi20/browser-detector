@@ -594,7 +594,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/uq785\-m1bgv/i' => 'verico',
         '/t9666\-1/i' => 'telsda',
         '/h7100/i' => 'feiteng',
-        '/xda/i' => 'o2',
+        '/xda|cocoon/i' => 'o2',
         '/kkt20|pixelv1|pixel v2\+| x17 |x1 atom|x1 selfie|x5 4g/i' => 'lava',
         '/pulse|mytouch4g|ameo|garminfone/i' => 'tmobile',
         '/redmi|note 4|2014818|2014813|2014011|2015562/i' => 'xiaomi',
