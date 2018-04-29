@@ -421,7 +421,7 @@ class BrowserLoaderTest extends TestCase
 
         $engineLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            ->setMethods(['load', 'init'])
             ->getMock();
 
         $engineLoader
@@ -429,6 +429,10 @@ class BrowserLoaderTest extends TestCase
             ->method('load')
             ->with('unknown', 'test/1.0')
             ->willThrowException(new NotFoundException('engine not found'));
+
+        $engineLoader
+            ->expects(self::once())
+            ->method('init');
 
         /** @var Cache $cache */
         /** @var NullLogger $logger */
@@ -536,7 +540,7 @@ class BrowserLoaderTest extends TestCase
 
         $engineLoader = $this->getMockBuilder(GenericLoader::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            ->setMethods(['load', 'init'])
             ->getMock();
 
         $engineLoader
@@ -544,6 +548,10 @@ class BrowserLoaderTest extends TestCase
             ->method('load')
             ->with('unknown', 'test/1.0')
             ->willReturn(new Engine());
+
+        $engineLoader
+            ->expects(self::once())
+            ->method('init');
 
         /** @var Cache $cache */
         /** @var NullLogger $logger */

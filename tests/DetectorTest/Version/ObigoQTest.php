@@ -72,6 +72,10 @@ class ObigoQTest extends TestCase
                 'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
                 '0.0.0',
             ],
+            [
+                'NGM_Coffee/ObigoInternetBrowser/QO3C Profile/MIDP2.0 Configuration/CLDC-1.1',
+                '3.0.0',
+            ],
         ];
     }
 }

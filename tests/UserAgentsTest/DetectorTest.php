@@ -14,12 +14,12 @@ namespace UserAgentsTest;
 use BrowserDetector\DetectorFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
+use Seld\JsonLint\JsonParser;
+use Seld\JsonLint\ParsingException;
 use Symfony\Component\Cache\Simple\FilesystemCache;
-use UaRequest\Constants;
-use UaRequest\GenericRequestFactory;
+use Symfony\Component\Finder\Finder;
 use UaResult\Result\Result;
 use UaResult\Result\ResultFactory;
-use Zend\Diactoros\ServerRequestFactory;
 
 class DetectorTest extends TestCase
 {
@@ -31,8 +31,6 @@ class DetectorTest extends TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
@@ -49,61 +47,19 @@ class DetectorTest extends TestCase
     /**
      * @dataProvider providerGetBrowser
      *
-     * @param string $userAgent
+     * @param array  $headers
      * @param Result $expectedResult
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
-    public function testGetBrowserFromUaOld(string $userAgent, Result $expectedResult): void
-    {
-        /* @var \UaResult\Result\Result $result */
-        $result = $this->object->getBrowser($userAgent);
-
-        self::assertInstanceOf(Result::class, $result);
-
-        self::assertEquals($expectedResult, $result);
-    }
-
-    /**
-     * @dataProvider providerGetBrowser
-     *
-     * @param string $userAgent
-     * @param Result $expectedResult
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return void
-     */
-    public function testGetBrowserFromUa(string $userAgent, Result $expectedResult): void
-    {
-        $object = $this->object;
-
-        /* @var \UaResult\Result\Result $result */
-        $result = $object($userAgent);
-
-        self::assertInstanceOf(Result::class, $result);
-
-        self::assertEquals($expectedResult, $result);
-    }
-
-    /**
-     * @dataProvider providerGetBrowser
-     *
-     * @param string $userAgent
-     * @param Result $expectedResult
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return void
-     */
-    public function testGetBrowserFromArray(string $userAgent, Result $expectedResult): void
+    public function testGetBrowser(array $headers, Result $expectedResult): void
     {
         $object = $this->object;
 
         /* @var Result $result */
-        $result = $object([Constants::HEADER_HTTP_USERAGENT => $userAgent]);
+        $result = $object($headers);
 
         self::assertInstanceOf(Result::class, $result);
 
@@ -111,87 +67,45 @@ class DetectorTest extends TestCase
     }
 
     /**
-     * @dataProvider providerGetBrowser
+     * @throws \Exception
      *
-     * @param string $userAgent
-     * @param Result $expectedResult
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return void
-     */
-    public function testGetBrowserFromPsr7Message(string $userAgent, Result $expectedResult): void
-    {
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$userAgent]]);
-        $object  = $this->object;
-
-        /* @var Result $result */
-        $result = $object($message);
-
-        self::assertInstanceOf(Result::class, $result);
-
-        self::assertEquals($expectedResult, $result);
-    }
-
-    /**
-     * @dataProvider providerGetBrowser
-     *
-     * @param string $userAgent
-     * @param Result $expectedResult
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return void
-     */
-    public function testGetBrowserFromGenericRequest(string $userAgent, Result $expectedResult): void
-    {
-        $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$userAgent]]);
-        $requestFactory = new GenericRequestFactory();
-        $object         = $this->object;
-        $request        = $requestFactory->createRequestFromPsr7Message($message);
-
-        /* @var Result $result */
-        $result = $object($request);
-
-        self::assertInstanceOf(Result::class, $result);
-
-        self::assertEquals($expectedResult, $result);
-    }
-
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return void
-     */
-    public function testGetBrowserFromInvalid(): void
-    {
-        $this->expectException('\UnexpectedValueException');
-        $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface');
-
-        $object = $this->object;
-
-        $object(new \stdClass());
-    }
-
-    /**
      * @return array[]
      */
     public function providerGetBrowser(): array
     {
+        $finder = new Finder();
+        $finder->files();
+        $finder->name('*.json');
+        $finder->ignoreDotFiles(true);
+        $finder->ignoreVCS(true);
+        $finder->ignoreUnreadableDirs();
+        $finder->in('tests/data/');
+
         $data   = [];
-        $tests  = json_decode(file_get_contents('tests/data/detector.json'), true);
         $logger = new NullLogger();
 
-        foreach ($tests as $key => $test) {
-            if (isset($data[$key])) {
-                // Test data is duplicated for key
-                continue;
+        $jsonParser = new JsonParser();
+
+        foreach ($finder as $file) {
+            /* @var \Symfony\Component\Finder\SplFileInfo $file */
+
+            try {
+                $tests = $jsonParser->parse(
+                    $file->getContents(),
+                    JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
+                );
+            } catch (ParsingException $e) {
+                throw new \Exception(sprintf('file "%s" contains invalid json', $file->getPathname()), 0, $e);
             }
 
-            $data[$key] = [
-                'ua' => $test['ua'],
-                'result' => (new ResultFactory())->fromArray($logger, $test['result']),
-            ];
+            foreach ($tests as $test) {
+                $expectedResult = (new ResultFactory())->fromArray($logger, $test);
+
+                $data[] = [
+                    'headers' => $expectedResult->getHeaders(),
+                    'result' => $expectedResult,
+                ];
+            }
         }
 
         return $data;

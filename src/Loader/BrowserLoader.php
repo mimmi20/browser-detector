@@ -48,17 +48,17 @@ class BrowserLoader implements SpecificLoaderInterface
      */
     private $typeLoader;
     /**
-     * @var \BrowserDetector\Loader\GenericLoader
+     * @var \BrowserDetector\Loader\GenericLoaderInterface
      */
     private $engineLoader;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface   $cache
-     * @param \Psr\Log\LoggerInterface                $logger
-     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
-     * @param \UaResult\Company\CompanyLoader         $companyLoader
-     * @param \UaBrowserType\TypeLoader               $typeLoader
-     * @param \BrowserDetector\Loader\GenericLoader   $engineLoader
+     * @param \BrowserDetector\Cache\CacheInterface          $cache
+     * @param \Psr\Log\LoggerInterface                       $logger
+     * @param \BrowserDetector\Loader\Helper\CacheKey        $cacheKey
+     * @param \UaResult\Company\CompanyLoader                $companyLoader
+     * @param \UaBrowserType\TypeLoader                      $typeLoader
+     * @param \BrowserDetector\Loader\GenericLoaderInterface $engineLoader
      */
     public function __construct(
         CacheInterface $cache,
@@ -66,7 +66,7 @@ class BrowserLoader implements SpecificLoaderInterface
         CacheKey $cacheKey,
         CompanyLoader $companyLoader,
         TypeLoader $typeLoader,
-        GenericLoader $engineLoader
+        GenericLoaderInterface $engineLoader
     ) {
         $this->cache         = $cache;
         $this->logger        = $logger;
@@ -118,8 +118,9 @@ class BrowserLoader implements SpecificLoaderInterface
 
         if (null !== $engineKey) {
             try {
+                $this->engineLoader->init();
                 $engine = $this->engineLoader->load($engineKey, $useragent);
-            } catch (NotFoundException $e) {
+            } catch (NotFoundException | InvalidArgumentException $e) {
                 $this->logger->info($e);
             }
         }

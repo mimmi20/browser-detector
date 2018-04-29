@@ -44,17 +44,17 @@ class DeviceLoader implements SpecificLoaderInterface
      */
     private $typeLoader;
     /**
-     * @var \BrowserDetector\Loader\GenericLoader
+     * @var \BrowserDetector\Loader\GenericLoaderInterface
      */
     private $platformLoader;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface   $cache
-     * @param \Psr\Log\LoggerInterface                $logger
-     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
-     * @param \UaResult\Company\CompanyLoader         $companyLoader
-     * @param \UaDeviceType\TypeLoader                $typeLoader
-     * @param \BrowserDetector\Loader\GenericLoader   $platformLoader
+     * @param \BrowserDetector\Cache\CacheInterface          $cache
+     * @param \Psr\Log\LoggerInterface                       $logger
+     * @param \BrowserDetector\Loader\Helper\CacheKey        $cacheKey
+     * @param \UaResult\Company\CompanyLoader                $companyLoader
+     * @param \UaDeviceType\TypeLoader                       $typeLoader
+     * @param \BrowserDetector\Loader\GenericLoaderInterface $platformLoader
      */
     public function __construct(
         CacheInterface $cache,
@@ -62,7 +62,7 @@ class DeviceLoader implements SpecificLoaderInterface
         CacheKey $cacheKey,
         CompanyLoader $companyLoader,
         TypeLoader $typeLoader,
-        GenericLoader $platformLoader
+        GenericLoaderInterface $platformLoader
     ) {
         $this->cache          = $cache;
         $this->logger         = $logger;

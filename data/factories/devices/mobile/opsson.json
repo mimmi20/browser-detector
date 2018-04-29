@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "/ivo ?8800/i": "opsson ivo 8800",
+    "/ivo ?6655/i": "opsson ivo 6655",
+    "/ivo ?6622/i": "opsson ivo 6622",
+    "/[ _]q3/i": "opsson q3",
+    "/[ _]d1/i": "opsson d1",
+    "/imo ?1000/i": "opsson imo 1000",
+    "/iusai x2/i": "opsson iusai x2",
+    "/iusai us16/i": "opsson iusai us16",
+    "/iusai us8/i": "opsson iusai us8",
+    "/iusai i500/i": "opsson iusai i500"
+  },
+  "generic": "general opsson device"
+}
