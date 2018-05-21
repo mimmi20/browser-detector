@@ -4137,6 +4137,20 @@
     },
     "engine": "unknown"
   },
+  "w3c mobileok checker": {
+    "name": "W3C MobileOK Checker",
+    "manufacturer": "W3c",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "W3C\\-mobileOK\\/DDC\\-"
+      ]
+    },
+    "engine": "unknown"
+  },
   "jobboerse bot": {
     "name": "JobBoerse Bot",
     "manufacturer": "Jobboerse",
