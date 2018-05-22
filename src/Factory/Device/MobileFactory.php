@@ -534,7 +534,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/netbox| x10 | e10i | x2 |r800x|s500i|x1i|x10i/i' => 'sony',
         '/x90\d{1,2}|n52\d{2}|r[12678]\d{2,3}|u70\dt|find7|a3[37]f|r7[ks]?f|r7plusf| 1201 |n1t/i' => 'oppo',
         '/N\d{4}/' => 'star',
-        '/IM\-A\d{3}[LK]/' => 'pantech',
+        '/IM\-[AT]\d{3}[LKS]|ADR910L/' => 'pantech',
         '/vf\-?\d{3,4}|\d{4}[biky]/i' => 'tcl',
         '/SPX\-\d/' => 'simvalley',
         '/H[MTW]\-[GINW]\d{2,3}/' => 'haier',
