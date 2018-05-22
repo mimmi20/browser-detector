@@ -726,6 +726,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/crono/i' => 'majestic',
         '/NS\d{1,4}/' => 'nous',
         '/monster x5/i' => 'pentagram',
+        '/F1\d/' => 'pulid',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/kin\.two|zunehd/i' => 'microsoft',
