@@ -729,6 +729,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/NS\d{1,4}/' => 'nous',
         '/monster x5/i' => 'pentagram',
         '/F1\d/' => 'pulid',
+        '/q\-smart/i' => 'qmobile',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/kin\.two|zunehd/i' => 'microsoft',
