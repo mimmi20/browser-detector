@@ -1546,5 +1546,41 @@
       "version": "0.0.0",
       "manufacturer": "Rim"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 6.0.1; STH100-2 Build/MMB29M)"
+    },
+    "device": {
+      "deviceName": "STH100-2",
+      "marketingName": "DTEK50",
+      "manufacturer": "Tcl",
+      "brand": "BlackBerry",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

@@ -298,7 +298,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/playstation/i' => 'sony',
         '/kindle|silk|kf(?:tt|ot|jwi|sowi|thwi|apwa|aswi|apwi|dowi|auwi|giwi|tbwi|mewi|fowi|sawi|sawa|arwi|thwa|jwa)|sd4930ur|fire2/i' => 'amazon',
         '/bntv600/i' => 'barnesnoble',
-        '/playbook|rim tablet|bb10|stv100|bb[ab]100\-2/i' => 'rim',
+        '/playbook|rim tablet|bb10|stv100|bb[ab]100\-2|sth100\-2/i' => 'rim',
         '/b15/i' => 'caterpillar',
         '/cat ?(?:nova|stargate|tablet|helix)/i' => 'catsound',
         '/MID\d{4}/' => 'coby',
