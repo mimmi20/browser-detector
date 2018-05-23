@@ -280,6 +280,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/nexian/i' => 'nexian',
         '/ouki/i' => 'ouki',
         '/opsson/i' => 'opsson',
+        '/qilive/i' => 'qilive',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
