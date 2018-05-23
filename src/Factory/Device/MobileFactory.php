@@ -123,7 +123,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/hasee/i' => 'hasee',
         '/tecno/i' => 'tecno',
         '/intex/i' => 'intex',
-        '/mt\-gt\-a9500|gt\-a7100/i' => 'htm', // must be before Samsung (gt rule)
+        '/mt\-gt\-a9500|gt\-a7100/i' => 'htm', // must be before samsung (gt rule)
         '/gt\-h/i' => 'feiteng',
         '/u25gt\-c4w|u51gt/i' => 'cube',
         '/gt\-9000/i' => 'star',
@@ -281,6 +281,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ouki/i' => 'ouki',
         '/opsson/i' => 'opsson',
         '/qilive/i' => 'qilive',
+        '/quechua/i' => 'quechua',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
