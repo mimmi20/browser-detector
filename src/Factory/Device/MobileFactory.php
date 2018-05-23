@@ -441,7 +441,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/MID\d{3}/' => 'manta',
         '/FX2/' => 'faktorzwei',
         '/AN\d{1,2}|ARCHM\d{3}/' => 'arnova',
-        '/POV|TAB\-PROTAB/' => 'pointofview',
+        '/POV|TAB\-PROTAB|MOB\-5045/' => 'pointofview',
         '/PI\d{4}/' => 'philips',
         '/FUNC/' => 'dfunc',
         '/iD[jnsxr][DQ]?\d{1,2}/' => 'digma',
