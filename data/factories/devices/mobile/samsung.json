@@ -655,6 +655,9 @@
       "/sgh\\-u/i": {
         "/sgh\\-u800e/i": "samsung sgh-u800e",
         "/sgh\\-u800/i": "samsung sgh-u800"
+      },
+      "/sgh\\-s/i": {
+        "/sgh\\-s730m/i": "samsung sgh-s730m"
       }
     },
     "/sec\\-/i": {
@@ -711,7 +714,11 @@
         "/sch\\-i200/i": "samsung sch-i200"
       },
       "/sch\\-s/i": {
+        "/sch\\-s738c/i": "samsung sch-s738c",
         "/sch\\-s720c/i": "samsung sch-s720c"
+      },
+      "/sch\\-l/i": {
+        "/sch\\-l710/i": "samsung sch-l710"
       }
     },
     "/gt\\-/i": {
@@ -748,6 +755,7 @@
         "/gt\\-s6810b/i": "samsung gt-s6810b",
         "/gt\\-s6810/i": "samsung gt-s6810",
         "/gt\\-s6802/i": "samsung gt-s6802",
+        "/gt\\-s6790/i": "samsung gt-s6790",
         "/gt\\-s6500d/i": "samsung gt-s6500d",
         "/gt\\-s6500t/i": "samsung gt-s6500t",
         "/gt\\-s6500/i": "samsung gt-s6500",
@@ -783,6 +791,7 @@
         "/gt\\-s5303/i": "samsung gt-s5303",
         "/gt\\-s5302/i": "samsung gt-s5302",
         "/gt\\-s5301l/i": "samsung gt-s5301l",
+        "/gt\\-s5301b/i": "samsung gt-s5301b",
         "/gt\\-s5301/i": "samsung gt-s5301",
         "/gt\\-s5300b/i": "samsung gt-s5300b",
         "/gt\\-s5300/i": "samsung gt-s5300",
@@ -792,7 +801,7 @@
         "/gt\\-s5250/i": "samsung gt-s5250",
         "/gt\\-s5233s/i": "samsung gt-s5233s",
         "/gt\\-s5233t/i": "samsung gt-s5233t",
-        "/gt\\-s5230w/i": "samsung gt s5230w",
+        "/gt\\-s5230w/i": "samsung gt-s5230w",
         "/gt\\-s5230/i": "samsung gt-s5230",
         "/gt\\-s5222r/i": "samsung gt-s5222r",
         "/gt\\-s5222/i": "samsung gt-s5222",
@@ -867,6 +876,7 @@
         "/gt\\-i9506/i": "samsung gt-i9506",
         "/gt\\-i9505x/i": "samsung gt-i9505x",
         "/gt\\-i9505g/i": "samsung gt-i9505g",
+        "/gt\\-i9505\\+/i": "samsung gt-i9505 plus",
         "/gt\\-i9505/i": "samsung gt-i9505",
         "/gt\\-i9502/i": "samsung gt-i9502",
         "/gt\\-i9500/i": "samsung gt-i9500",
@@ -895,11 +905,13 @@
         "/gt\\-i9150/i": "samsung gt-i9150",
         "/gt\\-i9128v/i": "samsung gt-i9128v",
         "/gt\\-i9128i/i": "samsung gt-i9128i",
+        "/gt\\-i9108/i": "samsung gt-i9108",
         "/gt\\-i9105p/i": "samsung gt-i9105p",
         "/gt\\-i9105/i": "samsung gt-i9105",
         "/gt\\-i9103/i": "samsung gt-i9103",
         "/gt\\-i9100t/i": "samsung gt-i9100t",
         "/gt\\-i9100p/i": "samsung gt-i9100p",
+        "/gt\\-i9100m/i": "samsung gt-i9100m",
         "/gt\\-i9100g/i": "samsung gt-i9100g",
         "/gt\\-i9100/i": "samsung gt-i9100",
         "/gt\\-i9088/i": "samsung gt-i9088",
@@ -913,27 +925,34 @@
         "/gt\\-i9060i/i": "samsung gt-i9060i",
         "/gt\\-i9060/i": "samsung gt-i9060",
         "/gt\\-i9023/i": "samsung gt-i9023",
+        "/gt\\-i9018/i": "samsung gt-i9018",
         "/gt\\-i9010/i": "samsung gt-i9010",
         "/gt\\-i9008l/i": "samsung gt-i9008l",
         "/gt\\-i9008/i": "samsung gt-i9008",
         "/gt\\-i9003l/i": "samsung gt-i9003l",
         "/gt\\-i9003/i": "samsung gt-i9003",
         "/gt\\-i9001/i": "samsung gt-i9001",
+        "/gt\\-i9000m/i": "samsung gt-i9000m",
         "/gt\\-i9000/i": "samsung gt-i9000",
         "/gt\\-i8910/i": "samsung gt-i8910",
         "/gt\\-i8750/i": "samsung gt-i8750",
         "/gt\\-i8730/i": "samsung gt-i8730",
+        "/gt\\-i8580/i": "samsung gt-i8580",
         "/gt\\-i8552/i": "samsung gt-i8552",
         "/gt\\-i8550/i": "samsung gt-i8550",
         "/gt\\-i8530/i": "samsung gt-i8530",
+        "/gt\\-i8520/i": "samsung gt-i8520",
         "/gt\\-i8510c/i": "samsung gt-i8510c",
         "/gt\\-i8350/i": "samsung gt-i8350",
         "/gt\\-i8320/i": "samsung gt-i8320",
+        "/gt\\-i8262b/i": "samsung gt-i8262b",
         "/gt\\-i8262/i": "samsung gt-i8262",
+        "/gt\\-i8260l/i": "samsung gt-i8260l",
         "/gt\\-i8260/i": "samsung gt-i8260",
         "/gt\\-i8200n/i": "samsung gt-i8200n",
         "/gt\\-i8200/i": "samsung gt-i8200",
         "/gt\\-i8190n/i": "samsung gt-i8190n",
+        "/gt\\-i8190l/i": "samsung gt-i8190l",
         "/gt\\-i8190/i": "samsung gt-i8190",
         "/gt\\-i8160p/i": "samsung gt-i8160p",
         "/gt\\-i8160/i": "samsung gt-i8160",
@@ -986,6 +1005,8 @@
         "/gt\\-b7350/i": "samsung gt-b7350",
         "/gt\\-b5510l/i": "samsung gt-b5510l",
         "/gt\\-b5510/i": "samsung gt-b5510",
+        "/gt\\-b5330l/i": "samsung gt-b5330l",
+        "/gt\\-b5330/i": "samsung gt-b5330",
         "/gt\\-b3410/i": "samsung gt-b3410",
         "/gt\\-b2710/i": "samsung gt-b2710",
         "/gt\\-b2100i/i": "samsung gt-b2100i",
@@ -1102,6 +1123,7 @@
     "/m380/i": "samsung sph-m380",
     "/m370/i": "samsung sph-m370",
     "/m350/i": "samsung sph-m350",
+    "/isw11sc/i": "samsung isw11sc",
     "/smart\\-tv/i": "samsung smart tv"
   },
   "generic": "general samsung device"
