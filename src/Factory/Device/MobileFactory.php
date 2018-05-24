@@ -551,7 +551,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ARM; WIN (JR|HD)/' => 'blu',
         '/tp\d{1,2}(?:\.\d)?\-\d{4}|tu\-\d{4}/i' => 'ionik',
         '/ft[ _]\d{4}/i' => 'lifeware',
-        '/(?:sm|yq)\d{3}/i' => 'smartisan',
+        '/(?:od|sm|yq)\d{3}/i' => 'smartisan',
         '/ls\-\d{4}/i' => 'lyf',
         '/mx\d/i' => 'meizu',
         '/x[69]pro|x5max_pro/i' => 'doogee',
