@@ -503,6 +503,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/pmsmart450/i' => 'pmedia',
         '/f031|n900\+|sc[lt]2\d/i' => 'samsung',
         '/auxus/i' => 'iberry',
+        '/N\d{4}/' => 'star',
         '/ n1 |5130c\-2|lumia|arm; 909|id336|genm14|n900/i' => 'nokia',
         '/technipad|aqipad|techniphone/i' => 'technisat', // must be before apple
         '/navipad/i' => 'texet',
@@ -538,7 +539,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/netbox| x10 | e10i | x2 |r800x|s500i|x1i|x10i/i' => 'sony',
         '/PROV?\d{3}[B\d]?/' => 'polaroid',
         '/x90\d{1,2}|n52\d{2}|r[12678]\d{2,3}|u70\dt|find7|a3[37]f|r7[ks]?f|r7plusf| 1201 |n1t/i' => 'oppo',
-        '/N\d{4}/' => 'star',
         '/IM\-[AT]\d{3}[LKS]|ADR910L/' => 'pantech',
         '/vf\-?\d{3,4}|\d{4}[biky]/i' => 'tcl',
         '/SPX\-\d/' => 'simvalley',
