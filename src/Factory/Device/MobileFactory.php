@@ -283,6 +283,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/qilive/i' => 'qilive',
         '/quechua/i' => 'quechua',
         '/stx/i' => 'stonex',
+        '/sunvan/i' => 'sunvan',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
