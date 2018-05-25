@@ -63,7 +63,11 @@ class DetectorTest extends TestCase
 
         self::assertInstanceOf(Result::class, $result);
 
-        self::assertEquals($expectedResult, $result);
+        self::assertEquals(
+            $expectedResult,
+            $result,
+            sprintf('detection result mismatch for headers %s', json_encode($headers))
+        );
     }
 
     /**
