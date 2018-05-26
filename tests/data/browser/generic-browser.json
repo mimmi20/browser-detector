@@ -1448,11 +1448,11 @@
       "marketingName": "SGH-E250",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
+      "pointingMethod": "stylus",
+      "resolutionWidth": 128,
+      "resolutionHeight": 160,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Google Bot Mobile",
@@ -1808,11 +1808,11 @@
       "marketingName": "SGH-T528g",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 240,
+      "resolutionHeight": 400,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Dolfin",
@@ -2998,9 +2998,9 @@
       "brand": "Samsung",
       "pointingMethod": null,
       "resolutionWidth": 240,
-      "resolutionHeight": 320,
+      "resolutionHeight": 400,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Polaris",
@@ -9768,7 +9768,7 @@
       "resolutionWidth": 240,
       "resolutionHeight": 400,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Jasmine",
