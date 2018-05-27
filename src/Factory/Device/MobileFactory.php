@@ -734,6 +734,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/F1\d/' => 'pulid',
         '/q\-smart/i' => 'qmobile',
         '/element p501/i' => 'sencor',
+        '/andromax|pd6d1j/i' => 'smartfren',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/kin\.two|zunehd/i' => 'microsoft',
