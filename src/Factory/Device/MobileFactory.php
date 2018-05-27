@@ -473,6 +473,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ m[35] |f103| e7 | v6l |pioneer/i' => 'gionee',
         '/w[12]00| w8/i' => 'thl',
         '/w713/i' => 'coolpad',
+        '/w960/i' => 'sony',
         '/n8000d|n[79]100/i' => 'samsung',
         '/n003/i' => 'neo',
         '/ v1 /i' => 'maxtron',
