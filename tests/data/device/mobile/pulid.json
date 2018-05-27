@@ -70,5 +70,149 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; vi; F13 Build/JDQ39) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.4.1.362 U3/0.8.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "F13",
+      "marketingName": "F13",
+      "manufacturer": "Pulid",
+      "brand": "Pulid",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.362",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-US; PULID_F6 Build/IMM76D) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/9.7.0.520 Mobile"
+    },
+    "device": {
+      "deviceName": "F6",
+      "marketingName": "F6",
+      "manufacturer": "Pulid",
+      "brand": "Pulid",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 540,
+      "resolutionHeight": 960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.7.0.520",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Linux; U; Android 2.3.6; en-US; PULID F7) U2/1.0.0 UCBrowser/10.4.1.565 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "F7",
+      "marketingName": "F7",
+      "manufacturer": "Pulid",
+      "brand": "Pulid",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 320,
+      "resolutionHeight": 480,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.4.1.565",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; PULID T3 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "T3",
+      "marketingName": "T3",
+      "manufacturer": "Pulid",
+      "brand": "Pulid",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 540,
+      "resolutionHeight": 960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

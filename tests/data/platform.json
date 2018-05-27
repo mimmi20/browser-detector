@@ -224,11 +224,11 @@
       "marketingName": "SGH-T528g",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 240,
+      "resolutionHeight": 400,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Dolfin",
@@ -332,11 +332,11 @@
       "marketingName": "Manhattan",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": null,
+      "pointingMethod": "stylus",
       "resolutionWidth": 220,
       "resolutionHeight": 176,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Opera Mini",
@@ -476,11 +476,11 @@
       "marketingName": "Star Duos",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 240,
+      "resolutionHeight": 400,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Dolfin",
@@ -912,7 +912,7 @@
       "resolutionWidth": 720,
       "resolutionHeight": 1280,
       "dualOrientation": true,
-      "type": "mobile-phone"
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -1527,10 +1527,10 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android Webkit",
+      "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "Apple",
       "bits": 32,
       "type": "browser"
     },
@@ -2748,7 +2748,7 @@
       "resolutionWidth": 240,
       "resolutionHeight": 320,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Opera Mini",
@@ -3360,7 +3360,7 @@
       "resolutionWidth": 480,
       "resolutionHeight": 800,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Dolfin",

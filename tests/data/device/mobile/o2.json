@@ -59,10 +59,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "0.0.0",
-      "manufacturer": "Google",
+      "name": "Windows NT 5.1",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "Microsoft",
       "bits": 32
     },
     "engine": {
@@ -105,6 +105,42 @@
       "name": "Teleca",
       "version": "0.0.0",
       "manufacturer": "Obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) o2 Xda comet"
+    },
+    "device": {
+      "deviceName": "Xda Comet",
+      "marketingName": "Xda Comet",
+      "manufacturer": "Htc",
+      "brand": "O2",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 240,
+      "resolutionHeight": 320,
+      "dualOrientation": false,
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.6.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft"
     }
   }
 ]

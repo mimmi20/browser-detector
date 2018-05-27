@@ -63,7 +63,11 @@ class DetectorTest extends TestCase
 
         self::assertInstanceOf(Result::class, $result);
 
-        self::assertEquals($expectedResult, $result);
+        self::assertEquals(
+            $expectedResult,
+            $result,
+            sprintf('detection result mismatch for headers %s', json_encode($headers))
+        );
     }
 
     /**
@@ -98,10 +102,11 @@ class DetectorTest extends TestCase
                 throw new \Exception(sprintf('file "%s" contains invalid json', $file->getPathname()), 0, $e);
             }
 
-            foreach ($tests as $test) {
+            foreach ($tests as $i => $test) {
                 $expectedResult = (new ResultFactory())->fromArray($logger, $test);
+                $index          = sprintf('file:%s test:%d', $file->getRelativePathname(), $i);
 
-                $data[] = [
+                $data[$index] = [
                     'headers' => $expectedResult->getHeaders(),
                     'result' => $expectedResult,
                 ];

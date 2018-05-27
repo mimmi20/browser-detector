@@ -4,7 +4,7 @@
     "marketingName": "general O2 Device",
     "manufacturer": "O2",
     "brand": "O2",
-    "platform": "android",
+    "platform": null,
     "type": "feature-phone",
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
@@ -31,6 +31,18 @@
     "platform": "java",
     "type": "feature-phone",
     "pointingMethod": "stylus",
+    "resolutionWidth": 240,
+    "resolutionHeight": 320,
+    "dualOrientation": false
+  },
+  "o2 xda comet": {
+    "codename": "Xda Comet",
+    "marketingName": "Xda Comet",
+    "manufacturer": "Htc",
+    "brand": "O2",
+    "platform": "windows ce",
+    "type": "feature-phone",
+    "pointingMethod": "touchscreen",
     "resolutionWidth": 240,
     "resolutionHeight": 320,
     "dualOrientation": false

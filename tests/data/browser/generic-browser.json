@@ -1448,11 +1448,11 @@
       "marketingName": "SGH-E250",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
+      "pointingMethod": "stylus",
+      "resolutionWidth": 128,
+      "resolutionHeight": 160,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Google Bot Mobile",
@@ -1808,11 +1808,11 @@
       "marketingName": "SGH-T528g",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 240,
+      "resolutionHeight": 400,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Dolfin",
@@ -2998,9 +2998,9 @@
       "brand": "Samsung",
       "pointingMethod": null,
       "resolutionWidth": 240,
-      "resolutionHeight": 320,
+      "resolutionHeight": 400,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Polaris",
@@ -5984,11 +5984,11 @@
       "marketingName": "Champ Deluxe",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": null,
+      "pointingMethod": "touchscreen",
       "resolutionWidth": 240,
       "resolutionHeight": 320,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "NetFront",
@@ -9768,7 +9768,7 @@
       "resolutionWidth": 240,
       "resolutionHeight": 400,
       "dualOrientation": false,
-      "type": "mobile-phone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Jasmine",
@@ -10595,8 +10595,8 @@
       "pointingMethod": "touchscreen",
       "resolutionWidth": null,
       "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "mobile-phone"
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Teleca-Obigo",
@@ -23895,6 +23895,42 @@
       "marketingName": "JavaOS",
       "version": "0.0.0",
       "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "W3C-mobileOK/DDC-1.0 (see http://www.w3.org/2006/07/mobileok-ddc)"
+    },
+    "device": {
+      "deviceName": "general Mobile Device",
+      "marketingName": "general Mobile Device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "W3C MobileOK Checker",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "W3c",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
       "bits": 32
     },
     "engine": {
