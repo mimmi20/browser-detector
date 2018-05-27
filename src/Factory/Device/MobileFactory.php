@@ -284,6 +284,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/quechua/i' => 'quechua',
         '/stx/i' => 'stonex',
         '/sunvan/i' => 'sunvan',
+        '/vollo/i' => 'vollo',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
