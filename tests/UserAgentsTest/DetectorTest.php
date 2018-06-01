@@ -66,7 +66,10 @@ class DetectorTest extends TestCase
         self::assertEquals(
             $expectedResult,
             $result,
-            sprintf('detection result mismatch for headers %s', json_encode($headers))
+            sprintf(
+                'detection result mismatch for headers %s',
+                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+            )
         );
     }
 
