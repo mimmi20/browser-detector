@@ -1,7 +1,7 @@
 {
   "rules": {
     "/ c4 /i": "trevi c4",
-    "/phablet 5,3 q/i": "trevi phablet 5,3q",
+    "/phablet 5\\,3 q/i": "trevi phablet 5,3q",
     "/reverse_5\\.5q/i": "trevi reverse 5.5q",
     "/phablet[_ ]6[_ ]?s/i": "trevi phablet 6s",
     "/phablet[_ ]5[_ ]?s/i": "trevi phablet 5s",

@@ -36,9 +36,10 @@ class MobileFactory implements DeviceFactoryInterface
         '/sony/i' => 'sony',
         '/accent/i' => 'accent',
         '/lenovo/i' => 'lenovo',
-        '/startrail4/i' => 'sfr', // must be before ZTE
+        '/sfr/i' => 'sfr',
+        '/startrail|starxtrem|starshine|staraddict|starnaute|startext/i' => 'sfr', // must be before ZTE
         '/zte|racer/i' => 'zte',
-        '/acer/i' => 'acer',
+        '/acer|da241hl/i' => 'acer',
         '/amazon/i' => 'amazon',
         '/amoi/i' => 'amoi',
         '/blaupunkt/i' => 'blaupunkt',
@@ -62,7 +63,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/cubot/i' => 'cubot',
         '/dell/i' => 'dell',
         '/denver/i' => 'denver',
-        '/sharp/i' => 'sharp',
+        '/sharp|shl25/i' => 'sharp',
         '/flytouch/i' => 'flytouch',
         '/n\-06e|n[79]05i/i' => 'nec', // must be before docomo
         '/docomo/i' => 'docomo',
@@ -132,7 +133,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/gionee/i' => 'gionee',
         '/videocon/i' => 'videocon',
         '/gigaset/i' => 'gigaset',
-        '/dns/i' => 'dns',
+        '/dns|s4503q/i' => 'dns',
         '/kyocera/i' => 'kyocera',
         '/texet/i' => 'texet',
         '/s\-tell/i' => 'stell',
@@ -251,8 +252,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/nexus ?[45]/i' => 'lg', // must be before MTC
         '/MTC/' => 'mtc',
         '/eSTAR/' => 'estar',
-        '/S4503Q/' => 'dns', // must be before 3Q
-        '/XT811/' => 'flipkart',
+        //'/S4503Q/' => 'dns', // must be before 3Q
+        '/flipkart|xt811/i' => 'flipkart',
         '/XT\d{3,4}|WX\d{3}|MB\d{3}/' => 'motorola', // must be before 3Q
         '/3Q/' => 'triq',
         '/UMI/' => 'umi',
@@ -263,8 +264,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/thl[ _]/i' => 'thl',
         '/fly[ _]/i' => 'fly',
         '/bmobile[ _]/i' => 'bmobile',
-        '/DA241HL/' => 'acer', // must be before Honlin
-        '/SHL25/' => 'sharp',
+        //'/DA241HL/' => 'acer', // must be before Honlin
+        //'/SHL25/' => 'sharp',
         '/HL/' => 'honlin',
         '/mtech/i' => 'mtech',
         '/myTAB/' => 'mytab',
@@ -435,7 +436,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/nook/i' => 'barnesnoble',
         '/iq1055/i' => 'mls',
         '/BIGCOOL|COOLFIVE|COOL\-K|Just5|LINK5/' => 'konrow',
-        '/[SLWM]T\d{2}|[SM]K\d{2}|SO\-\d{2}[BCDEG]/' => 'sony',
+        '/[SLWM]T\d{2}|[SM]K\d{2}|SO\-\d{2}[BCDEFG]/' => 'sony',
         '/l\d{2}u/i' => 'sony',
         '/(?:IQ|FS)\d{3,4}/' => 'fly',
         '/TQ\d{3}/' => 'goclever',
@@ -506,7 +507,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/f031|n900\+|sc[lt]2\d|isw11sc/i' => 'samsung',
         '/auxus/i' => 'iberry',
         '/iusai/i' => 'opsson',
-        '/netbox| x10 | e1[05]i| x2 |r800x|s500i|x1i|x10i|s39h/i' => 'sony',
+        '/netbox| x10 | e1[05]i| x2 |r800x|s500i|x1i|x10i|[ls]39h/i' => 'sony',
         '/PROV?\d{3}[B\d]?/' => 'polaroid',
         '/x90\d{1,2}|n52\d{2}|r[12678]\d{2,3}|u70\dt|find7|a3[37]f|r7[ks]?f|r7plusf| 1201 |n1t/i' => 'oppo',
         '/N\d{4}/' => 'star',
@@ -686,7 +687,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ i10 | h150 /i' => 'symphony',
         '/ arc /i' => 'kobo',
         '/m92d\-3g/i' => 'sumvier',
-        '/ c4 |phablet 5\,3 q/i' => 'trevi',
+        '/ c4 |phablet \d/i' => 'trevi',
         '/ f5 | h7 /i' => 'tecno',
         '/a88x/i' => 'alldaymall',
         '/bs1078/i' => 'yonestoptech',
@@ -697,7 +698,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/gs55\-6|gs53\-6/i' => 'gigaset',
         '/vkb011b/i' => 'fengxiang',
         '/trooper|tornado|thunder/i' => 'kazam',
-        '/end_101g-test/i' => 'blaupunkt',
+        '/end_101g\-test/i' => 'blaupunkt',
         '/ n3 /i' => 'goophone',
         '/king 7/i' => 'pptv',
         '/admire sxy|cinemax/i' => 'zen',
