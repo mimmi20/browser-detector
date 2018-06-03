@@ -154,13 +154,7 @@ class PlatformFactory implements PlatformFactoryInterface
             return $loader($useragent);
         }
 
-        if (preg_match('/\bprofile\b/i', $useragent)) {
-            $loader = $loaderFactory('java');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/gt\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\/1\.0|netfront|profile\/midp|j2me\/|java|nucleus|maui runtime|mre/i', $useragent)) {
+        if (preg_match('/\bprofile\b|gt\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\/1\.0|netfront|profile\/midp|j2me\/|java|nucleus|maui runtime|mre/i', $useragent)) {
             $loader = $loaderFactory('java');
 
             return $loader($useragent);
