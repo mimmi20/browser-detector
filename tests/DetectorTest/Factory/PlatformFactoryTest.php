@@ -28,8 +28,6 @@ class PlatformFactoryTest extends TestCase
     private $object;
 
     /**
-     * @throws \ReflectionException
-     *
      * @return void
      */
     protected function setUp(): void
@@ -175,6 +173,61 @@ class PlatformFactoryTest extends TestCase
             [
                 'this is a fake ua to trigger the fallback',
                 'unknown',
+                new Os(),
+            ],
+            [
+                'Mozilla/5.0 CommonCrawler Node BCRJD3NIBD5D7FSESX5FYPD7DASPLXXTNN3HQFQEM6BOOIQPSUOW42ZHQM2YEA7.O.756TNQIGQC6WQCZW43CC253MBXM7UTLFE2BTSQBYM4OZA6UR.cdn0.common.crawl.zone',
+                'unknown',
+                new Os(),
+            ],
+            [
+                'Mozilla/5.0 (compatible; Konqueror/4.1; DragonFly) KHTML/4.1.4 (like Gecko)',
+                'bsd',
+                new Os(),
+            ],
+            [
+                'ELinks/0.10.4-7-debian (textmode; GNU/kFreeBSD 5.3-17 i686; 143x53-2)',
+                'bsd',
+                new Os(),
+            ],
+            [
+                'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; de-DE) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0',
+                'webos',
+                new Os(),
+            ],
+            [
+                'Mozilla/5.0 (Linux; webOS/2.2.4; U; de-DE) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/1.2',
+                'webos',
+                new Os(),
+            ],
+            [
+                'Huawei/1.0/HUAWEI-G7300 Browser/Opera MMS/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; it-IT) Presto/2.5.28 Version/10.10',
+                'java',
+                new Os(),
+            ],
+            [
+                'JUC (Linux; U; 4.0.4; zh-cn; GT-I9100; 480*800) UCWEB7.9.0.94/139/444',
+                'android',
+                new Os(),
+            ],
+            [
+                'JUC(Linux;U;Android4.2.2;Zh_cn;GT-I9060;480*800;)UCWEB7.8.0.95/139/355',
+                'android',
+                new Os(),
+            ],
+            [
+                'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.8) Gecko/20100215 Solaris/10.1 (GNU) Superswan/3.5.8 (Byte/me)',
+                'solaris',
+                new Os(),
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160',
+                'palm',
+                new Os(),
+            ],
+            [
+                'Opera/9.80 (BREW; Opera Mini/5.0/27.2339; U; en) Presto/2.8.119 320X240 Samsung SCH-U750',
+                'genericplatform',
                 new Os(),
             ],
         ];
