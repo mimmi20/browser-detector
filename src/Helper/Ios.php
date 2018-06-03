@@ -50,7 +50,7 @@ class Ios
             return true;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+I(P|T)/', (string) $this->useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+I[PT]/', (string) $this->useragent)) {
             return true;
         }
 

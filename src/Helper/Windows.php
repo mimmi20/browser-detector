@@ -60,7 +60,7 @@ class Windows
             'mobi',
             'msie or firefox mutant',
             'not on windows server',
-            'j2me/midp',
+            'j2me',
             'palmsource',
             '<',
             '>',
@@ -107,6 +107,7 @@ class Windows
             'win32',
             'barca',
             'the bat!',
+            'cygwin',
         ];
 
         if (!$this->useragent->containsAny($windows, false)) {

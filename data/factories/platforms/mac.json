@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "/mac os x/i": "mac os x",
+    "/os\\=mac 10/i": "mac os x",
+    "/mac_powerpc/i": "macintosh",
+    "/ppc/i": "macintosh",
+    "/68k/i": "macintosh"
+  },
+  "generic": "mac os x"
+}

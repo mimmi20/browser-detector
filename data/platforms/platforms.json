@@ -1038,8 +1038,10 @@
     "marketingName": "Nucleus",
     "manufacturer": "Accelerated Technology",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "Nucleus"
+      ]
     }
   },
   "yun os": {
@@ -1083,6 +1085,18 @@
       "class": "VersionFactory",
       "search": [
         "RemixOS"
+      ]
+    }
+  },
+  "mre": {
+    "name": "MRE",
+    "marketingName": "MAUI Runtime Environment",
+    "manufacturer": "MediaTek",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MRE\\\\",
+        "MRE"
       ]
     }
   }

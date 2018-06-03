@@ -128,11 +128,11 @@ class Linux
             return false;
         }
 
-        if (preg_match('/TBD(B|C)\d{3,4}/', (string) $this->useragent)) {
+        if (preg_match('/TBD[BC]\d{3,4}/', (string) $this->useragent)) {
             return false;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+(A|I|W|M)(T|P)?/', (string) $this->useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+[AIMW][PT]?/', (string) $this->useragent)) {
             return false;
         }
 

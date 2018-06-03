@@ -38,19 +38,19 @@ class AndroidOs
      */
     public function isAndroid(): bool
     {
-        if (preg_match('/(windows|palmsource)/i', (string) $this->useragent)) {
+        if (preg_match('/windows|palmsource|nucleus|maui runtime/i', (string) $this->useragent)) {
             return false;
         }
 
-        if (preg_match('/(android|silk|juc ?\(linux;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux;|maui|spreadtrum|vre;|linux; googletv)/i', (string) $this->useragent)) {
+        if (preg_match('/MRE|MAUI\//', (string) $this->useragent)) {
+            return false;
+        }
+
+        if (preg_match('/android|silk|juc ?\(linux;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux;|spreadtrum|vre;|linux; googletv|beyondpod|htc_sensation_z710e/i', (string) $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+A(T|P)/', (string) $this->useragent)) {
-            return true;
-        }
-
-        if (preg_match('/(beyondpod|htc_sensation_z710e)/i', (string) $this->useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+A[TP]/', (string) $this->useragent)) {
             return true;
         }
 

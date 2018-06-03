@@ -1,7 +1,7 @@
 {
   "rules": {
     "/win(?:dows|9[58]|me|nt)/i": "windows desktop",
-    "/freebsd/i": "general desktop",
+    "/freebsd|solaris|irix/i": "general desktop",
     "/linux|dillo/i": "linux desktop"
   },
   "generic": "general desktop"

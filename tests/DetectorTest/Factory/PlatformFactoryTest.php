@@ -119,7 +119,7 @@ class PlatformFactoryTest extends TestCase
             ],
             [
                 'Mozilla/5.0 (X11; U; AIX 000690FC4C00; en-US; rv:1.7.3) Gecko/20041022',
-                'genericplatform',
+                'unix',
                 new Os(),
             ],
             [
@@ -134,7 +134,7 @@ class PlatformFactoryTest extends TestCase
             ],
             [
                 'Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; Mobile; rv:26.0) Gecko/26.0 Firefox/26.0 SailfishBrowser/1.0 like Safari/538.1',
-                'genericplatform',
+                'maemo',
                 new Os(),
             ],
             [
@@ -159,12 +159,12 @@ class PlatformFactoryTest extends TestCase
             ],
             [
                 'QuickTime.7.6.6 (qtver=7.6.6;cpu=IA32;os=Mac 10.6.7).',
-                'genericplatform',
+                'mac',
                 new Os(),
             ],
             [
                 'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.2.1.2141 Mobile Safari/537.35+',
-                'genericplatform',
+                'rimos',
                 new Os(),
             ],
             [
