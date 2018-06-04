@@ -62,7 +62,7 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache  = new FilesystemCache('', 0, 'cache/');
+        $cache = new FilesystemCache('', 0, 'cache/');
 
         /** @var NullLogger $logger */
         $factory = new DetectorFactory($cache, $logger);
