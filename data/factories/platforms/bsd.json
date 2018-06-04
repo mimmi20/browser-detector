@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "/netbsd/i": "netbsd",
+    "/openbsd/i": "openbsd",
+    "/dragonfly/i": "dragonfly bsd",
+    "/kfreebsd/i": "debian with freebsd kernel",
+    "/freebsd/i": "freebsd"
+  },
+  "generic": "bsd"
+}

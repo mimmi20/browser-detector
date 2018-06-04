@@ -38,10 +38,7 @@ class FirefoxOs
      */
     public function isFirefoxOs(): bool
     {
-        if (!$this->useragent->startsWith('mozilla/', false)
-            || !$this->useragent->containsAll(['rv:', 'gecko', 'firefox'], false)
-            || $this->useragent->contains('android', false)
-        ) {
+        if ($this->useragent->contains('android', false)) {
             return false;
         }
 

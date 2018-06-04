@@ -202,6 +202,7 @@ class MobileDevice
             'm2 note',
             'lenovotablet',
             'remixos',
+            'micromax',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {
@@ -240,7 +241,7 @@ class MobileDevice
             return true;
         }
 
-        if (preg_match('/TBD(B|C|G)\d{3,4}/', (string) $this->useragent)) {
+        if (preg_match('/TBD[BCG]\d{3,4}/', (string) $this->useragent)) {
             return true;
         }
 

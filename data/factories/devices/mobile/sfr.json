@@ -1,6 +1,18 @@
 {
   "rules": {
-    "/startrail4/i": "sfr startrail4"
+    "/startrail ?4/i": "sfr startrail 4",
+    "/startrail ii/i": "sfr startrail 2",
+    "/startrail/i": "sfr startrail",
+    "/starxtrem/i": "sfr starxtrem",
+    "/starnaute ii/i": "sfr starnaute 2",
+    "/starnaute/i": "sfr starnaute",
+    "/staraddict ii plus/i": "sfr staraddict 2 plus",
+    "/staraddict ii/i": "sfr staraddict 2",
+    "/staraddict/i": "sfr staraddict",
+    "/startext ii/i": "sfr startext 2",
+    "/startext/i": "sfr startext",
+    "/starshine ii/i": "sfr starshine 2",
+    "/starshine/i": "sfr starshine"
   },
   "generic": "general sfr device"
 }

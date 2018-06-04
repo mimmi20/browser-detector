@@ -61,14 +61,38 @@ class PlatformFactory implements PlatformFactoryInterface
             return $loader($useragent);
         }
 
+        if (preg_match('/commoncrawler|msie or firefox mutant|not on windows server/i', $useragent)) {
+            $loader = $loaderFactory('unknown');
+
+            return $loader($useragent);
+        }
+
         if (preg_match('/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/i', $useragent)) {
             $loader = $loaderFactory('symbian');
 
             return $loader($useragent);
         }
 
-        if (preg_match('/commoncrawler|bada|meego|sailfish|cygwin|bsd|dragonfly|hp\-?ux|irix|web[o0]s|hpwos/i', $useragent)) {
-            $loader = $loaderFactory('genericplatform');
+        if (preg_match('/maemo|like android|remix|bada|meego|sailfish/i', $useragent)) {
+            $loader = $loaderFactory('maemo');
+
+            return $loader($useragent);
+        }
+
+        if (preg_match('/bsd|dragonfly/i', $useragent)) {
+            $loader = $loaderFactory('bsd');
+
+            return $loader($useragent);
+        }
+
+        if (preg_match('/web[o0]s|hpwos/i', $useragent)) {
+            $loader = $loaderFactory('webos');
+
+            return $loader($useragent);
+        }
+
+        if (preg_match('/hp\-?ux|irix|aix|unix|osf1|openvms/i', $useragent)) {
+            $loader = $loaderFactory('unix');
 
             return $loader($useragent);
         }
@@ -88,17 +112,17 @@ class PlatformFactory implements PlatformFactoryInterface
             return $loader($useragent);
         }
 
-        if (preg_match('/aix|openvms/i', $useragent)) {
-            $loader = $loaderFactory('genericplatform');
-
-            return $loader($useragent);
-        }
-
         if (preg_match('/darwin|cfnetwork/i', $useragent)) {
             $loader = $loaderFactory('darwin');
 
             return $loader($useragent);
         }
+
+//        if (preg_match('/microsoft|jobboerse|microsearch/i', $useragent)) {
+//            $loader = $loaderFactory('unknown');
+//
+//            return $loader($useragent);
+//        }
 
         if ((new Helper\Linux($s))->isLinux()) {
             $loader = $loaderFactory('linux');
@@ -106,8 +130,8 @@ class PlatformFactory implements PlatformFactoryInterface
             return $loader($useragent);
         }
 
-        if (preg_match('/maemo|like android|blackberry|bb10|remix/i', $useragent)) {
-            $loader = $loaderFactory('genericplatform');
+        if (preg_match('/blackberry|bb10|rim tablet/i', $useragent)) {
+            $loader = $loaderFactory('rimos');
 
             return $loader($useragent);
         }
@@ -130,63 +154,31 @@ class PlatformFactory implements PlatformFactoryInterface
             return $loader($useragent);
         }
 
-        if (preg_match('/\bprofile\b/i', $useragent)) {
+        if (preg_match('/\bprofile\b|gt\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\/1\.0|netfront|profile\/midp|j2me\/|java|nucleus|maui runtime|mre/i', $useragent)) {
             $loader = $loaderFactory('java');
 
             return $loader($useragent);
         }
 
-        $platforms = [
-            'mac os x' => 'mac os x',
-            'os=mac 10' => 'mac os x',
-            'mac_powerpc' => 'macintosh',
-            'ppc' => 'macintosh',
-            '68k' => 'macintosh',
-            'macintosh' => 'mac os x',
-            'rim tablet' => 'rim tablet os',
-            'amigaos' => 'amiga os',
-            'brew' => 'brew',
-            'beos' => 'beos',
-            'opensolaris' => 'opensolaris',
-            'solaris' => 'solaris',
-            'sunos' => 'sunos',
-            'risc' => 'risc os',
-            'tru64 unix' => 'tru64 unix',
-            'digital unix' => 'tru64 unix',
-            'osf1' => 'tru64 unix',
-            'unix' => 'unix',
-            'os/2' => 'os/2',
-            'warp' => 'os/2',
-            'cp/m' => 'cp/m',
-            'nintendo wii' => 'nintendo os',
-            'nintendo 3ds' => 'nintendo os',
-            'palm os' => 'palmos',
-            'palmsource' => 'palmos',
-            'wyderos' => 'wyderos',
-            'liberate' => 'liberate',
-            'inferno' => 'inferno os',
-            'syllable' => 'syllable',
-            'camino' => 'mac os x',
-            'pubsub' => 'mac os x',
-            'integrity' => 'mac os x',
-            'gt-s5380' => 'bada',
-            's8500' => 'bada',
-            'java' => 'java',
-            'j2me/midp' => 'java',
-            'profile/midp' => 'java',
-            'juc' => 'java',
-            'ucweb' => 'java',
-            'netfront' => 'java',
-            'jasmine/1.0' => 'java',
-            'obigo' => 'java',
-            'spark284' => 'java',
-            'lemon b556' => 'java',
-            'kkt20' => 'java',
-            'gt-c3312r' => 'java',
-            'velocitymicro/t408' => 'android',
-        ];
+        if (preg_match('/mac os x|macintosh|os=mac 10|mac_powerpc|ppc|68k|camino|pubsub|integrity/i', $useragent)) {
+            $loader = $loaderFactory('mac');
 
-        if ($s->containsAny(array_keys($platforms), false)) {
+            return $loader($useragent);
+        }
+
+        if (preg_match('/sunos|solaris/i', $useragent)) {
+            $loader = $loaderFactory('solaris');
+
+            return $loader($useragent);
+        }
+
+        if (preg_match('/palm os|palmsource/i', $useragent)) {
+            $loader = $loaderFactory('palm');
+
+            return $loader($useragent);
+        }
+
+        if (preg_match('/amigaos|brew|beos|risc|os\/2|warp|cp\/m|nintendo (wii|3ds)|wyderos|liberate|inferno|syllable/i', $useragent)) {
             $loader = $loaderFactory('genericplatform');
 
             return $loader($useragent);

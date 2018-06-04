@@ -1,9 +1,13 @@
 {
   "rules": {
     "/ c4 /i": "trevi c4",
-    "/phablet 5,3 q/i": "trevi phablet 5,3 q",
+    "/phablet 5\\,3 q/i": "trevi phablet 5,3q",
     "/reverse_5\\.5q/i": "trevi reverse 5.5q",
-    "/phablet 6 s/i": "trevi phablet 6 s"
+    "/phablet[_ ]6[_ ]?s/i": "trevi phablet 6s",
+    "/phablet[_ ]5[_ ]?s/i": "trevi phablet 5s",
+    "/phablet[_ ]4.5q/i": "trevi phablet 4.5q",
+    "/phablet[_ ]4s/i": "trevi phablet 4s",
+    "/phablet[_ ]4c/i": "trevi phablet 4c"
   },
   "generic": "general trevi device"
 }

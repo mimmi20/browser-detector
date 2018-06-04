@@ -4,11 +4,35 @@
     "marketingName": "TG01",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
+    "platform": null,
     "type": "smartphone",
     "pointingMethod": "touchscreen",
     "resolutionWidth": 480,
     "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "toshiba t-01d": {
+    "codename": "T-01D",
+    "marketingName": "Regza T-01D",
+    "manufacturer": "Toshiba",
+    "brand": "Toshiba",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "toshiba t-02d": {
+    "codename": "T-02D",
+    "marketingName": "Regza T-02D",
+    "manufacturer": "Toshiba",
+    "brand": "Toshiba",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
     "dualOrientation": true
   }
 }
