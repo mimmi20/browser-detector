@@ -11,9 +11,21 @@
     "resolutionHeight": null,
     "dualOrientation": true
   },
-  "t-mobile mytouch3g": {
+  "t-mobile mytouch 3g": {
     "codename": "myTouch 3G",
     "marketingName": "myTouch 3G",
+    "manufacturer": "Tmobile",
+    "brand": "Tmobile",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "t-mobile mytouch 3g slide": {
+    "codename": "myTouch 3G Slide",
+    "marketingName": "myTouch 3G Slide",
     "manufacturer": "Tmobile",
     "brand": "Tmobile",
     "platform": "android",
@@ -93,6 +105,42 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 640,
     "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "t-mobile leo": {
+    "codename": "T8585",
+    "marketingName": "Leo",
+    "manufacturer": "Htc",
+    "brand": "Tmobile",
+    "platform": null,
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "t-mobile mytouch q": {
+    "codename": "myTouch Q",
+    "marketingName": "myTouch Q",
+    "manufacturer": "Tmobile",
+    "brand": "Tmobile",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "t-mobile vivacity": {
+    "codename": "Vivacity",
+    "marketingName": "Vivacity",
+    "manufacturer": "Tmobile",
+    "brand": "Tmobile",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
     "dualOrientation": true
   }
 }

@@ -252,7 +252,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/nexus ?[45]/i' => 'lg', // must be before MTC
         '/MTC/' => 'mtc',
         '/eSTAR/' => 'estar',
-        //'/S4503Q/' => 'dns', // must be before 3Q
         '/flipkart|xt811/i' => 'flipkart',
         '/XT\d{3,4}|WX\d{3}|MB\d{3}/' => 'motorola', // must be before 3Q
         '/3Q/' => 'triq',
@@ -264,8 +263,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/thl[ _]/i' => 'thl',
         '/fly[ _]/i' => 'fly',
         '/bmobile[ _]/i' => 'bmobile',
-        //'/DA241HL/' => 'acer', // must be before Honlin
-        //'/SHL25/' => 'sharp',
         '/HL/' => 'honlin',
         '/mtech/i' => 'mtech',
         '/myTAB/' => 'mytab',
@@ -409,6 +406,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/m[bez]\d{3}/i' => 'motorola',
         '/vodafone smart 4 max|smart 4 turbo/i' => 'vodafone',
         '/one[ _]?touch|v860|vodafone (?:smart|785|875|975n)|vf\-(?:795|895n)|m812c|telekom puls/i' => 'alcatel',
+        '/vodafone 975/i' => 'vodafone',
         '/xperia/i' => 'sony',
         '/momodesign md droid/i' => 'zte',
         '/ droid|milestone|xoom|razr hd| z /i' => 'motorola',
@@ -421,7 +419,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/OP\d{3}/' => 'olivetti',
         '/VS\d{3}/' => 'lg',
         '/surftab|vt10416|breeze 10\.1 quad|xintroni10\.1|st70408_4/i' => 'trekstor',
-        '/AT\d{2,3}/' => 'toshiba',
+        '/AT\d{2,3}|T\-0\dD/' => 'toshiba',
         '/P[AS]P|PM[PT]/' => 'prestigio',
         '/E[vV][oO] ?3D|PJ83100|831C|Eris 2\.1|0PCV1|MDA|0PJA10/' => 'htc',
         '/adr\d{4}/i' => 'htc',
@@ -738,6 +736,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/element p501/i' => 'sencor',
         '/andromax|pd6d1j/i' => 'smartfren',
         '/ax5_duo/i' => 'maxx',
+        '/tlink/i' => 'thomson',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/kin\.two|zunehd/i' => 'microsoft',

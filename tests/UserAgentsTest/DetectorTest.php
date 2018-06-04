@@ -36,9 +36,35 @@ class DetectorTest extends TestCase
      */
     protected function setUp(): void
     {
-        $logger = new NullLogger();
+        $logger = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $cache  = new FilesystemCache('', 0, 'cache/');
 
+        /** @var NullLogger $logger */
         $factory = new DetectorFactory($cache, $logger);
 
         $this->object = $factory();
