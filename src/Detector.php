@@ -131,7 +131,7 @@ class Detector implements DetectorInterface
         try {
             [$device, $platform] = $deviceFactory($deviceUa);
         } catch (NotFoundException $e) {
-            $this->logger->debug($e);
+            $this->logger->warning($e);
 
             $device   = null;
             $platform = null;
@@ -146,7 +146,7 @@ class Detector implements DetectorInterface
             try {
                 $platform = $platformFactory($browserUa);
             } catch (NotFoundException $e) {
-                $this->logger->debug($e);
+                $this->logger->warning($e);
                 $platform = null;
             }
         }
@@ -168,7 +168,7 @@ class Detector implements DetectorInterface
                 try {
                     $engine = $engineFactory($browserUa);
                 } catch (InvalidArgumentException $e) {
-                    $this->logger->info($e);
+                    $this->logger->error($e);
                 }
             }
         }

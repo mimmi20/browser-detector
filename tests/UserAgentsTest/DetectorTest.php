@@ -18,8 +18,13 @@ use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 use Symfony\Component\Finder\Finder;
+use UaResult\Browser\BrowserInterface;
+use UaResult\Device\DeviceInterface;
+use UaResult\Engine\EngineInterface;
+use UaResult\Os\OsInterface;
 use UaResult\Result\Result;
 use UaResult\Result\ResultFactory;
+use UaResult\Result\ResultInterface;
 
 class DetectorTest extends TestCase
 {
@@ -87,7 +92,58 @@ class DetectorTest extends TestCase
         /* @var Result $result */
         $result = $object($headers);
 
-        self::assertInstanceOf(Result::class, $result);
+        static::assertInstanceOf(
+            ResultInterface::class,
+            $result,
+            sprintf(
+                'found result is not an instance of "\UaResult\Result\ResultInterface" for headers %s',
+                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+            )
+        );
+
+        $foundBrowser = $result->getBrowser();
+
+        static::assertInstanceOf(
+            BrowserInterface::class,
+            $foundBrowser,
+            sprintf(
+                'found browser is not an instance of "\UaResult\Browser\BrowserInterface" for headers %s',
+                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+            )
+        );
+
+        $foundEngine = $result->getEngine();
+
+        static::assertInstanceOf(
+            EngineInterface::class,
+            $foundEngine,
+            sprintf(
+                'found engine is not an instance of "\UaResult\Engine\EngineInterface" for headers %s',
+                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+            )
+        );
+
+        $foundPlatform = $result->getOs();
+
+        static::assertInstanceOf(
+            OsInterface::class,
+            $foundPlatform,
+            sprintf(
+                'found platform is not an instance of "\UaResult\Os\OsInterface" for headers %s',
+                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+            )
+        );
+
+        $foundDevice = $result->getDevice();
+
+        static::assertInstanceOf(
+            DeviceInterface::class,
+            $foundDevice,
+            sprintf(
+                'found result is not an instance of "\UaResult\Device\DeviceInterface" for headers %s',
+                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+            )
+        );
 
         self::assertEquals(
             $expectedResult,
