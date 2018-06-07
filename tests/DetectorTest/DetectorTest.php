@@ -480,14 +480,32 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info'])
+            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
         $logger
-            ->expects(self::exactly(3))
+            ->expects(self::exactly(2))
             ->method('debug');
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::once())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
@@ -557,14 +575,32 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info'])
+            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
         $logger
-            ->expects(self::exactly(4))
+            ->expects(self::exactly(2))
             ->method('debug');
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::exactly(2))
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
@@ -713,14 +749,32 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info'])
+            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
         $logger
             ->expects(self::exactly(2))
             ->method('debug');
         $logger
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::once())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
