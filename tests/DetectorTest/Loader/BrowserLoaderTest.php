@@ -37,12 +37,29 @@ class BrowserLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -135,12 +152,29 @@ class BrowserLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -233,12 +267,29 @@ class BrowserLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -481,16 +532,172 @@ class BrowserLoaderTest extends TestCase
     /**
      * @return void
      */
+    public function testInvokeGenericVersionAndEngineInvalidException(): void
+    {
+        $logger = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::once())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem'])
+            ->getMock();
+
+        $map = [
+            ['browser_default__initialized', true],
+            ['browser_default__generic-browser', true],
+        ];
+
+        $cache
+            ->expects(self::never())
+            ->method('hasItem')
+            ->will(self::returnValueMap($map));
+
+        $browserData = (object) [
+            'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
+            'manufacturer' => 'Unknown',
+            'type' => 'unknown',
+            'engine' => 'unknown',
+            'name' => null,
+        ];
+
+        $cache
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('browser_default__key')
+            ->will(self::returnValue($browserData));
+
+        $cacheKey = $this->getMockBuilder(CacheKey::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+
+        $map = [
+            ['test-key', 'browser_default__key'],
+        ];
+
+        $cacheKey
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('test-key')
+            ->will(self::returnValueMap($map));
+
+        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load'])
+            ->getMock();
+
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('Unknown')
+            ->willReturn(new Company('Unknown'));
+
+        $typeLoader = $this->getMockBuilder(TypeLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load'])
+            ->getMock();
+
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $engineLoader = $this->getMockBuilder(GenericLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load', 'init'])
+            ->getMock();
+
+        $engineLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown', 'test/1.0')
+            ->willThrowException(new InvalidArgumentException('engine key not found'));
+
+        $engineLoader
+            ->expects(self::once())
+            ->method('init');
+
+        /** @var Cache $cache */
+        /** @var NullLogger $logger */
+        /** @var CacheKey $cacheKey */
+        /** @var CompanyLoader $companyLoader */
+        /** @var TypeLoader $typeLoader */
+        /** @var GenericLoader $engineLoader */
+        $object = new BrowserLoader(
+            $cache,
+            $logger,
+            $cacheKey,
+            $companyLoader,
+            $typeLoader,
+            $engineLoader
+        );
+
+        $result = $object('test-key', 'test/1.0');
+
+        self::assertInternalType('array', $result);
+        self::assertArrayHasKey(0, $result);
+        self::assertInstanceOf(BrowserInterface::class, $result[0]);
+        self::assertArrayHasKey(1, $result);
+        self::assertNull($result[1]);
+    }
+
+    /**
+     * @return void
+     */
     public function testInvokeVersionAndEngine(): void
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
