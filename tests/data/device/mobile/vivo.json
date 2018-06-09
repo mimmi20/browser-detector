@@ -322,5 +322,113 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; zh-CN; vivo V1 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.4.1.362 U3/0.8.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "V1",
+      "marketingName": "V1",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.362",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.3",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-cn; vivo S7t Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "S7t",
+      "marketingName": "S7t",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "QQ Browser",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Tencent",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-CN; vivo S3+ Build/IMM76D) AppleWebKit/534.31 (KHTML, like Gecko) UCBrowser/9.0.1.275 U3/0.8.0 Mobile Safari/534.31"
+    },
+    "device": {
+      "deviceName": "S3+",
+      "marketingName": "S3+",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.0.1.275",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UcWeb"
+    }
   }
 ]

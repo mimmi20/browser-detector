@@ -36,12 +36,29 @@ class DeviceLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -138,12 +155,29 @@ class DeviceLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -240,12 +274,29 @@ class DeviceLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -359,12 +410,32 @@ class DeviceLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
         $logger
             ->expects(self::once())
-            ->method('info');
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -481,16 +552,179 @@ class DeviceLoaderTest extends TestCase
     /**
      * @return void
      */
+    public function testInvokeGenericVersionAndPlatformInvalidException(): void
+    {
+        $logger = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::once())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem'])
+            ->getMock();
+
+        $map = [
+            ['device_default__initialized', true],
+            ['device_default__generic-device', true],
+        ];
+
+        $cache
+            ->expects(self::never())
+            ->method('hasItem')
+            ->will(self::returnValueMap($map));
+
+        $deviceData = (object) [
+            'version' => (object) ['class' => null],
+            'manufacturer' => 'Unknown',
+            'brand' => 'Unknown',
+            'type' => 'unknown',
+            'platform' => 'unknown',
+            'codename' => null,
+            'marketingName' => null,
+            'pointingMethod' => null,
+            'resolutionWidth' => null,
+            'resolutionHeight' => null,
+            'dualOrientation' => true,
+        ];
+
+        $cache
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('device_default__key')
+            ->will(self::returnValue($deviceData));
+
+        $cacheKey = $this->getMockBuilder(CacheKey::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+
+        $map = [
+            ['test-key', 'device_default__key'],
+        ];
+
+        $cacheKey
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('test-key')
+            ->will(self::returnValueMap($map));
+
+        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load'])
+            ->getMock();
+
+        $companyLoader
+            ->expects(self::exactly(2))
+            ->method('load')
+            ->with('Unknown')
+            ->willReturn(new Company('Unknown'));
+
+        $typeLoader = $this->getMockBuilder(TypeLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load'])
+            ->getMock();
+
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $platformLoader = $this->getMockBuilder(GenericLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['load', 'init'])
+            ->getMock();
+
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown', 'test/1.0')
+            ->willThrowException(new InvalidArgumentException('engine key not found'));
+
+        $platformLoader
+            ->expects(self::once())
+            ->method('init')
+            ->willReturnSelf();
+
+        /** @var Cache $cache */
+        /** @var NullLogger $logger */
+        /** @var CacheKey $cacheKey */
+        /** @var CompanyLoader $companyLoader */
+        /** @var TypeLoader $typeLoader */
+        /** @var GenericLoader $platformLoader */
+        $object = new DeviceLoader(
+            $cache,
+            $logger,
+            $cacheKey,
+            $companyLoader,
+            $typeLoader,
+            $platformLoader
+        );
+
+        $result = $object('test-key', 'test/1.0');
+
+        self::assertInternalType('array', $result);
+        self::assertArrayHasKey(0, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result[0]);
+        self::assertArrayHasKey(1, $result);
+        self::assertNull($result[1]);
+    }
+
+    /**
+     * @return void
+     */
     public function testInvokeVersionAndPlatform(): void
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()

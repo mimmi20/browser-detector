@@ -32,12 +32,29 @@ class EngineLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -110,12 +127,29 @@ class EngineLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -188,12 +222,29 @@ class EngineLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -271,12 +322,29 @@ class EngineLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -354,12 +422,29 @@ class EngineLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info'])
+            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
-
         $logger
             ->expects(self::never())
             ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()

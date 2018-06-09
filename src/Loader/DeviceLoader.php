@@ -101,8 +101,10 @@ class DeviceLoader implements SpecificLoaderInterface
             try {
                 $this->platformLoader->init();
                 $platform = $this->platformLoader->load($platformKey, $useragent);
-            } catch (NotFoundException | InvalidArgumentException $e) {
-                $this->logger->info($e);
+            } catch (NotFoundException $e) {
+                $this->logger->warning($e);
+            } catch (InvalidArgumentException $e) {
+                $this->logger->error($e);
             }
         }
 
