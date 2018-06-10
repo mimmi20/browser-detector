@@ -405,6 +405,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/QtCarBrowser/' => 'teslamotors',
         '/m[bez]\d{3}/i' => 'motorola',
         '/vodafone smart 4 max|smart 4 turbo/i' => 'vodafone',
+        '/s5003d_champ/i' => 'switel',
         '/one[ _]?touch|v860|vodafone (?:smart|785|875|975n)|vf\-(?:795|895n)|m812c|telekom puls/i' => 'alcatel',
         '/vodafone 975/i' => 'vodafone',
         '/xperia/i' => 'sony',
