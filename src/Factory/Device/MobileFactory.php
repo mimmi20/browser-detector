@@ -384,7 +384,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ z110/i' => 'xido',
         '/titanium|machfive|sparkle v/i' => 'karbonn',
         '/a727/i' => 'azpen',
-        '/(ags|ale|ath|bah|bl[an]|bnd|cam|ch[cm]|che[12]?|duk|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|vky|vtr|was|y220)\-/i' => 'huawei',
+        '/(ags|a[ln]e|ath|ba[ch]|bl[an]|bnd|cam|ch[cm]|che[12]?|duk|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|vky|vtr|was|y220)\-/i' => 'huawei',
         '/P(?:GN|KT)\-?\d{3}/' => 'condor',
         '/V1\d{2}|GN\d{3}/' => 'gionee',
         '/v919 3g air/i' => 'onda', // must be before acer
