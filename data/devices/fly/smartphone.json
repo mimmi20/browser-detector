@@ -1,4 +1,16 @@
 {
+  "general fly device": {
+    "codename": "general Fly Device",
+    "marketingName": "general Fly Device",
+    "manufacturer": "Fly",
+    "brand": "Fly",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "fly fs401": {
     "codename": "FS401",
     "marketingName": "Stratus 1",
@@ -467,16 +479,16 @@
     "resolutionHeight": 854,
     "dualOrientation": true
   },
-  "general fly device": {
-    "codename": "general Fly Device",
-    "marketingName": "general Fly Device",
+  "fly iq4416": {
+    "codename": "IQ4416",
+    "marketingName": "Era Life 5",
     "manufacturer": "Fly",
     "brand": "Fly",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
     "dualOrientation": true
   }
 }

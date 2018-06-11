@@ -20,8 +20,9 @@ class Ios implements VersionCacheFactoryInterface
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\VersionInterface
      * @throws \Exception
+     *
+     * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {

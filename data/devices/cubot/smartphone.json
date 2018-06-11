@@ -1,4 +1,16 @@
 {
+  "general cubot device": {
+    "codename": "general Cubot Device",
+    "marketingName": "general Cubot Device",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "cubot c11": {
     "codename": "C11",
     "marketingName": "C11",
@@ -203,16 +215,40 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
-  "general cubot device": {
-    "codename": "general Cubot Device",
-    "marketingName": "general Cubot Device",
+  "cubot r9": {
+    "codename": "R9",
+    "marketingName": "R9",
     "manufacturer": "Cubot",
     "brand": "Cubot",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "cubot x18 plus": {
+    "codename": "X18 Plus",
+    "marketingName": "X18 Plus",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 2160,
+    "dualOrientation": true
+  },
+  "cubot x18": {
+    "codename": "X18",
+    "marketingName": "X18",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1440,
     "dualOrientation": true
   }
 }

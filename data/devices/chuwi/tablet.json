@@ -1,4 +1,16 @@
 {
+  "general chuwi device": {
+    "codename": "general Chuwi Device",
+    "marketingName": "general Chuwi Device",
+    "manufacturer": "Chuwi",
+    "brand": "Chuwi",
+    "platform": null,
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "chuwi hibook": {
     "codename": "HiBook",
     "marketingName": "HiBook",
@@ -23,16 +35,16 @@
     "resolutionHeight": 800,
     "dualOrientation": true
   },
-  "general chuwi device": {
-    "codename": "general Chuwi Device",
-    "marketingName": "general Chuwi Device",
+  "chuwi hi10 pro": {
+    "codename": "Hi10 Pro",
+    "marketingName": "Hi10 Pro",
     "manufacturer": "Chuwi",
     "brand": "Chuwi",
-    "platform": null,
+    "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 1920,
+    "resolutionHeight": 1200,
     "dualOrientation": true
   }
 }
