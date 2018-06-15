@@ -1,6 +1,13 @@
 {
   "rules": {
-    "/primo\\-zx/i": "walton primo zx"
+    "/primo[\\-_ ]zx/i": "walton primo zx",
+    "/primo[\\-_ ]s3 mini/i": "walton primo s3 mini",
+    "/primo[\\-_ ]hm/i": "walton primo hm",
+    "/primo[\\-_ ]g4/i": "walton primo g4",
+    "/primo[\\-_ ]d4/i": "walton primo d4",
+    "/primo[\\-_ ]d2/i": "walton primo d2",
+    "/primo[\\-_ ]c1/i": "walton primo c1",
+    "/primo/i": "walton primo"
   },
   "generic": "general walton device"
 }

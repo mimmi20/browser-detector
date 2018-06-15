@@ -4972,15 +4972,15 @@
       "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 32LH590U-ZE; 03.01.00; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 32LH590U-ZE, wireless)"
     },
     "device": {
-      "deviceName": "general LG Device",
-      "marketingName": "general LG Device",
-      "manufacturer": "Lg",
-      "brand": "Lg",
-      "pointingMethod": "touchscreen",
+      "deviceName": "general TV Device",
+      "marketingName": "general TV Device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "pointingMethod": null,
       "resolutionWidth": null,
       "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "dualOrientation": false,
+      "type": "tv"
     },
     "browser": {
       "name": "LG Browser",

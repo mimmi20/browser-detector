@@ -610,5 +610,41 @@
       "version": "534.30.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "PANTECH-P7000/JDUS10052009; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.15645; U; fr) Opera 9.50"
+    },
+    "device": {
+      "deviceName": "P7000",
+      "marketingName": "Impact",
+      "manufacturer": "Pantech",
+      "brand": "Pantech",
+      "pointingMethod": "stylus",
+      "resolutionWidth": 240,
+      "resolutionHeight": 400,
+      "dualOrientation": false,
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
   }
 ]

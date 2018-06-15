@@ -106,5 +106,41 @@
       "version": "1.0.0",
       "manufacturer": "UcWeb"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 3.1; en-us; Videocon A27i Build/HMJ25) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13"
+    },
+    "device": {
+      "deviceName": "A27i",
+      "marketingName": "A27i",
+      "manufacturer": "Videocon",
+      "brand": "Videocon",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 480,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "3.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.13.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
