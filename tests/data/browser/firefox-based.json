@@ -2554,5 +2554,41 @@
       "version": "1.9.0.7",
       "manufacturer": "MozillaFoundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "QwantMobile/2.0 (Android 6.0; Mobile; rv:59.0) Gecko/59.0 Firefox/59.0 QwantBrowser/59.0.3"
+    },
+    "device": {
+      "deviceName": "general Mobile Device",
+      "marketingName": "general Mobile Device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "QwantBrowser",
+      "modus": null,
+      "version": "59.0.3",
+      "manufacturer": "Qwant",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "59.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
   }
 ]

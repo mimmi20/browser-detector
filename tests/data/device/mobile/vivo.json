@@ -184,8 +184,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; X5max Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "X5max",
-      "marketingName": "X5max",
+      "deviceName": "X5 Max",
+      "marketingName": "X5 Max",
       "manufacturer": "Vivo",
       "brand": "Vivo",
       "pointingMethod": "touchscreen",
@@ -220,8 +220,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; X5pro Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "X5pro",
-      "marketingName": "X5pro",
+      "deviceName": "X5 Pro",
+      "marketingName": "X5 Pro",
       "manufacturer": "Vivo",
       "brand": "Vivo",
       "pointingMethod": "touchscreen",
@@ -429,6 +429,294 @@
       "name": "U3",
       "version": "0.8.0",
       "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; zh-CN; vivo X1 Build/JRO03C) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.4.2.365 U3/0.8.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "X1",
+      "marketingName": "X1",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.2.365",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; BBG-vivo X3V/PD1227V_A_1.12.8; 720*1280; CTC/2.0) AppleWebKit/537.36 (KHTML,like Gecko) Version/4.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "X3v",
+      "marketingName": "X3v",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; VIV-vivo X5Max V/PD1408V_A_1.18.1; 1080*1920; CTC/2.0) AppleWebKit/537.36 (KHTML,like Gecko) Version/4.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "X5 Max V",
+      "marketingName": "X5 Max V",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.0.2; zh-cn; VIV-vivo X5Pro V/PD1421V_A_1.13.5; 1080*1920; CTC/2.0) AppleWebKit/537.36 (KHTML,like Gecko) Version/4.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "X5 Pro V",
+      "marketingName": "X5 Pro V",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; vivo Xplay Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 baiduboxapp/5.0 (Baidu; P1 4.2.2)"
+    },
+    "device": {
+      "deviceName": "Xplay",
+      "marketingName": "Xplay",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Baidu Box App",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Baidu",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; vivo Y11i T Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "Y11i T",
+      "marketingName": "Y11i T",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.1; zh-cn; vivo Y19t Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30; 360browser(securitypay,securityinstalled); 360(android,uppayplugin); 360 Aphone Browser (6.0.1)"
+    },
+    "device": {
+      "deviceName": "Y19t",
+      "marketingName": "Y19t",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "360 Browser",
+      "modus": null,
+      "version": "6.0.1",
+      "manufacturer": "Qihoo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; VIV-vivo Y913/PD1304CV_A_1.18.2; 854*480; CTC/2.0) AppleWebKit/537.36 (KHTML,like Gecko) Version/4.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Y913",
+      "marketingName": "Y913",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
     }
   }
 ]

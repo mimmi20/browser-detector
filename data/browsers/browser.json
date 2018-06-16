@@ -1739,6 +1739,20 @@
     },
     "engine": "blink"
   },
+  "lg browser": {
+    "name": "LG Browser",
+    "manufacturer": "Lg",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LG Browser"
+      ]
+    },
+    "engine": null
+  },
   "liebao": {
     "name": "liebao",
     "manufacturer": "Kingsoft",
@@ -2781,6 +2795,20 @@
       ]
     },
     "engine": "webkit"
+  },
+  "qwantbrowser": {
+    "name": "QwantBrowser",
+    "manufacturer": "Qwant",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QwantBrowser"
+      ]
+    },
+    "engine": null
   },
   "qword browser": {
     "name": "Qword Browser",

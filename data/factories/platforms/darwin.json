@@ -1,5 +1,7 @@
 {
   "rules": {
+    "/cfnetwork\\/897.*\\(x86_64\\)/i": "mac os x",
+    "/cfnetwork\\/897/i": "ios",
     "/cfnetwork\\/887.*\\(x86_64\\)/i": "mac os x",
     "/cfnetwork\\/887/i": "ios",
     "/cfnetwork\\/808/i": "ios",
@@ -49,7 +51,9 @@
     "/cfnetwork\\/128/i": "mac os x",
     "/cfnetwork\\/4\\.0/i": "mac os x",
     "/cfnetwork\\/1\\.2/i": "mac os x",
-    "/cfnetwork\\/1\\.1/i": "mac os x"
+    "/cfnetwork\\/1\\.1/i": "mac os x",
+    "/darwin\\/\\d{2}\\.\\d{2}.*\\(x86_64\\)/i": "mac os x",
+    "/darwin\\/\\d{2}\\.\\d{2}.*/i": "ios"
   },
   "generic": "darwin"
 }

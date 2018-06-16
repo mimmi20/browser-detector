@@ -78,6 +78,7 @@ class Tv
             'loewe; sl121',
             'loewe; sl150',
             'smart-tv',
+            'smarttv',
             'sonydtv',
             'viera',
             'xbox',

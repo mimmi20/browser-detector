@@ -53,6 +53,7 @@ class MobileDevice
             'i9999_custom',
             'wuid=',
             'smart-tv',
+            'smarttv',
             'sonydtv',
             'hbbtv',
             'dolphin http client',

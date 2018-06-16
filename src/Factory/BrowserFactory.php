@@ -19,7 +19,7 @@ class BrowserFactory implements BrowserFactoryInterface
 {
     private $factories = [
         '/edge/i' => 'edge',
-        '/chrome|crmo/i' => 'blink',
+        '/chrome|crmo|chr0me/i' => 'blink',
         '/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i' => 'webkit',
         '/iOS/' => 'webkit',
         '/presto|opera/i' => 'presto',

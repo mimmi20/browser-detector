@@ -934,5 +934,77 @@
       "version": "1.0.0",
       "manufacturer": "UcWeb"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; TECNO Q1 Build/IMM76D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.6.3.413 U3/0.8.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "Q1",
+      "marketingName": "Q1",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 320,
+      "resolutionHeight": 240,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.6.3.413",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TECNOT611/wap2.0_Profile/MIDP-2.0/CLDC-1.1/240x320/key"
+    },
+    "device": {
+      "deviceName": "T611",
+      "marketingName": "T611",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "pointingMethod": "stylus",
+      "resolutionWidth": 240,
+      "resolutionHeight": 320,
+      "dualOrientation": false,
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
   }
 ]

@@ -6,8 +6,8 @@
     "/miuibrowser/i": "miui browser",
     "/omi\\//i": "opera devices",
     "/opera mobi/i": "opera mobile",
-    "/(?:android|mtk|maui|samsung|windows ce|symbos).*(?:opera|opr)/i": "opera mobile",
-    "/(?:opera|opr).*(?:android|mtk|maui|samsung|windows ce|symbos)/i": "opera mobile",
+    "/(?:android|mtk|maui|samsung|windows ce|symbos).*(?:opera|opr\\/)/i": "opera mobile",
+    "/(?:opera|opr\\/).*(?:android|mtk|maui|samsung|windows ce|symbos)/i": "opera mobile",
     "/opr\\//i": "opera",
     "/midori/i": "midori",
     "/yabrowser/i": "yabrowser",
@@ -123,9 +123,10 @@
     "/googlebot\\-image/i": "google image search",
     "/googlebot/i": "googlebot",
     "/origin/i": "origin",
+    "/lg browser/i": "lg browser",
     "/qtwebengine/i": "qtwebengine",
     "/chrome\\/\\d+\\.[1-9]\\./i": "dragon",
-    "/chrome\\//i": "chrome",
+    "/chr[o0]me\\//i": "chrome",
     "/chromeframe/i": "internet explorer with chromeframe"
   },
   "generic": "chrome"

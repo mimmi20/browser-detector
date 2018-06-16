@@ -1527,10 +1527,10 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Opera Mobile",
+      "name": "Chrome",
       "modus": null,
-      "version": "1.170623.026",
-      "manufacturer": "Opera",
+      "version": "64.0.3282.137",
+      "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
     },
@@ -1574,6 +1574,222 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 4A",
+      "marketingName": "Redmi 4A",
+      "manufacturer": "XiaomiTech",
+      "brand": "XiaomiTech",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.158",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi Note 5A",
+      "marketingName": "Redmi Note 5A",
+      "manufacturer": "XiaomiTech",
+      "brand": "XiaomiTech",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "64.0.3282.137",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; MI MAX 2 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi Max 2",
+      "marketingName": "Mi Max 2",
+      "manufacturer": "XiaomiTech",
+      "brand": "XiaomiTech",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.158",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/6.4 Chrome/56.0.2924.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi Note 4",
+      "marketingName": "Redmi Note 4",
+      "manufacturer": "XiaomiTech",
+      "brand": "XiaomiTech",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "6.4.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; Mi MIX 2 Build/OPR1.170623.027) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi Mix 2",
+      "marketingName": "Mi Mix 2",
+      "manufacturer": "XiaomiTech",
+      "brand": "XiaomiTech",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 2160,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.158",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Redmi 5 Plus Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 5 Plus",
+      "marketingName": "Redmi 5 Plus",
+      "manufacturer": "XiaomiTech",
+      "brand": "XiaomiTech",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 2160,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.158",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
       "manufacturer": "Google",
       "bits": 32
     },

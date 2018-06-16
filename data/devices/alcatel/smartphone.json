@@ -1,4 +1,16 @@
 {
+  "general alcatel device": {
+    "codename": "general Alcatel Device",
+    "marketingName": "general Alcatel Device",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "alcatel 975n": {
     "codename": "975N",
     "marketingName": "Smart III",
@@ -1235,16 +1247,28 @@
     "resolutionHeight": 480,
     "dualOrientation": true
   },
-  "general alcatel device": {
-    "codename": "general Alcatel Device",
-    "marketingName": "general Alcatel Device",
+  "alcatel ot-5015d": {
+    "codename": "OT-5015D",
+    "marketingName": "One Touch Pop 3 (5)",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true
+  },
+  "alcatel ot-8020d": {
+    "codename": "OT-8020D",
+    "marketingName": "One Touch Hero Dual SIM",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
     "dualOrientation": true
   }
 }

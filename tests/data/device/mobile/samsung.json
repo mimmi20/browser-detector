@@ -38459,7 +38459,7 @@
       "pointingMethod": "touchscreen",
       "resolutionWidth": 240,
       "resolutionHeight": 400,
-      "dualOrientation": false,
+      "dualOrientation": true,
       "type": "smartphone"
     },
     "browser": {
@@ -38481,6 +38481,870 @@
       "name": "Presto",
       "version": "0.0.0",
       "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.1.1; en-US; SM-C710F Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.5.0.1109 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-C710F",
+      "marketingName": "Galaxy C7 (2017)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "12.5.0.1109",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-J710MN Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 Snapchat/10.29.0.0 (SM-J710MN; Android 6.0.1"
+    },
+    "device": {
+      "deviceName": "SM-J710MN",
+      "marketingName": "Galaxy J7 (2016, Latin America)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-J510MN Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.97 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J510MN",
+      "marketingName": "Galaxy J5 4G (2016, Latin America)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "60.0.3112.97",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; SM-A530F Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/173.0.0.62.99;]"
+    },
+    "device": {
+      "deviceName": "SM-A530F",
+      "marketingName": "Galaxy A8 (2018, Europe)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 2220,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "173.0.0.62.99",
+      "manufacturer": "Facebook",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-W708YZKAXTC  Build/LMY48Z) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-W708Y",
+      "marketingName": "Galaxy Tab Pro S (12.0, LTE)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 2160,
+      "resolutionHeight": 1440,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G532MT Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/6.4 Chrome/56.0.2924.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G532MT",
+      "marketingName": "Galaxy J2 Prime (2016)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 540,
+      "resolutionHeight": 960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "6.4.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-P580 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/6.4 Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-P580",
+      "marketingName": "Galaxy Tab A 10.1 Pro",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1920,
+      "resolutionHeight": 1080,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "6.4.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; SM-J510H Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J510H",
+      "marketingName": "Galaxy J5 3G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.158",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J730GM",
+      "marketingName": "Galaxy J7 Duos (India, 2017)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.158",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-J730G Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J730G",
+      "marketingName": "Galaxy J7 Duos (2017)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.158",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-J330G Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J330G",
+      "marketingName": "Galaxy J3 Pro (2017)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.158",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-A600FN Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/7.0 Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-A600FN",
+      "marketingName": "Galaxy A6 (2018)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1480,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-G965F/G965FXXU1ARC5 Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/7.0 Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G965F",
+      "marketingName": "Galaxy S9 Plus (Europe)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 2960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-G965U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/7.0 Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G965U",
+      "marketingName": "Galaxy S9 Plus (USA)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 2960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-G965W Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/7.0 Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G965W",
+      "marketingName": "Galaxy S9 Plus (Canada)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 2960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-G9650 Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/7.0 Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G9650",
+      "marketingName": "Galaxy S9 Plus (China, Latin America)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 2960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G960F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G960F",
+      "marketingName": "Galaxy S9 (Europe)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 2960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G960U Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G960U",
+      "marketingName": "Galaxy S9 (USA)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 2960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G960W Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G960W",
+      "marketingName": "Galaxy S9 (Canada)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 2960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G9600 Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G9600",
+      "marketingName": "Galaxy S9 (China, Latin America)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 2960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G935U Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G935U",
+      "marketingName": "Galaxy S9 (USA)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 2560,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.158",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; SM-J250F Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J250F",
+      "marketingName": "Galaxy J2 Pro",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 540,
+      "resolutionHeight": 960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-J727U Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/6.4 Chrome/56.0.2924.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J727U",
+      "marketingName": "Galaxy J7 (USA, 2017)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "6.4.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-T359/T359UVJI2 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "SGH-T359",
+      "marketingName": "Smiley",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "stylus",
+      "resolutionWidth": 240,
+      "resolutionHeight": 320,
+      "dualOrientation": false,
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
     }
   }
 ]
