@@ -658,7 +658,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ s30 /i' => 'firefly',
         '/apollo|thor/i' => 'vernee',
         '/1505\-a02|inote/i' => 'itel',
-        '/mitab think/i' => 'wolder',
+        '/mitab think|mismart wink/i' => 'wolder',
         '/pixel|glass 1/i' => 'google',
         '/909t| m13 /i' => 'mpie',
         '/z30/i' => 'magnus',
