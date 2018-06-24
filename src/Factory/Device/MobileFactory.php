@@ -395,7 +395,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/V1\d{2}|GN\d{3}/' => 'gionee',
         '/v919 3g air/i' => 'onda', // must be before acer
         '/ [aevzs]\d{3} /i' => 'acer',
-        '/AT\-AS40SE/' => 'wolgang',
+        '/AT\-AS\d{2}[DS]/' => 'wolfgang',
         '/AT1010\-T/' => 'lenovo',
         '/vk\-/i' => 'vkmobile',
         '/FP[12]/' => 'fairphone',
