@@ -401,7 +401,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/FP[12]/' => 'fairphone',
         '/le 1 pro|le 2|le max|le ?x\d{3}/i' => 'leeco',
         '/loox|uno_x10|xelio|neo_quad10|ieos_quad|sky plus|maven_10_plus|space10_plus|adm816|noon|xpress|genesis|tablet-pc-4|kinder-tablet|evolution12|mira|score_plus|pro q8 plus|rapid7lte|neo6_lte|rapid_10|maven10_hd_plus_3g|maven_x10_hd_lte/i' => 'odys',
-        '/CINK|JERRY|BLOOM|SLIDE|GETAWAY|WAX|KITE|BARRY|HIGHWAY|OZZY|RIDGE|PULP|SUNNY|FEVER|PLUS|SUNSET|FIZZ|U FEEL|ROBBY|BIRDY| GOA/' => 'wiko',
+        '/CINK|JERRY|BLOOM|SLIDE|GETAWAY|WAX|KITE|BARRY|HIGHWAY|OZZY|RIDGE|PULP|SUNNY|FEVER|PLUS|SUNSET|FIZZ|U FEEL|ROBBY|BIRDY| GOA|IGGY|JIMMY|STAIRWAY|SUBLIM/' => 'wiko',
         '/l5510|rainbow|view xl|view prime|lenny/i' => 'wiko',
         '/BQS|BQ \d{4}/' => 'bq',
         '/aquaris/i' => 'bq',
