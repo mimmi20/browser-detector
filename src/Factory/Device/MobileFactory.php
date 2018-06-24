@@ -287,6 +287,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/bluboo/i' => 'bluboo',
         '/nuclear/i' => 'nuclear',
         '/uniscope/i' => 'uniscope',
+        '/voto/i' => 'voto',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
@@ -685,6 +686,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/l900/i' => 'landvo',
         '/ k5 /i' => 'komu',
         '/ x6 /i' => 'voto',
+        '/VT\d{3}/' => 'voto',
         '/ m71 /i' => 'eplutus',
         '/ (d10|y14) /i' => 'xgody',
         '/hudl 2/i' => 'tesco',
