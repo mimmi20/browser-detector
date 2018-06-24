@@ -285,6 +285,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/sunvan/i' => 'sunvan',
         '/vollo/i' => 'vollo',
         '/bluboo/i' => 'bluboo',
+        '/nuclear/i' => 'nuclear',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
