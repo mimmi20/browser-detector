@@ -384,7 +384,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/smart tab 4|vfd \d{3}|985n/i' => 'vodafone',
         '/smart ?tab|s6000d/i' => 'lenovo',
         '/S208|S308|S550|S600|Z100 Pro|NOTE Plus/' => 'cubot',
-        '/a1000s|q1010i|q600s/i' => 'xolo',
+        '/a1000s|q10[01]0i?|q[67]00s?|omega \d/i' => 'xolo',
         '/s750/i' => 'beneve',
         '/blade/i' => 'zte',
         '/ z110/i' => 'xido',

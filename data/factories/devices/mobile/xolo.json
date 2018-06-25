@@ -1,7 +1,16 @@
 {
   "rules": {
+    "/omega[ _]5\\.5/i": "xolo omega 5.5",
+    "/omega 5\\.0/i": "xolo omega 5.0",
+    "/x1000/i": "xolo x1000",
+    "/q2000/i": "xolo q2000",
     "/q1010i/i": "xolo q1010i",
+    "/q1000s plus/i": "xolo q1000s plus",
+    "/q1000 opus/i": "xolo q1000 opus",
+    "/q800/i": "xolo q800",
+    "/q700/i": "xolo q700",
     "/q600s/i": "xolo q600s",
+    "/q600/i": "xolo q600",
     "/win q1000/i": "xolo win q1000",
     "/one/i": "xolo one",
     "/a1000s/i": "xolo a1000s"
