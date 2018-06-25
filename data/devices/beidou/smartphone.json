@@ -1,4 +1,16 @@
 {
+  "general beidou device": {
+    "codename": "general Beidou Device",
+    "marketingName": "general Beidou Device",
+    "manufacturer": "Beidou",
+    "brand": "Beidou",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "beidou la-m1": {
     "codename": "LA-M1",
     "marketingName": "Chili Pepper",
@@ -11,16 +23,16 @@
     "resolutionHeight": 960,
     "dualOrientation": true
   },
-  "general beidou device": {
-    "codename": "general Beidou Device",
-    "marketingName": "general Beidou Device",
+  "beidou la2-t": {
+    "codename": "LA2-T",
+    "marketingName": "Red Pepper",
     "manufacturer": "Beidou",
     "brand": "Beidou",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
     "dualOrientation": true
   }
 }

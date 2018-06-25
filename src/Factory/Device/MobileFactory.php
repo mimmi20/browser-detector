@@ -288,6 +288,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/nuclear/i' => 'nuclear',
         '/uniscope/i' => 'uniscope',
         '/voto/i' => 'voto',
+        '/la\-m1|la2\-t/i' => 'beidou',
+        '/yusun/i' => 'yusun',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
@@ -637,7 +639,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/a0001/i' => 'oneplus',
         '/smartpad/i' => 'einsundeins',
         '/n930|8079|5860s/i' => 'coolpad',
-        '/la\-m1/i' => 'beidou',
         '/i4901/i' => 'idea',
         '/lead [12]|t1_plus|elite [45]|shark 1/i' => 'leagoo',
         '/v1_viper|a4you|p5_quad|x2_soul|ax4nano|x1_soul/i' => 'allview',
