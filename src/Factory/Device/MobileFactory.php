@@ -291,6 +291,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/la\-m1|la2\-t/i' => 'beidou',
         '/yusun/i' => 'yusun',
         '/ytone/i' => 'ytone',
+        '/zeemi/i' => 'zeemi',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
