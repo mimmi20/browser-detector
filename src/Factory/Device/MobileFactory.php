@@ -368,7 +368,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/PM\-\d{4}/' => 'sanyo',
         '/folio_and_a|toshiba_ac_and_az|folio100/i' => 'toshiba',
         '/(?:aqua|cloud)[_ \.]/i' => 'intex',
-        '/Z221|V788D|KIS PLUS|N918St|ATLAS[_ ]W|BASE Tab|X920| V9 |OPEN[C2]|A310|NX\d{3}|Z835/' => 'zte',
+        '/A310|ATLAS[_ ]W|BASE Tab|KIS PLUS|N9101|N9180|N9520|N9521|N918St|NX\d{2,3}|OPEN[C2]| V9 |V788D|X920|Z221|Z835|Z768G|Z820/' => 'zte',
         '/lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q/i' => 'zte',
         '/ultrafone/i' => 'zen',
         '/ mt791 /i' => 'keenhigh',
