@@ -1,4 +1,16 @@
 {
+  "general allview device": {
+    "codename": "general Allview Device",
+    "marketingName": "general Allview Device",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "allview a4you": {
     "codename": "A4You",
     "marketingName": "A4 You",
@@ -83,16 +95,52 @@
     "resolutionHeight": 1920,
     "dualOrientation": true
   },
-  "general allview device": {
-    "codename": "general Allview Device",
-    "marketingName": "general Allview Device",
+  "allview a4all": {
+    "codename": "A4ALL",
+    "marketingName": "A4ALL",
     "manufacturer": "Allview",
     "brand": "Allview",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "allview p4i": {
+    "codename": "P4i",
+    "marketingName": "AllDro P4",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "allview p5 energy": {
+    "codename": "P5 Energy",
+    "marketingName": "P5 Energy",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true
+  },
+  "allview p6": {
+    "codename": "P6",
+    "marketingName": "P6",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
     "dualOrientation": true
   }
 }
