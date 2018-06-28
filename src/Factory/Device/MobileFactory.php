@@ -489,12 +489,13 @@ class MobileFactory implements DeviceFactoryInterface
         '/n8000d|n[79]100/i' => 'samsung',
         '/n003/i' => 'neo',
         '/ v1 /i' => 'maxtron',
-        '/(?:OT\-)?[4-9]0[0-7]\d[ADKMNOXY]|OT\-[89][09]\d/' => 'alcatel',
+        '/7007hd/i' => 'perfeo', // must be before alcatel
+        '/TM\-\d{4}/' => 'texet', // must be before alcatel
+        '/(?:OT\-)?[4-9]0[0-7]\d[ADFHKMNOXY]|OT\-[89][09]\d/' => 'alcatel',
         '/ W\d{3}[ )]/' => 'haier',
         '/NT\-\d{4}[SPTM]/' => 'iconbit',
         '/T[GXZ]\d{2,3}/' => 'irbis',
         '/YD\d{3}/' => 'yota',
-        '/TM\-\d{4}/' => 'texet',
         '/OK\d{3}/' => 'sunup',
         '/ACE/' => 'samsung',
         '/PX\-\d{4}/' => 'intego',
@@ -507,7 +508,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(RP|KM)\-U[DQ]M\d{2}/' => 'verico',
         '/KM\-/' => 'kttech',
         '/primo76/i' => 'msi',
-        '/x\-pad/i' => 'texet',
+        '/x\-pad|navipad/i' => 'texet', // must be before odys' visio rule
         '/visio/i' => 'odys',
         '/ g3 |p713|p509|c660|(?:ls|vm|ln)\d{3}|optimus g|l\-0\d[cde]/i' => 'lg',
         '/zera[ _]f|boost iise|ice2|prime s|explosion/i' => 'highscreen',
@@ -525,7 +526,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/N\d{4}/' => 'star',
         '/ n1 |5130c\-2|lumia|arm; 909|id336|genm14|n900/i' => 'nokia',
         '/technipad|aqipad|techniphone/i' => 'technisat', // must be before apple
-        '/navipad/i' => 'texet',
         '/medipad/i' => 'bewatec',
         '/mipad/i' => 'xiaomi',
         '/android.*iphone/i' => 'xianghe',
@@ -585,7 +585,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/mz\-| m\ds? |m\d{3}|m\d note|pro 5/i' => 'meizu',
         '/[sxz]\d{3}[ae]/i' => 'htc',
         '/(i\-style|iq) ?\d/i' => 'imobile',
-        '/7007hd/i' => 'perfeo',
         '/pt\-gf200/i' => 'pantech',
         '/k\-8s/i' => 'keener',
         '/h1\+/i' => 'hummer',
