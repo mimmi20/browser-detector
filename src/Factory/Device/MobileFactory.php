@@ -412,7 +412,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/BQS|BQ \d{4}/' => 'bq',
         '/aquaris/i' => 'bq',
         '/Pre\//' => 'hp',
-        '/ME\d{3}[A-Z]|[KP]0[0-2][0-9a-zA-Z]/' => 'asus',
+        '/ME\d{3}[A-Z]|[KPZ]0[0-2][0-9a-zA-Z]/' => 'asus',
         '/padfone|transformer|slider sl101|eee_701|tpad_10|tx201la/i' => 'asus',
         '/QtCarBrowser/' => 'teslamotors',
         '/m[bez]\d{3}/i' => 'motorola',
