@@ -629,7 +629,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/i545/i' => 'samsung',
         '/discovery/i' => 'generalmobile',
         '/t720/i' => 'motorola',
-        '/n820/i' => 'amoi',
+        '/n820|a862w/i' => 'amoi',
         '/n90 dual core2/i' => 'yuandao',
         '/tpc\-/i' => 'jaytech',
         '/ g9 /i' => 'mastone',
