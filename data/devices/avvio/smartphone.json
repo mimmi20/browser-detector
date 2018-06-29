@@ -1,4 +1,16 @@
 {
+  "general avvio device": {
+    "codename": "general Avvio Device",
+    "marketingName": "general Avvio Device",
+    "manufacturer": "Avvio",
+    "brand": "Avvio",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "avvio l500": {
     "codename": "L500",
     "marketingName": "L500",
@@ -11,16 +23,28 @@
     "resolutionHeight": 854,
     "dualOrientation": true
   },
-  "general avvio device": {
-    "codename": "general Avvio Device",
-    "marketingName": "general Avvio Device",
+  "avvio 765": {
+    "codename": "765",
+    "marketingName": "765",
     "manufacturer": "Avvio",
     "brand": "Avvio",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "avvio 775": {
+    "codename": "775",
+    "marketingName": "775",
+    "manufacturer": "Avvio",
+    "brand": "Avvio",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
     "dualOrientation": true
   }
 }
