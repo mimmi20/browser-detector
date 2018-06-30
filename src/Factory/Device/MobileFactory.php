@@ -145,7 +145,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/viewsonic/i' => 'viewsonic',
         '/view(pad|phone)/i' => 'viewsonic',
         '/wiko/i' => 'wiko',
-        '/vivo iv/i' => 'blu',
+        '/BLU/' => 'blu',
+        '/vivo (iv|4\.65)/i' => 'blu',
         '/vivo/i' => 'vivo',
         '/haipai/i' => 'haipai',
         '/megafon/i' => 'megafon',
@@ -249,7 +250,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/koridy/i' => 'koridy',
         '/kumai/i' => 'kumai',
         '/konrow/i' => 'konrow',
-        '/BLU/' => 'blu',
         '/nexus ?[45]/i' => 'lg', // must be before MTC
         '/MTC/' => 'mtc',
         '/eSTAR/' => 'estar',
