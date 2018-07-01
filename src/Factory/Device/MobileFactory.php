@@ -259,6 +259,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/UMI/' => 'umi',
         '/NTT/' => 'nttsystem',
         '/lingwin/i' => 'lingwin',
+        '/boway/i' => 'boway',
         '/sprd/i' => 'sprd',
         '/NEC\-/' => 'nec',
         '/thl[ _]/i' => 'thl',
