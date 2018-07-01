@@ -174,6 +174,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/orange/i' => 'orange',
         '/spv/i' => 'orange',
         '/mot/i' => 'motorola',
+        '/P(?:GN|HS|KT)\-?\d{3}/' => 'condor',
         '/hs\-/i' => 'hisense',
         '/beeline pro/i' => 'zte',
         '/beeline/i' => 'beeline',
@@ -353,7 +354,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/[AC]\d{5}/' => 'nomi',
         '/one e\d{4}/i' => 'oneplus',
         '/one a200[135]/i' => 'oneplus',
-        '/HS\-/' => 'hisense',
         '/f5281|u972|e621t|eg680|e2281uk/i' => 'hisense',
         '/TBD\d{4}|TBD[BCG]\d{3,4}/' => 'zeki',
         '/AC0732C|RC9724C|MT0739D|QS0716D|LC0720C|MT0812E/' => 'triq',
@@ -402,7 +402,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/titanium|machfive|sparkle v/i' => 'karbonn',
         '/a727/i' => 'azpen',
         '/(ags|a[ln]e|ath|ba[ch]|bl[an]|bnd|cam|ch[cm]|che[12]?|clt|dli|duk|eml|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|trt|vky|vtr|was|y220)\-/i' => 'huawei',
-        '/P(?:GN|KT)\-?\d{3}/' => 'condor',
         '/V1\d{2}|GN\d{3}/' => 'gionee',
         '/v919 3g air/i' => 'onda', // must be before acer
         '/a501 bright/i' => 'bravis', // must be before acer
