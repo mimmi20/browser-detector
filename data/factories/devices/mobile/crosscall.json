@@ -1,6 +1,13 @@
 {
   "rules": {
-    "/trekker\\-x1/i": "crosscall trekker-x1"
+    "/trekker\\-x1/i": "crosscall trekker-x1",
+    "/trekker\\-m1 core/i": "crosscall trekker-m1 core",
+    "/trekker\\-m1/i": "crosscall trekker-m1",
+    "/trekker\\-s1/i": "crosscall trekker-s1",
+    "/element/i": "crosscall element",
+    "/odyssey[ _]plus/i": "crosscall odyssey plus",
+    "/odyssey s1/i": "crosscall odyssey s1",
+    "/wild/i": "crosscall wild"
   },
   "generic": "general crosscall device"
 }

@@ -1,4 +1,16 @@
 {
+  "general crosscall device": {
+    "codename": "general CROSSCALL Device",
+    "marketingName": "general CROSSCALL Device",
+    "manufacturer": "CROSSCALL",
+    "brand": "CROSSCALL",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "crosscall trekker-x1": {
     "codename": "Trekker-X1",
     "marketingName": "Trekker-X1",
@@ -11,16 +23,88 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
-  "general crosscall device": {
-    "codename": "general CROSSCALL Device",
-    "marketingName": "general CROSSCALL Device",
+  "crosscall element": {
+    "codename": "Element",
+    "marketingName": "Element",
     "manufacturer": "CROSSCALL",
     "brand": "CROSSCALL",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
+    "dualOrientation": true
+  },
+  "crosscall odyssey s1": {
+    "codename": "Odyssey S1",
+    "marketingName": "Odyssey S1",
+    "manufacturer": "CROSSCALL",
+    "brand": "CROSSCALL",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "crosscall odyssey plus": {
+    "codename": "Odyssey Plus",
+    "marketingName": "Odyssey Plus",
+    "manufacturer": "CROSSCALL",
+    "brand": "CROSSCALL",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "crosscall trekker-m1": {
+    "codename": "Trekker-M1",
+    "marketingName": "Trekker-M1",
+    "manufacturer": "CROSSCALL",
+    "brand": "CROSSCALL",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
+    "dualOrientation": true
+  },
+  "crosscall trekker-m1 core": {
+    "codename": "Trekker-M1 Core",
+    "marketingName": "Trekker-M1 Core",
+    "manufacturer": "CROSSCALL",
+    "brand": "CROSSCALL",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true
+  },
+  "crosscall trekker-s1": {
+    "codename": "Trekker-S1",
+    "marketingName": "Trekker-S1",
+    "manufacturer": "CROSSCALL",
+    "brand": "CROSSCALL",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "crosscall wild": {
+    "codename": "Wild",
+    "marketingName": "Wild",
+    "manufacturer": "CROSSCALL",
+    "brand": "CROSSCALL",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
     "dualOrientation": true
   }
 }

@@ -105,6 +105,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/mobistel/i' => 'mobistel',
         '/moto/i' => 'motorola',
         '/nintendo/i' => 'nintendo',
+        '/crosscall|trekker|odyssey/i' => 'crosscall', // must be before ODYS
         '/odys/i' => 'odys',
         '/oppo/i' => 'oppo',
         '/panasonic/i' => 'panasonic',
@@ -660,7 +661,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/sirius_qs/i' => 'vonino',
         '/dl 1803/i' => 'dl',
         '/s10q\-3g/i' => 'smartbook',
-        '/trekker\-x1/i' => 'crosscall',
         '/ s30 /i' => 'firefly',
         '/apollo|thor/i' => 'vernee',
         '/1505\-a02|inote/i' => 'itel',
