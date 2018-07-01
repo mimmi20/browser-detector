@@ -295,6 +295,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/zeemi/i' => 'zeemi',
         '/bush/i' => 'bush',
         '/bird[ _\-]/i' => 'bird',
+        '/bq /i' => 'bq',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
