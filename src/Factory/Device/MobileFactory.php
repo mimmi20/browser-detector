@@ -298,6 +298,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/bush/i' => 'bush',
         '/bird[ _\-]/i' => 'bird',
         '/bq /i' => 'bq',
+        '/cherry/i' => 'cherry-mobile',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
@@ -755,6 +756,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ga10h/i' => 'gooweel',
         '/ypy_s450/i' => 'positivo',
         '/ph\-1/i' => 'essential',
+        '/flare2x/i' => 'cherry-mobile',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/kin\.two|zunehd/i' => 'microsoft',
