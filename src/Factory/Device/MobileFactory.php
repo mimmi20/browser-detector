@@ -348,7 +348,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/HM[ _](?:NOTE|1SC|1SW|1S|1)/' => 'xiaomi',
         '/WeTab/' => 'neofonie',
         '/SIE\-/' => 'siemens',
-        '/CAL21/' => 'casio',
+        '/CAL21|C771|C811/' => 'casio',
         '/g3mini/i' => 'lg',
         '/P[CG]\d{5}/' => 'htc',
         '/OK[AU]\d{1,2}/' => 'ouki',

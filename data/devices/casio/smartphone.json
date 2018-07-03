@@ -1,4 +1,16 @@
 {
+  "general casio device": {
+    "codename": "general CASIO Device",
+    "marketingName": "general CASIO Device",
+    "manufacturer": "Casio",
+    "brand": "Casio",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "casio gzone cal21": {
     "codename": "CAL21",
     "marketingName": "GzOne Type-L",
@@ -11,16 +23,28 @@
     "resolutionHeight": 800,
     "dualOrientation": true
   },
-  "general casio device": {
-    "codename": "general CASIO Device",
-    "marketingName": "general CASIO Device",
+  "casio c771": {
+    "codename": "C771",
+    "marketingName": "GzOne Commando",
     "manufacturer": "Casio",
     "brand": "Casio",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "casio c811": {
+    "codename": "C811",
+    "marketingName": "GzOne Commando",
+    "manufacturer": "Casio",
+    "brand": "Casio",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
     "dualOrientation": true
   }
 }
