@@ -476,7 +476,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/vtab1008/i' => 'vizio',
         '/tab10\-400/i' => 'yarvik',
         '/terra_101|orion7o/i' => 'goclever',
-        '/venue/i' => 'dell',
+        '/venue|xcd35/i' => 'dell',
         '/funtab|zilo/i' => 'orange',
         '/fws610_eu/i' => 'phicomm',
         '/samurai10/i' => 'shiru',
