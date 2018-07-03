@@ -1,4 +1,16 @@
 {
+  "general doogee device": {
+    "codename": "general Doogee Device",
+    "marketingName": "general Doogee Device",
+    "manufacturer": "Doogee",
+    "brand": "Doogee",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "doogee dg2014": {
     "codename": "DG2014",
     "marketingName": "Turbo",
@@ -179,16 +191,52 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
-  "general doogee device": {
-    "codename": "general Doogee Device",
-    "marketingName": "general Doogee Device",
+  "doogee dg500": {
+    "codename": "DG500",
+    "marketingName": "Discovery",
     "manufacturer": "Doogee",
     "brand": "Doogee",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
+    "dualOrientation": true
+  },
+  "doogee dg500c": {
+    "codename": "DG500C",
+    "marketingName": "Discovery 2",
+    "manufacturer": "Doogee",
+    "brand": "Doogee",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
+    "dualOrientation": true
+  },
+  "doogee dg150": {
+    "codename": "DG150",
+    "marketingName": "Titans",
+    "manufacturer": "Doogee",
+    "brand": "Doogee",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "doogee dg700": {
+    "codename": "DG700",
+    "marketingName": "Titans 2",
+    "manufacturer": "Doogee",
+    "brand": "Doogee",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
     "dualOrientation": true
   }
 }
