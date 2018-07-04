@@ -302,6 +302,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/desay/i' => 'desay',
         '/datang/i' => 'datang',
         '/doov/i' => 'doov',
+        '/EBEST/' => 'ebest',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
