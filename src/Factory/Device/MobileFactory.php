@@ -299,6 +299,9 @@ class MobileFactory implements DeviceFactoryInterface
         '/bird[ _\-]/i' => 'bird',
         '/bq /i' => 'bq',
         '/cherry/i' => 'cherry-mobile',
+        '/desay/i' => 'desay',
+        '/datang/i' => 'datang',
+        '/doov/i' => 'doov',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
