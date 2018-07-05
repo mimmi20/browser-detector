@@ -331,7 +331,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/\d{3}SH|SH\-?\d{2,4}[CDEFUW]/' => 'sharp',
         '/m[\-_][mp]p/i' => 'mediacom',
         '/p900i/i' => 'docomo',
-        '/easypad|junior 4\.0/i' => 'easypix',
+        '/easypad|easyphone|junior 4\.0/i' => 'easypix',
         '/smart\-e5/i' => 'efox',
         '/telepad/i' => 'xoro',
         '/slidepad/i' => 'memup',
