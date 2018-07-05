@@ -304,6 +304,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/doov/i' => 'doov',
         '/EBEST/' => 'ebest',
         '/ETON/' => 'eton',
+        '/evolveo/i' => 'evolveo',
         // @todo: general rules
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
