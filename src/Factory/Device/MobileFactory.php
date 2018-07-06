@@ -527,7 +527,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/iris708/i' => 'ais',
         '/l930/i' => 'ciotcud',
         '/x8\+/i' => 'triray',
-        '/surfer 7\.34|m1_plus|d7\.2 3g|rioplay|art 3g/i' => 'explay',
+        '/surfer 7\.34|m1_plus|d7\.2 3g|rioplay|art 3g|atlant/i' => 'explay',
         '/pmsmart450/i' => 'pmedia',
         '/f031|n900\+|sc[lt]2\d|isw11sc|s7562|sghi\d{3}|i8910/i' => 'samsung',
         '/auxus/i' => 'iberry',
