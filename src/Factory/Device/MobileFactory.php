@@ -483,7 +483,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/phoenix 2/i' => 'fly',
         '/vtab1008/i' => 'vizio',
         '/tab10\-400/i' => 'yarvik',
-        '/terra_101|orion7o/i' => 'goclever',
+        '/terra_101|orion7o|aries|insignia|quantum/i' => 'goclever',
         '/venue|xcd35/i' => 'dell',
         '/funtab|zilo/i' => 'orange',
         '/fws610_eu/i' => 'phicomm',
