@@ -349,6 +349,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/cynus/i' => 'mobistel',
         '/DARK(?:MOON|SIDE|NIGHT|FULL)/' => 'wiko',
         '/ARK/' => 'ark',
+        '/Ever(Classic|Glory|Magic|Mellow|Miracle|Shine|Smart|Star|Trendy)/' => 'evertek',
         '/Magic/' => 'magic',
         '/M[Ii][ -](?:\d|PAD|M[AI]X|NOTE|A1|1S|3|ONE)/' => 'xiaomi',
         '/HM[ _](?:NOTE|1SC|1SW|1S|1)/' => 'xiaomi',
