@@ -731,7 +731,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/shift[457]/i' => 'shift',
         '/k960/i' => 'jlinksz',
         '/q8002/i' => 'crypto',
-        '/i\-call|elektra l/i' => 'ijoy',
+        '/i\-call|elektra l|neon[79]/i' => 'ijoy',
         '/ektra/i' => 'kodak',
         '/kt107/i' => 'bdf',
         '/m52_red_note/i' => 'mlais',
