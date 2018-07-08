@@ -686,7 +686,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ t02 /i' => 'changhong',
         '/crown| r6 | a8 |alife [ps]1|omega_pro/i' => 'blackview',
         '/london|hammer_s|z2 pro/i' => 'umi',
-        '/elegance|slimtab7_3gr/i' => 'kiano',
+        '/elegance|intelect|cavion|slim ?tab ?(7|8|10)|core 10\.1 dual 3g/i' => 'kiano',
         '/vi8 plus|hibook|hi10 pro/i' => 'chuwi',
         '/jy\-/i' => 'jiayu',
         '/ m10 |edison 3/i' => 'bq',
