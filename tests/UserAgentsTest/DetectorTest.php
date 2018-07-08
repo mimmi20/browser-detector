@@ -82,6 +82,7 @@ class DetectorTest extends TestCase
      * @param Result $expectedResult
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return void
      */
