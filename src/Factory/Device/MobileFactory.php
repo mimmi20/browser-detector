@@ -762,6 +762,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ph\-1/i' => 'essential',
         '/flare2x/i' => 'cherry-mobile',
         '/tc970/i' => 'lepan',
+        '/mfc[0-9]{3}[a-z]{2,}/i' => 'lexibook',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/kin\.two|zunehd/i' => 'microsoft',
