@@ -415,6 +415,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/V1\d{2}|GN\d{3}/' => 'gionee',
         '/v919 3g air/i' => 'onda', // must be before acer
         '/a501 bright/i' => 'bravis', // must be before acer
+        '/tm785m3/i' => 'nuvision',
+        '/m785|800p71d|800p3[12]c|101p51c|x1010|a1013r|s10\-0g/i' => 'mecer', // must be before acer
         '/ [aevzs]\d{3} /i' => 'acer',
         '/AT\-AS\d{2}[DS]/' => 'wolfgang',
         '/AT1010\-T/' => 'lenovo',
@@ -561,7 +563,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/gv7777/i' => 'prestigio',
         '/9930i/i' => 'star',
         '/m717r\-hd/i' => 'vastking',
-        '/tm785m3/i' => 'nuvision',
         '/m502/i' => 'navon',
         '/lencm900hz/i' => 'lenco',
         '/xm[13]00/i' => 'landvo',
