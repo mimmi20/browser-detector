@@ -471,7 +471,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(?:IQ|FS)\d{3,4}/' => 'fly',
         '/RMD\-\d{3,4}/' => 'ritmix',
         '/AX\d{3}/' => 'bmobile',
-        '/freetab \d{4}|xino/i' => 'modecom',
+        '/free(way )?tab|xino z[\d]+ x[\d]+/i' => 'modecom',
         '/OV\-|Solution 7III/' => 'overmax',
         '/MID\d{3}/' => 'manta',
         '/FX2/' => 'faktorzwei',
