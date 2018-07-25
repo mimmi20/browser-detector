@@ -328,7 +328,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(?<!\/)MID713|MID(06[SN]|08[S]?|12|13|14|15|701|702|703|704|705(DC)?|706[AS]?|707|708|709|711|712|714|717|781|801|802|901|1001|1002|1003|1004( 3G)?|1005|1009|1010|7802|9701|9702)/' => 'manta',
         '/P[AS]P|PM[PT]/' => 'prestigio',
         '/smartpad7503g|smartpad970s2(3g)?|m[_\-][mp]p[0-9a-z]+|m\-ipro[0-9a-z]+/i' => 'mediacom',
-        '/(mpqc|mpdc)\d{3,4}|ph\d{3}|mid(7c|74c|82c|84c|801|811|701|711|170|77c|43c|102c|103c|104c|114c)|mp(843|717|718|843|888|959|969|1010|7007|7008)|mgp7/i' => 'mpman',
+        '/(mpqc|mpdc)\d{1,4}|ph\d{3}|mid(7c|74c|82c|84c|801|811|701|711|170|77c|43c|102c|103c|104c|114c)|mp(843|717|718|843|888|959|969|1010|7007|7008)|mgp7/i' => 'mpman',
         '/nbpc724/i' => 'coby',
         '/wtdr1018/i' => 'comag',
         '/ziilabs|ziio7/i' => 'creative',
