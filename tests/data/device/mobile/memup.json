@@ -1,11 +1,11 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; fr-fr; Slidepad Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; fr-fr; SlidePad Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "Slidepad",
-      "marketingName": "Slidepad",
+      "deviceName": "SlidePad",
+      "marketingName": "SlidePad",
       "manufacturer": "Memup",
       "brand": "Memup",
       "pointingMethod": "touchscreen",
@@ -40,8 +40,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; fr-fr; SlidePad704CE Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "Slidepad 704CE",
-      "marketingName": "Slidepad 704CE",
+      "deviceName": "SP704CE",
+      "marketingName": "SlidePad 704CE",
       "manufacturer": "Memup",
       "brand": "Memup",
       "pointingMethod": "touchscreen",
@@ -62,6 +62,438 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; SlidePad 104 Build/JRO03H) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Safari/537.31 OPR/14.0.1074.58201"
+    },
+    "device": {
+      "deviceName": "SlidePad 104",
+      "marketingName": "SlidePad 104",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "14.0.1074.58201",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; fr-fr; SlidePad 108 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SlidePad 108",
+      "marketingName": "SlidePad 108",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; fr-fr; SP704C Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SP704C",
+      "marketingName": "SlidePad 704C",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 800,
+      "resolutionHeight": 480,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; fr-fr; SP704CE Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SP704CE",
+      "marketingName": "SlidePad 704CE",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 800,
+      "resolutionHeight": 480,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; fr-be; SlidePad704CE Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 GSA/3.1.24.941712.arm"
+    },
+    "device": {
+      "deviceName": "SP704CE",
+      "marketingName": "SlidePad 704CE",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 800,
+      "resolutionHeight": 480,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "3.1.24.941712",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; fr-fr; SlidePad 816P Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SP816P",
+      "marketingName": "SlidePad 816P",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SlidePad Elite 9708 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36 OPR/21.0.1437.74904"
+    },
+    "device": {
+      "deviceName": "SlidePad Elite 9708",
+      "marketingName": "SlidePad Elite 9708",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "21.0.1437.74904",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; SlidePad Kids Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Mobile Safari/537.36 OPR/21.0.1437.74904"
+    },
+    "device": {
+      "deviceName": "SlidePad Kids",
+      "marketingName": "SlidePad Kids",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 800,
+      "resolutionHeight": 480,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "21.0.1437.74904",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; fr-fr; SPNG708 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SPNG708",
+      "marketingName": "SlidePad NG 708",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 800,
+      "resolutionHeight": 480,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; fr-fr; SPNG808 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SPNG808",
+      "marketingName": "SlidePad NG 808",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 800,
+      "resolutionHeight": 600,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; fr-fr; SPNG9708 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SPNG9708",
+      "marketingName": "SlidePad NG 9708",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 768,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; SPNG9716DC Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SPNG9716DC",
+      "marketingName": "SlidePad NG 9716DC",
+      "manufacturer": "Memup",
+      "brand": "Memup",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 768,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
       "manufacturer": "Google",
       "bits": 32
     },

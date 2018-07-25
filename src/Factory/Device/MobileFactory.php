@@ -339,7 +339,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/easypad|easyphone|junior 4\.0/i' => 'easypix',
         '/smart\-e5/i' => 'efox',
         '/telepad/i' => 'xoro',
-        '/slidepad/i' => 'memup',
+        '/SlidePad|SP\d{3}|SPNG\d{3}/' => 'memup',
         '/epad|p7901a/i' => 'zenithink',
         '/p7mini/i' => 'huawei',
         '/m532|m305|f\-0\d[def]/i' => 'fujitsu',
