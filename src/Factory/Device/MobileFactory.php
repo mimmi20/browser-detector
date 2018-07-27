@@ -20,12 +20,13 @@ class MobileFactory implements DeviceFactoryInterface
 {
     private $factories = [
         // @todo: rules with company name in UA
+        '/startrail|starxtrem|starshine|staraddict|starnaute|startext/i' => 'sfr',
+        '/HTC|Sprint (?:APA|ATP)|ADR(?!910L)[a-z0-9]+|NexusHD2|Amaze[ _]4G[);\/ ]|(Desire|Sensation|Evo ?3D|IncredibleS|Wildfire|Butterfly)[ _]?([^;\/]+) Build|(Amaze[ _]4G|One ?[XELSV\+]+)[);\/ ]|SPV E6[05]0|One M8|X525a|PG86100|PC36100|XV6975|PJ83100[);\/ ]|2PYB2|0PJA10/' => 'htc',
         '/hiphone/i' => 'hiphone',
         '/technisat/i' => 'technisat',
         '/samsung[is \-;\/]|gt\-i8750/i' => 'samsung',
         '/nokia/i' => 'nokia',
         '/blackberry/i' => 'rim',
-        '/HTC/' => 'htc',
         '/asus/i' => 'asus',
         '/feiteng/i' => 'feiteng',
         '/myphone|cube_lte/i' => 'myphone', // must be before Cube
@@ -36,8 +37,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/sony/i' => 'sony',
         '/accent/i' => 'accent',
         '/lenovo/i' => 'lenovo',
-        '/sfr/i' => 'sfr',
-        '/startrail|starxtrem|starshine|staraddict|starnaute|startext/i' => 'sfr', // must be before ZTE
         '/zte|racer/i' => 'zte',
         '/acer|da241hl/i' => 'acer',
         '/amazon/i' => 'amazon',
@@ -386,7 +385,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/folio_and_a|toshiba_ac_and_az|folio100/i' => 'toshiba',
         '/(aqua|cloud)[_ \.]/i' => 'intex',
         '/bv[5-8]000/i' => 'blackview',
-        '/XELIO_NEXT/' => 'odys',
+        '/XELIO_NEXT|(MAVEN|SPACE|TAO|THOR)_?X?10/' => 'odys',
         '/NEXT|Next\d|DATAM803HC|NX785QC8G|NXM900MC|NX008HD8G|NX010HI8G|NXM908HC|NXM726/' => 'nextbook',
         '/A310|ATLAS[_ ]W|BASE Tab|KIS PLUS|N9101|N9180|N9510|N9515|N9520|N9521|N9810|N918St|N958St|NX\d{2,3}|OPEN[C2]|U9180| V9 |V788D|V8000|V9180|X501|X920|Z221|Z835|Z768G|Z820|Z981/' => 'zte',
         '/lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q/i' => 'zte',
@@ -474,7 +473,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/RMD\-\d{3,4}/' => 'ritmix',
         '/AX\d{3}/' => 'bmobile',
         '/free(way )?tab|xino z[\d]+ x[\d]+/i' => 'modecom',
-        '/OV\-|Solution 7III/' => 'overmax',
+        '/OV\-|Solution 7III|Qualcore 1010/' => 'overmax',
         '/FX2/' => 'faktorzwei',
         '/AN\d{1,2}|ARCHM\d{3}/' => 'arnova',
         '/POV|TAB\-PROTAB|MOB\-5045/' => 'pointofview',

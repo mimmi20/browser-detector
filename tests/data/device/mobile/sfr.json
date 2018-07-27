@@ -150,7 +150,7 @@
     "device": {
       "deviceName": "Starshine 2",
       "marketingName": "Starshine 2",
-      "manufacturer": "SFR",
+      "manufacturer": "Zte",
       "brand": "SFR",
       "pointingMethod": "touchscreen",
       "resolutionWidth": 320,
@@ -186,7 +186,7 @@
     "device": {
       "deviceName": "StarTrail",
       "marketingName": "StarTrail",
-      "manufacturer": "SFR",
+      "manufacturer": "Zte",
       "brand": "SFR",
       "pointingMethod": "touchscreen",
       "resolutionWidth": 480,
@@ -258,7 +258,7 @@
     "device": {
       "deviceName": "StarAddict",
       "marketingName": "StarAddict",
-      "manufacturer": "SFR",
+      "manufacturer": "Zte",
       "brand": "SFR",
       "pointingMethod": "touchscreen",
       "resolutionWidth": 480,
@@ -294,7 +294,7 @@
     "device": {
       "deviceName": "StarAddict 2",
       "marketingName": "StarAddict 2",
-      "manufacturer": "Zte",
+      "manufacturer": "Alcatel",
       "brand": "SFR",
       "pointingMethod": "touchscreen",
       "resolutionWidth": 540,
@@ -330,7 +330,7 @@
     "device": {
       "deviceName": "StarAddict 2 Plus",
       "marketingName": "StarAddict 2 Plus",
-      "manufacturer": "SFR",
+      "manufacturer": "Zte",
       "brand": "SFR",
       "pointingMethod": "touchscreen",
       "resolutionWidth": 540,
@@ -366,7 +366,7 @@
     "device": {
       "deviceName": "Starnaute",
       "marketingName": "Starnaute",
-      "manufacturer": "SFR",
+      "manufacturer": "Zte",
       "brand": "SFR",
       "pointingMethod": "touchscreen",
       "resolutionWidth": 320,
@@ -402,7 +402,7 @@
     "device": {
       "deviceName": "Starnaute 2",
       "marketingName": "Starnaute 2",
-      "manufacturer": "SFR",
+      "manufacturer": "Zte",
       "brand": "SFR",
       "pointingMethod": "touchscreen",
       "resolutionWidth": 320,
@@ -438,7 +438,7 @@
     "device": {
       "deviceName": "StarText",
       "marketingName": "StarText",
-      "manufacturer": "SFR",
+      "manufacturer": "Zte",
       "brand": "SFR",
       "pointingMethod": "touchscreen",
       "resolutionWidth": 320,
@@ -474,7 +474,7 @@
     "device": {
       "deviceName": "StarText 2",
       "marketingName": "StarText 2",
-      "manufacturer": "SFR",
+      "manufacturer": "Zte",
       "brand": "SFR",
       "pointingMethod": "touchscreen",
       "resolutionWidth": 240,
@@ -537,6 +537,258 @@
       "name": "WebKit",
       "version": "534.30.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; STARADDICT 6 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "StarAddict 6",
+      "marketingName": "StarAddict 6",
+      "manufacturer": "Hisense",
+      "brand": "Altice",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "59.0.3071.125",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; STARSHINE III Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Starshine 3",
+      "marketingName": "Starshine 3",
+      "manufacturer": "Hisense",
+      "brand": "SFR",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 480,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "28.0.1500.94",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.3; STARXTREM II Build/JLS36C)"
+    },
+    "device": {
+      "deviceName": "StarXtrem 2",
+      "marketingName": "StarXtrem 2",
+      "manufacturer": "Alcatel",
+      "brand": "SFR",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; STARADDICT 4 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "StarAddict 4",
+      "marketingName": "StarAddict 4",
+      "manufacturer": "Zte",
+      "brand": "SFR",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "40.0.2214.109",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; fr-fr; STARADDICT III Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 SWV/082.27SFR [FB_IAB/FB4A;FBAV/28.0.0.20.16;]"
+    },
+    "device": {
+      "deviceName": "StarAddict 3",
+      "marketingName": "StarAddict 3",
+      "manufacturer": "Coolpad",
+      "brand": "SFR",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 540,
+      "resolutionHeight": 960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "28.0.0.20.16",
+      "manufacturer": "Facebook",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; fr-fr; STARTRAIL III Build/JLS36C) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "StarTrail 3",
+      "marketingName": "StarTrail 3",
+      "manufacturer": "Zte",
+      "brand": "SFR",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 320,
+      "resolutionHeight": 480,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; StarTrail TT Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "StarTrail by TT",
+      "marketingName": "StarTrail by TT",
+      "manufacturer": "Zte",
+      "brand": "Tunisie Telecom",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 320,
+      "resolutionHeight": 480,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "34.0.1847.114",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
     }
   }
 ]

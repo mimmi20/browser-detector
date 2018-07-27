@@ -148,8 +148,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SPACE10_PLUS_3G Build/LMY48G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
     },
     "device": {
-      "deviceName": "Space 10 Plus 3G",
-      "marketingName": "Space 10 Plus 3G",
+      "deviceName": "Space 10 plus 3G",
+      "marketingName": "Space 10 plus 3G",
       "manufacturer": "Odys",
       "brand": "Odys",
       "pointingMethod": "touchscreen",
@@ -544,8 +544,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ru; Sky Plus Build/IMM76D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.8.0.435 U3/0.8.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "Sky Plus 3G",
-      "marketingName": "Sky Plus 3G",
+      "deviceName": "Sky plus 3G",
+      "marketingName": "Sky plus 3G",
       "manufacturer": "Odys",
       "brand": "Odys",
       "pointingMethod": "touchscreen",
@@ -1084,8 +1084,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; XELIO_NEXT_10 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Safari/537.36"
     },
     "device": {
-      "deviceName": "XELIO NEXT 10",
-      "marketingName": "XELIO NEXT 10",
+      "deviceName": "Xelio Next 10",
+      "marketingName": "Xelio Next 10",
       "manufacturer": "Odys",
       "brand": "Odys",
       "pointingMethod": "touchscreen",
@@ -1120,8 +1120,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; CONNECT8PLUS Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
     },
     "device": {
-      "deviceName": "Connect 8 Plus 3G",
-      "marketingName": "Connect 8 Plus 3G",
+      "deviceName": "Connect 8 plus 3G",
+      "marketingName": "Connect 8 plus 3G",
       "manufacturer": "Odys",
       "brand": "Odys",
       "pointingMethod": "touchscreen",
@@ -1156,8 +1156,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SCORE_PLUS_3G Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
     },
     "device": {
-      "deviceName": "Score Plus 3G",
-      "marketingName": "Score Plus 3G",
+      "deviceName": "Score plus 3G",
+      "marketingName": "Score plus 3G",
       "manufacturer": "Odys",
       "brand": "Odys",
       "pointingMethod": "touchscreen",
@@ -1192,8 +1192,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; PRO Q8 PLUS Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
     },
     "device": {
-      "deviceName": "Pro Q8 Plus",
-      "marketingName": "Pro Q8 Plus",
+      "deviceName": "Pro Q8 plus",
+      "marketingName": "Pro Q8 plus",
       "manufacturer": "Odys",
       "brand": "Odys",
       "pointingMethod": "touchscreen",
@@ -1444,8 +1444,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; MAVEN10_HD_PLUS_3G Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Safari/537.36"
     },
     "device": {
-      "deviceName": "Maven 10 Pro plus 3G",
-      "marketingName": "Maven 10 Pro plus 3G",
+      "deviceName": "Maven 10 HD plus 3G",
+      "marketingName": "Maven 10 HD plus 3G",
       "manufacturer": "Odys",
       "brand": "Odys",
       "pointingMethod": "touchscreen",
@@ -1502,6 +1502,366 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; MAVEN10_HD Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Maven 10 HD",
+      "marketingName": "Maven 10 HD",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1280,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; MAVEN_10_PRO Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Maven 10 Pro",
+      "marketingName": "Maven 10 Pro",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 600,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SPACE10_PRO_3G Build/LMY48G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Space 10 Pro 3G",
+      "marketingName": "Space 10 Pro 3G",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 600,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; TAO_X10 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "Tao X10",
+      "marketingName": "Tao X10",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 600,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; THOR_10 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Thor 10",
+      "marketingName": "Thor 10",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1280,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; THOR10 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Thor 10",
+      "marketingName": "Thor 10",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1280,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "60.0.3112.78",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; THOR_10_PLUS_3G Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Thor 10 plus 3G",
+      "marketingName": "Thor 10 plus 3G",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1280,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; XELIO10_PLUS_3G Build/LMY48G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Xelio 10 plus 3G",
+      "marketingName": "Xelio 10 plus 3G",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 600,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; XELIO_NEXT_10_PLUS_3G Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Xelio Next 10 plus 3G",
+      "marketingName": "Xelio Next 10 plus 3G",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 600,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; XELIOPHONETAB3 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Xelio PhoneTab 3",
+      "marketingName": "Xelio PhoneTab 3",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
       "manufacturer": "Google",
       "bits": 32
     },
