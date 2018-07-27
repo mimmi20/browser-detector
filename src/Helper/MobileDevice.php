@@ -204,6 +204,7 @@ class MobileDevice
             'lenovotablet',
             'remixos',
             'micromax',
+            'steelcore',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {
