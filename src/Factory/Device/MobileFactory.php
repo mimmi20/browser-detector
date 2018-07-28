@@ -19,9 +19,9 @@ use Psr\Log\LoggerInterface;
 class MobileFactory implements DeviceFactoryInterface
 {
     private $factories = [
-        // @todo: rules with company name in UA
         '/startrail|starxtrem|starshine|staraddict|starnaute|startext/i' => 'sfr',
         '/HTC|Sprint (?:APA|ATP)|ADR(?!910L)[a-z0-9]+|NexusHD2|Amaze[ _]4G[);\/ ]|(Desire|Sensation|Evo ?3D|IncredibleS|Wildfire|Butterfly)[ _]?([^;\/]+) Build|(Amaze[ _]4G|One ?[XELSV\+]+)[);\/ ]|SPV E6[05]0|One M8|X525a|PG86100|PC36100|XV6975|PJ83100[);\/ ]|2PYB2|0PJA10/' => 'htc',
+        // @todo: rules with company name in UA
         '/hiphone/i' => 'hiphone',
         '/technisat/i' => 'technisat',
         '/samsung[is \-;\/]|gt\-i8750/i' => 'samsung',
@@ -467,6 +467,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/iq1055/i' => 'mls',
         '/BIGCOOL|COOLFIVE|COOL\-K|Just5|LINK5/' => 'konrow',
         '/v1_viper|a4you|p5_quad|x2_soul|ax4nano|x1_soul|p5_energy/i' => 'allview',
+        '/PLT([^;\/]+) Build/' => 'proscan',
         '/[SLWM]T\d{2}|[SM]K\d{2}|SO\-\d{2}[BCDEFG]/' => 'sony',
         '/l\d{2}u/i' => 'sony',
         '/(IQ|FS)\d{3,4}/' => 'fly',
