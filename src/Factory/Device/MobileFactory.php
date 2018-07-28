@@ -19,7 +19,7 @@ use Psr\Log\LoggerInterface;
 class MobileFactory implements DeviceFactoryInterface
 {
     private $factories = [
-        '/startrail|starxtrem|starshine|staraddict|starnaute|startext/i' => 'sfr',
+        '/startrail|starxtrem|starshine|staraddict|starnaute|startext/i' => 'sfr', // also includes the 'Tunisie Telecom' and the 'Altice' branded devices
         '/HTC|Sprint (?:APA|ATP)|ADR(?!910L)[a-z0-9]+|NexusHD2|Amaze[ _]4G[);\/ ]|(Desire|Sensation|Evo ?3D|IncredibleS|Wildfire|Butterfly)[ _]?([^;\/]+) Build|(Amaze[ _]4G|One ?[XELSV\+]+)[);\/ ]|SPV E6[05]0|One M8|X525a|PG86100|PC36100|XV6975|PJ83100[);\/ ]|2PYB2|0PJA10/' => 'htc',
         // @todo: rules with company name in UA
         '/hiphone/i' => 'hiphone',
@@ -193,8 +193,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/tcl/i' => 'tcl',
         '/radxa/i' => 'radxa',
         '/xolo/i' => 'xolo',
-        '/rm\-(997|560)/i' => 'rossmoor',
-        '/RM\-\d{3,4}|TA\-\d{4}/' => 'nokia',
         '/dragon touch/i' => 'dragontouch',
         '/ramos/i' => 'ramos',
         '/woxter/i' => 'woxter',
@@ -305,6 +303,12 @@ class MobileFactory implements DeviceFactoryInterface
         '/ETON/' => 'eton',
         '/evolveo/i' => 'evolveo',
         // @todo: general rules
+        '/auxus/i' => 'iberry',
+        '/lumia|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|symbian.*\s([a-z0-9]+)$|rx-51 n900|rm-(1031|104[25]|106[234567]|107[234567]|1089|109[029]|1109|111[34]|1127|1141|1154)|ta-[0-9]{4} build|(adr|android) 5\.[01].* n1|5130c\-2|arm; 909|id336|genm14/i' => 'nokia', // also includes the 'Microsoft' branded Lumia devices,
+        '/(adr|android) 4\.4.* n1/i' => 'newsman',
+        '/(adr|android) 4\.2.* n1/i' => 'oppo',
+        '/(adr|android) 4\.0.* n1/i' => 'tizzbird',
+        '/rm\-(997|560)/i' => 'rossmoor',
         '/u30gt|u55gt/i' => 'cube',
         '/gtx75/i' => 'utstarcom',
         '/galaxy s3 ex/i' => 'hdc',
@@ -538,13 +542,11 @@ class MobileFactory implements DeviceFactoryInterface
         '/surfer 7\.34|m1_plus|d7\.2 3g|rioplay|art 3g|atlant/i' => 'explay',
         '/pmsmart450/i' => 'pmedia',
         '/f031|n900\+|sc[lt]2\d|isw11sc|s7562|sghi\d{3}|i8910/i' => 'samsung',
-        '/auxus/i' => 'iberry',
         '/iusai/i' => 'opsson',
         '/netbox| x10 | e1[05]i| x2 |r800x|s500i|x1i|x10i|[ls]39h|h3213|h3311|h8216|h8324|ebrd\d{4}/i' => 'sony',
         '/PROV?\d{3}[B\d]?/' => 'polaroid',
         '/x90\d{1,2}|n52\d{2}|r[12678]\d{2,3}|u70\dt|find7|a3[37]f|r7[ks]?f|r7plusf| 1201 |n1t/i' => 'oppo',
         '/N\d{4}/' => 'star',
-        '/ n1 |5130c\-2|lumia|arm; 909|id336|genm14|n900/i' => 'nokia',
         '/technipad|aqipad|techniphone/i' => 'technisat', // must be before apple
         '/medipad/i' => 'bewatec',
         '/mipad/i' => 'xiaomi',
@@ -771,8 +773,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/MyPad|[Mm]yTab/' => 'myphone',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
-        '/kin\.two|zunehd/i' => 'microsoft',
-        '/Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
+        '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
     ];
 
     /**
