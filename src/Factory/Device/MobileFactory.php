@@ -752,7 +752,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ Presto /' => 'oplus',
         '/crono/i' => 'majestic',
         '/NS\d{1,4}/' => 'nous',
-        '/monster x5/i' => 'pentagram',
+        '/monster x5|quadra 7 ultraslim/i' => 'pentagram',
         '/F1\d/' => 'pulid',
         '/q\-smart/i' => 'qmobile',
         '/element p501/i' => 'sencor',
