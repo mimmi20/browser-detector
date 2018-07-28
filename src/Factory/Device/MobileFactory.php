@@ -323,6 +323,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/playbook|rim tablet|bb10|stv100|bb[ab]100\-2|sth100\-2|bbd100\-1/i' => 'rim',
         '/b15/i' => 'caterpillar',
         '/cat ?(nova|stargate|tablet|helix)/i' => 'catsound',
+        '/MID0714|MIDC|PMID/' => 'polaroid',
         '/MID(1024|1125|1126|1045|1048|1060|1065|4331|7012|7015A?|7016|7022|7032|7035|7036|7042|7047|7048|7052|7065|7120|8024|8042|8048|8065|8125|8127|8128|9724|9740|9742)/' => 'coby',
         '/(?<!\/)MID713|MID(06[SN]|08[S]?|12|13|14|15|701|702|703|704|705(DC)?|706[AS]?|707|708|709|711|712|714|717|781|801|802|901|1001|1002|1003|1004( 3G)?|1005|1009|1010|7802|9701|9702)/' => 'manta',
         '/P[AS]P|PM[PT]/' => 'prestigio',
