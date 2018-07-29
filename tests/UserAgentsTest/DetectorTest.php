@@ -37,6 +37,8 @@ class DetectorTest extends TestCase
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
+     * @throws \ReflectionException
+     *
      * @return void
      */
     protected function setUp(): void
@@ -72,7 +74,11 @@ class DetectorTest extends TestCase
         /** @var NullLogger $logger */
         $factory = new DetectorFactory($cache, $logger);
 
-        $this->object = $factory();
+        $object = $factory();
+        $prop   = new \ReflectionProperty($object, 'logger');
+        $prop->setAccessible(true);
+        $prop->setValue($object, $logger);
+        $this->object = $object;
     }
 
     /**
@@ -82,6 +88,7 @@ class DetectorTest extends TestCase
      * @param Result $expectedResult
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return void
      */

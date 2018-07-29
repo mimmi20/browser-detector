@@ -68,6 +68,7 @@ class DeviceFactory implements DeviceFactoryInterface
      * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return array
      */

@@ -1,4 +1,16 @@
 {
+  "general evolveo device": {
+    "codename": "general Evolveo Device",
+    "marketingName": "general Evolveo Device",
+    "manufacturer": "Evolveo",
+    "brand": "Evolveo",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "evolveo strongphone q4": {
     "codename": "StrongPhone Q4",
     "marketingName": "StrongPhone Q4",
@@ -11,16 +23,52 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
-  "general evolveo device": {
-    "codename": "general Evolveo Device",
-    "marketingName": "general Evolveo Device",
+  "evolveo strongphone g4": {
+    "codename": "StrongPhone G4",
+    "marketingName": "StrongPhone G4",
     "manufacturer": "Evolveo",
     "brand": "Evolveo",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "evolveo strongphone q7": {
+    "codename": "StrongPhone Q7",
+    "marketingName": "StrongPhone Q7",
+    "manufacturer": "Evolveo",
+    "brand": "Evolveo",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "evolveo strongphone q8": {
+    "codename": "StrongPhone Q8",
+    "marketingName": "StrongPhone Q8",
+    "manufacturer": "Evolveo",
+    "brand": "Evolveo",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "evolveo xtraphone 4.5 q4": {
+    "codename": "XtraPhone 4.5 Q4",
+    "marketingName": "XtraPhone 4.5 Q4",
+    "manufacturer": "Evolveo",
+    "brand": "Evolveo",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
     "dualOrientation": true
   }
 }

@@ -1,4 +1,16 @@
 {
+  "general amazon device": {
+    "codename": "general Amazon Device",
+    "marketingName": "general Amazon Device",
+    "manufacturer": "Amazon",
+    "brand": "Amazon",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "amazon d01400": {
     "codename": "D01400",
     "marketingName": "Kindle Fire",
@@ -215,16 +227,28 @@
     "resolutionHeight": 600,
     "dualOrientation": true
   },
-  "general amazon device": {
-    "codename": "general Amazon Device",
-    "marketingName": "general Amazon Device",
+  "amazon tate": {
+    "codename": "Tate",
+    "marketingName": "Tate",
     "manufacturer": "Amazon",
     "brand": "Amazon",
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "amazon jem": {
+    "codename": "Jem",
+    "marketingName": "Kindle Fire HD 7",
+    "manufacturer": "Amazon",
+    "brand": "Amazon",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
     "dualOrientation": true
   }
 }

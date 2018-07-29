@@ -1,8 +1,17 @@
 {
   "rules": {
     "/a400/i": "celkon a400",
+    "/a125/i": "celkon a125",
+    "/a119q/i": "celkon a119q",
+    "/a86/i": "celkon a86",
+    "/a66/i": "celkon a66",
+    "/a_?63/i": "celkon a63",
     "/a9 dual/i": "celkon a9 dual",
-    "/a15/i": "celkon a15"
+    "/a9\\+/i": "celkon a9+",
+    "/a15/i": "celkon a15",
+    "/a10/i": "celkon a10",
+    "/a\\.r 40/i": "celkon a.r 40",
+    "/c64/i": "celkon c64"
   },
   "generic": "general celkon device"
 }

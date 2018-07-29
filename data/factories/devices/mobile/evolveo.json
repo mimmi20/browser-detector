@@ -1,6 +1,10 @@
 {
   "rules": {
-    "/strongphoneq4/i": "evolveo strongphone q4"
+    "/strongphone[_ ]q8/i": "evolveo strongphone q8",
+    "/strongphone[_ ]q7/i": "evolveo strongphone q7",
+    "/strongphoneq4/i": "evolveo strongphone q4",
+    "/strongphone[_ ]g4/i": "evolveo strongphone g4",
+    "/xtraphone[_ ]4\\.5[_ ]q4/i": "evolveo xtraphone 4.5 q4"
   },
   "generic": "general evolveo device"
 }

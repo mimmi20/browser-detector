@@ -1,4 +1,16 @@
 {
+  "general acer device": {
+    "codename": "general Acer Device",
+    "marketingName": "general Acer Device",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "platform": null,
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "acer allegro": {
     "codename": "Allegro",
     "marketingName": "Allegro",
@@ -323,16 +335,76 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
-  "general acer device": {
-    "codename": "general Acer Device",
-    "marketingName": "general Acer Device",
+  "acer v360": {
+    "codename": "V360",
+    "marketingName": "Liquid E1 Duo",
     "manufacturer": "Acer",
     "brand": "Acer",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
+    "dualOrientation": true
+  },
+  "acer e700": {
+    "codename": "E700",
+    "marketingName": "Liquid E700",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "acer e39": {
+    "codename": "E39",
+    "marketingName": "Liquid E700",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "acer s520": {
+    "codename": "S520",
+    "marketingName": "Liquid S2",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true
+  },
+  "acer z520": {
+    "codename": "Z520",
+    "marketingName": "Liquid Z520",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true
+  },
+  "acer z110": {
+    "codename": "Z110",
+    "marketingName": "Liquid Z110",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
     "dualOrientation": true
   }
 }
