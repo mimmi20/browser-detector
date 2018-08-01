@@ -348,7 +348,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/SlidePad|SP\d{3}|SPNG\d{3}/' => 'memup',
         '/epad|p7901a/i' => 'zenithink',
         '/p7mini/i' => 'huawei',
-        '/m532|m305|f\-0\d[def]/i' => 'fujitsu',
+        '/m532|m305|f\-0\d[def]|is11t/i' => 'fujitsu',
         '/sn10t1|hsg\d{4}/i' => 'hannspree',
         '/PC1088/' => 'honlin',
         '/INM\d{3,4}/' => 'intenso',
