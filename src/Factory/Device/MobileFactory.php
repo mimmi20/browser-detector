@@ -763,7 +763,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/element p501/i' => 'sencor',
         '/andromax|pd6d1j/i' => 'smartfren',
         '/ax5_duo/i' => 'maxx',
-        '/tlink/i' => 'thomson',
+        '/tlink|every35/i' => 'thomson',
         '/ga10h/i' => 'gooweel',
         '/ypy_s450/i' => 'positivo',
         '/ph\-1/i' => 'essential',
