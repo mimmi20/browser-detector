@@ -394,7 +394,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/bv[5-8]000/i' => 'blackview',
         '/XELIO_NEXT|(MAVEN|SPACE|TAO|THOR)_?X?10/' => 'odys',
         '/NEXT|Next\d|DATAM803HC|NX785QC8G|NXM900MC|NX008HD8G|NX010HI8G|NXM908HC|NXM726/' => 'nextbook',
-        '/A310|ATLAS[_ ]W|BASE Tab|KIS PLUS|N9101|N9180|N9510|N9515|N9520|N9521|N9810|N918St|N958St|NX\d{2,3}|OPEN[C2]|U9180| V9 |V788D|V8000|V9180|X501|X920|Z221|Z835|Z768G|Z820|Z981/' => 'zte',
+        '/A310|ATLAS[_ ]W|BASE Tab|KIS PLUS|N799D|N9101|N9180|N9510|N9515|N9520|N9521|N9810|N918St|N958St|NX\d{2,3}|OPEN[C2]|U9180| V9 |V788D|V8000|V9180|X501|X920|Z221|Z835|Z768G|Z820|Z981/' => 'zte',
         '/lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q/i' => 'zte',
         '/ultrafone/i' => 'zen',
         '/ mt791 /i' => 'keenhigh',
