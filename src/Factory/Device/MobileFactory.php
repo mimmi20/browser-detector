@@ -772,6 +772,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/mfc[0-9]{3}[a-z]{2,}/i' => 'lexibook',
         '/mypad (1000|750) ?hd/i' => 'yooz',
         '/MyPad|[Mm]yTab/' => 'myphone',
+        '/vt75c/i' => 'videocon',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
