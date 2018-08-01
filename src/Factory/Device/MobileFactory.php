@@ -460,7 +460,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/OP\d{3}/' => 'olivetti',
         '/VS\d{3}/' => 'lg',
         '/surftab|vt10416|breeze 10\.1 quad|xintroni10\.1|st70408_4/i' => 'trekstor',
-        '/AT\d{2,3}|T\-0\dD/' => 'toshiba',
+        '/AT\d{2,3}|T\-0\d[CD]/' => 'toshiba',
         '/E[vV][oO] ?3D|PJ83100|831C|Eris 2\.1|0PCV1|MDA|0PJA10/' => 'htc',
         '/adr\d{4}/i' => 'htc',
         '/mt6515m\-a1\+/i' => 'united',
