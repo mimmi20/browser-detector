@@ -558,6 +558,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/iPh\d\,\d|Puffin\/[\d\.]+I[TP]/' => 'apple',
         '/t\-mobile/i' => 'tmobile',
         '/A101|A500|Z[25]00| T0[346789] | S55 |DA220HQL| E39 /' => 'acer',
+        '/a1303|a309w/i' => 'china-phone',
         '/k910l| [ak]1 ?| a6[05] |yoga tablet|tab2a7\-|p770|zuk |(adr|android) [67].* p2|yb1\-x90l|b5060|s1032x|x1030x/i' => 'lenovo',
         '/impad/i' => 'impression',
         '/tab917qc|tab785dual/i' => 'sunstech',
