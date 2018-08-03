@@ -485,7 +485,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/OV\-|Solution 7III|Qualcore 1010/' => 'overmax',
         '/FX2/' => 'faktorzwei',
         '/AN\d{1,2}|ARCHM\d{3}/' => 'arnova',
-        '/POV|TAB\-PROTAB|MOB\-5045/' => 'pointofview',
+        '/POV|TAB\-PROTAB|MOB\-5045/' => 'point-of-view',
         '/PI\d{4}/' => 'philips',
         '/FUNC/' => 'dfunc',
         '/iD[jnsxr][DQ]?\d{1,2}/' => 'digma',
