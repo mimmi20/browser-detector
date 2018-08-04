@@ -42,6 +42,36 @@ class MobileFactoryTest extends TestCase
     }
 
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \ReflectionException
+     *
+     * @return void
+     */
+    public function testInvokeFail(): void
+    {
+        $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+        $mockLoaderFactory
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('samsung', 'mobile')
+            ->willThrowException(new \Exception('error'));
+
+        $property = new \ReflectionProperty($this->object, 'loaderFactory');
+        $property->setAccessible(true);
+        $property->setValue($this->object, $mockLoaderFactory);
+
+        $object = $this->object;
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('An error occured while matching rule "/samsung[is \-;\/]|gt\-i8750/i"');
+
+        $object('Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.3 Mobile Safari/537.3');
+    }
+
+    /**
      * @dataProvider providerUseragents
      *
      * @param string $useragent

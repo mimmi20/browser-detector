@@ -262,7 +262,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/sprd/i' => 'sprd',
         '/NEC\-/' => 'nec',
         '/thl[ _]/i' => 'thl',
-        '/fly[ _]|(iq|fs)\d{3,4}/i' => 'fly',
+        '/iq1055/i' => 'mls', // must be before Fly
+        '/fly[ _]|(iq|fs)\d{3,4}|phoenix 2/i' => 'fly',
         '/bmobile[ _]/i' => 'bmobile',
         '/HL/' => 'honlin',
         '/mtech/i' => 'mtech',
@@ -302,7 +303,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/EBEST/' => 'ebest',
         '/ETON/' => 'eton',
         '/evolveo/i' => 'evolveo',
-        '/telenor/i' => 'telenor',
+        '/telenor[ _]/i' => 'telenor',
         '/concorde/i' => 'concorde',
         '/poly ?pad/i' => 'polypad',
         // @todo: general rules
@@ -417,6 +418,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/smart ?tab|s6000d/i' => 'lenovo',
         '/S208|S308|S550|S600|Z100 Pro|NOTE Plus/' => 'cubot',
         '/TQ\d{3}/' => 'goclever',
+        '/q8002/i' => 'crypto',
         '/a1000s|q10[01]0i?|q[678]00s?|q2000|omega[ _]\d/i' => 'xolo',
         '/s750/i' => 'beneve',
         '/blade/i' => 'zte',
@@ -473,7 +475,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/MT6582\/|mn84l_8039_20203/' => 'unknown',
         '/mt6515m\-a1\+/' => 'united',
         '/nook/i' => 'barnesnoble',
-        '/iq1055/i' => 'mls',
         '/BIGCOOL|COOLFIVE|COOL\-K|Just5|LINK5/' => 'konrow',
         '/v1_viper|a4you|p5_quad|x2_soul|ax4nano|x1_soul|p5_energy/i' => 'allview',
         '/PLT([^;\/]+) Build/' => 'proscan',
@@ -739,7 +740,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/strongphoneq4/i' => 'evolveo',
         '/shift[457]/i' => 'shift',
         '/k960/i' => 'jlinksz',
-        '/q8002/i' => 'crypto',
         '/i\-call|elektra l|neon[79]/i' => 'ijoy',
         '/ektra/i' => 'kodak',
         '/kt107/i' => 'bdf',
@@ -775,8 +775,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/mypad (1000|750) ?hd/i' => 'yooz',
         '/MyPad|[Mm]yTab/' => 'myphone',
         '/vt75c/i' => 'videocon',
-        '/(centurion|gladiator| glory|luxury|sensuelle|victory)([ _-]?[2-6])?[);/ ]|surfing tab/i' => 'brondi',
-        '/momo\d/i' => 'ployer',
+        '/(centurion|gladiator| glory|luxury|sensuelle|victory)([ _\-]?[2-6])?[);\/ ]|surfing tab/i' => 'brondi',
+        '/momo(\d|mini)/i' => 'ployer',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
@@ -811,10 +811,14 @@ class MobileFactory implements DeviceFactoryInterface
         $loaderFactory = $this->loaderFactory;
 
         foreach ($this->factories as $rule => $company) {
-            if (preg_match($rule, $useragent)) {
-                $loader = $loaderFactory($company, 'mobile');
+            try {
+                if (preg_match($rule, $useragent)) {
+                    $loader = $loaderFactory($company, 'mobile');
 
-                return $loader($useragent);
+                    return $loader($useragent);
+                }
+            } catch (\Throwable $e) {
+                throw new \InvalidArgumentException(sprintf('An error occured while matching rule "%s"', $rule), 0, $e);
             }
         }
 
