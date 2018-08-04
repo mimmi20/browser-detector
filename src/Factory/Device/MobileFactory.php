@@ -761,7 +761,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/NS\d{1,4}/' => 'nous',
         '/monster x5|quadra 7 ultraslim/i' => 'pentagram',
         '/F1\d/' => 'pulid',
-        '/q\-smart/i' => 'qmobile',
+        '/q\-smart|qtab/i' => 'qmobile',
         '/element p501/i' => 'sencor',
         '/andromax|pd6d1j/i' => 'smartfren',
         '/ax5_duo/i' => 'maxx',
