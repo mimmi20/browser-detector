@@ -776,6 +776,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/MyPad|[Mm]yTab/' => 'myphone',
         '/vt75c/i' => 'videocon',
         '/(centurion|gladiator| glory|luxury|sensuelle|victory)([ _-]?[2-6])?[);/ ]|surfing tab/i' => 'brondi',
+        '/momo\d/i' => 'ployer',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
