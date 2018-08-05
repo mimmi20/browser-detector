@@ -20,7 +20,7 @@ class MobileFactory implements DeviceFactoryInterface
 {
     private $factories = [
         '/startrail|starxtrem|starshine|staraddict|starnaute|startext/i' => 'sfr', // also includes the 'Tunisie Telecom' and the 'Altice' branded devices
-        '/HTC|Sprint (?:APA|ATP)|ADR(?!910L)[a-z0-9]+|NexusHD2|Amaze[ _]4G[);\/ ]|(Desire|Sensation|Evo ?3D|IncredibleS|Wildfire|Butterfly)[ _]?([^;\/]+) Build|(Amaze[ _]4G|One ?[XELSV\+]+)[);\/ ]|SPV E6[05]0|One M8|X525a|PG86100|PC36100|XV6975|PJ83100[);\/ ]|2PYB2|0PJA10/' => 'htc',
+        '/HTC|Sprint (APA|ATP)|ADR(?!910L)[a-z0-9]+|NexusHD2|Amaze[ _]4G[);\/ ]|(Desire|Sensation|Evo ?3D|IncredibleS|Wildfire|Butterfly)[ _]?([^;\/]+) Build|(Amaze[ _]4G|One ?[XELSV\+]+)[);\/ ]|SPV E6[05]0|One M8|X525a|PG86100|PC36100|XV6975|PJ83100[);\/ ]|2PYB2|0PJA10|T\-Mobile_Espresso/' => 'htc',
         // @todo: rules with company name in UA
         '/hiphone/i' => 'hiphone',
         '/technisat/i' => 'technisat',
@@ -262,7 +262,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/sprd/i' => 'sprd',
         '/NEC\-/' => 'nec',
         '/thl[ _]/i' => 'thl',
-        '/fly[ _]/i' => 'fly',
+        '/iq1055/i' => 'mls', // must be before Fly
+        '/fly[ _]|(iq|fs)\d{3,4}|phoenix 2/i' => 'fly',
         '/bmobile[ _]/i' => 'bmobile',
         '/HL/' => 'honlin',
         '/mtech/i' => 'mtech',
@@ -302,6 +303,9 @@ class MobileFactory implements DeviceFactoryInterface
         '/EBEST/' => 'ebest',
         '/ETON/' => 'eton',
         '/evolveo/i' => 'evolveo',
+        '/telenor[ _]/i' => 'telenor',
+        '/concorde/i' => 'concorde',
+        '/poly ?pad/i' => 'polypad',
         // @todo: general rules
         '/auxus/i' => 'iberry',
         '/lumia|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|symbian.*\s([a-z0-9]+)$|rx-51 n900|rm-(1031|104[25]|106[234567]|107[234567]|1089|109[029]|1109|111[34]|1127|1141|1154)|ta-[0-9]{4} build|(adr|android) 5\.[01].* n1|5130c\-2|arm; 909|id336|genm14/i' => 'nokia', // also includes the 'Microsoft' branded Lumia devices,
@@ -344,10 +348,10 @@ class MobileFactory implements DeviceFactoryInterface
         '/easypad|easyphone|junior 4\.0/i' => 'easypix',
         '/smart\-e5/i' => 'efox',
         '/telepad/i' => 'xoro',
-        '/SlidePad|SP\d{3}|SPNG\d{3}/' => 'memup',
+        '/slidepad|sp\d{3}|spng\d{3}/i' => 'memup',
         '/epad|p7901a/i' => 'zenithink',
         '/p7mini/i' => 'huawei',
-        '/m532|m305|f\-0\d[def]/i' => 'fujitsu',
+        '/m532|m305|f\-0\d[def]|is11t/i' => 'fujitsu',
         '/sn10t1|hsg\d{4}/i' => 'hannspree',
         '/PC1088/' => 'honlin',
         '/INM\d{3,4}/' => 'intenso',
@@ -393,7 +397,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/bv[5-8]000/i' => 'blackview',
         '/XELIO_NEXT|(MAVEN|SPACE|TAO|THOR)_?X?10/' => 'odys',
         '/NEXT|Next\d|DATAM803HC|NX785QC8G|NXM900MC|NX008HD8G|NX010HI8G|NXM908HC|NXM726/' => 'nextbook',
-        '/A310|ATLAS[_ ]W|BASE Tab|KIS PLUS|N9101|N9180|N9510|N9515|N9520|N9521|N9810|N918St|N958St|NX\d{2,3}|OPEN[C2]|U9180| V9 |V788D|V8000|V9180|X501|X920|Z221|Z835|Z768G|Z820|Z981/' => 'zte',
+        '/A310|ATLAS[_ ]W|BASE Tab|KIS PLUS|N799D|N9101|N9180|N9510|N9515|N9520|N9521|N9810|N918St|N958St|NX\d{2,3}|OPEN[C2]|U9180| V9 |V788D|V8000|V9180|X501|X920|Z221|Z835|Z768G|Z820|Z981/' => 'zte',
         '/lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q/i' => 'zte',
         '/ultrafone/i' => 'zen',
         '/ mt791 /i' => 'keenhigh',
@@ -414,7 +418,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/smart ?tab|s6000d/i' => 'lenovo',
         '/S208|S308|S550|S600|Z100 Pro|NOTE Plus/' => 'cubot',
         '/TQ\d{3}/' => 'goclever',
-        '/a1000s|q10[01]0i?|q[67]00s?|q2000|omega[ _]\d/i' => 'xolo',
+        '/q8002/i' => 'crypto',
+        '/a1000s|q10[01]0i?|q[678]00s?|q2000|omega[ _]\d/i' => 'xolo',
         '/s750/i' => 'beneve',
         '/blade/i' => 'zte',
         '/ z110/i' => 'xido',
@@ -459,7 +464,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/OP\d{3}/' => 'olivetti',
         '/VS\d{3}/' => 'lg',
         '/surftab|vt10416|breeze 10\.1 quad|xintroni10\.1|st70408_4/i' => 'trekstor',
-        '/AT\d{2,3}|T\-0\dD/' => 'toshiba',
+        '/AT\d{2,3}|T\-0\d[CD]/' => 'toshiba',
         '/E[vV][oO] ?3D|PJ83100|831C|Eris 2\.1|0PCV1|MDA|0PJA10/' => 'htc',
         '/adr\d{4}/i' => 'htc',
         '/mt6515m\-a1\+/i' => 'united',
@@ -470,20 +475,18 @@ class MobileFactory implements DeviceFactoryInterface
         '/MT6582\/|mn84l_8039_20203/' => 'unknown',
         '/mt6515m\-a1\+/' => 'united',
         '/nook/i' => 'barnesnoble',
-        '/iq1055/i' => 'mls',
         '/BIGCOOL|COOLFIVE|COOL\-K|Just5|LINK5/' => 'konrow',
         '/v1_viper|a4you|p5_quad|x2_soul|ax4nano|x1_soul|p5_energy/i' => 'allview',
         '/PLT([^;\/]+) Build/' => 'proscan',
         '/[SLWM]T\d{2}|[SM]K\d{2}|SO\-\d{2}[BCDEFG]/' => 'sony',
         '/l\d{2}u/i' => 'sony',
-        '/(IQ|FS)\d{3,4}/' => 'fly',
         '/RMD\-\d{3,4}/' => 'ritmix',
         '/AX\d{3}/' => 'bmobile',
         '/free(way )?tab|xino z[\d]+ x[\d]+/i' => 'modecom',
         '/OV\-|Solution 7III|Qualcore 1010/' => 'overmax',
         '/FX2/' => 'faktorzwei',
         '/AN\d{1,2}|ARCHM\d{3}/' => 'arnova',
-        '/POV|TAB\-PROTAB|MOB\-5045/' => 'pointofview',
+        '/POV|TAB\-PROTAB|MOB\-5045/' => 'point-of-view',
         '/PI\d{4}/' => 'philips',
         '/FUNC/' => 'dfunc',
         '/iD[jnsxr][DQ]?\d{1,2}/' => 'digma',
@@ -557,6 +560,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/iPh\d\,\d|Puffin\/[\d\.]+I[TP]/' => 'apple',
         '/t\-mobile/i' => 'tmobile',
         '/A101|A500|Z[25]00| T0[346789] | S55 |DA220HQL| E39 /' => 'acer',
+        '/a1303|a309w/i' => 'china-phone',
         '/k910l| [ak]1 ?| a6[05] |yoga tablet|tab2a7\-|p770|zuk |(adr|android) [67].* p2|yb1\-x90l|b5060|s1032x|x1030x/i' => 'lenovo',
         '/impad/i' => 'impression',
         '/tab917qc|tab785dual/i' => 'sunstech',
@@ -736,7 +740,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/strongphoneq4/i' => 'evolveo',
         '/shift[457]/i' => 'shift',
         '/k960/i' => 'jlinksz',
-        '/q8002/i' => 'crypto',
         '/i\-call|elektra l|neon[79]/i' => 'ijoy',
         '/ektra/i' => 'kodak',
         '/kt107/i' => 'bdf',
@@ -758,11 +761,11 @@ class MobileFactory implements DeviceFactoryInterface
         '/NS\d{1,4}/' => 'nous',
         '/monster x5|quadra 7 ultraslim/i' => 'pentagram',
         '/F1\d/' => 'pulid',
-        '/q\-smart/i' => 'qmobile',
+        '/q\-smart|qtab/i' => 'qmobile',
         '/element p501/i' => 'sencor',
         '/andromax|pd6d1j/i' => 'smartfren',
         '/ax5_duo/i' => 'maxx',
-        '/tlink/i' => 'thomson',
+        '/tlink|every35/i' => 'thomson',
         '/ga10h/i' => 'gooweel',
         '/ypy_s450/i' => 'positivo',
         '/ph\-1/i' => 'essential',
@@ -771,6 +774,9 @@ class MobileFactory implements DeviceFactoryInterface
         '/mfc[0-9]{3}[a-z]{2,}/i' => 'lexibook',
         '/mypad (1000|750) ?hd/i' => 'yooz',
         '/MyPad|[Mm]yTab/' => 'myphone',
+        '/vt75c/i' => 'videocon',
+        '/(centurion|gladiator| glory|luxury|sensuelle|victory)([ _\-]?[2-6])?[);\/ ]|surfing tab/i' => 'brondi',
+        '/momo(\d|mini)/i' => 'ployer',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
@@ -805,10 +811,14 @@ class MobileFactory implements DeviceFactoryInterface
         $loaderFactory = $this->loaderFactory;
 
         foreach ($this->factories as $rule => $company) {
-            if (preg_match($rule, $useragent)) {
-                $loader = $loaderFactory($company, 'mobile');
+            try {
+                if (preg_match($rule, $useragent)) {
+                    $loader = $loaderFactory($company, 'mobile');
 
-                return $loader($useragent);
+                    return $loader($useragent);
+                }
+            } catch (\Throwable $e) {
+                throw new \InvalidArgumentException(sprintf('An error occured while matching rule "%s"', $rule), 0, $e);
             }
         }
 

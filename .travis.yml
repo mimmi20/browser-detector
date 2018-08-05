@@ -66,7 +66,6 @@ jobs:
       env: COMPOSER_FLAGS=""
       script:
         - composer validate
-        - composer normalize --dry-run
 
     - stage: static code analysis
       php: 7.1
@@ -87,7 +86,7 @@ jobs:
       env:
         - TEST=phpstan
         - COMPOSER_FLAGS=""
-      script: vendor/bin/phpstan analyse -l 7 -c phpstan.neon --autoload-file=vendor/autoload.php --memory-limit=768M --no-progress src tests
+      script: vendor/bin/phpstan analyse -l max -c phpstan.neon --autoload-file=vendor/autoload.php --memory-limit=768M --no-progress src tests
 
     - stage: integration tests
       php: 7.1

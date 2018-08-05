@@ -9430,5 +9430,41 @@
       "version": "0.0.0",
       "manufacturer": "Microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; T-Mobile_Espresso Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "Espresso",
+      "marketingName": "Espresso",
+      "manufacturer": "Htc",
+      "brand": "Tmobile",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 320,
+      "resolutionHeight": 480,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

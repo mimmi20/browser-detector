@@ -24,7 +24,7 @@
   ],
   "require": {
     "php": "^7.1",
-    "danielstjules/stringy": "^3.0",
+    "danielstjules/stringy": "^3.1",
     "mimmi20/browser-detector-loader-interface": "~2.0.5",
     "mimmi20/browser-detector-version": "~5.0.1",
     "mimmi20/ua-browser-type": "~6.0.2",
@@ -44,10 +44,13 @@
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^2.12",
-    "localheinz/composer-normalize": "^0.6",
-    "monolog/monolog": "^1.23",
-    "phpstan/phpstan": "^0.9",
-    "phpunit/phpunit": "^7.2",
+    "pepakriz/phpstan-exception-rules": "^0.3",
+    "phpstan/phpstan": "^0.10",
+    "phpstan/phpstan-beberlei-assert": "^0.10",
+    "phpstan/phpstan-deprecation-rules": "^0.10",
+    "phpstan/phpstan-phpunit": "^0.10",
+    "phpstan/phpstan-strict-rules": "^0.10",
+    "phpunit/phpunit": "^7.3",
     "squizlabs/php_codesniffer": "^3.3",
     "symfony/cache": "^4.1",
     "zendframework/zend-diactoros": "^1.8"
