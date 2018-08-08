@@ -2,7 +2,13 @@
   "rules": {
     "/element p501/i": "sencor element p501",
     "/element10 1/i": "sencor element 10.1",
-    "/element7v2/i": "sencor element 7 v2"
+    "/element[ _]?9\\.7[ _]?v3/i": "sencor element 9.7 v3",
+    "/element[ _]?8[ _]?v3/i": "sencor element 8 v3",
+    "/element[ _]?8[ _]?v2/i": "sencor element 8 v2",
+    "/element[ _]?8/i": "sencor element 8",
+    "/element[ _]?7[ _]?v3/i": "sencor element 7 v3",
+    "/element[ _]?7[ _]?v2[ _]?basic/i": "sencor element 7 v2 basic",
+    "/element[ _]?7[ _]?v2/i": "sencor element 7 v2"
   },
   "generic": "general sencor device"
 }

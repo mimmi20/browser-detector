@@ -307,6 +307,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/concorde/i' => 'concorde',
         '/poly ?pad/i' => 'polypad',
         '/readboy/i' => 'readboy',
+        '/sencor/i' => 'sencor',
         // @todo: general rules
         '/auxus/i' => 'iberry',
         '/lumia|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|symbian.*\s([a-z0-9]+)$|rx-51 n900|rm-(1031|104[25]|106[234567]|107[234567]|1089|109[029]|1109|111[34]|1127|1141|1154)|ta-[0-9]{4} build|(adr|android) 5\.[01].* n1|5130c\-2|arm; 909|id336|genm14/i' => 'nokia', // also includes the 'Microsoft' branded Lumia devices,
@@ -606,7 +607,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ftj?\d{3}/i' => 'freetel',
         '/RUNE/' => 'bsmobile',
         '/IRON/' => 'umi',
-        '/element p501|element10 1|element7v2/i' => 'sencor',
+        '/element p501|element[ _]?(7|8|9\.7|10)/i' => 'sencor',
         '/mz\-| m\ds? |m\d{3}|m\d note|pro 5/i' => 'meizu',
         '/[sxz]\d{3}[ae]/i' => 'htc',
         '/(i\-style|iq) ?\d/i' => 'imobile',
