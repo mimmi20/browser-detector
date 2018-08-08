@@ -765,7 +765,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/monster x5|quadra 7 ultraslim/i' => 'pentagram',
         '/F1\d/' => 'pulid',
         '/q\-smart|qtab/i' => 'qmobile',
-        '/andromax|pd6d1j/i' => 'smartfren',
+        '/andromax|androtab|pd6d1j/i' => 'smartfren',
         '/ax5_duo/i' => 'maxx',
         '/tlink|every35/i' => 'thomson',
         '/ga10h/i' => 'gooweel',
