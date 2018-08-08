@@ -515,7 +515,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/w[12]00| w8/i' => 'thl',
         '/w713|cp\d{4}|n930|5860s|8079|8190q|8295/i' => 'coolpad',
         '/w960/i' => 'sony',
-        '/n8000d|n[79]100/i' => 'samsung',
+        '/n8000d|n[579]1[01]0/i' => 'samsung',
         '/n003/i' => 'neo',
         '/ v1 /i' => 'maxtron',
         '/7007hd/i' => 'perfeo', // must be before alcatel
