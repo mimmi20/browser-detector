@@ -19,7 +19,7 @@ use Psr\Log\LoggerInterface;
 class MobileFactory implements DeviceFactoryInterface
 {
     private $factories = [
-        '/startrail|starxtrem|starshine|staraddict|starnaute|startext/i' => 'sfr', // also includes the 'Tunisie Telecom' and the 'Altice' branded devices
+        '/startrail|starxtrem|starshine|staraddict|starnaute|startext|startab/i' => 'sfr', // also includes the 'Tunisie Telecom' and the 'Altice' branded devices
         '/HTC|Sprint (APA|ATP)|ADR(?!910L)[a-z0-9]+|NexusHD2|Amaze[ _]4G[);\/ ]|(Desire|Sensation|Evo ?3D|IncredibleS|Wildfire|Butterfly)[ _]?([^;\/]+) Build|(Amaze[ _]4G|One ?[XELSV\+]+)[);\/ ]|SPV E6[05]0|One M8|X525a|PG86100|PC36100|XV6975|PJ83100[);\/ ]|2PYB2|0PJA10|T\-Mobile_Espresso/' => 'htc',
         // @todo: rules with company name in UA
         '/hiphone/i' => 'hiphone',
