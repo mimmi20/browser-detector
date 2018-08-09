@@ -714,7 +714,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/VT\d{3}/' => 'voto',
         '/ m71 /i' => 'eplutus',
         '/ (d10|y14) /i' => 'xgody',
-        '/hudl 2/i' => 'tesco',
+        '/hudl 2|hudl ht7s3/i' => 'tesco',
         '/tab1024/i' => 'intenso',
         '/ifive mini 4s/i' => 'fnf',
         '/ i10 | h150 /i' => 'symphony',
