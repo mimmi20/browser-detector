@@ -768,7 +768,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/q\-smart|qtab/i' => 'qmobile',
         '/andromax|androtab|pd6d1j/i' => 'smartfren',
         '/ax5_duo/i' => 'maxx',
-        '/tlink|every35/i' => 'thomson',
+        '/tlink|every35|primo[78]|qm73[45]\-8g/i' => 'thomson',
         '/ga10h/i' => 'gooweel',
         '/ypy_s450/i' => 'positivo',
         '/ph\-1/i' => 'essential',
