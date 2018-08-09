@@ -128,6 +128,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/gt\-h/i' => 'feiteng',
         '/u25gt\-c4w|u51gt/i' => 'cube',
         '/gt\-9000/i' => 'star',
+        '/sc\-74jb|sc\-91mid/i' => 'supersonic',
         '/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-/i' => 'samsung', // must be before orange and sprint
         '/sprint/i' => 'sprint',
         '/gionee/i' => 'gionee',
