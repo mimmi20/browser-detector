@@ -720,7 +720,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ i10 | h150 /i' => 'symphony',
         '/ arc /i' => 'kobo',
         '/m92d\-3g/i' => 'sumvier',
-        '/ c4 |phablet \d/i' => 'trevi',
+        '/ c4 |phablet \d|tab[_ ]?(7|8|9|10)[_ ]?3g/i' => 'trevi',
         '/ f5 | h7 /i' => 'tecno',
         '/a88x/i' => 'alldaymall',
         '/bs1078/i' => 'yonestoptech',
