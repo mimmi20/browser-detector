@@ -782,6 +782,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(centurion|gladiator| glory|luxury|sensuelle|victory)([ _\-]?[2-6])?[);\/ ]|surfing tab/i' => 'brondi',
         '/momo(\d|mini)/i' => 'ployer',
         '/ezee/i' => 'storex',
+        '/cyclone voyager/i' => 'sumvision',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
