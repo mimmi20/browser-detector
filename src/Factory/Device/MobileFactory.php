@@ -754,7 +754,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/max2_plus_3g/i' => 'innjoo',
         '/coolpix s800c/i' => 'nikon',
         '/vsd220/i' => 'viewsonic',
-        '/primo[\- _]/i' => 'walton',
+        '/primo[\- _]|walpad/i' => 'walton',
         '/x538/i' => 'sunsbell',
         '/i1\-3gd/i' => 'cube',
         '/sf1/i' => 'obi',
