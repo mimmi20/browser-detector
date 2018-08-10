@@ -1,6 +1,11 @@
 {
   "rules": {
-    "/mitab think/i": "wolder mitab think",
+    "/mitab[ \\-]epsilon/i": "wolder mitab epsilon",
+    "/mitab[ \\-]brooklyn/i": "wolder mitab brooklyn",
+    "/mitab[ \\-]think/i": "wolder mitab think",
+    "/mitab[ \\-]hero/i": "wolder mitab hero",
+    "/mitab[ \\-]funk/i": "wolder mitab funk",
+    "/mitab[ \\-]jump/i": "wolder mitab jump",
     "/mismart wink/i": "wolder mismart wink"
   },
   "generic": "general wolder device"
