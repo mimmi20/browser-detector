@@ -410,7 +410,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/a101it|a7eb|a70bht|a70cht|a70hb|a70s|a80ksc|a35dm|a70h2|a50ti/i' => 'archos',
         '/b51\+/i' => 'sprd',
         '/sphs_on_hsdroid/i' => 'mhorse',
-        '/TAB A742|TAB7iD|ZEN \d/' => 'wexler',
+        '/TAB A742|TAB7iD|TAB 10Q|ZEN \d/' => 'wexler',
         '/VS810PP/' => 'lg',
         '/vox s502 3g|(cs|vs|ps|tt|pt|lt|ct|ts|ns|ht)\d{3,4}[aempqs]/i' => 'digma',
         '/A400/' => 'celkon',
