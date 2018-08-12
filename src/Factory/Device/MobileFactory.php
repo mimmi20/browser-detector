@@ -497,7 +497,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/s450\d/i' => 'dns',
         '/phoenix 2/i' => 'fly',
         '/vtab1008/i' => 'vizio',
-        '/tab10\-400/i' => 'yarvik',
+        '/tab(07|10)\-\d{3}|(luna|noble|xenta)[ \-]tab\d/i' => 'yarvik',
         '/terra_101|orion7o|aries|insignia|quantum/i' => 'goclever',
         '/venue|xcd35/i' => 'dell',
         '/funtab|zilo/i' => 'orange',
