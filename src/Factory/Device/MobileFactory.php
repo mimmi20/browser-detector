@@ -254,8 +254,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/MTC/' => 'mtc',
         '/eSTAR/' => 'estar',
         '/flipkart|xt811/i' => 'flipkart',
-        '/XT\d{3,4}|WX\d{3}|MB\d{3}/' => 'motorola', // must be before 3Q
-        '/3Q/' => 'triq',
+        '/XT\d{3,4}|WX\d{3}|MB\d{3}/' => 'motorola',
         '/UMI/' => 'umi',
         '/NTT/' => 'nttsystem',
         '/lingwin/i' => 'lingwin',
@@ -379,7 +378,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/one a200[135]/i' => 'oneplus',
         '/f5281|u972|e621t|eg680|e2281uk/i' => 'hisense',
         '/TBD\d{4}|TBD[BCG]\d{3,4}/' => 'zeki',
-        '/AC0732C|RC9724C|MT0739D|QS0716D|LC0720C|MT0812E/' => 'triq',
+        '/ac0731b|ac0732c|ac1024c|ac7803c|bc9710am|el72b|er71b|lc0720c|lc0723b|lc0725b|lc0804b|lc0808b|lc0809b|lc0810c|lc0816c|lc0901d|lc1016c|mt0724b|mt0729b|mt0729d|mt0739d|mt0811b|mt0812e|mt7801c|oc1020a|qs9719d|qs9718c|qs9715f|qs1023h|qs0815c|qs0730c|qs0728c|qs0717d|qs0716d|qs0715c|rc0709b|rc0710b|rc0718c|rc0719h|rc0721b|rc0722c|rc0726b|rc0734h|rc0743h|rc0813c|rc0817c|rc1018c|rc1019g|rc1025f|rc1301c|rc7802f|rc9711b|rc9712c|rc9716b|rc9717b|rc9724c|rc9726c|rc9727f|rc9730c|rc9731c|ts0807b|ts1013b|vm0711a|vm1017a/i' => '3q',
         '/ImPAD6213M_v2/' => 'impression',
         '/D6000/' => 'innos',
         '/[SV]T\d{5}/' => 'trekstor',
