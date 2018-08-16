@@ -308,6 +308,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/poly ?pad/i' => 'polypad',
         '/readboy/i' => 'readboy',
         '/sencor/i' => 'sencor',
+        '/axxion/i' => 'axxion',
         // @todo: general rules
         '/auxus/i' => 'iberry',
         '/lumia|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|symbian.*\s([a-z0-9]+)$|rx-51 n900|rm-(1031|104[25]|106[234567]|107[234567]|1089|109[029]|1109|111[34]|1127|1141|1154)|ta-[0-9]{4} build|(adr|android) 5\.[01].* n1|5130c\-2|arm; 909|id336|genm14/i' => 'nokia', // also includes the 'Microsoft' branded Lumia devices,
