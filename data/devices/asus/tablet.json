@@ -1,4 +1,16 @@
 {
+  "general asus device": {
+    "codename": "general Asus Device",
+    "marketingName": "general Asus Device",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "asus eee pad tf201": {
     "codename": "Eee Pad TF201",
     "marketingName": "Transformer Prime",
@@ -395,16 +407,28 @@
     "resolutionHeight": 1080,
     "dualOrientation": true
   },
-  "general asus device": {
-    "codename": "general Asus Device",
-    "marketingName": "general Asus Device",
+  "asus k00l": {
+    "codename": "K00L",
+    "marketingName": "Memo Pad 8 ME180A",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
+    "platform": null,
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "asus k00u": {
+    "codename": "K00U",
+    "marketingName": "Memo Pad HD 7",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "platform": null,
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
     "dualOrientation": true
   }
 }
