@@ -4,7 +4,7 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; BN NookHD+ Build/JDQ39E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 CyanogenMod/10.1.3/ovation"
     },
     "device": {
-      "deviceName": "Nook HD+",
+      "deviceName": "BNTV600",
       "marketingName": "Nook HD+",
       "manufacturer": "BarnesNoble",
       "brand": "BarnesNoble",
@@ -76,7 +76,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; BNTV600 Build/IMM76L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Safari/537.36"
     },
     "device": {
-      "deviceName": "Nook HD+",
+      "deviceName": "BNTV600",
       "marketingName": "Nook HD+",
       "manufacturer": "BarnesNoble",
       "brand": "BarnesNoble",
@@ -105,6 +105,150 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; NOOK BNTV250 Build/GINGERBREAD 1.4.3) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "BNTV250",
+      "marketingName": "BNTV250",
+      "manufacturer": "BarnesNoble",
+      "brand": "BarnesNoble",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 600,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; NOOK BNTV250A Build/GINGERBREAD 1.4.3) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1"
+    },
+    "device": {
+      "deviceName": "BNTV250A",
+      "marketingName": "BNTV250A",
+      "manufacturer": "BarnesNoble",
+      "brand": "BarnesNoble",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 600,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; BNTV400 Build/IMM76L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "BNTV400",
+      "marketingName": "Nook HD",
+      "manufacturer": "BarnesNoble",
+      "brand": "BarnesNoble",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 900,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "34.0.1847.114",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; uk-ua; Nook Tablet Build/GINGERBREAD; CyanogenMod-7.1.0 XDA Team) AppleWebKit/533.1 (KH"
+    },
+    "device": {
+      "deviceName": "Nook Tablet",
+      "marketingName": "Nook Tablet",
+      "manufacturer": "BarnesNoble",
+      "brand": "BarnesNoble",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 600,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
     }
   }
 ]

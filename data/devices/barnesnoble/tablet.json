@@ -1,4 +1,16 @@
 {
+  "general barnes & noble device": {
+    "codename": "general Barnes & Noble Device",
+    "marketingName": "general Barnes & Noble Device",
+    "manufacturer": "BarnesNoble",
+    "brand": "BarnesNoble",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "barnesnoble bnrv200": {
     "codename": "BNRV200",
     "marketingName": "Nook Color Wifi",
@@ -11,8 +23,8 @@
     "resolutionHeight": 600,
     "dualOrientation": true
   },
-  "barnesnoble nook hd+": {
-    "codename": "Nook HD+",
+  "barnesnoble bntv600": {
+    "codename": "BNTV600",
     "marketingName": "Nook HD+",
     "manufacturer": "BarnesNoble",
     "brand": "BarnesNoble",
@@ -23,16 +35,52 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
-  "general barnes & noble device": {
-    "codename": "general Barnes & Noble Device",
-    "marketingName": "general Barnes & Noble Device",
+  "barnesnoble bntv250": {
+    "codename": "BNTV250",
+    "marketingName": "BNTV250",
     "manufacturer": "BarnesNoble",
     "brand": "BarnesNoble",
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
+    "dualOrientation": true
+  },
+  "barnesnoble bntv250a": {
+    "codename": "BNTV250A",
+    "marketingName": "BNTV250A",
+    "manufacturer": "BarnesNoble",
+    "brand": "BarnesNoble",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
+    "dualOrientation": true
+  },
+  "barnesnoble bntv400": {
+    "codename": "BNTV400",
+    "marketingName": "Nook HD",
+    "manufacturer": "BarnesNoble",
+    "brand": "BarnesNoble",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1440,
+    "resolutionHeight": 900,
+    "dualOrientation": true
+  },
+  "barnesnoble nook tablet": {
+    "codename": "Nook Tablet",
+    "marketingName": "Nook Tablet",
+    "manufacturer": "BarnesNoble",
+    "brand": "BarnesNoble",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true
   }
 }
