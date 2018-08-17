@@ -41,9 +41,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/acer|da241hl/i' => 'acer',
         '/amazon/i' => 'amazon',
         '/amoi/i' => 'amoi',
-        '/blaupunkt/i' => 'blaupunkt',
         '/CCE /' => 'cce',
-        '/endeavour/i' => 'blaupunkt', // must be before Onda
+        '/blaupunkt|atlantis[_ ](1001a|1010a|a10\.g402)|discovery[_ ](102c|111c|1000c|1001a?)|endeavour[_ ](785|101[glm]|1000|1001|101[03]|1100)|polaris[_ ]803|end_101g\-test/i' => 'blaupunkt', // must be before Onda
         '/ONDA/' => 'onda',
         '/archos/i' => 'archos',
         '/irulu/i' => 'irulu',
@@ -533,7 +532,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/iris708/i' => 'ais',
         '/l930/i' => 'ciotcud',
         '/x8\+/i' => 'triray',
-        '/(atlantis|discovery) \d{3,4}/i' => 'blaupunkt',
         '/surfer 7\.34|m1_plus|d7\.2 3g|rioplay|art 3g|atlant/i' => 'explay',
         '/pmsmart450/i' => 'pmedia',
         '/f031|n900\+|sc[lt]2\d|isw11sc|s7562|sghi\d{3}|i8910/i' => 'samsung',
@@ -719,7 +717,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/gs55\-6|gs53\-6/i' => 'gigaset',
         '/vkb011b/i' => 'fengxiang',
         '/trooper|tornado|thunder/i' => 'kazam',
-        '/end_101g\-test/i' => 'blaupunkt',
         '/ n3 /i' => 'goophone',
         '/king 7/i' => 'pptv',
         '/(admire[_ ][^\/;]+|cinemax[^\/;)]+)(build|\) u)/i' => 'zen',
