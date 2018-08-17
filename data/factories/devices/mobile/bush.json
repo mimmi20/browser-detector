@@ -1,7 +1,9 @@
 {
   "rules": {
     "/5 android/i": "bush 5 android",
-    "/4 android/i": "bush 4 android"
+    "/4 android/i": "bush 4 android",
+    "/10\\.0 mytablet/i": "bush 10.0 mytablet",
+    "/7\\.85 tablet/i": "bush 7.85 tablet"
   },
   "generic": "general bush device"
 }
