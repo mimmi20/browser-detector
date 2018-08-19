@@ -1,13 +1,21 @@
 {
   "rules": {
-    "/atlantis 1010a/i": "blaupunkt atlantis 1010a",
-    "/atlantis 1001a/i": "blaupunkt atlantis 1001a",
-    "/discovery 111c/i": "blaupunkt discovery 111c",
-    "/discovery 102c/i": "blaupunkt discovery 102c",
-    "/endeavour 101l/i": "blaupunkt endeavour 101l",
-    "/endeavour_101l/i": "blaupunkt endeavour 101l",
+    "/atlantis[ _]a10\\.g402/i": "blaupunkt atlantis a10.g402",
+    "/atlantis[ _]1010a/i": "blaupunkt atlantis 1010a",
+    "/atlantis[ _]1001a/i": "blaupunkt atlantis 1001a",
+    "/discovery[ _]1001a/i": "blaupunkt discovery 1001a",
+    "/discovery[ _]1001/i": "blaupunkt discovery 1001",
+    "/discovery[ _]1000c/i": "blaupunkt discovery 1000c",
+    "/discovery[ _]111c/i": "blaupunkt discovery 111c",
+    "/discovery[ _]102c/i": "blaupunkt discovery 102c",
+    "/endeavour[ _]1100/i": "blaupunkt endeavour 1100",
+    "/endeavour[ _]1013/i": "blaupunkt endeavour 1013",
+    "/endeavour[ _]101l/i": "blaupunkt endeavour 101l",
+    "/endeavour[ _]1010/i": "blaupunkt endeavour 1010",
+    "/endeavour[ _]1001[ _]dvb\\-t/i": "blaupunkt endeavour 1001 dvb-t",
+    "/endeavour[ _]785/i": "blaupunkt endeavour 785",
     "/end_101g\\-test/i": "blaupunkt endeavour 101g",
-    "/endeavour 1010/i": "blaupunkt endeavour 1010"
+    "/polaris[ _]803/i": "blaupunkt polaris 803"
   },
   "generic": "general blaupunkt device"
 }

@@ -1,4 +1,16 @@
 {
+  "general catsound device": {
+    "codename": "general CatSound Device",
+    "marketingName": "general CatSound Device",
+    "manufacturer": "CatSound",
+    "brand": "CatSound",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": false
+  },
   "catsound cat nova 8": {
     "codename": "Cat Nova 8",
     "marketingName": "Cat Nova 8",
@@ -95,16 +107,16 @@
     "resolutionHeight": 768,
     "dualOrientation": true
   },
-  "general catsound device": {
-    "codename": "general CatSound Device",
-    "marketingName": "general CatSound Device",
+  "catsound phoenix 8.1j0": {
+    "codename": "Phoenix 8.1J0",
+    "marketingName": "Phoenix 8.1J0",
     "manufacturer": "CatSound",
     "brand": "CatSound",
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
+    "dualOrientation": true
   }
 }

@@ -2128,15 +2128,15 @@
       "user-agent": "QuickTime.7.6.6 (qtver=7.6.6;cpu=IA32;os=Mac 10.6.7)."
     },
     "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "Unknown",
-      "brand": "Unknown",
-      "pointingMethod": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "pointingMethod": "mouse",
       "resolutionWidth": null,
       "resolutionHeight": null,
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "desktop"
     },
     "browser": {
       "name": "Quicktime",
@@ -2147,10 +2147,10 @@
       "type": "multimedia-player"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown",
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.7",
+      "manufacturer": "Apple",
       "bits": 32
     },
     "engine": {

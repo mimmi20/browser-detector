@@ -1,7 +1,12 @@
 {
   "rules": {
+    "/edison 3g/i": "bq edison 3g",
     "/edison 3 mini/i": "bq edison 3 mini",
     "/edison 3/i": "bq edison 3",
+    "/edison 2 quad core/i": "bq edison 2 quad core",
+    "/edison/i": "bq edison",
+    "/elcano/i": "bq elcano",
+    "/curie/i": "bq curie",
     "/aquaris x pro/i": "bq aquaris x pro",
     "/aquaris x5/i": "bq aquaris x5",
     "/aquaris x/i": "bq aquaris x",
@@ -21,6 +26,7 @@
     "/aquaris/i": "bq aquaris",
     "/ m10 /i": "bq aquaris m10",
     "/7056g/i": "bq 7056g",
+    "/maxwell plus/i": "bq maxwell plus",
     "/bqs\\-4007/i": "bq bqs-4007",
     "/bqs\\-4005/i": "bq bqs-4005"
   },

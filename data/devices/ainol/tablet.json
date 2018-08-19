@@ -1,4 +1,16 @@
 {
+  "general ainol device": {
+    "codename": "general Ainol Device",
+    "marketingName": "general Ainol Device",
+    "manufacturer": "Ainol",
+    "brand": "Ainol",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "ainol novo7fire": {
     "codename": "Novo 7 Fire",
     "marketingName": "Novo 7 Fire",
@@ -11,16 +23,40 @@
     "resolutionHeight": 800,
     "dualOrientation": true
   },
-  "general ainol device": {
-    "codename": "general Ainol Device",
-    "marketingName": "general Ainol Device",
+  "ainol novo 10 hero": {
+    "codename": "Novo 10 Hero",
+    "marketingName": "Novo 10 Hero",
     "manufacturer": "Ainol",
     "brand": "Ainol",
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "ainol novo 7 flame": {
+    "codename": "Novo 7 Flame",
+    "marketingName": "Novo 7 Flame",
+    "manufacturer": "Ainol",
+    "brand": "Ainol",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "ainol novo 9 spark": {
+    "codename": "Novo 9 Spark",
+    "marketingName": "Novo 9 Spark",
+    "manufacturer": "Ainol",
+    "brand": "Ainol",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 2048,
+    "resolutionHeight": 1536,
     "dualOrientation": true
   }
 }
