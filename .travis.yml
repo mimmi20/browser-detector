@@ -5,6 +5,7 @@ dist: trusty
 php:
   - 7.1
   - 7.2
+  - 7.3
   - nightly
 
 os: linux
@@ -41,6 +42,7 @@ script: vendor/bin/phpunit -c phpunit.xml --colors --columns 117 --no-coverage
 
 jobs:
   allow_failures:
+    - php: 7.3
     - php: nightly
   include:
     - php: nightly
