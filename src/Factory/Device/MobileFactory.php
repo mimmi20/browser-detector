@@ -642,6 +642,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/nova/i' => 'catsound',
         '/i545/i' => 'samsung',
         '/discovery/i' => 'generalmobile',
+        '/ct(10[0123]0|7[12]0|820)(w|fr)?[);\/ ]/i' => 'carrefour',
         '/t720/i' => 'motorola',
         '/n820|a862w/i' => 'amoi',
         '/tpc\-/i' => 'jaytech',
