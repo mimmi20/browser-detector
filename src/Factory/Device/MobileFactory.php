@@ -103,7 +103,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/mobistel/i' => 'mobistel',
         '/moto/i' => 'motorola',
         '/nintendo/i' => 'nintendo',
-        '/crosscall|trekker|odyssey/i' => 'crosscall', // must be before ODYS
+        '/(q7a\+?)[);\/ ]/i' => 'crius-mea',
+        '/crosscall|odyssey_plus|odyssey s1|trekker-[msx][123]/i' => 'crosscall',
         '/odys/i' => 'odys',
         '/oppo/i' => 'oppo',
         '/panasonic/i' => 'panasonic',
