@@ -1,4 +1,16 @@
 {
+  "general digma device": {
+    "codename": "general Digma Device",
+    "marketingName": "general Digma Device",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "digma d700": {
     "codename": "d700",
     "marketingName": "d700",
@@ -35,16 +47,40 @@
     "resolutionHeight": 600,
     "dualOrientation": true
   },
-  "general digma device": {
-    "codename": "general Digma Device",
-    "marketingName": "general Digma Device",
+  "digma ht7070mg": {
+    "codename": "HT7070MG",
+    "marketingName": "Hit",
     "manufacturer": "Digma",
     "brand": "Digma",
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
+    "dualOrientation": true
+  },
+  "digma mvm900hwz": {
+    "codename": "MVM900HWZ",
+    "marketingName": "iDx8",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 800,
+    "resolutionHeight": 600,
+    "dualOrientation": true
+  },
+  "digma mvm908hcz": {
+    "codename": "MVM908HCZ",
+    "marketingName": "iDx9",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
     "dualOrientation": true
   }
 }
