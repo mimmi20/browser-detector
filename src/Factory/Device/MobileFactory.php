@@ -61,7 +61,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/creative/i' => 'creative',
         '/cubot/i' => 'cubot',
         '/dell/i' => 'dell',
-        '/denver/i' => 'denver',
+        '/denver|ta[cdq]-[0-9]+/i' => 'denver',
         '/sharp|shl25/i' => 'sharp',
         '/flytouch/i' => 'flytouch',
         '/n\-06e|n[79]05i/i' => 'nec', // must be before docomo
@@ -341,7 +341,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/nbpc724/i' => 'coby',
         '/wtdr1018/i' => 'comag',
         '/ziilabs|ziio7/i' => 'creative',
-        '/ta[dq]\-/i' => 'denver',
+        //'/ta[dq]\-/i' => 'denver',
         '/connect(7pro|8plus)/i' => 'odys',
         '/[0-9]{3}SH|SH\-?[0-9]{2,4}[CDEFUW]/' => 'sharp',
         '/p900i/i' => 'docomo',
