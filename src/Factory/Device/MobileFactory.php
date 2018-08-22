@@ -211,6 +211,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/tesla/i' => 'tesla',
         '/doro/i' => 'doro',
         '/captiva/i' => 'captiva',
+        '/energy[ _-]?[^;\/]+ build/i' => 'energy-sistem',
         '/elephone/i' => 'elephone',
         '/cyrus/i' => 'cyrus',
         '/wopad/i' => 'wopad',
