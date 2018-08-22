@@ -66,7 +66,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/flytouch/i' => 'flytouch',
         '/n\-06e|n[79]05i/i' => 'nec', // must be before docomo
         '/docomo/i' => 'docomo',
-        '/easypix/i' => 'easypix',
+        '/easypix|easypad|easyphone|junior 4\.0/i' => 'easypix',
         '/xoro/i' => 'xoro',
         '/memup/i' => 'memup',
         '/fujitsu/i' => 'fujitsu',
@@ -344,7 +344,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/connect(7pro|8plus)/i' => 'odys',
         '/[0-9]{3}SH|SH\-?[0-9]{2,4}[CDEFUW]/' => 'sharp',
         '/p900i/i' => 'docomo',
-        '/easypad|easyphone|junior 4\.0/i' => 'easypix',
         '/smart\-e5/i' => 'efox',
         '/telepad/i' => 'xoro',
         '/slidepad|sp[0-9]{3}|spng[0-9]{3}/i' => 'memup',
