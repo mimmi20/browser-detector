@@ -1,4 +1,16 @@
 {
+  "general explay device": {
+    "codename": "general Explay Device",
+    "marketingName": "general Explay Device",
+    "manufacturer": "Explay",
+    "brand": "Explay",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "explay m1 plus": {
     "codename": "M1 Plus",
     "marketingName": "M1 Plus",
@@ -11,16 +23,28 @@
     "resolutionHeight": 480,
     "dualOrientation": true
   },
-  "general explay device": {
-    "codename": "general Explay Device",
-    "marketingName": "general Explay Device",
+  "explay informer 705": {
+    "codename": "Informer 705",
+    "marketingName": "Informer 705",
     "manufacturer": "Explay",
     "brand": "Explay",
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "explay informer 921": {
+    "codename": "Informer 921",
+    "marketingName": "Informer 921",
+    "manufacturer": "Explay",
+    "brand": "Explay",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
     "dualOrientation": true
   }
 }
