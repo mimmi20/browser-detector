@@ -360,7 +360,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/cynus/i' => 'mobistel',
         '/DARK(MOON|SIDE|NIGHT|FULL)/' => 'wiko',
         '/ARK/' => 'ark',
-        '/Ever(Classic|Glory|Magic|Mellow|Miracle|Shine|Smart|Star|Trendy)/' => 'evertek',
+        '/(ever(glory|shine|miracle|mellow|classic|trendy|fancy|vivid|slim|glow|magic|smart|star)[^\/;]*) build|e70[25]0hd|e7914hg|e8050h[dg]|e8051hd|e9054hd/i' => 'evertek', // must be before Magic
         '/Magic/' => 'magic',
         '/M[Ii][ -]([0-9]|PAD|M[AI]X|NOTE|A1|1S|3|ONE)/' => 'xiaomi',
         '/HM[ _](NOTE|1SC|1SW|1S|1)/' => 'xiaomi',
