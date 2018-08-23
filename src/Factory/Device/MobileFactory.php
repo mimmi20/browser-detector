@@ -263,7 +263,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/NEC\-/' => 'nec',
         '/thl[ _]/i' => 'thl',
         '/iq1055/i' => 'mls', // must be before Fly
-        '/fly[ _]|(iq|fs)[0-9]{3,4}|phoenix 2/i' => 'fly',
+        '/fly[ _]|flylife|phoenix 2|fs50[1-9]|fs511|fs551|fs40[1-7]|fs452|fs451|fs454|4fs06|meridian-|iq[0-9]{3,}i?[ _]?(quad|firebird|quattro|turbo|magic)?( build|[;\/\)])/i' => 'fly',
         '/bmobile[ _]/i' => 'bmobile',
         '/HL/' => 'honlin',
         '/mtech/i' => 'mtech',
@@ -479,7 +479,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/GM/' => 'generalmobile',
         '/ZP[0-9]{3}/' => 'zopo',
         '/s450[0-9]/i' => 'dns',
-        '/phoenix 2/i' => 'fly',
         '/vtab1008/i' => 'vizio',
         '/tab(07|10)\-[0-9]{3}|(luna|noble|xenta)[ \-]tab[0-9]/i' => 'yarvik',
         '/terra_101|orion7o|aries|insignia|quantum/i' => 'goclever',
