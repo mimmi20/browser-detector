@@ -266,6 +266,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/iq1055/i' => 'mls', // must be before Fly
         '/fly[ _]|flylife|phoenix 2|fs50[1-9]|fs511|fs551|fs40[1-7]|fs452|fs451|fs454|4fs06|meridian-|iq[0-9]{3,}i?[ _]?(quad|firebird|quattro|turbo|magic)?( build|[;\/\)])/i' => 'fly',
         '/bmobile[ _]/i' => 'bmobile',
+        '/hlv-t[a-z0-9]+/i' => 'hi-level',
         '/HL/' => 'honlin',
         '/mtech/i' => 'mtech',
         '/lexand/i' => 'lexand',
