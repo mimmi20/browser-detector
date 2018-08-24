@@ -96,6 +96,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/logicpd/i' => 'logicpd',
         '/medion/i' => 'medion',
         '/(ta10ca3|tm105a?|tr10cs1)[);\/ ]/i' => 'ecs',
+        '/gem[0-9]+[a-z]*/i' => 'gemini',
         '/meizu/i' => 'meizu',
         '/hisense/i' => 'hisense',
         '/minix/i' => 'minix',
