@@ -339,10 +339,10 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": "Tieba",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
+      "version": "7.8.0",
+      "manufacturer": "Baidu",
       "bits": 32,
       "type": "browser"
     },
@@ -485,7 +485,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "34.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -809,7 +809,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "52.0.2743.98",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -953,7 +953,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "52.0.2743.98",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -1385,7 +1385,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "52.0.2743.98",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -4661,7 +4661,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "33.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -4976,42 +4976,6 @@
       "marketingName": "Xperia Arc",
       "manufacturer": "SonyEricsson",
       "brand": "SonyEricsson",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.4",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; ru-ru; SonyEricssonSO-03C Build/4.0.1.C.1.31) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "SO-03C",
-      "marketingName": "Xperia ray",
-      "manufacturer": "Sony",
-      "brand": "Sony",
       "pointingMethod": "touchscreen",
       "resolutionWidth": 480,
       "resolutionHeight": 854,
@@ -6533,7 +6497,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "34.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -6641,7 +6605,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "58.0.3029.83",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -7973,7 +7937,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "39.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -8045,7 +8009,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "59.0.3071.125",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -8441,7 +8405,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "33.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -8981,7 +8945,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "33.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -9953,7 +9917,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "53.0.2785.124",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -10385,7 +10349,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -10599,12 +10563,12 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": "Matome",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
+      "version": "4.0.6",
+      "manufacturer": "NhnCorporation",
       "bits": 32,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -10614,9 +10578,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "Blink",
+      "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "Google"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -10637,7 +10601,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "53.0.2785.124",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
