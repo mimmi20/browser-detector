@@ -430,5 +430,41 @@
       "version": "530.17.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Venue7 3740 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Venue 7 3740",
+      "marketingName": "Venue 7 3740",
+      "manufacturer": "Dell",
+      "brand": "Dell",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1280,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
   }
 ]

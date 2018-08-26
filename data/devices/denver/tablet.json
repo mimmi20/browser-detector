@@ -1,4 +1,16 @@
 {
+  "general denver device": {
+    "codename": "general Denver Device",
+    "marketingName": "general Denver Device",
+    "manufacturer": "Denver",
+    "brand": "Denver",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "denver tad-10023": {
     "codename": "TAD-10023",
     "marketingName": "TAD-10023",
@@ -95,16 +107,64 @@
     "resolutionHeight": 480,
     "dualOrientation": true
   },
-  "general denver device": {
-    "codename": "general Denver Device",
-    "marketingName": "general Denver Device",
+  "denver tac-70051": {
+    "codename": "TAC-70051",
+    "marketingName": "TAC-70051",
     "manufacturer": "Denver",
     "brand": "Denver",
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "denver tac-7028": {
+    "codename": "TAC-7028",
+    "marketingName": "TAC-7028",
+    "manufacturer": "Denver",
+    "brand": "Denver",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "denver tad-70092": {
+    "codename": "TAD-70092",
+    "marketingName": "TAD-70092",
+    "manufacturer": "Denver",
+    "brand": "Denver",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
+    "dualOrientation": true
+  },
+  "denver tad-97052": {
+    "codename": "TAD-97052",
+    "marketingName": "TAD-97052",
+    "manufacturer": "Denver",
+    "brand": "Denver",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
+    "dualOrientation": true
+  },
+  "denver tad-97072g": {
+    "codename": "TAD-97072G",
+    "marketingName": "TAD-97072G",
+    "manufacturer": "Denver",
+    "brand": "Denver",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
     "dualOrientation": true
   }
 }

@@ -1,14 +1,15 @@
 {
   "rules": {
-    "/venue 8 7840/i": "dell venue 8 7840",
+    "/venue ?8 7840/i": "dell venue 8 7840",
     "/venue pro/i": "dell venue pro",
-    "/venue 8 hspa\\+/i": "dell venue 8 hspa+",
-    "/venue 8 3830/i": "dell venue 8 3830",
-    "/venue 7 hspa\\+/i": "dell venue 7 hspa+",
-    "/venue 7 3730/i": "dell venue 7 3730",
+    "/venue ?8 hspa\\+/i": "dell venue 8 hspa+",
+    "/venue ?8 3830/i": "dell venue 8 3830",
+    "/venue ?7 hspa\\+/i": "dell venue 7 hspa+",
+    "/venue ?7 3740/i": "dell venue 7 3740",
+    "/venue ?7 3730/i": "dell venue 7 3730",
     "/venue/i": "dell venue",
-    "/streak 10 pro/i": "dell streak 10 pro",
-    "/streak 7/i": "dell streak 7",
+    "/streak ?10 pro/i": "dell streak 10 pro",
+    "/streak ?7/i": "dell streak 7",
     "/streak/i": "dell streak",
     "/xcd35/i": "dell xcd35",
     "/aero/i": "dell aero"

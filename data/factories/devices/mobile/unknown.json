@@ -1,4 +1,7 @@
 {
-  "rules": [],
+  "rules": {
+    "/Android[ -\\/]?([0-9\\.]+)?;? Mobile; rv:[0-9\\.\\+ab]+\\) ?Gecko(\\/[0-9\\.]+)? Firefox\\/[0-9\\.\\+ab]+/i": "general mobile phone",
+    "/Android[ -\\/]?([0-9\\.]+)?;? Tablet; rv:[0-9\\.\\+ab]+\\) ?Gecko(\\/[0-9\\.]+)? Firefox\\/[0-9\\.\\+ab]+/i": "general tablet"
+  },
   "generic": "general mobile device"
 }
