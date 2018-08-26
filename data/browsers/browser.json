@@ -160,7 +160,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Version"
+        "Chrome"
       ]
     },
     "engine": null
@@ -3442,6 +3442,20 @@
     },
     "engine": "trident"
   },
+  "tieba": {
+    "name": "Tieba",
+    "manufacturer": "Baidu",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "tieba"
+      ]
+    },
+    "engine": null
+  },
   "tinybrowser": {
     "name": "TinyBrowser",
     "manufacturer": "Unknown",
@@ -3655,7 +3669,7 @@
   },
   "whale browser": {
     "name": "Whale Browser",
-    "manufacturer": "Unknown",
+    "manufacturer": "NhnCorporation",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "browser",
