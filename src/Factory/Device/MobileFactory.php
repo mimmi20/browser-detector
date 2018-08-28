@@ -358,7 +358,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/epad|p7901a/i' => 'zenithink',
         '/p7mini/i' => 'huawei',
         '/m532|m305|f\-0[0-9][def]|is11t/i' => 'fujitsu',
-        '/sn10t1|hsg[0-9]{4}/i' => 'hannspree',
+        '/hsg[0-9]{4}|sn10t1|sn97t41w|sn1at71w\(b\)|sn70t51a|sn70t31?|t7-qc/i' => 'hannspree',
         '/PC1088/' => 'honlin',
         '/INM[0-9]{3,4}/' => 'intenso',
         '/sailfish/i' => 'jolla',
