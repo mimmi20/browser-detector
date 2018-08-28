@@ -176,7 +176,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/philips/i' => 'philips',
         '/infinix/i' => 'infinix',
         '/infocus/i' => 'infocus',
-        '/karbonn/i' => 'karbonn',
         '/pentagram/i' => 'pentagram',
         '/smartfren/i' => 'smartfren',
         '/gce x86 phone/i' => 'google',
@@ -423,7 +422,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/s750/i' => 'beneve',
         '/blade/i' => 'zte',
         '/ z110/i' => 'xido',
-        '/titanium|machfive|sparkle v/i' => 'karbonn',
+        '/karbonn|titanium|machfive|sparkle v|s109/i' => 'karbonn', // must be before acer
         '/a727/i' => 'azpen',
         '/(ags|a[ln]e|ath|ba[ch]|bl[an]|bnd|cam|ch[cm]|che[12]?|clt|dli|duk|eml|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|trt|vky|vtr|was|y220)\-/i' => 'huawei',
         '/V1[0-9]{2}|GN[0-9]{3}/' => 'gionee',
