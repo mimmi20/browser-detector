@@ -46,7 +46,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/CCE /' => 'cce',
         '/blaupunkt|atlantis[_ ](1001a|1010a|a10\.g402)|discovery[_ ](102c|111c|1000c|1001a?)|endeavour[_ ](785|101[glm]|1000|1001|101[03]|1100)|polaris[_ ]803|end_101g\-test/i' => 'blaupunkt', // must be before Onda
         '/ONDA/' => 'onda',
-        '/archos/i' => 'archos',
+        '/archos|a101it|a7eb|a70bht|a70cht|a70hb|a70s|a80ksc|a35dm|a70h2|a50ti/i' => 'archos',
         '/irulu/i' => 'irulu',
         '/symphony/i' => 'symphony',
         '/turbo\-x/i' => 'turbo-x',
@@ -406,7 +406,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/ultrafone/i' => 'zen',
         '/ mt791 /i' => 'keenhigh',
         '/g100w|stream\-s110| (a1|a3|b1|b3)\-/i' => 'acer',
-        '/a101it|a7eb|a70bht|a70cht|a70hb|a70s|a80ksc|a35dm|a70h2|a50ti/i' => 'archos',
         '/b51\+/i' => 'sprd',
         '/sphs_on_hsdroid/i' => 'mhorse',
         '/TAB A742|TAB7iD|TAB 10Q|ZEN [0-9]/' => 'wexler',
