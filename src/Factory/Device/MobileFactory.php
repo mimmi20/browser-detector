@@ -753,6 +753,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/momo([0-9]|mini)/i' => 'ployer',
         '/ezee/i' => 'storex',
         '/cyclone [^\/;]+ build/i' => 'sumvision',
+        '/ctc[0-9]{3}/i' => 'ctc',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
