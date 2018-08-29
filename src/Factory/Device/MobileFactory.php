@@ -527,7 +527,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/pmsmart450/i' => 'pmedia',
         '/f031|n900\+|sc[lt]2[0-9]|isw11sc|s7562|sghi[0-9]{3}|i8910/i' => 'samsung',
         '/iusai/i' => 'opsson',
-        '/netbox| x10 | e1[05]i| x2 |r800x|s500i|x1i|x10i|[ls]39h|h3213|h3311|h8216|h8324|ebrd[0-9]{4}/i' => 'sony',
+        '/netbox| x10 | e1[05]i| x2 |r800x|s500i|x1i|x10i|[ls]39h|h3113|h3213|h3311|h8216|h8324|ebrd[0-9]{4}/i' => 'sony',
         '/PROV?[0-9]{3}[B0-9]?/' => 'polaroid',
         '/x90[0-9]{1,2}|n52[0-9]{2}|r[12678][0-9]{2,3}|u70[0-9]t|find7|a3[37]f|r7[ks]?f|r7plusf| 1201 |n1t/i' => 'oppo',
         '/N[0-9]{4}/' => 'star',
