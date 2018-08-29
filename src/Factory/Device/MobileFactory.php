@@ -664,7 +664,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/pixel|glass 1/i' => 'google',
         '/909t| m13 /i' => 'mpie',
         '/z30/i' => 'magnus',
-        '/up580/i' => 'uhappy',
+        '/up580|up520/i' => 'uhappy',
         '/swift/i' => 'wileyfox',
         '/m9c max/i' => 'bqeel',
         '/qt\-10/i' => 'qmax',
