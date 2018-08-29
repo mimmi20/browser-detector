@@ -139,18 +139,6 @@
     },
     "engine": "webkit"
   },
-  "motorola webkit": {
-    "name": "Motorola Webkit",
-    "manufacturer": "Motorola",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
   "android webview": {
     "name": "Android WebView",
     "manufacturer": "Google",
@@ -164,6 +152,32 @@
       ]
     },
     "engine": null
+  },
+  "antgalio": {
+    "name": "ANTGalio",
+    "manufacturer": "Ant",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ANTGalio"
+      ]
+    },
+    "engine": null
+  },
+  "motorola webkit": {
+    "name": "Motorola Webkit",
+    "manufacturer": "Motorola",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
   },
   "apusbrowser": {
     "name": "APUSBrowser",
