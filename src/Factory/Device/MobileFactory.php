@@ -644,7 +644,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/a0001/i' => 'oneplus',
         '/smartpad/i' => 'einsundeins',
         '/i4901/i' => 'idea',
-        '/lead [12]|t1_plus|elite [45]|shark 1/i' => 'leagoo',
+        '/lead [12]|t1_plus|elite [45]|shark 1|s8_pro/i' => 'leagoo',
         '/forward|dynamic/i' => 'ngm',
         '/gnet/i' => 'gnet',
         '/hive v 3g|hive iv 3g/i' => 'turbo-x',
