@@ -36,7 +36,7 @@ class TvFactory implements DeviceFactoryInterface
         '/;arcelik;/i' => 'arcelik',
         '/;mstar;/i' => 'mstar',
         '/;mtk;/i' => 'mediatek',
-        '/;lge?;/i' => 'lg',
+        '/; ?lge?;/i' => 'lg',
         '/mxl661l32|smart\-tv/i' => 'samsung',
         '/viera/i' => 'panasonic',
         '/apple tv/i' => 'apple',

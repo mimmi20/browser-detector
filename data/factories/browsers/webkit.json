@@ -96,6 +96,7 @@
     "/linux; android.*version/i": "android webkit",
     "/android[\\/ ][\\d\\.]+ release/i": "android webkit",
     "/motorolawebkit/i": "motorola webkit",
+    "/lg browser/i": "lg browser",
     "/(?:like android|windows ce|symbos).*safari/i": "safari",
     "/(?:android|mtk|maui|samsung|gingerbread|z710e).*safari/i": "android webkit",
     "/webos/i": "webkit/webos",
