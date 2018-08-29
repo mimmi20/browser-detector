@@ -70,6 +70,7 @@ class MobileDevice
             'crkey',
             'lenovog780',
             'windows iot',
+            'netcast',
         ];
 
         if ($this->useragent->containsAny($noMobiles, false)) {

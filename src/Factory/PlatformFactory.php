@@ -118,12 +118,6 @@ class PlatformFactory implements PlatformFactoryInterface
             return $loader($useragent);
         }
 
-//        if (preg_match('/microsoft|jobboerse|microsearch/i', $useragent)) {
-//            $loader = $loaderFactory('unknown');
-//
-//            return $loader($useragent);
-//        }
-
         if ((new Helper\Linux($s))->isLinux()) {
             $loader = $loaderFactory('linux');
 

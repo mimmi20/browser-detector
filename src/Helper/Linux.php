@@ -75,6 +75,8 @@ class Linux
             'webos',
             'web0s',
             'remix',
+            'netcast',
+            'kantonix',
         ];
 
         if ($this->useragent->containsAny($noLinux, false)) {
