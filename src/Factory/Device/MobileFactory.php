@@ -658,7 +658,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/dl 1803/i' => 'dl',
         '/s10q\-3g/i' => 'smartbook',
         '/ s30 /i' => 'firefly',
-        '/apollo|thor/i' => 'vernee',
+        '/apollo|thor|mars pro/i' => 'vernee',
         '/1505\-a02|inote/i' => 'itel',
         '/mi(tab|smart)/i' => 'wolder',
         '/pixel|glass 1/i' => 'google',
