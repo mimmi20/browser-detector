@@ -714,7 +714,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/picasso/i' => 'bluboo',
         '/strongphoneq4/i' => 'evolveo',
         '/shift[457]/i' => 'shift',
-        '/k960/i' => 'jlinksz',
+        '/k960|zh960/i' => 'jlinksz',
         '/i\-call|elektra l|neon[79]/i' => 'ijoy',
         '/ektra/i' => 'kodak',
         '/kt107/i' => 'bdf',
