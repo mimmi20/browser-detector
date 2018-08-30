@@ -560,7 +560,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/m502/i' => 'navon',
         '/lencm900hz/i' => 'lenco',
         '/xm[13]00/i' => 'landvo',
-        '/m370i/i' => 'infocus',
+        '/m370i|vzh/i' => 'infocus',
         '/dm550/i' => 'blackview',
         '/ m8 /i' => 'amlogic',
         '/m601/i' => 'aoc',
