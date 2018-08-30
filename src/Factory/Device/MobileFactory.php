@@ -27,7 +27,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/samsung[is \-;\/]|gt\-i8750/i' => 'samsung',
         '/nokia/i' => 'nokia',
         '/blackberry/i' => 'rim',
-        '/asus|nexus[ _]?7|padfone|transformer|tf300t|slider sl101|me302(c|kl)|me301t|me371mg|me17(1|2v|3x)|eee_701|tpad_10|tx201la|p01t_1|(k0[01][0-9a-z]|z00d|z00yd|p(00[8c]|01y|02[12347]) build|z017d)[);\/ ]/i' => 'asus',
+        '/asus|nexus[ _]?7|padfone|transformer|tf300t|slider sl101|me302(c|kl)|me301t|me371mg|me17(1|2v|3x)|eee_701|tpad_10|tx201la|p01t_1|(k0[01][0-9a-z]|z00d|z00yd|p(00[8ac]|01y|02[12347]) build|z017d)[);\/ ]/i' => 'asus',
         '/feiteng/i' => 'feiteng',
         '/mypad (1000|750) ?hd/i' => 'yooz',
         '/(myphone|mypad|mytab)[ _][^;\/]+ build|cube_lte|mytab10ii/i' => 'myphone', // must be before Cube
