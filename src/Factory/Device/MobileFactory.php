@@ -334,7 +334,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/galaxy|nexus|i(7110|9100|9300)|blaze|s8500/i' => 'samsung',
         '/iconia|liquid/i' => 'acer',
         '/playstation/i' => 'sony',
-        '/kindle|silk|kf(tt|ot|jwi|sowi|thwi|apwa|aswi|apwi|dowi|auwi|giwi|tbwi|mewi|fowi|sawi|sawa|arwi|thwa|jwa)|sd4930ur|fire2/i' => 'amazon',
+        '/kindle|silk|kf(tt|ot|jwi|sowi|thwi|apwa|aswi|apwi|dowi|auwi|giwi|tbwi|mewi|fowi|sawi|sawa|suwi|arwi|thwa|jwa)|sd4930ur|fire2/i' => 'amazon',
         '/zoom2|nook ?color/i' => 'logicpd',
         '/nook|bn[tr]v[0-9]+/i' => 'barnesnoble',
         '/playbook|rim tablet|bb10|stv100|bb[ab]100\-2|sth100\-2|bbd100\-1/i' => 'rim',
