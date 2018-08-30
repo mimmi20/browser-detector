@@ -676,7 +676,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/CS[0-9]{2}/' => 'cyrus',
         '/ t02 /i' => 'changhong',
         '/crown| r6 | a8 |alife [ps]1|omega_pro/i' => 'blackview',
-        '/london|hammer_s|z2 pro/i' => 'umi',
+        '/london|hammer_s|z2 pro|plus e/i' => 'umi',
         '/vi8 plus|hibook|hi10 pro/i' => 'chuwi',
         '/jy\-/i' => 'jiayu',
         '/ m20 /i' => 'timmy',
