@@ -488,7 +488,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ a10 |mp907c/i' => 'allwinner',
         '/shield tablet/i' => 'nvidia',
         '/u7 plus|u16 max|k6000 pro|k6000 plus|k4000|k10000|universetap/i' => 'oukitel',
-        '/k107/i' => 'yuntab',
+        '/k107| k17 /i' => 'yuntab',
         '/mb40ii1/i' => 'dns',
         '/m3 note/i' => 'meizu',
         '/ m[35] |f103| e7 | v6l |pioneer|dream_d1|(adr|android) 4\.2.* p2/i' => 'gionee',
