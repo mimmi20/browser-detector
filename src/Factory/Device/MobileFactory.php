@@ -184,7 +184,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/orange/i' => 'orange',
         '/spv/i' => 'orange',
         '/mot/i' => 'motorola',
-        '/(pgn\-?[456][012][0-9]|pkt\-?301|phs\-601)[;\/\) ]|ctab[^\/;]+ build/i' => 'condor',
+        '/(pgn\-?[456][012][0-9]|pkt\-?301|phs\-601)[;\/\) ]|ctab[^\/;]+ build|plume l1/i' => 'condor',
         '/beeline pro/i' => 'zte',
         '/beeline/i' => 'beeline',
         '/axgio/i' => 'axgio',
