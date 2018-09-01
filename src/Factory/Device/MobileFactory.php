@@ -363,8 +363,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ARK/' => 'ark',
         '/(ever(glory|shine|miracle|mellow|classic|trendy|fancy|vivid|slim|glow|magic|smart|star)[^\/;]*) build|e70[25]0hd|e7914hg|e8050h[dg]|e8051hd|e9054hd/i' => 'evertek', // must be before Magic
         '/Magic/' => 'magic',
-        '/M[Ii][ -]([0-9]|PAD|M[AI]X|NOTE|A1|1S|3|ONE)/' => 'xiaomi',
-        '/HM[ _](NOTE|1SC|1SW|1S|1)/' => 'xiaomi',
+        '/M[Ii][ -]([0-9]|PAD|M[AI]X|NOTE|A1|1S|3|ONE)|HM[ _](NOTE|1SC|1SW|1S|1)|MIX 2/' => 'xiaomi',
         '/WeTab/' => 'neofonie',
         '/SIE\-/' => 'siemens',
         '/CAL21|C771|C811/' => 'casio',
