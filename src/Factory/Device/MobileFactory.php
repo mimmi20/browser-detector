@@ -107,7 +107,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/(q7a\+?)[);\/ ]/i' => 'crius-mea',
         '/crosscall|odyssey_plus|odyssey s1|trekker-[msx][123]/i' => 'crosscall',
         '/odys/i' => 'odys',
-        '/oppo/i' => 'oppo',
         '/panasonic/i' => 'panasonic',
         '/pandigital/i' => 'pandigital',
         '/phicomm/i' => 'phicomm',
@@ -322,7 +321,6 @@ class MobileFactory implements DeviceFactoryInterface
         // @todo: general rules
         '/auxus/i' => 'iberry',
         '/(adr|android) 4\.4.* n1/i' => 'newsman',
-        '/(adr|android) 4\.2.* n1/i' => 'oppo',
         '/(adr|android) 4\.0.* n1/i' => 'tizzbird',
         '/rm\-(997|560)/i' => 'rossmoor',
         '/gtx75/i' => 'utstarcom',
@@ -526,7 +524,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/iusai/i' => 'opsson',
         '/netbox| x10 | e1[05]i| x2 |r800x|s500i|x1i|x10i|[ls]39h|h3113|h3213|h3311|h4113|h8216|h8266|h8314|h8324|ebrd[0-9]{4}/i' => 'sony',
         '/PROV?[0-9]{3}[B0-9]?/' => 'polaroid',
-        '/x90[0-9]{1,2}|n52[0-9]{2}|r[12678][0-9]{2,3}|u70[0-9]t|find7|a3[37]f|r7[ks]?f|r7plusf| 1201 |n1t|cph1609/i' => 'oppo',
+        '/oppo|x90[0-9]{1,2}|n52[0-9]{2}|r[12678][0-9]{2,3}|u70[0-9]t|find7|a3[37]f|r7[ks]?f|r7plus[fm]| 1201 |n1t|cph1609|(adr|android) 4\.2.* n1/i' => 'oppo',
         '/(mpqc|mpdc)[0-9]{1,4}|ph[0-9]{3}|mid(7c|74c|82c|84c|801|811|701|711|170|77c|43c|102c|103c|104c|114c)|mp(843|717|718|843|888|959|969|1010|7007|7008)|mgp7/i' => 'mpman',
         '/N[0-9]{4}/' => 'star',
         '/technipad|aqipad|techniphone/i' => 'technisat', // must be before apple
