@@ -2344,15 +2344,15 @@
       "user-agent": "Unibox/114 CFNetwork/897.15 Darwin/17.5.0"
     },
     "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
+      "deviceName": "general Apple Device",
+      "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
+      "pointingMethod": "touchscreen",
       "resolutionWidth": null,
       "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Unibox",
