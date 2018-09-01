@@ -25,7 +25,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/hiphone/i' => 'hiphone',
         '/technisat/i' => 'technisat',
         '/samsung[is \-;\/]|gt\-i8750/i' => 'samsung',
-        '/nokia/i' => 'nokia',
         '/blackberry/i' => 'rim',
         '/asus|nexus[ _]?7|padfone|transformer|tf300t|slider sl101|me302(c|kl)|me301t|me371mg|me17(1|2v|3x)|eee_701|tpad_10|tx201la|p01t_1|(k0[01][0-9a-z]|z00d|z00yd|p(00[8ac]|01y|02[12347]) build|z017d)[);\/ ]/i' => 'asus',
         '/feiteng/i' => 'feiteng',
@@ -275,6 +274,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/HL/' => 'honlin',
         '/mtech/i' => 'mtech',
         '/lexand/i' => 'lexand',
+        '/nokia|lumia|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|symbian.*\s([a-z0-9]+)$|rx-51 n900|rm-(1031|104[25]|106[234567]|107[234567]|1089|109[0269]|1109|111[34]|1127|1141|1154)|ta-[0-9]{4} build|(adr|android) 5\.[01].* n1|5130c\-2|arm; 909|id336|genm14/i' => 'nokia', // also includes the 'Microsoft' branded Lumia devices,
         '/meeg/i' => 'meeg',
         '/mofut/i' => 'mofut',
         '/majestic/i' => 'majestic',
@@ -321,7 +321,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/dialog k35/i' => 'dialog',
         // @todo: general rules
         '/auxus/i' => 'iberry',
-        '/lumia|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|symbian.*\s([a-z0-9]+)$|rx-51 n900|rm-(1031|104[25]|106[234567]|107[234567]|1089|109[029]|1109|111[34]|1127|1141|1154)|ta-[0-9]{4} build|(adr|android) 5\.[01].* n1|5130c\-2|arm; 909|id336|genm14/i' => 'nokia', // also includes the 'Microsoft' branded Lumia devices,
         '/(adr|android) 4\.4.* n1/i' => 'newsman',
         '/(adr|android) 4\.2.* n1/i' => 'oppo',
         '/(adr|android) 4\.0.* n1/i' => 'tizzbird',
