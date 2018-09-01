@@ -741,6 +741,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/cyclone [^\/;]+ build/i' => 'sumvision',
         '/ctc[0-9]{3}/i' => 'ctc',
         '/grv11/i' => 'gorila',
+        '/unnecto|(u513|u61[1356]|u7[12]0|u\-830|u90[35])[);\/ ]/i' => 'unnecto',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
