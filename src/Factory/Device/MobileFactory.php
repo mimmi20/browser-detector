@@ -69,7 +69,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/easypix|easypad|easyphone|junior 4\.0/i' => 'easypix',
         '/xoro/i' => 'xoro',
         '/memup/i' => 'memup',
-        '/fujitsu|m532|m305|f\-0[0-9][def]|is11t|fartm933kz/i' => 'fujitsu',
         '/honlin/i' => 'honlin',
         '/huawei/i' => 'huawei',
         '/micromax/i' => 'micromax',
@@ -131,6 +130,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/gt\-9000/i' => 'star',
         '/sc\-74jb|sc\-91mid/i' => 'supersonic',
         '/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-/i' => 'samsung', // must be before orange and sprint
+        '/fujitsu|m532|m305|f\-0[0-9][def]|is11t|fartm933kz/i' => 'fujitsu',
         '/sprint/i' => 'sprint',
         '/gionee/i' => 'gionee',
         '/videocon/i' => 'videocon',
