@@ -1097,7 +1097,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.1599.36",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -2645,7 +2645,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -2861,7 +2861,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "36.0.1985.135",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -2897,7 +2897,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "36.0.1985.135",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -3221,7 +3221,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -4121,7 +4121,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "55.0.2883.91",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -4157,7 +4157,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "38.0.2125.102",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -4193,7 +4193,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -4229,7 +4229,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -4301,7 +4301,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "53.0.2785.124",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -5489,7 +5489,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -5793,6 +5793,150 @@
       "name": "WebKit",
       "version": "535.19.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0; ru-ru; 5080X Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "5080X",
+      "marketingName": "One Touch Shine Lite LTE",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; 9008X Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "9008X",
+      "marketingName": "One Touch A3 XL",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 4013D Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "4013D",
+      "marketingName": "One Touch Pixi 3 (4)",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 480,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "67.0.3396.87",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; 5026D Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "5026D",
+      "marketingName": "3C Dual SIM",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1440,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
     }
   }
 ]

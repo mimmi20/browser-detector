@@ -139,6 +139,34 @@
     },
     "engine": "webkit"
   },
+  "android webview": {
+    "name": "Android WebView",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Chrome"
+      ]
+    },
+    "engine": null
+  },
+  "antgalio": {
+    "name": "ANTGalio",
+    "manufacturer": "Ant",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ANTGalio"
+      ]
+    },
+    "engine": null
+  },
   "motorola webkit": {
     "name": "Motorola Webkit",
     "manufacturer": "Motorola",
@@ -150,20 +178,6 @@
       "search": null
     },
     "engine": "webkit"
-  },
-  "android webview": {
-    "name": "Android WebView",
-    "manufacturer": "Google",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Version"
-      ]
-    },
-    "engine": null
   },
   "apusbrowser": {
     "name": "APUSBrowser",
@@ -3442,6 +3456,20 @@
     },
     "engine": "trident"
   },
+  "tieba": {
+    "name": "Tieba",
+    "manufacturer": "Baidu",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "tieba"
+      ]
+    },
+    "engine": null
+  },
   "tinybrowser": {
     "name": "TinyBrowser",
     "manufacturer": "Unknown",
@@ -3655,7 +3683,7 @@
   },
   "whale browser": {
     "name": "Whale Browser",
-    "manufacturer": "Unknown",
+    "manufacturer": "NhnCorporation",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "browser",

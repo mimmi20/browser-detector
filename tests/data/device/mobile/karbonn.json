@@ -17,7 +17,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -89,7 +89,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -341,7 +341,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "37.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -933,6 +933,42 @@
       "name": "WebKit",
       "version": "533.1.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; S109 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Titanium S109",
+      "marketingName": "Titanium S109",
+      "manufacturer": "Karbonn",
+      "brand": "Karbonn",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "39.0.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
     }
   }
 ]

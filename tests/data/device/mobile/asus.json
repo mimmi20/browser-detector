@@ -161,7 +161,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "49.0.2623.108",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -341,7 +341,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "39.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -1385,7 +1385,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -1673,7 +1673,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "55.0.2883.91",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -2825,7 +2825,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "47.0.2526.100",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -2861,7 +2861,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "42.0.2311.138",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -3077,7 +3077,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "37.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -3149,7 +3149,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "37.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -3329,7 +3329,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "43.0.2357.121",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -3509,7 +3509,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "4.0.0",
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -3633,6 +3633,78 @@
       "name": "WebKit",
       "version": "534.30.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; ASUS_Z012DC Build/OPR1.170623.026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Z012DC",
+      "marketingName": "ZenFone 3",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; P00A Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P00A",
+      "marketingName": "Zenpad 8.0 Z380M",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1280,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
     }
   }
 ]

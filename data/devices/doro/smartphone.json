@@ -1,4 +1,16 @@
 {
+  "general doro device": {
+    "codename": "general Doro Device",
+    "marketingName": "general Doro Device",
+    "manufacturer": "Doro",
+    "brand": "Doro",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "doro 8030": {
     "codename": "8030",
     "marketingName": "8030",
@@ -47,16 +59,16 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
-  "general doro device": {
-    "codename": "general Doro Device",
-    "marketingName": "general Doro Device",
+  "doro 8031": {
+    "codename": "8031",
+    "marketingName": "8031",
     "manufacturer": "Doro",
     "brand": "Doro",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
     "dualOrientation": true
   }
 }

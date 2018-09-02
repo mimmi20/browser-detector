@@ -98,6 +98,7 @@ class Tv
             'crkey',
             'metz',
             'omi/',
+            'netcast',
         ];
 
         if (!$this->useragent->containsAny($tvDevices, false)) {

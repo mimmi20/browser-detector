@@ -757,42 +757,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.1) Gecko/20090725 Moblin/3.5.1-2.5.14.moblin2 Shiretoko/3.5.1"
-    },
-    "device": {
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "Unknown",
-      "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "3.5.1",
-      "manufacturer": "MozillaFoundation",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Moblin",
-      "marketingName": "Moblin",
-      "version": "0.0.0",
-      "manufacturer": "Unknown",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.9.1.1",
-      "manufacturer": "MozillaFoundation"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux armv7l; rv:17.0) Gecko/20100101 Firefox/17.0"
     },
     "device": {
@@ -1040,6 +1004,42 @@
     "engine": {
       "name": "WebKit",
       "version": "536.11.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; NetCast; U) AppleWwbKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.33 Safari/537.31 SmartTV/5.0"
+    },
+    "device": {
+      "deviceName": "general TV Device",
+      "marketingName": "general TV Device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "pointingMethod": null,
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": false,
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "26.0.1410.33",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "NetCast",
+      "marketingName": "NetCast",
+      "version": "0.0.0",
+      "manufacturer": "Lg",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
       "manufacturer": "Apple"
     }
   }

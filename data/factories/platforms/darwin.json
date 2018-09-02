@@ -1,16 +1,25 @@
 {
   "rules": {
-    "/cfnetwork\\/897.*\\(x86_64\\)/i": "mac os x",
+    "/darwin\\/\\d+\\.\\d+.*\\(x86_64\\)/i": "mac os x",
+    "/cfnetwork\\/971/i": "ios",
+    "/cfnetwork\\/969/i": "ios",
+    "/cfnetwork\\/962/i": "ios",
+    "/cfnetwork\\/958/i": "ios",
+    "/cfnetwork\\/955/i": "ios",
+    "/cfnetwork\\/948/i": "ios",
+    "/cfnetwork\\/902/i": "ios",
+    "/cfnetwork\\/901/i": "ios",
     "/cfnetwork\\/897/i": "ios",
-    "/cfnetwork\\/887.*\\(x86_64\\)/i": "mac os x",
+    "/cfnetwork\\/894/i": "ios",
+    "/cfnetwork\\/893/i": "ios",
+    "/cfnetwork\\/889/i": "ios",
     "/cfnetwork\\/887/i": "ios",
-    "/cfnetwork\\/808/i": "ios",
     "/cfnetwork\\/811/i": "mac os x",
+    "/cfnetwork\\/808/i": "ios",
     "/cfnetwork\\/807/i": "mac os x",
     "/cfnetwork\\/802/i": "mac os x",
     "/cfnetwork\\/798/i": "mac os x",
     "/cfnetwork\\/796/i": "mac os x",
-    "/cfnetwork\\/790.*\\(x86_64\\)/i": "mac os x",
     "/cfnetwork\\/790/i": "ios",
     "/cfnetwork\\/760/i": "mac os x",
     "/cfnetwork\\/758/i": "ios",
@@ -52,8 +61,7 @@
     "/cfnetwork\\/4\\.0/i": "mac os x",
     "/cfnetwork\\/1\\.2/i": "mac os x",
     "/cfnetwork\\/1\\.1/i": "mac os x",
-    "/darwin\\/\\d{2}\\.\\d{2}.*\\(x86_64\\)/i": "mac os x",
-    "/darwin\\/\\d{2}\\.\\d{2}.*/i": "ios"
+    "/darwin\\/\\d+\\.\\d+.*/i": "ios"
   },
   "generic": "darwin"
 }

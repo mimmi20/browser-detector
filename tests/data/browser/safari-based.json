@@ -7060,15 +7060,15 @@
       "user-agent": "WorxWebAppStore/10.5.10.1 CFNetwork/811.5.4 Darwin/16.6.0"
     },
     "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
+      "deviceName": "general Apple Device",
+      "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
+      "pointingMethod": "touchscreen",
       "resolutionWidth": null,
       "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "WorxWebAppStore",
@@ -7096,15 +7096,15 @@
       "user-agent": "MailBuzzr%20Hotmail/5002 CFNetwork/811.4.18 Darwin/16.5.0"
     },
     "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
+      "deviceName": "general Apple Device",
+      "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
+      "pointingMethod": "touchscreen",
       "resolutionWidth": null,
       "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "HotmailBuzzr",
@@ -7132,15 +7132,15 @@
       "user-agent": "BSNBrowserLite/1001 CFNetwork/811.5.4 Darwin/16.6.0"
     },
     "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
+      "deviceName": "general Apple Device",
+      "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
+      "pointingMethod": "touchscreen",
       "resolutionWidth": null,
       "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "BSNBrowserLite",
@@ -7240,15 +7240,15 @@
       "user-agent": "com.apple.mobilenotes.SharingExtension/1140.75 CFNetwork/811.5.4 Darwin/16.6.0"
     },
     "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
+      "deviceName": "general Apple Device",
+      "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
+      "pointingMethod": "touchscreen",
       "resolutionWidth": null,
       "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "MobileNotes",
@@ -8492,6 +8492,42 @@
     "engine": {
       "name": "WebKit",
       "version": "534.51.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ LG Browser/5.00.00(+mouse+3D+SCREEN+TUNER; LGE; 47LM9600-NA; 06.00.00; 0x00000001;); LG NetCast.TV-2012 0"
+    },
+    "device": {
+      "deviceName": "47LM9600-NA",
+      "marketingName": "47LM9600-NA",
+      "manufacturer": "Lg",
+      "brand": "Lg",
+      "pointingMethod": null,
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": false,
+      "type": "tv"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "5.00.00",
+      "manufacturer": "Lg",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.26.0",
       "manufacturer": "Apple"
     }
   }

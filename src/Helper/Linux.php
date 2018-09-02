@@ -103,6 +103,8 @@ class Linux
             'cros',
             'moblin',
             'esx',
+            'netcast',
+            'kantonix',
             // browsers on linux
             'dillo',
             'gvfs',

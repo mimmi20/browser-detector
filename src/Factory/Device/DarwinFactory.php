@@ -22,8 +22,8 @@ use Psr\Log\LoggerInterface;
 class DarwinFactory implements DeviceFactoryInterface
 {
     private $factories = [
-        '/cfnetwork\/.*\((?:x86_64|i386)\)/i' => 'desktop',
-        '/cfnetwork\/(?:887|808|790|75[78]|711|709|672|60[29]|548|485|467|459)/i' => 'mobile',
+        '/cfnetwork\/.*\((x86_64|i386)\)/i' => 'desktop',
+        '/cfnetwork\/(971|96[92]|95[85]|948|90[21]|89[743]|88[79]|811|808|790|75[78]|711|709|672|60[29]|548|485|467|459)/i' => 'mobile',
     ];
 
     /**
