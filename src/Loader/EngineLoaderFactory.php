@@ -46,6 +46,8 @@ class EngineLoaderFactory
     }
 
     /**
+     * @throws \Seld\JsonLint\ParsingException
+     *
      * @return GenericLoaderInterface
      */
     public function __invoke(): GenericLoaderInterface

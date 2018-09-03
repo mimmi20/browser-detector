@@ -19,6 +19,7 @@ use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
+use Seld\JsonLint\ParsingException;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaRequest\Constants;
 use UaRequest\GenericRequestFactory;
@@ -1061,5 +1062,104 @@ class DetectorTest extends TestCase
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
         self::assertSame('webkit-test', $result->getEngine()->getName());
         self::assertSame('iOS', $result->getOs()->getName());
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testGetBrowserWithBrowserFactoryFail(): void
+    {
+        $logger = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+            ->getMock();
+        $logger
+            ->expects(self::exactly(2))
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::once())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+        $deviceFactory
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('testagent')
+            ->will(self::returnValue([new Device('testDevice'), new Os('iOS')]));
+
+        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+        $platformFactory
+            ->expects(self::never())
+            ->method('__invoke')
+            ->with('testagent')
+            ->will(self::returnValue(new Os()));
+
+        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+        $browserFactory
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('testagent')
+            ->willThrowException(new ParsingException('parsing failed'));
+
+        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke', 'load'])
+            ->getMock();
+        $engineFactory
+            ->expects(self::never())
+            ->method('__invoke')
+            ->with('testagent')
+            ->will(self::returnValue(new Engine('test-engine')));
+        $engineFactory
+            ->expects(self::once())
+            ->method('load')
+            ->with('webkit', 'testagent')
+            ->will(self::returnValue(new Engine('webkit-test')));
+
+        /** @var NullLogger $logger */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineFactory $engineFactory */
+        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+
+        /* @var Result $result */
+        $result = $object($message);
+
+        self::assertInstanceOf(Result::class, $result);
+        self::assertInstanceOf(Device::class, $result->getDevice());
+        self::assertInstanceOf(Browser::class, $result->getBrowser());
+        self::assertNull($result->getBrowser()->getName());
     }
 }

@@ -48,6 +48,8 @@ class PlatformLoaderFactory
     /**
      * @param string $mode
      *
+     * @throws \Seld\JsonLint\ParsingException
+     *
      * @return GenericLoaderInterface
      */
     public function __invoke(string $mode): GenericLoaderInterface

@@ -19,6 +19,7 @@ use BrowserDetector\Loader\NotFoundException;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
+use Seld\JsonLint\ParsingException;
 use UaNormalizer\NormalizerFactory;
 use UaRequest\GenericRequest;
 use UaRequest\GenericRequestFactory;
@@ -116,8 +117,6 @@ class Detector implements DetectorInterface
     /**
      * @param \UaRequest\GenericRequest $request
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return \UaResult\Result\Result
      */
     private function parse(GenericRequest $request)
@@ -130,7 +129,7 @@ class Detector implements DetectorInterface
         /* @var \UaResult\Os\OsInterface $platform */
         try {
             [$device, $platform] = $deviceFactory($deviceUa);
-        } catch (NotFoundException $e) {
+        } catch (NotFoundException | InvalidArgumentException | ParsingException $e) {
             $this->logger->warning($e);
 
             $device   = null;
@@ -145,7 +144,7 @@ class Detector implements DetectorInterface
 
             try {
                 $platform = $platformFactory($browserUa);
-            } catch (NotFoundException $e) {
+            } catch (NotFoundException | InvalidArgumentException | ParsingException $e) {
                 $this->logger->warning($e);
                 $platform = null;
             }
@@ -155,19 +154,30 @@ class Detector implements DetectorInterface
 
         /* @var \UaResult\Browser\BrowserInterface $browser */
         /* @var \UaResult\Engine\EngineInterface $engine */
-        [$browser, $engine] = $browserFactory($browserUa);
+        try {
+            [$browser, $engine] = $browserFactory($browserUa);
+        } catch (InvalidArgumentException | ParsingException $e) {
+            $this->logger->error($e);
+
+            $browser = null;
+            $engine  = null;
+        }
 
         if (null === $engine) {
             $this->logger->debug('engine not detected from browser');
 
             if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
-                $engine = $this->engineFactory->load('webkit', $browserUa);
+                try {
+                    $engine = $this->engineFactory->load('webkit', $browserUa);
+                } catch (ParsingException $e) {
+                    $this->logger->error($e);
+                }
             } else {
                 $engineFactory = $this->engineFactory;
 
                 try {
                     $engine = $engineFactory($browserUa);
-                } catch (InvalidArgumentException $e) {
+                } catch (InvalidArgumentException | ParsingException $e) {
                     $this->logger->error($e);
                 }
             }

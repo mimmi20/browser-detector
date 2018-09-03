@@ -21,6 +21,7 @@ interface PlatformFactoryInterface
      * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return \UaResult\Os\OsInterface
      */

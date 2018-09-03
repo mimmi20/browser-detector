@@ -50,6 +50,8 @@ class DeviceLoaderFactory
      * @param string $company
      * @param string $mode
      *
+     * @throws \Seld\JsonLint\ParsingException
+     *
      * @return GenericLoaderInterface
      */
     public function __invoke(string $company, string $mode): GenericLoaderInterface
