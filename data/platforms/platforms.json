@@ -39,6 +39,15 @@
       "search": null
     }
   },
+  "audio os": {
+    "name": "audioOS",
+    "marketingName": "audioOS",
+    "manufacturer": "Apple",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\Ios",
+      "search": null
+    }
+  },
   "bada": {
     "name": "Bada",
     "marketingName": "Bada",
@@ -723,6 +732,15 @@
       "search": [
         "Web0S"
       ]
+    }
+  },
+  "watch os": {
+    "name": "watchOS",
+    "marketingName": "watchOS",
+    "manufacturer": "Apple",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\Ios",
+      "search": null
     }
   },
   "windows": {
