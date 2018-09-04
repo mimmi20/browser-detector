@@ -11,10 +11,8 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Loader\Helper\CacheKey;
-use BrowserDetector\Loader\Helper\InitData;
-use BrowserDetector\Loader\Helper\InitRules;
+use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Helper\Rules;
 use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
 use Symfony\Component\Finder\Finder;
@@ -24,25 +22,16 @@ use UaResult\Company\CompanyLoader;
 
 class DeviceLoaderFactory
 {
-    private const CACHE_PREFIX = 'device';
-
-    /**
-     * @var \BrowserDetector\Cache\CacheInterface
-     */
-    private $cache;
-
     /**
      * @var \Psr\Log\LoggerInterface
      */
     private $logger;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(LoggerInterface $logger)
     {
-        $this->cache  = $cache;
         $this->logger = $logger;
     }
 
@@ -60,50 +49,46 @@ class DeviceLoaderFactory
 
         $key = sprintf('%s::%s', $company, $mode);
 
-        if (!array_key_exists($key, $loaders)) {
-            $dataPath  = __DIR__ . '/../../data/devices/' . $company;
-            $rulesPath = __DIR__ . '/../../data/factories/devices/' . $mode . '/' . $company . '.json';
-
-            $finder = new Finder();
-            $finder->files();
-            $finder->name('*.json');
-            $finder->ignoreDotFiles(true);
-            $finder->ignoreVCS(true);
-            $finder->ignoreUnreadableDirs();
-            $finder->in($dataPath);
-
-            $jsonParser = new JsonParser();
-            $cacheKey   = new CacheKey(self::CACHE_PREFIX, $dataPath, $rulesPath);
-            $file       = new SplFileInfo($rulesPath, '', '');
-            $initRules  = new InitRules($this->cache, $jsonParser, $cacheKey, $file);
-            $initData   = new InitData(
-                $this->cache,
-                $finder,
-                $jsonParser,
-                $cacheKey
-            );
-
-            $loaderFactory  = new PlatformLoaderFactory($this->cache, $this->logger);
-            $platformLoader = $loaderFactory('unknown');
-
-            $loader = new DeviceLoader(
-                $this->cache,
-                $this->logger,
-                $cacheKey,
-                CompanyLoader::getInstance(),
-                new TypeLoader(),
-                $platformLoader
-            );
-
-            $loaders[$key] = new GenericLoader(
-                $this->cache,
-                $this->logger,
-                $cacheKey,
-                $initRules,
-                $initData,
-                $loader
-            );
+        if (array_key_exists($key, $loaders)) {
+            return $loaders[$key];
         }
+
+        $dataPath  = __DIR__ . '/../../data/devices/' . $company;
+        $rulesPath = __DIR__ . '/../../data/factories/devices/' . $mode . '/' . $company . '.json';
+
+        $finder = new Finder();
+        $finder->files();
+        $finder->name('*.json');
+        $finder->ignoreDotFiles(true);
+        $finder->ignoreVCS(true);
+        $finder->ignoreUnreadableDirs();
+        $finder->in($dataPath);
+
+        $jsonParser = new JsonParser();
+        $file       = new SplFileInfo($rulesPath, '', '');
+        $initRules  = new Rules($jsonParser, $file);
+        $initData   = new Data(
+            $finder,
+            $jsonParser
+        );
+
+        $loaderFactory  = new PlatformLoaderFactory($this->logger);
+        $platformLoader = $loaderFactory('unknown');
+
+        $loader = new DeviceLoader(
+            $this->logger,
+            CompanyLoader::getInstance(),
+            new TypeLoader(),
+            $platformLoader,
+            $initData
+        );
+
+        $loaders[$key] = new GenericLoader(
+            $this->logger,
+            $initRules,
+            $initData,
+            $loader
+        );
 
         return $loaders[$key];
     }

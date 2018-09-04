@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device;
 
-use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Device\MobileFactory;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\GenericLoader;
@@ -26,8 +25,6 @@ class MobileFactoryTest extends TestCase
     private $object;
 
     /**
-     * @throws \ReflectionException
-     *
      * @return void
      */
     protected function setUp(): void
@@ -35,15 +32,13 @@ class MobileFactoryTest extends TestCase
         /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
 
-        /** @var Cache $cache */
-        $cache = $this->createMock(Cache::class);
-
-        $this->object = new MobileFactory($cache, $logger);
+        $this->object = new MobileFactory($logger);
     }
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
@@ -80,6 +75,7 @@ class MobileFactoryTest extends TestCase
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */

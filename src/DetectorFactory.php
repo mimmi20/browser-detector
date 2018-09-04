@@ -49,12 +49,12 @@ class DetectorFactory
         static $detector = null;
 
         if (null === $detector) {
-            $deviceFactory   = new DeviceFactory($this->cache, $this->logger);
-            $platformFactory = new PlatformFactory($this->cache, $this->logger);
-            $browserFactory  = new BrowserFactory($this->cache, $this->logger);
-            $engineFactory   = new EngineFactory($this->cache, $this->logger);
+            $deviceFactory   = new DeviceFactory($this->logger);
+            $platformFactory = new PlatformFactory($this->logger);
+            $browserFactory  = new BrowserFactory($this->logger);
+            $engineFactory   = new EngineFactory($this->logger);
 
-            $detector = new Detector($this->logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+            $detector = new Detector($this->logger, $this->cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
         }
 
         return $detector;

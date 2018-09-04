@@ -11,10 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
-use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\GenericLoader;
-use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
@@ -30,9 +29,11 @@ use UaResult\Os\OsInterface;
 class DeviceLoaderTest extends TestCase
 {
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
-    public function testInvokeCacheException(): void
+    public function testInvokeNotInCache(): void
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
@@ -60,42 +61,23 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['device_default__initialized', true],
-            ['device_default__generic-device', true],
-        ];
-
-        $cache
-            ->expects(self::never())
-            ->method('hasItem')
-            ->will(self::returnValueMap($map));
-
-        $cache
+        $initData
             ->expects(self::once())
+            ->method('hasItem')
+            ->with('test-key')
+            ->will(self::returnValue(false));
+
+        $initData
+            ->expects(self::never())
             ->method('getItem')
-            ->with('device_default__key')
+            ->with('test-key')
             ->will(self::throwException(new InvalidArgumentException('fail')));
 
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'device_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with('test-key')
-            ->will(self::returnValueMap($map));
-
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
@@ -127,19 +109,17 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $platformLoader */
+        /** @var Data $initData */
         $object = new DeviceLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $platformLoader
+            $platformLoader,
+            $initData
         );
 
         $this->expectException(NotFoundException::class);
@@ -149,9 +129,11 @@ class DeviceLoaderTest extends TestCase
     }
 
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
-    public function testInvokeCacheNotFound(): void
+    public function testInvokeNullInCache(): void
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
@@ -179,41 +161,22 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['device_default__initialized', true],
-            ['device_default__generic-device', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('device_default__key')
-            ->will(self::returnValue(null));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'device_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue(null));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -246,19 +209,17 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $platformLoader */
+        /** @var Data $initData */
         $object = new DeviceLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $platformLoader
+            $platformLoader,
+            $initData
         );
 
         $this->expectException(NotFoundException::class);
@@ -268,6 +229,8 @@ class DeviceLoaderTest extends TestCase
     }
 
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
     public function testInvokeNoVersion(): void
@@ -298,20 +261,16 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['device_default__initialized', true],
-            ['device_default__generic-device', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $deviceData = (object) [
             'version' => (object) ['class' => null],
@@ -327,26 +286,11 @@ class DeviceLoaderTest extends TestCase
             'dualOrientation' => true,
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('device_default__key')
-            ->will(self::returnValue($deviceData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'device_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($deviceData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -379,19 +323,17 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $platformLoader */
+        /** @var Data $initData */
         $object = new DeviceLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $platformLoader
+            $platformLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test-ua');
@@ -404,6 +346,8 @@ class DeviceLoaderTest extends TestCase
     }
 
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
     public function testInvokeGenericVersionAndPlatformException(): void
@@ -437,20 +381,16 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['device_default__initialized', true],
-            ['device_default__generic-device', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $deviceData = (object) [
             'version' => (object) ['class' => null],
@@ -466,26 +406,11 @@ class DeviceLoaderTest extends TestCase
             'dualOrientation' => true,
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('device_default__key')
-            ->will(self::returnValue($deviceData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'device_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($deviceData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -525,19 +450,17 @@ class DeviceLoaderTest extends TestCase
             ->method('init')
             ->willReturnSelf();
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $platformLoader */
+        /** @var Data $initData */
         $object = new DeviceLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $platformLoader
+            $platformLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test/1.0');
@@ -550,6 +473,8 @@ class DeviceLoaderTest extends TestCase
     }
 
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
     public function testInvokeGenericVersionAndPlatformInvalidException(): void
@@ -583,20 +508,16 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['device_default__initialized', true],
-            ['device_default__generic-device', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $deviceData = (object) [
             'version' => (object) ['class' => null],
@@ -612,26 +533,11 @@ class DeviceLoaderTest extends TestCase
             'dualOrientation' => true,
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('device_default__key')
-            ->will(self::returnValue($deviceData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'device_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($deviceData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -671,19 +577,17 @@ class DeviceLoaderTest extends TestCase
             ->method('init')
             ->willReturnSelf();
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $platformLoader */
+        /** @var Data $initData */
         $object = new DeviceLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $platformLoader
+            $platformLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test/1.0');
@@ -696,6 +600,8 @@ class DeviceLoaderTest extends TestCase
     }
 
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
     public function testInvokeVersionAndPlatform(): void
@@ -726,20 +632,16 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['device_default__initialized', true],
-            ['device_default__generic-device', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $deviceData = (object) [
             'version' => (object) ['class' => null],
@@ -755,26 +657,11 @@ class DeviceLoaderTest extends TestCase
             'dualOrientation' => true,
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('device_default__key')
-            ->will(self::returnValue($deviceData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'device_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($deviceData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -814,19 +701,17 @@ class DeviceLoaderTest extends TestCase
             ->method('init')
             ->willReturnSelf();
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $platformLoader */
+        /** @var Data $initData */
         $object = new DeviceLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $platformLoader
+            $platformLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test/1.0');

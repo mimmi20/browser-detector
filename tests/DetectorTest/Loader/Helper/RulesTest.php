@@ -11,25 +11,21 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader\Helper;
 
-use BrowserDetector\Cache\Cache;
-use BrowserDetector\Loader\Helper\CacheKey;
-use BrowserDetector\Loader\Helper\InitRules;
+use BrowserDetector\Loader\Helper\Rules;
 use PHPUnit\Framework\TestCase;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use Symfony\Component\Finder\SplFileInfo;
 
-class InitRulesTest extends TestCase
+class RulesTest extends TestCase
 {
     /**
-     * @throws \ReflectionException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
     public function testInvokeFail(): void
     {
-        $cache      = $this->createMock(Cache::class);
         $jsonParser = $this->getMockBuilder(JsonParser::class)
             ->disableOriginalConstructor()
             ->setMethods(['parse'])
@@ -40,14 +36,11 @@ class InitRulesTest extends TestCase
             ->method('parse')
             ->will(self::throwException(new ParsingException('error')));
 
-        $cacheKey = $this->createMock(CacheKey::class);
-        $file     = $this->createMock(SplFileInfo::class);
+        $file = $this->createMock(SplFileInfo::class);
 
-        /** @var Cache $cache */
         /** @var JsonParser $jsonParser */
-        /** @var CacheKey $cacheKey */
         /** @var SplFileInfo $file */
-        $object = new InitRules($cache, $jsonParser, $cacheKey, $file);
+        $object = new Rules($jsonParser, $file);
 
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage('file "" contains invalid json');
@@ -55,14 +48,12 @@ class InitRulesTest extends TestCase
     }
 
     /**
-     * @throws \ReflectionException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return void
      */
     public function testInvokeSuccess(): void
     {
-        $cache      = $this->createMock(Cache::class);
         $jsonParser = $this->getMockBuilder(JsonParser::class)
             ->disableOriginalConstructor()
             ->setMethods(['parse'])
@@ -73,14 +64,11 @@ class InitRulesTest extends TestCase
             ->method('parse')
             ->will(self::returnValue(['rules' => 'abc', 'generic' => 'test']));
 
-        $cacheKey = $this->createMock(CacheKey::class);
-        $file     = $this->createMock(SplFileInfo::class);
+        $file = $this->createMock(SplFileInfo::class);
 
-        /** @var Cache $cache */
         /** @var JsonParser $jsonParser */
-        /** @var CacheKey $cacheKey */
         /** @var SplFileInfo $file */
-        $object = new InitRules($cache, $jsonParser, $cacheKey, $file);
+        $object = new Rules($jsonParser, $file);
 
         $object();
 

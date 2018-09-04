@@ -11,27 +11,16 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader\Helper;
 
-use BrowserDetector\Cache\CacheInterface;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use Symfony\Component\Finder\SplFileInfo;
 
-class InitRules
+class Rules
 {
-    /**
-     * @var \BrowserDetector\Cache\CacheInterface
-     */
-    private $cache;
-
     /**
      * @var \Seld\JsonLint\JsonParser
      */
     private $jsonParser;
-
-    /**
-     * @var \BrowserDetector\Loader\Helper\CacheKey
-     */
-    private $getCacheKey;
 
     /**
      * @var \Symfony\Component\Finder\SplFileInfo
@@ -39,21 +28,54 @@ class InitRules
     private $file;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface   $cache
-     * @param \Seld\JsonLint\JsonParser               $jsonParser
-     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
-     * @param \Symfony\Component\Finder\SplFileInfo   $file
+     * @var array
+     */
+    private $rules = [];
+
+    /**
+     * @var string|null
+     */
+    private $default;
+
+    /**
+     * @var bool
+     */
+    private $initialized = false;
+
+    /**
+     * @param \Seld\JsonLint\JsonParser             $jsonParser
+     * @param \Symfony\Component\Finder\SplFileInfo $file
      */
     public function __construct(
-        CacheInterface $cache,
         JsonParser $jsonParser,
-        CacheKey $cacheKey,
         SplFileInfo $file
     ) {
-        $this->cache       = $cache;
-        $this->jsonParser  = $jsonParser;
-        $this->getCacheKey = $cacheKey;
-        $this->file        = $file;
+        $this->jsonParser = $jsonParser;
+        $this->file       = $file;
+    }
+
+    /**
+     * @return array
+     */
+    public function getRules(): array
+    {
+        return $this->rules;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getDefault(): ?string
+    {
+        return $this->default;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isInitialized(): bool
+    {
+        return $this->initialized;
     }
 
     /**
@@ -63,8 +85,6 @@ class InitRules
      */
     public function __invoke(): void
     {
-        $cacheKey = $this->getCacheKey;
-
         try {
             $fileData = $this->jsonParser->parse(
                 $this->file->getContents(),
@@ -74,7 +94,9 @@ class InitRules
             throw new \RuntimeException('file "' . $this->file->getPathname() . '" contains invalid json', 0, $e);
         }
 
-        $this->cache->setItem($cacheKey('rules'), $fileData['rules']);
-        $this->cache->setItem($cacheKey('generic'), $fileData['generic']);
+        $this->rules   = $fileData['rules'];
+        $this->default = $fileData['generic'];
+
+        $this->initialized = true;
     }
 }

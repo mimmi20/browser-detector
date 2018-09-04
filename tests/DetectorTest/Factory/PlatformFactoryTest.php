@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
-use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\PlatformLoaderFactory;
@@ -35,10 +34,7 @@ class PlatformFactoryTest extends TestCase
         /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
 
-        /** @var Cache $cache */
-        $cache = $this->createMock(Cache::class);
-
-        $this->object = new PlatformFactory($cache, $logger);
+        $this->object = new PlatformFactory($logger);
     }
 
     /**
@@ -50,6 +46,7 @@ class PlatformFactoryTest extends TestCase
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */

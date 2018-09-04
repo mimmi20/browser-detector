@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory\Device;
 
-use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Psr\Log\LoggerInterface;
@@ -752,12 +751,11 @@ class MobileFactory implements DeviceFactoryInterface
     private $loaderFactory;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(LoggerInterface $logger)
     {
-        $this->loaderFactory = new DeviceLoaderFactory($cache, $logger);
+        $this->loaderFactory = new DeviceLoaderFactory($logger);
     }
 
     /**
@@ -767,6 +765,7 @@ class MobileFactory implements DeviceFactoryInterface
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return array
      */

@@ -11,14 +11,13 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
-use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\EngineLoader;
-use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\InvalidArgumentException;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaResult\Company\Company;
 use UaResult\Company\CompanyLoader;
 use UaResult\Engine\EngineInterface;
@@ -26,9 +25,11 @@ use UaResult\Engine\EngineInterface;
 class EngineLoaderTest extends TestCase
 {
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
-    public function testInvokeCacheException(): void
+    public function testInvokeNotInCache(): void
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
@@ -56,42 +57,23 @@ class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['engine_default__initialized', true],
-            ['engine_default__generic-engine', true],
-        ];
-
-        $cache
-            ->expects(self::never())
-            ->method('hasItem')
-            ->will(self::returnValueMap($map));
-
-        $cache
+        $initData
             ->expects(self::once())
+            ->method('hasItem')
+            ->with('test-key')
+            ->will(self::returnValue(false));
+
+        $initData
+            ->expects(self::never())
             ->method('getItem')
-            ->with('engine_default__key')
+            ->with('test-key')
             ->will(self::throwException(new InvalidArgumentException('fail')));
 
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'engine_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with('test-key')
-            ->will(self::returnValueMap($map));
-
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
@@ -103,15 +85,13 @@ class EngineLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn(new Company('Unknown'));
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
+        /** @var Data $initData */
         $object = new EngineLoader(
-            $cache,
             $logger,
-            $cacheKey,
-            $companyLoader
+            $companyLoader,
+            $initData
         );
 
         $this->expectException(NotFoundException::class);
@@ -121,9 +101,11 @@ class EngineLoaderTest extends TestCase
     }
 
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
-    public function testInvokeCacheNotFound(): void
+    public function testInvokeNullInCache(): void
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
@@ -151,41 +133,22 @@ class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['engine_default__initialized', true],
-            ['engine_default__generic-engine', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('engine_default__key')
-            ->will(self::returnValue(null));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'engine_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue(null));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -198,15 +161,13 @@ class EngineLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn(new Company('Unknown'));
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
+        /** @var Data $initData */
         $object = new EngineLoader(
-            $cache,
             $logger,
-            $cacheKey,
-            $companyLoader
+            $companyLoader,
+            $initData
         );
 
         $this->expectException(NotFoundException::class);
@@ -216,6 +177,8 @@ class EngineLoaderTest extends TestCase
     }
 
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
     public function testInvokeNoVersion(): void
@@ -246,20 +209,16 @@ class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['engine_default__initialized', true],
-            ['engine_default__generic-engine', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $engineData = (object) [
             'version' => (object) ['class' => null],
@@ -267,26 +226,11 @@ class EngineLoaderTest extends TestCase
             'name' => null,
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('engine_default__key')
-            ->will(self::returnValue($engineData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'engine_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($engineData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -299,15 +243,13 @@ class EngineLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn(new Company('Unknown'));
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
+        /** @var Data $initData */
         $object = new EngineLoader(
-            $cache,
             $logger,
-            $cacheKey,
-            $companyLoader
+            $companyLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test-ua');
@@ -316,6 +258,8 @@ class EngineLoaderTest extends TestCase
     }
 
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
     public function testInvokeGenericVersion(): void
@@ -346,20 +290,16 @@ class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['engine_default__initialized', true],
-            ['engine_default__generic-engine', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $engineData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
@@ -367,26 +307,11 @@ class EngineLoaderTest extends TestCase
             'name' => null,
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('engine_default__key')
-            ->will(self::returnValue($engineData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'engine_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($engineData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -399,15 +324,13 @@ class EngineLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn(new Company('Unknown'));
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
+        /** @var Data $initData */
         $object = new EngineLoader(
-            $cache,
             $logger,
-            $cacheKey,
-            $companyLoader
+            $companyLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test-ua');
@@ -416,6 +339,8 @@ class EngineLoaderTest extends TestCase
     }
 
     /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
      * @return void
      */
     public function testInvokeVersion(): void
@@ -446,20 +371,16 @@ class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['engine_default__initialized', true],
-            ['engine_default__generic-engine', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $engineData = (object) [
             'version' => (object) ['class' => Test::class],
@@ -467,26 +388,11 @@ class EngineLoaderTest extends TestCase
             'name' => null,
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('engine_default__key')
-            ->will(self::returnValue($engineData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'engine_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($engineData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -499,15 +405,13 @@ class EngineLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn(new Company('Unknown'));
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
+        /** @var Data $initData */
         $object = new EngineLoader(
-            $cache,
             $logger,
-            $cacheKey,
-            $companyLoader
+            $companyLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test-ua');

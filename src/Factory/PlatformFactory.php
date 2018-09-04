@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Helper;
 use BrowserDetector\Loader\PlatformLoaderFactory;
 use Psr\Log\LoggerInterface;
@@ -26,12 +25,11 @@ class PlatformFactory implements PlatformFactoryInterface
     private $loaderFactory;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(LoggerInterface $logger)
     {
-        $this->loaderFactory = new PlatformLoaderFactory($cache, $logger);
+        $this->loaderFactory = new PlatformLoaderFactory($logger);
     }
 
     /**

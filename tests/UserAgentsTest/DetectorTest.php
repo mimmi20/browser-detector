@@ -16,7 +16,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
-use Symfony\Component\Cache\Simple\FilesystemCache;
+use Symfony\Component\Cache\Simple\NullCache;
 use Symfony\Component\Finder\Finder;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Device\DeviceInterface;
@@ -69,7 +69,7 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = new FilesystemCache('', 0, 'cache/');
+        $cache = new NullCache();
 
         /** @var NullLogger $logger */
         $factory = new DetectorFactory($cache, $logger);

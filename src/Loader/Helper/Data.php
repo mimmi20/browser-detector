@@ -16,13 +16,8 @@ use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use Symfony\Component\Finder\Finder;
 
-class InitData
+class Data implements CacheInterface
 {
-    /**
-     * @var \BrowserDetector\Cache\CacheInterface
-     */
-    private $cache;
-
     /**
      * @var \Seld\JsonLint\JsonParser
      */
@@ -34,37 +29,89 @@ class InitData
     private $finder;
 
     /**
-     * @var \BrowserDetector\Loader\Helper\CacheKey
+     * @var array
      */
-    private $cacheKey;
+    private $items = [];
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface   $cache
-     * @param \Symfony\Component\Finder\Finder        $finder
-     * @param \Seld\JsonLint\JsonParser               $jsonParser
-     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
+     * @var bool
+     */
+    private $initialized = false;
+
+    /**
+     * @param \Symfony\Component\Finder\Finder $finder
+     * @param \Seld\JsonLint\JsonParser        $jsonParser
      */
     public function __construct(
-        CacheInterface $cache,
         Finder $finder,
-        JsonParser $jsonParser,
-        CacheKey $cacheKey
+        JsonParser $jsonParser
     ) {
-        $this->cache      = $cache;
         $this->finder     = $finder;
         $this->jsonParser = $jsonParser;
-        $this->cacheKey   = $cacheKey;
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @param string $cacheId
      *
+     * @return mixed
+     */
+    public function getItem(string $cacheId)
+    {
+        return $this->items[$cacheId];
+    }
+
+    /**
+     * @param string $cacheId
+     * @param mixed  $content
+     *
+     * @return bool
+     */
+    public function setItem(string $cacheId, $content): bool
+    {
+        return false;
+    }
+
+    /**
+     * @param string $cacheId
+     *
+     * @return bool
+     */
+    public function hasItem(string $cacheId): bool
+    {
+        return array_key_exists($cacheId, $this->items);
+    }
+
+    /**
+     * @param string $cacheId
+     *
+     * @return bool
+     */
+    public function removeItem(string $cacheId): bool
+    {
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function flush(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isInitialized(): bool
+    {
+        return $this->initialized;
+    }
+
+    /**
      * @return void
      */
     public function __invoke(): void
     {
-        $cacheKey = $this->cacheKey;
-
         foreach ($this->finder as $file) {
             /* @var \Symfony\Component\Finder\SplFileInfo $file */
             try {
@@ -77,14 +124,14 @@ class InitData
             }
 
             foreach ($fileData as $key => $data) {
-                $itemKey = $cacheKey((string) $key);
-
-                if ($this->cache->hasItem($itemKey)) {
+                if (array_key_exists($key, $this->items)) {
                     continue;
                 }
 
-                $this->cache->setItem($itemKey, $data);
+                $this->items[$key] = $data;
             }
         }
+
+        $this->initialized = true;
     }
 }

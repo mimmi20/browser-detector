@@ -11,21 +11,11 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Cache;
 
-use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
-
 /**
  * a cache proxy to be able to use the cache adapters provided by the WurflCache package
  */
 interface CacheInterface
 {
-    /**
-     * Constructor class, checks for the existence of (and loads) the cache and
-     * if needed updated the definitions
-     *
-     * @param \Psr\SimpleCache\CacheInterface $adapter
-     */
-    public function __construct(PsrCacheInterface $adapter);
-
     /**
      * Get an item.
      *

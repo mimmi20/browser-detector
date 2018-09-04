@@ -13,14 +13,14 @@ namespace BrowserDetectorTest\Loader\Helper;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\Helper\CacheKey;
-use BrowserDetector\Loader\Helper\InitData;
+use BrowserDetector\Loader\Helper\Data;
 use PHPUnit\Framework\TestCase;
 use Seld\JsonLint\JsonParser;
 use Seld\JsonLint\ParsingException;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
-class InitDataTest extends TestCase
+class DataTest extends TestCase
 {
     /**
      * @throws \ReflectionException
@@ -30,8 +30,6 @@ class InitDataTest extends TestCase
      */
     public function testInvokeFail(): void
     {
-        $cache = $this->createMock(Cache::class);
-
         $file = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->setMethods(['getContents'])
@@ -90,13 +88,9 @@ class InitDataTest extends TestCase
             ->method('parse')
             ->will(self::throwException(new ParsingException('error')));
 
-        $cacheKey = $this->createMock(CacheKey::class);
-
-        /** @var Cache $cache */
         /** @var Finder $finder */
         /** @var JsonParser $jsonParser */
-        /** @var CacheKey $cacheKey */
-        $object = new InitData($cache, $finder, $jsonParser, $cacheKey);
+        $object = new Data($finder, $jsonParser);
 
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage('file "" contains invalid json');
@@ -116,14 +110,8 @@ class InitDataTest extends TestCase
             ->setMethods(['hasItem', 'setItem'])
             ->getMock();
 
-        $map = [
-            ['rules', 'rules_key'],
-            ['generic', 'generic_key'],
-            ['generic2', 'generic_key'],
-        ];
-
         $cache
-            ->expects(self::exactly(3))
+            ->expects(self::never())
             ->method('hasItem')
             ->will(self::returnCallback(
                 static function (...$values) {
@@ -143,7 +131,7 @@ class InitDataTest extends TestCase
                 }
             ));
         $cache
-            ->expects(self::exactly(2))
+            ->expects(self::never())
             ->method('setItem')
             ->will(self::returnValue(true));
 
@@ -220,11 +208,9 @@ class InitDataTest extends TestCase
             ->method('__invoke')
             ->will(self::returnValueMap($map));
 
-        /** @var Cache $cache */
         /** @var Finder $finder */
         /** @var JsonParser $jsonParser */
-        /** @var CacheKey $cacheKey */
-        $object = new InitData($cache, $finder, $jsonParser, $cacheKey);
+        $object = new Data($finder, $jsonParser);
 
         $object();
 

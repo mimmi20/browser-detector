@@ -11,6 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
+use BrowserDetector\Cache\Cache;
 use BrowserDetector\Detector;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\DeviceFactory;
@@ -109,12 +110,29 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         /* @var \UaResult\Result\Result $result */
         $result = $object->getBrowser('testagent');
@@ -199,12 +217,29 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
         $requestFactory = new GenericRequestFactory();
@@ -293,12 +328,29 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::never())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::never())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         $this->expectException(\UnexpectedValueException::class);
         $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface');
@@ -383,12 +435,29 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         /* @var \UaResult\Result\Result $result */
         $result = $object('testagent');
@@ -473,12 +542,29 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         /* @var Result $result */
         $result = $object([Constants::HEADER_HTTP_USERAGENT => 'testagent']);
@@ -563,12 +649,29 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
@@ -657,12 +760,29 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
@@ -752,12 +872,29 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
@@ -849,12 +986,29 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
@@ -946,12 +1100,29 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
@@ -1045,12 +1216,29 @@ class DetectorTest extends TestCase
             ->with('webkit', 'testagent')
             ->will(self::returnValue(new Engine('webkit-test')));
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
@@ -1145,12 +1333,29 @@ class DetectorTest extends TestCase
             ->with('webkit', 'testagent')
             ->will(self::returnValue(new Engine('webkit-test')));
 
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
         /** @var NullLogger $logger */
+        /** @var Cache $cache */
         /** @var DeviceFactory $deviceFactory */
         /** @var PlatformFactory $platformFactory */
         /** @var BrowserFactory $browserFactory */
         /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 

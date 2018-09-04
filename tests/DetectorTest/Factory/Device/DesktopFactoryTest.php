@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device;
 
-use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Device\DesktopFactory;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\GenericLoader;
@@ -26,8 +25,6 @@ class DesktopFactoryTest extends TestCase
     private $object;
 
     /**
-     * @throws \ReflectionException
-     *
      * @return void
      */
     protected function setUp(): void
@@ -35,10 +32,7 @@ class DesktopFactoryTest extends TestCase
         /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
 
-        /** @var Cache $cache */
-        $cache = $this->createMock(Cache::class);
-
-        $this->object = new DesktopFactory($cache, $logger);
+        $this->object = new DesktopFactory($logger);
     }
 
     /**
@@ -50,6 +44,7 @@ class DesktopFactoryTest extends TestCase
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */

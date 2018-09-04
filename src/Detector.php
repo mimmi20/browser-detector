@@ -11,6 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector;
 
+use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Factory\BrowserFactoryInterface;
 use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Factory\EngineFactoryInterface;
@@ -40,6 +41,11 @@ class Detector implements DetectorInterface
     private $logger;
 
     /**
+     * @var \BrowserDetector\Cache\CacheInterface
+     */
+    private $cache;
+
+    /**
      * @var \BrowserDetector\Factory\DeviceFactoryInterface
      */
     private $deviceFactory;
@@ -63,6 +69,7 @@ class Detector implements DetectorInterface
      * sets the cache used to make the detection faster
      *
      * @param \Psr\Log\LoggerInterface                          $logger
+     * @param \BrowserDetector\Cache\CacheInterface             $cache
      * @param \BrowserDetector\Factory\DeviceFactoryInterface   $deviceFactory
      * @param \BrowserDetector\Factory\PlatformFactoryInterface $platformFactory
      * @param \BrowserDetector\Factory\BrowserFactoryInterface  $browserFactory
@@ -70,12 +77,14 @@ class Detector implements DetectorInterface
      */
     public function __construct(
         LoggerInterface $logger,
+        CacheInterface $cache,
         DeviceFactoryInterface $deviceFactory,
         PlatformFactoryInterface $platformFactory,
         BrowserFactoryInterface $browserFactory,
         EngineFactoryInterface $engineFactory
     ) {
         $this->logger          = $logger;
+        $this->cache           = $cache;
         $this->deviceFactory   = $deviceFactory;
         $this->platformFactory = $platformFactory;
         $this->browserFactory  = $browserFactory;
@@ -111,7 +120,17 @@ class Detector implements DetectorInterface
     {
         $request = $this->buildRequest($headers);
 
-        return $this->parse($request);
+        $key = sha1(serialize($request->getFilteredHeaders()));
+
+        if ($this->cache->hasItem($key)) {
+            return $this->cache->getItem($key);
+        }
+
+        $item = $this->parse($request);
+
+        $this->cache->setItem($key, $item);
+
+        return $item;
     }
 
     /**

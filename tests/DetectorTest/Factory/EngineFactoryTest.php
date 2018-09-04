@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
-use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Loader\EngineLoaderFactory;
 use BrowserDetector\Loader\GenericLoader;
@@ -28,8 +27,6 @@ class EngineFactoryTest extends TestCase
     private $object;
 
     /**
-     * @throws \ReflectionException
-     *
      * @return void
      */
     protected function setUp(): void
@@ -37,10 +34,7 @@ class EngineFactoryTest extends TestCase
         /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
 
-        /** @var Cache $cache */
-        $cache = $this->createMock(Cache::class);
-
-        $this->object = new EngineFactory($cache, $logger);
+        $this->object = new EngineFactory($logger);
     }
 
     /**
@@ -51,6 +45,7 @@ class EngineFactoryTest extends TestCase
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
@@ -104,8 +99,8 @@ class EngineFactoryTest extends TestCase
      * @param EngineInterface $expectedResult
      * @param string          $key
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */

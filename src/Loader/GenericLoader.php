@@ -11,36 +11,24 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Loader\Helper\CacheKey;
-use BrowserDetector\Loader\Helper\InitData;
-use BrowserDetector\Loader\Helper\InitRules;
+use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Helper\Rules;
 use Psr\Log\LoggerInterface;
 
 class GenericLoader implements GenericLoaderInterface
 {
-    /**
-     * @var \BrowserDetector\Cache\CacheInterface
-     */
-    private $cache;
-
     /**
      * @var \Psr\Log\LoggerInterface
      */
     private $logger;
 
     /**
-     * @var \BrowserDetector\Loader\Helper\CacheKey
-     */
-    private $cacheKey;
-
-    /**
-     * @var \BrowserDetector\Loader\Helper\InitRules
+     * @var \BrowserDetector\Loader\Helper\Rules
      */
     private $initRules;
 
     /**
-     * @var \BrowserDetector\Loader\Helper\InitData
+     * @var \BrowserDetector\Loader\Helper\Data
      */
     private $initData;
 
@@ -50,24 +38,18 @@ class GenericLoader implements GenericLoaderInterface
     private $specificLoader;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface           $cache
      * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \BrowserDetector\Loader\Helper\CacheKey         $cacheKey
-     * @param \BrowserDetector\Loader\Helper\InitRules        $initRules
-     * @param \BrowserDetector\Loader\Helper\InitData         $initData
+     * @param \BrowserDetector\Loader\Helper\Rules            $initRules
+     * @param \BrowserDetector\Loader\Helper\Data             $initData
      * @param \BrowserDetector\Loader\SpecificLoaderInterface $load
      */
     public function __construct(
-        CacheInterface $cache,
         LoggerInterface $logger,
-        CacheKey $cacheKey,
-        InitRules $initRules,
-        InitData $initData,
+        Rules $initRules,
+        Data $initData,
         SpecificLoaderInterface $load
     ) {
-        $this->cache          = $cache;
         $this->logger         = $logger;
-        $this->cacheKey       = $cacheKey;
         $this->initRules      = $initRules;
         $this->initData       = $initData;
         $this->specificLoader = $load;
@@ -85,11 +67,10 @@ class GenericLoader implements GenericLoaderInterface
     {
         $this->init();
 
-        $cacheKey = $this->cacheKey;
-        $devices  = $this->cache->getItem($cacheKey('rules'));
-        $generic  = $this->cache->getItem($cacheKey('generic'));
+        $rules   = $this->initRules->getRules();
+        $generic = $this->initRules->getDefault();
 
-        return $this->detectInArray($devices, $generic, $useragent);
+        return $this->detectInArray($rules, $generic, $useragent);
     }
 
     /**
@@ -101,19 +82,15 @@ class GenericLoader implements GenericLoaderInterface
      */
     public function init(): void
     {
-        $cacheKey = $this->cacheKey;
-        $initKey  = $cacheKey('initialized');
-
-        if ($this->cache->getItem($initKey)) {
-            return;
+        if (!$this->initData->isInitialized()) {
+            $initData = $this->initData;
+            $initData();
         }
 
-        $initData = $this->initData;
-        $initData();
-
-        $initRules = $this->initRules;
-        $initRules();
-        $this->cache->setItem($initKey, true);
+        if (!$this->initRules->isInitialized()) {
+            $initRules = $this->initRules;
+            $initRules();
+        }
     }
 
     /**
