@@ -256,6 +256,126 @@ class DetectorTest extends TestCase
      *
      * @return void
      */
+    public function testGetBrowserFromGenericRequest2(): void
+    {
+        $logger = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+            ->getMock();
+        $logger
+            ->expects(self::exactly(2))
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+        $deviceFactory
+            ->expects(self::never())
+            ->method('__invoke')
+            ->with('testagent')
+            ->will(self::returnValue([new Device(), new Os()]));
+
+        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+        $platformFactory
+            ->expects(self::never())
+            ->method('__invoke')
+            ->with('testagent')
+            ->will(self::returnValue(new Os()));
+
+        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+        $browserFactory
+            ->expects(self::never())
+            ->method('__invoke')
+            ->with('testagent')
+            ->will(self::returnValue([new Browser(), new Engine()]));
+
+        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke', 'load'])
+            ->getMock();
+        $engineFactory
+            ->expects(self::never())
+            ->method('__invoke');
+        $engineFactory
+            ->expects(self::never())
+            ->method('load');
+
+        $mockResult = $this->createMock(Result::class);
+
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::exactly(2))
+            ->method('hasItem')
+            ->willReturn(true);
+        $cache
+            ->expects(self::exactly(2))
+            ->method('getItem')
+            ->willReturn($mockResult);
+        $cache
+            ->expects(self::never())
+            ->method('setItem')
+            ->willReturn(false);
+
+        /** @var NullLogger $logger */
+        /** @var Cache $cache */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineFactory $engineFactory */
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+
+        $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $requestFactory = new GenericRequestFactory();
+        $request        = $requestFactory->createRequestFromPsr7Message($message);
+
+        /* @var Result $result */
+        $result = $object($request);
+
+        self::assertInstanceOf(Result::class, $result);
+        self::assertSame($mockResult, $result);
+
+        /* @var Result $result2 */
+        $result2 = $object($message);
+
+        self::assertSame($result, $result2);
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
     public function testGetBrowserFromInvalid(): void
     {
         $logger = $this->getMockBuilder(NullLogger::class)
@@ -1249,6 +1369,123 @@ class DetectorTest extends TestCase
         self::assertInstanceOf(Device::class, $result->getDevice());
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
         self::assertSame('webkit-test', $result->getEngine()->getName());
+        self::assertSame('iOS', $result->getOs()->getName());
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testGetBrowserWithoutEngineIosFail(): void
+    {
+        $logger = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+            ->getMock();
+        $logger
+            ->expects(self::exactly(2))
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::once())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+        $deviceFactory
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('testagent')
+            ->will(self::returnValue([new Device('testDevice'), new Os('iOS')]));
+
+        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+        $platformFactory
+            ->expects(self::never())
+            ->method('__invoke')
+            ->with('testagent')
+            ->will(self::returnValue(new Os()));
+
+        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke'])
+            ->getMock();
+        $browserFactory
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with('testagent')
+            ->will(self::returnValue([new Browser(), null]));
+
+        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['__invoke', 'load'])
+            ->getMock();
+        $engineFactory
+            ->expects(self::never())
+            ->method('__invoke')
+            ->with('testagent')
+            ->will(self::returnValue(new Engine('test-engine')));
+        $engineFactory
+            ->expects(self::once())
+            ->method('load')
+            ->with('webkit', 'testagent')
+            ->will(self::throwException(new ParsingException('parsing failed')));
+
+        $cache = $this->getMockBuilder(Cache::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
+        /** @var NullLogger $logger */
+        /** @var Cache $cache */
+        /** @var DeviceFactory $deviceFactory */
+        /** @var PlatformFactory $platformFactory */
+        /** @var BrowserFactory $browserFactory */
+        /** @var EngineFactory $engineFactory */
+        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+
+        /* @var Result $result */
+        $result = $object($message);
+
+        self::assertInstanceOf(Result::class, $result);
+        self::assertInstanceOf(Device::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertNull($result->getEngine()->getName());
         self::assertSame('iOS', $result->getOs()->getName());
     }
 

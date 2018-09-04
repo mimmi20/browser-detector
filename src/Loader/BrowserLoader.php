@@ -74,7 +74,6 @@ class BrowserLoader implements SpecificLoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */

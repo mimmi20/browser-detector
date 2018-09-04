@@ -71,7 +71,6 @@ class DeviceLoader implements SpecificLoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */

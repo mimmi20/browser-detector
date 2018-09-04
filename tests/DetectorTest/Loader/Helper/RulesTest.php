@@ -62,7 +62,7 @@ class RulesTest extends TestCase
         $jsonParser
             ->expects(self::once())
             ->method('parse')
-            ->will(self::returnValue(['rules' => 'abc', 'generic' => 'test']));
+            ->will(self::returnValue(['rules' => ['abc'], 'generic' => 'test']));
 
         $file = $this->createMock(SplFileInfo::class);
 
@@ -72,6 +72,8 @@ class RulesTest extends TestCase
 
         $object();
 
-        self::assertTrue(true);
+        self::assertTrue($object->isInitialized());
+        self::assertSame(['abc'], $object->getRules());
+        self::assertSame('test', $object->getDefault());
     }
 }

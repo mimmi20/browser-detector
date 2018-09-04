@@ -94,8 +94,13 @@ class Rules
             throw new \RuntimeException('file "' . $this->file->getPathname() . '" contains invalid json', 0, $e);
         }
 
-        $this->rules   = $fileData['rules'];
-        $this->default = $fileData['generic'];
+        if (is_array($fileData['rules'])) {
+            $this->rules = $fileData['rules'];
+        }
+
+        if (is_string($fileData['generic'])) {
+            $this->default = $fileData['generic'];
+        }
 
         $this->initialized = true;
     }

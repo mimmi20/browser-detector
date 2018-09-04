@@ -29,8 +29,6 @@ use UaResult\Os\OsInterface;
 class DeviceLoaderTest extends TestCase
 {
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNotInCache(): void
@@ -129,8 +127,6 @@ class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNullInCache(): void
@@ -229,8 +225,6 @@ class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNoVersion(): void
@@ -346,8 +340,6 @@ class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeGenericVersionAndPlatformException(): void
@@ -473,8 +465,6 @@ class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeGenericVersionAndPlatformInvalidException(): void
@@ -600,8 +590,6 @@ class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeVersionAndPlatform(): void

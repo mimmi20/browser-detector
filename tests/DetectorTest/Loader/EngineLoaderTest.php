@@ -25,8 +25,6 @@ use UaResult\Engine\EngineInterface;
 class EngineLoaderTest extends TestCase
 {
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNotInCache(): void
@@ -101,8 +99,6 @@ class EngineLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNullInCache(): void
@@ -177,8 +173,6 @@ class EngineLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNoVersion(): void
@@ -258,8 +252,6 @@ class EngineLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeGenericVersion(): void
@@ -339,8 +331,6 @@ class EngineLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeVersion(): void

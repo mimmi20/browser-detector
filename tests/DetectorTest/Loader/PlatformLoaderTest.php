@@ -25,8 +25,6 @@ use UaResult\Os\OsInterface;
 class PlatformLoaderTest extends TestCase
 {
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNotInCache(): void
@@ -101,8 +99,6 @@ class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNullInCache(): void
@@ -177,8 +173,6 @@ class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNoVersion(): void
@@ -259,8 +253,6 @@ class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeVersionSet(): void
@@ -341,8 +333,6 @@ class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeGenericVersion(): void
@@ -425,8 +415,6 @@ class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeVersion(): void

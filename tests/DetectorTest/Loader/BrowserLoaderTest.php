@@ -18,7 +18,6 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaBrowserType\TypeLoader;
 use UaBrowserType\Unknown;
 use UaResult\Browser\BrowserInterface;
@@ -30,8 +29,6 @@ use UaResult\Engine\EngineInterface;
 class BrowserLoaderTest extends TestCase
 {
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNotInCache(): void
@@ -126,8 +123,6 @@ class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNullInCache(): void
@@ -222,8 +217,6 @@ class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeNoVersion(): void
@@ -333,8 +326,6 @@ class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeGenericVersionAndEngineException(): void
@@ -453,8 +444,6 @@ class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeGenericVersionAndEngineInvalidException(): void
@@ -473,10 +462,10 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(self::once())
             ->method('warning');
         $logger
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('error');
         $logger
             ->expects(self::never())
@@ -544,7 +533,7 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with('unknown', 'test/1.0')
-            ->willThrowException(new InvalidArgumentException('engine key not found'));
+            ->willThrowException(new NotFoundException('engine key not found'));
 
         $engineLoader
             ->expects(self::once())
@@ -573,8 +562,6 @@ class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeVersionAndEngine(): void

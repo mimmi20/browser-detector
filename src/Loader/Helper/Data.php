@@ -57,7 +57,7 @@ class Data implements CacheInterface
      */
     public function getItem(string $cacheId)
     {
-        return $this->items[$cacheId];
+        return $this->items[$cacheId] ?? null;
     }
 
     /**
