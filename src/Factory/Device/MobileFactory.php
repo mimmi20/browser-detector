@@ -430,7 +430,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/le 1 pro|le 2|le max|le ?x[0-9]{3}/i' => 'leeco',
         '/loox|uno_x10|xelio|neo_quad10|ieos_quad|sky plus|maven_10_plus|maven10_hd_plus_3g|maven_x10_hd_lte|space10_plus|adm816|noon|xpress|genesis|tablet-pc-4|kinder-tablet|evolution12|mira|score_plus|pro q8 plus|rapid7lte|neo6_lte|rapid_10/i' => 'odys',
         '/BARRY|BIRDY|BLOOM|CINK|FEVER|FIZZ|HARRY|GETAWAY| GOA|HIGHWAY|IGGY|JIMMY|JERRY|KITE|OZZY|PLUS|PULP|RIDGE|ROBBY|SLIDE|STAIRWAY|SUBLIM|SUNNY|SUNSET|U FEEL|WAX/' => 'wiko',
-        '/l5510|lenny|rainbow|view xl|view prime|view build|w_k[46]00/i' => 'wiko',
+        '/l5510|lenny|rainbow|view (go|prime|xl)|view build|w_k[46]00/i' => 'wiko',
         '/aquaris|bq [^\/;]+ build|bqs-400[57]| m10 |edison 3/i' => 'bq',
         '/QtCarBrowser/' => 'teslamotors',
         '/m[bez][0-9]{3}/i' => 'motorola',
