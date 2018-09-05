@@ -117,7 +117,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/cowon/i' => 'cowon',
         '/digma[_ ][^;\/]+ build|hit ht707[10]mg|citi 1902 3g|citi [a-z0-9]+ 3g c[st]500[67]pg|idjd7|idrq10[ _]3g|idxd8 3g|idnd7|hit 4g ht7074ml|idx5|idx10|idx7|mvm900h(wz|c)|mvm908hcz|idxd10 3g|idxd[45]|idxq5|idxd7[_ ]3g|ps604m|pt452e|linx a400 3g lt4001pg|linx c500 3g lt5001pg|linx ps474s|ns6902ql|ns9797mg|(optima|platina|plane)[ _][em]?([0-9\.st]+|prime)([ _][43]g)?|tt7026mw|vox[ _][0-9\.a-z]+[_ ][43]g/i' => 'digma',
         '/hudl 2|hudl ht7s3/i' => 'tesco',
-        '/homtom|ht[0-9]{1,2} ?(pro)?/i' => 'homtom',
+        '/homtom|ht[0-9]{1,2} ?(pro)?| s16 /i' => 'homtom',
         '/hosin/i' => 'hosin',
         '/hasee/i' => 'hasee',
         '/tecno/i' => 'tecno',
