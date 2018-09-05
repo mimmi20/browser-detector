@@ -741,6 +741,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/grv11/i' => 'gorila',
         '/unnecto|(u513|u61[1356]|u7[12]0|u\-830|u90[35])[);\/ ]/i' => 'unnecto',
         '/q101\-4g/i' => 'voyo',
+        '/robin/i' => 'nextbit',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
