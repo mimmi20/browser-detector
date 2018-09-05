@@ -42,7 +42,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/amazon/i' => 'amazon',
         '/amoi/i' => 'amoi',
         '/CCE /' => 'cce',
-        '/blaupunkt|atlantis[_ ](1001a|1010a|a10\.g402)|discovery[_ ](102c|111c|1000c|1001a?)|endeavour[_ ](785|101[glm]|1000|1001|101[03]|1100)|polaris[_ ]803|end_101g\-test/i' => 'blaupunkt', // must be before Onda
+        '/blaupunkt|atlantis[_ ](1001a|1010a|a10\.g40[23])|discovery[_ ](102c|111c|1000c|1001a?)|endeavour[_ ](785|101[glm]|1000|1001|101[03]|1100)|polaris[_ ]803|end_101g\-test/i' => 'blaupunkt', // must be before Onda
         '/ONDA/' => 'onda',
         '/archos|a101it|a7eb|a70bht|a70cht|a70hb|a70s|a80ksc|a35dm|a70h2|a50ti/i' => 'archos',
         '/irulu/i' => 'irulu',
