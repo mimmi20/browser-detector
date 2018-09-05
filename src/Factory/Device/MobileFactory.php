@@ -132,7 +132,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/sprint/i' => 'sprint',
         '/gionee/i' => 'gionee',
         '/videocon/i' => 'videocon',
-        '/gigaset|gs55\-6|gs53\-6|gs270|gs370_plus/i' => 'gigaset',
+        '/gigaset|gs5[357]\-6|gs185|gs270|gs370_plus/i' => 'gigaset',
         '/(dns|airtab)[ _\-]([^;\/]+)build|s4503q|s4505m/i' => 'dns',
         '/kyocera/i' => 'kyocera',
         '/texet/i' => 'texet',
