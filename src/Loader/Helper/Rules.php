@@ -79,8 +79,6 @@ class Rules
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function __invoke(): void

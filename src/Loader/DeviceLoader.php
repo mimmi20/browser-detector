@@ -13,7 +13,6 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\InvalidArgumentException;
 use UaDeviceType\TypeLoader;
 use UaResult\Company\CompanyLoader;
 use UaResult\Device\Device;
@@ -95,8 +94,6 @@ class DeviceLoader implements SpecificLoaderInterface
                 $platform = $this->platformLoader->load($platformKey, $useragent);
             } catch (NotFoundException $e) {
                 $this->logger->warning($e);
-            } catch (InvalidArgumentException $e) {
-                $this->logger->error($e);
             }
         }
 

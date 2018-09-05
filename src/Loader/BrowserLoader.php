@@ -16,7 +16,6 @@ use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\InvalidArgumentException;
 use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
 use UaResult\Company\CompanyLoader;
@@ -113,8 +112,6 @@ class BrowserLoader implements SpecificLoaderInterface
                 $engine = $this->engineLoader->load($engineKey, $useragent);
             } catch (NotFoundException $e) {
                 $this->logger->warning($e);
-            } catch (InvalidArgumentException $e) {
-                $this->logger->error($e);
             }
         }
 
