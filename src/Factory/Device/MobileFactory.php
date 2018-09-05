@@ -58,7 +58,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/coolpad/i' => 'coolpad',
         '/cosmote/i' => 'cosmote',
         '/creative/i' => 'creative',
-        '/cubot/i' => 'cubot',
         '/dell/i' => 'dell',
         '/denver|ta[cdq]-[0-9]+/i' => 'denver',
         '/sharp|shl2[25]|shv31|is05|[0-9]{3}sh|sh\-?[0-9]{2,4}[cdefuw]/i' => 'sharp',
@@ -408,7 +407,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/A1002|A811|S[45]A[0-9]|SC7 PRO HD/' => 'lexand',
         '/A121|A120|A116|A114|A093|A065| A96 |Q327| A47/' => 'micromax',
         '/smart ?tab|s6000d/i' => 'lenovo',
-        '/S208|S308|S550|S600|Z100 Pro|NOTE Plus/' => 'cubot',
         '/q8002/i' => 'crypto',
         '/a1000s|q10[01]0i?|q[678]00s?|q2000|omega[ _][0-9]/i' => 'xolo',
         '/s750/i' => 'beneve',
@@ -422,6 +420,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/a501 bright/i' => 'bravis', // must be before acer
         '/tm785m3/i' => 'nuvision',
         '/m785|800p71d|800p3[12]c|101p51c|x1010|a1013r|s10\-0g/i' => 'mecer', // must be before acer
+        '/cubot|hafury|s208|s308|s550|s600|z100 pro|note plus| c7 | h1 | cheetah | x1[268] | x17_s /i' => 'cubot', // must be before acer
         '/ [aevzs][0-9]{3} /i' => 'acer',
         '/AT\-AS[0-9]{2}[DS]/' => 'wolfgang',
         '/vk\-/i' => 'vkmobile',
@@ -447,7 +446,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/VS[0-9]{3}/' => 'lg',
         '/surftab|vt10416|breeze 10\.1 quad|xintroni10\.1|st70408_4/i' => 'trekstor',
         '/mt6515m\-a1\+/i' => 'united',
-        '/ c7 | h1 | cheetah | x12 | x16 | x17_s | x18 /i' => 'cubot',
         '/mt10b/i' => 'excelvan',
         '/mt10/i' => 'mtn',
         '/m1009|mt13|kp\-703/i' => 'excelvan',
