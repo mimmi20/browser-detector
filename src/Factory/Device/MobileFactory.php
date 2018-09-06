@@ -329,7 +329,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/zoom2|nook ?color/i' => 'logicpd',
         '/nook|bn[tr]v[0-9]+/i' => 'barnesnoble',
         '/playbook|rim tablet|bb10|stv100|bb[ab]100\-2|sth100\-2|bbd100\-1/i' => 'rim',
-        '/b15/i' => 'caterpillar',
+        '/ (b15|s41|s60) |b15q/i' => 'caterpillar',
         '/cat ?(nova|stargate|tablet|helix)/i' => 'catsound',
         '/MID1014/' => 'micromax',
         '/MID0714|MIDC|PMID/' => 'polaroid',

@@ -1,4 +1,16 @@
 {
+  "general caterpillar device": {
+    "codename": "general Caterpillar Device",
+    "marketingName": "general Caterpillar Device",
+    "manufacturer": "Caterpillar",
+    "brand": "Caterpillar",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "caterpillar b15": {
     "codename": "B15",
     "marketingName": "Cat B15",
@@ -23,16 +35,28 @@
     "resolutionHeight": 800,
     "dualOrientation": true
   },
-  "general caterpillar device": {
-    "codename": "general Caterpillar Device",
-    "marketingName": "general Caterpillar Device",
+  "caterpillar s41": {
+    "codename": "S41",
+    "marketingName": "Cat S41",
     "manufacturer": "Caterpillar",
     "brand": "Caterpillar",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true
+  },
+  "caterpillar s60": {
+    "codename": "S60",
+    "marketingName": "Cat S60",
+    "manufacturer": "Caterpillar",
+    "brand": "Caterpillar",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
     "dualOrientation": true
   }
 }
