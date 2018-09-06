@@ -6305,7 +6305,7 @@
     },
     "device": {
       "deviceName": "TB-X704F",
-      "marketingName": "TAB 4 10 Plus 10.1",
+      "marketingName": "Tab 4 10 Plus 10.1",
       "manufacturer": "Lenovo",
       "brand": "Lenovo",
       "pointingMethod": "touchscreen",
@@ -6513,6 +6513,78 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Lenovo TB-X103F Build/LenovoTB-X103F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TB-X103F",
+      "marketingName": "TB-X103F",
+      "manufacturer": "Lenovo",
+      "brand": "Medion",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1280,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 7.1.1; Lenovo TB-X704L Build/NMF26F)"
+    },
+    "device": {
+      "deviceName": "TB-X704L",
+      "marketingName": "Tab 4 10 Plus 10.1 LTE",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1920,
+      "resolutionHeight": 1200,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
     }
   }
 ]
