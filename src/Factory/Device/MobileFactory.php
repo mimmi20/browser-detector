@@ -43,7 +43,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/amoi/i' => 'amoi',
         '/CCE /' => 'cce',
         '/blaupunkt|atlantis[_ ](1001a|1010a|a10\.g40[23])|discovery[_ ](102c|111c|1000c|1001a?)|endeavour[_ ](785|101[glm]|1000|1001|101[03]|1100)|polaris[_ ]803|end_101g\-test/i' => 'blaupunkt', // must be before Onda
-        '/ONDA/' => 'onda',
         '/archos|a101it|a7eb|a70bht|a70cht|a70hb|a70s|a80ksc|a35dm|a70h2|a50ti/i' => 'archos',
         '/irulu/i' => 'irulu',
         '/symphony/i' => 'symphony',
@@ -408,7 +407,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/a727/i' => 'azpen',
         '/(ags|a[ln]e|ath|ba[ch]|bl[an]|bnd|cam|ch[cm]|che[12]?|clt|dli|duk|eml|fig|frd|gra|h[36]0|kiw|lon|m[hy]a|nem|plk|pra|rne|scl|trt|vky|vtr|was|y220)\-/i' => 'huawei',
         '/V1[0-9]{2}|GN[0-9]{3}/' => 'gionee',
-        '/v919 3g air/i' => 'onda', // must be before acer
+        '/onda|v919 3g air|v10 4g/i' => 'onda', // must be before acer
         '/a501 bright/i' => 'bravis', // must be before acer
         '/tm785m3/i' => 'nuvision',
         '/m785|800p71d|800p3[12]c|101p51c|x1010|a1013r|s10\-0g/i' => 'mecer', // must be before acer
