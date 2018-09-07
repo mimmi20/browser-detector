@@ -95,7 +95,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/allwinner/i' => 'allwinner',
         '/supra/i' => 'supra',
         '/prestigio/i' => 'prestigio',
-        '/mobistel/i' => 'mobistel',
         '/nintendo/i' => 'nintendo',
         '/(q7a\+?)[);\/ ]/i' => 'crius-mea',
         '/crosscall|odyssey_plus|odyssey s1|trekker-[msx][123]/i' => 'crosscall',
@@ -349,7 +348,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/PC1088/' => 'honlin',
         '/INM[0-9]{3,4}/' => 'intenso',
         '/sailfish/i' => 'jolla',
-        '/cynus/i' => 'mobistel',
+        '/mobistel|cynus[ _][^\/;]+/i' => 'mobistel',
         '/DARK(MOON|SIDE|NIGHT|FULL)/' => 'wiko',
         '/ARK/' => 'ark',
         '/(ever(glory|shine|miracle|mellow|classic|trendy|fancy|vivid|slim|glow|magic|smart|star)[^\/;]*) build|e70[25]0hd|e7914hg|e8050h[dg]|e8051hd|e9054hd/i' => 'evertek', // must be before Magic
