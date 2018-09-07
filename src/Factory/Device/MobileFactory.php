@@ -372,7 +372,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/e6560|c6750|c6742|c6730|c6522n|c5215|c5170|c5155|c5120|dm015k|kc\-s701/i' => 'kyocera',
         '/medion|lifetab|p4501|p850x|e4004|e691x|p1050x|p1032x|p1040x|s1035x|p1035x|p4502|p851x|x1060x|x5001/i' => 'medion',
         '/g6600/i' => 'huawei',
-        '/dg[0-9]{3,4}|x[69]pro|x5max_pro|bl5000| x[23]0 |f3_pro|y6_piano|y6 max| t6 /i' => 'doogee',
+        '/dg[0-9]{3,4}|x[679]pro|x5max_pro|bl5000| x[23]0 |f3_pro|y6_piano|y6 max| t6 /i' => 'doogee',
         '/Touchlet|X7G|X10\./' => 'pearl',
         '/terra pad|pad1002/i' => 'wortmann',
         '/g710[68]/i' => 'samsung',
