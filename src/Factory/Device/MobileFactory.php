@@ -667,7 +667,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ih\-g101/i' => 'innohit',
         '/g900/i' => 'ippo',
         '/nimbus 80qb/i' => 'woxter',
-        '/vkb011b/i' => 'fengxiang',
+        '/vkb011b|vkb004l/i' => 'fengxiang',
         '/trooper|tornado|thunder/i' => 'kazam',
         '/ n3 /i' => 'goophone',
         '/king 7/i' => 'pptv',
