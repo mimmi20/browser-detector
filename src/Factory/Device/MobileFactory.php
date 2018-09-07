@@ -214,7 +214,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/pipo/i' => 'pipo',
         '/tesla/i' => 'tesla',
         '/doro/i' => 'doro',
-        '/captiva/i' => 'captiva',
+        '/captiva[ _-][^;\/]+ build/i' => 'captiva',
         '/energy[ _-]?[^;\/]+ build/i' => 'energy-sistem',
         '/elephone[ _\-][^\/;]+ build|p[369]000( ?pro| ?plus|\+| ?02)? build|p8_mini/i' => 'elephone',
         '/cyrus/i' => 'cyrus',
