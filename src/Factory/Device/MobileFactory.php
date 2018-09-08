@@ -209,7 +209,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/utstar/i' => 'utstarcom',
         '/walton/i' => 'walton',
         '/quadro/i' => 'quadro',
-        '/xiaomi/i' => 'xiaomi',
         '/pipo/i' => 'pipo',
         '/tesla/i' => 'tesla',
         '/doro/i' => 'doro',
@@ -350,7 +349,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ARK/' => 'ark',
         '/(ever(glory|shine|miracle|mellow|classic|trendy|fancy|vivid|slim|glow|magic|smart|star)[^\/;]*) build|e70[25]0hd|e7914hg|e8050h[dg]|e8051hd|e9054hd/i' => 'evertek', // must be before Magic
         '/Magic/' => 'magic',
-        '/M[Ii][ -]([0-9]|PAD|M[AI]X|NOTE|A1|1S|3|ONE)|HM[ _](NOTE|1SC|1SW|1S|1)|MIX 2/' => 'xiaomi',
+        '/xiaomi|(mi [a-z0-9]+|mi-4c|mi-one[ _]?[a-z0-9]+|mix 2s?)[);\/ ]|hm[ _][^\/;]+ ?(build|miui|\))|(2014501|2014011|201481[138]|201302[23]|2013061) build|redmi|note 4|mipad/i' => 'xiaomi',
         '/WeTab/' => 'neofonie',
         '/SIE\-/' => 'siemens',
         '/CAL21|C771|C811/' => 'casio',
@@ -506,7 +505,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/N[0-9]{4}/' => 'star',
         '/technipad|aqipad|techniphone/i' => 'technisat', // must be before apple
         '/medipad/i' => 'bewatec',
-        '/mipad/i' => 'xiaomi',
         '/android.*iphone/i' => 'xianghe',
         '/ucweb.*adr.*iphone/i' => 'xianghe',
         '/ipodder|tripadvisor/i' => 'unknown',
@@ -549,7 +547,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/ft[ _][0-9]{4}/i' => 'lifeware',
         '/(od|sm|yq)[0-9]{3}/i' => 'smartisan',
         '/ls\-[0-9]{4}/i' => 'lyf',
-        '/redmi|note 4|2015562|2014(81[138]|501|011)|2013(02[23]|061)/i' => 'xiaomi',
         '/neffos|tp[0-9]{3}/i' => 'tplink',
         '/x[0-9] ?(plus|max|pro)/i' => 'vivo',
         '/tb[0-9]{3,4}/i' => 'acme',
