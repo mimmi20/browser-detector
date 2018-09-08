@@ -51,7 +51,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/goly/i' => 'goly',
         '/WM[0-9]{4}/' => 'wondermedia',
         '/comag/i' => 'comag',
-        '/coolpad/i' => 'coolpad',
         '/cosmote/i' => 'cosmote',
         '/creative/i' => 'creative',
         '/dell/i' => 'dell',
@@ -395,6 +394,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/tm785m3/i' => 'nuvision',
         '/m785|800p71d|800p3[12]c|101p51c|x1010|a1013r|s10\-0g/i' => 'mecer', // must be before acer
         '/cubot|hafury|s208|s308|s550|s600|z100 pro|note plus| c7 | h1 | cheetah | x1[268] | x17_s /i' => 'cubot', // must be before acer
+        '/coolpad|w713|cp[0-9]{4}|n930|5860s|8079|8190q|8295|vcr-i0/i' => 'coolpad',
         '/ [aevzs][0-9]{3} /i' => 'acer',
         '/AT\-AS[0-9]{2}[DS]/' => 'wolfgang',
         '/vk\-/i' => 'vkmobile',
@@ -448,7 +448,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/ m[35] |f103| e7 | v6l |pioneer|dream_d1|(adr|android) 4\.2.* p2/i' => 'gionee',
         '/t118|t108/i' => 'twinovo',
         '/w[12]00| w8| t11/i' => 'thl',
-        '/w713|cp[0-9]{4}|n930|5860s|8079|8190q|8295/i' => 'coolpad',
         '/w960/i' => 'sony',
         '/n003/i' => 'neo',
         '/ v1 /i' => 'maxtron',
