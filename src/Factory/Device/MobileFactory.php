@@ -158,7 +158,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/smart tab 4g/i' => 'lenovo',
         '/smart tab 4|vfd [0-9]{3}|985n|vodafone smart 4 max|smart 4 turbo/i' => 'vodafone',
         '/idea(tab|pad)|smart ?tab|thinkpad/i' => 'lenovo',
-        '/alcatel|alc[a-z0-9]+|one[ _]?touch|idol3|(4003a|4013[dmx]|4017x|4024d|4027[dx]|4032d|4034[df]|5010[dx]|5015[adx]|5016a|5017a|5019d|5025[dg]|5026d|5045[dtx]|5022[dx]|5023f|5038x|5042[ad]|5051[dx]|5054[dnswx]|5056[dx]|5065[dnx]|5070[dx]|5080x|5095[biky]|6016[dx]|6036y|6037y|6039[hky]|6043d|6044d|6045[hky]|6050[afy]|6055[kp]|6070[koy]|7048x|7040n|7070x|8030y|8050d|9001[dx]|9002x|9003x|9005x|9008[dx]|9010x|9022x|i213|i216x|v860|vodafone (smart|785|875|975n)|vf\-(795|895n)|m812c|telekom puls|ot\-[89][09][0-9])[);\/ ]/i' => 'alcatel',
+        '/alcatel|alc[a-z0-9]+|one[ _]?touch|idol3|(4003a|4009a|4013[dmx]|4017x|4024d|4027[adx]|4032d|4034[df]|4047a|4049g|5010[dx]|5011a|5015[adx]|5016a|5017a|5019d|5022[dx]|5023f|5025[dg]|5026d|5038x|5042[ad]|5045[dtx]|5049g|8050[gx]|5051[dx]|5054[dnswx]|5056[dx]|5065[dnx]|5070[dx]|5080x|5095[biky]|6016[dx]|6036y|6037y|6039[hky]|6043d|6044d|6045[hky]|6050[afy]|6055[kp]|6070[koy]|7048x|7040n|7070x|8030y|8050d|9001[dx]|9002x|9003x|9005x|9008[adx]|9010x|9022x|i213|i216x|v860|vodafone (smart|785|875|975n)|vf\-(795|895n)|m812c|telekom puls|ot\-[89][09][0-9])[);\/ ]/i' => 'alcatel',
         '/tolino/i' => 'tolino',
         '/toshiba/i' => 'toshiba',
         '/viewsonic/i' => 'viewsonic',
