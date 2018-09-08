@@ -533,7 +533,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/N[BP][0-9]{2,3}/' => 'bravis',
         '/tp[0-9]{2}\-3g/i' => 'theq',
         '/ftj?[0-9]{3}/i' => 'freetel',
-        '/RUNE/' => 'bsmobile',
+        '/RUNE/' => 'bs-mobile',
         '/tlink|every35|primo[78]|qm73[45]\-8g/i' => 'thomson',
         '/[sxz][0-9]{3}[ae]/i' => 'htc',
         '/(i\-style|iq) ?[0-9]/i' => 'imobile',
