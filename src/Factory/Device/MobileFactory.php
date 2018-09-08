@@ -136,7 +136,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(ever(glory|shine|miracle|mellow|classic|trendy|fancy|vivid|slim|glow|magic|smart|star)[^\/;]*) build|e70[25]0hd|e7914hg|e8050h[dg]|e8051hd|e9054hd/i' => 'evertek', // must be before Magic and Odys
         '/inm[0-9]{3,4}|tab1024/i' => 'intenso',
         '/ngm[_ ][a-z0-9]+|(forward|dynamic)[ _]?[^\/;]+(build|\/)/i' => 'ngm',
-        '/odys|xelio_next|(maven|space|tao|thor)_?x?10|connect(7pro|8plus)|loox|uno_x10|xelio|neo_quad10|ieos_quad|sky plus|maven_10_plus|maven10_hd_plus_3g|maven_x10_hd_lte|space10_plus|adm816|noon|xpress|genesis|tablet-pc-4|kinder-tablet|evolution12|mira|score_plus|pro q8 plus|rapid7lte|neo6_lte|rapid_10|visio/i' => 'odys',
+        '/odys|xelio_next|(maven|space|tao|thor)_?x?10|connect(7pro|8plus)|loox|uno_x10|xelio|neo_quad10|ieos_quad|sky plus|maven_10_plus|maven10_hd_plus_3g|maven_x10_hd_lte|space10_plus|adm816|noon|xpress|genesis|tablet-pc-4|kinder-tablet|evolution12|mira|score_plus|pro q8 plus|rapid7lte|neo6_lte|rapid_10|visio|pace10/i' => 'odys',
         '/next|next[0-9]|datam803hc|nx785qc8g|nxm900mc|nx008hd8g|nx010hi8g|nxm908hc|nxm726/i' => 'nextbook',
         '/infinix/i' => 'infinix',
         '/bv[5-8]000|dm550|crown| r6 | a8 |alife [ps]1|omega_pro/i' => 'blackview',
