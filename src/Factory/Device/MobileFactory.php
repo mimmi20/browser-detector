@@ -686,6 +686,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/unnecto|(u513|u61[1356]|u7[12]0|u\-830|u90[35])[);\/ ]/i' => 'unnecto',
         '/q101\-4g/i' => 'voyo',
         '/robin/i' => 'nextbit',
+        '/bitel[ _-][^\/;]+ build|b8604|b9501/i' => 'bitel',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
