@@ -26,8 +26,6 @@ interface GenericLoaderInterface
     /**
      * initializes cache
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function init(): void;

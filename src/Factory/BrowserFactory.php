@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Loader\BrowserLoaderFactory;
 use Psr\Log\LoggerInterface;
 
@@ -33,12 +32,11 @@ class BrowserFactory implements BrowserFactoryInterface
     private $loaderFactory;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(LoggerInterface $logger)
     {
-        $this->loaderFactory = new BrowserLoaderFactory($cache, $logger);
+        $this->loaderFactory = new BrowserLoaderFactory($logger);
     }
 
     /**
@@ -47,6 +45,7 @@ class BrowserFactory implements BrowserFactoryInterface
      * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return array
      */

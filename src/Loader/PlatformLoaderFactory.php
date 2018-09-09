@@ -11,10 +11,8 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Loader\Helper\CacheKey;
-use BrowserDetector\Loader\Helper\InitData;
-use BrowserDetector\Loader\Helper\InitRules;
+use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Helper\Rules;
 use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
 use Symfony\Component\Finder\Finder;
@@ -23,30 +21,23 @@ use UaResult\Company\CompanyLoader;
 
 class PlatformLoaderFactory
 {
-    private const CACHE_PREFIX = 'platform';
-
-    /**
-     * @var \BrowserDetector\Cache\CacheInterface
-     */
-    private $cache;
-
     /**
      * @var \Psr\Log\LoggerInterface
      */
     private $logger;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(LoggerInterface $logger)
     {
-        $this->cache  = $cache;
         $this->logger = $logger;
     }
 
     /**
      * @param string $mode
+     *
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return GenericLoaderInterface
      */
@@ -67,27 +58,21 @@ class PlatformLoaderFactory
             $finder->in($dataPath);
 
             $jsonParser = new JsonParser();
-            $cacheKey   = new CacheKey(self::CACHE_PREFIX, $dataPath, $rulesPath);
             $file       = new SplFileInfo($rulesPath, '', '');
-            $initRules  = new InitRules($this->cache, $jsonParser, $cacheKey, $file);
-            $initData   = new InitData(
-                $this->cache,
+            $initRules  = new Rules($jsonParser, $file);
+            $initData   = new Data(
                 $finder,
-                $jsonParser,
-                $cacheKey
+                $jsonParser
             );
 
             $loader = new PlatformLoader(
-                $this->cache,
                 $this->logger,
-                $cacheKey,
-                CompanyLoader::getInstance()
+                CompanyLoader::getInstance(),
+                $initData
             );
 
             $loaders[$mode] = new GenericLoader(
-                $this->cache,
                 $this->logger,
-                $cacheKey,
                 $initRules,
                 $initData,
                 $loader

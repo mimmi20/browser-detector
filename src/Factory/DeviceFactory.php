@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv;
@@ -50,16 +49,15 @@ class DeviceFactory implements DeviceFactoryInterface
     private $loaderFactory;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(LoggerInterface $logger)
     {
-        $this->darwinFactory  = new Device\DarwinFactory($cache, $logger);
-        $this->mobileFactory  = new Device\MobileFactory($cache, $logger);
-        $this->tvFactory      = new Device\TvFactory($cache, $logger);
-        $this->desktopFactory = new Device\DesktopFactory($cache, $logger);
-        $this->loaderFactory  = new DeviceLoaderFactory($cache, $logger);
+        $this->darwinFactory  = new Device\DarwinFactory($logger);
+        $this->mobileFactory  = new Device\MobileFactory($logger);
+        $this->tvFactory      = new Device\TvFactory($logger);
+        $this->desktopFactory = new Device\DesktopFactory($logger);
+        $this->loaderFactory  = new DeviceLoaderFactory($logger);
     }
 
     /**
@@ -69,6 +67,7 @@ class DeviceFactory implements DeviceFactoryInterface
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return array
      */

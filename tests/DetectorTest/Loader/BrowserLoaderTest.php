@@ -11,15 +11,13 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
-use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\GenericLoader;
-use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaBrowserType\TypeLoader;
 use UaBrowserType\Unknown;
 use UaResult\Browser\BrowserInterface;
@@ -33,7 +31,7 @@ class BrowserLoaderTest extends TestCase
     /**
      * @return void
      */
-    public function testInvokeCacheException(): void
+    public function testInvokeNotInCache(): void
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
@@ -61,41 +59,22 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['browser_default__initialized', true],
-            ['browser_default__generic-browser', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
-
-        $cache
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('browser_default__key')
-            ->will(self::throwException(new InvalidArgumentException('fail')));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'browser_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->willReturn(false);
+
+        $initData
+            ->expects(self::never())
+            ->method('getItem')
+            ->with('test-key')
+            ->will(self::returnValue(false));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -124,19 +103,17 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $engineLoader */
+        /** @var Data $initData */
         $object = new BrowserLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $engineLoader
+            $engineLoader,
+            $initData
         );
 
         $this->expectException(NotFoundException::class);
@@ -148,7 +125,7 @@ class BrowserLoaderTest extends TestCase
     /**
      * @return void
      */
-    public function testInvokeCacheNotFound(): void
+    public function testInvokeNullInCache(): void
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
@@ -176,41 +153,22 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['browser_default__initialized', true],
-            ['browser_default__generic-browser', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('browser_default__key')
-            ->will(self::returnValue(null));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'browser_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue(null));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -239,19 +197,17 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $engineLoader */
+        /** @var Data $initData */
         $object = new BrowserLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $engineLoader
+            $engineLoader,
+            $initData
         );
 
         $this->expectException(NotFoundException::class);
@@ -291,20 +247,16 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['browser_default__initialized', true],
-            ['browser_default__generic-browser', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $browserData = (object) [
             'version' => (object) ['class' => null],
@@ -314,26 +266,11 @@ class BrowserLoaderTest extends TestCase
             'name' => null,
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('browser_default__key')
-            ->will(self::returnValue($browserData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'browser_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($browserData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -366,19 +303,17 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $engineLoader */
+        /** @var Data $initData */
         $object = new BrowserLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $engineLoader
+            $engineLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test-ua');
@@ -424,20 +359,16 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['browser_default__initialized', true],
-            ['browser_default__generic-browser', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $browserData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
@@ -447,26 +378,11 @@ class BrowserLoaderTest extends TestCase
             'name' => null,
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('browser_default__key')
-            ->will(self::returnValue($browserData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'browser_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($browserData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -505,19 +421,17 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::once())
             ->method('init');
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $engineLoader */
+        /** @var Data $initData */
         $object = new BrowserLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $engineLoader
+            $engineLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test/1.0');
@@ -548,10 +462,10 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(self::once())
             ->method('warning');
         $logger
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('error');
         $logger
             ->expects(self::never())
@@ -563,20 +477,16 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['browser_default__initialized', true],
-            ['browser_default__generic-browser', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $browserData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
@@ -586,26 +496,11 @@ class BrowserLoaderTest extends TestCase
             'name' => null,
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('browser_default__key')
-            ->will(self::returnValue($browserData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'browser_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($browserData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -638,25 +533,23 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with('unknown', 'test/1.0')
-            ->willThrowException(new InvalidArgumentException('engine key not found'));
+            ->willThrowException(new NotFoundException('engine key not found'));
 
         $engineLoader
             ->expects(self::once())
             ->method('init');
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $engineLoader */
+        /** @var Data $initData */
         $object = new BrowserLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $engineLoader
+            $engineLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test/1.0');
@@ -699,20 +592,16 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $initData = $this->getMockBuilder(Data::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
 
-        $map = [
-            ['browser_default__initialized', true],
-            ['browser_default__generic-browser', true],
-        ];
-
-        $cache
-            ->expects(self::never())
+        $initData
+            ->expects(self::once())
             ->method('hasItem')
-            ->will(self::returnValueMap($map));
+            ->with('test-key')
+            ->will(self::returnValue(true));
 
         $browserData = (object) [
             'version' => (object) ['class' => Test::class],
@@ -722,26 +611,11 @@ class BrowserLoaderTest extends TestCase
             'name' => 'test-browser',
         ];
 
-        $cache
+        $initData
             ->expects(self::once())
             ->method('getItem')
-            ->with('browser_default__key')
-            ->will(self::returnValue($browserData));
-
-        $cacheKey = $this->getMockBuilder(CacheKey::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-
-        $map = [
-            ['test-key', 'browser_default__key'],
-        ];
-
-        $cacheKey
-            ->expects(self::once())
-            ->method('__invoke')
             ->with('test-key')
-            ->will(self::returnValueMap($map));
+            ->will(self::returnValue($browserData));
 
         $companyLoader = $this->getMockBuilder(CompanyLoader::class)
             ->disableOriginalConstructor()
@@ -780,19 +654,17 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::once())
             ->method('init');
 
-        /** @var Cache $cache */
         /** @var NullLogger $logger */
-        /** @var CacheKey $cacheKey */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
         /** @var GenericLoader $engineLoader */
+        /** @var Data $initData */
         $object = new BrowserLoader(
-            $cache,
             $logger,
-            $cacheKey,
             $companyLoader,
             $typeLoader,
-            $engineLoader
+            $engineLoader,
+            $initData
         );
 
         $result = $object('test-key', 'test/1.0');

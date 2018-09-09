@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Loader\EngineLoaderFactory;
 use Psr\Log\LoggerInterface;
 use UaResult\Engine\EngineInterface;
@@ -24,12 +23,11 @@ class EngineFactory implements EngineFactoryInterface
     private $loaderFactory;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct(CacheInterface $cache, LoggerInterface $logger)
+    public function __construct(LoggerInterface $logger)
     {
-        $this->loaderFactory = new EngineLoaderFactory($cache, $logger);
+        $this->loaderFactory = new EngineLoaderFactory($logger);
     }
 
     /**
@@ -38,6 +36,7 @@ class EngineFactory implements EngineFactoryInterface
      * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return \UaResult\Engine\EngineInterface
      */
@@ -55,6 +54,7 @@ class EngineFactory implements EngineFactoryInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return mixed
      */

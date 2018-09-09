@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory\Device;
 
-use BrowserDetector\Cache\Cache;
 use BrowserDetector\Factory\Device\MobileFactory;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\GenericLoader;
@@ -26,8 +25,6 @@ class MobileFactoryTest extends TestCase
     private $object;
 
     /**
-     * @throws \ReflectionException
-     *
      * @return void
      */
     protected function setUp(): void
@@ -35,15 +32,13 @@ class MobileFactoryTest extends TestCase
         /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
 
-        /** @var Cache $cache */
-        $cache = $this->createMock(Cache::class);
-
-        $this->object = new MobileFactory($cache, $logger);
+        $this->object = new MobileFactory($logger);
     }
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
@@ -66,7 +61,7 @@ class MobileFactoryTest extends TestCase
         $object = $this->object;
 
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage('An error occured while matching rule "/samsung[is \-;\/]|gt\-i8750/i"');
+        $this->expectExceptionMessage('An error occured while matching rule "/samsung[is \-;\/]|galaxy|nexus|(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-|g710[68]|n8000d|n[579]1[01]0|f031|n900\+|sc[lt]2[0-9]|isw11sc|s7562|sghi[0-9]{3}|i8910|i545|i(7110|9100|9300)|blaze|s8500/i"');
 
         $object('Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.3 Mobile Safari/537.3');
     }
@@ -80,6 +75,7 @@ class MobileFactoryTest extends TestCase
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */

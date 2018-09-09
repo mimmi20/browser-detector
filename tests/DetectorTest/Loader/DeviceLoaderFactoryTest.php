@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
-use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
@@ -20,7 +19,7 @@ use Psr\Log\NullLogger;
 class DeviceLoaderFactoryTest extends TestCase
 {
     /**
-     * @throws \ReflectionException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
@@ -29,10 +28,7 @@ class DeviceLoaderFactoryTest extends TestCase
         /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
 
-        /** @var Cache $cache */
-        $cache = $this->createMock(Cache::class);
-
-        $factory = new DeviceLoaderFactory($cache, $logger);
+        $factory = new DeviceLoaderFactory($logger);
         $object  = $factory('unknown', 'default');
 
         self::assertInstanceOf(GenericLoader::class, $object);

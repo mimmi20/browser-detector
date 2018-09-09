@@ -12,13 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Os as OsBits;
-use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\InvalidArgumentException;
 use UaResult\Company\CompanyLoader;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
@@ -26,40 +24,33 @@ use UaResult\Os\OsInterface;
 class PlatformLoader implements SpecificLoaderInterface
 {
     /**
-     * @var \BrowserDetector\Cache\CacheInterface
-     */
-    private $cache;
-
-    /**
      * @var \Psr\Log\LoggerInterface
      */
     private $logger;
 
-    /**
-     * @var \BrowserDetector\Loader\Helper\CacheKey
-     */
-    private $cacheKey;
     /**
      * @var \UaResult\Company\CompanyLoader
      */
     private $companyLoader;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface   $cache
-     * @param \Psr\Log\LoggerInterface                $logger
-     * @param \BrowserDetector\Loader\Helper\CacheKey $cacheKey
-     * @param \UaResult\Company\CompanyLoader         $companyLoader
+     * @var \BrowserDetector\Loader\Helper\Data
+     */
+    private $initData;
+
+    /**
+     * @param \Psr\Log\LoggerInterface            $logger
+     * @param \UaResult\Company\CompanyLoader     $companyLoader
+     * @param \BrowserDetector\Loader\Helper\Data $initData
      */
     public function __construct(
-        CacheInterface $cache,
         LoggerInterface $logger,
-        CacheKey $cacheKey,
-        CompanyLoader $companyLoader
+        CompanyLoader $companyLoader,
+        Data $initData
     ) {
-        $this->cache         = $cache;
         $this->logger        = $logger;
-        $this->cacheKey      = $cacheKey;
         $this->companyLoader = $companyLoader;
+        $this->initData      = $initData;
     }
 
     /**
@@ -72,13 +63,11 @@ class PlatformLoader implements SpecificLoaderInterface
      */
     public function __invoke(string $key, string $useragent = ''): OsInterface
     {
-        $cacheKey = $this->cacheKey;
-
-        try {
-            $platformData = $this->cache->getItem($cacheKey($key));
-        } catch (InvalidArgumentException $e) {
-            throw new NotFoundException('the platform with key "' . $key . '" was not found', 0, $e);
+        if (!$this->initData->hasItem($key)) {
+            throw new NotFoundException('the platform with key "' . $key . '" was not found');
         }
+
+        $platformData = $this->initData->getItem($key);
 
         if (null === $platformData) {
             throw new NotFoundException('the platform with key "' . $key . '" was not found');

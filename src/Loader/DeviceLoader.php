@@ -11,10 +11,8 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Loader\Helper\CacheKey;
+use BrowserDetector\Loader\Helper\Data;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\InvalidArgumentException;
 use UaDeviceType\TypeLoader;
 use UaResult\Company\CompanyLoader;
 use UaResult\Device\Device;
@@ -22,54 +20,49 @@ use UaResult\Device\Device;
 class DeviceLoader implements SpecificLoaderInterface
 {
     /**
-     * @var \BrowserDetector\Cache\CacheInterface
-     */
-    private $cache;
-
-    /**
      * @var \Psr\Log\LoggerInterface
      */
     private $logger;
 
     /**
-     * @var \BrowserDetector\Loader\Helper\CacheKey
-     */
-    private $cacheKey;
-    /**
      * @var \UaResult\Company\CompanyLoader
      */
     private $companyLoader;
+
     /**
      * @var \UaDeviceType\TypeLoader
      */
     private $typeLoader;
+
     /**
      * @var \BrowserDetector\Loader\GenericLoaderInterface
      */
     private $platformLoader;
 
     /**
-     * @param \BrowserDetector\Cache\CacheInterface          $cache
+     * @var \BrowserDetector\Loader\Helper\Data
+     */
+    private $initData;
+
+    /**
      * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \BrowserDetector\Loader\Helper\CacheKey        $cacheKey
      * @param \UaResult\Company\CompanyLoader                $companyLoader
      * @param \UaDeviceType\TypeLoader                       $typeLoader
      * @param \BrowserDetector\Loader\GenericLoaderInterface $platformLoader
+     * @param \BrowserDetector\Loader\Helper\Data            $initData
      */
     public function __construct(
-        CacheInterface $cache,
         LoggerInterface $logger,
-        CacheKey $cacheKey,
         CompanyLoader $companyLoader,
         TypeLoader $typeLoader,
-        GenericLoaderInterface $platformLoader
+        GenericLoaderInterface $platformLoader,
+        Data $initData
     ) {
-        $this->cache          = $cache;
         $this->logger         = $logger;
-        $this->cacheKey       = $cacheKey;
         $this->companyLoader  = $companyLoader;
         $this->typeLoader     = $typeLoader;
         $this->platformLoader = $platformLoader;
+        $this->initData       = $initData;
     }
 
     /**
@@ -82,13 +75,11 @@ class DeviceLoader implements SpecificLoaderInterface
      */
     public function __invoke(string $key, string $useragent = ''): array
     {
-        $cacheKey = $this->cacheKey;
-
-        try {
-            $deviceData = $this->cache->getItem($cacheKey($key));
-        } catch (InvalidArgumentException $e) {
-            throw new NotFoundException('the device with key "' . $key . '" was not found', 0, $e);
+        if (!$this->initData->hasItem($key)) {
+            throw new NotFoundException('the device with key "' . $key . '" was not found');
         }
+
+        $deviceData = $this->initData->getItem($key);
 
         if (null === $deviceData) {
             throw new NotFoundException('the device with key "' . $key . '" was not found');
@@ -103,8 +94,6 @@ class DeviceLoader implements SpecificLoaderInterface
                 $platform = $this->platformLoader->load($platformKey, $useragent);
             } catch (NotFoundException $e) {
                 $this->logger->warning($e);
-            } catch (InvalidArgumentException $e) {
-                $this->logger->error($e);
             }
         }
 
