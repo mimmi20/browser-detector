@@ -12,17 +12,12 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader\Helper;
 
 use BrowserDetector\Cache\CacheInterface;
-use Seld\JsonLint\JsonParser;
-use Seld\JsonLint\ParsingException;
+use ExceptionalJSON\DecodeErrorException;
+use JsonClass\Json;
 use Symfony\Component\Finder\Finder;
 
 class Data implements CacheInterface
 {
-    /**
-     * @var \Seld\JsonLint\JsonParser
-     */
-    private $jsonParser;
-
     /**
      * @var \Symfony\Component\Finder\Finder
      */
@@ -39,15 +34,18 @@ class Data implements CacheInterface
     private $initialized = false;
 
     /**
-     * @param \Symfony\Component\Finder\Finder $finder
-     * @param \Seld\JsonLint\JsonParser        $jsonParser
+     * @var Json
      */
-    public function __construct(
-        Finder $finder,
-        JsonParser $jsonParser
-    ) {
-        $this->finder     = $finder;
-        $this->jsonParser = $jsonParser;
+    private $json;
+
+    /**
+     * @param \Symfony\Component\Finder\Finder $finder
+     * @param \JsonClass\Json                  $json
+     */
+    public function __construct(Finder $finder, Json $json)
+    {
+        $this->finder = $finder;
+        $this->json   = $json;
     }
 
     /**
@@ -115,11 +113,11 @@ class Data implements CacheInterface
         foreach ($this->finder as $file) {
             /* @var \Symfony\Component\Finder\SplFileInfo $file */
             try {
-                $fileData = $this->jsonParser->parse(
+                $fileData = $this->json->decode(
                     $file->getContents(),
-                    JsonParser::DETECT_KEY_CONFLICTS
+                    false
                 );
-            } catch (ParsingException $e) {
+            } catch (DecodeErrorException $e) {
                 throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
             }
 

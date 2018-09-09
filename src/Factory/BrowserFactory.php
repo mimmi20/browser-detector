@@ -45,7 +45,6 @@ class BrowserFactory implements BrowserFactoryInterface
      * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
      *
      * @return array
      */

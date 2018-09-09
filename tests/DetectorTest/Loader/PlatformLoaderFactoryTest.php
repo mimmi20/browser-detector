@@ -19,8 +19,6 @@ use Psr\Log\NullLogger;
 class PlatformLoaderFactoryTest extends TestCase
 {
     /**
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return void
      */
     public function testInvoke(): void

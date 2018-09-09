@@ -11,17 +11,12 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader\Helper;
 
-use Seld\JsonLint\JsonParser;
-use Seld\JsonLint\ParsingException;
+use ExceptionalJSON\DecodeErrorException;
+use JsonClass\Json;
 use Symfony\Component\Finder\SplFileInfo;
 
 class Rules
 {
-    /**
-     * @var \Seld\JsonLint\JsonParser
-     */
-    private $jsonParser;
-
     /**
      * @var \Symfony\Component\Finder\SplFileInfo
      */
@@ -43,15 +38,18 @@ class Rules
     private $initialized = false;
 
     /**
-     * @param \Seld\JsonLint\JsonParser             $jsonParser
-     * @param \Symfony\Component\Finder\SplFileInfo $file
+     * @var Json
      */
-    public function __construct(
-        JsonParser $jsonParser,
-        SplFileInfo $file
-    ) {
-        $this->jsonParser = $jsonParser;
-        $this->file       = $file;
+    private $json;
+
+    /**
+     * @param \Symfony\Component\Finder\SplFileInfo $file
+     * @param \JsonClass\Json                       $json
+     */
+    public function __construct(SplFileInfo $file, Json $json)
+    {
+        $this->file = $file;
+        $this->json = $json;
     }
 
     /**
@@ -84,11 +82,11 @@ class Rules
     public function __invoke(): void
     {
         try {
-            $fileData = $this->jsonParser->parse(
+            $fileData = $this->json->decode(
                 $this->file->getContents(),
-                JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
+                true
             );
-        } catch (ParsingException $e) {
+        } catch (DecodeErrorException $e) {
             throw new \RuntimeException('file "' . $this->file->getPathname() . '" contains invalid json', 0, $e);
         }
 

@@ -13,8 +13,8 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\Helper\Rules;
+use JsonClass\Json;
 use Psr\Log\LoggerInterface;
-use Seld\JsonLint\JsonParser;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use UaBrowserType\TypeLoader;
@@ -38,8 +38,6 @@ class BrowserLoaderFactory
     /**
      * @param string $mode
      *
-     * @throws \Seld\JsonLint\ParsingException
-     *
      * @return GenericLoaderInterface
      */
     public function __invoke(string $mode): GenericLoaderInterface
@@ -58,13 +56,10 @@ class BrowserLoaderFactory
             $finder->ignoreUnreadableDirs();
             $finder->in($dataPath);
 
-            $jsonParser = new JsonParser();
-            $file       = new SplFileInfo($rulesPath, '', '');
-            $initRules  = new Rules($jsonParser, $file);
-            $initData   = new Data(
-                $finder,
-                $jsonParser
-            );
+            $json      = new Json();
+            $file      = new SplFileInfo($rulesPath, '', '');
+            $initRules = new Rules($file, $json);
+            $initData  = new Data($finder, $json);
 
             $loaderFactory = new EngineLoaderFactory($this->logger);
             $engineLoader  = $loaderFactory();

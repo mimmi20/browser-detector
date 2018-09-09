@@ -18,9 +18,9 @@ use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\NotFoundException;
+use ExceptionalJSON\DecodeErrorException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Seld\JsonLint\ParsingException;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaRequest\Constants;
 use UaRequest\GenericRequestFactory;
@@ -1451,7 +1451,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with('webkit', 'testagent')
-            ->will(self::throwException(new ParsingException('parsing failed')));
+            ->will(self::throwException(new DecodeErrorException(0, 'parsing failed', '')));
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -1553,7 +1553,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->willThrowException(new ParsingException('parsing failed'));
+            ->willThrowException(new DecodeErrorException(0, 'parsing failed', ''));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
