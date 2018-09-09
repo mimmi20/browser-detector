@@ -12,35 +12,41 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader\Helper;
 
 use BrowserDetector\Loader\Helper\Rules;
+use ExceptionalJSON\DecodeErrorException;
+use JsonClass\Json;
 use PHPUnit\Framework\TestCase;
-use Seld\JsonLint\JsonParser;
-use Seld\JsonLint\ParsingException;
 use Symfony\Component\Finder\SplFileInfo;
 
 class RulesTest extends TestCase
 {
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeFail(): void
     {
-        $jsonParser = $this->getMockBuilder(JsonParser::class)
+        $jsonParser = $this->getMockBuilder(Json::class)
             ->disableOriginalConstructor()
-            ->setMethods(['parse'])
+            ->setMethods(['decode'])
             ->getMock();
 
         $jsonParser
             ->expects(self::once())
-            ->method('parse')
-            ->will(self::throwException(new ParsingException('error')));
+            ->method('decode')
+            ->with('{"key": "value"}')
+            ->will(self::throwException(new DecodeErrorException(0, 'error', '')));
 
-        $file = $this->createMock(SplFileInfo::class);
+        $file = $this->getMockBuilder(SplFileInfo::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['getContents'])
+            ->getMock();
+        $file
+            ->expects(self::once())
+            ->method('getContents')
+            ->will(self::returnValue('{"key": "value"}'));
 
-        /** @var JsonParser $jsonParser */
+        /** @var Json $jsonParser */
         /** @var SplFileInfo $file */
-        $object = new Rules($jsonParser, $file);
+        $object = new Rules($file, $jsonParser);
 
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage('file "" contains invalid json');
@@ -48,27 +54,33 @@ class RulesTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeSuccess(): void
     {
-        $jsonParser = $this->getMockBuilder(JsonParser::class)
+        $jsonParser = $this->getMockBuilder(Json::class)
             ->disableOriginalConstructor()
-            ->setMethods(['parse'])
+            ->setMethods(['decode'])
             ->getMock();
 
         $jsonParser
             ->expects(self::once())
-            ->method('parse')
+            ->method('decode')
+            ->with('{"key": "value"}')
             ->will(self::returnValue(['rules' => ['abc'], 'generic' => 'test']));
 
-        $file = $this->createMock(SplFileInfo::class);
+        $file = $this->getMockBuilder(SplFileInfo::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['getContents'])
+            ->getMock();
+        $file
+            ->expects(self::once())
+            ->method('getContents')
+            ->will(self::returnValue('{"key": "value"}'));
 
-        /** @var JsonParser $jsonParser */
+        /** @var Json $jsonParser */
         /** @var SplFileInfo $file */
-        $object = new Rules($jsonParser, $file);
+        $object = new Rules($file, $jsonParser);
 
         $object();
 

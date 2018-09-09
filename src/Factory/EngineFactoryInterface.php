@@ -21,7 +21,6 @@ interface EngineFactoryInterface
      * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
      *
      * @return \UaResult\Engine\EngineInterface
      */
@@ -32,7 +31,6 @@ interface EngineFactoryInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \Seld\JsonLint\ParsingException
      *
      * @return mixed
      */

@@ -1,0 +1,216 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "properties": {
+      "headers": {
+        "type": "object",
+        "properties": {
+          "user-agent": {
+            "type": "string"
+          }
+        }
+      },
+      "device": {
+        "type": "object",
+        "properties": {
+          "deviceName": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "marketingName": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "manufacturer": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string"
+          },
+          "pointingMethod": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "resolutionWidth": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "resolutionHeight": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "dualOrientation": {
+            "type": "boolean"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "deviceName",
+          "marketingName",
+          "manufacturer",
+          "brand",
+          "pointingMethod",
+          "resolutionWidth",
+          "resolutionHeight",
+          "dualOrientation",
+          "type"
+        ]
+      },
+      "browser": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "modus": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "manufacturer": {
+            "type": "string"
+          },
+          "bits": {
+            "type": "integer"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "modus",
+          "version",
+          "manufacturer",
+          "bits",
+          "type"
+        ]
+      },
+      "os": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "marketingName": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "manufacturer": {
+            "type": "string"
+          },
+          "bits": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "name",
+          "marketingName",
+          "version",
+          "manufacturer",
+          "bits"
+        ]
+      },
+      "engine": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "manufacturer": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "version",
+          "manufacturer"
+        ]
+      }
+    },
+    "required": [
+      "headers",
+      "device",
+      "browser",
+      "os",
+      "engine"
+    ]
+  }
+}

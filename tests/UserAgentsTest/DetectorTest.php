@@ -12,10 +12,11 @@ declare(strict_types = 1);
 namespace UserAgentsTest;
 
 use BrowserDetector\DetectorFactory;
+use ExceptionalJSON\DecodeErrorException;
+use ExceptionalJSON\EncodeErrorException;
+use JsonClass\Json;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Seld\JsonLint\JsonParser;
-use Seld\JsonLint\ParsingException;
 use Symfony\Component\Cache\Simple\NullCache;
 use Symfony\Component\Finder\Finder;
 use UaResult\Browser\BrowserInterface;
@@ -99,12 +100,18 @@ class DetectorTest extends TestCase
         /* @var Result $result */
         $result = $object($headers);
 
+        try {
+            $encodedHeaders = (new Json())->encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+        } catch (EncodeErrorException $e) {
+            $encodedHeaders = '< failed to encode headers >';
+        }
+
         static::assertInstanceOf(
             ResultInterface::class,
             $result,
             sprintf(
                 'found result is not an instance of "\UaResult\Result\ResultInterface" for headers %s',
-                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+                $encodedHeaders
             )
         );
 
@@ -115,7 +122,7 @@ class DetectorTest extends TestCase
             $foundBrowser,
             sprintf(
                 'found browser is not an instance of "\UaResult\Browser\BrowserInterface" for headers %s',
-                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+                $encodedHeaders
             )
         );
 
@@ -126,7 +133,7 @@ class DetectorTest extends TestCase
             $foundEngine,
             sprintf(
                 'found engine is not an instance of "\UaResult\Engine\EngineInterface" for headers %s',
-                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+                $encodedHeaders
             )
         );
 
@@ -137,7 +144,7 @@ class DetectorTest extends TestCase
             $foundPlatform,
             sprintf(
                 'found platform is not an instance of "\UaResult\Os\OsInterface" for headers %s',
-                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+                $encodedHeaders
             )
         );
 
@@ -148,7 +155,7 @@ class DetectorTest extends TestCase
             $foundDevice,
             sprintf(
                 'found result is not an instance of "\UaResult\Device\DeviceInterface" for headers %s',
-                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+                $encodedHeaders
             )
         );
 
@@ -157,7 +164,7 @@ class DetectorTest extends TestCase
             $result,
             sprintf(
                 'detection result mismatch for headers %s',
-                json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+                $encodedHeaders
             )
         );
     }
@@ -180,17 +187,15 @@ class DetectorTest extends TestCase
         $data   = [];
         $logger = new NullLogger();
 
-        $jsonParser = new JsonParser();
-
         foreach ($finder as $file) {
             /* @var \Symfony\Component\Finder\SplFileInfo $file */
 
             try {
-                $tests = $jsonParser->parse(
+                $tests = (new Json())->decode(
                     $file->getContents(),
-                    JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
+                    true
                 );
-            } catch (ParsingException $e) {
+            } catch (DecodeErrorException $e) {
                 throw new \Exception(sprintf('file "%s" contains invalid json', $file->getPathname()), 0, $e);
             }
 

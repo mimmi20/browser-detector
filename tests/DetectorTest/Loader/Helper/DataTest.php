@@ -12,9 +12,9 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader\Helper;
 
 use BrowserDetector\Loader\Helper\Data;
+use ExceptionalJSON\DecodeErrorException;
+use JsonClass\Json;
 use PHPUnit\Framework\TestCase;
-use Seld\JsonLint\JsonParser;
-use Seld\JsonLint\ParsingException;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
@@ -73,18 +73,19 @@ class DataTest extends TestCase
             ->method('getIterator')
             ->will(self::returnValue($iterator));
 
-        $jsonParser = $this->getMockBuilder(JsonParser::class)
+        $jsonParser = $this->getMockBuilder(Json::class)
             ->disableOriginalConstructor()
-            ->setMethods(['parse'])
+            ->setMethods(['decode'])
             ->getMock();
 
         $jsonParser
             ->expects(self::once())
-            ->method('parse')
-            ->will(self::throwException(new ParsingException('error')));
+            ->method('decode')
+            ->with('{"key": "value"}')
+            ->will(self::throwException(new DecodeErrorException(0, 'error', '')));
 
         /** @var Finder $finder */
-        /** @var JsonParser $jsonParser */
+        /** @var Json $jsonParser */
         $object = new Data($finder, $jsonParser);
 
         $this->expectException(\RuntimeException::class);
@@ -145,18 +146,19 @@ class DataTest extends TestCase
             ->method('getIterator')
             ->will(self::returnValue($iterator));
 
-        $jsonParser = $this->getMockBuilder(JsonParser::class)
+        $jsonParser = $this->getMockBuilder(Json::class)
             ->disableOriginalConstructor()
-            ->setMethods(['parse'])
+            ->setMethods(['decode'])
             ->getMock();
 
         $jsonParser
             ->expects(self::exactly(2))
-            ->method('parse')
+            ->method('decode')
+            ->with('{"key": "value"}')
             ->will(self::returnValue(['rules' => 'abc', 'generic' => 'test', 'generic2' => 'test2']));
 
         /** @var Finder $finder */
-        /** @var JsonParser $jsonParser */
+        /** @var Json $jsonParser */
         $object = new Data($finder, $jsonParser);
 
         $object();
@@ -170,10 +172,10 @@ class DataTest extends TestCase
     public function testFlush(): void
     {
         $finder     = $this->createMock(Finder::class);
-        $jsonParser = $this->createMock(JsonParser::class);
+        $jsonParser = $this->createMock(Json::class);
 
         /** @var Finder $finder */
-        /** @var JsonParser $jsonParser */
+        /** @var Json $jsonParser */
         $object = new Data($finder, $jsonParser);
 
         self::assertFalse($object->flush());

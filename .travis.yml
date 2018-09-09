@@ -6,7 +6,6 @@ php:
   - 7.1
   - 7.2
   - 7.3
-  - nightly
 
 os: linux
 
@@ -17,10 +16,6 @@ env:
 cache:
   directories:
     - $HOME/.composer/cache
-
-addons:
-  code_climate:
-    repo_token: 43db4d76514521ffd97e65f2a6806a106ae168f1db55397741485212f9c70ae7
 
 stages:
   - composer validate

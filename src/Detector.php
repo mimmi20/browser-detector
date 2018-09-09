@@ -17,10 +17,10 @@ use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Factory\EngineFactoryInterface;
 use BrowserDetector\Factory\PlatformFactoryInterface;
 use BrowserDetector\Loader\NotFoundException;
+use ExceptionalJSON\DecodeErrorException;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
-use Seld\JsonLint\ParsingException;
 use UaNormalizer\NormalizerFactory;
 use UaRequest\GenericRequest;
 use UaRequest\GenericRequestFactory;
@@ -148,7 +148,7 @@ class Detector implements DetectorInterface
         /* @var \UaResult\Os\OsInterface $platform */
         try {
             [$device, $platform] = $deviceFactory($deviceUa);
-        } catch (NotFoundException | InvalidArgumentException | ParsingException $e) {
+        } catch (NotFoundException | InvalidArgumentException $e) {
             $this->logger->warning($e);
 
             $device   = null;
@@ -163,7 +163,7 @@ class Detector implements DetectorInterface
 
             try {
                 $platform = $platformFactory($browserUa);
-            } catch (NotFoundException | InvalidArgumentException | ParsingException $e) {
+            } catch (NotFoundException | InvalidArgumentException $e) {
                 $this->logger->warning($e);
                 $platform = null;
             }
@@ -175,7 +175,7 @@ class Detector implements DetectorInterface
         /* @var \UaResult\Engine\EngineInterface $engine */
         try {
             [$browser, $engine] = $browserFactory($browserUa);
-        } catch (InvalidArgumentException | ParsingException $e) {
+        } catch (DecodeErrorException | InvalidArgumentException $e) {
             $this->logger->error($e);
 
             $browser = null;
@@ -188,15 +188,17 @@ class Detector implements DetectorInterface
             if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
                 try {
                     $engine = $this->engineFactory->load('webkit', $browserUa);
-                } catch (ParsingException $e) {
+                } catch (DecodeErrorException $e) {
                     $this->logger->error($e);
+                } catch (NotFoundException $e) {
+                    $this->logger->warning($e);
                 }
             } else {
                 $engineFactory = $this->engineFactory;
 
                 try {
                     $engine = $engineFactory($browserUa);
-                } catch (InvalidArgumentException | ParsingException $e) {
+                } catch (InvalidArgumentException $e) {
                     $this->logger->error($e);
                 }
             }
