@@ -707,7 +707,6 @@ class MobileFactory implements DeviceFactoryInterface
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \Seld\JsonLint\ParsingException
      *
      * @return array
      */

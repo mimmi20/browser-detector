@@ -46,7 +46,6 @@ class PlatformFactoryTest extends TestCase
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
-     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
