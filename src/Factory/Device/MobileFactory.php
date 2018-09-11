@@ -487,7 +487,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ipad|ipod|iphone|like mac os x|darwin|cfnetwork|dataaccessd|iuc ?\(/i' => 'apple',
         '/iPh[0-9]\,[0-9]|Puffin\/[0-9\.]+I[TP]/' => 'apple',
         '/vf\-?[0-9]{3,4}/i' => 'tcl',
-        '/One|E[vV][oO] ?3D|PJ83100|831C|Eris 2\.1|0PCV1|MDA|0PJA10|P[CG][0-9]{5}/' => 'htc',
+        '/One|E[vV][oO] ?3D|PJ83100|831C|Eris 2\.1|0PCV1|MDA|0PJA10|0PJA2|P[CG][0-9]{5}/' => 'htc',
         '/vodafone 975/i' => 'vodafone',
         '/one [sx]|a315c|vpa|adr[0-9]{4}|wildfire|desire/i' => 'htc',
         '/t\-mobile/i' => 'tmobile',
