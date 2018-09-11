@@ -29,6 +29,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/mypad (1000|750) ?hd/i' => 'yooz',
         '/(myphone|mypad|mytab)[ _][^;\/]+ build|cube_lte|mytab10ii|hammer active/i' => 'myphone', // must be before Cube
         '/cube|(u[0-9]+gt|k8gt)|i1\-3gd|i15\-tcl/i' => 'cube',
+        '/tcl[ \-][a-z0-9]+|tcl[_ \-][^;\/]+ build|tclgalag60|vf\-1497|vf685/i' => 'tcl',
         '/LG/' => 'lg',
         '/pantech/i' => 'pantech',
         '/touchpad\/\d+\.\d+|hp-tablet|hp ?ipaq|webos.*p160u|slate|hp [78]|compaq [7|8]|hp; [^;\/)]+|pre\/|pixi|palm|cm_tenderloin/i' => 'hp',
@@ -197,7 +198,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/celkon/i' => 'celkon',
         '/bravis/i' => 'bravis',
         '/fnac/i' => 'fnac',
-        '/tcl/i' => 'tcl',
         '/radxa/i' => 'radxa',
         '/xolo/i' => 'xolo',
         '/dragon touch/i' => 'dragontouch',
@@ -485,7 +485,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/ipodder|tripadvisor/i' => 'unknown',
         '/ipad|ipod|iphone|like mac os x|darwin|cfnetwork|dataaccessd|iuc ?\(/i' => 'apple',
         '/iPh[0-9]\,[0-9]|Puffin\/[0-9\.]+I[TP]/' => 'apple',
-        '/vf\-?[0-9]{3,4}/i' => 'tcl',
         '/One|E[vV][oO] ?3D|PJ83100|831C|Eris 2\.1|0PCV1|MDA|0PJA10|0PJA2|P[CG][0-9]{5}/' => 'htc',
         '/vodafone 975/i' => 'vodafone',
         '/one [sx]|a315c|vpa|adr[0-9]{4}|wildfire|desire/i' => 'htc',
