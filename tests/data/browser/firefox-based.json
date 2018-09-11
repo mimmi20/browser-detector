@@ -2626,5 +2626,41 @@
       "version": "59.0.0",
       "manufacturer": "MozillaFoundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.9) Gecko/20100101 Goanna/4.1 Firefox/52.9 Basilisk/20180718"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "pointingMethod": "mouse",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": false,
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Basilisk",
+      "modus": null,
+      "version": "20180718",
+      "manufacturer": "MoonchildProductions",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Goanna",
+      "version": "4.1.0",
+      "manufacturer": "MoonchildProductions"
+    }
   }
 ]
