@@ -140,7 +140,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/next|next[0-9]|datam803hc|nx785qc8g|nxm900mc|nx008hd8g|nx010hi8g|nxm908hc|nxm726/i' => 'nextbook',
         '/infinix/i' => 'infinix',
         '/bv[5-8]000|dm550|crown| r6 | a8 |alife [ps]1|omega_pro/i' => 'blackview',
-        '/zte|racer|smart ?(tab(10|7)|4g|ultra 6)|orange (hi 4g|reyo)|beeline pro|lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q|blade|momodesign md droid|a310|atlas[_ ]w|base tab|kis plus|n799d|n9101|n9180|n9510|n9515|n9520|n9521|n9810|n918st|n958st|nx[0-9]{2,3}|open[c2]|u9180| v9 |v788d|v8000|v9180|x501|x920|z221|z768g|z820|z835|z851m?|z98[1236](dl)?/i' => 'zte', // must be before orange and acer
+        '/zte|racer|smart ?(tab(10|7)|4g|ultra 6)|orange (hi 4g|reyo)|beeline pro|lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q|blade|momodesign md droid|a310|atlas[_ ]w|base tab|kis plus|n799d|n9101|n9180|n9510|n9515|n9520|n9521|n9810|n918st|n958st|nx[0-9]{2,3}|open[c2]|u9180| v9 |v788d|v8000|v9180|x501|x920|z221|z768g|z820|z835|z855|z851m?|z98[1236](dl)?/i' => 'zte', // must be before orange and acer
         '/acer|da241hl/i' => 'acer',
         '/fujitsu|m532|m305|f\-0[0-9][def]|is11t|fartm933kz/i' => 'fujitsu',
         '/sprint/i' => 'sprint',
