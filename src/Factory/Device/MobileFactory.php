@@ -460,7 +460,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(RP|KM)\-U[DQ]M[0-9]{2}/' => 'verico',
         '/KM\-/' => 'kttech',
         '/primo76|primo 91/i' => 'msi',
-        '/ g3 |p713|p509|c660|(ls|vm|ln)[0-9]{3}|optimus g|l\-0[0-9][cde]/i' => 'lg',
+        '/ g3 |p713|p509|c660|(ls|vm|ln)[0-9]{3}|optimus g|l\-0[0-9][cde]|lm\-g710/i' => 'lg',
         '/zera[ _]f|boost iise|ice2|prime s|explosion/i' => 'highscreen',
         '/l930/i' => 'ciotcud',
         '/x8\+/i' => 'triray',
