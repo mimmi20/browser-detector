@@ -96,7 +96,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/pandigital/i' => 'pandigital',
         '/phicomm/i' => 'phicomm',
         '/pomp/i' => 'pomp',
-        '/qmobile/i' => 'qmobile',
         '/sanyo/i' => 'sanyo',
         '/siemens/i' => 'siemens',
         '/benq/i' => 'siemens',
@@ -394,6 +393,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/m785|800p71d|800p3[12]c|101p51c|x1010|a1013r|s10\-0g/i' => 'mecer', // must be before acer
         '/cubot|hafury|s208|s308|s550|s600|z100 pro|note plus| c7 | h1 | cheetah | x1[268] | x17_s /i' => 'cubot', // must be before acer
         '/coolpad|w713|cp[0-9]{4}|n930|5860s|8079|8190q|8295|vcr-i0/i' => 'coolpad',
+        '/qmobile|q\-smart|qtab| x900 /i' => 'qmobile', // must be before acer
         '/ [aevzs][0-9]{3} /i' => 'acer',
         '/AT\-AS[0-9]{2}[DS]/' => 'wolfgang',
         '/vk\-/i' => 'vkmobile',
@@ -646,7 +646,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/NS[0-9]{1,4}/' => 'nous',
         '/monster x5|quadra 7 ultraslim/i' => 'pentagram',
         '/F1[0-9]/' => 'pulid',
-        '/q\-smart|qtab/i' => 'qmobile',
         '/andromax|androtab|pd6d1j/i' => 'smartfren',
         '/ax5_duo/i' => 'maxx',
         '/ga10h/i' => 'gooweel',
