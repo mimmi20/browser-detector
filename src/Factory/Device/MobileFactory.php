@@ -179,6 +179,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/t118|t108/i' => 'twinovo',
         '/POV|TAB\-PROTAB|MOB\-5045/' => 'point-of-view',
         '/philips|pi[0-9]{4}/i' => 'philips',
+        '/t1144/i' => 'cello',
         '/thl[ _]|w[12]00| w8| t11/i' => 'thl',
         '/mobistel|cynus[ _][^\/;]+/i' => 'mobistel',
         '/dg[0-9]{3,4}|x[679]pro|x5max_pro|bl5000| x[23]0 |f3_pro|y6_piano|y6 max| t6 /i' => 'doogee',
