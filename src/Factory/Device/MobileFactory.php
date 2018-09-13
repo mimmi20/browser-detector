@@ -123,13 +123,13 @@ class MobileFactory implements DeviceFactoryInterface
         '/captiva[ _-][^;\/]+ build/i' => 'captiva',
         '/supertab[ _-]?[^;\/]+ build/i' => 'supertab',
         '/umi(digi)?[ _]|iron[ _]|london(?!test)|hammer_s|z2 pro|plus e|c note|super/i' => 'umi',
-        '/mot|nexus 6|(?<!an|md |mocor)droid ?(build|[a-z0-9]+)|droid-bionic|portalmmm\/2.0 (e378i|l6|l7|v3)|xoom [^;\/]*build|(?<!ne)(xt|mz|mb|me)[0-9]{3,4}[a-z]?(\(defy\)|-0[1-5]|-backflip)?( build|\))|milestone|razr hd| z |t720/i' => 'motorola',
+        '/mot|nexus 6|(?<!an|hs|md |mocor)droid ?(build|[a-z0-9]+)|droid-bionic|portalmmm\/2.0 (e378i|l6|l7|v3)|xoom [^;\/]*build|(?<!ne)(xt|mz|mb|me)[0-9]{3,4}[a-z]?(\(defy\)|-0[1-5]|-backflip)?( build|\))|milestone|razr hd| z |t720/i' => 'motorola',
         '/nexus ?(one|9|evohd2|hd2)/i' => 'htc',
         '/nexus ?[45]/i' => 'lg', // must be before MTC
         '/galaxy s3 ex/i' => 'hdc',
         '/lingwin/i' => 'lingwin',
         '/boway/i' => 'boway',
-        '/sprd|b51\+/i' => 'sprd',
+        '/sprd|b51\+|sphs on hsdroid/i' => 'sprd',
         '/samsung[is \-;\/]|galaxy|nexus|(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-|g710[68]|n8000d|n[579]1[01]0|f031|n900\+|sc[lt]2[0-9]|isw11sc|s7562|sghi[0-9]{3}|i8910|i545|i(7110|9100|9300)|blaze|s8500/i' => 'samsung', // must be before orange and sprint
         '/texet|x\-pad|navipad|tm\-[0-9]{4}/i' => 'texet', // must be before odys
         '/(ever(glory|shine|miracle|mellow|classic|trendy|fancy|vivid|slim|glow|magic|smart|star)[^\/;]*) build|e70[25]0hd|e7914hg|e8050h[dg]|e8051hd|e9054hd/i' => 'evertek', // must be before Magic and Odys
