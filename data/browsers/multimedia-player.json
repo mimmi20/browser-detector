@@ -1,4 +1,18 @@
 {
+  "alexamediaplayer": {
+    "name": "Alexa MediaPlayer",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AlexaMediaPlayer"
+      ]
+    },
+    "engine": "unknown"
+  },
   "coremedia": {
     "name": "CoreMedia",
     "manufacturer": "Apple",
@@ -21,6 +35,34 @@
       "class": "VersionFactory",
       "search": [
         "ElmediaPlayer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "exoplayerdemo": {
+    "name": "ExoPlayerDemo",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ExoPlayerDemo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "exoplayerlib": {
+    "name": "ExoPlayerLib",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ExoPlayerLib"
       ]
     },
     "engine": "unknown"
@@ -69,6 +111,20 @@
       ]
     },
     "engine": null
+  },
+  "radio app": {
+    "name": "Radio App",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Radio"
+      ]
+    },
+    "engine": "unknown"
   },
   "roku dvp": {
     "name": "Roku DVP",
