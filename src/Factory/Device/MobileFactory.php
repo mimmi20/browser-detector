@@ -58,7 +58,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/denver|ta[cdq]-[0-9]+/i' => 'denver',
         '/sharp|shl2[25]|shv31|is05|[0-9]{3}sh|sh\-?[0-9]{2,4}[cdefuw]/i' => 'sharp',
         '/flytouch/i' => 'flytouch',
-        '/n\-06e|n[79]05i/i' => 'nec', // must be before docomo
+        '/nec[ _\-]|kgt\/2\.0|portalmmm\/1\.0 (db|n)|(portalmmm|o2imode)\/2.0[ ,]n|n\-06[de]|n[79]05i/i' => 'nec', // must be before docomo
         '/docomo/i' => 'docomo',
         '/easypix|easypad|easyphone|junior 4\.0/i' => 'easypix',
         '/xoro/i' => 'xoro',
@@ -264,7 +264,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/konrow/i' => 'konrow',
         '/eSTAR/' => 'estar',
         '/NTT/' => 'nttsystem',
-        '/NEC\-/' => 'nec',
         '/iq1055/i' => 'mls', // must be before Fly
         '/fly[ _]|flylife|phoenix 2|fs50[1-9]|fs511|fs551|fs40[1-7]|fs452|fs451|fs454|4fs06|meridian-|iq[0-9]{3,}i?[ _]?(quad|firebird|quattro|turbo|magic)?( build|[;\/\)])/i' => 'fly',
         '/bmobile[ _]/i' => 'bmobile',
