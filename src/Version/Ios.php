@@ -117,7 +117,7 @@ class Ios implements VersionCacheFactoryInterface
             'IUC\(U\;iOS',
             'iPh OS',
             'iosv',
-            'iPad',
+            'iPad\/',
             'iOS',
         ];
 
