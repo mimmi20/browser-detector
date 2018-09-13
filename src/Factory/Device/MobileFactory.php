@@ -120,6 +120,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/nokia(?!; gt\-i8750)|lumia|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|symbian.*\s[a-z0-9]+$|rx-51 n900|rm-(1031|104[25]|106[234567]|107[234567]|1089|109[0269]|1109|111[34]|1127|1141|1154)|ta-[0-9]{4} build|(adr|android) 5\.[01].* n1|5130c\-2|arm; 909|id336|genm14/i' => 'nokia', // also includes the 'Microsoft' branded Lumia devices
         '/captiva[ _-][^;\/]+ build/i' => 'captiva',
         '/supertab[ _-]?[^;\/]+ build/i' => 'supertab',
+        '/vi8 plus|hibook|hi10 pro|cw-hi8-super/i' => 'chuwi',
         '/umi(digi)?[ _]|iron[ _]|london(?!test)|hammer_s|z2 pro|plus e|c note|super/i' => 'umi',
         '/mot|nexus 6|(?<!an|hs|md |mocor)droid ?(build|[a-z0-9]+)|droid-bionic|portalmmm\/2.0 (e378i|l6|l7|v3)|xoom [^;\/]*build|(?<!ne)(xt|mz|mb|me)[0-9]{3,4}[a-z]?(\(defy\)|-0[1-5]|-backflip)?( build|\))|milestone|razr hd| z |t720/i' => 'motorola',
         '/nexus ?(one|9|evohd2|hd2)/i' => 'htc',
@@ -580,7 +581,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/w032i\-c3|tr10rs1|tr10cd1/i' => 'intel',
         '/cyrus|cs[0-9]{2}/i' => 'cyrus',
         '/ t02 /i' => 'changhong',
-        '/vi8 plus|hibook|hi10 pro/i' => 'chuwi',
         '/jy\-/i' => 'jiayu',
         '/ m20 /i' => 'timmy',
         '/g708 oc/i' => 'colorfly',
