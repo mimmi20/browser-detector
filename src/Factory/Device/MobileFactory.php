@@ -343,7 +343,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/PC1088/' => 'honlin',
         '/sailfish/i' => 'jolla',
         '/Magic/' => 'magic',
-        '/xiaomi|(mi [a-z0-9]+|mi-4c|mi-one[ _]?[a-z0-9]+|mix 2s?)[);\/ ]|hm[ _][^\/;]+ ?(build|miui|\))|(2014501|2014011|201481[138]|201302[23]|2013061) build|redmi|note 4|mipad/i' => 'xiaomi',
+        '/xiaomi|(mi [a-z0-9]+|mi-4c|mi-one[ _]?[a-z0-9]+|mix 2s?)[);\/ ]|hm[ _][^\/;]+ ?(build|miui|\))|(2014501|2014011|201481[138]|201302[23]|2013061) (build|miui)|redmi|note 4|mipad/i' => 'xiaomi',
         '/WeTab/' => 'neofonie',
         '/SIE\-/' => 'siemens',
         '/CAL21|C771|C811/' => 'casio',
