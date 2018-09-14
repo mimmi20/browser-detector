@@ -284,7 +284,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/nomi/i' => 'nomi',
         '/nexian/i' => 'nexian',
         '/opsson/i' => 'opsson',
-        '/qilive/i' => 'qilive',
+        '/qilive|q4t10in/i' => 'qilive',
         '/quechua/i' => 'quechua',
         '/stx/i' => 'stonex',
         '/sunvan/i' => 'sunvan',
