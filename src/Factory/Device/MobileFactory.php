@@ -23,7 +23,7 @@ class MobileFactory implements DeviceFactoryInterface
         // @todo: rules with company name in UA
         '/hiphone/i' => 'hiphone',
         '/blackberry/i' => 'rim',
-        '/asus|nexus[ _]?7|padfone|transformer|tf300t|slider sl101|me302(c|kl)|me301t|me371mg|me17(1|2v|3x)|eee_701|tpad_10|tx201la|p01t_1|(k0[01][0-9a-z]|z00d|z00yd|p(00[8ac]|01y|02[12347]) build|z017d)[);\/ ]/i' => 'asus',
+        '/asus(?!-nexus)|padfone|transformer|tf300t|slider sl101|me302(c|kl)|me301t|me371mg|me17(1|2v|3x)|eee_701|tpad_10|tx201la|p01t_1|(k0[01][0-9a-z]|z00d|z00yd|p(00[8ac]|01y|02[12347]) build|z017d)[);\/ ]/i' => 'asus',
         '/feiteng/i' => 'feiteng',
         '/mypad (1000|750) ?hd/i' => 'yooz',
         '/(myphone|mypad|mytab)[ _][^;\/]+ build|cube_lte|mytab10ii|hammer active/i' => 'myphone', // must be before Cube
@@ -114,20 +114,19 @@ class MobileFactory implements DeviceFactoryInterface
         '/flipkart|xt811/i' => 'flipkart',
         '/trekstor|surftab|vt10416|breeze 10\.1 quad|xintroni10\.1|st70408_4|[sv]t[0-9]{5}/i' => 'trekstor',
         '/ct(10[0123]0|7[12]0|820)(w|fr)?[);\/ ]/i' => 'carrefour',
-        '/(hw-)?(huawei|ideos|honor[ _]?|(h60-l(01|02|03|04|11|12)|h30-(c00|l01m?|l02|u10|t00|t10)|g621-tl00m?|plk-(al10|cl00|tl00|tl01h?|ul00|l01)|scl-(al00|cl00|tl00h?|l01)|cam-tl00|chc-u[02]3|ch(e2?|m)-[cut]l00[hm]?|che1-cl[12]0|che2-l11|chm-u01|fig-lx1|dli-(al10|l[24]2|tl20)|kiw-l21|kiw-tl00h|u(8100|8110|8230|8500|8661|8665|8667|8800|8818|8860|9200|9508)|nem-l[52][21]|ple-70[13]l|bln-(l2[124]|al10)|bnd-(al10|l21)|lld-al[012]0|pra-l[ax]1|pra-al00x|rne-l22|y220-u00)[);\/ ])|bucare y330-u05|hi6210sft|vodafone[ _]858|vodafone 845|ascend|m860| p6 |enjoy 7 plus|g6600|p7mini|nexus 6p/i' => 'huawei',
+        '/(hw-)?(huawei|ideos|honor[ _]?|(h60-l(01|02|03|04|11|12)|h30-(c00|l01m?|l02|u10|t00|t10)|g621-tl00m?|plk-(al10|cl00|tl00|tl01h?|ul00|l01)|scl-(al00|cl00|tl00h?|l01)|cam-tl00|chc-u[02]3|ch(e2?|m)-[cut]l00[hm]?|che1-cl[12]0|che2-l11|chm-u01|fig-lx1|dli-(al10|l[24]2|tl20)|kiw-l21|kiw-tl00h|u(8100|8110|8230|8500|8661|8665|8667|8800|8818|8860|9200|9508)|nem-l[52][21]|ple-70[13]l|bln-(l2[124]|al10)|bnd-(al10|l21)|lld-al[012]0|pra-l[ax]1|pra-al00x|rne-l22|y220-u00)[);\/ ])|bucare y330-u05|hi6210sft|vodafone[ _]858|vodafone 845|ascend|m860| p6 |enjoy 7 plus|g6600|p7mini/i' => 'huawei',
         '/nokia(?!; gt\-i8750)|lumia|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|symbian.*\s[a-z0-9]+$|rx-51 n900|rm-(1031|104[25]|106[234567]|107[234567]|1089|109[0269]|1109|111[34]|1127|1141|1154)|ta-[0-9]{4} build|(adr|android) 5\.[01].* n1|5130c\-2|arm; 909|id336|genm14/i' => 'nokia', // also includes the 'Microsoft' branded Lumia devices
         '/captiva[ _-][^;\/]+ build/i' => 'captiva',
         '/supertab[ _-]?[^;\/]+ build/i' => 'supertab',
         '/vi8 plus|hibook|hi10 pro|cw-hi8-super/i' => 'chuwi',
         '/umi(digi)?[ _]|iron[ _]|london(?!test)|hammer_s|z2 pro|plus e|c note|super/i' => 'umi',
-        '/mot|nexus 6|(?<!an|hs|md |mocor)droid ?(build|[a-z0-9]+)|droid-bionic|portalmmm\/2.0 (e378i|l6|l7|v3)|xoom [^;\/]*build|(?<!ne)(xt|mz|mb|me)[0-9]{3,4}[a-z]?(\(defy\)|-0[1-5]|-backflip)?( build|\))|milestone|razr hd| z |t720/i' => 'motorola',
-        '/nexus ?(one|9|evohd2|hd2)/i' => 'htc',
-        '/nexus ?[45]/i' => 'lg', // must be before MTC
+        '/mot|(?<!an|hs|md |mocor)droid ?(build|[a-z0-9]+)|droid-bionic|portalmmm\/2.0 (e378i|l6|l7|v3)|xoom [^;\/]*build|(?<!ne)(xt|mz|mb|me)[0-9]{3,4}[a-z]?(\(defy\)|-0[1-5]|-backflip)?( build|\))|milestone|razr hd| z |t720/i' => 'motorola',
+        '/nexus ?(evohd2|hd2)/i' => 'htc',
         '/galaxy s3 ex/i' => 'hdc',
         '/lingwin/i' => 'lingwin',
         '/boway/i' => 'boway',
         '/sprd|b51\+|sphs on hsdroid/i' => 'sprd',
-        '/samsung[is \-;\/]|galaxy|nexus|(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-|g710[68]|n8000d|n[579]1[01]0|f031|n900\+|sc[lt]2[0-9]|isw11sc|s7562|sghi[0-9]{3}|i8910|i545|i(7110|9100|9300)|blaze|s8500/i' => 'samsung', // must be before orange and sprint
+        '/samsung[is \-;\/]|galaxy(?! nexus)|(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)\-|g710[68]|n8000d|n[579]1[01]0|f031|n900\+|sc[lt]2[0-9]|isw11sc|s7562|sghi[0-9]{3}|i8910|i545|i(7110|9100|9300)|blaze|s8500/i' => 'samsung', // must be before orange and sprint
         '/texet|x\-pad|navipad|tm\-[0-9]{4}/i' => 'texet', // must be before odys
         '/(ever(glory|shine|miracle|mellow|classic|trendy|fancy|vivid|slim|glow|magic|smart|star)[^\/;]*) build|e70[25]0hd|e7914hg|e8050h[dg]|e8051hd|e9054hd/i' => 'evertek', // must be before Magic and Odys
         '/inm[0-9]{3,4}|tab1024/i' => 'intenso',
@@ -169,7 +168,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/koobee/i' => 'koobee',
         '/infocus|m370i|vzh/i' => 'infocus',
         '/DARK(MOON|SIDE|NIGHT|FULL)/' => 'wiko',
-        '/MTC/' => 'mtc',
+        '/MTC /' => 'mtc',
         '/ARK/' => 'ark',
         '/meizu|mz-[a-z]|(m04[05]|m35[1356]|mx[ -]?[2345]( pro)?|(mz-)?m[1-6] note|m57[18]c|m3[esx]|m03[12]|m1 metal|m1 e|m[29]|m2 e|pro [567]|pro 7-h)[);\/ ]/i' => 'meizu',
         '/TBD[0-9]{4}|TBD[BCG][0-9]{3,4}/' => 'zeki',
@@ -461,6 +460,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(mpqc|mpdc)[0-9]{1,4}|ph[0-9]{3}|mid(7c|74c|82c|84c|801|811|701|711|170|77c|43c|102c|103c|104c|114c)|mp(843|717|718|843|888|959|969|1010|7007|7008)|mgp7/i' => 'mpman',
         '/N[0-9]{4}/' => 'star',
         '/medipad/i' => 'bewatec',
+        '/nexus|googletv|glass|crkey[^a-z0-9]|pixel build|pixel (xl|c|2|2 xl) build|gce x86 phone/i' => 'google',
         '/One|E[vV][oO] ?3D|PJ83100|831C|Eris 2\.1|0PCV1|MDA|0PJA10|0PJA2|P[CG][0-9]{5}/' => 'htc',
         '/vodafone 975/i' => 'vodafone',
         '/one [sx]|a315c|vpa|adr[0-9]{4}|wildfire|desire/i' => 'htc',
@@ -555,7 +555,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/apollo|thor|mars pro/i' => 'vernee',
         '/itel|inote|1505\-a02| a20 build/i' => 'itel',
         '/mi(tab|smart)/i' => 'wolder',
-        '/pixel|glass 1|gce x86 phone/i' => 'google',
         '/909t| m13 /i' => 'mpie',
         '/z30/i' => 'magnus',
         '/up580|up520/i' => 'uhappy',
