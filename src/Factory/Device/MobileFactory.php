@@ -655,6 +655,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/q101\-4g/i' => 'voyo',
         '/robin/i' => 'nextbit',
         '/bitel[ _-][^\/;]+ build|b8604|b9501/i' => 'bitel',
+        '/x96mini/i' => 'edal',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
