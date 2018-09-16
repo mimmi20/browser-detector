@@ -2,6 +2,7 @@
   "rules": {
     "/bln\\-/i": {
       "/bln\\-l21/i": "huawei bln-l21",
+      "/bln\\-al20/i": "huawei bln-al20",
       "/bln\\-al10/i": "huawei bln-al10",
       "/bln\\-tl00/i": "huawei bln-tl00",
       "/bln\\-tl10/i": "huawei bln-tl10"
@@ -60,6 +61,7 @@
       "/plk\\-al10/i": "huawei plk-al10"
     },
     "/pra\\-/i": {
+      "/pra\\-al00x/i": "huawei pra-al00x",
       "/pra\\-la1/i": "huawei pra-la1",
       "/pra\\-lx1/i": "huawei pra-lx1"
     },
@@ -84,6 +86,7 @@
       "/che2\\-tl00/i": "huawei che2-tl00"
     },
     "/cam\\-/i": {
+      "/cam\\-tl00/i": "huawei cam-tl00",
       "/cam\\-l21/i": "huawei cam-l21",
       "/cam\\-l03/i": "huawei cam-l03"
     },
@@ -148,6 +151,7 @@
       "/g630\\-u10/i": "huawei g630-u10"
     },
     "/cun\\-/i": {
+      "/cun\\-u29/i": "huawei cun-u29",
       "/cun\\-l21/i": "huawei cun-l21",
       "/cun\\-l03/i": "huawei cun-l03",
       "/cun\\-l01/i": "huawei cun-l01"
@@ -373,6 +377,7 @@
       "/stf\\-tl10/i": "huawei stf-tl10"
     },
     "/ine\\-/i": {
+      "/ine\\-lx2/i": "huawei ine-lx2",
       "/ine\\-lx1/i": "huawei ine-lx1"
     },
     "/caz\\-/i": {
@@ -383,6 +388,9 @@
       "/lyo\\-l01/i": "huawei lyo-l01"
     },
     "/lld\\-/i": {
+      "/lld\\-al20/i": "huawei lld-al20",
+      "/lld\\-al10/i": "huawei lld-al10",
+      "/lld\\-al00/i": "huawei lld-al00",
       "/lld\\-l31/i": "huawei lld-l31",
       "/lld\\-l21/i": "huawei lld-l21"
     },
@@ -414,6 +422,8 @@
       "/kob\\-w09/i": "huawei kob-w09"
     },
     "/lnd\\-/i": {
+      "/lnd\\-al40/i": "huawei lnd-al40",
+      "/lnd\\-al30/i": "huawei lnd-al30",
       "/lnd\\-l29/i": "huawei lnd-l29"
     },
     "/dra\\-/i": {
@@ -425,6 +435,17 @@
     "/jmm\\-/i": {
       "/jmm\\-l22/i": "huawei jmm-l22"
     },
+    "/edi\\-/i": {
+      "/edi\\-al10/i": "huawei edi-al10"
+    },
+    "/kiw\\-/i": {
+      "/kiw\\-tl00h/i": "huawei kiw-tl00h",
+      "/kiw\\-tl00/i": "huawei kiw-tl00",
+      "/kiw\\-l21/i": "huawei kiw-l21"
+    },
+    "/mla\\-/i": {
+      "/mla\\-al10/i": "huawei mla-al10"
+    },
     "/hn3\\-u01/i": "huawei hn3-u01",
     "/hol\\-u19/i": "huawei hol-u19",
     "/nmo\\-l31/i": "huawei nmo-l31",
@@ -433,10 +454,8 @@
     "/s8\\-701w/i": "huawei s8-701w",
     "/w2\\-u00/i": "huawei w2-u00",
     "/w1\\-u00/i": "huawei w1-u00",
-    "/kiw\\-l21/i": "huawei kiw-l21",
     "/t1 7\\.0/i": "huawei t1-701u",
     "/honor 6/i": "huawei h60-l01",
-    "/nexus 6p/i": "huawei nexus 6p",
     "/hi6210sft/i": "huawei hi6210sft",
     "/grace/i": "huawei grace",
     "/huaweinxt/i": "huawei nxt-l09",

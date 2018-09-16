@@ -1,16 +1,22 @@
 {
   "rules": {
-    "/m6 note/i": "meizu m6 note",
-    "/m3 note/i": "meizu m3 note",
-    "/m3s/i": "meizu m3s",
-    "/m2 note/i": "meizu m2 note",
     "/m578c/i": "meizu m578c",
     "/m571c/i": "meizu m2 note",
     "/m356/i": "meizu m356",
     "/m355/i": "meizu m355",
     "/m353/i": "meizu m353",
     "/m351/i": "meizu m351",
+    "/meizu_m9| m9 /i": "meizu m9",
+    "/m6 note/i": "meizu m6 note",
+    "/m3 note/i": "meizu m3 note",
+    "/m3x/i": "meizu m3x",
+    "/m3s/i": "meizu m3s",
+    "/m2 note/i": "meizu m2 note",
+    "/m2 e/i": "meizu m2 e",
+    "/ m2 /i": "meizu m2",
     "/m1 note/i": "meizu m1 note",
+    "/m1 metal/i": "meizu m1 metal",
+    "/m1 e/i": "meizu m1 e",
     "/pro 7\\-h/i": "meizu pro 7-h",
     "/pro 7/i": "meizu pro 7",
     "/pro 6/i": "meizu pro 6",
@@ -22,10 +28,7 @@
     "/m045/i": "meizu m045",
     "/m040/i": "meizu m040",
     "/m032/i": "meizu m032",
-    "/m031/i": "meizu m031",
-    "/meizu_m9/i": "meizu m9",
-    "/ m9 /i": "meizu m9",
-    "/ m2 /i": "meizu m2"
+    "/m031/i": "meizu m031"
   },
   "generic": "general meizu device"
 }

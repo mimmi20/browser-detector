@@ -6,7 +6,7 @@
     "device": {
       "deviceName": "Majestic 2.4D",
       "marketingName": "Majestic 2.4D",
-      "manufacturer": "Shaan",
+      "manufacturer": "Iball",
       "brand": "Iball",
       "pointingMethod": "stylus",
       "resolutionWidth": 240,
@@ -69,6 +69,42 @@
       "name": "WebKit",
       "version": "534.30.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Snap 4G2 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Slide Snap 4G2",
+      "marketingName": "Slide Snap 4G2",
+      "manufacturer": "Iball",
+      "brand": "Iball",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 600,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
     }
   }
 ]

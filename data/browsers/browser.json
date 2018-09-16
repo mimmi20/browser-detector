@@ -349,6 +349,20 @@
     },
     "engine": null
   },
+  "basilisk": {
+    "name": "Basilisk",
+    "manufacturer": "MoonchildProductions",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Basilisk"
+      ]
+    },
+    "engine": "goanna"
+  },
   "beamrise": {
     "name": "Beamrise",
     "manufacturer": "BeamriseTeam",

@@ -59,5 +59,23 @@
       ]
     },
     "engine": null
+  },
+  "ucbrowser mini": {
+    "name": "UC Browser Mini",
+    "manufacturer": "UcWeb",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "transcoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "UC Browser",
+        "UCBrowser",
+        "UBrowser",
+        "UCWEB",
+        "Browser"
+      ]
+    },
+    "engine": null
   }
 }

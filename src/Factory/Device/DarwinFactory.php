@@ -44,7 +44,6 @@ class DarwinFactory implements DeviceFactoryInterface
      * @param string $useragent
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \Seld\JsonLint\ParsingException
      *
      * @return array
      */

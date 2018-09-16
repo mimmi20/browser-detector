@@ -71,6 +71,7 @@ class MobileDevice
             'lenovog780',
             'windows iot',
             'netcast',
+            'raspbian',
         ];
 
         if ($this->useragent->containsAny($noMobiles, false)) {

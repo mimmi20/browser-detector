@@ -5038,5 +5038,41 @@
       "version": "0.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Apple-iPad2C7/1002.329"
+    },
+    "device": {
+      "deviceName": "iPad mini",
+      "marketingName": "iPad mini (Wi-Fi+4G, Verizon, Sprint)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 768,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Apple",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "0.0.0",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
