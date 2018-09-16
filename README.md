@@ -10,8 +10,7 @@
 [![codecov](https://codecov.io/gh/mimmi20/BrowserDetector/branch/master/graph/badge.svg)](https://codecov.io/gh/mimmi20/BrowserDetector)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/mimmi20/BrowserDetector.svg)](http://isitmaintained.com/project/mimmi20/BrowserDetector "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/mimmi20/BrowserDetector.svg)](http://isitmaintained.com/project/mimmi20/BrowserDetector "Percentage of issues still open")
-[![Dependency Status](https://gemnasium.com/badges/github.com/mimmi20/BrowserDetector.svg)](https://gemnasium.com/github.com/mimmi20/BrowserDetector)
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/072f0752b2bbc6f0a389/maintainability)](https://codeclimate.com/github/mimmi20/BrowserDetector/maintainability)
 
 ## Requirements
 
