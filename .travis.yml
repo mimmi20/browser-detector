@@ -17,6 +17,10 @@ cache:
   directories:
     - $HOME/.composer/cache
 
+addons:
+  code_climate:
+    repo_token: 26eb546d18ca2ba3ff7e4f343f88327ae7cafef5584b9cd4c63f69521365fd96
+
 stages:
   - composer validate
   - static code analysis
@@ -36,6 +40,7 @@ install: travis_retry composer update --optimize-autoloader --prefer-dist --pref
 script: vendor/bin/phpunit -c phpunit.xml --colors --columns 117 --no-coverage
 
 jobs:
+  fast_finish: true
   allow_failures:
     - php: 7.3
     - php: nightly
