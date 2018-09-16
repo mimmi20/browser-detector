@@ -190,7 +190,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/i\-mobile/i' => 'imobile',
         '/evercoss/i' => 'evercoss',
         '/dino/i' => 'dino',
-        '/shaan|iball/i' => 'shaan',
+        '/shaan|iball|snap 4g2/i' => 'iball',
         '/modecom/i' => 'modecom',
         '/kiano/i' => 'kiano',
         '/smartfren/i' => 'smartfren',
