@@ -383,7 +383,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/tm785m3/i' => 'nuvision',
         '/m785|800p71d|800p3[12]c|101p51c|x1010|a1013r|s10\-0g/i' => 'mecer', // must be before acer
         '/cubot|hafury|s208|s308|s550|s600|z100 pro|note plus| c7 | h1 | cheetah | x1[268] | x17_s /i' => 'cubot', // must be before acer
-        '/coolpad|w713|cp[0-9]{4}|n930|5860s|8079|8190q|8295|vcr-i0/i' => 'coolpad',
+        '/coolpad|cp[0-9]{4}|c103 build|n930|5860s|8079|8190q|8295|vcr-i0|w713/i' => 'coolpad',
         '/AT\-AS[0-9]{2}[DS]/' => 'wolfgang',
         '/vk\-/i' => 'vkmobile',
         '/FP[12]/' => 'fairphone',
