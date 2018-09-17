@@ -161,7 +161,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/logicpd|zoom2|nook ?color/i' => 'logicpd',
         '/nook|bn[tr]v[0-9]+/i' => 'barnesnoble',
         '/koobee/i' => 'koobee',
-        '/infocus|m370i|vzh/i' => 'infocus',
+        '/infocus|m370i|vzh|if9031/i' => 'infocus',
         '/DARK(MOON|SIDE|NIGHT|FULL)/' => 'wiko',
         '/MTC /' => 'mtc',
         '/ARK/' => 'ark',
