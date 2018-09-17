@@ -101,7 +101,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/homtom|ht[0-9]{1,2} ?(pro)?| s16 /i' => 'homtom',
         '/hosin/i' => 'hosin',
         '/hasee/i' => 'hasee',
-        '/tecno/i' => 'tecno',
         '/intex/i' => 'intex',
         '/mt\-gt\-a9500|gt\-a7100/i' => 'htm', // must be before samsung (gt rule)
         '/gt\-h/i' => 'feiteng',
@@ -383,6 +382,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/vk\-/i' => 'vkmobile',
         '/FP[12]/' => 'fairphone',
         '/le 1 pro|le 2|le max|le ?x[0-9]{3}/i' => 'leeco',
+        '/tecno| f5 | h7 /i' => 'tecno',
         '/BARRY|BIRDY|BLOOM|CINK|FEVER|FIZZ|HARRY|GETAWAY| GOA|HIGHWAY|IGGY|JIMMY|JERRY|KITE|OZZY|PLUS|PULP|RIDGE|ROBBY|SLIDE|STAIRWAY|SUBLIM|SUNSET|U FEEL|WAX/' => 'wiko',
         '/l5510|lenny|rainbow|sunny|view (go|prime|xl)|view build|w_k[46]00/i' => 'wiko',
         '/QtCarBrowser/' => 'teslamotors',
@@ -566,7 +566,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/ i10 | h150 /i' => 'symphony',
         '/ arc /i' => 'kobo',
         '/m92d\-3g/i' => 'sumvier',
-        '/ f5 | h7 /i' => 'tecno',
         '/a88x/i' => 'alldaymall',
         '/bs1078/i' => 'yonestoptech',
         '/excellent8/i' => 'tomtec',
