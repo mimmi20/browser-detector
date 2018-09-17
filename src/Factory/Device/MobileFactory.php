@@ -224,7 +224,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/anka/i' => 'anka',
         '/lemon/i' => 'lemon',
         '/iris708/i' => 'ais',
-        '/lava |iris[ _]?[^\/;]+(\)| build)|a76 build|x1 selfie build|x41 plus build|flair z1|kkt20|pixelv1|pixel v2\+| x17 |x1 atom|x5 4g| z60/i' => 'lava',
+        '/lava[ _]|iris[ _]?[^\/;]+(\)| build)|a76 build|x1 selfie build|x41 plus build|flair z1|kkt20|pixelv1|pixel v2\+|( x17|x1 atom|x5 4g| z[67]0) build/i' => 'lava',
         '/sop\-/i' => 'sop',
         '/vsun/i' => 'vsun',
         '/advan/i' => 'advan',
