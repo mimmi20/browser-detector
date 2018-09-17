@@ -27,7 +27,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(myphone|mypad|mytab)[ _][^;\/]+ build|cube_lte|mytab10ii|hammer active/i' => 'myphone', // must be before Cube
         '/cube|(u[0-9]+gt|k8gt)|i1\-3gd|i15\-tcl/i' => 'cube',
         '/tcl[ \-][a-z0-9]+|tcl[_ \-][^;\/]+ build|tclgalag60|vf\-1497|vf685/i' => 'tcl',
-        '/LG/' => 'lg',
+        '/LG(?!E)|LGE(?! Nexus)/' => 'lg',
         '/pantech/i' => 'pantech',
         '/touchpad\/\d+\.\d+|hp-tablet|hp ?ipaq|webos.*p160u|slate|hp [78]|compaq [7|8]|hp; [^;\/)]+|pre\/|pixi|palm|cm_tenderloin/i' => 'hp',
         '/hisense [^);\/]+|hs-(g|u|eg?|i|l|t|x)[0-9]+[a-z0-9\-]*|e270bsa|m470bs[ae]|e2281|eg680|f5281|u972|e621t|w2003/i' => 'hisense',
