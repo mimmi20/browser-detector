@@ -57,7 +57,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/easypix|easypad|easyphone|junior 4\.0/i' => 'easypix',
         '/xoro/i' => 'xoro',
         '/memup/i' => 'memup',
-        '/micromax/i' => 'micromax',
         '/explay(?!er)|actived[ _]|atlant |informer[ _][0-9]+|cinematv 3g|surfer[ _][0-9\.]|squad[ _][0-9\.]|onliner[1-3]|rioplay|m1_plus|d7\.2 3g|art 3g/i' => 'explay',
         '/goophone/i' => 'goophone',
         '/g\-tide/i' => 'gtide',
@@ -129,10 +128,11 @@ class MobileFactory implements DeviceFactoryInterface
         '/next|next[0-9]|datam803hc|nx785qc8g|nxm900mc|nx008hd8g|nx010hi8g|nxm908hc|nxm726/i' => 'nextbook',
         '/infinix/i' => 'infinix',
         '/bv[5-8]000|dm550|crown| r6 | a8 |alife [ps]1|omega_pro/i' => 'blackview',
+        '/karbonn|titanium|machfive|sparkle v|s109|k9 smart grand/i' => 'karbonn', // must be before acer
+        '/micromax[ \-\_]?[a-z0-9]+|(p70221|a121|a120|a116|a114|a093|a065| a96| a50| a47|q327)( build|\))|mid1014/i' => 'micromax',
         '/zte|racer|smart ?(tab(10|7)|4g|ultra 6)|orange (hi 4g|reyo)|beeline pro|lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q|blade|momodesign md droid|[ \-]a310|atlas[_ ]w|base tab|kis plus|n799d|n9101|n9180|n9510|n9515|n9520|n9521|n9810|n918st|n958st|nx[0-9]{2,3}|open[c2]|u9180| v9 |v788d|v8000|v9180|x501|x920|z221|z768g|z820|z835|z855|z851m?|z98[1236](dl)?/i' => 'zte', // must be before orange and acer
         '/smart tab 4(?!g)|vfd [0-9]{3}|985n|vodafone smart 4 max|smart 4 turbo/i' => 'vodafone',
         '/qmobile|q\-smart|qtab| x900 /i' => 'qmobile', // must be before acer
-        '/karbonn|titanium|machfive|sparkle v|s109|k9 smart grand/i' => 'karbonn', // must be before acer
         '/shield tablet/i' => 'nvidia',
         '/kingzone|k1 turbo/i' => 'kingzone',
         '/gigabyte|rio r1|gsmart/i' => 'gigabyte',
@@ -320,7 +320,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/playbook|rim tablet|bb10|stv100|bb[ab]100\-2|sth100\-2|bbd100\-1/i' => 'rim',
         '/ (b15|s41|s60) |b15q/i' => 'caterpillar',
         '/cat ?(nova|stargate|tablet|helix)/i' => 'catsound',
-        '/MID1014/' => 'micromax',
         '/mid0714|midc|pmid|prov?[0-9]{3}[b0-9]?|p4526a|p5006a/i' => 'polaroid',
         '/MID(1024|1125|1126|1045|1048|1060|1065|4331|7012|7015A?|7016|7022|7032|7035|7036|7042|7047|7048|7052|7065|7120|8024|8042|8048|8065|8125|8127|8128|9724|9740|9742)/' => 'coby',
         '/(?<!\/)MID713|MID(06[SN]|08[S]?|12|13|14|15|701|702|703|704|705(DC)?|706[AS]?|707|708|709|711|712|714|717|781|801|802|901|1001|1002|1003|1004( 3G)?|1005|1009|1010|7802|9701|9702)/' => 'manta',
@@ -369,7 +368,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/TAB A742|TAB7iD|TAB 10Q|ZEN [0-9]/' => 'wexler',
         '/VS810PP/' => 'lg',
         '/A1002|A811|S[45]A[0-9]|SC7 PRO HD/' => 'lexand',
-        '/A121|A120|A116|A114|A093|A065| A96 |Q327| A47/' => 'micromax',
         '/s750/i' => 'beneve',
         '/ z110/i' => 'xido',
         '/a727/i' => 'azpen',
@@ -589,7 +587,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/kt107/i' => 'bdf',
         '/m52_red_note/i' => 'mlais',
         '/sunmicrosystems/i' => 'sun',
-        '/ a50/i' => 'micromax',
         '/max2_plus_3g/i' => 'innjoo',
         '/coolpix s800c/i' => 'nikon',
         '/vsd220/i' => 'viewsonic',
