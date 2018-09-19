@@ -623,6 +623,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/x96mini/i' => 'edal',
         '/mxqpro/i' => 'bomix',
         '/t5524/i' => 'smartron',
+        '/unonu/i' => 'unonu',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
