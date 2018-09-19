@@ -467,7 +467,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/m502/i' => 'navon',
         '/lencm900hz/i' => 'lenco',
         '/xm[13]00/i' => 'landvo',
-        '/lead [12]|t1_plus|elite [45]|shark 1|s8_pro|m8 pro/i' => 'leagoo',
+        '/lead [12]|t1_plus|elite [45]|shark 1|s8_pro|m8 pro|kiicaa power/i' => 'leagoo',
         '/ m8 /i' => 'amlogic',
         '/m601/i' => 'aoc',
         '/IM\-[AT][0-9]{3}[LKS]|ADR910L/' => 'pantech',
