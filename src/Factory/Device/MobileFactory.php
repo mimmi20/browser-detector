@@ -140,6 +140,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/fujitsu|m532|m305|f\-0[0-9][def]|is11t|fartm933kz/i' => 'fujitsu',
         '/pentagram|monster x5|quadra 7 ultraslim/i' => 'pentagram',
         '/quadro/i' => 'quadro',
+        '/akai|glory[ _](o2|l3|g5)|eco e2|tab-7800|tab-7830|tab-9800q?|x6 metal/i' => 'akai',
         '/htc|sprint (apa|atp)|adr(?!910l)[a-z0-9]+|nexushd2|amaze[ _]4g[);\/ ]|(desire|sensation|evo ?3d|incredibles|wildfire|butterfly)[ _]?([^;\/]+) build|(amaze[ _]4g|(?<!gi)one ?[xelsv\+]+)[);\/ ]|spv e6[05]0|one m8|x525a|pg86100|pc36100|xv6975|pj83100[);\/ ]|0pcv1|2pyb2|0pja10|0pja2|t\-mobile_espresso|mda[ _]|vpa_touch|(831c|a315c| x9|(?<!xolo|nexus|cubot|blu life) one) build|eris 2\.1/i' => 'htc',
         '/sprint/i' => 'sprint',
         '/videocon/i' => 'videocon',
