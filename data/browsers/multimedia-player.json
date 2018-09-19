@@ -25,6 +25,20 @@
     },
     "engine": "webkit"
   },
+  "deezer": {
+    "name": "Deezer",
+    "manufacturer": "Deezer",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Deezer"
+      ]
+    },
+    "engine": "webkit"
+  },
   "elmedia player": {
     "name": "Elmedia Player",
     "manufacturer": "EltimaSoftware",
@@ -93,6 +107,20 @@
         "qtver=",
         "Quicktime",
         "QuickTime"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcastaddict": {
+    "name": "PodcastAddict",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PodcastAddict"
       ]
     },
     "engine": "webkit"
