@@ -502,5 +502,41 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; ALLVIEW; Impera S) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537"
+    },
+    "device": {
+      "deviceName": "Impera S",
+      "marketingName": "Impera S",
+      "manufacturer": "Allview",
+      "brand": "Allview",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "11.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.1.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "7.0.0",
+      "manufacturer": "Microsoft"
+    }
   }
 ]

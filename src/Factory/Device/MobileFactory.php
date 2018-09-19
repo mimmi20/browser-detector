@@ -267,6 +267,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/q8002/i' => 'crypto', // must be before xolo
         '/xolo|a1000s|q10[01]0i?|q[678]00s?|q2000|omega[ _][0-9]|era 2/i' => 'xolo',
         '/cherry|flare2x|fusion bolt/i' => 'cherry-mobile',
+        '/allview|v1_viper|a4you|p5_(quad|energy)|ax4nano|x[124]_soul/i' => 'allview',
         '/android.*iphone|ucweb.*adr.*iphone/i' => 'xianghe',
         '/(?<!tr|m|med)ipad|ipod(?!der)|(?<!like )iphone|like mac os x|darwin|cfnetwork|dataaccessd|iuc ?\(|iph[0-9]\,[0-9]|puffin\/[0-9\.]+i[tp]/i' => 'apple',
         '/mtech/i' => 'mtech',
@@ -398,7 +399,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/MT6582\/|mn84l_8039_20203/' => 'unknown',
         '/mt6515m\-a1\+/' => 'united',
         '/BIGCOOL|COOLFIVE|COOL\-K|Just5|LINK5/' => 'konrow',
-        '/allview|v1_viper|a4you|p5_(quad|energy)|ax4nano|x[124]_soul/i' => 'allview',
         '/PLT([^;\/]+) Build/' => 'proscan',
         '/[SLWM]T[0-9]{2}|[SM]K[0-9]{2}|SO\-[0-9]{2}[BCDEFGH]/' => 'sony',
         '/RMD\-[0-9]{3,4}/' => 'ritmix',
