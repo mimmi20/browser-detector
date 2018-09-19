@@ -381,7 +381,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/vk\-/i' => 'vkmobile',
         '/FP[12]/' => 'fairphone',
         '/le 1 pro|le 2|le max|le ?x[0-9]{3}/i' => 'leeco',
-        '/tecno| f5 | h7 /i' => 'tecno',
+        '/tecno| f5 | h7 |phantom6-plus/i' => 'tecno',
         '/BARRY|BIRDY|BLOOM|CINK|FEVER|FIZZ|HARRY|GETAWAY| GOA|HIGHWAY|IGGY|JIMMY|JERRY|KITE|OZZY|PLUS|PULP|RIDGE|ROBBY|SLIDE|STAIRWAY|SUBLIM|SUNSET|U FEEL|WAX/' => 'wiko',
         '/l5510|lenny|rainbow|sunny|view (go|prime|xl)|view build|w_k[46]00/i' => 'wiko',
         '/QtCarBrowser/' => 'teslamotors',
