@@ -315,7 +315,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/bluboo|picasso|xfire|maya/i' => 'bluboo',
         '/amazon|kindle|silk|kf(tt|ot|jwi|sowi|thwi|apwa|aswi|apwi|dowi|auwi|giwi|tbwi|mewi|fowi|sawi|sawa|suwi|arwi|thwa|jwa)|aft[st]|sd4930ur|fire2/i' => 'amazon',
         '/playbook|rim tablet|bb10|stv100|bb[ab]100\-2|sth100\-2|bbd100\-1/i' => 'rim',
-        '/ (b15|s41|s60) |b15q/i' => 'caterpillar',
+        '/ (b15|s[34]1|s[46]0) |b15q/i' => 'caterpillar',
         '/cat ?(nova|stargate|tablet|helix)/i' => 'catsound',
         '/mid0714|midc|pmid|prov?[0-9]{3}[b0-9]?|p4526a|p5006a/i' => 'polaroid',
         '/MID(1024|1125|1126|1045|1048|1060|1065|4331|7012|7015A?|7016|7022|7032|7035|7036|7042|7047|7048|7052|7065|7120|8024|8042|8048|8065|8125|8127|8128|9724|9740|9742)/' => 'coby',
