@@ -343,7 +343,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/SIE\-/' => 'siemens',
         '/CAL21|C771|C811/' => 'casio',
         '/g3mini/i' => 'lg',
-        '/oukitel|u7 plus|u16 max|k6000 pro|k6000 plus|k4000|k10000|universetap/i' => 'oukitel',
+        '/oukitel|u7 plus|u16 max|k6000 pro|k6000 plus|k4000|k10000|universetap| u22 build/i' => 'oukitel',
         '/ouki|ok[au][0-9]{1,2}/i' => 'ouki',
         '/numy|novo[0-9]/i' => 'ainol',
         '/oneplus|one (a200[135]|e100[13])|a0001/i' => 'oneplus',
