@@ -416,6 +416,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/k107| k17 /i' => 'yuntab',
         '/ k18 /i' => 'newman',
         '/k1001l1b/i' => 'moonar',
+        '/dps /i' => 'dps',
         '/mb40ii1/i' => 'dns',
         '/w960/i' => 'sony',
         '/n003/i' => 'neo',
