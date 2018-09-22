@@ -413,6 +413,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ a10 |mp907c/i' => 'allwinner',
         '/k107| k17 /i' => 'yuntab',
         '/ k18 /i' => 'newman',
+        '/k1001l1b/i' => 'moonar',
         '/mb40ii1/i' => 'dns',
         '/w960/i' => 'sony',
         '/n003/i' => 'neo',
