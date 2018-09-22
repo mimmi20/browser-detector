@@ -112,7 +112,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/supertab[ _-]?[^;\/]+ build/i' => 'supertab',
         '/vi8 plus|hibook|hi10 pro|cw-hi8-super/i' => 'chuwi',
         '/umi(digi)?[ _]|iron[ _]|london(?!test)|hammer_s|z2 pro|plus e|c note|super(?!sonic)/i' => 'umi',
-        '/mot|(?<!an|hs|md |mocor|m)droid ?(build|[a-z0-9]+)|droid-bionic|portalmmm\/2.0 (e378i|l6|l7|v3)|xoom [^;\/]*build|(?<!ne)(xt|mz|mb|me)[0-9]{3,4}[a-z]?(\(defy\)|-0[1-5]|-backflip)?( build|\))|milestone|razr hd| z |t720/i' => 'motorola',
+        '/mot|(?<!an|hs|md |mocor|m)droid ?(build|[a-z0-9]+)|droid-bionic|portalmmm\/2.0 (e378i|l6|l7|v3)|xoom [^;\/]*build|(?<!ne)(xt|mz|mb|me)[0-9]{3,4}[a-z]?(\(defy\)|-0[1-5]|-backflip)?( build|\))|milestone|razr hd|(?<!desire) z |t720/i' => 'motorola',
         '/galaxy s3 ex/i' => 'hdc',
         '/lingwin/i' => 'lingwin',
         '/boway/i' => 'boway',
@@ -130,7 +130,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/bv[5-8]000|dm550|crown| r6 | a8 |alife [ps]1|omega_pro|a7pro/i' => 'blackview',
         '/karbonn|titanium|machfive|sparkle v|s109|k9 smart grand/i' => 'karbonn', // must be before acer
         '/micromax[ \-\_]?[a-z0-9]+|(p70221|a121|a120|a116|a114|a093|a065| a96| a50| a47|q327)( build|\))|mid1014/i' => 'micromax',
-        '/zte|racer|smart ?(tab(10|7)|4g|ultra 6)|orange (hi 4g|reyo)|beeline pro|lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q|blade|momodesign md droid|[ \-]a310|atlas[_ ]w|base tab|kis plus|n799d|n9101|n9180|n9510|n9515|n9520|n9521|n9810|n918st|n958st|nx[0-9]{2,3}|open[c2]|u9180| v9 |v788d|v8000|v9180|x501|x920|z221|z768g|z820|z835|z855|z851m?|z98[1236](dl)?/i' => 'zte', // must be before orange and acer
+        '/zte|racer|smart ?(tab(10|7)|4g|ultra 6)|orange (hi 4g|reyo)|beeline pro|lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q|blade|momodesign md droid|[ \-]a310(?!e)|atlas[_ ]w|base tab|kis plus|n799d|n9101|n9180|n9510|n9515|n9520|n9521|n9810|n918st|n958st|nx[0-9]{2,3}|open[c2]|u9180| v9 |v788d|v8000|v9180|x501|x920|z221|z768g|z820|z835|z855|z851m?|z98[1236](dl)?/i' => 'zte', // must be before orange and acer
         '/smart tab 4(?!g)|vfd [0-9]{3}|985n|vodafone smart 4 max|smart 4 turbo/i' => 'vodafone',
         '/qmobile|q\-smart|qtab| x900 /i' => 'qmobile', // must be before acer
         '/shield tablet/i' => 'nvidia',
@@ -142,7 +142,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/quadro/i' => 'quadro',
         '/akai|glory[ _](o2|l3|g5)|eco e2|tab-7800|tab-7830|tab-9800q?|x6 metal/i' => 'akai',
         '/lava[ _]|iris[ _]?[^\/;]+(\)| build)|a76 build|x1 selfie build|x41 plus build|flair z1|kkt20|pixelv1|pixel v2\+|( x17|x1 atom|x5 4g| z[67]0) build/i' => 'lava',
-        '/htc|sprint (apa|atp)|adr(?!910l)[a-z0-9]+|nexushd2|amaze[ _]4g[);\/ ]|(desire|sensation|evo ?3d|incredibles|wildfire|butterfly)[ _]?([^;\/]+) build|(amaze[ _]4g|(?<!gi)one ?[xelsv\+]+)[);\/ ]|spv e6[05]0|one m8|x525a|pg86100|pc36100|xv6975|pj83100[);\/ ]|0pcv1|2pyb2|0pja10|0pja2|t\-mobile_espresso|mda[ _]|vpa_touch|(831c|a315c| x9|(?<!xolo|nexus|cubot|blu life) one) build|eris 2\.1/i' => 'htc',
+        '/htc|sprint (apa|atp)|adr(?!910l)[a-z0-9]+|nexushd2|amaze[ _]4g[);\/ ]|(desire|sensation|evo ?3d|incredibles|wildfire|butterfly)[ _]?([^;\/]+) build|(amaze[ _]4g|(?<!gi)one ?[xelsv\+]+)[);\/ ]|spv e6[05]0|one mini|one m8|x525a|pg86100|pc36100|xv6975|pj83100[);\/ ]|0pcv1|2pyb2|0pja10|0pja2|t\-mobile_espresso|mda[ _]|vpa_touch|(831c|a315c| x9|(?<!xolo|nexus|cubot|blu life) one|dream) build|eris 2\.1/i' => 'htc',
         '/sprint/i' => 'sprint',
         '/videocon/i' => 'videocon',
         '/gigaset|gs5[357]\-6|gs185|gs270|gs370_plus/i' => 'gigaset',
