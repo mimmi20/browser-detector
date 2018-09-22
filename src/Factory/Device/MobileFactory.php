@@ -412,6 +412,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ignis 8/i' => 'tbtouch',
         '/ a10 |mp907c/i' => 'allwinner',
         '/k107| k17 /i' => 'yuntab',
+        '/ k18 /i' => 'newman',
         '/mb40ii1/i' => 'dns',
         '/w960/i' => 'sony',
         '/n003/i' => 'neo',
