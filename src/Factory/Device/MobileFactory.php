@@ -204,7 +204,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/celkon|a400/i' => 'celkon',
         '/fnac/i' => 'fnac',
         '/radxa/i' => 'radxa',
-        '/dragon touch/i' => 'dragontouch',
+        '/dragon touch/i' => 'dragon-touch',
         '/ramos/i' => 'ramos',
         '/woxter/i' => 'woxter',
         '/k\-?touch/i' => 'ktouch',
