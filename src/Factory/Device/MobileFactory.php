@@ -357,6 +357,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/[ ;](l\-?ement|l\-ite|l\-?ixir)|e[89]12|e731|e1031|kt712a_4\\.4|tab1062|tab950/i' => 'logicom',
         '/tech ?pad|xtab|dual c1081hd|s813g/i' => 'techpad',
         '/c15100m/i' => 'kurio',
+        '/esperanza/i' => 'esperanza',
         '/A5000| [CDEFG][0-9]{4}/' => 'sony',
         '/PM\-[0-9]{4}/' => 'sanyo',
         '/folio_and_a|toshiba_ac_and_az|folio100|at1s0|at[0-9]{2,3}|t\-0[0-9][cd]/i' => 'toshiba',
