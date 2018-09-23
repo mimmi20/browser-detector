@@ -114,7 +114,7 @@ class GenericLoader implements GenericLoaderInterface
                 return $this->detectInArray($key, $generic, $useragent);
             }
 
-            return $this->load(strtolower(trim(preg_replace($search, $key, $matches[0]))), $useragent);
+            return $this->load(mb_strtolower(trim(preg_replace($search, $key, $matches[0]))), $useragent);
         }
 
         return $this->load($generic, $useragent);
