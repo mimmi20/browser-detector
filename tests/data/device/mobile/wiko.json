@@ -2626,5 +2626,77 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Deezer/5.4.21.97 (Android; 7.1.1; Mobile; fr) WIKO WIM Lite"
+    },
+    "device": {
+      "deviceName": "WIM Lite",
+      "marketingName": "WIM Lite",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Deezer",
+      "modus": null,
+      "version": "5.4.21.97",
+      "manufacturer": "Deezer",
+      "bits": 32,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; W_C800 Build/OPR1.170623.032) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "WC800",
+      "marketingName": "WC800",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1528,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "69.0.3497.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
   }
 ]

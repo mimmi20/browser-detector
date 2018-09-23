@@ -60,7 +60,7 @@
     "/iph(?:one)?8[c,_]1/i": "apple iphone 8,1",
     "/iph(?:one)?7[c,_]2/i": "apple iphone 7,2",
     "/iphone 6/i": "apple iphone 7,2",
-    "/iph(?:one)?7[c,_]1/i": "apple iphone 7,1",
+    "/iph(?:one)?7[c,_]1|1c2%257enohpi/i": "apple iphone 7,1",
     "/iph(?:one)?6[c,_]2/i": "apple iphone 6,2",
     "/iph(?:one)?6[c,_]1/i": "apple iphone 6,1",
     "/iph(?:one)?5[c,_]4/i": "apple iphone 5,4",

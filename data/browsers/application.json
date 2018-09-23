@@ -1465,6 +1465,20 @@
     },
     "engine": null
   },
+  "yahoo finance app": {
+    "name": "Yahoo Finance App",
+    "manufacturer": "Yahoo",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YahooMobileFinance"
+      ]
+    },
+    "engine": "webkit"
+  },
   "yahoo mobile app": {
     "name": "Yahoo Mobile App",
     "manufacturer": "Yahoo",
@@ -1477,7 +1491,7 @@
         "YHOO\\_Search\\_App"
       ]
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "yahoo! app": {
     "name": "Yahoo! App",
@@ -1492,7 +1506,7 @@
         "yjapp"
       ]
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "yahoo! mobile messenger": {
     "name": "Yahoo! Mobile Messenger",
@@ -1506,7 +1520,7 @@
         "YahooMobileMessenger"
       ]
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "yandexsearch": {
     "name": "Yandex Search App",

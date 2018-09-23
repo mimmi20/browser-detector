@@ -104,7 +104,9 @@ class GenericLoader implements GenericLoaderInterface
     private function detectInArray(array $rules, string $generic, string $useragent)
     {
         foreach ($rules as $search => $key) {
-            if (!preg_match($search, $useragent)) {
+            $matches = [];
+
+            if (!preg_match($search, $useragent, $matches)) {
                 continue;
             }
 
@@ -112,7 +114,7 @@ class GenericLoader implements GenericLoaderInterface
                 return $this->detectInArray($key, $generic, $useragent);
             }
 
-            return $this->load($key, $useragent);
+            return $this->load(mb_strtolower(trim(preg_replace($search, $key, $matches[0]))), $useragent);
         }
 
         return $this->load($generic, $useragent);

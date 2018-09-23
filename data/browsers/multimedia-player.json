@@ -25,6 +25,20 @@
     },
     "engine": "webkit"
   },
+  "deezer": {
+    "name": "Deezer",
+    "manufacturer": "Deezer",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Deezer"
+      ]
+    },
+    "engine": "webkit"
+  },
   "elmedia player": {
     "name": "Elmedia Player",
     "manufacturer": "EltimaSoftware",
@@ -67,6 +81,20 @@
     },
     "engine": "unknown"
   },
+  "fancy cloud music": {
+    "name": "Fancy Cloud Music",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Fancy Cloud Music"
+      ]
+    },
+    "engine": "webkit"
+  },
   "mathplayer": {
     "name": "MathPlayer",
     "manufacturer": "Unknown",
@@ -93,6 +121,21 @@
         "qtver=",
         "Quicktime",
         "QuickTime"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcastaddict": {
+    "name": "PodcastAddict",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PodcastAddict\\/v",
+        "PodcastAddict"
       ]
     },
     "engine": "webkit"
@@ -139,6 +182,20 @@
       ]
     },
     "engine": "unknown"
+  },
+  "rssradio podcast player": {
+    "name": "RSSRadio Podcast Player",
+    "manufacturer": "Dorada",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "RSS_?Radio"
+      ]
+    },
+    "engine": "webkit"
   },
   "vlc media player": {
     "name": "VLC Media Player",
