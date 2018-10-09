@@ -1,5 +1,5 @@
 {
-  "alcatel ot-9005x": {
+  "alcatel 9005x": {
     "codename": "OT-9005X",
     "marketingName": "One Touch Pixi 3 (8) 3G",
     "manufacturer": "Alcatel",
@@ -11,7 +11,7 @@
     "resolutionHeight": 800,
     "dualOrientation": true
   },
-  "alcatel ot-9010x": {
+  "alcatel 9010x": {
     "codename": "OT-9010X",
     "marketingName": "One Touch Pixi 3",
     "manufacturer": "Alcatel",
@@ -23,7 +23,7 @@
     "resolutionHeight": 600,
     "dualOrientation": true
   },
-  "alcatel ot-9022x": {
+  "alcatel 9022x": {
     "codename": "OT-9022X",
     "marketingName": "One Touch Pixi 3",
     "manufacturer": "Alcatel",
@@ -105,6 +105,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 960,
     "resolutionHeight": 540,
+    "dualOrientation": true
+  },
+  "alcatel 9003x": {
+    "codename": "9003X",
+    "marketingName": "One Touch Pixi 4 (7) 3G",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "platform": "android",
+    "type": "fone-pad",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true
   }
 }
