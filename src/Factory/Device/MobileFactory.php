@@ -447,7 +447,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/wileyfox|swift/i' => 'wileyfox',
         '/t\-mobile|pulse|mytouch4g|ameo|garminfone/i' => 'tmobile',
         '/oppo|x90[0-9]{1,2}|n52[0-9]{2}|r[12678][0-9]{2,3}|u70[0-9]t|f1f|find7|a3[37]f|r7[ks]?f|r7plus[fm]| 1201 | 1107 |n1t|a160[13]|cph160[79]|cph1701|cph171[57]|cph172[37]|cph180[13]|cph1819|cph1859|(adr|android) 4\.2.* n1|padm00|rmx1805/i' => 'oppo',
-        '/lead [12]|t1_plus|elite [45]|shark 1|s8_pro|m8 pro|kiicaa power/i' => 'leagoo',
+        '/leagoo|lead [12]|t1_plus|elite [45]|shark 1|s8_pro|m8 pro|kiicaa power/i' => 'leagoo',
         '/max2_plus_3g/i' => 'innjoo',
         '/advan|t1x plus|vandroid/i' => 'advan',
         '/wiko|dark(moon|side|night|full)|barry|birdy|bloom|cink|fever|fizz|harry|getaway| goa|highway|iggy|jimmy|jerry|kite|ozzy|plus|pulp|ridge|robby|slide|stairway|sublim|sunset|u feel|wax|l5510|lenny|rainbow|sunny|view (go|prime|xl)|view build|w_k[46]00|w_c800/i' => 'wiko',
