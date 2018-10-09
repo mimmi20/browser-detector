@@ -255,7 +255,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/NTT/' => 'nttsystem',
         '/iq1055/i' => 'mls', // must be before Fly
         '/fly[ _]|flylife|phoenix 2|fs50[1-9]|fs511|fs551|fs40[1-7]|fs452|fs451|fs454|4fs06|meridian-|iq[0-9]{3,}i?[ _]?(quad|firebird|quattro|turbo|magic)?( build|[;\/\)])/i' => 'fly',
-        '/smartpad7503g|smartpad970s2(3g)?|m[_\-][mp]p[0-9a-z]+|m\-ipro[0-9a-z]+/i' => 'mediacom',
+        '/smartpad7503g|smartpad970s2(3g)?|m[_\-][mps]p[0-9a-z]+|m\-ipro[0-9a-z]+/i' => 'mediacom',
         '/bmobile[ _]|ax[0-9]{3}/i' => 'bmobile',
         '/hlv-t[a-z0-9]+/i' => 'hi-level',
         '/ t02 /i' => 'changhong',
