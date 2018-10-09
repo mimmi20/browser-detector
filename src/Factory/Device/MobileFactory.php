@@ -142,7 +142,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/quadro/i' => 'quadro',
         '/akai|glory[ _](o2|l3|g5)|eco e2|tab-7800|tab-7830|tab-9800q?|x6 metal/i' => 'akai',
         '/iris708/i' => 'ais',
-        '/lava[ _]|iris[ _]?[^\/;]+(\)| build)|a76 build|x1 selfie build|x41 plus build|flair z1|kkt20|pixelv1|pixel v2\+|( x17|x1 atom|x5 4g| z[67]0) build/i' => 'lava',
+        '/lava[ _]|iris[ _]?[^\/;]+(\)| build)|a76 build|x1 selfie build|x41 plus build|flair z1|kkt20|pixelv1|pixel v2\+|( x17|x1 atom|x5 4g| z[679]0) build/i' => 'lava',
         '/htc|sprint (apa|atp)|adr(?!910l)[a-z0-9]+|nexushd2|amaze[ _]4g[);\/ ]|(desire|sensation|evo ?3d|incredibles|wildfire|butterfly)[ _]?([^;\/]+) build|(amaze[ _]4g|(?<!gi)one ?[xelsv\+]+)[);\/ ]|spv e6[05]0|one mini|one m8|x525a|pg86100|pc36100|xv6975|pj83100[);\/ ]|0pcv1|2pyb2|0pja10|0pja2|t\-mobile_espresso|mda[ _]|vpa_touch|(831c|a315c| x9|(?<!xolo|nexus|cubot|blu life) one|dream) build|eris 2\.1/i' => 'htc',
         '/sprint/i' => 'sprint',
         '/videocon/i' => 'videocon',
