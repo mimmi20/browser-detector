@@ -541,7 +541,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/mi(tab|smart)/i' => 'wolder',
         '/909t| m13 /i' => 'mpie',
         '/z30/i' => 'magnus',
-        '/up580|up520/i' => 'uhappy',
+        '/uhappy|up720|up580|up520|up350|up320/i' => 'uhappy',
         '/m9c max/i' => 'bqeel',
         '/qt\-10/i' => 'qmax',
         '/ilium l820/i' => 'lanix',
