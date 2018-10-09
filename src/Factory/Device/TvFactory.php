@@ -24,7 +24,7 @@ class TvFactory implements DeviceFactoryInterface
         '/xbox/i' => 'microsoft',
         '/crkey/i' => 'google',
         '/dlink\.dsm380/i' => 'dlink',
-        '/sl220|sl150|sl32x|sl121/i' => 'loewe',
+        '/; ?loewe;|sl320|sl220|sl150|sl32x|sl121/i' => 'loewe',
         '/digio i33\-hd\+/i' => 'telestar',
         '/aldinord/i' => 'aldi-nord',
         '/cx919|gxt_dongle_3188/i' => 'andoer',
