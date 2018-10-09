@@ -75,6 +75,7 @@ class Linux
             'webos',
             'web0s',
             'remix',
+            'msostatic',
         ];
 
         if ($this->useragent->containsAny($noLinux, false)) {
@@ -101,6 +102,7 @@ class Linux
             'xentos',
             'kubuntu',
             'cros',
+            'windows aarch64',
             'moblin',
             'esx',
             'netcast',

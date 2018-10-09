@@ -64,6 +64,7 @@ class Windows
             'palmsource',
             '<',
             '>',
+            'aarch64',
         ];
 
         if ($this->useragent->containsAny($isNotReallyAWindows, false)) {
