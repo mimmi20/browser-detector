@@ -1,8 +1,9 @@
 {
   "rules": {
+    "/windows aarch64/i": "linux desktop",
     "/win(?:dows|9[58]|me|nt)/i": "windows desktop",
-    "/(free|open)bsd|solaris|irix/i": "general desktop",
-    "/linux|dillo/i": "linux desktop"
+    "/(?:free|open)bsd|solaris|irix/i": "general desktop",
+    "/linux|dillo|(?<!mi)cros/i": "linux desktop"
   },
   "generic": "general desktop"
 }
