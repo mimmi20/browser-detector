@@ -530,7 +530,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/hive v 3g|hive iv 3g/i' => 'turbo-x',
         '/turkcell/i' => 'turkcell',
         '/is04/i' => 'kddi',
-        '/be pro|paris|vienna|u007|future|power_3|tiger/i' => 'ulefone',
+        '/be pro|paris|vienna|u007|future|power[_ ]3|tiger/i' => 'ulefone',
         '/sense golly/i' => 'ipro',
         '/sirius_qs/i' => 'vonino',
         '/dl 1803/i' => 'dl',
