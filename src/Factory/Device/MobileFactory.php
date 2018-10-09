@@ -622,6 +622,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/mxqpro/i' => 'bomix',
         '/t5524/i' => 'smartron',
         '/unonu/i' => 'unonu',
+        '/cobalt_/i' => 'cobalt',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
