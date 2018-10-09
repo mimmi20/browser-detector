@@ -22,7 +22,7 @@ class ChromeOs implements VersionCacheFactoryInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (preg_match('/CrOS [a-z0-9_]+ \d\d\d\d\.\d+\.\d+\) .* Chrome\/(\d+[\d\.]+)/', $useragent, $firstMatches)) {
+        if (preg_match('/(?:CrOS [a-z0-9_]+|Windows aarch64|CrOS aarch64) \d{4,5}\.\d+\.\d+\) .* Chrome\/(\d+[\d\.]+)/', $useragent, $firstMatches)) {
             return (new VersionFactory())->set($firstMatches[1]);
         }
 

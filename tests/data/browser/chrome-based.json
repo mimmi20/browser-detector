@@ -4426,5 +4426,185 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Windows aarch64 10718.88.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.118 Safari/537.36 CitrixChromeApp"
+    },
+    "device": {
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "pointingMethod": "mouse",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": false,
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Citrix Chrome App",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Citrix",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "ChromeOS",
+      "marketingName": "ChromeOS",
+      "version": "68.0.3440.118",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; CrOS aarch64 11021.19.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.22 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "pointingMethod": "mouse",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": false,
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.22",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "ChromeOS",
+      "marketingName": "ChromeOS",
+      "version": "70.0.3538.22",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; VISIO Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/69.0.3440.40 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Visio",
+      "marketingName": "Visio",
+      "manufacturer": "Odys",
+      "brand": "Odys",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1280,
+      "resolutionHeight": 800,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Kiwi",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Geometry",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36 (Refindbot/1.0)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "pointingMethod": null,
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": false,
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Refindbot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Refind",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.9 YaaniBrowser/4.2.0.186 (Turkcell-TR) Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LDN-L21",
+      "marketingName": "Y7 Prime",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1440,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Yaani Browser",
+      "modus": null,
+      "version": "4.2.0.186",
+      "manufacturer": "Turkcell",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
   }
 ]
