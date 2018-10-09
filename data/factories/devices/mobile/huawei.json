@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/(aum-a?l2[09]|atu-l(?:[123]1|[24]2|x3)|bln-(?:[at]?l[012][0124])|cag-l0[23]|ldn-(?:lx2|l21|tl10)|ven-l22|c199)/i": "huawei $1",
+    "/(aum-a?l2[09]|atu-l(?:[123]1|[24]2|x3)|bln-(?:[at]?l[012][0124])|cag-l0[23]|ldn-(?:lx2|l21|tl10)|ven-l22|c199|sne-(?:al00|lx1))/i": "huawei $1",
     "/can-/i": {
       "/can-l01/i": "huawei can-l01",
       "/can-l11/i": "huawei can-l11",
@@ -437,6 +437,7 @@
     "/mla-/i": {
       "/mla-al10/i": "huawei mla-al10"
     },
+    "/p8_max/i": "huawei dav-701l",
     "/hn3-u01/i": "huawei hn3-u01",
     "/hol-u19/i": "huawei hol-u19",
     "/nmo-l31/i": "huawei nmo-l31",
