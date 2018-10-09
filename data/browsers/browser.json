@@ -892,6 +892,20 @@
     },
     "engine": null
   },
+  "ecosia": {
+    "name": "Ecosia",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Ecosia android@"
+      ]
+    },
+    "engine": "blink"
+  },
   "edge": {
     "name": "Edge",
     "manufacturer": "Microsoft",
@@ -1723,6 +1737,20 @@
       ]
     },
     "engine": null
+  },
+  "kiwi": {
+    "name": "Kiwi",
+    "manufacturer": "Geometry",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kiwi"
+      ]
+    },
+    "engine": "blink"
   },
   "kkman": {
     "name": "KKMAN",
@@ -3620,7 +3648,8 @@
       "class": "VersionFactory",
       "search": [
         "WaterFox",
-        "Waterfox"
+        "Waterfox",
+        "Firefox"
       ]
     },
     "engine": "gecko"
@@ -3737,6 +3766,20 @@
       ]
     },
     "engine": "blink"
+  },
+  "yaanibrowser": {
+    "name": "Yaani Browser",
+    "manufacturer": "Turkcell",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YaaniBrowser"
+      ]
+    },
+    "engine": null
   },
   "yabrowser": {
     "name": "Yandex Browser",

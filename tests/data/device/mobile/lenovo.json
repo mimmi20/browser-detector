@@ -6099,10 +6099,10 @@
       "type": "tablet"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Ecosia",
       "modus": null,
       "version": "62.0.3202.101",
-      "manufacturer": "Google",
+      "manufacturer": "Unknown",
       "bits": 32,
       "type": "browser"
     },
@@ -6603,10 +6603,10 @@
       "type": "tablet"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Kiwi",
       "modus": null,
-      "version": "69.0.3440.40",
-      "manufacturer": "Google",
+      "version": "0.0.0",
+      "manufacturer": "Geometry",
       "bits": 32,
       "type": "browser"
     },
@@ -6837,6 +6837,78 @@
       "name": "U3",
       "version": "0.8.0",
       "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; B5032 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "B5032",
+      "marketingName": "B5032",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 360,
+      "resolutionHeight": 640,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "69.0.3497.100",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; Lenovo TB-8704F Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TB-8704F",
+      "marketingName": "Tab4 8 Plus",
+      "manufacturer": "Lenovo",
+      "brand": "Medion",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1920,
+      "resolutionHeight": 1200,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "69.0.3497.100",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
     }
   }
 ]
