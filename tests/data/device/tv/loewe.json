@@ -142,5 +142,41 @@
       "version": "0.0.0",
       "manufacturer": "Unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2207.0 LOEWE-SL320/4.6.13.0 HbbTV/1.2.1 (; LOEWE; SL320; LOH/4.6.13.0;;) CE-HTML/1.0 Config(L:deu,CC:DEU) NETRANGEMMH"
+    },
+    "device": {
+      "deviceName": "SL320",
+      "marketingName": "SL320",
+      "manufacturer": "Loewe",
+      "brand": "Loewe",
+      "pointingMethod": null,
+      "resolutionWidth": 3840,
+      "resolutionHeight": 2160,
+      "dualOrientation": false,
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "46.0.2207.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
   }
 ]
