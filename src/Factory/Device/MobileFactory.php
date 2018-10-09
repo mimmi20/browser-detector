@@ -159,7 +159,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/view(pad|phone)/i' => 'viewsonic',
         '/(blu|dash)[ _][^\/;]+ build|vivo (iv|4\.65)|studio 5\.5|studio xl 2|studio view xl|(blu|arm); win (jr|hd)/i' => 'blu',
         '/tp[0-9]{1,2}(\.[0-9])?\-[0-9]{4}|tu\-[0-9]{4}|l1001 4g/i' => 'ionik',
-        '/neffos|tp[0-9]{3}/i' => 'tplink',
+        '/neffos|tp[0-9]{3}/i' => 'tp-link',
         '/logicpd|zoom2|nook ?color/i' => 'logicpd',
         '/nook|bn[tr]v[0-9]+/i' => 'barnesnoble',
         '/koobee/i' => 'koobee',
