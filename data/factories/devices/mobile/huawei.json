@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/(aum-a?l2[09]|atu-l(?:[123]1|[24]2|x3)|bln-(?:[at]?l[012][0124])|cag-l0[23]|ldn-(?:lx2|l21|tl10)|ven-l22|c199|sne-(?:al00|lx1))/i": "huawei $1",
+    "/(aum-a?l2[09]|atu-l(?:[123]1|[24]2|x3)|bln-(?:[at]?l[012][0124])|cag-l0[23]|ldn-(?:lx2|l21|tl10)|ven-l22|c199|sne-(?:al00|lx1)|kiw-(?:ul00|tl00h?|l21)|trt-(?:lx[123]|al00)|ags2-w09|mla-al10|edi-al10|jmm-l22|dig-l21hn|dra-l21|kob-w09|bkl-l09|col-l29|caz-al10|pic-lx9|mt1-u06|dli-l22|che-tl00h|tit-u02|g740-l00|crr-l09|rio-l01|pe-tl10|p2-6011|lon-l29|duk-l09|scc-u21|lua-l21)/i": "huawei $1",
     "/can-/i": {
       "/can-l01/i": "huawei can-l01",
       "/can-l11/i": "huawei can-l11",
@@ -8,12 +8,6 @@
       "/can-l12/i": "huawei can-l12",
       "/can-l03/i": "huawei can-l03",
       "/can-l13/i": "huawei can-l13"
-    },
-    "/lua-/i": {
-      "/lua-l21/i": "huawei lua-l21"
-    },
-    "/scc-/i": {
-      "/scc-u21/i": "huawei scc-u21"
     },
     "/gra-/i": {
       "/gra-l09/i": "huawei gra-l09",
@@ -39,12 +33,6 @@
     "/btv-/i": {
       "/btv-dl09/i": "huawei btv-dl09",
       "/btv-w09/i": "huawei btv-w09"
-    },
-    "/duk-/i": {
-      "/duk-l09/i": "huawei duk-l09"
-    },
-    "/lon-/i": {
-      "/lon-l29/i": "huawei lon-l29"
     },
     "/plk-/i": {
       "/plk-tl01h/i": "huawei plk-tl01h",
@@ -155,9 +143,6 @@
       "/chc-u03/i": "huawei chc-u03",
       "/chc-u01/i": "huawei chc-u01"
     },
-    "/p2-/i": {
-      "/p2-6011/i": "huawei p2-6011"
-    },
     "/g7-/i": {
       "/g7-l11/i": "huawei g7-l11",
       "/g7-l01/i": "huawei g7-l01"
@@ -165,15 +150,6 @@
     "/g6-/i": {
       "/g6-l11/i": "huawei g6-l11",
       "/g6-u10/i": "huawei g6-u10"
-    },
-    "/pe-/i": {
-      "/pe-tl10/i": "huawei pe-tl10"
-    },
-    "/rio-/i": {
-      "/rio-l01/i": "huawei rio-l01"
-    },
-    "/crr-/i": {
-      "/crr-l09/i": "huawei crr-l09"
     },
     "/vns-/i": {
       "/vns-al00/i": "huawei vns-al00",
@@ -186,15 +162,9 @@
       "/g750-u10/i": "huawei g750-u10",
       "/g750-t00/i": "huawei g750-t00"
     },
-    "/g740-/i": {
-      "/g740-l00/i": "huawei g740-l00"
-    },
     "/g730-/i": {
       "/g730-u27/i": "huawei g730-u27",
       "/g730-u10/i": "huawei g730-u10"
-    },
-    "/tit-/i": {
-      "/tit-u02/i": "huawei tit-u02"
     },
     "/y635-/i": {
       "/y635-l21/i": "huawei y635-l21",
@@ -233,9 +203,6 @@
       "/chm-tl00/i": "huawei chm-tl00",
       "/chm-ul00/i": "huawei chm-ul00",
       "/chm-cl00/i": "huawei chm-cl00"
-    },
-    "/che-/i": {
-      "/che-tl00h/i": "huawei che-tl00h"
     },
     "/che1-/i": {
       "/che1-cl10/i": "huawei che1-cl10",
@@ -311,10 +278,6 @@
       "/eml-l29/i": "huawei eml-l29",
       "/eml-l09/i": "huawei eml-l09"
     },
-    "/trt-/i": {
-      "/trt-al00/i": "huawei trt-al00",
-      "/trt-lx1/i": "huawei trt-lx1"
-    },
     "/clt-/i": {
       "/clt-l29c/i": "huawei clt-l29c",
       "/clt-l29/i": "huawei clt-l29",
@@ -324,15 +287,9 @@
       "/clt-al01/i": "huawei clt-al01",
       "/clt-al00/i": "huawei clt-al00"
     },
-    "/dli-/i": {
-      "/dli-l22/i": "huawei dli-l22"
-    },
     "/vie-/i": {
       "/vie-l09/i": "huawei vie-l09",
       "/vie-al10/i": "huawei vie-al10"
-    },
-    "/mt1-/i": {
-      "/mt1-u06/i": "huawei mt1-u06"
     },
     "/t1-/i": {
       "/t1-701u/i": "huawei t1-701u",
@@ -358,9 +315,6 @@
       "/mt7-tl10/i": "huawei mt7-tl10",
       "/mt7-l09/i": "huawei mt7-l09"
     },
-    "/pic-/i": {
-      "/pic-lx9/i": "huawei pic-lx9"
-    },
     "/stf-/i": {
       "/stf-l09/i": "huawei stf-l09",
       "/stf-al00/i": "huawei stf-al00",
@@ -370,9 +324,6 @@
     "/ine-/i": {
       "/ine-lx2/i": "huawei ine-lx2",
       "/ine-lx1/i": "huawei ine-lx1"
-    },
-    "/caz-/i": {
-      "/caz-al10/i": "huawei caz-al10"
     },
     "/lyo-/i": {
       "/lyo-l21/i": "huawei lyo-l21",
@@ -390,12 +341,6 @@
       "/sla-l03/i": "huawei sla-l03",
       "/sla-l02/i": "huawei sla-l02"
     },
-    "/col-/i": {
-      "/col-l29/i": "huawei col-l29"
-    },
-    "/bkl-/i": {
-      "/bkl-l09/i": "huawei bkl-l09"
-    },
     "/cmr-/i": {
       "/cmr-al19/i": "huawei cmr-al19",
       "/cmr-al09/i": "huawei cmr-al09",
@@ -409,33 +354,10 @@
       "/bll-l22/i": "huawei bll-l22",
       "/bll-l21/i": "huawei bll-l21"
     },
-    "/kob-/i": {
-      "/kob-w09/i": "huawei kob-w09"
-    },
     "/lnd-/i": {
       "/lnd-al40/i": "huawei lnd-al40",
       "/lnd-al30/i": "huawei lnd-al30",
       "/lnd-l29/i": "huawei lnd-l29"
-    },
-    "/dra-/i": {
-      "/dra-l21/i": "huawei dra-l21"
-    },
-    "/dig-/i": {
-      "/dig-l21hn/i": "huawei dig-l21hn"
-    },
-    "/jmm-/i": {
-      "/jmm-l22/i": "huawei jmm-l22"
-    },
-    "/edi-/i": {
-      "/edi-al10/i": "huawei edi-al10"
-    },
-    "/kiw-/i": {
-      "/kiw-tl00h/i": "huawei kiw-tl00h",
-      "/kiw-tl00/i": "huawei kiw-tl00",
-      "/kiw-l21/i": "huawei kiw-l21"
-    },
-    "/mla-/i": {
-      "/mla-al10/i": "huawei mla-al10"
     },
     "/p8_max/i": "huawei dav-701l",
     "/hn3-u01/i": "huawei hn3-u01",
