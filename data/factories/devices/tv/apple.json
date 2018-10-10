@@ -1,4 +1,10 @@
 {
-  "rules": [],
-  "generic": "appletv"
+  "rules": {
+    "/appletv6,2/i": "apple appletv6,2",
+    "/appletv5,3/i": "apple appletv5,3",
+    "/appletv3,2/i": "apple appletv3,2",
+    "/appletv3,1/i": "apple appletv3,1",
+    "/appletv2,1/i": "apple appletv2,1"
+  },
+  "generic": "apple appletv"
 }
