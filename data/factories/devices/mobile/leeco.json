@@ -2,17 +2,17 @@
   "rules": {
     "/le max/i": "leeco le max",
     "/le 1 pro/i": "leeco le x800",
-    "/le x829/i": "leeco le x829",
-    "/le ?x822/i": "leeco le x822",
-    "/le ?x821/i": "leeco le x821",
-    "/le ?x820/i": "leeco le x820",
-    "/lex722/i": "leeco le x722",
-    "/lex720/i": "leeco le x720",
-    "/lex626/i": "leeco le x626",
-    "/le x620/i": "leeco le x620",
-    "/le 2|le x527/i": "leeco le x527",
-    "/le x526/i": "leeco le x526",
-    "/le x507/i": "leeco le x507"
+    "/le[ _]?x829/i": "leeco le x829",
+    "/le[ _]?x822/i": "leeco le x822",
+    "/le[ _]?x821/i": "leeco le x821",
+    "/le[ _]?x820/i": "leeco le x820",
+    "/le[ _]?x722/i": "leeco le x722",
+    "/le[ _]?x720/i": "leeco le x720",
+    "/le[ _]?x626/i": "leeco le x626",
+    "/le[ _]?x620/i": "leeco le x620",
+    "/le 2|le[ _]?x527/i": "leeco le x527",
+    "/le[ _]?x526/i": "leeco le x526",
+    "/le[ _]?x507/i": "leeco le x507"
   },
   "generic": "general leeco device"
 }
