@@ -538,5 +538,41 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 6.0.1; en-US; Le_X820) U2/1.0.0 UCBrowser/9.7.0.520 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "Le X820",
+      "marketingName": "Le Max 2",
+      "manufacturer": "LeEco",
+      "brand": "LeEco",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1440,
+      "resolutionHeight": 2560,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.7.0.520",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
+    }
   }
 ]

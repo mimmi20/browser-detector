@@ -378,7 +378,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/AT\-AS[0-9]{2}[DS]/' => 'wolfgang',
         '/vk\-/i' => 'vkmobile',
         '/FP[12]/' => 'fairphone',
-        '/le 1 pro|le 2|le max|le ?x[0-9]{3}/i' => 'leeco',
+        '/le 1 pro|le 2|le max|le[ _]?x[0-9]{3}/i' => 'leeco',
         '/tecno| f5 | h7 |phantom6-plus/i' => 'tecno',
         '/comio|ct701g plus|ct701w/i' => 'comio',
         '/QtCarBrowser/' => 'teslamotors',
