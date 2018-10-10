@@ -624,6 +624,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/unonu/i' => 'unonu',
         '/cobalt_/i' => 'cobalt',
         '/(mpm|midm)[_-]/i' => 'miray',
+        '/runbo/i' => 'runbo',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
