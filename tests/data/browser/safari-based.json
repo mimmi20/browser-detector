@@ -3510,7 +3510,7 @@
       "name": "Fluid",
       "modus": null,
       "version": "0.9.6",
-      "manufacturer": "Unknown",
+      "manufacturer": "Todd Ditchendorf",
       "bits": 32,
       "type": "browser"
     },
@@ -8600,6 +8600,78 @@
     "engine": {
       "name": "WebKit",
       "version": "902.2.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Viber/9.6.0.1 CFNetwork/902.2 Darwin/17.7.0"
+    },
+    "device": {
+      "deviceName": "general Apple Device",
+      "marketingName": "general Apple Device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Viber",
+      "modus": null,
+      "version": "9.6.0.1",
+      "manufacturer": "Rakuten",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.4.0",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "902.2.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) FluidApp Version/2156 Safari/600.8.9"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "pointingMethod": "mouse",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": false,
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Fluid",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Todd Ditchendorf",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.10.5",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.8.9",
       "manufacturer": "Apple"
     }
   }
