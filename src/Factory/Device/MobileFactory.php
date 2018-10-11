@@ -421,7 +421,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/n003/i' => 'neo',
         '/ v1 /i' => 'maxtron',
         '/7007hd/i' => 'perfeo',
-        '/haier| w[0-9]{3}[ )]|h[mtw]\-[ginvw][0-9]{1,3}| l52 | g3[01]s? |pad g781/i' => 'haier',
+        '/haier| w[0-9]{3}[ )]|h[mtw]\-[ginvw][0-9]{1,3}| l52 | g3[01]s? |pad g781|pad971/i' => 'haier',
         '/NT\-[0-9]{4}[SPTM]/' => 'iconbit',
         '/T[GXZ][0-9]{2,3}/' => 'irbis',
         '/YD[0-9]{3}/' => 'yota',
