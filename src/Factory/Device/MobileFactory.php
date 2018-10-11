@@ -188,7 +188,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/twz/i' => 'twz',
         '/i\-mobile/i' => 'imobile',
         '/evercoss|a66a|a74a/i' => 'evercoss',
-        '/dino/i' => 'dino',
+        '/dino(?!saur)/i' => 'dino',
         '/shaan|iball|snap 4g2/i' => 'iball',
         '/modecom/i' => 'modecom',
         '/kiano/i' => 'kiano',
