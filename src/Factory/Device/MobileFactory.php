@@ -135,7 +135,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/shield tablet/i' => 'nvidia',
         '/kingzone|k1[ _]turbo/i' => 'kingzone',
         '/gigabyte|rio r1|gsmart/i' => 'gigabyte',
-        '/lenovo|smart ?tab|idea(tab|pad)|thinkpad|yoga tablet|(?<!mi) [ak]1 |a1_07| a6[05] |at1010\-t|b5032|b5060|b5531|e1041x|e10[56]0x|k910l|p1060x|(adr|android) [67].* p2|p770|s1032x|s6000d|tab2a7\-|x1030x|yb1\-x90l|zuk | k6 build|a238t/i' => 'lenovo',
+        '/lenovo|smart ?tab|idea(tab|pad)|thinkpad|yoga tablet|(?<!mi) [ak]1 |a1_07| a6[05] |at1010\-t|b5032|b5060|b5531|e1041x|e10[56]0x|k910l|p1060x|(adr|android) [67].* p2|p770|s1032x|s6000d|tab2a7\-|x1030x|yb1\-x90l|zuk | k6 build|a238t|z2131/i' => 'lenovo',
         '/fujitsu|m532|m305|f\-0[0-9][def]|is11t|fartm933kz/i' => 'fujitsu',
         '/pentagram|monster x5|quadra 7 ultraslim/i' => 'pentagram',
         '/quadro/i' => 'quadro',
