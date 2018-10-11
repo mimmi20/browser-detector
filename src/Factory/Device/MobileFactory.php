@@ -219,7 +219,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/pipo/i' => 'pipo',
         '/tesla/i' => 'tesla',
         '/doro/i' => 'doro',
-        '/allview|v1_viper|a4you|p[59]_(quad|energy)|ax4nano|x[124]_soul/i' => 'allview',
+        '/allview|v1_viper|a4you|p[59]_(quad|energy)|ax4nano|x[124]_soul|p41_emagic/i' => 'allview',
         '/energy[ _-]?[^;\/]+ build/i' => 'energy-sistem',
         '/elephone[ _\-][^\/;]+ build|p[369]000( ?pro| ?plus|\+| ?02)? build|p8_mini/i' => 'elephone',
         '/wopad/i' => 'wopad',
