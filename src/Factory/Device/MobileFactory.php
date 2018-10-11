@@ -153,7 +153,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/poly ?pad/i' => 'polypad',
         '/doov/i' => 'doov',
         '/ov\-|solution 7iii|qualcore 1010/i' => 'overmax',
-        '/alcatel|alc[a-z0-9]+|one[ _]?touch|idol3|(4003a|4009a|4013[dmx]|4017x|4024d|4027[adx]|4032d|4034[df]|4047a|4049g|5009[ad]|5010[dx]|5011a|5015[adx]|5016a|5017a|5019d|5022[dx]|5023f|5025[dg]|5026[ad]|5038x|5042[ad]|5045[dtx]|5046d|5049g|8050[gx]|5051[dx]|5052d|5054[dnswx]|5056[dx]|5058[aijty]|5059[adijtxy]|5065[dnx]|5070[dx]|5080x|5095[biky]|5099[adiuy]|6016[dx]|6036y|6037y|6039[hky]|6043d|6044d|6045[hky]|6050[afy]|6055[kp]|6058d|6070[koy]|7048x|7040n|7070x|8030y|8050d|9001[dx]|9002x|9003x|9005x|9008[adx]|9010x|9022x|i213|i216x|v860|vodafone (smart|785|875|975n)|vf\-(795|895n)|m812c|telekom puls|ot\-[89][09][0-9])[);\/ ]/i' => 'alcatel',
+        '/alcatel|alc[a-z0-9]+|one[ _]?touch|idol3|(4003a|4009a|4013[dmx]|4017x|4024d|4027[adx]|4032d|4034[df]|4047[ax]|4049g|5009[ad]|5010[dux]|5011a|5015[adx]|5016a|5017a|5019d|5022[dx]|5023f|5025[dg]|5026[ad]|5038x|5042[ad]|5045[dtx]|5046d|5049g|8050[gx]|5051[dx]|5052d|5054[dnswx]|5056[dx]|5058[aijty]|5059[adijtxy]|5065[dnx]|5070[dx]|5080x|5095[biky]|5099[adiuy]|6016[dx]|6036y|6037y|6039[hky]|6043d|6044d|6045[hky]|6050[afy]|6055[kp]|6058d|6070[koy]|7048x|7040n|7070x|8030y|8050d|9001[dx]|9002x|9003x|9005x|9008[adx]|9010x|9022x|i213|i216x|v860|vodafone (smart|785|875|975n)|vf\-(795|895n)|m812c|telekom puls|ot\-[89][09][0-9])[);\/ ]/i' => 'alcatel',
         '/toshiba/i' => 'toshiba',
         '/viewsonic/i' => 'viewsonic',
         '/view(pad|phone)/i' => 'viewsonic',
