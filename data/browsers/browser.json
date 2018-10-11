@@ -1141,13 +1141,14 @@
   },
   "fluid": {
     "name": "Fluid",
-    "manufacturer": "Unknown",
+    "manufacturer": "Todd Ditchendorf",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "browser",
     "version": {
       "class": "VersionFactory",
       "search": [
+        "FluidApp",
         "Fluid"
       ]
     },
