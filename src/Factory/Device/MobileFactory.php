@@ -162,7 +162,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/logicpd|zoom2|nook ?color/i' => 'logicpd',
         '/nook|bn[tr]v[0-9]+/i' => 'barnesnoble',
         '/koobee/i' => 'koobee',
-        '/infocus|m370i|vzh|if9031/i' => 'infocus',
+        '/infocus|m370i|vzh|if9031|if9021/i' => 'infocus',
         '/MTC /' => 'mtc',
         '/ark benefit m3s/i' => 'ark',
         '/meizu|mz-[a-z]|(m04[05]|m35[1356]|mx[ -]?[2345]( pro)?|(mz-)?m[1-6] note|m57[18]c|m3[esx]|m03[12]|m1 metal|m1 e|m[29]|m2 e|pro [567]|pro 7-h)[);\/ ]/i' => 'meizu',
