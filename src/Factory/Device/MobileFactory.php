@@ -457,6 +457,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/nexus|googletv|glass|crkey[^a-z0-9]|pixel build|pixel (xl|c|2|2 xl) build|gce x86 phone/i' => 'google',
         '/vodafone 975/i' => 'vodafone',
         '/a1303|a309w|m651cy/i' => 'china-phone',
+        '/i101mtk/i' => 'china-tablet',
         '/impad/i' => 'impression',
         '/tab917qc|tab785dual/i' => 'sunstech',
         '/m7t|p93g|i75|m83g| m6 |m[69]pro| t9 /i' => 'pipo',
