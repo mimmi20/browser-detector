@@ -480,7 +480,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/AP\-[0-9]{3}/' => 'assistant',
         '/ft[ _][0-9]{4}/i' => 'lifeware',
         '/(od|sm|yq)[0-9]{3}/i' => 'smartisan',
-        '/ls\-[0-9]{4}/i' => 'lyf',
+        '/ls\-[0-9]{4}|f81e/i' => 'lyf',
         '/tb[0-9]{3,4}/i' => 'acme',
         '/nt\. ?(p|i)10g2/i' => 'ninetec',
         '/tp[0-9]{2}\-3g/i' => 'theq',
