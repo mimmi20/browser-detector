@@ -1,35 +1,11 @@
 {
   "rules": {
     "/phantom6-plus/i": "tecno phantom 6 plus",
-    "/[ _\\-]w4/i": "tecno w4",
-    "/[ _\\-]l8/i": "tecno l8",
-    "/[ _]l3/i": "tecno l3",
-    "/[ _]g9/i": "tecno g9",
-    "/[ _]h7/i": "tecno h7",
-    "/[ _]h6/i": "tecno h6",
-    "/[ _]h5/i": "tecno h5",
-    "/[ _]f7/i": "tecno f7",
-    "/[ _]f5/i": "tecno f5",
-    "/[ _]m7/i": "tecno m7",
-    "/[ _]m5/i": "tecno m5",
-    "/[ _]m3/i": "tecno m3",
-    "/\\-j5/i": "tecno j5",
-    "/[ _]p9/i": "tecno p9",
+    "/cx air/i": "tecno camon cx air",
     "/[ _]p5[ _]plus/i": "tecno p5 plus",
-    "/[ _]p5/i": "tecno p5",
-    "/[ _]p3s/i": "tecno p3s",
-    "/[ _]p3/i": "tecno p3",
-    "/[ _]d5/i": "tecno d5",
-    "/[ _]d3/i": "tecno d3",
-    "/[ _]d1/i": "tecno d1",
-    "/[ _]n7/i": "tecno n7",
-    "/[ _]n3/i": "tecno n3",
-    "/[ _]q1/i": "tecno q1",
     "/t611/i": "tecno t611",
     "/t36/i": "tecno t36",
-    "/[ _]t3/i": "tecno t3",
-    "/[ _]s3/i": "tecno s3",
-    "/[ _](in2|i3|k7)/i": "tecno $1"
+    "/[ _-](d[135]|f[57]|g9|h[567]|in2|i3 pro|i3|j5|k7|la[47]|l[38]|m[357]|n[37]|p3s|p[359]|q1|s3|t3|w4)/i": "tecno $1"
   },
   "generic": "general tecno device"
 }
