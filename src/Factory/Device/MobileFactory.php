@@ -592,7 +592,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/vsd220/i' => 'viewsonic',
         '/walton|primo[\- _]|walpad/i' => 'walton',
         '/x538/i' => 'sunsbell',
-        '/sf1/i' => 'obi',
+        '/sf1|s551/i' => 'obi',
         '/harrier tab/i' => 'ee',
         '/excite prime/i' => 'cloudfone',
         '/ z1 /i' => 'ninetology',
