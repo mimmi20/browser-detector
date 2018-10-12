@@ -264,7 +264,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/technisat|technipad|aqipad|techniphone/i' => 'technisat',
         '/q8002/i' => 'crypto', // must be before xolo
         '/xolo|a1000s|q10[01]0i?|q[678]00s?|q2000|omega[ _][0-9]|era 2/i' => 'xolo',
-        '/cherry|flare2x|fusion bolt/i' => 'cherry-mobile',
+        '/cherry|flare2x|flare_hd_max|fusion bolt/i' => 'cherry-mobile',
         '/android.*iphone|ucweb.*adr.*iphone/i' => 'xianghe',
         '/(?<!tr|m|med)ipad|ipod(?!der)|(?<!like )iphone|like mac os x|darwin|cfnetwork|dataaccessd|iuc ?\(|iph[0-9]\,[0-9]|puffin\/[0-9\.]+i[tp]/i' => 'apple',
         '/mtech/i' => 'mtech',
