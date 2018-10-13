@@ -2,7 +2,8 @@
   "rules": {
     "/redmi[ _]note[ _]5a/i": "xiaomitech redmi note 5a",
     "/redmi[ _]note[ _]3/i": "xiaomitech redmi note 3",
-    "/(mi a1|mi a2 lite|redmi (?:5 plus|[45]a|4x|[13]s|[3456]|y1|note 5 pro|note 4x|note [245]|s2|pro)|mi note [23]|mi note pro|mi note|pocophone f1)/i": "xiaomitech $1",
+    "/poco(?:phone)? f1/i": "xiaomitech pocophone f1",
+    "/(mi a1|mi a2 lite|redmi (?:5 plus|[45]a|4x|[13]s|[3456]|y1|note 5 pro|note 4x|note [245]|s2|pro)|mi note [23]|mi note pro|mi note)/i": "xiaomitech $1",
     "/note[ _]4/i": "xiaomitech redmi note 4",
     "/mi mix 2s|mix 2s/i": "xiaomitech mi mix 2s",
     "/mi mix 2|mix 2/i": "xiaomitech mi mix 2",
