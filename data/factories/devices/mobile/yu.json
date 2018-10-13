@@ -1,9 +1,7 @@
 {
   "rules": {
-    "/yu5510/i": "yu yu5510",
     "/ao5510/i": "yu yu5510",
-    "/yu5010/i": "yu yu5010",
-    "/yu4711/i": "yu yu4711"
+    "/(yu5510|yu501[01]|yu4711)/i": "yu $1"
   },
   "generic": "general yu device"
 }
