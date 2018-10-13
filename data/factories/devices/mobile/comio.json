@@ -3,7 +3,7 @@
     "/ct701g plus/i": "comio ct701g plus",
     "/ct701w/i": "comio ct701w",
     "/s1 lite/i": "comio s1 lite",
-    "/p1/i": "comio p1"
+    "/(p1|s1)/i": "comio $1"
   },
   "generic": "general comio device"
 }
