@@ -516,6 +516,20 @@
     },
     "engine": "webkit"
   },
+  "filebox": {
+    "name": "FileBox",
+    "manufacturer": "Compass",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Filebox"
+      ]
+    },
+    "engine": null
+  },
   "flixster app": {
     "name": "Flixster App",
     "manufacturer": "Flixster",
