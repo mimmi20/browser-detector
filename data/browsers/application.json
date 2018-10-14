@@ -1131,6 +1131,20 @@
     },
     "engine": "unknown"
   },
+  "shopkeep pocket": {
+    "name": "ShopKeep Pocket",
+    "manufacturer": "ShopKeep",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Shopkeep\\-Pocket"
+      ]
+    },
+    "engine": "webkit"
+  },
   "siriviewservice": {
     "name": "SiriViewService",
     "manufacturer": "Apple",
