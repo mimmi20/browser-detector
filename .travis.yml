@@ -66,8 +66,7 @@ jobs:
     - stage: composer validate
       php: 7.1
       env: COMPOSER_FLAGS=""
-      script:
-        - composer validate
+      script: composer validate
 
     - stage: static code analysis
       php: 7.1
