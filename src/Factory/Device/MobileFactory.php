@@ -130,7 +130,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/karbonn|titanium|machfive|sparkle v|s109|k9 smart grand/i' => 'karbonn', // must be before acer
         '/micromax[ \-\_]?[a-z0-9]+|(p70221|a121|a120|a116|a114|a093|a065| a96| a50| a47|q327)( build|\))|mid1014/i' => 'micromax',
         '/zte|racer|smart ?(tab(10|7)|4g|ultra 6)|orange (hi 4g|reyo)|beeline pro|lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q|blade|momodesign md droid|[ \-]a310(?!e)|atlas[_ ]w|base tab|kis plus|n799d|n9101|n9180|n9510|n9515|n9520|n9521|n9810|n918st|n958st|nx[0-9]{2,3}|open[c2]|u9180| v9 |v788d|v8000|v9180|x501|x920|z221|z768g|z820|z835|z855|z851m?|z98[1236](dl)?/i' => 'zte', // must be before orange and acer
-        '/smart tab 4(?!g)|vfd [0-9]{3}|985n|vodafone smart 4 max|smart 4 turbo/i' => 'vodafone',
+        '/smart tab 4(?!g)|vfd [0-9]{3}|985n|vodafone smart 4 max|smart 4 turbo|vodafone 975(?!n)|vodacom/i' => 'vodafone',
         '/qmobile|q\-smart|qtab| x900 /i' => 'qmobile', // must be before acer
         '/shield tablet/i' => 'nvidia',
         '/kingzone|k1[ _]turbo/i' => 'kingzone',
@@ -454,7 +454,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/N[0-9]{4}/' => 'star',
         '/medipad/i' => 'bewatec',
         '/nexus|google ?tv|glass|crkey[^a-z0-9]|google pixel|pixel build|pixel (xl|c|2|2 xl) build|gce x86 phone/i' => 'google',
-        '/vodafone 975/i' => 'vodafone',
         '/a1303|a309w|m651cy/i' => 'china-phone',
         '/i101mtk/i' => 'china-tablet',
         '/impad/i' => 'impression',
