@@ -11,8 +11,8 @@ parameters:
   	- vendor/phpstan/phpstan-beberlei-assert/extension.neon
   parameters:
   	exceptionRules:
-  		reportUnusedCatchesOfUncheckedExceptions: false
-  		uncheckedExceptions: []
+  	  reportUnusedCatchesOfUncheckedExceptions: false
+  	  uncheckedExceptions: []
   excludes_analyse:
     - */tests/*/data/*
   ignoreErrors:
