@@ -970,5 +970,41 @@
       "version": "0.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Shopkeep-Pocket/4.4.0.389 (Android/8.1.0 Google Pixel)"
+    },
+    "device": {
+      "deviceName": "Pixel",
+      "marketingName": "Pixel",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1080,
+      "resolutionHeight": 1920,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "ShopKeep Pocket",
+      "modus": null,
+      "version": "4.4.0.389",
+      "manufacturer": "ShopKeep",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
