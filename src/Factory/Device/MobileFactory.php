@@ -626,6 +626,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(mpm|midm)[_-]/i' => 'miray',
         '/runbo/i' => 'runbo',
         '/fly4/i' => 'vivax',
+        '/elitedual/i' => 'swipe',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
