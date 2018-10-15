@@ -1,5 +1,6 @@
 {
   "rules": {
+    "/sl 02/i": "blaupunkt sl 02",
     "/atlantis[ _]a10\\.g403/i": "blaupunkt atlantis a10.g403",
     "/atlantis[ _]a10\\.g402/i": "blaupunkt atlantis a10.g402",
     "/atlantis[ _]1010a/i": "blaupunkt atlantis 1010a",
@@ -13,9 +14,9 @@
     "/endeavour[ _]1013/i": "blaupunkt endeavour 1013",
     "/endeavour[ _]101l/i": "blaupunkt endeavour 101l",
     "/endeavour[ _]1010/i": "blaupunkt endeavour 1010",
-    "/endeavour[ _]1001[ _]dvb\\-t/i": "blaupunkt endeavour 1001 dvb-t",
+    "/endeavour[ _]1001[ _]dvb-t/i": "blaupunkt endeavour 1001 dvb-t",
     "/endeavour[ _]785/i": "blaupunkt endeavour 785",
-    "/end_101g\\-test/i": "blaupunkt endeavour 101g",
+    "/end_101g-test/i": "blaupunkt endeavour 101g",
     "/polaris[ _]803/i": "blaupunkt polaris 803"
   },
   "generic": "general blaupunkt device"
