@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/(aum-a?l2[09]|atu-l(?:[123]1|[24]2|x3)|bln-(?:[at]?l[012][0124])|cag-l0[23]|ldn-(?:lx2|l21|tl10)|ven-l22|c199|sne-(?:al00|lx1)|kiw-(?:ul00|tl00h?|l21)|trt-(?:lx[123]|al00)|bac-(?:al00|l2[13]|l03)|ags2-w09|mla-al10|edi-al10|jmm-l22|dig-l21hn|dra-(?:l21|lx2)|kob-w09|bkl-l09|col-l29|caz-al10|pic-lx9|mt1-u06|dli-l22|che-tl00h|tit-u02|g740-l00|crr-l09|rio-l01|pe-tl10|p2-6011|lon-l29|duk-l09|scc-u21|lua-l21|bg2-w09)/i": "huawei $1",
+    "/(aum-a?l2[09]|atu-l(?:[123]1|[24]2|x3)|bln-(?:[at]?l[012][0124])|cag-l0[23]|ldn-(?:lx2|l21|tl10)|ven-l22|c199|sne-(?:al00|lx1)|kiw-(?:ul00|tl00h?|l21)|trt-(?:lx[123]|al00)|bac-(?:al00|l2[13]|l03)|ags2-w09|mla-(?:al10|l11)|edi-al10|jmm-l22|dig-l21hn|dra-(?:l21|lx2)|kob-w09|bkl-l09|col-l29|caz-al10|pic-lx9|mt1-u06|dli-l22|che-tl00h|tit-u02|g740-l00|crr-l09|rio-l01|pe-tl10|p2-6011|lon-l29|duk-l09|scc-u21|lua-l21|bg2-w09)/i": "huawei $1",
     "/can-/i": {
       "/can-l01/i": "huawei can-l01",
       "/can-l11/i": "huawei can-l11",
@@ -446,6 +446,7 @@
     "/jazz/i": "huawei mt7-l09",
     "/mediapad x1 7\\.0/i": "huawei mediapad x1 7.0",
     "/mediapad t1 10 4g/i": "huawei mediapad t1 10 4g",
+    "/mediapad t1 8\\.0 pro/i": "huawei t1-821l",
     "/mediapad t1 8\\.0/i": "huawei s8-701u",
     "/mediapad m1 8\\.0/i": "huawei mediapad m1 8.0",
     "/mediapad 10 link\\+/i": "huawei mediapad 10+",
