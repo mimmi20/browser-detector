@@ -438,7 +438,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/pmsmart450/i' => 'pmedia',
         '/iusai/i' => 'opsson',
         '/d4c5|k9c6|c5j6|m5k8/i' => 'teclast',
-        '/netbox| x10 | e1[05]i| x2 |r800x|s500i|x1i|x10i|[ls]39h|h3113|h3213|h3311|h4113|h8216|h8266|h8314|h8324|ebrd[0-9]{4}|502so|sol22|sov32/i' => 'sony',
+        '/netbox| x10 | e1[05]i| x2 |r800x|s500i|x1i|x10i|[ls]39h|h3113|h3213|h3311|h4113|h4311|h8216|h8266|h8314|h8324|ebrd[0-9]{4}|502so|sol22|sov32/i' => 'sony',
         '/wileyfox|swift/i' => 'wileyfox',
         '/t-mobile|(?<!u )pulse|mytouch4g|ameo|garminfone/i' => 'tmobile',
         '/oppo|x90[0-9]{1,2}|n52[0-9]{2}|r[12678][0-9]{2,3}|u70[0-9]t|f1f|find7|a3[37]f|r7[ks]?f|r7plus[fm]| 1201 | 1107 |n1t|a160[13]|cph160[79]|cph1701|cph171[57]|cph172[379]|cph180[13]|cph1819|cph1859|cph1861|(adr|android) 4\.2.* n1|padm00|rmx1805/i' => 'oppo',
