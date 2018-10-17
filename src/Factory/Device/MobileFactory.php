@@ -21,7 +21,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/startrail|starxtrem|starshine|staraddict|starnaute|startext|startab/i' => 'sfr', // also includes the 'Tunisie Telecom' and the 'Altice' branded devices
         '/hiphone/i' => 'hiphone',
         '/blackberry/i' => 'rim',
-        '/asus(?!-nexus)|padfone|transformer|tf300t|slider sl101|me302(c|kl)|me301t|me371mg|me17(1|2v|3x)|eee_701|tpad_10|tx201la|p01t_1|(k0[01][0-9a-z]|z00d|z00yd|p(00[8acl]|01y|02[12347]) build|z017d)[);\/ ]/i' => 'asus',
+        '/asus(?!-nexus)|padfone|transformer|tf300t|slider sl101|me302(c|kl)|me301t|me371mg|me17(1|2v|3x)|eee_701|tpad_10|tx201la|p01t_1|(k0[01][0-9a-z]|z00d|z00yd|p(00[8acl]|01[my]a?|02[12347]) build|z017d)[);\/ ]/i' => 'asus',
         '/feiteng/i' => 'feiteng',
         '/mypad (1000|750) ?hd/i' => 'yooz',
         '/(myphone|mypad|mytab)[ _][^;\/]+ build|cube_lte|mytab10ii|hammer active/i' => 'myphone', // must be before Cube
