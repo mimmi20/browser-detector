@@ -145,7 +145,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/lg(?!e)|lge(?! nexus)|g3mini|vs[0-9]{3}| g3 |p713|p509|c660 |(?<!s)(ls|vm|ln)[0-9]{3}|optimus g|l-0[0-9][cde]|lm-(g710|x410\.fn|x210)/i' => 'lg',
         '/sprint/i' => 'sprint',
         '/videocon/i' => 'videocon',
-        '/gigaset|gs5[357]-6|gs185|gs270|gs370_plus/i' => 'gigaset',
+        '/gigaset|gs5[357]-6|gs185|gs[23]70/i' => 'gigaset',
         '/(dns|airtab)[ _\-]([^;\/]+)build|s4503q|s4505m/i' => 'dns',
         '/s-tell/i' => 'stell',
         '/bliss/i' => 'bliss',
