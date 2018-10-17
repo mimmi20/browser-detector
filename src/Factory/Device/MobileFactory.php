@@ -621,6 +621,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/fly4/i' => 'vivax',
         '/elitedual/i' => 'swipe',
         '/kata-/i' => 'kata',
+        '/ms55l1/i' => 'mobiola',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
