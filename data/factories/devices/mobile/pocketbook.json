@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/surfpad 4 l/i": "pocketbook surfpad 4 l"
+    "/(surfpad 4 [lm])/i": "pocketbook $1"
   },
   "generic": "general pocketbook device"
 }
