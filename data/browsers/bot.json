@@ -3072,6 +3072,20 @@
     },
     "engine": "unknown"
   },
+  "google assess": {
+    "name": "Google Assess",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Assess"
+      ]
+    },
+    "engine": "blink"
+  },
   "google http client library for java": {
     "name": "Google HTTP Client Library for Java",
     "manufacturer": "Google",
