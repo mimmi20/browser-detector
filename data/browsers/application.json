@@ -1087,6 +1087,20 @@
     },
     "engine": "webkit"
   },
+  "samsung crossapp": {
+    "name": "Samsung CrossApp",
+    "manufacturer": "Samsung",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CrossApp"
+      ]
+    },
+    "engine": null
+  },
   "sandvox": {
     "name": "Sandvox",
     "manufacturer": "KareliaSoftware",
