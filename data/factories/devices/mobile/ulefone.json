@@ -1,9 +1,10 @@
 {
   "rules": {
-    "/power 3s/i": "ulefone power 3s",
-    "/power_3/i": "ulefone power 3",
+    "/power[ _]3s/i": "ulefone power 3s",
+    "/power[ _]3/i": "ulefone power 3",
+    "/armor[ _]x/i": "ulefone armor x",
     "/future/i": "ulefone future",
-    "/u007 pro/i": "ulefone u007 pro",
+    "/u007[ _]pro/i": "ulefone u007 pro",
     "/u007/i": "ulefone u007",
     "/tiger/i": "ulefone tiger",
     "/vienna/i": "ulefone vienna",
