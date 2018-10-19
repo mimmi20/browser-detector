@@ -418,7 +418,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/iusai/i' => 'opsson',
         '/d4c5|k9c6|c5j6|m5k8/i' => 'teclast',
         '/w960|netbox| x10 | e1[05]i| x2 |r800x|s500i|x1i|x10i|[ls]39h|h3113|h3213|h3311|h4113|h4311|h8216|h8266|h8314|h8324|ebrd[0-9]{4}|502so|sol22|sov32/i' => 'sony',
-        '/haier| w[0-9]{3}[ )]|h[mtw]-[ginvw][0-9]{1,3}| l52 | g3[01]s? |pad g781|pad971/i' => 'haier',
+        '/haier| w[0-9]{3}[ )]|h[mtw]-[ginvw][0-9]{1,3}| l52 | g3[01]s? |pad g781|pad971|pad d71/i' => 'haier',
         '/NT-[0-9]{4}[SPTM]/' => 'iconbit',
         '/T[GXZ][0-9]{2,3}/' => 'irbis',
         '/YD[0-9]{3}/' => 'yota',
