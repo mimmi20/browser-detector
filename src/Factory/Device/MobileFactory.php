@@ -182,7 +182,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/megafon/i' => 'megafon',
         '/yuanda/i' => 'yuanda',
         '/pocketbook/i' => 'pocketbook',
-        '/goclever|quantum|aries|insignia|orion_|elipso|terra_101|orion7o|tq[0-9]{3}/i' => 'goclever',
+        '/goclever|quantum|aries|insignia|orion_|elipso|terra_101|orion7o|tq[0-9]{3}|libra 97/i' => 'goclever',
         '/senseit/i' => 'senseit',
         '/twz/i' => 'twz',
         '/i-mobile/i' => 'i-mobile',
