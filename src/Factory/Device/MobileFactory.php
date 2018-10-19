@@ -72,7 +72,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/gem[0-9]+[a-z]*/i' => 'gemini',
         '/minix/i' => 'minix',
         '/allwinner/i' => 'allwinner',
-        '/supra/i' => 'supra',
+        '/supra|nvtab 7\.0 3g/i' => 'supra',
         '/prestigio/i' => 'prestigio',
         '/nintendo/i' => 'nintendo',
         '/(q7a\+?)[);\/ ]/i' => 'crius-mea',
