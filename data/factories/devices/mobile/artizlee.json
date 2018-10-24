@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/atl\\-21/i": "artizlee atl-21"
+    "/(atl-[23]1)/i": "artizlee $1"
   },
   "generic": "general artizlee device"
 }

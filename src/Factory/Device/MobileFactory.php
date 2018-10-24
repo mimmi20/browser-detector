@@ -540,7 +540,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ilium l820/i' => 'lanix',
         '/s501m 3g|t700i_3g/i' => 'fourgood',
         '/ixion_es255|h135/i' => 'dexp',
-        '/atl-21/i' => 'artizlee',
+        '/atl-[23]1/i' => 'artizlee',
         '/w032i-c3|tr10rs1|tr10cd1/i' => 'intel',
         '/cyrus|cs[0-9]{2}/i' => 'cyrus',
         '/jy-/i' => 'jiayu',
