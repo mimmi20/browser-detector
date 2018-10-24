@@ -175,7 +175,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/thl[ _]|w[12]00| w8| t11/i' => 'thl',
         '/spice/i' => 'spice',
         '/mobistel|cynus[ _][^\/;]+/i' => 'mobistel',
-        '/dg[0-9]{3,4}|x[679]pro|x5max_pro|bl5000| x[23]0 |f3_pro|y6_piano|y6 max| t6 |s60 lite/i' => 'doogee',
+        '/dg[0-9]{3,4}|x[679]pro|x5max_pro|bl5000| x[23]0 |f3_pro|y6_piano|y6 max| t6 |s60 lite| y6c/i' => 'doogee',
         '/aquaris|bq [^\/;]+ build|bqs-400[57]| m10 |edison 3/i' => 'bq',
         '/vivo|x[0-9] ?(plus|max|pro)/i' => 'vivo',
         '/haipai/i' => 'haipai',
