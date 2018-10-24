@@ -1061,7 +1061,7 @@
     "browser": {
       "name": "WeChat App",
       "modus": null,
-      "version": "6.1.0.66",
+      "version": "6.1.0.66+1062275",
       "manufacturer": "Tencent",
       "bits": 32,
       "type": "application"
@@ -4121,7 +4121,7 @@
     "browser": {
       "name": "WeChat App",
       "modus": null,
-      "version": "6.2.0.54",
+      "version": "6.2.0.54+1169949",
       "manufacturer": "Tencent",
       "bits": 32,
       "type": "application"
@@ -5678,6 +5678,42 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; NX573J Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0 MQQBrowser/6.6 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "NX573J",
+      "marketingName": "Nubia M2 Lite",
+      "manufacturer": "Zte",
+      "brand": "Zte",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1280,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "QQ Browser",
+      "modus": null,
+      "version": "6.6.0",
+      "manufacturer": "Tencent",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
       "manufacturer": "Google",
       "bits": 32
     },
