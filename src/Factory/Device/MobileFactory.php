@@ -448,7 +448,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(mpqc|mpdc)[0-9]{1,4}|ph[0-9]{3}|mid(7c|74c|82c|84c|801|811|701|711|170|77c|43c|102c|103c|104c|114c)|mp(843|717|718|843|888|959|969|1010|7007|7008)|mgp7/i' => 'mpman',
         '/N[0-9]{4}/' => 'star',
         '/medipad/i' => 'bewatec',
-        '/nexus|google ?tv|glass|crkey[^a-z0-9]|google pixel|pixel build|pixel (xl|c|2|2 xl) build|gce x86 phone/i' => 'google',
+        '/nexus|google ?tv|glass|crkey[^a-z0-9]|google pixel|pixel( build|\))|pixel (xl|c|2|2 xl)( build|\))|gce x86 phone/i' => 'google',
         '/a1303|a309w|m651cy/i' => 'china-phone',
         '/i101mtk/i' => 'china-tablet',
         '/impad/i' => 'impression',
