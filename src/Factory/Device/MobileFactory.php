@@ -25,7 +25,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/feiteng/i' => 'feiteng',
         '/mypad (1000|750) ?hd/i' => 'yooz',
         '/(myphone|mypad|mytab)[ _][^;\/]+( build|[;\/\)])|cube_lte|mytab10ii|hammer active/i' => 'myphone', // must be before Cube
-        '/cube|(u[0-9]+gt|k8gt)|i1-3gd|i15-tcl/i' => 'cube',
+        '/cube|(u[0-9]+gt|k8gt)|i1-3gd|i15-t[cf]l/i' => 'cube',
         '/tcl[ \-][a-z0-9]+|tcl[_ \-][^;\/]+( build|[;\/\)])|tclgalag60|vf-1497|vf685/i' => 'tcl',
         '/pantech/i' => 'pantech',
         '/touchpad\/\d+\.\d+|hp-tablet|hp ?ipaq|webos.*p160u|slate|hp [78]|compaq [7|8]|hp; [^;\/)]+|pre\/|pixi|palm|cm_tenderloin/i' => 'hp',
