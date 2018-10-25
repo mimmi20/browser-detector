@@ -1,9 +1,16 @@
 {
   "rules": {
+    "/sp3\\.3[ _]lite/i": "tesla sp3.3 lite",
+    "/sp3\\.3/i": "tesla sp3.3",
+    "/sp3\\.2[ _]lite/i": "tesla sp3.2 lite",
+    "/sp3\\.1[ _]lite/i": "tesla sp3.1 lite",
+    "/smartphone[ _]6\\.1/i": "tesla smartphone 6.1",
+    "/smartphone[ _]6/i": "tesla smartphone 6",
+    "/smartphone[ _]3/i": "tesla smartphone 3",
     "/ttl7/i": "tesla ttl7",
     "/tth7/i": "tesla tth7",
-    "/tablet_785/i": "tesla tablet 785",
-    "/tablet_l7_3g/i": "tesla tablet l7 3g"
+    "/tablet[ _]785/i": "tesla tablet 785",
+    "/tablet[ _]l7[ _]3g/i": "tesla tablet l7 3g"
   },
   "generic": "general tesla device"
 }
