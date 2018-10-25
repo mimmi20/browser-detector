@@ -309,7 +309,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/auxus/i' => 'iberry',
         '/rm-(997|560)/i' => 'rossmoor',
         '/gtx75/i' => 'utstarcom',
-        '/bluboo|picasso|xfire|maya/i' => 'bluboo',
+        '/bluboo|picasso|xfire|maya|s1a/i' => 'bluboo',
         '/amazon|kindle|silk|kf(tt|ot|jwi|sowi|thwi|apwa|aswi|apwi|dowi|auwi|giwi|tbwi|mewi|fowi|sawi|sawa|suwi|arwi|thwa|jwa)|aft[st]|sd4930ur|fire2/i' => 'amazon',
         '/playbook|rim tablet|bb10|stv100|bb[ab]100-2|sth100-2|bbd100-1/i' => 'rim',
         '/ (b15|s[346]1|s[46]0) |b15q/i' => 'caterpillar',
