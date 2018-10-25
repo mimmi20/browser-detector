@@ -101,7 +101,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/flipkart|xt811/i' => 'flipkart',
         '/trekstor|surftab|vt10416|breeze 10\.1 quad|xintroni10\.1|st70408_4|[sv]t[0-9]{5}/i' => 'trekstor',
         '/ct(10[0123]0|7[12]0|820)(w|fr)?[);\/ ]/i' => 'carrefour',
-        '/(hw-)?(huawei|ideos|honor[ _]?)|(ale|ane|bah2|bln|bnd|cam|chc|che[12]|ch(e2?|m)|chm|clt|dli|eml|eva|fig|frd|g621|h[36]0|kiw|lld|nem|(?<!ap)pl[ek]|pra|rne|scl|was|y220)-|u(8100|8110|8230|8500|8661|8665|8667|8800|8818|8860|9200|9508)[);\/ ]|bucare y330-u05|hi6210sft|vodafone[ _]858|vodafone 845|ascend|m860| p6 |enjoy 7 plus|g6600|p7mini|p8_max/i' => 'huawei',
+        '/(hw-)?(huawei|ideos|honor[ _]?)|(ale|ane|bah2|bln|bnd|cam|chc|che[12]|ch(e2?|m)|chm|clt|dli|eml|eva|fig|frd|g621|h[36]0|kiw|lld|nem|(?<!ap)pl[ek]|pra|rne|scl|was|y220)-|u(8100|8110|8230|8500|8661|8665|8667|8800|8818|8860|9200|9508)[);\/ ]|bucare y330-u05|hi6210sft|vodafone[ _]858|vodafone 845|ascend|m860| p6 |enjoy 7 plus|g6600|p7mini|p8_max|t1-701u/i' => 'huawei',
         '/nokia(?!; gt-i8750)|lumia|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|symbian.*\s[a-z0-9]+$|rx-51 n900|rm-(1031|104[25]|106[234567]|107[234567]|1089|109[0269]|1109|111[34]|1127|1141|1154)|ta-[0-9]{4}( build|[;\/\)])|(adr|android) 5\.[01].* n1|5130c-2|arm; 909|id336|genm14/i' => 'nokia', // also includes the 'Microsoft' branded Lumia devices
         '/captiva[ _-][^;\/]+( build|[;\/\)])/i' => 'captiva',
         '/supertab[ _-]?[^;\/]+( build|[;\/\)])/i' => 'supertab',
