@@ -360,7 +360,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/(aqua|cloud)[_ \.]/i' => 'intex',
         '/ultrafone/i' => 'zen',
         '/ mt791 /i' => 'keenhigh',
-        '/sphs_on_hsdroid|pure 3/i' => 'mhorse',
+        '/sphs_on_hsdroid|pure [23]/i' => 'mhorse',
         '/TAB A742|TAB7iD|TAB 10Q|ZEN [0-9]/' => 'wexler',
         '/A1002|A811|S[45]A[0-9]|SC7 PRO HD/' => 'lexand',
         '/s750/i' => 'beneve',
