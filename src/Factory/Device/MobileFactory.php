@@ -20,7 +20,6 @@ class MobileFactory implements DeviceFactoryInterface
     private $factories = [
         '/startrail|starxtrem|starshine|staraddict|starnaute|startext|startab/i' => 'sfr', // also includes the 'Tunisie Telecom' and the 'Altice' branded devices
         '/hiphone/i' => 'hiphone',
-        '/blackberry/i' => 'rim',
         '/asus(?!-nexus)|padfone|transformer|tf300t|slider sl101|me302(c|kl)|me301t|me371mg|me17(1|2v|3x)|eee_701|tpad_10|tx201la|p01t_1|(k0[01][0-9a-z]|z00d|z00yd|p(00[8acl]|01[my]a?|02[12347])( build|[;\/\)])|z017d|za550kl|zb555kl|zb602kl|zc553kl|ze520kl|ze553kl|ze554kl|ze620kl)[);\/ ]/i' => 'asus',
         '/feiteng/i' => 'feiteng',
         '/mypad (1000|750) ?hd/i' => 'yooz',
@@ -263,6 +262,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/xolo|a1000s|q10[01]0i?|q[678]00s?|q2000|omega[ _][0-9]|era 2/i' => 'xolo',
         '/cherry|flare2x|flare_hd_max|fusion bolt/i' => 'cherry-mobile',
         '/android.*iphone|ucweb.*adr.*iphone/i' => 'xianghe',
+        '/blackberry|playbook|rim tablet|bb10|(bb[abcdefgh]|st[hv])100-[1-9]/i' => 'rim',
         '/(?<!tr|m|med)ipad|ipod(?!der)|(?<!like )iphone|like mac os x|darwin|cfnetwork|dataaccessd|iuc ?\(|iph[0-9]\,[0-9]|puffin\/[0-9\.]+i[tp]/i' => 'apple',
         '/mtech/i' => 'mtech',
         '/lexand/i' => 'lexand',
@@ -311,7 +311,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/gtx75/i' => 'utstarcom',
         '/bluboo|picasso|xfire|maya|s1a/i' => 'bluboo',
         '/amazon|kindle|silk|kf(tt|ot|jwi|sowi|thwi|apwa|aswi|apwi|dowi|auwi|giwi|tbwi|mewi|fowi|sawi|sawa|suwi|arwi|thwa|jwa)|aft[st]|sd4930ur|fire2/i' => 'amazon',
-        '/playbook|rim tablet|bb10|stv100|bb[ab]100-2|sth100-2|bbd100-1/i' => 'rim',
         '/ (b15|s[346]1|s[46]0) |b15q/i' => 'caterpillar',
         '/cat ?(nova|stargate|tablet|helix)/i' => 'catsound',
         '/mid0714|midc|pmid|prov?[0-9]{3}[b0-9]?|p4526a|p5006a/i' => 'polaroid',
