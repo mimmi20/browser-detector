@@ -4,8 +4,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; he-il; NEO-X5-116A Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
     },
     "device": {
-      "deviceName": "NEO X5",
-      "marketingName": "NEO X5",
+      "deviceName": "Neo X5",
+      "marketingName": "Neo X5",
       "manufacturer": "Minix",
       "brand": "Minix",
       "pointingMethod": null,
@@ -69,6 +69,42 @@
       "name": null,
       "version": "0.0.0",
       "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; NEO-X8-PLUS Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Neo X8 Plus",
+      "marketingName": "Neo X8 Plus",
+      "manufacturer": "Minix",
+      "brand": "Minix",
+      "pointingMethod": null,
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": false,
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "69.0.3497.100",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
     }
   }
 ]

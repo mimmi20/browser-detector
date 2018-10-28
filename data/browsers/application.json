@@ -792,6 +792,20 @@
     },
     "engine": "webkit"
   },
+  "mobicip": {
+    "name": "Mobicip",
+    "manufacturer": "Mobicip",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mobicip"
+      ]
+    },
+    "engine": "gecko"
+  },
   "newsfire": {
     "name": "NewsFire",
     "manufacturer": "DavidWatanabe",

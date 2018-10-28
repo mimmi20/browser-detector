@@ -1,9 +1,33 @@
 {
   "rules": {
+    "/evo5\\.0/i": "tesla evo 5.0",
+    "/sp9\\.1l/i": "tesla sp9.1 lite",
+    "/sp9\\.1/i": "tesla sp9.1",
+    "/sp9/i": "tesla sp9",
+    "/sp6\\.3/i": "tesla sp6.3",
+    "/sp6\\.2[ _]lite/i": "tesla sp6.2 lite",
+    "/sp6\\.2/i": "tesla sp6.2",
+    "/sp3\\.3[ _]lite/i": "tesla sp3.3 lite",
+    "/sp3\\.3/i": "tesla sp3.3",
+    "/sp3\\.2[ _]lite/i": "tesla sp3.2 lite",
+    "/sp3\\.1[ _]lite/i": "tesla sp3.1 lite",
+    "/smartphone[ _]6\\.1/i": "tesla smartphone 6.1",
+    "/smartphone[ _]6/i": "tesla smartphone 6",
+    "/smartphone[ _]3/i": "tesla smartphone 3",
+    "/gravity 9\\.7 shd/i": "tesla gravity 9.7 shd",
+    "/impulse 7\\.85 3g/i": "tesla impulse 7.85 3g",
+    "/tablet[ _]m8/i": "tesla m8",
+    "/tablet[ _]m7/i": "tesla m7",
+    "/l8\\.1/i": "tesla ttl8.1",
+    "/ttl8/i": "tesla ttl8",
+    "/ttl713g/i": "tesla l7.1 3g",
+    "/l7\\.1/i": "tesla l7.1",
+    "/l7 quad lite/i": "tesla l7 quad lite",
+    "/l7 quad/i": "tesla l7 quad",
     "/ttl7/i": "tesla ttl7",
     "/tth7/i": "tesla tth7",
-    "/tablet_785/i": "tesla tablet 785",
-    "/tablet_l7_3g/i": "tesla tablet l7 3g"
+    "/tablet[ _]785/i": "tesla tablet 785",
+    "/tablet[ _]l7[ _]3g/i": "tesla tablet l7 3g"
   },
   "generic": "general tesla device"
 }

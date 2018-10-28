@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/x1030x/i": "lenovo x1030x",
+    "/(p1c58|p1c72|x1030x)/i": "lenovo $1",
     "/z2132/i": "lenovo z2132",
     "/z2131/i": "lenovo z2131",
     "/zuk z1/i": "lenovo zuk z1",

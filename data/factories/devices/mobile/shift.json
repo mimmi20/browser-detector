@@ -1,9 +1,9 @@
 {
   "rules": {
     "/shift7/i": "shift shift7",
-    "/shift5_3/i": "shift shift5.3",
-    "/shift5\\.2/i": "shift shift5.2",
-    "/shift4\\.2/i": "shift shift4.2"
+    "/shift5[_\\.]3/i": "shift shift5.3",
+    "/shift5[_\\.]2/i": "shift shift5.2",
+    "/shift4[_\\.]2/i": "shift shift4.2"
   },
   "generic": "general shift device"
 }

@@ -1889,7 +1889,7 @@
     "browser": {
       "name": "WeChat App",
       "modus": null,
-      "version": "6.3.13.49",
+      "version": "6.3.13.49+4080",
       "manufacturer": "Tencent",
       "bits": 32,
       "type": "application"
@@ -23165,7 +23165,7 @@
     "browser": {
       "name": "WeChat App",
       "modus": null,
-      "version": "6.1.0.66",
+      "version": "6.1.0.66+1062275",
       "manufacturer": "Tencent",
       "bits": 32,
       "type": "application"
@@ -39041,7 +39041,7 @@
     "browser": {
       "name": "WeChat App",
       "modus": null,
-      "version": "6.2.0.52",
+      "version": "6.2.0.52+1162382",
       "manufacturer": "Tencent",
       "bits": 32,
       "type": "application"
@@ -40562,6 +40562,78 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-J600FN Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/7.4 Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J600FN",
+      "marketingName": "Galaxy J6 (2018)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1480,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "7.4.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SAMSUNG SM-T830 Build/M1AJQ) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/8.0 Chrome/63.0.3239.111 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T830",
+      "marketingName": "Galaxy Tab S4 (10.5, Wi-Fi)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 2560,
+      "resolutionHeight": 1600,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
       "manufacturer": "Google",
       "bits": 32
     },
