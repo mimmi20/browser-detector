@@ -1,7 +1,7 @@
 {
   "rules": {
     "/p01t_1/i": "asus p01t_1",
-    "/(a001|p00[acl]|p01ma|p01y|p02[12347]|x00[78abdhilqt]d[ab]?|x008|x01[34]d|z00ada|z00[8aelrsuvy]d|z00[27d]|z00xs|z01[hr]da?|za550kl|zb555kl|zb602kl|zc553kl|ze520kl|ze553kl|ze554kl|ze620kl)/i": "asus $1",
+    "/(a001|p00[acl]|p01ma|p01y|p02[12347]|x00[78abdhilqt]d[ab]?|x00[38]|x01[348]d|z00[8aelmrsuvy]da?|z00[27d]|z00xs|z01[fhmr]da?|za550kl|zb555kl|zb602kl|zc553kl|ze520kl|ze553kl|ze554kl|ze620kl)/i": "asus $1",
     "/z01kda/i": "asus z01kda",
     "/z01kd/i": "asus z01kd",
     "/z011d/i": "asus z011d",
