@@ -621,6 +621,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ms55l1/i' => 'mobiola',
         '/lemhoov/i' => 'lemhoov',
         '/pd-3127/i' => 'primepad',
+        '/alumini 2/i' => 'kempler-strauss',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
