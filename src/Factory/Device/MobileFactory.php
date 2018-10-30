@@ -517,7 +517,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ c2 /i' => 'zopo',
         '/smartpad/i' => 'einsundeins',
         '/i4901/i' => 'idea',
-        '/gnet/i' => 'gnet',
+        '/gnet/i' => 'g-net',
         '/hive v 3g|hive iv 3g/i' => 'turbo-x',
         '/turkcell/i' => 'turkcell',
         '/is04/i' => 'kddi',
