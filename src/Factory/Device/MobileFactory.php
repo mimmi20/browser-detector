@@ -105,7 +105,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/captiva[ _-][^;\/]+( build|[;\/\)])/i' => 'captiva',
         '/supertab[ _-]?[^;\/]+( build|[;\/\)])/i' => 'supertab',
         '/vi8 plus|hibook|hi10 pro|cw-hi8-super/i' => 'chuwi',
-        '/umi(digi)?[ _]|iron[ _]|london(?!test)|hammer_s|z2 pro|plus e|c note|super(?!sonic)|s2 lite/i' => 'umi',
+        '/umi(digi)?[ _]|iron[ _]|london(?!test)|hammer_s|z2 pro|plus e|c note|super(?!sonic)|s2 lite|a1_pro|z2[ )]/i' => 'umi',
         '/mot|(?<!an|hs|md |mocor|m)droid ?(build|[a-z0-9]+)|droid-bionic|portalmmm\/2.0 (e378i|l6|l7|v3)|xoom [^;\/]*build|(?<!ne)(xt|mz|mb|me)[0-9]{3,4}[a-z]?(\(defy\)|-[01][0-9]|-backflip)?( build|[;\/\)])|milestone|razr hd|(?<!desire) z |t720/i' => 'motorola',
         '/galaxy s3 ex/i' => 'hdc',
         '/lingwin/i' => 'lingwin',

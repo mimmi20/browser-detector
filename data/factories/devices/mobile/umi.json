@@ -1,22 +1,24 @@
 {
   "rules": {
-    "/s2 lite/i": "umi s2 lite",
-    "/c note/i": "umi c note",
-    "/z2 pro/i": "umi z2 pro",
-    "/iron pro/i": "umi iron pro",
+    "/s2[_ ]lite/i": "umi s2 lite",
+    "/c[_ ]note/i": "umi c note",
+    "/z2[_ ]pro/i": "umi z2 pro",
+    "/z2[ )]/i": "umi z2",
+    "/a1[_ ]pro/i": "umi a1 pro",
+    "/iron[_ ]pro/i": "umi iron pro",
     "/iron/i": "umi iron",
     "/zero/i": "umi zero",
     "/emax/i": "umi emax",
-    "/touch x/i": "umi touch x",
-    "/plus e/i": "umi plus e",
-    "/hammer_s/i": "umi hammer s",
+    "/touch[_ ]x/i": "umi touch x",
+    "/plus[_ ]e/i": "umi plus e",
+    "/hammer[_ ]s/i": "umi hammer s",
     "/london/i": "umi london",
-    "/umi_diamond_x/i": "umi diamond x",
-    "/umi_diamond/i": "umi diamond",
-    "/umi_max/i": "umi max",
+    "/umi[_ ]diamond[_ ]x/i": "umi diamond x",
+    "/umi[_ ]diamond/i": "umi diamond",
+    "/umi[_ ]max/i": "umi max",
     "/super/i": "umi super",
     "/umi[_ ]x2/i": "umi x2",
-    "/umidigi z/i": "umi z"
+    "/umidigi[_ ]z/i": "umi z"
   },
   "generic": "general umi device"
 }
