@@ -122,7 +122,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/odys|xelio_next|(maven|space|tao|thor)_?x?10|connect(7pro|8plus)|loox|uno_x10|xelio|neo_quad10|ieos_quad|sky plus|maven_10_plus|maven10_hd_plus_3g|maven_x10_hd_lte|space10_plus|adm816|noon|xpress|genesis|tablet-pc-4|kinder-tablet|evolution12|mira|score_plus|pro q8 plus|rapid7lte|neo6_lte|rapid_10|visio(?!n)|pace10|falcon_10_plus_3g|goal_10_plus_3g/i' => 'odys',
         '/next|next[0-9]|datam803hc|nx785qc8g|nxm900mc|nx008hd8g|nx010hi8g|nxm908hc|nxm726/i' => 'nextbook',
         '/infinix/i' => 'infinix',
-        '/bv[5-9]000|dm550|crown| r6 | a8 |alife [ps]1|omega_pro|a7pro/i' => 'blackview',
+        '/bv[5-9]000|dm550|crown| r6 | a8 |alife [ps]1|omega_pro|a7pro| e7s[ )]/i' => 'blackview',
         '/karbonn|titanium|machfive|sparkle v|s109|k9 smart grand/i' => 'karbonn', // must be before acer
         '/micromax[ \-\_]?[a-z0-9]+|(p70221|a121|a120|a116|a114|a093|a065| a96| a50| a47|q327)( build|[;\/\)])|mid1014/i' => 'micromax',
         '/smartpad7503g|smartpad970s2(3g)?|m[_\-][mps]p[0-9a-z]+|m-ipro[0-9a-z]+/i' => 'mediacom',
