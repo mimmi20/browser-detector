@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/(aum-a?l2[09]|atu-l(?:[123]1|[24]2|x3)|bln-(?:[at]?l[012][0124])|cag-l0[23]|ldn-(?:lx2|l21|tl10)|ven-l22|c199|sne-(?:al00|lx1)|kiw-(?:ul00|tl00h?|l21)|trt-(?:lx[123]|al00)|bac-(?:al00|l2[13]|l03)|ags2-w09|mla-(?:al10|l11)|dra-(?:l21|lx2)|par-(?:lx9|l29)|bah2-(?:w[01]9)|ane-(?:l22|lx[123])|ale-(?:[cu]l00|l2[13]|l02)|sht-w09|edi-al10|jmm-l22|dig-l21hn|kob-w09|bkl-l09|col-l29|caz-al10|pic-lx9|mt1-u06|dli-l22|che-tl00h|tit-u02|g740-l00|crr-l09|rio-l01|pe-tl10|p2-6011|lon-l29|duk-l09|scc-u21|lua-l21|bg2-w09)/i": "huawei $1",
+    "/(aum-a?l2[09]|atu-l(?:[123]1|[24]2|x3)|bln-(?:[at]?l[012][0124])|cag-l0[23]|ldn-(?:lx2|l21|tl10)|ven-l22|c199|sne-(?:al00|lx1)|kiw-(?:ul00|tl00h?|l21)|trt-(?:lx[123]|al00)|bac-(?:al00|l2[13]|l03)|ags2-w09|mla-(?:al10|l11)|dra-(?:l21|lx[12])|par-(?:lx9|l29)|bah2-(?:w[01]9|l09)|ane-(?:l22|lx[123])|ale-(?:[cu]l00|l2[13]|l02)|jsn-(?:l21|al00a?|tl00)|mha-(?:[at]l00|l[02]9)|stf-(?:l09|al[01]0|tl10)|neo-l29|sht-w09|edi-al10|jmm-l22|dig-l21hn|kob-w09|bkl-l09|col-l29|caz-al10|pic-lx9|mt1-u06|dli-l22|che-tl00h|tit-u02|g740-l00|crr-(?:l09|ul00)|rio-l01|pe-tl10|p2-6011|lon-l29|duk-l09|scc-u21|lua-l21|bg2-w09)/i": "huawei $1",
     "/can-/i": {
       "/can-l01/i": "huawei can-l01",
       "/can-l11/i": "huawei can-l11",
@@ -71,11 +71,6 @@
       "/cam-tl00/i": "huawei cam-tl00",
       "/cam-l21/i": "huawei cam-l21",
       "/cam-l03/i": "huawei cam-l03"
-    },
-    "/mha-/i": {
-      "/mha-al00/i": "huawei mha-al00",
-      "/mha-l29/i": "huawei mha-l29",
-      "/mha-l09/i": "huawei mha-l09"
     },
     "/h60-/i": {
       "/h60-l01/i": "huawei h60-l01",
@@ -297,12 +292,6 @@
       "/mt7-cl00/i": "huawei mt7-cl00",
       "/mt7-tl10/i": "huawei mt7-tl10",
       "/mt7-l09/i": "huawei mt7-l09"
-    },
-    "/stf-/i": {
-      "/stf-l09/i": "huawei stf-l09",
-      "/stf-al00/i": "huawei stf-al00",
-      "/stf-al10/i": "huawei stf-al10",
-      "/stf-tl10/i": "huawei stf-tl10"
     },
     "/ine-/i": {
       "/ine-lx2/i": "huawei ine-lx2",
