@@ -97,6 +97,7 @@ class Desktop
             'the bat!',
             'hp-ux',
             'hpux',
+            'beos',
         ];
 
         if ($this->useragent->containsAny($othersDesktops, false)) {
