@@ -219,7 +219,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/allview|v1_viper|a4you|p[59]_(quad|energy)|ax4nano|x[124]_soul|p41_emagic/i' => 'allview',
         '/komu| k5 /i' => 'komu',
         '/energy[ _-]?[^;\/]+( build|[;\/\)])/i' => 'energy-sistem',
-        '/elephone[ _\-][^\/;]+( build|[;\/\)])|p[369]000( ?pro| ?plus|\+| ?02)?( build|[;\/\)])|p8_mini/i' => 'elephone',
+        '/elephone[ _\-][^\/;]+( build|[;\/\)])|p[3689]000( ?pro| ?plus|\+| ?02| 6\.0)?( build|[;\/\)])|p8_mini/i' => 'elephone',
         '/wopad/i' => 'wopad',
         '/anka/i' => 'anka',
         '/lemon/i' => 'lemon',
