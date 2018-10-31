@@ -46,7 +46,7 @@ class AndroidOs
             return false;
         }
 
-        if (preg_match('/android|silk|juc ?\(linux;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux;|spreadtrum|vre;|linux; googletv|beyondpod|htc_sensation_z710e/i', (string) $this->useragent)) {
+        if (preg_match('/andr[0o]id|silk|juc ?\(linux;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux;|spreadtrum|vre;|linux; googletv|beyondpod|htc_sensation_z710e/i', (string) $this->useragent)) {
             return true;
         }
 

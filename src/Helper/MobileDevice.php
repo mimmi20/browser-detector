@@ -72,6 +72,7 @@ class MobileDevice
             'windows iot',
             'netcast',
             'raspbian',
+            'bravia',
         ];
 
         if ($this->useragent->containsAny($noMobiles, false)) {
