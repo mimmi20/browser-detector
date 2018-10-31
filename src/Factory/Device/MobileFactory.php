@@ -46,7 +46,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/creative/i' => 'creative',
         '/dell/i' => 'dell',
         '/denver|ta[cdq]-[0-9]+|sdq-5/i' => 'denver',
-        '/sharp|shl2[25]|shv31|is05|[0-9]{3}sh|sh-?[0-9]{2,4}[cdefuw]/i' => 'sharp',
+        '/sharp|shl2[25]|shv31|is05|[0-9]{3}sh|sh-?[0-9]{2,4}[cdefuw]|fs8010/i' => 'sharp',
         '/flytouch/i' => 'flytouch',
         '/nec[ _\-]|kgt\/2\.0|portalmmm\/1\.0 (db|n)|(portalmmm|o2imode)\/2.0[ ,]n|n-06[de]|n[79]05i/i' => 'nec', // must be before docomo
         '/docomo/i' => 'docomo',

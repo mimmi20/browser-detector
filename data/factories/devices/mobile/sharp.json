@@ -1,14 +1,12 @@
 {
   "rules": {
-    "/shv31/i": "sharp shv31",
-    "/shl25/i": "sharp shl25",
-    "/shl22/i": "sharp shl22",
-    "/sh\\-10d/i": "sharp sh-10d",
-    "/sh\\-08e/i": "sharp sh-08e",
-    "/sh\\-07d/i": "sharp sh-07d",
-    "/sh\\-06d/i": "sharp sh-06d",
-    "/sh\\-02e/i": "sharp sh-02e",
-    "/sh\\-01f/i": "sharp sh-01f",
+    "/(shv31|shl2[25]|fs8010)/i": "sharp $1",
+    "/sh-10d/i": "sharp sh-10d",
+    "/sh-08e/i": "sharp sh-08e",
+    "/sh-07d/i": "sharp sh-07d",
+    "/sh-06d/i": "sharp sh-06d",
+    "/sh-02e/i": "sharp sh-02e",
+    "/sh-01f/i": "sharp sh-01f",
     "/sh837w/i": "sharp sh837w",
     "/sh8128u/i": "sharp sh8128u",
     "/sh7228u/i": "sharp sh7228u",
@@ -20,7 +18,7 @@
     "/is05/i": "sharp is05",
     "/ads1/i": "sharp ads1",
     "/stx2/i": "sharp stx2",
-    "/tq\\-gx30i/i": "sharp tq-gx30i"
+    "/tq-gx30i/i": "sharp tq-gx30i"
   },
   "generic": "general sharp device"
 }
