@@ -623,6 +623,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/pd-3127/i' => 'primepad',
         '/alumini 2/i' => 'kempler-strauss',
         '/go onyx|go1402|go503/i' => 'go-mobile',
+        '/wieppo/i' => 'wieppo',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
