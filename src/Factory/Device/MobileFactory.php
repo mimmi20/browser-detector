@@ -509,7 +509,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/n90fhdrk|n90 dual core2|n101 dual core2/i' => 'yuandao',
         '/nova/i' => 'catsound',
         '/n820|a862w/i' => 'amoi',
-        '/jay-tech|tpc-[a-z0-9]+/i' => 'jaytech',
+        '/jay-tech|tpcy?-[a-z0-9]+/i' => 'jaytech',
         '/ g9 /i' => 'mastone',
         '/zt180/i' => 'zenithink',
         '/e1107/i' => 'yusu',
