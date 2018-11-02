@@ -626,6 +626,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/go onyx|go1402|go503/i' => 'go-mobile',
         '/wieppo/i' => 'wieppo',
         '/myria|easy tab 9|502m/i' => 'myria',
+        '/gtm-5/i' => 'grape',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
