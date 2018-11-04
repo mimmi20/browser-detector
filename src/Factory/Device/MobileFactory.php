@@ -629,6 +629,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/myria|easy tab 9|502m/i' => 'myria',
         '/gtm-5/i' => 'grape',
         '/smart race 4g/i' => 'mts',
+        '/m960/i' => 'modoex',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
