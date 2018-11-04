@@ -94,7 +94,7 @@ jobs:
       env:
         - TEST="phpunit - integration"
         - COMPOSER_FLAGS=""
-      script: php -n vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --columns 119 --verbose
+      script: php -n vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --columns 121 --verbose
 
 notifications:
   email: false

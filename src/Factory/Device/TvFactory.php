@@ -18,7 +18,7 @@ use Psr\Log\LoggerInterface;
 class TvFactory implements DeviceFactoryInterface
 {
     private $factories = [
-        '/kdl\d{2}|nsz\-gs7\/gx70|sonydtv|netbox/i' => 'sony',
+        '/kdl\d{2}|nsz\-gs7\/gx70|sonydtv|netbox|bravia/i' => 'sony',
         '/THOMSON|LF1V/' => 'thomson',
         '/philips|avm\-/i' => 'philips',
         '/xbox/i' => 'microsoft',

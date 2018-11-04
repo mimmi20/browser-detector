@@ -106,8 +106,12 @@ class GenericLoader implements GenericLoaderInterface
         foreach ($rules as $search => $key) {
             $matches = [];
 
-            if (!preg_match($search, $useragent, $matches)) {
-                continue;
+            try {
+                if (!preg_match($search, $useragent, $matches)) {
+                    continue;
+                }
+            } catch (\Throwable $e) {
+                throw new \InvalidArgumentException(sprintf('An error occured while matching rule "%s"', $search), 0, $e);
             }
 
             if (is_array($key)) {
