@@ -258,7 +258,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ t02 /i' => 'changhong',
         '/bravis|a501 bright|nb(10[56]|751|7[145])|np101/i' => 'bravis', // must be before acer
         '/touchlet|x7g|x10\.|xa100/i' => 'pearl',
-        '/acer|liquid|(?<!zte blade |[0-9])a(100|101(b2?|b2-lz|c)?|110|200|210|211|500|501|510|511|700|701)[);\/ ]|android.*v3[67]0[);\/ ]|android.*z1[23456]0( build|[;\/\)])|android.*z200( build|[;\/\)])|android.*z410( build|[;\/\)])|android.*z5\d{2}( build|[;\/\)])|android.*t0[2346789]( build|[;\/\)])|a1-81[01]|a1-830|a1-84[01]|a3-a[12345][01]|b1-7[1235678][01]|b1-7[23]3|b1-8[1235]0|b1-a71|b3-a[12]0|b3-a3[02]|b3-a40|b3-a50|(e39|e140|e310|e380|e600|g100w|s55|s5[012]0)( build|[;\/\)])|da[0-9]+hq?l[);\/ ]|stream-s110/i' => 'acer',
+        '/acer|liquid|(?<!zte blade |[0-9])a(100|101(b2?|b2-lz|c)?|110|200|210|211|500|501|510|511|700|701)[);\/ ]|android.*v3[67]0[);\/ ]|android.*z1[23456]0( build|[;\/\)])|android.*z200( build|[;\/\)])|android.*z410( build|[;\/\)])|android.*z5\d{2}( build|[;\/\)])|android.*t0[2346789]( build|[;\/\)])|a1-734|a1-81[01]|a1-830|a1-84[01]|a3-a[12345][01]|b1-7[1235678][01]|b1-7[23]3|b1-8[1235]0|b1-a71|b3-a[12]0|b3-a3[02]|b3-a40|b3-a50|(e39|e140|e310|e380|e600|g100w|s55|s5[012]0)( build|[;\/\)])|da[0-9]+hq?l[);\/ ]|stream-s110/i' => 'acer',
         '/technisat|technipad|aqipad|techniphone/i' => 'technisat',
         '/q8002/i' => 'crypto', // must be before xolo
         '/xolo|a1000s|q10[01]0i?|q[678]00s?|q2000|omega[ _][0-9]|era 2/i' => 'xolo',
