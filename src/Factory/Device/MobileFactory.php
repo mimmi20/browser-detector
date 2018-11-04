@@ -114,7 +114,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/zuum|stedi|magno/i' => 'zuum',
         '/samsung[is \-;\/](?!galaxy nexus)|galaxy(?! nexus)|(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)-|g710[68]|n8000d|n[579]1[01]0|f031|n900\+|sc[lt]2[0-9]|isw11sc|s7562|sghi[0-9]{3}|i8910|i545|i(7110|9100|9300)|blaze|s8500/i' => 'samsung', // must be before orange and sprint
         '/tm-(mid|sm)[0-9]{3,4}/i' => 'touchmate',
-        '/texet|x-pad|navipad|tm-[0-9]{4}/i' => 'texet', // must be before odys
+        '/texet|x-pad|navipad|tm-[0-9]{4}|tb-7[17]1a/i' => 'texet', // must be before odys
         '/(ever(glory|shine|miracle|mellow|classic|trendy|fancy|vivid|slim|glow|magic|smart|star)[^\/;]*)( build|[;\/\)])|e70[25]0hd|e7914hg|e8050h[dg]|e8051hd|e9054hd/i' => 'evertek', // must be before Magic and Odys
         '/inm[0-9]{3,4}|tab1024/i' => 'intenso',
         '/ngm[_ ][a-z0-9]+|(forward|dynamic)[ _]?[^\/;]+(build|\/)/i' => 'ngm',
