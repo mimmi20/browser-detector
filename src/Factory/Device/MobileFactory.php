@@ -180,6 +180,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/mobistel|cynus[ _][^\/;]+/i' => 'mobistel',
         '/dg[0-9]{3,4}|x[679]pro|x5max_pro|bl5000| x[23]0 |f3_pro|y6_piano|y6 max| t6 |s60 lite| y6c/i' => 'doogee',
         '/aquaris|bq [^\/;]+( build|[;\/\)])|bqs-400[57]| m10 |edison 3/i' => 'bq',
+        '/vivo x6s a/i' => 'bbk',
         '/vivo|x[0-9] ?(plus|max|pro)/i' => 'vivo',
         '/haipai/i' => 'haipai',
         '/megafon/i' => 'megafon',
