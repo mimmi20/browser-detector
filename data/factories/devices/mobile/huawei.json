@@ -17,7 +17,7 @@
     "/(par-(?:lx9|l29))/i": "huawei $1",
     "/(bah2-(?:w[01]9|l09))/i": "huawei $1",
     "/(ane-(?:l22|lx[123]|al00))/i": "huawei $1",
-    "/(ale-(?:[cu]l00|l2[13]|l02))/i": "huawei $1",
+    "/(ale-(?:[ctu]l00|l2[13]|l0[24]))/i": "huawei $1",
     "/(jsn-(?:l21|al00a?|tl00))/i": "huawei $1",
     "/(mha-(?:[at]l00|l[02]9))/i": "huawei $1",
     "/(stf-(?:l09|al[01]0|tl10))/i": "huawei $1",
@@ -88,6 +88,8 @@
     "/(ags-(?:l0[39]|w09))/i": "huawei $1",
     "/(bnd-(?:l2[124]|[at]l10))/i": "huawei $1",
     "/(mya-(?:[at]l10|l0[23]|l[14]1|l2[23]))/i": "huawei $1",
+    "/(c8816d)/i": "huawei $1",
+    "/(c8817e)/i": "huawei $1",
     "/bah-/i": {
       "/bah-l09/i": "huawei bah-l09",
       "/bah-w09/i": "huawei bah-w09"
@@ -208,6 +210,7 @@
     "/y550-l01/i": "huawei y550-l01",
     "/y541-u02/i": "huawei y541-u02",
     "/y540-u01/i": "huawei y540-u01",
+    "/y538/i": "huawei y538",
     "/y530-u00/i": "huawei y530-u00",
     "/y511-t00/i": "huawei y511-t00",
     "/y511/i": "huawei y511",
@@ -218,6 +221,7 @@
     "/y330-u11/i": "huawei y330-u11",
     "/y330-u05/i": "huawei y330-u05",
     "/y330-u01/i": "huawei y330-u01",
+    "/y310-t10/i": "huawei y310-t10",
     "/y300/i": "huawei y300",
     "/y220-u10/i": "huawei y220-u10",
     "/y220-u00/i": "huawei y220-u00",
