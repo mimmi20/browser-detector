@@ -348,7 +348,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/oneplus|one (a200[135]|e100[13])|a0001/i' => 'oneplus',
         '/ImPAD6213M_v2/' => 'impression',
         '/D6000/' => 'innos',
-        '/kyocera|e6560|c6750|c6742|c6730|c6522n|c5215|c5170|c5155|c5120|dm015k|kc-s701|kyl21/i' => 'kyocera',
+        '/kyocera|e6560|c6750|c674[023]|c6730|c6522n|c5215|c5170|c5155|c5120|dm015k|kc-s701|kyl21/i' => 'kyocera',
         '/medion|lifetab|p4501|p850x|e4004|e691x|p1050x|p1032x|p1040x|s1035x|p1035x|p4502|p851x|x1031x|x1060x|x5001|b5532/i' => 'medion',
         '/tesla| smartphone[ _]|ttl[0-9]|impulse 7\.85 3g| sp[0-9]/i' => 'tesla',
         '/terra pad|pad1002/i' => 'wortmann',

@@ -430,5 +430,113 @@
       "version": "534.30.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; C6740N Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "C6740N",
+      "marketingName": "Hydro Wave",
+      "manufacturer": "Kyocera",
+      "brand": "Kyocera",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 540,
+      "resolutionHeight": 960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "54.0.2840.85",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/3.0(WILLCOM;KYOCERA/402KC/2;3.1.2.24.000000/1/C256) NetFront/3.4"
+    },
+    "device": {
+      "deviceName": "402KC",
+      "marketingName": "402KC",
+      "manufacturer": "Kyocera",
+      "brand": "Kyocera",
+      "pointingMethod": null,
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": false,
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; C6743 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "C6743",
+      "marketingName": "Hydro Reach",
+      "manufacturer": "Kyocera",
+      "brand": "Kyocera",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 540,
+      "resolutionHeight": 960,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
   }
 ]
