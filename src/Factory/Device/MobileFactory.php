@@ -632,6 +632,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/gtm-5/i' => 'grape',
         '/smart race 4g/i' => 'mts',
         '/m960/i' => 'modoex',
+        '/ebm8000nd_211/i' => 'yifang',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
