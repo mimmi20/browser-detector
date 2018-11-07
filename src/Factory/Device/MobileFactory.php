@@ -100,7 +100,8 @@ class MobileFactory implements DeviceFactoryInterface
         '/flipkart|xt811/i' => 'flipkart',
         '/trekstor|surftab|vt10416|breeze 10\.1 quad|xintroni10\.1|st70408_4|[sv]t[0-9]{5}/i' => 'trekstor',
         '/ct(10[0123]0|7[12]0|820)(w|fr)?[);\/ ]/i' => 'carrefour',
-        '/(hw-)?(huawei|ideos|honor[ _]?)|(ale|ane|bah2?|bkl|bl[an]|bnd|btv|cam|chc|che[12]|ch(e2?|m)|chm|clt|cmr|crr|dli|dra|eml|eva|fig|frd|g621|h[36]0|jsn|kiw|lld|mha|nem|pic|(?<!ap)pl[ek]|pra|rne|scl|sne|stf|trt|vie|vky|vtr|was|y220)-|u(8100|8110|8230|8500|8661|8665|8667|8800|8818|8860|9200|9508)[);\/ ]|bucare y330-u05|hi6210sft|vodafone[ _]858|vodafone 845|ascend|m860| p6 |enjoy 7 plus|g6600|p7mini|p8_max|t1-701u|t1 7\.0/i' => 'huawei',
+        '/minix|neo-x[58]/i' => 'minix',
+        '/(hw-)?(huawei|ideos|honor[ _]?)|(ags2?|ale|ane|aum|bah2?|bkl|bl[an]|bnd|btv|cam|chc|che[12]|ch(e2?|m)|chm|clt|cmr|col|crr|dig|dli|dra|eml|eva|fdr|fig|frd|g621|h[36]0|ine|jsn|kiw|ldn|lld|lya|mha|ne[mo]| pe|pic|(?<!ap)pl[ek]|pra|rne|scl|sla|sne|stf|t1|trt|vie|vky|vtr|was|y220)-|u(8100|8110|8230|8500|8661|8665|8667|8800|8818|8860|9200|9508)[);\/ ]|bucare y330-u05|hi6210sft|vodafone[ _]858|vodafone 845|ascend|m860| p6 |enjoy 7 plus|g6600|p7mini|p8_max|t1-701u|t1 7\.0/i' => 'huawei',
         '/nokia(?!; gt-i8750)|lumia|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|symbian.*\s[a-z0-9]+$|rx-51 n900|rm-(1031|104[25]|106[234567]|107[234567]|1089|109[0269]|1109|111[34]|1127|1141|1154)|ta-[0-9]{4}( build|[;\/\)])|(adr|android) 5\.[01].* n1|5130c-2|arm; 909|id336|genm14/i' => 'nokia', // also includes the 'Microsoft' branded Lumia devices
         '/captiva[ _-][^;\/]+( build|[;\/\)])/i' => 'captiva',
         '/supertab[ _-]?[^;\/]+( build|[;\/\)])/i' => 'supertab',
@@ -446,7 +447,6 @@ class MobileFactory implements DeviceFactoryInterface
         '/max2_plus_3g/i' => 'innjoo',
         '/advan|t1x plus|vandroid/i' => 'advan',
         '/general mobile|discovery|gm 8|gm 5 plus/i' => 'general-mobile',
-        '/minix|neo-x[58]/i' => 'minix',
         '/wiko|dark(moon|side|night|full)|barry|birdy|bloom|cink|fever|fizz|harry|getaway| goa|highway|iggy|jimmy|jerry|kite|ozzy|plus|pulp|ridge|robby|slide|stairway|sublim|sunset|u (feel|pulse)|wax|l5510|lenny|rainbow|sunny|view (go|prime|xl)|view( build|[;\)])|w_k[46]00|w_c8[06]0|wim lite/i' => 'wiko',
         '/(mpqc|mpdc)[0-9]{1,4}|ph[0-9]{3}|mid(7c|74c|82c|84c|801|811|701|711|170|77c|43c|102c|103c|104c|114c)|mp(843|717|718|843|888|959|969|1010|7007|7008)|mgp7/i' => 'mpman',
         '/N[0-9]{4}/' => 'star',

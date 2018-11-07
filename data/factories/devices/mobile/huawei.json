@@ -38,7 +38,7 @@
     "/(g740-l00)/i": "huawei $1",
     "/(crr-(?:l09|ul00))/i": "huawei $1",
     "/(rio-l01)/i": "huawei $1",
-    "/(pe-tl10)/i": "huawei $1",
+    "/(pe-(?:tl[012]0|ul00))/i": "huawei $1",
     "/(p2-6011)/i": "huawei $1",
     "/(lon-l29)/i": "huawei $1",
     "/(duk-(?:l09|al20))/i": "huawei $1",
@@ -139,10 +139,7 @@
       "/m2-801w/i": "huawei m2-801w",
       "/m2-801l/i": "huawei m2-801l"
     },
-    "/fdr-/i": {
-      "/fdr-a01l/i": "huawei fdr-a01l",
-      "/fdr-a01w/i": "huawei fdr-a01w"
-    },
+    "/(fdr-(?:a01[lw]|a0[34]l))/i": "huawei $1",
     "/ath-/i": {
       "/ath-al00/i": "huawei ath-al00",
       "/ath-ul01/i": "huawei ath-ul01"
