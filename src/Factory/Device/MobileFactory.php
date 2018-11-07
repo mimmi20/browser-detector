@@ -372,7 +372,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/onda|v919 3g air|v10 4g/i' => 'onda',
         '/tm785m3/i' => 'nuvision',
         '/m785|800p71d|800p3[12]c|101p51c|x1010|a1013r|s10-0g/i' => 'mecer',
-        '/cubot|hafury|s20[08]|s308|s550|s600|z100 pro|note plus| c7 | h1 | cheetah[ )]| x1[268] | x17_s | r9( build|[;\/\)])/i' => 'cubot',
+        '/cubot|hafury|s20[08]|s308|s550|s600|z100 pro|note plus| (c7|h1|cheetah|x1[268]|x17_s|r9)( build|[;\/\)])/i' => 'cubot',
         '/coolpad|cp[0-9]{4}|(n930|5860s|8079|8190q|8295|c103|w713|3600i)( build|[;\/\)])|vcr-i0/i' => 'coolpad',
         '/AT-AS[0-9]{2}[DS]/' => 'wolfgang',
         '/vk-/i' => 'vkmobile',
