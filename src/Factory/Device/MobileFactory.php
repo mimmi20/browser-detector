@@ -447,7 +447,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/advan|t1x plus|vandroid/i' => 'advan',
         '/general mobile|discovery|gm 8|gm 5 plus/i' => 'general-mobile',
         '/minix|neo-x[58]/i' => 'minix',
-        '/wiko|dark(moon|side|night|full)|barry|birdy|bloom|cink|fever|fizz|harry|getaway| goa|highway|iggy|jimmy|jerry|kite|ozzy|plus|pulp|ridge|robby|slide|stairway|sublim|sunset|u (feel|pulse)|wax|l5510|lenny|rainbow|sunny|view (go|prime|xl)|view( build|[;\)])|w_k[46]00|w_c800|wim lite/i' => 'wiko',
+        '/wiko|dark(moon|side|night|full)|barry|birdy|bloom|cink|fever|fizz|harry|getaway| goa|highway|iggy|jimmy|jerry|kite|ozzy|plus|pulp|ridge|robby|slide|stairway|sublim|sunset|u (feel|pulse)|wax|l5510|lenny|rainbow|sunny|view (go|prime|xl)|view( build|[;\)])|w_k[46]00|w_c8[06]0|wim lite/i' => 'wiko',
         '/(mpqc|mpdc)[0-9]{1,4}|ph[0-9]{3}|mid(7c|74c|82c|84c|801|811|701|711|170|77c|43c|102c|103c|104c|114c)|mp(843|717|718|843|888|959|969|1010|7007|7008)|mgp7/i' => 'mpman',
         '/N[0-9]{4}/' => 'star',
         '/medipad/i' => 'bewatec',
