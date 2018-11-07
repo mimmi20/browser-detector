@@ -1,6 +1,18 @@
 {
   "rules": {
-    "/(universetap|u16 max|u(?:10|22)|u7 plus|k10000(?: pro)?|k6000 (?:plus|pro)|k4000|wp5000)/i": "oukitel $1"
+    "/(universetap)/i": "oukitel $1",
+    "/(u22)/i": "oukitel $1",
+    "/(u16 max)/i": "oukitel $1",
+    "/(u10)/i": "oukitel $1",
+    "/(u7 plus)/i": "oukitel $1",
+    "/(k10000 max)/i": "oukitel $1",
+    "/(k10000 pro)/i": "oukitel $1",
+    "/(k10000)/i": "oukitel $1",
+    "/(k6000 plus)/i": "oukitel $1",
+    "/(k6000 pro)/i": "oukitel $1",
+    "/(k6000)/i": "oukitel $1",
+    "/(k4000)/i": "oukitel $1",
+    "/(wp5000)/i": "oukitel $1"
   },
   "generic": "general oukitel device"
 }
