@@ -384,6 +384,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/SGP[0-9]{3}|X[ML][0-9]{2}[th]/' => 'sony',
         '/(YU|AO)[0-9]{4}/' => 'yu',
         '/vodafone 890n/i' => 'yulong',
+        '/op109-4g/i' => 'elebest-germany',
         '/OP[0-9]{3}/' => 'olivetti',
         '/mt6515m-a1\+/i' => 'united',
         '/mt10b/i' => 'excelvan',
