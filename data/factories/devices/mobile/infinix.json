@@ -3,7 +3,20 @@
     "/x600-lte/i": "infinix x600 lte",
     "/x600|note 2/i": "infinix x600",
     "/buzz/i": "infinix buzz",
-    "/(zero 3|hot 4 (?:pro|lite)|x5515f|x60[68]b?|x573b?|x559c|x55[12]|x530|x510|x50[137]|x450|x401|x35[12])/i": "infinix $1"
+    "/(zero 3)/i": "infinix $1",
+    "/(hot 4 (?:pro|lite))/i": "infinix $1",
+    "/(x5515f)/i": "infinix $1",
+    "/(x60[68]b?)/i": "infinix $1",
+    "/(x573b?)/i": "infinix $1",
+    "/x572/i": "infinix x572",
+    "/(x559c)/i": "infinix $1",
+    "/(x55[12])/i": "infinix $1",
+    "/(x530)/i": "infinix $1",
+    "/(x510)/i": "infinix $1",
+    "/(x50[137])/i": "infinix $1",
+    "/(x450)/i": "infinix $1",
+    "/(x401)/i": "infinix $1",
+    "/(x35[12])/i": "infinix $1"
   },
   "generic": "general infinix device"
 }
