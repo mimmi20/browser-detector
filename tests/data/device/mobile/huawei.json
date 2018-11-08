@@ -13083,10 +13083,10 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Edge Mobile for Android",
       "modus": null,
-      "version": "67.0.3396.123",
-      "manufacturer": "Google",
+      "version": "42.0.0.2233",
+      "manufacturer": "Microsoft",
       "bits": 32,
       "type": "browser"
     },
@@ -13119,10 +13119,10 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Edge Mobile for Android",
       "modus": null,
-      "version": "67.0.3396.123",
-      "manufacturer": "Google",
+      "version": "42.0.0.2233",
+      "manufacturer": "Microsoft",
       "bits": 32,
       "type": "browser"
     },
@@ -13155,10 +13155,10 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Edge Mobile for Android",
       "modus": null,
-      "version": "67.0.3396.123",
-      "manufacturer": "Google",
+      "version": "42.0.0.2233",
+      "manufacturer": "Microsoft",
       "bits": 32,
       "type": "browser"
     },
@@ -13191,10 +13191,10 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Edge Mobile for Android",
       "modus": null,
-      "version": "67.0.3396.123",
-      "manufacturer": "Google",
+      "version": "42.0.0.2233",
+      "manufacturer": "Microsoft",
       "bits": 32,
       "type": "browser"
     },
@@ -18278,6 +18278,114 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; ATU-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "ATU-L21",
+      "marketingName": "Y6 Prime (2018)",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 720,
+      "resolutionHeight": 1440,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.80",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; PLE-701L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "PLE-701L",
+      "marketingName": "MediaPad T2 7.0 Pro LTE",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1920,
+      "resolutionHeight": 1200,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.80",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; PLE-703L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "PLE-703L",
+      "marketingName": "MediaPad T2 7.0 Pro LTE",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1920,
+      "resolutionHeight": 1200,
+      "dualOrientation": true,
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.80",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "Google",
       "bits": 32
     },

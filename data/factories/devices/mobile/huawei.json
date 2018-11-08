@@ -90,6 +90,7 @@
     "/(mya-(?:[at]l10|l0[23]|l[14]1|l2[23]))/i": "huawei $1",
     "/(c8816d)/i": "huawei $1",
     "/(c8817e)/i": "huawei $1",
+    "/(ple-70[13]l)/i": "huawei $1",
     "/bah-/i": {
       "/bah-l09/i": "huawei bah-l09",
       "/bah-w09/i": "huawei bah-w09"
