@@ -367,7 +367,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/TAB A742|TAB7iD|TAB 10Q|ZEN [0-9]/' => 'wexler',
         '/A1002|A811|S[45]A[0-9]|SC7 PRO HD/' => 'lexand',
         '/s750/i' => 'beneve',
-        '/ z110/i' => 'xido',
+        '/ z1[12]0/i' => 'xido',
         '/a727/i' => 'azpen',
         '/onda|v919 3g air|v10 4g/i' => 'onda',
         '/tm785m3/i' => 'nuvision',
