@@ -635,6 +635,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/m960/i' => 'modoex',
         '/ebm8000nd_211/i' => 'yifang',
         '/tx5/i' => 'winmax',
+        '/f888/i' => 'ouku',
         '/I5/' => 'sop',
         '/i5/' => 'vsun',
         '/KIN\.(One|Two)|ZuneHD|Windows NT 6\.(2|3).*ARM;/' => 'microsoft',
