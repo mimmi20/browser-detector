@@ -471,7 +471,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/ m8 /i' => 'amlogic',
         '/m601/i' => 'aoc',
         '/IM-[AT][0-9]{3}[LKS]|ADR910L/' => 'pantech',
-        '/SPX-[0-9]/' => 'simvalley',
+        '/SPX-[0-9]|SPT-940/' => 'simvalley',
         '/RG[0-9]{3}/' => 'ruggear',
         '/ap-105/i' => 'mitashi',
         '/AP-[0-9]{3}/' => 'assistant',
