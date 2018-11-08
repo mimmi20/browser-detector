@@ -1,6 +1,12 @@
 {
   "rules": {
-    "/(s[346]1|s[46]0|b15q?)/i": "caterpillar $1"
+    "/(s61)/i": "caterpillar $1",
+    "/(s60)/i": "caterpillar $1",
+    "/(s41)/i": "caterpillar $1",
+    "/(s40)/i": "caterpillar $1",
+    "/(s31)/i": "caterpillar $1",
+    "/(b15q)/i": "caterpillar $1",
+    "/(b15)/i": "caterpillar $1"
   },
   "generic": "general caterpillar device"
 }
