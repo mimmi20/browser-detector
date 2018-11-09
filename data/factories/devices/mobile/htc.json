@@ -1,6 +1,7 @@
 {
   "rules": {
-    "/(m10[fh])/i": "htc $1",
+    "/m10h/i": "htc m10h",
+    "/m10f/i": "htc m10f",
     "/2pxh3/i": "htc 2pxh3",
     "/2q4d100/i": "htc 2q4d100",
     "/po58220/i": "htc po58220",
@@ -24,6 +25,7 @@
     "/0pcv2/i": "htc 0pcv2",
     "/0pcv1/i": "htc 0pcv1",
     "/0pm92/i": "htc 0pm92",
+    "/d160lvwpp/i": "htc d160lvwpp",
     "/nexushd2|hd2_t8585|htc[ _]hd2/i": "htc t8585",
     "/nexus evohd2/i": "htc evo hd2",
     "/8x by htc|pm23300/i": "htc windows phone 8x",
@@ -100,6 +102,7 @@
     "/desire 728/i": "htc desire 728",
     "/desire[ _]700/i": "htc desire 700",
     "/desire 628/i": "htc desire 628",
+    "/desire[ _]626s/i": "htc desire 626s",
     "/desire 626gplus/i": "htc desire 626g plus",
     "/desire[ _]626g/i": "htc desire 626g",
     "/desire[ _]626/i": "htc desire 626",
