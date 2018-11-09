@@ -920,6 +920,20 @@
     },
     "engine": "unknown"
   },
+  "opera news": {
+    "name": "News",
+    "manufacturer": "Opera",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "News"
+      ]
+    },
+    "engine": null
+  },
   "perfect browser": {
     "name": "Perfect Browser",
     "manufacturer": "Unknown",

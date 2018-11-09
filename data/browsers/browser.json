@@ -2865,6 +2865,20 @@
     },
     "engine": null
   },
+  "quick browser": {
+    "name": "Quick Browser",
+    "manufacturer": "carlrogers",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QuickBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
   "quicklook": {
     "name": "QuickLook",
     "manufacturer": "Apple",
