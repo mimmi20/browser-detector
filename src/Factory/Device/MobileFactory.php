@@ -146,7 +146,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/htc|sprint (apa|atp)|adr(?!910l)[a-z0-9]+|nexushd2|amaze[ _]4g[);\/ ]|(desire|sensation|evo ?3d|incredibles|wildfire|butterfly)[ _]?([^;\/]+)( build|[;\/\)])|(amaze[ _]4g|(?<!gi|iph)one ?[xelsv\+]+)[);\/ ]|spv e6[05]0|one mini|one m8|x525a|pg86100|pc36100|xv6975|pj83100[);\/ ]|0pcv1|0pm92|2pyb2|0pja10|0pja2|t-mobile_espresso|mda[ _]|vpa_touch|(831c|a315c| x9|(?<!xolo|nexus|cubot|blu life) one|dream)( build|[;\/\)])|eris 2\.1/i' => 'htc',
         '/ac0731b|ac0732c|ac1024c|ac7803c|bc9710am|el72b|er71b|lc0720c|lc0723b|lc0725b|lc0804b|lc0808b|lc0809b|lc0810c|lc0816c|lc0901d|lc1016c|mt0724b|mt0729b|mt0729d|mt0739d|mt0811b|mt0812e|mt7801c|oc1020a|qs9719d|qs9718c|qs9715f|qs1023h|qs0815c|qs0730c|qs0728c|qs0717d|qs0716d|qs0715c|rc0709b|rc0710b|rc0718c|rc0719h|rc0721b|rc0722c|rc0726b|rc0734h|rc0743h|rc0813c|rc0817c|rc1018c|rc1019g|rc1025f|rc1301c|rc7802f|rc9711b|rc9712c|rc9716b|rc9717b|rc9724c|rc9726c|rc9727f|rc9730c|rc9731c|ts0807b|ts1013b|vm0711a|vm1017a/i' => '3q',
         '/uniscope/i' => 'uniscope',
-        '/lg(?!e)|lge(?! nexus)|g3mini|vs[0-9]{3}| g3 |p713|p509|c660 |(?<!s)(ls|vm|ln|us)[0-9]{3}|optimus g|l-0[0-9][cde]|lm-(g710|x410\.fn|x21[02])/i' => 'lg',
+        '/lg(?!e)|lge(?! nexus)|g3mini|vs[0-9]{3}| g3 |p713|p509|c660 |(?<!s)(ls|vm|ln|us)[0-9]{3}|optimus g|l-0[0-9][cde]|lm-(g710|x410\.fn|x21[02])|vk810 4g/i' => 'lg',
         '/sprint/i' => 'sprint',
         '/videocon/i' => 'videocon',
         '/gigaset|gs5[357]-6|gs185|gs[23]70/i' => 'gigaset',
