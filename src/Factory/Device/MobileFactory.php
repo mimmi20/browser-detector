@@ -540,7 +540,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/uhappy|up720|up580|up520|up350|up320/i' => 'uhappy',
         '/m9c max/i' => 'bqeel',
         '/qt-10/i' => 'qmax',
-        '/ilium l820/i' => 'lanix',
+        '/ilium (l820|s106)/i' => 'lanix',
         '/s501m 3g|t700i_3g/i' => 'fourgood',
         '/ixion_es255|h135/i' => 'dexp',
         '/atl-[23]1/i' => 'artizlee',
