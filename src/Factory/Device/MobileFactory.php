@@ -129,7 +129,7 @@ class MobileFactory implements DeviceFactoryInterface
         '/micromax[ \-\_]?[a-z0-9]+|(p70221|a121|a120|a116|a114|a093|a065| a96| a50| a47|q327)( build|[;\/\)])|mid1014/i' => 'micromax',
         '/smartpad7503g|smartpad970s2(3g)?|m[_\-][mps]p[0-9a-z]+|m-ipro[0-9a-z]+/i' => 'mediacom',
         '/bmobile[ _]|ax-?[0-9]{3}/i' => 'bmobile',
-        '/zte|racer|nubia|smart ?(tab(10|7)|4g|ultra 6)|orange (hi 4g|reyo)|beeline pro|lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q|blade|momodesign md droid|[ \-]a310(?!e)|atlas[_ ]w|base tab|kis plus|n799d|n817|n9101|n9136|n9180|n9510|n951[57]|n9520|n9521|n9810|n918st|n958st|nx[0-9]{2,3}|open[c2]|u9180| v9 |v788d|v8000|v9180|x501|x920|z221|z23[23]|z353vl|z558vl|z71[78]|z768g|z79[289]|z81[25]|z82[08]|z83[123569]|z85[125]|z86[12]|z899vl|z91[67]|z95[589]|z965|z97[018]|z98[12367](dl)?|z999/i' => 'zte', // must be before orange and acer
+        '/zte|racer|nubia|smart ?(tab(10|7)|4g|ultra 6)|orange (hi 4g|reyo)|beeline pro|lutea|bs 451|n9132|grand s flex|e8q\+|s8q|s7q|blade|momodesign md droid|[ \-]a310(?!e)|atlas[_ ]w|base tab|kis plus|n799d|n817|n9101|n9136|n9180|n9510|n951[579]|n9520|n9521|n9810|n918st|n958st|nx[0-9]{2,3}|open[c2]|u9180| v9 |v788d|v8000|v9180|x501|x920|z221|z23[23]|z353vl|z558vl|z71[78]|z768g|z79[289]|z81[25]|z82[08]|z83[123569]|z85[125]|z86[12]|z899vl|z91[67]|z95[5689]|z965|z97[018]|z98[12367](dl)?|z999/i' => 'zte', // must be before orange and acer
         '/smart tab 4(?!g)|vfd [0-9]{3}|985n|vodafone smart 4 max|smart 4 turbo|vodafone 975(?!n)|vodacom/i' => 'vodafone',
         '/qmobile|q-smart|qtab| x900 /i' => 'qmobile', // must be before acer
         '/shield tablet/i' => 'nvidia',
