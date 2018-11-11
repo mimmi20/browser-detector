@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
-use BrowserDetector\Helper;
 use Stringy\Stringy;
 
 /**
@@ -47,10 +46,6 @@ class Desktop
             return true;
         }
 
-        if ($this->useragent->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
-            return false;
-        }
-
         // ignore mobile safari token if windows nt token is available
         if ($this->useragent->contains('windows nt', false)
             && $this->useragent->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
@@ -58,57 +53,17 @@ class Desktop
             return true;
         }
 
-        $noDesktops = [
-            'new-sogou-spider',
-            'zollard',
-            'socialradarbot',
-            'microsoft office protocol discovery',
-            'powermarks',
-            'archivebot',
-            'dino762',
-            'marketwirebot',
-            'microsoft-cryptoapi',
-            'pad-bot',
-            'terra_101',
-            'butterfly',
-            'james bot',
-            'winhttp',
-            'jobboerse',
-            '<',
-            '>',
-            'online-versicherungsportal.info',
-            'versicherungssuchmaschine.net',
-            'crkey',
-            'netcast',
-        ];
-
-        if ($this->useragent->containsAny($noDesktops, false)) {
+        if (preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:/i', (string) $this->useragent)) {
             return false;
         }
 
-        $othersDesktops = [
-            'revolt',
-            'akregator',
-            'installatron',
-            'lynx',
-            'camino',
-            'osf1',
-            'barca',
-            'the bat!',
-            'hp-ux',
-            'hpux',
-            'beos',
-        ];
-
-        if ($this->useragent->containsAny($othersDesktops, false)) {
+        // windows
+        if (preg_match('/davclnt|revolt|microsoft outlook|wmplayer|lavf|nsplayer|windows|win(10|8|7|vista|xp|2000|98|95|nt|3[12]|me|9x)|barca|cygwin|the bat!/i', (string) $this->useragent)) {
             return true;
         }
 
-        if ((new Helper\Windows($this->useragent))->isWindows()) {
-            return true;
-        }
-
-        if ((new Helper\Linux($this->useragent))->isLinux()) {
+        // linux
+        if (preg_match('/linux|debian|ubuntu|cros|tinybrowser/i', (string) $this->useragent)) {
             return true;
         }
 
@@ -117,16 +72,26 @@ class Desktop
             return true;
         }
 
-        $desktopCodes = [
+        $othersDesktops = [
             // BSD
             'freebsd',
             'openbsd',
             'netbsd',
             'bsd four',
-            // others
+            // other platforms
             'os/2',
             'warp',
             'sunos',
+            'hp-ux',
+            'hpux',
+            'beos',
+            'irix',
+            'solaris',
+            'openvms',
+            'aix',
+            'esx',
+            'unix',
+            // desktop apps
             'w3m',
             'google desktop',
             'eeepc',
@@ -143,12 +108,23 @@ class Desktop
             'nsplayer',
             'msfrontpage',
             'ms frontpage',
+            'revolt',
+            'akregator',
+            'installatron',
+            'lynx',
+            'camino',
+            'osf1',
+            'barca',
+            'the bat!',
+            'libvlc',
+            'openvas',
+            'gvfs',
         ];
 
-        if (!$this->useragent->containsAny($desktopCodes, false)) {
-            return false;
+        if ($this->useragent->containsAny($othersDesktops, false)) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 }

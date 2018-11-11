@@ -13,9 +13,6 @@ namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
 
-/**
- * a helper to detect windows
- */
 class Linux
 {
     /**

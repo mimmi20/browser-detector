@@ -42,37 +42,24 @@ class MobileDevice
     {
         $noMobiles = [
             'xbox',
-            'badab',
-            'badap',
-            'simbar',
-            'google-tr',
-            'googlet',
-            'google wireless transcoder',
+            'googletv',
             'eeepc',
-            'i9988_custom',
-            'i9999_custom',
-            'wuid=',
             'smart-tv',
             'smarttv',
             'sonydtv',
             'hbbtv',
-            'dolphin http client',
             'gxt_dongle_3188',
             'apple tv',
             'mxl661l32',
             'nettv',
-            'commoncrawler',
-            '<',
-            '>',
-            'ipodder',
-            'tripadvisor',
-            'nokia wap gateway',
             'crkey',
             'lenovog780',
             'windows iot',
             'netcast',
             'raspbian',
             'bravia',
+            'tablet pc 2.0',
+            'automobile',
         ];
 
         if ($this->useragent->containsAny($noMobiles, false)) {
@@ -209,6 +196,8 @@ class MobileDevice
             'remixos',
             'micromax',
             'steelcore',
+            'tablet',
+            'mobile',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {
@@ -219,23 +208,11 @@ class MobileDevice
             return true;
         }
 
-        if ($this->useragent->contains('tablet', false)
-            && !$this->useragent->contains('tablet pc', false)
-        ) {
-            return true;
-        }
-
-        if ($this->useragent->contains('mobile', false)
-            && !$this->useragent->contains('automobile', false)
-        ) {
-            return true;
-        }
-
         if (preg_match('/Puffin\/[\d\.]+WD/', (string) $this->useragent)) {
             return false;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+[AIWM][TP]?/', (string) $this->useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+[WM][TP]?/', (string) $this->useragent)) {
             return true;
         }
 

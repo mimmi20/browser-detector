@@ -74,8 +74,47 @@ class DeviceFactory implements DeviceFactoryInterface
     {
         $s = new Stringy($useragent);
 
-        if (!$s->containsAny(['freebsd', 'raspbian'], false)
-            && $s->containsAny(['darwin', 'cfnetwork'], false)
+        $unknownDevices = [
+            'new-sogou-spider',
+            'zollard',
+            'socialradarbot',
+            'microsoft office protocol discovery',
+            'powermarks',
+            'archivebot',
+            'marketwirebot',
+            'microsoft-cryptoapi',
+            'pad-bot',
+            'james bot',
+            'winhttp',
+            'jobboerse',
+            '<',
+            '>',
+            'online-versicherungsportal.info',
+            'versicherungssuchmaschine.net',
+            'microsearch',
+            'microsoft data access',
+            'microsoft url control',
+            'infegyatlas',
+            'msie or firefox mutant',
+            'semantic-visions.com crawler',
+            'labs.topsy.com/butterfly',
+            'dolphin http client',
+            'google wireless transcoder',
+            'commoncrawler',
+            'ipodder',
+            'tripadvisor',
+            'nokia wap gateway',
+        ];
+
+        if ($s->containsAny($unknownDevices, false)) {
+            $loaderFactory = $this->loaderFactory;
+            $loader        = $loaderFactory('unknown', 'unknown');
+
+            return $loader($useragent);
+        }
+
+        if (!preg_match('/freebsd|raspbian/i', $useragent)
+            && preg_match('/darwin|cfnetwork/i', $useragent)
         ) {
             $factory = $this->darwinFactory;
 
