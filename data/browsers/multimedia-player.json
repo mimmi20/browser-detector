@@ -109,6 +109,20 @@
     },
     "engine": "unknown"
   },
+  "lg player": {
+    "name": "LG Player",
+    "manufacturer": "Lg",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LG Player"
+      ]
+    },
+    "engine": "blink"
+  },
   "quicktime": {
     "name": "Quicktime",
     "manufacturer": "Apple",

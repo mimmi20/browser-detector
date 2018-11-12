@@ -1,6 +1,8 @@
 {
   "rules": {
-    "/ (z[679]0) /i": "lava $1",
+    "/ (z90) /i": "lava z90",
+    "/ (z70) /i": "lava z70",
+    "/ (z60) /i": "lava z60",
     "/x41 plus/i": "lava x41 plus",
     "/ x17 /i": "lava x17",
     "/iris fuel60/i": "lava iris fuel60",
@@ -13,6 +15,7 @@
     "/iris x8 l/i": "lava iris x8l",
     "/iris x1/i": "lava iris x1",
     "/iris_?78w/i": "lava iris 78w",
+    "/iris ?750/i": "lava iris 750",
     "/iris700/i": "lava iris 700",
     "/iris_?504q/i": "lava iris 504q",
     "/iris_?501/i": "lava iris 501",

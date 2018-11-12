@@ -6916,15 +6916,15 @@
       "user-agent": "Mozilla/5.0 (X11; compatible; semantic-visions.com crawler; HTTPClient 3.1)"
     },
     "device": {
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
+      "deviceName": null,
+      "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
+      "pointingMethod": null,
       "resolutionWidth": null,
       "resolutionHeight": null,
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "unknown"
     },
     "browser": {
       "name": "semantic-visions.com crawler",
@@ -24224,6 +24224,42 @@
     "engine": {
       "name": "WebKit",
       "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Facebook/128807583 CFNetwork/902.2 Darwin/17.7.0"
+    },
+    "device": {
+      "deviceName": "general Apple Device",
+      "marketingName": "general Apple Device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Facebook",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.4.0",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "902.2.0",
       "manufacturer": "Apple"
     }
   }

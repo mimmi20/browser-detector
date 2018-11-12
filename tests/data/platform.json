@@ -1012,15 +1012,15 @@
       "user-agent": "Mozilla/4.77C-SGI [en] (X11; I; IRIX64 6.5 IP30)"
     },
     "device": {
-      "deviceName": null,
-      "marketingName": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
+      "pointingMethod": "mouse",
       "resolutionWidth": null,
       "resolutionHeight": null,
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "desktop"
     },
     "browser": {
       "name": "Mozilla",
@@ -3820,21 +3820,21 @@
       "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.8) Gecko/20100215 Solaris/10.1 (GNU) Superswan/3.5.8 (Byte/me)"
     },
     "device": {
-      "deviceName": null,
-      "marketingName": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
+      "pointingMethod": "mouse",
       "resolutionWidth": null,
       "resolutionHeight": null,
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "desktop"
     },
     "browser": {
-      "name": "Mozilla",
+      "name": "Superswan",
       "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "MozillaFoundation",
+      "version": "3.5.8",
+      "manufacturer": "Unknown",
       "bits": 64,
       "type": "browser"
     },
@@ -4000,15 +4000,15 @@
       "user-agent": "Mozilla/4.0 (compatible; MSIE 5.0; UNIX) Opera 6.11 [en]"
     },
     "device": {
-      "deviceName": null,
-      "marketingName": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
+      "pointingMethod": "mouse",
       "resolutionWidth": null,
       "resolutionHeight": null,
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "desktop"
     },
     "browser": {
       "name": "Opera",
@@ -4576,15 +4576,15 @@
       "user-agent": "Mozilla/5.0 (Unknown; UNIX BSD/SYSV system) AppleWebKit/538.1 (KHTML, like Gecko) QupZilla/1.7.0 Safari/538.1"
     },
     "device": {
-      "deviceName": null,
-      "marketingName": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
+      "pointingMethod": "mouse",
       "resolutionWidth": null,
       "resolutionHeight": null,
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "desktop"
     },
     "browser": {
       "name": "QupZilla",
@@ -4612,15 +4612,15 @@
       "user-agent": "Opera/9.25 (OpenSolaris; U; en)"
     },
     "device": {
-      "deviceName": null,
-      "marketingName": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
+      "pointingMethod": "mouse",
       "resolutionWidth": null,
       "resolutionHeight": null,
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "desktop"
     },
     "browser": {
       "name": "Opera",
@@ -4641,42 +4641,6 @@
       "name": "Presto",
       "version": "0.0.0",
       "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; Remix SK1W)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "Unknown",
-      "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "41.0.2272.89",
-      "manufacturer": "Google",
-      "bits": 64,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Remix OS",
-      "marketingName": "Remix OS",
-      "version": "0.0.0",
-      "manufacturer": "Jide",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "Google"
     }
   },
   {

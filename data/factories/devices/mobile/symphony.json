@@ -1,6 +1,15 @@
 {
   "rules": {
-    "/(h400|h150|w128|w90|w82|w72|w68|l102|i10|p7 pro)/i": "symphony $1"
+    "/h400/i": "symphony h400",
+    "/h150/i": "symphony h150",
+    "/w128/i": "symphony w128",
+    "/w90/i": "symphony w90",
+    "/w82/i": "symphony w82",
+    "/w72/i": "symphony w72",
+    "/w68/i": "symphony w68",
+    "/l102/i": "symphony l102",
+    "/i10/i": "symphony i10",
+    "/p7 pro/i": "symphony p7 pro"
   },
   "generic": "general symphony device"
 }

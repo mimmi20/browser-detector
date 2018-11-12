@@ -38,34 +38,6 @@ class Tv
      */
     public function isTvDevice(): bool
     {
-        if ($this->useragent->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
-            return false;
-        }
-
-        $noTvs = [
-            'new-sogou-spider',
-            'zollard',
-            'socialradarbot',
-            'microsoft office protocol discovery',
-            'powermarks',
-            'archivebot',
-            'dino762',
-            'marketwirebot',
-            'microsoft-cryptoapi',
-            'pad-bot',
-            'terra_101',
-            'butterfly',
-            'james bot',
-            'winhttp',
-            'jobboerse',
-            '<',
-            '>',
-        ];
-
-        if ($this->useragent->containsAny($noTvs, false)) {
-            return false;
-        }
-
         $tvDevices = [
             'boxee',
             'ce-html',
@@ -100,10 +72,10 @@ class Tv
             'netcast',
         ];
 
-        if (!$this->useragent->containsAny($tvDevices, false)) {
-            return false;
+        if ($this->useragent->containsAny($tvDevices, false)) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 }

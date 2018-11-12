@@ -36,6 +36,7 @@ class DesktopFactory implements DeviceFactoryInterface
         '/surfbook w1/i' => 'trekstor',
         '/freebsd/i' => 'unknown',
         '/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i' => 'apple',
+        '/remix sk1w/i' => 'jide',
     ];
 
     /**

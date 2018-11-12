@@ -167,6 +167,18 @@
     },
     "engine": null
   },
+  "aw browser": {
+    "name": "AW Browser",
+    "manufacturer": "Gramvis Lab",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
   "motorola webkit": {
     "name": "Motorola Webkit",
     "manufacturer": "Motorola",
@@ -933,6 +945,34 @@
       ]
     },
     "engine": "edge"
+  },
+  "edge mobile for android": {
+    "name": "Edge Mobile for Android",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "EdgA"
+      ]
+    },
+    "engine": "blink"
+  },
+  "edge mobile for ios": {
+    "name": "Edge Mobile for iOS",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "EdgiOS"
+      ]
+    },
+    "engine": "webkit"
   },
   "element browser": {
     "name": "Element Browser",
@@ -2065,6 +2105,20 @@
     },
     "engine": null
   },
+  "mobile iron": {
+    "name": "Iron Mobile",
+    "manufacturer": "Srware",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MobileIron"
+      ]
+    },
+    "engine": null
+  },
   "mobile safari uiwebview": {
     "name": "Mobile Safari UIWebView",
     "manufacturer": "Apple",
@@ -2810,6 +2864,20 @@
       ]
     },
     "engine": null
+  },
+  "quick browser": {
+    "name": "Quick Browser",
+    "manufacturer": "carlrogers",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QuickBrowser"
+      ]
+    },
+    "engine": "blink"
   },
   "quicklook": {
     "name": "QuickLook",

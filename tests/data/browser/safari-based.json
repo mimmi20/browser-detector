@@ -2010,9 +2010,9 @@
       "bits": 32
     },
     "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown"
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -8780,6 +8780,150 @@
     "engine": {
       "name": "WebKit",
       "version": "605.1.15",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AWBrowser/425 CFNetwork/974.2.1 Darwin/18.0.0"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "pointingMethod": "mouse",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": false,
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "AW Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Gramvis Lab",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.0.0",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "974.2.1",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A404 MobileIron/2.5.0 Version/12.0.1 Safari/605.1.15"
+    },
+    "device": {
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 1024,
+      "resolutionHeight": 768,
+      "dualOrientation": true,
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Iron Mobile",
+      "modus": null,
+      "version": "2.5.0",
+      "manufacturer": "Srware",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.0.1",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 EdgiOS/42.3.6 Mobile/16A5327f Safari/605.1.15"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": 320,
+      "resolutionHeight": 480,
+      "dualOrientation": true,
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Edge Mobile for iOS",
+      "modus": null,
+      "version": "42.3.6",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.0.0-beta+4",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3;) AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Opera News/1.0"
+    },
+    "device": {
+      "deviceName": "general Mobile Device",
+      "marketingName": "general Mobile Device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "pointingMethod": "touchscreen",
+      "resolutionWidth": null,
+      "resolutionHeight": null,
+      "dualOrientation": true,
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "News",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
       "manufacturer": "Apple"
     }
   }

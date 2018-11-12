@@ -1,6 +1,16 @@
 {
   "rules": {
-    "/(if9031|if9021|vzh|m810u|m535|m430|m370i|m350|m320m|m310|m2)/i": "infocus $1"
+    "/if9031/i": "infocus if9031",
+    "/if9021/i": "infocus if9021",
+    "/vzh/i": "infocus vzh",
+    "/m810u/i": "infocus m810u",
+    "/m535/i": "infocus m535",
+    "/m430/i": "infocus m430",
+    "/m370i/i": "infocus m370i",
+    "/m350/i": "infocus m350",
+    "/m320m/i": "infocus m320m",
+    "/m310/i": "infocus m310",
+    "/m2/i": "infocus m2"
   },
   "generic": "general infocus device"
 }

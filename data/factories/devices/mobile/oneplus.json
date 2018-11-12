@@ -1,6 +1,18 @@
 {
   "rules": {
-    "/(a600[30]|a5010|a5000|a3010|a300[03]|a200[135]|a0001|e100[13])/i": "oneplus $1",
+    "/a6003/i": "oneplus a6003",
+    "/a6000/i": "oneplus a6000",
+    "/a5010/i": "oneplus a5010",
+    "/a5000/i": "oneplus a5000",
+    "/a3010/i": "oneplus a3010",
+    "/a3003/i": "oneplus a3003",
+    "/a3000/i": "oneplus a3000",
+    "/a2005/i": "oneplus a2005",
+    "/a2003/i": "oneplus a2003",
+    "/a2001/i": "oneplus a2001",
+    "/a0001/i": "oneplus a0001",
+    "/e1003/i": "oneplus e1003",
+    "/e1001/i": "oneplus e1001",
     "/oneplus ?3/i": "oneplus 3"
   },
   "generic": "general oneplus device"

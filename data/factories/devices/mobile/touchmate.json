@@ -1,13 +1,13 @@
 {
   "rules": {
-    "/(tm-mid1020a)/i": "touchmate $1",
-    "/(tm-mid798)/i": "touchmate $1",
-    "/(tm-mid792)/i": "touchmate $1",
-    "/(tm-mid788d)/i": "touchmate $1",
-    "/(tm-mid710)/i": "touchmate $1",
-    "/(tm-sm540)/i": "touchmate $1",
-    "/(tm-sm500n)/i": "touchmate $1",
-    "/(tm-sm410)/i": "touchmate $1"
+    "/tm-mid1020a/i": "touchmate tm-mid1020a",
+    "/tm-mid798/i": "touchmate tm-mid798",
+    "/tm-mid792/i": "touchmate tm-mid792",
+    "/tm-mid788d/i": "touchmate tm-mid788d",
+    "/tm-mid710/i": "touchmate tm-mid710",
+    "/tm-sm540/i": "touchmate tm-sm540",
+    "/tm-sm500n/i": "touchmate tm-sm500n",
+    "/tm-sm410/i": "touchmate tm-sm410"
   },
   "generic": "general touchmate device"
 }
