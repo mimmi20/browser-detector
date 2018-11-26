@@ -11,7 +11,13 @@
 declare(strict_types = 1);
 namespace UserAgentsTest;
 
+use BrowserDetector\Cache\Cache;
+use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
+use BrowserDetector\Factory\BrowserFactory;
+use BrowserDetector\Factory\DeviceFactory;
+use BrowserDetector\Factory\EngineFactory;
+use BrowserDetector\Factory\PlatformFactory;
 use ExceptionalJSON\DecodeErrorException;
 use ExceptionalJSON\EncodeErrorException;
 use JsonClass\Json;
@@ -73,13 +79,12 @@ class DetectorTest extends TestCase
         $cache = new NullCache();
 
         /** @var NullLogger $logger */
-        $factory = new DetectorFactory($cache, $logger);
+        $deviceFactory   = new DeviceFactory($logger);
+        $platformFactory = new PlatformFactory($logger);
+        $browserFactory  = new BrowserFactory($logger);
+        $engineFactory   = new EngineFactory($logger);
 
-        $object = $factory();
-        $prop   = new \ReflectionProperty($object, 'logger');
-        $prop->setAccessible(true);
-        $prop->setValue($object, $logger);
-        $this->object = $object;
+        $this->object = new Detector($logger, new Cache($cache), $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
     }
 
     /**
