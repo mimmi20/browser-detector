@@ -114,10 +114,6 @@ class GenericLoader implements GenericLoaderInterface
                 throw new \InvalidArgumentException(sprintf('An error occured while matching rule "%s"', $search), 0, $e);
             }
 
-            if (is_array($key)) {
-                return $this->detectInArray($key, $generic, $useragent);
-            }
-
             return $this->load(mb_strtolower(trim(preg_replace($search, $key, $matches[0]))), $useragent);
         }
 
