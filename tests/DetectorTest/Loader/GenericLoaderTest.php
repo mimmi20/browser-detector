@@ -124,14 +124,8 @@ class GenericLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getRules')
             ->will(self::returnValue([
-                                         '/sm\-/i' => [
-                                             '/sm\-s/i' => [
-                                                 '/sm\-s820l/i' => 'samsung sm-s820l',
-                                             ],
-                                             '/sm\-z/i' => [
-                                                 '/sm\-z130h/i' => 'samsung sm-z130h',
-                                             ],
-                                         ],
+                                         '/sm-s820l/i' => 'samsung sm-s820l',
+                                         '/sm-z130h/i' => 'samsung sm-z130h',
                                      ]));
 
         $initRules
@@ -379,14 +373,8 @@ class GenericLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getRules')
             ->will(self::returnValue([
-                                         '/sm-/i' => [
-                                             '/sm-s/i' => [
-                                                 '/sm-s820l/i' => 'samsung sm-s820l',
-                                             ],
-                                             '/sm-z/i' => [
-                                                 '/(sm-z130h/i' => 'samsung sm-z130h',
-                                             ],
-                                         ],
+                                         '/sm-s820l/i' => 'samsung sm-s820l',
+                                         '/(sm-z130h/i' => 'samsung sm-z130h',
                                      ]));
 
         $initRules
