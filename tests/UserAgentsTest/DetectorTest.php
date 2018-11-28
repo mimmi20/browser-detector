@@ -13,7 +13,6 @@ namespace UserAgentsTest;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Detector;
-use BrowserDetector\DetectorFactory;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\EngineFactory;
