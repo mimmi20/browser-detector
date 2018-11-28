@@ -62,7 +62,7 @@
     "/ipad2[c,_]2/i": "apple ipad 2,2",
     "/ipad2[c,_]1/i": "apple ipad 2,1",
     "/ipad1[c,_]1/i": "apple ipad 1,1",
-    "/ipad/i": "apple ipad",
+    "/ipad|puffin\\/[\\d\\.]+it/i": "apple ipad",
     "/iph(?:one)?11[c,_]8/i": "apple iphone 11,8",
     "/iph(?:one)?11[c,_]6/i": "apple iphone 11,6",
     "/iph(?:one)?11[c,_]4/i": "apple iphone 11,4",
@@ -95,9 +95,7 @@
     "/iph(?:one)?2[c,_]1/i": "apple iphone 2,1",
     "/iph(?:one)?1[c,_]2/i": "apple iphone 1,2",
     "/iph(?:one)?1[c,_]1/i": "apple iphone 1,1",
-    "/iph/i": "apple iphone",
-    "/Puffin\\/[\\d\\.]+IP/": "apple iphone",
-    "/Puffin\\/[\\d\\.]+IT/": "apple ipad"
+    "/iph|puffin\\/[\\d\\.]+ip/i": "apple iphone"
   },
   "generic": "general apple device"
 }

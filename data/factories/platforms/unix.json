@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/hp\\-?ux/i": "hp-ux",
+    "/hp-?ux/i": "hp-ux",
     "/irix/i": "irix",
     "/aix/i": "aix",
     "/(tru64|digital) unix/i": "tru64 unix",

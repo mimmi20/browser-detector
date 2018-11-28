@@ -1,7 +1,6 @@
 {
   "rules": {
-    "/ft 4008/i": "lifeware ft-4008",
-    "/ft_4008/i": "lifeware ft-4008"
+    "/ft[_ ]4008/i": "lifeware ft-4008"
   },
   "generic": "general lifeware device"
 }

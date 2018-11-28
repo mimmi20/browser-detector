@@ -6,8 +6,7 @@
     "/macbook/i": "macbook",
     "/macmini/i": "mac mini",
     "/macpro/i": "macpro",
-    "/powermac/i": "powermac",
-    "/power%20macintosh/i": "powermac"
+    "/powermac|power%20macintosh/i": "powermac"
   },
   "generic": "macintosh"
 }
