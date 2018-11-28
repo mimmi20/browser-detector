@@ -1,13 +1,9 @@
 {
   "rules": {
-    "/technipad_10\\-3g/i": "technisat technipad 10 3g",
-    "/technipad 10\\-3g/i": "technisat technipad 10 3g",
-    "/technipad_10/i": "technisat technipad 10",
-    "/technipad 10/i": "technisat technipad 10",
-    "/aqipad_7g/i": "technisat aqiston aqipad 7g",
-    "/aqipad 7g/i": "technisat aqiston aqipad 7g",
-    "/techniphone_5/i": "technisat techniphone 5",
-    "/techniphone 5/i": "technisat techniphone 5"
+    "/technipad[_ ]10-3g/i": "technisat technipad 10 3g",
+    "/technipad[_ ]10/i": "technisat technipad 10",
+    "/aqipad[_ ]7g/i": "technisat aqiston aqipad 7g",
+    "/techniphone[_ ]5/i": "technisat techniphone 5"
   },
   "generic": "general technisat device"
 }

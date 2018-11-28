@@ -1,12 +1,8 @@
 {
   "rules": {
-    "/iphone 6c/i": "xianghe iphone 6c",
-    "/iphone6c/i": "xianghe iphone 6c",
-    "/iphone 5c/i": "xianghe iphone 5c",
-    "/iphone5c/i": "xianghe iphone 5c",
-    "/iphone 5/i": "xianghe iphone 5",
-    "/iphone_5/i": "xianghe iphone 5",
-    "/iphone5/i": "xianghe iphone 5",
+    "/iphone[_ ]?6c/i": "xianghe iphone 6c",
+    "/iphone[_ ]?5c/i": "xianghe iphone 5c",
+    "/iphone[_ ]?5/i": "xianghe iphone 5",
     "/iphone/i": "xianghe iphone"
   },
   "generic": "general xianghe device"

@@ -1,11 +1,9 @@
 {
   "rules": {
-    "/at10pe\\-a/i": "toshiba at10pe-a",
-    "/at10le\\-a/i": "toshiba at10le-a",
+    "/at10pe-a/i": "toshiba at10pe-a",
+    "/at10le-a/i": "toshiba at10le-a",
     "/toshiba[\\/\\-]tg01/i": "toshiba tg01",
-    "/folio_and_a/i": "toshiba folio 100",
-    "/toshiba_ac_and_az/i": "toshiba folio 100",
-    "/folio100/i": "toshiba folio 100",
+    "/folio_and_a|toshiba_ac_and_az|folio100/i": "toshiba folio 100",
     "/at830/i": "toshiba at830",
     "/at703/i": "toshiba at703",
     "/at570/i": "toshiba at570",
@@ -22,11 +20,11 @@
     "/at270/i": "toshiba at270",
     "/at200/i": "toshiba at200",
     "/at100/i": "toshiba at100",
-    "/at10\\-a/i": "toshiba at10-a",
+    "/at10-a/i": "toshiba at10-a",
     "/at1s0/i": "toshiba at1s0",
-    "/t\\-02d/i": "toshiba t-02d",
-    "/t\\-01d/i": "toshiba t-01d",
-    "/t\\-01c/i": "toshiba t-01c"
+    "/t-02d/i": "toshiba t-02d",
+    "/t-01d/i": "toshiba t-01d",
+    "/t-01c/i": "toshiba t-01c"
   },
   "generic": "general toshiba device"
 }
