@@ -43,7 +43,7 @@ class EngineLoaderFactory
 
         if (null === $loader) {
             $dataPath  = __DIR__ . '/../../data/engines';
-            $rulesPath = __DIR__ . '/../../data/factories/engines.json';
+            $rulesPath = __DIR__ . '/../../data/factories/engines/engines.json';
 
             $finder = new Finder();
             $finder->files();

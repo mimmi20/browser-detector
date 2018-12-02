@@ -1,7 +1,7 @@
 {
   "rules": {
     "/edge/i": "edge",
-    "/chrome|crmo|chr0me/i": "blink",
+    "/chr[o0]me|crmo/i": "blink",
     "/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i": "webkit",
     "/iOS/": "webkit",
     "/presto\\/|opera/i": "presto",

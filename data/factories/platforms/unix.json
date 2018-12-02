@@ -3,8 +3,7 @@
     "/hp-?ux/i": "hp-ux",
     "/irix/i": "irix",
     "/aix/i": "aix",
-    "/(tru64|digital) unix/i": "tru64 unix",
-    "/osf1/i": "tru64 unix",
+    "/(tru64|digital) unix|osf1/i": "tru64 unix",
     "/openvms/i": "openvms"
   },
   "generic": "unix"

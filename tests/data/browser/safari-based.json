@@ -7079,9 +7079,9 @@
       "type": "application"
     },
     "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.12.6",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.2",
       "manufacturer": "Apple",
       "bits": 32
     },
@@ -7115,9 +7115,9 @@
       "type": "email-client"
     },
     "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.12.5",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.0",
       "manufacturer": "Apple",
       "bits": 32
     },
@@ -7151,9 +7151,9 @@
       "type": "browser"
     },
     "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.12.6",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.2",
       "manufacturer": "Apple",
       "bits": 32
     },
@@ -7259,9 +7259,9 @@
       "type": "application"
     },
     "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.12.6",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.2",
       "manufacturer": "Apple",
       "bits": 32
     },
@@ -8788,15 +8788,15 @@
       "user-agent": "AWBrowser/425 CFNetwork/974.2.1 Darwin/18.0.0"
     },
     "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
+      "deviceName": "general Apple Device",
+      "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
+      "pointingMethod": "touchscreen",
       "resolutionWidth": null,
       "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "AW Browser",
