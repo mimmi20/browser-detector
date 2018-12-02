@@ -1,8 +1,7 @@
 {
   "rules": {
     "/nucleus/i": "nucleus os",
-    "/MRE/": "mre",
-    "/maui runtime/i": "mre"
+    "/mre|maui runtime/i": "mre"
   },
   "generic": "java"
 }

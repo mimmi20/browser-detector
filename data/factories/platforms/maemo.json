@@ -1,12 +1,8 @@
 {
   "rules": {
-    "/bada/i": "bada",
     "/meego/i": "meego",
     "/sailfish/i": "sailfishos",
-    "/maemo/i": "linux smartphone os (maemo)",
-    "/like android/i": "linux smartphone os (maemo)",
-    "/gt-s5380/i": "bada",
-    "/s8500/i": "bada",
+    "/bada|gt-s5380|s8500/i": "bada",
     "/remix/i": "remixos"
   },
   "generic": "linux smartphone os (maemo)"

@@ -302,6 +302,18 @@
       ]
     }
   },
+  "xubuntu": {
+    "name": "Xubuntu",
+    "marketingName": "Xubuntu",
+    "manufacturer": "Canonical",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Xubuntu",
+        "xubuntu"
+      ]
+    }
+  },
   "lg webos": {
     "name": "webOS",
     "marketingName": "webOS",

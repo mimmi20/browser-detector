@@ -1,11 +1,8 @@
 {
   "rules": {
-    "/series ?60/i": "series60",
-    "/s60v3/i": "series60",
-    "/s60v5/i": "series60",
-    "/series ?40/i": "series40",
+    "/series ?60|s60v[35]/i": "series60",
     "/series ?30/i": "series30",
-    "/nokia7230/i": "series40"
+    "/series ?40|nokia7230/i": "series40"
   },
   "generic": "symbian"
 }

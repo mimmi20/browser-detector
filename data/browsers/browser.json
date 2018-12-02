@@ -22,8 +22,34 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Mb2345Browser",
-        "2345Explorer",
+        "Mb2345Browser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "2345 explorer": {
+    "name": "2345 Explorer",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "2345Explorer"
+      ]
+    },
+    "engine": "blink"
+  },
+  "2345 chrome": {
+    "name": "2345 Chrome",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
         "2345chrome v",
         "2345chrome"
       ]
