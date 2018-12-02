@@ -1,16 +1,4 @@
 {
-  "advent p10an01": {
-    "codename": "P10AN01",
-    "marketingName": "Vega",
-    "manufacturer": "Advent",
-    "brand": "Advent",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
-  },
   "general advent device": {
     "codename": "general Advent Device",
     "marketingName": "general Advent Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "advent p10an01": {
+    "codename": "P10AN01",
+    "marketingName": "Vega",
+    "manufacturer": "Advent",
+    "brand": "Advent",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true
   }
 }

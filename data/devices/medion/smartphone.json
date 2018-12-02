@@ -1,4 +1,28 @@
 {
+  "medion b5532": {
+    "codename": "B5532",
+    "marketingName": "B5532",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true
+  },
+  "medion e4002": {
+    "codename": "Life E4002",
+    "marketingName": "Life E4002",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
   "medion e4004": {
     "codename": "Life E4004",
     "marketingName": "Life E4004",
@@ -107,9 +131,9 @@
     "resolutionHeight": 854,
     "dualOrientation": true
   },
-  "medion p4013": {
-    "codename": "Life P4013",
-    "marketingName": "Life P4013",
+  "medion life p4012": {
+    "codename": "Life P4012",
+    "marketingName": "Life P4012",
     "manufacturer": "Medion",
     "brand": "Medion",
     "platform": "android",
@@ -129,6 +153,30 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 480,
     "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "medion p4013": {
+    "codename": "Life P4013",
+    "marketingName": "Life P4013",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "medion p4501": {
+    "codename": "Life P4501",
+    "marketingName": "Life P4501",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
     "dualOrientation": true
   },
   "medion p4502": {
@@ -191,42 +239,6 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
-  "medion x5020": {
-    "codename": "Life X5020",
-    "marketingName": "Life X5020",
-    "manufacturer": "Medion",
-    "brand": "Medion",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
-  },
-  "medion life p4012": {
-    "codename": "Life P4012",
-    "marketingName": "Life P4012",
-    "manufacturer": "Medion",
-    "brand": "Medion",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
-  },
-  "medion p4501": {
-    "codename": "Life P4501",
-    "marketingName": "Life P4501",
-    "manufacturer": "Medion",
-    "brand": "Medion",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
-  },
   "medion x4701": {
     "codename": "Life X4701",
     "marketingName": "Life X4701",
@@ -237,42 +249,6 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 720,
     "resolutionHeight": 1280,
-    "dualOrientation": true
-  },
-  "medion x5004": {
-    "codename": "X5004",
-    "marketingName": "X5004",
-    "manufacturer": "Medion",
-    "brand": "Medion",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
-  },
-  "medion x6001": {
-    "codename": "Life X6001",
-    "marketingName": "Life X6001",
-    "manufacturer": "Medion",
-    "brand": "Medion",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
-  },
-  "medion e4002": {
-    "codename": "Life E4002",
-    "marketingName": "Life E4002",
-    "manufacturer": "Medion",
-    "brand": "Medion",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
     "dualOrientation": true
   },
   "medion x5001": {
@@ -287,9 +263,33 @@
     "resolutionHeight": 1920,
     "dualOrientation": true
   },
-  "medion b5532": {
-    "codename": "B5532",
-    "marketingName": "B5532",
+  "medion x5004": {
+    "codename": "X5004",
+    "marketingName": "X5004",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true
+  },
+  "medion x5020": {
+    "codename": "Life X5020",
+    "marketingName": "Life X5020",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true
+  },
+  "medion x6001": {
+    "codename": "Life X6001",
+    "marketingName": "Life X6001",
     "manufacturer": "Medion",
     "brand": "Medion",
     "platform": "android",

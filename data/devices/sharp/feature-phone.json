@@ -1,16 +1,4 @@
 {
-  "sharp tq-gx30i": {
-    "codename": "GX30i",
-    "marketingName": "GX30i",
-    "manufacturer": "Sharp",
-    "brand": "Sharp",
-    "platform": "java",
-    "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
-  },
   "sharp stx2": {
     "codename": "STX2",
     "marketingName": "FX",
@@ -21,6 +9,18 @@
     "pointingMethod": null,
     "resolutionWidth": 240,
     "resolutionHeight": 400,
+    "dualOrientation": false
+  },
+  "sharp tq-gx30i": {
+    "codename": "GX30i",
+    "marketingName": "GX30i",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "platform": "java",
+    "type": "feature-phone",
+    "pointingMethod": "stylus",
+    "resolutionWidth": 240,
+    "resolutionHeight": 320,
     "dualOrientation": false
   }
 }

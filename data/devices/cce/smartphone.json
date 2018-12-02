@@ -1,16 +1,4 @@
 {
-  "cce sk352": {
-    "codename": "SK352",
-    "marketingName": "Motion Plus",
-    "manufacturer": "Cce",
-    "brand": "Cce",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
-  },
   "general cce device": {
     "codename": "general CCE Device",
     "marketingName": "general CCE Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "cce sk352": {
+    "codename": "SK352",
+    "marketingName": "Motion Plus",
+    "manufacturer": "Cce",
+    "brand": "Cce",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
     "dualOrientation": true
   }
 }

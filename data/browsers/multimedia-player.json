@@ -95,20 +95,6 @@
     },
     "engine": "webkit"
   },
-  "mathplayer": {
-    "name": "MathPlayer",
-    "manufacturer": "Unknown",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "multimedia-player",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "MathPlayer"
-      ]
-    },
-    "engine": "unknown"
-  },
   "lg player": {
     "name": "LG Player",
     "manufacturer": "Lg",
@@ -123,21 +109,19 @@
     },
     "engine": "blink"
   },
-  "quicktime": {
-    "name": "Quicktime",
-    "manufacturer": "Apple",
+  "mathplayer": {
+    "name": "MathPlayer",
+    "manufacturer": "Unknown",
     "pdfSupport": true,
     "rssSupport": false,
     "type": "multimedia-player",
     "version": {
       "class": "VersionFactory",
       "search": [
-        "qtver=",
-        "Quicktime",
-        "QuickTime"
+        "MathPlayer"
       ]
     },
-    "engine": "webkit"
+    "engine": "unknown"
   },
   "podcastaddict": {
     "name": "PodcastAddict",
@@ -150,6 +134,22 @@
       "search": [
         "PodcastAddict\\/v",
         "PodcastAddict"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "quicktime": {
+    "name": "Quicktime",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "qtver=",
+        "Quicktime",
+        "QuickTime"
       ]
     },
     "engine": "webkit"

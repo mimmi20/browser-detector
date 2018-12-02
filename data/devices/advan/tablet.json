@@ -1,16 +1,4 @@
 {
-  "advan t1l": {
-    "codename": "T1L",
-    "marketingName": "T1L",
-    "manufacturer": "Advan",
-    "brand": "Advan",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
-  },
   "general advan device": {
     "codename": "general Advan Device",
     "marketingName": "general Advan Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "advan t1l": {
+    "codename": "T1L",
+    "marketingName": "T1L",
+    "manufacturer": "Advan",
+    "brand": "Advan",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
     "dualOrientation": true
   }
 }

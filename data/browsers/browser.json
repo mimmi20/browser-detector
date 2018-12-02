@@ -167,30 +167,6 @@
     },
     "engine": null
   },
-  "aw browser": {
-    "name": "AW Browser",
-    "manufacturer": "Gramvis Lab",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
-  "motorola webkit": {
-    "name": "Motorola Webkit",
-    "manufacturer": "Motorola",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
   "apusbrowser": {
     "name": "APUSBrowser",
     "manufacturer": "ApusGroup",
@@ -315,6 +291,18 @@
       ]
     },
     "engine": "blink"
+  },
+  "aw browser": {
+    "name": "AW Browser",
+    "manufacturer": "Gramvis Lab",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   },
   "baidu browser": {
     "name": "Baidu Browser",
@@ -2175,6 +2163,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "motorola webkit": {
+    "name": "Motorola Webkit",
+    "manufacturer": "Motorola",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
   },
   "mozad": {
     "name": "Mozad",

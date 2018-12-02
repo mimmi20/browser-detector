@@ -1,30 +1,6 @@
 {
-  "fujitsu m305": {
-    "codename": "M305",
-    "marketingName": "Arrows M305/KA4",
-    "manufacturer": "Fujitsu",
-    "brand": "Fujitsu",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
-  },
   "fujitsu f-01f": {
     "codename": "F-01F",
-    "marketingName": "Arrows NX",
-    "manufacturer": "Fujitsu",
-    "brand": "Fujitsu",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
-  },
-  "fujitsu f-06e": {
-    "codename": "F-06E",
     "marketingName": "Arrows NX",
     "manufacturer": "Fujitsu",
     "brand": "Fujitsu",
@@ -59,6 +35,18 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
+  "fujitsu f-06e": {
+    "codename": "F-06E",
+    "marketingName": "Arrows NX",
+    "manufacturer": "Fujitsu",
+    "brand": "Fujitsu",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true
+  },
   "fujitsu f-08d": {
     "codename": "F-08D",
     "marketingName": "Arrows X",
@@ -81,6 +69,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 480,
     "resolutionHeight": 854,
+    "dualOrientation": true
+  },
+  "fujitsu m305": {
+    "codename": "M305",
+    "marketingName": "Arrows M305/KA4",
+    "manufacturer": "Fujitsu",
+    "brand": "Fujitsu",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
     "dualOrientation": true
   }
 }

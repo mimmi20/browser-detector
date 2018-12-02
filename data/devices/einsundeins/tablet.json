@@ -1,16 +1,4 @@
 {
-  "1&1 smartpad": {
-    "codename": "Smartpad",
-    "marketingName": "Smartpad",
-    "manufacturer": "EinsUndEins",
-    "brand": "EinsUndEins",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
-  },
   "general einsundeins device": {
     "codename": "general 1 & 1 Device",
     "marketingName": "general 1 & 1 Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "1&1 smartpad": {
+    "codename": "Smartpad",
+    "marketingName": "Smartpad",
+    "manufacturer": "EinsUndEins",
+    "brand": "EinsUndEins",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
     "dualOrientation": true
   }
 }

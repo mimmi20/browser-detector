@@ -248,6 +248,18 @@
     },
     "engine": "webkit"
   },
+  "citrix chrome app": {
+    "name": "Citrix Chrome App",
+    "manufacturer": "Citrix",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "blink"
+  },
   "coast": {
     "name": "Coast",
     "manufacturer": "Opera",
@@ -501,20 +513,6 @@
     },
     "engine": "webkit"
   },
-  "flipboard app": {
-    "name": "Flipboard App",
-    "manufacturer": "Flipboard",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Flipboard"
-      ]
-    },
-    "engine": "webkit"
-  },
   "filebox": {
     "name": "FileBox",
     "manufacturer": "Compass",
@@ -528,6 +526,20 @@
       ]
     },
     "engine": null
+  },
+  "flipboard app": {
+    "name": "Flipboard App",
+    "manufacturer": "Flipboard",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Flipboard"
+      ]
+    },
+    "engine": "webkit"
   },
   "flixster app": {
     "name": "Flixster App",
@@ -590,6 +602,18 @@
     "manufacturer": "Google",
     "pdfSupport": true,
     "rssSupport": true,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "hp smart": {
+    "name": "HP Smart",
+    "manufacturer": "Hp",
+    "pdfSupport": true,
+    "rssSupport": false,
     "type": "application",
     "version": {
       "class": null,
@@ -1616,30 +1640,6 @@
       "search": [
         "YandexSearch"
       ]
-    },
-    "engine": null
-  },
-  "citrix chrome app": {
-    "name": "Citrix Chrome App",
-    "manufacturer": "Citrix",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "blink"
-  },
-  "hp smart": {
-    "name": "HP Smart",
-    "manufacturer": "Hp",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": null
   }

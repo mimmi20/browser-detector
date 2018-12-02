@@ -1,16 +1,4 @@
 {
-  "artel adi5s": {
-    "codename": "Adi5S",
-    "marketingName": "Adi5S",
-    "manufacturer": "Artel",
-    "brand": "Artel",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
-  },
   "general artel device": {
     "codename": "general Artel Device",
     "marketingName": "general Artel Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "artel adi5s": {
+    "codename": "Adi5S",
+    "marketingName": "Adi5S",
+    "manufacturer": "Artel",
+    "brand": "Artel",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
     "dualOrientation": true
   }
 }

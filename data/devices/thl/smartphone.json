@@ -47,90 +47,6 @@
     "resolutionHeight": 1920,
     "dualOrientation": true
   },
-  "thl t6c": {
-    "codename": "T6C",
-    "marketingName": "T6C",
-    "manufacturer": "Thl",
-    "brand": "Thl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
-  },
-  "thl t6s": {
-    "codename": "T6S",
-    "marketingName": "T6S",
-    "manufacturer": "Thl",
-    "brand": "Thl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
-  },
-  "thl t9": {
-    "codename": "T9",
-    "marketingName": "T9",
-    "manufacturer": "Thl",
-    "brand": "Thl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
-  },
-  "thl w100": {
-    "codename": "W100",
-    "marketingName": "W100",
-    "manufacturer": "Thl",
-    "brand": "Thl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
-  },
-  "thl w200": {
-    "codename": "W200",
-    "marketingName": "W200",
-    "manufacturer": "Thl",
-    "brand": "Thl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
-  },
-  "thl w7": {
-    "codename": "W7",
-    "marketingName": "W7",
-    "manufacturer": "Thl",
-    "brand": "Thl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
-  },
-  "thl w8": {
-    "codename": "W8",
-    "marketingName": "Beyond",
-    "manufacturer": "Thl",
-    "brand": "Thl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
-  },
   "thl t100s": {
     "codename": "T100s",
     "marketingName": "Ironman",
@@ -179,16 +95,28 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
-  "thl w11": {
-    "codename": "W11",
-    "marketingName": "Monkey King",
+  "thl t6c": {
+    "codename": "T6C",
+    "marketingName": "T6C",
     "manufacturer": "Thl",
     "brand": "Thl",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true
+  },
+  "thl t6s": {
+    "codename": "T6S",
+    "marketingName": "T6S",
+    "manufacturer": "Thl",
+    "brand": "Thl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
     "dualOrientation": true
   },
   "thl t7": {
@@ -201,6 +129,78 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 720,
     "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "thl t9": {
+    "codename": "T9",
+    "marketingName": "T9",
+    "manufacturer": "Thl",
+    "brand": "Thl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "thl w100": {
+    "codename": "W100",
+    "marketingName": "W100",
+    "manufacturer": "Thl",
+    "brand": "Thl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
+    "dualOrientation": true
+  },
+  "thl w11": {
+    "codename": "W11",
+    "marketingName": "Monkey King",
+    "manufacturer": "Thl",
+    "brand": "Thl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true
+  },
+  "thl w200": {
+    "codename": "W200",
+    "marketingName": "W200",
+    "manufacturer": "Thl",
+    "brand": "Thl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "thl w7": {
+    "codename": "W7",
+    "marketingName": "W7",
+    "manufacturer": "Thl",
+    "brand": "Thl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "thl w8": {
+    "codename": "W8",
+    "marketingName": "Beyond",
+    "manufacturer": "Thl",
+    "brand": "Thl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
     "dualOrientation": true
   }
 }

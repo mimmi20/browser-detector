@@ -1,16 +1,4 @@
 {
-  "ais iris708": {
-    "codename": "Iris 708",
-    "marketingName": "LAVA PRO 4.5",
-    "manufacturer": "Ais",
-    "brand": "Ais",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
-  },
   "general ais device": {
     "codename": "general AIS Device",
     "marketingName": "general AIS Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "ais iris708": {
+    "codename": "Iris 708",
+    "marketingName": "LAVA PRO 4.5",
+    "manufacturer": "Ais",
+    "brand": "Ais",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
     "dualOrientation": true
   }
 }

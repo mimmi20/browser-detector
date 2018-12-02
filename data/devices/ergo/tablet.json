@@ -1,16 +1,4 @@
 {
-  "ergo tab crystal lite": {
-    "codename": "Tab Crystal Lite",
-    "marketingName": "Tab Crystal Lite",
-    "manufacturer": "Ergo",
-    "brand": "Ergo",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
-  },
   "general ergo device": {
     "codename": "general Ergo Device",
     "marketingName": "general Ergo Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "ergo tab crystal lite": {
+    "codename": "Tab Crystal Lite",
+    "marketingName": "Tab Crystal Lite",
+    "manufacturer": "Ergo",
+    "brand": "Ergo",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true
   }
 }

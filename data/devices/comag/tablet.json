@@ -1,16 +1,4 @@
 {
-  "comag wtdr1018": {
-    "codename": "WTDR1018",
-    "marketingName": "WTDR1018",
-    "manufacturer": "Comag",
-    "brand": "Comag",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
-  },
   "general comag device": {
     "codename": "general Comag Device",
     "marketingName": "general Comag Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "comag wtdr1018": {
+    "codename": "WTDR1018",
+    "marketingName": "WTDR1018",
+    "manufacturer": "Comag",
+    "brand": "Comag",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true
   }
 }

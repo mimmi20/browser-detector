@@ -1,16 +1,4 @@
 {
-  "exeq p-720": {
-    "codename": "P-720",
-    "marketingName": "P-720",
-    "manufacturer": "Exeq",
-    "brand": "Exeq",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
-  },
   "general exeq device": {
     "codename": "general Exeq Device",
     "marketingName": "general Exeq Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "exeq p-720": {
+    "codename": "P-720",
+    "marketingName": "P-720",
+    "manufacturer": "Exeq",
+    "brand": "Exeq",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true
   }
 }

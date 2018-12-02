@@ -1,19 +1,31 @@
 {
-  "mediacom m-mp940m": {
-    "codename": "M-MP940M",
-    "marketingName": "SmartPad 9.7 Mobile",
+  "mediacom m-mp1010i": {
+    "codename": "M-MP1010i",
+    "marketingName": "SmartPad 1010i",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
     "platform": "android",
     "type": "tablet",
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1024,
-    "resolutionHeight": 768,
+    "resolutionHeight": 600,
     "dualOrientation": true
   },
-  "mediacom m-mp10pa": {
-    "codename": "M-MP10PA",
-    "marketingName": "SmartPad 10.1 HD Pro",
+  "mediacom m-mp102s2b": {
+    "codename": "M-MP102S2B",
+    "marketingName": "SmartPad 102 S2",
+    "manufacturer": "Mediacom",
+    "brand": "Mediacom",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "mediacom m-mp102s2w": {
+    "codename": "M-MP102S2W",
+    "marketingName": "SmartPad 7.0",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
     "platform": "android",
@@ -59,6 +71,18 @@
     "resolutionHeight": 600,
     "dualOrientation": true
   },
+  "mediacom m-mp10pa": {
+    "codename": "M-MP10PA",
+    "marketingName": "SmartPad 10.1 HD Pro",
+    "manufacturer": "Mediacom",
+    "brand": "Mediacom",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
   "mediacom m-mp10s4": {
     "codename": "M-MP10S4",
     "marketingName": "SmartPad S4",
@@ -83,42 +107,6 @@
     "resolutionHeight": 800,
     "dualOrientation": true
   },
-  "mediacom m-mp1010i": {
-    "codename": "M-MP1010i",
-    "marketingName": "SmartPad 1010i",
-    "manufacturer": "Mediacom",
-    "brand": "Mediacom",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
-  },
-  "mediacom m-mp102s2w": {
-    "codename": "M-MP102S2W",
-    "marketingName": "SmartPad 7.0",
-    "manufacturer": "Mediacom",
-    "brand": "Mediacom",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
-  },
-  "mediacom m-mp102s2b": {
-    "codename": "M-MP102S2B",
-    "marketingName": "SmartPad 102 S2",
-    "manufacturer": "Mediacom",
-    "brand": "Mediacom",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 800,
-    "dualOrientation": true
-  },
   "mediacom m-mp720go": {
     "codename": "M-MP720GO",
     "marketingName": "SmartPad GO",
@@ -129,6 +117,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1024,
     "resolutionHeight": 600,
+    "dualOrientation": true
+  },
+  "mediacom m-mp722i": {
+    "codename": "M-MP722I",
+    "marketingName": "SmartPad 722i",
+    "manufacturer": "Mediacom",
+    "brand": "Mediacom",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 800,
+    "resolutionHeight": 480,
     "dualOrientation": true
   },
   "mediacom m-mp726gox": {
@@ -155,30 +155,6 @@
     "resolutionHeight": 600,
     "dualOrientation": true
   },
-  "mediacom m-mp722i": {
-    "codename": "M-MP722I",
-    "marketingName": "SmartPad 722i",
-    "manufacturer": "Mediacom",
-    "brand": "Mediacom",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
-  },
-  "mediacom m-mp876s2": {
-    "codename": "M-MP876S2",
-    "marketingName": "SmartPad 8.0 S2",
-    "manufacturer": "Mediacom",
-    "brand": "Mediacom",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
-  },
   "mediacom m-mp860s2": {
     "codename": "M-MP860S2",
     "marketingName": "SmartPad 860 S2",
@@ -194,6 +170,30 @@
   "mediacom m-mp875s2": {
     "codename": "M-MP875S2",
     "marketingName": "SmartPad 875 S2",
+    "manufacturer": "Mediacom",
+    "brand": "Mediacom",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
+    "dualOrientation": true
+  },
+  "mediacom m-mp876s2": {
+    "codename": "M-MP876S2",
+    "marketingName": "SmartPad 8.0 S2",
+    "manufacturer": "Mediacom",
+    "brand": "Mediacom",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
+    "dualOrientation": true
+  },
+  "mediacom m-mp940m": {
+    "codename": "M-MP940M",
+    "marketingName": "SmartPad 9.7 Mobile",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
     "platform": "android",

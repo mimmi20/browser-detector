@@ -1,4 +1,16 @@
 {
+  "google android sdk": {
+    "codename": "Android SDK",
+    "marketingName": "Android SDK",
+    "manufacturer": "Google",
+    "brand": "Google",
+    "platform": "android",
+    "type": "mobile-device",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "google compute engine": {
     "codename": "Google Compute Engine",
     "marketingName": "Google Compute Engine",
@@ -21,18 +33,6 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 640,
     "resolutionHeight": 360,
-    "dualOrientation": true
-  },
-  "google android sdk": {
-    "codename": "Android SDK",
-    "marketingName": "Android SDK",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "platform": "android",
-    "type": "mobile-device",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
     "dualOrientation": true
   }
 }
