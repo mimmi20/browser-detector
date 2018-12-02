@@ -11,76 +11,16 @@
     "resolutionHeight": null,
     "dualOrientation": true
   },
-  "tcl j620": {
-    "codename": "J620",
-    "marketingName": "J620",
+  "tcl 9108a": {
+    "codename": "9108A",
+    "marketingName": "G60 Gala LTE",
     "manufacturer": "Tcl",
     "brand": "Tcl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
-  },
-  "tcl m2u": {
-    "codename": "M2U",
-    "marketingName": "M2U",
-    "manufacturer": "Tcl",
-    "brand": "Tcl",
-    "platform": "android",
+    "platform": null,
     "type": "smartphone",
     "pointingMethod": "touchscreen",
     "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
-  },
-  "tcl s700": {
-    "codename": "S700",
-    "marketingName": "S700",
-    "manufacturer": "Tcl",
-    "brand": "Tcl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
-  },
-  "tcl s720t": {
-    "codename": "S720T",
-    "marketingName": "S720T",
-    "manufacturer": "Tcl",
-    "brand": "Tcl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
-  },
-  "tcl vf685": {
-    "codename": "VF685",
-    "marketingName": "Smart 4 Fun",
-    "manufacturer": "Tcl",
-    "brand": "Vodafone",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
-  },
-  "tcl p332u": {
-    "codename": "P332U",
-    "marketingName": "P332U",
-    "manufacturer": "Tcl",
-    "brand": "Tcl",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
+    "resolutionHeight": 1200,
     "dualOrientation": true
   },
   "tcl a916": {
@@ -119,12 +59,36 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
+  "tcl j620": {
+    "codename": "J620",
+    "marketingName": "J620",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true
+  },
   "tcl j636d+": {
     "codename": "J636D+",
     "marketingName": "J636D+",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true
+  },
+  "tcl j706t": {
+    "codename": "J706T",
+    "marketingName": "J706T",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "platform": null,
     "type": "smartphone",
     "pointingMethod": "touchscreen",
     "resolutionWidth": 480,
@@ -143,6 +107,18 @@
     "resolutionHeight": 1920,
     "dualOrientation": true
   },
+  "tcl m2u": {
+    "codename": "M2U",
+    "marketingName": "M2U",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
   "tcl p301m": {
     "codename": "P301M",
     "marketingName": "P301M",
@@ -158,6 +134,18 @@
   "tcl p331m": {
     "codename": "P331M",
     "marketingName": "P331M",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true
+  },
+  "tcl p332u": {
+    "codename": "P332U",
+    "marketingName": "P332U",
     "manufacturer": "Tcl",
     "brand": "Tcl",
     "platform": "android",
@@ -203,6 +191,30 @@
     "resolutionHeight": 1280,
     "dualOrientation": true
   },
+  "tcl s700": {
+    "codename": "S700",
+    "marketingName": "S700",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 854,
+    "dualOrientation": true
+  },
+  "tcl s720t": {
+    "codename": "S720T",
+    "marketingName": "S720T",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
   "tcl s960": {
     "codename": "S960",
     "marketingName": "OneTouch Idol X+",
@@ -213,6 +225,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1080,
     "resolutionHeight": 1920,
+    "dualOrientation": true
+  },
+  "tcl vf685": {
+    "codename": "VF685",
+    "marketingName": "Smart 4 Fun",
+    "manufacturer": "Tcl",
+    "brand": "Vodafone",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
     "dualOrientation": true
   },
   "tcl w939": {
@@ -249,30 +273,6 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 240,
     "resolutionHeight": 320,
-    "dualOrientation": true
-  },
-  "tcl j706t": {
-    "codename": "J706T",
-    "marketingName": "J706T",
-    "manufacturer": "Tcl",
-    "brand": "Tcl",
-    "platform": null,
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
-  },
-  "tcl 9108a": {
-    "codename": "9108A",
-    "marketingName": "G60 Gala LTE",
-    "manufacturer": "Tcl",
-    "brand": "Tcl",
-    "platform": null,
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1200,
     "dualOrientation": true
   }
 }

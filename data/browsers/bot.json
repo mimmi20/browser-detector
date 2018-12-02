@@ -3058,20 +3058,6 @@
     },
     "engine": null
   },
-  "google fontanalysis": {
-    "name": "Google FontAnalysis",
-    "manufacturer": "Google",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Google\\-FontAnalysis"
-      ]
-    },
-    "engine": "unknown"
-  },
   "google assess": {
     "name": "Google Assess",
     "manufacturer": "Google",
@@ -3085,6 +3071,20 @@
       ]
     },
     "engine": "blink"
+  },
+  "google fontanalysis": {
+    "name": "Google FontAnalysis",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google\\-FontAnalysis"
+      ]
+    },
+    "engine": "unknown"
   },
   "google http client library for java": {
     "name": "Google HTTP Client Library for Java",
@@ -4147,20 +4147,6 @@
       "class": "VersionFactory",
       "search": [
         "Jigsaw"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "w3c mobileok checker": {
-    "name": "W3C MobileOK Checker",
-    "manufacturer": "W3c",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "W3C\\-mobileOK\\/DDC\\-"
       ]
     },
     "engine": "unknown"
@@ -9223,6 +9209,20 @@
       "class": "VersionFactory",
       "search": [
         "W3C\\_I18n\\-Checker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "w3c mobileok checker": {
+    "name": "W3C MobileOK Checker",
+    "manufacturer": "W3c",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "W3C\\-mobileOK\\/DDC\\-"
       ]
     },
     "engine": "unknown"

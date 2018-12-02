@@ -1,16 +1,4 @@
 {
-  "efox smart e5": {
-    "codename": "SMART E5",
-    "marketingName": "SMART E5",
-    "manufacturer": "Efox",
-    "brand": "Efox",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
-  },
   "general efox device": {
     "codename": "general eFOX Device",
     "marketingName": "general eFOX Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "efox smart e5": {
+    "codename": "SMART E5",
+    "marketingName": "SMART E5",
+    "manufacturer": "Efox",
+    "brand": "Efox",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
     "dualOrientation": true
   }
 }

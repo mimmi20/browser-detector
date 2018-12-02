@@ -30,6 +30,15 @@
       "search": null
     }
   },
+  "asha": {
+    "name": "Asha",
+    "marketingName": "Asha",
+    "manufacturer": "Nokia",
+    "version": {
+      "class": null,
+      "search": null
+    }
+  },
   "atv os x": {
     "name": "ATV OS X",
     "marketingName": "ATV OS X",
@@ -110,21 +119,21 @@
       "search": null
     }
   },
-  "cp/m": {
-    "name": "CP/M",
-    "marketingName": "CP/M",
-    "manufacturer": "Unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "chromeos": {
     "name": "ChromeOS",
     "marketingName": "ChromeOS",
     "manufacturer": "Google",
     "version": {
       "class": "\\BrowserDetector\\Version\\ChromeOs",
+      "search": null
+    }
+  },
+  "cp/m": {
+    "name": "CP/M",
+    "marketingName": "CP/M",
+    "manufacturer": "Unknown",
+    "version": {
+      "class": null,
       "search": null
     }
   },
@@ -293,6 +302,17 @@
       ]
     }
   },
+  "lg webos": {
+    "name": "webOS",
+    "marketingName": "webOS",
+    "manufacturer": "Lg",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Web0S"
+      ]
+    }
+  },
   "liberate": {
     "name": "Liberate",
     "marketingName": "Liberate",
@@ -313,14 +333,26 @@
       "search": null
     }
   },
-  "macintosh": {
-    "name": "Macintosh",
-    "marketingName": "Macintosh",
-    "manufacturer": "Apple",
+  "linux mint": {
+    "name": "Linux Mint",
+    "marketingName": "Linux Mint",
+    "manufacturer": "Unknown",
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Macintosh"
+        "Mint",
+        "mint"
+      ]
+    }
+  },
+  "linux smartphone os (maemo)": {
+    "name": "Maemo",
+    "marketingName": "Maemo",
+    "manufacturer": "LinuxFoundation",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Maemo"
       ]
     }
   },
@@ -333,14 +365,14 @@
       "search": null
     }
   },
-  "linux smartphone os (maemo)": {
-    "name": "Maemo",
-    "marketingName": "Maemo",
-    "manufacturer": "LinuxFoundation",
+  "macintosh": {
+    "name": "Macintosh",
+    "marketingName": "Macintosh",
+    "manufacturer": "Apple",
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Maemo"
+        "Macintosh"
       ]
     }
   },
@@ -364,18 +396,6 @@
       ]
     }
   },
-  "linux mint": {
-    "name": "Linux Mint",
-    "marketingName": "Linux Mint",
-    "manufacturer": "Unknown",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Mint",
-        "mint"
-      ]
-    }
-  },
   "miui os": {
     "name": "Miui OS",
     "marketingName": "Miui OS",
@@ -395,6 +415,18 @@
     "version": {
       "class": null,
       "search": null
+    }
+  },
+  "mre": {
+    "name": "MRE",
+    "marketingName": "MAUI Runtime Environment",
+    "manufacturer": "MediaTek",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MRE\\\\",
+        "MRE"
+      ]
     }
   },
   "netbsd": {
@@ -435,6 +467,17 @@
       "search": null
     }
   },
+  "nucleus os": {
+    "name": "Nucleus OS",
+    "marketingName": "Nucleus",
+    "manufacturer": "Accelerated Technology",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Nucleus"
+      ]
+    }
+  },
   "openbsd": {
     "name": "OpenBSD",
     "marketingName": "OpenBSD",
@@ -443,6 +486,17 @@
       "class": "VersionFactory",
       "search": [
         "OpenBSD"
+      ]
+    }
+  },
+  "opensolaris": {
+    "name": "OpenSolaris",
+    "marketingName": "OpenSolaris",
+    "manufacturer": "Oracle",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OpenSolaris"
       ]
     }
   },
@@ -498,6 +552,17 @@
       "search": null
     }
   },
+  "remixos": {
+    "name": "Remix OS",
+    "marketingName": "Remix OS",
+    "manufacturer": "Jide",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "RemixOS"
+      ]
+    }
+  },
   "rim os": {
     "name": "RIM OS",
     "marketingName": "RIM OS",
@@ -547,57 +612,6 @@
       "search": null
     }
   },
-  "slackware linux": {
-    "name": "Slackware Linux",
-    "marketingName": "Slackware Linux",
-    "manufacturer": "Slackware",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Slackware"
-      ]
-    }
-  },
-  "solaris": {
-    "name": "Solaris",
-    "marketingName": "Solaris",
-    "manufacturer": "Oracle",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Solaris"
-      ]
-    }
-  },
-  "sunos": {
-    "name": "SunOS",
-    "marketingName": "SunOS",
-    "manufacturer": "Oracle",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "SunOS"
-      ]
-    }
-  },
-  "suse linux": {
-    "name": "Suse Linux",
-    "marketingName": "Suse Linux",
-    "manufacturer": "Suse",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "syllable": {
-    "name": "Syllable",
-    "marketingName": "Syllable",
-    "manufacturer": "Syllable",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "series30": {
     "name": "Series 30",
     "marketingName": "Series 30",
@@ -625,10 +639,63 @@
       "search": null
     }
   },
-  "asha": {
-    "name": "Asha",
-    "marketingName": "Asha",
-    "manufacturer": "Nokia",
+  "slackware linux": {
+    "name": "Slackware Linux",
+    "marketingName": "Slackware Linux",
+    "manufacturer": "Slackware",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Slackware"
+      ]
+    }
+  },
+  "solaris": {
+    "name": "Solaris",
+    "marketingName": "Solaris",
+    "manufacturer": "Oracle",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Solaris"
+      ]
+    }
+  },
+  "startos": {
+    "name": "StartOS",
+    "marketingName": "StartOS",
+    "manufacturer": "YLMF",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "StartOS"
+      ]
+    }
+  },
+  "sunos": {
+    "name": "SunOS",
+    "marketingName": "SunOS",
+    "manufacturer": "Oracle",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SunOS"
+      ]
+    }
+  },
+  "suse linux": {
+    "name": "Suse Linux",
+    "marketingName": "Suse Linux",
+    "manufacturer": "Suse",
+    "version": {
+      "class": null,
+      "search": null
+    }
+  },
+  "syllable": {
+    "name": "Syllable",
+    "marketingName": "Syllable",
+    "manufacturer": "Syllable",
     "version": {
       "class": null,
       "search": null
@@ -710,6 +777,15 @@
       ]
     }
   },
+  "watch os": {
+    "name": "watchOS",
+    "marketingName": "watchOS",
+    "manufacturer": "Apple",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\Ios",
+      "search": null
+    }
+  },
   "webos": {
     "name": "webOS",
     "marketingName": "webOS",
@@ -723,26 +799,6 @@
       ]
     }
   },
-  "lg webos": {
-    "name": "webOS",
-    "marketingName": "webOS",
-    "manufacturer": "Lg",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Web0S"
-      ]
-    }
-  },
-  "watch os": {
-    "name": "watchOS",
-    "marketingName": "watchOS",
-    "manufacturer": "Apple",
-    "version": {
-      "class": "\\BrowserDetector\\Version\\Ios",
-      "search": null
-    }
-  },
   "windows": {
     "name": "Windows",
     "marketingName": "Windows",
@@ -750,56 +806,6 @@
     "version": {
       "class": null,
       "search": null
-    }
-  },
-  "windows iot 10.0": {
-    "name": "Windows IoT 10.0",
-    "marketingName": "Windows IoT 10",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 10.0
-    }
-  },
-  "windows nt 10.0": {
-    "name": "Windows NT 10.0",
-    "marketingName": "Windows 10",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 10.0
-    }
-  },
-  "windows nt 6.4": {
-    "name": "Windows NT 6.4",
-    "marketingName": "Windows 10",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 6.4
-    }
-  },
-  "windows nt 5.0": {
-    "name": "Windows NT 5.0",
-    "marketingName": "Windows 2000",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 5.0
-    }
-  },
-  "windows nt 5.01": {
-    "name": "Windows NT 5.01",
-    "marketingName": "Windows 2000",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": "5.01"
     }
   },
   "windows 2003": {
@@ -830,6 +836,204 @@
       "class": null,
       "search": null,
       "value": 3.11
+    }
+  },
+  "windows 95": {
+    "name": "Windows 95",
+    "marketingName": "Windows 95",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 95
+    }
+  },
+  "windows 98": {
+    "name": "Windows 98",
+    "marketingName": "Windows 98",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 98
+    }
+  },
+  "windows ce": {
+    "name": "Windows CE",
+    "marketingName": "Windows CE",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": "CE"
+    }
+  },
+  "windows iot 10.0": {
+    "name": "Windows IoT 10.0",
+    "marketingName": "Windows IoT 10",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 10
+    }
+  },
+  "windows me": {
+    "name": "Windows ME",
+    "marketingName": "Windows ME",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": "ME"
+    }
+  },
+  "windows mobile os": {
+    "name": "Windows Mobile OS",
+    "marketingName": "Windows Mobile OS",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": "\\BrowserDetector\\Version\\WindowsMobileOs",
+      "search": null
+    }
+  },
+  "windows nt": {
+    "name": "Windows NT",
+    "marketingName": "Windows NT",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null
+    }
+  },
+  "windows nt 10.0": {
+    "name": "Windows NT 10.0",
+    "marketingName": "Windows 10",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 10
+    }
+  },
+  "windows nt 3.1": {
+    "name": "Windows NT 3.1",
+    "marketingName": "Windows NT",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 3.1
+    }
+  },
+  "windows nt 3.5": {
+    "name": "Windows NT 3.5",
+    "marketingName": "Windows NT",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 3.5
+    }
+  },
+  "windows nt 3.51": {
+    "name": "Windows NT 3.51",
+    "marketingName": "Windows NT",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 3.51
+    }
+  },
+  "windows nt 4.0": {
+    "name": "Windows NT 4.0",
+    "marketingName": "Windows NT",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 4
+    }
+  },
+  "windows nt 4.1": {
+    "name": "Windows NT 4.1",
+    "marketingName": "Windows NT",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 4.1
+    }
+  },
+  "windows nt 4.10": {
+    "name": "Windows NT 4.10",
+    "marketingName": "Windows NT",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": "4.10"
+    }
+  },
+  "windows nt 5.0": {
+    "name": "Windows NT 5.0",
+    "marketingName": "Windows 2000",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 5
+    }
+  },
+  "windows nt 5.01": {
+    "name": "Windows NT 5.01",
+    "marketingName": "Windows 2000",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": "5.01"
+    }
+  },
+  "windows nt 5.1": {
+    "name": "Windows NT 5.1",
+    "marketingName": "Windows XP",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 5.1
+    }
+  },
+  "windows nt 5.2": {
+    "name": "Windows NT 5.2",
+    "marketingName": "Windows XP",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 5.2
+    }
+  },
+  "windows nt 5.3": {
+    "name": "Windows NT 5.3",
+    "marketingName": "Windows XP",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 5.3
+    }
+  },
+  "windows nt 6.0": {
+    "name": "Windows NT 6.0",
+    "marketingName": "Windows Vista",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 6
     }
   },
   "windows nt 6.1": {
@@ -882,122 +1086,14 @@
       "value": 6.3
     }
   },
-  "windows 95": {
-    "name": "Windows 95",
-    "marketingName": "Windows 95",
+  "windows nt 6.4": {
+    "name": "Windows NT 6.4",
+    "marketingName": "Windows 10",
     "manufacturer": "Microsoft",
     "version": {
       "class": null,
       "search": null,
-      "value": 95
-    }
-  },
-  "windows 98": {
-    "name": "Windows 98",
-    "marketingName": "Windows 98",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 98
-    }
-  },
-  "windows ce": {
-    "name": "Windows CE",
-    "marketingName": "Windows CE",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": "CE"
-    }
-  },
-  "windows me": {
-    "name": "Windows ME",
-    "marketingName": "Windows ME",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": "ME"
-    }
-  },
-  "windows mobile os": {
-    "name": "Windows Mobile OS",
-    "marketingName": "Windows Mobile OS",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": "\\BrowserDetector\\Version\\WindowsMobileOs",
-      "search": null
-    }
-  },
-  "windows nt": {
-    "name": "Windows NT",
-    "marketingName": "Windows NT",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "windows nt 4.10": {
-    "name": "Windows NT 4.10",
-    "marketingName": "Windows NT",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": "4.10"
-    }
-  },
-  "windows nt 4.1": {
-    "name": "Windows NT 4.1",
-    "marketingName": "Windows NT",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 4.1
-    }
-  },
-  "windows nt 4.0": {
-    "name": "Windows NT 4.0",
-    "marketingName": "Windows NT",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 4.0
-    }
-  },
-  "windows nt 3.51": {
-    "name": "Windows NT 3.51",
-    "marketingName": "Windows NT",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 3.51
-    }
-  },
-  "windows nt 3.5": {
-    "name": "Windows NT 3.5",
-    "marketingName": "Windows NT",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 3.5
-    }
-  },
-  "windows nt 3.1": {
-    "name": "Windows NT 3.1",
-    "marketingName": "Windows NT",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 3.1
+      "value": 6.4
     }
   },
   "windows phone": {
@@ -1009,46 +1105,6 @@
       "search": null
     }
   },
-  "windows nt 6.0": {
-    "name": "Windows NT 6.0",
-    "marketingName": "Windows Vista",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 6.0
-    }
-  },
-  "windows nt 5.1": {
-    "name": "Windows NT 5.1",
-    "marketingName": "Windows XP",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 5.1
-    }
-  },
-  "windows nt 5.2": {
-    "name": "Windows NT 5.2",
-    "marketingName": "Windows XP",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 5.2
-    }
-  },
-  "windows nt 5.3": {
-    "name": "Windows NT 5.3",
-    "marketingName": "Windows XP",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 5.3
-    }
-  },
   "wyderos": {
     "name": "WyderOS",
     "marketingName": "WyderOS",
@@ -1057,26 +1113,6 @@
       "class": "VersionFactory",
       "search": [
         "WyderOS"
-      ]
-    }
-  },
-  "zenwalk gnu linux": {
-    "name": "Zenwalk GNU Linux",
-    "marketingName": "Zenwalk GNU Linux",
-    "manufacturer": "Unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "nucleus os": {
-    "name": "Nucleus OS",
-    "marketingName": "Nucleus",
-    "manufacturer": "Accelerated Technology",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Nucleus"
       ]
     }
   },
@@ -1091,49 +1127,13 @@
       ]
     }
   },
-  "opensolaris": {
-    "name": "OpenSolaris",
-    "marketingName": "OpenSolaris",
-    "manufacturer": "Oracle",
+  "zenwalk gnu linux": {
+    "name": "Zenwalk GNU Linux",
+    "marketingName": "Zenwalk GNU Linux",
+    "manufacturer": "Unknown",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "OpenSolaris"
-      ]
-    }
-  },
-  "startos": {
-    "name": "StartOS",
-    "marketingName": "StartOS",
-    "manufacturer": "YLMF",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "StartOS"
-      ]
-    }
-  },
-  "remixos": {
-    "name": "Remix OS",
-    "marketingName": "Remix OS",
-    "manufacturer": "Jide",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "RemixOS"
-      ]
-    }
-  },
-  "mre": {
-    "name": "MRE",
-    "marketingName": "MAUI Runtime Environment",
-    "manufacturer": "MediaTek",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "MRE\\\\",
-        "MRE"
-      ]
+      "class": null,
+      "search": null
     }
   }
 }

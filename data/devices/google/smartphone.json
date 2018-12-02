@@ -1,86 +1,14 @@
 {
-  "google pixel": {
-    "codename": "Pixel",
-    "marketingName": "Pixel",
-    "manufacturer": "Google",
+  "google galaxy nexus": {
+    "codename": "Galaxy Nexus",
+    "marketingName": "Galaxy Nexus",
+    "manufacturer": "Samsung",
     "brand": "Google",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
-  },
-  "google pixel 2": {
-    "codename": "Pixel 2",
-    "marketingName": "Pixel 2",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
-  },
-  "google pixel 2 xl": {
-    "codename": "Pixel 2 XL",
-    "marketingName": "Pixel 2 XL",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
-  },
-  "google pixel xl": {
-    "codename": "Pixel XL",
-    "marketingName": "Pixel XL",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
-  },
-  "google nexus 6p": {
-    "codename": "Nexus 6P",
-    "marketingName": "Nexus 6P",
-    "manufacturer": "Huawei",
-    "brand": "Google",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
-  },
-  "google nexus 6": {
-    "codename": "Nexus 6",
-    "marketingName": "Nexus 6",
-    "manufacturer": "Motorola",
-    "brand": "Google",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
-  },
-  "google nexus one": {
-    "codename": "Nexus One",
-    "marketingName": "Nexus One",
-    "manufacturer": "Htc",
-    "brand": "Google",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
     "dualOrientation": true
   },
   "google nexus 4": {
@@ -143,6 +71,42 @@
     "resolutionHeight": 1920,
     "dualOrientation": true
   },
+  "google nexus 6": {
+    "codename": "Nexus 6",
+    "marketingName": "Nexus 6",
+    "manufacturer": "Motorola",
+    "brand": "Google",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1440,
+    "resolutionHeight": 2560,
+    "dualOrientation": true
+  },
+  "google nexus 6p": {
+    "codename": "Nexus 6P",
+    "marketingName": "Nexus 6P",
+    "manufacturer": "Huawei",
+    "brand": "Google",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1440,
+    "resolutionHeight": 2560,
+    "dualOrientation": true
+  },
+  "google nexus one": {
+    "codename": "Nexus One",
+    "marketingName": "Nexus One",
+    "manufacturer": "Htc",
+    "brand": "Google",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
   "google nexus s": {
     "codename": "Nexus S",
     "marketingName": "Nexus S",
@@ -167,16 +131,52 @@
     "resolutionHeight": 800,
     "dualOrientation": true
   },
-  "google galaxy nexus": {
-    "codename": "Galaxy Nexus",
-    "marketingName": "Galaxy Nexus",
-    "manufacturer": "Samsung",
+  "google pixel": {
+    "codename": "Pixel",
+    "marketingName": "Pixel",
+    "manufacturer": "Google",
     "brand": "Google",
     "platform": "android",
     "type": "smartphone",
     "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true
+  },
+  "google pixel 2": {
+    "codename": "Pixel 2",
+    "marketingName": "Pixel 2",
+    "manufacturer": "Google",
+    "brand": "Google",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1080,
+    "resolutionHeight": 1920,
+    "dualOrientation": true
+  },
+  "google pixel 2 xl": {
+    "codename": "Pixel 2 XL",
+    "marketingName": "Pixel 2 XL",
+    "manufacturer": "Google",
+    "brand": "Google",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1440,
+    "resolutionHeight": 2880,
+    "dualOrientation": true
+  },
+  "google pixel xl": {
+    "codename": "Pixel XL",
+    "marketingName": "Pixel XL",
+    "manufacturer": "Google",
+    "brand": "Google",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1440,
+    "resolutionHeight": 2560,
     "dualOrientation": true
   }
 }

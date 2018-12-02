@@ -1,4 +1,16 @@
 {
+  "pantech adr910l": {
+    "codename": "ADR910L",
+    "marketingName": "Marauder",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 480,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
   "pantech im-a830l": {
     "codename": "IM-A830L",
     "marketingName": "Vega Racer 2",
@@ -11,8 +23,32 @@
     "resolutionHeight": 1280,
     "dualOrientation": false
   },
+  "pantech im-a840s": {
+    "codename": "IM-A840S",
+    "marketingName": "Vega S5",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
   "pantech im-a850k": {
     "codename": "IM-A850K",
+    "marketingName": "Vega R3",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 720,
+    "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "pantech im-a850l": {
+    "codename": "IM-A850L",
     "marketingName": "Vega R3",
     "manufacturer": "Pantech",
     "brand": "Pantech",
@@ -33,30 +69,6 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1080,
     "resolutionHeight": 1920,
-    "dualOrientation": true
-  },
-  "pantech im-a840s": {
-    "codename": "IM-A840S",
-    "marketingName": "Vega S5",
-    "manufacturer": "Pantech",
-    "brand": "Pantech",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
-  },
-  "pantech im-a850l": {
-    "codename": "IM-A850L",
-    "marketingName": "Vega R3",
-    "manufacturer": "Pantech",
-    "brand": "Pantech",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
     "dualOrientation": true
   },
   "pantech im-t100k": {
@@ -110,18 +122,6 @@
   "pantech p9070": {
     "codename": "P9070",
     "marketingName": "Burst",
-    "manufacturer": "Pantech",
-    "brand": "Pantech",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
-  },
-  "pantech adr910l": {
-    "codename": "ADR910L",
-    "marketingName": "Marauder",
     "manufacturer": "Pantech",
     "brand": "Pantech",
     "platform": "android",

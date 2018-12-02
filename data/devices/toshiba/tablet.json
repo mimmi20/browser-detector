@@ -59,9 +59,33 @@
     "resolutionHeight": 1600,
     "dualOrientation": true
   },
+  "toshiba at1s0": {
+    "codename": "AT1S0",
+    "marketingName": "AT1S0",
+    "manufacturer": "Toshiba",
+    "brand": "Toshiba",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": true
+  },
   "toshiba at200": {
     "codename": "AT200",
     "marketingName": "eXcite AT200",
+    "manufacturer": "Toshiba",
+    "brand": "Toshiba",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1280,
+    "resolutionHeight": 800,
+    "dualOrientation": true
+  },
+  "toshiba at270": {
+    "codename": "AT270",
+    "marketingName": "AT270",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
     "platform": "android",
@@ -86,42 +110,6 @@
   "toshiba at300se": {
     "codename": "AT300SE",
     "marketingName": "Regza AT300SE",
-    "manufacturer": "Toshiba",
-    "brand": "Toshiba",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
-  },
-  "toshiba folio 100": {
-    "codename": "Folio 100",
-    "marketingName": "Folio 100",
-    "manufacturer": "Toshiba",
-    "brand": "Toshiba",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
-  },
-  "toshiba at1s0": {
-    "codename": "AT1S0",
-    "marketingName": "AT1S0",
-    "manufacturer": "Toshiba",
-    "brand": "Toshiba",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
-  },
-  "toshiba at270": {
-    "codename": "AT270",
-    "marketingName": "AT270",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
     "platform": "android",
@@ -261,6 +249,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 1600,
     "resolutionHeight": 900,
+    "dualOrientation": true
+  },
+  "toshiba folio 100": {
+    "codename": "Folio 100",
+    "marketingName": "Folio 100",
+    "manufacturer": "Toshiba",
+    "brand": "Toshiba",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 600,
     "dualOrientation": true
   }
 }

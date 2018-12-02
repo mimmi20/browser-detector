@@ -1,16 +1,4 @@
 {
-  "ciotcud l930": {
-    "codename": "L930",
-    "marketingName": "L930",
-    "manufacturer": "Ciotcud",
-    "brand": "Ciotcud",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
-  },
   "general ciotcud device": {
     "codename": "general CIOtCUD Device",
     "marketingName": "general CIOtCUD Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "ciotcud l930": {
+    "codename": "L930",
+    "marketingName": "L930",
+    "manufacturer": "Ciotcud",
+    "brand": "Ciotcud",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 320,
+    "resolutionHeight": 480,
     "dualOrientation": true
   }
 }

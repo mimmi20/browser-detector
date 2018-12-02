@@ -1,16 +1,4 @@
 {
-  "assistant ap-804": {
-    "codename": "AP-804",
-    "marketingName": "AP-804",
-    "manufacturer": "Assistant",
-    "brand": "Assistant",
-    "platform": "android",
-    "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
-  },
   "general assistant device": {
     "codename": "general Assistant Device",
     "marketingName": "general Assistant Device",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": null,
     "resolutionHeight": null,
+    "dualOrientation": true
+  },
+  "assistant ap-804": {
+    "codename": "AP-804",
+    "marketingName": "AP-804",
+    "manufacturer": "Assistant",
+    "brand": "Assistant",
+    "platform": "android",
+    "type": "tablet",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 1024,
+    "resolutionHeight": 768,
     "dualOrientation": true
   }
 }

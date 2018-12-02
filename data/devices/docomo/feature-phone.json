@@ -1,4 +1,16 @@
 {
+  "general docomo device": {
+    "codename": "general DoCoMo Device",
+    "marketingName": "general DoCoMo Device",
+    "manufacturer": "DoCoMo",
+    "brand": "DoCoMo",
+    "platform": "java",
+    "type": "feature-phone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": null,
+    "resolutionHeight": null,
+    "dualOrientation": false
+  },
   "docomo p900i": {
     "codename": "P900i",
     "marketingName": "P900i",
@@ -21,18 +33,6 @@
     "pointingMethod": null,
     "resolutionWidth": 480,
     "resolutionHeight": 854,
-    "dualOrientation": false
-  },
-  "general docomo device": {
-    "codename": "general DoCoMo Device",
-    "marketingName": "general DoCoMo Device",
-    "manufacturer": "DoCoMo",
-    "brand": "DoCoMo",
-    "platform": "java",
-    "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
     "dualOrientation": false
   }
 }

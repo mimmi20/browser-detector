@@ -1,16 +1,4 @@
 {
-  "turbo-x pi 4g": {
-    "codename": "PI 4G",
-    "marketingName": "PI 4G",
-    "manufacturer": "Turbo-X",
-    "brand": "Turbo-X",
-    "platform": "android",
-    "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
-  },
   "turbo-x pi": {
     "codename": "PI",
     "marketingName": "PI",
@@ -21,6 +9,18 @@
     "pointingMethod": "touchscreen",
     "resolutionWidth": 720,
     "resolutionHeight": 1280,
+    "dualOrientation": true
+  },
+  "turbo-x pi 4g": {
+    "codename": "PI 4G",
+    "marketingName": "PI 4G",
+    "manufacturer": "Turbo-X",
+    "brand": "Turbo-X",
+    "platform": "android",
+    "type": "smartphone",
+    "pointingMethod": "touchscreen",
+    "resolutionWidth": 540,
+    "resolutionHeight": 960,
     "dualOrientation": true
   }
 }
