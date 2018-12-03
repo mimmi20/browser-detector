@@ -27,6 +27,7 @@ stages:
   - test
   - test with coverage
   - integration tests
+  - infection
 
 before_install:
   - stty cols 130
@@ -66,7 +67,9 @@ jobs:
     - stage: composer validate
       php: 7.1
       env: COMPOSER_FLAGS=""
-      script: composer validate
+      script:
+        - composer validate
+        - composer normalize --dry-run
 
     - stage: static code analysis
       php: 7.1
@@ -95,6 +98,18 @@ jobs:
         - TEST="phpunit - integration"
         - COMPOSER_FLAGS=""
       script: php -n vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --columns 121 --verbose
+
+    - stage: infection
+      php: 7.1
+      env:
+        - COVERAGE=yes
+        - COMPOSER_FLAGS=""
+      before_install:
+        - stty cols 120
+        - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+        - echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+        - travis_retry composer self-update
+      script: vendor/bin/infection --min-covered-msi=95 --min-msi=95
 
 notifications:
   email: false

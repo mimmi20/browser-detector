@@ -23,9 +23,10 @@
     }
   ],
   "require": {
-    "ext-json": "*",
     "php": "^7.1",
+    "ext-json": "*",
     "danielstjules/stringy": "^3.1",
+    "localheinz/json-normalizer": "^0.9",
     "mimmi20/browser-detector-loader-interface": "~2.0.5",
     "mimmi20/browser-detector-version": "~5.2.1",
     "mimmi20/json-class": "~1.0.0",
@@ -33,8 +34,7 @@
     "mimmi20/ua-device-type": "~6.0.1",
     "mimmi20/ua-generic-request": "~3.0.2",
     "mimmi20/ua-normalizer": "~3.0.1",
-    "mimmi20/ua-result": "~5.2.5",
-    "mimmi20/ua-result-company": "~3.2.26",
+    "mimmi20/ua-result": "dev-extract-display",
     "peterkahl/apple-ios-build-version": "^59.0",
     "peterkahl/apple-os-x-build-version": "^43.0",
     "psr/http-message": "^1.0",
@@ -45,6 +45,8 @@
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^2.13",
+    "infection/infection": "^0.11.2",
+    "localheinz/composer-normalize": "^1.0.0",
     "pepakriz/phpstan-exception-rules": "^0.3",
     "phpstan/phpstan": "^0.10",
     "phpstan/phpstan-beberlei-assert": "^0.10",
@@ -55,6 +57,10 @@
     "squizlabs/php_codesniffer": "^3.3",
     "symfony/cache": "^4.1",
     "zendframework/zend-diactoros": "^1.8"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
   },
   "autoload": {
     "psr-4": {
