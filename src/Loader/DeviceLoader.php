@@ -100,7 +100,7 @@ class DeviceLoader implements SpecificLoaderInterface
         $display = null;
 
         if (null !== $deviceData->display) {
-            $display = (new DisplayFactory())->fromArray($this->logger, $deviceData->display);
+            $display = (new DisplayFactory())->fromArray($this->logger, (array) $deviceData->display);
         }
 
         $device = new Device(
