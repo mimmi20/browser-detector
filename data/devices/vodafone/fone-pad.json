@@ -1,50 +1,62 @@
 {
   "vodafone vfd 1100": {
-    "codename": "VFD 1100",
+    "deviceName": "VFD 1100",
     "marketingName": "Tab Mini 7",
     "manufacturer": "Vodafone",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "vodafone vfd 1300": {
-    "codename": "VFD 1300",
+    "deviceName": "VFD 1300",
     "marketingName": "Smart Tab N8",
     "manufacturer": "Vodafone",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "vodafone vfd 1400": {
-    "codename": "VFD 1400",
+    "deviceName": "VFD 1400",
     "marketingName": "Tab Prime 7",
     "manufacturer": "Vodafone",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "vodafone vodacom power tab 10": {
-    "codename": "Vodacom Power Tab 10",
+    "deviceName": "Vodacom Power Tab 10",
     "marketingName": "Vodacom Power Tab 10",
     "manufacturer": "Vodafone",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1200,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1200,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

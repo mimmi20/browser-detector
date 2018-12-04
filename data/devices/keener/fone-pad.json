@@ -1,26 +1,32 @@
 {
   "general keener device": {
-    "codename": "general Keener Device",
+    "deviceName": "general Keener Device",
     "marketingName": "general Keener Device",
     "manufacturer": "Keener",
     "brand": "Keener",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "keener k-8s": {
-    "codename": "K-8S",
+    "deviceName": "K-8S",
     "marketingName": "K-8S",
     "manufacturer": "Keener",
     "brand": "Keener",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,38 +1,47 @@
 {
   "general condor device": {
-    "codename": "general Condor Device",
+    "deviceName": "general Condor Device",
     "marketingName": "general Condor Device",
     "manufacturer": "Condor",
     "brand": "Condor",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "condor ctab101l32g": {
-    "codename": "CTAB101L32G",
+    "deviceName": "CTAB101L32G",
     "marketingName": "CTAB101L32G",
     "manufacturer": "Condor",
     "brand": "Condor",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "condor ctab700l": {
-    "codename": "CTAB700L",
+    "deviceName": "CTAB700L",
     "marketingName": "CTAB700L",
     "manufacturer": "Condor",
     "brand": "Condor",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

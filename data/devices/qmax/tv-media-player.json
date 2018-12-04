@@ -1,26 +1,32 @@
 {
   "general qmax device": {
-    "codename": "general Qmax Device",
+    "deviceName": "general Qmax Device",
     "marketingName": "general Qmax Device",
     "manufacturer": "Qmax",
     "brand": "Qmax",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "qmax qt-10": {
-    "codename": "QT-10",
+    "deviceName": "QT-10",
     "marketingName": "QT-10",
     "manufacturer": "Qmax",
     "brand": "Qmax",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

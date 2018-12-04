@@ -1,14 +1,17 @@
 {
   "celkon c64": {
-    "codename": "C64",
+    "deviceName": "C64",
     "marketingName": "C64",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

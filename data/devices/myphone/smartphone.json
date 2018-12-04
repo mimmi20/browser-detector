@@ -1,110 +1,137 @@
 {
   "general myphone device": {
-    "codename": "general myPhone Device",
+    "deviceName": "general myPhone Device",
     "marketingName": "general myPhone Device",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myphone a888": {
-    "codename": "A888",
+    "deviceName": "A888",
     "marketingName": "A888",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myphone a919 duo": {
-    "codename": "A919 Duo",
+    "deviceName": "A919 Duo",
     "marketingName": "A919 Duo",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myphone axe 3g": {
-    "codename": "Axe 3G",
+    "deviceName": "Axe 3G",
     "marketingName": "Axe 3G",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myphone axe lte": {
-    "codename": "Axe LTE",
+    "deviceName": "Axe LTE",
     "marketingName": "Axe LTE",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myphone cube": {
-    "codename": "Cube",
+    "deviceName": "Cube",
     "marketingName": "Cube",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myphone cube lte": {
-    "codename": "Cube LTE",
+    "deviceName": "Cube LTE",
     "marketingName": "Cube LTE",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myphone hammer active": {
-    "codename": "Hammer Active",
+    "deviceName": "Hammer Active",
     "marketingName": "Hammer Active",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myphone infinity 2 lte": {
-    "codename": "Infinity 2 LTE",
+    "deviceName": "Infinity 2 LTE",
     "marketingName": "Infinity 2 LTE",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

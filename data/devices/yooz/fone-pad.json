@@ -1,38 +1,47 @@
 {
   "general yooz device": {
-    "codename": "general Yooz Device",
+    "deviceName": "general Yooz Device",
     "marketingName": "general Yooz Device",
     "manufacturer": "Yooz",
     "brand": "Yooz",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "yooz mypad 1000 hd": {
-    "codename": "MyPad 1000 HD",
+    "deviceName": "MyPad 1000 HD",
     "marketingName": "MyPad 1000 HD",
     "manufacturer": "Yooz",
     "brand": "Yooz",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "yooz mypad 750 hd": {
-    "codename": "MyPad 750 HD",
+    "deviceName": "MyPad 750 HD",
     "marketingName": "MyPad 750 HD",
     "manufacturer": "Yooz",
     "brand": "Yooz",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

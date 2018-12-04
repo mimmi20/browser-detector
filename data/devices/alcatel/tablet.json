@@ -1,146 +1,182 @@
 {
   "alcatel 9007a": {
-    "codename": "9007A",
+    "deviceName": "9007A",
     "marketingName": "9007A",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 960,
-    "resolutionHeight": 540,
-    "dualOrientation": true
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel 9007t": {
-    "codename": "9007T",
+    "deviceName": "9007T",
     "marketingName": "9007T",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 960,
-    "resolutionHeight": 540,
-    "dualOrientation": true
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel 9007x": {
-    "codename": "9007X",
+    "deviceName": "9007X",
     "marketingName": "9007X",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 960,
-    "resolutionHeight": 540,
-    "dualOrientation": true
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel evo 7": {
-    "codename": "Evo 7",
+    "deviceName": "Evo 7",
     "marketingName": "OneTouch Evo 7",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel evo 7 hd": {
-    "codename": "Evo 7 HD",
+    "deviceName": "Evo 7 HD",
     "marketingName": "OneTouch Evo 7 HD",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel i213": {
-    "codename": "I213",
+    "deviceName": "I213",
     "marketingName": "OneTouch Pixi 7",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel ot-tab7": {
-    "codename": "OT-TAB7",
+    "deviceName": "OT-TAB7",
     "marketingName": "OneTouch Tab 7",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel ot-tab7hd": {
-    "codename": "OT-TAB7HD",
+    "deviceName": "OT-TAB7HD",
     "marketingName": "OneTouch Tab 7 HD",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel ot-tab8hd": {
-    "codename": "OT-TAB8HD",
+    "deviceName": "OT-TAB8HD",
     "marketingName": "OneTouch Tab 8 HD",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel t10": {
-    "codename": "T10",
+    "deviceName": "T10",
     "marketingName": "OneTouch T10",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel t20": {
-    "codename": "T20",
+    "deviceName": "T20",
     "marketingName": "OneTouch T20",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alcatel telekom puls": {
-    "codename": "Puls",
+    "deviceName": "Puls",
     "marketingName": "Puls",
     "manufacturer": "Alcatel",
     "brand": "Telekom",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general dfunc device": {
-    "codename": "general DFunc Device",
+    "deviceName": "general DFunc Device",
     "marketingName": "general DFunc Device",
     "manufacturer": "Dfunc",
     "brand": "Dfunc",
-    "platform": "android",
     "type": "mobile-console",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "func titan-02": {
-    "codename": "Func Titan-02",
+    "deviceName": "Func Titan-02",
     "marketingName": "Func Titan-02",
     "manufacturer": "Dfunc",
     "brand": "Dfunc",
-    "platform": "android",
     "type": "mobile-console",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

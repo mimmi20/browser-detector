@@ -1,386 +1,482 @@
 {
   "general arnova device": {
-    "codename": "general Arnova Device",
+    "deviceName": "general Arnova Device",
     "marketingName": "general Arnova Device",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 101 g4": {
-    "codename": "101 G4",
+    "deviceName": "101 G4",
     "marketingName": "101 G4",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 10d g3": {
-    "codename": "10D G3",
+    "deviceName": "10D G3",
     "marketingName": "10D G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 7b g2 dt": {
-    "codename": "7B G2 DT",
+    "deviceName": "7B G2 DT",
     "marketingName": "7B G2 DT",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 7c g2": {
-    "codename": "7C G2",
+    "deviceName": "7C G2",
     "marketingName": "7C G2",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 7d g3": {
-    "codename": "7D G3",
+    "deviceName": "7D G3",
     "marketingName": "7D G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 7d g3b": {
-    "codename": "7D G3B",
+    "deviceName": "7D G3B",
     "marketingName": "7D G3B",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 7e g3": {
-    "codename": "7E G3",
+    "deviceName": "7E G3",
     "marketingName": "7E G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 7f g3": {
-    "codename": "7F G3",
+    "deviceName": "7F G3",
     "marketingName": "7F G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 90g3": {
-    "codename": "90G3",
+    "deviceName": "90G3",
     "marketingName": "90 G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 90g4": {
-    "codename": "90G4",
+    "deviceName": "90G4",
     "marketingName": "90 G4",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova 97g4": {
-    "codename": "97G4",
+    "deviceName": "97G4",
     "marketingName": "97 G4",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an10bg2": {
-    "codename": "AN10BG2",
+    "deviceName": "AN10BG2",
     "marketingName": "10B G2",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an10bg2dt": {
-    "codename": "AN10BG2DT",
+    "deviceName": "AN10BG2DT",
     "marketingName": "10B G2 DT",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an10bg2i": {
-    "codename": "AN10BG2I",
+    "deviceName": "AN10BG2I",
     "marketingName": "10B G2 I",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an10bg3": {
-    "codename": "AN10BG3",
+    "deviceName": "AN10BG3",
     "marketingName": "10B G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an10cg3": {
-    "codename": "AN10CG3",
+    "deviceName": "AN10CG3",
     "marketingName": "10C G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an10g2": {
-    "codename": "AN10G2",
+    "deviceName": "AN10G2",
     "marketingName": "10 G2",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an7cg3": {
-    "codename": "AN7CG3",
+    "deviceName": "AN7CG3",
     "marketingName": "7C G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an7g2": {
-    "codename": "AN7G2",
+    "deviceName": "AN7G2",
     "marketingName": "7 G2",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an7g2dte": {
-    "codename": "AN7G2DTE",
+    "deviceName": "AN7G2DTE",
     "marketingName": "7E G2",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an7g2i": {
-    "codename": "AN7G2I",
+    "deviceName": "AN7G2I",
     "marketingName": "7 G2 I",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an7g3": {
-    "codename": "AN7G3",
+    "deviceName": "AN7G3",
     "marketingName": "7 G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an7hg3": {
-    "codename": "AN7HG3",
+    "deviceName": "AN7HG3",
     "marketingName": "7H G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an8bg3": {
-    "codename": "AN8BG3",
+    "deviceName": "AN8BG3",
     "marketingName": "8B G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an8cg3": {
-    "codename": "AN8CG3",
+    "deviceName": "AN8CG3",
     "marketingName": "8C G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an8g2i": {
-    "codename": "AN8G2I",
+    "deviceName": "AN8G2I",
     "marketingName": "8 G2I",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an8g3": {
-    "codename": "AN8G3",
+    "deviceName": "AN8G3",
     "marketingName": "8 G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an9g2": {
-    "codename": "AN9G2",
+    "deviceName": "AN9G2",
     "marketingName": "9 G2",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an9g2i": {
-    "codename": "AN9G2I",
+    "deviceName": "AN9G2I",
     "marketingName": "9 G2I",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova an9g3": {
-    "codename": "AN9G3",
+    "deviceName": "AN9G3",
     "marketingName": "9 G3",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "arnova archm901": {
-    "codename": "ARCHM901",
+    "deviceName": "ARCHM901",
     "marketingName": "ARCHM901",
     "manufacturer": "Arnova",
     "brand": "Arnova",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

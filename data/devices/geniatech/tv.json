@@ -1,26 +1,32 @@
 {
   "general geniatech device": {
-    "codename": "general Geniatech Device",
+    "deviceName": "general Geniatech Device",
     "marketingName": "general Geniatech Device",
     "manufacturer": "Geniatech",
     "brand": "Geniatech",
-    "platform": "android",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "geniatech mx enjoy tv box": {
-    "codename": "MX Enjoy TV BOX",
+    "deviceName": "MX Enjoy TV BOX",
     "marketingName": "MX Enjoy TV BOX",
     "manufacturer": "Geniatech",
     "brand": "Geniatech",
-    "platform": "android",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

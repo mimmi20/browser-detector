@@ -1,26 +1,32 @@
 {
   "general beeline device": {
-    "codename": "general Beeline Device",
+    "deviceName": "general Beeline Device",
     "marketingName": "general Beeline Device",
     "manufacturer": "Beeline",
     "brand": "Beeline",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "beeline tab": {
-    "codename": "Tab",
+    "deviceName": "Tab",
     "marketingName": "Tab",
     "manufacturer": "Beeline",
     "brand": "Beeline",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

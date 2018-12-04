@@ -1,398 +1,497 @@
 {
   "mediacom m-ipro110b": {
-    "codename": "M-IPRO110B",
+    "deviceName": "M-IPRO110B",
     "marketingName": "SmartPad 10.1 HD",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-ipro800b": {
-    "codename": "M-IPRO800B",
+    "deviceName": "M-IPRO800B",
     "marketingName": "SmartPad HD iPro 800 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-ipro810b": {
-    "codename": "M-IPRO810B",
+    "deviceName": "M-IPRO810B",
     "marketingName": "SmartPad HD iPro 810 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-ipro810w": {
-    "codename": "M-IPRO810W",
+    "deviceName": "M-IPRO810W",
     "marketingName": "SmartPad HD iPro 810 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp101s2": {
-    "codename": "M-MP101S2",
+    "deviceName": "M-MP101S2",
     "marketingName": "SmartPad 10.1 S2",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp1040m": {
-    "codename": "M-MP1040M",
+    "deviceName": "M-MP1040M",
     "marketingName": "SmartPad 10.1 S4 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp1040mc": {
-    "codename": "M-MP1040MC",
+    "deviceName": "M-MP1040MC",
     "marketingName": "SmartPad 10.1 S4 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp10pa3g": {
-    "codename": "M-MP10PA3G",
+    "deviceName": "M-MP10PA3G",
     "marketingName": "SmartPad 10.1 HD Pro 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp1s2a3g": {
-    "codename": "M-MP1S2A3G",
+    "deviceName": "M-MP1S2A3G",
     "marketingName": "SmartPad S2",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp1s4a3g": {
-    "codename": "M-MP1S4A3G",
+    "deviceName": "M-MP1S4A3G",
     "marketingName": "SmartPad 10.1 S4 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp1s4b3g": {
-    "codename": "M-MP1S4B3G",
+    "deviceName": "M-MP1S4B3G",
     "marketingName": "SmartPad 10.1 S4 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp720m": {
-    "codename": "M-MP720M",
+    "deviceName": "M-MP720M",
     "marketingName": "SmartPad 7.0 Mobile",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp721m": {
-    "codename": "M-MP721M",
+    "deviceName": "M-MP721M",
     "marketingName": "SmartPad 7.0 Mobile",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp75s23g": {
-    "codename": "M-MP75S23G",
+    "deviceName": "M-MP75S23G",
     "marketingName": "SmartPad 7.0 Mobile",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp7s2a3g": {
-    "codename": "M-MP7S2A3G",
+    "deviceName": "M-MP7S2A3G",
     "marketingName": "SmartPad 7.0 S2 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp7s2b3g": {
-    "codename": "M-MP7S2B3G",
+    "deviceName": "M-MP7S2B3G",
     "marketingName": "SmartPad 7.0 S2 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp7s2d3g": {
-    "codename": "M-MP7S2D3G",
+    "deviceName": "M-MP7S2D3G",
     "marketingName": "SmartPad 7.0 S2 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp7s2k3g": {
-    "codename": "M-MP7S2K3G",
+    "deviceName": "M-MP7S2K3G",
     "marketingName": "SmartPad 7.0 S2 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp82s4": {
-    "codename": "M-MP82S4",
+    "deviceName": "M-MP82S4",
     "marketingName": "SmartPad 8.0 S4",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp840m": {
-    "codename": "M-MP840M",
+    "deviceName": "M-MP840M",
     "marketingName": "SmartPad 8.0 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp842m": {
-    "codename": "M-MP842M",
+    "deviceName": "M-MP842M",
     "marketingName": "SmartPad 8.0 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp84s4": {
-    "codename": "M-MP84S4",
+    "deviceName": "M-MP84S4",
     "marketingName": "SmartPad 8.0 S4",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp85s23g": {
-    "codename": "M-MP85S23G",
+    "deviceName": "M-MP85S23G",
     "marketingName": "SmartPad 875 S2 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp8pa3g": {
-    "codename": "M-MP8PA3G",
+    "deviceName": "M-MP8PA3G",
     "marketingName": "SmartPad 8.0 Pro 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp8s23g": {
-    "codename": "M-MP8S23G",
+    "deviceName": "M-MP8S23G",
     "marketingName": "SmartPad 8.0 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp8s2a3g": {
-    "codename": "M-MP8S2A3G",
+    "deviceName": "M-MP8S2A3G",
     "marketingName": "SmartPad 8.0 S2 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp8s2b3g": {
-    "codename": "M-MP8S2B3G",
+    "deviceName": "M-MP8S2B3G",
     "marketingName": "SmartPad 8.0 S2 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp8s4a3g": {
-    "codename": "M-MP8S4A3G",
+    "deviceName": "M-MP8S4A3G",
     "marketingName": "SmartPad 8.0 S4 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp8s4b3g": {
-    "codename": "M-MP8S4B3G",
+    "deviceName": "M-MP8S4B3G",
     "marketingName": "Smartpad S4 3G 8.0",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-mp9s4a3g": {
-    "codename": "M-MP9S4A3G",
+    "deviceName": "M-MP9S4A3G",
     "marketingName": "SmartPad 9.7 S4 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-ppg700": {
-    "codename": "M-PPG700",
+    "deviceName": "M-PPG700",
     "marketingName": "PhonePad G700 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom m-sp10hxxh": {
-    "codename": "M-SP10HXxH",
+    "deviceName": "M-SP10HXxH",
     "marketingName": "M-SP10HXxH",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mediacom smartpad 750 3g": {
-    "codename": "SmartPad 750 3G",
+    "deviceName": "SmartPad 750 3G",
     "marketingName": "SmartPad 750 3G",
     "manufacturer": "Mediacom",
     "brand": "Mediacom",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

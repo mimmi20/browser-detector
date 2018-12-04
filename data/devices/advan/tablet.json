@@ -1,26 +1,32 @@
 {
   "general advan device": {
-    "codename": "general Advan Device",
+    "deviceName": "general Advan Device",
     "marketingName": "general Advan Device",
     "manufacturer": "Advan",
     "brand": "Advan",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "advan t1l": {
-    "codename": "T1L",
+    "deviceName": "T1L",
     "marketingName": "T1L",
     "manufacturer": "Advan",
     "brand": "Advan",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

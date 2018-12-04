@@ -1,26 +1,32 @@
 {
   "general hdc device": {
-    "codename": "general HDC Device",
+    "deviceName": "general HDC Device",
     "marketingName": "general HDC Device",
     "manufacturer": "Hdc",
     "brand": "Hdc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hdc i9300": {
-    "codename": "i9300",
+    "deviceName": "i9300",
     "marketingName": "Galaxy S3 EX",
     "manufacturer": "Hdc",
     "brand": "Hdc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

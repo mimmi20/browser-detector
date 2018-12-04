@@ -1,578 +1,722 @@
 {
   "general gionee device": {
-    "codename": "general Gionee Device",
+    "deviceName": "general Gionee Device",
     "marketingName": "general Gionee Device",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "gionee a1 lite": {
-    "codename": "A1 Lite",
+    "deviceName": "A1 Lite",
     "marketingName": "A1 Lite",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee c600": {
-    "codename": "C600",
+    "deviceName": "C600",
     "marketingName": "C600",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee c610": {
-    "codename": "C610",
+    "deviceName": "C610",
     "marketingName": "C610",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee dream d1": {
-    "codename": "Dream D1",
+    "deviceName": "Dream D1",
     "marketingName": "Dream D1",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee e6": {
-    "codename": "Elife E6",
+    "deviceName": "Elife E6",
     "marketingName": "Elife E6",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee e7": {
-    "codename": "E7",
+    "deviceName": "E7",
     "marketingName": "Elife E7",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee f103": {
-    "codename": "F103",
+    "deviceName": "F103",
     "marketingName": "F103",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee f103 pro": {
-    "codename": "F103 Pro",
+    "deviceName": "F103 Pro",
     "marketingName": "F103 Pro",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn100": {
-    "codename": "GN100",
+    "deviceName": "GN100",
     "marketingName": "GN100",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn100t": {
-    "codename": "GN100T",
+    "deviceName": "GN100T",
     "marketingName": "GN100T",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn139": {
-    "codename": "GN139",
+    "deviceName": "GN139",
     "marketingName": "GN139",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn160t": {
-    "codename": "GN160T",
+    "deviceName": "GN160T",
     "marketingName": "GN160T",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn205": {
-    "codename": "GN205",
+    "deviceName": "GN205",
     "marketingName": "GN205",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn700w": {
-    "codename": "GN700W",
+    "deviceName": "GN700W",
     "marketingName": "GN700W",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn705w": {
-    "codename": "GN705W",
+    "deviceName": "GN705W",
     "marketingName": "GN705W",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn800": {
-    "codename": "GN800",
+    "deviceName": "GN800",
     "marketingName": "GN800",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn810": {
-    "codename": "GN810",
+    "deviceName": "GN810",
     "marketingName": "GN810",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn868": {
-    "codename": "GN868",
+    "deviceName": "GN868",
     "marketingName": "GN868",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn878": {
-    "codename": "GN878",
+    "deviceName": "GN878",
     "marketingName": "GN878",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn9000": {
-    "codename": "GN9000",
+    "deviceName": "GN9000",
     "marketingName": "Elife S5.5",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn9000l": {
-    "codename": "GN9000L",
+    "deviceName": "GN9000L",
     "marketingName": "Elife S5.5",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn9001": {
-    "codename": "GN9001",
+    "deviceName": "GN9001",
     "marketingName": "Elife E7 Mini",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn9002": {
-    "codename": "GN9002",
+    "deviceName": "GN9002",
     "marketingName": "Elife E7",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn9004": {
-    "codename": "GN9004",
+    "deviceName": "GN9004",
     "marketingName": "Elife E7L",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn9005": {
-    "codename": "GN9005",
+    "deviceName": "GN9005",
     "marketingName": "Elife S5.1",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn9006": {
-    "codename": "GN9006",
+    "deviceName": "GN9006",
     "marketingName": "Elife S7",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gn9008": {
-    "codename": "GN9008",
+    "deviceName": "GN9008",
     "marketingName": "Elife E8",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gpad g1": {
-    "codename": "Gpad G1",
+    "deviceName": "Gpad G1",
     "marketingName": "Gpad G1",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee gpad g2": {
-    "codename": "Gpad G2",
+    "deviceName": "Gpad G2",
     "marketingName": "Gpad G2",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee m3": {
-    "codename": "M3",
+    "deviceName": "M3",
     "marketingName": "Marathon M3",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee m5": {
-    "codename": "M5",
+    "deviceName": "M5",
     "marketingName": "Marathon M5",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee m5 lite": {
-    "codename": "M5 Lite",
+    "deviceName": "M5 Lite",
     "marketingName": "M5 Lite",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee m5 plus": {
-    "codename": "M5 Plus",
+    "deviceName": "M5 Plus",
     "marketingName": "Marathon M5 Plus",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee p2": {
-    "codename": "P2",
+    "deviceName": "P2",
     "marketingName": "Pioneer P2",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee p7": {
-    "codename": "P7",
+    "deviceName": "P7",
     "marketingName": "P7",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee p7 max": {
-    "codename": "P7 Max",
+    "deviceName": "P7 Max",
     "marketingName": "P7 Max",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee pioneer": {
-    "codename": "Pioneer",
+    "deviceName": "Pioneer",
     "marketingName": "Pioneer",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee pioneer e60w": {
-    "codename": "Pioneer E60w",
+    "deviceName": "Pioneer E60w",
     "marketingName": "Pioneer E60w",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee pioneer e71t": {
-    "codename": "Pioneer E71t",
+    "deviceName": "Pioneer E71t",
     "marketingName": "Pioneer E71t",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee pioneer e80w": {
-    "codename": "Pioneer E80w",
+    "deviceName": "Pioneer E80w",
     "marketingName": "Pioneer E80w",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee pioneer p1": {
-    "codename": "Pioneer P1",
+    "deviceName": "Pioneer P1",
     "marketingName": "Pioneer P1",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee pioneer s90w": {
-    "codename": "Pioneer S90w",
+    "deviceName": "Pioneer S90w",
     "marketingName": "Pioneer S90w",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee v182": {
-    "codename": "V182",
+    "deviceName": "V182",
     "marketingName": "V182",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee v185": {
-    "codename": "V185",
+    "deviceName": "V185",
     "marketingName": "V185",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee v188": {
-    "codename": "V188",
+    "deviceName": "V188",
     "marketingName": "V188",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee v188s": {
-    "codename": "V188S",
+    "deviceName": "V188S",
     "marketingName": "V188S",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gionee v6l": {
-    "codename": "V6L",
+    "deviceName": "V6L",
     "marketingName": "Ctrl",
     "manufacturer": "Gionee",
     "brand": "Gionee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

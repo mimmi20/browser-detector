@@ -1,50 +1,62 @@
 {
   "general verico device": {
-    "codename": "general Verico Device",
+    "deviceName": "general Verico Device",
     "marketingName": "general Verico Device",
     "manufacturer": "Verico",
     "brand": "Verico",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "verico m1bgv": {
-    "codename": "UQ785-M1BGV",
+    "deviceName": "UQ785-M1BGV",
     "marketingName": "Uni Pad 7.8",
     "manufacturer": "Verico",
     "brand": "Verico",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "verico rp-udm01a": {
-    "codename": "RP-UDM01A",
+    "deviceName": "RP-UDM01A",
     "marketingName": "Uni Pad",
     "manufacturer": "Verico",
     "brand": "Verico",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "verico rp-udm02a": {
-    "codename": "RP-UDM02A",
+    "deviceName": "RP-UDM02A",
     "marketingName": "Uni Pad",
     "manufacturer": "Verico",
     "brand": "Verico",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

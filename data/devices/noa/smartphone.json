@@ -1,26 +1,32 @@
 {
   "general noa device": {
-    "codename": "general Noa Device",
+    "deviceName": "general Noa Device",
     "marketingName": "general Noa Device",
     "manufacturer": "Noa",
     "brand": "Noa",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "noa h8se": {
-    "codename": "H8se",
+    "deviceName": "H8se",
     "marketingName": "H8se",
     "manufacturer": "Noa",
     "brand": "Noa",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

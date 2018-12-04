@@ -1,26 +1,32 @@
 {
   "technisat aqiston aqipad 7g": {
-    "codename": "Aqiston Aqipad 7G",
+    "deviceName": "Aqiston Aqipad 7G",
     "marketingName": "Aqiston Aqipad 7G",
     "manufacturer": "TechniSat",
     "brand": "TechniSat",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "technisat technipad 10": {
-    "codename": "TechniPad 10",
+    "deviceName": "TechniPad 10",
     "marketingName": "TechniPad 10",
     "manufacturer": "TechniSat",
     "brand": "TechniSat",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

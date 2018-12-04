@@ -1,26 +1,32 @@
 {
   "general vertex device": {
-    "codename": "general Vertex Device",
+    "deviceName": "general Vertex Device",
     "marketingName": "general Vertex Device",
     "manufacturer": "Vertex",
     "brand": "Vertex",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "vertex impress l": {
-    "codename": "Impress L",
+    "deviceName": "Impress L",
     "marketingName": "Impress L",
     "manufacturer": "Vertex",
     "brand": "Vertex",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

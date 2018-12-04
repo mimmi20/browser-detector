@@ -1,26 +1,32 @@
 {
   "general vizio device": {
-    "codename": "general Vizio Device",
+    "deviceName": "general Vizio Device",
     "marketingName": "general Vizio Device",
     "manufacturer": "Vizio",
     "brand": "Vizio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "vizio vtab1008": {
-    "codename": "VTAB1008",
+    "deviceName": "VTAB1008",
     "marketingName": "VTAB1008",
     "manufacturer": "Vizio",
     "brand": "Vizio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

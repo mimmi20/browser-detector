@@ -1,110 +1,137 @@
 {
   "general voto device": {
-    "codename": "general Voto Device",
+    "deviceName": "general Voto Device",
     "marketingName": "general Voto Device",
     "manufacturer": "Voto",
     "brand": "Voto",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "voto t8100": {
-    "codename": "T8100",
+    "deviceName": "T8100",
     "marketingName": "T8100",
     "manufacturer": "Voto",
     "brand": "Voto",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "voto vt808": {
-    "codename": "VT808",
+    "deviceName": "VT808",
     "marketingName": "VT808",
     "manufacturer": "Voto",
     "brand": "Voto",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "voto vt818": {
-    "codename": "VT818",
+    "deviceName": "VT818",
     "marketingName": "VT818",
     "manufacturer": "Voto",
     "brand": "Voto",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "voto vt818+": {
-    "codename": "VT818+",
+    "deviceName": "VT818+",
     "marketingName": "VT818+",
     "manufacturer": "Voto",
     "brand": "Voto",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "voto vt888": {
-    "codename": "VT888",
+    "deviceName": "VT888",
     "marketingName": "VT888",
     "manufacturer": "Voto",
     "brand": "Voto",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "voto vt898": {
-    "codename": "VT898",
+    "deviceName": "VT898",
     "marketingName": "VT898",
     "manufacturer": "Voto",
     "brand": "Voto",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "voto x2": {
-    "codename": "X2",
+    "deviceName": "X2",
     "marketingName": "X2",
     "manufacturer": "Voto",
     "brand": "Voto",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "voto x6": {
-    "codename": "X6",
+    "deviceName": "X6",
     "marketingName": "X6",
     "manufacturer": "Voto",
     "brand": "Voto",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,38 +1,47 @@
 {
   "general theq device": {
-    "codename": "general TheQ Device",
+    "deviceName": "general TheQ Device",
     "marketingName": "general TheQ Device",
     "manufacturer": "TheQ",
     "brand": "TheQ",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "theq tp31-3g": {
-    "codename": "TP31-3G",
+    "deviceName": "TP31-3G",
     "marketingName": "TP31-3G",
     "manufacturer": "TheQ",
     "brand": "TheQ",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "theq tp41-3g": {
-    "codename": "TP41-3G",
+    "deviceName": "TP41-3G",
     "marketingName": "TP41-3G",
     "manufacturer": "TheQ",
     "brand": "TheQ",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

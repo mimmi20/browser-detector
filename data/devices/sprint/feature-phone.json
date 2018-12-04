@@ -1,38 +1,47 @@
 {
   "general sprint device": {
-    "codename": "general Sprint Device",
+    "deviceName": "general Sprint Device",
     "marketingName": "general Sprint Device",
     "manufacturer": "Sprint",
     "brand": "Sprint",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "sprint 6700": {
-    "codename": "Apache",
+    "deviceName": "Apache",
     "marketingName": "6700",
     "manufacturer": "Htc",
     "brand": "Sprint",
-    "platform": null,
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "sprint s2151": {
-    "codename": "S2151",
+    "deviceName": "S2151",
     "marketingName": "Coast",
     "manufacturer": "Kyocera",
     "brand": "Sprint",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   }
 }

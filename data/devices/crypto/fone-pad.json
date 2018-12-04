@@ -1,26 +1,32 @@
 {
   "general crypto device": {
-    "codename": "general Crypto Device",
+    "deviceName": "general Crypto Device",
     "marketingName": "general Crypto Device",
     "manufacturer": "Crypto",
     "brand": "Crypto",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "crypto q8002": {
-    "codename": "Q8002",
+    "deviceName": "Q8002",
     "marketingName": "Q8002",
     "manufacturer": "Crypto",
     "brand": "Crypto",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general gooweel device": {
-    "codename": "general Gooweel Device",
+    "deviceName": "general Gooweel Device",
     "marketingName": "general Gooweel Device",
     "manufacturer": "Gooweel",
     "brand": "Gooweel",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gooweel ga10h": {
-    "codename": "GA10H",
+    "deviceName": "GA10H",
     "marketingName": "GA10H",
     "manufacturer": "Gooweel",
     "brand": "Gooweel",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

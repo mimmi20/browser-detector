@@ -1,14 +1,17 @@
 {
   "kddi is04": {
-    "codename": "IS04",
+    "deviceName": "IS04",
     "marketingName": "Regza IS04",
     "manufacturer": "Kddi",
     "brand": "Fujitsu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

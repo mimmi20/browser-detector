@@ -1,14 +1,17 @@
 {
   "technisat technipad 10 3g": {
-    "codename": "TechniPad 10 3G",
+    "deviceName": "TechniPad 10 3G",
     "marketingName": "TechniPad 10 3G",
     "manufacturer": "TechniSat",
     "brand": "TechniSat",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general microsoft device": {
-    "codename": "general Microsoft Device",
+    "deviceName": "general Microsoft Device",
     "marketingName": "general Microsoft Device",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows"
   },
   "microsoft windows rt tablet": {
-    "codename": "Windows RT Tablet",
+    "deviceName": "Windows RT Tablet",
     "marketingName": "Windows RT Tablet",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   }
 }

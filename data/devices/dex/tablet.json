@@ -1,26 +1,32 @@
 {
   "general dex device": {
-    "codename": "general DEX Device",
+    "deviceName": "general DEX Device",
     "marketingName": "general DEX Device",
     "manufacturer": "Dex",
     "brand": "Dex",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dex ip1020": {
-    "codename": "iP1020",
+    "deviceName": "iP1020",
     "marketingName": "iP1020",
     "manufacturer": "Dex",
     "brand": "Dex",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

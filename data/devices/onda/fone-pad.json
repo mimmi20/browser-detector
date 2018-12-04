@@ -1,26 +1,32 @@
 {
   "onda v10 4g": {
-    "codename": "V10 4G",
+    "deviceName": "V10 4G",
     "marketingName": "V10 4G",
     "manufacturer": "Onda",
     "brand": "Onda",
-    "platform": null,
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "onda v919 3g air": {
-    "codename": "V919",
+    "deviceName": "V919",
     "marketingName": "Air 3G",
     "manufacturer": "Onda",
     "brand": "Onda",
-    "platform": null,
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   }
 }

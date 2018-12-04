@@ -1,26 +1,32 @@
 {
   "general elebest-germany device": {
-    "codename": "general Faktor Zwei Device",
+    "deviceName": "general Faktor Zwei Device",
     "marketingName": "general Faktor Zwei Device",
     "manufacturer": "Elebest Germany",
     "brand": "Elebest Germany",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elebest-germany op109 4g": {
-    "codename": "OP109 4G",
+    "deviceName": "OP109 4G",
     "marketingName": "OP109 4G",
     "manufacturer": "Elebest Germany",
     "brand": "Elebest Germany",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

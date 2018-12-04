@@ -1,38 +1,47 @@
 {
   "technisat digicorder isio s": {
-    "codename": "DigiCorder ISIO S",
+    "deviceName": "DigiCorder ISIO S",
     "marketingName": "DigiCorder ISIO S",
     "manufacturer": "TechniSat",
     "brand": "TechniSat",
-    "platform": "linux",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "linux"
   },
   "technisat digit isio s": {
-    "codename": "DIGIT ISIO S",
+    "deviceName": "DIGIT ISIO S",
     "marketingName": "DIGIT ISIO S",
     "manufacturer": "TechniSat",
     "brand": "TechniSat",
-    "platform": "linux",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "linux"
   },
   "technisat multyvision isio": {
-    "codename": "MultyVision ISIO",
+    "deviceName": "MultyVision ISIO",
     "marketingName": "MultyVision ISIO",
     "manufacturer": "TechniSat",
     "brand": "TechniSat",
-    "platform": "linux",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "linux"
   }
 }

@@ -1,26 +1,32 @@
 {
   "nintendo wii": {
-    "codename": "Wii",
+    "deviceName": "Wii",
     "marketingName": "Wii",
     "manufacturer": "Nintendo",
     "brand": "Nintendo",
-    "platform": null,
     "type": "tv-console",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "nintendo wiiu": {
-    "codename": "WiiU",
+    "deviceName": "WiiU",
     "marketingName": "WiiU",
     "manufacturer": "Nintendo",
     "brand": "Nintendo",
-    "platform": null,
     "type": "tv-console",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

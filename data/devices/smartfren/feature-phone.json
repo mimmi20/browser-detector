@@ -1,14 +1,17 @@
 {
   "smartfren e781a": {
-    "codename": "E781A",
+    "deviceName": "E781A",
     "marketingName": "Xstream",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   }
 }

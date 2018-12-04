@@ -1,38 +1,47 @@
 {
   "general keneksi device": {
-    "codename": "general Keneksi Device",
+    "deviceName": "general Keneksi Device",
     "marketingName": "general Keneksi Device",
     "manufacturer": "Keneksi",
     "brand": "Keneksi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "keneksi crystal": {
-    "codename": "Crystal",
+    "deviceName": "Crystal",
     "marketingName": "Crystal",
     "manufacturer": "Keneksi",
     "brand": "Keneksi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "keneksi norma 2": {
-    "codename": "Norma 2",
+    "deviceName": "Norma 2",
     "marketingName": "Norma 2",
     "manufacturer": "Keneksi",
     "brand": "Keneksi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

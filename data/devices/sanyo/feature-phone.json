@@ -1,98 +1,122 @@
 {
   "general sanyo device": {
-    "codename": "general Sanyo Device",
+    "deviceName": "general Sanyo Device",
     "marketingName": "general Sanyo Device",
     "manufacturer": "Sanyo",
     "brand": "Sanyo",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "sanyo e4100": {
-    "codename": "E4100",
+    "deviceName": "E4100",
     "marketingName": "Taho",
     "manufacturer": "Sanyo",
     "brand": "Sanyo",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "sanyo pm8200": {
-    "codename": "PM-8200",
+    "deviceName": "PM-8200",
     "marketingName": "PM-8200",
     "manufacturer": "Sanyo",
     "brand": "Sanyo",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 132,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 132,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "sanyo scp3810": {
-    "codename": "SCP-3810",
+    "deviceName": "SCP-3810",
     "marketingName": "SCP-3810",
     "manufacturer": "Sanyo",
     "brand": "Sanyo",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "sanyo scp588cn": {
-    "codename": "SCP-588CN",
+    "deviceName": "SCP-588CN",
     "marketingName": "SCP-588CN",
     "manufacturer": "Sanyo",
     "brand": "Sanyo",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 176,
-    "resolutionHeight": 136,
-    "dualOrientation": false
+    "display": {
+      "width": 176,
+      "height": 136,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "sanyo scp6750": {
-    "codename": "SCP-6750",
+    "deviceName": "SCP-6750",
     "marketingName": "Katana Eclipse",
     "manufacturer": "Sanyo",
     "brand": "Sanyo",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 176,
-    "resolutionHeight": 220,
-    "dualOrientation": false
+    "display": {
+      "width": 176,
+      "height": 220,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "sanyo scp6760": {
-    "codename": "SCP-6760",
+    "deviceName": "SCP-6760",
     "marketingName": "Incognito",
     "manufacturer": "Sanyo",
     "brand": "Sanyo",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "sanyo scp6780": {
-    "codename": "SCP-6780",
+    "deviceName": "SCP-6780",
     "marketingName": "Innuendo",
     "manufacturer": "Sanyo",
     "brand": "Sanyo",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 400,
-    "resolutionHeight": 280,
-    "dualOrientation": false
+    "display": {
+      "width": 400,
+      "height": 280,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   }
 }

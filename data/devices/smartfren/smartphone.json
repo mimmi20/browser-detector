@@ -1,134 +1,167 @@
 {
   "general smartfren device": {
-    "codename": "general Smartfren Device",
+    "deviceName": "general Smartfren Device",
     "marketingName": "general Smartfren Device",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren a16c3h": {
-    "codename": "A16C3H",
+    "deviceName": "A16C3H",
     "marketingName": "Andromax A",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren ad682h": {
-    "codename": "Andromax AD682H",
+    "deviceName": "Andromax AD682H",
     "marketingName": "Andromax AD682H",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren ad688g": {
-    "codename": "Andromax AD688G",
+    "deviceName": "Andromax AD688G",
     "marketingName": "Andromax C2",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren ad689g": {
-    "codename": "Andromax AD689G",
+    "deviceName": "Andromax AD689G",
     "marketingName": "Andromax i3",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren ad6b1h": {
-    "codename": "Andromax AD6B1H",
+    "deviceName": "Andromax AD6B1H",
     "marketingName": "Andromax G2 Hot",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren ad9a1h": {
-    "codename": "Andromax AD9A1H",
+    "deviceName": "Andromax AD9A1H",
     "marketingName": "Andromax G2",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren andromax c": {
-    "codename": "Andromax C",
+    "deviceName": "Andromax C",
     "marketingName": "Andromax C",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren andromax u": {
-    "codename": "Andromax U",
+    "deviceName": "Andromax U",
     "marketingName": "Andromax U",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren new andromax-i": {
-    "codename": "New Andromax-i",
+    "deviceName": "New Andromax-i",
     "marketingName": "New Andromax-i",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren pd6d1j": {
-    "codename": "PD6D1J",
+    "deviceName": "PD6D1J",
     "marketingName": "Andromax V3S PD6D1J",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

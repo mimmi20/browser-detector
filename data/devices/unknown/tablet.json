@@ -1,14 +1,17 @@
 {
   "general tablet": {
-    "codename": "general Tablet",
+    "deviceName": "general Tablet",
     "marketingName": "general Tablet",
     "manufacturer": "Unknown",
     "brand": "Unknown",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   }
 }

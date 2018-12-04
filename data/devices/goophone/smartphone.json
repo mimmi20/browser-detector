@@ -1,38 +1,47 @@
 {
   "general goophone device": {
-    "codename": "general GooPhone Device",
+    "deviceName": "general GooPhone Device",
     "marketingName": "general GooPhone Device",
     "manufacturer": "GooPhone",
     "brand": "GooPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "goophone n3": {
-    "codename": "N3",
+    "deviceName": "N3",
     "marketingName": "N3",
     "manufacturer": "GooPhone",
     "brand": "GooPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "goophone s4 mega": {
-    "codename": "S4 Mega",
+    "deviceName": "S4 Mega",
     "marketingName": "S4 Mega",
     "manufacturer": "GooPhone",
     "brand": "GooPhone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

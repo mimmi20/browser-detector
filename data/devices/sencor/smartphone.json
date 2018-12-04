@@ -1,26 +1,32 @@
 {
   "general sencor device": {
-    "codename": "general Sencor Device",
+    "deviceName": "general Sencor Device",
     "marketingName": "general Sencor Device",
     "manufacturer": "Sencor",
     "brand": "Sencor",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sencor element p501": {
-    "codename": "Element P501",
+    "deviceName": "Element P501",
     "marketingName": "Element P501",
     "manufacturer": "Sencor",
     "brand": "Sencor",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

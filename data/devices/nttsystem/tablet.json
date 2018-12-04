@@ -1,26 +1,32 @@
 {
   "general ntt-system device": {
-    "codename": "general NTT System Device",
+    "deviceName": "general NTT System Device",
     "marketingName": "general NTT System Device",
     "manufacturer": "NttSystem",
     "brand": "NttSystem",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ntt-system 611": {
-    "codename": "NTT 611 10.1",
+    "deviceName": "NTT 611 10.1",
     "marketingName": "NTT 611 10.1",
     "manufacturer": "NttSystem",
     "brand": "NttSystem",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

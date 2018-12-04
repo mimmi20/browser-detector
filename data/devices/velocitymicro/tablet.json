@@ -1,26 +1,32 @@
 {
   "general velocity-micro device": {
-    "codename": "general Velocity Micro Device",
+    "deviceName": "general Velocity Micro Device",
     "marketingName": "general Velocity Micro Device",
     "manufacturer": "VelocityMicro",
     "brand": "VelocityMicro",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "velocity-micro t408": {
-    "codename": "Cruz",
+    "deviceName": "Cruz",
     "marketingName": "T408",
     "manufacturer": "VelocityMicro",
     "brand": "VelocityMicro",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,98 +1,122 @@
 {
   "general kiano device": {
-    "codename": "general Kiano Device",
+    "deviceName": "general Kiano Device",
     "marketingName": "general Kiano Device",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano cavion base 10": {
-    "codename": "Cavion Base 10",
+    "deviceName": "Cavion Base 10",
     "marketingName": "Cavion Base 10",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano cavion base 7 dual": {
-    "codename": "Cavion Base 7 Dual",
+    "deviceName": "Cavion Base 7 Dual",
     "marketingName": "Cavion Base 7 Dual",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano elegance": {
-    "codename": "Elegance",
+    "deviceName": "Elegance",
     "marketingName": "Elegance",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano slim tab 10 3gr": {
-    "codename": "Slim Tab 10 3GR",
+    "deviceName": "Slim Tab 10 3GR",
     "marketingName": "Slim Tab 10 3GR",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano slim tab 8": {
-    "codename": "Slim Tab 8",
+    "deviceName": "Slim Tab 8",
     "marketingName": "Slim Tab 8",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano slim tab 8 3gr": {
-    "codename": "Slim Tab 8 3GR",
+    "deviceName": "Slim Tab 8 3GR",
     "marketingName": "Slim Tab 8 3GR",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano slimtab 7 3gr": {
-    "codename": "SlimTAB 7 3GR",
+    "deviceName": "SlimTAB 7 3GR",
     "marketingName": "SlimTAB 7 3GR",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

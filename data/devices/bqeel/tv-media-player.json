@@ -1,26 +1,32 @@
 {
   "general bqeel device": {
-    "codename": "general Bqeel Device",
+    "deviceName": "general Bqeel Device",
     "marketingName": "general Bqeel Device",
     "manufacturer": "Bqeel",
     "brand": "Bqeel",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "bqeel m9c max": {
-    "codename": "M9C Max",
+    "deviceName": "M9C Max",
     "marketingName": "M9C Max",
     "manufacturer": "Bqeel",
     "brand": "Bqeel",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

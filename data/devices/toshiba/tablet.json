@@ -1,266 +1,332 @@
 {
   "general toshiba device": {
-    "codename": "general Toshiba Device",
+    "deviceName": "general Toshiba Device",
     "marketingName": "general Toshiba Device",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at10-a": {
-    "codename": "AT10-A",
+    "deviceName": "AT10-A",
     "marketingName": "eXcite Pure",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at100": {
-    "codename": "AT100",
+    "deviceName": "AT100",
     "marketingName": "AT100",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at10le-a": {
-    "codename": "AT10LE-A",
+    "deviceName": "AT10LE-A",
     "marketingName": "eXcite Pro",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at10pe-a": {
-    "codename": "AT10PE-A",
+    "deviceName": "AT10PE-A",
     "marketingName": "eXcite Write",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at1s0": {
-    "codename": "AT1S0",
+    "deviceName": "AT1S0",
     "marketingName": "AT1S0",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at200": {
-    "codename": "AT200",
+    "deviceName": "AT200",
     "marketingName": "eXcite AT200",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at270": {
-    "codename": "AT270",
+    "deviceName": "AT270",
     "marketingName": "AT270",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at300": {
-    "codename": "AT300",
+    "deviceName": "AT300",
     "marketingName": "Regza AT300",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at300se": {
-    "codename": "AT300SE",
+    "deviceName": "AT300SE",
     "marketingName": "Regza AT300SE",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at330": {
-    "codename": "AT330",
+    "deviceName": "AT330",
     "marketingName": "Excite 13 T",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1600,
-    "resolutionHeight": 900,
-    "dualOrientation": true
+    "display": {
+      "width": 1600,
+      "height": 900,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at335": {
-    "codename": "AT335",
+    "deviceName": "AT335",
     "marketingName": "Excite 13.3",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1600,
-    "resolutionHeight": 900,
-    "dualOrientation": true
+    "display": {
+      "width": 1600,
+      "height": 900,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at374": {
-    "codename": "AT374",
+    "deviceName": "AT374",
     "marketingName": "Regza AT374",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at400": {
-    "codename": "AT400",
+    "deviceName": "AT400",
     "marketingName": "Regza AT400",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at470": {
-    "codename": "AT470",
+    "deviceName": "AT470",
     "marketingName": "Regza AT470",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at500": {
-    "codename": "AT500",
+    "deviceName": "AT500",
     "marketingName": "Regza AT500",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at500a": {
-    "codename": "AT500A",
+    "deviceName": "AT500A",
     "marketingName": "Regza AT500A",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at503": {
-    "codename": "AT503",
+    "deviceName": "AT503",
     "marketingName": "Regza 10.1",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at570": {
-    "codename": "AT570",
+    "deviceName": "AT570",
     "marketingName": "Regza Tablet",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at703": {
-    "codename": "AT703",
+    "deviceName": "AT703",
     "marketingName": "Regza 10.1",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba at830": {
-    "codename": "AT830",
+    "deviceName": "AT830",
     "marketingName": "Regza AT830",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1600,
-    "resolutionHeight": 900,
-    "dualOrientation": true
+    "display": {
+      "width": 1600,
+      "height": 900,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba folio 100": {
-    "codename": "Folio 100",
+    "deviceName": "Folio 100",
     "marketingName": "Folio 100",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "qmobile qtab q400": {
-    "codename": "QTab Q400",
+    "deviceName": "QTab Q400",
     "marketingName": "QTab Q400",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 576,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 576,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile qtab q50": {
-    "codename": "QTab Q50",
+    "deviceName": "QTab Q50",
     "marketingName": "QTab Q50",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

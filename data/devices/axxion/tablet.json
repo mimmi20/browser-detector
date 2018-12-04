@@ -1,14 +1,17 @@
 {
   "axxion atab-902": {
-    "codename": "ATab-902",
+    "deviceName": "ATab-902",
     "marketingName": "ATab-902",
     "manufacturer": "Axxion",
     "brand": "Axxion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

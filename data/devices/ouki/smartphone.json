@@ -1,98 +1,122 @@
 {
   "general ouki device": {
-    "codename": "general Ouki Device",
+    "deviceName": "general Ouki Device",
     "marketingName": "general Ouki Device",
     "manufacturer": "Ouki",
     "brand": "Ouki",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ouki g5": {
-    "codename": "G5",
+    "deviceName": "G5",
     "marketingName": "G5",
     "manufacturer": "Ouki",
     "brand": "Ouki",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ouki ok a16": {
-    "codename": "OK A16",
+    "deviceName": "OK A16",
     "marketingName": "OK A16",
     "manufacturer": "Ouki",
     "brand": "Ouki",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ouki ok a16s": {
-    "codename": "OK A16S",
+    "deviceName": "OK A16S",
     "marketingName": "OK A16S",
     "manufacturer": "Ouki",
     "brand": "Ouki",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ouki ok a18": {
-    "codename": "OK A18",
+    "deviceName": "OK A18",
     "marketingName": "OK A18",
     "manufacturer": "Ouki",
     "brand": "Ouki",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ouki ok a35": {
-    "codename": "OK A35",
+    "deviceName": "OK A35",
     "marketingName": "OK A35",
     "manufacturer": "Ouki",
     "brand": "Ouki",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ouki ok a50": {
-    "codename": "OK A50",
+    "deviceName": "OK A50",
     "marketingName": "OK A50",
     "manufacturer": "Ouki",
     "brand": "Ouki",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ouki ok u3": {
-    "codename": "OK U3",
+    "deviceName": "OK U3",
     "marketingName": "OK U3",
     "manufacturer": "Ouki",
     "brand": "Ouki",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

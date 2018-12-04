@@ -1,14 +1,17 @@
 {
   "coby mid7120": {
-    "codename": "MID7120",
+    "deviceName": "MID7120",
     "marketingName": "Kyros MID7120",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

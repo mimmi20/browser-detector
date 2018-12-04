@@ -1,14 +1,17 @@
 {
   "condor ctab785r16-3g": {
-    "codename": "CTAB785R16-3G",
+    "deviceName": "CTAB785R16-3G",
     "marketingName": "mini CTAB 785R",
     "manufacturer": "Condor",
     "brand": "Condor",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

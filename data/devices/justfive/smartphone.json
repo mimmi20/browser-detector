@@ -1,26 +1,32 @@
 {
   "general just5 device": {
-    "codename": "general Just5 Device",
+    "deviceName": "general Just5 Device",
     "marketingName": "general Just5 Device",
     "manufacturer": "Just5",
     "brand": "Just5",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "just5 blaster 2": {
-    "codename": "Blaster 2",
+    "deviceName": "Blaster 2",
     "marketingName": "Blaster 2",
     "manufacturer": "Just5",
     "brand": "Just5",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

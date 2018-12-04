@@ -1,38 +1,47 @@
 {
   "general excelvan device": {
-    "codename": "general Excelvan Device",
+    "deviceName": "general Excelvan Device",
     "marketingName": "general Excelvan Device",
     "manufacturer": "Excelvan",
     "brand": "Excelvan",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "excelvan m1009": {
-    "codename": "M1009",
+    "deviceName": "M1009",
     "marketingName": "M1009",
     "manufacturer": "Excelvan",
     "brand": "Excelvan",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "excelvan m1009b": {
-    "codename": "M1009B",
+    "deviceName": "M1009B",
     "marketingName": "M1009B",
     "manufacturer": "Excelvan",
     "brand": "Excelvan",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

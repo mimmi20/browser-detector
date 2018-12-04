@@ -1,26 +1,32 @@
 {
   "general s-tell device": {
-    "codename": "general S-TELL Device",
+    "deviceName": "general S-TELL Device",
     "marketingName": "general S-TELL Device",
     "manufacturer": "Stell",
     "brand": "Stell",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "s-tell m260": {
-    "codename": "M260",
+    "deviceName": "M260",
     "marketingName": "M260",
     "manufacturer": "Stell",
     "brand": "Stell",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

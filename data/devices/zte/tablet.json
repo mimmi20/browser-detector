@@ -1,62 +1,77 @@
 {
   "zte base tab": {
-    "codename": "BASE Tab",
+    "deviceName": "BASE Tab",
     "marketingName": "BASE Tab",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte s7q": {
-    "codename": "S7Q",
+    "deviceName": "S7Q",
     "marketingName": "S7Q",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte s8q": {
-    "codename": "S8Q",
+    "deviceName": "S8Q",
     "marketingName": "S8Q",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte smart tab 10": {
-    "codename": "Smart Tab 10",
+    "deviceName": "Smart Tab 10",
     "marketingName": "Smart Tab 10",
     "manufacturer": "Zte",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte smarttab7": {
-    "codename": "SmartTab7",
+    "deviceName": "SmartTab7",
     "marketingName": "Smart Tab 7",
     "manufacturer": "Zte",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

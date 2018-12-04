@@ -1,50 +1,62 @@
 {
   "general evercoss device": {
-    "codename": "general Evercoss Device",
+    "deviceName": "general Evercoss Device",
     "marketingName": "general Evercoss Device",
     "manufacturer": "Evercoss",
     "brand": "Evercoss",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "evercoss a5p": {
-    "codename": "A5P",
+    "deviceName": "A5P",
     "marketingName": "A5P",
     "manufacturer": "Evercoss",
     "brand": "Evercoss",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "evercoss a66a": {
-    "codename": "A66A",
+    "deviceName": "A66A",
     "marketingName": "Elevate Y",
     "manufacturer": "Evercoss",
     "brand": "Evercoss",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "evercoss a74a": {
-    "codename": "A74A",
+    "deviceName": "A74A",
     "marketingName": "Winner T",
     "manufacturer": "Evercoss",
     "brand": "Evercoss",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

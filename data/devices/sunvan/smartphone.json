@@ -1,62 +1,77 @@
 {
   "general sunvan device": {
-    "codename": "general SunVan Device",
+    "deviceName": "general SunVan Device",
     "marketingName": "general SunVan Device",
     "manufacturer": "SunVan",
     "brand": "SunVan",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sunvan s8888a": {
-    "codename": "S8888A",
+    "deviceName": "S8888A",
     "marketingName": "S8888A",
     "manufacturer": "SunVan",
     "brand": "SunVan",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sunvan s899": {
-    "codename": "S899",
+    "deviceName": "S899",
     "marketingName": "S899",
     "manufacturer": "SunVan",
     "brand": "SunVan",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sunvan s899b": {
-    "codename": "S899B",
+    "deviceName": "S899B",
     "marketingName": "S899B",
     "manufacturer": "SunVan",
     "brand": "SunVan",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sunvan s899c": {
-    "codename": "S899C",
+    "deviceName": "S899C",
     "marketingName": "S899C",
     "manufacturer": "SunVan",
     "brand": "SunVan",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

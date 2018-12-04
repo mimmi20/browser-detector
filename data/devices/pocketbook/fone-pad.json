@@ -1,14 +1,17 @@
 {
   "pocketbook surfpad 4 m": {
-    "codename": "SurfPad 4 M",
+    "deviceName": "SurfPad 4 M",
     "marketingName": "SurfPad 4 M",
     "manufacturer": "PocketBook",
     "brand": "PocketBook",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

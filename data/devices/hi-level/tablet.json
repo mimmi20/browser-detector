@@ -1,38 +1,47 @@
 {
   "general hi-level device": {
-    "codename": "general Hi-Level Device",
+    "deviceName": "general Hi-Level Device",
     "marketingName": "general Hi-Level Device",
     "manufacturer": "Hi-Level",
     "brand": "Hi-Level",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hi-level hlv-t1002w": {
-    "codename": "HLV-T1002W",
+    "deviceName": "HLV-T1002W",
     "marketingName": "HLV-T1002W",
     "manufacturer": "Hi-Level",
     "brand": "Hi-Level",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hi-level hlv-tn75": {
-    "codename": "HLV-TN75",
+    "deviceName": "HLV-TN75",
     "marketingName": "HLV-TN75",
     "manufacturer": "Hi-Level",
     "brand": "Hi-Level",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

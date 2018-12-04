@@ -1,26 +1,32 @@
 {
   "general hummer device": {
-    "codename": "general Hummer Device",
+    "deviceName": "general Hummer Device",
     "marketingName": "general Hummer Device",
     "manufacturer": "Hummer",
     "brand": "Hummer",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hummer h1+": {
-    "codename": "H1+",
+    "deviceName": "H1+",
     "marketingName": "H1+",
     "manufacturer": "Hummer",
     "brand": "Hummer",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

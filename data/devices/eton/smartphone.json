@@ -1,122 +1,152 @@
 {
   "general eton device": {
-    "codename": "general Eton Device",
+    "deviceName": "general Eton Device",
     "marketingName": "general Eton Device",
     "manufacturer": "Eton",
     "brand": "Eton",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "eton d510": {
-    "codename": "D510",
+    "deviceName": "D510",
     "marketingName": "D510",
     "manufacturer": "Eton",
     "brand": "Eton",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "eton i12": {
-    "codename": "I12",
+    "deviceName": "I12",
     "marketingName": "I12",
     "manufacturer": "Eton",
     "brand": "Eton",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "eton i6": {
-    "codename": "I6",
+    "deviceName": "I6",
     "marketingName": "I6",
     "manufacturer": "Eton",
     "brand": "Eton",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "eton i95": {
-    "codename": "I95",
+    "deviceName": "I95",
     "marketingName": "I95",
     "manufacturer": "Eton",
     "brand": "Eton",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "eton p1": {
-    "codename": "P1",
+    "deviceName": "P1",
     "marketingName": "P1",
     "manufacturer": "Eton",
     "brand": "Eton",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "eton p3": {
-    "codename": "P3",
+    "deviceName": "P3",
     "marketingName": "P3",
     "manufacturer": "Eton",
     "brand": "Eton",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "eton t730d": {
-    "codename": "T730D",
+    "deviceName": "T730D",
     "marketingName": "T730D",
     "manufacturer": "Eton",
     "brand": "Eton",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "eton t860": {
-    "codename": "T860",
+    "deviceName": "T860",
     "marketingName": "T860",
     "manufacturer": "Eton",
     "brand": "Eton",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "eton t890": {
-    "codename": "T890",
+    "deviceName": "T890",
     "marketingName": "T890",
     "manufacturer": "Eton",
     "brand": "Eton",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

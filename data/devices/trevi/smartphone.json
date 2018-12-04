@@ -1,86 +1,107 @@
 {
   "trevi phablet 4.5q": {
-    "codename": "Phablet 4.5Q",
+    "deviceName": "Phablet 4.5Q",
     "marketingName": "Phablet 4.5Q",
     "manufacturer": "Trevi",
     "brand": "Trevi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "trevi phablet 4c": {
-    "codename": "Phablet 4C",
+    "deviceName": "Phablet 4C",
     "marketingName": "Phablet 4C",
     "manufacturer": "Trevi",
     "brand": "Trevi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "trevi phablet 4s": {
-    "codename": "Phablet 4S",
+    "deviceName": "Phablet 4S",
     "marketingName": "Phablet 4S",
     "manufacturer": "Trevi",
     "brand": "Trevi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "trevi phablet 5,3q": {
-    "codename": "Phablet 5,3Q",
+    "deviceName": "Phablet 5,3Q",
     "marketingName": "Phablet 5,3Q",
     "manufacturer": "Trevi",
     "brand": "Trevi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "trevi phablet 5s": {
-    "codename": "Phablet 5S",
+    "deviceName": "Phablet 5S",
     "marketingName": "Phablet 5S",
     "manufacturer": "Trevi",
     "brand": "Trevi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "trevi phablet 6s": {
-    "codename": "Phablet 6S",
+    "deviceName": "Phablet 6S",
     "marketingName": "Phablet 6S",
     "manufacturer": "Trevi",
     "brand": "Trevi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "trevi reverse 5.5q": {
-    "codename": "Reverse 5.5Q",
+    "deviceName": "Reverse 5.5Q",
     "marketingName": "Reverse 5.5Q",
     "manufacturer": "Trevi",
     "brand": "Trevi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

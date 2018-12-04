@@ -1,26 +1,32 @@
 {
   "general axioo device": {
-    "codename": "general Axioo Device",
+    "deviceName": "general Axioo Device",
     "marketingName": "general Axioo Device",
     "manufacturer": "Axioo",
     "brand": "Axioo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "axioo picopad s1": {
-    "codename": "PicoPad S1",
+    "deviceName": "PicoPad S1",
     "marketingName": "PicoPad S1 (WiFi + 3G)",
     "manufacturer": "Axioo",
     "brand": "Axioo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

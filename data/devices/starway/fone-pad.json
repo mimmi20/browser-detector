@@ -1,26 +1,32 @@
 {
   "general starway device": {
-    "codename": "general Starway Device",
+    "deviceName": "general Starway Device",
     "marketingName": "general Starway Device",
     "manufacturer": "Starway",
     "brand": "Starway",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "starway andromeda s925 3g": {
-    "codename": "Andromeda S925 3G",
+    "deviceName": "Andromeda S925 3G",
     "marketingName": "Andromeda S925 3G",
     "manufacturer": "Starway",
     "brand": "Starway",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

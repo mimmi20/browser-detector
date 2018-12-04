@@ -1,26 +1,32 @@
 {
   "general tb-touch device": {
-    "codename": "general TB Touch Device",
+    "deviceName": "general TB Touch Device",
     "marketingName": "general TB Touch Device",
     "manufacturer": "TbTouch",
     "brand": "TbTouch",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tb-touch ignis 8": {
-    "codename": "Ignis 8",
+    "deviceName": "Ignis 8",
     "marketingName": "Ignis 8",
     "manufacturer": "TbTouch",
     "brand": "TbTouch",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

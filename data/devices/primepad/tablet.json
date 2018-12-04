@@ -1,26 +1,32 @@
 {
   "general primepad device": {
-    "codename": "general Primepad Device",
+    "deviceName": "general Primepad Device",
     "marketingName": "general Primepad Device",
     "manufacturer": "Primepad",
     "brand": "Primepad",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "primepad pd-3127": {
-    "codename": "PD-3127",
+    "deviceName": "PD-3127",
     "marketingName": "PD-3127",
     "manufacturer": "Primepad",
     "brand": "Primepad",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,86 +1,107 @@
 {
   "general mofut device": {
-    "codename": "general Mofut Device",
+    "deviceName": "general Mofut Device",
     "marketingName": "general Mofut Device",
     "manufacturer": "Mofut",
     "brand": "Mofut",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mofut f1": {
-    "codename": "F1",
+    "deviceName": "F1",
     "marketingName": "F1",
     "manufacturer": "Mofut",
     "brand": "Mofut",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mofut f6": {
-    "codename": "F6",
+    "deviceName": "F6",
     "marketingName": "F6",
     "manufacturer": "Mofut",
     "brand": "Mofut",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mofut f88": {
-    "codename": "F88",
+    "deviceName": "F88",
     "marketingName": "F88",
     "manufacturer": "Mofut",
     "brand": "Mofut",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mofut kx": {
-    "codename": "KX",
+    "deviceName": "KX",
     "marketingName": "KX",
     "manufacturer": "Mofut",
     "brand": "Mofut",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mofut n5": {
-    "codename": "N5",
+    "deviceName": "N5",
     "marketingName": "N5",
     "manufacturer": "Mofut",
     "brand": "Mofut",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mofut t2": {
-    "codename": "T2",
+    "deviceName": "T2",
     "marketingName": "T2",
     "manufacturer": "Mofut",
     "brand": "Mofut",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

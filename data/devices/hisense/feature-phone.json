@@ -1,14 +1,17 @@
 {
   "hisense hs-t39": {
-    "codename": "HS-T39",
+    "deviceName": "HS-T39",
     "marketingName": "HS-T39",
     "manufacturer": "Hisense",
     "brand": "Hisense",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

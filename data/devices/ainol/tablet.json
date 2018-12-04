@@ -1,62 +1,77 @@
 {
   "general ainol device": {
-    "codename": "general Ainol Device",
+    "deviceName": "general Ainol Device",
     "marketingName": "general Ainol Device",
     "manufacturer": "Ainol",
     "brand": "Ainol",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ainol novo 10 hero": {
-    "codename": "Novo 10 Hero",
+    "deviceName": "Novo 10 Hero",
     "marketingName": "Novo 10 Hero",
     "manufacturer": "Ainol",
     "brand": "Ainol",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ainol novo 7 flame": {
-    "codename": "Novo 7 Flame",
+    "deviceName": "Novo 7 Flame",
     "marketingName": "Novo 7 Flame",
     "manufacturer": "Ainol",
     "brand": "Ainol",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ainol novo 9 spark": {
-    "codename": "Novo 9 Spark",
+    "deviceName": "Novo 9 Spark",
     "marketingName": "Novo 9 Spark",
     "manufacturer": "Ainol",
     "brand": "Ainol",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ainol novo7fire": {
-    "codename": "Novo 7 Fire",
+    "deviceName": "Novo 7 Fire",
     "marketingName": "Novo 7 Fire",
     "manufacturer": "Ainol",
     "brand": "Ainol",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

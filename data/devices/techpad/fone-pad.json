@@ -1,26 +1,32 @@
 {
   "general techpad device": {
-    "codename": "general TechPad Device",
+    "deviceName": "general TechPad Device",
     "marketingName": "general TechPad Device",
     "manufacturer": "TechPad",
     "brand": "TechPad",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "techpad s813g": {
-    "codename": "S813G",
+    "deviceName": "S813G",
     "marketingName": "S813G",
     "manufacturer": "TechPad",
     "brand": "TechPad",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

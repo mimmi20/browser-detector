@@ -1,122 +1,152 @@
 {
   "general overmax device": {
-    "codename": "general Overmax Device",
+    "deviceName": "general Overmax Device",
     "marketingName": "general Overmax Device",
     "manufacturer": "Overmax",
     "brand": "Overmax",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "overmax basictab": {
-    "codename": "BasicTab",
+    "deviceName": "BasicTab",
     "marketingName": "BasicTab",
     "manufacturer": "Overmax",
     "brand": "Overmax",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "overmax qualcore 1010": {
-    "codename": "Qualcore 1010",
+    "deviceName": "Qualcore 1010",
     "marketingName": "Qualcore 1010",
     "manufacturer": "Overmax",
     "brand": "Overmax",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "overmax quattor 10": {
-    "codename": "Quattor 10",
+    "deviceName": "Quattor 10",
     "marketingName": "Quattor 10",
     "manufacturer": "Overmax",
     "brand": "Overmax",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "overmax quattor 10+": {
-    "codename": "Quattor 10+",
+    "deviceName": "Quattor 10+",
     "marketingName": "Quattor 10+",
     "manufacturer": "Overmax",
     "brand": "Overmax",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "overmax solution 7 iii": {
-    "codename": "Solution 7 III",
+    "deviceName": "Solution 7 III",
     "marketingName": "Solution 7 III",
     "manufacturer": "Overmax",
     "brand": "Overmax",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "overmax steelcore": {
-    "codename": "SteelCore",
+    "deviceName": "SteelCore",
     "marketingName": "SteelCore",
     "manufacturer": "Overmax",
     "brand": "Overmax",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "overmax steelcore 10 ii": {
-    "codename": "SteelCore 10 II",
+    "deviceName": "SteelCore 10 II",
     "marketingName": "SteelCore 10 II",
     "manufacturer": "Overmax",
     "brand": "Overmax",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "overmax tb-07b": {
-    "codename": "TB-07B",
+    "deviceName": "TB-07B",
     "marketingName": "TB-07B",
     "manufacturer": "Overmax",
     "brand": "Overmax",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "overmax tb-08 ii": {
-    "codename": "TB-08 II",
+    "deviceName": "TB-08 II",
     "marketingName": "TB-08 II",
     "manufacturer": "Overmax",
     "brand": "Overmax",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

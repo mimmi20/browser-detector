@@ -1,14 +1,17 @@
 {
   "i-mobile i-note wifi 9": {
-    "codename": "i-note WiFi 9",
+    "deviceName": "i-note WiFi 9",
     "marketingName": "i-note WiFi 9",
     "manufacturer": "Imobile",
     "brand": "Imobile",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

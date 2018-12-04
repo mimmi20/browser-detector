@@ -1,38 +1,47 @@
 {
   "general turbopad device": {
-    "codename": "general TurboPad Device",
+    "deviceName": "general TurboPad Device",
     "marketingName": "general TurboPad Device",
     "manufacturer": "TurboPad",
     "brand": "TurboPad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "turbopad pad 500": {
-    "codename": "Pad 500",
+    "deviceName": "Pad 500",
     "marketingName": "Pad 500",
     "manufacturer": "TurboPad",
     "brand": "TurboPad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "turbopad turbo x6": {
-    "codename": "Turbo X6",
+    "deviceName": "Turbo X6",
     "marketingName": "Turbo X6",
     "manufacturer": "TurboPad",
     "brand": "TurboPad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

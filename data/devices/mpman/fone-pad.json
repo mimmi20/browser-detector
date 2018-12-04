@@ -1,14 +1,17 @@
 {
   "mpman mpqc1040i": {
-    "codename": "MPQC1040i",
+    "deviceName": "MPQC1040i",
     "marketingName": "MPQC1040i",
     "manufacturer": "MPMan",
     "brand": "MPMan",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

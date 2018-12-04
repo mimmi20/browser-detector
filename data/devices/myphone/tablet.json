@@ -1,38 +1,47 @@
 {
   "myphone mypad 2": {
-    "codename": "MyPad 2",
+    "deviceName": "MyPad 2",
     "marketingName": "MyPad 2",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myphone mytab 10 ii": {
-    "codename": "MyTab 10 II",
+    "deviceName": "MyTab 10 II",
     "marketingName": "MyTab 10 II",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myphone mytab mini 3g": {
-    "codename": "MyTab Mini 3G",
+    "deviceName": "MyTab Mini 3G",
     "marketingName": "MyTab Mini 3G",
     "manufacturer": "myPhone",
     "brand": "myPhone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

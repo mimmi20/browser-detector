@@ -1,26 +1,32 @@
 {
   "comio ct701g plus": {
-    "codename": "CT701G Plus",
+    "deviceName": "CT701G Plus",
     "marketingName": "CT701G Plus",
     "manufacturer": "Comio",
     "brand": "Comio",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "comio ct701w": {
-    "codename": "CT701W",
+    "deviceName": "CT701W",
     "marketingName": "CT701W",
     "manufacturer": "Comio",
     "brand": "Comio",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

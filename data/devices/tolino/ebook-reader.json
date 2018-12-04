@@ -1,50 +1,62 @@
 {
   "tolino shine": {
-    "codename": "Tolino Shine",
+    "deviceName": "Tolino Shine",
     "marketingName": "Tolino Shine",
     "manufacturer": "Longshine",
     "brand": "Weltbild",
-    "platform": "android",
     "type": "ebook-reader",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tolino vision": {
-    "codename": "Vision",
+    "deviceName": "Vision",
     "marketingName": "Vision",
     "manufacturer": "Tolino",
     "brand": "Tolino",
-    "platform": "android",
     "type": "ebook-reader",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tolino vision 2": {
-    "codename": "Vision 2",
+    "deviceName": "Vision 2",
     "marketingName": "Vision 2",
     "manufacturer": "Tolino",
     "brand": "Tolino",
-    "platform": "android",
     "type": "ebook-reader",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tolino vision 4": {
-    "codename": "Vision 4",
+    "deviceName": "Vision 4",
     "marketingName": "Vision 4",
     "manufacturer": "Tolino",
     "brand": "Tolino",
-    "platform": "android",
     "type": "ebook-reader",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1448,
-    "resolutionHeight": 1072,
-    "dualOrientation": true
+    "display": {
+      "width": 1448,
+      "height": 1072,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

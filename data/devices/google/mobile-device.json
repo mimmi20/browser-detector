@@ -1,38 +1,47 @@
 {
   "google android sdk": {
-    "codename": "Android SDK",
+    "deviceName": "Android SDK",
     "marketingName": "Android SDK",
     "manufacturer": "Google",
     "brand": "Google",
-    "platform": "android",
     "type": "mobile-device",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "google compute engine": {
-    "codename": "Google Compute Engine",
+    "deviceName": "Google Compute Engine",
     "marketingName": "Google Compute Engine",
     "manufacturer": "Google",
     "brand": "Google",
-    "platform": "android",
     "type": "mobile-device",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "google glass 1": {
-    "codename": "Glass",
+    "deviceName": "Glass",
     "marketingName": "Glass",
     "manufacturer": "Google",
     "brand": "Google",
-    "platform": "android",
     "type": "mobile-device",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 640,
-    "resolutionHeight": 360,
-    "dualOrientation": true
+    "display": {
+      "width": 640,
+      "height": 360,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

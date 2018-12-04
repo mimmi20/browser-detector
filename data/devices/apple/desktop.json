@@ -1,98 +1,122 @@
 {
   "imac": {
-    "codename": "iMac",
+    "deviceName": "iMac",
     "marketingName": "iMac",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "mac mini": {
-    "codename": "Mac Mini",
+    "deviceName": "Mac Mini",
     "marketingName": "Mac Mini",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "macbook": {
-    "codename": "MacBook",
+    "deviceName": "MacBook",
     "marketingName": "MacBook",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "macbook air": {
-    "codename": "MacBook Air",
+    "deviceName": "MacBook Air",
     "marketingName": "MacBook Air",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "macbook pro": {
-    "codename": "MacBook Pro",
+    "deviceName": "MacBook Pro",
     "marketingName": "MacBook Pro",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "macintosh": {
-    "codename": "Macintosh",
+    "deviceName": "Macintosh",
     "marketingName": "Macintosh",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "macpro": {
-    "codename": "MacPro",
+    "deviceName": "MacPro",
     "marketingName": "MacPro",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "powermac": {
-    "codename": "PowerMac",
+    "deviceName": "PowerMac",
     "marketingName": "PowerMac",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

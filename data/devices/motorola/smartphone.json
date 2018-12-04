@@ -1,2042 +1,2552 @@
 {
   "general motorola device": {
-    "codename": "general Motorola Device",
+    "deviceName": "general Motorola Device",
     "marketingName": "general Motorola Device",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "motorola a953": {
-    "codename": "A953",
+    "deviceName": "A953",
     "marketingName": "Milestone 2",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola droid": {
-    "codename": "Droid",
+    "deviceName": "Droid",
     "marketingName": "Droid",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola droid bionic": {
-    "codename": "XT865",
+    "deviceName": "XT865",
     "marketingName": "Droid Bionic",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola droid x2": {
-    "codename": "Droid X2",
+    "deviceName": "Droid X2",
     "marketingName": "Droid X2",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola droid2": {
-    "codename": "Droid2",
+    "deviceName": "Droid2",
     "marketingName": "Droid2",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola droid2 global": {
-    "codename": "Droid2 Global",
+    "deviceName": "Droid2 Global",
     "marketingName": "Droid2 Global",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola droid3": {
-    "codename": "Droid 3",
+    "deviceName": "Droid 3",
     "marketingName": "Droid 3",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola droid4": {
-    "codename": "Droid 4",
+    "deviceName": "Droid 4",
     "marketingName": "Droid 4",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola droidx": {
-    "codename": "Droid X",
+    "deviceName": "Droid X",
     "marketingName": "Droid X",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mb200": {
-    "codename": "MB200",
+    "deviceName": "MB200",
     "marketingName": "Cliq",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mb300": {
-    "codename": "MB300",
+    "deviceName": "MB300",
     "marketingName": "Backflip",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mb511": {
-    "codename": "MB511",
+    "deviceName": "MB511",
     "marketingName": "FlipOut",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mb525": {
-    "codename": "MB525",
+    "deviceName": "MB525",
     "marketingName": "Defy",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mb526": {
-    "codename": "MB526",
+    "deviceName": "MB526",
     "marketingName": "Defy+",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mb612": {
-    "codename": "MB612",
+    "deviceName": "MB612",
     "marketingName": "XPRT (CDMA)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mb632": {
-    "codename": "MB632",
+    "deviceName": "MB632",
     "marketingName": "Pro+",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mb860": {
-    "codename": "MB860",
+    "deviceName": "MB860",
     "marketingName": "Atrix",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mb886": {
-    "codename": "MB886",
+    "deviceName": "MB886",
     "marketingName": "Atrix HD 4G LTE",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola me511": {
-    "codename": "ME511",
+    "deviceName": "ME511",
     "marketingName": "FlipOut",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola me525": {
-    "codename": "ME525",
+    "deviceName": "ME525",
     "marketingName": "Defy",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola me600": {
-    "codename": "ME600",
+    "deviceName": "ME600",
     "marketingName": "BackFlip",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola me860": {
-    "codename": "ME860",
+    "deviceName": "ME860",
     "marketingName": "Atrix",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola me863": {
-    "codename": "ME863",
+    "deviceName": "ME863",
     "marketingName": "Milestone 3",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola milestone": {
-    "codename": "Milestone",
+    "deviceName": "Milestone",
     "marketingName": "Milestone",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola milestone x": {
-    "codename": "Milestone X",
+    "deviceName": "Milestone X",
     "marketingName": "Milestone X",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto c": {
-    "codename": "Moto C",
+    "deviceName": "Moto C",
     "marketingName": "Moto C",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto c plus": {
-    "codename": "Moto C Plus",
+    "deviceName": "Moto C Plus",
     "marketingName": "Moto C Plus",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto e4": {
-    "codename": "Moto E4",
+    "deviceName": "Moto E4",
     "marketingName": "Moto E4",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto e4 plus": {
-    "codename": "Moto E4 Plus",
+    "deviceName": "Moto E4 Plus",
     "marketingName": "Moto E4 Plus",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto e5": {
-    "codename": "Moto E5",
+    "deviceName": "Moto E5",
     "marketingName": "Moto E5",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto e5 plus": {
-    "codename": "Moto E5 Plus",
+    "deviceName": "Moto E5 Plus",
     "marketingName": "Moto E5 Plus",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto g play": {
-    "codename": "Moto G Play",
+    "deviceName": "Moto G Play",
     "marketingName": "Moto G Play",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto g4": {
-    "codename": "Moto G4",
+    "deviceName": "Moto G4",
     "marketingName": "Moto G4",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto g4 plus": {
-    "codename": "Moto G4 Plus",
+    "deviceName": "Moto G4 Plus",
     "marketingName": "Moto G4 Plus",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto g5": {
-    "codename": "Moto G5",
+    "deviceName": "Moto G5",
     "marketingName": "Moto G5",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto g5s plus": {
-    "codename": "Moto G5S Plus",
+    "deviceName": "Moto G5S Plus",
     "marketingName": "Moto G5S Plus",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto g6": {
-    "codename": "Moto G6",
+    "deviceName": "Moto G6",
     "marketingName": "Moto G6",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto g6 play": {
-    "codename": "Moto G6 Play",
+    "deviceName": "Moto G6 Play",
     "marketingName": "Moto G6 Play",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto g6 plus": {
-    "codename": "Moto G6 Plus",
+    "deviceName": "Moto G6 Plus",
     "marketingName": "Moto G6 Plus",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto x4": {
-    "codename": "Moto X4",
+    "deviceName": "Moto X4",
     "marketingName": "Moto X4",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto z": {
-    "codename": "Moto Z",
+    "deviceName": "Moto Z",
     "marketingName": "Moto Z",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto z2": {
-    "codename": "Moto Z2",
+    "deviceName": "Moto Z2",
     "marketingName": "Moto Z2",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto z2 play": {
-    "codename": "Moto Z2 Play",
+    "deviceName": "Moto Z2 Play",
     "marketingName": "Moto Z2 Play",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola moto z3 play": {
-    "codename": "Moto Z3 Play",
+    "deviceName": "Moto Z3 Play",
     "marketingName": "Moto Z3 Play",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola motog3": {
-    "codename": "MotoG3",
+    "deviceName": "MotoG3",
     "marketingName": "Moto G (3rd gen)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola motoroi x": {
-    "codename": "MotoRoi X",
+    "deviceName": "MotoRoi X",
     "marketingName": "MotoRoi X",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola razr": {
-    "codename": "Razr",
+    "deviceName": "Razr",
     "marketingName": "Droid Razr",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1021": {
-    "codename": "XT1021",
+    "deviceName": "XT1021",
     "marketingName": "Moto E",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1022": {
-    "codename": "XT1022",
+    "deviceName": "XT1022",
     "marketingName": "Moto E Dual SIM",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1023": {
-    "codename": "XT1023",
+    "deviceName": "XT1023",
     "marketingName": "Moto E",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1025": {
-    "codename": "XT1025",
+    "deviceName": "XT1025",
     "marketingName": "Moto E Dual SIM",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1028": {
-    "codename": "XT1028",
+    "deviceName": "XT1028",
     "marketingName": "Moto G",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1030": {
-    "codename": "XT1030",
+    "deviceName": "XT1030",
     "marketingName": "Droid Mini",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1031": {
-    "codename": "XT1031",
+    "deviceName": "XT1031",
     "marketingName": "Moto G",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1032": {
-    "codename": "XT1032",
+    "deviceName": "XT1032",
     "marketingName": "Moto G",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1033": {
-    "codename": "XT1033",
+    "deviceName": "XT1033",
     "marketingName": "Moto G",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1034": {
-    "codename": "XT1034",
+    "deviceName": "XT1034",
     "marketingName": "Moto G",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1039": {
-    "codename": "XT1039",
+    "deviceName": "XT1039",
     "marketingName": "Moto G LTE",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "motorola xt1040": {
-    "codename": "XT1040",
+    "deviceName": "XT1040",
     "marketingName": "Moto G 4G",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "motorola xt1049": {
-    "codename": "XT1049",
+    "deviceName": "XT1049",
     "marketingName": "Moto X",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1052": {
-    "codename": "XT1052",
+    "deviceName": "XT1052",
     "marketingName": "Moto X (Europe)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1053": {
-    "codename": "XT1053",
+    "deviceName": "XT1053",
     "marketingName": "Moto X (T-Mobile)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1055": {
-    "codename": "XT1055",
+    "deviceName": "XT1055",
     "marketingName": "Moto X (U.S. Cellular)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1056": {
-    "codename": "XT1056",
+    "deviceName": "XT1056",
     "marketingName": "Moto X (Sprint)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1058": {
-    "codename": "XT1058",
+    "deviceName": "XT1058",
     "marketingName": "Moto X (AT&T)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1060": {
-    "codename": "XT1060",
+    "deviceName": "XT1060",
     "marketingName": "Moto X (Verizon)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1064": {
-    "codename": "XT1064",
+    "deviceName": "XT1064",
     "marketingName": "Moto G (2nd gen)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "motorola xt1068": {
-    "codename": "XT1068",
+    "deviceName": "XT1068",
     "marketingName": "Moto G Dual SIM (2nd gen)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1069": {
-    "codename": "XT1069",
+    "deviceName": "XT1069",
     "marketingName": "Moto G Dual DTV (2014)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1072": {
-    "codename": "XT1072",
+    "deviceName": "XT1072",
     "marketingName": "Moto G 4G (2nd gen)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1080": {
-    "codename": "XT1080",
+    "deviceName": "XT1080",
     "marketingName": "Droid Ultra",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1092": {
-    "codename": "XT1092",
+    "deviceName": "XT1092",
     "marketingName": "Moto X (2nd Gen)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1095": {
-    "codename": "XT1095",
+    "deviceName": "XT1095",
     "marketingName": "Moto X (2nd Gen)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1096": {
-    "codename": "XT1096",
+    "deviceName": "XT1096",
     "marketingName": "Moto X (2nd Gen)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1097": {
-    "codename": "XT1097",
+    "deviceName": "XT1097",
     "marketingName": "Moto X (2nd Gen)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1254": {
-    "codename": "XT1254",
+    "deviceName": "XT1254",
     "marketingName": "Droid Turbo",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1505": {
-    "codename": "XT1505",
+    "deviceName": "XT1505",
     "marketingName": "Moto E (2nd Gen., GSM, Global)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1506": {
-    "codename": "XT1506",
+    "deviceName": "XT1506",
     "marketingName": "Moto E (2nd Gen., GSM, Global, Dual SIM)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1511": {
-    "codename": "XT1511",
+    "deviceName": "XT1511",
     "marketingName": "Moto E (2nd Gen., GSM, USA)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1521": {
-    "codename": "XT1521",
+    "deviceName": "XT1521",
     "marketingName": "Moto E (2nd Gen., GSM+LTE, Global, Dual SIM)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1524": {
-    "codename": "XT1524",
+    "deviceName": "XT1524",
     "marketingName": "Moto E (2nd Gen., GSM+LTE, Global)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1526": {
-    "codename": "XT1526",
+    "deviceName": "XT1526",
     "marketingName": "Moto E (2nd Gen., CDMA+LTE, Sprint)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1527": {
-    "codename": "XT1527",
+    "deviceName": "XT1527",
     "marketingName": "Moto E (2nd Gen., GSM+LTE, USA)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1528": {
-    "codename": "XT1528",
+    "deviceName": "XT1528",
     "marketingName": "Moto E (2nd Gen., CDMA+LTE, Verizon)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1562": {
-    "codename": "XT1562",
+    "deviceName": "XT1562",
     "marketingName": "Moto X Play",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1563": {
-    "codename": "XT1563",
+    "deviceName": "XT1563",
     "marketingName": "Moto X Play",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1572": {
-    "codename": "XT1572",
+    "deviceName": "XT1572",
     "marketingName": "Moto X Style",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1580": {
-    "codename": "XT1580",
+    "deviceName": "XT1580",
     "marketingName": "Moto X Force",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1581": {
-    "codename": "XT1581",
+    "deviceName": "XT1581",
     "marketingName": "Moto X Force Dual SIM",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1585": {
-    "codename": "XT1585",
+    "deviceName": "XT1585",
     "marketingName": "Droid Turbo 2",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1601": {
-    "codename": "XT1601",
+    "deviceName": "XT1601",
     "marketingName": "Moto G4 Play (Latin America, Mexico)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1602": {
-    "codename": "XT1602",
+    "deviceName": "XT1602",
     "marketingName": "Moto G4 Play (Europe, India, Australia)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1603": {
-    "codename": "XT1603",
+    "deviceName": "XT1603",
     "marketingName": "Moto G4 Play (Brazil)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1604": {
-    "codename": "XT1604",
+    "deviceName": "XT1604",
     "marketingName": "Moto G4 Play (Europe)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1607": {
-    "codename": "XT1607",
+    "deviceName": "XT1607",
     "marketingName": "Moto G4 Play (USA, Canada)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1609": {
-    "codename": "XT1609",
+    "deviceName": "XT1609",
     "marketingName": "Moto G4 Play (USA)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1635-01": {
-    "codename": "XT1635-01",
+    "deviceName": "XT1635-01",
     "marketingName": "Moto Z Play Droid XLTE",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1635-02": {
-    "codename": "XT1635-02",
+    "deviceName": "XT1635-02",
     "marketingName": "Moto Z Play",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1635-03": {
-    "codename": "XT1635-03",
+    "deviceName": "XT1635-03",
     "marketingName": "Moto Z Play Dual",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1650": {
-    "codename": "XT1650",
+    "deviceName": "XT1650",
     "marketingName": "Moto Z Force",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1650-05": {
-    "codename": "XT1650-05",
+    "deviceName": "XT1650-05",
     "marketingName": "Moto Z Dual",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1684": {
-    "codename": "XT1684",
+    "deviceName": "XT1684",
     "marketingName": "Moto G5 Plus",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1685": {
-    "codename": "XT1685",
+    "deviceName": "XT1685",
     "marketingName": "Moto G5 Plus (Dual SIM)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1686": {
-    "codename": "XT1686",
+    "deviceName": "XT1686",
     "marketingName": "Moto G5 Plus",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1687": {
-    "codename": "XT1687",
+    "deviceName": "XT1687",
     "marketingName": "Moto G5 Plus (USA)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1700": {
-    "codename": "XT1700",
+    "deviceName": "XT1700",
     "marketingName": "Moto E3",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1706": {
-    "codename": "XT1706",
+    "deviceName": "XT1706",
     "marketingName": "Moto E3 Power Dual SIM",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1710-01": {
-    "codename": "XT1710-01",
+    "deviceName": "XT1710-01",
     "marketingName": "Moto Z2 Play (USA)",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1710-02": {
-    "codename": "XT1710-02",
+    "deviceName": "XT1710-02",
     "marketingName": "Moto Z2 Play (USA)",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1710-07": {
-    "codename": "XT1710-07",
+    "deviceName": "XT1710-07",
     "marketingName": "Moto Z2 Play (Brazil)",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1710-08": {
-    "codename": "XT1710-08",
+    "deviceName": "XT1710-08",
     "marketingName": "Moto Z2 Play (China, Hong Kong)",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1710-09": {
-    "codename": "XT1710-09",
+    "deviceName": "XT1710-09",
     "marketingName": "Moto Z2 Play (Australia, New Zealand, Indonesia, Japan, Malaysia, Taiwan)",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1710-10": {
-    "codename": "XT1710-10",
+    "deviceName": "XT1710-10",
     "marketingName": "Moto Z2 Play (India)",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1710-11": {
-    "codename": "XT1710-11",
+    "deviceName": "XT1710-11",
     "marketingName": "Moto Z2 Play (China, Hong Kong)",
     "manufacturer": "Lenovo",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1792": {
-    "codename": "XT1792",
+    "deviceName": "XT1792",
     "marketingName": "Moto G5S (Brazil)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1793": {
-    "codename": "XT1793",
+    "deviceName": "XT1793",
     "marketingName": "Moto G5S (Europe)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt1794": {
-    "codename": "XT1794",
+    "deviceName": "XT1794",
     "marketingName": "Moto G5S (Europe, India)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt300": {
-    "codename": "XT300",
+    "deviceName": "XT300",
     "marketingName": "Spice",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt303": {
-    "codename": "XT303",
+    "deviceName": "XT303",
     "marketingName": "Motosmart Me",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt305": {
-    "codename": "XT305",
+    "deviceName": "XT305",
     "marketingName": "Motosmart Me Dual",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt311": {
-    "codename": "XT311",
+    "deviceName": "XT311",
     "marketingName": "Fire",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt316": {
-    "codename": "XT316",
+    "deviceName": "XT316",
     "marketingName": "XT316",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt320": {
-    "codename": "XT320",
+    "deviceName": "XT320",
     "marketingName": "Defy Mini",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt321": {
-    "codename": "XT321",
+    "deviceName": "XT321",
     "marketingName": "Defy Mini Dual",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt389": {
-    "codename": "XT389",
+    "deviceName": "XT389",
     "marketingName": "Motoluxe",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt390": {
-    "codename": "XT390",
+    "deviceName": "XT390",
     "marketingName": "XT390",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt502": {
-    "codename": "XT502",
+    "deviceName": "XT502",
     "marketingName": "Quench XT3",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt530": {
-    "codename": "XT530",
+    "deviceName": "XT530",
     "marketingName": "Fire XT",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt531": {
-    "codename": "XT531",
+    "deviceName": "XT531",
     "marketingName": "Fire XT",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt535": {
-    "codename": "XT535",
+    "deviceName": "XT535",
     "marketingName": "Defy",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt555c": {
-    "codename": "XT555C",
+    "deviceName": "XT555C",
     "marketingName": "Defy XT",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt556": {
-    "codename": "XT556",
+    "deviceName": "XT556",
     "marketingName": "Defy XT",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt557": {
-    "codename": "XT557",
+    "deviceName": "XT557",
     "marketingName": "Defy XT",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt603": {
-    "codename": "XT603",
+    "deviceName": "XT603",
     "marketingName": "Admiral",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt610": {
-    "codename": "XT610",
+    "deviceName": "XT610",
     "marketingName": "Droid Pro",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt615": {
-    "codename": "XT615",
+    "deviceName": "XT615",
     "marketingName": "Motoluxe",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt621": {
-    "codename": "XT621",
+    "deviceName": "XT621",
     "marketingName": "Ferrari",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt626": {
-    "codename": "XT626",
+    "deviceName": "XT626",
     "marketingName": "IronRock",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt682": {
-    "codename": "XT682",
+    "deviceName": "XT682",
     "marketingName": "Atrix TV",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt685": {
-    "codename": "XT685",
+    "deviceName": "XT685",
     "marketingName": "Motoluxe",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt687": {
-    "codename": "XT687",
+    "deviceName": "XT687",
     "marketingName": "Atrix TV Dual",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt702": {
-    "codename": "XT702",
+    "deviceName": "XT702",
     "marketingName": "XT702",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt720": {
-    "codename": "XT720",
+    "deviceName": "XT720",
     "marketingName": "Milestone",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt800w": {
-    "codename": "XT800W",
+    "deviceName": "XT800W",
     "marketingName": "Glam",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt830c": {
-    "codename": "XT830C",
+    "deviceName": "XT830C",
     "marketingName": "Moto E",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 897,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 897,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt860": {
-    "codename": "XT860",
+    "deviceName": "XT860",
     "marketingName": "Milestone 3",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt875": {
-    "codename": "XT875",
+    "deviceName": "XT875",
     "marketingName": "Droid Bionic LTE",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt881": {
-    "codename": "XT881",
+    "deviceName": "XT881",
     "marketingName": "Electrify 2",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt882": {
-    "codename": "XT882",
+    "deviceName": "XT882",
     "marketingName": "Moto",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt885": {
-    "codename": "XT885",
+    "deviceName": "XT885",
     "marketingName": "Razr V",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt886": {
-    "codename": "XT886",
+    "deviceName": "XT886",
     "marketingName": "Razr V",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt890": {
-    "codename": "XT890",
+    "deviceName": "XT890",
     "marketingName": "Razr I",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt897": {
-    "codename": "XT897",
+    "deviceName": "XT897",
     "marketingName": "Photon Q 4G",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt901": {
-    "codename": "XT901",
+    "deviceName": "XT901",
     "marketingName": "Electrify M",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt905": {
-    "codename": "XT905",
+    "deviceName": "XT905",
     "marketingName": "Electrify M",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt907": {
-    "codename": "XT907",
+    "deviceName": "XT907",
     "marketingName": "Droid Razr M",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt910": {
-    "codename": "XT910",
+    "deviceName": "XT910",
     "marketingName": "Droid Razr",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt912b": {
-    "codename": "XT912B",
+    "deviceName": "XT912B",
     "marketingName": "Droid Razr 4G",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt914": {
-    "codename": "XT914",
+    "deviceName": "XT914",
     "marketingName": "Razr D1 (Latin America)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt915": {
-    "codename": "XT915",
+    "deviceName": "XT915",
     "marketingName": "Razr D1",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt916": {
-    "codename": "XT916",
+    "deviceName": "XT916",
     "marketingName": "Razr D1 Dual",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt918": {
-    "codename": "XT918",
+    "deviceName": "XT918",
     "marketingName": "Razr D1 Dual",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt919": {
-    "codename": "XT919",
+    "deviceName": "XT919",
     "marketingName": "Razr D3",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt920": {
-    "codename": "XT920",
+    "deviceName": "XT920",
     "marketingName": "Razr D3 Dual",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt922": {
-    "codename": "XT922",
+    "deviceName": "XT922",
     "marketingName": "Droid Razr HD (China)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt923": {
-    "codename": "XT923",
+    "deviceName": "XT923",
     "marketingName": "Droid Razr HD 3G",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt925": {
-    "codename": "XT925",
+    "deviceName": "XT925",
     "marketingName": "Droid Razr HD 4G",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt926": {
-    "codename": "XT926",
+    "deviceName": "XT926",
     "marketingName": "Droid Razr HD (Verizon)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xt980": {
-    "codename": "XT980",
+    "deviceName": "XT980",
     "marketingName": "Droid Razr HD (China)",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

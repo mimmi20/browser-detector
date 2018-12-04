@@ -1,194 +1,242 @@
 {
   "general allview device": {
-    "codename": "general Allview Device",
+    "deviceName": "general Allview Device",
     "marketingName": "general Allview Device",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview a4all": {
-    "codename": "A4ALL",
+    "deviceName": "A4ALL",
     "marketingName": "A4ALL",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview a4you": {
-    "codename": "A4You",
+    "deviceName": "A4You",
     "marketingName": "A4 You",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview impera s": {
-    "codename": "Impera S",
+    "deviceName": "Impera S",
     "marketingName": "Impera S",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "allview p41 emagic": {
-    "codename": "P41 Emagic",
+    "deviceName": "P41 Emagic",
     "marketingName": "P41 Emagic",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview p4i": {
-    "codename": "P4i",
+    "deviceName": "P4i",
     "marketingName": "AllDro P4",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview p5 energy": {
-    "codename": "P5 Energy",
+    "deviceName": "P5 Energy",
     "marketingName": "P5 Energy",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview p5 mini": {
-    "codename": "P5 Mini",
+    "deviceName": "P5 Mini",
     "marketingName": "P5 Mini",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview p5 quad": {
-    "codename": "P5 Quad",
+    "deviceName": "P5 Quad",
     "marketingName": "P5 Quad",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview p6": {
-    "codename": "P6",
+    "deviceName": "P6",
     "marketingName": "P6",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview p9 energy lite": {
-    "codename": "P9 Energy Lite",
+    "deviceName": "P9 Energy Lite",
     "marketingName": "P9 Energy Lite",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview v1 viper": {
-    "codename": "V1 Viper",
+    "deviceName": "V1 Viper",
     "marketingName": "V1 Viper",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview v1 viper i": {
-    "codename": "V1 Viper I",
+    "deviceName": "V1 Viper I",
     "marketingName": "V1 Viper I",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview x1 soul": {
-    "codename": "X1 Soul",
+    "deviceName": "X1 Soul",
     "marketingName": "X1 Soul",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview x2 soul": {
-    "codename": "X2 Soul",
+    "deviceName": "X2 Soul",
     "marketingName": "X2 Soul",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allview x4 soul lite": {
-    "codename": "X4 Soul Lite",
+    "deviceName": "X4 Soul Lite",
     "marketingName": "X4 Soul Lite",
     "manufacturer": "Allview",
     "brand": "Allview",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

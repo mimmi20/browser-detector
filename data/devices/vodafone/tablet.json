@@ -1,26 +1,32 @@
 {
   "general vodafone device": {
-    "codename": "general Vodafone Device",
+    "deviceName": "general Vodafone Device",
     "marketingName": "general Vodafone Device",
     "manufacturer": "Vodafone",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "vodafone smart tab 4": {
-    "codename": "Smart Tab 4",
+    "deviceName": "Smart Tab 4",
     "marketingName": "Smart Tab 4",
     "manufacturer": "Zte",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

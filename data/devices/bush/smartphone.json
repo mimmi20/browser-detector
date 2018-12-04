@@ -1,38 +1,47 @@
 {
   "general bush device": {
-    "codename": "general Bush Device",
+    "deviceName": "general Bush Device",
     "marketingName": "general Bush Device",
     "manufacturer": "Bush",
     "brand": "Bush",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bush 4 android": {
-    "codename": "4 Android",
+    "deviceName": "4 Android",
     "marketingName": "4 Android",
     "manufacturer": "Bush",
     "brand": "Bush",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bush 5 android": {
-    "codename": "5 Android",
+    "deviceName": "5 Android",
     "marketingName": "5 Android",
     "manufacturer": "Bush",
     "brand": "Bush",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

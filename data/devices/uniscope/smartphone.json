@@ -1,74 +1,92 @@
 {
   "general uniscope device": {
-    "codename": "general Uniscope Device",
+    "deviceName": "general Uniscope Device",
     "marketingName": "general Uniscope Device",
     "manufacturer": "Uniscope",
     "brand": "Uniscope",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "uniscope 77 bu3 cu ics2": {
-    "codename": "77 BU3 CU ICS2",
+    "deviceName": "77 BU3 CU ICS2",
     "marketingName": "77 BU3 CU ICS2",
     "manufacturer": "Uniscope",
     "brand": "Uniscope",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "uniscope t5588": {
-    "codename": "T5588",
+    "deviceName": "T5588",
     "marketingName": "T5588",
     "manufacturer": "Uniscope",
     "brand": "Uniscope",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "uniscope u1205": {
-    "codename": "U1205",
+    "deviceName": "U1205",
     "marketingName": "U1205",
     "manufacturer": "Uniscope",
     "brand": "Uniscope",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "uniscope us618": {
-    "codename": "US618",
+    "deviceName": "US618",
     "marketingName": "US618",
     "manufacturer": "Uniscope",
     "brand": "Uniscope",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "uniscope us818": {
-    "codename": "US818",
+    "deviceName": "US818",
     "marketingName": "US818",
     "manufacturer": "Uniscope",
     "brand": "Uniscope",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

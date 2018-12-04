@@ -1,206 +1,257 @@
 {
   "general thl device": {
-    "codename": "general ThL Device",
+    "deviceName": "general ThL Device",
     "marketingName": "general ThL Device",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl 2015": {
-    "codename": "2015",
+    "deviceName": "2015",
     "marketingName": "2015",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl 4400": {
-    "codename": "4400",
+    "deviceName": "4400",
     "marketingName": "4400",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl 5000": {
-    "codename": "5000",
+    "deviceName": "5000",
     "marketingName": "5000",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl t100s": {
-    "codename": "T100s",
+    "deviceName": "T100s",
     "marketingName": "Ironman",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl t11": {
-    "codename": "T11",
+    "deviceName": "T11",
     "marketingName": "T11",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl t3": {
-    "codename": "T3",
+    "deviceName": "T3",
     "marketingName": "T3",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl t6 pro": {
-    "codename": "T6 Pro",
+    "deviceName": "T6 Pro",
     "marketingName": "T6 Pro",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl t6c": {
-    "codename": "T6C",
+    "deviceName": "T6C",
     "marketingName": "T6C",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl t6s": {
-    "codename": "T6S",
+    "deviceName": "T6S",
     "marketingName": "T6S",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl t7": {
-    "codename": "T7",
+    "deviceName": "T7",
     "marketingName": "T7",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl t9": {
-    "codename": "T9",
+    "deviceName": "T9",
     "marketingName": "T9",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl w100": {
-    "codename": "W100",
+    "deviceName": "W100",
     "marketingName": "W100",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl w11": {
-    "codename": "W11",
+    "deviceName": "W11",
     "marketingName": "Monkey King",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl w200": {
-    "codename": "W200",
+    "deviceName": "W200",
     "marketingName": "W200",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl w7": {
-    "codename": "W7",
+    "deviceName": "W7",
     "marketingName": "W7",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thl w8": {
-    "codename": "W8",
+    "deviceName": "W8",
     "marketingName": "Beyond",
     "manufacturer": "Thl",
     "brand": "Thl",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

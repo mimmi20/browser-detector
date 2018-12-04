@@ -1,14 +1,17 @@
 {
   "rim playbook": {
-    "codename": "BlackBerry PlayBook",
+    "deviceName": "BlackBerry PlayBook",
     "marketingName": "BlackBerry PlayBook",
     "manufacturer": "Rim",
     "brand": "Rim",
-    "platform": null,
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   }
 }

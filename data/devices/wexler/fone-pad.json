@@ -1,62 +1,77 @@
 {
   "general wexler device": {
-    "codename": "general Wexler Device",
+    "deviceName": "general Wexler Device",
     "marketingName": "general Wexler Device",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wexler tab 10q": {
-    "codename": "Tab 10Q",
+    "deviceName": "Tab 10Q",
     "marketingName": "Tab 10Q",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wexler tab 7t": {
-    "codename": "TAB 7T",
+    "deviceName": "TAB 7T",
     "marketingName": "TAB 7T",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wexler tab a742": {
-    "codename": "TAB A742",
+    "deviceName": "TAB A742",
     "marketingName": "TAB A742",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wexler tab7id": {
-    "codename": "Tab 7iD",
+    "deviceName": "Tab 7iD",
     "marketingName": "Tab 7iD",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

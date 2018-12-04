@@ -1,26 +1,32 @@
 {
   "teclast c5j6": {
-    "codename": "C5J6",
+    "deviceName": "C5J6",
     "marketingName": "X98 Air 3G",
     "manufacturer": "Teclast",
     "brand": "Teclast",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "teclast m5k8": {
-    "codename": "M5K8",
+    "deviceName": "M5K8",
     "marketingName": "X10 3G",
     "manufacturer": "Teclast",
     "brand": "Teclast",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general axxion device": {
-    "codename": "general Axxion Device",
+    "deviceName": "general Axxion Device",
     "marketingName": "general Axxion Device",
     "manufacturer": "Axxion",
     "brand": "Axxion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "axxion atab-701": {
-    "codename": "ATab-701",
+    "deviceName": "ATab-701",
     "marketingName": "ATab-701",
     "manufacturer": "Axxion",
     "brand": "Axxion",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

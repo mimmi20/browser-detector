@@ -1,206 +1,257 @@
 {
   "general xolo device": {
-    "codename": "general XOLO Device",
+    "deviceName": "general XOLO Device",
     "marketingName": "general XOLO Device",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo a1000s": {
-    "codename": "A1000s",
+    "deviceName": "A1000s",
     "marketingName": "A1000s",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo era 2": {
-    "codename": "Era 2",
+    "deviceName": "Era 2",
     "marketingName": "Era 2",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo era 2x": {
-    "codename": "Era 2X",
+    "deviceName": "Era 2X",
     "marketingName": "Era 2X",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo omega 5.0": {
-    "codename": "Omega 5.0",
+    "deviceName": "Omega 5.0",
     "marketingName": "Omega 5.0",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo omega 5.5": {
-    "codename": "Omega 5.5",
+    "deviceName": "Omega 5.5",
     "marketingName": "Omega 5.5",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo one": {
-    "codename": "One",
+    "deviceName": "One",
     "marketingName": "One",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo q1000 opus": {
-    "codename": "Q1000 Opus",
+    "deviceName": "Q1000 Opus",
     "marketingName": "Q1000 Opus",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo q1000s plus": {
-    "codename": "Q1000s Plus",
+    "deviceName": "Q1000s Plus",
     "marketingName": "Q1000s Plus",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo q1010i": {
-    "codename": "Q1010i",
+    "deviceName": "Q1010i",
     "marketingName": "Q1010i",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo q2000": {
-    "codename": "Q2000",
+    "deviceName": "Q2000",
     "marketingName": "Q2000",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo q600": {
-    "codename": "Q600",
+    "deviceName": "Q600",
     "marketingName": "Q600",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo q600s": {
-    "codename": "Q600s",
+    "deviceName": "Q600s",
     "marketingName": "Q600s",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo q700": {
-    "codename": "Q700",
+    "deviceName": "Q700",
     "marketingName": "Q700",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo q800": {
-    "codename": "Q800",
+    "deviceName": "Q800",
     "marketingName": "Q800",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xolo win q1000": {
-    "codename": "Win Q1000",
+    "deviceName": "Win Q1000",
     "marketingName": "Win Q1000",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "xolo x1000": {
-    "codename": "X1000",
+    "deviceName": "X1000",
     "marketingName": "X1000",
     "manufacturer": "Xolo",
     "brand": "Xolo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

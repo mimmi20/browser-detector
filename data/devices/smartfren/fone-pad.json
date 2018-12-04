@@ -1,26 +1,32 @@
 {
   "smartfren androtab 7": {
-    "codename": "Androtab 7",
+    "deviceName": "Androtab 7",
     "marketingName": "Andromax Tab 7.0",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "smartfren androtab s7": {
-    "codename": "Androtab S7",
+    "deviceName": "Androtab S7",
     "marketingName": "Androtab S7",
     "manufacturer": "Smartfren",
     "brand": "Smartfren",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

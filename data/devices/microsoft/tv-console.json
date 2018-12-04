@@ -1,26 +1,32 @@
 {
   "xbox 360": {
-    "codename": "Xbox 360",
+    "deviceName": "Xbox 360",
     "marketingName": "Xbox 360",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": null,
     "type": "tv-console",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "xbox one": {
-    "codename": "Xbox One",
+    "deviceName": "Xbox One",
     "marketingName": "Xbox One",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": null,
     "type": "tv-console",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

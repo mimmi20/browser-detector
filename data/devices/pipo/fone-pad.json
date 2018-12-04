@@ -1,50 +1,62 @@
 {
   "pipo m7t": {
-    "codename": "M7T",
+    "deviceName": "M7T",
     "marketingName": "M7T 3G",
     "manufacturer": "Pipo",
     "brand": "Pipo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pipo m8 3g": {
-    "codename": "M8 3G",
+    "deviceName": "M8 3G",
     "marketingName": "Max M8 3G",
     "manufacturer": "Pipo",
     "brand": "Pipo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pipo p9 3g": {
-    "codename": "P9 3G",
+    "deviceName": "P9 3G",
     "marketingName": "P9 3G",
     "manufacturer": "Pipo",
     "brand": "Pipo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pipo t9": {
-    "codename": "T9",
+    "deviceName": "T9",
     "marketingName": "T9",
     "manufacturer": "Pipo",
     "brand": "Pipo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

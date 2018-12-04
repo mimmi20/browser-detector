@@ -1,26 +1,32 @@
 {
   "amazon afts": {
-    "codename": "AFTS",
+    "deviceName": "AFTS",
     "marketingName": "Fire TV Stick",
     "manufacturer": "Amazon",
     "brand": "Amazon",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "amazon aftt": {
-    "codename": "AFTT",
+    "deviceName": "AFTT",
     "marketingName": "Fire TV Stick",
     "manufacturer": "Amazon",
     "brand": "Amazon",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

@@ -1,50 +1,62 @@
 {
   "general telenor device": {
-    "codename": "general Telenor Device",
+    "deviceName": "general Telenor Device",
     "marketingName": "general Telenor Device",
     "manufacturer": "Telenor",
     "brand": "Telenor",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "telenor smart 4g": {
-    "codename": "Smart 4G",
+    "deviceName": "Smart 4G",
     "marketingName": "Smart 4G",
     "manufacturer": "Telenor",
     "brand": "Telenor",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "telenor smart pro": {
-    "codename": "Smart Pro",
+    "deviceName": "Smart Pro",
     "marketingName": "Smart Pro",
     "manufacturer": "Telenor",
     "brand": "Telenor",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "telenor touch plus": {
-    "codename": "Touch Plus",
+    "deviceName": "Touch Plus",
     "marketingName": "Touch Plus",
     "manufacturer": "Telenor",
     "brand": "Telenor",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

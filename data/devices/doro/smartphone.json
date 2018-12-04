@@ -1,86 +1,107 @@
 {
   "general doro device": {
-    "codename": "general Doro Device",
+    "deviceName": "general Doro Device",
     "marketingName": "general Doro Device",
     "manufacturer": "Doro",
     "brand": "Doro",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doro 8030": {
-    "codename": "8030",
+    "deviceName": "8030",
     "marketingName": "8030",
     "manufacturer": "Doro",
     "brand": "Doro",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doro 8031": {
-    "codename": "8031",
+    "deviceName": "8031",
     "marketingName": "8031",
     "manufacturer": "Doro",
     "brand": "Doro",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doro 8040": {
-    "codename": "8040",
+    "deviceName": "8040",
     "marketingName": "8040",
     "manufacturer": "Doro",
     "brand": "Doro",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doro liberto 820": {
-    "codename": "Liberto 820",
+    "deviceName": "Liberto 820",
     "marketingName": "Liberto 820",
     "manufacturer": "Doro",
     "brand": "Doro",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doro liberto 820 mini": {
-    "codename": "Liberto 820 Mini",
+    "deviceName": "Liberto 820 Mini",
     "marketingName": "Liberto 820 Mini",
     "manufacturer": "Doro",
     "brand": "Doro",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doro liberto 825": {
-    "codename": "Liberto 825",
+    "deviceName": "Liberto 825",
     "marketingName": "Liberto 825",
     "manufacturer": "Doro",
     "brand": "Doro",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

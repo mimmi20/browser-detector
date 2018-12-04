@@ -1,98 +1,122 @@
 {
   "general thomson device": {
-    "codename": "general Thomson Device",
+    "deviceName": "general Thomson Device",
     "marketingName": "general Thomson Device",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "thomson every 35": {
-    "codename": "Every 35",
+    "deviceName": "Every 35",
     "marketingName": "Every 35",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thomson tlink 350": {
-    "codename": "TLink 350",
+    "deviceName": "TLink 350",
     "marketingName": "TLink 350",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thomson tlink 351": {
-    "codename": "TLink 351",
+    "deviceName": "TLink 351",
     "marketingName": "TLink 351",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thomson tlink 355": {
-    "codename": "TLink 355",
+    "deviceName": "TLink 355",
     "marketingName": "TLink 355",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thomson tlink 405": {
-    "codename": "TLink 405",
+    "deviceName": "TLink 405",
     "marketingName": "TLink 405",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thomson tlink 455": {
-    "codename": "TLink 455",
+    "deviceName": "TLink 455",
     "marketingName": "TLink 455",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thomson tlink 475": {
-    "codename": "TLink 475",
+    "deviceName": "TLink 475",
     "marketingName": "TLink 475",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

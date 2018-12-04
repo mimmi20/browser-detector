@@ -1,86 +1,107 @@
 {
   "nomi 3": {
-    "codename": "3",
+    "deviceName": "3",
     "marketingName": "3",
     "manufacturer": "Nomi",
     "brand": "Nomi",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nomi 3s": {
-    "codename": "3S",
+    "deviceName": "3S",
     "marketingName": "3S",
     "manufacturer": "Nomi",
     "brand": "Nomi",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nomi 6": {
-    "codename": "6",
+    "deviceName": "6",
     "marketingName": "6",
     "manufacturer": "Nomi",
     "brand": "Nomi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nomi 6 plus": {
-    "codename": "6 Plus",
+    "deviceName": "6 Plus",
     "marketingName": "6 Plus",
     "manufacturer": "Nomi",
     "brand": "Nomi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nomi l003": {
-    "codename": "L003",
+    "deviceName": "L003",
     "marketingName": "L003",
     "manufacturer": "Nomi",
     "brand": "Nomi",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nomi l008": {
-    "codename": "L008",
+    "deviceName": "L008",
     "marketingName": "L008",
     "manufacturer": "Nomi",
     "brand": "Nomi",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nomi n1": {
-    "codename": "N1",
+    "deviceName": "N1",
     "marketingName": "N1",
     "manufacturer": "Nomi",
     "brand": "Nomi",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   }
 }

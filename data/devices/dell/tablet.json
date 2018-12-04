@@ -1,110 +1,137 @@
 {
   "general dell device": {
-    "codename": "general Dell Device",
+    "deviceName": "general Dell Device",
     "marketingName": "general Dell Device",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dell streak": {
-    "codename": "Streak",
+    "deviceName": "Streak",
     "marketingName": "Streak",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dell streak 10 pro": {
-    "codename": "Streak 10 Pro",
+    "deviceName": "Streak 10 Pro",
     "marketingName": "Streak 10 Pro",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dell streak 7": {
-    "codename": "Streak 7",
+    "deviceName": "Streak 7",
     "marketingName": "Streak 7",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dell venue 7 3730": {
-    "codename": "Venue 7 3730",
+    "deviceName": "Venue 7 3730",
     "marketingName": "Venue 7 3730",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dell venue 7 hspa+": {
-    "codename": "Venue 7 HSPA+",
+    "deviceName": "Venue 7 HSPA+",
     "marketingName": "Venue 7 HSPA+",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dell venue 8 3830": {
-    "codename": "Venue 8 3830",
+    "deviceName": "Venue 8 3830",
     "marketingName": "Venue 8 3830",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dell venue 8 7840": {
-    "codename": "Venue 8 7840",
+    "deviceName": "Venue 8 7840",
     "marketingName": "Venue 8 7840",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dell venue 8 hspa+": {
-    "codename": "Venue 8 HSPA+",
+    "deviceName": "Venue 8 HSPA+",
     "marketingName": "Venue 8 HSPA+",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

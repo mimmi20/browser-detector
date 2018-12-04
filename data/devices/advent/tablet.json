@@ -1,26 +1,32 @@
 {
   "general advent device": {
-    "codename": "general Advent Device",
+    "deviceName": "general Advent Device",
     "marketingName": "general Advent Device",
     "manufacturer": "Advent",
     "brand": "Advent",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "advent p10an01": {
-    "codename": "P10AN01",
+    "deviceName": "P10AN01",
     "marketingName": "Vega",
     "manufacturer": "Advent",
     "brand": "Advent",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

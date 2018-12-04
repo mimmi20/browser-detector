@@ -1,146 +1,182 @@
 {
   "general infocus device": {
-    "codename": "general InFocus Device",
+    "deviceName": "general InFocus Device",
     "marketingName": "general InFocus Device",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus if9021": {
-    "codename": "IF9021",
+    "deviceName": "IF9021",
     "marketingName": "Turbo 5 Plus Dual SIM",
     "manufacturer": "Foxconn",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus if9031": {
-    "codename": "IF9031",
+    "deviceName": "IF9031",
     "marketingName": "Vision 3 Dual SIM",
     "manufacturer": "Foxconn",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus m2": {
-    "codename": "M2",
+    "deviceName": "M2",
     "marketingName": "M2",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus m310": {
-    "codename": "M310",
+    "deviceName": "M310",
     "marketingName": "M310",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus m320m": {
-    "codename": "M320m",
+    "deviceName": "M320m",
     "marketingName": "M320m",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus m350": {
-    "codename": "M350",
+    "deviceName": "M350",
     "marketingName": "M350",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus m370i": {
-    "codename": "M370i",
+    "deviceName": "M370i",
     "marketingName": "M370i",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus m430": {
-    "codename": "M430",
+    "deviceName": "M430",
     "marketingName": "Bingo 21",
     "manufacturer": "Foxconn",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus m535": {
-    "codename": "M535",
+    "deviceName": "M535",
     "marketingName": "M535",
     "manufacturer": "Foxconn",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus m810u": {
-    "codename": "M810u",
+    "deviceName": "M810u",
     "marketingName": "M810u",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "infocus vzh": {
-    "codename": "VZH",
+    "deviceName": "VZH",
     "marketingName": "VZH",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

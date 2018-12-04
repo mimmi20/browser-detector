@@ -1,50 +1,62 @@
 {
   "general o2 device": {
-    "codename": "general O2 Device",
+    "deviceName": "general O2 Device",
     "marketingName": "general O2 Device",
     "manufacturer": "O2",
     "brand": "O2",
-    "platform": null,
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "o2 cocoon": {
-    "codename": "Cocoon",
+    "deviceName": "Cocoon",
     "marketingName": "Cocoon",
     "manufacturer": "O2",
     "brand": "O2",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "o2 xda comet": {
-    "codename": "Xda Comet",
+    "deviceName": "Xda Comet",
     "marketingName": "Xda Comet",
     "manufacturer": "Htc",
     "brand": "O2",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "o2 xda orbit ii": {
-    "codename": "Xda Orbit II",
+    "deviceName": "Xda Orbit II",
     "marketingName": "Xda Orbit II",
     "manufacturer": "Htc",
     "brand": "O2",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   }
 }

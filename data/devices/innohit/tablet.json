@@ -1,26 +1,32 @@
 {
   "general innohit device": {
-    "codename": "general Inno-Hit Device",
+    "deviceName": "general Inno-Hit Device",
     "marketingName": "general Inno-Hit Device",
     "manufacturer": "Inno-Hit",
     "brand": "Inno-Hit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "innohit ih-g101": {
-    "codename": "IH-G101",
+    "deviceName": "IH-G101",
     "marketingName": "IH-G101",
     "manufacturer": "Inno-Hit",
     "brand": "Inno-Hit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

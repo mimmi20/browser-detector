@@ -1,26 +1,32 @@
 {
   "general quechua device": {
-    "codename": "general Quechua Device",
+    "deviceName": "general Quechua Device",
     "marketingName": "general Quechua Device",
     "manufacturer": "Quechua",
     "brand": "Quechua",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "quechua phone 5": {
-    "codename": "Phone 5",
+    "deviceName": "Phone 5",
     "marketingName": "Phone 5",
     "manufacturer": "Quechua",
     "brand": "Quechua",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 840,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 840,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

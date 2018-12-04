@@ -1,26 +1,32 @@
 {
   "general keenhigh device": {
-    "codename": "general Keen High Device",
+    "deviceName": "general Keen High Device",
     "marketingName": "general Keen High Device",
     "manufacturer": "KeenHigh",
     "brand": "KeenHigh",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "keenhigh mt791": {
-    "codename": "MT791",
+    "deviceName": "MT791",
     "marketingName": "MT791",
     "manufacturer": "KeenHigh",
     "brand": "KeenHigh",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

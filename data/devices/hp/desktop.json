@@ -1,26 +1,32 @@
 {
   "hp 9000": {
-    "codename": "9000",
+    "deviceName": "9000",
     "marketingName": "9000",
     "manufacturer": "Hp",
     "brand": "Hp",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "hp pc": {
-    "codename": "PC",
+    "deviceName": "PC",
     "marketingName": "PC",
     "manufacturer": "Hp",
     "brand": "Hp",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

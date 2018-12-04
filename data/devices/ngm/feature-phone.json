@@ -1,14 +1,17 @@
 {
   "ngm coffee": {
-    "codename": "Coffee",
+    "deviceName": "Coffee",
     "marketingName": "Coffee",
     "manufacturer": "Ngm",
     "brand": "Ngm",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "java"
   }
 }

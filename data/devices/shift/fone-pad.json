@@ -1,26 +1,32 @@
 {
   "general shift device": {
-    "codename": "general Shift Device",
+    "deviceName": "general Shift Device",
     "marketingName": "general Shift Device",
     "manufacturer": "Shift",
     "brand": "Shift",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "shift shift7": {
-    "codename": "Shift7",
+    "deviceName": "Shift7",
     "marketingName": "Shift7",
     "manufacturer": "Shift",
     "brand": "Shift",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

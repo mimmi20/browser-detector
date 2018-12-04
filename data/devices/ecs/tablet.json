@@ -1,62 +1,77 @@
 {
   "general ecs device": {
-    "codename": "general ECS Device",
+    "deviceName": "general ECS Device",
     "marketingName": "general ECS Device",
     "manufacturer": "ECS",
     "brand": "ECS",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ecs ta10ca3": {
-    "codename": "TA10CA3",
+    "deviceName": "TA10CA3",
     "marketingName": "TA10CA3",
     "manufacturer": "ECS",
     "brand": "ECS",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ecs tm105": {
-    "codename": "TM105",
+    "deviceName": "TM105",
     "marketingName": "TM105",
     "manufacturer": "ECS",
     "brand": "ECS",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ecs tm105a": {
-    "codename": "TM105A",
+    "deviceName": "TM105A",
     "marketingName": "TM105A",
     "manufacturer": "ECS",
     "brand": "ECS",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ecs tr10cs1": {
-    "codename": "TR10CS1",
+    "deviceName": "TR10CS1",
     "marketingName": "TR10CS1",
     "manufacturer": "ECS",
     "brand": "ECS",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

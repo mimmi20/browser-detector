@@ -1,38 +1,47 @@
 {
   "general wopad device": {
-    "codename": "general Wopad Device",
+    "deviceName": "general Wopad Device",
     "marketingName": "general Wopad Device",
     "manufacturer": "Wopad",
     "brand": "Wopad",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wopad 7001": {
-    "codename": "7001",
+    "deviceName": "7001",
     "marketingName": "7001",
     "manufacturer": "Wopad",
     "brand": "Wopad",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wopad q10s": {
-    "codename": "Q10S",
+    "deviceName": "Q10S",
     "marketingName": "Q10S",
     "manufacturer": "Wopad",
     "brand": "Wopad",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

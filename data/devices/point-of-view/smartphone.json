@@ -1,14 +1,17 @@
 {
   "point-of-view mob-5045": {
-    "codename": "MOB-5045",
+    "deviceName": "MOB-5045",
     "marketingName": "MOB-5045",
     "manufacturer": "PointOfView",
     "brand": "PointOfView",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

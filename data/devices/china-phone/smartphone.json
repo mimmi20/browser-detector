@@ -1,50 +1,62 @@
 {
   "general china-phone device": {
-    "codename": "general China Phone Device",
+    "deviceName": "general China Phone Device",
     "marketingName": "general China Phone Device",
     "manufacturer": "China Phone",
     "brand": "China Phone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "china-phone a1303": {
-    "codename": "A1303",
+    "deviceName": "A1303",
     "marketingName": "A1303",
     "manufacturer": "China Phone",
     "brand": "China Phone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "china-phone a309w": {
-    "codename": "A309W",
+    "deviceName": "A309W",
     "marketingName": "A309W",
     "manufacturer": "China Phone",
     "brand": "China Phone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "china-phone m651cy": {
-    "codename": "M651CY",
+    "deviceName": "M651CY",
     "marketingName": "M651CY",
     "manufacturer": "China Phone",
     "brand": "China Phone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

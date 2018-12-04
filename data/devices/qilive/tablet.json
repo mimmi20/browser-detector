@@ -1,62 +1,77 @@
 {
   "qilive 8": {
-    "codename": "8",
+    "deviceName": "8",
     "marketingName": "8",
     "manufacturer": "Qilive",
     "brand": "Qilive",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qilive 8qc": {
-    "codename": "8QC",
+    "deviceName": "8QC",
     "marketingName": "8QC",
     "manufacturer": "Qilive",
     "brand": "Qilive",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qilive 97": {
-    "codename": "97",
+    "deviceName": "97",
     "marketingName": "97",
     "manufacturer": "Qilive",
     "brand": "Qilive",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qilive 97r": {
-    "codename": "97R",
+    "deviceName": "97R",
     "marketingName": "97R",
     "manufacturer": "Qilive",
     "brand": "Qilive",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qilive q4t10in": {
-    "codename": "Q4T10IN",
+    "deviceName": "Q4T10IN",
     "marketingName": "Q4",
     "manufacturer": "Qilive",
     "brand": "Qilive",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

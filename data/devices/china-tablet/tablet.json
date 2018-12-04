@@ -1,26 +1,32 @@
 {
   "general china-tablet device": {
-    "codename": "general China Tablet Device",
+    "deviceName": "general China Tablet Device",
     "marketingName": "general China Tablet Device",
     "manufacturer": "China Tablet",
     "brand": "China Tablet",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "china-tablet i101mtk": {
-    "codename": "I101MTK",
+    "deviceName": "I101MTK",
     "marketingName": "I101MTK",
     "manufacturer": "China Tablet",
     "brand": "China Tablet",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

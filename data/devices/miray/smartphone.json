@@ -1,38 +1,47 @@
 {
   "general miray device": {
-    "codename": "general Miray Device",
+    "deviceName": "general Miray Device",
     "marketingName": "general Miray Device",
     "manufacturer": "Miray",
     "brand": "Miray",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "miray mpm-ava758": {
-    "codename": "MPM-AVA758",
+    "deviceName": "MPM-AVA758",
     "marketingName": "MPM-AVA758",
     "manufacturer": "Miray",
     "brand": "Miray",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "miray mpm-i616": {
-    "codename": "MPM-I616",
+    "deviceName": "MPM-I616",
     "marketingName": "MPM-I616",
     "manufacturer": "Miray",
     "brand": "Miray",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

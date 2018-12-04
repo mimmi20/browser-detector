@@ -1,26 +1,32 @@
 {
   "general supertab device": {
-    "codename": "general SuperTab Device",
+    "deviceName": "general SuperTab Device",
     "marketingName": "general SuperTab Device",
     "manufacturer": "SuperTab",
     "brand": "SuperTab",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "supertab s7g": {
-    "codename": "S7G",
+    "deviceName": "S7G",
     "marketingName": "S7G",
     "manufacturer": "SuperTab",
     "brand": "SuperTab",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,14 +1,17 @@
 {
   "majestic tab 371": {
-    "codename": "TAB 371",
+    "deviceName": "TAB 371",
     "marketingName": "TAB 371",
     "manufacturer": "Majestic",
     "brand": "Majestic",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

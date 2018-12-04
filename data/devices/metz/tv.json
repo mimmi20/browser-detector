@@ -1,14 +1,17 @@
 {
   "general metz tv": {
-    "codename": "general Metz TV",
+    "deviceName": "general Metz TV",
     "marketingName": "general Metz TV",
     "manufacturer": "Metz",
     "brand": "Metz",
-    "platform": null,
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

@@ -1,2294 +1,2867 @@
 {
   "general zte device": {
-    "codename": "general ZTE Device",
+    "deviceName": "general ZTE Device",
     "marketingName": "general ZTE Device",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte a2016": {
-    "codename": "A2016",
+    "deviceName": "A2016",
     "marketingName": "A2016",
     "manufacturer": "Zte",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte a2017": {
-    "codename": "A2017",
+    "deviceName": "A2017",
     "marketingName": "Axon 7",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte a2017g": {
-    "codename": "A2017G",
+    "deviceName": "A2017G",
     "marketingName": "Axon 7",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte a2017u": {
-    "codename": "A2017U",
+    "deviceName": "A2017U",
     "marketingName": "Axon 7",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte atlas w": {
-    "codename": "Atlas W",
+    "deviceName": "Atlas W",
     "marketingName": "Atlas W",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte b2016": {
-    "codename": "B2016",
+    "deviceName": "B2016",
     "marketingName": "Axon mini",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte b2017g": {
-    "codename": "B2017G",
+    "deviceName": "B2017G",
     "marketingName": "Axon mini",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte beeline pro": {
-    "codename": "Beeline Pro",
+    "deviceName": "Beeline Pro",
     "marketingName": "Beeline Pro",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade": {
-    "codename": "Blade",
+    "deviceName": "Blade",
     "marketingName": "Blade",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade a0620": {
-    "codename": "Blade A0620",
+    "deviceName": "Blade A0620",
     "marketingName": "Blade A0620",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade a110": {
-    "codename": "Blade A110",
+    "deviceName": "Blade A110",
     "marketingName": "Blade A110",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade a452": {
-    "codename": "Blade A452",
+    "deviceName": "Blade A452",
     "marketingName": "Blade A452",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade a460": {
-    "codename": "Blade A460",
+    "deviceName": "Blade A460",
     "marketingName": "Blade A460",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade a510": {
-    "codename": "Blade A510",
+    "deviceName": "Blade A510",
     "marketingName": "Blade A510",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade a512": {
-    "codename": "Blade A512",
+    "deviceName": "Blade A512",
     "marketingName": "Blade A512",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade a520": {
-    "codename": "Blade A520",
+    "deviceName": "Blade A520",
     "marketingName": "Blade A520",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade a612": {
-    "codename": "Blade A612",
+    "deviceName": "Blade A612",
     "marketingName": "Blade A612",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade a910": {
-    "codename": "Blade A910",
+    "deviceName": "Blade A910",
     "marketingName": "Blade A910",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade apex": {
-    "codename": "Blade Apex",
+    "deviceName": "Blade Apex",
     "marketingName": "Blade Apex",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade c341": {
-    "codename": "Blade C341",
+    "deviceName": "Blade C341",
     "marketingName": "Blade C341",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade iii": {
-    "codename": "Blade III",
+    "deviceName": "Blade III",
     "marketingName": "Blade III",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade l110": {
-    "codename": "Blade L110",
+    "deviceName": "Blade L110",
     "marketingName": "Blade L110",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade l2": {
-    "codename": "Blade L2",
+    "deviceName": "Blade L2",
     "marketingName": "Blade L2",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade l3": {
-    "codename": "Blade L3",
+    "deviceName": "Blade L3",
     "marketingName": "Blade L3",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade l5": {
-    "codename": "Blade L5",
+    "deviceName": "Blade L5",
     "marketingName": "Blade L5",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade l5 plus": {
-    "codename": "Blade L5 Plus",
+    "deviceName": "Blade L5 Plus",
     "marketingName": "Blade L5 Plus",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade l6": {
-    "codename": "Blade L6",
+    "deviceName": "Blade L6",
     "marketingName": "Blade L6",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade l7": {
-    "codename": "Blade L7",
+    "deviceName": "Blade L7",
     "marketingName": "Blade L7",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade q maxi": {
-    "codename": "Blade Q Maxi",
+    "deviceName": "Blade Q Maxi",
     "marketingName": "Blade Q Maxi",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade s6": {
-    "codename": "Blade S6",
+    "deviceName": "Blade S6",
     "marketingName": "Blade S6",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade s6 plus": {
-    "codename": "Blade S6 Plus",
+    "deviceName": "Blade S6 Plus",
     "marketingName": "Blade S6 Plus",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade v0730": {
-    "codename": "Blade V0730",
+    "deviceName": "Blade V0730",
     "marketingName": "Blade V0730",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade v0800": {
-    "codename": "Blade V0800",
+    "deviceName": "Blade V0800",
     "marketingName": "Blade V0800",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade v0840": {
-    "codename": "Blade V0840",
+    "deviceName": "Blade V0840",
     "marketingName": "Blade V0840",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade v0850": {
-    "codename": "Blade V0850",
+    "deviceName": "Blade V0850",
     "marketingName": "Blade V8 Mini",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade v220": {
-    "codename": "Blade V220",
+    "deviceName": "Blade V220",
     "marketingName": "Blade V220",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade v580": {
-    "codename": "Blade V580",
+    "deviceName": "Blade V580",
     "marketingName": "Blade V580",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade v6": {
-    "codename": "Blade V6",
+    "deviceName": "Blade V6",
     "marketingName": "Blade V6",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade v7": {
-    "codename": "Blade V7",
+    "deviceName": "Blade V7",
     "marketingName": "Blade V7",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade v7 lite": {
-    "codename": "Blade V7 Lite",
+    "deviceName": "Blade V7 Lite",
     "marketingName": "Blade V7 Lite",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade v9": {
-    "codename": "Blade V9",
+    "deviceName": "Blade V9",
     "marketingName": "Blade V9",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade vec": {
-    "codename": "Blade Vec",
+    "deviceName": "Blade Vec",
     "marketingName": "Blade Vec",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte blade vec 4g": {
-    "codename": "Blade Vec 4G",
+    "deviceName": "Blade Vec 4G",
     "marketingName": "Blade Vec 4G",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte bs 451": {
-    "codename": "BS 451",
+    "deviceName": "BS 451",
     "marketingName": "BS 451",
     "manufacturer": "Zte",
     "brand": "Bouygues Telecom",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte c n780": {
-    "codename": "C N780",
+    "deviceName": "C N780",
     "marketingName": "C N780",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte c880a": {
-    "codename": "C880A",
+    "deviceName": "C880A",
     "marketingName": "C880A",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte grand s flex": {
-    "codename": "Grand S Flex",
+    "deviceName": "Grand S Flex",
     "marketingName": "Grand S Flex",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte grand x": {
-    "codename": "Grand X",
+    "deviceName": "Grand X",
     "marketingName": "Grand X",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte hi 4g": {
-    "codename": "Hi 4G",
+    "deviceName": "Hi 4G",
     "marketingName": "Hi 4G",
     "manufacturer": "Zte",
     "brand": "Orange",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte kis ii max": {
-    "codename": "Kis II Max",
+    "deviceName": "Kis II Max",
     "marketingName": "Kis II Max",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte kis lite": {
-    "codename": "Kis Lite",
+    "deviceName": "Kis Lite",
     "marketingName": "Kis Lite",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte kis3 max": {
-    "codename": "Kis3 max",
+    "deviceName": "Kis3 max",
     "marketingName": "Kis3 max",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte link": {
-    "codename": "Link",
+    "deviceName": "Link",
     "marketingName": "Link",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte lutea 2": {
-    "codename": "Lutea 2",
+    "deviceName": "Lutea 2",
     "marketingName": "Lutea 2",
     "manufacturer": "Zte",
     "brand": "Base",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte lutea 3": {
-    "codename": "Lutea 3",
+    "deviceName": "Lutea 3",
     "marketingName": "Lutea 3",
     "manufacturer": "Zte",
     "brand": "Base",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte mimosa x": {
-    "codename": "Mimosa X",
+    "deviceName": "Mimosa X",
     "marketingName": "Mimosa X",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte momodesign md droid": {
-    "codename": "Momodesign MD Droid",
+    "deviceName": "Momodesign MD Droid",
     "marketingName": "Momodesign MD Droid",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n600": {
-    "codename": "N600",
+    "deviceName": "N600",
     "marketingName": "Racer",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n799d": {
-    "codename": "N799D",
+    "deviceName": "N799D",
     "marketingName": "Blade Eg",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n817": {
-    "codename": "N817",
+    "deviceName": "N817",
     "marketingName": "Quest",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n900d": {
-    "codename": "N900D",
+    "deviceName": "N900D",
     "marketingName": "N900D",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9101": {
-    "codename": "N9101",
+    "deviceName": "N9101",
     "marketingName": "Imperial",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9120": {
-    "codename": "N9120",
+    "deviceName": "N9120",
     "marketingName": "Avid 4G",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9132": {
-    "codename": "N9132",
+    "deviceName": "N9132",
     "marketingName": "Prestige",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9136": {
-    "codename": "N9136",
+    "deviceName": "N9136",
     "marketingName": "Prestige 2",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9180": {
-    "codename": "N9180",
+    "deviceName": "N9180",
     "marketingName": "V5",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n918st": {
-    "codename": "N918St",
+    "deviceName": "N918St",
     "marketingName": "V5S",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n919": {
-    "codename": "N919",
+    "deviceName": "N919",
     "marketingName": "N919",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9510": {
-    "codename": "N9510",
+    "deviceName": "N9510",
     "marketingName": "Warp 4G (Boost)",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9511": {
-    "codename": "N9511",
+    "deviceName": "N9511",
     "marketingName": "N9511",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9515": {
-    "codename": "N9515",
+    "deviceName": "N9515",
     "marketingName": "Warp Sync (Boost)",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9517": {
-    "codename": "N9517",
+    "deviceName": "N9517",
     "marketingName": "Blade Force",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9519": {
-    "codename": "N9519",
+    "deviceName": "N9519",
     "marketingName": "Warp 7",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9520": {
-    "codename": "N9520",
+    "deviceName": "N9520",
     "marketingName": "Max (Boost)",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9521": {
-    "codename": "N9521",
+    "deviceName": "N9521",
     "marketingName": "Max+ (Boost)",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n958st": {
-    "codename": "N958St",
+    "deviceName": "N958St",
     "marketingName": "V5 Max Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte n9810": {
-    "codename": "N9810",
+    "deviceName": "N9810",
     "marketingName": "Vital",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx402": {
-    "codename": "NX402",
+    "deviceName": "NX402",
     "marketingName": "Nubia Z5 mini",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx403a": {
-    "codename": "NX403A",
+    "deviceName": "NX403A",
     "marketingName": "Nubia Z5S Mini",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx406e": {
-    "codename": "NX406E",
+    "deviceName": "NX406E",
     "marketingName": "Nubia Z5s mini",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx40x": {
-    "codename": "NX40X",
+    "deviceName": "NX40X",
     "marketingName": "Nubia Z5",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx501": {
-    "codename": "NX501",
+    "deviceName": "NX501",
     "marketingName": "Nubia Z5",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx503a": {
-    "codename": "NX503A",
+    "deviceName": "NX503A",
     "marketingName": "Nubia Z5S",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx505j": {
-    "codename": "NX505J",
+    "deviceName": "NX505J",
     "marketingName": "Nubia Z7 Max Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx506j": {
-    "codename": "NX506J",
+    "deviceName": "NX506J",
     "marketingName": "Nubia Z7 Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx507j": {
-    "codename": "NX507J",
+    "deviceName": "NX507J",
     "marketingName": "Nubia Z7 Mini Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx508j": {
-    "codename": "NX508J",
+    "deviceName": "NX508J",
     "marketingName": "Nubia Z9 Classic Edition Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx510j": {
-    "codename": "NX510J",
+    "deviceName": "NX510J",
     "marketingName": "Nubia Z9 Max Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx511j": {
-    "codename": "NX511J",
+    "deviceName": "NX511J",
     "marketingName": "Nubia Z9 mini",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx512j": {
-    "codename": "NX512J",
+    "deviceName": "NX512J",
     "marketingName": "Nubia Z9 Max Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx513j": {
-    "codename": "NX513J",
+    "deviceName": "NX513J",
     "marketingName": "Nubia My Prague Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx529j": {
-    "codename": "NX529J",
+    "deviceName": "NX529J",
     "marketingName": "Nubia Z11 Mini Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx531j": {
-    "codename": "NX531J",
+    "deviceName": "NX531J",
     "marketingName": "Nubia Z11 Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx541j": {
-    "codename": "NX541J",
+    "deviceName": "NX541J",
     "marketingName": "Nubia",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx549j": {
-    "codename": "NX549J",
+    "deviceName": "NX549J",
     "marketingName": "Nubia Z11 mini S",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx551j": {
-    "codename": "NX551J",
+    "deviceName": "NX551J",
     "marketingName": "Nubia M2 Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx563j": {
-    "codename": "NX563J",
+    "deviceName": "NX563J",
     "marketingName": "Nubia Z17",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx569h": {
-    "codename": "NX569H",
+    "deviceName": "NX569H",
     "marketingName": "Nubia Z17 Mini Premium Edition Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx569j": {
-    "codename": "NX569J",
+    "deviceName": "NX569J",
     "marketingName": "Nubia Z17 Mini Standard Edition Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx573j": {
-    "codename": "NX573J",
+    "deviceName": "NX573J",
     "marketingName": "Nubia M2 Lite",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx575j": {
-    "codename": "NX575J",
+    "deviceName": "NX575J",
     "marketingName": "Nubia N2 Dual SIM",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx597j": {
-    "codename": "NX597J",
+    "deviceName": "NX597J",
     "marketingName": "Nubia N1 Lite",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx601j": {
-    "codename": "NX601J",
+    "deviceName": "NX601J",
     "marketingName": "Nubia X6",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte nx907j": {
-    "codename": "NX907J",
+    "deviceName": "NX907J",
     "marketingName": "Nubia M2 Play",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte open": {
-    "codename": "Open",
+    "deviceName": "Open",
     "marketingName": "Open",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "firefoxos",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "firefoxos"
   },
   "zte open 2": {
-    "codename": "Open II",
+    "deviceName": "Open II",
     "marketingName": "Open II",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "firefoxos",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "firefoxos"
   },
   "zte open c": {
-    "codename": "Open C",
+    "deviceName": "Open C",
     "marketingName": "Open C",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "firefoxos",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "firefoxos"
   },
   "zte racer": {
-    "codename": "Racer",
+    "deviceName": "Racer",
     "marketingName": "Racer",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "zte racer ii": {
-    "codename": "Racer II",
+    "deviceName": "Racer II",
     "marketingName": "Racer II",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte reyo": {
-    "codename": "Reyo",
+    "deviceName": "Reyo",
     "marketingName": "Reyo",
     "manufacturer": "Zte",
     "brand": "Orange",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte skate": {
-    "codename": "Skate",
+    "deviceName": "Skate",
     "marketingName": "Skate",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte smart 4g": {
-    "codename": "Smart 4G",
+    "deviceName": "Smart 4G",
     "marketingName": "Smart 4G",
     "manufacturer": "Zte",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte smart ultra 6": {
-    "codename": "Smart ultra 6",
+    "deviceName": "Smart ultra 6",
     "marketingName": "Smart ultra 6",
     "manufacturer": "Zte",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte tania": {
-    "codename": "Tania",
+    "deviceName": "Tania",
     "marketingName": "Tania",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "zte u790": {
-    "codename": "U790",
+    "deviceName": "U790",
     "marketingName": "U790",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte u793": {
-    "codename": "U793",
+    "deviceName": "U793",
     "marketingName": "U793",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte u807": {
-    "codename": "U807",
+    "deviceName": "U807",
     "marketingName": "U807",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte u817": {
-    "codename": "U817",
+    "deviceName": "U817",
     "marketingName": "U817",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte u9180": {
-    "codename": "U9180",
+    "deviceName": "U9180",
     "marketingName": "V5 Red Bull",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte u930": {
-    "codename": "U930",
+    "deviceName": "U930",
     "marketingName": "U930",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte u930hd": {
-    "codename": "U930HD",
+    "deviceName": "U930HD",
     "marketingName": "U930HD",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": false
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "zte u960s3": {
-    "codename": "U960s3",
+    "deviceName": "U960s3",
     "marketingName": "U960s3",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte u9815": {
-    "codename": "U9815",
+    "deviceName": "U9815",
     "marketingName": "Grand Memo",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v769m": {
-    "codename": "V769M",
+    "deviceName": "V769M",
     "marketingName": "Leo Q2",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v788d": {
-    "codename": "V788D",
+    "deviceName": "V788D",
     "marketingName": "Kis Plus",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v795": {
-    "codename": "V795",
+    "deviceName": "V795",
     "marketingName": "V795",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v8000": {
-    "codename": "V8000",
+    "deviceName": "V8000",
     "marketingName": "Nova 4",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v807": {
-    "codename": "V807",
+    "deviceName": "V807",
     "marketingName": "Blade C",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v808": {
-    "codename": "V808",
+    "deviceName": "V808",
     "marketingName": "V808",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v809": {
-    "codename": "V809",
+    "deviceName": "V809",
     "marketingName": "Blade C2",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v829": {
-    "codename": "V829",
+    "deviceName": "V829",
     "marketingName": "Blade G Pro",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v880": {
-    "codename": "V880",
+    "deviceName": "V880",
     "marketingName": "V880",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "zte v882": {
-    "codename": "V882",
+    "deviceName": "V882",
     "marketingName": "Lord",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v889m": {
-    "codename": "V889M",
+    "deviceName": "V889M",
     "marketingName": "V889M",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v9180": {
-    "codename": "V9180",
+    "deviceName": "V9180",
     "marketingName": "V5 Red Bull",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v967s": {
-    "codename": "V967S",
+    "deviceName": "V967S",
     "marketingName": "Grand X2",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v970": {
-    "codename": "V970",
+    "deviceName": "V970",
     "marketingName": "Grand X",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v975": {
-    "codename": "V975",
+    "deviceName": "V975",
     "marketingName": "Geek",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte x500": {
-    "codename": "X500",
+    "deviceName": "X500",
     "marketingName": "Score (Cricket)",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte x501": {
-    "codename": "X501",
+    "deviceName": "X501",
     "marketingName": "Groove (Cricket)",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte x920": {
-    "codename": "X920",
+    "deviceName": "X920",
     "marketingName": "X920",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z17s": {
-    "codename": "Z17s",
+    "deviceName": "Z17s",
     "marketingName": "Nubia Z17s",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2040,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2040,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z232tl": {
-    "codename": "Z232TL",
+    "deviceName": "Z232TL",
     "marketingName": "Cymbal-G LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z233v": {
-    "codename": "Z233V",
+    "deviceName": "Z233V",
     "marketingName": "Cymbal LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z233vl": {
-    "codename": "Z233VL",
+    "deviceName": "Z233VL",
     "marketingName": "Cymbal-C LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z353vl": {
-    "codename": "Z353VL",
+    "deviceName": "Z353VL",
     "marketingName": "Cymbal-T LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z558vl": {
-    "codename": "Z558VL",
+    "deviceName": "Z558VL",
     "marketingName": "ZFive G LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z717bl": {
-    "codename": "Z717BL",
+    "deviceName": "Z717BL",
     "marketingName": "Citrine",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z717vl": {
-    "codename": "Z717VL",
+    "deviceName": "Z717VL",
     "marketingName": "Citrine",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z718tl": {
-    "codename": "Z718TL",
+    "deviceName": "Z718TL",
     "marketingName": "Jasper LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z768g": {
-    "codename": "Z768G",
+    "deviceName": "Z768G",
     "marketingName": "Midnight",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z792": {
-    "codename": "Z792",
+    "deviceName": "Z792",
     "marketingName": "Fanfare",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z798bl": {
-    "codename": "Z798BL",
+    "deviceName": "Z798BL",
     "marketingName": "Majesty Pro",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z799vl": {
-    "codename": "Z799VL",
+    "deviceName": "Z799VL",
     "marketingName": "Majesty Pro",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z812": {
-    "codename": "Z812",
+    "deviceName": "Z812",
     "marketingName": "Maven",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z815": {
-    "codename": "Z815",
+    "deviceName": "Z815",
     "marketingName": "Fanfare 2",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z820": {
-    "codename": "Z820",
+    "deviceName": "Z820",
     "marketingName": "Obsidian",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z828": {
-    "codename": "Z828",
+    "deviceName": "Z828",
     "marketingName": "Avid Plus",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z828tl": {
-    "codename": "Z828TL",
+    "deviceName": "Z828TL",
     "marketingName": "Midnight Pro LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z831": {
-    "codename": "Z831",
+    "deviceName": "Z831",
     "marketingName": "Maven 2",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z832": {
-    "codename": "Z832",
+    "deviceName": "Z832",
     "marketingName": "Sonata 3 LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z833": {
-    "codename": "Z833",
+    "deviceName": "Z833",
     "marketingName": "Avid Trio",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z835": {
-    "codename": "Z835",
+    "deviceName": "Z835",
     "marketingName": "Maven 3",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z836bl": {
-    "codename": "Z836BL",
+    "deviceName": "Z836BL",
     "marketingName": "Z836BL",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z839": {
-    "codename": "Z839",
+    "deviceName": "Z839",
     "marketingName": "Blade Vantage",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z851": {
-    "codename": "Z851",
+    "deviceName": "Z851",
     "marketingName": "Prelude Plus",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z851m": {
-    "codename": "Z851M",
+    "deviceName": "Z851M",
     "marketingName": "Overture 3",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z852": {
-    "codename": "Z852",
+    "deviceName": "Z852",
     "marketingName": "Fanfare 3",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z855": {
-    "codename": "Z855",
+    "deviceName": "Z855",
     "marketingName": "Avid 4",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z861bl": {
-    "codename": "Z861BL",
+    "deviceName": "Z861BL",
     "marketingName": "ZFive L LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z862vl": {
-    "codename": "Z862VL",
+    "deviceName": "Z862VL",
     "marketingName": "ZFive L LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z899vl": {
-    "codename": "Z899VL",
+    "deviceName": "Z899VL",
     "marketingName": "Majesty Pro Plus",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z916bl": {
-    "codename": "Z916BL",
+    "deviceName": "Z916BL",
     "marketingName": "ZMax Grand LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z917vl": {
-    "codename": "Z917VL",
+    "deviceName": "Z917VL",
     "marketingName": "ZMax Champ LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z955a": {
-    "codename": "Z955A",
+    "deviceName": "Z955A",
     "marketingName": "ZMax 2 LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z956": {
-    "codename": "Z956",
+    "deviceName": "Z956",
     "marketingName": "Grand X 4",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z958": {
-    "codename": "Z958",
+    "deviceName": "Z958",
     "marketingName": "ZMax 2 LTE",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z959": {
-    "codename": "Z959",
+    "deviceName": "Z959",
     "marketingName": "Grand X3",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z965": {
-    "codename": "Z965",
+    "deviceName": "Z965",
     "marketingName": "Blade X",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z970": {
-    "codename": "Z970",
+    "deviceName": "Z970",
     "marketingName": "ZMax",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z971": {
-    "codename": "Z971",
+    "deviceName": "Z971",
     "marketingName": "Blade Spark",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z978": {
-    "codename": "Z978",
+    "deviceName": "Z978",
     "marketingName": "Blade V8 Pro",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z981": {
-    "codename": "Z981",
+    "deviceName": "Z981",
     "marketingName": "Zmax Pro",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z982": {
-    "codename": "Z982",
+    "deviceName": "Z982",
     "marketingName": "Blade Z Max",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z983": {
-    "codename": "Z983",
+    "deviceName": "Z983",
     "marketingName": "Blade X Max",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z986dl": {
-    "codename": "Z986DL",
+    "deviceName": "Z986DL",
     "marketingName": "Max Blue",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z986u": {
-    "codename": "Z986U",
+    "deviceName": "Z986U",
     "marketingName": "Blade Max 3",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z987": {
-    "codename": "Z987",
+    "deviceName": "Z987",
     "marketingName": "Grand X Max+",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z992": {
-    "codename": "Z992",
+    "deviceName": "Z992",
     "marketingName": "Avail 2",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte z999": {
-    "codename": "Z999",
+    "deviceName": "Z999",
     "marketingName": "Axon M",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,290 +1,362 @@
 {
   "general karbonn device": {
-    "codename": "general Karbonn Device",
+    "deviceName": "general Karbonn Device",
     "marketingName": "general Karbonn Device",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a1*": {
-    "codename": "A1*",
+    "deviceName": "A1*",
     "marketingName": "A1*",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a1+": {
-    "codename": "A1+",
+    "deviceName": "A1+",
     "marketingName": "A1+",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a10": {
-    "codename": "A10",
+    "deviceName": "A10",
     "marketingName": "A10",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a2": {
-    "codename": "A2",
+    "deviceName": "A2",
     "marketingName": "A2",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a2+": {
-    "codename": "A2+",
+    "deviceName": "A2+",
     "marketingName": "A2+",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a26": {
-    "codename": "A26",
+    "deviceName": "A26",
     "marketingName": "A26",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a27": {
-    "codename": "A27",
+    "deviceName": "A27",
     "marketingName": "A27",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a27+": {
-    "codename": "A27+",
+    "deviceName": "A27+",
     "marketingName": "A27+",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a35": {
-    "codename": "A35",
+    "deviceName": "A35",
     "marketingName": "A35",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a4": {
-    "codename": "A4",
+    "deviceName": "A4",
     "marketingName": "A4",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a50": {
-    "codename": "A50",
+    "deviceName": "A50",
     "marketingName": "A50",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a5i": {
-    "codename": "A5i",
+    "deviceName": "A5i",
     "marketingName": "A5i",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a6": {
-    "codename": "A6",
+    "deviceName": "A6",
     "marketingName": "A6",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn a91": {
-    "codename": "A91",
+    "deviceName": "A91",
     "marketingName": "A91",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn k9 smart grand": {
-    "codename": "K9 Smart Grand",
+    "deviceName": "K9 Smart Grand",
     "marketingName": "K9 Smart Grand",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn s2": {
-    "codename": "S2",
+    "deviceName": "S2",
     "marketingName": "S2 Titanium",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn sparkle v": {
-    "codename": "Sparkle V",
+    "deviceName": "Sparkle V",
     "marketingName": "Sparkle V",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn titanium machfive": {
-    "codename": "Titanium MachFive",
+    "deviceName": "Titanium MachFive",
     "marketingName": "Titanium MachFive",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn titanium octane": {
-    "codename": "Titanium Octane",
+    "deviceName": "Titanium Octane",
     "marketingName": "Titanium Octane",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn titanium s109": {
-    "codename": "Titanium S109",
+    "deviceName": "Titanium S109",
     "marketingName": "Titanium S109",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn titanium s202": {
-    "codename": "S202",
+    "deviceName": "S202",
     "marketingName": "Titanium Dazzle 2",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn titanium s5 ultra": {
-    "codename": "Titanium S5 Ultra",
+    "deviceName": "Titanium S5 Ultra",
     "marketingName": "Titanium S5 Ultra",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "karbonn titanium wind w4": {
-    "codename": "Titanium Wind W4",
+    "deviceName": "Titanium Wind W4",
     "marketingName": "Titanium Wind W4",
     "manufacturer": "Karbonn",
     "brand": "Karbonn",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   }
 }

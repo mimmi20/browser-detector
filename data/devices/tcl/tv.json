@@ -1,14 +1,17 @@
 {
   "general tcl tv": {
-    "codename": "general TCL TV",
+    "deviceName": "general TCL TV",
     "marketingName": "general TCL TV",
     "manufacturer": "Tcl",
     "brand": "Tcl",
-    "platform": null,
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

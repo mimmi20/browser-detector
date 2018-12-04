@@ -1,38 +1,47 @@
 {
   "ritmix rmd-1028": {
-    "codename": "RMD-1028",
+    "deviceName": "RMD-1028",
     "marketingName": "RMD-1028",
     "manufacturer": "Ritmix",
     "brand": "Ritmix",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ritmix rmd-753": {
-    "codename": "RMD-753",
+    "deviceName": "RMD-753",
     "marketingName": "RMD-753",
     "manufacturer": "Ritmix",
     "brand": "Ritmix",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ritmix rmd-757": {
-    "codename": "RMD-757",
+    "deviceName": "RMD-757",
     "marketingName": "RMD-757",
     "manufacturer": "Ritmix",
     "brand": "Ritmix",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

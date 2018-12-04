@@ -1,926 +1,1157 @@
 {
   "asus a001": {
-    "codename": "A001",
+    "deviceName": "A001",
     "marketingName": "ZenFone 3 Ultra",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus a10": {
-    "codename": "A10",
+    "deviceName": "A10",
     "marketingName": "A10",
     "manufacturer": "Asus",
     "brand": "GarminAsus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus a50": {
-    "codename": "A50",
+    "deviceName": "A50",
     "marketingName": "A50",
     "manufacturer": "Asus",
     "brand": "GarminAsus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus a68": {
-    "codename": "A68",
+    "deviceName": "A68",
     "marketingName": "PadFone 2",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus galaxy6": {
-    "codename": "Galaxy6",
+    "deviceName": "Galaxy6",
     "marketingName": "Galaxy6",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "asus k00g": {
-    "codename": "K00G",
+    "deviceName": "K00G",
     "marketingName": "Fonepad Note 6",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus nuvifone m10": {
-    "codename": "Nuvifone M10",
+    "deviceName": "Nuvifone M10",
     "marketingName": "Nuvifone M10",
     "manufacturer": "GarminAsus",
     "brand": "GarminAsus",
-    "platform": "windows mobile os",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows mobile os"
   },
   "asus padfone": {
-    "codename": "PadFone",
+    "deviceName": "PadFone",
     "marketingName": "PadFone",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus padfone infinity": {
-    "codename": "PadFone Infinity",
+    "deviceName": "PadFone Infinity",
     "marketingName": "PadFone Infinity",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus padfone t004": {
-    "codename": "T004",
+    "deviceName": "T004",
     "marketingName": "PadFone Infinity A86",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus t00f": {
-    "codename": "T00F",
+    "deviceName": "T00F",
     "marketingName": "ZenFone 5",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus t00g": {
-    "codename": "T00G",
+    "deviceName": "T00G",
     "marketingName": "ZenFone 5",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus t00i": {
-    "codename": "T00I",
+    "deviceName": "T00I",
     "marketingName": "Zenfone 4",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus t00j": {
-    "codename": "T00J",
+    "deviceName": "T00J",
     "marketingName": "ZenFone 5",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus t00k": {
-    "codename": "T00K",
+    "deviceName": "T00K",
     "marketingName": "ZenFone 5 Lite",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus t00n": {
-    "codename": "T00N",
+    "deviceName": "T00N",
     "marketingName": "PadFone S",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus t00p": {
-    "codename": "T00P",
+    "deviceName": "T00P",
     "marketingName": "ZenFone 5",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus t00q": {
-    "codename": "T00Q",
+    "deviceName": "T00Q",
     "marketingName": "Zenfone 4 A450CG",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x003": {
-    "codename": "X003",
+    "deviceName": "X003",
     "marketingName": "Pegasus",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x007d": {
-    "codename": "X007D",
+    "deviceName": "X007D",
     "marketingName": "ZenFone Go",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x007da": {
-    "codename": "X007DA",
+    "deviceName": "X007DA",
     "marketingName": "ZenFone Go",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x008": {
-    "codename": "X008",
+    "deviceName": "X008",
     "marketingName": "Zenfone Pegasus 3",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x008d": {
-    "codename": "X008D",
+    "deviceName": "X008D",
     "marketingName": "Zenfone 3 Max ZC520TL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x00ad": {
-    "codename": "X00AD",
+    "deviceName": "X00AD",
     "marketingName": "Zenfone Go ZB500KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x00bd": {
-    "codename": "X00BD",
+    "deviceName": "X00BD",
     "marketingName": "Zenfone Go",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x00dd": {
-    "codename": "X00DD",
+    "deviceName": "X00DD",
     "marketingName": "Zenfone 3 Max",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x00hd": {
-    "codename": "X00HD",
+    "deviceName": "X00HD",
     "marketingName": "Zenfone 4 Max",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x00id": {
-    "codename": "X00ID",
+    "deviceName": "X00ID",
     "marketingName": "Zenfone 4 Max ZC554KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x00ld": {
-    "codename": "X00LD",
+    "deviceName": "X00LD",
     "marketingName": "ZenFone 4",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x00lda": {
-    "codename": "X00LDA",
+    "deviceName": "X00LDA",
     "marketingName": "ZenFone 4 Selfie ZB553KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x00ldb": {
-    "codename": "X00LDB",
+    "deviceName": "X00LDB",
     "marketingName": "ZenFone 4 Selfie ZB553KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x00qd": {
-    "codename": "X00QD",
+    "deviceName": "X00QD",
     "marketingName": "Zenfone 5 ZE620KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2246,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2246,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x00td": {
-    "codename": "X00TD",
+    "deviceName": "X00TD",
     "marketingName": "Zenfone Max Pro M1",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x013d": {
-    "codename": "X013D",
+    "deviceName": "X013D",
     "marketingName": "X013D",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x014d": {
-    "codename": "X014D",
+    "deviceName": "X014D",
     "marketingName": "ZenFone Go",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus x018d": {
-    "codename": "X018D",
+    "deviceName": "X018D",
     "marketingName": "X018D",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z002": {
-    "codename": "Z002",
+    "deviceName": "Z002",
     "marketingName": "Zenfone 6 A600CG",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z007": {
-    "codename": "Z007",
+    "deviceName": "Z007",
     "marketingName": "Zenfone C ZC451CG",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z008d": {
-    "codename": "Z008D",
+    "deviceName": "Z008D",
     "marketingName": "Zenfone 2 ZE550ML",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00ad": {
-    "codename": "Z00AD",
+    "deviceName": "Z00AD",
     "marketingName": "ZenFone 2 ZE551ML",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00ada": {
-    "codename": "Z00ADA",
+    "deviceName": "Z00ADA",
     "marketingName": "ZenFone 2 ZE551ML",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00d": {
-    "codename": "Z00D",
+    "deviceName": "Z00D",
     "marketingName": "Zenfone 2 ZE500CL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00ed": {
-    "codename": "Z00ED",
+    "deviceName": "Z00ED",
     "marketingName": "Zenfone 2 Laser ZE550KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00ld": {
-    "codename": "Z00LD",
+    "deviceName": "Z00LD",
     "marketingName": "Z00LD",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00md": {
-    "codename": "Z00MD",
+    "deviceName": "Z00MD",
     "marketingName": "ZenFone 2 Laser",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00rd": {
-    "codename": "Z00RD",
+    "deviceName": "Z00RD",
     "marketingName": "ZenFone Laser 2",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00sd": {
-    "codename": "Z00SD",
+    "deviceName": "Z00SD",
     "marketingName": "ZenFone Go",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00ud": {
-    "codename": "Z00UD",
+    "deviceName": "Z00UD",
     "marketingName": "Zenfone Selfie ZD551KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00vd": {
-    "codename": "Z00VD",
+    "deviceName": "Z00VD",
     "marketingName": "ZenFone Go",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00xs": {
-    "codename": "Z00XS",
+    "deviceName": "Z00XS",
     "marketingName": "ZenFone Zoom",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z00yd": {
-    "codename": "Z00YD",
+    "deviceName": "Z00YD",
     "marketingName": "Live",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z010d": {
-    "codename": "Z010D",
+    "deviceName": "Z010D",
     "marketingName": "Z010D",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z010dd": {
-    "codename": "Z010DD",
+    "deviceName": "Z010DD",
     "marketingName": "ZenFone 3",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z011d": {
-    "codename": "Z011D",
+    "deviceName": "Z011D",
     "marketingName": "ZenFone 2 Laser",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z012d": {
-    "codename": "Z012D",
+    "deviceName": "Z012D",
     "marketingName": "ZenFone 3 5.5",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z012da": {
-    "codename": "Z012DA",
+    "deviceName": "Z012DA",
     "marketingName": "ZenFone 3",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z012dc": {
-    "codename": "Z012DC",
+    "deviceName": "Z012DC",
     "marketingName": "ZenFone 3",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z016d": {
-    "codename": "Z016D",
+    "deviceName": "Z016D",
     "marketingName": "Zenfone 3 Deluxe",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z017d": {
-    "codename": "Z017D",
+    "deviceName": "Z017D",
     "marketingName": "ZenFone 3 ZE520KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z017da": {
-    "codename": "Z017DA",
+    "deviceName": "Z017DA",
     "marketingName": "ZenFone 3 ZE520KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z017db": {
-    "codename": "Z017DB",
+    "deviceName": "Z017DB",
     "marketingName": "ZenFone 3 ZE520KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z01bd": {
-    "codename": "Z01BD",
+    "deviceName": "Z01BD",
     "marketingName": "Zenfone Max",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z01fd": {
-    "codename": "Z01FD",
+    "deviceName": "Z01FD",
     "marketingName": "ZenFone 3 Deluxe",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z01hd": {
-    "codename": "Z01HD",
+    "deviceName": "Z01HD",
     "marketingName": "ZenFone 3 Zoom",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z01hda": {
-    "codename": "Z01HDA",
+    "deviceName": "Z01HDA",
     "marketingName": "ZenFone 3 Zoom",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z01kd": {
-    "codename": "Z01KD",
+    "deviceName": "Z01KD",
     "marketingName": "Zenfone 4 ZE554KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z01kda": {
-    "codename": "Z01KDA",
+    "deviceName": "Z01KDA",
     "marketingName": "ZenFone 4",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z01md": {
-    "codename": "Z01MD",
+    "deviceName": "Z01MD",
     "marketingName": "ZenFone 4 Selfie",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus z01rd": {
-    "codename": "Z01RD",
+    "deviceName": "Z01RD",
     "marketingName": "ZenFone 5Z ZS620KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2246,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2246,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus za550kl": {
-    "codename": "ZA550KL",
+    "deviceName": "ZA550KL",
     "marketingName": "ZenFone Live (L1) ZA550KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus zb555kl": {
-    "codename": "ZB555KL",
+    "deviceName": "ZB555KL",
     "marketingName": "ZenFone Max (M1) ZB555KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus zb602kl": {
-    "codename": "ZB602KL",
+    "deviceName": "ZB602KL",
     "marketingName": "ZenFone Max Pro ZB602KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus zc553kl": {
-    "codename": "ZC553KL",
+    "deviceName": "ZC553KL",
     "marketingName": "ZenFone 3 Max ZC553KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus ze520kl": {
-    "codename": "ZE520KL",
+    "deviceName": "ZE520KL",
     "marketingName": "ZenFone 3 ZE520KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus ze553kl": {
-    "codename": "ZE553KL",
+    "deviceName": "ZE553KL",
     "marketingName": "ZenFone 3 Zoom ZE553KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus ze554kl": {
-    "codename": "ZE554KL",
+    "deviceName": "ZE554KL",
     "marketingName": "ZenFone 4 ZE554KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus ze620kl": {
-    "codename": "ZE620KL",
+    "deviceName": "ZE620KL",
     "marketingName": "ZenFone 5 ZE620KL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2246,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2246,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

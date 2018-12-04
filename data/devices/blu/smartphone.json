@@ -1,314 +1,392 @@
 {
   "general blu device": {
-    "codename": "general BLU Device",
+    "deviceName": "general BLU Device",
     "marketingName": "general BLU Device",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "blu dash 3.5": {
-    "codename": "Dash 3.5",
+    "deviceName": "Dash 3.5",
     "marketingName": "Dash 3.5",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu dash 4.0": {
-    "codename": "Dash 4.0",
+    "deviceName": "Dash 4.0",
     "marketingName": "Dash 4.0",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu dash 4.5": {
-    "codename": "Dash 4.5",
+    "deviceName": "Dash 4.5",
     "marketingName": "Dash 4.5",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu dash 5.0": {
-    "codename": "Dash 5.0",
+    "deviceName": "Dash 5.0",
     "marketingName": "Dash 5.0",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu dash jr": {
-    "codename": "Dash JR",
+    "deviceName": "Dash JR",
     "marketingName": "Dash JR",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu dash music 4.0": {
-    "codename": "Dash Music 4.0",
+    "deviceName": "Dash Music 4.0",
     "marketingName": "Dash Music 4.0",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu life one": {
-    "codename": "Life One",
+    "deviceName": "Life One",
     "marketingName": "Life One",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu life view": {
-    "codename": "Life View",
+    "deviceName": "Life View",
     "marketingName": "Life View",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu magic": {
-    "codename": "Magic",
+    "deviceName": "Magic",
     "marketingName": "Magic",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu quattro 4.5": {
-    "codename": "Quattro 4.5",
+    "deviceName": "Quattro 4.5",
     "marketingName": "Quattro 4.5",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu studio 5.0": {
-    "codename": "Studio 5.0",
+    "deviceName": "Studio 5.0",
     "marketingName": "Studio 5.0",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu studio 5.0 ii": {
-    "codename": "Studio 5.0 II",
+    "deviceName": "Studio 5.0 II",
     "marketingName": "Studio 5.0 II",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu studio 5.0 s ii": {
-    "codename": "Studio 5.0 S II",
+    "deviceName": "Studio 5.0 S II",
     "marketingName": "Studio 5.0 S II",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu studio 5.3 ii": {
-    "codename": "Studio 5.3 II",
+    "deviceName": "Studio 5.3 II",
     "marketingName": "Studio 5.3 II",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu studio 5.5": {
-    "codename": "Studio 5.5",
+    "deviceName": "Studio 5.5",
     "marketingName": "Studio 5.5",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu studio g": {
-    "codename": "Studio G",
+    "deviceName": "Studio G",
     "marketingName": "Studio G",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu studio g hd": {
-    "codename": "Studio G HD",
+    "deviceName": "Studio G HD",
     "marketingName": "Studio G HD",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu studio view xl": {
-    "codename": "Studio View XL",
+    "deviceName": "Studio View XL",
     "marketingName": "Studio View XL",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu studio xl 2": {
-    "codename": "Studio XL 2",
+    "deviceName": "Studio XL 2",
     "marketingName": "Studio XL 2",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu vivo 4.65": {
-    "codename": "Vivo 4.65",
+    "deviceName": "Vivo 4.65",
     "marketingName": "Vivo 4.65",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu vivo iv": {
-    "codename": "Vivo IV",
+    "deviceName": "Vivo IV",
     "marketingName": "Vivo IV",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "blu win hd lte": {
-    "codename": "Win HD LTE",
+    "deviceName": "Win HD LTE",
     "marketingName": "Win HD LTE",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "blu win hd w510u": {
-    "codename": "Win HD W510u",
+    "deviceName": "Win HD W510u",
     "marketingName": "Win HD W510u",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "blu win jr lte": {
-    "codename": "Win JR LTE",
+    "deviceName": "Win JR LTE",
     "marketingName": "Win JR LTE",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "blu win jr w410a": {
-    "codename": "Win JR W410a",
+    "deviceName": "Win JR W410a",
     "marketingName": "Win JR W410a",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   }
 }

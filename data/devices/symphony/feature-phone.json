@@ -1,14 +1,17 @@
 {
   "symphony l102": {
-    "codename": "L102",
+    "deviceName": "L102",
     "marketingName": "L102",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

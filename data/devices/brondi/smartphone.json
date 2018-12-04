@@ -1,230 +1,287 @@
 {
   "general brondi device": {
-    "codename": "general Brondi Device",
+    "deviceName": "general Brondi Device",
     "marketingName": "general Brondi Device",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi centurion": {
-    "codename": "CENTURION",
+    "deviceName": "CENTURION",
     "marketingName": "CENTURION",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi centurion 3": {
-    "codename": "CENTURION 3",
+    "deviceName": "CENTURION 3",
     "marketingName": "CENTURION 3",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi gladiator": {
-    "codename": "Gladiator",
+    "deviceName": "Gladiator",
     "marketingName": "Gladiator",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi gladiator 2": {
-    "codename": "Gladiator 2",
+    "deviceName": "Gladiator 2",
     "marketingName": "Gladiator 2",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi gladiator 3": {
-    "codename": "Gladiator 3",
+    "deviceName": "Gladiator 3",
     "marketingName": "Gladiator 3",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi gladiator 4": {
-    "codename": "Gladiator 4",
+    "deviceName": "Gladiator 4",
     "marketingName": "Gladiator 4",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi glory": {
-    "codename": "Glory",
+    "deviceName": "Glory",
     "marketingName": "Glory",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi glory 2": {
-    "codename": "Glory 2",
+    "deviceName": "Glory 2",
     "marketingName": "Glory 2",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi glory 3": {
-    "codename": "Glory 3",
+    "deviceName": "Glory 3",
     "marketingName": "Glory 3",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi glory 4": {
-    "codename": "Glory 4",
+    "deviceName": "Glory 4",
     "marketingName": "Glory 4",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi luxury": {
-    "codename": "Luxury",
+    "deviceName": "Luxury",
     "marketingName": "Luxury",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi luxury 3": {
-    "codename": "Luxury 3",
+    "deviceName": "Luxury 3",
     "marketingName": "Luxury 3",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi luxury 4": {
-    "codename": "Luxury 4",
+    "deviceName": "Luxury 4",
     "marketingName": "Luxury 4",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi luxury 5": {
-    "codename": "Luxury 5",
+    "deviceName": "Luxury 5",
     "marketingName": "Luxury 5",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi sensuelle": {
-    "codename": "Sensuelle",
+    "deviceName": "Sensuelle",
     "marketingName": "Sensuelle",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi victory": {
-    "codename": "Victory",
+    "deviceName": "Victory",
     "marketingName": "Victory",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi victory 2": {
-    "codename": "Victory 2",
+    "deviceName": "Victory 2",
     "marketingName": "Victory 2",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi victory 3": {
-    "codename": "Victory 3",
+    "deviceName": "Victory 3",
     "marketingName": "Victory 3",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

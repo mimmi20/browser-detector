@@ -1,38 +1,47 @@
 {
   "general minix device": {
-    "codename": "general Minix Device",
+    "deviceName": "general Minix Device",
     "marketingName": "general Minix Device",
     "manufacturer": "Minix",
     "brand": "Minix",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "minix neo x5": {
-    "codename": "Neo X5",
+    "deviceName": "Neo X5",
     "marketingName": "Neo X5",
     "manufacturer": "Minix",
     "brand": "Minix",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "minix neo x8 plus": {
-    "codename": "Neo X8 Plus",
+    "deviceName": "Neo X8 Plus",
     "marketingName": "Neo X8 Plus",
     "manufacturer": "Minix",
     "brand": "Minix",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

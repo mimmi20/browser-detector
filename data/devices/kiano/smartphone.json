@@ -1,14 +1,17 @@
 {
   "kiano elegance 5.0 3g": {
-    "codename": "Elegance 5.0 3G",
+    "deviceName": "Elegance 5.0 3G",
     "marketingName": "Elegance 5.0 3G",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

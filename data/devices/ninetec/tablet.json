@@ -1,38 +1,47 @@
 {
   "general ninetec device": {
-    "codename": "general NINETEC Device",
+    "deviceName": "general NINETEC Device",
     "marketingName": "general NINETEC Device",
     "manufacturer": "NINETEC",
     "brand": "NINETEC",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ninetec nt.i10g2": {
-    "codename": "NT.I10G2",
+    "deviceName": "NT.I10G2",
     "marketingName": "Inspire 10 G2",
     "manufacturer": "NINETEC",
     "brand": "NINETEC",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ninetec nt.p10g2": {
-    "codename": "NT.P10G2",
+    "deviceName": "NT.P10G2",
     "marketingName": "Platinum 10 G2",
     "manufacturer": "NINETEC",
     "brand": "NINETEC",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

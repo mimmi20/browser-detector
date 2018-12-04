@@ -1,14 +1,17 @@
 {
   "general nintendo device": {
-    "codename": "general Nintendo Device",
+    "deviceName": "general Nintendo Device",
     "marketingName": "general Nintendo Device",
     "manufacturer": "Nintendo",
     "brand": "Nintendo",
-    "platform": "nintendo os",
     "type": "mobile-device",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "nintendo os"
   }
 }

@@ -1,26 +1,32 @@
 {
   "lava kkt20": {
-    "codename": "KKT20",
+    "deviceName": "KKT20",
     "marketingName": "KKT20",
     "manufacturer": "Lava",
     "brand": "Lava",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "lava spark 284": {
-    "codename": "Spark 284",
+    "deviceName": "Spark 284",
     "marketingName": "Spark 284",
     "manufacturer": "Lava",
     "brand": "Lava",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

@@ -1,110 +1,137 @@
 {
   "cube i1-3gd": {
-    "codename": "I1-3GD",
+    "deviceName": "I1-3GD",
     "marketingName": "iWork 8 3G",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "platform": null,
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "cube u27gt-3gh": {
-    "codename": "U27GT-3GH",
+    "deviceName": "U27GT-3GH",
     "marketingName": "Talk 8H 3G",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cube u39gt-3g": {
-    "codename": "U39GT-3G",
+    "deviceName": "U39GT-3G",
     "marketingName": "Talk 9",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cube u51gt": {
-    "codename": "U51GT",
+    "deviceName": "U51GT",
     "marketingName": "Talk 7",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cube u51gt-s": {
-    "codename": "U51GT-S",
+    "deviceName": "U51GT-S",
     "marketingName": "Talk 7 XS 3G",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cube u51gt_c4": {
-    "codename": "U51GT C4",
+    "deviceName": "U51GT C4",
     "marketingName": "Talk 7x",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cube u51gt_c4b": {
-    "codename": "U51GT C4B",
+    "deviceName": "U51GT C4B",
     "marketingName": "Talk 7x",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cube u55gt": {
-    "codename": "U55GT",
+    "deviceName": "U55GT",
     "marketingName": "Talk 79 3G",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cube u65gt": {
-    "codename": "U65GT",
+    "deviceName": "U65GT",
     "marketingName": "Talk 9X",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

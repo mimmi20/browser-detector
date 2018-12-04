@@ -1,26 +1,32 @@
 {
   "general wieppo device": {
-    "codename": "general Wieppo Device",
+    "deviceName": "general Wieppo Device",
     "marketingName": "general Wieppo Device",
     "manufacturer": "Wieppo",
     "brand": "Wieppo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wieppo s6 lite": {
-    "codename": "S6 Lite",
+    "deviceName": "S6 Lite",
     "marketingName": "S6 Lite",
     "manufacturer": "Wieppo",
     "brand": "Wieppo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

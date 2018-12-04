@@ -1,386 +1,482 @@
 {
   "htc 8500": {
-    "codename": "8500",
+    "deviceName": "8500",
     "marketingName": "Qtek 8500",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc a810e": {
-    "codename": "A810e",
+    "deviceName": "A810e",
     "marketingName": "ChaCha",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "htc e600": {
-    "codename": "S620",
+    "deviceName": "S620",
     "marketingName": "E600",
     "manufacturer": "Htc",
     "brand": "SPV",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc e650": {
-    "codename": "E650",
+    "deviceName": "E650",
     "marketingName": "E650",
     "manufacturer": "Htc",
     "brand": "SPV",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc mda compact": {
-    "codename": "Magician",
+    "deviceName": "Magician",
     "marketingName": "MDA Compact",
     "manufacturer": "Htc",
     "brand": "Tmobile",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc mda compact iii": {
-    "codename": "MDA Compact III",
+    "deviceName": "MDA Compact III",
     "marketingName": "MDA Compact III",
     "manufacturer": "Htc",
     "brand": "Tmobile",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc mda vario ii": {
-    "codename": "TyTN",
+    "deviceName": "TyTN",
     "marketingName": "MDA Vario II",
     "manufacturer": "Htc",
     "brand": "Tmobile",
-    "platform": "windows mobile os",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows mobile os"
   },
   "htc mda vario iii": {
-    "codename": "TyTN II",
+    "deviceName": "TyTN II",
     "marketingName": "MDA Vario III",
     "manufacturer": "Htc",
     "brand": "Tmobile",
-    "platform": "windows mobile os",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows mobile os"
   },
   "htc mini t5555": {
-    "codename": "T5555",
+    "deviceName": "T5555",
     "marketingName": "HD mini",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows mobile os",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows mobile os"
   },
   "htc mteor": {
-    "codename": "MTeoR",
+    "deviceName": "MTeoR",
     "marketingName": "MTeoR",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc p3300": {
-    "codename": "P3300",
+    "deviceName": "P3300",
     "marketingName": "P3300",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc p3350": {
-    "codename": "P3350",
+    "deviceName": "P3350",
     "marketingName": "Love",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc p3700": {
-    "codename": "P3700",
+    "deviceName": "P3700",
     "marketingName": "Touch Diamond",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 640,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "htc p6300": {
-    "codename": "P6300",
+    "deviceName": "P6300",
     "marketingName": "P6300",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc radar": {
-    "codename": "Radar",
+    "deviceName": "Radar",
     "marketingName": "Radar",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc radar 4g": {
-    "codename": "Radar 4G",
+    "deviceName": "Radar 4G",
     "marketingName": "Radar 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc radar c110e": {
-    "codename": "Radar C110e",
+    "deviceName": "Radar C110e",
     "marketingName": "Radar C110e",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc s510": {
-    "codename": "S510",
+    "deviceName": "S510",
     "marketingName": "Snap",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows mobile os",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows mobile os"
   },
   "htc s620": {
-    "codename": "S620",
+    "deviceName": "S620",
     "marketingName": "Excalibur",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc smart f3188": {
-    "codename": "F3188",
+    "deviceName": "F3188",
     "marketingName": "Smart",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "htc spark": {
-    "codename": "Spark",
+    "deviceName": "Spark",
     "marketingName": "7 Trophy",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc t3232": {
-    "codename": "T3232",
+    "deviceName": "T3232",
     "marketingName": "Touch 3G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc t3335": {
-    "codename": "T3335",
+    "deviceName": "T3335",
     "marketingName": "Touch2",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows mobile os",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows mobile os"
   },
   "htc t7576": {
-    "codename": "T7576",
+    "deviceName": "T7576",
     "marketingName": "7 Pro",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc t8698": {
-    "codename": "T8698",
+    "deviceName": "T8698",
     "marketingName": "7 Mozart",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc touch hd t8282": {
-    "codename": "T8282",
+    "deviceName": "T8282",
     "marketingName": "Touch HD",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "htc v1510": {
-    "codename": "v1510",
+    "deviceName": "v1510",
     "marketingName": "v1510",
     "manufacturer": "Htc",
     "brand": "Vodafone",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc v3600": {
-    "codename": "v3600",
+    "deviceName": "v3600",
     "marketingName": "v3600",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "htc vpa compact iv": {
-    "codename": "VPA Compact IV",
+    "deviceName": "VPA Compact IV",
     "marketingName": "Herald/Wing/Atlas",
     "manufacturer": "Htc",
     "brand": "Vodafone",
-    "platform": "windows mobile os",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows mobile os"
   },
   "htc vpa touch": {
-    "codename": "VPA Touch",
+    "deviceName": "VPA Touch",
     "marketingName": "VPA Touch",
     "manufacturer": "Htc",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "htc x310e": {
-    "codename": "X310e",
+    "deviceName": "X310e",
     "marketingName": "Titan",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc x7500": {
-    "codename": "X7500",
+    "deviceName": "X7500",
     "marketingName": "Advantage",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 640,
-    "resolutionHeight": 480,
-    "dualOrientation": false
+    "display": {
+      "width": 640,
+      "height": 480,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   }
 }

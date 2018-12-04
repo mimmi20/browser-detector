@@ -1,26 +1,32 @@
 {
   "general smartron device": {
-    "codename": "general Smartron Device",
+    "deviceName": "general Smartron Device",
     "marketingName": "general Smartron Device",
     "manufacturer": "Smartron",
     "brand": "Smartron",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "smartron t5524": {
-    "codename": "T5524",
+    "deviceName": "T5524",
     "marketingName": "T5524",
     "manufacturer": "Smartron",
     "brand": "Smartron",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

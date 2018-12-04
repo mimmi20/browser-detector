@@ -1,86 +1,107 @@
 {
   "general readboy device": {
-    "codename": "general Readboy Device",
+    "deviceName": "general Readboy Device",
     "marketingName": "general Readboy Device",
     "manufacturer": "Readboy",
     "brand": "Readboy",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "readboy f300": {
-    "codename": "F300",
+    "deviceName": "F300",
     "marketingName": "F300",
     "manufacturer": "Readboy",
     "brand": "Readboy",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "readboy g100": {
-    "codename": "G100",
+    "deviceName": "G100",
     "marketingName": "G100",
     "manufacturer": "Readboy",
     "brand": "Readboy",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "readboy g20": {
-    "codename": "G20",
+    "deviceName": "G20",
     "marketingName": "G20",
     "manufacturer": "Readboy",
     "brand": "Readboy",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "readboy g30": {
-    "codename": "G30",
+    "deviceName": "G30",
     "marketingName": "G30",
     "manufacturer": "Readboy",
     "brand": "Readboy",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "readboy g35": {
-    "codename": "G35",
+    "deviceName": "G35",
     "marketingName": "G35",
     "manufacturer": "Readboy",
     "brand": "Readboy",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "readboy g50": {
-    "codename": "G50",
+    "deviceName": "G50",
     "marketingName": "G50",
     "manufacturer": "Readboy",
     "brand": "Readboy",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

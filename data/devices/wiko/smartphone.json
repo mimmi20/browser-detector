@@ -1,902 +1,1127 @@
 {
   "general wiko device": {
-    "codename": "general Wiko Device",
+    "deviceName": "general Wiko Device",
     "marketingName": "general Wiko Device",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko barry": {
-    "codename": "Barry",
+    "deviceName": "Barry",
     "marketingName": "Barry",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko birdy": {
-    "codename": "Birdy",
+    "deviceName": "Birdy",
     "marketingName": "Birdy",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko bloom": {
-    "codename": "Bloom",
+    "deviceName": "Bloom",
     "marketingName": "Bloom",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko cink five": {
-    "codename": "Cink Five",
+    "deviceName": "Cink Five",
     "marketingName": "Cink Five",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko cink king": {
-    "codename": "Cink King",
+    "deviceName": "Cink King",
     "marketingName": "Cink King",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko cink peax": {
-    "codename": "Cink Peax",
+    "deviceName": "Cink Peax",
     "marketingName": "Cink Peax",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko cink peax 2": {
-    "codename": "Cink Peax 2",
+    "deviceName": "Cink Peax 2",
     "marketingName": "Cink Peax 2",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko cink slim": {
-    "codename": "Cink Slim",
+    "deviceName": "Cink Slim",
     "marketingName": "Cink Slim",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko cink+": {
-    "codename": "Cink+",
+    "deviceName": "Cink+",
     "marketingName": "Cink+",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko darkfull": {
-    "codename": "Darkfull",
+    "deviceName": "Darkfull",
     "marketingName": "Darkfull",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko darkmoon": {
-    "codename": "Darkmoon",
+    "deviceName": "Darkmoon",
     "marketingName": "Darkmoon",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko darknight": {
-    "codename": "Darknight",
+    "deviceName": "Darknight",
     "marketingName": "Darknight",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko darkside": {
-    "codename": "Darkside",
+    "deviceName": "Darkside",
     "marketingName": "Darkside",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko fever": {
-    "codename": "Fever",
+    "deviceName": "Fever",
     "marketingName": "Fever",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko fizz": {
-    "codename": "Fizz",
+    "deviceName": "Fizz",
     "marketingName": "Fizz",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko getaway": {
-    "codename": "Getaway",
+    "deviceName": "Getaway",
     "marketingName": "Getaway",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko goa": {
-    "codename": "Goa",
+    "deviceName": "Goa",
     "marketingName": "Goa",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko harry": {
-    "codename": "Harry",
+    "deviceName": "Harry",
     "marketingName": "Harry",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko highway": {
-    "codename": "Highway",
+    "deviceName": "Highway",
     "marketingName": "Highway",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko highway 4g": {
-    "codename": "Highway 4G",
+    "deviceName": "Highway 4G",
     "marketingName": "Highway 4G",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko highway signs": {
-    "codename": "Highway Signs",
+    "deviceName": "Highway Signs",
     "marketingName": "Highway Signs",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko highway star": {
-    "codename": "Highway Star 4G",
+    "deviceName": "Highway Star 4G",
     "marketingName": "Highway Star 4G",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko iggy": {
-    "codename": "Iggy",
+    "deviceName": "Iggy",
     "marketingName": "Iggy",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko jerry": {
-    "codename": "Jerry",
+    "deviceName": "Jerry",
     "marketingName": "Jerry",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko jerry2": {
-    "codename": "Jerry 2",
+    "deviceName": "Jerry 2",
     "marketingName": "Jerry 2",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko jimmy": {
-    "codename": "Jimmy",
+    "deviceName": "Jimmy",
     "marketingName": "Jimmy",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko kite": {
-    "codename": "Kite 4G",
+    "deviceName": "Kite 4G",
     "marketingName": "Kite 4G",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko lenny": {
-    "codename": "Lenny",
+    "deviceName": "Lenny",
     "marketingName": "Lenny",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko lenny2": {
-    "codename": "Lenny2",
+    "deviceName": "Lenny2",
     "marketingName": "Lenny2",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko lenny3": {
-    "codename": "Lenny3",
+    "deviceName": "Lenny3",
     "marketingName": "Lenny3",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko lenny4": {
-    "codename": "Lenny4",
+    "deviceName": "Lenny4",
     "marketingName": "Lenny4",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko lenny4 plus": {
-    "codename": "Lenny4 Plus",
+    "deviceName": "Lenny4 Plus",
     "marketingName": "Lenny4 Plus",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko lenny5": {
-    "codename": "Lenny5",
+    "deviceName": "Lenny5",
     "marketingName": "Lenny5",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko ozzy": {
-    "codename": "Ozzy",
+    "deviceName": "Ozzy",
     "marketingName": "Ozzy",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko plus": {
-    "codename": "Plus",
+    "deviceName": "Plus",
     "marketingName": "Plus",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko pulp": {
-    "codename": "Pulp",
+    "deviceName": "Pulp",
     "marketingName": "Pulp",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko pulp 4g": {
-    "codename": "Pulp 4G",
+    "deviceName": "Pulp 4G",
     "marketingName": "Pulp 4G",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko pulp fab": {
-    "codename": "Pulp Fab",
+    "deviceName": "Pulp Fab",
     "marketingName": "Pulp Fab",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko pulp fab 4g": {
-    "codename": "Pulp Fab 4G",
+    "deviceName": "Pulp Fab 4G",
     "marketingName": "Pulp Fab 4G",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko rainbow": {
-    "codename": "Rainbow",
+    "deviceName": "Rainbow",
     "marketingName": "Rainbow",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko rainbow 2": {
-    "codename": "Rainbow 2",
+    "deviceName": "Rainbow 2",
     "marketingName": "Rainbow 2",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko rainbow 4g": {
-    "codename": "Rainbow 4G",
+    "deviceName": "Rainbow 4G",
     "marketingName": "Rainbow 4G",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko rainbow jam": {
-    "codename": "Rainbow Jam",
+    "deviceName": "Rainbow Jam",
     "marketingName": "Rainbow Jam",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko rainbow lite": {
-    "codename": "Rainbow Lite",
+    "deviceName": "Rainbow Lite",
     "marketingName": "Rainbow Lite",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko rainbow lite 4g": {
-    "codename": "Rainbow Lite 4G",
+    "deviceName": "Rainbow Lite 4G",
     "marketingName": "Rainbow Lite 4G",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko rainbow up": {
-    "codename": "Rainbow Up",
+    "deviceName": "Rainbow Up",
     "marketingName": "Rainbow Up",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko rainbow up 4g": {
-    "codename": "Rainbow Up 4G",
+    "deviceName": "Rainbow Up 4G",
     "marketingName": "Rainbow Up 4G",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko ridge": {
-    "codename": "Ridge",
+    "deviceName": "Ridge",
     "marketingName": "Ridge",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko ridge 4g": {
-    "codename": "Ridge 4G",
+    "deviceName": "Ridge 4G",
     "marketingName": "Ridge 4G",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko ridge fab": {
-    "codename": "Ridge Fab",
+    "deviceName": "Ridge Fab",
     "marketingName": "Ridge Fab",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko ridge fab 4g": {
-    "codename": "Ridge Fab 4G",
+    "deviceName": "Ridge Fab 4G",
     "marketingName": "Ridge Fab 4G",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko robby": {
-    "codename": "Robby",
+    "deviceName": "Robby",
     "marketingName": "Robby",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko slide": {
-    "codename": "Slide",
+    "deviceName": "Slide",
     "marketingName": "Slide",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko slide 2": {
-    "codename": "Slide 2",
+    "deviceName": "Slide 2",
     "marketingName": "Slide 2",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko stairway": {
-    "codename": "Stairway",
+    "deviceName": "Stairway",
     "marketingName": "Stairway",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko sublim": {
-    "codename": "Sublim",
+    "deviceName": "Sublim",
     "marketingName": "Sublim",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko sunny": {
-    "codename": "Sunny",
+    "deviceName": "Sunny",
     "marketingName": "Sunny",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko sunny2 plus": {
-    "codename": "Sunny2 Plus",
+    "deviceName": "Sunny2 Plus",
     "marketingName": "Sunny2 Plus",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko sunset": {
-    "codename": "Sunset",
+    "deviceName": "Sunset",
     "marketingName": "Sunset",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko sunset2": {
-    "codename": "Sunset 2",
+    "deviceName": "Sunset 2",
     "marketingName": "Sunset 2",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko u feel": {
-    "codename": "U Feel",
+    "deviceName": "U Feel",
     "marketingName": "U Feel",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko u feel lite": {
-    "codename": "U Feel Lite",
+    "deviceName": "U Feel Lite",
     "marketingName": "U Feel Lite",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko u feel prime": {
-    "codename": "U Feel Prime",
+    "deviceName": "U Feel Prime",
     "marketingName": "U Feel Prime",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko u pulse": {
-    "codename": "U Pulse",
+    "deviceName": "U Pulse",
     "marketingName": "U Pulse",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko u pulse lite": {
-    "codename": "U Pulse Lite",
+    "deviceName": "U Pulse Lite",
     "marketingName": "U Pulse Lite",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko view": {
-    "codename": "View",
+    "deviceName": "View",
     "marketingName": "View",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko view go": {
-    "codename": "View Go",
+    "deviceName": "View Go",
     "marketingName": "View Go",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko view lite": {
-    "codename": "View Lite",
+    "deviceName": "View Lite",
     "marketingName": "View Lite",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko view prime": {
-    "codename": "View Prime",
+    "deviceName": "View Prime",
     "marketingName": "View Prime",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko view xl": {
-    "codename": "View XL",
+    "deviceName": "View XL",
     "marketingName": "View XL",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko wax": {
-    "codename": "Wax",
+    "deviceName": "Wax",
     "marketingName": "Wax",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko wc800": {
-    "codename": "WC800",
+    "deviceName": "WC800",
     "marketingName": "WC800",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1528,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1528,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko wc860": {
-    "codename": "WC860",
+    "deviceName": "WC860",
     "marketingName": "View 2 Pro",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wiko wim lite": {
-    "codename": "WIM Lite",
+    "deviceName": "WIM Lite",
     "marketingName": "WIM Lite",
     "manufacturer": "Wiko",
     "brand": "Wiko",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

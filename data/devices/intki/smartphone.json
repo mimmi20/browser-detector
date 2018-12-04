@@ -1,26 +1,32 @@
 {
   "general intki device": {
-    "codename": "general Intki Device",
+    "deviceName": "general Intki Device",
     "marketingName": "general Intki Device",
     "manufacturer": "Intki",
     "brand": "Intki",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "intki e86": {
-    "codename": "E86",
+    "deviceName": "E86",
     "marketingName": "E86",
     "manufacturer": "Intki",
     "brand": "Intki",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,86 +1,107 @@
 {
   "irbis tg97": {
-    "codename": "TG97",
+    "deviceName": "TG97",
     "marketingName": "TG97",
     "manufacturer": "Irbis",
     "brand": "Irbis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "irbis tx17": {
-    "codename": "TX17",
+    "deviceName": "TX17",
     "marketingName": "TX17",
     "manufacturer": "Irbis",
     "brand": "Irbis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "irbis tx18": {
-    "codename": "TX18",
+    "deviceName": "TX18",
     "marketingName": "TX18",
     "manufacturer": "Irbis",
     "brand": "Irbis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "irbis tx22": {
-    "codename": "TX22",
+    "deviceName": "TX22",
     "marketingName": "TX22",
     "manufacturer": "Irbis",
     "brand": "Irbis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "irbis tx68": {
-    "codename": "TX68",
+    "deviceName": "TX68",
     "marketingName": "TX68",
     "manufacturer": "Irbis",
     "brand": "Irbis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "irbis tz709": {
-    "codename": "TZ709",
+    "deviceName": "TZ709",
     "marketingName": "TZ709",
     "manufacturer": "Irbis",
     "brand": "Irbis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "irbis tz857": {
-    "codename": "TZ857",
+    "deviceName": "TZ857",
     "marketingName": "TZ857",
     "manufacturer": "Irbis",
     "brand": "Irbis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

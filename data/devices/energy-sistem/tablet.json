@@ -1,50 +1,62 @@
 {
   "general energy-sistem device": {
-    "codename": "general Energy Sistem Device",
+    "deviceName": "general Energy Sistem Device",
     "marketingName": "general Energy Sistem Device",
     "manufacturer": "Energy Sistem",
     "brand": "Energy Sistem",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "energy-sistem 8 dual": {
-    "codename": "8 Dual",
+    "deviceName": "8 Dual",
     "marketingName": "8 Dual",
     "manufacturer": "Energy Sistem",
     "brand": "Energy Sistem",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "energy-sistem s10 dual": {
-    "codename": "S10 Dual",
+    "deviceName": "S10 Dual",
     "marketingName": "S10 Dual",
     "manufacturer": "Energy Sistem",
     "brand": "Energy Sistem",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "energy-sistem x10 quad": {
-    "codename": "X10 Quad",
+    "deviceName": "X10 Quad",
     "marketingName": "X10 Quad",
     "manufacturer": "Energy Sistem",
     "brand": "Energy Sistem",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,98 +1,122 @@
 {
   "general boway device": {
-    "codename": "general Boway Device",
+    "deviceName": "general Boway Device",
     "marketingName": "general Boway Device",
     "manufacturer": "Boway",
     "brand": "Boway",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "boway i5": {
-    "codename": "I5",
+    "deviceName": "I5",
     "marketingName": "I5",
     "manufacturer": "Boway",
     "brand": "Boway",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "boway i6": {
-    "codename": "I6",
+    "deviceName": "I6",
     "marketingName": "I6",
     "manufacturer": "Boway",
     "brand": "Boway",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "boway i7": {
-    "codename": "I7",
+    "deviceName": "I7",
     "marketingName": "I7",
     "manufacturer": "Boway",
     "brand": "Boway",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "boway u3": {
-    "codename": "U3",
+    "deviceName": "U3",
     "marketingName": "U3",
     "manufacturer": "Boway",
     "brand": "Boway",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "boway u7": {
-    "codename": "U7",
+    "deviceName": "U7",
     "marketingName": "U7",
     "manufacturer": "Boway",
     "brand": "Boway",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "boway v100": {
-    "codename": "V100",
+    "deviceName": "V100",
     "marketingName": "V100",
     "manufacturer": "Boway",
     "brand": "Boway",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "boway v95pro": {
-    "codename": "V95 Pro",
+    "deviceName": "V95 Pro",
     "marketingName": "V95 Pro",
     "manufacturer": "Boway",
     "brand": "Boway",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

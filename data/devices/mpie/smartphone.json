@@ -1,38 +1,47 @@
 {
   "general mpie device": {
-    "codename": "general MPIE Device",
+    "deviceName": "general MPIE Device",
     "marketingName": "general MPIE Device",
     "manufacturer": "MPIE",
     "brand": "MPIE",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mpie 909t": {
-    "codename": "909T",
+    "deviceName": "909T",
     "marketingName": "909T",
     "manufacturer": "MPIE",
     "brand": "MPIE",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mpie m13": {
-    "codename": "M13",
+    "deviceName": "M13",
     "marketingName": "M13",
     "manufacturer": "MPIE",
     "brand": "MPIE",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,38 +1,47 @@
 {
   "general xido device": {
-    "codename": "general XIDO Device",
+    "deviceName": "general XIDO Device",
     "marketingName": "general XIDO Device",
     "manufacturer": "xido",
     "brand": "xido",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xido z110 3g": {
-    "codename": "Z110",
+    "deviceName": "Z110",
     "marketingName": "Z110",
     "manufacturer": "xido",
     "brand": "xido",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xido z120 3g": {
-    "codename": "Z120",
+    "deviceName": "Z120",
     "marketingName": "Z120",
     "manufacturer": "xido",
     "brand": "xido",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

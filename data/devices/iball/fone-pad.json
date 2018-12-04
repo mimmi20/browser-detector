@@ -1,26 +1,32 @@
 {
   "iball slide 3g 7271": {
-    "codename": "Slide 3G 7271",
+    "deviceName": "Slide 3G 7271",
     "marketingName": "Slide 3G 7271",
     "manufacturer": "Iball",
     "brand": "Iball",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iball slide snap 4g2": {
-    "codename": "Slide Snap 4G2",
+    "deviceName": "Slide Snap 4G2",
     "marketingName": "Slide Snap 4G2",
     "manufacturer": "Iball",
     "brand": "Iball",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

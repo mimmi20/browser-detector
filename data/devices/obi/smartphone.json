@@ -1,38 +1,47 @@
 {
   "general obi device": {
-    "codename": "general Obi Worldphone Device",
+    "deviceName": "general Obi Worldphone Device",
     "marketingName": "general Obi Worldphone Device",
     "manufacturer": "Obi Worldphone",
     "brand": "Obi Worldphone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "obi s551": {
-    "codename": "S551",
+    "deviceName": "S551",
     "marketingName": "Hornbill",
     "manufacturer": "Obi Worldphone",
     "brand": "Obi Worldphone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "obi sf1": {
-    "codename": "SF1",
+    "deviceName": "SF1",
     "marketingName": "SF1",
     "manufacturer": "Obi Worldphone",
     "brand": "Obi Worldphone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

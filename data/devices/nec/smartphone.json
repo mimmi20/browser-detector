@@ -1,26 +1,32 @@
 {
   "nec 0912": {
-    "codename": "0912",
+    "deviceName": "0912",
     "marketingName": "NEC Casio N-02E",
     "manufacturer": "Nec",
     "brand": "DoCoMo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nec n-06e": {
-    "codename": "N-06E",
+    "deviceName": "N-06E",
     "marketingName": "Medias X",
     "manufacturer": "Nec",
     "brand": "DoCoMo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

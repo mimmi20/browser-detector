@@ -1,26 +1,32 @@
 {
   "general iocean device": {
-    "codename": "general iOcean Device",
+    "deviceName": "general iOcean Device",
     "marketingName": "general iOcean Device",
     "manufacturer": "iOcean",
     "brand": "iOcean",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iocean x7": {
-    "codename": "X7",
+    "deviceName": "X7",
     "marketingName": "X7",
     "manufacturer": "iOcean",
     "brand": "iOcean",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

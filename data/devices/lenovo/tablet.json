@@ -1,722 +1,902 @@
 {
   "general lenovo device": {
-    "codename": "general Lenovo Device",
+    "deviceName": "general Lenovo Device",
     "marketingName": "general Lenovo Device",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "lenovo 1050f": {
-    "codename": "1050F",
+    "deviceName": "1050F",
     "marketingName": "Yoga Tablet 2 10.1",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo 1380f": {
-    "codename": "1380F",
+    "deviceName": "1380F",
     "marketingName": "Yoga Tablet 2 Pro 13.3",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo 1838": {
-    "codename": "1838",
+    "deviceName": "1838",
     "marketingName": "ThinkPad Tablet",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo 830f": {
-    "codename": "830F",
+    "deviceName": "830F",
     "marketingName": "Yoga Tablet 2 8.0",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a10-70f": {
-    "codename": "A10-70F",
+    "deviceName": "A10-70F",
     "marketingName": "Tab 2",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a1000-f": {
-    "codename": "A1000-F",
+    "deviceName": "A1000-F",
     "marketingName": "IdeaPad A1000-F",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a1000l-f": {
-    "codename": "A1000L-F",
+    "deviceName": "A1000L-F",
     "marketingName": "IdeaTab A1000L-F",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a1107": {
-    "codename": "A1107",
+    "deviceName": "A1107",
     "marketingName": "IdeaPad A1107",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a2010-a": {
-    "codename": "A2010-a",
+    "deviceName": "A2010-a",
     "marketingName": "A2010",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 854,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "lenovo a2109a": {
-    "codename": "A2109A",
+    "deviceName": "A2109A",
     "marketingName": "IdeaTab A2109A",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a3300-gv": {
-    "codename": "A3300-GV",
+    "deviceName": "A3300-GV",
     "marketingName": "TAB A7-30 Wi-Fi",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a3500-f": {
-    "codename": "A3500-F",
+    "deviceName": "A3500-F",
     "marketingName": "A7-50",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a3500-fl": {
-    "codename": "A3500-FL",
+    "deviceName": "A3500-FL",
     "marketingName": "IdeaTab A7-40",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a5500-f": {
-    "codename": "A5500-F",
+    "deviceName": "A5500-F",
     "marketingName": "Ideatab A8-50 WI-FI",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a7-10f": {
-    "codename": "A7-10F",
+    "deviceName": "A7-10F",
     "marketingName": "TAB 2",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a7-20f": {
-    "codename": "A7-20F",
+    "deviceName": "A7-20F",
     "marketingName": "TAB 2",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a7-30f": {
-    "codename": "A7-30F",
+    "deviceName": "A7-30F",
     "marketingName": "Tab 2 A7-30 Wi-Fi",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "lenovo a7-30h": {
-    "codename": "A7-30H",
+    "deviceName": "A7-30H",
     "marketingName": "TAB 2",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo a7600-f": {
-    "codename": "A7600-F",
+    "deviceName": "A7600-F",
     "marketingName": "A10-70 A7600 Wi-Fi",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo b6000-f": {
-    "codename": "B6000-F",
+    "deviceName": "B6000-F",
     "marketingName": "Yoga 8",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo b6000-h": {
-    "codename": "B6000-H",
+    "deviceName": "B6000-H",
     "marketingName": "Yoga 8",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo b8000-f": {
-    "codename": "B8000-F",
+    "deviceName": "B8000-F",
     "marketingName": "Yoga Tablet 10",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo b8080-f": {
-    "codename": "B8080-F",
+    "deviceName": "B8080-F",
     "marketingName": "Yoga Tablet 10 HD+",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo b8080-h": {
-    "codename": "B8080-H",
+    "deviceName": "B8080-H",
     "marketingName": "Yoga Tablet 10 HD+",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo e1041x": {
-    "codename": "E1041X",
+    "deviceName": "E1041X",
     "marketingName": "E1041X",
     "manufacturer": "Lenovo",
     "brand": "Medion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo e1050x": {
-    "codename": "E1050X",
+    "deviceName": "E1050X",
     "marketingName": "E1050X",
     "manufacturer": "Lenovo",
     "brand": "Medion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo e1060x": {
-    "codename": "E1060X",
+    "deviceName": "E1060X",
     "marketingName": "E1060X",
     "manufacturer": "Lenovo",
     "brand": "Medion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo ideapad a1": {
-    "codename": "IdeaPad A1",
+    "deviceName": "IdeaPad A1",
     "marketingName": "IdeaPad A1",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo ideapad a10": {
-    "codename": "IdeaPad A10",
+    "deviceName": "IdeaPad A10",
     "marketingName": "IdeaPad A10",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1366,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1366,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo p1060x": {
-    "codename": "P1060X",
+    "deviceName": "P1060X",
     "marketingName": "P1060X",
     "manufacturer": "Lenovo",
     "brand": "Medion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo s1032x": {
-    "codename": "S1032X",
+    "deviceName": "S1032X",
     "marketingName": "S1032X",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo s2109a-f": {
-    "codename": "S2109A-F",
+    "deviceName": "S2109A-F",
     "marketingName": "Ideatab S2109A",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo s2110a-f": {
-    "codename": "S2110A-F",
+    "deviceName": "S2110A-F",
     "marketingName": "IdeaTab S2110A",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo s2110a-h": {
-    "codename": "S2110A-H",
+    "deviceName": "S2110A-H",
     "marketingName": "IdeaTab S2110A",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo s5000-f": {
-    "codename": "S5000-F",
+    "deviceName": "S5000-F",
     "marketingName": "IdeaTab S5000-F",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo s6000-f": {
-    "codename": "S6000-F",
+    "deviceName": "S6000-F",
     "marketingName": "IdeaTab S6000-F",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo s6000l-f": {
-    "codename": "S6000L-F",
+    "deviceName": "S6000L-F",
     "marketingName": "IdeaTab S6000-F Wi-Fi",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo s8-50f": {
-    "codename": "S8-50F",
+    "deviceName": "S8-50F",
     "marketingName": "Tab S8",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo smart tab iii 10": {
-    "codename": "Smart Tab III 10",
+    "deviceName": "Smart Tab III 10",
     "marketingName": "Smart Tab III 10",
     "manufacturer": "Lenovo",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo smart tab iii 7": {
-    "codename": "Smart Tab III 7",
+    "deviceName": "Smart Tab III 7",
     "marketingName": "Smart Tab III 7",
     "manufacturer": "Lenovo",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo smarttab ii 10": {
-    "codename": "SmartTab II 10",
+    "deviceName": "SmartTab II 10",
     "marketingName": "SmartTab II 10",
     "manufacturer": "Lenovo",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo smarttab ii 7": {
-    "codename": "SmartTab II 7",
+    "deviceName": "SmartTab II 7",
     "marketingName": "SmartTab II 7",
     "manufacturer": "Lenovo",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo tablet": {
-    "codename": "Tablet",
+    "deviceName": "Tablet",
     "marketingName": "Tablet",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "lenovo tb-8504f": {
-    "codename": "TB-8504F",
+    "deviceName": "TB-8504F",
     "marketingName": "Tab 4 10",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo tb-8703f": {
-    "codename": "TB-8703F",
+    "deviceName": "TB-8703F",
     "marketingName": "Tab 3 8.0 Plus",
     "manufacturer": "Lenovo",
     "brand": "Medion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo tb-8704f": {
-    "codename": "TB-8704F",
+    "deviceName": "TB-8704F",
     "marketingName": "Tab4 8 Plus",
     "manufacturer": "Lenovo",
     "brand": "Medion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo tb-x103f": {
-    "codename": "TB-X103F",
+    "deviceName": "TB-X103F",
     "marketingName": "TB-X103F",
     "manufacturer": "Lenovo",
     "brand": "Medion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo tb-x304f": {
-    "codename": "TB-X304F",
+    "deviceName": "TB-X304F",
     "marketingName": "Tab 4 10",
     "manufacturer": "Lenovo",
     "brand": "Medion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo tb-x704f": {
-    "codename": "TB-X704F",
+    "deviceName": "TB-X704F",
     "marketingName": "Tab 4 10 Plus 10.1",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo tb2-x30f": {
-    "codename": "TB2-X30F",
+    "deviceName": "TB2-X30F",
     "marketingName": "Tab 2 A10-30",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo tb3-710f": {
-    "codename": "TB3-710F",
+    "deviceName": "TB3-710F",
     "marketingName": "Tab3 7 Essential",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "lenovo tb3-x70f": {
-    "codename": "TB3-X70F",
+    "deviceName": "TB3-X70F",
     "marketingName": "Yoga Tab 3 10 Plus",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo x1030x": {
-    "codename": "X1030X",
+    "deviceName": "X1030X",
     "marketingName": "X1030X",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo yb1-x90f": {
-    "codename": "YB1-X90F",
+    "deviceName": "YB1-X90F",
     "marketingName": "Yoga Book",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo yb1-x90l": {
-    "codename": "YB1-X90L",
+    "deviceName": "YB1-X90L",
     "marketingName": "Yoga Book",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo yt-x703l": {
-    "codename": "YT-X703L",
+    "deviceName": "YT-X703L",
     "marketingName": "Yoga Tab 3 Plus 10",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo yt3-850f": {
-    "codename": "YT3-850F",
+    "deviceName": "YT3-850F",
     "marketingName": "Yoga Tab 3 (8) Wi-Fi",
     "manufacturer": "Lenovo",
     "brand": "Medion",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo yt3-x50f": {
-    "codename": "YT3-X50F",
+    "deviceName": "YT3-X50F",
     "marketingName": "Yoga Tab 3 10",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lenovo yt3-x50l": {
-    "codename": "YT3-X50L",
+    "deviceName": "YT3-X50L",
     "marketingName": "Yoga Tab 3 10",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

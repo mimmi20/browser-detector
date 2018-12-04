@@ -1,38 +1,47 @@
 {
   "general oysters device": {
-    "codename": "general Oysters Device",
+    "deviceName": "general Oysters Device",
     "marketingName": "general Oysters Device",
     "manufacturer": "Oysters",
     "brand": "Oysters",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oysters pacific 800": {
-    "codename": "Pacific 800",
+    "deviceName": "Pacific 800",
     "marketingName": "Pacific 800",
     "manufacturer": "Oysters",
     "brand": "Oysters",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oysters pacific 800i": {
-    "codename": "Pacific 800i",
+    "deviceName": "Pacific 800i",
     "marketingName": "Pacific 800i",
     "manufacturer": "Oysters",
     "brand": "Oysters",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

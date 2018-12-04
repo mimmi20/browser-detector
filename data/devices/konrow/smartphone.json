@@ -1,74 +1,92 @@
 {
   "general konrow device": {
-    "codename": "general Konrow Device",
+    "deviceName": "general Konrow Device",
     "marketingName": "general Konrow Device",
     "manufacturer": "Konrow",
     "brand": "Konrow",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "konrow bigcool": {
-    "codename": "BIGCOOL",
+    "deviceName": "BIGCOOL",
     "marketingName": "BIGCOOL",
     "manufacturer": "Konrow",
     "brand": "Konrow",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "konrow cool-k": {
-    "codename": "COOL-K",
+    "deviceName": "COOL-K",
     "marketingName": "COOL-K",
     "manufacturer": "Konrow",
     "brand": "Konrow",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "konrow coolfive": {
-    "codename": "COOLFIVE",
+    "deviceName": "COOLFIVE",
     "marketingName": "COOLFIVE",
     "manufacturer": "Konrow",
     "brand": "Konrow",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "konrow just5": {
-    "codename": "Just5",
+    "deviceName": "Just5",
     "marketingName": "Just5",
     "manufacturer": "Konrow",
     "brand": "Konrow",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "konrow link5": {
-    "codename": "LINK5",
+    "deviceName": "LINK5",
     "marketingName": "LINK5",
     "manufacturer": "Konrow",
     "brand": "Konrow",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

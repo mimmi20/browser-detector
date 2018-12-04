@@ -1,50 +1,62 @@
 {
   "goclever aries 70": {
-    "codename": "Aries 70",
+    "deviceName": "Aries 70",
     "marketingName": "Aries 70",
     "manufacturer": "GoClever",
     "brand": "GoClever",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "goclever quantum 1010m": {
-    "codename": "Quantum 1010M",
+    "deviceName": "Quantum 1010M",
     "marketingName": "Quantum 1010M",
     "manufacturer": "GoClever",
     "brand": "GoClever",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "goclever quantum 1010n": {
-    "codename": "Quantum 1010N",
+    "deviceName": "Quantum 1010N",
     "marketingName": "Quantum 1010N",
     "manufacturer": "GoClever",
     "brand": "GoClever",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "goclever tab m723g": {
-    "codename": "Tab M723G",
+    "deviceName": "Tab M723G",
     "marketingName": "Tab M723G",
     "manufacturer": "GoClever",
     "brand": "GoClever",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

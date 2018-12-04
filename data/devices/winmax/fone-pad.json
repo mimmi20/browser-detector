@@ -1,26 +1,32 @@
 {
   "general winmax device": {
-    "codename": "general Winmax Device",
+    "deviceName": "general Winmax Device",
     "marketingName": "general Winmax Device",
     "manufacturer": "Winmax",
     "brand": "Winmax",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "winmax tx5": {
-    "codename": "TX5",
+    "deviceName": "TX5",
     "marketingName": "TX5",
     "manufacturer": "Winmax",
     "brand": "Winmax",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

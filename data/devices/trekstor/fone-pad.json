@@ -1,62 +1,77 @@
 {
   "trekstor surftab breeze 10.1 quad 3g": {
-    "codename": "SurfTab Breeze 10.1 Quad 3G",
+    "deviceName": "SurfTab Breeze 10.1 Quad 3G",
     "marketingName": "SurfTab Breeze 10.1 Quad 3G",
     "manufacturer": "TrekStor",
     "brand": "TrekStor",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "trekstor surftab breeze 9.6 quad 3g": {
-    "codename": "SurfTab breeze 9.6 Quad 3G",
+    "deviceName": "SurfTab breeze 9.6 Quad 3G",
     "marketingName": "SurfTab breeze 9.6 Quad 3G",
     "manufacturer": "TrekStor",
     "brand": "TrekStor",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "trekstor surftab xintron i 10.1 3g": {
-    "codename": "SurfTab xintron i 10.1 3G",
+    "deviceName": "SurfTab xintron i 10.1 3G",
     "marketingName": "SurfTab xintron i 10.1 3G",
     "manufacturer": "TrekStor",
     "brand": "TrekStor",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "trekstor surftab xiron 10.1 3g": {
-    "codename": "SurfTab Xiron 10.1 3G",
+    "deviceName": "SurfTab Xiron 10.1 3G",
     "marketingName": "SurfTab Xiron 10.1 3G",
     "manufacturer": "TrekStor",
     "brand": "TrekStor",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "trekstor vt10416-2": {
-    "codename": "VT10416-2",
+    "deviceName": "VT10416-2",
     "marketingName": "Peoples Tablet 3G",
     "manufacturer": "TrekStor",
     "brand": "TrekStor",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

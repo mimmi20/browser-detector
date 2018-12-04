@@ -1,50 +1,62 @@
 {
   "general viewsonic device": {
-    "codename": "general ViewSonic Device",
+    "deviceName": "general ViewSonic Device",
     "marketingName": "general ViewSonic Device",
     "manufacturer": "ViewSonic",
     "brand": "ViewSonic",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "viewsonic viewpad 10e": {
-    "codename": "ViewPad 10e",
+    "deviceName": "ViewPad 10e",
     "marketingName": "ViewPad 10e",
     "manufacturer": "ViewSonic",
     "brand": "ViewSonic",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "viewsonic viewpad 10s": {
-    "codename": "ViewPad 10S",
+    "deviceName": "ViewPad 10S",
     "marketingName": "ViewPad 10S",
     "manufacturer": "ViewSonic",
     "brand": "ViewSonic",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "viewsonic viewpad 7e": {
-    "codename": "ViewPad 7e",
+    "deviceName": "ViewPad 7e",
     "marketingName": "ViewPad 7e",
     "manufacturer": "ViewSonic",
     "brand": "ViewSonic",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

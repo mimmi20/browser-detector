@@ -1,26 +1,32 @@
 {
   "techpad q545": {
-    "codename": "Q545",
+    "deviceName": "Q545",
     "marketingName": "Q545",
     "manufacturer": "TechPad",
     "brand": "TechPad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "techpad x5": {
-    "codename": "X5",
+    "deviceName": "X5",
     "marketingName": "X5",
     "manufacturer": "TechPad",
     "brand": "TechPad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

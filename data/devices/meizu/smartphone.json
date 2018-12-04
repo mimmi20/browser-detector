@@ -1,350 +1,437 @@
 {
   "general meizu device": {
-    "codename": "general Meizu Device",
+    "deviceName": "general Meizu Device",
     "marketingName": "general Meizu Device",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "meizu m031": {
-    "codename": "M031",
+    "deviceName": "M031",
     "marketingName": "MX Dual-Core",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 640,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m032": {
-    "codename": "M032",
+    "deviceName": "M032",
     "marketingName": "MX 4-core",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 640,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m040": {
-    "codename": "M040",
+    "deviceName": "M040",
     "marketingName": "MX2",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m045": {
-    "codename": "M045",
+    "deviceName": "M045",
     "marketingName": "MX2",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m1 e": {
-    "codename": "M1 E",
+    "deviceName": "M1 E",
     "marketingName": "M1 E",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m1 metal": {
-    "codename": "M1 Metal",
+    "deviceName": "M1 Metal",
     "marketingName": "M1 Metal",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m1 note": {
-    "codename": "M1 Note",
+    "deviceName": "M1 Note",
     "marketingName": "M1 Note",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m2": {
-    "codename": "M2",
+    "deviceName": "M2",
     "marketingName": "M2",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m2 e": {
-    "codename": "M2 E",
+    "deviceName": "M2 E",
     "marketingName": "M2 E",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m2 note": {
-    "codename": "M571C",
+    "deviceName": "M571C",
     "marketingName": "M2 Note",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m3 note": {
-    "codename": "M3 Note",
+    "deviceName": "M3 Note",
     "marketingName": "M3 Note",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m351": {
-    "codename": "M351",
+    "deviceName": "M351",
     "marketingName": "MX3",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1800,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m353": {
-    "codename": "M353",
+    "deviceName": "M353",
     "marketingName": "MX3",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1800,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m355": {
-    "codename": "M355",
+    "deviceName": "M355",
     "marketingName": "MX3",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1800,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m356": {
-    "codename": "M356",
+    "deviceName": "M356",
     "marketingName": "MX3",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1800,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m3s": {
-    "codename": "M3s",
+    "deviceName": "M3s",
     "marketingName": "M3s",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m3x": {
-    "codename": "M3x",
+    "deviceName": "M3x",
     "marketingName": "M3x",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m578c": {
-    "codename": "M578C",
+    "deviceName": "M578C",
     "marketingName": "M2",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m6 note": {
-    "codename": "M6 Note",
+    "deviceName": "M6 Note",
     "marketingName": "M6 Note",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu m9": {
-    "codename": "M9",
+    "deviceName": "M9",
     "marketingName": "M9",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 640,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu mx2": {
-    "codename": "MX2",
+    "deviceName": "MX2",
     "marketingName": "MX2",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu mx4": {
-    "codename": "MX4",
+    "deviceName": "MX4",
     "marketingName": "MX4",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1152,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1152,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu mx4 pro": {
-    "codename": "MX4 Pro",
+    "deviceName": "MX4 Pro",
     "marketingName": "MX4 Pro",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1536,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1536,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu mx5": {
-    "codename": "MX5",
+    "deviceName": "MX5",
     "marketingName": "MX5",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu pro 5": {
-    "codename": "PRO 5",
+    "deviceName": "PRO 5",
     "marketingName": "PRO 5",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu pro 6": {
-    "codename": "Pro 6",
+    "deviceName": "Pro 6",
     "marketingName": "Pro 6",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu pro 7": {
-    "codename": "Pro 7",
+    "deviceName": "Pro 7",
     "marketingName": "Pro 7",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meizu pro 7-h": {
-    "codename": "Pro 7-H",
+    "deviceName": "Pro 7-H",
     "marketingName": "Pro 7-H",
     "manufacturer": "Meizu",
     "brand": "Meizu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

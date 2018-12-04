@@ -1,290 +1,362 @@
 {
   "general prestigio device": {
-    "codename": "general Prestigio Device",
+    "deviceName": "general Prestigio Device",
     "marketingName": "general Prestigio Device",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio gv7777": {
-    "codename": "GV7777",
+    "deviceName": "GV7777",
     "marketingName": "GeoVision",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp3074bru": {
-    "codename": "PMP3074BRU",
+    "deviceName": "PMP3074BRU",
     "marketingName": "MultiPad PMP3074B",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp3370b": {
-    "codename": "PMP3370B",
+    "deviceName": "PMP3370B",
     "marketingName": "MultiPad 7.0 Ultra",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp3670b": {
-    "codename": "PMP3670B",
+    "deviceName": "PMP3670B",
     "marketingName": "MultiPad 7.0 Ultra Plus",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp3870c": {
-    "codename": "PMP3870C",
+    "deviceName": "PMP3870C",
     "marketingName": "MultiPad 7.0 HD+",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp3970b": {
-    "codename": "PMP3970B",
+    "deviceName": "PMP3970B",
     "marketingName": "MultiPad 7.0 HD",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5080b": {
-    "codename": "PMP5080B",
+    "deviceName": "PMP5080B",
     "marketingName": "MultiPad 5080",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5080cpro": {
-    "codename": "PMP5080CPRO",
+    "deviceName": "PMP5080CPRO",
     "marketingName": "MultiPad 5080 Pro",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5101c_quad": {
-    "codename": "PMP5101C_QUAD",
+    "deviceName": "PMP5101C_QUAD",
     "marketingName": "MultiPad 4 Quantum 10.1",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5197dultra": {
-    "codename": "PMP5197DULTRA",
+    "deviceName": "PMP5197DULTRA",
     "marketingName": "MultiPad 9.7 Ultra",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5297c_quad": {
-    "codename": "PMP5297C_QUAD",
+    "deviceName": "PMP5297C_QUAD",
     "marketingName": "MultiPad 4 Quantum 9.7",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5570c": {
-    "codename": "PMP5570C",
+    "deviceName": "PMP5570C",
     "marketingName": "MultiPad 7.0 Pro Duo",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5580c": {
-    "codename": "PMP5580C",
+    "deviceName": "PMP5580C",
     "marketingName": "MultiPad 8.0 Pro Duo",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5588c": {
-    "codename": "PMP5588C",
+    "deviceName": "PMP5588C",
     "marketingName": "PMP5588C",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5670c_duo": {
-    "codename": "PMP5670C_DUO",
+    "deviceName": "PMP5670C_DUO",
     "marketingName": "MultiPad 2 PRO DUO 7.0",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1200,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1200,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5770d": {
-    "codename": "PMP5770D",
+    "deviceName": "PMP5770D",
     "marketingName": "MultiPad 7.0 Prime Duo",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5785c_quad": {
-    "codename": "PMP5785C_QUAD",
+    "deviceName": "PMP5785C_QUAD",
     "marketingName": "MultiPad 4 Quantum 7.85",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp5870c": {
-    "codename": "PMP5870C",
+    "deviceName": "PMP5870C",
     "marketingName": "PMP5870C",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp7074b3gru": {
-    "codename": "PMP7074B3GRU",
+    "deviceName": "PMP7074B3GRU",
     "marketingName": "MultiPad 7074",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp7079d_quad": {
-    "codename": "PMP7079D_QUAD",
+    "deviceName": "PMP7079D_QUAD",
     "marketingName": "MultiPad 4 Diamond 7.85",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmp7280c": {
-    "codename": "PMP7280C",
+    "deviceName": "PMP7280C",
     "marketingName": "MultiPad 2 Ultra Duo 8.0 Wi-Fi",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmt3377_wi": {
-    "codename": "PMT3377_Wi",
+    "deviceName": "PMT3377_Wi",
     "marketingName": "MultiPad Thunder 7.0i",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prestigio pmt5587_wi": {
-    "codename": "PMT5587_Wi",
+    "deviceName": "PMT5587_Wi",
     "marketingName": "MultiPad 8.0 HD",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,74 +1,92 @@
 {
   "general sagem device": {
-    "codename": "general Sagem Device",
+    "deviceName": "general Sagem Device",
     "marketingName": "general Sagem Device",
     "manufacturer": "Sagem",
     "brand": "Sagem",
-    "platform": null,
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "sagem my411c": {
-    "codename": "my411C",
+    "deviceName": "my411C",
     "marketingName": "my411C",
     "manufacturer": "Sagem",
     "brand": "Sagem",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "sagem my411x": {
-    "codename": "my411X",
+    "deviceName": "my411X",
     "marketingName": "my411X",
     "manufacturer": "Sagem",
     "brand": "Sagem",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "sagem my511x": {
-    "codename": "my511X",
+    "deviceName": "my511X",
     "marketingName": "my511X",
     "manufacturer": "Sagem",
     "brand": "Sagem",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "sagem myc5-2v": {
-    "codename": "MY C5-2",
+    "deviceName": "MY C5-2",
     "marketingName": "MY C5-2",
     "manufacturer": "Sagem",
     "brand": "Sagem",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "sagem myv-55": {
-    "codename": "MY V-55",
+    "deviceName": "MY V-55",
     "marketingName": "MY V-55",
     "manufacturer": "Sagem",
     "brand": "Sagem",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

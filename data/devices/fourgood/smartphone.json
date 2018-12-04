@@ -1,62 +1,77 @@
 {
   "general 4good device": {
-    "codename": "general 4Good Device",
+    "deviceName": "general 4Good Device",
     "marketingName": "general 4Good Device",
     "manufacturer": "4Good",
     "brand": "4Good",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "4good light a103": {
-    "codename": "Light A103",
+    "deviceName": "Light A103",
     "marketingName": "Light A103",
     "manufacturer": "4Good",
     "brand": "4Good",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "4good s450m 4g": {
-    "codename": "S450m 4G",
+    "deviceName": "S450m 4G",
     "marketingName": "S450m 4G",
     "manufacturer": "4Good",
     "brand": "4Good",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "4good s501m 3g": {
-    "codename": "S501m 3G",
+    "deviceName": "S501m 3G",
     "marketingName": "S501m 3G",
     "manufacturer": "4Good",
     "brand": "4Good",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "4good s555m 4g": {
-    "codename": "S555m 4G",
+    "deviceName": "S555m 4G",
     "marketingName": "People",
     "manufacturer": "4Good",
     "brand": "4Good",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

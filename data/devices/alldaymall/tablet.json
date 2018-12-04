@@ -1,26 +1,32 @@
 {
   "general alldaymall device": {
-    "codename": "general Alldaymall Device",
+    "deviceName": "general Alldaymall Device",
     "marketingName": "general Alldaymall Device",
     "manufacturer": "Alldaymall",
     "brand": "Alldaymall",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "alldaymall a88x": {
-    "codename": "A88X",
+    "deviceName": "A88X",
     "marketingName": "A88X",
     "manufacturer": "Alldaymall",
     "brand": "Alldaymall",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

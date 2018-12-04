@@ -1,26 +1,32 @@
 {
   "tecno t36": {
-    "codename": "T36",
+    "deviceName": "T36",
     "marketingName": "T36",
     "manufacturer": "Tecno",
     "brand": "Tecno",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "tecno t611": {
-    "codename": "T611",
+    "deviceName": "T611",
     "marketingName": "T611",
     "manufacturer": "Tecno",
     "brand": "Tecno",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

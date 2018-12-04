@@ -1,38 +1,47 @@
 {
   "medion e10312": {
-    "codename": "LifeTab E10312",
+    "deviceName": "LifeTab E10312",
     "marketingName": "LifeTab E10312",
     "manufacturer": "Medion",
     "brand": "Medion",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "medion s1035x": {
-    "codename": "LifeTab S1035X",
+    "deviceName": "LifeTab S1035X",
     "marketingName": "LifeTab S1035X",
     "manufacturer": "Medion",
     "brand": "Medion",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "medion x1060x": {
-    "codename": "X1060X",
+    "deviceName": "X1060X",
     "marketingName": "X1060X",
     "manufacturer": "Medion",
     "brand": "Medion",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

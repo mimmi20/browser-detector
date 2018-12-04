@@ -1,74 +1,92 @@
 {
   "general lingwin device": {
-    "codename": "general Lingwin Device",
+    "deviceName": "general Lingwin Device",
     "marketingName": "general Lingwin Device",
     "manufacturer": "Lingwin",
     "brand": "Lingwin",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lingwin k1": {
-    "codename": "K1",
+    "deviceName": "K1",
     "marketingName": "K1",
     "manufacturer": "Lingwin",
     "brand": "Lingwin",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lingwin k5": {
-    "codename": "K5",
+    "deviceName": "K5",
     "marketingName": "K5",
     "manufacturer": "Lingwin",
     "brand": "Lingwin",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lingwin t620": {
-    "codename": "T620",
+    "deviceName": "T620",
     "marketingName": "T620",
     "manufacturer": "Lingwin",
     "brand": "Lingwin",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lingwin u820s": {
-    "codename": "U820S",
+    "deviceName": "U820S",
     "marketingName": "U820S",
     "manufacturer": "Lingwin",
     "brand": "Lingwin",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lingwin u880": {
-    "codename": "U880",
+    "deviceName": "U880",
     "marketingName": "U880",
     "manufacturer": "Lingwin",
     "brand": "Lingwin",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

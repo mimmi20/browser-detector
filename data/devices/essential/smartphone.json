@@ -1,26 +1,32 @@
 {
   "general essential device": {
-    "codename": "general Essential Device",
+    "deviceName": "general Essential Device",
     "marketingName": "general Essential Device",
     "manufacturer": "Essential",
     "brand": "Essential",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "essential ph-1": {
-    "codename": "PH-1",
+    "deviceName": "PH-1",
     "marketingName": "PH-1",
     "manufacturer": "Essential",
     "brand": "Essential",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1312,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1312,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

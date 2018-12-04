@@ -1,50 +1,62 @@
 {
   "zte a310": {
-    "codename": "A310",
+    "deviceName": "A310",
     "marketingName": "A310",
     "manufacturer": "Zte",
     "brand": "Cricket",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 120,
-    "resolutionHeight": 120,
-    "dualOrientation": false
+    "display": {
+      "width": 120,
+      "height": 120,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "zte g-x991": {
-    "codename": "G-X991",
+    "deviceName": "G-X991",
     "marketingName": "Rio",
     "manufacturer": "Zte",
     "brand": "Orange",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "zte nova": {
-    "codename": "Nova",
+    "deviceName": "Nova",
     "marketingName": "Nova",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "zte z221": {
-    "codename": "Z221",
+    "deviceName": "Z221",
     "marketingName": "Z221",
     "manufacturer": "Zte",
     "brand": "Att",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

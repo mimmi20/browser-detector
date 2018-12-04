@@ -1,146 +1,182 @@
 {
   "general celkon device": {
-    "codename": "general Celkon Device",
+    "deviceName": "general Celkon Device",
     "marketingName": "general Celkon Device",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "celkon a.r 40": {
-    "codename": "A.R 40",
+    "deviceName": "A.R 40",
     "marketingName": "A.R 40",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "celkon a10": {
-    "codename": "A10",
+    "deviceName": "A10",
     "marketingName": "A10",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "celkon a119q": {
-    "codename": "A119Q",
+    "deviceName": "A119Q",
     "marketingName": "Signature HD",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "celkon a125": {
-    "codename": "A125",
+    "deviceName": "A125",
     "marketingName": "A125",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "celkon a15": {
-    "codename": "A15",
+    "deviceName": "A15",
     "marketingName": "A15",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "celkon a400": {
-    "codename": "A400",
+    "deviceName": "A400",
     "marketingName": "A400",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "celkon a63": {
-    "codename": "A63",
+    "deviceName": "A63",
     "marketingName": "A63",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "celkon a66": {
-    "codename": "A66",
+    "deviceName": "A66",
     "marketingName": "A66",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "celkon a86": {
-    "codename": "A86",
+    "deviceName": "A86",
     "marketingName": "A86",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "celkon a9 dual": {
-    "codename": "A9 Dual",
+    "deviceName": "A9 Dual",
     "marketingName": "A9 Dual",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "celkon a9+": {
-    "codename": "A9 Plus",
+    "deviceName": "A9 Plus",
     "marketingName": "A9 Plus",
     "manufacturer": "Celkon",
     "brand": "Celkon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

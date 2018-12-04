@@ -1,38 +1,47 @@
 {
   "general twinovo device": {
-    "codename": "general Twinovo Device",
+    "deviceName": "general Twinovo Device",
     "marketingName": "general Twinovo Device",
     "manufacturer": "Twinovo",
     "brand": "Twinovo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "twinovo t108": {
-    "codename": "T108",
+    "deviceName": "T108",
     "marketingName": "T108",
     "manufacturer": "Twinovo",
     "brand": "Twinovo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "twinovo t118": {
-    "codename": "T118",
+    "deviceName": "T118",
     "marketingName": "T118",
     "manufacturer": "Twinovo",
     "brand": "Twinovo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

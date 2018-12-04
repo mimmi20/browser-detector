@@ -1,26 +1,32 @@
 {
   "general dino device": {
-    "codename": "general Dino Device",
+    "deviceName": "general Dino Device",
     "marketingName": "general Dino Device",
     "manufacturer": "Dino",
     "brand": "Dino",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dino 762 a9": {
-    "codename": "762 A9",
+    "deviceName": "762 A9",
     "marketingName": "762 A9",
     "manufacturer": "Dino",
     "brand": "Dino",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

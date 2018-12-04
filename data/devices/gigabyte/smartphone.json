@@ -1,98 +1,122 @@
 {
   "general gigabyte device": {
-    "codename": "general Gigabyte Device",
+    "deviceName": "general Gigabyte Device",
     "marketingName": "general Gigabyte Device",
     "manufacturer": "Gigabyte",
     "brand": "Gigabyte",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "gigabyte gsmart": {
-    "codename": "GSmart",
+    "deviceName": "GSmart",
     "marketingName": "GSmart",
     "manufacturer": "Gigabyte",
     "brand": "Gigabyte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gigabyte gsmart aku a1": {
-    "codename": "GSmart Aku A1",
+    "deviceName": "GSmart Aku A1",
     "marketingName": "GSmart Aku A1",
     "manufacturer": "Gigabyte",
     "brand": "Gigabyte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gigabyte gsmart g1310": {
-    "codename": "GSmart G1310",
+    "deviceName": "GSmart G1310",
     "marketingName": "GSmart G1310",
     "manufacturer": "Gigabyte",
     "brand": "Gigabyte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gigabyte gsmart maya m1 v2": {
-    "codename": "GSmart Maya M1 v2",
+    "deviceName": "GSmart Maya M1 v2",
     "marketingName": "GSmart Maya M1 v2",
     "manufacturer": "Gigabyte",
     "brand": "Gigabyte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gigabyte gsmart roma r2": {
-    "codename": "GSmart Roma R2",
+    "deviceName": "GSmart Roma R2",
     "marketingName": "GSmart Roma R2",
     "manufacturer": "Gigabyte",
     "brand": "Gigabyte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gigabyte gsmart t4": {
-    "codename": "GSmart T4",
+    "deviceName": "GSmart T4",
     "marketingName": "GSmart T4",
     "manufacturer": "Gigabyte",
     "brand": "Gigabyte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gigabyte rio r1": {
-    "codename": "Rio R1",
+    "deviceName": "Rio R1",
     "marketingName": "GSmart Rio R1",
     "manufacturer": "Gigabyte",
     "brand": "Gigabyte",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

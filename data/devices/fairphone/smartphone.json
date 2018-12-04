@@ -1,50 +1,62 @@
 {
   "general fairphone device": {
-    "codename": "general Fairphone Device",
+    "deviceName": "general Fairphone Device",
     "marketingName": "general Fairphone Device",
     "manufacturer": "Fairphone",
     "brand": "Fairphone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "fairphone fp1": {
-    "codename": "FP1",
+    "deviceName": "FP1",
     "marketingName": "FP1",
     "manufacturer": "Fairphone",
     "brand": "Fairphone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "fairphone fp1u": {
-    "codename": "FP1U",
+    "deviceName": "FP1U",
     "marketingName": "FP1U",
     "manufacturer": "Fairphone",
     "brand": "Fairphone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "fairphone fp2": {
-    "codename": "FP2",
+    "deviceName": "FP2",
     "marketingName": "FP2",
     "manufacturer": "Fairphone",
     "brand": "Fairphone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

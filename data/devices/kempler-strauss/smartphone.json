@@ -1,26 +1,32 @@
 {
   "general kempler-strauss device": {
-    "codename": "general Kempler and Strauss Device",
+    "deviceName": "general Kempler and Strauss Device",
     "marketingName": "general Kempler and Strauss Device",
     "manufacturer": "Kempler and Strauss",
     "brand": "Kempler and Strauss",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kempler-strauss alumini 2": {
-    "codename": "Alumini 2",
+    "deviceName": "Alumini 2",
     "marketingName": "Alumini 2",
     "manufacturer": "Kempler and Strauss",
     "brand": "Kempler and Strauss",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

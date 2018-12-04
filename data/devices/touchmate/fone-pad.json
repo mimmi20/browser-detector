@@ -1,62 +1,77 @@
 {
   "general touchmate device": {
-    "codename": "general Touchmate Device",
+    "deviceName": "general Touchmate Device",
     "marketingName": "general Touchmate Device",
     "manufacturer": "Touchmate",
     "brand": "Touchmate",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "touchmate tm-mid1020a": {
-    "codename": "TM-MID1020A",
+    "deviceName": "TM-MID1020A",
     "marketingName": "TM-MID1020A",
     "manufacturer": "Touchmate",
     "brand": "Touchmate",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "touchmate tm-mid788d": {
-    "codename": "TM-MID788D",
+    "deviceName": "TM-MID788D",
     "marketingName": "TM-MID788D",
     "manufacturer": "Touchmate",
     "brand": "Touchmate",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "touchmate tm-mid792": {
-    "codename": "TM-MID792",
+    "deviceName": "TM-MID792",
     "marketingName": "3G Call Pad Edge",
     "manufacturer": "Touchmate",
     "brand": "Touchmate",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "touchmate tm-mid798": {
-    "codename": "TM-MID798",
+    "deviceName": "TM-MID798",
     "marketingName": "TM-MID798",
     "manufacturer": "Touchmate",
     "brand": "Touchmate",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

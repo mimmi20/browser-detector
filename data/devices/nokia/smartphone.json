@@ -1,1490 +1,1862 @@
 {
   "general nokia device": {
-    "codename": "general Nokia Device",
+    "deviceName": "general Nokia Device",
     "marketingName": "general Nokia Device",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "microsoft lumia 430": {
-    "codename": "Lumia 430",
+    "deviceName": "Lumia 430",
     "marketingName": "Lumia 430",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft lumia 435": {
-    "codename": "Lumia 435",
+    "deviceName": "Lumia 435",
     "marketingName": "Lumia 435",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft lumia 540": {
-    "codename": "Lumia 540",
+    "deviceName": "Lumia 540",
     "marketingName": "Lumia 540",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft lumia 650": {
-    "codename": "Lumia 650",
+    "deviceName": "Lumia 650",
     "marketingName": "Lumia 650",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1010": {
-    "codename": "RM-1010",
+    "deviceName": "RM-1010",
     "marketingName": "Lumia 638",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1031": {
-    "codename": "RM-1031",
+    "deviceName": "RM-1031",
     "marketingName": "Lumia 532",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1062": {
-    "codename": "RM-1062",
+    "deviceName": "RM-1062",
     "marketingName": "Lumia 640 XL LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1063": {
-    "codename": "RM-1063",
+    "deviceName": "RM-1063",
     "marketingName": "Lumia 640 XL LTE (AT&T)",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1064": {
-    "codename": "RM-1064",
+    "deviceName": "RM-1064",
     "marketingName": "Lumia 640 XL LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1065": {
-    "codename": "RM-1065",
+    "deviceName": "RM-1065",
     "marketingName": "Lumia 640 XL Dual SIM LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1066": {
-    "codename": "RM-1066",
+    "deviceName": "RM-1066",
     "marketingName": "Lumia 640 XL LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1067": {
-    "codename": "RM-1067",
+    "deviceName": "RM-1067",
     "marketingName": "Lumia 640 XL Dual SIM LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1072": {
-    "codename": "RM-1072",
+    "deviceName": "RM-1072",
     "marketingName": "Lumia 640 LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1073": {
-    "codename": "RM-1073",
+    "deviceName": "RM-1073",
     "marketingName": "Lumia 640 LTE (AT&T)",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1074": {
-    "codename": "RM-1074",
+    "deviceName": "RM-1074",
     "marketingName": "Lumia 640 LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1075": {
-    "codename": "RM-1075",
+    "deviceName": "RM-1075",
     "marketingName": "Lumia 640 Dual SIM LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1076": {
-    "codename": "RM-1076",
+    "deviceName": "RM-1076",
     "marketingName": "Lumia 640 LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1077": {
-    "codename": "RM-1077",
+    "deviceName": "RM-1077",
     "marketingName": "Lumia 640 Dual SIM LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1089": {
-    "codename": "RM-1089",
+    "deviceName": "RM-1089",
     "marketingName": "Lumia 535",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1090": {
-    "codename": "RM-1090",
+    "deviceName": "RM-1090",
     "marketingName": "Lumia 535 Dual SIM",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1092": {
-    "codename": "RM-1092",
+    "deviceName": "RM-1092",
     "marketingName": "Lumia 535 Dual SIM",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1096": {
-    "codename": "RM-1096",
+    "deviceName": "RM-1096",
     "marketingName": "Lumia 640 XL Unlocked International",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1099": {
-    "codename": "RM-1099",
+    "deviceName": "RM-1099",
     "marketingName": "Lumia 430 Dual SIM",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1109": {
-    "codename": "RM-1109",
+    "deviceName": "RM-1109",
     "marketingName": "Lumia 640 Dual SIM DTV",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1113": {
-    "codename": "RM-1113",
+    "deviceName": "RM-1113",
     "marketingName": "Lumia 640 LTE",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1114": {
-    "codename": "RM-1114",
+    "deviceName": "RM-1114",
     "marketingName": "Lumia 435 Dual SIM DTV",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1127": {
-    "codename": "RM-1127",
+    "deviceName": "RM-1127",
     "marketingName": "Lumia 550",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1141": {
-    "codename": "RM-1141",
+    "deviceName": "RM-1141",
     "marketingName": "Lumia 540 Dual SIM",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-1154": {
-    "codename": "RM-1154",
+    "deviceName": "RM-1154",
     "marketingName": "Lumia 650 Dual SIM",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-994": {
-    "codename": "RM-994",
+    "deviceName": "RM-994",
     "marketingName": "Lumia 1320",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-995": {
-    "codename": "RM-995",
+    "deviceName": "RM-995",
     "marketingName": "Lumia 1320",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "microsoft rm-996": {
-    "codename": "RM-996",
+    "deviceName": "RM-996",
     "marketingName": "Lumia 1320",
     "manufacturer": "Microsoft",
     "brand": "Microsoft",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia 1": {
-    "codename": "1",
+    "deviceName": "1",
     "marketingName": "1",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia 2": {
-    "codename": "2",
+    "deviceName": "2",
     "marketingName": "2",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia 3.1": {
-    "codename": "3.1",
+    "deviceName": "3.1",
     "marketingName": "3.1",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia 5.1": {
-    "codename": "5.1",
+    "deviceName": "5.1",
     "marketingName": "5.1",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia 5235": {
-    "codename": "5235",
+    "deviceName": "5235",
     "marketingName": "5235",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": false
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "nokia 5530 classic": {
-    "codename": "5530 XpressMusic",
+    "deviceName": "5530 XpressMusic",
     "marketingName": "5530 XpressMusic",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia 6.1": {
-    "codename": "6.1",
+    "deviceName": "6.1",
     "marketingName": "6.1",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia 603": {
-    "codename": "603",
+    "deviceName": "603",
     "marketingName": "603",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia 7 plus": {
-    "codename": "7 plus",
+    "deviceName": "7 plus",
     "marketingName": "7 plus",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia 700": {
-    "codename": "700",
+    "deviceName": "700",
     "marketingName": "700",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia 701": {
-    "codename": "701",
+    "deviceName": "701",
     "marketingName": "701",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia 8 sirocco": {
-    "codename": "8 Sirocco",
+    "deviceName": "8 Sirocco",
     "marketingName": "8 Sirocco",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia 808 pureview": {
-    "codename": "808 PureView",
+    "deviceName": "808 PureView",
     "marketingName": "808 PureView",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia c6": {
-    "codename": "C6",
+    "deviceName": "C6",
     "marketingName": "C6",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia c6-00": {
-    "codename": "C6-00",
+    "deviceName": "C6-00",
     "marketingName": "C6",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia c6-01": {
-    "codename": "C6-01",
+    "deviceName": "C6-01",
     "marketingName": "C6",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia c7": {
-    "codename": "C7",
+    "deviceName": "C7",
     "marketingName": "C7",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia e7": {
-    "codename": "E7",
+    "deviceName": "E7",
     "marketingName": "E7",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia e7-00": {
-    "codename": "E7-00",
+    "deviceName": "E7-00",
     "marketingName": "E7",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia lumia": {
-    "codename": "Lumia",
+    "deviceName": "Lumia",
     "marketingName": "Lumia",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 1020": {
-    "codename": "Lumia 1020",
+    "deviceName": "Lumia 1020",
     "marketingName": "Lumia 1020",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 1520": {
-    "codename": "Lumia 1520",
+    "deviceName": "Lumia 1520",
     "marketingName": "Lumia 1520",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 510": {
-    "codename": "RM-898",
+    "deviceName": "RM-898",
     "marketingName": "Lumia 510",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 520 rm-914": {
-    "codename": "RM-914",
+    "deviceName": "RM-914",
     "marketingName": "Lumia 520",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 521": {
-    "codename": "RM-917",
+    "deviceName": "RM-917",
     "marketingName": "Lumia 521",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 530": {
-    "codename": "RM-1017",
+    "deviceName": "RM-1017",
     "marketingName": "Lumia 530",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 610": {
-    "codename": "RM-835",
+    "deviceName": "RM-835",
     "marketingName": "Lumia 610",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 625": {
-    "codename": "Lumia 625",
+    "deviceName": "Lumia 625",
     "marketingName": "Lumia 625",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 630": {
-    "codename": "RM-977",
+    "deviceName": "RM-977",
     "marketingName": "Lumia 630",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 640": {
-    "codename": "Lumia 640",
+    "deviceName": "Lumia 640",
     "marketingName": "Lumia 640",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 710": {
-    "codename": "Lumia 710",
+    "deviceName": "Lumia 710",
     "marketingName": "Lumia 710",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 720": {
-    "codename": "Lumia 720",
+    "deviceName": "Lumia 720",
     "marketingName": "Lumia 720",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 730": {
-    "codename": "RM-1040",
+    "deviceName": "RM-1040",
     "marketingName": "Lumia 730",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 800": {
-    "codename": "RM-819",
+    "deviceName": "RM-819",
     "marketingName": "Lumia 800",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 820": {
-    "codename": "Lumia 820",
+    "deviceName": "Lumia 820",
     "marketingName": "Lumia 820",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 830": {
-    "codename": "RM-984",
+    "deviceName": "RM-984",
     "marketingName": "Lumia 830",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "nokia lumia 900": {
-    "codename": "RM-823",
+    "deviceName": "RM-823",
     "marketingName": "Lumia 900",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 920": {
-    "codename": "Lumia 920",
+    "deviceName": "Lumia 920",
     "marketingName": "Lumia 920",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 925": {
-    "codename": "RM-892",
+    "deviceName": "RM-892",
     "marketingName": "Lumia 925",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 928": {
-    "codename": "Lumia 928",
+    "deviceName": "Lumia 928",
     "marketingName": "Lumia 928",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 929": {
-    "codename": "Lumia 929",
+    "deviceName": "Lumia 929",
     "marketingName": "Lumia Icon",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 950": {
-    "codename": "Lumia 950",
+    "deviceName": "Lumia 950",
     "marketingName": "Lumia 950",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia lumia 950 xl": {
-    "codename": "Lumia 950 XL",
+    "deviceName": "Lumia 950 XL",
     "marketingName": "Lumia 950 XL",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia n8-00": {
-    "codename": "N8-00",
+    "deviceName": "N8-00",
     "marketingName": "N8",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nokia n9": {
-    "codename": "N9",
+    "deviceName": "N9",
     "marketingName": "N9",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "meego",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "meego"
   },
   "nokia n900": {
-    "codename": "N900",
+    "deviceName": "N900",
     "marketingName": "N900",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "linux smartphone os (maemo)",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "linux smartphone os (maemo)"
   },
   "nokia rm-1038": {
-    "codename": "RM-1038",
+    "deviceName": "RM-1038",
     "marketingName": "Lumia 735",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-1039": {
-    "codename": "RM-1039",
+    "deviceName": "RM-1039",
     "marketingName": "Lumia 735",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-1042": {
-    "codename": "RM-1042",
+    "deviceName": "RM-1042",
     "marketingName": "XL",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia rm-1045": {
-    "codename": "RM-1045",
+    "deviceName": "RM-1045",
     "marketingName": "Lumia 930",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-808": {
-    "codename": "RM-808",
+    "deviceName": "RM-808",
     "marketingName": "Lumia 900 (AT&T)",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-846": {
-    "codename": "RM-846",
+    "deviceName": "RM-846",
     "marketingName": "Lumia 620",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-893": {
-    "codename": "RM-893",
+    "deviceName": "RM-893",
     "marketingName": "Lumia 925",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-910": {
-    "codename": "RM-910",
+    "deviceName": "RM-910",
     "marketingName": "Lumia 925",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-974": {
-    "codename": "RM-974",
+    "deviceName": "RM-974",
     "marketingName": "Lumia 635 (Global)",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-975": {
-    "codename": "RM-975",
+    "deviceName": "RM-975",
     "marketingName": "Lumia 635 (USA)",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-976": {
-    "codename": "RM-976",
+    "deviceName": "RM-976",
     "marketingName": "Lumia 630",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-978": {
-    "codename": "RM-978",
+    "deviceName": "RM-978",
     "marketingName": "Lumia 630 Dual SIM",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia rm-997": {
-    "codename": "RM-997",
+    "deviceName": "RM-997",
     "marketingName": "Lumia 526",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "nokia ta-1000": {
-    "codename": "TA-1000",
+    "deviceName": "TA-1000",
     "marketingName": "6",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1003": {
-    "codename": "TA-1003",
+    "deviceName": "TA-1003",
     "marketingName": "6",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1004": {
-    "codename": "TA-1004",
+    "deviceName": "TA-1004",
     "marketingName": "8",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1005": {
-    "codename": "TA-1005",
+    "deviceName": "TA-1005",
     "marketingName": "8 Sirocco",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1006": {
-    "codename": "TA-1006",
+    "deviceName": "TA-1006",
     "marketingName": "6",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1007": {
-    "codename": "TA-1007",
+    "deviceName": "TA-1007",
     "marketingName": "2",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1009": {
-    "codename": "TA-1009",
+    "deviceName": "TA-1009",
     "marketingName": "8 Sirocco",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1012": {
-    "codename": "TA-1012",
+    "deviceName": "TA-1012",
     "marketingName": "8",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1013": {
-    "codename": "TA-1013",
+    "deviceName": "TA-1013",
     "marketingName": "7",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1015": {
-    "codename": "TA-1015",
+    "deviceName": "TA-1015",
     "marketingName": "7",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1018": {
-    "codename": "TA-1018",
+    "deviceName": "TA-1018",
     "marketingName": "7",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1020": {
-    "codename": "TA-1020",
+    "deviceName": "TA-1020",
     "marketingName": "3",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1021": {
-    "codename": "TA-1021",
+    "deviceName": "TA-1021",
     "marketingName": "6",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1024": {
-    "codename": "TA-1024",
+    "deviceName": "TA-1024",
     "marketingName": "5",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1025": {
-    "codename": "TA-1025",
+    "deviceName": "TA-1025",
     "marketingName": "6",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1027": {
-    "codename": "TA-1027",
+    "deviceName": "TA-1027",
     "marketingName": "5",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1028": {
-    "codename": "TA-1028",
+    "deviceName": "TA-1028",
     "marketingName": "3",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1029": {
-    "codename": "TA-1029",
+    "deviceName": "TA-1029",
     "marketingName": "2",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1032": {
-    "codename": "TA-1032",
+    "deviceName": "TA-1032",
     "marketingName": "3",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1033": {
-    "codename": "TA-1033",
+    "deviceName": "TA-1033",
     "marketingName": "6",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1035": {
-    "codename": "TA-1035",
+    "deviceName": "TA-1035",
     "marketingName": "2",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1038": {
-    "codename": "TA-1038",
+    "deviceName": "TA-1038",
     "marketingName": "3",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1039": {
-    "codename": "TA-1039",
+    "deviceName": "TA-1039",
     "marketingName": "6",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1040": {
-    "codename": "TA-1040",
+    "deviceName": "TA-1040",
     "marketingName": "7",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1041": {
-    "codename": "TA-1041",
+    "deviceName": "TA-1041",
     "marketingName": "7",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1042": {
-    "codename": "TA-1042",
+    "deviceName": "TA-1042",
     "marketingName": "8 Sirocco",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1044": {
-    "codename": "TA-1044",
+    "deviceName": "TA-1044",
     "marketingName": "5",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia ta-1053": {
-    "codename": "TA-1053",
+    "deviceName": "TA-1053",
     "marketingName": "5",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia x": {
-    "codename": "X",
+    "deviceName": "X",
     "marketingName": "X",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia x2ds": {
-    "codename": "RM-1013",
+    "deviceName": "RM-1013",
     "marketingName": "X2 Dual SIM",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia xl": {
-    "codename": "RM-1030",
+    "deviceName": "RM-1030",
     "marketingName": "XL",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nokia xl2": {
-    "codename": "XL2",
+    "deviceName": "XL2",
     "marketingName": "XL2",
     "manufacturer": "Nokia",
     "brand": "Nokia",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,38 +1,47 @@
 {
   "general docomo device": {
-    "codename": "general DoCoMo Device",
+    "deviceName": "general DoCoMo Device",
     "marketingName": "general DoCoMo Device",
     "manufacturer": "DoCoMo",
     "brand": "DoCoMo",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "docomo p900i": {
-    "codename": "P900i",
+    "deviceName": "P900i",
     "marketingName": "P900i",
     "manufacturer": "DoCoMo",
     "brand": "DoCoMo",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "docomo p905i": {
-    "codename": "P905i",
+    "deviceName": "P905i",
     "marketingName": "P905i",
     "manufacturer": "DoCoMo",
     "brand": "DoCoMo",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

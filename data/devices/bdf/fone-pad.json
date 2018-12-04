@@ -1,26 +1,32 @@
 {
   "general bdf device": {
-    "codename": "general BDF Device",
+    "deviceName": "general BDF Device",
     "marketingName": "general BDF Device",
     "manufacturer": "BDF",
     "brand": "BDF",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bdf kt107": {
-    "codename": "KT107",
+    "deviceName": "KT107",
     "marketingName": "KT107",
     "manufacturer": "BDF",
     "brand": "BDF",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

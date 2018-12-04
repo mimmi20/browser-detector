@@ -1,86 +1,107 @@
 {
   "general digma device": {
-    "codename": "general Digma Device",
+    "deviceName": "general Digma Device",
     "marketingName": "general Digma Device",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "digma d700": {
-    "codename": "d700",
+    "deviceName": "d700",
     "marketingName": "d700",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "digma ht7070mg": {
-    "codename": "HT7070MG",
+    "deviceName": "HT7070MG",
     "marketingName": "Hit",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "digma idjd7": {
-    "codename": "iDjD7",
+    "deviceName": "iDjD7",
     "marketingName": "iDjD7",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "digma mvm900hwz": {
-    "codename": "MVM900HWZ",
+    "deviceName": "MVM900HWZ",
     "marketingName": "iDx8",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "digma mvm908hcz": {
-    "codename": "MVM908HCZ",
+    "deviceName": "MVM908HCZ",
     "marketingName": "iDx9",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "digma tt7026mw": {
-    "codename": "TT7026MW",
+    "deviceName": "TT7026MW",
     "marketingName": "Optima 7.6",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

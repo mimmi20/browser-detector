@@ -1,26 +1,32 @@
 {
   "general ross&moor device": {
-    "codename": "general Ross&Moor Device",
+    "deviceName": "general Ross&Moor Device",
     "marketingName": "general Ross&Moor Device",
     "manufacturer": "RossMoor",
     "brand": "RossMoor",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ross&moor rm-997": {
-    "codename": "RM-997",
+    "deviceName": "RM-997",
     "marketingName": "RM-997",
     "manufacturer": "RossMoor",
     "brand": "RossMoor",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general qumo device": {
-    "codename": "general Qumo Device",
+    "deviceName": "general Qumo Device",
     "marketingName": "general Qumo Device",
     "manufacturer": "Qumo",
     "brand": "Qumo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qumo quest 450": {
-    "codename": "Quest 450",
+    "deviceName": "Quest 450",
     "marketingName": "Quest 450",
     "manufacturer": "Qumo",
     "brand": "Qumo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

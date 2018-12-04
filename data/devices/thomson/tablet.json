@@ -1,50 +1,62 @@
 {
   "thomson primo 7": {
-    "codename": "Primo 7",
+    "deviceName": "Primo 7",
     "marketingName": "Primo 7",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thomson primo 8": {
-    "codename": "Primo 8",
+    "deviceName": "Primo 8",
     "marketingName": "Primo 8",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thomson qm734-8g": {
-    "codename": "QM734-8G",
+    "deviceName": "QM734-8G",
     "marketingName": "QM734-8G",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "thomson qm735-8g": {
-    "codename": "QM735-8G",
+    "deviceName": "QM735-8G",
     "marketingName": "QM735-8G",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

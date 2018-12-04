@@ -1,26 +1,32 @@
 {
   "general colorfly device": {
-    "codename": "general Colorfly Device",
+    "deviceName": "general Colorfly Device",
     "marketingName": "general Colorfly Device",
     "manufacturer": "Colorfly",
     "brand": "Colorfly",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "colorfly g708 oc": {
-    "codename": "G708 Oc",
+    "deviceName": "G708 Oc",
     "marketingName": "G708",
     "manufacturer": "Colorfly",
     "brand": "Colorfly",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,38 +1,47 @@
 {
   "general wortmann device": {
-    "codename": "general Wortmann Device",
+    "deviceName": "general Wortmann Device",
     "marketingName": "general Wortmann Device",
     "manufacturer": "Wortmann",
     "brand": "Wortmann",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wortmann terra pad 1003": {
-    "codename": "TERRA PAD 1003",
+    "deviceName": "TERRA PAD 1003",
     "marketingName": "TERRA PAD 1003",
     "manufacturer": "Wortmann",
     "brand": "Wortmann",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wortmann terra pad 1004": {
-    "codename": "TERRA PAD 1004",
+    "deviceName": "TERRA PAD 1004",
     "marketingName": "TERRA PAD 1004",
     "manufacturer": "Wortmann",
     "brand": "Wortmann",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

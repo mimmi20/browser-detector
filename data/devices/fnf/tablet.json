@@ -1,26 +1,32 @@
 {
   "general fnf device": {
-    "codename": "general FNF Device",
+    "deviceName": "general FNF Device",
     "marketingName": "general FNF Device",
     "manufacturer": "FNF",
     "brand": "FNF",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "fnf ifive mini 4s": {
-    "codename": "Ifive Mini 4S",
+    "deviceName": "Ifive Mini 4S",
     "marketingName": "Ifive Mini 4S",
     "manufacturer": "FNF",
     "brand": "FNF",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

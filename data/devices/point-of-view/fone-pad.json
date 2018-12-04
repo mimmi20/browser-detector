@@ -1,50 +1,62 @@
 {
   "point-of-view navi 7 3g": {
-    "codename": "Onyx 507",
+    "deviceName": "Onyx 507",
     "marketingName": "Navi 7 3G",
     "manufacturer": "PointOfView",
     "brand": "PointOfView",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "point-of-view tab p506": {
-    "codename": "Tab P506",
+    "deviceName": "Tab P506",
     "marketingName": "Onyx 506 Navi",
     "manufacturer": "PointOfView",
     "brand": "PointOfView",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "point-of-view tab p517": {
-    "codename": "Tab P517",
+    "deviceName": "Tab P517",
     "marketingName": "Tab P517",
     "manufacturer": "PointOfView",
     "brand": "PointOfView",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "point-of-view tab p547": {
-    "codename": "Tab P547",
+    "deviceName": "Tab P547",
     "marketingName": "Onxy 547",
     "manufacturer": "PointOfView",
     "brand": "PointOfView",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

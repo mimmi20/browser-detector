@@ -1,14 +1,17 @@
 {
   "ross&moor rm-560": {
-    "codename": "RM-560",
+    "deviceName": "RM-560",
     "marketingName": "RM-560",
     "manufacturer": "RossMoor",
     "brand": "RossMoor",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,62 +1,77 @@
 {
   "general xianghe device": {
-    "codename": "general Xianghe Device",
+    "deviceName": "general Xianghe Device",
     "marketingName": "general Xianghe Device",
     "manufacturer": "Xianghe",
     "brand": "Xianghe",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xianghe iphone": {
-    "codename": "iphone",
+    "deviceName": "iphone",
     "marketingName": "iphone",
     "manufacturer": "Xianghe",
     "brand": "Xianghe",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xianghe iphone 5": {
-    "codename": "iphone 5",
+    "deviceName": "iphone 5",
     "marketingName": "iphone 5",
     "manufacturer": "Xianghe",
     "brand": "Xianghe",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xianghe iphone 5c": {
-    "codename": "iphone 5c",
+    "deviceName": "iphone 5c",
     "marketingName": "iphone 5c",
     "manufacturer": "Xianghe",
     "brand": "Xianghe",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xianghe iphone 6c": {
-    "codename": "iphone 6c",
+    "deviceName": "iphone 6c",
     "marketingName": "iphone 6c",
     "manufacturer": "Xianghe",
     "brand": "Xianghe",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,38 +1,47 @@
 {
   "general yuntab device": {
-    "codename": "general Yuntab Device",
+    "deviceName": "general Yuntab Device",
     "marketingName": "general Yuntab Device",
     "manufacturer": "Yuntab",
     "brand": "Yuntab",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "yuntab k107": {
-    "codename": "K107",
+    "deviceName": "K107",
     "marketingName": "K107",
     "manufacturer": "Yuntab",
     "brand": "Yuntab",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "yuntab k17": {
-    "codename": "K17",
+    "deviceName": "K17",
     "marketingName": "K17",
     "manufacturer": "Yuntab",
     "brand": "Yuntab",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

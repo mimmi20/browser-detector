@@ -1,26 +1,32 @@
 {
   "general nuclear device": {
-    "codename": "general Nuclear Device",
+    "deviceName": "general Nuclear Device",
     "marketingName": "general Nuclear Device",
     "manufacturer": "Nuclear",
     "brand": "Nuclear",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "nuclear sx-sp5": {
-    "codename": "SX-SP5",
+    "deviceName": "SX-SP5",
     "marketingName": "SX-SP5",
     "manufacturer": "Nuclear",
     "brand": "Nuclear",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

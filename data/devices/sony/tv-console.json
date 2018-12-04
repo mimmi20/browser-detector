@@ -1,14 +1,17 @@
 {
   "sony playstation 3": {
-    "codename": "Playstation 3",
+    "deviceName": "Playstation 3",
     "marketingName": "Playstation 3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "cellos",
     "type": "tv-console",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "cellos"
   }
 }

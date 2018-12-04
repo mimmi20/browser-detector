@@ -1,86 +1,107 @@
 {
   "apple ipod 1,1": {
-    "codename": "iPod Touch",
+    "deviceName": "iPod Touch",
     "marketingName": "iPod Touch (Gen 1)",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": "ios",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "ios"
   },
   "apple ipod 2,1": {
-    "codename": "iPod Touch",
+    "deviceName": "iPod Touch",
     "marketingName": "iPod Touch (Gen 2)",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": "ios",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "ios"
   },
   "apple ipod 3,1": {
-    "codename": "iPod Touch",
+    "deviceName": "iPod Touch",
     "marketingName": "iPod Touch (Gen 3)",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": "ios",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "ios"
   },
   "apple ipod 4,1": {
-    "codename": "iPod Touch",
+    "deviceName": "iPod Touch",
     "marketingName": "iPod Touch (Gen 4)",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": "ios",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 960,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 960,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "ios"
   },
   "apple ipod 5,1": {
-    "codename": "iPod Touch",
+    "deviceName": "iPod Touch",
     "marketingName": "iPod Touch (Gen 5)",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": "ios",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 960,
-    "resolutionHeight": 1136,
-    "dualOrientation": true
+    "display": {
+      "width": 960,
+      "height": 1136,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "ios"
   },
   "apple ipod 7,1": {
-    "codename": "iPod Touch",
+    "deviceName": "iPod Touch",
     "marketingName": "iPod Touch (Gen 6)",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": "ios",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 960,
-    "resolutionHeight": 1136,
-    "dualOrientation": true
+    "display": {
+      "width": 960,
+      "height": 1136,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "ios"
   },
   "apple ipod touch": {
-    "codename": "iPod Touch",
+    "deviceName": "iPod Touch",
     "marketingName": "iPod Touch",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": "ios",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "ios"
   }
 }

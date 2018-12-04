@@ -1,50 +1,62 @@
 {
   "general majestic device": {
-    "codename": "general Majestic Device",
+    "deviceName": "general Majestic Device",
     "marketingName": "general Majestic Device",
     "manufacturer": "Majestic",
     "brand": "Majestic",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "majestic crono 22": {
-    "codename": "Crono 22",
+    "deviceName": "Crono 22",
     "marketingName": "Crono SPH-22",
     "manufacturer": "Majestic",
     "brand": "Majestic",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "majestic crono 44": {
-    "codename": "Crono 44",
+    "deviceName": "Crono 44",
     "marketingName": "Crono 44",
     "manufacturer": "Majestic",
     "brand": "Majestic",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "majestic zeus 21": {
-    "codename": "Zeus 21",
+    "deviceName": "Zeus 21",
     "marketingName": "SPH-ZEUS 21",
     "manufacturer": "Majestic",
     "brand": "Majestic",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "concorde tab play": {
-    "codename": "Tab Play",
+    "deviceName": "Tab Play",
     "marketingName": "Tab Play",
     "manufacturer": "ConCorde",
     "brand": "ConCorde",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "concorde tab t10": {
-    "codename": "Tab T10",
+    "deviceName": "Tab T10",
     "marketingName": "Tab T10",
     "manufacturer": "ConCorde",
     "brand": "ConCorde",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

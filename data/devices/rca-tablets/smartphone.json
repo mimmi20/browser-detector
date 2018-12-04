@@ -1,14 +1,17 @@
 {
   "rca-tablets rct6773w22": {
-    "codename": "RCT6773W22",
+    "deviceName": "RCT6773W22",
     "marketingName": "RCT6773W22",
     "manufacturer": "RCA Tablets",
     "brand": "RCA Tablets",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1080,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

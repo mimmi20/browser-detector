@@ -1,182 +1,227 @@
 {
   "general leeco device": {
-    "codename": "general LeEco Device",
+    "deviceName": "general LeEco Device",
     "marketingName": "general LeEco Device",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco c1-u02": {
-    "codename": "C1-U02",
+    "deviceName": "C1-U02",
     "marketingName": "LeRee Le 3",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le max": {
-    "codename": "Le Max",
+    "deviceName": "Le Max",
     "marketingName": "Le Max",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x507": {
-    "codename": "Le X507",
+    "deviceName": "Le X507",
     "marketingName": "Le 1s",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x526": {
-    "codename": "Le X526",
+    "deviceName": "Le X526",
     "marketingName": "Le 2",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x527": {
-    "codename": "Le X527",
+    "deviceName": "Le X527",
     "marketingName": "Le 2",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x620": {
-    "codename": "Le X620",
+    "deviceName": "Le X620",
     "marketingName": "Le 2",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x626": {
-    "codename": "Le X626",
+    "deviceName": "Le X626",
     "marketingName": "Le S3",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x720": {
-    "codename": "Le X720",
+    "deviceName": "Le X720",
     "marketingName": "Le 2s Pro",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x722": {
-    "codename": "Le X722",
+    "deviceName": "Le X722",
     "marketingName": "Le Pro 3",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x800": {
-    "codename": "Le X800",
+    "deviceName": "Le X800",
     "marketingName": "Le 1 Pro",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x820": {
-    "codename": "Le X820",
+    "deviceName": "Le X820",
     "marketingName": "Le Max 2",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x821": {
-    "codename": "Le X821",
+    "deviceName": "Le X821",
     "marketingName": "Le Max 2",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x822": {
-    "codename": "Le X822",
+    "deviceName": "Le X822",
     "marketingName": "Le Max 2",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leeco le x829": {
-    "codename": "Le X829",
+    "deviceName": "Le X829",
     "marketingName": "Le Max 2",
     "manufacturer": "LeEco",
     "brand": "LeEco",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

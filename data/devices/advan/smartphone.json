@@ -1,14 +1,17 @@
 {
   "advan vandroid": {
-    "codename": "Vandroid",
+    "deviceName": "Vandroid",
     "marketingName": "Vandroid",
     "manufacturer": "Advan",
     "brand": "Advan",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

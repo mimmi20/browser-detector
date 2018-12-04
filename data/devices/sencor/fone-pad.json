@@ -1,14 +1,17 @@
 {
   "sencor element 10.1": {
-    "codename": "Element 10.1",
+    "deviceName": "Element 10.1",
     "marketingName": "Element 10.1",
     "manufacturer": "Sencor",
     "brand": "Sencor",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

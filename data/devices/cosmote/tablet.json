@@ -1,14 +1,17 @@
 {
   "cosmote my mini tablet": {
-    "codename": "My Mini Tablet",
+    "deviceName": "My Mini Tablet",
     "marketingName": "My Mini Tablet",
     "manufacturer": "Cosmote",
     "brand": "Cosmote",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

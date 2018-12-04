@@ -1,62 +1,77 @@
 {
   "general grape device": {
-    "codename": "general Grape Device",
+    "deviceName": "general Grape Device",
     "marketingName": "general Grape Device",
     "manufacturer": "Grape",
     "brand": "Grape",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "grape gtm 5.5v.8 exclusive": {
-    "codename": "GTM 5.5v.8 Exclusive",
+    "deviceName": "GTM 5.5v.8 Exclusive",
     "marketingName": "GTM 5.5v.8 Exclusive",
     "manufacturer": "Grape",
     "brand": "Grape",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "grape gtm 5v.5 pro": {
-    "codename": "GTM 5v.5 Pro",
+    "deviceName": "GTM 5v.5 Pro",
     "marketingName": "GTM 5v.5 Pro",
     "manufacturer": "Grape",
     "brand": "Grape",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "grape gtm 5v.7": {
-    "codename": "GTM 5v.7",
+    "deviceName": "GTM 5v.7",
     "marketingName": "GTM 5v.7",
     "manufacturer": "Grape",
     "brand": "Grape",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "grape gtm 5v5": {
-    "codename": "GTM 5v5",
+    "deviceName": "GTM 5v5",
     "marketingName": "GTM 5v5",
     "manufacturer": "Grape",
     "brand": "Grape",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

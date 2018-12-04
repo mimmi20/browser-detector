@@ -1,110 +1,137 @@
 {
   "alcatel 3075a": {
-    "codename": "OT-3075A",
+    "deviceName": "OT-3075A",
     "marketingName": "OneTouch Tribe",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 220,
-    "resolutionHeight": 176,
-    "dualOrientation": false
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "alcatel oh5": {
-    "codename": "OH5",
+    "deviceName": "OH5",
     "marketingName": "OH5",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 128,
-    "resolutionHeight": 128,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "alcatel ot-216": {
-    "codename": "OT-216",
+    "deviceName": "OT-216",
     "marketingName": "OT-216",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 128,
-    "resolutionHeight": 128,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "alcatel ot-510a": {
-    "codename": "OT-510A",
+    "deviceName": "OT-510A",
     "marketingName": "OT-510A",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "nucleus os",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "nucleus os"
   },
   "alcatel ot-585": {
-    "codename": "OT-585",
+    "deviceName": "OT-585",
     "marketingName": "OT-585",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 220,
-    "resolutionHeight": 176,
-    "dualOrientation": false
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "alcatel ot-710d": {
-    "codename": "OT-710D",
+    "deviceName": "OT-710D",
     "marketingName": "OT-710D",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "alcatel ot-807d": {
-    "codename": "OT-807D",
+    "deviceName": "OT-807D",
     "marketingName": "OT-807D",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "alcatel ot-818": {
-    "codename": "OT-818",
+    "deviceName": "OT-818",
     "marketingName": "OneTouch 818",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "alcatel ot-871a": {
-    "codename": "OT-871A",
+    "deviceName": "OT-871A",
     "marketingName": "OneTouch 871A",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 220,
-    "resolutionHeight": 176,
-    "dualOrientation": false
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

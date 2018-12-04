@@ -1,26 +1,32 @@
 {
   "general edal tv": {
-    "codename": "General Edal TV",
+    "deviceName": "General Edal TV",
     "marketingName": "General Edal TV",
     "manufacturer": "Edal",
     "brand": "Edal",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "edal x96mini": {
-    "codename": "X96mini",
+    "deviceName": "X96mini",
     "marketingName": "X96mini",
     "manufacturer": "Edal",
     "brand": "Edal",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

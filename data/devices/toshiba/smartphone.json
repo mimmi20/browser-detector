@@ -1,50 +1,62 @@
 {
   "toshiba t-01c": {
-    "codename": "T-01C",
+    "deviceName": "T-01C",
     "marketingName": "Regza T-01C",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba t-01d": {
-    "codename": "T-01D",
+    "deviceName": "T-01D",
     "marketingName": "Regza T-01D",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba t-02d": {
-    "codename": "T-02D",
+    "deviceName": "T-02D",
     "marketingName": "Regza T-02D",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "toshiba tg01": {
-    "codename": "TG01",
+    "deviceName": "TG01",
     "marketingName": "TG01",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   }
 }

@@ -1,3434 +1,4292 @@
 {
   "general lg device": {
-    "codename": "general LG Device",
+    "deviceName": "general LG Device",
     "marketingName": "general LG Device",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "lg 730": {
-    "codename": "730",
+    "deviceName": "730",
     "marketingName": "Venice (Boost Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg c550": {
-    "codename": "C550",
+    "deviceName": "C550",
     "marketingName": "Optimus Chat",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d160": {
-    "codename": "D160",
+    "deviceName": "D160",
     "marketingName": "L40",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "lg d213": {
-    "codename": "D213",
+    "deviceName": "D213",
     "marketingName": "L50",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d280": {
-    "codename": "D280",
+    "deviceName": "D280",
     "marketingName": "L65",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d285": {
-    "codename": "D285",
+    "deviceName": "D285",
     "marketingName": "L65 Dual SIM",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d290": {
-    "codename": "D290",
+    "deviceName": "D290",
     "marketingName": "L Fino",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d290n": {
-    "codename": "D290N",
+    "deviceName": "D290N",
     "marketingName": "L Fino",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d295": {
-    "codename": "D295",
+    "deviceName": "D295",
     "marketingName": "L Fino",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d300": {
-    "codename": "D300",
+    "deviceName": "D300",
     "marketingName": "FireWeb",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "firefoxos",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "firefoxos"
   },
   "lg d320": {
-    "codename": "D320",
+    "deviceName": "D320",
     "marketingName": "L70",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d325": {
-    "codename": "D325",
+    "deviceName": "D325",
     "marketingName": "L70 Dual",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d331": {
-    "codename": "D331",
+    "deviceName": "D331",
     "marketingName": "L Bello",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d335": {
-    "codename": "D335",
+    "deviceName": "D335",
     "marketingName": "L Bello Dual",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d335e": {
-    "codename": "D335E",
+    "deviceName": "D335E",
     "marketingName": "L Bello Dual",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d337": {
-    "codename": "D337",
+    "deviceName": "D337",
     "marketingName": "L Prime Dual TV",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d373": {
-    "codename": "D373",
+    "deviceName": "D373",
     "marketingName": "L80",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d390n": {
-    "codename": "D390n",
+    "deviceName": "D390n",
     "marketingName": "F60 4G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d405": {
-    "codename": "D405",
+    "deviceName": "D405",
     "marketingName": "Optimus L90",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d410": {
-    "codename": "D410",
+    "deviceName": "D410",
     "marketingName": "Optimus L90 Dual",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d415": {
-    "codename": "D415",
+    "deviceName": "D415",
     "marketingName": "Optimus L90",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d605": {
-    "codename": "D605",
+    "deviceName": "D605",
     "marketingName": "Optimus L9 II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d618": {
-    "codename": "D618",
+    "deviceName": "D618",
     "marketingName": "G2 mini",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d620": {
-    "codename": "D620",
+    "deviceName": "D620",
     "marketingName": "G2 mini",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d680": {
-    "codename": "D680",
+    "deviceName": "D680",
     "marketingName": "G Pro Lite",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d682": {
-    "codename": "D682",
+    "deviceName": "D682",
     "marketingName": "G Pro Lite",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d682tr": {
-    "codename": "D682TR",
+    "deviceName": "D682TR",
     "marketingName": "G Pro Lite",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d686": {
-    "codename": "D686",
+    "deviceName": "D686",
     "marketingName": "Optimus G Pro Lite Dual",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d690": {
-    "codename": "D690",
+    "deviceName": "D690",
     "marketingName": "G3 Stylus Dual",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d722": {
-    "codename": "D722",
+    "deviceName": "D722",
     "marketingName": "G3 S (Europe)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d722k": {
-    "codename": "D722K",
+    "deviceName": "D722K",
     "marketingName": "G3 S (Taiwan, Hong Kong, India)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d724": {
-    "codename": "D724",
+    "deviceName": "D724",
     "marketingName": "G3 S (CIS)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d725": {
-    "codename": "D725",
+    "deviceName": "D725",
     "marketingName": "G3 S (AT&T)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d728": {
-    "codename": "D728",
+    "deviceName": "D728",
     "marketingName": "G3 S (China)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d800": {
-    "codename": "D800",
+    "deviceName": "D800",
     "marketingName": "G2 (AT&T)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d801": {
-    "codename": "D801",
+    "deviceName": "D801",
     "marketingName": "G2 (T-Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d802": {
-    "codename": "D802",
+    "deviceName": "D802",
     "marketingName": "G2 (Europe)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d802ta": {
-    "codename": "D802TA",
+    "deviceName": "D802TA",
     "marketingName": "G2 (Australia)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d802tr": {
-    "codename": "D802TR",
+    "deviceName": "D802TR",
     "marketingName": "G2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d803": {
-    "codename": "D803",
+    "deviceName": "D803",
     "marketingName": "G2 (Canada)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d805": {
-    "codename": "D805",
+    "deviceName": "D805",
     "marketingName": "G2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d838": {
-    "codename": "D838",
+    "deviceName": "D838",
     "marketingName": "G PRO 2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d855": {
-    "codename": "D855",
+    "deviceName": "D855",
     "marketingName": "G3",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d856": {
-    "codename": "D856",
+    "deviceName": "D856",
     "marketingName": "G3 Dual LTE",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d858hk": {
-    "codename": "D858HK",
+    "deviceName": "D858HK",
     "marketingName": "G3",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d950": {
-    "codename": "D950",
+    "deviceName": "D950",
     "marketingName": "G Flex (AT&T)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d955": {
-    "codename": "D955",
+    "deviceName": "D955",
     "marketingName": "G Flex (Europe)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d958": {
-    "codename": "D958",
+    "deviceName": "D958",
     "marketingName": "G Flex (Hong Kong & Asia)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg d959": {
-    "codename": "D959",
+    "deviceName": "D959",
     "marketingName": "G Flex (T-Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e400": {
-    "codename": "E400",
+    "deviceName": "E400",
     "marketingName": "Optimus L3",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e405": {
-    "codename": "E405",
+    "deviceName": "E405",
     "marketingName": "Optimus L3",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e425": {
-    "codename": "E425",
+    "deviceName": "E425",
     "marketingName": "Optimus L3 II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e430": {
-    "codename": "E430",
+    "deviceName": "E430",
     "marketingName": "Optimus L3 II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e440": {
-    "codename": "E440",
+    "deviceName": "E440",
     "marketingName": "Optimus L4 II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e460": {
-    "codename": "E460",
+    "deviceName": "E460",
     "marketingName": "Optimus L5 II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e467f": {
-    "codename": "E467F",
+    "deviceName": "E467F",
     "marketingName": "Optimus L4 II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e510": {
-    "codename": "E510",
+    "deviceName": "E510",
     "marketingName": "Optimus Hub",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e610": {
-    "codename": "E610",
+    "deviceName": "E610",
     "marketingName": "Optimus L5",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e610v": {
-    "codename": "E610V",
+    "deviceName": "E610V",
     "marketingName": "Optimus L5",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e612": {
-    "codename": "E612",
+    "deviceName": "E612",
     "marketingName": "Optimus L5 Dual",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e612g": {
-    "codename": "E612G",
+    "deviceName": "E612G",
     "marketingName": "Optimus L5 Dual",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e615": {
-    "codename": "E615",
+    "deviceName": "E615",
     "marketingName": "Optimus L5 Dual",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e617g": {
-    "codename": "E617G",
+    "deviceName": "E617G",
     "marketingName": "Optimus L5",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e720": {
-    "codename": "E720",
+    "deviceName": "E720",
     "marketingName": "Optimus Chic",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e730": {
-    "codename": "E730",
+    "deviceName": "E730",
     "marketingName": "Optimus Sol",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e739": {
-    "codename": "E739",
+    "deviceName": "E739",
     "marketingName": "myTouch",
     "manufacturer": "Lg",
     "brand": "Tmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e900": {
-    "codename": "E900",
+    "deviceName": "E900",
     "marketingName": "Optimus 7",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "lg e906": {
-    "codename": "E906",
+    "deviceName": "E906",
     "marketingName": "Jil Sander Mobile",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "lg e970": {
-    "codename": "E970",
+    "deviceName": "E970",
     "marketingName": "Optimus G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "lg e973": {
-    "codename": "E973",
+    "deviceName": "E973",
     "marketingName": "Optimus G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e975": {
-    "codename": "E975",
+    "deviceName": "E975",
     "marketingName": "Optimus G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e980": {
-    "codename": "E980",
+    "deviceName": "E980",
     "marketingName": "Optimus G Pro",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e980h": {
-    "codename": "E980h",
+    "deviceName": "E980h",
     "marketingName": "Optimus G Pro 5.5 4G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e986": {
-    "codename": "E986",
+    "deviceName": "E986",
     "marketingName": "Optimus G Pro",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e988": {
-    "codename": "E988",
+    "deviceName": "E988",
     "marketingName": "Optimus G Pro",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg e989": {
-    "codename": "E989",
+    "deviceName": "E989",
     "marketingName": "Optimus G Pro 5.5",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg eve": {
-    "codename": "GW620R",
+    "deviceName": "GW620R",
     "marketingName": "Eve",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f100k": {
-    "codename": "F100K",
+    "deviceName": "F100K",
     "marketingName": "Optimus Vu",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1024,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f100l": {
-    "codename": "F100L",
+    "deviceName": "F100L",
     "marketingName": "Optimus Vu",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1024,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f100s": {
-    "codename": "F100S",
+    "deviceName": "F100S",
     "marketingName": "Optimus Vu",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1024,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f120k": {
-    "codename": "F120K",
+    "deviceName": "F120K",
     "marketingName": "Optimus LTE Tag",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f160k": {
-    "codename": "F160K",
+    "deviceName": "F160K",
     "marketingName": "Optimus LTE2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f160l": {
-    "codename": "F160L",
+    "deviceName": "F160L",
     "marketingName": "Optimus LTE2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f160s": {
-    "codename": "F160S",
+    "deviceName": "F160S",
     "marketingName": "Optimus LTE2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f180": {
-    "codename": "F180",
+    "deviceName": "F180",
     "marketingName": "Optimus G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f180k": {
-    "codename": "F180K",
+    "deviceName": "F180K",
     "marketingName": "Optimus G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f180l": {
-    "codename": "F180L",
+    "deviceName": "F180L",
     "marketingName": "Optimus G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f180s": {
-    "codename": "F180S",
+    "deviceName": "F180S",
     "marketingName": "Optimus G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f200k": {
-    "codename": "F200K",
+    "deviceName": "F200K",
     "marketingName": "Optimus Vu II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f200s": {
-    "codename": "F200S",
+    "deviceName": "F200S",
     "marketingName": "Optimus Vu II",
     "manufacturer": "Lg",
     "brand": "Google",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f220k": {
-    "codename": "F220K",
+    "deviceName": "F220K",
     "marketingName": "Optimus GK",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f240k": {
-    "codename": "F240K",
+    "deviceName": "F240K",
     "marketingName": "Optimus G Pro 5.5",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f240l": {
-    "codename": "F240L",
+    "deviceName": "F240L",
     "marketingName": "Optimus G Pro 5.5",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f240s": {
-    "codename": "F240S",
+    "deviceName": "F240S",
     "marketingName": "Optimus G Pro 5.5",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f320k": {
-    "codename": "F320K",
+    "deviceName": "F320K",
     "marketingName": "G2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f320l": {
-    "codename": "F320L",
+    "deviceName": "F320L",
     "marketingName": "G2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f320s": {
-    "codename": "F320S",
+    "deviceName": "F320S",
     "marketingName": "G2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f340": {
-    "codename": "F340",
+    "deviceName": "F340",
     "marketingName": "G Flex (Korea)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f350s": {
-    "codename": "F350S",
+    "deviceName": "F350S",
     "marketingName": "G Pro 2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f400s": {
-    "codename": "F400S",
+    "deviceName": "F400S",
     "marketingName": "G3",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f560k": {
-    "codename": "F560K",
+    "deviceName": "F560K",
     "marketingName": "G Stylo",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f670k": {
-    "codename": "F670K",
+    "deviceName": "F670K",
     "marketingName": "K10",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f670l": {
-    "codename": "F670L",
+    "deviceName": "F670L",
     "marketingName": "K10",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg f670s": {
-    "codename": "F670S",
+    "deviceName": "F670S",
     "marketingName": "K10",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg g3": {
-    "codename": "G3",
+    "deviceName": "G3",
     "marketingName": "G3",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": false
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "lg g3 mini": {
-    "codename": "G3 Mini",
+    "deviceName": "G3 Mini",
     "marketingName": "G3 Mini",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg gt540": {
-    "codename": "GT540",
+    "deviceName": "GT540",
     "marketingName": "Optimus",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h220": {
-    "codename": "H220",
+    "deviceName": "H220",
     "marketingName": "Joy",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h320": {
-    "codename": "H320",
+    "deviceName": "H320",
     "marketingName": "Leon",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h326": {
-    "codename": "H326",
+    "deviceName": "H326",
     "marketingName": "Leon TV",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h340n": {
-    "codename": "H340N",
+    "deviceName": "H340N",
     "marketingName": "Leon 4G LTE",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h343": {
-    "codename": "H343",
+    "deviceName": "H343",
     "marketingName": "Risio (Cricket)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h345": {
-    "codename": "H345",
+    "deviceName": "H345",
     "marketingName": "Leon 4G LTE",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h420": {
-    "codename": "H420",
+    "deviceName": "H420",
     "marketingName": "Spirit 3G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h440n": {
-    "codename": "H440n",
+    "deviceName": "H440n",
     "marketingName": "Spirit LTE",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h445": {
-    "codename": "H445",
+    "deviceName": "H445",
     "marketingName": "Escape 2 (AT&T)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h500": {
-    "codename": "H500",
+    "deviceName": "H500",
     "marketingName": "Magna",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h502": {
-    "codename": "H502",
+    "deviceName": "H502",
     "marketingName": "Magna",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h525n": {
-    "codename": "H525N",
+    "deviceName": "H525N",
     "marketingName": "G4c",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h540": {
-    "codename": "H540",
+    "deviceName": "H540",
     "marketingName": "G4 Stylus",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h631": {
-    "codename": "H631",
+    "deviceName": "H631",
     "marketingName": "G Stylo",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h634": {
-    "codename": "H634",
+    "deviceName": "H634",
     "marketingName": "G Stylo (Cricket)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h635": {
-    "codename": "H635",
+    "deviceName": "H635",
     "marketingName": "G4 Stylus 4G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h650": {
-    "codename": "H650",
+    "deviceName": "H650",
     "marketingName": "Zero",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h735": {
-    "codename": "H735",
+    "deviceName": "H735",
     "marketingName": "G4S 4G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h815": {
-    "codename": "H815",
+    "deviceName": "H815",
     "marketingName": "G4",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h818": {
-    "codename": "H818",
+    "deviceName": "H818",
     "marketingName": "G4",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h820": {
-    "codename": "H820",
+    "deviceName": "H820",
     "marketingName": "G5 (AT&T)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h830": {
-    "codename": "H830",
+    "deviceName": "H830",
     "marketingName": "G5 (T-Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h840": {
-    "codename": "H840",
+    "deviceName": "H840",
     "marketingName": "G5 SE (Latin America)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h845": {
-    "codename": "H845",
+    "deviceName": "H845",
     "marketingName": "G5 SE (Russia)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h850": {
-    "codename": "H850",
+    "deviceName": "H850",
     "marketingName": "G5 (Europe)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h858": {
-    "codename": "H858",
+    "deviceName": "H858",
     "marketingName": "G5 Speed (Taiwan)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h860": {
-    "codename": "H860",
+    "deviceName": "H860",
     "marketingName": "G5",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h870": {
-    "codename": "H870",
+    "deviceName": "H870",
     "marketingName": "G6",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h873": {
-    "codename": "H873",
+    "deviceName": "H873",
     "marketingName": "G6",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h900": {
-    "codename": "H900",
+    "deviceName": "H900",
     "marketingName": "V10 (AT&T)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h901": {
-    "codename": "H901",
+    "deviceName": "H901",
     "marketingName": "V10 (T-Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h910": {
-    "codename": "H910",
+    "deviceName": "H910",
     "marketingName": "V20 (AT&T)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h918": {
-    "codename": "H918",
+    "deviceName": "H918",
     "marketingName": "V20 (T-Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h930": {
-    "codename": "H930",
+    "deviceName": "H930",
     "marketingName": "V30",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h930ds": {
-    "codename": "H930DS",
+    "deviceName": "H930DS",
     "marketingName": "V30+",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h931": {
-    "codename": "H931",
+    "deviceName": "H931",
     "marketingName": "V30",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h932": {
-    "codename": "H932",
+    "deviceName": "H932",
     "marketingName": "V30",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h933": {
-    "codename": "H933",
+    "deviceName": "H933",
     "marketingName": "V30",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h950": {
-    "codename": "H950",
+    "deviceName": "H950",
     "marketingName": "G Flex 2 (AT&T)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h955": {
-    "codename": "H955",
+    "deviceName": "H955",
     "marketingName": "G Flex 2 (Europe, Middle East, Africa)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h960": {
-    "codename": "H960",
+    "deviceName": "H960",
     "marketingName": "V10",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h960a": {
-    "codename": "H960A",
+    "deviceName": "H960A",
     "marketingName": "V10 (Europe, Latin America)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h960ar": {
-    "codename": "H960AR",
+    "deviceName": "H960AR",
     "marketingName": "V10 (Argentina)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h960tr": {
-    "codename": "H960TR",
+    "deviceName": "H960TR",
     "marketingName": "V10 (Turkey)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h960yk": {
-    "codename": "H960YK",
+    "deviceName": "H960YK",
     "marketingName": "V10 (Israel)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h961n": {
-    "codename": "H961N",
+    "deviceName": "H961N",
     "marketingName": "V10 (Hong Kong)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h961s": {
-    "codename": "H961S",
+    "deviceName": "H961S",
     "marketingName": "V10 (Russia, Kazakhstan)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h962": {
-    "codename": "H962",
+    "deviceName": "H962",
     "marketingName": "V10 (Taiwan)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h968": {
-    "codename": "H968",
+    "deviceName": "H968",
     "marketingName": "V10 (China)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h990ds": {
-    "codename": "H990DS",
+    "deviceName": "H990DS",
     "marketingName": "V20 Dual SIM",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h990n": {
-    "codename": "H990N",
+    "deviceName": "H990N",
     "marketingName": "V20 Dual SIM (Hong Kong)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg h990t": {
-    "codename": "H990T",
+    "deviceName": "H990T",
     "marketingName": "V20 (Mexico)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k100": {
-    "codename": "K100",
+    "deviceName": "K100",
     "marketingName": "K3",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k120": {
-    "codename": "K120",
+    "deviceName": "K120",
     "marketingName": "Spree (Cricket)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k130": {
-    "codename": "K130",
+    "deviceName": "K130",
     "marketingName": "K4",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k220": {
-    "codename": "K220",
+    "deviceName": "K220",
     "marketingName": "X Power (Europe)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k220ds": {
-    "codename": "K220DS",
+    "deviceName": "K220DS",
     "marketingName": "X Power (Russia, Europe, Middle East, Africa)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k330": {
-    "codename": "K330",
+    "deviceName": "K330",
     "marketingName": "K7",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k332": {
-    "codename": "K332",
+    "deviceName": "K332",
     "marketingName": "K7 LTE",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k350": {
-    "codename": "K350",
+    "deviceName": "K350",
     "marketingName": "K8",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k371": {
-    "codename": "K371",
+    "deviceName": "K371",
     "marketingName": "Phoenix 2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k420": {
-    "codename": "K420",
+    "deviceName": "K420",
     "marketingName": "K10",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k430": {
-    "codename": "K430",
+    "deviceName": "K430",
     "marketingName": "K10",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k450": {
-    "codename": "K450",
+    "deviceName": "K450",
     "marketingName": "X Power (Cricket)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k500ds": {
-    "codename": "K500DS",
+    "deviceName": "K500DS",
     "marketingName": "X screen (Russia)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k500n": {
-    "codename": "K500N",
+    "deviceName": "K500N",
     "marketingName": "X screen (Europe)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k520": {
-    "codename": "K520",
+    "deviceName": "K520",
     "marketingName": "Stylus 2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k580": {
-    "codename": "K580",
+    "deviceName": "K580",
     "marketingName": "X Cam",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg k600": {
-    "codename": "K600",
+    "deviceName": "K600",
     "marketingName": "X mach",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ku5400": {
-    "codename": "KU5400",
+    "deviceName": "KU5400",
     "marketingName": "Prada 3.0",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l-01d": {
-    "codename": "L-01D",
+    "deviceName": "L-01D",
     "marketingName": "Optimus LTE",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l-02d": {
-    "codename": "L-02D",
+    "deviceName": "L-02D",
     "marketingName": "Prada",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l-05e": {
-    "codename": "L-05E",
+    "deviceName": "L-05E",
     "marketingName": "Optimus it",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l-07c": {
-    "codename": "L-07C",
+    "deviceName": "L-07C",
     "marketingName": "Optimus bright",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l160l": {
-    "codename": "L160L",
+    "deviceName": "L160L",
     "marketingName": "Optimus LTE2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": false
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "lg l34c": {
-    "codename": "L34C",
+    "deviceName": "L34C",
     "marketingName": "Optimus Fuel",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l35g": {
-    "codename": "L35G",
+    "deviceName": "L35G",
     "marketingName": "Optimus Logic",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l40g": {
-    "codename": "L40G",
+    "deviceName": "L40G",
     "marketingName": "Optimus Extreme",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l61al": {
-    "codename": "L61AL",
+    "deviceName": "L61AL",
     "marketingName": "Premier",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l82vl": {
-    "codename": "L82VL",
+    "deviceName": "L82VL",
     "marketingName": "Stylo 2 LTE",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l85c": {
-    "codename": "L85C",
+    "deviceName": "L85C",
     "marketingName": "Optimus Black",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg l86c": {
-    "codename": "L86C",
+    "deviceName": "L86C",
     "marketingName": "Optimus Showtime",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg lm-g710": {
-    "codename": "LM-G710",
+    "deviceName": "LM-G710",
     "marketingName": "G7 ThinQ",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 3120,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 3120,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg lm-x210": {
-    "codename": "LM-X210",
+    "deviceName": "LM-X210",
     "marketingName": "Aristo 2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg lm-x212g": {
-    "codename": "LM-X212G",
+    "deviceName": "LM-X212G",
     "marketingName": "K8 (2018)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg lm-x410.fn": {
-    "codename": "LM-X410.FN",
+    "deviceName": "LM-X410.FN",
     "marketingName": "K11",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls450": {
-    "codename": "LS450",
+    "deviceName": "LS450",
     "marketingName": "K3 4G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls665": {
-    "codename": "LS665",
+    "deviceName": "LS665",
     "marketingName": "Tribute 2",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls670": {
-    "codename": "LS670",
+    "deviceName": "LS670",
     "marketingName": "Optimus S",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls675": {
-    "codename": "LS675",
+    "deviceName": "LS675",
     "marketingName": "K7 (Boost Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls676": {
-    "codename": "LS676",
+    "deviceName": "LS676",
     "marketingName": "Tribute HD",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls740": {
-    "codename": "LS740",
+    "deviceName": "LS740",
     "marketingName": "Volt",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls751": {
-    "codename": "LS751",
+    "deviceName": "LS751",
     "marketingName": "Volt 2 (Boost Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls755": {
-    "codename": "LS755",
+    "deviceName": "LS755",
     "marketingName": "X Power (Boost Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls770": {
-    "codename": "LS770",
+    "deviceName": "LS770",
     "marketingName": "G Stylo",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls775": {
-    "codename": "LS775",
+    "deviceName": "LS775",
     "marketingName": "Stylo 2 (Boost Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls860": {
-    "codename": "LS860",
+    "deviceName": "LS860",
     "marketingName": "Mach",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls980": {
-    "codename": "LS980",
+    "deviceName": "LS980",
     "marketingName": "G2 (Sprint)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls992": {
-    "codename": "LS992",
+    "deviceName": "LS992",
     "marketingName": "G5 (Sprint)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls995": {
-    "codename": "LS995",
+    "deviceName": "LS995",
     "marketingName": "G Flex (Sprint)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls996": {
-    "codename": "LS996",
+    "deviceName": "LS996",
     "marketingName": "G Flex 2 (Sprint)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls997": {
-    "codename": "LS997",
+    "deviceName": "LS997",
     "marketingName": "V20 (Sprint)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ls998u": {
-    "codename": "LS998U",
+    "deviceName": "LS998U",
     "marketingName": "V30+",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg m160": {
-    "codename": "M160",
+    "deviceName": "M160",
     "marketingName": "K4 (2017)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg m200": {
-    "codename": "M200",
+    "deviceName": "M200",
     "marketingName": "K8 (2017)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg m210": {
-    "codename": "M210",
+    "deviceName": "M210",
     "marketingName": "Aristo",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg m250": {
-    "codename": "M250",
+    "deviceName": "M250",
     "marketingName": "K10 (2017)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg m257": {
-    "codename": "M257",
+    "deviceName": "M257",
     "marketingName": "Harmony",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg m320": {
-    "codename": "M320",
+    "deviceName": "M320",
     "marketingName": "M320",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg m700": {
-    "codename": "M700",
+    "deviceName": "M700",
     "marketingName": "Q6 Alpha",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ms210": {
-    "codename": "MS210",
+    "deviceName": "MS210",
     "marketingName": "Aristo (T-Mobile)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ms323": {
-    "codename": "MS323",
+    "deviceName": "MS323",
     "marketingName": "Optimus L70 (MetroPCS)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ms330": {
-    "codename": "MS330",
+    "deviceName": "MS330",
     "marketingName": "K7 (MetroPCS)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ms428": {
-    "codename": "MS428",
+    "deviceName": "MS428",
     "marketingName": "K10",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ms500": {
-    "codename": "MS500",
+    "deviceName": "MS500",
     "marketingName": "Optimus F6",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ms550": {
-    "codename": "MS550",
+    "deviceName": "MS550",
     "marketingName": "Stylo 2 Plus",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ms631": {
-    "codename": "MS631",
+    "deviceName": "MS631",
     "marketingName": "G Stylo",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ms690": {
-    "codename": "MS690",
+    "deviceName": "MS690",
     "marketingName": "Optimus M",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "lg ms769": {
-    "codename": "MS769",
+    "deviceName": "MS769",
     "marketingName": "Optimus L9",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg ms770": {
-    "codename": "MS770",
+    "deviceName": "MS770",
     "marketingName": "Motion 4G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg optimus g": {
-    "codename": "Optimus G",
+    "deviceName": "Optimus G",
     "marketingName": "Optimus G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p350": {
-    "codename": "P350",
+    "deviceName": "P350",
     "marketingName": "Optimus Me",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p500": {
-    "codename": "P500",
+    "deviceName": "P500",
     "marketingName": "Optimus One",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p500h": {
-    "codename": "P500h",
+    "deviceName": "P500h",
     "marketingName": "Optimus One",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p505": {
-    "codename": "P505",
+    "deviceName": "P505",
     "marketingName": "Phoenix",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p505r": {
-    "codename": "P505R",
+    "deviceName": "P505R",
     "marketingName": "Phoenix",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p509": {
-    "codename": "P509",
+    "deviceName": "P509",
     "marketingName": "Optimus T",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p659": {
-    "codename": "P659",
+    "deviceName": "P659",
     "marketingName": "Optimus F3",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p690": {
-    "codename": "P690",
+    "deviceName": "P690",
     "marketingName": "Optimus Net",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p698": {
-    "codename": "P698",
+    "deviceName": "P698",
     "marketingName": "Optimus Net Dual",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p700": {
-    "codename": "P700",
+    "deviceName": "P700",
     "marketingName": "Optimus L7",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p705": {
-    "codename": "P705",
+    "deviceName": "P705",
     "marketingName": "Optimus L7",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p710": {
-    "codename": "P710",
+    "deviceName": "P710",
     "marketingName": "Optimus L7 II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p712": {
-    "codename": "P712",
+    "deviceName": "P712",
     "marketingName": "Optimus L7 II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p713": {
-    "codename": "P713",
+    "deviceName": "P713",
     "marketingName": "Optimus L7 II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p720": {
-    "codename": "P720",
+    "deviceName": "P720",
     "marketingName": "Optimus 3D Max",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p725": {
-    "codename": "P725",
+    "deviceName": "P725",
     "marketingName": "Optimus 3D Max",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p760": {
-    "codename": "P760",
+    "deviceName": "P760",
     "marketingName": "Optimus L9",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p765": {
-    "codename": "P765",
+    "deviceName": "P765",
     "marketingName": "Optimus L9 (India)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p768": {
-    "codename": "P768",
+    "deviceName": "P768",
     "marketingName": "Optimus L9",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p769": {
-    "codename": "P769",
+    "deviceName": "P769",
     "marketingName": "Optimus L9",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p875": {
-    "codename": "P875",
+    "deviceName": "P875",
     "marketingName": "Optimus F5",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p880": {
-    "codename": "P880",
+    "deviceName": "P880",
     "marketingName": "Optimus 4X HD",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p895": {
-    "codename": "P895",
+    "deviceName": "P895",
     "marketingName": "Optimus Vu",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 768,
-    "resolutionHeight": 1024,
-    "dualOrientation": true
+    "display": {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p920": {
-    "codename": "P920",
+    "deviceName": "P920",
     "marketingName": "Optimus 3D",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p920h": {
-    "codename": "P920H",
+    "deviceName": "P920H",
     "marketingName": "Optimus 3D",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p925": {
-    "codename": "P925",
+    "deviceName": "P925",
     "marketingName": "Thrill",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p936": {
-    "codename": "P936",
+    "deviceName": "P936",
     "marketingName": "Optimus True HD LTE",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p940": {
-    "codename": "P940",
+    "deviceName": "P940",
     "marketingName": "Prada 3.0",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p970": {
-    "codename": "P970",
+    "deviceName": "P970",
     "marketingName": "Optimus Black",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p990": {
-    "codename": "P990",
+    "deviceName": "P990",
     "marketingName": "Optimus Speed",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg p999": {
-    "codename": "P999",
+    "deviceName": "P999",
     "marketingName": "G2x",
     "manufacturer": "Lg",
     "brand": "Tmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg su660": {
-    "codename": "SU660",
+    "deviceName": "SU660",
     "marketingName": "Optimus 2X",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "lg su760": {
-    "codename": "SU760",
+    "deviceName": "SU760",
     "marketingName": "Optimus 3D",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "lg su870": {
-    "codename": "SU870",
+    "deviceName": "SU870",
     "marketingName": "Optimus 3D Cube",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg us610": {
-    "codename": "US610",
+    "deviceName": "US610",
     "marketingName": "X Power (U.S. Cellular)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg us991": {
-    "codename": "US991",
+    "deviceName": "US991",
     "marketingName": "G4",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg us992": {
-    "codename": "US992",
+    "deviceName": "US992",
     "marketingName": "G5 (US Cellular)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg us995": {
-    "codename": "US995",
+    "deviceName": "US995",
     "marketingName": "G Flex 2 (U.S. Cellular)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg us996": {
-    "codename": "US996",
+    "deviceName": "US996",
     "marketingName": "V20 (U.S. Cellular)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg us998": {
-    "codename": "US998",
+    "deviceName": "US998",
     "marketingName": "V30+",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg vm670": {
-    "codename": "VM670",
+    "deviceName": "VM670",
     "marketingName": "Optimus V",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "lg vm701": {
-    "codename": "VM701",
+    "deviceName": "VM701",
     "marketingName": "Optimus Slider",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "lg vn271": {
-    "codename": "VN271",
+    "deviceName": "VN271",
     "marketingName": "Extravert (Verizon)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "brew",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "brew"
   },
   "lg vs410pp": {
-    "codename": "VS410PP",
+    "deviceName": "VS410PP",
     "marketingName": "Optimus Zone",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg vs425pp": {
-    "codename": "VS425PP",
+    "deviceName": "VS425PP",
     "marketingName": "Optimus Zone 3",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg vs700": {
-    "codename": "VS700",
+    "deviceName": "VS700",
     "marketingName": "Enlighten",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "lg vs810 pp": {
-    "codename": "VS810PP",
+    "deviceName": "VS810PP",
     "marketingName": "Transpyre (Verizon)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg vs840 4g": {
-    "codename": "VS840",
+    "deviceName": "VS840",
     "marketingName": "Lucid 4G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg vs880": {
-    "codename": "VS880",
+    "deviceName": "VS880",
     "marketingName": "G Vista (Verizon)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": false
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "lg vs980": {
-    "codename": "VS980",
+    "deviceName": "VS980",
     "marketingName": "G2 (Verizon)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg vs987": {
-    "codename": "VS987",
+    "deviceName": "VS987",
     "marketingName": "G5 (Verizon)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg vs990": {
-    "codename": "VS990",
+    "deviceName": "VS990",
     "marketingName": "V10 (Verizon)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg vs995": {
-    "codename": "VS995",
+    "deviceName": "VS995",
     "marketingName": "V20 (Verizon)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg vs996": {
-    "codename": "VS996",
+    "deviceName": "VS996",
     "marketingName": "V30",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg x150": {
-    "codename": "X150",
+    "deviceName": "X150",
     "marketingName": "Bello II",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "lg x210": {
-    "codename": "X210",
+    "deviceName": "X210",
     "marketingName": "K7 (Europe)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg x210ds": {
-    "codename": "X210DS",
+    "deviceName": "X210DS",
     "marketingName": "K7 (Russia)",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

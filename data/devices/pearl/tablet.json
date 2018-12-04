@@ -1,62 +1,77 @@
 {
   "general pearl device": {
-    "codename": "general Pearl Device",
+    "deviceName": "general Pearl Device",
     "marketingName": "general Pearl Device",
     "manufacturer": "Pearl",
     "brand": "Pearl",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pearl touchlet x7g": {
-    "codename": "Touchlet X7G",
+    "deviceName": "Touchlet X7G",
     "marketingName": "Touchlet X7G",
     "manufacturer": "Pearl",
     "brand": "Pearl",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pearl x10": {
-    "codename": "Touchlet X10",
+    "deviceName": "Touchlet X10",
     "marketingName": "Touchlet X10",
     "manufacturer": "Pearl",
     "brand": "Pearl",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pearl x10+": {
-    "codename": "X10+",
+    "deviceName": "X10+",
     "marketingName": "Touchlet X10.Dual+",
     "manufacturer": "Pearl",
     "brand": "Pearl",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pearl x10.quad.fm": {
-    "codename": "X10.quad.FM",
+    "deviceName": "X10.quad.FM",
     "marketingName": "X10.quad.FM",
     "manufacturer": "Pearl",
     "brand": "Pearl",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

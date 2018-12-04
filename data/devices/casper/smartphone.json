@@ -1,26 +1,32 @@
 {
   "general casper device": {
-    "codename": "general Casper Device",
+    "deviceName": "general Casper Device",
     "marketingName": "general Casper Device",
     "manufacturer": "Casper",
     "brand": "Casper",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "casper via m1": {
-    "codename": "Via M1",
+    "deviceName": "Via M1",
     "marketingName": "Via M1",
     "manufacturer": "Casper",
     "brand": "Casper",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

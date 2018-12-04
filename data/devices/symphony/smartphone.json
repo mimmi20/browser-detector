@@ -1,122 +1,152 @@
 {
   "general symphony device": {
-    "codename": "general Symphony Device",
+    "deviceName": "general Symphony Device",
     "marketingName": "general Symphony Device",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "symphony h150": {
-    "codename": "H150",
+    "deviceName": "H150",
     "marketingName": "Xplorer",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "symphony h400": {
-    "codename": "H400",
+    "deviceName": "H400",
     "marketingName": "H400",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "symphony i10": {
-    "codename": "i10",
+    "deviceName": "i10",
     "marketingName": "i10",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "symphony p7 pro": {
-    "codename": "P7 Pro",
+    "deviceName": "P7 Pro",
     "marketingName": "P7 Pro",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "symphony w128": {
-    "codename": "W128",
+    "deviceName": "W128",
     "marketingName": "Xplorer",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "symphony w68": {
-    "codename": "W68",
+    "deviceName": "W68",
     "marketingName": "Xplorer",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "symphony w72": {
-    "codename": "W72",
+    "deviceName": "W72",
     "marketingName": "W72",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "symphony w82": {
-    "codename": "W82",
+    "deviceName": "W82",
     "marketingName": "Xplorer",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "symphony w90": {
-    "codename": "W90",
+    "deviceName": "W90",
     "marketingName": "Xplorer",
     "manufacturer": "Symphony",
     "brand": "Symphony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

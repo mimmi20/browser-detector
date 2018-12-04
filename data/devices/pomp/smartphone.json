@@ -1,62 +1,77 @@
 {
   "general pomp device": {
-    "codename": "general Pomp Device",
+    "deviceName": "general Pomp Device",
     "marketingName": "general Pomp Device",
     "manufacturer": "Pomp",
     "brand": "Pomp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pomp c6": {
-    "codename": "C6",
+    "deviceName": "C6",
     "marketingName": "C6",
     "manufacturer": "Pomp",
     "brand": "Pomp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pomp w88": {
-    "codename": "W88",
+    "deviceName": "W88",
     "marketingName": "W88",
     "manufacturer": "Pomp",
     "brand": "Pomp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pomp w89": {
-    "codename": "W89",
+    "deviceName": "W89",
     "marketingName": "W89",
     "manufacturer": "Pomp",
     "brand": "Pomp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pomp w99": {
-    "codename": "W99",
+    "deviceName": "W99",
     "marketingName": "W99",
     "manufacturer": "Pomp",
     "brand": "Pomp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

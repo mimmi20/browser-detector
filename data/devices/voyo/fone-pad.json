@@ -1,38 +1,47 @@
 {
   "general voyo device": {
-    "codename": "general Voyo Device",
+    "deviceName": "general Voyo Device",
     "marketingName": "general Voyo Device",
     "manufacturer": "Voyo",
     "brand": "Voyo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "voyo i8 max 4g": {
-    "codename": "i8 Max 4G",
+    "deviceName": "i8 Max 4G",
     "marketingName": "i8 Max 4G",
     "manufacturer": "Voyo",
     "brand": "Voyo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "voyo q101 4g": {
-    "codename": "Q101 4G",
+    "deviceName": "Q101 4G",
     "marketingName": "Q101 4G",
     "manufacturer": "Voyo",
     "brand": "Voyo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

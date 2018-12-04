@@ -1,26 +1,32 @@
 {
   "general perfeo device": {
-    "codename": "general Perfeo Device",
+    "deviceName": "general Perfeo Device",
     "marketingName": "general Perfeo Device",
     "manufacturer": "Perfeo",
     "brand": "Perfeo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "perfeo 7007-hd": {
-    "codename": "7007-HD",
+    "deviceName": "7007-HD",
     "marketingName": "7007-HD",
     "manufacturer": "Perfeo",
     "brand": "Perfeo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

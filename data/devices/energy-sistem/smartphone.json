@@ -1,14 +1,17 @@
 {
   "energy-sistem phone pro 3": {
-    "codename": "Energy Phone Pro 3",
+    "deviceName": "Energy Phone Pro 3",
     "marketingName": "Energy Phone Pro 3",
     "manufacturer": "Energy Sistem",
     "brand": "Energy Sistem",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

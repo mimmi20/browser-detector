@@ -1,38 +1,47 @@
 {
   "general desktop": {
-    "codename": "general Desktop",
+    "deviceName": "general Desktop",
     "marketingName": "general Desktop",
     "manufacturer": "Unknown",
     "brand": "Unknown",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "linux desktop": {
-    "codename": "Linux Desktop",
+    "deviceName": "Linux Desktop",
     "marketingName": "Linux Desktop",
     "manufacturer": "Unknown",
     "brand": "Unknown",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "windows desktop": {
-    "codename": "Windows Desktop",
+    "deviceName": "Windows Desktop",
     "marketingName": "Windows Desktop",
     "manufacturer": "Unknown",
     "brand": "Unknown",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

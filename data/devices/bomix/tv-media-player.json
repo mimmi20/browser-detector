@@ -1,26 +1,32 @@
 {
   "general bomix tv": {
-    "codename": "General Bomix TV",
+    "deviceName": "General Bomix TV",
     "marketingName": "General Bomix TV",
     "manufacturer": "Bomix",
     "brand": "Bomix",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "bomix mxq pro": {
-    "codename": "MXQ Pro",
+    "deviceName": "MXQ Pro",
     "marketingName": "MXQ Pro",
     "manufacturer": "Bomix",
     "brand": "Bomix",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

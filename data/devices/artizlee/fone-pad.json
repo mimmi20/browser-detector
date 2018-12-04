@@ -1,38 +1,47 @@
 {
   "general artizlee device": {
-    "codename": "general Artizlee Device",
+    "deviceName": "general Artizlee Device",
     "marketingName": "general Artizlee Device",
     "manufacturer": "Artizlee",
     "brand": "Artizlee",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "artizlee atl-21": {
-    "codename": "ATL-21",
+    "deviceName": "ATL-21",
     "marketingName": "ATL-21",
     "manufacturer": "Artizlee",
     "brand": "Artizlee",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "artizlee atl-31": {
-    "codename": "ATL-31",
+    "deviceName": "ATL-31",
     "marketingName": "ATL-31",
     "manufacturer": "Artizlee",
     "brand": "Artizlee",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

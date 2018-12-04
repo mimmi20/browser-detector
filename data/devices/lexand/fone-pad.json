@@ -1,14 +1,17 @@
 {
   "lexand sc7 pro hd": {
-    "codename": "SC7 Pro HD",
+    "deviceName": "SC7 Pro HD",
     "marketingName": "SC7 Pro HD",
     "manufacturer": "Lexand",
     "brand": "Lexand",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

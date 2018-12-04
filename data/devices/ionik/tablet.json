@@ -1,62 +1,77 @@
 {
   "general ionik device": {
-    "codename": "general I-ONIK Device",
+    "deviceName": "general I-ONIK Device",
     "marketingName": "general I-ONIK Device",
     "manufacturer": "Ionik",
     "brand": "Ionik",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ionik l1001 4g": {
-    "codename": "L1001 4G",
+    "deviceName": "L1001 4G",
     "marketingName": "L1001 4G",
     "manufacturer": "Ionik",
     "brand": "Ionik",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ionik tp10.1-1500dc": {
-    "codename": "TP10.1-1500DC",
+    "deviceName": "TP10.1-1500DC",
     "marketingName": "TP10.1-1500DC",
     "manufacturer": "Ionik",
     "brand": "Ionik",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ionik tp8-1200qc": {
-    "codename": "TP8-1200QC",
+    "deviceName": "TP8-1200QC",
     "marketingName": "TP8-1200QC",
     "manufacturer": "Ionik",
     "brand": "Ionik",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ionik tp9.7-1500dc": {
-    "codename": "TP9.7-1500DC",
+    "deviceName": "TP9.7-1500DC",
     "marketingName": "TP9.7-1500DC",
     "manufacturer": "Ionik",
     "brand": "Ionik",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

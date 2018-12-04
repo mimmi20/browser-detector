@@ -1,1490 +1,1862 @@
 {
   "samsung gt-b2100": {
-    "codename": "GT-B2100",
+    "deviceName": "GT-B2100",
     "marketingName": "Xplorer",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 120,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 120,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-b2100i": {
-    "codename": "GT-B2100I",
+    "deviceName": "GT-B2100I",
     "marketingName": "GT-B2100I",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-b2710": {
-    "codename": "GT-B2710",
+    "deviceName": "GT-B2710",
     "marketingName": "Xcover 271",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-b3410": {
-    "codename": "GT-B3410",
+    "deviceName": "GT-B3410",
     "marketingName": "Corby text",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-b7350": {
-    "codename": "GT-B7350",
+    "deviceName": "GT-B7350",
     "marketingName": "Omnia Pro 4",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 320,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "samsung gt-b7610": {
-    "codename": "GT-B7610",
+    "deviceName": "GT-B7610",
     "marketingName": "Louvre",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "samsung gt-b7722": {
-    "codename": "GT-B7722",
+    "deviceName": "GT-B7722",
     "marketingName": "Star Duos",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3011": {
-    "codename": "GT-C3011",
+    "deviceName": "GT-C3011",
     "marketingName": "GT-C3011",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3262": {
-    "codename": "GT-C3262",
+    "deviceName": "GT-C3262",
     "marketingName": "Champ Neo Duos",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3303k": {
-    "codename": "GT-C3303K",
+    "deviceName": "GT-C3303K",
     "marketingName": "GT-C3303K",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3310": {
-    "codename": "GT-C3310",
+    "deviceName": "GT-C3310",
     "marketingName": "Champ Deluxe",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3312": {
-    "codename": "GT-C3312",
+    "deviceName": "GT-C3312",
     "marketingName": "Champ Deluxe Duos",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3312r": {
-    "codename": "GT-C3312R",
+    "deviceName": "GT-C3312R",
     "marketingName": "Champ Deluxe Duos",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3322": {
-    "codename": "GT-C3322",
+    "deviceName": "GT-C3322",
     "marketingName": "Metro Duos",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3350": {
-    "codename": "GT-C3350",
+    "deviceName": "GT-C3350",
     "marketingName": "Xcover 2",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3500": {
-    "codename": "GT-C3500",
+    "deviceName": "GT-C3500",
     "marketingName": "Chat C3500",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3510": {
-    "codename": "GT-C3510",
+    "deviceName": "GT-C3510",
     "marketingName": "GT-C3510",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3520": {
-    "codename": "GT-C3520",
+    "deviceName": "GT-C3520",
     "marketingName": "La Fleur",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c3780": {
-    "codename": "GT-C3780",
+    "deviceName": "GT-C3780",
     "marketingName": "GT-C3780",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c5212i": {
-    "codename": "GT-C5212i",
+    "deviceName": "GT-C5212i",
     "marketingName": "GT-C5212i",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 176,
-    "resolutionHeight": 220,
-    "dualOrientation": false
+    "display": {
+      "width": 176,
+      "height": 220,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-c6712": {
-    "codename": "GT-C6712",
+    "deviceName": "GT-C6712",
     "marketingName": "Star II Duos",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-e1282t": {
-    "codename": "GT-E1282T",
+    "deviceName": "GT-E1282T",
     "marketingName": "GT-E1282T",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-e1500": {
-    "codename": "GT-E1500",
+    "deviceName": "GT-E1500",
     "marketingName": "GT-E1500",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-e2152": {
-    "codename": "GT-E2152",
+    "deviceName": "GT-E2152",
     "marketingName": "GT-E2152",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-e2202": {
-    "codename": "GT-E2202",
+    "deviceName": "GT-E2202",
     "marketingName": "Metro",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-e2222": {
-    "codename": "GT-E2222",
+    "deviceName": "GT-E2222",
     "marketingName": "Ch@t222",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 220,
-    "resolutionHeight": 176,
-    "dualOrientation": false
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-e2222l": {
-    "codename": "GT-E2222L",
+    "deviceName": "GT-E2222L",
     "marketingName": "Ch@t222",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 220,
-    "resolutionHeight": 176,
-    "dualOrientation": false
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-e2250": {
-    "codename": "GT-E2250",
+    "deviceName": "GT-E2250",
     "marketingName": "Utica",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-e2252": {
-    "codename": "GT-E2252",
+    "deviceName": "GT-E2252",
     "marketingName": "Utica",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-e2550": {
-    "codename": "GT-E2550",
+    "deviceName": "GT-E2550",
     "marketingName": "Monte Slider",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-e2550l": {
-    "codename": "GT-E2550L",
+    "deviceName": "GT-E2550L",
     "marketingName": "Monte Slider",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "samsung gt-e3309t": {
-    "codename": "GT-E3309T",
+    "deviceName": "GT-E3309T",
     "marketingName": "Manhattan",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 220,
-    "resolutionHeight": 176,
-    "dualOrientation": false
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-i6410": {
-    "codename": "GT-I6410",
+    "deviceName": "GT-I6410",
     "marketingName": "M1",
     "manufacturer": "Samsung",
     "brand": "Vodafone",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "samsung gt-i8000": {
-    "codename": "GT-I8000",
+    "deviceName": "GT-I8000",
     "marketingName": "Omnia II",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "samsung gt-i8000v": {
-    "codename": "GT-I8000V",
+    "deviceName": "GT-I8000V",
     "marketingName": "Omnia II",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 480,
-    "resolutionHeight": 696,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 696,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "samsung gt-i8510": {
-    "codename": "GT-I8510",
+    "deviceName": "GT-I8510",
     "marketingName": "INNOV8",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung gt-i8510c": {
-    "codename": "GT-I8510C",
+    "deviceName": "GT-I8510C",
     "marketingName": "INNOV8",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung gt-i8510l": {
-    "codename": "GT-I8510L",
+    "deviceName": "GT-I8510L",
     "marketingName": "INNOV8",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung gt-i8510m": {
-    "codename": "GT-I8510M",
+    "deviceName": "GT-I8510M",
     "marketingName": "INNOV8",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung gt-i8910": {
-    "codename": "GT-I8910",
+    "deviceName": "GT-I8910",
     "marketingName": "Omnia HD",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": false
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung gt-m7600": {
-    "codename": "GT-M7600",
+    "deviceName": "GT-M7600",
     "marketingName": "Beat DJ",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-m7600l": {
-    "codename": "GT-M7600L",
+    "deviceName": "GT-M7600L",
     "marketingName": "Beat DJ",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-m7603": {
-    "codename": "GT-M7603",
+    "deviceName": "GT-M7603",
     "marketingName": "Beat DJ",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s3330": {
-    "codename": "GT-S3330",
+    "deviceName": "GT-S3330",
     "marketingName": "Ch@t 333",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s3332": {
-    "codename": "GT-S3332",
+    "deviceName": "GT-S3332",
     "marketingName": "Ch@t 322 Duos",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s3370": {
-    "codename": "GT-S3370",
+    "deviceName": "GT-S3370",
     "marketingName": "Corby 3G",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s3650": {
-    "codename": "GT-S3650",
+    "deviceName": "GT-S3650",
     "marketingName": "Corby",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s3653": {
-    "codename": "GT-S3653",
+    "deviceName": "GT-S3653",
     "marketingName": "Corby",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s3802": {
-    "codename": "GT-S3802",
+    "deviceName": "GT-S3802",
     "marketingName": "Rex 70",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s3850": {
-    "codename": "GT-S3850",
+    "deviceName": "GT-S3850",
     "marketingName": "Corby II",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5220": {
-    "codename": "GT-S5220",
+    "deviceName": "GT-S5220",
     "marketingName": "Star III",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5220r": {
-    "codename": "GT-S5220R",
+    "deviceName": "GT-S5220R",
     "marketingName": "Rex 80",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5222": {
-    "codename": "GT-S5222",
+    "deviceName": "GT-S5222",
     "marketingName": "Star III Duos",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5222r": {
-    "codename": "GT-S5222R",
+    "deviceName": "GT-S5222R",
     "marketingName": "Rex 80",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5230": {
-    "codename": "GT-S5230",
+    "deviceName": "GT-S5230",
     "marketingName": "Star",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5230w": {
-    "codename": "GT-S5230W",
+    "deviceName": "GT-S5230W",
     "marketingName": "Star",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5233s": {
-    "codename": "GT-S5233S",
+    "deviceName": "GT-S5233S",
     "marketingName": "Star",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "java"
   },
   "samsung gt-s5233t": {
-    "codename": "GT-S5233T",
+    "deviceName": "GT-S5233T",
     "marketingName": "Star TV",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5260": {
-    "codename": "GT-S5260",
+    "deviceName": "GT-S5260",
     "marketingName": "Star II",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5292": {
-    "codename": "GT-S5292",
+    "deviceName": "GT-S5292",
     "marketingName": "Star Deluxe Duos",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5330": {
-    "codename": "GT-S5330",
+    "deviceName": "GT-S5330",
     "marketingName": "Wave 533",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "bada",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "bada"
   },
   "samsung gt-s5560": {
-    "codename": "GT-S5560",
+    "deviceName": "GT-S5560",
     "marketingName": "Marvel",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5560i": {
-    "codename": "GT-S5560I",
+    "deviceName": "GT-S5560I",
     "marketingName": "Marvel",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5620": {
-    "codename": "GT-S5620",
+    "deviceName": "GT-S5620",
     "marketingName": "Monte",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s5750e": {
-    "codename": "GT-S5750E",
+    "deviceName": "GT-S5750E",
     "marketingName": "Wave 575",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "bada",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "bada"
   },
   "samsung gt-s5780": {
-    "codename": "GT-S5780",
+    "deviceName": "GT-S5780",
     "marketingName": "Wave 578",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "bada",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "bada"
   },
   "samsung gt-s7220": {
-    "codename": "GT-S7220",
+    "deviceName": "GT-S7220",
     "marketingName": "Lucido",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s7233e": {
-    "codename": "GT-S7233E",
+    "deviceName": "GT-S7233E",
     "marketingName": "GT-S7233E",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "bada",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "bada"
   },
   "samsung gt-s7250": {
-    "codename": "GT-S7250",
+    "deviceName": "GT-S7250",
     "marketingName": "Wave M",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "bada",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "bada"
   },
   "samsung gt-s7330": {
-    "codename": "GT-S7330",
+    "deviceName": "GT-S7330",
     "marketingName": "GT-S7330",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s8000": {
-    "codename": "GT-S8000",
+    "deviceName": "GT-S8000",
     "marketingName": "Jet",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s8003": {
-    "codename": "GT-S8003",
+    "deviceName": "GT-S8003",
     "marketingName": "Jet",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s8300": {
-    "codename": "GT-S8300",
+    "deviceName": "GT-S8300",
     "marketingName": "Ultra Touch",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung gt-s8600": {
-    "codename": "GT-S8600",
+    "deviceName": "GT-S8600",
     "marketingName": "Wave 3",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "bada",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "bada"
   },
   "samsung i7110": {
-    "codename": "I7110",
+    "deviceName": "I7110",
     "marketingName": "I7110",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung r631": {
-    "codename": "R631",
+    "deviceName": "R631",
     "marketingName": "Messager Touch",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "samsung s3500": {
-    "codename": "S3500",
+    "deviceName": "S3500",
     "marketingName": "S3500",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "samsung sch-r560": {
-    "codename": "SCH-R560",
+    "deviceName": "SCH-R560",
     "marketingName": "Messager II",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sch-u485": {
-    "codename": "SCH-U485",
+    "deviceName": "SCH-U485",
     "marketingName": "Intensity III",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "samsung sch-u660": {
-    "codename": "SCH-U660",
+    "deviceName": "SCH-U660",
     "marketingName": "Convoy 2",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "samsung sch-u750": {
-    "codename": "SCH-U750",
+    "deviceName": "SCH-U750",
     "marketingName": "Alias 2",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "samsung sch-u820": {
-    "codename": "SCH-U820",
+    "deviceName": "SCH-U820",
     "marketingName": "Reality",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "samsung sgh-a737": {
-    "codename": "SGH-A737",
+    "deviceName": "SGH-A737",
     "marketingName": "SGH-A737",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 176,
-    "resolutionHeight": 220,
-    "dualOrientation": false
+    "display": {
+      "width": 176,
+      "height": 220,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-a777": {
-    "codename": "SGH-A777",
+    "deviceName": "SGH-A777",
     "marketingName": "SGH-A777",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 176,
-    "resolutionHeight": 220,
-    "dualOrientation": false
+    "display": {
+      "width": 176,
+      "height": 220,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-b100": {
-    "codename": "SGH-B100",
+    "deviceName": "SGH-B100",
     "marketingName": "SGH-B100",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 128,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-e250": {
-    "codename": "SGH-E250",
+    "deviceName": "SGH-E250",
     "marketingName": "SGH-E250",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-e250i": {
-    "codename": "SGH-E250I",
+    "deviceName": "SGH-E250I",
     "marketingName": "SGH-E250I",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-f480": {
-    "codename": "SGH-F480",
+    "deviceName": "SGH-F480",
     "marketingName": "SGH-F480",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-f480i": {
-    "codename": "SGH-F480I",
+    "deviceName": "SGH-F480I",
     "marketingName": "SGH-F480I",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-f488": {
-    "codename": "SGH-F488",
+    "deviceName": "SGH-F488",
     "marketingName": "SGH-F488",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-g810": {
-    "codename": "SGH-G810",
+    "deviceName": "SGH-G810",
     "marketingName": "SGH-G810",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i450": {
-    "codename": "SGH-I450",
+    "deviceName": "SGH-I450",
     "marketingName": "SGH-I450",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i450v": {
-    "codename": "SGH-I450V",
+    "deviceName": "SGH-I450V",
     "marketingName": "SGH-I450V",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i455": {
-    "codename": "SGH-I455",
+    "deviceName": "SGH-I455",
     "marketingName": "SGH-I455",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i458b": {
-    "codename": "SGH-I458B",
+    "deviceName": "SGH-I458B",
     "marketingName": "SGH-I458B",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i520v": {
-    "codename": "SGH-I520V",
+    "deviceName": "SGH-I520V",
     "marketingName": "SGH-I520V",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i550": {
-    "codename": "SGH-I550",
+    "deviceName": "SGH-I550",
     "marketingName": "SGH-I550",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i550v": {
-    "codename": "SGH-I550V",
+    "deviceName": "SGH-I550V",
     "marketingName": "SGH-I550V",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i560": {
-    "codename": "SGH-I560",
+    "deviceName": "SGH-I560",
     "marketingName": "SGH-I560",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i560v": {
-    "codename": "SGH-I560V",
+    "deviceName": "SGH-I560V",
     "marketingName": "SGH-I560V",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i568": {
-    "codename": "SGH-I568",
+    "deviceName": "SGH-I568",
     "marketingName": "SGH-I568",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "symbian",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "symbian"
   },
   "samsung sgh-i601": {
-    "codename": "SGH-I601",
+    "deviceName": "SGH-I601",
     "marketingName": "SGH-I601",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "samsung sgh-i627": {
-    "codename": "SGH-I627",
+    "deviceName": "SGH-I627",
     "marketingName": "Propel Pro",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": null,
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 320,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "samsung sgh-i780": {
-    "codename": "SGH-I780",
+    "deviceName": "SGH-I780",
     "marketingName": "SGH-I780",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "samsung sgh-i900": {
-    "codename": "SGH-I900",
+    "deviceName": "SGH-I900",
     "marketingName": "Omnia",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "samsung sgh-i900v": {
-    "codename": "SGH-I900V",
+    "deviceName": "SGH-I900V",
     "marketingName": "Omnia",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   },
   "samsung sgh-t259": {
-    "codename": "SGH-T259",
+    "deviceName": "SGH-T259",
     "marketingName": "SGH-T259",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-t359": {
-    "codename": "SGH-T359",
+    "deviceName": "SGH-T359",
     "marketingName": "Smiley",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-t528g": {
-    "codename": "SGH-T528g",
+    "deviceName": "SGH-T528g",
     "marketingName": "SGH-T528g",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-t669": {
-    "codename": "SGH-T669",
+    "deviceName": "SGH-T669",
     "marketingName": "Gravity T",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-t749": {
-    "codename": "SGH-T749",
+    "deviceName": "SGH-T749",
     "marketingName": "SGH-T749",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 400,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-u600b": {
-    "codename": "SGH-U600B",
+    "deviceName": "SGH-U600B",
     "marketingName": "Ultra 10.9",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-u800": {
-    "codename": "SGH-U800",
+    "deviceName": "SGH-U800",
     "marketingName": "Soul B",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sgh-u800e": {
-    "codename": "SGH-U800E",
+    "deviceName": "SGH-U800E",
     "marketingName": "SGH-U800E",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sm-b313": {
-    "codename": "SM-B313",
+    "deviceName": "SM-B313",
     "marketingName": "Metro 313",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sm-b313e": {
-    "codename": "SM-B313E",
+    "deviceName": "SM-B313E",
     "marketingName": "Metro 313",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "samsung sm-b550h": {
-    "codename": "SM-B550H",
+    "deviceName": "SM-B550H",
     "marketingName": "Xcover 550",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "samsung sph-m350": {
-    "codename": "SPH-M350",
+    "deviceName": "SPH-M350",
     "marketingName": "Seek (Sprint)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "samsung sph-m370": {
-    "codename": "SPH-M370",
+    "deviceName": "SPH-M370",
     "marketingName": "SPH-M370 (Sprint)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "samsung sph-m380": {
-    "codename": "SPH-M380",
+    "deviceName": "SPH-M380",
     "marketingName": "Trender (Sprint)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "samsung sph-m550": {
-    "codename": "SPH-M550",
+    "deviceName": "SPH-M550",
     "marketingName": "Exclaim (Sprint)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "samsung sph-m560": {
-    "codename": "SPH-M560",
+    "deviceName": "SPH-M560",
     "marketingName": "Reclaim (Sprint)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "brew",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "brew"
   },
   "samsung sph-m580": {
-    "codename": "SPH-M580",
+    "deviceName": "SPH-M580",
     "marketingName": "Replenish",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "samsung sph-m580bst": {
-    "codename": "SPH-M580BST",
+    "deviceName": "SPH-M580BST",
     "marketingName": "Replenish",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

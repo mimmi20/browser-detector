@@ -1,74 +1,92 @@
 {
   "general mtc device": {
-    "codename": "general MTC Device",
+    "deviceName": "general MTC Device",
     "marketingName": "general MTC Device",
     "manufacturer": "Mtc",
     "brand": "Mtc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mtc 978": {
-    "codename": "978",
+    "deviceName": "978",
     "marketingName": "978",
     "manufacturer": "Mtc",
     "brand": "Mtc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mtc 982": {
-    "codename": "982",
+    "deviceName": "982",
     "marketingName": "982",
     "manufacturer": "Mtc",
     "brand": "Mtc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mtc 982o": {
-    "codename": "982O",
+    "deviceName": "982O",
     "marketingName": "982O",
     "manufacturer": "Mtc",
     "brand": "Mtc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mtc 982t": {
-    "codename": "982T",
+    "deviceName": "982T",
     "marketingName": "982T",
     "manufacturer": "Mtc",
     "brand": "Mtc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mtc smart run": {
-    "codename": "SMART Run",
+    "deviceName": "SMART Run",
     "marketingName": "SMART Run",
     "manufacturer": "Mtc",
     "brand": "Mtc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

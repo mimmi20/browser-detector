@@ -1,26 +1,32 @@
 {
   "general pocketbook device": {
-    "codename": "general PocketBook Device",
+    "deviceName": "general PocketBook Device",
     "marketingName": "general PocketBook Device",
     "manufacturer": "PocketBook",
     "brand": "PocketBook",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pocketbook surfpad 4 l": {
-    "codename": "SurfPad 4 L",
+    "deviceName": "SurfPad 4 L",
     "marketingName": "SurfPad 4 L",
     "manufacturer": "PocketBook",
     "brand": "PocketBook",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

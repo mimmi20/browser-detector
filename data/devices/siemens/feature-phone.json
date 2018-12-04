@@ -1,62 +1,77 @@
 {
   "general siemens device": {
-    "codename": "general Siemens Device",
+    "deviceName": "general Siemens Device",
     "marketingName": "general Siemens Device",
     "manufacturer": "Siemens",
     "brand": "Siemens",
-    "platform": null,
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "benq-siemens cf61": {
-    "codename": "CF61",
+    "deviceName": "CF61",
     "marketingName": "CF61",
     "manufacturer": "BenQ-Siemens",
     "brand": "BenQ-Siemens",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 128,
-    "resolutionHeight": 160,
-    "dualOrientation": false
+    "display": {
+      "width": 128,
+      "height": 160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "siemens s65": {
-    "codename": "S65",
+    "deviceName": "S65",
     "marketingName": "S65",
     "manufacturer": "Siemens",
     "brand": "Siemens",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 132,
-    "resolutionHeight": 176,
-    "dualOrientation": false
+    "display": {
+      "width": 132,
+      "height": 176,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "siemens sl45": {
-    "codename": "SL45",
+    "deviceName": "SL45",
     "marketingName": "SL45",
     "manufacturer": "Siemens",
     "brand": "Siemens",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 101,
-    "resolutionHeight": 80,
-    "dualOrientation": false
+    "display": {
+      "width": 101,
+      "height": 80,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "siemens sl45i": {
-    "codename": "SL45i",
+    "deviceName": "SL45i",
     "marketingName": "SL45i",
     "manufacturer": "Siemens",
     "brand": "Siemens",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 101,
-    "resolutionHeight": 80,
-    "dualOrientation": false
+    "display": {
+      "width": 101,
+      "height": 80,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }
