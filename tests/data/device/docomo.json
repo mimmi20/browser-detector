@@ -8,14 +8,14 @@
       "marketingName": "P905i",
       "manufacturer": "DoCoMo",
       "brand": "DoCoMo",
-      "type": "feature-phone",
       "display": {
         "width": 480,
         "height": 854,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -47,14 +47,14 @@
       "marketingName": "P900i",
       "manufacturer": "DoCoMo",
       "brand": "DoCoMo",
-      "type": "feature-phone",
       "display": {
         "width": 128,
         "height": 160,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Ichiro Mobile Bot",

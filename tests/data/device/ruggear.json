@@ -8,14 +8,14 @@
       "marketingName": "RG500",
       "manufacturer": "RugGear",
       "brand": "RugGear",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -47,14 +47,14 @@
       "marketingName": "RG700",
       "manufacturer": "RugGear",
       "brand": "RugGear",
-      "type": "smartphone",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

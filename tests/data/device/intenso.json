@@ -8,14 +8,14 @@
       "marketingName": "TAB 824",
       "manufacturer": "Intenso",
       "brand": "Intenso",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "Tab 803",
       "manufacturer": "Intenso",
       "brand": "Intenso",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -86,14 +86,14 @@
       "marketingName": "Tab 1024",
       "manufacturer": "Intenso",
       "brand": "Intenso",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",

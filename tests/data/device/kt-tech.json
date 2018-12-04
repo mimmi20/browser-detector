@@ -8,14 +8,14 @@
       "marketingName": "KM-E100",
       "manufacturer": "KT-Tech",
       "brand": "KT-Tech",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

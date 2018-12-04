@@ -8,14 +8,14 @@
       "marketingName": "Chili Pepper",
       "manufacturer": "Beidou",
       "brand": "Beidou",
-      "type": "smartphone",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -47,14 +47,14 @@
       "marketingName": "Red Pepper",
       "manufacturer": "Beidou",
       "brand": "Beidou",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",

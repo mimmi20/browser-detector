@@ -8,14 +8,14 @@
       "marketingName": "MXQ Pro",
       "manufacturer": "Bomix",
       "brand": "Bomix",
-      "type": "tv-media-player",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "tv-media-player"
     },
     "browser": {
       "name": "Android WebView",

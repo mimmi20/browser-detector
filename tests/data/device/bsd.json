@@ -8,14 +8,14 @@
       "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Chrome",

@@ -8,14 +8,14 @@
       "marketingName": "Global Primo 76",
       "manufacturer": "Msi",
       "brand": "Msi",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Yandex Browser",
@@ -47,14 +47,14 @@
       "marketingName": "Windpad",
       "manufacturer": "Msi",
       "brand": "Msi",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -86,14 +86,14 @@
       "marketingName": "PC",
       "manufacturer": "Msi",
       "brand": "Msi",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Internet Explorer",
@@ -125,14 +125,14 @@
       "marketingName": "PC",
       "manufacturer": "Msi",
       "brand": "Msi",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Internet Explorer",

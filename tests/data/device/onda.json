@@ -8,14 +8,14 @@
       "marketingName": "Air",
       "manufacturer": "Onda",
       "brand": "Onda",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -47,14 +47,14 @@
       "marketingName": "Air 3G",
       "manufacturer": "Onda",
       "brand": "Onda",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Chrome",
@@ -86,14 +86,14 @@
       "marketingName": "MID",
       "manufacturer": "Onda",
       "brand": "Onda",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -125,14 +125,14 @@
       "marketingName": "V10 4G",
       "manufacturer": "Onda",
       "brand": "Onda",
-      "type": "fone-pad",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Yandex Browser",

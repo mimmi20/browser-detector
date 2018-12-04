@@ -8,14 +8,14 @@
       "marketingName": "H1+",
       "manufacturer": "Hummer",
       "brand": "Hummer",
-      "type": "smartphone",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -47,14 +47,14 @@
       "marketingName": "H1+",
       "manufacturer": "Hummer",
       "brand": "Hummer",
-      "type": "smartphone",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

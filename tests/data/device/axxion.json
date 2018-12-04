@@ -8,14 +8,14 @@
       "marketingName": "ATab-701",
       "manufacturer": "Axxion",
       "brand": "Axxion",
-      "type": "fone-pad",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "ATab-902",
       "manufacturer": "Axxion",
       "brand": "Axxion",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

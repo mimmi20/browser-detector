@@ -8,14 +8,14 @@
       "marketingName": "Eduk Kids K71",
       "manufacturer": "DL",
       "brand": "DL",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

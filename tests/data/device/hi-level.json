@@ -8,14 +8,14 @@
       "marketingName": "HLV-T1002W",
       "manufacturer": "Hi-Level",
       "brand": "Hi-Level",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "HLV-T702",
       "manufacturer": "Hi-Level",
       "brand": "Hi-Level",
-      "type": "fone-pad",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android Webkit",
@@ -86,14 +86,14 @@
       "marketingName": "HLV-T704",
       "manufacturer": "Hi-Level",
       "brand": "Hi-Level",
-      "type": "fone-pad",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android Webkit",
@@ -125,14 +125,14 @@
       "marketingName": "HLV-TN75",
       "manufacturer": "Hi-Level",
       "brand": "Hi-Level",
-      "type": "tablet",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

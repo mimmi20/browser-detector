@@ -8,14 +8,14 @@
       "marketingName": "Ouya",
       "manufacturer": "Ouya",
       "brand": "Ouya",
-      "type": "tv-console",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "tv-console"
     },
     "browser": {
       "name": "Android Webkit",

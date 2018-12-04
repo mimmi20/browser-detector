@@ -8,14 +8,14 @@
       "marketingName": "pad Dreamer 9.7 White Edition",
       "manufacturer": "Convexa",
       "brand": "Convexa",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

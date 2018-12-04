@@ -8,14 +8,14 @@
       "marketingName": "Touchpad 9.7",
       "manufacturer": "CnM",
       "brand": "CnM",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

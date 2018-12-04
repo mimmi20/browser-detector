@@ -8,14 +8,14 @@
       "marketingName": "Uni Pad 10.1",
       "manufacturer": "Verico",
       "brand": "Verico",
-      "type": "fone-pad",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Opera Mobile",
@@ -47,14 +47,14 @@
       "marketingName": "Uni Pad",
       "manufacturer": "Verico",
       "brand": "Verico",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Yandex Browser",
@@ -86,14 +86,14 @@
       "marketingName": "Uni Pad",
       "manufacturer": "Verico",
       "brand": "Verico",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -125,14 +125,14 @@
       "marketingName": "Uni Pad 7.8",
       "manufacturer": "Verico",
       "brand": "Verico",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Yandex Browser",

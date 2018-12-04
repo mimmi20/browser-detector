@@ -8,14 +8,14 @@
       "marketingName": "S4 Mega",
       "manufacturer": "GooPhone",
       "brand": "GooPhone",
-      "type": "smartphone",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
@@ -47,14 +47,14 @@
       "marketingName": "N3",
       "manufacturer": "GooPhone",
       "brand": "GooPhone",
-      "type": "smartphone",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

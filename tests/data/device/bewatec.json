@@ -8,14 +8,14 @@
       "marketingName": "MediPaD",
       "manufacturer": "Bewatec",
       "brand": "Bewatec",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android WebView",
@@ -47,14 +47,14 @@
       "marketingName": "MediPaD 13",
       "manufacturer": "Bewatec",
       "brand": "Bewatec",
-      "type": "tablet",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android WebView",
@@ -86,14 +86,14 @@
       "marketingName": "MediPaD 16",
       "manufacturer": "Bewatec",
       "brand": "Bewatec",
-      "type": "tablet",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android WebView",

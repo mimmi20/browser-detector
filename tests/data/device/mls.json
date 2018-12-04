@@ -8,14 +8,14 @@
       "marketingName": "iQTalk Color",
       "manufacturer": "MLS",
       "brand": "MLS",
-      "type": "smartphone",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android WebView",
@@ -47,14 +47,14 @@
       "marketingName": "iQTab 10 3G",
       "manufacturer": "MLS",
       "brand": "MLS",
-      "type": "fone-pad",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Chrome",

@@ -8,14 +8,14 @@
       "marketingName": "1501 M02",
       "manufacturer": "360",
       "brand": "360",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "WKBrowser",

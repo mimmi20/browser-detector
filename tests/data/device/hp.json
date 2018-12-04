@@ -8,14 +8,14 @@
       "marketingName": "Touchpad",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "webOS Browser",
@@ -47,14 +47,14 @@
       "marketingName": "Pre",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "feature-phone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "webOS Browser",
@@ -86,14 +86,14 @@
       "marketingName": "Slate 17",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android WebView",
@@ -125,14 +125,14 @@
       "marketingName": "iPAQ 6900",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "feature-phone",
       "display": {
         "width": 240,
         "height": 240,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Internet Explorer",
@@ -164,14 +164,14 @@
       "marketingName": "Slate 10",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -203,14 +203,14 @@
       "marketingName": "TX",
       "manufacturer": "Palm",
       "brand": "Palm",
-      "type": "feature-phone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Internet Explorer",
@@ -242,14 +242,14 @@
       "marketingName": "Pixi",
       "manufacturer": "Palm",
       "brand": "Palm",
-      "type": "feature-phone",
       "display": {
         "width": 320,
         "height": 400,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "webOS Browser",
@@ -281,14 +281,14 @@
       "marketingName": "Veer",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "feature-phone",
       "display": {
         "width": 320,
         "height": 400,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "webOS Browser",
@@ -320,14 +320,14 @@
       "marketingName": "Pre 3",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "feature-phone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "webOS Browser",
@@ -359,14 +359,14 @@
       "marketingName": "Slate 7 Plus",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -398,14 +398,14 @@
       "marketingName": "SlateBook 10 x2 PC",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -437,14 +437,14 @@
       "marketingName": "Slate 21",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -476,14 +476,14 @@
       "marketingName": "Slate 6 Voice",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "fone-pad",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Chrome",
@@ -515,14 +515,14 @@
       "marketingName": "Slate 7 HD",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -554,14 +554,14 @@
       "marketingName": "Slate 8 Pro",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1600,
         "height": 1200,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -593,14 +593,14 @@
       "marketingName": "Treo Pro",
       "manufacturer": "Palm",
       "brand": "Palm",
-      "type": "feature-phone",
       "display": {
         "width": 320,
         "height": 320,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "IEMobile",
@@ -632,14 +632,14 @@
       "marketingName": "Tungsten T3",
       "manufacturer": "Palm",
       "brand": "Palm",
-      "type": "feature-phone",
       "display": {
         "width": 320,
         "height": 320,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Internet Explorer",
@@ -671,14 +671,14 @@
       "marketingName": "TunX",
       "manufacturer": "Palm",
       "brand": "Palm",
-      "type": "feature-phone",
       "display": {
         "width": 320,
         "height": 320,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Internet Explorer",
@@ -710,14 +710,14 @@
       "marketingName": "Zire 72",
       "manufacturer": "Palm",
       "brand": "Palm",
-      "type": "feature-phone",
       "display": {
         "width": 320,
         "height": 320,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Mozilla",
@@ -749,14 +749,14 @@
       "marketingName": "Tungsten E2",
       "manufacturer": "Palm",
       "brand": "Palm",
-      "type": "feature-phone",
       "display": {
         "width": 320,
         "height": 320,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Internet Explorer",
@@ -788,14 +788,14 @@
       "marketingName": "Compaq 7",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Baidu Box App",
@@ -827,14 +827,14 @@
       "marketingName": "Compaq 8",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -866,14 +866,14 @@
       "marketingName": "Slate 7",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -905,14 +905,14 @@
       "marketingName": "7",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -944,14 +944,14 @@
       "marketingName": "Slate 7 Extreme",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -983,14 +983,14 @@
       "marketingName": "8",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -1022,14 +1022,14 @@
       "marketingName": "9000",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Mozilla",
@@ -1061,14 +1061,14 @@
       "marketingName": "PC",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Internet Explorer",
@@ -1100,14 +1100,14 @@
       "marketingName": "PC",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Internet Explorer",
@@ -1139,14 +1139,14 @@
       "marketingName": "PC",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Internet Explorer",

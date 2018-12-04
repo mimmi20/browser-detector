@@ -8,14 +8,14 @@
       "marketingName": "Zaffire 1010",
       "manufacturer": "Nuqleo",
       "brand": "Nuqleo",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "Zaffire 785",
       "manufacturer": "Nuqleo",
       "brand": "Nuqleo",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

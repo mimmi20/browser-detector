@@ -8,14 +8,14 @@
       "marketingName": "Wireless Toolkit",
       "manufacturer": "SunMicrosystems",
       "brand": "SunMicrosystems",
-      "type": "feature-phone",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "UC Browser",

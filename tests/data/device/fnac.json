@@ -8,14 +8,14 @@
       "marketingName": "Phablet 4.5",
       "manufacturer": "Fnac",
       "brand": "Fnac",
-      "type": "smartphone",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
@@ -47,14 +47,14 @@
       "marketingName": "3.5",
       "manufacturer": "Fnac",
       "brand": "Fnac",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

@@ -8,14 +8,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Chrome",
@@ -47,14 +47,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Android WebView",
@@ -86,14 +86,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Firefox Focus",
@@ -125,14 +125,14 @@
       "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "K-Meleon",
@@ -164,14 +164,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Dillo",
@@ -203,14 +203,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Puffin",
@@ -242,14 +242,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Edge",
@@ -281,14 +281,14 @@
       "marketingName": "IDL-6651N",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "tv",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "tv"
     },
     "browser": {
       "name": "Safari",

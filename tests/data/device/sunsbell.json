@@ -8,14 +8,14 @@
       "marketingName": "Swees X538",
       "manufacturer": "Sunsbell",
       "brand": "Sunsbell",
-      "type": "smartphone",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

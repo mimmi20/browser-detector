@@ -8,14 +8,14 @@
       "marketingName": "Excellent 8",
       "manufacturer": "Tomtec",
       "brand": "Tomtec",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

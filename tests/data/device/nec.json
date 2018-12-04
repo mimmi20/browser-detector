@@ -8,14 +8,14 @@
       "marketingName": "Medias X",
       "manufacturer": "Nec",
       "brand": "DoCoMo",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "N905i",
       "manufacturer": "Nec",
       "brand": "Nec",
-      "type": "feature-phone",
       "display": {
         "width": 480,
         "height": 854,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Google Bot Mobile",
@@ -86,14 +86,14 @@
       "marketingName": "N705i",
       "manufacturer": "Nec",
       "brand": "Nec",
-      "type": "feature-phone",
       "display": {
         "width": 240,
         "height": 427,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -125,14 +125,14 @@
       "marketingName": "NEC Casio N-02E",
       "manufacturer": "Nec",
       "brand": "DoCoMo",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -164,14 +164,14 @@
       "marketingName": "Medias Tab LTE",
       "manufacturer": "Nec",
       "brand": "Nec",
-      "type": "fone-pad",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android Webkit",

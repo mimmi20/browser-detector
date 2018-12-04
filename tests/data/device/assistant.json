@@ -8,14 +8,14 @@
       "marketingName": "AP-804",
       "manufacturer": "Assistant",
       "brand": "Assistant",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Yandex Browser",

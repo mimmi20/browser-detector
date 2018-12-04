@@ -8,14 +8,14 @@
       "marketingName": "WeTab",
       "manufacturer": "WeTab",
       "brand": "WeTab",
-      "type": "tablet",
       "display": {
         "width": 1366,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "WeTab Browser",

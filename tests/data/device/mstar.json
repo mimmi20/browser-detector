@@ -8,14 +8,14 @@
       "marketingName": "T42",
       "manufacturer": "MSTAR",
       "brand": "MSTAR",
-      "type": "tv",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "tv"
     },
     "browser": {
       "name": "Safari",

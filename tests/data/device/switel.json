@@ -8,14 +8,14 @@
       "marketingName": "Champ",
       "manufacturer": "Switel",
       "brand": "Switel",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
@@ -47,14 +47,14 @@
       "marketingName": "eSmart M3",
       "manufacturer": "Switel",
       "brand": "Switel",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android WebView",

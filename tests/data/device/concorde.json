@@ -8,14 +8,14 @@
       "marketingName": "SmartPhone 4300",
       "manufacturer": "ConCorde",
       "brand": "ConCorde",
-      "type": "smartphone",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "Tab Play",
       "manufacturer": "ConCorde",
       "brand": "ConCorde",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -86,14 +86,14 @@
       "marketingName": "Tab T10",
       "manufacturer": "ConCorde",
       "brand": "ConCorde",
-      "type": "tablet",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

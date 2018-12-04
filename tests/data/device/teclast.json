@@ -8,14 +8,14 @@
       "marketingName": "P80h",
       "manufacturer": "Teclast",
       "brand": "Teclast",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Yandex Browser",
@@ -47,14 +47,14 @@
       "marketingName": "X98 Pro",
       "manufacturer": "Teclast",
       "brand": "Teclast",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -86,14 +86,14 @@
       "marketingName": "X98 Air 3G",
       "manufacturer": "Teclast",
       "brand": "Teclast",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Chrome",
@@ -125,14 +125,14 @@
       "marketingName": "X10 3G",
       "manufacturer": "Teclast",
       "brand": "Teclast",
-      "type": "fone-pad",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android WebView",

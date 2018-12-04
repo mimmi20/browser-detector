@@ -8,14 +8,14 @@
       "marketingName": "Coto W418",
       "manufacturer": "Top House",
       "brand": "Top House",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android WebView",
@@ -47,14 +47,14 @@
       "marketingName": "X1013",
       "manufacturer": "Top House",
       "brand": "Top House",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",

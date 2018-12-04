@@ -8,14 +8,14 @@
       "marketingName": "SC-74JB",
       "manufacturer": "SuperSonic",
       "brand": "SuperSonic",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "SC-91MID",
       "manufacturer": "SuperSonic",
       "brand": "SuperSonic",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

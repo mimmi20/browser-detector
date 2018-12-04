@@ -8,14 +8,14 @@
       "marketingName": "PH-1",
       "manufacturer": "Essential",
       "brand": "Essential",
-      "type": "smartphone",
       "display": {
         "width": 1312,
         "height": 2560,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",

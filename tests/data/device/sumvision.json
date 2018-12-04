@@ -8,14 +8,14 @@
       "marketingName": "Cyclone Voyager",
       "manufacturer": "Sumvision",
       "brand": "Sumvision",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "Cyclone Voyager 2",
       "manufacturer": "Sumvision",
       "brand": "Sumvision",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",

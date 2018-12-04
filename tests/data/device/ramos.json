@@ -8,14 +8,14 @@
       "marketingName": "i11 Pro",
       "manufacturer": "Ramos",
       "brand": "Ramos",
-      "type": "tablet",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android WebView",
@@ -47,14 +47,14 @@
       "marketingName": "i9",
       "manufacturer": "Ramos",
       "brand": "Ramos",
-      "type": "tablet",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -86,14 +86,14 @@
       "marketingName": "W27 Pro",
       "manufacturer": "Ramos",
       "brand": "Ramos",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Google App",
@@ -125,14 +125,14 @@
       "marketingName": "X10 Pro",
       "manufacturer": "Ramos",
       "brand": "Ramos",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android Webkit",

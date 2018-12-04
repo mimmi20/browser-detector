@@ -8,14 +8,14 @@
       "marketingName": "Presto",
       "manufacturer": "O+",
       "brand": "O+",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android WebView",
@@ -47,14 +47,14 @@
       "marketingName": "8.36",
       "manufacturer": "O+",
       "brand": "O+",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

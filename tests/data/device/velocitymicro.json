@@ -8,14 +8,14 @@
       "marketingName": "T408",
       "manufacturer": "VelocityMicro",
       "brand": "VelocityMicro",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Safari",

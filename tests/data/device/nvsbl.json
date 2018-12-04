@@ -8,14 +8,14 @@
       "marketingName": "P4D Sirius",
       "manufacturer": "Nvsbl",
       "brand": "Nvsbl",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

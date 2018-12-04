@@ -8,14 +8,14 @@
       "marketingName": "OP109 4G",
       "manufacturer": "Elebest Germany",
       "brand": "Elebest Germany",
-      "type": "fone-pad",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Chrome",

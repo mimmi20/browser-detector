@@ -8,14 +8,14 @@
       "marketingName": "FX2 PAD10",
       "manufacturer": "FaktorZwei",
       "brand": "FaktorZwei",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

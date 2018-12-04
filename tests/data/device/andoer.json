@@ -8,14 +8,14 @@
       "marketingName": "CX919",
       "manufacturer": "Andoer",
       "brand": "Andoer",
-      "type": "tv",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "tv"
     },
     "browser": {
       "name": "Baidu Browser HD",

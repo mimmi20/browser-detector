@@ -8,14 +8,14 @@
       "marketingName": "VKB011B",
       "manufacturer": "Fengxiang",
       "brand": "Fengxiang",
-      "type": "fone-pad",
       "display": {
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android WebView",
@@ -47,14 +47,14 @@
       "marketingName": "vKB004L",
       "manufacturer": "Fengxiang",
       "brand": "Fengxiang",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android WebView",

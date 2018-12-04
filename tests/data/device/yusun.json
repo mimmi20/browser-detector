@@ -8,14 +8,14 @@
       "marketingName": "W306",
       "manufacturer": "Yusun",
       "brand": "Yusun",
-      "type": "smartphone",
       "display": {
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",

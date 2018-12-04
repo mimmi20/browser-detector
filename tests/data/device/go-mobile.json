@@ -8,14 +8,14 @@
       "marketingName": "GO Onyx",
       "manufacturer": "GoMobile",
       "brand": "GoMobile",
-      "type": "smartphone",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
@@ -47,14 +47,14 @@
       "marketingName": "GO 503",
       "manufacturer": "GoMobile",
       "brand": "GoMobile",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android WebView",
@@ -86,14 +86,14 @@
       "marketingName": "GO 1402",
       "manufacturer": "GoMobile",
       "brand": "GoMobile",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",

@@ -8,14 +8,14 @@
       "marketingName": "Via M1",
       "manufacturer": "Casper",
       "brand": "Casper",
-      "type": "smartphone",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",

@@ -8,14 +8,14 @@
       "marketingName": "RM-997",
       "manufacturer": "RossMoor",
       "brand": "RossMoor",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -47,14 +47,14 @@
       "marketingName": "RM-560",
       "manufacturer": "RossMoor",
       "brand": "RossMoor",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "CM Browser",

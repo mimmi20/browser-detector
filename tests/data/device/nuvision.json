@@ -8,14 +8,14 @@
       "marketingName": "TM785M3",
       "manufacturer": "NuVision",
       "brand": "NuVision",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
